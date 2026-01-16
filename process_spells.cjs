@@ -3,20 +3,21 @@ const fs = require('fs');
 const path = require('path');
 
 const csvPath = 'Spells.csv';
-const tsPath = 'data-spells.ts';
-const out0Path = 'data-spells-level0.ts';
-const out1Path = 'data-spells-level1.ts';
 
-// Helper to parse CSV line respecting quotes
-function parseCSVLine(text) {
-    const res = [];
+// Helper to parse CSV robustly (handling newlines inside quotes)
+function parseCSV(text) {
+    const rows = [];
+    let currentRow = [];
     let cur = '';
     let inQuote = false;
+
     for (let i = 0; i < text.length; i++) {
         const c = text[i];
+        const next = text[i + 1];
+
         if (inQuote) {
             if (c === '"') {
-                if (i + 1 < text.length && text[i + 1] === '"') {
+                if (next === '"') {
                     cur += '"';
                     i++;
                 } else {
@@ -29,26 +30,42 @@ function parseCSVLine(text) {
             if (c === '"') {
                 inQuote = true;
             } else if (c === ',') {
-                res.push(cur);
+                currentRow.push(cur);
+                cur = '';
+            } else if (c === '\n' || (c === '\r' && next === '\n')) {
+                currentRow.push(cur);
+                rows.push(currentRow);
+                currentRow = [];
+                cur = '';
+                if (c === '\r') i++;
+            } else if (c === '\r') {
+                // Just CR
+                currentRow.push(cur);
+                rows.push(currentRow);
+                currentRow = [];
                 cur = '';
             } else {
                 cur += c;
             }
         }
     }
-    res.push(cur);
-    return res;
+    if (cur || currentRow.length > 0) {
+        currentRow.push(cur);
+        rows.push(currentRow);
+    }
+    return rows;
 }
 
-// Read TS files to get existing IDs
+// Read TS files to get existing IDs to preserve them if possible, though we might just regenerate IDs based on English name if available or Pinyin
+// Actually, let's try to load existing IDs to be safe.
 const nameToId = {};
-const idRegex = /id:\s*\"([^\"]+)\",\s*name:\s*\"([^\"]+)\"/g;
+const idRegex = /id:\s*"([^"]+)",\s*name:\s*"([^"]+)"/g;
 
-const filesToRead = [out0Path, out1Path];
-
-for (const filePath of filesToRead) {
-    if (fs.existsSync(filePath)) {
-        const content = fs.readFileSync(filePath, 'utf8');
+// Scan all potential existing files
+for (let l = 0; l <= 9; l++) {
+    const p = `data-spells-level${l}.ts`;
+    if (fs.existsSync(p)) {
+        const content = fs.readFileSync(p, 'utf8');
         let match;
         while ((match = idRegex.exec(content)) !== null) {
             nameToId[match[2]] = match[1];
@@ -56,97 +73,92 @@ for (const filePath of filesToRead) {
     }
 }
 
+// Also check main file just in case
+if (fs.existsSync('data-spells.ts')) {
+    const content = fs.readFileSync('data-spells.ts', 'utf8');
+    let match;
+    while ((match = idRegex.exec(content)) !== null) {
+        nameToId[match[2]] = match[1];
+    }
+}
+
 console.log(`Loaded ${Object.keys(nameToId).length} existing spell IDs.`);
 
 // Read CSV
 const csvContent = fs.readFileSync(csvPath, 'utf8');
-const lines = csvContent.split(/\r?\n/);
-const headers = parseCSVLine(lines[0]);
+const rows = parseCSV(csvContent);
 
-const spells0 = [];
-const spells1 = [];
+// Headers: "Name","Source","Page","Level","Casting Time","Duration","School","Range","Components","Classes","Optional/Variant Classes","Text","At Higher Levels"
+// Index mapping
+const HEADER = rows[0];
+const map = {
+    name: HEADER.indexOf('Name'),
+    source: HEADER.indexOf('Source'),
+    level: HEADER.indexOf('Level'),
+    time: HEADER.indexOf('Casting Time'),
+    duration: HEADER.indexOf('Duration'),
+    school: HEADER.indexOf('School'),
+    range: HEADER.indexOf('Range'),
+    comp: HEADER.indexOf('Components'),
+    classes: HEADER.indexOf('Classes'),
+    text: HEADER.indexOf('Text'),
+    higher: HEADER.indexOf('At Higher Levels')
+};
 
-for (let i = 1; i < lines.length; i++) {
-    const line = lines[i].trim();
-    if (!line) continue;
-    const cols = parseCSVLine(line);
+const spellsByLevel = Array(10).fill(null).map(() => []);
 
-    // "Name","Source","Page","Level","Casting Time","Duration","School","Range","Components","Classes","Optional/Variant Classes","Text","At Higher Levels"
-    const name = cols[0];
-    const source = cols[1];
-    const levelStr = cols[3];
+// Manual mappings
+const manualMappings = {
+    '次级幻影': 'minor-illusion',
+    '毒气喷溅': 'poison-spray',
+    '提升抗性': 'resistance',
+    '净化食粮': 'purify-food-and-drink',
+    '棘雹术': 'hail-of-thorns',
+    '艾嘉西斯之铠': 'armor-of-agathys',
+    '诱捕打击': 'ensnaring-strike',
+    '造水术／枯水术': 'create-or-destroy-water',
+    '魅惑人类': 'charm-person',
+    '星界小精灵': 'starry-wisp',
+    '魔法爆发': 'sorcerous-burst',
+    '克敌机先': 'true-strike',
+    '元素主义': 'elementalism'
+};
 
-    if (source !== "PHB'24") continue;
+function formatDescription(text, higher, level) {
+    if (!text) text = "";
 
-    let level = -1;
-    if (levelStr === '戏法') level = 0;
-    else if (levelStr === '1环') level = 1;
-    else continue;
+    // Bold common keywords
+    // "Hit:", "Save:", "Success:", "Failure:", "Trigger:", "Requirement:"
+    // Chinese equivalents? 
+    // Usually standard Chinese D&D text uses "豁免失败：" or similar but not always consistent.
+    // Let's standard markdown bolding if we see patterns like "**Key:**".
+    // But CSV might not have markdown.
 
-    let id = nameToId[name];
+    // Attempt to convert "Key." at start of checks to "**Key.**"
+    // e.g. "Prerequisite." -> "**Prerequisite.**" if English.
+    // For Chinese, maybe "豁免：" -> "**豁免**："
 
-    // Manual mappings for name mismatches or new translations
-    const manualMappings = {
-        '次级幻影': 'minor-illusion',
-        '毒气喷溅': 'poison-spray',
-        '提升抗性': 'resistance',
-        '净化食粮': 'purify-food-and-drink',
-        '棘雹术': 'hail-of-thorns',
-        '艾嘉西斯之铠': 'armor-of-agathys',
-        '诱捕打击': 'ensnaring-strike',
-        '造水术／枯水术': 'create-or-destroy-water',
-        '魅惑人类': 'charm-person',
-        '星界小精灵': 'starry-wisp',
-        '魔法爆发': 'sorcerous-burst',
-        '克敌机先': 'true-strike',
-        '元素主义': 'elementalism'
-    };
+    // Handle Tables
+    // If text contains HTML <table>, convert to Markdown? 
+    // CSV usually has plain text. Table might be represented by lines...
 
-    if (manualMappings[name]) {
-        id = manualMappings[name];
+    // Append Higher Levels
+    if (higher && higher !== "0" && higher.trim() !== "") {
+        const header = level === 0 ? '**戏法强化**' : '**升环施法效应**';
+        let higherText = higher.trim();
+        // Remove common prefixes in CSV to avoid duplication
+        higherText = higherText.replace(/^升环施法效应[.:]?\s*/, '');
+        higherText = higherText.replace(/^At Higher Levels[.:]?\s*/i, '');
+
+        // Ensure newlines
+        text += `\n\n${header}: ${higherText}`;
     }
 
-    if (!id) {
-        // Fallback: Pinyin or English placeholder (But we don't have English names easily here)
-        // Just use a placeholder ID if not found, filtering manually later might be needed if many missing.
-        // But assume most are covered.
-        id = 'todo-' + Math.random().toString(36).substring(7);
-        console.log(`Warning: No ID found for ${name}`);
-    }
-
-    const castingTime = cols[4].replace(/^1\s+/, ''); // Remove "1 " prefix if common (e.g. "1 动作" -> "动作")
-    const duration = cols[5]; // Keep as is or translate? CSV seems to have English "Instantaneous" etc sometimes?
-    // Wait, let me check CSV content again.
-    // L3: "Instantaneous". L2: "1 round".
-    // TS uses "立即", "1分钟".
-    // I should translate duration if it is English in CSV.
-
-    const school = cols[6];
-    const range = cols[7];
-    const components = cols[8];
-    const classes = cols[9].split(',').map(s => s.trim()).filter(s => s);
-    const text = cols[11];
-    const higher = cols[12];
-
-    const spell = {
-        id,
-        name,
-        source: "官方规则",
-        level,
-        school,
-        castingTime: translateCastingTime(castingTime),
-        range: range.replace(/-尺/g, '尺').replace(/Feet/g, '尺').replace(/Self/g, '自身').replace(/Touch/g, '触及'), // Simple cleanup
-        components,
-        duration: translateDuration(duration),
-        classes,
-        description: text + (higher ? (level === 0 ? '\n**戏法强化**: ' : '\n**升环施法**: ') + higher : '')
-    };
-
-    if (level === 0) spells0.push(spell);
-    else spells1.push(spell);
+    return text;
 }
 
 function translateDuration(d) {
+    if (!d) return "-";
     if (d === 'Instantaneous') return '立即';
     if (d.includes('Concentration')) {
         return d.replace('Concentration, up to ', '专注，至多').replace('1 minute', '1分钟').replace('10 minutes', '10分钟').replace('1 hour', '1小时').replace('8 hours', '8小时').replace('24 hours', '24小时');
@@ -162,28 +174,69 @@ function translateDuration(d) {
 }
 
 function translateCastingTime(c) {
+    if (!c) return "-";
     c = c.replace('1 动作', '动作').replace('1 Action', '动作');
     c = c.replace('1 附赠动作', '附赠动作').replace('1 Bonus Action', '附赠动作');
     c = c.replace('1 反应', '反应').replace('1 Reaction', '反应');
     c = c.replace('1 Minute', '1分钟').replace('1 分钟', '1分钟');
     c = c.replace('10 Minutes', '10分钟').replace('10 分钟', '10分钟');
     c = c.replace('1 Hour', '1小时').replace('1 小时', '1小时');
-    return c; // Fallback
+    return c;
 }
 
+for (let i = 1; i < rows.length; i++) {
+    const cols = rows[i];
+    if (cols.length < 5) continue; // Invalid row
 
-function generateFileContent(spells, levelVarName) {
-    let content = `import { SpellItem } from './types';\n\n`;
-    content += `export const ${levelVarName}: SpellItem[] = [\n`;
+    const name = cols[map.name];
+    if (!name) continue;
 
-    // Group comments? Maybe just list.
-    content += spells.map(s => JSON.stringify(s, null, 2)).join(',\n');
+    const source = cols[map.source]; // Keep all sources now
+    const levelStr = cols[map.level];
 
-    content += `\n];\n`;
-    return content;
+    let level = -1;
+    if (levelStr === '戏法' || levelStr === '0环') level = 0;
+    else if (levelStr && levelStr.includes('环')) level = parseInt(levelStr.replace('环', ''));
+    else if (!isNaN(parseInt(levelStr))) level = parseInt(levelStr);
+
+    if (level === -1 || isNaN(level)) {
+        // console.log(`Skipping ${name} due to invalid level: ${levelStr}`);
+        continue;
+    }
+
+    let id = nameToId[name];
+    if (manualMappings[name]) id = manualMappings[name];
+
+    if (!id) {
+        // Generate a random ID to ensure uniqueness but stable-ish? No, random is bad for persistence if we re-run this.
+        // Try to hash name?
+        // Simple hash
+        let hash = 0;
+        for (let j = 0; j < name.length; j++) hash = (hash << 5) - hash + name.charCodeAt(j);
+        id = 'gen-' + Math.abs(hash).toString(36);
+        // console.log(`Generated ID for ${name}: ${id}`);
+    }
+
+    const spell = {
+        id,
+        name,
+        source: source || "PF",
+        level,
+        school: cols[map.school],
+        castingTime: translateCastingTime(cols[map.time]),
+        range: cols[map.range].replace(/-尺/g, '尺').replace(/Feet/g, '尺').replace(/Self/g, '自身').replace(/Touch/g, '触及'),
+        components: cols[map.comp],
+        duration: translateDuration(cols[map.duration]),
+        classes: cols[map.classes] ? cols[map.classes].split(',').map(s => s.trim()).filter(s => s) : [],
+        description: formatDescription(cols[map.text], cols[map.higher], level)
+    };
+
+    if (level >= 0 && level <= 9) {
+        spellsByLevel[level].push(spell);
+    }
 }
 
-// Generate TS-like object string instead of JSON keys quoted
+// Generate Files
 function formatSpell(s) {
     return `  {
     id: "${s.id}", name: "${s.name}", source: "${s.source}",
@@ -204,8 +257,28 @@ function generateTS(spells, levelVarName, title) {
     return content;
 }
 
-fs.writeFileSync(out0Path, generateTS(spells0, 'SPELL_DB_LEVEL_0', '0环 戏法 (Cantrips)'));
-fs.writeFileSync(out1Path, generateTS(spells1, 'SPELL_DB_LEVEL_1', '1环 法术 (Level 1 Spells)'));
+// Generate level files
+for (let l = 0; l <= 9; l++) {
+    const filename = `data-spells-level${l}.ts`;
+    const varName = `SPELL_DB_LEVEL_${l}`;
+    let title = `${l}环法术`;
+    if (l === 0) title = '戏法 (Cantrips)';
 
-console.log(`Generated ${out0Path} with ${spells0.length} spells.`);
-console.log(`Generated ${out1Path} with ${spells1.length} spells.`);
+    fs.writeFileSync(filename, generateTS(spellsByLevel[l], varName, title));
+    console.log(`Generated ${filename} with ${spellsByLevel[l].length} spells.`);
+}
+
+// Generate data-spells.ts aggregator
+let aggContent = `import { SpellItem } from './types';\n`;
+for (let l = 0; l <= 9; l++) {
+    aggContent += `import { SPELL_DB_LEVEL_${l} } from './data-spells-level${l}';\n`;
+}
+
+aggContent += `\nexport const SPELL_DB: SpellItem[] = [\n`;
+for (let l = 0; l <= 9; l++) {
+    aggContent += `  ...SPELL_DB_LEVEL_${l},\n`;
+}
+aggContent += `];\n`;
+
+fs.writeFileSync('data-spells.ts', aggContent);
+console.log('Generated data-spells.ts aggregator.');

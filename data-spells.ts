@@ -1,4 +1,3 @@
-
 import { SpellItem } from './types';
 import { SPELL_DB_LEVEL_0 } from './data-spells-level0';
 import { SPELL_DB_LEVEL_1 } from './data-spells-level1';
@@ -21,5 +20,5 @@ export const SPELL_DB: SpellItem[] = [
   ...SPELL_DB_LEVEL_6,
   ...SPELL_DB_LEVEL_7,
   ...SPELL_DB_LEVEL_8,
-  ...SPELL_DB_LEVEL_9
+  ...SPELL_DB_LEVEL_9,
 ];
