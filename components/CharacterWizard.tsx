@@ -120,19 +120,10 @@ const CharacterWizard: React.FC<Props> = ({ character, updateCharacter, onComple
   };
 
   // Check if can proceed to next step
+  // 允许用户在未完成所有选择的情况下进入下一步
   const canGoNext = useMemo(() => {
-    switch (step) {
-      case 1: return !!character.className;
-      case 2: return !!character.race;
-      case 3: return !!character.background;
-      case 4: return true; // Spells step can be skipped
-      case 5: return Object.values(character.abilities).every(v => v > 0);
-      case 6: return true; // Skills are auto-populated
-      case 7: return true; // Equipment can be skipped
-      case 8: return true; // Details are optional
-      case 9: return !!character.alignment;
-      default: return true;
-    }
+    // 移除强制验证，所有步骤都可以直接进入下一步
+    return true;
   }, [step, character]);
 
   return (
