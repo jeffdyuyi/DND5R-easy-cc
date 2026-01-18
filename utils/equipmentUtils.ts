@@ -6,6 +6,158 @@
 import { WEAPON_DB } from '../data-items-weapons';
 import { ARMOR_DB } from '../data-items-armor';
 import { GEAR_DB } from '../data-items-gear';
+import { TOOL_DB } from '../data-items-tools';
+
+// === Pack Contents Definition ===
+// Defines what items are contained in each equipment pack for expansion
+
+export const PACK_CONTENTS: Record<string, { name: string; quantity: number }[]> = {
+    '窃贼套组': [
+        { name: '背包', quantity: 1 },
+        { name: '滚珠 (1000枚)', quantity: 1 },
+        { name: '铃铛', quantity: 1 },
+        { name: '蜡烛', quantity: 5 },
+        { name: '撬棍', quantity: 1 },
+        { name: '锤子', quantity: 1 },
+        { name: '岩钉', quantity: 10 },
+        { name: '附盖提灯', quantity: 1 },
+        { name: '燃油 (扁瓶)', quantity: 2 },
+        { name: '口粮 (1天)', quantity: 5 },
+        { name: '火绒盒', quantity: 1 },
+        { name: '水袋', quantity: 1 },
+        { name: '麻绳 (50尺)', quantity: 1 },
+    ],
+    '外交套组': [
+        { name: '箱子', quantity: 1 },
+        { name: '卷轴匣/地图匣', quantity: 2 },
+        { name: '高档服装', quantity: 1 },
+        { name: '墨水 (1盎司)', quantity: 1 },
+        { name: '墨水笔', quantity: 1 },
+        { name: '油灯', quantity: 1 },
+        { name: '燃油 (扁瓶)', quantity: 2 },
+        { name: '纸张 (1张)', quantity: 5 },
+        { name: '香水 (小瓶)', quantity: 1 },
+        { name: '封蜡', quantity: 1 },
+        { name: '肥皂', quantity: 1 },
+    ],
+    '地城套组': [
+        { name: '背包', quantity: 1 },
+        { name: '撬棍', quantity: 1 },
+        { name: '锤子', quantity: 1 },
+        { name: '岩钉', quantity: 10 },
+        { name: '火把', quantity: 10 },
+        { name: '火绒盒', quantity: 1 },
+        { name: '口粮 (1天)', quantity: 10 },
+        { name: '水袋', quantity: 1 },
+        { name: '麻绳 (50尺)', quantity: 1 },
+    ],
+    '地城探索者背包': [
+        { name: '背包', quantity: 1 },
+        { name: '撬棍', quantity: 1 },
+        { name: '锤子', quantity: 1 },
+        { name: '岩钉', quantity: 10 },
+        { name: '火把', quantity: 10 },
+        { name: '火绒盒', quantity: 1 },
+        { name: '口粮 (1天)', quantity: 10 },
+        { name: '水袋', quantity: 1 },
+        { name: '麻绳 (50尺)', quantity: 1 },
+    ],
+    '艺人套组': [
+        { name: '背包', quantity: 1 },
+        { name: '铺盖', quantity: 1 },
+        { name: '戏服', quantity: 2 },
+        { name: '蜡烛', quantity: 5 },
+        { name: '口粮 (1天)', quantity: 5 },
+        { name: '水袋', quantity: 1 },
+        { name: '易容工具', quantity: 1 },
+    ],
+    '娱乐者背包': [
+        { name: '背包', quantity: 1 },
+        { name: '铺盖', quantity: 1 },
+        { name: '戏服', quantity: 2 },
+        { name: '蜡烛', quantity: 5 },
+        { name: '口粮 (1天)', quantity: 5 },
+        { name: '水袋', quantity: 1 },
+        { name: '易容工具', quantity: 1 },
+    ],
+    '探索套组': [
+        { name: '背包', quantity: 1 },
+        { name: '铺盖', quantity: 1 },
+        { name: '餐具', quantity: 1 },
+        { name: '火绒盒', quantity: 1 },
+        { name: '火把', quantity: 10 },
+        { name: '口粮 (1天)', quantity: 10 },
+        { name: '水袋', quantity: 1 },
+        { name: '麻绳 (50尺)', quantity: 1 },
+    ],
+    '探险者背包': [
+        { name: '背包', quantity: 1 },
+        { name: '铺盖', quantity: 1 },
+        { name: '餐具', quantity: 1 },
+        { name: '火绒盒', quantity: 1 },
+        { name: '火把', quantity: 10 },
+        { name: '口粮 (1天)', quantity: 10 },
+        { name: '水袋', quantity: 1 },
+        { name: '麻绳 (50尺)', quantity: 1 },
+    ],
+    '祭司套组': [
+        { name: '背包', quantity: 1 },
+        { name: '毯子', quantity: 1 },
+        { name: '蜡烛', quantity: 10 },
+        { name: '火绒盒', quantity: 1 },
+        { name: '施舍盒', quantity: 1 },
+        { name: '香块', quantity: 2 },
+        { name: '香炉', quantity: 1 },
+        { name: '法衣', quantity: 1 },
+        { name: '口粮 (1天)', quantity: 2 },
+        { name: '水袋', quantity: 1 },
+    ],
+    '牧师背包': [
+        { name: '背包', quantity: 1 },
+        { name: '毯子', quantity: 1 },
+        { name: '蜡烛', quantity: 10 },
+        { name: '火绒盒', quantity: 1 },
+        { name: '施舍盒', quantity: 1 },
+        { name: '香块', quantity: 2 },
+        { name: '香炉', quantity: 1 },
+        { name: '法衣', quantity: 1 },
+        { name: '口粮 (1天)', quantity: 2 },
+        { name: '水袋', quantity: 1 },
+    ],
+    '学者套组': [
+        { name: '背包', quantity: 1 },
+        { name: '书籍', quantity: 1 },
+        { name: '墨水 (1盎司)', quantity: 1 },
+        { name: '墨水笔', quantity: 1 },
+        { name: '羊皮纸 (1张)', quantity: 10 },
+        { name: '小沙包', quantity: 1 },
+        { name: '小刀', quantity: 1 },
+    ],
+    '学者背包': [
+        { name: '背包', quantity: 1 },
+        { name: '书籍', quantity: 1 },
+        { name: '墨水 (1盎司)', quantity: 1 },
+        { name: '墨水笔', quantity: 1 },
+        { name: '羊皮纸 (1张)', quantity: 10 },
+        { name: '小沙包', quantity: 1 },
+        { name: '小刀', quantity: 1 },
+    ],
+    '盗贼背包': [
+        { name: '背包', quantity: 1 },
+        { name: '滚珠 (1000枚)', quantity: 1 },
+        { name: '铃铛', quantity: 1 },
+        { name: '蜡烛', quantity: 5 },
+        { name: '撬棍', quantity: 1 },
+        { name: '锤子', quantity: 1 },
+        { name: '岩钉', quantity: 10 },
+        { name: '附盖提灯', quantity: 1 },
+        { name: '燃油 (扁瓶)', quantity: 2 },
+        { name: '口粮 (1天)', quantity: 5 },
+        { name: '火绒盒', quantity: 1 },
+        { name: '水袋', quantity: 1 },
+        { name: '麻绳 (50尺)', quantity: 1 },
+    ],
+};
 
 // === Equipment Option Types ===
 
@@ -967,6 +1119,9 @@ const ARMOR_KEYWORDS = [
 
 /**
  * 将startingInventory转换为背包分类物品
+ * - 正确检测工具并分离到tools数组
+ * - 展开套组物品为个别物品
+ * - 优先使用物品库描述
  */
 export function convertStartingInventoryToBackpack(
     startingInventory: { name: string; quantity: number; source: string }[]
@@ -974,12 +1129,14 @@ export function convertStartingInventoryToBackpack(
     weapons: { id: string; name: string; quantity: number; cost: string; weight: string; type: '武器'; source: string; description: string }[];
     armor: { id: string; name: string; quantity: number; cost: string; weight: string; type: '护甲'; source: string; description: string }[];
     gear: { id: string; name: string; quantity: number; cost: string; weight: string; type: '杂物'; source: string; description: string }[];
+    tools: { id: string; name: string; note: string }[];
 } {
     const weapons: { id: string; name: string; quantity: number; cost: string; weight: string; type: '武器'; source: string; description: string }[] = [];
     const armor: { id: string; name: string; quantity: number; cost: string; weight: string; type: '护甲'; source: string; description: string }[] = [];
     const gear: { id: string; name: string; quantity: number; cost: string; weight: string; type: '杂物'; source: string; description: string }[] = [];
+    const tools: { id: string; name: string; note: string }[] = [];
 
-    // Helper to find item in DBs
+    // Helper to find item in weapon/armor/gear DBs
     const findItemInDB = (name: string) => {
         // Try strict match first
         let item = WEAPON_DB.find(i => i.name === name) ||
@@ -989,8 +1146,6 @@ export function convertStartingInventoryToBackpack(
         if (item) return item;
 
         // Try fuzzy match (e.g. "Longsword" matches "Longsword (Versatile)")
-        // but avoid false positives (e.g. "Bow" matching "Longbow")
-        // We iterate through DBs looking for partial matches where the DB name includes the search term
         item = WEAPON_DB.find(i => i.name.includes(name)) ||
             ARMOR_DB.find(i => i.name.includes(name)) ||
             GEAR_DB.find(i => i.name.includes(name));
@@ -998,7 +1153,54 @@ export function convertStartingInventoryToBackpack(
         return item;
     };
 
-    startingInventory.forEach((item, index) => {
+    // Helper to find tool in TOOL_DB
+    const findToolInDB = (name: string) => {
+        let tool = TOOL_DB.find(t => t.name === name);
+        if (tool) return tool;
+        // Fuzzy match for tools
+        tool = TOOL_DB.find(t => t.name.includes(name) || name.includes(t.name));
+        return tool;
+    };
+
+    // Tool name keywords for detection
+    const TOOL_KEYWORDS = [
+        '工具', '工匠', '炼金', '酿酒', '书法', '木匠', '制图', '鞋匠', '厨师',
+        '玻璃吹制', '珠宝匠', '制革匠', '石匠', '绘画', '陶匠', '锻造', '修补匠',
+        '织布', '木雕', '易容', '文书伪造', '草药', '盗贼工具', '领航', '赌具', '乐器',
+        '琵琶', '竖琴', '长笛', '鲁特琴', '手鼓', '号角', '肖姆管', '维奥尔琴', '扬琴',
+        '骰子套组', '龙象棋', '扑克牌', '三龙牌'
+    ];
+
+    // Process each item, potentially expanding packs
+    const processItem = (item: { name: string; quantity: number; source: string }, index: number) => {
+        // Check if this is a pack that should be expanded
+        const packContents = PACK_CONTENTS[item.name];
+        if (packContents) {
+            // Expand pack into individual items
+            packContents.forEach((packItem, subIndex) => {
+                processItem(
+                    {
+                        name: packItem.name,
+                        quantity: packItem.quantity * item.quantity,
+                        source: item.source
+                    },
+                    index * 100 + subIndex
+                );
+            });
+            return;
+        }
+
+        // Check if it's a tool first
+        const toolItem = findToolInDB(item.name);
+        if (toolItem || TOOL_KEYWORDS.some(kw => item.name.includes(kw))) {
+            tools.push({
+                id: toolItem?.id || `tool-${index}-${Date.now()}`,
+                name: toolItem?.name || item.name,
+                note: item.source
+            });
+            return;
+        }
+
         // Look up item stats from DB
         const dbItem = findItemInDB(item.name);
 
@@ -1009,13 +1211,13 @@ export function convertStartingInventoryToBackpack(
             cost: dbItem?.cost || '-',
             weight: dbItem?.weight || '-',
             source: item.source,
-            description: dbItem?.description || `来自${item.source}`,
+            // Use library description, only fallback to source if not found
+            description: dbItem?.description || '',
             // Copy other potential properties if they exist
             ...(dbItem || {})
         };
 
         // Determine Type
-        // If found in DB, use its type. Otherwise guess based on keywords.
         let type = '杂物';
         if (dbItem) {
             if (dbItem.type === '武器') type = '武器';
@@ -1037,8 +1239,12 @@ export function convertStartingInventoryToBackpack(
             // @ts-ignore
             gear.push({ ...baseItem, type: '杂物' });
         }
+    };
+
+    startingInventory.forEach((item, index) => {
+        processItem(item, index);
     });
 
-    return { weapons, armor, gear };
+    return { weapons, armor, gear, tools };
 }
 

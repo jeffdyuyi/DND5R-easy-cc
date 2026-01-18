@@ -99,11 +99,12 @@ const CharacterWizard: React.FC<Props> = ({ character, updateCharacter, onComple
     } else {
       // 完成时将startingInventory转换到背包系统
       if (character.startingInventory && character.startingInventory.length > 0) {
-        const { weapons, armor, gear } = convertStartingInventoryToBackpack(character.startingInventory);
+        const { weapons, armor, gear, tools } = convertStartingInventoryToBackpack(character.startingInventory);
         updateCharacter({
           inventoryWeapons: [...(character.inventoryWeapons || []), ...weapons],
           inventoryArmor: [...(character.inventoryArmor || []), ...armor],
           inventoryGear: [...(character.inventoryGear || []), ...gear],
+          tools: [...(character.tools || []), ...tools],
         });
       }
       onComplete();

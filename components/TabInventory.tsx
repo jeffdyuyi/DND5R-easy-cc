@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { CharacterData, ItemItem } from '../types';
-import { Plus, Trash2, Shield, Sword, Box, Zap, Hammer, Eye, X, Weight, Backpack } from 'lucide-react';
+import { Plus, Trash2, Shield, Sword, Box, Zap, Hammer, Eye, X, Weight, Backpack, Package } from 'lucide-react';
 import { WEAPON_DB, ARMOR_DB, GEAR_DB, TOOL_DB, MAGIC_ITEM_DB } from '../data';
 import { ItemDetailView } from './LibraryDetails';
 
@@ -13,8 +13,9 @@ interface Props {
 
 const TabInventory: React.FC<Props> = ({ character, updateCharacter, libraryTools }) => {
    // Modal State
-   const [pickerType, setPickerType] = useState<'weapon' | 'armor' | 'gear' | 'ammo' | 'tool' | null>(null);
+   const [pickerType, setPickerType] = useState<'weapon' | 'armor' | 'gear' | 'ammo' | 'tool' | 'misc' | null>(null);
    const [viewingItem, setViewingItem] = useState<ItemItem | null>(null);
+   const [customItemName, setCustomItemName] = useState('');
 
    // --- Handlers ---
 
@@ -186,17 +187,116 @@ const TabInventory: React.FC<Props> = ({ character, updateCharacter, libraryTool
          </div>
 
          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
-            {/* Gear & Magic Items */}
+            {/* Misc Items / Consumables */}
             <div>
                <div className="flex justify-between items-center mb-2 bg-stone-800 text-white px-3 py-1 rounded-t">
-                  <h3 className="font-bold flex items-center gap-2"><Box className="w-4 h-4" /> 装备与法器</h3>
+                  <h3 className="font-bold flex items-center gap-2"><Package className="w-4 h-4" /> 杂物 (Misc)</h3>
                   <div className="flex gap-2">
-                     <button onClick={() => setPickerType('gear')} className="text-xs bg-stone-600 px-2 py-0.5 rounded hover:bg-stone-500 flex items-center gap-1">
-                        <Plus className="w-3 h-3" /> 杂物
+                     <button onClick={() => setPickerType('misc')} className="text-xs bg-stone-600 px-2 py-0.5 rounded hover:bg-stone-500 flex items-center gap-1">
+                        <Plus className="w-3 h-3" /> 添加
                      </button>
                   </div>
                </div>
                <div className="border border-stone-300 rounded overflow-hidden max-h-[400px] overflow-y-auto shadow-sm">
+                  <table className="w-full text-sm">
+                     <thead className="bg-stone-100 font-bold text-stone-700 sticky top-0">
+                        <tr>
+                           <th className="p-2 text-left border-b">名称</th>
+                           <th className="p-2 w-20 text-center border-b">数量</th>
+                           <th className="p-2 w-16 text-center border-b">重量</th>
+                           <th className="p-2 w-10 border-b"></th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        {character.inventoryGear.filter(i => !i.type || (i.type !== '弹药' && i.type !== '魔法物品' && i.type !== '法器')).map((item, i) => (
+                           <tr key={i} className="border-b hover:bg-stone-50">
+                              <td className="p-2">
+                                 <span className="font-bold block cursor-pointer hover:text-dndRed" onClick={() => handleViewItem(item)}>{item.name}</span>
+                                 <span className="text-[10px] text-stone-500">{item.type || '杂物'}</span>
+                              </td>
+                              <td className="p-2 text-center">
+                                 <div className="flex items-center justify-center gap-1">
+                                    <button
+                                       onClick={() => {
+                                          const list = [...character.inventoryGear];
+                                          const realIndex = list.indexOf(item);
+                                          list[realIndex] = { ...list[realIndex], quantity: Math.max(1, (list[realIndex].quantity || 1) - 1) };
+                                          updateCharacter({ inventoryGear: list });
+                                       }}
+                                       className="w-5 h-5 rounded bg-stone-200 hover:bg-stone-300 text-stone-600 text-xs font-bold"
+                                    >-</button>
+                                    <span className="w-6 text-center font-medium">{item.quantity || 1}</span>
+                                    <button
+                                       onClick={() => {
+                                          const list = [...character.inventoryGear];
+                                          const realIndex = list.indexOf(item);
+                                          list[realIndex] = { ...list[realIndex], quantity: (list[realIndex].quantity || 1) + 1 };
+                                          updateCharacter({ inventoryGear: list });
+                                       }}
+                                       className="w-5 h-5 rounded bg-stone-200 hover:bg-stone-300 text-stone-600 text-xs font-bold"
+                                    >+</button>
+                                 </div>
+                              </td>
+                              <td className="p-2 text-center">{item.weight}</td>
+                              <td className="p-2 text-center">
+                                 <button onClick={() => {
+                                    const list = [...character.inventoryGear];
+                                    const realIndex = list.indexOf(item);
+                                    list.splice(realIndex, 1);
+                                    updateCharacter({ inventoryGear: list });
+                                 }} className="text-stone-400 hover:text-red-500"><Trash2 className="w-4 h-4" /></button>
+                              </td>
+                           </tr>
+                        ))}
+                        {character.inventoryGear.filter(i => !i.type || (i.type !== '弹药' && i.type !== '魔法物品' && i.type !== '法器')).length === 0 && (
+                           <tr><td colSpan={4} className="p-4 text-center text-stone-400 italic">暂无杂物</td></tr>
+                        )}
+                     </tbody>
+                  </table>
+               </div>
+               {/* Custom item input */}
+               <div className="mt-2 flex gap-2">
+                  <input
+                     type="text"
+                     value={customItemName}
+                     onChange={(e) => setCustomItemName(e.target.value)}
+                     placeholder="自定义物品名称..."
+                     className="flex-1 px-2 py-1 border border-stone-300 rounded text-sm"
+                  />
+                  <button
+                     onClick={() => {
+                        if (customItemName.trim()) {
+                           const newItem: ItemItem = {
+                              id: `custom-${Date.now()}`,
+                              name: customItemName.trim(),
+                              description: '自定义物品',
+                              source: '自定义',
+                              type: '杂物',
+                              cost: '-',
+                              weight: '-',
+                              quantity: 1
+                           };
+                           updateCharacter({ inventoryGear: [...character.inventoryGear, newItem] });
+                           setCustomItemName('');
+                        }
+                     }}
+                     disabled={!customItemName.trim()}
+                     className="px-3 py-1 bg-stone-700 text-white rounded text-sm hover:bg-stone-600 disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                     添加
+                  </button>
+               </div>
+            </div>
+
+            {/* Magic Items / Focuses */}
+            <div>
+               <div className="flex justify-between items-center mb-2 bg-stone-800 text-white px-3 py-1 rounded-t">
+                  <h3 className="font-bold flex items-center gap-2"><Box className="w-4 h-4" /> 法器与魔法物品</h3>
+                  <button onClick={() => setPickerType('gear')} className="text-xs bg-stone-600 px-2 py-0.5 rounded hover:bg-stone-500 flex items-center gap-1">
+                     <Plus className="w-3 h-3" /> 添加
+                  </button>
+               </div>
+               <div className="border border-stone-300 rounded overflow-hidden max-h-[300px] overflow-y-auto shadow-sm">
                   <table className="w-full text-sm">
                      <thead className="bg-stone-100 font-bold text-stone-700 sticky top-0">
                         <tr>
@@ -207,11 +307,11 @@ const TabInventory: React.FC<Props> = ({ character, updateCharacter, libraryTool
                         </tr>
                      </thead>
                      <tbody>
-                        {character.inventoryGear.filter(i => !i.type || i.type !== '弹药').map((item, i) => (
+                        {character.inventoryGear.filter(i => i.type === '魔法物品' || i.type === '法器').map((item, i) => (
                            <tr key={i} className="border-b hover:bg-stone-50">
                               <td className="p-2">
                                  <span className="font-bold block cursor-pointer hover:text-dndRed" onClick={() => handleViewItem(item)}>{item.name}</span>
-                                 <span className="text-[10px] text-stone-500">{item.type}</span>
+                                 <span className="text-[10px] text-stone-500">{item.rarity || item.type}</span>
                               </td>
                               <td className="p-2 text-center">
                                  <input type="checkbox" checked={item.attuned} onChange={(e) => {
@@ -232,10 +332,16 @@ const TabInventory: React.FC<Props> = ({ character, updateCharacter, libraryTool
                               </td>
                            </tr>
                         ))}
+                        {character.inventoryGear.filter(i => i.type === '魔法物品' || i.type === '法器').length === 0 && (
+                           <tr><td colSpan={4} className="p-4 text-center text-stone-400 italic">暂无法器或魔法物品</td></tr>
+                        )}
                      </tbody>
                   </table>
                </div>
             </div>
+         </div>
+
+         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
 
             {/* Ammo & Tools */}
             <div className="space-y-8">
@@ -334,7 +440,8 @@ const TabInventory: React.FC<Props> = ({ character, updateCharacter, libraryTool
          {/* Pickers */}
          {pickerType === 'weapon' && <PickerModal setPickerType={setPickerType} title="选择武器" items={WEAPON_DB} onSelect={(i) => addItem('inventoryWeapons', i)} />}
          {pickerType === 'armor' && <PickerModal setPickerType={setPickerType} title="选择护甲/盾牌" items={ARMOR_DB} onSelect={(i) => addItem('inventoryArmor', i)} />}
-         {pickerType === 'gear' && <PickerModal setPickerType={setPickerType} title="选择杂物/法器" items={[...GEAR_DB.filter(i => i.type !== '弹药'), ...MAGIC_ITEM_DB]} onSelect={(i) => addItem('inventoryGear', i)} />}
+         {pickerType === 'gear' && <PickerModal setPickerType={setPickerType} title="选择法器/魔法物品" items={[...GEAR_DB.filter(i => i.type === '法器'), ...MAGIC_ITEM_DB]} onSelect={(i) => addItem('inventoryGear', i)} />}
+         {pickerType === 'misc' && <PickerModal setPickerType={setPickerType} title="选择杂物" items={GEAR_DB.filter(i => i.type !== '弹药' && i.type !== '法器')} onSelect={(i) => addItem('inventoryGear', { ...i, quantity: 1 })} />}
          {pickerType === 'ammo' && <PickerModal setPickerType={setPickerType} title="选择弹药" items={GEAR_DB.filter(i => i.type === '弹药')} onSelect={(i) => addItem('inventoryGear', { ...i, quantity: 20 })} />}
          {pickerType === 'tool' && <PickerModal setPickerType={setPickerType} title="选择工具" items={TOOL_DB} onSelect={(i) => addItem('tools', i)} />}
 
