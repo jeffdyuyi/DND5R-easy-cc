@@ -106,6 +106,7 @@ export interface SpellItem extends BaseLibraryItem {
   components: string;
   duration: string;
   classes?: string[]; // 适用职业
+  higherLevel?: string; // 升环施法描述
 }
 
 export interface FeatItem extends BaseLibraryItem {

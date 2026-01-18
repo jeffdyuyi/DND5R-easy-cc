@@ -1,10 +1,10 @@
 
 import React from 'react';
 import { ClassItem, SpeciesItem, BackgroundItem, SubclassItem, SpellItem, FeatItem, ItemItem } from '../types';
-import { 
-  Scroll, Dna, Star, 
+import {
+  Scroll, Dna, Star,
   Shield, Swords, Hammer, Backpack, Award, Gem,
-  Zap, Box, Crown, Link
+  Box, Crown, Link
 } from 'lucide-react';
 import { RichText } from './RichText';
 
@@ -21,13 +21,13 @@ interface CardProps {
   accentColor?: string;
 }
 
-const VerticalCard: React.FC<CardProps> = ({ 
-  title, 
-  subtitle, 
-  icon, 
-  headerColor = "bg-stone-800", 
-  stats = [], 
-  bodyContent, 
+const VerticalCard: React.FC<CardProps> = ({
+  title,
+  subtitle,
+  icon,
+  headerColor = "bg-stone-800",
+  stats = [],
+  bodyContent,
   footer,
   accentColor = "border-stone-800"
 }) => {
@@ -35,48 +35,48 @@ const VerticalCard: React.FC<CardProps> = ({
     <div className={`max-w-md mx-auto bg-white border-[6px] ${accentColor} rounded-xl overflow-hidden shadow-2xl my-4 font-serif flex flex-col h-auto min-h-[400px]`}>
       {/* Header */}
       <div className={`${headerColor} p-3 text-white border-b-4 ${accentColor} relative z-10`}>
-         {/* Decorative Corner */}
-         <div className="absolute top-0 right-0 p-1">
-            <div className="w-16 h-16 bg-white/10 rounded-bl-full absolute top-0 right-0"></div>
-         </div>
+        {/* Decorative Corner */}
+        <div className="absolute top-0 right-0 p-1">
+          <div className="w-16 h-16 bg-white/10 rounded-bl-full absolute top-0 right-0"></div>
+        </div>
 
-         <div className="flex justify-between items-start relative z-10">
-            <div className="flex items-center gap-3">
-               <div className="p-2 bg-black/30 rounded-lg shadow-inner border border-white/20">
-                  {icon}
-               </div>
-               <div>
-                  <h2 className="text-2xl font-black tracking-wide leading-none uppercase drop-shadow-md">{title}</h2>
-                  {subtitle && <div className="text-[10px] font-bold uppercase tracking-[0.2em] opacity-90 mt-1">{subtitle}</div>}
-               </div>
+        <div className="flex justify-between items-start relative z-10">
+          <div className="flex items-center gap-3">
+            <div className="p-2 bg-black/30 rounded-lg shadow-inner border border-white/20">
+              {icon}
             </div>
-         </div>
+            <div>
+              <h2 className="text-2xl font-black tracking-wide leading-none uppercase drop-shadow-md">{title}</h2>
+              {subtitle && <div className="text-[10px] font-bold uppercase tracking-[0.2em] opacity-90 mt-1">{subtitle}</div>}
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Stats Bar */}
       {stats.length > 0 && (
         <div className="bg-stone-100 border-b-4 border-stone-200 grid grid-cols-2 divide-x-2 divide-stone-200">
-           {stats.map((stat, idx) => (
-              <div 
-                key={idx} 
-                className={`p-2 flex flex-col justify-center items-center text-center ${stat.fullWidth ? 'col-span-2 border-t-2 border-stone-200' : ''}`}
-              >
-                 <span className="text-[9px] text-stone-500 font-black uppercase tracking-widest">{stat.label}</span>
-                 <span className="font-bold text-stone-800 text-sm leading-tight mt-0.5">{stat.value}</span>
-              </div>
-           ))}
+          {stats.map((stat, idx) => (
+            <div
+              key={idx}
+              className={`p-2 flex flex-col justify-center items-center text-center ${stat.fullWidth ? 'col-span-2 border-t-2 border-stone-200' : ''}`}
+            >
+              <span className="text-[9px] text-stone-500 font-black uppercase tracking-widest">{stat.label}</span>
+              <span className="font-bold text-stone-800 text-sm leading-tight mt-0.5">{stat.value}</span>
+            </div>
+          ))}
         </div>
       )}
 
       {/* Body Content */}
       <div className="p-5 bg-[url('https://www.transparenttextures.com/patterns/paper.png')] bg-stone-50 text-stone-900 leading-relaxed text-sm flex-grow space-y-4">
-         {bodyContent}
+        {bodyContent}
       </div>
 
       {/* Footer */}
       {footer && (
         <div className="bg-stone-900 text-stone-400 text-[10px] p-2 border-t-4 border-stone-800 flex flex-col items-center uppercase tracking-widest">
-           {footer}
+          {footer}
         </div>
       )}
     </div>
@@ -99,27 +99,27 @@ const InnerFeatureBlock: React.FC<{ title: string, level?: number, description: 
 // --- View Components ---
 
 const DetailFooter = ({ source }: { source: string }) => (
-   <div className="w-full">
-      <div className="flex justify-between w-full font-bold">
-         <span>{source}</span>
-         <span>不咕鸟制卡</span>
-      </div>
-      <div className="text-[8px] opacity-50 mt-1 text-center font-normal lowercase tracking-normal">
-         数据来源: 5echm.kagangtuya.top
-      </div>
-   </div>
+  <div className="w-full">
+    <div className="flex justify-between w-full font-bold">
+      <span>{source}</span>
+      <span>不咕鸟制卡</span>
+    </div>
+    <div className="text-[8px] opacity-50 mt-1 text-center font-normal lowercase tracking-normal">
+      数据来源: 5echm.kagangtuya.top
+    </div>
+  </div>
 );
 
 export const ClassDetailView = ({ item, level }: { item: ClassItem, level?: number }) => {
-  const visibleFeatures = level 
-    ? item.features.filter(f => f.level <= level).sort((a,b) => a.level - b.level) 
-    : item.features.sort((a,b) => a.level - b.level);
+  const visibleFeatures = level
+    ? item.features.filter(f => f.level <= level).sort((a, b) => a.level - b.level)
+    : item.features.sort((a, b) => a.level - b.level);
 
   return (
     <VerticalCard
       title={item.name}
       subtitle="职业 Class"
-      icon={<Shield className="w-6 h-6"/>}
+      icon={<Shield className="w-6 h-6" />}
       headerColor="bg-red-900"
       accentColor="border-red-950"
       stats={[
@@ -134,15 +134,15 @@ export const ClassDetailView = ({ item, level }: { item: ClassItem, level?: numb
           <div className="italic text-stone-600 mb-4 border-b border-stone-300 pb-4">
             <RichText text={item.fullDescription || item.description} />
           </div>
-          
+
           <div className="bg-white border border-stone-300 p-3 rounded shadow-sm mb-4">
             <h4 className="font-bold text-red-900 border-b border-red-100 mb-2 pb-1 text-xs uppercase flex items-center gap-1">
-              <Star className="w-3 h-3"/> 核心特质
+              <Star className="w-3 h-3" /> 核心特质
             </h4>
             <div className="space-y-2 text-xs">
-               <p><strong>护甲受训:</strong> {item.coreTraits.armorTraining}</p>
-               <p><strong>武器熟练:</strong> {item.coreTraits.weaponProficiencies}</p>
-               <p><strong>技能熟练:</strong> {item.coreTraits.skillProficiencies}</p>
+              <p><strong>护甲受训:</strong> {item.coreTraits.armorTraining}</p>
+              <p><strong>武器熟练:</strong> {item.coreTraits.weaponProficiencies}</p>
+              <p><strong>技能熟练:</strong> {item.coreTraits.skillProficiencies}</p>
             </div>
           </div>
 
@@ -161,7 +161,7 @@ export const SubclassDetailView = ({ item }: { item: SubclassItem }) => (
   <VerticalCard
     title={item.name}
     subtitle={`${item.parentClass}子职`}
-    icon={<Crown className="w-6 h-6"/>}
+    icon={<Crown className="w-6 h-6" />}
     headerColor="bg-blue-900"
     accentColor="border-blue-950"
     stats={[
@@ -173,7 +173,7 @@ export const SubclassDetailView = ({ item }: { item: SubclassItem }) => (
           <RichText text={item.fullDescription || item.description} />
         </div>
         <h3 className="font-black text-lg text-stone-800 uppercase tracking-wide border-b-2 border-stone-800 pb-1 mb-4">子职特性</h3>
-        {item.features.sort((a,b)=>a.level-b.level).map((f, i) => (
+        {item.features.sort((a, b) => a.level - b.level).map((f, i) => (
           <InnerFeatureBlock key={i} title={f.name} level={f.level} description={f.description} />
         ))}
       </>
@@ -186,7 +186,7 @@ export const SpeciesDetailView = ({ item }: { item: SpeciesItem }) => (
   <VerticalCard
     title={item.name}
     subtitle="种族 Species"
-    icon={<Dna className="w-6 h-6"/>}
+    icon={<Dna className="w-6 h-6" />}
     headerColor="bg-green-800"
     accentColor="border-green-900"
     stats={[
@@ -215,7 +215,7 @@ export const BackgroundDetailView = ({ item, libraryFeats }: { item: BackgroundI
     <VerticalCard
       title={item.name}
       subtitle="背景 Background"
-      icon={<Scroll className="w-6 h-6"/>}
+      icon={<Scroll className="w-6 h-6" />}
       headerColor="bg-yellow-700"
       accentColor="border-yellow-900"
       stats={[
@@ -227,34 +227,34 @@ export const BackgroundDetailView = ({ item, libraryFeats }: { item: BackgroundI
           <div className="italic text-stone-600 mb-6">
             <RichText text={item.description} />
           </div>
-          
+
           <div className="space-y-4">
-             <div className="bg-stone-100 p-3 rounded border border-stone-300">
-                <h4 className="font-bold text-stone-800 text-xs uppercase mb-1">熟练项</h4>
-                <p><strong>技能:</strong> {item.skills.join('、')}</p>
-                <p><strong>工具:</strong> {item.tool}</p>
-             </div>
+            <div className="bg-stone-100 p-3 rounded border border-stone-300">
+              <h4 className="font-bold text-stone-800 text-xs uppercase mb-1">熟练项</h4>
+              <p><strong>技能:</strong> {item.skills.join('、')}</p>
+              <p><strong>工具:</strong> {item.tool}</p>
+            </div>
 
-             <div className="bg-stone-100 p-3 rounded border border-stone-300">
-                <h4 className="font-bold text-stone-800 text-xs uppercase mb-1">起始装备</h4>
-                <ul className="list-disc pl-4 text-xs space-y-1">
-                   {item.equipment.map((e,i) => <li key={i}>{e}</li>)}
-                </ul>
-             </div>
+            <div className="bg-stone-100 p-3 rounded border border-stone-300">
+              <h4 className="font-bold text-stone-800 text-xs uppercase mb-1">起始装备</h4>
+              <ul className="list-disc pl-4 text-xs space-y-1">
+                {item.equipment.map((e, i) => <li key={i}>{e}</li>)}
+              </ul>
+            </div>
 
-             {featInfo && (
-                <div className="border-t-2 border-stone-300 pt-4">
-                   <h4 className="font-bold text-stone-800 flex items-center gap-2 mb-2">
-                      <Star className="w-4 h-4 text-yellow-600"/> 赠送专长详情
-                   </h4>
-                   <div className="text-sm bg-white p-3 rounded border border-stone-200">
-                      <p className="font-bold mb-1">{featInfo.name}</p>
-                      <ul className="list-disc pl-4 text-xs text-stone-600 space-y-1">
-                         {featInfo.benefits.map((b,i) => <li key={i}><RichText text={b}/></li>)}
-                      </ul>
-                   </div>
+            {featInfo && (
+              <div className="border-t-2 border-stone-300 pt-4">
+                <h4 className="font-bold text-stone-800 flex items-center gap-2 mb-2">
+                  <Star className="w-4 h-4 text-yellow-600" /> 赠送专长详情
+                </h4>
+                <div className="text-sm bg-white p-3 rounded border border-stone-200">
+                  <p className="font-bold mb-1">{featInfo.name}</p>
+                  <ul className="list-disc pl-4 text-xs text-stone-600 space-y-1">
+                    {featInfo.benefits.map((b, i) => <li key={i}><RichText text={b} /></li>)}
+                  </ul>
                 </div>
-             )}
+              </div>
+            )}
           </div>
         </>
       }
@@ -267,7 +267,7 @@ export const FeatDetailView = ({ item }: { item: FeatItem }) => (
   <VerticalCard
     title={item.name}
     subtitle="专长 Feat"
-    icon={<Award className="w-6 h-6"/>}
+    icon={<Award className="w-6 h-6" />}
     headerColor="bg-purple-900"
     accentColor="border-purple-950"
     stats={[
@@ -284,8 +284,8 @@ export const FeatDetailView = ({ item }: { item: FeatItem }) => (
         <ul className="space-y-4">
           {item.benefits.map((b, i) => (
             <li key={i} className="flex gap-2 items-start">
-               <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-purple-700 flex-shrink-0"></div>
-               <div><RichText text={b} /></div>
+              <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-purple-700 flex-shrink-0"></div>
+              <div><RichText text={b} /></div>
             </li>
           ))}
         </ul>
@@ -295,56 +295,37 @@ export const FeatDetailView = ({ item }: { item: FeatItem }) => (
   />
 );
 
-export const SpellDetailView = ({ item }: { item: SpellItem }) => (
-  <VerticalCard
-    title={item.name}
-    subtitle={`${item.level}环${item.school}`}
-    icon={<Zap className="w-6 h-6"/>}
-    headerColor="bg-indigo-900"
-    accentColor="border-indigo-950"
-    stats={[
-      { label: "施法时间", value: item.castingTime },
-      { label: "施法距离", value: item.range },
-      { label: "成分", value: item.components },
-      { label: "持续时间", value: item.duration },
-    ]}
-    bodyContent={
-      <>
-        <div className="leading-relaxed text-justify">
-          <RichText text={item.description} />
-        </div>
-        {item.classes && (
-           <div className="mt-6 pt-4 border-t border-indigo-100">
-              <span className="text-xs font-bold text-indigo-900 uppercase">职业列表:</span>
-              <div className="flex flex-wrap gap-1 mt-1">
-                 {item.classes.map(c => <span key={c} className="bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded text-xs border border-indigo-200">{c}</span>)}
-              </div>
-           </div>
-        )}
-      </>
-    }
-    footer={<DetailFooter source={item.source} />}
-  />
-);
+export const SpellDetailView = ({ item }: { item: SpellItem }) => {
+  // 使用新的SpellCard组件
+  const SpellCard = React.lazy(() => import('./SpellCard'));
+
+  return (
+    <React.Suspense fallback={<div className="p-4 text-center">加载中...</div>}>
+      <div className="max-w-md mx-auto my-4">
+        <SpellCard item={item} />
+      </div>
+    </React.Suspense>
+  );
+};
 
 export const ItemDetailView = ({ item }: { item: ItemItem }) => {
   let color = "bg-stone-700";
-  let icon = <Backpack className="w-6 h-6"/>;
+  let icon = <Backpack className="w-6 h-6" />;
   let subtitle: string = item.type;
 
-  if(item.type === '武器') { color = "bg-red-800"; icon = <Swords className="w-6 h-6"/>; }
-  if(item.type === '护甲') { color = "bg-blue-800"; icon = <Shield className="w-6 h-6"/>; }
-  if(item.type === '工具') { color = "bg-amber-700"; icon = <Hammer className="w-6 h-6"/>; }
-  if(item.type === '药水') { color = "bg-green-700"; icon = <Box className="w-6 h-6"/>; }
-  
+  if (item.type === '武器') { color = "bg-red-800"; icon = <Swords className="w-6 h-6" />; }
+  if (item.type === '护甲') { color = "bg-blue-800"; icon = <Shield className="w-6 h-6" />; }
+  if (item.type === '工具') { color = "bg-amber-700"; icon = <Hammer className="w-6 h-6" />; }
+  if (item.type === '药水') { color = "bg-green-700"; icon = <Box className="w-6 h-6" />; }
+
   if (item.rarity) {
-     const rarityColors: any = {
-        '普通': 'bg-stone-500', '非普通': 'bg-green-600', '珍稀': 'bg-blue-600', 
-        '极珍稀': 'bg-purple-600', '传说': 'bg-orange-500', '神器': 'bg-yellow-600'
-     };
-     color = rarityColors[item.rarity] || color;
-     subtitle = `${item.rarity} ${item.type}`;
-     icon = <Gem className="w-6 h-6"/>;
+    const rarityColors: any = {
+      '普通': 'bg-stone-500', '非普通': 'bg-green-600', '珍稀': 'bg-blue-600',
+      '极珍稀': 'bg-purple-600', '传说': 'bg-orange-500', '神器': 'bg-yellow-600'
+    };
+    color = rarityColors[item.rarity] || color;
+    subtitle = `${item.rarity} ${item.type}`;
+    icon = <Gem className="w-6 h-6" />;
   }
 
   // --- Parsing Description for Metadata ---
@@ -354,46 +335,46 @@ export const ItemDetailView = ({ item }: { item: ItemItem }) => {
 
   // Heuristic parsing for Magic Items/Armor descriptions that contain metadata lines
   if (item.type === '护甲' || item.type === '魔法物品' || item.type === '奇物' || item.type === '武器') {
-     const lines = descText.split('\n');
-     if (lines.length > 0) {
-        const firstLine = lines[0];
-        
-        // Check for Attunement in first line or anywhere in description
-        if (descText.includes('需同调')) {
-           isAttuned = true;
-        }
-        
-        // Check for specific type definition "护甲类型：xxx" or English "Weapon (xxx)"
-        const typeMatch = firstLine.match(/护甲类型[：:]\s*([^（(，,。]+)/) || firstLine.match(/^(?:Weapon|Armor|Wondrous Item)\s*[\(（]([^）)]+)[\)）]/);
-        if (typeMatch) {
-           specificType = typeMatch[1].trim();
-        }
+    const lines = descText.split('\n');
+    if (lines.length > 0) {
+      const firstLine = lines[0];
 
-        // Clean up description: Remove the first line if it looks like a metadata header
-        // Examples: "护甲类型：板甲（需同调）。" or "Weapon (longsword), very rare"
-        const looksLikeHeader = 
-           firstLine.includes('护甲类型') || 
-           firstLine.includes('需同调') ||
-           firstLine.includes('珍稀') ||
-           firstLine.includes('非普通') ||
-           firstLine.includes('传说');
+      // Check for Attunement in first line or anywhere in description
+      if (descText.includes('需同调')) {
+        isAttuned = true;
+      }
 
-        if (looksLikeHeader && lines.length > 1) {
-           descText = lines.slice(1).join('\n').trim();
-        }
-     }
+      // Check for specific type definition "护甲类型：xxx" or English "Weapon (xxx)"
+      const typeMatch = firstLine.match(/护甲类型[：:]\s*([^（(，,。]+)/) || firstLine.match(/^(?:Weapon|Armor|Wondrous Item)\s*[\(（]([^）)]+)[\)）]/);
+      if (typeMatch) {
+        specificType = typeMatch[1].trim();
+      }
+
+      // Clean up description: Remove the first line if it looks like a metadata header
+      // Examples: "护甲类型：板甲（需同调）。" or "Weapon (longsword), very rare"
+      const looksLikeHeader =
+        firstLine.includes('护甲类型') ||
+        firstLine.includes('需同调') ||
+        firstLine.includes('珍稀') ||
+        firstLine.includes('非普通') ||
+        firstLine.includes('传说');
+
+      if (looksLikeHeader && lines.length > 1) {
+        descText = lines.slice(1).join('\n').trim();
+      }
+    }
   }
 
   // Construct Stats
   const stats: { label: string; value: string | React.ReactNode; fullWidth?: boolean }[] = [
-     { label: "价值", value: item.cost },
-     { label: "重量", value: item.weight }
+    { label: "价值", value: item.cost },
+    { label: "重量", value: item.weight }
   ];
-  if(item.damage) stats.push({ label: "伤害", value: `${item.damage} ${item.damageType}` });
-  if(item.ac) stats.push({ label: "AC", value: item.ac });
-  if(specificType) stats.push({ label: "类型详述", value: specificType, fullWidth: true });
-  if(item.properties) stats.push({ label: "特性", value: item.properties.join(', '), fullWidth: true });
-  if(item.toolAbility) stats.push({ label: "关键属性", value: item.toolAbility, fullWidth: true });
+  if (item.damage) stats.push({ label: "伤害", value: `${item.damage} ${item.damageType}` });
+  if (item.ac) stats.push({ label: "AC", value: item.ac });
+  if (specificType) stats.push({ label: "类型详述", value: specificType, fullWidth: true });
+  if (item.properties) stats.push({ label: "特性", value: item.properties.join(', '), fullWidth: true });
+  if (item.toolAbility) stats.push({ label: "关键属性", value: item.toolAbility, fullWidth: true });
 
   return (
     <VerticalCard
@@ -407,42 +388,42 @@ export const ItemDetailView = ({ item }: { item: ItemItem }) => {
         <>
           {/* Prominent Attunement Banner */}
           {isAttuned && (
-             <div className="bg-pink-100 border border-pink-300 text-pink-900 px-4 py-2 rounded-lg font-bold flex items-center justify-center gap-2 mb-4 animate-pulse-slow">
-                <Link className="w-4 h-4"/> 需同调 (Requires Attunement)
-             </div>
+            <div className="bg-pink-100 border border-pink-300 text-pink-900 px-4 py-2 rounded-lg font-bold flex items-center justify-center gap-2 mb-4 animate-pulse-slow">
+              <Link className="w-4 h-4" /> 需同调 (Requires Attunement)
+            </div>
           )}
 
           <div className="italic text-stone-600 mb-4">
-             <RichText text={descText} />
+            <RichText text={descText} />
           </div>
           {item.mastery && (
-             <div className="bg-yellow-50 border-l-4 border-yellow-500 p-3 text-sm my-2">
-                <strong className="block text-yellow-800 text-xs uppercase mb-1">武器精通</strong>
-                {item.mastery}
-             </div>
+            <div className="bg-yellow-50 border-l-4 border-yellow-500 p-3 text-sm my-2">
+              <strong className="block text-yellow-800 text-xs uppercase mb-1">武器精通</strong>
+              {item.mastery}
+            </div>
           )}
           {item.toolUtilize && (
-             <div className="space-y-2 mt-4">
-                <h4 className="font-bold border-b border-stone-300 pb-1">工具操作</h4>
-                {item.toolUtilize.map((u, i) => (
-                   <div key={i} className="text-xs">
-                      <strong>{u.action} (DC {u.dc}):</strong> {u.description}
-                   </div>
-                ))}
-             </div>
+            <div className="space-y-2 mt-4">
+              <h4 className="font-bold border-b border-stone-300 pb-1">工具操作</h4>
+              {item.toolUtilize.map((u, i) => (
+                <div key={i} className="text-xs">
+                  <strong>{u.action} (DC {u.dc}):</strong> {u.description}
+                </div>
+              ))}
+            </div>
           )}
         </>
       }
       footer={
-         <div className="w-full">
-            <div className="flex justify-between w-full font-bold">
-               <span>{item.source}</span>
-               <span>不咕鸟制卡</span>
-            </div>
-            <div className="text-[8px] opacity-50 mt-1 text-center font-normal lowercase tracking-normal">
-               数据来源: 5echm.kagangtuya.top
-            </div>
-         </div>
+        <div className="w-full">
+          <div className="flex justify-between w-full font-bold">
+            <span>{item.source}</span>
+            <span>不咕鸟制卡</span>
+          </div>
+          <div className="text-[8px] opacity-50 mt-1 text-center font-normal lowercase tracking-normal">
+            数据来源: 5echm.kagangtuya.top
+          </div>
+        </div>
       }
     />
   );
