@@ -98,193 +98,184 @@ export const SpellListCard: React.FC<SpellListCardProps> = ({
 
 const SpellPicker = ({ level, onSelect }: { level: number, onSelect: (spell: SpellItem) => void }) => {
    const [searchTerm, setSearchTerm] = useState('');
-   const [viewMode, setViewMode] = useState<'level' | 'source'>('level'); // 新增浏览模式
 
-   // Get unique sources
+   // Sorting State
+   const [sortConfig, setSortConfig] = useState<{ key: keyof SpellItem, direction: 'asc' | 'desc' } | null>(null);
+
+   // Source Filter State
    const allSources = Array.from(new Set(SPELL_DB.map(s => s.source))).sort();
    const [selectedSources, setSelectedSources] = useState<string[]>(allSources);
-   const [showFilter, setShowFilter] = useState(false);
 
+   // Toggle helper
    const toggleSource = (source: string) => {
       setSelectedSources(prev =>
          prev.includes(source) ? prev.filter(s => s !== source) : [...prev, source]
       );
    };
 
-   // 法术过滤（按级别和来源）
+   // Toggle All
+   const toggleAllSources = () => {
+      if (selectedSources.length === allSources.length) {
+         setSelectedSources([]);
+      } else {
+         setSelectedSources(allSources);
+      }
+   };
+
+   // Filtering
    const filteredSpells = SPELL_DB.filter(s => {
-      const matchesLevel = viewMode === 'level' ? s.level === level : true;
-      const matchesSearch = s.name.includes(searchTerm) || s.school.includes(searchTerm);
+      const matchesLevel = s.level === level;
+      const matchesSearch = s.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+         s.school.includes(searchTerm) ||
+         s.source.toLowerCase().includes(searchTerm.toLowerCase());
       const matchesSource = selectedSources.includes(s.source);
       return matchesLevel && matchesSearch && matchesSource;
    });
 
-   // 按出处分组
-   const spellsBySource = filteredSpells.reduce((acc, spell) => {
-      if (!acc[spell.source]) acc[spell.source] = [];
-      acc[spell.source].push(spell);
-      return acc;
-   }, {} as Record<string, SpellItem[]>);
+   // Sorting
+   const sortedSpells = React.useMemo(() => {
+      if (!sortConfig) return filteredSpells;
+      return [...filteredSpells].sort((a, b) => {
+         const aVal = a[sortConfig.key] || '';
+         const bVal = b[sortConfig.key] || '';
+         if (aVal < bVal) return sortConfig.direction === 'asc' ? -1 : 1;
+         if (aVal > bVal) return sortConfig.direction === 'asc' ? 1 : -1;
+         return 0;
+      });
+   }, [filteredSpells, sortConfig]);
 
-   // 按级别分组（用于出处模式）
-   const spellsByLevel = (spells: SpellItem[]) => {
-      return spells.reduce((acc, spell) => {
-         if (!acc[spell.level]) acc[spell.level] = [];
-         acc[spell.level].push(spell);
-         return acc;
-      }, {} as Record<number, SpellItem[]>);
+   const requestSort = (key: keyof SpellItem) => {
+      let direction: 'asc' | 'desc' = 'asc';
+      if (sortConfig && sortConfig.key === key && sortConfig.direction === 'asc') {
+         direction = 'desc';
+      }
+      setSortConfig({ key, direction });
+   };
+
+   const SortIcon = ({ column }: { column: keyof SpellItem }) => {
+      if (sortConfig?.key !== column) return <div className="w-4 h-4 opacity-0 group-hover:opacity-50">↓</div>;
+      return <div className="w-4 h-4">{sortConfig.direction === 'asc' ? '↑' : '↓'}</div>;
    };
 
    return (
-      <div className="flex flex-col h-full overflow-hidden bg-stone-50">
-         <div className="p-4 border-b border-stone-200 bg-white space-y-3">
-            {/* 搜索和筛选 */}
-            <div className="flex gap-2">
-               <div className="relative flex-grow">
-                  <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-stone-400" />
-                  <input
-                     type="text"
-                     placeholder="搜索法术名称、学派..."
-                     value={searchTerm}
-                     onChange={e => setSearchTerm(e.target.value)}
-                     className="w-full pl-10 p-3 border-2 border-stone-300 rounded-lg focus:border-dndRed focus:outline-none text-lg font-bold"
-                     autoFocus
-                  />
+      <div className="flex flex-col h-full overflow-hidden bg-white text-sm text-stone-700">
+         {/* Top Filter Bar */}
+         <div className="p-2 border-b border-stone-300 flex items-center gap-2 bg-stone-50">
+            <div className="font-bold text-stone-600 px-2 min-w-[60px]">筛选</div>
+
+            {/* Reset / Toggle All */}
+            <button
+               onClick={toggleAllSources}
+               className="p-1.5 hover:bg-stone-200 rounded text-stone-600"
+               title="反选/全选来源"
+            >
+               <div className="flex items-center gap-1 font-bold text-xs">
+                  {selectedSources.length === allSources.length ? '全不选' : '全选'}
                </div>
-               <button
-                  onClick={() => setShowFilter(!showFilter)}
-                  className={`px-4 rounded-lg font-bold border-2 transition-colors flex items-center gap-2 ${showFilter ? 'bg-stone-800 text-white border-stone-800' : 'bg-white text-stone-600 border-stone-300 hover:border-stone-400'}`}
-               >
-                  <BookOpen className="w-5 h-5" /> 来源筛选
-               </button>
+            </button>
+
+            {/* Search */}
+            <div className="relative flex-grow max-w-md">
+               <Search className="absolute left-2 top-1/2 -translate-y-1/2 w-4 h-4 text-stone-400" />
+               <input
+                  type="text"
+                  placeholder="搜索..."
+                  value={searchTerm}
+                  onChange={e => setSearchTerm(e.target.value)}
+                  className="w-full pl-8 pr-2 py-1 border border-stone-300 rounded focus:border-blue-500 focus:outline-none"
+               />
             </div>
 
-            {/* 浏览模式切换 */}
-            <div className="flex gap-2 bg-stone-100 p-1 rounded-lg">
-               <button
-                  onClick={() => setViewMode('level')}
-                  className={`flex-1 px-3 py-2 text-sm font-bold rounded transition-colors ${viewMode === 'level'
-                        ? 'bg-white text-stone-800 shadow-sm'
-                        : 'text-stone-600 hover:text-stone-800'
-                     }`}
-               >
-                  按环阶浏览
-               </button>
-               <button
-                  onClick={() => setViewMode('source')}
-                  className={`flex-1 px-3 py-2 text-sm font-bold rounded transition-colors ${viewMode === 'source'
-                        ? 'bg-white text-stone-800 shadow-sm'
-                        : 'text-stone-600 hover:text-stone-800'
-                     }`}
-               >
-                  按出处浏览
-               </button>
+            <div className="flex-grow"></div>
+
+            {/* Count */}
+            <div className="text-stone-500 text-xs px-2">
+               {filteredSpells.length} / {SPELL_DB.filter(s => s.level === level).length}
             </div>
 
-            {/* 出处筛选器 */}
-            {showFilter && (
-               <div className="p-3 bg-stone-100 rounded-lg border border-stone-200 animate-fade-in flex flex-wrap gap-2">
-                  <button
-                     onClick={() => setSelectedSources(allSources)}
-                     className="px-2 py-1 text-xs font-bold bg-stone-200 hover:bg-stone-300 rounded text-stone-700"
-                  >
-                     全选
-                  </button>
-                  <button
-                     onClick={() => setSelectedSources([])}
-                     className="px-2 py-1 text-xs font-bold bg-stone-200 hover:bg-stone-300 rounded text-stone-700 mr-2"
-                  >
-                     全不选
-                  </button>
-                  {allSources.map(src => {
-                     const count = SPELL_DB.filter(s => s.source === src).length;
-                     return (
-                        <button
-                           key={src}
-                           onClick={() => toggleSource(src)}
-                           className={`px-2 py-1 text-xs font-bold rounded border transition-colors flex items-center gap-1 ${selectedSources.includes(src)
-                              ? 'bg-dndRed text-white border-dndRed'
-                              : 'bg-white text-stone-500 border-stone-300 hover:border-stone-400'
-                              }`}
-                        >
-                           {src}
-                           <span className="text-[10px] opacity-75">({count})</span>
-                        </button>
-                     );
-                  })}
-               </div>
-            )}
+            <button
+               onClick={() => { setSearchTerm(''); setSelectedSources(allSources); }}
+               className="text-xs font-bold text-stone-600 hover:text-stone-900 px-2"
+            >
+               重置
+            </button>
          </div>
 
-         {/* 法术列表 */}
-         <div className="flex-grow overflow-y-auto p-4">
-            {viewMode === 'level' ? (
-               // 按环阶模式（原有逻辑）
-               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                  {filteredSpells.length === 0 ? (
-                     <div className="col-span-full text-center text-stone-500 py-12 italic text-lg">
-                        暂无匹配的法术数据。
-                        {selectedSources.length === 0 && <div className="text-sm mt-2 text-stone-400">请至少选择一个来源。</div>}
-                     </div>
-                  ) : (
-                     filteredSpells.map(spell => (
-                        <SpellListCard
-                           key={spell.id}
-                           spell={spell}
-                           onClick={() => onSelect(spell)}
-                           actions={<Plus className="w-5 h-5 text-stone-400 hover:text-dndRed" />}
-                        />
-                     ))
-                  )}
-               </div>
+         {/* Source Tags */}
+         <div className="p-2 bg-stone-100 border-b border-stone-300 flex flex-wrap gap-1 max-h-[120px] overflow-y-auto">
+            {allSources.map(src => (
+               <button
+                  key={src}
+                  onClick={() => toggleSource(src)}
+                  className={`
+                     px-2 py-0.5 text-xs font-bold rounded border flex items-center gap-1 transition-colors
+                     ${selectedSources.includes(src)
+                        ? 'bg-sky-700 text-white border-sky-800 shadow-sm'
+                        : 'bg-white text-stone-500 border-stone-300 hover:border-stone-400'}
+                  `}
+               >
+                  <BookOpen className="w-3 h-3" />
+                  {src}
+               </button>
+            ))}
+         </div>
+
+         {/* Table Header */}
+         <div className="grid grid-cols-[2fr,0.5fr,1fr,0.8fr,0.5fr,1fr,0.8fr,auto] gap-2 p-2 bg-stone-50 font-bold border-b border-stone-300 select-none">
+            <div className="flex items-center gap-1 cursor-pointer group" onClick={() => requestSort('name')}>
+               名称 <SortIcon column="name" />
+            </div>
+            <div className="flex items-center gap-1 cursor-pointer group" onClick={() => requestSort('level')}>
+               环阶 <SortIcon column="level" />
+            </div>
+            <div className="flex items-center gap-1 cursor-pointer group" onClick={() => requestSort('castingTime')}>
+               时间 <SortIcon column="castingTime" />
+            </div>
+            <div className="flex items-center gap-1 cursor-pointer group" onClick={() => requestSort('school')}>
+               学派 <SortIcon column="school" />
+            </div>
+            <div className="text-center" title="专注">专</div>
+            <div className="flex items-center gap-1 cursor-pointer group" onClick={() => requestSort('range')}>
+               射程 <SortIcon column="range" />
+            </div>
+            <div className="flex items-center gap-1 cursor-pointer group" onClick={() => requestSort('source')}>
+               来源 <SortIcon column="source" />
+            </div>
+            <div className="w-8"></div> {/* Add Action */}
+         </div>
+
+         {/* List */}
+         <div className="flex-grow overflow-y-auto">
+            {sortedSpells.length === 0 ? (
+               <div className="text-center text-stone-500 py-12 italic">无匹配法术</div>
             ) : (
-               // 按出处模式（新增）
-               <div className="space-y-6">
-                  {Object.entries(spellsBySource).length === 0 ? (
-                     <div className="text-center text-stone-500 py-12 italic text-lg">
-                        暂无匹配的法术数据。
-                        {selectedSources.length === 0 && <div className="text-sm mt-2 text-stone-400">请至少选择一个来源。</div>}
-                     </div>
-                  ) : (
-                     Object.entries(spellsBySource).map(([source, spells]) => {
-                        const levelGroups = spellsByLevel(spells);
-                        return (
-                           <div key={source} className="bg-white rounded-lg border-2 border-stone-300 overflow-hidden">
-                              <div className="bg-gradient-to-r from-indigo-600 to-purple-600 px-4 py-3 text-white">
-                                 <h4 className="font-bold text-lg flex items-center gap-2">
-                                    <BookOpen className="w-5 h-5" />
-                                    {source}
-                                    <span className="text-sm opacity-75">({spells.length} 个法术)</span>
-                                 </h4>
-                              </div>
-                              <div className="p-4 space-y-4">
-                                 {Object.entries(levelGroups)
-                                    .sort(([a], [b]) => parseInt(a) - parseInt(b))
-                                    .map(([lvl, levelSpells]) => (
-                                       <div key={lvl}>
-                                          <h5 className="text-sm font-bold text-stone-600 mb-2 flex items-center gap-2">
-                                             <span className="bg-stone-200 px-2 py-1 rounded">
-                                                {lvl === '0' ? '戏法' : `${lvl}环`}
-                                             </span>
-                                             <span className="text-xs text-stone-400">({levelSpells.length})</span>
-                                          </h5>
-                                          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                                             {levelSpells.map(spell => (
-                                                <SpellListCard
-                                                   key={spell.id}
-                                                   spell={spell}
-                                                   onClick={() => onSelect(spell)}
-                                                   actions={<Plus className="w-5 h-5 text-stone-400 hover:text-dndRed" />}
-                                                />
-                                             ))}
-                                          </div>
-                                       </div>
-                                    ))}
-                              </div>
+               <div className="divide-y divide-stone-200">
+                  {sortedSpells.map(spell => {
+                     const isConcentration = spell.duration.includes('专注');
+                     const isRitual = spell.castingTime.includes('仪式');
+
+                     return (
+                        <div key={spell.id} className="grid grid-cols-[2fr,0.5fr,1fr,0.8fr,0.5fr,1fr,0.8fr,auto] gap-2 p-2 items-center hover:bg-sky-50 transition-colors text-xs border-b border-stone-100 last:border-0 group">
+                           <div className="font-bold text-stone-800 text-sm truncate" title={spell.name}>{spell.name}</div>
+                           <div className="text-stone-600 text-center">{spell.level === 0 ? '戏法' : spell.level}</div>
+                           <div className="truncate" title={spell.castingTime}>{spell.castingTime}</div>
+                           <div className="truncate">{spell.school}</div>
+                           <div className="flex justify-center gap-1">
+                              {isConcentration && <span className="text-[10px] font-bold text-stone-500" title="专注">C</span>}
+                              {isRitual && <span className="text-[10px] font-bold text-stone-500" title="仪式">R</span>}
                            </div>
-                        );
-                     })
-                  )}
+                           <div className="truncate" title={spell.range}>{spell.range}</div>
+                           <div className="truncate text-stone-500">{spell.source}</div>
+                           <button
+                              onClick={() => onSelect(spell)}
+                              className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-stone-200 text-stone-400 hover:text-dndRed"
+                              title="添加法术"
+                           >
+                              <Plus className="w-5 h-5" />
+                           </button>
+                        </div>
+                     );
+                  })}
                </div>
             )}
          </div>
