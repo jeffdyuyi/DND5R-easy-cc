@@ -1,32 +1,35 @@
 
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { CharacterData, AbilityScores } from '../types';
-import { Dices, List, Edit3, RotateCcw } from 'lucide-react';
+import WizardLayout from './wizard/WizardLayout';
+import { Dices, List, Edit3, ShoppingCart, RotateCcw, Info, CheckCircle } from 'lucide-react';
 
 interface Props {
   character: CharacterData;
   updateCharacter: (updates: Partial<CharacterData>) => void;
 }
 
-const ABILITY_NAMES: Record<keyof AbilityScores, string> = {
-  strength: "力量", dexterity: "敏捷", constitution: "体质",
-  intelligence: "智力", wisdom: "感知", charisma: "魅力"
+const ABILITY_KEYS: (keyof AbilityScores)[] = ['strength', 'dexterity', 'constitution', 'intelligence', 'wisdom', 'charisma'];
+const ABILITY_LABELS: Record<keyof AbilityScores, { name: string; abbr: string }> = {
+  strength: { name: "力量", abbr: "力量" },
+  dexterity: { name: "敏捷", abbr: "敏捷" },
+  constitution: { name: "体质", abbr: "体质" },
+  intelligence: { name: "智力", abbr: "智力" },
+  wisdom: { name: "感知", abbr: "感知" },
+  charisma: { name: "魅力", abbr: "魅力" }
 };
 
 const STANDARD_ARRAY = [15, 14, 13, 12, 10, 8];
 
-const StepAbilities: React.FC<Props> = ({ character, updateCharacter }) => {
-  const [mode, setMode] = useState<'manual' | 'standard' | 'random'>('standard');
-  const [randomRolls, setRandomRolls] = useState<number[]>([]);
+// Point Buy Cost Table
+const POINT_BUY_COSTS: Record<number, number> = {
+  8: 0, 9: 1, 10: 2, 11: 3, 12: 4, 13: 5, 14: 7, 15: 9
+};
+const POINT_BUY_TOTAL = 27;
 
-  const handleAbilityChange = (ability: keyof AbilityScores, value: number) => {
-    updateCharacter({
-      abilities: {
-        ...character.abilities,
-        [ability]: value
-      }
-    });
-  };
+const StepAbilities: React.FC<Props> = ({ character, updateCharacter }) => {
+  const [mode, setMode] = useState<'standard' | 'pointbuy' | 'roll' | 'manual'>('standard');
+  const [rolledValues, setRolledValues] = useState<number[]>([]);
 
   const getModifier = (score: number) => Math.floor((score - 10) / 2);
 
@@ -38,143 +41,280 @@ const StepAbilities: React.FC<Props> = ({ character, updateCharacter }) => {
       return rolls.slice(1).reduce((a, b) => a + b, 0);
     });
     newRolls.sort((a, b) => b - a);
-    setRandomRolls(newRolls);
-    // Reset stats to empty-ish or keeping existing? Resetting is safer to force assignment
+    setRolledValues(newRolls);
+    // Reset abilities
     updateCharacter({
       abilities: { strength: 0, dexterity: 0, constitution: 0, intelligence: 0, wisdom: 0, charisma: 0 }
     });
   };
 
-  // Helper to get available values for a specific ability slot
-  const getAvailableOptions = (currentAbility: keyof AbilityScores) => {
-    const pool = mode === 'standard' ? STANDARD_ARRAY : randomRolls;
+  // Get assigned values for standard array or roll mode
+  const assignedValues = useMemo(() => {
+    return ABILITY_KEYS.map(k => character.abilities[k]).filter(v => v > 0);
+  }, [character.abilities]);
+
+  // Get available values for a specific ability
+  const getAvailableValues = (ability: keyof AbilityScores): number[] => {
+    const pool = mode === 'standard' ? STANDARD_ARRAY : mode === 'roll' ? rolledValues : [];
     if (pool.length === 0) return [];
 
-    // Count occurrences in pool
     const poolCounts = pool.reduce((acc, val) => { acc[val] = (acc[val] || 0) + 1; return acc; }, {} as Record<number, number>);
 
-    // Decrease counts by currently assigned values (excluding self)
-    Object.entries(character.abilities).forEach(([key, val]) => {
-      if (key !== currentAbility && val > 0) { // Assuming 0 is "unassigned"
-        if (poolCounts[val] > 0) {
-          poolCounts[val]--;
-        }
+    // Decrease counts by assigned values (excluding current ability)
+    ABILITY_KEYS.forEach(k => {
+      if (k !== ability && character.abilities[k] > 0) {
+        const val = character.abilities[k];
+        if (poolCounts[val]) poolCounts[val]--;
       }
     });
 
-    // Return unique values that have count > 0, plus the current value
-    const available = Object.keys(poolCounts).map(Number).filter(v => poolCounts[v] > 0);
-    if (character.abilities[currentAbility] > 0 && !available.includes(character.abilities[currentAbility])) {
-      available.push(character.abilities[currentAbility]);
-    }
-    return available.sort((a, b) => b - a);
+    return Object.keys(poolCounts).map(Number).filter(v => poolCounts[v] > 0).sort((a, b) => b - a);
   };
 
-  return (
-    <div className="space-y-6 pb-12">
-      <h2 className="text-2xl font-bold text-dndRed flex items-center gap-2">
-        第四步：确定属性值 (Abilities)
-      </h2>
+  // Set ability value
+  const setAbilityValue = (ability: keyof AbilityScores, value: number) => {
+    updateCharacter({
+      abilities: { ...character.abilities, [ability]: value }
+    });
+  };
 
-      {/* Mode Switcher */}
-      <div className="flex gap-2 bg-stone-100 p-1 rounded-lg w-fit mx-auto border border-stone-300">
-        <button
-          onClick={() => setMode('standard')}
-          className={`px-4 py-2 rounded font-bold text-sm flex items-center gap-2 transition-all ${mode === 'standard' ? 'bg-white shadow text-dndRed' : 'text-stone-500 hover:text-stone-700'}`}
-        >
-          <List className="w-4 h-4" /> 标准数组
-        </button>
-        <button
-          onClick={() => setMode('random')}
-          className={`px-4 py-2 rounded font-bold text-sm flex items-center gap-2 transition-all ${mode === 'random' ? 'bg-white shadow text-dndRed' : 'text-stone-500 hover:text-stone-700'}`}
-        >
-          <Dices className="w-4 h-4" /> 随机骰点
-        </button>
-        <button
-          onClick={() => setMode('manual')}
-          className={`px-4 py-2 rounded font-bold text-sm flex items-center gap-2 transition-all ${mode === 'manual' ? 'bg-white shadow text-dndRed' : 'text-stone-500 hover:text-stone-700'}`}
-        >
-          <Edit3 className="w-4 h-4" /> 手动输入
-        </button>
+  // Point Buy calculations
+  const pointBuySpent = useMemo(() => {
+    if (mode !== 'pointbuy') return 0;
+    return ABILITY_KEYS.reduce((sum, k) => sum + (POINT_BUY_COSTS[character.abilities[k]] || 0), 0);
+  }, [character.abilities, mode]);
+
+  const pointBuyRemaining = POINT_BUY_TOTAL - pointBuySpent;
+
+  // Reset abilities
+  const resetAbilities = () => {
+    const defaultVal = mode === 'pointbuy' ? 8 : 0;
+    updateCharacter({
+      abilities: { strength: defaultVal, dexterity: defaultVal, constitution: defaultVal, intelligence: defaultVal, wisdom: defaultVal, charisma: defaultVal }
+    });
+  };
+
+  // Left Panel: Mode selection and info
+  const leftPanel = (
+    <div className="p-4 space-y-4">
+      {/* Mode Tabs */}
+      <div className="space-y-2">
+        <h3 className="font-bold text-stone-700 text-sm">生成方式</h3>
+        <div className="flex flex-col gap-2">
+          <button
+            onClick={() => { setMode('standard'); resetAbilities(); }}
+            className={`flex items-center gap-3 p-3 rounded-lg border-2 text-left transition-all ${mode === 'standard' ? 'border-dndRed bg-red-50' : 'border-stone-200 bg-white hover:border-stone-300'}`}
+          >
+            <List className={`w-5 h-5 ${mode === 'standard' ? 'text-dndRed' : 'text-stone-400'}`} />
+            <div>
+              <div className={`font-bold ${mode === 'standard' ? 'text-dndRed' : 'text-stone-700'}`}>标准数组</div>
+              <div className="text-xs text-stone-500">使用固定值 [15, 14, 13, 12, 10, 8]</div>
+            </div>
+          </button>
+
+          <button
+            onClick={() => { setMode('pointbuy'); updateCharacter({ abilities: { strength: 8, dexterity: 8, constitution: 8, intelligence: 8, wisdom: 8, charisma: 8 } }); }}
+            className={`flex items-center gap-3 p-3 rounded-lg border-2 text-left transition-all ${mode === 'pointbuy' ? 'border-dndRed bg-red-50' : 'border-stone-200 bg-white hover:border-stone-300'}`}
+          >
+            <ShoppingCart className={`w-5 h-5 ${mode === 'pointbuy' ? 'text-dndRed' : 'text-stone-400'}`} />
+            <div>
+              <div className={`font-bold ${mode === 'pointbuy' ? 'text-dndRed' : 'text-stone-700'}`}>购点法</div>
+              <div className="text-xs text-stone-500">27 点自由分配</div>
+            </div>
+          </button>
+
+          <button
+            onClick={() => { setMode('roll'); setRolledValues([]); resetAbilities(); }}
+            className={`flex items-center gap-3 p-3 rounded-lg border-2 text-left transition-all ${mode === 'roll' ? 'border-dndRed bg-red-50' : 'border-stone-200 bg-white hover:border-stone-300'}`}
+          >
+            <Dices className={`w-5 h-5 ${mode === 'roll' ? 'text-dndRed' : 'text-stone-400'}`} />
+            <div>
+              <div className={`font-bold ${mode === 'roll' ? 'text-dndRed' : 'text-stone-700'}`}>随机骰点</div>
+              <div className="text-xs text-stone-500">4d6 去掉最低</div>
+            </div>
+          </button>
+
+          <button
+            onClick={() => { setMode('manual'); resetAbilities(); }}
+            className={`flex items-center gap-3 p-3 rounded-lg border-2 text-left transition-all ${mode === 'manual' ? 'border-dndRed bg-red-50' : 'border-stone-200 bg-white hover:border-stone-300'}`}
+          >
+            <Edit3 className={`w-5 h-5 ${mode === 'manual' ? 'text-dndRed' : 'text-stone-400'}`} />
+            <div>
+              <div className={`font-bold ${mode === 'manual' ? 'text-dndRed' : 'text-stone-700'}`}>手动输入</div>
+              <div className="text-xs text-stone-500">自定义数值</div>
+            </div>
+          </button>
+        </div>
       </div>
 
-      {/* Mode Specific Controls */}
+      {/* Mode-specific info */}
       {mode === 'standard' && (
-        <div className="bg-blue-50 p-4 rounded text-center text-sm text-blue-800 border border-blue-200">
-          <strong>标准数组：</strong> 固定数值 [15, 14, 13, 12, 10, 8]。请为每一项属性分配一个数值。
+        <div className="bg-blue-50 p-4 rounded-lg border border-blue-200 text-sm text-blue-800">
+          <strong>标准数组</strong>：从固定数组 [15, 14, 13, 12, 10, 8] 中，为每项属性分配一个值。每个值只能使用一次。
         </div>
       )}
 
-      {mode === 'random' && (
-        <div className="bg-purple-50 p-6 rounded border border-purple-200 text-center">
-          {randomRolls.length === 0 ? (
-            <div className="text-center">
-              <p className="text-purple-800 mb-4 font-bold">使用 4d6 去掉最低值规则生成 6 个数值。</p>
-              <button onClick={rollStats} className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg font-bold shadow-lg flex items-center gap-2 mx-auto">
-                <Dices className="w-5 h-5" /> 开始投掷
-              </button>
-            </div>
+      {mode === 'pointbuy' && (
+        <div className="bg-purple-50 p-4 rounded-lg border border-purple-200 text-sm space-y-2">
+          <div className="flex justify-between items-center">
+            <span className="font-bold text-purple-800">剩余点数</span>
+            <span className={`text-xl font-black ${pointBuyRemaining < 0 ? 'text-red-600' : pointBuyRemaining === 0 ? 'text-green-600' : 'text-purple-600'}`}>
+              {pointBuyRemaining}
+            </span>
+          </div>
+          <div className="text-xs text-purple-600">
+            所有属性从 8 开始。提升属性需要消耗点数：8→9 需 1点，9→10 需 1点，... 14→15 需 2点。
+          </div>
+        </div>
+      )}
+
+      {mode === 'roll' && (
+        <div className="space-y-3">
+          {rolledValues.length === 0 ? (
+            <button onClick={rollStats} className="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2">
+              <Dices className="w-5 h-5" /> 开始投掷
+            </button>
           ) : (
-            <div>
-              <div className="flex justify-center gap-4 mb-4">
-                {randomRolls.map((r, i) => (
-                  <div key={i} className="text-xl font-black text-purple-900 bg-white w-12 h-12 flex items-center justify-center rounded-full border-2 border-purple-300 shadow-sm">
-                    {r}
+            <div className="space-y-3">
+              <div className="flex justify-center gap-2">
+                {rolledValues.map((v, i) => (
+                  <div key={i} className={`w-10 h-10 rounded-full border-2 flex items-center justify-center font-bold text-lg ${assignedValues.includes(v) ? 'border-green-500 bg-green-100 text-green-700' : 'border-purple-300 bg-purple-50 text-purple-800'}`}>
+                    {v}
                   </div>
                 ))}
               </div>
-              <button onClick={rollStats} className="text-purple-600 underline text-xs font-bold flex items-center justify-center gap-1 mx-auto hover:text-purple-800">
-                <RotateCcw className="w-3 h-3" /> 重投
+              <button onClick={rollStats} className="w-full text-purple-600 text-sm font-bold flex items-center justify-center gap-1 hover:underline">
+                <RotateCcw className="w-3 h-3" /> 重新投掷
               </button>
-              <p className="text-xs text-purple-600 mt-2">请在下方将这些数值分配给对应的属性。</p>
             </div>
           )}
         </div>
       )}
 
-      {/* Attributes Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-6 gap-4">
-        {(Object.keys(ABILITY_NAMES) as Array<keyof AbilityScores>).map((key) => {
-          const val = character.abilities[key];
-          const total = val + (character.backgroundBonuses?.[key] || 0) + (character.abilityBonuses?.[key] || 0); // Total with bonuses
-          const totalMod = getModifier(total);
+      {/* Background Bonuses Reminder */}
+      {Object.values(character.backgroundBonuses || {}).some(v => v > 0) && (
+        <div className="bg-amber-50 p-4 rounded-lg border border-amber-200 text-sm">
+          <div className="font-bold text-amber-800 mb-2">背景加值</div>
+          <div className="space-y-1">
+            {ABILITY_KEYS.filter(k => (character.backgroundBonuses?.[k] || 0) > 0).map(k => (
+              <div key={k} className="flex justify-between text-amber-700">
+                <span>{ABILITY_LABELS[k].name}</span>
+                <span>+{character.backgroundBonuses![k]}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+
+  // Right Panel: Ability Cards
+  const rightPanel = (
+    <div className="p-6 space-y-6">
+      <h2 className="text-2xl font-black text-stone-900">设定属性值</h2>
+
+      {/* Ability Cards Grid */}
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        {ABILITY_KEYS.map(key => {
+          const baseVal = character.abilities[key];
+          const bonus = (character.backgroundBonuses?.[key] || 0);
+          const total = baseVal + bonus;
+          const mod = getModifier(total);
+          const available = getAvailableValues(key);
 
           return (
-            <div key={key} className="bg-white p-3 rounded-lg border-2 border-stone-200 shadow-sm relative group hover:border-dndRed transition-colors">
-              <label className="block text-stone-500 font-bold text-xs uppercase text-center mb-2 tracking-wider">{ABILITY_NAMES[key]}</label>
-
-              {mode === 'manual' ? (
-                <input
-                  type="number"
-                  value={val}
-                  onChange={e => handleAbilityChange(key, parseInt(e.target.value) || 0)}
-                  className="w-full text-center text-3xl font-black text-stone-800 focus:outline-none border-b-2 border-dashed border-stone-300 focus:border-dndRed bg-transparent"
-                />
-              ) : (
-                <select
-                  value={val}
-                  onChange={e => handleAbilityChange(key, parseInt(e.target.value))}
-                  className="w-full text-center text-2xl font-black text-stone-800 focus:outline-none bg-transparent appearance-none cursor-pointer py-1"
-                  disabled={mode === 'random' && randomRolls.length === 0}
-                >
-                  <option value={0}>-</option>
-                  {getAvailableOptions(key).map((opt, i) => (
-                    <option key={`${opt}-${i}`} value={opt}>{opt}</option>
-                  ))}
-                </select>
-              )}
-
-              <div className="mt-3 text-center border-t border-stone-100 pt-2">
-                <div className={`text-lg font-bold ${totalMod > 0 ? 'text-green-600' : totalMod < 0 ? 'text-red-500' : 'text-stone-400'}`}>
-                  {totalMod >= 0 ? '+' : ''}{totalMod}
-                </div>
-                <div className="text-[10px] text-stone-400">总值: {total}</div>
+            <div key={key} className="bg-white border-2 border-stone-200 rounded-xl p-4 relative overflow-hidden">
+              {/* Header */}
+              <div className="flex items-center justify-between mb-3">
+                <span className="font-bold text-stone-800">{ABILITY_LABELS[key].name}</span>
+                <button className="w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-xs">
+                  <Info className="w-3 h-3" />
+                </button>
               </div>
 
-              {/* Bonus Indicator */}
-              {(character.backgroundBonuses?.[key] || 0) > 0 && (
-                <div className="absolute top-1 right-1 bg-amber-100 text-amber-700 text-[9px] font-bold px-1.5 rounded-full border border-amber-200">
-                  +{character.backgroundBonuses[key]}
+              {/* Value Selection (Standard/Roll) */}
+              {(mode === 'standard' || mode === 'roll') && (
+                <div className="flex flex-wrap gap-1 mb-4">
+                  {(mode === 'standard' ? STANDARD_ARRAY : rolledValues).map((v, i) => {
+                    const isAssigned = baseVal === v;
+                    const isAvailable = available.includes(v);
+                    const isUsedElsewhere = !isAssigned && !isAvailable && ABILITY_KEYS.some(k => k !== key && character.abilities[k] === v);
+
+                    return (
+                      <button
+                        key={`${v}-${i}`}
+                        onClick={() => setAbilityValue(key, isAssigned ? 0 : v)}
+                        disabled={!isAssigned && !isAvailable}
+                        className={`
+                          w-8 h-8 rounded text-sm font-bold transition-all
+                          ${isAssigned
+                            ? 'bg-dndRed text-white shadow-md'
+                            : isUsedElsewhere
+                              ? 'bg-stone-100 text-stone-300 cursor-not-allowed'
+                              : isAvailable
+                                ? 'bg-stone-100 text-stone-600 hover:bg-stone-200'
+                                : 'bg-stone-50 text-stone-300 cursor-not-allowed'}
+                        `}
+                      >
+                        {v}
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+
+              {/* Point Buy Controls */}
+              {mode === 'pointbuy' && (
+                <div className="flex items-center justify-center gap-3 mb-4">
+                  <button
+                    onClick={() => baseVal > 8 && setAbilityValue(key, baseVal - 1)}
+                    disabled={baseVal <= 8}
+                    className="w-8 h-8 rounded bg-stone-200 hover:bg-stone-300 disabled:opacity-30 font-bold"
+                  >
+                    -
+                  </button>
+                  <span className="text-2xl font-black text-stone-800 w-10 text-center">{baseVal}</span>
+                  <button
+                    onClick={() => baseVal < 15 && POINT_BUY_COSTS[baseVal + 1] - POINT_BUY_COSTS[baseVal] <= pointBuyRemaining && setAbilityValue(key, baseVal + 1)}
+                    disabled={baseVal >= 15 || (POINT_BUY_COSTS[baseVal + 1] - POINT_BUY_COSTS[baseVal]) > pointBuyRemaining}
+                    className="w-8 h-8 rounded bg-stone-200 hover:bg-stone-300 disabled:opacity-30 font-bold"
+                  >
+                    +
+                  </button>
+                </div>
+              )}
+
+              {/* Manual Input */}
+              {mode === 'manual' && (
+                <div className="mb-4">
+                  <input
+                    type="number"
+                    min={1}
+                    max={30}
+                    value={baseVal || ''}
+                    onChange={e => setAbilityValue(key, parseInt(e.target.value) || 0)}
+                    className="w-full text-center text-2xl font-black text-stone-800 border-b-2 border-dashed border-stone-300 focus:border-dndRed outline-none py-1"
+                  />
+                </div>
+              )}
+
+              {/* Central Display */}
+              <div className="text-center py-4 border-t border-stone-100">
+                <div className="text-xs text-stone-400 uppercase tracking-wider mb-1">{ABILITY_LABELS[key].abbr}</div>
+                <div className={`text-2xl font-black ${mod >= 0 ? 'text-green-600' : 'text-red-500'}`}>
+                  {mod >= 0 ? '+' : ''}{mod}
+                </div>
+                {bonus > 0 && (
+                  <div className="text-xs text-amber-600 mt-1">
+                    总值: {total} (含背景 +{bonus})
+                  </div>
+                )}
+              </div>
+
+              {/* Assigned Indicator */}
+              {baseVal > 0 && (mode === 'standard' || mode === 'roll') && (
+                <div className="absolute top-2 right-2">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
                 </div>
               )}
             </div>
@@ -182,11 +322,21 @@ const StepAbilities: React.FC<Props> = ({ character, updateCharacter }) => {
         })}
       </div>
 
-      {/* Total Summary */}
-      <div className="mt-4 text-center text-xs text-stone-500">
-        * 属性调整值已包含种族/背景带来的加成（右上角角标所示）
+      {/* Summary */}
+      <div className="bg-stone-50 p-4 rounded-lg border border-stone-200 text-sm text-stone-600">
+        <strong>提示：</strong>属性调整值 = (属性总值 - 10) ÷ 2 (向下取整)。背景加值已自动计入最终调整值显示。
       </div>
     </div>
+  );
+
+  return (
+    <WizardLayout
+      title="属性值设定"
+      stepId={5}
+      totalSteps={9}
+      leftPanel={leftPanel}
+      rightPanel={rightPanel}
+    />
   );
 };
 

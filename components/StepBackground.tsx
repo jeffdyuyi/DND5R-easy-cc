@@ -1,16 +1,24 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { CharacterData, AbilityScores } from '../types';
 import { BACKGROUND_DB } from '../data-backgrounds';
 import { FEAT_DB } from '../data-feats';
-import { Users, Star } from 'lucide-react';
+import WizardLayout from './wizard/WizardLayout';
+import FeatureAccordion from './wizard/FeatureAccordion';
+import { Search, Star, Book, Wrench, AlertCircle, CheckCircle } from 'lucide-react';
 
 interface Props {
     character: CharacterData;
     updateCharacter: (updates: Partial<CharacterData>) => void;
 }
 
+const ABILITY_LABELS: Record<keyof AbilityScores, string> = {
+    strength: "力量", dexterity: "敏捷", constitution: "体质",
+    intelligence: "智力", wisdom: "感知", charisma: "魅力"
+};
+
 const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
+    const [searchTerm, setSearchTerm] = useState('');
     const selectedBackground = BACKGROUND_DB.find(bg => bg.name === character.background);
     const selectedFeat = selectedBackground ? FEAT_DB.find(f => f.name === selectedBackground.feat) : undefined;
 
@@ -22,17 +30,21 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
         ability3: keyof AbilityScores | '';
     }>({ ability1: '', ability2: '', ability3: '' });
 
-    // Map for Ability Labels
-    const ABILITY_LABELS: Record<string, string> = {
-        strength: "力量", dexterity: "敏捷", constitution: "体质",
-        intelligence: "智力", wisdom: "感知", charisma: "魅力"
-    };
-
     const abilityOptions = Object.entries(ABILITY_LABELS).map(([k, v]) => ({ key: k as keyof AbilityScores, label: v }));
 
-    // Helper to sync selection with character data
+    // Filter backgrounds
+    const filteredBackgrounds = useMemo(() => {
+        if (!searchTerm) return BACKGROUND_DB;
+        return BACKGROUND_DB.filter(bg =>
+            bg.name.includes(searchTerm) ||
+            bg.description?.includes(searchTerm) ||
+            bg.feat?.includes(searchTerm)
+        );
+    }, [searchTerm]);
+
+    // Sync ASI with character
     useEffect(() => {
-        if (selectedBackground && selectedAbilities.ability1 && selectedAbilities.ability2) {
+        if (selectedBackground && selectedAbilities.ability1) {
             const bonus: AbilityScores = { strength: 0, dexterity: 0, constitution: 0, intelligence: 0, wisdom: 0, charisma: 0 };
 
             if (abilityDistribution === '2-1') {
@@ -47,231 +59,262 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
         }
     }, [selectedAbilities, abilityDistribution, selectedBackground]);
 
-    // Apply other background traits on selection
+    // Apply background data on selection
     useEffect(() => {
         if (selectedBackground) {
-            // Update Skill Mastery (merge)
             const newSkills = { ...character.skillMastery };
             selectedBackground.skills.forEach(s => newSkills[s] = 1);
 
-            // Update Origin Feat
-            const newFeats = { ...character.featSelections };
-            newFeats['Origin'] = selectedBackground.feat;
-
-            let changed = false;
-
-            // Check Skills
-            if (!selectedBackground.skills.every(s => character.skillMastery[s] === 1)) {
-                changed = true;
-            }
             if (character.originFeat !== selectedBackground.feat) {
-                changed = true;
-            }
-
-            if (changed) {
                 updateCharacter({
                     skillMastery: newSkills,
-                    featSelections: newFeats,
-                    originFeat: selectedBackground.feat
+                    originFeat: selectedBackground.feat,
+                    toolProficiencies: selectedBackground.tool || ''
                 });
             }
+            // Reset ASI selections
+            setSelectedAbilities({ ability1: '', ability2: '', ability3: '' });
         }
     }, [character.background]);
 
+    // Check completion
+    const asiComplete = abilityDistribution === '2-1'
+        ? !!(selectedAbilities.ability1 && selectedAbilities.ability2)
+        : !!(selectedAbilities.ability1 && selectedAbilities.ability2 && selectedAbilities.ability3);
 
-    return (
-        <div className="space-y-8 pb-12">
-            <h2 className="text-2xl font-bold text-dndRed flex items-center gap-2">
-                第三步：背景 (Background)
-            </h2>
+    // === LEFT PANEL: Background List ===
+    const leftPanel = (
+        <div className="p-4 space-y-4">
+            {/* Search */}
+            <div className="relative">
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-stone-400" />
+                <input
+                    type="text"
+                    placeholder="搜索背景..."
+                    value={searchTerm}
+                    onChange={e => setSearchTerm(e.target.value)}
+                    className="w-full pl-10 pr-4 py-2 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-dndRed"
+                />
+            </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                {/* Left: Background List */}
-                <div className="lg:col-span-1 space-y-2">
-                    <h3 className="font-bold text-stone-700 mb-2 px-1">选择背景</h3>
-                    <div className="flex flex-col gap-2 max-h-[600px] overflow-y-auto pr-2">
-                        {BACKGROUND_DB.map(bg => (
-                            <button
-                                key={bg.id}
-                                onClick={() => {
-                                    updateCharacter({ background: bg.name });
-                                    setSelectedAbilities({ ability1: '', ability2: '', ability3: '' }); // Reset ASI
-                                }}
-                                className={`
-                       p-4 rounded-lg border-2 text-left transition-all flex items-center justify-between group
-                       ${character.background === bg.name
-                                        ? 'border-dndRed bg-amber-50 shadow-md'
-                                        : 'border-stone-200 bg-white hover:border-stone-300 hover:bg-stone-50'}
-                    `}
-                            >
-                                <div>
-                                    <div className={`font-bold ${character.background === bg.name ? 'text-dndRed' : 'text-stone-800'}`}>{bg.name}</div>
-                                    <div className="text-[10px] text-stone-400 mt-1 flex gap-2">
-                                        <span>+{bg.abilityScores.join('/')}</span>
-                                        <span>• {bg.feat}</span>
-                                    </div>
-                                </div>
-                            </button>
-                        ))}
-                    </div>
-                </div>
-
-                {/* Right: Details */}
-                <div className="lg:col-span-2">
-                    {!selectedBackground ? (
-                        <div className="h-full flex items-center justify-center p-12 text-stone-400 border-2 border-dashed border-stone-200 rounded-lg">
-                            请从左侧列表选择一个背景查看详情
-                        </div>
-                    ) : (
-                        <div className="space-y-6 animate-fade-in">
-                            {/* Description */}
-                            <div className="bg-white p-6 rounded-lg shadow-sm border border-stone-200">
-                                <h3 className="text-3xl font-black text-stone-900 mb-2">{selectedBackground.name}</h3>
-                                <p className="text-stone-600 leading-relaxed max-w-2xl text-lg">{selectedBackground.description}</p>
-
-                                <div className="flex flex-wrap gap-4 mt-6 pt-6 border-t border-stone-100">
-                                    <div className="bg-stone-50 px-3 py-2 rounded border border-stone-200">
-                                        <div className="text-[10px] uppercase text-stone-500 font-bold mb-1">技能熟练</div>
-                                        <div className="font-bold text-stone-800 text-sm">{selectedBackground.skills.join('、')}</div>
-                                    </div>
-                                    <div className="bg-stone-50 px-3 py-2 rounded border border-stone-200">
-                                        <div className="text-[10px] uppercase text-stone-500 font-bold mb-1">工具熟练</div>
-                                        <div className="font-bold text-stone-800 text-sm">{selectedBackground.tool}</div>
-                                    </div>
-                                    <div className="bg-stone-50 px-3 py-2 rounded border border-stone-200">
-                                        <div className="text-[10px] uppercase text-stone-500 font-bold mb-1">初始装备</div>
-                                        <div className="text-stone-600 text-xs max-w-xs">{selectedBackground.equipment[0].replace('A: ', '')}</div>
-                                    </div>
-                                </div>
+            {/* Background List */}
+            <div className="space-y-2 max-h-[600px] overflow-y-auto">
+                {filteredBackgrounds.map(bg => (
+                    <button
+                        key={bg.id}
+                        onClick={() => updateCharacter({ background: bg.name })}
+                        className={`
+              w-full p-3 rounded-lg border-2 text-left transition-all flex items-center justify-between
+              ${character.background === bg.name
+                                ? 'border-dndRed bg-red-50 shadow-md'
+                                : 'border-stone-200 bg-white hover:border-stone-300'}
+            `}
+                    >
+                        <div className="flex-1">
+                            <div className="flex items-center gap-2">
+                                <span className={`font-bold ${character.background === bg.name ? 'text-dndRed' : 'text-stone-800'}`}>
+                                    {bg.name}
+                                </span>
+                                <span className="text-[10px] text-amber-600 bg-amber-50 px-1.5 py-0.5 rounded font-medium">
+                                    2024
+                                </span>
                             </div>
-
-                            {/* Feat Display */}
-                            <div className="bg-purple-50 p-6 rounded-lg border border-purple-200">
-                                <h4 className="font-bold text-purple-900 mb-3 flex items-center gap-2">
-                                    <Star className="w-5 h-5" />
-                                    起源专长：{selectedBackground.feat}
-                                </h4>
-                                {selectedFeat ? (
-                                    <div className="text-sm text-purple-800 leading-relaxed bg-white/50 p-4 rounded border border-purple-100">
-                                        <div className="font-bold mb-2 text-base">{selectedFeat.name}</div>
-                                        {selectedFeat.description && (
-                                            <p className="mb-3 italic opacity-80">{selectedFeat.description}</p>
-                                        )}
-                                        {selectedFeat.benefits && (
-                                            <ul className="space-y-2">
-                                                {selectedFeat.benefits.map((benefit, idx) => (
-                                                    <li key={idx} className="flex gap-2 items-start">
-                                                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-purple-500 flex-shrink-0"></span>
-                                                        <span>
-                                                            {/* Bold formatted text naturally via Markdown-like or just render */}
-                                                            {benefit.split('**').map((part, i) =>
-                                                                i % 2 === 1 ? <strong key={i} className="text-purple-900">{part}</strong> : part
-                                                            )}
-                                                        </span>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        )}
-                                    </div>
-                                ) : (
-                                    <div className="text-sm text-purple-400 italic">找不到专长数据</div>
-                                )}
-                            </div>
-
-                            {/* Ability Score Bonus */}
-                            <div className="bg-amber-50 p-6 rounded-lg border-2 border-amber-300">
-                                <h4 className="font-bold text-amber-900 mb-4 flex items-center gap-2">
-                                    <Users className="w-5 h-5" />
-                                    属性加值 (Ability Score)
-                                </h4>
-
-                                <div className="bg-white p-4 rounded border border-amber-200 mb-4 text-sm text-stone-600">
-                                    此背景允许你提升以下属性：
-                                    <span className="font-bold text-amber-700 ml-1">{selectedBackground.abilityScores.join(' / ')}</span>
-                                </div>
-
-                                <div className="space-y-4">
-                                    <div className="flex rounded-lg overflow-hidden border border-amber-300 text-sm font-bold">
-                                        <button
-                                            onClick={() => setAbilityDistribution('2-1')}
-                                            className={`flex-1 py-2 text-center transition-colors ${abilityDistribution === '2-1' ? 'bg-amber-600 text-white' : 'bg-white text-stone-600 hover:bg-amber-50'}`}
-                                        >
-                                            +2 / +1
-                                        </button>
-                                        <button
-                                            onClick={() => setAbilityDistribution('1-1-1')}
-                                            className={`flex-1 py-2 text-center transition-colors ${abilityDistribution === '1-1-1' ? 'bg-amber-600 text-white' : 'bg-white text-stone-600 hover:bg-amber-50'}`}
-                                        >
-                                            +1 / +1 / +1
-                                        </button>
-                                    </div>
-
-                                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                                        {/* Ability 1 */}
-                                        <div>
-                                            <label className="text-xs font-bold text-stone-500 block mb-1">
-                                                属性 1 {abilityDistribution === '2-1' ? '(+2)' : '(+1)'}
-                                            </label>
-                                            <select
-                                                value={selectedAbilities.ability1}
-                                                onChange={e => setSelectedAbilities({ ...selectedAbilities, ability1: e.target.value as keyof AbilityScores })}
-                                                className="w-full p-2 border border-stone-300 rounded font-bold text-stone-800"
-                                            >
-                                                <option value="">-- 选择 --</option>
-                                                {abilityOptions
-                                                    .filter(o => selectedBackground.abilityScores.some(s => o.label.startsWith(s)))
-                                                    .map(o => <option key={o.key} value={o.key}>{o.label}</option>)
-                                                }
-                                            </select>
-                                        </div>
-
-                                        {/* Ability 2 */}
-                                        <div>
-                                            <label className="text-xs font-bold text-stone-500 block mb-1">
-                                                属性 2 (+1)
-                                            </label>
-                                            <select
-                                                value={selectedAbilities.ability2}
-                                                onChange={e => setSelectedAbilities({ ...selectedAbilities, ability2: e.target.value as keyof AbilityScores })}
-                                                className="w-full p-2 border border-stone-300 rounded font-bold text-stone-800"
-                                            >
-                                                <option value="">-- 选择 --</option>
-                                                {abilityOptions
-                                                    .filter(o => selectedBackground.abilityScores.some(s => o.label.startsWith(s)))
-                                                    .filter(o => o.key !== selectedAbilities.ability1)
-                                                    .map(o => <option key={o.key} value={o.key}>{o.label}</option>)
-                                                }
-                                            </select>
-                                        </div>
-
-                                        {/* Ability 3 */}
-                                        {abilityDistribution === '1-1-1' && (
-                                            <div>
-                                                <label className="text-xs font-bold text-stone-500 block mb-1">
-                                                    属性 3 (+1)
-                                                </label>
-                                                <select
-                                                    value={selectedAbilities.ability3}
-                                                    onChange={e => setSelectedAbilities({ ...selectedAbilities, ability3: e.target.value as keyof AbilityScores })}
-                                                    className="w-full p-2 border border-stone-300 rounded font-bold text-stone-800"
-                                                >
-                                                    <option value="">-- 选择 --</option>
-                                                    {abilityOptions
-                                                        .filter(o => selectedBackground.abilityScores.some(s => o.label.startsWith(s)))
-                                                        .filter(o => o.key !== selectedAbilities.ability1 && o.key !== selectedAbilities.ability2)
-                                                        .map(o => <option key={o.key} value={o.key}>{o.label}</option>)
-                                                    }
-                                                </select>
-                                            </div>
-                                        )}
-                                    </div>
-                                </div>
+                            <div className="text-xs text-stone-500 mt-1">
+                                {bg.skills.join('、')} • {bg.feat}
                             </div>
                         </div>
-                    )}
-                </div>
+                        {character.background === bg.name && <CheckCircle className="w-5 h-5 text-dndRed" />}
+                    </button>
+                ))}
             </div>
         </div>
+    );
+
+    // === RIGHT PANEL: Background Details ===
+    const rightPanel = selectedBackground ? (
+        <div className="p-6 space-y-6">
+            {/* Header */}
+            <div>
+                <h2 className="text-2xl font-black text-stone-900">{selectedBackground.name}</h2>
+                <p className="text-stone-600 mt-2 leading-relaxed">{selectedBackground.description}</p>
+            </div>
+
+            {/* Pending Choices - ASI */}
+            <div className="space-y-3">
+                <h3 className="font-bold text-stone-700 flex items-center gap-2">
+                    <AlertCircle className="w-4 h-4 text-red-500" />
+                    待选择项目
+                </h3>
+
+                <FeatureAccordion
+                    title="属性值提升 (Ability Score Improvement)"
+                    level={1}
+                    isPending={!asiComplete}
+                    isComplete={asiComplete}
+                    defaultOpen
+                >
+                    <div className="space-y-4">
+                        <p className="text-sm text-stone-600">
+                            此背景推荐提升：<strong className="text-amber-700">{selectedBackground.abilityScores.join(' / ')}</strong>
+                        </p>
+
+                        {/* Distribution Toggle */}
+                        <div className="flex rounded-lg overflow-hidden border border-stone-300 text-sm font-bold">
+                            <button
+                                onClick={() => setAbilityDistribution('2-1')}
+                                className={`flex-1 py-2 text-center transition-colors ${abilityDistribution === '2-1' ? 'bg-amber-500 text-white' : 'bg-white text-stone-600 hover:bg-stone-50'}`}
+                            >
+                                +2 / +1
+                            </button>
+                            <button
+                                onClick={() => setAbilityDistribution('1-1-1')}
+                                className={`flex-1 py-2 text-center transition-colors ${abilityDistribution === '1-1-1' ? 'bg-amber-500 text-white' : 'bg-white text-stone-600 hover:bg-stone-50'}`}
+                            >
+                                +1 / +1 / +1
+                            </button>
+                        </div>
+
+                        {/* ASI Selectors */}
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                            <div>
+                                <label className="text-xs font-bold text-stone-500 block mb-1">
+                                    属性 1 {abilityDistribution === '2-1' ? '(+2)' : '(+1)'}
+                                </label>
+                                <select
+                                    value={selectedAbilities.ability1}
+                                    onChange={e => setSelectedAbilities({ ...selectedAbilities, ability1: e.target.value as keyof AbilityScores })}
+                                    className="w-full p-2 border border-stone-300 rounded-lg font-medium"
+                                >
+                                    <option value="">-- 选择 --</option>
+                                    {abilityOptions.map(o => (
+                                        <option key={o.key} value={o.key} disabled={o.key === selectedAbilities.ability2 || o.key === selectedAbilities.ability3}>
+                                            {o.label}
+                                        </option>
+                                    ))}
+                                </select>
+                            </div>
+
+                            <div>
+                                <label className="text-xs font-bold text-stone-500 block mb-1">属性 2 (+1)</label>
+                                <select
+                                    value={selectedAbilities.ability2}
+                                    onChange={e => setSelectedAbilities({ ...selectedAbilities, ability2: e.target.value as keyof AbilityScores })}
+                                    className="w-full p-2 border border-stone-300 rounded-lg font-medium"
+                                >
+                                    <option value="">-- 选择 --</option>
+                                    {abilityOptions.map(o => (
+                                        <option key={o.key} value={o.key} disabled={o.key === selectedAbilities.ability1 || o.key === selectedAbilities.ability3}>
+                                            {o.label}
+                                        </option>
+                                    ))}
+                                </select>
+                            </div>
+
+                            {abilityDistribution === '1-1-1' && (
+                                <div>
+                                    <label className="text-xs font-bold text-stone-500 block mb-1">属性 3 (+1)</label>
+                                    <select
+                                        value={selectedAbilities.ability3}
+                                        onChange={e => setSelectedAbilities({ ...selectedAbilities, ability3: e.target.value as keyof AbilityScores })}
+                                        className="w-full p-2 border border-stone-300 rounded-lg font-medium"
+                                    >
+                                        <option value="">-- 选择 --</option>
+                                        {abilityOptions.map(o => (
+                                            <option key={o.key} value={o.key} disabled={o.key === selectedAbilities.ability1 || o.key === selectedAbilities.ability2}>
+                                                {o.label}
+                                            </option>
+                                        ))}
+                                    </select>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                </FeatureAccordion>
+            </div>
+
+            {/* Origin Feat */}
+            <FeatureAccordion title={`起源专长：${selectedBackground.feat}`} isComplete defaultOpen>
+                <div className="space-y-3">
+                    {selectedFeat ? (
+                        <>
+                            {selectedFeat.description && (
+                                <p className="italic text-stone-500">{selectedFeat.description}</p>
+                            )}
+                            {selectedFeat.benefits && (
+                                <ul className="space-y-2">
+                                    {selectedFeat.benefits.map((benefit, idx) => (
+                                        <li key={idx} className="flex gap-2 items-start text-sm text-stone-600">
+                                            <Star className="w-4 h-4 text-amber-500 flex-shrink-0 mt-0.5" />
+                                            <span>
+                                                {benefit.split('**').map((part, i) =>
+                                                    i % 2 === 1 ? <strong key={i} className="text-stone-800">{part}</strong> : part
+                                                )}
+                                            </span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
+                        </>
+                    ) : (
+                        <p className="text-stone-400 italic">未找到专长详情</p>
+                    )}
+                </div>
+            </FeatureAccordion>
+
+            {/* Background Proficiencies */}
+            <FeatureAccordion title="背景熟练项" isComplete defaultOpen>
+                <div className="space-y-3">
+                    <div className="flex items-center justify-between py-2 border-b border-stone-100">
+                        <div className="flex items-center gap-2">
+                            <Book className="w-4 h-4 text-stone-400" />
+                            <span className="text-sm text-stone-600">技能熟练</span>
+                        </div>
+                        <span className="font-medium text-stone-800">{selectedBackground.skills.join('、')}</span>
+                    </div>
+                    <div className="flex items-center justify-between py-2 border-b border-stone-100">
+                        <div className="flex items-center gap-2">
+                            <Wrench className="w-4 h-4 text-stone-400" />
+                            <span className="text-sm text-stone-600">工具熟练</span>
+                        </div>
+                        <span className="font-medium text-stone-800">{selectedBackground.tool || '无'}</span>
+                    </div>
+                    <div className="flex items-center justify-between py-2">
+                        <div className="flex items-center gap-2">
+                            <Star className="w-4 h-4 text-stone-400" />
+                            <span className="text-sm text-stone-600">起源专长</span>
+                        </div>
+                        <span className="font-medium text-stone-800">{selectedBackground.feat}</span>
+                    </div>
+                </div>
+            </FeatureAccordion>
+
+            {/* Equipment */}
+            <FeatureAccordion title="起始装备" isComplete>
+                <ul className="space-y-1">
+                    {selectedBackground.equipment.map((eq, idx) => (
+                        <li key={idx} className="text-sm text-stone-600">{eq}</li>
+                    ))}
+                </ul>
+            </FeatureAccordion>
+        </div>
+    ) : (
+        <div className="p-6 flex flex-col items-center justify-center h-full text-center">
+            <Book className="w-16 h-16 text-stone-300 mb-4" />
+            <h3 className="text-xl font-bold text-stone-700 mb-2">选择你的背景</h3>
+            <p className="text-stone-500 max-w-md">
+                背景描述了角色在冒险之前的生活和训练，提供技能熟练、工具熟练以及一个起源专长。
+            </p>
+        </div>
+    );
+
+    return (
+        <WizardLayout
+            title="背景选择"
+            stepId={3}
+            totalSteps={9}
+            leftPanel={leftPanel}
+            rightPanel={rightPanel}
+        />
     );
 };
 

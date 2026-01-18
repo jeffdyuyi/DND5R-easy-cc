@@ -1,13 +1,16 @@
 
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { CharacterData } from '../types';
 import StepClassLevel from './StepClassLevel';
 import StepSpecies from './StepSpecies';
 import StepBackground from './StepBackground';
+import StepSpells from './StepSpells';
 import StepAbilities from './StepAbilities';
+import StepSkills from './StepSkills';
+import StepEquipment from './StepEquipment';
 import StepDetails from './StepDetails';
-import StepIdentity from './StepIdentity'; // New Import
-import { ChevronRight, ChevronLeft, Save } from 'lucide-react';
+import StepIdentity from './StepIdentity';
+import WizardStepProgress, { StepInfo } from './wizard/WizardStepProgress';
 
 interface Props {
   character: CharacterData;
@@ -17,11 +20,84 @@ interface Props {
 
 const CharacterWizard: React.FC<Props> = ({ character, updateCharacter, onComplete }) => {
   const [step, setStep] = useState(1);
-  const totalSteps = 6; // Updated from 5
+  const totalSteps = 9;
+
+  // Calculate step statuses
+  const stepStatuses = useMemo((): StepInfo[] => {
+    const getClassStatus = (): StepInfo['status'] => {
+      if (!character.className) return 'pending';
+      return 'complete';
+    };
+
+    const getSpeciesStatus = (): StepInfo['status'] => {
+      if (!character.race) return 'pending';
+      return 'complete';
+    };
+
+    const getBackgroundStatus = (): StepInfo['status'] => {
+      if (!character.background) return 'pending';
+      return 'complete';
+    };
+
+    const getSpellsStatus = (): StepInfo['status'] => {
+      // Check if origin feat requires spells
+      const spellFeats = ['法术入门', '魔法学徒', '学徒仪祭士'];
+      const needsSpells = spellFeats.some(f => character.originFeat?.includes(f));
+      if (!needsSpells) return 'complete'; // Skip if no spell feat
+
+      const config = character.featConfig?.originFeat;
+      if (!config?.spellcastingAbility || (config.cantrips?.length || 0) < 2 || !config.level1Spell) {
+        return 'pending';
+      }
+      return 'complete';
+    };
+
+    const getAbilitiesStatus = (): StepInfo['status'] => {
+      const hasAllAbilities = Object.values(character.abilities).every(v => v > 0);
+      return hasAllAbilities ? 'complete' : 'pending';
+    };
+
+    const getSkillsStatus = (): StepInfo['status'] => {
+      // Skills are auto-populated from class/background, always complete
+      return 'complete';
+    };
+
+    const getEquipmentStatus = (): StepInfo['status'] => {
+      const choices = character.equipmentChoices;
+      if (!choices?.classChoice || !choices?.backgroundChoice) return 'pending';
+      return 'complete';
+    };
+
+    const getDetailsStatus = (): StepInfo['status'] => {
+      return 'complete';
+    };
+
+    const getIdentityStatus = (): StepInfo['status'] => {
+      if (!character.alignment) return 'pending';
+      return 'complete';
+    };
+
+    const steps: StepInfo[] = [
+      { id: 1, name: '职业', status: step === 1 ? 'current' : getClassStatus() },
+      { id: 2, name: '种族', status: step === 2 ? 'current' : getSpeciesStatus() },
+      { id: 3, name: '背景', status: step === 3 ? 'current' : getBackgroundStatus() },
+      { id: 4, name: '法术', status: step === 4 ? 'current' : getSpellsStatus() },
+      { id: 5, name: '属性', status: step === 5 ? 'current' : getAbilitiesStatus() },
+      { id: 6, name: '技能', status: step === 6 ? 'current' : getSkillsStatus() },
+      { id: 7, name: '装备', status: step === 7 ? 'current' : getEquipmentStatus() },
+      { id: 8, name: '细节', status: step === 8 ? 'current' : getDetailsStatus() },
+      { id: 9, name: '阵营', status: step === 9 ? 'current' : getIdentityStatus() },
+    ];
+
+    return steps;
+  }, [step, character]);
 
   const nextStep = () => {
-    if (step < totalSteps) setStep(step + 1);
-    else onComplete();
+    if (step < totalSteps) {
+      setStep(step + 1);
+    } else {
+      onComplete();
+    }
   };
 
   const prevStep = () => {
@@ -31,114 +107,49 @@ const CharacterWizard: React.FC<Props> = ({ character, updateCharacter, onComple
   const renderContent = () => {
     switch (step) {
       case 1: return <StepClassLevel character={character} updateCharacter={updateCharacter} />;
-      case 2: return <StepSpecies character={character} updateCharacter={updateCharacter} />; // Separated
-      case 3: return <StepBackground character={character} updateCharacter={updateCharacter} />; // Separated
-      case 4: return <StepAbilities character={character} updateCharacter={updateCharacter} />;
-      case 5: return <StepDetails character={character} updateCharacter={updateCharacter} />;
-      case 6: return <StepIdentity character={character} updateCharacter={updateCharacter} />; // New Component
+      case 2: return <StepSpecies character={character} updateCharacter={updateCharacter} />;
+      case 3: return <StepBackground character={character} updateCharacter={updateCharacter} />;
+      case 4: return <StepSpells character={character} updateCharacter={updateCharacter} />;
+      case 5: return <StepAbilities character={character} updateCharacter={updateCharacter} />;
+      case 6: return <StepSkills character={character} updateCharacter={updateCharacter} />;
+      case 7: return <StepEquipment character={character} updateCharacter={updateCharacter} />;
+      case 8: return <StepDetails character={character} updateCharacter={updateCharacter} />;
+      case 9: return <StepIdentity character={character} updateCharacter={updateCharacter} />;
       default: return <div>未知步骤</div>;
     }
   };
 
-  const getStepTitle = (s: number) => {
-    switch (s) {
-      case 1: return "职业等级";
-      case 2: return "种族血统";
-      case 3: return "背景身世";
-      case 4: return "核心属性";
-      case 5: return "细节特征";
-      case 6: return "阵营语言";
-      default: return "";
+  // Check if can proceed to next step
+  const canGoNext = useMemo(() => {
+    switch (step) {
+      case 1: return !!character.className;
+      case 2: return !!character.race;
+      case 3: return !!character.background;
+      case 4: return true; // Spells step can be skipped
+      case 5: return Object.values(character.abilities).every(v => v > 0);
+      case 6: return true; // Skills are auto-populated
+      case 7: return true; // Equipment can be skipped
+      case 8: return true; // Details are optional
+      case 9: return !!character.alignment;
+      default: return true;
     }
-  };
-
-
+  }, [step, character]);
 
   return (
-    <div className="flex flex-col h-full max-w-5xl mx-auto">
-      {/* Progress Bar */}
-      <div className="mb-8 px-4 pt-4">
-        <div className="flex items-center justify-between mb-4 relative">
-          {/* Connector Line */}
-          <div className="absolute left-0 right-0 top-1/2 h-0.5 bg-stone-200 -z-10" />
-
-          {Array.from({ length: totalSteps }).map((_, i) => {
-            const s = i + 1;
-            const isActive = s === step;
-            const isCompleted = s < step;
-
-            return (
-              <div key={s} className="flex flex-col items-center gap-2 bg-stone-50 px-2 group">
-                <div
-                  className={`
-                             w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold transition-all
-                             ${isActive
-                      ? 'bg-dndRed text-white scale-110 shadow-lg ring-4 ring-red-100'
-                      : isCompleted
-                        ? 'bg-stone-800 text-white'
-                        : 'bg-stone-200 text-stone-400'}
-                           `}
-                >
-                  {isCompleted ? "✓" : s}
-                </div>
-                <span className={`text-[10px] font-bold uppercase tracking-wider hidden md:block ${isActive ? 'text-dndRed' : 'text-stone-400'}`}>
-                  {getStepTitle(s)}
-                </span>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* Main Content Area */}
-      <div className="flex-1 overflow-y-auto px-4 pb-24 scrollbar-hide">
+    <div className="flex flex-col h-full">
+      {/* Main Content */}
+      <div className="flex-1 overflow-hidden">
         {renderContent()}
       </div>
 
-      {/* Footer Navigation */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-stone-200 p-4 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] z-50">
-        <div className="max-w-5xl mx-auto flex justify-between items-center">
-          <button
-            onClick={prevStep}
-            disabled={step === 1}
-            className={`
-                  flex items-center gap-2 px-6 py-3 rounded-lg font-bold transition-all
-                  ${step === 1
-                ? 'text-stone-300 cursor-not-allowed bg-stone-50'
-                : 'text-stone-600 hover:bg-stone-100 hover:text-stone-900'}
-               `}
-          >
-            <ChevronLeft className="w-5 h-5" />
-            上一步
-          </button>
-
-          <div className="text-stone-400 text-xs font-mono hidden md:block">
-            Step {step} of {totalSteps}
-          </div>
-
-          <button
-            onClick={nextStep}
-            className={`
-                  flex items-center gap-2 px-8 py-3 rounded-lg font-bold shadow-lg transition-transform active:scale-95
-                  ${step === totalSteps
-                ? 'bg-green-600 text-white hover:bg-green-700'
-                : 'bg-dndRed text-white hover:bg-red-700'}
-               `}
-          >
-            {step === totalSteps ? (
-              <>
-                <Save className="w-5 h-5" />
-                完成创建
-              </>
-            ) : (
-              <>
-                下一步
-                <ChevronRight className="w-5 h-5" />
-              </>
-            )}
-          </button>
-        </div>
-      </div>
+      {/* Step Progress Footer */}
+      <WizardStepProgress
+        steps={stepStatuses}
+        currentStep={step}
+        onPrev={prevStep}
+        onNext={nextStep}
+        canGoNext={canGoNext}
+      />
     </div>
   );
 };

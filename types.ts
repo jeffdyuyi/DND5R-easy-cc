@@ -8,7 +8,7 @@ export type AbilityScores = {
   charisma: number;
 };
 
-export type Alignment = 
+export type Alignment =
   | '守序善良' | '中立善良' | '混乱善良'
   | '守序中立' | '绝对中立' | '混乱中立'
   | '守序邪恶' | '中立邪恶' | '混乱邪恶'
@@ -106,7 +106,7 @@ export interface ItemItem extends BaseLibraryItem {
   cost: string;
   weight: string;
   rarity?: string; // 魔法物品稀有度: 普通, 非普通, 珍稀, 极珍稀, 传说, 神器
-  
+
   // 武器特定
   damage?: string;      // 例如 "1d8"
   damageType?: string;  // 例如 "挥砍"
@@ -123,7 +123,7 @@ export interface ItemItem extends BaseLibraryItem {
   toolUtilize?: { action: string; dc: string; description?: string }[]; // 操作动作列表
   toolCraft?: string[]; // 可制造物品列表
   toolVariants?: string[]; // 变体列表
-  
+
   // 实例属性 (用于背包实例)
   quantity?: number;
   isEquipped?: boolean;
@@ -134,12 +134,12 @@ export interface ItemItem extends BaseLibraryItem {
 
 export interface CharacterData {
   id: string; // Unique Identifier for multiple characters
-  
+
   // Core Identity
   name: string;
   playerName: string;
   level: number; // Class Level
-  
+
   // References to library IDs or raw strings if custom
   className: string; // Class Name
   subclass: string;  // Subclass
@@ -148,12 +148,12 @@ export interface CharacterData {
   subRace: string;
   background: string;
   alignment: Alignment;
-  
+
   // Extended Details (New)
   pronouns: string;      // 代词
   faith: string;         // 信仰
   lifestyle: string;     // 生活方式
-  
+
   // Physical Characteristics (New)
   gender: string;        // 性别
   age: string;           // 年龄
@@ -173,7 +173,7 @@ export interface CharacterData {
   abilities: AbilityScores; // Base stats (from roll/array)
   abilityBonuses: AbilityScores; // Racial/Background bonuses
   backgroundBonuses: AbilityScores; // Specifically tracking +2/+1 or +1/+1/+1 from background
-  
+
   // Skills: key is skill name, value is multiplier (0, 1, 2)
   skillMastery: Record<string, number>;
 
@@ -184,20 +184,20 @@ export interface CharacterData {
   currentHp: number;
   tempHp: number;
   hitDiceCurrent: number;
-  
+
   // Personality & Bio
   personalityTraits: string;
   ideals: string;
   bonds: string;
   flaws: string;
   backstory: string;
-  
+
   // Notes & Relations (New)
   organizations: string; // 组织
   allies: string;        // 盟友
   enemies: string;       // 敌人
   otherNotes: string;    // 其他笔记
-  
+
   // Inventory
   copper: number;
   silver: number;
@@ -205,23 +205,23 @@ export interface CharacterData {
   platinum: number;
   equipment: string; // Legacy string field
   treasure: string;
-  
+
   // Structured Inventory (New)
   inventoryWeapons: ItemItem[];
   inventoryArmor: ItemItem[];
   inventoryGear: ItemItem[]; // Includes gear, magic items, ammo, focuses
-  
+
   // Tool Proficiencies List (Structured)
   tools: {
     id: string; // Library ID if available
     name: string;
     note: string; // For variants or specific notes
   }[];
-  
+
   // Adventure
   experience: number;
   notes: string;
-  
+
   // Spells
   spellcastingAbility: string;
   spellSaveDC: number;
@@ -248,5 +248,57 @@ export interface CharacterData {
     level7: { total: number, used: number };
     level8: { total: number, used: number };
     level9: { total: number, used: number };
-  }
+  };
+
+  // === NEW: Structured Proficiency Tracking ===
+  proficiencySources: {
+    skills: {
+      class: string[];      // Skills chosen from class options
+      background: string[]; // Skills from background
+      species: string[];    // Skills from species traits
+      feat: string[];       // Skills from origin feat
+    };
+    tools: {
+      class: string[];      // Tools from class
+      background: string[]; // Tool from background
+      species: string[];    // Tools from species
+      feat: string[];       // Tools from feat
+    };
+  };
+
+  // === NEW: Equipment Choices ===
+  equipmentChoices: {
+    classChoice: 'A' | 'B' | '';
+    classSubChoices: Record<string, string>; // e.g., { "martial_weapon": "Longsword" }
+    backgroundChoice: 'A' | 'B' | '';
+    backgroundSubChoices: Record<string, string>;
+  };
+  startingInventory: { name: string; quantity: number; source: string }[];
+
+  // === NEW: Feat Configuration ===
+  featConfig: {
+    originFeat: {
+      name: string;
+      spellcastingAbility?: 'intelligence' | 'wisdom' | 'charisma' | '';
+      cantrips?: string[];      // Selected cantrip names
+      level1Spell?: string;     // Selected level 1 spell
+      skillChoice?: string;     // If feat grants skill choice
+      toolChoice?: string;      // If feat grants tool choice
+    };
+    otherFeats: Record<string, {
+      spellcastingAbility?: string;
+      cantrips?: string[];
+      spells?: string[];
+      choices?: Record<string, string>;
+    }>;
+  };
+
+  // === NEW: Structured Notes ===
+  notesStructured: {
+    organizations: { name: string; description: string }[];
+    allies: { name: string; description: string }[];
+    enemies: { name: string; description: string }[];
+    other: { name: string; description: string }[];
+  };
 }
+
