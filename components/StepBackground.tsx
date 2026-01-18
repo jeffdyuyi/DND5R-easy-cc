@@ -6,6 +6,7 @@ import WizardLayout from './wizard/WizardLayout';
 import FeatureAccordion from './wizard/FeatureAccordion';
 import { Star, Book, Wrench, AlertCircle, CheckCircle } from 'lucide-react';
 import { parseToolProficiency } from '../utils/toolUtils';
+import OriginFeatSelector from './OriginFeatSelector';
 
 interface Props {
     character: CharacterData;
@@ -274,7 +275,7 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
 
             {/* Origin Feat */}
             <FeatureAccordion title={`起源专长：${selectedBackground.feat}`} isComplete defaultOpen>
-                <div className="space-y-3">
+                <div className="space-y-4">
                     {selectedFeat ? (
                         <>
                             {selectedFeat.description && (
@@ -294,12 +295,21 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
                                     ))}
                                 </ul>
                             )}
+
+                            {/* 专长选择器 */}
+                            <OriginFeatSelector
+                                character={character}
+                                updateCharacter={updateCharacter}
+                                featName={selectedBackground.feat}
+                                lockedSpellList={selectedBackground.featSpellList}
+                            />
                         </>
                     ) : (
                         <p className="text-stone-400 italic">未找到专长详情</p>
                     )}
                 </div>
             </FeatureAccordion>
+
 
             {/* Background Proficiencies */}
             <FeatureAccordion title="背景熟练项" isComplete defaultOpen>

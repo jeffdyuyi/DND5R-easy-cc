@@ -50,6 +50,7 @@ export interface SpeciesItem extends BaseLibraryItem {
 export interface BackgroundItem extends BaseLibraryItem {
   abilityScores: string[]; // 推荐属性
   feat: string; // 起源专长
+  featSpellList?: '牧师' | '德鲁伊' | '法师'; // 魔法学徒锁定的法术列表
   skills: string[];
   tool: string;
   equipment: string[];
@@ -292,11 +293,13 @@ export interface CharacterData {
   featConfig: {
     originFeat: {
       name: string;
+      spellList?: '牧师' | '德鲁伊' | '法师';  // Magic Initiate spell list
       spellcastingAbility?: 'intelligence' | 'wisdom' | 'charisma' | '';
       cantrips?: string[];      // Selected cantrip names
       level1Spell?: string;     // Selected level 1 spell
-      skillChoice?: string;     // If feat grants skill choice
-      toolChoice?: string;      // If feat grants tool choice
+      artisanTools?: string[];  // Crafter: 3 artisan tools
+      instruments?: string[];   // Musician: 3 instruments
+      skillsAndTools?: string[]; // Skilled: 3 skills or tools
     };
     otherFeats: Record<string, {
       spellcastingAbility?: string;
