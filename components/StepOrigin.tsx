@@ -9,6 +9,41 @@ interface Props {
   updateCharacter: (updates: Partial<CharacterData>) => void;
 }
 
+interface AbilitySelectRowProps {
+  label: string;
+  value: string;
+  onChange: (value: keyof AbilityScores) => void;
+  options: { key: keyof AbilityScores; label: string }[];
+  filterList: string[];
+  exclude: string[];
+}
+
+const AbilitySelectRow: React.FC<AbilitySelectRowProps> = ({ label, value, onChange, options, filterList, exclude }) => {
+  // Parsing label for color handling is a bit specific, but kept simple here
+  const labelText = label.split('(')[0];
+  const labelBonus = label.includes('(') ? '(' + label.split('(')[1] : '';
+
+  return (
+    <div>
+      <label className="block text-xs font-bold text-stone-600 mb-1">
+        {labelText} <span className="text-amber-600">{labelBonus}</span>
+      </label>
+      <select
+        value={value}
+        onChange={(e) => onChange(e.target.value as keyof AbilityScores)}
+        className="w-full p-2 border-2 border-stone-300 rounded focus:border-amber-500 focus:outline-none font-bold text-sm"
+      >
+        <option value="">-- 选择 --</option>
+        {options
+          .filter(opt => filterList.includes(opt.label.split(' ')[0]))
+          .filter(opt => !exclude.includes(opt.key))
+          .map(opt => (
+            <option key={opt.key} value={opt.key}>{opt.label}</option>
+          ))}
+      </select>
+    </div>
+  );
+};
 const StepOrigin: React.FC<Props> = ({ character, updateCharacter }) => {
   const [abilityDistribution, setAbilityDistribution] = useState<'2-1' | '1-1-1'>('2-1');
   const [selectedAbilities, setSelectedAbilities] = useState<{
@@ -211,65 +246,35 @@ const StepOrigin: React.FC<Props> = ({ character, updateCharacter }) => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {/* 属性1 */}
-              <div>
-                <label className="block text-xs font-bold text-stone-600 mb-1">
-                  属性 1 {abilityDistribution === '2-1' && <span className="text-amber-600">(+2)</span>}
-                  {abilityDistribution === '1-1-1' && <span className="text-amber-600">(+1)</span>}
-                </label>
-                <select
-                  value={selectedAbilities.ability1}
-                  onChange={(e) => setSelectedAbilities({ ...selectedAbilities, ability1: e.target.value as keyof AbilityScores })}
-                  className="w-full p-2 border-2 border-stone-300 rounded focus:border-amber-500 focus:outline-none font-bold text-sm"
-                >
-                  <option value="">-- 选择 --</option>
-                  {abilityOptions
-                    .filter(opt => selectedBackground.abilityScores.includes(opt.label.split(' ')[0]))
-                    .map(opt => (
-                      <option key={opt.key} value={opt.key}>{opt.label}</option>
-                    ))}
-                </select>
-              </div>
+              <AbilitySelectRow
+                label={`属性 1 ${abilityDistribution === '2-1' ? '(+2)' : '(+1)'}`}
+                value={selectedAbilities.ability1}
+                onChange={(val) => setSelectedAbilities({ ...selectedAbilities, ability1: val })}
+                options={abilityOptions}
+                filterList={selectedBackground.abilityScores}
+                exclude={[]}
+              />
 
               {/* 属性2 */}
-              <div>
-                <label className="block text-xs font-bold text-stone-600 mb-1">
-                  属性 2 <span className="text-amber-600">(+1)</span>
-                </label>
-                <select
-                  value={selectedAbilities.ability2}
-                  onChange={(e) => setSelectedAbilities({ ...selectedAbilities, ability2: e.target.value as keyof AbilityScores })}
-                  className="w-full p-2 border-2 border-stone-300 rounded focus:border-amber-500 focus:outline-none font-bold text-sm"
-                >
-                  <option value="">-- 选择 --</option>
-                  {abilityOptions
-                    .filter(opt => selectedBackground.abilityScores.includes(opt.label.split(' ')[0]))
-                    .filter(opt => opt.key !== selectedAbilities.ability1)
-                    .map(opt => (
-                      <option key={opt.key} value={opt.key}>{opt.label}</option>
-                    ))}
-                </select>
-              </div>
+              <AbilitySelectRow
+                label="属性 2 (+1)"
+                value={selectedAbilities.ability2}
+                onChange={(val) => setSelectedAbilities({ ...selectedAbilities, ability2: val })}
+                options={abilityOptions}
+                filterList={selectedBackground.abilityScores}
+                exclude={[selectedAbilities.ability1]}
+              />
 
               {/* 属性3 (仅1-1-1模式) */}
               {abilityDistribution === '1-1-1' && (
-                <div>
-                  <label className="block text-xs font-bold text-stone-600 mb-1">
-                    属性 3 <span className="text-amber-600">(+1)</span>
-                  </label>
-                  <select
-                    value={selectedAbilities.ability3}
-                    onChange={(e) => setSelectedAbilities({ ...selectedAbilities, ability3: e.target.value as keyof AbilityScores })}
-                    className="w-full p-2 border-2 border-stone-300 rounded focus:border-amber-500 focus:outline-none font-bold text-sm"
-                  >
-                    <option value="">-- 选择 --</option>
-                    {abilityOptions
-                      .filter(opt => selectedBackground.abilityScores.includes(opt.label.split(' ')[0]))
-                      .filter(opt => opt.key !== selectedAbilities.ability1 && opt.key !== selectedAbilities.ability2)
-                      .map(opt => (
-                        <option key={opt.key} value={opt.key}>{opt.label}</option>
-                      ))}
-                  </select>
-                </div>
+                <AbilitySelectRow
+                  label="属性 3 (+1)"
+                  value={selectedAbilities.ability3}
+                  onChange={(val) => setSelectedAbilities({ ...selectedAbilities, ability3: val })}
+                  options={abilityOptions}
+                  filterList={selectedBackground.abilityScores}
+                  exclude={[selectedAbilities.ability1, selectedAbilities.ability2]}
+                />
               )}
             </div>
           </div>
