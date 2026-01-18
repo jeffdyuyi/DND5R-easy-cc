@@ -155,7 +155,13 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
             <div className="bg-stone-50 p-2 rounded">
               <div className="text-[10px] text-stone-400 uppercase">生命值</div>
               <div className="font-bold text-stone-800">
-                {parseInt(selectedClass.coreTraits.hitPointDie.replace('d', '')) + (character.level - 1) * (parseInt(selectedClass.coreTraits.hitPointDie.replace('d', '')) / 2 + 1)}
+                {(() => {
+                  const hitDie = parseInt(selectedClass.coreTraits.hitPointDie.match(/d(\d+)/)?.[1] || '8');
+                  const conMod = Math.floor((character.abilities.constitution - 10) / 2);
+                  const level1HP = hitDie + conMod;
+                  const higherLevelHP = (character.level - 1) * (Math.floor(hitDie / 2) + 1 + conMod);
+                  return Math.max(1, level1HP + higherLevelHP);
+                })()}
               </div>
             </div>
           </div>

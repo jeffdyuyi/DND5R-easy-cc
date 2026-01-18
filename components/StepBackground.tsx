@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo, useEffect } from 'react';
 import { CharacterData, AbilityScores } from '../types';
 import { BACKGROUND_DB } from '../data-backgrounds';
@@ -6,6 +5,7 @@ import { FEAT_DB } from '../data-feats';
 import WizardLayout from './wizard/WizardLayout';
 import FeatureAccordion from './wizard/FeatureAccordion';
 import { Star, Book, Wrench, AlertCircle, CheckCircle } from 'lucide-react';
+import { parseToolProficiency } from '../utils/toolUtils';
 
 interface Props {
     character: CharacterData;
@@ -39,6 +39,14 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
         ability3: keyof AbilityScores | '';
     }>({ ability1: '', ability2: '', ability3: '' });
 
+    // Tool Selection State
+    const [selectedTool, setSelectedTool] = useState<string>('');
+
+    // 解析背景工具选项
+    const toolOptions = useMemo(() => {
+        if (!selectedBackground) return null;
+        return parseToolProficiency(selectedBackground.tool || '');
+    }, [selectedBackground]);
 
     // 根据背景限制受允许的属性选项
     const allowedAbilityOptions = useMemo(() => {
@@ -226,6 +234,42 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
                         </div>
                     </div>
                 </FeatureAccordion>
+
+                {/* Tool Proficiency Selection */}
+                {toolOptions && toolOptions.length > 0 && (
+                    <FeatureAccordion
+                        title={`工具熟练选择: ${selectedBackground.tool}`}
+                        level={1}
+                        isPending={!selectedTool}
+                        isComplete={!!selectedTool}
+                        defaultOpen
+                    >
+                        <div className="space-y-3">
+                            <p className="text-sm text-stone-600">
+                                从以下选项中选择一种工具熟练：
+                            </p>
+                            <select
+                                value={selectedTool}
+                                onChange={e => {
+                                    setSelectedTool(e.target.value);
+                                    updateCharacter({ toolProficiencies: e.target.value });
+                                }}
+                                className="w-full p-3 border border-stone-300 rounded-lg font-medium"
+                            >
+                                <option value="">-- 选择工具 --</option>
+                                {toolOptions.map(tool => (
+                                    <option key={tool} value={tool}>{tool}</option>
+                                ))}
+                            </select>
+                            {selectedTool && (
+                                <div className="flex items-center gap-2 text-green-600 text-sm">
+                                    <CheckCircle className="w-4 h-4" />
+                                    已选择：{selectedTool}
+                                </div>
+                            )}
+                        </div>
+                    </FeatureAccordion>
+                )}
             </div>
 
             {/* Origin Feat */}

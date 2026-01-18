@@ -2,7 +2,23 @@
 import React, { useState, useMemo } from 'react';
 import { CharacterData, AbilityScores } from '../types';
 import WizardLayout from './wizard/WizardLayout';
-import { Dices, List, Edit3, ShoppingCart, RotateCcw, Info, CheckCircle } from 'lucide-react';
+import { Dices, List, Edit3, ShoppingCart, RotateCcw, Info, CheckCircle, Wand2 } from 'lucide-react';
+
+// 职业推荐属性分配（标准数组 15,14,13,12,10,8 的推荐分配方式）
+const CLASS_ABILITY_RECOMMENDATIONS: Record<string, (keyof AbilityScores)[]> = {
+  "野蛮人": ["strength", "constitution", "dexterity", "wisdom", "charisma", "intelligence"],
+  "吟游诗人": ["charisma", "dexterity", "constitution", "wisdom", "intelligence", "strength"],
+  "牧师": ["wisdom", "constitution", "strength", "dexterity", "charisma", "intelligence"],
+  "德鲁伊": ["wisdom", "constitution", "dexterity", "intelligence", "charisma", "strength"],
+  "战士": ["strength", "constitution", "dexterity", "wisdom", "charisma", "intelligence"],
+  "武僧": ["dexterity", "wisdom", "constitution", "strength", "charisma", "intelligence"],
+  "圣武士": ["strength", "charisma", "constitution", "wisdom", "dexterity", "intelligence"],
+  "游侠": ["dexterity", "wisdom", "constitution", "intelligence", "strength", "charisma"],
+  "游荡者": ["dexterity", "constitution", "intelligence", "wisdom", "charisma", "strength"],
+  "术士": ["charisma", "constitution", "dexterity", "wisdom", "intelligence", "strength"],
+  "魔契师": ["charisma", "constitution", "dexterity", "wisdom", "intelligence", "strength"],
+  "法师": ["intelligence", "constitution", "dexterity", "wisdom", "charisma", "strength"],
+};
 
 interface Props {
   character: CharacterData;
@@ -149,8 +165,34 @@ const StepAbilities: React.FC<Props> = ({ character, updateCharacter }) => {
 
       {/* Mode-specific info */}
       {mode === 'standard' && (
-        <div className="bg-blue-50 p-4 rounded-lg border border-blue-200 text-sm text-blue-800">
-          <strong>标准数组</strong>：从固定数组 [15, 14, 13, 12, 10, 8] 中，为每项属性分配一个值。每个值只能使用一次。
+        <div className="space-y-3">
+          <div className="bg-blue-50 p-4 rounded-lg border border-blue-200 text-sm text-blue-800">
+            <strong>标准数组</strong>：从固定数组 [15, 14, 13, 12, 10, 8] 中，为每项属性分配一个值。每个值只能使用一次。
+          </div>
+
+          {/* 职业推荐按钮 */}
+          {character.className && CLASS_ABILITY_RECOMMENDATIONS[character.className] && (
+            <button
+              onClick={() => {
+                const rec = CLASS_ABILITY_RECOMMENDATIONS[character.className];
+                if (rec) {
+                  const newAbilities: AbilityScores = {
+                    strength: STANDARD_ARRAY[rec.indexOf('strength')],
+                    dexterity: STANDARD_ARRAY[rec.indexOf('dexterity')],
+                    constitution: STANDARD_ARRAY[rec.indexOf('constitution')],
+                    intelligence: STANDARD_ARRAY[rec.indexOf('intelligence')],
+                    wisdom: STANDARD_ARRAY[rec.indexOf('wisdom')],
+                    charisma: STANDARD_ARRAY[rec.indexOf('charisma')],
+                  };
+                  updateCharacter({ abilities: newAbilities });
+                }
+              }}
+              className="w-full flex items-center justify-center gap-2 p-3 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold rounded-lg shadow-md transition-all"
+            >
+              <Wand2 className="w-5 h-5" />
+              使用{character.className}职业推荐分配
+            </button>
+          )}
         </div>
       )}
 
