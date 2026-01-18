@@ -5,6 +5,7 @@ import WizardLayout from './wizard/WizardLayout';
 import FeatureAccordion from './wizard/FeatureAccordion';
 import { FEAT_DB } from '../data-feats';
 import { SPELL_DB } from '../data-spells';
+import { BACKGROUND_DB } from '../data-backgrounds';
 import { Sparkles, Wand2, CheckCircle, Search } from 'lucide-react';
 
 interface Props {
@@ -29,23 +30,31 @@ const StepSpells: React.FC<Props> = ({ character, updateCharacter }) => {
     const originFeat = character.originFeat ? FEAT_DB.find(f => f.name === character.originFeat) : null;
     const featGrantsSpells = originFeat && SPELL_GRANTING_FEATS.some(f => character.originFeat?.includes(f));
 
+    // Get background data to check for locked spell list
+    const selectedBackground = BACKGROUND_DB.find(bg => bg.name === character.background);
+
     // Get feat configuration
     const featConfig = character.featConfig?.originFeat || { name: character.originFeat || '' };
     const selectedAbility = featConfig.spellcastingAbility || '';
     const selectedCantrips = featConfig.cantrips || [];
     const selectedLevel1Spell = featConfig.level1Spell || '';
 
-    // Determine spell list based on feat
+    // Determine spell list based on feat - prioritize background's featSpellList
     const spellListClasses = useMemo(() => {
         if (character.originFeat?.includes('魔法学徒')) {
-            // Respect the list chosen in Background/Feat selection (e.g. "牧师"), or default to all if not set
+            // 首先检查背景是否锁定了法术列表
+            if (selectedBackground?.featSpellList) {
+                return [selectedBackground.featSpellList];
+            }
+            // 然后检查用户选择的法术列表
             if (featConfig.spellList) {
                 return [featConfig.spellList];
             }
+            // 如果都没有，允许所有三个法术列表（需要用户选择）
             return ['牧师', '德鲁伊', '法师'];
         }
         return [];
-    }, [character.originFeat, featConfig.spellList]);
+    }, [character.originFeat, selectedBackground?.featSpellList, featConfig.spellList]);
 
     // Filter available cantrips
     const availableCantrips = useMemo(() => {

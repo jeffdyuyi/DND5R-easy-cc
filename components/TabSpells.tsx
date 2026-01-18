@@ -96,7 +96,7 @@ export const SpellListCard: React.FC<SpellListCardProps> = ({
 
 // --- Helper Components (Moved up to avoid TDZ issues) ---
 
-const SpellPicker = ({ level, onSelect }: { level: number, onSelect: (spell: SpellItem) => void }) => {
+const SpellPicker = ({ level, onSelect, characterClass }: { level: number, onSelect: (spell: SpellItem) => void, characterClass?: string }) => {
    const [searchTerm, setSearchTerm] = useState('');
 
    // Sorting State
@@ -129,7 +129,9 @@ const SpellPicker = ({ level, onSelect }: { level: number, onSelect: (spell: Spe
          s.school.includes(searchTerm) ||
          s.source.toLowerCase().includes(searchTerm.toLowerCase());
       const matchesSource = selectedSources.includes(s.source);
-      return matchesLevel && matchesSearch && matchesSource;
+      // 职业过滤：如果指定了角色职业，只显示该职业可用的法术
+      const matchesClass = !characterClass || s.classes?.includes(characterClass);
+      return matchesLevel && matchesSearch && matchesSource && matchesClass;
    });
 
    // Sorting
@@ -587,7 +589,7 @@ const SpellbookManager: React.FC<Props> = ({ characters, activeCharId, setActive
                         <X className="w-6 h-6" />
                      </button>
                   </div>
-                  <SpellPicker level={activeLevelNum} onSelect={addSpell} />
+                  <SpellPicker level={activeLevelNum} onSelect={addSpell} characterClass={character?.className} />
                </div>
             </div>
          )}

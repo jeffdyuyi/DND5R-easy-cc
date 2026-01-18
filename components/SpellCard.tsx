@@ -2,39 +2,28 @@ import React from 'react';
 import { SpellItem } from '../types';
 import { RichText } from './RichText';
 
-// 法术成分图标组件
+// 法术成分图标组件 - 使用中文文字
 const ComponentIcons: React.FC<{ components: string }> = ({ components }) => {
-    const hasV = components.includes('V') || components.includes('言语');
-    const hasS = components.includes('S') || components.includes('姿势');
-    const hasM = components.includes('M') || components.includes('材料');
+    const hasV = components.includes('声音') || components.includes('V') || components.includes('言语');
+    const hasS = components.includes('姿势') || components.includes('S');
+    const hasM = components.includes('材料') || components.includes('M');
 
     return (
-        <div className="flex gap-2">
+        <div className="flex gap-2 text-sm flex-wrap">
             {hasV && (
-                <div className="w-8 h-8 flex items-center justify-center" title="言语成分">
-                    <svg viewBox="0 0 24 24" className="w-6 h-6 fill-stone-700">
-                        <circle cx="12" cy="8" r="4" />
-                        <path d="M12 14c-4 0-7 2-7 4v2h14v-2c0-2-3-4-7-4z" />
-                        <path d="M16 6c0 0 2 1 3 3s1 3 1 3" fill="none" stroke="currentColor" strokeWidth="1.5" />
-                        <path d="M17 3c0 0 3 2 4 5s1 5 1 5" fill="none" stroke="currentColor" strokeWidth="1.5" />
-                    </svg>
-                </div>
+                <span className="px-2 py-1 bg-blue-100 border border-blue-300 rounded font-medium text-blue-800" title="言语成分">
+                    言语
+                </span>
             )}
             {hasS && (
-                <div className="w-8 h-8 flex items-center justify-center" title="姿势成分">
-                    <svg viewBox="0 0 24 24" className="w-6 h-6 fill-stone-700">
-                        <path d="M21 10c-1 1-2.5 1.5-4 1.5s-3-1-3-1l-2-2-3 3c0 0 .5 1 1 3s0 4-1 5l-2 2h12V10z" />
-                        <circle cx="7" cy="6" r="2" />
-                        <path d="M4 12c0-2 1-4 3-4" />
-                    </svg>
-                </div>
+                <span className="px-2 py-1 bg-amber-100 border border-amber-300 rounded font-medium text-amber-800" title="姿势成分">
+                    姿势
+                </span>
             )}
             {hasM && (
-                <div className="w-8 h-8 flex items-center justify-center" title="材料成分">
-                    <svg viewBox="0 0 24 24" className="w-6 h-6 fill-stone-700">
-                        <path d="M12 2L4 7v3c0 5 3.5 10 8 11 4.5-1 8-6 8-11V7l-8-5z" />
-                    </svg>
-                </div>
+                <span className="px-2 py-1 bg-purple-100 border border-purple-300 rounded font-medium text-purple-800" title="材料成分">
+                    材料
+                </span>
             )}
         </div>
     );
@@ -110,18 +99,18 @@ const SpellCard: React.FC<SpellCardProps> = ({ item }) => {
                 {/* 左侧：法术属性 */}
                 <div className="flex-1 p-4 space-y-2">
                     <div className="flex items-center">
-                        <span className="w-28 font-bold text-stone-700">Range</span>
+                        <span className="w-28 font-bold text-stone-700">射程</span>
                         <span className="font-black text-xl text-stone-900">{item.range}</span>
                     </div>
                     <div className="flex items-center">
-                        <span className="w-28 font-bold text-stone-700">Duration</span>
+                        <span className="w-28 font-bold text-stone-700">持续时间</span>
                         {requiresConcentration && (
                             <span className="mr-2 text-amber-600">⏳</span>
                         )}
                         <span className="font-black text-xl text-stone-900">{item.duration}</span>
                     </div>
                     <div className="flex items-center">
-                        <span className="w-28 font-bold text-stone-700">Casting Time</span>
+                        <span className="w-28 font-bold text-stone-700">施法时间</span>
                         <span className="font-black text-xl text-stone-900">{item.castingTime}</span>
                     </div>
 
