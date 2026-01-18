@@ -1,9 +1,9 @@
 
 import React, { useState, useEffect } from 'react';
-import { CharacterData, AbilityScores, BackgroundItem } from '../types';
+import { CharacterData, AbilityScores } from '../types';
 import { BACKGROUND_DB } from '../data-backgrounds';
 import { FEAT_DB } from '../data-feats';
-import { Book, Users, Star, Compass, Shield, Heart } from 'lucide-react';
+import { Users, Star } from 'lucide-react';
 
 interface Props {
     character: CharacterData;

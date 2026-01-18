@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { CharacterData } from '../types';
 import { SPECIES_DB } from '../data-species';
 import { SPECIES_VARIANTS } from '../utils/characterUtils';
-import { User, Eye, Footprints, Shield, Info, Network } from 'lucide-react';
+import { User, Eye, Footprints, Info, Network } from 'lucide-react';
 
 interface Props {
     character: CharacterData;

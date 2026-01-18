@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { CharacterData, AbilityScores } from '../types';
-import { Activity, Dices, List, Edit3, RotateCcw } from 'lucide-react';
+import { Dices, List, Edit3, RotateCcw } from 'lucide-react';
 
 interface Props {
   character: CharacterData;
@@ -136,7 +136,6 @@ const StepAbilities: React.FC<Props> = ({ character, updateCharacter }) => {
       <div className="grid grid-cols-2 md:grid-cols-6 gap-4">
         {(Object.keys(ABILITY_NAMES) as Array<keyof AbilityScores>).map((key) => {
           const val = character.abilities[key];
-          const mod = getModifier(val);
           const total = val + (character.backgroundBonuses?.[key] || 0) + (character.abilityBonuses?.[key] || 0); // Total with bonuses
           const totalMod = getModifier(total);
 

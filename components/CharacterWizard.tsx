@@ -7,7 +7,7 @@ import StepBackground from './StepBackground';
 import StepAbilities from './StepAbilities';
 import StepDetails from './StepDetails';
 import StepIdentity from './StepIdentity'; // New Import
-import { ChevronRight, ChevronLeft, Save, Sparkles, User, Book, Dices, FileText, Globe } from 'lucide-react';
+import { ChevronRight, ChevronLeft, Save } from 'lucide-react';
 
 interface Props {
   character: CharacterData;
@@ -52,17 +52,7 @@ const CharacterWizard: React.FC<Props> = ({ character, updateCharacter, onComple
     }
   };
 
-  const getStepIcon = (s: number) => {
-    switch (s) {
-      case 1: return <Sparkles className="w-4 h-4" />;
-      case 2: return <User className="w-4 h-4" />;
-      case 3: return <Book className="w-4 h-4" />;
-      case 4: return <Dices className="w-4 h-4" />;
-      case 5: return <FileText className="w-4 h-4" />;
-      case 6: return <Globe className="w-4 h-4" />;
-      default: return null;
-    }
-  };
+
 
   return (
     <div className="flex flex-col h-full max-w-5xl mx-auto">

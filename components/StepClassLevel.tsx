@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { CLASSES } from '../data';
 import { CharacterData, ClassItem } from '../types';
 import {
@@ -14,18 +14,7 @@ interface Props {
 }
 
 const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
-  const selectedClass: ClassItem | undefined = CLASSES.find(c => c.name === character.className);
-  // Fallback if CLASSES is array or object. In data-classes.ts it is export const CLASS_DB: ClassItem[] = ...
-  // But in StepClassLevel.tsx (original): import { CLASSES } from '../data' and usage Object.keys(CLASSES) suggests CLASSES is an object?
-  // Let me check '../data'. Original code used `CLASSES[character.className]`.
-  // If CLASS_DB in data-classes.ts is an array, then `data.ts` might be exporting an object mapped by name?
-  // I need to be careful. The previous view_file of `data-classes.ts` showed `export const CLASS_DB = [...]`.
-  // But `StepClassLevel.tsx` line 3 import { CLASSES } from '../data'.
-  // I should check `data.ts`.
-  // Based on the file listing `data.ts` is 2677 bytes.
-  // I better check `data.ts` essentially quick.
-  // BUT I will assume the previous code was working. `CLASSES[character.className]`.
-  // So CLASSES is likely `Record<string, ClassItem>`.
+  const selectedClass: ClassItem | undefined = character.className ? CLASSES[character.className] : undefined;
 
   const [selectedEquipmentOption, setSelectedEquipmentOption] = useState<'A' | 'B'>('A');
 

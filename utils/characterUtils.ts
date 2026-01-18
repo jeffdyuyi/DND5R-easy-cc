@@ -1,5 +1,5 @@
 
-import { SpeciesItem } from '../types';
+
 
 // --- Alignment Data ---
 export const ALIGNMENT_DESCRIPTIONS: Record<string, { title: string; quote: string; desc: string; advantage: string }> = {
@@ -119,7 +119,7 @@ export const parseSkillOptions = (traitString: string): { limit: number; options
     // Try alternate format "任择 (\d+) 项"
     const match2 = traitString.match(/任择\s*(\d+)\s*项/);
     if (!match2) return null;
-    
+
     // Parse list from match2
     // Assuming format "任择 3 项技能" implies any skill? 
     // Usually Bard says "任择 3 项技能" (Any 3 skills).
@@ -129,7 +129,7 @@ export const parseSkillOptions = (traitString: string): { limit: number; options
   }
 
   const limit = parseInt(match ? match[1] : (traitString.match(/任择\s*(\d+)\s*项/)![1]));
-  
+
   // Split the part after the colon
   const listPart = traitString.split(/[：:]/)[1];
   if (!listPart) return null;
@@ -144,7 +144,7 @@ export const parseSkillOptions = (traitString: string): { limit: number; options
 };
 
 export const ALL_SKILLS = [
-  "杂技", "驯兽", "奥秘", "运动", "欺瞒", "历史", "洞悉", "威吓", 
-  "调查", "医药", "自然", "察觉", "表演", "游说", "宗教", "巧手", 
+  "杂技", "驯兽", "奥秘", "运动", "欺瞒", "历史", "洞悉", "威吓",
+  "调查", "医药", "自然", "察觉", "表演", "游说", "宗教", "巧手",
   "隐匿", "求生"
 ];
