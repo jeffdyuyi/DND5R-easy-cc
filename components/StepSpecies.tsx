@@ -1,11 +1,11 @@
 
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { CharacterData } from '../types';
 import { SPECIES_DB } from '../data-species';
 import { SPECIES_VARIANTS } from '../utils/characterUtils';
 import WizardLayout from './wizard/WizardLayout';
 import FeatureAccordion from './wizard/FeatureAccordion';
-import { Search, User, Footprints, Eye, AlertCircle, CheckCircle } from 'lucide-react';
+import { User, Footprints, Eye, AlertCircle, CheckCircle } from 'lucide-react';
 
 interface Props {
     character: CharacterData;
@@ -13,18 +13,10 @@ interface Props {
 }
 
 const StepSpecies: React.FC<Props> = ({ character, updateCharacter }) => {
-    const [searchTerm, setSearchTerm] = useState('');
     const selectedSpecies = SPECIES_DB.find(sp => sp.name === character.race);
     const variants = character.race ? SPECIES_VARIANTS[character.race] : undefined;
 
-    // Filter species
-    const filteredSpecies = useMemo(() => {
-        if (!searchTerm) return SPECIES_DB;
-        return SPECIES_DB.filter(sp =>
-            sp.name.includes(searchTerm) ||
-            sp.description?.includes(searchTerm)
-        );
-    }, [searchTerm]);
+
 
     // Auto-reset subrace if race changes  
     useEffect(() => {
@@ -39,21 +31,9 @@ const StepSpecies: React.FC<Props> = ({ character, updateCharacter }) => {
     // === LEFT PANEL: Species Grid ===
     const leftPanel = (
         <div className="p-4 space-y-4">
-            {/* Search */}
-            <div className="relative">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-stone-400" />
-                <input
-                    type="text"
-                    placeholder="搜索种族..."
-                    value={searchTerm}
-                    onChange={e => setSearchTerm(e.target.value)}
-                    className="w-full pl-10 pr-4 py-2 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-dndRed"
-                />
-            </div>
-
             {/* Species Grid */}
             <div className="grid grid-cols-3 gap-3">
-                {filteredSpecies.map(sp => (
+                {SPECIES_DB.map(sp => (
                     <button
                         key={sp.id}
                         onClick={() => updateCharacter({ race: sp.name, subRace: '' })}

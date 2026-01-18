@@ -1,5 +1,5 @@
 
-import React, { useState, useMemo } from 'react';
+import React, { useMemo } from 'react';
 import { CLASSES, CLASS_DB } from '../data';
 import { CharacterData, ClassItem } from '../types';
 import { SUBCLASS_DB } from '../data-subclasses';
@@ -7,7 +7,7 @@ import WizardLayout from './wizard/WizardLayout';
 import FeatureAccordion from './wizard/FeatureAccordion';
 import { parseSkillOptions, ALL_SKILLS } from '../utils/characterUtils';
 import {
-  Search, Plus, Minus, Sword, Wand2, Shield, Cross,
+  Plus, Minus, Sword, Wand2, Shield, Cross,
   Music, Leaf, Flame, Moon, Skull, Sparkles, CheckCircle, AlertCircle
 } from 'lucide-react';
 
@@ -33,14 +33,9 @@ const CLASS_ICONS: Record<string, React.ReactNode> = {
 };
 
 const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
-  const [searchTerm, setSearchTerm] = useState('');
   const selectedClass: ClassItem | undefined = character.className ? CLASSES[character.className] : undefined;
 
-  // Filter classes
-  const filteredClasses = useMemo(() => {
-    if (!searchTerm) return CLASS_DB;
-    return CLASS_DB.filter(c => c.name.includes(searchTerm) || c.description?.includes(searchTerm));
-  }, [searchTerm]);
+
 
   // Get subclasses for selected class
   const availableSubclasses = useMemo(() => {
@@ -91,21 +86,26 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
   // === LEFT PANEL: Class Selection ===
   const leftPanel = (
     <div className="p-4 space-y-4">
-      {/* Search */}
-      <div className="relative">
-        <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-stone-400" />
-        <input
-          type="text"
-          placeholder="搜索职业..."
-          value={searchTerm}
-          onChange={e => setSearchTerm(e.target.value)}
-          className="w-full pl-10 pr-4 py-2 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-dndRed"
-        />
+      {/* Level Control - 移到顶部 */}
+      <div className="bg-gradient-to-r from-amber-50 to-amber-100 p-4 rounded-lg border border-amber-200">
+        <div className="flex items-center justify-between">
+          <span className="font-bold text-stone-700">角色等级</span>
+          <div className="flex items-center gap-3">
+            <button onClick={decrementLevel} disabled={character.level <= 1} className="w-8 h-8 rounded-lg bg-white border border-stone-300 hover:bg-stone-50 disabled:opacity-50 flex items-center justify-center shadow-sm">
+              <Minus className="w-4 h-4" />
+            </button>
+            <span className="w-10 text-center font-black text-2xl text-amber-700">{character.level}</span>
+            <button onClick={incrementLevel} disabled={character.level >= 20} className="w-8 h-8 rounded-lg bg-white border border-stone-300 hover:bg-stone-50 disabled:opacity-50 flex items-center justify-center shadow-sm">
+              <Plus className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+        <div className="mt-2 text-xs text-stone-500">熟练加值: +{proficiencyBonus}</div>
       </div>
 
       {/* Class Grid */}
       <div className="grid grid-cols-3 gap-3">
-        {filteredClasses.map(cls => (
+        {CLASS_DB.map(cls => (
           <button
             key={cls.id}
             onClick={() => updateCharacter({ className: cls.name, subclass: '', skillMastery: {} })}
@@ -131,7 +131,7 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
 
       {/* Selected Class Summary (if any) */}
       {selectedClass && (
-        <div className="mt-6 p-4 bg-white rounded-lg border-2 border-dndRed shadow-md">
+        <div className="mt-4 p-4 bg-white rounded-lg border-2 border-dndRed shadow-md">
           <div className="flex items-center gap-4">
             <div className="text-dndRed">
               {CLASS_ICONS[selectedClass.name] || <Sparkles className="w-12 h-12" />}
@@ -139,17 +139,6 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
             <div className="flex-1">
               <div className="font-bold text-lg text-stone-800">{selectedClass.name}</div>
               <div className="text-xs text-stone-500">已选择</div>
-            </div>
-            {/* Level Control */}
-            <div className="flex items-center gap-2">
-              <span className="text-xs text-stone-500">等级</span>
-              <button onClick={decrementLevel} disabled={character.level <= 1} className="w-7 h-7 rounded bg-stone-200 hover:bg-stone-300 disabled:opacity-50 flex items-center justify-center">
-                <Minus className="w-4 h-4" />
-              </button>
-              <span className="w-8 text-center font-bold text-lg">{character.level}</span>
-              <button onClick={incrementLevel} disabled={character.level >= 20} className="w-7 h-7 rounded bg-stone-200 hover:bg-stone-300 disabled:opacity-50 flex items-center justify-center">
-                <Plus className="w-4 h-4" />
-              </button>
             </div>
           </div>
 

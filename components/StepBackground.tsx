@@ -5,12 +5,22 @@ import { BACKGROUND_DB } from '../data-backgrounds';
 import { FEAT_DB } from '../data-feats';
 import WizardLayout from './wizard/WizardLayout';
 import FeatureAccordion from './wizard/FeatureAccordion';
-import { Search, Star, Book, Wrench, AlertCircle, CheckCircle } from 'lucide-react';
+import { Star, Book, Wrench, AlertCircle, CheckCircle } from 'lucide-react';
 
 interface Props {
     character: CharacterData;
     updateCharacter: (updates: Partial<CharacterData>) => void;
 }
+
+// 属性名称映射（中文到英文键名）
+const ABILITY_NAME_TO_KEY: Record<string, keyof AbilityScores> = {
+    "力量": "strength",
+    "敏捷": "dexterity",
+    "体质": "constitution",
+    "智力": "intelligence",
+    "感知": "wisdom",
+    "魅力": "charisma"
+};
 
 const ABILITY_LABELS: Record<keyof AbilityScores, string> = {
     strength: "力量", dexterity: "敏捷", constitution: "体质",
@@ -18,7 +28,6 @@ const ABILITY_LABELS: Record<keyof AbilityScores, string> = {
 };
 
 const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
-    const [searchTerm, setSearchTerm] = useState('');
     const selectedBackground = BACKGROUND_DB.find(bg => bg.name === character.background);
     const selectedFeat = selectedBackground ? FEAT_DB.find(f => f.name === selectedBackground.feat) : undefined;
 
@@ -30,17 +39,16 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
         ability3: keyof AbilityScores | '';
     }>({ ability1: '', ability2: '', ability3: '' });
 
-    const abilityOptions = Object.entries(ABILITY_LABELS).map(([k, v]) => ({ key: k as keyof AbilityScores, label: v }));
 
-    // Filter backgrounds
-    const filteredBackgrounds = useMemo(() => {
-        if (!searchTerm) return BACKGROUND_DB;
-        return BACKGROUND_DB.filter(bg =>
-            bg.name.includes(searchTerm) ||
-            bg.description?.includes(searchTerm) ||
-            bg.feat?.includes(searchTerm)
-        );
-    }, [searchTerm]);
+    // 根据背景限制受允许的属性选项
+    const allowedAbilityOptions = useMemo(() => {
+        if (!selectedBackground) return [];
+        // 将背景的 abilityScores 中文名称转换为英文键
+        return selectedBackground.abilityScores
+            .map(name => ABILITY_NAME_TO_KEY[name])
+            .filter((key): key is keyof AbilityScores => !!key)
+            .map(key => ({ key, label: ABILITY_LABELS[key] }));
+    }, [selectedBackground]);
 
     // Sync ASI with character
     useEffect(() => {
@@ -85,21 +93,9 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
     // === LEFT PANEL: Background List ===
     const leftPanel = (
         <div className="p-4 space-y-4">
-            {/* Search */}
-            <div className="relative">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-stone-400" />
-                <input
-                    type="text"
-                    placeholder="搜索背景..."
-                    value={searchTerm}
-                    onChange={e => setSearchTerm(e.target.value)}
-                    className="w-full pl-10 pr-4 py-2 border border-stone-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-dndRed"
-                />
-            </div>
-
             {/* Background List */}
             <div className="space-y-2 max-h-[600px] overflow-y-auto">
-                {filteredBackgrounds.map(bg => (
+                {BACKGROUND_DB.map(bg => (
                     <button
                         key={bg.id}
                         onClick={() => updateCharacter({ background: bg.name })}
@@ -186,7 +182,7 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
                                     className="w-full p-2 border border-stone-300 rounded-lg font-medium"
                                 >
                                     <option value="">-- 选择 --</option>
-                                    {abilityOptions.map(o => (
+                                    {allowedAbilityOptions.map(o => (
                                         <option key={o.key} value={o.key} disabled={o.key === selectedAbilities.ability2 || o.key === selectedAbilities.ability3}>
                                             {o.label}
                                         </option>
@@ -202,7 +198,7 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
                                     className="w-full p-2 border border-stone-300 rounded-lg font-medium"
                                 >
                                     <option value="">-- 选择 --</option>
-                                    {abilityOptions.map(o => (
+                                    {allowedAbilityOptions.map(o => (
                                         <option key={o.key} value={o.key} disabled={o.key === selectedAbilities.ability1 || o.key === selectedAbilities.ability3}>
                                             {o.label}
                                         </option>
@@ -219,7 +215,7 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
                                         className="w-full p-2 border border-stone-300 rounded-lg font-medium"
                                     >
                                         <option value="">-- 选择 --</option>
-                                        {abilityOptions.map(o => (
+                                        {allowedAbilityOptions.map(o => (
                                             <option key={o.key} value={o.key} disabled={o.key === selectedAbilities.ability1 || o.key === selectedAbilities.ability2}>
                                                 {o.label}
                                             </option>
