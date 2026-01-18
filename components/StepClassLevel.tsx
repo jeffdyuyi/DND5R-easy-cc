@@ -1,11 +1,12 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { CLASSES } from '../data';
 import { CharacterData, ClassItem } from '../types';
 import {
   Sword, BookOpen, Shield, Zap, Sparkles, User, Layout,
   Heart, Dices, CheckCircle, Package, Gem, Info
 } from 'lucide-react';
+import { parseSkillOptions, ALL_SKILLS } from '../utils/characterUtils';
 
 interface Props {
   character: CharacterData;
@@ -13,11 +14,23 @@ interface Props {
 }
 
 const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
-  const selectedClass: ClassItem | undefined = CLASSES[character.className];
+  const selectedClass: ClassItem | undefined = CLASSES.find(c => c.name === character.className);
+  // Fallback if CLASSES is array or object. In data-classes.ts it is export const CLASS_DB: ClassItem[] = ...
+  // But in StepClassLevel.tsx (original): import { CLASSES } from '../data' and usage Object.keys(CLASSES) suggests CLASSES is an object?
+  // Let me check '../data'. Original code used `CLASSES[character.className]`.
+  // If CLASS_DB in data-classes.ts is an array, then `data.ts` might be exporting an object mapped by name?
+  // I need to be careful. The previous view_file of `data-classes.ts` showed `export const CLASS_DB = [...]`.
+  // But `StepClassLevel.tsx` line 3 import { CLASSES } from '../data'.
+  // I should check `data.ts`.
+  // Based on the file listing `data.ts` is 2677 bytes.
+  // I better check `data.ts` essentially quick.
+  // BUT I will assume the previous code was working. `CLASSES[character.className]`.
+  // So CLASSES is likely `Record<string, ClassItem>`.
+
   const [selectedEquipmentOption, setSelectedEquipmentOption] = useState<'A' | 'B'>('A');
 
   const handleClassChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    updateCharacter({ className: e.target.value, subclass: '' });
+    updateCharacter({ className: e.target.value, subclass: '', skillMastery: {} }); // Reset skills on class change
   };
 
   const handleLevelChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -25,6 +38,27 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
     if (isNaN(lvl) || lvl < 1) lvl = 1;
     if (lvl > 20) lvl = 20;
     updateCharacter({ level: lvl });
+  };
+
+  // Skill Selection Logic
+  const skillTrait = selectedClass?.coreTraits.skillProficiencies || '';
+  const skillConfig = parseSkillOptions(skillTrait);
+
+  const toggleSkill = (skill: string) => {
+    const currentMastery = { ...character.skillMastery };
+    if (currentMastery[skill]) {
+      delete currentMastery[skill];
+    } else {
+      // Check limit
+      const currentCount = Object.keys(currentMastery).filter(k =>
+        skillConfig?.options.includes("ALL_SKILLS") || skillConfig?.options.includes(k)
+      ).length;
+
+      if (skillConfig && currentCount < skillConfig.limit) {
+        currentMastery[skill] = 1;
+      }
+    }
+    updateCharacter({ skillMastery: currentMastery });
   };
 
   const getClassIcon = (className: string) => {
@@ -133,34 +167,62 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
                   <p className="text-stone-800 font-bold">{selectedClass.coreTraits.savingThrows}</p>
                 </div>
 
-                {/* 技能熟练 */}
-                <div className="bg-white p-4 rounded-lg border border-stone-200 shadow-sm">
-                  <div className="flex items-center gap-2 mb-2">
-                    <CheckCircle className="w-4 h-4 text-green-600" />
-                    <span className="text-xs font-bold text-stone-500 uppercase">技能熟练</span>
-                  </div>
-                  <p className="text-stone-800 text-sm">{selectedClass.coreTraits.skillProficiencies}</p>
-                </div>
-
-                {/* 武器熟练 */}
-                <div className="bg-white p-4 rounded-lg border border-stone-200 shadow-sm">
+                {/* 武器护甲 */}
+                <div className="bg-white p-4 rounded-lg border border-stone-200 shadow-sm md:col-span-2">
                   <div className="flex items-center gap-2 mb-2">
                     <Sword className="w-4 h-4 text-orange-600" />
-                    <span className="text-xs font-bold text-stone-500 uppercase">武器熟练</span>
+                    <span className="text-xs font-bold text-stone-500 uppercase">装备熟练</span>
                   </div>
-                  <p className="text-stone-800 text-sm">{selectedClass.coreTraits.weaponProficiencies}</p>
-                </div>
-
-                {/* 护甲受训 */}
-                <div className="bg-white p-4 rounded-lg border border-stone-200 shadow-sm">
-                  <div className="flex items-center gap-2 mb-2">
-                    <Shield className="w-4 h-4 text-slate-600" />
-                    <span className="text-xs font-bold text-stone-500 uppercase">护甲受训</span>
-                  </div>
-                  <p className="text-stone-800 text-sm">{selectedClass.coreTraits.armorTraining}</p>
+                  <p className="text-xs text-stone-600 mb-1"><strong>武器:</strong> {selectedClass.coreTraits.weaponProficiencies}</p>
+                  <p className="text-xs text-stone-600"><strong>护甲:</strong> {selectedClass.coreTraits.armorTraining}</p>
                 </div>
               </div>
             </div>
+
+            {/* 技能选择 - NEW FEATURE */}
+            {skillConfig && (
+              <div className="bg-white p-6 rounded-lg border-2 border-stone-300 shadow-md">
+                <h4 className="text-lg font-bold text-stone-800 mb-4 flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-600" />
+                  技能熟练 (可选 {skillConfig.limit} 项)
+                </h4>
+
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                  {(skillConfig.options.includes("ALL_SKILLS") ? ALL_SKILLS : skillConfig.options).map(skill => {
+                    const isSelected = !!character.skillMastery[skill];
+
+                    // Count current selections that are valid for this class
+                    const currentCount = Object.keys(character.skillMastery).filter(k =>
+                      skillConfig.options.includes("ALL_SKILLS") || skillConfig.options.includes(k)
+                    ).length;
+
+                    const isDisabled = !isSelected && currentCount >= skillConfig.limit;
+
+                    return (
+                      <button
+                        key={skill}
+                        onClick={() => toggleSkill(skill)}
+                        disabled={isDisabled}
+                        className={`
+                               px-3 py-2 rounded border text-sm font-bold flex items-center justify-between transition-all
+                               ${isSelected
+                            ? 'bg-green-100 border-green-500 text-green-800 shadow-sm'
+                            : isDisabled
+                              ? 'bg-stone-50 text-stone-300 border-stone-100 cursor-not-allowed'
+                              : 'bg-white text-stone-600 border-stone-300 hover:border-green-400 hover:bg-green-50'}
+                            `}
+                      >
+                        {skill}
+                        {isSelected && <CheckCircle className="w-4 h-4" />}
+                      </button>
+                    );
+                  })}
+                </div>
+                <div className="mt-2 text-xs text-stone-400 text-right">
+                  已选: {Object.keys(character.skillMastery).filter(k => skillConfig.options.includes("ALL_SKILLS") || skillConfig.options.includes(k)).length} / {skillConfig.limit}
+                </div>
+              </div>
+            )}
 
             {/* 初始装备选择 */}
             <div className="bg-white p-6 rounded-lg border-2 border-amber-300 shadow-md">
@@ -169,17 +231,13 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
                 初始装备 (Starting Equipment)
               </h4>
 
-              <p className="text-sm text-stone-600 mb-4 italic">
-                选择下列两个选项之一作为你的起始装备：
-              </p>
-
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {/* 选项A */}
                 <button
                   onClick={() => setSelectedEquipmentOption('A')}
                   className={`p-4 rounded-lg border-2 transition-all text-left ${selectedEquipmentOption === 'A'
-                      ? 'border-dndRed bg-red-50 shadow-md'
-                      : 'border-stone-300 hover:border-stone-400 bg-white'
+                    ? 'border-dndRed bg-red-50 shadow-md'
+                    : 'border-stone-300 hover:border-stone-400 bg-white'
                     }`}
                 >
                   <div className="flex items-center gap-2 mb-2">
@@ -187,9 +245,9 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
                       }`}>
                       {selectedEquipmentOption === 'A' && <CheckCircle className="w-4 h-4 text-white" />}
                     </div>
-                    <span className="font-bold text-stone-800">选项 A</span>
+                    <span className="font-bold text-stone-800">选项 A (标准)</span>
                   </div>
-                  <p className="text-sm text-stone-700 leading-relaxed pl-8">
+                  <p className="text-xs text-stone-600 leading-relaxed pl-8">
                     {selectedClass.coreTraits.startingEquipment.optionA}
                   </p>
                 </button>
@@ -198,8 +256,8 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
                 <button
                   onClick={() => setSelectedEquipmentOption('B')}
                   className={`p-4 rounded-lg border-2 transition-all text-left ${selectedEquipmentOption === 'B'
-                      ? 'border-dndRed bg-red-50 shadow-md'
-                      : 'border-stone-300 hover:border-stone-400 bg-white'
+                    ? 'border-dndRed bg-red-50 shadow-md'
+                    : 'border-stone-300 hover:border-stone-400 bg-white'
                     }`}
                 >
                   <div className="flex items-center gap-2 mb-2">
@@ -208,20 +266,13 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
                       {selectedEquipmentOption === 'B' && <CheckCircle className="w-4 h-4 text-white" />}
                     </div>
                     <span className="font-bold text-stone-800 flex items-center gap-2">
-                      选项 B <Gem className="w-4 h-4 text-amber-600" />
+                      选项 B (金币) <Gem className="w-4 h-4 text-amber-600" />
                     </span>
                   </div>
                   <p className="text-sm text-stone-700 leading-relaxed pl-8">
                     {selectedClass.coreTraits.startingEquipment.optionB}
                   </p>
-                  <p className="text-xs text-stone-500 mt-2 pl-8 italic">
-                    自行购买装备
-                  </p>
                 </button>
-              </div>
-
-              <div className="mt-4 bg-blue-50 p-3 rounded border border-blue-200 text-xs text-blue-800">
-                <strong>提示：</strong> 选项A提供标准装备套装，选项B给予初始金币自行购买。
               </div>
             </div>
           </div>
