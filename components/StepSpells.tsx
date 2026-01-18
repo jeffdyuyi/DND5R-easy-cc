@@ -13,7 +13,7 @@ interface Props {
 }
 
 // Feats that grant spells
-const SPELL_GRANTING_FEATS = ['法术入门', '魔法学徒', '学徒仪祭士', '神眷使', '暗影触及'];
+const SPELL_GRANTING_FEATS = ['魔法学徒', '仪式施法者', '妖精触碰', '影界触碰'];
 
 const SPELLCASTING_ABILITIES = [
     { key: 'intelligence', label: '智力 (法师)' },
@@ -37,11 +37,15 @@ const StepSpells: React.FC<Props> = ({ character, updateCharacter }) => {
 
     // Determine spell list based on feat
     const spellListClasses = useMemo(() => {
-        if (character.originFeat?.includes('法术入门')) {
-            return ['牧师', '德鲁伊', '法师']; // Magic Initiate can choose from these
+        if (character.originFeat?.includes('魔法学徒')) {
+            // Respect the list chosen in Background/Feat selection (e.g. "牧师"), or default to all if not set
+            if (featConfig.spellList) {
+                return [featConfig.spellList];
+            }
+            return ['牧师', '德鲁伊', '法师'];
         }
         return [];
-    }, [character.originFeat]);
+    }, [character.originFeat, featConfig.spellList]);
 
     // Filter available cantrips
     const availableCantrips = useMemo(() => {

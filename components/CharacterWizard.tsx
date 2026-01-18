@@ -42,7 +42,7 @@ const CharacterWizard: React.FC<Props> = ({ character, updateCharacter, onComple
 
     const getSpellsStatus = (): StepInfo['status'] => {
       // Check if origin feat requires spells
-      const spellFeats = ['法术入门', '魔法学徒', '学徒仪祭士'];
+      const spellFeats = ['魔法学徒', '仪式施法者', '妖精触碰', '影界触碰'];
       const needsSpells = spellFeats.some(f => character.originFeat?.includes(f));
       if (!needsSpells) return 'complete'; // Skip if no spell feat
 

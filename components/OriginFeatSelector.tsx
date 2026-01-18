@@ -1,6 +1,6 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import { CharacterData } from '../types';
-import { SPELL_DB } from '../data-spells';
+
 import { Sparkles, Music, Wrench, BookOpen, CheckCircle } from 'lucide-react';
 
 interface Props {
@@ -60,98 +60,51 @@ const OriginFeatSelector: React.FC<Props> = ({
         });
     };
 
-    // 魔法学徒相关
-    const spellList = lockedSpellList || featConfig.spellList;
-
-    // 获取可用戏法
-    const availableCantrips = useMemo(() => {
-        if (!spellList) return [];
-        const className = SPELL_LIST_CLASS_MAP[spellList];
-        return SPELL_DB.filter(s => s.level === 0 && s.classes?.includes(className));
-    }, [spellList]);
-
-    // 获取可用一环法术
-    const availableLevel1Spells = useMemo(() => {
-        if (!spellList) return [];
-        const className = SPELL_LIST_CLASS_MAP[spellList];
-        return SPELL_DB.filter(s => s.level === 1 && s.classes?.includes(className));
-    }, [spellList]);
-
     // 渲染魔法学徒选择器
     if (featName === '魔法学徒') {
-        const selectedCantrips = featConfig.cantrips || [];
-        const selectedSpell = featConfig.level1Spell || '';
-        const selectedAbility = featConfig.spellcastingAbility || '';
-
-        const isComplete = selectedCantrips.length >= 2 && selectedSpell && selectedAbility;
+        const spellList = lockedSpellList || featConfig.spellList;
+        const isComplete = !!spellList;
 
         return (
             <div className="space-y-4 p-4 bg-purple-50 rounded-lg border border-purple-200">
                 <div className="flex items-center gap-2 text-purple-800 font-bold">
                     <Sparkles className="w-5 h-5" />
-                    魔法学徒 - {spellList}法术列表
+                    魔法学徒
                     {isComplete && <CheckCircle className="w-4 h-4 text-green-600 ml-auto" />}
                 </div>
 
-                {/* 施法属性选择 */}
-                <div>
-                    <label className="text-sm font-bold text-stone-600 block mb-2">施法属性</label>
-                    <div className="flex gap-2">
-                        {(['intelligence', 'wisdom', 'charisma'] as const).map(ability => (
-                            <button
-                                key={ability}
-                                onClick={() => updateFeatConfig({ spellcastingAbility: ability })}
-                                className={`px-4 py-2 rounded-lg font-bold transition-colors ${selectedAbility === ability
-                                    ? 'bg-purple-600 text-white'
-                                    : 'bg-white border border-stone-300 text-stone-600 hover:bg-stone-50'
-                                    }`}
+                <div className="space-y-4">
+                    {/* 法术列表选择 (如果背景未锁定) */}
+                    {!lockedSpellList ? (
+                        <div>
+                            <label className="text-sm font-bold text-stone-600 block mb-2">选择法术列表来源</label>
+                            <select
+                                value={featConfig.spellList || ''}
+                                onChange={e => updateFeatConfig({ spellList: e.target.value as any })}
+                                className="w-full p-3 border border-stone-300 rounded-lg font-medium focus:ring-2 focus:ring-purple-500 focus:border-transparent"
                             >
-                                {{ intelligence: '智力', wisdom: '感知', charisma: '魅力' }[ability]}
-                            </button>
-                        ))}
-                    </div>
-                </div>
+                                <option value="">-- 请选择 --</option>
+                                {Object.keys(SPELL_LIST_CLASS_MAP).map(cls => (
+                                    <option key={cls} value={cls}>{cls}</option>
+                                ))}
+                            </select>
+                        </div>
+                    ) : (
+                        <div className="text-sm text-purple-700 font-medium">
+                            法术列表来源: {spellList} (由背景决定)
+                        </div>
+                    )}
 
-                {/* 戏法选择 (选2个) */}
-                <div>
-                    <label className="text-sm font-bold text-stone-600 block mb-2">
-                        选择2道戏法 ({selectedCantrips.length}/2)
-                    </label>
-                    <div className="flex flex-wrap gap-2 max-h-40 overflow-y-auto p-2 bg-white rounded border border-stone-200">
-                        {availableCantrips.map(spell => (
-                            <button
-                                key={spell.id}
-                                onClick={() => {
-                                    if (selectedCantrips.includes(spell.name)) {
-                                        updateFeatConfig({ cantrips: selectedCantrips.filter(s => s !== spell.name) });
-                                    } else if (selectedCantrips.length < 2) {
-                                        updateFeatConfig({ cantrips: [...selectedCantrips, spell.name] });
-                                    }
-                                }}
-                                className={`px-3 py-1.5 text-sm rounded-lg font-medium transition-colors ${selectedCantrips.includes(spell.name)
-                                    ? 'bg-purple-600 text-white'
-                                    : 'bg-stone-100 text-stone-600 hover:bg-stone-200'
-                                    }`}
-                            >
-                                {spell.name}
-                            </button>
-                        ))}
+                    {/* 提示信息 */}
+                    <div className="bg-white p-4 rounded border border-purple-100 flex gap-3 transform transition-all hover:scale-[1.02]">
+                        <BookOpen className="w-5 h-5 text-purple-500 flex-shrink-0 mt-0.5" />
+                        <div className="text-sm">
+                            <p className="font-bold text-stone-700 mb-1">前往“法术”步骤配置</p>
+                            <p className="text-stone-500">
+                                请在后续的 <strong>法术</strong> 步骤中选择具体的戏法、一环法术以及施法关键属性。
+                            </p>
+                        </div>
                     </div>
-                </div>
-
-                {/* 一环法术选择 */}
-                <div>
-                    <label className="text-sm font-bold text-stone-600 block mb-2">选择1道一环法术</label>
-                    <select
-                        value={selectedSpell}
-                        onChange={e => updateFeatConfig({ level1Spell: e.target.value })}
-                        className="w-full p-3 border border-stone-300 rounded-lg font-medium"
-                    >
-                        <option value="">-- 选择法术 --</option>
-                        {availableLevel1Spells.map(spell => (
-                            <option key={spell.id} value={spell.name}>{spell.name}</option>
-                        ))}
-                    </select>
                 </div>
             </div>
         );

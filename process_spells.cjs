@@ -56,8 +56,7 @@ function parseCSV(text) {
     return rows;
 }
 
-// Read TS files to get existing IDs to preserve them if possible, though we might just regenerate IDs based on English name if available or Pinyin
-// Actually, let's try to load existing IDs to be safe.
+// Read TS files to get existing IDs to preserve them if possible
 const nameToId = {};
 const idRegex = /id:\s*"([^"]+)",\s*name:\s*"([^"]+)"/g;
 
@@ -89,7 +88,6 @@ const csvContent = fs.readFileSync(csvPath, 'utf8');
 const rows = parseCSV(csvContent);
 
 // Headers: "Name","Source","Page","Level","Casting Time","Duration","School","Range","Components","Classes","Optional/Variant Classes","Text","At Higher Levels"
-// Index mapping
 const HEADER = rows[0];
 const map = {
     name: HEADER.indexOf('Name'),
@@ -101,6 +99,7 @@ const map = {
     range: HEADER.indexOf('Range'),
     comp: HEADER.indexOf('Components'),
     classes: HEADER.indexOf('Classes'),
+    variantClasses: HEADER.indexOf('Optional/Variant Classes'),
     text: HEADER.indexOf('Text'),
     higher: HEADER.indexOf('At Higher Levels')
 };
@@ -124,37 +123,21 @@ const manualMappings = {
     '元素主义': 'elementalism'
 };
 
-function formatDescription(text, higher, level) {
+function formatDescription(text) {
     if (!text) text = "";
-
-    // Bold common keywords
-    // "Hit:", "Save:", "Success:", "Failure:", "Trigger:", "Requirement:"
-    // Chinese equivalents? 
-    // Usually standard Chinese D&D text uses "豁免失败：" or similar but not always consistent.
-    // Let's standard markdown bolding if we see patterns like "**Key:**".
-    // But CSV might not have markdown.
-
-    // Attempt to convert "Key." at start of checks to "**Key.**"
-    // e.g. "Prerequisite." -> "**Prerequisite.**" if English.
-    // For Chinese, maybe "豁免：" -> "**豁免**："
-
-    // Handle Tables
-    // If text contains HTML <table>, convert to Markdown? 
-    // CSV usually has plain text. Table might be represented by lines...
-
-    // Append Higher Levels
-    if (higher && higher !== "0" && higher.trim() !== "") {
-        const header = level === 0 ? '**戏法强化**' : '**升环施法效应**';
-        let higherText = higher.trim();
-        // Remove common prefixes in CSV to avoid duplication
-        higherText = higherText.replace(/^升环施法效应[.:]?\s*/, '');
-        higherText = higherText.replace(/^At Higher Levels[.:]?\s*/i, '');
-
-        // Ensure newlines
-        text += `\n\n${header}: ${higherText}`;
-    }
-
     return text;
+}
+
+function formatHigherLevel(higher, level) {
+    if (!higher || higher === "0" || higher.trim() === "") return "";
+
+    let higherText = higher.trim();
+    // Remove common prefixes in CSV to avoid duplication
+    higherText = higherText.replace(/^升环施法效应[.:：]?\s*/, '');
+    higherText = higherText.replace(/^At Higher Levels[.:]?\s*/i, '');
+    higherText = higherText.replace(/^戏法升级[.:：]?\s*/, '');
+
+    return higherText;
 }
 
 function translateDuration(d) {
@@ -200,7 +183,6 @@ for (let i = 1; i < rows.length; i++) {
     else if (!isNaN(parseInt(levelStr))) level = parseInt(levelStr);
 
     if (level === -1 || isNaN(level)) {
-        // console.log(`Skipping ${name} due to invalid level: ${levelStr}`);
         continue;
     }
 
@@ -208,14 +190,24 @@ for (let i = 1; i < rows.length; i++) {
     if (manualMappings[name]) id = manualMappings[name];
 
     if (!id) {
-        // Generate a random ID to ensure uniqueness but stable-ish? No, random is bad for persistence if we re-run this.
-        // Try to hash name?
-        // Simple hash
         let hash = 0;
         for (let j = 0; j < name.length; j++) hash = (hash << 5) - hash + name.charCodeAt(j);
         id = 'gen-' + Math.abs(hash).toString(36);
-        // console.log(`Generated ID for ${name}: ${id}`);
     }
+
+    // Merge base classes with variant classes
+    let allClasses = [];
+    if (cols[map.classes]) {
+        allClasses = cols[map.classes].split(',').map(s => s.trim()).filter(s => s);
+    }
+    if (cols[map.variantClasses]) {
+        const variantClasses = cols[map.variantClasses].split(',').map(s => s.trim()).filter(s => s);
+        variantClasses.forEach(vc => {
+            if (!allClasses.includes(vc)) allClasses.push(vc);
+        });
+    }
+
+    const higherLevel = formatHigherLevel(cols[map.higher], level);
 
     const spell = {
         id,
@@ -227,8 +219,9 @@ for (let i = 1; i < rows.length; i++) {
         range: cols[map.range].replace(/-尺/g, '尺').replace(/Feet/g, '尺').replace(/Self/g, '自身').replace(/Touch/g, '触及'),
         components: cols[map.comp],
         duration: translateDuration(cols[map.duration]),
-        classes: cols[map.classes] ? cols[map.classes].split(',').map(s => s.trim()).filter(s => s) : [],
-        description: formatDescription(cols[map.text], cols[map.higher], level)
+        classes: allClasses,
+        description: formatDescription(cols[map.text]),
+        higherLevel: higherLevel
     };
 
     if (level >= 0 && level <= 9) {
@@ -238,12 +231,16 @@ for (let i = 1; i < rows.length; i++) {
 
 // Generate Files
 function formatSpell(s) {
-    return `  {
+    let output = `  {
     id: "${s.id}", name: "${s.name}", source: "${s.source}",
     level: ${s.level}, school: "${s.school}", castingTime: "${s.castingTime}", range: "${s.range}", components: "${s.components}", duration: "${s.duration}",
     classes: ${JSON.stringify(s.classes)},
-    description: ${JSON.stringify(s.description)}
-  }`;
+    description: ${JSON.stringify(s.description)}`;
+    if (s.higherLevel) {
+        output += `,\n    higherLevel: ${JSON.stringify(s.higherLevel)}`;
+    }
+    output += `\n  }`;
+    return output;
 }
 
 function generateTS(spells, levelVarName, title) {

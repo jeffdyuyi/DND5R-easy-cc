@@ -14,7 +14,8 @@ export const SPELL_DB_LEVEL_0: SpellItem[] = [
     id: "toll-the-dead", name: "亡者丧钟", source: "PHB'24",
     level: 0, school: "死灵", castingTime: "动作", range: "60 尺", components: "声音, 姿势", duration: "立即",
     classes: ["法师","牧师","邪术师"],
-    description: "你指向范围内你能看到的一个生物，目标附近10英尺内能听到一声悲伤的钟声。目标必须进行一次智力豁免检定，否则受到1d8 坏死伤害。如果目标缺失任何其生命值，它反而受到1d12 坏死伤害。\n\n**戏法强化**: 戏法升级. 当你的等级达到5级（2d8 或 2d12）、11级（3d8 或 3d12）和17级（4d8 或 4d12）时，伤害会增加一个骰子。"
+    description: "你指向范围内你能看到的一个生物，目标附近10英尺内能听到一声悲伤的钟声。目标必须进行一次智力豁免检定，否则受到1d8 坏死伤害。如果目标缺失任何其生命值，它反而受到1d12 坏死伤害。",
+    higherLevel: "当你的等级达到5级（2d8 或 2d12）、11级（3d8 或 3d12）和17级（4d8 或 4d12）时，伤害会增加一个骰子。"
   },
   {
     id: "friends", name: "交友术", source: "PHB'14",
@@ -80,7 +81,8 @@ export const SPELL_DB_LEVEL_0: SpellItem[] = [
     id: "word-of-radiance", name: "光耀祷词", source: "PHB'24",
     level: 0, school: "塑能", castingTime: "动作", range: "自身 (5尺 emanation)", components: "声音, 材料 (一个日爆标记)", duration: "立即",
     classes: ["牧师"],
-    description: "燃烧的辉光从你身上爆发，形成一个5英尺范围的辐射。你在其中能看到的每个你选择的生物必须进行一次体质豁免检定，否则会受到1d6点光耀伤害。\n\n**戏法强化**: 戏法升级. 当你达到5级（4d6），11级（2d6）和17级（3d6）时，damage增加1d6。"
+    description: "燃烧的辉光从你身上爆发，形成一个5英尺范围的辐射。你在其中能看到的每个你选择的生物必须进行一次体质豁免检定，否则会受到1d6点光耀伤害。",
+    higherLevel: "当你达到5级（4d6），11级（2d6）和17级（3d6）时，damage增加1d6。"
   },
   {
     id: "true-strike", name: "克敌机先", source: "PHB'14",
@@ -92,7 +94,8 @@ export const SPELL_DB_LEVEL_0: SpellItem[] = [
     id: "true-strike", name: "克敌机先", source: "PHB'24",
     level: 0, school: "预言", castingTime: "动作", range: "自身", components: "姿势, 材料 (一把你熟练且价值1+铜币的武器)", duration: "立即",
     classes: ["吟游诗人","术士","法师","邪术师"],
-    description: "在魔法洞察的闪现指引下，你使用施法所用的武器进行一次攻击。这次攻击使用你的法术施放能力来决定攻击和伤害骰而不是使用力量或敏捷。如果攻击造成伤害，它可以是辐射伤害或者武器的正常伤害类型（由你选择）。\n\n**戏法强化**: 戏法升级. 无论你造成的是光耀伤害还是武器的正常伤害类型，当你达到5级（1d6）、11级（2d6）和17级（3d6）时，此次攻击会额外造成光耀伤害。"
+    description: "在魔法洞察的闪现指引下，你使用施法所用的武器进行一次攻击。这次攻击使用你的法术施放能力来决定攻击和伤害骰而不是使用力量或敏捷。如果攻击造成伤害，它可以是辐射伤害或者武器的正常伤害类型（由你选择）。",
+    higherLevel: "无论你造成的是光耀伤害还是武器的正常伤害类型，当你达到5级（1d6）、11级（2d6）和17级（3d6）时，此次攻击会额外造成光耀伤害。"
   },
   {
     id: "ray-of-frost", name: "冷冻射线", source: "PHB'14",
@@ -104,7 +107,8 @@ export const SPELL_DB_LEVEL_0: SpellItem[] = [
     id: "ray-of-frost", name: "冷冻射线", source: "PHB'24",
     level: 0, school: "塑能", castingTime: "动作", range: "60 尺", components: "声音, 姿势", duration: "立即",
     classes: ["奇械师","术士","法师"],
-    description: "一道冰冷的蓝白光束直奔范围内的一个生物。对目标进行远程法术攻击。击中时，它受到1d8点寒冷伤害，并且其速度值在你下一回合开始前减少10英尺。\n\n**戏法强化**: 戏法升级. 当你达到5级（4d8）、11级（2d8）和17级（3d8）时，伤害增加1d8。"
+    description: "一道冰冷的蓝白光束直奔范围内的一个生物。对目标进行远程法术攻击。击中时，它受到1d8点寒冷伤害，并且其速度值在你下一回合开始前减少10英尺。",
+    higherLevel: "当你达到5级（4d8）、11级（2d8）和17级（3d8）时，伤害增加1d8。"
   },
   {
     id: "gen-ayissz", name: "创造篝火", source: "XGE",
@@ -146,7 +150,8 @@ export const SPELL_DB_LEVEL_0: SpellItem[] = [
     id: "sacred-flame", name: "圣火术", source: "PHB'24",
     level: 0, school: "塑能", castingTime: "动作", range: "60 尺", components: "声音, 姿势", duration: "立即",
     classes: ["牧师"],
-    description: "类似火焰的光辉降临在你可以看到的范围内的一个生物身上。目标必须成功通过一次敏捷豁免，否则将受到 1d8 点辐射伤害。目标在这次豁免中无法从半掩体掩护 或四分之三掩体掩护 获得任何好处。\n\n**戏法强化**: 戏法升级. 当你达到5级（4d8）、11级（2d8）和17级（3d8）时，伤害增加1d8。"
+    description: "类似火焰的光辉降临在你可以看到的范围内的一个生物身上。目标必须成功通过一次敏捷豁免，否则将受到 1d8 点辐射伤害。目标在这次豁免中无法从半掩体掩护 或四分之三掩体掩护 获得任何好处。",
+    higherLevel: "当你达到5级（4d8）、11级（2d8）和17级（3d8）时，伤害增加1d8。"
   },
   {
     id: "gen-dd2pt", name: "塑土术", source: "XGE",
@@ -181,14 +186,15 @@ export const SPELL_DB_LEVEL_0: SpellItem[] = [
   {
     id: "mind-sliver", name: "心灵之楔", source: "TCE",
     level: 0, school: "惑控", castingTime: "动作", range: "60 尺", components: "声音", duration: "1轮",
-    classes: [],
+    classes: ["术士","法师","邪术师"],
     description: "你将由灵能塑成的迷惘尖刺注入施法距离内一个你可见的生物的心灵。目标必须通过一次智力豁免。豁免失败将受到1d6心灵伤害，并在你的下回合结束前其进行的下一次豁免检定中减去1d4。当你达到特定等级时，该法术的伤害会增加1d6：5级（2d6），11级（3d6），以及17级（4d6）。"
   },
   {
     id: "mind-sliver", name: "心灵之楔", source: "PHB'24",
     level: 0, school: "惑控", castingTime: "动作", range: "60 尺", components: "声音", duration: "立即",
     classes: ["术士","法师","邪术师"],
-    description: "你尝试暂时扰乱你能看到的范围内的一个生物的心智。目标必须成功通过一次智力豁免，否则将受到1d6点心灵伤害，并在其下一轮结束前进行的下一次豁免检定中减去1d4。\n\n**戏法强化**: 戏法升级. 当你达到5级（4d6），11级（2d6）和17级（3d6）时，damage增加1d6。"
+    description: "你尝试暂时扰乱你能看到的范围内的一个生物的心智。目标必须成功通过一次智力豁免，否则将受到1d6点心灵伤害，并在其下一轮结束前进行的下一次豁免检定中减去1d4。",
+    higherLevel: "当你达到5级（4d6），11级（2d6）和17级（3d6）时，damage增加1d6。"
   },
   {
     id: "gen-cj8dr5", name: "思想编码", source: "GGR",
@@ -206,7 +212,8 @@ export const SPELL_DB_LEVEL_0: SpellItem[] = [
     id: "vicious-mockery", name: "恶言相加", source: "PHB'24",
     level: 0, school: "惑控", castingTime: "动作", range: "60 尺", components: "声音", duration: "立即",
     classes: ["吟游诗人"],
-    description: "你向一个你能看到或听到的目标释放一串带有微妙魅力的侮辱。目标必须进行一次感知豁免检定，否则将受到1d6点心灵伤害，并且在其下一回合结束前的下一次攻击检定中获得劣势。\n\n**戏法强化**: 戏法升级. 当你达到5级（4d6），11级（2d6）和17级（3d6）时，damage增加1d6。"
+    description: "你向一个你能看到或听到的目标释放一串带有微妙魅力的侮辱。目标必须进行一次感知豁免检定，否则将受到1d6点心灵伤害，并且在其下一回合结束前的下一次攻击检定中获得劣势。",
+    higherLevel: "当你达到5级（4d6），11级（2d6）和17级（3d6）时，damage增加1d6。"
   },
   {
     id: "gen-f55hn", name: "控火术", source: "XGE",
@@ -236,7 +243,8 @@ export const SPELL_DB_LEVEL_0: SpellItem[] = [
     id: "starry-wisp", name: "星界小精灵", source: "PHB'24",
     level: 0, school: "塑能", castingTime: "动作", range: "60 尺", components: "声音, 姿势", duration: "立即",
     classes: ["吟游诗人","德鲁伊"],
-    description: "你对射程内的一个生物或物体发射一束光线。对目标进行远程法术攻击。命中时，目标受到1d8点辐射伤害，并且在你的下一个回合结束前，它在10英尺范围内发出微光光照，并且不能从隐形状态中获益。\n\n**戏法强化**: 戏法升级. 当你达到5级（4d8）、11级（2d8）和17级（3d8）时，伤害增加1d8。"
+    description: "你对射程内的一个生物或物体发射一束光线。对目标进行远程法术攻击。命中时，目标受到1d8点辐射伤害，并且在你的下一个回合结束前，它在10英尺范围内发出微光光照，并且不能从隐形状态中获益。",
+    higherLevel: "当你达到5级（4d8）、11级（2d8）和17级（3d8）时，伤害增加1d8。"
   },
   {
     id: "shillelagh", name: "橡棍术", source: "PHB'14",
@@ -248,7 +256,8 @@ export const SPELL_DB_LEVEL_0: SpellItem[] = [
     id: "shillelagh", name: "橡棍术", source: "PHB'24",
     level: 0, school: "变化", castingTime: "附赠动作", range: "触及", components: "声音, 姿势, 材料 (槲寄生)", duration: "1分钟",
     classes: ["德鲁伊"],
-    description: "你持有的棍棒或长棍被赋予了自然之力。在持续期间，你可以使用你的施法能力代替力量属性来决定使用该武器进行近战攻击的攻击和伤害骰，并且该武器的伤害骰变为d8。如果攻击造成伤害，它可以是原力伤害或者武器的正常伤害类型（由你选择）。如果你再次施放这个法术，或者你放开武器，法术会提前结束。\n\n**戏法强化**: 戏法升级. 当你达到5级（d10）、11级（d12）和17级（2d6）时，伤害骰会改变。"
+    description: "你持有的棍棒或长棍被赋予了自然之力。在持续期间，你可以使用你的施法能力代替力量属性来决定使用该武器进行近战攻击的攻击和伤害骰，并且该武器的伤害骰变为d8。如果攻击造成伤害，它可以是原力伤害或者武器的正常伤害类型（由你选择）。如果你再次施放这个法术，或者你放开武器，法术会提前结束。",
+    higherLevel: "当你达到5级（d10）、11级（d12）和17级（2d6）时，伤害骰会改变。"
   },
   {
     id: "minor-illusion", name: "次级幻影", source: "PHB'14",
@@ -272,7 +281,8 @@ export const SPELL_DB_LEVEL_0: SpellItem[] = [
     id: "poison-spray", name: "毒气喷溅", source: "PHB'24",
     level: 0, school: "死灵", castingTime: "动作", range: "30 尺", components: "声音, 姿势", duration: "立即",
     classes: ["奇械师","德鲁伊","术士","法师","邪术师"],
-    description: "你对射程内的一个生物喷射有毒雾气。对目标进行远程法术攻击。击中时，目标受到1d12毒素伤害。\n\n**戏法强化**: 戏法升级. 当你达到5级（4d12），11级（2d12）和17级（3d12）时，damage增加1d12。"
+    description: "你对射程内的一个生物喷射有毒雾气。对目标进行远程法术攻击。击中时，目标受到1d12毒素伤害。",
+    higherLevel: "当你达到5级（4d12），11级（2d12）和17级（3d12）时，damage增加1d12。"
   },
   {
     id: "mage-hand", name: "法师之手", source: "PHB'14",
@@ -296,7 +306,8 @@ export const SPELL_DB_LEVEL_0: SpellItem[] = [
     id: "fire-bolt", name: "火焰箭", source: "PHB'24",
     level: 0, school: "塑能", castingTime: "动作", range: "120 尺", components: "声音, 姿势", duration: "立即",
     classes: ["奇械师","术士","法师"],
-    description: "你对射程内的生物或物体投掷一个火焰点。对目标进行远程法术攻击。命中时，目标受到1d10火焰伤害。如果这个法术击中了易燃物体，并且它没有被穿戴或携带，它将开始焚烧。\n\n**戏法强化**: 戏法升级. 当你达到5级（4d10）、11级（2d10）和17级（3d10）时，damage增加1d10。"
+    description: "你对射程内的生物或物体投掷一个火焰点。对目标进行远程法术攻击。命中时，目标受到1d10火焰伤害。如果这个法术击中了易燃物体，并且它没有被穿戴或携带，它将开始焚烧。",
+    higherLevel: "当你达到5级（4d10）、11级（2d10）和17级（3d10）时，damage增加1d10。"
   },
   {
     id: "produce-flame", name: "燃火术", source: "PHB'14",
@@ -308,7 +319,8 @@ export const SPELL_DB_LEVEL_0: SpellItem[] = [
     id: "produce-flame", name: "燃火术", source: "PHB'24",
     level: 0, school: "咒法", castingTime: "附赠动作", range: "自身", components: "声音, 姿势", duration: "10分钟",
     classes: ["德鲁伊"],
-    description: "一道摇曳的火焰出现在你的手中，并在持续时间内保持在那里。当火焰存在时，它不发出热量，也不会点燃任何东西，它在20英尺半径内发出明亮光照，并在额外的20英尺内发出微光光照。如果你再次施放这个法术，它就会结束。直到法术结束，你可以采取一个魔法动作，向距离你60英尺内的生物或物体投掷火焰。进行远程法术攻击。击中时，目标受到1d8火焰伤害。\n\n**戏法强化**: 戏法升级. 当你达到5级（4d8）、11级（2d8）和17级（3d8）时，伤害增加1d8。"
+    description: "一道摇曳的火焰出现在你的手中，并在持续时间内保持在那里。当火焰存在时，它不发出热量，也不会点燃任何东西，它在20英尺半径内发出明亮光照，并在额外的20英尺内发出微光光照。如果你再次施放这个法术，它就会结束。直到法术结束，你可以采取一个魔法动作，向距离你60英尺内的生物或物体投掷火焰。进行远程法术攻击。击中时，目标受到1d8火焰伤害。",
+    higherLevel: "当你达到5级（4d8）、11级（2d8）和17级（3d8）时，伤害增加1d8。"
   },
   {
     id: "shocking-grasp", name: "电爪", source: "PHB'14",
@@ -320,7 +332,8 @@ export const SPELL_DB_LEVEL_0: SpellItem[] = [
     id: "shocking-grasp", name: "电爪", source: "PHB'24",
     level: 0, school: "塑能", castingTime: "动作", range: "触及", components: "声音, 姿势", duration: "立即",
     classes: ["奇械师","术士","法师"],
-    description: "闪电从你身上跳向你试图触碰的生物。对该目标进行一次近战法术攻击。命中时，目标受到1d8闪电伤害，并且直到其下一个回合开始前不能进行机会攻击。\n\n**戏法强化**: 戏法升级. 当你达到5级（4d8）、11级（2d8）和17级（3d8）时，伤害增加1d8。"
+    description: "闪电从你身上跳向你试图触碰的生物。对该目标进行一次近战法术攻击。命中时，目标受到1d8闪电伤害，并且直到其下一个回合开始前不能进行机会攻击。",
+    higherLevel: "当你达到5级（4d8）、11级（2d8）和17级（3d8）时，伤害增加1d8。"
   },
   {
     id: "guidance", name: "神导术", source: "PHB'14",
@@ -344,7 +357,8 @@ export const SPELL_DB_LEVEL_0: SpellItem[] = [
     id: "spare-the-dying", name: "维生术", source: "PHB'24",
     level: 0, school: "死灵", castingTime: "动作", range: "15 尺", components: "声音, 姿势", duration: "立即",
     classes: ["奇械师","德鲁伊","牧师"],
-    description: "选择一个射程内拥有0生命值且未死亡的生物。该生物变得稳重。\n\n**戏法强化**: 戏法升级. 当你达到5级（30英尺）、11级（60英尺）和17级（120英尺）时，射程加倍。"
+    description: "选择一个射程内拥有0生命值且未死亡的生物。该生物变得稳重。",
+    higherLevel: "当你达到5级（30英尺）、11级（60英尺）和17级（120英尺）时，射程加倍。"
   },
   {
     id: "gen-j9vmr", name: "翠炎剑", source: "TCE",
@@ -380,7 +394,8 @@ export const SPELL_DB_LEVEL_0: SpellItem[] = [
     id: "thorn-whip", name: "荆棘之鞭", source: "PHB'24",
     level: 0, school: "变化", castingTime: "动作", range: "30 尺", components: "声音, 姿势, 材料 (带刺植物的茎)", duration: "立即",
     classes: ["奇械师","德鲁伊"],
-    description: "你创造出一根长满荆棘的藤鞭，按照你的命令向射程内的生物猛击。对目标进行一次近战法术攻击。击中时，目标受到1d6点穿刺伤害，如果目标是大型或更小，你可以将其拉近至多10英尺。\n\n**戏法强化**: 戏法升级. 当你达到5级（4d6），11级（2d6）和17级（3d6）时，damage增加1d6。"
+    description: "你创造出一根长满荆棘的藤鞭，按照你的命令向射程内的生物猛击。对目标进行一次近战法术攻击。击中时，目标受到1d6点穿刺伤害，如果目标是大型或更小，你可以将其拉近至多10英尺。",
+    higherLevel: "当你达到5级（4d6），11级（2d6）和17级（3d6）时，damage增加1d6。"
   },
   {
     id: "gen-hhhied", name: "虫群孳生", source: "XGE",
@@ -404,7 +419,8 @@ export const SPELL_DB_LEVEL_0: SpellItem[] = [
     id: "acid-splash", name: "酸液飞溅", source: "PHB'24",
     level: 0, school: "塑能", castingTime: "动作", range: "60 尺", components: "声音, 姿势", duration: "立即",
     classes: ["奇械师","术士","法师"],
-    description: "你在施法距离内一点创造出一颗酸液泡，在该点5尺球状范围内爆发。该球状区域内的每个生物必须通过一次敏捷豁免，否则受到1d6强酸伤害。\n\n**戏法强化**: 戏法升级. 当你达到5级（4d6），11级（2d6）和17级（3d6）时，damage增加1d6。"
+    description: "你在施法距离内一点创造出一颗酸液泡，在该点5尺球状范围内爆发。该球状区域内的每个生物必须通过一次敏捷豁免，否则受到1d6强酸伤害。",
+    higherLevel: "当你达到5级（4d6），11级（2d6）和17级（3d6）时，damage增加1d6。"
   },
   {
     id: "gen-jefbbf", name: "闪电牵引", source: "TCE",
@@ -428,7 +444,8 @@ export const SPELL_DB_LEVEL_0: SpellItem[] = [
     id: "chill-touch", name: "颤栗之触", source: "PHB'24",
     level: 0, school: "死灵", castingTime: "动作", range: "触及", components: "声音, 姿势", duration: "立即",
     classes: ["术士","法师","邪术师"],
-    description: "通过传递坟墓的寒意，对触及范围内的目标进行一次近战法术攻击。击中时，目标受到1d10点亡灵伤害，并且在你的下一个回合结束之前无法恢复生命值。\n\n**戏法强化**: 戏法升级. 当你达到5级（4d10）、11级（2d10）和17级（3d10）时，damage增加1d10。"
+    description: "通过传递坟墓的寒意，对触及范围内的目标进行一次近战法术攻击。击中时，目标受到1d10点亡灵伤害，并且在你的下一个回合结束之前无法恢复生命值。",
+    higherLevel: "当你达到5级（4d10）、11级（2d10）和17级（3d10）时，damage增加1d10。"
   },
   {
     id: "prestidigitation", name: "魔法伎俩", source: "PHB'14",
@@ -446,7 +463,8 @@ export const SPELL_DB_LEVEL_0: SpellItem[] = [
     id: "sorcerous-burst", name: "魔法爆发", source: "PHB'24",
     level: 0, school: "塑能", castingTime: "动作", range: "120 尺", components: "声音, 姿势", duration: "立即",
     classes: ["术士"],
-    description: "你对范围内的一个生物或物体投掷魔法能量。对目标进行远程攻击检定。命中时，目标受到1d8点你选择的类型的伤害：酸、冷、火、闪电、毒素、心灵或雷鸣。如果你在此法术中投掷了一个d8并得到了8点，你可以再投掷一个d8，并将其加到伤害上。当你施放此法术时，你可以加到法术伤害上的这些d8的最大数量等于你的施法能力调整值。\n\n**戏法强化**: 戏法升级. 当你达到5级（4d8）、11级（2d8）和17级（3d8）时，伤害增加1d8。"
+    description: "你对范围内的一个生物或物体投掷魔法能量。对目标进行远程攻击检定。命中时，目标受到1d8点你选择的类型的伤害：酸、冷、火、闪电、毒素、心灵或雷鸣。如果你在此法术中投掷了一个d8并得到了8点，你可以再投掷一个d8，并将其加到伤害上。当你施放此法术时，你可以加到法术伤害上的这些d8的最大数量等于你的施法能力调整值。",
+    higherLevel: "当你达到5级（4d8）、11级（2d8）和17级（3d8）时，伤害增加1d8。"
   },
   {
     id: "gen-nc0ds", name: "魔石术", source: "XGE",
@@ -464,7 +482,8 @@ export const SPELL_DB_LEVEL_0: SpellItem[] = [
     id: "eldritch-blast", name: "魔能爆", source: "PHB'24",
     level: 0, school: "塑能", castingTime: "动作", range: "120 尺", components: "声音, 姿势", duration: "立即",
     classes: ["邪术师"],
-    description: "你投掷出一束噼啪作响的能量。对范围内的一个生物或物体进行远程法术攻击。击中时，目标承受1d10点力量伤害。\n\n**戏法强化**: 戏法升级. 该法术在5级时创造两束光线，11级时创造三束光线，17级时创造四束光线。你可以将光线指向同一目标或不同目标。对于每束光线分别进行攻击检定。"
+    description: "你投掷出一束噼啪作响的能量。对范围内的一个生物或物体进行远程法术攻击。击中时，目标承受1d10点力量伤害。",
+    higherLevel: "该法术在5级时创造两束光线，11级时创造三束光线，17级时创造四束光线。你可以将光线指向同一目标或不同目标。对于每束光线分别进行攻击检定。"
   },
   {
     id: "thunderclap", name: "鸣雷破", source: "XGE",
@@ -476,6 +495,7 @@ export const SPELL_DB_LEVEL_0: SpellItem[] = [
     id: "thunderclap", name: "鸣雷破", source: "PHB'24",
     level: 0, school: "塑能", castingTime: "动作", range: "自身 (5尺 emanation)", components: "姿势", duration: "立即",
     classes: ["吟游诗人","奇械师","德鲁伊","术士","法师","邪术师"],
-    description: "每个位于你周围5英尺范围内的生物必须进行一次体质豁免检定，否则将受到1d6点雷鸣伤害。该法术的雷鸣之声可在100英尺外听见。\n\n**戏法强化**: 戏法升级. 当你达到5级（4d6），11级（2d6）和17级（3d6）时，damage增加1d6。"
+    description: "每个位于你周围5英尺范围内的生物必须进行一次体质豁免检定，否则将受到1d6点雷鸣伤害。该法术的雷鸣之声可在100英尺外听见。",
+    higherLevel: "当你达到5级（4d6），11级（2d6）和17级（3d6）时，damage增加1d6。"
   }
 ];
