@@ -699,3 +699,62 @@ export function getAllSkillSources(character: {
 
     return sources;
 }
+
+// 武器关键词列表
+const WEAPON_KEYWORDS = [
+    '剑', '斧', '锤', '弓', '弩', '矛', '枪', '戟', '鞭', '匕首', '飞镖',
+    '标枪', '镰刀', '连枷', '棍', '杖', '叉', '刀',
+    '巨斧', '手斧', '战斧', '细剑', '长剑', '短剑', '双刀', '弯刀',
+    '战锤', '硬头锤', '长弓', '短弓', '轻弩', '重弩', '长矛', '三叉戟',
+    '木棍', '长棍', '狼牙棒'
+];
+
+// 护甲关键词列表
+const ARMOR_KEYWORDS = [
+    '甲', '盾', '盾牌', '护胸', '护腕',
+    '皮甲', '链甲', '板甲', '鳞甲', '锁甲', '胸甲', '半身甲',
+    '镶钉皮甲', '链甲衫'
+];
+
+/**
+ * 将startingInventory转换为背包分类物品
+ */
+export function convertStartingInventoryToBackpack(
+    startingInventory: { name: string; quantity: number; source: string }[]
+): {
+    weapons: { id: string; name: string; quantity: number; cost: string; weight: string; type: '武器'; source: string; description: string }[];
+    armor: { id: string; name: string; quantity: number; cost: string; weight: string; type: '护甲'; source: string; description: string }[];
+    gear: { id: string; name: string; quantity: number; cost: string; weight: string; type: '杂物'; source: string; description: string }[];
+} {
+    const weapons: { id: string; name: string; quantity: number; cost: string; weight: string; type: '武器'; source: string; description: string }[] = [];
+    const armor: { id: string; name: string; quantity: number; cost: string; weight: string; type: '护甲'; source: string; description: string }[] = [];
+    const gear: { id: string; name: string; quantity: number; cost: string; weight: string; type: '杂物'; source: string; description: string }[] = [];
+
+    startingInventory.forEach((item, index) => {
+        const baseItem = {
+            id: `starting-${index}-${Date.now()}`,
+            name: item.name,
+            quantity: item.quantity,
+            cost: '-',
+            weight: '-',
+            source: item.source,
+            description: `来自${item.source}`,
+        };
+
+        // 检查是否为武器
+        if (WEAPON_KEYWORDS.some(kw => item.name.includes(kw))) {
+            weapons.push({ ...baseItem, type: '武器' as const });
+        }
+        // 检查是否为护甲
+        else if (ARMOR_KEYWORDS.some(kw => item.name.includes(kw))) {
+            armor.push({ ...baseItem, type: '护甲' as const });
+        }
+        // 其他归为杂物
+        else {
+            gear.push({ ...baseItem, type: '杂物' as const });
+        }
+    });
+
+    return { weapons, armor, gear };
+}
+

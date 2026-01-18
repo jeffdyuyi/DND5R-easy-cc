@@ -11,6 +11,7 @@ import StepEquipment from './StepEquipment';
 import StepDetails from './StepDetails';
 import StepIdentity from './StepIdentity';
 import WizardStepProgress, { StepInfo } from './wizard/WizardStepProgress';
+import { convertStartingInventoryToBackpack } from '../utils/equipmentUtils';
 
 interface Props {
   character: CharacterData;
@@ -53,22 +54,22 @@ const CharacterWizard: React.FC<Props> = ({ character, updateCharacter, onComple
     };
 
     const getAbilitiesStatus = (): StepInfo['status'] => {
-      const hasAllAbilities = Object.values(character.abilities).every(v => v > 0);
-      return hasAllAbilities ? 'complete' : 'pending';
+      if (!Object.values(character.abilities).every(v => v > 0)) return 'pending';
+      return 'complete';
     };
 
     const getSkillsStatus = (): StepInfo['status'] => {
-      // Skills are auto-populated from class/background, always complete
+      // Skills are auto-populated from class/background, so always complete
       return 'complete';
     };
 
     const getEquipmentStatus = (): StepInfo['status'] => {
-      const choices = character.equipmentChoices;
-      if (!choices?.classChoice || !choices?.backgroundChoice) return 'pending';
+      // Equipment is optional
       return 'complete';
     };
 
     const getDetailsStatus = (): StepInfo['status'] => {
+      // Details are optional
       return 'complete';
     };
 
@@ -96,6 +97,15 @@ const CharacterWizard: React.FC<Props> = ({ character, updateCharacter, onComple
     if (step < totalSteps) {
       setStep(step + 1);
     } else {
+      // 完成时将startingInventory转换到背包系统
+      if (character.startingInventory && character.startingInventory.length > 0) {
+        const { weapons, armor, gear } = convertStartingInventoryToBackpack(character.startingInventory);
+        updateCharacter({
+          inventoryWeapons: [...(character.inventoryWeapons || []), ...weapons],
+          inventoryArmor: [...(character.inventoryArmor || []), ...armor],
+          inventoryGear: [...(character.inventoryGear || []), ...gear],
+        });
+      }
       onComplete();
     }
   };
