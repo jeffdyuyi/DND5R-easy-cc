@@ -3,9 +3,9 @@
 // Structured equipment options for classes and backgrounds
 
 // Note: These imports are available for future use when implementing item lookups
-// import { WEAPON_DB } from '../data-items-weapons';
-// import { ARMOR_DB } from '../data-items-armor';
-// import { GEAR_DB } from '../data-items-gear';
+import { WEAPON_DB } from '../data-items-weapons';
+import { ARMOR_DB } from '../data-items-armor';
+import { GEAR_DB } from '../data-items-gear';
 
 // === Equipment Option Types ===
 
@@ -407,16 +407,16 @@ export const CLASS_EQUIPMENT: Record<string, EquipmentConfig> = {
 // === Background Equipment Data ===
 
 export const BACKGROUND_EQUIPMENT: Record<string, EquipmentConfig> = {
-    '侍祭': {
+    '侍僧': {
         options: [
             {
                 id: 'A',
-                label: '侍祭装备选项 A',
+                label: '侍僧装备选项 A',
                 items: [
-                    { name: '书 (祈祷书)', quantity: 1 },
-                    { name: '书法工具', quantity: 1 },
-                    { name: '羊皮纸', quantity: 10 },
-                    { name: '袍子', quantity: 1 },
+                    { name: '书 (祈祷书)', quantity: 1, fromLibrary: true },
+                    { name: '书法工具', quantity: 1, fromLibrary: true },
+                    { name: '羊皮纸', quantity: 10, fromLibrary: true },
+                    { name: '袍子', quantity: 1, fromLibrary: true },
                 ],
                 subChoices: [
                     {
@@ -433,7 +433,71 @@ export const BACKGROUND_EQUIPMENT: Record<string, EquipmentConfig> = {
             },
             {
                 id: 'B',
-                label: '侍祭装备选项 B (50 GP)',
+                label: '侍僧装备选项 B (50 GP)',
+                items: [],
+                gold: 50,
+            },
+        ],
+    },
+    '工匠': {
+        options: [
+            {
+                id: 'A',
+                label: '工匠装备选项 A',
+                items: [
+                    { name: '小包', quantity: 2, fromLibrary: true },
+                    { name: '旅行者服装', quantity: 1, fromLibrary: true },
+                ],
+                subChoices: [
+                    {
+                        id: 'artisan_tool',
+                        label: '选择工匠工具',
+                        options: [
+                            { value: '炼金工具', label: '炼金工具' },
+                            { value: '酿酒工具', label: '酿酒工具' },
+                            { value: '书法工具', label: '书法工具' },
+                            { value: '木匠工具', label: '木匠工具' },
+                            { value: '制图工具', label: '制图工具' },
+                            { value: '鞋匠工具', label: '鞋匠工具' },
+                            { value: '厨师工具', label: '厨师工具' },
+                            { value: '玻璃吹制工具', label: '玻璃吹制工具' },
+                            { value: '珠宝匠工具', label: '珠宝匠工具' },
+                            { value: '制革匠工具', label: '制革匠工具' },
+                            { value: '石匠工具', label: '石匠工具' },
+                            { value: '绘画工具', label: '绘画工具' },
+                            { value: '陶匠工具', label: '陶匠工具' },
+                            { value: '锻造工具', label: '锻造工具' },
+                            { value: '修补匠工具', label: '修补匠工具' },
+                            { value: '织布工具', label: '织布工具' },
+                            { value: '木雕工具', label: '木雕工具' },
+                        ]
+                    }
+                ],
+                gold: 32,
+            },
+            {
+                id: 'B',
+                label: '工匠装备选项 B (50 GP)',
+                items: [],
+                gold: 50,
+            },
+        ],
+    },
+    '骗子': {
+        options: [
+            {
+                id: 'A',
+                label: '骗子装备选项 A',
+                items: [
+                    { name: '文书伪造工具', quantity: 1, fromLibrary: true },
+                    { name: '戏服', quantity: 1, fromLibrary: true },
+                    { name: '高档服装', quantity: 1, fromLibrary: true },
+                ],
+                gold: 15,
+            },
+            {
+                id: 'B',
+                label: '骗子装备选项 B (50 GP)',
                 items: [],
                 gold: 50,
             },
@@ -445,10 +509,11 @@ export const BACKGROUND_EQUIPMENT: Record<string, EquipmentConfig> = {
                 id: 'A',
                 label: '罪犯装备选项 A',
                 items: [
-                    { name: '匕首', quantity: 2 },
-                    { name: '盗贼工具', quantity: 1 },
-                    { name: '撬棍', quantity: 1 },
-                    { name: '斗篷 (兜帽)', quantity: 1 },
+                    { name: '匕首', quantity: 2, fromLibrary: true },
+                    { name: '盗贼工具', quantity: 1, fromLibrary: true },
+                    { name: '撬棍', quantity: 1, fromLibrary: true },
+                    { name: '小包', quantity: 2, fromLibrary: true },
+                    { name: '旅行者服装', quantity: 1, fromLibrary: true },
                 ],
                 gold: 16,
             },
@@ -466,10 +531,10 @@ export const BACKGROUND_EQUIPMENT: Record<string, EquipmentConfig> = {
                 id: 'A',
                 label: '艺人装备选项 A',
                 items: [
-                    { name: '华服', quantity: 1 },
-                    { name: '镜子 (钢制)', quantity: 1 },
-                    { name: '香水', quantity: 1 },
-                    { name: '化妆工具', quantity: 1 },
+                    { name: '戏服', quantity: 2, fromLibrary: true },
+                    { name: '镜子 (钢面)', quantity: 1, fromLibrary: true },
+                    { name: '香水', quantity: 1, fromLibrary: true },
+                    { name: '旅行者服装', quantity: 1, fromLibrary: true },
                 ],
                 subChoices: [
                     {
@@ -494,23 +559,128 @@ export const BACKGROUND_EQUIPMENT: Record<string, EquipmentConfig> = {
             },
         ],
     },
-    '农夫': {
+    '农民': {
         options: [
             {
                 id: 'A',
-                label: '农夫装备选项 A',
+                label: '农民装备选项 A',
                 items: [
-                    { name: '镰刀', quantity: 1 },
-                    { name: '铲子', quantity: 1 },
-                    { name: '铁锅', quantity: 1 },
-                    { name: '干草叉', quantity: 1 },
-                    { name: '袍子', quantity: 1 },
+                    { name: '镰刀', quantity: 1, fromLibrary: true },
+                    { name: '木匠工具', quantity: 1, fromLibrary: true },
+                    { name: '医疗包', quantity: 1, fromLibrary: true },
+                    { name: '铁壶', quantity: 1, fromLibrary: true },
+                    { name: '铲子', quantity: 1, fromLibrary: true },
+                    { name: '旅行者服装', quantity: 1, fromLibrary: true },
                 ],
                 gold: 30,
             },
             {
                 id: 'B',
-                label: '农夫装备选项 B (50 GP)',
+                label: '农民装备选项 B (50 GP)',
+                items: [],
+                gold: 50,
+            },
+        ],
+    },
+    '警卫': {
+        options: [
+            {
+                id: 'A',
+                label: '警卫装备选项 A',
+                items: [
+                    { name: '矛', quantity: 1, fromLibrary: true },
+                    { name: '轻弩', quantity: 1, fromLibrary: true },
+                    { name: '弩矢', quantity: 20, fromLibrary: true },
+                    { name: '附盖提灯', quantity: 1, fromLibrary: true },
+                    { name: '镣铐', quantity: 1, fromLibrary: true },
+                    { name: '箭袋', quantity: 1, fromLibrary: true },
+                    { name: '旅行者服装', quantity: 1, fromLibrary: true },
+                ],
+                subChoices: [
+                    {
+                        id: 'gaming_set',
+                        label: '选择游戏套组',
+                        options: [
+                            { value: '骰子套组', label: '骰子套组' },
+                            { value: '龙象棋', label: '龙象棋' },
+                            { value: '扑克牌', label: '扑克牌' },
+                            { value: '三龙牌', label: '三龙牌' },
+                        ]
+                    }
+                ],
+                gold: 12,
+            },
+            {
+                id: 'B',
+                label: '警卫装备选项 B (50 GP)',
+                items: [],
+                gold: 50,
+            },
+        ],
+    },
+    '向导': {
+        options: [
+            {
+                id: 'A',
+                label: '向导装备选项 A',
+                items: [
+                    { name: '短弓', quantity: 1, fromLibrary: true },
+                    { name: '箭', quantity: 20, fromLibrary: true },
+                    { name: '制图工具', quantity: 1, fromLibrary: true },
+                    { name: '铺盖', quantity: 1, fromLibrary: true },
+                    { name: '箭袋', quantity: 1, fromLibrary: true },
+                    { name: '帐篷', quantity: 1, fromLibrary: true },
+                    { name: '旅行者服装', quantity: 1, fromLibrary: true },
+                ],
+                gold: 3,
+            },
+            {
+                id: 'B',
+                label: '向导装备选项 B (50 GP)',
+                items: [],
+                gold: 50,
+            },
+        ],
+    },
+    '隐士': {
+        options: [
+            {
+                id: 'A',
+                label: '隐士装备选项 A',
+                items: [
+                    { name: '长棍', quantity: 1, fromLibrary: true },
+                    { name: '草药工具', quantity: 1, fromLibrary: true },
+                    { name: '铺盖', quantity: 1, fromLibrary: true },
+                    { name: '书籍', quantity: 1, fromLibrary: true },
+                    { name: '油灯', quantity: 1, fromLibrary: true },
+                    { name: '燃油', quantity: 3, fromLibrary: true },
+                    { name: '旅行者服装', quantity: 1, fromLibrary: true },
+                ],
+                gold: 16,
+            },
+            {
+                id: 'B',
+                label: '隐士装备选项 B (50 GP)',
+                items: [],
+                gold: 50,
+            },
+        ],
+    },
+    '商人': {
+        options: [
+            {
+                id: 'A',
+                label: '商人装备选项 A',
+                items: [
+                    { name: '领航工具', quantity: 1, fromLibrary: true },
+                    { name: '小包', quantity: 2, fromLibrary: true },
+                    { name: '旅行者服装', quantity: 1, fromLibrary: true },
+                ],
+                gold: 22,
+            },
+            {
+                id: 'B',
+                label: '商人装备选项 B (50 GP)',
                 items: [],
                 gold: 50,
             },
@@ -522,10 +692,21 @@ export const BACKGROUND_EQUIPMENT: Record<string, EquipmentConfig> = {
                 id: 'A',
                 label: '贵族装备选项 A',
                 items: [
-                    { name: '华服', quantity: 1 },
-                    { name: '印章戒指', quantity: 1 },
-                    { name: '香水', quantity: 1 },
-                    { name: '卷轴 (族谱)', quantity: 1 },
+                    { name: '高档服装', quantity: 1, fromLibrary: true },
+                    { name: '图章戒指', quantity: 1, fromLibrary: true },
+                    { name: '香水', quantity: 1, fromLibrary: true },
+                ],
+                subChoices: [
+                    {
+                        id: 'gaming_set',
+                        label: '选择游戏套组',
+                        options: [
+                            { value: '骰子套组', label: '骰子套组' },
+                            { value: '龙象棋', label: '龙象棋' },
+                            { value: '扑克牌', label: '扑克牌' },
+                            { value: '三龙牌', label: '三龙牌' },
+                        ]
+                    }
                 ],
                 gold: 29,
             },
@@ -537,24 +718,66 @@ export const BACKGROUND_EQUIPMENT: Record<string, EquipmentConfig> = {
             },
         ],
     },
-    '贤者': {
+    '智者': {
         options: [
             {
                 id: 'A',
-                label: '贤者装备选项 A',
+                label: '智者装备选项 A',
                 items: [
-                    { name: '书 (历史)', quantity: 1 },
-                    { name: '书 (神秘学)', quantity: 1 },
-                    { name: '羊皮纸', quantity: 10 },
-                    { name: '墨水', quantity: 1 },
-                    { name: '墨水笔', quantity: 1 },
-                    { name: '袍子', quantity: 1 },
+                    { name: '长棍', quantity: 1, fromLibrary: true },
+                    { name: '书法工具', quantity: 1, fromLibrary: true },
+                    { name: '书籍', quantity: 1, fromLibrary: true },
+                    { name: '羊皮纸', quantity: 8, fromLibrary: true },
+                    { name: '长袍', quantity: 1, fromLibrary: true },
                 ],
                 gold: 8,
             },
             {
                 id: 'B',
-                label: '贤者装备选项 B (50 GP)',
+                label: '智者装备选项 B (50 GP)',
+                items: [],
+                gold: 50,
+            },
+        ],
+    },
+    '水手': {
+        options: [
+            {
+                id: 'A',
+                label: '水手装备选项 A',
+                items: [
+                    { name: '匕首', quantity: 1, fromLibrary: true },
+                    { name: '领航工具', quantity: 1, fromLibrary: true },
+                    { name: '麻绳 (50尺)', quantity: 1, fromLibrary: true },
+                    { name: '旅行者服装', quantity: 1, fromLibrary: true },
+                ],
+                gold: 20,
+            },
+            {
+                id: 'B',
+                label: '水手装备选项 B (50 GP)',
+                items: [],
+                gold: 50,
+            },
+        ],
+    },
+    '抄写员': {
+        options: [
+            {
+                id: 'A',
+                label: '抄写员装备选项 A',
+                items: [
+                    { name: '书法工具', quantity: 1, fromLibrary: true },
+                    { name: '高档服装', quantity: 1, fromLibrary: true },
+                    { name: '油灯', quantity: 1, fromLibrary: true },
+                    { name: '燃油', quantity: 3, fromLibrary: true },
+                    { name: '羊皮纸', quantity: 12, fromLibrary: true },
+                ],
+                gold: 23,
+            },
+            {
+                id: 'B',
+                label: '抄写员装备选项 B (50 GP)',
                 items: [],
                 gold: 50,
             },
@@ -566,10 +789,24 @@ export const BACKGROUND_EQUIPMENT: Record<string, EquipmentConfig> = {
                 id: 'A',
                 label: '士兵装备选项 A',
                 items: [
-                    { name: '长矛', quantity: 1 },
-                    { name: '短弓', quantity: 1 },
-                    { name: '箭', quantity: 20 },
-                    { name: '被褥 (小件纪念品)', quantity: 1 },
+                    { name: '矛', quantity: 1, fromLibrary: true },
+                    { name: '短弓', quantity: 1, fromLibrary: true },
+                    { name: '箭', quantity: 20, fromLibrary: true },
+                    { name: '医疗包', quantity: 1, fromLibrary: true },
+                    { name: '箭袋', quantity: 1, fromLibrary: true },
+                    { name: '旅行者服装', quantity: 1, fromLibrary: true },
+                ],
+                subChoices: [
+                    {
+                        id: 'gaming_set',
+                        label: '选择游戏套组',
+                        options: [
+                            { value: '骰子套组', label: '骰子套组' },
+                            { value: '龙象棋', label: '龙象棋' },
+                            { value: '扑克牌', label: '扑克牌' },
+                            { value: '三龙牌', label: '三龙牌' },
+                        ]
+                    }
                 ],
                 gold: 14,
             },
@@ -587,13 +824,25 @@ export const BACKGROUND_EQUIPMENT: Record<string, EquipmentConfig> = {
                 id: 'A',
                 label: '流浪者装备选项 A',
                 items: [
-                    { name: '狼牙棒', quantity: 1 },
-                    { name: '地图 (羊皮纸)', quantity: 1 },
-                    { name: '望远镜', quantity: 1 },
-                    { name: '旅行者服装', quantity: 1 },
-                    { name: '绳索 (大麻绳, 50尺)', quantity: 1 },
+                    { name: '匕首', quantity: 2, fromLibrary: true },
+                    { name: '盗贼工具', quantity: 1, fromLibrary: true },
+                    { name: '铺盖', quantity: 1, fromLibrary: true },
+                    { name: '小包', quantity: 2, fromLibrary: true },
+                    { name: '旅行者服装', quantity: 1, fromLibrary: true },
                 ],
-                gold: 5,
+                subChoices: [
+                    {
+                        id: 'gaming_set',
+                        label: '选择游戏套组',
+                        options: [
+                            { value: '骰子套组', label: '骰子套组' },
+                            { value: '龙象棋', label: '龙象棋' },
+                            { value: '扑克牌', label: '扑克牌' },
+                            { value: '三龙牌', label: '三龙牌' },
+                        ]
+                    }
+                ],
+                gold: 16,
             },
             {
                 id: 'B',
@@ -730,28 +979,63 @@ export function convertStartingInventoryToBackpack(
     const armor: { id: string; name: string; quantity: number; cost: string; weight: string; type: '护甲'; source: string; description: string }[] = [];
     const gear: { id: string; name: string; quantity: number; cost: string; weight: string; type: '杂物'; source: string; description: string }[] = [];
 
+    // Helper to find item in DBs
+    const findItemInDB = (name: string) => {
+        // Try strict match first
+        let item = WEAPON_DB.find(i => i.name === name) ||
+            ARMOR_DB.find(i => i.name === name) ||
+            GEAR_DB.find(i => i.name === name);
+
+        if (item) return item;
+
+        // Try fuzzy match (e.g. "Longsword" matches "Longsword (Versatile)")
+        // but avoid false positives (e.g. "Bow" matching "Longbow")
+        // We iterate through DBs looking for partial matches where the DB name includes the search term
+        item = WEAPON_DB.find(i => i.name.includes(name)) ||
+            ARMOR_DB.find(i => i.name.includes(name)) ||
+            GEAR_DB.find(i => i.name.includes(name));
+
+        return item;
+    };
+
     startingInventory.forEach((item, index) => {
+        // Look up item stats from DB
+        const dbItem = findItemInDB(item.name);
+
         const baseItem = {
-            id: `starting-${index}-${Date.now()}`,
-            name: item.name,
+            id: dbItem ? `${dbItem.id}-${index}-${Date.now()}` : `starting-${index}-${Date.now()}`,
+            name: dbItem ? dbItem.name : item.name,
             quantity: item.quantity,
-            cost: '-',
-            weight: '-',
+            cost: dbItem?.cost || '-',
+            weight: dbItem?.weight || '-',
             source: item.source,
-            description: `来自${item.source}`,
+            description: dbItem?.description || `来自${item.source}`,
+            // Copy other potential properties if they exist
+            ...(dbItem || {})
         };
 
-        // 检查是否为武器
-        if (WEAPON_KEYWORDS.some(kw => item.name.includes(kw))) {
-            weapons.push({ ...baseItem, type: '武器' as const });
+        // Determine Type
+        // If found in DB, use its type. Otherwise guess based on keywords.
+        let type = '杂物';
+        if (dbItem) {
+            if (dbItem.type === '武器') type = '武器';
+            else if (dbItem.type === '护甲') type = '护甲';
+            else type = '杂物';
+        } else {
+            if (WEAPON_KEYWORDS.some(kw => item.name.includes(kw))) type = '武器';
+            else if (ARMOR_KEYWORDS.some(kw => item.name.includes(kw))) type = '护甲';
         }
-        // 检查是否为护甲
-        else if (ARMOR_KEYWORDS.some(kw => item.name.includes(kw))) {
-            armor.push({ ...baseItem, type: '护甲' as const });
-        }
-        // 其他归为杂物
-        else {
-            gear.push({ ...baseItem, type: '杂物' as const });
+
+        // Push to appropriate list
+        if (type === '武器') {
+            // @ts-ignore - Validated by logic above
+            weapons.push({ ...baseItem, type: '武器' });
+        } else if (type === '护甲') {
+            // @ts-ignore
+            armor.push({ ...baseItem, type: '护甲' });
+        } else {
+            // @ts-ignore
+            gear.push({ ...baseItem, type: '杂物' });
         }
     });
 
