@@ -16,7 +16,20 @@ export type Alignment =
 
 // --- Database / Library Types ---
 
-export type ContentSource = '官方规则' | '第三方/原创';
+export type ContentSource =
+  | '官方规则'
+  | '第三方/原创'
+  // PHB versions
+  | "PHB'14" | "PHB'24" | "PHB"
+  // Expansion books
+  | 'XGE' | 'TCE' | 'FTD' | 'SCC' | 'AAG'
+  // Setting books
+  | 'GGR' | 'AI' | 'EGW' | 'MOT' | 'IDR'
+  // Other official sources
+  | 'DMG' | 'TCoE' | 'VGM' | 'SCAG' | 'EE'
+  // Free rules
+  | 'Free Basic Rules (2024)'
+  | string; // Allow any other source as fallback
 
 export interface BaseLibraryItem {
   id: string;

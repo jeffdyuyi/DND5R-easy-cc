@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CharacterData, BackgroundItem, AbilityScores } from '../types';
+import { CharacterData, AbilityScores } from '../types';
 import { User, Book, Sparkles, CheckCircle, AlertCircle, Zap, Package } from 'lucide-react';
 import { BACKGROUND_DB } from '../data-backgrounds';
 import { SPECIES_DB } from '../data-species';
@@ -192,8 +192,8 @@ const StepOrigin: React.FC<Props> = ({ character, updateCharacter }) => {
               <button
                 onClick={() => setAbilityDistribution('2-1')}
                 className={`flex-1 p-3 rounded-lg border-2 font-bold transition-all ${abilityDistribution === '2-1'
-                    ? 'border-amber-600 bg-amber-100 text-amber-900'
-                    : 'border-stone-300 hover:border-stone-400'
+                  ? 'border-amber-600 bg-amber-100 text-amber-900'
+                  : 'border-stone-300 hover:border-stone-400'
                   }`}
               >
                 +2 / +1 模式
@@ -201,8 +201,8 @@ const StepOrigin: React.FC<Props> = ({ character, updateCharacter }) => {
               <button
                 onClick={() => setAbilityDistribution('1-1-1')}
                 className={`flex-1 p-3 rounded-lg border-2 font-bold transition-all ${abilityDistribution === '1-1-1'
-                    ? 'border-amber-600 bg-amber-100 text-amber-900'
-                    : 'border-stone-300 hover:border-stone-400'
+                  ? 'border-amber-600 bg-amber-100 text-amber-900'
+                  : 'border-stone-300 hover:border-stone-400'
                   }`}
               >
                 +1 / +1 / +1 模式
@@ -280,8 +280,8 @@ const StepOrigin: React.FC<Props> = ({ character, updateCharacter }) => {
               onClick={handleApplyBackground}
               disabled={!canApplyBackground()}
               className={`flex-1 py-3 px-6 rounded-lg font-bold text-white transition-all flex items-center justify-center gap-2 ${canApplyBackground()
-                  ? 'bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 shadow-lg'
-                  : 'bg-stone-400 cursor-not-allowed'
+                ? 'bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-700 hover:to-orange-700 shadow-lg'
+                : 'bg-stone-400 cursor-not-allowed'
                 }`}
             >
               <Zap className="w-5 h-5" />

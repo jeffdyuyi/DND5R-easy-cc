@@ -20,12 +20,10 @@ export function getProficiencyBonus(level: number): number {
  * 从职业数据应用默认设置到角色
  */
 export function applyClassDefaults(
-    character: CharacterData,
+    _character: CharacterData,
     classData: ClassItem
 ): Partial<CharacterData> {
-    // 提取技能数量限制（例如："选择2项：运动、杂技..." -> 2）
-    const skillMatch = classData.coreTraits.skillProficiencies.match(/选择(\d+)项/);
-    const skillCount = skillMatch ? parseInt(skillMatch[1]) : 0;
+    // Note: Skill selection is handled in StepClassLevel component
 
     return {
         className: classData.name,

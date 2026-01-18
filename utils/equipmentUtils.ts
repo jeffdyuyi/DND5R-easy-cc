@@ -2,9 +2,10 @@
 // Equipment Data Utilities
 // Structured equipment options for classes and backgrounds
 
-import { WEAPON_DB } from '../data-items-weapons';
-import { ARMOR_DB } from '../data-items-armor';
-import { GEAR_DB } from '../data-items-gear';
+// Note: These imports are available for future use when implementing item lookups
+// import { WEAPON_DB } from '../data-items-weapons';
+// import { ARMOR_DB } from '../data-items-armor';
+// import { GEAR_DB } from '../data-items-gear';
 
 // === Equipment Option Types ===
 

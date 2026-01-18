@@ -34,16 +34,9 @@ const ALL_SKILLS: { name: string; ability: keyof AbilityScores; abbr: string }[]
     { name: '求生', ability: 'wisdom', abbr: '感知' },
 ];
 
-const ABILITY_ABBR: Record<keyof AbilityScores, string> = {
-    strength: '力量',
-    dexterity: '敏捷',
-    constitution: '体质',
-    intelligence: '智力',
-    wisdom: '感知',
-    charisma: '魅力',
-};
+// Note: Skill abbr is already included in ALL_SKILLS array
 
-const StepSkills: React.FC<Props> = ({ character, updateCharacter }) => {
+const StepSkills: React.FC<Props> = ({ character }) => {
     const proficiencyBonus = Math.ceil(character.level / 4) + 1;
 
     // Get proficiency sources
@@ -225,11 +218,11 @@ const StepSkills: React.FC<Props> = ({ character, updateCharacter }) => {
                             </div>
                             <div className="text-center">
                                 <span className={`text-xs px-2 py-0.5 rounded ${skill.ability === 'strength' ? 'bg-red-100 text-red-700' :
-                                        skill.ability === 'dexterity' ? 'bg-green-100 text-green-700' :
-                                            skill.ability === 'constitution' ? 'bg-orange-100 text-orange-700' :
-                                                skill.ability === 'intelligence' ? 'bg-blue-100 text-blue-700' :
-                                                    skill.ability === 'wisdom' ? 'bg-purple-100 text-purple-700' :
-                                                        'bg-pink-100 text-pink-700'
+                                    skill.ability === 'dexterity' ? 'bg-green-100 text-green-700' :
+                                        skill.ability === 'constitution' ? 'bg-orange-100 text-orange-700' :
+                                            skill.ability === 'intelligence' ? 'bg-blue-100 text-blue-700' :
+                                                skill.ability === 'wisdom' ? 'bg-purple-100 text-purple-700' :
+                                                    'bg-pink-100 text-pink-700'
                                     }`}>
                                     {skill.abbr}
                                 </span>

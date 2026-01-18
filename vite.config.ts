@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/---dnd5r------/', // GitHub Pages 部署路径
+  base: '/DND5R-easy-cc/', // GitHub Pages 部署路径
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
