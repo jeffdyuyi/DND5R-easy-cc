@@ -98,6 +98,7 @@ export const SpellListCard: React.FC<SpellListCardProps> = ({
 
 const SpellPicker = ({ level, onSelect }: { level: number, onSelect: (spell: SpellItem) => void }) => {
    const [searchTerm, setSearchTerm] = useState('');
+   const [viewMode, setViewMode] = useState<'level' | 'source'>('level'); // 新增浏览模式
 
    // Get unique sources
    const allSources = Array.from(new Set(SPELL_DB.map(s => s.source))).sort();
@@ -110,13 +111,34 @@ const SpellPicker = ({ level, onSelect }: { level: number, onSelect: (spell: Spe
       );
    };
 
-   const spells = SPELL_DB.filter(s => s.level === level && (
-      s.name.includes(searchTerm) || s.school.includes(searchTerm)
-   ) && selectedSources.includes(s.source));
+   // 法术过滤（按级别和来源）
+   const filteredSpells = SPELL_DB.filter(s => {
+      const matchesLevel = viewMode === 'level' ? s.level === level : true;
+      const matchesSearch = s.name.includes(searchTerm) || s.school.includes(searchTerm);
+      const matchesSource = selectedSources.includes(s.source);
+      return matchesLevel && matchesSearch && matchesSource;
+   });
+
+   // 按出处分组
+   const spellsBySource = filteredSpells.reduce((acc, spell) => {
+      if (!acc[spell.source]) acc[spell.source] = [];
+      acc[spell.source].push(spell);
+      return acc;
+   }, {} as Record<string, SpellItem[]>);
+
+   // 按级别分组（用于出处模式）
+   const spellsByLevel = (spells: SpellItem[]) => {
+      return spells.reduce((acc, spell) => {
+         if (!acc[spell.level]) acc[spell.level] = [];
+         acc[spell.level].push(spell);
+         return acc;
+      }, {} as Record<number, SpellItem[]>);
+   };
 
    return (
       <div className="flex flex-col h-full overflow-hidden bg-stone-50">
          <div className="p-4 border-b border-stone-200 bg-white space-y-3">
+            {/* 搜索和筛选 */}
             <div className="flex gap-2">
                <div className="relative flex-grow">
                   <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-stone-400" />
@@ -137,6 +159,29 @@ const SpellPicker = ({ level, onSelect }: { level: number, onSelect: (spell: Spe
                </button>
             </div>
 
+            {/* 浏览模式切换 */}
+            <div className="flex gap-2 bg-stone-100 p-1 rounded-lg">
+               <button
+                  onClick={() => setViewMode('level')}
+                  className={`flex-1 px-3 py-2 text-sm font-bold rounded transition-colors ${viewMode === 'level'
+                        ? 'bg-white text-stone-800 shadow-sm'
+                        : 'text-stone-600 hover:text-stone-800'
+                     }`}
+               >
+                  按环阶浏览
+               </button>
+               <button
+                  onClick={() => setViewMode('source')}
+                  className={`flex-1 px-3 py-2 text-sm font-bold rounded transition-colors ${viewMode === 'source'
+                        ? 'bg-white text-stone-800 shadow-sm'
+                        : 'text-stone-600 hover:text-stone-800'
+                     }`}
+               >
+                  按出处浏览
+               </button>
+            </div>
+
+            {/* 出处筛选器 */}
             {showFilter && (
                <div className="p-3 bg-stone-100 rounded-lg border border-stone-200 animate-fade-in flex flex-wrap gap-2">
                   <button
@@ -151,37 +196,96 @@ const SpellPicker = ({ level, onSelect }: { level: number, onSelect: (spell: Spe
                   >
                      全不选
                   </button>
-                  {allSources.map(src => (
-                     <button
-                        key={src}
-                        onClick={() => toggleSource(src)}
-                        className={`px-2 py-1 text-xs font-bold rounded border transition-colors ${selectedSources.includes(src)
-                           ? 'bg-dndRed text-white border-dndRed'
-                           : 'bg-white text-stone-500 border-stone-300 hover:border-stone-400'
-                           }`}
-                     >
-                        {src}
-                     </button>
-                  ))}
+                  {allSources.map(src => {
+                     const count = SPELL_DB.filter(s => s.source === src).length;
+                     return (
+                        <button
+                           key={src}
+                           onClick={() => toggleSource(src)}
+                           className={`px-2 py-1 text-xs font-bold rounded border transition-colors flex items-center gap-1 ${selectedSources.includes(src)
+                              ? 'bg-dndRed text-white border-dndRed'
+                              : 'bg-white text-stone-500 border-stone-300 hover:border-stone-400'
+                              }`}
+                        >
+                           {src}
+                           <span className="text-[10px] opacity-75">({count})</span>
+                        </button>
+                     );
+                  })}
                </div>
             )}
          </div>
 
-         <div className="flex-grow overflow-y-auto p-4 grid grid-cols-1 md:grid-cols-2 gap-3">
-            {spells.length === 0 ? (
-               <div className="col-span-full text-center text-stone-500 py-12 italic text-lg">
-                  暂无匹配的法术数据。
-                  {selectedSources.length === 0 && <div className="text-sm mt-2 text-stone-400">请至少选择一个来源。</div>}
+         {/* 法术列表 */}
+         <div className="flex-grow overflow-y-auto p-4">
+            {viewMode === 'level' ? (
+               // 按环阶模式（原有逻辑）
+               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {filteredSpells.length === 0 ? (
+                     <div className="col-span-full text-center text-stone-500 py-12 italic text-lg">
+                        暂无匹配的法术数据。
+                        {selectedSources.length === 0 && <div className="text-sm mt-2 text-stone-400">请至少选择一个来源。</div>}
+                     </div>
+                  ) : (
+                     filteredSpells.map(spell => (
+                        <SpellListCard
+                           key={spell.id}
+                           spell={spell}
+                           onClick={() => onSelect(spell)}
+                           actions={<Plus className="w-5 h-5 text-stone-400 hover:text-dndRed" />}
+                        />
+                     ))
+                  )}
                </div>
             ) : (
-               spells.map(spell => (
-                  <SpellListCard
-                     key={spell.id}
-                     spell={spell}
-                     onClick={() => onSelect(spell)}
-                     actions={<Plus className="w-5 h-5 text-stone-400 hover:text-dndRed" />}
-                  />
-               ))
+               // 按出处模式（新增）
+               <div className="space-y-6">
+                  {Object.entries(spellsBySource).length === 0 ? (
+                     <div className="text-center text-stone-500 py-12 italic text-lg">
+                        暂无匹配的法术数据。
+                        {selectedSources.length === 0 && <div className="text-sm mt-2 text-stone-400">请至少选择一个来源。</div>}
+                     </div>
+                  ) : (
+                     Object.entries(spellsBySource).map(([source, spells]) => {
+                        const levelGroups = spellsByLevel(spells);
+                        return (
+                           <div key={source} className="bg-white rounded-lg border-2 border-stone-300 overflow-hidden">
+                              <div className="bg-gradient-to-r from-indigo-600 to-purple-600 px-4 py-3 text-white">
+                                 <h4 className="font-bold text-lg flex items-center gap-2">
+                                    <BookOpen className="w-5 h-5" />
+                                    {source}
+                                    <span className="text-sm opacity-75">({spells.length} 个法术)</span>
+                                 </h4>
+                              </div>
+                              <div className="p-4 space-y-4">
+                                 {Object.entries(levelGroups)
+                                    .sort(([a], [b]) => parseInt(a) - parseInt(b))
+                                    .map(([lvl, levelSpells]) => (
+                                       <div key={lvl}>
+                                          <h5 className="text-sm font-bold text-stone-600 mb-2 flex items-center gap-2">
+                                             <span className="bg-stone-200 px-2 py-1 rounded">
+                                                {lvl === '0' ? '戏法' : `${lvl}环`}
+                                             </span>
+                                             <span className="text-xs text-stone-400">({levelSpells.length})</span>
+                                          </h5>
+                                          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                             {levelSpells.map(spell => (
+                                                <SpellListCard
+                                                   key={spell.id}
+                                                   spell={spell}
+                                                   onClick={() => onSelect(spell)}
+                                                   actions={<Plus className="w-5 h-5 text-stone-400 hover:text-dndRed" />}
+                                                />
+                                             ))}
+                                          </div>
+                                       </div>
+                                    ))}
+                              </div>
+                           </div>
+                        );
+                     })
+                  )}
+               </div>
             )}
          </div>
       </div>
