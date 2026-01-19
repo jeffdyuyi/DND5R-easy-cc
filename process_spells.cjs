@@ -125,6 +125,51 @@ const manualMappings = {
 
 function formatDescription(text) {
     if (!text) text = "";
+
+    // 1. 效应名称加粗: 匹配 "中文名English" 后跟标点的模式
+    // 例如: "埋葬Burial。" -> "**埋葬**。"
+    // 例如: "锁链Chaining。" -> "**锁链**。"
+    text = text.replace(/([一-龥]+)([A-Za-z][A-Za-z\s']+)([。，．,\.]\s*)/g, '**$1**$3');
+
+    // 2. 带括号的效应名也加粗: "微缩牢笼Minimus Containment。"
+    text = text.replace(/([一-龥]+)\s*([A-Z][a-zA-Z\s]+)([。，．,\.])/g, '**$1**$3');
+
+    // 3. 状态条件斜体
+    const statusConditions = [
+        '昏迷', '束缚', '石化', '目盲', '耳聋', '恐慌', '魅惑',
+        '中毒', '麻痹', '震慑', '倒地', '隐形', '力竭', '擒抱',
+        '失能', '瘫痪'
+    ];
+    statusConditions.forEach(status => {
+        // 匹配 "状态" 但不匹配已在加粗中的
+        const regex = new RegExp(`(?<!\\*\\*)${status}(?!\\*\\*)(?=状态|效应|[，。、])`, 'g');
+        text = text.replace(regex, `*${status}*`);
+    });
+
+    // 4. 法术引用斜体: 匹配 "XX术" 模式的法术名
+    // 避免重复处理已经斜体化的内容
+    text = text.replace(/(?<!\*)([一-龥]{2,6}术)(?!\*)/g, (match, spell) => {
+        // 排除一些非法术名的词
+        const excludeWords = ['法术', '戏法', '咒术'];
+        if (excludeWords.includes(spell)) return match;
+        return `*${spell}*`;
+    });
+
+    // 5. 其他常见法术引用
+    const spellRefs = ['反魔法力场', '解除魔法', '高等复原', '造风术', '穿墙术', '昼明术'];
+    spellRefs.forEach(spell => {
+        const regex = new RegExp(`(?<!\\*)${spell}(?!\\*)`, 'g');
+        text = text.replace(regex, `*${spell}*`);
+    });
+
+    // 6. 优化分段：在效应选项前添加换行
+    // 匹配 "**效应名**。" 后面跟着描述，在其前添加换行
+    text = text.replace(/([。！？])\s*(\*\*[^*]+\*\*[。，])/g, '$1\n\n$2');
+
+    // 7. 清理多余空格和换行
+    text = text.replace(/\n{3,}/g, '\n\n');
+    text = text.trim();
+
     return text;
 }
 
@@ -174,7 +219,11 @@ for (let i = 1; i < rows.length; i++) {
     const name = cols[map.name];
     if (!name) continue;
 
-    const source = cols[map.source]; // Keep all sources now
+    const source = cols[map.source];
+
+    // 仅保留 PHB'24 法术
+    if (source !== "PHB'24") continue;
+
     const levelStr = cols[map.level];
 
     let level = -1;

@@ -1,9 +1,10 @@
 
 import React, { useState } from 'react';
 import { CharacterData, SpellItem } from '../types';
-import { Plus, X, BookOpen, Search, Trash2, Info, Flame, Shield, Book, ChevronDown, User } from 'lucide-react';
+import { Plus, X, BookOpen, Search, Trash2, Info, Flame, Shield, Book, ChevronDown, User, Wand2 } from 'lucide-react';
 import { SPELL_DB } from '../data';
 import { SpellDetailView } from './LibraryDetails';
+import { CustomSpellEditor } from './CustomSpellEditor';
 
 interface Props {
    characters: CharacterData[];
@@ -346,6 +347,7 @@ const SpellbookManager: React.FC<Props> = ({ characters, activeCharId, setActive
    const [activeLevelKey, setActiveLevelKey] = useState<string | null>(null);
    const [activeLevelNum, setActiveLevelNum] = useState<number>(0);
    const [activeLevelLabel, setActiveLevelLabel] = useState<string>('');
+   const [customSpellEditorOpen, setCustomSpellEditorOpen] = useState(false);
 
    const [viewingSpell, setViewingSpell] = useState<SpellItem | null>(null);
 
@@ -409,6 +411,18 @@ const SpellbookManager: React.FC<Props> = ({ characters, activeCharId, setActive
       updateCharacter(character.id, {
          spells: { ...character.spells, [levelKey]: newLines.join('\n') }
       });
+   };
+
+   const addCustomSpell = (spell: SpellItem) => {
+      if (!activeLevelKey || !character) return;
+      const currentText = character.spells[activeLevelKey as keyof typeof character.spells] || '';
+      const separator = currentText.length > 0 ? (currentText.endsWith('\n') ? '' : '\n') : '';
+      const newEntry = `${separator}• ${spell.name}`;
+
+      updateCharacter(character.id, {
+         spells: { ...character.spells, [activeLevelKey]: currentText + newEntry }
+      });
+      setCustomSpellEditorOpen(false);
    };
 
    const SPELL_LEVELS = [
@@ -585,9 +599,17 @@ const SpellbookManager: React.FC<Props> = ({ characters, activeCharId, setActive
                      <h3 className="font-black text-2xl text-dndRed flex items-center gap-2">
                         <BookOpen className="w-6 h-6" /> 选择{activeLevelLabel}
                      </h3>
-                     <button onClick={() => setPickerOpen(false)} className="p-2 hover:bg-stone-200 rounded-full text-stone-600 transition-colors">
-                        <X className="w-6 h-6" />
-                     </button>
+                     <div className="flex items-center gap-2">
+                        <button
+                           onClick={() => { setPickerOpen(false); setCustomSpellEditorOpen(true); }}
+                           className="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-bold text-sm flex items-center gap-2 transition-colors"
+                        >
+                           <Wand2 className="w-4 h-4" /> 创建自定义法术
+                        </button>
+                        <button onClick={() => setPickerOpen(false)} className="p-2 hover:bg-stone-200 rounded-full text-stone-600 transition-colors">
+                           <X className="w-6 h-6" />
+                        </button>
+                     </div>
                   </div>
                   <SpellPicker level={activeLevelNum} onSelect={addSpell} characterClass={character?.className} />
                </div>
@@ -605,6 +627,19 @@ const SpellbookManager: React.FC<Props> = ({ characters, activeCharId, setActive
                   <div className="p-6 pt-0">
                      <SpellDetailView item={viewingSpell} />
                   </div>
+               </div>
+            </div>
+         )}
+
+         {/* Custom Spell Editor Modal */}
+         {customSpellEditorOpen && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 animate-fade-in">
+               <div className="bg-white rounded-xl shadow-2xl w-full max-w-4xl max-h-[90vh] flex flex-col overflow-hidden border-2 border-stone-800">
+                  <CustomSpellEditor
+                     initialSpell={{ level: activeLevelNum }}
+                     onSave={addCustomSpell}
+                     onCancel={() => setCustomSpellEditorOpen(false)}
+                  />
                </div>
             </div>
          )}
