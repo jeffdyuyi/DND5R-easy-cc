@@ -100,6 +100,8 @@ const TabClass: React.FC<Props> = ({ character, updateCharacter, libraryClasses,
          (f.name.includes(searchTerm) || f.description.includes(searchTerm))
       );
 
+      const selectionKey = activeSelector ? `${activeSelector.level}-${activeSelector.name}` : '';
+
       return (
          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 animate-fade-in">
             <div className="bg-white rounded-xl shadow-2xl w-full max-w-4xl max-h-[85vh] flex flex-col overflow-hidden border-2 border-stone-800">
@@ -151,8 +153,8 @@ const TabClass: React.FC<Props> = ({ character, updateCharacter, libraryClasses,
                            </ul>
 
                            {/* Resilient Feat Configuration */}
-                           {selectedFeatData.name === "强健身心" && (
-                              <div className="mt-2 p-2 bg-stone-100 rounded border border-stone-200">
+                           {feat.name === "强健身心" && (
+                              <div className="mt-2 p-2 bg-stone-100 rounded border border-stone-200" onClick={(e) => e.stopPropagation()}>
                                  <span className="text-xs font-bold text-stone-600 block mb-2">选择强健身心属性 (及豁免熟练):</span>
                                  <div className="flex flex-wrap gap-2">
                                     {['力量', '敏捷', '体质', '智力', '感知', '魅力'].map(attr => {
@@ -161,7 +163,11 @@ const TabClass: React.FC<Props> = ({ character, updateCharacter, libraryClasses,
                                        return (
                                           <button
                                              key={attr}
-                                             onClick={() => handleResilientSelect(selectionKey, attr)}
+                                             onClick={() => {
+                                                handleResilientSelect(selectionKey, attr);
+                                                // Also trigger selection of the feat itself
+                                                handleFeatSelect(feat);
+                                             }}
                                              className={`px-3 py-1 text-xs font-bold rounded border transition-colors ${isSelected ? 'bg-dndRed text-white border-dndRed' : 'bg-white text-stone-600 border-stone-300 hover:bg-stone-200'
                                                 }`}
                                           >
