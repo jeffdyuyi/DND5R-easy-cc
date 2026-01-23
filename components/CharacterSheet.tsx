@@ -8,7 +8,7 @@ import TabOrigin from './TabOrigin';
 import TabBio from './TabBio';
 import TabInventory from './TabInventory';
 import TabAdventure from './TabAdventure';
-import { 
+import {
   Shield, Activity, Scroll, Crown,
   Backpack, Sword, BookOpen, Skull, ArrowLeft, FileCode
 } from 'lucide-react';
@@ -37,8 +37,8 @@ const TABS = [
   { id: 'adventure', label: '冒险日志', icon: <Sword className="w-4 h-4" /> },
 ];
 
-export const CharacterSheet: React.FC<Props> = ({ 
-  character, 
+export const CharacterSheet: React.FC<Props> = ({
+  character,
   updateCharacter,
   onBack,
   libraryClasses,
@@ -52,7 +52,7 @@ export const CharacterSheet: React.FC<Props> = ({
 
   const generateHTML = () => {
     const proficiencyBonus = getProficiencyBonus(character.level);
-    
+
     const classData = libraryClasses.find(c => c.name === character.className);
     const classString = `${character.className} Lv.${character.level}${character.subclass ? ` (${character.subclass})` : ''}`;
 
@@ -125,7 +125,7 @@ export const CharacterSheet: React.FC<Props> = ({
     <div class="info-box">
       <div class="label-val"><span class="lbl">熟练加值</span><span class="val">+${proficiencyBonus}</span></div>
       <div class="label-val"><span class="lbl">护甲等级 (AC)</span><span class="val">?</span></div>
-      <div class="label-val"><span class="lbl">先攻</span><span class="val">${formatModifier(character.abilities.dexterity, true)}</span></div>
+      <div class="label-val"><span class="lbl">先攻</span><span class="val">${formatModifier(getModifier(character.abilities.dexterity))}</span></div>
       <div class="label-val"><span class="lbl">速度</span><span class="val">30 尺</span></div>
       <div class="detail-text" style="margin-top: 10px;">
         <strong>豁免熟练:</strong> ${classData?.saves.join('、') || '-'}
@@ -199,41 +199,41 @@ export const CharacterSheet: React.FC<Props> = ({
       <div className="bg-white sticky top-0 z-40 border-b border-stone-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center py-3">
-             <div className="flex items-center gap-4">
-                {onBack && (
-                  <button onClick={onBack} className="text-stone-500 hover:text-dndRed flex items-center gap-1 text-sm font-bold">
-                    <ArrowLeft className="w-4 h-4"/> 角色库
-                  </button>
-                )}
-                <div className="h-6 w-px bg-stone-300"></div>
-                <div className="flex items-center gap-2">
-                    <span className="font-bold text-xl text-stone-800">{character.name || "未命名角色"}</span>
-                    <span className="text-sm bg-stone-100 px-2 py-0.5 rounded text-stone-500">Lv {character.level}</span>
-                </div>
-             </div>
-             
-             <div className="flex gap-2">
-                <button 
-                  onClick={generateHTML}
-                  className="text-xs bg-stone-800 hover:bg-stone-700 text-white px-3 py-1.5 rounded font-bold shadow transition-colors border border-stone-900 flex items-center gap-2"
-                >
-                  <FileCode className="w-4 h-4"/> 导出 HTML
+            <div className="flex items-center gap-4">
+              {onBack && (
+                <button onClick={onBack} className="text-stone-500 hover:text-dndRed flex items-center gap-1 text-sm font-bold">
+                  <ArrowLeft className="w-4 h-4" /> 角色库
                 </button>
-                <button 
-                  onClick={() => {
-                    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(character, null, 2));
-                    const downloadAnchorNode = document.createElement('a');
-                    downloadAnchorNode.setAttribute("href", dataStr);
-                    downloadAnchorNode.setAttribute("download", character.name + ".json");
-                    document.body.appendChild(downloadAnchorNode);
-                    downloadAnchorNode.click();
-                    downloadAnchorNode.remove();
-                  }}
-                  className="text-xs bg-yellow-600 hover:bg-yellow-500 text-white px-3 py-1.5 rounded font-bold shadow transition-colors border border-yellow-700 flex items-center gap-2"
-                >
-                  <Scroll className="w-4 h-4"/> 导出 JSON
-                </button>
-             </div>
+              )}
+              <div className="h-6 w-px bg-stone-300"></div>
+              <div className="flex items-center gap-2">
+                <span className="font-bold text-xl text-stone-800">{character.name || "未命名角色"}</span>
+                <span className="text-sm bg-stone-100 px-2 py-0.5 rounded text-stone-500">Lv {character.level}</span>
+              </div>
+            </div>
+
+            <div className="flex gap-2">
+              <button
+                onClick={generateHTML}
+                className="text-xs bg-stone-800 hover:bg-stone-700 text-white px-3 py-1.5 rounded font-bold shadow transition-colors border border-stone-900 flex items-center gap-2"
+              >
+                <FileCode className="w-4 h-4" /> 导出 HTML
+              </button>
+              <button
+                onClick={() => {
+                  const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(character, null, 2));
+                  const downloadAnchorNode = document.createElement('a');
+                  downloadAnchorNode.setAttribute("href", dataStr);
+                  downloadAnchorNode.setAttribute("download", character.name + ".json");
+                  document.body.appendChild(downloadAnchorNode);
+                  downloadAnchorNode.click();
+                  downloadAnchorNode.remove();
+                }}
+                className="text-xs bg-yellow-600 hover:bg-yellow-500 text-white px-3 py-1.5 rounded font-bold shadow transition-colors border border-yellow-700 flex items-center gap-2"
+              >
+                <Scroll className="w-4 h-4" /> 导出 JSON
+              </button>
+            </div>
           </div>
 
           <div className="flex space-x-1 overflow-x-auto scrollbar-hide">
@@ -243,8 +243,8 @@ export const CharacterSheet: React.FC<Props> = ({
                 onClick={() => setActiveTab(tab.id)}
                 className={`
                   flex items-center gap-2 px-4 py-3 text-sm font-bold whitespace-nowrap border-b-4 transition-all
-                  ${activeTab === tab.id 
-                    ? 'border-dndRed text-dndRed bg-stone-50' 
+                  ${activeTab === tab.id
+                    ? 'border-dndRed text-dndRed bg-stone-50'
                     : 'border-transparent hover:bg-stone-50 hover:text-stone-900'}
                 `}
               >
@@ -259,7 +259,7 @@ export const CharacterSheet: React.FC<Props> = ({
       {/* Content */}
       <main className="max-w-7xl mx-auto px-4 py-6">
         <div className="bg-white min-h-[calc(100vh-12rem)] relative animate-fade-in">
-           {renderTabContent()}
+          {renderTabContent()}
         </div>
       </main>
     </div>

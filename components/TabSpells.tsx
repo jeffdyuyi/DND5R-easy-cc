@@ -96,8 +96,9 @@ export const SpellListCard: React.FC<SpellListCardProps> = ({
 
 // --- Helper Components (Moved up to avoid TDZ issues) ---
 
-const SpellPicker = ({ level, onSelect, characterClass }: { level: number, onSelect: (spell: SpellItem) => void, characterClass?: string }) => {
+const SpellPicker = ({ level, onSelect, characterClass, showAllToggle }: { level: number, onSelect: (spell: SpellItem) => void, characterClass?: string, showAllToggle?: boolean }) => {
    const [searchTerm, setSearchTerm] = useState('');
+   const [ignoreClassLimit, setIgnoreClassLimit] = useState(false);
 
    // Sorting State
    const [sortConfig, setSortConfig] = useState<{ key: keyof SpellItem, direction: 'asc' | 'desc' } | null>(null);
@@ -130,7 +131,8 @@ const SpellPicker = ({ level, onSelect, characterClass }: { level: number, onSel
          s.source.toLowerCase().includes(searchTerm.toLowerCase());
       const matchesSource = selectedSources.includes(s.source);
       // 职业过滤：如果指定了角色职业，只显示该职业可用的法术
-      const matchesClass = !characterClass || s.classes?.includes(characterClass);
+      // If ignoreClassLimit is true (Magical Secrets mode), we skip class check
+      const matchesClass = ignoreClassLimit || !characterClass || s.classes?.includes(characterClass);
       return matchesLevel && matchesSearch && matchesSource && matchesClass;
    });
 
@@ -195,8 +197,21 @@ const SpellPicker = ({ level, onSelect, characterClass }: { level: number, onSel
                {filteredSpells.length} / {SPELL_DB.filter(s => s.level === level).length}
             </div>
 
+            {/* Magical Secrets Toggle */}
+            {showAllToggle && (
+               <label className="flex items-center gap-1 cursor-pointer select-none bg-purple-50 px-2 py-1 rounded border border-purple-200">
+                  <input
+                     type="checkbox"
+                     checked={ignoreClassLimit}
+                     onChange={(e) => setIgnoreClassLimit(e.target.checked)}
+                     className="w-3 h-3 text-dndRed rounded focus:ring-dndRed"
+                  />
+                  <span className="text-xs font-bold text-purple-800">全职业 (魔法奥秘)</span>
+               </label>
+            )}
+
             <button
-               onClick={() => { setSearchTerm(''); setSelectedSources(allSources); }}
+               onClick={() => { setSearchTerm(''); setSelectedSources(allSources); setIgnoreClassLimit(false); }}
                className="text-xs font-bold text-stone-600 hover:text-stone-900 px-2"
             >
                重置
@@ -591,7 +606,17 @@ const SpellbookManager: React.FC<Props> = ({ characters, activeCharId, setActive
                         <X className="w-6 h-6" />
                      </button>
                   </div>
-                  <SpellPicker level={activeLevelNum} onSelect={addSpell} characterClass={character?.className} />
+                  <SpellPicker
+                     level={activeLevelNum}
+                     onSelect={addSpell}
+                     characterClass={character?.className}
+                     showAllToggle={
+                        character?.className === '吟游诗人' && (
+                           character.level >= 10 ||
+                           (character.subclass === '逸闻学院' && character.level >= 6)
+                        )
+                     }
+                  />
                </div>
             </div>
          )}

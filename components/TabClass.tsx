@@ -63,6 +63,22 @@ const TabClass: React.FC<Props> = ({ character, updateCharacter, libraryClasses,
       }
    };
 
+   // --- Wrapper for Resilient Logic ---
+   const handleResilientSelect = (selectionKey: string, attr: string) => {
+      updateCharacter({
+         featConfig: {
+            ...character.featConfig,
+            otherFeats: {
+               ...character.featConfig?.otherFeats,
+               [selectionKey]: {
+                  ...character.featConfig?.otherFeats?.[selectionKey],
+                  resilientAttribute: attr
+               }
+            }
+         }
+      });
+   };
+
    // --- Component for Feat Picker Modal ---
    const FeatPickerModal = () => {
       const [searchTerm, setSearchTerm] = useState('');
@@ -133,6 +149,29 @@ const TabClass: React.FC<Props> = ({ character, updateCharacter, libraryClasses,
                               ))}
                               {(feat.benefits || []).length > 2 && <li>...</li>}
                            </ul>
+
+                           {/* Resilient Feat Configuration */}
+                           {selectedFeatData.name === "强健身心" && (
+                              <div className="mt-2 p-2 bg-stone-100 rounded border border-stone-200">
+                                 <span className="text-xs font-bold text-stone-600 block mb-2">选择强健身心属性 (及豁免熟练):</span>
+                                 <div className="flex flex-wrap gap-2">
+                                    {['力量', '敏捷', '体质', '智力', '感知', '魅力'].map(attr => {
+                                       const config = character.featConfig?.otherFeats?.[selectionKey];
+                                       const isSelected = config?.resilientAttribute === attr;
+                                       return (
+                                          <button
+                                             key={attr}
+                                             onClick={() => handleResilientSelect(selectionKey, attr)}
+                                             className={`px-3 py-1 text-xs font-bold rounded border transition-colors ${isSelected ? 'bg-dndRed text-white border-dndRed' : 'bg-white text-stone-600 border-stone-300 hover:bg-stone-200'
+                                                }`}
+                                          >
+                                             {attr}
+                                          </button>
+                                       );
+                                    })}
+                                 </div>
+                              </div>
+                           )}
                         </div>
                      ))}
                   </div>

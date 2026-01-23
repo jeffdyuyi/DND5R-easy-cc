@@ -307,6 +307,7 @@ export interface CharacterData {
       cantrips?: string[];
       spells?: string[];
       choices?: Record<string, string>;
+      resilientAttribute?: string; // For Resilient feat
     }>;
   };
 
