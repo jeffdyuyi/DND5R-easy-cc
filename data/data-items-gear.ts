@@ -1,5 +1,5 @@
 
-import { ItemItem } from './types';
+import { ItemItem } from '../types';
 
 export const GEAR_DB: ItemItem[] = [
   // --- Ammunition (弹药) ---

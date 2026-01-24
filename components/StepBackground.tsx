@@ -1,7 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { CharacterData, AbilityScores } from '../types';
-import { BACKGROUND_DB } from '../data-backgrounds';
-import { FEAT_DB } from '../data-feats';
+import { BACKGROUND_DB, FEAT_DB } from '../data';
 import WizardLayout from './wizard/WizardLayout';
 import FeatureAccordion from './wizard/FeatureAccordion';
 import { Star, Book, Wrench, AlertCircle, CheckCircle } from 'lucide-react';
@@ -54,9 +53,9 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
         if (!selectedBackground) return [];
         // 将背景的 abilityScores 中文名称转换为英文键
         return selectedBackground.abilityScores
-            .map(name => ABILITY_NAME_TO_KEY[name])
-            .filter((key): key is keyof AbilityScores => !!key)
-            .map(key => ({ key, label: ABILITY_LABELS[key] }));
+            .map((name: string) => ABILITY_NAME_TO_KEY[name])
+            .filter((key: any): key is keyof AbilityScores => !!key)
+            .map((key: keyof AbilityScores) => ({ key, label: ABILITY_LABELS[key] }));
     }, [selectedBackground]);
 
     // Sync ASI with character
@@ -80,7 +79,7 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
     useEffect(() => {
         if (selectedBackground) {
             const newSkills = { ...character.skillMastery };
-            selectedBackground.skills.forEach(s => newSkills[s] = 1);
+            selectedBackground.skills.forEach((s: string) => newSkills[s] = 1);
 
             if (character.originFeat !== selectedBackground.feat) {
                 updateCharacter({
@@ -191,7 +190,7 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
                                     className="w-full p-2 border border-stone-300 rounded-lg font-medium"
                                 >
                                     <option value="">-- 选择 --</option>
-                                    {allowedAbilityOptions.map(o => (
+                                    {allowedAbilityOptions.map((o: any) => (
                                         <option key={o.key} value={o.key} disabled={o.key === selectedAbilities.ability2 || o.key === selectedAbilities.ability3}>
                                             {o.label}
                                         </option>
@@ -207,7 +206,7 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
                                     className="w-full p-2 border border-stone-300 rounded-lg font-medium"
                                 >
                                     <option value="">-- 选择 --</option>
-                                    {allowedAbilityOptions.map(o => (
+                                    {allowedAbilityOptions.map((o: any) => (
                                         <option key={o.key} value={o.key} disabled={o.key === selectedAbilities.ability1 || o.key === selectedAbilities.ability3}>
                                             {o.label}
                                         </option>
@@ -224,7 +223,7 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
                                         className="w-full p-2 border border-stone-300 rounded-lg font-medium"
                                     >
                                         <option value="">-- 选择 --</option>
-                                        {allowedAbilityOptions.map(o => (
+                                        {allowedAbilityOptions.map((o: any) => (
                                             <option key={o.key} value={o.key} disabled={o.key === selectedAbilities.ability1 || o.key === selectedAbilities.ability2}>
                                                 {o.label}
                                             </option>
@@ -283,11 +282,11 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
                             )}
                             {selectedFeat.benefits && (
                                 <ul className="space-y-2">
-                                    {selectedFeat.benefits.map((benefit, idx) => (
+                                    {selectedFeat.benefits.map((benefit: string, idx: number) => (
                                         <li key={idx} className="flex gap-2 items-start text-sm text-stone-600">
                                             <Star className="w-4 h-4 text-amber-500 flex-shrink-0 mt-0.5" />
                                             <span>
-                                                {benefit.split('**').map((part, i) =>
+                                                {benefit.split('**').map((part: string, i: number) =>
                                                     i % 2 === 1 ? <strong key={i} className="text-stone-800">{part}</strong> : part
                                                 )}
                                             </span>
@@ -341,7 +340,7 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
             {/* Equipment */}
             <FeatureAccordion title="起始装备" isComplete>
                 <ul className="space-y-1">
-                    {selectedBackground.equipment.map((eq, idx) => (
+                    {selectedBackground.equipment.map((eq: string, idx: number) => (
                         <li key={idx} className="text-sm text-stone-600">{eq}</li>
                     ))}
                 </ul>

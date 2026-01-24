@@ -1,5 +1,5 @@
 
-import { ClassItem } from './types';
+import { ClassItem } from '../types';
 
 export const CLASS_DB: ClassItem[] = [
   {
@@ -55,16 +55,16 @@ export const CLASS_DB: ClassItem[] = [
       { level: 20, name: "原初斗士", description: "力量和体质各增加4点，上限变为25。" }
     ]
   },
-  { 
-    id: "bard-2024", 
-    name: "吟游诗人", 
-    source: "官方规则", 
-    description: "嘴炮无敌\n万金油\n辅助之王\n魔法音乐\n魅力担当", 
+  {
+    id: "bard-2024",
+    name: "吟游诗人",
+    source: "官方规则",
+    description: "嘴炮无敌\n万金油\n辅助之王\n魔法音乐\n魅力担当",
     fullDescription: "你在你的吟游艺术中学会了如何施展法术。参见第 7 章有关施法的规则。\n\n**施法 (Spellcasting)**\n• **戏法**: 你已知 2 个吟游诗人戏法（推荐：舞光术、恶言相加）。4级和10级时各习得一个额外戏法。\n• **法术位**: 长休恢复。参考吟游诗人特性表。\n• **准备法术**: 你准备1环及更高环阶的法术。数量随等级提升（例如1级时4道，推荐：七彩喷射，不谐低语，治愈真言）。每升一级可替换。\n• **施法属性**: 魅力。\n• **法器**: 乐器。\n\n**吟游诗人激励 (Bardic Inspiration)**\n你可以用语言、音乐或舞蹈的形式对他人进行超自然的激励。附赠动作，激励60尺内一名生物，给予一枚d6激励骰。\n• **效果**: 1小时内，该生物在D20检定失败时，可投激励骰并将结果加入，可能变为成功。投掷后消耗。\n• **次数**: 等于魅力调整值（最低1次），长休恢复。\n• **提升**: 5级变d8，10级变d10，15级变d12。",
-    hitDie: "d8", 
-    primaryAbility: "魅力", 
-    saves: ["敏捷", "魅力"], 
-    tags: ["辅助", "施法者", "技能专家"], 
+    hitDie: "d8",
+    primaryAbility: "魅力",
+    saves: ["敏捷", "魅力"],
+    tags: ["辅助", "施法者", "技能专家"],
     coreTraits: {
       primaryAbility: "魅力",
       hitPointDie: "每吟游诗人等级 d8",
@@ -77,8 +77,8 @@ export const CLASS_DB: ClassItem[] = [
         optionB: "90 GP"
       }
     },
-    subclassLevel: 3, 
-    subclasses: [], 
+    subclassLevel: 3,
+    subclasses: [],
     features: [
       { level: 1, name: "吟游诗人激励 (Bardic Inspiration)", description: "你可以使用附赠动作激励他人。该生物在接下来的1小时内，可以在一次d20检定失败时投掷你的诗人骰并加入结果。次数等于魅力调整值，长休恢复。初始骰子为d6。" },
       { level: 1, name: "施法 (Spellcasting)", description: "你学会了操纵魔法之声来施展法术。使用魅力作为施法属性，乐器作为法器。你需要准备法术。" },
@@ -99,18 +99,18 @@ export const CLASS_DB: ClassItem[] = [
       { level: 18, name: "先发激励 (Superior Inspiration)", description: "当你投掷先攻时，若你的诗人激励使用次数不足两次，你重获被消耗的诗人激励使用次数到两次为止。" },
       { level: 19, name: "传奇恩惠", description: "获得一项传奇恩惠专长。推荐法术溯回之恩惠。" },
       { level: 20, name: "创生圣言 (Words of Creation)", description: "你掌握了创生圣言的其中两字：“生”、“死”。因此，你总是准备了法术《律令医疗》和法术《律令死亡》。当你施展这两道法术时，你可以选择第二个生物作为目标，那名生物必须位于第一个目标 10 尺内。" }
-    ] 
+    ]
   },
-  { 
-    id: "cleric-2024", 
-    name: "牧师", 
-    source: "官方规则", 
-    description: "暴力奶妈\n穿甲施法\n神灵代打\n亡灵克星\n全能辅助", 
+  {
+    id: "cleric-2024",
+    name: "牧师",
+    source: "官方规则",
+    description: "暴力奶妈\n穿甲施法\n神灵代打\n亡灵克星\n全能辅助",
     fullDescription: "你通过祈祷，冥想与奉献习得如何施法。牧师法术详见本章后文职业描述中的牧师法术表。\n\n**施法**\n戏法。你已知牧师法术列表中 3 个你选择的戏法。推荐选择神导术，圣火术和奇术。当你获得牧师等级时，你可以将一道已知戏法用另一道牧师戏法替换。\n\n**1 环及以上的准备法术**\n你准备了一系列一环或更高的法术，以供此特性施法使用。初始时，从牧师法术列表选择 4 个一环法术。推荐选择祝福术，疗伤术，光导箭和虔诚护盾。\n当你获得牧师等级时，你能准备的法术数量也会随之提升，如同牧师特性表中准备法术一栏所示。\n\n**施法关键属性**\n感知是你牧师法术的施法关键属性。\n\n**法器**\n你可以使用圣徽作为你牧师法术的法器。",
-    hitDie: "d8", 
-    primaryAbility: "感知", 
-    saves: ["感知", "魅力"], 
-    tags: ["治疗", "施法者", "辅助"], 
+    hitDie: "d8",
+    primaryAbility: "感知",
+    saves: ["感知", "魅力"],
+    tags: ["治疗", "施法者", "辅助"],
     coreTraits: {
       primaryAbility: "感知",
       hitPointDie: "每牧师等级 d8",
@@ -122,9 +122,9 @@ export const CLASS_DB: ClassItem[] = [
         optionA: "链甲衫，盾牌，硬头锤，圣徽，祭司套组，以及 7GP",
         optionB: "110 GP"
       }
-    }, 
-    subclassLevel: 3, 
-    subclasses: [], 
+    },
+    subclassLevel: 3,
+    subclasses: [],
     features: [
       { level: 1, name: "施法 (Spellcasting)", description: "你能够施展牧师法术。感知是你的施法关键属性。" },
       { level: 1, name: "圣职 (Divine Order)", description: "你让自己投身于以下一种由你自己选择的神圣职能：\n\n**保护者**。通过战斗训练，你获得军用武器熟练与重甲受训。\n\n**奇术使**。你从牧师法术列表中学会一道额外的戏法。此外，你与神性的神秘链接使你在智力（奥秘和宗教）检定中获得等同于你感知调整值的加值（最低为 1）。" },
@@ -144,15 +144,15 @@ export const CLASS_DB: ClassItem[] = [
       { level: 20, name: "进阶神圣干预", description: "你能够呼唤更加强大的神圣干预。当你使用神圣干预特性时，你可以在选择法术时选择祈愿术。如果你这样做，你只有在完成 2d4 次长休后才能再次使用神圣干预。" }
     ]
   },
-  { 
-    id: "druid-2024", 
-    name: "德鲁伊", 
-    source: "官方规则", 
-    description: "变身野兽\n自然之怒\n召唤千军\n元素操控\n环保卫士", 
-    hitDie: "d8", 
-    primaryAbility: "感知", 
-    saves: ["智力", "感知"], 
-    tags: ["变形", "施法者", "自然"], 
+  {
+    id: "druid-2024",
+    name: "德鲁伊",
+    source: "官方规则",
+    description: "变身野兽\n自然之怒\n召唤千军\n元素操控\n环保卫士",
+    hitDie: "d8",
+    primaryAbility: "感知",
+    saves: ["智力", "感知"],
+    tags: ["变形", "施法者", "自然"],
     coreTraits: {
       primaryAbility: "感知",
       hitPointDie: "每德鲁伊等级 d8",
@@ -165,8 +165,8 @@ export const CLASS_DB: ClassItem[] = [
         optionB: "50 GP"
       }
     },
-    subclassLevel: 3, 
-    subclasses: [], 
+    subclassLevel: 3,
+    subclasses: [],
     features: [
       { level: 1, name: "德鲁伊语 (Druidic)", description: "你学会德鲁伊语，并可用它留下秘密信息。他人需通过DC15智力（调查）检定才能发现信息。你始终准备“动物交谈术”法术。" },
       { level: 1, name: "原初誓约 (Primal Order)", description: "选择一项神圣角色：\n• 术师 (Magician)：获得一个额外德鲁伊戏法。智力（奥秘或自然）检定获得感知调整值的加值。\n• 卫士 (Warden)：获得军用武器熟练和中甲熟练。" },
@@ -189,16 +189,16 @@ export const CLASS_DB: ClassItem[] = [
       { level: 20, name: "大德鲁伊 (Archdruid)", description: "• 不凋化形：投掷先攻时若无荒野变形次数，获得一次。\n• 自然术使：可将荒野变形次数转化为法术位（1次=2法术环阶，如2次=4环）。每长休一次。\n• 青春永驻：每过10年身体只衰老1年。" }
     ]
   },
-  { 
-    id: "fighter-2024", 
-    name: "战士", 
-    source: "官方规则", 
-    description: "动作如潮\n一秒五刀\n武器大师\n铁皮罐头\n专长收割机", 
+  {
+    id: "fighter-2024",
+    name: "战士",
+    source: "官方规则",
+    description: "动作如潮\n一秒五刀\n武器大师\n铁皮罐头\n专长收割机",
     fullDescription: "你不断磨练你的武艺。你获得1项你选择的战斗风格专长。\n\n**回气 (Second Wind)**\n利用有限的精力与体力重整旗鼓。附赠动作恢复 1d10+战士等级 HP。次数：2（短休/长休恢复）。\n\n**武器精通 (Weapon Mastery)**\n自选3种熟练武器的精通词条（长休可换）。\n\n**动作如潮 (Action Surge)**\n在你的回合中执行一个额外的动作（非魔法）。短休/长休恢复。\n\n**战术思维 (Tactical Mind)**\n属性检定失败时，可消耗1次回气次数，将1d10加到检定结果中。",
-    hitDie: "d10", 
-    primaryAbility: "力量或敏捷", 
-    saves: ["力量", "体质"], 
-    tags: ["近战", "远程", "多面手"], 
+    hitDie: "d10",
+    primaryAbility: "力量或敏捷",
+    saves: ["力量", "体质"],
+    tags: ["近战", "远程", "多面手"],
     coreTraits: {
       primaryAbility: "力量或敏捷",
       hitPointDie: "每战士等级 d10",
@@ -211,8 +211,8 @@ export const CLASS_DB: ClassItem[] = [
         optionB: "155 GP"
       }
     },
-    subclassLevel: 3, 
-    subclasses: [], 
+    subclassLevel: 3,
+    subclasses: [],
     features: [
       { level: 1, name: "战斗风格 (Fighting Style)", description: "获得一项战斗风格专长（推荐防御）。升级时可更换。" },
       { level: 1, name: "回气 (Second Wind)", description: "附赠动作恢复 1d10 + 战士等级 生命值。使用次数：2次（短休恢复）。次数随等级增加。" },
@@ -243,16 +243,16 @@ export const CLASS_DB: ClassItem[] = [
       { level: 20, name: "额外攻击 (3)", description: "攻击动作可以发动四次攻击。" }
     ]
   },
-  { 
-    id: "monk-2024", 
-    name: "武僧", 
-    source: "官方规则", 
-    description: "徒手拆机\n跑得飞快\n震慑控制\n空手接白刃\n气功大师", 
+  {
+    id: "monk-2024",
+    name: "武僧",
+    source: "官方规则",
+    description: "徒手拆机\n跑得飞快\n震慑控制\n空手接白刃\n气功大师",
     fullDescription: "你的武艺修行让你将徒手打击与武僧武器的使用方式烂熟于心。\n**武僧武器**\n包括简易近战武器和拥有轻型词条的军用近战武器。\n\n**武艺**\n未着装任何护甲也没持用盾牌时，如果你徒手或只持用武僧武器，则你获得下列增益：\n• **附赠徒手打击**: 你可以用附赠动作发动一次徒手打击。\n• **武艺骰**: 你使用徒手打击或武僧武器进行攻击时，可以选择用 1d6 骰代替原本的伤害骰。该骰子将随武僧职业等级的提升而增大（5-10级 1d8, 11-16级 1d10, 17-20级 1d12）。\n• **敏捷攻击**: 你使用徒手打击或武僧武器进行攻击时，可以用敏捷代替力量进行攻击检定和伤害掷骰。此外，当你使用徒手打击的擒抱或推撞选项时，你也可以使用你的敏捷代替力量决定豁免 DC。\n\n**无甲防御**\n未着装任何护甲也没持用盾牌时，你的 AC 值等于 10 + 你的敏捷调整值 + 你的感知调整值。",
-    hitDie: "d8", 
-    primaryAbility: "敏捷和感知", 
-    saves: ["力量", "敏捷"], 
-    tags: ["机动", "近战", "徒手"], 
+    hitDie: "d8",
+    primaryAbility: "敏捷和感知",
+    saves: ["力量", "敏捷"],
+    tags: ["机动", "近战", "徒手"],
     coreTraits: {
       primaryAbility: "敏捷与感知",
       hitPointDie: "每武僧等级 d8",
@@ -265,8 +265,8 @@ export const CLASS_DB: ClassItem[] = [
         optionB: "50 GP"
       }
     },
-    subclassLevel: 3, 
-    subclasses: [], 
+    subclassLevel: 3,
+    subclasses: [],
     features: [
       { level: 1, name: "武艺 (Martial Arts)", description: "你可以使用敏捷代替力量进行徒手打击和武僧武器攻击，并造成更多伤害（武艺骰）。你可以用附赠动作发动一次徒手打击。" },
       { level: 1, name: "无甲防御 (Unarmored Defense)", description: "AC = 10 + 敏捷调整值 + 感知调整值。" },
@@ -298,15 +298,15 @@ export const CLASS_DB: ClassItem[] = [
       { level: 20, name: "身心合一 (Body and Mind)", description: "你行满功成，身心性命皆已突破超然境界。你的敏捷和感知属性提高 4 点。现在你这些属性的上限为 25。" }
     ]
   },
-  { 
-    id: "paladin-2024", 
-    name: "圣武士", 
-    source: "官方规则", 
-    description: "至圣斩警告\n灵光护体\n圣疗摸摸\n誓言约束\n爆发真神", 
-    hitDie: "d10", 
-    primaryAbility: "力量和魅力", 
-    saves: ["智慧", "魅力"], 
-    tags: ["坦克", "爆发", "治疗"], 
+  {
+    id: "paladin-2024",
+    name: "圣武士",
+    source: "官方规则",
+    description: "至圣斩警告\n灵光护体\n圣疗摸摸\n誓言约束\n爆发真神",
+    hitDie: "d10",
+    primaryAbility: "力量和魅力",
+    saves: ["智慧", "魅力"],
+    tags: ["坦克", "爆发", "治疗"],
     coreTraits: {
       primaryAbility: "力量与魅力",
       hitPointDie: "每圣武士等级 d10",
@@ -319,8 +319,8 @@ export const CLASS_DB: ClassItem[] = [
         optionB: "150 GP"
       }
     },
-    subclassLevel: 3, 
-    subclasses: [], 
+    subclassLevel: 3,
+    subclasses: [],
     features: [
       { level: 1, name: "圣疗 (Lay on Hands)", description: "拥有治疗池，可以接触生物恢复其生命值。" },
       { level: 1, name: "施法", description: "你可以施展圣武士法术。" },
@@ -347,15 +347,15 @@ export const CLASS_DB: ClassItem[] = [
       { level: 20, name: "子职特性", description: "获得誓言的最终化身特性。" }
     ]
   },
-  { 
-    id: "ranger-2024", 
-    name: "游侠", 
-    source: "官方规则", 
-    description: "猎人印记\n荒野求生\n弓双修\n施法半吊子\n宠物饲养员", 
-    hitDie: "d10", 
-    primaryAbility: "敏捷和感知", 
-    saves: ["力量", "敏捷"], 
-    tags: ["探索", "远程", "双持"], 
+  {
+    id: "ranger-2024",
+    name: "游侠",
+    source: "官方规则",
+    description: "猎人印记\n荒野求生\n弓双修\n施法半吊子\n宠物饲养员",
+    hitDie: "d10",
+    primaryAbility: "敏捷和感知",
+    saves: ["力量", "敏捷"],
+    tags: ["探索", "远程", "双持"],
     coreTraits: {
       primaryAbility: "敏捷与感知",
       hitPointDie: "每游侠等级 d10",
@@ -368,8 +368,8 @@ export const CLASS_DB: ClassItem[] = [
         optionB: "150 GP"
       }
     },
-    subclassLevel: 3, 
-    subclasses: [], 
+    subclassLevel: 3,
+    subclasses: [],
     features: [
       { level: 1, name: "施法", description: "施展游侠法术。" },
       { level: 1, name: "宿敌 (Favored Enemy)", description: "始终准备猎人印记法术，且施展时不消耗专注（有限制）。" },
@@ -396,16 +396,16 @@ export const CLASS_DB: ClassItem[] = [
       { level: 20, name: "屠灭众敌", description: "猎人印记的伤害提升。" }
     ]
   },
-  { 
-    id: "rogue-2024", 
-    name: "游荡者", 
-    source: "官方规则", 
-    description: "偷袭背刺\n灵活跑路\n技能专家\n闪避满分\n开锁工具人", 
+  {
+    id: "rogue-2024",
+    name: "游荡者",
+    source: "官方规则",
+    description: "偷袭背刺\n灵活跑路\n技能专家\n闪避满分\n开锁工具人",
     fullDescription: "游荡者依靠技能、隐秘和利用敌人的弱点来从任何环境中获得优势。\n\n**专精 (Expertise)**\n1级时，你获得两项技能专精（熟练加值翻倍）。6级时再获得两项。\n\n**偷袭 (Sneak Attack)**\n每个回合一次，当你用灵巧或远程武器攻击命中，且具有优势（或盟友在目标5尺内），可造成额外伤害（见职业表）。\n\n**盗贼黑话 (Thieves' Cant)**\n你学会这种秘密语言，可以隐藏信息。",
-    hitDie: "d8", 
-    primaryAbility: "敏捷", 
-    saves: ["敏捷", "智力"], 
-    tags: ["潜行", "技能专家", "爆发"], 
+    hitDie: "d8",
+    primaryAbility: "敏捷",
+    saves: ["敏捷", "智力"],
+    tags: ["潜行", "技能专家", "爆发"],
     coreTraits: {
       primaryAbility: "敏捷",
       hitPointDie: "每游荡者等级 d8",
@@ -418,8 +418,8 @@ export const CLASS_DB: ClassItem[] = [
         optionB: "100 GP"
       }
     },
-    subclassLevel: 3, 
-    subclasses: [], 
+    subclassLevel: 3,
+    subclasses: [],
     features: [
       { level: 1, name: "专精 (Expertise)", description: "选择两项技能获得专精（熟练加值翻倍）。" },
       { level: 1, name: "偷袭 (Sneak Attack)", description: "每回合一次，当你使用灵巧或远程武器攻击命中，且攻击具有优势时，可造成额外伤害（初始1d6）。若目标5尺内有未失能盟友且你无劣势，也无需优势即可偷袭。" },
@@ -449,16 +449,16 @@ export const CLASS_DB: ClassItem[] = [
       { level: 20, name: "幸运一击 (Stroke of Luck)", description: "短休/长休一次，将一次失败的d20检定视为20。" }
     ]
   },
-  { 
-    id: "sorcerer-2024", 
-    name: "术士", 
-    source: "官方规则", 
-    description: "超魔修改\n天生施法\n魅力炮台\n玻璃大炮\n法术位换点", 
+  {
+    id: "sorcerer-2024",
+    name: "术士",
+    source: "官方规则",
+    description: "超魔修改\n天生施法\n魅力炮台\n玻璃大炮\n法术位换点",
     fullDescription: "你从你的天生魔法汲取魔力用于施展法术。参见第 7 章有关施法的规则。\n\n**施法**\n你已知 4 个你选择的术士戏法。推荐选择光亮术、魔法伎俩、电爪和术法爆发。每当你获得一个术士等级时，你都能将通过此特性已知的其中一个戏法替换为另一个你所选择的术士戏法。\n\n**法术位**\n术士特性表显示了你可用于施放 1 环及以上法术的法术位数量。你在完成一次长休时恢复所有已消耗的法术位。\n\n**1 环及以上的准备法术**\n你准备可供你以此特性施展的 1 环及更高环阶的法术列表。为此，选择 2 道术士法术。推荐选择燃烧之手 Burning Hands 和侦测魔法 Detect Magic。\n已准备法术数量会随你术士等级的提升而增加，如术士特性表中的准备法术一列所示。\n\n**施法属性**\n你术士法术的施法属性是魅力。\n\n**施法法器**\n你可以使用奥术法器作为你术士法术的施法法器。",
-    hitDie: "d6", 
-    primaryAbility: "魅力", 
-    saves: ["体质", "魅力"], 
-    tags: ["施法者", "爆发"], 
+    hitDie: "d6",
+    primaryAbility: "魅力",
+    saves: ["体质", "魅力"],
+    tags: ["施法者", "爆发"],
     coreTraits: {
       primaryAbility: "魅力",
       hitPointDie: "每术士等级 d6",
@@ -471,8 +471,8 @@ export const CLASS_DB: ClassItem[] = [
         optionB: "50 GP"
       }
     },
-    subclassLevel: 3, 
-    subclasses: [], 
+    subclassLevel: 3,
+    subclasses: [],
     features: [
       { level: 1, name: "施法 (Spellcasting)", description: "你能够施展术士法术。魅力是你的施法关键属性。" },
       { level: 1, name: "先天术法 (Innate Sorcery)", description: "你过去经历的某件事在身上留下了不可磨灭的印记，为你注入了难以控制的涌动魔力。以一个附赠动作，你可以将魔力释放而出，持续 1 分钟。在这 1 分钟期间，你获得以下增益：\n• 你的术士法术豁免 DC+1。\n• 你的术士法术攻击检定具有优势。\n你可以使用此特性两次，你在完成一次长休后重获所有已消耗的使用次数。" },
@@ -494,16 +494,16 @@ export const CLASS_DB: ClassItem[] = [
       { level: 20, name: "奥术登神 (Arcane Apotheosis)", description: "在你的先天术法特性处于激活状态期间，每个你的回合一次，你可以无需消耗术法点地使用一次超魔法选项。" }
     ]
   },
-  { 
-    id: "warlock-2024", 
-    name: "魔契师", 
-    source: "官方规则", 
-    description: "魔能爆机关枪\n祈唤强化\n短休回蓝\n宗主打工仔\n只有俩法术位", 
+  {
+    id: "warlock-2024",
+    name: "魔契师",
+    source: "官方规则",
+    description: "魔能爆机关枪\n祈唤强化\n短休回蓝\n宗主打工仔\n只有俩法术位",
     fullDescription: "**契约魔法**\n依靠玄秘的仪式，你与一位神秘存在缔结契约以获得魔法力量。这位存在隐于影中，身份不明——但其恩泽是切实的。参考第 7 章中的施法规则。下文为你详细说明了魔契师施展魔契师法术的规则。\n\n**魔能祈唤**\n你在神秘学识的研习过程中发掘出魔能祈唤的方式，这些禁忌的知识残章让你获得了持久的魔法能力。你获得一个自选的魔能祈唤，如书之魔契（详见后文“魔能祈唤选项“）。",
-    hitDie: "d8", 
-    primaryAbility: "魅力", 
-    saves: ["感知", "魅力"], 
-    tags: ["施法者", "契约"], 
+    hitDie: "d8",
+    primaryAbility: "魅力",
+    saves: ["感知", "魅力"],
+    tags: ["施法者", "契约"],
     coreTraits: {
       primaryAbility: "魅力",
       hitPointDie: "每魔契师等级 d8",
@@ -516,8 +516,8 @@ export const CLASS_DB: ClassItem[] = [
         optionB: "100 GP"
       }
     },
-    subclassLevel: 3, 
-    subclasses: [], 
+    subclassLevel: 3,
+    subclasses: [],
     features: [
       { level: 1, name: "契约魔法 (Pact Magic)", description: "你习得两个魔契师戏法。推荐选择魔能爆和魔法伎俩。每当你获得一级魔契师等级，你便可以将一个已知戏法替换为另一个你所选的魔契师戏法。\n\n**法术位:** 魔契师特性表中记录了你可用以施展魔契师法术的 1 环至 5 环法术位数量。表格中还记录了法术位对应的法术环阶，且你所有的法术位都属于同一环阶。已消耗的法术位可在完成短休或长休后恢复。\n\n**施法属性:** 魅力是你的魔契师法术的施法属性。" },
       { level: 1, name: "魔能祈唤 (Eldritch Invocations)", description: "你在神秘学识的研习过程中发掘出魔能祈唤的方式，这些禁忌的知识残章让你获得了持久的魔法能力。你获得一个自选的魔能祈唤，如书之魔契（Pact of the Tome）或其他选项。\n当你获得特定的魔契师等级时，你还可以习得更多的魔能祈唤。每当你获得一级魔契师等级时，你都可以用新的祈唤替换一个已学会的祈唤。" },
@@ -539,16 +539,16 @@ export const CLASS_DB: ClassItem[] = [
       { level: 20, name: "魔能掌控 (Eldritch Master)", description: "当你使用秘法回流特性时，你改为恢复全部消耗的魔契师法术位。" }
     ]
   },
-  { 
-    id: "wizard-2024", 
-    name: "法师", 
-    source: "官方规则", 
-    description: "法术书是本体\n仪式施法\n玻璃大炮\n智力巅峰\n抄书破产", 
+  {
+    id: "wizard-2024",
+    name: "法师",
+    source: "官方规则",
+    description: "法术书是本体\n仪式施法\n玻璃大炮\n智力巅峰\n抄书破产",
     fullDescription: "你已经入门了奥术魔法，学会了如何施展法术。参见第 7 章有关施法的规则。下述信息将详述如何将这些规则应用于法师法术，法师法术详见本章后文职业描述中的法师法表。\n\n**法术书**\n你在法术学徒阶段获取的所有成果汇集于一本独特的书：你的法术书。它是一个重 3 磅的微型物件，内有 100 页，并且只能被你自己或者施展了鉴定术的人阅读。你来决定法术书的外貌和材料，比如一本镶金边的典籍或一堆用麻绳绑在一起的羊皮纸。\n这本书包含所有你已知的 1 环以上的法术。它初始记录着 6 道你选择的法师法术。推荐选择侦测魔法、羽落术、法师护甲、魔法飞弹、睡眠术和雷鸣波。",
-    hitDie: "d6", 
-    primaryAbility: "智力", 
-    saves: ["智力", "感知"], 
-    tags: ["施法者", "控制", "万能"], 
+    hitDie: "d6",
+    primaryAbility: "智力",
+    saves: ["智力", "感知"],
+    tags: ["施法者", "控制", "万能"],
     coreTraits: {
       primaryAbility: "智力",
       hitPointDie: "每法师等级 d6",
@@ -561,8 +561,8 @@ export const CLASS_DB: ClassItem[] = [
         optionB: "55 GP"
       }
     },
-    subclassLevel: 3, 
-    subclasses: [], 
+    subclassLevel: 3,
+    subclasses: [],
     features: [
       { level: 1, name: "施法 (Spellcasting)", description: "你已知法师法术列表中 3 个你选择的戏法。推荐选择光亮术、法师之手和冷冻射线。每当你完成一次长休时，你都能将通过此特性已知的其中一个戏法替换为另一个你所选择的法师戏法。\n\n**法术位:** 法师特性表显示了你可用于施展 1 环及以上法术的法术位数量。你在完成一次长休时恢复所有已消耗的法术位。\n\n**1 环及以上的准备法术:** 你准备可供你以此特性施展的 1 环及更高环阶的法术列表。为此，从书中选择 4 道法术。你必须拥有所选法术环阶的法术位。已准备法术数量会随你法师等级的提升而增加，如法师特性表中的准备法术一列所示。\n\n**施法属性:** 你法师法术的施法属性是智力。\n\n**施法法器:** 你可以使用奥术法器或你的法术书作为你法师法术的施法法器。" },
       { level: 1, name: "仪式学家 (Ritual Caster)", description: "你能以仪式施展你法术书中任何带有 仪式 标签的法术。你不需要准备这些法术，但你以此法施展法术时必须阅读这本书。" },

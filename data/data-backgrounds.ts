@@ -1,5 +1,5 @@
 
-import { BackgroundItem } from './types';
+import { BackgroundItem } from '../types';
 
 export const BACKGROUND_DB: BackgroundItem[] = [
   {

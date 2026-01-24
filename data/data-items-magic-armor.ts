@@ -1,5 +1,5 @@
 
-import { ItemItem } from './types';
+import { ItemItem } from '../types';
 
 export const MAGIC_ARMOR_DB: ItemItem[] = [
   // --- Common (普通) ---

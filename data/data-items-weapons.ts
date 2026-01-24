@@ -1,5 +1,5 @@
 
-import { ItemItem } from './types';
+import { ItemItem } from '../types';
 
 // Helper for repeated descriptions
 const MASTERY_DESC = {

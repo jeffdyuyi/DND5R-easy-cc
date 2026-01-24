@@ -1,5 +1,5 @@
 
-import { SubclassItem } from './types';
+import { SubclassItem } from '../types';
 
 export const SUBCLASS_DB: SubclassItem[] = [
   {

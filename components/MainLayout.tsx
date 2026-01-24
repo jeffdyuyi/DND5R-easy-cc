@@ -156,7 +156,8 @@ export const MainLayout = () => {
                 return (
                     <LibraryManager<ClassItem>
                         key="lib-class"
-                        title="职业库" itemLabel="职业" items={classes.items} {...classes}
+                        title="职业库" itemLabel="职业" items={classes.items}
+                        onAdd={classes.onAdd} onUpdate={classes.onUpdate} onDelete={classes.onDelete} onImport={classes.onImport}
                         cardColorTheme="red"
                         renderDetail={(item) => <ClassDetailView item={item} />}
                         renderEditFields={(item, setItem) => <ClassEditor item={item} setItem={setItem} />}
@@ -176,7 +177,8 @@ export const MainLayout = () => {
                 return (
                     <LibraryManager<SubclassItem>
                         key="lib-subclass"
-                        title="子职业库" itemLabel="子职业" items={subclasses.items} {...subclasses}
+                        title="子职业库" itemLabel="子职业" items={subclasses.items}
+                        onAdd={subclasses.onAdd} onUpdate={subclasses.onUpdate} onDelete={subclasses.onDelete} onImport={subclasses.onImport}
                         cardColorTheme="orange"
                         renderDetail={(item) => <SubclassDetailView item={item} />}
                         renderEditFields={(item, setItem) => <SubclassEditor item={item} setItem={setItem} classes={classes.items} />}
@@ -190,7 +192,8 @@ export const MainLayout = () => {
                 return (
                     <LibraryManager<SpeciesItem>
                         key="lib-species"
-                        title="种族库" itemLabel="种族" items={species.items} {...species}
+                        title="种族库" itemLabel="种族" items={species.items}
+                        onAdd={species.onAdd} onUpdate={species.onUpdate} onDelete={species.onDelete} onImport={species.onImport}
                         cardColorTheme="green"
                         renderDetail={(item) => <SpeciesDetailView item={item} />}
                         renderEditFields={(item, setItem) => <RichDescriptionEditor item={item} setItem={setItem} />}
@@ -201,7 +204,8 @@ export const MainLayout = () => {
                 return (
                     <LibraryManager<BackgroundItem>
                         key="lib-bg"
-                        title="背景库" itemLabel="背景" items={backgrounds.items} {...backgrounds}
+                        title="背景库" itemLabel="背景" items={backgrounds.items}
+                        onAdd={backgrounds.onAdd} onUpdate={backgrounds.onUpdate} onDelete={backgrounds.onDelete} onImport={backgrounds.onImport}
                         cardColorTheme="yellow"
                         renderDetail={(item) => <BackgroundDetailView item={item} libraryFeats={feats.items} />}
                         renderEditFields={(item, setItem) => <BackgroundEditor item={item} setItem={setItem} feats={feats.items} />}
@@ -220,7 +224,8 @@ export const MainLayout = () => {
                 return (
                     <LibraryManager<SpellItem>
                         key="lib-spell"
-                        title="法术库" itemLabel="法术" items={filteredSpells} {...spells}
+                        title="法术库" itemLabel="法术" items={filteredSpells}
+                        onAdd={spells.onAdd} onUpdate={spells.onUpdate} onDelete={spells.onDelete} onImport={spells.onImport}
                         extraTools={SpellFilters}
                         layout="grid"
                         renderItem={(item, isSelected, onClick, actions) => (
@@ -248,7 +253,8 @@ export const MainLayout = () => {
                 return (
                     <LibraryManager<FeatItem>
                         key="lib-feat"
-                        title="专长库" itemLabel="专长" items={filteredFeats} {...feats}
+                        title="专长库" itemLabel="专长" items={filteredFeats}
+                        onAdd={feats.onAdd} onUpdate={feats.onUpdate} onDelete={feats.onDelete} onImport={feats.onImport}
                         extraTools={FeatFilters}
                         cardColorTheme="purple"
                         renderDetail={(item) => <FeatDetailView item={item} />}
@@ -260,7 +266,8 @@ export const MainLayout = () => {
                 return (
                     <LibraryManager<ItemItem>
                         key="lib-weapon"
-                        title="武器库" itemLabel="武器" items={weapons.items} {...weapons}
+                        title="武器库" itemLabel="武器" items={weapons.items}
+                        onAdd={weapons.onAdd} onUpdate={weapons.onUpdate} onDelete={weapons.onDelete} onImport={weapons.onImport}
                         layout="grid"
                         renderItem={(item, isSelected, onClick, actions) => (
                             <CompactCard
@@ -288,7 +295,8 @@ export const MainLayout = () => {
                 return (
                     <LibraryManager<ItemItem>
                         key="lib-armor"
-                        title="护甲库" itemLabel="护甲" items={armors.items} {...armors}
+                        title="护甲库" itemLabel="护甲" items={armors.items}
+                        onAdd={armors.onAdd} onUpdate={armors.onUpdate} onDelete={armors.onDelete} onImport={armors.onImport}
                         layout="grid"
                         renderItem={(item, isSelected, onClick, actions) => (
                             <CompactCard
@@ -317,7 +325,8 @@ export const MainLayout = () => {
                 return (
                     <LibraryManager<ItemItem>
                         key="lib-tool"
-                        title="工具库" itemLabel="工具" items={filteredTools} {...tools}
+                        title="工具库" itemLabel="工具" items={filteredTools}
+                        onAdd={tools.onAdd} onUpdate={tools.onUpdate} onDelete={tools.onDelete} onImport={tools.onImport}
                         extraTools={ToolFilters}
                         layout="grid"
                         renderItem={(item, isSelected, onClick, actions) => (
@@ -346,7 +355,8 @@ export const MainLayout = () => {
                 return (
                     <LibraryManager<ItemItem>
                         key="lib-gear"
-                        title="冒险物品库" itemLabel="冒险物品" items={filteredGears} {...gears}
+                        title="冒险物品库" itemLabel="冒险物品" items={filteredGears}
+                        onAdd={gears.onAdd} onUpdate={gears.onUpdate} onDelete={gears.onDelete} onImport={gears.onImport}
                         extraTools={GearFilters}
                         layout="grid"
                         renderItem={(item, isSelected, onClick, actions) => (
@@ -375,7 +385,8 @@ export const MainLayout = () => {
                 return (
                     <LibraryManager<ItemItem>
                         key="lib-magic"
-                        title="魔法物品库" itemLabel="魔法物品" items={filteredMagicItems} {...magicItems}
+                        title="魔法物品库" itemLabel="魔法物品" items={filteredMagicItems}
+                        onAdd={magicItems.onAdd} onUpdate={magicItems.onUpdate} onDelete={magicItems.onDelete} onImport={magicItems.onImport}
                         extraTools={MagicFilters}
                         layout="grid"
                         renderItem={(item, isSelected, onClick, actions) => {

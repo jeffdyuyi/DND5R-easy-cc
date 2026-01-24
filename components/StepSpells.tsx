@@ -3,9 +3,7 @@ import React, { useState, useMemo } from 'react';
 import { CharacterData } from '../types';
 import WizardLayout from './wizard/WizardLayout';
 import FeatureAccordion from './wizard/FeatureAccordion';
-import { FEAT_DB } from '../data-feats';
-import { SPELL_DB } from '../data-spells';
-import { BACKGROUND_DB } from '../data-backgrounds';
+import { FEAT_DB, SPELL_DB, BACKGROUND_DB } from '../data';
 import { Sparkles, Wand2, CheckCircle, Search } from 'lucide-react';
 
 interface Props {
@@ -61,7 +59,7 @@ const StepSpells: React.FC<Props> = ({ character, updateCharacter }) => {
         let cantrips = SPELL_DB.filter(s => s.level === 0);
         if (spellListClasses.length > 0) {
             cantrips = cantrips.filter(s =>
-                s.classes?.some(c => spellListClasses.includes(c))
+                s.classes?.some((c: string) => spellListClasses.includes(c))
             );
         }
         if (cantripSearch) {
@@ -77,7 +75,7 @@ const StepSpells: React.FC<Props> = ({ character, updateCharacter }) => {
         let spells = SPELL_DB.filter(s => s.level === 1);
         if (spellListClasses.length > 0) {
             spells = spells.filter(s =>
-                s.classes?.some(c => spellListClasses.includes(c))
+                s.classes?.some((c: string) => spellListClasses.includes(c))
             );
         }
         if (spellSearch) {

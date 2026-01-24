@@ -1,4 +1,4 @@
-import { SpellItem } from './types';
+import { SpellItem } from '../types';
 import { SPELL_DB_LEVEL_0 } from './data-spells-level0';
 import { SPELL_DB_LEVEL_1 } from './data-spells-level1';
 import { SPELL_DB_LEVEL_2 } from './data-spells-level2';

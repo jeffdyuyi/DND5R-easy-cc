@@ -4,7 +4,7 @@ import { CharacterData, AbilityScores } from '../types';
 import WizardLayout from './wizard/WizardLayout';
 import FeatureAccordion from './wizard/FeatureAccordion';
 import { CLASSES } from '../data';
-import { BACKGROUND_DB } from '../data-backgrounds';
+import { BACKGROUND_DB } from '../data';
 import { CheckCircle, BookOpen, Wrench } from 'lucide-react';
 
 interface Props {

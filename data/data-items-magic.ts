@@ -1,5 +1,5 @@
 
-import { ItemItem } from './types';
+import { ItemItem } from '../types';
 
 export const MAGIC_MISC_DB: ItemItem[] = [
   // --- Common (普通) ---

@@ -1,5 +1,5 @@
 
-import { ItemItem } from './types';
+import { ItemItem } from '../types';
 
 export const TOOL_DB: ItemItem[] = [
   // --- Artisan's Tools (工匠工具) ---
@@ -250,8 +250,8 @@ export const TOOL_DB: ItemItem[] = [
       { action: "即兴演奏", dc: "15", description: "演奏一首即兴的乐曲。" }
     ],
     toolVariants: [
-      "风笛 (30GP, 6lb)", "鼓 (6GP, 3lb)", "扬琴 (25GP, 10lb)", "长笛 (2GP, 1lb)", 
-      "号角 (3GP, 2lb)", "鲁特琴 (35GP, 2lb)", "里拉琴 (30GP, 2lb)", "排箫 (12GP, 2lb)", 
+      "风笛 (30GP, 6lb)", "鼓 (6GP, 3lb)", "扬琴 (25GP, 10lb)", "长笛 (2GP, 1lb)",
+      "号角 (3GP, 2lb)", "鲁特琴 (35GP, 2lb)", "里拉琴 (30GP, 2lb)", "排箫 (12GP, 2lb)",
       "芦笛 (2GP, 1lb)", "提琴 (30GP, 1lb)"
     ],
     tags: ["其他工具", "乐器"]

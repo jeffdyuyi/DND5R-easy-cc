@@ -1,4 +1,4 @@
-import { SpellItem } from './types';
+import { SpellItem } from '../types';
 
 export const SPELL_DB_LEVEL_1: SpellItem[] = [
   // ==========================================
@@ -8,14 +8,14 @@ export const SPELL_DB_LEVEL_1: SpellItem[] = [
   {
     id: "gen-kwe1c", name: "警报术", source: "PHB'24",
     level: 1, school: "防护", castingTime: "1 分钟或仪式", range: "30 尺", components: "声音、姿势、材料（一个小铃铛和一小段银线）", duration: "8 小时",
-    classes: ["游侠","法师"],
+    classes: ["游侠", "法师"],
     description: "你设置一个针对不速之客的警报。在施法距离内指定一扇门窗或选择一个边长不大于20 尺的立方区域。*在法术*持续时间内，任何触*碰或进入被法术*保护区域的生物都会触发警报。施法时，你可以决定哪些生物不会触发警报，还可以选择警报方式为声音警报或是精神警报。"
   },
 
   {
     id: "gen-atkv94", name: "化兽为友", source: "PHB'24",
     level: 1, school: "惑控", castingTime: "动作", range: "30 尺", components: "声音、姿势、材料（一点食物）", duration: "24 小时",
-    classes: ["吟游诗人","德鲁伊","游侠"],
+    classes: ["吟游诗人", "德鲁伊", "游侠"],
     description: "在施法距离内指定一只你能看见的野兽。该野兽必须通过一次感知豁免，*否则在法术*持续时间内陷入*魅惑*状态。如果你或你的盟友对目标造成伤害，法术将提前终止。",
     higherLevel: "*你使用的法术*位每比一环高一环，就可以多选择一个野兽作为目标。"
   },
@@ -39,7 +39,7 @@ export const SPELL_DB_LEVEL_1: SpellItem[] = [
   {
     id: "gen-h2e9h", name: "灾祸术", source: "PHB'24",
     level: 1, school: "惑控", castingTime: "动作", range: "30尺", components: "声音、姿势、材料（一滴血）", duration: "专注，至多1分钟",
-    classes: ["吟游诗人","牧师","邪术师"],
+    classes: ["吟游诗人", "牧师", "邪术师"],
     description: "你选择施法距离内至多三个你可见的生物，迫使其分别进行一次魅力豁免。*在法术*终止前，豁免失败于此次魅力豁免的目标进行的每次攻击检定与豁免检定都必须承受1d4的减值。",
     higherLevel: "*使用的法术*位每比一环高一环，你就可以额外选择一个生物作为目标。"
   },
@@ -47,7 +47,7 @@ export const SPELL_DB_LEVEL_1: SpellItem[] = [
   {
     id: "gen-id6sd", name: "祝福术", source: "PHB'24",
     level: 1, school: "惑控", castingTime: "动作", range: "30尺", components: "声音、姿势、材料（一枚价值5+GP的圣徽）", duration: "专注，至多1分钟",
-    classes: ["牧师","圣武士"],
+    classes: ["牧师", "圣武士"],
     description: "你祝福施法范围内至多三个生物。*在法术*终止前，受术目标进行的每次攻击检定与豁免检定都将获得1d4的加值。",
     higherLevel: "*使用的法术*位每比一环高一环，你就可以额外选择一个生物作为目标。"
   },
@@ -55,7 +55,7 @@ export const SPELL_DB_LEVEL_1: SpellItem[] = [
   {
     id: "gen-etgxr8", name: "燃烧之手", source: "PHB'24",
     level: 1, school: "塑能", castingTime: "动作", range: "自身", components: "声音、姿势", duration: "立即",
-    classes: ["术士","法师"],
+    classes: ["术士", "法师"],
     description: "你向前喷射出一片火焰。处于15尺锥状区域内的生物必须进行一次敏捷豁免。豁免失败者受到3d6火焰伤害，豁免成功者受到一半伤害。\n在此锥状区域内的未被着装或携带的易燃物件会开始燃烧。",
     higherLevel: "*你使用的法术*位每比一环高一环，*此法术*的伤害就会提升1d6。"
   },
@@ -63,7 +63,7 @@ export const SPELL_DB_LEVEL_1: SpellItem[] = [
   {
     id: "gen-jzstsb", name: "魅惑类人", source: "PHB'24",
     level: 1, school: "惑控", castingTime: "动作", range: "30 尺", components: "声音、姿势", duration: "1 小时",
-    classes: ["吟游诗人","德鲁伊","术士","邪术师","法师"],
+    classes: ["吟游诗人", "德鲁伊", "术士", "邪术师", "法师"],
     description: "*选择法术*距离内你可见的一名类人生物，迫使该生物进行一次感知豁免，如果你或者你的同伴正在与它战斗，它进行的这次豁免将具有优势。如果它豁免失败，它陷入*魅惑*状*态直到法术*结束，或者直到你或你的同伴对它造成伤害。被魅惑的生物将对你友好。*在法术*结束时，生物会知道它曾被你*魅惑*。",
     higherLevel: "*使用的法术*位每比一环高一环，你就可以额外选择一个生物作为目标。"
   },
@@ -71,7 +71,7 @@ export const SPELL_DB_LEVEL_1: SpellItem[] = [
   {
     id: "gen-iylkr", name: "繁彩球", source: "PHB'24",
     level: 1, school: "塑能", castingTime: "动作", range: "90 尺", components: "声音、姿势、材料（一枚价值50GP+的钻石）", duration: "立即",
-    classes: ["术士","法师"],
+    classes: ["术士", "法师"],
     description: "你向施法距离内某个目标掷出一颗能量球。从强酸、寒冷、火焰、闪电、毒素、雷鸣中选择一个作为创造出来的球体的伤害类型，然后对该目标发*动一次远程法术*攻击。命中时，该目标将受到 3d8 点你所选类型的伤害。\n如果你的d8骰中有两枚（或更多）投出了相同的数字，能量球将会从原目标跃向其周围30尺内由你所选择的另一个目标。你需要对新目标再进行一次攻击检定，然后进行一次新的伤害掷骰。能量球无法再次进行此种跳跃，除*非你施展此法术*时使用了环阶2+*的法术*位。",
     higherLevel: "*使用的法术*位每高一环，法术的伤害就增加1d8。能量球能够跳跃的最大次数等同*于所消耗的法术*位环阶，但*每次施展此法术*时，每名生物只能*被指定为此法术*目标一次。"
   },
@@ -79,14 +79,14 @@ export const SPELL_DB_LEVEL_1: SpellItem[] = [
   {
     id: "gen-a8m5ir", name: "七彩喷射", source: "PHB'24",
     level: 1, school: "幻术", castingTime: "动作", range: "自身", components: "声音、姿势、材料（一撮彩色沙子）", duration: "立即",
-    classes: ["吟游诗人","术士","法师"],
+    classes: ["吟游诗人", "术士", "法师"],
     description: "你射出一道炫目的闪耀彩光。以你为源点的15尺锥状区域内的每个生物必须成功通过一次体质豁免，否则陷入*目盲*状态，持续至下个你的回合结束。"
   },
 
   {
     id: "gen-crhmw", name: "命令术", source: "PHB'24",
     level: 1, school: "惑控", castingTime: "动作", range: "60 尺", components: "声音", duration: "立即",
-    classes: ["吟游诗人","牧师","圣武士"],
+    classes: ["吟游诗人", "牧师", "圣武士"],
     description: "你对施法距离内一个你能看见的生物说出一个单词的命令。目标生物必须通过一次感知豁免，否则在它自己的下一回合中，其必须服从这道命令行事。从以下选项中选择一条命令："
   },
 
@@ -100,21 +100,21 @@ export const SPELL_DB_LEVEL_1: SpellItem[] = [
   {
     id: "gen-ilza3w", name: "通晓语言", source: "PHB'24",
     level: 1, school: "预言", castingTime: "动作或仪式", range: "自身", components: "声音、姿势、材料（一撮煤灰和盐）", duration: "1 小时",
-    classes: ["吟游诗人","术士","邪术师","法师"],
+    classes: ["吟游诗人", "术士", "邪术师", "法师"],
     description: "*你在法术*持续时间内知晓你所听到或看到手语的所有语言的字面意义。你也可以通过触碰书写的文字来读懂其字面意义。以这种方式阅读每页文字需要花费 1 分钟的时间。*这个法术*并不能解读符号和暗语。"
   },
 
   {
     id: "gen-13f34lm", name: "造水术/枯水术", source: "PHB'24",
     level: 1, school: "变化", castingTime: "动作", range: "30尺", components: "声音、姿势、材料（水沙混合物）", duration: "立即",
-    classes: ["牧师","德鲁伊"],
+    classes: ["牧师", "德鲁伊"],
     description: "你选择其一执行："
   },
 
   {
     id: "gen-hm2qq", name: "疗伤术", source: "PHB'24",
     level: 1, school: "防护", castingTime: "动作", range: "触碰", components: "声音、姿势", duration: "立即",
-    classes: ["吟游诗人","牧师","德鲁伊","圣武士","游侠"],
+    classes: ["吟游诗人", "牧师", "德鲁伊", "圣武士", "游侠"],
     description: "你触碰的一名生物恢复等同于2d8+你施法属性调整值点生命值。",
     higherLevel: "*使用的法术*位每比一环高一环，*此法术*的治疗量就增加2d8点。"
   },
@@ -122,28 +122,28 @@ export const SPELL_DB_LEVEL_1: SpellItem[] = [
   {
     id: "gen-ai2w0n", name: "侦测善恶", source: "PHB'24",
     level: 1, school: "预言", castingTime: "动作", range: "自身", components: "声音、姿势", duration: "专注，至多10分钟",
-    classes: ["牧师","圣武士"],
+    classes: ["牧师", "圣武士"],
     description: "*在法术*持续时间内，你定位距你30尺内任何异怪、天族、元素、妖精、邪魔、亡灵。你也可以感知到范围内是否具有激活的圣居Hallow并确定其位置。\n*此法术*会被1尺厚的岩石、泥土或木头，1寸厚的金属，或薄薄一层铅阻隔。"
   },
 
   {
     id: "gen-aietye", name: "侦测魔法", source: "PHB'24",
     level: 1, school: "预言", castingTime: "动作或仪式", range: "自身", components: "声音、姿势", duration: "专注，至多10分钟",
-    classes: ["吟游诗人","牧师","德鲁伊","圣武士","游侠","术士","邪术师","法师"],
+    classes: ["吟游诗人", "牧师", "德鲁伊", "圣武士", "游侠", "术士", "邪术师", "法师"],
     description: "*在法术*持续时间内，你感受到距你30尺内的魔法效应。若你感知到了此类效应，则你可以用一个魔法动作以看到任何带有该魔法效应的可见生物或物件周围环绕着微弱的灵光，且若该魔法*效应属于被法术*创造的效应，则你可分辨出其所属的魔法学派。\n*此法术*会被1尺厚的岩石、泥土或木头，1寸厚的金属，或薄薄一层铅阻隔。"
   },
 
   {
     id: "gen-2q2wtj", name: "侦测毒性和疾病", source: "PHB'24",
     level: 1, school: "预言", castingTime: "动作或仪式", range: "自身", components: "声音、姿势、材料（一片紫杉叶）", duration: "专注，至多10分钟",
-    classes: ["牧师","德鲁伊","圣武士","游侠"],
+    classes: ["牧师", "德鲁伊", "圣武士", "游侠"],
     description: "*在法术*持续时间内，你定位距你30尺内的毒药、有毒生物和魔法疫病。你可以感知到毒药、有毒生物和疫病的种类。\n*此法术*会被1尺厚的岩石、泥土或木头，1寸厚的金属，或薄薄一层铅阻隔。"
   },
 
   {
     id: "gen-feei1", name: "易容术", source: "PHB'24",
     level: 1, school: "幻术", castingTime: "动作", range: "自身", components: "声音、姿势", duration: "1小时",
-    classes: ["吟游诗人","术士","法师"],
+    classes: ["吟游诗人", "术士", "法师"],
     description: "你改变自身以及随身的衣物、护甲、武器等在你身上的所有物。*该效应在法术*终止时结束。肉眼看来你的身高可以有1尺的增减，体态可胖可瘦。你必须选择一个和你肢体基础排列方式一致的形态。此外，幻术的影响范围由你决定。\n*此法术*产生的变化无法应对物理检查。比如，*你用此法术*添了一顶帽子，那么现实物件会从帽子穿过去，且任何触碰帽子的人将摸不到任何东西。\n如果一名生物想要分辨你是否易容，则必须使用一个研究动作研究你的外貌，并成功于*一次对抗你法术*豁免DC的智力（调查）检定。"
   },
 
@@ -181,28 +181,28 @@ export const SPELL_DB_LEVEL_1: SpellItem[] = [
   {
     id: "gen-j5vov", name: "纠缠术", source: "PHB'24",
     level: 1, school: "咒法", castingTime: "动作", range: "90尺", components: "声音、姿势", duration: "专注，至多1分钟",
-    classes: ["德鲁伊","游侠"],
+    classes: ["德鲁伊", "游侠"],
     description: "缠绕的植物在施法距离内从20尺方状区域地面中破土而出。*在法术*持续时间内，这片被植物覆盖的区域变为困难地形 。法术结束时，这些植物会消失。\n*在你施展法术*时，该区域内的生物（除你之外）必须成功于一次力量豁免，否则陷入*束缚*状态，*直到法术*终止。一名因此被束缚的生物可以用其动作进行一次力量（运动）**检*定对抗该法术*的豁免**。检定成功则成功摆脱缠绕在其身上的藤蔓并不再被其*束缚*。"
   },
 
   {
     id: "gen-gojcpn", name: "脚底抹油", source: "PHB'24",
     level: 1, school: "变化", castingTime: "附赠动作", range: "自身", components: "声音、姿势", duration: "专注，至多10分钟",
-    classes: ["术士","邪术师","法师"],
+    classes: ["术士", "邪术师", "法师"],
     description: "你执行疾走动作，*且直到法术*结束为止，你均能使用附赠动作执行疾走 动作。"
   },
 
   {
     id: "gen-fus5", name: "妖火", source: "PHB'24",
     level: 1, school: "塑能", castingTime: "动作", range: "60尺", components: "声音", duration: "专注，至多1分钟",
-    classes: ["吟游诗人","德鲁伊"],
+    classes: ["吟游诗人", "德鲁伊"],
     description: "受术生物或物件无法受益于*隐形*状态，且任何能看见他们的攻击者对其发动的攻击检定具有优势。"
   },
 
   {
     id: "gen-had3jf", name: "虚假生命", source: "PHB'24",
     level: 1, school: "死灵", castingTime: "动作", range: "自身", components: "声音、姿势、材料（一滴酒精）", duration: "立即",
-    classes: ["术士","法师"],
+    classes: ["术士", "法师"],
     description: "你获得2d4+4点临时生命值。",
     higherLevel: "*使用的法术*位每比一环高一环，其给予的临时生命值就增加5。"
   },
@@ -210,7 +210,7 @@ export const SPELL_DB_LEVEL_1: SpellItem[] = [
   {
     id: "gen-jcmbz", name: "羽落术", source: "PHB'24",
     level: 1, school: "变化", castingTime: "反应，你或距你60尺内的可见生物坠落时可用", range: "60尺", components: "声音、材料（一小根羽毛或一块羽绒）", duration: "1分钟",
-    classes: ["吟游诗人","术士","法师"],
+    classes: ["吟游诗人", "术士", "法师"],
     description: "指定施法距离内至多五个正坠落的生物。受术生物的*坠落速度在法术*持续时间内降低至每回合60尺。如*果该生物在法术*终止前落地，则其不会受到任何坠落伤害，*且着地后法术*对该生物的效应随即终止。"
   },
 
@@ -224,7 +224,7 @@ export const SPELL_DB_LEVEL_1: SpellItem[] = [
   {
     id: "gen-c8j0i", name: "云雾术", source: "PHB'24",
     level: 1, school: "咒法", castingTime: "动作", range: "120尺", components: "声音、姿势", duration: "专注，至多1小时",
-    classes: ["德鲁伊","游侠","术士","法师"],
+    classes: ["德鲁伊", "游侠", "术士", "法师"],
     description: "你以施法距离内一点为中心创造一片半径20尺的球状浓雾。球状区域被重度遮蔽。*浓雾持续至法术*持续时间结束，被强风（**比如造风术** Wind创造的风）*吹散时法术*也将提前结束。",
     higherLevel: "*使用的法术*位每比一环高一环，浓雾的半径就增加20尺。"
   },
@@ -232,14 +232,14 @@ export const SPELL_DB_LEVEL_1: SpellItem[] = [
   {
     id: "gen-iewuy", name: "神莓术", source: "PHB'24",
     level: 1, school: "咒法", castingTime: "动作", range: "自身", components: "声音、姿势、材料（一根槲寄生）", duration: "24小时",
-    classes: ["德鲁伊","游侠"],
+    classes: ["德鲁伊", "游侠"],
     description: "10颗浆果出现在你手里。*果子在法术*持续时间内充满魔法。一名生物可以用一个附赠动作 吃下一颗浆果。吃掉一颗浆果者恢复1生命值，且一枚浆果就可以满足该生物一整天的营养需求。\n法术结束时还没有被吃掉的浆果会消失。"
   },
 
   {
     id: "gen-gjvrh", name: "油腻术", source: "PHB'24",
     level: 1, school: "咒法", castingTime: "动作", range: "60尺", components: "声音、姿势、材料（一块猪皮或黄油）", duration: "1分钟",
-    classes: ["术士","法师"],
+    classes: ["术士", "法师"],
     description: "你在施法距离内指定一点，光滑的不可燃油脂以该点为中心覆盖一处10尺的方状区域。*在法术*持续时间内。该区域变为困难地形 。\n油脂出现时，站在其范围内的每个生物必须成功通过一次敏捷豁免，否则陷入*倒地*状态。进入该区域或在区域内结束其回合的生物也必须进行该敏捷豁免，豁免失败则陷入*倒地*。"
   },
 
@@ -262,7 +262,7 @@ export const SPELL_DB_LEVEL_1: SpellItem[] = [
   {
     id: "gen-e4hzqm", name: "治愈真言", source: "PHB'24",
     level: 1, school: "防护", castingTime: "附赠动作", range: "60尺", components: "声音", duration: "立即",
-    classes: ["吟游诗人","牧师","德鲁伊"],
+    classes: ["吟游诗人", "牧师", "德鲁伊"],
     description: "你指定施法距离内一个你能看见的生物并恢复其生命值，恢复量等于2d4+你的施法属性调整值。",
     higherLevel: "*使用的法术*位每比一环高一环，*此法术*的治疗量就增加2d4点。"
   },
@@ -278,7 +278,7 @@ export const SPELL_DB_LEVEL_1: SpellItem[] = [
   {
     id: "gen-h55xcx", name: "英雄气概", source: "PHB'24",
     level: 1, school: "惑控", castingTime: "动作", range: "触碰", components: "声音、姿势", duration: "专注，至多1分钟",
-    classes: ["吟游诗人","圣武士"],
+    classes: ["吟游诗人", "圣武士"],
     description: "你触碰一个自愿生物使其充满勇气。*该生物直至法术*终止前免疫*恐慌*状态，且它将在其每回合开始时获得等同于你施法属性调整值的临时生命值。",
     higherLevel: "*使用的法术*位每比一环高一环，你就可以额外选择一个生物作为目标。"
   },
@@ -302,7 +302,7 @@ export const SPELL_DB_LEVEL_1: SpellItem[] = [
   {
     id: "gen-ecer", name: "冰刃", source: "PHB'24",
     level: 1, school: "咒法", castingTime: "动作", range: "60尺", components: "姿势、材料（一滴水或一块冰）", duration: "立即",
-    classes: ["德鲁伊","术士","法师"],
+    classes: ["德鲁伊", "术士", "法师"],
     description: "你制造出一块冰晶裂片，并将它射向施法距离内的一个生物。你对目标进*行一次远程法术*攻击。若击中，目标受到 1d10 点穿刺伤害。无论击中与否，裂片都会在那之后立刻爆裂。攻击目标和其5尺范围内的每名生物都必须通过一次敏捷豁免检定，否则将受到 2d6 点寒冷伤害。",
     higherLevel: "*你使用的法术*位每比一环高一环，寒冷伤害就增加1d6。"
   },
@@ -310,14 +310,14 @@ export const SPELL_DB_LEVEL_1: SpellItem[] = [
   {
     id: "gen-lwe2x", name: "鉴定术", source: "PHB'24",
     level: 1, school: "预言", castingTime: "1分钟或仪式", range: "触碰", components: "声音、姿势、材料（一颗价值100GP+的珍珠）", duration: "立即",
-    classes: ["吟游诗人","法师"],
+    classes: ["吟游诗人", "法师"],
     description: "你指定一个物件，并在施法过程中一直与其保持接触。如果该物件是魔法物品或其他附有魔力的物件，则你将知晓其属性和使用方式，以及了解是否需要与之同调。若它是充能物品则你将得知它现存的可用次数。你还可以*发现是否有法术*正影响该物件，以及*可能存在的法术*效应具*体来自哪项法术*。*如果目标由法术*所创，则你将知晓具*体来自哪项法术*。\n如果你施法过程中一直接触的是一生物，则你将知*晓其是否受法术*影响，及*产生影响的法术*效应具*体来自哪些法术*。"
   },
 
   {
     id: "gen-ik0ek8", name: "迷幻手稿", source: "PHB'24",
     level: 1, school: "幻术", castingTime: "1分钟或仪式", range: "触碰", components: "声音、姿势、材料（价值 10+GP 的墨水，作为法术耗材）", duration: "10日",
-    classes: ["吟游诗人","法师"],
+    classes: ["吟游诗人", "法师"],
     description: "你在羊皮纸，纸张或是其他适合书写的材质上书写文字并对其施加一个强力的幻象。其效*应将持续至法术*终止。\n文件对于你和你施法时所指定的生物而言是一份普通的文件，文件内容即是以你的笔迹传达你写下手稿时想要传达的一切意义。而对于所有其他阅读者而言，该文件看起来就像由难懂的未知文字或魔法文字所书写。此外，你还可以使该文件呈现出完全不同的信息，使其看起来是用另一种笔迹或者语言所书写，不过你必须懂得该语言。\n*如果法术*被解除，则幻象和原始手稿一同消失不见。\n拥有真实视觉的生物可以读出其内被隐藏的信息。"
   },
 
@@ -332,7 +332,7 @@ export const SPELL_DB_LEVEL_1: SpellItem[] = [
   {
     id: "gen-lh69r", name: "跳跃术", source: "PHB'24",
     level: 1, school: "变化", castingTime: "附赠动作", range: "触碰", components: "声音、姿势、材料（一只蚱蜢的后腿）", duration: "1分钟",
-    classes: ["德鲁伊","游侠","术士","法师"],
+    classes: ["德鲁伊", "游侠", "术士", "法师"],
     description: "你触碰一个自愿生物。*在法术*结束前，每该生物他的回合内一次，其可以消耗10尺移动力来跳跃至多30尺距离。",
     higherLevel: "*使用的法术*位每比一环高一环，你就可以额外选择一个生物作为目标。"
   },
@@ -340,7 +340,7 @@ export const SPELL_DB_LEVEL_1: SpellItem[] = [
   {
     id: "gen-boz9xy", name: "大步奔行", source: "PHB'24",
     level: 1, school: "变化", castingTime: "动作", range: "触碰", components: "声音、姿势、材料（一撮泥土）", duration: "1 小时",
-    classes: ["吟游诗人","德鲁伊","游侠","法师"],
+    classes: ["吟游诗人", "德鲁伊", "游侠", "法师"],
     description: "你触碰一个生物，该目标的速度增加10尺，*直至法术*结束。",
     higherLevel: "*使用的法术*位每比一环高一环，你就可以额外指定一个目标。"
   },
@@ -348,14 +348,14 @@ export const SPELL_DB_LEVEL_1: SpellItem[] = [
   {
     id: "gen-e4f6e9", name: "法师护甲", source: "PHB'24",
     level: 1, school: "防护", castingTime: "动作", range: "触碰", components: "声音、姿势、材料（一块鞣制过的皮革）", duration: "8小时",
-    classes: ["术士","法师"],
+    classes: ["术士", "法师"],
     description: "你触碰一个未着装护甲的自愿生物。*直至法术*终止前，目标的基础AC变为 13+它的敏捷调整值。当目标穿上护甲时，*此法术*将提前终止。"
   },
 
   {
     id: "gen-k1yokc", name: "魔法飞弹", source: "PHB'24",
     level: 1, school: "塑能", castingTime: "动作", range: "120尺", components: "声音、姿势", duration: "立即",
-    classes: ["术士","法师"],
+    classes: ["术士", "法师"],
     description: "你创造三枚由魔法力场形成的闪光飞镖，并让每发飞镖袭向施法距离内你能看见的指定生物。每发飞镖对目标造成1d4+1点力场伤害。所有飞镖将同时袭向目标，而你还可以指定它们击中同一个目标或是分别击中几个目标。",
     higherLevel: "*使用的法术*位每比一环高一环，*该法术*就会多制造出一支飞镖。"
   },
@@ -363,21 +363,21 @@ export const SPELL_DB_LEVEL_1: SpellItem[] = [
   {
     id: "gen-jcuh0k", name: "防护善恶", source: "PHB'24",
     level: 1, school: "防护", castingTime: "动作", range: "触碰", components: "声音、姿势、材料（一瓶25GP+的圣水，作为此法术的耗材）", duration: "专注，至多10分钟",
-    classes: ["牧师","德鲁伊","圣武士","邪术师","法师"],
+    classes: ["牧师", "德鲁伊", "圣武士", "邪术师", "法师"],
     description: "法术结束前，你使触碰的一名自愿生物获得针对下述生物类型的防护：异怪、天族、元素、妖精、邪魔、亡灵。\n此防护提供下述几种增益。上述生物类型的生物对目标的攻击检定具有劣势。目标不能被其附身，也不会因其陷入魅惑或*恐慌*状态。如果目标已经被具有上述生物类型的生物附身，或其魅惑或*恐慌*状态影响，目标后续进行的相关效应的豁免检定也将具有优势。"
   },
 
   {
     id: "gen-ao435z", name: "净化饮食", source: "PHB'24",
     level: 1, school: "变化", castingTime: "动作或仪式", range: "10尺", components: "声音、姿势", duration: "立即",
-    classes: ["牧师","德鲁伊","圣武士"],
+    classes: ["牧师", "德鲁伊", "圣武士"],
     description: "以施法距离内一点为中心，你移除半径5尺球状 区域内非魔法食物与饮品中的毒素和腐败。"
   },
 
   {
     id: "gen-gvrryk", name: "致病射线", source: "PHB'24",
     level: 1, school: "死灵", castingTime: "动作", range: "60尺", components: "声音、姿势", duration: "立即",
-    classes: ["术士","法师"],
+    classes: ["术士", "法师"],
     description: "你朝施法距离内一名生物射出一道绿色射线。对目标进*行一次远程法术*攻击。若命中，则目标受到2d8点毒素伤害且陷入*中毒*状态，持续至你的下一回合结束。",
     higherLevel: "*使用的法术*位每比一环高一环，*此法术*的伤害就增加1d8点。"
   },
@@ -400,42 +400,42 @@ export const SPELL_DB_LEVEL_1: SpellItem[] = [
   {
     id: "gen-f0xp1", name: "护盾术", source: "PHB'24",
     level: 1, school: "防护", castingTime: "反应，当你被攻击命中或被作为魔法飞弹Magic Missile法术的目标时执行", range: "自身", components: "声音、姿势", duration: "1 轮",
-    classes: ["术士","法师"],
+    classes: ["术士", "法师"],
     description: "一道看不见的力场制护盾浮现在你身旁，保护着你。在你的下一回合开始前，你的 AC 具有+5 加值（*在触发该法术*的攻击之前生效），**并且不会受到魔法飞弹** Missle的伤害。"
   },
 
   {
     id: "gen-hiwg2o", name: "虔诚护盾", source: "PHB'24",
     level: 1, school: "防护", castingTime: "附赠动作", range: "60 尺", components: "声音、姿势、材料（一张祷文卷轴）", duration: "专注，至多 10 分钟",
-    classes: ["牧师","圣武士"],
+    classes: ["牧师", "圣武士"],
     description: "一片闪着微光的能量场围绕着施法距离内你指定的一个生物，*使目标在法术*持续时间内AC获得+2 加值。"
   },
 
   {
     id: "gen-d82a1y", name: "无声幻影", source: "PHB'24",
     level: 1, school: "幻术", castingTime: "动作", range: "60 尺", components: "声音、姿势、材料（少量羊毛）", duration: "专注，至多 10 分钟",
-    classes: ["吟游诗人","术士","法师"],
+    classes: ["吟游诗人", "术士", "法师"],
     description: "你创造一个影像，其形象来自一个大小不超过边长 15 尺立方体的物件，生物或其他的可视现象。影像出现在施法距离内的一*处位置并在法术*持续时间内持续存在。该影像是纯粹的视觉影像；它不会被听觉，嗅觉或其他感官感受到。\n你可以使用魔法动作将影像移动到施法距离内的另一个位置。影像改变位置时，你可以改变影像的外观使其移动得更自然。例如，如果你创造了一个生物的影像并移动它，则你可以改变影像，使它看起来就像是在走路。\n由于影像无法被碰到，任何与该影像进行的物理互动都会暴露其幻象的本质。一个生物使用研究动作调查影像时，它可以进*行一次对抗法术*豁免 DC 的智力（调查）检定。辨出幻象的生物可以看破该影像，在该生物看来会透过影像看到其背后的事物。"
   },
 
   {
     id: "gen-i2b74", name: "睡眠术", source: "PHB'24",
     level: 1, school: "惑控", castingTime: "动作", range: "60 尺", components: "声音、姿势、材料（一把细沙或玫瑰花瓣）", duration: "专注，至多1 分钟",
-    classes: ["吟游诗人","术士","法师"],
+    classes: ["吟游诗人", "术士", "法师"],
     description: "以施法距离内一点为源点，5尺半径球状区域内每个你选择的生物都必须成功通过一次感知豁免否则直到其下个回合结束陷入*失能*状态。在其下个回合结束时，它必须重复此豁免。如果目标第二次豁免失败，目标在持续时间内陷入*昏迷*状态。若目标受到伤害或其5尺内有人用一个动作将其摇醒，*目标身上的法术*结束。\n不需要睡眠的生物（例如精灵）或免疫*力竭*状态的生物自动成功*通过对抗此法术*的豁免。"
   },
 
   {
     id: "gen-awglt1", name: "动物交谈", source: "PHB'24",
     level: 1, school: "预言", castingTime: "动作或仪式", range: "自身", components: "声音、姿势", duration: "10 分钟",
-    classes: ["吟游诗人","德鲁伊","游侠","邪术师"],
+    classes: ["吟游诗人", "德鲁伊", "游侠", "邪术师"],
     description: "*你在法术*持续时间内获得理解野兽生物并用语言与其沟通的能力，并且你可以对它们使用交涉动作时任何技能选项都可以适用。\n大多数野兽在谈及和生存与伙伴无关的话题时能说的很少，但至少，一只野兽能够给你提供周遭的地点和怪物的情报，包括任何它们近一日内察觉到过的东西。"
   },
 
   {
     id: "gen-7a6dmu", name: "塔莎狂笑术", source: "PHB'24",
     level: 1, school: "惑控", castingTime: "动作", range: "30尺", components: "声音、姿势、材料（一块甜馅饼和一根羽毛）", duration: "专注，至多1分钟",
-    classes: ["吟游诗人","邪术师","法师"],
+    classes: ["吟游诗人", "邪术师", "法师"],
     description: "目标在其每回合结束或受到伤害时，可以再进行一次感知豁免。如果豁免是因受到伤害所致，则该次豁免具有优势。豁免成功时，法术终止。",
     higherLevel: "*使用的法术*位每比一环高一环，你就可以额外选择一个生物作为目标。"
   },
@@ -458,7 +458,7 @@ export const SPELL_DB_LEVEL_1: SpellItem[] = [
   {
     id: "gen-mvj2u", name: "雷鸣波", source: "PHB'24",
     level: 1, school: "塑能", castingTime: "动作", range: "自身", components: "声音、姿势", duration: "立即",
-    classes: ["吟游诗人","德鲁伊","术士","法师"],
+    classes: ["吟游诗人", "德鲁伊", "术士", "法师"],
     description: "你释放出一道雷鸣能量。在以你为源点15尺立方区域内的每名生物必须进行一次体质豁免。豁免失败者将受到2d8点雷鸣伤害，并被向远离你的方向推离10尺。豁免成功则只受一半伤害。\n此外，所有完全位于该区域内且未被固定住的物件都将被推离10尺。*该法术*还会发出距你300尺内都能听见的雷霆巨响。",
     higherLevel: "*使用的法术*位每比一环高一环，伤害就提高1d8。"
   },
@@ -466,14 +466,14 @@ export const SPELL_DB_LEVEL_1: SpellItem[] = [
   {
     id: "gen-je05vp", name: "隐形仆役", source: "PHB'24",
     level: 1, school: "咒法", castingTime: "动作或仪式", range: "60尺", components: "声音、姿势、材料（一些线和木头）", duration: "1小时",
-    classes: ["吟游诗人","邪术师","法师"],
+    classes: ["吟游诗人", "邪术师", "法师"],
     description: "*该法术*创造出一个*隐形*、无心智、无定形的中型力场。*你可以在法术*终止前命令它进行简单的工作。该仆役被创造出来后出现在施法距离内一处未占空间的地面上。其AC为10，具有1生命值，力量为2，且不能攻击。若仆从的生命值降至 0，*则法术*终止。\n在每个自己回合内以一个附赠动作 ，你可以精神性的对仆役下达一道命令，使其移动至多15尺并与一个物件进行互动。仆役可以做人类能做到的简单工作，例如拿取东西、打扫卫生、修补东西、叠衣服、点火、上菜、倒饮料等。一旦你下达了命令，仆役就会尽全力去进行任务直至完成任务，并在此后等待你的下一个命令。\n如果你命令仆役做一件需要它离开你身边60尺的工作，*则法术*终止。"
   },
 
   {
     id: "gen-e9gg9", name: "巫术箭", source: "PHB'24",
     level: 1, school: "塑能", castingTime: "动作", range: "60尺", components: "声音、姿势、材料（一根被闪电击中的树枝）", duration: "专注，至多1分钟",
-    classes: ["术士","邪术师","法师"],
+    classes: ["术士", "邪术师", "法师"],
     description: "一支缠绕着碎裂魔力的蓝色能量长矛射向施法距离内的一个生物，并在你与目标之间生成一道持久的闪电弧。对目标进*行一次远程法术*攻击。若命中，则目标受到2d12点闪电伤害。\n无论首次攻击是否命中，在你接下来的每个回合中，你都可以用附赠动作直接对目标造成1d12点闪电伤害。\n此外，如果目标与你之间的*距离超出了法术*的施法距离，或者目标相对你而言处于全身掩护状态，法术将提前终止。",
     higherLevel: "*使用的法术*位每比一环高一环，*此法术*的初始伤害就提高1d12。"
   },

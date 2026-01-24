@@ -1,7 +1,7 @@
 
 import React, { useEffect } from 'react';
 import { CharacterData } from '../types';
-import { SPECIES_DB } from '../data-species';
+import { SPECIES_DB } from '../data';
 import { SPECIES_VARIANTS } from '../utils/characterUtils';
 import WizardLayout from './wizard/WizardLayout';
 import FeatureAccordion from './wizard/FeatureAccordion';
@@ -150,7 +150,7 @@ const StepSpecies: React.FC<Props> = ({ character, updateCharacter }) => {
             <div className="space-y-3">
                 <h3 className="font-bold text-stone-700">种族特性</h3>
                 <div className="space-y-2">
-                    {selectedSpecies.traits.map((trait, idx) => (
+                    {selectedSpecies.traits.map((trait: any, idx: number) => (
                         <FeatureAccordion key={idx} title={trait.name} isComplete>
                             <div className="text-sm text-stone-600 leading-relaxed whitespace-pre-line">
                                 {trait.description}

@@ -1,5 +1,5 @@
 
-import { FeatItem } from './types';
+import { FeatItem } from '../types';
 
 // Origin Feats (Previous Data)
 const ORIGIN_FEATS: FeatItem[] = [

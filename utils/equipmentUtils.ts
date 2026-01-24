@@ -3,10 +3,7 @@
 // Structured equipment options for classes and backgrounds
 
 // Note: These imports are available for future use when implementing item lookups
-import { WEAPON_DB } from '../data-items-weapons';
-import { ARMOR_DB } from '../data-items-armor';
-import { GEAR_DB } from '../data-items-gear';
-import { TOOL_DB } from '../data-items-tools';
+import { WEAPON_DB, ARMOR_DB, GEAR_DB, TOOL_DB } from '../data';
 
 // === Pack Contents Definition ===
 // Defines what items are contained in each equipment pack for expansion

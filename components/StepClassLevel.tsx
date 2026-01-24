@@ -2,7 +2,7 @@
 import React, { useMemo } from 'react';
 import { CLASSES, CLASS_DB } from '../data';
 import { CharacterData, ClassItem } from '../types';
-import { SUBCLASS_DB } from '../data-subclasses';
+import { SUBCLASS_DB } from '../data';
 import WizardLayout from './wizard/WizardLayout';
 import FeatureAccordion from './wizard/FeatureAccordion';
 import { parseSkillOptions, ALL_SKILLS } from '../utils/characterUtils';

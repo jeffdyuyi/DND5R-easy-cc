@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { CharacterData, AbilityScores } from '../types';
 import { User, Book, Sparkles, CheckCircle, AlertCircle, Zap, Package } from 'lucide-react';
-import { BACKGROUND_DB } from '../data-backgrounds';
-import { SPECIES_DB } from '../data-species';
+import { BACKGROUND_DB, SPECIES_DB } from '../data';
 
 interface Props {
   character: CharacterData;
@@ -66,7 +65,7 @@ const StepOrigin: React.FC<Props> = ({ character, updateCharacter }) => {
 
     // 应用技能熟练
     const updatedSkillMastery = { ...character.skillMastery };
-    selectedBackground.skills.forEach(skill => {
+    selectedBackground.skills.forEach((skill: string) => {
       if (!updatedSkillMastery[skill]) {
         updatedSkillMastery[skill] = 1; // 熟练
       }
