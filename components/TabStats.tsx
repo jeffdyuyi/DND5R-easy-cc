@@ -1,8 +1,7 @@
 
 import React, { useState } from 'react';
 import { CharacterData, AbilityScores, ClassItem } from '../types';
-import { CLASS_RECOMMENDATIONS } from '../data';
-import { Dice6, RotateCcw, CheckCircle2, ArrowRightLeft, MousePointerClick, Languages } from 'lucide-react';
+import { Dice6, CheckCircle2, Languages, MousePointerClick } from 'lucide-react';
 import { getModifier, getProficiencyBonus, formatModifier } from '../utils/rules';
 
 interface Props {
@@ -14,7 +13,6 @@ interface Props {
 
 const ABILITY_KEYS: (keyof AbilityScores)[] = ['strength', 'dexterity', 'constitution', 'intelligence', 'wisdom', 'charisma'];
 const ABILITY_LABELS: Record<string, string> = { strength: '力量', dexterity: '敏捷', constitution: '体质', intelligence: '智力', wisdom: '感知', charisma: '魅力' };
-const POINT_BUY_COST: Record<number, number> = { 8: 0, 9: 1, 10: 2, 11: 3, 12: 4, 13: 5, 14: 7, 15: 9 };
 
 // Mapping Skills to their Parent Attribute
 const SKILLS_BY_ABILITY: Record<string, string[]> = {
@@ -35,62 +33,13 @@ const RARE_LANGUAGES = [
 ];
 
 const TabStats: React.FC<Props> = ({ character, updateCharacter, setActiveTab, libraryClasses }) => {
-   const [genMethod, setGenMethod] = useState<'standard' | 'pointbuy' | 'roll' | 'manual'>('standard');
    const [tempScores, setTempScores] = useState<AbilityScores>({ ...character.abilities });
-   const [pointBuyTotal, setPointBuyTotal] = useState(0);
-
-   // Swapping Logic State
-   const [swapMode, setSwapMode] = useState(false);
-   const [swapSource, setSwapSource] = useState<keyof AbilityScores | null>(null);
 
    // Derived Helpers
    const proficiencyBonus = getProficiencyBonus(character.level);
    const classData = libraryClasses.find(c => c.name === character.className);
 
    // --- Handlers ---
-   const handlePointBuyChange = (key: keyof AbilityScores, delta: number) => {
-      const currentVal = tempScores[key];
-      const newVal = currentVal + delta;
-      if (newVal < 8 || newVal > 15) return;
-      let newCost = 0;
-      ABILITY_KEYS.forEach(k => {
-         const v = k === key ? newVal : tempScores[k];
-         newCost += POINT_BUY_COST[v] || 0;
-      });
-      if (newCost > 27) return;
-      setTempScores(prev => ({ ...prev, [key]: newVal }));
-      setPointBuyTotal(newCost);
-   };
-
-   const rollStats = () => {
-      const newStats: any = {};
-      ABILITY_KEYS.forEach(k => {
-         const rolls = Array.from({ length: 4 }, () => Math.floor(Math.random() * 6) + 1);
-         rolls.sort((a, b) => a - b);
-         newStats[k] = rolls.slice(1).reduce((sum, val) => sum + val, 0);
-      });
-      setTempScores(newStats);
-   };
-
-   const handleSwapClick = (key: keyof AbilityScores) => {
-      if (!swapMode) return;
-      if (swapSource === null) {
-         setSwapSource(key);
-      } else {
-         if (swapSource !== key) {
-            // Swap values
-            const sourceVal = tempScores[swapSource];
-            const targetVal = tempScores[key];
-            setTempScores({
-               ...tempScores,
-               [swapSource]: targetVal,
-               [key]: sourceVal
-            });
-         }
-         setSwapSource(null);
-      }
-   };
-
    const toggleSkillMastery = (skillName: string) => {
       const current = character.skillMastery[skillName] || 0;
       const next = (current + 1) % 3;
@@ -114,7 +63,8 @@ const TabStats: React.FC<Props> = ({ character, updateCharacter, setActiveTab, l
    const renderAttributeBlock = (key: keyof AbilityScores) => {
       const base = character.abilities[key];
       const bonus = character.abilityBonuses[key] || 0;
-      const total = base + bonus;
+      const bgBonus = character.backgroundBonuses?.[key] || 0;
+      const total = base + bonus + bgBonus;
       const mod = getModifier(total);
 
       // Resilient Feat Check
@@ -139,7 +89,7 @@ const TabStats: React.FC<Props> = ({ character, updateCharacter, setActiveTab, l
                   <div className="flex items-center gap-1 text-xs text-stone-500 font-mono mt-1">
                      <span className="font-bold">数值:</span> {total}
                      <span className="text-stone-300 mx-1">|</span>
-                     <span>(基础:{base} + {bonus})</span>
+                     <span>(基础:{base} {bonus > 0 && `+ ${bonus}`} {bgBonus > 0 && `+ ${bgBonus}背景`})</span>
                   </div>
                </div>
 
@@ -266,95 +216,31 @@ const TabStats: React.FC<Props> = ({ character, updateCharacter, setActiveTab, l
             </div>
          </div>
 
-         {/* 2. Attribute Generator */}
+         {/* 2. Manual Attribute Editor */}
          <div className="bg-stone-50 p-6 rounded-lg border border-stone-200 shadow-sm relative">
             <h3 className="font-bold text-stone-800 mb-4 flex items-center gap-2 text-sm uppercase">
-               <Dice6 className="w-4 h-4" /> 属性数值生成器
+               <Dice6 className="w-4 h-4" /> 属性数值调整 (手动)
             </h3>
-            <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
-               {/* Method Selector */}
-               <div className="flex gap-2">
-                  {['standard', 'pointbuy', 'roll', 'manual'].map(m => (
-                     <button key={m} onClick={() => { setGenMethod(m as any); setSwapMode(false); }}
-                        className={`px-3 py-1.5 text-xs rounded font-bold transition-colors border ${genMethod === m ? 'bg-dndRed text-white border-dndRed' : 'bg-white border-stone-300 text-stone-600 hover:bg-stone-100'}`}>
-                        {m === 'standard' ? '标准数列' : m === 'pointbuy' ? '购点法' : m === 'roll' ? '随机掷骰' : '手动输入'}
-                     </button>
-                  ))}
-               </div>
 
-               {/* Action Buttons */}
-               <div className="flex gap-2">
-                  {/* Quick Swap Button */}
-                  <button
-                     onClick={() => { setSwapMode(!swapMode); setSwapSource(null); }}
-                     className={`px-3 py-1.5 text-xs rounded font-bold transition-colors border flex items-center gap-1 shadow-sm
-                     ${swapMode ? 'bg-blue-600 text-white border-blue-600 ring-2 ring-blue-300' : 'bg-white text-stone-700 border-stone-300 hover:bg-blue-50'}
-                  `}
-                  >
-                     <ArrowRightLeft className="w-3 h-3" /> {swapMode ? '退出交换' : '交换数值'}
-                  </button>
-
-                  {genMethod === 'roll' && (
-                     <button onClick={rollStats} className="px-3 py-1.5 bg-stone-700 text-white text-xs rounded font-bold hover:bg-stone-600 flex items-center gap-1 shadow-sm">
-                        <RotateCcw className="w-3 h-3" /> 重投
-                     </button>
-                  )}
-                  <button onClick={() => {
-                     const rec = CLASS_RECOMMENDATIONS[character.className];
-                     if (rec) { setTempScores(rec); updateCharacter({ abilities: rec }); }
-                  }} className="px-3 py-1.5 bg-white text-stone-700 border border-stone-300 text-xs rounded font-bold hover:bg-stone-50 shadow-sm">
-                     应用{character.className}推荐值
-                  </button>
-               </div>
-            </div>
-
-            {/* Inputs */}
-            <div className="grid grid-cols-6 gap-4 mt-6">
+            <div className="grid grid-cols-6 gap-4">
                {ABILITY_KEYS.map(key => (
-                  <div key={key} className="flex flex-col items-center group">
+                  <div key={key} className="flex flex-col items-center">
                      <span className="text-[10px] font-bold text-stone-500 mb-1">{ABILITY_LABELS[key]}</span>
-
-                     {/* Logic for Swap Mode vs Normal Input Mode */}
-                     {swapMode ? (
-                        <button
-                           onClick={() => handleSwapClick(key)}
-                           className={`
-                           w-12 h-8 rounded font-bold text-center border-2 transition-all shadow-sm
-                           ${swapSource === key
-                                 ? 'bg-blue-100 border-blue-500 text-blue-700 scale-110'
-                                 : 'bg-white border-stone-300 hover:border-blue-400 text-stone-800'}
-                        `}
-                        >
-                           {tempScores[key]}
-                        </button>
-                     ) : (
-                        <div className="flex items-center gap-1">
-                           {genMethod === 'pointbuy' && <button onClick={() => handlePointBuyChange(key, -1)} className="w-6 h-6 flex items-center justify-center bg-white border border-stone-300 rounded text-xs hover:bg-stone-100">-</button>}
-                           <input
-                              type="number" value={tempScores[key]}
-                              onChange={(e) => setTempScores({ ...tempScores, [key]: parseInt(e.target.value) || 0 })}
-                              className={`w-12 text-center font-bold border border-stone-300 rounded py-1 bg-white focus:outline-none focus:ring-1 focus:ring-dndRed`}
-                              readOnly={genMethod === 'pointbuy'}
-                           />
-                           {genMethod === 'pointbuy' && <button onClick={() => handlePointBuyChange(key, 1)} className="w-6 h-6 flex items-center justify-center bg-white border border-stone-300 rounded text-xs hover:bg-stone-100">+</button>}
-                        </div>
-                     )}
+                     <input
+                        type="number" value={tempScores[key]}
+                        onChange={(e) => setTempScores({ ...tempScores, [key]: parseInt(e.target.value) || 0 })}
+                        className={`w-12 text-center font-bold border border-stone-300 rounded py-1 bg-white focus:outline-none focus:ring-1 focus:ring-dndRed`}
+                     />
                   </div>
                ))}
             </div>
 
             <div className="flex items-center justify-between mt-4 border-t border-stone-200 pt-4">
-               {genMethod === 'pointbuy' ? (
-                  <div className="text-sm font-bold text-stone-600">
-                     花费点数: <span className={pointBuyTotal > 27 ? "text-red-600" : "text-green-600"}>{pointBuyTotal}</span> / 27
-                  </div>
-               ) : (
-                  <div className="text-xs text-stone-400 italic">
-                     {swapMode ? "点击两个属性以互换数值。" : "调整数值后点击确认应用。"}
-                  </div>
-               )}
+               <div className="text-xs text-stone-400 italic">
+                  此处修改的是角色的<b>基础属性值</b> (不含背景加值)。修改后请点击确认。
+               </div>
                <button onClick={() => updateCharacter({ abilities: tempScores })} className="bg-green-600 text-white text-sm font-bold px-6 py-2 rounded shadow hover:bg-green-700 flex items-center gap-2 transition-colors">
-                  <CheckCircle2 className="w-4 h-4" /> 确认并应用到角色
+                  <CheckCircle2 className="w-4 h-4" /> 保存基础数值
                </button>
             </div>
          </div>

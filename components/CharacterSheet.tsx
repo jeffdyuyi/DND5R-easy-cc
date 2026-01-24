@@ -110,12 +110,15 @@ export const CharacterSheet: React.FC<Props> = ({
   <div class="stats-grid">
     ${Object.entries(character.abilities).map(([key, val]) => {
       const labelMap: any = { strength: '力量', dexterity: '敏捷', constitution: '体质', intelligence: '智力', wisdom: '感知', charisma: '魅力' };
-      const mod = getModifier(val as number);
+      const k = key as keyof typeof character.abilities;
+      // Calculate Total: Base + Racial/Feat Bonus + Background Bonus
+      const total = (val as number) + (character.abilityBonuses?.[k] || 0) + (character.backgroundBonuses?.[k] || 0);
+      const mod = getModifier(total);
       const modStr = formatModifier(mod);
       return `
       <div class="stat-box">
         <div class="stat-label">${labelMap[key]}</div>
-        <div class="stat-val">${val}</div>
+        <div class="stat-val">${total}</div>
         <div class="stat-mod">${modStr}</div>
       </div>`;
     }).join('')}
