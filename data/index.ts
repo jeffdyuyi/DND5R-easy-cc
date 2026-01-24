@@ -1,5 +1,5 @@
 
-import { ClassItem, AbilityScores } from './types';
+import { ClassItem, AbilityScores } from '../types';
 import { CLASS_DB } from './data-classes';
 import { SUBCLASS_DB } from './data-subclasses';
 import { SPECIES_DB } from './data-species';
@@ -29,12 +29,12 @@ export const ITEM_DB = [
 ];
 
 // Re-export specific DBs for granular usage if needed
-export { 
-  CLASS_DB, 
-  SUBCLASS_DB, 
-  SPECIES_DB, 
-  BACKGROUND_DB, 
-  SPELL_DB, 
+export {
+  CLASS_DB,
+  SUBCLASS_DB,
+  SPECIES_DB,
+  BACKGROUND_DB,
+  SPELL_DB,
   FEAT_DB,
   WEAPON_DB,
   ARMOR_DB,
