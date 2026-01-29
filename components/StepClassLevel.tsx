@@ -50,8 +50,8 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
   ).length;
   const skillsComplete = skillConfig ? selectedSkillCount >= skillConfig.limit : true;
 
-  // Subclass requirement (usually level 3, but some at level 1)
-  const subclassLevel = selectedClass?.name === '牧师' || selectedClass?.name === '术士' || selectedClass?.name === '魔契师' ? 1 : 3;
+  // Subclass requirement (Standardized to Level 3 for all classes 2024)
+  const subclassLevel = selectedClass?.subclassLevel || 3;
   const needsSubclass = character.level >= subclassLevel && availableSubclasses.length > 0;
   const subclassComplete = !needsSubclass || !!character.subclass;
 

@@ -671,5 +671,590 @@ export const SUBCLASS_DB: SubclassItem[] = [
         description: "可以施展《心灵遥控》无需成分。专注期间每回合可以附赠动作发动一次武器攻击。每长休免费一次，之后消耗灵能骰。"
       }
     ]
+  },
+  // --- CLERIC SUBCLASSES ---
+  {
+    id: "cleric-life",
+    name: "生命领域",
+    parentClass: "牧师",
+    source: "官方规则",
+    description: "生命领域的牧师致力于通过正能量来安抚伤者、治疗病患。你是生命的捍卫者，也是死亡与不死生物的死敌。",
+    features: [
+      {
+        level: 3,
+        name: "生命门徒 (Disciple of Life)",
+        description: "你的治疗法术变得更加有效。每当你使用法术位施展一道恢复生命值的法术时，该法术的目标额外恢复 2 + 法术环阶 的生命值。"
+      },
+      {
+        level: 3,
+        name: "生命领域法术",
+        description: "始终准备：祝福术(1环), 疗伤术(1环), 次级复原术(2环), 援助术(2环), 活力灵光(3环), 复生术(3环), 防死结界(4环), 生命守卫(4环), 群体疗伤术(5环), 高等复原术(5环)。"
+      },
+      {
+        level: 6,
+        name: "神佑医者 (Blessed Healer)",
+        description: "你施展给别人的治疗法术也会治愈你。每当你使用法术位施展一道恢复其他生物生命值的法术时，你自己也恢复 2 + 法术环阶 的生命值。"
+      },
+      {
+        level: 17,
+        name: "极效医疗 (Supreme Healing)",
+        description: "当你通常会造成掷出一个或多个骰子来恢复生命值时，你可以取骰子的最大值来作为结果。"
+      }
+    ]
+  },
+  {
+    id: "cleric-light",
+    name: "光明领域",
+    parentClass: "牧师",
+    source: "官方规则",
+    description: "光明领域的牧师崇敬光辉的理想，如正义、真理与守望。他们驱散黑暗，在这个充满阴影的世界中燃烧成一盏明灯。",
+    features: [
+      {
+        level: 3,
+        name: "守御闪光 (Warding Flare)",
+        description: "你可以在你与攻击你的敌人之间竖起一道神圣之光。当一个你可见的生物对你发动攻击时，你可以用反应对攻击者施以闪光，迫使这次攻击检定具有劣势（次数=感知调整值）。"
+      },
+      {
+        level: 3,
+        name: "光明领域法术",
+        description: "始终准备：燃烧之手(1环), 妖火(1环), 炽焰法球(2环), 灼热射线(2环), 昼明术(3环), 火球术(3环), 信仰守卫(4环), 火墙术(4环), 焰击术(5环), 探知(5环)。此外，你获得光亮术戏法。"
+      },
+      {
+        level: 6,
+        name: "强化守御闪光 (Improved Warding Flare)",
+        description: "当一个你可见的生物对你身处于 30 尺内的其他生物发动攻击时，你也可以使用你的守御闪光特性。"
+      },
+      {
+        level: 17,
+        name: "光晕 (Corona of Light)",
+        description: "你可以用一个魔法动作启动光显，持续 1 分钟。开启时，光照范围内的敌人若进行对抗造成火焰或光耀伤害法术的豁免检定时，该豁免具有劣势。"
+      }
+    ]
+  },
+  {
+    id: "cleric-trickery",
+    name: "诡术领域",
+    parentClass: "牧师",
+    source: "官方规则",
+    description: "诡术领域的牧师通过幻象、欺瞒与潜行来服务于神灵。",
+    features: [
+      {
+        level: 3,
+        name: "阴影祝福 (Blessing of the Trickster)",
+        description: "你可以用一个魔法动作触碰除你之外的一个自愿生物，给予其敏捷（隐匿）检定优势，持续 1 小时。"
+      },
+      {
+        level: 3,
+        name: "诡术领域法术",
+        description: "始终准备：魅惑人类(1环), 易容术(1环), 镜影术(2环), 通过无踪(2环), 闪现术(3环), 驱散魔法(3环), 任意门(4环), 变形术(4环), 支配人类(5环), 修改记忆(5环)。"
+      },
+      {
+        level: 6,
+        name: "引导神力：双生幻象 (Invoke Duplicity)",
+        description: "您可以制造一个完美的幻象，并可以通过它来施法。当你和幻象都在目标5尺内时，你的攻击优势。"
+      },
+      {
+        level: 17,
+        name: "强化双生幻象 (Improved Duplicity)",
+        description: "你可以创造至多四个幻象，并能够同时移动它们。"
+      }
+    ]
+  },
+  {
+    id: "cleric-war",
+    name: "战争领域",
+    parentClass: "牧师",
+    source: "官方规则",
+    description: "战争领域的牧师不仅仅是随军祭司，更是战场上的勇士。",
+    features: [
+      {
+        level: 3,
+        name: "战争祭司 (War Priest)",
+        description: "当你使用攻击动作攻击时，你可以用附赠动作发动一次武器攻击（次数=感知调整值）。"
+      },
+      {
+        level: 3,
+        name: "战争领域法术",
+        description: "始终准备：神恩(1环), 虔诚护盾(1环), 魔法武器(2环), 灵体武器(2环), 十字军披风(3环), 灵体守卫(3环), 行动自如(4环), 石肤术(4环), 焰击术(5环), 怪物定身术(5环)。"
+      },
+      {
+        level: 3,
+        name: "引导神力：引导打击 (Guided Strike)",
+        description: "攻击检定 +10。"
+      },
+      {
+        level: 6,
+        name: "引导神力：战争神佑 (War God's Blessing)",
+        description: "反应使30尺内可见生物的攻击检定 +10。"
+      },
+      {
+        level: 17,
+        name: "战争化身 (Avatar of Battle)",
+        description: "你获得对非魔法攻击造成的钝击、穿刺和挥砍伤害的抗性。"
+      }
+    ]
+  },
+  // --- DRUID SUBCLASSES ---
+  {
+    id: "druid-land",
+    name: "大地结社",
+    parentClass: "德鲁伊",
+    source: "官方规则",
+    description: "大地结社的德鲁伊是古老知识的守护者。",
+    features: [
+      {
+        level: 3,
+        name: "自然恢复 (Natural Recovery)",
+        description: "短休恢复法术位（等于等级一半）。"
+      },
+      {
+        level: 3,
+        name: "大地法术",
+        description: "根据选择的地貌获得始终准备法术。"
+      },
+      {
+        level: 6,
+        name: "大地行者 (Land's Stride)",
+        description: "无视非魔法困难地形。对抗植物魔法优势。"
+      },
+      {
+        level: 10,
+        name: "自然屏障 (Nature's Ward)",
+        description: "免疫毒素和疾病，不被精类/元素魅惑恐吓。"
+      },
+      {
+        level: 14,
+        name: "自然圣所 (Nature's Sanctuary)",
+        description: "自然生物攻击你需要过感知豁免。"
+      }
+    ]
+  },
+  {
+    id: "druid-moon",
+    name: "月亮结社",
+    parentClass: "德鲁伊",
+    source: "官方规则",
+    description: "月亮结社的德鲁伊是荒野形态的大师。",
+    features: [
+      {
+        level: 3,
+        name: "战斗荒野形态",
+        description: "附赠动作变身。可消耗法术位回血。"
+      },
+      {
+        level: 3,
+        name: "环月形态",
+        description: "可变身CR 1野兽。"
+      },
+      {
+        level: 6,
+        name: "原初打击",
+        description: "野兽形态攻击视为魔法攻击。"
+      },
+      {
+        level: 10,
+        name: "元素荒野形态",
+        description: "消耗2次变身变为元素生物。"
+      },
+      {
+        level: 14,
+        name: "千面之身",
+        description: "随意施展变身术。"
+      }
+    ]
+  },
+  {
+    id: "druid-sea",
+    name: "海洋结社",
+    parentClass: "德鲁伊",
+    source: "官方规则",
+    description: "与海洋建立深刻联系。",
+    features: [
+      {
+        level: 3,
+        name: "海洋之怒",
+        description: "反应造成冷冻/雷鸣伤害。"
+      },
+      {
+        level: 6,
+        name: "水栖适应",
+        description: "游泳速度，水下呼吸。"
+      },
+      {
+        level: 10,
+        name: "风暴之眼",
+        description: "获得飞行速度，抗性。"
+      },
+      {
+        level: 14,
+        name: "海洋化身",
+        description: "海洋之怒增强。"
+      }
+    ]
+  },
+  {
+    id: "druid-stars",
+    name: "星辰结社",
+    parentClass: "德鲁伊",
+    source: "官方规则",
+    description: "观测星象，获得力量。",
+    features: [
+      {
+        level: 3,
+        name: "星图",
+        description: "获得光导箭和神导术。"
+      },
+      {
+        level: 3,
+        name: "星辰形态",
+        description: "变身为发光的星座形态，获得增益。"
+      },
+      {
+        level: 6,
+        name: "宇宙兆象",
+        description: "每日随机吉兆/凶兆。"
+      },
+      {
+        level: 10,
+        name: "星光灿烂",
+        description: "形态增强。"
+      },
+      {
+        level: 14,
+        name: "众星充盈",
+        description: "物理抗性。"
+      }
+    ]
+  },
+  // --- MONK SUBCLASSES ---
+  {
+    id: "monk-mercy",
+    name: "命流武者",
+    parentClass: "武僧",
+    source: "官方规则",
+    description: "操纵生命力进行治疗与伤害。",
+    features: [
+      {
+        level: 3,
+        name: "医疗手/伤害手",
+        description: "消耗气治疗盟友或对敌人造成额外黯蚀伤害。"
+      },
+      {
+        level: 6,
+        name: "医者之触",
+        description: "移除状态。"
+      },
+      {
+        level: 11,
+        name: "疾风乱舞",
+        description: "疾风连击时可免费使用医疗手/伤害手。"
+      },
+      {
+        level: 17,
+        name: "起死回生",
+        description: "消耗5气复活死者。"
+      }
+    ]
+  },
+  {
+    id: "monk-shadow",
+    name: "暗影武者",
+    parentClass: "武僧",
+    source: "官方规则",
+    description: "潜行于阴影之中的忍者。",
+    features: [
+      {
+        level: 3,
+        name: "暗影技艺",
+        description: "获得黑暗视觉，可施展黑暗术/沉默术等。"
+      },
+      {
+        level: 6,
+        name: "暗影步",
+        description: "附赠动作在阴影间传送60尺，首次攻击优势。"
+      },
+      {
+        level: 11,
+        name: "隐形斗篷",
+        description: "在昏暗/黑暗中隐形。"
+      },
+      {
+        level: 17,
+        name: "借机攻击",
+        description: "被借机攻击击中时反应反击。"
+      }
+    ]
+  },
+  {
+    id: "monk-elements",
+    name: "四象武者",
+    parentClass: "武僧",
+    source: "官方规则",
+    description: "驾驭元素之力的武者。",
+    features: [
+      {
+        level: 3,
+        name: "元素调和",
+        description: "徒手打击距离增加，且可造成元素伤害。"
+      },
+      {
+        level: 6,
+        name: "环境爆发",
+        description: "造成AoE元素伤害。"
+      },
+      {
+        level: 11,
+        name: "大步流星",
+        description: "获得飞行/游泳速度。"
+      },
+      {
+        level: 17,
+        name: "元素显赫",
+        description: "获得伤害抗性，且反伤。"
+      }
+    ]
+  },
+  {
+    id: "monk-openhand",
+    name: "散打武者",
+    parentClass: "武僧",
+    source: "官方规则",
+    description: "精通纯粹武术技巧的大师。",
+    features: [
+      {
+        level: 3,
+        name: "疾风连击技法",
+        description: "疾风连击附带击倒、推离或封锁反应效果。"
+      },
+      {
+        level: 6,
+        name: "肉体完整",
+        description: "附赠动作回血。"
+      },
+      {
+        level: 11,
+        name: "轻盈步伐",
+        description: "相当于圣域术效果。"
+      },
+      {
+        level: 17,
+        name: "震颤点穴",
+        description: "消耗3气造成巨额伤害（10d10）。"
+      }
+    ]
+  },
+  // --- PALADIN SUBCLASSES ---
+  {
+    id: "paladin-devotion",
+    name: "奉献之誓",
+    parentClass: "圣武士",
+    source: "官方规则",
+    description: "传统的正义圣骑士，代表荣耀、责任和怜悯。",
+    features: [
+      { level: 3, name: "圣洁武器", description: "引导神力：武器攻击检定增加魅力调整值。" },
+      { level: 7, name: "奉献灵光", description: "免疫魅惑。" },
+      { level: 15, name: "纯洁精神", description: "常驻防护善恶。" },
+      { level: 20, name: "神圣光轮", description: "化身光耀天使，造成光耀伤害。" }
+    ]
+  },
+  {
+    id: "paladin-glory",
+    name: "荣耀之誓",
+    parentClass: "圣武士",
+    source: "官方规则",
+    description: "追求英雄事迹和荣耀。",
+    features: [
+      { level: 3, name: "无双运动", description: "引导神力：运动检定优势，跳跃距离增加。" },
+      { level: 7, name: "迅捷灵光", description: "增加移动速度。" },
+      { level: 15, name: "荣耀防御", description: "反应增加AC。" },
+      { level: 20, name: "活体传奇", description: "命中优势，重骰豁免。" }
+    ]
+  },
+  {
+    id: "paladin-ancients",
+    name: "古贤之誓",
+    parentClass: "圣武士",
+    source: "官方规则",
+    description: "守护光与自然，对抗黑暗。",
+    features: [
+      { level: 3, name: "自然之怒", description: "引导神力：束缚敌人。" },
+      { level: 7, name: "守护灵光", description: "法术伤害抗性。" },
+      { level: 15, name: "不朽哨卫", description: "被击倒至0时可变为1（每日一次）。" },
+      { level: 20, name: "古贤斗士", description: "变身自然化身，拥有快速再生与强力施法。" }
+    ]
+  },
+  {
+    id: "paladin-vengeance",
+    name: "复仇之誓",
+    parentClass: "圣武士",
+    source: "官方规则",
+    description: "为了惩恶扬善不择手段。",
+    features: [
+      { level: 3, name: "仇敌誓言", description: "引导神力：对单一敌人攻击优势。" },
+      { level: 7, name: "无情复仇者", description: "借机攻击后可移动。" },
+      { level: 15, name: "复仇之魂", description: "对仇敌誓言目标攻击优势。" },
+      { level: 20, name: "复仇天使", description: "飞行速度，恐惧灵光。" }
+    ]
+  },
+  // --- SORCERER SUBCLASSES ---
+  {
+    id: "sorcerer-aberrant",
+    name: "畸变术法",
+    parentClass: "术士",
+    source: "官方规则",
+    description: "异界存在触碰了你的灵魂。获得心灵感应能力。",
+    features: [
+      { level: 3, name: "灵能法术", description: "获得额外法术，可消耗术法点施展并无视成分。" },
+      { level: 6, name: "灵能防御", description: "对抗心灵伤害获得抗性。" },
+      { level: 14, name: "灵能显化", description: "展现真实的异界形态（飞行、虚体、视物等）。" },
+      { level: 18, name: "心灵爆破", description: "瞬移并造成范围伤害。" }
+    ]
+  },
+  {
+    id: "sorcerer-clockwork",
+    name: "时械术法",
+    parentClass: "术士",
+    source: "官方规则",
+    description: "来自机械境的秩序之力。",
+    features: [
+      { level: 3, name: "时钟之魂", description: "获得额外防护/变化系法术。" },
+      { level: 3, name: "恢复平衡", description: "消除优劣势。" },
+      { level: 6, name: "律令壁垒", description: "消耗术法点为盟友提供护盾。" },
+      { level: 14, name: "秩序出神", description: "攻击必中，豁免必过（取10）。" },
+      { level: 18, name: "时钟行者", description: "修复生命，如同时间倒流。" }
+    ]
+  },
+  {
+    id: "sorcerer-draconic",
+    name: "龙族术法",
+    parentClass: "术士",
+    source: "官方规则",
+    description: "主要特征是龙族血统。",
+    features: [
+      { level: 3, name: "龙族体质", description: "HP增加，基础AC 13+敏捷。" },
+      { level: 6, name: "元素亲和", description: "造成对应元素伤害+魅力调整值。可消耗术法点获得抗性。" },
+      { level: 14, name: "龙翼", description: "获得飞行速度。" },
+      { level: 18, name: "龙威灵光", description: "造成恐惧或魅惑。" }
+    ]
+  },
+  {
+    id: "sorcerer-wild",
+    name: "狂野术法",
+    parentClass: "术士",
+    source: "官方规则",
+    description: "混乱的魔法源泉。",
+    features: [
+      { level: 3, name: "狂野魔法浪涌", description: "施法后可能触发随机魔法效应。" },
+      { level: 3, name: "混沌浪涌", description: "获得优势，但可能触发狂野魔法。" },
+      { level: 6, name: "扭曲命运", description: "消耗术法点改变检定结果（加/减 d4）。" },
+      { level: 14, name: "受控混沌", description: "狂野魔法表掷两次选一次。" },
+      { level: 18, name: "法术轰炸", description: "伤害骰最大值时，再次投掷并累加。" }
+    ]
+  },
+  // --- WARLOCK SUBCLASSES ---
+  {
+    id: "warlock-archfey",
+    name: "至高妖精",
+    parentClass: "魔契师",
+    source: "官方规则",
+    description: "与妖精荒野的领主缔结契约。",
+    features: [
+      { level: 3, name: "妖精姿态", description: "使用法术位时可瞬移并隐形/魅惑/恐惧周围。" },
+      { level: 6, name: "迷雾护体", description: "利用迷雾减免伤害并传送。" },
+      { level: 10, name: "迷人防御", description: "免疫魅惑，反弹魅惑。" },
+      { level: 14, name: "黑暗谵妄", description: "将目标困入幻境。" }
+    ]
+  },
+  {
+    id: "warlock-celestial",
+    name: "天界宗主",
+    parentClass: "魔契师",
+    source: "官方规则",
+    description: "与上层位面的存在缔结契约，获得治疗能力。",
+    features: [
+      { level: 3, name: "治愈之光", description: "拥有d6治疗池，附赠动作治疗。" },
+      { level: 6, name: "光耀之魂", description: "光耀/火焰伤害抗性，且造成伤害增加。" },
+      { level: 10, name: "天界任性", description: "获得临时生命值（给自己和队友）。" },
+      { level: 14, name: "灼热复仇", description: "被击倒时爆发光耀伤害并复活。" }
+    ]
+  },
+  {
+    id: "warlock-fiend",
+    name: "邪魔宗主",
+    parentClass: "魔契师",
+    source: "官方规则",
+    description: "与下层位面的邪魔缔结契约。",
+    features: [
+      { level: 3, name: "黑暗赐福", description: "击杀敌人获得临时生命值（等级+魅力）。" },
+      { level: 6, name: "黑暗以待", description: "每长休一次，给自己增加一个d10检定加值。" },
+      { level: 10, name: "邪魔防御", description: "每短休选择一种伤害抗性。" },
+      { level: 14, name: "被抛入地狱", description: "将敌人放逐到地狱造成10d10心灵伤害。" }
+    ]
+  },
+  {
+    id: "warlock-goo",
+    name: "旧日支配者",
+    parentClass: "魔契师",
+    source: "官方规则",
+    description: "与不可名状的远古存在缔结契约。",
+    features: [
+      { level: 3, name: "唤醒心智", description: "心灵感应。" },
+      { level: 6, name: "熵光守卫", description: "反应使敌人攻击劣势，若失手则下次你对其优势。" },
+      { level: 10, name: "思维之盾", description: "免疫读心，心灵伤害抗性。" },
+      { level: 14, name: "创造机缘", description: "永久魅惑一个类人生物。" }
+    ]
+  },
+  // --- WIZARD SUBCLASSES ---
+  {
+    id: "wizard-abjuration",
+    name: "防护学派",
+    parentClass: "法师",
+    source: "官方规则",
+    description: "专注于保护与封印。",
+    features: [
+      { level: 3, name: "奥术守御", description: "施展防护法术获得魔法盾（HP=2x等级+智力）。" },
+      { level: 6, name: "投射守御", description: "用反应将奥术守御替队友抵挡伤害。" },
+      { level: 10, name: "强化防护", description: "施法属性检定增加熟练加值（如反制法术）。" },
+      { level: 14, name: "法术抗力", description: "魔法抗性（法术伤害减半，豁免优势）。" }
+    ]
+  },
+  {
+    id: "wizard-divination",
+    name: "预言学派",
+    parentClass: "法师",
+    source: "官方规则",
+    description: "窥视过去、现在与未来。",
+    features: [
+      { level: 3, name: "预兆 (Portent)", description: "长休后投2个d20，可替换任意攻击/检定/豁免。" },
+      { level: 6, name: "专家预言", description: "施展预言法术返还低环法术位。" },
+      { level: 10, name: "第三只眼", description: "获得黑暗视觉/看破隐形等能力。" },
+      { level: 14, name: "高等预兆", description: "预兆骰变为3个。" }
+    ]
+  },
+  {
+    id: "wizard-evocation",
+    name: "塑能学派",
+    parentClass: "法师",
+    source: "官方规则",
+    description: "掌控元素能量与毁灭。",
+    features: [
+      { level: 3, name: "法术塑形", description: "塑能法术范围内的选中生物自动通过豁免且不受伤害。" },
+      { level: 6, name: "强力戏法", description: "戏法豁免成功依然造成一半伤害。" },
+      { level: 10, name: "强效塑能", description: "塑能法术伤害增加智力调整值。" },
+      { level: 14, name: "超限引导", description: "造成最大伤害，由于过载会受到伤害。" }
+    ]
+  },
+  {
+    id: "wizard-illusion",
+    name: "幻术学派",
+    parentClass: "法师",
+    source: "官方规则",
+    description: "编织虚假的现实。",
+    features: [
+      { level: 3, name: "强化幻影", description: "不仅限于视觉，可包含声音。" },
+      { level: 6, name: "可塑幻影", description: "可见幻术可随意外形改变。" },
+      { level: 10, name: "幻身术", description: "反应创造幻象使攻击失手。" },
+      { level: 14, name: "幻实成真", description: "将幻象中的一个物体变为真实，持续1分钟。" }
+    ]
   }
 ];
