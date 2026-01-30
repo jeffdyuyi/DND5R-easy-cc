@@ -60,6 +60,13 @@ export interface ClassFeature {
   name: string;
   description: string;
   level: number;
+  grants?: {
+    weaponProficiencies?: string[];
+    armorProficiencies?: string[];
+    skillProficiencies?: string[];
+    toolProficiencies?: string[];
+    savingThrows?: string[];
+  };
 }
 
 export interface Subclass {
