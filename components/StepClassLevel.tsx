@@ -1,14 +1,14 @@
 
 import React, { useMemo } from 'react';
-import { CLASSES, CLASS_DB } from '../data';
+import { CLASSES, CLASS_DB, SUBCLASS_DB, WEAPON_DB } from '../data';
 import { CharacterData, ClassItem } from '../types';
-import { SUBCLASS_DB } from '../data';
 import WizardLayout from './wizard/WizardLayout';
 import FeatureAccordion from './wizard/FeatureAccordion';
 import { parseSkillOptions, ALL_SKILLS } from '../utils/characterUtils';
 import {
   Plus, Minus, Sword, Wand2, Shield, Cross,
-  Music, Leaf, Flame, Moon, Skull, Sparkles, CheckCircle, AlertCircle
+  Music, Leaf, Flame, Moon, Skull, Sparkles, CheckCircle, AlertCircle,
+  Axe, Zap, Eye, Target, Footprints
 } from 'lucide-react';
 
 interface Props {
@@ -18,37 +18,28 @@ interface Props {
 
 // Icon map for classes
 const CLASS_ICONS: Record<string, React.ReactNode> = {
-  '野蛮人': <Flame className="w-8 h-8" />,
+  '野蛮人': <Axe className="w-8 h-8" />,
   '吟游诗人': <Music className="w-8 h-8" />,
   '牧师': <Cross className="w-8 h-8" />,
   '德鲁伊': <Leaf className="w-8 h-8" />,
   '战士': <Sword className="w-8 h-8" />,
   '武僧': <Moon className="w-8 h-8" />,
   '圣武士': <Shield className="w-8 h-8" />,
-  '游侠': <Sparkles className="w-8 h-8" />,
-  '游荡者': <Skull className="w-8 h-8" />,
-  '术士': <Flame className="w-8 h-8" />,
-  '魔契师': <Skull className="w-8 h-8" />,
+  '游侠': <Target className="w-8 h-8" />,
+  '游荡者': <Footprints className="w-8 h-8" />,
+  '术士': <Zap className="w-8 h-8" />,
+  '魔契师': <Eye className="w-8 h-8" />,
   '法师': <Wand2 className="w-8 h-8" />,
 };
 
 const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
   const selectedClass: ClassItem | undefined = character.className ? CLASSES[character.className] : undefined;
 
-
-
   // Get subclasses for selected class
   const availableSubclasses = useMemo(() => {
     if (!selectedClass) return [];
     return SUBCLASS_DB.filter(sc => sc.parentClass === selectedClass.name);
   }, [selectedClass]);
-
-  // Skill parsing
-  const skillConfig = selectedClass ? parseSkillOptions(selectedClass.coreTraits.skillProficiencies) : null;
-  const selectedSkillCount = Object.keys(character.skillMastery || {}).filter(
-    k => skillConfig?.options.includes("ALL_SKILLS") || skillConfig?.options.includes(k)
-  ).length;
-  const skillsComplete = skillConfig ? selectedSkillCount >= skillConfig.limit : true;
 
   // Subclass requirement (Standardized to Level 3 for all classes 2024)
   const subclassLevel = selectedClass?.subclassLevel || 3;
@@ -63,30 +54,94 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
     if (character.level > 1) updateCharacter({ level: character.level - 1 });
   };
 
+  // Get features for current level (Base Class + Subclass)
+  const currentFeatures = useMemo(() => {
+    if (!selectedClass) return [];
+
+    // Base features
+    const baseFeatures = selectedClass.features.filter(f => f.level <= character.level);
+
+    // Subclass features
+    let subFeatures: any[] = [];
+    if (character.subclass) {
+      const sc = SUBCLASS_DB.find(s => s.name === character.subclass && s.parentClass === selectedClass.name);
+      if (sc) {
+        subFeatures = sc.features.filter(f => f.level <= character.level);
+      }
+    }
+
+    // Combine and sort
+    return [...baseFeatures, ...subFeatures].sort((a, b) => {
+      if (a.level === b.level) {
+        // If levels are same, put base class feature first usually
+        return 0;
+      }
+      return a.level - b.level;
+    });
+  }, [selectedClass, character.level, character.subclass]);
+
+  // Calculate proficiency bonus
+  const proficiencyBonus = Math.ceil(character.level / 4) + 1;
+
+  // --- Weapon Mastery Logic ---
+  const hasWeaponMastery = currentFeatures.some(f => f.name.includes('武器精通'));
+
+  const masteryOptions = useMemo(() => {
+    return WEAPON_DB.filter(w =>
+      w.type === '武器' &&
+      w.tags?.includes('近战') &&
+      (w.tags?.includes('简易武器') || w.tags?.includes('军用武器')) &&
+      w.mastery // Must have mastery property
+    );
+  }, []);
+
+  const wm1 = character.equipmentChoices?.classSubChoices?.['weaponMastery1'] || '';
+  const wm2 = character.equipmentChoices?.classSubChoices?.['weaponMastery2'] || '';
+
+  const updateWeaponMastery = (key: string, value: string) => {
+    updateCharacter({
+      equipmentChoices: {
+        ...character.equipmentChoices,
+        classSubChoices: {
+          ...character.equipmentChoices?.classSubChoices,
+          [key]: value
+        }
+      }
+    });
+  };
+
+  const weaponMasteryComplete = !hasWeaponMastery || (!!wm1 && !!wm2);
+
+  // --- Skill Parsing Logic (with Primal Knowledge) ---
+  const skillConfig = selectedClass ? parseSkillOptions(selectedClass.coreTraits.skillProficiencies) : null;
+  const selectedSkillCount = Object.keys(character.skillMastery || {}).filter(
+    k => skillConfig?.options.includes("ALL_SKILLS") || skillConfig?.options.includes(k)
+  ).length;
+
+  let skillLimit = skillConfig?.limit || 0;
+  // Primal Knowledge Adjustment: Barbarian Level 3+ gets 1 extra skill
+  if (selectedClass?.name === '野蛮人' && character.level >= 3) {
+    skillLimit += 1;
+  }
+
+  const skillsComplete = skillConfig ? selectedSkillCount >= skillLimit : true;
+
   // Toggle skill
   const toggleSkill = (skill: string) => {
     const current = { ...character.skillMastery };
     if (current[skill]) {
       delete current[skill];
-    } else if (skillConfig && selectedSkillCount < skillConfig.limit) {
+    } else if (skillConfig && selectedSkillCount < skillLimit) {
       current[skill] = 1;
     }
     updateCharacter({ skillMastery: current });
   };
 
-  // Get features for current level
-  const currentFeatures = useMemo(() => {
-    if (!selectedClass) return [];
-    return selectedClass.features.filter(f => f.level <= character.level);
-  }, [selectedClass, character.level]);
-
-  // Calculate proficiency bonus
-  const proficiencyBonus = Math.ceil(character.level / 4) + 1;
 
   // === LEFT PANEL: Class Selection ===
   const leftPanel = (
     <div className="p-4 space-y-4">
-      {/* Level Control - 移到顶部 */}
+      {/* Level Control */}
       <div className="bg-gradient-to-r from-amber-50 to-amber-100 p-4 rounded-lg border border-amber-200">
         <div className="flex items-center justify-between">
           <span className="font-bold text-stone-700">角色等级</span>
@@ -218,10 +273,56 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
           </FeatureAccordion>
         )}
 
+        {/* Weapon Mastery Selection */}
+        {hasWeaponMastery && (
+          <FeatureAccordion
+            title={`武器精通选择 (${(wm1 && wm2) ? '2/2' : (wm1 || wm2) ? '1/2' : '0/2'})`}
+            level={1}
+            isPending={!weaponMasteryComplete}
+            isComplete={weaponMasteryComplete}
+            defaultOpen={!weaponMasteryComplete}
+          >
+            <div className="space-y-4">
+              <p className="text-sm text-stone-600">
+                选择两种武器以应用其精通词条。当你使用这两种武器时，你可以运用其精通特性。
+              </p>
+
+              {[1, 2].map(idx => {
+                const key = `weaponMastery${idx}`;
+                const val = idx === 1 ? wm1 : wm2;
+                const selectedWeapon = masteryOptions.find(w => w.id === val);
+
+                return (
+                  <div key={idx} className="bg-stone-50 p-3 rounded border border-stone-200">
+                    <label className="block text-xs font-bold text-stone-500 uppercase mb-1">精通武器 {idx}</label>
+                    <select
+                      value={val}
+                      onChange={e => updateWeaponMastery(key, e.target.value)}
+                      className="w-full p-2 border border-stone-300 rounded text-sm mb-2"
+                    >
+                      <option value="">-- 选择武器 --</option>
+                      {masteryOptions.map(w => (
+                        <option key={w.id} value={w.id}>{w.name} ({w.mastery?.split(':')[0]?.trim()?.replace('**', '')?.replace('**', '') || '精通'})</option>
+                      ))}
+                    </select>
+
+                    {selectedWeapon && selectedWeapon.mastery && (
+                      <div className="text-xs text-stone-600 bg-white p-2 rounded border border-stone-100">
+                        <span className="font-bold text-dndRed">{selectedWeapon.mastery.split(':')[0]}</span>:
+                        {selectedWeapon.mastery.split(':')[1]}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </FeatureAccordion>
+        )}
+
         {/* Skill Proficiency Selection */}
         {skillConfig && (
           <FeatureAccordion
-            title={`技能熟练选择 (${selectedSkillCount}/${skillConfig.limit})`}
+            title={`技能熟练选择 (${selectedSkillCount}/${skillLimit})`}
             level={1}
             isPending={!skillsComplete}
             isComplete={skillsComplete}
@@ -229,12 +330,13 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
           >
             <div className="space-y-3">
               <p className="text-sm text-stone-600">
-                从以下技能中选择 <strong>{skillConfig.limit}</strong> 项：
+                从以下技能中选择 <strong>{skillLimit}</strong> 项
+                {skillLimit > skillConfig.limit && <span className="text-dndRed ml-1">(包含原初学识+1)</span>}：
               </p>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
                 {(skillConfig.options.includes("ALL_SKILLS") ? ALL_SKILLS : skillConfig.options).map(skill => {
                   const isSelected = !!character.skillMastery?.[skill];
-                  const isDisabled = !isSelected && selectedSkillCount >= skillConfig.limit;
+                  const isDisabled = !isSelected && selectedSkillCount >= skillLimit;
                   return (
                     <button
                       key={skill}

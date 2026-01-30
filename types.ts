@@ -90,6 +90,21 @@ export interface ClassItem extends BaseLibraryItem {
   features: ClassFeature[];
   subclasses: Subclass[];
   subclassLevel: number;
+  classTable?: ClassTableData;
+}
+
+export interface ClassTableData {
+  title: string;
+  columns: {
+    header: string;
+    key: string;
+  }[];
+  rows: {
+    level: number;
+    pb: string;
+    features: string[];
+    [key: string]: string | number | string[];
+  }[];
 }
 
 // New Types for Libraries
