@@ -4,6 +4,7 @@ import { CharacterData, ClassItem, SubclassItem, ClassFeature, FeatItem } from '
 import { Shield, Info, Star, Plus, X, Search, CheckCircle, Swords, Crown } from 'lucide-react';
 import { CardLibrary } from './CardLibrary';
 import { RichText } from './RichText';
+import { ClassFeatureTable } from './ClassFeatureTable';
 
 interface Props {
    character: CharacterData;
@@ -500,9 +501,13 @@ const TabClass: React.FC<Props> = ({ character, updateCharacter, libraryClasses,
                      )}
                   </div>
 
+
                   {/* Right Column: Features */}
                   <div className="lg:col-span-2">
-                     <h4 className="font-bold text-lg text-stone-800 mb-4 flex items-center gap-2">
+                     {/* Class Feature Table */}
+                     {classData.classTable && <ClassFeatureTable data={classData.classTable} />}
+
+                     <h4 className="font-bold text-lg text-stone-800 mb-4 mt-6 flex items-center gap-2">
                         <Info className="w-5 h-5 text-dndRed" /> 职业特性 (当前等级: {character.level})
                      </h4>
 

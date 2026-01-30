@@ -5,11 +5,12 @@ export const BARD_CLASS: ClassItem = {
     name: "吟游诗人",
     source: "官方规则",
     description: "万金油\n全能辅助\n擅长社交\n魔法奥秘\n技能专家",
-    fullDescription: "你在你的吟游艺术中学会了如何施展法术。参见第 7 章有关施法的规则。下述信息将详述如何将这些规则应用于吟游诗人法术。",
+    fullDescription: "吟游诗人以音乐、舞蹈和诗歌唤起魔法，他们是鼓舞同伴、减轻伤痛、挫敌士气、创造幻象的专家。吟游诗人相信多元宇宙是因言语而化虚为实的，其创生圣言的残响依旧在各个存在位面之间回荡闪烁。诗人的魔法便是尝试利用那些超越任何语言的圣言。\n\n任何事物都可能成为创作新歌曲或是新故事的灵感，因此吟游诗人几乎沉浸于一切事物。他们在各个领域都钻研至深，无论是音乐表演、研习魔法还是单纯地找乐子。\n\n吟游诗人的生活与普通艺人没什么两样，充斥着旅行各地、收集传说、讲述故事然后靠着观众的打赏生活。但渊博的知识与对魔法的运用让吟游诗人与众不同。",
     hitDie: "d8",
     primaryAbility: "魅力",
     saves: ["敏捷", "魅力"],
     tags: ["辅助", "控制", "社交"],
+    spellList: "吟游诗人", // 吟游诗人使用自己的法术列表
     coreTraits: {
         primaryAbility: "魅力",
         hitPointDie: "每吟游诗人等级 d8",
@@ -23,32 +24,74 @@ export const BARD_CLASS: ClassItem = {
         }
     },
     subclassLevel: 3,
+    classTable: {
+        title: "吟游诗人特性 Bard Features",
+        columns: [
+            { header: "等级", key: "level" },
+            { header: "熟练加值(PB)", key: "pb" },
+            { header: "职业特性", key: "features" },
+            { header: "诗人骰", key: "bardic_die" },
+            { header: "戏法", key: "cantrips" },
+            { header: "准备法术", key: "prepared_spells" },
+            { header: "一环", key: "spell_slots_1" },
+            { header: "二环", key: "spell_slots_2" },
+            { header: "三环", key: "spell_slots_3" },
+            { header: "四环", key: "spell_slots_4" },
+            { header: "五环", key: "spell_slots_5" },
+            { header: "六环", key: "spell_slots_6" },
+            { header: "七环", key: "spell_slots_7" },
+            { header: "八环", key: "spell_slots_8" },
+            { header: "九环", key: "spell_slots_9" }
+        ],
+        rows: [
+            { level: 1, pb: "+2", features: ["吟游诗人激励", "施法"], bardic_die: "D6", cantrips: "2", prepared_spells: "4", spell_slots_1: "2", spell_slots_2: "—", spell_slots_3: "—", spell_slots_4: "—", spell_slots_5: "—", spell_slots_6: "—", spell_slots_7: "—", spell_slots_8: "—", spell_slots_9: "—" },
+            { level: 2, pb: "+2", features: ["专精", "万事通"], bardic_die: "D6", cantrips: "2", prepared_spells: "5", spell_slots_1: "2", spell_slots_2: "—", spell_slots_3: "—", spell_slots_4: "—", spell_slots_5: "—", spell_slots_6: "—", spell_slots_7: "—", spell_slots_8: "—", spell_slots_9: "—" },
+            { level: 3, pb: "+2", features: ["吟游诗人子职"], bardic_die: "D6", cantrips: "2", prepared_spells: "6", spell_slots_1: "3", spell_slots_2: "—", spell_slots_3: "—", spell_slots_4: "—", spell_slots_5: "—", spell_slots_6: "—", spell_slots_7: "—", spell_slots_8: "—", spell_slots_9: "—" },
+            { level: 4, pb: "+2", features: ["属性值提升"], bardic_die: "D6", cantrips: "3", prepared_spells: "7", spell_slots_1: "3", spell_slots_2: "—", spell_slots_3: "—", spell_slots_4: "—", spell_slots_5: "—", spell_slots_6: "—", spell_slots_7: "—", spell_slots_8: "—", spell_slots_9: "—" },
+            { level: 5, pb: "+3", features: ["激励之源"], bardic_die: "D8", cantrips: "3", prepared_spells: "9", spell_slots_1: "3", spell_slots_2: "2", spell_slots_3: "—", spell_slots_4: "—", spell_slots_5: "—", spell_slots_6: "—", spell_slots_7: "—", spell_slots_8: "—", spell_slots_9: "—" },
+            { level: 6, pb: "+3", features: ["子职特性"], bardic_die: "D8", cantrips: "3", prepared_spells: "10", spell_slots_1: "3", spell_slots_2: "3", spell_slots_3: "—", spell_slots_4: "—", spell_slots_5: "—", spell_slots_6: "—", spell_slots_7: "—", spell_slots_8: "—", spell_slots_9: "—" },
+            { level: 7, pb: "+3", features: ["反迷惑"], bardic_die: "D8", cantrips: "3", prepared_spells: "11", spell_slots_1: "3", spell_slots_2: "3", spell_slots_3: "1", spell_slots_4: "—", spell_slots_5: "—", spell_slots_6: "—", spell_slots_7: "—", spell_slots_8: "—", spell_slots_9: "—" },
+            { level: 8, pb: "+3", features: ["属性值提升"], bardic_die: "D8", cantrips: "3", prepared_spells: "12", spell_slots_1: "3", spell_slots_2: "3", spell_slots_3: "2", spell_slots_4: "—", spell_slots_5: "—", spell_slots_6: "—", spell_slots_7: "—", spell_slots_8: "—", spell_slots_9: "—" },
+            { level: 9, pb: "+4", features: ["专精"], bardic_die: "D8", cantrips: "3", prepared_spells: "14", spell_slots_1: "3", spell_slots_2: "3", spell_slots_3: "3", spell_slots_4: "—", spell_slots_5: "—", spell_slots_6: "—", spell_slots_7: "—", spell_slots_8: "—", spell_slots_9: "—" },
+            { level: 10, pb: "+4", features: ["魔法奥秘"], bardic_die: "D10", cantrips: "4", prepared_spells: "15", spell_slots_1: "3", spell_slots_2: "3", spell_slots_3: "3", spell_slots_4: "1", spell_slots_5: "—", spell_slots_6: "—", spell_slots_7: "—", spell_slots_8: "—", spell_slots_9: "—" },
+            { level: 11, pb: "+4", features: ["—"], bardic_die: "D10", cantrips: "4", prepared_spells: "16", spell_slots_1: "4", spell_slots_2: "3", spell_slots_3: "3", spell_slots_4: "3", spell_slots_5: "2", spell_slots_6: "1", spell_slots_7: "—", spell_slots_8: "—", spell_slots_9: "—" },
+            { level: 12, pb: "+4", features: ["属性值提升"], bardic_die: "D10", cantrips: "4", prepared_spells: "16", spell_slots_1: "4", spell_slots_2: "3", spell_slots_3: "3", spell_slots_4: "3", spell_slots_5: "2", spell_slots_6: "1", spell_slots_7: "—", spell_slots_8: "—", spell_slots_9: "—" },
+            { level: 13, pb: "+5", features: ["—"], bardic_die: "D10", cantrips: "4", prepared_spells: "17", spell_slots_1: "4", spell_slots_2: "3", spell_slots_3: "3", spell_slots_4: "3", spell_slots_5: "2", spell_slots_6: "1", spell_slots_7: "1", spell_slots_8: "—", spell_slots_9: "—" },
+            { level: 14, pb: "+5", features: ["子职特性"], bardic_die: "D10", cantrips: "4", prepared_spells: "17", spell_slots_1: "4", spell_slots_2: "3", spell_slots_3: "3", spell_slots_4: "3", spell_slots_5: "2", spell_slots_6: "1", spell_slots_7: "1", spell_slots_8: "—", spell_slots_9: "—" },
+            { level: 15, pb: "+5", features: ["—"], bardic_die: "D12", cantrips: "4", prepared_spells: "18", spell_slots_1: "4", spell_slots_2: "3", spell_slots_3: "3", spell_slots_4: "3", spell_slots_5: "2", spell_slots_6: "1", spell_slots_7: "1", spell_slots_8: "1", spell_slots_9: "—" },
+            { level: 16, pb: "+5", features: ["属性值提升"], bardic_die: "D12", cantrips: "4", prepared_spells: "18", spell_slots_1: "4", spell_slots_2: "3", spell_slots_3: "3", spell_slots_4: "3", spell_slots_5: "2", spell_slots_6: "1", spell_slots_7: "1", spell_slots_8: "1", spell_slots_9: "—" },
+            { level: 17, pb: "+6", features: ["—"], bardic_die: "D12", cantrips: "4", prepared_spells: "19", spell_slots_1: "4", spell_slots_2: "3", spell_slots_3: "3", spell_slots_4: "3", spell_slots_5: "2", spell_slots_6: "1", spell_slots_7: "1", spell_slots_8: "1", spell_slots_9: "1" },
+            { level: 18, pb: "+6", features: ["先发激励"], bardic_die: "D12", cantrips: "4", prepared_spells: "20", spell_slots_1: "4", spell_slots_2: "3", spell_slots_3: "3", spell_slots_4: "3", spell_slots_5: "3", spell_slots_6: "1", spell_slots_7: "1", spell_slots_8: "1", spell_slots_9: "1" },
+            { level: 19, pb: "+6", features: ["传奇恩惠"], bardic_die: "D12", cantrips: "4", prepared_spells: "21", spell_slots_1: "4", spell_slots_2: "3", spell_slots_3: "3", spell_slots_4: "3", spell_slots_5: "3", spell_slots_6: "2", spell_slots_7: "1", spell_slots_8: "1", spell_slots_9: "1" },
+            { level: 20, pb: "+6", features: ["创生圣言"], bardic_die: "D12", cantrips: "4", prepared_spells: "22", spell_slots_1: "4", spell_slots_2: "3", spell_slots_3: "3", spell_slots_4: "3", spell_slots_5: "3", spell_slots_6: "2", spell_slots_7: "2", spell_slots_8: "1", spell_slots_9: "1" }
+        ]
+    },
     subclasses: [],
     features: [
         {
             level: 1,
             name: "施法 (Spellcasting)",
-            description: "你在你的吟游艺术中学会了如何施展法术。参见第 7 章有关施法的规则。\n下述信息将详述如何将这些规则应用于吟游诗人法术，吟游诗人法术详见本章后文职业描述中的吟游诗人法术列表。\n**戏法**。你已知 2 个你选择的吟游诗人戏法。推荐选择舞光术和恶言相加。每当你获得一个吟游诗人等级时，你都能将通过此特性已知的其中一个戏法替换为另一个你所选择的吟游诗人戏法。当你的吟游诗人等级达到 4 级和 10 级时，你都能习得另一个你所选择的吟游诗人戏法，如吟游诗人特性表中戏法一列所示。\n**法术位**。吟游诗人特性表显示了你可用于施放 1 环及以上法术的法术位数量。你在完成一次长休时恢复所有已消耗的法术位。\n**1 环及以上的准备法术**。你准备可供你以此特性施展的 1 环及更高环阶的法术列表。最初，选择四道吟游诗人法术。推荐选择，七彩喷射，不谐低语和治愈真言。\n已准备法术数量会随你吟游诗人等级的提升而增加，如吟游诗人特性表中的准备法术一列所示。每当这一列的数字增加时，从吟游诗人法术列表中选择额外法术准备，直至已准备法术的数量与表格中的数字一致。你必须拥有与准备法术的环阶相对应环阶的法术位。例如，如果你是一位 3 级吟游诗人，则你的准备法术列表能包括六道一环或二环的吟游诗人法术，随意组合。如果其他吟游诗人特性给了你永远已准备的法术，这些法术不计入你以此法准备的法术数量，但这些法术对你而言都视为吟游诗人法术。\n**改变你的准备法术**。每当你获得一个吟游诗人等级时，你就可以将你准备列表上的一道法术替换为你拥有对应环阶法术位的另一道吟游诗人法术。\n**施法属性**。你吟游诗人法术的施法属性是魅力。\n**施法法器**。你可以使用乐器作为你吟游诗人法术的施法法器。"
+            description: "你从吟游艺术中学会了如何施展法术。施法规则见第七章。下文将详述如何将这些规则应用于吟游诗人法术，吟游诗人法术详见本章后文职业描述中的吟游诗人法术列表。\n\n**戏法 Cantrips**。你知晓两道你选择的吟游诗人戏法。推荐选择舞光术 Dancing Light 和恶言相加 Vicious Mockery。\n每当你获得一个吟游诗人等级时，你都能从你的戏法中选择其一替换为另一道你所选择的吟游诗人戏法。\n当你的吟游诗人等级到达4级和10级时，你都能另选一道吟游诗人戏法并习得，如吟游诗人特性表中戏法一列所示。\n\n**法术位 Spell Slots**。吟游诗人特性表显示了你可用于施展一环及以上法术的法术位数量。当你完成长休时，你重获所有已消耗的法术位。\n\n**一环及以上的准备法术 Prepared Spells of Level 1+**。你准备可供你以此特性施展的一环及更高环阶的法术列表。最初，选择四道吟游诗人法术。推荐选择魅惑类人 Charm Person，七彩喷射 Color Spray，不谐低语 Dissonant Whispers 和治愈真言 Healing Word。\n已准备法术数量会随你吟游诗人等级的提升而增加，如吟游诗人特性表中的准备法术一列所示。每当这一列的数字增加时，从吟游诗人法术列表中选择额外法术准备，直至已准备法术的数量与表格中的数字一致。你所选择法术的环阶必须是你所拥有法术位对应的环阶。例如，如果你是一名3级吟游诗人，则你的准备法术列表能包括六道一环或二环的吟游诗人法术，随意组合。\n如果吟游诗人的其他特性给了你始终准备着的法术，这些法术不计入你以此法准备的法术数量，但这些法术对你而言都视为吟游诗人法术。\n\n**改变你的准备法术 Changing Your Prepared Spells**。每当你获得一个吟游诗人等级时，你就可以将你准备列表上的一道法术替换为另一道吟游诗人法术，新替换的法术必须是你拥有法术位的法术。\n\n**施法属性 Spellcasting Ability**。你吟游诗人法术的施法属性是魅力。\n\n**施法法器 Spellcasting Focus**。你可以使用乐器作为你吟游诗人法术的施法法器。"
         },
         {
             level: 1,
             name: "吟游诗人激励 (Bardic Inspiration)",
-            description: "你可以用语言，音乐或舞蹈的形式对他人进行超自然的激励。这个激励取决于你的诗人激励骰，你的诗人骰为 d6。\n**使用诗人激励**。以一个附赠动作，你可以激励位于你 60 尺内的另一名能听见或看见你的生物。那名生物获得一枚你的诗人激励骰。一个生物同时只能拥有一枚诗人激励骰。\n在接下来的 1 小时内，当那名生物在一次 D20 检定中失败时，那名生物可以投掷诗人激励骰并将掷骰结果附加到d20中，这可能将失败变为成功。诗人激励骰将在投掷时被消耗。\n**使用次数**。你可以授予诗人激励骰的次数等于你的魅力调整值（最低为 1），当你完成一次长休时，你重获所有被消耗的使用次数。\n**更高等级**。你的诗人激励骰会在你到达特定吟游诗人等级时改变，如吟游诗人特性表中的诗人骰所示。诗人骰将在 5 级时变为 d8，在 10 级时变为 d10，在 15 级时变为 d12。"
+            description: "你可以用语言，音乐或舞蹈的形式对他人进行超自然的激励。这种激励的表现形式为数颗D6骰，这些骰子被称为诗人激励骰。\n\n**使用诗人激励 Using Bardic Inspiration**。以一个附赠动作，你可以激励位于你60尺内的另一名能听见或看见你的生物。那名生物获得一枚你的诗人激励骰。一个生物同一时间只能拥有一枚诗人激励骰。在接下来的1小时内，当那名生物在一次D20检定中失败时，那名生物可以投掷诗人激励骰并将掷骰结果附加到该次d20中，这可能将失败变为成功。诗人激励骰将在投掷时已消耗。\n\n**使用次数 Number of Uses**。你可以授予诗人激励骰的次数等于你的魅力调整值（最少1次），当你完成长休时，你重获所有已消耗的使用次数。\n\n**更高等级 At Higher Levels**。你的诗人激励骰会在你到达特定吟游诗人等级时改变，如吟游诗人特性表中的诗人骰所示。你的诗人骰会在5级时变为d8，在10级时变为d10，在15级时变为d12。"
         },
         {
             level: 2,
             name: "专精 (Expertise)",
-            description: "你获得两项由你选择的你已熟练的技能的专精。\n专精是可以增强你某项技能熟练的使用效果的特性。当你使用具有专精的技能熟练进行一次属性检定，此次检定中加入的熟练加值加倍。如果已有其他特性使你的熟练加值加倍，专精不会有效果。\n当你获得专精特性时，你需要选择一项你具有熟练的技能来获得专精。在同一项技能熟练中，你只能应用一次专精特性。\n推荐选择表演和游说，如果你具有这两项技能的熟练。"
+            description: "你获得两项由你选择的你熟练技能的专精（见术语汇编）。如果你具有表演和游说的熟练，推荐选择这两项。\n当你的吟游诗人等级到达9级时，你再额外获得两项由你选择的你熟练技能的专精。"
         },
         {
             level: 2,
             name: "万事通 (Jack of All Trades)",
-            description: "你可以将你熟练加值的一半（向下取整）添加到任何你不具备熟练而无法应用熟练加值的属性检定中。\n例如，如果你要进行力量（运动）检定，且不具有运动的熟练，则你可以将熟练加值的一半添加到检定中。"
+            description: "若你进行的任意属性检定可以使用技能熟练但你不具备其熟练，且你也无法通过其他方式在该属性检定中应用熟练加值，你可以将你熟练加值的一半（向下取整）添加到该属性检定中。\n例如，如果你要进行力量（运动）检定，且不具有运动熟练，则你可以将熟练加值的一半添加到检定中。"
         },
         {
             level: 3,
             name: "吟游诗人子职 (Bard Subclass)",
-            description: "你选择获得一项吟游诗人子职：舞蹈学院，迷惑学院，逸闻学院 或 勇气学院。"
+            description: "你选择获得一项吟游诗人子职：舞蹈学院，魅心学院，逸闻学院或勇气学院。子职的内容见后文。子职是一种特化，在特定的吟游诗人等级给予你对应的独特能力。此后你将获得你所选的子职所有能力——只要其所需等级不超过你的吟游诗人等级。吟游诗人特性表列出了你从子职中获得新特性的吟游诗人等级。\n\n吟游诗人们会形成被称为\\\"学院\\\"的松散联系，用以维持他们的传承。"
         },
         {
             level: 4,
@@ -58,7 +101,7 @@ export const BARD_CLASS: ClassItem = {
         {
             level: 5,
             name: "激励之源 (Font of Inspiration)",
-            description: "现在，当你完成一次短休或长休时，你重获所有被消耗的诗人激励使用次数。\n此外，你可以消耗一个法术位（无需动作）来重获一次被消耗的诗人激励使用次数。\n诗人激励骰提升为 D8。"
+            description: "现在，当你完成一次短休或长休时，你重获所有已消耗的诗人激励使用次数。\n此外，你可以消耗一个法术位（无需动作）来重获一次已消耗的诗人激励使用次数。"
         },
         {
             level: 6,
@@ -68,7 +111,7 @@ export const BARD_CLASS: ClassItem = {
         {
             level: 7,
             name: "反迷惑 (Countercharm)",
-            description: "你可以用带有力量的音符或话语来破坏影响心灵的效应。若你或位于你 30 尺内的一名生物在对抗施加魅惑或恐慌状态的效应的豁免检定中失败，你能以一个反应重骰这次豁免，这次重骰具有优势。"
+            description: "你可以用带有力量的音符或话语来干扰影响心灵的效应。若你或位于你30尺内的一名生物在对抗施加魅惑或恐慌状态的效应的豁免检定中失败，你能够以反应令其重骰这次豁免，这次重骰具有优势。"
         },
         {
             level: 8,
@@ -83,7 +126,7 @@ export const BARD_CLASS: ClassItem = {
         {
             level: 10,
             name: "魔法奥秘 (Magical Secrets)",
-            description: "你自各种魔法传统中习得了他们的奥秘。每当你到达一个吟游诗人特性表中准备法术数量有所增加的吟游诗人等级时（包括此等级），你可以从吟游诗人、牧师、德鲁伊和法师的法术列表中选择法术准备（这些职业的法术列表见职业章节），这些法术对你而言都视作吟游诗人法术。此外，每当你替换本职业的准备法术时，你也可以从这些法术列表中选择替换。\n诗人激励骰提升为 D10。"
+            description: "你自各种魔法传说中习得了他们的奥秘。每当你到达一个吟游诗人特性表中准备法术数量有所增加的吟游诗人等级时（包括此等级），你可以从吟游诗人、牧师、德鲁伊和法师的法术列表中选择法术准备（这些职业的法术列表见其职业章节），这些法术对你而言都视作吟游诗人法术。此外，每当你替换本职业的准备法术时，你也可以从这些法术列表中选择替换。"
         },
         {
             level: 12,
@@ -103,17 +146,17 @@ export const BARD_CLASS: ClassItem = {
         {
             level: 18,
             name: "先发激励 (Superior Inspiration)",
-            description: "当你投掷先攻时，若你的诗人激励使用次数不足两次，你重获被消耗的诗人激励使用次数到两次为止。"
+            description: "当你投掷先攻时，若你的诗人激励使用次数不足两次，你重获已消耗的诗人激励使用次数到两次为止。"
         },
         {
             level: 19,
             name: "传奇恩惠",
-            description: "你获得一项传奇恩惠专长或其他一项你选择的适用的专长。推荐选择法术溯回之恩惠。"
+            description: "你获得一项传奇恩惠专长（见第五章）或其他一项你选择的适用的专长。推荐选择法术溯回之恩惠。"
         },
         {
             level: 20,
             name: "创生圣言 (Words of Creation)",
-            description: "你掌握了创生圣言的其中两字：“生”、“死”。因此，你总是准备了法术 律令医疗 和 法术 律令死亡。\n当你施展这两道法术时，你可以选择第二个生物作为目标，那名生物必须位于第一个目标 10 尺内。"
+            description: "你掌握了创生圣言的其中两字：\"生\"与\"死\"。因此，你总是准备了法术律令医疗 Power Word Heal 和律令死亡 Power Word Kill。当你施展这两道法术时，你可以选择第二个生物作为目标，那名生物必须位于第一个目标10尺内。"
         }
     ]
 };

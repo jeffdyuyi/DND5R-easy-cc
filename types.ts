@@ -91,6 +91,7 @@ export interface ClassItem extends BaseLibraryItem {
   subclasses: Subclass[];
   subclassLevel: number;
   classTable?: ClassTableData;
+  spellList?: string; // 法术列表类别，如 "吟游诗人"、"法师"、"牧师"等，用于法术过滤
 }
 
 export interface ClassTableData {
