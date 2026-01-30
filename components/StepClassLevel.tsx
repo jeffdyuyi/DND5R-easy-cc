@@ -7,7 +7,7 @@ import FeatureAccordion from './wizard/FeatureAccordion';
 import { parseSkillOptions, ALL_SKILLS } from '../utils/characterUtils';
 import {
   Plus, Minus, Sword, Wand2, Shield, Cross,
-  Music, Leaf, Flame, Moon, Skull, Sparkles, CheckCircle, AlertCircle,
+  Music, Leaf, Moon, Sparkles, CheckCircle, AlertCircle,
   Axe, Zap, Eye, Target, Footprints
 } from 'lucide-react';
 
