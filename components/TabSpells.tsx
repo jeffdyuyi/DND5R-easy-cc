@@ -1,9 +1,10 @@
 
 import React, { useState } from 'react';
 import { CharacterData, SpellItem } from '../types';
-import { Plus, X, BookOpen, Search, Trash2, Info, Flame, Shield, Book, ChevronDown, User } from 'lucide-react';
+import { Plus, X, BookOpen, Search, Trash2, Info, Flame, Shield, Book, ChevronDown, User, List } from 'lucide-react';
 import { SPELL_DB } from '../data';
 import { SpellDetailView } from './LibraryDetails';
+import { SpellListReference } from './SpellListReference';
 
 interface Props {
    characters: CharacterData[];
@@ -363,6 +364,7 @@ const SpellbookManager: React.FC<Props> = ({ characters, activeCharId, setActive
    const [activeLevelLabel, setActiveLevelLabel] = useState<string>('');
 
    const [viewingSpell, setViewingSpell] = useState<SpellItem | null>(null);
+   const [referenceOpen, setReferenceOpen] = useState(false);
 
    // Get active character or first one
    const character = characters.find(c => c.id === activeCharId) || null;
@@ -455,11 +457,20 @@ const SpellbookManager: React.FC<Props> = ({ characters, activeCharId, setActive
       <div className="p-8 pb-20 bg-stone-100 min-h-screen max-w-7xl mx-auto">
          {/* Header & Character Selector */}
          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-6 border-b-2 border-dndRed pb-4 gap-4">
-            <div>
-               <h2 className="text-4xl font-bold text-dndRed mb-2 flex items-center gap-3">
-                  <Book className="w-10 h-10" /> 法术书
-               </h2>
-               <p className="text-stone-500">管理已知与准备法术。关联职业特性。</p>
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
+               <div>
+                  <h2 className="text-4xl font-bold text-dndRed mb-2 flex items-center gap-3">
+                     <Book className="w-10 h-10" /> 法术书
+                  </h2>
+                  <p className="text-stone-500">管理已知与准备法术。关联职业特性。</p>
+               </div>
+               <button
+                  onClick={() => setReferenceOpen(!referenceOpen)}
+                  className={`flex items-center gap-2 px-4 py-2 rounded-lg border-2 transition-all font-bold shadow-sm ${referenceOpen ? 'bg-dndRed text-white border-stone-800' : 'bg-white text-stone-700 border-stone-300 hover:border-dndRed hover:text-dndRed'}`}
+               >
+                  <List className="w-5 h-5" />
+                  {character?.className || '职业'}法术参考
+               </button>
             </div>
 
             <div className="relative group min-w-[250px]">
@@ -580,18 +591,29 @@ const SpellbookManager: React.FC<Props> = ({ characters, activeCharId, setActive
             )}
          </div>
 
-         {/* Spells List */}
-         <div className="space-y-10 animate-fade-in" key={character.id + '-list'}>
-            {SPELL_LEVELS.map((lvl) => (
-               <SpellLevelSection
-                  key={lvl.key}
-                  levelConfig={lvl}
-                  character={character}
-                  onOpenPicker={openPicker}
-                  onRemoveSpell={removeSpell}
-                  onViewSpell={openDetail}
-               />
-            ))}
+         {/* Spells List & Reference Panel */}
+         <div className="flex flex-col lg:flex-row gap-8 items-start relative">
+            <div className={`space-y-10 animate-fade-in flex-grow transition-all duration-300 ${referenceOpen ? 'w-full lg:w-2/3' : 'w-full'}`} key={character.id + '-list'}>
+               {SPELL_DB && SPELL_LEVELS.map((lvl) => (
+                  <SpellLevelSection
+                     key={lvl.key}
+                     levelConfig={lvl}
+                     character={character}
+                     onOpenPicker={openPicker}
+                     onRemoveSpell={removeSpell}
+                     onViewSpell={openDetail}
+                  />
+               ))}
+            </div>
+
+            {referenceOpen && (
+               <div className="w-full lg:w-1/3 sticky top-8 animate-in slide-in-from-right duration-500">
+                  <SpellListReference
+                     className={character?.className || "牧师"}
+                     onClose={() => setReferenceOpen(false)}
+                  />
+               </div>
+            )}
          </div>
 
          {/* Modals */}
