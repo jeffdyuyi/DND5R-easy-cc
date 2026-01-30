@@ -66,6 +66,7 @@ export interface ClassFeature {
     skillProficiencies?: string[];
     toolProficiencies?: string[];
     savingThrows?: string[];
+    preparedSpells?: string[];
   };
 }
 

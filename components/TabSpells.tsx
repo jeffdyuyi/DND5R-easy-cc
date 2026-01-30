@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { CharacterData, SpellItem } from '../types';
 import { Plus, X, BookOpen, Search, Trash2, Info, Flame, Shield, Book, ChevronDown, User, List } from 'lucide-react';
-import { SPELL_DB } from '../data';
+import { SPELL_DB, SUBCLASS_DB } from '../data';
 import { SpellDetailView } from './LibraryDetails';
 import { SpellListReference } from './SpellListReference';
 
@@ -19,6 +19,7 @@ interface SpellListCardProps {
    actions?: React.ReactNode;
    isSelected?: boolean;
    showDelete?: () => void;
+   isAlwaysPrepared?: boolean;
 }
 
 // 2024 (5R) Preparation Rules Data
@@ -39,7 +40,8 @@ export const SpellListCard: React.FC<SpellListCardProps> = ({
    onClick,
    actions,
    isSelected,
-   showDelete
+   showDelete,
+   isAlwaysPrepared
 }) => {
    const isConcentration = spell.duration.includes('专注');
    const isRitual = spell.castingTime.includes('仪式');
@@ -80,8 +82,15 @@ export const SpellListCard: React.FC<SpellListCardProps> = ({
          </div>
 
          <div className="flex items-center gap-2">
+            {isAlwaysPrepared && (
+               <div className="flex flex-col items-end">
+                  <span className="text-[10px] font-black text-dndRed uppercase tracking-tighter bg-red-100 px-2 py-0.5 rounded border border-red-200">
+                     始 终 准 备
+                  </span>
+               </div>
+            )}
             {actions}
-            {showDelete && (
+            {showDelete && !isAlwaysPrepared && (
                <button
                   onClick={(e) => { e.stopPropagation(); showDelete(); }}
                   className="p-2 text-stone-400 hover:text-red-600 hover:bg-red-50 rounded-full transition-colors opacity-0 group-hover:opacity-100"
@@ -303,9 +312,18 @@ const SpellPicker = ({ level, onSelect, characterClass, showAllToggle }: { level
 
 const SpellLevelSection = ({ levelConfig, character, onOpenPicker, onRemoveSpell, onViewSpell }: any) => {
    const rawText = character.spells[levelConfig.key] || "";
-   const spellNames = rawText.split('\n')
+   const chosenSpellNames = rawText.split('\n')
       .map((s: string) => s.replace(/^[•\-\*]\s*/, '').trim())
       .filter((s: string) => s.length > 0);
+
+   // Find subclass granted spells for this level
+   const charSubclass = SUBCLASS_DB.find(sc => sc.name === character.subclass && sc.parentClass === character.className);
+   const alwaysPreparedFromSubclass = charSubclass?.features
+      .filter(f => f.level <= character.level && f.grants?.preparedSpells)
+      .flatMap(f => f.grants?.preparedSpells || []) || [];
+
+   // Combine and Deduplicate
+   const allSpellNames = Array.from(new Set([...alwaysPreparedFromSubclass, ...chosenSpellNames]));
 
    return (
       <div className="w-full">
@@ -323,13 +341,21 @@ const SpellLevelSection = ({ levelConfig, character, onOpenPicker, onRemoveSpell
 
          {/* Spell List Grid - Compact Cards */}
          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 items-start">
-            {spellNames.map((name: string, idx: number) => {
+            {allSpellNames.map((name: string, idx: number) => {
                const spellData = SPELL_DB.find(s => s.name === name && s.level === levelConfig.levelNum);
+
+               // Only show if it matches the current level being rendered
+               if (spellData && spellData.level !== levelConfig.levelNum) return null;
+               // If not in DB, assume it's custom and only show in its designated section
+               if (!spellData && levelConfig.levelNum !== 1) return null;
+
                const displaySpell: SpellItem = spellData || {
                   id: `custom-${idx}`, name: name, level: levelConfig.levelNum, school: "自定",
                   castingTime: "-", range: "-", components: "-", duration: "-", source: "第三方/原创",
                   description: "未在数据库中找到详细信息。"
                };
+
+               const isAlwaysPrepared = alwaysPreparedFromSubclass.includes(name);
 
                return (
                   <SpellListCard
@@ -337,9 +363,10 @@ const SpellLevelSection = ({ levelConfig, character, onOpenPicker, onRemoveSpell
                      spell={displaySpell}
                      onClick={() => onViewSpell(displaySpell)}
                      showDelete={() => onRemoveSpell(levelConfig.key, name)}
+                     isAlwaysPrepared={isAlwaysPrepared}
                   />
                );
-            })}
+            }).filter(Boolean)}
 
             {/* Add Button - Compact */}
             <button
