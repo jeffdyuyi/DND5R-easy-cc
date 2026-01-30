@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { CharacterData, ClassItem, SubclassItem, ClassFeature, FeatItem } from '../types';
-import { Shield, Info, Star, Plus, X, Search, CheckCircle, Swords, Crown } from 'lucide-react';
+import { Shield, Info, Star, Plus, X, Search, CheckCircle, Swords, Crown, BookOpen } from 'lucide-react';
 import { CardLibrary } from './CardLibrary';
 import { RichText } from './RichText';
 import { ClassFeatureTable } from './ClassFeatureTable';
@@ -220,6 +220,41 @@ const TabClass: React.FC<Props> = ({ character, updateCharacter, libraryClasses,
       const selectedSubclassData = character.subclass ? subOptions.find(s => s.name === character.subclass) : null;
       const subclassFeatureForLevel = selectedSubclassData?.features.find(f => f.level === feature.level);
 
+      const renderGrants = (feat: ClassFeature) => {
+         if (!feat.grants) return null;
+         const { weaponProficiencies, armorProficiencies, skillProficiencies, toolProficiencies, savingThrows } = feat.grants;
+
+         return (
+            <div className="mt-2 flex flex-wrap gap-1">
+               {weaponProficiencies?.map(p => (
+                  <span key={p} className="text-[10px] bg-red-50 text-red-700 border border-red-100 px-1.5 py-0.5 rounded flex items-center gap-1">
+                     <Swords className="w-2.5 h-2.5" /> {p}熟练
+                  </span>
+               ))}
+               {armorProficiencies?.map(p => (
+                  <span key={p} className="text-[10px] bg-blue-50 text-blue-700 border border-blue-100 px-1.5 py-0.5 rounded flex items-center gap-1">
+                     <Shield className="w-2.5 h-2.5" /> {p}熟练
+                  </span>
+               ))}
+               {skillProficiencies?.map(p => (
+                  <span key={p} className="text-[10px] bg-green-50 text-green-700 border border-green-100 px-1.5 py-0.5 rounded flex items-center gap-1">
+                     <BookOpen className="w-2.5 h-2.5" /> {p}熟练
+                  </span>
+               ))}
+               {toolProficiencies?.map(p => (
+                  <span key={p} className="text-[10px] bg-stone-50 text-stone-700 border border-stone-100 px-1.5 py-0.5 rounded flex items-center gap-1">
+                     {p}熟练
+                  </span>
+               ))}
+               {savingThrows?.map(p => (
+                  <span key={p} className="text-[10px] bg-purple-50 text-purple-700 border border-purple-100 px-1.5 py-0.5 rounded flex items-center gap-1">
+                     <Star className="w-2.5 h-2.5" /> {p}豁免熟练
+                  </span>
+               ))}
+            </div>
+         );
+      };
+
       // Render subclass placeholder feature with inline selector and subclass content
       if (isSubclassPlaceholder) {
          return (
@@ -260,10 +295,12 @@ const TabClass: React.FC<Props> = ({ character, updateCharacter, libraryClasses,
                   {character.subclass && subclassFeatureForLevel ? (
                      <div className="space-y-2">
                         <RichText text={subclassFeatureForLevel.description} />
+                        {renderGrants(subclassFeatureForLevel)}
                      </div>
                   ) : (
                      <div className="text-stone-500 italic">
                         <RichText text={feature.description} />
+                        {renderGrants(feature)}
                      </div>
                   )}
                </div>
@@ -304,6 +341,7 @@ const TabClass: React.FC<Props> = ({ character, updateCharacter, libraryClasses,
                ) : (
                   <RichText text={feature.description} />
                )}
+               {renderGrants(feature)}
             </div>
 
             {canSelect && (

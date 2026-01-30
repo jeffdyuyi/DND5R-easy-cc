@@ -33,6 +33,7 @@ const TabCombat: React.FC<Props> = ({ character, updateCharacter, libraryClasses
       const dexMod = getModifier(character.abilities.dexterity);
       const conMod = getModifier(character.abilities.constitution);
       const wisMod = getModifier(character.abilities.wisdom);
+      const chaMod = getModifier(character.abilities.charisma);
 
       // Check Inventory for Armor & Shield
       // Note: In a real app, we'd check 'isEquipped' boolean. Here we assume items in InventoryArmor are carried.
@@ -53,6 +54,9 @@ const TabCombat: React.FC<Props> = ({ character, updateCharacter, libraryClasses
       if (character.className === '武僧' && !equippedArmor && !equippedShield) {
          // Monk Unarmored Defense doesn't work with shields
          options.push({ label: "武僧无甲防御", value: 10 + dexMod + wisMod, note: "10 + 敏捷 + 感知 (无盾)" });
+      }
+      if (character.subclass === '舞蹈学院' && !equippedArmor) {
+         options.push({ label: "舞蹈学院无甲防御", value: 10 + dexMod + chaMod + shieldBonus, note: "10 + 敏捷 + 魅力" + (shieldBonus ? " + 盾牌" : "") });
       }
       if (character.race === '龙裔' || (character.subclass && character.subclass.includes('龙族'))) {
          // Example logic for Draconic Resilience (13+Dex) if applicable, 
