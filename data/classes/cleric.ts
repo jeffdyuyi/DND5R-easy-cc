@@ -167,14 +167,38 @@ export const CLERIC_SUBCLASSES: SubclassItem[] = [
         id: "cleric-trickery",
         name: "诡术领域",
         parentClass: "牧师",
-        source: "官方规则",
-        description: "诡术领域的牧师通过幻象、欺瞒与潜行来服务于神灵。",
+        source: "PHB'24",
+        description: "挑起闹剧，直面权威",
+        fullDescription: "诡术领域提供了欺诈、幻觉与隐匿的魔法。驾驭此等魔法的牧师是世界的颠覆者，他们打击骄傲者的自尊，嘲弄暴君，释放俘虏，并且蔑视毫无意义的传统。他们对花言巧语、恶作剧、欺骗和盗窃的偏好要远甚于正面对抗。\n诡术之神们均是恶作剧者，同时也是挑拨凡人或神明去颠覆现有秩序的煽动者。祂们是变革与动荡的具现，亦是小偷、恶棍、赌徒、叛乱者和解放者的庇护人。在暗中运作的教团，尤其是反抗高压的政府或社会体系的那些，也同样利用着来自诡术领域的力量。",
         features: [
-            { level: 3, name: "诡术领域法术 (Trickery Domain Spells)", description: "始终准备：魅惑人类, 易容术, 隐形术, 行动无踪 (Lv3); 催眠图纹, 回避侦测 (Lv5); 困惑术, 任意门 (Lv7); 支配人类, 篡改记忆 (Lv9)。" },
-            { level: 3, name: "诡术祝福 (Blessing of the Trickster)", description: "魔法动作。给予自己或30尺内一生物隐匿优势，持续至长休或再次使用。" },
-            { level: 3, name: "祈唤分身 (Invoke Duplicity)", description: "引导神力（附赠动作）：30尺内创造完美幻象（持续1分钟，专注？不，PDF未提专注，只说持续1分钟或解除/失能）。\n• **施法**: 可从幻象位置施法。\n• **分散注意**: 你和幻象在目标5尺内时，你对目标攻击优势。\n• **转移**: 附赠动作移动幻象30尺（至120尺内）。" },
-            { level: 6, name: "诡诈换位 (Trickster's Transposition)", description: "附赠动作移动或创造幻象时，可与幻象交换位置（传送）。" },
-            { level: 17, name: "精通分身 (Improved Duplicity)", description: "• **共享分散注意**: 盟友也能享受幻象带来的攻击优势。\n• **治愈幻象**: 幻象消失时，你或5尺内一生物恢复等于牧师等级的生命值。" }
+            {
+                level: 3,
+                name: "诡术领域法术 (Trickery Domain Spells)",
+                description: "你与此神圣领域的链接使你始终准备着特定的法术。当你到达诡术领域法术表中特定的牧师等级时，你就始终准备着表中对应的法术。\n3级：魅惑类人 Charm Person，易容术 Disguise Self，隐形术 Invisibility，行动无踪术 Pass without Trace\n5级：催眠图纹 Hypnotic Pattern，回避侦测 Nondetection\n7级：困惑术 Confusion，任意门 Dimension Door\n9级：支配类人 Dominate Person，篡改记忆 Modify Memory",
+                grants: {
+                    preparedSpells: ["魅惑类人", "易容术", "隐形术", "行动无踪术", "催眠图纹", "回避侦测", "困惑术", "任意门", "支配类人", "篡改记忆"]
+                }
+            },
+            {
+                level: 3,
+                name: "诡术祝福 (Blessing of the Trickster)",
+                description: "以一个魔法动作，你可以选择自己或30尺内一个自愿生物，所选生物在进行敏捷（隐匿）检定时具有优势。此祝福持续至你完成一次长休或直至你再次使用此特性。"
+            },
+            {
+                level: 3,
+                name: "召现分身 (Invoke Duplicity)",
+                description: "以一个附赠动作，你可以消耗一次引导神力次数来创造一个自己的完美视觉幻象并出现在你身边30尺内一个你能看见且未占据空间。该幻象是无实体的且不占据它所在的空间。幻象持续1分钟，或直至你将其解除（无需动作）或陷入失能状态。这个幻象栩栩如生，能模仿你的表情和姿势。当幻象存在时，你将获得以下好处：\n**施法 Cast Spells**。你可以如同你在幻象所在位置施展法术，但必须使用你自己的感官。\n**干扰 Distract**。当你和你的幻象都在同一个生物身边5尺内，且该生物可以看见幻象时，由于幻象对目标造成的干扰，你对其进行的攻击检定具有优势。\n**转移 Move**。以一个附赠动作，你可以移动幻象至多30尺到达一处空间，该空间必须是你120尺内一处可见的未占据空间。"
+            },
+            {
+                level: 6,
+                name: "诡诈换位 (Trickster's Transposition)",
+                description: "每当你使用附赠动作创造或移动你来自召现分身特性的幻象时，你都可以通过传送与幻象交换位置。"
+            },
+            {
+                level: 17,
+                name: "精通分身 (Improved Duplicity)",
+                description: "你召现分身特性所创造的幻象在以下方面变得更加强力。\n**共享干扰 Shared Distraction**。当你和你的盟友对位于幻象5尺内的生物进行攻击检定时具有优势。\n**治愈幻象 Healing Illusion**。当幻象消失时，你或你选择的5尺内的一名生物恢复等同于你牧师等级的生命值。"
+            }
         ]
     },
     {
