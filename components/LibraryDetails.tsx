@@ -457,7 +457,7 @@ export const ItemDetailView = ({ item }: { item: ItemItem }) => {
           {item.mastery && (
             <div className="bg-yellow-50 border-l-4 border-yellow-500 p-3 text-sm my-2">
               <strong className="block text-yellow-800 text-xs uppercase mb-1">武器精通</strong>
-              {item.mastery}
+              <RichText text={item.mastery} />
             </div>
           )}
           {item.toolUtilize && (
