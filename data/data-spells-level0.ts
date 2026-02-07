@@ -212,7 +212,7 @@ export const SPELL_DB_LEVEL_0: SpellItem[] = [
     id: "thaumaturgy", name: "奇术", source: "PHB'24",
     level: 0, school: "变化", castingTime: "动作", range: "30尺", components: "声音", duration: "1分钟",
     classes: ["牧师"],
-    description: "你在施法距离内显现一道次级奇迹。你在施法距离内创造下述效应之一。如果你*多次施展该法术*，则可以同时维持至多三个不同的1分钟效应。"
+    description: "你在施法距离内显现一道次级奇迹。你在施法距离内创造下述效应之一。如果你多次施展该法术，则可以同时维持至多三个不同的1分钟效应。\n\n**改变眼睛 Altered Eyes**：你改变自己眼睛的外观，其效应持续1分钟。\n\n**扩音 Booming Voice**：你的语音音量变为通常情况下的三倍大，其效应持续1分钟。在此期间，你在魅力（威吓）检定上具有优势。\n\n**玩火 Fire Play**：你使一团火焰闪烁、变亮、变暗或变色，其效应持续1分钟。\n\n**看不见的手 Invisible Hand**：你使一扇没有上锁的门/窗立即打开或关上。\n\n**幻音 Phantom Sound**：指定施法距离内的一点，你使该点发出一道短暂的声音，例如雷鸣声，渡鸦叫声或不祥低语声。\n\n**震动 Tremors**：你在地面上引发无害的震动，其效应持续1分钟。"
   },
 
   {

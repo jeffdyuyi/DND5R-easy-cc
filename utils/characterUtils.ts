@@ -113,6 +113,14 @@ export const SPECIES_VARIANTS: Record<string, { label: string; options: { name: 
 export const parseSkillOptions = (traitString: string): { limit: number; options: string[] } | null => {
   if (!traitString) return null;
 
+  // 处理 "选择X项：任意技能" 格式 (吟游诗人等职业使用)
+  if (traitString.includes('任意技能') || traitString.includes('任意')) {
+    const match = traitString.match(/选择(\d+)项/);
+    if (match) {
+      return { limit: parseInt(match[1]), options: ["ALL_SKILLS"] };
+    }
+  }
+
   // Regex to find "选择X项：..." or "任择 X 项..."
   const match = traitString.match(/选择(\d+)项[：:]/);
   if (!match) {
