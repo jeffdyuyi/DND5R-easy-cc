@@ -63,15 +63,15 @@ const SpellCard: React.FC<SpellCardProps> = ({ item }) => {
             className="bg-white rounded-lg overflow-hidden shadow-lg border-2 font-serif"
             style={{ borderColor: schoolColor }}
         >
-            {/* 顶部标题栏 */}
+            {/* 顶部标题栏 - 响应式 */}
             <div
-                className="p-3 text-white flex items-center justify-between"
+                className="p-2 sm:p-3 text-white flex items-center justify-between"
                 style={{ backgroundColor: schoolColor }}
             >
-                <div className="flex items-center gap-3">
-                    {/* 法术学派图标 */}
-                    <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center border-2 border-white/40">
-                        <div className="w-10 h-10 rounded-full flex items-center justify-center text-white/90">
+                <div className="flex items-center gap-2 sm:gap-3">
+                    {/* 法术学派图标 - 移动端缩小 */}
+                    <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-white/20 flex items-center justify-center border-2 border-white/40 flex-shrink-0">
+                        <div className="w-6 h-6 sm:w-10 sm:h-10 rounded-full flex items-center justify-center text-white/90">
                             <svg viewBox="0 0 100 100" className="w-full h-full">
                                 <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" strokeWidth="2" />
                                 <circle cx="50" cy="50" r="35" fill="none" stroke="currentColor" strokeWidth="1.5" />
@@ -84,62 +84,63 @@ const SpellCard: React.FC<SpellCardProps> = ({ item }) => {
                         </div>
                     </div>
 
-                    {/* 法术名称 */}
-                    <h1 className="text-2xl font-black tracking-wider uppercase">{item.name}</h1>
+                    {/* 法术名称 - 响应式字体 */}
+                    <h1 className="text-lg sm:text-2xl font-black tracking-wider uppercase">{item.name}</h1>
                 </div>
 
                 {/* 环阶标识 */}
-                <div className="text-right">
-                    <div className="text-xl font-black">{levelText}</div>
+                <div className="text-right flex-shrink-0">
+                    <div className="text-base sm:text-xl font-black">{levelText}</div>
                 </div>
             </div>
 
-            {/* 法术信息区域 */}
-            <div className="flex">
-                {/* 左侧：法术属性 */}
-                <div className="flex-1 p-4 space-y-2">
+            {/* 法术信息区域 - 响应式布局 */}
+            <div className="flex flex-col sm:flex-row">
+                {/* 法术属性 */}
+                <div className="flex-1 p-3 sm:p-4 space-y-1.5 sm:space-y-2">
                     <div className="flex items-center">
-                        <span className="w-28 font-bold text-stone-700">射程</span>
-                        <span className="font-black text-xl text-stone-900">{item.range}</span>
+                        <span className="w-20 sm:w-28 font-bold text-stone-700 text-sm sm:text-base">射程</span>
+                        <span className="font-black text-base sm:text-xl text-stone-900">{item.range}</span>
                     </div>
                     <div className="flex items-center">
-                        <span className="w-28 font-bold text-stone-700">持续时间</span>
+                        <span className="w-20 sm:w-28 font-bold text-stone-700 text-sm sm:text-base">持续时间</span>
                         {requiresConcentration && (
-                            <span className="mr-2 text-amber-600">⏳</span>
+                            <span className="mr-1 sm:mr-2 text-amber-600">⏳</span>
                         )}
-                        <span className="font-black text-xl text-stone-900">{item.duration}</span>
+                        <span className="font-black text-base sm:text-xl text-stone-900">{item.duration}</span>
                     </div>
                     <div className="flex items-center">
-                        <span className="w-28 font-bold text-stone-700">施法时间</span>
-                        <span className="font-black text-xl text-stone-900">{item.castingTime}</span>
+                        <span className="w-20 sm:w-28 font-bold text-stone-700 text-sm sm:text-base">施法时间</span>
+                        <span className="font-black text-base sm:text-xl text-stone-900">{item.castingTime}</span>
                     </div>
 
                     {/* 成分图标 */}
-                    <div className="pt-2">
+                    <div className="pt-1.5 sm:pt-2">
                         <ComponentIcons components={item.components} />
                     </div>
                 </div>
 
-                {/* 右侧：职业列表 */}
-                <div className="w-24 text-right p-4 space-y-0.5">
-                    {ALL_CLASSES.map(cls => {
-                        const hasClass = item.classes?.includes(cls);
-                        return (
-                            <div
-                                key={cls}
-                                className={`text-sm font-medium flex items-center justify-end gap-1 ${hasClass ? 'text-stone-900' : 'text-stone-300'
-                                    }`}
-                            >
-                                <span>{cls}</span>
-                                {hasClass && (
-                                    <span
-                                        className="w-1.5 h-4 rounded-sm"
-                                        style={{ backgroundColor: schoolColor }}
-                                    />
-                                )}
-                            </div>
-                        );
-                    })}
+                {/* 职业列表 - 移动端水平，桌面端垂直 */}
+                <div className="border-t sm:border-t-0 sm:border-l border-stone-200 px-3 py-2 sm:w-24 sm:text-right sm:p-4 sm:space-y-0.5">
+                    <div className="flex flex-wrap gap-1.5 sm:flex-col sm:gap-0.5">
+                        {ALL_CLASSES.map(cls => {
+                            const hasClass = item.classes?.includes(cls);
+                            return (
+                                <div
+                                    key={cls}
+                                    className={`text-xs sm:text-sm font-medium flex items-center sm:justify-end gap-1 ${hasClass ? 'text-stone-900' : 'text-stone-300 hidden sm:flex'}`}
+                                >
+                                    <span>{cls}</span>
+                                    {hasClass && (
+                                        <span
+                                            className="w-1 h-3 sm:w-1.5 sm:h-4 rounded-sm"
+                                            style={{ backgroundColor: schoolColor }}
+                                        />
+                                    )}
+                                </div>
+                            );
+                        })}
+                    </div>
                 </div>
             </div>
 

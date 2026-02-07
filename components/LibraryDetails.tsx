@@ -32,56 +32,57 @@ const VerticalCard: React.FC<CardProps> = ({
   accentColor = "border-stone-800"
 }) => {
   return (
-    <div className={`max-w-md mx-auto bg-white border-[6px] ${accentColor} rounded-xl overflow-hidden shadow-2xl my-4 font-serif flex flex-col h-auto min-h-[400px]`}>
+    <div className={`w-full max-w-lg md:max-w-xl lg:max-w-2xl mx-auto bg-white border-4 md:border-[6px] ${accentColor} rounded-xl overflow-hidden shadow-2xl my-4 font-serif flex flex-col h-auto min-h-[300px] md:min-h-[400px]`}>
       {/* Header */}
-      <div className={`${headerColor} p-3 text-white border-b-4 ${accentColor} relative z-10`}>
+      <div className={`${headerColor} p-3 md:p-4 text-white border-b-4 ${accentColor} relative z-10`}>
         {/* Decorative Corner */}
         <div className="absolute top-0 right-0 p-1">
-          <div className="w-16 h-16 bg-white/10 rounded-bl-full absolute top-0 right-0"></div>
+          <div className="w-12 h-12 md:w-16 md:h-16 bg-white/10 rounded-bl-full absolute top-0 right-0"></div>
         </div>
 
         <div className="flex justify-between items-start relative z-10">
-          <div className="flex items-center gap-3">
-            <div className="p-2 bg-black/30 rounded-lg shadow-inner border border-white/20">
+          <div className="flex items-center gap-2 md:gap-3">
+            <div className="p-1.5 md:p-2 bg-black/30 rounded-lg shadow-inner border border-white/20">
               {icon}
             </div>
             <div>
-              <h2 className="text-2xl font-black tracking-wide leading-none uppercase drop-shadow-md">{title}</h2>
-              {subtitle && <div className="text-[10px] font-bold uppercase tracking-[0.2em] opacity-90 mt-1">{subtitle}</div>}
+              <h2 className="text-xl md:text-2xl font-black tracking-wide leading-none uppercase drop-shadow-md">{title}</h2>
+              {subtitle && <div className="text-[9px] md:text-[10px] font-bold uppercase tracking-[0.2em] opacity-90 mt-1">{subtitle}</div>}
             </div>
           </div>
         </div>
       </div>
 
-      {/* Stats Bar */}
+      {/* Stats Bar - Responsive Grid */}
       {stats.length > 0 && (
-        <div className="bg-stone-100 border-b-4 border-stone-200 grid grid-cols-2 divide-x-2 divide-stone-200">
+        <div className="bg-stone-100 border-b-4 border-stone-200 grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-stone-200">
           {stats.map((stat, idx) => (
             <div
               key={idx}
-              className={`p-2 flex flex-col justify-center items-center text-center ${stat.fullWidth ? 'col-span-2 border-t-2 border-stone-200' : ''}`}
+              className={`p-2 md:p-3 flex flex-col justify-center items-center text-center ${stat.fullWidth ? 'col-span-1 sm:col-span-2 border-t border-stone-200' : ''}`}
             >
-              <span className="text-[9px] text-stone-500 font-black uppercase tracking-widest">{stat.label}</span>
-              <span className="font-bold text-stone-800 text-sm leading-tight mt-0.5">{stat.value}</span>
+              <span className="text-[9px] md:text-[10px] text-stone-500 font-black uppercase tracking-widest">{stat.label}</span>
+              <span className="font-bold text-stone-800 text-sm md:text-base leading-tight mt-0.5">{stat.value}</span>
             </div>
           ))}
         </div>
       )}
 
       {/* Body Content */}
-      <div className="p-5 bg-[url('https://www.transparenttextures.com/patterns/paper.png')] bg-stone-50 text-stone-900 leading-relaxed text-sm flex-grow space-y-4">
+      <div className="p-4 md:p-5 bg-[url('https://www.transparenttextures.com/patterns/paper.png')] bg-stone-50 text-stone-900 leading-relaxed text-sm flex-grow space-y-3 md:space-y-4">
         {bodyContent}
       </div>
 
       {/* Footer */}
       {footer && (
-        <div className="bg-stone-900 text-stone-400 text-[10px] p-2 border-t-4 border-stone-800 flex flex-col items-center uppercase tracking-widest">
+        <div className="bg-stone-900 text-stone-400 text-[9px] md:text-[10px] p-2 border-t-4 border-stone-800 flex flex-col items-center uppercase tracking-widest">
           {footer}
         </div>
       )}
     </div>
   );
 };
+
 
 // --- Helper: Inner Feature Block ---
 const InnerFeatureBlock: React.FC<{ title: string, level?: number, description: string }> = ({ title, level, description }) => (
@@ -357,12 +358,13 @@ export const SpellDetailView = ({ item }: { item: SpellItem }) => {
 
   return (
     <React.Suspense fallback={<div className="p-4 text-center">加载中...</div>}>
-      <div className="max-w-md mx-auto my-4">
+      <div className="w-full max-w-lg md:max-w-xl lg:max-w-2xl mx-auto my-4">
         <SpellCard item={item} />
       </div>
     </React.Suspense>
   );
 };
+
 
 export const ItemDetailView = ({ item }: { item: ItemItem }) => {
   let color = "bg-stone-700";
