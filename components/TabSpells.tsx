@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { CharacterData, SpellItem } from '../types';
 import { Plus, X, BookOpen, Search, Trash2, Info, Flame, Shield, Book, ChevronDown, User, List } from 'lucide-react';
-import { SPELL_DB, SUBCLASS_DB } from '../data';
+import { SPELL_DB, SUBCLASS_DB, CLASS_DB } from '../data';
 import { SpellDetailView } from './LibraryDetails';
 import { SpellListReference } from './SpellListReference';
 
@@ -322,8 +322,46 @@ const SpellLevelSection = ({ levelConfig, character, onOpenPicker, onRemoveSpell
       .filter(f => f.level <= character.level && f.grants?.preparedSpells)
       .flatMap(f => f.grants?.preparedSpells || []) || [];
 
+   // Find class granted spells for this level
+   const charClass = CLASS_DB.find(c => c.name === character.className);
+   const alwaysPreparedFromClass = charClass?.features
+      .filter(f => f.level <= character.level && f.grants?.preparedSpells)
+      .flatMap(f => f.grants?.preparedSpells || []) || [];
+
+   // Find Feat granted spells
+   const featSpells: string[] = [];
+
+   // Origin Feat
+   if (character.featConfig?.originFeat) {
+      if (levelConfig.levelNum === 0 && character.featConfig.originFeat.cantrips) {
+         featSpells.push(...character.featConfig.originFeat.cantrips);
+      }
+      if (levelConfig.levelNum === 1 && character.featConfig.originFeat.level1Spell) {
+         featSpells.push(character.featConfig.originFeat.level1Spell);
+      }
+   }
+
+   // Other Feats
+   if (character.featConfig?.otherFeats) {
+      Object.values(character.featConfig.otherFeats).forEach((feat: any) => {
+         if (feat.cantrips && levelConfig.levelNum === 0) {
+            featSpells.push(...feat.cantrips);
+         }
+         if (feat.spells) {
+            feat.spells.forEach((spellName: string) => {
+               const spell = SPELL_DB.find(s => s.name === spellName);
+               if (spell && spell.level === levelConfig.levelNum) {
+                  featSpells.push(spellName);
+               }
+            });
+         }
+      });
+   }
+
+   const alwaysPreparedSpells = [...alwaysPreparedFromSubclass, ...alwaysPreparedFromClass, ...featSpells];
+
    // Combine and Deduplicate
-   const allSpellNames = Array.from(new Set([...alwaysPreparedFromSubclass, ...chosenSpellNames]));
+   const allSpellNames = Array.from(new Set([...alwaysPreparedSpells, ...chosenSpellNames]));
 
    return (
       <div className="w-full">
@@ -355,7 +393,7 @@ const SpellLevelSection = ({ levelConfig, character, onOpenPicker, onRemoveSpell
                   description: "未在数据库中找到详细信息。"
                };
 
-               const isAlwaysPrepared = alwaysPreparedFromSubclass.includes(name);
+               const isAlwaysPrepared = alwaysPreparedSpells.includes(name);
 
                return (
                   <SpellListCard
@@ -409,6 +447,31 @@ const SpellbookManager: React.FC<Props> = ({ characters, activeCharId, setActive
       return 8 + mod + prof;
    };
 
+   const calculateMaxPrepared = (char: CharacterData) => {
+      const cls = CLASS_DB.find(c => c.name === char.className);
+      if (cls?.classTable) {
+         const row = cls.classTable.rows.find(r => r.level === char.level);
+         if (row && row.prepared_spells) {
+            return row.prepared_spells.toString();
+         }
+      }
+      return "-";
+   };
+
+   const countCurrentPrepared = (char: CharacterData) => {
+      let count = 0;
+      // Count spells from level 1 to 9
+      const levels: (keyof typeof char.spells)[] = ['level1', 'level2', 'level3', 'level4', 'level5', 'level6', 'level7', 'level8', 'level9'];
+      levels.forEach(l => {
+         const spells = char.spells[l] || "";
+         const list = spells.split('\n').filter(s => s.trim().length > 0);
+         count += list.length;
+      });
+      return count;
+   };
+
+
+
    const calculateAttack = (char: CharacterData) => {
       let mod = 0;
       if (char.spellcastingAbility === '力量') mod = Math.floor((char.abilities.strength - 10) / 2);
@@ -455,8 +518,6 @@ const SpellbookManager: React.FC<Props> = ({ characters, activeCharId, setActive
       });
    };
 
-
-
    const SPELL_LEVELS = [
       { key: 'cantrips', label: '戏法 (0环)', slot: false, levelNum: 0 },
       { key: 'level1', label: '1环法术', slot: true, levelNum: 1 },
@@ -479,6 +540,9 @@ const SpellbookManager: React.FC<Props> = ({ characters, activeCharId, setActive
          </div>
       );
    }
+
+   const maxPrepared = calculateMaxPrepared(character);
+   const currentPrepared = countCurrentPrepared(character);
 
    return (
       <div className="p-8 pb-20 bg-stone-100 min-h-screen max-w-7xl mx-auto">
@@ -551,6 +615,17 @@ const SpellbookManager: React.FC<Props> = ({ characters, activeCharId, setActive
                <div className="flex items-center gap-2">
                   <Flame className="w-5 h-5 text-stone-400" />
                   <span className="text-3xl font-black text-dndRed">+{calculateAttack(character)}</span>
+               </div>
+            </div>
+            <div className="h-10 w-px bg-stone-200 hidden md:block"></div>
+            <div className="flex flex-col items-center flex-grow">
+               <span className="text-xs font-bold text-stone-400 uppercase tracking-widest mb-1">准备/已知法术</span>
+               <div className={`flex items-center gap-2 ${maxPrepared !== '-' && currentPrepared > parseInt(maxPrepared) ? 'text-red-600' : 'text-stone-800'}`}>
+                  <BookOpen className="w-5 h-5 text-stone-400" />
+                  <span className="text-3xl font-black">
+                     {currentPrepared}
+                     <span className="text-lg text-stone-400 font-normal"> / {maxPrepared}</span>
+                  </span>
                </div>
             </div>
          </div>
