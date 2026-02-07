@@ -205,14 +205,38 @@ export const CLERIC_SUBCLASSES: SubclassItem[] = [
         id: "cleric-war",
         name: "战争领域",
         parentClass: "牧师",
-        source: "官方规则",
-        description: "战争领域的牧师不仅仅是随军祭司，更是战场上的勇士。",
+        source: "PHB'24",
+        description: "激昂气概，击溃仇敌",
+        fullDescription: "战争有多种表现形式。它令普通人成就英雄，也能带来绝望与恐惧；战争伴随着残忍与懦弱，却也交织着卓越与勇气。踏入战争领域之路的牧师们精于战斗，激励着他人在战斗中赢得荣耀——亦或是将暴行作为祭礼献上。\n战争领域诸神守望着勇士们，并为他们伟大的事迹作出奖赏。战争之神的行列中有充满荣誉和骑士精神的勇者，亦也有破坏和掠夺的拥簇。其他战争神则采取更中立的立场，促进一切形式的战争，并在任何境遇下支持着武者们。",
         features: [
-            { level: 3, name: "战争领域法术 (War Domain Spells)", description: "始终准备：光导箭, 魔化武器, 虔诚护盾, 灵体武器 (Lv3); 十字军披风, 灵体卫士 (Lv5); 火焰护盾, 行动自如 (Lv7); 怪物定身术, 钢风斩 (Lv9)。" },
-            { level: 3, name: "战争祭司 (War Priest)", description: "附赠动作发动武器攻击或徒手打击。次数=感知调整值（短/长休恢复）。" },
-            { level: 3, name: "导引打击 (Guided Strike)", description: "引导神力（反应？不，PDF说是失手时使用）：攻击失手时，消耗引导神力使结果+10。若是别人失手，用反应使其+10。" },
-            { level: 6, name: "战神祝福 (War God's Blessing)", description: "可用引导神力施展《虔诚护盾》或《灵体武器》无需消耗法术位。以此法施展无需专注，持续1分钟。" },
-            { level: 17, name: "战争化身 (Avatar of Battle)", description: "获得对钝击、穿刺和挥砍伤害的抗性。" }
+            {
+                level: 3,
+                name: "战争领域法术 (War Domain Spells)",
+                description: "你与此神圣领域的链接使你始终准备着特定的法术。当你到达战争领域法术表中特定的牧师等级时，你就始终准备着表中对应的法术。\n3级：光导箭 Guiding Bolt，虔诚护盾 Shield of Faith，魔化武器 Magic Weapon，灵体武器 Spiritual Weapon\n5级：十字军披风 Crusader's Mantle，灵体卫士 Spirit Guardians\n7级：火焰护盾 Fire Shield，行动自如 Freedom of Movement\n9级：怪物定身术 Hold Monster，钢风斩 Steel Wind Strike",
+                grants: {
+                    preparedSpells: ["光导箭", "虔诚护盾", "魔化武器", "灵体武器", "十字军披风", "灵体卫士", "火焰护盾", "行动自如", "怪物定身术", "钢风斩"]
+                }
+            },
+            {
+                level: 3,
+                name: "战争祭司 (War Priest)",
+                description: "作为一个附赠动作，你可以发动一次武器攻击或者徒手打击。你可以使用该附赠动作的次数等于你的感知调整值（最低为1），你在完成一次长休或短休后重新获得所有的使用次数。"
+            },
+            {
+                level: 3,
+                name: "导引打击 (Guided Strike)",
+                description: "当你或者距离你30尺内的一个生物在一次攻击检定中失手时，你可以消耗一次引导神力次数来让这次攻击检定获得+10加值，这可能导致该次攻击命中。当你使用此特性让另一个生物的攻击检定获得此增益时，你必须使用你的反应。"
+            },
+            {
+                level: 6,
+                name: "战神祝福 (War God's Blessing)",
+                description: "你可以使用你的引导神力来施展虔诚护盾 Shield of Faith 或者灵体武器 Spiritual Weapon 而无需消耗法术位。当你以这种方式施展其中任何一道法术时，该法术都不需要专注，且其持续时间变为1分钟，但会在你再次施展该法术、陷入失能状态或是死亡时提前结束。"
+            },
+            {
+                level: 17,
+                name: "战争化身 (Avatar of Battle)",
+                description: "你获得对钝击、穿刺、挥砍伤害的抗性。"
+            }
         ]
     }
 ];
