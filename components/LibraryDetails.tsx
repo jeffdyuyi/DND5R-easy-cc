@@ -7,6 +7,7 @@ import {
   Box, Crown, Link
 } from 'lucide-react';
 import { RichText } from './RichText';
+import SpellCard from './SpellCard';
 
 // --- Universal Card Component ---
 
@@ -303,16 +304,12 @@ export const FeatDetailView = ({ item }: { item: FeatItem }) => (
   />
 );
 
-export const SpellDetailView = ({ item }: { item: SpellItem }) => {
-  // 使用新的SpellCard组件
-  const SpellCard = React.lazy(() => import('./SpellCard'));
 
+export const SpellDetailView = ({ item }: { item: SpellItem }) => {
   return (
-    <React.Suspense fallback={<div className="p-4 text-center">加载中...</div>}>
-      <div className="w-full max-w-lg md:max-w-xl lg:max-w-2xl mx-auto my-4">
-        <SpellCard item={item} />
-      </div>
-    </React.Suspense>
+    <div className="w-full max-w-lg md:max-w-xl lg:max-w-2xl mx-auto my-4">
+      <SpellCard item={item} />
+    </div>
   );
 };
 
