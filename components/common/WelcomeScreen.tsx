@@ -44,7 +44,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onEnter }) => {
                             <div>
                                 <h3 className="font-bold text-stone-900 mb-1">寻找组织</h3>
                                 <p className="text-sm text-stone-600">
-                                    欢迎加入成都本地线下面团企业群，寻找你的冒险伙伴！
+                                    欢迎加入<a href="http://118.89.179.143/schedule" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline font-bold">成都本地线下面团秘密基地TRPG俱乐部</a>，寻找你的冒险伙伴！
                                 </p>
                                 <div className="mt-2 bg-stone-100 p-2 rounded text-center border border-stone-200 font-mono font-bold text-stone-800 select-all">
                                     QQ群: 691707475
