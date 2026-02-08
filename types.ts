@@ -120,6 +120,7 @@ export interface ClassTableData {
 export interface SubclassItem extends BaseLibraryItem {
   parentClass: string; // 关联的职业名称，例如 "野蛮人"
   features: ClassFeature[];
+  spellList?: string; // 子职业特定法术列表
 }
 
 export interface SpellItem extends BaseLibraryItem {
