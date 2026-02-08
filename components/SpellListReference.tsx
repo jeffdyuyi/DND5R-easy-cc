@@ -1,7 +1,7 @@
 
 import React, { useState, useMemo } from 'react';
 import { SpellItem } from '../types';
-import { SPELL_DB } from '../data';
+import { SPELL_DB, CLASS_DB } from '../data';
 import { Search, ChevronRight, ChevronDown, BookOpen, X } from 'lucide-react';
 import { SpellDetailView } from './LibraryDetails';
 
@@ -14,16 +14,22 @@ export const SpellListReference: React.FC<Props> = ({ className = "牧师", onCl
     const [searchTerm, setSearchTerm] = useState('');
     const [expandedLevels, setExpandedLevels] = useState<number[]>([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
     const [selectedSpell, setSelectedSpell] = useState<SpellItem | null>(null);
+    const [currentClass, setCurrentClass] = useState(className);
+
+    // Update currentClass if prop changes (e.g. switching character)
+    React.useEffect(() => {
+        setCurrentClass(className);
+    }, [className]);
 
     const filteredSpells = useMemo(() => {
         return SPELL_DB.filter(s => {
-            const matchesClass = s.classes?.includes(className);
+            const matchesClass = s.classes?.includes(currentClass);
             const matchesSearch = s.name.includes(searchTerm) ||
                 s.school.includes(searchTerm) ||
                 (s.description && s.description.includes(searchTerm));
             return matchesClass && matchesSearch;
         });
-    }, [className, searchTerm]);
+    }, [currentClass, searchTerm]);
 
     const spellsByLevel = useMemo(() => {
         const groups: Record<number, SpellItem[]> = {};
@@ -45,10 +51,20 @@ export const SpellListReference: React.FC<Props> = ({ className = "牧师", onCl
             {/* Header */}
             <div className="p-4 bg-stone-100 border-b-2 border-stone-800 flex justify-between items-center">
                 <div>
-                    <h3 className="text-xl font-black text-stone-800 flex items-center gap-2">
-                        <BookOpen className="w-6 h-6 text-dndRed" /> {className}法术列表参考 (2024)
-                    </h3>
-                    <p className="text-xs text-stone-500 font-bold mt-1">查看所有该职业可选法术</p>
+                    <div className="flex items-center gap-2 mb-1">
+                        <BookOpen className="w-6 h-6 text-dndRed" />
+                        <select
+                            value={currentClass}
+                            onChange={(e) => setCurrentClass(e.target.value)}
+                            className="text-xl font-black text-stone-800 bg-transparent border-b-2 border-stone-300 focus:border-dndRed outline-none cursor-pointer hover:bg-stone-200 rounded px-1 transition-colors"
+                        >
+                            {CLASS_DB.map(c => (
+                                <option key={c.id} value={c.name}>{c.name}</option>
+                            ))}
+                        </select>
+                        <span className="text-xl font-black text-stone-800">法术列表</span>
+                    </div>
+                    <p className="text-xs text-stone-500 font-bold">查看 {currentClass} 可选法术</p>
                 </div>
                 {onClose && (
                     <button onClick={onClose} className="p-2 hover:bg-stone-200 rounded-full text-stone-600 transition-colors">

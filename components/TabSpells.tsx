@@ -106,7 +106,7 @@ export const SpellListCard: React.FC<SpellListCardProps> = ({
 
 // --- Helper Components (Moved up to avoid TDZ issues) ---
 
-const SpellPicker = ({ level, onSelect, characterClass, showAllToggle }: { level: number, onSelect: (spell: SpellItem) => void, characterClass?: string, showAllToggle?: boolean }) => {
+const SpellPicker = ({ level, onSelect, characterClass, showAllToggle, alwaysPreparedNames = [] }: { level: number, onSelect: (spell: SpellItem) => void, characterClass?: string, showAllToggle?: boolean, alwaysPreparedNames?: string[] }) => {
    const [searchTerm, setSearchTerm] = useState('');
    const [ignoreClassLimit, setIgnoreClassLimit] = useState(false);
 
@@ -143,7 +143,8 @@ const SpellPicker = ({ level, onSelect, characterClass, showAllToggle }: { level
       // 职业过滤：如果指定了角色职业，只显示该职业可用的法术
       // If ignoreClassLimit is true (Magical Secrets mode), we skip class check
       const matchesClass = ignoreClassLimit || !characterClass || s.classes?.includes(characterClass);
-      return matchesLevel && matchesSearch && matchesSource && matchesClass;
+      const isAlreadyPrepared = alwaysPreparedNames.includes(s.name); // Check if excluded
+      return matchesLevel && matchesSearch && matchesSource && matchesClass && !isAlreadyPrepared;
    });
 
    // Sorting
@@ -274,7 +275,11 @@ const SpellPicker = ({ level, onSelect, characterClass, showAllToggle }: { level
          {/* List */}
          <div className="flex-grow overflow-y-auto">
             {sortedSpells.length === 0 ? (
-               <div className="text-center text-stone-500 py-12 italic">无匹配法术</div>
+               <div className="text-center text-stone-500 py-12 italic">
+                  {alwaysPreparedNames.length > 0 && SPELL_DB.some(s => s.level === level && alwaysPreparedNames.includes(s.name))
+                     ? "所有可用法术已在“始终准备”列表中"
+                     : "无匹配法术"}
+               </div>
             ) : (
                <div className="divide-y divide-stone-200">
                   {sortedSpells.map(spell => {
@@ -408,7 +413,7 @@ const SpellLevelSection = ({ levelConfig, character, onOpenPicker, onRemoveSpell
 
             {/* Add Button - Compact */}
             <button
-               onClick={() => onOpenPicker(levelConfig.key, levelConfig.levelNum, levelConfig.label)}
+               onClick={() => onOpenPicker(levelConfig.key, levelConfig.levelNum, levelConfig.label, alwaysPreparedSpells)}
                className="h-[76px] border-2 border-dashed border-stone-300 rounded-lg flex items-center justify-center gap-2 hover:border-dndRed hover:bg-red-50 transition-colors group"
             >
                <Plus className="w-5 h-5 text-stone-400 group-hover:text-dndRed" />
@@ -427,6 +432,7 @@ const SpellbookManager: React.FC<Props> = ({ characters, activeCharId, setActive
    const [activeLevelKey, setActiveLevelKey] = useState<string | null>(null);
    const [activeLevelNum, setActiveLevelNum] = useState<number>(0);
    const [activeLevelLabel, setActiveLevelLabel] = useState<string>('');
+   const [activeAlwaysPreparedNames, setActiveAlwaysPreparedNames] = useState<string[]>([]);
 
    const [viewingSpell, setViewingSpell] = useState<SpellItem | null>(null);
    const [referenceOpen, setReferenceOpen] = useState(false);
@@ -484,10 +490,11 @@ const SpellbookManager: React.FC<Props> = ({ characters, activeCharId, setActive
       return mod + prof;
    };
 
-   const openPicker = (levelKey: string, levelNum: number, label: string) => {
+   const openPicker = (levelKey: string, levelNum: number, label: string, alwaysPreparedNames: string[] = []) => {
       setActiveLevelKey(levelKey);
       setActiveLevelNum(levelNum);
       setActiveLevelLabel(label);
+      setActiveAlwaysPreparedNames(alwaysPreparedNames);
       setPickerOpen(true);
    };
 
@@ -740,6 +747,7 @@ const SpellbookManager: React.FC<Props> = ({ characters, activeCharId, setActive
                            (character.subclass === '逸闻学院' && character.level >= 6)
                         )
                      }
+                     alwaysPreparedNames={activeAlwaysPreparedNames}
                   />
                </div>
             </div>
