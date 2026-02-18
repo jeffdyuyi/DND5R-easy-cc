@@ -16,19 +16,21 @@
 
 - **🧙‍♂️ 角色创建向导 (Character Wizard)**
   - 分步骤引导式创建流程，涵盖种族、职业、属性、背景、阵营、装备等核心要素。
-  - 自动处理种族特性、职业能力、背景加成等规则细节。
+  - **深度职业支持**: 支持法师 (Wizard)、术士 (Sorcerer)、邪术师 (Warlock)、游荡者 (Rogue)、游侠 (Ranger) 等职业的详细特性选择（如法术位、子职能力、专长等）。
+  - **自动规则计算**: 自动处理种族特性（ASI）、职业能力加成、背景熟练项等规则细节。
 
 - **📝 交互式角色卡 (Interactive Character Sheet)**
   - **总览 (Bio)**: 角色基本信息、外观、背景故事。
-  - **战斗 (Combat)**: 实时计算 AC、先攻、速度，管理生命值与豁免。
-  - **属性 (Stats)**: 六大属性与技能检定速查。
-  - **法术 (Spells)**: 完整的法术位管理与已知法术列表。
+  - **战斗 (Combat)**: 实时计算 AC、先攻、速度，管理生命值、临时生命值与豁免检定。
+  - **属性 (Stats)**: 六大属性与全技能检定速查（含熟练/专精标记）。
+  - **法术 (Spells)**: 完整的法术位追踪、已知法术/准备法术管理，支持一键重置法术位。
   - **物品栏 (Inventory)**: 装备、道具、负重管理，支持魔法物品详情查看。
-  - **特性与专长 (Features & Feats)**: 职业特性、种族能力与专长的一站式查询。
+  - **数据整合**: 职业特性、种族能力与专长说明一站式查询。
 
-- **📚 规则数据库 (Rule Library)**
-  - 内置基于 D&D 5e 2024 新版规则的完整数据。
-  - 包括：职业 (Classes)、种族 (Species)、背景 (Backgrounds)、专长 (Feats)、法术 (Spells 0-9环)、物品 (Items) 等。
+- **📚 现代化规则数据库 (Modern Rule Library)**
+  - 完整收录 D&D 5e 2024 新版规则数据。
+  - **模块化数据架构**: 种族 (Species) 与背景 (Backgrounds) 均已拆分为独立文件模块，便于维护与扩展。
+  - 包括：职业 (Classes/Subclasses)、种族 (Species)、背景 (Backgrounds)、专长 (Feats)、法术 (Spells 0-9环)、物品 (Items) 等。
   - 支持全文搜索与快速筛选。
 
 - **🎨 现代化 UI 设计**
@@ -89,11 +91,17 @@ npm run preview
 ```
 /
 ├── components/         # React UI 组件
+│   ├── character-sheet/ # 角色卡相关组件
+│   ├── library/        # 规则库组件
 │   ├── wizard/         # 角色创建向导相关组件
-│   └── ...             # 通用组件 (CharacterSheet, Library, etc.)
+│   └── ui/             # 通用 UI 组件
 ├── data/               # 游戏规则静态数据 (TypeScript)
-│   ├── data-classes.ts     # 职业数据
-│   ├── data-spells-*.ts    # 法术数据 (分等级)
+│   ├── backgrounds/    # 背景数据 (各背景独立文件)
+│   ├── classes/        # 职业数据 (各职业独立文件)
+│   ├── species/        # 种族数据 (各族独立文件)
+│   ├── spell-lists/    # 法术列表 (职业与专长法术表)
+│   ├── data-classes.ts     # 职业索引
+│   ├── data-spells-*.ts    # 法术详情 (分等级)
 │   ├── data-items-*.ts     # 物品数据
 │   └── ...
 ├── utils/              # 工具函数

@@ -12,7 +12,12 @@ interface Props {
 }
 
 // Feats that grant spells
-const SPELL_GRANTING_FEATS = ['魔法学徒', '仪式施法者', '妖精触碰', '影界触碰'];
+const SPELL_GRANTING_FEATS = [
+    '魔法学徒', 'Magic Initiate',
+    '仪式施法者', 'Ritual Caster',
+    '妖精触碰', 'Fey Touched',
+    '影界触碰', 'Shadow Touched'
+];
 
 const SPELLCASTING_ABILITIES = [
     { key: 'intelligence', label: '智力 (法师)' },
@@ -26,7 +31,7 @@ const StepSpells: React.FC<Props> = ({ character, updateCharacter }) => {
 
     // Check if origin feat grants spells
     const originFeat = character.originFeat ? FEAT_DB.find(f => f.name === character.originFeat) : null;
-    const featGrantsSpells = originFeat && SPELL_GRANTING_FEATS.some(f => character.originFeat?.includes(f));
+    const featGrantsSpells = (originFeat || character.originFeat) && SPELL_GRANTING_FEATS.some(f => character.originFeat?.includes(f));
 
     // Get background data to check for locked spell list
     const selectedBackground = BACKGROUND_DB.find(bg => bg.name === character.background);
@@ -39,7 +44,7 @@ const StepSpells: React.FC<Props> = ({ character, updateCharacter }) => {
 
     // Determine spell list based on feat - prioritize background's featSpellList
     const spellListClasses = useMemo(() => {
-        if (character.originFeat?.includes('魔法学徒')) {
+        if (character.originFeat?.includes('魔法学徒') || character.originFeat?.includes('Magic Initiate')) {
             // 首先检查背景是否锁定了法术列表
             if (selectedBackground?.featSpellList) {
                 return [selectedBackground.featSpellList];

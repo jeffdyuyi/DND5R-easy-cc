@@ -24,7 +24,7 @@ export const AASIMAR: SpeciesItem = {
         },
         {
             name: "光辉掌者 (Light Bearer)",
-            description: "你习得【光亮术】戏法。其施法属性为魅力。"
+            description: "你习得【光亮术】(Light)戏法。其施法属性为魅力。"
         },
         {
             name: "天启 (Celestial Revelation)",
