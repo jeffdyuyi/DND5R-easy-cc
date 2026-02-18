@@ -5,6 +5,7 @@ import { SUBCLASS_DB } from './data-subclasses';
 import { SPECIES_DB } from './data-species';
 import { BACKGROUND_DB } from './data-backgrounds';
 import { SPELL_DB } from './data-spells';
+import { SPELL_LISTS_DB, RANGER_SPELLS, SORCERER_SPELLS } from './spell-lists';
 import { FEAT_DB } from './data-feats';
 import { WEAPON_DB } from './data-items-weapons';
 import { ARMOR_DB } from './data-items-armor';
@@ -41,7 +42,10 @@ export {
   TOOL_DB,
   GEAR_DB,
   MAGIC_MISC_DB,
-  MAGIC_ARMOR_DB
+  MAGIC_ARMOR_DB,
+  SPELL_LISTS_DB,
+  RANGER_SPELLS,
+  SORCERER_SPELLS,
 };
 
 // Helper for look up classes by name

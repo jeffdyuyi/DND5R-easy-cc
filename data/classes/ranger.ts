@@ -10,6 +10,7 @@ export const RANGER_CLASS: ClassItem = {
     primaryAbility: "敏捷和感知",
     saves: ["力量", "敏捷"],
     tags: ["半施法者", "远程", "近战"],
+    spellList: "游侠",
     coreTraits: {
         primaryAbility: "敏捷与感知",
         hitPointDie: "每游侠等级 d10",

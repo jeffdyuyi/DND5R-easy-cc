@@ -59,6 +59,7 @@ export interface BackgroundItem extends BaseLibraryItem {
 export interface ClassFeature {
   name: string;
   description: string;
+  fullDescription?: string;
   level: number;
   grants?: {
     weaponProficiencies?: string[];
@@ -67,6 +68,11 @@ export interface ClassFeature {
     toolProficiencies?: string[];
     savingThrows?: string[];
     preparedSpells?: string[];
+    featureOptions?: {
+      name: string;
+      description: string;
+      prerequisites?: string;
+    }[];
   };
 }
 
