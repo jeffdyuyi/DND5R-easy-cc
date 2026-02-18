@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import { CharacterData } from '../types';
 import { SPECIES_DB } from '../data';
-import { SPECIES_VARIANTS } from '../utils/characterUtils';
+import { updateCharacterSpellsFromSubrace } from '../utils/characterUtils';
 import WizardLayout from './wizard/WizardLayout';
 import FeatureAccordion from './wizard/FeatureAccordion';
 import { User, Footprints, Eye, AlertCircle, CheckCircle } from 'lucide-react';
@@ -14,19 +14,16 @@ interface Props {
 
 const StepSpecies: React.FC<Props> = ({ character, updateCharacter }) => {
     const selectedSpecies = SPECIES_DB.find(sp => sp.name === character.race);
-    const variants = character.race ? SPECIES_VARIANTS[character.race] : undefined;
-
-
 
     // Auto-reset subrace if race changes  
     useEffect(() => {
-        if (selectedSpecies && !variants && character.subRace) {
+        if (selectedSpecies && !selectedSpecies.subraces && character.subRace) {
             updateCharacter({ subRace: '' });
         }
     }, [character.race]);
 
     // Check completion
-    const variantComplete = !variants || !!character.subRace;
+    const variantComplete = !selectedSpecies?.subraces || !!character.subRace;
 
     // === LEFT PANEL: Species Grid ===
     const leftPanel = (
@@ -53,7 +50,7 @@ const StepSpecies: React.FC<Props> = ({ character, updateCharacter }) => {
                             <span className="text-[10px] text-stone-300">•</span>
                             <span className="text-[10px] text-stone-400">{sp.speed}尺</span>
                         </div>
-                        {SPECIES_VARIANTS[sp.name] && (
+                        {sp.subraces && (
                             <span className="text-[9px] text-purple-600 bg-purple-50 px-1.5 py-0.5 rounded font-medium">
                                 有子种族
                             </span>
@@ -95,14 +92,14 @@ const StepSpecies: React.FC<Props> = ({ character, updateCharacter }) => {
             </div>
 
             {/* Pending Choices - Variant */}
-            {variants && (
+            {selectedSpecies.subraces && (
                 <div className="space-y-3">
                     <h3 className="font-bold text-stone-700 flex items-center gap-2">
                         <AlertCircle className="w-4 h-4 text-red-500" />
                         待选择项目
                     </h3>
                     <FeatureAccordion
-                        title={variants.label}
+                        title={selectedSpecies.subraces.label}
                         level={1}
                         isPending={!variantComplete}
                         isComplete={variantComplete}
@@ -111,7 +108,7 @@ const StepSpecies: React.FC<Props> = ({ character, updateCharacter }) => {
                         <div className="space-y-3">
                             <p className="text-sm text-stone-600 mb-3">选择你的血统变体：</p>
                             <div className="space-y-2">
-                                {variants.options.map(v => (
+                                {selectedSpecies.subraces.options.map(v => (
                                     <label
                                         key={v.name}
                                         className={`
@@ -127,42 +124,14 @@ const StepSpecies: React.FC<Props> = ({ character, updateCharacter }) => {
                                             className="mt-1"
                                             checked={character.subRace === v.name}
                                             onChange={() => {
-                                                // Handle Spell Updates
-                                                const updates: Partial<CharacterData> = { subRace: v.name };
-
-                                                // 1. Identify Old Spells to Remove
-                                                const oldVariant = variants.options.find(o => o.name === character.subRace);
-                                                if (oldVariant?.grantedSpells) {
-                                                    const spellsReq = { ...character.spells };
-                                                    oldVariant.grantedSpells.forEach(spell => {
-                                                        const key = spell.level === 0 ? 'cantrips' : `level${spell.level}` as keyof typeof character.spells;
-                                                        if (spellsReq[key]) {
-                                                            const list = spellsReq[key].split(', ').filter(s => s !== spell.name);
-                                                            spellsReq[key] = list.join(', ');
-                                                        }
-                                                    });
-                                                    updates.spells = spellsReq;
+                                                if (selectedSpecies.subraces) {
+                                                    const updates = updateCharacterSpellsFromSubrace(
+                                                        character,
+                                                        v.name,
+                                                        selectedSpecies.subraces.options
+                                                    );
+                                                    updateCharacter(updates);
                                                 }
-
-                                                // 2. Identify New Spells to Add
-                                                if (v.grantedSpells) {
-                                                    const spellsReq = updates.spells ? { ...updates.spells } : { ...character.spells };
-                                                    const charLevel = character.level || 1;
-
-                                                    v.grantedSpells.forEach(spell => {
-                                                        if (charLevel >= spell.unlockLevel) {
-                                                            const key = spell.level === 0 ? 'cantrips' : `level${spell.level}` as keyof typeof character.spells;
-                                                            const list = spellsReq[key] ? spellsReq[key].split(', ').filter(Boolean) : [];
-                                                            if (!list.includes(spell.name)) {
-                                                                list.push(spell.name);
-                                                                spellsReq[key] = list.join(', ');
-                                                            }
-                                                        }
-                                                    });
-                                                    updates.spells = spellsReq;
-                                                }
-
-                                                updateCharacter(updates);
                                             }}
                                         />
                                         <div className="flex-1">

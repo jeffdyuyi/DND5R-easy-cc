@@ -61,123 +61,53 @@ export const ALIGNMENT_DESCRIPTIONS: Record<string, { title: string; quote: stri
 
 // --- Subrace / Variant Data ---
 // Based on 5E 2024 / Project Data Descriptions
-export const SPECIES_VARIANTS: Record<string, { label: string; options: { name: string; desc: string; traits?: string; grantedSpells?: { level: number; name: string; unlockLevel: number }[] }[] }> = {
-  "精灵": {
-    label: "精灵血统",
-    options: [
-      {
-        name: "高精灵 (High Elf)",
-        desc: "习得魔法伎俩。3级侦测魔法，5级迷踪步。",
-        traits: "智力/感知/魅力施法",
-        grantedSpells: [
-          { level: 0, name: "魔法伎俩", unlockLevel: 1 },
-          { level: 1, name: "侦测魔法", unlockLevel: 3 },
-          { level: 2, name: "迷踪步", unlockLevel: 5 }
-        ]
-      },
-      {
-        name: "木精灵 (Wood Elf)",
-        desc: "速度35尺。习得德鲁伊戏法。3级大步奔行，5级行动无踪。",
-        traits: "智力/感知/魅力施法",
-        grantedSpells: [
-          { level: 0, name: "德鲁伊伎俩", unlockLevel: 1 },
-          { level: 1, name: "大步奔行", unlockLevel: 3 },
-          { level: 2, name: "行动无踪", unlockLevel: 5 }
-        ]
-      },
-      {
-        name: "卓尔 (Drow)",
-        desc: "120尺黑暗视觉。习得舞光术。3级妖火，5级黑暗术。",
-        traits: "智力/感知/魅力施法",
-        grantedSpells: [
-          { level: 0, name: "舞光术", unlockLevel: 1 },
-          { level: 1, name: "妖火", unlockLevel: 3 },
-          { level: 2, name: "黑暗术", unlockLevel: 5 }
-        ]
+// --- Subrace / Variant Data ---
+// Migrated to data/species/*.ts
+
+// --- Helper: Update Spells from Subrace ---
+import { CharacterData, SubSpeciesItem } from '../types';
+
+export const updateCharacterSpellsFromSubrace = (
+  character: CharacterData,
+  newSubraceName: string,
+  subraces: SubSpeciesItem[]
+): Partial<CharacterData> => {
+  const updates: Partial<CharacterData> = { subRace: newSubraceName };
+
+  // 1. Identify Old Spells to Remove
+  const oldVariant = subraces.find(o => o.name === character.subRace);
+  if (oldVariant?.grantedSpells) {
+    const spellsReq = { ...character.spells };
+    oldVariant.grantedSpells.forEach(spell => {
+      const key = spell.level === 0 ? 'cantrips' : `level${spell.level}` as keyof typeof character.spells;
+      if (spellsReq[key]) {
+        const list = spellsReq[key].split(', ').filter(s => s !== spell.name);
+        spellsReq[key] = list.join(', ');
       }
-    ]
-  },
-  "侏儒": {
-    label: "侏儒血统",
-    options: [
-      {
-        name: "森林侏儒 (Forest Gnome)",
-        desc: "习得次级幻影。可与小兽交流。",
-        traits: "动物交谈术",
-        grantedSpells: [
-          { level: 0, name: "次级幻影", unlockLevel: 1 },
-          { level: 1, name: "动物交谈", unlockLevel: 1 } // Trait says "Always prepared... cast without spell slot... also cast with slots". It's a spell.
-        ]
-      },
-      {
-        name: "岩侏儒 (Rock Gnome)",
-        desc: "习得修复术与魔法伎俩。可制作微型机械玩具。",
-        traits: "修补匠",
-        grantedSpells: [
-          { level: 0, name: "修复术", unlockLevel: 1 },
-          { level: 0, name: "魔法伎俩", unlockLevel: 1 }
-        ]
-      }
-    ]
-  },
-  "提夫林": {
-    label: "地狱遗赠",
-    options: [
-      {
-        name: "深渊提夫林 (Abyssal)",
-        desc: "毒素抗性。习得毒气喷溅。3级致病射线，5级人类定身术。",
-        traits: "生命骰d8",
-        grantedSpells: [
-          { level: 0, name: "毒气喷溅", unlockLevel: 1 }, // Note: 2024 PHB might be Poison Spray. File says "毒气喷涌". Using "毒气喷涌" based on previous file view. Wait, check previous logs or just use what I see.
-          // In Tiefling view: "毒气喷涌(Poison Spray)".
-          // In this file: "毒气喷溅". I should use consistent names. I'll use "毒气喷涌" to match data.
-          { level: 1, name: "致病射线", unlockLevel: 3 },
-          { level: 2, name: "定身类人", unlockLevel: 5 }
-        ]
-      },
-      {
-        name: "地渊提夫林 (Chthonic)",
-        desc: "黯蚀抗性。习得颤栗之触。3级虚假生命，5级衰弱射线。",
-        traits: "生命骰d8",
-        grantedSpells: [
-          { level: 0, name: "颤栗之触", unlockLevel: 1 },
-          { level: 1, name: "虚假生命", unlockLevel: 3 },
-          { level: 2, name: "衰弱射线", unlockLevel: 5 }
-        ]
-      },
-      {
-        name: "地狱提夫林 (Infernal)",
-        desc: "火焰抗性。习得火焰箭。3级炼狱叱喝，5级黑暗术。",
-        traits: "生命骰d8",
-        grantedSpells: [
-          { level: 0, name: "火焰箭", unlockLevel: 1 },
-          { level: 1, name: "炼狱叱喝", unlockLevel: 3 },
-          { level: 2, name: "黑暗术", unlockLevel: 5 }
-        ]
-      }
-    ]
-  },
-  "龙裔": {
-    label: "龙脉祖先",
-    options: [
-      { name: "黑龙 / 赤铜龙", desc: "酸液伤害抗性。酸液喷吐（5/30尺直线）。", traits: "酸液" },
-      { name: "蓝龙 / 青铜龙", desc: "闪电伤害抗性。闪电喷吐（5/30尺直线）。", traits: "闪电" },
-      { name: "红龙 / 金龙 / 黄铜龙", desc: "火焰伤害抗性。火焰喷吐（15尺锥状）。", traits: "火焰" },
-      { name: "绿龙", desc: "毒素伤害抗性。毒气喷吐（15尺锥状）。", traits: "毒素" },
-      { name: "白龙 / 银龙", desc: "冷冻伤害抗性。冷冻喷吐（15尺锥状）。", traits: "冷冻" }
-    ]
-  },
-  "歌利亚": {
-    label: "巨人祖先",
-    options: [
-      { name: "云巨人 (Cloud)", desc: "附赠动作传送30尺。", traits: "传送" },
-      { name: "火巨人 (Fire)", desc: "攻击命中额外1d10火焰伤害。", traits: "烈火打击" },
-      { name: "霜巨人 (Frost)", desc: "攻击命中额外1d6冷冻伤害并减速。", traits: "寒冰打击" },
-      { name: "丘陵巨人 (Hill)", desc: "攻击命中可击倒大型生物。", traits: "击倒" },
-      { name: "石巨人 (Stone)", desc: "反应减少伤害。", traits: "石之耐力" },
-      { name: "风暴巨人 (Storm)", desc: "反应对攻击者造成雷鸣伤害。", traits: "风暴反击" }
-    ]
+    });
+    updates.spells = spellsReq;
   }
+
+  // 2. Identify New Spells to Add
+  const newVariant = subraces.find(o => o.name === newSubraceName);
+  if (newVariant?.grantedSpells) {
+    const spellsReq = updates.spells ? { ...updates.spells } : { ...character.spells };
+    const charLevel = character.level || 1;
+
+    newVariant.grantedSpells.forEach(spell => {
+      if (charLevel >= spell.unlockLevel) {
+        const key = spell.level === 0 ? 'cantrips' : `level${spell.level}` as keyof typeof character.spells;
+        const list = spellsReq[key] ? spellsReq[key].split(', ').filter(Boolean) : [];
+        if (!list.includes(spell.name)) {
+          list.push(spell.name);
+          spellsReq[key] = list.join(', ');
+        }
+      }
+    });
+    updates.spells = spellsReq;
+  }
+
+  return updates;
 };
 
 // --- Skill Parser ---

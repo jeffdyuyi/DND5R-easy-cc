@@ -22,5 +22,40 @@ export const TIEFLING: SpeciesItem = {
             name: "异界存在 (Otherworldly Presence)",
             description: "你习得戏法【奇术】(Thaumaturgy)。用此特质施展它时，这道法术使用与你的邪魔遗赠特性使用相同的施法属性。"
         }
-    ]
+    ],
+    subraces: {
+        label: "地狱遗赠",
+        options: [
+            {
+                name: "深渊提夫林 (Abyssal)",
+                desc: "毒素抗性。习得毒气喷涌。3级致病射线，5级定身类人。",
+                traits: "生命骰d8",
+                grantedSpells: [
+                    { level: 0, name: "毒气喷涌", unlockLevel: 1 },
+                    { level: 1, name: "致病射线", unlockLevel: 3 },
+                    { level: 2, name: "定身类人", unlockLevel: 5 }
+                ]
+            },
+            {
+                name: "地渊提夫林 (Chthonic)",
+                desc: "黯蚀抗性。习得颤栗之触。3级虚假生命，5级衰弱射线。",
+                traits: "生命骰d8",
+                grantedSpells: [
+                    { level: 0, name: "颤栗之触", unlockLevel: 1 },
+                    { level: 1, name: "虚假生命", unlockLevel: 3 },
+                    { level: 2, name: "衰弱射线", unlockLevel: 5 }
+                ]
+            },
+            {
+                name: "地狱提夫林 (Infernal)",
+                desc: "火焰抗性。习得火焰箭。3级炼狱叱喝，5级黑暗术。",
+                traits: "生命骰d8",
+                grantedSpells: [
+                    { level: 0, name: "火焰箭", unlockLevel: 1 },
+                    { level: 1, name: "炼狱叱喝", unlockLevel: 3 },
+                    { level: 2, name: "黑暗术", unlockLevel: 5 }
+                ]
+            }
+        ]
+    }
 };

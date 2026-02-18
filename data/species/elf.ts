@@ -30,5 +30,40 @@ export const ELF: SpeciesItem = {
             name: "出神 (Trance)",
             description: "你不需要睡觉，魔法也无法使你陷入睡眠。利用出神冥想，你可以仅用4小时完成长休，且在这期间保持意识清醒。"
         }
-    ]
+    ],
+    subraces: {
+        label: "精灵血统",
+        options: [
+            {
+                name: "高精灵 (High Elf)",
+                desc: "习得魔法伎俩。3级侦测魔法，5级迷踪步。",
+                traits: "智力/感知/魅力施法",
+                grantedSpells: [
+                    { level: 0, name: "魔法伎俩", unlockLevel: 1 },
+                    { level: 1, name: "侦测魔法", unlockLevel: 3 },
+                    { level: 2, name: "迷踪步", unlockLevel: 5 }
+                ]
+            },
+            {
+                name: "木精灵 (Wood Elf)",
+                desc: "速度35尺。习得德鲁伊戏法。3级大步奔行，5级行动无踪。",
+                traits: "智力/感知/魅力施法",
+                grantedSpells: [
+                    { level: 0, name: "德鲁伊伎俩", unlockLevel: 1 },
+                    { level: 1, name: "大步奔行", unlockLevel: 3 },
+                    { level: 2, name: "行动无踪", unlockLevel: 5 }
+                ]
+            },
+            {
+                name: "卓尔 (Drow)",
+                desc: "120尺黑暗视觉。习得舞光术。3级妖火，5级黑暗术。",
+                traits: "智力/感知/魅力施法",
+                grantedSpells: [
+                    { level: 0, name: "舞光术", unlockLevel: 1 },
+                    { level: 1, name: "妖火", unlockLevel: 3 },
+                    { level: 2, name: "黑暗术", unlockLevel: 5 }
+                ]
+            }
+        ]
+    }
 };

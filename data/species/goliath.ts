@@ -22,5 +22,16 @@ export const GOLIATH: SpeciesItem = {
             name: "身强力壮 (Powerful Build)",
             description: "你为让自己结束受擒状态所进行的属性检定具有优势。此外，计算自己的载重时，你视为大一级的体型。"
         }
-    ]
+    ],
+    subraces: {
+        label: "巨人祖先",
+        options: [
+            { name: "云巨人 (Cloud)", desc: "附赠动作传送30尺。", traits: "传送" },
+            { name: "火巨人 (Fire)", desc: "攻击命中额外1d10火焰伤害。", traits: "烈火打击" },
+            { name: "霜巨人 (Frost)", desc: "攻击命中额外1d6冷冻伤害并减速。", traits: "寒冰打击" },
+            { name: "丘陵巨人 (Hill)", desc: "攻击命中可击倒大型生物。", traits: "击倒" },
+            { name: "石巨人 (Stone)", desc: "反应减少伤害。", traits: "石之耐力" },
+            { name: "风暴巨人 (Storm)", desc: "反应对攻击者造成雷鸣伤害。", traits: "风暴反击" }
+        ]
+    }
 };

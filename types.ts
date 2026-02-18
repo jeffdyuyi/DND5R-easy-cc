@@ -40,11 +40,22 @@ export interface BaseLibraryItem {
   tags?: string[]; // 例如：近战、施法者、小型体型
 }
 
+export interface SubSpeciesItem {
+  name: string;
+  desc: string; // Description for UI list
+  traits?: string; // Short summary for UI
+  grantedSpells?: { level: number; name: string; unlockLevel: number }[];
+}
+
 export interface SpeciesItem extends BaseLibraryItem {
   speed: number;
   size: string;
   darkvision: boolean;
   traits: { name: string; description: string }[];
+  subraces?: { // Grouping for UI
+    label: string;
+    options: SubSpeciesItem[];
+  };
 }
 
 export interface BackgroundItem extends BaseLibraryItem {
