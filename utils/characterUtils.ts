@@ -74,15 +74,28 @@ export const updateCharacterSpellsFromSubrace = (
 ): Partial<CharacterData> => {
   const updates: Partial<CharacterData> = { subRace: newSubraceName };
 
+  // Helper to parse spell string
+  const parseSpells = (str: string | undefined) => {
+    if (!str) return [];
+    return str.split(/[\n,]/)
+      .map(s => s.trim().replace(/^[•\-\*]\s*/, ''))
+      .filter(Boolean);
+  };
+
+  // Helper to format spell string
+  const formatSpells = (list: string[]) => list.map(s => `• ${s}`).join('\n');
+
   // 1. Identify Old Spells to Remove
   const oldVariant = subraces.find(o => o.name === character.subRace);
+  const spellsReq: typeof character.spells = { ...character.spells };
+
   if (oldVariant?.grantedSpells) {
-    const spellsReq = { ...character.spells };
     oldVariant.grantedSpells.forEach(spell => {
       const key = spell.level === 0 ? 'cantrips' : `level${spell.level}` as keyof typeof character.spells;
       if (spellsReq[key]) {
-        const list = spellsReq[key].split(', ').filter(s => s !== spell.name);
-        spellsReq[key] = list.join(', ');
+        let list = parseSpells(spellsReq[key]);
+        list = list.filter(s => s !== spell.name);
+        spellsReq[key] = formatSpells(list);
       }
     });
     updates.spells = spellsReq;
@@ -91,16 +104,15 @@ export const updateCharacterSpellsFromSubrace = (
   // 2. Identify New Spells to Add
   const newVariant = subraces.find(o => o.name === newSubraceName);
   if (newVariant?.grantedSpells) {
-    const spellsReq = updates.spells ? { ...updates.spells } : { ...character.spells };
     const charLevel = character.level || 1;
 
     newVariant.grantedSpells.forEach(spell => {
       if (charLevel >= spell.unlockLevel) {
         const key = spell.level === 0 ? 'cantrips' : `level${spell.level}` as keyof typeof character.spells;
-        const list = spellsReq[key] ? spellsReq[key].split(', ').filter(Boolean) : [];
+        const list = parseSpells(spellsReq[key]);
         if (!list.includes(spell.name)) {
           list.push(spell.name);
-          spellsReq[key] = list.join(', ');
+          spellsReq[key] = formatSpells(list);
         }
       }
     });

@@ -102,43 +102,76 @@ const StepSpells: React.FC<Props> = ({ character, updateCharacter }) => {
         });
     };
 
+    // Helper to parse spell string (handles both newlines and legacy commas)
+    const parseSpellString = (str: string | undefined): string[] => {
+        if (!str) return [];
+        return str.split(/[\n,]/)
+            .map(s => s.trim().replace(/^[•\-\*]\s*/, ''))
+            .filter(Boolean);
+    };
+
+    // Helper to format spell string for storage (consistent with TabSpells)
+    const formatSpellString = (list: string[]): string => {
+        return list.map(s => `• ${s}`).join('\n');
+    };
+
     // Toggle cantrip selection
     const toggleCantrip = (cantripName: string) => {
-        const current = [...selectedCantrips];
-        const idx = current.indexOf(cantripName);
+        const oldCantrips = [...selectedCantrips];
+        const newCantrips = [...selectedCantrips];
+
+        const idx = newCantrips.indexOf(cantripName);
         if (idx >= 0) {
-            current.splice(idx, 1);
-        } else if (current.length < 2) {
-            current.push(cantripName);
+            newCantrips.splice(idx, 1);
+        } else if (newCantrips.length < 2) {
+            newCantrips.push(cantripName);
         }
+
+        // Update Global Spell List
+        let allCantrips = parseSpellString(character.spells?.cantrips);
+
+        // Remove old selection from global list
+        if (oldCantrips.length > 0) {
+            allCantrips = allCantrips.filter(c => !oldCantrips.includes(c));
+        }
+
+        // Add new selection to global list
+        allCantrips = Array.from(new Set([...allCantrips, ...newCantrips]));
 
         // Single update for both feat config and spellbook
         updateCharacter({
             featConfig: {
                 ...character.featConfig,
-                originFeat: { ...featConfig, cantrips: current },
+                originFeat: { ...featConfig, cantrips: newCantrips },
                 otherFeats: character.featConfig?.otherFeats || {},
             },
             spells: {
                 ...character.spells,
-                cantrips: current.join(', '),
+                cantrips: formatSpellString(allCantrips),
             },
         });
     };
 
     // Select level 1 spell
     const selectLevel1Spell = (spellName: string) => {
-        // 1. Prepare Spells update
-        const currentL1 = character.spells?.level1?.split(', ').filter(Boolean) || [];
-        let newLevel1Str = character.spells?.level1 || '';
+        const oldSpell = selectedLevel1Spell;
 
-        // Check if we need to add it
-        if (!currentL1.includes(spellName)) {
-            currentL1.push(spellName);
-            newLevel1Str = currentL1.join(', ');
+        // Update Global Spell List
+        let allLevel1 = parseSpellString(character.spells?.level1);
+
+        // Remove old spell from global list
+        if (oldSpell) {
+            allLevel1 = allLevel1.filter(s => s !== oldSpell);
         }
 
-        // 2. Perform single update
+        // Add new spell
+        if (!allLevel1.includes(spellName)) {
+            allLevel1.push(spellName);
+        }
+
+        const newLevel1Str = formatSpellString(allLevel1);
+
+        // Perform single update
         updateCharacter({
             featConfig: {
                 ...character.featConfig,

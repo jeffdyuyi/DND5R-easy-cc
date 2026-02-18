@@ -18,6 +18,7 @@ import { useCharacters } from '../contexts/CharacterContext';
 import { useSpellFilter, useFeatFilter, useItemFilter, useMagicItemFilter } from '../hooks/useLibraryFilters';
 import { WelcomeScreen } from './common/WelcomeScreen';
 import { CompactCard } from './common/CompactCard';
+import { ClassCard } from './common/ClassCard';
 
 // Main Component
 export const MainLayout = () => {
@@ -161,6 +162,16 @@ export const MainLayout = () => {
                         cardColorTheme="red"
                         renderDetail={(item) => <ClassDetailView item={item} />}
                         renderEditFields={(item, setItem) => <ClassEditor item={item} setItem={setItem} />}
+                        layout="grid"
+                        renderItem={(item, isSelected, onClick, actions) => (
+                            <ClassCard
+                                item={item}
+                                type="class"
+                                isSelected={isSelected}
+                                onClick={onClick}
+                                actions={actions}
+                            />
+                        )}
                         emptyTemplate={{
                             id: '', name: '', source: '第三方/原创', description: '',
                             hitDie: 'd8', primaryAbility: '力量', saves: [], tags: [],
@@ -182,6 +193,16 @@ export const MainLayout = () => {
                         cardColorTheme="orange"
                         renderDetail={(item) => <SubclassDetailView item={item} />}
                         renderEditFields={(item, setItem) => <SubclassEditor item={item} setItem={setItem} classes={classes.items} />}
+                        layout="grid"
+                        renderItem={(item, isSelected, onClick, actions) => (
+                            <ClassCard
+                                item={item}
+                                type="subclass"
+                                isSelected={isSelected}
+                                onClick={onClick}
+                                actions={actions}
+                            />
+                        )}
                         emptyTemplate={{
                             id: '', name: '', source: '第三方/原创', description: '',
                             parentClass: classes.items[0]?.name || '', features: []
