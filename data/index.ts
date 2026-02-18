@@ -2,8 +2,8 @@
 import { ClassItem, AbilityScores } from '../types';
 import { CLASS_DB } from './data-classes';
 import { SUBCLASS_DB } from './data-subclasses';
-import { SPECIES_DB } from './data-species';
-import { BACKGROUND_DB } from './data-backgrounds';
+import { SPECIES_DB } from './species';
+import { BACKGROUND_DB } from './backgrounds';
 import { SPELL_DB } from './data-spells';
 import { SPELL_LISTS_DB, RANGER_SPELLS, SORCERER_SPELLS } from './spell-lists';
 import { FEAT_DB } from './data-feats';
