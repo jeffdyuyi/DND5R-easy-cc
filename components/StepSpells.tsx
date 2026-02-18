@@ -111,10 +111,14 @@ const StepSpells: React.FC<Props> = ({ character, updateCharacter }) => {
         } else if (current.length < 2) {
             current.push(cantripName);
         }
-        updateFeatConfig({ cantrips: current });
 
-        // Also add to character spells
+        // Single update for both feat config and spellbook
         updateCharacter({
+            featConfig: {
+                ...character.featConfig,
+                originFeat: { ...featConfig, cantrips: current },
+                otherFeats: character.featConfig?.otherFeats || {},
+            },
             spells: {
                 ...character.spells,
                 cantrips: current.join(', '),
@@ -124,19 +128,28 @@ const StepSpells: React.FC<Props> = ({ character, updateCharacter }) => {
 
     // Select level 1 spell
     const selectLevel1Spell = (spellName: string) => {
-        updateFeatConfig({ level1Spell: spellName });
-
-        // Also add to character spells
+        // 1. Prepare Spells update
         const currentL1 = character.spells?.level1?.split(', ').filter(Boolean) || [];
+        let newLevel1Str = character.spells?.level1 || '';
+
+        // Check if we need to add it
         if (!currentL1.includes(spellName)) {
             currentL1.push(spellName);
-            updateCharacter({
-                spells: {
-                    ...character.spells,
-                    level1: currentL1.join(', '),
-                },
-            });
+            newLevel1Str = currentL1.join(', ');
         }
+
+        // 2. Perform single update
+        updateCharacter({
+            featConfig: {
+                ...character.featConfig,
+                originFeat: { ...featConfig, level1Spell: spellName },
+                otherFeats: character.featConfig?.otherFeats || {},
+            },
+            spells: {
+                ...character.spells,
+                level1: newLevel1Str,
+            }
+        });
     };
 
     // Completion checks
