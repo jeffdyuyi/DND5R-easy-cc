@@ -126,7 +126,44 @@ const StepSpecies: React.FC<Props> = ({ character, updateCharacter }) => {
                                             name="subrace"
                                             className="mt-1"
                                             checked={character.subRace === v.name}
-                                            onChange={() => updateCharacter({ subRace: v.name })}
+                                            onChange={() => {
+                                                // Handle Spell Updates
+                                                const updates: Partial<CharacterData> = { subRace: v.name };
+
+                                                // 1. Identify Old Spells to Remove
+                                                const oldVariant = variants.options.find(o => o.name === character.subRace);
+                                                if (oldVariant?.grantedSpells) {
+                                                    const spellsReq = { ...character.spells };
+                                                    oldVariant.grantedSpells.forEach(spell => {
+                                                        const key = spell.level === 0 ? 'cantrips' : `level${spell.level}` as keyof typeof character.spells;
+                                                        if (spellsReq[key]) {
+                                                            const list = spellsReq[key].split(', ').filter(s => s !== spell.name);
+                                                            spellsReq[key] = list.join(', ');
+                                                        }
+                                                    });
+                                                    updates.spells = spellsReq;
+                                                }
+
+                                                // 2. Identify New Spells to Add
+                                                if (v.grantedSpells) {
+                                                    const spellsReq = updates.spells ? { ...updates.spells } : { ...character.spells };
+                                                    const charLevel = character.level || 1;
+
+                                                    v.grantedSpells.forEach(spell => {
+                                                        if (charLevel >= spell.unlockLevel) {
+                                                            const key = spell.level === 0 ? 'cantrips' : `level${spell.level}` as keyof typeof character.spells;
+                                                            const list = spellsReq[key] ? spellsReq[key].split(', ').filter(Boolean) : [];
+                                                            if (!list.includes(spell.name)) {
+                                                                list.push(spell.name);
+                                                                spellsReq[key] = list.join(', ');
+                                                            }
+                                                        }
+                                                    });
+                                                    updates.spells = spellsReq;
+                                                }
+
+                                                updateCharacter(updates);
+                                            }}
                                         />
                                         <div className="flex-1">
                                             <div className="font-bold text-stone-800">{v.name}</div>

@@ -61,28 +61,100 @@ export const ALIGNMENT_DESCRIPTIONS: Record<string, { title: string; quote: stri
 
 // --- Subrace / Variant Data ---
 // Based on 5E 2024 / Project Data Descriptions
-export const SPECIES_VARIANTS: Record<string, { label: string; options: { name: string; desc: string; traits?: string }[] }> = {
+export const SPECIES_VARIANTS: Record<string, { label: string; options: { name: string; desc: string; traits?: string; grantedSpells?: { level: number; name: string; unlockLevel: number }[] }[] }> = {
   "精灵": {
     label: "精灵血统",
     options: [
-      { name: "高精灵 (High Elf)", desc: "习得魔法伎俩。3级侦测魔法，5级迷踪步。", traits: "智力/感知/魅力施法" },
-      { name: "木精灵 (Wood Elf)", desc: "速度35尺。习得德鲁伊戏法。3级大步奔行，5级行动无踪。", traits: "智力/感知/魅力施法" },
-      { name: "卓尔 (Drow)", desc: "120尺黑暗视觉。习得舞光术。3级妖火，5级黑暗术。", traits: "智力/感知/魅力施法" }
+      {
+        name: "高精灵 (High Elf)",
+        desc: "习得魔法伎俩。3级侦测魔法，5级迷踪步。",
+        traits: "智力/感知/魅力施法",
+        grantedSpells: [
+          { level: 0, name: "魔法伎俩", unlockLevel: 1 },
+          { level: 1, name: "侦测魔法", unlockLevel: 3 },
+          { level: 2, name: "迷踪步", unlockLevel: 5 }
+        ]
+      },
+      {
+        name: "木精灵 (Wood Elf)",
+        desc: "速度35尺。习得德鲁伊戏法。3级大步奔行，5级行动无踪。",
+        traits: "智力/感知/魅力施法",
+        grantedSpells: [
+          { level: 0, name: "德鲁伊伎俩", unlockLevel: 1 },
+          { level: 1, name: "大步奔行", unlockLevel: 3 },
+          { level: 2, name: "行动无踪", unlockLevel: 5 }
+        ]
+      },
+      {
+        name: "卓尔 (Drow)",
+        desc: "120尺黑暗视觉。习得舞光术。3级妖火，5级黑暗术。",
+        traits: "智力/感知/魅力施法",
+        grantedSpells: [
+          { level: 0, name: "舞光术", unlockLevel: 1 },
+          { level: 1, name: "妖火", unlockLevel: 3 },
+          { level: 2, name: "黑暗术", unlockLevel: 5 }
+        ]
+      }
     ]
   },
   "侏儒": {
     label: "侏儒血统",
     options: [
-      { name: "森林侏儒 (Forest Gnome)", desc: "习得次级幻影。可与小兽交流。", traits: "动物交谈术" },
-      { name: "岩侏儒 (Rock Gnome)", desc: "习得修复术与魔法伎俩。可制作微型机械玩具。", traits: "修补匠" }
+      {
+        name: "森林侏儒 (Forest Gnome)",
+        desc: "习得次级幻影。可与小兽交流。",
+        traits: "动物交谈术",
+        grantedSpells: [
+          { level: 0, name: "次级幻影", unlockLevel: 1 },
+          { level: 1, name: "动物交谈", unlockLevel: 1 } // Trait says "Always prepared... cast without spell slot... also cast with slots". It's a spell.
+        ]
+      },
+      {
+        name: "岩侏儒 (Rock Gnome)",
+        desc: "习得修复术与魔法伎俩。可制作微型机械玩具。",
+        traits: "修补匠",
+        grantedSpells: [
+          { level: 0, name: "修复术", unlockLevel: 1 },
+          { level: 0, name: "魔法伎俩", unlockLevel: 1 }
+        ]
+      }
     ]
   },
   "提夫林": {
     label: "地狱遗赠",
     options: [
-      { name: "深渊提夫林 (Abyssal)", desc: "毒素抗性。习得毒气喷溅。3级致病射线，5级人类定身术。", traits: "生命骰d8" },
-      { name: "地渊提夫林 (Chthonic)", desc: "黯蚀抗性。习得冻寒之触。3级虚假生命，5级衰弱射线。", traits: "生命骰d8" },
-      { name: "地狱提夫林 (Infernal)", desc: "火焰抗性。习得火焰箭。3级炼狱叱喝，5级黑暗术。", traits: "生命骰d8" }
+      {
+        name: "深渊提夫林 (Abyssal)",
+        desc: "毒素抗性。习得毒气喷溅。3级致病射线，5级人类定身术。",
+        traits: "生命骰d8",
+        grantedSpells: [
+          { level: 0, name: "毒气喷溅", unlockLevel: 1 }, // Note: 2024 PHB might be Poison Spray. File says "毒气喷涌". Using "毒气喷涌" based on previous file view. Wait, check previous logs or just use what I see.
+          // In Tiefling view: "毒气喷涌(Poison Spray)".
+          // In this file: "毒气喷溅". I should use consistent names. I'll use "毒气喷涌" to match data.
+          { level: 1, name: "致病射线", unlockLevel: 3 },
+          { level: 2, name: "定身类人", unlockLevel: 5 }
+        ]
+      },
+      {
+        name: "地渊提夫林 (Chthonic)",
+        desc: "黯蚀抗性。习得颤栗之触。3级虚假生命，5级衰弱射线。",
+        traits: "生命骰d8",
+        grantedSpells: [
+          { level: 0, name: "颤栗之触", unlockLevel: 1 },
+          { level: 1, name: "虚假生命", unlockLevel: 3 },
+          { level: 2, name: "衰弱射线", unlockLevel: 5 }
+        ]
+      },
+      {
+        name: "地狱提夫林 (Infernal)",
+        desc: "火焰抗性。习得火焰箭。3级炼狱叱喝，5级黑暗术。",
+        traits: "生命骰d8",
+        grantedSpells: [
+          { level: 0, name: "火焰箭", unlockLevel: 1 },
+          { level: 1, name: "炼狱叱喝", unlockLevel: 3 },
+          { level: 2, name: "黑暗术", unlockLevel: 5 }
+        ]
+      }
     ]
   },
   "龙裔": {
