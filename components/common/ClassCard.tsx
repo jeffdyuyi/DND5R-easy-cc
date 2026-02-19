@@ -23,23 +23,26 @@ const CLASS_ICONS: Record<string, JSX.Element> = {
     '法师': <Wand2 className="w-full h-full" />,
 };
 
-// --- Color Mapping ---
-const CLASS_COLORS: Record<string, string> = {
-    '野蛮人': 'bg-orange-600',
-    '吟游诗人': 'bg-pink-600',
-    '牧师': 'bg-slate-300 text-slate-800', // Clerics often silver/white
-    '德鲁伊': 'bg-green-700',
-    '战士': 'bg-stone-700',
-    '武僧': 'bg-sky-600',
-    '圣武士': 'bg-yellow-600',
-    '游侠': 'bg-emerald-700',
-    '游荡者': 'bg-neutral-800',
-    '术士': 'bg-red-600',
-    '魔契师': 'bg-purple-700',
-    '法师': 'bg-blue-700',
+// --- Color Config Mapping ---
+// Each entry has explicit Tailwind classes so JIT can detect them at build time.
+interface ColorConfig { bg: string; ring: string; }
+
+const CLASS_COLOR_CONFIG: Record<string, ColorConfig> = {
+    '野蛮人': { bg: 'bg-orange-600', ring: 'ring-orange-400' },
+    '吟游诗人': { bg: 'bg-pink-600', ring: 'ring-pink-400' },
+    '牧师': { bg: 'bg-slate-400', ring: 'ring-slate-400' },
+    '德鲁伊': { bg: 'bg-green-700', ring: 'ring-green-400' },
+    '战士': { bg: 'bg-stone-700', ring: 'ring-stone-400' },
+    '武僧': { bg: 'bg-sky-600', ring: 'ring-sky-400' },
+    '圣武士': { bg: 'bg-yellow-500', ring: 'ring-yellow-400' },
+    '游侠': { bg: 'bg-emerald-700', ring: 'ring-emerald-400' },
+    '游荡者': { bg: 'bg-neutral-800', ring: 'ring-neutral-500' },
+    '术士': { bg: 'bg-red-600', ring: 'ring-red-400' },
+    '魔契师': { bg: 'bg-purple-700', ring: 'ring-purple-400' },
+    '法师': { bg: 'bg-blue-700', ring: 'ring-blue-400' },
 };
 
-const DEFAULT_COLOR = 'bg-stone-600';
+const DEFAULT_CONFIG: ColorConfig = { bg: 'bg-stone-600', ring: 'ring-stone-400' };
 const DEFAULT_ICON = <Sparkles className="w-full h-full" />;
 
 interface Props {
@@ -51,39 +54,28 @@ interface Props {
 }
 
 export const ClassCard: React.FC<Props> = ({ item, type, isSelected, onClick, actions }) => {
-    // Determine Icon and Color
-    let icon: JSX.Element = DEFAULT_ICON;
-    let colorClass = DEFAULT_COLOR;
+    // Resolve icon and color based on class name (or parent class for subclasses)
+    const lookupKey = type === 'class'
+        ? (item as ClassItem).name
+        : (item as SubclassItem).parentClass;
 
-    if (type === 'class') {
-        const cls = item as ClassItem;
-        if (CLASS_ICONS[cls.name]) icon = CLASS_ICONS[cls.name];
-        if (CLASS_COLORS[cls.name]) colorClass = CLASS_COLORS[cls.name];
-    } else {
-        const sub = item as SubclassItem;
-        // Subclass uses parent class icon/color but maybe lighter/different?
-        // For now use parent class
-        if (CLASS_ICONS[sub.parentClass]) icon = CLASS_ICONS[sub.parentClass];
-        if (CLASS_COLORS[sub.parentClass]) colorClass = CLASS_COLORS[sub.parentClass];
-    }
-
-    // Determine accent color for borders/text based on background
-    // Simple heuristic: specific colors map to specific rings
-    const ringClass = colorClass.replace('bg-', 'ring-').replace('700', '400').replace('600', '400').replace('800', '500');
+    const icon = CLASS_ICONS[lookupKey] ?? DEFAULT_ICON;
+    const colorConfig = CLASS_COLOR_CONFIG[lookupKey] ?? DEFAULT_CONFIG;
+    const { bg: colorClass, ring: ringClass } = colorConfig;
 
     return (
         <div
             onClick={onClick}
             className={`
-        group relative cursor-pointer rounded-xl transition-all duration-300 overflow-hidden
-        flex flex-col shadow-md hover:shadow-xl hover:-translate-y-1 bg-white
-        ${isSelected ? `ring-4 ${ringClass} ring-offset-2 z-10` : 'ring-1 ring-stone-200'}
-        h-full
-      `}
+                group relative cursor-pointer rounded-xl transition-all duration-300 overflow-hidden
+                flex flex-col shadow-md hover:shadow-xl hover:-translate-y-1 bg-white
+                ${isSelected ? `ring-4 ${ringClass} ring-offset-2 z-10` : 'ring-1 ring-stone-200'}
+                h-full
+            `}
         >
             {/* Header / Banner */}
             <div className={`h-24 ${colorClass} relative p-4 flex justify-between items-start overflow-hidden`}>
-                {/* Background Pattern (Abstract) */}
+                {/* Decorative circles */}
                 <div className="absolute inset-0 opacity-20 pointer-events-none">
                     <div className="absolute -right-4 -bottom-8 w-32 h-32 rounded-full border-8 border-white/20" />
                     <div className="absolute right-12 -top-8 w-24 h-24 rounded-full border-4 border-white/10" />
@@ -91,10 +83,10 @@ export const ClassCard: React.FC<Props> = ({ item, type, isSelected, onClick, ac
 
                 {/* Source Badge */}
                 <span className={`
-          relative z-10 text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full
-          ${item.source === '官方规则' ? 'bg-black/30 text-white' : 'bg-white/90 text-purple-700'}
-        `}>
-                    {item.source === '官方规则' ? '官方' : '自制'}
+                    relative z-10 text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full
+                    ${['官方规则', "PHB'14", "PHB'24", "PHB", 'XGE', 'TCE', 'FTD', 'DMG', 'Free Basic Rules (2024)'].includes(item.source) || !item.source.includes('自制') && !item.source.includes('第三方') ? 'bg-black/30 text-white' : 'bg-white/90 text-purple-700'}
+                `}>
+                    {['官方规则', "PHB'14", "PHB'24", "PHB", 'XGE', 'TCE', 'FTD', 'DMG', 'Free Basic Rules (2024)'].includes(item.source) || !item.source.includes('自制') && !item.source.includes('第三方') ? '官方' : '自制'}
                 </span>
 
                 {/* Selected Check */}
@@ -105,36 +97,33 @@ export const ClassCard: React.FC<Props> = ({ item, type, isSelected, onClick, ac
                 )}
             </div>
 
-            {/* Profile Icon (Overlapping) */}
+            {/* Profile Icon (overlapping the banner) */}
             <div className="relative px-4 -mt-10 mb-2 flex justify-between items-end">
-                <div className={`
-          w-20 h-20 rounded-xl shadow-lg flex items-center justify-center p-4
-          bg-white border-4 border-white text-stone-700
-        `}>
+                <div className="w-20 h-20 rounded-xl shadow-lg flex items-center justify-center p-4 bg-white border-4 border-white text-stone-700">
                     {icon}
                 </div>
 
-                {/* Actions (if any) */}
+                {/* Edit / Delete Actions */}
                 <div className="mb-2 opacity-0 group-hover:opacity-100 transition-opacity">
                     {actions}
                 </div>
             </div>
 
-            {/* Body Content */}
+            {/* Body */}
             <div className="px-4 pb-4 flex-grow flex flex-col">
-                {/* Title */}
-                <div className="mb-1">
-                    {type === 'subclass' && (
-                        <div className="text-xs font-bold text-stone-400 uppercase tracking-widest mb-0.5">
-                            {(item as SubclassItem).parentClass}专精
-                        </div>
-                    )}
-                    <h3 className="text-xl font-black text-stone-800 leading-tight group-hover:text-amber-700 transition-colors">
-                        {item.name}
-                    </h3>
-                </div>
+                {/* Subtitle for subclasses */}
+                {type === 'subclass' && (
+                    <div className="text-xs font-bold text-stone-400 uppercase tracking-widest mb-0.5">
+                        {(item as SubclassItem).parentClass} 专精
+                    </div>
+                )}
 
-                {/* Badges / Stats */}
+                {/* Name */}
+                <h3 className="text-xl font-black text-stone-800 leading-tight group-hover:text-amber-700 transition-colors mb-1">
+                    {item.name}
+                </h3>
+
+                {/* Stat Badges */}
                 <div className="flex flex-wrap gap-2 mt-2 mb-3">
                     {type === 'class' ? (
                         <>
@@ -152,12 +141,12 @@ export const ClassCard: React.FC<Props> = ({ item, type, isSelected, onClick, ac
                     )}
                 </div>
 
-                {/* Description (Truncated) */}
-                <p className="text-sm text-stone-500 line-clamp-3 leading-relaxed mb-4 flex-grow">
-                    {item.description || "暂无描述..."}
+                {/* Description */}
+                <p className="text-sm text-stone-500 line-clamp-4 leading-relaxed mb-4 flex-grow whitespace-pre-line">
+                    {item.description || '暂无描述...'}
                 </p>
 
-                {/* Footer Link */}
+                {/* Footer */}
                 <div className="pt-3 border-t border-stone-100 flex items-center justify-between text-stone-400 text-xs font-bold uppercase tracking-wider group-hover:text-amber-600 transition-colors">
                     <span>查看详情</span>
                     <ChevronRight className="w-4 h-4" />

@@ -197,7 +197,8 @@ export const BARBARIAN_SUBCLASSES: SubclassItem[] = [
         name: "狂战士道途",
         parentClass: "野蛮人",
         source: "官方规则",
-        description: "那些踏上狂战士道途的野蛮人以暴力的方式直接诠释狂暴。狂战士之道代表着不受约束的狂怒，他们于混乱的战斗中兴奋忘我，将自身完全交托于狂暴操控。",
+        description: "极限狂怒\n连续攻势\n无我境界\n威射全场\n暴力美学",
+        fullDescription: "那些踏上狂战士道途的野蛮人以暴力的方式直接诠释狂暴。狂战士之道代表着不受约束的狂怒，他们于混乱的战斗中兴奋忘我，将自身完全交托于狂暴操控。",
         features: [
             {
                 level: 3,
@@ -226,7 +227,8 @@ export const BARBARIAN_SUBCLASSES: SubclassItem[] = [
         name: "兽心道途",
         parentClass: "野蛮人",
         source: "官方规则",
-        description: "跟随兽心道途的野蛮人将自身视作动物们的家人。他们学习与动物交流的魔法手段，他们的狂暴赋予他们超自然的力量来增强与动物们的联系。",
+        description: "山林为伴\n异兽化身\n自然语者\n鹰熊狼三形\n荒野生存",
+        fullDescription: "跟随兽心道途的野蛮人将自身视作动物们的家人。他们学习与动物交流的魔法手段，他们的狂暴赋予他们超自然的力量来增强与动物们的联系。",
         features: [
             {
                 level: 3,
@@ -260,7 +262,8 @@ export const BARBARIAN_SUBCLASSES: SubclassItem[] = [
         name: "世界树道途",
         parentClass: "野蛮人",
         source: "官方规则",
-        description: "追随世界树道途的野蛮人以狂暴的力量与宇宙之树尤格德拉希尔连接。尤格德拉希尔在外层位面中生长，将每个外层位面与物质位面一一相连。世界树道途的野蛮人利用树的魔力来保持活力，并将其作为次元旅行的手段。",
+        description: "位面行者\n生命之源\n枝条传送\n根须打击\n世界树枝",
+        fullDescription: "追随世界树道途的野蛮人以狂暴的力量与宇宙之树尤格德拉希尔连接。尤格德拉希尔在外层位面中生长，将每个外层位面与物质位面一一相连。世界树道途的野蛮人利用树的魔力来保持活力，并将其作为次元旅行的手段。",
         features: [
             {
                 level: 3,
@@ -289,7 +292,8 @@ export const BARBARIAN_SUBCLASSES: SubclassItem[] = [
         name: "狂热者道途",
         parentClass: "野蛮人",
         source: "官方规则",
-        description: "走上狂热者道途的野蛮人会得到某个神明或某个神系的恩惠。这些野蛮人将他们的狂暴视为神圣结合的至高愉悦，并借此获得力量。狂热者野蛮人常是他们的神明或神系座下牧师或信者的盟友。",
+        description: "神力加持\n光耀伤害\n山岳不死\n神圣狂暴\n不死战士",
+        fullDescription: "走上狂热者道途的野蛮人会得到某个神明或某个神系的恩惠。这些野蛮人将他们的狂暴视为神圣结合的至高愉悦，并借此获得力量。狂热者野蛮人常是他们的神明或神系座下牧师或信者的盟友。",
         features: [
             {
                 level: 3,
