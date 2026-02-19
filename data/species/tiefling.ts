@@ -24,7 +24,7 @@ export const TIEFLING: SpeciesItem = {
         }
     ],
     subraces: {
-        label: "地狱遗赠",
+        label: "邪魔遗赠",
         options: [
             {
                 name: "深渊提夫林 (Abyssal)",
@@ -37,8 +37,8 @@ export const TIEFLING: SpeciesItem = {
                 ]
             },
             {
-                name: "地渊提夫林 (Chthonic)",
-                desc: "黯蚀抗性。习得颤栗之触。3级虚假生命，5级衰弱射线。",
+                name: "幽冥提夫林 (Chthonic)",
+                desc: "暗蚀抗性。习得颤栗之触。3级虚假生命，5级衰弱射线。",
                 traits: "生命骰d8",
                 grantedSpells: [
                     { level: 0, name: "颤栗之触", unlockLevel: 1 },

@@ -206,7 +206,7 @@ export const SpeciesDetailView = ({ item }: { item: SpeciesItem }) => (
     bodyContent={
       <>
         <div className="italic text-stone-600 mb-6">
-          <RichText text={item.description} />
+          <RichText text={item.fullDescription || item.description} />
         </div>
         <h3 className="font-black text-lg text-stone-800 uppercase tracking-wide border-b-2 border-stone-800 pb-1 mb-4">种族特性</h3>
         {item.traits.map((t, i) => (

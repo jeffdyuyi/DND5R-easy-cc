@@ -38,7 +38,7 @@ export const DRAGONBORN: SpeciesItem = {
             { name: "蓝龙 / 青铜龙", desc: "闪电伤害抗性。闪电喷吐（5/30尺直线）。", traits: "闪电" },
             { name: "红龙 / 金龙 / 黄铜龙", desc: "火焰伤害抗性。火焰喷吐（15尺锥状）。", traits: "火焰" },
             { name: "绿龙", desc: "毒素伤害抗性。毒气喷吐（15尺锥状）。", traits: "毒素" },
-            { name: "白龙 / 银龙", desc: "冷冻伤害抗性。冷冻喷吐（15尺锥状）。", traits: "冷冻" }
+            { name: "白龙 / 银龙", desc: "寒冷伤害抗性。寒冷喷吐（15尺锥状）。", traits: "寒冷" }
         ]
     }
 };

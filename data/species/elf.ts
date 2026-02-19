@@ -44,7 +44,7 @@ export const ELF: SpeciesItem = {
         label: "精灵血统",
         options: [
             {
-                name: "高精灵 (High Elf)",
+                name: "高等精灵 (High Elf)",
                 desc: "习得魔法伎俩。3级侦测魔法，5级迷踪步。",
                 traits: "智力/感知/魅力施法",
                 grantedSpells: [
