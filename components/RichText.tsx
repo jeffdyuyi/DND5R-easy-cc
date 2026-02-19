@@ -7,18 +7,19 @@ export const RichText = ({ text }: { text?: string }) => {
   // Split text into lines to process tables and paragraphs
   const lines = text.split('\n');
   const renderedLines: React.ReactNode[] = [];
-  
+
   let tableBuffer: string[] = [];
   let inTable = false;
 
   const processInline = (str: string) => {
-    // Basic regex for bold and italic
+    // Regex to match **bold** or *italic*
+    // We utilize a capturing group to split the string while keeping the delimiters to identify them
     const parts = str.split(/(\*\*.*?\*\*|\*.*?\*)/g);
     return parts.map((part, idx) => {
-      if (part.startsWith('**') && part.endsWith('**')) {
+      if (part.startsWith('**') && part.endsWith('**') && part.length >= 4) {
         return <strong key={idx} className="font-bold text-stone-900">{part.slice(2, -2)}</strong>;
       }
-      if (part.startsWith('*') && part.endsWith('*')) {
+      if (part.startsWith('*') && part.endsWith('*') && part.length >= 2) {
         return <em key={idx} className="italic text-stone-800">{part.slice(1, -1)}</em>;
       }
       return part;

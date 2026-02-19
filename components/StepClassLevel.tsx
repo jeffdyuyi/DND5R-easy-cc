@@ -10,6 +10,7 @@ import {
   Music, Leaf, Moon, Sparkles, CheckCircle, AlertCircle,
   Axe, Zap, Eye, Target, Footprints
 } from 'lucide-react';
+import { RichText } from './RichText';
 
 interface Props {
   character: CharacterData;
@@ -302,7 +303,7 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
                     >
                       <option value="">-- 选择武器 --</option>
                       {masteryOptions.map(w => (
-                        <option key={w.id} value={w.id}>{w.name} ({w.mastery?.split(':')[0]?.trim()?.replace('**', '')?.replace('**', '') || '精通'})</option>
+                        <option key={w.id} value={w.id}>{w.name} ({w.mastery?.split(':')[0]?.trim()?.replace(/\*\*/g, '') || '精通'})</option>
                       ))}
                     </select>
 
@@ -397,7 +398,7 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
               isComplete
             >
               <div className="text-sm text-stone-600 leading-relaxed whitespace-pre-line">
-                {feature.description}
+                <RichText text={feature.description} />
               </div>
             </FeatureAccordion>
           ))}

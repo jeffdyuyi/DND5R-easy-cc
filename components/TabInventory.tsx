@@ -4,6 +4,7 @@ import { CharacterData, ItemItem } from '../types';
 import { Plus, Trash2, Shield, Sword, Box, Zap, Hammer, Eye, X, Weight, Backpack, Package } from 'lucide-react';
 import { WEAPON_DB, ARMOR_DB, GEAR_DB, TOOL_DB, MAGIC_ITEM_DB } from '../data';
 import { ItemDetailView } from './LibraryDetails';
+import { RichText } from './RichText';
 
 interface Props {
    character: CharacterData;
@@ -124,19 +125,19 @@ const TabInventory: React.FC<Props> = ({ character, updateCharacter, libraryTool
                            {item.properties?.map(p => <span key={p} className="bg-stone-100 px-1.5 rounded border">{p}</span>)}
                         </div>
                         {item.mastery && (
-                           <div className="text-yellow-700 font-bold mt-2 pt-2 border-t border-stone-100 truncate">
-                              精通: {item.mastery.split(':')[0]}
+                           <div className="text-yellow-700 mt-2 pt-2 border-t border-stone-100 truncate">
+                              <RichText text={item.mastery} />
                            </div>
                         )}
                      </div>
 
-                     {/* Actions Overlay */}
-                     <div className="absolute top-2 right-2 flex gap-1">
-                        <button onClick={() => handleViewItem(item)} className="p-1 text-stone-400 hover:text-blue-600 bg-white rounded-full shadow border border-stone-200" title="查看详情">
-                           <Eye className="w-3 h-3" />
+                     {/* Actions Footer */}
+                     <div className="bg-stone-50 border-t border-stone-200 p-2 flex justify-end gap-2">
+                        <button onClick={() => handleViewItem(item)} className="px-2 py-1 text-xs text-stone-600 hover:text-blue-600 hover:bg-stone-200 rounded border border-stone-300 bg-white shadow-sm flex items-center gap-1">
+                           <Eye className="w-3 h-3" /> 查看
                         </button>
-                        <button onClick={() => removeItem('inventoryWeapons', i)} className="p-1 text-stone-400 hover:text-red-600 bg-white rounded-full shadow border border-stone-200" title="移除">
-                           <Trash2 className="w-3 h-3" />
+                        <button onClick={() => removeItem('inventoryWeapons', i)} className="px-2 py-1 text-xs text-stone-600 hover:text-red-600 hover:bg-red-50 rounded border border-stone-300 bg-white shadow-sm flex items-center gap-1">
+                           <Trash2 className="w-3 h-3" /> 移除
                         </button>
                      </div>
                   </div>
