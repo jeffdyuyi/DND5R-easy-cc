@@ -41,7 +41,7 @@ const StepSkills: React.FC<Props> = ({ character }) => {
 
     // Get proficiency sources
     const proficiencySources = useMemo(() => {
-        const sources: { type: 'class' | 'background' | 'species' | 'feat'; label: string; skills: string[]; tools: string[] }[] = [];
+        const sources: { type: 'class' | 'background' | 'species' | 'feat'; label: string; skills: string[]; tools: string[]; expertise: string[] }[] = [];
 
         // Class skills
         const selectedClass = character.className ? CLASSES[character.className] : null;
@@ -51,6 +51,77 @@ const StepSkills: React.FC<Props> = ({ character }) => {
                 label: `${character.className} 技能熟练`,
                 skills: character.proficiencySources.skills.class,
                 tools: character.proficiencySources?.tools?.class || [],
+                expertise: []
+            });
+
+            // Class starting skills (modular choices)
+            if (selectedClass.choices) {
+                selectedClass.choices.forEach(choice => {
+                    const selections = character.selections?.[choice.id];
+                    if (!selections || selections.length === 0) return;
+
+                    if (choice.type === 'skill') {
+                        sources.push({
+                            type: 'class',
+                            label: `${selectedClass.name} (初始选择)`,
+                            skills: selections,
+                            tools: [],
+                            expertise: []
+                        });
+                    } else if (choice.type === 'tool') {
+                        sources.push({
+                            type: 'class',
+                            label: `${selectedClass.name} (初始选择)`,
+                            skills: [],
+                            tools: selections,
+                            expertise: []
+                        });
+                    } else if (choice.type === 'expertise') {
+                        sources.push({
+                            type: 'class',
+                            label: `${selectedClass.name} (专精)`,
+                            skills: [], // Expertise implies proficiency, but usually applied to existing skills.
+                            tools: [],
+                            expertise: selections
+                        });
+                    }
+                });
+            }
+
+            // Class feature skills (modular choices from features)
+            selectedClass.features.forEach(feature => {
+                if (feature.level <= character.level && feature.choices) {
+                    feature.choices.forEach(choice => {
+                        const selections = character.selections?.[choice.id];
+                        if (!selections || selections.length === 0) return;
+
+                        if (choice.type === 'skill') {
+                            sources.push({
+                                type: 'class',
+                                label: feature.name,
+                                skills: selections,
+                                tools: [],
+                                expertise: []
+                            });
+                        } else if (choice.type === 'tool') {
+                            sources.push({
+                                type: 'class',
+                                label: feature.name,
+                                skills: [],
+                                tools: selections,
+                                expertise: []
+                            });
+                        } else if (choice.type === 'expertise') {
+                            sources.push({
+                                type: 'class',
+                                label: feature.name,
+                                skills: [],
+                                tools: [],
+                                expertise: selections
+                            });
+                        }
+                    });
+                }
             });
         }
 
@@ -62,7 +133,24 @@ const StepSkills: React.FC<Props> = ({ character }) => {
                 label: `${character.background} 熟练`,
                 skills: selectedBackground.skills,
                 tools: selectedBackground.tool ? [selectedBackground.tool] : [],
+                expertise: []
             });
+
+            // Background skills (modular choices)
+            if (selectedBackground.choices) {
+                selectedBackground.choices.forEach(choice => {
+                    const selections = character.selections?.[choice.id];
+                    if (choice.type === 'skill' && selections && selections.length > 0) {
+                        sources.push({
+                            type: 'background',
+                            label: `${character.background} (选择)`,
+                            skills: selections,
+                            tools: [],
+                            expertise: []
+                        });
+                    }
+                });
+            }
         }
 
         // Species skills (static)
@@ -72,6 +160,7 @@ const StepSkills: React.FC<Props> = ({ character }) => {
                 label: `${character.race} 熟练`,
                 skills: character.proficiencySources.skills.species,
                 tools: character.proficiencySources?.tools?.species || [],
+                expertise: []
             });
         }
 
@@ -87,7 +176,8 @@ const StepSkills: React.FC<Props> = ({ character }) => {
                                 type: 'species',
                                 label: trait.name,
                                 skills: selections,
-                                tools: []
+                                tools: [],
+                                expertise: []
                             });
                         }
                     });
@@ -102,6 +192,7 @@ const StepSkills: React.FC<Props> = ({ character }) => {
                 label: `${character.originFeat} 熟练`,
                 skills: character.proficiencySources?.skills?.feat || [],
                 tools: character.proficiencySources?.tools?.feat || [],
+                expertise: []
             });
         }
 
@@ -113,10 +204,24 @@ const StepSkills: React.FC<Props> = ({ character }) => {
         const skills = new Set<string>();
         proficiencySources.forEach(source => {
             source.skills.forEach(s => skills.add(s));
+            // Expertise implies proficiency? Usually yes.
+            source.expertise.forEach(s => skills.add(s));
         });
         // Also add from legacy skillMastery
         Object.keys(character.skillMastery || {}).forEach(s => {
             if (character.skillMastery[s] > 0) skills.add(s);
+        });
+        return skills;
+    }, [proficiencySources, character.skillMastery]);
+
+    const expertiseSkills = useMemo(() => {
+        const skills = new Set<string>();
+        proficiencySources.forEach(source => {
+            source.expertise.forEach(s => skills.add(s));
+        });
+        // Also add from legacy skillMastery
+        Object.keys(character.skillMastery || {}).forEach(s => {
+            if (character.skillMastery[s] > 1) skills.add(s);
         });
         return skills;
     }, [proficiencySources, character.skillMastery]);
@@ -217,7 +322,8 @@ const StepSkills: React.FC<Props> = ({ character }) => {
                 {/* Skill Rows */}
                 {ALL_SKILLS.map(skill => {
                     const isProficient = proficientSkills.has(skill.name);
-                    const expertiseLevel = character.skillMastery?.[skill.name] || (isProficient ? 1 : 0);
+                    const isExpertise = expertiseSkills.has(skill.name);
+                    const expertiseLevel = isExpertise ? 2 : (isProficient ? 1 : 0);
                     const modifier = getModifier(skill.ability);
                     const profBonus = expertiseLevel * proficiencyBonus;
                     const total = modifier + profBonus;

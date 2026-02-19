@@ -4,6 +4,7 @@ import { CLASSES, CLASS_DB, SUBCLASS_DB, WEAPON_DB } from '../data';
 import { CharacterData, ClassItem } from '../types';
 import WizardLayout from './wizard/WizardLayout';
 import FeatureAccordion from './wizard/FeatureAccordion';
+import ChoiceRenderer from './wizard/ChoiceRenderer';
 import { parseSkillOptions, ALL_SKILLS } from '../utils/characterUtils';
 import {
   Plus, Minus, Sword, Wand2, Shield, Cross,
@@ -127,7 +128,7 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
 
   const skillsComplete = skillConfig ? selectedSkillCount >= skillLimit : true;
 
-  // Toggle skill
+  // Toggle skill (Legacy/Fallback)
   const toggleSkill = (skill: string) => {
     const current = { ...character.skillMastery };
     if (current[skill]) {
@@ -137,6 +138,12 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
     }
     updateCharacter({ skillMastery: current });
   };
+
+  const handleFeatureChoiceUpdate = (id: string, values: string[]) => {
+    const newSelections = { ...character.selections, [id]: values };
+    updateCharacter({ selections: newSelections });
+  };
+
 
 
   // === LEFT PANEL: Class Selection ===
@@ -320,8 +327,20 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
           </FeatureAccordion>
         )}
 
-        {/* Skill Proficiency Selection */}
-        {skillConfig && (
+        {/* Class Level 1 Choices (e.g. Starting Skills) */}
+        {selectedClass.choices && (
+          <div className="mt-4 bg-white p-4 rounded-lg border border-stone-200 shadow-sm">
+            <h3 className="font-bold text-stone-700 mb-2">职业初始选择</h3>
+            <ChoiceRenderer
+              choices={selectedClass.choices}
+              selections={character.selections || {}}
+              onUpdate={handleFeatureChoiceUpdate}
+            />
+          </div>
+        )}
+
+        {/* Legacy Skill Proficiency Selection (Only show if no modular choices) */}
+        {skillConfig && !selectedClass.choices && (
           <FeatureAccordion
             title={`技能熟练选择 (${selectedSkillCount}/${skillLimit})`}
             level={1}
@@ -400,6 +419,14 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
               <div className="text-sm text-stone-600 leading-relaxed whitespace-pre-line">
                 <RichText text={feature.description} />
               </div>
+              {/* Feature Choices */}
+              {feature.choices && (
+                <ChoiceRenderer
+                  choices={feature.choices}
+                  selections={character.selections || {}}
+                  onUpdate={handleFeatureChoiceUpdate}
+                />
+              )}
             </FeatureAccordion>
           ))}
           {currentFeatures.length === 0 && (

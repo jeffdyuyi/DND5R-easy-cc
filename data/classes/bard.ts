@@ -1,4 +1,5 @@
 import { ClassItem, SubclassItem } from '../../types';
+import { ALL_SKILLS } from '../../utils/characterUtils';
 
 export const BARD_CLASS: ClassItem = {
     id: "bard-2024",
@@ -23,6 +24,15 @@ export const BARD_CLASS: ClassItem = {
             optionB: "50 GP"
         }
     },
+    choices: [
+        {
+            id: "bard-skills-1",
+            type: "skill",
+            count: 3,
+            options: ALL_SKILLS,
+            label: "选择3项技能熟练"
+        }
+    ],
     subclassLevel: 3,
     classTable: {
         title: "吟游诗人特性 Bard Features",
@@ -81,7 +91,16 @@ export const BARD_CLASS: ClassItem = {
         {
             level: 2,
             name: "专精 (Expertise)",
-            description: "你获得两项由你选择的你熟练技能的专精（见术语汇编）。如果你具有表演和游说的熟练，推荐选择这两项。\n当你的吟游诗人等级到达9级时，你再额外获得两项由你选择的你熟练技能的专精。"
+            description: "你获得两项由你选择的你熟练技能的专精（见术语汇编）。如果你具有表演和游说的熟练，推荐选择这两项。\n当你的吟游诗人等级到达9级时，你再额外获得两项由你选择的你熟练技能的专精。",
+            choices: [
+                {
+                    id: "bard-expertise-1",
+                    type: "expertise",
+                    count: 2,
+                    options: ALL_SKILLS,
+                    label: "选择2项技能专精"
+                }
+            ]
         },
         {
             level: 2,
@@ -121,7 +140,16 @@ export const BARD_CLASS: ClassItem = {
         {
             level: 9,
             name: "专精 (Expertise)",
-            description: "你额外再获得两项由你选择的你已熟练的技能的专精。"
+            description: "你额外再获得两项由你选择的你已熟练的技能的专精。",
+            choices: [
+                {
+                    id: "bard-expertise-2",
+                    type: "expertise",
+                    count: 2,
+                    options: ALL_SKILLS,
+                    label: "额外选择2项技能专精"
+                }
+            ]
         },
         {
             level: 10,
@@ -236,7 +264,16 @@ export const BARD_SUBCLASSES: SubclassItem[] = [
                 description: "你获得三项由你选择的技能的熟练。",
                 grants: {
                     skillProficiencies: ["选择3项技能"]
-                }
+                },
+                choices: [
+                    {
+                        id: "bard-lore-skills",
+                        type: "skill",
+                        count: 3,
+                        options: ALL_SKILLS,
+                        label: "额外选择3项技能熟练"
+                    }
+                ]
             },
             {
                 level: 3,

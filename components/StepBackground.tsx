@@ -3,6 +3,7 @@ import { CharacterData, AbilityScores } from '../types';
 import { BACKGROUND_DB, FEAT_DB } from '../data';
 import WizardLayout from './wizard/WizardLayout';
 import FeatureAccordion from './wizard/FeatureAccordion';
+import ChoiceRenderer from './wizard/ChoiceRenderer';
 import { Star, Book, Wrench, AlertCircle, CheckCircle } from 'lucide-react';
 import { parseToolProficiency } from '../utils/toolUtils';
 import OriginFeatSelector from './OriginFeatSelector';
@@ -97,6 +98,11 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
     const asiComplete = abilityDistribution === '2-1'
         ? !!(selectedAbilities.ability1 && selectedAbilities.ability2)
         : !!(selectedAbilities.ability1 && selectedAbilities.ability2 && selectedAbilities.ability3);
+
+    const handleFeatureChoiceUpdate = (id: string, values: string[]) => {
+        const newSelections = { ...character.selections, [id]: values };
+        updateCharacter({ selections: newSelections });
+    };
 
     // === LEFT PANEL: Background List ===
     const leftPanel = (
@@ -271,6 +277,18 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
                     </FeatureAccordion>
                 )}
             </div>
+
+            {/* Modular Choices (New System) */}
+            {selectedBackground.choices && (
+                <div className="bg-white p-4 rounded-lg border border-stone-200 shadow-sm">
+                    <h3 className="font-bold text-stone-700 mb-2">背景选择选项</h3>
+                    <ChoiceRenderer
+                        choices={selectedBackground.choices}
+                        selections={character.selections || {}}
+                        onUpdate={handleFeatureChoiceUpdate}
+                    />
+                </div>
+            )}
 
             {/* Origin Feat */}
             <FeatureAccordion title={`起源专长：${selectedBackground.feat}`} isComplete defaultOpen>

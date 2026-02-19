@@ -47,7 +47,7 @@ export interface SubSpeciesItem {
   grantedSpells?: { level: number; name: string; unlockLevel: number }[];
 }
 
-export type ChoiceType = 'skill' | 'tool' | 'language' | 'feat' | 'spell' | 'ability_score';
+export type ChoiceType = 'skill' | 'tool' | 'language' | 'feat' | 'spell' | 'ability_score' | 'expertise';
 
 export interface FeatureChoice {
   id: string;           // 唯一标识符，用于存储用户的选择结果 (例如 "elf-keen-senses")
@@ -86,6 +86,7 @@ export interface BackgroundItem extends BaseLibraryItem {
   skills: string[];
   tool: string;
   equipment: string[];
+  choices?: FeatureChoice[]; // New: Modular choices for Custom Backgrounds
 }
 
 export interface ClassFeature {
@@ -106,6 +107,7 @@ export interface ClassFeature {
       prerequisites?: string;
     }[];
   };
+  choices?: FeatureChoice[]; // New: Modular choices for Features
 }
 
 export interface Subclass {
@@ -138,6 +140,7 @@ export interface ClassItem extends BaseLibraryItem {
   subclassLevel: number;
   classTable?: ClassTableData;
   spellList?: string; // 法术列表类别，如 "吟游诗人"、"法师"、"牧师"等，用于法术过滤
+  choices?: FeatureChoice[]; // New: Modular choices for Class (e.g. Starting Skills)
 }
 
 export interface ClassTableData {
