@@ -201,7 +201,8 @@ export const FIGHTER_SUBCLASSES: SubclassItem[] = [
         name: "勇士",
         parentClass: "战士",
         source: "官方规则",
-        description: "勇冠三军彰英豪\n\n在对胜利的不懈追求中，勇士专注于发展自身的武勇。他们通过严酷的训练锻冶出卓绝的肉体以直面打击，跨越险境，寻觅荣誉。无论是在角斗场之中还是血染的疆场上，勇士都只为夺得胜利之桂冠而奋战。",
+        description: "勇冠三军\n致命暴击\n卓越运动\n回气自愈\n坚韧不屈",
+        fullDescription: "勇冠三军彰英豪\n\n在对胜利的不懈追求中，勇士专注于发展自身的武勇。他们通过严酷的训练锻冶出卓绝的肉体以直面打击，跨越险境，寻觅荣誉。无论是在角斗场之中还是血染的疆场上，勇士都只为夺得胜利之桂冠而奋战。",
         features: [
             {
                 level: 3,
@@ -240,7 +241,8 @@ export const FIGHTER_SUBCLASSES: SubclassItem[] = [
         name: "战斗大师",
         parentClass: "战士",
         source: "官方规则",
-        description: "战斗大师是研习战斗技艺的学者，他们勤学代代相传的武术。那些最负盛名的战斗大师将苦心练就的武功与史学、艺术与理论相互结合，由此，他们往往兼备文才武略。",
+        description: "战技大师\n战场控制\n多变招式\n洞察敌情\n全面强化",
+        fullDescription: "战斗大师是研习战斗技艺的学者，他们勤学代代相传的武术。那些最负盛名的战斗大师将苦心练就的武功与史学、艺术与理论相互结合，由此，他们往往兼备文才武略。",
         features: [
             {
                 level: 3,
@@ -280,7 +282,8 @@ export const FIGHTER_SUBCLASSES: SubclassItem[] = [
         parentClass: "战士",
         source: "官方规则",
         spellList: "法师",
-        description: "奥法遍身附剑戟\n\n奥法骑士将所有战士共通的高超武技与对魔法的精妙研究融合贯通。法术补足并拓展了他们的武技，为甲胄提供额外的保护，并使他们能够使用爆发性的魔法同时与多个敌人鏖战。",
+        description: "奥法结合\n武器衍法\n魔法防御\n瞬间传送\n法术连击",
+        fullDescription: "奥法遍身附剑戟\n\n奥法骑士将所有战士共通的高超武技与对魔法的精妙研究融合贯通。法术补足并拓展了他们的武技，为甲胄提供额外的保护，并使他们能够使用爆发性的魔法同时与多个敌人鏖战。",
         features: [
             {
                 level: 3,
@@ -319,7 +322,8 @@ export const FIGHTER_SUBCLASSES: SubclassItem[] = [
         name: "灵能武士",
         parentClass: "战士",
         source: "官方规则",
-        description: "灵能庇体显神威\n\n灵能武士唤醒他们心灵中的力量以增强自身的体魄，他们将这种被称为灵能的力量注入于刀兵之中，用念动力鞭笞他们的敌人，并以精神力铸造无形壁垒抵御攻击。",
+        description: "灵能之力\n念力护盾\n心灵打击\n隔空移物\n飞行能力",
+        fullDescription: "灵能庇体显神威\n\n灵能武士唤醒他们心灵中的力量以增强自身的体魄，他们将这种被称为灵能的力量注入于刀兵之中，用念动力鞭笞他们的敌人，并以精神力铸造无形壁垒抵御攻击。",
         features: [
             {
                 level: 3,

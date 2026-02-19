@@ -187,7 +187,8 @@ export const RANGER_SUBCLASSES: SubclassItem[] = [
         name: "猎人",
         parentClass: "游侠",
         source: "官方规则",
-        description: "保护自然与人民免于毁灭。你追逐猎物直到天涯海角，运用你的猎人的本领去保护自然与人民，使其不受灾祸的毁灭。",
+        description: "荒野猎手\n巨像屠夫\n多重攻击\n防御战术\n致命猎杀",
+        fullDescription: "保护自然与人民免于毁灭。你追逐猎物直到天涯海角，运用你的猎人的本领去保护自然与人民，使其不受灾祸的毁灭。",
         features: [
             {
                 level: 3,
@@ -221,7 +222,8 @@ export const RANGER_SUBCLASSES: SubclassItem[] = [
         name: "驯兽师",
         parentClass: "游侠",
         source: "官方规则",
-        description: "与原始野兽结缘，挥舞着原初魔法与超自然野兽形成神秘联系。",
+        description: "野兽伙伴\n协同作战\n海陆空战\n法术共享\n兽性狂怒",
+        fullDescription: "与原始野兽结缘，挥舞着原初魔法与超自然野兽形成神秘联系。",
         features: [
             {
                 level: 3,
@@ -250,7 +252,8 @@ export const RANGER_SUBCLASSES: SubclassItem[] = [
         name: "妖精漫游者",
         parentClass: "游侠",
         source: "官方规则",
-        description: "驾驭妖精的哀与乐。或来自一位至高妖精的恩惠，或是在妖精荒野中的一次奇遇，你的身侧因那次奇遇而有妖精的魔力缠绕。无论你是怎么得到你来自妖精的魔法的，你现在是一名妖精漫游者。你轻快的笑声为受压迫者们带来欣喜的希望，你英勇的技艺直击你敌人的恐惧，你所就的伟绩乃是妖精的喜悦，你散布的恐惧乃是妖精的愤怒。",
+        description: "妖精魔法\n魅惑恐慌\n社交加成\n瞬移支援\n精宸所与",
+        fullDescription: "驾驭妖精的哀与乐。或来自一位至高妖精的恩惠，或是在妖精荒野中的一次奇遇，你的身侧因那次奇遇而有妖精的魔力缠绕。无论你是怎么得到你来自妖精的魔法的，你现在是一名妖精漫游者。你轻快的笑声为受压迫者们带来欣喜的希望，你英勇的技艺直击你敌人的恐惧，你所就的伟绩乃是妖精的喜悦，你散布的恐惧乃是妖精的愤怒。",
         features: [
             {
                 level: 3,
@@ -289,7 +292,8 @@ export const RANGER_SUBCLASSES: SubclassItem[] = [
         name: "幽域追猎者",
         parentClass: "游侠",
         source: "官方规则",
-        description: "利用阴影魔法制敌。幽域追猎者们以至暗之地为家，驾驭着来自堕影冥界的魔法与潜伏在黑暗中的敌人作战。",
+        description: "黑暗伏击\n隐形先攻\n爆发伤害\n心智坚韧\n如影随行",
+        fullDescription: "利用阴影魔法制敌。幽域追猎者们以至暗之地为家，驾驭着来自堕影冥界的魔法与潜伏在黑暗中的敌人作战。",
         features: [
             {
                 level: 3,

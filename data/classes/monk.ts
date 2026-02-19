@@ -207,7 +207,8 @@ export const MONK_SUBCLASSES: SubclassItem[] = [
         name: "命流武者",
         parentClass: "武僧",
         source: "官方规则",
-        description: "掌执命流\n\n命流武者操弄着他人的命流之力。这些武僧既是云游的医者，但也能给敌人带去迅疾的死亡。他们总戴着面具，以无脸的生死使者之形象示人。",
+        description: "掌执命流\n医者仁心\n夺命之手\n予命之手\n生死之触",
+        fullDescription: "掌执命流\n\n命流武者操弄着他人的命流之力。这些武僧既是云游的医者，但也能给敌人带去迅疾的死亡。他们总戴着面具，以无脸的生死使者之形象示人。",
         features: [
             {
                 level: 3,
@@ -246,7 +247,8 @@ export const MONK_SUBCLASSES: SubclassItem[] = [
         name: "暗影武者",
         parentClass: "武僧",
         source: "官方规则",
-        description: "暗影藏形\n\n暗影武者习练隐匿与遁术，引导，驾驭来自堕影冥界的力量。他们居于黑暗，藏于薄暮，遁于幽影，出手亦犹如幽影一般凶险。",
+        description: "暗影藏形\n传送瞬移\n隐身潜行\n幻术扰敌\n幽影斗篷",
+        fullDescription: "暗影藏形\n\n暗影武者习练隐匿与遁术，引导，驾驭来自堕影冥界的力量。他们居于黑暗，藏于薄暮，遁于幽影，出手亦犹如幽影一般凶险。",
         features: [
             {
                 level: 3,
@@ -275,7 +277,8 @@ export const MONK_SUBCLASSES: SubclassItem[] = [
         name: "四象武者",
         parentClass: "武僧",
         source: "官方规则",
-        description: "身起四象\n\n四象武者挥洒着来自元素位面的力量。这些武僧们以超凡功力引动着元素混沌的能量，即可内强自身，又能外发制敌。",
+        description: "身起四象\n元素魔法\n范围伤害\n御风而行\n能量护盾",
+        fullDescription: "身起四象\n\n四象武者挥洒着来自元素位面的力量。这些武僧们以超凡功力引动着元素混沌的能量，即可内强自身，又能外发制敌。",
         features: [
             {
                 level: 3,
@@ -309,7 +312,8 @@ export const MONK_SUBCLASSES: SubclassItem[] = [
         name: "散打武者",
         parentClass: "武僧",
         source: "官方规则",
-        description: "散打随心\n\n散打武者是徒手战斗的大师，他们学习了推离和绊摔的技艺妨敌，并用内力保护自己免受伤害。",
+        description: "散打随心\n推离绊摔\n自我疗愈\n迅捷身法\n震慑强敌",
+        fullDescription: "散打随心\n\n散打武者是徒手战斗的大师，他们学习了推离和绊摔的技艺妨敌，并用内力保护自己免受伤害。",
         features: [
             {
                 level: 3,

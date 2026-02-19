@@ -191,7 +191,8 @@ export const PALADIN_SUBCLASSES: SubclassItem[] = [
         name: "奉献之誓",
         parentClass: "圣武士",
         source: "官方规则",
-        description: "传统的正义圣骑士，代表荣耀、责任和怜悯。",
+        description: "荣耀责任\n神圣武器\n驱散邪恶\n守护灵光\n至圣光轮",
+        fullDescription: "传统的正义圣骑士，代表荣耀、责任和怜悯。",
         features: [
             {
                 level: 3,
@@ -228,7 +229,8 @@ export const PALADIN_SUBCLASSES: SubclassItem[] = [
         name: "荣耀之誓",
         parentClass: "圣武士",
         source: "官方规则",
-        description: "追求英雄事迹和荣耀。",
+        description: "英雄事迹\n传奇运动员\n鼓舞打击\n迅捷灵光\n辉煌防御",
+        fullDescription: "追求英雄事迹和荣耀。",
         features: [
             {
                 level: 3,
@@ -270,7 +272,8 @@ export const PALADIN_SUBCLASSES: SubclassItem[] = [
         name: "古贤之誓",
         parentClass: "圣武士",
         source: "官方规则",
-        description: "守护光与自然，对抗黑暗。",
+        description: "自然守护\n法术抗性\n束缚敌人\n不灭哨卫\n上古斗士",
+        fullDescription: "守护光与自然，对抗黑暗。",
         features: [
             {
                 level: 3,
@@ -307,7 +310,8 @@ export const PALADIN_SUBCLASSES: SubclassItem[] = [
         name: "复仇之誓",
         parentClass: "圣武士",
         source: "官方规则",
-        description: "为了惩恶扬善不择手段。",
+        description: "除恶务尽\n狩猎强敌\n移动追击\n借机攻击\n复仇天使",
+        fullDescription: "为了惩恶扬善不择手段。",
         features: [
             {
                 level: 3,

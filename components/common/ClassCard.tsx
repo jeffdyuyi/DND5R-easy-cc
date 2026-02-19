@@ -114,7 +114,7 @@ export const ClassCard: React.FC<Props> = ({ item, type, isSelected, onClick, ac
                 {/* Subtitle for subclasses */}
                 {type === 'subclass' && (
                     <div className="text-xs font-bold text-stone-400 uppercase tracking-widest mb-0.5">
-                        {(item as SubclassItem).parentClass} 专精
+                        {(item as SubclassItem).parentClass} 子职
                     </div>
                 )}
 
