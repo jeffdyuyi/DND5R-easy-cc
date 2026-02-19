@@ -5,91 +5,91 @@ export const GEAR_DB: ItemItem[] = [
   // --- Ammunition (弹药) ---
   {
     id: "arrows", name: "箭矢 (20)", source: "官方规则", type: "弹药",
-    description: "用于短弓或长弓的弹药。装在箭袋中。",
+    description: "用于短弓或长弓的弹药。装在 **箭袋** 中。",
     cost: "1 GP", weight: "1 磅",
     tags: ["弹药"]
   },
   {
     id: "bolts", name: "弩矢 (20)", source: "官方规则", type: "弹药",
-    description: "用于弩的弹药。装在弩矢匣中。",
+    description: "用于弩的弹药。装在 **弩矢匣** 中。",
     cost: "1 GP", weight: "1.5 磅",
     tags: ["弹药"]
   },
   {
-    id: "bullets-firearm", name: "弹丸，火器 (10)", source: "官方规则", type: "弹药",
-    description: "用于火器（手铳、火铳）的弹药。装在小包中。",
+    id: "bullets-firearm", name: "枪械子弹 (10)", source: "官方规则", type: "弹药",
+    description: "用于火器的弹药。装在 **小包** 中。",
     cost: "3 GP", weight: "2 磅",
     tags: ["弹药"]
   },
   {
-    id: "bullets-sling", name: "弹丸，投石索 (20)", source: "官方规则", type: "弹药",
-    description: "用于投石索的圆形弹丸。装在小包中。",
+    id: "bullets-sling", name: "投石索子弹 (20)", source: "官方规则", type: "弹药",
+    description: "用于投石索的圆形弹丸。装在 **小包** 中。",
     cost: "4 CP", weight: "1.5 磅",
     tags: ["弹药"]
   },
   {
     id: "needles", name: "吹矢 (50)", source: "官方规则", type: "弹药",
-    description: "用于吹箭筒的小型针刺。装在小包中。",
+    description: "用于吹箭筒的小型针刺。装在 **小包** 中。",
     cost: "1 GP", weight: "1 磅",
     tags: ["弹药"]
   },
 
   // --- Arcane Focuses (奥术法器) ---
-  { id: "crystal", name: "水晶 (法器)", source: "官方规则", type: "法器", description: "奥术法器。", cost: "10 GP", weight: "1 磅", tags: ["奥术法器"] },
-  { id: "orb", name: "法球 (法器)", source: "官方规则", type: "法器", description: "奥术法器。", cost: "20 GP", weight: "3 磅", tags: ["奥术法器"] },
-  { id: "rod", name: "权杖 (法器)", source: "官方规则", type: "法器", description: "奥术法器。", cost: "10 GP", weight: "2 磅", tags: ["奥术法器"] },
-  { id: "staff-arcane", name: "法杖 (法器)", source: "官方规则", type: "法器", description: "奥术法器。也视作长棍。", cost: "5 GP", weight: "4 磅", tags: ["奥术法器"] },
-  { id: "wand", name: "魔杖 (法器)", source: "官方规则", type: "法器", description: "奥术法器。", cost: "10 GP", weight: "1 磅", tags: ["奥术法器"] },
+  { id: "crystal", name: "水晶 (法器)", source: "官方规则", type: "法器", description: "奥术法器。术士、魔契师和法师可以使用。", cost: "10 GP", weight: "1 磅", tags: ["奥术法器"] },
+  { id: "orb", name: "法球 (法器)", source: "官方规则", type: "法器", description: "奥术法器。术士、魔契师和法师可以使用。", cost: "20 GP", weight: "3 磅", tags: ["奥术法器"] },
+  { id: "rod", name: "权杖 (法器)", source: "官方规则", type: "法器", description: "奥术法器。术士、魔契师和法师可以使用。", cost: "10 GP", weight: "2 磅", tags: ["奥术法器"] },
+  { id: "staff-arcane", name: "法杖 (法器)", source: "官方规则", type: "法器", description: "奥术法器。术士、魔契师和法师可以使用。也视作长棍。", cost: "5 GP", weight: "4 磅", tags: ["奥术法器"] },
+  { id: "wand", name: "魔杖 (法器)", source: "官方规则", type: "法器", description: "奥术法器。术士、魔契师和法师可以使用。", cost: "10 GP", weight: "1 磅", tags: ["奥术法器"] },
 
   // --- Druidic Focuses (德鲁伊法器) ---
-  { id: "sprig-mistletoe", name: "槲寄生枝条", source: "官方规则", type: "法器", description: "德鲁伊法器。", cost: "1 GP", weight: "---", tags: ["德鲁伊法器"] },
-  { id: "totem", name: "图腾", source: "官方规则", type: "法器", description: "德鲁伊法器。", cost: "1 GP", weight: "---", tags: ["德鲁伊法器"] },
-  { id: "wooden-staff", name: "木杖", source: "官方规则", type: "法器", description: "德鲁伊法器。也视作长棍。", cost: "5 GP", weight: "4 磅", tags: ["德鲁伊法器"] },
-  { id: "yew-wand", name: "紫衫魔杖", source: "官方规则", type: "法器", description: "德鲁伊法器。", cost: "10 GP", weight: "1 磅", tags: ["德鲁伊法器"] },
+  { id: "sprig-mistletoe", name: "槲寄生枝条", source: "官方规则", type: "法器", description: "德鲁伊法器。德鲁伊和游侠可以使用。", cost: "1 GP", weight: "---", tags: ["德鲁伊法器"] },
+  { id: "totem", name: "图腾", source: "官方规则", type: "法器", description: "德鲁伊法器。德鲁伊和游侠可以使用。", cost: "1 GP", weight: "---", tags: ["德鲁伊法器"] },
+  { id: "wooden-staff", name: "木质法杖", source: "官方规则", type: "法器", description: "德鲁伊法器。德鲁伊和游侠可以使用。也视作长棍。", cost: "5 GP", weight: "4 磅", tags: ["德鲁伊法器"] },
+  { id: "yew-wand", name: "紫衫魔杖", source: "官方规则", type: "法器", description: "德鲁伊法器。德鲁伊和游侠可以使用。", cost: "10 GP", weight: "1 磅", tags: ["德鲁伊法器"] },
 
   // --- Holy Symbols (圣徽) ---
-  { id: "amulet", name: "护符 (圣徽)", source: "官方规则", type: "法器", description: "佩戴或手持。", cost: "5 GP", weight: "1 磅", tags: ["圣徽"] },
-  { id: "emblem", name: "纹章 (圣徽)", source: "官方规则", type: "法器", description: "挂载到织物或盾牌上。", cost: "5 GP", weight: "---", tags: ["圣徽"] },
-  { id: "reliquary", name: "圣物匣 (圣徽)", source: "官方规则", type: "法器", description: "手持。", cost: "5 GP", weight: "2 磅", tags: ["圣徽"] },
+  { id: "amulet", name: "护符 (圣徽)", source: "官方规则", type: "法器", description: "佩戴或手持。牧师和圣武士可以用圣徽作为法器。", cost: "5 GP", weight: "1 磅", tags: ["圣徽"] },
+  { id: "emblem", name: "纹章 (圣徽)", source: "官方规则", type: "法器", description: "挂载到织物或盾牌上。牧师和圣武士可以用圣徽作为法器。", cost: "5 GP", weight: "---", tags: ["圣徽"] },
+  { id: "reliquary", name: "圣物匣 (圣徽)", source: "官方规则", type: "法器", description: "手持。牧师和圣武士可以用圣徽作为法器。", cost: "5 GP", weight: "2 磅", tags: ["圣徽"] },
 
   // --- Adventure Packs (套组) ---
   {
     id: "pack-burglar", name: "窃贼套组", source: "官方规则", type: "杂物",
-    description: "背包、滚珠(1000)、铃铛、蜡烛(5)、撬棍、锤子、岩钉(10)、附盖提灯、燃油(2)、口粮(5)、火绒盒、水袋、麻绳(50尺)。",
-    cost: "16 GP", weight: "42 磅", tags: ["套组"]
+    description: "背包、滚珠、铃铛、10根蜡烛、撬棍、附盖提灯、7扁瓶燃油、五天份的口粮、绳索、火绒盒和水袋。",
+    cost: "16 GP", weight: "---", tags: ["套组"]
   },
   {
     id: "pack-diplomat", name: "外交套组", source: "官方规则", type: "杂物",
-    description: "箱子、地图或卷轴匣(2)、高档服装、墨水、墨水笔、油灯、燃油(2)、纸张(5)、香水、封蜡、肥皂。",
-    cost: "39 GP", weight: "39 磅", tags: ["套组"]
+    description: "箱子、高档服装、墨水、5支墨水笔、油灯、2个地图或卷轴匣、4扁瓶燃油、5张纸张、5张羊皮纸、香水和火绒盒。",
+    cost: "39 GP", weight: "---", tags: ["套组"]
   },
   {
     id: "pack-dungeoneer", name: "地城套组", source: "官方规则", type: "杂物",
-    description: "背包、撬棍、锤子、岩钉(10)、火把(10)、火绒盒、口粮(10)、水袋、麻绳(50尺)。",
-    cost: "12 GP", weight: "55 磅", tags: ["套组"]
+    description: "背包、铁蒺藜、撬棍、2扁瓶燃油、10天份的口粮、绳索、火绒盒、10根火把和水袋。",
+    cost: "12 GP", weight: "---", tags: ["套组"]
   },
   {
     id: "pack-entertainer", name: "艺人套组", source: "官方规则", type: "杂物",
-    description: "背包、铺盖、戏服(2)、蜡烛(5)、口粮(5)、水袋、易容工具。",
-    cost: "40 GP", weight: "58.5 磅", tags: ["套组"]
+    description: "背包、铺盖、铃铛、牛眼提灯、3套戏服、镜子、8扁瓶燃油、9天份的口粮、火绒盒和水袋。",
+    cost: "40 GP", weight: "---", tags: ["套组"]
   },
   {
     id: "pack-explorer", name: "探索套组", source: "官方规则", type: "杂物",
-    description: "背包、铺盖、餐具、火绒盒、火把(10)、口粮(10)、水袋、麻绳(50尺)。",
-    cost: "10 GP", weight: "55 磅", tags: ["套组"]
+    description: "背包、铺盖、2扁瓶燃油、10天份的口粮、绳索、火绒盒、10根火把和水袋。",
+    cost: "10 GP", weight: "---", tags: ["套组"]
   },
   {
     id: "pack-priest", name: "祭司套组", source: "官方规则", type: "杂物",
-    description: "背包、毯子、蜡烛(10)、火绒盒、施舍盒、香块(2)、香炉、法衣、口粮(2)、水袋。",
-    cost: "33 GP", weight: "29 磅", tags: ["套组"]
+    description: "背包、毯子、圣水、油灯、7天份的口粮、长袍和火绒盒。",
+    cost: "33 GP", weight: "---", tags: ["套组"]
   },
   {
     id: "pack-scholar", name: "学者套组", source: "官方规则", type: "杂物",
-    description: "背包、书籍(知识)、墨水、墨水笔、羊皮纸(10)、小沙包、小刀。",
-    cost: "40 GP", weight: "22 磅", tags: ["套组"]
+    description: "背包、书、墨水、墨水笔、油灯、10扁瓶燃油、10张羊皮纸和火绒盒。",
+    cost: "40 GP", weight: "---", tags: ["套组"]
   },
 
-  // --- Mounts (坐骑) ---
+  // --- Mounts (坐骑 - 保持原样) ---
   {
     id: "elephant", name: "大象", source: "官方规则", type: "杂物",
     description: "巨型野兽。载重: 1320 磅。",
@@ -131,7 +131,7 @@ export const GEAR_DB: ItemItem[] = [
     cost: "25 GP", weight: "---", tags: ["坐骑"]
   },
 
-  // --- Tack & Harness (鞍具、挽具 -> 冒险道具/坐骑) ---
+  // --- Tack & Harness (鞍具、挽具 - 保持原样) ---
   {
     id: "saddle-riding", name: "鞍座 (乘用)", source: "官方规则", type: "杂物",
     description: "标准的骑乘用鞍座。含笼头、缰绳、挽具等。",
@@ -163,7 +163,7 @@ export const GEAR_DB: ItemItem[] = [
     cost: "x4", weight: "x2", tags: ["冒险道具", "坐骑"]
   },
 
-  // --- Drawn Vehicles (陆运载具 -> 载具) ---
+  // --- Drawn Vehicles (陆运载具 - 保持原样) ---
   {
     id: "carriage", name: "客车 (四轮)", source: "官方规则", type: "杂物",
     description: "舒适的封闭式马车，可载客。",
@@ -190,7 +190,7 @@ export const GEAR_DB: ItemItem[] = [
     cost: "250 GP", weight: "100 磅", tags: ["载具"]
   },
 
-  // --- Large Vehicles (大型载具 - 水上与空中 -> 载具) ---
+  // --- Large Vehicles (大型载具 - 保持原样) ---
   {
     id: "airship", name: "飞艇", source: "官方规则", type: "杂物",
     description: "速度: 8 mph | 船员: 10 | 乘客: 20 | 货物: 1 吨 | AC: 13 | HP: 300\n依靠气囊或魔法悬浮在空中的巨大载具。",
@@ -229,63 +229,63 @@ export const GEAR_DB: ItemItem[] = [
 
   // --- General Adventuring Gear (冒险道具) ---
   {
-    id: "acid", name: "强酸 (小瓶)", source: "官方规则", type: "杂物",
-    description: "作为动作，你可以泼洒瓶中的强酸。对60尺内的生物或物体进行远程攻击。命中造成2d6强酸伤害。",
+    id: "acid", name: "强酸", source: "官方规则", type: "杂物",
+    description: "当你执行攻击动作时，你可以将你的一次攻击替换为丢出一小瓶强酸。你可以选择位于你20尺内可见的一个生物或物件作为目标。该目标必须通过一次 **敏捷豁免**（DC等于8+你的敏捷调整值+你的熟练加值），否则承受 **2d6** 点强酸伤害。",
     cost: "25 GP", weight: "1 磅", tags: ["冒险道具"]
   },
   {
-    id: "alchemists-fire", name: "炽火胶 (扁瓶)", source: "官方规则", type: "杂物",
-    description: "作为动作投掷。对20尺内的生物或物体进行远程攻击。命中时，目标在每回合开始时受到1d4火焰伤害。生物可用动作进行DC 10敏捷检定来熄灭火焰。",
+    id: "alchemists-fire", name: "炽火胶", source: "官方规则", type: "杂物",
+    description: "当你执行攻击动作时，你可以将你的一次攻击替换为丢出一扁瓶炽火胶。你可以选择位于你20尺内可见的一个生物或物件作为目标。该目标必须通过一次 **敏捷豁免**（DC等于8+你的敏捷调整值+你的熟练加值），否则承受 **1d4** 点火焰伤害并开始燃烧（见术语汇编）。",
     cost: "50 GP", weight: "1 磅", tags: ["冒险道具"]
   },
   {
-    id: "antitoxin", name: "抗毒剂 (小瓶)", source: "官方规则", type: "杂物",
-    description: "饮用后，在1小时内对毒素的豁免检定具有优势。",
+    id: "antitoxin", name: "抗毒剂", source: "官方规则", type: "杂物",
+    description: "以一个 **附赠动作**，你可以喝下一小瓶抗毒剂来使你在避免或结束中毒状态的豁免中具有优势，持续一小时。",
     cost: "50 GP", weight: "---", tags: ["冒险道具"]
   },
   {
     id: "backpack", name: "背包", source: "官方规则", type: "杂物",
-    description: "一个背包最多能装入30磅重/1立方尺大的东西。背包也能系在外面。",
+    description: "一个背包最多能装入30磅重1立方尺大的东西。背包也能当作鞍囊使用。",
     cost: "2 GP", weight: "5 磅", tags: ["容器"]
   },
   {
-    id: "ball-bearings", name: "滚珠 (1000枚)", source: "官方规则", type: "杂物",
-    description: "作为动作，撒在平整地面上覆盖10尺方形区域。进入区域的生物需通过DC 10敏捷豁免，否则倒地。",
+    id: "ball-bearings", name: "滚珠", source: "官方规则", type: "杂物",
+    description: "以一个 **操作动作**，你能把一小包滚珠撒至地面，并覆盖你周围10尺内的一处10尺方形区域。任何生物每回合首次进入这片区域时都必须通过一次DC 10的 **敏捷豁免**，否则陷入 **倒地** 状态。重新收集这些滚珠需要花费10分钟时间。",
     cost: "1 GP", weight: "2 磅", tags: ["冒险道具"]
   },
   {
     id: "barrel", name: "木桶", source: "官方规则", type: "杂物",
-    description: "能够装入40加仑的液体或4立方尺的干燥货物。",
+    description: "一个木桶能够至多装入40加仑的液体或4立方尺的干燥货物。",
     cost: "2 GP", weight: "70 磅", tags: ["容器"]
   },
   {
     id: "basket", name: "篮子", source: "官方规则", type: "杂物",
-    description: "能够装入40磅重/2立方尺大的东西。",
+    description: "一个篮子能够至多装入40磅重2立方尺大的东西。",
     cost: "4 SP", weight: "2 磅", tags: ["容器"]
   },
   {
     id: "bedroll", name: "铺盖", source: "官方规则", type: "杂物",
-    description: "一卷铺盖能睡下一个小型或中型生物。躺在铺盖中时，你自动通过抗极寒的豁免检定。",
+    description: "一卷铺盖能睡下一个小型或中型生物。躺在铺盖中时，你自动通过抵抗极寒的豁免检定（详见城主指南）。",
     cost: "1 GP", weight: "7 磅", tags: ["冒险道具"]
   },
   {
     id: "bell", name: "铃铛", source: "官方规则", type: "杂物",
-    description: "以一个操作动作，你可以摇响一个铃铛，铃声会发出60尺内都能听到的声音。",
+    description: "以一个 **操作动作**，你可以摇响一个铃铛，铃铛会发出60尺内都能够听到的声音。",
     cost: "1 GP", weight: "---", tags: ["冒险道具"]
   },
   {
     id: "blanket", name: "毯子", source: "官方规则", type: "杂物",
-    description: "包裹在毯子期间，你在抵抗极寒的豁免检定上具有优势。",
+    description: "包裹在毯子中期间，你在抵抗极寒的豁免检定上具有优势（详见城主指南）。",
     cost: "5 SP", weight: "3 磅", tags: ["冒险道具"]
   },
   {
     id: "block-and-tackle", name: "滑轮组", source: "官方规则", type: "杂物",
-    description: "滑轮组允许你提起你能正常提动的四倍重量的物品。",
+    description: "滑轮组允许你提起你正常能提动的四倍重量的物品。",
     cost: "1 GP", weight: "5 磅", tags: ["冒险道具"]
   },
   {
     id: "book", name: "书籍", source: "官方规则", type: "杂物",
-    description: "一本书会记载虚构或非虚构的内容。如果你在某些事物上参考了一本内容准确而非虚构的书，你在相关事物上的智力（奥秘、历史、自然或宗教）检定则获得+5加值。",
+    description: "一本书会记载虚构或非虚构的内容。如果你在某些事物上参考了一本内容准确而非虚构的书，你在相关事物上的智力（奥秘、历史、自然或宗教）检定则获得+5的加值。",
     cost: "25 GP", weight: "5 磅", tags: ["冒险道具"]
   },
   {
@@ -299,8 +299,8 @@ export const GEAR_DB: ItemItem[] = [
     cost: "5 CP", weight: "2 磅", tags: ["容器"]
   },
   {
-    id: "caltrops", name: "铁蒺藜 (20枚)", source: "官方规则", type: "杂物",
-    description: "以一个操作动作，你能把一包铁蒺藜撒至地面并覆盖周围5尺内的单一5尺方形区域。任何生物每回合首次进入这片区域时都必须通过一次DC15的敏捷豁免，否则受到1点穿刺伤害，并移动速度降至0，直到其下一次回合开始为止。",
+    id: "caltrops", name: "铁蒺藜", source: "官方规则", type: "杂物",
+    description: "以一个 **操作动作**，你能把一包铁蒺撒至地面并覆盖你周围5尺内的一处5尺方形区域。任何生物每回合首次进入这片区域时都必须通过一次DC 15的 **敏捷豁免**，否则受到 **1** 点穿刺伤害，并且移速降至0，直到其下一回合开始为止。重新收集这些铁蒺藜需要花费10分钟时间。",
     cost: "1 GP", weight: "2 磅", tags: ["冒险道具"]
   },
   {
@@ -310,17 +310,17 @@ export const GEAR_DB: ItemItem[] = [
   },
   {
     id: "case-crossbow-bolt", name: "弩矢匣", source: "官方规则", type: "杂物",
-    description: "一个弩矢匣至多能存放20枚弩矢。",
+    description: "一个弩矢匣至多能存放20根弩矢。",
     cost: "1 GP", weight: "1 磅", tags: ["容器"]
   },
   {
     id: "case-map-scroll", name: "卷轴匣/地图匣", source: "官方规则", type: "杂物",
-    description: "一个地图或卷轴匣至多能存放10张纸或5张羊皮纸。",
+    description: "一个地图或卷轴匣至多能存放10张纸张或5张羊皮纸。",
     cost: "1 GP", weight: "1 磅", tags: ["容器"]
   },
   {
-    id: "chain", name: "链条 (10尺)", source: "官方规则", type: "杂物",
-    description: "以一个操作动作，你可以进行一次DC13的力量（运动）检定。如果该检定成功，你能利用链条捆住一个位于你5尺内的非自愿生物，但该生物必须处于受擒、失能或束缚状态。如果你捆住了该生物，该生物陷入束缚状态，直至挣脱。",
+    id: "chain", name: "链条", source: "官方规则", type: "杂物",
+    description: "以一个 **操作动作**，你可以进行一次DC 13的力量（运动）检定。如果该检定成功，你能利用链条捆住一个位于你5尺内的非自愿生物，但该生物必须处于受擒、失能或束缚状态。如果你绑住了该生物的腿，该生物陷入 **束缚** 状态，直至挣脱。挣脱链条需要该生物使用动作来通过一次DC 18的敏捷（特技）检定。扯坏链条需要该生物使用动作来通过一次DC 20的力量（运动）检定。",
     cost: "5 GP", weight: "10 磅", tags: ["冒险道具"]
   },
   {
@@ -330,12 +330,12 @@ export const GEAR_DB: ItemItem[] = [
   },
   {
     id: "climbers-kit", name: "攀爬工具", source: "官方规则", type: "杂物",
-    description: "一套攀爬工具包含了干鞋、手套、岩钉和系带。以一个操作动作，你可以使用攀爬工具锚定自己，此时你不会从固定处掉落超过25尺，且在使用附赠动作解除锚定前无法从锚定处向外移动超过25尺。",
+    description: "一套攀爬工具包含鞋子包头、手套、岩钉和系带。以一个 **操作动作**，你可以使用攀爬工具锚定自己，此时你不会从锚定处摔落超过25尺，且在使用附赠动作解除锚定前无法从锚定处向外移动超过25尺。",
     cost: "25 GP", weight: "12 磅", tags: ["冒险道具"]
   },
   {
     id: "clothes-fine", name: "高档服装", source: "官方规则", type: "杂物",
-    description: "高档服装使用昂贵的材料和装饰物制作，并缝制着极其精细的细节。有些活动和场合仅允许穿着高档服装的人参与。",
+    description: "高档服装使用昂贵的材料和装饰物制成，并缝制着极其精密的细节。有些活动和场合仅允许穿着高档服装的人参与。",
     cost: "15 GP", weight: "6 磅", tags: ["冒险道具"]
   },
   {
@@ -345,243 +345,242 @@ export const GEAR_DB: ItemItem[] = [
   },
   {
     id: "component-pouch", name: "材料包", source: "官方规则", type: "杂物",
-    description: "材料包是一种装有法术所需的一切免费材料的防水小包。",
+    description: "材料包是一种装有你法术所需的一切免费材料的防水小包。",
     cost: "25 GP", weight: "2 磅", tags: ["冒险道具"]
   },
   {
     id: "costume", name: "戏服", source: "官方规则", type: "杂物",
-    description: "若你穿这对应的戏服，你为模仿他人或模仿某一类人所作的任何属性检定都具有优势。",
+    description: "若你穿着对应的戏服，你为模仿他人或模仿某一类人所作的任何属性检定都具有优势。",
     cost: "5 GP", weight: "4 磅", tags: ["冒险道具"]
   },
   {
     id: "crowbar", name: "撬棍", source: "官方规则", type: "杂物",
-    description: "在使用撬棍的地方使用撬棍可以给予你在这方面的力量检定优势。",
+    description: "在能够撬动的地方使用撬棍可以给予你在这方面的力量检定优势。",
     cost: "2 GP", weight: "5 磅", tags: ["冒险道具"]
   },
   {
-    id: "ink", name: "墨水 (1盎司)", source: "官方规则", type: "杂物",
-    description: "装在小瓶中的墨水。",
+    id: "flask", name: "扁瓶", source: "官方规则", type: "杂物",
+    description: "一个扁瓶具有1品脱容量。",
+    cost: "2 CP", weight: "1 磅", tags: ["容器"]
+  },
+  {
+    id: "grappling-hook", name: "爪钩", source: "官方规则", type: "杂物",
+    description: "以一个 **操作动作**，你能将爪钩朝着位于自身50尺内的一处栏杆、突起的边缘或是一处能够挂住的位置扔出，并进行一次DC 13的敏捷（特技）检定。如果检定成功，爪钩则成功钩在上面。如果爪钩上还连了绳子，你则可以爬上去。",
+    cost: "2 GP", weight: "4 磅", tags: ["冒险道具"]
+  },
+  {
+    id: "healers-kit", name: "医疗包", source: "官方规则", type: "杂物",
+    description: "一个医疗包有十次使用次数。以一个 **操作动作**，你可以花费一次使用次数用来稳定一名生命值为0的陷入昏迷的生物的伤势。你这么做时无需进行感知（医疗）检定。",
+    cost: "5 GP", weight: "3 磅", tags: ["冒险道具"]
+  },
+  {
+    id: "holy-water", name: "圣水", source: "官方规则", type: "杂物",
+    description: "当你执行攻击动作时，你可以将你的一次攻击替换为丢出一扁瓶圣水。你可以选择位于你20尺内可见的一个生物作为目标。该目标必须通过一次 **敏捷豁免**（DC等于8+你的敏捷调整值+你的熟练加值），并且如果这个目标是邪魔或亡灵生物，失败时承受 **2d8** 点光耀伤害。",
+    cost: "25 GP", weight: "1 磅", tags: ["冒险道具"]
+  },
+  {
+    id: "hunting-trap", name: "捕猎陷阱", source: "官方规则", type: "杂物",
+    description: "以一个 **操作动作**，设下陷阱。踩中者需通过DC 13 **敏捷豁免**，否则受 **1d4** 点穿刺伤害并停止移动。被困生物受链条长度限制。可以动作进行DC 13力量（运动）检定脱困。失败则受1点穿刺伤害。",
+    cost: "5 GP", weight: "25 磅", tags: ["冒险道具"]
+  },
+  {
+    id: "ink", name: "墨水", source: "官方规则", type: "杂物",
+    description: "墨水一般装在1盎司的瓶子里，足够撰写500页的内容。",
     cost: "10 GP", weight: "---", tags: ["冒险道具"]
   },
   {
     id: "ink-pen", name: "墨水笔", source: "官方规则", type: "杂物",
-    description: "一支木杆笔，有着特殊的笔尖。",
+    description: "墨水笔可以使用墨水来写字或绘画。",
     cost: "2 CP", weight: "---", tags: ["冒险道具"]
   },
   {
     id: "jug", name: "壶", source: "官方规则", type: "杂物",
-    description: "一个壶能装入1加仑液体。",
+    description: "壶具有一加仑的容量。",
     cost: "2 CP", weight: "4 磅", tags: ["容器"]
   },
   {
-    id: "ladder", name: "梯子 (10尺)", source: "官方规则", type: "杂物",
-    description: "直梯，长10尺。",
+    id: "ladder", name: "梯子", source: "官方规则", type: "杂物",
+    description: "一把梯子有10尺高。你只能在梯子上爬上或是爬下。",
     cost: "1 SP", weight: "25 磅", tags: ["冒险道具"]
   },
   {
     id: "lamp", name: "油灯", source: "官方规则", type: "杂物",
-    description: "油灯能发出15尺半径的明亮光照和额外30尺的微光光照。点燃后每6小时消耗1扁瓶（1品脱）燃油。",
+    description: "一盏油灯使用燃油作为燃料，点着时能够发出半径15尺的明亮光照以及额外30尺的微光光照。",
     cost: "5 SP", weight: "1 磅", tags: ["冒险道具"]
   },
   {
     id: "lantern-bullseye", name: "牛眼提灯", source: "官方规则", type: "杂物",
-    description: "牛眼提灯能发出一道60尺锥状的明亮光照和额外60尺的微光光照。点燃后每6小时消耗1扁瓶（1品脱）燃油。",
+    description: "一盏牛眼提灯使用燃油作为燃料，点着时能够发出60尺锥状区域的明亮光照以及额外60尺的微光光照。",
     cost: "10 GP", weight: "2 磅", tags: ["冒险道具"]
   },
   {
     id: "lantern-hooded", name: "附盖提灯", source: "官方规则", type: "杂物",
-    description: "附盖提灯能发出30尺半径的明亮光照和额外30尺的微光光照。放下盖子可将光照减少为5尺微光。点燃后每6小时消耗1扁瓶（1品脱）燃油。",
+    description: "一盏附盖提灯使用燃油作为燃料，点着时能够发出半径30尺的明亮光照以及额外30尺的微光光照。以一个 **附赠动作**，你可以盖上或掀开提灯的盖子。盖上盖子时，提灯的光亮降至半径5尺的微光光照。",
     cost: "5 GP", weight: "2 磅", tags: ["冒险道具"]
   },
   {
     id: "lock", name: "锁", source: "官方规则", type: "杂物",
-    description: "附带钥匙。没有钥匙时，用盗贼工具进行DC 15的敏捷检定可打开。",
+    description: "每套锁都有对应的钥匙。如果没有对应的钥匙，一个生物还可以使用盗贼工具来通过一次DC 15的敏捷（巧手）检定开锁。",
     cost: "10 GP", weight: "1 磅", tags: ["冒险道具"]
   },
   {
     id: "magnifying-glass", name: "放大镜", source: "官方规则", type: "杂物",
-    description: "用来点火（需有阳光和易燃物，5分钟）或鉴定细小物体。",
+    description: "使用放大镜时，你为鉴定或检查精密物品所作的任何属性检定都会具有优势。想要使用放大镜点火，需要一束如同阳光般明亮的强光用于聚焦，还需要用于点燃的火绒，随后需要大约5分钟的时间来生火。",
     cost: "100 GP", weight: "---", tags: ["冒险道具"]
   },
   {
     id: "manacles", name: "镣铐", source: "官方规则", type: "杂物",
-    description: "束缚小型或中型生物。挣脱需DC 20力量检定。撬开需DC 15敏捷检定。",
+    description: "以一个 **操作动作**，你可以进行一次DC 13的敏捷（巧手）检定。如果该检定成功，你能利用镣铐捆住一个位于你5尺内的非自愿的小型或中型生物，但该生物必须处于受擒、失能或束缚状态。如果你铐住了该生物，该生物进行的攻击检定会具有劣势。如果镣铐还被锁链或钩子固定在了某处，该生物还会陷入 **束缚** 状态。挣脱镣铐需要DC 20敏捷（巧手）检定。扯坏需DC 25力量（运动）检定。开锁需DC 15敏捷（巧手）检定。",
     cost: "2 GP", weight: "6 磅", tags: ["冒险道具"]
   },
   {
-    id: "mirror-steel", name: "镜子 (钢面)", source: "官方规则", type: "杂物",
-    description: "抛光的钢面镜子。",
+    id: "map", name: "地图", source: "官方规则", type: "杂物",
+    description: "如果你在地图所绘制的地点参考了一张准确的地图，你为辨认位置所进行的感知（求生）检定获得+5的加值。",
+    cost: "1 GP", weight: "---", tags: ["冒险道具"]
+  },
+  {
+    id: "mirror-steel", name: "镜子", source: "官方规则", type: "杂物",
+    description: "一面手持的钢镜不光可以用来化妆打扮，也可以用来窥视拐角或利用反光打信号。",
     cost: "5 GP", weight: "0.5 磅", tags: ["冒险道具"]
   },
   {
-    id: "oil", name: "燃油 (扁瓶)", source: "官方规则", type: "杂物",
-    description: "1品脱燃油。可用于点灯，或作为简易武器投掷（见炽火胶规则，但造成5火焰伤害）。铺在地面（5尺见方）点燃后造成5火焰伤害。",
+    id: "net", name: "捕网", source: "官方规则", type: "杂物",
+    description: "当你执行攻击动作，你可以将你的一次攻击替换为丢出一张捕网。你可以选择位于你15尺内可见的一个生物作为目标。该目标必须通过一次 **敏捷豁免**（DC等于8+你的敏捷调整值+你的熟练加值），否则陷入 **束缚** 状态，直至挣脱。体型是巨型及以上的目标自动通过。被束缚者或5尺内生物可以动作DC 10力量（运动）检定挣脱。捕网（AC 10；5 HP；免疫钝击/毒素/心灵）被摧毁也能解放目标。",
+    cost: "1 GP", weight: "3 磅", tags: ["冒险道具"]
+  },
+  {
+    id: "oil", name: "燃油", source: "官方规则", type: "杂物",
+    description: "泼洒生物/物件（替换攻击，20尺，敏捷豁免）：命中后若1分钟内受火焰伤害，额外受5点火焰伤害。泼洒空间（动作，5尺区域）：点燃后燃烧两轮，进入或结束回合受5点火焰伤害。燃料：供油灯/提灯燃烧6小时。",
     cost: "1 SP", weight: "1 磅", tags: ["冒险道具"]
   },
   {
-    id: "paper", name: "纸张 (1张)", source: "官方规则", type: "杂物",
-    description: "一张纸。",
+    id: "paper", name: "纸张", source: "官方规则", type: "杂物",
+    description: "一页纸张能够写满250个手写单词。",
     cost: "2 SP", weight: "---", tags: ["冒险道具"]
   },
   {
-    id: "parchment", name: "羊皮纸 (1张)", source: "官方规则", type: "杂物",
-    description: "一张羊皮纸。",
+    id: "parchment", name: "羊皮纸", source: "官方规则", type: "杂物",
+    description: "一页羊皮纸能够写满250个手写单词。",
     cost: "1 SP", weight: "---", tags: ["冒险道具"]
   },
   {
-    id: "perfume", name: "香水 (小瓶)", source: "官方规则", type: "杂物",
-    description: "一小瓶香水。",
+    id: "perfume", name: "香水", source: "官方规则", type: "杂物",
+    description: "香水通常装在4盎司的小瓶里。为自己拍上香水后的一小时里，你为影响对你态度冷漠的类人生物所作的魅力（游说）检定都具有优势，但这个生物必须位于你的5尺内。",
     cost: "5 GP", weight: "---", tags: ["冒险道具"]
   },
   {
-    id: "pick-miner", name: "矿镐", source: "官方规则", type: "杂物",
-    description: "挖掘工具。",
-    cost: "2 GP", weight: "10 磅", tags: ["冒险道具"]
-  },
-  {
-    id: "piton", name: "岩钉", source: "官方规则", type: "杂物",
-    description: "用于攀爬时固定。",
-    cost: "5 CP", weight: "0.25 磅", tags: ["冒险道具"]
-  },
-  {
-    id: "poison-basic", name: "基础毒药 (小瓶)", source: "官方规则", type: "杂物",
-    description: "可涂抹在一把武器或三枚弹药上。命中后目标须通过DC 10体质豁免，否则受1d4毒素伤害。一旦涂抹，毒性保留1分钟。",
+    id: "poison-basic", name: "基础毒药", source: "官方规则", type: "杂物",
+    description: "以一个 **附赠动作**，你可以将一小瓶基础毒药涂抹在一把武器或至多三枚弹药上。当一个生物受到由涂过毒的武器或弹药所造成的穿刺或挥砍伤害时，该生物将受到额外 **1d4** 点毒素伤害。毒药一旦被涂抹，毒效只会持续1分钟或直至造成了额外伤害。",
     cost: "100 GP", weight: "---", tags: ["冒险道具"]
   },
   {
-    id: "pole", name: "长杆 (10尺)", source: "官方规则", type: "杂物",
-    description: "10尺长的木杆。",
+    id: "pole", name: "长杆", source: "官方规则", type: "杂物",
+    description: "一柄长杆有10尺长。你可以用它去触碰10尺外的东西。如果你必须为一次跳高或跳远进行力量（运动）检定的话，你可以使用长杆进行撑杆跳，来使这次检定具有优势。",
     cost: "5 CP", weight: "7 磅", tags: ["冒险道具"]
   },
   {
     id: "pot-iron", name: "铁壶", source: "官方规则", type: "杂物",
-    description: "烹饪用的铁壶。",
+    description: "铁壶具有一加仑的容量。",
     cost: "2 GP", weight: "10 磅", tags: ["冒险道具"]
   },
   {
     id: "potion-healing-basic", name: "治疗药水", source: "官方规则", type: "杂物",
-    description: "红色的液体。饮用（动作）后恢复 2d4 + 2 点生命值。",
+    description: "这瓶药水是一种魔法物品。以一个 **附赠动作**，你可以喝掉它或将它喂给位于你5尺内的其他生物。喝掉这小瓶魔法红色液体的生物能够恢复 **2d4+2** 点生命值。",
     cost: "50 GP", weight: "0.5 磅", tags: ["冒险道具"]
   },
   {
     id: "pouch", name: "小包", source: "官方规则", type: "杂物",
-    description: "能够装入6磅重/1/5立方尺大的东西。",
+    description: "一个小包能够至多装入6磅重、五分之一立方尺大的东西。",
     cost: "5 SP", weight: "1 磅", tags: ["容器"]
   },
   {
     id: "quiver", name: "箭袋", source: "官方规则", type: "杂物",
-    description: "可装20支箭。",
+    description: "箭袋至多能装入20根箭矢。",
     cost: "1 GP", weight: "1 磅", tags: ["容器"]
   },
   {
     id: "ram-portable", name: "便携式攻城锤", source: "官方规则", type: "杂物",
-    description: "用于撞开门。提供力量检定+4加值（需两人操作）。",
+    description: "你可以使用便携式攻城锤撞破一扇门。当你这么做时，你在力量检定上获得+4加值。其他一名角色可以协助你使用攻城锤，并使你这次检定具有优势。",
     cost: "4 GP", weight: "35 磅", tags: ["冒险道具"]
   },
   {
-    id: "rations", name: "口粮 (1天)", source: "官方规则", type: "杂物",
-    description: "包含各种耐储存的食物，如肉干、干果、饼干等。",
+    id: "rations", name: "口粮", source: "官方规则", type: "杂物",
+    description: "口粮由适合长途旅行携带的食物组成，包含肉干、风干水果、饼干和坚果等。不进食的危害详见术语汇编中的“饥饿”部分。",
     cost: "5 SP", weight: "2 磅", tags: ["冒险道具"]
   },
   {
     id: "robes", name: "长袍", source: "官方规则", type: "杂物",
-    description: "普通的长袍。",
+    description: "长袍通常具有特别的职业或仪式意义。有些活动和场合仅允许穿着带有特定颜色或符号的长袍的人参与。",
     cost: "1 GP", weight: "4 磅", tags: ["冒险道具"]
   },
   {
-    id: "rope-hempen", name: "麻绳 (50尺)", source: "官方规则", type: "杂物",
-    description: "由麻制成的绳子。承重300磅。",
+    id: "rope-hempen", name: "绳索", source: "官方规则", type: "杂物",
+    description: "以一个 **操作动作**，你可以进行一次DC 10的敏捷（巧手）检定打一个结。扯坏需DC 20力量（运动）检定。捆绑非自愿生物（需受擒/失能/束缚）可使其束缚。挣脱需DC 15敏捷（特技）检定。",
     cost: "1 GP", weight: "10 磅", tags: ["冒险道具"]
   },
   {
-    id: "rope-silk", name: "丝绳 (50尺)", source: "官方规则", type: "杂物",
-    description: "由丝制成的绳子。承重300磅。",
-    cost: "10 GP", weight: "5 磅", tags: ["冒险道具"]
-  },
-  {
     id: "sack", name: "麻袋", source: "官方规则", type: "杂物",
-    description: "能够装入30磅重/1立方尺大的东西。",
+    description: "麻袋至多能够装入30磅1立方尺的东西。",
     cost: "1 CP", weight: "0.5 磅", tags: ["容器"]
   },
   {
-    id: "scale-merchant", name: "天平", source: "官方规则", type: "杂物",
-    description: "用于称重的小天平。",
-    cost: "5 GP", weight: "3 磅", tags: ["冒险道具"]
-  },
-  {
-    id: "sealing-wax", name: "封蜡", source: "官方规则", type: "杂物",
-    description: "用于密封卷轴或信件。",
-    cost: "5 SP", weight: "---", tags: ["冒险道具"]
-  },
-  {
     id: "shovel", name: "铲子", source: "官方规则", type: "杂物",
-    description: "挖掘工具。",
+    description: "你可以使用铲子来花费一小时时间在土壤或类似材质的地方挖出一个5尺边长的洞。",
     cost: "2 GP", weight: "5 磅", tags: ["冒险道具"]
   },
   {
     id: "signal-whistle", name: "信号笛", source: "官方规则", type: "杂物",
-    description: "发出尖锐声音。",
+    description: "以一个 **操作动作**，你可以吹响一支信号笛，并使信号笛发出600尺外都可以听见的响声。",
     cost: "5 CP", weight: "---", tags: ["冒险道具"]
   },
   {
-    id: "signet-ring", name: "图章戒指", source: "官方规则", type: "杂物",
-    description: "印有家族或组织徽记的戒指。",
-    cost: "5 GP", weight: "---", tags: ["冒险道具"]
+    id: "spell-scroll-cantrip", name: "法术卷轴 (戏法)", source: "官方规则", type: "杂物",
+    description: "如果该戏法在你的法术列表中，你可以阅读并无需材料施展它。豁免DC 13，攻击加值+5。施展后消失。",
+    cost: "30 GP", weight: "---", tags: ["魔法物品"]
   },
   {
-    id: "soap", name: "肥皂", source: "官方规则", type: "杂物",
-    description: "一块肥皂。",
-    cost: "2 CP", weight: "---", tags: ["冒险道具"]
-  },
-  {
-    id: "spellbook", name: "法术书", source: "官方规则", type: "杂物",
-    description: "法师用于记录法术的书籍。",
-    cost: "50 GP", weight: "3 磅", tags: ["冒险道具"]
+    id: "spell-scroll-level1", name: "法术卷轴 (一环)", source: "官方规则", type: "杂物",
+    description: "如果该法术在你的法术列表中，你可以阅读并无需材料施展它。豁免DC 13，攻击加值+5。施展后消失。",
+    cost: "50 GP", weight: "---", tags: ["魔法物品"]
   },
   {
     id: "spikes-iron", name: "铁钉 (10根)", source: "官方规则", type: "杂物",
-    description: "用于卡住门或攀爬。",
+    description: "一组铁钉包含十支。以一个 **操作动作**，使用钝器把铁钉锤入材质。亦可堵死门或固定绳索。",
     cost: "1 GP", weight: "5 磅", tags: ["冒险道具"]
   },
   {
     id: "spyglass", name: "望远镜", source: "官方规则", type: "杂物",
-    description: "将远处的物体放大两倍。",
+    description: "通过望远镜看到的物件要比原先的尺寸大上两倍。",
     cost: "1000 GP", weight: "1 磅", tags: ["冒险道具"]
   },
   {
-    id: "tent", name: "帐篷 (双人)", source: "官方规则", type: "杂物",
-    description: "简单的帆布帐篷，可容纳两人。",
+    id: "string", name: "细线", source: "官方规则", type: "杂物",
+    description: "细线有10尺长。你能够以一个 **操作动作** 为它打一个结。",
+    cost: "1 SP", weight: "---", tags: ["冒险道具"]
+  },
+  {
+    id: "tent", name: "帐篷", source: "官方规则", type: "杂物",
+    description: "帐篷可以睡下两个小型或中型的生物。",
     cost: "2 GP", weight: "20 磅", tags: ["冒险道具"]
   },
   {
     id: "tinderbox", name: "火绒盒", source: "官方规则", type: "杂物",
-    description: "包含打火石、火镰和易燃引火物。点燃火把需1动作。",
+    description: "装有打火石、火镰和火绒。使用 **附赠动作** 来点燃具有燃料的东西。无燃料生火需1分钟。",
     cost: "5 SP", weight: "1 磅", tags: ["冒险道具"]
   },
   {
     id: "torch", name: "火把", source: "官方规则", type: "杂物",
-    description: "燃烧 1 小时，提供 20 尺明亮光照和额外 20 尺微光光照。",
+    description: "燃烧1小时，提供20尺明亮光照及额外20尺微光光照。可作为简易近战武器攻击，命中造成1点火焰伤害。",
     cost: "1 CP", weight: "1 磅", tags: ["冒险道具"]
   },
   {
     id: "vial", name: "小瓶", source: "官方规则", type: "杂物",
-    description: "能够装入4盎司液体。",
+    description: "小瓶具有4盎司容量。",
     cost: "1 GP", weight: "---", tags: ["容器"]
   },
   {
     id: "waterskin", name: "水袋", source: "官方规则", type: "杂物",
-    description: "能够装入4品脱（半加仑）液体。",
+    description: "水袋具有4品脱容量。如果你喝水不足，你会遭受脱水的危害（见规则详述）。",
     cost: "2 SP", weight: "5 磅 (满)", tags: ["容器"]
-  },
-  {
-    id: "whetstone", name: "磨刀石", source: "官方规则", type: "杂物",
-    description: "用于磨利武器。",
-    cost: "1 CP", weight: "1 磅", tags: ["冒险道具"]
-  },
-  // --- Special Items ---
-  {
-    id: "holy-water", name: "圣水 (扁瓶)", source: "官方规则", type: "杂物",
-    description: "作为动作泼洒。对5尺内邪魔或亡灵进行远程攻击，命中造成2d6光耀伤害。",
-    cost: "25 GP", weight: "1 磅", tags: ["冒险道具"]
   },
 ];
