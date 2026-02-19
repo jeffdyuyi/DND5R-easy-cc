@@ -3,7 +3,7 @@ import React, { useMemo } from 'react';
 import { CharacterData, AbilityScores } from '../types';
 import WizardLayout from './wizard/WizardLayout';
 import FeatureAccordion from './wizard/FeatureAccordion';
-import { CLASSES } from '../data';
+import { CLASSES, SPECIES_DB } from '../data';
 import { BACKGROUND_DB } from '../data';
 import { CheckCircle, BookOpen, Wrench } from 'lucide-react';
 
@@ -65,13 +65,33 @@ const StepSkills: React.FC<Props> = ({ character }) => {
             });
         }
 
-        // Species skills (if any from species traits)
+        // Species skills (static)
         if (character.proficiencySources?.skills?.species?.length) {
             sources.push({
                 type: 'species',
                 label: `${character.race} 熟练`,
                 skills: character.proficiencySources.skills.species,
                 tools: character.proficiencySources?.tools?.species || [],
+            });
+        }
+
+        // Species skills (modular choices)
+        const selectedSpecies = character.race ? SPECIES_DB.find(s => s.name === character.race) : null;
+        if (selectedSpecies) {
+            selectedSpecies.traits.forEach(trait => {
+                if (trait.choices) {
+                    trait.choices.forEach(choice => {
+                        const selections = character.selections?.[choice.id];
+                        if (choice.type === 'skill' && selections && selections.length > 0) {
+                            sources.push({
+                                type: 'species',
+                                label: trait.name,
+                                skills: selections,
+                                tools: []
+                            });
+                        }
+                    });
+                }
             });
         }
 

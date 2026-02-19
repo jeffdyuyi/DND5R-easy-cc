@@ -5,6 +5,7 @@ import { SPECIES_DB } from '../data';
 import { updateCharacterSpellsFromSubrace } from '../utils/characterUtils';
 import WizardLayout from './wizard/WizardLayout';
 import FeatureAccordion from './wizard/FeatureAccordion';
+import ChoiceRenderer from './wizard/ChoiceRenderer';
 import { User, Footprints, Eye, AlertCircle, CheckCircle } from 'lucide-react';
 
 interface Props {
@@ -14,6 +15,11 @@ interface Props {
 
 const StepSpecies: React.FC<Props> = ({ character, updateCharacter }) => {
     const selectedSpecies = SPECIES_DB.find(sp => sp.name === character.race);
+
+    const handleFeatureChoiceUpdate = (id: string, values: string[]) => {
+        const newSelections = { ...character.selections, [id]: values };
+        updateCharacter({ selections: newSelections });
+    };
 
     // Auto-reset subrace if race changes  
     useEffect(() => {
@@ -156,13 +162,33 @@ const StepSpecies: React.FC<Props> = ({ character, updateCharacter }) => {
             <div className="space-y-3">
                 <h3 className="font-bold text-stone-700">种族特性</h3>
                 <div className="space-y-2">
-                    {selectedSpecies.traits.map((trait: any, idx: number) => (
-                        <FeatureAccordion key={idx} title={trait.name} isComplete>
-                            <div className="text-sm text-stone-600 leading-relaxed whitespace-pre-line">
-                                {trait.description}
-                            </div>
-                        </FeatureAccordion>
-                    ))}
+                    {selectedSpecies.traits.map((trait: any, idx: number) => {
+                        const hasChoices = trait.choices && trait.choices.length > 0;
+                        // Check if flexible choices are complete
+                        const isChoiceComplete = !hasChoices || trait.choices.every((c: any) =>
+                            (character.selections?.[c.id]?.length || 0) === c.count
+                        );
+
+                        return (
+                            <FeatureAccordion
+                                key={idx}
+                                title={trait.name}
+                                isComplete={isChoiceComplete}
+                                defaultOpen={hasChoices && !isChoiceComplete} // Auto-open if pending choice
+                            >
+                                <div className="text-sm text-stone-600 leading-relaxed whitespace-pre-line">
+                                    {trait.description}
+                                </div>
+                                {hasChoices && (
+                                    <ChoiceRenderer
+                                        choices={trait.choices}
+                                        selections={character.selections || {}}
+                                        onUpdate={handleFeatureChoiceUpdate}
+                                    />
+                                )}
+                            </FeatureAccordion>
+                        )
+                    })}
                 </div>
             </div>
         </div>

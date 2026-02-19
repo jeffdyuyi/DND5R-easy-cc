@@ -24,7 +24,16 @@ export const ELF: SpeciesItem = {
         },
         {
             name: "敏锐感官 (Keen Senses)",
-            description: "你具有洞悉、察觉或求生之一技能的熟练。"
+            description: "你具有洞悉、察觉或求生之一技能的熟练。",
+            choices: [
+                {
+                    id: "elf-keen-senses",
+                    type: "skill",
+                    count: 1,
+                    options: ["洞悉", "察觉", "求生"],
+                    label: "选择一项技能熟练"
+                }
+            ]
         },
         {
             name: "出神 (Trance)",

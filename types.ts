@@ -47,11 +47,32 @@ export interface SubSpeciesItem {
   grantedSpells?: { level: number; name: string; unlockLevel: number }[];
 }
 
+export type ChoiceType = 'skill' | 'tool' | 'language' | 'feat' | 'spell' | 'ability_score';
+
+export interface FeatureChoice {
+  id: string;           // 唯一标识符，用于存储用户的选择结果 (例如 "elf-keen-senses")
+  type: ChoiceType;     // 选择类型 (例如 "skill")
+  count: number;        // 可选数量 (例如 1)
+  options: string[];    // 预设选项列表 (例如 ["洞悉", "察觉", "求生"])。如果为 ["ANY"] 则代表全列表 (需要具体实现支持)。
+  label?: string;       // UI 显示的提示文本 (例如 "选择一项技能熟练")
+}
+
+export interface SpeciesTrait {
+  name: string;
+  description: string;
+  choices?: FeatureChoice[]; // 该特性提供的选择项
+  grants?: {                 // 该特性固定给予的项
+    skills?: string[];
+    spells?: string[];
+    vision?: string;        // e.g. "Darkvision", "Superior Darkvision"
+  };
+}
+
 export interface SpeciesItem extends BaseLibraryItem {
   speed: number;
   size: string;
   darkvision: boolean;
-  traits: { name: string; description: string }[];
+  traits: SpeciesTrait[];
   subraces?: { // Grouping for UI
     label: string;
     options: SubSpeciesItem[];
@@ -360,5 +381,10 @@ export interface CharacterData {
     enemies: { name: string; description: string }[];
     other: { name: string; description: string }[];
   };
+
+  // === NEW: Modular Selection State ===
+  // Key: FeatureChoice.id (e.g., "elf-keen-senses")
+  // Value: 用户选择的内容数组 (e.g., ["察觉"])
+  selections: Record<string, string[]>;
 }
 
