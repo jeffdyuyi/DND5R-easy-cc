@@ -1,232 +1,895 @@
 
-import React from 'react';
+import React, { useMemo, useRef, useEffect, useState } from 'react';
 import { CharacterData } from '../types';
-import { CLASSES as CLASSES_DATA } from '../data';
-import { FileCode } from 'lucide-react';
-import { getProficiencyBonus, formatModifier } from '../utils/rules';
+import { CLASSES as CLASSES_DATA, SPECIES_DB } from '../data';
+import { FileCode, Printer } from 'lucide-react';
+import { getModifier, getProficiencyBonus, formatModifier } from '../utils/rules';
 
 interface Props {
   character: CharacterData;
 }
 
-const Summary: React.FC<Props> = ({ character }) => {
-  const proficiencyBonus = getProficiencyBonus(character.level);
+// === Skill mapping (same as TabStats) ===
+const SKILLS_BY_ABILITY: Record<string, string[]> = {
+  strength: ["运动"],
+  dexterity: ["杂技", "巧手", "隐匿"],
+  constitution: [],
+  intelligence: ["奥秘", "历史", "调查", "自然", "宗教"],
+  wisdom: ["驯兽", "洞悉", "医药", "察觉", "求生"],
+  charisma: ["欺瞒", "威吓", "表演", "游说"]
+};
+
+const ABILITY_LABELS: Record<string, string> = {
+  strength: '力量 STR', dexterity: '敏捷 DEX', constitution: '体质 CON',
+  intelligence: '智力 INT', wisdom: '感知 WIS', charisma: '魅力 CHA'
+};
+const ABILITY_LABELS_CN: Record<string, string> = {
+  strength: '力量', dexterity: '敏捷', constitution: '体质',
+  intelligence: '智力', wisdom: '感知', charisma: '魅力'
+};
+
+const ORDERED_ABILITIES = ['strength', 'dexterity', 'constitution', 'intelligence', 'wisdom', 'charisma'] as const;
+
+// === AC Calculation Helper ===
+function calcAC(character: CharacterData): number {
+  const dexMod = getModifier(character.abilities.dexterity + (character.abilityBonuses?.dexterity || 0) + (character.backgroundBonuses?.dexterity || 0));
+  const equippedArmor = character.inventoryArmor?.find(a => a.isEquipped);
+
+  if (!equippedArmor || !equippedArmor.ac) {
+    return 10 + dexMod; // No armor
+  }
+
+  const acStr = equippedArmor.ac;
+  // Parse AC strings like "11 + 敏捷修正", "14 + 敏捷修正（至多+2）", "18"
+  const baseMatch = acStr.match(/^(\d+)/);
+  const baseAC = baseMatch ? parseInt(baseMatch[1]) : 10;
+  const hasDex = acStr.includes('敏捷');
+  const capMatch = acStr.match(/至多\+?(\d+)/);
+  const cap = capMatch ? parseInt(capMatch[1]) : undefined;
+
+  if (!hasDex) return baseAC;
+  if (cap !== undefined) return baseAC + Math.min(dexMod, cap);
+  return baseAC + dexMod;
+}
+
+// === Unified HTML Card Generator ===
+function generateCardHTML(character: CharacterData): string {
+  const profBonus = getProficiencyBonus(character.level);
   const classData = CLASSES_DATA[character.className];
+  const speciesData = SPECIES_DB.find(sp => sp.name === character.race);
+  const ac = calcAC(character);
+  const speed = speciesData?.speed || 30;
 
-  // Format Class String (e.g. "Fighter 5 (Champion)")
-  const classString = `${character.className} Lv.${character.level}${character.subclass ? ` (${character.subclass})` : ''}`;
+  const classString = `${character.className} Lv.${character.level}${character.subclass ? ` · ${character.subclass}` : ''}`;
 
-  const generateHTML = () => {
-    const proficiencyBonus = getProficiencyBonus(character.level);
-    
-    const classData = CLASSES_DATA[character.className];
-    const classString = `${character.className} Lv.${character.level}${character.subclass ? ` (${character.subclass})` : ''}`;
+  // Total ability scores
+  const totalScore = (key: string) => {
+    const base = (character.abilities as any)[key] || 10;
+    const bonus = (character.abilityBonuses as any)?.[key] || 0;
+    const bgBonus = (character.backgroundBonuses as any)?.[key] || 0;
+    return base + bonus + bgBonus;
+  };
 
-    const htmlContent = `
-<!DOCTYPE html>
+  // Saving throw check
+  const isSaveProf = (key: string) => {
+    return classData?.saves.includes(ABILITY_LABELS_CN[key]) || false;
+  };
+
+  // Build skill rows
+  const allSkills: { name: string; abilityKey: string; mod: number; profLevel: number }[] = [];
+  for (const [abilityKey, skills] of Object.entries(SKILLS_BY_ABILITY)) {
+    const abilityMod = getModifier(totalScore(abilityKey));
+    for (const skill of skills) {
+      const level = character.skillMastery?.[skill] || 0;
+      let bonus = 0;
+      if (level === 1) bonus = profBonus;
+      else if (level === 2) bonus = profBonus * 2;
+      allSkills.push({ name: skill, abilityKey, mod: abilityMod + bonus, profLevel: level });
+    }
+  }
+
+  // Build spells info
+  const hasSpellcasting = character.spellcastingAbility && character.spellcastingAbility !== '';
+  const spellsByLevel: Record<string, string[]> = {};
+  if (hasSpellcasting) {
+    const spellKeys = ['cantrips', 'level1', 'level2', 'level3', 'level4', 'level5', 'level6', 'level7', 'level8', 'level9'] as const;
+    const levelLabels = ['戏法', '1环', '2环', '3环', '4环', '5环', '6环', '7环', '8环', '9环'];
+    spellKeys.forEach((key, idx) => {
+      const val = (character.spells as any)?.[key];
+      if (val && typeof val === 'string' && val.trim()) {
+        spellsByLevel[levelLabels[idx]] = val.split(/[,，、]/).map((s: string) => s.trim()).filter(Boolean);
+      }
+    });
+  }
+
+  // Personality fields
+  const personalityTraits = character.personalityTraits || '';
+  const ideals = character.ideals || '';
+  const bonds = character.bonds || '';
+  const flaws = character.flaws || '';
+
+  // Equipment
+  const weapons = character.inventoryWeapons || [];
+  const armor = character.inventoryArmor || [];
+  const gear = character.inventoryGear || [];
+
+  // Class features for current level
+  const features = (classData?.features || []).filter(f => f.level <= character.level).sort((a, b) => a.level - b.level);
+
+  // Subclass features
+  const subclassData = classData?.subclasses?.find(sc => sc.name === character.subclass);
+  const subFeatures = (subclassData?.features || []).filter(f => f.level <= character.level).sort((a, b) => a.level - b.level);
+
+  return `<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<title>${character.name} - 角色卡</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${character.name || '无名氏'} — 角色卡</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Noto+Serif+SC:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
-  body { font-family: 'Georgia', serif; background-color: #f3f4f6; color: #1c1917; padding: 40px; }
-  .card { max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); border: 1px solid #d6d3d1; position: relative; overflow: hidden; }
-  .header { display: flex; justify-content: space-between; border-bottom: 2px solid #b91c1c; padding-bottom: 20px; margin-bottom: 30px; }
-  .title h1 { margin: 0; font-size: 32px; color: #b91c1c; }
-  .sub-title { font-size: 18px; color: #44403c; margin-top: 5px; font-weight: bold; }
-  .meta { text-align: right; font-size: 14px; color: #78716c; line-height: 1.6; }
-  .stats-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; margin-bottom: 30px; text-align: center; }
-  .stat-box { border: 1px solid #e7e5e4; padding: 10px; border-radius: 6px; background: #fafaf9; }
-  .stat-label { font-size: 10px; text-transform: uppercase; font-weight: bold; color: #78716c; margin-bottom: 5px; }
-  .stat-val { font-size: 24px; font-weight: bold; color: #1c1917; }
-  .stat-mod { display: inline-block; background: #292524; color: white; border-radius: 50%; width: 28px; height: 28px; line-height: 28px; font-size: 14px; font-weight: bold; margin-top: 5px; }
-  .section-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 30px; }
-  .info-box { background: #f5f5f4; padding: 15px; border-radius: 6px; border: 1px solid #e7e5e4; }
-  .label-val { display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px; }
-  .lbl { font-weight: bold; color: #44403c; font-size: 14px; }
-  .val { font-weight: bold; font-size: 18px; color: #1c1917; }
-  .detail-text { font-size: 12px; color: #57534e; line-height: 1.5; }
-  .section-title { font-size: 16px; font-weight: bold; color: #b91c1c; border-bottom: 1px solid #e7e5e4; padding-bottom: 5px; margin-bottom: 15px; }
-  .tag { display: inline-block; padding: 2px 6px; background: #e5e7eb; border-radius: 4px; font-size: 10px; margin-right: 5px; font-weight: bold; }
-  ul { margin: 5px 0; padding-left: 20px; }
-  li { margin-bottom: 3px; font-size: 13px; }
-  .corner { position: absolute; width: 30px; height: 30px; border: 4px solid #b91c1c; }
-  .tl { top: 0; left: 0; border-right: none; border-bottom: none; border-radius: 8px 0 0 0; }
-  .tr { top: 0; right: 0; border-left: none; border-bottom: none; border-radius: 0 8px 0 0; }
-  .bl { bottom: 0; left: 0; border-right: none; border-top: none; border-radius: 0 0 0 8px; }
-  .br { bottom: 0; right: 0; border-left: none; border-top: none; border-radius: 0 0 8px 0; }
-  @media print { body { background: white; padding: 0; } .card { box-shadow: none; border: none; } button { display: none; } }
+  :root {
+    --dnd-red: #7f1d1d;
+    --dnd-gold: #b8860b;
+    --parchment: #faf6ed;
+    --ink: #1c1917;
+    --muted: #78716c;
+    --border: #c8bfa9;
+    --section-bg: #f5f0e6;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Noto Serif SC', 'Georgia', serif;
+    background: #e8e0d0;
+    color: var(--ink);
+    padding: 20px;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .sheet {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--parchment);
+    border: 3px solid var(--dnd-red);
+    border-radius: 4px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18), inset 0 0 80px rgba(200,191,169,0.3);
+    position: relative;
+    overflow: hidden;
+  }
+  .sheet::before {
+    content: '';
+    position: absolute;
+    inset: 6px;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* === HEADER === */
+  .header {
+    background: linear-gradient(135deg, var(--dnd-red) 0%, #991b1b 50%, #7f1d1d 100%);
+    color: white;
+    padding: 24px 28px;
+    position: relative;
+    z-index: 2;
+  }
+  .header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--dnd-gold), #d4a843, var(--dnd-gold));
+  }
+  .header-main { display: flex; justify-content: space-between; align-items: flex-start; }
+  .char-name {
+    font-family: 'Cinzel', 'Noto Serif SC', serif;
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    line-height: 1.1;
+  }
+  .char-subtitle {
+    font-size: 15px;
+    opacity: 0.9;
+    margin-top: 6px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  .header-meta {
+    text-align: right;
+    font-size: 12px;
+    opacity: 0.85;
+    line-height: 1.8;
+  }
+  .header-meta strong { opacity: 1; }
+
+  /* === CONTENT BODY === */
+  .content { padding: 20px 24px; position: relative; z-index: 2; }
+
+  /* === STATS ROW === */
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .stat-cell {
+    text-align: center;
+    border: 2px solid var(--border);
+    border-radius: 4px;
+    padding: 8px 4px;
+    background: white;
+    position: relative;
+  }
+  .stat-label {
+    font-size: 9px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--muted);
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+  .stat-score {
+    font-family: 'Cinzel', serif;
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--ink);
+    line-height: 1;
+  }
+  .stat-mod {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--dnd-red);
+    color: white;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+
+  /* === COMBAT BAR === */
+  .combat-bar {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    margin-bottom: 16px;
+    background: var(--section-bg);
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+  }
+  .combat-cell {
+    text-align: center;
+    background: white;
+    padding: 10px 6px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+  }
+  .combat-label {
+    font-size: 9px;
+    font-weight: 900;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+  .combat-val {
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--ink);
+  }
+  .combat-note {
+    font-size: 10px;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  /* === TWO COLUMN LAYOUT === */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  /* === SECTION === */
+  .section {
+    margin-bottom: 14px;
+    break-inside: avoid;
+  }
+  .section-title {
+    font-family: 'Cinzel', 'Noto Serif SC', serif;
+    font-size: 13px;
+    font-weight: 900;
+    color: var(--dnd-red);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid var(--dnd-red);
+    padding-bottom: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .section-title::before {
+    content: '◆';
+    font-size: 10px;
+  }
+
+  /* === SAVING THROWS === */
+  .saves-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+  }
+  .save-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+    background: white;
+    border: 1px solid #e5e2db;
+    border-radius: 3px;
+  }
+  .save-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1.5px solid var(--muted);
+    flex-shrink: 0;
+  }
+  .save-dot.filled { background: var(--dnd-red); border-color: var(--dnd-red); }
+  .save-name { flex: 1; font-weight: 700; color: var(--ink); }
+  .save-val { font-weight: 700; font-family: 'Cinzel', monospace; }
+
+  /* === SKILLS === */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+  }
+  .skill-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 6px;
+    font-size: 11px;
+    border-bottom: 1px solid #ebe8e2;
+  }
+  .skill-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1.5px solid #bbb;
+    flex-shrink: 0;
+  }
+  .skill-dot.prof { background: var(--dnd-red); border-color: var(--dnd-red); }
+  .skill-dot.expert { background: var(--dnd-gold); border-color: var(--dnd-gold); }
+  .skill-name { flex: 1; }
+  .skill-name.active { font-weight: 700; color: var(--ink); }
+  .skill-name.inactive { color: var(--muted); }
+  .skill-val { font-weight: 700; font-family: 'Cinzel', monospace; min-width: 24px; text-align: right; }
+
+  /* === PROFICIENCIES / GENERIC BOX === */
+  .info-box {
+    background: var(--section-bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 10px 12px;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    break-inside: avoid;
+  }
+  .info-box strong { color: var(--dnd-red); }
+  .info-box p { margin-bottom: 4px; }
+
+  /* === PERSONALITY 4 GRID === */
+  .personality-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .personality-cell {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 10px;
+    min-height: 60px;
+  }
+  .personality-label {
+    font-size: 10px;
+    font-weight: 900;
+    color: var(--dnd-red);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #ebe8e2;
+    padding-bottom: 3px;
+  }
+  .personality-text {
+    font-size: 12px;
+    color: var(--ink);
+    line-height: 1.5;
+    white-space: pre-line;
+  }
+
+  /* === FEATURES === */
+  .feature-item {
+    margin-bottom: 8px;
+    padding-left: 10px;
+    border-left: 3px solid var(--border);
+  }
+  .feature-name {
+    font-weight: 900;
+    font-size: 12px;
+    color: var(--ink);
+  }
+  .feature-level {
+    display: inline-block;
+    background: var(--dnd-red);
+    color: white;
+    font-size: 9px;
+    font-weight: 700;
+    padding: 1px 5px;
+    border-radius: 3px;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+
+  /* === EQUIPMENT TABLE === */
+  .equip-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+  }
+  .equip-table th {
+    background: var(--dnd-red);
+    color: white;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 8px;
+    text-align: left;
+  }
+  .equip-table td {
+    padding: 4px 8px;
+    border-bottom: 1px solid #ebe8e2;
+  }
+  .equip-table tr:nth-child(even) td { background: #faf8f4; }
+
+  /* === SPELLS === */
+  .spell-level-group { margin-bottom: 8px; }
+  .spell-level-tag {
+    display: inline-block;
+    background: var(--dnd-red);
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-bottom: 4px;
+  }
+  .spell-list {
+    font-size: 12px;
+    color: var(--ink);
+    line-height: 1.5;
+    padding-left: 4px;
+  }
+
+  /* === FOOTER === */
+  .footer {
+    background: var(--dnd-red);
+    color: rgba(255,255,255,0.7);
+    text-align: center;
+    padding: 8px;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+  }
+  .footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--dnd-gold), #d4a843, var(--dnd-gold));
+  }
+  .footer strong { color: white; }
+
+  /* === BACKSTORY === */
+  .backstory-text {
+    font-size: 12px;
+    line-height: 1.7;
+    color: #444;
+    font-style: italic;
+    white-space: pre-line;
+    padding: 10px 12px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    min-height: 40px;
+  }
+
+  /* === WEALTH === */
+  .wealth-row {
+    display: flex;
+    gap: 12px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 0;
+  }
+  .wealth-item { display: flex; align-items: center; gap: 4px; }
+  .coin {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 9px;
+    font-weight: 900;
+    color: white;
+  }
+  .coin-gp { background: #b8860b; }
+  .coin-sp { background: #9ca3af; }
+  .coin-cp { background: #b45309; }
+  .coin-pp { background: #6366f1; }
+
+  /* === PRINT === */
+  @media print {
+    body { background: white !important; padding: 0 !important; }
+    .sheet { box-shadow: none !important; border-width: 2px !important; max-width: 100% !important; }
+    .no-print { display: none !important; }
+  }
 </style>
 </head>
 <body>
-<div class="card">
-  <div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div>
+<div class="sheet">
+
+  <!-- HEADER -->
   <div class="header">
-    <div class="title">
-      <h1>${character.name || "无名氏"}</h1>
-      <div class="sub-title">${character.race || "种族"} | ${classString}</div>
-    </div>
-    <div class="meta">
-      <div>背景: ${character.background || "-"}</div>
-      <div>阵营: ${character.alignment || "-"}</div>
-      <div>玩家: ${character.playerName || "-"}</div>
-    </div>
-  </div>
-
-  <div class="stats-grid">
-    ${Object.entries(character.abilities).map(([key, val]) => {
-      const labelMap: any = { strength: '力量', dexterity: '敏捷', constitution: '体质', intelligence: '智力', wisdom: '感知', charisma: '魅力' };
-      const modStr = formatModifier(val as number, true);
-      return `
-      <div class="stat-box">
-        <div class="stat-label">${labelMap[key]}</div>
-        <div class="stat-val">${val}</div>
-        <div class="stat-mod">${modStr}</div>
-      </div>`;
-    }).join('')}
-  </div>
-
-  <div class="section-row">
-    <div class="info-box">
-      <div class="label-val"><span class="lbl">熟练加值</span><span class="val">+${proficiencyBonus}</span></div>
-      <div class="label-val"><span class="lbl">护甲等级 (AC)</span><span class="val">?</span></div>
-      <div class="label-val"><span class="lbl">先攻</span><span class="val">${formatModifier(character.abilities.dexterity, true)}</span></div>
-      <div class="label-val"><span class="lbl">速度</span><span class="val">30 尺</span></div>
-      <div class="detail-text" style="margin-top: 10px;">
-        <strong>豁免熟练:</strong> ${classData?.saves.join('、') || '-'}
+    <div class="header-main">
+      <div>
+        <div class="char-name">${character.name || '无名氏'}</div>
+        <div class="char-subtitle">${character.race || '种族'}${character.subRace ? ` · ${character.subRace}` : ''} — ${classString}</div>
       </div>
-    </div>
-    <div class="info-box">
-      <div class="label-val"><span class="lbl">生命值上限</span><span class="val">${character.hpMax}</span></div>
-      <div class="label-val"><span class="lbl">当前生命</span><span class="val">________</span></div>
-      <div class="label-val"><span class="lbl">临时生命</span><span class="val">________</span></div>
-      <div class="detail-text" style="margin-top: 10px;">
-        <strong>生命骰:</strong> ${character.level}${classData?.hitDie || "d8"}
+      <div class="header-meta">
+        <div><strong>背景</strong> ${character.background || '—'}</div>
+        <div><strong>阵营</strong> ${character.alignment || '—'}</div>
+        <div><strong>玩家</strong> ${character.playerName || '—'}</div>
+        ${character.faith ? `<div><strong>信仰</strong> ${character.faith}</div>` : ''}
       </div>
     </div>
   </div>
 
-  <div class="section-title">技能与特性</div>
-  <div style="font-size: 13px; line-height: 1.6; margin-bottom: 20px;">
-    <p><strong>熟练技能:</strong> ${Object.keys(character.skillMastery).filter(k => character.skillMastery[k] > 0).join('、') || "无"}</p>
-    <p><strong>语言:</strong> ${character.languages || "无"}</p>
-    <p><strong>起源专长:</strong> ${character.originFeat || "无"}</p>
+  <div class="content">
+
+    <!-- ABILITY SCORES -->
+    <div class="stats-row">
+      ${ORDERED_ABILITIES.map(key => {
+    const total = totalScore(key);
+    const mod = getModifier(total);
+    return `
+        <div class="stat-cell">
+          <div class="stat-label">${ABILITY_LABELS[key]}</div>
+          <div class="stat-score">${total}</div>
+          <div class="stat-mod">${formatModifier(mod)}</div>
+        </div>`;
+  }).join('')}
+    </div>
+
+    <!-- COMBAT BAR -->
+    <div class="combat-bar">
+      <div class="combat-cell">
+        <div class="combat-label">护甲等级</div>
+        <div class="combat-val">${ac}</div>
+        <div class="combat-note">${character.inventoryArmor?.find(a => a.isEquipped)?.name || '无甲'}</div>
+      </div>
+      <div class="combat-cell">
+        <div class="combat-label">先攻加值</div>
+        <div class="combat-val">${formatModifier(getModifier(totalScore('dexterity')))}</div>
+      </div>
+      <div class="combat-cell">
+        <div class="combat-label">速度</div>
+        <div class="combat-val">${speed}</div>
+        <div class="combat-note">尺</div>
+      </div>
+      <div class="combat-cell">
+        <div class="combat-label">生命值上限</div>
+        <div class="combat-val">${character.hpMax}</div>
+        <div class="combat-note">生命骰 ${character.level}${classData?.hitDie || 'd8'}</div>
+      </div>
+      <div class="combat-cell">
+        <div class="combat-label">熟练加值</div>
+        <div class="combat-val">+${profBonus}</div>
+      </div>
+    </div>
+
+    <!-- TWO COLUMN: SAVES + SKILLS -->
+    <div class="two-col">
+      <div>
+        <!-- SAVING THROWS -->
+        <div class="section">
+          <div class="section-title">豁免检定 Saving Throws</div>
+          <div class="saves-grid">
+            ${ORDERED_ABILITIES.map(key => {
+    const mod = getModifier(totalScore(key));
+    const prof = isSaveProf(key);
+    const saveVal = mod + (prof ? profBonus : 0);
+    return `
+              <div class="save-row">
+                <div class="save-dot ${prof ? 'filled' : ''}"></div>
+                <span class="save-name">${ABILITY_LABELS_CN[key]}</span>
+                <span class="save-val">${formatModifier(saveVal)}</span>
+              </div>`;
+  }).join('')}
+          </div>
+        </div>
+
+        <!-- PROFICIENCIES INFO -->
+        <div class="section">
+          <div class="section-title">熟练与语言</div>
+          <div class="info-box">
+            <p><strong>武器 & 护甲：</strong>${classData?.coreTraits?.weaponProficiencies || '—'}${classData?.coreTraits?.armorTraining ? ` / ${classData.coreTraits.armorTraining}` : ''}</p>
+            <p><strong>工具：</strong>${character.tools?.map(t => t.name).join('、') || character.toolProficiencies || '—'}</p>
+            <p><strong>语言：</strong>${character.languages || '通用语'}</p>
+            ${character.originFeat ? `<p><strong>起源专长：</strong>${character.originFeat}</p>` : ''}
+          </div>
+        </div>
+      </div>
+      <div>
+        <!-- SKILLS -->
+        <div class="section">
+          <div class="section-title">技能检定 Skills</div>
+          <div class="skills-grid">
+            ${allSkills.map(s => {
+    const dotClass = s.profLevel === 2 ? 'expert' : s.profLevel === 1 ? 'prof' : '';
+    const nameClass = s.profLevel > 0 ? 'active' : 'inactive';
+    const abbrMap: Record<string, string> = { strength: '力', dexterity: '敏', constitution: '体', intelligence: '智', wisdom: '感', charisma: '魅' };
+    return `
+              <div class="skill-row">
+                <div class="skill-dot ${dotClass}"></div>
+                <span class="skill-name ${nameClass}">${s.name}</span>
+                <span style="font-size:9px;color:#999;margin-right:2px">${abbrMap[s.abilityKey]}</span>
+                <span class="skill-val">${formatModifier(s.mod)}</span>
+              </div>`;
+  }).join('')}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PERSONALITY -->
+    ${(personalityTraits || ideals || bonds || flaws) ? `
+    <div class="section">
+      <div class="section-title">角色性格 Personality</div>
+      <div class="personality-grid">
+        <div class="personality-cell">
+          <div class="personality-label">性格特点</div>
+          <div class="personality-text">${personalityTraits || '—'}</div>
+        </div>
+        <div class="personality-cell">
+          <div class="personality-label">理想信念</div>
+          <div class="personality-text">${ideals || '—'}</div>
+        </div>
+        <div class="personality-cell">
+          <div class="personality-label">牵绊羁绊</div>
+          <div class="personality-text">${bonds || '—'}</div>
+        </div>
+        <div class="personality-cell">
+          <div class="personality-label">缺点弱点</div>
+          <div class="personality-text">${flaws || '—'}</div>
+        </div>
+      </div>
+    </div>
+    ` : ''}
+
+    <!-- TWO COL: FEATURES + EQUIPMENT -->
+    <div class="two-col">
+      <div>
+        <!-- CLASS FEATURES -->
+        <div class="section">
+          <div class="section-title">职业特性 Features</div>
+          ${features.length > 0 ? features.slice(0, 12).map(f => `
+            <div class="feature-item">
+              <span class="feature-level">Lv.${f.level}</span>
+              <span class="feature-name">${f.name}</span>
+            </div>
+          `).join('') : '<div style="font-size:12px;color:#999;font-style:italic">暂无职业特性</div>'}
+
+          ${subFeatures.length > 0 ? `
+            <div style="margin-top:10px;padding-top:8px;border-top:1px dashed #ccc">
+              <div style="font-size:11px;font-weight:900;color:var(--dnd-gold);margin-bottom:6px;letter-spacing:1px">${character.subclass || '子职业'} 特性</div>
+              ${subFeatures.slice(0, 8).map(f => `
+                <div class="feature-item">
+                  <span class="feature-level">Lv.${f.level}</span>
+                  <span class="feature-name">${f.name}</span>
+                </div>
+              `).join('')}
+            </div>
+          ` : ''}
+        </div>
+      </div>
+
+      <div>
+        <!-- EQUIPMENT -->
+        <div class="section">
+          <div class="section-title">装备清单 Equipment</div>
+          ${(weapons.length > 0 || armor.length > 0 || gear.length > 0) ? `
+          <table class="equip-table">
+            <thead><tr><th>物品名称</th><th>详情</th></tr></thead>
+            <tbody>
+              ${weapons.map(w => `<tr><td>⚔ ${w.name}</td><td>${w.damage || ''} ${w.damageType || ''}</td></tr>`).join('')}
+              ${armor.map(a => `<tr><td>🛡 ${a.name}${a.isEquipped ? ' ✦' : ''}</td><td>AC ${a.ac || '—'}</td></tr>`).join('')}
+              ${gear.slice(0, 10).map(g => `<tr><td>📦 ${g.name}${(g.quantity || 1) > 1 ? ` ×${g.quantity}` : ''}</td><td>${g.cost || ''}</td></tr>`).join('')}
+            </tbody>
+          </table>
+          ` : '<div style="font-size:12px;color:#999;font-style:italic">尚未选择装备</div>'}
+
+          <!-- WEALTH -->
+          <div style="margin-top:10px">
+            <div class="wealth-row">
+              ${character.platinum ? `<div class="wealth-item"><span class="coin coin-pp">铂</span>${character.platinum}</div>` : ''}
+              <div class="wealth-item"><span class="coin coin-gp">金</span>${character.gold || 0}</div>
+              <div class="wealth-item"><span class="coin coin-sp">银</span>${character.silver || 0}</div>
+              <div class="wealth-item"><span class="coin coin-cp">铜</span>${character.copper || 0}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SPELLS (conditional) -->
+    ${hasSpellcasting && Object.keys(spellsByLevel).length > 0 ? `
+    <div class="section">
+      <div class="section-title">法术列表 Spells</div>
+      <div class="info-box" style="margin-bottom:8px">
+        <strong>施法属性：</strong>${character.spellcastingAbility || '—'} &nbsp;|&nbsp;
+        <strong>法术豁免DC：</strong>${character.spellSaveDC || '—'} &nbsp;|&nbsp;
+        <strong>法术攻击加值：</strong>${character.spellAttackBonus ? formatModifier(character.spellAttackBonus) : '—'}
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
+        ${Object.entries(spellsByLevel).map(([level, spells]) => `
+          <div class="spell-level-group">
+            <span class="spell-level-tag">${level}</span>
+            <div class="spell-list">${spells.join('、')}</div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+    ` : ''}
+
+    <!-- BACKSTORY -->
+    ${character.backstory ? `
+    <div class="section">
+      <div class="section-title">背景故事 Backstory</div>
+      <div class="backstory-text">${character.backstory}</div>
+    </div>
+    ` : ''}
+
+    <!-- APPEARANCE (if filled) -->
+    ${(character.hair || character.skin || character.eyes || character.height || character.age) ? `
+    <div class="section">
+      <div class="section-title">外貌特征 Appearance</div>
+      <div class="info-box">
+        ${character.gender ? `<strong>性别：</strong>${character.gender} &nbsp;` : ''}
+        ${character.age ? `<strong>年龄：</strong>${character.age} &nbsp;` : ''}
+        ${character.height ? `<strong>身高：</strong>${character.height} &nbsp;` : ''}
+        ${character.weight ? `<strong>体重：</strong>${character.weight}<br/>` : ''}
+        ${character.hair ? `<strong>发色：</strong>${character.hair} &nbsp;` : ''}
+        ${character.skin ? `<strong>肤色：</strong>${character.skin} &nbsp;` : ''}
+        ${character.eyes ? `<strong>瞳色：</strong>${character.eyes}` : ''}
+        ${character.appearance ? `<br/><strong>描述：</strong>${character.appearance}` : ''}
+      </div>
+    </div>
+    ` : ''}
+
   </div>
 
-  <div class="section-title">装备与财富</div>
-  <div style="font-size: 13px; margin-bottom: 20px;">
-    <p><strong>财富:</strong> ${character.gold} GP, ${character.silver} SP, ${character.copper} CP</p>
-    <p><strong>武器:</strong> ${character.inventoryWeapons.map(i => i.name).join(', ') || "无"}</p>
-    <p><strong>护甲:</strong> ${character.inventoryArmor.map(i => i.name).join(', ') || "无"}</p>
-    <p><strong>其他:</strong> ${character.inventoryGear.map(i => i.name).join(', ') || "无"}</p>
+  <!-- FOOTER -->
+  <div class="footer">
+    <strong>不咕鸟</strong> · DND 5R CHARACTER SHEET · ${character.name || '无名氏'}
   </div>
 
-  <div class="section-title">背景故事</div>
-  <div style="font-size: 13px; line-height: 1.6; color: #444;">
-    ${character.backstory ? character.backstory.replace(/\n/g, '<br/>') : "暂无背景故事..."}
-  </div>
-  
-  <div style="text-align: center; margin-top: 40px; font-size: 10px; color: #a8a29e;">
-    Generated by 不咕鸟 DND5R Builder
-  </div>
 </div>
-<script>window.print()</script>
 </body>
-</html>
-    `;
-    const blob = new Blob([htmlContent], { type: 'text/html' });
+</html>`;
+}
+
+// === React Component ===
+const Summary: React.FC<Props> = ({ character }) => {
+  const cardHTML = useMemo(() => generateCardHTML(character), [character]);
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+  const [iframeHeight, setIframeHeight] = useState(1200);
+
+  // Auto-resize iframe to content height
+  useEffect(() => {
+    const iframe = iframeRef.current;
+    if (!iframe) return;
+
+    const handleLoad = () => {
+      try {
+        const doc = iframe.contentDocument;
+        if (doc?.body) {
+          // Get the full height of the rendered content
+          const height = doc.documentElement.scrollHeight || doc.body.scrollHeight;
+          setIframeHeight(height + 20);
+        }
+      } catch (_) { /* cross-origin guard */ }
+    };
+
+    iframe.addEventListener('load', handleLoad);
+    return () => iframe.removeEventListener('load', handleLoad);
+  }, [cardHTML]);
+
+  const handleExportHTML = () => {
+    const blob = new Blob([cardHTML], { type: 'text/html; charset=utf-8' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `${character.name}_character_sheet.html`;
+    a.download = `${character.name || '角色卡'}_character_sheet.html`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
   };
 
+  const handlePrint = () => {
+    const printWindow = window.open('', '_blank');
+    if (printWindow) {
+      printWindow.document.write(cardHTML);
+      printWindow.document.close();
+      setTimeout(() => printWindow.print(), 600);
+    }
+  };
+
   return (
-    <div className="bg-white p-8 rounded-lg shadow-2xl border-4 border-stone-600 max-w-2xl mx-auto mt-8 relative overflow-hidden">
-      {/* Decorative Border Corners */}
-      <div className="absolute top-0 left-0 w-8 h-8 border-t-4 border-l-4 border-dndRed rounded-tl-lg"></div>
-      <div className="absolute top-0 right-0 w-8 h-8 border-t-4 border-r-4 border-dndRed rounded-tr-lg"></div>
-      <div className="absolute bottom-0 left-0 w-8 h-8 border-b-4 border-l-4 border-dndRed rounded-bl-lg"></div>
-      <div className="absolute bottom-0 right-0 w-8 h-8 border-b-4 border-r-4 border-dndRed rounded-br-lg"></div>
-
-      {/* Header */}
-      <div className="flex justify-between items-end border-b-2 border-stone-300 pb-4 mb-6">
-        <div>
-          <h1 className="text-4xl font-bold text-dndRed">{character.name || "无名氏"}</h1>
-          <div className="text-stone-600 mt-1 flex flex-col gap-1">
-            <span className="font-bold text-lg">{character.race || "种族"}</span>
-            <span className="text-stone-800">{classString}</span>
-          </div>
-        </div>
-        <div className="text-right">
-          <div className="text-sm text-stone-500">等级: {character.level}</div>
-          <div className="text-sm text-stone-500">背景: {character.background || "无"}</div>
-          <div className="text-sm text-stone-500">阵营: {character.alignment || "无"}</div>
-          <div className="text-sm text-stone-500">玩家: {character.playerName || "无"}</div>
-        </div>
-      </div>
-
-      {/* Core Stats */}
-      <div className="grid grid-cols-6 gap-2 mb-6 text-center">
-        {[
-          { k: 'strength', l: '力量' }, { k: 'dexterity', l: '敏捷' }, { k: 'constitution', l: '体质' },
-          { k: 'intelligence', l: '智力' }, { k: 'wisdom', l: '感知' }, { k: 'charisma', l: '魅力' }
-        ].map((stat: any) => (
-          <div key={stat.k} className="flex flex-col items-center">
-             <div className="text-xs font-bold text-stone-500 mb-1">{stat.l}</div>
-             <div className="text-xl font-bold text-stone-800">{character.abilities[stat.k as keyof typeof character.abilities]}</div>
-             <div className="text-sm font-bold text-white bg-stone-700 rounded-full w-8 h-8 flex items-center justify-center mt-1">
-               {formatModifier(character.abilities[stat.k as keyof typeof character.abilities], true)}
-             </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Prof & HP */}
-      <div className="grid grid-cols-2 gap-6 mb-6">
-        <div className="bg-stone-100 p-4 rounded border border-stone-200">
-           <div className="flex justify-between items-center mb-2">
-             <span className="font-bold text-stone-700">熟练加值</span>
-             <span className="font-bold text-xl">+{proficiencyBonus}</span>
-           </div>
-           {classData && (
-             <div className="text-sm text-stone-600">
-               <span className="font-bold block mb-1">豁免熟练:</span>
-               {classData.saves.join('、')}
-             </div>
-           )}
-        </div>
-        <div className="bg-stone-100 p-4 rounded border border-stone-200">
-           <div className="flex justify-between items-center">
-             <span className="font-bold text-stone-700">生命值上限</span>
-             <span className="font-bold text-xl">{character.hpMax}</span>
-           </div>
-           <div className="text-xs text-stone-500 mt-2">
-             生命骰: {character.level}{classData?.hitDie || "d8"}
-           </div>
-        </div>
-      </div>
-
-      {/* Features - Simplified preview */}
-      <div>
-        <h3 className="text-lg font-bold text-dndRed border-b border-stone-300 mb-3 pb-1">特性概览</h3>
-        <p className="text-sm text-stone-500 italic">请前往“职业详情”页面查看完整特性列表。</p>
-      </div>
-
-      {/* Export Action */}
-      <div className="mt-8 flex justify-center border-t border-stone-200 pt-6">
-        <button 
-          onClick={generateHTML}
-          className="flex items-center gap-2 bg-stone-800 text-white px-6 py-2 rounded font-bold hover:bg-stone-700 transition-colors shadow-lg"
+    <div className="w-full h-full flex flex-col">
+      {/* Action Bar */}
+      <div className="flex justify-center items-center gap-4 py-4 bg-stone-100 border-b border-stone-300 sticky top-0 z-50 shrink-0">
+        <button
+          onClick={handleExportHTML}
+          className="flex items-center gap-2 bg-stone-800 text-white px-6 py-2.5 rounded-lg font-bold hover:bg-stone-700 transition-all shadow-lg hover:shadow-xl hover:scale-105 active:scale-95"
         >
-          <FileCode className="w-5 h-5" /> 导出精美 HTML 角色卡
+          <FileCode className="w-5 h-5" /> 导出 HTML 角色卡
+        </button>
+        <button
+          onClick={handlePrint}
+          className="flex items-center gap-2 bg-red-800 text-white px-6 py-2.5 rounded-lg font-bold hover:bg-red-700 transition-all shadow-lg hover:shadow-xl hover:scale-105 active:scale-95"
+        >
+          <Printer className="w-5 h-5" /> 打印角色卡
         </button>
       </div>
 
+      {/* Preview: iframe renders the exact same HTML as the export */}
+      <div className="flex-1 overflow-auto bg-stone-200">
+        <iframe
+          ref={iframeRef}
+          srcDoc={cardHTML}
+          title="角色卡预览"
+          style={{
+            width: '100%',
+            height: `${iframeHeight}px`,
+            border: 'none',
+            display: 'block',
+          }}
+          sandbox="allow-same-origin"
+        />
+      </div>
     </div>
   );
 };
