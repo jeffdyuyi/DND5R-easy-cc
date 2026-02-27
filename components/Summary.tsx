@@ -2,7 +2,7 @@
 import React, { useMemo, useRef, useEffect, useState } from 'react';
 import { CharacterData } from '../types';
 import { CLASSES as CLASSES_DATA, SPECIES_DB } from '../data';
-import { FileCode, Printer } from 'lucide-react';
+import { FileCode, FileText, Printer } from 'lucide-react';
 import { getModifier, getProficiencyBonus, formatModifier } from '../utils/rules';
 
 interface Props {
@@ -810,6 +810,266 @@ function generateCardHTML(character: CharacterData): string {
 </html>`;
 }
 
+// === Unified Markdown Card Generator ===
+function generateCardMarkdown(character: CharacterData): string {
+  const profBonus = getProficiencyBonus(character.level);
+  const classData = CLASSES_DATA[character.className];
+  const speciesData = SPECIES_DB.find(sp => sp.name === character.race);
+  const ac = calcAC(character);
+  const speed = speciesData?.speed || 30;
+
+  const classString = `${character.className} Lv.${character.level}${character.subclass ? ` · ${character.subclass}` : ''}`;
+
+  // Total ability scores
+  const totalScore = (key: string) => {
+    const base = (character.abilities as any)[key] || 10;
+    const bonus = (character.abilityBonuses as any)?.[key] || 0;
+    const bgBonus = (character.backgroundBonuses as any)?.[key] || 0;
+    return base + bonus + bgBonus;
+  };
+
+  // Saving throw check
+  const isSaveProf = (key: string) => {
+    return classData?.saves.includes(ABILITY_LABELS_CN[key]) || false;
+  };
+
+  // Build skill rows
+  const allSkills: { name: string; abilityKey: string; mod: number; profLevel: number }[] = [];
+  for (const [abilityKey, skills] of Object.entries(SKILLS_BY_ABILITY)) {
+    const abilityMod = getModifier(totalScore(abilityKey));
+    for (const skill of skills) {
+      const level = character.skillMastery?.[skill] || 0;
+      let bonus = 0;
+      if (level === 1) bonus = profBonus;
+      else if (level === 2) bonus = profBonus * 2;
+      allSkills.push({ name: skill, abilityKey, mod: abilityMod + bonus, profLevel: level });
+    }
+  }
+
+  // Build spells info
+  const hasSpellcasting = character.spellcastingAbility && character.spellcastingAbility !== '';
+  const spellsByLevel: Record<string, string[]> = {};
+  if (hasSpellcasting) {
+    const spellKeys = ['cantrips', 'level1', 'level2', 'level3', 'level4', 'level5', 'level6', 'level7', 'level8', 'level9'] as const;
+    const levelLabels = ['戏法', '1环', '2环', '3环', '4环', '5环', '6环', '7环', '8环', '9环'];
+    spellKeys.forEach((key, idx) => {
+      const val = (character.spells as any)?.[key];
+      if (val && typeof val === 'string' && val.trim()) {
+        spellsByLevel[levelLabels[idx]] = val.split(/[,，、]/).map((s: string) => s.trim()).filter(Boolean);
+      }
+    });
+  }
+
+  // Personality fields
+  const personalityTraits = character.personalityTraits || '';
+  const ideals = character.ideals || '';
+  const bonds = character.bonds || '';
+  const flaws = character.flaws || '';
+
+  // Equipment
+  const weapons = character.inventoryWeapons || [];
+  const armor = character.inventoryArmor || [];
+  const gear = character.inventoryGear || [];
+
+  // Class features for current level
+  const features = (classData?.features || []).filter(f => f.level <= character.level).sort((a, b) => a.level - b.level);
+
+  // Subclass features
+  const subclassData = classData?.subclasses?.find(sc => sc.name === character.subclass);
+  const subFeatures = (subclassData?.features || []).filter(f => f.level <= character.level).sort((a, b) => a.level - b.level);
+
+  const lines: string[] = [];
+
+  // ====== HEADER ======
+  lines.push(`# ${character.name || '无名氏'}`);
+  lines.push('');
+  lines.push(`> **${character.race || '种族'}${character.subRace ? ` · ${character.subRace}` : ''} — ${classString}**`);
+  lines.push('>');
+  lines.push(`> **背景** ${character.background || '—'} ｜ **阵营** ${character.alignment || '—'} ｜ **玩家** ${character.playerName || '—'}${character.faith ? ` ｜ **信仰** ${character.faith}` : ''}`);
+  lines.push('');
+  lines.push('---');
+  lines.push('');
+
+  // ====== ABILITY SCORES ======
+  lines.push('## ◆ 属性值 Ability Scores');
+  lines.push('');
+  lines.push('| 属性 | 总值 | 调整值 |');
+  lines.push('| :---: | :---: | :---: |');
+  ORDERED_ABILITIES.forEach(key => {
+    const total = totalScore(key);
+    const mod = getModifier(total);
+    lines.push(`| ${ABILITY_LABELS[key]} | ${total} | ${formatModifier(mod)} |`);
+  });
+  lines.push('');
+
+  // ====== COMBAT BAR ======
+  lines.push('## ◆ 战斗数据 Combat');
+  lines.push('');
+  const equippedArmorName = character.inventoryArmor?.find(a => a.isEquipped)?.name || '无甲';
+  lines.push(`| 护甲等级 | 先攻加值 | 速度 | 生命值上限 | 熟练加值 |`);
+  lines.push(`| :---: | :---: | :---: | :---: | :---: |`);
+  lines.push(`| ${ac}（${equippedArmorName}） | ${formatModifier(getModifier(totalScore('dexterity')))} | ${speed}尺 | ${character.hpMax}（生命骰 ${character.level}${classData?.hitDie || 'd8'}） | +${profBonus} |`);
+  lines.push('');
+
+  // ====== SAVING THROWS ======
+  lines.push('## ◆ 豁免检定 Saving Throws');
+  lines.push('');
+  lines.push('| 属性 | 熟练 | 加值 |');
+  lines.push('| :--- | :---: | :---: |');
+  ORDERED_ABILITIES.forEach(key => {
+    const mod = getModifier(totalScore(key));
+    const prof = isSaveProf(key);
+    const saveVal = mod + (prof ? profBonus : 0);
+    lines.push(`| ${ABILITY_LABELS_CN[key]} | ${prof ? '●' : '○'} | ${formatModifier(saveVal)} |`);
+  });
+  lines.push('');
+
+  // ====== SKILLS ======
+  lines.push('## ◆ 技能检定 Skills');
+  lines.push('');
+  lines.push('| 熟练 | 技能 | 关联属性 | 加值 |');
+  lines.push('| :---: | :--- | :---: | :---: |');
+  const abbrMap: Record<string, string> = { strength: '力', dexterity: '敏', constitution: '体', intelligence: '智', wisdom: '感', charisma: '魅' };
+  allSkills.forEach(s => {
+    const dot = s.profLevel === 2 ? '◆' : s.profLevel === 1 ? '●' : '○';
+    lines.push(`| ${dot} | ${s.name} | ${abbrMap[s.abilityKey]} | ${formatModifier(s.mod)} |`);
+  });
+  lines.push('');
+
+  // ====== PROFICIENCIES & LANGUAGES ======
+  lines.push('## ◆ 熟练与语言');
+  lines.push('');
+  lines.push(`- **武器 & 护甲：** ${classData?.coreTraits?.weaponProficiencies || '—'}${classData?.coreTraits?.armorTraining ? ` / ${classData.coreTraits.armorTraining}` : ''}`);
+  lines.push(`- **工具：** ${character.tools?.map(t => t.name).join('、') || character.toolProficiencies || '—'}`);
+  lines.push(`- **语言：** ${character.languages || '通用语'}`);
+  if (character.originFeat) {
+    lines.push(`- **起源专长：** ${character.originFeat}`);
+  }
+  lines.push('');
+
+  // ====== PERSONALITY ======
+  if (personalityTraits || ideals || bonds || flaws) {
+    lines.push('## ◆ 角色性格 Personality');
+    lines.push('');
+    if (personalityTraits) {
+      lines.push(`**性格特点：** ${personalityTraits}`);
+      lines.push('');
+    }
+    if (ideals) {
+      lines.push(`**理想信念：** ${ideals}`);
+      lines.push('');
+    }
+    if (bonds) {
+      lines.push(`**牵绊羁绊：** ${bonds}`);
+      lines.push('');
+    }
+    if (flaws) {
+      lines.push(`**缺点弱点：** ${flaws}`);
+      lines.push('');
+    }
+  }
+
+  // ====== CLASS FEATURES ======
+  lines.push('## ◆ 职业特性 Features');
+  lines.push('');
+  if (features.length > 0) {
+    features.forEach(f => {
+      lines.push(`- **[Lv.${f.level}]** ${f.name}`);
+    });
+  } else {
+    lines.push('*暂无职业特性*');
+  }
+  lines.push('');
+
+  if (subFeatures.length > 0) {
+    lines.push(`### ${character.subclass || '子职业'} 特性`);
+    lines.push('');
+    subFeatures.forEach(f => {
+      lines.push(`- **[Lv.${f.level}]** ${f.name}`);
+    });
+    lines.push('');
+  }
+
+  // ====== EQUIPMENT ======
+  lines.push('## ◆ 装备清单 Equipment');
+  lines.push('');
+  if (weapons.length > 0 || armor.length > 0 || gear.length > 0) {
+    lines.push('| 物品名称 | 详情 |');
+    lines.push('| :--- | :--- |');
+    weapons.forEach(w => {
+      lines.push(`| ⚔ ${w.name} | ${w.damage || ''} ${w.damageType || ''} |`);
+    });
+    armor.forEach(a => {
+      lines.push(`| 🛡 ${a.name}${a.isEquipped ? ' ✦' : ''} | AC ${a.ac || '—'} |`);
+    });
+    gear.forEach(g => {
+      lines.push(`| 📦 ${g.name}${(g.quantity || 1) > 1 ? ` ×${g.quantity}` : ''} | ${g.cost || ''} |`);
+    });
+  } else {
+    lines.push('*尚未选择装备*');
+  }
+  lines.push('');
+
+  // ====== WEALTH ======
+  const coins: string[] = [];
+  if (character.platinum) coins.push(`铂金 ${character.platinum}`);
+  coins.push(`金币 ${character.gold || 0}`);
+  coins.push(`银币 ${character.silver || 0}`);
+  coins.push(`铜币 ${character.copper || 0}`);
+  lines.push(`**财富：** ${coins.join(' ｜ ')}`);
+  lines.push('');
+
+  // ====== SPELLS ======
+  if (hasSpellcasting && Object.keys(spellsByLevel).length > 0) {
+    lines.push('## ◆ 法术列表 Spells');
+    lines.push('');
+    lines.push(`**施法属性：** ${character.spellcastingAbility || '—'} ｜ **法术豁免DC：** ${character.spellSaveDC || '—'} ｜ **法术攻击加值：** ${character.spellAttackBonus ? formatModifier(character.spellAttackBonus) : '—'}`);
+    lines.push('');
+    Object.entries(spellsByLevel).forEach(([level, spells]) => {
+      lines.push(`- **${level}：** ${spells.join('、')}`);
+    });
+    lines.push('');
+  }
+
+  // ====== BACKSTORY ======
+  if (character.backstory) {
+    lines.push('## ◆ 背景故事 Backstory');
+    lines.push('');
+    lines.push(`*${character.backstory}*`);
+    lines.push('');
+  }
+
+  // ====== APPEARANCE ======
+  if (character.hair || character.skin || character.eyes || character.height || character.age) {
+    lines.push('## ◆ 外貌特征 Appearance');
+    lines.push('');
+    const appearanceParts: string[] = [];
+    if (character.gender) appearanceParts.push(`**性别：** ${character.gender}`);
+    if (character.age) appearanceParts.push(`**年龄：** ${character.age}`);
+    if (character.height) appearanceParts.push(`**身高：** ${character.height}`);
+    if (character.weight) appearanceParts.push(`**体重：** ${character.weight}`);
+    if (character.hair) appearanceParts.push(`**发色：** ${character.hair}`);
+    if (character.skin) appearanceParts.push(`**肤色：** ${character.skin}`);
+    if (character.eyes) appearanceParts.push(`**瞳色：** ${character.eyes}`);
+    if (appearanceParts.length > 0) {
+      lines.push(appearanceParts.join(' ｜ '));
+      lines.push('');
+    }
+    if (character.appearance) {
+      lines.push(`**描述：** ${character.appearance}`);
+      lines.push('');
+    }
+  }
+
+  // ====== FOOTER ======
+  lines.push('---');
+  lines.push('');
+  lines.push(`> **不咕鸟** · DND 5R CHARACTER SHEET · ${character.name || '无名氏'}`);
+  lines.push('');
+
+  return lines.join('\n');
+}
+
 // === React Component ===
 const Summary: React.FC<Props> = ({ character }) => {
   const cardHTML = useMemo(() => generateCardHTML(character), [character]);
@@ -848,6 +1108,19 @@ const Summary: React.FC<Props> = ({ character }) => {
     URL.revokeObjectURL(url);
   };
 
+  const handleExportMarkdown = () => {
+    const md = generateCardMarkdown(character);
+    const blob = new Blob([md], { type: 'text/markdown; charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `${character.name || '角色卡'}_character_sheet.md`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
   const handlePrint = () => {
     const printWindow = window.open('', '_blank');
     if (printWindow) {
@@ -866,6 +1139,12 @@ const Summary: React.FC<Props> = ({ character }) => {
           className="flex items-center gap-2 bg-stone-800 text-white px-6 py-2.5 rounded-lg font-bold hover:bg-stone-700 transition-all shadow-lg hover:shadow-xl hover:scale-105 active:scale-95"
         >
           <FileCode className="w-5 h-5" /> 导出 HTML 角色卡
+        </button>
+        <button
+          onClick={handleExportMarkdown}
+          className="flex items-center gap-2 bg-emerald-800 text-white px-6 py-2.5 rounded-lg font-bold hover:bg-emerald-700 transition-all shadow-lg hover:shadow-xl hover:scale-105 active:scale-95"
+        >
+          <FileText className="w-5 h-5" /> 导出 Markdown 文本
         </button>
         <button
           onClick={handlePrint}
