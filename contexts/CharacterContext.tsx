@@ -110,9 +110,6 @@ export const INITIAL_CHARACTER: CharacterData = {
         enemies: [],
         other: [],
     },
-
-    // Modular Selection State
-    selections: {},
 };
 
 interface CharacterContextType {
