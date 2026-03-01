@@ -110,6 +110,7 @@ export const INITIAL_CHARACTER: CharacterData = {
         enemies: [],
         other: [],
     },
+    selections: {},
 };
 
 interface CharacterContextType {

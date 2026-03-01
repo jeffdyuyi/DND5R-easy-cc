@@ -144,6 +144,27 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
     updateCharacter({ selections: newSelections });
   };
 
+  const handleClassChange = (className: string) => {
+    let spellAbility = character.spellcastingAbility || '智力';
+    if (className === '法师') spellAbility = '智力';
+    else if (className === '术士' || className === '魔契师' || className === '圣武士' || className === '吟游诗人') spellAbility = '魅力';
+    else if (className === '游侠' || className === '德鲁伊' || className === '牧师') spellAbility = '感知';
+
+    updateCharacter({
+      className,
+      subclass: '',
+      skillMastery: {},
+      spellcastingAbility: spellAbility
+    });
+  };
+
+  const handleSubclassChange = (subclass: string) => {
+    const updates: Partial<CharacterData> = { subclass };
+    if (subclass === '奥法骑士' || subclass === '诡术师') {
+      updates.spellcastingAbility = '智力';
+    }
+    updateCharacter(updates);
+  };
 
 
   // === LEFT PANEL: Class Selection ===
@@ -171,7 +192,7 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
         {CLASS_DB.map(cls => (
           <button
             key={cls.id}
-            onClick={() => updateCharacter({ className: cls.name, subclass: '', skillMastery: {} })}
+            onClick={() => handleClassChange(cls.name)}
             className={`
               p-3 rounded-lg border-2 flex flex-col items-center gap-2 transition-all
               ${character.className === cls.name
@@ -264,7 +285,7 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
               <p className="text-sm text-stone-600 mb-3">选择你的专精道途：</p>
               <select
                 value={character.subclass}
-                onChange={e => updateCharacter({ subclass: e.target.value })}
+                onChange={e => handleSubclassChange(e.target.value)}
                 className="w-full p-3 border border-stone-300 rounded-lg font-medium"
               >
                 <option value="">-- 请选择子职业 --</option>
