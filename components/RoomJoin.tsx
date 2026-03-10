@@ -9,13 +9,14 @@ export const RoomJoin: React.FC = () => {
         clientState, clientIsConnected, connectToRoom, disconnectFromRoom,
         roomId, error, clientRemoteCharacter, clientSharedImages
     } = useRoom();
-    const { characters } = useCharacters();
+    const { characters, updateCharacter, importCharacters } = useCharacters();
 
     const [inputRoomId, setInputRoomId] = useState('');
     const [selectedCharId, setSelectedCharId] = useState('');
 
     const [showDiceRoller, setShowDiceRoller] = useState(false);
     const [showImageViewer, setShowImageViewer] = useState(false);
+    const [showSaveConfirm, setShowSaveConfirm] = useState(false);
 
     // Auto open image viewer when a new image arrives
     useEffect(() => {
@@ -43,6 +44,22 @@ export const RoomJoin: React.FC = () => {
         connectToRoom(inputRoomId.trim(), char);
     };
 
+    const handleLeaveRoom = () => {
+        setShowSaveConfirm(true);
+    };
+
+    const finalizeLeave = (saveMode: 'update' | 'new' | 'none') => {
+        if (clientRemoteCharacter) {
+            if (saveMode === 'update') {
+                updateCharacter(selectedCharId, clientRemoteCharacter);
+            } else if (saveMode === 'new') {
+                importCharacters(clientRemoteCharacter);
+            }
+        }
+        disconnectFromRoom();
+        setShowSaveConfirm(false);
+    };
+
     if (clientState.status === 'WAITING_APPROVAL') {
         return (
             <div className="p-8 max-w-lg mx-auto mt-20 bg-white rounded-xl shadow-md border border-orange-200">
@@ -67,6 +84,46 @@ export const RoomJoin: React.FC = () => {
             <div className="p-8 max-w-lg mx-auto mt-10 bg-white rounded-xl shadow-md border border-green-200 relative z-10">
                 {showDiceRoller && <DiceRoller onClose={() => setShowDiceRoller(false)} />}
                 {showImageViewer && <ImageViewer onClose={() => setShowImageViewer(false)} />}
+
+                {/* Save Confirmation Modal */}
+                {showSaveConfirm && (
+                    <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-[100] flex items-center justify-center p-4">
+                        <div className="bg-white rounded-xl max-w-sm w-full p-6 shadow-2xl border border-stone-200 animate-in fade-in zoom-in duration-200">
+                            <h3 className="text-xl font-bold text-stone-800 mb-2 flex items-center gap-2">
+                                🚪 离开房间
+                            </h3>
+                            <p className="text-stone-600 mb-6">
+                                主持人可能已经修改了你的角色卡。离开前是否要保存最新的角色状态？
+                            </p>
+                            <div className="space-y-3">
+                                <button
+                                    onClick={() => finalizeLeave('update')}
+                                    className="w-full bg-dndRed hover:bg-red-800 text-white font-bold py-3 rounded-lg transition-colors shadow-sm"
+                                >
+                                    💾 更新现有角色卡
+                                </button>
+                                <button
+                                    onClick={() => finalizeLeave('new')}
+                                    className="w-full bg-stone-800 hover:bg-stone-900 text-white font-bold py-3 rounded-lg transition-colors shadow-sm"
+                                >
+                                    ✨ 另存为新角色卡
+                                </button>
+                                <button
+                                    onClick={() => finalizeLeave('none')}
+                                    className="w-full bg-stone-100 hover:bg-stone-200 text-stone-600 font-bold py-3 rounded-lg transition-colors"
+                                >
+                                    ❌ 不保存并离开
+                                </button>
+                                <button
+                                    onClick={() => setShowSaveConfirm(false)}
+                                    className="w-full text-stone-400 text-sm hover:underline py-2"
+                                >
+                                    返回房间
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                )}
 
                 <div className="flex items-center gap-3 mb-6 border-b border-stone-200 pb-4">
                     <div className="w-4 h-4 rounded-full bg-green-500 animate-pulse"></div>
@@ -123,7 +180,7 @@ export const RoomJoin: React.FC = () => {
                     </div>
 
                     <button
-                        onClick={disconnectFromRoom}
+                        onClick={handleLeaveRoom}
                         className="w-full bg-stone-200 hover:bg-stone-300 text-stone-800 font-bold py-3 mt-4 rounded-lg transition-colors border border-stone-300"
                     >
                         🚪 离开房间

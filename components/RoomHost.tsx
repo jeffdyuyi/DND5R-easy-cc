@@ -3,13 +3,17 @@ import { Copy, Users, Check, X, Shield, RefreshCw } from 'lucide-react';
 import { useRoom } from '../contexts/RoomContext';
 import { DiceRoller } from './DiceRoller';
 import { ImageViewer } from './ImageViewer';
+import CharacterWizard from './CharacterWizard';
 
 export const RoomHost: React.FC = () => {
     const {
         roomId, createRoom, error, closeRoom,
         hostPendingPlayers, hostConnectedPlayers,
-        acceptPlayer, rejectPlayer, kickPlayer
+        acceptPlayer, rejectPlayer, kickPlayer,
+        hostUpdateCharacter
     } = useRoom();
+
+    const [editingPlayerId, setEditingPlayerId] = useState<string | null>(null);
 
     // Fallback UI states
     const [isCreating, setIsCreating] = useState(false);
@@ -174,9 +178,12 @@ export const RoomHost: React.FC = () => {
                                         </div>
                                     </div>
                                     <div className="flex gap-2">
-                                        {/* <button className="px-3 py-1 bg-stone-100 hover:bg-stone-200 border border-stone-300 rounded font-bold text-sm text-stone-700 transition-colors">
-                                            📝 编辑
-                                        </button> */}
+                                        <button
+                                            onClick={() => setEditingPlayerId(p.peerId)}
+                                            className="px-3 py-1 bg-stone-100 hover:bg-stone-200 border border-stone-300 rounded font-bold text-sm text-stone-700 transition-colors flex items-center gap-1"
+                                        >
+                                            <Shield className="w-3 h-3" /> 修改数值/发放道具
+                                        </button>
                                         <button
                                             onClick={() => kickPlayer(p.peerId)}
                                             className="px-3 py-1 bg-red-50 hover:bg-red-100 border border-red-200 rounded font-bold text-sm text-red-600 transition-colors"
@@ -189,6 +196,41 @@ export const RoomHost: React.FC = () => {
                         </div>
                     </div>
                 </div>
+
+                {/* Character Edit Modal */}
+                {editingPlayerId && (
+                    <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100] flex items-center justify-center p-4">
+                        <div className="bg-white rounded-2xl w-full max-w-5xl h-[90vh] flex flex-col shadow-2xl border border-stone-300 relative overflow-hidden">
+                            <div className="p-4 border-b border-stone-200 flex justify-between items-center bg-stone-50">
+                                <h3 className="text-xl font-bold text-stone-800">
+                                    正在修改玩家角色卡: <span className="text-dndRed">{hostConnectedPlayers.find(p => p.peerId === editingPlayerId)?.character.name || '未知'}</span>
+                                </h3>
+                                <button
+                                    onClick={() => setEditingPlayerId(null)}
+                                    className="p-2 hover:bg-stone-200 rounded-full transition-colors"
+                                >
+                                    <X className="w-6 h-6 text-stone-500" />
+                                </button>
+                            </div>
+                            <div className="flex-1 overflow-auto">
+                                {(() => {
+                                    const p = hostConnectedPlayers.find(cp => cp.peerId === editingPlayerId);
+                                    if (!p) return null;
+                                    return (
+                                        <CharacterWizard
+                                            character={p.character}
+                                            updateCharacter={(updates) => hostUpdateCharacter(p.peerId, { ...p.character, ...updates })}
+                                            onComplete={() => setEditingPlayerId(null)}
+                                        />
+                                    );
+                                })()}
+                            </div>
+                            <div className="p-3 bg-red-50 border-t border-red-100 text-center text-xs text-red-700 font-bold">
+                                ⚠️ 警告: GM 的所有改动将实时同步至玩家端，请谨慎操作。
+                            </div>
+                        </div>
+                    </div>
+                )}
 
                 {/* Sidebar: GM Tools */}
                 <div className="space-y-6">
