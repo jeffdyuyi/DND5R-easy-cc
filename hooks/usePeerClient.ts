@@ -19,10 +19,23 @@ export const usePeerClient = () => {
     const [diceHistory, setDiceHistory] = useState<DiceRollPayload[]>([]);
     const [sharedImages, setSharedImages] = useState<ImageSharePayload[]>([]);
 
+    const handleDisconnect = useCallback((reason?: string) => {
+        setIsConnected(false);
+        setRoomState({ status: 'DISCONNECTED' });
+        if (reason) setError(reason);
+        setRoomId(null);
+        setConnection(null);
+        setPeer(currentPeer => {
+            if (currentPeer) currentPeer.destroy();
+            return null;
+        });
+    }, []);
+
     const connectToRoom = useCallback((targetRoomId: string, character: CharacterData) => {
-        if (peer) {
-            peer.destroy();
-        }
+        setPeer(currentPeer => {
+            if (currentPeer) currentPeer.destroy();
+            return null;
+        });
 
         setRoomState({ status: 'CONNECTING' });
         setError(null);
@@ -102,19 +115,7 @@ export const usePeerClient = () => {
             setRoomState({ status: 'DISCONNECTED' });
         });
 
-    }, [peer]);
-
-    const handleDisconnect = (reason?: string) => {
-        setIsConnected(false);
-        setRoomState({ status: 'DISCONNECTED' });
-        if (reason) setError(reason);
-        setRoomId(null);
-        setConnection(null);
-        if (peer) {
-            peer.destroy();
-            setPeer(null);
-        }
-    };
+    }, [handleDisconnect]);
 
     const disconnect = useCallback(() => {
         if (connection && connection.open) {

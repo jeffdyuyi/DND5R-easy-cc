@@ -57,10 +57,60 @@ export const usePeerHost = () => {
         }
     }, []);
 
+    const handleJoinRequest = useCallback((conn: DataConnection, payload: { character: CharacterData }) => {
+        const char = payload.character;
+        setPendingPlayers(prev => {
+            const filtered = prev.filter(p => p.peerId !== conn.peer);
+            return [...filtered, {
+                peerId: conn.peer,
+                playerName: char.name || 'Unknown',
+                character: char,
+                connection: conn
+            }];
+        });
+        connectionsRef.current.set(conn.peer, conn);
+    }, []);
+
+    const handlePlayerLeft = useCallback((peerId: string) => {
+        setPendingPlayers(prev => prev.filter(p => p.peerId !== peerId));
+        connectionsRef.current.delete(peerId);
+
+        setConnectedPlayers(current => {
+            const newList = current.filter(p => p.peerId !== peerId);
+            const listPayload = newList.map(p => ({
+                peerId: p.peerId,
+                name: p.playerName,
+                characterName: p.character.name,
+                class: p.character.className,
+                level: p.character.level,
+                avatarDataUrl: p.character.avatarDataUrl
+            }));
+
+            const message: RoomMessage = {
+                type: 'PLAYER_LIST',
+                senderId: 'HOST',
+                senderName: 'GM',
+                timestamp: Date.now(),
+                payload: listPayload
+            };
+
+            newList.forEach(p => {
+                if (p.connection.open) p.connection.send(message);
+            });
+            return newList;
+        });
+    }, []);
+
+    const handleDiceRoll = useCallback((payload: DiceRollPayload) => {
+        setDiceHistory(prev => [payload, ...prev].slice(0, 50));
+        broadcast('DICE_ROLL', payload);
+    }, [broadcast]);
+
     const createRoom = useCallback((customId?: string) => {
-        if (peer) {
-            peer.destroy();
-        }
+        setPeer(currentPeer => {
+            if (currentPeer) currentPeer.destroy();
+            return null;
+        });
 
         const newRoomId = customId || `dnd5r-${Math.floor(Math.random() * 100000).toString().padStart(5, '0')}`;
         const newPeer = new Peer(newRoomId, {
@@ -107,70 +157,46 @@ export const usePeerHost = () => {
                 handlePlayerLeft(conn.peer);
             });
         });
-    }, [peer]);
-
-    const handleJoinRequest = (conn: DataConnection, payload: { character: CharacterData }) => {
-        const char = payload.character;
-        setPendingPlayers(prev => {
-            // Remove existing request from same peer if any
-            const filtered = prev.filter(p => p.peerId !== conn.peer);
-            return [...filtered, {
-                peerId: conn.peer,
-                playerName: char.name || 'Unknown',
-                character: char,
-                connection: conn
-            }];
-        });
-        connectionsRef.current.set(conn.peer, conn);
-    };
-
-    const handlePlayerLeft = (peerId: string) => {
-        setPendingPlayers(prev => prev.filter(p => p.peerId !== peerId));
-        setConnectedPlayers(prev => prev.filter(p => p.peerId !== peerId));
-        connectionsRef.current.delete(peerId);
-
-        // Broadcast updated player list
-        setConnectedPlayers(current => {
-            const newList = current.filter(p => p.peerId !== peerId);
-            const listPayload = newList.map(p => ({
-                peerId: p.peerId,
-                name: p.playerName,
-                characterName: p.character.name,
-                class: p.character.className,
-                level: p.character.level,
-                avatarDataUrl: p.character.avatarDataUrl
-            }));
-
-            const message: RoomMessage = {
-                type: 'PLAYER_LIST',
-                senderId: 'HOST',
-                senderName: 'GM',
-                timestamp: Date.now(),
-                payload: listPayload
-            };
-
-            newList.forEach(p => {
-                if (p.connection.open) p.connection.send(message);
-            });
-            return newList;
-        });
-    };
+    }, [handleJoinRequest, handlePlayerLeft, handleDiceRoll]);
 
     const acceptPlayer = useCallback((peerId: string) => {
+        let acceptedPlayer: PendingPlayer | undefined;
         setPendingPlayers(prev => {
-            const player = prev.find(p => p.peerId === peerId);
-            if (player) {
-                setConnectedPlayers(curr => [...curr, player]);
-                sendTo(peerId, 'JOIN_ACCEPTED', { roomId });
-
-                // Need to defer PLAYER_LIST broadcast until state updates
-                setTimeout(() => {
-                    broadcastPlayerList([...connectedPlayers, player]);
-                }, 100);
-            }
+            acceptedPlayer = prev.find(p => p.peerId === peerId);
             return prev.filter(p => p.peerId !== peerId);
         });
-    }, [roomId, sendTo, connectedPlayers]);
+
+        if (!acceptedPlayer) return;
+
+        setConnectedPlayers(curr => {
+            const nextList = [...curr, acceptedPlayer!];
+            sendTo(peerId, 'JOIN_ACCEPTED', { roomId });
+
+            setTimeout(() => {
+                const listPayload = nextList.map(p => ({
+                    peerId: p.peerId,
+                    name: p.playerName,
+                    characterName: p.character.name,
+                    class: p.character.className,
+                    level: p.character.level,
+                    avatarDataUrl: p.character.avatarDataUrl
+                }));
+
+                const message: RoomMessage = {
+                    type: 'PLAYER_LIST',
+                    senderId: 'HOST',
+                    senderName: 'GM',
+                    timestamp: Date.now(),
+                    payload: listPayload
+                };
+
+                nextList.forEach(p => {
+                    if (p.connection.open) p.connection.send(message);
+                });
+            }, 100);
+            return nextList;
+        });
+    }, [roomId, sendTo]);
 
     const rejectPlayer = useCallback((peerId: string) => {
         sendTo(peerId, 'JOIN_REJECTED', { reason: '主持人拒绝了您的加入请求。' });
@@ -183,29 +209,6 @@ export const usePeerHost = () => {
         setPendingPlayers(prev => prev.filter(p => p.peerId !== peerId));
     }, [sendTo]);
 
-    const broadcastPlayerList = useCallback((players: ConnectedPlayer[]) => {
-        const payload = players.map(p => ({
-            peerId: p.peerId,
-            name: p.playerName,
-            characterName: p.character.name,
-            class: p.character.className,
-            level: p.character.level,
-            avatarDataUrl: p.character.avatarDataUrl
-        }));
-
-        const message: RoomMessage = {
-            type: 'PLAYER_LIST',
-            senderId: 'HOST',
-            senderName: 'GM',
-            timestamp: Date.now(),
-            payload
-        };
-
-        players.forEach(p => {
-            if (p.connection.open) p.connection.send(message);
-        });
-    }, []);
-
     const updatePlayerCharacter = useCallback((peerId: string, updatedCharacter: CharacterData) => {
         setConnectedPlayers(prev => prev.map(p => {
             if (p.peerId === peerId) {
@@ -216,11 +219,6 @@ export const usePeerHost = () => {
         sendTo(peerId, 'CHARACTER_UPDATE', { character: updatedCharacter });
     }, [sendTo]);
 
-    const handleDiceRoll = useCallback((payload: DiceRollPayload) => {
-        setDiceHistory(prev => [payload, ...prev].slice(0, 50));
-        broadcast('DICE_ROLL', payload);
-    }, [broadcast]);
-
     const kickPlayer = useCallback((peerId: string) => {
         sendTo(peerId, 'ROOM_CLOSED', { reason: '你已被移出房间。' });
         setTimeout(() => {
@@ -228,7 +226,7 @@ export const usePeerHost = () => {
             if (conn) conn.close();
             handlePlayerLeft(peerId);
         }, 500);
-    }, [sendTo]);
+    }, [sendTo, handlePlayerLeft]);
 
     const closeRoom = useCallback(() => {
         broadcast('ROOM_CLOSED', { reason: '房间已关闭' });
