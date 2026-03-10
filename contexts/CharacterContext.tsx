@@ -6,6 +6,7 @@ import { validateCharacterData } from '../utils/rules';
 // Default Character Template
 export const INITIAL_CHARACTER: CharacterData = {
     id: 'char-1',
+    avatarDataUrl: '',
     name: '未命名角色',
     playerName: '',
     level: 1,

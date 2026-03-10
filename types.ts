@@ -215,6 +215,7 @@ export interface ItemItem extends BaseLibraryItem {
 
 export interface CharacterData {
   id: string; // Unique Identifier for multiple characters
+  avatarDataUrl: string; // Base64 头像图片，空字串代表无头像
 
   // Core Identity
   name: string;
