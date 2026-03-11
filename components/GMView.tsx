@@ -325,7 +325,7 @@ export const GMView: React.FC = () => {
     };
 
     return (
-        <div className="flex w-full bg-stone-100 font-serif h-full">
+        <div className="flex w-full bg-stone-100 text-stone-900 font-serif h-full">
             <div className="md:hidden flex-none absolute top-0 left-0 w-full bg-stone-900 text-white z-40 p-4 flex justify-between items-center shadow-md">
                 <div className="flex items-center gap-2 font-bold">
                     <Feather className="w-5 h-5 text-stone-400" />

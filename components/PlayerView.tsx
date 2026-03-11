@@ -5,7 +5,6 @@ import { CardLibrary } from './CardLibrary';
 import CharacterWizard from './CharacterWizard';
 import SpellbookManager from './TabSpells';
 import { RoomJoin } from './RoomJoin';
-import { WelcomeScreen } from './common/WelcomeScreen';
 
 import { useLibrary } from '../contexts/LibraryContext';
 import { useCharacters } from '../contexts/CharacterContext';
@@ -13,7 +12,6 @@ import { BaseLibraryItem } from '../types';
 import { FileUp, FileDown, Feather, Menu } from 'lucide-react';
 
 export const PlayerView: React.FC = () => {
-    const [hasEntered, setHasEntered] = useState(false);
     const [activeModule, setActiveModule] = useState('sheet');
     const [isWizardActive, setIsWizardActive] = useState(false);
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -54,10 +52,6 @@ export const PlayerView: React.FC = () => {
         source: '第三方/原创',
         tags: [c.className, c.race]
     }));
-
-    if (!hasEntered) {
-        return <WelcomeScreen onEnter={() => setHasEntered(true)} />;
-    }
 
     if (isWizardActive && activeCharacter) {
         return (
@@ -143,7 +137,7 @@ export const PlayerView: React.FC = () => {
     };
 
     return (
-        <div className="flex w-full bg-stone-100 font-serif h-full">
+        <div className="flex w-full bg-stone-100 text-stone-900 font-serif h-full">
             <div className="md:hidden flex-none absolute top-0 left-0 w-full bg-stone-900 text-white z-40 p-4 flex justify-between items-center shadow-md">
                 <div className="flex items-center gap-2 font-bold">
                     <Feather className="w-5 h-5 text-dndRed" />

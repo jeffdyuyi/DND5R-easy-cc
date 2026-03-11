@@ -114,17 +114,25 @@ export const usePeerHost = () => {
 
         const newRoomId = customId || `dnd5r-${Math.floor(Math.random() * 100000).toString().padStart(5, '0')}`;
         const newPeer = new Peer(newRoomId, {
-            debug: 2
+            debug: 1,
+            // You can specify secondary STUN/TURN servers here if needed, but defaults are usually okay
         });
 
+        const timeoutId = setTimeout(() => {
+            setError('连接中央连线服务器超时。可能是由于网络受限，请稍后重试。');
+            newPeer.destroy();
+        }, 12000);
+
         newPeer.on('open', (id) => {
+            clearTimeout(timeoutId);
             setRoomId(id);
             setPeer(newPeer);
             setError(null);
         });
 
         newPeer.on('error', (err) => {
-            setError(err.message);
+            clearTimeout(timeoutId);
+            setError(`部分连接异常: ${err.message}`);
             console.error('Peer error:', err);
         });
 
