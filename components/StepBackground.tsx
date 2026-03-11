@@ -81,13 +81,19 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
     useEffect(() => {
         if (selectedBackground) {
             const newSkills = { ...character.skillMastery };
-            selectedBackground.skills.forEach((s: string) => newSkills[s] = 1);
+            const backgroundSkills = [...(selectedBackground.skills || []), ...(selectedBackground.extraSkills || [])];
+            backgroundSkills.forEach((s: string) => newSkills[s] = 1);
+
+            const allTools = [
+                selectedBackground.tool,
+                ...(selectedBackground.extraTools || [])
+            ].filter(Boolean).join('、');
 
             if (character.originFeat !== selectedBackground.feat) {
                 updateCharacter({
                     skillMastery: newSkills,
                     originFeat: selectedBackground.feat,
-                    toolProficiencies: selectedBackground.tool || ''
+                    toolProficiencies: allTools
                 });
             }
             // Reset ASI selections
@@ -344,7 +350,9 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
                             <Wrench className="w-4 h-4 text-stone-400" />
                             <span className="text-sm text-stone-600">工具熟练</span>
                         </div>
-                        <span className="font-medium text-stone-800">{selectedBackground.tool || '无'}</span>
+                        <span className="font-medium text-stone-800">
+                            {[selectedBackground.tool, ...(selectedBackground.extraTools || [])].filter(Boolean).join('、') || '无'}
+                        </span>
                     </div>
                     <div className="flex items-center justify-between py-2">
                         <div className="flex items-center gap-2">
@@ -358,11 +366,28 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
 
             {/* Equipment */}
             <FeatureAccordion title="起始装备" isComplete>
-                <ul className="space-y-1">
-                    {selectedBackground.equipment.map((eq: string, idx: number) => (
-                        <li key={idx} className="text-sm text-stone-600">{eq}</li>
-                    ))}
-                </ul>
+                <div className="space-y-4">
+                    {selectedBackground.equipment?.length > 0 && (
+                        <ul className="space-y-1">
+                            {selectedBackground.equipment.map((eq: string, idx: number) => (
+                                <li key={idx} className="text-sm text-stone-600 flex items-center gap-2">
+                                    <div className="w-1 h-1 bg-stone-400 rounded-full" />
+                                    {eq}
+                                </li>
+                            ))}
+                        </ul>
+                    )}
+                    {(selectedBackground.extraEquipment || []).length > 0 && (
+                        <div className="pt-2 border-t border-dashed border-stone-200">
+                            <p className="text-xs font-bold text-stone-400 uppercase mb-2">额外/可选装备</p>
+                            <ul className="space-y-1">
+                                {(selectedBackground.extraEquipment || []).map((eq: string, idx: number) => (
+                                    <li key={idx} className="text-sm text-stone-500 italic">{eq}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
+                </div>
             </FeatureAccordion>
         </div>
     ) : (

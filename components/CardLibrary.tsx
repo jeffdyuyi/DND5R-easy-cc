@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { BaseLibraryItem } from '../types';
-import { Plus, Search, PenTool, CheckCircle, Trash2, Edit2 } from 'lucide-react';
+import { Plus, Search, PenTool, CheckCircle, Trash2, Edit2, Zap, Scale, Star } from 'lucide-react';
 
 interface Props<T extends BaseLibraryItem> {
    title: string;
@@ -277,11 +277,55 @@ export function CardLibrary<T extends BaseLibraryItem>({
                         </span>
                      </div>
 
-                     {/* Card Body (Space saving, no description) */}
-                     <div className="flex-grow p-4 bg-stone-50 relative overflow-hidden flex flex-col items-center justify-center">
-                        {/* Background Watermark - Updated to Author Brand */}
+                     {/* Card Body - Enriched with metadata */}
+                     <div className="flex-grow p-4 bg-stone-50 relative overflow-hidden flex flex-col justify-start">
+                        {/* Background Watermark */}
                         <div className={`absolute -bottom-4 -right-4 text-5xl opacity-[0.05] pointer-events-none select-none font-serif font-black rotate-12 whitespace-nowrap ${themeClasses.text}`}>
                            不咕鸟
+                        </div>
+
+                        <div className="relative z-10 space-y-2">
+                           {/* Species Specific */}
+                           {itemTypeLabel === '种族' && (item as any).speed && (
+                              <div className="flex flex-wrap gap-3">
+                                 <div className="flex items-center gap-1.5 text-stone-600 bg-white/60 px-2 py-1 rounded-md border border-stone-200">
+                                    <Zap className="w-3.5 h-3.5 text-amber-500" />
+                                    <span className="text-[10px] font-bold">{(item as any).speed} 尺</span>
+                                 </div>
+                                 <div className="flex items-center gap-1.5 text-stone-600 bg-white/60 px-2 py-1 rounded-md border border-stone-200">
+                                    <Scale className="w-3.5 h-3.5 text-blue-500" />
+                                    <span className="text-[10px] font-bold">体型: {(item as any).size}</span>
+                                 </div>
+                              </div>
+                           )}
+
+                           {/* Background Specific */}
+                           {itemTypeLabel === '背景' && (item as any).abilityScores && (
+                              <div className="flex flex-wrap gap-1.5">
+                                 {((item as any).abilityScores || []).map((score: string) => (
+                                    <div key={score} className="px-2 py-0.5 bg-dndRed/5 border border-dndRed/20 text-dndRed rounded text-[9px] font-black uppercase tracking-tighter">
+                                       {score}
+                                    </div>
+                                 ))}
+                              </div>
+                           )}
+
+                           {/* Feat Specific */}
+                           {itemTypeLabel === '专长' && (item as any).category && (
+                              <div className="flex items-center gap-1.5 text-stone-600">
+                                 <Star className="w-3.5 h-3.5 text-purple-500" />
+                                 <span className="text-[11px] font-black text-purple-700 uppercase tracking-wide">
+                                    {(item as any).category}
+                                 </span>
+                              </div>
+                           )}
+
+                           {/* Short description - hidden for species */}
+                           {itemTypeLabel !== '种族' && item.description && (
+                              <p className="text-[10px] text-stone-500 line-clamp-2 leading-relaxed italic">
+                                 {item.description}
+                              </p>
+                           )}
                         </div>
                      </div>
 

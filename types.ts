@@ -71,7 +71,7 @@ export interface SpeciesTrait {
 export interface SpeciesItem extends BaseLibraryItem {
   speed: number;
   size: string;
-  darkvision: boolean;
+  darkvision: string; // Changed from boolean to string (e.g., "60 尺")
   traits: SpeciesTrait[];
   subraces?: { // Grouping for UI
     label: string;
@@ -83,9 +83,12 @@ export interface BackgroundItem extends BaseLibraryItem {
   abilityScores: string[]; // 推荐属性
   feat: string; // 起源专长
   featSpellList?: '牧师' | '德鲁伊' | '法师'; // 魔法学徒锁定的法术列表
-  skills: string[];
-  tool: string;
-  equipment: string[];
+  skills: string[]; // Structured skill names
+  extraSkills?: string[]; // Custom skill names
+  tool: string; // Structured tool name
+  extraTools?: string[]; // Custom tool names
+  equipment: string[]; // Structured item names
+  extraEquipment?: string[]; // Custom text-based equipment
   choices?: FeatureChoice[]; // New: Modular choices for Custom Backgrounds
 }
 

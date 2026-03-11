@@ -22,12 +22,32 @@ const StepSpecies: React.FC<Props> = ({ character, updateCharacter }) => {
         updateCharacter({ selections: newSelections });
     };
 
-    // Auto-reset subrace if race changes  
+    // Update character skills/tools based on traits
     useEffect(() => {
-        if (selectedSpecies && !selectedSpecies.subraces && character.subRace) {
-            updateCharacter({ subRace: '' });
+        if (selectedSpecies) {
+            const newSkills = { ...character.skillMastery };
+            let skillsAdded = false;
+
+            selectedSpecies.traits.forEach(trait => {
+                if (trait.grants?.skills) {
+                    trait.grants.skills.forEach(s => {
+                        if (newSkills[s] !== 1) {
+                            newSkills[s] = 1;
+                            skillsAdded = true;
+                        }
+                    });
+                }
+            });
+
+            if (skillsAdded) {
+                updateCharacter({ skillMastery: newSkills });
+            }
+
+            if (!selectedSpecies.subraces && character.subRace) {
+                updateCharacter({ subRace: '' });
+            }
         }
-    }, [character.race]);
+    }, [character.race, selectedSpecies]);
 
     // Check completion
     const variantComplete = !selectedSpecies?.subraces || !!character.subRace;
@@ -93,8 +113,8 @@ const StepSpecies: React.FC<Props> = ({ character, updateCharacter }) => {
                 </div>
                 <div className="bg-stone-50 p-3 rounded-lg border border-stone-200 text-center">
                     <Eye className="w-5 h-5 mx-auto mb-1 text-stone-400" />
-                    <div className="text-xs text-stone-500 uppercase font-bold">黑暗视觉</div>
-                    <div className="text-lg font-bold text-stone-800">{selectedSpecies.darkvision ? '有' : '无'}</div>
+                    <div className="text-xs text-stone-500 uppercase font-bold">视觉</div>
+                    <div className="text-lg font-bold text-stone-800">{selectedSpecies.darkvision || '普通'}</div>
                 </div>
             </div>
 

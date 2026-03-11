@@ -45,6 +45,12 @@ export const MarkdownTextarea = ({ value, onChange, className, placeholder }: an
    );
 };
 
+// --- Constants ---
+const ALL_SKILLS = [
+   '杂技', '驯兽', '奥秘', '运动', '欺瞒', '历史', '洞悉', '威吓', '调查',
+   '医药', '自然', '察觉', '表演', '游说', '宗教', '巧手', '隐匿', '求生'
+];
+
 // --- Helper for Features List Editing ---
 const FeatureListEditor = ({
    features,
@@ -378,30 +384,42 @@ export const BackgroundEditor = ({
       });
    };
 
+   const handleSkillToggle = (skill: string) => {
+      setItem(prev => {
+         if (!prev) return null;
+         const current = prev.skills || [];
+         if (current.includes(skill)) {
+            return { ...prev, skills: current.filter(s => s !== skill) };
+         } else {
+            return { ...prev, skills: [...current, skill] };
+         }
+      });
+   };
+
    return (
       <div className="space-y-6">
          {/* Background Description */}
          <div className="bg-white p-4 rounded border border-stone-300 space-y-2">
-            <h4 className="font-bold text-dndRed mb-2">背景描述</h4>
+            <h4 className="font-bold text-dndRed mb-2 flex items-center gap-2"><BookOpen className="w-4 h-4" /> 背景设定描述</h4>
             <MarkdownTextarea
                value={item.description}
                onChange={(e: any) => setItem(prev => prev ? ({ ...prev, description: e.target.value }) : null)}
                className="w-full min-h-[6rem] p-3 border-stone-300 rounded bg-transparent"
-               placeholder="详细描述该背景的设定..."
+               placeholder="描述该背景的起源和在世界中的地位..."
             />
          </div>
 
          {/* Step 1: Abilities */}
          <div className="bg-white p-4 rounded border border-stone-300">
-            <h4 className="font-bold text-dndRed mb-2">1. 选择属性 (选择3个)</h4>
-            <p className="text-xs text-stone-500 mb-3">根据背景的体力、耐力、脑力或社交倾向选择。</p>
+            <h4 className="font-bold text-dndRed mb-2">1. 推荐属性 (选择3个)</h4>
+            <p className="text-[10px] text-stone-500 mb-3 uppercase tracking-wider font-bold">建议玩家优先提升的属性</p>
             <div className="flex gap-2 flex-wrap">
                {ATTR_OPTIONS.map(attr => (
                   <button
                      key={attr}
                      onClick={() => handleAbilityToggle(attr)}
-                     className={`px-3 py-1 rounded border text-sm font-bold transition-colors ${(item.abilityScores || []).includes(attr)
-                        ? 'bg-dndRed text-white border-dndRed'
+                     className={`px-3 py-1 rounded border text-xs font-bold transition-colors ${(item.abilityScores || []).includes(attr)
+                        ? 'bg-dndRed text-white border-dndRed shadow-sm'
                         : 'bg-stone-50 text-stone-600 border-stone-300 hover:bg-stone-100'
                         }`}
                   >
@@ -413,53 +431,107 @@ export const BackgroundEditor = ({
 
          {/* Step 2: Feat */}
          <div className="bg-white p-4 rounded border border-stone-300">
-            <h4 className="font-bold text-dndRed mb-2">2. 选择一个起源专长</h4>
-            <select
-               value={item.feat}
-               onChange={e => setItem(prev => prev ? ({ ...prev, feat: e.target.value }) : null)}
-               className="w-full p-2 border rounded focus:border-dndRed"
-            >
-               <option value="">-- 选择专长 --</option>
-               {feats.map(f => (
-                  <option key={f.name} value={f.name}>{f.name}</option>
-               ))}
-            </select>
+            <h4 className="font-bold text-dndRed mb-2">2. 给予起源专长</h4>
+            <div className="flex gap-2">
+               <select
+                  value={item.feat}
+                  onChange={e => setItem(prev => prev ? ({ ...prev, feat: e.target.value }) : null)}
+                  className="flex-grow p-2 border rounded focus:border-dndRed bg-white text-sm"
+               >
+                  <option value="">-- 从库中选择专长 --</option>
+                  {feats.map(f => (
+                     <option key={f.name} value={f.name}>{f.name}</option>
+                  ))}
+               </select>
+               <input
+                  type="text"
+                  value={item.feat}
+                  onChange={e => setItem(p => p ? { ...p, feat: e.target.value } : null)}
+                  className="w-1/3 p-2 border rounded text-sm"
+                  placeholder="或手动输入..."
+               />
+            </div>
          </div>
 
          {/* Step 3: Skills */}
          <div className="bg-white p-4 rounded border border-stone-300">
-            <h4 className="font-bold text-dndRed mb-2">3. 选择技能熟练项 (2个)</h4>
-            <input
-               type="text"
-               value={(item.skills || []).join('、')}
-               onChange={e => setItem(prev => prev ? ({ ...prev, skills: e.target.value.split(/[、,]/).map(s => s.trim()) }) : null)}
-               className="w-full p-2 border rounded focus:border-dndRed"
-               placeholder="例如：运动、生存 (使用顿号分隔)"
-            />
+            <div className="flex justify-between items-center mb-2">
+               <h4 className="font-bold text-dndRed">3. 技能熟练 (勾选固定给予项)</h4>
+               <span className="text-[10px] bg-stone-100 px-2 py-0.5 rounded text-stone-500 font-bold">{(item.skills || []).length} 已选</span>
+            </div>
+            <div className="grid grid-cols-3 sm:grid-cols-6 gap-2">
+               {ALL_SKILLS.map(skill => (
+                  <button
+                     key={skill}
+                     onClick={() => handleSkillToggle(skill)}
+                     className={`px-2 py-1.5 rounded border text-[10px] font-bold transition-all ${(item.skills || []).includes(skill)
+                        ? 'bg-green-600 text-white border-green-700 shadow-inner'
+                        : 'bg-stone-50 text-stone-500 border-stone-200 hover:bg-stone-100'
+                        }`}
+                  >
+                     {skill}
+                  </button>
+               ))}
+            </div>
+            <div className="mt-3">
+               <label className="text-[10px] font-black text-stone-400 uppercase mb-1 block">额外自定义技能 (逗号分隔)</label>
+               <input
+                  type="text"
+                  value={(item.extraSkills || []).join('、')}
+                  onChange={e => setItem(prev => prev ? ({ ...prev, extraSkills: e.target.value.split(/[、,，]/).map(s => s.trim()).filter(Boolean) }) : null)}
+                  className="w-full p-2 border rounded focus:border-dndRed text-sm"
+                  placeholder="例如：特定战役技能"
+               />
+            </div>
          </div>
 
          {/* Step 4: Tool */}
          <div className="bg-white p-4 rounded border border-stone-300">
-            <h4 className="font-bold text-dndRed mb-2">4. 选择一种工具熟练项</h4>
-            <input
-               type="text"
-               value={item.tool}
-               onChange={e => setItem(prev => prev ? ({ ...prev, tool: e.target.value }) : null)}
-               className="w-full p-2 border rounded focus:border-dndRed"
-               placeholder="例如：木匠工具 或 盗贼工具"
-            />
+            <h4 className="font-bold text-dndRed mb-2">4. 工具熟练</h4>
+            <div className="flex gap-2">
+               <input
+                  type="text"
+                  value={item.tool}
+                  onChange={e => setItem(prev => prev ? ({ ...prev, tool: e.target.value }) : null)}
+                  className="flex-grow p-2 border rounded focus:border-dndRed text-sm"
+                  placeholder="主工具，如：盗贼工具"
+               />
+            </div>
+            <div className="mt-3">
+               <label className="text-[10px] font-black text-stone-400 uppercase mb-1 block">额外工具 (逗号分隔)</label>
+               <input
+                  type="text"
+                  value={(item.extraTools || []).join('、')}
+                  onChange={e => setItem(prev => prev ? ({ ...prev, extraTools: e.target.value.split(/[、,，]/).map(s => s.trim()).filter(Boolean) }) : null)}
+                  className="w-full p-2 border rounded focus:border-dndRed text-sm"
+                  placeholder="例如：某种乐器、某种游戏具"
+               />
+            </div>
          </div>
 
          {/* Step 5: Equipment */}
          <div className="bg-white p-4 rounded border border-stone-300">
-            <h4 className="font-bold text-dndRed mb-2">5. 选择装备 (价值50GP)</h4>
-            <p className="text-xs text-stone-500 mb-2">不要包含军用武器和护甲。多余金币也包含在内。</p>
-            <textarea
-               value={(item.equipment || []).join('\n')}
-               onChange={e => setItem(prev => prev ? ({ ...prev, equipment: e.target.value.split('\n') }) : null)}
-               className="w-full min-h-[6rem] p-2 border rounded focus:border-dndRed font-mono text-sm"
-               placeholder="A: ... (每行一个选项)"
-            />
+            <h4 className="font-bold text-dndRed mb-2">5. 起始装备</h4>
+            <div className="space-y-3">
+               <div>
+                  <label className="text-[10px] font-black text-stone-400 uppercase mb-1 block">结构化装备 (列表显示)</label>
+                  <textarea
+                     value={(item.equipment || []).join('\n')}
+                     onChange={e => setItem(prev => prev ? ({ ...prev, equipment: e.target.value.split('\n').filter(Boolean) }) : null)}
+                     className="w-full min-h-[4rem] p-2 border rounded focus:border-dndRed font-mono text-xs"
+                     placeholder="每行一个物品名称，如：&#10;匕首&#10;探索者包"
+                  />
+               </div>
+               <div>
+                  <label className="text-[10px] font-black text-stone-400 uppercase mb-1 block">自定义描述 (A/B 选项等复述)</label>
+                  <textarea
+                     value={(item.extraEquipment || []).join('\n')}
+                     onChange={e => setItem(prev => prev ? ({ ...prev, extraEquipment: e.target.value.split('\n').filter(Boolean) }) : null)}
+                     className="w-full min-h-[4rem] p-2 border rounded focus:border-dndRed font-mono text-xs"
+                     placeholder="A: 50 GP&#10;B: ..."
+                  />
+               </div>
+            </div>
          </div>
       </div>
    );
@@ -792,12 +864,12 @@ export const FeatEditor = ({ item, setItem }: { item: FeatItem, setItem: React.D
          </div>
 
          <div>
-            <label className="block text-sm font-bold text-stone-700 mb-1">专长增益 (Benefits) - 每行一项</label>
-            <textarea
+            <label className="block text-sm font-bold text-stone-700 mb-1">专长增益 (Benefits) - 支持Markdown</label>
+            <MarkdownTextarea
                value={(item.benefits || []).join('\n')}
-               onChange={e => handleBenefitsChange(e.target.value)}
-               className="w-full min-h-[8rem] p-3 border border-stone-300 rounded font-mono text-sm leading-relaxed outline-none focus:border-dndRed"
-               placeholder="增益1&#10;增益2..."
+               onChange={(e: any) => handleBenefitsChange(e.target.value)}
+               className="w-full min-h-[10rem] p-3 outline-none font-mono text-sm leading-relaxed bg-transparent"
+               placeholder="每行输入一项增益，支持 **加粗** 等..."
             />
          </div>
       </div>
@@ -822,6 +894,20 @@ export const SpeciesEditor = ({ item, setItem }: { item: SpeciesItem, setItem: R
       setItem((prev: any) => prev ? ({ ...prev, traits: (prev.traits || []).filter((_: any, i: number) => i !== index) }) : null);
    };
 
+   const updateTraitGrants = (index: number, field: 'skills' | 'spells', value: string) => {
+      setItem((prev: any) => {
+         if (!prev) return null;
+         const newTraits = [...(prev.traits || [])];
+         const currentTrait = newTraits[index] || { name: "", description: "" };
+         const grants = currentTrait.grants || {};
+         newTraits[index] = {
+            ...currentTrait,
+            grants: { ...grants, [field]: value.split(/[、,，]/).map((s: string) => s.trim()).filter(Boolean) }
+         };
+         return { ...prev, traits: newTraits };
+      });
+   };
+
    return (
       <div className="space-y-6">
          <div className="grid grid-cols-3 gap-4">
@@ -831,23 +917,18 @@ export const SpeciesEditor = ({ item, setItem }: { item: SpeciesItem, setItem: R
             </div>
             <div>
                <label className="block text-sm font-bold text-stone-700 mb-1">体型</label>
-               <input type="text" value={item.size} onChange={e => setItem((p: any) => p ? { ...p, size: e.target.value } : null)} className="w-full p-2 border border-stone-300 rounded focus:border-dndRed outline-none" />
+               <input type="text" value={item.size} onChange={e => setItem((p: any) => p ? { ...p, size: e.target.value } : null)} className="w-full p-2 border border-stone-300 rounded focus:border-dndRed outline-none" placeholder="中型" />
             </div>
-            <div className="flex items-center gap-2 mt-6">
-               <input type="checkbox" checked={item.darkvision} onChange={e => setItem((p: any) => p ? { ...p, darkvision: e.target.checked } : null)} id="darkvision" />
-               <label htmlFor="darkvision" className="text-sm font-bold text-stone-700">黑暗视觉</label>
+            <div>
+               <label className="block text-sm font-bold text-stone-700 mb-1">黑暗视觉</label>
+               <input
+                  type="text"
+                  value={item.darkvision || ""}
+                  onChange={e => setItem((p: any) => p ? { ...p, darkvision: e.target.value } : null)}
+                  className="w-full p-2 border border-stone-300 rounded focus:border-dndRed outline-none"
+                  placeholder="例如：60 尺"
+               />
             </div>
-         </div>
-
-         <div>
-            <label className="block text-sm font-bold text-stone-700 mb-1">卡牌封面简述 (不超过3行短摘要)</label>
-            <textarea
-               value={item.description}
-               onChange={(e: any) => setItem((p: any) => p ? { ...p, description: e.target.value } : null)}
-               className="w-full p-2 border border-stone-300 rounded focus:border-dndRed outline-none"
-               placeholder="例如：适应力\n多才多艺..."
-               rows={2}
-            />
          </div>
 
          <div className="space-y-2">
@@ -869,17 +950,39 @@ export const SpeciesEditor = ({ item, setItem }: { item: SpeciesItem, setItem: R
             </div>
             <div className="space-y-4">
                {(item.traits || []).map((t: any, i: number) => (
-                  <div key={i} className="flex flex-col gap-2 p-3 bg-white border border-stone-200 rounded shadow-sm">
+                  <div key={i} className="flex flex-col gap-3 p-3 bg-white border border-stone-200 rounded shadow-sm">
                      <div className="flex justify-between gap-2">
-                        <input type="text" value={t.name} onChange={e => updateTrait(i, 'name', e.target.value)} className="w-1/3 p-2 border border-stone-300 rounded font-bold outline-none focus:border-dndRed" placeholder="特性名称" />
+                        <input type="text" value={t.name} onChange={e => updateTrait(i, 'name', e.target.value)} className="flex-grow p-2 border border-stone-300 rounded font-bold outline-none focus:border-dndRed" placeholder="特性名称" />
                         <button onClick={() => removeTrait(i)} className="text-red-500 hover:text-red-700 p-2"><Trash2 className="w-5 h-5" /></button>
                      </div>
                      <MarkdownTextarea
                         value={t.description}
                         onChange={(e: any) => updateTrait(i, 'description', e.target.value)}
-                        className="w-full min-h-[5rem] p-2 border-stone-300 rounded text-sm bg-transparent"
+                        className="w-full min-h-[4rem] p-2 border-stone-300 rounded text-sm bg-transparent"
                         placeholder="特性描述..."
                      />
+                     <div className="grid grid-cols-2 gap-3 text-xs">
+                        <div>
+                           <label className="font-bold text-stone-400 uppercase text-[9px] mb-1 block">固定给予技能熟练</label>
+                           <input
+                              type="text"
+                              value={(t.grants?.skills || []).join('、')}
+                              onChange={e => updateTraitGrants(i, 'skills', e.target.value)}
+                              className="w-full p-1.5 border border-dashed rounded outline-none focus:border-dndRed"
+                              placeholder="例如：察觉"
+                           />
+                        </div>
+                        <div>
+                           <label className="font-bold text-stone-400 uppercase text-[9px] mb-1 block">固定给予法术 (名称)</label>
+                           <input
+                              type="text"
+                              value={(t.grants?.spells || []).join('、')}
+                              onChange={e => updateTraitGrants(i, 'spells', e.target.value)}
+                              className="w-full p-1.5 border border-dashed rounded outline-none focus:border-dndRed"
+                              placeholder="例如：神导术"
+                           />
+                        </div>
+                     </div>
                   </div>
                ))}
             </div>
