@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Copy, Users, Check, X, Shield, RefreshCw } from 'lucide-react';
 import { useRoom } from '../contexts/RoomContext';
-import { DiceRoller } from './DiceRoller';
 import { ImageViewer } from './ImageViewer';
-import CharacterWizard from './CharacterWizard';
+import { CampaignQuickEditor } from './CampaignQuickEditor';
+import { DicePanel } from './DicePanel';
 
 export const RoomHost: React.FC = () => {
     const {
@@ -20,7 +20,6 @@ export const RoomHost: React.FC = () => {
     const [inputRoomId, setInputRoomId] = useState('');
 
     // Tools states
-    const [showDiceRoller, setShowDiceRoller] = useState(false);
     const [showImageViewer, setShowImageViewer] = useState(false);
 
     const handleCreateRoom = (customId?: string) => {
@@ -115,8 +114,7 @@ export const RoomHost: React.FC = () => {
     }
 
     return (
-        <div className="p-8 pb-20 max-w-5xl mx-auto h-full animate-fade-in relative z-10 w-full pt-20 bg-stone-100">
-            {showDiceRoller && <DiceRoller onClose={() => setShowDiceRoller(false)} />}
+        <div className="p-4 md:p-8 pb-20 max-w-7xl mx-auto h-full animate-fade-in relative z-10 w-full pt-10 md:pt-20 bg-stone-100 flex flex-col">
             {showImageViewer && <ImageViewer onClose={() => setShowImageViewer(false)} />}
 
             {/* Header Status */}
@@ -154,9 +152,9 @@ export const RoomHost: React.FC = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div className="flex-1 flex flex-col md:flex-row gap-6 min-h-0">
                 {/* Main Content: Player List */}
-                <div className="lg:col-span-2 space-y-6">
+                <div className="flex-[3] space-y-6 overflow-y-auto custom-scrollbar pr-2">
                     {/* Pending Requests */}
                     {hostPendingPlayers.length > 0 && (
                         <div className="bg-orange-50 p-4 rounded-xl border border-orange-200 shadow-sm animate-fade-in">
@@ -244,78 +242,69 @@ export const RoomHost: React.FC = () => {
                     </div>
                 </div>
 
-                {/* Character Edit Modal */}
-                {editingPlayerId && (
-                    <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100] flex items-center justify-center p-4">
-                        <div className="bg-white rounded-2xl w-full max-w-5xl h-[90vh] flex flex-col shadow-2xl border border-stone-300 relative overflow-hidden">
-                            <div className="p-4 border-b border-stone-200 flex justify-between items-center bg-stone-50">
-                                <h3 className="text-xl font-bold text-stone-800">
-                                    正在修改玩家角色卡: <span className="text-dndRed">{hostConnectedPlayers.find(p => p.peerId === editingPlayerId)?.character.name || '未知'}</span>
-                                </h3>
-                                <button
-                                    onClick={() => setEditingPlayerId(null)}
-                                    className="p-2 hover:bg-stone-200 rounded-full transition-colors"
-                                >
-                                    <X className="w-6 h-6 text-stone-500" />
-                                </button>
-                            </div>
-                            <div className="flex-1 overflow-auto">
-                                {(() => {
-                                    const p = hostConnectedPlayers.find(cp => cp.peerId === editingPlayerId);
-                                    if (!p) return null;
-                                    return (
-                                        <CharacterWizard
-                                            character={p.character}
-                                            updateCharacter={(updates) => hostUpdateCharacter(p.peerId, { ...p.character, ...updates })}
-                                            onComplete={() => setEditingPlayerId(null)}
-                                        />
-                                    );
-                                })()}
-                            </div>
-                            <div className="p-3 bg-red-50 border-t border-red-100 text-center text-xs text-red-700 font-bold">
-                                ⚠️ 警告: GM 的所有改动将实时同步至玩家端，请谨慎操作。
-                            </div>
-                        </div>
-                    </div>
-                )}
-
-                {/* Sidebar: GM Tools */}
-                <div className="space-y-6">
-                    <div className="bg-white p-6 rounded-xl shadow-sm border border-stone-200">
-                        <h3 className="font-bold text-stone-800 border-b border-stone-100 pb-2 mb-4">
-                            🛠️ GM 工具栏
+                {/* Right Sidebar: Quick Tools & Dice Panel */}
+                <div className="flex-[2] flex flex-col gap-6 min-w-0">
+                    <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-200">
+                        <h3 className="font-bold text-stone-800 border-b border-stone-100 pb-2 mb-3 text-sm">
+                            🛠️ GM 快捷指令
                         </h3>
-                        <div className="space-y-3">
-                            <button
-                                onClick={() => setShowDiceRoller(true)}
-                                className="w-full bg-stone-800 hover:bg-stone-900 text-white py-3 rounded-lg font-bold shadow-sm flex justify-center items-center gap-2 transition-colors"
-                            >
-                                🎲 全体掷骰
-                            </button>
+                        <div className="flex gap-2">
                             <button
                                 onClick={() => setShowImageViewer(true)}
-                                className="w-full bg-stone-800 hover:bg-stone-900 text-white py-3 rounded-lg font-bold shadow-sm flex justify-center items-center gap-2 transition-colors"
+                                className="flex-1 bg-stone-800 hover:bg-stone-900 text-white py-2 px-3 rounded text-sm font-bold shadow-sm flex items-center justify-center gap-1 transition-colors"
                             >
-                                🖼️ 发送共享图片
+                                🖼️ 投屏
                             </button>
-                            <div className="p-3 bg-stone-50 border border-stone-200 rounded-lg text-xs text-stone-500 text-center">
-                                角色的改动将会自动通过 PeerJS 推送同步，无需手动分发。
-                            </div>
+                            <button
+                                onClick={closeRoom}
+                                className="flex-1 bg-red-50 hover:bg-red-100 text-red-600 border border-red-200 py-2 px-3 rounded text-sm font-bold shadow-sm transition-colors flex items-center justify-center gap-1"
+                            >
+                                <X className="w-4 h-4" /> 解散房间
+                            </button>
                         </div>
                     </div>
 
-                    <div className="bg-red-50 p-6 rounded-xl border border-red-200 text-center">
-                        <button
-                            onClick={closeRoom}
-                            className="bg-red-600 hover:bg-red-700 text-white w-full py-3 rounded-lg font-bold shadow-sm transition-colors flex items-center justify-center gap-2"
-                        >
-                            <X className="w-5 h-5" />
-                            关闭并解散房间
-                        </button>
-                        <p className="mt-3 text-xs text-red-600 font-bold">解散后所有玩家将断开连接</p>
+                    {/* Stationary Dice Panel */}
+                    <div className="flex-1 bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden flex flex-col min-h-[400px]">
+                        <DicePanel />
                     </div>
                 </div>
             </div>
+
+            {/* Character Edit Modal */}
+            {editingPlayerId && (
+                <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100] flex items-center justify-center p-4">
+                    <div className="bg-white rounded-2xl w-full max-w-5xl h-[90vh] flex flex-col shadow-2xl border border-stone-300 relative overflow-hidden">
+                        <div className="p-4 border-b border-stone-200 flex justify-between items-center bg-stone-50">
+                            <h3 className="text-xl font-bold text-stone-800">
+                                正在修改玩家角色卡: <span className="text-dndRed">{hostConnectedPlayers.find(p => p.peerId === editingPlayerId)?.character.name || '未知'}</span>
+                            </h3>
+                            <button
+                                onClick={() => setEditingPlayerId(null)}
+                                className="p-2 hover:bg-stone-200 rounded-full transition-colors"
+                            >
+                                <X className="w-6 h-6 text-stone-500" />
+                            </button>
+                        </div>
+                        <div className="flex-1 overflow-auto">
+                            {(() => {
+                                const p = hostConnectedPlayers.find(cp => cp.peerId === editingPlayerId);
+                                if (!p) return null;
+                                return (
+                                    <CampaignQuickEditor
+                                        character={p.character}
+                                        updateCharacter={(updates) => hostUpdateCharacter(p.peerId, { ...p.character, ...updates })}
+                                        onComplete={() => setEditingPlayerId(null)}
+                                    />
+                                );
+                            })()}
+                        </div>
+                        <div className="p-3 bg-red-50 border-t border-red-100 text-center text-xs text-red-700 font-bold">
+                            ⚠️ 警告: GM 的所有改动将实时同步至玩家端，不可逆转。
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };

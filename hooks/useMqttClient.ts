@@ -7,7 +7,8 @@ export const useMqttClient = () => {
     const [isConnected, setIsConnected] = useState(false);
     const [roomId, setRoomId] = useState<string | null>(null);
     const [roomState, setRoomState] = useState({
-        status: 'DISCONNECTED' // DISCONNECTED, CONNECTING, WAITING_APPROVAL, CONNECTED, REJECTED
+        status: 'DISCONNECTED', // DISCONNECTED, CONNECTING, WAITING_APPROVAL, CONNECTED, REJECTED
+        reason: '' // To pass the disconnect reason
     });
     const [error, setError] = useState<string | null>(null);
 
@@ -23,13 +24,15 @@ export const useMqttClient = () => {
 
     useEffect(() => { roomIdRef.current = roomId; }, [roomId]);
 
-    const handleDisconnect = useCallback((reason?: string) => {
+    const handleDisconnect = useCallback((reason?: string, isExpected = true) => {
         setIsConnected(false);
-        setRoomState({ status: 'DISCONNECTED' });
+        setRoomState({ status: 'DISCONNECTED', reason: reason || '' });
         if (reason) setError(reason);
         setRoomId(null);
-        mqttRef.current?.disconnect();
-        mqttRef.current = null;
+        if (isExpected) {
+            mqttRef.current?.disconnect();
+            mqttRef.current = null;
+        }
     }, []);
 
     const handleMessage = useCallback((topic: string, payload: string) => {
@@ -43,13 +46,13 @@ export const useMqttClient = () => {
         switch (msg.type) {
             case 'JOIN_ACCEPTED':
                 setIsConnected(true);
-                setRoomState({ status: 'CONNECTED' });
+                setRoomState({ status: 'CONNECTED', reason: '' });
                 setRemoteCharacter(characterRef.current);
                 break;
             case 'JOIN_REJECTED':
-                setRoomState({ status: 'REJECTED' });
+                setRoomState({ status: 'REJECTED', reason: msg.payload.reason });
                 setError(msg.payload.reason || '主持人拒绝了加入请求');
-                handleDisconnect();
+                handleDisconnect(msg.payload.reason, true);
                 break;
             case 'PLAYER_LIST':
                 setPlayerList(msg.payload);
@@ -64,7 +67,7 @@ export const useMqttClient = () => {
                 setSharedImages(prev => [msg.payload as ImageSharePayload, ...prev].slice(0, 10));
                 break;
             case 'ROOM_CLOSED':
-                handleDisconnect('房间已由主持人关闭或你已被踢出。');
+                handleDisconnect('房间已由主持人解散。', false);
                 break;
         }
     }, [handleDisconnect]);
@@ -73,7 +76,7 @@ export const useMqttClient = () => {
     useEffect(() => { handleMessageRef.current = handleMessage; }, [handleMessage]);
 
     const connectToRoom = useCallback(async (targetRoomId: string, character: CharacterData) => {
-        setRoomState({ status: 'CONNECTING' });
+        setRoomState({ status: 'CONNECTING', reason: '' });
         setError(null);
         characterRef.current = character;
 
@@ -94,7 +97,7 @@ export const useMqttClient = () => {
             const handler = (topic: string, payload: string) => handleMessageRef.current(topic, payload);
             service.onMessage(handler);
 
-            setRoomState({ status: 'WAITING_APPROVAL' });
+            setRoomState({ status: 'WAITING_APPROVAL', reason: '' });
 
             // Send join request to host topic
             const joinMsg: RoomMessage = {
@@ -109,7 +112,7 @@ export const useMqttClient = () => {
             console.log(`[MQTT Client] Join request sent to room ${targetRoomId}`);
         } catch (err: any) {
             setError(`连接失败: ${err.message || '无法连接到消息服务器'}`);
-            setRoomState({ status: 'DISCONNECTED' });
+            setRoomState({ status: 'DISCONNECTED', reason: err.message });
         }
     }, []);
 

@@ -21,13 +21,22 @@ export interface RoomMessage {
     payload: any;           // 具体数据，根据 type 不同而不同
 }
 
+/** 掷骰详细节点 */
+export interface ParseNode {
+    type: 'dice' | 'constant';
+    diceType?: string; // e.g., 'd6'
+    count?: number;    // e.g., 2
+    value?: number;    // resolved value for constant or sum
+    results?: number[]; // individual die rolls, e.g. [3, 4]
+    sign: '+' | '-';
+}
+
 /** 掷骰请求/结果 payload */
 export interface DiceRollPayload {
-    diceType: 'd4' | 'd6' | 'd8' | 'd10' | 'd12' | 'd20' | 'd100';
-    count: number;          // 骰子数量
-    results: number[];      // 每颗骰子结果
-    total: number;          // 总和
-    rollerName: string;     // 投掷者名称
+    formula: string;        // e.g. "2d6+1d4+3"
+    nodes: ParseNode[];     // detailed breakdown
+    total: number;          // grand total
+    rollerName: string;     // who rolled this
 }
 
 /** 图片共享 payload */

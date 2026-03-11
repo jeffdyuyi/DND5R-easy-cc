@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useRoom } from '../contexts/RoomContext';
 import { useCharacters } from '../contexts/CharacterContext';
-import { DiceRoller } from './DiceRoller';
 import { ImageViewer } from './ImageViewer';
+import { DicePanel } from './DicePanel';
 
 export const RoomJoin: React.FC = () => {
     const {
@@ -14,7 +14,6 @@ export const RoomJoin: React.FC = () => {
     const [inputRoomId, setInputRoomId] = useState('');
     const [selectedCharId, setSelectedCharId] = useState('');
 
-    const [showDiceRoller, setShowDiceRoller] = useState(false);
     const [showImageViewer, setShowImageViewer] = useState(false);
     const [showSaveConfirm, setShowSaveConfirm] = useState(false);
 
@@ -81,8 +80,7 @@ export const RoomJoin: React.FC = () => {
 
     if (clientIsConnected) {
         return (
-            <div className="p-8 max-w-lg mx-auto mt-10 bg-white rounded-xl shadow-md border border-green-200 relative z-10">
-                {showDiceRoller && <DiceRoller onClose={() => setShowDiceRoller(false)} />}
+            <div className="p-4 md:p-8 flex flex-col max-w-7xl mx-auto h-[calc(100vh-4rem)] bg-stone-100">
                 {showImageViewer && <ImageViewer onClose={() => setShowImageViewer(false)} />}
 
                 {/* Save Confirmation Modal */}
@@ -125,66 +123,77 @@ export const RoomJoin: React.FC = () => {
                     </div>
                 )}
 
-                <div className="flex items-center gap-3 mb-6 border-b border-stone-200 pb-4">
-                    <div className="w-4 h-4 rounded-full bg-green-500 animate-pulse"></div>
-                    <h2 className="text-2xl font-bold text-stone-800">
-                        已连接到房间
-                    </h2>
+                <div className="bg-white p-6 rounded-xl shadow-sm border border-green-200 mb-6 flex-shrink-0">
+                    <div className="flex items-center gap-3 border-b border-stone-100 pb-3 mb-3">
+                        <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
+                        <h2 className="text-xl font-bold text-stone-800">已连接: {roomId}</h2>
+                        <button
+                            onClick={handleLeaveRoom}
+                            className="ml-auto bg-stone-100 hover:bg-stone-200 text-stone-600 font-bold px-4 py-1.5 rounded transition-colors text-sm flex items-center gap-1 border border-stone-200"
+                        >
+                            🚪 离开房间
+                        </button>
+                    </div>
+                    <div className="flex gap-4 items-center flex-wrap">
+                        <div className="text-sm">
+                            <span className="text-stone-500 mr-2">出场角色:</span>
+                            <span className="font-bold">{clientRemoteCharacter?.name || '未知'} (Lv.{clientRemoteCharacter?.level})</span>
+                        </div>
+                        <div className="text-sm">
+                            <span className="text-stone-500 mr-2">当前生命:</span>
+                            <span className="font-bold text-dndRed">{clientRemoteCharacter?.currentHp ?? clientRemoteCharacter?.hpMax} / {clientRemoteCharacter?.hpMax}</span>
+                        </div>
+                        <button
+                            onClick={() => setShowImageViewer(true)}
+                            className="bg-stone-800 hover:bg-stone-900 text-white font-bold py-1 px-3 rounded text-sm relative transition-colors shadow-sm ml-auto"
+                        >
+                            🖼️ 共享图片
+                            {clientSharedImages.length > 0 && (
+                                <span className="absolute -top-1 -right-1 flex h-3 w-3">
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+                                </span>
+                            )}
+                        </button>
+                    </div>
                 </div>
 
-                <div className="space-y-6">
-                    <div className="bg-stone-50 p-4 rounded-lg border border-stone-200">
-                        <div className="text-sm text-stone-500 mb-1">当前房间</div>
-                        <div className="font-mono font-bold text-lg">{roomId}</div>
-                    </div>
+                {/* Main Content Area */}
+                <div className="flex-1 flex flex-col md:flex-row gap-6 min-h-0">
 
-                    <div className="bg-stone-50 p-4 rounded-lg border border-stone-200">
-                        <div className="text-sm text-stone-500 mb-1">当前出场角色</div>
-                        <div className="font-bold flex items-center gap-2">
-                            <span>{clientRemoteCharacter?.name || '未知角色'} (Lv. {clientRemoteCharacter?.level || 1})</span>
-                        </div>
-                    </div>
+                    {/* Character Readonly View Placeholder */}
+                    <div className="flex-[3] bg-white rounded-xl shadow-sm border border-stone-200 overflow-y-auto p-6 custom-scrollbar">
+                        <h3 className="text-lg font-bold text-stone-800 mb-4 pb-2 border-b border-stone-100">🔒 角色状态 (由 GM 实时同步)</h3>
+                        <p className="text-sm text-stone-500 mb-6">您的状态会由主持人进行修改并实时反映在此处。暂不支持在此页面直接编辑角色的深度信息。</p>
 
-                    <div>
-                        <div className="text-sm font-bold text-stone-500 mb-3 border-b border-stone-200 pb-1">实时能力</div>
-                        <div className="flex gap-2">
-                            <button
-                                onClick={() => setShowDiceRoller(true)}
-                                className="flex-1 bg-stone-800 hover:bg-stone-700 text-white font-bold py-2 rounded shadow transition-colors flex items-center justify-center gap-2"
-                            >
-                                🎲 掷骰
-                            </button>
-                            <button
-                                onClick={() => setShowImageViewer(true)}
-                                className="flex-1 bg-stone-800 hover:bg-stone-700 text-white font-bold py-2 rounded shadow transition-colors flex items-center justify-center gap-2 relative"
-                            >
-                                🖼️ 查看共享
-                                {clientSharedImages.length > 0 && (
-                                    <span className="absolute -top-1 -right-1 flex h-3 w-3">
-                                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                                        <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
-                                    </span>
-                                )}
-                            </button>
-                        </div>
-                    </div>
-
-                    <div className="bg-stone-100 p-4 rounded-lg border border-stone-200 text-sm text-stone-600">
-                        <p className="font-bold mb-1">🔒 角色卡状态 (只读)</p>
-                        <p>你的角色卡在房间内由主持人 (GM) 实时同步修改。你可以通过上方按钮进行互动。</p>
                         {clientRemoteCharacter && (
-                            <div className="mt-3 p-3 bg-white border border-stone-200 rounded">
-                                <span className="font-bold text-dndRed">HP: {clientRemoteCharacter.currentHp ?? clientRemoteCharacter.hpMax} / {clientRemoteCharacter.hpMax}</span>
+                            <div className="space-y-4">
+                                <div className="p-4 bg-stone-50 rounded border border-stone-200 flex justify-between">
+                                    <span className="font-bold text-stone-600">生命值记录</span>
+                                    <span className="font-mono text-lg text-dndRed">{clientRemoteCharacter.currentHp ?? clientRemoteCharacter.hpMax} / {clientRemoteCharacter.hpMax}</span>
+                                </div>
+                                <div className="p-4 bg-stone-50 rounded border border-stone-200 flex justify-between">
+                                    <span className="font-bold text-stone-600">临时生命值</span>
+                                    <span className="font-mono text-lg text-blue-600">{clientRemoteCharacter.tempHp || 0}</span>
+                                </div>
+                                <div className="p-4 bg-stone-50 rounded border border-stone-200 flex justify-between">
+                                    <span className="font-bold text-stone-600">携带资金</span>
+                                    <span className="font-mono text-sm text-stone-800">{clientRemoteCharacter.gold || 0} GP / {clientRemoteCharacter.silver || 0} SP / {clientRemoteCharacter.copper || 0} CP</span>
+                                </div>
+                                <div className="p-4 bg-stone-50 rounded border border-stone-200">
+                                    <span className="font-bold text-stone-600 block mb-2">最近物品获取</span>
+                                    <div className="text-sm text-stone-700">
+                                        {clientRemoteCharacter.inventoryGear?.slice(-3).map(g => g.name).join(', ') || '暂无新物品'}
+                                    </div>
+                                </div>
                             </div>
                         )}
                     </div>
 
-                    <button
-                        onClick={handleLeaveRoom}
-                        className="w-full bg-stone-200 hover:bg-stone-300 text-stone-800 font-bold py-3 mt-4 rounded-lg transition-colors border border-stone-300"
-                    >
-                        🚪 离开房间
-                    </button>
+                    {/* Right Sidebar: Dice Panel */}
+                    <div className="flex-[2] bg-white rounded-xl shadow-sm border border-stone-200 flex flex-col min-h-[400px]">
+                        <DicePanel />
+                    </div>
                 </div>
             </div>
         );
