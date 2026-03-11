@@ -24,11 +24,11 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onEnter }) => {
                 {/* Content Body */}
                 <div className="p-8 space-y-6">
                     <div className="space-y-4 text-stone-700">
-                        <div className="flex items-start gap-3">
-                            <Shield className="w-5 h-5 text-dndRed flex-shrink-0 mt-1" />
+                        <div className="flex flex-col items-center gap-2 text-center">
+                            <Shield className="w-6 h-6 text-dndRed flex-shrink-0" />
                             <div>
-                                <h3 className="font-bold text-stone-900 mb-1">免责声明</h3>
-                                <p className="text-sm leading-relaxed text-justify">
+                                <h3 className="font-bold text-stone-900 mb-2">免责声明</h3>
+                                <p className="text-sm leading-relaxed text-stone-600">
                                     本工具由 <strong>不咕鸟（基德）</strong> 开发。内容基于 <strong>DND不全书 (5echm)</strong> 及 D&D 5E (2024) 规则，辅以 AI 技术制作。
                                     <br /><br />
                                     本工具仅供 <strong>个人及亲友团</strong> 快速建卡与跑团交流使用，<span className="text-dndRed font-bold">严禁用于任何商业用途</span>。
@@ -39,14 +39,14 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onEnter }) => {
 
                         <div className="h-px bg-stone-200 w-full"></div>
 
-                        <div className="flex items-start gap-3">
-                            <Users className="w-5 h-5 text-blue-600 flex-shrink-0 mt-1" />
+                        <div className="flex flex-col items-center gap-2 text-center">
+                            <Users className="w-6 h-6 text-blue-600 flex-shrink-0" />
                             <div>
-                                <h3 className="font-bold text-stone-900 mb-1">寻找组织</h3>
+                                <h3 className="font-bold text-stone-900 mb-2">寻找组织</h3>
                                 <p className="text-sm text-stone-600">
-                                    欢迎加入<a href="http://118.89.179.143/schedule" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline font-bold">成都本地线下面团秘密基地TRPG俱乐部</a>，寻找你的冒险伙伴！
+                                    欢迎加入<a href="http://118.89.179.143/schedule" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline font-bold px-1">成都本地线下面团秘密基地TRPG俱乐部</a>，寻找你的冒险伙伴！
                                 </p>
-                                <div className="mt-2 bg-stone-100 p-2 rounded text-center border border-stone-200 font-mono font-bold text-stone-800 select-all">
+                                <div className="mt-3 bg-stone-100 p-2 rounded text-center border border-stone-200 font-mono font-bold text-stone-800 select-all max-w-[200px] mx-auto">
                                     QQ群: 691707475
                                 </div>
                             </div>

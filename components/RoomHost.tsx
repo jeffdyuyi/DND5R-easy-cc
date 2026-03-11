@@ -17,18 +17,21 @@ export const RoomHost: React.FC = () => {
 
     // Fallback UI states
     const [isCreating, setIsCreating] = useState(false);
-    const [roomNameInput, setRoomNameInput] = useState('勇者的征途');
+    const [inputRoomId, setInputRoomId] = useState('');
 
     // Tools states
     const [showDiceRoller, setShowDiceRoller] = useState(false);
     const [showImageViewer, setShowImageViewer] = useState(false);
 
     const handleCreateRoom = () => {
-        if (!roomNameInput.trim()) return;
+        if (!inputRoomId.trim()) {
+            alert("请输入有效的房间 ID");
+            return;
+        }
         setIsCreating(true);
         // Add a slight delay just so React can render the loading state before blocking the thread with Peer creation
         setTimeout(() => {
-            createRoom();
+            createRoom(inputRoomId.trim());
         }, 10);
     };
 
@@ -59,13 +62,13 @@ export const RoomHost: React.FC = () => {
                         )}
                         <div className="space-y-6">
                             <div>
-                                <label className="block text-sm font-bold text-stone-600 mb-2">房间名称 (战役名)</label>
+                                <label className="block text-sm font-bold text-stone-600 mb-2">房间 ID (建议全英文/数字)</label>
                                 <input
                                     type="text"
-                                    value={roomNameInput}
-                                    onChange={(e) => setRoomNameInput(e.target.value)}
-                                    className="w-full p-4 bg-stone-50 text-stone-900 border border-stone-300 rounded-xl focus:outline-none focus:border-stone-500 focus:ring-1 focus:ring-stone-500 hover:border-stone-400 transition-colors font-bold text-lg text-center shadow-inner"
-                                    placeholder="例如: 核心模组或开拓团"
+                                    value={inputRoomId}
+                                    onChange={(e) => setInputRoomId(e.target.value.replace(/[^a-zA-Z0-9_-]/g, ''))}
+                                    className="w-full p-4 bg-stone-50 text-stone-900 border border-stone-300 rounded-xl focus:outline-none focus:border-stone-500 focus:ring-1 focus:ring-stone-500 hover:border-stone-400 transition-colors font-bold text-lg text-center shadow-inner font-mono"
+                                    placeholder="例如: dnd-room-123"
                                 />
                             </div>
                             <button
@@ -102,7 +105,7 @@ export const RoomHost: React.FC = () => {
                 </div>
 
                 <h2 className="text-3xl font-bold font-serif mb-2 flex items-center gap-3">
-                    🏰 {roomNameInput}
+                    🏰 战役房间
                     <span className="text-xs font-sans bg-green-500/20 text-green-400 px-2 py-1 rounded-full flex items-center gap-1 border border-green-500/30">
                         <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
                         运行中
