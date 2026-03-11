@@ -4,13 +4,15 @@ import { useRoom } from '../contexts/RoomContext';
 import { ImageViewer } from './ImageViewer';
 import { CampaignQuickEditor } from './CampaignQuickEditor';
 import { DicePanel } from './DicePanel';
+import { calculateACOptions, getModifier } from '../utils/rules';
 
 export const RoomHost: React.FC = () => {
     const {
         roomId, createRoom, error, closeRoom,
         hostPendingPlayers, hostConnectedPlayers,
         acceptPlayer, rejectPlayer, kickPlayer,
-        hostUpdateCharacter
+        hostUpdateCharacter,
+        hostRollDice,
     } = useRoom();
 
     const [editingPlayerId, setEditingPlayerId] = useState<string | null>(null);
@@ -220,6 +222,32 @@ export const RoomHost: React.FC = () => {
                                                 {p.character.name || p.playerName}
                                             </div>
                                             <div className="text-xs text-stone-500">Lv {p.character.level} {p.character.className}</div>
+                                            <div className="flex items-center gap-3 mt-1.5 text-xs text-stone-600">
+                                                <div className="bg-stone-100 px-2 py-0.5 rounded border border-stone-200">
+                                                    <span className="font-bold">♥️ HP:</span> <span className={`${(p.character.currentHp ?? p.character.hpMax) <= p.character.hpMax / 2 ? 'text-red-500' : 'text-green-600'}`}>{p.character.currentHp ?? p.character.hpMax}</span> / {p.character.hpMax}
+                                                </div>
+                                                <div className="bg-stone-100 px-2 py-0.5 rounded border border-stone-200">
+                                                    <span className="font-bold">🛡️ AC:</span> {calculateACOptions(p.character)[0]?.value || 10}
+                                                </div>
+                                                <button
+                                                    onClick={() => {
+                                                        const dexMod = getModifier(p.character.abilities?.dexterity || 10);
+                                                        const d20 = Math.floor(Math.random() * 20) + 1;
+                                                        hostRollDice({
+                                                            formula: `1d20${dexMod >= 0 ? '+' : ''}${dexMod} (先攻检定)`,
+                                                            total: d20 + dexMod,
+                                                            rollerName: `GM (代 ${p.character.name || p.playerName})`,
+                                                            nodes: [
+                                                                { type: 'dice', diceType: 'd20', count: 1, results: [d20], value: d20, sign: '+' },
+                                                                { type: 'constant', value: Math.abs(dexMod), sign: dexMod >= 0 ? '+' : '-' }
+                                                            ]
+                                                        });
+                                                    }}
+                                                    className="bg-yellow-50 hover:bg-yellow-100 text-yellow-800 px-2 py-0.5 rounded border border-yellow-200 transition-colors flex items-center gap-1 font-bold"
+                                                >
+                                                    🚀 先攻: {getModifier(p.character.abilities?.dexterity || 10) >= 0 ? '+' : ''}{getModifier(p.character.abilities?.dexterity || 10)}
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="flex gap-2">

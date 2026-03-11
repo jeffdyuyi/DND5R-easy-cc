@@ -8,9 +8,10 @@ import TabOrigin from './TabOrigin';
 import TabBio from './TabBio';
 import TabInventory from './TabInventory';
 import TabAdventure from './TabAdventure';
+import { TabAchievements } from './TabAchievements';
 import {
   Shield, Activity, Scroll, Crown,
-  Backpack, Sword, BookOpen, Skull, ArrowLeft, FileCode
+  Backpack, Sword, BookOpen, Skull, ArrowLeft, FileCode, Trophy
 } from 'lucide-react';
 import { getModifier, getProficiencyBonus, formatModifier } from '../utils/rules';
 
@@ -35,6 +36,7 @@ const TABS = [
   { id: 'inventory', label: '行囊背包', icon: <Backpack className="w-4 h-4" /> },
   { id: 'bio', label: '角色故事', icon: <BookOpen className="w-4 h-4" /> },
   { id: 'adventure', label: '冒险日志', icon: <Sword className="w-4 h-4" /> },
+  { id: 'achievements', label: '成就集', icon: <Trophy className="w-4 h-4 text-yellow-600" /> },
 ];
 
 export const CharacterSheet: React.FC<Props> = ({
@@ -192,6 +194,7 @@ export const CharacterSheet: React.FC<Props> = ({
       case 'inventory': return <TabInventory character={character} updateCharacter={updateCharacter} libraryTools={libraryTools} />;
       case 'bio': return <TabBio character={character} updateCharacter={updateCharacter} />;
       case 'adventure': return <TabAdventure character={character} updateCharacter={updateCharacter} />;
+      case 'achievements': return <TabAchievements character={character} />;
       default: return null;
     }
   };

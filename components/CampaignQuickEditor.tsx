@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { CharacterData, ItemItem } from '../types';
-import { Heart, Landmark, Plus, Minus, PackagePlus } from 'lucide-react';
+import { Heart, Landmark, Plus, Minus, PackagePlus, Trophy, Medal } from 'lucide-react';
+import { useLibrary } from '../contexts/LibraryContext';
 
 interface Props {
     character: CharacterData;
@@ -21,6 +22,21 @@ export const CampaignQuickEditor: React.FC<Props> = ({ character, updateCharacte
     // Simple item form
     const [newItemName, setNewItemName] = useState('');
     const [newItemQuantity, setNewItemQuantity] = useState(1);
+    const { allTools } = useLibrary();
+
+    // Achievement form
+    const [achImageUrl, setAchImageUrl] = useState<string>('');
+
+    const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = (event) => {
+                setAchImageUrl(event.target?.result as string);
+            };
+            reader.readAsDataURL(file);
+        }
+    };
 
     const applyHpChange = (amount: number) => {
         let newHp = Math.min(character.hpMax, Math.max(0, character.currentHp + amount));
@@ -35,7 +51,14 @@ export const CampaignQuickEditor: React.FC<Props> = ({ character, updateCharacte
     const addSimpleItem = () => {
         if (!newItemName.trim()) return;
 
-        const newItem: ItemItem = {
+        // check if it exists in library
+        const libItem = allTools.find(t => t.name === newItemName.trim());
+
+        const newItem: ItemItem = libItem ? {
+            ...libItem,
+            id: 'granted-' + Date.now(),
+            quantity: newItemQuantity
+        } : {
             id: 'custom-' + Date.now(),
             name: newItemName.trim(),
             quantity: newItemQuantity,
@@ -52,6 +75,22 @@ export const CampaignQuickEditor: React.FC<Props> = ({ character, updateCharacte
         setNewItemName('');
         setNewItemQuantity(1);
         alert(`已添加 ${newItemQuantity} 个 ${newItem.name}`);
+    };
+
+    const grantAchievement = () => {
+        if (!achImageUrl) return;
+
+        const newAch = {
+            id: 'ach-' + Date.now(),
+            imageDataUrl: achImageUrl,
+            date: new Date().toISOString().split('T')[0] // current date YYYY-MM-DD
+        };
+
+        const updatedAchievements = [...(character.achievements || []), newAch];
+        updateCharacter({ achievements: updatedAchievements });
+
+        setAchImageUrl('');
+        alert('已授予一张新的成就卡！');
     };
 
     const hardResetHpMax = (newMax: number) => {
@@ -158,14 +197,18 @@ export const CampaignQuickEditor: React.FC<Props> = ({ character, updateCharacte
 
                 <div className="flex gap-4 relative z-10 items-end">
                     <div className="flex-[3]">
-                        <label className="text-xs font-bold text-stone-500 block mb-1">物品名称</label>
+                        <label className="text-xs font-bold text-stone-500 block mb-1">物品名称（支持直接搜索资料库）</label>
                         <input
                             type="text"
+                            list="item-library-suggestions"
                             value={newItemName}
                             onChange={e => setNewItemName(e.target.value)}
                             placeholder="例如：治疗药水，或一封密信..."
                             className="w-full p-2 border border-stone-300 rounded font-bold focus:outline-none focus:border-stone-500"
                         />
+                        <datalist id="item-library-suggestions">
+                            {allTools.map(t => <option key={t.id} value={t.name}>{t.type}</option>)}
+                        </datalist>
                     </div>
                     <div className="flex-1">
                         <label className="text-xs font-bold text-stone-500 block mb-1">数量</label>
@@ -184,6 +227,48 @@ export const CampaignQuickEditor: React.FC<Props> = ({ character, updateCharacte
                     >
                         发放包裹
                     </button>
+                </div>
+            </div>
+
+            {/* Achievement Section */}
+            <div className="bg-stone-900 rounded-xl shadow-lg border border-stone-800 p-6 mb-6 relative overflow-hidden text-stone-200">
+                <div className="absolute top-0 right-0 p-4 opacity-5 pointer-events-none text-yellow-500">
+                    <Trophy className="w-32 h-32" />
+                </div>
+                <h3 className="text-lg font-bold text-yellow-500 flex items-center gap-2 border-b border-stone-700 pb-3 mb-4 relative z-10">
+                    <Medal className="w-5 h-5 text-yellow-500" /> 授予成就卡
+                </h3>
+
+                <div className="flex flex-col md:flex-row gap-6 relative z-10 items-start">
+                    <div className="flex-1 w-full space-y-4">
+                        <p className="text-xs text-stone-400">
+                            通过成就卡锻造工坊(Achievement Forge)生成的精美PNG卡片，直接上传并发送给玩家即可。卡片内已编码所有必要的JSON数据与视觉效果。
+                        </p>
+
+                        <label className="block w-full cursor-pointer">
+                            <input type="file" accept="image/png, image/jpeg" onChange={handleImageUpload} className="hidden" />
+                            <div className="w-full py-4 border-2 border-dashed border-stone-700 hover:border-yellow-500/50 hover:bg-stone-800/50 rounded-xl flex flex-col items-center justify-center transition-colors text-stone-400 hover:text-yellow-500">
+                                <Plus className="w-8 h-8 mb-2" />
+                                <span className="font-bold text-sm">选择成就卡图 (PNG)</span>
+                            </div>
+                        </label>
+
+                        <button
+                            onClick={grantAchievement}
+                            disabled={!achImageUrl}
+                            className="w-full py-3 bg-yellow-600 text-stone-900 font-bold rounded shadow hover:bg-yellow-500 transition-colors disabled:bg-stone-700 disabled:text-stone-500 disabled:cursor-not-allowed flex justify-center items-center gap-2"
+                        >
+                            <Trophy className="w-4 h-4" /> 颁发这张成就卡
+                        </button>
+                    </div>
+
+                    <div className="w-full md:w-48 xl:w-64 h-auto min-h-[160px] bg-stone-950 rounded border border-stone-800 flex items-center justify-center overflow-hidden flex-shrink-0">
+                        {achImageUrl ? (
+                            <img src={achImageUrl} alt="Preview" className="w-full h-auto object-contain preview-image-shadow" />
+                        ) : (
+                            <span className="text-stone-700 text-sm font-bold">此处预览卡片</span>
+                        )}
+                    </div>
                 </div>
             </div>
 

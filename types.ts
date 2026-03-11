@@ -211,6 +211,13 @@ export interface ItemItem extends BaseLibraryItem {
   attuned?: boolean; // 是否同调
 }
 
+// === NEW: Achievements ===
+export interface AchievementItem {
+  id: string;
+  imageDataUrl: string; // Base64 PNG
+  date: string; // e.g. "2026-03-10"
+}
+
 // --- Character Sheet State ---
 
 export interface CharacterData {
@@ -299,6 +306,9 @@ export interface CharacterData {
     name: string;
     note: string; // For variants or specific notes
   }[];
+
+  // Achievements
+  achievements: AchievementItem[];
 
   // Adventure
   experience: number;

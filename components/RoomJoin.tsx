@@ -3,6 +3,7 @@ import { useRoom } from '../contexts/RoomContext';
 import { useCharacters } from '../contexts/CharacterContext';
 import { ImageViewer } from './ImageViewer';
 import { DicePanel } from './DicePanel';
+import { calculateACOptions, getModifier } from '../utils/rules';
 
 export const RoomJoin: React.FC = () => {
     const {
@@ -143,6 +144,29 @@ export const RoomJoin: React.FC = () => {
                             <span className="text-stone-500 mr-2">当前生命:</span>
                             <span className="font-bold text-dndRed">{clientRemoteCharacter?.currentHp ?? clientRemoteCharacter?.hpMax} / {clientRemoteCharacter?.hpMax}</span>
                         </div>
+                        <div className="text-sm">
+                            <span className="text-stone-500 mr-2">AC:</span>
+                            <span className="font-bold">{clientRemoteCharacter ? calculateACOptions(clientRemoteCharacter)[0]?.value : 10}</span>
+                        </div>
+                        <button
+                            onClick={() => {
+                                if (!clientRemoteCharacter) return;
+                                const dexMod = getModifier(clientRemoteCharacter.abilities?.dexterity || 10);
+                                const d20 = Math.floor(Math.random() * 20) + 1;
+                                clientRollDice({
+                                    formula: `1d20${dexMod >= 0 ? '+' : ''}${dexMod} (先攻检定)`,
+                                    total: d20 + dexMod,
+                                    rollerName: clientRemoteCharacter.name,
+                                    nodes: [
+                                        { type: 'dice', diceType: 'd20', count: 1, results: [d20], value: d20, sign: '+' },
+                                        { type: 'constant', value: Math.abs(dexMod), sign: dexMod >= 0 ? '+' : '-' }
+                                    ]
+                                });
+                            }}
+                            className="text-xs bg-yellow-50 hover:bg-yellow-100 text-yellow-800 font-bold py-1 px-3 rounded shadow-sm border border-yellow-200 transition-colors flex items-center gap-1"
+                        >
+                            🚀 快投先攻: {clientRemoteCharacter ? (getModifier(clientRemoteCharacter.abilities?.dexterity || 10) >= 0 ? '+' : '') + getModifier(clientRemoteCharacter.abilities?.dexterity || 10) : '+0'}
+                        </button>
                         <button
                             onClick={() => setShowImageViewer(true)}
                             className="bg-stone-800 hover:bg-stone-900 text-white font-bold py-1 px-3 rounded text-sm relative transition-colors shadow-sm ml-auto"

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { CharacterData, ClassItem, SpeciesItem, ItemItem, AbilityScores } from '../types';
 import { Shield, Zap, Wind, Heart, Skull, Sword, Info, Calculator, Target } from 'lucide-react';
-import { getModifier, getProficiencyBonus, formatModifier } from '../utils/rules';
+import { getModifier, getProficiencyBonus, formatModifier, calculateACOptions } from '../utils/rules';
 
 interface Props {
    character: CharacterData;
@@ -29,80 +29,7 @@ const TabCombat: React.FC<Props> = ({ character, updateCharacter, libraryClasses
    const profBonus = getProficiencyBonus(character.level);
 
    // --- AC Calculation Logic ---
-   const calculateACOptions = () => {
-      const dexMod = getModifier(character.abilities.dexterity);
-      const conMod = getModifier(character.abilities.constitution);
-      const wisMod = getModifier(character.abilities.wisdom);
-      const chaMod = getModifier(character.abilities.charisma);
-
-      // Check Inventory for Armor & Shield
-      // Note: In a real app, we'd check 'isEquipped' boolean. Here we assume items in InventoryArmor are carried.
-      // For calculation, we check the first armor found or assume unarmored.
-      const equippedArmor = character.inventoryArmor.find(i => i.type === '护甲' && !i.tags?.includes('盾牌'));
-      const equippedShield = character.inventoryArmor.find(i => i.tags?.includes('盾牌'));
-      const shieldBonus = equippedShield ? 2 : 0; // Standard 5e shield is +2
-
-      const options: { label: string, value: number, note?: string }[] = [];
-
-      // 1. Natural / Unarmored (Base)
-      options.push({ label: "无甲 (基础)", value: 10 + dexMod + shieldBonus, note: "10 + 敏捷" });
-
-      // 2. Class Specific Unarmored Defense
-      if (character.className === '野蛮人') {
-         options.push({ label: "野蛮人无甲防御", value: 10 + dexMod + conMod + shieldBonus, note: "10 + 敏捷 + 体质" });
-      }
-      if (character.className === '武僧' && !equippedArmor && !equippedShield) {
-         // Monk Unarmored Defense doesn't work with shields
-         options.push({ label: "武僧无甲防御", value: 10 + dexMod + wisMod, note: "10 + 敏捷 + 感知 (无盾)" });
-      }
-      if (character.subclass === '舞蹈学院' && !equippedArmor) {
-         options.push({ label: "舞蹈学院无甲防御", value: 10 + dexMod + chaMod + shieldBonus, note: "10 + 敏捷 + 魅力" + (shieldBonus ? " + 盾牌" : "") });
-      }
-      if (character.race === '龙裔' || (character.subclass && character.subclass.includes('龙族'))) {
-         // Example logic for Draconic Resilience (13+Dex) if applicable, 
-         // explicitly adding generic Draconic Sorcerer logic for demo
-         if (character.className === '术士') {
-            options.push({ label: "龙族强韧", value: 13 + dexMod, note: "13 + 敏捷" });
-         }
-      }
-
-      // 3. Armor Calculation
-      if (equippedArmor) {
-         let armorAC = 10;
-         let limitDex = false;
-         let maxDex = 100;
-
-         // Simple parsing of AC string from DB (e.g. "11 + 敏捷修正", "14 + 敏捷修正 (最大 2)", "16")
-         // This is a heuristic parser for the Chinese string format in data-items-armor.ts
-         if (equippedArmor.ac) {
-            const baseMatch = equippedArmor.ac.match(/^(\d+)/);
-            if (baseMatch) armorAC = parseInt(baseMatch[1]);
-
-            if (equippedArmor.ac.includes("最大 2")) {
-               limitDex = true;
-               maxDex = 2;
-            } else if (!equippedArmor.ac.includes("敏捷")) {
-               // Heavy armor usually doesn't add Dex
-               limitDex = true;
-               maxDex = 0;
-            }
-         }
-
-         const effectiveDex = limitDex ? Math.min(dexMod, maxDex) : dexMod;
-         const totalArmorAC = armorAC + effectiveDex + shieldBonus;
-
-         options.push({
-            label: `着甲 (${equippedArmor.name})`,
-            value: totalArmorAC,
-            note: `${armorAC} + 敏捷(${effectiveDex}) ${shieldBonus ? '+ 盾牌' : ''}`
-         });
-      }
-
-      // Sort by highest AC
-      return options.sort((a, b) => b.value - a.value);
-   };
-
-   const acOptions = calculateACOptions();
+   const acOptions = calculateACOptions(character);
    const bestAC = acOptions.length > 0 ? acOptions[0] : { value: 10, label: "基础", note: "" };
 
    // Use state for Manual Override
