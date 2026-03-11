@@ -24,45 +24,67 @@ export const RoomHost: React.FC = () => {
     const [showImageViewer, setShowImageViewer] = useState(false);
 
     const handleCreateRoom = () => {
+        if (!roomNameInput.trim()) return;
         setIsCreating(true);
-        // Timeout to allow UI to update
+        // Add a slight delay just so React can render the loading state before blocking the thread with Peer creation
         setTimeout(() => {
             createRoom();
-            setIsCreating(false);
-        }, 100);
+        }, 10);
     };
+
+    // Auto reset isCreating if error occurs
+    React.useEffect(() => {
+        if (error) setIsCreating(false);
+    }, [error]);
 
     if (!roomId) {
         return (
-            <div className="p-8 max-w-lg mx-auto mt-20 bg-white rounded-xl shadow-md border border-stone-200">
-                <h2 className="text-2xl font-bold text-stone-800 mb-6 flex items-center gap-2 border-b border-stone-200 pb-4">
-                    <span className="text-3xl">🏰</span>
-                    战役房间
-                </h2>
-                {error && (
-                    <div className="mb-6 p-4 bg-red-50 border border-red-200 text-red-700 rounded-lg text-sm">
-                        {error}
+            <div className="h-full w-full flex items-center justify-center p-4">
+                <div className="w-full max-w-md bg-white rounded-2xl shadow-xl border border-stone-200 overflow-hidden relative z-10 animate-fade-in">
+                    <div className="bg-stone-900 text-stone-100 p-6 text-center relative overflow-hidden">
+                        <div className="absolute top-0 right-0 p-4 opacity-10 pointer-events-none">
+                            <TowerControlIcon className="w-32 h-32" />
+                        </div>
+                        <h2 className="text-2xl font-bold font-serif flex justify-center items-center gap-2">
+                            <span className="text-3xl">🏰</span>
+                            建立战役
+                        </h2>
+                        <p className="text-stone-400 mt-2 text-sm font-sans">开启联机房间，全域数据实时同步</p>
                     </div>
-                )}
-                <div className="space-y-6">
-                    <div>
-                        <label className="block text-sm font-bold text-stone-600 mb-2">房间名称 (战役名)</label>
-                        <input
-                            type="text"
-                            value={roomNameInput}
-                            onChange={(e) => setRoomNameInput(e.target.value)}
-                            className="w-full p-3 border border-stone-300 rounded-lg focus:outline-none focus:border-stone-500 focus:ring-1 focus:ring-stone-500 hover:border-stone-400 transition-colors"
-                            placeholder="例如: 勇者的征途"
-                        />
+                    <div className="p-8">
+                        {error && (
+                            <div className="mb-6 p-4 bg-red-50 border border-red-200 text-red-700 rounded-lg text-sm text-center">
+                                {error}
+                            </div>
+                        )}
+                        <div className="space-y-6">
+                            <div>
+                                <label className="block text-sm font-bold text-stone-600 mb-2">房间名称 (战役名)</label>
+                                <input
+                                    type="text"
+                                    value={roomNameInput}
+                                    onChange={(e) => setRoomNameInput(e.target.value)}
+                                    className="w-full p-4 bg-stone-50 text-stone-900 border border-stone-300 rounded-xl focus:outline-none focus:border-stone-500 focus:ring-1 focus:ring-stone-500 hover:border-stone-400 transition-colors font-bold text-lg text-center shadow-inner"
+                                    placeholder="例如: 核心模组或开拓团"
+                                />
+                            </div>
+                            <button
+                                onClick={handleCreateRoom}
+                                disabled={isCreating}
+                                className={`w-full text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-all mt-6 shadow-md text-lg
+                                    ${isCreating ? 'bg-stone-500 cursor-wait' : 'bg-stone-800 hover:bg-stone-900 hover:-translate-y-0.5'}`}
+                            >
+                                {isCreating ? (
+                                    <>
+                                        <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                                        正在初始化服务端点...
+                                    </>
+                                ) : (
+                                    <>🚀 开始担任主持人</>
+                                )}
+                            </button>
+                        </div>
                     </div>
-                    <button
-                        onClick={handleCreateRoom}
-                        disabled={isCreating}
-                        className={`w-full text-white font-bold py-3 pt-4 rounded-lg flex items-center justify-center gap-2 transition-all mt-6 shadow-md text-lg
-                            ${isCreating ? 'bg-stone-400 cursor-not-allowed' : 'bg-stone-800 hover:bg-stone-900'}`}
-                    >
-                        {isCreating ? '⏳ 正在初始化...' : '🚀 创建房间'}
-                    </button>
                 </div>
             </div>
         );

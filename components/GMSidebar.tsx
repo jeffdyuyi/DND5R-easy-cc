@@ -33,12 +33,12 @@ export const GMSidebar: React.FC<Props> = ({ activeModule, setActiveModule, isOp
     return (
         <>
             <div
-                className={`md:hidden fixed inset - 0 bg - black / 50 z - 40 transition - opacity duration - 300 ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'} `}
+                className={`md:hidden fixed inset-0 bg-black/50 z-40 transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
                 onClick={onClose}
             />
             <div className={`
-w - 64 bg - stone - 900 text - stone - 300 flex flex - col h - screen fixed left - 0 top - 0 z - 50 border - r border - stone - 700 shadow - 2xl transition - transform duration - 300
-         ${isOpen ? 'translate-x-0' : '-translate-x-full'} md: translate - x - 0
+w-64 bg-stone-900 text-stone-300 flex flex-col h-screen fixed left-0 top-0 z-50 border-r border-stone-700 shadow-2xl transition-transform duration-300
+         ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0
     `}>
                 <div className="p-6 border-b border-stone-700 flex items-center justify-between">
                     <div className="flex items-center gap-3">
@@ -65,7 +65,7 @@ w - 64 bg - stone - 900 text - stone - 300 flex flex - col h - screen fixed left
                                 key={item.id}
                                 onClick={() => item.id && setActiveModule(item.id)}
                                 className={`
-w - full flex items - center gap - 3 px - 4 py - 2.5 rounded - lg font - bold transition - all duration - 200 text - sm
+w-full flex items-center gap-3 px-4 py-2.5 rounded-lg font-bold transition-all duration-200 text-sm
                      ${activeModule === item.id
                                         ? 'bg-stone-700 text-white shadow-lg'
                                         : 'hover:bg-stone-800 text-stone-400 hover:text-white'
