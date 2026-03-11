@@ -135,19 +135,15 @@ export const useMqttHost = () => {
     }, []);
 
     const acceptPlayer = useCallback((playerId: string) => {
-        let acceptedPlayer: ConnectedPlayer | undefined;
-        setPendingPlayers(prev => {
-            acceptedPlayer = prev.find(p => p.peerId === playerId);
-            return prev.filter(p => p.peerId !== playerId);
-        });
-
+        const acceptedPlayer = pendingPlayers.find(p => p.peerId === playerId);
         if (!acceptedPlayer) return;
 
         const rid = roomIdRef.current;
         sendTo(playerId, 'JOIN_ACCEPTED', { roomId: rid });
 
-        setConnectedPlayers(curr => [...curr, acceptedPlayer!]);
-    }, [sendTo]);
+        setPendingPlayers(prev => prev.filter(p => p.peerId !== playerId));
+        setConnectedPlayers(curr => [...curr, acceptedPlayer]);
+    }, [pendingPlayers, sendTo]);
 
     const rejectPlayer = useCallback((playerId: string) => {
         sendTo(playerId, 'JOIN_REJECTED', { reason: '主持人拒绝了您的加入请求。' });
