@@ -24,15 +24,20 @@ export const useMqttClient = () => {
 
     useEffect(() => { roomIdRef.current = roomId; }, [roomId]);
 
-    const handleDisconnect = useCallback((reason?: string, isExpected = true) => {
+    const handleDisconnect = useCallback((reason?: string) => {
         setIsConnected(false);
         setRoomState({ status: 'DISCONNECTED', reason: reason || '' });
         if (reason) setError(reason);
         setRoomId(null);
-        if (isExpected) {
-            mqttRef.current?.disconnect();
-            mqttRef.current = null;
+
+        const currentMqtt = mqttRef.current;
+        if (currentMqtt) {
+            // Delay disconnect to ensure any pending publishes are flushed
+            setTimeout(() => {
+                currentMqtt.disconnect();
+            }, 300);
         }
+        mqttRef.current = null;
     }, []);
 
     const handleMessage = useCallback((topic: string, payload: string) => {
@@ -52,7 +57,7 @@ export const useMqttClient = () => {
             case 'JOIN_REJECTED':
                 setRoomState({ status: 'REJECTED', reason: msg.payload.reason });
                 setError(msg.payload.reason || '主持人拒绝了加入请求');
-                handleDisconnect(msg.payload.reason, true);
+                handleDisconnect(msg.payload.reason);
                 break;
             case 'PLAYER_LIST':
                 setPlayerList(msg.payload);
@@ -67,7 +72,7 @@ export const useMqttClient = () => {
                 setSharedImages(prev => [msg.payload as ImageSharePayload, ...prev].slice(0, 10));
                 break;
             case 'ROOM_CLOSED':
-                handleDisconnect('房间已由主持人解散。', false);
+                handleDisconnect('房间已由主持人解散。');
                 break;
         }
     }, [handleDisconnect]);
@@ -128,6 +133,7 @@ export const useMqttClient = () => {
             };
             mqttRef.current.publish(topics.host(rid), packMessage(leftMsg));
         }
+        // Proceed to disconnect, relying on handleDisconnect's timeout to flush the PLAYER_LEFT message
         handleDisconnect();
     }, [handleDisconnect]);
 
