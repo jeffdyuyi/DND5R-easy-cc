@@ -23,16 +23,26 @@ export const RoomHost: React.FC = () => {
     const [showDiceRoller, setShowDiceRoller] = useState(false);
     const [showImageViewer, setShowImageViewer] = useState(false);
 
-    const handleCreateRoom = () => {
-        if (!inputRoomId.trim()) {
-            alert("请输入有效的房间 ID");
+    const handleCreateRoom = (customId?: string) => {
+        const targetId = customId || inputRoomId.trim();
+        if (!targetId) {
+            alert("请输入或生成有效的房间 ID");
             return;
         }
         setIsCreating(true);
-        // Add a slight delay just so React can render the loading state before blocking the thread with Peer creation
-        setTimeout(() => {
-            createRoom(inputRoomId.trim());
-        }, 10);
+        createRoom(targetId);
+    };
+
+    const generateRandomId = () => {
+        const randomId = `dnd-${Math.floor(Math.random() * 100000).toString().padStart(5, '0')}`;
+        setInputRoomId(randomId);
+    };
+
+    const copyRoomId = () => {
+        if (roomId) {
+            navigator.clipboard.writeText(roomId);
+            // Simple visual feedback could be added here
+        }
     };
 
     // Auto reset isCreating if error occurs
@@ -61,18 +71,29 @@ export const RoomHost: React.FC = () => {
                             </div>
                         )}
                         <div className="space-y-6">
-                            <div>
-                                <label className="block text-sm font-bold text-stone-600 mb-2">房间 ID (建议全英文/数字)</label>
-                                <input
-                                    type="text"
-                                    value={inputRoomId}
-                                    onChange={(e) => setInputRoomId(e.target.value.replace(/[^a-zA-Z0-9_-]/g, ''))}
-                                    className="w-full p-4 bg-stone-50 text-stone-900 border border-stone-300 rounded-xl focus:outline-none focus:border-stone-500 focus:ring-1 focus:ring-stone-500 hover:border-stone-400 transition-colors font-bold text-lg text-center shadow-inner font-mono"
-                                    placeholder="例如: dnd-room-123"
-                                />
+                            <div className="flex gap-2">
+                                <div className="flex-1">
+                                    <label className="block text-sm font-bold text-stone-600 mb-2">房间 ID (建议全英文/数字)</label>
+                                    <input
+                                        type="text"
+                                        value={inputRoomId}
+                                        onChange={(e) => setInputRoomId(e.target.value.replace(/[^a-zA-Z0-9_-]/g, ''))}
+                                        className="w-full p-4 bg-stone-50 text-stone-900 border border-stone-300 rounded-xl focus:outline-none focus:border-stone-500 focus:ring-1 focus:ring-stone-500 hover:border-stone-400 transition-colors font-bold text-lg text-center shadow-inner font-mono"
+                                        placeholder="例如: dnd-room-123"
+                                    />
+                                </div>
+                                <div className="flex flex-col justify-end">
+                                    <button
+                                        onClick={generateRandomId}
+                                        className="p-4 bg-stone-100 hover:bg-stone-200 text-stone-600 rounded-xl border border-stone-300 transition-colors"
+                                        title="随机生成"
+                                    >
+                                        <RefreshCw className="w-5 h-5" />
+                                    </button>
+                                </div>
                             </div>
                             <button
-                                onClick={handleCreateRoom}
+                                onClick={() => handleCreateRoom()}
                                 disabled={isCreating}
                                 className={`w-full text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-all mt-6 shadow-md text-lg
                                     ${isCreating ? 'bg-stone-500 cursor-wait' : 'bg-stone-800 hover:bg-stone-900 hover:-translate-y-0.5'}`}
@@ -117,11 +138,12 @@ export const RoomHost: React.FC = () => {
                         <span className="text-stone-400">房间 ID</span>
                         <code className="font-mono text-lg font-bold text-stone-200 select-all">{roomId}</code>
                         <button
-                            className="text-stone-400 hover:text-white transition-colors"
+                            className="bg-stone-700 hover:bg-stone-600 text-white px-3 py-1 rounded-md flex items-center gap-1 transition-all active:scale-95"
                             title="复制"
-                            onClick={() => navigator.clipboard.writeText(roomId)}
+                            onClick={copyRoomId}
                         >
                             <Copy className="w-4 h-4" />
+                            复制分享
                         </button>
                     </div>
 

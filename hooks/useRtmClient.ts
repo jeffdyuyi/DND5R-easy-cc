@@ -33,7 +33,8 @@ export const useRtmClient = () => {
     }, []);
 
 
-    const handleMessage = useCallback((event: any) => {
+    const handleMessageInternal = useCallback((event: any) => {
+        console.log('RTM Client Received Message:', event);
         const msg = unpackMessage<RoomMessage>(event.message);
         if (!msg) return;
 
@@ -67,6 +68,11 @@ export const useRtmClient = () => {
         }
     }, [handleDisconnect]);
 
+    const handleMessageRef = useRef(handleMessageInternal);
+    useEffect(() => {
+        handleMessageRef.current = handleMessageInternal;
+    }, [handleMessageInternal]);
+
     const connectToRoom = useCallback(async (targetRoomId: string, character: CharacterData) => {
         setRoomState({ status: 'CONNECTING' });
         setError(null);
@@ -84,8 +90,6 @@ export const useRtmClient = () => {
             await client.subscribe(targetRoomId);
             await client.subscribe(myId);
 
-            client.addEventListener('message', handleMessage);
-
             setRoomState({ status: 'WAITING_APPROVAL' });
 
             // Send join request to "host" (simulated via room channel or naming convention)
@@ -100,11 +104,8 @@ export const useRtmClient = () => {
             };
 
             await client.publish(targetRoomId, packMessage(joinMsg));
-        } catch (err: any) {
-            setError(`连接失败: ${err.message}`);
-            setRoomState({ status: 'DISCONNECTED' });
         }
-    }, [handleMessage]);
+    }, [handleMessageInternal]);
 
     const disconnect = useCallback(() => {
         if (clientRef.current && roomId) {
@@ -132,6 +133,18 @@ export const useRtmClient = () => {
             clientRef.current.publish(roomId, packMessage(msg));
         }
     }, [roomId]);
+
+    useEffect(() => {
+        const client = clientRef.current;
+        if (!client) return;
+
+        const listener = (event: any) => handleMessageRef.current(event);
+        client.addEventListener('message', listener);
+
+        return () => {
+            client.removeEventListener('message', listener);
+        };
+    }, [roomState.status]); // Re-bind on state changes
 
     useEffect(() => {
         return () => {

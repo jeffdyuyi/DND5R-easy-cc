@@ -56,7 +56,25 @@ export const useRtmHost = () => {
         }
     }, []);
 
-    const handleMessage = useCallback((event: any) => {
+    const handlePlayerLeft = useCallback((peerId: string) => {
+        setPendingPlayers(prev => prev.filter(p => p.peerId !== peerId));
+        setConnectedPlayers(current => {
+            const newList = current.filter(p => p.peerId !== peerId);
+            const listPayload = newList.map(p => ({
+                peerId: p.peerId,
+                name: p.playerName,
+                characterName: p.character.name,
+                class: p.character.className,
+                level: p.character.level,
+                avatarDataUrl: p.character.avatarDataUrl
+            }));
+            broadcast('PLAYER_LIST', listPayload);
+            return newList;
+        });
+    }, [broadcast]);
+
+    const handleMessageInternal = useCallback((event: any) => {
+        console.log('RTM Host Received Message:', event);
         const msg = unpackMessage<RoomMessage>(event.message);
         if (!msg) return;
 
@@ -80,24 +98,13 @@ export const useRtmHost = () => {
                 broadcast('DICE_ROLL', msg.payload);
                 break;
         }
-    }, [broadcast]);
+    }, [handlePlayerLeft, broadcast]);
 
-    const handlePlayerLeft = useCallback((peerId: string) => {
-        setPendingPlayers(prev => prev.filter(p => p.peerId !== peerId));
-        setConnectedPlayers(current => {
-            const newList = current.filter(p => p.peerId !== peerId);
-            const listPayload = newList.map(p => ({
-                peerId: p.peerId,
-                name: p.playerName,
-                characterName: p.character.name,
-                class: p.character.className,
-                level: p.character.level,
-                avatarDataUrl: p.character.avatarDataUrl
-            }));
-            broadcast('PLAYER_LIST', listPayload);
-            return newList;
-        });
-    }, [broadcast]);
+    // Use ref to always have latest handleMessage in the event listener
+    const handleMessageRef = useRef(handleMessageInternal);
+    useEffect(() => {
+        handleMessageRef.current = handleMessageInternal;
+    }, [handleMessageInternal]);
 
     const createRoom = useCallback(async (customId?: string) => {
         setError(null);
@@ -108,21 +115,18 @@ export const useRtmHost = () => {
             const service = new AgoraRtmService(hostId);
             const client = await service.login();
 
-            rtmServiceRef.current = service;
-            clientRef.current = client;
+            console.log(`RTM Host Login as ${hostId}, subscribing to ${newRoomId}`);
 
             // Subscribe to room channel for messages from players
             await client.subscribe(newRoomId);
             // Also subscribe to own ID for private messages (like join requests)
             await client.subscribe(hostId);
 
-            client.addEventListener('message', handleMessage);
-
             setRoomId(newRoomId);
         } catch (err: any) {
             setError(`创建房间失败: ${err.message}`);
         }
-    }, [handleMessage]);
+    }, []);
 
     const acceptPlayer = useCallback((peerId: string) => {
         let acceptedPlayer: ConnectedPlayer | undefined;
@@ -181,6 +185,18 @@ export const useRtmHost = () => {
         setConnectedPlayers([]);
         setPendingPlayers([]);
     }, [roomId, broadcast]);
+
+    useEffect(() => {
+        const client = clientRef.current;
+        if (!client) return;
+
+        const listener = (event: any) => handleMessageRef.current(event);
+        client.addEventListener('message', listener);
+
+        return () => {
+            client.removeEventListener('message', listener);
+        };
+    }, [roomId]); // Re-bind when roomId changes
 
     useEffect(() => {
         return () => {
