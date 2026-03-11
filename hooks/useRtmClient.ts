@@ -104,6 +104,9 @@ export const useRtmClient = () => {
             };
 
             await client.publish(targetRoomId, packMessage(joinMsg));
+        } catch (err: any) {
+            setError(`连接失败: ${err.message}`);
+            setRoomState({ status: 'DISCONNECTED' });
         }
     }, [handleMessageInternal]);
 

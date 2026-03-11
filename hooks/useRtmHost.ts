@@ -115,6 +115,9 @@ export const useRtmHost = () => {
             const service = new AgoraRtmService(hostId);
             const client = await service.login();
 
+            rtmServiceRef.current = service;
+            clientRef.current = client;
+
             console.log(`RTM Host Login as ${hostId}, subscribing to ${newRoomId}`);
 
             // Subscribe to room channel for messages from players
