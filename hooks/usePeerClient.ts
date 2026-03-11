@@ -40,7 +40,18 @@ export const usePeerClient = () => {
         setRoomState({ status: 'CONNECTING' });
         setError(null);
 
-        const newPeer = new Peer({ debug: 2 });
+        const newPeer = new Peer({
+            debug: 1,
+            config: {
+                iceServers: [
+                    { urls: 'stun:stun.l.google.com:19302' }, // 谷歌备用
+                    { urls: 'stun:stun.qq.com:3478' },       // 腾讯
+                    { urls: 'stun:stun.miwifi.com:3478' },   // 小米
+                    { urls: 'stun:stun.cdn.he.net:3478' },   // HE
+                    { urls: 'stun:stun.xten.com' }
+                ]
+            }
+        });
 
         newPeer.on('open', (id) => {
             setPeer(newPeer);

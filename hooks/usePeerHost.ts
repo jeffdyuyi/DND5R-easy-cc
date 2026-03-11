@@ -107,6 +107,7 @@ export const usePeerHost = () => {
     }, [broadcast]);
 
     const createRoom = useCallback((customId?: string) => {
+        setError(null);
         setPeer(currentPeer => {
             if (currentPeer) currentPeer.destroy();
             return null;
@@ -115,7 +116,15 @@ export const usePeerHost = () => {
         const newRoomId = customId || `dnd5r-${Math.floor(Math.random() * 100000).toString().padStart(5, '0')}`;
         const newPeer = new Peer(newRoomId, {
             debug: 1,
-            // You can specify secondary STUN/TURN servers here if needed, but defaults are usually okay
+            config: {
+                iceServers: [
+                    { urls: 'stun:stun.l.google.com:19302' }, // 谷歌备用
+                    { urls: 'stun:stun.qq.com:3478' },       // 腾讯
+                    { urls: 'stun:stun.miwifi.com:3478' },   // 小米
+                    { urls: 'stun:stun.cdn.he.net:3478' },   // HE
+                    { urls: 'stun:stun.xten.com' }
+                ]
+            }
         });
 
         const timeoutId = setTimeout(() => {
