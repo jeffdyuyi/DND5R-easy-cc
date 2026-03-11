@@ -2,12 +2,13 @@ import { useState, useEffect } from 'react';
 import { AppProviders } from './contexts/AppProviders';
 import { PlayerView } from './components/PlayerView';
 import { GMView } from './components/GMView';
+import { RoomView } from './components/RoomView';
 import { WelcomeScreen } from './components/common/WelcomeScreen';
 import { Home } from 'lucide-react';
 
 function App() {
-  const [activeTab, setActiveTab] = useState<'player' | 'gm'>(() => {
-    return (localStorage.getItem('dnd_active_tab') as 'player' | 'gm') || 'player';
+  const [activeTab, setActiveTab] = useState<'player' | 'gm' | 'room'>(() => {
+    return (localStorage.getItem('dnd_active_tab') as 'player' | 'gm' | 'room') || 'player';
   });
 
   const [hasEntered, setHasEntered] = useState(() => {
@@ -56,6 +57,15 @@ function App() {
             >
               <span className="mr-2">🛡️</span> 主持人端
             </button>
+            <button
+              onClick={() => setActiveTab('room')}
+              className={`px-6 py-3 font-bold rounded-t-lg transition-colors duration-200 border-x border-t ${activeTab === 'room'
+                ? 'bg-gray-900 text-yellow-400 border-gray-700 border-b-transparent relative top-[1px]'
+                : 'bg-gray-800 text-gray-400 border-transparent hover:text-gray-200 hover:bg-gray-700'
+                }`}
+            >
+              <span className="mr-2">🏰</span> 房间
+            </button>
           </div>
           <div className="text-xl font-bold font-serif text-gray-300 pb-3 flex flex-col items-end leading-tight">
             <div className="flex items-center gap-3">
@@ -75,7 +85,9 @@ function App() {
 
         {/* Main Content Area */}
         <div className="flex-1 relative overflow-hidden bg-gray-900 z-10 flex">
-          {activeTab === 'player' ? <PlayerView /> : <GMView />}
+          {activeTab === 'player' && <PlayerView />}
+          {activeTab === 'gm' && <GMView />}
+          {activeTab === 'room' && <RoomView />}
         </div>
       </div>
     </AppProviders>

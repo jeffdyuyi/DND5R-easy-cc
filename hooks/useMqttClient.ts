@@ -1,10 +1,9 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { RTMClient } from 'agora-rtm-sdk';
-import { AgoraRtmService, packMessage, unpackMessage } from '../utils/agoraRtm';
+import { MqttService, topics, packMessage, unpackMessage } from '../utils/mqttService';
 import { RoomMessage, DiceRollPayload, ImageSharePayload } from '../types/room';
 import { CharacterData } from '../types';
 
-export const useRtmClient = () => {
+export const useMqttClient = () => {
     const [isConnected, setIsConnected] = useState(false);
     const [roomId, setRoomId] = useState<string | null>(null);
     const [roomState, setRoomState] = useState({
@@ -12,42 +11,44 @@ export const useRtmClient = () => {
     });
     const [error, setError] = useState<string | null>(null);
 
-    // Remote state from GM
     const [remoteCharacter, setRemoteCharacter] = useState<CharacterData | null>(null);
     const [playerList, setPlayerList] = useState<any[]>([]);
     const [diceHistory, setDiceHistory] = useState<DiceRollPayload[]>([]);
     const [sharedImages, setSharedImages] = useState<ImageSharePayload[]>([]);
 
-    const rtmServiceRef = useRef<AgoraRtmService | null>(null);
-    const clientRef = useRef<RTMClient | null>(null);
+    const mqttRef = useRef<MqttService | null>(null);
     const characterRef = useRef<CharacterData | null>(null);
+    const roomIdRef = useRef<string | null>(null);
+    const myIdRef = useRef<string>('');
+
+    useEffect(() => { roomIdRef.current = roomId; }, [roomId]);
 
     const handleDisconnect = useCallback((reason?: string) => {
         setIsConnected(false);
         setRoomState({ status: 'DISCONNECTED' });
         if (reason) setError(reason);
         setRoomId(null);
-        rtmServiceRef.current?.logout();
-        rtmServiceRef.current = null;
-        clientRef.current = null;
+        mqttRef.current?.disconnect();
+        mqttRef.current = null;
     }, []);
 
-
-    const handleMessageInternal = useCallback((event: any) => {
-        console.log('RTM Client Received Message:', event);
-        const msg = unpackMessage<RoomMessage>(event.message);
+    const handleMessage = useCallback((topic: string, payload: string) => {
+        const msg = unpackMessage<RoomMessage>(payload);
         if (!msg) return;
+        // Ignore own messages (when we publish to broadcast)
+        if (msg.senderId === myIdRef.current) return;
+
+        console.log('[MQTT Client] Received:', topic, msg.type);
 
         switch (msg.type) {
             case 'JOIN_ACCEPTED':
                 setIsConnected(true);
                 setRoomState({ status: 'CONNECTED' });
-                setRoomId(msg.payload.roomId);
                 setRemoteCharacter(characterRef.current);
                 break;
             case 'JOIN_REJECTED':
                 setRoomState({ status: 'REJECTED' });
-                setError(msg.payload.reason || 'Join rejected by GM');
+                setError(msg.payload.reason || '主持人拒绝了加入请求');
                 handleDisconnect();
                 break;
             case 'PLAYER_LIST':
@@ -68,33 +69,34 @@ export const useRtmClient = () => {
         }
     }, [handleDisconnect]);
 
-    const handleMessageRef = useRef(handleMessageInternal);
-    useEffect(() => {
-        handleMessageRef.current = handleMessageInternal;
-    }, [handleMessageInternal]);
+    const handleMessageRef = useRef(handleMessage);
+    useEffect(() => { handleMessageRef.current = handleMessage; }, [handleMessage]);
 
     const connectToRoom = useCallback(async (targetRoomId: string, character: CharacterData) => {
         setRoomState({ status: 'CONNECTING' });
         setError(null);
         characterRef.current = character;
 
-        const myId = `player-${Math.floor(Math.random() * 10000).toString()}`;
+        const myId = `player-${Date.now().toString(36)}`;
+        myIdRef.current = myId;
 
         try {
-            const service = new AgoraRtmService(myId);
-            const client = await service.login();
-            rtmServiceRef.current = service;
-            clientRef.current = client;
+            const service = new MqttService(myId);
+            await service.connect();
 
-            // Subscribe to room channel and own ID
-            await client.subscribe(targetRoomId);
-            await client.subscribe(myId);
+            mqttRef.current = service;
+            setRoomId(targetRoomId);
+
+            // Subscribe to broadcast (room-wide messages) and own private topic
+            service.subscribe(topics.broadcast(targetRoomId));
+            service.subscribe(topics.player(targetRoomId, myId));
+
+            const handler = (topic: string, payload: string) => handleMessageRef.current(topic, payload);
+            service.onMessage(handler);
 
             setRoomState({ status: 'WAITING_APPROVAL' });
 
-            // Send join request to "host" (simulated via room channel or naming convention)
-            // Convention: The host is subcribed to the channel, we blast a request or target the host if ID known.
-            // In our current host hook, host listens to roomId channel for requests.
+            // Send join request to host topic
             const joinMsg: RoomMessage = {
                 type: 'JOIN_REQUEST',
                 senderId: myId,
@@ -102,58 +104,47 @@ export const useRtmClient = () => {
                 timestamp: Date.now(),
                 payload: { character }
             };
+            service.publish(topics.host(targetRoomId), packMessage(joinMsg));
 
-            await client.publish(targetRoomId, packMessage(joinMsg));
+            console.log(`[MQTT Client] Join request sent to room ${targetRoomId}`);
         } catch (err: any) {
-            setError(`连接失败: ${err.message}`);
+            setError(`连接失败: ${err.message || '无法连接到消息服务器'}`);
             setRoomState({ status: 'DISCONNECTED' });
         }
-    }, [handleMessageInternal]);
+    }, []);
 
     const disconnect = useCallback(() => {
-        if (clientRef.current && roomId) {
+        const rid = roomIdRef.current;
+        if (mqttRef.current && rid) {
             const leftMsg: RoomMessage = {
                 type: 'PLAYER_LEFT',
-                senderId: rtmServiceRef.current?.getUserId() || 'unknown',
+                senderId: myIdRef.current,
                 senderName: characterRef.current?.name || 'Player',
                 timestamp: Date.now(),
                 payload: {}
             };
-            clientRef.current.publish(roomId, packMessage(leftMsg));
+            mqttRef.current.publish(topics.host(rid), packMessage(leftMsg));
         }
         handleDisconnect();
-    }, [roomId, handleDisconnect]);
+    }, [handleDisconnect]);
 
     const rollDice = useCallback((payload: DiceRollPayload) => {
-        if (clientRef.current && roomId) {
+        const rid = roomIdRef.current;
+        if (mqttRef.current && rid) {
             const msg: RoomMessage = {
                 type: 'DICE_ROLL',
-                senderId: rtmServiceRef.current?.getUserId() || 'unknown',
+                senderId: myIdRef.current,
                 senderName: characterRef.current?.name || 'Player',
                 timestamp: Date.now(),
                 payload
             };
-            clientRef.current.publish(roomId, packMessage(msg));
+            mqttRef.current.publish(topics.broadcast(rid), packMessage(msg));
         }
-    }, [roomId]);
-
-    useEffect(() => {
-        const client = clientRef.current;
-        if (!client) return;
-
-        const listener = (event: any) => handleMessageRef.current(event);
-        client.addEventListener('message', listener);
-
-        return () => {
-            client.removeEventListener('message', listener);
-        };
-    }, [roomState.status]); // Re-bind on state changes
+    }, []);
 
     useEffect(() => {
         return () => {
-            if (rtmServiceRef.current) {
-                rtmServiceRef.current.logout();
-            }
+            mqttRef.current?.disconnect();
         };
     }, []);
 

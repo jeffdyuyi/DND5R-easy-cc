@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { GMSidebar } from './GMSidebar';
-import { RoomHost } from './RoomHost';
 import { LibraryManager } from './LibraryManager';
 import {
     ClassDetailView, SpeciesDetailView, BackgroundDetailView,
@@ -15,7 +14,7 @@ import { useSpellFilter, useFeatFilter, useItemFilter, useMagicItemFilter } from
 import { Feather, Menu } from 'lucide-react';
 
 export const GMView: React.FC = () => {
-    const [activeModule, setActiveModule] = useState('room-manage');
+    const [activeModule, setActiveModule] = useState('lib-class');
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
     const {
@@ -31,8 +30,6 @@ export const GMView: React.FC = () => {
 
     const renderContent = () => {
         switch (activeModule) {
-            case 'room-manage':
-                return <RoomHost />;
             case 'lib-class':
                 return (
                     <LibraryManager<ClassItem>

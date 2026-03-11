@@ -1,23 +1,20 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
-import { useRtmHost, ConnectedPlayer } from '../hooks/useRtmHost';
-import { useRtmClient } from '../hooks/useRtmClient';
+import { useMqttHost, ConnectedPlayer } from '../hooks/useMqttHost';
+import { useMqttClient } from '../hooks/useMqttClient';
 import { CharacterData } from '../types';
 import { RoomMessageType, DiceRollPayload, ImageSharePayload } from '../types/room';
 
-// PendingPlayer is same as ConnectedPlayer in our RTM implementation simpler approach
 type PendingPlayer = ConnectedPlayer;
 
 interface RoomContextType {
-    // Mode
     role: 'host' | 'client' | null;
     setRole: (role: 'host' | 'client' | null) => void;
 
-    // Common
     roomId: string | null;
     error: string | null;
     diceHistory: DiceRollPayload[];
 
-    // Host specifics
+    // Host
     hostPendingPlayers: PendingPlayer[];
     hostConnectedPlayers: ConnectedPlayer[];
     createRoom: (customId?: string) => Promise<void>;
@@ -29,7 +26,7 @@ interface RoomContextType {
     hostUpdateCharacter: (peerId: string, char: CharacterData) => void;
     hostRollDice: (payload: DiceRollPayload) => void;
 
-    // Client specifics
+    // Client
     clientState: { status: string };
     clientIsConnected: boolean;
     clientRemoteCharacter: CharacterData | null;
@@ -45,10 +42,9 @@ const RoomContext = createContext<RoomContextType | undefined>(undefined);
 export const RoomProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
     const [role, setRole] = useState<'host' | 'client' | null>(null);
 
-    const hostHook = useRtmHost();
-    const clientHook = useRtmClient();
+    const hostHook = useMqttHost();
+    const clientHook = useMqttClient();
 
-    // The shared states will come from whoever is active
     const roomId = role === 'host' ? hostHook.roomId : clientHook.roomId;
     const error = role === 'host' ? hostHook.error : clientHook.error;
     const diceHistory = role === 'host' ? hostHook.diceHistory : clientHook.diceHistory;

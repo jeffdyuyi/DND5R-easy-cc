@@ -2,7 +2,7 @@ import React from 'react';
 import {
     Shield, Book, Backpack, Zap, Crown,
     Sword, FlaskConical, Scroll, Star, Hammer,
-    TowerControl, X, Feather
+    X, Feather
 } from 'lucide-react';
 
 interface Props {
@@ -13,8 +13,6 @@ interface Props {
 }
 
 const MENU_ITEMS = [
-    { id: 'room-manage', label: '房间管理', icon: <TowerControl className="w-5 h-5" /> },
-    { type: 'divider' },
     { id: 'lib-class', label: '职业库', icon: <Shield className="w-5 h-5" /> },
     { id: 'lib-subclass', label: '子职业库', icon: <Star className="w-5 h-5" /> },
     { id: 'lib-species', label: '种族库', icon: <Crown className="w-5 h-5" /> },

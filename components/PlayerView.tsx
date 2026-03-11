@@ -4,7 +4,6 @@ import { CharacterSheet } from './CharacterSheet';
 import { CardLibrary } from './CardLibrary';
 import CharacterWizard from './CharacterWizard';
 import SpellbookManager from './TabSpells';
-import { RoomJoin } from './RoomJoin';
 
 import { useLibrary } from '../contexts/LibraryContext';
 import { useCharacters } from '../contexts/CharacterContext';
@@ -123,12 +122,6 @@ export const PlayerView: React.FC = () => {
                             setActiveCharId={setActiveCharId}
                             updateCharacter={updateCharacter}
                         />
-                    </div>
-                );
-            case 'room-join':
-                return (
-                    <div className="animate-fade-in p-8">
-                        <RoomJoin />
                     </div>
                 );
             default:

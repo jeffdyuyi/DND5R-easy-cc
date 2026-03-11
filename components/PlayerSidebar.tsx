@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    User, Flame, DoorOpen, X, Feather
+    User, Flame, X, Feather
 } from 'lucide-react';
 
 interface Props {
@@ -13,8 +13,6 @@ interface Props {
 const MENU_ITEMS = [
     { id: 'sheet', label: '角色卡', icon: <User className="w-5 h-5" /> },
     { id: 'spellbook', label: '法术书', icon: <Flame className="w-5 h-5" /> },
-    { type: 'divider' },
-    { id: 'room-join', label: '加入房间', icon: <DoorOpen className="w-5 h-5" /> },
 ];
 
 export const PlayerSidebar: React.FC<Props> = ({ activeModule, setActiveModule, isOpen = false, onClose }) => {
@@ -44,10 +42,7 @@ export const PlayerSidebar: React.FC<Props> = ({ activeModule, setActiveModule, 
                 </div>
 
                 <nav className="flex-grow p-4 space-y-1 overflow-y-auto custom-scrollbar">
-                    {MENU_ITEMS.map((item, idx) => {
-                        if (item.type === 'divider') {
-                            return <div key={idx} className="h-px bg-stone-700 my-3 mx-2" />;
-                        }
+                    {MENU_ITEMS.map((item) => {
                         return (
                             <button
                                 key={item.id}
