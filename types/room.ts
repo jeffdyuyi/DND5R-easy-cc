@@ -15,7 +15,7 @@ export type RoomMessageType =
 /** 消息信封 */
 export interface RoomMessage {
     type: RoomMessageType;
-    senderId: string;       // 发送者 Peer ID
+    senderId: string;       // 发送者 RTM User ID
     senderName: string;     // 显示名称
     timestamp: number;
     payload: any;           // 具体数据，根据 type 不同而不同

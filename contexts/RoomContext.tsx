@@ -1,8 +1,11 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
-import { usePeerHost, PendingPlayer, ConnectedPlayer } from '../hooks/usePeerHost';
-import { usePeerClient } from '../hooks/usePeerClient';
+import { useRtmHost, ConnectedPlayer } from '../hooks/useRtmHost';
+import { useRtmClient } from '../hooks/useRtmClient';
 import { CharacterData } from '../types';
 import { RoomMessageType, DiceRollPayload, ImageSharePayload } from '../types/room';
+
+// PendingPlayer is same as ConnectedPlayer in our RTM implementation simpler approach
+type PendingPlayer = ConnectedPlayer;
 
 interface RoomContextType {
     // Mode
@@ -17,7 +20,7 @@ interface RoomContextType {
     // Host specifics
     hostPendingPlayers: PendingPlayer[];
     hostConnectedPlayers: ConnectedPlayer[];
-    createRoom: (customId?: string) => void;
+    createRoom: (customId?: string) => Promise<void>;
     closeRoom: () => void;
     acceptPlayer: (peerId: string) => void;
     rejectPlayer: (peerId: string) => void;
@@ -32,7 +35,7 @@ interface RoomContextType {
     clientRemoteCharacter: CharacterData | null;
     clientPlayerList: any[];
     clientSharedImages: ImageSharePayload[];
-    connectToRoom: (roomId: string, character: CharacterData) => void;
+    connectToRoom: (roomId: string, character: CharacterData) => Promise<void>;
     disconnectFromRoom: () => void;
     clientRollDice: (payload: DiceRollPayload) => void;
 }
@@ -42,8 +45,8 @@ const RoomContext = createContext<RoomContextType | undefined>(undefined);
 export const RoomProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
     const [role, setRole] = useState<'host' | 'client' | null>(null);
 
-    const hostHook = usePeerHost();
-    const clientHook = usePeerClient();
+    const hostHook = useRtmHost();
+    const clientHook = useRtmClient();
 
     // The shared states will come from whoever is active
     const roomId = role === 'host' ? hostHook.roomId : clientHook.roomId;
