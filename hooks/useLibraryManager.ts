@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useLocalStorage } from './useLocalStorage';
 
 export interface LibraryHandler<T extends { id: string }> {
     items: T[];
@@ -6,11 +6,11 @@ export interface LibraryHandler<T extends { id: string }> {
     onUpdate: (item: T) => void;
     onDelete: (id: string) => void;
     onImport: (newItems: T[]) => void;
-    setItems: React.Dispatch<React.SetStateAction<T[]>>;
+    setItems: (value: T[] | ((val: T[]) => T[])) => void;
 }
 
-export function useLibraryManager<T extends { id: string }>(initialItems: T[]): LibraryHandler<T> {
-    const [items, setItems] = useState<T[]>(initialItems);
+export function useLibraryManager<T extends { id: string }>(key: string, initialItems: T[]): LibraryHandler<T> {
+    const [items, setItems] = useLocalStorage<T[]>(key, initialItems);
 
     const onAdd = (item: T) => setItems(prev => [...prev, item]);
 

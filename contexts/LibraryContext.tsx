@@ -26,18 +26,18 @@ interface LibraryContextType {
 const LibraryContext = createContext<LibraryContextType | null>(null);
 
 export const LibraryProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-    const classes = useLibraryManager(CLASS_DB);
-    const subclasses = useLibraryManager(SUBCLASS_DB);
-    const species = useLibraryManager(SPECIES_DB);
-    const backgrounds = useLibraryManager(BACKGROUND_DB);
-    const spells = useLibraryManager(SPELL_DB);
-    const feats = useLibraryManager(FEAT_DB);
+    const classes = useLibraryManager('dnd_lib_classes', CLASS_DB);
+    const subclasses = useLibraryManager('dnd_lib_subclasses', SUBCLASS_DB);
+    const species = useLibraryManager('dnd_lib_species', SPECIES_DB);
+    const backgrounds = useLibraryManager('dnd_lib_backgrounds', BACKGROUND_DB);
+    const spells = useLibraryManager('dnd_lib_spells', SPELL_DB);
+    const feats = useLibraryManager('dnd_lib_feats', FEAT_DB);
 
-    const weapons = useLibraryManager(WEAPON_DB);
-    const armors = useLibraryManager(ARMOR_DB);
-    const tools = useLibraryManager(TOOL_DB);
-    const gears = useLibraryManager(GEAR_DB);
-    const magicItems = useLibraryManager(MAGIC_ITEM_DB);
+    const weapons = useLibraryManager('dnd_lib_items_weapons', WEAPON_DB);
+    const armors = useLibraryManager('dnd_lib_items_armor', ARMOR_DB);
+    const tools = useLibraryManager('dnd_lib_items_tools', TOOL_DB);
+    const gears = useLibraryManager('dnd_lib_items_gear', GEAR_DB);
+    const magicItems = useLibraryManager('dnd_lib_items_magic', MAGIC_ITEM_DB);
 
     // Derived aggregations
     const allTools = [...tools.items, ...weapons.items, ...armors.items, ...gears.items, ...magicItems.items];
