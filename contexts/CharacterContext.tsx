@@ -112,6 +112,7 @@ export const INITIAL_CHARACTER: CharacterData = {
         other: [],
     },
     selections: {},
+    achievements: [],
 };
 
 interface CharacterContextType {

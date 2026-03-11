@@ -15,6 +15,13 @@ function App() {
     return localStorage.getItem('dnd_has_entered_v1') === 'true';
   });
 
+  const [hasUnlockedRoom, setHasUnlockedRoom] = useState(() => {
+    return localStorage.getItem('dnd_room_unlocked') === 'true';
+  });
+
+  const [roomPasswordInput, setRoomPasswordInput] = useState('');
+  const [roomPasswordError, setRoomPasswordError] = useState(false);
+
   useEffect(() => {
     localStorage.setItem('dnd_active_tab', activeTab);
   }, [activeTab]);
@@ -22,6 +29,16 @@ function App() {
   const handleReturnHome = () => {
     localStorage.removeItem('dnd_has_entered_v1');
     setHasEntered(false);
+  };
+
+  const handleRoomUnlock = () => {
+    if (roomPasswordInput === '261751459') {
+      localStorage.setItem('dnd_room_unlocked', 'true');
+      setHasUnlockedRoom(true);
+      setRoomPasswordError(false);
+    } else {
+      setRoomPasswordError(true);
+    }
   };
 
   if (!hasEntered) {
@@ -87,7 +104,45 @@ function App() {
         <div className="flex-1 relative overflow-hidden bg-gray-900 z-10 flex">
           {activeTab === 'player' && <PlayerView />}
           {activeTab === 'gm' && <GMView />}
-          {activeTab === 'room' && <RoomView />}
+
+          {activeTab === 'room' && (
+            hasUnlockedRoom ? (
+              <RoomView />
+            ) : (
+              <div className="w-full h-full flex items-center justify-center bg-stone-900">
+                <div className="bg-stone-800 p-8 rounded-xl shadow-2xl border border-stone-700 max-w-sm w-full animate-in fade-in zoom-in duration-300">
+                  <h2 className="text-2xl font-bold text-white mb-2 text-center">进入跑团室</h2>
+                  <p className="text-stone-400 text-sm text-center mb-6">请输入房间通行暗号以解锁功能</p>
+
+                  <div className="space-y-4">
+                    <input
+                      type="password"
+                      value={roomPasswordInput}
+                      onChange={(e) => {
+                        setRoomPasswordInput(e.target.value);
+                        setRoomPasswordError(false);
+                      }}
+                      onKeyDown={(e) => e.key === 'Enter' && handleRoomUnlock()}
+                      placeholder="输入密码"
+                      className={`w-full p-3 bg-stone-900 border rounded-lg text-white font-mono text-center tracking-widest focus:outline-none focus:ring-2 ${roomPasswordError ? 'border-red-500 focus:ring-red-500' : 'border-stone-600 focus:ring-yellow-500'}`}
+                    />
+                    {roomPasswordError && (
+                      <p className="text-red-400 text-xs text-center animate-pulse">密码不正确，请联系作者获取</p>
+                    )}
+                    {!roomPasswordError && (
+                      <p className="text-stone-500 text-xs text-center">提示：不咕鸟trpg创想产品设计部群号</p>
+                    )}
+                    <button
+                      onClick={handleRoomUnlock}
+                      className="w-full py-3 bg-yellow-600 hover:bg-yellow-500 text-stone-900 font-bold rounded-lg transition-colors shadow-lg"
+                    >
+                      解锁房间
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )
+          )}
         </div>
       </div>
     </AppProviders>

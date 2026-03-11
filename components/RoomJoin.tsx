@@ -8,7 +8,7 @@ import { calculateACOptions, getModifier } from '../utils/rules';
 export const RoomJoin: React.FC = () => {
     const {
         clientState, clientIsConnected, connectToRoom, disconnectFromRoom,
-        roomId, error, clientRemoteCharacter, clientSharedImages
+        roomId, error, clientRemoteCharacter, clientSharedImages, clientRollDice
     } = useRoom();
     const { characters, updateCharacter, importCharacters } = useCharacters();
 

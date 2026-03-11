@@ -32,6 +32,10 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onEnter }) => {
                                     本工具由 <strong>不咕鸟（基德）</strong> 开发。内容基于 <strong>DND不全书 (5echm)</strong> 及 D&D 5E (2024) 规则，辅以 AI 技术制作。
                                     <br /><br />
                                     本工具仅供 <strong>个人及亲友团</strong> 快速建卡与跑团交流使用，<span className="text-dndRed font-bold">严禁用于商业用途</span>。所有官方规则版权归原作者(WotC)所有。
+                                    <br /><br />
+                                    <a href="https://ifdian.net/a/nogubird" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-sm text-yellow-600 hover:text-yellow-700 font-bold bg-yellow-50 hover:bg-yellow-100 px-3 py-1.5 rounded-full transition-colors border border-yellow-200">
+                                        ⭐ 帮助作者更好创作 (感谢发电)
+                                    </a>
                                 </p>
                             </div>
                         </div>
