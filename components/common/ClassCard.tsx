@@ -91,8 +91,15 @@ export const ClassCard: React.FC<Props> = ({ item, type, isSelected, onClick, ac
 
                 {/* Selected Check */}
                 {isSelected && (
-                    <div className="bg-white rounded-full p-0.5 text-green-600 shadow-sm relative z-10">
+                    <div className="bg-white rounded-full p-0.5 text-green-600 shadow-sm relative z-10 w-6 h-6 flex items-center justify-center">
                         <CheckCircle className="w-5 h-5" />
+                    </div>
+                )}
+
+                {/* Edit / Delete Actions Unified Top Right */}
+                {!isSelected && actions && (
+                    <div className="absolute top-2 right-2 z-20 opacity-0 group-hover:opacity-100 transition-opacity">
+                        {actions}
                     </div>
                 )}
             </div>
@@ -103,10 +110,6 @@ export const ClassCard: React.FC<Props> = ({ item, type, isSelected, onClick, ac
                     {icon}
                 </div>
 
-                {/* Edit / Delete Actions */}
-                <div className="mb-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                    {actions}
-                </div>
             </div>
 
             {/* Body */}

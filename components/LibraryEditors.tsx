@@ -4,6 +4,47 @@ import { ClassItem, SubclassItem, ClassFeature, BackgroundItem, FeatItem, SpellI
 import { Plus, Trash2, BookOpen, AlertTriangle } from 'lucide-react';
 import { CLASS_DB } from '../data';
 
+// --- Markdown Wrapper ---
+export const MarkdownTextarea = ({ value, onChange, className, placeholder }: any) => {
+   const textareaRef = React.useRef<HTMLTextAreaElement>(null);
+
+   const handleInsert = (e: React.MouseEvent, prefix: string, suffix: string = '') => {
+      e.preventDefault();
+      const textarea = textareaRef.current;
+      if (!textarea) return;
+      const start = textarea.selectionStart;
+      const end = textarea.selectionEnd;
+      const selected = value.substring(start, end);
+      const output = value.substring(0, start) + prefix + selected + suffix + value.substring(end);
+
+      onChange({ target: { value: output } });
+      setTimeout(() => {
+         textarea.focus();
+         textarea.setSelectionRange(start + prefix.length, end + prefix.length);
+      }, 0);
+   };
+
+   return (
+      <div className="flex flex-col border border-stone-300 rounded focus-within:border-dndRed overflow-hidden bg-white shadow-sm">
+         <div className="flex gap-1 bg-stone-50 p-1.5 border-b border-stone-200">
+            <button type="button" onMouseDown={(e) => handleInsert(e, '**', '**')} className="px-2.5 py-1 hover:bg-stone-200 rounded font-bold text-xs text-stone-700 transition-colors" title="加粗">B</button>
+            <button type="button" onMouseDown={(e) => handleInsert(e, '*', '*')} className="px-2.5 py-1 hover:bg-stone-200 rounded italic text-xs text-stone-700 transition-colors" title="斜体">I</button>
+            <button type="button" onMouseDown={(e) => handleInsert(e, '\n| 列头 | 列头 |\n| :--- | :--- |\n| 内容 | 内容 |\n')} className="px-2.5 py-1 hover:bg-stone-200 rounded font-mono text-xs text-stone-700 transition-colors" title="插入表格">表格</button>
+            <button type="button" onMouseDown={(e) => handleInsert(e, '***\n')} className="px-2.5 py-1 hover:bg-stone-200 rounded font-mono text-xs text-stone-700 transition-colors tracking-widest" title="分割线">---</button>
+            <button type="button" onMouseDown={(e) => handleInsert(e, '### ')} className="px-2.5 py-1 hover:bg-stone-200 rounded font-bold text-xs text-stone-700 transition-colors" title="小标题">H3</button>
+            <button type="button" onMouseDown={(e) => handleInsert(e, '> ')} className="px-2.5 py-1 hover:bg-stone-200 rounded font-serif text-xs text-stone-700 transition-colors" title="引用">❞</button>
+         </div>
+         <textarea
+            ref={textareaRef}
+            value={value}
+            onChange={onChange}
+            className={`${className} border-0 rounded-none focus:ring-0`}
+            placeholder={placeholder}
+         />
+      </div>
+   );
+};
+
 // --- Helper for Features List Editing ---
 const FeatureListEditor = ({
    features,
@@ -67,10 +108,10 @@ const FeatureListEditor = ({
                   <label className="text-xs font-bold text-stone-500 block mb-1">
                      特性描述 (支持Markdown: **加粗**, *斜体*, | 表格 |)
                   </label>
-                  <textarea
+                  <MarkdownTextarea
                      value={feature.description}
-                     onChange={(e) => handleUpdate(idx, 'description', e.target.value)}
-                     className="w-full min-h-[6rem] p-2 border rounded focus:border-dndRed outline-none font-mono text-sm"
+                     onChange={(e: any) => handleUpdate(idx, 'description', e.target.value)}
+                     className="w-full min-h-[6rem] p-3 outline-none font-mono text-sm bg-transparent"
                      placeholder="输入描述..."
                   />
                </div>
@@ -240,10 +281,10 @@ export const ClassEditor = ({ item, setItem }: { item: ClassItem, setItem: React
 
          <div className="space-y-2">
             <label className="block text-sm font-bold text-stone-700">完整描述 (支持Markdown)</label>
-            <textarea
+            <MarkdownTextarea
                value={item.fullDescription}
-               onChange={e => setItem(p => p ? { ...p, fullDescription: e.target.value } : null)}
-               className="w-full min-h-[8rem] p-2 border rounded focus:border-dndRed outline-none"
+               onChange={(e: any) => setItem(p => p ? { ...p, fullDescription: e.target.value } : null)}
+               className="w-full min-h-[8rem] p-3 outline-none bg-transparent"
             />
          </div>
 
@@ -275,10 +316,10 @@ export const SubclassEditor = ({ item, setItem, classes }: { item: SubclassItem,
 
          <div className="space-y-2">
             <label className="block text-sm font-bold text-stone-700">完整描述 (支持Markdown: **加粗**, *斜体*, | 表格 |)</label>
-            <textarea
+            <MarkdownTextarea
                value={item.fullDescription || item.description}
-               onChange={e => setItem(prev => prev ? ({ ...prev, fullDescription: e.target.value }) : null)}
-               className="w-full min-h-[12rem] p-3 border border-stone-300 rounded focus:border-dndRed focus:outline-none font-mono text-sm leading-relaxed"
+               onChange={(e: any) => setItem(prev => prev ? ({ ...prev, fullDescription: e.target.value }) : null)}
+               className="w-full min-h-[12rem] p-4 outline-none font-mono text-sm leading-relaxed bg-transparent"
                placeholder="支持多行文本，用于子职详情页显示..."
             />
          </div>
@@ -327,8 +368,8 @@ export const BackgroundEditor = ({
                      key={attr}
                      onClick={() => handleAbilityToggle(attr)}
                      className={`px-3 py-1 rounded border text-sm font-bold transition-colors ${(item.abilityScores || []).includes(attr)
-                           ? 'bg-dndRed text-white border-dndRed'
-                           : 'bg-stone-50 text-stone-600 border-stone-300 hover:bg-stone-100'
+                        ? 'bg-dndRed text-white border-dndRed'
+                        : 'bg-stone-50 text-stone-600 border-stone-300 hover:bg-stone-100'
                         }`}
                   >
                      {attr}
@@ -529,8 +570,8 @@ export const SpellEditor = ({ item, setItem }: { item: SpellItem, setItem: React
                      key={cls}
                      onClick={() => toggleClass(cls)}
                      className={`px-3 py-1 rounded text-xs font-bold border transition-colors ${(item.classes || []).includes(cls)
-                           ? 'bg-stone-800 text-white border-stone-800'
-                           : 'bg-stone-50 text-stone-500 border-stone-200 hover:bg-stone-100'
+                        ? 'bg-stone-800 text-white border-stone-800'
+                        : 'bg-stone-50 text-stone-500 border-stone-200 hover:bg-stone-100'
                         }`}
                   >
                      {cls}
@@ -545,10 +586,10 @@ export const SpellEditor = ({ item, setItem }: { item: SpellItem, setItem: React
                <span>法术详情 (支持Markdown)</span>
                <span className="text-xs font-normal text-stone-400">请详细描述法术的基础效应</span>
             </label>
-            <textarea
+            <MarkdownTextarea
                value={item.description}
-               onChange={e => setItem(p => p ? { ...p, description: e.target.value } : null)}
-               className="w-full min-h-[12rem] p-4 border border-stone-300 rounded focus:border-dndRed focus:outline-none font-mono text-sm leading-relaxed"
+               onChange={(e: any) => setItem(p => p ? { ...p, description: e.target.value } : null)}
+               className="w-full min-h-[12rem] p-4 outline-none font-mono text-sm leading-relaxed bg-transparent"
                placeholder="在此输入法术的详细描述..."
             />
          </div>
@@ -670,10 +711,10 @@ export const RichDescriptionEditor = <T extends { description: string }>({ item,
    return (
       <div>
          <label className="block text-sm font-bold text-stone-700 mb-1">详细描述 (支持Markdown: **加粗**, *斜体*, | 表格 |)</label>
-         <textarea
+         <MarkdownTextarea
             value={item.description}
-            onChange={e => setItem(prev => prev ? ({ ...prev, description: e.target.value }) : null)}
-            className="w-full min-h-[12rem] p-3 border border-stone-300 rounded focus:border-dndRed focus:outline-none font-mono text-sm leading-relaxed"
+            onChange={(e: any) => setItem(prev => prev ? ({ ...prev, description: e.target.value }) : null)}
+            className="w-full min-h-[12rem] p-4 outline-none font-mono text-sm leading-relaxed bg-transparent"
             placeholder="支持多行文本..."
          />
       </div>
