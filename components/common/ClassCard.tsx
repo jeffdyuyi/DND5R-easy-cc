@@ -122,7 +122,7 @@ export const ClassCard: React.FC<Props> = ({ item, type, isSelected, onClick, ac
                 )}
 
                 {/* Name */}
-                <h3 className="text-xl font-black text-stone-800 leading-tight group-hover:text-amber-700 transition-colors mb-1">
+                <h3 className="text-xl font-black text-stone-800 leading-tight group-hover:text-amber-700 transition-colors mb-1 truncate">
                     {item.name}
                 </h3>
 
@@ -144,10 +144,7 @@ export const ClassCard: React.FC<Props> = ({ item, type, isSelected, onClick, ac
                     )}
                 </div>
 
-                {/* Description */}
-                <p className="text-sm text-stone-500 line-clamp-4 leading-relaxed mb-4 flex-grow whitespace-pre-line">
-                    {item.description || '暂无描述...'}
-                </p>
+                {/* Remove Description to save visual space */}
 
                 {/* Footer */}
                 <div className="pt-3 border-t border-stone-100 flex items-center justify-between text-stone-400 text-xs font-bold uppercase tracking-wider group-hover:text-amber-600 transition-colors">

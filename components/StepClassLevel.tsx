@@ -1,7 +1,8 @@
 
 import React, { useMemo } from 'react';
-import { CLASSES, CLASS_DB, SUBCLASS_DB, WEAPON_DB } from '../data';
-import { CharacterData, ClassItem } from '../types';
+import { WEAPON_DB } from '../data';
+import { CharacterData, ClassItem, SubclassItem } from '../types';
+import { useLibrary } from '../contexts/LibraryContext';
 import WizardLayout from './wizard/WizardLayout';
 import FeatureAccordion from './wizard/FeatureAccordion';
 import ChoiceRenderer from './wizard/ChoiceRenderer';
@@ -35,13 +36,17 @@ const CLASS_ICONS: Record<string, React.ReactNode> = {
 };
 
 const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
-  const selectedClass: ClassItem | undefined = character.className ? CLASSES[character.className] : undefined;
+  const { classes, subclasses } = useLibrary();
+
+  const selectedClass: ClassItem | undefined = useMemo(() => {
+    return classes.items.find(cls => cls.name === character.className);
+  }, [classes.items, character.className]);
 
   // Get subclasses for selected class
-  const availableSubclasses = useMemo(() => {
+  const availableSubclasses = useMemo((): SubclassItem[] => {
     if (!selectedClass) return [];
-    return SUBCLASS_DB.filter(sc => sc.parentClass === selectedClass.name);
-  }, [selectedClass]);
+    return subclasses.items.filter(sc => sc.parentClass === selectedClass.name);
+  }, [selectedClass, subclasses.items]);
 
   // Subclass requirement (Standardized to Level 3 for all classes 2024)
   const subclassLevel = selectedClass?.subclassLevel || 3;
@@ -66,7 +71,7 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
     // Subclass features
     let subFeatures: any[] = [];
     if (character.subclass) {
-      const sc = SUBCLASS_DB.find(s => s.name === character.subclass && s.parentClass === selectedClass.name);
+      const sc = subclasses.items.find(s => s.name === character.subclass && s.parentClass === selectedClass.name);
       if (sc) {
         subFeatures = sc.features.filter(f => f.level <= character.level);
       }
@@ -189,7 +194,7 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
 
       {/* Class Grid */}
       <div className="grid grid-cols-3 gap-3">
-        {CLASS_DB.map(cls => (
+        {classes.items.map(cls => (
           <button
             key={cls.id}
             onClick={() => handleClassChange(cls.name)}

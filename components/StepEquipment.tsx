@@ -3,7 +3,8 @@ import React, { useMemo, useEffect } from 'react';
 import { CharacterData } from '../types';
 import WizardLayout from './wizard/WizardLayout';
 import FeatureAccordion from './wizard/FeatureAccordion';
-import { CLASS_EQUIPMENT, BACKGROUND_EQUIPMENT, calculateStartingInventory } from '../utils/equipmentUtils';
+import { calculateStartingInventory } from '../utils/equipmentUtils';
+import { useLibrary } from '../contexts/LibraryContext';
 import { Package, Coins, CheckCircle, AlertCircle } from 'lucide-react';
 
 interface Props {
@@ -12,8 +13,9 @@ interface Props {
 }
 
 const StepEquipment: React.FC<Props> = ({ character, updateCharacter }) => {
-    const classEquipment = character.className ? CLASS_EQUIPMENT[character.className] : null;
-    const backgroundEquipment = character.background ? BACKGROUND_EQUIPMENT[character.background] : null;
+    const { classes, backgrounds } = useLibrary();
+    const classEquipment = character.className ? (classes.items.find(c => c.name === character.className) as any)?.equipmentConfig : null;
+    const backgroundEquipment = character.background ? (backgrounds.items.find(b => b.name === character.background) as any)?.equipmentConfig : null;
 
     const classChoice = character.equipmentChoices?.classChoice || '';
     const classSubChoices = character.equipmentChoices?.classSubChoices || {};
@@ -44,9 +46,9 @@ const StepEquipment: React.FC<Props> = ({ character, updateCharacter }) => {
 
     // Check completion
     const classChoiceComplete = !classEquipment || !!classChoice;
-    const classSubChoicesComplete = !classEquipment || !classChoice || !classEquipment.options.find(o => o.id === classChoice)?.subChoices?.some(sc => !classSubChoices[sc.id]);
+    const classSubChoicesComplete = !classEquipment || !classChoice || !classEquipment.options.find((o: any) => o.id === classChoice)?.subChoices?.some((sc: any) => !classSubChoices[sc.id]);
     const backgroundChoiceComplete = !backgroundEquipment || !!backgroundChoice;
-    const backgroundSubChoicesComplete = !backgroundEquipment || !backgroundChoice || !backgroundEquipment.options.find(o => o.id === backgroundChoice)?.subChoices?.some(sc => !backgroundSubChoices[sc.id]);
+    const backgroundSubChoicesComplete = !backgroundEquipment || !backgroundChoice || !backgroundEquipment.options.find((o: any) => o.id === backgroundChoice)?.subChoices?.some((sc: any) => !backgroundSubChoices[sc.id]);
 
     const handleClassChoiceChange = (choice: 'A' | 'B') => {
         updateCharacter({
@@ -122,7 +124,7 @@ const StepEquipment: React.FC<Props> = ({ character, updateCharacter }) => {
                                     className="w-full p-3 border border-stone-300 rounded-lg font-medium"
                                 >
                                     <option value="">-- 请选择 --</option>
-                                    {classEquipment.options.map(opt => (
+                                    {classEquipment.options.map((opt: any) => (
                                         <option key={opt.id} value={opt.id}>{opt.label}</option>
                                     ))}
                                 </select>
@@ -133,18 +135,18 @@ const StepEquipment: React.FC<Props> = ({ character, updateCharacter }) => {
                                 <div className="bg-green-50 p-3 rounded-lg border border-green-200 text-sm">
                                     <div className="font-bold text-green-800 mb-2">你将获得：</div>
                                     <ul className="space-y-1 text-green-700">
-                                        {classEquipment.options.find(o => o.id === classChoice)?.items.map((item, idx) => (
+                                        {classEquipment.options.find((o: any) => o.id === classChoice)?.items.map((item: any, idx: number) => (
                                             <li key={idx}>• {item.name} ×{item.quantity}</li>
                                         ))}
-                                        {(classEquipment.options.find(o => o.id === classChoice)?.gold || 0) > 0 && (
-                                            <li className="text-amber-600">• {classEquipment.options.find(o => o.id === classChoice)?.gold} GP</li>
+                                        {(classEquipment.options.find((o: any) => o.id === classChoice)?.gold || 0) > 0 && (
+                                            <li className="text-amber-600">• {classEquipment.options.find((o: any) => o.id === classChoice)?.gold} GP</li>
                                         )}
                                     </ul>
                                 </div>
                             )}
 
                             {/* Sub-choices */}
-                            {classChoice && classEquipment.options.find(o => o.id === classChoice)?.subChoices?.map(sc => (
+                            {classChoice && classEquipment.options.find((o: any) => o.id === classChoice)?.subChoices?.map((sc: any) => (
                                 <div key={sc.id} className="bg-amber-50 p-3 rounded-lg border border-amber-200">
                                     <label className="text-xs font-bold text-amber-700 block mb-2 flex items-center gap-2">
                                         {!classSubChoices[sc.id] && <AlertCircle className="w-3 h-3" />}
@@ -156,7 +158,7 @@ const StepEquipment: React.FC<Props> = ({ character, updateCharacter }) => {
                                         className="w-full p-2 border border-amber-300 rounded font-medium text-sm"
                                     >
                                         <option value="">-- 请选择 --</option>
-                                        {sc.options.map(opt => (
+                                        {sc.options.map((opt: any) => (
                                             <option key={opt.value} value={opt.value}>{opt.label}</option>
                                         ))}
                                     </select>
@@ -189,7 +191,7 @@ const StepEquipment: React.FC<Props> = ({ character, updateCharacter }) => {
                                     className="w-full p-3 border border-stone-300 rounded-lg font-medium"
                                 >
                                     <option value="">-- 请选择 --</option>
-                                    {backgroundEquipment.options.map(opt => (
+                                    {backgroundEquipment.options.map((opt: any) => (
                                         <option key={opt.id} value={opt.id}>{opt.label}</option>
                                     ))}
                                 </select>
@@ -199,17 +201,17 @@ const StepEquipment: React.FC<Props> = ({ character, updateCharacter }) => {
                                 <div className="bg-green-50 p-3 rounded-lg border border-green-200 text-sm">
                                     <div className="font-bold text-green-800 mb-2">你将获得：</div>
                                     <ul className="space-y-1 text-green-700">
-                                        {backgroundEquipment.options.find(o => o.id === backgroundChoice)?.items.map((item, idx) => (
+                                        {backgroundEquipment.options.find((o: any) => o.id === backgroundChoice)?.items.map((item: any, idx: number) => (
                                             <li key={idx}>• {item.name} ×{item.quantity}</li>
                                         ))}
-                                        {(backgroundEquipment.options.find(o => o.id === backgroundChoice)?.gold || 0) > 0 && (
-                                            <li className="text-amber-600">• {backgroundEquipment.options.find(o => o.id === backgroundChoice)?.gold} GP</li>
+                                        {(backgroundEquipment.options.find((o: any) => o.id === backgroundChoice)?.gold || 0) > 0 && (
+                                            <li className="text-amber-600">• {backgroundEquipment.options.find((o: any) => o.id === backgroundChoice)?.gold} GP</li>
                                         )}
                                     </ul>
                                 </div>
                             )}
 
-                            {backgroundChoice && backgroundEquipment.options.find(o => o.id === backgroundChoice)?.subChoices?.map(sc => (
+                            {backgroundChoice && backgroundEquipment.options.find((o: any) => o.id === backgroundChoice)?.subChoices?.map((sc: any) => (
                                 <div key={sc.id} className="bg-amber-50 p-3 rounded-lg border border-amber-200">
                                     <label className="text-xs font-bold text-amber-700 block mb-2 flex items-center gap-2">
                                         {!backgroundSubChoices[sc.id] && <AlertCircle className="w-3 h-3" />}
@@ -221,7 +223,7 @@ const StepEquipment: React.FC<Props> = ({ character, updateCharacter }) => {
                                         className="w-full p-2 border border-amber-300 rounded font-medium text-sm"
                                     >
                                         <option value="">-- 请选择 --</option>
-                                        {sc.options.map(opt => (
+                                        {sc.options.map((opt: any) => (
                                             <option key={opt.value} value={opt.value}>{opt.label}</option>
                                         ))}
                                     </select>

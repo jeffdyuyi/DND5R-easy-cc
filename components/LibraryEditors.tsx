@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { ClassItem, SubclassItem, ClassFeature, BackgroundItem, FeatItem, SpellItem, ItemItem } from '../types';
+import { ClassItem, SubclassItem, ClassFeature, BackgroundItem, FeatItem, SpellItem, ItemItem, SpeciesItem } from '../types';
 import { Plus, Trash2, BookOpen, AlertTriangle } from 'lucide-react';
 import { CLASS_DB } from '../data';
 
@@ -280,6 +280,17 @@ export const ClassEditor = ({ item, setItem }: { item: ClassItem, setItem: React
          </div>
 
          <div className="space-y-2">
+            <label className="block text-sm font-bold text-stone-700">卡牌封面简述 (不超过3行短摘要)</label>
+            <textarea
+               value={item.description}
+               onChange={(e: any) => setItem(p => p ? { ...p, description: e.target.value } : null)}
+               className="w-full p-2 border border-stone-300 rounded focus:border-dndRed outline-none"
+               placeholder="一句话介绍职业特色..."
+               rows={2}
+            />
+         </div>
+
+         <div className="space-y-2">
             <label className="block text-sm font-bold text-stone-700">完整描述 (支持Markdown)</label>
             <MarkdownTextarea
                value={item.fullDescription}
@@ -315,9 +326,20 @@ export const SubclassEditor = ({ item, setItem, classes }: { item: SubclassItem,
          </div>
 
          <div className="space-y-2">
+            <label className="block text-sm font-bold text-stone-700">卡牌封面简述 (不超过3行短摘要)</label>
+            <textarea
+               value={item.description}
+               onChange={(e: any) => setItem(prev => prev ? ({ ...prev, description: e.target.value }) : null)}
+               className="w-full p-2 border border-stone-300 rounded focus:border-dndRed outline-none"
+               placeholder="一句话介绍子职特色..."
+               rows={2}
+            />
+         </div>
+
+         <div className="space-y-2">
             <label className="block text-sm font-bold text-stone-700">完整描述 (支持Markdown: **加粗**, *斜体*, | 表格 |)</label>
             <MarkdownTextarea
-               value={item.fullDescription || item.description}
+               value={item.fullDescription || ""}
                onChange={(e: any) => setItem(prev => prev ? ({ ...prev, fullDescription: e.target.value }) : null)}
                className="w-full min-h-[12rem] p-4 outline-none font-mono text-sm leading-relaxed bg-transparent"
                placeholder="支持多行文本，用于子职详情页显示..."
@@ -358,6 +380,17 @@ export const BackgroundEditor = ({
 
    return (
       <div className="space-y-6">
+         {/* Background Description */}
+         <div className="bg-white p-4 rounded border border-stone-300 space-y-2">
+            <h4 className="font-bold text-dndRed mb-2">背景描述</h4>
+            <MarkdownTextarea
+               value={item.description}
+               onChange={(e: any) => setItem(prev => prev ? ({ ...prev, description: e.target.value }) : null)}
+               className="w-full min-h-[6rem] p-3 border-stone-300 rounded bg-transparent"
+               placeholder="详细描述该背景的设定..."
+            />
+         </div>
+
          {/* Step 1: Abilities */}
          <div className="bg-white p-4 rounded border border-stone-300">
             <h4 className="font-bold text-dndRed mb-2">1. 选择属性 (选择3个)</h4>
@@ -717,6 +750,140 @@ export const RichDescriptionEditor = <T extends { description: string }>({ item,
             className="w-full min-h-[12rem] p-4 outline-none font-mono text-sm leading-relaxed bg-transparent"
             placeholder="支持多行文本..."
          />
+      </div>
+   );
+};
+
+export const FeatEditor = ({ item, setItem }: { item: FeatItem, setItem: React.Dispatch<React.SetStateAction<FeatItem | null>> }) => {
+   const handleBenefitsChange = (val: string) => {
+      setItem((prev: any) => prev ? ({ ...prev, benefits: val.split('\n').filter((s: string) => s.trim()) }) : null);
+   };
+
+   return (
+      <div className="space-y-6">
+         <div className="grid grid-cols-2 gap-4">
+            <div>
+               <label className="block text-sm font-bold text-stone-700 mb-1">类别</label>
+               <select value={item.category} onChange={e => setItem(p => p ? { ...p, category: e.target.value } : null)} className="w-full p-2 border border-stone-300 rounded focus:border-dndRed outline-none">
+                  <option value="起源专长">起源专长</option>
+                  <option value="通用专长">通用专长</option>
+                  <option value="战斗风格专长">战斗风格专长</option>
+                  <option value="传奇恩惠">传奇恩惠</option>
+               </select>
+            </div>
+            <div>
+               <label className="block text-sm font-bold text-stone-700 mb-1">先决条件</label>
+               <input type="text" value={item.prerequisite || ''} onChange={e => setItem(p => p ? { ...p, prerequisite: e.target.value } : null)} className="w-full p-2 border border-stone-300 rounded focus:border-dndRed outline-none" placeholder="例如：力量13+" />
+            </div>
+         </div>
+         <div className="flex items-center gap-2">
+            <input type="checkbox" checked={item.repeatable || false} onChange={e => setItem(p => p ? { ...p, repeatable: e.target.checked } : null)} id="repeatable" />
+            <label htmlFor="repeatable" className="text-sm font-bold text-stone-700">可复选 (是否可以多次选择此专长)</label>
+         </div>
+
+         <div>
+            <label className="block text-sm font-bold text-stone-700 mb-1">专长简介 (显示在卡牌列表，支持Markdown)</label>
+            <MarkdownTextarea
+               value={item.description}
+               onChange={(e: any) => setItem(p => p ? { ...p, description: e.target.value } : null)}
+               className="w-full min-h-[6rem] p-3 border-stone-300 rounded bg-transparent"
+               placeholder="简述专长的核心主题..."
+            />
+         </div>
+
+         <div>
+            <label className="block text-sm font-bold text-stone-700 mb-1">专长增益 (Benefits) - 每行一项</label>
+            <textarea
+               value={(item.benefits || []).join('\n')}
+               onChange={e => handleBenefitsChange(e.target.value)}
+               className="w-full min-h-[8rem] p-3 border border-stone-300 rounded font-mono text-sm leading-relaxed outline-none focus:border-dndRed"
+               placeholder="增益1&#10;增益2..."
+            />
+         </div>
+      </div>
+   );
+};
+
+export const SpeciesEditor = ({ item, setItem }: { item: SpeciesItem, setItem: React.Dispatch<React.SetStateAction<SpeciesItem | null>> }) => {
+   const updateTrait = (index: number, field: string, value: string) => {
+      setItem((prev: any) => {
+         if (!prev) return null;
+         const newTraits = [...(prev.traits || [])];
+         newTraits[index] = { ...newTraits[index] as any, [field]: value };
+         return { ...prev, traits: newTraits };
+      });
+   };
+
+   const addTrait = () => {
+      setItem((prev: any) => prev ? ({ ...prev, traits: [...(prev.traits || []), { name: "新特性", description: "" }] }) : null);
+   };
+
+   const removeTrait = (index: number) => {
+      setItem((prev: any) => prev ? ({ ...prev, traits: (prev.traits || []).filter((_: any, i: number) => i !== index) }) : null);
+   };
+
+   return (
+      <div className="space-y-6">
+         <div className="grid grid-cols-3 gap-4">
+            <div>
+               <label className="block text-sm font-bold text-stone-700 mb-1">速度 (尺)</label>
+               <input type="number" value={item.speed} onChange={e => setItem((p: any) => p ? { ...p, speed: parseInt(e.target.value) || 30 } : null)} className="w-full p-2 border border-stone-300 rounded focus:border-dndRed outline-none" />
+            </div>
+            <div>
+               <label className="block text-sm font-bold text-stone-700 mb-1">体型</label>
+               <input type="text" value={item.size} onChange={e => setItem((p: any) => p ? { ...p, size: e.target.value } : null)} className="w-full p-2 border border-stone-300 rounded focus:border-dndRed outline-none" />
+            </div>
+            <div className="flex items-center gap-2 mt-6">
+               <input type="checkbox" checked={item.darkvision} onChange={e => setItem((p: any) => p ? { ...p, darkvision: e.target.checked } : null)} id="darkvision" />
+               <label htmlFor="darkvision" className="text-sm font-bold text-stone-700">黑暗视觉</label>
+            </div>
+         </div>
+
+         <div>
+            <label className="block text-sm font-bold text-stone-700 mb-1">卡牌封面简述 (不超过3行短摘要)</label>
+            <textarea
+               value={item.description}
+               onChange={(e: any) => setItem((p: any) => p ? { ...p, description: e.target.value } : null)}
+               className="w-full p-2 border border-stone-300 rounded focus:border-dndRed outline-none"
+               placeholder="例如：适应力\n多才多艺..."
+               rows={2}
+            />
+         </div>
+
+         <div className="space-y-2">
+            <label className="block text-sm font-bold text-stone-700">完整描述 (支持Markdown，用于详情页)</label>
+            <MarkdownTextarea
+               value={item.fullDescription || ""}
+               onChange={(e: any) => setItem((p: any) => p ? { ...p, fullDescription: e.target.value } : null)}
+               className="w-full min-h-[10rem] p-3 outline-none bg-transparent"
+               placeholder="详细描述该种族的生态及长篇设定..."
+            />
+         </div>
+
+         <div className="bg-stone-50 p-4 rounded border border-stone-200">
+            <div className="flex justify-between items-center mb-4">
+               <label className="text-sm font-bold text-stone-700">种族特性 (Traits)</label>
+               <button onClick={addTrait} className="text-xs bg-stone-200 px-3 py-1 rounded hover:bg-stone-300 flex items-center gap-1 font-bold">
+                  <Plus className="w-3 h-3" /> 添加特性
+               </button>
+            </div>
+            <div className="space-y-4">
+               {(item.traits || []).map((t: any, i: number) => (
+                  <div key={i} className="flex flex-col gap-2 p-3 bg-white border border-stone-200 rounded shadow-sm">
+                     <div className="flex justify-between gap-2">
+                        <input type="text" value={t.name} onChange={e => updateTrait(i, 'name', e.target.value)} className="w-1/3 p-2 border border-stone-300 rounded font-bold outline-none focus:border-dndRed" placeholder="特性名称" />
+                        <button onClick={() => removeTrait(i)} className="text-red-500 hover:text-red-700 p-2"><Trash2 className="w-5 h-5" /></button>
+                     </div>
+                     <MarkdownTextarea
+                        value={t.description}
+                        onChange={(e: any) => updateTrait(i, 'description', e.target.value)}
+                        className="w-full min-h-[5rem] p-2 border-stone-300 rounded text-sm bg-transparent"
+                        placeholder="特性描述..."
+                     />
+                  </div>
+               ))}
+            </div>
+         </div>
       </div>
    );
 };

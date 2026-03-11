@@ -207,11 +207,11 @@ export function CardLibrary<T extends BaseLibraryItem>({
                   className={`
                 group cursor-pointer border-4 border-dashed border-stone-300 rounded-xl flex flex-col items-center justify-center 
                 bg-stone-50 hover:bg-stone-100 transition-colors shadow-inner
-                ${renderItem && effectiveLayout === 'list' ? 'h-24 flex-row gap-4' : effectiveLayout === 'grid' && renderItem ? 'h-40' : 'aspect-[3/4]'}
+                ${renderItem && effectiveLayout === 'list' ? 'h-24 flex-row gap-4' : effectiveLayout === 'grid' && renderItem ? 'h-40' : 'aspect-square xl:aspect-video'}
               `}
                >
-                  <div className={`rounded-full bg-white border-2 border-stone-300 flex items-center justify-center group-hover:scale-110 transition-transform ${renderItem && effectiveLayout === 'list' ? 'w-10 h-10' : 'w-16 h-16 mb-3'}`}>
-                     <Plus className={`${renderItem && effectiveLayout === 'list' ? 'w-5 h-5' : 'w-8 h-8'} text-stone-400 group-hover:text-stone-600`} />
+                  <div className={`rounded-full bg-white border-2 border-stone-300 flex items-center justify-center group-hover:scale-110 transition-transform ${renderItem && effectiveLayout === 'list' ? 'w-10 h-10' : 'w-12 h-12 mb-3'}`}>
+                     <Plus className={`${renderItem && effectiveLayout === 'list' ? 'w-5 h-5' : 'w-6 h-6'} text-stone-400 group-hover:text-stone-600`} />
                   </div>
                   <span className="font-bold text-stone-400 group-hover:text-stone-600 uppercase tracking-widest text-xs">新建{itemTypeLabel}</span>
                </div>
@@ -251,15 +251,15 @@ export function CardLibrary<T extends BaseLibraryItem>({
                      key={item.id}
                      onClick={() => onSelect(item)}
                      className={`
-                    group relative cursor-pointer rounded-xl border-4 transition-all duration-200 flex flex-col aspect-[3/4] shadow-md hover:shadow-xl hover:-translate-y-1 bg-white overflow-hidden
+                    group relative cursor-pointer rounded-xl border-4 transition-all duration-200 flex flex-col aspect-square xl:aspect-video shadow-md hover:shadow-xl hover:-translate-y-1 bg-white overflow-hidden
                     ${isSelected
                            ? `${themeClasses.border} ${themeClasses.ring} ring-2 ring-offset-2 scale-[1.02] z-10`
                            : 'border-stone-300 hover:border-stone-400'}
                   `}
                   >
                      {/* Card Header */}
-                     <div className={`h-14 px-3 flex items-center justify-between text-white ${themeClasses.header} transition-colors border-b-4 border-black/10`}>
-                        <div className="flex items-center gap-2 overflow-hidden w-full">
+                     <div className={`h-12 px-3 flex items-center justify-between text-white ${themeClasses.header} transition-colors border-b-4 border-black/10`}>
+                        <div className="flex items-center gap-2 overflow-hidden w-full pt-1">
                            <span className="font-black text-sm uppercase tracking-wide truncate w-full drop-shadow-md">{item.name}</span>
                         </div>
                      </div>
@@ -277,18 +277,11 @@ export function CardLibrary<T extends BaseLibraryItem>({
                         </span>
                      </div>
 
-                     {/* Card Body */}
+                     {/* Card Body (Space saving, no description) */}
                      <div className="flex-grow p-4 bg-stone-50 relative overflow-hidden flex flex-col items-center justify-center">
                         {/* Background Watermark - Updated to Author Brand */}
-                        <div className={`absolute -bottom-6 -right-6 text-6xl opacity-[0.07] pointer-events-none select-none font-serif font-black rotate-12 whitespace-nowrap ${themeClasses.text}`}>
+                        <div className={`absolute -bottom-4 -right-4 text-5xl opacity-[0.05] pointer-events-none select-none font-serif font-black rotate-12 whitespace-nowrap ${themeClasses.text}`}>
                            不咕鸟
-                        </div>
-
-                        {/* Content */}
-                        <div className="relative z-10 flex-grow w-full flex items-center justify-center">
-                           <p className="text-sm font-black text-stone-600 leading-loose text-center whitespace-pre-line tracking-wide drop-shadow-sm font-serif">
-                              {item.description || "暂无描述。"}
-                           </p>
                         </div>
                      </div>
 

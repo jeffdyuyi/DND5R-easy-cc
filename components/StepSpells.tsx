@@ -3,7 +3,7 @@ import React, { useState, useMemo } from 'react';
 import { CharacterData } from '../types';
 import WizardLayout from './wizard/WizardLayout';
 import FeatureAccordion from './wizard/FeatureAccordion';
-import { FEAT_DB, SPELL_DB, BACKGROUND_DB } from '../data';
+import { useLibrary } from '../contexts/LibraryContext';
 import { Sparkles, Wand2, CheckCircle, Search } from 'lucide-react';
 
 interface Props {
@@ -26,15 +26,16 @@ const SPELLCASTING_ABILITIES = [
 ];
 
 const StepSpells: React.FC<Props> = ({ character, updateCharacter }) => {
+    const { backgrounds, feats, spells } = useLibrary();
     const [cantripSearch, setCantripSearch] = useState('');
     const [spellSearch, setSpellSearch] = useState('');
 
     // Check if origin feat grants spells
-    const originFeat = character.originFeat ? FEAT_DB.find(f => f.name === character.originFeat) : null;
+    const originFeat = character.originFeat ? feats.items.find(f => f.name === character.originFeat) : null;
     const featGrantsSpells = (originFeat || character.originFeat) && SPELL_GRANTING_FEATS.some(f => character.originFeat?.includes(f));
 
     // Get background data to check for locked spell list
-    const selectedBackground = BACKGROUND_DB.find(bg => bg.name === character.background);
+    const selectedBackground = backgrounds.items.find(bg => bg.name === character.background);
 
     // Get feat configuration
     const featConfig = character.featConfig?.originFeat || { name: character.originFeat || '' };
@@ -61,35 +62,35 @@ const StepSpells: React.FC<Props> = ({ character, updateCharacter }) => {
 
     // Filter available cantrips
     const availableCantrips = useMemo(() => {
-        let cantrips = SPELL_DB.filter(s => s.level === 0);
+        let cantripsItems = spells.items.filter(s => s.level === 0);
         if (spellListClasses.length > 0) {
-            cantrips = cantrips.filter(s =>
+            cantripsItems = cantripsItems.filter(s =>
                 s.classes?.some((c: string) => spellListClasses.includes(c))
             );
         }
         if (cantripSearch) {
-            cantrips = cantrips.filter(s =>
+            cantripsItems = cantripsItems.filter(s =>
                 s.name.includes(cantripSearch) || s.school?.includes(cantripSearch)
             );
         }
-        return cantrips.slice(0, 30); // Limit for performance
-    }, [spellListClasses, cantripSearch]);
+        return cantripsItems.slice(0, 30); // Limit for performance
+    }, [spellListClasses, cantripSearch, spells.items]);
 
     // Filter available level 1 spells
     const availableLevel1Spells = useMemo(() => {
-        let spells = SPELL_DB.filter(s => s.level === 1);
+        let level1Spells = spells.items.filter(s => s.level === 1);
         if (spellListClasses.length > 0) {
-            spells = spells.filter(s =>
+            level1Spells = level1Spells.filter(s =>
                 s.classes?.some((c: string) => spellListClasses.includes(c))
             );
         }
         if (spellSearch) {
-            spells = spells.filter(s =>
+            level1Spells = level1Spells.filter(s =>
                 s.name.includes(spellSearch) || s.school?.includes(spellSearch)
             );
         }
-        return spells.slice(0, 30);
-    }, [spellListClasses, spellSearch]);
+        return level1Spells.slice(0, 30);
+    }, [spellListClasses, spellSearch, spells.items]);
 
     // Update feat config
     const updateFeatConfig = (updates: Partial<typeof featConfig>) => {

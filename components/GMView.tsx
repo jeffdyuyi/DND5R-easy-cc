@@ -5,7 +5,7 @@ import {
     ClassDetailView, SpeciesDetailView, BackgroundDetailView,
     SubclassDetailView, SpellDetailView, FeatDetailView, ItemDetailView
 } from './LibraryDetails';
-import { ClassEditor, SubclassEditor, RichDescriptionEditor, BackgroundEditor, SpellEditor, ToolEditor } from './LibraryEditors';
+import { ClassEditor, SubclassEditor, RichDescriptionEditor, BackgroundEditor, SpellEditor, ToolEditor, FeatEditor, SpeciesEditor } from './LibraryEditors';
 import { ClassItem, SubclassItem, SpeciesItem, BackgroundItem, SpellItem, FeatItem, ItemItem } from '../types';
 import { CompactCard } from './common/CompactCard';
 import { ClassCard } from './common/ClassCard';
@@ -94,7 +94,7 @@ export const GMView: React.FC = () => {
                         onAdd={species.onAdd} onUpdate={species.onUpdate} onDelete={species.onDelete} onImport={species.onImport}
                         cardColorTheme="green"
                         renderDetail={(item) => <SpeciesDetailView item={item} />}
-                        renderEditFields={(item, setItem) => <RichDescriptionEditor item={item} setItem={setItem} />}
+                        renderEditFields={(item, setItem) => <SpeciesEditor item={item} setItem={setItem} />}
                         emptyTemplate={{ id: '', name: '', source: '第三方/原创', description: '', speed: 30, size: '中型', darkvision: false, traits: [] }}
                     />
                 );
@@ -156,7 +156,7 @@ export const GMView: React.FC = () => {
                         extraTools={FeatFilters}
                         cardColorTheme="purple"
                         renderDetail={(item) => <FeatDetailView item={item} />}
-                        renderEditFields={(item, setItem) => <RichDescriptionEditor item={item} setItem={setItem} />}
+                        renderEditFields={(item, setItem) => <FeatEditor item={item} setItem={setItem} />}
                         emptyTemplate={{ id: '', name: '', source: '第三方/原创', category: '通用专长', description: '', benefits: [], tags: [] }}
                     />
                 );

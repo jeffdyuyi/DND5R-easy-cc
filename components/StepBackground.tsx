@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { CharacterData, AbilityScores } from '../types';
-import { BACKGROUND_DB, FEAT_DB } from '../data';
+import { useLibrary } from '../contexts/LibraryContext';
 import WizardLayout from './wizard/WizardLayout';
 import FeatureAccordion from './wizard/FeatureAccordion';
 import ChoiceRenderer from './wizard/ChoiceRenderer';
@@ -29,8 +29,9 @@ const ABILITY_LABELS: Record<keyof AbilityScores, string> = {
 };
 
 const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
-    const selectedBackground = BACKGROUND_DB.find(bg => bg.name === character.background);
-    const selectedFeat = selectedBackground ? FEAT_DB.find(f => f.name === selectedBackground.feat) : undefined;
+    const { backgrounds, feats } = useLibrary();
+    const selectedBackground = backgrounds.items.find(bg => bg.name === character.background);
+    const selectedFeat = selectedBackground ? feats.items.find(f => f.name === selectedBackground.feat) : undefined;
 
     // ASI State
     const [abilityDistribution, setAbilityDistribution] = useState<'2-1' | '1-1-1'>('2-1');
@@ -109,7 +110,7 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
         <div className="p-4 space-y-4">
             {/* Background List */}
             <div className="space-y-2 max-h-[600px] overflow-y-auto">
-                {BACKGROUND_DB.map(bg => (
+                {backgrounds.items.map((bg: any) => (
                     <button
                         key={bg.id}
                         onClick={() => updateCharacter({ background: bg.name })}
@@ -196,7 +197,7 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
                                     className="w-full p-2 border border-stone-300 rounded-lg font-medium"
                                 >
                                     <option value="">-- 选择 --</option>
-                                    {allowedAbilityOptions.map((o: any) => (
+                                    {allowedAbilityOptions.map((o: { key: string; label: string }) => (
                                         <option key={o.key} value={o.key} disabled={o.key === selectedAbilities.ability2 || o.key === selectedAbilities.ability3}>
                                             {o.label}
                                         </option>
@@ -212,7 +213,7 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
                                     className="w-full p-2 border border-stone-300 rounded-lg font-medium"
                                 >
                                     <option value="">-- 选择 --</option>
-                                    {allowedAbilityOptions.map((o: any) => (
+                                    {allowedAbilityOptions.map((o: { key: string; label: string }) => (
                                         <option key={o.key} value={o.key} disabled={o.key === selectedAbilities.ability1 || o.key === selectedAbilities.ability3}>
                                             {o.label}
                                         </option>
@@ -229,7 +230,7 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
                                         className="w-full p-2 border border-stone-300 rounded-lg font-medium"
                                     >
                                         <option value="">-- 选择 --</option>
-                                        {allowedAbilityOptions.map((o: any) => (
+                                        {allowedAbilityOptions.map((o: { key: string; label: string }) => (
                                             <option key={o.key} value={o.key} disabled={o.key === selectedAbilities.ability1 || o.key === selectedAbilities.ability2}>
                                                 {o.label}
                                             </option>

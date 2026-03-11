@@ -1,7 +1,7 @@
 
 import React, { useEffect } from 'react';
 import { CharacterData } from '../types';
-import { SPECIES_DB } from '../data';
+import { useLibrary } from '../contexts/LibraryContext';
 import { updateCharacterSpellsFromSubrace } from '../utils/characterUtils';
 import WizardLayout from './wizard/WizardLayout';
 import FeatureAccordion from './wizard/FeatureAccordion';
@@ -14,7 +14,8 @@ interface Props {
 }
 
 const StepSpecies: React.FC<Props> = ({ character, updateCharacter }) => {
-    const selectedSpecies = SPECIES_DB.find(sp => sp.name === character.race);
+    const { species } = useLibrary();
+    const selectedSpecies = species.items.find(sp => sp.name === character.race);
 
     const handleFeatureChoiceUpdate = (id: string, values: string[]) => {
         const newSelections = { ...character.selections, [id]: values };
@@ -36,7 +37,7 @@ const StepSpecies: React.FC<Props> = ({ character, updateCharacter }) => {
         <div className="p-4 space-y-4">
             {/* Species Grid */}
             <div className="grid grid-cols-3 gap-3">
-                {SPECIES_DB.map(sp => (
+                {species.items.map(sp => (
                     <button
                         key={sp.id}
                         onClick={() => updateCharacter({ race: sp.name, subRace: '' })}
