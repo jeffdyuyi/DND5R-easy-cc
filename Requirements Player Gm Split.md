@@ -1,7 +1,7 @@
 # 不咕鸟 DND5R 制卡器 — 玩家端/主持人端 拆分需求文档
 
-> **版本**: v1.0 草案  
-> **日期**: 2026-03-10（已确认设计决策）  
+> **版本**: v1.0 草案
+> **日期**: 2026-03-10（已确认设计决策）
 > **项目**: `DND5R-easy-cc`（Vite + React 18 + TypeScript）
 
 ---
@@ -10,20 +10,20 @@
 
 将现有的单页制卡工具拆分为**两个顶层分页**：
 
-| 分页 | 目标用户 | 核心功能 |
-|---|---|---|
-| **🎭 玩家端** | 玩家 | 角色卡创建/管理 + 头像上传 + 加入房间 |
-| **🛡️ 主持人端 (GM)** | 地下城主 | 数据库管理 + 建立/管理联机房间 |
+| 分页                         | 目标用户 | 核心功能                              |
+| ---------------------------- | -------- | ------------------------------------- |
+| **🎭 玩家端**          | 玩家     | 角色卡创建/管理 + 头像上传 + 加入房间 |
+| **🛡️ 主持人端 (GM)** | 地下城主 | 数据库管理 + 建立/管理联机房间        |
 
 两端通过 **PeerJS**（公共免费信令服务器 `0.peerjs.com`）实现 WebRTC P2P 实时联机，主持人端作为 Host，玩家端作为 Client。
 
 ### 已确认设计决策
 
-| # | 决策项 | 结论 |
-|---|---|---|
+| # | 决策项              | 结论                                      |
+| - | ------------------- | ----------------------------------------- |
 | 1 | 顶层 Tab 切换持久化 | ✅ 使用 localStorage 记住上次选择的标签页 |
-| 2 | 玩家加入房间审核 | ✅ GM 需手动 Accept/Reject |
-| 3 | PeerJS 信令服务器 | ✅ 使用公共免费服务器 `0.peerjs.com` |
+| 2 | 玩家加入房间审核    | ✅ GM 需手动 Accept/Reject                |
+| 3 | PeerJS 信令服务器   | ✅ 使用公共免费服务器 `0.peerjs.com`    |
 
 ---
 
@@ -63,12 +63,12 @@ graph TD
 
 将现有 `Sidebar.tsx` 的菜单精简为玩家端专属内容：
 
-| 菜单项 | 说明 |
-|---|---|
-| 📋 角色卡 | 进入角色卡管理/编辑（已有 `sheet` 模块） |
-| 🔥 法术书 | 法术管理（已有 `spellbook` 模块） |
-| ─ 分割线 ─ | |
-| 🚪 加入房间 | 输入房间 ID 加入主持人战役（**新增**） |
+| 菜单项       | 说明                                         |
+| ------------ | -------------------------------------------- |
+| 📋 角色卡    | 进入角色卡管理/编辑（已有 `sheet` 模块）   |
+| 🔥 法术书    | 法术管理（已有 `spellbook` 模块）          |
+| ─ 分割线 ─ |                                              |
+| 🚪 加入房间  | 输入房间 ID 加入主持人战役（**新增**） |
 
 **移除项目**：所有 `lib-*` 数据库管理入口移至主持人端。
 
@@ -107,6 +107,7 @@ export interface CharacterData {
 ```
 
 **存储注意**：
+
 - Base64 图片会存入 localStorage，需控制大小
 - 压缩后单张头像约 **20-50KB**
 - 可在 `useLocalStorage` 中加入容量溢出保护
@@ -129,6 +130,7 @@ export interface CharacterData {
 #### 3.3.1 功能描述
 
 玩家可输入主持人发布的 **房间 ID** 加入联机战役。加入后：
+
 - 需从本地角色卡列表中**选择一张角色卡**进场
 - 角色卡数据（含头像）将发送给主持人端
 - 主持人对角色卡的修改会实时同步回玩家端
@@ -178,22 +180,22 @@ GM 接受后，切换为在线状态面板：
 
 将现有数据库管理类菜单全部归入主持人端：
 
-| 菜单项 | 说明 |
-|---|---|
-| 🏰 房间管理 | 创建/管理联机房间（**新增**） |
-| ─ 分割线 ─ | |
-| 🛡️ 职业库 | 已有 `lib-class` |
-| ⭐ 子职业库 | 已有 `lib-subclass` |
-| 👑 种族库 | 已有 `lib-species` |
-| 📜 背景库 | 已有 `lib-bg` |
-| 📖 专长库 | 已有 `lib-feat` |
-| ⚡ 法术库 | 已有 `lib-spell` |
-| ─ 分割线 ─ | |
-| ⚔️ 武器库 | 已有 `lib-weapon` |
-| 🛡️ 护甲库 | 已有 `lib-armor` |
-| 🔨 工具库 | 已有 `lib-tool` |
-| 🎒 冒险物品 | 已有 `lib-gear` |
-| 🧪 魔法物品 | 已有 `lib-magic` |
+| 菜单项       | 说明                                |
+| ------------ | ----------------------------------- |
+| 🏰 房间管理  | 创建/管理联机房间（**新增**） |
+| ─ 分割线 ─ |                                     |
+| 🛡️ 职业库  | 已有 `lib-class`                  |
+| ⭐ 子职业库  | 已有 `lib-subclass`               |
+| 👑 种族库    | 已有 `lib-species`                |
+| 📜 背景库    | 已有 `lib-bg`                     |
+| 📖 专长库    | 已有 `lib-feat`                   |
+| ⚡ 法术库    | 已有 `lib-spell`                  |
+| ─ 分割线 ─ |                                     |
+| ⚔️ 武器库  | 已有 `lib-weapon`                 |
+| 🛡️ 护甲库  | 已有 `lib-armor`                  |
+| 🔨 工具库    | 已有 `lib-tool`                   |
+| 🎒 冒险物品  | 已有 `lib-gear`                   |
+| 🧪 魔法物品  | 已有 `lib-magic`                  |
 
 ### 4.2 房间管理模块（新增 · 核心功能）
 
@@ -253,11 +255,11 @@ GM 接受后，切换为在线状态面板：
 
 房间内**没有文字聊天**，只提供以下预设功能：
 
-| 功能 | 发起方 | 描述 |
-|---|---|---|
-| 🎲 掷骰 | GM 或玩家 | 选择骰子类型（d4/d6/d8/d10/d12/d20/d100），发送结果给所有人 |
-| 🖼️ 发送图片 | 仅 GM | GM 选择本地图片，推送给所有已连接的玩家展示 |
-| 🔄 同步更新 | 自动 | GM 修改角色卡后自动同步，无需手动触发 |
+| 功能          | 发起方    | 描述                                                        |
+| ------------- | --------- | ----------------------------------------------------------- |
+| 🎲 掷骰       | GM 或玩家 | 选择骰子类型（d4/d6/d8/d10/d12/d20/d100），发送结果给所有人 |
+| 🖼️ 发送图片 | 仅 GM     | GM 选择本地图片，推送给所有已连接的玩家展示                 |
+| 🔄 同步更新   | 自动      | GM 修改角色卡后自动同步，无需手动触发                       |
 
 ---
 
@@ -356,15 +358,15 @@ sequenceDiagram
 
 ### 5.4 核心 Hooks / 模块
 
-| 文件路径 | 功能 |
-|---|---|
-| `hooks/usePeerHost.ts` | GM 视角：创建 Peer、管理连接池、广播消息、接收玩家消息 |
-| `hooks/usePeerClient.ts` | 玩家视角：连接到 Host、发送消息、接收 GM 推送 |
-| `types/room.ts` | 上述所有消息类型定义 |
-| `components/RoomHost.tsx` | GM 房间管理 UI |
-| `components/RoomJoin.tsx` | 玩家加入房间 UI |
-| `components/DiceRoller.tsx` | 掷骰 UI 组件（双端复用） |
-| `components/ImageViewer.tsx` | 图片查看弹窗（玩家端接收 GM 共享的图片） |
+| 文件路径                       | 功能                                                   |
+| ------------------------------ | ------------------------------------------------------ |
+| `hooks/usePeerHost.ts`       | GM 视角：创建 Peer、管理连接池、广播消息、接收玩家消息 |
+| `hooks/usePeerClient.ts`     | 玩家视角：连接到 Host、发送消息、接收 GM 推送          |
+| `types/room.ts`              | 上述所有消息类型定义                                   |
+| `components/RoomHost.tsx`    | GM 房间管理 UI                                         |
+| `components/RoomJoin.tsx`    | 玩家加入房间 UI                                        |
+| `components/DiceRoller.tsx`  | 掷骰 UI 组件（双端复用）                               |
+| `components/ImageViewer.tsx` | 图片查看弹窗（玩家端接收 GM 共享的图片）               |
 
 ### 5.5 状态管理
 
@@ -399,33 +401,33 @@ interface RoomState {
 
 ### 6.1 新增文件
 
-| 文件 | 说明 |
-|---|---|
-| `types/room.ts` | 房间消息类型定义 |
-| `contexts/RoomContext.tsx` | 房间状态管理 |
-| `hooks/usePeerHost.ts` | GM 端 PeerJS 逻辑 |
-| `hooks/usePeerClient.ts` | 玩家端 PeerJS 逻辑 |
-| `components/PlayerView.tsx` | 玩家端顶层视图 |
-| `components/GMView.tsx` | 主持人端顶层视图 |
-| `components/PlayerSidebar.tsx` | 玩家端精简侧边栏 |
-| `components/GMSidebar.tsx` | 主持人端侧边栏 |
-| `components/RoomHost.tsx` | GM 房间管理页面 |
-| `components/RoomJoin.tsx` | 玩家加入房间页面 |
-| `components/AvatarUploader.tsx` | 头像上传组件 |
-| `components/DiceRoller.tsx` | 掷骰组件 |
-| `components/ImageViewer.tsx` | 图片查看弹窗 |
+| 文件                              | 说明               |
+| --------------------------------- | ------------------ |
+| `types/room.ts`                 | 房间消息类型定义   |
+| `contexts/RoomContext.tsx`      | 房间状态管理       |
+| `hooks/usePeerHost.ts`          | GM 端 PeerJS 逻辑  |
+| `hooks/usePeerClient.ts`        | 玩家端 PeerJS 逻辑 |
+| `components/PlayerView.tsx`     | 玩家端顶层视图     |
+| `components/GMView.tsx`         | 主持人端顶层视图   |
+| `components/PlayerSidebar.tsx`  | 玩家端精简侧边栏   |
+| `components/GMSidebar.tsx`      | 主持人端侧边栏     |
+| `components/RoomHost.tsx`       | GM 房间管理页面    |
+| `components/RoomJoin.tsx`       | 玩家加入房间页面   |
+| `components/AvatarUploader.tsx` | 头像上传组件       |
+| `components/DiceRoller.tsx`     | 掷骰组件           |
+| `components/ImageViewer.tsx`    | 图片查看弹窗       |
 
 ### 6.2 修改文件
 
-| 文件 | 修改内容 |
-|---|---|
-| `types.ts` | `CharacterData` 新增 `avatarDataUrl` 字段 |
-| `App.tsx` | 顶层加入分页切换 + RoomProvider |
-| `contexts/AppProviders.tsx` | 包裹 `RoomProvider` |
+| 文件                              | 修改内容                                             |
+| --------------------------------- | ---------------------------------------------------- |
+| `types.ts`                      | `CharacterData` 新增 `avatarDataUrl` 字段        |
+| `App.tsx`                       | 顶层加入分页切换 + RoomProvider                      |
+| `contexts/AppProviders.tsx`     | 包裹 `RoomProvider`                                |
 | `contexts/CharacterContext.tsx` | `INITIAL_CHARACTER` 新增默认 `avatarDataUrl: ''` |
-| `components/MainLayout.tsx` | 拆分渲染逻辑，分流到 `PlayerView` / `GMView` |
-| `components/TabHome.tsx` | 集成 `AvatarUploader` |
-| `package.json` | 新增 `peerjs` 依赖 |
+| `components/MainLayout.tsx`     | 拆分渲染逻辑，分流到 `PlayerView` / `GMView`     |
+| `components/TabHome.tsx`        | 集成 `AvatarUploader`                              |
+| `package.json`                  | 新增 `peerjs` 依赖                                 |
 
 ---
 
@@ -434,19 +436,20 @@ interface RoomState {
 ### 阶段一：基础架构搭建
 
 1. **安装依赖**
+
    ```bash
    npm install peerjs
    npm install -D @types/peerjs  # 如有类型定义包
    ```
-
 2. **创建类型定义** `types/room.ts`
-   - 定义 `RoomMessageType`、`RoomMessage`、`DiceRollPayload`、`ImageSharePayload`、`JoinRequestPayload`
 
+   - 定义 `RoomMessageType`、`RoomMessage`、`DiceRollPayload`、`ImageSharePayload`、`JoinRequestPayload`
 3. **扩展 `CharacterData`**
+
    - 在 `types.ts` 中添加 `avatarDataUrl: string`
    - 在 `CharacterContext.tsx` 的 `INITIAL_CHARACTER` 中添加默认值
-
 4. **创建顶层分页切换**
+
    - 修改 `App.tsx`，添加分页状态 `activeTab: 'player' | 'gm'`
    - 创建顶部 Tab 切换 UI（龙与地下城风格设计）
    - 根据 tab 渲染 `<PlayerView />` 或 `<GMView />`
@@ -454,30 +457,32 @@ interface RoomState {
 ### 阶段二：玩家端实现
 
 5. **创建 `PlayerSidebar.tsx`**
-   - 从现有 `Sidebar.tsx` 精简，仅保留：角色卡、法术书、加入房间
 
+   - 从现有 `Sidebar.tsx` 精简，仅保留：角色卡、法术书、加入房间
 6. **创建 `PlayerView.tsx`**
+
    - 复用现有 `MainLayout` 中角色卡管理相关的渲染逻辑
    - 使用 `PlayerSidebar`
-
 7. **实现 `AvatarUploader.tsx`**
+
    - 文件选择 → FileReader → Canvas 压缩 → Base64 输出
    - 集成到 `TabHome.tsx`（角色卡信息首页）
-
 8. **实现 `RoomJoin.tsx`**
+
    - 加入房间表单 UI
    - 连接成功后的在线状态面板
 
 ### 阶段三：主持人端实现
 
 9. **创建 `GMSidebar.tsx`**
-   - 将所有 `lib-*` 菜单项迁移至此 + 新增「房间管理」
 
+   - 将所有 `lib-*` 菜单项迁移至此 + 新增「房间管理」
 10. **创建 `GMView.tsx`**
+
     - 复用现有 `MainLayout` 中数据库管理相关的渲染逻辑
     - 集成房间管理模块
-
 11. **实现 `RoomHost.tsx`**
+
     - 创建房间界面
     - 在线玩家列表
     - GM 工具栏（掷骰、发送图片）
@@ -485,32 +490,34 @@ interface RoomState {
 ### 阶段四：PeerJS 联机核心
 
 12. **实现 `hooks/usePeerHost.ts`**
+
     - 初始化 Peer 实例
     - 监听连接 → 管理连接池
     - 广播消息到所有玩家
     - 接收 JOIN_REQUEST → 发送 JOIN_ACCEPTED / PLAYER_LIST
     - 修改角色卡后 → 发送 CHARACTER_UPDATE
-
 13. **实现 `hooks/usePeerClient.ts`**
+
     - 初始化 Peer → 连接到 Host
     - 发送 JOIN_REQUEST（携带角色卡）
     - 接收 CHARACTER_UPDATE → 更新本地角色卡
     - 接收 IMAGE_SHARE → 打开 ImageViewer
     - 接收 DICE_ROLL → 显示掷骰结果
-
 14. **创建 `contexts/RoomContext.tsx`**
+
     - 封装 Host/Client hooks
     - 提供统一的房间状态给 UI 组件
 
 ### 阶段五：交互功能
 
 15. **实现 `DiceRoller.tsx`**
+
     - 骰子类型选择面板（d4 ~ d100）
     - 支持多骰投掷
     - 掷骰动画 + 结果展示
     - 通过 RoomContext 广播结果
-
 16. **实现 `ImageViewer.tsx`**
+
     - 弹窗式图片展示
     - 支持缩放和关闭
     - GM 端：选择图片并发送
@@ -565,10 +572,10 @@ interface RoomState {
 
 ## 九、非功能需求
 
-| 项目 | 要求 |
-|---|---|
-| **兼容性** | Chrome 90+、Edge 90+、Firefox 88+（WebRTC 必需） |
-| **响应式** | 移动端仍可使用（侧边栏已有抽屉式支持） |
-| **本地化** | 所有 UI 文案使用中文 |
-| **性能** | 头像图片压缩后上传，PeerJS 消息避免频繁大包传输 |
-| **离线能力** | 角色卡管理离线可用，联机功能需要网络 |
+| 项目               | 要求                                             |
+| ------------------ | ------------------------------------------------ |
+| **兼容性**   | Chrome 90+、Edge 90+、Firefox 88+（WebRTC 必需） |
+| **响应式**   | 移动端仍可使用（侧边栏已有抽屉式支持）           |
+| **本地化**   | 所有 UI 文案使用中文                             |
+| **性能**     | 头像图片压缩后上传，PeerJS 消息避免频繁大包传输  |
+| **离线能力** | 角色卡管理离线可用，联机功能需要网络             |

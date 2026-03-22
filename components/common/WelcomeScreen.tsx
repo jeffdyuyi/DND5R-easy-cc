@@ -2,7 +2,7 @@ import React from 'react';
 import { Shield, Users, Feather } from 'lucide-react';
 
 interface WelcomeScreenProps {
-    onEnter: () => void;
+    onEnter: (role: 'player' | 'gm') => void;
 }
 
 export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onEnter }) => {
@@ -56,17 +56,25 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onEnter }) => {
                         </div>
                     </div>
 
-                    <div className="pt-2">
+                    <div className="pt-2 flex gap-3">
                         <button
-                            onClick={onEnter}
-                            className="w-full bg-stone-800 hover:bg-stone-700 text-white font-bold py-4 rounded-lg shadow-lg transform transition-all active:scale-95 flex items-center justify-center gap-2"
+                            onClick={() => onEnter('player')}
+                            className="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 rounded-lg shadow-lg transform transition-all active:scale-95 flex flex-col items-center justify-center gap-1"
                         >
-                            <span>我已了解，开始建卡</span>
+                            <span className="text-xl">🎭</span>
+                            <span>我是玩家，创建角色</span>
                         </button>
-                        <p className="text-center text-[10px] text-stone-400 mt-3">
-                            点击上方按钮即代表您同意本工具仅用于非商业学习用途。
-                        </p>
+                        <button
+                            onClick={() => onEnter('gm')}
+                            className="flex-1 bg-red-600 hover:bg-red-700 text-white font-bold py-4 rounded-lg shadow-lg transform transition-all active:scale-95 flex flex-col items-center justify-center gap-1"
+                        >
+                            <span className="text-xl">🛡️</span>
+                            <span>我是主持，管理数据</span>
+                        </button>
                     </div>
+                    <p className="text-center text-[10px] text-stone-400 mt-3">
+                        点击上方按钮即代表您同意本工具仅用于非商业学习用途。
+                    </p>
                 </div>
             </div>
         </div>
