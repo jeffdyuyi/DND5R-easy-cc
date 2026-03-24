@@ -199,7 +199,7 @@ export function CardLibrary<T extends BaseLibraryItem>({
          </div>
 
          {/* Grid */}
-         <div className={`grid gap-6 ${effectiveLayout === 'list' ? 'grid-cols-1' : 'grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6'}`}>
+         <div className={`grid ${effectiveLayout === 'list' ? 'grid-cols-1 gap-3' : 'grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-6'}`}>
             {/* Create New Card */}
             {(onCreate || onCreateAction) && allowEdit && (
                <div
@@ -207,11 +207,11 @@ export function CardLibrary<T extends BaseLibraryItem>({
                   className={`
                 group cursor-pointer border-4 border-dashed border-stone-300 rounded-xl flex flex-col items-center justify-center 
                 bg-stone-50 hover:bg-stone-100 transition-colors shadow-inner
-                ${renderItem && effectiveLayout === 'list' ? 'h-24 flex-row gap-4' : effectiveLayout === 'grid' && renderItem ? 'h-40' : 'aspect-square xl:aspect-video'}
+                ${effectiveLayout === 'list' ? 'h-16 flex-row gap-4' : 'aspect-square xl:aspect-video'}
               `}
                >
-                  <div className={`rounded-full bg-white border-2 border-stone-300 flex items-center justify-center group-hover:scale-110 transition-transform ${renderItem && effectiveLayout === 'list' ? 'w-10 h-10' : 'w-12 h-12 mb-3'}`}>
-                     <Plus className={`${renderItem && effectiveLayout === 'list' ? 'w-5 h-5' : 'w-6 h-6'} text-stone-400 group-hover:text-stone-600`} />
+                  <div className={`rounded-full bg-white border-2 border-stone-300 flex items-center justify-center group-hover:scale-110 transition-transform ${effectiveLayout === 'list' ? 'w-8 h-8' : 'w-12 h-12 mb-3'}`}>
+                     <Plus className={`${effectiveLayout === 'list' ? 'w-4 h-4' : 'w-6 h-6'} text-stone-400 group-hover:text-stone-600`} />
                   </div>
                   <span className="font-bold text-stone-400 group-hover:text-stone-600 uppercase tracking-widest text-xs">新建{itemTypeLabel}</span>
                </div>

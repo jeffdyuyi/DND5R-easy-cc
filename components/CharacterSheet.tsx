@@ -14,6 +14,7 @@ import {
   Backpack, Sword, BookOpen, Skull, ArrowLeft, FileCode, Trophy
 } from 'lucide-react';
 import { getModifier, getProficiencyBonus, formatModifier } from '../utils/rules';
+import { convertToFVTTActor } from '../utils/fvttExport';
 
 interface Props {
   character: CharacterData;
@@ -236,8 +237,27 @@ export const CharacterSheet: React.FC<Props> = ({
                   downloadAnchorNode.remove();
                 }}
                 className="text-xs bg-yellow-600 hover:bg-yellow-500 text-white px-3 py-1.5 rounded font-bold shadow transition-colors border border-yellow-700 flex items-center gap-2"
+                title="导出为本站识别的存档格式 JSON"
               >
                 <Scroll className="w-4 h-4" /> 导出 JSON
+              </button>
+              <button
+                onClick={() => {
+                  const classData = libraryClasses.find(c => c.name === character.className);
+                  const speciesData = librarySpecies.find(s => s.name === character.race);
+                  const fvttData = convertToFVTTActor(character, classData, speciesData);
+                  const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(fvttData, null, 2));
+                  const downloadAnchorNode = document.createElement('a');
+                  downloadAnchorNode.setAttribute("href", dataStr);
+                  downloadAnchorNode.setAttribute("download", `fvtt-Actor-${character.name}.json`);
+                  document.body.appendChild(downloadAnchorNode);
+                  downloadAnchorNode.click();
+                  downloadAnchorNode.remove();
+                }}
+                className="text-xs bg-purple-700 hover:bg-purple-600 text-white px-3 py-1.5 rounded font-bold shadow transition-colors border border-purple-800 flex items-center gap-2"
+                title="导出为 FVTT 可直接导入的 dnd5e 角色卡 JSON"
+              >
+                <Scroll className="w-4 h-4" /> 导出 FVTT
               </button>
             </div>
           </div>

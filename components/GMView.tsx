@@ -8,7 +8,7 @@ import {
 import { ClassEditor, SubclassEditor, RichDescriptionEditor, BackgroundEditor, SpellEditor, ToolEditor, FeatEditor, SpeciesEditor } from './LibraryEditors';
 import { ClassItem, SubclassItem, SpeciesItem, BackgroundItem, SpellItem, FeatItem, ItemItem } from '../types';
 import { CompactCard } from './common/CompactCard';
-import { ClassCard } from './common/ClassCard';
+import { ModernListRow } from './common/ModernListRow';
 import { useLibrary } from '../contexts/LibraryContext';
 import { useSpellFilter, useFeatFilter, useItemFilter, useMagicItemFilter } from '../hooks/useLibraryFilters';
 import { Feather, Menu } from 'lucide-react';
@@ -39,9 +39,9 @@ export const GMView: React.FC = () => {
                         cardColorTheme="red"
                         renderDetail={(item) => <ClassDetailView item={item} />}
                         renderEditFields={(item, setItem) => <ClassEditor item={item} setItem={setItem} />}
-                        layout="grid"
+                        layout="list"
                         renderItem={(item, isSelected, onClick, actions) => (
-                            <ClassCard
+                            <ModernListRow
                                 item={item}
                                 type="class"
                                 isSelected={isSelected}
@@ -70,9 +70,9 @@ export const GMView: React.FC = () => {
                         cardColorTheme="orange"
                         renderDetail={(item) => <SubclassDetailView item={item} />}
                         renderEditFields={(item, setItem) => <SubclassEditor item={item} setItem={setItem} classes={classes.items} />}
-                        layout="grid"
+                        layout="list"
                         renderItem={(item, isSelected, onClick, actions) => (
-                            <ClassCard
+                            <ModernListRow
                                 item={item}
                                 type="subclass"
                                 isSelected={isSelected}
@@ -95,7 +95,17 @@ export const GMView: React.FC = () => {
                         cardColorTheme="green"
                         renderDetail={(item) => <SpeciesDetailView item={item} />}
                         renderEditFields={(item, setItem) => <SpeciesEditor item={item} setItem={setItem} />}
-                        emptyTemplate={{ id: '', name: '', source: '第三方/原创', description: '', speed: 30, size: '中型', darkvision: false, traits: [] }}
+                        layout="list"
+                        renderItem={(item, isSelected, onClick, actions) => (
+                            <ModernListRow
+                                item={item}
+                                type="species"
+                                isSelected={isSelected}
+                                onClick={onClick}
+                                actions={actions}
+                            />
+                        )}
+                        emptyTemplate={{ id: '', name: '', source: '第三方/原创', description: '', speed: 30, size: '中型', darkvision: '无', traits: [] }}
                     />
                 );
             case 'lib-bg':
@@ -107,6 +117,16 @@ export const GMView: React.FC = () => {
                         cardColorTheme="yellow"
                         renderDetail={(item) => <BackgroundDetailView item={item} libraryFeats={feats.items} />}
                         renderEditFields={(item, setItem) => <BackgroundEditor item={item} setItem={setItem} feats={feats.items} />}
+                        layout="list"
+                        renderItem={(item, isSelected, onClick, actions) => (
+                            <ModernListRow
+                                item={item}
+                                type="background"
+                                isSelected={isSelected}
+                                onClick={onClick}
+                                actions={actions}
+                            />
+                        )}
                         emptyTemplate={{
                             id: '', name: '', source: '第三方/原创',
                             description: '在此描述角色的过往经历...',
@@ -157,6 +177,16 @@ export const GMView: React.FC = () => {
                         cardColorTheme="purple"
                         renderDetail={(item) => <FeatDetailView item={item} />}
                         renderEditFields={(item, setItem) => <FeatEditor item={item} setItem={setItem} />}
+                        layout="list"
+                        renderItem={(item, isSelected, onClick, actions) => (
+                            <ModernListRow
+                                item={item}
+                                type="feat"
+                                isSelected={isSelected}
+                                onClick={onClick}
+                                actions={actions}
+                            />
+                        )}
                         emptyTemplate={{ id: '', name: '', source: '第三方/原创', category: '通用专长', description: '', benefits: [], tags: [] }}
                     />
                 );
