@@ -1,0 +1,97 @@
+# TRPG 成就卡锻造工具 - 视觉风格规范 (Visual Style Guide)
+
+本指南总结了“成就卡锻造工具”的核心视觉风格，旨在为后续开发或其他工具提供统一的设计语言参考。
+
+## 1. 核心配色主题 (Color Palette)
+
+项目采用 **"Deep Dark" (沉静深邃)** 主题，以深绀色/深紫黑色为基调，搭配多种层次的金黄色作为强调色。
+
+### 背景色 (Backgrounds)
+- **极深背景 (`--bg-deep`):** `#0c0c10` (主页面背景)
+- **卡片容器 (`--bg-card`):** `#141420` (卡片本体)
+- **面板背景 (`--bg-panel`):** `#18182a` (控制面板/侧边栏)
+- **输入框背景 (`--bg-input`):** `#1e1e30`
+
+### 鎏金效果色 (Gold Variations)
+| 变量名 | 颜色值 | 用途 |
+| :--- | :--- | :--- |
+| `--gold-1` | `#bf953f` | 暗金/基础金色 |
+| `--gold-2` | `#fcf6ba` | 亮金/高光 |
+| `--gold-3` | `#b38728` | 古铜金/中性色 |
+| `--gold-4` | `#fbf5b7` | 极细亮金 |
+| `--gold-5` | `#aa771c` | 铜棕金/阴影色 |
+
+### 文字颜色 (Text)
+- **主文字:** `#f0ead8` (暖白，非纯白，减少对比度疲劳)
+- **辅助文字:** `#a89b7a` (暗金灰)
+- **静默文字:** `#6b6250` (深灰褐)
+
+---
+
+## 2. 字体规范 (Typography)
+
+项目强调“典雅”与“沉浸感”，特别选用了极具书法韵味的字体。
+
+- **首选字体:** `'LXGW WenKai'`, `'霞鹜文楷'` (优雅的仿宋/楷书风格，适合 TRPG 氛围)
+- **正文/备用:** `'Inter'`, `system-ui`, `sans-serif`
+- **标题样式:** 建议使用 `font-weight: 800` 或 `700`，配合鎏金渐变效果。
+
+---
+
+## 3. 核心视觉效果 (Core Effects)
+
+### 3.1 动态鎏金文字 (Golden Shimmer)
+利用 `linear-gradient` 和 `background-clip: text` 实现文本的金属质感与闪烁效果。
+
+```css
+.golden-text {
+  background: linear-gradient(to right,
+      #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c, #fcf6ba, #bf953f);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  to { background-position: 200% center; }
+}
+```
+
+### 3.2 噪点质感层 (Noise Texture)
+为背景增加微弱的噪点，使其更有“实物感”或“纸张感”。
+
+```css
+.noise-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.04;
+}
+```
+
+### 3.3 呼吸灯描边 (Gold Border Glow)
+使用脉冲动画模拟金属边的光泽映射。
+
+```css
+.gold-glow {
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 8px 2px rgba(191, 149, 63, 0.4); }
+  50% { box-shadow: 0 0 20px 6px rgba(252, 246, 186, 0.6); }
+}
+```
+
+---
+
+## 4. UI 组件设计准则
+
+1.  **圆角 (Border Radius):** 统一使用 `8px` 或 `10px`，呈现适中的现代感。
+2.  **边框 (Borders):** 默认边框保持微弱透明 (`rgba(191, 149, 63, 0.2)`)，激活态或高亮态增加亮度。
+3.  **微交互:** 按钮应具备平滑的偏移 (`translateY(-1px)`) 和阴影扩充效果，强调交互的反馈。
+4.  **半透明 (Translucency):** 大量使用半透明背景层叠，通过模糊和低不透明度营造层次感。

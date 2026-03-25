@@ -11,9 +11,9 @@ interface Props {
 }
 
 const CONDITIONS = [
-    "力竭", "失明", "魅惑", "耳聋", "恐惧",
-    "擒抱", "失能", "不可见", "麻痹", "石化",
-    "中毒", "倒地", "束缚", "昏迷"
+    "目盲", "魅惑", "耳聋", "力竭", "恐慌",
+    "受擒", "失能", "隐形", "麻痹", "石化",
+    "倒地", "中毒", "束缚", "震慑", "昏迷"
 ];
 
 const TabSession: React.FC<Props> = ({ character, updateCharacter }) => {
@@ -184,8 +184,8 @@ const TabSession: React.FC<Props> = ({ character, updateCharacter }) => {
                                 key={c}
                                 onClick={() => toggleCondition(c)}
                                 className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all border-2 ${session.conditions.includes(c)
-                                        ? 'bg-purple-600 border-purple-400 text-white shadow-md'
-                                        : 'bg-stone-50 border-stone-200 text-stone-500 hover:border-purple-200'
+                                    ? 'bg-purple-600 border-purple-400 text-white shadow-md'
+                                    : 'bg-stone-50 border-stone-200 text-stone-500 hover:border-purple-200'
                                     }`}
                             >
                                 {c}

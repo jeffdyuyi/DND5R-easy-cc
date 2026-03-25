@@ -1,0 +1,186 @@
+{
+    "id": "char-12345678",
+    "name": "艾拉·影叶",
+    "level": 3,
+    "xp": 900,
+    "species": "精灵",
+    "speciesId": "elf-2024",
+    "subSpecies": "高等精灵 (High Elf)",
+    "subSpeciesId": "elf-high-2024",
+    "className": "德鲁伊",
+    "classId": "druid-2024",
+    "subclass": "月亮结社",
+    "subclassId": "druid-moon",
+    "background": "隐士",
+    "backgroundId": "hermit-2024",
+    "originFeat": "医疗师",
+    "originFeatId": "healer",
+    "abilities": {
+        "力量": 8,
+        "敏捷": 14,
+        "体质": 14,
+        "智力": 12,
+        "感知": 16,
+        "魅力": 10
+    },
+    "proficiencyBonus": 2,
+    "ac": 14,
+    "initiative": 2,
+    "speed": 30,
+    "hpMax": 24,
+    "hitDie": "d8",
+    "hitDiceCount": 3,
+    "saves": [
+        "智力",
+        "感知"
+    ],
+    "skills": [
+        "医药",
+        "宗教",
+        "洞悉",
+        "察觉",
+        "生存"
+    ],
+    "proficiencies": {
+        "weapons": [
+            "简易武器",
+            "军用武器"
+        ],
+        "armor": [
+            "轻甲",
+            "中甲",
+            "盾牌"
+        ],
+        "tools": [
+            "草药工具"
+        ],
+        "languages": [
+            "通用语",
+            "精灵语",
+            "德鲁伊语"
+        ]
+    },
+    "inventory": [
+        {
+            "id": "item-leather-1",
+            "name": "皮甲",
+            "libraryId": "leather-armor-2024",
+            "type": "护甲",
+            "quantity": 1,
+            "equipped": true,
+            "description": "由硬化皮革制成的护甲。",
+            "weight": "10 磅",
+            "cost": "10 GP"
+        },
+        {
+            "id": "item-shield-1",
+            "name": "盾牌",
+            "libraryId": "shield-2024",
+            "type": "护甲",
+            "quantity": 1,
+            "equipped": true,
+            "description": "由木头或金属制成。利用动作穿戴或卸除。",
+            "weight": "6 磅",
+            "cost": "10 GP"
+        },
+        {
+            "id": "item-scimitar-1",
+            "name": "弯刀",
+            "libraryId": "scimitar-2024",
+            "type": "武器",
+            "quantity": 1,
+            "equipped": true,
+            "damage": "1d6",
+            "damageType": "挥砍",
+            "properties": [
+                "灵巧",
+                "轻型"
+            ],
+            "weight": "3 磅",
+            "cost": "25 GP"
+        },
+        {
+            "id": "item-staff-1",
+            "name": "木质法杖",
+            "libraryId": "wooden-staff",
+            "type": "法器",
+            "quantity": 1,
+            "equipped": true,
+            "description": "德鲁伊法器。德鲁伊和游侠可以使用。也视作长棍。",
+            "weight": "4 磅",
+            "cost": "5 GP"
+        },
+        {
+            "id": "item-herbalism-1",
+            "name": "草药工具",
+            "libraryId": "herbalism-kit-2024",
+            "type": "工具",
+            "quantity": 1,
+            "equipped": false,
+            "description": "包含各种用来采集、研磨草药的工具，以及用来制作药水的容器。",
+            "weight": "3 lb",
+            "cost": "5 GP"
+        }
+    ],
+    "spells": {
+        "cantrips": [
+            "德鲁伊伎俩",
+            "燃火术",
+            "魔法伎俩"
+        ],
+        "level1": [
+            "化兽为友",
+            "疗伤术",
+            "妖火",
+            "雷鸣波"
+        ],
+        "level2": [
+            "月华之光"
+        ],
+        "prepared": [
+            "德鲁伊伎俩",
+            "燃火术",
+            "魔法伎俩",
+            "化兽为友",
+            "疗伤术",
+            "妖火",
+            "雷鸣波",
+            "月华之光"
+        ]
+    },
+    "currency": {
+        "gp": 16,
+        "sp": 0,
+        "cp": 0
+    },
+    "session": {
+        "hp": 24,
+        "tempHp": 9,
+        "deathSaves": {
+            "successes": 0,
+            "failures": 0
+        },
+        "conditions": [
+            "受擒"
+        ],
+        "exhaustion": 0,
+        "customResources": [
+            {
+                "name": "荒野变形",
+                "current": 2,
+                "max": 2
+            },
+            {
+                "name": "二环法术位",
+                "current": 2,
+                "max": 2
+            }
+        ],
+        "notes": "当前处于月亮结社的战斗形态预览测试。"
+    },
+    "metadata": {
+        "creationDate": "2026-03-25T07:15:00Z",
+        "lastModified": "2026-03-25T07:15:00Z",
+        "version": "2024.1"
+    }
+}

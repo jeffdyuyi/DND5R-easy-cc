@@ -31,7 +31,7 @@ export const formatModifier = (scoreOrMod: number, isScore: boolean = false): st
 export const validateCharacterData = (data: any): boolean => {
   if (!data || typeof data !== 'object') return false;
   // Check for essential fields
-  const requiredFields = ['id', 'name', 'level', 'abilities', 'className'];
+  const requiredFields = ['id', 'name', 'level', 'abilities', 'className', 'session'];
   for (const field of requiredFields) {
     if (!(field in data)) return false;
   }
