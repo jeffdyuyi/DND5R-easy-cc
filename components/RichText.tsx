@@ -17,10 +17,10 @@ export const RichText = ({ text }: { text?: string }) => {
     const parts = str.split(/(\*\*.*?\*\*|\*.*?\*)/g);
     return parts.map((part, idx) => {
       if (part.startsWith('**') && part.endsWith('**') && part.length >= 4) {
-        return <strong key={idx} className="font-black text-[#bf953f] drop-shadow-[0_0_2px_rgba(191,149,63,0.3)]">{part.slice(2, -2)}</strong>;
+        return <strong key={idx} className="font-bold text-stone-900">{part.slice(2, -2)}</strong>;
       }
       if (part.startsWith('*') && part.endsWith('*') && part.length >= 2) {
-        return <em key={idx} className="italic text-[#a89b7a]">{part.slice(1, -1)}</em>;
+        return <em key={idx} className="italic text-stone-800">{part.slice(1, -1)}</em>;
       }
       return part;
     });
@@ -71,9 +71,9 @@ export const RichText = ({ text }: { text?: string }) => {
         renderedLines.push(<div key={index} className="h-2" />);
       } else if (trimmed.startsWith('- ')) {
         renderedLines.push(
-          <div key={index} className="flex gap-3 pl-2 min-h-[1.5em] items-start my-1 text-[#f0ead8]/80">
-            <span className="text-[#bf953f] mt-1.5 w-1.5 h-1.5 rounded-full bg-gradient-to-br from-[#bf953f] to-[#aa771c] flex-shrink-0 shadow-[0_0_5px_rgba(191,149,63,0.5)]"></span>
-            <div className="flex-1 leading-relaxed">{processInline(line.substring(2))}</div>
+          <div key={index} className="flex gap-2 pl-2 min-h-[1.5em] items-start my-0.5">
+            <span className="text-stone-400 mt-1.5 w-1.5 h-1.5 rounded-full bg-stone-300 flex-shrink-0"></span>
+            <div className="flex-1">{processInline(line.substring(2))}</div>
           </div>
         );
       } else {
