@@ -15,7 +15,7 @@ interface Props {
 
 const StepSpecies: React.FC<Props> = ({ character, updateCharacter }) => {
     const { species } = useLibrary();
-    const selectedSpecies = species.items.find(sp => sp.name === character.race);
+    const selectedSpecies = species.items.find(sp => sp.id === character.raceId) || species.items.find(sp => sp.name === character.race);
 
     const handleFeatureChoiceUpdate = (id: string, values: string[]) => {
         const newSelections = { ...character.selections, [id]: values };
@@ -60,10 +60,10 @@ const StepSpecies: React.FC<Props> = ({ character, updateCharacter }) => {
                 {species.items.map(sp => (
                     <button
                         key={sp.id}
-                        onClick={() => updateCharacter({ race: sp.name, subRace: '' })}
+                        onClick={() => updateCharacter({ race: sp.name, raceId: sp.id, subRace: '', subRaceId: '' })}
                         className={`
               p-3 rounded-lg border-2 flex flex-col items-center gap-2 transition-all
-              ${character.race === sp.name
+              ${character.race === sp.name || character.raceId === sp.id
                                 ? 'border-dndRed bg-red-50 shadow-md'
                                 : 'border-stone-200 bg-white hover:border-stone-300 hover:shadow-sm'}
             `}
@@ -157,6 +157,7 @@ const StepSpecies: React.FC<Props> = ({ character, updateCharacter }) => {
                                                         v.name,
                                                         selectedSpecies.subraces.options
                                                     );
+                                                    updates.subRaceId = v.id || ''; // If sub-race has an ID in the data mapping
                                                     updateCharacter(updates);
                                                 }
                                             }}

@@ -181,8 +181,14 @@ const TabCombat: React.FC<Props> = ({ character, updateCharacter, libraryClasses
                      <span className="text-xs font-bold text-dndRed uppercase mb-2">当前 (Current)</span>
                      <input
                         type="number"
-                        value={character.currentHp}
-                        onChange={(e) => updateCharacter({ currentHp: parseInt(e.target.value) || 0 })}
+                        value={character.session?.hp ?? character.currentHp}
+                        onChange={(e) => {
+                           const val = parseInt(e.target.value) || 0;
+                           updateCharacter({
+                              currentHp: val,
+                              session: { ...(character.session || {}), hp: val } as any
+                           });
+                        }}
                         className="text-4xl font-black text-dndRed text-center w-full bg-transparent border-b-2 border-stone-200 focus:border-dndRed focus:outline-none"
                      />
                   </div>
@@ -191,8 +197,14 @@ const TabCombat: React.FC<Props> = ({ character, updateCharacter, libraryClasses
                      <span className="text-xs font-bold text-blue-500 uppercase mb-2">临时 (Temp)</span>
                      <input
                         type="number"
-                        value={character.tempHp}
-                        onChange={(e) => updateCharacter({ tempHp: parseInt(e.target.value) || 0 })}
+                        value={character.session?.tempHp ?? character.tempHp}
+                        onChange={(e) => {
+                           const val = parseInt(e.target.value) || 0;
+                           updateCharacter({
+                              tempHp: val,
+                              session: { ...(character.session || {}), tempHp: val } as any
+                           });
+                        }}
                         className="text-2xl font-bold text-blue-500 text-center w-full bg-transparent border-b-2 border-stone-200 focus:border-blue-500 focus:outline-none"
                      />
                   </div>
@@ -219,10 +231,32 @@ const TabCombat: React.FC<Props> = ({ character, updateCharacter, libraryClasses
                         <span className="text-[10px] font-bold text-stone-500">死亡豁免</span>
                      </div>
                      <div className="flex gap-1">
-                        {[1, 2, 3].map(i => <div key={`s-${i}`} className="w-3 h-3 rounded-full border border-stone-400 bg-white hover:bg-green-400 cursor-pointer" title="成功"></div>)}
+                        {[1, 2, 3].map(i => (
+                           <div
+                              key={`s-${i}`}
+                              onClick={() => {
+                                 const current = character.session?.deathSaves?.success || 0;
+                                 const newVal = i === current ? i - 1 : i;
+                                 updateCharacter({ session: { ...(character.session || {}), deathSaves: { ...(character.session?.deathSaves || { failure: 0 }), success: newVal } } as any });
+                              }}
+                              className={`w-3 h-3 rounded-full border border-stone-400 cursor-pointer transition-colors ${i <= (character.session?.deathSaves?.success || 0) ? 'bg-green-500 border-green-600' : 'bg-white hover:bg-green-200'}`}
+                              title="成功"
+                           ></div>
+                        ))}
                      </div>
                      <div className="flex gap-1">
-                        {[1, 2, 3].map(i => <div key={`f-${i}`} className="w-3 h-3 rounded-full border border-stone-400 bg-white hover:bg-red-400 cursor-pointer" title="失败"></div>)}
+                        {[1, 2, 3].map(i => (
+                           <div
+                              key={`f-${i}`}
+                              onClick={() => {
+                                 const current = character.session?.deathSaves?.failure || 0;
+                                 const newVal = i === current ? i - 1 : i;
+                                 updateCharacter({ session: { ...(character.session || {}), deathSaves: { ...(character.session?.deathSaves || { success: 0 }), failure: newVal } } as any });
+                              }}
+                              className={`w-3 h-3 rounded-full border border-stone-400 cursor-pointer transition-colors ${i <= (character.session?.deathSaves?.failure || 0) ? 'bg-red-500 border-red-600' : 'bg-white hover:bg-red-200'}`}
+                              title="失败"
+                           ></div>
+                        ))}
                      </div>
                   </div>
                </div>

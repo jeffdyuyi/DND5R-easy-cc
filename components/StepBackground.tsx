@@ -30,7 +30,7 @@ const ABILITY_LABELS: Record<keyof AbilityScores, string> = {
 
 const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
     const { backgrounds, feats } = useLibrary();
-    const selectedBackground = backgrounds.items.find(bg => bg.name === character.background);
+    const selectedBackground = backgrounds.items.find(bg => bg.id === character.backgroundId) || backgrounds.items.find(bg => bg.name === character.background);
     const selectedFeat = selectedBackground ? feats.items.find(f => f.name === selectedBackground.feat) : undefined;
 
     // ASI State
@@ -119,10 +119,10 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
                 {backgrounds.items.map((bg: any) => (
                     <button
                         key={bg.id}
-                        onClick={() => updateCharacter({ background: bg.name })}
+                        onClick={() => updateCharacter({ background: bg.name, backgroundId: bg.id })}
                         className={`
               w-full p-3 rounded-lg border-2 text-left transition-all flex items-center justify-between
-              ${character.background === bg.name
+              ${character.background === bg.name || character.backgroundId === bg.id
                                 ? 'border-dndRed bg-red-50 shadow-md'
                                 : 'border-stone-200 bg-white hover:border-stone-300'}
             `}

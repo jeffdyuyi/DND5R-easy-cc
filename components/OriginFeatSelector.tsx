@@ -1,5 +1,5 @@
-import React from 'react';
 import { CharacterData } from '../types';
+import { useLibrary } from '../contexts/LibraryContext';
 
 import { Sparkles, Music, Wrench, BookOpen, CheckCircle } from 'lucide-react';
 
@@ -44,11 +44,16 @@ const OriginFeatSelector: React.FC<Props> = ({
     featName,
     lockedSpellList
 }) => {
+    const { feats } = useLibrary();
     const featConfig = character.featConfig?.originFeat || { name: '' };
+
+    // 查找专长库 ID
+    const featId = feats.items.find(f => f.name === featName)?.id || '';
 
     // 更新featConfig
     const updateFeatConfig = (updates: Partial<typeof featConfig>) => {
         updateCharacter({
+            originFeatId: featId, // 确保 ID 同步
             featConfig: {
                 ...character.featConfig,
                 originFeat: {

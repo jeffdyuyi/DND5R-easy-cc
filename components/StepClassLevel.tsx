@@ -39,8 +39,8 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
   const { classes, subclasses } = useLibrary();
 
   const selectedClass: ClassItem | undefined = useMemo(() => {
-    return classes.items.find(cls => cls.name === character.className);
-  }, [classes.items, character.className]);
+    return classes.items.find(cls => cls.id === character.classId) || classes.items.find(cls => cls.name === character.className);
+  }, [classes.items, character.classId, character.className]);
 
   // Get subclasses for selected class
   const availableSubclasses = useMemo((): SubclassItem[] => {
@@ -150,6 +150,7 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
   };
 
   const handleClassChange = (className: string) => {
+    const cls = classes.items.find(c => c.name === className);
     let spellAbility = character.spellcastingAbility || '智力';
     if (className === '法师') spellAbility = '智力';
     else if (className === '术士' || className === '魔契师' || className === '圣武士' || className === '吟游诗人') spellAbility = '魅力';
@@ -157,14 +158,20 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
 
     updateCharacter({
       className,
+      classId: cls?.id || '',
       subclass: '',
+      subclassId: '',
       skillMastery: {},
       spellcastingAbility: spellAbility
     });
   };
 
   const handleSubclassChange = (subclass: string) => {
-    const updates: Partial<CharacterData> = { subclass };
+    const sc = subclasses.items.find(s => s.name === subclass && s.parentClass === character.className);
+    const updates: Partial<CharacterData> = {
+      subclass,
+      subclassId: sc?.id || ''
+    };
     if (subclass === '奥法骑士' || subclass === '诡术师') {
       updates.spellcastingAbility = '智力';
     }
@@ -200,7 +207,7 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
             onClick={() => handleClassChange(cls.name)}
             className={`
               p-3 rounded-lg border-2 flex flex-col items-center gap-2 transition-all
-              ${character.className === cls.name
+              ${character.className === cls.name || character.classId === cls.id
                 ? 'border-dndRed bg-red-50 shadow-md'
                 : 'border-stone-200 bg-white hover:border-stone-300 hover:shadow-sm'}
             `}

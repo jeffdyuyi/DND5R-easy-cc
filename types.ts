@@ -41,6 +41,7 @@ export interface BaseLibraryItem {
 }
 
 export interface SubSpeciesItem {
+  id?: string; // Optional ID for internal referencing
   name: string;
   desc: string; // Description for UI list
   traits?: string; // Short summary for UI
@@ -190,6 +191,7 @@ export interface ItemItem extends BaseLibraryItem {
   cost: string;
   weight: string;
   rarity?: string; // 魔法物品稀有度: 普通, 非普通, 珍稀, 极珍稀, 传说, 神器
+  fromLibraryId?: string; // 新增：如果是从库中添加的，记录原始 ID
 
   // 武器特定
   damage?: string;      // 例如 "1d8"
@@ -234,11 +236,16 @@ export interface CharacterData {
 
   // References to library IDs or raw strings if custom
   className: string; // Class Name
+  classId?: string;  // 新增：库 ID 引用
   subclass: string;  // Subclass
+  subclassId?: string; // 新增：子职业 ID 引用
 
   race: string;
+  raceId?: string;   // 新增：种族 ID 引用
   subRace: string;
+  subRaceId?: string; // 新增：亚种 ID 引用
   background: string;
+  backgroundId?: string; // 新增：背景 ID 引用
   alignment: Alignment;
 
   // Extended Details (New)
@@ -258,6 +265,7 @@ export interface CharacterData {
 
   // Origin Details
   originFeat: string;
+  originFeatId?: string; // 新增：起源专长 ID 引用
   languages: string;
   toolProficiencies: string; // Deprecated string field, kept for compatibility if needed
 
@@ -276,6 +284,17 @@ export interface CharacterData {
   currentHp: number;
   tempHp: number;
   hitDiceCurrent: number;
+
+  // === NEW: Session Status (用于实时同步) ===
+  session: {
+    hp: number;
+    tempHp: number;
+    hitDice: number;
+    deathSaves: { success: number; failure: number };
+    conditions: string[]; // ["中毒", "倒地"]
+    exhaustion: number;   // 力竭等级
+    customResources: Record<string, { current: number; max: number }>; // 如：狂暴、气、法术位以外的资源
+  };
 
   // Personality & Bio
   personalityTraits: string;

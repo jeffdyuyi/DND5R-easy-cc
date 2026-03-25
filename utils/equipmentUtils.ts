@@ -1128,10 +1128,10 @@ export function convertStartingInventoryToBackpack(
     gear: { id: string; name: string; quantity: number; cost: string; weight: string; type: '杂物'; source: string; description: string }[];
     tools: { id: string; name: string; note: string }[];
 } {
-    const weapons: { id: string; name: string; quantity: number; cost: string; weight: string; type: '武器'; source: string; description: string }[] = [];
-    const armor: { id: string; name: string; quantity: number; cost: string; weight: string; type: '护甲'; source: string; description: string }[] = [];
-    const gear: { id: string; name: string; quantity: number; cost: string; weight: string; type: '杂物'; source: string; description: string }[] = [];
-    const tools: { id: string; name: string; note: string }[] = [];
+    const weapons: { id: string; name: string; quantity: number; cost: string; weight: string; type: '武器'; source: string; description: string; fromLibraryId?: string }[] = [];
+    const armor: { id: string; name: string; quantity: number; cost: string; weight: string; type: '护甲'; source: string; description: string; fromLibraryId?: string }[] = [];
+    const gear: { id: string; name: string; quantity: number; cost: string; weight: string; type: '杂物'; source: string; description: string; fromLibraryId?: string }[] = [];
+    const tools: { id: string; name: string; note: string; fromLibraryId?: string }[] = [];
 
     // Helper to find item in weapon/armor/gear DBs
     const findItemInDB = (name: string) => {
@@ -1193,7 +1193,8 @@ export function convertStartingInventoryToBackpack(
             tools.push({
                 id: toolItem?.id || `tool-${index}-${Date.now()}`,
                 name: toolItem?.name || item.name,
-                note: item.source
+                note: item.source,
+                fromLibraryId: toolItem?.id
             });
             return;
         }
@@ -1210,6 +1211,7 @@ export function convertStartingInventoryToBackpack(
             source: item.source,
             // Use library description, only fallback to source if not found
             description: dbItem?.description || '',
+            fromLibraryId: dbItem?.id, // 记录来自库的原始 ID
             // Copy other potential properties if they exist
             ...(dbItem || {})
         };

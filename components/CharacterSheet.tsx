@@ -11,10 +11,11 @@ import TabAdventure from './TabAdventure';
 import { TabAchievements } from './TabAchievements';
 import {
   Shield, Activity, Scroll, Crown,
-  Backpack, Sword, BookOpen, Skull, ArrowLeft, FileCode, Trophy
+  Backpack, Sword, BookOpen, Skull, ArrowLeft, FileCode, Trophy, Zap
 } from 'lucide-react';
 import { getModifier, getProficiencyBonus, formatModifier } from '../utils/rules';
 import { convertToFVTTActor } from '../utils/fvttExport';
+import TabSession from './TabSession';
 
 interface Props {
   character: CharacterData;
@@ -31,6 +32,7 @@ interface Props {
 
 const TABS = [
   { id: 'stats', label: '属性与技能', icon: <Activity className="w-4 h-4" /> },
+  { id: 'session', label: '会话状态', icon: <Zap className="w-4 h-4 text-amber-500" /> },
   { id: 'combat', label: '战斗参数', icon: <Skull className="w-4 h-4" /> },
   { id: 'class', label: '职业详情', icon: <Shield className="w-4 h-4" /> },
   { id: 'origin', label: '角色起源', icon: <Crown className="w-4 h-4" /> },
@@ -189,6 +191,7 @@ export const CharacterSheet: React.FC<Props> = ({
   const renderTabContent = () => {
     switch (activeTab) {
       case 'stats': return <TabStats character={character} updateCharacter={updateCharacter} setActiveTab={setActiveTab} libraryClasses={libraryClasses} />;
+      case 'session': return <TabSession character={character} updateCharacter={updateCharacter} />;
       case 'combat': return <TabCombat character={character} updateCharacter={updateCharacter} libraryClasses={libraryClasses} librarySpecies={librarySpecies} />;
       case 'class': return <TabClass character={character} updateCharacter={updateCharacter} libraryClasses={libraryClasses} librarySubclasses={librarySubclasses} libraryFeats={libraryFeats} />;
       case 'origin': return <TabOrigin character={character} updateCharacter={updateCharacter} librarySpecies={librarySpecies} libraryBackgrounds={libraryBackgrounds} libraryFeats={libraryFeats} />;
@@ -243,8 +246,8 @@ export const CharacterSheet: React.FC<Props> = ({
               </button>
               <button
                 onClick={() => {
-                  const classData = libraryClasses.find(c => c.name === character.className);
-                  const speciesData = librarySpecies.find(s => s.name === character.race);
+                  const classData = libraryClasses.find(c => c.id === character.classId) || libraryClasses.find(c => c.name === character.className);
+                  const speciesData = librarySpecies.find(s => s.id === character.raceId) || librarySpecies.find(s => s.name === character.race);
                   const fvttData = convertToFVTTActor(character, classData, speciesData);
                   const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(fvttData, null, 2));
                   const downloadAnchorNode = document.createElement('a');
