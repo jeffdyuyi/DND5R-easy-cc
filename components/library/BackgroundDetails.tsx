@@ -4,6 +4,16 @@ import { BackgroundItem, FeatItem } from '../../types';
 import { DetailContainer, MiniStatCard, DetailFooter } from './DetailContainer';
 import { RichText } from '../RichText';
 
+const renderProficiency = (data: any) => {
+    if (!data) return '无';
+    if (typeof data === 'string') return data;
+    if (Array.isArray(data)) {
+        return data.map(item => typeof item === 'object' ? (item.name || JSON.stringify(item)) : item).join(' / ');
+    }
+    if (typeof data === 'object') return data.name || JSON.stringify(data);
+    return String(data);
+};
+
 export const BackgroundDetailView: React.FC<{ item: BackgroundItem; libraryFeats?: FeatItem[] }> = ({ item, libraryFeats = [] }) => {
     if (!item) return <div className="p-8 text-stone-400 italic">未选择背景数据</div>;
 
@@ -21,10 +31,10 @@ export const BackgroundDetailView: React.FC<{ item: BackgroundItem; libraryFeats
                 <div className="space-y-12">
                     {/* Summary */}
                     <section className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        <MiniStatCard label="属性加成" value={item.abilityScores?.join(' / ') || '任选'} icon={<Zap className="w-4 h-4 text-stone-400" />} />
+                        <MiniStatCard label="属性加成" value={renderProficiency(item.abilityScores)} icon={<Zap className="w-4 h-4 text-stone-400" />} />
                         <MiniStatCard label="起源专长" value={item.feat || '无'} icon={<FileText className="w-4 h-4 text-stone-400" />} />
-                        <MiniStatCard label="技能熟练" value={item.skills?.join(' / ') || '无'} icon={<Briefcase className="w-4 h-4 text-stone-400" />} />
-                        <MiniStatCard label="工具熟练" value={item.tool || '无'} icon={<Briefcase className="w-4 h-4 text-stone-400" />} />
+                        <MiniStatCard label="技能熟练" value={renderProficiency(item.skills)} icon={<Briefcase className="w-4 h-4 text-stone-400" />} />
+                        <MiniStatCard label="工具熟练" value={renderProficiency(item.tool)} icon={<Briefcase className="w-4 h-4 text-stone-400" />} />
                     </section>
 
                     {/* Description */}

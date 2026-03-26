@@ -3,8 +3,18 @@ import { Shield, Star, Heart, Swords, FileText } from 'lucide-react';
 import { ClassItem, SubclassItem } from '../../types';
 import { DetailContainer, MiniStatCard, FeatureCard, DetailFooter } from './DetailContainer';
 import { RichText } from '../RichText';
-
 import { ClassFeatureTable } from '../ClassFeatureTable';
+
+// Helper to safely render complex proficiency data (handling strings, arrays, or objects)
+const renderProficiency = (data: any) => {
+    if (!data) return '无';
+    if (typeof data === 'string') return data;
+    if (Array.isArray(data)) {
+        return data.map(item => typeof item === 'object' ? (item.name || JSON.stringify(item)) : item).join('、');
+    }
+    if (typeof data === 'object') return data.name || JSON.stringify(data);
+    return String(data);
+};
 
 export const ClassDetailView: React.FC<{ item: ClassItem; level?: number }> = ({ item, level }) => {
     // Defensive check
@@ -58,15 +68,15 @@ export const ClassDetailView: React.FC<{ item: ClassItem; level?: number }> = ({
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 text-sm">
                             <div className="flex justify-between border-b border-stone-200 pb-2">
                                 <span className="font-bold text-stone-500">护甲</span>
-                                <span className="text-stone-800 font-medium">{item.coreTraits?.armorTraining || '无'}</span>
+                                <span className="text-stone-800 font-medium">{renderProficiency(item.coreTraits?.armorTraining)}</span>
                             </div>
                             <div className="flex justify-between border-b border-stone-200 pb-2">
                                 <span className="font-bold text-stone-500">武器</span>
-                                <span className="text-stone-800 font-medium">{item.coreTraits?.weaponProficiencies || '无'}</span>
+                                <span className="text-stone-800 font-medium">{renderProficiency(item.coreTraits?.weaponProficiencies)}</span>
                             </div>
                             <div className="flex justify-between border-b border-stone-200 pb-2">
                                 <span className="font-bold text-stone-500">技能</span>
-                                <span className="text-stone-800 font-medium">{item.coreTraits?.skillProficiencies || '无'}</span>
+                                <span className="text-stone-800 font-medium">{renderProficiency(item.coreTraits?.skillProficiencies)}</span>
                             </div>
                             <div className="flex justify-between border-b border-stone-200 pb-2">
                                 <span className="font-bold text-stone-500">工具</span>

@@ -35,7 +35,7 @@ export const GMView: React.FC = () => {
                     <LibraryManager<ClassItem>
                         key="lib-class"
                         title="职业库" itemLabel="职业" items={classes.items}
-                        onAdd={classes.onAdd} onUpdate={classes.onUpdate} onDelete={classes.onDelete} onImport={classes.onImport}
+                        onAdd={classes.onAdd} onUpdate={classes.onUpdate} onDelete={classes.onDelete} onImport={classes.onImport} onDeduplicate={classes.onDeduplicate}
                         cardColorTheme="red"
                         renderDetail={(item) => <ClassDetailView item={item} />}
                         renderEditFields={(item, setItem) => <ClassEditor item={item} setItem={setItem} />}
@@ -66,7 +66,7 @@ export const GMView: React.FC = () => {
                     <LibraryManager<SubclassItem>
                         key="lib-subclass"
                         title="子职业库" itemLabel="子职业" items={subclasses.items}
-                        onAdd={subclasses.onAdd} onUpdate={subclasses.onUpdate} onDelete={subclasses.onDelete} onImport={subclasses.onImport}
+                        onAdd={subclasses.onAdd} onUpdate={subclasses.onUpdate} onDelete={subclasses.onDelete} onImport={subclasses.onImport} onDeduplicate={subclasses.onDeduplicate}
                         cardColorTheme="orange"
                         renderDetail={(item) => <SubclassDetailView item={item} />}
                         renderEditFields={(item, setItem) => <SubclassEditor item={item} setItem={setItem} classes={classes.items} />}
@@ -91,7 +91,7 @@ export const GMView: React.FC = () => {
                     <LibraryManager<SpeciesItem>
                         key="lib-species"
                         title="种族库" itemLabel="种族" items={species.items}
-                        onAdd={species.onAdd} onUpdate={species.onUpdate} onDelete={species.onDelete} onImport={species.onImport}
+                        onAdd={species.onAdd} onUpdate={species.onUpdate} onDelete={species.onDelete} onImport={species.onImport} onDeduplicate={species.onDeduplicate}
                         cardColorTheme="green"
                         renderDetail={(item) => <SpeciesDetailView item={item} />}
                         renderEditFields={(item, setItem) => <SpeciesEditor item={item} setItem={setItem} />}
@@ -113,7 +113,7 @@ export const GMView: React.FC = () => {
                     <LibraryManager<BackgroundItem>
                         key="lib-bg"
                         title="背景库" itemLabel="背景" items={backgrounds.items}
-                        onAdd={backgrounds.onAdd} onUpdate={backgrounds.onUpdate} onDelete={backgrounds.onDelete} onImport={backgrounds.onImport}
+                        onAdd={backgrounds.onAdd} onUpdate={backgrounds.onUpdate} onDelete={backgrounds.onDelete} onImport={backgrounds.onImport} onDeduplicate={backgrounds.onDeduplicate}
                         cardColorTheme="yellow"
                         renderDetail={(item) => <BackgroundDetailView item={item} libraryFeats={feats.items} />}
                         renderEditFields={(item, setItem) => <BackgroundEditor item={item} setItem={setItem} feats={feats.items} />}
@@ -143,7 +143,7 @@ export const GMView: React.FC = () => {
                     <LibraryManager<SpellItem>
                         key="lib-spell"
                         title="法术库" itemLabel="法术" items={filteredSpells}
-                        onAdd={spells.onAdd} onUpdate={spells.onUpdate} onDelete={spells.onDelete} onImport={spells.onImport}
+                        onAdd={spells.onAdd} onUpdate={spells.onUpdate} onDelete={spells.onDelete} onImport={spells.onImport} onDeduplicate={spells.onDeduplicate}
                         extraTools={SpellFilters}
                         layout="grid"
                         renderItem={(item, isSelected, onClick, actions) => (
@@ -172,7 +172,7 @@ export const GMView: React.FC = () => {
                     <LibraryManager<FeatItem>
                         key="lib-feat"
                         title="专长库" itemLabel="专长" items={filteredFeats}
-                        onAdd={feats.onAdd} onUpdate={feats.onUpdate} onDelete={feats.onDelete} onImport={feats.onImport}
+                        onAdd={feats.onAdd} onUpdate={feats.onUpdate} onDelete={feats.onDelete} onImport={feats.onImport} onDeduplicate={feats.onDeduplicate}
                         extraTools={FeatFilters}
                         cardColorTheme="purple"
                         renderDetail={(item) => <FeatDetailView item={item} />}
