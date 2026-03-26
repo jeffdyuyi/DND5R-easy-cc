@@ -90,6 +90,7 @@ export interface BackgroundItem extends BaseLibraryItem {
   extraTools?: string[]; // Custom tool names
   equipment: string[]; // Structured item names
   extraEquipment?: string[]; // Custom text-based equipment
+  gold?: string; // Starting gold info
   choices?: FeatureChoice[]; // New: Modular choices for Custom Backgrounds
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { CharacterData } from '../types';
 import {
-    Heart, Plus, Minus, Skull, Zap, AlertCircle,
+    Heart, Plus, Minus, Skull, Zap,
     RefreshCcw, ShieldAlert, Activity, Coffee
 } from 'lucide-react';
 
@@ -213,24 +213,6 @@ const TabSession: React.FC<Props> = ({ character, updateCharacter }) => {
                 </div>
             </div>
 
-            {/* Room Tool Sync Info */}
-            <div className="bg-blue-50 p-4 rounded-xl border border-blue-200 flex items-start gap-3">
-                <AlertCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
-                <div>
-                    <h4 className="text-sm font-bold text-blue-800">会话同步提示</h4>
-                    <p className="text-xs text-blue-600 mt-1 leading-relaxed">
-                        此处的更改将实时反映在共享房间工具的主持人端。会话结束后，您可以选择将当前状态永久应用至角色卡的主要数值中。
-                    </p>
-                    <div className="mt-4 flex gap-4">
-                        <button
-                            onClick={() => updateCharacter({ currentHp: session.hp, tempHp: session.tempHp })}
-                            className="text-[10px] bg-blue-600 text-white px-3 py-1.5 rounded-lg font-bold hover:bg-blue-700 shadow-sm transition-colors"
-                        >
-                            应用会话 HP 到主要卡片
-                        </button>
-                    </div>
-                </div>
-            </div>
         </div>
     );
 };

@@ -45,7 +45,7 @@ w-64 bg-stone-900 text-stone-300 flex flex-col h-screen fixed left-0 top-0 z-50 
                         </div>
                         <div>
                             <h1 className="font-bold text-white text-lg tracking-wider leading-tight">主持人端</h1>
-                            <div className="text-[10px] text-stone-500 uppercase tracking-widest font-bold">后台与建房</div>
+                            <div className="text-[10px] text-stone-500 uppercase tracking-widest font-bold">后台资料库管理</div>
                         </div>
                     </div>
                     <button className="md:hidden text-stone-400 hover:text-white" onClick={onClose}>
