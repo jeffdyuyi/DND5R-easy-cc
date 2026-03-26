@@ -1,10 +1,8 @@
-
 import React, { useMemo } from 'react';
 import { CharacterData, AbilityScores } from '../types';
 import WizardLayout from './wizard/WizardLayout';
 import FeatureAccordion from './wizard/FeatureAccordion';
-import { CLASSES, SPECIES_DB } from '../data';
-import { BACKGROUND_DB } from '../data';
+import { useLibrary } from '../contexts/LibraryContext';
 import { CheckCircle, BookOpen, Wrench } from 'lucide-react';
 
 interface Props {
@@ -37,6 +35,7 @@ const ALL_SKILLS: { name: string; ability: keyof AbilityScores; abbr: string }[]
 // Note: Skill abbr is already included in ALL_SKILLS array
 
 const StepSkills: React.FC<Props> = ({ character }) => {
+    const { classes, species, backgrounds } = useLibrary();
     const proficiencyBonus = Math.ceil(character.level / 4) + 1;
 
     // Get proficiency sources
@@ -44,7 +43,7 @@ const StepSkills: React.FC<Props> = ({ character }) => {
         const sources: { type: 'class' | 'background' | 'species' | 'feat'; label: string; skills: string[]; tools: string[]; expertise: string[] }[] = [];
 
         // Class skills
-        const selectedClass = character.className ? CLASSES[character.className] : null;
+        const selectedClass = character.className ? classes.items.find(c => c.name === character.className) : null;
         if (selectedClass && character.proficiencySources?.skills?.class?.length) {
             sources.push({
                 type: 'class',
@@ -55,8 +54,12 @@ const StepSkills: React.FC<Props> = ({ character }) => {
             });
 
             // Class starting skills (modular choices)
-            if (selectedClass.choices) {
-                selectedClass.choices.forEach(choice => {
+            if (selectedClass.coreTraits?.skillProficiencies) {
+                // ... logic to handle starting skills if needed
+            }
+
+            if ((selectedClass as any).choices) {
+                (selectedClass as any).choices.forEach((choice: any) => {
                     const selections = character.selections?.[choice.id];
                     if (!selections || selections.length === 0) return;
 
@@ -89,9 +92,9 @@ const StepSkills: React.FC<Props> = ({ character }) => {
             }
 
             // Class feature skills (modular choices from features)
-            selectedClass.features.forEach(feature => {
+            selectedClass.features.forEach((feature: any) => {
                 if (feature.level <= character.level && feature.choices) {
-                    feature.choices.forEach(choice => {
+                    feature.choices.forEach((choice: any) => {
                         const selections = character.selections?.[choice.id];
                         if (!selections || selections.length === 0) return;
 
@@ -126,7 +129,7 @@ const StepSkills: React.FC<Props> = ({ character }) => {
         }
 
         // Background skills
-        const selectedBackground = BACKGROUND_DB.find(b => b.name === character.background);
+        const selectedBackground = backgrounds.items.find(b => b.name === character.background);
         if (selectedBackground) {
             sources.push({
                 type: 'background',
@@ -137,8 +140,8 @@ const StepSkills: React.FC<Props> = ({ character }) => {
             });
 
             // Background skills (modular choices)
-            if (selectedBackground.choices) {
-                selectedBackground.choices.forEach(choice => {
+            if ((selectedBackground as any).choices) {
+                (selectedBackground as any).choices.forEach((choice: any) => {
                     const selections = character.selections?.[choice.id];
                     if (choice.type === 'skill' && selections && selections.length > 0) {
                         sources.push({
@@ -165,11 +168,11 @@ const StepSkills: React.FC<Props> = ({ character }) => {
         }
 
         // Species skills (modular choices)
-        const selectedSpecies = character.race ? SPECIES_DB.find(s => s.name === character.race) : null;
+        const selectedSpecies = character.race ? species.items.find(s => s.name === character.race) : null;
         if (selectedSpecies) {
-            selectedSpecies.traits.forEach(trait => {
+            selectedSpecies.traits.forEach((trait: any) => {
                 if (trait.choices) {
-                    trait.choices.forEach(choice => {
+                    trait.choices.forEach((choice: any) => {
                         const selections = character.selections?.[choice.id];
                         if (choice.type === 'skill' && selections && selections.length > 0) {
                             sources.push({

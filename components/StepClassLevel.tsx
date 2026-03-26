@@ -1,6 +1,5 @@
 
 import React, { useMemo } from 'react';
-import { WEAPON_DB } from '../data';
 import { CharacterData, ClassItem, SubclassItem } from '../types';
 import { useLibrary } from '../contexts/LibraryContext';
 import WizardLayout from './wizard/WizardLayout';
@@ -36,7 +35,7 @@ const CLASS_ICONS: Record<string, React.ReactNode> = {
 };
 
 const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
-  const { classes, subclasses } = useLibrary();
+  const { classes, subclasses, weapons } = useLibrary();
 
   const selectedClass: ClassItem | undefined = useMemo(() => {
     return classes.items.find(cls => cls.id === character.classId) || classes.items.find(cls => cls.name === character.className);
@@ -94,13 +93,13 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
   const hasWeaponMastery = currentFeatures.some(f => f.name.includes('武器精通'));
 
   const masteryOptions = useMemo(() => {
-    return WEAPON_DB.filter(w =>
+    return weapons.items.filter(w =>
       w.type === '武器' &&
       w.tags?.includes('近战') &&
       (w.tags?.includes('简易武器') || w.tags?.includes('军用武器')) &&
       w.mastery // Must have mastery property
     );
-  }, []);
+  }, [weapons.items]);
 
   const wm1 = character.equipmentChoices?.classSubChoices?.['weaponMastery1'] || '';
   const wm2 = character.equipmentChoices?.classSubChoices?.['weaponMastery2'] || '';

@@ -28,6 +28,10 @@ interface Props {
   libraryBackgrounds: BackgroundItem[];
   libraryFeats: FeatItem[];
   libraryTools: ItemItem[];
+  libraryWeapons: ItemItem[];
+  libraryArmors: ItemItem[];
+  libraryGears: ItemItem[];
+  libraryMagicItems: ItemItem[];
 }
 
 const TABS = [
@@ -51,7 +55,11 @@ export const CharacterSheet: React.FC<Props> = ({
   librarySpecies,
   libraryBackgrounds,
   libraryFeats,
-  libraryTools
+  libraryTools,
+  libraryWeapons,
+  libraryArmors,
+  libraryGears,
+  libraryMagicItems
 }) => {
   const [activeTab, setActiveTab] = useState('stats');
 
@@ -195,7 +203,17 @@ export const CharacterSheet: React.FC<Props> = ({
       case 'combat': return <TabCombat character={character} updateCharacter={updateCharacter} libraryClasses={libraryClasses} librarySpecies={librarySpecies} />;
       case 'class': return <TabClass character={character} updateCharacter={updateCharacter} libraryClasses={libraryClasses} librarySubclasses={librarySubclasses} libraryFeats={libraryFeats} />;
       case 'origin': return <TabOrigin character={character} updateCharacter={updateCharacter} librarySpecies={librarySpecies} libraryBackgrounds={libraryBackgrounds} libraryFeats={libraryFeats} />;
-      case 'inventory': return <TabInventory character={character} updateCharacter={updateCharacter} libraryTools={libraryTools} />;
+      case 'inventory': return (
+        <TabInventory
+          character={character}
+          updateCharacter={updateCharacter}
+          libraryTools={libraryTools}
+          libraryWeapons={libraryWeapons}
+          libraryArmors={libraryArmors}
+          libraryGears={libraryGears}
+          libraryMagicItems={libraryMagicItems}
+        />
+      );
       case 'bio': return <TabBio character={character} updateCharacter={updateCharacter} />;
       case 'adventure': return <TabAdventure character={character} updateCharacter={updateCharacter} />;
       case 'achievements': return <TabAchievements character={character} />;

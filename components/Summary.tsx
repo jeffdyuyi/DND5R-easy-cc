@@ -1,7 +1,7 @@
 
 import React, { useMemo, useRef, useEffect, useState } from 'react';
 import { CharacterData } from '../types';
-import { CLASSES as CLASSES_DATA, SPECIES_DB } from '../data';
+import { useLibrary } from '../contexts/LibraryContext';
 import { FileCode, FileText, Printer } from 'lucide-react';
 import { getModifier, getProficiencyBonus, formatModifier } from '../utils/rules';
 
@@ -53,10 +53,10 @@ function calcAC(character: CharacterData): number {
 }
 
 // === Unified HTML Card Generator ===
-function generateCardHTML(character: CharacterData): string {
+function generateCardHTML(character: CharacterData, libraryClasses: any[], librarySpecies: any[]): string {
   const profBonus = getProficiencyBonus(character.level);
-  const classData = CLASSES_DATA[character.className];
-  const speciesData = SPECIES_DB.find(sp => sp.name === character.race);
+  const classData = libraryClasses.find(c => c.name === character.className);
+  const speciesData = librarySpecies.find(sp => sp.name === character.race);
   const ac = calcAC(character);
   const speed = speciesData?.speed || 30;
 
@@ -114,11 +114,11 @@ function generateCardHTML(character: CharacterData): string {
   const gear = character.inventoryGear || [];
 
   // Class features for current level
-  const features = (classData?.features || []).filter(f => f.level <= character.level).sort((a, b) => a.level - b.level);
+  const features = (classData?.features || []).filter((f: any) => f.level <= character.level).sort((a: any, b: any) => a.level - b.level);
 
   // Subclass features
-  const subclassData = classData?.subclasses?.find(sc => sc.name === character.subclass);
-  const subFeatures = (subclassData?.features || []).filter(f => f.level <= character.level).sort((a, b) => a.level - b.level);
+  const subclassData = classData?.subclasses?.find((sc: any) => sc.name === character.subclass);
+  const subFeatures = (subclassData?.features || []).filter((f: any) => f.level <= character.level).sort((a: any, b: any) => a.level - b.level);
 
   return `<!DOCTYPE html>
 <html lang="zh-CN">
@@ -704,7 +704,7 @@ function generateCardHTML(character: CharacterData): string {
         <!-- CLASS FEATURES -->
         <div class="section">
           <div class="section-title">职业特性 Features</div>
-          ${features.length > 0 ? features.slice(0, 12).map(f => `
+          ${features.length > 0 ? features.slice(0, 12).map((f: any) => `
             <div class="feature-item">
               <span class="feature-level">Lv.${f.level}</span>
               <span class="feature-name">${f.name}</span>
@@ -714,7 +714,7 @@ function generateCardHTML(character: CharacterData): string {
           ${subFeatures.length > 0 ? `
             <div style="margin-top:10px;padding-top:8px;border-top:1px dashed #ccc">
               <div style="font-size:11px;font-weight:900;color:var(--dnd-gold);margin-bottom:6px;letter-spacing:1px">${character.subclass || '子职业'} 特性</div>
-              ${subFeatures.slice(0, 8).map(f => `
+              ${subFeatures.slice(0, 8).map((f: any) => `
                 <div class="feature-item">
                   <span class="feature-level">Lv.${f.level}</span>
                   <span class="feature-name">${f.name}</span>
@@ -811,10 +811,10 @@ function generateCardHTML(character: CharacterData): string {
 }
 
 // === Unified Markdown Card Generator ===
-function generateCardMarkdown(character: CharacterData): string {
+function generateCardMarkdown(character: CharacterData, libraryClasses: any[], librarySpecies: any[]): string {
   const profBonus = getProficiencyBonus(character.level);
-  const classData = CLASSES_DATA[character.className];
-  const speciesData = SPECIES_DB.find(sp => sp.name === character.race);
+  const classData = libraryClasses.find(c => c.name === character.className);
+  const speciesData = librarySpecies.find(sp => sp.name === character.race);
   const ac = calcAC(character);
   const speed = speciesData?.speed || 30;
 
@@ -872,11 +872,11 @@ function generateCardMarkdown(character: CharacterData): string {
   const gear = character.inventoryGear || [];
 
   // Class features for current level
-  const features = (classData?.features || []).filter(f => f.level <= character.level).sort((a, b) => a.level - b.level);
+  const features = (classData?.features || []).filter((f: any) => f.level <= character.level).sort((a: any, b: any) => a.level - b.level);
 
   // Subclass features
-  const subclassData = classData?.subclasses?.find(sc => sc.name === character.subclass);
-  const subFeatures = (subclassData?.features || []).filter(f => f.level <= character.level).sort((a, b) => a.level - b.level);
+  const subclassData = classData?.subclasses?.find((sc: any) => sc.name === character.subclass);
+  const subFeatures = (subclassData?.features || []).filter((f: any) => f.level <= character.level).sort((a: any, b: any) => a.level - b.level);
 
   const lines: string[] = [];
 
@@ -973,7 +973,7 @@ function generateCardMarkdown(character: CharacterData): string {
   lines.push('## ◆ 职业特性 Features');
   lines.push('');
   if (features.length > 0) {
-    features.forEach(f => {
+    features.forEach((f: any) => {
       lines.push(`- **[Lv.${f.level}]** ${f.name}`);
     });
   } else {
@@ -984,7 +984,7 @@ function generateCardMarkdown(character: CharacterData): string {
   if (subFeatures.length > 0) {
     lines.push(`### ${character.subclass || '子职业'} 特性`);
     lines.push('');
-    subFeatures.forEach(f => {
+    subFeatures.forEach((f: any) => {
       lines.push(`- **[Lv.${f.level}]** ${f.name}`);
     });
     lines.push('');
@@ -996,7 +996,7 @@ function generateCardMarkdown(character: CharacterData): string {
   if (weapons.length > 0 || armor.length > 0 || gear.length > 0) {
     lines.push('| 物品名称 | 详情 |');
     lines.push('| :--- | :--- |');
-    weapons.forEach(w => {
+    weapons.forEach((w: any) => {
       lines.push(`| ⚔ ${w.name} | ${w.damage || ''} ${w.damageType || ''} |`);
     });
     armor.forEach(a => {
@@ -1072,7 +1072,8 @@ function generateCardMarkdown(character: CharacterData): string {
 
 // === React Component ===
 const Summary: React.FC<Props> = ({ character }) => {
-  const cardHTML = useMemo(() => generateCardHTML(character), [character]);
+  const { classes, species } = useLibrary();
+  const cardHTML = useMemo(() => generateCardHTML(character, classes.items, species.items), [character, classes.items, species.items]);
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const [iframeHeight, setIframeHeight] = useState(1200);
 
@@ -1109,7 +1110,7 @@ const Summary: React.FC<Props> = ({ character }) => {
   };
 
   const handleExportMarkdown = () => {
-    const md = generateCardMarkdown(character);
+    const md = generateCardMarkdown(character, classes.items, species.items);
     const blob = new Blob([md], { type: 'text/markdown; charset=utf-8' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');

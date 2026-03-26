@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { CharacterData, AbilityScores } from '../types';
 import { User, Book, Sparkles, CheckCircle, AlertCircle, Zap, Package } from 'lucide-react';
-import { BACKGROUND_DB, SPECIES_DB } from '../data';
+import { useLibrary } from '../contexts/LibraryContext';
 
 interface Props {
   character: CharacterData;
@@ -44,6 +44,7 @@ const AbilitySelectRow: React.FC<AbilitySelectRowProps> = ({ label, value, onCha
   );
 };
 const StepOrigin: React.FC<Props> = ({ character, updateCharacter }) => {
+  const { species, backgrounds } = useLibrary();
   const [abilityDistribution, setAbilityDistribution] = useState<'2-1' | '1-1-1'>('2-1');
   const [selectedAbilities, setSelectedAbilities] = useState<{
     ability1: keyof AbilityScores | '';
@@ -51,8 +52,8 @@ const StepOrigin: React.FC<Props> = ({ character, updateCharacter }) => {
     ability3: keyof AbilityScores | '';
   }>({ ability1: '', ability2: '', ability3: '' });
 
-  const selectedBackground = BACKGROUND_DB.find(bg => bg.name === character.background);
-  const selectedSpecies = SPECIES_DB.find(sp => sp.name === character.race);
+  const selectedBackground = backgrounds.items.find(bg => bg.name === character.background);
+  const selectedSpecies = species.items.find(sp => sp.name === character.race);
 
   const handleBackgroundChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     updateCharacter({ background: e.target.value });
@@ -146,7 +147,7 @@ const StepOrigin: React.FC<Props> = ({ character, updateCharacter }) => {
             className="w-full p-3 bg-white border-2 border-stone-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 font-bold text-stone-800"
           >
             <option value="">-- 选择种族 --</option>
-            {SPECIES_DB.map(sp => (
+            {species.items.map(sp => (
               <option key={sp.id} value={sp.name}>{sp.name}</option>
             ))}
           </select>
@@ -174,7 +175,7 @@ const StepOrigin: React.FC<Props> = ({ character, updateCharacter }) => {
             className="w-full p-3 bg-white border-2 border-stone-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-500 font-bold text-stone-800"
           >
             <option value="">-- 选择背景 --</option>
-            {BACKGROUND_DB.map(bg => (
+            {backgrounds.items.map(bg => (
               <option key={bg.id} value={bg.name}>{bg.name}</option>
             ))}
           </select>

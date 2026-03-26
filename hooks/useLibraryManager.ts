@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import { useLocalStorage } from './useLocalStorage';
 import { BaseLibraryItem } from '../types';
 
@@ -12,31 +13,43 @@ export interface LibraryHandler<T extends BaseLibraryItem> {
 }
 
 export function useLibraryManager<T extends BaseLibraryItem>(key: string, initialItems: T[]): LibraryHandler<T> {
-    const [items, setItems] = useLocalStorage<T[]>(key, initialItems);
+    const [storedItems, setStoredItems] = useLocalStorage<T[]>(key, initialItems);
 
-    const onAdd = (item: T) => setItems(prev => [...prev, item]);
+    // Merge strategy: Always use official data from initialItems (the .ts files) and add custom items from storedItems.
+    // This ensures that updates in the data folder are instantly reflected, fulfilling the "Core Source" requirement.
+    const mergedItems = useMemo(() => {
+        const officialIds = new Set(initialItems.map(i => i.id));
+        const customItems = (storedItems || []).filter(i => !officialIds.has(i.id));
+        return [...initialItems, ...customItems];
+    }, [initialItems, storedItems]);
 
-    const onUpdate = (item: T) => setItems(prev => prev.map(i => i.id === item.id ? item : i));
+    const onAdd = (item: T) => setStoredItems(prev => [...(prev || []), item]);
 
-    const onDelete = (id: string) => setItems(prev => prev.filter(i => i.id !== id));
+    const onUpdate = (item: T) => setStoredItems(prev => (prev || []).map(i => i.id === item.id ? item : i));
 
-    const onImport = (newItems: T[]) => setItems(prev => {
-        const existingIds = new Set(prev.map(i => i.id));
-        const toAdd = newItems.filter(i => !existingIds.has(i.id));
-        return [...prev, ...toAdd];
+    const onDelete = (id: string) => setStoredItems(prev => (prev || []).filter(i => i.id !== id));
+
+    const onImport = (newItems: T[]) => setStoredItems(prev => {
+        const existingIds = new Set((prev || []).map(i => i.id));
+        const officialIds = new Set(initialItems.map(i => i.id));
+        const toAdd = newItems.filter(i => !existingIds.has(i.id) && !officialIds.has(i.id));
+        return [...(prev || []), ...toAdd];
     });
 
-    const onDeduplicate = () => setItems(prev => {
+    const onDeduplicate = () => setStoredItems(prev => {
         const seen = new Map<string, T>();
-        prev.forEach(item => {
+        (prev || []).forEach(item => {
             const existing = seen.get(item.name);
             // Prioritize official versions if names collide
             if (!existing || (item.source === '官方规则' && existing.source !== '官方规则')) {
                 seen.set(item.name, item);
             }
         });
-        return Array.from(seen.values());
+
+        // After cleaning up, we only want to keep the custom items that still don't conflict with current official IDs
+        const officialIds = new Set(initialItems.map(i => i.id));
+        return Array.from(seen.values()).filter(i => !officialIds.has(i.id));
     });
 
-    return { items, onAdd, onUpdate, onDelete, onImport, onDeduplicate, setItems };
+    return { items: mergedItems, onAdd, onUpdate, onDelete, onImport, onDeduplicate, setItems: setStoredItems };
 }

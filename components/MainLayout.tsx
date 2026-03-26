@@ -107,6 +107,10 @@ export const MainLayout = () => {
                             libraryBackgrounds={backgrounds.items}
                             libraryFeats={feats.items}
                             libraryTools={allTools}
+                            libraryWeapons={weapons.items}
+                            libraryArmors={armors.items}
+                            libraryGears={gears.items}
+                            libraryMagicItems={magicItems.items}
                         />
                     );
                 }
@@ -218,7 +222,7 @@ export const MainLayout = () => {
                         cardColorTheme="green"
                         renderDetail={(item) => <SpeciesDetailView item={item} />}
                         renderEditFields={(item, setItem) => <RichDescriptionEditor item={item} setItem={setItem} />}
-                        emptyTemplate={{ id: '', name: '', source: '第三方/原创', description: '', speed: 30, size: '中型', darkvision: false, traits: [] }}
+                        emptyTemplate={{ id: '', name: '', source: '第三方/原创', description: '', speed: 30, size: '中型', darkvision: '', traits: [] }}
                     />
                 );
             case 'lib-bg':

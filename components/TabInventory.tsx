@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { CharacterData, ItemItem } from '../types';
 import { Plus, Trash2, Shield, Sword, Box, Zap, Hammer, Eye, X, Weight, Backpack, Package } from 'lucide-react';
-import { WEAPON_DB, ARMOR_DB, GEAR_DB, TOOL_DB, MAGIC_ITEM_DB } from '../data';
 import { ItemDetailView } from './LibraryDetails';
 import { RichText } from './RichText';
 
@@ -10,9 +9,21 @@ interface Props {
    character: CharacterData;
    updateCharacter: (updates: Partial<CharacterData>) => void;
    libraryTools: ItemItem[];
+   libraryWeapons: ItemItem[];
+   libraryArmors: ItemItem[];
+   libraryGears: ItemItem[];
+   libraryMagicItems: ItemItem[];
 }
 
-const TabInventory: React.FC<Props> = ({ character, updateCharacter, libraryTools }) => {
+const TabInventory: React.FC<Props> = ({
+   character,
+   updateCharacter,
+   libraryTools,
+   libraryWeapons,
+   libraryArmors,
+   libraryGears,
+   libraryMagicItems
+}) => {
    // Modal State
    const [pickerType, setPickerType] = useState<'weapon' | 'armor' | 'gear' | 'ammo' | 'tool' | 'misc' | null>(null);
    const [viewingItem, setViewingItem] = useState<ItemItem | null>(null);
@@ -439,12 +450,12 @@ const TabInventory: React.FC<Props> = ({ character, updateCharacter, libraryTool
          </div>
 
          {/* Pickers */}
-         {pickerType === 'weapon' && <PickerModal setPickerType={setPickerType} title="选择武器" items={WEAPON_DB} onSelect={(i) => addItem('inventoryWeapons', i)} />}
-         {pickerType === 'armor' && <PickerModal setPickerType={setPickerType} title="选择护甲/盾牌" items={ARMOR_DB} onSelect={(i) => addItem('inventoryArmor', i)} />}
-         {pickerType === 'gear' && <PickerModal setPickerType={setPickerType} title="选择法器/魔法物品" items={[...GEAR_DB.filter(i => i.type === '法器'), ...MAGIC_ITEM_DB]} onSelect={(i) => addItem('inventoryGear', i)} />}
-         {pickerType === 'misc' && <PickerModal setPickerType={setPickerType} title="选择杂物" items={GEAR_DB.filter(i => i.type !== '弹药' && i.type !== '法器')} onSelect={(i) => addItem('inventoryGear', { ...i, quantity: 1 })} />}
-         {pickerType === 'ammo' && <PickerModal setPickerType={setPickerType} title="选择弹药" items={GEAR_DB.filter(i => i.type === '弹药')} onSelect={(i) => addItem('inventoryGear', { ...i, quantity: 20 })} />}
-         {pickerType === 'tool' && <PickerModal setPickerType={setPickerType} title="选择工具" items={TOOL_DB} onSelect={(i) => addItem('tools', i)} />}
+         {pickerType === 'weapon' && <PickerModal setPickerType={setPickerType} title="选择武器" items={libraryWeapons} onSelect={(i) => addItem('inventoryWeapons', i)} />}
+         {pickerType === 'armor' && <PickerModal setPickerType={setPickerType} title="选择护甲/盾牌" items={libraryArmors} onSelect={(i) => addItem('inventoryArmor', i)} />}
+         {pickerType === 'gear' && <PickerModal setPickerType={setPickerType} title="选择法器/魔法物品" items={[...libraryGears.filter(i => i.type === '法器'), ...libraryMagicItems]} onSelect={(i) => addItem('inventoryGear', i)} />}
+         {pickerType === 'misc' && <PickerModal setPickerType={setPickerType} title="选择杂物" items={libraryGears.filter(i => i.type !== '弹药' && i.type !== '法器')} onSelect={(i) => addItem('inventoryGear', { ...i, quantity: 1 })} />}
+         {pickerType === 'ammo' && <PickerModal setPickerType={setPickerType} title="选择弹药" items={libraryGears.filter(i => i.type === '弹药')} onSelect={(i) => addItem('inventoryGear', { ...i, quantity: 20 })} />}
+         {pickerType === 'tool' && <PickerModal setPickerType={setPickerType} title="选择工具" items={libraryTools} onSelect={(i) => addItem('tools', i)} />}
 
          {/* Detail Viewer */}
          {viewingItem && <ItemDetailModal item={viewingItem} onClose={() => setViewingItem(null)} />}
