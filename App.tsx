@@ -7,12 +7,20 @@ import { Home } from 'lucide-react';
 
 function App() {
   const [activeTab, setActiveTab] = useState<'player' | 'gm'>(() => {
-    const saved = localStorage.getItem('dnd_active_tab');
-    return (saved === 'player' || saved === 'gm') ? saved : 'player';
+    try {
+      const saved = localStorage.getItem('dnd_active_tab');
+      return (saved === 'player' || saved === 'gm') ? saved : 'player';
+    } catch (e) {
+      return 'player';
+    }
   });
 
   const [hasEntered, setHasEntered] = useState(() => {
-    return localStorage.getItem('dnd_has_entered_v1') === 'true';
+    try {
+      return localStorage.getItem('dnd_has_entered_v1') === 'true';
+    } catch (e) {
+      return false;
+    }
   });
 
   useEffect(() => {
