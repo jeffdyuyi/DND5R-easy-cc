@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     react(),
   ],
-  base: './', // 使用相对路径，对 GitHub Pages 部署更友好且稳健
+  base: '/DND5R-easy-cc/', // 明确指定仓库路径，确保 GitHub Pages 资源加载正确
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
