@@ -1,0 +1,33 @@
+[
+  {
+    "ENG_name": "Stormbrewer Bracers",
+    "name": "蓄雷护腕",
+    "source": "GriffonsSaddlebag2",
+    "page": 172,
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "charges": 5,
+    "entries": [
+      "这对银金护腕的表面始终覆盖着一层薄薄的冷凝水。当你佩戴护腕并进行先攻掷骰时，护腕会开始在你的手腕周围散发出袅袅云雾。随着护腕储存的充能增加，环绕手腕的云雾会变得越发黑暗，当充能满时会变成凶猛的暴风云。护腕最多可储存5充能，这些充能会在1分钟后消失。当你佩戴护腕并用近战武器攻击命中敌对生物时，护腕获得1充能。在护腕已有5充能期间，当你以此方式命中生物时，护腕会释放出一股高压电并失去所有储存的充能，对被攻击的目标以及由你选择的至多2个位于你10尺范围内且你可见的其他生物造成{@damage 1d8}闪电伤害。",
+      "此外，在你佩戴护腕期间，你可以在受到闪电伤害时用你的反应将该伤害减少{@dice 1d8 + 4}，并使护腕获得1充能。"
+    ],
+    "lootTables": [
+      "魔法物品表 G1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Stormbrewer-Bracers.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

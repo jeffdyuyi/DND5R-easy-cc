@@ -1,0 +1,18 @@
+[
+  {
+    "name": "爪钩",
+    "ENG_name": "Grappling Hook",
+    "source": "XPHB",
+    "page": 225,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 4,
+    "value": 200,
+    "entries": [
+      "以一个{@action 操作|XPHB}动作，你能将爪钩朝着位于自身50尺内的一处栏杆、突起的边缘或是一处能够挂住的位置扔出，并进行一次{@dc 13}的敏捷（{@skill 特技|XPHB}）检定。如果检定成功，爪钩则成功钩在上面。如果爪钩上还连了绳子，你则可以爬上去。"
+    ],
+    "basicRules2024": true,
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

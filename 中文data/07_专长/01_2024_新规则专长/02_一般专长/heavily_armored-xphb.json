@@ -1,0 +1,46 @@
+[
+  {
+    "ENG_name": "Heavily Armored",
+    "name": "重甲运用",
+    "source": "XPHB",
+    "page": 204,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4,
+        "proficiency": [
+          {
+            "armor": "medium"
+          }
+        ]
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "con",
+            "str"
+          ]
+        }
+      }
+    ],
+    "armorProficiencies": [
+      {
+        "heavy": true
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Armor Training",
+        "name": "护甲受训",
+        "type": "entries",
+        "entries": [
+          "你获得重甲受训。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

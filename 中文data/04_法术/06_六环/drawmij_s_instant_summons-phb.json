@@ -1,0 +1,63 @@
+[
+  {
+    "ENG_name": "Drawmij's Instant Summons",
+    "name": "卓姆吉瞬间召唤",
+    "source": "PHB",
+    "page": 235,
+    "srd": "瞬间召唤",
+    "referenceSources": [
+      "VEoR"
+    ],
+    "reprintedAs": [
+      "卓姆吉瞬间召唤|XPHB"
+    ],
+    "level": 6,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一个价值1,000gp的蓝宝石",
+        "cost": 100000
+      }
+    },
+    "duration": [
+      {
+        "type": "permanent",
+        "ends": [
+          "解除"
+        ]
+      }
+    ],
+    "meta": {
+      "ritual": true
+    },
+    "entries": [
+      "你触碰一个重量至多 10 磅，长度至多 6 尺的物件。该法术将在该物品表面留下一个隐形的印记，并在你用以施法的蓝宝石上留下该物件的名称。你每次施展该法术时都必须使用不同的蓝宝石作为其材料成分。",
+      "在随后的时间里，你可以使用动作唤出该物件的名称并粉碎这颗蓝宝石，该物件将无视任何距离和位面的限制立即出现在你的手上。物件出现后该随即法术终止。",
+      "如果另一个生物正持握或携带着该物件，则粉碎蓝宝石的动作无法将该物品传送过来。不过你会知晓是谁占有了该物品，以及其此刻身处的何处。",
+      "当 {@spell 解除魔法} 或成功生效的类似效应作用于这颗蓝宝石时，将提前终止该法术。"
+    ],
+    "miscTags": [
+      "OBJ"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "法师"
+    ],
+    "display_school": "咒法系",
+    "display_ritual": "仪式"
+  }
+]

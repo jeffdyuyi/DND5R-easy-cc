@@ -1,0 +1,104 @@
+[
+  {
+    "ENG_name": "Wyrmshide Bow",
+    "name": "龙鳞弓",
+    "source": "GriffonsSaddlebag2",
+    "page": 193,
+    "baseItem": "短弓|phb",
+    "type": "R",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 2,
+    "weaponCategory": "简易",
+    "property": [
+      "A",
+      "2H"
+    ],
+    "range": "80/320",
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "entries": [
+      "这张短弓由精致的龙鳞制作而成，并以龙心的肌纤维连接。持用这张弓期间，你可以用一个附赠动作说出它的命令语，引导其中龙的力量。当你这样做时，短弓会形成一条元素能量组成的龙型披风，并使其环绕着你。在披风存在期间，你获得如下增益：",
+      {
+        "type": "list",
+        "items": [
+          "你获得25临时生命值，持续1分钟。",
+          "你对该兜帽的元素能量所对应的伤害类型具有抗性。能量的类型取决于提供短弓鳞片的龙种，如下方表格所示。",
+          "攻击命中时，短弓会对目标额外造成{@damage 1d8}伤害，其伤害类型取决于组成披风的能量。若目标是一条龙，则额外伤害无视其对此伤害类型的任何抗性和免疫。"
+        ]
+      },
+      "披风会始终存在，直到你失去所有上述临时生命值。该特性一经使用后，直到次日黎明，或直到它协助你杀死了一条大型或更大体型的龙类之前，该特性都无法再次使用。上文中的\"龙类\"一词包含任何龙类生物，包括龙龟和飞龙。",
+      {
+        "type": "table",
+        "colLabels": [
+          "龙",
+          "抗性"
+        ],
+        "colStyles": [
+          "col-3 text-left",
+          "col-9 text-left"
+        ],
+        "rows": [
+          [
+            "黑",
+            "强酸"
+          ],
+          [
+            "蓝",
+            "闪电"
+          ],
+          [
+            "黄铜",
+            "火焰"
+          ],
+          [
+            "青铜",
+            "闪电"
+          ],
+          [
+            "赤铜",
+            "强酸"
+          ],
+          [
+            "金",
+            "火焰"
+          ],
+          [
+            "绿",
+            "毒素"
+          ],
+          [
+            "红",
+            "火焰"
+          ],
+          [
+            "银",
+            "寒冷"
+          ],
+          [
+            "白",
+            "寒冷"
+          ]
+        ]
+      }
+    ],
+    "ammoType": "箭|phb",
+    "lootTables": [
+      "魔法物品表 G2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Wyrmshide-Bow.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

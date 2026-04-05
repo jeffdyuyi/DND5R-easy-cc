@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Kagonesti Forest Shroud",
+    "name": "卡冈那斯提森林斗篷",
+    "source": "DSotDQ",
+    "page": 190,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这件斗篷看起来像是由秋日落叶编织而成。当你着装这件斗篷时，你在敏捷（{@skill 隐匿}）检定上具有优势，并且你可以用一个附赠动作，将你和你所着装或携带的任何装备一起传送到30尺范围内你能看到且未被占据的空间。在此之后，你在这一回合结束前进行的下一次攻击检定具有优势。该附赠动作一旦被使用，直到下一个黎明都不能再次使用。"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DSotDQ/Kagonesti Forest Shroud.webp"
+          },
+          "credit": "Caio E Santos",
+          "width": 850,
+          "height": 1020
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

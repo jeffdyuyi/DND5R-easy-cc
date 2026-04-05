@@ -1,0 +1,27 @@
+[
+  {
+    "name": "鲁特琴",
+    "ENG_name": "Lute",
+    "source": "PHB",
+    "page": 154,
+    "edition": "classic",
+    "type": "INS",
+    "rarity": "none",
+    "weight": 2,
+    "value": 3500,
+    "basicRules": true,
+    "referenceSources": [
+      "TftYP-ToH",
+      "ToA",
+      "TTP",
+      "RtG",
+      "JttRC",
+      "DoSI",
+      "LRDT"
+    ],
+    "reprintedAs": [
+      "鲁特琴|XPHB"
+    ],
+    "srd": true
+  }
+]

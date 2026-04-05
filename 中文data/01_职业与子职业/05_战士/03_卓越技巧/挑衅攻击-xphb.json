@@ -1,0 +1,17 @@
+{
+  "ENG_name": "Goading Attack",
+  "name": "挑衅攻击",
+  "source": "XPHB",
+  "page": 95,
+  "featureType": [
+    "MV:B"
+  ],
+  "consumes": {
+    "ENG_name": "Superiority Die",
+    "name": "卓越骰"
+  },
+  "entries": [
+    "你以攻击检定命中一个生物时，可以消耗一枚卓越骰以尝试挑衅该目标攻击你。所消耗的卓越骰还会被加到此次攻击的伤害掷骰中。目标必须通过一次感知豁免，豁免失败者对除你之外的生物进行的攻击检定具有{@variantrule 劣势|XPHB}，直到你的下个回合结束。"
+  ],
+  "translator": "不全书"
+}

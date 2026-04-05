@@ -1,0 +1,53 @@
+[
+  {
+    "ENG_name": "Dagger of Venom",
+    "name": "淬毒匕首",
+    "source": "XDMG",
+    "page": 248,
+    "srd52": true,
+    "basicRules2024": true,
+    "baseItem": "匕首|xphb",
+    "type": "M|XPHB",
+    "rarity": "rare",
+    "weight": 1,
+    "weaponCategory": "simple",
+    "property": [
+      "F|XPHB",
+      "L|XPHB",
+      "T|XPHB"
+    ],
+    "mastery": [
+      "迅击|XPHB"
+    ],
+    "range": "20/60",
+    "dmg1": "1d4",
+    "dmgType": "P",
+    "bonusWeapon": "+1",
+    "entries": [
+      "你以此魔法武器进行的攻击检定和伤害掷骰获得+1加值。",
+      "你可以用{@variantrule 附赠动作|XPHB}为匕首覆上毒液，持续1分钟。用这把武器发动的一次攻击成功命中生物后毒液也会消失。此时，被命中的生物必须成功通过一次{@dc 15}的体质豁免否则受到{@damage 2d10}毒素伤害并陷入{@condition 中毒|XPHB}状态1分钟。直至次日黎明前，该附赠动作都无法被再次使用。"
+    ],
+    "classFeatures": [
+      "仿制魔法物品|奇械师|efa|2|efa"
+    ],
+    "lootTables": [
+      "武备 - 珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Dagger of Venom.webp"
+          },
+          "width": 835,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

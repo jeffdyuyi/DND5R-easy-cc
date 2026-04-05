@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Bloody Marilith (Common)",
+    "name": "蛇腥魔丽（普通）",
+    "source": "GriffonsSaddlebag2",
+    "page": 48,
+    "type": "P",
+    "tier": "次要",
+    "rarity": "common",
+    "entries": [
+      "典型的{@item 蛇腥魔丽|GriffonsSaddlebag2}，一种普通药水，是一种可以增强你身体反应能力的特制酒精饮料。喝下此药水后1分钟内，即使你在自你的上回合结束后已经执行过一个反应，你依然可以执行一个反应。一旦你执行了该反应，药水的效果就会结束。这种药水颜色深红，十分浓稠，轻轻晃动瓶身会使其产生涟漪。其气味和口味都由现磨胡椒、香辛料和微酸番茄汁混合而成。但由于其魔法的本质，此药水中所含的酒精对生物的影响是非魔法饮料中酒精的两倍。",
+      "在完成长休之前饮用更多的{@item 蛇腥魔丽|GriffonsSaddlebag2|蛇腥魔丽}会让你的身体感到无比疲劳。当药水的效应结束时，一股怠惰的波涛会席卷你的全身，使你无法移动或执行动作，直至你的下回合结束。"
+    ],
+    "lootTables": [
+      "魔法物品表 A2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Bloody-Marilith.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

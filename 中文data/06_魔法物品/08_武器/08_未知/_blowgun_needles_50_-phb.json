@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Blowgun Needles (50)",
+    "name": "镀银吹箭(50)",
+    "source": "PHB",
+    "page": 148,
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "吹矢（50）|XPHB"
+    ],
+    "edition": "classic",
+    "type": "A",
+    "rarity": "unknown",
+    "weight": 1,
+    "value": 100,
+    "needleBlowgun": true,
+    "packContents": [
+      {
+        "item": "吹箭|PHB",
+        "quantity": 50
+      }
+    ],
+    "namePrefix": "镀银",
+    "tier": "次要",
+    "_isVariant": true
+  }
+]

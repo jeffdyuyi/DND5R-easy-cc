@@ -1,0 +1,439 @@
+[
+    {
+        "ENG_name": "Divine Sense",
+        "name": "神圣感知",
+        "source": "PHB",
+        "page": 82,
+        "srd": true,
+        "className": "圣武士",
+        "classSource": "PHB",
+        "level": 1,
+        "entries": [
+            "强大的邪恶存在于你有如带毒的香气，而强大的善良光环于你则如仙乐般悠扬. 你可以使用一个动作扩展你的意识, 以侦测此类势力. 直到你下回合结束前, 你可以对身边60尺范围内进行感测, 任何未对你处在{@quickref 掩护||3||全身掩护}状态的天界生物、邪魔或不死生物都将被你定位. 你感应到范围内生物的种类（天界生物、邪魔、不死生物）, 不过并不能精确指明（比如\"吸血鬼伯爵施特拉德·冯·扎洛维奇Vampire Count Strahd von Zarovich\"）. 在同样的范围内, 你也可以侦测任何受到{@spell 圣居}一类的法术祝福或亵渎的地点或物件。",
+            "该特性的可用次数等于1＋你的魅力调整值. 而已消耗的特性使用次数, 则可以通过完成一次长休进行恢复。"
+        ]
+    },
+    {
+        "ENG_name": "Lay on Hands",
+        "name": "圣疗",
+        "source": "PHB",
+        "page": 82,
+        "srd": true,
+        "className": "圣武士",
+        "classSource": "PHB",
+        "level": 1,
+        "entries": [
+            "你的触碰溢满祝福，可以医治伤口. 你获得一个治疗能量池, 其内的治疗能量在每次完成长休后自动补满. 治疗能量池储备的可恢复生命值总值等于你的圣武士职业等级×5。",
+            "你可以用一个动作触碰一个生物，并抽取治疗能量池中的能量恢复该生物的生命值, 其恢复量最多等于你治疗能量池中剩余的治疗量。",
+            "此外，你也可以使用5点治疗量治愈目标生物身上的一种疾病，或者祛除一种中毒效应. 你可以在一次圣疗中治愈复数的疾病并祛除复数的毒素, 但你需要为每一种疾病和毒素分别支付治疗量。",
+            "该职业特性对不死生物和构装生物无效。"
+        ]
+    },
+    {
+        "ENG_name": "Divine Smite",
+        "name": "至圣斩",
+        "source": "PHB",
+        "page": 82,
+        "srd": true,
+        "className": "圣武士",
+        "classSource": "PHB",
+        "level": 2,
+        "entries": [
+            "第2级起，你使用近战武器攻击命中一个生物时，可以消耗一枚法术位，并对目标造成除武器伤害外附加的光耀伤害. 1环法术位时, 额外伤害的数值为{@damage 2d8}；更高法术位时, 每比1环高一环就额外增加{@damage 1d8}, 其最高值为{@damage 5d8}. 如果目标是不死生物或邪魔, 则该伤害将再额外增加{@damage 1d8}, 至高提升到{@damage 6d8}。"
+        ]
+    },
+    {
+        "ENG_name": "Fighting Style",
+        "name": "战斗风格",
+        "source": "PHB",
+        "page": 82,
+        "srd": true,
+        "className": "圣武士",
+        "classSource": "PHB",
+        "level": 2,
+        "entries": [
+            "第2级起，你将精进于一种战斗风格，从下列选项中选择其一. 另外, 即使你有多次选择战斗风格的机会, 也不能重复选择同一个战斗风格。",
+            {
+                "type": "options",
+                "count": 1,
+                "entries": [
+                    {
+                        "type": "refOptionalfeature",
+                        "optionalfeature": "防御"
+                    },
+                    {
+                        "type": "refOptionalfeature",
+                        "optionalfeature": "对决"
+                    },
+                    {
+                        "type": "refOptionalfeature",
+                        "optionalfeature": "巨武器战斗"
+                    },
+                    {
+                        "type": "refOptionalfeature",
+                        "optionalfeature": "守护"
+                    },
+                    {
+                        "type": "refOptionalfeature",
+                        "optionalfeature": "受祝福的勇士|TCE"
+                    },
+                    {
+                        "type": "refOptionalfeature",
+                        "optionalfeature": "盲斗|TCE"
+                    },
+                    {
+                        "type": "refOptionalfeature",
+                        "optionalfeature": "拦截|TCE"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "ENG_name": "Spellcasting",
+        "name": "施法",
+        "source": "PHB",
+        "page": 82,
+        "srd": true,
+        "className": "圣武士",
+        "classSource": "PHB",
+        "level": 2,
+        "entries": [
+            "第2级起，你学会通过冥想与祈祷引导神圣魔法，其原理与牧师相仿. 参考 {@book 第十章|PHB|10}的施法规则, 以及 {@book 第十一章|PHB|11}的 {@filter 圣武士法术列表|spells|class=圣武士}。",
+            {
+                "ENG_name": "Preparing and Casting Spells",
+                "name": "法术的准备与施展",
+                "type": "entries",
+                "entries": [
+                    "\"圣武士职业表\"里记录了你用以施展{@filter 圣武士法术|spells|class=圣武士}的1环及更高环阶法术位数量. 施展某个圣武士法术时, 你必须同时消耗其对应环阶的法术位. 而已消耗的法术位则可以通过完成一次长休进行恢复。",
+                    "你可以准备圣武士法术列表中所有符合当前施展条件的法术. 准备法术时, 你所准备法术的总数等于你的魅力调整值＋你圣武士职业等级的一半（最少可准备一个）. 另外, 你只能准备已获得相应环阶法术位的法术。",
+                    "例如，作为一名5级圣武士时，你拥有四枚1环法术位和两枚2环法术位. 假如你的魅力为14, 则你的准备法术列表可以囊括四个1环或者2环法术的组合. 如果你已经准备了1环法术{@spell 疗伤术}, 则你可以使用1环或2环的法术位来施展它. 另外, 已施展的法术并不会从你的准备列表中移除。",
+                    "你可以在完成长休后改变你的准备法术列表. 准备新的圣武士法术列表时, 你要再花时间进行祈祷和冥想. 准备时, 你要为你列表上每个法术的每个环阶都花费至少1分钟时间。"
+                ]
+            },
+            {
+                "ENG_name": "Spellcasting Ability",
+                "name": "施法属性",
+                "type": "entries",
+                "entries": [
+                    "你的法术源自你坚定信念产生的力量，因此魅力是你施展圣武士法术的关键属性. 每当你的圣武士法术需要施法属性是均指向你的魅力值. 而你圣武士法术的豁免DC和攻击检定, 则使用你的魅力调整值。",
+                    {
+                        "ENG_name": "Spell",
+                        "name": "法术",
+                        "type": "abilityDc",
+                        "attributes": [
+                            "cha"
+                        ]
+                    },
+                    {
+                        "ENG_name": "Spell",
+                        "name": "法术",
+                        "type": "abilityAttackMod",
+                        "attributes": [
+                            "cha"
+                        ]
+                    }
+                ]
+            },
+            {
+                "ENG_name": "Spellcasting Focus",
+                "name": "法器",
+                "type": "entries",
+                "entries": [
+                    "你可用{@item 圣徽|PHB}作为施展你圣武士法术的法器。"
+                ]
+            }
+        ]
+    },
+    {
+        "ENG_name": "Channel Divinity",
+        "name": "引导神力",
+        "source": "PHB",
+        "page": 82,
+        "srd": true,
+        "className": "圣武士",
+        "classSource": "PHB",
+        "level": 3,
+        "entries": [
+            "你的誓言使你获得引导神所授神圣能量的能力，引导的能量将用以实现各种魔法效应. 誓言赋予的相应效应, 可以参考相关誓言的描述内容。",
+            "引导神力时，神力最终产生的效应由你自行选择. 引导神力后, 你必须完成一次短休或长休才能再次使用该特性。",
+            "某些引导神力的效应需要豁免，其豁免DC等于你的圣武士法术豁免DC。"
+        ]
+    },
+    {
+        "ENG_name": "Channel Divinity: Harness Divine Power",
+        "name": "引导神力：神力掌控",
+        "source": "TCE",
+        "page": 52,
+        "className": "圣武士",
+        "classSource": "PHB",
+        "level": 3,
+        "isClassFeatureVariant": true,
+        "consumes": {
+            "ENG_name": "Channel Divinity",
+            "name": "引导神力"
+        },
+        "entries": [
+            "{@i 3级圣武士{@variantrule 可选职业特性|TCE|可选特性}}",
+            "你可以消耗一次引导神力的次数为法术魔力充能. 以一个附赠动作, 触碰你的圣徽进行祈祷并恢复一枚法术位, 其环阶不超过你熟练加值的一半（向上取整）. 你能使用这一特性一次, 当你在此职业上达到更高等级后你可以使用更多次：7级后两次；15级三次. 在你完成一次长休后, 你恢复所有已消耗的使用次数。"
+        ]
+    },
+    {
+        "ENG_name": "Divine Health",
+        "name": "神佑",
+        "source": "PHB",
+        "page": 82,
+        "srd": true,
+        "className": "圣武士",
+        "classSource": "PHB",
+        "level": 3,
+        "entries": [
+            "第3级起，你体内涌动的神圣魔法使你免疫疾病。"
+        ]
+    },
+    {
+        "ENG_name": "Sacred Oath",
+        "name": "神圣誓言",
+        "source": "PHB",
+        "page": 82,
+        "srd": true,
+        "className": "圣武士",
+        "classSource": "PHB",
+        "level": 3,
+        "entries": [
+            "第3级起，你将立下神圣誓言，并永远与你的圣武士身份同在. 你在此之前的圣武士修行被认为仅仅是接受了一条道路而尚未立誓遵从, 你之前所躬行的行为都是为此刻作准备. 神圣誓言包括奉献之誓Oath of Devotion、古贤之誓Oath of the Ancients、复仇之誓Oath of Vengeance等, 你可从中选择其一。",
+            "随后，你将在第3，第7，第15和第20级获得所选圣誓的相应特性。",
+            {
+                "ENG_name": "Oath Spells",
+                "name": "圣誓法术",
+                "type": "entries",
+                "entries": [
+                    "每种誓言都有其相应的圣誓法术列表. 当你达到表中所示的圣武士等级时, 你将同时获得其对应的圣誓法术. 圣誓法术一旦获得, 将会一直在你的准备法术列表中, 且不计入你的每日准备法术上限。",
+                    "任何圣誓法术对你而言都是圣武士法术, 而不论其是否在圣武士法术列表之上。"
+                ]
+            },
+            {
+                "type": "refClassFeature",
+                "classFeature": "引导神力|圣武士||3"
+            },
+            {
+                "type": "refClassFeature",
+                "classFeature": "引导神力：神力掌控|圣武士||3|TCE"
+            },
+            {
+                "ENG_name": "Breaking Your Oath",
+                "name": "背弃誓言",
+                "type": "inset",
+                "entries": [
+                    "圣武士试图使自己符合最高的道德标准. 但即使是最具美德的圣武士也会犯错. 有时正确的道路太过高不可攀；有时你被迫在两害之间取其轻；有时狂热的激情让圣武士的作为越过了合理的界限。",
+                    "背弃誓言的圣武士一般都理所当然地会向同一信仰的牧师或同一兄弟会的圣武士寻求帮助. 圣武士可能必须花上一整晚守夜祈祷, 以表现他的忏悔；或者斋戒禁食以表示自我否定, 或者做一些类似的举动. 在认罪和宽恕的仪式之后, 圣武士就将重获纯洁。",
+                    "如果圣武士自愿打破誓言, 又没有任何悔过的迹象, 后果可能就严重了. 根据DM的不同考量, 一个不知悔过的圣武士可能会被迫放弃圣武士等级并选择其他职业, 或者也可以选用《城主指南》中关于破誓圣武士的选项。"
+                ]
+            }
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "PHB",
+        "page": 82,
+        "srd": true,
+        "className": "圣武士",
+        "classSource": "PHB",
+        "level": 4,
+        "entries": [
+            "当你达到4级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点. 不过你不能通过此特性让属性超过20。",
+            "如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+        ]
+    },
+    {
+        "ENG_name": "Martial Versatility",
+        "name": "替换武术",
+        "source": "TCE",
+        "page": 52,
+        "className": "圣武士",
+        "classSource": "PHB",
+        "level": 4,
+        "isClassFeatureVariant": true,
+        "entries": [
+            "{@i 4级圣武士{@variantrule 可选职业特性|TCE|可选特性}}",
+            "每当你通过提升圣武士等级获得属性值提升时，你可以用另一个圣武士能够选择的战斗风格替换你当前的{@filter 战斗风格|optionalfeatures|feature type=FS:P}. 这一变化代表着你在战斗训练上重心的转移。"
+        ]
+    },
+    {
+        "ENG_name": "Extra Attack",
+        "name": "额外攻击",
+        "source": "PHB",
+        "page": 82,
+        "srd": true,
+        "className": "圣武士",
+        "classSource": "PHB",
+        "level": 5,
+        "entries": [
+            "第5级起，你在自己回合内执行{@action 攻击}动作时可以攻击两次而非一次。"
+        ]
+    },
+    {
+        "ENG_name": "Aura of Protection",
+        "name": "守护灵光",
+        "source": "PHB",
+        "page": 82,
+        "srd": true,
+        "className": "圣武士",
+        "classSource": "PHB",
+        "level": 6,
+        "entries": [
+            "第6级起，你与友方生物在你身边10尺内进行豁免检定时，可以将你的魅力调整值作为加值加在其豁免结果上（至少为 +1）. 提供该加值时你必须保持意识清醒。",
+            "第18级起，该灵光的作用范围扩展至30尺。"
+        ]
+    },
+    {
+        "ENG_name": "Sacred Oath feature",
+        "name": "圣誓特性",
+        "source": "PHB",
+        "page": 82,
+        "srd": true,
+        "className": "圣武士",
+        "classSource": "PHB",
+        "level": 7,
+        "entries": [
+            "你将在第7级时获得所选圣誓的相应特性。"
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "PHB",
+        "page": 82,
+        "srd": true,
+        "className": "圣武士",
+        "classSource": "PHB",
+        "level": 8,
+        "entries": [
+            "当你达到第8级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点. 不过你不能通过该特性让属性超过20。",
+            "如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+        ]
+    },
+    {
+        "ENG_name": "Aura of Courage",
+        "name": "勇气灵光",
+        "source": "PHB",
+        "page": 82,
+        "srd": true,
+        "className": "圣武士",
+        "classSource": "PHB",
+        "level": 10,
+        "entries": [
+            "第10级起，你和10尺范围内的友方生物不会陷入{@condition 恐慌}. 提供该增益时你必须保持意识清醒。",
+            "第18级起，该灵光的作用范围扩展至30尺。"
+        ]
+    },
+    {
+        "ENG_name": "Improved Divine Smite",
+        "name": "精通至圣斩",
+        "source": "PHB",
+        "page": 82,
+        "srd": true,
+        "className": "圣武士",
+        "classSource": "PHB",
+        "level": 11,
+        "entries": [
+            "第11级起，你体内充盈的公正之力使你的近战武器打击中携带着神圣的力量. 当你使用近战武器命中一个生物时, 该生物将额外受到{@damage 1d8}光耀伤害。"
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "PHB",
+        "page": 82,
+        "srd": true,
+        "className": "圣武士",
+        "classSource": "PHB",
+        "level": 12,
+        "entries": [
+            "当你达到第12级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点. 不过你不能通过该特性让属性超过20。",
+            "如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+        ]
+    },
+    {
+        "ENG_name": "Cleansing Touch",
+        "name": "净化之触",
+        "source": "PHB",
+        "page": 82,
+        "srd": true,
+        "className": "圣武士",
+        "classSource": "PHB",
+        "level": 14,
+        "entries": [
+            "第14级起，你可以用动作触碰你自身或一个自愿生物，以中止该目标身上的一个法术效应。",
+            "该特性的可用次数等于你的魅力调整值（至少一次）. 而已消耗的特性使用次数则可以通过完成一次长休进行恢复。"
+        ]
+    },
+    {
+        "ENG_name": "Sacred Oath feature",
+        "name": "圣誓特性",
+        "source": "PHB",
+        "page": 82,
+        "srd": true,
+        "className": "圣武士",
+        "classSource": "PHB",
+        "level": 15,
+        "entries": [
+            "在15级时获得所选圣誓的相应特性。"
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "PHB",
+        "page": 82,
+        "srd": true,
+        "className": "圣武士",
+        "classSource": "PHB",
+        "level": 16,
+        "entries": [
+            "当你达到16级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点. 不过你不能通过此特性让属性超过20。",
+            "如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+        ]
+    },
+    {
+        "ENG_name": "Aura improvements",
+        "name": "灵光增效",
+        "source": "PHB",
+        "page": 82,
+        "srd": true,
+        "className": "圣武士",
+        "classSource": "PHB",
+        "level": 18,
+        "entries": [
+            "第18级起，守护灵光的作用范围扩展至30尺。"
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "PHB",
+        "page": 82,
+        "srd": true,
+        "className": "圣武士",
+        "classSource": "PHB",
+        "level": 19,
+        "entries": [
+            "当你达到19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点. 不过你不能通过此特性让属性超过20。",
+            "如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+        ]
+    },
+    {
+        "ENG_name": "Sacred Oath feature",
+        "name": "圣誓特性",
+        "source": "PHB",
+        "page": 82,
+        "srd": true,
+        "className": "圣武士",
+        "classSource": "PHB",
+        "level": 20,
+        "entries": [
+            "在20级时获得所选圣誓的相应特性。"
+        ]
+    }
+]

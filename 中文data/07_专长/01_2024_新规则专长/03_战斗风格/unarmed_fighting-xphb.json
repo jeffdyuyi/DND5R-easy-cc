@@ -1,0 +1,21 @@
+[
+  {
+    "ENG_name": "Unarmed Fighting",
+    "name": "徒手战斗",
+    "source": "XPHB",
+    "page": 210,
+    "category": "FS",
+    "prerequisite": [
+      {
+        "feature": [
+          "战斗风格"
+        ]
+      }
+    ],
+    "entries": [
+      "当你使用{@variantrule 徒手打击|XPHB}命中并造成了伤害时，你可以改为造成{@damage 1d6} + 你的力量调整值点钝击伤害，而非原本的{@variantrule 徒手打击|XPHB}伤害。如果你进行攻击检定时并没有持握任何武器与{@item 盾牌|XPHB}，则上述伤害中的{@dice d6}将变为{@dice d8}。",
+      "每当你的回合开始时，你还可以对一个因你{@condition 受擒|XPHB}的生物造成{@damage 1d4}点钝击伤害。"
+    ],
+    "translator": "不全书"
+  }
+]

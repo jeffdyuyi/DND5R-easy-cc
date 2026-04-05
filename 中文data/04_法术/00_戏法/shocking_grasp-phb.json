@@ -1,0 +1,81 @@
+[
+  {
+    "ENG_name": "Shocking Grasp",
+    "name": "电爪",
+    "source": "PHB",
+    "page": 275,
+    "srd": true,
+    "basicRules": true,
+    "otherSources": [
+      {
+        "source": "RMR",
+        "page": 59
+      }
+    ],
+    "referenceSources": [
+      "TftYP-TFoF",
+      "WDMM"
+    ],
+    "reprintedAs": [
+      "电爪|XPHB"
+    ],
+    "level": 0,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你的手上发出闪电，并对你触碰的一个生物发动电击。对目标发动一次近战法术攻击。如果目标穿着金属护甲，则你进行该检定时具有优势。若命中，则目标受到 {@damage 1d8} 点闪电伤害，并且在其下一回合开始前不能执行任何反应。",
+      "当你达到以下等级时，此法术的伤害增加{@damage 1d8}，5级（{@damage 2d8}）、11级（{@damage 3d8}）和17级（{@damage 4d8}）。"
+    ],
+    "scalingLevelDice": {
+      "label": "闪电伤害",
+      "scaling": {
+        "1": "1d8",
+        "5": "2d8",
+        "11": "3d8",
+        "17": "4d8"
+      }
+    },
+    "damageInflict": [
+      "lightning"
+    ],
+    "spellAttack": [
+      "M"
+    ],
+    "miscTags": [
+      "SCL"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "塑能系",
+    "display_damageInflict": [
+      "闪电"
+    ]
+  }
+]

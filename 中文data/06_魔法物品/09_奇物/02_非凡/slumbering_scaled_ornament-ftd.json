@@ -1,0 +1,17 @@
+[
+  {
+    "ENG_name": "Slumbering Scaled Ornament",
+    "name": "沉睡覆鳞饰物",
+    "source": "FTD",
+    "page": 27,
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这个饰物可以是珠宝，斗篷或其他可穿戴的装饰品。它似乎是由龙的鳞片、牙齿或爪抓塑造而成，或者是包含有这些形状的图像。",
+      "你在为避免陷入{@condition 魅惑}或{@condition 恐慌}，或者结束这些状态所做的豁免检定中具有优势。"
+    ],
+    "valueReference": 400,
+    "type": "W"
+  }
+]

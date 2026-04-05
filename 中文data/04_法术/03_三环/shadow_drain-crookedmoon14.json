@@ -1,0 +1,80 @@
+[
+  {
+    "ENG_name": "Shadow Drain",
+    "name": "汲影术",
+    "source": "CrookedMoon14",
+    "page": 133,
+    "reprintedAs": [
+      "汲影术|crookedmoon24"
+    ],
+    "level": 3,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "emanation",
+      "distance": {
+        "type": "feet",
+        "amount": 15
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "在持续时间内，你通过15尺内未被{@quickref 掩护||3||全身掩护}的生物的阴影吸取其生命力和自我意识。",
+      "当你施放此法术后，你可以指定生物不受其影响。每当任何其他生物进入该区域或在其内开始其回合，或当该区域进入一个生物的空间时，该生物必须进行一次魅力豁免检定。豁免失败时，该生物受到{@damage 2d6}暗蚀伤害，并且在其下一回合结束前在攻击检定和属性检定上具有劣势。豁免成功时，该生物仅受到一半伤害。一个生物每回合仅进行一次此豁免检定。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用4环或更高法术位施放该法术时，法术位每比3环高一级，伤害就增加{@dice 1d6}。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "暗蚀"
+    ],
+    "savingThrow": [
+      "魅力"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Spells/Shadow-Drain.webp"
+  }
+]

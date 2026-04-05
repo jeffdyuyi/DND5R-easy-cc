@@ -1,0 +1,66 @@
+[
+  {
+    "ENG_name": "Shadow Gateway",
+    "name": "暗影通道",
+    "source": "BookOfEbonTides",
+    "page": 0,
+    "level": 5,
+    "school": "C",
+    "time": [
+      {
+        "number": 10,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一块黑色粉笔碎片"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "meta": {
+      "ritual": true
+    },
+    "entries": [
+      "通过用黑粉笔绘制一个直径达15尺的圆圈并在施法时间内吟唱1分钟，你直接打开了一个通往幽影位面的传送门。传送门填满粉笔圆圈，呈现为一个墨黑色的涡流；无法透过它看到任何东西。任何穿过传送门的物件或生物都会立即安全抵达目的地。传送门保持开放1分钟或直到你停止{@status 专注||专注于}该法术，并且可以在法术持续时间内多次用于在幽影位面和粉笔圆圈之间双向旅行。"
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    }
+  }
+]

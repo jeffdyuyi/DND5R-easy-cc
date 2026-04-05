@@ -1,0 +1,106 @@
+[
+  {
+    "ENG_name": "Wave",
+    "name": "波涛",
+    "source": "XDMG",
+    "page": 323,
+    "baseItem": "三叉戟|xphb",
+    "type": "M|XPHB",
+    "rarity": "artifact",
+    "reqAttune": true,
+    "sentient": true,
+    "weight": 4,
+    "weaponCategory": "martial",
+    "property": [
+      "T|XPHB",
+      "V|XPHB"
+    ],
+    "mastery": [
+      "失衡|XPHB"
+    ],
+    "range": "20/60",
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "dmg2": "1d10",
+    "bonusWeapon": "+3",
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "波涛藏在白羽山的地下城中，这把精致的三叉戟上面雕有波浪、贝壳和海洋生物的图案。",
+      "你用此魔法武器进行的攻击检定和伤害掷骰获得+3加值。当你在以此武器进行的攻击检定的{@dice d20}中掷出20时，目标额外受到21暗蚀伤害。",
+      "持用波涛期间，你获得以下增益：",
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Combat Ready",
+            "name": "战斗预备",
+            "type": "item",
+            "entries": [
+              "你能够进行有{@variantrule 优势|XPHB}的{@variantrule 先攻|XPHB}掷骰。"
+            ]
+          },
+          {
+            "ENG_name": "Underwater Adaptation",
+            "name": "水下适应",
+            "type": "item",
+            "entries": [
+              "你身处水下期间，一个空气泡泡环绕着你的脑袋，令你可以在该环境下如常呼吸。"
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Aquatic Command",
+        "name": "命令水栖",
+        "type": "entries",
+        "entries": [
+          "波涛具有3充能并在每日黎明时重获{@dice 1d3}充能，当你携带波涛时，你可以消耗1充能，对一只具有{@variantrule 游泳速度|XPHB}的野兽施展{@spell 支配野兽|XPHB} （豁免{@dc 20}）。"
+        ]
+      },
+      {
+        "ENG_name": "Globe of Invulnerability",
+        "name": "法术无效结界",
+        "type": "entries",
+        "entries": [
+          "持握波涛时，你可以从中施展九环版本的法术{@spell 法术无效结界|XPHB}。该词条一经使用，直至次日黎明你都无法再次使用。"
+        ]
+      },
+      {
+        "ENG_name": "Sentience",
+        "name": "智能",
+        "type": "entries",
+        "entries": [
+          "涛是一把具有绝对中立阵营的智能武器，智力为14，感知10，魅力18。它具有120尺听觉及120尺{@sense 黑暗视觉|XPHB}。",
+          "波涛与其持用者通过心灵感应交流，波涛也会说水族语。"
+        ]
+      },
+      {
+        "ENG_name": "Personality",
+        "name": "个性",
+        "type": "entries",
+        "entries": [
+          "波涛热衷于劝诫凡人信仰海神，并有哼唱船歌的习惯。如果其持用者没有将波涛的目标传遍世界，波涛将进行反噬。"
+        ]
+      },
+      {
+        "ENG_name": "Destroying Wave",
+        "name": "摧毁波涛",
+        "type": "entries",
+        "entries": [
+          "波涛只会在雷铸岛——其被锻造出来的地方——被摧毁。波涛只能由{@creature 风暴巨人|XMM}或拥有着风暴巨人力量之人亲手熔化。摧毁波涛将激怒一位海神，其将派遣强大的使徒们攻打小岛并惩罚将波涛摧毁之人。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "支配野兽|xphb"
+        ]
+      }
+    },
+    "translator": "不全书"
+  }
+]

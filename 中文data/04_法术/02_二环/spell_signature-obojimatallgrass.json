@@ -1,0 +1,91 @@
+[
+  {
+    "ENG_name": "Spell Signature",
+    "name": "法术识记",
+    "source": "ObojimaTallGrass",
+    "page": 189,
+    "level": 2,
+    "school": "D",
+    "time": [
+      {
+        "number": 10,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一根红木火柴"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "当你施放该法术时，你会释放出所有魔法中蕴含的强烈气息。选择一个你感知范围内已知的魔法效应。该效应会释放出创造它的生物特有的气息。如果你熟悉该生物，你会自动知道这个魔法效应是由它们创造的。",
+      "如果你不熟悉该生物，你可以使用你的施法属性调整值进行一次属性检定并添加你的熟练加值。参考下方表格以确定你能从气味中获得什么消息。当成功通过DC检定时，你也会得知来自更低DC的先前消息。",
+      {
+        "type": "list",
+        "items": [
+          "DC 5——你得知制造该魔法效应的生物类型。",
+          "DC 10——若该生物有职业，你可知晓其为何种职业。",
+          "DC 15——你得知该生物是否隶属于某个组织。",
+          "DC 20—你得知该生物的名称。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Paladin",
+          "name": "圣武士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Custom/Spells/Spell%20Signature.webp"
+  }
+]

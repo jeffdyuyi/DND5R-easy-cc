@@ -1,0 +1,59 @@
+[
+  {
+    "ENG_name": "Banjo of Ol' Jericho Sticks (Very Rare)",
+    "name": "老杰里科·斯提克斯的班卓琴（极珍稀）",
+    "source": "CrookedMoon24",
+    "page": 595,
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "property": [
+      "TCM'24:FH"
+    ],
+    "bonusSpellAttack": "+2",
+    "bonusSpellSaveDc": "+2",
+    "focus": true,
+    "entries": [
+      "一把刻有符文、饱经风霜的老旧班卓琴，这件乐器曾属于老杰里科·斯提克斯——一个由鬼婆集会创造的稻草人吟游诗人。",
+      "持握这把班卓琴期间，你可以将其用作你法术的{@variantrule 法器|XPHB}；你的法术攻击检定，法术豁免DC，以及魅力（{@skill 表演|XPHB}）检定会获得+2加值，并且你还可以使用如下词条。",
+      {
+        "ENG_name": "Fiendish Lure (Rare+)",
+        "name": "诱魔之饵（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "你可以使用{@action 魔法}动作选择你周边60尺范围内一个你可见的邪魔或类人。目标必须进行一次感知豁免（DC = 16 + 班卓琴加值），豁免失败则将陷入{@condition 魅惑|XPHB}状态（无视恶魔的{@variantrule 免疫|XPHB}），持续1分钟。如果你或你的盟友对目标造成伤害，或迫使其进行豁免，则该{@condition 魅惑|XPHB}状态立即终止。一旦以此方式使一个生物陷入{@condition 魅惑|XPHB}，则直至次日黄昏之前，无法再次使用该属性。"
+        ]
+      },
+      {
+        "ENG_name": "Scarecrow's Dance (Rare+)",
+        "name": "稻草人之舞（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "你可以使用一个{@variantrule 附赠动作|XPHB}来拨动班卓琴并疯狂起舞，以执行{@action 撤离|XPHB}动作。该音乐最远120尺内都能听见。"
+        ]
+      },
+      {
+        "ENG_name": "Join in the Dance (Very Rare+)",
+        "name": "共舞之邀（极珍稀+）",
+        "type": "entries",
+        "entries": [
+          "当你使用稻草人之舞时，你周边15尺范围内一个你选择的可见生物可以使用其{@variantrule 反应|XPHB}移动至多其{@variantrule 速度|XPHB}的一半的距离，并且不会引发{@action 借机攻击|XPHB|借机攻击}。"
+        ]
+      }
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Banjo%20of%20Ol%20Jericho%20Sticks.webp"
+          },
+          "width": 1103,
+          "height": 1200,
+          "credit": "Eugenio Frosali"
+        }
+      ]
+    }
+  }
+]

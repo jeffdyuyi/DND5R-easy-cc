@@ -1,0 +1,42 @@
+[
+  {
+    "ENG_name": "Cult of Personality",
+    "name": "个人崇拜",
+    "source": "CrookedMoon24",
+    "page": 119,
+    "type": "Dark Bargain",
+    "entries": [
+      "你是一股需要被认真对待的魅惑与吸引力。当其他人争先恐后地想要博得你的好感时，你可能会发现自己最终需要它们多于它们需要你。",
+      {
+        "ENG_name": "Honeyed Words",
+        "name": "甜言蜜语",
+        "type": "entries",
+        "entries": [
+          "作为一个{@action 魔法|XPHB}动作，你可以向一个你60尺内的生物说甜言蜜语。该生物获得{@condition 魅惑|XPHB}状态，持续24小时，直到你再次使用此特性，或直到你或你的盟友对目标造成任何伤害或迫使其进行豁免检定。{@condition 魅惑|XPHB}目标是你的盟友并遵循你的命令，只要这些命令不要求目标伤害其自身。如果目标执行一个它认为可憎的命令，它需要进行DC 15感知豁免检定，成功则在其自身上结束该状态。一旦该状态结束，目标在24小时内对此特性免疫。",
+          "如果目标对{@condition 魅惑|XPHB}状态具有{@variantrule 免疫|XPHB}，则改为直到你的下一个回合开端，它在{@variantrule D20 检定|XPHB|D20 检定}上具有{@variantrule 劣势|XPHB}，并且你获得等于你等级的{@variantrule 临时生命值|XPHB}。一旦你使用此特性，直到你完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}前，你无法再次使用它。"
+        ]
+      },
+      {
+        "ENG_name": "Solitary Weakness",
+        "name": "独处之殇",
+        "type": "entries",
+        "entries": [
+          "如果你在你的回合开始时，20尺内没有你能看见或听见的盟友，你将丢失来自任何来源的所有{@variantrule 临时生命值|XPHB}，并且直到你的下一个回合开始前，你在{@variantrule 劣势|XPHB}上具有{@variantrule D20 检定|XPHB|D20 检定}。"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/CrookedMoon24/Rewards/Cult%20of%20Personality.webp"
+        },
+        "width": 850,
+        "height": 304,
+        "credit": "Suzanne Helmigh"
+      }
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Bargains/Cult%20of%20Personality.webp"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "ENG_name": "Rime's Binding Ice",
+    "name": "雾凇霜缚",
+    "source": "FTD",
+    "page": 21,
+    "level": 2,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "cone",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "s": true,
+      "m": "一瓶冰雪融化而成的水"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你向30尺锥形范围内放出一股冰冷的能量。范围内的每个生物都必须成功通过一体质豁免，否则将受到{@damage 3d8}寒冷伤害并且被冰霜包裹，持续一分钟或直至一个生物用动作为自己或触及范围内的其他生物破冰。被冰霜包裹的生物其速度降至0。豁免成功则伤害减半，并且不会受到其他效应影响。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你用3环或更高的法术位施展此法术时，你使用的法术位每比2环高一环，法术的伤害增加{@scaledamage 3d8|2-9|1d8}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "cold"
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "areaTags": [
+      "N"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/FTD/Rime's Binding Ice.webp"
+          },
+          "credit": "Billy Christian",
+          "title": "白龙手中施放的雾凇霜缚更是雪上加霜。",
+          "width": 1700,
+          "height": 1122
+        }
+      ]
+    },
+    "classes": [
+      "术士",
+      "法师"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "体质"
+    ],
+    "display_damageInflict": [
+      "寒冷"
+    ]
+  }
+]

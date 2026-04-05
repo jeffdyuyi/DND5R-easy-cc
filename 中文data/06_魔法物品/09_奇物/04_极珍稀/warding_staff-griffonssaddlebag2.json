@@ -1,0 +1,55 @@
+[
+  {
+    "ENG_name": "Warding Staff",
+    "name": "守护之杖",
+    "source": "GriffonsSaddlebag2",
+    "page": 185,
+    "baseItem": "长棍|phb",
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": "由牧师或圣武士",
+    "reqAttuneTags": [
+      {
+        "class": "牧师"
+      },
+      {
+        "class": "圣武士"
+      }
+    ],
+    "weight": 4,
+    "weaponCategory": "简易",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "staff": true,
+    "entries": [
+      "这把铂金法杖的顶端是一个宽火盆，一小颗水晶球漂浮在其上面。持握此法杖期间，它的火盆里会燃起无害的圣火，散发出半径20尺的明亮光照以及额外20尺的微光光照。法杖可以被用作一根魔法长棍，命中时额外造成{@damage 1d6}光耀伤害。",
+      "一个位于法杖触及范围内的友方生物可以用一个附赠动作摘下火盆里的水晶球。当水晶球在其他生物身上期间，该生物视同处于由你施展的{@spell 守护之链}法术的影响之下。该法术始终持续，直到目标远离你超过60尺，或你不再持握法杖，或直到你死亡或处于{@condition 失能}状态。你也可以随时选择凭意念终止此法术（无需动作）。当法术结束时，球会传送回法杖的顶部。",
+      "此外，在一名除你之外的且你能看到的生物携带着法球期间，你可以用一个附赠动作说出此球的命令语，以将你传送到至多60尺距离到目标5尺范围内一处未被占据的空间中。或者，一个持有此球的生物可以用其附赠动作说出此球的命令语，并传送到你5尺范围内一处未被占据的空间中。此属性一经使用后，直到次日拂晓之前都不能再使用。"
+    ],
+    "attachedSpells": {
+      "other": [
+        "守护之链"
+      ]
+    },
+    "lootTables": [
+      "魔法物品表 H2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Warding-Staff.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

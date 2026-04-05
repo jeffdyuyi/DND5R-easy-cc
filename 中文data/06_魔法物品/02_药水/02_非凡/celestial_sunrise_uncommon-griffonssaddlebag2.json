@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Celestial Sunrise (Uncommon)",
+    "name": "天界日出（非普通）",
+    "source": "GriffonsSaddlebag2",
+    "page": 57,
+    "type": "P",
+    "tier": "次要",
+    "rarity": "uncommon",
+    "entries": [
+      "下文中所述的{@item 天界日出|GriffonsSaddlebag2}是一种稀有度为非普通的变体，它具有额外的词条。其口感也更好。",
+      "当你喝下这种药水时，你能在接下来的8个小时内在黑暗中正常视物，无论是魔法还是非魔法的黑暗。此外，由于药水的普通效应增强，从你口中射出的光芒的明亮光照延伸至40尺，微光光照再延伸40尺。"
+    ],
+    "lootTables": [
+      "魔法物品表 B2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Celestial-Sunrise.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Hsirebbig",
+    "name": "苦语药剂",
+    "source": "ObojimaTallGrass",
+    "page": 242,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "这种苦痛药水赋予你一种特殊的口语形态，对任何未受苦语药剂效应影响的人来说听起来完全像胡言乱语。即使是像{@spell 通晓语言}这样的法术也无法破译这种言语。此药水的效应持续24小时。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 26|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/hsirebbig.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1752,
+          "height": 1752
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

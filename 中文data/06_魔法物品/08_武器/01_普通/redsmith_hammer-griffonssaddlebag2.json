@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "Redsmith Hammer",
+    "name": "红铁匠之锤",
+    "source": "GriffonsSaddlebag2",
+    "page": 144,
+    "baseItem": "轻锤|phb",
+    "type": "M",
+    "tier": "次要",
+    "rarity": "common",
+    "weight": 2,
+    "weaponCategory": "简易",
+    "property": [
+      "L",
+      "T"
+    ],
+    "range": "20/60",
+    "dmg1": "1d4",
+    "dmgType": "B",
+    "entries": [
+      "这把矮人锻造锤的锤身刻满了符文。当敲击铁砧时，锤身符文会泛起炽红色的光芒并散发热量，使铁匠仅凭锤砧即可锻铸武器与护甲。"
+    ],
+    "lootTables": [
+      "魔法物品表 A1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Redsmith-Hammer.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

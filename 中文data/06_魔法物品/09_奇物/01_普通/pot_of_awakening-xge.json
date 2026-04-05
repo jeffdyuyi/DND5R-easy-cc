@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Pot of Awakening",
+    "name": "启蒙花盆",
+    "source": "XGE",
+    "page": 138,
+    "otherSources": [
+      {
+        "source": "IMR",
+        "page": 95
+      }
+    ],
+    "referenceSources": [
+      "WDMM",
+      "IMR"
+    ],
+    "reprintedAs": [
+      "启蒙花盆|XDMG"
+    ],
+    "tier": "次要",
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "你可以在这个10磅重的黏土花盆里种植普通的灌木。待其生长三十天后，这株灌木会魔法性的转化为一株{@creature 启蒙灌木}。当灌木被启蒙时，它的根会打碎花盆并导致花盆被摧毁。",
+      "这株植物对你友善，且若没有得到你的命令，它什么都不会干。"
+    ],
+    "translator": "不全书",
+    "valueReference": 100,
+    "type": "W"
+  }
+]

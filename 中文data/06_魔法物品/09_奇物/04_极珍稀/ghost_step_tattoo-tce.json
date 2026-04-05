@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Ghost Step Tattoo",
+    "name": "鬼步刺青",
+    "source": "TCE",
+    "page": 128,
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "tattoo": true,
+    "recharge": "拂晓",
+    "rechargeAmount": 3,
+    "charges": 3,
+    "entries": [
+      "这个纹身是由一根特殊的针制造的，它在皮肤上不断变化和摇曳，部分看起来模糊不清。",
+      {
+        "ENG_name": "Tattoo Attunement",
+        "name": "刺青同调",
+        "type": "entries",
+        "entries": [
+          "同调此物品时，你需要将针持握，并抵在你想要让刺青出现 的那处皮肤上。当同调完成时，针头会化为墨水再变成刺青。",
+          "若你与刺青的同调结束，刺青会消失，针头会再次出现在你的位置中。"
+        ]
+      },
+      {
+        "ENG_name": "Ghostly Form",
+        "name": "鬼灵形态",
+        "type": "entries",
+        "entries": [
+          "这个纹身有3次充能，并且在每天黎明时恢复所有消耗的充能。当纹身在你的皮肤上时，你可以作为一个附赠动作消耗纹身的1次充能，在下一个回合结束前变成非物质形态。在此持续时间内，你获得以下好处：",
+          {
+            "type": "list",
+            "items": [
+              "你对于来自非魔法攻击的钝击，穿刺和挥砍伤害得到抗性。",
+              "你不能{@condition 受擒}（被擒）或{@condition 束缚}（被限制）。",
+              "你可以像通过{@quickref 困难地形||3}（困难地形）一样穿过生物和实体物体。如果你的回合结束时位于一个实体物体中，你会遭受{@damage 1d10}力场伤害。如果你在实体物体内部时效果结束，你将被转移到最近的未被占据的空间，并且每移动5尺，你会遭受{@damage 1d10}力场伤害。"
+            ]
+          }
+        ]
+      }
+    ],
+    "valueReference": 20000,
+    "type": "W"
+  }
+]

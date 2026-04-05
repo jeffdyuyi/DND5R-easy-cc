@@ -1,0 +1,26 @@
+[
+  {
+    "name": "背包",
+    "ENG_name": "Backpack",
+    "source": "XPHB",
+    "page": 224,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 5,
+    "value": 200,
+    "entries": [
+      "一个背包最多能装入 30 磅重 1 立方尺大的东西。背包也能当作鞍囊使用。"
+    ],
+    "basicRules2024": true,
+    "containerCapacity": {
+      "weight": [
+        30
+      ]
+    },
+    "referenceSources": [
+      "BQGT"
+    ],
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

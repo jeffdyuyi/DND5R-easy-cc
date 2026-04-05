@@ -1,0 +1,79 @@
+[
+  {
+    "ENG_name": "Miasma",
+    "name": "瘴气",
+    "source": "GuideDrakkenheim",
+    "page": 193,
+    "level": 7,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一朵新鲜采摘的尸体莉莉"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你在施法范围内的一个固体表面上创造出一堵病态的黄绿色剧毒烟雾墙。你可以使这堵墙长达60尺，高20尺，厚1尺，或者形成一个直径20尺，高20尺，厚1尺的环形墙。这堵墙是不透明的，并且会持续整个法术持续时间。",
+      "当墙壁出现时，区域内的所有生物必须进行一次敏捷豁免检定。豁免失败时，生物将受到{@damage 10d4}强酸伤害，豁免成功则只受到一半伤害。",
+      "由你在施放该法术时选择的一面墙会释放剧毒烟雾。它会对每个在该面墙30尺内或墙内结束其回合的生物造成{@damage 8d8}毒素伤害。生物在一个回合中首次进入墙内时也会受到相同伤害。墙的另一面不会造成伤害。",
+      "一个从瘴气墙受到毒素伤害的生物必须进行一次体质豁免检定，否则在法术持续时间内陷入{@condition 中毒}状态"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用8环或更高法术位施放该法术时，每个超过7环的法术位环阶会使伤害增加{@dice 2d8}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "强酸",
+      "毒素"
+    ],
+    "conditionInflict": [
+      "中毒"
+    ],
+    "savingThrow": [
+      "体质",
+      "敏捷"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    }
+  }
+]

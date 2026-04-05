@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "+1 Double-Bladed Scimitar",
+    "name": "恶毒 +1 双刃弯刀",
+    "source": "AI",
+    "page": 149,
+    "type": "M",
+    "rarity": "unknown (magic)",
+    "weight": 6,
+    "value": 10000,
+    "weaponCategory": "martial",
+    "property": [
+      "S",
+      "2H"
+    ],
+    "dmg1": "2d4",
+    "dmgType": "S",
+    "sword": true,
+    "weapon": true,
+    "entries": [
+      "使用这把武器进行攻击和伤害判定时，你有{=bonusWeapon}的加值。",
+      "当你使用这把魔法武器掷出20时，目标会额外受到7点{=dmgType}伤害。",
+      "{@note 注意：根据SRD，它是一个额外的{@damage 2d6} {=dmgType}伤害，尽管{@link 这是不正确的|https://rpg.stackexchange.com/a/174522/53884}。}"
+    ],
+    "hasFluff": true,
+    "namePrefix": "恶毒 +1 ",
+    "bonusWeapon": "+1",
+    "_isVariant": true
+  }
+]

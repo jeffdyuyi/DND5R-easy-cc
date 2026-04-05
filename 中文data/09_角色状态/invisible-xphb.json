@@ -1,0 +1,43 @@
+[
+  {
+    "name": "隐形",
+    "ENG_name": "Invisible",
+    "source": "XPHB",
+    "page": 370,
+    "entries": [
+      "隐形状态期间，你将获得以下这些效应。",
+      {
+        "entries": [
+          {
+            "ENG_name": "Surprise",
+            "entries": [
+              "如果你在投掷先攻时处于{@variantrule 先攻|XPHB}状态，你的先攻检定将具有{@variantrule 优势|XPHB}。"
+            ],
+            "name": "出其不意",
+            "type": "entries"
+          },
+          {
+            "ENG_name": "Concealed",
+            "entries": [
+              "任何需要能够看见目标的效应都不会影响到你，除非效应的源头能通过某种方式看到你。你所着装或携带的一切装备也同样会被隐蔽起来。"
+            ],
+            "name": "隐蔽",
+            "type": "entries"
+          },
+          {
+            "ENG_name": "Attacks Affected",
+            "entries": [
+              "以你为目标的{@action 攻击|XPHB}检定具有{@variantrule 劣势|XPHB}，而你进行的攻击检定具有{@variantrule 优势|XPHB}。如果一个生物能以某种方式看见你，那么你在面对该生物时不会获得这一增益。"
+            ],
+            "name": "攻击影响",
+            "type": "entries"
+          }
+        ],
+        "type": "entries"
+      }
+    ],
+    "basicRules2024": true,
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

@@ -1,0 +1,21 @@
+[
+  {
+    "name": "槲寄生枝条",
+    "ENG_name": "Sprig of Mistletoe",
+    "source": "PHB",
+    "page": 151,
+    "type": "SCF",
+    "rarity": "none",
+    "value": 100,
+    "basicRules": true,
+    "group": [
+      "德鲁伊法器"
+    ],
+    "reprintedAs": [
+      "槲寄生枝条|XPHB"
+    ],
+    "scfType": "druid",
+    "srd": true,
+    "translator": "不全书"
+  }
+]

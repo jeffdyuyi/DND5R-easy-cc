@@ -1,0 +1,84 @@
+[
+  {
+    "ENG_name": "Water Bullet",
+    "name": "水弹术",
+    "source": "ObojimaTallGrass",
+    "page": 192,
+    "level": 1,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 90
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你创造一个急速旋转的球状水流，在你手中或口中旋转后猛投向范围内的一个生物。对目标进行一次远程法术攻击。命中时，目标根据与你距离的远近受到钝击伤害。",
+      {
+        "type": "list",
+        "items": [
+          "1-10尺: {@dice 5d6}",
+          "11-60尺: {@dice 4d6}",
+          "61-90尺: {@dice 3d6}"
+        ]
+      }
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用2环或更高法术位施放该法术时，法术位每比1环高一级，伤害就增加{@dice 1d6}。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "钝击"
+    ],
+    "spellAttack": [
+      "R"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Custom/Spells/Water%20Bullet.webp"
+  }
+]

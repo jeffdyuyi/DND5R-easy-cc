@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Deathloop Watch",
+    "name": "死亡溯洄怀表",
+    "source": "GriffonsSaddlebag2",
+    "page": 69,
+    "tier": "次要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这只金色怀表上有一个骷髅头形状的盖子，盖子上有三块蓝色玻璃盖住了它的两只眼眶和鼻子。表盘中央是一个副表盘，上面有一根小巧的镂空成骷髅头的指针，指示着你剩余的生命值。如果你在佩戴着这块怀表期间死亡，怀表会逆转你个人的时间流，让你以1生命值复活，并允许你立刻站起来。当表以这种方式逆转时间时，怀表的三块玻璃板的其中一块会破裂，并且无法以普通或魔法手段修复。每裂开一块玻璃，怀表就会有{@chance 25|25%}的概率在你死后无法逆转这次时间，此概率累加。当三块玻璃都破裂时，怀表就会变成非魔法的表，不过它仍然可以用来显示时间。"
+    ],
+    "lootTables": [
+      "魔法物品表C|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Deathloop-Watch.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

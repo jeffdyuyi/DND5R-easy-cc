@@ -1,0 +1,133 @@
+[
+  {
+    "name": "畸变继承人",
+    "ENG_name": "Aberrant Heir",
+    "source": "EFA",
+    "edition": "one",
+    "page": 25,
+    "ability": [
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "str",
+              "con",
+              "cha"
+            ],
+            "weights": [
+              2,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "str",
+              "con",
+              "cha"
+            ],
+            "weights": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      }
+    ],
+    "feats": [
+      {
+        "异种龙纹|efa": true
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "history": true,
+        "intimidation": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "disguise kit": true
+      }
+    ],
+    "startingEquipment": [
+      {
+        "a": [
+          "匕首|xphb",
+          "易容工具|xphb",
+          "戏服|xphb",
+          "旅行服装|xphb",
+          {
+            "value": 1600
+          }
+        ],
+        "b": [
+          {
+            "value": 5000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability Scores:",
+            "name": "属性值：",
+            "type": "item",
+            "entry": "力量、体质、魅力"
+          },
+          {
+            "ENG_name": "Feat:",
+            "name": "专长：",
+            "type": "item",
+            "entry": "{@feat 异种龙纹|EFA}"
+          },
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 历史|XPHB}和{@skill 威吓|XPHB}"
+          },
+          {
+            "ENG_name": "Tool Proficiencies:",
+            "name": "工具熟练",
+            "type": "item",
+            "entry": "{@item 易容工具|XPHB}"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "选择A或B：(A) {@item 匕首|XPHB}、{@item 易容工具|XPHB}、{@item 戏服|XPHB}、{@item 旅行服装|XPHB}，16 GP；或(B) 50 GP"
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "你的异种龙纹自显现以来就让生活充满挑战。你可能在生命的大部分时间里成功隐藏了它，或者设法避免了注意。或者，你可能遭遇了怀疑和恐惧，也许还伴随着一个或多个龙纹家族的公开敌意。你可能与塔卡南家族犯罪组织建立了联系（该组织以二十五世纪前龙纹战争中最臭名昭著的异种龙纹领袖之一命名）。或者你可能在这个世界上努力寻找自己的道路，依靠你的智慧和龙纹的法力。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "backgrounds/EFA/Aberrant Heir.webp"
+          },
+          "credit": "Kevin Gnutzmans",
+          "width": 850,
+          "height": 285
+        }
+      ]
+    },
+    "hasFluff": true,
+    "hasFluffImages": true
+  }
+]

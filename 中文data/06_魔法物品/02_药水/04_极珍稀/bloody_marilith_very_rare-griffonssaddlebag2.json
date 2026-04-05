@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Bloody Marilith (Very Rare)",
+    "name": "蛇腥魔丽（极珍稀）",
+    "source": "GriffonsSaddlebag2",
+    "page": 48,
+    "type": "P",
+    "tier": "次要",
+    "rarity": "very rare",
+    "entries": [
+      "下文的{@item 蛇腥魔丽|GriffonsSaddlebag2}是一种极珍稀变体，具有更强大的词条。它使用来自恶魔六臂蛇魔的鲜血，而非其魔法替代品，且在饮用时会带给你的舌卷无害的灼烧感。其口感也更好。",
+      "当你喝下这种药水时，你在一场战斗中的每一个回合都拥有一次额外反应，持续1分钟。与它的{@item 蛇腥魔丽（普通）|GriffonsSaddlebag2|通用语}变体不同，此版本药水的效果不会在你执行额外的反应时结束。",
+      "在完成长休之前饮用更多的{@item 蛇腥魔丽|GriffonsSaddlebag2|蛇腥魔丽}会让你的身体感到无比疲劳。当药水的效应结束时，一股怠惰的波涛会席卷你的全身，使你无法移动或执行动作，直至你的下回合结束。"
+    ],
+    "lootTables": [
+      "魔法物品表D|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Bloody-Marilith.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "Laser Rifle",
+    "name": "镀银激光步枪",
+    "source": "PHB",
+    "page": 148,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "unknown",
+    "weight": 7,
+    "valueRarity": "极珍稀",
+    "weaponCategory": "martial",
+    "age": "未来",
+    "property": [
+      "AF|XDMG",
+      "RLD|XDMG",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "缓速|XPHB"
+    ],
+    "range": "100/300",
+    "reload": 30,
+    "dmg1": "3d8",
+    "dmgType": "R",
+    "firearm": true,
+    "weapon": true,
+    "ammoType": "能量电池|xdmg",
+    "namePrefix": "镀银",
+    "basicRules": true,
+    "reprintedAs": [
+      "镀银武器|XDMG"
+    ],
+    "tier": "主要",
+    "valueExpression": "[[baseItem.value]] + 10000",
+    "_isVariant": true
+  }
+]

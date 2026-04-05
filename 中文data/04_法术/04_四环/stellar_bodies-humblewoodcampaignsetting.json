@@ -1,0 +1,270 @@
+[
+  {
+    "ENG_name": "Stellar Bodies",
+    "name": "恒星之躯",
+    "source": "HumblewoodCampaignSetting",
+    "page": 52,
+    "level": 4,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "special"
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你创造了两颗小星星，它们围绕你旋转。它们愉快地闪烁着，在你为中心的10英尺半径内散发出微弱的光芒。这些星星保护着你。如果一个生物在距离你5英尺以内的地方用近战攻击击中你，它必须进行一次智力豁免检定，否则每颗围绕你的星星都会对其造成{@damage 1d8}点光耀伤害。",
+      "每轮一次，在你的回合，你可以使用你的行动让一颗星星朝敌人飞去，在它爆炸成耀眼的闪光时消耗它。对120尺内的敌人进行远程法术攻击，命中时造成{@damage 4d8}点光耀伤害。目标必须随后进行一次体质豁免检定，否则直到你的下个回合开始时都将处于{@condition 目盲}状态。",
+      "法术在以下任一情况下结束：持续时间到期、你进入{@condition 昏迷}状态，或者你已经耗尽了所有星辰。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用4级以上的法术位施放这个法术时，每超过4级的法术位两级，你可以多创造一颗额外的星星。对于每一颗额外围绕你的星星，以你为中心的昏暗光线半径增加5尺。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "光耀"
+    ],
+    "conditionInflict": [
+      "目盲"
+    ],
+    "spellAttack": [
+      "R"
+    ],
+    "savingThrow": [
+      "体质",
+      "感知"
+    ],
+    "miscTags": [
+      "LGT",
+      "SCL"
+    ],
+    "hasFluffImages": true,
+    "foundrySystem": {
+      "uses": {
+        "spent": 4,
+        "max": 4,
+        "recovery": [
+          {
+            "period": "sr",
+            "type": "loseAll"
+          }
+        ]
+      }
+    },
+    "foundryActivities": [
+      {
+        "ENG_name": "Cast",
+        "name": "施放",
+        "consumption.targets": [
+          {
+            "type": "itemUses",
+            "value": "-地板((@item.level) / 2)"
+          }
+        ],
+        "type": "utility"
+      },
+      {
+        "ENG_name": "Against Melee Attacker",
+        "name": "对抗近战攻击手",
+        "activation": {
+          "type": "special",
+          "condition": "如果一个生物在距离你5尺范围内用近战攻击命中你",
+          "override": true
+        },
+        "consumption.spellSlot": false,
+        "damage": {
+          "onSave": "none",
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "(@item.uses.value)d8"
+              },
+              "types": [
+                "光耀"
+              ]
+            }
+          ]
+        },
+        "duration": {
+          "units": "inst",
+          "override": true
+        },
+        "range": {
+          "value": 5,
+          "units": "ft",
+          "override": true
+        },
+        "save.ability": [
+          "wis"
+        ],
+        "target": {
+          "affects": {
+            "count": 1,
+            "type": "creature"
+          },
+          "override": true
+        },
+        "type": "save"
+      },
+      {
+        "attack.type": {
+          "value": "远程",
+          "classification": "法术"
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "value": 1,
+              "type": "itemUses"
+            }
+          ]
+        },
+        "damage.parts": [
+          {
+            "number": 4,
+            "denomination": 8,
+            "types": [
+              "radiant"
+            ]
+          }
+        ],
+        "range": {
+          "value": 120,
+          "units": "ft",
+          "override": true
+        },
+        "target": {
+          "affects": {
+            "count": 1,
+            "type": "enemy"
+          },
+          "override": true
+        },
+        "type": "attack"
+      },
+      {
+        "activation": {
+          "type": "special",
+          "condition": "攻击成功时",
+          "override": true
+        },
+        "consumption.spellSlot": false,
+        "duration": {
+          "value": 1,
+          "type": "round",
+          "override": true
+        },
+        "range": {
+          "value": 120,
+          "units": "ft",
+          "override": true
+        },
+        "save.ability": [
+          "con"
+        ],
+        "target": {
+          "affects": {
+            "count": 1,
+            "type": "enemy"
+          },
+          "override": true
+        },
+        "type": "save"
+      },
+      {
+        "ENG_name": "End Spell",
+        "name": "结束法术",
+        "activation": {
+          "type": null,
+          "override": true
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "@item.uses.value"
+            }
+          ]
+        },
+        "duration": {
+          "type": "inst",
+          "override": true
+        },
+        "range": {
+          "units": "self",
+          "override": true
+        },
+        "target": {
+          "affects.type": null,
+          "override": true
+        },
+        "type": "utility"
+      }
+    ],
+    "fluff": {
+      "ENG_name": "Stellar Bodies",
+      "name": "恒星之躯",
+      "source": "HumblewoodCampaignSetting",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/HumblewoodCampaignSetting/spells/Stellar-Bodies.webp"
+          },
+          "width": 450,
+          "height": 701
+        }
+      ]
+    }
+  }
+]

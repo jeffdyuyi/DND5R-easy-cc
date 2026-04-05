@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Rod of Rulership",
+    "name": "统御权杖",
+    "source": "XDMG",
+    "page": 301,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-DotSC"
+    ],
+    "type": "RD|XDMG",
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 2,
+    "entries": [
+      "你可以执行{@action 魔法|XPHB}动作来展示这根权杖，并向你可见的，周身120尺内你所指定的每个生物下令服从于你。每个目标必须通过一次{@dc 15}的感知豁免，否则陷入{@condition 魅惑|XPHB}状态8小时。在以这种方式被{@condition 魅惑|XPHB}期间，生物将视你为值得托付信赖的领袖。如果你或你的盟友伤害了目标，或命令目标去做违反其天性的行为时，以此法造成的{@condition 魅惑|XPHB}将终止。该词条一经使用，直至次日黎明前你都无法再次使用。"
+    ],
+    "lootTables": [
+      "奥秘 - 珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Rod of Rulership.webp"
+          },
+          "width": 607,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "ENG_name": "Corecut Dagger",
+    "name": "切髓匕首",
+    "source": "TalDoreiCampaignSettingReborn",
+    "page": 195,
+    "baseItem": "匕首|PHB",
+    "type": "M",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "curse": true,
+    "weight": 1,
+    "weaponCategory": "简易",
+    "property": [
+      "F",
+      "L",
+      "T"
+    ],
+    "range": "20/60",
+    "dmg1": "1d4",
+    "dmgType": "P",
+    "bonusWeapon": "+1",
+    "entries": [
+      "这把黑暗金属制成的刀刃弯曲成一个邪恶的钩形。使用这把魔法武器进行攻击和伤害骰时，你获得+1的加值。当你使用这个武器命中攻击时，你可以花费1个生命骰来额外造成{@damage 3d6}的暗蚀伤害。",
+      {
+        "ENG_name": "Curse",
+        "name": "诅咒",
+        "type": "entries",
+        "entries": [
+          "这件武器是被诅咒的，这个事实只有在对武器施放了{@spell 鉴定术}法术或者你对它进行共鸣时才会被揭示。对匕首进行共鸣会使你被诅咒，直到你被{@spell 移除诅咒}法术或类似的魔法解除诅咒；丢弃匕首无法结束诅咒。在被诅咒期间，每当你获得魔法治疗时，你必须消耗1个生命骰来恢复生命值。如果你在任何时候用尽了所有生命骰，你就会死亡。"
+        ]
+      }
+    ]
+  }
+]

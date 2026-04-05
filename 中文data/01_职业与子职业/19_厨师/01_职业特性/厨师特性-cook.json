@@ -1,0 +1,309 @@
+{
+    "classFeature": [
+        {
+            "ENG_name": "Cook's Bag",
+            "name": "厨包",
+            "source": "Cook",
+            "className": "厨师",
+            "classSource": "Cook",
+            "level": 1,
+            "entries": [
+                "在1级时，你制作了一个厨包，这个厨包不仅能魔法般地保存你的餐食（如下所述），还能保存烹饪它们所需的原料。",
+                "每30天，你必须补充一次原料。当你这样做时，你可以从市场购买价值10 GP的食物，或者你可以花费8小时从周边环境搜寻食物。",
+                "如果你弄丢了厨包，你可以通过消耗总价值 100GP 的皮革、宝石和其他原料来制作一个新的。制作新厨包需要8小时。"
+            ]
+        },
+        {
+            "ENG_name": "Morsels",
+            "name": "餐食",
+            "source": "Cook",
+            "className": "厨师",
+            "classSource": "Cook",
+            "level": 1,
+            "entries": [
+                "多年厨艺让你深谙：每一道餐食里，都藏着一口至臻滋味—— 这一口中，所有食材相融，化作独一无二的妙味。你已学会依食材特性，为这口妙味注入魔法效应；任何食用你所制餐食的生物，都会获得对应的魔法效应。",
+                "从本特性末尾列表中选择三个你选择的餐食。这些是你能够准备的餐食。一个生物同时只能受到一种餐食的效应影响。如果一个生物正受到一种餐食的效应影响，而他们摄入了另一种餐食，则原有效应结束。",
+                "当你升级时，你可以根据厨师表学习如何准备额外种类的餐食。每次升级时，你可以将一个已知的餐食替换为另一个不同的餐食。",
+                "你可以在每次短休或长休时烹饪等同于你体质调整值数量的餐食。你可以多次烹饪同一种类型的餐食。所有餐食都储存在你的{@classFeature 厨包|厨师|Cook|1}中，极简袋内的餐食在取出超过6秒或下次烹饪餐食时就会过期。",
+                "你可以使用你的动作将餐食喂给一个生物。当你这样做时，你将手伸入你的{@classFeature 厨包|厨师|Cook|1}中，取出餐食，并将其喂给你能接触到的清醒生物。他们会立即吞下它。你必须有一只空闲的手来喂餐食。",
+                "{@bold 豁免检定。} 你的某些餐食需要目标进行一次豁免检定以抵抗效应。豁免检定的DC计算如下：",
+                {
+                    "ENG_name": "Morsel",
+                    "name": "餐食",
+                    "type": "abilityDc",
+                    "attributes": [
+                        "con"
+                    ]
+                },
+                "没有嘴或进食孔的生物仍会受到你的餐食影响。仅仅接触你的餐食就会产生弱化效应。但是如果一个生物无法吞食你的餐食，它在对抗餐食效应时进行的任何豁免检定都具有优势。",
+                "{@bold 1级餐食：} {@optfeature 杏仁奶|Cook}, {@optfeature 砂锅胡萝卜|Cook}, {@optfeature 臭牛杂|Cook}, {@optfeature 特调冰奶油|Cook}, {@optfeature 硬面包|Cook}, {@optfeature 草本灰茶|Cook}, {@optfeature 活力果汁|Cook}, {@optfeature 浓缩蛋白质|Cook}, {@optfeature 烟熏排骨|Cook}, {@optfeature 香辣胡椒|Cook}, {@optfeature 糖晶|Cook}",
+                "{@bold 7级餐食：} {@optfeature 香炖兔肉|Cook}, {@optfeature 黄油鳟鱼|Cook}, {@optfeature 烤雉鸡翅|Cook}, {@optfeature 蜘蛛卵|Cook}, {@optfeature 粗麦硬粥|Cook}",
+                "{@bold 11级餐食：} {@optfeature 洋甘菊茶|Cook}, {@optfeature 静神叶|Cook}, {@optfeature 灵体孢子|Cook}, {@optfeature 星触瓜子|Cook}, {@optfeature 酸甜甜菜|Cook}",
+                "{@bold 15级餐食：} {@optfeature 水煮龙尾|Cook}, {@optfeature 多头蛇之舌|Cook}, {@optfeature 元素派|Cook}",
+                "{@bold 副厨餐食:} {@optfeature 糖霜葡萄|Cook}, {@optfeature 烈性麦酒|Cook}, {@optfeature 蜜汁鲜鱼|Cook}, {@optfeature 松仁酱|Cook}",
+                "{@bold 炊事长餐食：} {@optfeature 恶臭孢子|Cook}, {@optfeature 膨胀豆|Cook}, {@optfeature 惊颤咖啡|Cook}, {@optfeature 脂润燕麦|Cook}",
+                "{@bold 简餐快厨餐食：} {@optfeature 油腻酸粥|Cook}, {@optfeature 炎硝盐|Cook}, {@optfeature 腐蒜金枪鱼|Cook}, {@optfeature 腐臭洋葱|Cook}",
+                "{@bold 酿酒大师餐食：} {@optfeature 幽暗地域私酿|Cook}, {@optfeature 伏特加冰沙|Cook}, {@optfeature 狱火威士忌|Cook}, {@optfeature 天使之吻|Cook}"
+            ]
+        },
+        {
+            "ENG_name": "Smelling Salts",
+            "name": "醒神嗅盐",
+            "source": "Cook",
+            "className": "厨师",
+            "classSource": "Cook",
+            "level": 1,
+            "entries": [
+                "在1级时，你调配出一款香料合剂，其浓烈刺鼻的气息足以将生物从恍惚迷乱中唤醒。你可以使用一个附赠动作选择一个你能接触到的生物。你将香料在该生物的鼻子下挥动，它可以立刻针对自身当前的一种状态重新进行豁免，成功则终止该状态。该状态可以是{@condition 魅惑}或{@condition 恐慌}状态。"
+            ]
+        },
+        {
+            "ENG_name": "Expertise",
+            "name": "专精",
+            "source": "Cook",
+            "className": "厨师",
+            "classSource": "Cook",
+            "level": 2,
+            "entries": [
+                "在2级时，选择两项你的技能熟练，或一项你的技能熟练和你对{@item 厨师工具|PHB}的熟练。你的熟练加值在任何使用这两项熟练之一的属性检定中翻倍。"
+            ]
+        },
+        {
+            "ENG_name": "Cook Archetype",
+            "name": "厨师原型",
+            "source": "Cook",
+            "className": "厨师",
+            "classSource": "Cook",
+            "level": 3,
+            "entries": [
+                "在 3 级时，你可选择一种职业原型，以此展现你的厨艺造诣：副厨、炊事官、快厨、酿酒大师、魔物料理师。你选择的原型会在3级、6级、10级、14级和18级时赋予你特性。"
+            ]
+        },
+        {
+            "ENG_name": "Ability Score Improvement",
+            "name": "属性值提升",
+            "source": "Cook",
+            "className": "厨师",
+            "classSource": "Cook",
+            "level": 4,
+            "entries": [
+                "当你达到4级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+                "如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+            ]
+        },
+        {
+            "ENG_name": "Rotund Reflection",
+            "name": "圆肚回弹",
+            "source": "Cook",
+            "className": "厨师",
+            "classSource": "Cook",
+            "level": 5,
+            "entries": [
+                "在5级时，你获得击退攻击你的敌人的能力。你的肚子极为重要，而你已将其锤炼得坚韧且略带弹性。当一个大型或更小的生物在你5尺范围内以近战攻击命中你时，你可以使用你的反应迫使该生物进行一次对抗你的餐食豁免DC的敏捷豁免检定。豁免失败时，它的速度变为0直到回合结束，并且你可以将他它击退10尺或者击倒{@condition 倒地}（由你选择）。"
+            ]
+        },
+        {
+            "ENG_name": "Cook Archetype Feature",
+            "name": "厨师原型特性",
+            "source": "Cook",
+            "className": "厨师",
+            "classSource": "Cook",
+            "level": 6,
+            "entries": [
+                "在6级时，你从你的{@classFeature 厨师原型|厨师|Cook|3}获得一个额外特性。"
+            ]
+        },
+        {
+            "ENG_name": "Order Up",
+            "name": "即刻出餐",
+            "source": "Cook",
+            "className": "厨师",
+            "classSource": "Cook",
+            "level": 7,
+            "entries": [
+                "从7级开始，当你在长休期间制作餐食时，你可以制作等同于你体质属性调整值数量的额外餐食，这些额外餐食只能是没有先决条件的餐食。"
+            ]
+        },
+        {
+            "ENG_name": "Smelling Salts Improved",
+            "name": "改良版醒神嗅盐",
+            "source": "Cook",
+            "className": "厨师",
+            "classSource": "Cook",
+            "level": 7,
+            "entries": [
+                "在7级时，你为{@classFeature 醒神嗅盐|厨师|Cook|1}特性选择的状态可以是{@condition 震慑}状态。"
+            ]
+        },
+        {
+            "ENG_name": "Ability Score Improvement",
+            "name": "属性值提升",
+            "source": "Cook",
+            "className": "厨师",
+            "classSource": "Cook",
+            "level": 8,
+            "entries": [
+                "当你达到第8级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
+                "如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+            ]
+        },
+        {
+            "ENG_name": "Expertise",
+            "name": "专精",
+            "source": "Cook",
+            "className": "厨师",
+            "classSource": "Cook",
+            "level": 9,
+            "entries": [
+                "在9级时，你可以选择两项熟练（技能或{@item 厨师工具|PHB}）来获得你的{@classFeature 专精|厨师|Cook|2}特性增益。"
+            ]
+        },
+        {
+            "ENG_name": "Iron Stomach",
+            "name": "钢铁肠胃",
+            "source": "Cook",
+            "className": "厨师",
+            "classSource": "Cook",
+            "level": 9,
+            "entries": [
+                "在9级时，毕生遍尝万般食材的经历，早已让你百无禁忌、百毒不侵项。你对所有需要服用的毒药和{@condition 中毒}状态免疫。"
+            ]
+        },
+        {
+            "ENG_name": "Cook Archetype Feature",
+            "name": "厨师原型特性",
+            "source": "Cook",
+            "className": "厨师",
+            "classSource": "Cook",
+            "level": 10,
+            "entries": [
+                "在10级时，你从你的{@classFeature 厨师原型|厨师|Cook|3}获得一个额外特性。"
+            ]
+        },
+        {
+            "ENG_name": "Order Up Improved",
+            "name": "强化即刻出餐",
+            "source": "Cook",
+            "className": "厨师",
+            "classSource": "Cook",
+            "level": 11,
+            "entries": [
+                "在11级时，你可以在短休以及长休期间通过你的{@classFeature 即刻出餐|厨师|Cook|7}特性制作额外的餐食。"
+            ]
+        },
+        {
+            "ENG_name": "Ability Score Improvement",
+            "name": "属性值提升",
+            "source": "Cook",
+            "className": "厨师",
+            "classSource": "Cook",
+            "level": 12,
+            "entries": [
+                "当你达到第12级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
+                "如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+            ]
+        },
+        {
+            "ENG_name": "Smelling Salts Improved",
+            "name": "改良版醒神嗅盐",
+            "source": "Cook",
+            "className": "厨师",
+            "classSource": "Cook",
+            "level": 13,
+            "entries": [
+                "在13级时，你的{@classFeature 醒神嗅盐|厨师|Cook|1}特性所选的状态可以是{@condition 麻痹}状态。"
+            ]
+        },
+        {
+            "ENG_name": "Cook Archetype Feature",
+            "name": "厨师原型特性",
+            "source": "Cook",
+            "className": "厨师",
+            "classSource": "Cook",
+            "level": 14,
+            "entries": [
+                "在14级时，你从你的{@classFeature 厨师原型|厨师|Cook|3}获得一个额外特性。"
+            ]
+        },
+        {
+            "ENG_name": "Soul of Food",
+            "name": "食之魂灵",
+            "source": "Cook",
+            "className": "厨师",
+            "classSource": "Cook",
+            "level": 15,
+            "entries": [
+                "在15级时，你已将自身的生命之力与世间滋养万物的能量融为一体。你可以用此特性施放一次{@spell 造粮术|PHB}，并在完成一次长休后恢复该能力。当你这样做时，你会创造出价值 100GP 的食物，这些食物绝非平淡无味，而是风味绝佳、适口美味。",
+                "此外，如果你没有足够的食材来创造餐食，你会在其过程中召唤出必要的食材。"
+            ]
+        },
+        {
+            "ENG_name": "Ability Score Improvement",
+            "name": "属性值提升",
+            "source": "Cook",
+            "className": "厨师",
+            "classSource": "Cook",
+            "level": 16,
+            "entries": [
+                "当你达到16级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+                "如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+            ]
+        },
+        {
+            "ENG_name": "Fulfilling Meal",
+            "name": "饱足餐点",
+            "source": "Cook",
+            "className": "厨师",
+            "classSource": "Cook",
+            "level": 17,
+            "entries": [
+                "在17级时，每当你向曾与你共同长休（包括你自己）的生物喂食餐食时，你可以使餐食的效应持续时间翻倍。"
+            ]
+        },
+        {
+            "ENG_name": "Smelling Salts Improved",
+            "name": "改良版醒神嗅盐",
+            "source": "Cook",
+            "className": "厨师",
+            "classSource": "Cook",
+            "level": 17,
+            "entries": [
+                "在17级时，你的{@classFeature 醒神嗅盐|厨师|Cook|1}特性所选择的生物在重复进行豁免时具有优势。"
+            ]
+        },
+        {
+            "ENG_name": "Cook Archetype Feature",
+            "name": "厨师原型特性",
+            "source": "Cook",
+            "className": "厨师",
+            "classSource": "Cook",
+            "level": 18,
+            "entries": [
+                "在18级时，你从你的{@classFeature 厨师原型|厨师|Cook|3}获得一个额外特性。"
+            ]
+        },
+        {
+            "ENG_name": "Ability Score Improvement",
+            "name": "属性值提升",
+            "source": "Cook",
+            "className": "厨师",
+            "classSource": "Cook",
+            "level": 19,
+            "entries": [
+                "当你达到19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+                "如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+            ]
+        },
+        {
+            "ENG_name": "Leftovers",
+            "name": "剩菜",
+            "source": "Cook",
+            "className": "厨师",
+            "classSource": "Cook",
+            "level": 20,
+            "entries": [
+                "在20级时，当你掷先攻时若没有剩余餐食，你会在你的{@classFeature 厨包|厨师|Cook|1}中直接召唤一个你知道如何准备的餐食。"
+            ]
+        }
+    ]
+}

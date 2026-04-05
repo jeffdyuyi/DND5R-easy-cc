@@ -1,0 +1,15 @@
+[
+  {
+    "ENG_name": "Vox Seeker",
+    "name": "觅音师",
+    "source": "EGW",
+    "page": 270,
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "这个发条装置类似于一个餐盘大小的金属蟹。每次给这个装置上紧发条时，都允许它行动1分钟，至多10分钟。在运行时，该物品使用相应的{@creature 觅音师|EGW}资料卡。这个自动机在DM的控制之下。一个觅音师生命值降低到0后便会被摧毁。"
+    ],
+    "valueReference": 100,
+    "type": "W"
+  }
+]

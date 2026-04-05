@@ -1,0 +1,37 @@
+[
+  {
+    "ENG_name": "Quaal's Feather Token, Tree",
+    "name": "夸尔羽符，树",
+    "source": "XDMG",
+    "page": 290,
+    "srd52": "羽符，树",
+    "basicRules2024": true,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这枚物件看上去像一根羽毛。",
+      "要使用这枚羽符，你必须身处室外。你可以执行{@action 魔法|XPHB}动作来用羽符触碰地面上的未占据空间。羽符将消失，取而代之的是该地长出一棵非魔法性的橡树。这棵树高60尺，树干直径5尺，顶端的树冠以20尺半径向外延伸。"
+    ],
+    "lootTables": [
+      "奥秘 - 非普通|XDMG",
+      "器具 - 非普通|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Quaals Feather Token (Tree).webp"
+          },
+          "width": 576,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

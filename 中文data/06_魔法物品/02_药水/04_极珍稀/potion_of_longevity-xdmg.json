@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Potion of Longevity",
+    "name": "延寿药水",
+    "source": "XDMG",
+    "page": 288,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-DotSC"
+    ],
+    "type": "P|XPHB",
+    "rarity": "very rare",
+    "weight": 0.5,
+    "entries": [
+      "当你饮下这瓶药水时，你的生理年龄减少{@dice 1d6 + 6}年，最低降至13岁。此后每当你再次饮下延寿药水时，都会累计10%的概率让你的年龄增加{@dice 1d6 + 6}年，而非减少。",
+      "一颗违反常理般跳动着的微型心脏悬浮在琥珀色的药液中。这些成分将在药水被打开时消失。"
+    ],
+    "lootTables": [
+      "奥秘 - 极珍稀|XDMG"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "translator": "不全书",
+    "valueReference": 20000
+  }
+]

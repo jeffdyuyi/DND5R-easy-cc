@@ -1,0 +1,76 @@
+[
+  {
+    "ENG_name": "Net",
+    "name": "月蚀捕网",
+    "source": "CRCotN",
+    "page": 216,
+    "srd": true,
+    "basicRules": true,
+    "referenceSources": [
+      "ToA"
+    ],
+    "reprintedAs": [
+      {
+        "uid": "捕网|XPHB",
+        "tag": "item"
+      }
+    ],
+    "edition": "classic",
+    "type": "R",
+    "rarity": "very rare",
+    "weight": 3,
+    "value": 100,
+    "weaponCategory": "martial",
+    "property": [
+      "S",
+      "T"
+    ],
+    "range": "5/15",
+    "net": true,
+    "weapon": true,
+    "entries": [
+      "这件魔法武器颜色暗淡，呈锈迹斑斑，或者有钌元素的脉络贯穿其中。当这件武器在你身上时，你将获得以下好处：",
+      {
+        "type": "list",
+        "items": [
+          "你可以在水中呼吸。",
+          "你的游泳速度等同于你的步行速度。"
+        ]
+      },
+      {
+        "ENG_name": "Ruidium Strike",
+        "name": "月蚀打击",
+        "type": "entries",
+        "entries": [
+          "被这把武器击中的生物额外承受{@damage 2d6}心灵伤害。"
+        ]
+      },
+      {
+        "ENG_name": "Ruidium Corruption",
+        "name": "月蚀腐化",
+        "type": "entries",
+        "entries": [
+          "当你使用这件武器进行攻击检定时掷出1，你必须进行一次{@dc 20}的魅力豁免检定。若豁免失败，你将获得1级{@condition 力竭}状态。如果你还没有受到镭污染，那么在这次豁免失败时你将会受到污染。"
+        ]
+      },
+      {
+        "ENG_name": "If Ruidium Is Destroyed",
+        "name": "如果月蚀矿被摧毁",
+        "type": "entries",
+        "entries": [
+          "如果阿波西昂被杀死或得到救赎，艾桑椎亚中的所有銣瞬间被摧毁，銣武器会变成一个{@item +2 武器}。"
+        ]
+      }
+    ],
+    "namePrefix": "月蚀",
+    "reqAttune": true,
+    "bonusWeapon": "+2",
+    "modifySpeed": {
+      "equal": {
+        "swim": "走"
+      }
+    },
+    "_isVariant": true,
+    "valueReference": 40000
+  }
+]

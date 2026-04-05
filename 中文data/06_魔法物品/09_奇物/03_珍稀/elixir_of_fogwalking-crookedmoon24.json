@@ -1,0 +1,42 @@
+[
+  {
+    "ENG_name": "Elixir of Fogwalking",
+    "name": "踏雾灵药",
+    "source": "CrookedMoon24",
+    "page": 614,
+    "type": "P|XPHB",
+    "rarity": "rare",
+    "entries": [
+      "饮下这瓶药水后，你的呼吸化作缭绕浓雾。在接下来的10分钟内，雾气和烟尘不会阻碍你的视线，你可以施展{@spell 云雾术|XPHB}至多三次（无需{@status 专注|XPHB}），并且当你在雾气区域开始或结束你的传送，你就可以施展{@spell 迷踪步|XPHB}至多三次。这个瓶子有一个像鹅卵石般的底座。玻璃在顶部附近变宽，然后再次变窄成一个铁帽，形似一个提灯。里面的液体是浑浊的灰色。",
+      {
+        "ENG_name": "Heightened Potency",
+        "name": "强效",
+        "type": "entries",
+        "entries": [
+          "药水的持续时间变为1小时，并且当你使用此药水施展{@spell 迷踪步|XPHB}时，你还会获得{@variantrule 抗性|XPHB}对钝击、穿刺和挥砍伤害的抗性，直至你的下一回合开始。"
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "云雾术|XPHB",
+      "迷踪步|XPHB"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Elixir%20of%20Fogwalking.webp"
+          },
+          "width": 533,
+          "height": 1200,
+          "credit": "Margarita Bourkova"
+        }
+      ]
+    }
+  }
+]

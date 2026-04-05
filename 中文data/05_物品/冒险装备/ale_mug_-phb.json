@@ -1,0 +1,20 @@
+[
+  {
+    "name": "麦酒（马克杯）",
+    "ENG_name": "Ale (mug)",
+    "source": "PHB",
+    "page": 158,
+    "type": "FD",
+    "rarity": "none",
+    "value": 4,
+    "basicRules": true,
+    "miscTags": [
+      "CNS"
+    ],
+    "reprintedAs": [
+      "麦酒（马克杯）|XPHB"
+    ],
+    "srd": true,
+    "translator": "不全书"
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "ENG_name": "Tea Weird",
+    "name": "茶诡",
+    "source": "GriffonsSaddlebag2",
+    "page": 174,
+    "tier": "次要",
+    "rarity": "common",
+    "wondrous": true,
+    "sentient": true,
+    "entries": [
+      "这个微型的智能水元素碎片被魅惑了，且对泡茶有着无尽的渴望。当给予它一片树叶或其他可能的茶料时，它的液态形体会愉快地咕噜作响，并开始浸泡茶料，魔法般地将周围的水加热到最理想的冲泡温度。它只会使用它选择的材料，并能控制是否让自己具有潮湿的触感。茶诡可以占据最多1加仑的水体，或最少1盎司。任何被茶诡控制的水在持续时间内都具有魔法性质。",
+      "茶诡被视为魔法物品而非生物。它具有5尺移动速度，可以悬浮至离地面5尺高。它的护甲等级为10，具有10生命值，并且具有所有伤害类型的抗性。如果给予茶诡至少1盎司（约合30毫升）的水，它就能恢复所有生命值。饮用整个茶诡对你无害，但会摧毁该物品。",
+      {
+        "ENG_name": "Sentience",
+        "name": "智能",
+        "type": "entries",
+        "entries": [
+          "茶诡是一个混乱善良的智能物品，具有3智力，8感知，6魅力。它具有听觉和{@sense 黑暗视觉}至60尺范围。它不能说话或阅读，但能理解{@language 原初语||水族语}和{@language 通用语}。"
+        ]
+      },
+      {
+        "ENG_name": "Personality",
+        "name": "个性",
+        "type": "entries",
+        "entries": [
+          "茶诡致力于泡茶。它会愉快地收集水分，用新鲜原料进行浸泡，然后将自己与新泡好的茶分离，把茶倒入杯子或类似器皿中。它会不惜一切代价避免战斗，它喜欢待在杯子、水壶或友好生物的口袋里休息。"
+        ]
+      }
+    ],
+    "lootTables": [
+      "魔法物品表 A1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Tea-Weird.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

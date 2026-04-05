@@ -1,0 +1,282 @@
+{
+  "ENG_name": "Barrow Guard",
+  "name": "陵墓守卫",
+  "shortName": "陵墓守卫",
+  "source": "CrookedMoon14",
+  "className": "战士",
+  "classSource": "PHB",
+  "page": 78,
+  "reprintedAs": [
+    "陵墓守卫|战士|XPHB|crookedmoon24"
+  ],
+  "edition": "classic",
+  "subclassFeatures": [
+    {
+      "ENG_name": "Barrow Guard",
+      "name": "陵墓守卫",
+      "source": "CrookedMoon14",
+      "page": 78,
+      "className": "战士",
+      "classSource": "PHB",
+      "subclassShortName": "陵墓守卫",
+      "subclassSource": "CrookedMoon14",
+      "level": 3,
+      "entries": [
+        "{@i 驾驭坟墓之力}",
+        "陵墓守卫是驾驭死亡力量的战士，他们承载着通常为生者所禁忌的灵体能量。一些陵墓守卫是死而复生之人，这或是通过魔法奇迹，又或是源于诸神的反复无常。另一些则矗立在神圣墓穴的入口，随时准备击退任何妄图亵渎亡者之人。无论其起源如何，这些坚忍的哨兵皆不关心生者事务。他们是异于常人的超然存在，恪守着墓穴守护者的职能，确保亡者——无论生前是英雄还是受害者——皆能安息。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "死亡骑士|战士|PHB|陵墓守卫|CrookedMoon14|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Death Knight",
+      "name": "死亡骑士",
+      "source": "CrookedMoon14",
+      "page": 78,
+      "className": "战士",
+      "classSource": "PHB",
+      "subclassShortName": "陵墓守卫",
+      "subclassSource": "CrookedMoon14",
+      "level": 3,
+      "entries": [
+        "你体内寄宿着早已逝去之灵的残留意志，它们的知识与见闻赋予你死灵之力。这股力量以尸鬼骰的形式呈现，驱动着你从该子职业获得的各项能力。陵墓守卫尸鬼骰表展示了你在达到特定战士等级后的尸鬼骰大小与数值。",
+        {
+          "type": "table",
+          "caption": "陵墓守卫尸鬼骰",
+          "colLabels": [
+            "战士等级",
+            "骰子大小",
+            "数值"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-2 text-center",
+            "col-2 text-center"
+          ],
+          "rows": [
+            [
+              "3rd",
+              "{@dice D6}",
+              "4"
+            ],
+            [
+              "5th",
+              "{@dice D8}",
+              "6"
+            ],
+            [
+              "9th",
+              "{@dice D8}",
+              "8"
+            ],
+            [
+              "11th",
+              "{@dice D10}",
+              "8"
+            ],
+            [
+              "13th",
+              "{@dice D10}",
+              "10"
+            ],
+            [
+              "17th",
+              "{@dice D12}",
+              "12"
+            ]
+          ]
+        },
+        "你的部分能力会消耗尸鬼骰，如特性描述中所指定，且当你所有的尸鬼骰都已消耗时，你将无法使用需要消耗骰子的能力。",
+        "当你完成一次短休时，你恢复一个消耗的尸鬼骰，当你完成一次长休时，你恢复所有消耗的尸鬼骰。",
+        "你的任何能力的豁免DC为8加上你的体质调整值和熟练加值。",
+        {
+          "ENG_name": "Dark Rider",
+          "name": "幽冥骑士",
+          "type": "entries",
+          "entries": [
+            "作为一个附赠动作，你召唤一匹只有你能乘骑的幽灵战马。该战马使用战马数据卡，但其生物类型为不死生物，具有对钝击、穿刺和挥砍伤害的抗性，且只能执行{@action 疾走}、{@action 撤离}和{@action 回避}动作。当战马执行{@action 疾走}动作时，你可以消耗并投掷一个尸鬼骰。在该动作的移动期间，战马的速度增加相当于掷骰数值5倍的尺数。该战马会在1小时后、生命值降至0时、你陷入{@condition 失能}状态时或你死亡时消失。",
+            "一旦你执行了此附赠动作，直到你完成一次短休或长休前，你都无法再次执行，除非你消耗一个尸鬼骰（无需动作）来恢复它的使用次数。"
+          ]
+        },
+        {
+          "ENG_name": "Grave Guard",
+          "name": "守墓陵卫",
+          "type": "entries",
+          "entries": [
+            "当你受到伤害时，你可以使用你的反应来消耗并投掷一个尸鬼骰。将你受到的伤害缩小掷骰数值加上你的体质调整值。"
+          ]
+        },
+        {
+          "ENG_name": "Soul Reaper",
+          "name": "灵魂收割",
+          "type": "entries",
+          "entries": [
+            "当你执行{@action 攻击}动作时，你可以放弃一次攻击来魔法性地召唤幽灵之手环绕你60尺内的一个生物。消耗并投掷一枚尸鬼骰。目标必须进行一次力量豁免检定。豁免失败时，它受到等于尸鬼骰掷骰结果加上你体质调整值的暗蚀伤害，并且陷入{@condition 受擒}状态（逃脱DC=你的死亡骑士法力豁免DC）持续1分钟。豁免成功时，它仅受到一半伤害。"
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Fighter/Death%20Knight.webp"
+    },
+    {
+      "ENG_name": "Siphoning Souls",
+      "name": "摄魂夺魄",
+      "source": "CrookedMoon14",
+      "page": 79,
+      "className": "战士",
+      "classSource": "PHB",
+      "subclassShortName": "陵墓守卫",
+      "subclassSource": "CrookedMoon14",
+      "level": 7,
+      "header": 2,
+      "entries": [
+        "你学会捕捉灵魂逝去时流溢的精华，从中汲取知识和技艺。你获得以下增益。",
+        {
+          "ENG_name": "Mortal Coil",
+          "name": "尘世残痕",
+          "type": "entries",
+          "entries": [
+            "当一个不是构装体或不死生物的仇敌在你30尺内死亡时，你可以使用你的反应来重获一个消耗的尸鬼骰。"
+          ]
+        },
+        {
+          "ENG_name": "Whisper of the Departed",
+          "name": "逝者低语",
+          "type": "entries",
+          "entries": [
+            "当你进行一次属性检定时，你可以消耗并掷一颗亡灵骰，并将掷出的数值添加到全部。"
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Fighter/Siphoning%20Souls.webp"
+    },
+    {
+      "ENG_name": "Tomb Castellan",
+      "name": "镇墓使",
+      "source": "CrookedMoon14",
+      "page": 79,
+      "className": "战士",
+      "classSource": "PHB",
+      "subclassShortName": "陵墓守卫",
+      "subclassSource": "CrookedMoon14",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "你的死亡骑士特性通过以下方式得到提升。",
+        {
+          "ENG_name": "Phantom Charger",
+          "name": "幻影战骑",
+          "type": "entries",
+          "entries": [
+            "你的黑暗骑兵法力的幽灵战马现在忽略{@variantrule 困难地形|PHB}。此外，当你的坐骑执行{@action 疾走|PHB}、{@action 撤离|PHB}或{@action 回避|PHB}动作时，你可以消耗并掷一颗尸鬼骰。你的坐骑魔法传送到你能看见的坐骑60尺内的一个未占据空间（如果你正在骑乘，则与你一同传送）。当坐骑出现时，你选择的每个在坐骑10尺内的生物必须进行一次体质豁免检定，豁免失败则受到等于尸鬼骰掷骰数值加上你的体质调整值的暗蚀伤害，豁免成功则受到一半伤害。"
+          ]
+        },
+        {
+          "ENG_name": "Death Knell",
+          "name": "丧钟",
+          "type": "entries",
+          "entries": [
+            "当你使用守墓陵卫能力来响应一个生物对你造成的伤害时，该生物会受到等于该能力所减少伤害数值一半的心灵伤害。"
+          ]
+        },
+        {
+          "ENG_name": "Spectral Shrieking",
+          "name": "幽声尖啸",
+          "type": "entries",
+          "entries": [
+            "当一个被你的灵魂收割者法力{@condition 受擒|PHB}的生物开始其回合时，它受到等于你{@variantrule 熟练|PHB|熟练加值}的心灵伤害。当此发生时，你可以使用一个{@variantrule 反应|PHB}来消耗并投掷一个尸鬼骰，将掷出的数值加到伤害上。"
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Fighter/Tomb%20Castellan.webp"
+    },
+    {
+      "ENG_name": "Grave Lord",
+      "name": "冥墓尊主",
+      "source": "CrookedMoon14",
+      "page": 79,
+      "className": "战士",
+      "classSource": "PHB",
+      "subclassShortName": "陵墓守卫",
+      "subclassSource": "CrookedMoon14",
+      "level": 15,
+      "header": 2,
+      "entries": [
+        "你不再是灵体能量的单纯器皿，而是其主宰。你的能力通过以下方式得到提升。",
+        {
+          "ENG_name": "On A Pale Horse",
+          "name": "苍白之骑",
+          "type": "entries",
+          "entries": [
+            "当你使用你的黑暗骑兵能力时，除了你之外，你还可以允许一个你选择的生物骑乘这匹坐骑。此外，当你在坐骑的{@action 疾走}动作期间消耗一个尸鬼骰时，它可以像穿过{@quickref 困难地形||3}一样穿过固体物件和生物（以及任何骑手）。如果坐骑在回合结束时处于固体物件内部，它和任何骑手将受到{@damage 1d10}力场伤害并被推至最近的未占据空间。"
+          ]
+        },
+        {
+          "ENG_name": "Sepulchral Shield",
+          "name": "冢灵护盾",
+          "type": "entries",
+          "entries": [
+            "当你使用你的坟墓警卫法力时，选择一种触发的伤害类型。直到你的下个回合开始前，你对该伤害类型具有抗性（包括触发伤害）。"
+          ]
+        },
+        {
+          "ENG_name": "Death Grip",
+          "name": "死魂扼缚",
+          "type": "entries",
+          "entries": [
+            "一个被你的灵魂收割者法力{@condition 受擒}的生物将被{@condition 束缚}直到擒抱结束。"
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Fighter/Grave%20Lord.webp"
+    },
+    {
+      "ENG_name": "Might of the Necropolis",
+      "name": "幽都加冕",
+      "source": "CrookedMoon14",
+      "page": 79,
+      "className": "战士",
+      "classSource": "PHB",
+      "subclassShortName": "陵墓守卫",
+      "subclassSource": "CrookedMoon14",
+      "level": 18,
+      "header": 2,
+      "entries": [
+        "你对所传授秘密的掌控已臻化境。你获得以下增益。",
+        {
+          "ENG_name": "Eternal Vigil",
+          "name": "永夜守望",
+          "type": "entries",
+          "entries": [
+            "你不再遭受衰老的影响，无法被魔法性地变老，也不会因年老而死。此外，你不再需要空气、进食、饮品或睡眠。"
+          ]
+        },
+        {
+          "ENG_name": "Restless Dead",
+          "name": "不眠亡者",
+          "type": "entries",
+          "entries": [
+            "当你掷先攻时，如果你拥有的尸鬼骰子少于3个，你重获消耗的骰子直到你拥有3个。"
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Fighter/Might%20of%20the%20Necropolis.webp"
+    }
+  ],
+  "fluff": {
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Subclasses/Fighter_Barrowguard.webp"
+        },
+        "credit": "Lucas Torquato",
+        "width": 774,
+        "height": 1200
+      }
+    ]
+  },
+  "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclasses/Barrow%20Guard.webp"
+}

@@ -1,0 +1,48 @@
+[
+  {
+    "ENG_name": "Helm of Devil Command",
+    "name": "魔鬼指挥官头盔",
+    "source": "BGDIA",
+    "page": 223,
+    "rarity": "very rare",
+    "reqAttune": "由会说炼狱语的生物",
+    "reqAttuneTags": [
+      {
+        "languageProficiency": "炼狱语"
+      }
+    ],
+    "wondrous": true,
+    "recharge": "特殊",
+    "charges": 3,
+    "entries": [
+      "这款笨重的无眼头盔是专为{@creature 深狱炼魔}制造的，但它会魔法性的适配非炼魔佩戴者的头部大小。",
+      "佩戴此头盔期间，你可以透过不透明的头盔看到外面（如同你没戴着头盔一样）。此外，你能够知道 1000 尺内所有魔鬼的确切位置和类型。你可以通过心灵感应与范围内的单一魔鬼交流，或者你可以向范围内的所有魔鬼广播你的想法。不过接收到你想法的魔鬼并没有什么特别的方法来回应它们。",
+      "头盔有 3 发充能。以一个动作，你可以消耗1点充能来施放一次的{@spell 支配怪物}(豁免 {@dc 21} )。以此施展的法术只能影响魔鬼，且如果指定的目标不是魔鬼的话，该法术将失败，消耗的充能将被浪费。如果当你释放这个法术时，目标的魔鬼能够看见你，该魔鬼会知道你尝试过使用魔法魅惑它的事实。头盔将在它的最后一发充能被消耗后的 24 小时后回复所有的充能。",
+      "如果你不是魔鬼，在九狱中使用头盔的{@spell 支配怪物}特性有{@chance 20}的几率吸引一名{@creature 魇骑魔|MTF}，它在 {@dice 1d4} 小时内坐在{@creature 梦魇}的背上到达。魇骑魔会试图夺回头盔，如果对获得头盔有必要的话它会杀死你。如果它得到了头盔，魇骑魔会试图把头盔献给它的魔鬼主子。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "支配怪物"
+        ]
+      }
+    },
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 20000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/BGDIA/Helm of Devil Command.webp"
+          },
+          "width": 878,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

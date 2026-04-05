@@ -1,0 +1,301 @@
+{
+    "classFeature": [
+        {
+            "ENG_name": "Martial Arts",
+            "name": "武艺",
+            "source": "PHB",
+            "page": 76,
+            "srd": true,
+            "className": "武僧",
+            "classSource": "PHB",
+            "level": 1,
+            "entries": [
+                "你修行的武艺让你使用徒手打击和武僧武器时得心应手。武僧武器包括{@item 短剑|PHB|短剑}和所有{@filter 不含双手与重型属性的简易近战武器|items|source=PHB|category=基础|type=简易武器;近战武器|property=!重型;!双手}。",
+                "未着装任何护甲也没持用{@item 盾牌|PHB}时，如果你徒手或只持用武僧武器，则你发动的攻击获得下列增益：",
+                {
+                    "type": "list",
+                    "items": [
+                        "你使用徒手打击或武僧武器进行攻击时，可以用敏捷调整值代替力量调整值进行攻击检定和伤害掷骰。",
+                        "你使用徒手打击或武僧武器进行攻击时，可以选择用 {@dice d4} 骰代替原本的伤害掷骰。该骰子将随武僧职业等级的提升而增大，具体见“武僧职业表”中的“武艺”一栏。",
+                        "你使用徒手打击或武僧武器执行{@action 攻击|PHB}动作时，可以在自己回合内以一个附赠动作发动一次徒手打击。例如，如果你执行{@action 攻击|PHB}动作并使用长棍发动攻击，则你可以用附赠动作发动一次徒手打击（前提是你本回合还未使用过附赠动作）。"
+                    ]
+                }
+            ]
+        },
+        {
+            "ENG_name": "Unarmored Defense",
+            "name": "无甲防御",
+            "source": "PHB",
+            "page": 76,
+            "srd": true,
+            "className": "武僧",
+            "classSource": "PHB",
+            "level": 1,
+            "entries": [
+                "第 1 级起，在未着装任何护甲也没持用盾牌时，你的 AC 等于 10 + 你的敏捷调整值 + 你的感知调整值。"
+            ]
+        },
+        {
+            "ENG_name": "Ki",
+            "name": "气",
+            "source": "PHB",
+            "page": 76,
+            "srd": true,
+            "className": "武僧",
+            "classSource": "PHB",
+            "level": 2,
+            "entries": [
+                "从第 2 级起，你掌握了一股名为“气”的神秘能量。此后你将拥有一定数量的气作为储备。气的储备量由你的武僧等级决定，具体见“武僧职业表”中的“气点”一栏。",
+                "你可以消耗气来行使各种特性。你初始掌握三种特性：疾风连击、坚强防御与飞檐走壁。随着等级提升，你将习得更多特性。",
+                "消耗掉的气会在你完成一次短休或长休后恢复。你必须在休息期间进行至少 30 分钟的冥想才能重获消耗的气。",
+                "某些气特性需要目标进行豁免检定以抵抗其效应。豁免 DC 计算如下：",
+                "气豁免 DC = 8 + 你的熟练加值 + 你的感知调整值",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "refClassFeature",
+                            "classFeature": "疾风连击|武僧||2"
+                        },
+                        {
+                            "type": "refClassFeature",
+                            "classFeature": "坚强防御|武僧||2"
+                        },
+                        {
+                            "type": "refClassFeature",
+                            "classFeature": "飞檐走壁|武僧||2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ENG_name": "Flurry of Blows",
+            "name": "疾风连击",
+            "source": "PHB",
+            "page": 76,
+            "srd": true,
+            "className": "武僧",
+            "classSource": "PHB",
+            "level": 2,
+            "header": 2,
+            "entries": [
+                "在你的回合内执行{@action 攻击|PHB}动作后，你可以立即消耗 1 点气并以一个附赠动作发动两次徒手打击。"
+            ]
+        },
+        {
+            "ENG_name": "Patient Defense",
+            "name": "坚强防御",
+            "source": "PHB",
+            "page": 76,
+            "srd": true,
+            "className": "武僧",
+            "classSource": "PHB",
+            "level": 2,
+            "header": 2,
+            "entries": [
+                "在你的回合内，你可以消耗 1 点气，以一个附赠动作执行{@action 回避|PHB}动作。"
+            ]
+        },
+        {
+            "ENG_name": "Step of the Wind",
+            "name": "飞檐走壁",
+            "source": "PHB",
+            "page": 76,
+            "srd": true,
+            "className": "武僧",
+            "classSource": "PHB",
+            "level": 2,
+            "header": 2,
+            "entries": [
+                "在你的回合内，你可以消耗 1 点气，以一个附赠动作执行{@action 撤离|PHB}或{@action 疾走|PHB}动作，且该回合内的跳跃距离翻倍。"
+            ]
+        },
+        {
+            "ENG_name": "Unarmored Movement",
+            "name": "无甲移动",
+            "source": "PHB",
+            "page": 76,
+            "srd": true,
+            "className": "武僧",
+            "classSource": "PHB",
+            "level": 2,
+            "entries": [
+                "从第 2 级起，当你未着装护甲且未持用盾牌时，你的移动速度增加 10 尺。该加值随等级提升，见职业表。",
+                "从第 9 级起，你可以在垂直平面或水面上移动而不会坠落，前提是你在回合结束时处于稳固的表面。"
+            ]
+        },
+        {
+            "ENG_name": "Deflect Missiles",
+            "name": "拨挡飞弹",
+            "source": "PHB",
+            "page": 76,
+            "srd": true,
+            "className": "武僧",
+            "classSource": "PHB",
+            "level": 3,
+            "entries": [
+                "从第 3 级起，你可以使用反应拨挡或抓取击中你的远程武器攻击。该攻击的伤害将减少，减值为 {@dice 1d10} + 你的敏捷调整值 + 你的武僧等级。",
+                "如果伤害减至 0 且该飞弹足够小（能被单手抓住），你可以抓取它。如果你抓住了飞弹，你可以消耗 1 点气作为该反应的一部分发动一次远程攻击。该攻击视为武僧武器攻击，射程 20/60 尺。"
+            ]
+        },
+        {
+            "ENG_name": "Slow Fall",
+            "name": "轻身坠",
+            "source": "PHB",
+            "page": 76,
+            "srd": true,
+            "className": "武僧",
+            "classSource": "PHB",
+            "level": 4,
+            "entries": [
+                "从第 4 级起，当你坠落时，你可以使用反应使受到的坠落伤害减少，减值等同于你的武僧等级的五倍。"
+            ]
+        },
+        {
+            "ENG_name": "Extra Attack",
+            "name": "额外攻击",
+            "source": "PHB",
+            "page": 79,
+            "srd": true,
+            "className": "武僧",
+            "classSource": "PHB",
+            "level": 5,
+            "entries": [
+                "从第 5 级起，你在自己回合内执行{@action 攻击|PHB}动作时可以发动两次攻击而非一次。"
+            ]
+        },
+        {
+            "ENG_name": "Stunning Strike",
+            "name": "震慑拳",
+            "source": "PHB",
+            "page": 79,
+            "srd": true,
+            "className": "武僧",
+            "classSource": "PHB",
+            "level": 5,
+            "entries": [
+                "从第 5 级起，你可以干扰生物体内的气。当你以近战武器攻击命中生物时，可以消耗 1 点气迫使目标进行一次体质豁免。豁免失败者将陷入{@condition 震慑|PHB}状态，直到你的下个回合结束。"
+            ]
+        },
+        {
+            "ENG_name": "Ki-Empowered Strikes",
+            "name": "真气驻拳",
+            "source": "PHB",
+            "page": 79,
+            "srd": true,
+            "className": "武僧",
+            "classSource": "PHB",
+            "level": 6,
+            "entries": [
+                "从第 6 级起，为了克服针对非魔法攻击的伤害抗性和免疫，你的徒手打击在计算时视为魔法攻击。"
+            ]
+        },
+        {
+            "ENG_name": "Evasion",
+            "name": "反射闪避",
+            "source": "PHB",
+            "page": 79,
+            "srd": true,
+            "className": "武僧",
+            "classSource": "PHB",
+            "level": 7,
+            "entries": [
+                "从第 7 级起，你能通过敏捷的闪避避开区域性能量效应。当你受到一个允许通过敏捷豁免来减半伤害的效果影响时，如果你豁免成功则不限制受伤害，豁免失败也只受到一半伤害。"
+            ]
+        },
+        {
+            "ENG_name": "Stillness of Mind",
+            "name": "心如止水",
+            "source": "PHB",
+            "page": 79,
+            "srd": true,
+            "className": "武僧",
+            "classSource": "PHB",
+            "level": 7,
+            "entries": [
+                "从第 7 级起，你可以使用一个动作结束自身受到的一个使你陷入{@condition 魅惑|PHB}或{@condition 恐慌|PHB}状态的效果。"
+            ]
+        },
+        {
+            "ENG_name": "Purity of Body",
+            "name": "百病不侵",
+            "source": "PHB",
+            "page": 79,
+            "srd": true,
+            "className": "武僧",
+            "classSource": "PHB",
+            "level": 10,
+            "entries": [
+                "从第 10 级起，你体内的真气增强了你的免疫力，使你对毒素伤害和{@condition 中毒|PHB}状态免疫，并对所有疾病免疫。"
+            ]
+        },
+        {
+            "ENG_name": "Tongue of the Sun and Moon",
+            "name": "天语通",
+            "source": "PHB",
+            "page": 79,
+            "srd": true,
+            "className": "武僧",
+            "classSource": "PHB",
+            "level": 13,
+            "entries": [
+                "从第 13 级起，你学会了如何接触其他生物体内的气。你可以理解任何语言，且任何能理解至少一种语言的生物都能听懂你所说的话。"
+            ]
+        },
+        {
+            "ENG_name": "Diamond Soul",
+            "name": "金刚魂",
+            "source": "PHB",
+            "page": 79,
+            "srd": true,
+            "className": "武僧",
+            "classSource": "PHB",
+            "level": 14,
+            "entries": [
+                "从第 14 级起，你的真气护佑着你，使你精通所有豁免检定。",
+                "此外，如果你在一次豁免检定中失败，你可以消耗 1 点气重掷该骰子并必须使用第二次的结果。"
+            ]
+        },
+        {
+            "ENG_name": "Timeless Body",
+            "name": "不朽身",
+            "source": "PHB",
+            "page": 79,
+            "srd": true,
+            "className": "武僧",
+            "classSource": "PHB",
+            "level": 15,
+            "entries": [
+                "从第 15 级起，你体内的真气让你超脱了衰老的限制。你不再因年老而在属性上受罚，且不会被魔法手段衰老。此外你不再需要进食或饮水。"
+            ]
+        },
+        {
+            "ENG_name": "Empty Body",
+            "name": "空灵体",
+            "source": "PHB",
+            "page": 79,
+            "srd": true,
+            "className": "武僧",
+            "classSource": "PHB",
+            "level": 18,
+            "entries": [
+                "从第 18 级起，你可以使用一个动作消耗 4 点气进入 {@condition 隐形|PHB} 状态，持续 1 分钟。在此期间，你对除力场伤害外的所有伤害都具有抗性。",
+                "此外，你可以消耗 8 点气施展{@spell 星界投影|PHB}，但仅限自身且不需要材料成分。"
+            ]
+        },
+        {
+            "ENG_name": "Perfect Self",
+            "name": "超凡入圣",
+            "source": "PHB",
+            "page": 79,
+            "srd": true,
+            "className": "武僧",
+            "classSource": "PHB",
+            "level": 20,
+            "entries": [
+                "从第 20 级起，如果你在掷先攻时没有剩余的气，则重获 4 点气。"
+            ]
+        }
+    ]
+}

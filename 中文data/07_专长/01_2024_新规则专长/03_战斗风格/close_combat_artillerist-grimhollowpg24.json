@@ -1,0 +1,35 @@
+[
+    {
+        "ENG_name": "Close Combat Artillerist",
+        "name": "近战炮术师",
+        "source": "GrimHollowPG24",
+        "page": 118,
+        "category": "FS",
+        "prerequisite": [
+            {
+                "feature": [
+                    "战斗风格"
+                ]
+            }
+        ],
+        "entries": [
+            "你熟练使用火器。你获得以下增益。",
+            {
+                "ENG_name": "No Disadvantage",
+                "name": "无劣势",
+                "type": "entries",
+                "entries": [
+                    "当敌对生物在你5尺范围内时，你的远程攻击检定不会具有{@variantrule 劣势|XPHB}。"
+                ]
+            },
+            {
+                "ENG_name": "Reactive Attack",
+                "name": "反应攻击",
+                "type": "entries",
+                "entries": [
+                    "当一个生物离开你5尺范围时，你可以消耗{@variantrule 反应|XPHB}来对该生物发动一次由于火器进行的远程攻击。"
+                ]
+            }
+        ]
+    }
+]

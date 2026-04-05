@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Helm of Awareness",
+    "name": "警觉之盔",
+    "source": "EFA",
+    "page": 112,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "佩戴此头盔时，你在{@variantrule 先攻|XPHB}检定上具有{@variantrule 优势|XPHB}。"
+    ],
+    "classFeatures": [
+      "仿制魔法物品|奇械师|efa|2|efa"
+    ],
+    "valueReference": 400,
+    "type": "W"
+  }
+]

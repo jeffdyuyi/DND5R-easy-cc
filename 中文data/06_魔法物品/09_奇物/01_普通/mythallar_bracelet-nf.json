@@ -1,0 +1,15 @@
+[
+  {
+    "ENG_name": "Mythallar Bracelet",
+    "name": "密瑟拉手环",
+    "source": "NF",
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "三个由退役密瑟能核制成的小型水晶念珠串在这条皮手环上。以一个{@action 魔法|XPHB}动作，你可以从手环上摘下一颗念珠，在1分钟内获得力量（{@skill 运动|XPHB}）检定上的{@variantrule 优势|XPHB}。",
+      "一旦被摘取，珠子会立即消失。当三颗珠子都被摘取后，手镯将失去其魔法效果。"
+    ],
+    "valueReference": 100,
+    "type": "W"
+  }
+]

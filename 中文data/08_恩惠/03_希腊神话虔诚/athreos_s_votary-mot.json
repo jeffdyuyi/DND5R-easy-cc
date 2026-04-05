@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Athreos's Votary",
+    "name": "雅睿欧司的信徒",
+    "source": "MOT",
+    "page": 37,
+    "type": "Piety Trait",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "daily": {
+              "1e": [
+                "死者交谈"
+              ]
+            }
+          }
+        },
+        "ability": "wis"
+      }
+    ],
+    "entries": [
+      "{@i 虔诚值 10+ 雅睿欧司特质}",
+      "你可以使用此特性，无需施法材料，施放{@spell 死者交谈}。以此方式施放该法术后，直至完成一次长休，你无法再次使用此能力。此法术的施法属性为感知。"
+    ]
+  }
+]

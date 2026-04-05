@@ -1,0 +1,19 @@
+{
+  "ENG_name": "Heightened Spell",
+  "name": "升阶法术",
+  "source": "XPHB",
+  "page": 142,
+  "srd52": true,
+  "featureType": [
+    "MM"
+  ],
+  "consumes": {
+    "ENG_name": "Sorcery Point",
+    "name": "术法点",
+    "amount": 2
+  },
+  "entries": [
+    "当你施展一道迫使生物进行豁免的法术时，你可以消耗2术法点来使法术影响的某一名生物对此法术的豁免具有{@variantrule 劣势|XPHB}。"
+  ],
+  "translator": "不全书"
+}

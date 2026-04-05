@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Potion of Acid Resistance",
+    "name": "强酸抗性药水",
+    "source": "XDMG",
+    "page": 289,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "WttHC"
+    ],
+    "type": "P|XPHB",
+    "resist": [
+      "强酸"
+    ],
+    "rarity": "uncommon",
+    "weight": 0.5,
+    "hasRefs": true,
+    "entries": [
+      "{#itemEntry 抗性药水|XDMG}"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "valueReference": 200
+  }
+]

@@ -1,0 +1,70 @@
+[
+  {
+    "ENG_name": "Counterspy",
+    "name": "反侦术",
+    "source": "ObojimaTallGrass",
+    "page": 183,
+    "level": 2,
+    "school": "A",
+    "time": [
+      {
+        "number": 10,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 5
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一袋沙子和六根蜡烛"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你在地面上的一个点周围创造一个由蜡烛和沙子构成的复杂奥术圈，范围10尺或更小。如果在法术结束前的任何时刻，圈外的生物通过魔法或非魔法手段看到或听到你，蜡烛的火焰会改变颜色。如果使用了法术或魔法效应，你会意识到并了解其效应的范围。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Custom/Spells/Counterspy.webp"
+  }
+]

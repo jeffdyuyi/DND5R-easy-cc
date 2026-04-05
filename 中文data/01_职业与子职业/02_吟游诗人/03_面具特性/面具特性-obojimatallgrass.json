@@ -1,0 +1,213 @@
+{
+    "optionalfeature": [
+        {
+            "ENG_name": "Demon",
+            "name": "恶魔",
+            "source": "ObojimaTallGrass",
+            "page": 134,
+            "featureType": [
+                "伪装"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "ENG_name": "Bard",
+                            "name": "吟游诗人"
+                        },
+                        "subclass": {
+                            "ENG_name": "Masks",
+                            "name": "面具",
+                            "source": "ObojimaTallGrass",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "佩戴此面具时，你获得奥法记忆和魔眼属性。",
+                {
+                    "type": "list",
+                    "items": [
+                        {
+                            "ENG_name": "Arcane Memory",
+                            "name": "奥法记忆",
+                            "type": "entries",
+                            "entries": [
+                                "当你佩戴此面具时，可以使用一个动作并消耗一个1环或更高环位的法术位来魔法般地获知你指定的生物或物件是否在过去24小时内曾处于你当前位置20尺半径范围内。如果你消耗一个3环或更高环位的法术位，你会获得该生物或物件当时在那里的短暂幻象，并得知该生物或物件出现的具体时间。"
+                            ]
+                        },
+                        {
+                            "ENG_name": "Demon Eye",
+                            "name": "魔眼",
+                            "type": "entries",
+                            "entries": [
+                                "作为一个动作，你获得魔法能力，可以穿透固体物件看到15尺范围内的景象。你的视线能穿透大多数障碍，但会被1尺厚的岩石、1英寸厚的普通金属、薄铅板或3尺厚的木头或泥土阻挡。"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ENG_name": "Fish",
+            "name": "鱼",
+            "source": "ObojimaTallGrass",
+            "page": 135,
+            "featureType": [
+                "伪装"
+            ],
+            "entries": [
+                "佩戴此面具时，你获得等同于行走速度的游泳速度以及在水下呼吸的能力。此外，你知晓{@spell 水弹术|ObojimaTallGrass}和{@spell 覆潮武器|ObojimaTallGrass}法术。"
+            ]
+        },
+        {
+            "ENG_name": "Fox",
+            "name": "狐狸",
+            "source": "ObojimaTallGrass",
+            "page": 135,
+            "featureType": [
+                "伪装"
+            ],
+            "entries": [
+                "当你佩戴此面具时，你可以穿过敌对生物的空间，无论其体型如何，且其他生物的空间对你而言不是{@quickref 困难地形||3}。此外，你的AC增加1点，并且当你进行敏捷豁免检定时，你可以使用你的反应来获得该掷骰的优势。"
+            ]
+        },
+        {
+            "ENG_name": "Golem",
+            "name": "魔像",
+            "source": "ObojimaTallGrass",
+            "page": 135,
+            "featureType": [
+                "伪装"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "ENG_name": "Bard",
+                            "name": "吟游诗人"
+                        },
+                        "subclass": {
+                            "ENG_name": "College of Masks",
+                            "name": "面具学院",
+                            "source": "ObojimaTallGrass",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "当装着这个面具时，你的武器攻击在命中时额外造成{@damage 1d8}伤害。如果你是小型生物，你不会因为使用{@itemProperty H||重型}武器而在攻击检定上处于劣势。此外，你的攻击和法术对物件和建筑造成双倍伤害。"
+            ]
+        },
+        {
+            "ENG_name": "Harpy",
+            "name": "鸟妖",
+            "source": "ObojimaTallGrass",
+            "page": 135,
+            "featureType": [
+                "伪装"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "ENG_name": "Bard",
+                            "name": "吟游诗人"
+                        },
+                        "subclass": {
+                            "ENG_name": "College of Masks",
+                            "name": "面具学院",
+                            "source": "ObojimaTallGrass",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "佩戴此面具时，你获得30尺的飞行速度和对心灵伤害的抗性。"
+            ]
+        },
+        {
+            "ENG_name": "Old Man",
+            "name": "老人",
+            "source": "ObojimaTallGrass",
+            "page": 135,
+            "featureType": [
+                "伪装"
+            ],
+            "entries": [
+                "佩戴此面具时，你可以随意施放{@spell 侦测魔法}和{@spell 鉴定术}，无需消耗法术位 or 材料成分。"
+            ]
+        },
+        {
+            "ENG_name": "Protagonist",
+            "name": "主角",
+            "source": "ObojimaTallGrass",
+            "page": 135,
+            "featureType": [
+                "伪装"
+            ],
+            "entries": [
+                "当你戴着这个面具掷先攻时，你获得等于吟游诗人等级一半（向上取整）的临时生命值。以一个附赠动作，你可以将一个生物标记为你的对手，持续1分钟。在此期间，你在涉及该对手的属性检定上具有优势。此外，当你看到你的对手发动攻击时，你可以使用你的反应并消耗一次诗人激励的使用次数，掷一次诗人激励骰，将攻击检定减去骰出的数值。"
+            ]
+        },
+        {
+            "ENG_name": "Sea Urchin",
+            "name": "海胆",
+            "source": "ObojimaTallGrass",
+            "page": 135,
+            "featureType": [
+                "伪装"
+            ],
+            "entries": [
+                "佩戴此面具时，你可以使用一个附赠动作并消耗一次诗人激励，投掷诗人激励骰来治疗自己，恢复的生命值等于骰出数值加上你吟游诗人等级的一半（向上取整）。此外，你可以使用一个动作尝试使你30尺内能看见的一个生物无法行动，向其注入魔法毒素。目标必须成功通过一次体质豁免检定否则陷入{@condition 束缚}状态1分钟。在它的每个回合结束时，目标可以重复豁免检定，成功则终止效应。你可以使用此能力的次数等于你的熟练加值，完成一次长休后恢复所有使用次数。"
+            ]
+        },
+        {
+            "ENG_name": "Spirit",
+            "name": "精魄",
+            "source": "ObojimaTallGrass",
+            "page": 135,
+            "featureType": [
+                "伪装"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "ENG_name": "Bard",
+                            "name": "吟游诗人"
+                        },
+                        "subclass": {
+                            "ENG_name": "College of Masks",
+                            "name": "面具学院",
+                            "source": "ObojimaTallGrass",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "当你佩戴此面具时，你知晓{@spell 死者交谈}法术。此外，你可以消耗一次诗人激励的使用次数来暂时移动穿过灵界... (truncated)"
+            ]
+        },
+        {
+            "ENG_name": "Stone",
+            "name": "岩石",
+            "source": "ObojimaTallGrass",
+            "page": 135,
+            "featureType": [
+                "伪装"
+            ],
+            "entries": [
+                "佩戴此面具时，你获得{@skill 运动}技能的熟练项，并且你受到的所有来自非魔法攻击的钝击、穿刺和挥砍伤害减少2点。此外，佩戴面具时，你在对抗被推离、拉取或击{@condition 倒地}的属性检定和豁免检定上具有优势。"
+            ]
+        }
+    ]
+}

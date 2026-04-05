@@ -1,0 +1,61 @@
+[
+  {
+    "ENG_name": "Atlas of Endless Horizons",
+    "name": "寰宇图纂",
+    "source": "TCE",
+    "page": 120,
+    "type": "SCF",
+    "rarity": "rare",
+    "reqAttune": "由法师",
+    "reqAttuneTags": [
+      {
+        "class": "法师"
+      }
+    ],
+    "wondrous": true,
+    "weight": 3,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "focus": [
+      "法师"
+    ],
+    "entries": [
+      "这本厚重的书以深色皮革装订，上面交错镶嵌着银线，暗示着地图或图表。当被找到时，这本书包含了以下法术，且在你与其同调后对你视为法师法术：{@spell 秘法门}、{@spell 任意门}、{@spell 异界之门}、{@spell 迷踪步}、{@spell 位面转移}、{@spell 传送法阵} 和 {@spell 回返真言}。它可作为你的法术书使用。",
+      "当你持握这本书时，你可以将其作为你法师法术的法器。",
+      "书具有3发充能，且每天黎明时恢复{@dice 1d3}发已消耗的充能。你持握它时，可以通过以下方式消耗充能：",
+      {
+        "type": "list",
+        "items": [
+          "如果你花费1分钟时间研究这本书，你可以消耗1发充能来将你的一道已准备法师法术替换为书中的另一道法术。新法术必须是咒法学派的法术。",
+          "当你被一次攻击命中时，你可以使用你的反应并消耗1发充能，传送到10尺内一个你能看见且未被占据的位置。若你的新位置在攻击的攻击距离以外，那么此次攻击失手。"
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "秘法门",
+      "任意门",
+      "异界之门",
+      "迷踪步",
+      "位面转移",
+      "传送法阵",
+      "回返真言"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/TCE/Atlas of Endless Horizons.webp"
+          },
+          "credit": "Andrew Mar",
+          "width": 852,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

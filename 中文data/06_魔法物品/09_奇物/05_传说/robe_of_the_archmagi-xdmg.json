@@ -1,0 +1,74 @@
+[
+  {
+    "ENG_name": "Robe of the Archmagi",
+    "name": "大法师法袍",
+    "source": "XDMG",
+    "page": 298,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "legendary",
+    "reqAttune": "由术士、魔契师或法师",
+    "reqAttuneTags": [
+      {
+        "class": "术士"
+      },
+      {
+        "class": "魔契师"
+      },
+      {
+        "class": "法师"
+      }
+    ],
+    "wondrous": true,
+    "bonusSpellAttack": "+2",
+    "bonusSpellSaveDc": "+2",
+    "entries": [
+      "这件典雅的长袍由精美的布料制成，并以符文装饰。",
+      "着装此长袍时，你获得下列增益：",
+      {
+        "ENG_name": "Armor",
+        "name": "护甲",
+        "type": "entries",
+        "entries": [
+          "若你未着装护甲，你的基础{@variantrule 护甲等级|XPHB}为15+你的敏捷调整值。"
+        ]
+      },
+      {
+        "ENG_name": "Magic Resistance",
+        "name": "魔法抗性",
+        "type": "entries",
+        "entries": [
+          "你对抗法术和其他魔法效应时进行的豁免检定具有{@variantrule 优势|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "War Mage",
+        "name": "战法师",
+        "type": "entries",
+        "entries": [
+          "你的法术豁免DC和法术攻击加值均提升2。"
+        ]
+      }
+    ],
+    "lootTables": [
+      "奥秘 - 传说|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 200000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Robe of the Archmagi.webp"
+          },
+          "width": 1024,
+          "height": 1024
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

@@ -1,0 +1,61 @@
+[
+  {
+    "ENG_name": "Consume Mind",
+    "name": "吞食意识",
+    "source": "GrimHollowPG24",
+    "page": 189,
+    "level": 4,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一盎司其他生物大脑的一部分，必须是新鲜的或由魔法保存的"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你吞食一个死亡生物的大脑，获得其记忆。该生物必须拥有大脑且不能是亡灵。如果该生物已死亡（且未保存）超过3天，则法术失败。",
+      "直到法术结束，你可以尝试回忆一段记忆，例如家庭历史、近期事件、建筑布局、密码、生物死亡的细节以及类似的消息。要回忆一段记忆，你需采取一个{@action 魔法|XPHB}动作并进行一次使用你的施法属性调整值的属性检定。DC等于尸体的智力属性值。",
+      "一旦你采取一个{@action 魔法|XPHB}动作来回忆消息，你就无法再次尝试回忆那个特定的消息碎片。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Consume%20Mind.webp"
+  }
+]

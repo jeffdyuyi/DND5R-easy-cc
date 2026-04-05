@@ -1,0 +1,21 @@
+[
+  {
+    "ENG_name": "Blessing of Bloody Might",
+    "name": "血腥伟力祝福",
+    "source": "BMT",
+    "page": 171,
+    "type": "Blessing",
+    "entries": [
+      "你的力量值提升2，至多提升至22。",
+      {
+        "ENG_name": "Consequence",
+        "name": "代价",
+        "type": "entries",
+        "id": "304",
+        "entries": [
+          "该角色遭受狼人{@variantrule 玩家角色|MM|兽化}（见《{@book 怪物图鉴|MM}》），直至其身上的祝福结束。每个满月之夜，被诅咒的角色都会堕入狂暴之中，直至黎明时刻；在此期间，该角色成为受DM控制的NPC。"
+        ]
+      }
+    ]
+  }
+]

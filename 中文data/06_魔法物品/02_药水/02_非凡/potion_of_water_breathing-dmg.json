@@ -1,0 +1,60 @@
+[
+  {
+    "ENG_name": "Potion of Water Breathing",
+    "name": "水下呼吸药水",
+    "source": "DMG",
+    "page": 188,
+    "srd": true,
+    "referenceSources": [
+      "PotA",
+      "SKT",
+      "TftYP-TFoF",
+      "TftYP-DiT",
+      "TftYP-AtG",
+      "ToA",
+      "WDH",
+      "WDMM",
+      "GoS",
+      "OoW",
+      "DIP",
+      "SDW",
+      "DC",
+      "ToR",
+      "IDRotF",
+      "CRCotN",
+      "ToFW",
+      "CoA"
+    ],
+    "reprintedAs": [
+      "水下呼吸药水|XDMG"
+    ],
+    "type": "P",
+    "tier": "次要",
+    "rarity": "uncommon",
+    "entries": [
+      "饮用此药水后，1小时内，你获得在水下呼吸的能力。这种浑浊的绿色药水闻起来有海水的味道，其中漂浮着一个水母形状的气泡。"
+    ],
+    "lootTables": [
+      "魔法物品表B"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 200,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Potion of Water Breathing.webp"
+          },
+          "credit": "CoupleOfKooks",
+          "width": 539,
+          "height": 850
+        }
+      ]
+    }
+  }
+]

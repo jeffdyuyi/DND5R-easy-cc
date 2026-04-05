@@ -1,0 +1,22 @@
+[
+  {
+    "name": "护符",
+    "ENG_name": "Amulet",
+    "source": "PHB",
+    "page": 151,
+    "type": "SCF",
+    "rarity": "none",
+    "weight": 1,
+    "value": 500,
+    "basicRules": true,
+    "group": [
+      "圣徽"
+    ],
+    "reprintedAs": [
+      "护符|XPHB"
+    ],
+    "scfType": "holy",
+    "srd": true,
+    "translator": "不全书"
+  }
+]

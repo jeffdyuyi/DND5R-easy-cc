@@ -1,0 +1,68 @@
+[
+  {
+    "ENG_name": "Resurrection",
+    "name": "复生术",
+    "source": "XPHB",
+    "page": 312,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 7,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "小时"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一颗价值 1000+GP 的钻石，作为法术耗材",
+        "cost": 100000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你触碰一名已死，但死亡时间不超过 100 年，并非死于年老，且死亡时并非亡灵的生物，使其回生。",
+      "生物以{@variantrule 生命值|XPHB}全满的状态重生。该法术同样会中和在该生物死亡时仍在生效的毒素。该法术能治愈所有致命伤，恢复所有失去的身体部位。",
+      "死而复生是一个痛苦的体验。目标进行{@variantrule D20 检定|XPHB|D20 检定}时具有 -4 减值。目标每完成一次{@variantrule 长休|XPHB}，其减值就减少 1，直至减值变为 0。",
+      "使用该法术复活一名已死去 365 日或更久的生物会使你耗费大量精力。在你完成一次{@variantrule 长休|XPHB}前，你将无法再施展任何法术，且此时你进行的一切{@variantrule D20 检定|XPHB|D20 检定}具有{@variantrule 劣势|XPHB}。"
+    ],
+    "affectsCreatureType": [
+      "异怪",
+      "野兽",
+      "天族",
+      "构装",
+      "龙",
+      "元素生物",
+      "妖精",
+      "邪魔",
+      "巨人语",
+      "类人生物",
+      "怪兽",
+      "泥怪",
+      "植物"
+    ],
+    "miscTags": [
+      "HL"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "牧师"
+    ],
+    "display_school": "死灵系"
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "name": "爬梯(10尺)",
+    "ENG_name": "Ladder (10-foot)",
+    "source": "PHB",
+    "page": 150,
+    "type": "G",
+    "rarity": "none",
+    "weight": 25,
+    "value": 10,
+    "entries": [
+      "爬梯(10尺)"
+    ],
+    "basicRules": true,
+    "referenceSources": [
+      "CoS"
+    ],
+    "reprintedAs": [
+      "梯子|XPHB"
+    ],
+    "srd": true,
+    "translator": "不全书"
+  }
+]

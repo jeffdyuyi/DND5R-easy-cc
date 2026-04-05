@@ -1,0 +1,30 @@
+[
+  {
+    "name": "巨锤",
+    "ENG_name": "Maul",
+    "source": "PHB",
+    "page": 149,
+    "edition": "classic",
+    "type": "M",
+    "rarity": "none",
+    "weight": 10,
+    "value": 1000,
+    "weaponCategory": "martial",
+    "property": [
+      "H",
+      "2H"
+    ],
+    "dmg1": "2d6",
+    "dmgType": "B",
+    "basicRules": true,
+    "hammer": true,
+    "referenceSources": [
+      "RMBRE"
+    ],
+    "reprintedAs": [
+      "巨锤|XPHB"
+    ],
+    "srd": true,
+    "weapon": true
+  }
+]

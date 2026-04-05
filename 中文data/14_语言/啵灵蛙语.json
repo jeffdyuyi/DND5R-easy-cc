@@ -1,0 +1,9 @@
+{
+  "ENG_name": "Bullywug",
+  "name": "啵灵蛙语",
+  "source": "MM",
+  "page": 35,
+  "typicalSpeakers": [
+    "{@creature 啵灵蛙||啵灵蛙}"
+  ]
+}

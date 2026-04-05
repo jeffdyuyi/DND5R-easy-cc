@@ -1,0 +1,19 @@
+{
+  "ENG_name": "Thief",
+  "name": "盗贼",
+  "shortName": "盗贼",
+  "source": "XPHB",
+  "className": "游荡者",
+  "classSource": "XPHB",
+  "page": 137,
+  "srd52": true,
+  "basicRules2024": true,
+  "edition": "one",
+  "subclassFeatures": [
+    "盗贼|游荡者|XPHB|盗贼|XPHB|3",
+    "极效潜行|游荡者|XPHB|盗贼|XPHB|9",
+    "使用魔法装置|游荡者|XPHB|盗贼|XPHB|13",
+    "窃盗本能|游荡者|XPHB|盗贼|XPHB|17"
+  ],
+  "hasFluffImages": true
+}

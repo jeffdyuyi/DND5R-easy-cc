@@ -1,0 +1,16 @@
+[
+  {
+    "ENG_name": "Shadow Portal Scroll",
+    "name": "暗影传送门卷轴",
+    "source": "BookOfEbonTides",
+    "page": 206,
+    "type": "SC|DMG",
+    "rarity": "rare",
+    "entries": [
+      "用发光白色文字写在黑色皮甲上，一张暗影传送门卷轴会开启一个传送门作为来自妖精惑控师、地精萨满或其他阴影领域强大奥术师的请君入瓮。当卷轴被阅读时，你周围10尺内的所有生物都会被传送到阴影领域，通常靠近卷轴制作者的住所。"
+    ],
+    "miscTags": [
+      "CNS"
+    ]
+  }
+]

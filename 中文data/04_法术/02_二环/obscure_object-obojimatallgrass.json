@@ -1,0 +1,68 @@
+[
+  {
+    "ENG_name": "Obscure Object",
+    "name": "隐匿物件",
+    "source": "ObojimaTallGrass",
+    "page": 187,
+    "level": 2,
+    "school": "I",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "一个你能看见的范围内的物件变为{@condition 隐形}直到法术结束。该物件不能大于5尺立方，且不能被生物穿戴。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "miscTags": [
+      "SGT"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Custom/Spells/Obsure%20Object.webp"
+  }
+]

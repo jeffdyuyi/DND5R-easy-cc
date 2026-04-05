@@ -1,0 +1,43 @@
+[
+  {
+    "name": "受擒",
+    "ENG_name": "Grappled",
+    "source": "XPHB",
+    "page": 367,
+    "entries": [
+      "受擒状态期间，你将遭受以下这些效应。",
+      {
+        "type": "entries",
+        "entries": [
+          {
+            "ENG_name": "Speed 0",
+            "name": "速度归零",
+            "type": "entries",
+            "entries": [
+              "你的{@variantrule 速度|XPHB}变为 0，且无法被增加。"
+            ]
+          },
+          {
+            "ENG_name": "Attacks Affected",
+            "name": "攻击影响",
+            "type": "entries",
+            "entries": [
+              "除擒抱者外，你对其他任何目标进行的攻击检定都具有{@variantrule 劣势|XPHB}。"
+            ]
+          },
+          {
+            "ENG_name": "Movable",
+            "name": "带动",
+            "type": "entries",
+            "entries": [
+              "擒抱者移动时，其可以拖拽或承载你，但其每移动 1 尺都需要为此额外消耗 1 尺移动力。若你的体型为微型或你的体型小于擒抱者两级以上，擒抱者拖拽/承载你将不需要额外消耗移动力。"
+            ]
+          }
+        ]
+      }
+    ],
+    "basicRules2024": true,
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

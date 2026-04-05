@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "+2 Spiked Armor",
+    "name": "+2 钉刺甲",
+    "source": "DMG",
+    "page": 152,
+    "type": "MA",
+    "rarity": "very rare",
+    "weight": 45,
+    "value": 7500,
+    "ac": 14,
+    "armor": true,
+    "stealth": true,
+    "entries": [
+      "穿戴这件护甲时，你的AC有{=bonusAc}的加值。"
+    ],
+    "namePrefix": "+2 ",
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "+2 护甲|XDMG"
+    ],
+    "tier": "主要",
+    "bonusAc": "+2",
+    "_isVariant": true,
+    "valueReference": 40000
+  }
+]

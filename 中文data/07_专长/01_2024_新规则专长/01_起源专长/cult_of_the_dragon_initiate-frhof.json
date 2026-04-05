@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Cult of the Dragon Initiate",
+    "name": "新晋龙巫教徒",
+    "source": "FRHoF",
+    "page": 37,
+    "category": "O",
+    "languageProficiencies": [
+      {
+        "draconic": true
+      },
+      {
+        "any": 1
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Dragon's Tongue",
+        "name": "龙之舌",
+        "type": "entries",
+        "entries": [
+          "你懂得龙语。若你选取此专长时已懂得龙语，你自《玩家手册》或本书第二章的语言表中选择一门语言习得以替代龙语。"
+        ]
+      },
+      {
+        "ENG_name": "Dragon's Terror",
+        "name": "龙之威",
+        "type": "entries",
+        "entries": [
+          "你能够以{@action 魔法|XPHB}动作将恐惧灌输给一名位于你30尺内的你可见的生物。目标必须成功通过一次感知豁免（DC 8+你的感知调整值+你的{@variantrule 熟练|XPHB|熟练加值}）否则陷入{@condition 恐慌|XPHB}状态，持续至你的下个回合结束。若目标的此豁免成功或当其身上的此效应结束时，目标在24小时内免疫此效应。"
+        ]
+      },
+      {
+        "ENG_name": "Inspired by Fear",
+        "name": "饮惧为励",
+        "type": "entries",
+        "entries": [
+          "当你令一名生物陷入{@condition 恐慌|XPHB}状态且恐惧源为你时，若你没有{@variantrule 英雄激励|XPHB}，你可以获得之。此增益一经使用，直至你完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}都无法再次使用。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "ENG_name": "Charm Person",
+    "name": "魅惑类人",
+    "source": "PHB",
+    "page": 221,
+    "srd": true,
+    "basicRules": true,
+    "otherSources": [
+      {
+        "source": "RMR",
+        "page": 51
+      }
+    ],
+    "referenceSources": [
+      "RoT",
+      "CoS",
+      "SKT",
+      "TftYP-TFoF",
+      "TftYP-DiT",
+      "WDH",
+      "AZfyT",
+      "SDW",
+      "BGDIA",
+      "LR",
+      "IDRotF",
+      "CM",
+      "WBtW",
+      "KftGV",
+      "PaBTSO"
+    ],
+    "reprintedAs": [
+      "魅惑类人|XPHB"
+    ],
+    "level": 1,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你尝试魅惑施法距离内的某个你能看见的类人生物。该生物必须进行一次感知豁免。如果你或你的同伴正在和该生物战斗，则该生物进行该豁免时具有优势。如果豁免失败，则该生物被你{@condition 魅惑}至法术终止，或者直到你或你的同伴对他做出伤害行为为止。此间，被{@condition 魅惑}的生物将视你为友方且熟悉的人。法术终止后，该生物将会发觉曾被你{@condition 魅惑}过。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "使用二环或更高法术位施展该法术时，你使用的法术位每比一环高一环，法术就能多影响一个目标。而各目标之间距离不能超过 30 尺。"
+        ]
+      }
+    ],
+    "conditionInflict": [
+      "魅惑"
+    ],
+    "savingThrow": [
+      "wisdom"
+    ],
+    "affectsCreatureType": [
+      "类人"
+    ],
+    "miscTags": [
+      "SCT",
+      "SGT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "德鲁伊",
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "惑控系",
+    "display_savingThrow": [
+      "感知"
+    ]
+  }
+]

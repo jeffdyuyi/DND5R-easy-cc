@@ -1,0 +1,20 @@
+[
+  {
+    "ENG_name": "White Chromatic Rose",
+    "name": "白彩玫瑰",
+    "source": "WBtW",
+    "page": 208,
+    "resist": [
+      "寒冷"
+    ],
+    "detail1": "被霜覆盖",
+    "rarity": "rare",
+    "wondrous": true,
+    "hasRefs": true,
+    "entries": [
+      "{#itemEntry 色彩玫瑰|WBtW}"
+    ],
+    "valueReference": 4000,
+    "type": "W"
+  }
+]

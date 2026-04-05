@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Mimicloak",
+    "name": "拟身怪斗篷",
+    "source": "GriffonsSaddlebag2",
+    "page": 123,
+    "tier": "主要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这件奇特的斗篷是由幼年拟身怪的遗骸加以附魔制成的。在你穿着这件斗篷期间，你可以用一个附赠动作说出其命令语，来改变斗篷的样式、颜色与外观上的质地。斗篷的重量不会因此改变。无论斗篷的外观如何改变，这件斗篷永远只是一件拥有这些词条的斗篷，而不会真正变成其他材质。",
+      "在你穿着这件斗篷期间，你为逃脱{@action 擒抱}而进行的属性检定具有优势。每当你为让自己逃脱擒抱或摆脱束缚而进行属性检定时，斗篷的布料都将魔法性地张开尖牙利嘴来啃咬擒抱住或束缚住你的生物或物件，对其造成{@damage 1d10}穿刺伤害。"
+    ],
+    "lootTables": [
+      "魔法物品表 F2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Mimicloak.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

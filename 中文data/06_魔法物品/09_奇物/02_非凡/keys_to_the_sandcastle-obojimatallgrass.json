@@ -1,0 +1,36 @@
+[
+  {
+    "ENG_name": "Keys to the Sandcastle",
+    "name": "沙堡之钥",
+    "source": "ObojimaTallGrass",
+    "page": 171,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "charges": 50,
+    "entries": [
+      "这个附魔玩具有50充能。当你持握它时，你可以消耗1充能作为动作说出其命令语并施放{@spell 构沙术|ObojimaTallGrass}法术。",
+      "当所有玩具的充能耗尽时，它会变成一个非魔法的小饰品。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "构沙术|ObojimaTallGrass"
+        ]
+      }
+    },
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/keys-to-the-sand-castle.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 1987,
+          "height": 1987
+        }
+      ]
+    }
+  }
+]

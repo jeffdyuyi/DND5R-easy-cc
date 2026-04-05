@@ -1,0 +1,31 @@
+[
+  {
+    "name": "左轮枪",
+    "ENG_name": "Revolver",
+    "source": "DMG",
+    "page": 268,
+    "edition": "classic",
+    "type": "R",
+    "rarity": "none",
+    "weight": 3,
+    "weaponCategory": "martial",
+    "property": [
+      "AF|DMG",
+      "RLD"
+    ],
+    "dmg1": "2d8",
+    "dmgType": "P",
+    "range": "40/120",
+    "ammoType": "现代子弹",
+    "age": "现代",
+    "firearm": true,
+    "referenceSources": [
+      "WDMM"
+    ],
+    "reload": 6,
+    "reprintedAs": [
+      "左轮枪|XDMG"
+    ],
+    "weapon": true
+  }
+]

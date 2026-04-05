@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Perfect Memory",
+    "name": "完美记忆力",
+    "source": "ObojimaTallGrass",
+    "page": 231,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Util"
+    ],
+    "entries": [
+      "饮用此药水后的1小时内，你所见所闻的一切都会被完美记录在你的记忆中。你可以在24小时后回忆起这些记忆。之后，所有记忆开始消退，只有最难忘的部分保留下来。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 7|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Utility/perfect-memory.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1856,
+          "height": 1856
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

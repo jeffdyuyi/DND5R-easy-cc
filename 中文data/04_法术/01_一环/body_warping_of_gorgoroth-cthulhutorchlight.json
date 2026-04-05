@@ -1,0 +1,61 @@
+[
+  {
+    "ENG_name": "Body Warping of Gorgoroth",
+    "name": "戈尔戈罗斯形体扭曲术",
+    "source": "CthulhuTorchlight",
+    "page": 0,
+    "level": 1,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "选择一个视野内你可见且与你同等体型的类人生物。你的外形在法术持续时间内变化为该生物的完美复制。即便通过彻底的物理检查也无法分辨你与目标间的区别。",
+      "你的声音和装备不会变化。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "miscTags": [
+      "SGT"
+    ]
+  }
+]

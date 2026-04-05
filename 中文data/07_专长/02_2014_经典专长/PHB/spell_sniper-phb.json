@@ -1,0 +1,107 @@
+[
+  {
+    "ENG_name": "Spell Sniper",
+    "name": "法术射手",
+    "source": "PHB",
+    "page": 170,
+    "reprintedAs": [
+      "法术射手|XPHB"
+    ],
+    "prerequisite": [
+      {
+        "spellcasting": true
+      }
+    ],
+    "additionalSpells": [
+      {
+        "ENG_name": "Bard Spells",
+        "name": "吟游诗人法术",
+        "ability": "cha",
+        "known": {
+          "_": [
+            {
+              "choose": "level=0|class=吟游诗人|spell attack=m;r;o",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "ENG_name": "Cleric Spells",
+        "name": "牧师法术",
+        "ability": "wis",
+        "known": {
+          "_": [
+            {
+              "choose": "level=0|class=牧师|spell attack=m;r;o",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "ENG_name": "Druid Spells",
+        "name": "德鲁伊法术",
+        "ability": "wis",
+        "known": {
+          "_": [
+            {
+              "choose": "level=0|class=德鲁伊|spell attack=m;r;o",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "ENG_name": "Sorcerer Spells",
+        "name": "术士法术",
+        "ability": "cha",
+        "known": {
+          "_": [
+            {
+              "choose": "level=0|class=术士|spell attack=m;r;o",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "ENG_name": "Warlock Spells",
+        "name": "魔契师法术",
+        "ability": "cha",
+        "known": {
+          "_": [
+            {
+              "choose": "level=0|class=魔契师|spell attack=m;r;o",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "ENG_name": "Wizard Spells",
+        "name": "法师法术",
+        "ability": "int",
+        "known": {
+          "_": [
+            {
+              "choose": "level=0|class=法师|spell attack=m;r;o",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你学会如何操控特定的法术进行攻击，并获得下列增益：",
+      {
+        "type": "list",
+        "items": [
+          "当你施展需要进行攻击检定的法术时，则该法术的施法距离加倍。",
+          "你的远程法术攻击无视{@quickref 掩护||3||半身掩护}和{@quickref 掩护||3||四分之三掩护}。",
+          "你习得一个需要进行攻击检定的戏法。从{@filter 吟游诗人|spells|level=0|class=吟游诗人|spell attack=m;r;o}、{@filter 牧师|spells|level=0|class=牧师|spell attack=m;r;o}、{@filter 德鲁伊|spells|level=0|class=德鲁伊|spell attack=m;r;o}、{@filter 术士|spells|level=0|class=术士|spell attack=m;r;o}、{@filter 魔契师|spells|level=0|class=魔契师|spell attack=m;r;o}、{@filter 法师|spells|level=0|class=法师|spell attack=m;r;o}中选择其一，并从其相应的法术列表里选择该戏法。你施展该戏法的施法属性取决于你选择的职业：吟游诗人、术士、魔契师用魅力；牧师、德鲁伊用感知；法师用智力。"
+        ]
+      }
+    ]
+  }
+]

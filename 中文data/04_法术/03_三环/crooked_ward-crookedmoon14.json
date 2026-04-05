@@ -1,0 +1,81 @@
+[
+  {
+    "ENG_name": "Crooked Ward",
+    "name": "歪曲结界",
+    "source": "CrookedMoon14",
+    "page": 127,
+    "reprintedAs": [
+      "歪曲结界|crookedmoon24"
+    ],
+    "level": 3,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一枚柳条编的五角星"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你接触一个固定表面并标记一个使扭曲生物痛苦的符号。一个{@condition 隐形}的30尺半径球状区域从你接触的点迸发出来。球状区域内的每个异怪、精类、邪魔、怪兽或不死生物在属性检定和攻击检定上具有劣势。当一个受影响的生物在回合中第一次进入球状区域或在那里开始其回合时，它必须成功通过一次感知豁免检定否则直到其下一回合开始前陷入{@condition 恐慌}。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "如果你使用4环法术位施放此法术后可维持{@status 专注}更长的时间（至多1小时），或使用5环法术位（至多8小时）。如果你使用6环或更高法术位，该法术不再需要{@status 专注}，且持续时间变为24小时。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "savingThrow": [
+      "感知"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Spells/Crooked-Ward.webp"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "魔咒（5环）Leather Armor",
+    "name": "魔咒（5环）皮甲",
+    "source": "XDMG",
+    "page": 258,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "LA|XPHB",
+    "rarity": "very rare",
+    "weight": 10,
+    "value": 1000,
+    "ac": 11,
+    "armor": true,
+    "hasFluffImages": true,
+    "namePrefix": "魔咒（5环）",
+    "reqAttune": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6}",
+    "charges": 6,
+    "entries": [
+      "这套盔甲附魔了一个5环法术。这件盔甲有6个充能次数，每天黎明时恢复{@dice 1d6}个已消耗的充能。该法术在盔甲制作时确定，必须属于{@filter 防护或幻术|spells|school=A;I|level=5}魔法学派。",
+      "该法术的DC为17，其攻击加值为{@hit 9}。"
+    ],
+    "spellScrollLevel": 5,
+    "_isVariant": true,
+    "valueReference": 40000
+  }
+]

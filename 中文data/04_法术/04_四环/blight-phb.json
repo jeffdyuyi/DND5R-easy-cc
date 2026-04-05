@@ -1,0 +1,98 @@
+[
+  {
+    "ENG_name": "Blight",
+    "name": "枯萎术",
+    "source": "PHB",
+    "page": 219,
+    "srd": true,
+    "referenceSources": [
+      "OotA",
+      "SKT",
+      "ToA",
+      "WDMM",
+      "CM"
+    ],
+    "reprintedAs": [
+      "枯萎术|XPHB"
+    ],
+    "level": 4,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "死灵魔法的能量袭向一个施法距离内你能看见的生物，并榨取他的水分和活力。目标必须进行一次体质豁免，豁免失败者将受到{@damage 8d8}点暗蚀伤害，豁免成功则伤害减半。本法术对构装生物和不死生物无效。",
+      "若你以一个植物类生物或魔法植物为目标，则其豁免检定具有劣势，且法术对它的伤害取最大值。",
+      "若你以一个非魔法非生物的植物为目标，如一棵树或灌木，则它不进行豁免而直接枯萎死去。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "使用五环或更高法术位施展该法术时，你使用的法术位每比四环高一环，法术的伤害就增加{@scaledamage 8d8|4-9|1d8}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "necrotic"
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "affectsCreatureType": [
+      "异怪",
+      "野兽",
+      "天族",
+      "龙",
+      "元素",
+      "妖精",
+      "邪魔",
+      "巨人",
+      "类人",
+      "怪兽",
+      "泥怪",
+      "植物"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊",
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "死灵系",
+    "display_savingThrow": [
+      "体质"
+    ],
+    "display_damageInflict": [
+      "死灵"
+    ]
+  }
+]

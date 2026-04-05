@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Crystal Clear",
+    "name": "水晶天晴",
+    "source": "ObojimaTallGrass",
+    "page": 242,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "这瓶水蓝色的药水摸起来寒冷，打开时会让你手臂上的毛发竖起。当倒入非魔法液体时，会使液体变为{@condition 隐形}状态，持续{@dice 1d4}小时。如果倒入的液体超过20尺立方，药水将无效果。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 21|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/crystal-clear.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1426,
+          "height": 1426
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

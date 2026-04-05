@@ -1,0 +1,186 @@
+[
+    {
+        "ENG_name": "Bardic Inspiration",
+        "name": "吟游诗人激励",
+        "source": "XPHB",
+        "page": 59,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "吟游诗人",
+        "classSource": "XPHB",
+        "level": 1,
+        "entries": [
+            "你可以用语言，音乐或舞蹈的形式对他人进行超自然的激励。以一个{@variantrule 附赠动作|XPHB}，你可以激励位于你 60 尺内的另一名能听见或看见你的生物。那名生物获得一枚你的诗人激励骰 {@dice d6}。",
+            "在接下来的 1 小时内，当那名生物在一次 D20 检定中失败时，可以投掷诗人激励骰并将结果附加到骰值中，这可能将失败变为成功。",
+            "你可以授予诗人激励骰的次数等于你的魅力调整值。诗人骰在 5 级变为 {@dice d8}，10 级变为 {@dice d10}，15 级变为 {@dice d12}。"
+        ]
+    },
+    {
+        "ENG_name": "Spellcasting",
+        "name": "施法",
+        "source": "XPHB",
+        "page": 59,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "吟游诗人",
+        "classSource": "XPHB",
+        "level": 1,
+        "entries": [
+            "你在吟游艺术中学会了施展法术。你可以准备一定数量的诗人法术，魅力是你的施法属性。你可以使用 {@item 乐器|XPHB} 作为法器。"
+        ]
+    },
+    {
+        "ENG_name": "Expertise",
+        "name": "专精",
+        "source": "XPHB",
+        "page": 60,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "吟游诗人",
+        "classSource": "XPHB",
+        "level": 2,
+        "entries": [
+            "你获得两项自选已熟练技能的专精。9级时再获得两项。"
+        ]
+    },
+    {
+        "ENG_name": "Jack of All Trades",
+        "name": "万事通",
+        "source": "XPHB",
+        "page": 60,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "吟游诗人",
+        "classSource": "XPHB",
+        "level": 2,
+        "entries": [
+            "你可以将熟练加值的一半添加到任何你不具备熟练项的属性检定中。"
+        ]
+    },
+    {
+        "ENG_name": "Bard Subclass",
+        "name": "吟游诗人子职",
+        "source": "XPHB",
+        "page": 60,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "吟游诗人",
+        "classSource": "XPHB",
+        "level": 3,
+        "entries": [
+            "你选择获得一项吟游诗人子职。你将在3、6、14级获得子职能力。"
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "XPHB",
+        "page": 61,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "吟游诗人",
+        "classSource": "XPHB",
+        "level": 4,
+        "entries": [
+            "你获得{@feat 属性值提升|XPHB}专长或其它专长。8、12、16级再次获得。"
+        ]
+    },
+    {
+        "ENG_name": "Font of Inspiration",
+        "name": "激励之源",
+        "source": "XPHB",
+        "page": 61,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "吟游诗人",
+        "classSource": "XPHB",
+        "level": 5,
+        "entries": [
+            "短休或长休后恢复所有激励骰。此外，你可以消耗法术位来重获一次使用次数。"
+        ]
+    },
+    {
+        "ENG_name": "Subclass Feature",
+        "name": "子职特性",
+        "source": "XPHB",
+        "page": 61,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "吟游诗人",
+        "classSource": "XPHB",
+        "level": 6,
+        "entries": [
+            "你从子职获得一个特性。"
+        ]
+    },
+    {
+        "ENG_name": "Countercharm",
+        "name": "反迷惑",
+        "source": "XPHB",
+        "page": 61,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "吟游诗人",
+        "classSource": "XPHB",
+        "level": 7,
+        "entries": [
+            "若你或30尺内生物对抗魅惑或恐慌失败，能以反应具有优势重骰。"
+        ]
+    },
+    {
+        "ENG_name": "Magical Secrets",
+        "name": "魔法奥秘",
+        "source": "XPHB",
+        "page": 61,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "吟游诗人",
+        "classSource": "XPHB",
+        "level": 10,
+        "entries": [
+            "你可以从诗人、牧师、德鲁伊和法师的法术列表中选择准备法术。这些法术对你视为吟游诗人法术。"
+        ]
+    },
+    {
+        "ENG_name": "Superior Inspiration",
+        "name": "先发激励",
+        "source": "XPHB",
+        "page": 61,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "吟游诗人",
+        "classSource": "XPHB",
+        "level": 18,
+        "entries": [
+            "当你投掷先攻时，若激励次数不足两次，重获至两次。"
+        ]
+    },
+    {
+        "ENG_name": "Epic Boon",
+        "name": "传奇恩惠",
+        "source": "XPHB",
+        "page": 61,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "吟游诗人",
+        "classSource": "XPHB",
+        "level": 19,
+        "entries": [
+            "你获得一项传奇恩惠专长。"
+        ]
+    },
+    {
+        "ENG_name": "Words of Creation",
+        "name": "创生圣言",
+        "source": "XPHB",
+        "page": 61,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "吟游诗人",
+        "classSource": "XPHB",
+        "level": 20,
+        "entries": [
+            "你总是准备了 {@spell 律令医疗|XPHB} 和 {@spell 律令死亡|XPHB}。施展时可额外指定第二个 10 尺内目标。"
+        ]
+    }
+]

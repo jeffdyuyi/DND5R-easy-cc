@@ -1,0 +1,35 @@
+[
+  {
+    "ENG_name": "Rod of Reverberation",
+    "name": "共鸣之杖",
+    "source": "GriffonsSaddlebag2",
+    "page": 149,
+    "type": "RD|DMG",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "recharge": "拂晓",
+    "rechargeAmount": 3,
+    "charges": 3,
+    "entries": [
+      "此杖顶端铸有浮雕牛首，分叉处延伸出两股角状尖刺。当敲击时，尖刺会迸发魔法与闪电之力。",
+      "此杖具有3充能，且在每日黎明时恢复所有已消耗的充能。持握此杖期间，当其他生物以近战攻击命中你时，你可以用你的反应消耗其1充能，使你的AC在这次攻击检定中获得{@dice 1d6}加值，从而可能导致这次攻击失手。若这次攻击因此导致失手，攻击者还需进行一次DC 15的体质豁免。若豁免失败，其受到{@damage 1d10}闪电伤害与{@damage 1d10}雷鸣伤害，且直到其下一回合结束前进行的下一次攻击检定具有劣势。豁免成功则伤害减半，且下一次攻击检定如常（即不获得劣势）。"
+    ],
+    "lootTables": [
+      "魔法物品表 G2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Rod-of-Reverberation.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

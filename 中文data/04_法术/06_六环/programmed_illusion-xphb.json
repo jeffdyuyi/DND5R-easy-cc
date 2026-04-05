@@ -1,0 +1,71 @@
+[
+  {
+    "ENG_name": "Programmed Illusion",
+    "name": "预置幻影",
+    "source": "XPHB",
+    "page": 309,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 6,
+    "school": "I",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "价值 25+GP 的玉粉",
+        "cost": 2500
+      }
+    },
+    "duration": [
+      {
+        "type": "permanent",
+        "ends": [
+          "解除"
+        ]
+      }
+    ],
+    "entries": [
+      "你在施法距离内创造一个物件，一名生物，或是其他可视现象的幻象，此幻象在满足特定触发条件时会被激活。该幻象在被激活前无法被察觉。幻象必须不大于 30 尺的{@variantrule 立方 [效应区域]|XPHB|立方}区域，且由你决定幻术如何行动和发声。这种按脚本执行的表演可以持续至多 5 分钟。",
+      "当你指定的触发条件发生时，幻象会迅速成型，并以你设定的方式运作。幻术终止运作之后，它消失并休眠 10 分钟，在休眠结束之后幻象便可再次被激活。",
+      "触发条件可以宽泛也可以按你喜好进行细化，但必须是发生在距幻象区域 30 尺内的能看到或听到的现象。例如，你可以制造一个自己的幻象，在其他人试图打开一扇卡住的门时出现并发出警告。",
+      "由于东西可以穿过幻象，任何与该幻象进行的物理互动都会暴露其幻觉本质。一名生物可以用一个{@action 研究|XPHB}动作进行一次对抗你法术豁免DC的成功智力（{@skill 调查|XPHB}）检定以看穿幻象。辨出幻象的生物可以看穿该影像，其产生的声响对该生物而言显得虚假。"
+    ],
+    "abilityCheck": [
+      "智力"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/XPHB/Programmed Illusion.webp"
+          },
+          "credit": "Justine Cruz",
+          "width": 1021,
+          "height": 787
+        }
+      ]
+    },
+    "classes": [
+      "吟游诗人",
+      "法师"
+    ],
+    "display_school": "幻术系"
+  }
+]

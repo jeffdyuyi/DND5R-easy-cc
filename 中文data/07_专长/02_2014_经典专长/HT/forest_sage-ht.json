@@ -1,0 +1,62 @@
+[
+    {
+        "ENG_name": "Forest Sage",
+        "name": "森木贤者",
+        "source": "HumblewoodTales",
+        "page": 172,
+        "prerequisite": [
+            {
+                "level": {
+                    "level": 1,
+                    "class": {
+                        "ENG_name": "Druid",
+                        "name": "德鲁伊",
+                        "visible": true
+                    }
+                },
+                "level_1": {
+                    "level": 1,
+                    "class": {
+                        "ENG_name": "Wizard",
+                        "name": "法师",
+                        "visible": true
+                    }
+                }
+            }
+        ],
+        "ability": [
+            {
+                "choose": {
+                    "from": [
+                        "int",
+                        "wis"
+                    ],
+                    "amount": 1
+                }
+            }
+        ],
+        "additionalSpells": [
+            {
+                "known": {
+                    "_": [
+                        {
+                            "choose": "class=德鲁伊;法师",
+                            "count": 2
+                        }
+                    ]
+                }
+            }
+        ],
+        "entries": [
+            "护理者们重视想法的多样性，尽管他们最初是一个纯粹的德鲁伊秩序，但他们已经学会了接受许多关于自然世界的不同思考方式，尤其是在魔法的应用方面。你要么是一个学会了在秘法研究中保持自然力量微妙平衡的{@class 法师}，要么是一个通过研究和实验获得了对自然魔法新理解的{@class 德鲁伊}。你获得以下增益：",
+            {
+                "type": "list",
+                "page": 172,
+                "items": [
+                    "你可以选择使用智力或感知来进行{@skill 驯兽}、{@skill 奥秘}、{@skill 自然}或{@skill 求生}检定。",
+                    "你可以选择从德鲁伊或法师法术列表中学习两个法术。你选择的法术必须是你能够施放的等级。所选法术将视为你职业的法术，如果你是{@class 法师}则添加到你的法术书中，如果你是{@class 德鲁伊}则添加到你的已知法术中。"
+                ]
+            }
+        ]
+    }
+]

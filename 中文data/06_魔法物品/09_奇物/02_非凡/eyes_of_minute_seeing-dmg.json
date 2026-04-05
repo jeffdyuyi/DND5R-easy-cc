@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Eyes of Minute Seeing",
+    "name": "微视镜片",
+    "source": "DMG",
+    "page": 168,
+    "srd": true,
+    "referenceSources": [
+      "DC",
+      "IDRotF",
+      "CM",
+      "CoA",
+      "DitLCoT",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "微视镜片|XDMG"
+    ],
+    "tier": "次要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这种水晶镜片可以着装到眼睛上。佩戴该镜片期间，你可以在1尺范围内比正常情况看得更清楚。在此范围内，你为搜索区域或研究物件所作，依赖视力的智力（{@skill 调查}）检定具有优势。"
+    ],
+    "lootTables": [
+      "魔法物品表C"
+    ],
+    "valueReference": 400,
+    "type": "W"
+  }
+]

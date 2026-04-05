@@ -1,0 +1,52 @@
+[
+  {
+    "ENG_name": "Orb of Skoraeus",
+    "name": "司寇雷乌斯的宝珠",
+    "source": "BGG",
+    "page": 114,
+    "rarity": "legendary",
+    "reqAttune": "由施法者",
+    "reqAttuneTags": [
+      {
+        "spellcasting": true
+      }
+    ],
+    "wondrous": true,
+    "weight": 8,
+    "bonusSavingThrowConcentration": "+2",
+    "recharge": "拂晓",
+    "rechargeAmount": 3,
+    "charges": 3,
+    "entries": [
+      "据说，这颗宝珠被司寇雷乌斯的智慧与力量灌注，它带有彩虹水晶的纹路，仿佛由内向外发着光。这颗宝珠直径8寸，重达8磅，使它对于石巨人来说是一个手掌大小的饰品，但对于中等体型的生物显得有些笨重了。",
+      "当你持握着这颗宝珠，你可以将其作为你的施法法器，并获得如下增益：",
+      {
+        "ENG_name": "Abundant Components",
+        "name": "充足成分",
+        "type": "entries",
+        "entries": [
+          "这颗宝珠有3发充能并且在每天黎明时恢复所有已消耗的充能。当你在持握这颗宝珠施法时，你可以消耗至多3发充能，来忽视法术有价值的材料成分中，所有价值不高于消耗充能数×300金币的材料。"
+        ]
+      },
+      {
+        "ENG_name": "Astute Mind",
+        "name": "敏锐心智",
+        "type": "entries",
+        "entries": [
+          "你在任何为了保持法术{@status 专注}的体质豁免中获得+2加值。"
+        ]
+      },
+      {
+        "ENG_name": "Divine Sight",
+        "name": "神性视觉",
+        "type": "entries",
+        "entries": [
+          "你可以在黑暗中正常视物，拥有120尺的可视距离，无论其属于魔法黑暗还是非魔法黑暗。"
+        ]
+      }
+    ],
+    "translator": "不全书",
+    "valueReference": 200000,
+    "type": "W"
+  }
+]

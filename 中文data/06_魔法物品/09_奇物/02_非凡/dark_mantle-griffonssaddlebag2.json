@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Dark Mantle",
+    "name": "暗幕斗篷",
+    "source": "GriffonsSaddlebag2",
+    "page": 68,
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这件皮质斗篷是由暗幕魔兽的遗骸制成的。在你穿着这件斗篷期间，攀爬不会额外消耗你的移动力，且你为攀爬进行的力量（{@skill 运动}）检定具有优势。",
+      "此外，在你穿着这件斗篷期间，你可以用一个动作说出它的命令语以散发出一片魔法黑暗灵光。这片黑暗灵光覆盖以你为中心，半径15尺的区域，它将随你一同移动，且能绕过转角。黑暗的持续时间为你\"专注，至多1分钟\"（如同专注于法术）。具有{@sense 黑暗视觉}的生物无法看穿这片黑暗，非魔法的光源也无法照亮它。如果这片黑暗与由不大于2环的法术创造的光亮区域重叠，那么创造该光源的法术都会被解除。斗篷的这项属性一经使用，则其直至次日黎明前都无法再次使用。"
+    ],
+    "lootTables": [
+      "魔法物品表 F1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Dark-Mantle.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

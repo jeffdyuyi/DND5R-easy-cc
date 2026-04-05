@@ -1,0 +1,49 @@
+[
+  {
+    "ENG_name": "Focus Breaker",
+    "name": "破法重锤",
+    "source": "GriffonsSaddlebag2",
+    "page": 82,
+    "baseItem": "巨锤|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 10,
+    "weaponCategory": "军用",
+    "property": [
+      "H",
+      "2H"
+    ],
+    "dmg1": "2d6",
+    "dmgType": "B",
+    "bonusWeapon": "+1",
+    "entries": [
+      "这种野蛮的武器在大动荡时期锻造，曾被授予警卫成员用于镇压施法者的叛乱。你使用这把魔化武器进行攻击检定和伤害掷骰时获得 +1 加值。当你用此武器击中一个正在专注于法术的生物时，武器头部的符文会开始发光，使该生物在本次维持专注的体质豁免检定上具有劣势。",
+      "你可以用一个动作说出武器的命令语并高举武器，让武器头部装饰的金属书籍疯狂翻页并逐渐粉碎。当你这么做时，你周围60尺内的任何法术或魔法效应都会被解除，如同受到五环版本的{@spell 解除魔法|PHB}法术的影响。使用六环或更高法术位施展的法术或魔法效应不会受此影响。一旦使用过这项词条，它将无法再次使用，且武器头部的书籍会消失。"
+    ],
+    "attachedSpells": {
+      "limited": {
+        "1": [
+          "解除魔法#5"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表 G1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Focus-Breaker.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

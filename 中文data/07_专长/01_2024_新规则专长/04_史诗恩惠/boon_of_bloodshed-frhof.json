@@ -1,0 +1,49 @@
+[
+  {
+    "ENG_name": "Boon of Bloodshed",
+    "name": "血海漂橹之恩惠",
+    "source": "FRHoF",
+    "page": 42,
+    "category": "EB",
+    "prerequisite": [
+      {
+        "level": 19
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "max": 30
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Killer's Fortune",
+        "name": "杀手机运",
+        "type": "entries",
+        "entries": [
+          "当一名你可见的敌人{@variantrule 生命值|XPHB}降至0时，你的下次攻击检定获得{@variantrule 优势|XPHB}，持续至你的下个回合结束。"
+        ]
+      },
+      {
+        "ENG_name": "Power from Pain",
+        "name": "痛心切骨",
+        "type": "entries",
+        "entries": [
+          "每回合一次，当你在{@status 浴血|XPHB}期间进行攻击检定时，你可以额外对目标造成等于{@variantrule 熟练|XPHB|熟练加值}的伤害。额外伤害的伤害类型与该攻击的伤害类型一致。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

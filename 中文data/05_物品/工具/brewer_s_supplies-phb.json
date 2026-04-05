@@ -1,0 +1,92 @@
+[
+  {
+    "name": "酿酒工具",
+    "ENG_name": "Brewer's Supplies",
+    "source": "PHB",
+    "page": 154,
+    "type": "AT",
+    "rarity": "none",
+    "weight": 9,
+    "value": 2000,
+    "additionalEntries": [
+      "酿造是生产啤酒的艺术。啤酒不仅是一种酒精饮料，而且酿造过程还能净化水。制作啤酒需要几周的发酵时间，但只需几个小时的工作。",
+      {
+        "ENG_name": "Components",
+        "name": "成分",
+        "type": "entries",
+        "entries": [
+          "酿酒工具包括一个大型玻璃罐、一定量的啤酒花、一个虹吸管和几英尺长的软管。"
+        ]
+      },
+      {
+        "ENG_name": "History",
+        "name": "历史",
+        "type": "entries",
+        "entries": [
+          "拥有酿酒工具熟练项的角色，在进行涉及酒精作为重要元素的事件相关的智力（{@skill 历史}）检定时，可以获得额外的洞察力。"
+        ]
+      },
+      {
+        "ENG_name": "Medicine",
+        "name": "医药",
+        "type": "entries",
+        "entries": [
+          "该工具熟练项使你在治疗酒精中毒患者或使用酒精缓解苦痛时获得额外洞悉。"
+        ]
+      },
+      {
+        "ENG_name": "Persuasion",
+        "name": "游说",
+        "type": "entries",
+        "entries": [
+          "一杯烈酒能帮助软化最坚硬的心。你使用酿酒工具的熟练项可以协助你向某人劝酒，给他们恰到好处的酒精来缓和情绪。"
+        ]
+      },
+      {
+        "ENG_name": "Potable Water",
+        "name": "饮用水",
+        "type": "entries",
+        "entries": [
+          "你的酿酒知识使你能够净化原本不可饮用的水。作为长休的一部分，你可以净化最多6加仑的水，或作为短休的一部分净化1加仑。"
+        ]
+      },
+      {
+        "type": "table",
+        "caption": "酿酒工具",
+        "colLabels": [
+          "用途",
+          "DC"
+        ],
+        "colStyles": [
+          "col-10",
+          "col-2 text-center"
+        ],
+        "rows": [
+          [
+            "侦查饮料中的毒素或杂质",
+            "10"
+          ],
+          [
+            "识别酒精",
+            "15"
+          ],
+          [
+            "忽略酒精的效应",
+            "20"
+          ]
+        ]
+      }
+    ],
+    "additionalSources": [
+      {
+        "source": "XGE",
+        "page": 79
+      }
+    ],
+    "basicRules": true,
+    "reprintedAs": [
+      "酿酒工具|XPHB"
+    ],
+    "srd": true
+  }
+]

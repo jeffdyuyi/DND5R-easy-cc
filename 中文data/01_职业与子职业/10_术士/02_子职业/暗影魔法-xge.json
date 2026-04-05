@@ -1,0 +1,30 @@
+{
+  "ENG_name": "Shadow Magic",
+  "name": "暗影魔法",
+  "shortName": "幽影",
+  "source": "XGE",
+  "className": "术士",
+  "classSource": "XPHB",
+  "_copy": {
+    "ENG_name": "Shadow Magic",
+    "name": "暗影魔法",
+    "source": "XGE",
+    "shortName": "幽影",
+    "className": "术士",
+    "classSource": "PHB",
+    "_preserve": {
+      "page": true,
+      "otherSources": true,
+      "referenceSources": true,
+      "srd": true,
+      "basicRules": true,
+      "reprintedAs": true
+    }
+  },
+  "subclassFeatures": [
+    "暗影魔法|术士|XPHB|幽影|XGE|3",
+    "凶兆猎犬|术士||幽影|XGE|6",
+    "幽影漫步|术士||幽影|XGE|14",
+    "幽暗之形|术士||幽影|XGE|18"
+  ]
+}

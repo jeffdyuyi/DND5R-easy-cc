@@ -1,0 +1,94 @@
+[
+  {
+    "ENG_name": "Weave Numen",
+    "name": "魔网神能",
+    "source": "GrimHollowPG24",
+    "page": 206,
+    "level": 6,
+    "school": "D",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一根价值300 GP以上的秘银缝衣针，该法术会消耗此针",
+        "cost": 30000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你可以感知到120尺范围内魔法的存在。你能看到该范围内任何带有魔法的可见生物或物件周围有一层微弱的光晕，并了解其魔法学派（如果有的话）。",
+      "此外，你获得十三根线。你可以消耗这些线来获得如下所述的增益，除非另有说明，否则不需要动作：",
+      {
+        "type": "list",
+        "items": [
+          "当你施法时，你可以消耗1根线来增强法术，如同你消耗了一个比你实际使用的法术位高1级的法术位，并且你获得等于1加上法术等级的{@variantrule 临时生命值|XPHB}。",
+          "当你120尺内能看见的一个生物施放法术时，你可以消耗1根线使用{@variantrule 反应|XPHB}来打断该法术。如果这是一个3环或更低的法术，该法术失败且无效果。如果这是一个4环或更高的法术，使用你的施法属性进行一次属性检定（DC等于10加该法术的等级）。检定成功时，该法术失败且无效果。",
+          "当你施放一个使生物被治愈或受到伤害的法术时，你可以消耗最多六根魔线。该法术对一个生物造成的伤害或治疗数量增加消耗魔线数量的四倍。"
+        ]
+      },
+      "当此法术结束时，你将失去所有剩余的线。如果你消耗了该法术赋予的所有线，法术将结束。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "每比6环高的法术位环阶，你获得额外的二条魔网神能。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "miscTags": [
+      "HL",
+      "SGT",
+      "THP"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Weave%20Numen.webp"
+  }
+]

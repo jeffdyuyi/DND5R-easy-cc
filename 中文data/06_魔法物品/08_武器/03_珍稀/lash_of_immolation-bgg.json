@@ -1,0 +1,35 @@
+[
+  {
+    "ENG_name": "Lash of Immolation",
+    "name": "焚焰之笞",
+    "source": "BGG",
+    "page": 113,
+    "baseItem": "鞭子|PHB",
+    "type": "M",
+    "rarity": "rare",
+    "weight": 3,
+    "weaponCategory": "martial",
+    "property": [
+      "F",
+      "R"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "S",
+    "bonusWeapon": "+1",
+    "entries": [
+      "这根黑色皮鞭的握把上刻印着火焰符文，而无数的余烬飞舞在鞭尾周遭。",
+      "你使用这把武器发动的攻击检定与其伤害掷骰具有+1加值，且在命中时，鞭子还会额外造成{@damage 1d6}点火焰伤害。当你在用这把鞭子发动的攻击检定中掷出一次重击时，目标将被激情的烈火紧紧缠绕，陷入束缚状态，持续直至你的下一回合开始前。",
+      {
+        "ENG_name": "Invoking the Rune",
+        "name": "激活符文",
+        "type": "entries",
+        "entries": [
+          "当你用这根鞭子发动攻击并命中时，你可以用反应激活鞭子上的符文。当你这么做时，这根鞭子造成的额外火焰伤害将会增加至{@dice 2d6}。",
+          "此符文被激活后，直到次日黎明为止都无法被再度激活。"
+        ]
+      }
+    ],
+    "translator": "不全书",
+    "valueReference": 4000
+  }
+]

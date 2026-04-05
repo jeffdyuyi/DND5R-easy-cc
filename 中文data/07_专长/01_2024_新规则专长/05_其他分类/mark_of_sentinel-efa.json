@@ -1,0 +1,144 @@
+[
+  {
+    "ENG_name": "Mark of Sentinel",
+    "name": "守护龙纹",
+    "source": "EFA",
+    "page": 41,
+    "category": "D",
+    "prerequisite": [
+      {
+        "campaign": [
+          "艾伯伦"
+        ],
+        "exclusiveFeatCategory": [
+          "D"
+        ]
+      }
+    ],
+    "additionalSpells": [
+      {
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "prepared": {
+          "_": {
+            "daily": {
+              "1": [
+                "护盾术|xphb"
+              ]
+            }
+          }
+        },
+        "expanded": {
+          "s1": [
+            "强令对决|xphb",
+            "虔诚护盾|xphb"
+          ],
+          "s2": [
+            "守护之链|xphb",
+            "诚实之域|xphb"
+          ],
+          "s3": [
+            "法术反制|xphb",
+            "防护能量|xphb"
+          ],
+          "s4": [
+            "防死结界|xphb",
+            "信仰守卫|xphb"
+          ],
+          "s5": [
+            "毕格比之手|xphb"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Sentinel's Intuition",
+        "name": "守卫直觉",
+        "type": "entries",
+        "entries": [
+          "当你进行一次感知（{@skill 洞悉|XPHB}或{@skill 察觉|XPHB}）检定时，你可以投掷{@dice 1d4}并将掷骰结果添加到该属性检定中。"
+        ]
+      },
+      {
+        "ENG_name": "Guardian's Shield",
+        "name": "卫护之盾",
+        "type": "entries",
+        "entries": [
+          "你总是准备着{@spell 护盾术|XPHB}法术。你可以无需法术位施放该法术一次，并且当你完成一次{@variantrule 长休|XPHB}后恢复以此方式施放它的能力。你也可以使用你拥有的任何法术位来施放它。智力、感知或魅力是你施放该法术的施法属性（在选择此专长时选择）。"
+        ]
+      },
+      {
+        "ENG_name": "Vigilant Guardian",
+        "name": "警醒护卫",
+        "type": "entries",
+        "entries": [
+          "当一个你5尺内能看见的生物被攻击检定命中时，你可以使用一个{@variantrule 反应|XPHB}来与该生物交换位置，并由你承受该攻击。你可以使用此特性的次数等于你的{@variantrule 熟练|XPHB|熟练加值}，并在完成一次{@variantrule 长休|XPHB}后恢复所有已使用的次数。"
+        ]
+      },
+      {
+        "ENG_name": "Spells of the Mark",
+        "name": "龙纹法术",
+        "type": "entries",
+        "entries": [
+          "如果你拥有施法或契约魔法职业特性，守护龙纹法术列表中的法术将被添加到该特性的法术列表中。",
+          {
+            "type": "table",
+            "caption": "守护龙纹法术",
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "colLabels": [
+              "法术环阶",
+              "法术"
+            ],
+            "rows": [
+              [
+                "1",
+                "{@spell 强令对决|XPHB}, {@spell 虔诚护盾|XPHB}"
+              ],
+              [
+                "2",
+                "{@spell 守护之链|XPHB}, {@spell 诚实之域|XPHB}"
+              ],
+              [
+                "3",
+                "{@spell 法术反制|XPHB}, {@spell 防护能量|XPHB}"
+              ],
+              [
+                "4",
+                "{@spell 防死结界|XPHB}, {@spell 信仰守卫|XPHB}"
+              ],
+              [
+                "5",
+                "{@spell 毕格比之手|XPHB}"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluffImages": true,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "feats/EFA/Mark of Sentinel.webp"
+          },
+          "credit": "Lee Moyer",
+          "width": 500,
+          "height": 525
+        }
+      ]
+    }
+  }
+]

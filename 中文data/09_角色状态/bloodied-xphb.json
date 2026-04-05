@@ -1,0 +1,14 @@
+[
+  {
+    "name": "浴血",
+    "ENG_name": "Bloodied",
+    "source": "XPHB",
+    "page": 362,
+    "entries": [
+      "在一名生物具有的{@variantrule 生命值|XPHB}只有一半或不足一半期间，其处于浴血。"
+    ],
+    "basicRules2024": true,
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

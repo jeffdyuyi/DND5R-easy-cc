@@ -1,0 +1,35 @@
+[
+  {
+    "ENG_name": "Masks of the Sacred Beasts (Jackal)",
+    "name": "圣兽面具（胡狼）",
+    "source": "GriffonsSaddlebag2",
+    "page": 120,
+    "tier": "主要",
+    "rarity": "legendary",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这些暗色陶瓷和黄金面具是以某些文化中具有神圣象征含义的动物为原型制成的。每种面具的外貌及其词条都由其代表的圣兽决定。在你已与某一面具同调期间，你可以只花费1分钟时间（而非在进行一次或多次短休期间）来结束与当前面具的同调，并与另一面具建立新的同调。",
+      "佩戴着胡狼面具期间，你进行的感知（{@skill 察觉}）检定具有优势，且你免疫暗蚀伤害。",
+      "除此之外，你可以用一个动作，从你的额前向一个距离你60尺以内且你能看见的生物发射一道幽绿色的魔法射线。目标生物必须进行一次DC 17的体质豁免，豁免失败则受到{@damage 7d8 + 30}暗蚀伤害，豁免成功则只受到一半伤害。面具的这项词条一经使用，则其直至次日黄昏前都无法再次使用。",
+      "被该暗蚀伤害杀死的类人生物会在你的下一个回合开始时重生成为一个{@creature 木乃伊|MM}，它受你的控制，并根据自己的先攻值行动。在你的回合内，若你未处于{@condition 失能}状态，且木乃伊在你的120尺范围以内，那么你就可以用意念指挥木乃伊（无需动作）。你可以决定木乃伊在其下一个回合内应当执行何种动作、移动到何处，或者你也可以向其下达通用命令，例如攻击你的敌人或守卫某处位置。",
+      "该{@creature 木乃伊}将持续存在，直至你用一个附赠动作将其遣散时，或直至其生命值降至0时，或直至你不再与任何{@item 圣兽面具|GriffonsSaddlebag2|圣兽面具}保持同调时化作粉尘并消失。同一时间内，你只能以此法创造并控制至多一个木乃伊。"
+    ],
+    "lootTables": [
+      "魔法物品表I|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Masks-of-the-Sacred-Beasts.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

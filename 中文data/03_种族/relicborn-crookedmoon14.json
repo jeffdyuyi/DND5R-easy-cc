@@ -1,0 +1,89 @@
+{
+  "race": [
+    {
+      "ENG_name": "Relicborn",
+      "name": "绘骨种",
+      "source": "CrookedMoon14",
+      "page": 62,
+      "reprintedAs": [
+        "绘骨种|crookedmoon24"
+      ],
+      "lineage": "VRGR",
+      "creatureTypes": [
+        "亡灵"
+      ],
+      "size": [
+        "M"
+      ],
+      "speed": 30,
+      "traitTags": [
+        "技能熟练"
+      ],
+      "entries": [
+        {
+          "ENG_name": "Creature Type",
+          "name": "生物类型",
+          "type": "entries",
+          "entries": [
+            "你是一个不死生物。"
+          ]
+        },
+        {
+          "ENG_name": "Dance of Death",
+          "name": "死亡之舞",
+          "type": "entries",
+          "entries": [
+            "作为附赠动作，你可以进行一次DC 15的魅力（{@item 乐器|PHB}或{@skill 表演}）检定。若你成功，你在你的回合结束前进行的下一次攻击检定具有优势。若你在该检定中成功超过5或更多，你可以掷一枚你的生命骰（无需消耗）并获得等于掷骰数值的临时生命值。"
+          ]
+        },
+        {
+          "ENG_name": "Eternal Party",
+          "name": "不息派对",
+          "type": "entries",
+          "entries": [
+            "你不需要睡眠，并且如果你花费4小时享受狂欢，例如讲故事或演奏音乐，就可以完成一次长休。"
+          ]
+        },
+        {
+          "ENG_name": "Moment of Remembrance",
+          "name": "纪念一瞬",
+          "type": "entries",
+          "entries": [
+            "当你30尺内你能看见的另一个生物在属性检定、攻击检定或豁免检定中失败时，你可以使用你的反应让目标添加{@dice 1d4}到全部，可能使其成功。一旦此特质将失败的掷骰变为成功，你无法再次使用它，直到你完成一次短休或长休。"
+          ]
+        },
+        {
+          "ENG_name": "Soul of Revelry",
+          "name": "狂欢之魂",
+          "type": "entries",
+          "entries": [
+            "你获得{@skill 表演}技能的熟练项或一种{@item 乐器|PHB}的熟练项。"
+          ]
+        }
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Races/Relicborn.webp",
+      "subraces": [],
+      "fluff": {
+        "entries": [
+          "绘骨种是一种类似骷髅的种族，原生于{@book 卡莱罗|歪曲之月|1|卡莱罗}，通常从该行省峡谷壁间的无数陵墓与地穴中现身。他们在一种充满庆典与追忆的文化中繁衍生息，这种文化渗透进每一位族人的本质之中。在热闹宴会的活力与宁静追思的平和之间起舞，他们对生者与亡者皆怀有深切敬意。",
+          "他们外形如同骷髅，身上装饰着丰富多彩的颜色、图案和样式，他们的骨骼被包裹在一种半透明的发光物质中，这种物质赋予他们与其他类人种族相似的质量和形体，使他们能舒适地穿戴衣物和盔甲。部分绘骨种甚至能从颅骨上生出毛发，并常将其塑造成夸张的造型。",
+          "绘骨种的通常寿命为250年，随后会失去形态，崩塌为一堆骨头。"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Races/Relicborn.webp"
+            },
+            "width": 655,
+            "height": 1200,
+            "credit": "Jo Cordisco"
+          }
+        ]
+      }
+    }
+  ]
+}

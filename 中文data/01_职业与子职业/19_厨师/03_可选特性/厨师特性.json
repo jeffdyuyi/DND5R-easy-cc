@@ -1,0 +1,1027 @@
+{
+    "optionalfeature": [
+        {
+            "ENG_name": "Almond Milk",
+            "name": "杏仁奶",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 1,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "撒上肉豆蔻温热的杏仁牛奶。服用后，它会为身体做好入睡的准备。目标必须进行一次体质豁免检定。豁免失败时，他们将在1分钟后陷入{@condition 昏迷}状态，并保持{@condition 昏迷}10分钟。如果他们受到任何伤害或有生物花费一个动作摇晃或拍打他们，他们会提前醒来。",
+                "不需要睡眠的生物不受这个餐食的影响。"
+            ]
+        },
+        {
+            "ENG_name": "Carrot Casserole",
+            "name": "砂锅胡萝卜",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 1,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "胡萝卜与十几种草药和香料一起烹饪而成。食用后可以改善视力。目标获得60尺范围内的黑暗视觉，持续8小时。如果目标已有黑暗视觉，则其范围增加60尺。"
+            ]
+        },
+        {
+            "ENG_name": "Cow Innards",
+            "name": "臭牛杂",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 1,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "一种闻起来很糟糕的美味小食。食用后会使全身上下都被难闻的口气笼罩。目标必须进行一次体质豁免检定。若失败，目标在所有魅力检定上具有劣势，且生物在10分钟内无法被目标{@condition 魅惑}。若目标食用餐食时有任何生物正被其{@condition 魅惑}，则该效应在持续时间内对能闻到目标气味的生物暂时失效。"
+            ]
+        },
+        {
+            "ENG_name": "Flavored Ice",
+            "name": "特调冰奶油",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 1,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "冷如冰的奶油。食用时会冻住大脑。目标必须进行一次智力豁免检定。豁免失败时，它将受到{@damage 1d6}寒冷伤害，并且在你的下一个回合开始前在专注检定上具有劣势。豁免成功时，该生物伤害减半且不会获得劣势。",
+                "这个餐食的伤害会在你达到该职业的特定等级时增加1d6：4级（{@damage 2d6}）、7级（{@damage 3d6}）、9级（{@damage 4d6}）、13级（{@damage 5d6}）、17级（{@damage 6d6}）和20级（{@damage 7d6}）。"
+            ]
+        },
+        {
+            "ENG_name": "Hardened Bread",
+            "name": "硬面包",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 1,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "烤得比石头还硬的面包。食用时，它会碎成块状并堵住喉咙。目标必须进行一次力量豁免检定。豁免失败时，它将受到{@damage 1d6}钝击伤害，并且在你的下一个回合开始前攻击检定具有劣势. 豁免成功时，该生物只受到一半伤害且不会获得劣势。",
+                "这个餐食的伤害会在你达到该职业的特定等级时增加1d6：4级（{@damage 2d6}）、7级（{@damage 3d6}）、9级（{@damage 4d6}）、13级（{@damage 5d6}）、17级（{@damage 6d6}）和20级（{@damage 7d6}）。"
+            ]
+        },
+        {
+            "ENG_name": "Herbal Grey Tea",
+            "name": "草本灰茶",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 1,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "一杯热气腾腾的茶。服用后能清心静气。目标在1小时内对所有体质豁免、智力检定和感知检定增加{@dice 1d4}。"
+            ]
+        },
+        {
+            "ENG_name": "Invigorating Juices",
+            "name": "活力果汁",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 1,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "一种汁水饱满的美味水果。食用后，其果汁有强健体魄、提振体质的功用。目标获得{@dice 1d8}点临时生命值，持续1分钟。",
+                "从这个餐食获得的临时生命值数值会在你达到该职业的特定等级时增加1d8：4级（{@dice 2d8}）、7级（{@dice 3d8}）、9级（{@dice 4d8}）、13级（{@dice 5d8}）、17级（{@dice 6d8}）和20级（{@dice 7d8}）。"
+            ]
+        },
+        {
+            "ENG_name": "Packed Protein",
+            "name": "浓缩蛋白质",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 1,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "一只炸鸡腿。食用后，他能起到高效滋养肌肉、强化体魄的效果。1分钟内，目标在所有使用力量的伤害掷骰和属性检定上增加{@dice 1d4}。",
+                "当你达到该职业的特定等级时，这个餐食的骰子会增加：10级（{@dice 1d6}），15级（{@dice 1d8}），20级（{@dice 1d10}）。"
+            ]
+        },
+        {
+            "ENG_name": "Smoky Chops",
+            "name": "烟熏排骨",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 1,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "烟熏猪肋排。食用后，它会与胃液反应产生一种灼热之感，暖身活血、周身发热。目标获得寒冷伤害的抗性和对{@condition 中毒}状态的免疫，持续10分钟。"
+            ]
+        },
+        {
+            "ENG_name": "Spicy Pepper",
+            "name": "香辣胡椒",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 1,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "一种辛辣的烤胡椒。服用时会导致剧烈出汗，使身体变得滑腻。目标获得火焰伤害的抗性和对{@condition 受擒}状态的免疫，持续10分钟。"
+            ]
+        },
+        {
+            "ENG_name": "Sugar Crystals",
+            "name": "糖晶",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 1,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "一串结晶化的糖。食用后，它可为体细胞注入澎湃能量。目标的速度在10分钟内增加5尺。",
+                "这个加值会在你达到该职业的特定等级时提升：5级（10尺），10级（15尺），15级（20尺）和20级（25尺）。"
+            ]
+        },
+        {
+            "ENG_name": "Braised Rabbit",
+            "name": "香炖兔肉",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "一份用红酒和香草烹制的兔腿肉。食用后，它会为身体注入轻盈灵动的迅捷之力。目标获得{@spell 跳跃术|PHB}法术的效应，持续1小时。"
+            ]
+        },
+        {
+            "ENG_name": "Buttered Trout",
+            "name": "黄油鳟鱼",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "涂有黄油的鳟鱼。食用后，它会作用于肺部并重组身体的呼吸系统。目标获得法术{@spell 水下呼吸|PHB}的效应，持续1小时。目标在持续时间内还会获得等同于其移动速度的游泳速度。"
+            ]
+        },
+        {
+            "ENG_name": "Roast Pheasant",
+            "name": "烤雉鸡翅",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "烤雉鸡翅。食用后，体内会生出一股轻盈之感。10分钟内，当目标坠落时，他们的下落速度减缓至每轮5尺到60尺之间（由他们选择）。他们可以在自己每个回合开始时重新选择下落速度。如果他们在餐食效应结束前着陆，则不会受到坠落伤害。"
+            ]
+        },
+        {
+            "ENG_name": "Spider Eggs",
+            "name": "蜘蛛卵",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "盐腌蜘蛛卵。食用后，可增强身体的抓握能力。法术目标获得{@spell 蛛行术|PHB}的效应，持续1小时。"
+            ]
+        },
+        {
+            "ENG_name": "Thickening Gruel",
+            "name": "粗麦硬粥",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "一种粗粮粥。食用后，可令皮肤变得坚韧厚实。目标获得法术{@spell 树肤术|PHB}的效应，持续10分钟。"
+            ]
+        },
+        {
+            "ENG_name": "Chamomile Tea",
+            "name": "洋甘菊茶",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "用洋甘菊叶泡制的茶。食用后，会使肌肉松弛，削弱物理打击力道。在1分钟内，每当目标进行武器攻击时，他们必须从该次攻击的伤害骰中减去{@dice 1d6}。"
+            ]
+        },
+        {
+            "ENG_name": "Shreevy Leaves",
+            "name": "静神叶",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "静神灌木的叶子，经过烘烤释放出安神镇定的成分。食用后，目标必须进行一次感知豁免。豁免失败时，该生物将在1分钟内对所有其他生物变得冷漠。如果目标以任何方式受到伤害，这种无结果状态会提前结束。无法被{@condition 魅惑}的生物对此效应免疫。"
+            ]
+        },
+        {
+            "ENG_name": "Spectral Sprouts",
+            "name": "灵体孢子",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "生长于怨灵萦绕之地的豆类孢子。食用后，目标获得法术{@spell 识破隐形|PHB}的增益效果，持续1分钟。目标还可以在持续时间内使用一个动作进入或离开以太位面。"
+            ]
+        },
+        {
+            "ENG_name": "Startouched Seeds",
+            "name": "星触瓜子",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "用星光烘焙的瓜子。食用后，目标掷{@dice 1d4}。该生物可以恢复消耗的法术位，其总环阶小于等于掷出的数值。如果恢复的法术位在接下来的1分钟内未被使用，则会消失。"
+            ]
+        },
+        {
+            "ENG_name": "Sweet and Sour Beets",
+            "name": "酸甜甜菜",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "蘸了酸奶油的红甜菜。食用后会使皮肤软化，使身体在物理攻击下变得脆弱。在1分钟内，每个回合命中该目标的第一个武器攻击增加{@damage 1d6}点额外伤害。"
+            ]
+        },
+        {
+            "ENG_name": "Boiled Dragon's Tail",
+            "name": "水煮龙尾",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 15,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "一块坚韧的龙尾肉，煮至软嫩发白。食用后，目标全身会长出鳞片，并长出一条由火焰构成的尾巴。1分钟内，目标的AC获得+1加值，并且可以使用一个动作执行以下其中一项：",
+                "{@bold 骇人威仪。} 目标发出咆哮。目标选择的30尺内的每个生物必须成功通过一次感知豁免，否则将对目标陷入{@condition 恐慌}状态，持续1分钟。豁免DC等于你的餐食豁免DC。生物可以在每个回合结束时重复进行豁免，成功则终止效果。如果生物豁免成功，该生物将在接下来的1分钟内免疫目标的骇人威仪。",
+                "{@bold 摆尾。} 近战武器攻击：命中 +8，触及 10 尺，单一目标。命中：{@damage 4d8}点火焰伤害。"
+            ]
+        },
+        {
+            "ENG_name": "Hydra Tongue",
+            "name": "多头蛇之舌",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 15,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "一条以香料文火慢炖的多头蛇的舌头。食用后，目标会长出第二个头，持续1分钟。该头为他们提供以下增益：",
+                {
+                    "type": "list",
+                    "items": [
+                        "他们在回合开始时获得{@dice 1d10}点临时生命值。",
+                        "在过去24小时内被切断的任何肢体都会在每个回合开始时再生。",
+                        "他们获得一个额外的反应，该反应只能用于借机攻击。",
+                        "他们获得一个额外动作，该动作只能用于进行撤离、协助或搜索动作。"
+                    ]
+                },
+                "在持续时间结束时，头部脱落并蒸发，不留任何痕迹。"
+            ]
+        },
+        {
+            "ENG_name": "Elemental Pie",
+            "name": "元素派",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 15,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "裹着果香馅料、拌入原初元素盐的酥皮点心。食用后，元素之力会在目标的身体内显现。1分钟内，目标获得对强酸、火焰、毒素、闪电和雷鸣伤害的抗性。他们还会在持续时间内获得等于其步行速度的飞行和游泳速度。"
+            ]
+        },
+        {
+            "ENG_name": "Frosted Grapes",
+            "name": "糖霜葡萄",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 3,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        },
+                        "subclass": {
+                            "ENG_name": "Sous Chef",
+                            "name": "副厨",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "裹着一层白糖的葡萄。食用后，它会大幅强化神经反应速度。1分钟内，目标在所有伤害骰和使用敏捷进行的属性检定上增加{@damage 1d4}。",
+                "当你达到该职业的特定等级时，这个餐食的骰子会增加：10级（{@damage 1d6}）、15级（{@damage 1d8}）、20级（{@damage 1d10}）。"
+            ]
+        },
+        {
+            "ENG_name": "Strong Ale",
+            "name": "烈性麦酒",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        },
+                        "subclass": {
+                            "ENG_name": "Sous Chef",
+                            "name": "副厨",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "经过深度发酵的烈酒。饮用后会使全身肌肉松弛。目标获得对非魔法的钝击、穿刺和挥砍伤害的抗性，持续1分钟。"
+            ]
+        },
+        {
+            "ENG_name": "Honeyed Fish",
+            "name": "蜜汁鲜鱼",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        },
+                        "subclass": {
+                            "ENG_name": "Sous Chef",
+                            "name": "副厨",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "一种甜美多汁的鱼。食用时，它会强化心灵的力量。目标在1分钟内对所有智力、感知和魅力检定具有优势。"
+            ]
+        },
+        {
+            "ENG_name": "Pine Nut Mash",
+            "name": "松仁酱",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 17,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        },
+                        "subclass": {
+                            "ENG_name": "Sous Chef",
+                            "name": "副厨",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "将烤松仁碾压制成的浓酱。食用后，目标会呼出甜美芬芳的气息。目标 10 尺范围内的所有友方生物（包括目标）在1分钟内进行豁免时具有优势。"
+            ]
+        },
+        {
+            "ENG_name": "Stinking Sprouts",
+            "name": "恶臭孢子",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 3,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        },
+                        "subclass": {
+                            "ENG_name": "Mess Sergeant",
+                            "name": "炊事长",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "火腿包裹的布鲁塞尔孢子。食用后，他们会持续产生破坏性的肠胃胀气。目标在1分钟内对{@condition 魅惑}和{@condition 恐慌}状态获得免疫。"
+            ]
+        },
+        {
+            "ENG_name": "Bloating Beans",
+            "name": "膨胀豆",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        },
+                        "subclass": {
+                            "ENG_name": "Mess Sergeant",
+                            "name": "炊事长",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "一种饱满到爆炸的食物。当一个中等体型或更小的生物食用后，目标会变成一个更加圆滚臃肿、极具威慑。在1分钟内，目标的体型翻倍，其重量×8。这种增长使其体型增大一个类别。目标在持续时间内还获得力量检定和力量豁免的优势。"
+            ]
+        },
+        {
+            "ENG_name": "Jittering Coffee",
+            "name": "惊颤咖啡",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        },
+                        "subclass": {
+                            "ENG_name": "Mess Sergeant",
+                            "name": "炊事长",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "含有超高咖啡因含量的咖啡。饮用后，它会让神经极度亢奋，心脏持续流过强劲电流。在1分钟内，如果目标因受到伤害而生命值降至0，则改为降至1生命值，并且此餐食的效应结束。"
+            ]
+        },
+        {
+            "ENG_name": "Fatty Oats",
+            "name": "脂润燕麦",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 17,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        },
+                        "subclass": {
+                            "ENG_name": "Mess Sergeant",
+                            "name": "炊事长",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "富含健康脂肪的复合谷物。食用后，它会强化肌肤韧性，抵御伤害。目标对所有伤害具有抗性，直到你的下一个回合结束。"
+            ]
+        },
+        {
+            "ENG_name": "Greasy Slosh",
+            "name": "油腻酸粥",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 3,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        },
+                        "subclass": {
+                            "ENG_name": "Hash Slinger",
+                            "name": "简餐快厨",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "一种浓稠、沉重且带有强酸性的糊粥。食用后，它会迫使身体消耗大量能量来消化。目标必须进行一次体质豁免。豁免失败时，受到{@damage 1d6}点强酸伤害并被视作处于{@condition 束缚}状态1分钟。在每回合结束时，目标可以再进行一次体质豁免。成功时，该效应结束。成功豁免时，目标受到伤害减半且不会陷入{@condition 束缚}状态。",
+                "这个餐食的伤害会在你达到该职业的特定等级时增加1d6：4级（{@damage 2d6}）、7级（{@damage 3d6}）、9级（{@damage 4d6}）、13级（{@damage 5d6}）、17级（{@damage 6d6}）和20级（{@damage 7d6}）。"
+            ]
+        },
+        {
+            "ENG_name": "Fire Salts",
+            "name": "炎硝盐",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        },
+                        "subclass": {
+                            "ENG_name": "Hash Slinger",
+                            "name": "简餐快厨",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "一种稀有的可燃香料。食用后，它会与目标生物的气息和唾液混合，产生炽热的排放物。目标 15 尺内的所有生物（包括目标）必须进行一次敏捷豁免。豁免失败则受到{@damage 4d6}点火焰伤害，成功则只受一半伤害。",
+                "当你达到该职业的特定等级时，餐食的伤害增加1d6：9级（{@damage 5d6}）、13级（{@damage 6d6}）、17级（{@damage 7d6}）、20级（{@damage 8d6}）。"
+            ]
+        },
+        {
+            "ENG_name": "Garlic Tuna",
+            "name": "腐蒜金枪鱼",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        },
+                        "subclass": {
+                            "ENG_name": "Hash Slinger",
+                            "name": "简餐快厨",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "用熟过头的大蒜烤制的腐烂金枪鱼。食用后，目标全身毛孔都会散发出腐臭气息。目标必须进行一次体质豁免。豁免失败时，目标 10 尺范围内的所有敌对生物（包括目标）在1分钟内进行豁免时具有劣势。"
+            ]
+        },
+        {
+            "ENG_name": "Rancid Onion",
+            "name": "腐臭洋葱",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 17,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        },
+                        "subclass": {
+                            "ENG_name": "Hash Slinger",
+                            "name": "简餐快厨",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "一种处于腐烂高峰期的蔬菜。食用后，目标会将蔬菜熟过头的汁液喷洒到周围。目标 30 尺范围内的所有敌对生物（包括目标）必须进行一次体质豁免。豁免失败时，他们将被{@condition 麻痹}直到你的下个回合开始，并被{@condition 目盲}1分钟。在每个回合结束时，目标可以再进行一次体质豁免。豁免成功时，他们将不再处于{@condition 目盲}状态。"
+            ]
+        },
+        {
+            "ENG_name": "Underdark Draught",
+            "name": "幽暗地域私酿",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 3,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        },
+                        "subclass": {
+                            "ENG_name": "Brewmeister",
+                            "name": "酿酒大师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "一种漆黑如墨、泛着暗影泡沫的麦芽酒。引用后，目标会立即呕出魔法黑暗，形成一个以目标为中心的 10 尺半径球状区域。拥有黑暗视觉的生物无法看透这种黑暗，非魔法的光源也无法照亮它。",
+                "黑暗持续1分钟。所有对目标友好的生物（包括目标）可以看穿这个魔法黑暗。"
+            ]
+        },
+        {
+            "ENG_name": "Vodka Slushie",
+            "name": "伏特加冰沙",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        },
+                        "subclass": {
+                            "ENG_name": "Brewmeister",
+                            "name": "酿酒大师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "一团旋冻的白色伏特加冰沙，散发着浓烈酒香。食用后，目标立即呕出覆盖周围地面的雪。以目标为中心 15 尺半径内的地面将被雪覆盖。",
+                "雪地被所有敌对目标的生物视为困难地形。当雪被呕出时，区域内所有敌对目标的生物必须进行一次力量豁免。豁免失败时，生物会被推出雪地区域并远离目标。雪地持续1分钟，或被高温融化。"
+            ]
+        },
+        {
+            "ENG_name": "Hellfire Whiskey",
+            "name": "狱火威士忌",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        },
+                        "subclass": {
+                            "ENG_name": "Brewmeister",
+                            "name": "酿酒大师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "一种灰色的、表面跃动着病态黄色火焰的烈酒。饮用后，目标的眼睛和身体将被黄绿色火焰包裹1分钟。火焰散发出 10 尺半径的微光光照，会吸取目标敌人的生命。当一个大型或更小的敌对生物首次在回合内进入微光光照，或在其内开始回合时，他们必须进行一次体质豁免。若豁免失败，他们将承受一级力竭。"
+            ]
+        },
+        {
+            "ENG_name": "Angel's Kiss",
+            "name": "天使之吻",
+            "featureType": [
+                "MOR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 17,
+                        "class": {
+                            "ENG_name": "Cook",
+                            "name": "厨师",
+                            "visible": true
+                        },
+                        "subclass": {
+                            "ENG_name": "Brewmeister",
+                            "name": "酿酒大师",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "source": "Cook",
+            "entries": [
+                "一种泛着神圣能量气泡的白葡萄酒。饮用后，目标会在 30 尺半径内散发出明亮光照，并在额外的 30 尺范围内散发出微光光照，持续1分钟。当一个敌对目标的生物在其明亮光照范围内开始回合时，他们必须进行一次体质豁免。若豁免失败，他们将处于{@condition 目盲}状态，直到他们的下一个回合开始。具有黑暗视觉的生物在进行此豁免时具有劣势。"
+            ]
+        }
+    ]
+}

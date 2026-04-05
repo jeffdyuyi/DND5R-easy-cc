@@ -1,0 +1,49 @@
+[
+  {
+    "ENG_name": "Fate Cutter Shears",
+    "name": "命运修枝剪",
+    "source": "BMT",
+    "page": 61,
+    "baseItem": "匕首|PHB",
+    "type": "M",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "weight": 1,
+    "weaponCategory": "simple",
+    "property": [
+      "F",
+      "L",
+      "T"
+    ],
+    "range": "20/60",
+    "dmg1": "1d4",
+    "dmgType": "P",
+    "critThreshold": 19,
+    "entries": [
+      "该修枝剪的刀刃上带有许多刻痕与凹痕，但依旧能干净利落地修剪。这把剪刀可以如一把魔法匕首被使用，且该武器拥有以下词条：",
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ever Sharp",
+            "name": "永远锋利",
+            "type": "item",
+            "entries": [
+              "当你使用该剪刀进行的攻击命中时，目标受到额外{@damage 1d6}力场伤害。"
+            ]
+          },
+          {
+            "ENG_name": "Sever Threads",
+            "name": "断丝命剪",
+            "type": "item",
+            "entries": [
+              "当你使用该剪刀命中一个生物时，你便可以裁剪该生物的命运。直到目标进行一次长休之前，任何针对其的攻击检定在{@dice d20}骰出19或20时即为暴击。一旦使用了该特性后，直到第二天黎明之前你无法再次使用该特性。"
+            ]
+          }
+        ]
+      }
+    ],
+    "valueReference": 40000
+  }
+]

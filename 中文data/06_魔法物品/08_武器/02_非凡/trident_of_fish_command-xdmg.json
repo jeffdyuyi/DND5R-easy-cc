@@ -1,0 +1,62 @@
+[
+  {
+    "ENG_name": "Trident of Fish Command",
+    "name": "唤鱼三叉戟",
+    "source": "XDMG",
+    "page": 317,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-BtS"
+    ],
+    "baseItem": "三叉戟|xphb",
+    "type": "M|XPHB",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "weight": 4,
+    "weaponCategory": "martial",
+    "property": [
+      "T|XPHB",
+      "V|XPHB"
+    ],
+    "mastery": [
+      "失衡|XPHB"
+    ],
+    "range": "20/60",
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "dmg2": "1d10",
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "这把魔法武器具有3充能，并在每日黎明时重获{@dice 1d3}已消耗的充能。当你携带这把武器时，你可以消耗1充能对一只具有{@variantrule 游泳速度|XPHB}的野兽施展{@spell 支配野兽|XPHB}（豁免{@dc 15}）。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "支配野兽|xphb"
+        ]
+      }
+    },
+    "lootTables": [
+      "武备 - 非普通|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Trident of Fish Command.webp"
+          },
+          "width": 1700,
+          "height": 306
+        }
+      ]
+    }
+  }
+]

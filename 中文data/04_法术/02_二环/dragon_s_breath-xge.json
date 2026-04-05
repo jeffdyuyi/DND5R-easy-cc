@@ -1,0 +1,83 @@
+[
+  {
+    "ENG_name": "Dragon's Breath",
+    "name": "龙息术",
+    "source": "XGE",
+    "page": 154,
+    "reprintedAs": [
+      "龙息术|XPHB"
+    ],
+    "level": 2,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一枚辣椒"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你触碰一个自愿生物，使它能喷吐出魔法能量，只要它拥有一张嘴。选择强酸、冷冻、火焰、闪电或毒素中的一种。直到法术结束前，生物可以使用一个动作放射出 15 尺锥形的对应能量。区域内的每个生物必须进行敏捷豁免检定，若失败将受到{@damage 3d6}对应能量类型的伤害，成功则只承受一半。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用三环或更高的法术位施放该法术时，使用的法术位每高一环，伤害就增加{@scaledamage 3d6|2-9|1d6}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "acid",
+      "cold",
+      "fire",
+      "lightning",
+      "poison"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "areaTags": [
+      "N",
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "法师"
+    ],
+    "display_school": "变化系",
+    "display_savingThrow": [
+      "敏捷"
+    ],
+    "display_damageInflict": [
+      "强酸",
+      "寒冷",
+      "火焰",
+      "闪电",
+      "毒素"
+    ]
+  }
+]

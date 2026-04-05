@@ -1,0 +1,44 @@
+[
+  {
+    "ENG_name": "Nest Charm",
+    "name": "巢咒护符",
+    "source": "HumblewoodCampaignSetting",
+    "page": 214,
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "拂晓",
+    "charges": 1,
+    "entries": [
+      "这个护身符是一个由复杂的金属枝条编织而成的球体，相互交织成一个类似巢的形状。",
+      "通过将护符放在地上并说出其命令词，你可以让它展开，创建一个直径30尺的圆形平台，由交织在一起的树枝构成。一旦平台达到其完整大小，一棵魔法树在它下面生长，将平台提升到空中50尺，同时携带任何乘客和物品。",
+      "这个栖木持续时间可达8小时，届时树会退回地面，平台会缩小，最终卷回成小护身符。在任何时候，都可以再次说出命令词以类似的方式解散栖木。一旦使用了巢穴护身符的力量，直到下一个黎明之前它都无法再次使用。"
+    ],
+    "hasFluffImages": true,
+    "foundryActivities": [
+      {
+        "activation": {
+          "type": "special",
+          "condition": "通过将巢咒护符放置在地面上并说出其命令语"
+        },
+        "consumption.targets": [
+          {
+            "type": "itemUses",
+            "value": 1
+          }
+        ],
+        "duration": {
+          "value": 8,
+          "units": "小时"
+        },
+        "target.template": {
+          "size": 15,
+          "height": 50,
+          "units": "ft",
+          "type": "cylinder"
+        },
+        "type": "utility"
+      }
+    ]
+  }
+]

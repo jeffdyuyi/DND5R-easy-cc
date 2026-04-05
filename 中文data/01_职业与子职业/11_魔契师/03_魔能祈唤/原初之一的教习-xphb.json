@@ -1,0 +1,51 @@
+{
+  "ENG_name": "Lessons of the First Ones",
+  "name": "原初之一的教习",
+  "source": "XPHB",
+  "page": 156,
+  "featureType": [
+    "EI"
+  ],
+  "prerequisite": [
+    {
+      "level": {
+        "level": 2,
+        "class": {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB",
+          "visibleStats": true
+        }
+      }
+    }
+  ],
+  "featProgression": [
+    {
+      "ENG_name": "Origin Feat",
+      "name": "起源专长",
+      "category": [
+        "O"
+      ],
+      "progression": {
+        "*": 1
+      }
+    }
+  ],
+  "entries": [
+    "你从多元宇宙中的一位亘古存在那里收获了知识，令你习得一项由你选择的{@filter 起源专长|feats|category=o}。",
+    {
+      "type": "entries",
+      "entries": [
+        {
+          "ENG_name": "Repeatable",
+          "name": "复选",
+          "type": "entries",
+          "entries": [
+            "你可以多次选择本祈唤。每次这么做时，你都必须选择不同的起源专长。"
+          ]
+        }
+      ]
+    }
+  ],
+  "translator": "不全书"
+}

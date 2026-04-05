@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "+1 Moon Sickle",
+    "name": "+1 月镰",
+    "source": "TCE",
+    "page": 133,
+    "baseItem": "镰刀|PHB",
+    "type": "M",
+    "rarity": "uncommon",
+    "reqAttune": "由德鲁伊或游侠",
+    "reqAttuneTags": [
+      {
+        "class": "德鲁伊"
+      },
+      {
+        "class": "游侠"
+      }
+    ],
+    "weight": 2,
+    "weaponCategory": "simple",
+    "property": [
+      "L"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "S",
+    "bonusWeapon": "+1",
+    "bonusSpellAttack": "+1",
+    "bonusSpellSaveDc": "+1",
+    "focus": [
+      "德鲁伊",
+      "游侠"
+    ],
+    "entries": [
+      "这把银刃镰刀闪烁着柔和的月光。当持握这把魔法武器时，你用其发动的攻击检定和伤害掷骰，与你德鲁伊或游侠法术的法术攻击检定与法术豁免DC上具有+1加值。此外，你可以用镰刀作为你施展德鲁伊或游侠法术的法器。",
+      "当你持握这把镰刀，施展一道恢复生命值的法术时，你可以骰一枚{@dice d4}并将所得结果加入回复的生命值中。"
+    ],
+    "translator": "不全书",
+    "valueReference": 400
+  }
+]

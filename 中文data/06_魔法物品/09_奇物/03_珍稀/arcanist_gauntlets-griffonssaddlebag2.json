@@ -1,0 +1,42 @@
+[
+  {
+    "ENG_name": "Arcanist Gauntlets",
+    "name": "奥术师护手",
+    "source": "GriffonsSaddlebag2",
+    "page": 38,
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": "由施法者",
+    "reqAttuneTags": [
+      {
+        "spellcasting": true
+      }
+    ],
+    "wondrous": true,
+    "recharge": "午夜",
+    "rechargeAmount": 5,
+    "charges": 5,
+    "focus": true,
+    "entries": [
+      "这双华丽的丝绸长手套由附过魔的秘银外壳保护，该外壳偶尔会释放出奥术能量。在你佩戴着此对手套期间，你可以将手套用作施法的法器，而且当你施展一个需要消耗五环或更低环阶的法术位时（该法术的环阶必须是你能施展的环阶），你可以选择掷一颗{@dice d6}。如果你掷出的数值等于或大于该法术的法术位环阶，则该法术会汲取手套内的魔法能量而非你自身的能量，并且施放时不消耗法术位。该法术位必须是你通常能施放的等级。这副手套每天最多能以这种方式提供5个等级的法术位，且没有两个法术位可以是相同的等级。",
+      "若{@dice d6}的骰值小于该法术位的环阶，则你这次施法正常消耗你的相应法术位。若你没有所需的法术位可用于施展此法术，则本次施法失败，但本次施法本应消耗的法术位依然计入手套每天提供过的法术位中。",
+      "例如，一名9级的法师能以此手套在一天内提供一个五环法术位，或者一个四环和一个一环的法术位，但不能提供两个二环或两个三环的法术位。"
+    ],
+    "lootTables": [
+      "魔法物品表 G1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Arcanist-Gauntlets.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

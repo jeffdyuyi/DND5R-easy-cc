@@ -1,0 +1,84 @@
+[
+  {
+    "ENG_name": "Mask of Lethica Nightborne (Legendary)",
+    "name": "莱希卡·夜嗣的面具（传说）",
+    "source": "CrookedMoon24",
+    "page": 602,
+    "rarity": "legendary",
+    "reqAttune": true,
+    "wondrous": true,
+    "property": [
+      "TCM'24:FH"
+    ],
+    "entries": [
+      "这张无瑕的瓷质面具绘有精致的紫罗兰色掐丝纹饰，曾属于莱希卡·夜嗣——一位被称为夜母的黑夜与治疗女神的祭司。",
+      "佩戴这张面具期间，你的感知与魅力豁免检定会获得+3加值，该加值取决于该面具的稀有度，并且你还可以使用如下词条。",
+      {
+        "ENG_name": "Gift of the Night Goddess (Rare+)",
+        "name": "黑夜女神之恩惠（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "你可以在魔法与非魔法的{@variantrule 微光光照|XPHB}和{@variantrule 黑暗|XPHB}中正常视物。"
+        ]
+      },
+      {
+        "ENG_name": "Soothing Darkness (Rare+)",
+        "name": "幽暗抚慰（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "在你施放的{@spell 黑暗|XPHB}法术区域内，你选择的生物具有对心灵伤害的{@variantrule 抗性|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Whispers of Night (Rare+)",
+        "name": "暗夜呢喃（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "你可以从该面具中施放{@spell 黑暗|XPHB}。该属性可以使用两次（极珍稀+：四次），并在每日黄昏时恢复所有已消耗的使用次数。"
+        ]
+      },
+      {
+        "ENG_name": "Balm of Midnight (Very Rare+)",
+        "name": "子夜馨香（极珍稀+）",
+        "type": "entries",
+        "entries": [
+          "在你的回合开始时，你选择的60尺内一个{@condition 恐慌|XPHB}生物必须进行一次DC 15的感知豁免检定。若成功，该状态结束，且如果该生物处于{@variantrule 黑暗|XPHB}区域内，则获得{@dice 2d10}点{@variantrule 临时生命值|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Offering of Burdens (Legendary)",
+        "name": "共苦献祭（传说）",
+        "type": "entries",
+        "entries": [
+          "你可以使用一个{@action 魔法|XPHB}动作来接触一名具有{@condition 力竭|XPHB}等级的自愿生物，将其任意数量的{@condition 力竭|XPHB}等级转移至自身，随后移除自身至多两级{@condition 力竭|XPHB}等级，并恢复一枚五环或更低环阶的已消耗法术位。该属性一经使用，则直至次日黄昏之前，无法再次使用。"
+        ]
+      },
+      {
+        "ENG_name": "Surcease of Sorrows (Legendary)",
+        "name": "忘苦消愁（传说）",
+        "type": "entries",
+        "entries": [
+          "你可以从该面具中施放{@spell 篡改记忆|XPHB}（豁免DC 19）。若目标自愿放弃豁免检定，则你可以选择其一生中过去任意时刻发生的记忆。该属性一经使用，则直至次日黄昏之前，无法再次使用。"
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "黑暗|XPHB",
+      "篡改记忆|XPHB"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Mask%20of%20Lethica%20Nightborne.webp"
+          },
+          "width": 1200,
+          "height": 999,
+          "credit": "Margarita Bourkova"
+        }
+      ]
+    }
+  }
+]

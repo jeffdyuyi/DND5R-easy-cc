@@ -1,0 +1,22 @@
+[
+  {
+    "ENG_name": "Propeller Helm",
+    "name": "螺旋桨头盔",
+    "source": "WDMM",
+    "page": 251,
+    "rarity": "uncommon",
+    "reqAttune": "由一个小体型的类人生物",
+    "reqAttuneTags": [
+      {
+        "creatureType": "类人",
+        "size": "S"
+      }
+    ],
+    "wondrous": true,
+    "entries": [
+      "佩戴时，头盔允许佩戴者使用动作施放{@spell 浮空术}法术，无需任何材料。头盔的螺旋桨会旋转并发出响亮的噪音，直到法术结束。每次法术结束时，有{@chance 50}的几率头盔失去魔法效果，变成非魔法物品。"
+    ],
+    "valueReference": 400,
+    "type": "W"
+  }
+]

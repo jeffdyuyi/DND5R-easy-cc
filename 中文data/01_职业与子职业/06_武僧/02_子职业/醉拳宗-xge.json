@@ -1,0 +1,136 @@
+{
+  "ENG_name": "Way of the Drunken Master",
+  "name": "醉拳宗",
+  "shortName": "醉拳",
+  "source": "XGE",
+  "className": "武僧",
+  "classSource": "PHB",
+  "page": 33,
+  "edition": "classic",
+  "subclassFeatures": [
+    "醉拳宗|武僧||醉拳|XGE|3",
+    "酣醉偏移|武僧||醉拳|XGE|6",
+    "醉汉机运|武僧||醉拳|XGE|11",
+    "醉意狂乱|武僧||醉拳|XGE|17"
+  ],
+  "features": [
+    {
+      "name": "醉拳宗",
+      "ENG_name": "Way of the Drunken Master",
+      "source": "XGE",
+      "page": 33,
+      "className": "武僧",
+      "classSource": "PHB",
+      "subclassShortName": "醉拳",
+      "subclassSource": "XGE",
+      "level": 3,
+      "entries": [
+        "醉拳宗的导师教导其学徒模仿醉汉行以古怪且不可预测的行为。一名醉拳大师总是摇摇晃晃、蹒跚摇摆着脚步，表现出一个跌撞鲁莽、逊色无能的战斗者。然而他们形醉而意不醉，他们那飘忽不定的跌撞往往掩盖着一套精心执行的招架、推拿、摔打与撤步。",
+        "醉拳大师常常喜欢装疯卖傻，为沮丧者带来欢乐，或对傲慢者表现出谦卑。但当他们加入战斗时，醉拳大师会是一个令人发狂且狡诈的敌人。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "附赠熟练|武僧||醉拳|XGE|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "醉拳技巧|武僧||醉拳|XGE|3"
+        }
+      ]
+    },
+    {
+      "name": "附赠熟练",
+      "ENG_name": "Bonus Proficiencies",
+      "source": "XGE",
+      "page": 33,
+      "className": "武僧",
+      "classSource": "PHB",
+      "subclassShortName": "醉拳",
+      "subclassSource": "XGE",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "当你 3 级选择该宗派时，如果你还没有{@skill 表演|PHB}技能的熟练，则你获得之。你的武术技巧将战斗与舞者的精确及小丑的滑稽结合在一起。此外，如果你还没有{@item 酿酒工具|PHB}的熟练，则你同时获得之。"
+      ]
+    },
+    {
+      "name": "醉拳技巧",
+      "ENG_name": "Drunken Technique",
+      "source": "XGE",
+      "page": 33,
+      "className": "武僧",
+      "classSource": "PHB",
+      "subclassShortName": "醉拳",
+      "subclassSource": "XGE",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "当你 3 级选择该范型时，你学会了如何在使用{@action 疾风连击|PHB}时快速地扭转与移动。每当你使用{@action 疾风连击|PHB}时，你都将获得{@action 撤离|PHB}动作的好处，且你的步行速度增加 10 尺，持续直至当前回合结束。"
+      ]
+    },
+    {
+      "name": "酣醉偏移",
+      "ENG_name": "Tipsy Sway",
+      "source": "XGE",
+      "page": 33,
+      "className": "武僧",
+      "classSource": "PHB",
+      "subclassShortName": "醉拳",
+      "subclassSource": "XGE",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "从 6 级起，你可以以难以预测的摇摆方式进行行动。你获得以下好处：",
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "鲤鱼打挺 Leap to Your Feet",
+              "entry": "如果你处于{@condition 倒地|PHB}状态，你可以花费 5 尺移动力起身，而不是一半速度的移动力。"
+            },
+            {
+              "type": "item",
+              "name": "借力打力 Redirect Attack",
+              "entry": "当一个生物对你发动的近战攻击失手时，你可以消耗 1 点气作为反应，让这次攻击击中你 5 尺范围内由你选择的另一名除攻击者以外的可见生物。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "醉汉机运",
+      "ENG_name": "Drunkard's Luck",
+      "source": "XGE",
+      "page": 33,
+      "className": "武僧",
+      "classSource": "PHB",
+      "subclassShortName": "醉拳",
+      "subclassSource": "XGE",
+      "level": 11,
+      "header": 2,
+      "consumes": {
+        "name": "气",
+        "amount": 2
+      },
+      "entries": [
+        "从 11 级起，你似乎总是能在最正确的时刻获得好运。当你进行一次属性检定、攻击检定或豁免检定且具有劣势时，你可以消耗 2 点气来抵消这一劣势。"
+      ]
+    },
+    {
+      "name": "醉意狂乱",
+      "ENG_name": "Intoxicated Frenzy",
+      "source": "XGE",
+      "page": 33,
+      "className": "武僧",
+      "classSource": "PHB",
+      "subclassShortName": "醉拳",
+      "subclassSource": "XGE",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "从 17 级起，你获得了对大群敌人进行爆发式乱舞打击的能力。每当你使用{@action 疾风连击|PHB}时，你可以用它进行最多三次的额外攻击（即合计五次攻击），但该回合中每一次{@action 疾风连击|PHB}的攻击都必须以不同的生物作为目标。"
+      ]
+    }
+  ]
+}

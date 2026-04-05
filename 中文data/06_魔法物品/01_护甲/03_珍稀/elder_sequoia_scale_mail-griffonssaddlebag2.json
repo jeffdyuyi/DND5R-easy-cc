@@ -1,0 +1,42 @@
+[
+  {
+    "ENG_name": "Elder Sequoia Scale Mail",
+    "name": "古杉鳞甲",
+    "source": "GriffonsSaddlebag2",
+    "page": 77,
+    "baseItem": "鳞甲|phb",
+    "type": "MA",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": "由德鲁伊",
+    "reqAttuneTags": [
+      {
+        "class": "德鲁伊"
+      }
+    ],
+    "weight": 45,
+    "ac": 14,
+    "bonusAc": "+1",
+    "stealth": true,
+    "entries": [
+      "这套坚韧的天然鳞甲由皮革制成，以古杉松果的巨大外壳作为防护。穿戴此护甲期间，你的AC获得 +1加值。此外，当穿着此护甲时，你可以使用荒野形态化为一棵巨大的常青树。这棵树基部直径5尺，高度可达40尺。其树枝可从树干向外延伸最多10尺，且必须位于基部以上至少5尺处。",
+      "该树的生命值等于你德鲁伊等级的5倍，AC为20，且具有火焰伤害易伤。当你处于树木形态时，你魔法性地保留原有感官，并获得30尺范围的{@sense 震颤感知|MM}，但速度变为0，且你只能使用动作来摆动枝条（如被微风或生物触碰时的摇曳一般），恢复正常形态，或再次使用荒野形态。"
+    ],
+    "lootTables": [
+      "魔法物品表 G2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Elder-Sequoia-Scale-Mail.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

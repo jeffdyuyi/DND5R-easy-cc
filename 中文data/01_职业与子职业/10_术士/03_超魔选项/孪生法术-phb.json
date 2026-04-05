@@ -1,0 +1,24 @@
+{
+  "ENG_name": "Twinned Spell",
+  "name": "孪生法术",
+  "source": "PHB",
+  "page": 102,
+  "srd": true,
+  "reprintedAs": [
+    "孪生法术|XPHB"
+  ],
+  "featureType": [
+    "MM"
+  ],
+  "consumes": {
+    "ENG_name": "Sorcery Point",
+    "name": "术法点",
+    "amountMin": 1,
+    "amountMax": 9
+  },
+  "entries": [
+    "施展一道影响单一生物，且施法距离并非自身的法术时，你可以使用等于法术环阶的术法点（戏法消耗1点），并在法术施法距离内再指定另一个目标。",
+    "适用该超魔的法术在其当前环阶时不能同时指定多个生物为目标。比如，{@spell 魔法飞弹}和{@spell 灼热射线}不符合条件，而{@spell 冷冻射线}和{@spell 繁彩球}则符合条件。"
+  ],
+  "translator": "不全书"
+}

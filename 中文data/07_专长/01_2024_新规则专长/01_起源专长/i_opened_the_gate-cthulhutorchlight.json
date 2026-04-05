@@ -1,0 +1,29 @@
+[
+    {
+        "ENG_name": "I Opened the Gate",
+        "name": "我曾打开大门",
+        "source": "CthulhuTorchlight",
+        "page": 0,
+        "category": "O",
+        "entries": [
+            "你并非有意让事情变成这样。你只是好奇，或许忽略了一些警示，但古老的诅咒本就很难当真。那些发黄的旧书记载了很多东西，其中大部分不过是荒诞的传说——但你读过的那本竟成了释放古老邪恶的关键。现在，祂已于此世将临，寻找并遣返祂的责任落在你肩。",
+            "你获得以下增益。",
+            {
+                "ENG_name": "Delver into Forgotten Lore",
+                "name": "探秘寻古",
+                "type": "entries",
+                "entries": [
+                    "你习得三门自选语言。"
+                ]
+            },
+            {
+                "ENG_name": "Foul Arcana",
+                "name": "邪恶奥秘",
+                "type": "entries",
+                "entries": [
+                    "你可以短暂窥见神话之力以增强一道法术，但代价是你的心智将被一种骇人的宇宙洞悉所淹没。当你施法时，你可以使该法术的豁免DC获得+2的附赠，但直到你的下个回合开始前你将处于{@condition 麻痹|XPHB}状态。你可以使用此增益的次数等于你的{@variantrule 熟练|XPHB|熟练加值}。你在完成一次{@variantrule 长休|XPHB}后恢复所有已消耗的使用次数。"
+                ]
+            }
+        ]
+    }
+]

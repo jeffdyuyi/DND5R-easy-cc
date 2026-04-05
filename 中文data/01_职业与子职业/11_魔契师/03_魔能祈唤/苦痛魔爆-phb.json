@@ -1,0 +1,24 @@
+{
+  "ENG_name": "Agonizing Blast",
+  "name": "苦痛魔爆",
+  "source": "PHB",
+  "page": 110,
+  "srd": true,
+  "reprintedAs": [
+    "苦痛魔爆|XPHB"
+  ],
+  "featureType": [
+    "EI"
+  ],
+  "prerequisite": [
+    {
+      "spell": [
+        "魔能爆#c"
+      ]
+    }
+  ],
+  "entries": [
+    "施展{@spell 魔能爆}时，你可以将魅力调整值加到其每次命中所造成的伤害中。"
+  ],
+  "translator": "不全书"
+}

@@ -1,0 +1,26 @@
+{
+  "ENG_name": "Armor of Shadows",
+  "name": "幽影护甲",
+  "source": "PHB",
+  "page": 110,
+  "srd": true,
+  "reprintedAs": [
+    "幽影护甲|XPHB"
+  ],
+  "featureType": [
+    "EI"
+  ],
+  "additionalSpells": [
+    {
+      "innate": {
+        "_": [
+          "法师护甲"
+        ]
+      }
+    }
+  ],
+  "entries": [
+    "你可以随意以自身为目标施展{@spell 法师护甲}，且无需消耗法术位和材料成分。"
+  ],
+  "translator": "不全书"
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "ENG_name": "Robe of Stars",
+    "name": "星辰法袍",
+    "source": "DMG",
+    "page": 194,
+    "srd": true,
+    "referenceSources": [
+      "CoA",
+      "VEoR"
+    ],
+    "reprintedAs": [
+      "星辰法袍|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "bonusSavingThrow": "+1",
+    "rechargeAmount": "{@dice 1d6}",
+    "charges": 6,
+    "entries": [
+      "这件黑色或深蓝色的长袍上点缀着白色或银色的星星。着装这件长袍时，你的豁免具有+1加值。",
+      "长袍的前襟附近有六枚较大的星。着装这件长袍时，你可以用一个动作取下其中一颗并以之施放{@spell 魔法飞弹}作为5环法术。每日黄昏时分，{@dice 1d6}颗已消耗的星将重新出现在法袍上。",
+      "着装这件长袍时，你可以用一个动作使你和你身上着装或携带的物件一起进入星界。之后，你可以再用一个动作回到你原本所在的位面，此时你出现在之前占据的空间。如果该空间已被占据，则你出现在最近的未占据空间。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "魔法飞弹#5"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表H"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 40000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Robe of Stars.webp"
+          },
+          "width": 449,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

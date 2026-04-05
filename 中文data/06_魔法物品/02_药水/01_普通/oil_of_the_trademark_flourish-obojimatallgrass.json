@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Oil of the Trademark Flourish",
+    "name": "虚张声势燃油",
+    "source": "ObojimaTallGrass",
+    "page": 243,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "当你将此燃油涂抹在一件物件上时，你可以指定一个招牌声音在该物件被使用时伴随出现。此效应是{@b 永久}的，除非像解除诅咒一样被移除。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 30|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/oil-of-the-trademark-flourish.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1564,
+          "height": 1564
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

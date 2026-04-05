@@ -1,0 +1,83 @@
+[
+  {
+    "ENG_name": "Axe of the Galloping Headsman (Legendary)",
+    "name": "疾驰刽子手之斧（传说）",
+    "source": "CrookedMoon24",
+    "page": 595,
+    "baseItem": "战斧|XPHB",
+    "type": "M|XPHB",
+    "rarity": "legendary",
+    "reqAttune": true,
+    "weight": 4,
+    "weaponCategory": "军用",
+    "property": [
+      "V|XPHB",
+      "TCM'24:FH"
+    ],
+    "mastery": [
+      "失衡|XPHB"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "S",
+    "dmg2": "1d10",
+    "bonusWeapon": "+3",
+    "entries": [
+      "这把斧头的刃口弯曲狰狞，磨砺得如剃刀般锋利，幽暗的火焰在边缘缭绕。其斧柄以裂纹皮革缠绕，整体镌刻着邪恶的符文。",
+      "你使用此魔法武器进行的攻击检定和伤害掷骰具有+3加值。加值大小取决于该战斧的稀有度。你还可以使用如下词条。",
+      {
+        "ENG_name": "Fiery Smite (Rare+)",
+        "name": "烈焰斩（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "这把战斧命中时额外造成{@damage 1d6}火焰伤害。如果目标是自你上一回合结束以来伤害过你的生物，则额外伤害变为{@dice 1d10}。"
+        ]
+      },
+      {
+        "ENG_name": "Mark of Guilt (Very Rare+)",
+        "name": "罪印标记（极珍稀+）",
+        "type": "entries",
+        "entries": [
+          "当你使用此战斧命中一个生物时，你可以将其标记为惩罚对象（无需动作）。你可以感知该生物的方向与距离。若其离开当前位面，则你将知晓其前往的位面，并且标记结束。除此之外，此标记会在该属性再次被使用或目标死亡时结束。"
+        ]
+      },
+      {
+        "ENG_name": "Sense Guilt (Very Rare+)",
+        "name": "察罪罚恶（极珍稀+）",
+        "type": "entries",
+        "entries": [
+          "你可以使用一个{@variantrule 附赠动作|XPHB}将斧刃抵住一个生物的脖颈（如果它有），其必须进行一次魅力豁免检定（DC = 16 + 斧头的加值）失败否则你将知晓令该生物感到愧疚的事情。一旦该属性被使用，目标在24小时内对其免疫。"
+        ]
+      },
+      {
+        "ENG_name": "Dark Binding (Legendary)",
+        "name": "至暗伏法（传说）",
+        "type": "entries",
+        "entries": [
+          "每个你的回合一次，当你使用此斧命中一个生物时，你可以立即使用{@variantrule 附赠动作|XPHB}迫使目标进行一次DC19的力量豁免检定，否则陷入{@condition 麻痹|XPHB}和{@condition 倒地|XPHB}状态，直至你的下一回合开始。若其身体结构允许，目标将屈膝跪地，呈上脖颈。"
+        ]
+      },
+      {
+        "ENG_name": "Executioner's Blade (Legendary)",
+        "name": "处刑者之刃（传说）",
+        "type": "entries",
+        "entries": [
+          "当你使用这把战斧攻击处于{@condition 倒地|XPHB}状态的生物时，你在{@dice d20}掷出19或20时造成{@variantrule 重击|XPHB}。在{@variantrule 重击|XPHB}时，这把战斧额外造成{@damage 3d6}火焰伤害，如果该生物在受到此伤害后剩余{@variantrule 生命值|XPHB}为20或更少，它必须成功通过DC 10体质豁免检定否则死亡。"
+        ]
+      }
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Axe%20of%20the%20Galloping%20Headsman.webp"
+          },
+          "width": 571,
+          "height": 1200,
+          "credit": "Eugenio Frosali"
+        }
+      ]
+    }
+  }
+]

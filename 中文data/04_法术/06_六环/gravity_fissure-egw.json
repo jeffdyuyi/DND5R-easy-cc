@@ -1,0 +1,64 @@
+[
+  {
+    "ENG_name": "Gravity Fissure",
+    "name": "重力分裂",
+    "source": "EGW",
+    "page": 187,
+    "level": 6,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "line",
+      "distance": {
+        "type": "feet",
+        "amount": 100
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一把铁料"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你以自身为原点咒现出一条长100尺，宽5尺的重力能量。.所有在线上的生物需要进行一个体质豁免，若失败，则受到{@damage 8d8}点力场伤害，若豁免成功则受到一半伤害。",
+      "所有距离这条线10尺或以内但不在线当中的生物需要通过一个体质豁免，若失败则受到{@damage 8d8}点力场伤害并且会被拉向线的区域中。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用七环或更高环位的法术位施展该法术时，每比六环高出一环的法术位能使该法术的伤害增加{@scaledamage 8d8|6-9|1d8}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "force"
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "areaTags": [
+      "L"
+    ],
+    "translator": "不全书",
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "体质"
+    ],
+    "display_damageInflict": [
+      "力场"
+    ]
+  }
+]

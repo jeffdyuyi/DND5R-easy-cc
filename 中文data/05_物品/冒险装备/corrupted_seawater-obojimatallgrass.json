@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Corrupted Seawater",
+    "name": "腐化的海水",
+    "source": "ObojimaTallGrass",
+    "page": 210,
+    "type": "Ingred",
+    "rarity": "uncommon",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 17|large}|SneakerProMedium}",
+            "{@font {@style 11|large}|SneakerProMedium}",
+            "{@font {@style 14|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "只有最高级的酿造师或最疯狂的巫偶和魔契师愿意让自己暴露在腐化的海水中，因为人们对它仍然知之甚少。这种紫色的水带有腐化的招牌病态刺鼻恶臭。对于那些足够无畏冒险前往胧忆岛东侧的人来说，腐化的海水很容易找到，但一定要带一个能防止有毒流体扩散污染的容器。"
+    ],
+    "lootTables": [
+      "湿地非普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/corrupted-seawater.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 2509,
+          "height": 2509
+        }
+      ]
+    }
+  }
+]

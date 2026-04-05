@@ -1,0 +1,18 @@
+{
+  "ENG_name": "Distant Spell",
+  "name": "远程法术",
+  "source": "XPHB",
+  "page": 141,
+  "srd52": true,
+  "featureType": [
+    "MM"
+  ],
+  "consumes": {
+    "ENG_name": "Sorcery Point",
+    "name": "术法点"
+  },
+  "entries": [
+    "当你施展一个射程至少为5尺的法术时，你可以消耗1术法点来将法术的射程翻倍。当你施展一个射程为触碰的法术时，你可以消耗1术法点来将法术的射程改为30尺。"
+  ],
+  "translator": "不全书"
+}

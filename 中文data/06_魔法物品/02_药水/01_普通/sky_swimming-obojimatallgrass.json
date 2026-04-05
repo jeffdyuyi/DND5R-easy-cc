@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Sky Swimming",
+    "name": "天空游泳",
+    "source": "ObojimaTallGrass",
+    "page": 242,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Whim"
+    ],
+    "modifySpeed": {
+      "static": {
+        "fly": 15
+      }
+    },
+    "entries": [
+      "饮用这瓶药水后，你会感受到穿着湿透衣服的突然不适感。接下来的10分钟内，你获得15尺的飞行速度并能悬浮，但看起来和感觉上就像在天空中游泳一样。以这种方式飞行时，你还必须遵守水下战斗的规则。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 27|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/sky-swimming.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1986,
+          "height": 1986
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

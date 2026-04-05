@@ -1,0 +1,56 @@
+[
+  {
+    "ENG_name": "Gentle Repose",
+    "name": "遗体防腐",
+    "source": "XPHB",
+    "page": 278,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 2,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "2 枚铜币，作为此法术的耗材",
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "day",
+          "amount": 10
+        }
+      }
+    ],
+    "meta": {
+      "ritual": true
+    },
+    "entries": [
+      "你触碰一具尸体或其他遗骸。目标在法术持续时间内不会腐烂且无法被转变为亡灵。",
+      "该法术同样可以有效的延长复活目标的时间限制，因为受该法术影响下度过的时间不计入法术如{@spell 死者复活|XPHB}的时间限制内。"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师",
+      "法师",
+      "圣武士"
+    ],
+    "display_school": "死灵系",
+    "display_ritual": "仪式"
+  }
+]

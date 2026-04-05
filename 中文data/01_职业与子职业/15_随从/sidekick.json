@@ -1,0 +1,53 @@
+[
+    {
+        "name": "协力者",
+        "ENG_name": "Sidekick",
+        "source": "TCE",
+        "isSidekick": true,
+        "subclasses": [
+            {
+                "name": "专家",
+                "source": "TCE",
+                "shortName": "专家"
+            },
+            {
+                "name": "施法者",
+                "source": "TCE",
+                "shortName": "施法者"
+            },
+            {
+                "name": "武士",
+                "source": "TCE",
+                "shortName": "武士"
+            }
+        ]
+    },
+    {
+        "name": "幸存者",
+        "ENG_name": "Survivor",
+        "source": "VRGtR",
+        "isSurvivor": true,
+        "subclasses": [
+            {
+                "name": "学徒",
+                "source": "VRGtR",
+                "shortName": "学徒"
+            },
+            {
+                "name": "信徒",
+                "source": "VRGtR",
+                "shortName": "信徒"
+            },
+            {
+                "name": "鬼祟者",
+                "source": "VRGtR",
+                "shortName": "鬼祟者"
+            },
+            {
+                "name": "骑士学徒",
+                "source": "VRGtR",
+                "shortName": "骑士学徒"
+            }
+        ]
+    }
+]

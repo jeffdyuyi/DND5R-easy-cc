@@ -1,0 +1,20 @@
+{
+  "ENG_name": "Evasive Footwork",
+  "name": "灵巧步法",
+  "source": "PHB",
+  "page": 74,
+  "reprintedAs": [
+    "灵巧步法|XPHB"
+  ],
+  "featureType": [
+    "MV:B"
+  ],
+  "consumes": {
+    "ENG_name": "Superiority Die",
+    "name": "卓越骰"
+  },
+  "entries": [
+    "你在移动时，可以消耗一粒卓越骰，并将其加入你的AC中，直至你完成移动。"
+  ],
+  "translator": "不全书"
+}

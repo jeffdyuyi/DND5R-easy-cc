@@ -1,0 +1,117 @@
+[
+  {
+    "ENG_name": "Ritual Caster",
+    "name": "仪式施法者",
+    "source": "XPHB",
+    "page": 206,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4,
+        "ability": [
+          {
+            "int": 13
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "ability": [
+          {
+            "wis": 13
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "ability": [
+          {
+            "cha": 13
+          }
+        ]
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        }
+      }
+    ],
+    "additionalSpells": [
+      {
+        "prepared": {
+          "1": [
+            {
+              "choose": "level=1|components & miscellaneous=仪式",
+              "count": 2
+            }
+          ],
+          "5": [
+            {
+              "choose": "level=1|components & miscellaneous=仪式",
+              "count": 1
+            }
+          ],
+          "9": [
+            {
+              "choose": "level=1|components & miscellaneous=仪式",
+              "count": 1
+            }
+          ],
+          "13": [
+            {
+              "choose": "level=1|components & miscellaneous=仪式",
+              "count": 1
+            }
+          ],
+          "17": [
+            {
+              "choose": "level=1|components & miscellaneous=仪式",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Ritual Spells",
+        "name": "仪式魔法",
+        "type": "entries",
+        "entries": [
+          "你选择数道具有{@filter 仪式标签|spells|level=1|components & miscellaneous=仪式}的一环法术，其具体数量等于你的{@variantrule 熟练|XPHB|熟练加值}。你始终准备着这几道法术，并可以用你拥有的任何法术位去施展它们。施展它们的施法属性为你用此专长提升的属性。此后，每当你的{@variantrule 熟练|XPHB|熟练加值}提升时，你可以通过这个特性多获得一道始终准备的、带有{@variantrule 仪式|XPHB}标签的一环法术。"
+        ]
+      },
+      {
+        "ENG_name": "Quick Ritual",
+        "name": "快速仪式",
+        "type": "entries",
+        "entries": [
+          "你可以用通常的施法时间来施展一道{@variantrule 仪式|XPHB}法术，而不需要{@variantrule 仪式|XPHB}的延长施法时间。这么做不会花费你的法术位。一旦你通过这种方式施展了一道法术，直到完成一次{@variantrule 长休|XPHB}前你都不能再使用这个增益。"
+        ]
+      }
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "feats/XPHB/Ritual Caster.webp"
+          },
+          "credit": "Wayne England",
+          "width": 1627,
+          "height": 1094
+        }
+      ]
+    }
+  }
+]

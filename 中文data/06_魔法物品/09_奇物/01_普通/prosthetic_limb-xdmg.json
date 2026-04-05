@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "Prosthetic Limb",
+    "name": "假肢",
+    "source": "XDMG",
+    "page": 290,
+    "otherSources": [
+      {
+        "source": "FRHoF"
+      }
+    ],
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "这件魔法物品能替代一处缺失的肢体——一只手，一条手臂，一条腿，或是类似的身体部位。在假肢已完成安装期间，它能像被代替的肢体一样正常工作。你可以用一个{@action 魔法|XPHB}动作将其装好或者卸除，且只要你活着，它就不能在你非自愿的情况下被移除。"
+    ],
+    "lootTables": [
+      "奥秘 - 普通|XDMG",
+      "器具 - 普通|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 100,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Prosthetic Limb.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 850,
+          "height": 561
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

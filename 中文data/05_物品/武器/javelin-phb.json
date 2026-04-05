@@ -1,0 +1,32 @@
+[
+  {
+    "name": "标枪",
+    "ENG_name": "Javelin",
+    "source": "PHB",
+    "page": 149,
+    "edition": "classic",
+    "type": "M",
+    "rarity": "none",
+    "weight": 2,
+    "value": 50,
+    "weaponCategory": "simple",
+    "property": [
+      "T"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "range": "30/120",
+    "basicRules": true,
+    "referenceSources": [
+      "GoS",
+      "IDRotF",
+      "DSotDQ"
+    ],
+    "reprintedAs": [
+      "标枪|XPHB"
+    ],
+    "spear": true,
+    "srd": true,
+    "weapon": true
+  }
+]

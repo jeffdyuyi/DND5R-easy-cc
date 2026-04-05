@@ -1,0 +1,63 @@
+[
+  {
+    "ENG_name": "Arboreal Curse",
+    "name": "化树诅咒",
+    "source": "GrimHollowPG24",
+    "page": 185,
+    "level": 7,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一勺树汁"
+    },
+    "duration": [
+      {
+        "type": "permanent",
+        "ends": [
+          "解除"
+        ]
+      }
+    ],
+    "entries": [
+      "你尝试将一个你范围内可见的生物转化为树木。该生物需进行一次体质豁免检定。若豁免失败，它将获得{@condition 束缚|XPHB}状态，其血肉开始硬化成树皮。若豁免成功，其{@variantrule 速度|XPHB}降至0，直到你的下一个回合开始。",
+      "一个被此法术{@condition 束缚|XPHB}的生物在其每回合结束时进行一次体质豁免检定。如果它成功三次，该状态结束。如果它失败三次，它将被转变为一棵树并获得{@condition 石化|XPHB}状态。成功次数和失败次数无需连续；追踪两者直到目标收集到三个相同类型。",
+      "如果该生物在被{@condition 石化|XPHB}时被烧毁、砍倒或以其他方式摧毁，它将被杀死。",
+      "生物将保持变形状态，除非在1年内使用{@spell 高等复原术|XPHB}、{@spell 祈愿术|XPHB}或相似的魔法逆转该效应。如果该生物作为树度过1年零1天，变形将变为永久，且无物能使该生物回归其原始形态。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "conditionInflict": [
+      "石化",
+      "束缚"
+    ],
+    "savingThrow": [
+      "体质"
+    ],
+    "miscTags": [
+      "PRM",
+      "SGT"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Arboreal%20Curse.webp"
+  }
+]

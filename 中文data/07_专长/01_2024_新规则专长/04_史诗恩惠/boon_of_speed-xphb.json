@@ -1,0 +1,49 @@
+[
+  {
+    "ENG_name": "Boon of Speed",
+    "name": "神行无拘之恩惠",
+    "source": "XPHB",
+    "page": 211,
+    "category": "EB",
+    "prerequisite": [
+      {
+        "level": 19
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "max": 30
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Escape Artist",
+        "name": "逃脱大师",
+        "type": "entries",
+        "entries": [
+          "你能够以一个{@variantrule 附赠动作|XPHB}执行{@action 撤离|XPHB}动作，并结束你陷入的{@condition 受擒|XPHB}状态。"
+        ]
+      },
+      {
+        "ENG_name": "Quickness",
+        "name": "风驰电掣",
+        "type": "entries",
+        "entries": [
+          "你的{@variantrule 速度|XPHB}提升 30 尺。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

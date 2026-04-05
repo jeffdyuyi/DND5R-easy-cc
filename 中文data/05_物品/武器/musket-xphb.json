@@ -1,0 +1,45 @@
+[
+  {
+    "name": "滑膛枪",
+    "ENG_name": "Musket",
+    "source": "XPHB",
+    "page": 215,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "none",
+    "weight": 10,
+    "value": 50000,
+    "weaponCategory": "martial",
+    "property": [
+      "A|XPHB",
+      "LD|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "缓速|XPHB"
+    ],
+    "dmg1": "1d12",
+    "dmgType": "P",
+    "range": "40/120",
+    "ammoType": "枪械子弹|XPHB",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XPHB/Musket.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 1072,
+          "height": 174
+        }
+      ]
+    },
+    "basicRules2024": true,
+    "firearm": true,
+    "hasFluffImages": true,
+    "srd52": true,
+    "weapon": true
+  }
+]

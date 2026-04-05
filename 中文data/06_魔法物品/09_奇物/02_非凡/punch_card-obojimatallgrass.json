@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Punch Card",
+    "name": "打卡卡牌",
+    "source": "ObojimaTallGrass",
+    "page": 174,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这张来自一家早已被遗忘的茶店的老打卡卡牌不知为何拥有独特的附魔效果，每次携带它的生物被攻击命中时，卡牌上就会被打出一个孔；除了这种附魔效果外，无法通过任何其他方式在卡牌上打孔。被发现时，卡牌上已有{@dice 1d6}个孔。当卡牌上打出第十个孔时，魔法会被释放，将受到的攻击伤害降为0。随后卡牌的魔法便会消失。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/punch-card.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 4606,
+          "height": 4606
+        }
+      ]
+    }
+  }
+]

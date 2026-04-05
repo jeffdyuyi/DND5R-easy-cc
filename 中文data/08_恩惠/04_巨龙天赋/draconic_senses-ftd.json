@@ -1,0 +1,29 @@
+[
+  {
+    "ENG_name": "Draconic Senses",
+    "name": "龙类感官",
+    "source": "FTD",
+    "page": 28,
+    "type": "Draconic Gift",
+    "rarity": "rare",
+    "entries": [
+      "你获得像龙一样敏锐的感觉。",
+      {
+        "ENG_name": "Blindsight",
+        "name": "盲视",
+        "type": "entries",
+        "entries": [
+          "你获得10尺{@sense 盲视}。在此范围内，即使你处于{@condition 目盲}或黑暗中，你仍可以清晰地看到任何不处于{@quickref 掩护||3||全身掩护}的事物。此外，你可以在该范围内看到{@condition 隐形}生物，除非这些生物对你躲藏成功。"
+        ]
+      },
+      {
+        "ENG_name": "Keen Senses",
+        "name": "敏锐感官",
+        "type": "entries",
+        "entries": [
+          "你在感知({@skill 察觉})检定上获得优势。"
+        ]
+      }
+    ]
+  }
+]

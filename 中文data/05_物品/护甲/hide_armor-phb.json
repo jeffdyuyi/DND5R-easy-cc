@@ -1,0 +1,23 @@
+[
+  {
+    "name": "兽皮甲",
+    "ENG_name": "Hide Armor",
+    "source": "PHB",
+    "page": 144,
+    "edition": "classic",
+    "type": "MA",
+    "rarity": "none",
+    "weight": 12,
+    "value": 1000,
+    "ac": 12,
+    "armor": true,
+    "entries": [
+      "一种由厚毛皮制作的粗糙护甲。常见使用人群包括：野蛮人部落、邪恶类人生物以及其它缺少资源制作更好护甲的人。"
+    ],
+    "basicRules": true,
+    "reprintedAs": [
+      "兽皮甲|XPHB"
+    ],
+    "srd": true
+  }
+]

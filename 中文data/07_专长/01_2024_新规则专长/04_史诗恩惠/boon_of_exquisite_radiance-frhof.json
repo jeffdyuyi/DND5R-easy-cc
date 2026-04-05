@@ -1,0 +1,49 @@
+[
+  {
+    "ENG_name": "Boon of Exquisite Radiance",
+    "name": "熠熠生辉之恩惠",
+    "source": "FRHoF",
+    "page": 42,
+    "category": "EB",
+    "prerequisite": [
+      {
+        "level": 19
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "max": 30
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Eternal Rest",
+        "name": "永恒安眠",
+        "type": "entries",
+        "entries": [
+          "被你降至0{@variantrule 生命值|XPHB}的生物无法变为亡灵。"
+        ]
+      },
+      {
+        "ENG_name": "Powerful Radiance",
+        "name": "磊落光明",
+        "type": "entries",
+        "entries": [
+          "当你进行一次造成光耀伤害的伤害掷骰时，你能够以每枚骰子可能掷出的最高值替代其骰值。此增益一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Love Bites",
+    "name": "爱之啃咬",
+    "source": "ABH",
+    "page": 10,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Endearing Pain",
+        "name": "惹人怜爱的痛苦",
+        "type": "entries",
+        "entries": [
+          "在你用近战武器或{@variantrule 徒手打击|XPHB}对一个生物造成伤害后，你可以立即使用一个{@variantrule 附赠动作|XPHB}使目标获得{@condition 魅惑|XPHB}状态，此状态持续到你的下个回合开始或直到你或你的盟友对其造成伤害。一旦你使用了这个好处，在完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}之前你无法再次使用它。"
+        ]
+      }
+    ]
+  }
+]

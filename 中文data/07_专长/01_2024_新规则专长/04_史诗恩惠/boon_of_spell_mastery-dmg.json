@@ -1,0 +1,12 @@
+[
+  {
+    "ENG_name": "Boon of Spell Mastery",
+    "name": "法术掌控之恩惠",
+    "source": "DMG",
+    "page": 232,
+    "type": "Boon",
+    "entries": [
+      "指定一个你可施放的1环术士、魔契师或法师法术。此后你可以随意施放该法术的最低环版本且无需消耗法术位。"
+    ]
+  }
+]

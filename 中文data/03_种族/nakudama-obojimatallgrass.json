@@ -1,0 +1,172 @@
+{
+  "race": [
+    {
+      "ENG_name": "Nakudama",
+      "name": "鸣玉族",
+      "source": "ObojimaTallGrass",
+      "page": 129,
+      "lineage": "VRGR",
+      "size": [
+        "S"
+      ],
+      "speed": {
+        "walk": 25,
+        "swim": 30
+      },
+      "ability": [
+        {
+          "choose": {
+            "weighted": {
+              "from": [
+                "str",
+                "dex",
+                "con",
+                "int",
+                "wis",
+                "cha"
+              ],
+              "weights": [
+                2,
+                1
+              ]
+            }
+          }
+        }
+      ],
+      "age": {
+        "mature": 10,
+        "max": 45
+      },
+      "languageProficiencies": [
+        {
+          "common": true,
+          "naku naku|ObojimaTallGrass": true
+        }
+      ],
+      "entries": [
+        "你的鸣玉族角色获得能在胧忆岛上穿行和虚张声势的特质。",
+        {
+          "ENG_name": "Ability Score Increase",
+          "name": "属性值加成",
+          "type": "entries",
+          "entries": [
+            "你选择的一个属性值增加2点，另一个你选择的属性值增加1点。"
+          ]
+        },
+        {
+          "ENG_name": "Age",
+          "name": "年龄",
+          "type": "entries",
+          "entries": [
+            "青年鸣玉族在出生后几周内就学会了在浅水中行走和游泳。他们在10岁时成年，平均寿命为45年。"
+          ]
+        },
+        {
+          "ENG_name": "Size",
+          "name": "体型",
+          "type": "entries",
+          "entries": [
+            "鸣玉族成年个体身高2至3英尺，平均体重50磅。你的体型为小型。"
+          ]
+        },
+        {
+          "ENG_name": "Speed",
+          "name": "速度",
+          "type": "entries",
+          "entries": [
+            "你的基础行走速度为25尺，并且你拥有30尺的游泳速度。"
+          ]
+        },
+        {
+          "ENG_name": "Amphibious",
+          "name": "水陆两栖",
+          "type": "entries",
+          "entries": [
+            "你可以在空气和水中呼吸。"
+          ]
+        },
+        {
+          "ENG_name": "Standing Leap",
+          "name": "立定跳远",
+          "type": "entries",
+          "entries": [
+            "你的跳远距离可达20尺，跳高距离可达15尺，无论是否有助跑。"
+          ]
+        },
+        {
+          "ENG_name": "Languages",
+          "name": "语言",
+          "type": "entries",
+          "entries": [
+            "你可以说、读、写通用语和纳库纳库语。"
+          ]
+        },
+        {
+          "ENG_name": "Grasping Tongue",
+          "name": "捕物舌",
+          "type": "entries",
+          "entries": [
+            "以一个附赠动作，你可以用舌卷鞭笞一个你能看见的15尺内不超过5磅重的物件，并将其拉取到你身边，用散打接住它或让它落在你脚边。如果该物件正被一个生物穿着或携带，该生物必须成功通过一次对抗力量检定，否则物件会被拉取离开它。"
+          ]
+        },
+        {
+          "ENG_name": "Latching Tongue",
+          "name": "附着舌",
+          "type": "entries",
+          "entries": [
+            "作为附赠动作，你可以延伸你的舌卷附着到一个比你至少大一级体型的表面或生物上，将自己拉向它。目标必须距离你不超过15尺。"
+          ]
+        }
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "subraces": [],
+      "fluff": {
+        "entries": [
+          "一份未品尝的甜点，一处未浸泡的温泉，一堆未共享的温暖火焰——所有这些都被一个致力于享受胧忆岛所提供的所有舒适与新奇事物的民族视为悲剧。对于岛屿上的其他民族来说，水陆两栖的鸣玉族似乎以一种热切和兴奋的态度参与所有事物。",
+          "鸣玉族倾向于避开飞地，选择岛上更国际化的聚居地。他们非常善于社交。茶馆、酒馆和旅馆的赞助人一定会听到鸣玉族洪亮的呱叫声与人群混杂在一起。",
+          {
+            "ENG_name": "Did I Ever Tell You the Story About...",
+            "name": "我有跟你讲过这个故事吗...",
+            "type": "entries",
+            "entries": [
+              "生命太短暂，不值得在不值得在夸张故事后文中讲述的任何东西上浪费时间。分享和收集故事是鸣玉族最珍视的传统之一。这是激励许多鸣玉族旅行岛屿或频繁参加社交聚会的动力。然而，一个高质量的故事不会凭空发生。任何鸣玉族都会告诉你，它是一部分生活体验和两部分表演技巧的结合，其中包括创作自由并允许至少一点夸张。这门艺术可以练习，但体验必须亲自获得。因此，鸣玉族倾向于定期外出寻找新颖的故事来分享。"
+            ]
+          },
+          {
+            "ENG_name": "Obojima's Earliest Inhabitants (Perhaps)",
+            "name": "胧忆岛的最早居民（或许）",
+            "type": "entries",
+            "entries": [
+              "虽然细节已在历史中迷失或在多年的讲故事中被夸大，但人们普遍认为鸣玉族是最早将胧忆岛称为家园的人。岛屿周围的几个地点指向一个远古的鸣玉族文明，许多聚居地似乎融入了鸣玉族的建筑，这些建筑以其饮水特性而著称。",
+              "其他表明更早鸣玉族年龄的证据来自那些充满强大鸣玉族女王神奇专长的故事。虽然描述常常过于戏剧化，但她的功绩似乎与最近的考古发现相符。"
+            ]
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Races/nakudama.webp"
+            },
+            "credit": "Scott Higginbotham",
+            "width": 5610,
+            "height": 5610
+          },
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Races/nakudama-eggs.webp"
+            },
+            "credit": "Almir Gusić",
+            "title": "鸣玉族鸡蛋",
+            "width": 2811,
+            "height": 2811
+          }
+        ]
+      }
+    }
+  ]
+}

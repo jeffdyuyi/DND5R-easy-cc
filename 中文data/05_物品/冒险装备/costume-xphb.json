@@ -1,0 +1,18 @@
+[
+  {
+    "name": "戏服",
+    "ENG_name": "Costume",
+    "source": "XPHB",
+    "page": 225,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 4,
+    "value": 500,
+    "entries": [
+      "若你穿着对应的戏服，你为模仿他人或模仿某一类人所作的任何属性检定都具有{@variantrule 优势|XPHB}。"
+    ],
+    "basicRules2024": true,
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

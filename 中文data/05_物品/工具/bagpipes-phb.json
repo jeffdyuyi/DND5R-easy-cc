@@ -1,0 +1,18 @@
+[
+  {
+    "name": "风笛",
+    "ENG_name": "Bagpipes",
+    "source": "PHB",
+    "page": 154,
+    "edition": "classic",
+    "type": "INS",
+    "rarity": "none",
+    "weight": 6,
+    "value": 3000,
+    "basicRules": true,
+    "reprintedAs": [
+      "风笛|XPHB"
+    ],
+    "srd": true
+  }
+]

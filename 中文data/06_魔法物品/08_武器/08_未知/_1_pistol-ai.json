@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "+1 Pistol",
+    "name": "恶毒 +1 手枪",
+    "source": "AI",
+    "page": 149,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "unknown (magic)",
+    "weight": 3,
+    "value": 25000,
+    "weaponCategory": "martial",
+    "property": [
+      "A|XPHB",
+      "LD|XPHB"
+    ],
+    "mastery": [
+      "侵扰|XPHB"
+    ],
+    "range": "30/90",
+    "dmg1": "1d10",
+    "dmgType": "P",
+    "firearm": true,
+    "weapon": true,
+    "ammoType": "枪械子弹|xphb",
+    "hasFluffImages": true,
+    "namePrefix": "恶毒 +1 ",
+    "bonusWeapon": "+1",
+    "entries": [
+      "使用这把武器进行攻击和伤害判定时，你有{=bonusWeapon}的加值。",
+      "当你使用这把魔法武器掷出20时，目标会额外受到7点{=dmgType}伤害。",
+      "{@note 注意：根据SRD，它是一个额外的{@damage 2d6} {=dmgType}伤害，尽管{@link 这是不正确的|https://rpg.stackexchange.com/a/174522/53884}。}"
+    ],
+    "_isVariant": true
+  }
+]

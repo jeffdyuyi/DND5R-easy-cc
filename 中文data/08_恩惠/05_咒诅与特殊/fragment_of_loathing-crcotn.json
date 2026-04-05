@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Fragment of Loathing",
+    "name": "憎恨碎片",
+    "source": "CRCotN",
+    "page": 214,
+    "type": "Fragment of Suffering",
+    "entries": [
+      {
+        "ENG_name": "Benefit",
+        "name": "增益",
+        "type": "entries",
+        "entries": [
+          "当一个生物用武器攻击或法术对你造成伤害时，你可以将你的仇恨集中在那个生物上。直到你的下一个回合结束，你对那个生物进行的攻击骰有优势。你一次只能将仇恨集中在一个生物上。"
+        ]
+      },
+      {
+        "ENG_name": "Drawback",
+        "name": "缺陷",
+        "type": "entries",
+        "entries": [
+          "忧郁的碎片"
+        ]
+      }
+    ]
+  }
+]

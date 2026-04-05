@@ -1,0 +1,83 @@
+[
+  {
+    "ENG_name": "Siphon Time",
+    "name": "虹吸时间",
+    "source": "GuideDrakkenheim",
+    "page": 196,
+    "level": 4,
+    "school": "T",
+    "subschools": [
+      "受污染的"
+    ],
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一个破碎的时钟，以及价值100gp的妄质碎片，该法术会消耗这些材料"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "{@i 当你施放这个法术时，你获得1层污染。}",
+      "你抓住范围内至多三个你所选择的生物周围的时间流，从中抽取秒数供自己使用。每个目标必须成功通过一次感知豁免检定，否则将在法术持续时间内受到此法术的影响。",
+      "受影响的生物不能进行反应。在其回合内，它必须选择移动、执行一个动作或一个附赠动作：目标只能三选一。",
+      "受此法術影響的生物可以花費其動作來嘗試拉回時間的線索。如果這樣做，它可以進行另一次感知豁免檢定。若豁免成功，此效應對其結束。",
+      "当至少一个其他生物受到此法术影响时，你在自己的每个回合获得一个额外动作。该动作只能用于进行攻击（仅限一次武器攻击）、施法、疾走、撤离、躲藏或使用物件动作。若你使用此动作施法，该法术必须是一个施法时间为一个动作的戏法。"
+    ],
+    "savingThrow": [
+      "感知"
+    ],
+    "miscTags": [
+      "SCL"
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Apothecary",
+          "name": "药剂师",
+          "source": "GuideDrakkenheim"
+        },
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "ENG_name": "Beast Sense",
+    "name": "野兽感官",
+    "source": "XPHB",
+    "page": 245,
+    "level": 2,
+    "school": "D",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "meta": {
+      "ritual": true
+    },
+    "entries": [
+      "你触碰一只自愿的野兽。在持续期间内，你可以借助该野兽的感官来感知周围事物，如同它们的感官是你的感官一般。以通过该野兽感官感知事物时，你同样会受益于它拥有的那些特殊感官。"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊",
+      "游侠"
+    ],
+    "display_school": "预言系",
+    "display_ritual": "仪式"
+  }
+]

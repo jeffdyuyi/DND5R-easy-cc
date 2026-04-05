@@ -1,0 +1,35 @@
+[
+    {
+        "ENG_name": "Hulking Figure",
+        "name": "壮硕身躯",
+        "source": "GrimHollowPG24",
+        "page": 116,
+        "category": "G",
+        "prerequisite": [
+            {
+                "level": 4,
+                "ability": [
+                    {
+                        "str": 13
+                    }
+                ]
+            }
+        ],
+        "ability": [
+            {
+                "str": 1
+            }
+        ],
+        "entries": [
+            "你的体型令人生畏，你的力量更是惊人。你获得以下增益。",
+            {
+                "ENG_name": "Imposing Bulk",
+                "name": "威压体量",
+                "type": "entries",
+                "entries": [
+                    "在决定你的负重能力以及你在推动、拉动或抬起重物时所能承载的重量时，你被视为体型大一级。此外，你在尝试推动一个生物或将生物击入{@condition 倒地|XPHB}状态的力量（{@skill 运动|XPHB}）检定中具有{@variantrule 优势|XPHB}。"
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "Club of the Forest Drake",
+    "name": "林龙短棒",
+    "source": "GriffonsSaddlebag2",
+    "page": 63,
+    "baseItem": "短棒|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "uncommon",
+    "weight": 2,
+    "weaponCategory": "简易",
+    "property": [
+      "L"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "B",
+    "entries": [
+      "这根木短棒的头部天然地形成了龙喉咬的形状。你可以用一个动作说出短棒的命令语并用它击打地面，使荆棘和狂乱的藤蔓涌现于地面，并覆盖一片15尺的锥形范围。范围内的每个生物必须成功通过一次DC 13的敏捷豁免检定，否则受到{@damage 2d6}挥砍伤害，并被荆棘和藤蔓{@condition 受擒}至多1分钟。被{@condition 受擒}的生物可以用动作进行一次DC 13的力量或敏捷检定，成功则挣脱。在被{@condition 受擒}生物的每回合结束时，它会因荆棘藤蔓的缠绕受到{@damage 1d6}穿刺伤害。这项属性一经使用，则其直到次日黎明前都无法再次使用。"
+    ],
+    "lootTables": [
+      "魔法物品表 F2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Club-of-the-Forest-Drake.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

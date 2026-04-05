@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Rod of Thought Projection",
+    "name": "思维投射权杖",
+    "source": "GriffonsSaddlebag2",
+    "page": 150,
+    "type": "RD|DMG",
+    "tier": "次要",
+    "rarity": "uncommon",
+    "entries": [
+      "持握此权杖期间，你可以用一个动作与120尺内一个自愿的类人生物建立心灵联系。联系持续至你专注于法术，目标主动关闭联系，或移动至距你120尺外为止。联系存续期间，你可与目标进行心灵交流。此外，作为建立联系所用动作的部分，或在联系仍存续期间的后续回合中以一个动作，你可以通过目标的感官感知世界——直至你的下回合开始前，你将透过其眼观看、以其耳聆听，并获得该生物具备的任何特殊感官。在此期间，你自身的视觉与听觉将暂时封闭，如同陷入{@condition 耳聋|PHB|耳聋}和{@condition 目盲|PHB|失明}一般。",
+      "若目标生物并非自愿，其必须进行一次DC 13的感知豁免，失败仍将建立心灵连接。该生物在进行豁免检定时会察觉到该效应。在每个目标生物的回合结束时，其可再次进行该感知豁免。若成功，连接中断且效果终止。一旦以此方式对非自愿生物使用该权杖，则这项词条直至次日黎明前都无法再次使用。"
+    ],
+    "lootTables": [
+      "魔法物品表 B2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Rod-of-Thought-Projection.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

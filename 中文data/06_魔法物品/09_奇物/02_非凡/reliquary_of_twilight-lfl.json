@@ -1,0 +1,14 @@
+[
+  {
+    "ENG_name": "Reliquary of Twilight",
+    "name": "暮光圣物匣",
+    "source": "LFL",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这个符之魔契包含伊西鲁遗弃的爪抓、鳞片或爪牙，许多人相信它是影泽中月亮的化身。当你佩戴暮光圣物匣时，你对晨潮的效应免疫。"
+    ],
+    "valueReference": 400,
+    "type": "W"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "ENG_name": "Field Spear",
+    "name": "野战矛",
+    "source": "ObojimaTallGrass",
+    "page": 159,
+    "type": "M",
+    "rarity": "none",
+    "weight": 1,
+    "value": 200,
+    "weaponCategory": "军用",
+    "property": [
+      "F",
+      "T",
+      "V"
+    ],
+    "range": "30/90",
+    "dmg1": "1d6",
+    "dmgType": "S",
+    "dmg2": "1d8",
+    "weapon": true,
+    "entries": [
+      "野战矛也被称为商人之刃，已被数百名商人和旅行者在穿越岛屿的探险中使用，证明它是一种实用且坚固的工具。其较短的柄约为标准矛的一半大小，其尖端更类似于宽刃或匕首，而非传统的矛尖。"
+    ]
+  }
+]

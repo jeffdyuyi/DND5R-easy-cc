@@ -1,0 +1,145 @@
+[
+  {
+    "ENG_name": "Eye of Vecna",
+    "name": "维克那法眼",
+    "source": "XDMG",
+    "page": 259,
+    "rarity": "artifact",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d4 + 4}",
+    "charges": 8,
+    "entries": [
+      "{@book 维克那|XDMG|8|维克那}是一名强大的法师。他行使魔法之力征讨，建立了一个恐怖的大帝国。然而，拥有强大力量的维克依然畏惧死亡，他采取手段，通过成为巫妖阻拦死亡的脚步。",
+      "一名名为凯斯的将军发动了叛乱，并在一场骇人的战争中结束了维克那的统治，维克那剩下的只有一只手掌和一只眼睛，这些可怖的神器仍试图在世上贯彻维克纳的意志。",
+      "维克那法眼Eye of Vecna和{@item 维克那魔掌|XDMG}是独立的神器，可能一起出现也可能被分开发现。法眼布满血丝，有如刚刚直接从眼眶中抽出。魔掌则是风干萎缩的左肢。",
+      {
+        "ENG_name": "Random Properties of the Eye and Hand",
+        "name": "法眼与魔掌的随机词条",
+        "type": "entries",
+        "entries": [
+          "维克纳法眼具有下列随机词条",
+          {
+            "type": "list",
+            "items": [
+              "1项{@table 神器词条; 次要增益词条|XDMG|次要增益}属性",
+              "1 项{@table 神器词条; 主要增益词条|XDMG|主要增益}属性",
+              "1项{@table 神器词条; 次要减益词条|XDMG|次要减益}属性"
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Attuning to the Eye",
+        "name": "同调法眼",
+        "type": "entries",
+        "entries": [
+          "要与法眼进行同调，你必须将其压入挖空的眼眶内，法眼会自行嫁接入你的头部并留在其位置直至你死亡。此后法眼一旦被取下，你将立即死亡。"
+        ]
+      },
+      {
+        "ENG_name": "Properties of the Eye",
+        "name": "法眼词条",
+        "type": "entries",
+        "entries": [
+          "与法眼维持同调期间，你的阵营为中立邪恶，且你获得以下增益：",
+          {
+            "type": "list",
+            "style": "list-hang-notitle",
+            "items": [
+              {
+                "ENG_name": "Truesight",
+                "name": "真实视觉",
+                "type": "item",
+                "entries": [
+                  "你具有240尺的{@sense 真实视觉|XPHB}。"
+                ]
+              },
+              {
+                "ENG_name": "Spellcasting",
+                "name": "施法",
+                "type": "item",
+                "entries": [
+                  "法眼具有8充能，并在每日黎明时重获{@dice 1d4 + 4}已消耗的充能。你能以法眼施展维克纳法眼法术表中的法术（豁免{@dc 18}）。表中表明了你施展对应的法术需要消耗多少充能。每当你以法眼施展法术时，维克纳有{@chance 5}的概率撕裂你的灵魂并将之吞噬，然后如控制傀儡一般控制你的躯体。这种情况下，你成为DM控制的NPC。",
+                  {
+                    "type": "table",
+                    "caption": "维克那法眼法术",
+                    "colStyles": [
+                      "col-10",
+                      "col-2 text-center"
+                    ],
+                    "colLabels": [
+                      "法术",
+                      "消耗充能"
+                    ],
+                    "rows": [
+                      [
+                        "{@spell 鹰眼术|XPHB}",
+                        "2"
+                      ],
+                      [
+                        "{@spell 疯狂冠冕|XPHB}",
+                        "1"
+                      ],
+                      [
+                        "{@spell 解离术|XPHB}",
+                        "4"
+                      ],
+                      [
+                        "{@spell 支配怪物|XPHB}",
+                        "5"
+                      ],
+                      [
+                        "{@spell 摄心目光|XPHB}",
+                        "4"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              {
+                "ENG_name": "X-ray Vision",
+                "name": "X光视野",
+                "type": "item",
+                "entries": [
+                  "你能够以{@action 魔法|XPHB}动作获得距离30尺的X光视野，持续1分钟。对你而言，此视觉范围内的实体均为透明状态，并且不会阻碍光线通过。此视觉可以穿透1尺厚的石头、1寸厚的普通金属、或是至多3尺厚的木头或泥土。更厚的物件，或是一层铅片，将阻碍这种视觉。"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Destroying the Eye and Hand",
+        "name": "摧毁法眼和魔掌",
+        "type": "entries",
+        "entries": [
+          "如果维克那法眼和{@item 维克那魔掌|XDMG}与同一生物维持同调，并且该生物被{@item 凯斯之剑|XDMG}斩杀，则法眼和魔掌即时迸出火焰烧成灰烬，并且被摧毁。任何其他摧毁法眼和魔掌的尝试似乎也是可行的，但这些神器会在维克那的其中一个隐藏宝库中重现，等着再临人间。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "疯狂冠冕|xphb"
+        ],
+        "2": [
+          "鹰眼术|xphb"
+        ],
+        "4": [
+          "解离术|xphb",
+          "摄心目光|xphb"
+        ],
+        "5": [
+          "支配怪物|xphb"
+        ]
+      }
+    },
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 0,
+    "fluff": {},
+    "type": "W"
+  }
+]

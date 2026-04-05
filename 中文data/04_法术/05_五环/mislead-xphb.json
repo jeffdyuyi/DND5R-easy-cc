@@ -1,0 +1,55 @@
+[
+  {
+    "ENG_name": "Mislead",
+    "name": "假象术",
+    "source": "XPHB",
+    "page": 299,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 5,
+    "school": "I",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你获得{@condition 隐形|XPHB}状态，同时在你站的地方出现一个和你一样的幻象分身。分身会持续存在至法术持续时间结束；但如果你发动攻击、造成伤害或施展法术，则隐形随之结束。",
+      "以一个{@action 魔法|XPHB}动作，你可以令分身以至多两倍于你的{@variantrule 速度|XPHB}移动并可以令其打手势、说话，以及以任何你指定的方式行事。它无法被触及且无法受伤。",
+      "你可以通过分身的眼睛视物，用分身的耳朵聆听，如同你处于它的位置一样。"
+    ],
+    "conditionInflict": [
+      "隐形"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "幻术系"
+  }
+]

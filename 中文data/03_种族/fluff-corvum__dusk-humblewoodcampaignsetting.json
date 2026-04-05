@@ -1,0 +1,25 @@
+{
+  "raceFluff": [
+    {
+      "ENG_name": "Corvum (Dusk)",
+      "name": "鸦族 (昏)",
+      "source": "HumblewoodCampaignSetting",
+      "_copy": {
+        "ENG_name": "Corvum",
+        "name": "鸦族",
+        "source": "HumblewoodCampaignSetting",
+        "_mod": {
+          "entries": {
+            "mode": "prependArr",
+            "items": {
+              "type": "section",
+              "entries": [
+                "作为一个黄昏科维尔姆，你更习惯于社会的喧嚣而不是森林的荒野。你理解微妙的社会暗示，就像猎人理解他们的猎物一样，并且你同样迅速地利用优势。"
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "New Life",
+    "name": "新生",
+    "source": "ObojimaTallGrass",
+    "page": 246,
+    "type": "P",
+    "rarity": "rare",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "此药水的酿酒师选择一个他们熟悉的类人生物形象。饮用后，你将呈现该选民生物的幻象形态。这种幻象伪装在各方面都完美无缺，既匹配该生物的面容也匹配其声音。只有具备侦测魔法或看穿幻象（如通过{@sense 真实视觉}）能力的生物才能识破此伪装。此药水的效应持续7年或直到被移除，如同诅咒一般。这不计入你可同时作用于身体的药水数量限制。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 53|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/new-life.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1655,
+          "height": 1655
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

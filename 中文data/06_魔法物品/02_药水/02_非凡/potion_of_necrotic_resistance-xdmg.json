@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Potion of Necrotic Resistance",
+    "name": "暗蚀抗性药水",
+    "source": "XDMG",
+    "page": 289,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "HotB"
+    ],
+    "type": "P|XPHB",
+    "resist": [
+      "暗蚀"
+    ],
+    "rarity": "uncommon",
+    "weight": 0.5,
+    "hasRefs": true,
+    "entries": [
+      "{#itemEntry 抗性药水|XDMG}"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "valueReference": 200
+  }
+]

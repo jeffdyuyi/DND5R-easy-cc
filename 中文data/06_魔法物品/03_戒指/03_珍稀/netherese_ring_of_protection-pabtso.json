@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Netherese Ring of Protection",
+    "name": "耐瑟瑞尔防护戒指",
+    "source": "PaBTSO",
+    "page": 50,
+    "type": "RG|DMG",
+    "rarity": "rare",
+    "reqAttune": true,
+    "bonusAc": "+1",
+    "bonusSavingThrow": "+4",
+    "entries": [
+      "佩戴这枚戒指期间，你的AC和豁免获得+1加值。",
+      "这枚戒指由一块神秘的绿色玻璃制成，其强度超过钢铁。它具有一个额外的特性，即让佩戴者不太可能掉落或丢失佩戴戒指的手中持有的任何物品。佩戴者在进行豁免检定或检定以避免掉落或被解除佩戴手中物品时，会获得+4的加值。"
+    ],
+    "valueReference": 4000
+  }
+]

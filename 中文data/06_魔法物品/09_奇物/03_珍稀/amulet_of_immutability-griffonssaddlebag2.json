@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Amulet of Immutability",
+    "name": "不变护符",
+    "source": "GriffonsSaddlebag2",
+    "page": 34,
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这件精金护符能在你不自愿时保护你免受会将你变化的魔法之影响。在你佩戴着此护符期间，你为抵抗任何环阶数不大于五环的，会将你变化或对你造成控制的变化学派法术（如{@spell 变巨/缩小术|PHB}、{@spell 浮空术|PHB}、{@spell 缓慢术|PHB}）而进行的豁免具有优势。",
+      "此外，当你成为{@spell 变形术|PHB}法术的目标时，你可以选择令你为抵抗此法术的豁免检定直接判为成功。"
+    ],
+    "lootTables": [
+      "魔法物品表 G2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Amulet-of-Immutability.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,73 @@
+[
+  {
+    "ENG_name": "Entangle",
+    "name": "纠缠术",
+    "source": "PHB",
+    "page": 238,
+    "srd": true,
+    "referenceSources": [
+      "TftYP-TSC",
+      "AZfyT",
+      "LR",
+      "US"
+    ],
+    "reprintedAs": [
+      "纠缠术|XPHB"
+    ],
+    "level": 1,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 90
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "在施法距离内的地面上指定一点，并以其为源点蔓延出 20 尺方形区域的杂草和藤蔓。在法术持续时间内，这片被植物覆盖的区域变为{@quickref 困难地形||3}。",
+      "在你施展法术时，该区域内的生物必须成功通过一次力量豁免，否则将因为这些缠绕的植物陷入{@condition 束缚}状态，直到法术终止。一个因此被{@condition 束缚}的生物可以使用其动作进行一次力量检定以对抗该法术的豁免 DC，检定成功则摆脱束缚。",
+      "法术终止时，所召唤的植物随即枯萎。"
+    ],
+    "conditionInflict": [
+      "束缚"
+    ],
+    "savingThrow": [
+      "strength"
+    ],
+    "abilityCheck": [
+      "力量"
+    ],
+    "areaTags": [
+      "Q"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊",
+      "游侠"
+    ],
+    "display_school": "咒法系",
+    "display_savingThrow": [
+      "力量"
+    ]
+  }
+]

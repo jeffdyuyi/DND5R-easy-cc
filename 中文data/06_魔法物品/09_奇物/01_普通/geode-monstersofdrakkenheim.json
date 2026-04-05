@@ -1,0 +1,174 @@
+[
+  {
+    "ENG_name": "Geode",
+    "name": "晶洞",
+    "source": "MonstersOfDrakkenheim",
+    "page": 370,
+    "type": "Dele|MonstersOfDrakkenheim",
+    "rarity": "none",
+    "weight": 20,
+    "value": 500000,
+    "entries": [
+      "妄质是一种由降落在德拉肯海姆的流星留下的魔法矿物。它出现在由半透明、锋利边缘的水晶组成的晶洞簇中，这些水晶反射着八色光。这些邪术岩石以不和谐的音调轻柔地嗡鸣，并在黑夜或暴露于魔法时明亮发光。在德拉肯海姆各处都能发现妄质沉积物，它们常常像水晶苔藓一样融合在石质街道和建筑物中。",
+      "一个典型的幻觉碎片大约有手指那么大。水晶可能有拳头大小或略大，晶洞可能有南瓜那么大。巨大的簇可能长得比人还高。",
+      {
+        "type": "table",
+        "caption": "幻觉水晶",
+        "colLabels": [
+          "水晶 体型",
+          "市场价值",
+          "重量",
+          "AC",
+          "HP",
+          "提取时间"
+        ],
+        "colStyles": [
+          "col-3",
+          "col-2 text-center",
+          "col-2 text-center",
+          "col-1 text-right",
+          "col-1 text-right",
+          "col-3 text-center"
+        ],
+        "rows": [
+          [
+            "{@item 碎片|MonstersOfDrakkenheim}",
+            "10金币",
+            "1/4磅",
+            "15",
+            "5",
+            "1个动作"
+          ],
+          [
+            "{@item 碎片|MonstersOfDrakkenheim}",
+            "100金币",
+            "1/2磅",
+            "17",
+            "10",
+            "1分钟"
+          ],
+          [
+            "{@item 碎子|MonstersOfDrakkenheim}",
+            "500金币",
+            "1磅",
+            "19",
+            "15",
+            "5分钟"
+          ],
+          [
+            "{@item 水晶|MonstersOfDrakkenheim}",
+            "1000金币",
+            "2磅",
+            "21",
+            "20",
+            "30分钟"
+          ],
+          [
+            "{@item 晶洞|MonstersOfDrakkenheim}",
+            "5000金币",
+            "20磅+",
+            "23",
+            "25",
+            "1小时"
+          ],
+          [
+            "{@item 巨大簇|MonstersOfDrakkenheim}",
+            "无价之宝",
+            "8000磅以上",
+            "25",
+            "50",
+            "7天"
+          ]
+        ]
+      },
+      {
+        "ENG_name": "Delerium Properties",
+        "name": "妄质特性",
+        "type": "section",
+        "entries": [
+          "所有幻觉样本无论大小都具有以下特征：",
+          {
+            "type": "list",
+            "items": [
+              "{@variantrule 免疫|XPHB|免疫} 对暗蚀、毒素和心灵伤害；以及非魔法武器的钝击、穿刺和挥砍伤害。",
+              "{@variantrule 抗性|XPHB|抗性} 对强酸、寒冷、火焰和闪电伤害的抗性；以及对魔法武器的挥砍和穿刺伤害的抗性。",
+              "{@variantrule 易伤|XPHB|易伤} 对魔法武器的钝击伤害易伤。",
+              "除非被包含在{@spell 反魔法场|XPHB}中，否则妄质碎片会在{@variantrule 生命值|XPHB}降至0时碎裂成毫无价值的灰烬。然而，谵妄石英被摧毁时会释放一个随机的{@table 奥术异常|MonstersOfDrakkenheim}。"
+            ]
+          },
+          {
+            "type": "entries",
+            "entries": [
+              {
+                "ENG_name": "Delerium Hazards",
+                "name": "妄质危害",
+                "type": "entries",
+                "entries": [
+                  "当类人生物在回合中第一次无防护装备接触妄质，或在回合结束时与妄质有身体接触时，他们必须进行一次DC 10的体质豁免检定，否则受到{@damage 1d6}暗蚀伤害并获得1级{@condition 污染|MonstersOfDrakkenheim}状态。"
+                ]
+              },
+              {
+                "ENG_name": "Delerium Harvesting",
+                "name": "开采妄质",
+                "type": "entries",
+                "entries": [
+                  "德拉肯海姆发现的妄质通常与地面或岩石建筑物融合在一起。需要使用铲子、镐、锤子和凿子等手持采矿装备小心提取。请查阅表格以确定角色提取妄质所需的时间。若缺乏适当装备，提取时间将延长十倍。没有重型装备或强大魔法，无法提取巨大簇。"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Uses for Delerium",
+        "name": "妄质的诸多用途",
+        "type": "section",
+        "entries": [
+          "谵妄拥有巨大的奥术潜力。除了贸易，晶石还有多种用途：",
+          {
+            "type": "entries",
+            "entries": [
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "ENG_name": "Spell Component",
+                    "name": "施法成分",
+                    "type": "entries",
+                    "entries": [
+                      "妄质可作为{@item 奥术法器|XPHB}或材料成分用于术士、魔契师或法师法术列表上的任意法术。当施放需要花费材料成分的法术时，施法者可以使用价值等同于或高于所需花费的妄质来替代。"
+                    ]
+                  },
+                  {
+                    "ENG_name": "Magic Items",
+                    "name": "魔法物品",
+                    "type": "entries",
+                    "entries": [
+                      "妄质是一种用于制造各类魔法物品的卓越材质。基础规则中描述的所有现有魔法物品都可以用妄质制造。碎片、碎子、水晶和晶洞可分别用于制造非普通、珍稀、极珍稀和传奇物品。在GM的裁量下，能够施放5环或更高法术的角色可以在休整期学习制造属于自己的魔法物品的技巧。"
+                    ]
+                  },
+                  {
+                    "ENG_name": "Stable Delerium",
+                    "name": "稳定妄质",
+                    "type": "entries",
+                    "entries": [
+                      "使用妄质制作魔法物品的过程会使水晶变得稳定。除非另有说明，角色在接触或处理稳定妄质时不会受到伤害，也不会面临{@condition 污染|MonstersOfDrakkenheim}的风险。稳定妄质受损和摧毁的方式与其类型的正常魔法物品相同。"
+                    ]
+                  },
+                  {
+                    "ENG_name": "Delerium Dust",
+                    "name": "妄质尘",
+                    "type": "entries",
+                    "entries": [
+                      "妄质尘是通过将水晶相互研磨制成的优质粉末。除非在{@spell 反魔法场|XPHB}中进行，否则这种研磨过程极其危险。妄质尘可用于炼金术，作为施法成分、药剂酿制的化学试剂，或混入用于抄写法术卷轴的墨水中。{@variantrule 临时武器|XPHB}与弹药。妄质碎片可用作{@item 投石索|XPHB}的弹药或制成临时的{@item 短棒|XPHB}。此类武器和弹药会造成额外{@damage 1d6}暗蚀伤害，被击中的类人生物必须进行DC 10体质豁免检定，否则获得1级{@condition 污染|MonstersOfDrakkenheim}状态。以此方式用作弹药的妄质会被摧毁。"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,140 @@
+[
+  {
+    "name": "暗影沼泽专家",
+    "ENG_name": "Shadowmoor Expert",
+    "source": "LFL",
+    "edition": "one",
+    "ability": [
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "dex",
+              "int",
+              "cha"
+            ],
+            "weights": [
+              2,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "dex",
+              "int",
+              "cha"
+            ],
+            "weights": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      }
+    ],
+    "feats": [
+      {
+        "影沼咒术师|lfl": true
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "acrobatics": true,
+        "deception": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "glassblower's tools": true
+      }
+    ],
+    "startingEquipment": [
+      {
+        "a": [
+          "匕首|xphb",
+          "玻璃匠工具|xphb",
+          "背包|xphb",
+          "捕猎陷阱|xphb",
+          "油灯|xphb",
+          {
+            "item": "燃油|xphb",
+            "quantity": 3,
+            "displayName": "燃油（3扁瓶）"
+          },
+          "旅行服装|xphb",
+          "水袋|xphb",
+          {
+            "value": 800
+          }
+        ],
+        "b": [
+          {
+            "value": 5000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability Scores:",
+            "name": "属性值：",
+            "type": "item",
+            "entry": "敏捷、智力、魅力"
+          },
+          {
+            "ENG_name": "Feat:",
+            "name": "专长：",
+            "type": "item",
+            "entry": "{@feat 影沼咒术师|LFL}"
+          },
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 特技|XPHB}和{@skill 欺瞒|XPHB}"
+          },
+          {
+            "ENG_name": "Tool Proficiency:",
+            "name": "工具熟练项：",
+            "type": "item",
+            "entry": "{@item 玻璃匠工具|XPHB}"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "选择A或B：(A) {@item 匕首|XPHB}、{@item 玻璃匠工具|XPHB}、{@item 背包|XPHB}、{@item 捕猎陷阱|XPHB}、{@item 油灯|XPHB}、{@item 燃油|XPHB}（3瓶）、{@item 旅行服装|XPHB}、{@item 水袋|XPHB}，8 GP；或(B) 50 GP"
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "你来自暗影沼泽或已研究它多年。这是一个阴郁、混乱的地点，永远被苍白的月光照亮。你或许凭借机智和狡黠在暗影沼泽的无情状态中幸存，又或者用力量和勇气将威胁挡在堡垒之外。无论你身处何地，你都敏锐地意识到友谊是一种珍稀的商品。你相信知道该信任谁、该与谁保持距离不仅是实用的——这常常是生命或死亡的问题。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "backgrounds/LFL/Shadowmoor Expert.webp"
+          },
+          "credit": "Aurore Folny",
+          "width": 1700,
+          "height": 1030
+        }
+      ]
+    },
+    "hasFluff": true,
+    "hasFluffImages": true
+  }
+]

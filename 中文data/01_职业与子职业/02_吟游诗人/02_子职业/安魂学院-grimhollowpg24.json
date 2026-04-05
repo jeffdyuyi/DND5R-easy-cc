@@ -1,0 +1,136 @@
+{
+  "ENG_name": "College of Requiems",
+  "name": "安魂学院",
+  "shortName": "安魂曲",
+  "source": "GrimHollowPG24",
+  "className": "吟游诗人",
+  "classSource": "XPHB",
+  "page": 66,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "known": {
+        "3": [
+          {
+            "choose": "level=0|school=n",
+            "count": 2
+          }
+        ]
+      },
+      "prepared": {
+        "6": [
+          "活化死尸|XPHB"
+        ]
+      }
+    }
+  ],
+  "subclassSpells": [
+    "活化死尸|XPHB"
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "College of Requiems",
+      "name": "安魂学院",
+      "source": "GrimHollowPG24",
+      "page": 66,
+      "className": "吟游诗人",
+      "classSource": "XPHB",
+      "subclassShortName": "安魂曲",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "entries": [
+        "{@i 吟唱死亡之歌}",
+        "演奏充满悲伤和弦与哀悼副歌的阴森旋律，安魂学院唤醒了亡者的骸骨。安魂曲吟游诗人将死灵魔法编织进他们的葬礼歌曲中，以控制和增强一群亡灵仆从。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "寒颤旋律|吟游诗人|XPHB|安魂曲|GrimHollowPG24|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "拨动心弦|吟游诗人|XPHB|安魂曲|GrimHollowPG24|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Chilling Melody",
+      "name": "寒颤旋律",
+      "source": "GrimHollowPG24",
+      "page": 66,
+      "className": "吟游诗人",
+      "classSource": "XPHB",
+      "subclassShortName": "安魂曲",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你选择学习两个死灵戏法。这些法术对你而言视为吟游诗人法术，但不计入你所知的戏法数量。"
+      ]
+    },
+    {
+      "ENG_name": "Pluck the Heartstrings",
+      "name": "拨动心弦",
+      "source": "GrimHollowPG24",
+      "page": 66,
+      "className": "吟游诗人",
+      "classSource": "XPHB",
+      "subclassShortName": "安魂曲",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你的诗人激励可以拨动生命的纽带。每个拥有你给予的诗人激励骰的生物可以将其用于以下效应之一。",
+        {
+          "ENG_name": "Defense",
+          "name": "防御",
+          "type": "entries",
+          "entries": [
+            "当该生物的生命值被缩小到0{@variantrule 生命值|XPHB}但未被直接杀死时，该生物可以掷一次诗人激励骰，改为缩小到掷出的诗人激励骰{@variantrule 生命值|XPHB}数值。"
+          ]
+        },
+        {
+          "ENG_name": "Offense",
+          "name": "进攻",
+          "type": "entries",
+          "entries": [
+            "在该生物以攻击检定命中目标后，该生物可以掷一次诗人激励骰并将掷出的数值作为此次攻击的额外暗蚀伤害。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Stir the Bones",
+      "name": "唤醒骸骨",
+      "source": "GrimHollowPG24",
+      "page": 66,
+      "className": "吟游诗人",
+      "classSource": "XPHB",
+      "subclassShortName": "安魂曲",
+      "subclassSource": "GrimHollowPG24",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "你总是准备有{@spell 活化死尸|XPHB}法术。该法术对你而言视为吟游诗人法术。",
+        "当你消耗一次诗人激励的使用次数时，选择60尺内你控制的亡灵生物，数量最多等于你的魅力调整值（至少一个生物）。这些选民生物各自获得一个诗人激励骰。这些额外的诗人激励骰不计入你的限制。",
+        "当你控制的一个亡灵生物在攻击检定上消耗一个诗人激励骰时，如果该攻击命中，它还可以将诗人激励骰上掷出的数值添加到攻击的伤害掷骰上。"
+      ]
+    },
+    {
+      "ENG_name": "Dual Death",
+      "name": "双重死亡",
+      "source": "GrimHollowPG24",
+      "page": 66,
+      "className": "吟游诗人",
+      "classSource": "XPHB",
+      "subclassShortName": "安魂曲",
+      "subclassSource": "GrimHollowPG24",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "当你施放一个仅以单一生物为目标的死灵法术时，你可以使其同时以范围内第二个生物为目标。",
+        "一旦你使用了此特性，在完成一次{@variantrule 长休|XPHB}前无法再次使用。你也可以通过消耗一次诗人激励骰子来复原其使用次数（无需动作）。"
+      ]
+    }
+  ],
+  "hasFluff": true,
+  "hasFluffImages": true
+}

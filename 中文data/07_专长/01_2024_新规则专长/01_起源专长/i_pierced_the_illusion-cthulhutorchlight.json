@@ -1,0 +1,37 @@
+[
+    {
+        "ENG_name": "I Pierced the Illusion",
+        "name": "我曾冲破幻象",
+        "source": "CthulhuTorchlight",
+        "page": 0,
+        "category": "O",
+        "entries": [
+            "你曾遭遇一些奇诡而可怕的事件，而其隐秘性令其更显恐怖。一座城镇可能看起来无辜，直到它将毫无戒心的访客拖入精心照料的祭祀花园，或是在一个黑暗暴风雨之夜收留你的家族实际上是一群饥饿的食人族。你幸存下来是因为你识破了它们的伪装并逃脱，或是率先采取了行动。",
+            "你获得以下增益。",
+            {
+                "ENG_name": "Clear Senses",
+                "name": "洞彻感知",
+                "type": "entries",
+                "entries": [
+                    "若你在你的回合开始时已陷入{@condition 魅惑|XPHB}状态，投掷一次{@dice d20}。若骰值不低于10，你不再具有此状态。"
+                ]
+            },
+            {
+                "ENG_name": "Ear for Falsehood",
+                "name": "闻听破谎",
+                "type": "entries",
+                "entries": [
+                    "当一名NPC对你说话时，你能够使用此能力以判断他们是否在说谎。你无法得知他们所隐瞒的真相或是他们说谎的理由，仅可知他们陈述中存在故意的谬误。你能够使用此增益的次数等于你的{@variantrule 熟练|XPHB|熟练加值}。当你完成一次{@variantrule 长休|XPHB}时你重获所有已消耗的使用次数。"
+                ]
+            },
+            {
+                "ENG_name": "Subtle Interrogation",
+                "name": "巧妙审问",
+                "type": "entries",
+                "entries": [
+                    "你对正与你交谈的生物进行的洞察检定具有{@variantrule 优势|XPHB}。"
+                ]
+            }
+        ]
+    }
+]

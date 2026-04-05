@@ -1,0 +1,37 @@
+[
+  {
+    "ENG_name": "+1 Light Repeating Crossbow",
+    "name": "+1 轻型连弩",
+    "source": "XDMG",
+    "page": 324,
+    "type": "R",
+    "rarity": "uncommon",
+    "weight": 5,
+    "weaponCategory": "simple",
+    "property": [
+      "A",
+      "2H"
+    ],
+    "range": "40/160",
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "crossbow": true,
+    "weapon": true,
+    "entries": [
+      "使用这把魔法武器进行攻击和伤害判定时，你会获得{=bonusWeapon}的额外加成。"
+    ],
+    "ammoType": "弩矢|PHB",
+    "namePrefix": "+1 ",
+    "srd52": true,
+    "basicRules2024": true,
+    "bonusWeapon": "+1",
+    "classFeatures": [
+      "仿制魔法物品|奇械师|efa|2|efa"
+    ],
+    "lootTables": [
+      "武备 - 非普通|XDMG"
+    ],
+    "_isVariant": true,
+    "valueReference": 400
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Boon of the Night Spirit",
+    "name": "暗夜精魂之恩惠",
+    "source": "DMG",
+    "page": 232,
+    "reprintedAs": [
+      {
+        "uid": "暗夜精魂之恩惠|XPHB",
+        "tag": "feat"
+      }
+    ],
+    "type": "Boon",
+    "entries": [
+      "当你完全身处微光光照或黑暗环境时，可以用一个动作进入{@condition 隐形}。你保持{@condition 隐形}直到你执行一个动作或一个反应为止。"
+    ]
+  }
+]

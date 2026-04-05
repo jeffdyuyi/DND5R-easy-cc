@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "Canseco Bat",
+    "name": "坎塞科蝙蝠",
+    "source": "ObojimaTallGrass",
+    "page": 168,
+    "baseItem": "战锤|PHB",
+    "type": "M",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "weight": 2,
+    "weaponCategory": "军用",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "B",
+    "dmg2": "1d10",
+    "bonusWeapon": "+1",
+    "entries": [
+      "这根棒球棒使用+1战锤的数据。如果一个敌对生物在使用这根棒球棒时用远程法术攻击未能命中你，你可以使用你的反应将攻击重定向至你能看见的30尺内的另一个生物，使用这把武器的攻击加值进行新的攻击检定。一旦你使用了这个属性，直到下一个拂晓前你都不能再次使用。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/canseco-bat.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 3008,
+          "height": 3008
+        }
+      ]
+    }
+  }
+]

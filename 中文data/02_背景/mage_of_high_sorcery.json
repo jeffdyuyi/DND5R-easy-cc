@@ -1,0 +1,162 @@
+[
+  {
+    "name": "高等术法会法师",
+    "ENG_name": "Mage of High Sorcery",
+    "source": "DSotDQ",
+    "page": 30,
+    "feats": [
+      {
+        "高等术法学徒|dsotdq": true
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "arcana": true,
+        "history": true
+      }
+    ],
+    "languageProficiencies": [
+      {
+        "anyStandard": 2
+      }
+    ],
+    "startingEquipment": [
+      {
+        "_": [
+          "墨水(1盎司/瓶)|phb",
+          "墨水笔|phb",
+          "普通服装|phb",
+          {
+            "item": "小包|phb",
+            "containsValue": 1000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 奥秘}, {@skill 历史}"
+          },
+          {
+            "ENG_name": "Languages:",
+            "name": "语言",
+            "type": "item",
+            "entry": "任选两项"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "一瓶 {@item 墨水(1盎司/瓶)|PHB|一瓶彩色墨水}，一支{@item 墨水笔|phb}，一套{@item 普通服装|phb}，以及一个装有10 gp的 {@item 小包|phb}"
+          }
+        ]
+      },
+      {
+        "ENG_name": "Feature: Initiate of High Sorcery",
+        "name": "特性：高等术法学徒",
+        "type": "entries",
+        "entries": [
+          "你获得了{@feat 高等术法学徒|DSotDQ} 专长",
+          "大法师的成员可以在大法师塔得到免费的食物和住宿，也可以在其他大法师的家中借宿一宿。"
+        ],
+        "data": {
+          "isFeature": true
+        }
+      },
+      {
+        "ENG_name": "Building a Mage of High Sorcery Character",
+        "name": "构建大法师塔的巫师",
+        "type": "entries",
+        "entries": [
+          "大法师通常欢迎吟游诗人，法师以及魔契师，任何子职都可以。通过奉献，或是天生就拥有魔法能力的施法者并不受传统的法师欢迎。但精明的大法师们也鲜少会错过这些拥有天赋的个体。即使是略通法术的战士们，也可能在大法师的三条道路中找到自己的位置。",
+          {
+            "ENG_name": "Mage of High Sorcery Trinkets",
+            "name": "大法师塔的巫师饰品",
+            "type": "entries",
+            "entries": [
+              "当你创建角色投掷起始饰品时，你能投掷大法师塔的巫师饰品表作为{@item 饰品|phb|饰品表}中饰品表的替代。",
+              {
+                "type": "table",
+                "caption": "大法师塔的巫师饰品",
+                "colLabels": [
+                  "d6",
+                  "饰品"
+                ],
+                "colStyles": [
+                  "col-1 text-center",
+                  "col-11"
+                ],
+                "rows": [
+                  [
+                    "1",
+                    "一份未开封的信，来自你的启蒙导师。"
+                  ],
+                  [
+                    "2",
+                    "一份未开封的信，来自你的启蒙导师。"
+                  ],
+                  [
+                    "3",
+                    "一份卷轴，上面写有一个难解的魔法公式"
+                  ],
+                  [
+                    "4",
+                    "一个镶有宝石的奇异装置，可以折叠出神秘的形状。"
+                  ],
+                  [
+                    "5",
+                    "一个印有大法师三月印记的袋子或法术书。"
+                  ],
+                  [
+                    "6",
+                    "一块能洞见不可视黑月-努塔瑞Nuitari的镜片。"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "你的魔法天赋引起了高魔法师协会的注意，这是一个研究魔法并防止其滥用的施法者组织。你在法师中受过训练，但你是否将面临成为该组织正式成员所需的危险测试还有待决定。你对研究魔法的热情可能已经使你倾向于组织的三个派系之一：仁慈的白袍会，追求平衡的红袍会，或者无情的黑袍会。",
+        "在克莱恩世界中，许多人将高阶魔法师称为高阶法师。然而，这个组织不仅仅接受法师，还包括了术师、魔契师以及其他施法者在他们的行列中。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "backgrounds/DSotDQ/Mage of High Sorcery.webp"
+          },
+          "title": "高等术法会的黑、红、白袍命令",
+          "credit": "Linda Lithén",
+          "width": 1700,
+          "height": 1223
+        }
+      ]
+    },
+    "fromFeature": {
+      "feats": true
+    },
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "prerequisite": [
+      {
+        "campaign": [
+          "龙枪"
+        ]
+      }
+    ],
+    "translator": "不全书",
+    "edition": "one"
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "ENG_name": "Whitestone",
+    "name": "白石",
+    "source": "TalDoreiCampaignSettingReborn",
+    "page": 75,
+    "type": "TG",
+    "rarity": "unknown (magic)",
+    "entries": [
+      "洁羽山脉的{@book 洁羽山脉|TalDoreiCampaignSettingReborn|3|洁羽山脉}中残留的奥术法力数量极其庞大，对惑控法术异常敏感。融入至少一盎司白石制成的魔法物品仅需其他魔法物品四分之一的时间即可完成创造。{@book 埃芒|TalDoreiCampaignSettingReborn|3|团结之城埃芒}的一些炼金师发现，用特定强酸溶解白石后会留下纯净的{@item 残渣|TalDoreiCampaignSettingReborn}，当此类材质不易获取时，可替代昂贵的法术成分。"
+    ]
+  }
+]

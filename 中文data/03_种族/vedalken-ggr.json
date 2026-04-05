@@ -1,0 +1,196 @@
+[
+  {
+    "name": "维多肯",
+    "ENG_name": "Vedalken",
+    "source": "GGR",
+    "page": 21,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "int": 2,
+        "wis": 1
+      }
+    ],
+    "traitTags": [
+      "技能加值骰",
+      "工具加值骰"
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "other": true,
+        "anyStandard": 1
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "choose": {
+          "from": [
+            "奥秘",
+            "历史",
+            "调查",
+            "医药",
+            "表演",
+            "巧手"
+          ]
+        }
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "any": 1
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Age",
+        "name": "年龄",
+        "type": "entries",
+        "entries": [
+          "维多肯比人类成年的速度要慢，大多数预计在40岁左右成年并安顿，他们的寿命可达到350年至500年。"
+        ]
+      },
+      {
+        "ENG_name": "Alignment",
+        "name": "阵营",
+        "type": "entries",
+        "entries": [
+          "维多肯的阵营通常为守序，很少为邪恶。"
+        ]
+      },
+      {
+        "ENG_name": "Size",
+        "name": "体型",
+        "type": "entries",
+        "entries": [
+          "维多肯个头比人类高挑且更为苗条，体重通常小于200磅。你的体型为中型。"
+        ]
+      },
+      {
+        "ENG_name": "Vedalken Dispassion",
+        "name": "维多肯式冷静",
+        "type": "entries",
+        "entries": [
+          "你在所有智力、感知和魅力的豁免检定上具有优势。"
+        ]
+      },
+      {
+        "ENG_name": "Tireless Precision",
+        "name": "不倦精准",
+        "entries": [
+          "你在以下一项你选择的技能上具有熟练项: {@skill 奥秘}, {@skill 历史}, {@skill 调查}, {@skill 医药}, {@skill 表演}, 或 {@skill 巧手}。你同样获得一种你选择的{@book 工具|PHB|5|工具}的熟练项。",
+          "当你进行你选择的技能或工具的属性检定时，投一枚{@dice d4}并将其结果加到检定的全部数值上。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Partially Amphibious",
+        "name": "临时两栖",
+        "type": "entries",
+        "entries": [
+          "通过用皮肤吸收氧气，你可以水下呼吸最多1小时。一旦达到该时限，你就无法再次使用本特质直到你完成一次长休。"
+        ]
+      },
+      {
+        "ENG_name": "Languages",
+        "name": "语言",
+        "entries": [
+          "你可以说、读、写通用语，维多肯语与另一项你自选的语言。"
+        ],
+        "type": "entries"
+      }
+    ],
+    "fluff": {
+      "entries": [
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "entries": [
+                "万事无完美——维多肯相信这一点，并因此而感到欣喜。每一处不完美都是一个予以改进的机会，所谓进步便是一条通向无法抵达之完美的无尽长路。这使得维多肯总是带着欢欣的热情从事工作，既不会被挫折所吓倒，也不会放过每一个改进的机会。",
+                "维多肯又高又瘦，平均比人类高一个头，但体重差不多。它们的皮肤颜色从淡蓝色到明亮的天蓝色，再到深至紫色的蓝都有，没有毛发。瞳色也或蓝或紫深浅不一。它们没有外耳，鼻子又宽又平。他们是半两栖生物。",
+                {
+                  "ENG_name": "Cool Rationality",
+                  "name": "冷静理性",
+                  "type": "entries",
+                  "entries": [
+                    "一般来说，维多肯在交谈中会显得富有社交性。然而，他们会对自己的个人生活保密，相比和人交流更倾向于独立思索。维多肯会基于共同兴趣或重大分歧在彼此之间建立亲密的友谊，他们关注的是各自对这些问题的想法而非对其的感情如何。",
+                    "在其他种族看来，维多肯常常显得冷漠乃至无情。这种评价并不公正——他们和其他种族一样拥有强烈的情感，只不过是擅长将其不表现出来罢了。冷静的理性引导着维多肯的行动，他们制定严谨的计划并遵其行事，当达到理想结果的方法只是顺其自然时，他们也有足够的耐心按兵不动。"
+                  ]
+                },
+                {
+                  "ENG_name": "Reasoning toward Perfection",
+                  "name": "完美之因",
+                  "type": "entries",
+                  "entries": [
+                    "维多肯因其充满好奇的头脑和理性思维，强烈倾向于成为俄佐立参议院，析米克并(很少)伊捷联盟的成员。无论他们属于哪个公会，他们都将其智慧用于制造和改进事物:法律、程序和魔法科学。",
+                    "维多肯认为，教育、谨慎和可控的实验就如同砖块，它们将铺就通往不可达之完美这一目的地的道路。一些维多肯通过析米克生物工程或广泛的研究将他们的精力用于自我完善，另一些人则专注于通过谨慎地制定并应用法律来使社会趋近完美。"
+                  ]
+                },
+                {
+                  "ENG_name": "Vedalken Names",
+                  "name": "维多肯名字",
+                  "type": "entries",
+                  "entries": [
+                    "维多肯从一出生就被赋予了名字，但是通常他们会给自己选择一个名字作为成年礼的一部分。他们很少有姓氏。",
+                    {
+                      "type": "list",
+                      "style": "list-hang-notitle",
+                      "items": [
+                        {
+                          "ENG_name": "Male Names:",
+                          "name": "男性名字：",
+                          "type": "item",
+                          "entry": "Aglar, Bellin, Dallid, Firellan, Kavin, Koplony, Lomar, Mathvan, Modar, Nebun, Nhillosh, Nitt, Otrovac, Ovlan, Pelener, Rill, Trivaz, Uldin, Yolov, Zataz"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "list",
+                      "style": "list-hang-notitle",
+                      "items": [
+                        {
+                          "ENG_name": "Female Names:",
+                          "name": "女性名字：",
+                          "type": "item",
+                          "entry": "Azi, Barvisa, Brazia, Direll, Fainn, Griya, Hallia, Katrille, Kovel, Lilla, Mirela, Morai, Nedress, Ossya, Pierenn, Roya, Sestri, Triel, Uzana, Yaraghiya, Zlovol"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/GGR/Vedalken.webp"
+          },
+          "width": 420,
+          "height": 466
+        }
+      ]
+    },
+    "age": {
+      "mature": 40,
+      "max": 500
+    },
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "heightAndWeight": {
+      "baseHeight": 64,
+      "heightMod": "2d10",
+      "baseWeight": 110,
+      "weightMod": "2d4"
+    }
+  }
+]

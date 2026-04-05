@@ -1,0 +1,258 @@
+{
+  "ENG_name": "Occultism",
+  "name": "神秘学者",
+  "shortName": "神秘学者",
+  "source": "CrookedMoon14",
+  "className": "法师",
+  "classSource": "PHB",
+  "page": 94,
+  "reprintedAs": [
+    "神秘学者|法师|XPHB|crookedmoon24"
+  ],
+  "edition": "classic",
+  "subclassFeatures": [
+    {
+      "ENG_name": "Occultism",
+      "name": "神秘学者",
+      "source": "CrookedMoon14",
+      "page": 94,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "神秘学者",
+      "subclassSource": "CrookedMoon14",
+      "level": 2,
+      "entries": [
+        "{@i 于星辰之外，觅禁忌之识}",
+        "法师学鼓励坚韧追击知识，推动每一个边界以搜索更大的法力且理解，但有些边界本就不该被跨越。神秘学者全然无视这些限制，窥探宇宙帷幕，吞噬禁忌秘密，并将他们对施法技艺的理解推向极限，直至现实本身撕裂开放。正是在这些被揭示的奇怪异域中，他们汲取到更强大的法力，粉碎所有限制，无论这诡异的后果如何。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "禁忌学识|法师|PHB|神秘学者|CrookedMoon14|2"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "侵扰|法师|PHB|神秘学者|CrookedMoon14|2"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Forbidden Knowledge",
+      "name": "禁忌学识",
+      "source": "CrookedMoon14",
+      "page": 94,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "神秘学者",
+      "subclassSource": "CrookedMoon14",
+      "level": 2,
+      "header": 1,
+      "entries": [
+        "在你对禁忌力量的研究中，你学会{@language 深潜语|PHB}或另一种你选择的语言。",
+        "此外，从魔契师法术列表中选择一个一环法术。如果它尚未在你的法术书中，则将其添加到你的法术书中，并且它对你而言是法师法术。"
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Wizard/Forbidden%20Knowledge.webp"
+    },
+    {
+      "ENG_name": "Intrusion",
+      "name": "侵扰",
+      "source": "CrookedMoon14",
+      "page": 94,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "神秘学者",
+      "subclassSource": "CrookedMoon14",
+      "level": 2,
+      "header": 1,
+      "entries": [
+        "你对宇宙之外禁忌领域的搜索带来了强大的法力，但也伴随着某种来自彼方的存在侵扰你现实的风险。",
+        "你拥有一枚侵扰骰（Intrusion Die），初始为{@dice d6}，其大小会随着你使用特性而变化。该骰子的大小可在以下尺寸序列中递增或递减：{@dice d2}、{@dice d3}、{@dice d4}、{@dice d6}、{@dice d8}、{@dice d10}、{@dice d12}。",
+        "你的入侵骰的体型上限为其起始体型，当你在该职业达到特定等级时增加一级：5级（{@dice d8}）、11级（{@dice d10}）和17级（{@dice d12}）。",
+        "当你使用一个具有侵扰风险的特性时，投掷你的侵扰骰。若掷出2或更高，则不会发生侵扰，并且侵扰骰的尺寸会在序列中减小一级。",
+        "若掷出1，侵扰骰的尺寸会增大一级，且你需要掷侵扰表以确定当现实破裂时会发生什么。侵扰效应使用你的法术豁免DC。",
+        "入侵骰的体型在你完成一次短休时提升一级（至多为其初始体型），并在你完成一次长休时重置为其初始体型。此外，你可以将异域潜能聚焦到你的法术中。当你使用法术位施法时，你可以冒着入侵风险从以下选择一个。",
+        {
+          "ENG_name": "Overwhelming Mind",
+          "name": "压制心智",
+          "type": "entries",
+          "entries": [
+            "该法术的单一目标在对抗它的第一次豁免检定时具有劣势。"
+          ]
+        },
+        {
+          "ENG_name": "Seeking Eye",
+          "name": "追踪之眼",
+          "type": "entries",
+          "entries": [
+            "你对该法术进行的第一次攻击检定具有优势。"
+          ]
+        },
+        {
+          "type": "table",
+          "caption": "侵扰",
+          "colLabels": [
+            "1d12",
+            "效应"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-11"
+          ],
+          "rows": [
+            [
+              "1",
+              "你感到身后有某种存在，在你灵魂深处低语着晦涩难懂之物。直至你的下一回合结束，你在一回合内只能进行以下一项：一个动作、一个{@variantrule 附赠动作|XPHB}，或移动。"
+            ],
+            [
+              "2",
+              "空间在源自你的30尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内扭曲溶解。区域内的每个生物（包括你）都在现实的扭曲中挣扎。受影响生物的{@variantrule 速度|XPHB}减半，直至你的下一回合结束。"
+            ],
+            [
+              "3",
+              "距离你60尺内最近的另一个生物必须成功通过一次体质豁免检定否则受到等于你入侵骰（以其起始体型）两次掷骰的暗蚀伤害，且你重获等于所造成伤害数值的{@variantrule 生命值|PHB}。"
+            ],
+            [
+              "4",
+              "现实在你所在空间撕裂，直至你的下一回合结束。你和所有能看见这道裂隙的生物都必须进行一次感知豁免检定，豁免失败则在裂隙存在期间陷入恐慌状态。"
+            ],
+            [
+              "5",
+              "你的一只手臂扭曲成一个异域附肢，例如一只扭曲的手臂或缠绕的触须，持续1分钟。你可以使用你的法术攻击加值通过该肢体进行{@variantrule 徒手打击|PHB|徒手打击}。取代正常伤害，你掷出等同于你{@variantrule 熟练|XPHB|熟练加值}数量的入侵骰子（以其起始体型）。目标受到等同于掷骰总值的强酸伤害。"
+            ],
+            [
+              "6",
+              "异星风景覆盖你的视线，使你陷入目盲状态，直至你的下一回合结束。"
+            ],
+            [
+              "7",
+              "反常的念头扰乱你的心智，使你陷入失能状态，直至你的下一回合结束。"
+            ],
+            [
+              "8",
+              "你经历了一瞬间的恐怖明晰，受到等于你侵扰骰（以其初始体型计算）掷二次结果的心灵伤害，且你的法术豁免DC提升2，持续1分钟。"
+            ],
+            [
+              "9",
+              "你恢复一枚5环或更低环阶（由你选择）的已消耗法术位，并受到等于该法术位环阶两倍的暗蚀伤害。此伤害无法以任何方式被减免或阻止。"
+            ],
+            [
+              "10",
+              "当你引发此入侵时以及在你接下来1分钟内每个回合结束时，空间结构中的搏动会填充一个源自于你的15尺{@variantrule 光环 [效应区域]|XPHB|光环}，使你和其中的每个生物获得{@condition 倒地|PHB}状态。"
+            ],
+            [
+              "11",
+              "持续1小时，你会听到针对你的充满憎恨的蔑视的无声低语。当你能够听到这些低语时，你在依赖感知的属性检定和豁免检定上具有{@variantrule 劣势|PHB}。"
+            ],
+            [
+              "12",
+              "一个挑战等级等于或低于你法师等级的异怪或邪魔（由GM选择）出现在你30尺内的一个未占据空间中。GM决定该生物的态度（{@variantrule 敌对【态度】|PHB|敌对}/{@variantrule 冷漠【态度】|PHB|冷漠}/{@variantrule 友好【态度】|PHB|友好}）和动作。"
+            ]
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Wizard/Intrusion.webp"
+    },
+    {
+      "ENG_name": "Reality Tear",
+      "name": "现实撕裂",
+      "source": "CrookedMoon14",
+      "page": 94,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "神秘学者",
+      "subclassSource": "CrookedMoon14",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "从魔契师法术列表中选择一个3环或更低的法术。如果该法术不在你的法术书中，则将其添加到你的法术书中，并且对你而言它是一个法师法术。当你施放该法术时，你可以风险入侵来移除对其{@status 专注|PHB|专注}的需求，并且该法术在1分钟或其正常持续时间（以较短者为准）后结束。此外，你可以引发一次自动入侵（并将骰子体型增加一级，最高至其起始体型）来无需法术位施放该法术一次，并且当你完成一次长休后重获该能力。"
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Wizard/Reality%20Tear.webp"
+    },
+    {
+      "ENG_name": "Occult Presence",
+      "name": "玄秘显现",
+      "source": "CrookedMoon14",
+      "page": 95,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "神秘学者",
+      "subclassSource": "CrookedMoon14",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "当你造成入侵时，你可以掷骰两次入侵表格并选择使用哪个结果，并且你可以通过获得1级{@condition 力竭}来抵消入侵。此外，你获得下方一个增益，并且当你完成一次长休时可以改变你选择的增益。作为附赠动作，你可以造成自动入侵（并将骰子体型提升一级，最高至其起始体型）来改变你选择的增益。",
+        {
+          "ENG_name": "Alien Consciousness",
+          "name": "异星神智",
+          "type": "entries",
+          "entries": [
+            "你获得对{@condition 魅惑}和{@condition 恐慌}状态的免疫，并且你无法被附身。"
+          ]
+        },
+        {
+          "ENG_name": "Cosmic Resistance",
+          "name": "宇宙抗性",
+          "type": "entries",
+          "entries": [
+            "你获得对暗蚀和心灵伤害的抗性。"
+          ]
+        },
+        {
+          "ENG_name": "Spatial Domination",
+          "name": "空间支配",
+          "type": "entries",
+          "entries": [
+            "你获得等于你步行速度的飞行速度并且可以悬浮。"
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Wizard/Occult%20Presence.webp"
+    },
+    {
+      "ENG_name": "Beyond Space",
+      "name": "超越空间",
+      "source": "CrookedMoon14",
+      "page": 95,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "神秘学者",
+      "subclassSource": "CrookedMoon14",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "距离和位置的自然本质被揭示为谎言。如果{@spell 探知}法术不在你的法术书中，则将其添加到你的法术书中。",
+        "当你施放{@spell 探知}时，你可以冒着入侵的风险从以下选择一个。",
+        {
+          "ENG_name": "All Knowing",
+          "name": "全知",
+          "type": "entries",
+          "entries": [
+            "将你与目标生物的联系视为你拥有其身体的一部分。"
+          ]
+        },
+        {
+          "ENG_name": "All Seeing",
+          "name": "全视",
+          "type": "entries",
+          "entries": [
+            "将该法术的施法时间改为1个动作。当你施放{@spell 探知}时，在法术持续时间内，你可以引发一次自动入侵（并将骰子体型增加一级，最高至其起始体型）来将你自己以及你10尺内任何愿意的生物传送到你能通过探知传感器看到的未被占据空间。一旦你以这种方式传送，直到你完成一次长休前你不能再这样做。"
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Wizard/Beyond%20Space.webp"
+    }
+  ],
+  "fluff": {
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Subclasses/Wizard_Occultist.webp"
+        },
+        "credit": "Jo Cordisco",
+        "width": 653,
+        "height": 1200
+      }
+    ]
+  },
+  "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclasses/Occultist.webp"
+}

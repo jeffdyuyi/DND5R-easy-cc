@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Pharika's Devotee",
+    "name": "芳瑞卡的信众",
+    "source": "MOT",
+    "page": 70,
+    "type": "Piety Trait",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "daily": {
+              "wis": [
+                "致病射线"
+              ]
+            }
+          }
+        },
+        "ability": "wis"
+      }
+    ],
+    "entries": [
+      "{@i 虔信值3+芳瑞卡特质}",
+      "作为芳瑞卡的信众，你拥有操纵痛苦的能力。你可以通过此特性施放{@spell 致病射线}，次数等于你的感知调整值（至少一次）。你可以通过一次长休恢复所有已使用的次数。感知是该法术的施法属性。"
+    ]
+  }
+]

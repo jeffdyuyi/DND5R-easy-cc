@@ -1,0 +1,34 @@
+[
+  {
+    "ENG_name": "Mithral Hide Armor",
+    "name": "秘银兽皮甲",
+    "source": "DMG",
+    "page": 182,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "MA|XPHB",
+    "rarity": "uncommon",
+    "weight": 12,
+    "value": 1000,
+    "ac": 12,
+    "armor": true,
+    "hasFluffImages": true,
+    "namePrefix": "秘银",
+    "srd": true,
+    "reprintedAs": [
+      "秘银甲|XDMG"
+    ],
+    "tier": "次要",
+    "strength": null,
+    "stealth": false,
+    "entries": [
+      "秘银是一种轻盈而灵活的金属。一件秘银链甲衫或胸甲可以穿在普通衣服下面。如果该护甲通常会为敏捷（{@skill 隐匿}）检定带来劣势或有力量要求，秘银版本的护甲则不会。"
+    ],
+    "lootTables": [
+      "魔法物品表B"
+    ],
+    "_isVariant": true,
+    "valueReference": 400
+  }
+]

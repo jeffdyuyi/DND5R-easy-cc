@@ -1,0 +1,34 @@
+[
+  {
+    "name": "短剑",
+    "ENG_name": "Shortsword",
+    "source": "PHB",
+    "page": 149,
+    "edition": "classic",
+    "type": "M",
+    "rarity": "none",
+    "weight": 2,
+    "value": 1000,
+    "weaponCategory": "martial",
+    "property": [
+      "F",
+      "L"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "basicRules": true,
+    "referenceSources": [
+      "CoS",
+      "US",
+      "CM",
+      "KftGV",
+      "PaBTSO"
+    ],
+    "reprintedAs": [
+      "短剑|XPHB"
+    ],
+    "srd": true,
+    "sword": true,
+    "weapon": true
+  }
+]

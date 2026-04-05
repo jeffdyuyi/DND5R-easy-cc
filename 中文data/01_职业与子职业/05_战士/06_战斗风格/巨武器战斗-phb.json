@@ -1,0 +1,30 @@
+{
+    "ENG_name": "Great Weapon Fighting",
+    "name": "巨武器战斗",
+    "source": "PHB",
+    "page": 72,
+    "srd": true,
+    "otherSources": [
+        {
+            "source": "PHB",
+            "page": 84
+        },
+        {
+            "source": "PHB",
+            "page": 91
+        }
+    ],
+    "reprintedAs": [
+        {
+            "uid": "巨武器战斗|XPHB",
+            "tag": "feat"
+        }
+    ],
+    "featureType": [
+        "FS:F",
+        "FS:P"
+    ],
+    "entries": [
+        "当你双手持用一把具有双手或两用属性的近战武器进行攻击，且伤害掷骰掷出1或2时，你可以重掷该骰子并必须使用重掷的结果，即便重掷结果仍为1或2。"
+    ]
+}

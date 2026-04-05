@@ -1,0 +1,54 @@
+[
+  {
+    "ENG_name": "Spellfire Adept",
+    "name": "咒火专家",
+    "source": "FRHoF",
+    "page": 41,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4,
+        "feat": [
+          "咒火火花|FRHoF"
+        ]
+      },
+      {
+        "feature": [
+          "施法",
+          "契约魔法"
+        ]
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Fueled Spellfire",
+        "name": "咒火燎原",
+        "type": "entries",
+        "entries": [
+          "每回合一次，当一道你施展的法术造成光耀伤害时，你能够消耗并投掷至多两枚{@variantrule 生命值骰|XPHB}，将骰值总和加入该法术的其中一次伤害掷骰中。"
+        ]
+      },
+      {
+        "ENG_name": "Searing Spellfire",
+        "name": "焦灼咒火",
+        "type": "entries",
+        "entries": [
+          "当你进行一次造成光耀伤害的伤害掷骰时，该伤害无视光耀伤害{@variantrule 抗性|XPHB}。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

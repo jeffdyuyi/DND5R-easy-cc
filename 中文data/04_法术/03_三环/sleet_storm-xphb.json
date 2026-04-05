@@ -1,0 +1,67 @@
+[
+  {
+    "ENG_name": "Sleet Storm",
+    "name": "雪雨暴",
+    "source": "XPHB",
+    "page": 317,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 3,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 150
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一把迷你雨伞"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "直至法术终止，冷冻刺骨的冻雨和冰雹将降落在以施法距离内一点为中心，高 40 尺、半径 20 尺的{@variantrule 柱状 [效应区域]|XPHB|柱状}区域内。该区域将造成{@variantrule 重度遮蔽|XPHB}，且区域内的一切外露的明火都将被浇熄。",
+      "该{@variantrule 柱状 [效应区域]|XPHB|柱状}区域的地面变成{@variantrule 困难地形|XPHB}。生物在一个回合内首次进入该{@variantrule 柱状 [效应区域]|XPHB|柱状}区域或在区域内开始其回合时，它必须成功通过一次敏捷豁免，否则将陷入{@condition 倒地|XPHB}状态并失去{@status 专注|XPHB}。"
+    ],
+    "conditionInflict": [
+      "倒地"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "miscTags": [
+      "DFT",
+      "OBS"
+    ],
+    "areaTags": [
+      "Y"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊",
+      "术士",
+      "法师"
+    ],
+    "display_school": "咒法系",
+    "display_savingThrow": [
+      "敏捷"
+    ]
+  }
+]

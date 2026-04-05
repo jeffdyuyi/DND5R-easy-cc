@@ -1,0 +1,57 @@
+[
+  {
+    "ENG_name": "Shield of Missile Attraction",
+    "name": "引弹盾",
+    "source": "DMG",
+    "page": 200,
+    "srd": true,
+    "referenceSources": [
+      "TftYP-AtG",
+      "VNotEE"
+    ],
+    "reprintedAs": [
+      "引弹盾|XDMG"
+    ],
+    "type": "S",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "curse": true,
+    "weight": 6,
+    "ac": 2,
+    "entries": [
+      "持握此盾牌期间，你获得对远程武器攻击伤害的抗性。",
+      {
+        "ENG_name": "Curse",
+        "name": "诅咒",
+        "type": "entries",
+        "entries": [
+          "这面盾牌被诅咒。与其同调会诅咒你，直到你成为法术{@spell 移除诅咒}或类似魔法的目标。卸下盾牌无法结束你身上的诅咒。每当有远程武器攻击对你周围10尺内的目标发动时，诅咒会使你成为攻击目标。"
+        ]
+      }
+    ],
+    "lootTables": [
+      "魔法物品表G"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Shield of Missile Attraction.webp"
+          },
+          "width": 1000,
+          "height": 1000
+        }
+      ]
+    },
+    "otherSources": [
+      {
+        "source": "XDMG"
+      }
+    ]
+  }
+]

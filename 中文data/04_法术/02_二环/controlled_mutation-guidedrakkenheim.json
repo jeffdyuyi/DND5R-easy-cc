@@ -1,0 +1,156 @@
+[
+  {
+    "ENG_name": "Controlled Mutation",
+    "name": "可控突变",
+    "source": "GuideDrakkenheim",
+    "page": 194,
+    "level": 2,
+    "school": "T",
+    "subschools": [
+      "受污染的"
+    ],
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一块价值100gp的妄质芯片"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "{@i 当你施放这个法术时，你获得1层污染。}",
+      "你编织受污染的能量，暂时赋予范围内一个生物一个增益异变。选择以下一项效应；目标获得该效应直到法术结束。",
+      {
+        "type": "list",
+        "items": [
+          {
+            "ENG_name": "Dizziness",
+            "name": "头晕",
+            "type": "entries",
+            "entries": [
+              "目标无法进行反应。"
+            ]
+          },
+          {
+            "ENG_name": "Strength",
+            "name": "力量",
+            "type": "entries",
+            "entries": [
+              "目标在力量攻击检定、属性检定和豁免检定上具有优势。目标可以选择获得一层污染层数。若如此做，其近战武器攻击在法术持续时间内额外造成{@damage 2d6}暗蚀伤害。"
+            ]
+          },
+          {
+            "ENG_name": "Constitution",
+            "name": "体质",
+            "type": "entries",
+            "entries": [
+              "目标在体质检定和豁免检定上具有优势。目标可以选择获得一层污染。如果这样做，它将在法术持续时间内获得对钝击、穿刺和挥砍伤害的抗性。"
+            ]
+          },
+          {
+            "ENG_name": "Dexterity",
+            "name": "敏捷",
+            "type": "entries",
+            "entries": [
+              "目标在敏捷攻击检定、属性检定和豁免检定上具有优势。目标可以选择获得一层污染层数。如果选择这样做，在法术持续时间内，其使用远程和灵巧武器的攻击在掷出18–20时造成重击。"
+            ]
+          },
+          {
+            "ENG_name": "Intelligence",
+            "name": "智力",
+            "type": "entries",
+            "entries": [
+              "目标在智力属性检定和豁免检定上具有优势，同时在法术攻击上也有优势。目标还可以选择获得一层污染层数。如果选择这样做，在此法术的持续时间内，当目标专注于其施放的法术时，其专注不会因受到伤害而被打断。"
+            ]
+          },
+          {
+            "ENG_name": "Wisdom",
+            "name": "感知",
+            "type": "entries",
+            "entries": [
+              "目标在感知属性检定和豁免检定上具有优势，同时在法术攻击掷骰上也有优势。目标还可以选择获得一层污染层数。如果选择这样做，在此法术的持续时间内，它将获得60尺范围内的盲视，并且在清醒时不会被突袭。"
+            ]
+          },
+          {
+            "ENG_name": "Charisma",
+            "name": "魅力",
+            "type": "entries",
+            "entries": [
+              "目标在魅力属性检定和豁免检定上具有优势，同时在法术攻击掷骰上也有优势。此外，目标可以选择获得1层污染。若如此做，在此法术的持续时间内，当目标进行魅力（游说）或魅力（欺瞒）检定时，可以将小于等于9的d20掷骰结果视为10。"
+            ]
+          }
+        ]
+      }
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用3环或更高法术位施放该法术时，每比2环高两个法术位环阶，你可以选择一项额外效应。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "暗蚀"
+    ],
+    "miscTags": [
+      "SCL"
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Apothecary",
+          "name": "药剂师",
+          "source": "GuideDrakkenheim"
+        },
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    }
+  }
+]

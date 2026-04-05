@@ -1,0 +1,87 @@
+[
+  {
+    "ENG_name": "Scythe of the Harvest Terror (Legendary)",
+    "name": "丰收之怖的巨镰（传说）",
+    "source": "CrookedMoon24",
+    "page": 603,
+    "baseItem": "长戟|XPHB",
+    "type": "M|XPHB",
+    "rarity": "legendary",
+    "reqAttune": true,
+    "weight": 6,
+    "weaponCategory": "军用",
+    "property": [
+      "H|XPHB",
+      "R|XPHB",
+      "2H|XPHB",
+      "TCM'24:FH"
+    ],
+    "mastery": [
+      "横扫|XPHB"
+    ],
+    "dmg1": "1d10",
+    "dmgType": "S",
+    "bonusWeapon": "+3",
+    "entries": [
+      "这柄带有锈蚀刃口的凶恶巨镰曾为丰收之怖——一头秘密与恐惧之恶魔——所挥舞。此巨镰外观古旧破损，柄身缠绕着风化的远古布条，刀刃上则刻有记录着它杀戮数的道道划痕。",
+      "你使用此魔法武器进行的攻击检定和伤害掷骰获得+3加值。该加值大小取决于该巨镰的稀有度。持握此巨镰时，你可以使用如下词条。",
+      {
+        "ENG_name": "Feed on Fear (Rare+)",
+        "name": "恐惧为食（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "每个你的回合一次，当你使用这把巨镰攻击并命中一个具有{@condition 恐慌|XPHB}状态的生物时，其会额外受到{@dice 1d10}（传说：{@dice 2d10}）心灵伤害。"
+        ]
+      },
+      {
+        "ENG_name": "Sweep of Dread (Rare+)",
+        "name": "惊怖横扫（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "你可以从该巨镰中施展{@spell 恐惧术|XPHB}（豁免DC = 16 + 巨镰的加值，无需{@status 专注|XPHB}）。该属性一经使用，则直至次日黄昏之前，无法再次使用。"
+        ]
+      },
+      {
+        "ENG_name": "Harvest of the Hidden Word (Very Rare+)",
+        "name": "收获隐言（极珍稀+）",
+        "type": "entries",
+        "entries": [
+          "作为{@variantrule 附赠动作|XPHB}，你可以强迫一个你可见且具有{@condition 恐慌|XPHB}状态的生物进行一次魅力豁免（DC = 16 + 巨镰的加值）。豁免失败时，你得知一个它刻意保守的秘密。该生物随后在24小时内对此属性免疫。"
+        ]
+      },
+      {
+        "ENG_name": "Seed of Terror (Very Rare+)",
+        "name": "播种恐怖（极珍稀+）",
+        "type": "entries",
+        "entries": [
+          "当你使用这把巨镰命中一个生物后，你可以立即使用{@variantrule 附赠动作|XPHB}迫使一个位于你所命中生物30尺内的生物进行一次感知豁免（豁免DC = 16 + 巨镰的加值）。若豁免失败，则该生物陷入{@condition 恐慌|XPHB}状态，直至你的下一回合结束。"
+        ]
+      },
+      {
+        "ENG_name": "Lurking Terror (Legendary)",
+        "name": "恐怖潜藏（传说）",
+        "type": "entries",
+        "entries": [
+          "当一个你可见的具有{@condition 恐慌|XPHB}状态的生物在你周边60尺范围内结束自己回合时，你可以使用{@variantrule 反应|XPHB}传送至多60尺到一处该{@condition 恐慌|XPHB}生物可见的未占据空间内。"
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "恐惧术|XPHB"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Scythe%20of%20the%20Harvest%20Terror.webp"
+          },
+          "width": 797,
+          "height": 1200,
+          "credit": "Eugenio Frosali"
+        }
+      ]
+    }
+  }
+]

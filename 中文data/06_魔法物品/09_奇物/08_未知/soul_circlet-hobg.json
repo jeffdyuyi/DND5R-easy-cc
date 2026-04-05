@@ -1,0 +1,14 @@
+[
+  {
+    "name": "灵魂冕环",
+    "source": "HoBG",
+    "page": 0,
+    "rarity": "珍稀",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这顶古老的金色冕环中包含了一位古老战士的灵魂。它经过死灵魔法的加持，使佩戴者可以控制使用这顶冕环所创造的骷髅战士。有关详情，请参见附录C中{@creature 骷髅战士|HoBG}条目的\"控制骷髅战士\"。"
+    ],
+    "ENG_name": "Soul Circlet"
+  }
+]

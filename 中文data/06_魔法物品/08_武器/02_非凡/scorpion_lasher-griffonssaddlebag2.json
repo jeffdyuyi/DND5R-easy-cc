@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "Scorpion Lasher",
+    "name": "蝎尾鞭",
+    "source": "GriffonsSaddlebag2",
+    "page": 155,
+    "baseItem": "鞭子|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "weight": 3,
+    "value": 200,
+    "weaponCategory": "军用",
+    "property": [
+      "F",
+      "R"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "S",
+    "entries": [
+      "这根鞭子由一只巨蝎的残骸制成，滴着令人作呕的毒液。你的每个回合内限一次，当你用此武器命中一个生物时，你可以以此鞭额外造成{@damage 1d6}毒素伤害。当你这样做时，如果该生物是中型或更小体型，它必须成功通过一次DC 13的力量豁免，否则会被拉向你5尺。"
+    ],
+    "lootTables": [
+      "魔法物品表 F1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Scorpion-Lasher.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

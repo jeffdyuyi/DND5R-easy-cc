@@ -1,0 +1,20 @@
+[
+  {
+    "ENG_name": "+2 Wraps of Unarmed Prowess",
+    "name": "+2 神功绑带",
+    "source": "BMT",
+    "page": 69,
+    "reprintedAs": [
+      "+2 神功绑带|XDMG"
+    ],
+    "rarity": "rare",
+    "wondrous": true,
+    "bonusWeapon": "+2",
+    "entries": [
+      "裹着这套布制的绑带期间，你的徒手打击在对抗非魔法攻击与伤害的免疫与抗性时被视为魔法性的。此外，你徒手打击的攻击检定与伤害掷骰获得+2加值。"
+    ],
+    "translator": "不全书",
+    "valueReference": 4000,
+    "type": "W"
+  }
+]

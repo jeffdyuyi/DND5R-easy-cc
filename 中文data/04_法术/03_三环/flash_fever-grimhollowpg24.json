@@ -1,0 +1,76 @@
+[
+  {
+    "ENG_name": "Flash Fever",
+    "name": "瞬时瘟热",
+    "source": "GrimHollowPG24",
+    "page": 192,
+    "level": 3,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "燧石和锻钢"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "选择一个你范围内能看见的生物。该生物突然冷汗直流并进行一次体质豁免检定。若豁免失败，冷汗会变成燃烧的高热，该生物受到{@damage 4d6}火焰伤害。若豁免成功，法术结束。",
+      "在法术持续时间内，目标在其回合开始时受到{@damage 2d6}火焰伤害。目标必须在每个回合结束时重复豁免检定，直到获得三次成功或失败。如果目标成功通过三次豁免，法术结束。如果目标失败三次豁免，则受到{@damage 8d6}火焰伤害且法术结束。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "基础伤害对3环以上的每个法术位环阶增加{@dice 1d6}。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "火焰"
+    ],
+    "savingThrow": [
+      "体质"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Flash%20Fever.webp"
+  }
+]

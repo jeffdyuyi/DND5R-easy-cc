@@ -1,0 +1,23 @@
+[
+  {
+    "name": "绳索",
+    "ENG_name": "Rope",
+    "source": "XPHB",
+    "page": 228,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 5,
+    "value": 100,
+    "entries": [
+      "以一个{@action 操作|XPHB}动作，你可以进行一次{@dc 10}的敏捷（{@skill 巧手|XPHB}）检定。如果该检定成功，你能用绳索打一个结。扯坏绳索需要成功通过一次{@dc 20}的力量（{@skill 运动|XPHB}）检定。",
+      "你可以利用绳索捆住一个非自愿生物，但该生物必须处于{@condition 受擒|XPHB}、{@condition 失能|XPHB}或{@condition 束缚|XPHB}状态。如果你绑住了该生物的腿，该生物陷入{@condition 束缚|XPHB}状态，直至挣脱。挣脱绳索需要该生物使用动作来通过一次{@dc 15}的敏捷（{@skill 特技|XPHB}）检定。"
+    ],
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TWoO",
+      "HotB"
+    ],
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

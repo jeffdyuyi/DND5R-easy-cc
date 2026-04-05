@@ -1,0 +1,46 @@
+{
+  "ENG_name": "Eldritch Spear",
+  "name": "魔能长枪",
+  "source": "XPHB",
+  "page": 155,
+  "srd52": true,
+  "featureType": [
+    "EI"
+  ],
+  "prerequisite": [
+    {
+      "spell": [
+        {
+          "choose": "level=0|class=Warlock",
+          "entry": "一道能造成伤害的魔契师戏法",
+          "entrySummary": "能造成伤害的魔契师戏法"
+        }
+      ],
+      "level": {
+        "level": 2,
+        "class": {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB",
+          "visibleStats": true
+        }
+      }
+    }
+  ],
+  "entries": [
+    "选择一道你已知的造成伤害且射程至少为 10 尺的{@filter 魔契师戏法|spells|level=0|class=魔契师|damage type=强酸;钝击;冷冻;火焰;力场;闪电;暗蚀;穿刺;毒素;心灵;光耀;斩击;雷鸣|range=点}。当你施展此法术时，其射程增加等于你魔契师等级 30 倍的尺数。",
+    {
+      "type": "entries",
+      "entries": [
+        {
+          "ENG_name": "Repeatable",
+          "name": "复选",
+          "type": "entries",
+          "entries": [
+            "你可以多次选择本祈唤。每次这么做时，你都必须选择不同的满足先决的戏法。"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+[
+    {
+        "ENG_name": "Charm Twister",
+        "name": "咒饰编织者",
+        "source": "CrookedMoon24",
+        "page": 113,
+        "category": "O",
+        "additionalSpells": [
+            {
+                "ability": {
+                    "choose": [
+                        "int",
+                        "wis",
+                        "cha"
+                    ]
+                },
+                "innate": {
+                    "_": {
+                        "daily": {
+                            "1e": [
+                                "祝福术"
+                            ]
+                        }
+                    }
+                }
+            }
+        ],
+        "entries": [
+            "你深谙经由旧途教诲所传承下来的猬族偏方与咒术，并能将它们凝聚于你编织的小型柳艺护咒中。你获得以下增益。",
+            {
+                "ENG_name": "Old Blessing",
+                "name": "古老祝福",
+                "type": "entries",
+                "entries": [
+                    "你可以使用此增益施放一次{@spell 祝福术|XPHB}法术，仅以携带你编织的柳艺魅惑饰物的生物为目标，且你在完成一次{@variantrule 长休|XPHB}前无法再次如此施放。你也可以使用你拥有的任何法术位来施放该法术。你以此方式施放该法术的施法属性为智力、感知或魅力（当你选择此专长时选择该属性）。"
+                ]
+            },
+            {
+                "ENG_name": "Twisted Hex",
+                "name": "扭曲恶咒",
+                "type": "entries",
+                "entries": [
+                    "作为一项{@action 魔法|XPHB}动作，你可以将怨气编织进一枚你接触的柳编咒饰。选择一项属性。当另一个生物携带着该咒饰，或该咒饰位于该生物视为家的区域期间，其在使用所选属性进行的属性检定和攻击检定时具有{@variantrule 劣势|XPHB}劣势。当该生物在这些掷骰中失败时，它可以进行一次魅力豁免，成功则咒饰被摧毁（DC=8+你的{@variantrule 熟练|XPHB|熟练加值}熟练加值和你为古老祝福选择的属性调整值）。你一次只能拥有一个扭曲恶咒咒饰。如果你制作一个新的，之前的咒饰将失去魔法。"
+                ]
+            }
+        ],
+        "fluff": {
+            "images": [
+                {
+                    "type": "image",
+                    "href": {
+                        "type": "external",
+                        "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Feats/Charm%20Twister.webp"
+                    },
+                    "width": 850,
+                    "height": 744,
+                    "credit": "Suzanne Helmigh"
+                }
+            ]
+        },
+        "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Feats/Charm%20Twister.webp"
+    }
+]

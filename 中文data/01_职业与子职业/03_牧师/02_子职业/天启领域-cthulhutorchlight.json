@@ -1,0 +1,238 @@
+{
+  "ENG_name": "Apocalypse Domain",
+  "name": "天启领域",
+  "shortName": "末日预言",
+  "source": "CthulhuTorchlight",
+  "className": "牧师",
+  "classSource": "XPHB",
+  "page": 0,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "3": [
+          "黑暗术|XPHB",
+          "炼狱叱喝|XPHB",
+          "魅影之力|XPHB",
+          "雷鸣波|XPHB"
+        ],
+        "5": [
+          "末日|CthulhuTorchlight",
+          "恐惧术|XPHB"
+        ],
+        "7": [
+          "枯萎术|XPHB",
+          "冰风暴|XPHB"
+        ],
+        "9": [
+          "防活物护罩|XPHB",
+          "疫病虫群|XPHB"
+        ]
+      }
+    }
+  ],
+  "subclassSpells": [
+    "黑暗术|XPHB",
+    "炼狱叱喝|XPHB",
+    "魅影之力|XPHB",
+    "雷鸣波|XPHB",
+    "末日|CthulhuTorchlight",
+    "恐惧术|XPHB",
+    "枯萎术|XPHB",
+    "冰风暴|XPHB",
+    "防活物护罩|XPHB",
+    "疫病虫群|XPHB"
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "Apocalypse Domain",
+      "name": "天启领域",
+      "source": "CthulhuTorchlight",
+      "page": 0,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "末日预言",
+      "subclassSource": "CthulhuTorchlight",
+      "level": 3,
+      "entries": [
+        {
+          "type": "inset",
+          "entries": [
+            {
+              "type": "quote",
+              "entries": [
+                "有人说世界将毁于火焰，也有人说毁于冰霜。我已为两者做好了准备。"
+              ],
+              "from": "恩达拉，末日之女"
+            }
+          ]
+        },
+        "很少有神祇拥抱天启领域，但在战争、疾病或社会动荡时期，其牧师会出现在宣告世界即将灭亡的噩兆教派之首。天启领域的信徒通常是因狂热坚信万物终结而被宗教命令驱逐的背教者和异端。",
+        "他们神力的确切起源令传统宗教的长老们困惑不已。有时，这些牧师的力量源自命运、末日或变化之神。但更多情况下，他们似乎是从面临灾难的人口的集体阴郁中汲取力量。或许世界的毁灭确实迫在眉睫，而这些预言者找到了某种方式在世界末日临近时与之建立联系。",
+        "{@b 阵营}",
+        "考虑你的阵营以及它如何决定你对末日预言的态度。下方是一些关于你的哲学如何塑造你的态度和宗教实践的想法。你也可以使用此表格来确定你的邪教性质。",
+        {
+          "type": "table",
+          "colLabels": [
+            "阵营",
+            "备注"
+          ],
+          "colStyles": [
+            "col-1",
+            "col-11"
+          ],
+          "rows": [
+            [
+              "混乱",
+              "我们每个人都独自面对末日预言。我们必须找到自己的路途，与我们所珍视的一切即将毁灭达成和平。在这些结束时刻，法律、传统和限制都毫无意义。我们有权按照自己认为合适的方式生活。"
+            ],
+            [
+              "守序",
+              "末日预言近在眼前，但如果你遵守由你的秩序所决定的法令和戒律，你就有机会逃脱。诸神会保护那些值得的人，而你将通过他们对适当传统、仪式和牺牲的遵守来识别这些值得的人。"
+            ],
+            [
+              "绝对中立",
+              "所有事物都会消亡，包括世界。通过记录末日，或许我们能为自己现实的碎片保留一丝痕迹，无论什么世界从灰烬中重生。但别搞错了——当世界终结时，我们也将随之结束。"
+            ],
+            [
+              "邪恶",
+              "末日预言降临世界还不够——我们必须通过清理那些愚蠢到敢于反抗它的人来加速其外貌的到来。通过这样做，即将到来的灾难背后的力量将欢迎我们作为它的工具，并在我们结束这个世界后保护我们。"
+            ],
+            [
+              "善良",
+              "末日预言是一场净化事件，它将见证世界的不义被冲刷殆尽，以支持一种新的秩序。我们的任务是传播正义路途的知识。我们必须耐心且和善，因为很少有人愿意听到我们的传讯。但那些足够明智拥抱我们圣歌的人，将加入我们进入即将到来的天堂。"
+            ]
+          ]
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "天启领域法术|牧师|XPHB|末日预言|CthulhuTorchlight|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "毁灭愿景|牧师|XPHB|末日预言|CthulhuTorchlight|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "末日之歌|牧师|XPHB|末日预言|CthulhuTorchlight|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Apocalypse Domain Spells",
+      "name": "天启领域法术",
+      "source": "CthulhuTorchlight",
+      "page": 0,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "末日预言",
+      "subclassSource": "CthulhuTorchlight",
+      "level": 3,
+      "entries": [
+        "你与这个神圣领域的联系确保你总是预备着某些法术。当你达到天启领域法术表格中指定的牧师等级时，你此后总是准备着所列出的法术。",
+        {
+          "type": "table",
+          "caption": "天启领域法术",
+          "colLabels": [
+            "牧师等级",
+            "准备法术"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-11"
+          ],
+          "rows": [
+            [
+              "3",
+              "{@spell 黑暗术|XPHB}, {@spell 炼狱叱喝|XPHB}, {@spell 魅影之力|XPHB}, {@spell 雷鸣波|XPHB}"
+            ],
+            [
+              "5",
+              "{@spell 末日|CthulhuTorchlight}, {@spell 恐惧术|XPHB}"
+            ],
+            [
+              "7",
+              "{@spell 枯萎术|XPHB}, {@spell 冰风暴|XPHB}"
+            ],
+            [
+              "9",
+              "{@spell 防活物护罩|XPHB}, {@spell 疫病虫群|XPHB}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Doom Song",
+      "name": "末日之歌",
+      "source": "CthulhuTorchlight",
+      "page": 0,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "末日预言",
+      "subclassSource": "CthulhuTorchlight",
+      "level": 3,
+      "entries": [
+        "你可以使用你的引导神力来加速某个生物的末日。以一个{@variantrule 附赠动作|XPHB}，你可以消耗一次引导神力次数来选择一名位于你120尺内你可见的生物。在接下来的10分钟内，对该生物进行的攻击检定在{@dice d20}中掷出19或20时即可造成{@variantrule 重击|XPHB}。"
+      ]
+    },
+    {
+      "ENG_name": "Visions of Annihilation",
+      "name": "毁灭愿景",
+      "source": "CthulhuTorchlight",
+      "page": 0,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "末日预言",
+      "subclassSource": "CthulhuTorchlight",
+      "level": 3,
+      "entries": [
+        "你获得预见某个生物末日的能力。以一个{@variantrule 附赠动作|XPHB}，选择一名位于你120尺内你可见的生物。直至你下回合开始，对该生物进行的攻击检定具有{@variantrule 优势|XPHB}。",
+        "你可以使用该特性的次数等于你的感知调整值（最少 1 次）。你在完成一次{@variantrule 长休|XPHB}时重获所有已消耗的使用次数。"
+      ]
+    },
+    {
+      "ENG_name": "All Will Be Dust",
+      "name": "万物终将归于尘土",
+      "source": "CthulhuTorchlight",
+      "page": 0,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "末日预言",
+      "subclassSource": "CthulhuTorchlight",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "你可以使用你的引导神力来扭曲某个生物的命运。以一个{@variantrule 附赠动作|XPHB}，你可以消耗一次引导神力次数来选择一名位于你120尺内你可见的生物。直至你的下个回合结束，该生物在对抗你法术所进行的下次豁免检定具有{@variantrule 劣势|XPHB}。"
+      ]
+    },
+    {
+      "ENG_name": "Life Beyond Death",
+      "name": "死后余生",
+      "source": "CthulhuTorchlight",
+      "page": 0,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "末日预言",
+      "subclassSource": "CthulhuTorchlight",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "当你或你120尺内的一名盟友将要进行一次{@variantrule 死亡豁免检定|XPHB}时，你可以消耗一个法术位（无需动作）来治疗目标等于所消耗法术位环阶*10的{@variantrule 生命值|XPHB}。"
+      ]
+    }
+  ],
+  "fluff": {
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CthulhuTorchlight/Subclasses/00-006.doomcleric.webp"
+        },
+        "width": 1700,
+        "height": 2049
+      }
+    ]
+  }
+}

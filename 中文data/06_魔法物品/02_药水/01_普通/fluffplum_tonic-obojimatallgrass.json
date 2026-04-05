@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Fluffplum Tonic",
+    "name": "绒毛梅药水",
+    "source": "ObojimaTallGrass",
+    "page": 241,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "这种几乎无重量的液体赋予饮用者蒲公英的特性，使它们能在坠落时安全地悬浮至地面，并容易被风势携带。接下来的1小时内，你将处于{@spell 羽落术}法术的效应下，且重量不超过1磅。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 18|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/fluffplum-tonic.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1621,
+          "height": 1621
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

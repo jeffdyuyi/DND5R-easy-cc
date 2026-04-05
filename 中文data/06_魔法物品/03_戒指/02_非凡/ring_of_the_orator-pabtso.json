@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Ring of the Orator",
+    "name": "演说家之戒",
+    "source": "PaBTSO",
+    "page": 219,
+    "type": "RG|DMG",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6}",
+    "charges": 6,
+    "entries": [
+      "这枚戒指有6次充能。当你佩戴它时，你可以消耗其中1次充能，以便让自己的声音在1英里范围内的所有生物都能清晰地听到，无论是否有干扰声音，持续时间为1分钟。魔法沉默、1尺厚的石头、1英寸厚的普通金属、一层薄铅板或3尺厚的木头可以阻挡这种投射。如果你在投射声音时使用的是听众不理解的语言，你可以使生物理解你在说什么。你必须能看到这些生物才能使它们理解。戒指每天黎明时分恢复{@dice 1d6}次消耗的充能。"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/PaBTSO/Ring of the Orator.webp"
+          },
+          "width": 1000,
+          "height": 790
+        }
+      ]
+    }
+  }
+]

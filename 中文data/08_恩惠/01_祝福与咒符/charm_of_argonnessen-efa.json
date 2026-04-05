@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Charm of Argonnessen",
+    "name": "阿贡尼森护咒",
+    "source": "EFA",
+    "page": 51,
+    "type": "Charm",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "limited": {
+              "1": [
+                "龙息术|xphb#4"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "entries": [
+      "当你拥有此魅惑时，你知晓{@language 龙语|XPHB}。你可以消耗此魅惑来施放{@spell 龙息术|XPHB}（4环版本），仅以自身为目标。"
+    ]
+  }
+]

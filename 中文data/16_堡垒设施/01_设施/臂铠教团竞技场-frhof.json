@@ -1,0 +1,40 @@
+{
+  "ENG_name": "Order of the Gauntlet Tournament Field",
+  "name": "臂铠教团竞技场",
+  "source": "FRHoF",
+  "page": 169,
+  "facilityType": "special",
+  "level": 9,
+  "prerequisite": [
+    {
+      "membership": [
+        "臂铠教团"
+      ]
+    }
+  ],
+  "space": [
+    "vast"
+  ],
+  "hirelings": [
+    {
+      "exact": 1
+    }
+  ],
+  "orders": [
+    "增强"
+  ],
+  "entries": [
+    "臂铠教团竞技场是一处划定的区域，供两名武装者进行比试，内设观众席。",
+    "你可雇佣一位与你阵营相同的{@creature 骑士|XMM}。若你的据点无足够设施容纳此骑士，该骑士将在最近的旅店或聚落自行安排住宿。此骑士不视为据点卫兵，但当据点遇袭时，可减少1颗用于确定据点卫兵死亡数量的骰子。",
+    {
+      "ENG_name": "Empower: Hold Tournament",
+      "name": "增强：举办竞赛",
+      "type": "entries",
+      "entries": [
+        "当你对此设施下达{@book 增强|XDMG|7|增强}指令时，你将在据点中举办一场竞赛。竞赛消息传至邻近聚落需要7日，参赛者还需另外7日前往你的据点参加竞赛。你必须花费2000GP作为奖金。竞赛结束时，你在臂铠教团的声望等级提升1级。"
+      ]
+    }
+  ],
+  "hasFluffImages": true,
+  "translator": "不全书"
+}

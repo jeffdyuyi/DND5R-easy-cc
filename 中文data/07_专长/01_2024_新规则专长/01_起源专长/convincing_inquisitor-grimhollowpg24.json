@@ -1,0 +1,28 @@
+[
+    {
+        "ENG_name": "Convincing Inquisitor",
+        "name": "铁嘴审判者",
+        "source": "GrimHollowPG24",
+        "page": 114,
+        "category": "O",
+        "entries": [
+            "你善于通过对话、手势或暴力意图从他人那里获得你想要的信息。你获得以下增益。",
+            {
+                "ENG_name": "Double Proficiency",
+                "name": "双倍熟练",
+                "type": "entries",
+                "entries": [
+                    "你在魅力（{@skill 威吓|XPHB}）检定上具有{@variantrule 优势|XPHB}。"
+                ]
+            },
+            {
+                "ENG_name": "Truth Seeker",
+                "name": "窥真者",
+                "type": "entries",
+                "entries": [
+                    "你在进行感知（{@skill 洞悉|XPHB}）检定以辨识生物是否在说谎且该生物不具有魔法保护时具有{@variantrule 优势|XPHB}。"
+                ]
+            }
+        ]
+    }
+]

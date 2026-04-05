@@ -1,0 +1,46 @@
+[
+  {
+    "ENG_name": "Ring of Warmth",
+    "name": "温暖戒指",
+    "source": "DMG",
+    "page": 193,
+    "srd": true,
+    "referenceSources": [
+      "CoS",
+      "WDH",
+      "SLW",
+      "IDRotF"
+    ],
+    "reprintedAs": [
+      "温暖戒指|XDMG"
+    ],
+    "type": "RG|DMG",
+    "resist": [
+      "寒冷"
+    ],
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "entries": [
+      "佩戴这枚戒指期间，你具有寒冷伤害的抗性。此外，你自身及你着装或携带的物件都不会受到至低-50华氏度的低温影响。"
+    ],
+    "lootTables": [
+      "魔法物品表F"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Ring of Warmth.webp"
+          },
+          "width": 850,
+          "height": 1179
+        }
+      ]
+    }
+  }
+]

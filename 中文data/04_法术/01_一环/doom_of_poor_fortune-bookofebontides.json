@@ -1,0 +1,92 @@
+[
+  {
+    "ENG_name": "Doom of Poor Fortune",
+    "name": "厄运将至",
+    "source": "BookOfEbonTides",
+    "page": 59,
+    "level": 1,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一株死亡的三叶草"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你将吉兆转变为对一个范围内你选择的生物的厄运。当目标进行属性检定时，他们必须先进行一次魅力豁免检定，否则检定失败。此法术一旦施放就会持续存在，即使目标离开范围。如果使用更高等级的法术位施放，每个后续效应都会添加到上述效应中。",
+      "如果目标最终通过了检定（或豁免检定或升环施法效应下的攻击），则你受到1点心灵伤害。如果你失去了对该法术的{@status 专注}，则你受到{@damage 1d4}点心灵伤害。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用2环或更高法术位施放该法术时，当目标需要进行豁免检定时，它必须进行一次魅力豁免检定以替代所需的豁免检定，除非所需的豁免检定更难通过。当你使用4环法术位施放该法术时，当目标进行攻击检定时，它必须在攻击前进行一次魅力豁免检定。若豁免失败，则攻击失败。若你使用8环法术位施放该法术，该法术将在持续时间内持续生效而不需要{@status 专注}。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Paladin",
+          "name": "圣武士",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    },
+    "damageInflict": [
+      "心灵"
+    ],
+    "savingThrow": [
+      "魅力"
+    ]
+  }
+]

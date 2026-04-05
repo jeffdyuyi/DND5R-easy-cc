@@ -1,0 +1,51 @@
+[
+  {
+    "ENG_name": "Sheep Dragon Wool",
+    "name": "绵羊 龙 羊毛",
+    "source": "ObojimaTallGrass",
+    "page": 207,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 10|large}|SneakerProMedium}",
+            "{@font {@style 8|large}|SneakerProMedium}",
+            "{@font {@style 7|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "绵羊龙的厚羊毛被胧忆岛人几个世纪以来用作衣物、毯子甚至毛毡护甲。许多村庄将绵羊龙羊毛染成各种鲜艳的颜色。虽然大多数绵羊龙是驯养的，但仍有一些狂野的绵羊龙在胧忆岛的草原上漫游。"
+    ],
+    "lootTables": [
+      "海岸高地普通原料|ObojimaTallGrass",
+      "狂风农田普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/sheep-dragon-wool.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 2088,
+          "height": 2088
+        }
+      ]
+    }
+  }
+]

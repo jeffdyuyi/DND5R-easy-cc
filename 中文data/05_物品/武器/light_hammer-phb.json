@@ -1,0 +1,28 @@
+[
+  {
+    "name": "轻锤",
+    "ENG_name": "Light Hammer",
+    "source": "PHB",
+    "page": 149,
+    "edition": "classic",
+    "type": "M",
+    "rarity": "none",
+    "weight": 2,
+    "value": 200,
+    "weaponCategory": "simple",
+    "property": [
+      "L",
+      "T"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "B",
+    "range": "20/60",
+    "basicRules": true,
+    "hammer": true,
+    "reprintedAs": [
+      "轻锤|XPHB"
+    ],
+    "srd": true,
+    "weapon": true
+  }
+]

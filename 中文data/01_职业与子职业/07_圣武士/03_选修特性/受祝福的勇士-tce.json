@@ -1,0 +1,33 @@
+{
+  "ENG_name": "Blessed Warrior",
+  "name": "受祝福的勇士",
+  "source": "TCE",
+  "page": 52,
+  "reprintedAs": [
+    {
+      "uid": "受祝福的勇士|XPHB",
+      "tag": "feat"
+    }
+  ],
+  "isClassFeatureVariant": true,
+  "featureType": [
+    "FS:P"
+  ],
+  "additionalSpells": [
+    {
+      "ability": "cha",
+      "known": {
+        "_": [
+          {
+            "choose": "level=0|class=cleric",
+            "count": 2
+          }
+        ]
+      }
+    }
+  ],
+  "entries": [
+    "从{@filter 牧师法术列表|spells|level=0|class=牧师}中选择两种戏法。你习得这些作为圣武士法术的戏法，这些戏法的施法属性是魅力。当你提升此职业的等级时，你能够将一个已知戏法替换为牧师法术列表中的另一个戏法。"
+  ],
+  "translator": "不全书"
+}

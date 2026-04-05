@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Gloves of Thievery",
+    "name": "窃贼手套",
+    "source": "DMG",
+    "page": 172,
+    "referenceSources": [
+      "NRH-TCMC",
+      "WBtW",
+      "KftGV"
+    ],
+    "reprintedAs": [
+      "窃贼手套|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这双手套着装到手上后会化为{@condition 隐形}的。着装该手套期间，你进行的敏捷（{@skill 巧手}）检定，以及为开锁进行的敏捷检定均具有+5加值。"
+    ],
+    "optionalfeatures": [
+      "仿制魔法物品|TCE"
+    ],
+    "lootTables": [
+      "魔法物品表F"
+    ],
+    "valueReference": 400,
+    "type": "W"
+  }
+]

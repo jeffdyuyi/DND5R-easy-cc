@@ -1,0 +1,69 @@
+[
+  {
+    "ENG_name": "Scorching Ray",
+    "name": "灼热射线",
+    "source": "XPHB",
+    "page": 313,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "UtHftLH"
+    ],
+    "level": 2,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你射出三道火焰的射线。你可以将其射向施法距离内的一个或多个目标。每道射线需要你分别进行一次远程法术攻击。若命中，则目标受到{@damage 2d6}点火焰伤害。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "使用的法术位每比二环高一环，你就能多创造出一道射线。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "fire"
+    ],
+    "spellAttack": [
+      "R"
+    ],
+    "areaTags": [
+      "MT",
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "法师"
+    ],
+    "display_school": "塑能系",
+    "display_damageInflict": [
+      "火焰"
+    ]
+  }
+]

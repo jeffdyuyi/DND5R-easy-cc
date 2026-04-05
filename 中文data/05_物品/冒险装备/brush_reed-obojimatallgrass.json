@@ -1,0 +1,52 @@
+[
+  {
+    "ENG_name": "Brush Reed",
+    "name": "刷子芦苇",
+    "source": "ObojimaTallGrass",
+    "page": 201,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 1|large}|SneakerProMedium}",
+            "{@font {@style 10|large}|SneakerProMedium}",
+            "{@font {@style 6|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "除了能制作一把漂亮的发刷外，刷子芦苇还因其药水制作词条而闻名。刷子芦苇可以在低地区域的池塘和湖泊旁找到。"
+    ],
+    "lootTables": [
+      "热水大地普通原料|ObojimaTallGrass",
+      "浅滩普通原料|ObojimaTallGrass",
+      "咸水湿地普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/brush-reed.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 2799,
+          "height": 2799
+        }
+      ]
+    }
+  }
+]

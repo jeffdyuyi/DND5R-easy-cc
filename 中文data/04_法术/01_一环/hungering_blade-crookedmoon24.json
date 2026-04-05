@@ -1,0 +1,61 @@
+[
+  {
+    "ENG_name": "Hungering Blade",
+    "name": "饕餮魔刃",
+    "source": "CrookedMoon24",
+    "page": 129,
+    "level": 1,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你为一把你正在持握的武器或你的{@variantrule 徒手打击|XPHB|徒手打击}注入贪食的负能量。在持续时间内，当你在一个回合中第一次使用被强化的武器或{@variantrule 徒手打击|XPHB}命中一个生物时，目标会受到等于你施法属性调整值的暗蚀伤害，并且你获得等于所造成暗蚀伤害数值的{@variantrule 临时生命值|XPHB}。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Paladin",
+          "name": "圣武士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "miscTags": [
+      "THP"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Spells/Hungering-Blade.webp"
+  }
+]

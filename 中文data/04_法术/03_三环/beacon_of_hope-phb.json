@@ -1,0 +1,63 @@
+[
+  {
+    "ENG_name": "Beacon of Hope",
+    "name": "希望信标",
+    "source": "PHB",
+    "page": 217,
+    "srd": true,
+    "basicRules": true,
+    "otherSources": [
+      {
+        "source": "RMR",
+        "page": 50
+      }
+    ],
+    "reprintedAs": [
+      "希望信标|XPHB"
+    ],
+    "level": 3,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "该法术带来活力与希望。在施法距离内指定任意数量的生物，并使其在法术持续时间内进行的感知豁免和死亡豁免具有优势。此外，其获得治疗时均以骰子最大值来决定其恢复的生命值。"
+    ],
+    "miscTags": [
+      "ADV",
+      "HL"
+    ],
+    "areaTags": [
+      "MT"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师"
+    ],
+    "display_school": "防护系"
+  }
+]

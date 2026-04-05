@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Vain Virtuoso's Violin",
+    "name": "虚荣演奏家的小提琴",
+    "source": "GriffonsSaddlebag2",
+    "page": 179,
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": "由吟游诗人",
+    "reqAttuneTags": [
+      {
+        "class": "吟游诗人"
+      }
+    ],
+    "wondrous": true,
+    "curse": true,
+    "entries": [
+      "这件精美的乐器镶嵌着复杂的珍珠图案。当你使用这把小提琴给予另一个生物一颗吟游诗人激励骰时，你自己也会获得一颗d4的吟游诗人激励骰。",
+      {
+        "ENG_name": "Curse",
+        "name": "诅咒",
+        "type": "entries",
+        "entries": [
+          "此小提琴已受诅咒，你与之同调后，诅咒将会传播到你身上。当一个你能看见的生物（包括你自己）将你的诗人激励骰的加值加入到了一次属性检定、攻击检定或豁免检定中，但检定仍然失败时，你会因对自己的能力丧失信心而受到等同于激励骰结果的心灵伤害。该伤害无视抗性与免疫。"
+        ]
+      }
+    ],
+    "lootTables": [
+      "魔法物品表 F1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Vain-Virtuosos-Violin.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

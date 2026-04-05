@@ -1,0 +1,33 @@
+[
+  {
+    "ENG_name": "Butterfly Staff",
+    "name": "蝴蝶法杖",
+    "source": "ObojimaTallGrass",
+    "page": 158,
+    "type": "M",
+    "rarity": "none",
+    "weight": 1,
+    "value": 4,
+    "weaponCategory": "简易",
+    "property": [
+      "F",
+      "V",
+      "S"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "B",
+    "dmg2": "1d6",
+    "weapon": true,
+    "entries": [
+      "虽然它可以作为武器使用，但蝴蝶法杖更常被用作捕获小型精魂和小生物的工具。其长柄顶端装有一个编织精良的捕网，通常由绵羊龙羊毛制成。",
+      {
+        "ENG_name": "Special",
+        "name": "特殊",
+        "type": "entries",
+        "entries": [
+          "当你持握蝴蝶法杖进行擒抱检定时，可以用此法杖以10尺内的一个小型或更小的生物为目标。当你这样做时，可以用武器的攻击调整值替代力量（{@skill 运动}）检定。以此方式擒抱生物时，你无法再用蝴蝶法杖发动另一次攻击。"
+        ]
+      }
+    ]
+  }
+]

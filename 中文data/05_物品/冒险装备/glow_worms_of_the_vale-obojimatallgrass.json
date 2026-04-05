@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Glow Worms of the Vale",
+    "name": "幽谷发光蠕虫",
+    "source": "ObojimaTallGrass",
+    "page": 211,
+    "type": "Ingred",
+    "rarity": "uncommon",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 12|large}|SneakerProMedium}",
+            "{@font {@style 15|large}|SneakerProMedium}",
+            "{@font {@style 14|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "幽谷发光蠕虫分布在胧忆岛的洞穴和沼泽中，作为药水的优质原料使用，但无畏的药剂师发现，在疾风原野的丰饶谷地发现的色彩斑斓的发光蠕虫具有更强的潜能。"
+    ],
+    "lootTables": [
+      "狂风农田非普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/glow-worms-of-the-vale.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 2235,
+          "height": 2235
+        }
+      ]
+    }
+  }
+]

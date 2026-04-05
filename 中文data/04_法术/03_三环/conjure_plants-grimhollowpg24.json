@@ -1,0 +1,82 @@
+[
+  {
+    "ENG_name": "Conjure Plants",
+    "name": "召唤植物",
+    "source": "GrimHollowPG24",
+    "page": 188,
+    "level": 3,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你召唤出活化的植物，它们以大型藤蔓、茎干、嫩枝、根部和叶子的形态出现在你视野范围内一处未占据的空间中。这些植被持续至法术持续时间结束。",
+      "当你处于植物5尺范围内或与它们共享空间时，你被视为处于一个{@variantrule 轻度遮蔽|XPHB}区域。其他生物无法进入与植物相同的空间。当你在回合中移动时，你也可以将植物移动至多30尺至一个你能看见的未占据空间。",
+      "每当这些植物移动到你可见的一个生物5尺内，以及每当你可见的一个生物进入这些植物5尺内的空间或在其内结束回合时，你可以迫使该生物进行一次敏捷豁免检定。豁免失败时，该生物受到{@damage 3d6}挥砍伤害。一个生物每回合只需进行一次此豁免。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "伤害对每个高于3环的法术位环阶增加{@dice 1d6}。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "挥砍"
+    ],
+    "savingThrow": [
+      "敏捷"
+    ],
+    "miscTags": [
+      "OBS",
+      "SGT"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Conjure%20Plants.webp"
+  }
+]

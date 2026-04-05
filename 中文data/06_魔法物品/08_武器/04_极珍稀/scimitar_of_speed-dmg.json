@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "Scimitar of Speed",
+    "name": "急速弯刀",
+    "source": "DMG",
+    "page": 199,
+    "srd": true,
+    "referenceSources": [
+      "OotA",
+      "SDW",
+      "LRDT"
+    ],
+    "reprintedAs": [
+      "急速弯刀|XDMG"
+    ],
+    "baseItem": "弯刀|PHB",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "weight": 3,
+    "weaponCategory": "martial",
+    "property": [
+      "F",
+      "L"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "S",
+    "bonusWeapon": "+2",
+    "entries": [
+      "你用此魔法武器发动的攻击检定和伤害掷骰获得+2加值。另外，你在自己的每一回合里可以用一个附赠动作以该弯刀发动一次攻击。"
+    ],
+    "lootTables": [
+      "魔法物品表H"
+    ],
+    "valueReference": 40000
+  }
+]

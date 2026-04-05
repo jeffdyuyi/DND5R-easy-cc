@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Ioun Stone, Regeneration",
+    "name": "艾恩石, 再生",
+    "source": "XDMG",
+    "page": 273,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "legendary",
+    "reqAttune": true,
+    "wondrous": true,
+    "hasRefs": true,
+    "entries": [
+      "{#itemEntry 艾恩石|XDMG}",
+      "在这颗珍珠白色的纺锤形艾恩石环绕在你头顶期间，每个小时结束时，若你至少拥有1点{@variantrule 生命值|XPHB}，你便恢复15点{@variantrule 生命值|XPHB|生命值}。"
+    ],
+    "lootTables": [
+      "奥秘 - 传说|XDMG"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 200000,
+    "fluff": {},
+    "type": "W"
+  }
+]

@@ -1,0 +1,94 @@
+[
+    {
+        "ENG_name": "Deft Explorer",
+        "name": "熟练探险家",
+        "source": "TCE",
+        "page": 56,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 1,
+        "isClassFeatureVariant": true,
+        "entries": [
+            "{@i 1 级游侠{@variantrule 可选职业特性|TCE|可选特性}，替代自然探索者特性}",
+            "你是一个无与伦比的探险家和求生专家。你在 1 级时获得对应的特性，然后在第 6 级和第 10 级时再各获得对应的特性。",
+            {
+                "ENG_name": "Canny",
+                "name": "精明",
+                "type": "entries",
+                "entries": [
+                    "你选择一项你拥有熟练的技能，你在使用该技能时所做的任何属性检定中的熟练加值变为两倍。你还可以额外说、读、写两门额外的自选语言。"
+                ]
+            }
+        ]
+    },
+    {
+        "ENG_name": "Favored Foe",
+        "name": "夙敌",
+        "source": "TCE",
+        "page": 56,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 1,
+        "isClassFeatureVariant": true,
+        "entries": [
+            "{@i 1 级游侠{@variantrule 可选职业特性|TCE|可选特性}，替代宿敌特性}",
+            "当你以一次攻击掷骰命中一个生物时，你可以呼唤你与自然的神秘羁联以将目标标记为你的夙敌。你在你的回合内第一次命中你的夙敌并对其造成伤害，你可以造成额外的 {@dice 1d4} 点伤害。"
+        ]
+    },
+    {
+        "ENG_name": "Spellcasting Focus",
+        "name": "法器",
+        "source": "TCE",
+        "page": 56,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 2,
+        "isClassFeatureVariant": true,
+        "entries": [
+            "{@i 2 级游侠{@variantrule 可选职业特性|TCE|可选特性}}",
+            "你可以使用{@item 德鲁伊法器|PHB}作为你的游侠法术的施法法器。"
+        ]
+    },
+    {
+        "ENG_name": "Primal Awareness",
+        "name": "原始意识",
+        "source": "TCE",
+        "page": 56,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 3,
+        "isClassFeatureVariant": true,
+        "entries": [
+            "{@i 3 级游侠{@variantrule 可选职业特性|TCE|可选特性}，替代原初意识特性}",
+            "你可以通过与自然的共鸣而集中你的意识。你获得了一些特定法术，且不占用你的游侠已知法术。"
+        ]
+    },
+    {
+        "ENG_name": "Martial Versatility",
+        "name": "替换武术",
+        "source": "TCE",
+        "page": 56,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 4,
+        "isClassFeatureVariant": true,
+        "entries": [
+            "{@i 4 级游侠{@variantrule 可选职业特性|TCE|可选特性}}",
+            "当你的游侠职业等级抵达能让你获得属性值提升职业特性时，你能用一个游侠可用的战斗风格替换原有的一个战斗风格。"
+        ]
+    },
+    {
+        "ENG_name": "Nature's Veil",
+        "name": "自然面纱",
+        "source": "TCE",
+        "page": 56,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 10,
+        "isClassFeatureVariant": true,
+        "entries": [
+            "{@i 10 级游侠{@variantrule 可选职业特性|TCE|可选特性}，替代遁术特性}",
+            "以一个附赠动作，你可以魔法地使自己变得{@condition 隐形}，直到你的下个回合开始。"
+        ]
+    }
+]

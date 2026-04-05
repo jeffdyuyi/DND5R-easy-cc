@@ -1,0 +1,55 @@
+[
+  {
+    "ENG_name": "Thread of Malediction",
+    "name": "恶咒之线",
+    "source": "CrookedMoon24",
+    "page": 164,
+    "type": "Thread of Fate",
+    "entries": [
+      "一个被恶咒之线连接的角色是真正被诅咒的，他们的整个家族血脉也是如此。弥漫在他们血脉上的诅咒预示着末日以及比死还糟的命运，对他们所有珍视之人皆是如此。只有通过钻研远古秘密和禁忌、亵渎的奇特起源知识，他们才有希望打破折磨他们的诅咒。",
+      {
+        "ENG_name": "Goal",
+        "name": "目标",
+        "type": "entries",
+        "entries": [
+          "角色必须寻求低语着它们诅咒的被遗忘的秘密，获得如何打破它的神秘知识，并采取必要步骤从折磨它们及其血脉的恶咒中解放自己。"
+        ]
+      },
+      {
+        "ENG_name": "Personalization",
+        "name": "个性化",
+        "type": "entries",
+        "entries": [
+          "确定折磨该角色的诅咒性质。他们是自己受到诅咒，还是从先祖那里继承而来？是哪种异界力量源自该诅咒，无论是邪魔、宇宙、精类，还是其他诡秘力量？该角色及其血脉因这诅咒而被标记为何种命运？"
+        ]
+      },
+      {
+        "ENG_name": "Call to Adventure",
+        "name": "冒险召唤",
+        "type": "entries",
+        "entries": [
+          "诅咒的迫近威胁驱使角色进行永恒的研究，寻求任何可能导向解决方案的知识。在经历众多死胡同后，角色发现了一个能够接触深奥图书馆的秘密社团。在获得进入权限后，角色盗窃了一张神秘的页面并逃脱，然后跟随它前往冒险开始的地方。"
+        ]
+      },
+      {
+        "ENG_name": "Associated Background",
+        "name": "关联背景",
+        "type": "entries",
+        "entries": [
+          "{@background 禁忌学者|crookedmoon24}"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/CrookedMoon24/Adventure/056-02-038.thread-of-malediction.webp"
+        },
+        "width": 626,
+        "height": 632
+      }
+    ]
+  }
+]

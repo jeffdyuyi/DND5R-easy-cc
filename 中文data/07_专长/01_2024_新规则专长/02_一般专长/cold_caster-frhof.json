@@ -1,0 +1,77 @@
+[
+  {
+    "ENG_name": "Cold Caster",
+    "name": "寒地施法者",
+    "source": "FRHoF",
+    "page": 39,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        }
+      }
+    ],
+    "additionalSpells": [
+      {
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "known": {
+          "_": [
+            "冷冻射线|xphb#c"
+          ]
+        }
+      },
+      {
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "known": {
+          "_": [
+            {
+              "choose": "level=0|class=法师"
+            }
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Cantrip",
+        "name": "戏法",
+        "type": "entries",
+        "entries": [
+          "你习得戏法{@spell 冷冻射线|XPHB}。若你已习得该戏法，你习得另一道你选择的法师戏法。该法术的施法属性是你以此专长提升的属性。"
+        ]
+      },
+      {
+        "ENG_name": "Frostbite",
+        "name": "霜噬",
+        "type": "entries",
+        "entries": [
+          "每回合一次，当你以攻击检定命中一名生物并造成寒冷伤害时，你能够暂时削弱该生物的防御。在你的下个回合结束前，该生物进行的下次豁免检定减少{@dice 1d4}。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

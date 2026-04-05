@@ -1,0 +1,225 @@
+{
+  "subclass": [
+    {
+      "name": "驱魔师",
+      "shortName": "驱魔师",
+      "source": "GuideDrakkenheim",
+      "page": 142,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/GuideDrakkenheim/Class/Icons/Exorcist.webp",
+      "subclassSpells": [
+        "祝福术",
+        "防护善恶",
+        "灵体武器",
+        "诚实之域",
+        "法术反制",
+        "灵体卫士",
+        "放逐术",
+        "安灵仪式|GuideDrakkenheim",
+        "驱逐善恶",
+        "焰击术"
+      ],
+      "subclassFeatures": [
+        "驱魔师|药剂师|GuideDrakkenheim|驱魔师|GuideDrakkenheim|1",
+        "灵魂研究|药剂师|GuideDrakkenheim|驱魔师|GuideDrakkenheim|1",
+        "驱魔师法术|药剂师|GuideDrakkenheim|驱魔师|GuideDrakkenheim|1",
+        "驱魔|药剂师|GuideDrakkenheim|驱魔师|GuideDrakkenheim|3",
+        "受祝之躯|药剂师|GuideDrakkenheim|驱魔师|GuideDrakkenheim|6",
+        "反斥力|药剂师|GuideDrakkenheim|驱魔师|GuideDrakkenheim|10",
+        "强效治疗|药剂师|GuideDrakkenheim|驱魔师|GuideDrakkenheim|14",
+        "虔信之证|药剂师|GuideDrakkenheim|驱魔师|GuideDrakkenheim|18"
+      ]
+    }
+  ],
+  "subclassFeature": [
+    {
+      "ENG_name": "Exorcist",
+      "name": "驱魔师",
+      "source": "GuideDrakkenheim",
+      "page": 142,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "驱魔师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "entries": [
+        "驱魔师预备好应对邪恶存在、阴险精魂和可怖邪魔。装备着圣徽、祈祷书和袋装仪式工具。习惯直面不可逾越的威胁，在护佑人类领域免受怪物侵扰的时间，从不心怀畏缩。"
+      ]
+    },
+    {
+      "ENG_name": "Spiritual Study",
+      "name": "灵魂研究",
+      "source": "GuideDrakkenheim",
+      "page": 143,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "驱魔师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "skillProficiencies": [
+        {
+          "religion": true
+        }
+      ],
+      "armorProficiencies": [
+        {
+          "heavy": true
+        }
+      ],
+      "entries": [
+        "获得重甲和{@skill 宗教|XPHB}技能的熟练项。若已有则改为获得另一种技能熟练项。可以使用圣徽作为药剂师法术的{@item 奥术法器|XPHB}。此外从牧师法术列表中选取一个戏法，对你而言视为药剂师戏法。"
+      ]
+    },
+    {
+      "ENG_name": "Exorcist Spells",
+      "name": "驱魔师法术",
+      "source": "GuideDrakkenheim",
+      "page": 142,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "驱魔师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "entries": [
+        "当你达到特定等级后，始终准备某些法术。这些法术对你而言视为药剂师法术，不计入准备数量上限。",
+        {
+          "type": "table",
+          "caption": "驱魔师法术",
+          "colLabels": [
+            "药剂师等级",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "1st",
+              "{@spell 祝福术|XPHB}, {@spell 防护善恶|XPHB}"
+            ],
+            [
+              "3rd",
+              "{@spell 灵体武器|XPHB}, {@spell 诚实之域|XPHB}"
+            ],
+            [
+              "5th",
+              "{@spell 法术反制|XPHB}, {@spell 灵体卫士|XPHB}"
+            ],
+            [
+              "7th",
+              "{@spell 放逐术|XPHB}, {@spell 安灵仪式|GuideDrakkenheim}"
+            ],
+            [
+              "9th",
+              "{@spell 驱逐善恶|XPHB}, {@spell 焰击术|XPHB}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Exorcism",
+      "name": "驱魔",
+      "source": "GuideDrakkenheim",
+      "page": 142,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "驱魔师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "获得通过圣徽灌注能量的能力。次数等于熟练加值的一半（向下取整），短休或长休恢复。若效应需要豁免，DC等于你的药剂师法术豁免DC。",
+        "从5级开始，受驱散邪恶影响失败的亡灵或邪魔额外受到 {@damage 4d8} 光辉伤害。",
+        {
+          "ENG_name": "Expel Evil",
+          "name": "驱散邪恶",
+          "type": "entries",
+          "entries": [
+            "展示圣徽发出谴责。30尺内被看见或听见的亡灵、天界、精类或邪魔需进行感知豁免，失败则被驱散1分钟（受到伤害会结束）。"
+          ]
+        },
+        {
+          "ENG_name": "Purge Corruption",
+          "name": "净化不洁",
+          "type": "entries",
+          "entries": [
+            "结束生物身上的 {@condition 目盲|XPHB}、{@condition 魅惑|XPHB}、{@condition 耳聋|XPHB}、{@condition 恐慌|XPHB}、{@condition 麻痹|XPHB}或{@condition 中毒|XPHB}中的一种。也可以移除被附身的效果，且将被驱逐实体震除宿主，造成心灵伤害。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Sacred Vessel",
+      "name": "受祝之躯",
+      "source": "GuideDrakkenheim",
+      "page": 143,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "驱魔师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 6,
+      "header": 2,
+      "conditionImmune": [
+        "恐慌"
+      ],
+      "entries": [
+        "免疫{@condition 恐慌|XPHB}，不能被附身或诅咒。对抗{@condition 魅惑|XPHB}豁免具有{@variantrule 优势|XPHB}。"
+      ]
+    },
+    {
+      "ENG_name": "Negation",
+      "name": "反斥力",
+      "source": "GuideDrakkenheim",
+      "page": 143,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "驱魔师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "当敌对生物以盟友为目标时，消耗药剂师法术位迫使其进行魅力豁免。失败则动作无效。"
+      ]
+    },
+    {
+      "ENG_name": "Empowered Healing",
+      "name": "强效治疗",
+      "source": "GuideDrakkenheim",
+      "page": 143,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "驱魔师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "施展治疗法术提供最大治疗量。此外目标获得等同于药剂师等级的临时生命值。"
+      ]
+    },
+    {
+      "ENG_name": "Devout Witness",
+      "name": "虔信之证",
+      "source": "GuideDrakkenheim",
+      "page": 143,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "驱魔师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 18,
+      "header": 2,
+      "entries": [
+        "作为虔诚的见证者，获得了以下强化强化属性的增益：",
+        {
+          "type": "list",
+          "items": [
+            "驱散邪恶特性失败的生物光辉伤害增至 {@damage 4d8}。 (原本已包含，此处由于文本结构单独列出)",
+            "受净化不洁援助的生物获得 {@dice 4d8} 临时生命值。"
+          ]
+        }
+      ]
+    }
+  ]
+}

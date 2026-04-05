@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Paranoia",
+    "name": "被害妄想",
+    "source": "ObojimaTallGrass",
+    "page": 221,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Com"
+    ],
+    "entries": [
+      "当你饮用这瓶药水时，你会获得增强感官，同时产生一种被跟踪的隐隐怀疑。接下来的8小时内，你无法被{@status 突袭}。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 12|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Combat/paranoia.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1298,
+          "height": 1298
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

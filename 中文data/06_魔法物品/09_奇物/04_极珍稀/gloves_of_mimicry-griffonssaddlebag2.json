@@ -1,0 +1,82 @@
+[
+  {
+    "ENG_name": "Gloves of Mimicry",
+    "name": "魔仿手套",
+    "source": "GriffonsSaddlebag2",
+    "page": 90,
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": "由吟游诗人",
+    "reqAttuneTags": [
+      {
+        "class": "吟游诗人"
+      }
+    ],
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d4 + 1}",
+    "charges": 5,
+    "entries": [
+      "这双色彩鲜艳的手套向你的手和手指延伸出独特的灵能魔法。着装该手套期间，你可以以一个动作从手套中施展{@spell 法师之手}。此外，你还可以以一个动作从手套中施展{@spell 毕格比之手|phb|奥术之手}（豁免DC 16，法术攻击加值 +8）。手套用于施展此法术后，直到下一个拂晓前无法再次施展此法术。",
+      "这双手套具有5充能用于以下词条。它们在每日黎明时重获{@dice 1d4 + 1}已消耗的充能。",
+      {
+        "ENG_name": "Applaud",
+        "name": "喝彩",
+        "type": "entries",
+        "entries": [
+          "当一个你以外的能看见并听见你的生物投掷吟游诗人激励骰时，你可以用反应消耗手套的1充能来拍手，以将你的魅力调整值加到这次掷骰的总值上。你可以在该生物投骰后，但在DM判定成功或失败前选择使用此反应。"
+        ]
+      },
+      {
+        "ENG_name": "Barrier",
+        "name": "屏障",
+        "type": "entries",
+        "entries": [
+          "当你被攻击命中时，你可以用反应消耗手套的1充能，将手掌伸向前方，如同抵在一道隐形的屏障上。你对该次攻击获得+5 AC加值，可能导致攻击失手。"
+        ]
+      },
+      {
+        "ENG_name": "Pinch",
+        "name": "掐捏",
+        "type": "entries",
+        "entries": [
+          "通过将拇指和食指相距不到一英寸，你可以用一个动作并消耗手套1充能，在视觉上掐捏你能看见的60尺内一个生物。该生物必须进行一次DC 16的智力豁免。豁免失败则受到{@damage 3d4}心灵伤害和{@damage 3d4}力场伤害，豁免成功则伤害减半。如果该生物正在专注于一个法术，其为维持专注所进行的豁免检定具有劣势。"
+        ]
+      },
+      {
+        "ENG_name": "Taunt",
+        "name": "嘲讽",
+        "type": "entries",
+        "entries": [
+          "你可以用一个动作脱下一只手套并消耗1充能，在视觉上用手套抽打30尺内你能看见的一个生物——如同在向其发起决斗。该生物必须进行一次DC 16的感知豁免。豁免失败则受到{@damage 2d4}心灵伤害和{@damage 2d4}力场伤害，且直到你下回合开始前对除你以外的生物进行的攻击检定具有劣势。豁免成功则伤害减半且不会受到攻击检定劣势。效果结束后，你立即重新戴上手套。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "will": [
+        "法师之手#c"
+      ],
+      "daily": {
+        "1e": [
+          "毕格比之手"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表 H1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Gloves-of-Mimicry.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

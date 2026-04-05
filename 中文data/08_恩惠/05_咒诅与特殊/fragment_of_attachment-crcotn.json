@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Fragment of Attachment",
+    "name": "依恋碎片",
+    "source": "CRCotN",
+    "page": 214,
+    "type": "Fragment of Suffering",
+    "entries": [
+      {
+        "ENG_name": "Benefit",
+        "name": "增益",
+        "type": "entries",
+        "entries": [
+          "当你在盟友10尺范围内时，你不能处于{@condition 恐慌}状态。如果你已经处于{@condition 恐慌}状态，并且移动到盟友10尺范围内，你身上的{@condition 恐慌}状态就会结束。"
+        ]
+      },
+      {
+        "ENG_name": "Drawback",
+        "name": "缺陷",
+        "type": "entries",
+        "entries": [
+          "当你不在盟友10尺范围内时，你在感知和魅力豁免检定上处于劣势。"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "ENG_name": "Blade of Disaster",
+    "name": "灾厄之刃",
+    "source": "FRHoF",
+    "page": 143,
+    "level": 9,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你创造一道形如剑刃的位面裂隙，持续直至法术结束。裂隙出现在施法距离内由你选择的一处空间，且你可以立即发动两次近战法术攻击，每次攻击都要指定裂隙5尺内的一名生物或物件。若命中，则目标受到{@damage 10d6}力场伤害。该攻击在{@dice d20}投出18或更高即算作掷出{@variantrule 重击|XPHB}。",
+      "在你的后续回合中，你可以用一个{@variantrule 附赠动作|XPHB}让裂隙移动至多60尺，再发动两次攻击，每次攻击依旧要指定裂隙5尺内的一名生物或物件。",
+      "该剑刃可以无害地通过任何屏障，包括由类似法术{@spell 力场墙|XPHB}所创造的那些。"
+    ],
+    "damageInflict": [
+      "force"
+    ],
+    "spellAttack": [
+      "M"
+    ],
+    "miscTags": [
+      "OBJ",
+      "UBA"
+    ],
+    "areaTags": [
+      "MT"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/FRHoF/Blade of Disaster.webp"
+          },
+          "credit": "Swatches Studio",
+          "title": "普雷斯托施展法术灾厄之刃大战文格尔",
+          "width": 1700,
+          "height": 1197
+        }
+      ]
+    },
+    "classes": [
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "咒法系",
+    "display_damageInflict": [
+      "力场"
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Repulsion Shield",
+    "name": "斥力之盾",
+    "source": "EFA",
+    "page": 112,
+    "baseItem": "盾牌|xphb",
+    "type": "S|XPHB",
+    "rarity": "uncommon",
+    "weight": 6,
+    "ac": 2,
+    "bonusAc": "+1",
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d4}",
+    "charges": 4,
+    "entries": [
+      "当你持用这面盾牌时，你的{@variantrule 护甲等级|XPHB}获得+1加值。",
+      "该盾牌有4充能。当你持握它时，当一个距你5尺内的大型或更小生物以近战攻击命中你时，你可以采取一个{@variantrule 反应|XPHB}来消耗该盾牌的1充能并将攻击手直线推离至多15尺。该盾牌在拂晓时恢复{@dice 1d4}已消耗的充能。"
+    ],
+    "classFeatures": [
+      "仿制魔法物品|奇械师|efa|2|efa"
+    ],
+    "valueReference": 400
+  }
+]

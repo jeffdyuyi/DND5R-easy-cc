@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Burrage's Collegiate Case",
+    "name": "伯雷奇的学院琴盒",
+    "source": "GriffonsSaddlebag2",
+    "page": 54,
+    "tier": "次要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这个鲁特琴盒由一种暗色木材的实木制成，盒盖上装饰着33颗秘银星辰，其中最大的那颗位于顶部。琴盒有五个隔间。其中四个隔间通往一个异次元空间，它能容纳无数物品，而重量永远不会超过7磅。打开盖子时，你可以通过按住那颗最大的星星的其中一个角来选择要访问哪个隔间。最小的隔间最多可容纳7支{@item 长笛|PHB|长笛}或类似的小型乐器。中等大小的隔间最多可容纳3件大型乐器，例如{@item 风笛|PHB|风笛}、{@item 鼓|PHB}或{@item 扬琴|PHB}。最大的隔间可容纳4个小凳子和一个乐谱架。第四个隔间没有固定大小，但可以容纳放置多达60张乐谱。如果你不选择隔间，盒子会自动打开到第五个隔间，它不通往异次元空间。第五个隔间足以容纳一把{@item 鲁特琴|PHB}。",
+      "从匣子中取出物品需要使用一个动作。如果你将不是{@item 乐器|PHB|乐器}或音乐物件的其他物品放在匣子的异次元隔间中，当你关闭盖子时，它会魔法性地重新出现于匣子的旁边。"
+    ],
+    "lootTables": [
+      "魔法物品表 B1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Burrages-Collegiate-Case.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

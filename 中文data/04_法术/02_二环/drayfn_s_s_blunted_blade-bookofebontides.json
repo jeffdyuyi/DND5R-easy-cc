@@ -1,0 +1,90 @@
+[
+  {
+    "ENG_name": "Drayfn's Blunted Blade",
+    "name": "德雷弗恩的钝刃术",
+    "source": "BookOfEbonTides",
+    "page": 60,
+    "level": 2,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一块生锈的铁碎子"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "目标的武器迅速腐蚀。你选择范围内一个手持非魔法制造武器的生物必须进行一次力量豁免检定。豁免失败时，目标必须掷两次所有武器伤害骰并取较低的结果。如果法术在1分钟结束前终止，目标的武器将恢复正常状态。否则，武器会分解成一堆锈红或木屑，视情况而定。"
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Paladin",
+          "name": "圣武士",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    },
+    "savingThrow": [
+      "力量"
+    ]
+  }
+]

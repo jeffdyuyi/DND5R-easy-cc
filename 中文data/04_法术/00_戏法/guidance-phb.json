@@ -1,0 +1,65 @@
+[
+  {
+    "ENG_name": "Guidance",
+    "name": "神导术",
+    "source": "PHB",
+    "page": 248,
+    "srd": true,
+    "basicRules": true,
+    "otherSources": [
+      {
+        "source": "RMR",
+        "page": 54
+      }
+    ],
+    "referenceSources": [
+      "ToA",
+      "TTP",
+      "WDMM"
+    ],
+    "reprintedAs": [
+      "神导术|XPHB"
+    ],
+    "level": 0,
+    "school": "D",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你触碰一个自愿的生物。在法术终止前，目标可以选择在一次属性检定时额外掷一粒 {@dice d4}，并将所得数值加入检定结果中。它可以在进行属性检定之前或之后掷骰。法术随后即终止。"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师",
+      "德鲁伊",
+      "奇械师"
+    ],
+    "display_school": "预言系"
+  }
+]

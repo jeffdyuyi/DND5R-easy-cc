@@ -1,0 +1,17 @@
+[
+  {
+    "name": "滚珠",
+    "ENG_name": "Ball Bearing",
+    "source": "PHB",
+    "page": 151,
+    "type": "G",
+    "rarity": "none",
+    "weight": 0.002,
+    "value": 0.1,
+    "entries": [
+      "最常见于一个{@item 滚珠(一袋1,000粒)|PHB|滚珠袋}内。"
+    ],
+    "basicRules": true,
+    "srd": true
+  }
+]

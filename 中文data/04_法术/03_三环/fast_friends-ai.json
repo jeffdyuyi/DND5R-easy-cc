@@ -1,0 +1,78 @@
+[
+  {
+    "ENG_name": "Fast Friends",
+    "name": "快速交友",
+    "source": "AI",
+    "page": 75,
+    "level": 3,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "如果你想要确保某件事情完成，你不能依赖于含糊不清的承诺、宣誓或雇佣合同。当你施展此法术时，选择一个能看见、能听见、并且能理解你的，在施法距离内的类人生物。这个生物必须通过一次感知豁免，否则将会在持续期间内被你{@condition 魅惑}。当生物因为这种方式被{@condition 魅惑}时，它将承诺尽其所能地以友好的方式履行你所要求的任何服务或者是活动。",
+      "在这个生物之前的任务完成时，或者你决定中止它的当前任务时，你可以为它布置一个新任务。如果这项活动或任务可能伤害这个生物，或者与这个生物的正常活动和欲望相违背时，生物可以进行另一次感知豁免来尝试中止这个效果。如果你或者你的同伴正在与这个生物交战，他对此豁免具有优势。如果你要求的活动在结果上会确实地导致这个生物死亡，法术将会结束。",
+      "当法术结束时，这个生物知道他曾经被你所{@condition 魅惑}。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "使用四环或更高法术位施展该法术时，你使用的法术位每比三环高一环，就可以额外再指定一个生物作为法术目标。"
+        ]
+      }
+    ],
+    "conditionInflict": [
+      "魅惑"
+    ],
+    "savingThrow": [
+      "wisdom"
+    ],
+    "affectsCreatureType": [
+      "类人"
+    ],
+    "miscTags": [
+      "SCT",
+      "SGT"
+    ],
+    "areaTags": [
+      "MT",
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "牧师",
+      "法师"
+    ],
+    "display_school": "惑控系",
+    "display_savingThrow": [
+      "感知"
+    ]
+  }
+]

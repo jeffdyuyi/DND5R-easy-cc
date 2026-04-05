@@ -1,0 +1,144 @@
+[
+  {
+    "ENG_name": "Mark of Hospitality",
+    "name": "招待龙纹",
+    "source": "EFA",
+    "page": 40,
+    "category": "D",
+    "prerequisite": [
+      {
+        "campaign": [
+          "艾伯伦"
+        ],
+        "exclusiveFeatCategory": [
+          "D"
+        ]
+      }
+    ],
+    "additionalSpells": [
+      {
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "prepared": {
+          "3": {
+            "daily": {
+              "1": [
+                "安定心神|xphb"
+              ]
+            }
+          },
+          "_": {
+            "daily": {
+              "1": [
+                "净化饮食|xphb"
+              ]
+            }
+          }
+        },
+        "expanded": {
+          "s1": [
+            "神莓术|xphb",
+            "睡眠术|xphb"
+          ],
+          "s2": [
+            "援助术|xphb",
+            "强化属性|xphb"
+          ],
+          "s3": [
+            "造粮术|xphb",
+            "李欧蒙小屋|xphb"
+          ],
+          "s4": [
+            "净化灵光|xphb",
+            "魔邓肯私人密室|xphb"
+          ],
+          "s5": [
+            "圣居|xphb"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Ever Hospitable",
+        "name": "永恒款待",
+        "type": "entries",
+        "entries": [
+          "当你进行一次魅力（{@skill 游说|XPHB}）检定或使用{@item 酿酒工具|XPHB}或{@item 厨师工具|XPHB}进行属性检定时，你可以掷{@dice 1d4}并将掷骰结果添加到属性检定中。"
+        ]
+      },
+      {
+        "ENG_name": "Innkeeper's Magic",
+        "name": "掌柜魔法",
+        "type": "entries",
+        "entries": [
+          "你总是准备了{@spell 净化饮食|XPHB}和{@spell 隐形仆役|XPHB}法术。你可以无需法术位施放每个法术一次，并在完成一次{@variantrule 长休|XPHB}后恢复以此方式施放它的能力。你也可以使用你拥有的任何合适等级的法术位来施放这些法术。智力、感知或魅力是这些法术的施法属性（在选择此专长时选择）。",
+          "当你达到角色等级3时，你还会始终准备着{@spell 安定心神|XPHB}法术并能以同样的方式施放它"
+        ]
+      },
+      {
+        "ENG_name": "Spells of the Mark",
+        "name": "龙纹法术",
+        "type": "entries",
+        "entries": [
+          "如果你拥有施法或契约魔法职业特性，招待龙纹法术列表中的法术将被添加到该特性的法术列表中。",
+          {
+            "type": "table",
+            "caption": "招待龙纹法术",
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "colLabels": [
+              "法术环阶",
+              "法术"
+            ],
+            "rows": [
+              [
+                "1",
+                "{@spell 神莓术|XPHB}, {@spell 睡眠术|XPHB}"
+              ],
+              [
+                "2",
+                "{@spell 援助术|XPHB}, {@spell 强化属性|XPHB}"
+              ],
+              [
+                "3",
+                "{@spell 造粮术|XPHB}, {@spell 李欧蒙小屋|XPHB}"
+              ],
+              [
+                "4",
+                "{@spell 净化灵光|XPHB}, {@spell 魔邓肯私人密室|XPHB}"
+              ],
+              [
+                "5",
+                "{@spell 圣居|XPHB}"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluffImages": true,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "feats/EFA/Mark of Hospitality.webp"
+          },
+          "credit": "Lee Moyer",
+          "width": 500,
+          "height": 525
+        }
+      ]
+    }
+  }
+]

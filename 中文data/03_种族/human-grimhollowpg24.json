@@ -1,0 +1,128 @@
+{
+  "race": [
+    {
+      "ENG_name": "Human",
+      "name": "人类",
+      "source": "GrimHollowPG24",
+      "page": 18,
+      "edition": "one",
+      "creatureTypes": [
+        "类人生物"
+      ],
+      "size": [
+        "M"
+      ],
+      "speed": 30,
+      "age": {
+        "mature": 18,
+        "max": 100
+      },
+      "sizeEntry": {
+        "ENG_name": "Size:",
+        "name": "体型：",
+        "type": "item",
+        "entries": [
+          "中等（人类的身高和体型差异很大，从勉强5英尺到远超过6英尺高。）"
+        ]
+      },
+      "entries": [
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "ENG_name": "Age:",
+              "name": "年龄：",
+              "type": "item",
+              "entries": [
+                "人类不到20岁成年，而很少活过100 岁。"
+              ]
+            }
+          ]
+        },
+        {
+          "ENG_name": "Traditional Human Traits",
+          "name": "传统人类特质",
+          "type": "inset",
+          "entries": [
+            "尽管人类并不比其他种族更倾向于暴力，但许多人类天生具有野心、对探索的饥渴以及面对危险的意愿。",
+            {
+              "ENG_name": "Combat Traits:",
+              "name": "战斗特质：",
+              "type": "entries",
+              "entries": [
+                {
+                  "type": "list",
+                  "items": [
+                    "{@optfeature 致命重击|GrimHollowPG24}",
+                    "{@optfeature 先攻|GrimHollowPG24}",
+                    "{@optfeature 武器熟练|GrimHollowPG24}"
+                  ]
+                }
+              ]
+            },
+            {
+              "ENG_name": "Exploration Traits:",
+              "name": "探索特质：",
+              "type": "entries",
+              "entries": [
+                {
+                  "type": "list",
+                  "items": [
+                    "{@optfeature 援手|GrimHollowPG24}",
+                    "{@optfeature 内在倾向|GrimHollowPG24}"
+                  ]
+                }
+              ]
+            },
+            {
+              "ENG_name": "Roleplaying Traits:",
+              "name": "扮演特质：",
+              "type": "entries",
+              "entries": [
+                {
+                  "type": "list",
+                  "items": [
+                    "{@optfeature 工匠专注|GrimHollowPG24}",
+                    "{@optfeature 敏锐生还者|GrimHollowPG24}",
+                    "{@optfeature 技能精通|GrimHollowPG24}"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "entries": [
+            {
+              "ENG_name": "Trait Selection",
+              "name": "特质选择",
+              "type": "entries",
+              "entries": [
+                "选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|特性 类型=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
+              ]
+            }
+          ]
+        }
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "subraces": [],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Race/Human.webp"
+            },
+            "credit": "Omar Samy",
+            "width": 850,
+            "height": 1921
+          }
+        ]
+      }
+    }
+  ]
+}

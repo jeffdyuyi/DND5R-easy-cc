@@ -1,0 +1,76 @@
+[
+  {
+    "ENG_name": "Investiture of Venom",
+    "name": "临终遗赠",
+    "source": "GrimHollowPG24",
+    "page": 195,
+    "level": 5,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "在该法术结束前，你的血管会膨胀并在皮肤下呈现出明显的绿色，你的眼睛不断流出液态毒素，并且你获得以下增益：",
+      {
+        "type": "list",
+        "items": [
+          "你具有对{@variantrule 免疫|XPHB} 和 {@condition 中毒|XPHB} 状态的免疫。",
+          "你可以确定30尺内你能看见的生物是否对毒素伤害具有{@variantrule 抗性|XPHB}或{@variantrule 免疫|XPHB}，或者对{@condition 中毒|XPHB}状态具有{@variantrule 免疫|XPHB}。",
+          "作为{@variantrule 附赠动作|XPHB}，选择一个你30尺内能看见的生物。该生物需进行一次对抗你法术豁免DC的体质豁免检定。若豁免失败，该生物将失去对毒素伤害的{@variantrule 抗性|XPHB}、对毒素伤害的{@variantrule 免疫|XPHB}或对{@condition 中毒|XPHB}状态的{@variantrule 免疫|XPHB}，直到你的下个回合结束。",
+          "作为一个{@action 魔法|XPHB}动作，一条15尺长5尺宽的{@variantrule 线状 [效应区域]|XPHB|线状}状毒素从你选择的方向喷射而出。{@variantrule 线状 [效应区域]|XPHB|线状}中的每个生物必须进行一次体质豁免检定。豁免失败时，该生物受到{@damage 4d6}毒素伤害并获得{@condition 中毒|XPHB}状态直到你的下个回合结束。豁免成功时，该生物仅受到一半伤害。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "毒素"
+    ],
+    "conditionInflict": [
+      "中毒"
+    ],
+    "savingThrow": [
+      "体质"
+    ],
+    "miscTags": [
+      "SGT",
+      "UBA"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Investiture%20of%20Venom.webp"
+  }
+]

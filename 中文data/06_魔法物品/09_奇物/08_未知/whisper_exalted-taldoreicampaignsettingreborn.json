@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Whisper (Exalted)",
+    "name": "低语（升华）",
+    "source": "TalDoreiCampaignSettingReborn",
+    "_copy": {
+      "ENG_name": "Whisper (Awakened)",
+      "name": "低语（觉醒）",
+      "source": "TalDoreiCampaignSettingReborn",
+      "_mod": {
+        "entries": [
+          {
+            "mode": "appendArr",
+            "items": {
+              "entries": [
+                {
+                  "ENG_name": "Exalted",
+                  "name": "升华",
+                  "type": "entries",
+                  "entries": [
+                    "当低语达到崇高状态时，你获得以下好处：",
+                    {
+                      "type": "list",
+                      "items": [
+                        "这把武器对攻击和伤害骰的加值增加到+3，它造成的额外心灵伤害增加到{@dice 1d8}。",
+                        "抵抗来自重击的{@condition 恐慌}状态的DC增加到17。",
+                        "当使用这把匕首进行远程攻击时，你可以选择变成影子并与刀刃融合作为攻击动作的一部分，传送到另一个位置。如果攻击命中，你将出现在目标周围5尺内你选择的未被占据的空间。如果攻击未命中，你将出现在GM确定的匕首落地的位置（通常是目标周围{@dice 1d6 × 5}尺内）。在任何情况下，你都会手持匕首出现。"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "_preserve": {
+        "page": true,
+        "fluff": true
+      }
+    },
+    "bonusWeapon": "+3",
+    "hasFluffImages": true
+  }
+]

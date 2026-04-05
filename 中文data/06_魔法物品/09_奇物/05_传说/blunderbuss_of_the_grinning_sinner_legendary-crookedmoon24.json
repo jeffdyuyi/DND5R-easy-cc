@@ -1,0 +1,69 @@
+[
+  {
+    "ENG_name": "Blunderbuss of the Grinning Sinner (Legendary)",
+    "name": "狞笑罪人的短管雷铳（传说）",
+    "source": "CrookedMoon24",
+    "page": 596,
+    "baseItem": "滑膛枪|XPHB",
+    "type": "R|XPHB",
+    "rarity": "legendary",
+    "reqAttune": true,
+    "weight": 10,
+    "weaponCategory": "军用",
+    "property": [
+      "A|XPHB",
+      "2H|XPHB",
+      "TCM'24:FH"
+    ],
+    "mastery": [
+      "缓速|XPHB"
+    ],
+    "range": "40/120",
+    "dmg1": "1d12",
+    "dmgType": "N",
+    "bonusWeapon": "+3",
+    "firearm": true,
+    "entries": [
+      "这支黑暗、华丽的短管雷铳有着黄铜枪管和刻有奥术符文的木质握柄。它曾是狞笑罪人的首选武器，被其灌注了发射厄运与诅咒的力量。",
+      "这支短管雷铳可用作一把忽略{@itemProperty LD|XPHB|装填}词条的{@item 滑膛枪|XPHB}，并且能够自行生成在命中时造成暗蚀伤害的弹药。你使用它进行的攻击检定和伤害掷骰会获得+3加值，该加值取决于该短管雷铳的稀有度。持握这支短管雷铳期间，你可以将其用作你法术的{@variantrule 法器|XPHB}，并且你还可以使用如下词条。",
+      {
+        "ENG_name": "Jinxshot (Rare+)",
+        "name": "厄运射击（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "当你在自己回合内执行{@action 攻击|XPHB}动作时，你可以将你的其中一次攻击替换为该短管雷铳的爆射，迫使30尺{@variantrule 锥状 [效应区域]|XPHB|锥状}区域内每个生物进行一次敏捷豁免（DC=16+短管雷铳加值），豁免失败则受到{@damage 2d4}暗蚀伤害（珍稀）或{@damage 3d6}暗蚀伤害（极珍稀+），豁免成功则伤害减半。"
+        ]
+      },
+      {
+        "ENG_name": "Sinner's Jinx (Very Rare+)",
+        "name": "罪人厄缚（极珍稀+）",
+        "type": "entries",
+        "entries": [
+          "在你的回合中，当你用此短管雷铳对一个生物造成伤害时，目标必须成功通过一次魅力豁免检定（DC = 16 + 此短管雷铳的加值）否则被诅咒1分钟。当被诅咒的目标进行{@variantrule D20 检定|XPHB}时，它从全部结果中减去{@dice 1d4}。若此属性被用于另一个生物，则此诅咒结束。"
+        ]
+      },
+      {
+        "ENG_name": "Luck Taker (Legendary)",
+        "name": "截运魔枪（传说）",
+        "type": "entries",
+        "entries": [
+          "当你周边60尺范围内一个已经被此武器诅咒的可见生物进行一次{@variantrule D20 检定|XPHB}并在{@dice d20}中掷出19或20时，你可以使用{@variantrule 反应|XPHB}模仿他们的幸运。在接下来的1分钟内，你下一次进行{@variantrule D20 检定|XPHB}时，可以将掷出的{@dice d20}骰值改为该触发值。"
+        ]
+      }
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Blunderbuss%20of%20the%20Grinning%20Sinner.webp"
+          },
+          "width": 1200,
+          "height": 730,
+          "credit": "Eugenio Frosali"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,124 @@
+[
+    {
+        "ENG_name": "Expert Sidekick",
+        "name": "专家协力者",
+        "source": "TCE",
+        "page": 142,
+        "className": "专家协力者",
+        "classSource": "TCE",
+        "level": 1,
+        "entries": [
+            "要获得专家职业，一个生物的数据板中必须至少具有一门它能说的语言。",
+            "{@note 注意：此职业适用于 NPC {@variantrule 协力者|TCE}。}"
+        ]
+    },
+    {
+        "ENG_name": "Bonus Proficiencies",
+        "name": "附赠熟练",
+        "source": "TCE",
+        "page": 142,
+        "className": "专家协力者",
+        "classSource": "TCE",
+        "level": 1,
+        "entries": [
+            "协力者获得以下一项你所选豁免检定的熟练：敏捷，智力，或魅力。",
+            "此外，协力者获得 5 项你所选技能的熟练，并且它获得轻甲熟练。如果它是一个类人生物或在其资料版中具有一项 {@filter 简易或军用武器|items|source=phb|category=基础|type=军用武器;简易武器}，它也会获得所有简易武器和两种你所选择工具的熟练。"
+        ]
+    },
+    {
+        "ENG_name": "Helpful",
+        "name": "乐于助人",
+        "source": "TCE",
+        "page": 142,
+        "className": "专家协力者",
+        "classSource": "TCE",
+        "level": 1,
+        "entries": [
+            "协力者擅长提供恰到好处的帮助：专家能够以一个附赠动作执行 {@action 协助 Help} 动作。"
+        ]
+    },
+    {
+        "ENG_name": "Cunning Action",
+        "name": "灵巧动作",
+        "source": "TCE",
+        "page": 142,
+        "className": "专家协力者",
+        "classSource": "TCE",
+        "level": 2,
+        "entries": [
+            "协力者的迅捷或敏锐思维能让它迅速行动。在专家的战斗回合中，其可以用附赠动作执行 {@action 疾走 Dash}，{@action 撤离 Disengage} 或 {@action 躲藏 Hide} 动作。"
+        ]
+    },
+    {
+        "ENG_name": "Expertise",
+        "name": "专精",
+        "source": "TCE",
+        "page": 142,
+        "className": "专家协力者",
+        "classSource": "TCE",
+        "level": 3,
+        "entries": [
+            "选择协力者的两项熟练技能。其进行所选熟练项的属性检定时可以加上双倍的熟练。在第 15 级时，再选择两项协力者的熟练技能获得此增益。"
+        ]
+    },
+    {
+        "ENG_name": "Coordinated Strike",
+        "name": "协同攻击",
+        "source": "TCE",
+        "page": 142,
+        "className": "专家协力者",
+        "classSource": "TCE",
+        "level": 6,
+        "entries": [
+            "协力者擅长在战斗中配合进攻。当一位协力者使用乐于助人特性协助一位盟友攻击一个生物时，其目标可以距离协力者最多 30 尺远。并且下一次协力者在当前回合结束前以一次攻击命中该生物时可以造成额外 {@damage 2d6} 伤害。该额外伤害类型与造成它的攻击伤害类型相同。"
+        ]
+    },
+    {
+        "ENG_name": "Evasion",
+        "name": "反射闪避",
+        "source": "TCE",
+        "page": 142,
+        "className": "专家协力者",
+        "classSource": "TCE",
+        "level": 7,
+        "entries": [
+            "由于特别的好理智，协力者擅长于规避危险。当协力者被一个允许其进行一次敏捷豁免减半伤害的效应作为目标时，它在成功时不会受到伤害，而失败时只受到一半伤害。协力者在 {@condition 失能} 时不会获得该好处。"
+        ]
+    },
+    {
+        "ENG_name": "Inspiring Help",
+        "name": "鼓舞协助",
+        "source": "TCE",
+        "page": 142,
+        "className": "专家协力者",
+        "classSource": "TCE",
+        "level": 11,
+        "entries": [
+            "当协力者执行 {@action 协助} 动作时，受到协助的生物同时获得一枚 {@dice 1d6} 骰，可以额外加在 {@dice d20} 骰值上。如果掷骰的是攻击检定，则该生物可以放弃在攻击检定上加上骰值，然后在命中后的伤害中加上该骰值。在第 20 级时，该加值提升到 {@dice 2d6}。"
+        ]
+    },
+    {
+        "ENG_name": "Reliable Talent",
+        "name": "可靠才能",
+        "source": "TCE",
+        "page": 142,
+        "className": "专家协力者",
+        "classSource": "TCE",
+        "level": 14,
+        "entries": [
+            "协力者的技能经过精炼而更趋于完美。每当协力者进行的属性检定可以使用熟练加值时，它可以将 {@dice d20} 骰中 9 或以下的结果都视为 10。"
+        ]
+    },
+    {
+        "ENG_name": "Sharp Mind",
+        "name": "明锐心智",
+        "source": "TCE",
+        "page": 142,
+        "className": "专家协力者",
+        "classSource": "TCE",
+        "level": 18,
+        "entries": [
+            "协力者获得以下一项你所选豁免检定的熟练：智力，感知或魅力。"
+        ]
+    }
+]

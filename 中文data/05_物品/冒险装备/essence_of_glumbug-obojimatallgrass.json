@@ -1,0 +1,51 @@
+[
+  {
+    "ENG_name": "Essence of Glumbug",
+    "name": "格伦巴格精华",
+    "source": "ObojimaTallGrass",
+    "page": 211,
+    "type": "Ingred",
+    "rarity": "uncommon",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 11|large}|SneakerProMedium}",
+            "{@font {@style 11|large}|SneakerProMedium}",
+            "{@font {@style 17|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "第一个学会格伦巴格挠痒艺术的人已经迷失在时间中，但仍有几位老手愿意教一个愿意学习的学徒一些唬人把戏。格伦巴格挠痒者是唯一知道如何提取发光的格伦巴格精华的人，因为它不能通过压碎或解剖这些亮晶晶的虫子来收集。格伦巴格大多在岩石下和洞穴中被发现。"
+    ],
+    "lootTables": [
+      "海岸高地非普通原料|ObojimaTallGrass",
+      "阿伯拉山非普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/essence-of-glumbug.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 2136,
+          "height": 2136
+        }
+      ]
+    }
+  }
+]

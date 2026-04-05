@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Cabal's Ruin (Awakened)",
+    "name": "鬼蜮末日（觉醒）",
+    "source": "TalDoreiCampaignSettingReborn",
+    "_copy": {
+      "ENG_name": "Cabal's Ruin (Dormant)",
+      "name": "鬼蜮末日（休眠）",
+      "source": "TalDoreiCampaignSettingReborn",
+      "_mod": {
+        "entries": [
+          {
+            "mode": "appendArr",
+            "items": {
+              "entries": [
+                {
+                  "ENG_name": "Awakened",
+                  "name": "觉醒",
+                  "type": "entries",
+                  "entries": [
+                    "当卡巴尔的毁灭达到觉醒状态时，你获得以下好处：",
+                    {
+                      "type": "list",
+                      "items": [
+                        "穿着这件斗篷时，你在对抗法术和其他魔法效果的{@quickref 优势与劣势|PHB|2|0|优势}{@quickref 豁免检定|PHB|2|1}。",
+                        "这件斗篷有6次充能，每天黎明时恢复{@dice 1d4 + 2}次已消耗的充能。",
+                        "当你使用斗篷吸收法术时，你将获得对该法术造成的一种伤害类型的抗性（由你选择）。这种抗性将持续到你下一个回合结束。"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "_preserve": {
+        "page": true,
+        "fluff": true
+      }
+    },
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d4 + 2}",
+    "charges": 6,
+    "hasFluffImages": true
+  }
+]

@@ -1,0 +1,75 @@
+[
+  {
+    "ENG_name": "Harvest Moonglow",
+    "name": "丰收月辉",
+    "source": "CrookedMoon24",
+    "page": 129,
+    "level": 3,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一块月石碎片"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你呼唤丰收之月的光辉，照亮以施法距离内一点为源点的半径20尺{@variantrule 球状 [效应区域]|XPHB|球状}区域。该区域会沐浴在银色的{@variantrule 微光光照|XPHB}中。在该光照下具有{@condition 隐形|XPHB}状态的生物和物件会以半透明的闪烁影像形式变得可见。当你的一位盟友位于该光照下时，它可以使用{@variantrule 附赠动作|XPHB}吸收部分光辉，获得{@dice 2d6}{@variantrule 临时生命值|XPHB}。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "升环施法。使用的法术位每比三环高一环，{@variantrule 临时生命值|XPHB}就增加{@dice 1d6}。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "miscTags": [
+      "LGT",
+      "THP",
+      "UBA"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Spells/Harvest-Moonglow.webp"
+  }
+]

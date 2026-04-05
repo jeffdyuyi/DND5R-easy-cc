@@ -1,0 +1,239 @@
+{
+  "ENG_name": "Life Domain",
+  "name": "生命领域",
+  "shortName": "生命",
+  "source": "PHB",
+  "className": "牧师",
+  "classSource": "PHB",
+  "page": 60,
+  "srd": true,
+  "basicRules": true,
+  "reprintedAs": [
+    "生命|牧师|XPHB|XPHB"
+  ],
+  "edition": "classic",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "1": [
+          "祝福术|PHB",
+          "疗伤术|PHB"
+        ],
+        "3": [
+          "次等复原术|PHB",
+          "灵体武器|PHB"
+        ],
+        "5": [
+          "希望信标|PHB",
+          "回生术|PHB"
+        ],
+        "7": [
+          "防死结界|PHB",
+          "信仰守卫|PHB"
+        ],
+        "9": [
+          "群体疗伤术|PHB",
+          "死者复活|PHB"
+        ]
+      }
+    }
+  ],
+  "subclassFeatures": [
+    "生命领域|牧师||生命||1",
+    "引导神力：维持生命|牧师||生命||2",
+    "神佑医者|牧师||生命||6",
+    "神圣打击|牧师||生命||8",
+    "受祝击|牧师||生命||8|TCE",
+    "极效治疗|牧师||生命||17"
+  ],
+  "features": [
+    {
+      "ENG_name": "Life Domain",
+      "name": "生命领域",
+      "source": "PHB",
+      "page": 60,
+      "srd": true,
+      "basicRules": true,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "生命",
+      "subclassSource": "PHB",
+      "level": 1,
+      "entries": [
+        "生命领域专注于那维系着多元宇宙存在的活跃正能量。生命领域的神明们致力于促进全体生灵的福祉、治疗伤病并向需要者施以怜悯，同时驱散死亡与永恒黑暗的力量。这些神明包括了所有致力于生命、健康、耕种和自然的成员。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "领域法术|牧师||生命||1"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "附赠熟练|牧师||生命||1"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "生命门徒|牧师||生命||1"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Domain Spells",
+      "name": "领域法术",
+      "source": "PHB",
+      "page": 60,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "生命",
+      "subclassSource": "PHB",
+      "level": 1,
+      "entries": [
+        "你在到达生命领域法术表中特定的牧师等级时，你就始终准备了表中对应的法术。关于领域法术如何工作，请参阅神圣领域职业特性。",
+        {
+          "type": "table",
+          "caption": "生命领域法术",
+          "colLabels": [
+            "牧师等级",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "1st",
+              "{@spell 祝福术|PHB}, {@spell 疗伤术|PHB}"
+            ],
+            [
+              "3rd",
+              "{@spell 次等复原术|PHB}, {@spell 灵体武器|PHB}"
+            ],
+            [
+              "5th",
+              "{@spell 希望信标|PHB}, {@spell 回生术|PHB}"
+            ],
+            [
+              "7th",
+              "{@spell 防死结界|PHB}, {@spell 信仰守卫|PHB}"
+            ],
+            [
+              "9th",
+              "{@spell 群体疗伤术|PHB}, {@spell 死者复活|PHB}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Bonus Proficiency",
+      "name": "附赠熟练",
+      "source": "PHB",
+      "page": 60,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "生命",
+      "subclassSource": "PHB",
+      "level": 1,
+      "header": 1,
+      "entries": [
+        "当你1级选择此领域时，你获得重甲的熟练项。"
+      ]
+    },
+    {
+      "ENG_name": "Disciple of Life",
+      "name": "生命门徒",
+      "source": "PHB",
+      "page": 60,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "生命",
+      "subclassSource": "PHB",
+      "level": 1,
+      "header": 1,
+      "entries": [
+        "第1级起，你的治疗法术效力更高。你消耗法术位施展1环及更高环阶法术，当该法术恢复生物生命值时，额外恢复 2 + 该法术位环阶点的生命值。"
+      ]
+    },
+    {
+      "ENG_name": "Channel Divinity: Preserve Life",
+      "name": "引导神力：维持生命",
+      "source": "PHB",
+      "page": 60,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "生命",
+      "subclassSource": "PHB",
+      "level": 2,
+      "header": 2,
+      "consumes": {
+        "ENG_name": "Channel Divinity",
+        "name": "引导神力"
+      },
+      "entries": [
+        "第2级起，你可以使用你的引导神力来治愈重伤者。作为一个动作，你展示圣徽并呼唤治疗能量。你可以恢复总额等于你牧师等级 5 倍的生命值。",
+        "你选择身边 30 尺内任意数量的生物作为此特性的目标，再将上述生命值分配给它们。该特性至多将目标的生命值恢复至其上限的一半。你不能使用此特性恢复不死生物或构装体的生命值。"
+      ]
+    },
+    {
+      "ENG_name": "Blessed Healer",
+      "name": "神佑医者",
+      "source": "PHB",
+      "page": 60,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "生命",
+      "subclassSource": "PHB",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "第6级起，你为其他人施展的治疗性法术也能治疗你自己。当你施展一道恢复生物生命值的 1 环或更高环阶法术时，如果你恢复的目标不包括你自己，则你也将恢复 2 + 该法术位环阶点的生命值。"
+      ]
+    },
+    {
+      "ENG_name": "Divine Strike",
+      "name": "神圣打击",
+      "source": "PHB",
+      "page": 60,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "生命",
+      "subclassSource": "PHB",
+      "level": 8,
+      "header": 2,
+      "entries": [
+        "第8级起，你获得将神圣能量灌注进武器攻击的能力。你每回合一次在武器攻击命中生物时，可以让该攻击额外对目标造成 {@damage 1d8} 点光耀伤害。当你到达14级时，该额外伤害增加到 {@damage 2d8} 点。"
+      ]
+    },
+    {
+      "ENG_name": "Blessed Strikes",
+      "name": "受祝击",
+      "source": "TCE",
+      "page": 30,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "生命",
+      "subclassSource": "PHB",
+      "level": 8,
+      "isClassFeatureVariant": true,
+      "header": 2,
+      "entries": [
+        "{@i 8级牧师{@variantrule 可选职业特性|TCE|可选特性}，取代神圣打击特性}",
+        "在战斗中，你受到神力的祝福。当你通过戏法或武器攻击来伤害一个生物时，你能够对该生物造成额外{@damage 1d8}光耀伤害。当你造成一次此伤害后，你直到自己的下一个回合开始前无法再次使用此特性。"
+      ]
+    },
+    {
+      "ENG_name": "Supreme Healing",
+      "name": "极效治疗",
+      "source": "PHB",
+      "page": 60,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "生命",
+      "subclassSource": "PHB",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "第17级起，当你需要掷一枚或多枚骰子以决定为一个恢复生命值的法术恢复的数值时，你可以直接取每个骰子的最高值。例如，一道法术为某一生物恢复 {@dice 2d6} 点生命值，则该生物直接恢复 12 点生命值。"
+      ]
+    }
+  ]
+}

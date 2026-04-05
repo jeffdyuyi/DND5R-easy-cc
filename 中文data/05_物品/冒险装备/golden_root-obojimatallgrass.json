@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Golden Root",
+    "name": "金根",
+    "source": "ObojimaTallGrass",
+    "page": 217,
+    "type": "Ingred",
+    "rarity": "rare",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 18|large}|SneakerProMedium}",
+            "{@font {@style 18|large}|SneakerProMedium}",
+            "{@font {@style 18|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "只有少数远古树木的根须延伸至胧忆岛心灵的最深处。这些根须吸收自然界的和谐能量，将其转化为金。采集它们需要与守护这些远古树木的森林精魄建立尊重与合作的关系。只有这样，它们才会向值得的药水制造者提供金根。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/golden-root.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 2119,
+          "height": 2119
+        }
+      ]
+    }
+  }
+]

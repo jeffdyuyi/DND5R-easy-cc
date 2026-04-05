@@ -1,0 +1,94 @@
+[
+  {
+    "ENG_name": "Toll the Dead",
+    "name": "亡者丧钟",
+    "source": "XPHB",
+    "page": 334,
+    "referenceSources": [
+      "UtHftLH"
+    ],
+    "level": 0,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你对着施法距离内一名你可见的生物一指，随后目标 10 尺内响起一阵哀恸的钟鸣。目标必须通过一次感知豁免，否则将受到{@damage 1d8}点暗蚀伤害。若目标豁免失败时已损失任意数量{@variantrule 生命值|XPHB}，则改为令其受到{@damage 1d12}点暗蚀伤害。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Cantrip Upgrade",
+        "name": "戏法强化",
+        "type": "entries",
+        "entries": [
+          "到达特定等级后，此戏法的伤害骰将增加一枚：5 级（{@damage 2d8}或{@damage 2d12}）、11 级（{@damage 3d8}或{@damage 3d12}）、17 级（{@damage 4d8}或{@damage 4d12}）。"
+        ]
+      }
+    ],
+    "scalingLevelDice": [
+      {
+        "label": "暗蚀伤害",
+        "scaling": {
+          "1": "1d8",
+          "5": "2d8",
+          "11": "3d8",
+          "17": "4d8"
+        }
+      },
+      {
+        "label": "对受伤生物的暗蚀伤害",
+        "scaling": {
+          "1": "1d12",
+          "5": "2d12",
+          "11": "3d12",
+          "17": "4d12"
+        }
+      }
+    ],
+    "damageInflict": [
+      "necrotic"
+    ],
+    "savingThrow": [
+      "wisdom"
+    ],
+    "miscTags": [
+      "SCL",
+      "SGT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "死灵系",
+    "display_savingThrow": [
+      "感知"
+    ],
+    "display_damageInflict": [
+      "死灵"
+    ]
+  }
+]

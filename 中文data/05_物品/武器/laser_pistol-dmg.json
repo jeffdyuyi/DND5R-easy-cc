@@ -1,0 +1,32 @@
+[
+  {
+    "name": "激光手枪",
+    "ENG_name": "Laser Pistol",
+    "source": "DMG",
+    "page": 268,
+    "edition": "classic",
+    "type": "R",
+    "rarity": "none",
+    "weight": 2,
+    "weaponCategory": "martial",
+    "property": [
+      "AF|DMG",
+      "RLD"
+    ],
+    "dmg1": "3d6",
+    "dmgType": "R",
+    "range": "40/120",
+    "ammoType": "能量电池",
+    "age": "未来",
+    "firearm": true,
+    "referenceSources": [
+      "IDRotF",
+      "QftIS"
+    ],
+    "reload": 50,
+    "reprintedAs": [
+      "激光手枪|XDMG"
+    ],
+    "weapon": true
+  }
+]

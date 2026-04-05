@@ -1,0 +1,17 @@
+[
+  {
+    "ENG_name": "Draught of Slime Curse Cure",
+    "name": "软泥诅咒解药",
+    "source": "HumblewoodTales",
+    "page": 238,
+    "type": "P",
+    "rarity": "rare",
+    "entries": [
+      "这种略带涩味的绿色液体浓稠且粘滑，充满气泡。饮用此药水可让你获得{@spell 移除诅咒}法术的增益效果，如同对你施放了该法术一般，并且在饮用后的1小时内，抵抗被诅咒的豁免检定具有优势。"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "hasFluffImages": true
+  }
+]

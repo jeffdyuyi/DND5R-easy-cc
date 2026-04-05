@@ -1,0 +1,175 @@
+{
+  "ENG_name": "College of Adventurers",
+  "name": "冒险者学院",
+  "shortName": "冒险者",
+  "source": "GrimHollowPG24",
+  "className": "吟游诗人",
+  "classSource": "XPHB",
+  "page": 64,
+  "edition": "one",
+  "optionalfeatureProgression": [
+    {
+      "ENG_name": "Adventurer Talent",
+      "name": "冒险者天赋",
+      "featureType": [
+        "CA:AT"
+      ],
+      "progression": {
+        "6": 1,
+        "14": 2
+      }
+    }
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "College of Adventurers",
+      "name": "冒险者学院",
+      "source": "GrimHollowPG24",
+      "page": 64,
+      "className": "吟游诗人",
+      "classSource": "XPHB",
+      "subclassShortName": "冒险者",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "entries": [
+        "{@i 成为职业大师}",
+        "来自冒险者学院的吟游诗人从古老的英雄和传说故事中学习。吟游诗人是多面手，而对于冒险者学院来说，这一点更加真实。他们将同伴的所有技能合而为一，使他们能够多才多艺并提供支持。虽然没有直接的目标，但许多研究冒险者的吟游诗人活着讲述其他英雄的故事或寻求创造自己的故事。伟大事迹、绝望的狡黠、魔法异常或神力的故事激励着这些吟游诗人。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "天才冒险者|吟游诗人|XPHB|冒险者|GrimHollowPG24|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "队伍策划者|吟游诗人|XPHB|冒险者|GrimHollowPG24|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Party Planner",
+      "name": "队伍策划者",
+      "source": "GrimHollowPG24",
+      "page": 64,
+      "className": "吟游诗人",
+      "classSource": "XPHB",
+      "subclassShortName": "冒险者",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "当一个生物拥有你给予的诗人激励骰时，它可以使用一个{@variantrule 附赠动作|XPHB}来执行{@action 协助|XPHB}动作。"
+      ]
+    },
+    {
+      "ENG_name": "Talented Adventurer",
+      "name": "天才冒险者",
+      "source": "GrimHollowPG24",
+      "page": 64,
+      "className": "吟游诗人",
+      "classSource": "XPHB",
+      "subclassShortName": "冒险者",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你从该子职描述后文的{@filter \"冒险者的天赋选项\"|optionalfeatures|特性 type=冒险者学院:冒险者天赋}部分中选择一个冒险者天赋。当你达到吟游诗人等级6和14时，你将学习一个额外的自选冒险者天赋。",
+        {
+          "type": "options",
+          "count": 1,
+          "entries": [
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "野蛮人|GrimHollowPG24"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "牧师|GrimHollowPG24"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "德鲁伊|GrimHollowPG24"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "战士|GrimHollowPG24"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "武僧|GrimHollowPG24"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "圣武士|GrimHollowPG24"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "游侠|GrimHollowPG24"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "游荡者|GrimHollowPG24"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "术士|GrimHollowPG24"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "魔契师|GrimHollowPG24"
+            },
+            {
+              "type": "refOptionalfeature",
+              "optionalfeature": "法师|GrimHollowPG24"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Well-Rounded",
+      "name": "全面发展的",
+      "source": "GrimHollowPG24",
+      "page": 64,
+      "className": "吟游诗人",
+      "classSource": "XPHB",
+      "subclassShortName": "冒险者",
+      "subclassSource": "GrimHollowPG24",
+      "level": 6,
+      "languageProficiencies": [
+        {
+          "any": 1
+        }
+      ],
+      "skillProficiencies": [
+        {
+          "any": 1
+        }
+      ],
+      "toolProficiencies": [
+        {
+          "anyArtisansTool": 1
+        }
+      ],
+      "header": 2,
+      "entries": [
+        "你获得一种自选的{@item 工匠工具|XPHB}的熟练项，你获得一种自选技能的熟练项，并且你懂得一种自选的语言。"
+      ]
+    },
+    {
+      "ENG_name": "Improvisational Talent",
+      "name": "即兴天赋",
+      "source": "GrimHollowPG24",
+      "page": 64,
+      "className": "吟游诗人",
+      "classSource": "XPHB",
+      "subclassShortName": "冒险者",
+      "subclassSource": "GrimHollowPG24",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "当你完成一次{@variantrule 长休|XPHB}时，你可以选择一项已知的冒险者天赋并将其替换为一个未知的天赋。"
+      ]
+    }
+  ],
+  "hasFluff": true,
+  "hasFluffImages": true
+}

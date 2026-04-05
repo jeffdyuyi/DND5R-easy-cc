@@ -1,0 +1,83 @@
+[
+  {
+    "ENG_name": "Unbind Gravity",
+    "name": "解除重力",
+    "source": "GuideDrakkenheim",
+    "page": 198,
+    "level": 7,
+    "school": "T",
+    "subschools": [
+      "受污染的"
+    ],
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 100
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "价值100gp的妄质碎片，该法术会消耗此碎片"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "{@i 当你施放这个法术时，你获得1层污染。}",
+      "该法术允许你控制范围内某点为中心的100英尺立方区域内的重力。当你施放该法术时以及在法术持续时间内每个你的回合开始时，你可以决定区域内重力拉动的方向。所有未以某种方式固定在地面的生物和物件都会朝你选择的方向坠落，直到他们到达区域的边缘。生物可以进行一次敏捷豁免检定以擒拿其可触及的固定物件，从而避免坠落。",
+      "如果在此坠落过程中遇到某个固体物件（例如天花板），坠落的物件和生物会像在正常向下坠落时一样撞击它。如果一个物件或生物到达区域边缘而没有撞击任何东西，它会在那里停留，轻微振荡，持续整个持续时间。",
+      "或者，你可以决定阻止重力在该区域内生效。当你这样做时，区域内的生物会在半空中悬浮，并且必须通过推动或拉动触及范围内的固定物件或表面（如墙壁或天花板）来移动，这使得它们能够像攀爬一样移动。无人看管的物件会随机悬浮。",
+      "法术持续时间结束后，受术物件和生物将重新坠落下来。"
+    ],
+    "savingThrow": [
+      "敏捷"
+    ],
+    "miscTags": [
+      "SCL"
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Apothecary",
+          "name": "药剂师",
+          "source": "GuideDrakkenheim"
+        },
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    }
+  }
+]

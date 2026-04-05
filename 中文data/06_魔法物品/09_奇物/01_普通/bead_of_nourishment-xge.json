@@ -1,0 +1,24 @@
+[
+  {
+    "ENG_name": "Bead of Nourishment",
+    "name": "营养珠",
+    "source": "XGE",
+    "page": 136,
+    "reprintedAs": [
+      "营养珠|XDMG"
+    ],
+    "tier": "次要",
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "这个无味海绵状凝胶珠子在你的舌头上溶解时，它会为你提供一天份的食物营养。"
+    ],
+    "miscTags": [
+      "CF/W",
+      "CNS"
+    ],
+    "translator": "不全书",
+    "valueReference": 50,
+    "type": "W"
+  }
+]

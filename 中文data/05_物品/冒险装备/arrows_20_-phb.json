@@ -1,0 +1,25 @@
+[
+  {
+    "name": "箭矢 (20)",
+    "ENG_name": "Arrows (20)",
+    "source": "PHB",
+    "page": 150,
+    "edition": "classic",
+    "type": "A",
+    "rarity": "none",
+    "weight": 1,
+    "value": 100,
+    "packContents": [
+      {
+        "item": "箭|PHB",
+        "quantity": 20
+      }
+    ],
+    "arrow": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "箭矢 (20)|XPHB"
+    ],
+    "srd": true
+  }
+]

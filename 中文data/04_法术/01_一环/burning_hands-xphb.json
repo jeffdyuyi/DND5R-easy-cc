@@ -1,0 +1,75 @@
+[
+  {
+    "ENG_name": "Burning Hands",
+    "name": "燃烧之手",
+    "source": "XPHB",
+    "page": 248,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "UtHftLH"
+    ],
+    "level": 1,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "cone",
+      "distance": {
+        "type": "feet",
+        "amount": 15
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你向前喷射出一片火焰。处于 15 尺{@variantrule 锥状 [效应区域]|XPHB|锥状}区域内的生物必须进行一次敏捷豁免。豁免失败者受到{@damage 3d6}火焰伤害，豁免成功则受到半数伤害。",
+      "在此{@variantrule 锥状 [效应区域]|XPHB|锥状}区域内的未被着装或携带的易燃物件会开始{@hazard 燃烧|XPHB}。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "你使用的法术位每比一环高一环，此法术的伤害就会提升{@scaledamage 3d6|1-9|1d6}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "fire"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "miscTags": [
+      "OBJ"
+    ],
+    "areaTags": [
+      "N"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "法师"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "敏捷"
+    ],
+    "display_damageInflict": [
+      "火焰"
+    ]
+  }
+]

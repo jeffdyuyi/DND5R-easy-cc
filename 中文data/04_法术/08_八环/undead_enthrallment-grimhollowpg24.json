@@ -1,0 +1,61 @@
+[
+  {
+    "ENG_name": "Undead Enthrallment",
+    "name": "亡灵奴役",
+    "source": "GrimHollowPG24",
+    "page": 205,
+    "level": 8,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "小时"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 10
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一个装满咸水的粘土锅，另一个装满坟墓泥土的粘土锅，以及一块价值500 + GP的黑色缟玛瑙岩石，每个尸体一块"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "选择一个范围内与你所活化生物体型相当的尸体，或数量相当的尸体（GM决定需要多少具尸体）。你的法术为目标注入污秽的生命拟声，将其复活为亡灵生物。你可以选择让目标成为CR 3或更低的亡灵生物（GM拥有该生物的游戏数据）。",
+      "在你的每个回合，你可以使用一个{@variantrule 附赠动作|XPHB}来精神指令任何你用这个法术创造的生物，如果该生物在你60尺范围内。（如果你控制多个生物，你可以同时命令它们中的任意或全部，向每个生物发出相同的命令。）你决定该生物在其下一个回合将采取什么动作以及它将移动到何处，或者你可以发出一个通用命令，例如守卫特定的密阁或走廊。如果你没有发出命令，该生物将采取{@action 回避|XPHB}动作。一旦给出命令，该生物将继续遵循它直到任务完成。",
+      "该生物在24小时内处于你的控制之下，之后它将停止服从你给予的任何命令。要在接下来的24小时内继续控制该生物，你必须在当前24小时期限结束前再次对该生物施放此法术。此法术的该用途会重新确立你对1个用此法术活化的生物的控制，而非活化一个新的生物。任何你用此法术维持了30天的生物将永久处于你的控制之下。你最多只能用此法术控制四个生物。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "miscTags": [
+      "UBA"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Undead%20Enthrallment.webp"
+  }
+]

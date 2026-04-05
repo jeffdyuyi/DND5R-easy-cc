@@ -1,0 +1,101 @@
+[
+  {
+    "ENG_name": "Primordial Power",
+    "name": "原始力量",
+    "source": "GrimHollowPG24",
+    "page": 198,
+    "level": 4,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一把粘土"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "当你施放这个法术时，授予范围内一个生物一部分元素生物的法力。在持续时间内，该生物可以说和理解原初语，并根据你施放法术时选择的元素获得额外增益：",
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Air",
+            "name": "空气",
+            "type": "item",
+            "entries": [
+              "目标对闪电和雷鸣伤害具有{@variantrule 抗性|XPHB}。此外，它还具有30尺的{@variantrule 飞行速度|XPHB}。"
+            ]
+          },
+          {
+            "ENG_name": "Coldfire",
+            "name": "冷焰",
+            "type": "item",
+            "entries": [
+              "目标具有对寒冷伤害的{@variantrule 抗性|XPHB}。此外，它可以使用一个{@variantrule 附赠动作|XPHB}来消耗一个{@variantrule 生命值骰|XPHB|生命值骰}，恢复等同于骰出数值加上其体质调整值的{@variantrule 生命值|XPHB}。当目标受到火焰伤害时，它在其下一回合不能使用这个{@variantrule 附赠动作|XPHB}。"
+            ]
+          },
+          {
+            "ENG_name": "Earth",
+            "name": "土",
+            "type": "item",
+            "entries": [
+              "目标在对抗被移动或击{@condition 倒地|XPHB}的豁免检定中具有{@variantrule 优势|XPHB}。此外，它拥有30尺范围的{@sense 震颤感知|XPHB}。"
+            ]
+          },
+          {
+            "ENG_name": "Fire",
+            "name": "火焰",
+            "type": "item",
+            "entries": [
+              "目标对火焰伤害具有{@variantrule 抗性|XPHB}抗性。此外，当目标受到5尺内生物的伤害时，它可以采取{@variantrule 反应|XPHB}反应对该生物进行一次近战攻击，使用武器或{@variantrule 徒手打击|XPHB}徒手打击。"
+            ]
+          },
+          {
+            "ENG_name": "Water",
+            "name": "饮水",
+            "type": "item",
+            "entries": [
+              "目标具有{@variantrule 抗性|XPHB}强酸伤害。此外，它可以在水下呼吸并拥有{@variantrule 游泳速度|XPHB}60尺。"
+            ]
+          }
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "miscTags": [
+      "ADV",
+      "HL",
+      "UBA"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Primordial%20Power.webp"
+  }
+]

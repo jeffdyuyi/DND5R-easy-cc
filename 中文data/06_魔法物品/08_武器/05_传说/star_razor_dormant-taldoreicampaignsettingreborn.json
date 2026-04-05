@@ -1,0 +1,59 @@
+[
+  {
+    "ENG_name": "Star Razor (Dormant)",
+    "name": "星之锋（休眠）",
+    "source": "TalDoreiCampaignSettingReborn",
+    "page": 210,
+    "baseItem": "长剑|PHB",
+    "type": "M",
+    "resist": [
+      "光耀"
+    ],
+    "rarity": "legendary",
+    "reqAttune": true,
+    "weight": 3,
+    "weaponCategory": "军用",
+    "property": [
+      "V",
+      "Vst|EGW"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "S",
+    "dmg2": "1d10",
+    "bonusWeapon": "+1",
+    "recharge": "拂晓",
+    "entries": [
+      "这把闪耀银色的{@item 长剑|PHB}厚实带槽剑身上刻有符文，在光亮中闪烁着蓝色光芒。星之锋——也被称为德瓦瓦尔——据信在{@book 灾祸之战|TalDoreiCampaignSettingReborn|1|灾祸之战}后已被摧毁或遗失，但新的流言表明它可能被一个半兽人携带在{@book 荒洲|TalDoreiCampaignSettingReborn|3|荒洲}的某处。",
+      {
+        "ENG_name": "Dormant",
+        "name": "休眠",
+        "type": "entries",
+        "entries": [
+          "当星辰剃刀处于休眠状态时，你可以握住这把魔法长剑，并使用附赠动作说出命令词{@i 命令语}，使剑发出苍白的蓝光，该光在20尺半径内发出明亮的光线，并在额外的20尺内发出微弱的光线。这种光芒持续存在，直到你再次使用附赠动作说出命令词，或者直到你放下或收起剑。",
+          {
+            "type": "list",
+            "items": [
+              "当这把长剑发光时，你对使用这把武器进行的攻击和伤害骰增加+1的加值，并且你对光耀伤害有抗性。",
+              "你可以从武器上以动作施放 {@spell 妖火} 法术，无需任何施法成分（豁免 {@dc 13}）。一旦使用星之剃刀施放过该法术，直到下一个黎明，这把剑将无法再施放该法术。"
+            ]
+          }
+        ]
+      }
+    ],
+    "light": [
+      {
+        "bright": 20,
+        "dim": 40
+      }
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "妖火"
+        ]
+      }
+    },
+    "hasFluff": true,
+    "hasFluffImages": true
+  }
+]

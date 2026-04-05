@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Medal of the Maze",
+    "name": "迷宫奖章",
+    "source": "CRCotN",
+    "page": 214,
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "当你使用动作追踪这个奖章上雕刻的迷宫时，你在接下来的1小时内，在感知检定上获得优势，并且知道任何非魔法路径或迷宫到达终点的最快路线。一旦使用了这个属性，它就无法再次使用，奖章也会变成非魔法物品。"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 100,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/CRCotN/Medal of the Maze.webp"
+          },
+          "credit": "CoupleOfKooks",
+          "width": 695,
+          "height": 850
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

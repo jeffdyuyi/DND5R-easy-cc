@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "Kestra's Bent Spoon",
+    "name": "凯斯特拉的弯曲汤匙",
+    "source": "GriffonsSaddlebag2",
+    "page": 112,
+    "tier": "主要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这把银汤匙曾经属于一位贪食无厌的秘术师。其上刻有三个符文，可以执行各种魔法功能。",
+      {
+        "type": "list",
+        "items": [
+          "{@i Ulm}（刻于汤匙的勺头），能通过提取那些易被常人忽略的细微风味，来增强任何汤羹类或者可舀起的类似食物的口味。",
+          "{@i Tox}（刻于汤匙头部的背面），当接触到毒素时，会使汤匙变暗并失去光泽。汤匙会保持此状态直至下一个黎明，届时其正常光泽将魔法性地复原。",
+          "{@i Seera}（刻于勺柄），能强化某些心灵效应的力量。当你随身携带这把勺子期间，为你造成的心灵伤害掷骰时，你可以将注意力集中于勺子上（无需动作），使其中一颗伤害骰直接取最高值。使用这一符文后，该符文直到下一个拂晓之前都无法再次使用。"
+        ]
+      }
+    ],
+    "lootTables": [
+      "魔法物品表 F1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Kestras-Bent-Spoon.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

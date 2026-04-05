@@ -1,0 +1,92 @@
+[
+  {
+    "ENG_name": "Melting Curse",
+    "name": "融化诅咒",
+    "source": "GrimHollowPG24",
+    "page": 196,
+    "level": 6,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 100
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一小瓶水银"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你以范围内一个你能看见的生物及其持有或穿戴的金属物件为目标。该生物进行一次敏捷豁免检定。若豁免失败，该生物受到{@damage 5d8}火焰伤害且目标物件融化成泥状落地，随后恢复其正常形态和气温。若该物件为魔法物品，该生物进行此次豁免检定时具有{@variantrule 优势|XPHB}。",
+      "如果该生物在持续时间内试图取回或以其他方式接触该物件，该物件会发热并融化，该生物会受到{@damage 5d8}火焰伤害。当该生物不再接触该物件或法术结束时，该物件会恢复正常。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "伤害对每个高于6环的法术位环阶增加{@dice 1d8}。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "火焰"
+    ],
+    "savingThrow": [
+      "敏捷"
+    ],
+    "miscTags": [
+      "ADV",
+      "OBJ",
+      "SGT"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Melting%20Curse.webp"
+  }
+]

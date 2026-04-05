@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "Potion of Water Breathing",
+    "name": "水下呼吸药水",
+    "source": "XDMG",
+    "page": 289,
+    "srd52": true,
+    "basicRules2024": true,
+    "type": "P|XPHB",
+    "rarity": "uncommon",
+    "weight": 0.5,
+    "entries": [
+      "饮下这瓶药水后的24小时内，你可以在水下呼吸。",
+      "这瓶药水里的浑浊绿色流体闻起来像海水，其中漂浮着一个水母形状的气泡。"
+    ],
+    "lootTables": [
+      "奥秘 - 非普通|XDMG",
+      "器具 - 非普通|XDMG"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 200,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Potion of Water Breathing.webp"
+          },
+          "width": 639,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

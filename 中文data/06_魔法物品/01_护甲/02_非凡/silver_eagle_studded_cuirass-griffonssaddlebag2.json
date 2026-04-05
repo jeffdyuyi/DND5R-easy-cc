@@ -1,0 +1,35 @@
+[
+  {
+    "ENG_name": "Silver Eagle Studded Cuirass",
+    "name": "银鹰札甲",
+    "source": "GriffonsSaddlebag2",
+    "page": 161,
+    "baseItem": "镶钉皮甲|phb",
+    "type": "LA",
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "weight": 13,
+    "ac": 12,
+    "entries": [
+      "这件镶钉皮甲由精灵与人类长期联盟的精锐卫队所穿戴。当你穿着这件护甲期间，任何命中你的重击都会改为普通命中。",
+      "此外，当你穿着这件护甲期间，当一个你能看见的生物用近战攻击命中你时，你可以用你的反应说出这件护甲的命令语。当你这样做时，一对幽灵般的鹰翼从护甲背后浮现。鹰翼会拍打你周围的空气，将你推离攻击生物最远10尺，且不会引发借机攻击。另外，这突然的移动会让你避开部分伤害，使触发此效应的攻击对你造成的伤害降低{@dice 2d6}。护甲的这项词条一经使用，则其直到次日黎明前都无法再次使用。"
+    ],
+    "lootTables": [
+      "魔法物品表 F2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Silver-Eagle-Studded-Cuirass.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

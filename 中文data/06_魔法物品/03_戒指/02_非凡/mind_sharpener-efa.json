@@ -1,0 +1,21 @@
+[
+  {
+    "ENG_name": "Mind Sharpener",
+    "name": "思维砥石",
+    "source": "EFA",
+    "page": 112,
+    "type": "RG|XDMG",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d4}",
+    "charges": 4,
+    "entries": [
+      "该物品有4充能。当你为维持{@status 专注|XPHB}而进行的体质豁免检定失败时，你可以采取一个{@variantrule 反应|XPHB}并消耗该物品的1充能以改为成功。该物品在拂晓时恢复{@dice 1d4}已消耗的充能。"
+    ],
+    "classFeatures": [
+      "仿制魔法物品|奇械师|efa|2|efa"
+    ],
+    "valueReference": 400
+  }
+]

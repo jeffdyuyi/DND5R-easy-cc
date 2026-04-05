@@ -1,0 +1,101 @@
+[
+  {
+    "name": "矮人",
+    "ENG_name": "Dwarf",
+    "source": "XPHB",
+    "edition": "one",
+    "page": 188,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "darkvision": 120,
+    "resist": [
+      "毒素"
+    ],
+    "entries": [
+      {
+        "ENG_name": "Darkvision",
+        "name": "黑暗视觉",
+        "type": "entries",
+        "entries": [
+          "你拥有 120 尺{@sense 黑暗视觉|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Dwarven Resilience",
+        "name": "矮人体魄",
+        "type": "entries",
+        "entries": [
+          "你具有毒素伤害的{@variantrule 抗性|XPHB}。此外，你为避免/结束{@condition 中毒|XPHB}状态所做的豁免检定具有{@variantrule 优势|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Dwarven Toughness",
+        "name": "矮人刚毅",
+        "type": "entries",
+        "entries": [
+          "你的{@variantrule 生命值|XPHB|生命值}上限加 1，且此后每次升级时再加 1。"
+        ]
+      },
+      {
+        "ENG_name": "Stonecunning",
+        "name": "石中精妙",
+        "type": "entries",
+        "entries": [
+          "以一个{@variantrule 附赠动作|XPHB}，你获得60尺{@sense 震颤感知|XPHB}，持续 10 分钟。你必须位于岩石表面上或是触碰着岩石的表面才能使用此{@sense 震颤感知|XPHB}，不过其可以是天然的岩石，也可以是加工过的岩石。",
+          "你可以使用此{@variantrule 附赠动作|XPHB}的次数等于你的{@variantrule 熟练|XPHB|熟练加值}，完成{@variantrule 长休|XPHB}后你重获全部已消耗的使用次数。"
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "entries": [
+                "远古时代，矮人被锻造之神从大地中唤醒。这位创造了矮人的神祇在不同世界有不同的名字——莫拉丁、李奥克斯等等。祂赋予了矮人对石头、金属与地下生活的亲和力，还赋予了他们如同群山一样坚韧不拔的耐性，以及他们长达 350 岁的寿命。",
+                "最初的矮人身材矮胖，常蓄胡须，在山崖和地底开凿城市与要塞。矮人中最为古老传说讲述着他们与可怕怪物们的纷争，他们的战场遍布群峦之巅与幽暗地域，力战塔楼般高大的巨人与伏于大地之下的恐怖。无论是何种文化的矮人都深受这些故事的鼓舞，他们因此而喜欢高歌英勇壮举——尤其是以弱胜强的伟大事迹。",
+                "在多元宇宙的某些世界中，最初的矮人定居点位于丘陵和山地中，源自这些定居点的矮人氏族通常会分别自称为丘陵矮人和山地矮人。灰鹰和龙枪的世界便有这种矮人社群。"
+              ]
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/XPHB/Dwarf.webp"
+          },
+          "credit": "Mike Pape",
+          "width": 1700,
+          "height": 1126
+        }
+      ]
+    },
+    "basicRules2024": true,
+    "creatureTypes": [
+      "类人"
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "sizeEntry": {
+      "ENG_name": "Size:",
+      "name": "体型：",
+      "type": "item",
+      "entries": [
+        "中型（约 4-5 尺高）"
+      ]
+    },
+    "soundClip": {
+      "type": "internal",
+      "path": "races/dwarf.mp3"
+    },
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

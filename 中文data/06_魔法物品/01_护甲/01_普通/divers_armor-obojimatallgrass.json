@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Divers Armor",
+    "name": "多样护甲",
+    "source": "ObojimaTallGrass",
+    "page": 157,
+    "type": "HA",
+    "rarity": "none",
+    "weight": 100,
+    "value": 200000,
+    "ac": 17,
+    "strength": "16",
+    "stealth": true,
+    "entries": [
+      "穿着多样护甲时，你的移动力减少10，除非你的力量值达到或超过18。此外，当你穿着多样护甲时，若对你施放法术{@spell 水下呼吸}，该法术的持续时间对你加倍。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Equipment/divers-armor.webp"
+          },
+          "credit": "Alexander Cloos",
+          "width": 2842,
+          "height": 2842
+        }
+      ]
+    }
+  }
+]

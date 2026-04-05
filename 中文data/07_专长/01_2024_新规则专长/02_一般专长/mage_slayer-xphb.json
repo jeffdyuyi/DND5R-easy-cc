@@ -1,0 +1,44 @@
+[
+  {
+    "ENG_name": "Mage Slayer",
+    "name": "巫师杀手",
+    "source": "XPHB",
+    "page": 205,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Concentration Breaker",
+        "name": "专注中断手",
+        "type": "entries",
+        "entries": [
+          "当你对一名正处于{@status 专注|XPHB|专注于}中的生物造成伤害时，该生物为维持本次{@status 专注|XPHB}所做的豁免检定时具有{@variantrule 劣势|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Guarded Mind",
+        "name": "审慎护心",
+        "type": "entries",
+        "entries": [
+          "当你的智力、感知或魅力豁免失败时，你可以将其改为成功。此增益一经使用，直到完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}前你都无法再次使用。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "name": "吹箭筒",
+    "ENG_name": "Blowgun",
+    "source": "XPHB",
+    "page": 215,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "none",
+    "weight": 1,
+    "value": 1000,
+    "weaponCategory": "martial",
+    "property": [
+      "A|XPHB",
+      "LD|XPHB"
+    ],
+    "mastery": [
+      "侵扰|XPHB"
+    ],
+    "dmg1": "1",
+    "dmgType": "P",
+    "range": "25/100",
+    "ammoType": "针|XPHB",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XPHB/Blowgun.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 591,
+          "height": 234
+        }
+      ]
+    },
+    "basicRules2024": true,
+    "hasFluffImages": true,
+    "srd52": true,
+    "weapon": true
+  }
+]

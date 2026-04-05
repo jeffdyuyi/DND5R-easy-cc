@@ -1,0 +1,89 @@
+[
+  {
+    "ENG_name": "Mask of Monstrous Forms",
+    "name": "怪兽形态面具",
+    "source": "MonstersOfDrakkenheim",
+    "page": 389,
+    "rarity": "rare",
+    "reqAttune": "由德鲁伊",
+    "reqAttuneTags": [
+      {
+        "class": "德鲁伊"
+      }
+    ],
+    "wondrous": true,
+    "entries": [
+      "这个魔法面具由一种特定怪兽（{@variantrule 挑战等级|XPHB}为6或更低）的骷髅制成。骷髅被雕刻成面具，用畸变粉尘雕刻，然后在拟身怪的粘液、变形怪的血肉和强酸胆汁的大桶中沸煮。最后，一个装有任意具有变形生物特质的生物精魄的器皿被放置在面具的额头上，引导其变形魔法。",
+      "当你与面具同调时，你可以消耗两次荒野形态特性使用次数，变形成与该面具关联的怪兽，而非野兽。",
+      {
+        "ENG_name": "Crafting",
+        "name": "手作",
+        "type": "entries",
+        "entries": [
+          "制作怪兽形态面具需要一个珍稀工坊和以下珍稀成分：",
+          {
+            "type": "list",
+            "items": [
+              {
+                "ENG_name": "[Animus]",
+                "name": "[精魄]",
+                "type": "item",
+                "entries": [
+                  "来自具有变形生物特质的生物的精魄"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Bones]",
+                "name": "[骨头]",
+                "type": "item",
+                "entries": [
+                  "怪兽的骷髅*"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Dust]",
+                "name": "[粉尘]",
+                "type": "item",
+                "entries": [
+                  "畸变粉尘"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Fluid]",
+                "name": "[流体]",
+                "type": "item",
+                "entries": [
+                  "强酸胆汁"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Fluid]",
+                "name": "[流体]",
+                "type": "item",
+                "entries": [
+                  "拟身怪的粘液"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Organ]",
+                "name": "[器官]",
+                "type": "item",
+                "entries": [
+                  "变形怪的血肉"
+                ],
+                "nameDot": false
+              }
+            ]
+          },
+          "{@i * 用于此面具的怪兽决定了形体变化的形式。}"
+        ]
+      }
+    ],
+    "hasFluffImages": true
+  }
+]

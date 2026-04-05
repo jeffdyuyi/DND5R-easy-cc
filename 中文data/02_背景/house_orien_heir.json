@@ -1,0 +1,133 @@
+[
+  {
+    "name": "欧瑞恩家族继承人",
+    "ENG_name": "House Orien Heir",
+    "source": "EFA",
+    "edition": "one",
+    "page": 30,
+    "ability": [
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "dex",
+              "con",
+              "int"
+            ],
+            "weights": [
+              2,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "dex",
+              "con",
+              "int"
+            ],
+            "weights": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      }
+    ],
+    "feats": [
+      {
+        "通行龙纹|efa": true
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "acrobatics": true,
+        "athletics": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "cartographer's tools": true
+      }
+    ],
+    "startingEquipment": [
+      {
+        "a": [
+          "制图工具|xphb",
+          "高档服装|xphb",
+          "地图|xphb",
+          "地图或卷轴匣|xphb",
+          {
+            "value": 1800
+          }
+        ],
+        "b": [
+          {
+            "value": 5000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability Scores:",
+            "name": "属性值：",
+            "type": "item",
+            "entry": "敏捷，体质，智力"
+          },
+          {
+            "ENG_name": "Feat:",
+            "name": "专长：",
+            "type": "item",
+            "entry": "{@feat 通行龙纹|EFA}"
+          },
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 特技|XPHB}和{@skill 运动|XPHB}"
+          },
+          {
+            "ENG_name": "Tool Proficiencies:",
+            "name": "工具熟练",
+            "type": "item",
+            "entry": "{@item 制图工具|XPHB}"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "选择A或B：(A) {@item 制图工具|XPHB}、{@item 高档服装|XPHB}、{@item 地图|XPHB}、{@item 地图或卷轴匣|XPHB}，18 GP；或(B) 50 GP"
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "在终末战争之前，欧瑞恩家族的影响力覆盖了科瓦雷，其贸易道路和闪电铁路曾是一个繁荣王国的命脉。但战争切断了这些动脉，导致伽利法王权灭亡，欧瑞恩家族浴血。尽管家族的快递员和运输商仍在维持大陆两侧的商品流通，但找到重建穿越哀伤故地路线的方法仍是家族的首要任务。与此同时，欧瑞恩家族的冒险者可以通过调查失踪的快递员、找回被商队盗走的货物以及解决闪电铁路的中断问题来为家族服务。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "backgrounds/EFA/House Orien Heir.webp"
+          },
+          "credit": "Kenny Yo",
+          "width": 850,
+          "height": 291
+        }
+      ]
+    },
+    "hasFluff": true,
+    "hasFluffImages": true
+  }
+]

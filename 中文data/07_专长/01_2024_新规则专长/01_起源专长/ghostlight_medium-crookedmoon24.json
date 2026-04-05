@@ -1,0 +1,43 @@
+[
+    {
+        "ENG_name": "Ghostlight Medium",
+        "name": "幽灯灵媒",
+        "source": "CrookedMoon24",
+        "page": 114,
+        "category": "O",
+        "entries": [
+            "你与幽灯特快列车之间建立了某种神秘的联系，这使你能够洞察精魂的本质，并获得以下增益：",
+            {
+                "ENG_name": "Ghostly Touch",
+                "name": "幽灵触碰",
+                "type": "entries",
+                "entries": [
+                    "当你对具有虚体移动特质的生物造成伤害时，你可以无视该生物的伤害{@variantrule 抗性|XPHB|抗性}（若有）。"
+                ]
+            },
+            {
+                "ENG_name": "Spirit Sense",
+                "name": "灵识感应",
+                "type": "entries",
+                "entries": [
+                    "作为{@variantrule 附赠动作|XPHB}，你可以感知你周边60尺范围内的任何亡灵，或与该区域重叠的以太位面中的任何生物。你会得知你所侦测到的任何生物的距离和方向（或以太位面生物在你所在位面上的相应位置）。一旦你使用此增益侦测到一个生物，则你必须完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}后才能再次使用。"
+                ]
+            }
+        ],
+        "fluff": {
+            "images": [
+                {
+                    "type": "image",
+                    "href": {
+                        "type": "external",
+                        "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Feats/Ghostlight%20Medium.webp"
+                    },
+                    "width": 850,
+                    "height": 552,
+                    "credit": "Suzanne Helmigh"
+                }
+            ]
+        },
+        "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Feats/Ghostlight%20Medium.webp"
+    }
+]

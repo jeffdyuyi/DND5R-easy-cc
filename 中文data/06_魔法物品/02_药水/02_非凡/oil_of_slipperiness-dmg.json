@@ -1,0 +1,35 @@
+[
+  {
+    "ENG_name": "Oil of Slipperiness",
+    "name": "滑溜之油",
+    "source": "DMG",
+    "page": 184,
+    "srd": true,
+    "referenceSources": [
+      "WDMM",
+      "GoS",
+      "SCC-HfMT",
+      "CoA"
+    ],
+    "reprintedAs": [
+      "滑溜之油|XDMG"
+    ],
+    "type": "P",
+    "tier": "次要",
+    "rarity": "uncommon",
+    "entries": [
+      "这种粘稠的黑色油膏装在容器中时看起来十分浑浊且沉重，但倒出来时却可以迅速流动。油可以涂抹于一个中型或更小体型的生物及其着装和携带的所有装备（生物的体型每比中型大一级，涂抹时就需要多使用一瓶）。涂抹滑溜之油需要花费10分钟，此后受油影响的生物获得{@spell 行动自如}法术的效应，持续8小时。",
+      "作为另一种用法，你也可以用动作把这瓶油泼洒出来，覆盖10平方尺的地面，在该区域复制{@spell 油腻术}法术的效应，持续8小时。"
+    ],
+    "attachedSpells": [
+      "行动自如"
+    ],
+    "lootTables": [
+      "魔法物品表B"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "valueReference": 200
+  }
+]

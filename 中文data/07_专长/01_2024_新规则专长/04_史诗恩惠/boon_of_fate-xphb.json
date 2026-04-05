@@ -1,0 +1,58 @@
+[
+  {
+    "ENG_name": "Boon of Fate",
+    "name": "扭曲命运之恩惠",
+    "source": "XPHB",
+    "page": 210,
+    "srd52": true,
+    "basicRules2024": true,
+    "category": "EB",
+    "prerequisite": [
+      {
+        "level": 19
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "max": 30
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Improve Fate",
+        "name": "时来运转",
+        "type": "entries",
+        "entries": [
+          "当你或位于你 60 尺内的另一名生物的{@variantrule D20 检定|XPHB}中成功时或失败时，你可以投掷{@dice 2d4}，并将掷骰结果作为加值或减值附加到{@dice d20}掷骰中。该增益一经使用，直至你投掷{@variantrule 先攻|XPHB}、完成{@variantrule 短休|XPHB|短}或完成{@variantrule 长休|XPHB}你都无法再次使用。"
+        ]
+      }
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "feats/XPHB/Boon of Fate.webp"
+          },
+          "credit": "Wayne England",
+          "width": 2063,
+          "height": 1123
+        }
+      ]
+    }
+  }
+]

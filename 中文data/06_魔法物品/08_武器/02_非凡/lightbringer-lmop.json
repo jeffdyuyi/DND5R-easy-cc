@@ -1,0 +1,23 @@
+[
+  {
+    "ENG_name": "Lightbringer",
+    "name": "光明使者",
+    "source": "LMoP",
+    "page": 48,
+    "reprintedAs": [
+      "光明使者|PaBTSO"
+    ],
+    "baseItem": "硬头锤|PHB",
+    "type": "M",
+    "rarity": "uncommon",
+    "weight": 4,
+    "weaponCategory": "simple",
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "bonusWeapon": "+1",
+    "entries": [
+      "这把+1战锤是为黎明之神Lathander的牧师制作的。战锤的头部形状像太阳爆发，由实心黄铜制成。名为Lightbringer的这把武器在持有者命令时会像{@item 火把|PHB}一样发光。在发光时，战锤对不死生物造成额外的{@damage 1d6}光耀伤害。"
+    ],
+    "valueReference": 400
+  }
+]

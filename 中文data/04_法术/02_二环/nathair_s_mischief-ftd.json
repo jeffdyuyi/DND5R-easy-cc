@@ -1,0 +1,89 @@
+[
+  {
+    "ENG_name": "Nathair's Mischief",
+    "name": "纳撒尔恶作剧",
+    "source": "FTD",
+    "page": 20,
+    "level": 2,
+    "school": "I",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "s": true,
+      "m": "一块面包皮，来自一个苹果派"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你选择一个以施法范围内一点为原点，20尺矩形的范围。你在该范围内填满精类与龙族的魔法。在恶作剧之涌表格里掷骰以决定产生的魔法效应。法术持续时间内、在你的每个回合开始时，你都重骰这个表格。在你重骰之前，你可以把这个矩形范围移动最多10尺。",
+      {
+        "type": "table",
+        "caption": "恶作剧之涌",
+        "colLabels": [
+          "d4",
+          "效应"
+        ],
+        "colStyles": [
+          "col-2 text-center",
+          "col-10"
+        ],
+        "rows": [
+          [
+            "1",
+            "空气中弥漫着苹果派的味道，范围内的生物必须成功通过一次感知豁免，否则将被你{@condition 魅惑}，直至你的下回合开始。"
+          ],
+          [
+            "2",
+            "一束束鲜花出现在四周，范围内的生物必须成功通过一次敏捷豁免，否则鲜花将往他们脸上喷水，使他们陷入{@condition 目盲}，直至你的下回合开始。"
+          ],
+          [
+            "3",
+            "范围内的每个生物必须成功通过一次感知豁免，否则将开始咯咯笑，直至你的下回合开始。一个正在咯咯笑的生物陷入{@condition 失能}，并使用他的所有移动力向一个随机方向移动。"
+          ],
+          [
+            "4",
+            "一滴滴蜜糖出现并在矩形内悬停，将其内变成{@quickref 困难地形||3}，直至你的下回合开始。"
+          ]
+        ]
+      }
+    ],
+    "savingThrow": [
+      "dexterity",
+      "wisdom"
+    ],
+    "miscTags": [
+      "RO",
+      "SGT"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "术士",
+      "法师"
+    ],
+    "display_school": "幻术系",
+    "display_savingThrow": [
+      "敏捷",
+      "感知"
+    ]
+  }
+]

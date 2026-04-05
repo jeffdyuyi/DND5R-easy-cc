@@ -1,0 +1,15 @@
+[
+  {
+    "ENG_name": "Moonseeker's Lantern of Safe Returns",
+    "name": "寻月者的安全归途提灯",
+    "source": "BookOfEbonTides",
+    "page": 206,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这个金字塔形状的提灯有着天晴水晶的侧面，由黑铁编织而成，并点缀着闪亮的银。",
+      "当你持握提灯时，可以使用一个动作说出其命令语。提灯会漂浮在你肩高位置2尺外，并在半径30尺的球状范围内散发{@quickref 视野与光照||2||明亮光照}，并在额外30尺范围内散发{@quickref 视野与光照||2||微光光照}。当提灯散发光照时，你和任何30尺内的同伴都无法被{@status 突袭}，除非因非魔法的睡眠术而{@condition 失能}。当你在幽影位面时，提灯还会朝灯笼之城科雷梅尔的方向发射一个光点。"
+    ]
+  }
+]

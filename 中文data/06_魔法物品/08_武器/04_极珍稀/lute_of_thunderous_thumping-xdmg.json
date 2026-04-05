@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "Lute of Thunderous Thumping",
+    "name": "轰天震雷鲁特琴",
+    "source": "XDMG",
+    "page": 275,
+    "baseItem": "短棒|xphb",
+    "type": "M|XPHB",
+    "rarity": "very rare",
+    "weight": 2,
+    "weaponCategory": "simple",
+    "property": [
+      "L|XPHB"
+    ],
+    "mastery": [
+      "缓速|XPHB"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "B",
+    "entries": [
+      "这把加固过的{@item 鲁特琴|XPHB}可以作为一把魔法短棒持用，且在命中时额外造成{@damage 2d8}雷鸣伤害。",
+      {
+        "ENG_name": "Sing and Swing",
+        "name": "音律联击",
+        "type": "entries",
+        "entries": [
+          "若你是一位吟游诗人，你可以在用该{@item 鲁特琴|XPHB}发动近战攻击检定时，使用魅力调整值来代替力量调整值，但此时你必须哼歌或唱曲。"
+        ]
+      }
+    ],
+    "lootTables": [
+      "武备 - 极珍稀|XDMG",
+      "器具 - 极珍稀|XDMG"
+    ],
+    "translator": "不全书",
+    "valueReference": 40000
+  }
+]

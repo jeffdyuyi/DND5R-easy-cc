@@ -1,0 +1,60 @@
+[
+  {
+    "name": "鸟羽人",
+    "ENG_name": "Aarakocra",
+    "source": "DMG",
+    "page": 282,
+    "size": [
+      "M"
+    ],
+    "speed": {
+      "walk": 20,
+      "fly": 50
+    },
+    "ability": [
+      {
+        "dex": 2,
+        "wis": 2
+      }
+    ],
+    "traitTags": [
+      "天生武器",
+      "NPC种族"
+    ],
+    "languageProficiencies": [
+      {
+        "auran": true
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Dive Attack",
+        "name": "俯冲攻击",
+        "entries": [
+          "如果你正在飞行且向目标直线俯冲至少30尺，然后用一次近战武器攻击命中该目标，则这次攻击对目标造成额外的{@damage 1d6}伤害。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Talons",
+        "name": "禽爪",
+        "entries": [
+          "你熟练于徒手攻击，命中时造成{@damage 1d4}点挥砍伤害。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Language",
+        "name": "语言",
+        "entries": [
+          "你可以说、读、写气族语。"
+        ],
+        "type": "entries"
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/aarakocra.mp3"
+    }
+  }
+]

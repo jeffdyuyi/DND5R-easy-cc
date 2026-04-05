@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "Pocket Stomach",
+    "name": "口袋胃",
+    "source": "ObojimaTallGrass",
+    "page": 235,
+    "type": "P",
+    "rarity": "uncommon",
+    "property": [
+      "Util"
+    ],
+    "entries": [
+      "当饮用时，你的胃暂时作为{@item 次元袋}发挥作用，允许你将任何能放入口中的物品存储在其异次元空间中。此药水的效应持续1小时，之后你会吐出所有吞下的东西。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 38|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Utility/pocket-stomach.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1703,
+          "height": 1703
+        }
+      ]
+    }
+  }
+]

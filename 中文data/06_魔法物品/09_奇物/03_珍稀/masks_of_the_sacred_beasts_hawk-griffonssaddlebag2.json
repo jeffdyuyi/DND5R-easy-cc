@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Masks of the Sacred Beasts (Hawk)",
+    "name": "圣兽面具（隼）",
+    "source": "GriffonsSaddlebag2",
+    "page": 120,
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这些暗色陶瓷和黄金面具是以某些文化中具有神圣象征含义的动物为原型制成的。每种面具的外貌及其词条都由其代表的圣兽决定。在你已与某一面具同调期间，你可以只花费1分钟时间（而非在进行一次或多次短休期间）来结束与当前面具的同调，并与另一面具建立新的同调。",
+      "佩戴着隼面具期间，你基于视觉进行的感知（{@skill 察觉}）检定具有优势，且你对最大射程之内的目标进行远程攻击时，你的攻击检定不会因目标超出常规射程而具有劣势。除此之外，你可以随意施放{@spell 羽落术|PHB}法术，但只能以你自己为目标。"
+    ],
+    "lootTables": [
+      "魔法物品表 G2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Masks-of-the-Sacred-Beasts.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

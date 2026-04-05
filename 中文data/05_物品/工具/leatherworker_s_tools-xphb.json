@@ -1,0 +1,46 @@
+[
+  {
+    "name": "皮匠工具",
+    "ENG_name": "Leatherworker's Tools",
+    "source": "XPHB",
+    "page": 221,
+    "type": "AT|XPHB",
+    "rarity": "none",
+    "weight": 5,
+    "value": 500,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability:",
+            "name": "属性：",
+            "type": "item",
+            "entries": [
+              "敏捷"
+            ]
+          },
+          {
+            "ENG_name": "Utilize:",
+            "name": "操作：",
+            "type": "item",
+            "entries": [
+              "对一个皮制品进行图案设计（{@dc 10}）"
+            ]
+          },
+          {
+            "ENG_name": "Craft:",
+            "name": "制造：",
+            "type": "item",
+            "entries": [
+              "{@item 投石索|XPHB}, {@item 鞭子|XPHB}, {@item 兽皮甲|XPHB}, {@item 皮甲|XPHB}, {@item 镶钉皮甲|XPHB}, {@item 背包|XPHB}, {@item 弩矢匣|XPHB}, {@item 地图或卷轴匣|XPHB}, {@item 羊皮纸|XPHB}, {@item 小包|XPHB}, {@item 箭袋|XPHB}, {@item 水袋|XPHB}"
+            ]
+          }
+        ]
+      }
+    ],
+    "basicRules2024": true,
+    "srd52": true
+  }
+]

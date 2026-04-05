@@ -1,0 +1,24 @@
+[
+  {
+    "name": "蜘蛛克星",
+    "source": "HoBG",
+    "page": 0,
+    "baseItem": "短剑|phb",
+    "type": "M",
+    "rarity": "传说",
+    "reqAttune": true,
+    "weight": 2,
+    "weaponCategory": "军用",
+    "property": [
+      "F",
+      "L"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "entries": [
+      "使用此武器时，你的攻击和伤害掷骰获得+1加值。每当你用此武器击中蜘蛛时，目标会额外受到{@dice 1d6}点穿刺伤害。",
+      "当你佩戴这把剑时，任何由蛛网造成的行动限制对你无效。"
+    ],
+    "ENG_name": "Spider's Bane"
+  }
+]

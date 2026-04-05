@@ -1,0 +1,95 @@
+[
+  {
+    "ENG_name": "Flaming Sphere",
+    "name": "炽焰法球",
+    "source": "PHB",
+    "page": 242,
+    "srd": true,
+    "basicRules": true,
+    "otherSources": [
+      {
+        "source": "RMR",
+        "page": 53
+      }
+    ],
+    "referenceSources": [
+      "GoS",
+      "DoSI"
+    ],
+    "reprintedAs": [
+      "炽焰法球|XPHB"
+    ],
+    "level": 2,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一点兽脂、一撮硫磺、和一尘铁粉"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "一个直径 5 尺的球状火焰显现在施法距离内你指定的一处未被占据空间，并在法术持续时间内维持存在。任何生物在火球周围 5 尺内结束其回合时必须进行一次敏捷豁免。豁免失败者将受到 {@damage 2d6} 点火焰伤害，豁免成功则伤害减半。",
+      "你可以用一个附赠动作将火球移动 30 尺。如果你将火球推向某生物，则该生物必须进行抵抗火球伤害的豁免，而火球在该回合内停止移动。",
+      "移动火球时，你可以指引它越过不高于 5 尺的障碍，或者越过不宽过 10 尺的陷坑。火球将点燃任何未被着装或携带的可燃物件，并向其周围散发出半径 20 尺的明亮光照，以及该范围外 20 尺的微光光照。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "使用三环或更高法术位施展该法术时，你使用的法术位每比二环高一环，其伤害就增加 {@scaledamage 2d6|2-9|1d6}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "fire"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "miscTags": [
+      "LGT",
+      "OBJ",
+      "UBA"
+    ],
+    "areaTags": [
+      "S"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊",
+      "法师",
+      "术士"
+    ],
+    "display_school": "咒法系",
+    "display_savingThrow": [
+      "敏捷"
+    ],
+    "display_damageInflict": [
+      "火焰"
+    ]
+  }
+]

@@ -1,0 +1,154 @@
+[
+  {
+    "ENG_name": "Scion of the Outer Planes",
+    "name": "外层位面后裔",
+    "source": "SatO",
+    "page": 12,
+    "prerequisite": [
+      {
+        "campaign": [
+          "位面旅行"
+        ]
+      }
+    ],
+    "resist": [
+      {
+        "choose": {
+          "from": [
+            "毒素",
+            "暗蚀",
+            "光耀",
+            "力场",
+            "心灵"
+          ]
+        }
+      }
+    ],
+    "additionalSpells": [
+      {
+        "ENG_name": "Chaotic Outer Plane",
+        "name": "混乱外层位面",
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "known": {
+          "_": [
+            "次级幻象#c"
+          ]
+        }
+      },
+      {
+        "ENG_name": "Evil Outer Plane",
+        "name": "邪恶外层位面",
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "known": {
+          "_": [
+            "颤栗之触#c"
+          ]
+        }
+      },
+      {
+        "ENG_name": "Good Outer Plane",
+        "name": "善良外层位面",
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "known": {
+          "_": [
+            "圣火术#c"
+          ]
+        }
+      },
+      {
+        "ENG_name": "Lawful Outer Plane",
+        "name": "守序外层位面",
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "known": {
+          "_": [
+            "神导术#c"
+          ]
+        }
+      },
+      {
+        "ENG_name": "The Outlands",
+        "name": "外域",
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "known": {
+          "_": [
+            "法师之手#c"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你与某一外层位面的连接为你注入了它的能量。从下方位面注能表中的位面类型中选择一项，你的选择将为你提供某项伤害的抗性，与施展某个戏法的能力，如表中所示的那般。你施展这一戏法时无需材料成分，且其施法属性为智力、感知、或魅力（选择此专长时选择）。",
+      {
+        "type": "table",
+        "colStyles": [
+          "col-4",
+          "col-4",
+          "col-4"
+        ],
+        "colLabels": [
+          "位面",
+          "伤害抗性",
+          "戏法"
+        ],
+        "rows": [
+          [
+            "混乱外层位面",
+            "毒素",
+            "{@spell 次级幻象}"
+          ],
+          [
+            "邪恶外层位面",
+            "暗蚀",
+            "{@spell 颤栗之触}"
+          ],
+          [
+            "善良外层位面",
+            "光耀",
+            "{@spell 圣火术}"
+          ],
+          [
+            "守序外层位面",
+            "力场",
+            "{@spell 神导术}"
+          ],
+          [
+            "外域",
+            "心灵",
+            "{@spell 法师之手}"
+          ]
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

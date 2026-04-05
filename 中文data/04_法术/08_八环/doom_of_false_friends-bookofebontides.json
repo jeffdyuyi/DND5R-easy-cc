@@ -1,0 +1,80 @@
+[
+  {
+    "ENG_name": "Doom of False Friends",
+    "name": "友尽之灾",
+    "source": "BookOfEbonTides",
+    "page": 58,
+    "level": 8,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一片粉色玫瑰花瓣"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你切断目标之间的友谊与情感纽带。选择范围内两个能看见并听见你的生物作为目标。每个目标必须进行一次魅力豁免检定。豁免失败的目标必须使用其移动力和动作向另一个法术目标移动并攻击。如果未受影响的法术目标离开范围，另一个目标必须竭尽全力找到并攻击它。在每个回合结束时，若其中一个目标无法看见另一个目标，它可以进行一次新的豁免检定，豁免成功则克服强迫术。",
+      "一旦所有法术的目标成功通过豁免检定，你将陷入{@condition 震慑}状态直到你的下个回合结束。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "如果你使用9环法术位施放该法术，你可以额外指定二个生物作为目标。每个目标可以在其回合决定对其他目标进行攻击或以其他方式对抗。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    },
+    "conditionInflict": [
+      "震慑"
+    ],
+    "savingThrow": [
+      "魅力"
+    ]
+  }
+]

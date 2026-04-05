@@ -1,0 +1,80 @@
+[
+  {
+    "ENG_name": "Caustic Grip",
+    "name": "腐蚀之攥",
+    "source": "GuideDrakkenheim",
+    "page": 188,
+    "level": 2,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "在法术的持续时间内，你的手会分泌出混乱粘粘的燃烧强酸，可以用来将生物困在痛苦的货舱中。当你施放此法术时，以及在法术结束前的每个回合中作为一个动作，你可以对5尺内的一个生物进行一次近战法术攻击。命中时，你对目标造成{@damage 4d4}强酸伤害，并且该生物会被你的强酸货舱{@condition 束缚}直到你的下一个回合结束。你可以轮复一轮地攻击同一个目标，或随时选择一个新的目标。如果你切换目标，前一个目标将不再受此法术影响。",
+      "一个被你的腐蚀之攥{@condition 束缚}的生物可以使用它的动作进行一次力量检定对抗你的法术豁免DC。如果成功，它将不再被{@condition 束缚}。每当一个生物在其回合结束时被该法术{@condition 束缚}，它将受到额外的{@damage 4d4}强酸伤害。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "如果你使用3环或更高法术位施放该法术，则法术位每比2环高一级，伤害就增加{@dice 2d4}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "强酸"
+    ],
+    "conditionInflict": [
+      "束缚"
+    ],
+    "spellAttack": [
+      "M"
+    ],
+    "abilityCheck": [
+      "力量"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    }
+  }
+]

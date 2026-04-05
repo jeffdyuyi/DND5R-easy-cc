@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "Fane-Eater",
+    "name": "神殿吞食者",
+    "source": "BGDIA",
+    "page": 223,
+    "baseItem": "战斧|PHB",
+    "type": "M",
+    "rarity": "legendary",
+    "reqAttune": "需一名邪恶牧师或圣武士",
+    "reqAttuneTags": [
+      {
+        "class": "牧师",
+        "alignment": [
+          "E"
+        ]
+      },
+      {
+        "class": "圣武士",
+        "alignment": [
+          "E"
+        ]
+      }
+    ],
+    "weight": 4,
+    "weaponCategory": "martial",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "S",
+    "dmg2": "1d10",
+    "bonusWeapon": "+3",
+    "entries": [
+      "神殿吞食者是一把属于{@creature 残酷者阿克汉|BGDIA}的战斧。",
+      "你在使用神殿吞食者发动的攻击检定和伤害掷骰获得 +3 加值。当你使用该武器命中一名生物并在攻击检定中掷出 20 时，该生物受到额外的 {@damage 2d8} 点暗蚀伤害，并且你将获得与该暗蚀伤害相同数值的生命值。"
+    ],
+    "translator": "不全书",
+    "valueReference": 200000
+  }
+]

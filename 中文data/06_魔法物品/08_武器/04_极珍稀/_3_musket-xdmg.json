@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "+3 Musket",
+    "name": "+3 滑膛枪",
+    "source": "XDMG",
+    "page": 324,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "very rare",
+    "weight": 10,
+    "value": 50000,
+    "weaponCategory": "martial",
+    "property": [
+      "A|XPHB",
+      "LD|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "缓速|XPHB"
+    ],
+    "range": "40/120",
+    "dmg1": "1d12",
+    "dmgType": "P",
+    "firearm": true,
+    "weapon": true,
+    "ammoType": "枪械子弹|xphb",
+    "hasFluffImages": true,
+    "namePrefix": "+3 ",
+    "bonusWeapon": "+3",
+    "entries": [
+      "使用这把魔法武器进行攻击和伤害判定时，你会获得{=bonusWeapon}的额外加成。"
+    ],
+    "lootTables": [
+      "武备 - 极珍稀|XDMG"
+    ],
+    "_isVariant": true,
+    "valueReference": 40000
+  }
+]

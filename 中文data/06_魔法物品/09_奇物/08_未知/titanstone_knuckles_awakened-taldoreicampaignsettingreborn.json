@@ -1,0 +1,56 @@
+[
+  {
+    "ENG_name": "Titanstone Knuckles (Awakened)",
+    "name": "泰坦石拳（觉醒）",
+    "source": "TalDoreiCampaignSettingReborn",
+    "_copy": {
+      "ENG_name": "Titanstone Knuckles (Dormant)",
+      "name": "泰坦石拳（休眠）",
+      "source": "TalDoreiCampaignSettingReborn",
+      "_mod": {
+        "entries": [
+          {
+            "mode": "appendArr",
+            "items": {
+              "entries": [
+                {
+                  "ENG_name": "Awakened",
+                  "name": "觉醒",
+                  "type": "entries",
+                  "entries": [
+                    "当泰坦石指节达到觉醒状态时，它们获得以下特性：",
+                    {
+                      "type": "list",
+                      "items": [
+                        "你的力量值变为24。",
+                        "你可以采取动作从护手对自己施放{@spell 变巨/缩小术}法术（仅限放大），持续时间为10分钟。护手的这个特性在你完成一次{@quickref 休息|PHB|2|0|长休}之前不能再次使用。"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "_preserve": {
+        "page": true,
+        "fluff": true
+      }
+    },
+    "ability": {
+      "static": {
+        "str": 24
+      }
+    },
+    "recharge": "长休",
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "变巨/缩小术"
+        ]
+      }
+    },
+    "hasFluffImages": true
+  }
+]

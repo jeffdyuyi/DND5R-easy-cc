@@ -1,0 +1,51 @@
+[
+  {
+    "ENG_name": "Yuma Shrub",
+    "name": "尤玛灌木",
+    "source": "ObojimaTallGrass",
+    "page": 209,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 5|large}|SneakerProMedium}",
+            "{@font {@style 8|large}|SneakerProMedium}",
+            "{@font {@style 4|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "尤玛灌木的叶子会分泌一种强烈而令人愉悦的燃油，已知可以驱赶叮咬的昆虫和苍蝇。大多数肥皂制造者在他们的肥皂中使用尤玛灌木油，狗和猫的项圈上经常绑着一簇尤玛叶子以驱赶跳蚤和蜱虫。一旦体验过尤玛灌木的气味，仅凭气味就很容易找到它们，而且它们遍布整个岛屿。"
+    ],
+    "lootTables": [
+      "海岸高地普通原料|ObojimaTallGrass",
+      "阿伯拉山普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/yuma-shrub.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 5310,
+          "height": 5310
+        }
+      ]
+    }
+  }
+]

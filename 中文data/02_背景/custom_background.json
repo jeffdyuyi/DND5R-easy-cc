@@ -1,0 +1,78 @@
+[
+  {
+    "name": "自定义背景",
+    "ENG_name": "Custom Background",
+    "source": "PHB",
+    "page": 126,
+    "skillProficiencies": [
+      {
+        "any": 2
+      }
+    ],
+    "languageProficiencies": [
+      {
+        "anyStandard": 2
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "任选两项"
+          },
+          {
+            "ENG_name": "Languages and Tool Proficiencies:",
+            "name": "语言和工具熟练项：",
+            "type": "item",
+            "entry": "任选两项"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "任意背景的装备包"
+          }
+        ]
+      },
+      {
+        "ENG_name": "Feature: Choose a Feature",
+        "name": "特性：选择一个特性",
+        "type": "entries",
+        "entries": [
+          "从任意背景中选择一个特性。"
+        ],
+        "data": {
+          "isFeature": true
+        }
+      },
+      {
+        "ENG_name": "Suggested Characteristics",
+        "name": "建议人物特征",
+        "type": "entries",
+        "entries": [
+          "使用任意背景的建议人物特征。"
+        ]
+      },
+      "{@note 更多信息请参阅{@book 玩家手册|PHB}中的{@book 自定义背景|PHB|4|自定义背景}部分。}"
+    ],
+    "skillToolLanguageProficiencies": [
+      {
+        "anyLanguage": 2
+      },
+      {
+        "anyLanguage": 1,
+        "anyTool": 1
+      },
+      {
+        "anyTool": 1
+      }
+    ],
+    "translator": "不全书",
+    "edition": "classic"
+  }
+]

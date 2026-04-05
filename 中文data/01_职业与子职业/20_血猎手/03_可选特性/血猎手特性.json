@@ -1,0 +1,835 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "BloodHunter2024",
+                "abbreviation": "BH2024",
+                "full": "血猎手 2024",
+                "authors": [
+                    "SnowWolf"
+                ],
+                "convertedBy": [
+                    "cloridon"
+                ],
+                "url": "https://homebrewery.naturalcrit.com/share/fcV-yiDorwjY",
+                "version": "1.1",
+                "color": "8A0303"
+            }
+        ],
+        "optionalFeatureTypes": {
+            "BC": "血咒",
+            "CR": "猩红仪式",
+            "MTGN": "诱变剂"
+        }
+    },
+    "optionalfeature": [
+        {
+            "ENG_name": "Blood Curse of the Anxious",
+            "name": "焦虑血咒",
+            "source": "BloodHunter2024",
+            "entries": [
+                "作为一个{@variantrule 附赠动作|XPHB}，你侵扰30尺内一个生物的身体或精神，该生物必须进行一次感知豁免检定。若豁免失败，被诅咒的生物将陷入{@condition 恐慌}状态直到你的下回合结束。",
+                {
+                    "ENG_name": "Amplify",
+                    "name": "增幅",
+                    "type": "entries",
+                    "entries": [
+                        "在此诅咒结束前，被诅咒生物下次进行的感知豁免检定具有劣势。"
+                    ]
+                }
+            ],
+            "featureType": [
+                "BC"
+            ]
+        },
+        {
+            "ENG_name": "Blood Curse of Binding",
+            "name": "捆缚血咒",
+            "source": "BloodHunter2024",
+            "entries": [
+                "以一个{@variantrule 附赠动作|XPHB}，你尝试捆缚一个30尺内你能看见的大型或更小的生物，该生物必须进行一次力量豁免检定。若失败，被诅咒的生物速度降至0且直到你的下一回合结束前不能使用反应。",
+                {
+                    "ENG_name": "Amplify",
+                    "name": "增幅",
+                    "type": "entries",
+                    "entries": [
+                        "豁免失败时，此诅咒持续1分钟且可以影响任何体型的生物。被诅咒的生物可以在自己每回合结束时重复进行豁免检定，豁免成功时此诅咒结束。豁免成功时，目标的速度改为减半直到你的下个回合结束。"
+                    ]
+                }
+            ],
+            "featureType": [
+                "BC"
+            ]
+        },
+        {
+            "ENG_name": "Blood Curse of Bloated Agony",
+            "name": "胀痛血咒",
+            "source": "BloodHunter2024",
+            "entries": [
+                "以一个{@variantrule 附赠动作|XPHB}，你诅咒30尺内一个你能看见的生物，令其身体膨胀直至你的下回合结束。在此诅咒生效期间，该生物在力量检定及敏捷检定中具有劣势，并且，如果其在回合内攻击多于一次，受到等同于你鲜血秘法骰一次掷骰的暗蚀伤害。",
+                {
+                    "ENG_name": "Amplify",
+                    "name": "增幅",
+                    "type": "entries",
+                    "entries": [
+                        "此诅咒持续1分钟。被诅咒的生物在自己的每回合结束时可以进行体质豁免检定，豁免成功时此诅咒结束。"
+                    ]
+                }
+            ],
+            "featureType": [
+                "BC"
+            ]
+        },
+        {
+            "ENG_name": "Blood Curse of Corrosion",
+            "name": "腐蚀血咒",
+            "source": "BloodHunter2024",
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 15,
+                        "class": {
+                            "ENG_name": "Blood Hunter",
+                            "name": "血猎手"
+                        },
+                        "subclass": {
+                            "ENG_name": "Order of the Mutant",
+                            "name": "突变结社",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "你可以消耗一次鲜血秘法的使用次数来发动一个特殊血咒。以一个{@variantrule 附赠动作|XPHB}，你使30尺内的一个生物陷入{@condition 中毒}状态。被诅咒的生物可以在其每个回合结束时进行一次体质豁免检定，若成功则解除自身的诅咒。",
+                {
+                    "ENG_name": "Amplify",
+                    "name": "增幅",
+                    "type": "entries",
+                    "entries": [
+                        "被诅咒的生物在你施加此诅咒时受到{@dice 4d6}点暗蚀伤害，并且每当它未能通过体质豁免检定来结束诅咒时，会再次受到此伤害。"
+                    ]
+                }
+            ],
+            "featureType": [
+                "BC"
+            ]
+        },
+        {
+            "ENG_name": "Blood Curse of the Exorcist",
+            "name": "驱魔血咒",
+            "source": "BloodHunter2024",
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 15,
+                        "class": {
+                            "ENG_name": "Blood Hunter",
+                            "name": "血猎手"
+                        },
+                        "subclass": {
+                            "ENG_name": "Order of the Ghostslayer",
+                            "name": "弑灵结社",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "你可以消耗一次鲜血秘法使用次数，以一个{@variantrule 附赠动作|XPHB}发动一个特殊血咒。选择30尺内一个你能看见的处于{@condition 魅惑}、{@condition 恐慌}或被附身的生物。目标生物将不再处于{@condition 魅惑}、{@condition 恐慌}或被附身状态。",
+                {
+                    "ENG_name": "Amplify",
+                    "name": "增幅",
+                    "type": "entries",
+                    "entries": [
+                        "魅惑{@condition 魅惑}、恐惧{@condition 恐慌}或附身诅咒目标的生物受到{@dice 3d6}点心灵伤害，并且必须通过一次感知豁免，否则被{@condition 震慑}到你下回合结束。"
+                    ]
+                }
+            ],
+            "featureType": [
+                "BC"
+            ]
+        },
+        {
+            "ENG_name": "Blood Curse of Exposure",
+            "name": "暴露诅咒",
+            "source": "BloodHunter2024",
+            "entries": [
+                "当距你 30 尺内一你能看到的生物受到攻击或法术的伤害时，你可以使用你的{@variantrule 反应|XPHB}来暂时削弱其恢复力。直到目标下一回合结束，其失去对该攻击或法术造成的所有伤害类型的抗性（包括该触发效应）。",
+                {
+                    "ENG_name": "Amplify",
+                    "name": "增幅",
+                    "type": "entries",
+                    "entries": [
+                        "目标失去对该攻击或法术的所有的伤害类型的免疫力，但在其下一回合结束前，对这些伤害类型具有抵抗力。"
+                    ]
+                }
+            ],
+            "featureType": [
+                "BC"
+            ]
+        },
+        {
+            "ENG_name": "Blood Curse of the Eyeless",
+            "name": "盲目血咒",
+            "source": "BloodHunter2024",
+            "entries": [
+                "当距你30尺内一你能看到的生物成功通过攻击检定时，你可以使用你的{@variantrule 反应|XPHB}来掷一次鲜血秘法骰并从该生物的攻击检定中减去掷出的数值，可能将成功变为失败。若该生物对{@condition 目盲}状态免疫，则其对此诅咒免疫。",
+                {
+                    "ENG_name": "Amplify",
+                    "name": "增幅",
+                    "type": "entries",
+                    "entries": [
+                        "你对该生物的所有攻击检定使用此诅咒，直至该生物的回合结束。你为每次受影响的攻击各掷一次骰。"
+                    ]
+                }
+            ],
+            "featureType": [
+                "BC"
+            ]
+        },
+        {
+            "ENG_name": "Blood Curse of the Fallen Puppet",
+            "name": "傀儡血咒",
+            "source": "BloodHunter2024",
+            "entries": [
+                "当距你30尺内一个你能看见的生物生命值降为0点时，你可以使用你的{@variantrule 反应|XPHB}来迫使该生物立即对其攻击范围内一个你选择的目标发动一次武器攻击。",
+                {
+                    "ENG_name": "Amplify",
+                    "name": "增幅",
+                    "type": "entries",
+                    "entries": [
+                        "你可以先移动该诅咒生物至多其速度一半的距离，并且该生物的攻击检定得到等同于你智力调整值的加值（至少为+1）。"
+                    ]
+                }
+            ],
+            "featureType": [
+                "BC"
+            ]
+        },
+        {
+            "ENG_name": "Blood Curse of the Howl",
+            "name": "怒号血咒",
+            "source": "BloodHunter2024",
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 15,
+                        "class": {
+                            "ENG_name": "Blood Hunter",
+                            "name": "血猎手"
+                        },
+                        "subclass": {
+                            "ENG_name": "Order of the Lycan",
+                            "name": "化狼结社",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "这是一种特殊的血咒。你发出一阵毛骨悚然的嚎叫。每个30尺光环内能听到你的生物必须通过一次感知豁免检定，否则陷入对你{@condition 恐慌}的状态，直至你下回合结束。若生物豁免检定失败且骰值比DC相差5或更多，其在{@condition 恐慌}的同时被{@condition 震慑}。通过豁免检定的生物在接下来的24小时内免疫此血咒。",
+                "你可以选择任意数量你能看见的生物不受此嚎叫影响。",
+                {
+                    "ENG_name": "Amplify",
+                    "name": "增幅",
+                    "type": "entries",
+                    "entries": [
+                        "你改为以一个{@variantrule 附赠动作|XPHB}来施放此血咒。"
+                    ]
+                }
+            ],
+            "featureType": [
+                "BC"
+            ]
+        },
+        {
+            "ENG_name": "Blood Curse of the Marked",
+            "name": "印记血咒",
+            "source": "BloodHunter2024",
+            "entries": [
+                "以一个{@variantrule 附赠动作|XPHB}，你可以标记距你30尺内一个你能看见的生物。直至你下回合开始，每当被诅咒的生物受到与你激活的猩红仪式相同类型的伤害时，它额外受到一个鲜血秘法骰的伤害。",
+                {
+                    "ENG_name": "Amplify",
+                    "name": "增幅",
+                    "type": "entries",
+                    "entries": [
+                        "被诅咒的生物在受到任何来源的伤害时，都会受到与你激活的猩红仪式相同类型的额外伤害，而不仅仅是你造成的伤害。"
+                    ]
+                }
+            ],
+            "featureType": [
+                "BC"
+            ]
+        },
+        {
+            "ENG_name": "Blood Curse of the Muddled Mind",
+            "name": "乱心血咒",
+            "source": "BloodHunter2024",
+            "entries": [
+                "以一个{@variantrule 附赠动作|XPHB}，你诅咒距你30尺内一个你能看见、且正专注于一个法术或使用需要专注的特性的生物。该生物在你下回合结束前为维持专注而进行的下次体质豁免检定具有劣势。",
+                {
+                    "ENG_name": "Amplify",
+                    "name": "增幅",
+                    "type": "entries",
+                    "entries": [
+                        "诅咒生物在你下回合结束前为维持专注而进行的所有体质豁免检定具有劣势。"
+                    ]
+                }
+            ],
+            "featureType": [
+                "BC"
+            ]
+        },
+        {
+            "ENG_name": "Blood Curse of the Mutual Suffering",
+            "name": "同苦血咒",
+            "source": "BloodHunter2024",
+            "entries": [
+                "当你或30尺内一个你能看见的盟友生物受到伤害时，你可以使用一个{@variantrule 反应|XPHB}将他们的苦痛与另一个生物相连。选择30尺内一个你能看见的其他生物。诅咒的目标受到被攻击生物所受相同伤害类型的一半伤害。",
+                {
+                    "ENG_name": "Amplify",
+                    "name": "增幅",
+                    "type": "entries",
+                    "entries": [
+                        "此诅咒改为造成与被攻击生物所受伤害相等的伤害，且将免疫视为抗性。"
+                    ]
+                }
+            ],
+            "featureType": [
+                "BC"
+            ]
+        },
+        {
+            "ENG_name": "Blood Curse of the Reckless",
+            "name": "鲁莽血咒",
+            "source": "BloodHunter2024",
+            "entries": [
+                "以一个{@variantrule 附赠动作|XPHB}，你使一个你能看见的30尺内的生物变得狂化，无法保护自己。目标在你的下一回合结束前不能采取{@action 撤离}或{@action 回避}动作。",
+                {
+                    "ENG_name": "Amplify",
+                    "name": "增幅",
+                    "type": "entries",
+                    "entries": [
+                        "被诅咒的生物的AC在持续时间中降低2点。"
+                    ]
+                }
+            ],
+            "featureType": [
+                "BC"
+            ]
+        },
+        {
+            "ENG_name": "Blood Curse of the Souleater",
+            "name": "噬魂血咒",
+            "source": "BloodHunter2024",
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 18,
+                        "class": {
+                            "ENG_name": "Blood Hunter",
+                            "name": "血猎手"
+                        },
+                        "subclass": {
+                            "ENG_name": "Order of the Profane Soul",
+                            "name": "渎魂结社",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "这是一种特殊的血咒。当距你30尺内一个非构装体，非不死生物的生物生命值降为0点时，你可以使用你的{@variantrule 反应|XPHB}来吸收他们的生命能量并增强自己。直到你下回合结束，你的攻击具有优势并且你对所有伤害具有抗性。",
+                {
+                    "ENG_name": "Amplify",
+                    "name": "增幅",
+                    "type": "entries",
+                    "entries": [
+                        "此外，你恢复一个已消耗的契约魔法法术位。增幅此血咒后，你必须完成一次{@variantrule 长休|XPHB}才能再次增幅它。"
+                    ]
+                }
+            ],
+            "featureType": [
+                "BC"
+            ]
+        },
+        {
+            "ENG_name": "Aether",
+            "name": "升腾",
+            "source": "BloodHunter2024",
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "ENG_name": "Blood Hunter",
+                            "name": "血猎手"
+                        },
+                        "subclass": {
+                            "ENG_name": "Order of the Mutant",
+                            "name": "突变结社",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "你获得30尺的{@variantrule 飞行速度|XPHB}，持续1小时。"
+            ],
+            "featureType": [
+                "MTGN"
+            ]
+        },
+        {
+            "ENG_name": "Alluring",
+            "name": "幻惑",
+            "source": "BloodHunter2024",
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "ENG_name": "Blood Hunter",
+                            "name": "血猎手"
+                        },
+                        "subclass": {
+                            "ENG_name": "Order of the Mutant",
+                            "name": "突变结社",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "你进行的魅力检定具有优势。此外，你受到变身术效应的影响，仅选择变形外表选项，持续1小时。"
+            ],
+            "featureType": [
+                "MTGN"
+            ]
+        },
+        {
+            "ENG_name": "Celerity",
+            "name": "迅捷",
+            "source": "BloodHunter2024",
+            "entries": [
+                "你的敏捷提升3点，上限也提升3点。在血猎手15级时，此提升增加到4点。"
+            ],
+            "featureType": [
+                "MTGN"
+            ]
+        },
+        {
+            "ENG_name": "Conversant",
+            "name": "精通",
+            "source": "BloodHunter2024",
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "ENG_name": "Blood Hunter",
+                            "name": "血猎手"
+                        },
+                        "subclass": {
+                            "ENG_name": "Order of the Mutant",
+                            "name": "突变结社",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "你进行的智力检定具有优势，并且处于{@spell 巧言术}法术的效应下。"
+            ],
+            "featureType": [
+                "MTGN"
+            ]
+        },
+        {
+            "ENG_name": "Cruelty",
+            "name": "残虐",
+            "source": "BloodHunter2024",
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "ENG_name": "Blood Hunter",
+                            "name": "血猎手"
+                        },
+                        "subclass": {
+                            "ENG_name": "Order of the Mutant",
+                            "name": "突变结社",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "当你在自己回合内执行攻击动作时，你可以以一个{@variantrule 附赠动作|XPHB}发动一次攻击。"
+            ],
+            "featureType": [
+                "MTGN"
+            ]
+        },
+        {
+            "ENG_name": "Echolocation",
+            "name": "回声定位",
+            "source": "BloodHunter2024",
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "ENG_name": "Blood Hunter",
+                            "name": "血猎手"
+                        },
+                        "subclass": {
+                            "ENG_name": "Order of the Mutant",
+                            "name": "突变结社",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "你拥有30尺的盲视，或你的盲视范围增加30尺。若你处于耳聋状态，则此盲视无法生效。"
+            ],
+            "featureType": [
+                "MTGN"
+            ]
+        },
+        {
+            "ENG_name": "Embers",
+            "name": "余烬",
+            "source": "BloodHunter2024",
+            "entries": [
+                "你获得火焰伤害的抗性。"
+            ],
+            "featureType": [
+                "MTGN"
+            ]
+        },
+        {
+            "ENG_name": "Gelid",
+            "name": "凛冽",
+            "source": "BloodHunter2024",
+            "entries": [
+                "你获得寒冷伤害的抗性。"
+            ],
+            "featureType": [
+                "MTGN"
+            ]
+        },
+        {
+            "ENG_name": "Impermeable",
+            "name": "不穿",
+            "source": "BloodHunter2024",
+            "entries": [
+                "你获得穿刺伤害的抗性。"
+            ],
+            "featureType": [
+                "MTGN"
+            ]
+        },
+        {
+            "ENG_name": "Mobile",
+            "name": "灵活移动",
+            "source": "BloodHunter2024",
+            "entries": [
+                "你对{@condition 受擒}或{@condition 束缚}状态免疫。第11级起，你同时对{@condition 麻痹}状态免疫。"
+            ],
+            "featureType": [
+                "MTGN"
+            ]
+        },
+        {
+            "ENG_name": "Nighteye",
+            "name": "夜视",
+            "source": "BloodHunter2024",
+            "entries": [
+                "你得到{@sense 黑暗视觉}，范围为60尺，或你的{@sense 黑暗视觉}再扩展60尺。"
+            ],
+            "featureType": [
+                "MTGN"
+            ]
+        },
+        {
+            "ENG_name": "Percipient",
+            "name": "洞察者",
+            "source": "BloodHunter2024",
+            "entries": [
+                "你进行的感知检定具有优势。"
+            ],
+            "featureType": [
+                "MTGN"
+            ]
+        },
+        {
+            "ENG_name": "Potency",
+            "name": "潜能",
+            "source": "BloodHunter2024",
+            "entries": [
+                "你的力量增加3点，最大值也随之增加。在血猎手等级15时，此加值提升至4点。"
+            ],
+            "featureType": [
+                "MTGN"
+            ]
+        },
+        {
+            "ENG_name": "Precision",
+            "name": "精准",
+            "source": "BloodHunter2024",
+            "entries": [
+                "你的武器攻击在掷出19或20时造成重击。在血猎手等级15时，改为在掷出18、19或20时造成重击。"
+            ],
+            "featureType": [
+                "MTGN"
+            ]
+        },
+        {
+            "ENG_name": "Rapidity",
+            "name": "急速",
+            "source": "BloodHunter2024",
+            "entries": [
+                "你的速度增加10尺。在血猎手15级时，速度再增加5尺。"
+            ],
+            "featureType": [
+                "MTGN"
+            ]
+        },
+        {
+            "ENG_name": "Reagent",
+            "name": "化学试剂",
+            "source": "BloodHunter2024",
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "ENG_name": "Blood Hunter",
+                            "name": "血猎手"
+                        },
+                        "subclass": {
+                            "ENG_name": "Order of the Mutant",
+                            "name": "突变结社",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "当你消耗这种诱变剂时，你可以选择一种你已经配制的诱变剂。这种诱变剂将获得该诱变剂的效应。你在完成一次{@variantrule 长休|XPHB}前不能配制这种诱变剂。"
+            ],
+            "featureType": [
+                "MTGN"
+            ]
+        },
+        {
+            "ENG_name": "Reconstruction",
+            "name": "再生",
+            "source": "BloodHunter2024",
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 7,
+                        "class": {
+                            "ENG_name": "Blood Hunter",
+                            "name": "血猎手"
+                        },
+                        "subclass": {
+                            "ENG_name": "Order of the Mutant",
+                            "name": "突变结社",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "entries": [
+                "你开始快速愈合。在你的每个回合开始时，你恢复等同于血猎手等级一半的生命值，持续1分钟。"
+            ],
+            "featureType": [
+                "MTGN"
+            ]
+        },
+        {
+            "ENG_name": "Sagacity",
+            "name": "睿智",
+            "source": "BloodHunter2024",
+            "entries": [
+                "你的智力增加3点，上限也增加3点。在血猎手等级达到15级时，此加值提升至4点。"
+            ],
+            "featureType": [
+                "MTGN"
+            ]
+        },
+        {
+            "ENG_name": "Shielded",
+            "name": "庇护",
+            "source": "BloodHunter2024",
+            "entries": [
+                "你得到对挥砍伤害的抗性。"
+            ],
+            "featureType": [
+                "MTGN"
+            ]
+        },
+        {
+            "ENG_name": "Unbreakable",
+            "name": "不破",
+            "source": "BloodHunter2024",
+            "entries": [
+                "你得到对钝击伤害的抗性。"
+            ],
+            "featureType": [
+                "MTGN"
+            ]
+        },
+        {
+            "ENG_name": "Vermillion",
+            "name": "红莲",
+            "source": "BloodHunter2024",
+            "entries": [
+                "你额外得到一次鲜血秘法特性的使用次数。"
+            ],
+            "featureType": [
+                "MTGN"
+            ]
+        },
+        {
+            "ENG_name": "Rite of the Flame",
+            "name": "烈焰血仪",
+            "source": "BloodHunter2024",
+            "entries": [
+                "你的血仪造成的额外伤害是火焰伤害。"
+            ],
+            "featureType": [
+                "CR"
+            ]
+        },
+        {
+            "ENG_name": "Rite of the Frozen",
+            "name": "冻结血仪",
+            "source": "BloodHunter2024",
+            "entries": [
+                "你的血仪造成的额外伤害是寒冷伤害。"
+            ],
+            "featureType": [
+                "CR"
+            ]
+        },
+        {
+            "ENG_name": "Rite of the Storm",
+            "name": "风暴血仪",
+            "source": "BloodHunter2024",
+            "entries": [
+                "猩红仪式造成的额外伤害是闪电伤害。"
+            ],
+            "featureType": [
+                "CR"
+            ]
+        },
+        {
+            "ENG_name": "Rite of the Dead",
+            "name": "死亡血仪",
+            "source": "BloodHunter2024",
+            "entries": [
+                "你的死亡血仪造成的额外伤害是暗蚀伤害。"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 14,
+                        "class": {
+                            "ENG_name": "Blood Hunter",
+                            "name": "血猎手"
+                        }
+                    }
+                }
+            ],
+            "featureType": [
+                "CR"
+            ]
+        },
+        {
+            "ENG_name": "Rite of the Oracle",
+            "name": "神谕血仪",
+            "source": "BloodHunter2024",
+            "entries": [
+                "你的血仪造成的额外伤害是心灵伤害。"
+            ],
+            "featureType": [
+                "CR"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 14,
+                        "class": {
+                            "ENG_name": "Blood Hunter",
+                            "name": "血猎手"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "ENG_name": "Rite of the Roar",
+            "name": "轰鸣血仪",
+            "source": "BloodHunter2024",
+            "entries": [
+                "轰鸣血仪造成的额外伤害是雷鸣伤害。"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 14,
+                        "class": {
+                            "ENG_name": "Blood Hunter",
+                            "name": "血猎手"
+                        }
+                    }
+                }
+            ],
+            "featureType": [
+                "CR"
+            ]
+        },
+        {
+            "ENG_name": "Rite of the Dawn",
+            "name": "破晓血仪",
+            "source": "BloodHunter2024",
+            "entries": [
+                "作为你猩红仪式特性的一部分，你学会破晓血仪。当你激活破晓血仪时，你的血仪造成的额外伤害为光耀伤害任务。此外，当该血仪在你的武器上激活时，你获得以下增益：",
+                {
+                    "type": "list",
+                    "items": [
+                        "你的武器发出{@variantrule 明亮光照|XPHB}，范围20尺。",
+                        "你得到对暗蚀伤害的抗性。",
+                        "当你用激活了破晓血仪的武器命中一个亡灵生物时，你在确定来自血仪的额外伤害时额外掷一个鲜血秘法骰。"
+                    ]
+                }
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 3,
+                        "class": {
+                            "ENG_name": "Blood Hunter",
+                            "name": "血猎手"
+                        },
+                        "subclass": {
+                            "ENG_name": "Order of the Ghostslayer",
+                            "name": "弑灵结社",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "featureType": [
+                "CR"
+            ]
+        }
+    ]
+}

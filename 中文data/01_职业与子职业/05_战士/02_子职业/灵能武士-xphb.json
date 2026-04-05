@@ -1,0 +1,399 @@
+{
+  "ENG_name": "Psi Warrior",
+  "name": "灵能武士",
+  "shortName": "灵能武士",
+  "source": "XPHB",
+  "className": "战士",
+  "classSource": "XPHB",
+  "page": 98,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "innate": {
+        "18": {
+          "daily": {
+            "1": [
+              "心灵遥控|XPHB"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "subclassTableGroups": [
+    {
+      "subclasses": [
+        {
+          "ENG_name": "Psi Warrior",
+          "name": "灵能武士",
+          "source": "XPHB"
+        }
+      ],
+      "colLabels": [
+        "{@tip 骰子大小|灵能骰大小}",
+        "{@tip 数值|灵能骰数值}"
+      ],
+      "rows": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          "{@dice D6}",
+          4
+        ],
+        [
+          "{@dice D6}",
+          4
+        ],
+        [
+          "{@dice D8}",
+          6
+        ],
+        [
+          "{@dice D8}",
+          6
+        ],
+        [
+          "{@dice D8}",
+          6
+        ],
+        [
+          "{@dice D8}",
+          6
+        ],
+        [
+          "{@dice D8}",
+          8
+        ],
+        [
+          "{@dice D8}",
+          8
+        ],
+        [
+          "{@dice D10}",
+          8
+        ],
+        [
+          "{@dice D10}",
+          8
+        ],
+        [
+          "{@dice D10}",
+          10
+        ],
+        [
+          "{@dice D10}",
+          10
+        ],
+        [
+          "{@dice D10}",
+          10
+        ],
+        [
+          "{@dice D10}",
+          10
+        ],
+        [
+          "{@dice D12}",
+          12
+        ],
+        [
+          "{@dice D12}",
+          12
+        ],
+        [
+          "{@dice D12}",
+          12
+        ],
+        [
+          "{@dice D12}",
+          12
+        ]
+      ]
+    }
+  ],
+  "subclassFeatures": [
+    "灵能武士|战士|XPHB|灵能武士|XPHB|3",
+    "念力精通|战士|XPHB|灵能武士|XPHB|7",
+    "意念守护|战士|XPHB|灵能武士|XPHB|10",
+    "力场壁垒|战士|XPHB|灵能武士|XPHB|15",
+    "念力宗师|战士|XPHB|灵能武士|XPHB|18"
+  ],
+  "hasFluffImages": true,
+  "features": [
+    {
+      "ENG_name": "Psi Warrior",
+      "name": "灵能武士",
+      "source": "XPHB",
+      "page": 98,
+      "className": "战士",
+      "classSource": "XPHB",
+      "subclassShortName": "灵能武士",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "entries": [
+        "{@i 灵能庇体显神威}",
+        "灵能武士唤醒他们心灵中的力量以增强自身的体魄，他们将这种被称为灵能的力量注入于刀兵之中，用念动力鞭笞他们的敌人，并以精神力铸造无形壁垒抵御攻击。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "灵能力量|战士|XPHB|灵能武士|XPHB|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Psionic Power",
+      "name": "灵能力量",
+      "source": "XPHB",
+      "page": 98,
+      "className": "战士",
+      "classSource": "XPHB",
+      "subclassShortName": "灵能武士",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "entries": [
+        "你内心拥有一个灵能力量的源泉。这股能量表现为灵能骰，它是你从此子职中获得的可消耗能力。灵能武士灵能骰表展示了你在达到特定战士等级后的灵能骰大小与数量。",
+        {
+          "type": "table",
+          "caption": "灵能武士灵能骰",
+          "colLabels": [
+            "战士等级",
+            "骰子大小",
+            "数值"
+          ],
+          "colStyles": [
+            "col-4 text-center",
+            "col-4 text-center",
+            "col-4 text-center"
+          ],
+          "rows": [
+            [
+              "3",
+              "{@dice D6}",
+              "4"
+            ],
+            [
+              "5",
+              "{@dice D8}",
+              "6"
+            ],
+            [
+              "9",
+              "{@dice D8}",
+              "8"
+            ],
+            [
+              "11",
+              "{@dice D10}",
+              "8"
+            ],
+            [
+              "13",
+              "{@dice D10}",
+              "10"
+            ],
+            [
+              "17",
+              "{@dice D12}",
+              "12"
+            ]
+          ]
+        },
+        "此子职中所有需要使用灵能骰的特性只能使用你从该子职获得的灵能骰。你在使用某些能力时需要消耗灵能骰，如异能描述中所述，如果某个异能在你的灵能骰全部消耗完后还需要你使用一个灵能骰，你就不能使用该异能。",
+        "你可以在完成{@variantrule 短休|XPHB}时重获一枚已消耗的灵能骰，完成{@variantrule 长休|XPHB}后恢复所有已消耗的使用次数。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "庇护力场|战士|XPHB|灵能武士|XPHB|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "灵能打击|战士|XPHB|灵能武士|XPHB|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "念力控物|战士|XPHB|灵能武士|XPHB|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Protective Field",
+      "name": "庇护力场",
+      "source": "XPHB",
+      "page": 98,
+      "className": "战士",
+      "classSource": "XPHB",
+      "subclassShortName": "灵能武士",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "header": 2,
+      "consumes": {
+        "ENG_name": "Psionic Energy Die",
+        "name": "灵能骰"
+      },
+      "entries": [
+        "当你或者另一个位于你 30 尺内的你可见的生物受到伤害时，你可以执行一个{@variantrule 反应|XPHB}来消耗一枚灵能骰，对其降低等同于灵能骰骰出的数值加你的智力调整值的伤害（最少 1 点），如同你创造了一面瞬间的念力盾牌。"
+      ]
+    },
+    {
+      "ENG_name": "Psionic Strike",
+      "name": "灵能打击",
+      "source": "XPHB",
+      "page": 98,
+      "className": "战士",
+      "classSource": "XPHB",
+      "subclassShortName": "灵能武士",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "header": 2,
+      "consumes": {
+        "ENG_name": "Psionic Energy Die",
+        "name": "灵能骰"
+      },
+      "entries": [
+        "你可以用灵能驱动你的武器。每个你的回合一次，当你用武器命中并对位于你 30 尺范围内的目标造成伤害时，你可以立即消耗一枚灵能骰，对目标造成等同于灵能骰骰出的数值加你的智力调整值的力场伤害。"
+      ]
+    },
+    {
+      "ENG_name": "Telekinetic Movement",
+      "name": "念力控物",
+      "source": "XPHB",
+      "page": 98,
+      "className": "战士",
+      "classSource": "XPHB",
+      "subclassShortName": "灵能武士",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "header": 2,
+      "consumes": {
+        "ENG_name": "Psionic Energy Die",
+        "name": "灵能骰"
+      },
+      "entries": [
+        "你可以用意念移动一个物体或生物。以一个{@action 魔法|XPHB}动作，你选中一个除你以外的自愿生物或一个至多大型的未固定物件。如果你可以看见目标且目标在你 30 尺范围内，你就可以将其移动至多 30 尺至另一个对你可见的未占据空间内。另外，如果目标是一个微型物件，你可以自由给出或收回手中。",
+        "此异能一经使用，直至完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}你都无法再次使用。你也可以消耗一枚灵能骰（无需动作）重置此异能的使用权。"
+      ]
+    },
+    {
+      "ENG_name": "Psi-Powered Leap",
+      "name": "灵力跃动",
+      "source": "XPHB",
+      "page": 99,
+      "className": "战士",
+      "classSource": "XPHB",
+      "subclassShortName": "灵能武士",
+      "subclassSource": "XPHB",
+      "level": 7,
+      "header": 2,
+      "consumes": {
+        "ENG_name": "Psionic Energy Die",
+        "name": "灵能骰"
+      },
+      "entries": [
+        "以一个{@variantrule 附赠动作|XPHB}，你获得{@variantrule 飞行速度|XPHB}，等同于两倍{@variantrule 速度|XPHB}，直到本回合结束为止。一旦你执行了此{@variantrule 附赠动作|XPHB}，直到你完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}为止你都不能再次使用它。你也可以消耗一枚灵能骰（无需动作）来再次使用该异能。"
+      ]
+    },
+    {
+      "ENG_name": "Telekinetic Adept",
+      "name": "念力精通",
+      "source": "XPHB",
+      "page": 99,
+      "className": "战士",
+      "classSource": "XPHB",
+      "subclassShortName": "灵能武士",
+      "subclassSource": "XPHB",
+      "level": 7,
+      "header": 2,
+      "entries": [
+        "你已经掌握了使用念力异能的新方式，如下所示。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "灵力跃动|战士|XPHB|灵能武士|XPHB|7"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "念力突刺|战士|XPHB|灵能武士|XPHB|7"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Telekinetic Thrust",
+      "name": "念力突刺",
+      "source": "XPHB",
+      "page": 99,
+      "className": "战士",
+      "classSource": "XPHB",
+      "subclassShortName": "灵能武士",
+      "subclassSource": "XPHB",
+      "level": 7,
+      "header": 2,
+      "entries": [
+        "当你使用灵能打击对一个目标造成伤害时，你可以迫使目标进行一次力量豁免（{@dc 8|= 8} + 你的智力调整值 + 你的{@variantrule 熟练|XPHB|熟练加值}）。如果豁免失败，你可以使目标陷入{@condition 倒地|XPHB}状态或者将其在任意方向水平移动至多 10 尺。"
+      ],
+      "translator": "不全书"
+    },
+    {
+      "ENG_name": "Guarded Mind",
+      "name": "意念守护",
+      "source": "XPHB",
+      "page": 99,
+      "className": "战士",
+      "classSource": "XPHB",
+      "subclassShortName": "灵能武士",
+      "subclassSource": "XPHB",
+      "level": 10,
+      "header": 2,
+      "consumes": {
+        "ENG_name": "Psionic Energy Die",
+        "name": "灵能骰"
+      },
+      "entries": [
+        "你获得心灵伤害的{@variantrule 抗性|XPHB}。此外，如果你在你的回合开始时处于{@condition 魅惑|XPHB}或者{@condition 恐慌|XPHB}状态，你可以消耗一个灵能骰（无需动作）并结束自己身上全部造成这些状态的效应。"
+      ],
+      "translator": "不全书"
+    },
+    {
+      "ENG_name": "Bulwark of Force",
+      "name": "力场壁垒",
+      "source": "XPHB",
+      "page": 99,
+      "className": "战士",
+      "classSource": "XPHB",
+      "subclassShortName": "灵能武士",
+      "subclassSource": "XPHB",
+      "level": 15,
+      "header": 2,
+      "consumes": {
+        "ENG_name": "Psionic Energy Die",
+        "name": "灵能骰"
+      },
+      "entries": [
+        "你可以使用念力庇护你自己和其他人。以一个{@variantrule 附赠动作|XPHB}，包括你在内，你可以选择数名位于你 30 尺范围内的生物，其数量等同于你的智力调整值（最少 1 名）。每名被选中的生物将在 1 分钟内视为处于{@variantrule 掩护|XPHB|半身掩护}中，该保护将会在你陷入{@condition 失能|XPHB}状态时提前结束。",
+        "此特性一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。你也可以消耗一枚灵能骰（无需动作）重置此特性的使用权。"
+      ]
+    },
+    {
+      "ENG_name": "Telekinetic Master",
+      "name": "念力宗师",
+      "source": "XPHB",
+      "page": 99,
+      "className": "战士",
+      "classSource": "XPHB",
+      "subclassShortName": "灵能武士",
+      "subclassSource": "XPHB",
+      "level": 18,
+      "header": 2,
+      "consumes": {
+        "ENG_name": "Psionic Energy Die",
+        "name": "灵能骰"
+      },
+      "entries": [
+        "你始终准备着{@spell 心灵遥控|XPHB}法术，你可以在无需任何法术成分和法术位的情况下使用它，你施展这一法术的施法属性为智力。在每一个你对该法术维持{@status 专注|XPHB}的回合，包括你施放它的回合，你都能够以一个{@variantrule 附赠动作|XPHB}使用一把武器发动一次攻击。",
+        "一旦你以此特性施展此法术，直至完成{@variantrule 长休|XPHB}你都无法再如此做。你也可以消耗一枚灵能骰（无需动作）重置此法术的施展。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "ENG_name": "Heaven's Gavel",
+    "name": "天谕之槌",
+    "source": "GriffonsSaddlebag2",
+    "page": 101,
+    "baseItem": "巨锤|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "legendary",
+    "reqAttune": "由一位善良阵营的生物",
+    "reqAttuneTags": [
+      {
+        "alignment": [
+          "G"
+        ]
+      }
+    ],
+    "weight": 10,
+    "weaponCategory": "军用",
+    "property": [
+      "H",
+      "2H"
+    ],
+    "dmg1": "2d6",
+    "dmgType": "B",
+    "bonusWeapon": "+3",
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6 + 4}",
+    "charges": 10,
+    "entries": [
+      "这把铂金武器是一位神圣之龙赐予其忠诚骑士的礼物，世代相传。你使用这把魔法武器进行攻击和伤害检定时具有+3加值。当你用此武器命中邪恶阵营的生物时，该生物额外受到{@damage 1d6}光耀伤害。",
+      "这把巨锤具有10充能，每日黎明时重获{@dice 1d6 + 4}已消耗的充能。当你用巨锤命中一个体型不比你大超过一级的目标时，作为攻击动作的一部分，你可以消耗最多3充能。当你这样做时，目标必须进行一次DC 17的力量豁免。豁免失败则会被击退，每消耗1充能击退10尺；豁免成功则击退距离减半。如果目标因此撞上固体，则每剩余10尺未完成的击退距离造成{@damage 1d6}钝击伤害。如果撞上的固体是一个生物，该生物受到与被攻击目标相同的钝击伤害。"
+    ],
+    "lootTables": [
+      "魔法物品表I|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Heavens-Gavel.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

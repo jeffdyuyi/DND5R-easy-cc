@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Bloodlust",
+    "name": "嗜血",
+    "source": "ABH",
+    "page": 9,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Powerful Recovery",
+        "name": "强力恢复",
+        "type": "entries",
+        "entries": [
+          "当你掷一个{@variantrule 生命值骰|XPHB|生命值骰}来恢复{@variantrule 生命值|XPHB}时，你可以将任何掷出1或2的结果视为3。"
+        ]
+      },
+      {
+        "ENG_name": "Sanguine Feast",
+        "name": "血宴",
+        "type": "entries",
+        "entries": [
+          "每回合一次，当你用攻击检定命中一个非构装体或不死生物的{@status 浴血|XPHB}生物时，你可以消耗一个{@variantrule 生命值骰|XPHB|生命值骰}，掷骰，并恢复等于掷骰数值加上你体质调整值的{@variantrule 生命值|XPHB}。",
+          "你可以使用此特性的次数等于你的{@variantrule 熟练|XPHB|熟练加值}，并在完成一次{@variantrule 长休|XPHB}后恢复所有已使用的次数。"
+        ]
+      }
+    ]
+  }
+]

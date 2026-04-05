@@ -1,0 +1,58 @@
+[
+  {
+    "ENG_name": "Quiver of Ehlonna",
+    "basicRules2024": true,
+    "containerCapacity": {
+      "item": [
+        {
+          "箭|xphb": 60,
+          "弩矢|xphb": 60
+        },
+        {
+          "标枪|xphb": 18
+        },
+        {
+          "长弓|xphb": 6,
+          "长棍|xphb": 6,
+          "短弓|xphb": 6,
+          "矛|xphb": 6
+        }
+      ],
+      "weightless": true
+    },
+    "entries": [
+      "这个箭袋有三个大小不一的隔层，每个隔层都连接着一个异次元空间。无论其中存放着多少东西，箭袋的总重量都永远都不会超过2磅。最小的隔层可以容纳至多60支{@item 箭|XPHB|箭矢}、{@item 弩矢|XPHB|弩矢}或类似的物件；中等大小的隔层可以容纳至多18支{@item 标枪|XPHB|标枪}或类似的物件；最大的隔层可以容纳至多6件长条型的物件，例如弓、{@item 长棍|XPHB|长棍的}、{@item 矛|XPHB|三叉枪}等。",
+      "你可以如同从普通的箭袋或剑鞘中抽出物品一般抽出艾罗娜箭袋中的物品。"
+    ],
+    "hasFluffImages": true,
+    "lootTables": [
+      "武备 - 非普通|XDMG"
+    ],
+    "name": "艾罗娜的箭袋",
+    "optionalfeatures": [
+      "仿制魔法物品|TCE"
+    ],
+    "page": 189,
+    "rarity": "uncommon",
+    "source": "XDMG",
+    "srd52": "高效箭袋",
+    "weight": 2,
+    "wondrous": true,
+    "translator": "不全书",
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Quiver of Ehlonna.webp"
+          },
+          "width": 889,
+          "height": 1700
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

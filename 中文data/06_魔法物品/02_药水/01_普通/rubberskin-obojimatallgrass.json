@@ -1,0 +1,48 @@
+[
+  {
+    "ENG_name": "Rubberskin",
+    "name": "橡胶皮肤",
+    "source": "ObojimaTallGrass",
+    "page": 223,
+    "type": "P",
+    "resist": [
+      "闪电"
+    ],
+    "rarity": "common",
+    "property": [
+      "Com"
+    ],
+    "entries": [
+      "当你饮用这种蓝色粘液时，你的皮肤会变成厚厚的灰色橡胶。持续1小时，你获得对闪电伤害的抗性。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 25|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Combat/rubberskin.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 2980,
+          "height": 2980
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

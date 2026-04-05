@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "Earring of Message",
+    "name": "传讯耳环",
+    "source": "CRCotN",
+    "page": 212,
+    "rarity": "common",
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d4 + 1}",
+    "charges": 5,
+    "entries": [
+      "这个耳环的蓝色水晶被精致的铜丝包裹。耳环有5个充能点。佩戴时，你可以使用一个动作消耗1个充能点来施放{@spell 传讯术}法术。每天黎明时分，耳环恢复{@dice 1d4 + 1}个已消耗的充能点。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "传讯术"
+        ]
+      }
+    },
+    "hasFluffImages": true,
+    "valueReference": 100,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/CRCotN/Earring of Message.webp"
+          },
+          "credit": "CoupleOfKooks",
+          "width": 608,
+          "height": 850
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

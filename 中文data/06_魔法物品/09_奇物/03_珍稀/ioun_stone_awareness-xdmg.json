@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Ioun Stone, Awareness",
+    "name": "艾恩石, 警觉",
+    "source": "XDMG",
+    "page": 273,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "hasRefs": true,
+    "entries": [
+      "{#itemEntry 艾恩石|XDMG}",
+      "在这颗暗蓝色的长菱形艾恩石环绕在你头顶期间，你的{@variantrule 先攻|XPHB}掷骰和感知（{@skill 察觉|XPHB}）检定都具有{@variantrule 优势|XPHB}。"
+    ],
+    "lootTables": [
+      "器具 - 珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {},
+    "type": "W"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Dragon Root",
+    "name": "龙根",
+    "source": "ObojimaTallGrass",
+    "page": 211,
+    "type": "Ingred",
+    "rarity": "uncommon",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 14|large}|SneakerProMedium}",
+            "{@font {@style 15|large}|SneakerProMedium}",
+            "{@font {@style 16|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "在胧忆岛上，龙根的位置没有明显的规律或原因。但就像所有这样的神秘事件一样，传说比比皆是。关于龙根最常被重复的故事声称，无论在哪里发现它，都标志着一位名叫鲁尼瓦里什的远古灵龙的足迹。无论这是真是假，当地人确实发现龙根一旦被收获，就会在完全相同的地方重新生长，仿佛在标记着什么。龙根燃烧时比大多数木材和煤炭更热，因此对酿酒师和铁匠来说都很有价值。"
+    ],
+    "lootTables": [
+      "狂风农田非普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/dragon-root.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 2274,
+          "height": 2274
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,76 @@
+{
+  "ENG_name": "Meditation Chamber",
+  "name": "冥想室",
+  "source": "XDMG",
+  "page": 342,
+  "facilityType": "special",
+  "level": 13,
+  "space": [
+    "cramped"
+  ],
+  "hirelings": [
+    {
+      "exact": 1
+    }
+  ],
+  "orders": [
+    "增强"
+  ],
+  "entries": [
+    "冥想间是一个让人放空心灵的地方，能帮助你心身合一，锻神定灵。",
+    {
+      "ENG_name": "Empower: Inner Peace",
+      "name": "增强：内心宁静",
+      "type": "entries",
+      "entries": [
+        "当你对此设施下达{@book 增强|XDMG|7|增强}指令时，你据点的雇员可以使用冥想间以获取内心的宁静。当你下次掷骰决定据点事件时，你可以掷两次并选择其中一个结果。"
+      ]
+    },
+    {
+      "ENG_name": "Fortify Self",
+      "name": "自我强化",
+      "type": "entries",
+      "entries": [
+        "你可以在连续7天时间里，在此设施内进行冥想。如果你在此期间离开了据点，你不会获得任何增益。反之，在第七天结束时，你于之后7天内在两种属性豁免上获得{@variantrule 优势|XPHB}。从下列表格中掷骰两次以随机决定你获得了哪两种属性豁免的优势，出现重复结果则重投。",
+        {
+          "type": "table",
+          "colLabels": [
+            "1d6",
+            "豁免检定"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "1",
+              "力量"
+            ],
+            [
+              "2",
+              "敏捷"
+            ],
+            [
+              "3",
+              "体质"
+            ],
+            [
+              "4",
+              "智力"
+            ],
+            [
+              "5",
+              "感知"
+            ],
+            [
+              "6",
+              "魅力"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "translator": "不全书"
+}

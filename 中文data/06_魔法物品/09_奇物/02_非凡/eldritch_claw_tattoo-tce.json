@@ -1,0 +1,43 @@
+[
+  {
+    "ENG_name": "Eldritch Claw Tattoo",
+    "name": "魔能爪刺青",
+    "source": "TCE",
+    "page": 126,
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "tattoo": true,
+    "bonusWeapon": "+1",
+    "entries": [
+      "这种魔法刺青由特殊针具制成，描绘了爪状形态和其他锯齿形状。",
+      {
+        "ENG_name": "Tattoo Attunement",
+        "name": "刺青同调",
+        "type": "entries",
+        "entries": [
+          "同调此物品时，你需要将针持握，并抵在你想要让刺青出现 的那处皮肤上。当同调完成时，针头会化为墨水再变成刺青。",
+          "若你与刺青的同调结束，刺青会消失，针头会再次出现在你的位置中。"
+        ]
+      },
+      {
+        "ENG_name": "Magical Strikes",
+        "name": "魔法打击",
+        "type": "entries",
+        "entries": [
+          "当纹身在你的皮肤上时，你的徒手打击被认为是魔法的，目的是克服对非魔法攻击的免疫和抗性，并且你在徒手打击的攻击和伤害骰上获得+1的加值。"
+        ]
+      },
+      {
+        "ENG_name": "Eldritch Maul",
+        "name": "魔能巨锤",
+        "type": "entries",
+        "entries": [
+          "作为一个附赠动作，你可以在1分钟内增强纹身的力量。在此持续时间内，你使用武器或徒手打击的每次近战攻击都可以攻击到距离你最多15尺远的目标，就像墨色的触手向目标发射一样。此外，你的近战攻击在命中时会额外造成{@damage 1d6}点力场伤害。一旦使用，这个附赠动作直到下一个黎明前都不能再次使用。"
+        ]
+      }
+    ],
+    "valueReference": 400,
+    "type": "W"
+  }
+]

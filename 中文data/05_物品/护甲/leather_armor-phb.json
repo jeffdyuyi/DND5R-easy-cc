@@ -1,0 +1,23 @@
+[
+  {
+    "name": "皮甲",
+    "ENG_name": "Leather Armor",
+    "source": "PHB",
+    "page": 144,
+    "edition": "classic",
+    "type": "LA",
+    "rarity": "none",
+    "weight": 10,
+    "value": 1000,
+    "ac": 11,
+    "armor": true,
+    "entries": [
+      "该护甲的护胸和护肩由通过油煮硬化的皮子制成。护甲的其余部分则由更软更灵活的材料制作。"
+    ],
+    "basicRules": true,
+    "reprintedAs": [
+      "皮甲|XPHB"
+    ],
+    "srd": true
+  }
+]

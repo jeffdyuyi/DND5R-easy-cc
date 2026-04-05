@@ -1,0 +1,15 @@
+[
+  {
+    "ENG_name": "Bottled Comet",
+    "name": "瓶中彗星",
+    "source": "DungeonsDrakkenheim",
+    "page": 230,
+    "rarity": "rare",
+    "wondrous": true,
+    "entries": [
+      "这个球形玻璃球体内含有一块点燃的幻觉碎片，它在其中轻轻悬浮。电流从黄色、绿色和紫色的能量晶体中流出，并沿着玻璃表面流淌，使其触感温暖。",
+      "以一个动作，你可以将法球投掷至多30尺。法球在撞击时粉碎，释放出一股半径20尺的受污染能量爆发。区域内的生物必须成功通过{@dc 15}的体质豁免否则受到（{@damage 8d6}）暗蚀伤害，且获得1层{@adventure 污染层数|DungeonsDrakkenheim|12}。此外，一个奥术异常（见德拉肯海姆之墟）会以撞击点为中心发生。"
+    ],
+    "hasFluffImages": true
+  }
+]

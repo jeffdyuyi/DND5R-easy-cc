@@ -1,0 +1,40 @@
+{
+  "ENG_name": "War Magic",
+  "name": "战争魔法",
+  "shortName": "战争",
+  "source": "XGE",
+  "className": "法师",
+  "classSource": "XPHB",
+  "_copy": {
+    "ENG_name": "War Magic",
+    "name": "战争魔法",
+    "source": "XGE",
+    "shortName": "战争",
+    "className": "法师",
+    "classSource": "PHB",
+    "_preserve": {
+      "page": true,
+      "otherSources": true,
+      "referenceSources": true,
+      "srd": true,
+      "basicRules": true,
+      "reprintedAs": true
+    }
+  },
+  "subclassFeatures": [
+    "战争魔法|法师|XPHB|战争|XGE|3",
+    "魔力潮涌|法师||战争|XGE|6",
+    "耐久魔法|法师||战争|XGE|10",
+    "偏斜罩幕|法师||战争|XGE|14"
+  ],
+  "fluff": {
+    "_subclassFluff": {
+      "ENG_name": "War Magic",
+      "name": "战争魔法",
+      "source": "XGE",
+      "shortName": "战争",
+      "className": "法师",
+      "classSource": "PHB"
+    }
+  }
+}

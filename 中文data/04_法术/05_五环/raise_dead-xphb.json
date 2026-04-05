@@ -1,0 +1,84 @@
+[
+  {
+    "ENG_name": "Raise Dead",
+    "name": "死者复活",
+    "source": "XPHB",
+    "page": 310,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 5,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "小时"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一颗价值 500+GP 的钻石，作为法术耗材",
+        "cost": 50000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你触碰一名已死，但死亡时间不超过 10 日，且死亡时并非亡灵的生物，使其回生。",
+      "生物以 1 点{@variantrule 生命值|XPHB|生命值}重生。该法术同样会中和在该生物死亡时仍在生效的毒素。",
+      "该法术能治愈所有致命伤，但无法恢复失去的身体部位。如果该生物缺失了它生存所必要的身体部位或器官（比如头），则该法术自动失败。",
+      "死而复生是一个痛苦的体验。目标进行{@variantrule D20 检定|XPHB|D20 检定}时具有 -4 减值。目标每完成一次{@variantrule 长休|XPHB}，其减值就减少 1，直至减值变为 0。"
+    ],
+    "affectsCreatureType": [
+      "异怪",
+      "野兽",
+      "天族",
+      "构装",
+      "龙",
+      "元素生物",
+      "妖精",
+      "邪魔",
+      "巨人语",
+      "类人生物",
+      "怪兽",
+      "泥怪",
+      "植物"
+    ],
+    "miscTags": [
+      "HL"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/XPHB/Raise Dead.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 2225,
+          "height": 1440
+        }
+      ]
+    },
+    "classes": [
+      "吟游诗人",
+      "牧师",
+      "圣武士"
+    ],
+    "display_school": "死灵系"
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "ENG_name": "Quiver of Ehlonna",
+    "name": "艾罗娜的箭袋",
+    "source": "DMG",
+    "page": 189,
+    "srd": "高效箭袋",
+    "referenceSources": [
+      "WBtW",
+      "KftGV"
+    ],
+    "reprintedAs": [
+      "艾罗娜的箭袋|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "weight": 2,
+    "entries": [
+      "这个箭袋有三个口袋，每一个都连接着一个异次元空间。无论其中存放了多少东西，箭袋的重量永远不会超过2磅。三个口袋中最小的可以容纳60支{@item 箭|PHB|箭矢}、{@item 弩矢|PHB|弩箭}或类似的物件；中等大小的口袋可以容纳18支{@item 标枪|PHB|标枪}或类似物件；最大的口袋可以容纳六件长条型物件（比如弓、{@item 长棍|PHB|长棍}、{@item 矛|PHB|三叉枪}等）。",
+      "你可以如同从普通的箭袋或剑鞘中抽出物品一般抽出艾罗娜箭袋中的物品。"
+    ],
+    "containerCapacity": {
+      "item": [
+        {
+          "弩矢|phb": 60,
+          "箭|phb": 60
+        },
+        {
+          "标枪|phb": 18
+        },
+        {
+          "长棍|phb": 6,
+          "矛|phb": 6
+        }
+      ],
+      "weightless": true
+    },
+    "optionalfeatures": [
+      "仿制魔法物品|TCE"
+    ],
+    "lootTables": [
+      "魔法物品表F"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Quiver of Ehlonna.webp"
+          },
+          "credit": "Conceptopolis",
+          "width": 889,
+          "height": 1700
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "ENG_name": "Jewel of Three Prayers (Dormant)",
+    "name": "三祷之坠（休眠）",
+    "source": "CRCotN",
+    "page": 213,
+    "rarity": "legendary",
+    "reqAttune": true,
+    "wondrous": true,
+    "property": [
+      "Vst|EGW"
+    ],
+    "bonusAc": "+1",
+    "recharge": "拂晓",
+    "rechargeAmount": 3,
+    "charges": 3,
+    "entries": [
+      "三祈宝珠是分歧遗迹（见\"分歧遗迹\"侧边栏）。在古代，阿波西恩神使佩戴这个护身符作为他与三位主神的契约的象征：塞哈尼月亮编织者、阿瓦兰德拉变化使者和科雷隆大心。当宝珠被发现时，只有塞哈尼的力量在它的休眠心中脉动。其他两位神的力量等待着被英雄——或英雄们——重新唤醒，他们可以追随阿波西恩的足迹。",
+      {
+        "ENG_name": "Dormant State",
+        "name": "休眠态",
+        "type": "entries",
+        "entries": [
+          "在这种状态下，三祈宝珠是一个闪闪发光的金色圆盘，附在一条精致的金链上。这条链子会神奇地调整大小，作为佩戴它的生物的项链。",
+          "在其休眠状态下，宝石具有以下属性：",
+          {
+            "type": "list",
+            "items": [
+              "佩戴宝珠时，你的AC获得+1加值。",
+              "佩戴或持有宝石时，你可以使用动作让它在15尺半径内发出明亮的光芒，并在额外的15尺内发出微光。光芒持续存在，直到你将其熄灭（无需动作）。",
+              "宝石拥有3个充能，并且在每天黎明时恢复所有已消耗的充能。持有宝石时，你可以消耗1个充能来施放{@spell 隐形术}法术。"
+            ]
+          }
+        ]
+      }
+    ],
+    "light": [
+      {
+        "bright": 15,
+        "dim": 30
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "隐形术"
+        ]
+      }
+    },
+    "hasFluffImages": true,
+    "valueReference": 200000,
+    "fluff": {},
+    "type": "W"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "ENG_name": "Ring of Winter's Kiss",
+    "name": "冬吻戒指",
+    "source": "BookOfEbonTides",
+    "page": 208,
+    "type": "RG|DMG",
+    "rarity": "rare",
+    "reqAttune": true,
+    "entries": [
+      "当你佩戴{@item 凛冬戒指|ToA}的致命之吻时受到寒冷伤害，你会正常受到伤害。然而，在你的下一个回合，你可以以30尺内的任何生物为目标，发动一次攻击掷骰并获得+7的附赠动作。命中时，目标会受到与你相同的寒冷伤害。"
+    ]
+  }
+]

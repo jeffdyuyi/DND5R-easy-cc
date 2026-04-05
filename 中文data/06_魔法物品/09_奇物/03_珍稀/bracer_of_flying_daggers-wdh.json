@@ -1,0 +1,16 @@
+[
+  {
+    "ENG_name": "Bracer of Flying Daggers",
+    "name": "飞刀护腕",
+    "source": "WDH",
+    "page": 190,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这个臂带看起来有薄的{@item 匕首|PHB|匕首}绑在它上面。作为一个动作，你可以从臂带中拉出最多两把魔法匕首并立即投掷它们，对每个匕首进行远程攻击。如果你不立即投掷匕首，它会消失，并且匕首在击中或未命中后立即消失。臂带永远不会用完匕首。"
+    ],
+    "valueReference": 2000,
+    "type": "W"
+  }
+]

@@ -1,0 +1,135 @@
+[
+  {
+    "name": "焰拳佣兵",
+    "ENG_name": "Flaming Fist Mercenary",
+    "source": "FRHoF",
+    "edition": "one",
+    "page": 30,
+    "ability": [
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "str",
+              "con",
+              "cha"
+            ],
+            "weights": [
+              2,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "str",
+              "con",
+              "cha"
+            ],
+            "weights": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      }
+    ],
+    "feats": [
+      {
+        "健壮|xphb": true
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "intimidation": true,
+        "perception": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "smith's tools": true
+      }
+    ],
+    "startingEquipment": [
+      {
+        "A": [
+          "硬头锤|xphb",
+          "铁匠工具|xphb",
+          "高档服装|xphb",
+          "镣铐|xphb",
+          "便携式攻城锤|xphb",
+          {
+            "value": 400
+          }
+        ],
+        "B": [
+          {
+            "value": 5000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability Scores:",
+            "name": "属性值：",
+            "type": "item",
+            "entry": "力量、体质、魅力"
+          },
+          {
+            "ENG_name": "Feat:",
+            "name": "专长：",
+            "type": "item",
+            "entry": "{@feat 健壮|XPHB}"
+          },
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 威吓|XPHB}与{@skill 察觉|XPHB}"
+          },
+          {
+            "ENG_name": "Tool Proficiencies:",
+            "name": "工具熟练",
+            "type": "item",
+            "entry": "{@item 铁匠工具|XPHB}"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "选择A或B：(A) {@item 硬头锤|XPHB}、{@item 铁匠工具|XPHB}、{@item 高档服装|XPHB}、{@item 镣铐|XPHB}、{@item 便携式攻城锤|XPHB}，4GP；或(B) 50GP"
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "博德之门最主要的执法机构便是焰拳，一个由该城市的大公爵所领导的庞大佣兵协会。你曾经担任过焰拳的一员，并因此学会了如何用你令人生畏的眼神提前发现并解决问题，以及在必要的时候承受致命打击。焰拳的雇佣兵无论是在编还是已经退休，都以剑湾最顽强，最坚韧的战士著称，而你也在寻求将这样的声誉延续下去。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "backgrounds/FRHoF/Flaming Fist Mercenary.webp"
+          },
+          "credit": "Luca Bancone",
+          "width": 1700,
+          "height": 648
+        }
+      ]
+    },
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "translator": "不全书"
+  }
+]

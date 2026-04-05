@@ -1,0 +1,86 @@
+[
+  {
+    "ENG_name": "Black Dragon Mask",
+    "name": "黑龙面具",
+    "source": "HotDQ",
+    "page": 94,
+    "otherSources": [
+      {
+        "source": "ToD",
+        "page": 179
+      }
+    ],
+    "referenceSources": [
+      "RoT"
+    ],
+    "resist": [
+      "强酸"
+    ],
+    "rarity": "legendary",
+    "reqAttune": true,
+    "wondrous": true,
+    "grantsLanguage": true,
+    "entries": [
+      "这具以抛光黑檀木制成的带角面具其造型如同一个长角的颅骨。面具会调整自身尺寸以便其同调者着装。你与之同调并着装后，可以使用下列各属性。",
+      {
+        "ENG_name": "Damage Absorption",
+        "name": "伤害吸收",
+        "type": "entries",
+        "entries": [
+          "你对强酸伤害拥有抗性，如果你已经从另一来源拥有了强酸伤害的抗性，则你改为对强酸伤害免疫。若你此前已从另一来源获得了强酸伤害免疫，则你在受到强酸伤害时，可恢复其伤害量一半的生命值。"
+        ]
+      },
+      {
+        "ENG_name": "Draconic Majesty",
+        "name": "龙形威严",
+        "type": "entries",
+        "entries": [
+          "你未着装护甲时，可以将自己的魅力加值加入你的护甲等级中。"
+        ]
+      },
+      {
+        "ENG_name": "Dragon Breath",
+        "name": "龙息",
+        "type": "entries",
+        "entries": [
+          "若你有本身拥有需要休息充能的吐息武器，则该吐息改为充能 6。"
+        ]
+      },
+      {
+        "ENG_name": "Dragon Sight",
+        "name": "龙之视界",
+        "type": "entries",
+        "entries": [
+          "你获得 60 尺的{@sense 黑暗视觉}，若你已拥有{@sense 黑暗视觉}，则其范围再增加 60 尺。你每日有一次机会，可获得持续 5 分钟的 30 尺的{@sense 盲视}。"
+        ]
+      },
+      {
+        "ENG_name": "Dragon Tongue",
+        "name": "龙言",
+        "type": "entries",
+        "entries": [
+          "你可以说和理解龙语。你对黑龙进行的所有魅力检定都具有优势。"
+        ]
+      },
+      {
+        "ENG_name": "Legendary Resistance",
+        "name": "传奇抗性",
+        "type": "entries",
+        "entries": [
+          "（每日一次）你进行一次豁免检定失败时，可以选择将其改为豁免成功。"
+        ]
+      },
+      {
+        "ENG_name": "Water Breathing",
+        "name": "水下呼吸",
+        "type": "entries",
+        "entries": [
+          "你可以在水下呼吸。"
+        ]
+      }
+    ],
+    "translator": "不全书",
+    "valueReference": 200000,
+    "type": "W"
+  }
+]

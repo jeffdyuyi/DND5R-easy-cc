@@ -1,0 +1,21 @@
+{
+  "ENG_name": "School of Divination",
+  "name": "预言学派",
+  "shortName": "预言",
+  "source": "PHB",
+  "className": "法师",
+  "classSource": "PHB",
+  "page": 116,
+  "srd": true,
+  "basicRules": true,
+  "reprintedAs": [
+    "预言师|XPHB"
+  ],
+  "subclassFeatures": [
+    "预言专家|法师|PHB|预言|PHB|2",
+    "预兆|法师|PHB|预言|PHB|2",
+    "奥法复苏|法师|PHB|预言|PHB|6",
+    "第三只眼|法师|PHB|预言|PHB|10",
+    "高等预兆|法师|PHB|预言|PHB|14"
+  ]
+}

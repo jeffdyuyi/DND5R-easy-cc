@@ -1,0 +1,129 @@
+[
+  {
+    "name": "大地精",
+    "ENG_name": "Hobgoblin",
+    "source": "VGM",
+    "page": 119,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "con": 2,
+        "int": 1
+      }
+    ],
+    "darkvision": 60,
+    "traitTags": [
+      "怪物种族"
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "goblin": true
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Age",
+        "name": "年龄",
+        "type": "entries",
+        "entries": [
+          "大地精以与人类相同的速度成熟，且寿命长度与人类相仿。"
+        ]
+      },
+      {
+        "ENG_name": "Size",
+        "name": "体型",
+        "type": "entries",
+        "entries": [
+          "大地精身高在5至6尺之间，体重在150至200磅之间。你的体型为中型。"
+        ]
+      },
+      {
+        "ENG_name": "Darkvision",
+        "name": "黑暗视觉",
+        "entries": [
+          "你在60尺范围内的微光光照下视物视为明亮光照，60尺黑暗下视物视为微光光照。你无法在黑暗中分辨颜色，只能看到灰色轮廓。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Martial Training",
+        "name": "战争训练",
+        "entries": [
+          "你熟练使用两项你选择的{@filter 军用武器|items|source=PHB|category=基础|type=军用武器}以及轻甲。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Saving Face",
+        "name": "挽回颜面",
+        "entries": [
+          "大地精因为害怕失去地位，小心亦亦地不在盟友面前显示虚弱。如果你在一次攻击检定中失手、属性检定或豁免检定中失败了，你可以获得掷骰加值，此次加值的数值等同于你30尺内能见的友方数目（最大加值为+5）。此特性在你完成一次短休或长休前无法再次使用。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Languages",
+        "name": "语言",
+        "entries": [
+          "你可以说、读、写通用语和地精语。"
+        ],
+        "type": "entries"
+      }
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/VGM/Hobgoblin.webp"
+          },
+          "width": 420,
+          "height": 471
+        }
+      ]
+    },
+    "age": {
+      "mature": 20,
+      "max": 100
+    },
+    "armorProficiencies": [
+      {
+        "light": true
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "heightAndWeight": {
+      "baseHeight": 56,
+      "heightMod": "2d10",
+      "baseWeight": 110,
+      "weightMod": "2d4"
+    },
+    "otherSources": [
+      {
+        "source": "EGW",
+        "page": 175
+      }
+    ],
+    "reprintedAs": [
+      "大地精|MPMM"
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/hobgoblin.mp3"
+    },
+    "weaponProficiencies": [
+      {
+        "choose": {
+          "fromFilter": "type=军用武器|miscellaneous=平凡的",
+          "count": 2
+        }
+      }
+    ]
+  }
+]

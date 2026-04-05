@@ -1,0 +1,37 @@
+[
+  {
+    "ENG_name": "Badge of the Wayfarer",
+    "name": "旅人徽章",
+    "source": "GriffonsSaddlebag2",
+    "page": 40,
+    "tier": "次要",
+    "rarity": "rare",
+    "wondrous": true,
+    "entries": [
+      "这枚被制成枫叶形状的徽章上刻着一个瓷杯。佩戴此徽章期间，你可以花费1分钟背诵出其命令语，以使用此徽章施展{@spell 位面转移|PHB}法术。以此方式施法时，法术的目的地只能是位于星光位面中的旅人之憩——一座漂浮在众星之海中的传奇旅馆兼酒吧。旅馆没有通向外界的门，只能使用徽章进入。旅人之憩内部宽敞、舒适、奢华。它常常处于繁忙（尽管它很排外），但似乎总是有足够的房间和床位可供四处漂泊的冒险者小队使用。这家旅馆物价昂贵，生活开支为奢华，但其主要以支持以物品、信息和委托任务互相交易或换取宝藏而闻名。",
+      "任何传送到旅馆的生物都会在24小时后连同身上的物品被魔法性地传送回原来的位置。你也可以用徽章再次施放{@spell 位面转移|PHB}法术以提前返回原来的位置。从旅人之憩返回后，徽章直到7天后都无法再被使用。",
+      "徽章的命令语和用途都是严格保密的。对此徽章施展{@spell 鉴定术|PHB}只会揭示其具有魔法的事实，但{@spell 通晓传奇|PHB}可以揭示徽章的命令语和特性。"
+    ],
+    "attachedSpells": {
+      "other": [
+        "位面转移"
+      ]
+    },
+    "lootTables": [
+      "魔法物品表 G2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Badge-of-the-Wayfarer.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

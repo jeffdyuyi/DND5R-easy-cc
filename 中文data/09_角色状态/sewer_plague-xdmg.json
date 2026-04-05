@@ -1,0 +1,51 @@
+[
+  {
+    "name": "下水道瘟疫",
+    "ENG_name": "Sewer Plague",
+    "source": "XDMG",
+    "page": 61,
+    "entries": [
+      "污秽的药水和炼金废物可以产生下水道瘟疫：这种疫病在下水道和垃圾堆中滋生，并通过栖息在上述区域的生物传播，例如老鼠和食腐兽。任何被携带此疫病的生物伤到，或是接触了被此疫病污染的秽物或内脏的类人生物都必须成功通过一次{@dc 11} 的体质豁免，否则将被下水道瘟疫感染。染疫的生物会在感染 {@dice 1d4} 天之后开始承受以下效应：",
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Fatigue",
+            "name": "疲惫",
+            "type": "item",
+            "entry": "该生物获得1级{@condition 力竭|XPHB}。"
+          },
+          {
+            "ENG_name": "Weakness",
+            "name": "虚弱",
+            "type": "item",
+            "entry": "只要该生物具有任意来源的力竭等级，它在消耗生命骰恢复生命值时就只能恢复一半的生命值。"
+          },
+          {
+            "ENG_name": "Restlessness",
+            "name": "无休",
+            "type": "item",
+            "entry": "只要该生物具有任意来源的力竭等级， 它就不会因完成长休而恢复任何生命值、亦不会因此降低力竭等级。"
+          }
+        ]
+      },
+      {
+        "type": "entries",
+        "entries": [
+          {
+            "ENG_name": "Fighting the Contagion",
+            "name": "抵抗疫病",
+            "type": "entries",
+            "entries": [
+              "染疫的生物在每日黎明时都要进行一次{@dc 11} 的体质豁免。豁免失败则病情恶化，该生物获得1级{@condition 力竭|XPHB}。豁免成功则该生物降低1级力竭。若该生物的力竭等级降至0，则该生物康复。"
+            ]
+          }
+        ]
+      }
+    ],
+    "srd52": true,
+    "translator": "不全书",
+    "type": "Magical Contagion"
+  }
+]

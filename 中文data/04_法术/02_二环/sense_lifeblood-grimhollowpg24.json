@@ -1,0 +1,75 @@
+[
+  {
+    "ENG_name": "Sense Lifeblood",
+    "name": "感知生命能量",
+    "source": "GrimHollowPG24",
+    "page": 200,
+    "level": 2,
+    "school": "D",
+    "subschools": [
+      "血魔法"
+    ],
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "作为施展此法术的一部分，你必须消耗两个{@variantrule 生命值骰|XPHB}否则法术自动失败。生物体内流动的生命能量会告诉你它的秘密。对{@condition 力竭|XPHB}状态具有{@variantrule 免疫|XPHB}的生物对此法术{@variantrule 免疫|XPHB|免疫}。在法术持续期间，你可以判断所见生物是否有血缘关系。此外，你能知晓一个生物的{@variantrule 生命值|XPHB}是处于最大值、低于最大值、处于一半或低于一半。",
+      "在你的每个回合中，当你使用武器、{@variantrule 徒手打击|XPHB}或法术的攻击检定命中一个{@condition 浴血|XPHB}的生物时，你可以使目标受到额外的暗蚀伤害。要确定此伤害，掷骰施放法术时消耗的{@variantrule 生命值骰|XPHB}。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "你的{@status 专注|XPHB}可以通过3-4环法术位延长至1小时或5环及以上法术位延长至8小时。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "miscTags": [
+      "SGT"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Sense%20Lifeblood.webp"
+  }
+]

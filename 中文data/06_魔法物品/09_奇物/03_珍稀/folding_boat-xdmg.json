@@ -1,0 +1,72 @@
+[
+  {
+    "ENG_name": "Folding Boat",
+    "name": "折叠船",
+    "source": "XDMG",
+    "page": 263,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TDoN"
+    ],
+    "rarity": "rare",
+    "wondrous": true,
+    "weight": 4,
+    "entries": [
+      "该物件外观看起来是个长12寸，宽6寸，深6寸的木盒。它重4磅且能在水面上漂浮，也可以像普通木盒一样装东西。该物品有三个命令语，使用每道命令语都需要一个{@action 魔法|XPHB}动作：",
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "First Command Word",
+            "name": "第一命令语",
+            "type": "item",
+            "entries": [
+              "盒子展开为一艘划艇Rowboat。"
+            ]
+          },
+          {
+            "ENG_name": "Second Command Word",
+            "name": "第二命令语",
+            "type": "item",
+            "entries": [
+              "盒子展开为一艘龙骨船Keelboat。"
+            ]
+          },
+          {
+            "ENG_name": "Third Command Word",
+            "name": "第三命令语",
+            "type": "item",
+            "entries": [
+              "若船上没有生物，展开的折叠船则折叠回木盒形态。此时船内无法装入木盒中的物件会在折叠时留在外面，可以装入木盒的物件则会留在盒内。"
+            ]
+          }
+        ]
+      },
+      "木盒展开成船只时，它的重量也变为对应船只应有的重量。原本存放在木盒中的东西将留在船内。",
+      "{@item 划艇|XPHB}与{@item 龙骨船|XPHB}的数据见{@book 玩家手册|XPHB}。如果该物品在船形态下{@variantrule 生命值|XPHB}被降至0，则该物品被摧毁。"
+    ],
+    "lootTables": [
+      "奥秘 - 珍稀|XDMG",
+      "器具 - 珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Folding Boat.webp"
+          },
+          "width": 850,
+          "height": 406
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

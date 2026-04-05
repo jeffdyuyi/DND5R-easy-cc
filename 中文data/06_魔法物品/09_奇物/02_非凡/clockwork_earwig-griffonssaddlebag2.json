@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Clockwork Earwig",
+    "name": "发条耳蠼",
+    "source": "GriffonsSaddlebag2",
+    "page": 62,
+    "tier": "主要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这个1寸长的赤铜装置可以魔法性地盘绕并固定在你的耳侧，从而作为功能性的耳饰佩戴。你可以用一个动作来戴上或取下它。通过这种方式佩戴期间，该装置能够以魔法处理你听到的任何声音，为你提供以下增益：",
+      {
+        "type": "list",
+        "items": [
+          "你依赖听力进行的感知（{@skill 察觉}）检定具有优势。",
+          "你可以点按耳饰两次来录制至多1分钟的声音，期间可以再点按它两次来提前结束录制。你可以点按耳饰一次来在你的耳中播放录下的声音，再点按一次来提前停止播放。在播放期间长按耳饰会暂停播放，直至你松开手指为止。如果你录制一段新的声音，则先前的记录会被擦除。",
+          "你可以用一个动作说出耳饰的命令语，来从其中施放{@spell 通晓语言|PHB}法术。若你摘下耳饰，则法术会提前结束。耳饰的这项属性直到次日黎明前都无法再次使用。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "通晓语言"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表 F1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Clockwork-Earwig.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Seeking Smoke",
+    "name": "追踪烟",
+    "source": "ObojimaTallGrass",
+    "page": 222,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Com"
+    ],
+    "entries": [
+      "当你将此闪烁的液体投掷至30尺内一个你能看见的生物时，它会爆炸并释放出一团翻滚的烟雾。目标生物必须成功通过DC 12的敏捷豁免检定，否则将被烟雾斗篷覆盖1分钟。被烟雾覆盖的生物在尝试躲藏时进行的敏捷（{@skill 隐匿}）检定具有劣势。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 20|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Combat/seeking-smoke.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1991,
+          "height": 1991
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

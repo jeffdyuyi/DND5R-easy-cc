@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Eye Kite",
+    "name": "眼睛风筝",
+    "source": "ObojimaTallGrass",
+    "page": 170,
+    "rarity": "common",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这些独特的风筝可以塑造成章鱼、克莱恩或龙的形状。作为一个动作，在放飞风筝时，你可以透过它观察，就像一双从天空俯视的眼睛。通过风筝观察时，你将获得所有通常拥有的视觉增益，并且可以朝下看到所有方向。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/eye-kite.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 2706,
+          "height": 2706
+        }
+      ]
+    }
+  }
+]

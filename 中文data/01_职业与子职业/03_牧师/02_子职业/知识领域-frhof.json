@@ -1,0 +1,45 @@
+{
+  "ENG_name": "Knowledge Domain",
+  "name": "知识领域",
+  "shortName": "知识",
+  "source": "FRHoF",
+  "className": "牧师",
+  "classSource": "XPHB",
+  "page": 18,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "3": [
+          "命令术|XPHB",
+          "通晓语言|XPHB",
+          "侦测魔法|XPHB",
+          "侦测思想|XPHB",
+          "鉴定术|XPHB",
+          "心灵尖刺|XPHB"
+        ],
+        "5": [
+          "解除魔法|XPHB",
+          "回避侦测|XPHB",
+          "巧言术|XPHB"
+        ],
+        "7": [
+          "秘法眼|XPHB",
+          "放逐术|XPHB",
+          "困惑术|XPHB"
+        ],
+        "9": [
+          "通晓传奇|XPHB",
+          "探知术|XPHB",
+          "突触静止|XPHB"
+        ]
+      }
+    }
+  ],
+  "subclassFeatures": [
+    "知识领域|牧师|XPHB|知识|FRHoF|3|FRHoF",
+    "无拘心智|牧师|XPHB|知识|FRHoF|6|FRHoF",
+    "神圣预知|牧师|XPHB|知识|FRHoF|17|FRHoF"
+  ],
+  "hasFluffImages": true
+}

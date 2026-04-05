@@ -1,0 +1,207 @@
+[
+  {
+    "ENG_name": "Feathered Helm",
+    "name": "羽冠",
+    "source": "HumblewoodCampaignSetting",
+    "page": 213,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "这个头盔本身是由简单的皮革、兽皮、鳞片或金属板制成，但是赋予它的魔法来自羽毛。谦卑森林中的鸟族种族认为赠送一根羽毛是一个人可以给予的最高荣誉之一，它代表着永恒的纽带或深深的感激。",
+      "这个头盔有3次充能，当你佩戴它时，可以使用这些充能来激活它的能力。头盔具有不同的属性，这取决于赠送羽毛的鸟族种族。",
+      {
+        "ENG_name": "Corvum",
+        "name": "鸦族",
+        "type": "entries",
+        "entries": [
+          "你可以使用一次充能来施放{@spell 塔莎狂笑术}（豁免{@dc 16}）或使用二次充能来施放{@spell 侦测思想}（豁免{@dc 16}）。"
+        ]
+      },
+      {
+        "ENG_name": "Gallus",
+        "name": "雉族",
+        "type": "entries",
+        "entries": [
+          "你可以使用1次充能来施放{@spell 祝福术}法术，使用2次充能来施放{@spell 援助术}法术。"
+        ]
+      },
+      {
+        "ENG_name": "Luma",
+        "name": "鸽族",
+        "type": "entries",
+        "entries": [
+          "你可以消耗一个充能来施放一个随机的1环法术，该法术来自{@filter 术士法术列表|spells|level=1|class=术士}，然后掷一个{@dice d20}。如果是20，你可以再次使用这个能力而不消耗充能。如果是1，除非你是唯一的目标，否则法术也会以你为目标，如果是唯一的目标，则法术失效，没有任何效果。使用这个头盔施放的任何需要豁免的法术，豁免DC为16。"
+        ]
+      },
+      {
+        "ENG_name": "Raptor",
+        "name": "隼族",
+        "type": "entries",
+        "entries": [
+          "你可以使用一次充能来施放{@spell 猎人印记}，使用两次充能来施放{@spell 魔化武器}。"
+        ]
+      },
+      {
+        "ENG_name": "Strig",
+        "name": "鸮族",
+        "type": "entries",
+        "entries": [
+          "你可以使用1次充能来施放{@spell 神恩}法术，使用2次充能来施放{@spell 行动无踪}法术。"
+        ]
+      },
+      "这个头盔每天黎明时分恢复{@dice 1d3}次充能。",
+      {
+        "ENG_name": "A True Gift",
+        "name": "真挚的礼物",
+        "type": "inset",
+        "entries": [
+          "无论你是在玩谦卑森林的冒险，还是在森林中进行你自己的战役，都要寻找角色与鸟族种族之间的有机关系。如果有一个特别突出，用它来决定在这个头盔中向玩家提供什么类型的羽毛。",
+          "此外，如果玩家的角色是鸟族，他们可能也想自己制作这份礼物。确保在这个角色和他们分享羽毛的对象之间创造一个叙事纽带——赠送羽毛的礼物不应该轻易给出。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "祝福术",
+          "神恩",
+          "猎人印记",
+          "塔莎狂笑术"
+        ],
+        "2": [
+          "援助术",
+          "侦测思想",
+          "魔化武器",
+          "行动无踪"
+        ]
+      }
+    },
+    "hasFluffImages": true,
+    "foundryActivities": [
+      {
+        "ENG_name": "Tasha's Hideous Laughter",
+        "name": "塔莎狂笑术",
+        "consumption.targets": [
+          {
+            "type": "itemUses",
+            "value": 1
+          }
+        ],
+        "spell": {
+          "challenge": {
+            "override": true,
+            "save": 16
+          },
+          "uuid": "{!@ $.item[1].foundryActivities[0].spell.uuid.0}"
+        },
+        "type": "cast"
+      },
+      {
+        "ENG_name": "Detect Thoughts",
+        "name": "侦测思想",
+        "consumption.targets": [
+          {
+            "type": "itemUses",
+            "value": 2
+          }
+        ],
+        "spell": {
+          "challenge": {
+            "override": true,
+            "save": 16
+          },
+          "uuid": "{!@ $.item[1].foundryActivities[1].spell.uuid.0}"
+        },
+        "type": "cast"
+      },
+      {
+        "ENG_name": "Bless",
+        "consumption.targets": [
+          {
+            "type": "itemUses",
+            "value": 1
+          }
+        ],
+        "name": "祝福术",
+        "spell.uuid": "@spell[祝福术]",
+        "type": "cast"
+      },
+      {
+        "ENG_name": "Aid",
+        "consumption.targets": [
+          {
+            "type": "itemUses",
+            "value": 2
+          }
+        ],
+        "name": "援助术",
+        "spell.uuid": "@spell[援助术]",
+        "type": "cast"
+      },
+      {
+        "ENG_name": "Luma",
+        "name": "鸽族",
+        "consumption.targets": [
+          {
+            "type": "itemUses",
+            "value": 1
+          }
+        ],
+        "roll.formula": "d20",
+        "type": "utility"
+      },
+      {
+        "ENG_name": "Hunter's Mark",
+        "name": "猎人印记",
+        "consumption.targets": [
+          {
+            "type": "itemUses",
+            "value": 1
+          }
+        ],
+        "spell.uuid": "@spell[猎人印记]",
+        "type": "cast"
+      },
+      {
+        "ENG_name": "Magic Weapon",
+        "name": "魔化武器",
+        "consumption.targets": [
+          {
+            "type": "itemUses",
+            "value": 2
+          }
+        ],
+        "spell.uuid": "@spell[魔化武器]",
+        "type": "cast"
+      },
+      {
+        "ENG_name": "Divine Favor",
+        "name": "神恩",
+        "consumption.targets": [
+          {
+            "type": "itemUses",
+            "value": 1
+          }
+        ],
+        "spell.uuid": "@spell[神恩]",
+        "type": "cast"
+      },
+      {
+        "ENG_name": "Pass without Trace",
+        "name": "行动无踪",
+        "consumption.targets": [
+          {
+            "type": "itemUses",
+            "value": 2
+          }
+        ],
+        "spell.uuid": "@spell[行动无踪]",
+        "type": "cast"
+      }
+    ]
+  }
+]

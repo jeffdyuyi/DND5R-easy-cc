@@ -1,0 +1,135 @@
+[
+  {
+    "name": "影灵",
+    "ENG_name": "Shadar-Kai",
+    "source": "MPMM",
+    "page": 31,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "darkvision": 60,
+    "resist": [
+      "暗蚀"
+    ],
+    "traitTags": [
+      "修整强化",
+      "工具熟练",
+      "武器熟练"
+    ],
+    "skillProficiencies": [
+      {
+        "perception": true
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Creature Type",
+        "name": "生物类型",
+        "type": "entries",
+        "entries": [
+          "你是类人生物。如果有任何先决条件或效果需要你作为一个精灵，你也被视作精灵。"
+        ]
+      },
+      {
+        "ENG_name": "Blessing of the Raven Queen",
+        "name": "鸦后祝福",
+        "type": "entries",
+        "entries": [
+          "用一个附赠动作，你可以魔法地传送到一处30尺内且未被占据的可见空间。你可以使用该特质的次数等于你的熟练加值，当你完成一次长休后，你重新获得所有消耗的次数。",
+          "从3级开始，当你使用此特性传送时，你还会获得所有伤害的抗性。该抗性持续到你的下个回合开始。在此期间，你呈现幽灵般的半透明状。"
+        ]
+      },
+      {
+        "ENG_name": "Darkvision",
+        "name": "黑暗视觉",
+        "type": "entries",
+        "entries": [
+          "在微光光照下，你身边60尺内可以视为等同于明亮光照。而在黑暗中，该范围内可视为等同于微光光照。你无法在黑暗中分辨颜色，只能看到有灰度的黑白画面。"
+        ]
+      },
+      {
+        "ENG_name": "Fey Ancestry",
+        "name": "妖精血统",
+        "type": "entries",
+        "entries": [
+          "你在为自己避免或结束{@condition 魅惑}状态的豁免检定时具有优势。"
+        ]
+      },
+      {
+        "ENG_name": "Keen Senses",
+        "name": "敏锐感官",
+        "type": "entries",
+        "entries": [
+          "你拥有{@skill 察觉}技能的熟练项。"
+        ]
+      },
+      {
+        "ENG_name": "Necrotic Resistance",
+        "name": "暗蚀抗性",
+        "type": "entries",
+        "entries": [
+          "你具有暗蚀抗性。"
+        ]
+      },
+      {
+        "ENG_name": "Trance",
+        "name": "出神",
+        "type": "entries",
+        "entries": [
+          "你不需要睡眠，并且不会因魔法效应而陷入睡眠。你能够以4小时的时间完成长休，前提是如果你将这些时间花在一次出神冥想中，在此期间你保留意识。",
+          "当你结束这段出神时，你能够获得两项你未拥有的熟练项，其中每一项都是你从《玩家手册》中选择的一个{@book 武器|PHB|5|武器}或一个{@book 工具|PHB|5|工具}。你通过抽取精灵共有记忆来神秘的获得这些熟练项，并且你保留他们直到你完成下次长休。"
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "entries": [
+                {
+                  "ENG_name": "Elves of Many Realms",
+                  "name": "诸国度的精灵",
+                  "type": "inset",
+                  "page": 30,
+                  "entries": [
+                    "由神祇{@deity 柯瑞隆·拉瑞斯安|精灵|MTF|柯瑞隆}创造的最初的精灵们乃是精类生物，他们在各个存在位面上嬉戏，随心所欲地变换自己的肉体形态。在壮丽的阿梵多之外，他们钟情于妖精荒野——一处激情洋溢的国度。当精灵们因为与父神的对手{@deity 罗丝|卓尔|MTF}密谋而被从{@deity 柯瑞隆·拉瑞斯安|精灵|MTF|科瑞隆的}的存在中流放后，便逃到了那片光辉的乐土。而正是在那里，他们从精类生物变成了类人生物，失去了随意改变形体的能力。之后，每当他们回想起自己失去之物时，他们常常以泪洗面，妖精荒野的影响也让他们的悲伤变得更加深刻。但同样在妖精荒野，他们也发现了固定形态的潜在乐趣。在断绝了{@deity 罗丝|卓尔|MTF|罗丝的}的背叛行径后，他们重拾了希望。",
+                    "绝大多数精灵最终从妖精荒野传播到其他世界，在流浪的渴望和好奇心的驱使下，他们的足迹遍布多元宇宙。在那些其他世界中，精灵们发展出了现在与他们相关的物理形态。由于他们原本的易变本性，每个精灵群体都神秘地呈现出与他们所联结的环境相关的特征，无论是森林（{@race 精灵 (木)|PHB|木精灵}）、物质位面的妖精通道（{@race 精灵 (高等)|PHB|高等精灵}）、幽暗地域（{@race 精灵 (卓尔)|PHB|卓尔}）、堕影冥界（{@race 影灵|MPMM}）、妖精荒野（{@race 雅灵|MPMM}）还是海洋（{@race 海精灵|MPMM|海精灵}）。",
+                    "在一些地方，{@deity 柯瑞隆·拉瑞斯安|精灵|MTF|柯瑞隆}已经从精灵们的记忆中消失淡去，但父神的血液仍然在他们体内流淌不息，即便他们对其来源一无所知。正是的血液令他们在和特定环境相联系数个世纪后产生了进化，因此其他种类的精灵出现只是时间的问题。"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/MPMM/Shadar-kai.webp"
+          },
+          "credit": "Eric Belisle, Mark Molnar",
+          "width": 1659,
+          "height": 1700
+        }
+      ]
+    },
+    "age": {
+      "max": 750
+    },
+    "creatureTypeTags": [
+      "精灵"
+    ],
+    "creatureTypes": [
+      "类人"
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "lineage": "VRGR"
+  }
+]

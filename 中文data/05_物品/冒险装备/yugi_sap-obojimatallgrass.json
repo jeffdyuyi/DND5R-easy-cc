@@ -1,0 +1,52 @@
+[
+  {
+    "ENG_name": "Yugi Sap",
+    "name": "Yugi削弱",
+    "source": "ObojimaTallGrass",
+    "page": 209,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 0|large}|SneakerProMedium}",
+            "{@font {@style 4|large}|SneakerProMedium}",
+            "{@font {@style 2|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "虽然Yugi削弱通常可以从各种种族的树木中渗出，但它并非自然形成的材质。精魄谁退入树中会对它产生转变效应。叶子可能会以不同的形状或颜色生长，或者可能会出现一个令人眼花缭乱的新水果。然而，每棵被精魄栖息的树都会产生Yugi削弱。这种混乱粘粘的材质常被用作甜味剂。然而，一些精明的手艺人知道用它创造强格拉斯般容器的秘密。"
+    ],
+    "lootTables": [
+      "狂风农田普通原料|ObojimaTallGrass",
+      "舒里塔希的赠礼 普通原料|ObojimaTallGrass",
+      "阿伯拉山普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/yugi-sap.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 3580,
+          "height": 3580
+        }
+      ]
+    }
+  }
+]

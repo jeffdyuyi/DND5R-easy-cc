@@ -1,0 +1,114 @@
+{
+  "ENG_name": "Soulknife",
+  "name": "魂刃",
+  "shortName": "魂刃",
+  "source": "XPHB",
+  "className": "游荡者",
+  "classSource": "XPHB",
+  "page": 135,
+  "edition": "one",
+  "subclassTableGroups": [
+    {
+      "subclasses": [
+        {
+          "ENG_name": "Soulknife",
+          "name": "魂刃",
+          "source": "XPHB"
+        }
+      ],
+      "colLabels": [
+        "{@tip 骰子大小|魂刃灵能骰大小}",
+        "{@tip 数值|魂刃灵能骰数值}"
+      ],
+      "rows": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          "{@dice D6}",
+          4
+        ],
+        [
+          "{@dice D6}",
+          4
+        ],
+        [
+          "{@dice D8}",
+          6
+        ],
+        [
+          "{@dice D8}",
+          6
+        ],
+        [
+          "{@dice D8}",
+          6
+        ],
+        [
+          "{@dice D8}",
+          6
+        ],
+        [
+          "{@dice D8}",
+          8
+        ],
+        [
+          "{@dice D8}",
+          8
+        ],
+        [
+          "{@dice D10}",
+          8
+        ],
+        [
+          "{@dice D10}",
+          8
+        ],
+        [
+          "{@dice D10}",
+          10
+        ],
+        [
+          "{@dice D10}",
+          10
+        ],
+        [
+          "{@dice D10}",
+          10
+        ],
+        [
+          "{@dice D10}",
+          10
+        ],
+        [
+          "{@dice D12}",
+          12
+        ],
+        [
+          "{@dice D12}",
+          12
+        ],
+        [
+          "{@dice D12}",
+          12
+        ],
+        [
+          "{@dice D12}",
+          12
+        ]
+      ]
+    }
+  ],
+  "subclassFeatures": [
+    "魂刃|游荡者|XPHB|魂刃|XPHB|3",
+    "灵魂之刃|游荡者|XPHB|魂刃|XPHB|9",
+    "灵能面纱|游荡者|XPHB|魂刃|XPHB|13",
+    "撕裂心智|游荡者|XPHB|魂刃|XPHB|17"
+  ],
+  "hasFluffImages": true
+}

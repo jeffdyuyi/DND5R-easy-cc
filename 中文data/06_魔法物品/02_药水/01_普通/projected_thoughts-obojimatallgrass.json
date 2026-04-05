@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Projected Thoughts",
+    "name": "投射思维",
+    "source": "ObojimaTallGrass",
+    "page": 239,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "当你饮用这杯粗糙的药水时，一个直径1英尺的气泡会从你的头部顶端浮现。气泡持续1小时并随你移动，始终以你为中心。在此效应结束前，你可以选择将你的思维投射到气泡中，在那里它们会显现为虚幻但无声的文字或图像（由你选择），任何人都可以看到。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 2|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/projected-thoughts.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1426,
+          "height": 1426
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

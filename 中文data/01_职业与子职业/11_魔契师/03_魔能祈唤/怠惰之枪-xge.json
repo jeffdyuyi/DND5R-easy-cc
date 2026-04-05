@@ -1,0 +1,20 @@
+{
+  "ENG_name": "Lance of Lethargy",
+  "name": "怠惰之枪",
+  "source": "XGE",
+  "page": 57,
+  "featureType": [
+    "EI"
+  ],
+  "prerequisite": [
+    {
+      "spell": [
+        "魔能爆#c"
+      ]
+    }
+  ],
+  "entries": [
+    "每个你的回合一次，当你用{@spell 魔能爆}击中一个生物时，你可以让此生物直线向你移动10尺。"
+  ],
+  "translator": "不全书"
+}

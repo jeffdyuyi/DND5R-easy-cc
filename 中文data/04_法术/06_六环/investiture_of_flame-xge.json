@@ -1,0 +1,88 @@
+[
+  {
+    "ENG_name": "Investiture of Flame",
+    "name": "炽焰赋权",
+    "source": "XGE",
+    "page": 159,
+    "otherSources": [
+      {
+        "source": "EEPC",
+        "page": 19
+      }
+    ],
+    "referenceSources": [
+      "PotA"
+    ],
+    "level": 6,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "火焰环绕着你的身体，照亮周围 30 尺半径的区域，并在外围 30 尺范围内产生微弱的亮光。这些火焰不会伤害到你。直到此法术终结，你得到如下的好处：",
+      {
+        "type": "list",
+        "items": [
+          "你免疫于火焰伤害并对寒冷伤害具有抗性。",
+          "任何在回合中第一次进入你周围 5 尺范围之内，或是在你周围 5 尺范围之内结束回合的生物受到{@damage 1d10}火焰伤害。",
+          "你可以使用你的动作以创造出一条以你为起始点，向由你选择的方向延伸的 15 尺长、5 尺宽的火线。在线中的每个生物都必须进行一次敏捷豁免检定。豁免失败的生物受到{@damage 4d8}火焰伤害，豁免成功者受到上述伤害的一半。"
+        ]
+      }
+    ],
+    "damageResist": [
+      "寒冷"
+    ],
+    "damageImmune": [
+      "火焰"
+    ],
+    "damageInflict": [
+      "fire"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "miscTags": [
+      "LGT"
+    ],
+    "areaTags": [
+      "L"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊",
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "变化系",
+    "display_savingThrow": [
+      "敏捷"
+    ],
+    "display_damageInflict": [
+      "火焰"
+    ]
+  }
+]

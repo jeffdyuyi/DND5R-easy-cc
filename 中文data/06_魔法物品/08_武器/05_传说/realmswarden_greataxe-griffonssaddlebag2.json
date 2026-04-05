@@ -1,0 +1,54 @@
+[
+  {
+    "ENG_name": "Realmswarden Greataxe",
+    "name": "国度守护者巨斧",
+    "source": "GriffonsSaddlebag2",
+    "page": 142,
+    "baseItem": "巨斧|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "legendary",
+    "reqAttune": true,
+    "weight": 7,
+    "weaponCategory": "军用",
+    "property": [
+      "H",
+      "2H"
+    ],
+    "dmg1": "1d12",
+    "dmgType": "O",
+    "bonusWeapon": "+3",
+    "entries": [
+      "这柄远古岩石战斧的斧柄上刻印着复杂的纹路。斧柄中央有一处凹槽，凹槽内镶嵌着一颗无瑕的钻石——它魔法性地悬浮于凹槽之中，散发着神秘奇异的能量。持握斧柄期间，你可以用一个附赠动作令一道由纯澈虹彩射线构成的斧刃从斧柄头部处出现或消失。斧刃会散发15尺半径的明亮光照以及额外15尺的微光光照。",
+      "你使用这把魔法武器进行的攻击检定和伤害掷骰具有 +3 加值，且其造成力场伤害而非挥砍伤害。当你用此武器命中异怪或亡灵时，目标将额外受到{@damage 1d12}光耀伤害。",
+      "斧刃存在期间，使用者可以用一个附赠动作将明亮光照与微光光照的半径各增加或减少5尺。光照最大不超过30尺，最小不低于10尺。",
+      "斧心的钻石散发出构成斧刃的光芒可被锻造成强大的毁灭性符文。使用者可以花费1分钟时间，以斧心钻石为起点在斧面镌刻符文，以此重现法术{@spell 徽记术}的效果（豁免DC 17），但有以下不同：",
+      {
+        "type": "list",
+        "items": [
+          "你作为该法术部分创造的刻文存在于战斧上并随之移动。",
+          "仅当你用此战斧命中生物时方可触发刻文。一旦该生物进行对抗刻文效应的豁免检定，法术即终止。",
+          "该法术仅对触发刻文的目标生效。",
+          "异怪与亡灵为对抗该法术的效应而进行的豁免检定具有劣势。"
+        ]
+      },
+      "这项战斧的属性一经使用，必须经过12小时才能再次使用。同一时间斧心上只能刻印有一个刻文。"
+    ],
+    "lootTables": [
+      "魔法物品表I|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Realmswarden-Greataxe.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

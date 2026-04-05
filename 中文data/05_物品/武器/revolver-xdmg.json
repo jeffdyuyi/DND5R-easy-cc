@@ -1,0 +1,29 @@
+[
+  {
+    "name": "左轮枪",
+    "ENG_name": "Revolver",
+    "source": "XDMG",
+    "page": 73,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "none",
+    "weight": 3,
+    "valueRarity": "珍稀",
+    "weaponCategory": "martial",
+    "property": [
+      "AF|XDMG",
+      "RLD|XDMG"
+    ],
+    "mastery": [
+      "削弱|XPHB"
+    ],
+    "dmg1": "2d8",
+    "dmgType": "P",
+    "range": "40/120",
+    "ammoType": "枪械子弹|XPHB",
+    "age": "现代",
+    "firearm": true,
+    "reload": 6,
+    "weapon": true
+  }
+]

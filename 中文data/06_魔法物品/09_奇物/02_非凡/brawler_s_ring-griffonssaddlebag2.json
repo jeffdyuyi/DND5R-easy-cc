@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Brawler's Ring",
+    "name": "斗殴者之戒",
+    "source": "GriffonsSaddlebag2",
+    "page": 52,
+    "type": "RG|DMG",
+    "tier": "次要",
+    "rarity": "uncommon",
+    "entries": [
+      "这枚黄铜戒指的金属上有几处裂缝，里面填满了翡翠。戴着这枚戒指期间，你的徒手打击在命中时造成等同于{@dice 1d4} + 你的力量调整值的钝击伤害。"
+    ],
+    "lootTables": [
+      "魔法物品表 B2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Brawlers-Ring.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

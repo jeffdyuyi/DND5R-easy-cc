@@ -1,0 +1,33 @@
+[
+  {
+    "ENG_name": "Black Dragon Scale Mail",
+    "name": "黑龙鳞甲",
+    "source": "DMG",
+    "page": 165,
+    "srd": true,
+    "reprintedAs": [
+      "黑龙鳞甲|XDMG"
+    ],
+    "type": "MA",
+    "resist": [
+      "强酸"
+    ],
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "weight": 45,
+    "ac": 14,
+    "bonusAc": "+1",
+    "stealth": true,
+    "entries": [
+      "龙鳞甲是以某一种龙的鳞片制成的护甲。有时候龙会收集自己褪下的鳞片并赠送给类人生物。其他时候，猎人们会小心地剥下并保存死去龙类的皮。无论哪种情况，龙鳞甲都是非常珍贵的物品。着装该护甲期间，你的AC获得+1加值，为对抗龙类的骇人威仪特性与吐息武器时所作豁免具有优势，并且你获得对强酸伤害的抗性。",
+      "另外，你还可以用一个动作集中精神来魔法感知距你最近，且在你周边30里以内的黑龙，并得知其相对于你的方向与距离。这一特殊动作一经使用，直至次日黎明前都无法被再度使用。"
+    ],
+    "valueReference": 40000,
+    "otherSources": [
+      {
+        "source": "XDMG"
+      }
+    ]
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "ENG_name": "Searing Smite",
+    "name": "炽焰斩",
+    "source": "PHB",
+    "page": 274,
+    "reprintedAs": [
+      "炽焰斩|XPHB"
+    ],
+    "level": 1,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你在法术持续时间内下一次用近战武器攻击命中某个生物时将在武器上闪现出白热的光芒。该攻击对目标造成额外的 {@damage 1d6} 点火焰伤害，并点燃目标。直至法术终止前，目标在自己每一回合开始时都要进行一次体质豁免。豁免失败则受到 {@damage 1d6} 点火焰伤害。豁免成功则法术终止。如果目标或其身边 5 尺内的另一个生物用一个动作来扑灭其身上的火焰，或有其他某种效果熄灭了火焰（例如目标跳入水中），则法术终止。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "使用二环或更高法术位施展该法术时，你使用的法术位每比一环高一环，最初一次攻击造成的额外伤害就增加{@scaledamage 1d6|1-9|1d6}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "fire"
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "miscTags": [
+      "AAD"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "圣武士",
+      "游侠"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "体质"
+    ],
+    "display_damageInflict": [
+      "火焰"
+    ]
+  }
+]

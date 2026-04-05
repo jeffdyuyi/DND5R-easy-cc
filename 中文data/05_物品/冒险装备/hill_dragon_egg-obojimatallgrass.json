@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Hill Dragon Egg",
+    "name": "丘陵龙蛋",
+    "source": "ObojimaTallGrass",
+    "page": 204,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 9|large}|SneakerProMedium}",
+            "{@font {@style 3|large}|SneakerProMedium}",
+            "{@font {@style 8|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "看起来像南瓜大小的橡果，丘陵龙蛋可以在地下休眠一年或更久才会孵化。丘陵龙蛋通常被埋藏在视线之外，但某些花朵喜欢在埋葬陷坑周围生长，从而暴露它们的位置，而且可以训练寻蛋猪嗅出它们。丘陵龙不以强大的母性本能著称，它们会在胧忆岛的平原、山谷和起伏的群山中各处产下蛋。"
+    ],
+    "lootTables": [
+      "狂风农田普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/hill-dragon-egg.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 3913,
+          "height": 3913
+        }
+      ]
+    }
+  }
+]

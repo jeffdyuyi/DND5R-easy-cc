@@ -1,0 +1,66 @@
+[
+  {
+    "ENG_name": "Mass Heal",
+    "name": "群体医疗术",
+    "source": "PHB",
+    "page": 258,
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "群体医疗术|XPHB"
+    ],
+    "level": 9,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "泉涌般的治愈能量从你流向你周围受伤的生物。你为施法距离内任意数量你能看见的生物恢复总计至多 700 点生命值，而具体治疗量则由你随意分配。受该法术所治疗的生物其所有疾病以及导致它们{@condition 目盲}或{@condition 耳聋}的效应也一并被治愈。该法术对不死生物和构装生物无效。"
+    ],
+    "affectsCreatureType": [
+      "异怪",
+      "野兽",
+      "天族",
+      "龙",
+      "元素",
+      "妖精",
+      "邪魔",
+      "巨人",
+      "类人",
+      "怪兽",
+      "泥怪",
+      "植物"
+    ],
+    "miscTags": [
+      "HL",
+      "SGT"
+    ],
+    "areaTags": [
+      "MT"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师"
+    ],
+    "display_school": "塑能系"
+  }
+]

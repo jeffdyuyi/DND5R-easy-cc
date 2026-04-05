@@ -1,0 +1,23 @@
+[
+  {
+    "name": "吊桶",
+    "ENG_name": "Bucket",
+    "source": "XPHB",
+    "page": 224,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 5,
+    "entries": [
+      "一个吊桶能装入至多半立方尺的东西。"
+    ],
+    "basicRules2024": true,
+    "containerCapacity": {
+      "volume": [
+        0.5
+      ]
+    },
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

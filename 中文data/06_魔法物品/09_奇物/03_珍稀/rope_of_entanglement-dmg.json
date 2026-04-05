@@ -1,0 +1,43 @@
+[
+  {
+    "ENG_name": "Rope of Entanglement",
+    "name": "纠缠绳",
+    "source": "DMG",
+    "page": 197,
+    "srd": true,
+    "referenceSources": [
+      "KftGV"
+    ],
+    "reprintedAs": [
+      "纠缠绳|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "rare",
+    "wondrous": true,
+    "weight": 3,
+    "entries": [
+      "这条绳索长30尺，重3磅。如果你握住绳索的一端并用一个动作说出命令语，绳索的另一端将疾速飞出去，纠缠住你周围20尺内一名你能看见的生物。该生物必须成功通过一次{@dc 15}的敏捷豁免，豁免失败将被{@condition 束缚}。",
+      "你可以用附赠动作说出另一条命令语以释放被束缚的生物。被绳索{@condition 束缚}的目标可以用一个动作进行一次{@dc 15}的力量检定或敏捷检定（由目标选择）。若检定成功，该生物将不再被绳索{@condition 束缚}。",
+      "绳索拥有AC 20和20点生命值。只要绳索还剩至少1点生命值，其就会每5分钟恢复1点生命值。如果绳索的生命值降至0，则它被摧毁。"
+    ],
+    "lootTables": [
+      "魔法物品表G"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Rope of Entanglement.webp"
+          },
+          "width": 743,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

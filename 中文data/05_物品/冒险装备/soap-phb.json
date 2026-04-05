@@ -1,0 +1,17 @@
+[
+  {
+    "name": "肥皂",
+    "ENG_name": "Soap",
+    "source": "PHB",
+    "page": 150,
+    "type": "G",
+    "rarity": "none",
+    "value": 2,
+    "basicRules": true,
+    "referenceSources": [
+      "WDH"
+    ],
+    "srd": true,
+    "translator": "不全书"
+  }
+]

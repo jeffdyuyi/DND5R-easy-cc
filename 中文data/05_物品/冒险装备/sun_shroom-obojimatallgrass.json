@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Sun Shroom",
+    "name": "太阳菇",
+    "source": "ObojimaTallGrass",
+    "page": 214,
+    "type": "Ingred",
+    "rarity": "uncommon",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 13|large}|SneakerProMedium}",
+            "{@font {@style 16|large}|SneakerProMedium}",
+            "{@font {@style 14|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "由被称为无眠者卡洛格林（Karoglin the Sleepless）的法师发现，太阳菇能让食用者在长时间内保持清醒。过度使用会导致长时间的失控狂笑，并最终陷入深度的反侧难眠。太阳菇有一种咸味，最常见的食用方式是将其混入茶中。太阳菇倾向于生长在流浪森林树木的根部附近，这一事实使一些人推测，正是这些充满能量的蘑菇让树木保持移动。"
+    ],
+    "lootTables": [
+      "狂风农田非普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/sun-shroom.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 1876,
+          "height": 1876
+        }
+      ]
+    }
+  }
+]

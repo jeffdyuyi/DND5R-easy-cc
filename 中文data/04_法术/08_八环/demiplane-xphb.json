@@ -1,0 +1,54 @@
+[
+  {
+    "ENG_name": "Demiplane",
+    "name": "半位面",
+    "source": "XPHB",
+    "page": 261,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 8,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你在施法距离内你可见的一处平坦固体表面上创造一扇中型的通向半位面的虚幻门。这扇门可以被关闭和开启。半位面是一间各边均长 30 尺，木质或石质（由你选择）的空房间。",
+      "法术终止时，门消失不见，任何仍然位于半位面中的物件会留在内部。任何仍然位于半位面中的生物也会留在那里，除非他们选择在门消失的时候被抛出，在距门先前占据的空间中最近的未占空间中落地，陷入{@condition 倒地|XPHB}状态。",
+      "你每次施展此法术时都可以创造一个新的半位面，也可以将门连向你先前用此法术创造的半位面。此外，如果你知晓了某个其他生物用此法术创造的半位面的本质和内容物，则你也可以通过此法术连接到那里。"
+    ],
+    "miscTags": [
+      "OBJ",
+      "PRM",
+      "SGT"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "咒法系"
+  }
+]

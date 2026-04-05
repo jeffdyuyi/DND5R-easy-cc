@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Iron Mind",
+    "name": "钢铁意志",
+    "source": "ObojimaTallGrass",
+    "page": 224,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Com"
+    ],
+    "entries": [
+      "饮下这瓶灵药后，你的双眼会闪烁银蓝色的光芒。在1小时内，你在对抗{@condition 魅惑}状态的豁免检定中获得优势，并获得对心灵伤害的抗性。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 30|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Combat/iron-mind.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1714,
+          "height": 1714
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

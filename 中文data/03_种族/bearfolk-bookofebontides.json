@@ -1,0 +1,185 @@
+{
+  "race": [
+    {
+      "ENG_name": "Bearfolk",
+      "name": "熊民",
+      "source": "BookOfEbonTides",
+      "page": 22,
+      "size": [
+        "M"
+      ],
+      "speed": 30,
+      "ability": [
+        {
+          "str": 2
+        }
+      ],
+      "traitTags": [
+        "天生护甲",
+        "天生武器",
+        "强力构筑"
+      ],
+      "skillProficiencies": [
+        {
+          "athletics": true,
+          "perception": true
+        }
+      ],
+      "languageProficiencies": [
+        {
+          "common": true,
+          "other": true
+        }
+      ],
+      "entries": [
+        {
+          "ENG_name": "Age",
+          "name": "年龄",
+          "type": "entries",
+          "entries": [
+            "熊民在十几岁后期成年，寿命约为80年。"
+          ]
+        },
+        {
+          "ENG_name": "Alignment",
+          "name": "阵营",
+          "type": "entries",
+          "entries": [
+            "熊民大多是善良的，不信任并避开邪恶。虽然他们有着丰富的传统，但他们珍视自由，倾向于混乱阵营。"
+          ]
+        },
+        {
+          "ENG_name": "Bite",
+          "name": "啃咬",
+          "type": "entries",
+          "entries": [
+            "你的强颚是天生武器，可以用来进行徒手打击。如果命中，你将造成{@damage 1d6}加上你的力量调整值的穿刺伤害。"
+          ]
+        },
+        {
+          "ENG_name": "Natural Armor",
+          "name": "天生护甲",
+          "type": "entries",
+          "entries": [
+            "你的毛皮厚实而健壮，使你获得13 + 你的敏捷调整值的天生护甲等级。"
+          ]
+        },
+        {
+          "ENG_name": "Powerful Build",
+          "name": "强力构筑",
+          "type": "entries",
+          "entries": [
+            "在决定你的载重、和你可以推、拉及抬的重量时，你视作为体型大一级的生物。"
+          ]
+        },
+        {
+          "ENG_name": "Ursine Talent",
+          "name": "熊族天赋",
+          "type": "entries",
+          "entries": [
+            "你在{@skill 运动}（运动）和{@skill 察觉}（感知）技能上具有熟练。"
+          ]
+        },
+        {
+          "ENG_name": "Languages",
+          "name": "语言",
+          "type": "entries",
+          "entries": [
+            "你可以说、读和写通用语（如果你来自凡人土地）或阴影语（如果原生于幽影领域）。"
+          ]
+        }
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "subraces": [
+        {
+          "ENG_name": "Shadowborn",
+          "name": "影裔",
+          "source": "BookOfEbonTides",
+          "page": 22,
+          "ability": [
+            {
+              "dex": 1
+            }
+          ],
+          "entries": [
+            {
+              "ENG_name": "Cloak of Night",
+              "name": "夜之斗篷",
+              "type": "entries",
+              "entries": [
+                "处于{@quickref 视野与光照||2||微光光照}或黑暗时，你在敏捷（{@skill 隐匿}）检定上具有优势，并能以附赠动作执行{@action 躲藏}动作。"
+              ]
+            },
+            {
+              "ENG_name": "Darkvision",
+              "name": "黑暗视觉",
+              "type": "entries",
+              "entries": [
+                "你可以在60尺内的{@quickref 视野与光照||2||微光光照}中视物如同{@quickref 视野与光照||2||明亮光照}，在黑暗中视物如同{@quickref 视野与光照||2||微光光照}。你在黑暗中无法分辨颜色，只能看到灰色阴影。"
+              ]
+            }
+          ],
+          "hasFluff": true,
+          "hasFluffImages": true
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "所有熊民都拥有与生俱来的钢铁意志，但那些以幽影位面为家的熊民更是如此。来自月光林隙的熊民因充满危险的生活而变得坚强——他们不断与暗影腐化战斗。只有通过紧密团结在致力于实现崇高目标的社区中，熊民才奇迹般地继续繁荣发展。",
+          "自从熊王Mesikämmen颁布了他那决定性的法令后，熊民便作为光源在幽影国度中战斗。虽然该区域对即使是最有能力的旅行者来说也是致命的，但熊民们已经开辟出了由德鲁伊魔法守护的安全地带。",
+          "来之不易的感知教会了熊民抵抗和净化暗影腐化的秘密。随着他们几个世纪以来驱散黑暗术的任务不断增长，一代又一代的熊民在幽影位面出生。他们停留的时间越长，每一代新熊民中展现出塑造周围黑暗术天赋法力的人就越多。",
+          {
+            "ENG_name": "Bearfolk Names",
+            "name": "熊民的名字",
+            "type": "entries",
+            "entries": [
+              "熊民的双亲会给他们起幼崽的名字，当他们成年时，他们会获得一个新名字，这个名字要么由长老赐予，要么由他们自己选择。这个名字与他们成年仪式中所做的事迹相称，描述了该熊民的某些可敬或突出的特质，或纪念了一位先祖。",
+              {
+                "type": "list",
+                "style": "list-hang-notitle",
+                "items": [
+                  {
+                    "ENG_name": "Male Names:",
+                    "name": "男性名字：",
+                    "type": "item",
+                    "entries": [
+                      "伯斯特、考德维尔、瑟丹、多恩加尔、厄伦特、古拉尔特、赫罗斯维尔、洛德、诺德尔、伊恩。"
+                    ]
+                  },
+                  {
+                    "ENG_name": "Female Names:",
+                    "name": "女性名字：",
+                    "type": "item",
+                    "entries": [
+                      "安加、布里、戴格娜、杜尔塔、法拉、英格德、乔安娜、帕德拉、西维尔、图莉。"
+                    ]
+                  },
+                  {
+                    "ENG_name": "Deed Names:",
+                    "name": "Deed 名字：",
+                    "type": "item",
+                    "entries": [
+                      "火心、铁皮、光刃、月舞者、利爪、影祸、岩骨、瓦尔格之女、黄牙、伊恩之子。"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BookOfEbonTides/races/Bearfolk.webp"
+            },
+            "width": 420,
+            "height": 438
+          }
+        ]
+      }
+    }
+  ]
+}

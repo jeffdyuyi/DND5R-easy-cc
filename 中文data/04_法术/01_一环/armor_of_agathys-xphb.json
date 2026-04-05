@@ -1,0 +1,78 @@
+[
+  {
+    "ENG_name": "Armor of Agathys",
+    "name": "黯冰狱铠",
+    "source": "XPHB",
+    "page": 243,
+    "level": 1,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一块蓝色玻璃碎片"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "防护性的魔法寒霜包裹着你。 你获得 5 {@variantrule 临时生命值|XPHB} 。在法术结束之前，若有生物以近战攻击检定命中了你，该生物将受到 5 寒冷伤害。此法术会在你不具有{@variantrule 临时生命值|XPHB}时提前结束。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "你使用的法术位每比一环高一环，{@variantrule 临时生命值|XPHB}和寒冷伤害就各提升5。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "cold"
+    ],
+    "miscTags": [
+      "THP"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/XPHB/Armor of Agathys.webp"
+          },
+          "credit": "Tuan Duong Chu",
+          "width": 1976,
+          "height": 1440
+        }
+      ]
+    },
+    "classes": [
+      "魔契师"
+    ],
+    "display_school": "防护系",
+    "display_damageInflict": [
+      "寒冷"
+    ]
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "ENG_name": "Dust Devil",
+    "name": "龙卷尘暴",
+    "source": "XGE",
+    "page": 154,
+    "otherSources": [
+      {
+        "source": "EEPC",
+        "page": 17
+      }
+    ],
+    "referenceSources": [
+      "PotA"
+    ],
+    "level": 2,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一捧尘土"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "选择距离之内，你能看见的一个 5 尺立方的，未被占据的空气。一股元素，外观如同尘卷风，出现在那里，并在法术的持续时间内持续存在。",
+      "任何在尘卷风周围 5 尺范围内结束其回合的生物必须进行一次力量豁免检定。若检定失败，该生物受到{@damage 1d8}点钝击伤害并被推离 10 尺。若检定成功，该生物只受到上述伤害的一半，并不会被推离。",
+      "以一个附赠动作，你可以让尘卷风向任意方向移动至多 30 尺。若尘卷风移动时经过了沙子，尘土，松软的土壤或小砂砾，它将会卷起这些物质，在自身周围形成 10 尺半径的残骸云，持续到你下个回合的开始。残骸云重度遮蔽了所在区域。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用三环或更高的法术位施放该法术时，使用的法术位每高一环，伤害便增加{@scaledamage 1d8|2-9|1d8}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "bludgeoning"
+    ],
+    "savingThrow": [
+      "strength"
+    ],
+    "miscTags": [
+      "FMV",
+      "SGT",
+      "UBA"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊",
+      "术士",
+      "法师"
+    ],
+    "display_school": "咒法系",
+    "display_savingThrow": [
+      "力量"
+    ],
+    "display_damageInflict": [
+      "钝击"
+    ]
+  }
+]

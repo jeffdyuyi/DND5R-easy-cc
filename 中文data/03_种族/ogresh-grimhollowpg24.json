@@ -1,0 +1,128 @@
+{
+  "race": [
+    {
+      "ENG_name": "Ogresh",
+      "name": "食人魔",
+      "source": "GrimHollowPG24",
+      "page": 22,
+      "edition": "one",
+      "creatureTypes": [
+        "类人生物"
+      ],
+      "size": [
+        "M"
+      ],
+      "speed": 30,
+      "age": {
+        "mature": 25,
+        "max": 300
+      },
+      "sizeEntry": {
+        "ENG_name": "Size:",
+        "name": "体型：",
+        "type": "item",
+        "entries": [
+          "中等（食人魔通常站立高度为6至7英尺，体型明显宽大且沉重。青年食人魔通常体重在200至300磅之间，而年长的食人魔体重可达700至800磅。）"
+        ]
+      },
+      "entries": [
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "ENG_name": "Age:",
+              "name": "年龄：",
+              "type": "item",
+              "entries": [
+                "食人魔在25岁左右达到成熟期，但在之后的几十年里仍被他们的亲视为年轻。他们可以活到300岁。"
+              ]
+            }
+          ]
+        },
+        {
+          "ENG_name": "Traditional Ogresh Traits",
+          "name": "传统食人魔特性",
+          "type": "inset",
+          "entries": [
+            "一种流浪的生活方式，以及一种读取其他生物的先天能力，塑造并定义了许多食人魔。",
+            {
+              "ENG_name": "Combat Traits:",
+              "name": "战斗特质：",
+              "type": "entries",
+              "entries": [
+                {
+                  "type": "list",
+                  "items": [
+                    "{@optfeature 敌人行动|GrimHollowPG24}",
+                    "{@optfeature 专注心智|GrimHollowPG24}"
+                  ]
+                }
+              ]
+            },
+            {
+              "ENG_name": "Exploration Traits:",
+              "name": "探索特质：",
+              "type": "entries",
+              "entries": [
+                {
+                  "type": "list",
+                  "items": [
+                    "{@optfeature 环境警觉|GrimHollowPG24}",
+                    "{@optfeature 自然移动|GrimHollowPG24}",
+                    "{@optfeature 强力构筑|GrimHollowPG24}"
+                  ]
+                }
+              ]
+            },
+            {
+              "ENG_name": "Roleplaying Traits:",
+              "name": "扮演特质：",
+              "type": "entries",
+              "entries": [
+                {
+                  "type": "list",
+                  "items": [
+                    "{@optfeature 精于算计的聆听者|GrimHollowPG24}",
+                    "{@optfeature 威严洞悉|GrimHollowPG24}",
+                    "{@optfeature 说服力诀窍|GrimHollowPG24}"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "entries": [
+            {
+              "ENG_name": "Trait Selection",
+              "name": "特质选择",
+              "type": "entries",
+              "entries": [
+                "选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|特性 类型=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
+              ]
+            }
+          ]
+        }
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "subraces": [],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Race/Ogresh.webp"
+            },
+            "credit": "Suzanne Helmigh",
+            "width": 850,
+            "height": 1223
+          }
+        ]
+      }
+    }
+  ]
+}

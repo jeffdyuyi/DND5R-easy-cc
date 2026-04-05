@@ -1,0 +1,64 @@
+[
+  {
+    "ENG_name": "Hammer of Thunderbolts",
+    "name": "雷神之锤",
+    "source": "DMG",
+    "page": 173,
+    "srd": true,
+    "reprintedAs": [
+      {
+        "uid": "雷神之锤|XDMG",
+        "tag": "item"
+      }
+    ],
+    "baseItem": "巨锤|PHB",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "legendary",
+    "weight": 10,
+    "weaponCategory": "martial",
+    "property": [
+      "H",
+      "2H"
+    ],
+    "dmg1": "2d6",
+    "dmgType": "B",
+    "ability": {
+      "str": 4
+    },
+    "bonusWeapon": "+1",
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d4 + 1}",
+    "charges": 5,
+    "entries": [
+      "你在用该魔法武器发动攻击检定和伤害掷骰时获得+1加值。",
+      {
+        "ENG_name": "Giant's Bane (Requires Attunement)",
+        "name": "巨人戮者(需要同调)",
+        "type": "entries",
+        "entries": [
+          "你必须佩戴一条{@italic 巨人之力腰带}（任意种类）和{@item 食人魔力量护手}才能同调此武器。如果你卸下其中任何一件，雷神之锤的同调也将立刻终止。持握该武器且与之同调时，你的力量值提升4且可以超过20但不能超过30。当你用这把武器攻击巨人且投出20时，该巨人必须进行一次{@dc 17}的体质豁免，失败则立即死亡。"
+        ]
+      },
+      "这把锤子也有5发充能。与它同调期间，你可以消耗1发充能并用它发动一次远程武器攻击，此时它将视为常规射程20尺，最大射程60尺的投掷武器。如果攻击命中，锤子将产生300尺内都可听清的惊雷。目标生物和它周围30尺内的生物必须成功通过一次{@dc 17}的体质豁免否则被{@condition 震慑}直到你的下个回合结束。这把锤子在黎明时恢复{@dice 1d4 + 1}发已消耗的充能。"
+    ],
+    "lootTables": [
+      "魔法物品表I"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 200000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Hammer of Thunderbolts.webp"
+          },
+          "width": 640,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

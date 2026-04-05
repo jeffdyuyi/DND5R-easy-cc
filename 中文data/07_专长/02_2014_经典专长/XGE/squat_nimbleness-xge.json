@@ -1,0 +1,56 @@
+[
+  {
+    "ENG_name": "Squat Nimbleness",
+    "name": "低身机敏",
+    "source": "XGE",
+    "page": 75,
+    "prerequisite": [
+      {
+        "race": [
+          {
+            "ENG_name": "dwarf",
+            "name": "矮人"
+          },
+          {
+            "ENG_name": "small race",
+            "name": "小型种族",
+            "displayEntry": "一个小型种族"
+          }
+        ]
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex"
+          ],
+          "amount": 1
+        }
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "choose": {
+          "from": [
+            "特技",
+            "运动"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你有这在你族群中不寻常的机敏，你获得以下好处:",
+      {
+        "type": "list",
+        "items": [
+          "你的步行速度提升5尺。",
+          "你获得{@skill 运动}或{@skill 特技}的熟练（由你选择）。",
+          "你为脱离{@condition 受擒}所做的力量（{@skill 运动}）与敏捷（{@skill 特技}）检定具有优势。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

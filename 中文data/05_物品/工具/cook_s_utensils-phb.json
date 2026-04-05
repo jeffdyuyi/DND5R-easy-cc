@@ -1,0 +1,96 @@
+[
+  {
+    "name": "厨师工具",
+    "ENG_name": "Cook's Utensils",
+    "source": "PHB",
+    "page": 154,
+    "type": "AT",
+    "rarity": "none",
+    "weight": 8,
+    "value": 100,
+    "additionalEntries": [
+      "冒险生活是艰苦的。有厨师同行，你的餐食会比典型的硬饼干和干果要好得多。",
+      {
+        "ENG_name": "Components",
+        "name": "成分",
+        "type": "entries",
+        "entries": [
+          "厨师工具包括一个金属锅、刀具、叉子、一把搅拌勺和一只长柄勺。"
+        ]
+      },
+      {
+        "ENG_name": "History",
+        "name": "历史",
+        "type": "entries",
+        "entries": [
+          "你对烹饪技术的知识使你能够评估一个文化饮食习惯中涉及的社会模式。"
+        ]
+      },
+      {
+        "ENG_name": "Medicine",
+        "name": "医药",
+        "type": "entries",
+        "entries": [
+          "在施用治疗时，你可以将苦涩或酸味的药物转化为令人愉悦的调和剂。"
+        ]
+      },
+      {
+        "ENG_name": "Survival",
+        "name": "求生",
+        "type": "entries",
+        "entries": [
+          "在搜寻食物时，你可以利用其他人无法将其转化为有营养餐食的食材来凑合。"
+        ]
+      },
+      {
+        "ENG_name": "Prepare Meals",
+        "name": "准备饭菜",
+        "type": "entries",
+        "entries": [
+          "作为短休的一部分，你可以准备一顿美餐，帮助同伴恢复体力。你和最多五个你选择的生物在短休期间每消耗一个生命骰额外恢复1点生命值，前提是你能使用厨师工具和充足的食物。"
+        ]
+      },
+      {
+        "type": "table",
+        "caption": "厨师工具",
+        "colLabels": [
+          "用途",
+          "DC"
+        ],
+        "colStyles": [
+          "col-10",
+          "col-2 text-center"
+        ],
+        "rows": [
+          [
+            "稍微改善伙食",
+            "10"
+          ],
+          [
+            "复制一顿餐食",
+            "10"
+          ],
+          [
+            "发现食物中的毒素或杂质",
+            "15"
+          ],
+          [
+            "制作一顿美食大餐",
+            "15"
+          ]
+        ]
+      }
+    ],
+    "additionalSources": [
+      {
+        "source": "XGE",
+        "page": 80
+      }
+    ],
+    "basicRules": true,
+    "reprintedAs": [
+      "厨师工具|XPHB"
+    ],
+    "srd": true
+  }
+]

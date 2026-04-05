@@ -1,0 +1,76 @@
+[
+  {
+    "ENG_name": "Jim's Magic Missile",
+    "name": "吉姆的魔法飞弹",
+    "source": "AI",
+    "page": 76,
+    "level": 1,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "r": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      {
+        "type": "quote",
+        "entries": [
+          "吉姆的魔法飞弹是一个古老而强大的法术，同时也是我在法师学院乐队的名字。"
+        ],
+        "by": "吉姆·达克马奇"
+      },
+      "每一个法师学徒都会施展无聊的古董魔法飞弹。啊哈，它总是击中目标。（哈欠）。别再干你祖父流传下来的苦差事了，来像 吉姆·达克马奇 这样，用这个改进版本的法术吧！",
+      "你创造了三个扭曲着的，尖啸着的，低过敏的，无麸质的魔法立场飞镖。每一枚飞弹都瞄准一个在法术距离内由你选择的可见生物。为每一枚飞弹进行远程攻击检定。若命中，飞弹将对这个目标造成 {@damage 2d4} 点力场伤害。",
+      "如果你在飞弹攻击检定中掷出了一次重击，那发飞弹的目标将受到{@damage 5d4}力场伤害（而不是正常情况下重击的两倍数量伤害骰）。但是如果任何一个飞弹的攻击检定为1，所有飞弹都会丢失他们的目标并且在你的脸上爆炸。那时每一枚飞弹都会对你造成1点力场伤害。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用二环或更高的法术位施放该法术时，使用的法术位每高一环，法术就可以多创造一枚飞镖，但是版权成分也会增加 1gp。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "force"
+    ],
+    "spellAttack": [
+      "R"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "areaTags": [
+      "MT",
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "法师"
+    ],
+    "display_school": "塑能系",
+    "display_damageInflict": [
+      "力场"
+    ]
+  }
+]

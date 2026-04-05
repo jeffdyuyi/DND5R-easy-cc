@@ -1,0 +1,48 @@
+[
+  {
+    "ENG_name": "Ball of Wild Earth",
+    "name": "狂野泥球",
+    "source": "GriffonsSaddlebag2",
+    "page": 41,
+    "tier": "次要",
+    "rarity": "common",
+    "wondrous": true,
+    "sentient": true,
+    "entries": [
+      "这颗覆有泥土的微型智能卵石似乎是某个{@condition 魅惑}土元素的残余物。它能够自己滚动着去寻找新的、独特的泥土来源。当它找到一块特别肥沃的土壤时，泥球会在其中打滚，使泥土融入自身。泥球会在其内部携带受其捕获的水分，使其材质如同由尘土或粘土组成，触感也或硬或软。一颗友好的狂野泥球能随意魔法性地将覆于其上的泥土重塑成各种形状，例如一个微型雕像或者一个大型骰子，但泥土必须能够覆盖住中心的卵石。",
+      "狂野泥球被视为魔法物件而非生物。它具有10尺速度，只能通过在地面上滚动来移动。它具有10 AC和15生命值，且对所有伤害都有抗性。如果泥球被埋在地下至少1小时，它将恢复所有生命值。",
+      {
+        "ENG_name": "Sentience",
+        "name": "智能",
+        "type": "entries",
+        "entries": [
+          "狂野泥球是一个绝对中立的智能物品，其智力为2，感知为6，魅力为4。它具有60尺范围的听觉和黑暗视觉。它不能说话或阅读，但能理解{@language 通用语|PHB}和{@language 原初语|PHB|土族语}。"
+        ]
+      },
+      {
+        "ENG_name": "Personality",
+        "name": "个性",
+        "type": "entries",
+        "entries": [
+          "狂野泥球在肥沃、健康的土壤中打滚时最开心。大多数泥球都是在山区农田中被寻得的（至少最初如此），但即使是城市区域的泥球也能享受尘土和在交通繁忙的城市中无处不在的奇怪外来泥痕。能让狂野泥球开心起来的最快方法是让它在宝石粉尘里滚动，而除去围绕着其中心鹅卵石的污垢和泥土肯定会让它难过。通过重塑其表面上的泥土，小球可以根据它看到的其他生物的情绪而做出模糊的面部表情。"
+        ]
+      }
+    ],
+    "lootTables": [
+      "魔法物品表 A2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Ball-of-Wild-Earth.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

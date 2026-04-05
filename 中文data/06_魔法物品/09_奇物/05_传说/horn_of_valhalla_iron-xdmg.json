@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Horn of Valhalla, Iron",
+    "name": "瓦尔哈拉号角，黑铁",
+    "source": "XDMG",
+    "page": 270,
+    "srd52": true,
+    "basicRules2024": true,
+    "baseItem": "号角|xphb",
+    "type": "INS|XPHB",
+    "rarity": "legendary",
+    "wondrous": true,
+    "entries": [
+      "你可以用一个{@action 魔法|XPHB}动作吹响号角。作为回应，伊斯加德的武者英灵们将在你周围60尺内未占据的空间出现。这些英灵使用{@creature 狂战士|XMM}的数据，它们将会在1小时之后或{@variantrule 生命值|XPHB}降低到0时返回伊斯加德。英灵们看起来就像是活着的，能够呼吸的战士，且它们{@variantrule 免疫|XPHB}{@condition 魅惑|XPHB}与{@condition 恐慌|XPHB}状态。号角一经使用，需要经过7天才能再次使用。",
+      "一个黑铁号角召唤5个{@creature 狂战士|XMM|狂战士们}。要使用黑铁号角，你必须具有所有军用武器的{@variantrule 熟练|XPHB}。",
+      "如果你在不满足先决条件的情况下吹响了号角，则召唤出的{@creature 狂战士|XMM|狂战士们}将对你发动攻击。如果你满足先决条件，他们将对你和你的同伴态度{@variantrule 友好【态度】|XPHB|友好}，并听从你的命令。"
+    ],
+    "lootTables": [
+      "武备 - 传说|XDMG",
+      "圣物 - 传说|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 200000,
+    "fluff": {}
+  }
+]

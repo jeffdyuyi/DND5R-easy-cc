@@ -1,0 +1,123 @@
+{
+  "race": [
+    {
+      "ENG_name": "Ashborn",
+      "name": "灰烬种",
+      "source": "CrookedMoon14",
+      "page": 53,
+      "reprintedAs": [
+        "灰烬种|crookedmoon24"
+      ],
+      "lineage": "VRGR",
+      "creatureTypes": [
+        "邪魔"
+      ],
+      "size": [
+        "S"
+      ],
+      "speed": 30,
+      "darkvision": 60,
+      "traitTags": [
+        "天生武器"
+      ],
+      "additionalSpells": [
+        {
+          "ability": {
+            "choose": [
+              "int",
+              "wis",
+              "cha"
+            ]
+          },
+          "prepared": {
+            "3": {
+              "daily": {
+                "1e": [
+                  "魅惑类人|PHB"
+                ]
+              }
+            },
+            "5": {
+              "daily": {
+                "1e": [
+                  "隐形术|PHB"
+                ]
+              }
+            },
+            "_": {
+              "will": [
+                "次级幻象|PHB#c"
+              ]
+            }
+          }
+        }
+      ],
+      "entries": [
+        {
+          "ENG_name": "Creature Type",
+          "name": "生物类型",
+          "type": "entries",
+          "entries": [
+            "你是一个邪魔。"
+          ]
+        },
+        {
+          "ENG_name": "Ashen Legacy",
+          "name": "灰烬遗赠",
+          "type": "entries",
+          "entries": [
+            "你知晓{@spell 次级幻象}戏法。从3级开始，你可以使用此特质施放{@spell 魅惑类人}法术，从5级开始，你可以使用此特质施放{@spell 隐形术}法术，两者都不需要材质成分。一旦你使用此特质施放了{@spell 魅惑类人}或{@spell 隐形术}，直到你完成一次长休前都无法再次使用此特质施放该法术。你也可以使用你拥有的相应等级的法术位来施放这些法术。",
+            "智力、感知或魅力是你通过该特质施放这些法术时的施法属性（选择此种族时决定该属性）。"
+          ]
+        },
+        {
+          "ENG_name": "Darkvision",
+          "name": "黑暗视觉",
+          "type": "entries",
+          "entries": [
+            "你拥有{@sense 黑暗视觉}，其射程为60尺。"
+          ]
+        },
+        {
+          "ENG_name": "Fiendish Fortune",
+          "name": "邪魔幸运",
+          "type": "entries",
+          "entries": [
+            "当你被一次非重击的攻击检定命中时，你可以使用你的反应魔法般地使该次攻击对你失手，并且你5尺内一个由你选择的生物受到等于你熟练加值的力场伤害。一旦你使用了这个特质，直到你完成一次短休或长休前你无法再次这样做。"
+          ]
+        },
+        {
+          "ENG_name": "Scorpion Sting",
+          "name": "蝎刺",
+          "type": "entries",
+          "entries": [
+            "你有一根尾刺，你可以使用它进行徒手打击，使用你的力量或敏捷（你的选择）进行攻击和伤害掷骰。命中时，你造成{@damage 1d4}穿刺伤害，并且你可以造成额外{@damage 1d6}毒素伤害。你可以造成此额外伤害的次数等于你的熟练加值。当你完成一次短休时，你重获一次消耗的使用次数，当你完成一次长休时，你重获所有消耗的使用次数。",
+            "当你达到10级时，此额外伤害增加至{@dice 2d6}。"
+          ]
+        }
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Races/Ashborn.webp",
+      "subraces": [],
+      "fluff": {
+        "entries": [
+          "灰烬种是一种类似小魔鬼的种族，原生于{@book 切尔纳博斯|歪曲之月|1|切尔纳博斯}，通常从该省份狱火和硫火城火山的硫磺灰烬中凝聚而成。这些生物注入了地狱的恶魔法力，通过诡计、勇气和勤奋，在该省份的荒原和恶地中生存下来甚至繁荣发展。据说他们受到命运本身的青睐，灰烬种依靠吉兆在最危急的情况下扭转平衡。",
+          "他们矮小的身材从纤细到敦实不等，但这并不会让他们变得不那么危险，因为每个灰烬种都有一条类似蝎子的毒尾，总是准备着发动攻击。他们头生犄角，肤色呈现出深浅不同的红色和灰色，反映了他们的魔鬼起源，他们通常能活100年。"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Races/Ashborn.webp"
+            },
+            "width": 620,
+            "height": 1200,
+            "credit": "Jo Cordisco"
+          }
+        ]
+      }
+    }
+  ]
+}

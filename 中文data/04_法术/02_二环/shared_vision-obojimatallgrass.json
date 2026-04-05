@@ -1,0 +1,79 @@
+[
+  {
+    "ENG_name": "Shared Vision",
+    "name": "共享视界",
+    "source": "ObojimaTallGrass",
+    "page": 189,
+    "level": 2,
+    "school": "D",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "miles",
+        "amount": 1
+      }
+    },
+    "components": {
+      "s": true,
+      "m": "一只玻璃眼"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你以范围内一个你熟悉的愿意生物为目标。在持续时间内或直到目标用一个动作自行解除该效应前，目标可以通过你的双眼视物，获得你所拥有的任何特殊感官的增益。在此期间，目标可以用一个附赠动作在自己的视觉和你的视觉之间切换。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用3环或更高法术位施放该法术时，每比2环高1环，你就可以多指定一个愿意的生物作为目标。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "miscTags": [
+      "SCT",
+      "UBA"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Custom/Spells/Shared%20Vision.webp"
+  }
+]

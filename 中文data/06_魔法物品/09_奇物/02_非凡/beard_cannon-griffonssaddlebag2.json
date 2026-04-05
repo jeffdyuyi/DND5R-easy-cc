@@ -1,0 +1,37 @@
+[
+  {
+    "ENG_name": "Beard Cannon",
+    "name": "胡须加农炮",
+    "source": "GriffonsSaddlebag2",
+    "page": 43,
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "weight": 1,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6}",
+    "charges": 6,
+    "entries": [
+      "此物品的外观是一个宽大的圆柱形发箍，可用于束起杂乱的毛发。发箍高4英寸，直径4英寸，重1磅。作为同调发箍的一部分，你必须将其戴到头发或胡须上，且你的头发或胡须必须至少有1尺长才能戴住。当你完成同调时，6颗较小的球形弹丸会出现并编入附近的毛发中。",
+      "当你执行{@action 攻击}动作时，你可以选择放弃一次攻击并将发箍指向范围内的目标并说出其命令语。当你这样做时，任何穿过发箍的毛发都会魔法性地缩入发箍，并从此处射出1颗小弹丸。使用魔法发箍进行一次远程武器攻击，其常规射程为15尺，最大射程为30尺。你具有此次攻击的熟练。发射时，弹丸会魔法性地变大至拳头大小，且在命中时造成{@damage 2d6}钝击伤害。",
+      "在攻击后，缩回的毛发会魔法性地重新从炮口中长出，而射出去的弹丸则会丢失。{@dice 1d6}颗已射出的弹丸会魔法性地重新出现在你的毛发中每日黎明时。不用作武器时，此物品与普通的发箍没有区别。"
+    ],
+    "lootTables": [
+      "魔法物品表 F2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Beard-Cannon.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

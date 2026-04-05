@@ -1,0 +1,34 @@
+[
+  {
+    "ENG_name": "Failed Experiment Wand",
+    "name": "失败实验品魔杖",
+    "source": "AI",
+    "page": 162,
+    "type": "WD|DMG",
+    "rarity": "rare",
+    "reqAttune": "由施法者",
+    "reqAttuneTags": [
+      {
+        "spellcasting": true
+      }
+    ],
+    "weight": 1,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6 + 1}",
+    "charges": 2,
+    "entries": [
+      "这根魔杖有 2 发充能。持握时，你可以用一个动作消耗 1 发或更多充能来随机从中施放绿色火焰的{@spell 火球术}或蓝色{@spell 闪电束}（豁免 {@dc 15}）。",
+      "消耗1充能，你可以施放该法术的三环版本。每额外消耗1充能，你可以将法术位等级提高一环。",
+      "该魔杖每天黎明时恢复{@dice 1d6 + 1}发已消耗的充能。如果你消耗了魔杖的最后一发充能，骰一次{@dice d20}。如果骰值为1，魔杖将化为灰烬而毁灭。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "火球术",
+          "闪电束"
+        ]
+      }
+    },
+    "valueReference": 4000
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "ENG_name": "Dawn Petal",
+    "name": "拂晓花瓣",
+    "source": "ObojimaTallGrass",
+    "page": 210,
+    "type": "Ingred",
+    "rarity": "uncommon",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 11|large}|SneakerProMedium}",
+            "{@font {@style 13|large}|SneakerProMedium}",
+            "{@font {@style 17|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "拂晓花瓣因其独特的形状、芳香和金色光泽而受到胧忆岛民的喜爱。拂晓花瓣树不像其他树木那样繁殖，因为每棵拂晓花瓣树都是由一个自然精魄种植并栖息的。尽管有雄心勃勃的园艺家的努力，拂晓花瓣树只会在它们被宿主精魄种植的地方生长。因此，它们非常罕见，并被大多数村民视为神圣。"
+    ],
+    "lootTables": [
+      "舒里塔希的非普通原料赠礼|ObojimaTallGrass",
+      "阿伯拉山非普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/dawn-petal.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 2196,
+          "height": 2196
+        }
+      ]
+    }
+  }
+]

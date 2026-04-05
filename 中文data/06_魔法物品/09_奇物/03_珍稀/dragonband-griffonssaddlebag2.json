@@ -1,0 +1,64 @@
+[
+  {
+    "ENG_name": "Dragonband",
+    "name": "龙之腕链",
+    "source": "GriffonsSaddlebag2",
+    "page": 73,
+    "tier": "次要",
+    "rarity": "rare",
+    "wondrous": true,
+    "entries": [
+      "这条金属腕链能松散地挂在手腕或脚腕上，它由黄铜、青铜、赤铜、金、银中的某一种细金属丝制成。腕链的扣环以同种金属铸成龙头形状。",
+      "在你佩戴着这条腕链期间，你可以用一个动作说出其命令语，使这条手链自行破碎解体，并因此被摧毁。它解体时会在你周围释放出一道强大的能量冲击波。除你之外，所有在腕链周围20尺范围内的生物都必须进行一次DC 15的敏捷豁免检定，豁免失败则受到{@damage 10d6}伤害，成功则只受到一半伤害。该伤害的类型取决于铸成此腕链所用的金属，参见下方表格。",
+      {
+        "type": "table",
+        "colLabels": [
+          "金属",
+          "伤害类型"
+        ],
+        "colStyles": [
+          "col-3 text-left",
+          "col-9 text-left"
+        ],
+        "rows": [
+          [
+            "黄铜",
+            "火焰"
+          ],
+          [
+            "青铜",
+            "闪电"
+          ],
+          [
+            "赤铜",
+            "强酸"
+          ],
+          [
+            "金",
+            "火焰"
+          ],
+          [
+            "银",
+            "寒冷"
+          ]
+        ]
+      }
+    ],
+    "lootTables": [
+      "魔法物品表C|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Dragonband.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

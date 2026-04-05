@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Gloves of Amphibios",
+    "name": "两栖手套",
+    "source": "GriffonsSaddlebag2",
+    "page": 90,
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这双手套有多种不同的颜色，戴上时会与你的手完美融合。着装该手套期间，攀爬不会额外消耗你的移动力，你在为{@action 擒抱}生物进行的{@skill 运动}检定上获得 +1 加值，且每当你的回合结束时，任何被你{@condition 受擒}且未穿着护甲的生物会受到{@damage 1d4}毒素伤害。"
+    ],
+    "lootTables": [
+      "魔法物品表 F1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Gloves-of-Amphibios.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

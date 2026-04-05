@@ -1,0 +1,81 @@
+[
+  {
+    "name": "丧尸",
+    "ENG_name": "Zombie",
+    "source": "DMG",
+    "page": 282,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "str": 1,
+        "con": 2,
+        "int": -6,
+        "wis": -4,
+        "cha": -4
+      }
+    ],
+    "darkvision": 60,
+    "immune": [
+      "毒素"
+    ],
+    "conditionImmune": [
+      "中毒"
+    ],
+    "traitTags": [
+      "修整强化",
+      "NPC种族"
+    ],
+    "entries": [
+      {
+        "ENG_name": "Creature Type",
+        "name": "生物类型",
+        "type": "entries",
+        "entries": [
+          "你是不死生物。"
+        ]
+      },
+      {
+        "ENG_name": "Undead Fortitude",
+        "name": "不死坚韧",
+        "type": "entries",
+        "entries": [
+          "如果伤害将你的生命值降至0，你必须进行一次体质豁免，其DC为5+所受伤害，除非该伤害为光耀伤害或来自重击。若豁免成功，则你改为生命值降至1。"
+        ]
+      },
+      {
+        "ENG_name": "Undead Nature",
+        "name": "不死本质",
+        "type": "entries",
+        "entries": [
+          "你免疫毒素伤害，且不会陷入{@condition 中毒}。你不需要空气、食物、饮水或睡眠。"
+        ]
+      },
+      {
+        "ENG_name": "Darkvision",
+        "name": "黑暗视觉",
+        "entries": [
+          "你在60尺范围内的微光光照下视物视为明亮光照，60尺黑暗下视物视为微光光照。你无法在黑暗中分辨颜色，只能看到灰色轮廓。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Languages",
+        "name": "语言",
+        "entries": [
+          "你不会说话，但能理解生前所知的语言。"
+        ],
+        "type": "entries"
+      }
+    ],
+    "creatureTypes": [
+      "亡灵"
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/zombie.mp3"
+    }
+  }
+]

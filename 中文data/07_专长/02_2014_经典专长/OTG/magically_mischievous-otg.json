@@ -1,0 +1,33 @@
+[
+    {
+        "ENG_name": "Magically Mischievous",
+        "name": "捣蛋魔偷",
+        "source": "ObojimaTallGrass",
+        "page": 163,
+        "skillProficiencies": [
+            {
+                "sleight of hand": true
+            }
+        ],
+        "entries": [
+            "你学会了一些协助你邪恶技能的魔法把戏。你获得以下增益：",
+            {
+                "type": "list",
+                "items": [
+                    "你获得{@skill 巧手}技能的熟练。若你已具备熟练，则改为获得专精，这意味着你使用该技能进行任何属性检定时，你的熟练加值将翻倍。",
+                    "当你成功通过一次敏捷（{@skill 巧手}）检定来偷窃某物时，你可以魔法般地使你偷窃的物件{@condition 隐形}，作为同一动作的一部分，如同你施放了{@spell 隐匿物件|ObojimaTallGrass}法术。该物件必须小到能放在你的手掌中，且此效应持续1分钟。你可以使用此能力的次数等于你的熟练加值，每日一次，且你在完成一次长休后恢复所有已消耗的使用次数。"
+                ]
+            }
+        ],
+        "foundrySystem": {
+            "activation": {
+                "type": "special"
+            },
+            "uses": {
+                "max": "@prof",
+                "per": "lr",
+                "prompt": true
+            }
+        }
+    }
+]

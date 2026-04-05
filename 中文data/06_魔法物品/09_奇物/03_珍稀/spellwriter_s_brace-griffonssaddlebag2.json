@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Spellwriter's Brace",
+    "name": "撰法臂环",
+    "source": "GriffonsSaddlebag2",
+    "page": 167,
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": "由法师",
+    "reqAttuneTags": [
+      {
+        "class": "法师"
+      }
+    ],
+    "wondrous": true,
+    "entries": [
+      "这个作者的手部臂环能让你每次完成长休后可以额外准备四个来自你法术书中的法术。这些法术的环阶不能大于五环，且必须是你拥有对应环阶法术位的法术。当你这样做时，准备的法术会以抽象的法术纹身形式出现在你的手臂皮肤上。你可以多次准备同一个法术，花费必要的时间来创造同一法术的多个纹身副本。",
+      "你可以用一个动作接触一个自愿生物并说出臂环的命令语，将你的一个法术纹身转移给它，使法术纹身从你的手臂消失并出现在该生物身上。你一次只能以此方式转移一个纹身。转移第二个法术纹身会导致第一个消失。",
+      "拥有法术纹身的施法者可以消耗一个大于等于纹身法术环阶的法术位来施展该法术，使用其自身的法术豁免DC、法术攻击调整值和施法属性。法术施展后，其纹身就会消失。",
+      "由臂环创造的任何法术纹身都会在你完成长休时或取下臂环时消失。"
+    ],
+    "lootTables": [
+      "魔法物品表 G1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Spellwriters-Brace.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "ENG_name": "Opportunity Attack",
+  "name": "借机攻击",
+  "source": "XPHB",
+  "page": 371,
+  "srd52": true,
+  "time": [
+    {
+      "number": 1,
+      "unit": "反应"
+    }
+  ],
+  "entries": [
+    "你可见的生物，使用其动作、其{@variantrule 附赠动作|XPHB}、其{@variantrule 反应|XPHB}或者其任一速度尝试离开你的触及范围时，你可以对其发动一次借机攻击。为发动借机攻击，你执行你的{@variantrule 反应|XPHB}，用武器或{@variantrule 徒手打击|XPHB}对引发借机的生物发动一次近战攻击。此次攻击发生在该生物离开你触及范围之前的一瞬间。"
+  ],
+  "translator": "不全书"
+}

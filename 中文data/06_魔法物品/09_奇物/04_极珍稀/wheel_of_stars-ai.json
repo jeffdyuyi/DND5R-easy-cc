@@ -1,0 +1,54 @@
+[
+  {
+    "ENG_name": "Wheel of Stars",
+    "name": "星轮",
+    "source": "AI",
+    "page": 222,
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "bonusSavingThrow": "+1",
+    "entries": [
+      "当你与该组件同调时，你获得+1感知豁免，并且你可以使用一个动作施放戏法{@spell 舞光术}、{@spell 神导术}或{@spell 传讯术}。",
+      {
+        "ENG_name": "Portent of the Stars",
+        "name": "星辰预兆",
+        "type": "entries",
+        "entries": [
+          "当你视野内，处在你半径60尺内的一个生物进行攻击鉴定，豁免鉴定或属性鉴定时，你可以使用一个反应，投一个{@dice d10}，并将结果与该生物鉴定的结果进行相加或相减（由你选择）。一旦你使用了星轮的这个能力，它在下一次黎明前将无法被再次使用。"
+        ]
+      },
+      {
+        "ENG_name": "Alter Gravity",
+        "name": "改变重力",
+        "type": "entries",
+        "entries": [
+          "你可以使用一个动作对自身施放{@spell 飞行术}或正常释放{@spell 浮空术}（豁免{@dc 15}）。一旦你使用了星轮的这个能力，它在新一天前将无法被再次使用。"
+        ]
+      },
+      {
+        "ENG_name": "Part of a Whole",
+        "name": "六位一体",
+        "type": "entries",
+        "entries": [
+          "当此组件未被安装进{@item 位面游荡仪|AI}时，它的魔法可能会时断时续，或是会有无法预测的副作用，这由DM决定。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "will": [
+        "舞光术",
+        "神导术",
+        "传讯术"
+      ],
+      "daily": {
+        "1e": [
+          "飞行术",
+          "浮空术"
+        ]
+      }
+    },
+    "valueReference": 40000,
+    "type": "W"
+  }
+]

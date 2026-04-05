@@ -1,0 +1,66 @@
+[
+  {
+    "ENG_name": "Haste",
+    "name": "加速术",
+    "source": "PHB",
+    "page": 250,
+    "srd": true,
+    "referenceSources": [
+      "PotA",
+      "CoA",
+      "VEoR"
+    ],
+    "reprintedAs": [
+      "加速术|XPHB"
+    ],
+    "level": 3,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一片甘草根切片"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "指定施法距离内一个你能看见的自愿生物。直至法术终止前，你使目标速度翻倍；其 AC 获得+2 加值；其进行敏捷豁免时具有优势；其每个回合都可作出一个额外的动作，但该动作只能用于执行{@action 攻击}（只限一次武器攻击），或者{@action 疾走}、{@action 撤离}、{@action 躲藏}和{@action 使用物件}动作。",
+      "法术终止时，目标将泛起一阵倦意使其不能移动也无法执行动作，并持续至其下一回合结束。"
+    ],
+    "miscTags": [
+      "ADV",
+      "MAC",
+      "SGT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "变化系"
+  }
+]

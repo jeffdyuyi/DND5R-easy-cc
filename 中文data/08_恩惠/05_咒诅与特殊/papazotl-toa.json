@@ -1,0 +1,53 @@
+[
+  {
+    "ENG_name": "Papazotl",
+    "name": "帕帕扎图",
+    "source": "ToA",
+    "page": 129,
+    "type": "Inhabitation",
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Gender:",
+            "name": "性别：",
+            "type": "item",
+            "entry": "男性"
+          },
+          {
+            "ENG_name": "Alignment:",
+            "name": "阵营：",
+            "type": "item",
+            "entry": "LE"
+          },
+          {
+            "ENG_name": "Personality:",
+            "name": "个性：",
+            "type": "item",
+            "entry": "精明且狡诈"
+          },
+          {
+            "ENG_name": "Inherited flaw:",
+            "name": "继承的缺点：",
+            "type": "item",
+            "entry": "\"我不听任何人的意见，只希望别人都照我的命令去做。\""
+          },
+          {
+            "ENG_name": "Enemy:",
+            "name": "敌人：",
+            "type": "item",
+            "entry": "库巴赞"
+          },
+          {
+            "ENG_name": "Power:",
+            "name": "能力：",
+            "type": "item",
+            "entry": "宿主不会被{@status 突袭}，同时你所有基于感知的属性检定具优势，并且你不会受到任何坠落伤害。"
+          }
+        ]
+      }
+    ]
+  }
+]

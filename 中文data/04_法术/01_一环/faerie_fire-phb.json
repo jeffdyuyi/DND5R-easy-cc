@@ -1,0 +1,73 @@
+[
+  {
+    "ENG_name": "Faerie Fire",
+    "name": "妖火",
+    "source": "PHB",
+    "page": 239,
+    "srd": true,
+    "basicRules": true,
+    "referenceSources": [
+      "OotA",
+      "TftYP-TSC",
+      "WDMM",
+      "IDRotF",
+      "CM",
+      "WBtW"
+    ],
+    "reprintedAs": [
+      "妖火|XPHB"
+    ],
+    "level": 1,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "指定施法距离内一处 20 尺立方区域，其内每个物件都将被蓝色、绿色、或紫色的光所包围（颜色由你指定）。区域内的生物则必须进行一次敏捷豁免，豁免失败时也会被光线勾勒出轮廓。受术物件和生物在法术持续时间内发出 10 尺半径的微光。",
+      "受术生物或物件无法受益于{@condition 隐形}，且任何能看见他们的攻击者对其发动的攻击检定具有优势。"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "miscTags": [
+      "ADV",
+      "LGT"
+    ],
+    "areaTags": [
+      "C"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "德鲁伊",
+      "奇械师"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "敏捷"
+    ]
+  }
+]

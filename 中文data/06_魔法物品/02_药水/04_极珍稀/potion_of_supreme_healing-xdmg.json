@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Potion of Supreme Healing",
+    "name": "极效治疗药水",
+    "source": "XDMG",
+    "page": 288,
+    "srd52": true,
+    "basicRules2024": true,
+    "type": "P|XPHB",
+    "rarity": "very rare",
+    "weight": 0.5,
+    "entries": [
+      "当你饮下这瓶药水时将恢复{@dice 10d4 + 20}{@variantrule 生命值|XPHB}。这瓶药水的红色药液在摇晃时总会闪烁。"
+    ],
+    "lootTables": [
+      "器具 - 极珍稀|XDMG",
+      "圣物 - 极珍稀|XDMG"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "translator": "不全书",
+    "valueReference": 20000
+  }
+]

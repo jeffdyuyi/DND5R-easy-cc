@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Hammock of Worlds",
+    "name": "世界吊床",
+    "source": "JttRC",
+    "page": 214,
+    "rarity": "legendary",
+    "wondrous": true,
+    "entries": [
+      "世界吊床是一个用传统的阿塔瓜设计编织而成的多彩吊床。它只能由被称为绿衣医生的秩序成员使用。",
+      "你可以采取行动展开并放置世界吊床在坚固的表面上，此时它会创建一个通往妖精荒野中的幽灵兰花特普伊或遥远国度中的干旱长者的双向传送门（由使用者选择）。你可以采取行动通过抓住布的边缘并将其折叠起来来关闭一个开放的传送门。一旦世界吊床打开了一个传送门，它在接下来的{@dice 1d8}小时内不能再这样做。"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 200000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/JttRC/Hammock of Worlds.webp"
+          },
+          "credit": "Olga Drebas",
+          "width": 896,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

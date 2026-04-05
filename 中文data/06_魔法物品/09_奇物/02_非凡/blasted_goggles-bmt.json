@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Blasted Goggles",
+    "name": "爆裂目镜",
+    "source": "BMT",
+    "page": 174,
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "curse": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "这副工匠护目镜有3发充能。以一个动作，你可以消耗一发充能并从目镜中向一个位于你120尺内生物射出一道烈焰光线。目标必须成功通过一次{@dc 15}的敏捷豁免否则受到{@damage 3d6}火焰伤害。目镜在每日黎明恢复{@dice 1d3}发已消耗的充能。",
+      {
+        "ENG_name": "Cursed",
+        "name": "诅咒",
+        "type": "entries",
+        "entries": [
+          "目镜被诅咒了，而与目镜同调会令你也被诅咒。你无法摘下目镜，直到同调结束或者你被法术{@spell 移除诅咒}或类似魔法指定为目标。",
+          "每当你使用目镜的烈焰光线且目标用于此豁免的{@dice d20}骰出了20时，目镜都会令你被{@quickref 视野与光照||2||明亮光照}刺目。你陷入目盲状态，持续24小时。"
+        ]
+      }
+    ],
+    "translator": "不全书",
+    "valueReference": 400,
+    "type": "W"
+  }
+]

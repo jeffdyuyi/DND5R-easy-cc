@@ -1,0 +1,34 @@
+[
+  {
+    "ENG_name": "+1 Hooked Shortspear",
+    "name": "+1 钩矛",
+    "source": "DMG",
+    "page": 213,
+    "type": "M",
+    "rarity": "uncommon",
+    "weight": 2,
+    "weaponCategory": "martial",
+    "property": [
+      "L"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "P",
+    "weapon": true,
+    "entries": [
+      "使用这把魔法武器进行攻击和伤害判定时，你会获得{=bonusWeapon}的额外加成。"
+    ],
+    "namePrefix": "+1 ",
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "+1 武器|XDMG"
+    ],
+    "tier": "主要",
+    "bonusWeapon": "+1",
+    "lootTables": [
+      "魔法物品表F"
+    ],
+    "_isVariant": true,
+    "valueReference": 400
+  }
+]

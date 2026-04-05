@@ -1,0 +1,67 @@
+[
+  {
+    "ENG_name": "Wrathful Smite",
+    "name": "激愤斩",
+    "source": "PHB",
+    "page": 289,
+    "reprintedAs": [
+      "激愤斩|XPHB"
+    ],
+    "level": 1,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你在法术持续时间内，下一次近战武器攻击命中时，对目标造成额外 {@damage 1d6} 点心灵伤害。此外，如果目标是一个生物，则其必须进行一次感知豁免。豁免失败则目标生物将在法术终止前持续陷入对你{@condition 恐慌}的状态。该生物可以用一个动作来尝试重拾斗志，并进行一次对抗该法术 DC 的感知检定，检定成功则法术即刻终止。"
+    ],
+    "damageInflict": [
+      "psychic"
+    ],
+    "conditionInflict": [
+      "恐慌"
+    ],
+    "savingThrow": [
+      "wisdom"
+    ],
+    "abilityCheck": [
+      "感知"
+    ],
+    "miscTags": [
+      "AAD"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "圣武士"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "感知"
+    ],
+    "display_damageInflict": [
+      "心灵"
+    ]
+  }
+]

@@ -1,0 +1,407 @@
+{
+  "race": [
+    {
+      "ENG_name": "Elf",
+      "name": "精灵",
+      "source": "ObojimaTallGrass",
+      "page": 128,
+      "lineage": "VRGR",
+      "size": [
+        "M"
+      ],
+      "speed": {
+        "walk": 30
+      },
+      "ability": [
+        {
+          "choose": {
+            "weighted": {
+              "from": [
+                "str",
+                "dex",
+                "con",
+                "int",
+                "wis",
+                "cha"
+              ],
+              "weights": [
+                2,
+                1
+              ]
+            }
+          }
+        }
+      ],
+      "age": {
+        "mature": 18,
+        "max": 99
+      },
+      "darkvision": 60,
+      "languageProficiencies": [
+        {
+          "common": true
+        }
+      ],
+      "entries": [
+        "你和其他精灵一样，被赋予了一套独特的特质，类似于居住在胧忆岛上的精魄。",
+        {
+          "ENG_name": "Ability Score Increase",
+          "name": "属性值加成",
+          "type": "entries",
+          "entries": [
+            "你选择的一个属性值增加2点，另一个你选择的属性值增加1点。"
+          ]
+        },
+        {
+          "ENG_name": "Age",
+          "name": "年龄",
+          "type": "entries",
+          "entries": [
+            "精灵在青少年晚期成年，寿命不到一个世纪。"
+          ]
+        },
+        {
+          "ENG_name": "Size",
+          "name": "体型",
+          "type": "entries",
+          "entries": [
+            "精灵的身高各不相同，范围从5尺到远超过6尺。无论你在这个范围内的哪个位置，你的体型都是中等。"
+          ]
+        },
+        {
+          "ENG_name": "Speed",
+          "name": "速度",
+          "type": "entries",
+          "entries": [
+            "你的基础步行速度是30尺。"
+          ]
+        },
+        {
+          "ENG_name": "Languages",
+          "name": "语言",
+          "type": "entries",
+          "entries": [
+            "你会说、读、写通用语。"
+          ]
+        },
+        {
+          "ENG_name": "Darkvision",
+          "name": "黑暗视觉",
+          "type": "entries",
+          "entries": [
+            "得益于你的超自然赠礼，你在黑暗和微光光照状态下拥有高端视觉。你可以将60尺内的微光光照视为明亮光照，将黑暗视为微光光照。在黑暗中你无法分辨颜色，只能看到灰色阴影。"
+          ]
+        },
+        {
+          "ENG_name": "Ethereal Sight",
+          "name": "以太视界",
+          "type": "entries",
+          "entries": [
+            "你的目力卓绝不仅限于黑暗视觉。此外，你可以使用一个动作将你的预见转移至以太，使你能够看到灵界中的生物，它们会以发光的轮廓显现。此效应持续1小时。你可以使用此特质的次数等同于你的熟练加值，且完成一次长休后恢复所有已消耗的使用次数。"
+          ]
+        }
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "subraces": [
+        {
+          "ENG_name": "Courage",
+          "name": "勇敢",
+          "source": "ObojimaTallGrass",
+          "page": 128,
+          "additionalSpells": [
+            {
+              "ability": "cha",
+              "innate": {
+                "3": {
+                  "daily": {
+                    "1e": [
+                      "英雄气概"
+                    ]
+                  }
+                },
+                "_": {
+                  "will": [
+                    "抵抗术#c"
+                  ]
+                }
+              }
+            }
+          ],
+          "entries": [
+            {
+              "ENG_name": "Oaka Birthmark (Courage)",
+              "name": "奥卡胎记（勇敢）",
+              "type": "entries",
+              "entries": [
+                "你知晓戏法{@spell 抵抗术}并能无需材料成分施放它。当你达到3级时，你能以该特质施放一次2环法术{@spell 英雄气概}，且完成一次长休后恢复该能力。这些法术的施法属性为魅力。"
+              ]
+            }
+          ],
+          "fluff": {
+            "_appendRaceFluff": {
+              "ENG_name": "Elf",
+              "name": "精灵",
+              "source": "ObojimaTallGrass"
+            }
+          }
+        },
+        {
+          "ENG_name": "Fury",
+          "name": "狂怒",
+          "source": "ObojimaTallGrass",
+          "page": 128,
+          "additionalSpells": [
+            {
+              "ability": "cha",
+              "innate": {
+                "3": {
+                  "daily": {
+                    "1e": [
+                      "粉碎音波"
+                    ]
+                  }
+                },
+                "_": {
+                  "will": [
+                    "圣火术#c"
+                  ]
+                }
+              }
+            }
+          ],
+          "entries": [
+            {
+              "ENG_name": "Oaka Birthmark (Fury)",
+              "name": "奥卡胎记（狂怒）",
+              "type": "entries",
+              "entries": [
+                "你知晓{@spell 圣火术}戏法。当你达到3级时，你可以用此特质施放一次{@spell 粉碎音波}，且不需要材料成分，完成一次长休后恢复该能力。魅力是你施放这些法术的施法属性。"
+              ]
+            }
+          ],
+          "fluff": {
+            "_appendRaceFluff": {
+              "ENG_name": "Elf",
+              "name": "精灵",
+              "source": "ObojimaTallGrass"
+            }
+          }
+        },
+        {
+          "ENG_name": "Harmony",
+          "name": "和谐",
+          "source": "ObojimaTallGrass",
+          "page": 128,
+          "additionalSpells": [
+            {
+              "ability": "cha",
+              "innate": {
+                "3": {
+                  "daily": {
+                    "1e": [
+                      "安定心神"
+                    ]
+                  }
+                },
+                "_": {
+                  "will": [
+                    "神导术#c"
+                  ]
+                }
+              }
+            }
+          ],
+          "entries": [
+            {
+              "ENG_name": "Oaka Birthmark (Harmony)",
+              "name": "奥卡胎记（和谐）",
+              "type": "entries",
+              "entries": [
+                "你知晓{@spell 神导术}戏法。当你达到3级时，你可以用此特质施放一次{@spell 安定心神}，并在完成一次长休后恢复该能力。魅力是这些法术的施法属性。"
+              ]
+            }
+          ],
+          "fluff": {
+            "_appendRaceFluff": {
+              "ENG_name": "Elf",
+              "name": "精灵",
+              "source": "ObojimaTallGrass"
+            }
+          }
+        },
+        {
+          "ENG_name": "Nature",
+          "name": "自然",
+          "source": "ObojimaTallGrass",
+          "page": 128,
+          "additionalSpells": [
+            {
+              "ability": "cha",
+              "innate": {
+                "3": {
+                  "daily": {
+                    "1e": [
+                      "动物信使"
+                    ]
+                  }
+                },
+                "_": {
+                  "will": [
+                    "舞光术#c"
+                  ]
+                }
+              }
+            }
+          ],
+          "entries": [
+            {
+              "ENG_name": "Oaka Birthmark (Nature)",
+              "name": "奥卡胎记（自然）",
+              "type": "entries",
+              "entries": [
+                "你知晓{@spell 舞光术}戏法并能无需材料成分施放它。当你达到3级时，你能用此特质施放一次{@spell 动物信使}且无需材料成分，完成一次长休后你将恢复以此方式施放该法术的能力。魅力是你施放这些法术的施法属性。"
+              ]
+            }
+          ],
+          "fluff": {
+            "_appendRaceFluff": {
+              "ENG_name": "Elf",
+              "name": "精灵",
+              "source": "ObojimaTallGrass"
+            }
+          }
+        },
+        {
+          "ENG_name": "Purity",
+          "name": "明净",
+          "source": "ObojimaTallGrass",
+          "page": 128,
+          "additionalSpells": [
+            {
+              "ability": "cha",
+              "innate": {
+                "3": {
+                  "daily": {
+                    "1e": [
+                      "次等复原术"
+                    ]
+                  }
+                },
+                "_": {
+                  "will": [
+                    "维生术#c"
+                  ]
+                }
+              }
+            }
+          ],
+          "entries": [
+            {
+              "ENG_name": "Oaka Birthmark (Purity)",
+              "name": "奥卡胎记（纯净）",
+              "type": "entries",
+              "entries": [
+                "你知晓{@spell 维生术}戏法。当你达到3级时，你可以用此特质施放一次{@spell 次等复原术}，并在完成一次长休后恢复该能力。魅力是这些法术的施法属性。"
+              ]
+            }
+          ],
+          "fluff": {
+            "_appendRaceFluff": {
+              "ENG_name": "Elf",
+              "name": "精灵",
+              "source": "ObojimaTallGrass"
+            }
+          }
+        },
+        {
+          "ENG_name": "Selflessness",
+          "name": "慈悲",
+          "source": "ObojimaTallGrass",
+          "page": 128,
+          "additionalSpells": [
+            {
+              "ability": "cha",
+              "innate": {
+                "3": {
+                  "daily": {
+                    "1e": [
+                      "赠生术|ObojimaTallGrass"
+                    ]
+                  }
+                },
+                "_": {
+                  "will": [
+                    "友谊羁绊|ObojimaTallGrass#c"
+                  ]
+                }
+              }
+            }
+          ],
+          "entries": [
+            {
+              "ENG_name": "Oaka Birthmark (Selflessness)",
+              "name": "奥卡胎记（无私）",
+              "type": "entries",
+              "entries": [
+                "你知晓{@spell 友谊羁绊|ObojimaTallGrass}戏法。当你达到3级时，你可以用此特质施放一次{@spell 赠生术|ObojimaTallGrass}，并在完成一次长休后恢复该能力。魅力是这些法术的施法属性。"
+              ]
+            }
+          ],
+          "fluff": {
+            "_appendRaceFluff": {
+              "ENG_name": "Elf",
+              "name": "精灵",
+              "source": "ObojimaTallGrass"
+            }
+          }
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "胧忆岛的精灵与神秘的灵界及其本土精魂有着深厚而特殊的牵挂。与岛屿的其他居民不同，精灵并不形成独立的社区或飞地，因为他们并非传统意义上的人。这是因为精灵是由人类双亲所生。虽然这种情况并不常见，但也不至于罕见到会招致蔑视或忧虑。相反，人们普遍理解精灵的存在是同时立足于两个世界的。",
+          {
+            "ENG_name": "Marked by the Spirits",
+            "name": "灵选之印",
+            "type": "entries",
+            "entries": [
+              "每个精灵都共享一些共同的生理特征，例如尖耳朵和在黑暗中敏锐的视觉能力。然而，胧忆岛精灵与众不同的是他们拥有奥卡标记。每个精灵都带有一个独特的标记，象征着他们与灵界的联系。这些神秘的符文如同闪烁的胎记，大小从一枚硬币到足以覆盖整个肢体不等。",
+              "奥卡标记不仅仅是物理标记，对精灵来说具有深远的意义。它们代表着他们与精魄世界的深厚牵挂，并有可能赋予独特的超然属性。"
+            ]
+          },
+          {
+            "ENG_name": "Spirit Guide by Circumstance",
+            "name": "缘之灵使",
+            "type": "entries",
+            "entries": [
+              "长久以来，岛民与精魂一直和谐共处，尽管声称他们总是事事意见一致会有些误导。因此，当精魂与物质位面的居民之间发生冲突时，精灵常常充当调解者。"
+            ]
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Races/elf.webp"
+            },
+            "credit": "Alexander Cloos",
+            "width": 3284,
+            "height": 3284
+          },
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Races/oaka-mark.webp"
+            },
+            "credit": "Veronica Casson",
+            "title": "奥卡标记",
+            "width": 3330,
+            "height": 3330
+          }
+        ]
+      }
+    }
+  ]
+}

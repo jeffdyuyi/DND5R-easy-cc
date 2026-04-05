@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Masks of the Sacred Beasts (Lion)",
+    "name": "圣兽面具（狮子）",
+    "source": "GriffonsSaddlebag2",
+    "page": 120,
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这些暗色陶瓷和黄金面具是以某些文化中具有神圣象征含义的动物为原型制成的。每种面具的外貌及其词条都由其代表的圣兽决定。在你已与某一面具同调期间，你可以只花费1分钟时间（而非在进行一次或多次短休期间）来结束与当前面具的同调，并与另一面具建立新的同调。",
+      "佩戴着狮面具期间，你基于嗅觉进行的感知（{@skill 察觉}）检定具有优势。除此之外，你的指甲将长长变为利爪，期间你用手进行的徒手打击可以改为伤害骰为{@damage 1d6}挥砍的魔法武器攻击。"
+    ],
+    "lootTables": [
+      "魔法物品表 F1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Masks-of-the-Sacred-Beasts.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Skymetal Staff",
+    "name": "天坠铁杖",
+    "source": "DungeonsDrakkenheim",
+    "page": 232,
+    "baseItem": "长棍|phb",
+    "type": "M",
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 4,
+    "weaponCategory": "简易",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "staff": true,
+    "entries": [
+      "这根长棍由精炼的陨铁制成，并且有一个液态的幻觉核心。",
+      "在你的回合中，当你使用此武器进行一次近战攻击并命中一个生物时，你可以强制目标进行一次{@dc 13}智力豁免检定。如果检定失败，它将受到额外的{@damage 3d6}心灵伤害，并且直到你的下一回合开始前无法进行反应。此外，在它的下一回合中，该生物必须选择执行一个动作、附赠动作或移动：它只能选择这三者之一。"
+    ]
+  }
+]

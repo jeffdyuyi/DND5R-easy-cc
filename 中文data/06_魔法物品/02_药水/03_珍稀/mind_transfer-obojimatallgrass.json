@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Mind Transfer",
+    "name": "心灵转移",
+    "source": "ObojimaTallGrass",
+    "page": 247,
+    "type": "P",
+    "rarity": "rare",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "当饮用这瓶刺鼻灵药时，你的灵魂会从身体中松脱，为转移做好准备。饮用此药水后第一次被生物触碰时，你的心灵和灵魂会转移到该生物的身体中。当栖息在该生物的身体中时，你可以在其每个回合开始时强制它进行一次对抗性的智力或感知检定（你们双方选择使用哪种属性）。如果你成功，你将获得对该生物的完全控制，直到其下一个回合开始。当你的心灵和灵魂离开时，你的身体会处于{@condition 昏迷}状态。如果该生物在你的心灵和灵魂仍在其体内时死亡，你也会死亡。你会在该生物的身体中栖息1小时，直到你以一个动作解除效应，或直到该生物成为{@spell 驱逐善恶}法术的目标。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 52|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/mind-transfer.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1829,
+          "height": 1829
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

@@ -1,0 +1,13 @@
+[
+  {
+    "ENG_name": "Champion of the Hunt",
+    "name": "狩猎天尊",
+    "source": "MOT",
+    "page": 67,
+    "type": "Piety Trait",
+    "entries": [
+      "{@i 虔诚值 50+ 倪勒娅特质}",
+      "选择敏捷或感知属性+2，并且使该属性的上限+2。"
+    ]
+  }
+]

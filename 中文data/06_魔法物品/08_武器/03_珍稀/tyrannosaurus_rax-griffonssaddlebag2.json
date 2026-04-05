@@ -1,0 +1,42 @@
+[
+  {
+    "ENG_name": "Tyrannosaurus Rax",
+    "name": "暴龙战斧",
+    "source": "GriffonsSaddlebag2",
+    "page": 178,
+    "baseItem": "巨斧|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 7,
+    "weaponCategory": "军用",
+    "property": [
+      "H",
+      "2H"
+    ],
+    "dmg1": "1d12",
+    "dmgType": "S",
+    "bonusWeapon": "+1",
+    "entries": [
+      "这把由骨头雕刻而成的战斧能够引导霸王龙的狂暴之力。你使用这把魔化武器进行的攻击检定和伤害掷骰具有+1加值。持握此斧期间，你可以使用一个附赠动作进入横行状态。在横行期间，你可以穿过任何体型不大于你的生物所占据的空间。当你在横行状态下以这种方式穿过生物空间时，你在该回合剩余时间内不会引发该生物的借机攻击。在横行状态下，你每回合可以迫使一个你以这种方式穿过其空间的生物进行一次DC 15的力量或敏捷豁免（由该生物选择）。豁免失败时，该生物受到{@damage 1d6}钝击伤害并陷入{@condition 倒地}状态。此外，在横行状态下，你使用此武器对物件、建筑物和{@condition 倒地}生物进行武器攻击时，掷出19或20时即造成重击。",
+      "你的横行状态持续最多1分钟。如果你在你的回合中没有穿过敌对生物的空间，或者你的生命值降至0，则横行状态提前结束。此战斧的这项属性可以使用两次，且在每日黎明时恢复所有已消耗的使用次数。"
+    ],
+    "lootTables": [
+      "魔法物品表 G1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Tyrannosaurus-Rax.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

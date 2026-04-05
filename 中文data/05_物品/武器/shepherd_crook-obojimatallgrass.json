@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Shepherd Crook",
+    "name": "牧人长杖",
+    "source": "ObojimaTallGrass",
+    "page": 159,
+    "type": "M",
+    "rarity": "none",
+    "weight": 4,
+    "value": 70,
+    "weaponCategory": "军用",
+    "property": [
+      "R",
+      "S"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "weapon": true,
+    "entries": [
+      {
+        "ENG_name": "Special",
+        "name": "特殊",
+        "type": "entries",
+        "entries": [
+          "作为一个附赠动作，你可以对范围内的一个生物进行一次对抗力量检定，若成功则将目标移动到你5尺内的另一个未占据空间。"
+        ]
+      }
+    ]
+  }
+]

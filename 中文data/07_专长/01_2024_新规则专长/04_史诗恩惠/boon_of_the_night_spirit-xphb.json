@@ -1,0 +1,51 @@
+[
+  {
+    "ENG_name": "Boon of the Night Spirit",
+    "name": "暗夜精魂之恩惠",
+    "source": "XPHB",
+    "page": 211,
+    "srd52": true,
+    "basicRules2024": true,
+    "category": "EB",
+    "prerequisite": [
+      {
+        "level": 19
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "max": 30
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Merge with Shadows",
+        "name": "融身入影",
+        "type": "entries",
+        "entries": [
+          "身处{@variantrule 微光光照|XPHB}或{@variantrule 黑暗|XPHB}期间，你可以用{@variantrule 附赠动作|XPHB}令你获得{@condition 隐形|XPHB}状态。隐形状态将在你执行动作/{@variantrule 附赠动作|XPHB}/{@variantrule 反应|XPHB}后立即结束。"
+        ]
+      },
+      {
+        "ENG_name": "Shadowy Form",
+        "name": "幽影化身",
+        "type": "entries",
+        "entries": [
+          "身处{@variantrule 微光光照|XPHB}或{@variantrule 黑暗|XPHB}期间，你具有除心灵和光耀伤害外所有伤害的{@variantrule 抗性|XPHB}。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

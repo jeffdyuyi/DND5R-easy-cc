@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Crystal Ball of Mind Reading",
+    "name": "读心水晶球",
+    "source": "XDMG",
+    "page": 159,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "legendary",
+    "reqAttune": true,
+    "wondrous": true,
+    "weight": 3,
+    "entries": [
+      "在你接触该水晶球期间，你可以用它施展法术{@spell 探知术|XPHB}（豁免{@dc 17}）。此外，你可以对该法术传感器周围30尺之内你可见的生物施展{@spell 侦测思想|XPHB}（豁免{@dc 17}）。该{@spell 侦测思想|XPHB}法术持续期间你无需为其保持专注，但如果{@spell 探知术|XPHB}法术终止，则它也将随之终止。"
+    ],
+    "attachedSpells": [
+      "侦测思想|xphb",
+      "探知术|xphb"
+    ],
+    "lootTables": [
+      "奥秘 - 传说|XDMG"
+    ],
+    "translator": "不全书",
+    "valueReference": 200000,
+    "type": "W"
+  }
+]

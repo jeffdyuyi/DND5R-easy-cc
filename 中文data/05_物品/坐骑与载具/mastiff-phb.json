@@ -1,0 +1,22 @@
+[
+  {
+    "name": "獒犬",
+    "ENG_name": "Mastiff",
+    "source": "PHB",
+    "page": 157,
+    "type": "MNT",
+    "rarity": "none",
+    "value": 2500,
+    "basicRules": true,
+    "carryingCapacity": 195,
+    "referenceSources": [
+      "CoS"
+    ],
+    "reprintedAs": [
+      "獒犬|XPHB"
+    ],
+    "speed": 40,
+    "srd": true,
+    "translator": "不全书"
+  }
+]

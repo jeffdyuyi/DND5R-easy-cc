@@ -1,0 +1,69 @@
+[
+  {
+    "ENG_name": "Preserve",
+    "name": "preserve",
+    "source": "GrimHollowPG24",
+    "page": 198,
+    "level": 0,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一个麻袋，内含一撮盐"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 12
+        }
+      }
+    ],
+    "entries": [
+      "你放在麻袋中重量不超过5磅的进食和其他易腐物品在持续时间内不会衰竭或变坏。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Preserve.webp"
+  }
+]

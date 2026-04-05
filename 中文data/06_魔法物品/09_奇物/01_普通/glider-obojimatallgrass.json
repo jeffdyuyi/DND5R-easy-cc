@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Glider",
+    "name": "滑翔机",
+    "source": "ObojimaTallGrass",
+    "page": 161,
+    "type": "G",
+    "rarity": "none",
+    "entries": [
+      "一个生物在坠落时用双手抓住滑翔机，每轮下降10尺并可以水平移动最多50尺。生物可以使用其动作操作滑翔机，改变移动方向并避开路途中的任何阻碍。如果一个生物1分钟后仍在风中，它必须成功通过DC 10的力量豁免检定否则松开滑翔机，像平常一样坠落。此豁免检定每分钟重复一次，每次进行豁免检定时DC增加2（最高DC 20）。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Book/glider.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 3086,
+          "height": 3662
+        }
+      ]
+    }
+  }
+]

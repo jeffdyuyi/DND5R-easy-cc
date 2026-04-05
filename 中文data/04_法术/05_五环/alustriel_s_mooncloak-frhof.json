@@ -1,0 +1,103 @@
+[
+  {
+    "ENG_name": "Alustriel's Mooncloak",
+    "name": "艾拉斯卓的月辉之篷",
+    "source": "FRHoF",
+    "page": 142,
+    "level": 5,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "emanation",
+      "distance": {
+        "type": "feet",
+        "amount": 20
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一块价值50+GP的月石",
+        "cost": 5000
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "月光从天而降，在持续时间内以{@variantrule 微光光照|XPHB}光照笼罩源自你的20尺{@variantrule 光环 [效应区域]|XPHB|光环}区域。你和你的盟友在位于该区域期间获得{@variantrule 掩护|XPHB|半身掩护}及对寒冷、闪电及光耀伤害的{@variantrule 抗性|XPHB}。",
+      "在法术持续时间内，你可以使用以下选项之一（但这将令此法术立即结束）：",
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Liberation",
+            "name": "解放",
+            "type": "item",
+            "entries": [
+              "当你失败于一次用于避免或结束{@condition 恐慌|XPHB}、{@condition 受擒|XPHB}及{@condition 束缚|XPHB}的豁免时，你可以用一个{@variantrule 反应|XPHB}来将本次豁免改为成功。"
+            ]
+          },
+          {
+            "ENG_name": "Respite",
+            "name": "回春",
+            "type": "item",
+            "entries": [
+              "以一个{@action 魔法|XPHB}动作，你或区域内的一名盟友恢复等于{@dice 4d10}+你的施法属性调整值点{@variantrule 生命值|XPHB}。"
+            ]
+          }
+        ]
+      }
+    ],
+    "damageResist": [
+      "寒冷",
+      "闪电",
+      "光耀"
+    ],
+    "miscTags": [
+      "HL",
+      "LGT"
+    ],
+    "areaTags": [
+      "S"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/FRHoF/Alustriel's Mooncloak.webp"
+          },
+          "credit": "Irina Nordsol",
+          "title": "艾拉斯卓使用其月辉之篷庇护盟友",
+          "width": 1700,
+          "height": 1197
+        }
+      ]
+    },
+    "classes": [
+      "吟游诗人",
+      "德鲁伊",
+      "游侠",
+      "法师"
+    ],
+    "display_school": "防护系"
+  }
+]

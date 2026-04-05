@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Bolts (20)",
+    "name": "冲击弩矢（20支）",
+    "source": "XDMG",
+    "page": 318,
+    "srd52": true,
+    "edition": "one",
+    "type": "A|XPHB",
+    "rarity": "common",
+    "weight": 1.5,
+    "value": 100,
+    "bolt": true,
+    "entries": [
+      "被这个弹药击中的生物必须成功通过一次 {@dc 10} 力量豁免检定，否则将获得 {@condition 倒地|XPHB} 状态。"
+    ],
+    "packContents": [
+      {
+        "item": "弩矢|xphb",
+        "quantity": 20
+      }
+    ],
+    "namePrefix": "冲击",
+    "lootTables": [
+      "武备 - 普通|XDMG",
+      "器具 - 普通|XDMG"
+    ],
+    "_isVariant": true,
+    "valueReference": 50
+  }
+]

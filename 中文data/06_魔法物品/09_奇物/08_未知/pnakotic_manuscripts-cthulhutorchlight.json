@@ -1,0 +1,73 @@
+[
+  {
+    "ENG_name": "Pnakotic Manuscripts",
+    "name": "纳克特抄本",
+    "source": "CthulhuTorchlight",
+    "page": 0,
+    "rarity": "unknown (magic)",
+    "reqAttune": "通过一次DC 15的智力（{@skill 宗教|XPHB}检定）",
+    "wondrous": true,
+    "bonusAc": "+1",
+    "entries": [
+      "《纳克特抄本》源自一个早已失落的种族，远在人类、精灵和其他智慧生物崛起之前，他们就已行走于世。这些生物与克苏鲁神话相通，或许还是祂们的仆从。这部奇异的典籍写成于时间尚未正常流逝之时，并能让人洞悉其运作的奥秘。通过阅读它，你将学会如何在时间的脉动之间穿行。",
+      {
+        "ENG_name": "Language:",
+        "name": "语言：",
+        "type": "entries",
+        "entries": [
+          "{@language 原初语|XPHB}."
+        ]
+      },
+      {
+        "ENG_name": "Attunement Check:",
+        "name": "同调检定：",
+        "type": "entries",
+        "entries": [
+          "智力（{@skill 宗教|XPHB}）DC 15。要结束你与《纳克特抄本》的{@variantrule 同调|XPHB}，你必须成为{@spell 移除诅咒|XPHB}法术的目标。"
+        ]
+      },
+      {
+        "ENG_name": "Benefits:",
+        "name": "增益:",
+        "type": "entries",
+        "entries": [
+          "与《纳克特抄本》同调期间，你获得以下增益：",
+          {
+            "type": "list",
+            "items": [
+              "你的{@variantrule 先攻|XPHB}加值翻倍。",
+              "你的{@variantrule 速度|XPHB}获得+10加值。",
+              "你在所有敏捷豁免检定上具有{@variantrule 优势|XPHB}。",
+              "你的AC获得+1加值。",
+              "每回合一次，当你在移动时，你可以传送回本次移动中曾占据过的任意一处地点。"
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Drawbacks:",
+        "name": "缺点：",
+        "type": "entries",
+        "entries": [
+          "你衰老的速度会加快。一周后，你会额外衰老一周；两周后，你会额外衰老四周；三周后，你会额外衰老六周，以此类推。若你解除了与此物品的{@variantrule 同调|XPHB}之后又再度同调，此缺点的进展将会保留。"
+        ]
+      },
+      {
+        "ENG_name": "Insight-No Time to Tarry (+15):",
+        "name": "洞见–片刻不留 (+15):",
+        "type": "entries",
+        "entries": [
+          "你憎恨任何耗时超过片刻的活动。随着注意力的消散，你会变得不耐烦，并去寻求新的事情来做，将重要的工作置之不理，转而开始一个新项目或寻找其他的新鲜事。"
+        ]
+      },
+      {
+        "ENG_name": "Lore:",
+        "name": "逸闻：",
+        "type": "entries",
+        "entries": [
+          "《纳克特抄本》能让你在所有为了解时间及其本质而进行的检定中自动成功。"
+        ]
+      }
+    ]
+  }
+]

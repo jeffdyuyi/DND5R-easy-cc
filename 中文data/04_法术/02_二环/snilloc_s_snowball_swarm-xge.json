@@ -1,0 +1,76 @@
+[
+  {
+    "ENG_name": "Snilloc's Snowball Swarm",
+    "name": "史尼洛雪球群",
+    "source": "XGE",
+    "page": 165,
+    "otherSources": [
+      {
+        "source": "EEPC",
+        "page": 22
+      }
+    ],
+    "referenceSources": [
+      "PotA"
+    ],
+    "level": 2,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 90
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一块冰或一小块白色岩石碎片"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "在距离之内的，一个由你指定的点上，大量的魔法雪球喷涌而出。以该点为中心，5 尺半径的球形区域内的所有生物必须进行一次敏捷豁免。豁免失败则受到{@damage 3d6}点寒冷伤害，成功则只受到半数伤害。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用三环或更高的法术位施放该法术时，使用的法术位每高一环，伤害就增加{@scaledamage 3d6|2-9|1d6}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "cold"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "areaTags": [
+      "S"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "法师"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "敏捷"
+    ],
+    "display_damageInflict": [
+      "寒冷"
+    ]
+  }
+]

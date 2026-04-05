@@ -1,0 +1,199 @@
+{
+  "subclass": [
+    {
+      "ENG_name": "Order of the Lycan",
+      "name": "化狼结社",
+      "source": "BloodHunter2024",
+      "shortName": "化狼",
+      "className": "血猎手",
+      "classSource": "BloodHunter2024",
+      "subclassFeatures": [
+        "化狼结社|血猎手|BloodHunter2024|化狼|BloodHunter2024|3",
+        "追猎造诣|血猎手|BloodHunter2024|化狼|BloodHunter2024|7",
+        "高等变形|血猎手|BloodHunter2024|化狼|BloodHunter2024|11",
+        "饕餮烙印|血猎手|BloodHunter2024|化狼|BloodHunter2024|15",
+        "怒号血咒（化狼）|血猎手|BloodHunter2024|化狼|BloodHunter2024|15",
+        "变形精通|血猎手|BloodHunter2024|化狼|BloodHunter2024|18"
+      ]
+    }
+  ],
+  "subclassFeature": [
+    {
+      "ENG_name": "Order of the Lycan",
+      "name": "化狼结社",
+      "source": "BloodHunter2024",
+      "className": "血猎手",
+      "classSource": "BloodHunter2024",
+      "subclassShortName": "化狼",
+      "subclassSource": "BloodHunter2024",
+      "level": 3,
+      "entries": [
+        "兽化人在世界各地都令人畏惧，而化狼结社对此比任何人都更清楚。他们挥舞着野兽的鲜血，袭杀恐惧于敌人之中并毫不留情地撕裂它们。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "混种变形|血猎手|BloodHunter2024|化狼|BloodHunter2024|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Hybrid Transformation",
+      "name": "混种变形",
+      "source": "BloodHunter2024",
+      "className": "血猎手",
+      "classSource": "BloodHunter2024",
+      "subclassShortName": "化狼",
+      "subclassSource": "BloodHunter2024",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你的血液中流淌着兽化诅咒，而你尽己所能地控制着它。以一个{@variantrule 附赠动作|XPHB}，你可以变形为混种形态至多1小时。在此形态下你可以说话、使用装备和穿戴护甲，并能以一个{@variantrule 附赠动作|XPHB}提前恢复到正常形态。若你昏迷或死亡，将自动恢复到正常形态。",
+        "使用此特性后，你必须完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}才能再次使用。变形期间，你获得以下特性：",
+        {
+          "ENG_name": "Feral Might",
+          "name": "野性之力",
+          "type": "entries",
+          "entries": [
+            "你在力量检定和力量豁免检定上具有优势，并且你在近战伤害掷骰上获得+1加值。当你达到血猎手11级（+2）和18级（+3）时，此加值增加1。"
+          ]
+        },
+        {
+          "ENG_name": "Resilient Hide",
+          "name": "坚韧毛皮",
+          "type": "entries",
+          "entries": [
+            "你对非镀银武器造成的钝击、穿刺、挥砍伤害具有抗性。额外地，当你没有穿着重甲时，你的 AC 获得+1 加值。"
+          ]
+        },
+        {
+          "ENG_name": "Predatory Strikes",
+          "name": "掠食打击",
+          "type": "entries",
+          "entries": [
+            "你可以将猩红仪式特性应用于你的徒手打击，并视作一种武器。你可以用敏捷来代替力量进行徒手打击的攻击及伤害掷骰，徒手打击造成{@dice 1d6}钝击或挥砍伤害（由你选择）。此伤害在血猎手11级时增加到{@dice 1d8}。当你以攻击动作执行徒手打击时，你可以作为该动作的一部分发动一次额外的徒手打击。"
+          ]
+        },
+        {
+          "ENG_name": "Bloodlust",
+          "name": "嗜血",
+          "type": "entries",
+          "entries": [
+            "若你开始回合时浴血，你必须成功通过一次难度为8的感知豁免检定，否则你向距你最近的生物直线移动，并且对其进行攻击动作。若你正专注于一个法术或受到无法专注的效果影响（如野蛮人的{@classFeature 狂暴|野蛮人|xphb|1}特性），你在此豁免检定中自动失败。",
+            "若你拥有额外攻击特性，你可以选择是否在这次狂化种攻击中使用它。若有超过一个生物与你距离相等，掷骰以随机决定目标。攻击完成后，你恢复控制。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Stalker's Prowess",
+      "name": "追猎造诣",
+      "source": "BloodHunter2024",
+      "className": "血猎手",
+      "classSource": "BloodHunter2024",
+      "subclassShortName": "化狼",
+      "subclassSource": "BloodHunter2024",
+      "level": 7,
+      "entries": [
+        "你体内的兽化症强化了你的身体，赋予你以下增益。",
+        {
+          "ENG_name": "Enhanced Musculature",
+          "name": "强化肌肉组织",
+          "type": "entries",
+          "entries": [
+            "你的速度增加10尺，并且你的跳远距离增加10尺，跳高距离增加3尺。"
+          ]
+        },
+        {
+          "ENG_name": "Improved Predatory Strikes",
+          "name": "进阶掠食打击",
+          "type": "entries",
+          "entries": [
+            "当你处于混种形态时，你的徒手打击进行的攻击检定得到+1加值。此加值在你达到血猎手11级时提升至+2，18级时提升至+3。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Advanced Transformation",
+      "name": "高等变形",
+      "source": "BloodHunter2024",
+      "className": "血猎手",
+      "classSource": "BloodHunter2024",
+      "subclassShortName": "化狼",
+      "subclassSource": "BloodHunter2024",
+      "level": 11,
+      "entries": [
+        "你继续深入诅咒的效应，获得以下增益。",
+        {
+          "ENG_name": "Hybrid Control",
+          "name": "混合控制",
+          "type": "entries",
+          "entries": [
+            "你可以使用你的混种变形特性两次，而非一次，在休息之间。"
+          ]
+        },
+        {
+          "ENG_name": "Lycan Regeneration",
+          "name": "狼化再生",
+          "type": "entries",
+          "entries": [
+            "每当你浴血且至少有1点生命值的回合开始时，你获得等于1 + 你的体质调整值（至少为1）的生命值。如果你处于混种形态，你必须在为嗜血进行豁免检定前获得这些生命值。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Brand of the Voracious",
+      "name": "饕餮烙印",
+      "source": "BloodHunter2024",
+      "className": "血猎手",
+      "classSource": "BloodHunter2024",
+      "subclassShortName": "化狼",
+      "subclassSource": "BloodHunter2024",
+      "level": 15,
+      "entries": [
+        "你的惩戒烙印现在可以将敌人与你的猎人之狂怒绑定。在你的混种形态中，你对被你烙印的生物进行的攻击检定具有优势。"
+      ]
+    },
+    {
+      "ENG_name": "Blood Curse of the Howl",
+      "name": "怒号血咒（化狼）",
+      "source": "BloodHunter2024",
+      "className": "血猎手",
+      "classSource": "BloodHunter2024",
+      "subclassShortName": "化狼",
+      "subclassSource": "BloodHunter2024",
+      "level": 15,
+      "entries": [
+        "你可以消耗一次鲜血秘法的使用次数，以魔法动作施放一个特殊血咒。你发出一阵毛骨悚然的嚎叫。每个30尺光环内能听到你的生物必须通过一次感知豁免检定，否则对你陷入恐慌，直至你下回合结束。若生物豁免检定失败且骰值比DC相差5或更多，其在恐慌的同时被震慑。通过豁免检定的生物在接下来的24小时内免疫此血咒。",
+        "你可以选择任意数量你能看见的生物不受此嚎叫影响。",
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "ENG_name": "Amplify",
+              "name": "增幅",
+              "type": "entries",
+              "entries": [
+                "你改为以一个{@variantrule 附赠动作|XPHB}来施放此血咒。"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Transformation Mastery",
+      "name": "变形精通",
+      "source": "BloodHunter2024",
+      "className": "血猎手",
+      "classSource": "BloodHunter2024",
+      "subclassShortName": "化狼",
+      "subclassSource": "BloodHunter2024",
+      "level": 18,
+      "entries": [
+        "你可以无限制地使用你的混种变形特性，且你的混种形态会一直持续，直到你恢复到正常形态、昏迷或死亡。",
+        "此外，你在进行嗜血的豁免检定时具有优势。"
+      ]
+    }
+  ]
+}

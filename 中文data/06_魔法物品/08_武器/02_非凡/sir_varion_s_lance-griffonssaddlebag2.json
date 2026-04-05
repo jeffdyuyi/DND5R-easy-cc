@@ -1,0 +1,42 @@
+[
+  {
+    "ENG_name": "Sir Varion's Lance",
+    "name": "瓦里昂爵士的骑枪",
+    "source": "GriffonsSaddlebag2",
+    "page": 162,
+    "baseItem": "骑枪|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "weight": 6,
+    "weaponCategory": "军用",
+    "property": [
+      "R",
+      "S"
+    ],
+    "dmg1": "1d12",
+    "dmgType": "P",
+    "bonusWeapon": "+1",
+    "entries": [
+      "这把沉重的骑枪最初是为勇敢的骑士瓦里昂爵士Sir Varion所打造，他以不拘于坐骑而闻名。你使用这把魔法武器进行攻击检定和伤害掷骰获得 +1 加值。这把武器具有重型词条，但其独特的平衡设计使其在近距离战斗中也能发挥良好。用此武器攻击5尺内的目标时不会使攻击检定具有劣势。",
+      "如果你已与{@item 瓦里昂爵士的盾牌|GriffonsSaddlebag2}同调，你可以在持握盾牌的同时单手持用这把武器，而非必须双手持用。"
+    ],
+    "lootTables": [
+      "魔法物品表 F1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Sir-Varions-Lance.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

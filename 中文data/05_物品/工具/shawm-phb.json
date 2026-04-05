@@ -1,0 +1,18 @@
+[
+  {
+    "name": "芦笛",
+    "ENG_name": "Shawm",
+    "source": "PHB",
+    "page": 154,
+    "edition": "classic",
+    "type": "INS",
+    "rarity": "none",
+    "weight": 1,
+    "value": 200,
+    "basicRules": true,
+    "reprintedAs": [
+      "芦笛|XPHB"
+    ],
+    "srd": true
+  }
+]

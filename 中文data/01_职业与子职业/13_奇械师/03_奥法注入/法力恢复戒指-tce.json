@@ -1,0 +1,34 @@
+{
+  "ENG_name": "Spell-Refueling Ring",
+  "name": "法力恢复戒指",
+  "source": "TCE",
+  "page": 23,
+  "reprintedAs": [
+    {
+      "uid": "法力恢复戒指|EFA",
+      "tag": "item"
+    }
+  ],
+  "featureType": [
+    "AI"
+  ],
+  "prerequisite": [
+    {
+      "level": {
+        "level": 6,
+        "class": {
+          "ENG_name": "Artificer",
+          "name": "奇械师",
+          "source": "TCE"
+        }
+      },
+      "item": [
+        "一枚戒指（需要同调）"
+      ]
+    }
+  ],
+  "entries": [
+    "在佩戴此戒指期间，那个生物能够以一个动作恢复一个已被消耗掉的法术位。被恢复的法术位环阶必须是3环或更低环阶的法术位。一旦使用，此戒指在次日黎明前将无法再次使用。"
+  ],
+  "translator": "不全书"
+}

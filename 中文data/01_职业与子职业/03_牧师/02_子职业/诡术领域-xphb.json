@@ -1,0 +1,224 @@
+{
+  "ENG_name": "Trickery Domain",
+  "name": "诡术领域",
+  "shortName": "诡术",
+  "source": "XPHB",
+  "className": "牧师",
+  "classSource": "XPHB",
+  "page": 75,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "3": [
+          "魅惑类人|XPHB",
+          "易容术|XPHB",
+          "隐形术|XPHB",
+          "行动无踪|XPHB"
+        ],
+        "5": [
+          "催眠图纹|XPHB",
+          "回避侦测|XPHB"
+        ],
+        "7": [
+          "困惑术|XPHB",
+          "任意门|XPHB"
+        ],
+        "9": [
+          "支配类人|XPHB",
+          "篡改记忆|XPHB"
+        ]
+      }
+    }
+  ],
+  "subclassFeatures": [
+    "诡术领域|牧师|XPHB|诡术|XPHB|3",
+    "诡诈换位|牧师|XPHB|诡术|XPHB|6",
+    "精通分身|牧师|XPHB|诡术|XPHB|17"
+  ],
+  "features": [
+    {
+      "ENG_name": "Trickery Domain",
+      "name": "诡术领域",
+      "source": "XPHB",
+      "page": 75,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "诡术",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "entries": [
+        "{@i 以恶作剧与计谋混淆视听}",
+        "诡术领域提供了关于恶作剧者、狡诈艺术家、盗贼、反叛者和解放者之神。该领域的牧师是世界上的颠覆力量，他们撕破虚饰，拆穿谎言，嘲弄暴君并释放被囚禁者。他们更倾向于智取而非力敌，且常常通过巧妙的计谋掩盖真实的意图。这些神明包括了所有致力于欺骗、阴谋和改变的成员。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "诡术领域法术|牧师|XPHB|诡术|XPHB|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "诡术祝福|牧师|XPHB|诡术|XPHB|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "召现分身|牧师|XPHB|诡术|XPHB|3"
+        }
+      ],
+      "translator": "不全书"
+    },
+    {
+      "ENG_name": "Trickery Domain Spells",
+      "name": "诡术领域法术",
+      "source": "XPHB",
+      "page": 76,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "诡术",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "你与此神圣领域的链接使你始终准备着特定的法术。当你到达诡术领域法术表中特定的牧师等级时，你就始终准备着表中对应的法术。",
+        {
+          "type": "table",
+          "caption": "诡术领域法术",
+          "colLabels": [
+            "牧师等级",
+            "准备法术"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-11"
+          ],
+          "rows": [
+            [
+              "3",
+              "{@spell 魅惑类人|XPHB}，{@spell 易容术|XPHB}，{@spell 隐形术|XPHB}，{@spell 行动无踪|XPHB}"
+            ],
+            [
+              "5",
+              "{@spell 催眠图纹|XPHB}，{@spell 回避侦测|XPHB}"
+            ],
+            [
+              "7",
+              "{@spell 困惑术|XPHB}，{@spell 任意门|XPHB}"
+            ],
+            [
+              "9",
+              "{@spell 支配类人|XPHB}，{@spell 篡改记忆|XPHB}"
+            ]
+          ]
+        }
+      ],
+      "translator": "不全书"
+    },
+    {
+      "ENG_name": "Blessing of the Trickster",
+      "name": "诡术祝福",
+      "source": "XPHB",
+      "page": 75,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "诡术",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "以一个{@action 魔法|XPHB}动作，你可以选择自己或 30 尺内一个自愿生物，所选生物在进行敏捷（{@skill 隐匿|XPHB}）检定时具有{@variantrule 优势|XPHB}。此祝福持续至你完成一次{@variantrule 长休|XPHB}或直至你再次使用此特性。"
+      ]
+    },
+    {
+      "ENG_name": "Invoke Duplicity",
+      "name": "召现分身",
+      "source": "XPHB",
+      "page": 75,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "诡术",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "header": 2,
+      "consumes": {
+        "ENG_name": "Channel Divinity",
+        "name": "引导神力"
+      },
+      "entries": [
+        "以一个{@variantrule 附赠动作|XPHB}，你可以消耗一次引导神力次数来创造一个自己的完美视觉幻象并出现在你身边 30 尺内一个你能看见且未占据空间。该幻象是无实体的且不占据它所在的空间。幻象持续 1 分钟，或直至你将其解除（无需动作）或陷入{@condition 失能|XPHB}状态。这个幻象栩栩如生，能模仿你的表情和姿势。当幻象存在时，你将获得以下好处：",
+        {
+          "ENG_name": "Cast Spells",
+          "name": "施法",
+          "type": "entries",
+          "entries": [
+            "你可以如同你在幻象所在位置施展法术，但必须使用你自己的感官。"
+          ]
+        },
+        {
+          "ENG_name": "Distract",
+          "name": "干扰",
+          "type": "entries",
+          "entries": [
+            "当你和你的幻象都在同一个生物身边 5 尺内，且该生物可以看见幻象时，由于幻象对目标造成的干扰，你对其进行的攻击检定具有{@variantrule 优势|XPHB}。"
+          ]
+        },
+        {
+          "ENG_name": "Move",
+          "name": "移动",
+          "type": "entries",
+          "entries": [
+            "以一个{@variantrule 附赠动作|XPHB}，你可以移动幻象至多 30 尺到达一处空间，该空间必须是你 120 尺内一处可见的未占据空间。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Trickster's Transposition",
+      "name": "诡诈换位",
+      "source": "XPHB",
+      "page": 76,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "诡术",
+      "subclassSource": "XPHB",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "每当你使用{@variantrule 附赠动作|XPHB}创造或移动你来自召现分身特性的幻象时，你都可以通过传送与幻象交换位置。"
+      ]
+    },
+    {
+      "ENG_name": "Improved Duplicity",
+      "name": "精通分身",
+      "source": "XPHB",
+      "page": 76,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "诡术",
+      "subclassSource": "XPHB",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "你召唤分身特性所创造的幻象在以下方面变得更加强力。",
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "ENG_name": "Shared Distraction",
+              "name": "共享干扰",
+              "type": "entries",
+              "entries": [
+                "当你和你的盟友对位于幻象 5 尺内的生物进行攻击检定时具有{@variantrule 优势|XPHB}。"
+              ]
+            },
+            {
+              "ENG_name": "Healing Illusion",
+              "name": "治愈幻象",
+              "type": "entries",
+              "entries": [
+                "当幻象消失时，你或你选择的 5 尺内的一名生物恢复等同于你牧师等级的{@variantrule 生命值|XPHB}。"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+[
+  {
+    "name": "渔具",
+    "ENG_name": "Fishing Tackle",
+    "source": "PHB",
+    "page": 151,
+    "type": "G",
+    "rarity": "none",
+    "weight": 4,
+    "value": 100,
+    "entries": [
+      "一套渔具工具包中，装有一根长杆、丝线、软木转轴、铅坠、天鹅绒饵以及窄眼网。"
+    ],
+    "basicRules": true,
+    "referenceSources": [
+      "TTP"
+    ],
+    "srd": true,
+    "translator": "不全书"
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "ENG_name": "Cloudkill",
+    "name": "死云术",
+    "source": "XPHB",
+    "page": 251,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 5,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你指定施法距离内一点，在以该点为中心、半径 20 尺{@variantrule 球状 [效应区域]|XPHB|球状}区域内，创造一片黄绿色剧毒浓雾。雾气在法术持续时间内维持存在，但仍会被强风吹散（比如{@spell 造风术|XPHB}）并解除法术。雾气存在区域视为{@variantrule 重度遮蔽|XPHB}。",
+      "每名位于{@variantrule 球状 [效应区域]|XPHB|球状}区域内的生物都进行一次体质豁免，豁免失败者受到{@damage 5d8}点毒素伤害，豁免成功则受到半数伤害。每当{@variantrule 球状 [效应区域]|XPHB|球状}区域移动到一名生物区域内时、一名生物进入{@variantrule 球状 [效应区域]|XPHB|球状}区域时或是在该区域结束其回合时，该生物同样需要进行一次豁免。一名生物一回合只需要进行一次该豁免。",
+      "在你的每个回合开始时，{@variantrule 球状 [效应区域]|XPHB|球状}区域会往远离你的方向移动10尺。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "使用的法术位每比五环高一环，此法术的伤害就增加{@scaledamage 5d8|5-9|1d8}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "poison"
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "miscTags": [
+      "OBS"
+    ],
+    "areaTags": [
+      "S"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "法师"
+    ],
+    "display_school": "咒法系",
+    "display_savingThrow": [
+      "体质"
+    ],
+    "display_damageInflict": [
+      "毒素"
+    ]
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "ENG_name": "Forced Evolution",
+    "name": "强制进化",
+    "source": "DungeonsDrakkenheim",
+    "page": 227,
+    "level": 4,
+    "school": "T",
+    "time": [
+      {
+        "number": 8,
+        "unit": "小时"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一份使用稀有材料与妄质尘制作的炼金混合物，价值250gp，作为本法术给目标服用所用的耗材",
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "通过这个法术，你将一个来自{@adventure 污染|DungeonsDrakkenheim|12}的突变转化为另一种形式。目标的现有突变会被移除并被另一个不同的突变所取代。这个突变可由游戏大师选择或随机决定（参见《德拉肯海姆之墟》附录C）。"
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        }
+      ]
+    }
+  }
+]

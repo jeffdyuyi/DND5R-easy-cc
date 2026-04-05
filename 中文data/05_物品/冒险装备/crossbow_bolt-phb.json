@@ -1,0 +1,22 @@
+[
+  {
+    "name": "弩矢",
+    "ENG_name": "Crossbow Bolt",
+    "source": "PHB",
+    "page": 150,
+    "edition": "classic",
+    "type": "A",
+    "rarity": "none",
+    "weight": 0.075,
+    "value": 5,
+    "basicRules": true,
+    "bolt": true,
+    "referenceSources": [
+      "TTP"
+    ],
+    "reprintedAs": [
+      "弩矢|XPHB"
+    ],
+    "srd": true
+  }
+]

@@ -1,0 +1,532 @@
+{
+    "optionalfeature": [
+        {
+            "ENG_name": "Breath of Winter",
+            "name": "寒冬之息",
+            "source": "PHB",
+            "page": 81,
+            "featureType": [
+                "ED"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 17,
+                        "class": {
+                            "ENG_name": "Monk",
+                            "name": "武僧"
+                        },
+                        "subclass": {
+                            "ENG_name": "Way of the Four Elements",
+                            "name": "四象宗"
+                        }
+                    }
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": {
+                            "resource": {
+                                "6": [
+                                    "寒冰锥|PHB"
+                                ]
+                            }
+                        }
+                    },
+                    "resourceName": "气",
+                    "ability": "wis"
+                }
+            ],
+            "entries": [
+                "你可以消耗 6 点气施展法术{@spell 寒冰锥|PHB}。"
+            ]
+        },
+        {
+            "ENG_name": "Clench of the North Wind",
+            "name": "北风之握",
+            "source": "PHB",
+            "page": 81,
+            "featureType": [
+                "ED"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 6,
+                        "class": {
+                            "ENG_name": "Monk",
+                            "name": "武僧"
+                        },
+                        "subclass": {
+                            "ENG_name": "Way of the Four Elements",
+                            "name": "四象宗"
+                        }
+                    }
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": {
+                            "resource": {
+                                "3": [
+                                    "定身类人|PHB"
+                                ]
+                            }
+                        }
+                    },
+                    "resourceName": "气",
+                    "ability": "wis"
+                }
+            ],
+            "entries": [
+                "你可以消耗 3 点气施展法术{@spell 定身类人|PHB}。"
+            ]
+        },
+        {
+            "ENG_name": "Elemental Attunement",
+            "name": "元素同调",
+            "source": "PHB",
+            "page": 81,
+            "featureType": [
+                "ED"
+            ],
+            "entries": [
+                "你可以用动作短暂操控身边 30 尺内的元素之力，并产生下列效应之一：",
+                {
+                    "type": "list",
+                    "items": [
+                        "用土、水、气、火创造一次无害的瞬间视听效应，比如火花闪现、清风吹拂、青雾飘散、岩石轰隆。",
+                        "瞬间点燃或吹熄蜡烛，火炬或小型营火。",
+                        "加热或降温至多 1 磅无生命的物质，至多持续 1 小时。",
+                        "将土，水，雾或火按照你的心意塑形成至多 1 尺立方的粗糙形状，至多持续 1 分钟。"
+                    ]
+                }
+            ]
+        },
+        {
+            "ENG_name": "Eternal Mountain Defense",
+            "name": "苍山庇佑",
+            "source": "PHB",
+            "page": 81,
+            "featureType": [
+                "ED"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 17,
+                        "class": {
+                            "ENG_name": "Monk",
+                            "name": "武僧"
+                        },
+                        "subclass": {
+                            "ENG_name": "Way of the Four Elements",
+                            "name": "四象宗"
+                        }
+                    }
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": {
+                            "resource": {
+                                "5": [
+                                    "石肤术|PHB"
+                                ]
+                            }
+                        }
+                    },
+                    "resourceName": "气",
+                    "ability": "wis"
+                }
+            ],
+            "entries": [
+                "你可以消耗 5 点气对自身施展{@spell 石肤术|PHB}。"
+            ]
+        },
+        {
+            "ENG_name": "Fangs of the Fire Snake",
+            "name": "火蛇利牙",
+            "source": "PHB",
+            "page": 81,
+            "featureType": [
+                "ED"
+            ],
+            "entries": [
+                "你在自己回合内执行{@action 攻击|PHB}动作时，可以消耗 1 点气使得火焰触须从四肢喷涌而出。在本回合余下时间里，你进行徒手打击时的触及范围增加 10 尺。而这些攻击造成的伤害变为火焰伤害，而非钝击伤害。若在攻击命中时再消耗 1 点气，则该次攻击还可额外造成{@damage 1d10} 点火焰伤害。"
+            ]
+        },
+        {
+            "ENG_name": "Fist of Four Thunders",
+            "name": "四雷拳",
+            "source": "PHB",
+            "page": 81,
+            "featureType": [
+                "ED"
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": {
+                            "resource": {
+                                "2": [
+                                    "雷鸣波|PHB"
+                                ]
+                            }
+                        }
+                    },
+                    "resourceName": "气",
+                    "ability": "wis"
+                }
+            ],
+            "entries": [
+                "你可以消耗 2 点气施展{@spell 雷鸣波|PHB}。"
+            ]
+        },
+        {
+            "ENG_name": "Flames of the Phoenix",
+            "name": "凤凰烈焰",
+            "source": "PHB",
+            "page": 81,
+            "featureType": [
+                "ED"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "ENG_name": "Monk",
+                            "name": "武僧"
+                        },
+                        "subclass": {
+                            "ENG_name": "Way of the Four Elements",
+                            "name": "四象宗"
+                        }
+                    }
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": {
+                            "resource": {
+                                "4": [
+                                    "火球术|PHB"
+                                ]
+                            }
+                        }
+                    },
+                    "resourceName": "气",
+                    "ability": "wis"
+                }
+            ],
+            "entries": [
+                "你可以消耗 4 点气施展{@spell 火球术|PHB}。"
+            ]
+        },
+        {
+            "ENG_name": "Gong of the Summit",
+            "name": "狮吼功",
+            "source": "PHB",
+            "page": 81,
+            "featureType": [
+                "ED"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 6,
+                        "class": {
+                            "ENG_name": "Monk",
+                            "name": "武僧"
+                        },
+                        "subclass": {
+                            "ENG_name": "Way of the Four Elements",
+                            "name": "四象宗"
+                        }
+                    }
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": {
+                            "resource": {
+                                "3": [
+                                    "粉碎音波|PHB"
+                                ]
+                            }
+                        }
+                    },
+                    "resourceName": "气",
+                    "ability": "wis"
+                }
+            ],
+            "entries": [
+                "你可以消耗 3 点气施展{@spell 粉碎音波|PHB}。"
+            ]
+        },
+        {
+            "ENG_name": "Mist Stance",
+            "name": "云雾势",
+            "source": "PHB",
+            "page": 81,
+            "featureType": [
+                "ED"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "ENG_name": "Monk",
+                            "name": "武僧"
+                        },
+                        "subclass": {
+                            "ENG_name": "Way of the Four Elements",
+                            "name": "四象宗"
+                        }
+                    }
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": {
+                            "resource": {
+                                "4": [
+                                    "气化形体|PHB"
+                                ]
+                            }
+                        }
+                    },
+                    "resourceName": "气",
+                    "ability": "wis"
+                }
+            ],
+            "entries": [
+                "你可以消耗 4 点气对自身施展{@spell 气化形体|PHB}。"
+            ]
+        },
+        {
+            "ENG_name": "Ride the Wind",
+            "name": "攀云步",
+            "source": "PHB",
+            "page": 81,
+            "featureType": [
+                "ED"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 11,
+                        "class": {
+                            "ENG_name": "Monk",
+                            "name": "武僧"
+                        },
+                        "subclass": {
+                            "ENG_name": "Way of the Four Elements",
+                            "name": "四象宗"
+                        }
+                    }
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": {
+                            "resource": {
+                                "4": [
+                                    "飞行术|PHB"
+                                ]
+                            }
+                        }
+                    },
+                    "resourceName": "气",
+                    "ability": "wis"
+                }
+            ],
+            "entries": [
+                "你可以消耗 4 点气对自身施展{@spell 飞行术|PHB}。"
+            ]
+        },
+        {
+            "ENG_name": "River of Hungry Flame",
+            "name": "噬焰流",
+            "source": "PHB",
+            "page": 81,
+            "featureType": [
+                "ED"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 17,
+                        "class": {
+                            "ENG_name": "Monk",
+                            "name": "武僧"
+                        },
+                        "subclass": {
+                            "ENG_name": "Way of the Four Elements",
+                            "name": "四象宗"
+                        }
+                    }
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": {
+                            "resource": {
+                                "5": [
+                                    "火墙术|PHB"
+                                ]
+                            }
+                        }
+                    },
+                    "resourceName": "气",
+                    "ability": "wis"
+                }
+            ],
+            "entries": [
+                "你可以消耗 5 点气施展{@spell 火墙术|PHB}。"
+            ]
+        },
+        {
+            "ENG_name": "Rush of the Gale Spirits",
+            "name": "风灵突进",
+            "source": "PHB",
+            "page": 81,
+            "featureType": [
+                "ED"
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": {
+                            "resource": {
+                                "2": [
+                                    "造风术|PHB"
+                                ]
+                            }
+                        }
+                    },
+                    "resourceName": "气",
+                    "ability": "wis"
+                }
+            ],
+            "entries": [
+                "你可以消耗 2 点气施展{@spell 造风术|PHB}。"
+            ]
+        },
+        {
+            "ENG_name": "Shape the Flowing River",
+            "name": "身化长流",
+            "source": "PHB",
+            "page": 81,
+            "featureType": [
+                "ED"
+            ],
+            "entries": [
+                "作为一个动作，你可以消耗 1 点气并指定你周边 120 尺内一块不大于 30 尺的冰或水的区域。你可以将该区域内的水凝为冰，反之亦可，并且还可以将区域内的冰塑造成任意的形状。你可以提高或降低冰的高度，创造或填平沟壑，竖起或放倒冰墙，或是塑造一根冰柱。这些造型的最大尺寸不能超过该区域最大边长的一半。例如，假设你影响一块 30 尺的方状区域，你可以竖起的冰柱高度至多为 15 尺，提升或降低区域内总体高度至多 15 尺，创造的沟壑最深 15 尺，等等。你不能通过塑形冰来困住或伤害区域内的生物。"
+            ]
+        },
+        {
+            "ENG_name": "Sweeping Cinder Strike",
+            "name": "飞炎击",
+            "source": "PHB",
+            "page": 81,
+            "featureType": [
+                "ED"
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": {
+                            "resource": {
+                                "2": [
+                                    "燃烧之手|PHB"
+                                ]
+                            }
+                        }
+                    },
+                    "resourceName": "气",
+                    "ability": "wis"
+                }
+            ],
+            "entries": [
+                "你可以消耗 2 点气施展{@spell 燃烧之手|PHB}。"
+            ]
+        },
+        {
+            "ENG_name": "Unbroken Air",
+            "name": "凝气刚拳",
+            "source": "PHB",
+            "page": 81,
+            "featureType": [
+                "ED"
+            ],
+            "entries": [
+                "你可以将大气凝聚成拳进行打击。作为一个动作，你可以消耗 2 点气并指定一个在你身边 30 尺内的生物。该生物必须进行一次力量豁免，豁免失败者将受到 {@damage 3d10} 点钝击伤害，此外你每额外消耗 1 点气则再增加 {@damage 1d10} 点钝击伤害，并且可以将目标从远离你的方向推开至多 20 尺再使其{@condition 倒地|PHB}。豁免成功则伤害减半，且不会被推离和{@condition 倒地|PHB}。"
+            ]
+        },
+        {
+            "ENG_name": "Water Whip",
+            "name": "清流鞭",
+            "source": "PHB",
+            "page": 81,
+            "featureType": [
+                "ED"
+            ],
+            "entries": [
+                "你可以用一个动作消耗 2 点气创造一根水鞭推拉目标使其失去平衡。指定你周边 30 尺区域内一个你能看见的生物，并迫使其进行一次敏捷豁免。豁免失败者将受到 {@damage 3d10} 点钝击伤害，此外你每额外消耗 1 点气则再增加 {@damage 1d10} 点钝击伤害，且你可以使目标{@condition 倒地|PHB}或者将其向你的方向拉近至多 25 尺。豁免成功则伤害减半，且不会被拉近和{@condition 倒地|PHB}。"
+            ]
+        },
+        {
+            "ENG_name": "Wave of Rolling Earth",
+            "name": "滚石流",
+            "source": "PHB",
+            "page": 81,
+            "featureType": [
+                "ED"
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 17,
+                        "class": {
+                            "ENG_name": "Monk",
+                            "name": "武僧"
+                        },
+                        "subclass": {
+                            "ENG_name": "Way of the Four Elements",
+                            "name": "四象宗"
+                        }
+                    }
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": {
+                            "resource": {
+                                "6": [
+                                    "石墙术|PHB"
+                                ]
+                            }
+                        }
+                    },
+                    "resourceName": "气",
+                    "ability": "wis"
+                }
+            ],
+            "entries": [
+                "你可以消耗 6 点气施展{@spell 石墙术|PHB}。"
+            ]
+        }
+    ]
+}

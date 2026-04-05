@@ -1,0 +1,46 @@
+[
+  {
+    "ENG_name": "Durability",
+    "name": "耐久度",
+    "source": "ObojimaTallGrass",
+    "page": 225,
+    "type": "P",
+    "rarity": "uncommon",
+    "property": [
+      "Com"
+    ],
+    "entries": [
+      "当你饮用这瓶药水时，你的皮肤会变得像厚皮甲一样坚韧，并且短时间内能够自我修复。在1分钟内，你每回合开始时获得10点临时生命值。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 34|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Combat/durability.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1648,
+          "height": 1648
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1,
+        "autoDestroy": false
+      }
+    }
+  }
+]

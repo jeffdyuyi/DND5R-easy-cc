@@ -1,0 +1,32 @@
+[
+  {
+    "name": "镶钉皮甲",
+    "ENG_name": "Studded Leather Armor",
+    "source": "PHB",
+    "page": 144,
+    "edition": "classic",
+    "type": "LA",
+    "rarity": "none",
+    "weight": 13,
+    "value": 4500,
+    "ac": 12,
+    "armor": true,
+    "entries": [
+      "该护甲由坚固而柔韧的皮革制成，其表面由紧密的铆钉和尖刺进行加固。"
+    ],
+    "basicRules": true,
+    "referenceSources": [
+      "LMoP",
+      "TftYP-TSC",
+      "ToA",
+      "GoS",
+      "BGDIA",
+      "CM",
+      "JttRC"
+    ],
+    "reprintedAs": [
+      "镶钉皮甲|XPHB"
+    ],
+    "srd": true
+  }
+]

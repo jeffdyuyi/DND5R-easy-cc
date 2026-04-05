@@ -1,0 +1,33 @@
+[
+  {
+    "ENG_name": "Pyroconverger",
+    "name": "聚焰器",
+    "source": "GGR",
+    "page": 180,
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "聚焰器是一种伊捷制造的投火机。每次使用它时都有故障风险。",
+      "以一个动作，你可以使聚焰器在10尺锥状区域内喷射火焰。该区域内的每个生物必须进行一次{@dc 13}的敏捷豁免检定，豁免失败则受到{@damage 4d6}火焰伤害，豁免成功则伤害减半。",
+      "每当你使用聚焰器时，掷一次{@dice d10}并加上你上一次长休后使用聚焰器的次数。若该总值为11及更高，则聚焰器故障：你受到{@damage 4d6}火焰伤害，且直到你完成一次长休前都无法再次使用聚焰器。"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/GGR/Pyroconverger.webp"
+          },
+          "credit": "Jack Wang",
+          "width": 620,
+          "height": 400
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

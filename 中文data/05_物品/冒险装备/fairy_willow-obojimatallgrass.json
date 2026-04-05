@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Fairy Willow",
+    "name": "仙灵柳树",
+    "source": "ObojimaTallGrass",
+    "page": 217,
+    "type": "Ingred",
+    "rarity": "rare",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 18|large}|SneakerProMedium}",
+            "{@font {@style 18|large}|SneakerProMedium}",
+            "{@font {@style 20|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "仙灵柳树生长在灵界，但当早春时节它们的柔软柳絮盛放时，会出现在物质世界。胧忆岛上有一个植物学会，每年都试图预测仙灵柳树将在何处盛放，而他们尚未连续两次选择过相同的地点。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/fairy-willow.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 3689,
+          "height": 3689
+        }
+      ]
+    }
+  }
+]

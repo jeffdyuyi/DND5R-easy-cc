@@ -1,0 +1,15 @@
+[
+  {
+    "ENG_name": "Blessing of Understanding",
+    "name": "理解祝福",
+    "source": "DMG",
+    "page": 228,
+    "reprintedAs": [
+      "理解祝福|XDMG"
+    ],
+    "type": "Blessing",
+    "entries": [
+      "你的感知值提升2，至多提升至22。"
+    ]
+  }
+]

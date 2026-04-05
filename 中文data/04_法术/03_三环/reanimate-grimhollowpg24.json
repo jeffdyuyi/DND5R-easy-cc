@@ -1,0 +1,57 @@
+[
+  {
+    "ENG_name": "Reanimate",
+    "name": "再活化",
+    "source": "GrimHollowPG24",
+    "page": 198,
+    "level": 3,
+    "school": "V",
+    "subschools": [
+      "血魔法"
+    ],
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "价值300+金币的枯萎雏菊和其他草药粉末的混合物，该法术会消耗这些材料",
+        "cost": 30000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "作为施放该法术的部分，你必须消耗三个{@variantrule 生命值骰|XPHB}否则法术自动失败。你接触一个在过去10分钟内死亡的生物并将其以1{@variantrule 生命值|XPHB|生命值}回归生命。此外，掷骰消耗来施放法术的{@variantrule 生命值骰|XPHB}，该生物获得等于掷骰结果的{@variantrule 临时生命值|XPHB}。",
+      "在目标的每个回合开始时，它会失去1点由该法术赋予的{@variantrule 临时生命值|XPHB|临时生命值}。当该生物拥有由该法术赋予的{@variantrule 临时生命值|XPHB}时，它会以不自然的活力移动，在{@variantrule D20 检定|XPHB|D20 检定}上获得+2加值。一旦它失去由该法术赋予的{@variantrule 临时生命值|XPHB}，该生物将获得1级{@condition 力竭|XPHB}。",
+      "该法术无法复活因年老而死亡的生物，也无法复原任何缺失的身体部位。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "miscTags": [
+      "THP"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Reanimate.webp"
+  }
+]

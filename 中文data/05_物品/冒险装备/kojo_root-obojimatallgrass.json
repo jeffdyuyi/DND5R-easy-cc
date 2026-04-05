@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Kojo Root",
+    "name": "Kojo根",
+    "source": "ObojimaTallGrass",
+    "page": 204,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 6|large}|SneakerProMedium}",
+            "{@font {@style 3|large}|SneakerProMedium}",
+            "{@font {@style 2|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "你可以在胧忆岛的每个圣坛和庙宇中找到悬挂的Kojo根，因为它被认为是好运的象征。干燥的Kojo根也被磨成粉末，用作岛上许多菜肴的调味料。"
+    ],
+    "lootTables": [
+      "海岸高地普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/kojo-root.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 2638,
+          "height": 2638
+        }
+      ]
+    }
+  }
+]

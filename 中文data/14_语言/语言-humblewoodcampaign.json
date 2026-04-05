@@ -1,0 +1,117 @@
+{
+  "language": [
+    {
+      "ENG_name": "Birdfolk",
+      "name": "鸟族",
+      "source": "HumblewoodCampaignSetting",
+      "page": 34,
+      "type": "standard",
+      "typicalSpeakers": [
+        "鸟族",
+        "谦逊族"
+      ],
+      "script": "鸟族",
+      "fonts": [
+        "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/font/HumblewoodCampaignSetting/hpphumblescratch-webfont.woff2"
+      ],
+      "entries": [
+        "鸟族语是一种由点击声、呱呱声和口哨声组成的语言。虽然主要是口头的，但在Alderheart成立之前很久就发展出了一种用象形图书写鸟族语的系统，并且自那以后演变成了一套代表不同声音的抽象符号。鸟族语可以用羽毛快速书写，或者用爪子轻易地刮写，并且在森林中被广泛采用。"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/HumblewoodCampaignSetting/book/Languages.webp"
+            },
+            "width": 584,
+            "height": 776
+          }
+        ]
+      }
+    },
+    {
+      "ENG_name": "Cervan",
+      "name": "鹿族",
+      "source": "HumblewoodCampaignSetting",
+      "page": 34,
+      "type": "standard",
+      "typicalSpeakers": [
+        "塞尔文人"
+      ],
+      "entries": [
+        "鹿族是一种没有书面文字的复杂语言。试图用{@language 鸟族|HumblewoodCampaignSetting}的文字来转录它被视为不敬。许多鹿族的历史由村庄长老保存，并通过故事、歌曲和谚语口头传承给后代。常引用谚语\"学习之要在于教导\"来说明这一点。"
+      ]
+    },
+    {
+      "ENG_name": "Hedge",
+      "name": "猬族",
+      "source": "HumblewoodCampaignSetting",
+      "page": 34,
+      "type": "standard",
+      "typicalSpeakers": [
+        "树篱"
+      ],
+      "script": "木族语",
+      "entries": [
+        "猬族语是一种需要轻声细语的语言。由于被动语态的普遍使用以及对话中内置的谦逊礼仪，许多试图学习它的人都会感到困惑。这些设计旨在确保每个人的感受都能被倾听和尊重。它使用一种变体的{@language 木族语}文字书写。"
+      ]
+    },
+    {
+      "ENG_name": "Jerbeen",
+      "name": "跳鼠族",
+      "source": "HumblewoodCampaignSetting",
+      "page": 34,
+      "type": "standard",
+      "typicalSpeakers": [
+        "跳鼠族"
+      ],
+      "script": "鸟族",
+      "entries": [
+        "跳鼠族是一种由吱吱声和咔哒声组成的语言系统，在书写上使用{@language 鸟族|HumblewoodCampaignSetting}字母的变体。这是一种礼貌但直爽的语言，旨在快速有效地在多个听众之间传递消息。"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/HumblewoodCampaignSetting/book/Languages.webp"
+            },
+            "width": 584,
+            "height": 776
+          }
+        ]
+      }
+    },
+    {
+      "ENG_name": "Mapach",
+      "name": "浣熊族",
+      "source": "HumblewoodCampaignSetting",
+      "page": 34,
+      "type": "standard",
+      "typicalSpeakers": [
+        "浣熊族"
+      ],
+      "script": "浣熊族",
+      "entries": [
+        "浣熊语是一种技术含量非常高的语言，它通常在正常对话中融入粗略的方程式和物理属性的估算。对周围环境的意识是生存的关键，而浣熊族语言强调了这一点。浣熊族使用自己的一套由各种线条、短划和点组成的象形文字。"
+      ]
+    },
+    {
+      "ENG_name": "Vulpin",
+      "name": "狡狐族",
+      "source": "HumblewoodCampaignSetting",
+      "page": 34,
+      "type": "standard",
+      "typicalSpeakers": [
+        "狡狐族族"
+      ],
+      "script": "狡狐族",
+      "entries": [
+        "狡狐族语是一种由咆哮、咆哮声和尖叫声组成的语言。它用自己流畅的草书书写。说话者被教导根据上下文在狡狐族语的低级和高级版本之间切换。对于新说话者来说，学习何时使用哪种形式是最大的障碍。"
+      ]
+    }
+  ]
+}

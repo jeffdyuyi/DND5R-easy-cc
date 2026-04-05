@@ -1,0 +1,214 @@
+{
+  "ENG_name": "The First Vampire Patron",
+  "name": "第一吸血鬼雇主",
+  "shortName": "第一吸血鬼",
+  "source": "GrimHollowPG24",
+  "className": "魔契师",
+  "classSource": "XPHB",
+  "page": 99,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "3": [
+          "灾祸术|XPHB",
+          "命令术|XPHB",
+          "虚假生命|XPHB",
+          "云雾术|XPHB"
+        ],
+        "5": [
+          "咒唤兽群|XPHB",
+          "气化形体|XPHB"
+        ],
+        "6": [
+          "变形术|XPHB"
+        ],
+        "7": [
+          "支配类人|XPHB",
+          "伪装术|XPHB"
+        ],
+        "9": [
+          "区区死亡|GrimHollowPG24",
+          "心灵遥控|XPHB"
+        ]
+      }
+    }
+  ],
+  "subclassSpells": [
+    "灾祸术|XPHB",
+    "命令术|XPHB",
+    "虚假生命|XPHB",
+    "云雾术|XPHB",
+    "咒唤兽群|XPHB",
+    "气化形体|XPHB",
+    "支配类人|XPHB",
+    "伪装术|XPHB",
+    "区区死亡|GrimHollowPG24",
+    "心灵遥控|XPHB",
+    "变形术|XPHB"
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "The First Vampire Patron",
+      "name": "第一吸血鬼雇主",
+      "source": "GrimHollowPG24",
+      "page": 99,
+      "className": "魔契师",
+      "classSource": "XPHB",
+      "subclassShortName": "第一吸血鬼",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "entries": [
+        "{@i 驾驭不死法力}",
+        "你与一位被诸神诅咒或作为黑夜生物诞生的强大吸血鬼缔结了契约。数百个饱受困扰的存在为这位吸血鬼服务，那么为何要与你缔结契约？是因为你能在白昼的光照下不受阻碍地行动？还是为了淘汰较弱的吸血鬼们？",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "吸取生命|魔契师|XPHB|第一吸血鬼|GrimHollowPG24|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "夜间活动捕食者|魔契师|XPHB|第一吸血鬼|GrimHollowPG24|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "第一吸血鬼法术|魔契师|XPHB|第一吸血鬼|GrimHollowPG24|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Drain Life",
+      "name": "吸取生命",
+      "source": "GrimHollowPG24",
+      "page": 99,
+      "className": "魔契师",
+      "classSource": "XPHB",
+      "subclassShortName": "第一吸血鬼",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你获得一种从生物身上吸取生命的先天法力。在你进行攻击或{@action 魔法|XPHB}动作后，你可以使用一个{@variantrule 附赠动作|XPHB}来进行{@variantrule 徒手打击|XPHB}。命中时，{@variantrule 徒手打击|XPHB}造成等同于{@dice 1d6}加魅力调整值的暗蚀伤害而非正常伤害。",
+        "当你用吸取生命命中一个生物时，你可以消耗一个契约魔法法术位来对目标造成额外的{@damage 1d8}暗蚀伤害，再加上每个法术位等级的另一个{@dice 1d8}。当你以这种方式消耗一个法术位时，你将恢复等同于造成伤害数量的{@variantrule 生命值|XPHB}。"
+      ]
+    },
+    {
+      "ENG_name": "First Vampire Spells",
+      "name": "第一吸血鬼法术",
+      "source": "GrimHollowPG24",
+      "page": 100,
+      "className": "魔契师",
+      "classSource": "XPHB",
+      "subclassShortName": "第一吸血鬼",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你的雇主的魔法确保你总是预备某些法术；当你达到第一吸血鬼法术表格中指定的魔契师等级时，你此后总是准备所列出的法术。",
+        {
+          "type": "table",
+          "caption": "第一吸血鬼法术",
+          "colLabels": [
+            "魔契师等级",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "3",
+              "{@spell 灾祸术|XPHB}, {@spell 命令术|XPHB}, {@spell 虚假生命|XPHB}, {@spell 云雾术|XPHB}"
+            ],
+            [
+              "5",
+              "{@spell 咒唤兽群|XPHB}（仅限蝙蝠、老鼠或狼），{@spell 气化形体|XPHB}"
+            ],
+            [
+              "7",
+              "{@spell 支配类人|XPHB}, {@spell 伪装术|XPHB}"
+            ],
+            [
+              "9",
+              "{@spell 区区死亡|GrimHollowPG24}, {@spell 心灵遥控|XPHB}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Nocturnal Predator",
+      "name": "夜间活动捕食者",
+      "source": "GrimHollowPG24",
+      "page": 99,
+      "className": "魔契师",
+      "classSource": "XPHB",
+      "subclassShortName": "第一吸血鬼",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "作为黑夜的捕食者，你被祝福获得了在黑暗中强化的视觉。你拥有范围为60尺的{@sense 黑暗视觉|XPHB}。如果你已经拥有{@sense 黑暗视觉|XPHB}，其范围增加60尺。"
+      ]
+    },
+    {
+      "ENG_name": "Creature of the Night",
+      "name": "暗影之兽",
+      "source": "GrimHollowPG24",
+      "page": 100,
+      "className": "魔契师",
+      "classSource": "XPHB",
+      "subclassShortName": "第一吸血鬼",
+      "subclassSource": "GrimHollowPG24",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "你总是准备了{@spell 变形术|XPHB}法术。通过此特性，你可以仅对自己施放它，无需消耗法术位和材料成分，以变身为{@creature 蝙蝠|XMM}、{@creature 老鼠|XMM}或{@creature 狼|XMM}。",
+        "你的游戏数据被野兽的数据卡所替换，但你保留你的生物类型；{@variantrule 生命值|XPHB}；{@variantrule 生命值骰|XPHB}；智力，感知和魅力值；职业特性；语言；专长。你同样保留你的技能和豁免熟练，并且在这些项目中使用你自己的{@variantrule 熟练|XPHB|熟练加值}。如果变形的野兽在资料卡上的技能或豁免检定的调整值高于你的，使用资料卡的调整值。",
+        "你可以使用此特性的次数等于你的魅力调整值（至少一次）。完成一次{@variantrule 长休|XPHB}后，你将恢复所有已消耗的使用次数。"
+      ]
+    },
+    {
+      "ENG_name": "Eldritch Appetite",
+      "name": "诡秘食欲",
+      "source": "GrimHollowPG24",
+      "page": 100,
+      "className": "魔契师",
+      "classSource": "XPHB",
+      "subclassShortName": "第一吸血鬼",
+      "subclassSource": "GrimHollowPG24",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "当你用你的吸取生命特性将一个敌人减少到0{@variantrule 生命值|XPHB}时，你可以采取一个{@variantrule 反应|XPHB}来消耗其最后的短暂凡人终有一死。当你这样做时，你恢复一个已消耗的契约魔法法术位。",
+        "此特性一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。"
+      ]
+    },
+    {
+      "ENG_name": "Eternal Night",
+      "name": "永恒黑夜",
+      "source": "GrimHollowPG24",
+      "page": 100,
+      "className": "魔契师",
+      "classSource": "XPHB",
+      "subclassShortName": "第一吸血鬼",
+      "subclassSource": "GrimHollowPG24",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "你的吸血鬼雇主赐予你一丝真正不朽的滋味。你不再衰老，并获得对暗蚀伤害的{@variantrule 抗性|XPHB}。",
+        "作为一项{@variantrule 附赠动作|XPHB}，你在1分钟内获得以下增益：",
+        {
+          "type": "list",
+          "items": [
+            "在你的每个回合开始时，如果你至少有1点{@variantrule 生命值|XPHB|生命值}且不在耀阳或流水中，你恢复{@dice 1d6}点{@variantrule 生命值|XPHB}。如果你受到光耀伤害，在你的下个回合开始时你不会从该特性中恢复{@variantrule 生命值|XPHB}。",
+            "当你使用你的吸取生命特性时，你可以不消耗法术位额外造成{@damage 1d8}暗蚀伤害。"
+          ]
+        },
+        "此特性一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。"
+      ]
+    }
+  ],
+  "hasFluff": true,
+  "hasFluffImages": true
+}

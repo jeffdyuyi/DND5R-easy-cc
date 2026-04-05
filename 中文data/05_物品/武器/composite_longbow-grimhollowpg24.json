@@ -1,0 +1,26 @@
+[
+  {
+    "ENG_name": "Composite Longbow",
+    "name": "复合长弓",
+    "source": "GrimHollowPG24",
+    "page": 129,
+    "type": "R|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 75000,
+    "weaponCategory": "进阶",
+    "property": [
+      "A|XPHB",
+      "H|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "强拉|GrimHollowPG24"
+    ],
+    "range": "200/600",
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "weapon": true,
+    "ammoType": "箭|XPHB"
+  }
+]

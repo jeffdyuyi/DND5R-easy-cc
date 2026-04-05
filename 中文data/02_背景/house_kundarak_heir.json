@@ -1,0 +1,131 @@
+[
+  {
+    "name": "昆达拉克家族继承人",
+    "ENG_name": "House Kundarak Heir",
+    "source": "EFA",
+    "edition": "one",
+    "page": 29,
+    "ability": [
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "str",
+              "con",
+              "int"
+            ],
+            "weights": [
+              2,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "str",
+              "con",
+              "int"
+            ],
+            "weights": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      }
+    ],
+    "feats": [
+      {
+        "警戒龙纹|efa": true
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "arcana": true,
+        "investigation": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "thieves' tools": true
+      }
+    ],
+    "startingEquipment": [
+      {
+        "a": [
+          "盗贼工具|xphb",
+          "高档服装|xphb",
+          {
+            "value": 1000
+          }
+        ],
+        "b": [
+          {
+            "value": 5000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability Scores:",
+            "name": "属性值：",
+            "type": "item",
+            "entry": "力量，体质，智力"
+          },
+          {
+            "ENG_name": "Feat:",
+            "name": "专长：",
+            "type": "item",
+            "entry": "{@feat 警戒龙纹|EFA}"
+          },
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 奥秘|XPHB}和{@skill 调查|XPHB}"
+          },
+          {
+            "ENG_name": "Tool Proficiencies:",
+            "name": "工具熟练",
+            "type": "item",
+            "entry": "{@item 盗贼工具|XPHB}"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "选择A或B：(A) {@item 盗贼工具|XPHB}, {@item 高档服装|XPHB}, 10 GP；或 (B) 50 GP"
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "作为昆达拉克家族的继承人，你为你的家庭及其保障科瓦雷贵重物品的工作感到非常自豪。你的家族一直是摩洛领各氏族中的领导者。尽管它从未拥有王冠，但它以专业精神、荣誉和秩序而闻名。你可能努力维护这一声誉，你可能将自己的荣誉感置于家族之上，或者你可能反抗家族的期望并藐视荣誉的要求。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "backgrounds/EFA/House Kundarak Heir.webp"
+          },
+          "credit": "Ahmed Zulfiqar",
+          "width": 850,
+          "height": 300
+        }
+      ]
+    },
+    "hasFluff": true,
+    "hasFluffImages": true
+  }
+]

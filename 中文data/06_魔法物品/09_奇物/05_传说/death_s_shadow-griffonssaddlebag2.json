@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "Death's Shadow",
+    "name": "死亡之影",
+    "source": "GriffonsSaddlebag2",
+    "page": 69,
+    "tier": "主要",
+    "rarity": "legendary",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这颗黑色石榴石护符雕刻成了鸟类头骨的形状，其上装饰有数根暗色羽毛。在其正中间是一根菲涅克斯羽毛，这根凤羽是驱动这个奇异护符中死灵魔法的催化剂。佩戴此护符期间，你免疫暗蚀伤害。",
+      {
+        "ENG_name": "Shadow Form",
+        "name": "幽影形态",
+        "type": "entries",
+        "entries": [
+          "当你佩戴此护符期间生命值降至0时，一个幽影形态的你会从你{@condition 昏迷}的身体中升起。你将控制这个形态，它拥有你的装备和数据。它拥有100临时生命值，且对除力场、心灵或光耀伤害之外的所有伤害都具有抗性。幽影形态不能离开你的身体超过60尺。幽影形态会在1分钟后或当其失去所有临时生命值时消失。如果幽影形态持续存在至持续时间结束，它将回归你的身体并使你恢复等同于幽影形态剩余临时生命值数值的生命值。如果幽影形态被击败，此护符将被摧毁且你将立即计两次失败的死亡豁免检定。",
+          "当你的幽影形态还在保护你时，你{@condition 昏迷}的身体将被一层不可穿透的幽影纱幕覆盖。在被覆盖期间，你无法与外界互动：你免疫所有伤害，不会进行死亡豁免检定，不能恢复生命值，且不会被任何法术或魔法效应影响。一名其他生物可以用一个动作并进行一次DC 30的力量检定，若成功可以将你被覆盖的身体移动至多10尺。",
+          "该属性一经使用后，直到7天过后才能再次使用。"
+        ]
+      }
+    ],
+    "lootTables": [
+      "魔法物品表I|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Deaths-Shadow.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "ENG_name": "Opportunistic Thief",
+        "name": "见机行窃",
+        "source": "HumblewoodCampaignSetting",
+        "page": 47,
+        "ability": [
+            {
+                "dex": 1
+            }
+        ],
+        "entries": [
+            "你已经参悟了偷窃技术的窍门，不论在战斗内外你都能抓住一切机会顺走点东西。你获得下列增益：",
+            {
+                "type": "list",
+                "items": [
+                    "在战斗中，当一个生物向你发起的近战攻击检定失手时，你可以对其进行一次敏捷（{@skill 巧手}）检定（DC=10+目标的敏捷调整值）。若检定成功，你可以偷取任何一件目标身上的一件物件（无法偷窃正被目标持握或装着的物件）。",
+                    "在战斗之外，当你使用你的{@skill 巧手}成功偷取到一件物件时，你可以立即将它完美地隐藏在你的身上，或者将你拥有的另一件物件放回在偷取物品原先所处的位置上。"
+                ]
+            }
+        ],
+        "foundryActivities": [
+            {
+                "ENG_name": "Steal",
+                "name": "偷窃",
+                "activation": {
+                    "type": "special",
+                    "condition": "当生物在战斗中对你的近战攻击掷骰失败时"
+                },
+                "check.associated": [
+                    "静默疗法"
+                ],
+                "target.affects.type": "creature",
+                "type": "check"
+            }
+        ]
+    }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "ENG_name": "Medal of Muscle",
+    "name": "肌肉奖章",
+    "source": "CRCotN",
+    "page": 214,
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "你可以将这枚奖章紧握在手心作为动作。这样做可以让你在接下来的1小时内，在力量检定和力量豁免检定上获得优势。一旦使用了这个属性，它就无法再次使用，奖章也会变成非魔法物品。"
+    ],
+    "valueReference": 100,
+    "type": "W"
+  }
+]

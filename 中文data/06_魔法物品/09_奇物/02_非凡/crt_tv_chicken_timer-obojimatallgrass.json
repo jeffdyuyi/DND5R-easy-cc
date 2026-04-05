@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "CRT TV & Chicken Timer",
+    "name": "CRT电视 & 鸡计时器",
+    "source": "ObojimaTallGrass",
+    "page": 169,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "作为一个动作，鸡计时器可以被设定为十一分钟和十四秒。当计时器开始倒计时时，电视会开始显示一个以鸡计时器为中心的半径10尺球状模糊视频。一旦鸡计时器响起，电视会再次关闭。一旦计时器以这种方式被使用，它在下一个拂晓前无法再次使用。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/cr-tv-and-chicken-timer.webp"
+          },
+          "credit": "Matt Owen",
+          "width": 2488,
+          "height": 2488
+        }
+      ]
+    }
+  }
+]

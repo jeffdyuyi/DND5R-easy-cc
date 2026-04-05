@@ -1,0 +1,104 @@
+[
+  {
+    "name": "战俑",
+    "ENG_name": "Warforged",
+    "source": "EFA",
+    "edition": "one",
+    "page": 38,
+    "size": [
+      "S",
+      "M"
+    ],
+    "speed": 30,
+    "resist": [
+      "毒素"
+    ],
+    "traitTags": [
+      "修整强化",
+      "天生护甲"
+    ],
+    "skillProficiencies": [
+      {
+        "any": 1
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "any": 1
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Construct Resilience",
+        "name": "构装体恢复力",
+        "type": "entries",
+        "entries": [
+          "你对毒素伤害具有{@variantrule 抗性|XPHB}。你在避免或结束{@condition 中毒|XPHB}状态的豁免检定上也具有{@variantrule 优势|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Integrated Protection",
+        "name": "集成防护",
+        "type": "entries",
+        "entries": [
+          "你获得{@variantrule 护甲等级|XPHB}的+1加值。此外，你穿戴的护甲在你活着时不会违背你的意愿被移除。"
+        ]
+      },
+      {
+        "ENG_name": "Sentry's Rest",
+        "name": "哨兵式休息",
+        "type": "entries",
+        "entries": [
+          "你不需要睡眠，魔法也不能使你陷入睡眠。如果你在6小时内保持无法行动且静止的状态，你可以完成一次{@variantrule 长休|XPHB}。在此期间，你看起来是惰性的但保持清醒。"
+        ]
+      },
+      {
+        "ENG_name": "Specialized Design",
+        "name": "专业设计",
+        "type": "entries",
+        "entries": [
+          "你选择一项技能和一种工具，获得其熟练。"
+        ]
+      },
+      {
+        "ENG_name": "Tireless",
+        "name": "不知疲倦",
+        "type": "entries",
+        "entries": [
+          "你不会因脱水、饥饿或窒息获得{@condition 力竭|XPHB}等级。"
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "战俑是作为在终末战争中战斗的武器而建造的机械生物。一个意外的突破产生了由木和金属制成的有知觉生物，然而它们能感受到苦痛和情感。",
+        "战俑由有机和无机材质混合而成。注入炼金液的根状索充当他们的肌肉，包裹在锻钢、黑木或岩石的框架上。装甲板形成一个安全感的壳并强化关节。战俑越培养他们的放浪形骸，就越有可能改造他们的身体，寻找工匠来定制他们的面、肢体和装甲板的外观。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/EFA/Warforged.webp"
+          },
+          "credit": "Ignacio Bazan-Lazcano",
+          "width": 850,
+          "height": 559
+        }
+      ]
+    },
+    "creatureTypes": [
+      "构装"
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "sizeEntry": {
+      "ENG_name": "Size:",
+      "name": "体型：",
+      "type": "item",
+      "entries": [
+        "中型（约6-8英尺高）或小型（约3-4英尺高），在你选择此种族时决定"
+      ]
+    }
+  }
+]

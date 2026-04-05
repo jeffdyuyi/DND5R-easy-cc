@@ -1,0 +1,52 @@
+[
+  {
+    "ENG_name": "Queen's Dilemma",
+    "name": "女王的困境",
+    "source": "ObojimaTallGrass",
+    "page": 206,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 7|large}|SneakerProMedium}",
+            "{@font {@style 5|large}|SneakerProMedium}",
+            "{@font {@style 3|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "很久以前，当鸣玉族统治这片大地时，据说女王乌米被一只心怀恶意的野兽欺骗，它试图偷走她的心脏。就在他们即将订婚之际，一个蘑菇精魄牺牲自己用毒素毒害了野兽，揭露了它的真实本性。由于蘑菇的勇敢，女王乌米将它的孢子散布到整个胧忆岛，这就是为什么女王的困境蘑菇如此丰富。"
+    ],
+    "lootTables": [
+      "舒里塔希的赠礼 普通原料|ObojimaTallGrass",
+      "阿伯拉山普通原料|ObojimaTallGrass",
+      "咸水湿地普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/queens-dilemma.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 4609,
+          "height": 4609
+        }
+      ]
+    }
+  }
+]

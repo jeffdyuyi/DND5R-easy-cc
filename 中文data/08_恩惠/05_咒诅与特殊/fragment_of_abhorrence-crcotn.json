@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Fragment of Abhorrence",
+    "name": "厌恶碎片",
+    "source": "CRCotN",
+    "page": 214,
+    "type": "Fragment of Suffering",
+    "entries": [
+      {
+        "ENG_name": "Benefit",
+        "name": "增益",
+        "type": "entries",
+        "entries": [
+          "每当你在回合中使用武器攻击骰命中一个生物时，你可以迫使目标向你选择的方向移动最多10尺。不能被{@condition 恐慌}的生物对此效果免疫。"
+        ]
+      },
+      {
+        "ENG_name": "Drawback",
+        "name": "缺陷",
+        "type": "entries",
+        "entries": [
+          "如果你在你的回合开始时处于{@condition 恐慌}状态，你会受到{@damage 2d6}点心灵伤害。"
+        ]
+      }
+    ]
+  }
+]

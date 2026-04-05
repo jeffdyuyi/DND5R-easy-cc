@@ -1,0 +1,84 @@
+[
+  {
+    "ENG_name": "Nerve Gas",
+    "name": "神经毒气",
+    "source": "GuideDrakkenheim",
+    "page": 191,
+    "level": 5,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "磷酸盐和氯的样本与一滴纯酒精混合"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你在范围内指定的一点创造出一团半径10尺的球状剧毒雾气。雾气会扩散至转角处。",
+      "它持续到持续时间结束或被强风吹散雾气，终止法术。雾气的区域是重度遮蔽。",
+      "当一个生物在一个回合内首次进入法术的区域或在那里开始其回合时，该生物必须进行一次智力豁免检定。豁免失败时，该生物受到{@damage 3d6}心灵伤害并陷入{@condition 震慑}状态直到其下个回合开始。豁免成功时，该生物受到一半伤害且不会陷入{@condition 震慑}状态。即使生物屏住呼吸或不需要呼吸也会受到影响。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "如果你使用6环或更高法术位施放该法术，则每个超过5环的法术位环阶会使伤害增加{@damage 1d6}心灵伤害。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "心灵"
+    ],
+    "conditionInflict": [
+      "震慑"
+    ],
+    "savingThrow": [
+      "智力"
+    ],
+    "miscTags": [
+      "OBS"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    }
+  }
+]

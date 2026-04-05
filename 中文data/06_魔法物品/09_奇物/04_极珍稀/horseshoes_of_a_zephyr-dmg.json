@@ -1,0 +1,26 @@
+[
+  {
+    "ENG_name": "Horseshoes of a Zephyr",
+    "name": "西风马蹄铁",
+    "source": "DMG",
+    "page": 175,
+    "srd": true,
+    "referenceSources": [
+      "CoA"
+    ],
+    "reprintedAs": [
+      "西风马蹄铁|XDMG"
+    ],
+    "tier": "次要",
+    "rarity": "very rare",
+    "wondrous": true,
+    "entries": [
+      "这些铁制马蹄铁四个为一套。当一匹马或类似的生物同时着装四个马蹄铁期间，它们允许该生物在离地面4寸的高度悬浮时正常移动。这意味着该生物可以穿过或站在非固体或非稳定的平面上，例如水或岩浆。该生物不会留下足迹并忽略{@quickref 困难地形||3}。另外，该生物可以以正常速度连续移动12小时而不会因为强行军遭受{@condition 力竭}。"
+    ],
+    "lootTables": [
+      "魔法物品表D"
+    ],
+    "valueReference": 40000,
+    "type": "W"
+  }
+]

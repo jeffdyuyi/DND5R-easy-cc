@@ -1,0 +1,34 @@
+[
+  {
+    "ENG_name": "+3 Mace",
+    "name": "+3 硬头锤",
+    "source": "XDMG",
+    "page": 324,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "very rare",
+    "weight": 4,
+    "value": 500,
+    "weaponCategory": "simple",
+    "mastery": [
+      "削弱|XPHB"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "mace": true,
+    "weapon": true,
+    "hasFluffImages": true,
+    "namePrefix": "+3 ",
+    "bonusWeapon": "+3",
+    "entries": [
+      "使用这把魔法武器进行攻击和伤害判定时，你会获得{=bonusWeapon}的额外加成。"
+    ],
+    "lootTables": [
+      "武备 - 极珍稀|XDMG"
+    ],
+    "_isVariant": true,
+    "valueReference": 40000
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Nylea's Votary",
+    "name": "倪勒娅的信徒",
+    "source": "MOT",
+    "page": 67,
+    "type": "Piety Trait",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "daily": {
+              "wis": [
+                "动物交谈"
+              ]
+            }
+          }
+        },
+        "ability": "wis"
+      }
+    ],
+    "entries": [
+      "{@i 虔信值10+倪勒娅特质}",
+      "你可以使用此特性施放{@spell 动物交谈}，次数等于你的感知调整值（至少一次）。当你完成一次长休后恢复所有使用次数。此法术的施法属性为感知。",
+      "此外，你在对抗{@condition 中毒}的豁免中具有优势。"
+    ]
+  }
+]

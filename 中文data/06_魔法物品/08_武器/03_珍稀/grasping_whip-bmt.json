@@ -1,0 +1,24 @@
+[
+  {
+    "ENG_name": "Grasping Whip",
+    "name": "攫之鞭",
+    "source": "BMT",
+    "page": 67,
+    "baseItem": "鞭子|PHB",
+    "type": "M",
+    "rarity": "rare",
+    "weight": 3,
+    "weaponCategory": "martial",
+    "property": [
+      "F",
+      "R"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "S",
+    "bonusWeapon": "+1",
+    "entries": [
+      "你使用这把魔法鞭子发动的攻击检定与其伤害掷骰具有+1加值。当你用这把鞭子命中大型或更小体型的生物或物件时，你可以将那个生物或物件向你拉近5尺，以代替造成伤害。"
+    ],
+    "valueReference": 4000
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "ENG_name": "Bloodbane Rune",
+    "name": "血祸符文",
+    "source": "GrimHollowPG24",
+    "page": 186,
+    "level": 1,
+    "school": "T",
+    "subschools": [
+      "血魔法"
+    ],
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "作为施放该法术的一部分，你必须消耗一个{@variantrule 生命值骰|XPHB|生命值骰}否则法术自动失败。你在范围内选择一个目标武器并用鲜血在其上刻下符文。",
+      "在持续时间内，当你持握这把武器时，若30尺内有亡灵生物，它会渗出虚幻的红色灵液。此外，每回合一次，当你用这把武器对一个亡灵生物造成伤害时，你会造成额外光耀伤害。要确定此伤害，掷骰你施放法术时消耗的{@variantrule 生命值骰|XPHB}数值。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "你为每个高于1环的法术位环阶额外消耗一个{@variantrule 生命值骰|XPHB|生命值骰}。此外，使用2环法术位时你的{@status 专注|XPHB}最多可持续10分钟，使用3环或更高环阶时最多可持续1小时。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Bloodbane%20Rune.webp"
+  }
+]

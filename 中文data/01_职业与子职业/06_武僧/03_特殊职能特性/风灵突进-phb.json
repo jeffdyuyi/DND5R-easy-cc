@@ -1,0 +1,28 @@
+{
+  "ENG_name": "Rush of the Gale Spirits",
+  "name": "风灵突进",
+  "source": "PHB",
+  "page": 81,
+  "featureType": [
+    "ED"
+  ],
+  "additionalSpells": [
+    {
+      "innate": {
+        "_": {
+          "resource": {
+            "2": [
+              "造风术"
+            ]
+          }
+        }
+      },
+      "resourceName": "Ki",
+      "ability": "wis"
+    }
+  ],
+  "entries": [
+    "你可以消耗2点气施展{@spell 造风术}。"
+  ],
+  "translator": "不全书"
+}

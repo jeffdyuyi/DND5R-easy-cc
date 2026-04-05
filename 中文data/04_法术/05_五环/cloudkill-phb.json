@@ -1,0 +1,104 @@
+[
+  {
+    "ENG_name": "Cloudkill",
+    "name": "死云术",
+    "source": "PHB",
+    "page": 222,
+    "srd": true,
+    "referenceSources": [
+      "RoT",
+      "ToA",
+      "WDMM",
+      "RtG",
+      "SCC-CK",
+      "PaBTSO",
+      "CoA",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "死云术|XPHB"
+    ],
+    "level": 5,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你在施法距离内指定一点，并以该点为中心创造一片 20 尺半径的球状黄绿色剧毒浓雾，且该浓雾会围绕拐角扩散。雾气在法术持续时间内维持存在，但仍会被强风吹散。而其存在区域则视为{@quickref 视野与光照|PHB|2||重度遮蔽}。",
+      "任何生物在一个回合内第一次进入法术区域，或者在区域内开始其回合时，必须进行一次体质豁免。豁免失败者将受到 {@damage 5d8} 点毒素伤害，豁免成功则伤害减半。该生物就算屏住呼吸或者不需要呼吸也会受到浓雾效应的影响。",
+      "浓雾在你每回合开始时沿着地面向远离你的方向移动 10 尺。雾气比空气重，因此会沉落低洼地面甚至渗进地隙中。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "使用六环或更高法术位施展该法术时，你使用的法术位每比五环高一环，法术的伤害就增加{@scaledamage 5d8|5-9|1d8}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "poison"
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "miscTags": [
+      "OBS"
+    ],
+    "areaTags": [
+      "S"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/PHB/Cloudkill.webp"
+          },
+          "width": 1000,
+          "height": 1375
+        }
+      ]
+    },
+    "classes": [
+      "术士",
+      "法师"
+    ],
+    "display_school": "咒法系",
+    "display_savingThrow": [
+      "体质"
+    ],
+    "display_damageInflict": [
+      "毒素"
+    ]
+  }
+]

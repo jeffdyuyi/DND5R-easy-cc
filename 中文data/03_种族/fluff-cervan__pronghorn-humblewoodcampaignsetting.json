@@ -1,0 +1,25 @@
+{
+  "raceFluff": [
+    {
+      "ENG_name": "Cervan (Pronghorn)",
+      "name": "鹿族 (叉角)",
+      "source": "HumblewoodCampaignSetting",
+      "_copy": {
+        "ENG_name": "Cervan",
+        "name": "鹿族",
+        "source": "HumblewoodCampaignSetting",
+        "_mod": {
+          "entries": {
+            "mode": "prependArr",
+            "items": {
+              "type": "section",
+              "entries": [
+                "作为一个叉角鹿族，你出生时比其他社区成员更大更强壮，并且从很小的时候起就背负着期望。你是否接受你的特权地位，或者反抗塞文人社会强加给你的限制，这取决于你。"
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

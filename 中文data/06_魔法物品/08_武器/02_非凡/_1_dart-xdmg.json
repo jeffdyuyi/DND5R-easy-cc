@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "+1 Dart",
+    "name": "+1 飞镖",
+    "source": "XDMG",
+    "page": 324,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "uncommon",
+    "weight": 0.25,
+    "value": 5,
+    "weaponCategory": "simple",
+    "property": [
+      "F|XPHB",
+      "T|XPHB"
+    ],
+    "mastery": [
+      "侵扰|XPHB"
+    ],
+    "range": "20/60",
+    "dmg1": "1d4",
+    "dmgType": "P",
+    "weapon": true,
+    "hasFluffImages": true,
+    "namePrefix": "+1 ",
+    "bonusWeapon": "+1",
+    "entries": [
+      "使用这把魔法武器进行攻击和伤害判定时，你会获得{=bonusWeapon}的额外加成。"
+    ],
+    "classFeatures": [
+      "仿制魔法物品|奇械师|efa|2|efa"
+    ],
+    "lootTables": [
+      "武备 - 非普通|XDMG"
+    ],
+    "_isVariant": true,
+    "valueReference": 400
+  }
+]

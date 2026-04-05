@@ -1,0 +1,96 @@
+[
+  {
+    "ENG_name": "Creeping Rot",
+    "name": "蠕行腐朽",
+    "source": "CrookedMoon14",
+    "page": 127,
+    "reprintedAs": [
+      "蠕行腐朽|crookedmoon24"
+    ],
+    "level": 3,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 90
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你将黑灰色的腐烂卷须投向施法距离内一个你可见的目标。随后，三条卷须从该目标跃向你选择的至多三个其他目标，每个目标都必须在第一个目标的30尺范围内。目标可以是生物或非魔法的非生物植物，例如树木或灌木。无论哪种情况，每个目标只能被其中一条卷须选定为目标。",
+      "目标是生物时必须进行一次体质豁免检定。豁免失败时，它受到{@damage 3d8}暗蚀伤害并在持续时间内陷入{@condition 中毒}状态。豁免成功时，它仅受到一半伤害。以此方式陷入{@condition 中毒}状态的生物在其每回合开始时受到{@damage 1d8}暗蚀伤害。{@condition 中毒}生物在其每回合结束时重复进行豁免检定，豁免成功时终止其身上的该法术。",
+      "植物生物自动失败于初始豁免检定，非魔法的非生物植物则直接枯萎死亡。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用4环或更高法术位施放该法术时，法术位每比3环高一环，便有一条额外的卷须从第一个目标跃向另一个目标。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "暗蚀"
+    ],
+    "conditionInflict": [
+      "中毒"
+    ],
+    "savingThrow": [
+      "体质"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Spells/Creeping-Rot.webp"
+  }
+]

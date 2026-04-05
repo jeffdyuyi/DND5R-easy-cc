@@ -1,0 +1,111 @@
+{
+  "ENG_name": "Bloodhound Bruisers",
+  "name": "血嗅重拳",
+  "subclassFeatures": [
+    {
+      "ENG_name": "Bloodhound Bruisers",
+      "name": "血嗅重拳",
+      "source": "SterlingVermin",
+      "className": "拳斗士",
+      "classSource": "SterlingVermin",
+      "subclassShortName": "血嗅重拳",
+      "subclassSource": "SterlingVermin",
+      "level": 3,
+      "entries": [
+        "血嗅重拳搏击俱乐部的拳斗士们向来以爱挑事、且每次都能如愿惹上麻烦而声名狼藉。该搏击俱乐部的成员对人的脾气秉性以及各类物证具有极强的观察力，并能与他们所居住的城市形成近乎超然的联系。绝大多数人会凭借这些能力，成为守护城市底层民众的都市卫士；但也有一部分人，会将自身本领为那些不入流的地下势力所用。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "永远警觉|拳斗士|SterlingVermin|血嗅重拳|SterlingVermin|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "侦查工作|拳斗士|SterlingVermin|血嗅重拳|SterlingVermin|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Ever Vigilant",
+      "name": "永远警觉",
+      "entries": [
+        "同样从3级开始，你在先攻检定上具有优势。在战斗的第一轮，你对尚未行动的生物的攻击检定具有优势。"
+      ],
+      "source": "SterlingVermin",
+      "className": "拳斗士",
+      "classSource": "SterlingVermin",
+      "subclassShortName": "血嗅重拳",
+      "subclassSource": "SterlingVermin",
+      "level": 3,
+      "header": 1
+    },
+    {
+      "ENG_name": "Detective Work",
+      "name": "侦查工作",
+      "entries": [
+        "当你在3级选择这个搏击俱乐部时，你获得以下两项自选技能的熟练项：{@skill 洞悉}、{@skill 调查}或{@skill 察觉}。此外，当你进行智力（{@skill 调查}）、感知（{@skill 洞悉}）或感知（{@skill 察觉}）检定时，你可以消耗1点锐气来获得该检定的优势。"
+      ],
+      "source": "SterlingVermin",
+      "className": "拳斗士",
+      "classSource": "SterlingVermin",
+      "subclassShortName": "血嗅重拳",
+      "subclassSource": "SterlingVermin",
+      "level": 3,
+      "header": 1
+    },
+    {
+      "ENG_name": "Scrap Like a Sleuth",
+      "name": "侦隙破敌",
+      "source": "SterlingVermin",
+      "className": "拳斗士",
+      "classSource": "SterlingVermin",
+      "subclassShortName": "血嗅重拳",
+      "subclassSource": "SterlingVermin",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "在6级时，你可以使用一个附赠动作并消耗2点锐气点来锁定一个你能看见的30尺内敌人的特质和坏习惯。当你这样做时，你对那个生物进行的武器攻击具有优势，并且你对该生物的攻击进行的AC检定添加你的熟练加值。这些效应持续1分钟或直到你再次使用此特性。"
+      ]
+    },
+    {
+      "ENG_name": "Heart of the City",
+      "name": "城市之心",
+      "source": "SterlingVermin",
+      "className": "拳斗士",
+      "classSource": "SterlingVermin",
+      "subclassShortName": "血嗅重拳",
+      "subclassSource": "SterlingVermin",
+      "level": 11,
+      "header": 2,
+      "entries": [
+        "从11级开始，当你在一个聚居地长休时，你可以选择熟悉该聚居地。当你再次使用此特性时，你会用当前的聚居地替换之前熟悉的聚居地。当你在熟悉的聚居地时，你获得以下增益：",
+        {
+          "type": "list",
+          "items": [
+            "你无法被突袭，并且你可以将熟练加值添加到先攻上。",
+            "你拥有120尺范围的黑暗视觉。",
+            "当你使用洞悉、调查或察觉技能进行属性检定并添加熟练加值时，改为添加两倍熟练加值。",
+            "你无论如何都不会迷失。",
+            "当你不在战斗中时，你可以用两倍的正常速度在聚居地内的任意两点间快速旅行。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Eyes Wide Open",
+      "name": "睁目察敌",
+      "source": "SterlingVermin",
+      "className": "拳斗士",
+      "classSource": "SterlingVermin",
+      "subclassShortName": "血嗅重拳",
+      "subclassSource": "SterlingVermin",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "从17级开始，你可以使用一个附赠动作并消耗1点锐气来开放你的感官以感知周边环境，持续1分钟。在此期间，你在对抗{@condition 目盲}或{@condition 耳聋}的豁免检定上具有优势，并获得30尺范围内的真实视觉。"
+      ]
+    }
+  ],
+  "source": "SterlingVermin",
+  "shortName": "血嗅重拳",
+  "className": "拳斗士",
+  "classSource": "SterlingVermin"
+}

@@ -1,0 +1,96 @@
+[
+  {
+    "name": "吉斯泽莱人",
+    "ENG_name": "Githzerai",
+    "source": "MPMM",
+    "page": 19,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "resist": [
+      "心灵"
+    ],
+    "additionalSpells": [
+      {
+        "innate": {
+          "3": {
+            "daily": {
+              "1": [
+                "护盾术"
+              ]
+            }
+          },
+          "5": {
+            "daily": {
+              "1": [
+                "侦测思想"
+              ]
+            }
+          }
+        },
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "known": {
+          "1": [
+            "法师之手#c"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Githzerai Psionics",
+        "name": "吉斯泽莱灵能",
+        "type": "entries",
+        "entries": [
+          "你知晓{@spell 法师之手}戏法，当你使用此特性施放该戏法时，生成的手是{@condition 隐形}的。",
+          "从3级开始，你可以通过此特性施放{@spell 护盾术}法术。从5级开始，你还可以通过此特性施放{@spell 侦测思想}法术。一旦你通过此特性施放了{@spell 护盾术}或{@spell 侦测思想}法术，直到你完成一次长休之前，你无法再次通过此特性施放该法术。你也可以使用你拥有的相应环位的法术位来施放这些法术中的任何一个。",
+          "当你使用该特质施展这些法术时，智力，感知或魅力是你的施法属性（当你选择该种族时进行决定）。当你使用该特质施展这些法术时，无需法术成分。"
+        ]
+      },
+      {
+        "ENG_name": "Mental Discipline",
+        "name": "磨练心智",
+        "type": "entries",
+        "entries": [
+          "你天生的灵能防御使你在进行豁免以避免或结束你自己身上的{@condition 魅惑}和{@condition 恐慌}状态时具有优势。"
+        ]
+      },
+      {
+        "ENG_name": "Psychic Resilience",
+        "name": "心灵坚韧",
+        "type": "entries",
+        "entries": [
+          "你对心灵伤害具有抗性。"
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "吉斯泽莱人在远古分裂使他们与表亲吉斯洋基人分道扬镳后，迁移到了混沌海的永恒变化之混沌中。混沌海是一个不断翻滚的物质与能量大漩涡，毫无目的或方向地崩塌与重组，直到某个生物运用刻意意志来稳定它。通过强大的灵能力量，吉斯泽莱人在混沌中为自己开辟了家园。随着岁月流逝，吉斯泽莱人探险家们开始涉足多元宇宙的其他位面和世界。",
+        "吉斯泽莱人通常身形纤细，皮肤呈黄色、绿色或棕色斑点状。在混沌海的无尽混沌中培养心灵力量数千年，使吉斯泽莱人具备了塑造灵能来保护自己和探测思想的能力。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/MPMM/Githzerai.webp"
+          },
+          "credit": "Scott Murphy",
+          "width": 1700,
+          "height": 1338
+        }
+      ]
+    },
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "lineage": "VRGR"
+  }
+]

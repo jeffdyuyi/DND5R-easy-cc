@@ -1,0 +1,62 @@
+[
+  {
+    "ENG_name": "Circle of Scarlet",
+    "name": "猩红结社",
+    "source": "GrimHollowPG24",
+    "page": 188,
+    "level": 4,
+    "school": "V",
+    "subschools": [
+      "血魔法"
+    ],
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一张用类人生物鲜血画着猩红结社的羊皮纸碎片"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "作为施放该法术的一部分，你必须消耗四个{@variantrule 生命值骰|XPHB}否则法术自动失败。一根猩红柱体从地面爆发，形成一个半径20尺、100尺高的{@variantrule 柱状 [效应区域]|XPHB|柱状}，以范围内某点居中。位于该{@variantrule 柱状 [效应区域]|XPHB|柱状}内的每个生物需进行体质豁免检定。",
+      "豁免失败时，该生物受到等同于该法术消耗的{@variantrule 生命值骰|XPHB}掷骰结果加上你的施法属性调整值的暗蚀伤害。豁免成功时，该生物只受到一半伤害。",
+      "每个未能通过此法术豁免检定的生物会使你获得10点{@variantrule 临时生命值|XPHB}。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "savingThrow": [
+      "体质"
+    ],
+    "miscTags": [
+      "THP"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Circle%20of%20Scarlet.webp"
+  }
+]

@@ -1,0 +1,75 @@
+[
+  {
+    "ENG_name": "The King in Yellow",
+    "name": "黄衣之王",
+    "source": "CthulhuTorchlight",
+    "page": 0,
+    "rarity": "unknown (magic)",
+    "reqAttune": "通过一次DC 15的魅力（{@skill 表演|XPHB}检定）",
+    "wondrous": true,
+    "entries": [
+      "《黄衣之王》是一部薄薄的皮革装订本，内含一出如梦似幻的戏剧，会驱使读者沉迷于文本之中。他们会一遍又一遍地阅读剧本，并逐渐相信其中那些毫无关联的场景和怪诞的景象都是真实的。",
+      {
+        "ENG_name": "Language:",
+        "name": "语言：",
+        "type": "entries",
+        "entries": [
+          "{@language 通用语|XPHB}."
+        ]
+      },
+      {
+        "ENG_name": "Attunement Check:",
+        "name": "同调检定：",
+        "type": "entries",
+        "entries": [
+          "魅力（{@skill 表演|XPHB}）DC 15。不同于其他典籍，当你检视《黄衣之王》时，你会被迫进行此检定。若你检定成功，则你便与该书同调。要结束与《黄衣之王》的{@variantrule 同调|XPHB}，你必须面见哈斯塔。"
+        ]
+      },
+      {
+        "ENG_name": "Benefits:",
+        "name": "增益:",
+        "type": "entries",
+        "entries": [
+          "与《黄衣之王》同调期间，你获得以下增益：",
+          {
+            "type": "list",
+            "items": [
+              "你的所有魅力（{@skill 表演|XPHB}）检定具有{@variantrule 优势|XPHB}。",
+              "只要你的谎言涉及《黄衣之王》中的角色、场景和地点，你的所有魅力（{@skill 欺瞒|XPHB}）检定便具有{@variantrule 优势|XPHB}。",
+              "你可以施展{@spell 通神术|CthulhuTorchlight}。魅力是你施展该法术的施法属性。一旦你使用了此特性，则直至你完成一次长休前，都无法再次使用。当你用此物品施展该法术时，你联络的对象永远是哈斯塔。",
+              "每当你完成一次{@variantrule 长休|XPHB}时，掷一枚{@dice d20}。若结果为1，你可以施展{@spell 请神术|CthulhuTorchlight}来召唤哈斯塔。若你在完成一次{@variantrule 长休|XPHB}前未使用此增益，你将失去此增益。若你不使用此法术，你便会获得一级{@condition 力竭|XPHB}。只要你仍与此物品同调，该力竭等级就无法被移除。"
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Drawbacks:",
+        "name": "缺点：",
+        "type": "entries",
+        "entries": [
+          "你的所有感知（{@skill 察觉|XPHB}）、感知（{@skill 洞悉|XPHB}）和智力（{@skill 调查|XPHB}）检定都具有{@variantrule 劣势|XPHB}，因为卡尔克萨的幻象在你脑海中舞动，使你无视身边这愈发虚幻的世界。"
+        ]
+      },
+      {
+        "ENG_name": "Insight-Lost Carcosa (+20):",
+        "name": "洞见–失落的卡尔克萨 (+20):",
+        "type": "entries",
+        "entries": [
+          "你必须找到失落的卡尔克萨，并凝视那被遗忘的哈利湖。在那骇人的国度里，你终将寻得平静。无论代价为何，你都必须找到通往那里的道路。你会在最奇异的地方看到卡尔克萨的预兆与迹象。古老地城的深处，被斩杀之敌的内脏。每一个迹象都一次又一次地将你引回卡尔克萨。"
+        ]
+      },
+      {
+        "ENG_name": "Lore:",
+        "name": "逸闻：",
+        "type": "entries",
+        "entries": [
+          "《黄衣之王》能让你在所有为了解哈斯塔及其相关元素而进行的检定中自动成功。"
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "请神术|CthulhuTorchlight",
+      "通神术|CthulhuTorchlight"
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Ring of Treachery",
+    "name": "变节之戒",
+    "source": "CoA",
+    "page": 269,
+    "type": "RG|DMG",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "recharge": "长休",
+    "rechargeAmount": 3,
+    "charges": 3,
+    "entries": [
+      "这枚戒指有3次使用次数。佩戴这枚戒指时，当你受到伤害时，你可以使用反应消耗一次使用次数，并将该伤害转移到60尺内的任意生物（可能包括盟友）。完成一次长休后，所有使用次数会恢复。"
+    ],
+    "valueReference": 40000
+  }
+]

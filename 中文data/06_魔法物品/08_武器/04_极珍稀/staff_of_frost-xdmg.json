@@ -1,0 +1,127 @@
+[
+  {
+    "ENG_name": "Staff of Frost",
+    "name": "冰霜法杖",
+    "source": "XDMG",
+    "page": 308,
+    "srd52": true,
+    "basicRules2024": true,
+    "type": "M|XPHB",
+    "resist": [
+      "寒冷"
+    ],
+    "rarity": "very rare",
+    "reqAttune": "由德鲁伊、术士、魔契师或法师",
+    "reqAttuneTags": [
+      {
+        "class": "德鲁伊"
+      },
+      {
+        "class": "术士"
+      },
+      {
+        "class": "魔契师"
+      },
+      {
+        "class": "法师"
+      }
+    ],
+    "weight": 4,
+    "weaponCategory": "simple",
+    "property": [
+      "V|XPHB"
+    ],
+    "mastery": [
+      "失衡|XPHB"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6 + 4}",
+    "charges": 10,
+    "staff": true,
+    "entries": [
+      "持握这根法杖期间，你获得寒冷伤害的{@variantrule 抗性|XPHB}。",
+      {
+        "ENG_name": "Spells",
+        "name": "法术",
+        "type": "entries",
+        "entries": [
+          "这根法杖具有10充能。持握此法杖期间，你可以从法杖中施展以下表格中的一道法术，使用你自己的法术豁免DC。施展相应法术所需消耗的充能数如下表所示。",
+          {
+            "type": "table",
+            "colStyles": [
+              "col-10",
+              "col-2 text-center"
+            ],
+            "colLabels": [
+              "法术",
+              "消耗充能"
+            ],
+            "rows": [
+              [
+                "{@spell 寒冰锥|XPHB}",
+                "5"
+              ],
+              [
+                "{@spell 云雾术|XPHB}",
+                "1"
+              ],
+              [
+                "{@spell 冰风暴|XPHB}",
+                "4"
+              ],
+              [
+                "{@spell 冰墙术|XPHB}",
+                "4"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Regaining Charges",
+        "name": "重获充能",
+        "type": "entries",
+        "entries": [
+          "这根法杖在每日黎明时重获{@dice 1d6 + 4}已消耗的充能。当充能数耗尽时，骰一次{@dice 1d20}。如果骰值为1，法杖将融化为水并被摧毁。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "云雾术|xphb"
+        ],
+        "4": [
+          "冰风暴|xphb",
+          "冰墙术|xphb"
+        ],
+        "5": [
+          "寒冰锥|xphb"
+        ]
+      }
+    },
+    "lootTables": [
+      "奥秘 - 极珍稀|XDMG",
+      "圣物 - 极珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 40000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Staff of Frost.webp"
+          },
+          "width": 127,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

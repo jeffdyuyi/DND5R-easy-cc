@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Keytar",
+    "name": "键盘吉他",
+    "source": "ObojimaTallGrass",
+    "page": 171,
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "作为使用这个第一纪元乐器进行一分钟表演的一部分，你可以选择一个你能看见的15尺内的锁，并尝试用音乐的魔法来开锁。以这种方式开锁不需要除键盘吉他外的其他工具。当你这样做时，你需要针对锁的DC进行一次魅力（{@skill 表演}）检定，而非通常所需的敏捷检定。如果你未能用键盘吉他解锁，你在24小时内不能再次尝试。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/keytar.webp"
+          },
+          "credit": "Matt Owen",
+          "width": 2807,
+          "height": 2807
+        }
+      ]
+    }
+  }
+]

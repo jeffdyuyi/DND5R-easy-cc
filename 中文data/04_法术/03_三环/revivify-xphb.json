@@ -1,0 +1,56 @@
+[
+  {
+    "ENG_name": "Revivify",
+    "name": "回生术",
+    "source": "XPHB",
+    "page": 312,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 3,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一颗价值 300+GP 的钻石，作为法术耗材",
+        "cost": 30000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你接触在前一分钟内刚刚死亡的一名生物。该生物以 1 点{@variantrule 生命值|XPHB|生命值}回生。该法术不能复活老死的生物，也不能恢复失去的身体部位。"
+    ],
+    "miscTags": [
+      "HL"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师",
+      "德鲁伊",
+      "游侠",
+      "圣武士",
+      "奇械师"
+    ],
+    "display_school": "死灵系"
+  }
+]

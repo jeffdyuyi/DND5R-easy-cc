@@ -1,0 +1,143 @@
+{
+  "race": [
+    {
+      "ENG_name": "Quickstep",
+      "name": "疾步族",
+      "source": "BookOfEbonTides",
+      "page": 32,
+      "size": [
+        "S"
+      ],
+      "speed": 50,
+      "ability": [
+        {
+          "dex": 2,
+          "cha": 1
+        }
+      ],
+      "traitTags": [
+        "修整强化"
+      ],
+      "skillProficiencies": [
+        {
+          "acrobatics": true,
+          "sleight of hand": true
+        }
+      ],
+      "languageProficiencies": [
+        {
+          "elvish": true,
+          "other": true
+        }
+      ],
+      "entries": [
+        {
+          "ENG_name": "Quickstep Traits",
+          "name": "疾步族特质",
+          "type": "entries",
+          "entries": [
+            "你的疾步族血统体现在你与其他疾步族共享的各种特质中。"
+          ]
+        },
+        {
+          "ENG_name": "Age",
+          "name": "年龄",
+          "type": "entries",
+          "entries": [
+            "疾步族与其他精类相比寿命极短。疾步族约10岁成年，最多可活到50岁。"
+          ]
+        },
+        {
+          "ENG_name": "Alignment",
+          "name": "阵营",
+          "type": "entries",
+          "entries": [
+            "由于他们与影妖精的联系以及他们对比赛的传奇热爱，疾步族有着黑暗的名声，但他们很少是邪恶阵营。许多疾步族有一种顽皮甚至冲动的特质，这使他们倾向于混乱或绝对中立的阵营。"
+          ]
+        },
+        {
+          "ENG_name": "Darkvision",
+          "name": "黑暗视觉",
+          "type": "entries",
+          "entries": [
+            "你可以在60尺内的{@quickref 视野与光照||2||微光光照}中视物如同{@quickref 视野与光照||2||明亮光照}，在黑暗中视物如同{@quickref 视野与光照||2||微光光照}。你在黑暗中无法分辨颜色，只能看到灰色阴影。"
+          ]
+        },
+        {
+          "ENG_name": "Fey Ancestry",
+          "name": "妖精血统",
+          "type": "entries",
+          "entries": [
+            "你进行对抗{@condition 魅惑}的豁免时具有优势，并且不会因魔法效应而陷入睡眠。"
+          ]
+        },
+        {
+          "ENG_name": "Nimble",
+          "name": "迅捷",
+          "type": "entries",
+          "entries": [
+            "你熟练于{@skill 特技}和{@skill 巧手}技能。"
+          ]
+        },
+        {
+          "ENG_name": "Startling Speed",
+          "name": "惊人速度",
+          "type": "entries",
+          "entries": [
+            "你的动作如此迅捷以至于移动时几乎处于{@condition 隐形}状态。若你在你的回合中移动至少10尺，攻击检定对你具有劣势直到你的下个回合开始。此特性在你处于{@condition 失能}或{@condition 束缚}状态时无效。你可使用此能力的每日回合数等于你的等级。"
+          ]
+        },
+        {
+          "ENG_name": "Languages",
+          "name": "语言",
+          "type": "entries",
+          "entries": [
+            "你可以说、读、写精灵语和阴影语。"
+          ]
+        }
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "subraces": [],
+      "fluff": {
+        "entries": [
+          "疾步族是影妖精初次来到幽影国度时带来的仆从之一。与影妖精一样，疾步族天生对渗透该区域的腐化具有抵抗力，并且他们从容地拥抱庭院中的生活。大多数疾步族对华丽服饰情有独钟，并在富足的庭院生活中感到宾至如归。正如其名称所示，疾步族拥有对速度的自然亲和力，这使他们非常适合影妖精青睐的两项消遣：破坏和决斗。",
+          "疾步族很少在妖精法庭之外被发现，但在许多法庭中都有繁荣的社区，最著名的是午夜之牙法庭和冬之嘲笑法庭。然而疾步族并不能免疫大多数妖精所体验的漫游欲望。这些小型妖精是熟练且高效的冒险者，通常在任何希望穿越危险的幽影领域的团体中都受到欢迎。",
+          {
+            "ENG_name": "Quickstep Names",
+            "name": "疾步族名字",
+            "type": "entries",
+            "entries": [
+              "疾步族喜欢采用华丽、令人难忘的名字，这些名字在决斗前宣布时听起来引人入胜。通常，这些名字是具有启发性的描述性词语或自然主题。",
+              {
+                "type": "list",
+                "style": "list-hang-notitle",
+                "items": [
+                  {
+                    "ENG_name": "Example Names:",
+                    "name": "范例名字：",
+                    "type": "item",
+                    "entries": [
+                      "桦木、弩矢、猩红、雅致、双倍时间、回响、荣耀、性急、靛、星爆、和风。"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BookOfEbonTides/races/Quickstep.webp"
+            },
+            "width": 420,
+            "height": 499
+          }
+        ]
+      }
+    }
+  ]
+}

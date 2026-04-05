@@ -1,0 +1,149 @@
+[
+  {
+    "name": "阿斯莫",
+    "ENG_name": "Aasimar",
+    "source": "XPHB",
+    "edition": "one",
+    "page": 186,
+    "size": [
+      "S",
+      "M"
+    ],
+    "speed": 30,
+    "darkvision": 60,
+    "resist": [
+      "暗蚀",
+      "光耀"
+    ],
+    "additionalSpells": [
+      {
+        "ability": "cha",
+        "known": {
+          "1": [
+            "光亮术|xphb#c"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Celestial Resistance",
+        "name": "天界抗性",
+        "type": "entries",
+        "entries": [
+          "你具有暗蚀和光耀伤害的{@variantrule 抗性|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Darkvision",
+        "name": "黑暗视觉",
+        "type": "entries",
+        "entries": [
+          "你拥有 60 尺{@sense 黑暗视觉|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Healing Hands",
+        "name": "治愈之手",
+        "type": "entries",
+        "entries": [
+          "以一个{@action 魔法|XPHB}动作，你触碰一个生物，并掷数量等于你{@variantrule 熟练|XPHB|熟练加值}枚d4。该生物恢复等于掷骰结果之和的{@variantrule 生命值|XPHB}。使用此特质后，直到你完成一次{@variantrule 长休|XPHB}为止都不能再次使用。"
+        ]
+      },
+      {
+        "ENG_name": "Light Bearer",
+        "name": "光辉掌者",
+        "type": "entries",
+        "entries": [
+          "你习得{@spell 光亮术|XPHB}戏法。其施法属性为魅力。"
+        ]
+      },
+      {
+        "ENG_name": "Celestial Revelation",
+        "name": "天界启示",
+        "type": "entries",
+        "entries": [
+          "当你到达3级时，你将获得用{@variantrule 附赠动作|XPHB}进行变身的能力。每次使用此能力时，选择下列变身选项之一。你的变身会持续1分钟，你也可以主动提前终止它（无需动作）。使用此能力变身之后，直到你完成一次{@variantrule 长休|XPHB}为止都不能再次使用此能力。",
+          "每个你的回合一次，当你以攻击或法术对一个目标造成伤害时，你可以对其额外造成等同于你{@variantrule 熟练|XPHB|熟练加值}的伤害，其伤害类型取决于你选择的选项，选择死灵环绕则该伤害为暗蚀，选择天堂飞翼或内耀辉光则该伤害为光耀伤害。",
+          "变身选项如下：",
+          {
+            "type": "list",
+            "style": "list-hang-notitle",
+            "items": [
+              {
+                "ENG_name": "Heavenly Wings",
+                "name": "天堂飞翼",
+                "type": "item",
+                "entries": [
+                  "你的后背暂时伸出两片灵体飞翼。直到变身结束前，你获得{@variantrule 飞行速度|XPHB}（等于你的{@variantrule 速度|XPHB}）。"
+                ]
+              },
+              {
+                "ENG_name": "Inner Radiance",
+                "name": "内耀辉光",
+                "type": "item",
+                "entries": [
+                  "你的双眼与嘴巴暂时放出灼热的光芒。持续时间内，你散发出10尺{@variantrule 明亮光照|XPHB}与其外10尺的{@variantrule 微光光照|XPHB}。在你每个回合结束时，位于你10尺内的每个生物都会受到等于你{@variantrule 熟练|XPHB|熟练加值}的光耀伤害。"
+                ]
+              },
+              {
+                "ENG_name": "Necrotic Shroud",
+                "name": "死灵环绕",
+                "type": "item",
+                "entries": [
+                  "你的双目暂时变得如同黑暗深潭一般，无法飞行的双翼从你的背上涌出。除你盟友外，任何在你10尺内可以看见你的生物都必须通过一次魅力豁免检定（{@dc 8}+你的{@variantrule 熟练|XPHB|熟练加值}+你的魅力调整值），否则将会陷入{@condition 恐慌|XPHB}状态，持续至你的下一回合结束。"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "entries": [
+                "阿斯莫（音近 AH-sih-mar）的灵魂承载着上层位面之火花，但仍有凡性。他们有些是天使们的血嗣，有些则承接了天界之力，但都能用那火花的力量引来光明，治疗或是天怒。",
+                "阿斯莫可能在任何凡命族群中出现。他们的样貌和父母相似，但是寿命却能长达 160 岁，并且携带着代表其天族传承的特征，比如说金属般的雀斑，闪耀的双眼，头顶光圈，或者天使般的肤色（即银色，亮绿色，或者红铜色）。这些特征都是阿斯莫与生俱来的，并且会随着他们天界本质的显露而愈发醒目。"
+              ]
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/XPHB/Aasimar.webp"
+          },
+          "credit": "Aldo Domingues",
+          "width": 1700,
+          "height": 1094
+        }
+      ]
+    },
+    "creatureTypes": [
+      "类人"
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "sizeEntry": {
+      "ENG_name": "Size:",
+      "name": "体型：",
+      "type": "item",
+      "entries": [
+        "中型（约 4-7 尺高）或小型（约 2-4 尺高），在选择此种族时决定"
+      ]
+    },
+    "soundClip": {
+      "type": "internal",
+      "path": "races/aasimar.mp3"
+    },
+    "translator": "不全书"
+  }
+]

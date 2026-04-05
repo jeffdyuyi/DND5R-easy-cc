@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "Javelin",
+    "name": "精金标枪",
+    "source": "XGE",
+    "page": 78,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "unknown",
+    "weight": 2,
+    "value": 50,
+    "weaponCategory": "simple",
+    "property": [
+      "T|XPHB"
+    ],
+    "mastery": [
+      "缓速|XPHB"
+    ],
+    "range": "30/120",
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "spear": true,
+    "weapon": true,
+    "hasFluffImages": true,
+    "namePrefix": "精金",
+    "reprintedAs": [
+      "精金武器|XDMG"
+    ],
+    "tier": "主要",
+    "valueExpression": "[[baseItem.value]] + 50000",
+    "entries": [
+      "使用这个武器击中物体时，每次命中都视为重击。"
+    ],
+    "_isVariant": true
+  }
+]

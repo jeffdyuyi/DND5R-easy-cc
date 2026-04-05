@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Ring of Necrotic Resistance",
+    "name": "暗蚀抗性戒指",
+    "source": "DMG",
+    "page": 192,
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "暗蚀抗性戒指|XDMG"
+    ],
+    "type": "RG|DMG",
+    "resist": [
+      "暗蚀"
+    ],
+    "detail1": "黑玉",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "hasRefs": true,
+    "entries": [
+      "{#itemEntry 抗性戒指}"
+    ],
+    "translator": "不全书",
+    "valueReference": 4000
+  }
+]

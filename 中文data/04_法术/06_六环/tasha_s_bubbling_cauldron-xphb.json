@@ -1,0 +1,67 @@
+[
+  {
+    "ENG_name": "Tasha's Bubbling Cauldron",
+    "name": "塔莎泡泡坩埚",
+    "source": "XPHB",
+    "page": 330,
+    "level": 6,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 5
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一支价值 500+GP 的镀金长柄勺"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        }
+      }
+    ],
+    "entries": [
+      "你咒唤一口充满冒泡液体的爪足大锅。大锅出现在距你 5 尺内地面上的一处未占空间内且持续存在至法术终止。大锅不能被移动，且在法术结束时与其内的冒泡液体一同消失。",
+      "大锅中的液体会复制一种你选择的稀有度为普通或非普通药剂（如一瓶{@item 治疗药水|XDMG}）的词条。以一个{@variantrule 附赠动作|XPHB}，你或一名盟友可以从大锅中捞出上述你所选择的一种药水。药水会被装在一个小瓶中，且小瓶会在药水被消耗后消失。大锅能产生药水的瓶数等同于你的施法属性调整值（最小为 1）。从大锅中取出最后一瓶药水后，大锅消失，法术终止。",
+      "从大锅中取出的药水若在你再次施展此法术时未被消耗，则药水会消失。"
+    ],
+    "miscTags": [
+      "HL",
+      "UBA"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/XPHB/Tasha's Bubbling Cauldron.webp"
+          },
+          "credit": "Linda Lithen",
+          "width": 2225,
+          "height": 1440
+        }
+      ]
+    },
+    "classes": [
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "咒法系"
+  }
+]

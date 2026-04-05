@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Happy Joy Cake",
+    "name": "欢乐喜悦蛋糕",
+    "source": "ObojimaTallGrass",
+    "page": 212,
+    "type": "Ingred",
+    "rarity": "uncommon",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 12|large}|SneakerProMedium}",
+            "{@font {@style 13|large}|SneakerProMedium}",
+            "{@font {@style 12|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "欢乐喜悦蛋糕的制造者是一个神秘的家庭，据信其中至少有一个是精魄，但胧忆岛的居民仍然嘲笑这些小型、一口大小的美食，其配方已经传承了几代人。虽然欢乐喜悦蛋糕只在矢田门制作，但有一些值得信赖的旅行商人被允许在整个岛屿上分担它们。"
+    ],
+    "lootTables": [
+      "舒里塔希的非普通原料赠礼|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/happy-joy-cake.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 1336,
+          "height": 1336
+        }
+      ]
+    }
+  }
+]

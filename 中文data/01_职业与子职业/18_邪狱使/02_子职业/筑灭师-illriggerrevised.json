@@ -1,0 +1,431 @@
+{
+  "subclass": [
+    {
+      "ENG_name": "Architect of Ruin",
+      "name": "筑灭师",
+      "shortName": "筑灭师",
+      "source": "IllriggerRevised",
+      "className": "邪狱使",
+      "classSource": "IllriggerRevised",
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "戏法",
+            "已知法术",
+            "1环",
+            "2环",
+            "3环",
+            "4环"
+          ],
+          "rows": [
+            [
+              2,
+              3,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              3,
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              4,
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              4,
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              5,
+              4,
+              2,
+              0,
+              0
+            ],
+            [
+              2,
+              5,
+              4,
+              2,
+              0,
+              0
+            ],
+            [
+              2,
+              6,
+              4,
+              3,
+              0,
+              0
+            ],
+            [
+              2,
+              6,
+              4,
+              3,
+              0,
+              0
+            ],
+            [
+              3,
+              7,
+              4,
+              3,
+              2,
+              0
+            ],
+            [
+              3,
+              7,
+              4,
+              3,
+              2,
+              0
+            ],
+            [
+              3,
+              8,
+              4,
+              3,
+              3,
+              0
+            ],
+            [
+              3,
+              8,
+              4,
+              3,
+              3,
+              0
+            ],
+            [
+              3,
+              9,
+              4,
+              3,
+              3,
+              1
+            ],
+            [
+              3,
+              9,
+              4,
+              3,
+              3,
+              1
+            ],
+            [
+              3,
+              10,
+              4,
+              3,
+              3,
+              2
+            ],
+            [
+              3,
+              10,
+              4,
+              3,
+              3,
+              2
+            ],
+            [
+              3,
+              11,
+              4,
+              3,
+              3,
+              3
+            ],
+            [
+              3,
+              11,
+              4,
+              3,
+              3,
+              3
+            ]
+          ]
+        }
+      ],
+      "subclassFeatures": [
+        "筑灭师|邪狱使|IllriggerRevised|筑灭师|IllriggerRevised|3",
+        "炼狱多面手|邪狱使|IllriggerRevised|筑灭师|IllriggerRevised|7",
+        "阿斯蒙蒂斯之禁令|邪狱使|IllriggerRevised|筑灭师|IllriggerRevised|7",
+        "屈服|邪狱使|IllriggerRevised|筑灭师|IllriggerRevised|11",
+        "邪秽幻变|邪狱使|IllriggerRevised|筑灭师|IllriggerRevised|15"
+      ]
+    }
+  ],
+  "subclassFeature": [
+    {
+      "ENG_name": "Architect of Ruin",
+      "name": "筑灭师",
+      "source": "IllriggerRevised",
+      "className": "邪狱使",
+      "classSource": "IllriggerRevised",
+      "subclassShortName": "筑灭师",
+      "subclassSource": "IllriggerRevised",
+      "level": 3,
+      "entries": [
+        "{@i 筑灭师是冷酷且善算的奥术骑士，他们侍奉阿斯蒙蒂斯，利用法术、兵器和诡计，不惜一切代价，赢得胜利。}",
+        "阿斯蒙蒂斯统治着修罗场——恐惧之城。他的邪狱使们在时间线中穿梭，搜罗隐秘和法术以欺骗恐吓敌人。他与其他大魔鬼的战争建立在欺瞒与情报之上。",
+        "他的筑灭师致力于让九狱的敌人显得寡不敌众、措手不及。这些邪狱使们是战场上最老练的法剑士，但他们有时也会采取研究、渗透或宣传的手段来玩弄猎物的心理。当筑灭师最终直面敌人时，胜利已尽在掌握，筑灭师早已钻研透彻、准备充分且扼住了命运的咽喉，并迫使它向自身倾斜。他们饥渴的探索黑暗的艺术，以不思议之力武装自身与阿斯蒙蒂斯。",
+        {
+          "ENG_name": "Precepts of Ruin",
+          "name": "毁灭戒律",
+          "type": "entries",
+          "entries": [
+            "筑灭师在加入墟寂教团时向阿斯蒙蒂斯立下誓言。这些戒律要求他们通过运用魔法、制造恐慌、散播猜疑来摧毁阿斯蒙蒂斯之敌。",
+            {
+              "type": "entries",
+              "entries": [
+                {
+                  "ENG_name": "The Battlefield of the Mind",
+                  "name": "心灵的战场",
+                  "type": "entries",
+                  "entries": [
+                    "两军对阵时，疑惧之心已生。谈笑间，樯橹灰飞烟灭。"
+                  ]
+                },
+                {
+                  "ENG_name": "The Proper Secret",
+                  "name": "适当的秘密",
+                  "type": "entries",
+                  "entries": [
+                    "一旦我知晓了你的秘密，我就掌握了你的弱点。"
+                  ]
+                },
+                {
+                  "ENG_name": "Knowledge Is Power",
+                  "name": "知识就是力量",
+                  "type": "entries",
+                  "entries": [
+                    "传闻与兵器一样强大。我了解敌人的每个细节，预判他们的每步行动，在棋局开始前将他们将死。"
+                  ]
+                },
+                {
+                  "ENG_name": "Magic Is Mine to Command",
+                  "name": "魔法由我掌控",
+                  "type": "entries",
+                  "entries": [
+                    "诡计亦如兵器一样强大。我运用黑暗奥法操纵你的感官、削弱你的意志、强化我的利刃。你的兵众将因恐惧我的利刃下一次挥出何种黑暗魔法而瑟瑟发抖。"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Asmodeus's Blessing",
+      "name": "阿斯蒙蒂斯之赐",
+      "source": "IllriggerRevised",
+      "className": "邪狱使",
+      "classSource": "IllriggerRevised",
+      "subclassShortName": "筑灭师",
+      "subclassSource": "IllriggerRevised",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "当阿斯蒙蒂斯接纳 you 成为筑灭师时，你将获得来自炼狱的学识。你获得以下技能之一的熟练：{@skill 奥秘}、{@skill 历史}、{@skill 自然}或{@skill 宗教}。",
+        "此外，你现在可以读或写叉舌特性赋予你的语言，而非仅仅是说。"
+      ]
+    },
+    {
+      "ENG_name": "Spellcasting",
+      "name": "施法",
+      "source": "IllriggerRevised",
+      "className": "邪狱使",
+      "classSource": "IllriggerRevised",
+      "subclassShortName": "筑灭师",
+      "subclassSource": "IllriggerRevised",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "作为筑灭师，你可以利用亵渎魔法的源泉来施法。",
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "ENG_name": "Cantrips",
+              "name": "戏法",
+              "type": "entries",
+              "entries": [
+                "你已知两道你选择的筑灭师戏法。当你的邪狱使等级到达10级时，另选一道筑灭师戏法并习得。"
+              ]
+            },
+            {
+              "ENG_name": "Spell Slots",
+              "name": "法术位",
+              "type": "entries",
+              "entries": [
+                "筑灭师施法表显示了你可用于施展一环及以上邪狱使法术的法术位数量。施展邪狱使法术时，你必须同时消耗其对应环阶的法术位。当你完成长休时，你重获所有已消耗的法术位。"
+              ]
+            },
+            {
+              "ENG_name": "Spells Known of 1st Level and Higher",
+              "name": "1环及更高等级已知法术",
+              "type": "entries",
+              "entries": [
+                "3级时，你已知三道你选择的一环筑灭师法术。筑灭师施法表中已知法术一栏记录了你获得更多已知法术时的相应等级。你获得法术的环阶不能超过你所拥有的最高法术位环阶。"
+              ]
+            },
+            {
+              "ENG_name": "Spellcasting Ability",
+              "name": "施法属性",
+              "type": "entries",
+              "entries": [
+                "你法术的施法属性是魅力。每当你的法术需要施法属性时均指向你的魅力。而你法术的豁免DC和攻击检定，则使用你的魅力调整值。",
+                {
+                  "name": "法术",
+                  "type": "abilityDc",
+                  "attributes": [
+                    "cha"
+                  ]
+                },
+                {
+                  "name": "法术",
+                  "type": "abilityAttackMod",
+                  "attributes": [
+                    "cha"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Invoke Hell",
+      "name": "招引狱力",
+      "source": "IllriggerRevised",
+      "className": "邪狱使",
+      "classSource": "IllriggerRevised",
+      "subclassShortName": "筑灭师",
+      "subclassSource": "IllriggerRevised",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你获得以下两个招引狱力选项：",
+        {
+          "ENG_name": "Enervating Spell",
+          "name": "衰弱术法",
+          "type": "entries",
+          "entries": [
+            "当你使用一环及以上邪狱使法术对一名生物造成伤害时，你可以消耗一枚缄印（无需动作）为法术注入虚弱魔法。目标对此法术造成的伤害具有易伤。若目标通常对此法术造成的伤害具有抗性或免疫，则该抗性或免疫面对此法术时将被抑制并以易伤替代。"
+          ]
+        },
+        {
+          "ENG_name": "Spellblade",
+          "name": "法剑士",
+          "type": "entries",
+          "entries": [
+            "你能够以一动作同时发动一次近战武器攻击并施展一道你已知的邪狱使法术，该法术的施法时间必须为一动作。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Asmodeus's Interdiction",
+      "name": "阿斯蒙蒂斯之禁令",
+      "source": "IllriggerRevised",
+      "className": "邪狱使",
+      "classSource": "IllriggerRevised",
+      "subclassShortName": "筑灭师",
+      "subclassSource": "IllriggerRevised",
+      "level": 7,
+      "entries": [
+        "你可以在标注的等级习得下列额外禁令恩惠。一旦你习得此特性赋予的禁令恩惠，你将始终已知该恩惠，并且该恩惠不计入你的已知禁令恩惠数量。",
+        {
+          "type": "list",
+          "items": [
+            "{@optfeature 公理缄印（被动）|IllriggerRevised}",
+            "{@optfeature 破法者|IllriggerRevised}",
+            "{@optfeature 九狱魔师（被动）|IllriggerRevised}"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Hellish Versatility",
+      "name": "炼狱多面手",
+      "source": "IllriggerRevised",
+      "className": "邪狱使",
+      "classSource": "IllriggerRevised",
+      "subclassShortName": "筑灭师",
+      "subclassSource": "IllriggerRevised",
+      "level": 7,
+      "entries": [
+        "每个你的回合一次，你可以施展一道你已知的邪狱使戏法替换额外攻击特性赋予你的其中一次攻击。"
+      ]
+    },
+    {
+      "ENG_name": "Submit",
+      "name": "屈服",
+      "source": "IllriggerRevised",
+      "className": "邪狱使",
+      "classSource": "IllriggerRevised",
+      "subclassShortName": "筑灭师",
+      "subclassSource": "IllriggerRevised",
+      "level": 11,
+      "entries": [
+        "当你施展你已知的邪狱使法术时，你可以焚灭受禁生物身上的两枚缄印（无需动作），令其对抗此法术的豁免检定具有劣势。"
+      ]
+    },
+    {
+      "ENG_name": "Vile Transmogrification",
+      "name": "邪秽幻变",
+      "source": "IllriggerRevised",
+      "className": "邪狱使",
+      "classSource": "IllriggerRevised",
+      "subclassShortName": "筑灭师",
+      "subclassSource": "IllriggerRevised",
+      "level": 15,
+      "entries": [
+        "你发现两种使用阿斯蒙蒂斯魔法的新方法：",
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "ENG_name": "Regaining Seals",
+              "name": "重获缄印",
+              "type": "entries",
+              "entries": [
+                "在你的回合中以一个附赠动作，你可以消耗一个法术位来重获数量等于该法术位环阶的缄印。"
+              ]
+            },
+            {
+              "ENG_name": "Regaining Spell Slots",
+              "name": "重获法术位",
+              "type": "entries",
+              "entries": [
+                "在你的回合中以一个附赠动作，你可以消耗任意数量的缄印来重获环阶等于缄印数三分之一的法术位。"
+              ]
+            }
+          ]
+        },
+        "一旦你使用了其中一项增益，直至完成长休你都无法再次使用该增益。"
+      ]
+    }
+  ]
+}

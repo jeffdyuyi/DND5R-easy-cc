@@ -1,0 +1,15 @@
+[
+  {
+    "ENG_name": "Whistle of Freedom",
+    "name": "自由之哨",
+    "source": "HumblewoodTales",
+    "page": 249,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这位军士队长的哨具有魔法词条，当吹响时，所有能听到哨声且在100尺范围内的生物将在下一次对抗当前影响它们的法术或效应的豁免检定中获得优势。任何能听到哨声且处于心智控制效应（例如{@spell 支配类人}）下的生物将立即从该效应中解放。",
+      "一个已从哨声中获得增益的生物在接下来的24小时内无法再次从其魔法词条中获益。"
+    ],
+    "hasFluffImages": true
+  }
+]

@@ -1,0 +1,232 @@
+{
+  "ENG_name": "Order Domain",
+  "name": "秩序领域",
+  "shortName": "秩序",
+  "source": "TCE",
+  "className": "牧师",
+  "classSource": "PHB",
+  "page": 31,
+  "edition": "classic",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "1": [
+          "命令术|PHB",
+          "英勇术|PHB"
+        ],
+        "3": [
+          "定身类人|PHB",
+          "诚实之域|PHB"
+        ],
+        "5": [
+          "群体治愈真言|PHB",
+          "缓慢术|PHB"
+        ],
+        "7": [
+          "强迫术|PHB",
+          "寻找生物|PHB"
+        ],
+        "9": [
+          "通神术|PHB",
+          "支配类人|PHB"
+        ]
+      }
+    }
+  ],
+  "subclassFeatures": [
+    "秩序领域|牧师||秩序||1",
+    "引导神力：秩序律令|牧师||秩序||2",
+    "法律化身|牧师||秩序||6",
+    "神圣打击|牧师||秩序||8",
+    "受祝击|牧师||秩序||8|TCE",
+    "秩序之怒|牧师||秩序||17"
+  ],
+  "features": [
+    {
+      "ENG_name": "Order Domain",
+      "name": "秩序领域",
+      "source": "TCE",
+      "page": 31,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "秩序",
+      "subclassSource": "TCE",
+      "level": 1,
+      "entries": [
+        "秩序领域的神明致力于通过法律和纪律来维护宇宙的和谐。深入这一领域的牧师是秩序的捍卫者，他们相信权力的正当行使和对规章的严格遵守是防止混乱和保护弱者的最佳手段。这些牧师常常在法庭、军队和政府机构中担任顾问或裁决者。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "领域法术|牧师||秩序||1"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "附赠熟练|牧师||秩序||1"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "权威之音|牧师||秩序||1"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Domain Spells",
+      "name": "领域法术",
+      "source": "TCE",
+      "page": 31,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "秩序",
+      "subclassSource": "TCE",
+      "level": 1,
+      "entries": [
+        "你在到达秩序领域法术表中特定的牧师等级时，你就始终准备了表中对应的法术。关于领域法术如何工作，请参阅神圣领域职业特性。",
+        {
+          "type": "table",
+          "caption": "秩序领域法术",
+          "colLabels": [
+            "牧师等级",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "1st",
+              "{@spell 命令术|PHB}, {@spell 英勇术|PHB}"
+            ],
+            [
+              "3rd",
+              "{@spell 定身类人|PHB}, {@spell 诚实之域|PHB}"
+            ],
+            [
+              "5th",
+              "{@spell 群体治愈真言|PHB}, {@spell 缓慢术|PHB}"
+            ],
+            [
+              "7th",
+              "{@spell 强迫术|PHB}, {@spell 寻找生物|PHB}"
+            ],
+            [
+              "9th",
+              "{@spell 通神术|PHB}, {@spell 支配类人|PHB}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Bonus Proficiencies",
+      "name": "附赠熟练",
+      "source": "TCE",
+      "page": 31,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "秩序",
+      "subclassSource": "TCE",
+      "level": 1,
+      "header": 1,
+      "entries": [
+        "当你1级选择此领域时，你获得重甲的熟练项。你还获得{@skill 说服|PHB}或{@skill 威吓|PHB}技能的熟练项（由你选择）。"
+      ]
+    },
+    {
+      "ENG_name": "Voice of Authority",
+      "name": "权威之音",
+      "source": "TCE",
+      "page": 31,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "秩序",
+      "subclassSource": "TCE",
+      "level": 1,
+      "header": 1,
+      "entries": [
+        "第1级起，你可以唤起法律的力量来鼓励盟友发动攻击。如果你使用 1 环或更高环阶的法术位施展一个以盟友为目标的法术，该盟友可以在法术结束后立即使用反应对一个你可见且由你选择的生物发动一次武器攻击。"
+      ]
+    },
+    {
+      "ENG_name": "Channel Divinity: Order's Demand",
+      "name": "引导神力：秩序律令",
+      "source": "TCE",
+      "page": 31,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "秩序",
+      "subclassSource": "TCE",
+      "level": 2,
+      "header": 2,
+      "consumes": {
+        "ENG_name": "Channel Divinity",
+        "name": "引导神力"
+      },
+      "entries": [
+        "第2级起，你可以使用引导神力来对他人施加威慑性的存在感。作为一个动作，你展示圣徽，选择身边 30 尺内每一个能看见或听见你的生物。每一个该类生物必须进行一次感知豁免。豁免失败者被你{@status 魅惑|PHB}，直到你的下个回合结束或其受到伤害为止。你还可以让任何豁免失败而被魅惑的生物丢弃其持有的物品。"
+      ]
+    },
+    {
+      "ENG_name": "Embodiment of the Law",
+      "name": "法律化身",
+      "source": "TCE",
+      "page": 31,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "秩序",
+      "subclassSource": "TCE",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "第6级起，你变得异常擅长引导魔法能量来强迫他人。当你使用 1 环或更高环阶的法术位施展一道惑控学派法术时，如果该法术的施法时间通常为 1 个动作，你可以将该次施法时间改为 1 个附赠动作。",
+        "你可以使用该特性的次数等于你的感知调整值（最少 1 次）。你在完成一次长休后重获所有已消耗的使用次数。"
+      ]
+    },
+    {
+      "ENG_name": "Divine Strike",
+      "name": "神圣打击",
+      "source": "TCE",
+      "page": 31,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "秩序",
+      "subclassSource": "TCE",
+      "level": 8,
+      "header": 2,
+      "entries": [
+        "第8级起，你获得将能量灌注进武器攻击的能力。你每回合一次在武器攻击命中生物时，可以让该攻击额外对目标造成 {@damage 1d8} 点心灵伤害。当你到达14级时，该额外伤害增加到 {@damage 2d8} 点。"
+      ]
+    },
+    {
+      "ENG_name": "Blessed Strikes",
+      "name": "受祝击",
+      "source": "TCE",
+      "page": 30,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "秩序",
+      "subclassSource": "PHB",
+      "level": 8,
+      "isClassFeatureVariant": true,
+      "header": 2,
+      "entries": [
+        "{@i 8级牧师{@variantrule 可选职业特性|TCE|可选特性}，取代神圣打击特性}",
+        "在战斗中，你受到神力的祝福。当你通过戏法 or 武器攻击来伤害一个生物时，你能够对该生物造成额外{@damage 1d8}光耀伤害。当你造成一次此伤害后，你直到自己的下一个回合开始前无法再次使用此特性。"
+      ]
+    },
+    {
+      "ENG_name": "Order's Wrath",
+      "name": "秩序之怒",
+      "source": "TCE",
+      "page": 31,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "秩序",
+      "subclassSource": "TCE",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "第17级起，你指定的毁灭目标将在你们的共同打击下萎靡不振。如果你在自己的回合中对一个生物造成了神圣打击伤害，你可以诅咒该生物直到你的下个回合开始。下一次当你的盟友的一次攻击命中受诅生物时，目标还承受 {@damage 2d8} 点心灵伤害，随后诅咒结束。此特性同一时间只能诅咒一个生物。"
+      ]
+    }
+  ]
+}

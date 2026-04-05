@@ -1,0 +1,76 @@
+[
+  {
+    "ENG_name": "Shillelagh",
+    "name": "橡棍术",
+    "source": "XPHB",
+    "page": 316,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 0,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "槲寄生"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你将自然之力灌入手中持握的一根短棒或长棍中。你在法术持续时间内使用该武器进行近战攻击时，可以用你的施法属性代替力量属性来进行攻击检定和伤害掷骰，且该武器的伤害骰变为{@dice d8}。此类攻击造成伤害时，你可以选择将其伤害类型改为力场伤害，或是维持武器原本的伤害类型。",
+      "你再次施展该法术或丢掉该武器时，该法术也随之终止。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Cantrip Upgrade",
+        "name": "戏法强化",
+        "type": "entries",
+        "entries": [
+          "到达特定等级后，受术武器的伤害骰会改变：5 级（{@damage d10}），11 级（{@damage d12}），17 级（{@damage 2d6}）。"
+        ]
+      }
+    ],
+    "scalingLevelDice": {
+      "label": "伤害",
+      "scaling": {
+        "1": "1d8",
+        "5": "1d10",
+        "11": "1d12",
+        "17": "2d6"
+      }
+    },
+    "damageInflict": [
+      "force"
+    ],
+    "miscTags": [
+      "AAD",
+      "SCL"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊"
+    ],
+    "display_school": "变化系",
+    "display_damageInflict": [
+      "力场"
+    ]
+  }
+]

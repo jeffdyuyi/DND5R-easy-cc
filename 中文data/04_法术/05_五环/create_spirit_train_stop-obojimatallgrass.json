@@ -1,0 +1,83 @@
+[
+  {
+    "ENG_name": "Create Spirit Train Stop",
+    "name": "灵之列车站",
+    "source": "ObojimaTallGrass",
+    "page": 183,
+    "level": 5,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 10
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一张空白车票和至少价值50GP的高等质量墨水，该法术会消耗这些材料",
+        "cost": 5000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "当你施放该法术时，你会在空白车票上刻下你选择的永久列车站的代码，该站的站号你已熟悉。随着流浪之线在它面前显现的铁轨上抵达，一个闪烁的标志和小型长椅出现在你身后。你的车票允许你和最多八名你选择的生物通行。无论距离多远，到达目的地都需要1小时。",
+      "在你的旅行中，其他站点可能会出现并由GM决定。如果你或任何友好生物选择在旅行中进行短休，并在短休结束时通过花费一个或多个生命骰来恢复生命值，你还会额外恢复{@dice 1d10}点生命值。",
+      "有无数列车站点，每个都包含一个独特的站点编号。当你第一次获得施放该法术的能力时，你会知晓由GM决定的两个目的地的代码。你可以在冒险过程中学习额外的代码。你可以在研究1分钟后将新的代码序列存入记忆。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "miscTags": [
+      "HL"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Spells/wandering-line-stop.webp"
+          },
+          "credit": "Alexander Cloos",
+          "width": 3850,
+          "height": 2521
+        }
+      ]
+    },
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Custom/Spells/Create%20Spirit%20Train%20Stop.webp"
+  }
+]

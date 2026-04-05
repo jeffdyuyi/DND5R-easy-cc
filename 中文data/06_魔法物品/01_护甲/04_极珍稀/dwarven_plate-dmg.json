@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Dwarven Plate",
+    "name": "矮人板甲",
+    "source": "DMG",
+    "page": 167,
+    "srd": true,
+    "referenceSources": [
+      "TftYP-AtG",
+      "CM",
+      "CoA"
+    ],
+    "reprintedAs": [
+      {
+        "uid": "矮人板甲|XDMG",
+        "tag": "item"
+      }
+    ],
+    "baseItem": "板甲|PHB",
+    "type": "HA",
+    "tier": "主要",
+    "rarity": "very rare",
+    "weight": 65,
+    "ac": 18,
+    "strength": "15",
+    "bonusAc": "+2",
+    "stealth": true,
+    "entries": [
+      "着装该护甲期间，你的AC获得+2加值。此外，当某种效应将要在违背你意愿的情况下使你沿地面移动时，你可以用你的反应来减少你被移动的距离，至多减少10尺。"
+    ],
+    "lootTables": [
+      "魔法物品表H"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 40000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Dwarven Plate.webp"
+          },
+          "width": 683,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

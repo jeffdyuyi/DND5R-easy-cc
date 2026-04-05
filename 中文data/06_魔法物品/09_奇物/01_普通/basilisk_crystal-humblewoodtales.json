@@ -1,0 +1,22 @@
+[
+  {
+    "ENG_name": "Basilisk Crystal",
+    "name": "石化蜥蜴水晶",
+    "source": "HumblewoodTales",
+    "page": 236,
+    "type": "SCF",
+    "scfType": "arcane",
+    "rarity": "common",
+    "wondrous": true,
+    "focus": [
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "entries": [
+      "这些水晶生长在{@creature 石化蜥蜴||石化蜥蜴}的背部，在被脱落前具有难以置信的硬度。除非使用精金制成的工具或武器，否则无法有效切割或损坏石化蜥蜴水晶。",
+      "石化蜥蜴水晶在其他情况下可作为极佳的奥术法术专注。"
+    ],
+    "hasFluffImages": true
+  }
+]

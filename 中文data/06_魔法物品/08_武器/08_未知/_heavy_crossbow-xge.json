@@ -1,0 +1,42 @@
+[
+  {
+    "ENG_name": "Heavy Crossbow",
+    "name": "精金重弩",
+    "source": "XGE",
+    "page": 78,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "unknown",
+    "weight": 18,
+    "value": 5000,
+    "weaponCategory": "martial",
+    "property": [
+      "A|XPHB",
+      "H|XPHB",
+      "LD|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "推离|XPHB"
+    ],
+    "range": "100/400",
+    "dmg1": "1d10",
+    "dmgType": "P",
+    "crossbow": true,
+    "weapon": true,
+    "ammoType": "弩矢|xphb",
+    "hasFluffImages": true,
+    "namePrefix": "精金",
+    "reprintedAs": [
+      "精金武器|XDMG"
+    ],
+    "tier": "主要",
+    "valueExpression": "[[baseItem.value]] + 50000",
+    "entries": [
+      "使用这个武器击中物体时，每次命中都视为重击。"
+    ],
+    "_isVariant": true
+  }
+]

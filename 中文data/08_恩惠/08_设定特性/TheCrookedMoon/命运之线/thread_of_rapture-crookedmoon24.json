@@ -1,0 +1,55 @@
+[
+  {
+    "ENG_name": "Thread of Rapture",
+    "name": "狂喜之线",
+    "source": "CrookedMoon24",
+    "page": 165,
+    "type": "Thread of Fate",
+    "entries": [
+      "一个被狂喜之线连接的角色狂热地侍奉一位神或其他更强大的法力作为其选民先知。他们听到神的许愿，神希望通过实施一项伟大的神圣干预专长，在一个无神领域中立足，以期在大地及其人民身上留下标记，这些人必须被转化为信徒。",
+      {
+        "ENG_name": "Goal",
+        "name": "目标",
+        "type": "entries",
+        "entries": [
+          "角色必须在大地上传播其神祇的圣言，转化一批虔诚信徒，打破神明影响力的障碍，并带来一次神圣干预的举动。"
+        ]
+      },
+      {
+        "ENG_name": "Personalization",
+        "name": "个性化",
+        "type": "entries",
+        "entries": [
+          "确定角色神明的本质。他们的神之领域是什么，他们的教义是什么？他们要求追随者做什么，角色如何展示他们对它们的承诺？他们寻求在德鲁斯肯瓦尔德进行什么神圣干预以及为什么？"
+        ]
+      },
+      {
+        "ENG_name": "Call to Adventure",
+        "name": "冒险召唤",
+        "type": "entries",
+        "entries": [
+          "当角色在传播他们的神的圣言时，他们经历了一次濒死体验，但被他们的神从死亡边缘带回。角色听到他们的神直接对他们说话，告诉他们必须执行的神圣任务：在死亡大地上聚集信徒，并为他们的神明意志建立立足点。神指引角色前往冒险开始的地方。"
+        ]
+      },
+      {
+        "ENG_name": "Associated Background",
+        "name": "关联背景",
+        "type": "entries",
+        "entries": [
+          "{@background 邪教徒|crookedmoon24}"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/CrookedMoon24/Adventure/058-02-040.thread-of-rapture.webp"
+        },
+        "width": 627,
+        "height": 609
+      }
+    ]
+  }
+]

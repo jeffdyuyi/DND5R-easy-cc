@@ -1,0 +1,48 @@
+[
+  {
+    "ENG_name": "Nature's Mantle",
+    "name": "自然斗篷",
+    "source": "TCE",
+    "page": 133,
+    "reprintedAs": [
+      "自然斗篷|XDMG"
+    ],
+    "rarity": "uncommon",
+    "reqAttune": "由德鲁伊或游侠",
+    "reqAttuneTags": [
+      {
+        "class": "德鲁伊"
+      },
+      {
+        "class": "游侠"
+      }
+    ],
+    "wondrous": true,
+    "weight": 2,
+    "focus": [
+      "德鲁伊",
+      "游侠"
+    ],
+    "entries": [
+      "这件斗篷会变换颜色和质地，以融入你周围的地形。穿戴这件斗篷时，你可以将其作为你的德鲁伊和游侠法术的施法焦点。",
+      "即使你被直接观察，只要在轻微遮蔽的区域内，你可以作为附赠动作进行{@action 躲藏}。"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/TCE/Nature's Mantle.webp"
+          },
+          "credit": "Brian Valeza",
+          "width": 698,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

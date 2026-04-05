@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Loadstone",
+    "name": "负载石",
+    "source": "TftYP",
+    "page": 228,
+    "rarity": "rare",
+    "wondrous": true,
+    "curse": true,
+    "weight": 1,
+    "entries": [
+      "这块石头是一枚价值150gp的大型宝石。",
+      {
+        "ENG_name": "Curse",
+        "name": "诅咒",
+        "type": "entries",
+        "entries": [
+          "这块石头是一颗价值150金币的大型宝石，但它被诅咒了，尽管如此，它的魔法本质被隐藏起来；{@spell 侦测魔法} 无法探测到它。使用一个 {@spell 鉴定术} 法术可以揭示石头的真实本质。如果你在身上携带这块石头时使用了 {@action 疾走} 或者 {@action 撤离} 动作，它的诅咒就会被激活。除非使用 {@spell 移除诅咒} 或类似的魔法来解除诅咒，否则你的速度会减少5尺，你的最大负载和最大举起能力都会减半。此外，你也会变得不愿意放弃这块石头。"
+        ]
+      }
+    ],
+    "valueReference": 4000,
+    "type": "W"
+  }
+]

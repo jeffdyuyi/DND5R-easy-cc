@@ -1,0 +1,43 @@
+[
+  {
+    "ENG_name": "Claymore of the Great Badger",
+    "name": "巨獾重剑",
+    "source": "GriffonsSaddlebag2",
+    "page": 61,
+    "baseItem": "巨剑|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "uncommon",
+    "weight": 6,
+    "weaponCategory": "军用",
+    "property": [
+      "H",
+      "2H"
+    ],
+    "dmg1": "2d6",
+    "dmgType": "S",
+    "bonusWeapon": "+1",
+    "recharge": "拂晓",
+    "rechargeAmount": 3,
+    "charges": 3,
+    "entries": [
+      "这把沉重的巨剑承载着强大獾类的力量。你使用这把魔法武器进行的攻击检定和伤害掷骰获得+1加值。这把剑具有3充能，且每日黎明时恢复所有已消耗的充能。当你用此武器命中一个大型或更小体型的生物时，你可以消耗此武器的1充能将该生物推离你5尺。"
+    ],
+    "lootTables": [
+      "魔法物品表 F2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Claymore-of-the--Great-Badger.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

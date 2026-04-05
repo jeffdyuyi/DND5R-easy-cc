@@ -1,0 +1,18 @@
+[
+  {
+    "name": "排箫",
+    "ENG_name": "Pan Flute",
+    "source": "PHB",
+    "page": 154,
+    "edition": "classic",
+    "type": "INS",
+    "rarity": "none",
+    "weight": 2,
+    "value": 1200,
+    "basicRules": true,
+    "reprintedAs": [
+      "排箫|XPHB"
+    ],
+    "srd": true
+  }
+]

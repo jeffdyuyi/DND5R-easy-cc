@@ -1,0 +1,20 @@
+{
+    "ENG_name": "Unarmed Fighting",
+    "name": "徒手战斗",
+    "source": "TCE",
+    "page": 41,
+    "reprintedAs": [
+        {
+            "uid": "徒手战斗|XPHB",
+            "tag": "feat"
+        }
+    ],
+    "isClassFeatureVariant": true,
+    "featureType": [
+        "FS:F"
+    ],
+    "entries": [
+        "你的徒手打击在命中时可以造成等同于 {@dice 1d6} + 你的力量调整值点的力场伤害。如果你在发动攻击时没有持握任何武器或盾牌，该骰子将变为 {@dice 1d8}。",
+        "在每个回合开始时，你可以对一名被你擒抱的生物造成 {@dice 1d4} 点力场伤害。"
+    ]
+}

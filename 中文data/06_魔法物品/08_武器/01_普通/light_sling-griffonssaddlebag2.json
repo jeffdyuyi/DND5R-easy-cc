@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Light Sling",
+    "name": "光亮投石索",
+    "source": "GriffonsSaddlebag2",
+    "page": 115,
+    "baseItem": "投石索|phb",
+    "type": "R",
+    "tier": "次要",
+    "rarity": "common",
+    "weaponCategory": "简易",
+    "property": [
+      "A"
+    ],
+    "range": "30/120",
+    "dmg1": "1d4",
+    "dmgType": "B",
+    "entries": [
+      "以一个动作，你可以说出这把魔法投石索的命令语并向30尺内你能看见的一个点或目标投掷一个微小的光球。这个光球会散发20尺半径的明亮光照以及额外20尺的微光光照。命中时，光球不会造成伤害，并会黏附在目标上持续最多1分钟，直到投石索被用来投掷另一个光球，或直到一个在光照范围内的生物用其动作将其熄灭（如同熄灭蜡烛）。如果目标是一个非自愿生物，或是一个被生物穿戴或携带的物品，该生物必须进行一次DC 10的敏捷豁免。若豁免失败，光球会在持续时间内黏附在目标上。若豁免成功，光球会熄灭消失。"
+    ],
+    "ammoType": "投石索子弹|phb",
+    "lootTables": [
+      "魔法物品表 A2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Light-Sling.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

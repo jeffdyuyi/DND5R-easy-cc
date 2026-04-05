@@ -1,0 +1,67 @@
+[
+  {
+    "ENG_name": "Animate Dead",
+    "name": "活化死尸",
+    "source": "XPHB",
+    "page": 240,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TWoO"
+    ],
+    "level": 3,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 10
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一滴血、一块肉、以及一撮骨灰"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "在施法距离内指定一具中型或小型类人遗骨或遗体。目标将变为一名亡灵生物：遗骨变为{@creature 骷髅|XMM}，遗体则变为{@creature 丧尸|XMM}。",
+      "在你的每个回合内，你可以使用一个{@variantrule 附赠动作|XPHB}并以精神命令操纵距离你 60 尺内，任何你用此法术制造的生物（如果你操纵多个生物，则你的命令可以同时传达给它们全部或是其中的某几个，不过每次只能为它们下达同一命令）。你决定被操纵生物下回合执行的动作和如何移动。或者，你也可以选择下达一条宽泛的命令（比如守护某个房间或走廊）。如果你没有下达命令，该生物将执行{@action 回避|XPHB}动作且只会为躲避危险而移动。一旦被下达命令，该生物会持续执行命令直到任务完成。",
+      "这些受操纵生物只会在 24小时内服从你的命令，在之后，它们会停止遵守你下达的命令。若你想将对这些生物的控制时间再延长24小时，则你必须在当前24小时的时间段终止前再次对这些生物施展该法术。法术的此种用法只能延长你对至多四个你使用此法术所创造生物的控制时间，而不会创造新的生物。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "升环施法。使用的法术位每比三环高一环，你就能多唤起两只亡灵生物，或是多延长对两只亡灵生物的控制。你无法用同一具骸骨或遗体唤起多个亡灵生物。"
+        ]
+      }
+    ],
+    "affectsCreatureType": [
+      "类人生物"
+    ],
+    "miscTags": [
+      "PRM",
+      "SMN",
+      "UBA"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师",
+      "法师"
+    ],
+    "display_school": "死灵系"
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "ENG_name": "Otiluke's Resilient Sphere",
+    "name": "欧提路克弹力法球",
+    "source": "XPHB",
+    "page": 303,
+    "srd52": "弹力法球",
+    "basicRules2024": true,
+    "level": 4,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一颗玻璃球"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "一颗微微发光的法球将施法距离内一个大型或更小的生物或物件封在其中。非自愿的生物必须成功通过一次敏捷豁免，否则在法术持续时间内被封在球体中。",
+      "任何事物，包括实体物件、能量或其他法术效应，都不能穿透障壁进出其内，不过生物在球内仍可以正常呼吸。球体免疫一切伤害，且球内的生物或物件不能被来自球外的攻击或效应所伤害，球内的生物也不能对球外的任何事物造成伤害。",
+      "该球体没有重量，而其尺寸恰好可以容纳球内的生物或物件。被封住的生物可以使用一个动作推动球壁并以至多该生物速度一半的{@variantrule 速度|XPHB}滚动球体。另外，球体也可以被其他生物拿起或移动。",
+      "以球体为目标施展一道{@spell 解离术|XPHB}可以摧毁球体而不伤害球内的任何事物。"
+    ],
+    "damageImmune": [
+      "强酸",
+      "钝击",
+      "寒冷",
+      "火焰",
+      "力场",
+      "闪电",
+      "暗蚀",
+      "穿刺",
+      "毒素",
+      "心灵",
+      "光耀",
+      "挥砍",
+      "雷鸣"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "miscTags": [
+      "OBJ"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "防护系",
+    "display_savingThrow": [
+      "敏捷"
+    ]
+  }
+]

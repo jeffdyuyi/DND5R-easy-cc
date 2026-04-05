@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Kinetic Pop",
+    "name": "动能爆",
+    "source": "ObojimaTallGrass",
+    "page": 223,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Com"
+    ],
+    "entries": [
+      "当这种药水被倾倒在非魔法武器上时，它会为这件寻常物品注入动能，使其因期待而振动。下一次你用该武器命中一个生物时，能量会爆炸，使武器伤害骰子掷出的伤害翻倍。此药水的效应会在1小时后或能量爆炸后结束。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 27|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Combat/kinetic-pop.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1621,
+          "height": 1621
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

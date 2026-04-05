@@ -1,0 +1,109 @@
+[
+  {
+    "ENG_name": "Perfection",
+    "name": "完美",
+    "source": "GrimHollowPG24",
+    "page": 197,
+    "level": 9,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你念出一句神圣箴言，将你视线范围内的一个生物重塑为大炽天使的形象。该生物身上的{@condition 中毒|XPHB}状态结束，目标身上的诅咒在法术持续时间内被压制，并且其生命值恢复至{@variantrule 生命值|XPHB|生命值}上限。该生物低于18的属性值变为18。根据你所使用的箴言，你还会基于你所召唤的大炽天使为目标施加祝福：",
+      {
+        "ENG_name": "Aphaelon:",
+        "name": "阿法隆:",
+        "type": "entries",
+        "entries": [
+          "目标对{@condition 魅惑|XPHB}状态具有{@variantrule 免疫|XPHB}。如果目标豁免检定失败，它可以采取一个{@variantrule 反应|XPHB}来使豁免检定重新掷骰。它必须使用新的掷骰结果。"
+        ]
+      },
+      {
+        "ENG_name": "Empyreus:",
+        "name": "至高天：",
+        "type": "entries",
+        "entries": [
+          "目标对{@condition 恐慌|XPHB}状态具有{@variantrule 免疫|XPHB}，并且目标在其每回合首次命中时额外造成{@damage 4d6}力场伤害。"
+        ]
+      },
+      {
+        "ENG_name": "Miklas:",
+        "name": "米克拉斯：",
+        "type": "entries",
+        "entries": [
+          "目标对毒素伤害和{@condition 中毒|XPHB}状态具有{@variantrule 免疫|XPHB}，并且在每个回合开始时恢复{@dice 4d6}{@variantrule 生命值|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Morael:",
+        "name": "莫拉埃尔：",
+        "type": "entries",
+        "entries": [
+          "目标获得30{@variantrule 临时生命值|XPHB}。当目标的60尺内盟友受到伤害时，目标可以采取一个{@variantrule 反应|XPHB}来替代承受该伤害。"
+        ]
+      },
+      {
+        "ENG_name": "Solyma:",
+        "name": "索利玛：",
+        "type": "entries",
+        "entries": [
+          "目标对雷鸣伤害具有{@variantrule 免疫|XPHB}。当目标受到来自一个它能看见的生物的伤害时，它可以采取一个{@variantrule 反应|XPHB}对该生物造成等同于触发伤害的火焰伤害。"
+        ]
+      },
+      {
+        "ENG_name": "Zabriel:",
+        "name": "扎布瑞尔：",
+        "type": "entries",
+        "entries": [
+          "目标获得60尺范围内的{@sense 真实视觉|XPHB}。在每个回合结束时，目标可以授予没有{@variantrule 英雄激励|XPHB}的盟友一个英雄激励。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "力场"
+    ],
+    "miscTags": [
+      "HL",
+      "SGT",
+      "THP"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Perfection.webp"
+  }
+]

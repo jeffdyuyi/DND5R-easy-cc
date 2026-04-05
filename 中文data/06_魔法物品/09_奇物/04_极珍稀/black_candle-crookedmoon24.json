@@ -1,0 +1,55 @@
+[
+  {
+    "ENG_name": "Black Candle",
+    "name": "黑烛",
+    "source": "CrookedMoon24",
+    "page": 608,
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "property": [
+      "TCM'24:CC"
+    ],
+    "entries": [
+      "这根粗大的黑色牛脂蜡烛刻有奥术符号。点燃时，它的烟雾油腻刺鼻，火焰呈灰白色，但永远不会燃尽。该蜡烛具有如下词条。",
+      {
+        "ENG_name": "Word of Flame and Darkness",
+        "name": "焰与暗之言",
+        "type": "entries",
+        "entries": [
+          "作为{@variantrule 附赠动作|XPHB}，当你位于该蜡烛周边60尺范围内时，你可以念出命令语来点燃或熄灭蜡烛。它会发出30尺半径的{@variantrule 微光光照|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Witchlight",
+        "name": "巫光",
+        "type": "entries",
+        "entries": [
+          "位于该蜡烛光照范围内期间，你可以施展一道1环或2环法术而无需消耗法术位。当你以这种方式施展一道法术时，你在24小时内不能再次使用这根蜡烛施展该法术，并且你必须进行一次DC0的体质豁免，豁免失败则受到等于该法术环阶×{@dice 2d6}的火焰伤害。"
+        ]
+      },
+      {
+        "ENG_name": "Cursed Candle",
+        "name": "诅咒蜡烛",
+        "type": "entries",
+        "entries": [
+          "无论你在巫光属性的豁免检定中失败或成功，该豁免DC都会提升2。该提升不会再次发生，直至你完成一次{@variantrule 长休|XPHB}。当该DC达到10或更高时，你还会获得{@variantrule 易伤|XPHB}对暗蚀伤害。"
+        ]
+      }
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Black%20Candle.webp"
+          },
+          "width": 912,
+          "height": 1200,
+          "credit": "Eugenio Frosali"
+        }
+      ]
+    }
+  }
+]

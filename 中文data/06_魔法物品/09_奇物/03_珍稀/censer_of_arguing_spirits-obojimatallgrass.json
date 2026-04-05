@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Censer of Arguing Spirits",
+    "name": "争辩精魂香炉",
+    "source": "ObojimaTallGrass",
+    "page": 168,
+    "rarity": "rare",
+    "wondrous": true,
+    "entries": [
+      "这个锈迹斑斑且凹陷的茶壶看起来像一件无关紧要的寻常物品。摇晃时能从壶内听到液体晃动的声响，而且它摸起来总是暖和的。当打开壶盖时，三缕彩色卷须状的烟从其发黑的中心升起。在卷须顶端是三位远古精灵被压扁的脸，他们全都迅速开始互相争吵。你可以向每位精灵提出一个问题，他会尽其所能地答复。一旦你问完他们所有问题，他们就会开始无视你并继续互相争辩，直到壶盖重新盖上。",
+      "未知这些男子是谁，但每个人都似乎保留着他们前世的知识。一旦你向其中一名男子提出一个问题，在7天过去之前你不能再问他另一个问题。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/censer-of-arguing-spirits.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 6552,
+          "height": 6552
+        }
+      ]
+    }
+  }
+]

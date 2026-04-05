@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Phoenix Elixir",
+    "name": "菲涅克斯灵药",
+    "source": "ObojimaTallGrass",
+    "page": 245,
+    "type": "P",
+    "rarity": "uncommon",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "当饮下这瓶灵药时，它会灼烧你的喉咙并在你体内点燃一团火烬。在24小时内，你对火焰伤害免疫。当药水的魔法最终消退时，你体内的火焰会从内部剧烈燃烧，将你的身体吞噬在火焰中并转变为灰烬。1小时后，你会在最近的篝火中重生。所有在你转变为灰烬时随身携带的物件和衣物都会留在你原来的身体旁。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 48|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/phoenix-elixir.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1447,
+          "height": 1447
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

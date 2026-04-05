@@ -1,0 +1,21 @@
+[
+  {
+    "ENG_name": "Orb of Time",
+    "name": "时间法球",
+    "source": "XGE",
+    "page": 138,
+    "reprintedAs": [
+      "时间法球|XDMG"
+    ],
+    "tier": "次要",
+    "rarity": "common",
+    "wondrous": true,
+    "weight": 3,
+    "entries": [
+      "只要你持握着这颗法球，你就可以用一个动作得知外面的时间是早上、中午、傍晚、还是夜晚。不过这一能力只在物质位面中有效。"
+    ],
+    "translator": "不全书",
+    "valueReference": 100,
+    "type": "W"
+  }
+]

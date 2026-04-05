@@ -1,0 +1,64 @@
+[
+  {
+    "ENG_name": "Mind Blank",
+    "name": "心灵屏障",
+    "source": "PHB",
+    "page": 259,
+    "srd": true,
+    "referenceSources": [
+      "CoS",
+      "WDMM",
+      "BGDIA",
+      "CM",
+      "PaBTSO"
+    ],
+    "reprintedAs": [
+      "心灵屏障|XPHB"
+    ],
+    "level": 8,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 24
+        }
+      }
+    ],
+    "entries": [
+      "直至法术终止前，你所触碰的一个自愿生物对下列项目具有免疫：心灵伤害；任何可以感知到其情绪或阅读其思想的效应；预言法术；{@condition 魅惑}状态。当目标受{@spell 祈愿术}或者其他威力相当的法术或效应影响心智或窃获信息时，该法术也能为其阻挡那些法术或效应。"
+    ],
+    "damageImmune": [
+      "心灵"
+    ],
+    "conditionImmune": [
+      "魅惑"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "法师"
+    ],
+    "display_school": "防护系"
+  }
+]

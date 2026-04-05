@@ -1,0 +1,24 @@
+{
+  "ENG_name": "Oath of Vengeance",
+  "name": "复仇之誓",
+  "shortName": "复仇",
+  "source": "PHB",
+  "className": "圣武士",
+  "classSource": "XPHB",
+  "_copy": {
+    "ENG_name": "Oath of Vengeance",
+    "name": "复仇之誓",
+    "source": "PHB",
+    "shortName": "复仇",
+    "className": "圣武士",
+    "classSource": "PHB",
+    "_preserve": {
+      "page": true,
+      "otherSources": true,
+      "referenceSources": true,
+      "srd": true,
+      "basicRules": true,
+      "reprintedAs": true
+    }
+  }
+}

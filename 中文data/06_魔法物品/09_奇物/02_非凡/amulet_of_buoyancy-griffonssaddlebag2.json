@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Amulet of Buoyancy",
+    "name": "浮力护符",
+    "source": "GriffonsSaddlebag2",
+    "page": 34,
+    "tier": "主要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这件磨损严重的项链装饰着船艏的造型，上面有一阵用蓝色玻璃制成的汹涌波浪。在你佩戴着此护符期间，当你被击{@condition 倒地}时，你可以立即用你的反应站起身来。若如此做，直到你的下一个回合结束前，你的移动速度减半。此外，当你的回合开始时，若你在水下且你的生命值为0，你会向水面方向立即上浮60尺。"
+    ],
+    "lootTables": [
+      "魔法物品表 F1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Amulet-of-Buoyancy.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

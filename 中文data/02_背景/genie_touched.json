@@ -1,0 +1,139 @@
+[
+  {
+    "name": "巨灵接触者",
+    "ENG_name": "Genie Touched",
+    "source": "FRHoF",
+    "edition": "one",
+    "page": 30,
+    "ability": [
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "dex",
+              "wis",
+              "cha"
+            ],
+            "weights": [
+              2,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "dex",
+              "wis",
+              "cha"
+            ],
+            "weights": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      }
+    ],
+    "feats": [
+      {
+        "魔法学徒；法师|xphb": true
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "perception": true,
+        "persuasion": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "glassblower's tools": true
+      }
+    ],
+    "startingEquipment": [
+      {
+        "A": [
+          "轻锤|xphb",
+          "玻璃匠工具|xphb",
+          "高档服装|xphb",
+          "油灯|xphb",
+          {
+            "item": "燃油|xphb",
+            "displayName": "燃油（3扁瓶）"
+          },
+          "水袋|xphb",
+          {
+            "value": 200
+          }
+        ],
+        "B": [
+          {
+            "value": 5000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability Scores:",
+            "name": "属性值：",
+            "type": "item",
+            "entry": "敏捷，感知，魅力"
+          },
+          {
+            "ENG_name": "Feat:",
+            "name": "专长：",
+            "type": "item",
+            "entry": "{@feat 魔法学徒|XPHB} （法师）"
+          },
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 察觉|XPHB}与{@skill 游说|XPHB}"
+          },
+          {
+            "ENG_name": "Tool Proficiencies:",
+            "name": "工具熟练",
+            "type": "item",
+            "entry": "{@item 玻璃匠工具|XPHB}"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "选择A或B：(A) {@item 轻锤|XPHB}、{@item 玻璃匠工具|XPHB}、{@item 高档服装|XPHB}、{@item 油灯|XPHB}、{@item 燃油|XPHB}（3扁瓶）、{@item 水袋|XPHB}，2GP；或(B) 50GP"
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "虽然巨灵已不再统治卡林珊，但在你的家乡，巨灵魔法依然很常见。你可能不小心就从某个魔法油灯里面召唤出了一位气巨灵，又或者可能偶然来到一片由某位水巨灵守卫着的绿洲。可能有一位土巨灵在山体滑坡时将你救了下来，还可能是你与某位火巨灵在为了某笔稍纵即逝的财富而讨价还价。无论你是通过什么方式而与某位巨灵产生了命运的交集，这种经历都给予了你敏锐的眼光，伶俐的口舌，而不仅仅只是些许魔法。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "backgrounds/FRHoF/Genie Touched.webp"
+          },
+          "credit": "Luca Bancone",
+          "width": 1700,
+          "height": 626
+        }
+      ]
+    },
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "translator": "不全书"
+  }
+]

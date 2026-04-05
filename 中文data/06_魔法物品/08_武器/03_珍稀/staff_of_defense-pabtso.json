@@ -1,0 +1,61 @@
+[
+  {
+    "ENG_name": "Staff of Defense",
+    "name": "防护法杖",
+    "source": "PaBTSO",
+    "page": 220,
+    "type": "M",
+    "rarity": "rare",
+    "reqAttune": "由吟游诗人、术士、魔契师或法师",
+    "reqAttuneTags": [
+      {
+        "class": "吟游诗人"
+      },
+      {
+        "class": "术士"
+      },
+      {
+        "class": "魔契师"
+      },
+      {
+        "class": "法师"
+      }
+    ],
+    "weight": 3,
+    "weaponCategory": "simple",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "bonusAc": "+1",
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6 + 4}",
+    "charges": 10,
+    "staff": true,
+    "entries": [
+      "这根纤细的空心法杖由玻璃制成，却和橡木一样坚固。它重3磅。持有法杖时，你的护甲等级获得+1的加值。",
+      {
+        "ENG_name": "Spells",
+        "name": "法术",
+        "type": "entries",
+        "entries": [
+          "法杖有10个充能。持有它时，你可以消耗所需数量的充能来从法杖施放以下法术之一：{@spell 法师护甲}（1充能）或{@spell 护盾术}（2充能）。",
+          "这根法杖每天黎明时分恢复{@dice 1d6 + 4}个已消耗的充能点。如果你用尽了法杖的最后一个充能点，掷一个{@dice d20}骰子。如果是1，法杖碎裂并被摧毁。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "法师护甲"
+        ],
+        "2": [
+          "护盾术"
+        ]
+      }
+    },
+    "valueReference": 4000
+  }
+]

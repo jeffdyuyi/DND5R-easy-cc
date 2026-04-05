@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Corrupted Slime",
+    "name": "腐化史莱姆",
+    "source": "ObojimaTallGrass",
+    "page": 210,
+    "type": "Ingred",
+    "rarity": "uncommon",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 16|large}|SneakerProMedium}",
+            "{@font {@style 14|large}|SneakerProMedium}",
+            "{@font {@style 13|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "受到腐化影响的软泥会变得不透明且如墨水般漆黑，会污染它接触到的物品。腐化史莱姆保留了其粘性但相当混乱粘粘。据所有描述，靠近腐化史莱姆是极其不愉快的体验，那些触碰过它的人会变得无精打采和倦怠。腐化史莱姆可以从已被腐化的软泥怪物中培育出来。"
+    ],
+    "lootTables": [
+      "湿地非普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/corrupted-slime.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 2496,
+          "height": 2496
+        }
+      ]
+    }
+  }
+]

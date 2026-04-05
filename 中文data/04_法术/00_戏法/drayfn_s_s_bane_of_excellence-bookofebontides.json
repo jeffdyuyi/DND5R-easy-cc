@@ -1,0 +1,80 @@
+[
+  {
+    "ENG_name": "Drayfn's Bane of Excellence",
+    "name": "德雷弗恩的卓越之灾",
+    "source": "BookOfEbonTides",
+    "page": 60,
+    "level": 0,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你指定范围内的一个生物必须进行一次魅力豁免检定。豁免失败时，目标在持续时间内进行的下一次属性检定、攻击检定或豁免检定，若掷骰结果为20点（{@dice d20}），则不会产生任何效应。当你达到5级（二个自然20点）、11级（三个自然20点）和17级（四个自然20点）时，此戏法能将自然20点转为失败的次数分别增加一次。"
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    },
+    "savingThrow": [
+      "魅力"
+    ],
+    "miscTags": [
+      "SCL"
+    ]
+  }
+]

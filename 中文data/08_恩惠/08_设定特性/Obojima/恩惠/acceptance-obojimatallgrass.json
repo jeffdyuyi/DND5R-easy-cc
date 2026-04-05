@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Acceptance",
+    "name": "接受",
+    "source": "ObojimaTallGrass",
+    "page": 251,
+    "type": "Boon",
+    "entries": [
+      {
+        "ENG_name": "Characteristics:",
+        "name": "性格:",
+        "type": "entries",
+        "entries": [
+          "那些经历过一段深沉而痛苦的旅途，并最终面对一个如此难以接受的真相——以至于接受它会带来痛苦——但他们还是做到了，并最终与那个真相达成了和平。"
+        ]
+      },
+      {
+        "ENG_name": "Boon Ability:",
+        "name": "恩惠属性：",
+        "type": "entries",
+        "entries": [
+          "当进行一次技能检定时，你可以选择为掷骰添加一个+5的附赠动作。一旦你使用这个恩惠，直到完成一次长休前你都不能再次这么做。"
+        ]
+      }
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Custom/Boons/Acceptance.webp"
+  }
+]

@@ -1,0 +1,213 @@
+[
+  {
+    "name": "化兽者",
+    "ENG_name": "Shifter",
+    "source": "EFA",
+    "edition": "one",
+    "page": 37,
+    "size": [
+      "S",
+      "M"
+    ],
+    "speed": 30,
+    "darkvision": 60,
+    "skillProficiencies": [
+      {
+        "choose": {
+          "from": [
+            "特技",
+            "运动",
+            "威吓",
+            "求生"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Bestial Instincts",
+        "name": "野兽本能",
+        "type": "entries",
+        "entries": [
+          "引导内心的野兽，你获得下列一项自选技能的熟练项：{@skill 特技|XPHB}、{@skill 运动|XPHB}、{@skill 威吓|XPHB}或{@skill 求生|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Darkvision",
+        "name": "黑暗视觉",
+        "type": "entries",
+        "entries": [
+          "你拥有 60 尺{@sense 黑暗视觉|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Shifting",
+        "name": "化形",
+        "type": "entries",
+        "entries": [
+          "作为{@variantrule 附赠动作|XPHB}，你可以变形以呈现更野兽化的外貌。此变形持续1分钟，或直到你以{@variantrule 附赠动作|XPHB}恢复至正常外貌。当你化形时，你获得等于2倍{@variantrule 熟练|XPHB|熟练加值}的{@variantrule 临时生命值|XPHB}。你可以化形次数等于你的{@variantrule 熟练|XPHB|熟练加值}，且完成一次{@variantrule 长休|XPHB}后恢复所有已消耗的使用次数。",
+          "每当你化形时，你获得以下选项之一的增益（在选择此种族时选择）",
+          {
+            "type": "list",
+            "style": "list-hang-notitle",
+            "items": [
+              {
+                "ENG_name": "Beasthide",
+                "name": "兽皮",
+                "type": "item",
+                "entries": [
+                  "你获得{@dice 1d6}点额外的{@variantrule 临时生命值|XPHB}。化形时，你的{@variantrule 护甲等级|XPHB}获得+1加值。"
+                ]
+              },
+              {
+                "ENG_name": "Longtooth",
+                "name": "长牙",
+                "type": "item",
+                "entries": [
+                  "当你化形时以及在你化形期间的其他回合中作为{@variantrule 附赠动作|XPHB}，你可以使用你伸长的尖牙进行一次{@variantrule 徒手打击|XPHB}。如果你用这次{@variantrule 徒手打击|XPHB}命中并造成伤害，你可以造成等于{@dice 1d6}加上你的力量调整值的穿刺伤害，以取代{@variantrule 徒手打击|XPHB}的正常伤害。"
+                ]
+              },
+              {
+                "ENG_name": "Swiftstride",
+                "name": "疾驰",
+                "type": "item",
+                "entries": [
+                  "当你处于化形状态时，你的{@variantrule 速度|XPHB}增加10尺。此外，当一个生物在其回合结束时处于你5尺范围内，你可以作为{@variantrule 反应|XPHB}移动最多10尺。此灵敏反应移动不会引发{@action 借机攻击|XPHB|借机攻击}。"
+                ]
+              },
+              {
+                "ENG_name": "Wildhunt",
+                "name": "狩猎",
+                "type": "item",
+                "entries": [
+                  "化形时，你在感知检定上具有{@variantrule 优势|XPHB}。此外，30尺内的任何生物在对你进行攻击检定时不能具有{@variantrule 优势|XPHB}，除非你处于{@condition 失能|XPHB}状态。"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "化兽者——有时被称为\"兽化裔\"——是那些感染了完全或部分兽化症的人的后裔。作为具有野兽化身的类人生物，化兽者无法完全改变形态，但他们可以在一个他们称之为\"化形\"的过程中暂时增强他们的动物特征。",
+        "化兽者在身高和体型上类似于人类，但通常更加轻盈灵活。他们的面部特征带有野兽般的特征，通常有大眼睛和尖耳朵；大多数化兽者还有突出的犬齿。他们几乎全身都长有类似毛发的体毛。虽然化兽者的外貌可能会让旁观者联想到动物，但即使在他们最野性的状态下，化兽者仍然明显可识别为人形生物。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/EFA/Shifter.webp"
+          },
+          "credit": "John Thack",
+          "width": 850,
+          "height": 558
+        }
+      ]
+    },
+    "_versions": [
+      {
+        "ENG_name": "Shifter; Beasthide",
+        "name": "化兽者; 兽皮",
+        "source": "EFA",
+        "_mod": {
+          "entries": [
+            {
+              "mode": "replaceArr",
+              "replace": "化形",
+              "items": {
+                "ENG_name": "Shifting (Beasthide)",
+                "name": "化形 (兽皮)",
+                "type": "entries",
+                "entries": [
+                  "作为{@variantrule 附赠动作|XPHB}，你可以变形以呈现更野兽化的外貌。此变形持续1分钟，或直到你以{@variantrule 附赠动作|XPHB}恢复至正常外貌。当你化形时，你获得等于2倍{@variantrule 熟练|XPHB|熟练加值}的{@variantrule 临时生命值|XPHB}。你可以化形次数等于你的{@variantrule 熟练|XPHB|熟练加值}，且完成一次{@variantrule 长休|XPHB}后恢复所有已消耗的使用次数。",
+                  "每当你化形时，你获得{@dice 1d6}点额外的{@variantrule 临时生命值|XPHB}。化形期间，你的{@variantrule 护甲等级|XPHB}获得+1加值。"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "ENG_name": "Shifter; Longtooth",
+        "name": "化兽者; 长牙",
+        "source": "EFA",
+        "_mod": {
+          "entries": [
+            {
+              "mode": "replaceArr",
+              "replace": "化形",
+              "items": {
+                "ENG_name": "Shifting (Longtooth)",
+                "name": "化形 (长牙)",
+                "type": "entries",
+                "entries": [
+                  "作为{@variantrule 附赠动作|XPHB}，你可以变形以呈现更野兽化的外貌。此变形持续1分钟，或直到你以{@variantrule 附赠动作|XPHB}恢复至正常外貌。当你化形时，你获得等于2倍{@variantrule 熟练|XPHB|熟练加值}的{@variantrule 临时生命值|XPHB}。你可以化形次数等于你的{@variantrule 熟练|XPHB|熟练加值}，且完成一次{@variantrule 长休|XPHB}后恢复所有已消耗的使用次数。",
+                  "当你化形时以及在你化形期间的其他回合中作为{@variantrule 附赠动作|XPHB}，你可以使用你伸长的尖牙进行一次{@variantrule 徒手打击|XPHB}。如果你用这次{@variantrule 徒手打击|XPHB}命中并造成伤害，你可以造成等于{@dice 1d6}加上你的力量调整值的穿刺伤害，以取代{@variantrule 徒手打击|XPHB}的正常伤害。"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "ENG_name": "Shifter; Swiftstride",
+        "name": "化兽者; 疾驰",
+        "source": "EFA",
+        "_mod": {
+          "entries": [
+            {
+              "mode": "replaceArr",
+              "replace": "化形",
+              "items": {
+                "ENG_name": "Shifting (Swiftstride)",
+                "name": "化形 (疾驰)",
+                "type": "entries",
+                "entries": [
+                  "作为{@variantrule 附赠动作|XPHB}，你可以变形以呈现更野兽化的外貌。此变形持续1分钟，或直到你以{@variantrule 附赠动作|XPHB}恢复至正常外貌。当你化形时，你获得等于2倍{@variantrule 熟练|XPHB|熟练加值}的{@variantrule 临时生命值|XPHB}。你可以化形次数等于你的{@variantrule 熟练|XPHB|熟练加值}，且完成一次{@variantrule 长休|XPHB}后恢复所有已消耗的使用次数。",
+                  "当你处于化形状态时，你的{@variantrule 速度|XPHB}增加10尺。此外，当一个生物在其回合结束时处于你5尺范围内，你可以作为{@variantrule 反应|XPHB}移动最多10尺。此灵敏反应移动不会引发{@action 借机攻击|XPHB|借机攻击}。"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "ENG_name": "Shifter; Wildhunt",
+        "name": "化兽者; 狩猎",
+        "source": "EFA",
+        "_mod": {
+          "entries": [
+            {
+              "mode": "replaceArr",
+              "replace": "化形",
+              "items": {
+                "ENG_name": "Shifting (Wildhunt)",
+                "name": "化形 (狩猎)",
+                "type": "entries",
+                "entries": [
+                  "作为{@variantrule 附赠动作|XPHB}，你可以变形以呈现更野兽化的外貌。此变形持续1分钟，或直到你以{@variantrule 附赠动作|XPHB}恢复至正常外貌。当你化形时，你获得等于2倍{@variantrule 熟练|XPHB|熟练加值}的{@variantrule 临时生命值|XPHB}。你可以化形次数等于你的{@variantrule 熟练|XPHB|熟练加值}，且完成一次{@variantrule 长休|XPHB}后恢复所有已消耗的使用次数。",
+                  "化形时，你在感知检定上具有{@variantrule 优势|XPHB}。此外，30尺内的任何生物在对你进行攻击检定时不能具有{@variantrule 优势|XPHB}，除非你处于{@condition 失能|XPHB}状态。"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "creatureTypes": [
+      "类人"
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "sizeEntry": {
+      "ENG_name": "Size:",
+      "name": "体型：",
+      "type": "item",
+      "entries": [
+        "中型（约 4-7 尺高）或小型（约 2-4 尺高），在选择此种族时决定"
+      ]
+    }
+  }
+]

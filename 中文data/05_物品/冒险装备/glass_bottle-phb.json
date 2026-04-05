@@ -1,0 +1,20 @@
+[
+  {
+    "name": "玻璃瓶",
+    "ENG_name": "Glass Bottle",
+    "source": "PHB",
+    "page": 153,
+    "type": "G",
+    "rarity": "none",
+    "weight": 2,
+    "value": 200,
+    "entries": [
+      "一个瓶子可容纳1½品脱液体。"
+    ],
+    "basicRules": true,
+    "reprintedAs": [
+      "玻璃瓶|XPHB"
+    ],
+    "srd": true
+  }
+]

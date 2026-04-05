@@ -1,0 +1,23 @@
+[
+  {
+    "ENG_name": "Witchlight Scimitar",
+    "name": "巫光弯刀",
+    "source": "BookOfEbonTides",
+    "page": 210,
+    "baseItem": "弯刀|PHB",
+    "type": "M",
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 3,
+    "weaponCategory": "军用",
+    "property": [
+      "F",
+      "L"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "S",
+    "entries": [
+      "你可以使用一个附赠动作说出这把魔法弯刀的命令语，使金色的光辉从刀刃上迸发。它散发出{@quickref 视野与光照||2||明亮光照}半径30尺的球状明亮光照和{@quickref 视野与光照||2||微光光照}额外30尺的微光光照。当弯刀燃烧时，它对任何击中的目标造成额外{@damage 2d6}的光耀伤害。巫光持续到你再次使用附赠动作说出命令语，或直到你放下或收起弯刀为止。"
+    ]
+  }
+]

@@ -1,0 +1,180 @@
+{
+  "ENG_name": "Keeper Domain",
+  "name": "监管领域",
+  "shortName": "守护者",
+  "source": "BookOfEbonTides",
+  "className": "牧师",
+  "classSource": "PHB",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "1": [
+          "命令术",
+          "猎人印记"
+        ],
+        "3": [
+          "安定心神",
+          "守护之链"
+        ],
+        "5": [
+          "希望信标",
+          "灵体卫士"
+        ],
+        "7": [
+          "防死结界",
+          "信仰守卫"
+        ],
+        "9": [
+          "圣居",
+          "拉瑞心灵联结"
+        ]
+      }
+    }
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "Keeper Domain",
+      "name": "监管领域",
+      "source": "BookOfEbonTides",
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "守护者",
+      "subclassSource": "BookOfEbonTides",
+      "level": 1,
+      "entries": [
+        "监管领域专注于社会牵挂和良好规范的社区。这些社区可能是像冒险队伍那样小型，也可能是像城市那样大型，但所有社区都需要安全和舒适才能繁荣发展。监管领域的牧师在领导层职位上表现出色，并且是第一个在家园或盟友需要守护时拿起护甲的人。",
+        {
+          "type": "table",
+          "caption": "监管领域法术",
+          "colLabels": [
+            "牧师等级",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "1st",
+              "{@spell 命令术}, {@spell 猎人印记}"
+            ],
+            [
+              "3rd",
+              "{@spell 安定心神}, {@spell 守护之链}"
+            ],
+            [
+              "5th",
+              "{@spell 希望信标}, {@spell 灵体卫士}"
+            ],
+            [
+              "7th",
+              "{@spell 防死结界}, {@spell 信仰守卫}"
+            ],
+            [
+              "9th",
+              "{@spell 圣居}, {@spell 拉瑞心灵联结||心灵联结}"
+            ]
+          ]
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "受祝选民|牧师||守护者|BookOfEbonTides|1"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "附赠熟练|牧师||守护者|BookOfEbonTides|1"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Blessed Chosen",
+      "name": "受祝选民",
+      "source": "BookOfEbonTides",
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "守护者",
+      "subclassSource": "BookOfEbonTides",
+      "level": 1,
+      "header": 1,
+      "entries": [
+        "从1级开始，你可以宣示你的神圣意志来保护你的盟友。当你30尺内一个你能看见的敌人攻击你的一个盟友时，你可以使用你的反应在攻击检定命中或未命中前使其具有劣势。",
+        "你可以使用该特性的次数等于你的感知调整值（至少为一次）。而你将在完成一次长休后重新恢复所有的使用次数。"
+      ]
+    },
+    {
+      "ENG_name": "Bonus Proficiencies",
+      "name": "附赠熟练",
+      "source": "BookOfEbonTides",
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "守护者",
+      "subclassSource": "BookOfEbonTides",
+      "level": 1,
+      "header": 1,
+      "entries": [
+        "同样在1级时，你获得军用武器的熟练项。你还获得{@skill 游说}技能的熟练项。"
+      ]
+    },
+    {
+      "ENG_name": "Channel Divinity: Divine Initiative",
+      "name": "引导神力：神圣先攻",
+      "source": "BookOfEbonTides",
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "守护者",
+      "subclassSource": "BookOfEbonTides",
+      "level": 2,
+      "header": 2,
+      "entries": [
+        "从2环开始，你可以使用引导神力来增强盟友的潜力。",
+        "作为一个动作，你展示你的圣徽并选择你能看见且能看见你的60尺内的生物，数量至多等于你的感知调整值（至少为一个）。每个它们获得5{@book 临时生命值|PHB|9|临时生命值}。当目标获得这些临时生命值时，它们可以立即使用它们的反应进行一次武器攻击。",
+        "临时生命值的数值会随着你在此职业中达到特定等级而增加，在6级时增加到8点，8级时增加到11点，17级时增加到14点。"
+      ]
+    },
+    {
+      "ENG_name": "Fighting Pit",
+      "name": "角斗场",
+      "source": "BookOfEbonTides",
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "守护者",
+      "subclassSource": "BookOfEbonTides",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "在6级时，你获得增强盟友储备的能力。作为一个反应，当你或一个你能看见的30尺内的盟友处于{@condition 魅惑}、{@condition 恐慌}、{@condition 麻痹}或{@condition 震慑}状态时，你可以移除该状态。",
+        "你可以使用此特性的次数等同于你的感知调整值次（至少1次），在你完成一次长休后你重获全部已被消耗的使用次数。"
+      ]
+    },
+    {
+      "ENG_name": "Hobbling Strike",
+      "name": "蹒跚打击",
+      "source": "BookOfEbonTides",
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "守护者",
+      "subclassSource": "BookOfEbonTides",
+      "level": 8,
+      "header": 2,
+      "entries": [
+        "在8级时，你获得将神圣能量注入武器攻击的能力。在你的每个回合中，当你用武器攻击命中一个生物时，目标必须进行一次力量豁免检定对抗你的法术豁免DC，否则将被击倒{@condition 倒地}。当你达到14级时，目标的速度也会减半，直到你的下一个回合开始。"
+      ]
+    },
+    {
+      "ENG_name": "Duty Over Death",
+      "name": "责不容死",
+      "source": "BookOfEbonTides",
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "守护者",
+      "subclassSource": "BookOfEbonTides",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "从17级开始，你可以发挥你的法力将同伴从死亡边缘召唤回来。当你60尺内能看见的盟友生命值降至0但未被直接杀死时，他们会保持清醒并恢复等同于其最大生命值一半的生命值。你只能在未处于{@condition 失能}状态时使用此特性。使用此特性后，直到完成一次短休或长休前你都无法再次使用。"
+      ]
+    }
+  ],
+  "hasFluffImages": true
+}

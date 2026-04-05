@@ -1,0 +1,95 @@
+[
+  {
+    "name": "书法工具",
+    "ENG_name": "Calligrapher's Supplies",
+    "source": "PHB",
+    "page": 154,
+    "type": "AT",
+    "rarity": "none",
+    "weight": 5,
+    "value": 1000,
+    "additionalEntries": [
+      "书法将书写视为一种精致而美丽的艺术。书法家创作出赏心悦目的文字，使用的风格难以伪造。他们的工具还赋予其一定能力来检查文字并判断其真伪，因为书法家的训练包括长时间研究书写并尝试复制其风格与设计。",
+      {
+        "ENG_name": "Components",
+        "name": "成分",
+        "type": "entries",
+        "entries": [
+          "书法工具包括墨水、十二张羊皮纸和三支羽毛笔。"
+        ]
+      },
+      {
+        "ENG_name": "Arcana",
+        "name": "奥秘",
+        "type": "entries",
+        "entries": [
+          "尽管书法对于解读魔法文字的内容帮助不大，但掌握这些工具的熟练项可以协助识别谁书写了具有魔法性质的文字。"
+        ]
+      },
+      {
+        "ENG_name": "History",
+        "name": "历史",
+        "type": "entries",
+        "entries": [
+          "该工具熟练项可以增大分析或调查远古文字、卷轴或其他文本（包括刻在岩石上的符文或壁画及其他展示中的信息）时成功检定的增益。"
+        ]
+      },
+      {
+        "ENG_name": "Decipher Treasure Map",
+        "name": "解读藏宝图",
+        "type": "entries",
+        "entries": [
+          "该工具熟练项授予你检查地图的专精。你可以进行一次智力检定来确定地图的年龄、地图是否包含任何隐藏信息或类似事实。"
+        ]
+      },
+      {
+        "type": "table",
+        "caption": "书法工具",
+        "colLabels": [
+          "用途",
+          "DC"
+        ],
+        "colStyles": [
+          "col-6",
+          "col-6"
+        ],
+        "rows": [
+          [
+            "确定非魔法手稿的作者",
+            "10"
+          ],
+          [
+            "理解作者的心态",
+            "15"
+          ],
+          [
+            "发现伪造文本",
+            "15"
+          ],
+          [
+            "伪造签名",
+            "20"
+          ]
+        ]
+      }
+    ],
+    "additionalSources": [
+      {
+        "source": "XGE",
+        "page": 79
+      }
+    ],
+    "basicRules": true,
+    "referenceSources": [
+      "BGDIA",
+      "IMR",
+      "CM",
+      "KftGV",
+      "ToFW"
+    ],
+    "reprintedAs": [
+      "书法工具|XPHB"
+    ],
+    "srd": true
+  }
+]

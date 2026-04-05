@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Pumpkin Patch Guard",
+    "name": "南瓜补丁警卫",
+    "source": "ObojimaTallGrass",
+    "page": 226,
+    "type": "P",
+    "rarity": "uncommon",
+    "property": [
+      "Com"
+    ],
+    "entries": [
+      "当饮用这杯温暖的收获饮品时，你的头部会变成一个杰克南瓜灯。从你新形成的双眼中，你可以施放一道发光的锥状光亮术，使15尺锥形区域内的生物受到{@spell 妖火}法术效应的影响。在效应持续的每一回合开始时，你可以决定锥形区域朝向的方向以及是否激活该区域。药水的效应持续1分钟。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 42|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Combat/pumpkin-patch-guard.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1957,
+          "height": 1957
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

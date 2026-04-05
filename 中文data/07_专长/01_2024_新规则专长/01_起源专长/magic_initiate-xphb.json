@@ -1,0 +1,326 @@
+[
+  {
+    "ENG_name": "Magic Initiate",
+    "name": "魔法学徒",
+    "source": "XPHB",
+    "page": 201,
+    "srd52": true,
+    "basicRules2024": true,
+    "category": "O",
+    "repeatable": true,
+    "repeatableHidden": true,
+    "additionalSpells": [
+      {
+        "ENG_name": "Cleric Spells",
+        "name": "牧师法术",
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "innate": {
+          "_": {
+            "daily": {
+              "1": [
+                {
+                  "choose": "level=1|class=牧师"
+                }
+              ]
+            }
+          }
+        },
+        "known": {
+          "_": [
+            {
+              "choose": "level=0|class=牧师",
+              "count": 2
+            }
+          ]
+        }
+      },
+      {
+        "ENG_name": "Druid Spells",
+        "name": "德鲁伊法术",
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "innate": {
+          "_": {
+            "daily": {
+              "1": [
+                {
+                  "choose": "level=1|class=德鲁伊"
+                }
+              ]
+            }
+          }
+        },
+        "known": {
+          "_": [
+            {
+              "choose": "level=0|class=德鲁伊",
+              "count": 2
+            }
+          ]
+        }
+      },
+      {
+        "ENG_name": "Wizard Spells",
+        "name": "法师法术",
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "innate": {
+          "_": {
+            "daily": {
+              "1": [
+                {
+                  "choose": "level=1|class=法师"
+                }
+              ]
+            }
+          }
+        },
+        "known": {
+          "_": [
+            {
+              "choose": "level=0|class=法师",
+              "count": 2
+            }
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Two Cantrips",
+        "name": "两道戏法",
+        "type": "entries",
+        "entries": [
+          "从{@filter 牧师|spells|level=0;1|class=牧师}法术列表、{@filter 德鲁伊|spells|level=0;1|class=德鲁伊}法术列表、{@filter 法师|spells|level=0;1|class=法师}法术列表中选择一个列表，你从该法术列表中选择两道戏法并习得之。再从智力、感知、魅力中选择一项属性，你从这个专长中习得的法术使用该属性作为施法属性。"
+        ]
+      },
+      {
+        "ENG_name": "Level 1 Spell",
+        "name": "一环法术",
+        "type": "entries",
+        "entries": [
+          "你从前面所选的法术列表中再选择一道一环法术，并始终准备着这道法术。你可以无需法术位地施展该法术一次，并在完成{@variantrule 长休|XPHB}后重获以此法施展该法术的能力。你也可以使用你拥有的任何法术位来施展该法术。"
+        ]
+      },
+      {
+        "ENG_name": "Spell Change",
+        "name": "改变法术",
+        "type": "entries",
+        "entries": [
+          "每当你获得一级新等级，你都能将通过本专长习得的一道法术替换为同法术列表中同环阶的另一道法术。"
+        ]
+      },
+      {
+        "ENG_name": "Repeatable",
+        "name": "复选",
+        "type": "entries",
+        "entries": [
+          "你可多次选择本专长，但是你每次都必须选择一个不同的法术列表。"
+        ]
+      }
+    ],
+    "_versions": [
+      {
+        "ENG_name": "Magic Initiate; Cleric",
+        "name": "魔法学徒；牧师",
+        "source": "XPHB",
+        "_mod": {
+          "entries": [
+            {
+              "mode": "replaceArr",
+              "replace": "两道戏法",
+              "items": {
+                "ENG_name": "Two Cantrips",
+                "name": "两道戏法",
+                "entries": [
+                  "从{@filter 牧师|spells|level=0;1|class=牧师}法术列表中选择两道戏法并习得之。再从智力、感知、魅力中选择一项属性，你从这个专长中习得的法术使用该属性作为施法属性。"
+                ]
+              }
+            },
+            {
+              "mode": "replaceArr",
+              "replace": "一环法术",
+              "items": {
+                "ENG_name": "Level 1 Spell",
+                "name": "一环法术",
+                "entries": [
+                  "你从{@filter 牧师|spells|level=0;1|class=牧师}法术列表中再选择一道一环法术，并始终准备着这道法术。你可以无需法术位地施展该法术一次，并在完成{@variantrule 长休|XPHB}后重获以此法施展该法术的能力。你也可以使用你拥有的任何法术位来施展该法术。"
+                ]
+              }
+            }
+          ]
+        },
+        "additionalSpells": [
+          {
+            "ability": {
+              "choose": [
+                "int",
+                "wis",
+                "cha"
+              ]
+            },
+            "innate": {
+              "_": {
+                "daily": {
+                  "1": [
+                    {
+                      "choose": "level=1|class=牧师"
+                    }
+                  ]
+                }
+              }
+            },
+            "known": {
+              "_": [
+                {
+                  "choose": "level=0|class=牧师",
+                  "count": 2
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "ENG_name": "Magic Initiate; Druid",
+        "name": "魔法学徒；德鲁伊",
+        "source": "XPHB",
+        "_mod": {
+          "entries": [
+            {
+              "mode": "replaceArr",
+              "replace": "两道戏法",
+              "items": {
+                "ENG_name": "Two Cantrips",
+                "name": "两道戏法",
+                "entries": [
+                  "从{@filter 德鲁伊|spells|level=0;1|class=德鲁伊}法术列表中选择两道戏法并习得之。再从智力、感知、魅力中选择一项属性，你从这个专长中习得的法术使用该属性作为施法属性。"
+                ]
+              }
+            },
+            {
+              "mode": "replaceArr",
+              "replace": "一环法术",
+              "items": {
+                "ENG_name": "Level 1 Spell",
+                "name": "一环法术",
+                "entries": [
+                  "你从{@filter 德鲁伊|spells|level=0;1|class=德鲁伊}法术列表中再选择一道一环法术，并始终准备着这道法术。你可以无需法术位地施展该法术一次，并在完成{@variantrule 长休|XPHB}后重获以此法施展该法术的能力。你也可以使用你拥有的任何法术位来施展该法术。"
+                ]
+              }
+            }
+          ]
+        },
+        "additionalSpells": [
+          {
+            "ability": {
+              "choose": [
+                "int",
+                "wis",
+                "cha"
+              ]
+            },
+            "innate": {
+              "_": {
+                "daily": {
+                  "1": [
+                    {
+                      "choose": "level=1|class=德鲁伊"
+                    }
+                  ]
+                }
+              }
+            },
+            "known": {
+              "_": [
+                {
+                  "choose": "level=0|class=德鲁伊",
+                  "count": 2
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "ENG_name": "Magic Initiate; Wizard",
+        "name": "魔法学徒；法师",
+        "source": "XPHB",
+        "_mod": {
+          "entries": [
+            {
+              "mode": "replaceArr",
+              "replace": "两道戏法",
+              "items": {
+                "ENG_name": "Two Cantrips",
+                "name": "两道戏法",
+                "entries": [
+                  "从{@filter 法师|spells|level=0;1|class=法师}法术列表中选择两道戏法并习得之。再从智力、感知、魅力中选择一项属性，你从这个专长中习得的法术使用该属性作为施法属性。"
+                ]
+              }
+            },
+            {
+              "mode": "replaceArr",
+              "replace": "一环法术",
+              "items": {
+                "ENG_name": "Level 1 Spell",
+                "name": "一环法术",
+                "entries": [
+                  "你从{@filter 法师|spells|level=0;1|class=法师}法术列表中再选择一道一环法术，并始终准备着这道法术。你可以无需法术位地施展该法术一次，并在完成{@variantrule 长休|XPHB}后重获以此法施展该法术的能力。你也可以使用你拥有的任何法术位来施展该法术。"
+                ]
+              }
+            }
+          ]
+        },
+        "additionalSpells": [
+          {
+            "ability": {
+              "choose": [
+                "int",
+                "wis",
+                "cha"
+              ]
+            },
+            "innate": {
+              "_": {
+                "daily": {
+                  "1": [
+                    {
+                      "choose": "level=1|class=法师"
+                    }
+                  ]
+                }
+              }
+            },
+            "known": {
+              "_": [
+                {
+                  "choose": "level=0|class=法师",
+                  "count": 2
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

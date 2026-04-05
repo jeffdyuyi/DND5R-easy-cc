@@ -1,0 +1,60 @@
+[
+  {
+    "name": "蜥蜴人",
+    "ENG_name": "Lizardfolk",
+    "source": "DMG",
+    "page": 282,
+    "size": [
+      "M"
+    ],
+    "speed": {
+      "walk": 30,
+      "swim": 30
+    },
+    "ability": [
+      {
+        "str": 2,
+        "int": -2
+      }
+    ],
+    "traitTags": [
+      "天生护甲",
+      "NPC种族"
+    ],
+    "languageProficiencies": [
+      {
+        "draconic": true
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Hold Breath",
+        "name": "屏息",
+        "entries": [
+          "你可以一次屏息长达15分钟。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Natural Armor",
+        "name": "天生护甲",
+        "entries": [
+          "你的鳞片可作为天生护甲，使你的护甲等级获得+3加值。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Languages",
+        "name": "语言",
+        "entries": [
+          "你可以说、读、写龙语。"
+        ],
+        "type": "entries"
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/lizardfolk.mp3"
+    }
+  }
+]

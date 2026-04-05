@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Baffled Candle",
+    "name": "困惑蜡烛",
+    "source": "ObojimaTallGrass",
+    "page": 167,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "当点燃时，持有这根蜡烛的生物会进入{@condition 隐形}状态。蜡烛可以燃烧{@dice 1d4 + 3}分钟。一旦蜡烛完全燃尽，该物品将被摧毁。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/baffled-candle.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 5132,
+          "height": 5132
+        }
+      ]
+    }
+  }
+]

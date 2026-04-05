@@ -1,0 +1,26 @@
+{
+  "ENG_name": "Elvish",
+  "name": "精灵语",
+  "source": "PHB",
+  "page": 123,
+  "srd": true,
+  "basicRules": true,
+  "additionalSources": [
+    {
+      "source": "PHB",
+      "page": 21
+    }
+  ],
+  "reprintedAs": [
+    "精灵语|XPHB"
+  ],
+  "type": "standard",
+  "typicalSpeakers": [
+    "{@filter 精灵|bestiary|type=humanoid|tag=任意种族;精灵}"
+  ],
+  "script": "精灵语",
+  "entries": [
+    "精灵语流畅，具有微妙的语调和复杂的语法。精灵文学丰富多样，他们的歌曲和诗歌在其他种族中享有盛名。许多吟游诗人学习他们的语言，以便将精灵民谣添加到他们的曲目中。"
+  ],
+  "hasFluffImages": true
+}

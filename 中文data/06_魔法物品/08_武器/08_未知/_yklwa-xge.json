@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Yklwa",
+    "name": "精金伊库瓦短矛",
+    "source": "XGE",
+    "page": 78,
+    "type": "M",
+    "rarity": "unknown",
+    "weight": 3,
+    "value": 100,
+    "weaponCategory": "simple",
+    "property": [
+      "T"
+    ],
+    "range": "10/30",
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "weapon": true,
+    "entries": [
+      "使用这个武器击中物体时，每次命中都视为重击。"
+    ],
+    "namePrefix": "精金",
+    "reprintedAs": [
+      "精金武器|XDMG"
+    ],
+    "tier": "主要",
+    "valueExpression": "[[baseItem.value]] + 50000",
+    "_isVariant": true
+  }
+]

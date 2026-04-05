@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Potion of Exertion",
+    "name": "精力药水",
+    "source": "ObojimaTallGrass",
+    "page": 235,
+    "type": "P",
+    "rarity": "uncommon",
+    "property": [
+      "Util"
+    ],
+    "entries": [
+      "当你饮用这瓶药水时，你会获得一股狂躁的能量浪涌，允许你在本轮的先攻值为1时再执行一个动作。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 42|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Utility/potion-of-exertion.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1426,
+          "height": 1426
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

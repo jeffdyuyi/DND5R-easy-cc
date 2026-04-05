@@ -1,0 +1,54 @@
+[
+  {
+    "ENG_name": "Gift of the Metallic Dragon",
+    "name": "金属龙赋礼",
+    "source": "FTD",
+    "page": 17,
+    "additionalSpells": [
+      {
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "innate": {
+          "_": {
+            "daily": {
+              "1": [
+                "疗伤术"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "entries": [
+      "你掌握了一些金属龙的力量，你获得以下好处：",
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Draconic Healing",
+            "name": "龙族治疗",
+            "type": "item",
+            "entries": [
+              "你习得{@spell 疗伤术}法术。你可以施展一次该法术而无需消耗法术位。当你以此法施展该法术后，你不能再这样做，直至你完成一次长休。你也可以使用你拥有的法术位来施展该法术。该法术的施法属性是智力，感知或魅力（你在获得此专长时进行选择）。"
+            ]
+          },
+          {
+            "ENG_name": "Protective Wings",
+            "name": "庇护之翼",
+            "type": "item",
+            "entries": [
+              "你可以现出庇护之翼，保护你或者其他人免受攻击。在你或5尺内你可见的其他生物被一次攻击命中时，你可以使用你的反应来在你背后暂时显现出虚幻的翅膀。你使目标对抗该次攻击的AC获得加值，数值等同于你的熟练加值，此举可能导致该攻击丢失。你可以使用此反应等同于你熟练加值的次数，你在完成一次长休后重获所有已使用的次数。"
+            ]
+          }
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

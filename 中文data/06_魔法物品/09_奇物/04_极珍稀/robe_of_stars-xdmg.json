@@ -1,0 +1,48 @@
+[
+  {
+    "ENG_name": "Robe of Stars",
+    "name": "星辰法袍",
+    "source": "XDMG",
+    "page": 297,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "bonusSavingThrow": "+1",
+    "rechargeAmount": "{@dice 1d6}",
+    "charges": 6,
+    "entries": [
+      "这件黑色或深蓝色的长袍上点缀着白色或银色的星星。着装这件长袍期间，你的豁免具有+1加值。",
+      "法袍的前襟附近有六枚较大的星星。着装这件长袍期间，你可以使用一个{@action 魔法|XPHB}动作消耗其中一颗星星，以此施展五环版本的{@spell 魔法飞弹|XPHB}。每日黄昏时分，{@dice 1d6}颗被消耗的星星将重新出现在法袍上。",
+      "着装这件长袍期间，你可以用一个{@action 魔法|XPHB}动作使你和你着装或携带的物件一起进入星界，直至你再次使用一个{@action 魔法|XPHB}动作回到你原本所在的位面。此时你出现在自己之前占据的空间中，如果该空间已被占据，则你出现在最近的未占据空间。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "魔法飞弹|xphb#5"
+        ]
+      }
+    },
+    "lootTables": [
+      "奥秘 - 极珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 20000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Robe of Stars.webp"
+          },
+          "width": 449,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

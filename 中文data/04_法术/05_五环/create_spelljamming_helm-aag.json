@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Create Spelljamming Helm",
+    "name": "创造法驱魔舵",
+    "source": "AAG",
+    "page": 22,
+    "level": 5,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一根价值至少5000gp的水晶权杖，作为法术的耗材",
+        "cost": 500000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "持握用于施法成分的那根权杖并触碰一个不超过大型、未被占据的座椅。水晶权杖消失，且这个座椅被转变为{@item 法驱魔舵|AAG}。"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "变化系"
+  }
+]

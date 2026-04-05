@@ -1,0 +1,129 @@
+{
+  "name": "星辰结社",
+  "shortName": "星辰",
+  "ENG_name": "Circle of Stars",
+  "source": "TCE",
+  "className": "德鲁伊",
+  "classSource": "PHB",
+  "page": 38,
+  "edition": "classic",
+  "subclassFeatures": [
+    "星辰结社|德鲁伊||星辰|TCE|2",
+    "宇宙预兆|德鲁伊||星辰|TCE|6",
+    "闪耀星座|德鲁伊||星辰|TCE|10",
+    "灿若繁星|德鲁伊||星辰|TCE|14"
+  ],
+  "features": [
+    {
+      "name": "星辰结社",
+      "ENG_name": "Circle of Stars",
+      "source": "TCE",
+      "page": 38,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "星辰",
+      "subclassSource": "TCE",
+      "level": 2,
+      "entries": [
+        "星辰结社让德鲁伊能够利用星辰的力量。这一结社的德鲁伊自古以来就开始观测星象，并揭示了隐藏在宇宙模式中的秘密。通过持握他们的星图，德鲁伊能够宣称星辰的魔力。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "星图|德鲁伊||星辰|TCE|2"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "星耀形态|德鲁伊||星辰|TCE|2"
+        }
+      ]
+    },
+    {
+      "name": "星图",
+      "ENG_name": "Star Map",
+      "source": "TCE",
+      "page": 38,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "星辰",
+      "subclassSource": "TCE",
+      "level": 2,
+      "entries": [
+        "2级起，你创造了一张星图。它是一个微型物件，可以用作你的施法法器。当你持握这件星图时，你获得以下益处：",
+        {
+          "type": "list",
+          "items": [
+            "你习得 {@spell 神导术|PHB} 戏法。",
+            "你持握星图时，始终准备着 {@spell 光导箭|PHB}，且不计入准备法术上限。",
+            "你可以施展 {@spell 光导箭|PHB} 而无需消耗法术位。你可以以此法施展它的次数等于你的感知调整值，长休后重获全部次数。"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "星耀形态",
+      "ENG_name": "Starry Form",
+      "source": "TCE",
+      "page": 38,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "星辰",
+      "subclassSource": "TCE",
+      "level": 2,
+      "entries": [
+        "2级起，你可以消耗一次荒野形态使用次数进入星耀形态。你在激活此形态时保持你的数据数据，但你的身体变得明亮。你可以选择一个星座：",
+        {
+          "type": "list",
+          "items": [
+            "**射手座Archer**：当你激活这个形态时你可以进行一次远程法术攻击，对你 60 尺内的一个生物造成 {@damage 1d8} + 感知调整值点的光耀伤害。",
+            "**圣杯座Chalice**：当你消耗法术位施展治疗法术时，你或你 30 尺内的另一生物可以额外恢复 {@dice 1d8} + 感知加值点的 HP。",
+            "**巨龙座Dragon**：当你进行智力/感知检定或维持专注的体质豁免时，你可以将骰值 9 或以下视为 10。"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "宇宙预兆",
+      "ENG_name": "Cosmic Omen",
+      "source": "TCE",
+      "page": 39,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "星辰",
+      "subclassSource": "TCE",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "6级起，每次长休后你可以掷一枚骰子获得预兆。如果是偶数，获得 **吉兆Weal**（用反应给 D20 检定加 {@dice 1d6}）；如果是奇数，获得 **凶兆Woe**（用反应从 D20 检定中减去 {@dice 1d6}）。"
+      ]
+    },
+    {
+      "name": "闪耀星座",
+      "ENG_name": "Twinkling Constellations",
+      "source": "TCE",
+      "page": 39,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "星辰",
+      "subclassSource": "TCE",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "10级起，你的星耀形态星座增强了。射手座和圣杯座中变成 {@damage 2d8}，而在巨龙座激活期间，你获得 20 尺飞行速度并可以悬浮。你还可以在每回合开始时更改星座。"
+      ]
+    },
+    {
+      "name": "灿若繁星",
+      "ENG_name": "Full of Stars",
+      "source": "TCE",
+      "page": 39,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "星辰",
+      "subclassSource": "TCE",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "14级起，处于星耀形态期间，你获得钝击、穿刺与挥砍伤害的抗性。"
+      ]
+    }
+  ]
+}

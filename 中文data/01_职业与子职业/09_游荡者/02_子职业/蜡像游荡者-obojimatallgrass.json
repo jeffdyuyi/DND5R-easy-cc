@@ -1,0 +1,407 @@
+{
+  "ENG_name": "Waxwork Rogue",
+  "name": "蜡像游荡者",
+  "shortName": "蜡像",
+  "source": "ObojimaTallGrass",
+  "className": "游荡者",
+  "classSource": "PHB",
+  "page": 145,
+  "additionalSpells": [
+    {
+      "innate": {
+        "3": [
+          "舞光术",
+          "燃火术"
+        ]
+      },
+      "resourceName": "威克点"
+    }
+  ],
+  "subclassSpells": [
+    "舞光术",
+    "燃火术"
+  ],
+  "optionalfeatureProgression": [
+    {
+      "ENG_name": "Wax Enchantment",
+      "name": "蜡像惑控",
+      "featureType": [
+        "WE"
+      ],
+      "progression": {
+        "3": 3,
+        "5": 5,
+        "10": 7,
+        "15": 9
+      }
+    }
+  ],
+  "subclassTableGroups": [
+    {
+      "subclasses": [
+        {
+          "ENG_name": "Waxwork Rogue",
+          "name": "蜡像游荡者",
+          "source": "ObojimaTallGrass"
+        }
+      ],
+      "colLabels": [
+        "威克点"
+      ],
+      "rows": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ],
+        [
+          7
+        ],
+        [
+          8
+        ],
+        [
+          9
+        ],
+        [
+          10
+        ],
+        [
+          11
+        ],
+        [
+          12
+        ],
+        [
+          13
+        ],
+        [
+          14
+        ],
+        [
+          15
+        ],
+        [
+          16
+        ],
+        [
+          17
+        ],
+        [
+          18
+        ],
+        [
+          19
+        ],
+        [
+          20
+        ]
+      ]
+    }
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "Waxwork Rogue",
+      "name": "蜡像游荡者",
+      "source": "ObojimaTallGrass",
+      "page": 145,
+      "className": "游荡者",
+      "classSource": "PHB",
+      "subclassShortName": "蜡像",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "蜡像游荡者在胧忆岛上有着悠久的与危险和奥术打交道的历史。他们以拥有一系列工具和唬人把戏而闻名，能够深入最危险的地方，几乎总能带着宝藏和故事回来。对蜡像游荡者来说，任何挑战或危险都可以用一点蜡、一点智慧和大量魔法来解决。",
+        {
+          "ENG_name": "In the Beginning",
+          "name": "开始",
+          "type": "entries",
+          "entries": [
+            "信使旅团创建的目的是在村庄之间运送包裹，并护送商人车队穿越危险区域。但胧忆岛上有些区域充满了奥术、精魄危险和异常事件。",
+            "传说中，信使旅团第一职业的莉迪亚·斯塔莱特不顾所有人的建议，寻求了一位强大女巫的帮助，据传这位女巫居住在热水之地深处一座融化的蜡制小屋中。正是在那座融化的小屋里，女巫向莉迪亚传授了只有岛上某些精魄才知晓的奥术技艺，以及用奇妙方式附魔蜡与火焰的能力。正是这种知识将莉迪亚转变为了第一位蜡像游荡者。",
+            "莉迪亚将这些知识带回了信使旅团，并成立了蜡像部门，这是一群自愿承担信使旅团最危险任务和投递工作的奥术游荡者。",
+            "如今，蜡像游荡者已经超越了信使旅团的等级，他们的技能组合在整个岛屿上都有实践。"
+          ]
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "召唤火焰|游荡者|PHB|蜡像|ObojimaTallGrass|3|ObojimaTallGrass"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "蜡质附魔|游荡者|PHB|蜡像|ObojimaTallGrass|3|ObojimaTallGrass"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Conjure Flame",
+      "name": "召唤火焰",
+      "source": "ObojimaTallGrass",
+      "page": 145,
+      "className": "游荡者",
+      "classSource": "PHB",
+      "subclassShortName": "蜡像",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "在3级时，你学会戏法{@spell 舞光术}（灯光显现为漂浮的蜡烛）和戏法{@spell 燃火术}。"
+      ]
+    },
+    {
+      "ENG_name": "Wax Enchantments",
+      "name": "蜡质附魔",
+      "source": "ObojimaTallGrass",
+      "page": 145,
+      "className": "游荡者",
+      "classSource": "PHB",
+      "subclassShortName": "蜡像",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "当你在3级选择这个原型时，你将学会蜡质附魔，这是通过你从灵界拉取和操纵魔法的能力来驱动的。这些由一定数量的威克点表示。",
+        {
+          "ENG_name": "Enchantments",
+          "name": "魔艺",
+          "type": "entries",
+          "entries": [
+            "你学会三个自选的魔艺，详情见下方「{@filter 魔艺|optionalfeatures|source=ObojimaTallGrass|特性 类型=we}」。",
+            "你在5级、10级和15级时各学习两个自选的额外魔艺。每次学习新魔艺时，你还可以将一个已知魔艺替换为不同的魔艺。"
+          ]
+        },
+        {
+          "ENG_name": "Saving Throws",
+          "name": "豁免检定",
+          "type": "entries",
+          "entries": [
+            "你的部分魔艺需要生物进行豁免检定以抵抗魔艺的效应。豁免检定的DC计算如下：",
+            {
+              "ENG_name": "Enchantment",
+              "name": "惑控",
+              "type": "abilityDc",
+              "attributes": [
+                "int",
+                "cha"
+              ]
+            }
+          ]
+        },
+        {
+          "ENG_name": "Wick Points",
+          "type": "entries",
+          "name": "威克点",
+          "entries": [
+            "你有3个威克点，代表你当前驾驭来自灵界的魔法的能力。操纵来自另一个领域的魔法并将其能量拉取到一个物件中，即使是一个像蜡烛这样小型且简易的物件，也可能对身体和精神造成负担。当你消耗一个威克点时，它将不可用，直到你完成一次短休或长休，在结束时你将恢复所有已消耗的威克点。",
+            "每当你在该职业中升级时，你将获得1点额外的威克点。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Burn Cycle",
+      "name": "燃烧循环",
+      "source": "ObojimaTallGrass",
+      "page": 147,
+      "className": "游荡者",
+      "classSource": "PHB",
+      "subclassShortName": "蜡像",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 9,
+      "header": 2,
+      "entries": [
+        "从9级开始，当你成功捕获一个敌人时，你可以用炽热的白色火焰瞬间点燃你的武器。当你在回合内造成偷袭伤害时，你可以消耗威克点对目标造成额外的火焰伤害，附加在武器伤害之上。每消耗1点威克点，额外伤害为{@dice 1d6}，最多{@dice 4d6}。"
+      ]
+    },
+    {
+      "ENG_name": "Advanced Enchantments",
+      "name": "高等附魔",
+      "source": "ObojimaTallGrass",
+      "page": 147,
+      "className": "游荡者",
+      "classSource": "PHB",
+      "subclassShortName": "蜡像",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 13,
+      "header": 2,
+      "entries": [
+        "当你达到13级时，你的一些魔艺会变得更加强大。你现在可以使用下方列出的替代魔艺特性。如果你尚未学会以下任何魔艺，你可以作为此特性的一部分学习一个。",
+        {
+          "ENG_name": "Blooming Light",
+          "name": "绽放光亮术",
+          "type": "entries",
+          "entries": [
+            "从13级开始，绽放光亮术的效应持续8小时。"
+          ]
+        },
+        {
+          "ENG_name": "Burning Delay",
+          "name": "燃烧延迟",
+          "type": "entries",
+          "entries": [
+            "从13级开始，你可以将你的蜡烛魔艺效应延迟1轮、3回合、1分钟、10分钟或1小时。"
+          ]
+        },
+        {
+          "ENG_name": "Candle Pop",
+          "name": "蜡烛爆裂",
+          "type": "entries",
+          "entries": [
+            "从13级开始，蜡烛爆裂会影响目标及其5尺范围内的每个生物。"
+          ]
+        },
+        {
+          "ENG_name": "Delicacy",
+          "name": "精致",
+          "type": "entries",
+          "entries": [
+            "从13级开始，该生物恢复{@dice 1d12}生命值，而非{@dice 1d6}，并且你一次可以拥有≤4根带有此附魔的蜡烛。"
+          ]
+        },
+        {
+          "ENG_name": "Maker's Mark",
+          "name": "制造者标记",
+          "type": "entries",
+          "entries": [
+            "从13级开始，制造者标记每回合的使用次数没有限制。"
+          ]
+        },
+        {
+          "ENG_name": "Shielding Seal",
+          "name": "防护海豹",
+          "type": "entries",
+          "entries": [
+            "从13级开始，你可以同时激活最多三个防护海豹，而非一个。"
+          ]
+        },
+        {
+          "ENG_name": "Waxlings",
+          "name": "蜡灵",
+          "type": "entries",
+          "entries": [
+            "从13级开始，你可以消耗3点威克值作为一个动作，而不是2点，来同时召唤两个蜡灵。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Spirit Flame",
+      "name": "精魄火焰",
+      "source": "ObojimaTallGrass",
+      "page": 147,
+      "className": "游荡者",
+      "classSource": "PHB",
+      "subclassShortName": "蜡像",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "在17级时，你学会制造一种由粉色蜡制成的特殊蜡烛。以一个附赠动作，你可以点燃这支蜡烛，它会燃烧1分钟。只要这支燃烧的蜡烛在你身上，你将获得以下增益：",
+        {
+          "type": "list",
+          "items": [
+            "你的魔艺威克点花费缩小1。",
+            "你免疫火焰伤害。",
+            "精魂在对你进行的攻击检定中具有劣势。"
+          ]
+        },
+        "如果你在燃烧的蜡烛位于你身上时倒地{@condition 倒地}，你必须成功通过DC 15的敏捷豁免检定，否则蜡烛会提前熄灭。",
+        "必须完成一次长休才能再次使用该特性。"
+      ]
+    }
+  ],
+  "fluff": {
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Subclasses/waxwork-rogue.webp"
+        },
+        "credit": "Alexander Cloos",
+        "width": 2885,
+        "height": 2885
+      }
+    ]
+  },
+  "foundryAdvancement": [
+    {
+      "type": "ScaleValue",
+      "configuration": {
+        "identifier": "wax",
+        "type": "number",
+        "scale": {
+          "3": {
+            "value": 3
+          },
+          "4": {
+            "value": 4
+          },
+          "5": {
+            "value": 5
+          },
+          "6": {
+            "value": 6
+          },
+          "7": {
+            "value": 7
+          },
+          "8": {
+            "value": 8
+          },
+          "9": {
+            "value": 9
+          },
+          "10": {
+            "value": 10
+          },
+          "11": {
+            "value": 11
+          },
+          "12": {
+            "value": 12
+          },
+          "13": {
+            "value": 13
+          },
+          "14": {
+            "value": 14
+          },
+          "15": {
+            "value": 15
+          },
+          "16": {
+            "value": 16
+          },
+          "17": {
+            "value": 17
+          },
+          "18": {
+            "value": 18
+          },
+          "19": {
+            "value": 19
+          },
+          "20": {
+            "value": 20
+          }
+        }
+      },
+      "title": "威克点"
+    }
+  ]
+}

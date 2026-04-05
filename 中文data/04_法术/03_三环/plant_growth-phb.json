@@ -1,0 +1,59 @@
+[
+  {
+    "ENG_name": "Plant Growth",
+    "name": "植物滋长",
+    "source": "PHB",
+    "page": 266,
+    "srd": true,
+    "referenceSources": [
+      "WBtW"
+    ],
+    "reprintedAs": [
+      "植物滋长|XPHB"
+    ],
+    "level": 3,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      },
+      {
+        "number": 8,
+        "unit": "小时"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 150
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "该法术将活力引导给特定区域中的植物。该法术有两种用法，其一可产生即时增益，另一种则产生长期的增益。",
+      "用 1 动作施展该法术时，你指定施法距离内一点，该点周边半径 100 尺内的普通植物将变的粗壮和茂盛。一个穿过该区域的生物每移动 1 尺必须花费 4 尺的移动力。",
+      "你可以在该法术范围内空出一块或多块任意大小的区域，使其排除在法术效应影响之外。",
+      "用 8 小时施展该法术时，你可以使这片土地肥沃。你指定施法距离内一点，该点周边半径半里内的植物将在 1 年内变的茂盛。这些植物收获时将产出两倍于正常产量的作物。"
+    ],
+    "miscTags": [
+      "DFT"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "德鲁伊",
+      "游侠"
+    ],
+    "display_school": "变化系"
+  }
+]

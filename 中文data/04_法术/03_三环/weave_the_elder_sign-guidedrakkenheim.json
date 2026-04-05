@@ -1,0 +1,87 @@
+[
+  {
+    "ENG_name": "Weave the Elder Sign",
+    "name": "编织古老图纹",
+    "source": "GuideDrakkenheim",
+    "page": 195,
+    "level": 3,
+    "school": "I",
+    "subschools": [
+      "受污染的"
+    ],
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "s": true,
+      "m": "一枚价值10gp的妄质碎片，该法术会消耗它"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "{@i 当你施放这个法术时，你获得1层污染。}",
+      "你在范围内一个30尺立方区域的空气中编织出一个来自莫测者现实的不可能标志。它只出现一瞬间便消失了。区域内看到该标志的每个生物必须进行一次智力豁免检定。豁免失败时，该生物在法术持续时间内陷入目盲和震慑状态。豁免成功时，生物将目盲直到你的下个回合结束。",
+      "法术对震慑生物的效果会在其受到任何伤害时结束，或者当其他人用一个动作将其摇醒时结束。当法术对震慑生物的效果结束时，该生物受到{@damage 3d6}心灵伤害。"
+    ],
+    "damageInflict": [
+      "心灵"
+    ],
+    "conditionInflict": [
+      "目盲",
+      "震慑"
+    ],
+    "savingThrow": [
+      "智力"
+    ],
+    "miscTags": [
+      "SCL"
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Apothecary",
+          "name": "药剂师",
+          "source": "GuideDrakkenheim"
+        },
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    }
+  }
+]

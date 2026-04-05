@@ -1,0 +1,67 @@
+[
+  {
+    "ENG_name": "Resilient Friendship",
+    "name": "友谊羁绊",
+    "source": "ObojimaTallGrass",
+    "page": 188,
+    "level": 0,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 5
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你魔法般地协助一个范围内的生物，授予其{@action 协助}动作的增益。若你协助的目标在你下个回合开始前成功完成任务，你将获得{@dice 1d4}临时生命值，持续1小时。",
+      "你获得的临时生命值数值会在你达到5级（{@dice 1d6}）、11级（{@dice 1d8}）和17级（{@dice 1d10}）时提升。"
+    ],
+    "scalingLevelDice": {
+      "scaling": {
+        "1": "1d4",
+        "5": "1d6",
+        "11": "1d8",
+        "17": "1d10"
+      }
+    },
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        }
+      ]
+    },
+    "miscTags": [
+      "SCL",
+      "THP"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Custom/Spells/Resilient%20Friendship.webp"
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "Potion of Fire Breath",
+    "name": "火焰吐息药水",
+    "source": "XDMG",
+    "page": 187,
+    "referenceSources": [
+      "HotB"
+    ],
+    "type": "P|XPHB",
+    "rarity": "uncommon",
+    "weight": 0.5,
+    "entries": [
+      "在你饮下这瓶药水后，你可以执行{@variantrule 附赠动作|XPHB}，向位于你30尺内的一名目标喷吐出火焰。目标必须通过{@dc 13}的敏捷豁免，豁免失败则受到{@damage 4d6}火焰伤害，豁免成功则伤害减半。效应将在你喷吐三次火焰或经过一小时后结束。",
+      "这瓶药水里的橙色药液不停闪烁，而容器的顶部被烟雾填满，并在开启时飘散出来。"
+    ],
+    "lootTables": [
+      "奥秘 - 非普通|XDMG"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 200,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Potion of Fire Breath.webp"
+          },
+          "credit": "Conceptopolis",
+          "width": 444,
+          "height": 734
+        }
+      ]
+    }
+  }
+]

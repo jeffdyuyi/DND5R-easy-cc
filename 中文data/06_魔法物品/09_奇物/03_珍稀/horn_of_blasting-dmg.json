@@ -1,0 +1,49 @@
+[
+  {
+    "ENG_name": "Horn of Blasting",
+    "name": "音爆号角",
+    "source": "DMG",
+    "page": 174,
+    "srd": true,
+    "referenceSources": [
+      "ToA",
+      "IDRotF",
+      "CM",
+      "WBtW"
+    ],
+    "reprintedAs": [
+      "音爆号角|XDMG"
+    ],
+    "baseItem": "号角|PHB",
+    "type": "INS",
+    "tier": "主要",
+    "rarity": "rare",
+    "wondrous": true,
+    "weight": 2,
+    "entries": [
+      "你可以用一个动作说出号角的命令词然后吹响号角，号角会发出一阵雷鸣般的爆炸，形成一个30尺锥形区域，在600尺外都能听到。锥形区域内的每个生物必须进行一次{@dc 15}的体质豁免。豁免失败时，生物受到{@damage 5d6}点雷鸣伤害并被{@condition 耳聋}1分钟。豁免成功时，生物只受一半伤害且不会被{@condition 耳聋}。由玻璃或水晶制成的生物和物体在豁免检定中具有劣势，并受到{@damage 10d6}点雷鸣伤害而非{@damage 5d6}。",
+      "每次使用号角的魔法效应都有{@chance 20}的概率导致它爆炸。该爆炸对吹响它的人造成{@damage 10d6}点火焰伤害并摧毁号角。"
+    ],
+    "optionalfeatures": [
+      "仿制魔法物品|TCE"
+    ],
+    "lootTables": [
+      "魔法物品表G"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Horn of Blasting.webp"
+          },
+          "width": 859,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

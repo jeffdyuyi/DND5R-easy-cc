@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Ghost Lantern",
+    "name": "幽魂灯笼",
+    "source": "ToA",
+    "page": 206,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "weight": 1,
+    "entries": [
+      "这盏提灯内困着一只不朽的魂灵。手持提灯时，你可以用附赠动作命令魂灵发出半径 30 尺的明亮光照并延伸处 30 尺的微光光照。",
+      "手持提灯时，你可以用一个动作命令魂灵离开提灯，形成法术{@spell 法师之手}的效应。法术结束后，魂灵会回到提灯中。",
+      "如果你在提灯内 10 尺陷入{@condition 昏迷}，则魂灵会从中现身，以一次碰触用魔法稳定你的伤势，并迅速返回提灯中。",
+      "该魂灵被束缚于提灯中，无法被伤害、被驱散、被复活。",
+      "对提灯施放法术{@spell 驱逐善恶}能将魂灵放归来世，并使提灯不再具有任何魔法效应。"
+    ],
+    "light": [
+      {
+        "bright": 30,
+        "dim": 60
+      }
+    ],
+    "attachedSpells": [
+      "法师之手"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/ToA/Ghost Lantern.webp"
+          },
+          "width": 615,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

@@ -1,0 +1,87 @@
+[
+  {
+    "ENG_name": "Veil of the Weeping Widow (Legendary)",
+    "name": "悲泣寡妇的头纱（传说）",
+    "source": "CrookedMoon24",
+    "page": 606,
+    "resist": [
+      "心灵"
+    ],
+    "rarity": "legendary",
+    "reqAttune": true,
+    "wondrous": true,
+    "property": [
+      "TCM'24:FH"
+    ],
+    "entries": [
+      "这件哀悼面纱被注入了异域法力。悲泣寡妇佩戴此面纱来遮掩其永远带有斑驳泪痕的面容，也有流言称寡妇用其来隐藏眼中蠕动的异界腐败。",
+      "佩戴这面纱期间，你的感知检定与感知豁免会获得+3加值，该加值取决于面纱的稀有度，并且你还可以使用如下词条。",
+      {
+        "ENG_name": "Psychic Fortitude (Rare+)",
+        "name": "心念钢壁（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "你具有对心灵伤害的{@variantrule 抗性|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Sense Grief (Rare+)",
+        "name": "感悲之心（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "你可以从该头纱中施放{@spell 侦测思想|XPHB}（豁免DC = 16 + 头纱的加值）。"
+        ]
+      },
+      {
+        "ENG_name": "Psychic Shock (Very Rare+)",
+        "name": "心念回震（极珍稀+）",
+        "type": "entries",
+        "entries": [
+          "当一个生物迫使你进行一次对抗心灵伤害的豁免检定，或者避免或结束{@condition 魅惑|XPHB}或{@condition 恐慌|XPHB}状态时，你可以使用{@variantrule 反应|XPHB}对其造成{@damage 2d8}心灵伤害。"
+        ]
+      },
+      {
+        "ENG_name": "Thought Worm (Very Rare+)",
+        "name": "思虫寄脑（极珍稀+）",
+        "type": "entries",
+        "entries": [
+          "你可以使用该头纱施放{@spell 篡改记忆|XPHB}（豁免DC = 16 + 头纱的加值）。当一个生物为对抗该法术而进行的豁免检定失败时，你可以在目标的大脑中植入白虫的寄生幼体。当你与目标处于同一位面时，你会知晓其距离和方向，你可以对它施展预言系和惑控系法术，如同它位于施法距离内且可见。一道高等复原术或{@spell 医疗术|XPHB}会杀死寄生虫并终止该效应。该属性一经使用，则直至次日黄昏之前，无法再次使用。"
+        ]
+      },
+      {
+        "ENG_name": "Psychic Storm (Legendary)",
+        "name": "心灵风暴（传说）",
+        "type": "entries",
+        "entries": [
+          "你在一轮内可以额外执行一次{@variantrule 反应|XPHB}，但只能用于激活心灵电击属性。"
+        ]
+      },
+      {
+        "ENG_name": "Veiled Countenance (Legendary)",
+        "name": "掩纱真颜（传说）",
+        "type": "entries",
+        "entries": [
+          "当你成为一道预言系法术的目标时，其施法者必须进行一次DC19的感知豁免。若豁免失败，则该施法者受到{@damage 6d8}心灵伤害，并陷入{@condition 失能|XPHB}状态，持续1分钟。该施法者在其每个回合结束时重复该豁免，豁免成功则终止自身该效应。"
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "侦测思想|XPHB",
+      "篡改记忆|XPHB"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Veil%20of%20the%20Weeping%20Widow.webp"
+          },
+          "width": 841,
+          "height": 1200,
+          "credit": "Matthew Spencer"
+        }
+      ]
+    }
+  }
+]

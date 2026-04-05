@@ -1,0 +1,16 @@
+{
+  "ENG_name": "Storage",
+  "name": "储藏室",
+  "source": "XDMG",
+  "page": 335,
+  "facilityType": "basic",
+  "space": [
+    "cramped",
+    "roomy",
+    "vast"
+  ],
+  "entries": [
+    "每个基础设施都配有非魔法的家具以及与该设施相配的装饰。"
+  ],
+  "translator": "不全书"
+}

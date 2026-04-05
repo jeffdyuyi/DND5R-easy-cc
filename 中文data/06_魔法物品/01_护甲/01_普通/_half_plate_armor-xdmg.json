@@ -1,0 +1,34 @@
+[
+  {
+    "ENG_name": "Smoldering Half Plate Armor",
+    "name": "焖燃半身板甲",
+    "source": "XDMG",
+    "page": 305,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "MA|XPHB",
+    "rarity": "common",
+    "weight": 40,
+    "value": 75000,
+    "ac": 15,
+    "armor": true,
+    "stealth": true,
+    "hasFluffImages": true,
+    "namePrefix": "焖燃",
+    "entries": [
+      "当穿戴这件盔甲时，会升起无害、无味的烟雾。"
+    ],
+    "lootTables": [
+      "武备 - 普通|XDMG",
+      "圣物 - 普通|XDMG"
+    ],
+    "_isVariant": true,
+    "valueReference": 100,
+    "otherSources": [
+      {
+        "source": "XGE"
+      }
+    ]
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Language Lore",
+    "name": "语言逸闻",
+    "source": "ObojimaTallGrass",
+    "page": 233,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Util"
+    ],
+    "entries": [
+      "这种灰色的药水尝起来像嚼过的纸张。饮用后的1小时内，你能理解听到的任何口语的字面含义。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 26|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Utility/language-lore.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1856,
+          "height": 1856
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

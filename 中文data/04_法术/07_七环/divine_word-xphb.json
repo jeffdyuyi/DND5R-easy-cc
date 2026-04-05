@@ -1,0 +1,85 @@
+[
+  {
+    "ENG_name": "Divine Word",
+    "name": "圣言术",
+    "source": "XPHB",
+    "page": 265,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 7,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你吟诵一句充盈上层位面Upper Planes力量的箴言。施法距离内所有由你指定的生物都必须进行一次魅力豁免。豁免失败者，若其{@variantrule 生命值|XPHB}低于50，则基于其当前{@variantrule 生命值|XPHB}承受以下效应，如圣言效应表中所示。无论其{@variantrule 生命值|XPHB}如何，失败于豁免的天族生物、元素生物、妖精生物、邪魔生物均会被遣送回其起源位面（若其并不在其起源位面）并且除非通过{@spell 祈愿术|XPHB}祈愿术，否则其在24小时内不能以任何方式返回当前位面。",
+      {
+        "type": "table",
+        "caption": "圣言效应",
+        "colStyles": [
+          "col-2 text-center",
+          "col-10"
+        ],
+        "colLabels": [
+          "生命值",
+          "效应"
+        ],
+        "rows": [
+          [
+            "0-20",
+            "目标死亡。"
+          ],
+          [
+            "21-30",
+            "目标陷入{@condition 目盲|XPHB}、{@condition 耳聋|XPHB}和{@condition 震慑|XPHB}状态，持续 1 小时。"
+          ],
+          [
+            "31-40",
+            "目标陷入{@condition 目盲|XPHB}和{@condition 耳聋|XPHB}状态，持续 10 分钟。"
+          ],
+          [
+            "41-50",
+            "目标陷入{@condition 耳聋|XPHB}状态，持续 1 分钟。"
+          ]
+        ]
+      }
+    ],
+    "conditionInflict": [
+      "目盲",
+      "耳聋",
+      "震慑"
+    ],
+    "savingThrow": [
+      "charisma"
+    ],
+    "areaTags": [
+      "MT"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "魅力"
+    ]
+  }
+]

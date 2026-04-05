@@ -1,0 +1,37 @@
+[
+  {
+    "ENG_name": "Universal Solvent",
+    "name": "万溶剂",
+    "source": "XDMG",
+    "page": 318,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "legendary",
+    "wondrous": true,
+    "entries": [
+      "这管乳白色的液体散发着浓烈的酒精气味。被发现时，管中装有{@dice 1d6 + 1}盎司的万溶剂。",
+      "你能够以一个{@action 操作|XPHB}动作将管中1盎司或更多的液体倒在触及内的某表面上。每盎司万溶剂将立刻溶解它接触到的至多1立方尺的粘合剂（包括至尊胶sovereign glue）。"
+    ],
+    "lootTables": [
+      "奥秘 - 传说|XDMG",
+      "器具 - 传说|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 100000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Universal Solvent.webp"
+          },
+          "width": 247,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

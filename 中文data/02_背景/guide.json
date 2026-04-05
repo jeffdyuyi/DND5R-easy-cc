@@ -1,0 +1,151 @@
+[
+  {
+    "name": "向导",
+    "ENG_name": "Guide",
+    "source": "XPHB",
+    "edition": "one",
+    "page": 181,
+    "ability": [
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "dex",
+              "con",
+              "wis"
+            ],
+            "weights": [
+              2,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "dex",
+              "con",
+              "wis"
+            ],
+            "weights": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      }
+    ],
+    "feats": [
+      {
+        "魔法学徒；德鲁伊|xphb": true
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "stealth": true,
+        "survival": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "cartographer's tools": true
+      }
+    ],
+    "startingEquipment": [
+      {
+        "A": [
+          {
+            "item": "短弓|xphb"
+          },
+          {
+            "item": "箭矢 (20)|xphb"
+          },
+          {
+            "item": "制图工具|xphb"
+          },
+          {
+            "item": "铺盖|xphb"
+          },
+          {
+            "item": "箭袋|xphb"
+          },
+          {
+            "item": "帐篷|xphb"
+          },
+          {
+            "item": "旅行服装|xphb"
+          },
+          {
+            "value": 300
+          }
+        ],
+        "B": [
+          {
+            "value": 5000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability Scores:",
+            "name": "属性值：",
+            "type": "item",
+            "entry": "敏捷，体质，感知"
+          },
+          {
+            "ENG_name": "Feat:",
+            "name": "专长：",
+            "type": "item",
+            "entry": "{@feat 魔法学徒|XPHB} （德鲁伊）"
+          },
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 隐匿|XPHB}, {@skill 求生|XPHB}"
+          },
+          {
+            "ENG_name": "Tool Proficiency:",
+            "name": "工具熟练项：",
+            "type": "item",
+            "entry": "{@item 制图工具|XPHB}"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "选择 A 或 B：(A) {@item 短弓|XPHB}、{@item 箭|XPHB|20支箭}、{@item 制图工具|XPHB}、{@item 铺盖|XPHB}、{@item 箭袋|XPHB}、{@item 帐篷|XPHB}、{@item 旅行服装|XPHB}、3 GP；或 (B) 50 GP"
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "你在野外长大，远离定居区。你的家就在你决定打开铺盖的任何地方。荒野中自有奇妙之处——奇特的怪物、原始的森林和溪流；如今杂草丛生的、曾被巨人踏过的大殿废墟。在探索它们的过程中你学会了保护自己。而时不时的，你会遇到亲爱的自然祭司，他们会指导你掌握怎样运用荒野的魔法。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "backgrounds/XPHB/Guide.webp"
+          },
+          "credit": "Erel Maatita",
+          "width": 2513,
+          "height": 914
+        }
+      ]
+    },
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "translator": "不全书"
+  }
+]

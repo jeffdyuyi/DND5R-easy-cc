@@ -1,0 +1,11 @@
+{
+  "ENG_name": "Kruthik",
+  "name": "地刺虫语",
+  "source": "MTF",
+  "page": 211,
+  "typicalSpeakers": [
+    "{@creature 青年地刺虫|MTF|青年地刺虫}",
+    "{@creature 地刺虫成体|MTF|地刺虫成体}",
+    "{@creature 地刺虫巢穴领主|MTF|地刺虫巢穴领主}"
+  ]
+}

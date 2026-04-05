@@ -1,0 +1,83 @@
+[
+  {
+    "ENG_name": "Book of Dzyan",
+    "name": "德基安之书",
+    "source": "CthulhuTorchlight",
+    "page": 0,
+    "rarity": "unknown (magic)",
+    "reqAttune": "通过一次DC 20的智力（{@skill 奥秘|XPHB}）检定",
+    "wondrous": true,
+    "bonusSpellSaveDc": "+1",
+    "entries": [
+      "这本奇异的典籍据说最初是由早已消失在不断上升的海平面之下的第一个人类文明所著。它能授予其持有者窥探隐秘领域的洞见，但代价是内心会滋生出对他人日益增长的疑心。",
+      {
+        "ENG_name": "Language:",
+        "name": "语言：",
+        "type": "entries",
+        "entries": [
+          "{@language 天界语|XPHB}."
+        ]
+      },
+      {
+        "ENG_name": "Attunement Check:",
+        "name": "同调检定：",
+        "type": "entries",
+        "entries": [
+          "智力（{@skill 奥秘|XPHB}）DC 20。要结束与《德基安之书》的同调，必须由一个恶魔或魔鬼对你施展{@spell 移除诅咒|XPHB}。之后，本书会在一道闪光中消失。"
+        ]
+      },
+      {
+        "ENG_name": "Benefits:",
+        "name": "增益:",
+        "type": "entries",
+        "entries": [
+          "与《德基安之书》同调期间，你获得以下增益：",
+          {
+            "type": "list",
+            "items": [
+              "你可以看见30尺范围内的{@condition 隐形|XPHB}生物和物件。",
+              "你可以读写{@language 深渊|XPHB}和{@language 炼狱|XPHB}。",
+              "如果你能够施展法术，则你始终准备着{@spell 神导术|XPHB}、{@spell 侦测魔法|XPHB}、{@spell 物件定位术|XPHB}、{@spell 飞行术|XPHB}、{@spell 预言术|XPHB}、{@spell 通神术|CthulhuTorchlight}和{@spell 请神术|CthulhuTorchlight}。",
+              "仅需触摸一道墙壁或物件，你就能侦测到其中内建的、位于你5尺内的暗门或类似隐藏隔间。",
+              "你的所有感知（{@skill 洞悉|XPHB}）检定具有{@variantrule 优势|XPHB}。若你的检定结果为20或更高，你便能获知关于该生物的一个秘密。此增益对同一个生物只生效一次。",
+              "你的法术豁免DC获得+1加值。"
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Drawbacks:",
+        "name": "缺点：",
+        "type": "entries",
+        "entries": [
+          "每当你遭遇一种前所未见的生物时，你在你的每个回合开始时都必须掷出一枚{@dice d20}。若结果为10或更高，则你该回合的动作只能用于{@action 研究|XPHB}它和了解它。一旦你这样做过，之后再面对同一种类的生物时，便无需再进行此掷骰。此缺陷适用于一种通用的生物类型。例如，如果你遭遇了一只{@creature 多头蛇|XMM}，此缺陷会生效，但未来再遭遇其他不同的{@creature 多头蛇|XMM|多头蛇}时，则不会再对你产生影响。"
+        ]
+      },
+      {
+        "ENG_name": "Insight-Insatiable Curiosity (+15):",
+        "name": "洞悉-无法满足的好奇心（+15）：",
+        "type": "entries",
+        "entries": [
+          "一想到世上还有你无法触及的秘密，你就无法忍受。一扇紧闭的门，一张写满奇异符文的羊皮纸，或是任何藏有秘密的东西，对你而言都是无法抗拒的诱惑。"
+        ]
+      },
+      {
+        "ENG_name": "Lore:",
+        "name": "逸闻：",
+        "type": "entries",
+        "entries": [
+          "《德基安之书》能让你在所有为了解诸位面的生物而进行的、DC为25或更低的检定中自动成功。"
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "请神术|CthulhuTorchlight",
+      "通神术|CthulhuTorchlight",
+      "侦测魔法|XPHB",
+      "预言术|XPHB",
+      "飞行术|XPHB",
+      "神导术|XPHB",
+      "物件定位术|XPHB"
+    ]
+  }
+]

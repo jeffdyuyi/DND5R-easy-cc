@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Rattle Shoot",
+    "name": "响尾射击",
+    "source": "ObojimaTallGrass",
+    "page": 207,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 10|large}|SneakerProMedium}",
+            "{@font {@style 8|large}|SneakerProMedium}",
+            "{@font {@style 7|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "响尾射击植物因其在夏季会干枯的种子荚而备受青睐。第一场雨来临时，种子开始在干枯的荚内作响，随后爆裂而出，形成散射术般的种子雨，将它们散布到很远的距离。响尾射击植物主要分布在岛屿中央的疾风原野。"
+    ],
+    "lootTables": [
+      "狂风农田普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/rattle-shoot.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 2859,
+          "height": 2859
+        }
+      ]
+    }
+  }
+]

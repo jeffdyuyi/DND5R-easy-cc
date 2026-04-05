@@ -1,0 +1,13 @@
+[
+  {
+    "ENG_name": "Champion of Harvests",
+    "name": "丰收天尊",
+    "source": "MOT",
+    "page": 52,
+    "type": "Piety Trait",
+    "entries": [
+      "{@i 虔诚值 50+ 卡拉美特拉特质}",
+      "选择体质或感知属性+2，并且使该属性的上限+2。"
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "ENG_name": "Sniper Rifle",
+    "name": "狙击步枪",
+    "source": "ValdaGunslinger",
+    "type": "R",
+    "weaponCategory": "martial",
+    "weight": 8,
+    "value": 45000,
+    "range": "100/400",
+    "dmg1": "2d8",
+    "dmgType": "P",
+    "firearm": true,
+    "ammoType": "弹丸|ValdaGunslinger",
+    "mastery": [
+      "开镜|ValdaGunslinger"
+    ]
+  }
+]

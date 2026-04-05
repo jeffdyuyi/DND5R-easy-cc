@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Hakumon's Ramen Broth",
+    "name": "白门的拉面汤",
+    "source": "ObojimaTallGrass",
+    "page": 210,
+    "type": "Ingred",
+    "rarity": "uncommon",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 12|large}|SneakerProMedium}",
+            "{@font {@style 14|large}|SneakerProMedium}",
+            "{@font {@style 17|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "由拉面大师白门制作的拉面汤因其特别强力的效应而在大厨和药水制造者中享有传说般的声誉。许多拉面竞争对手和药水制造者都愿意支付高价来获取一容器白门著名拉面店的汤。但要小心！对白门来说，拉面可不是闹着玩的，这位大师级大厨会竭尽全力确保窃贼和恶棍不能轻易偷走他的汤。"
+    ],
+    "lootTables": [
+      "湿地非普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/hakumons-ramen-broth.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 5636,
+          "height": 5636
+        }
+      ]
+    }
+  }
+]

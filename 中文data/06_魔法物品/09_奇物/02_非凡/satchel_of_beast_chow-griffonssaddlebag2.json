@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Satchel of Beast Chow",
+    "name": "驯兽食囊",
+    "source": "GriffonsSaddlebag2",
+    "page": 154,
+    "tier": "次要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这个沉甸甸的食囊高1尺，重2磅，被寻得时内含{@dice 2d4 + 2}份无明显特征的魔法食物。这些食物以半英寸大小的立方体形式呈现，闻起来像是由美味的肉类，营养丰富的植物，或是由两者混合制成。若一只挑战等级不大于2且智力不大于3的野兽或怪兽从你的手中或类似的张开的容器中吃下一份这种食物，它必须成功通过一次DC 15的感知豁免，否则会被你魅惑1小时。在被魅惑期间，该生物会将你和你的同伴视为朋友，且你为与该生物互动时进行的感知（{@skill 驯兽}）和魅力检定具有优势。如果该生物在持续时间内受到你或你同伴造成的任何伤害，魅惑效果会提前结束。如果魅惑效果持续到整段时间过后才结束，则该生物会保持对你无敌意的态度，直到你威胁它为止。"
+    ],
+    "lootTables": [
+      "魔法物品表 B1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Satchel-of-Beast-Chow.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,500 @@
+{
+  "ENG_name": "Eldritch Knight",
+  "name": "奥法骑士",
+  "shortName": "奥法骑士",
+  "source": "XPHB",
+  "className": "战士",
+  "classSource": "XPHB",
+  "page": 96,
+  "edition": "one",
+  "spellcastingAbility": "int",
+  "casterProgression": "1/3",
+  "preparedSpellsProgression": [
+    0,
+    0,
+    3,
+    4,
+    4,
+    4,
+    5,
+    6,
+    6,
+    7,
+    8,
+    8,
+    9,
+    10,
+    10,
+    11,
+    11,
+    11,
+    12,
+    13
+  ],
+  "preparedSpellsChange": "level",
+  "cantripProgression": [
+    0,
+    0,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "additionalSpells": [
+    {
+      "expanded": {
+        "3": [
+          {
+            "all": "level=0|class=法师"
+          },
+          {
+            "all": "level=1|class=法师"
+          }
+        ],
+        "7": [
+          {
+            "all": "level=2|class=法师"
+          }
+        ],
+        "13": [
+          {
+            "all": "level=3|class=法师"
+          }
+        ],
+        "19": [
+          {
+            "all": "level=4|class=法师"
+          }
+        ]
+      }
+    }
+  ],
+  "subclassTableGroups": [
+    {
+      "subclasses": [
+        {
+          "ENG_name": "Eldritch Knight",
+          "name": "奥法骑士",
+          "source": "XPHB"
+        }
+      ],
+      "colLabels": [
+        "{@filter 法术准备|spells|subclass=战士;奥法骑士}"
+      ],
+      "rows": [
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          4
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ],
+        [
+          6
+        ],
+        [
+          7
+        ],
+        [
+          8
+        ],
+        [
+          8
+        ],
+        [
+          9
+        ],
+        [
+          10
+        ],
+        [
+          10
+        ],
+        [
+          11
+        ],
+        [
+          11
+        ],
+        [
+          11
+        ],
+        [
+          12
+        ],
+        [
+          13
+        ]
+      ]
+    },
+    {
+      "title": "每环法术位",
+      "subclasses": [
+        {
+          "ENG_name": "Eldritch Knight",
+          "name": "奥法骑士",
+          "source": "XPHB"
+        }
+      ],
+      "colLabels": [
+        "{@filter 1st|spells|level=1|subclass=战士;奥法骑士}",
+        "{@filter 2nd|spells|level=2|subclass=战士;奥法骑士}",
+        "{@filter 3rd|spells|level=3|subclass=战士;奥法骑士}",
+        "{@filter 4th|spells|level=4|subclass=战士;奥法骑士}"
+      ],
+      "rowsSpellProgression": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          2,
+          0,
+          0
+        ],
+        [
+          4,
+          2,
+          0,
+          0
+        ],
+        [
+          4,
+          2,
+          0,
+          0
+        ],
+        [
+          4,
+          3,
+          0,
+          0
+        ],
+        [
+          4,
+          3,
+          0,
+          0
+        ],
+        [
+          4,
+          3,
+          0,
+          0
+        ],
+        [
+          4,
+          3,
+          2,
+          0
+        ],
+        [
+          4,
+          3,
+          2,
+          0
+        ],
+        [
+          4,
+          3,
+          2,
+          0
+        ],
+        [
+          4,
+          3,
+          3,
+          0
+        ],
+        [
+          4,
+          3,
+          3,
+          0
+        ],
+        [
+          4,
+          3,
+          3,
+          0
+        ],
+        [
+          4,
+          3,
+          3,
+          1
+        ],
+        [
+          4,
+          3,
+          3,
+          1
+        ]
+      ]
+    }
+  ],
+  "subclassFeatures": [
+    "奥法骑士|战士|XPHB|奥法骑士|XPHB|3",
+    "战争魔法|战士|XPHB|奥法骑士|XPHB|7",
+    "奥法打击|战士|XPHB|奥法骑士|XPHB|10",
+    "奥能冲锋|战士|XPHB|奥法骑士|XPHB|15",
+    "精通战争魔法|战士|XPHB|奥法骑士|XPHB|18"
+  ],
+  "hasFluffImages": true,
+  "features": [
+    {
+      "ENG_name": "Eldritch Knight",
+      "name": "奥法骑士",
+      "source": "XPHB",
+      "page": 96,
+      "className": "战士",
+      "classSource": "XPHB",
+      "subclassShortName": "奥法骑士",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "entries": [
+        "{@i 奥法遍身附剑戟}",
+        "奥法骑士将所有战士共通的高超武技与对魔法的精妙研究融合贯通。法术补足并拓展了他们的武技，为甲胄提供额外的保护，并使他们能够使用爆发性的魔法同时与多个敌人鏖战。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "施法|战士|XPHB|奥法骑士|XPHB|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "战争联结|战士|XPHB|奥法骑士|XPHB|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Spellcasting",
+      "name": "施法",
+      "source": "XPHB",
+      "page": 96,
+      "className": "战士",
+      "classSource": "XPHB",
+      "subclassShortName": "奥法骑士",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你学会了如何施展法术。施法规则见{@book 第七章|XPHB|7}。下文将详述如何将这些规则应用于奥法骑士。",
+        {
+          "ENG_name": "Cantrips",
+          "name": "戏法",
+          "type": "entries",
+          "entries": [
+            "你知晓两道你从{@filter 法师法术列表|spells|class=法师}中选择的戏法。推荐选择{@spell 冷冻射线|XPHB}和{@spell 电爪|XPHB}。每当你获得一个战士等级时，你都能从此特性的戏法中选择其一替换为另一道你从{@filter 法师法术列表|spells|class=法师}中选择的戏法。",
+            "当你的战士等级到达10级时，你能另选一道法师戏法并习得。"
+          ]
+        },
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "ENG_name": "Spell Slots",
+              "name": "法术位",
+              "type": "entries",
+              "entries": [
+                "奥法骑士施法表显示了你可用于施展一环及以上法术的法术位数量。你在完成一次{@variantrule 长休|XPHB}时恢复所有已消耗的法术位。"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "ENG_name": "Prepared Spells of Level 1+",
+              "name": "1环及以上的准备法术",
+              "type": "entries",
+              "entries": [
+                "你准备可供你以此特性施展的一环及更高环阶的{@filter 法师法术列表|spells|class=法师}。为此，选择三道来自法师法术列表的法术。推荐选择{@spell 燃烧之手|XPHB}、{@spell 跳跃术|XPHB}和{@spell 护盾术|XPHB}。",
+                "已准备法术数量会随你战士等级的提升 as 增加，如奥法骑士施法表中的准备法术一列所示。每当这一列的数字增加时，从{@filter 法师法术列表|spells|class=法师}中选择额外法术准备，直至已准备法术的数量与表格中的数字一致。你所选择法术的环阶必须是你所拥有法术位对应的环阶。"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "ENG_name": "Changing your Prepared Spells",
+              "name": "更换你的准备法术",
+              "type": "entries",
+              "entries": [
+                "每当你获得一个战士等级，就可以将你准备列表上的一道法术替换为另一道法师法术，你必须拥有替换后法术对应环阶的法术位才可以替换。"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "ENG_name": "Spellcasting Ability",
+              "name": "施法属性",
+              "type": "entries",
+              "entries": [
+                "你法师法术的施法属性是智力。"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "ENG_name": "Spellcasting Focus",
+              "name": "法器",
+              "type": "entries",
+              "entries": [
+                "你可以使用{@item 奥术法器|XPHB}作为你法师法术的{@variantrule 法器|XPHB}。"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "War Bond",
+      "name": "战争联结",
+      "source": "XPHB",
+      "page": 98,
+      "className": "战士",
+      "classSource": "XPHB",
+      "subclassShortName": "奥法骑士",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你习得一种让你和你的武器建立魔法联结的仪式。你执行持续一小时的仪式，且可在{@variantrule 短休|XPHB}时进行。整个仪式过程中武器必须在你的触及范围内，直至仪式结束前，该武器必须一直在你触手可及的范围内，以完成联结。若该武器已与另一名战士建立联结，或是一把已被他人同调的魔法物品，仪式则会失败。",
+        "联结建立后，只要你不处于{@condition 失能|XPHB}状态，使用联结武器时就不会被缴械。如果联结武器与你处于同一位面，则你可以用一个{@variantrule 附赠动作|XPHB}使其立即传送到你手中。",
+        "你至多可以拥有两把建立联结的武器，但一个{@variantrule 附赠动作|XPHB}只能召唤一把武器。如果你试图和第三把武器建立联结，则必须与已经联结的两把武器其中的一把取消联结。"
+      ]
+    },
+    {
+      "ENG_name": "War Magic",
+      "name": "战争魔法",
+      "source": "XPHB",
+      "page": 98,
+      "className": "战士",
+      "classSource": "XPHB",
+      "subclassShortName": "奥法骑士",
+      "subclassSource": "XPHB",
+      "level": 7,
+      "header": 2,
+      "entries": [
+        "当你在自己回合执行{@action 攻击|XPHB}动作时，你可以将该动作攻击中的一次攻击替换为施展一道施法时间为动作的你的法师戏法。"
+      ]
+    },
+    {
+      "ENG_name": "Eldritch Strike",
+      "name": "奥法打击",
+      "source": "XPHB",
+      "page": 98,
+      "className": "战士",
+      "classSource": "XPHB",
+      "subclassShortName": "奥法骑士",
+      "subclassSource": "XPHB",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "你习得用武器攻击削弱敌人对你法术抵抗能力的方法。当你使用一把武器命中一个生物后，直到你的下个回合结束为止，该生物在对抗你法术所进行的下一次豁免检定中具有{@variantrule 劣势|XPHB}。"
+      ]
+    },
+    {
+      "ENG_name": "Arcane Charge",
+      "name": "奥能冲锋",
+      "source": "XPHB",
+      "page": 98,
+      "className": "战士",
+      "classSource": "XPHB",
+      "subclassShortName": "奥法骑士",
+      "subclassSource": "XPHB",
+      "level": 15,
+      "header": 2,
+      "entries": [
+        "你可以在使用动作如潮时传送至多 30 尺至一个你能看到的未被占据的空间。你可以在使用动作如潮提供的额外动作之前或之后进行传送。"
+      ]
+    },
+    {
+      "ENG_name": "Improved War Magic",
+      "name": "精通战争魔法",
+      "source": "XPHB",
+      "page": 98,
+      "className": "战士",
+      "classSource": "XPHB",
+      "subclassShortName": "奥法骑士",
+      "subclassSource": "XPHB",
+      "level": 18,
+      "header": 2,
+      "entries": [
+        "当你在自己回合执行{@action 攻击|XPHB}动作时，你可以该动作攻击中的两次攻击替换为施展一道施法时间为动作，环阶为一环或二环的你的法师法术。"
+      ]
+    }
+  ]
+}

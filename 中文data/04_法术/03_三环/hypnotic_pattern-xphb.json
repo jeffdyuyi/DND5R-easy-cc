@@ -1,0 +1,64 @@
+[
+  {
+    "ENG_name": "Hypnotic Pattern",
+    "name": "催眠图纹",
+    "source": "XPHB",
+    "page": 287,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 3,
+    "school": "I",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "s": true,
+      "m": "一撮五彩纸屑"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你在施法距离内一处边长 30 尺的{@variantrule 立方 [效应区域]|XPHB|立方}区域内创造出一个在空中舞动旋转的彩色图纹。图纹在出现片刻后消失，然后迫使区域内每个看到它的生物进行一次感知豁免，豁免失败者将在法术持续时间内陷入{@condition 魅惑|XPHB}状态。在被该法术{@condition 魅惑|XPHB}期间，被该法术魅惑的生物陷入{@condition 失能|XPHB}状态，且{@variantrule 速度|XPHB}降为 0。",
+      "如果受术生物受到任何伤害，或有其他生物用动作将其从恍惚中摇醒，则其身上的此效应将提前终止。"
+    ],
+    "conditionInflict": [
+      "魅惑",
+      "失能"
+    ],
+    "savingThrow": [
+      "wisdom"
+    ],
+    "areaTags": [
+      "C"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "幻术系",
+    "display_savingThrow": [
+      "感知"
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Rod of Endless Light",
+    "name": "无尽光杖",
+    "source": "GriffonsSaddlebag2",
+    "page": 149,
+    "type": "RD|DMG",
+    "tier": "次要",
+    "rarity": "common",
+    "entries": [
+      "持握此权杖期间，你可以用一个动作说出其命令语。此时，权杖将散发半径20尺的明亮光照以及额外20尺范围的微光光照。光照持续1小时，或直至你在持握权杖期间再次说出其命令语为止。在持续时间内，你可以在持握权杖期间用一个附赠动作以意念改变光芒的颜色。"
+    ],
+    "lootTables": [
+      "魔法物品表 A2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Rod-of-Endless-Light.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

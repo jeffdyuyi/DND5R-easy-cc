@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "Sun Card",
+    "name": "太阳卡",
+    "source": "BMT",
+    "page": 15,
+    "rarity": "legendary",
+    "wondrous": true,
+    "recharge": "拂晓",
+    "entries": [
+      "作为动作，你可以挥舞这张卡牌并用其施放{@spell 阳炎射线}法术（豁免{@dc 17}），从卡牌正面投射光线。这一属性一经使用，直到次日黎明之前无法再次使用。"
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "阳炎射线"
+        ]
+      }
+    },
+    "hasFluffImages": true,
+    "valueReference": 200000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "decks/BMT/Deck of Many Things/10-sun.webp"
+          },
+          "credit": "Vallez Gax",
+          "width": 850,
+          "height": 1552
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

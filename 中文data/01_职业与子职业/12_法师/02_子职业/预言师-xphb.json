@@ -1,0 +1,71 @@
+{
+  "ENG_name": "Diviner",
+  "name": "预言师",
+  "shortName": "预言师",
+  "source": "XPHB",
+  "className": "法师",
+  "classSource": "XPHB",
+  "page": 173,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "innate": {
+        "10": [
+          "识破隐形|xphb"
+        ]
+      },
+      "known": {
+        "3": [
+          {
+            "choose": "level=0;1;2|class=法师|school=D"
+          },
+          {
+            "choose": "level=0;1;2|class=法师|school=D"
+          }
+        ],
+        "5": [
+          {
+            "choose": "level=0;1;2;3|class=法师|school=D"
+          }
+        ],
+        "7": [
+          {
+            "choose": "level=0;1;2;3;4|class=法师|school=D"
+          }
+        ],
+        "9": [
+          {
+            "choose": "level=0;1;2;3;4;5|class=法师|school=D"
+          }
+        ],
+        "11": [
+          {
+            "choose": "level=0;1;2;3;4;5;6|class=法师|school=D"
+          }
+        ],
+        "13": [
+          {
+            "choose": "level=0;1;2;3;4;5;6;7|class=法师|school=D"
+          }
+        ],
+        "15": [
+          {
+            "choose": "level=0;1;2;3;4;5;6;7;8|class=法师|school=D"
+          }
+        ],
+        "17": [
+          {
+            "choose": "level=0;1;2;3;4;5;6;7;8;9|class=法师|school=D"
+          }
+        ]
+      }
+    }
+  ],
+  "subclassFeatures": [
+    "预言师|法师|XPHB|预言师|XPHB|3",
+    "预言专家|法师|XPHB|预言师|XPHB|6",
+    "天眼通|法师|XPHB|预言师|XPHB|10",
+    "高等预兆|法师|XPHB|预言师|XPHB|14"
+  ],
+  "hasFluffImages": true
+}

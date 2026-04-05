@@ -1,0 +1,70 @@
+[
+  {
+    "ENG_name": "Nystul's Magic Aura",
+    "name": "涅斯图魔法灵光",
+    "source": "XPHB",
+    "page": 302,
+    "srd52": "奥术师魔法灵光",
+    "basicRules2024": true,
+    "level": 2,
+    "school": "I",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一小片方形丝绸"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 24
+        }
+      }
+    ],
+    "entries": [
+      "你触碰一名自愿生物或者一个未被着装或携带的物件以在其上设置一道幻术。生物获得下述伪装效应，物件则获得下述虚假灵光效应。效应持续至法术结束。如果你持续 30 日每日均对同一个目标施展此法术，则幻术会的持续时间变为直至被解除。",
+      {
+        "ENG_name": "Mask (Creature)",
+        "name": "伪装（生物）",
+        "type": "entries",
+        "entries": [
+          "选择一种目标实际生物类型以外的生物类别。法术和其他魔法效应会将目标生物视为属于该生物类型来处理效果。"
+        ]
+      },
+      {
+        "ENG_name": "False Aura (Object)",
+        "name": "虚假灵光（物件）",
+        "type": "entries",
+        "entries": [
+          "你改变目标在能够侦测魔法灵光的法术和魔法效应（例如{@spell 侦测魔法|XPHB}）中呈现的样子。你可以使一个非魔法物件如同具有魔法性、让一个魔法物件如同只是非魔法的，或者改变物件的魔法灵光学派，使其呈现出由你选择的特定魔法学派的灵光。"
+        ]
+      }
+    ],
+    "miscTags": [
+      "OBJ",
+      "PIR",
+      "PRM"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "法师"
+    ],
+    "display_school": "幻术系"
+  }
+]

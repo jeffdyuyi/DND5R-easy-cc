@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Helm of Underwater Action",
+    "name": "水下行动头盔",
+    "source": "GoS",
+    "page": 229,
+    "otherSources": [
+      {
+        "source": "IMR",
+        "page": 94
+      }
+    ],
+    "referenceSources": [
+      "IMR"
+    ],
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "modifySpeed": {
+      "static": {
+        "swim": 30
+      }
+    },
+    "entries": [
+      "当你佩戴这个黄铜头盔时，你可以在水下呼吸，你获得{@sense 黑暗视觉}，范围为60尺，并且你的游泳速度为30尺。"
+    ],
+    "valueReference": 400,
+    "type": "W"
+  }
+]

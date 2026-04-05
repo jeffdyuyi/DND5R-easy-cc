@@ -1,0 +1,92 @@
+[
+  {
+    "ENG_name": "Elementalism",
+    "name": "四象法门",
+    "source": "XPHB",
+    "page": 267,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 0,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你操控元素，在施法距离内创造下述效应之一。",
+      {
+        "ENG_name": "Beckon Air",
+        "name": "召气",
+        "type": "entries",
+        "entries": [
+          "你在一处 5 尺{@variantrule 立方 [效应区域]|XPHB|立方}区域内创造一股和风，其足以吹动布料、搅动灰尘、使落叶沙沙作响、关闭开着的门和百叶窗。若开着的门/百叶窗被某人/某物顶住，则其不受该效应影响。"
+        ]
+      },
+      {
+        "ENG_name": "Beckon Earth",
+        "name": "召土",
+        "type": "entries",
+        "entries": [
+          "你创造灰尘或沙子组成的薄帷，覆盖在 5 尺立方区域内的表面上，或者你可以在一堆泥土或沙子中使一个单词以你的手写体出现。"
+        ]
+      },
+      {
+        "ENG_name": "Beckon Fire",
+        "name": "召火",
+        "type": "entries",
+        "entries": [
+          "你在一处5尺{@variantrule 立方 [效应区域]|XPHB|立方}区域内创造一片无害余烬与一股富有色彩和气味的烟。你选择烟的色彩和气味，而余烬可以点燃区域中的蜡烛、火把或油灯。烟的气味会存留 1 分钟。"
+        ]
+      },
+      {
+        "ENG_name": "Beckon Water",
+        "name": "召水",
+        "type": "entries",
+        "entries": [
+          "你在一处 5 尺{@variantrule 立方 [效应区域]|XPHB|立方}范围内创造一片凉爽的，使范围内生物和物件略微潮湿的雾气。或者，你可以在一个有开口的容器或表面上创造出一杯干净的水，水会在 1 分钟内蒸发。"
+        ]
+      },
+      {
+        "ENG_name": "Sculpt Element",
+        "name": "法术塑形",
+        "type": "entries",
+        "entries": [
+          "你使 1 尺立方{@variantrule 立方 [效应区域]|XPHB|立方}区域内的泥土、沙子、火焰、烟尘、雾气或水呈现出一个粗略的形状（如一名生物），持续 1 小时。"
+        ]
+      }
+    ],
+    "miscTags": [
+      "OBJ"
+    ],
+    "areaTags": [
+      "C",
+      "Q"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊",
+      "术士",
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "变化系"
+  }
+]

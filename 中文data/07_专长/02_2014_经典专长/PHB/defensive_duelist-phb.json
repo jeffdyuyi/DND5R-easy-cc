@@ -1,0 +1,24 @@
+[
+  {
+    "ENG_name": "Defensive Duelist",
+    "name": "防御式决斗",
+    "source": "PHB",
+    "page": 165,
+    "reprintedAs": [
+      "防御式决斗|XPHB"
+    ],
+    "prerequisite": [
+      {
+        "ability": [
+          {
+            "dex": 13
+          }
+        ]
+      }
+    ],
+    "entries": [
+      "当你持用一把已具有熟练项的灵巧武器时，若另一生物对你发动的近战攻击命中你，则你可执行反应并将你的熟练加值添加到本次攻击的AC中，此举还有可能导致本次攻击变为未命中。"
+    ],
+    "translator": "不全书"
+  }
+]

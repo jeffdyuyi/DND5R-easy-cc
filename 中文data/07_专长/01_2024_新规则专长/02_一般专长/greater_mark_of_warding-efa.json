@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Greater Mark of Warding",
+    "name": "高等警戒之纹",
+    "source": "EFA",
+    "page": 45,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4,
+        "feat": [
+          "警戒龙纹|EFA"
+        ]
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Improved Intuition",
+        "name": "直觉锐化",
+        "type": "entries",
+        "entries": [
+          "当你使用你的{@feat 警戒龙纹|EFA}专长的守卫直觉增益时，你可以掷{@dice 1d6}而非{@dice 1d4}。"
+        ]
+      },
+      {
+        "ENG_name": "Improved Warding",
+        "name": "警心涤虑",
+        "type": "entries",
+        "entries": [
+          "当一个生物对你或你30尺内能看见的生物进行攻击检定时，你可以采取一个{@variantrule 反应|XPHB}来使该掷骰获得{@variantrule 劣势|XPHB}。你可以使用此增益的次数等于你的{@variantrule 熟练|XPHB|熟练加值}，且你在完成一次{@variantrule 长休|XPHB}后恢复所有已使用的次数。"
+        ]
+      }
+    ]
+  }
+]

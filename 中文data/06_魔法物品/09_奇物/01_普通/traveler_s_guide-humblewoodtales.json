@@ -1,0 +1,15 @@
+[
+  {
+    "ENG_name": "Traveler's Guide",
+    "name": "旅行者向导",
+    "source": "HumblewoodTales",
+    "page": 158,
+    "type": "G",
+    "rarity": "none",
+    "weight": 2,
+    "value": 2500,
+    "entries": [
+      "这些便捷的书籍包含由GM选定的单个大型城市或著名目的地的详细信息。大部分这类向导由乔纳尔撰写，但也有部分由其他著名探险家编写。旅行者向导允许你在进行与该目的地相关的智力检定时添加你的熟练加值。"
+    ]
+  }
+]

@@ -1,0 +1,75 @@
+[
+  {
+    "ENG_name": "Hero of Fable",
+    "name": "虚构英雄",
+    "source": "BookOfEbonTides",
+    "page": 64,
+    "level": 5,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "m": "一顶月桂叶王冠"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你使一个生物能够完成伟大的事迹，就像故事书中的勇士一样，同时增强该生物的敌人，使其值得英雄的关注。在范围内你选择的一个生物在持续时间内获得所有属性检定、攻击检定和豁免检定的优势。同时，攻击你目标的生物，或对你目标发起的法术或效应进行豁免检定的生物，在其掷骰时具有优势。如果你的目标不愿意，它必须成功通过魅力豁免检定以避免效应。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "如果你使用7环或更高等级的法术位施放该法术，6环以上的每个法术位环阶可以多指定一个生物作为目标。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Paladin",
+          "name": "圣武士",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    },
+    "savingThrow": [
+      "魅力"
+    ]
+  }
+]

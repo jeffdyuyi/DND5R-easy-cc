@@ -1,0 +1,83 @@
+[
+  {
+    "ENG_name": "Amulet of the Inferno",
+    "name": "炼狱护符",
+    "source": "CoA",
+    "page": 273,
+    "rarity": "artifact",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "当菲恩拉出生时，来自各地的请愿者和恶魔都来庆祝她的诞生。许多人带来了礼物和财宝，包括一位强大的地狱魔契师。魔契师认出了菲恩拉的力量和内心的火焰，于是赠予了她地狱之火护身符，从那时起它就一直挂在她的脖子上。",
+      "地狱护身符是一件魔法项链，它为法术豁免难度等级和法术攻击加值提供+3的加成。",
+      {
+        "ENG_name": "Random Properties",
+        "name": "随机词条",
+        "type": "entries",
+        "entries": [
+          "地狱护身符具有以下随机属性：",
+          {
+            "type": "list",
+            "items": [
+              "3 项{@table 神器词条; 主要增益词条|DMG|主要增益}属性",
+              "2项{@table 神器词条; 主要减益词条|DMG|主要减益}属性"
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Infernal Fire",
+        "name": "地狱之火",
+        "type": "entries",
+        "entries": [
+          "佩戴时，这个护身符增强了你创造的任何魔法火焰，将普通火焰转变为地狱火。地狱火无视对火焰伤害的抗性和免疫，并且对易受火焰或暗蚀伤害的生物造成双倍伤害。它还能够熔化石头，以及点燃易燃物体。"
+        ]
+      },
+      {
+        "ENG_name": "Raging Inferno",
+        "name": "狂暴狱火",
+        "type": "entries",
+        "entries": [
+          "当与地狱护身符共鸣时，你可以使用附赠动作施放{@spell 火焰箭}或{@spell 燃火术}。这些戏法的等级根据你的总角色等级来定，并且如果你通常无法施放法术，它们会使用智力作为施法调整值。"
+        ]
+      },
+      {
+        "ENG_name": "Everburning",
+        "name": "永恒燃烧",
+        "type": "entries",
+        "entries": [
+          "地狱护身符赋予对寒冷伤害的抗性以及水下呼吸的能力。你召唤的任何魔法火焰也相应增强：它们可以在水下使用，无法通过任何手段熄灭，并且可以散发任何温度。尽管施放火系法术仍然可以被{@spell 法术反制}打断，但一旦法术被施放，任何持续的火焰都无法被移除。"
+        ]
+      },
+      {
+        "ENG_name": "Destroying the Amulet",
+        "name": "摧毁此护符",
+        "type": "entries",
+        "entries": [
+          "唯一能够摧毁这个护身符的生物是创造它的魔契师。没有人知道魔契师的身份，这使得摧毁护身符几乎不可能。"
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "火焰箭",
+      "燃火术"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 0,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/CoA/Amulet of the Inferno.webp"
+          },
+          "credit": "Aaron Sims",
+          "width": 706,
+          "height": 399
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

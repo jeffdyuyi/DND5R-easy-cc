@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Charm of Purplemancy",
+    "name": "紫法护咒",
+    "source": "IDRotF",
+    "page": 228,
+    "type": "Charm",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "limited": {
+              "3": [
+                "妖火"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "entries": [
+      "这个护咒允许你以附赠动作而非动作施放{@spell 妖火}法术（仅限紫光；豁免{@dc 15}），且无需法术成分。使用三次后，此护咒会从你身上消失。"
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "+3 Trident",
+    "name": "+3 三叉戟",
+    "source": "XDMG",
+    "page": 324,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "very rare",
+    "weight": 4,
+    "value": 500,
+    "weaponCategory": "martial",
+    "property": [
+      "T|XPHB",
+      "V|XPHB"
+    ],
+    "mastery": [
+      "失衡|XPHB"
+    ],
+    "range": "20/60",
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "dmg2": "1d10",
+    "weapon": true,
+    "hasFluffImages": true,
+    "namePrefix": "+3 ",
+    "bonusWeapon": "+3",
+    "entries": [
+      "使用这把魔法武器进行攻击和伤害判定时，你会获得{=bonusWeapon}的额外加成。"
+    ],
+    "lootTables": [
+      "武备 - 极珍稀|XDMG"
+    ],
+    "_isVariant": true,
+    "valueReference": 40000
+  }
+]

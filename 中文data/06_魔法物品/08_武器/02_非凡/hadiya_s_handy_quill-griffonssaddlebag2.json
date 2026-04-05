@@ -1,0 +1,43 @@
+[
+  {
+    "ENG_name": "Hadiya's Handy Quill",
+    "name": "哈迪娅的便捷羽笔",
+    "source": "GriffonsSaddlebag2",
+    "page": 97,
+    "baseItem": "飞镖|phb",
+    "type": "R",
+    "tier": "次要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "weight": 0.25,
+    "weaponCategory": "简易",
+    "property": [
+      "F",
+      "T"
+    ],
+    "range": "20/60",
+    "dmg1": "1d4",
+    "dmgType": "P",
+    "entries": [
+      "这支飞镖可兼作魔法羽笔，尾部装饰着三根彩虹色的乌鸦羽毛。当你使用这件魔化武器进行远程攻击后，它会立即飞回你的手中。当你使用飞镖进行远程攻击时，可以在攻击的同时说出第一命令语，使飞镖溅射出墨水。若攻击命中，目标将陷入{@condition 目盲|PHB|失明}直到其下一回合结束。生物可以动用一个动作清除自身或其触及范围内另一个生物身上的墨水，从而恢复视觉。此属性需要等到次日黎明才能再次使用。",
+      "作为羽毛笔使用时，飞镖会自行产生墨水，除非你提供其他墨水。你可以用一个附赠动作说出第二命令语来选择羽毛笔产生的墨水颜色。",
+      "此外，你可以用一个附赠动作说出羽笔的第三命令语，使其消隐并在你的身体上以羽毛状刺青形式出现。每次你都可以选择刺青的设计和位置。当你拥有该刺青时，可以用一个附赠动作再次说出命令语，使其消隐并在你的自由手中或脚边（由你选择）以飞镖形态重现。"
+    ],
+    "lootTables": [
+      "魔法物品表 B2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Hadiyas-Handy-Quill.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Cubic Gate",
+    "name": "异界之门魔方",
+    "source": "DMG",
+    "page": 160,
+    "srd": true,
+    "referenceSources": [
+      "ToFW",
+      "VEoR"
+    ],
+    "reprintedAs": [
+      "异界之门魔方|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "legendary",
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "这个边长3寸的立方体散发着明显的魔法能量。立方体的六个面分别连接到六个不同的存在位面，其中一面连接的是物质位面，而其他面所连接的位面则由DM决定。",
+      "你可以用一个动作按下立方体的某个面以施放{@spell 异界之门}法术，并打开连接对应位面的传送门。或者，如果你用一个动作按两次立方体的某个面，你可以用该魔方施放{@spell 位面转移}法术（豁免{@dc 17}）并将目标传送到对应位面。",
+      "这个魔方有3发充能。每次使用魔方都会消耗1发充能。魔方每天黎明时会恢复{@dice 1d3}发已消耗的充能。"
+    ],
+    "attachedSpells": [
+      "异界之门",
+      "位面转移"
+    ],
+    "lootTables": [
+      "魔法物品表I"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 200000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Cubic Gate.webp"
+          },
+          "width": 1000,
+          "height": 915
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

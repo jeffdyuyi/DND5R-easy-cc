@@ -1,0 +1,34 @@
+[
+  {
+    "ENG_name": "Shifter's Shine",
+    "name": "变形者之耀",
+    "source": "GriffonsSaddlebag2",
+    "page": 160,
+    "type": "P",
+    "tier": "次要",
+    "rarity": "varies",
+    "entries": [
+      "此物品存在多种变体，如下方所列：",
+      {
+        "type": "list",
+        "items": [
+          "{@item 变形者之耀（普通）|GriffonsSaddlebag2}",
+          "{@item 变形者之耀（非普通）|GriffonsSaddlebag2}"
+        ]
+      }
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Shifters-Shine.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

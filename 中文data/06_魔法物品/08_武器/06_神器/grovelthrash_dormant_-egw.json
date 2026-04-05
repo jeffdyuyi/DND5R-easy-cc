@@ -1,0 +1,70 @@
+[
+  {
+    "ENG_name": "Grovelthrash (Dormant)",
+    "name": "击溃者（休眠）",
+    "source": "EGW",
+    "page": 275,
+    "baseItem": "战锤|PHB",
+    "type": "M",
+    "rarity": "artifact",
+    "reqAttune": true,
+    "sentient": true,
+    "weight": 2,
+    "weaponCategory": "martial",
+    "property": [
+      "V",
+      "Vst|EGW"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "B",
+    "dmg2": "1d10",
+    "grantsLanguage": true,
+    "bonusWeapon": "+1",
+    "entries": [
+      "这柄属于托罗格的战锤由一整块黑曜石打造而成，因其中涌动的魔法能量而嗡鸣着，上面刻着在痛苦中尖叫的脸的图案。",
+      {
+        "ENG_name": "Sentience",
+        "name": "智能",
+        "type": "entries",
+        "entries": [
+          "击溃者是一把智能中立邪恶武器，它的智力为18，感知15，魅力19。它的听觉和{@sense 黑暗视觉}的感官范围为120尺。",
+          "这把武器能够与持有者通过心灵感应进行交流，能够说、读和理解深渊语、通用语和炼狱语。"
+        ]
+      },
+      {
+        "ENG_name": "Personality",
+        "name": "个性",
+        "type": "entries",
+        "entries": [
+          "一个名叫西里亚的贪婪的{@creature 超等罗斯魔}住在击溃者内。这柄武器贪求物质财富，渴求散布痛苦。它会在持有者获得宝藏时对其进行赞美，并享受伤害他人的过程。"
+        ]
+      },
+      {
+        "ENG_name": "Dormant",
+        "name": "休眠",
+        "type": "entries",
+        "entries": [
+          "当战锤处于休眠状态时，将获得如下增益：",
+          {
+            "type": "list",
+            "items": [
+              "你能说，读，写深渊语和炼狱语。",
+              "你在使用该魔法武器发动攻击检定与伤害掷骰时获得+1加值。当你使用这把战锤命中攻击时，你可以对目标额外造成{@damage 2d6}的钝击伤害。若你如此做，你将受到{@damage 1d6}的心灵伤害。这把战锤对物体和建筑造成双倍伤害。",
+              "· 握持该武器时，你对分辨以你能听懂的语言所说的话是否是谎言而做的感知（{@skill 洞悉}）检定具有优势。"
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Betrayer Artifact Properties",
+        "name": "背叛神器词条",
+        "type": "inset",
+        "entries": [
+          "叛神武具如同分裂遗物一样获得进阶。在休眠状态下，每件这些神器拥有一项{@table 神器词条; 次要增益词条|DMG|次要增益}属性和一项{@table 神器词条; 次要减益词条|DMG|次要减益}属性。当神器进入激活状态，它获得一项额外的{@table 神器词条; 次要增益词条|DMG|次要增益}属性和一项额外的{@table 神器词条; 次要减益词条|DMG|次要减益}属性。当物品到达超频状态时，它获得一项{@table 神器词条; 主要增益词条|DMG|主要增益}属性。见《城主指南》第7章的\"神器属性\"获得更多信息。"
+        ]
+      }
+    ],
+    "hasFluffImages": true,
+    "fluff": {}
+  }
+]

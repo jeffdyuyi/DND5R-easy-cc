@@ -1,0 +1,22 @@
+[
+  {
+    "name": "乘用马",
+    "ENG_name": "Riding Horse",
+    "source": "PHB",
+    "page": 157,
+    "type": "MNT",
+    "rarity": "none",
+    "value": 7500,
+    "basicRules": true,
+    "carryingCapacity": 480,
+    "referenceSources": [
+      "CoS"
+    ],
+    "reprintedAs": [
+      "乘用马|XPHB"
+    ],
+    "speed": 60,
+    "srd": true,
+    "translator": "不全书"
+  }
+]

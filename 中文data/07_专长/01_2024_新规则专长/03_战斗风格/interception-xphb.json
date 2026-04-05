@@ -1,0 +1,20 @@
+[
+  {
+    "ENG_name": "Interception",
+    "name": "拦截",
+    "source": "XPHB",
+    "page": 209,
+    "category": "FS",
+    "prerequisite": [
+      {
+        "feature": [
+          "战斗风格"
+        ]
+      }
+    ],
+    "entries": [
+      "当一名你可见的生物以攻击检定命中你 5 尺内的另一名生物，你能够以{@variantrule 反应|XPHB}减少对目标造成的伤害，使该伤害降低{@dice 1d10} + 你的{@variantrule 熟练|XPHB|熟练加值}。你必须持握着一面{@item 盾牌|XPHB}或者一把简易/军用武器才能使用这个{@variantrule 反应|XPHB}。"
+    ],
+    "translator": "不全书"
+  }
+]

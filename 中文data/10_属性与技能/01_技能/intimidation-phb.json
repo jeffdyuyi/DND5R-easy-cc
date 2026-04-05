@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Intimidation",
+    "name": "威吓",
+    "source": "PHB",
+    "page": 179,
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "威吓|XPHB"
+    ],
+    "ability": "cha",
+    "entries": [
+      "当你尝试用威胁、敌对行为、暴力等使他人改变心意时，进行一次魅力（威吓）检定。例子包括迫供、吓退痞子、用破瓶的利口\"说服\"高官三思等。"
+    ],
+    "translator": "不全书"
+  }
+]

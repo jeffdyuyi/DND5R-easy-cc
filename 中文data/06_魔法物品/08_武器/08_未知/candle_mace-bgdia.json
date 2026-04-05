@@ -1,0 +1,26 @@
+[
+  {
+    "ENG_name": "Candle Mace",
+    "name": "烛台锤",
+    "source": "BGDIA",
+    "page": 39,
+    "baseItem": "硬头锤|PHB",
+    "type": "M",
+    "rarity": "unknown (magic)",
+    "weight": 4,
+    "weaponCategory": "simple",
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "bonusWeapon": "+1",
+    "entries": [
+      "你用此魔法武器进行的攻击检定和伤害掷骰获得 +1 加值。这把硬头锤的顶端散发出 5 尺半径的明亮光照以及额外 5 尺半径的微光光照。使用者可以消耗一个动作来点亮或熄灭光亮。"
+    ],
+    "light": [
+      {
+        "bright": 5,
+        "dim": 10
+      }
+    ],
+    "translator": "不全书"
+  }
+]

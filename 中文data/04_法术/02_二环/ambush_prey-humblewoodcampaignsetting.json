@@ -1,0 +1,162 @@
+[
+  {
+    "ENG_name": "Ambush Prey",
+    "name": "伏击猎物",
+    "source": "HumblewoodCampaignSetting",
+    "page": 49,
+    "otherSources": [
+      {
+        "source": "HumblewoodTales",
+        "page": 250
+      }
+    ],
+    "level": 2,
+    "school": "I",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "s": true,
+      "m": {
+        "text": "一根折断的树枝"
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你引导原始的掠食能量，以完美地隐藏你的存在，以便出其不意地攻击你的目标。在法术的持续时间内，你变得{@condition 隐形}，这让你在所有敏捷（{@skill 隐匿}）检定上获得优势，以保持隐藏。隐形效果将持续整个法术的持续时间，然而，当你在施法时移动5尺或更远的距离时，效果将结束。",
+      "只要你保持隐形，你对任何未察觉你存在的敌人发起的第一次攻击，将额外造成{@damage 1d6}点伤害。这次攻击会结束法术效果。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用高于2级的法术位施放这个法术时，你第一次攻击的伤害会随着每个高于2级的法术位增加{@scaledamage 1d6|2-9|1d6}。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "PHB"
+        }
+      ]
+    },
+    "conditionInflict": [
+      "隐形"
+    ],
+    "miscTags": [
+      "SCL"
+    ],
+    "hasFluffImages": true,
+    "foundrySystem": {
+      "uses": {
+        "spent": 9,
+        "max": 9,
+        "recovery": [
+          {
+            "period": "sr",
+            "type": "loseAll"
+          }
+        ]
+      }
+    },
+    "foundryActivities": [
+      {
+        "ENG_name": "Cast",
+        "name": "施放",
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": -2,
+              "scaling.formula": -1
+            }
+          ]
+        },
+        "type": "utility"
+      },
+      {
+        "ENG_name": "Attack Extra Damage",
+        "name": "攻击 额外伤害",
+        "activation": {
+          "type": null,
+          "override": true
+        },
+        "consumption": {
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "@item.uses.value"
+            }
+          ]
+        },
+        "damage": {
+          "critical.allow": true,
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "(@item.uses.value - 1)d6"
+              }
+            }
+          ]
+        },
+        "duration": {
+          "units": "inst",
+          "override": true
+        },
+        "range": {
+          "units": "任何",
+          "override": true
+        },
+        "target": {
+          "affects": {
+            "count": 1,
+            "type": "any",
+            "special": "任何对你的存在无知觉的目标"
+          },
+          "override": true
+        },
+        "type": "damage"
+      }
+    ],
+    "fluff": {
+      "ENG_name": "Ambush Prey",
+      "name": "伏击猎物",
+      "source": "HumblewoodCampaignSetting",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/HumblewoodCampaignSetting/spells/Ambush-Prey.webp"
+          },
+          "width": 450,
+          "height": 697
+        }
+      ]
+    }
+  }
+]

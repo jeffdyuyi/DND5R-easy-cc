@@ -1,0 +1,41 @@
+[
+  {
+    "name": "鞭子",
+    "ENG_name": "Whip",
+    "source": "XPHB",
+    "page": 215,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 3,
+    "value": 200,
+    "weaponCategory": "martial",
+    "property": [
+      "F|XPHB",
+      "R|XPHB"
+    ],
+    "mastery": [
+      "缓速|XPHB"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "S",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XPHB/Whip.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 481,
+          "height": 303
+        }
+      ]
+    },
+    "basicRules2024": true,
+    "hasFluffImages": true,
+    "srd52": true,
+    "weapon": true
+  }
+]

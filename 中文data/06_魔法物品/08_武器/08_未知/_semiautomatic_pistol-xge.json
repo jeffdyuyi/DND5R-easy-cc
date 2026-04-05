@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Semiautomatic Pistol",
+    "name": "精金半自动手枪",
+    "source": "XGE",
+    "page": 78,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "unknown",
+    "weight": 3,
+    "valueRarity": "珍稀",
+    "weaponCategory": "martial",
+    "age": "现代",
+    "property": [
+      "AF|XDMG",
+      "RLD|XDMG"
+    ],
+    "mastery": [
+      "侵扰|XPHB"
+    ],
+    "range": "50/150",
+    "reload": 15,
+    "dmg1": "2d6",
+    "dmgType": "P",
+    "firearm": true,
+    "weapon": true,
+    "ammoType": "枪械子弹|xphb",
+    "namePrefix": "精金",
+    "reprintedAs": [
+      "精金武器|XDMG"
+    ],
+    "tier": "主要",
+    "valueExpression": "[[baseItem.value]] + 50000",
+    "entries": [
+      "使用这个武器击中物体时，每次命中都视为重击。"
+    ],
+    "_isVariant": true
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "ENG_name": "Tongues",
+    "name": "巧言术",
+    "source": "XPHB",
+    "page": 334,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 3,
+    "school": "D",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "m": "一座微缩庙塔"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "此法术赋予你触碰的一名生物理解任何其能看见或听见的口语或手语的能力。此外，当目标生物以口语或手语进行交流时，任何能听见其话语或看见其手语，且知道至少一门语言的生物都能理解它。"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "牧师",
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "预言系"
+  }
+]

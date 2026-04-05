@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Elixir of Omnimind",
+    "name": "全知灵药",
+    "source": "ObojimaTallGrass",
+    "page": 239,
+    "type": "P",
+    "rarity": "rare",
+    "property": [
+      "Util"
+    ],
+    "entries": [
+      "这瓶浅蓝药水闻起来像臭氧。当你饮用它时，你的思维会扩展，并获得短暂但非凡的能力来理解奥术的浩瀚复杂性。在接下来的1分钟内，你可以同时专注于两个法术。如果你被迫进行体质豁免检定以维持你的{@status 专注}状态，你必须为每个法术分别进行一次豁免检定。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 60|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Utility/elixir-of-omnimind.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1732,
+          "height": 1732
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

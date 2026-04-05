@@ -1,0 +1,93 @@
+[
+  {
+    "ENG_name": "Helm of Perfect Potential",
+    "name": "完美潜能头盔",
+    "source": "BGG",
+    "page": 112,
+    "rarity": "artifact",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6}",
+    "charges": 6,
+    "entries": [
+      "这顶铜色色调的头盔的额头位置嵌有一枚元素混沌的碎片，碎片周围装饰有初升太阳样式的纹路。传说道安南为他的女儿迪安卡斯特拉制造了这件头盔，用于承载一枚她曾用来向父亲证明自己本事的混沌碎片。",
+      {
+        "ENG_name": "Random Properties",
+        "name": "随机词条",
+        "type": "entries",
+        "entries": [
+          "头盔具有以下的随机属性，你需要根据《城主指南》所记述的相关表格进行掷骰来决定它们的具体内容：",
+          {
+            "type": "list",
+            "items": [
+              "2项{@table 神器词条; 次要增益词条|DMG|次要增益}属性",
+              "一个{@table 神器词条; 主要增益词条|DMG|主要增益}属性",
+              "1项{@table 神器词条; 次要减益词条|DMG|次要减益}属性"
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Master of Guile",
+        "name": "狡诈之主",
+        "type": "entries",
+        "entries": [
+          "佩戴这顶头盔期间，你在魅力（{@skill 欺瞒}）检定与感知（{@skill 洞悉}）检定中具有优势。"
+        ]
+      },
+      {
+        "ENG_name": "Arrow of Elemental Havoc",
+        "name": "元素浩劫之矢",
+        "type": "entries",
+        "entries": [
+          "佩戴这顶头盔期间，你可以以一个附赠动作向着你周围90尺范围内可见的一个生物发射一发激烈元素能量的箭矢。目标必须通过一次{@dc 20}的敏捷豁免。豁免失败时，生物将受到{@damage 4d6}点强酸、寒冷、火焰、闪电或雷鸣伤害（由你选择）。豁免成功时，生物只会受到半数的伤害。"
+        ]
+      },
+      {
+        "ENG_name": "Spellcasting",
+        "name": "施法",
+        "type": "entries",
+        "entries": [
+          "这顶头盔具有6发充能，每日黎明它会恢复{@dice 1d6}发充能。以一个动作，当你佩戴这顶头盔时，你可以消耗1发或更多发它的充能来施展以下法术之一（豁免{@dc 20}）：{@spell 元素武器}（1充能），{@spell 召雷术}（2充能），{@spell 火墙术}（3充能），{@spell 咒唤元素}（4充能），{@spell 海啸术}（5充能）。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "元素武器"
+        ],
+        "2": [
+          "召雷术"
+        ],
+        "3": [
+          "火墙术"
+        ],
+        "4": [
+          "咒唤元素"
+        ],
+        "5": [
+          "海啸术"
+        ]
+      }
+    },
+    "hasFluffImages": true,
+    "valueReference": 0,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/BGG/Helm of Perfect Potential.webp"
+          },
+          "credit": "Isabel Gibney",
+          "width": 680,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

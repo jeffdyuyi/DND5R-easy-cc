@@ -1,0 +1,16 @@
+[
+  {
+    "ENG_name": "Noisemaker",
+    "name": "噪音制造器",
+    "source": "GrimHollowPG24",
+    "page": 127,
+    "type": "AdvEq",
+    "rarity": "none",
+    "weight": 5,
+    "value": 5000,
+    "entries": [
+      "这个小型机械装置是侏儒工匠的特殊手法。作为一个{@action 操作|XPHB}动作，你可以将噪音制造器投掷到60尺内的一个空间。当它落地时，会根据制造者的奇思妙想发出某种类型的响亮响声：可能是音乐碰撞声、吹口哨声、呼呼声、嗡嗡声等。这种响声可以在半英里外听到。",
+      "智力值为3或更低的生物在60尺范围内触发该装置时必须成功通过DC 10的感知豁免检定。若豁免失败，该生物将陷入{@condition 恐慌|XPHB}状态1分钟。作为{@action 影响|XPHB}动作，另一个该{@condition 恐慌|XPHB}生物能看见或听见的生物可以尝试DC 20的感知（{@skill 驯兽|XPHB}）或魅力（{@skill 游说|XPHB}）检定。若成功，该生物的{@condition 恐慌|XPHB}状态将结束。"
+    ]
+  }
+]

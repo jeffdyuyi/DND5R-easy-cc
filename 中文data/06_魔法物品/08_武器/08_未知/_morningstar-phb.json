@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Morningstar",
+    "name": "镀银钉头锤",
+    "source": "PHB",
+    "page": 148,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "unknown",
+    "weight": 4,
+    "value": 1500,
+    "weaponCategory": "martial",
+    "mastery": [
+      "削弱|XPHB"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "mace": true,
+    "weapon": true,
+    "hasFluffImages": true,
+    "namePrefix": "镀银",
+    "basicRules": true,
+    "reprintedAs": [
+      "镀银武器|XDMG"
+    ],
+    "tier": "主要",
+    "valueExpression": "[[baseItem.value]] + 10000",
+    "_isVariant": true
+  }
+]

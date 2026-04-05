@@ -1,0 +1,437 @@
+[
+  {
+    "name": "地精",
+    "ENG_name": "Goblin",
+    "source": "PSZ",
+    "page": 16,
+    "size": [
+      "S"
+    ],
+    "speed": 25,
+    "darkvision": 60,
+    "resist": [
+      "火焰",
+      "心灵"
+    ],
+    "traitTags": [
+      "天生护甲"
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "goblin": true
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Age",
+        "name": "年龄",
+        "type": "entries",
+        "entries": [
+          "地精比人类成熟得更快，大约在12岁左右成年。他们的衰老速度也明显快于人类，即使是最谨慎的地精也很少活过50岁。"
+        ]
+      },
+      {
+        "ENG_name": "Alignment",
+        "name": "阵营",
+        "type": "entries",
+        "entries": [
+          "大多数地精极其混乱，尽管他们对善良或邪恶没有特别的倾向。"
+        ]
+      },
+      {
+        "ENG_name": "Size",
+        "name": "体型",
+        "type": "entries",
+        "entries": [
+          "地精平均身高约为3尺，体重约为40磅。你的体型是小型。"
+        ]
+      },
+      {
+        "ENG_name": "Darkvision",
+        "name": "黑暗视觉",
+        "entries": [
+          "由于你的血统，你在黑暗和昏暗条件下拥有优越的视力。你可以在距离你60尺内的微光中看到，就像在明亮的光线下一样，而在黑暗中，就像在微光中一样。在黑暗中，你无法辨别颜色，只能看到灰色的阴影。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Languages",
+        "name": "语言",
+        "entries": [
+          "你可以说、读、写通用语和地精语。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Grit",
+        "name": "坚毅",
+        "entries": [
+          "你对火焰伤害和心灵伤害具有抗性。此外，当你未穿戴护甲时，你的护甲等级等于11 + 你的敏捷调整值。"
+        ],
+        "type": "entries"
+      }
+    ],
+    "subraces": [
+      {
+        "name": "依夏兰",
+        "ENG_name": "Ixalan",
+        "source": "PSX",
+        "page": 16,
+        "ability": [
+          {
+            "dex": 2
+          }
+        ],
+        "resist": null,
+        "entries": [
+          {
+            "ENG_name": "Alignment",
+            "name": "阵营",
+            "type": "entries",
+            "entries": [
+              "大多数地精都极度混乱，没有特别的善良或邪恶倾向，但有强烈的恶作剧倾向。"
+            ],
+            "data": {
+              "overwrite": "阵营"
+            }
+          },
+          {
+            "ENG_name": "Agile Climber",
+            "name": "灵巧攀爬者",
+            "type": "entries",
+            "entries": [
+              "你拥有25尺的攀爬速度。当你穿着中型或重甲时无法使用攀爬速度。（如果你的战役使用{@variantrule 负重|PHB}变体规则，当你处于负重状态时也无法使用攀爬速度。）"
+            ]
+          },
+          {
+            "ENG_name": "Languages",
+            "name": "语言",
+            "entries": [
+              "你可以说、读、写{@language 通用贸易皮钦语|PSX|通用语}（如果你的战役中存在该语言）和{@language 地精语|PHB}。"
+            ],
+            "type": "entries",
+            "data": {
+              "overwrite": "语言"
+            }
+          }
+        ],
+        "fluff": {
+          "entries": [
+            "地精是伊克兰的土著，当莽霸联盟海盗首次登陆太阳帝国的海岸时，他们渴望探索的好奇心吸引了他们。尽管他们仍然在偏远的丛林殖民地中繁衍生息，但最常见的是看到地精在光滑的海盗船的绳索上荡来荡去。",
+            "地精大约三尺高，尽管他们很少站直。他们更喜欢蹲伏的姿势，这使他们能够利用他们长长的能抓握的尾巴迅速地四肢爬行。他们的听力和视力使他们成为出色的瞭望员，他们的敏捷性使他们成为海盗船上船员的好选择。他们可以轻松地在船上的绳索间攀爬、摇摆和跳跃，并且能够进入人类无法到达的狭窄空间。无论好坏，许多地精还是不可救药的恶作剧者，他们经常很难判断一个恶作剧是否不恰当、时机不对或做得过分。"
+          ],
+          "images": [
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSX/Goblin.webp"
+              },
+              "title": "火炮爆炸",
+              "credit": "Svetlin Velinov",
+              "width": 1280,
+              "height": 863
+            },
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSX/Goblin2.webp"
+              },
+              "title": "侏儒开拓者",
+              "credit": "Josh Hass",
+              "width": 643,
+              "height": 515
+            }
+          ]
+        },
+        "hasFluff": true,
+        "hasFluffImages": true,
+        "otherSources": null,
+        "raceName": "地精",
+        "raceSource": "PSZ"
+      },
+      {
+        "name": "赞迪卡; 葛塔部落",
+        "ENG_name": "Zendikar; Grotag Tribe",
+        "source": "PSZ",
+        "page": 17,
+        "ability": [
+          {
+            "con": 2
+          }
+        ],
+        "skillProficiencies": [
+          {
+            "animal handling": true
+          }
+        ],
+        "entries": [
+          {
+            "ENG_name": "Grotag Tamer",
+            "name": "鬼怪驯骑师",
+            "entries": [
+              "你拥有{@skill 驯兽}技能的熟练项。"
+            ],
+            "type": "entries"
+          }
+        ],
+        "fluff": {
+          "entries": [
+            {
+              "type": "entries",
+              "entries": [
+                "地精是一个好奇且适应性强的种族，但受到他们小体型、天生的懦弱和严重缺乏常识的限制。他们热切地探索其他人犹豫进入的区域，并且痴迷于那些更理智的人会小心谨慎对待的魔法。他们珍视古代文物，不是因为它们的内在价值，而主要是因为它们的地位标志——一个珍贵的战利品证明了它的主人在深入危险废墟中的生存。",
+                "地精与红色法力有关。他们的萨满喜欢施展创造或控制火和闪电的法术来打击敌人，他们迅速地根据冲动和激情采取行动，而不会深思熟虑。对地精来说，生活是一次充满新事物去探索和体验的冒险。",
+                {
+                  "ENG_name": "Long Arms and Stony Skin",
+                  "name": "长臂与石肤",
+                  "type": "entries",
+                  "entries": [
+                    "一个典型的地精身高在三尺半到五尺之间，拥有纤细、拉长的体型。地精的手臂异常长且纤细，使他们在攀爬峭壁和树木方面非常熟练。他们的皮肤有石头般的质地，颜色从红棕色到苔绿色或灰色不等。他们的耳朵大而向后倾斜，眼睛呈强烈的红色，许多地精的脊椎或肘部有厚重的骨突。雄性地精的下巴上有类似的骨突，而雌性地精的额头上有更厚重的骨突。",
+                    "这种独特的外表是地精不寻常饮食的直接结果。在艾尔德拉齐崛起之前，地精通过将一种岩石砸成碎片并称之为\"砂砾\"来补充他们的正常饮食。艾尔德拉齐在赞迪卡的存在已经污染了这种岩石，所以地精开始改吃粉末状的海德龙石。食用这种注入魔法的石头使地精对艾尔德拉齐疯狂的精神辐射产生了抵抗力。作为额外的好处，它使他们的皮肤变得坚韧，保护他们免受恶劣天气和身体危险的侵害。"
+                  ]
+                }
+              ]
+            }
+          ],
+          "images": [
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSZ/Goblin.webp"
+              },
+              "title": "Zada, Hedron Grinder",
+              "credit": "Chris Rallis",
+              "width": 441,
+              "height": 401
+            },
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSZ/Goblin2.webp"
+              },
+              "title": "石板锤",
+              "credit": "Joeseph Meehan",
+              "width": 543,
+              "height": 325
+            }
+          ]
+        },
+        "hasFluff": true,
+        "hasFluffImages": true,
+        "otherSources": null,
+        "raceName": "地精",
+        "raceSource": "PSZ"
+      },
+      {
+        "name": "赞迪卡; 熔足部落",
+        "ENG_name": "Zendikar; Lavastep Tribe",
+        "source": "PSZ",
+        "page": 17,
+        "ability": [
+          {
+            "con": 2
+          }
+        ],
+        "entries": [
+          {
+            "ENG_name": "Lavastep Grit",
+            "name": "熔足坚毅",
+            "entries": [
+              "你在岩石或地下环境中进行躲藏时，进行敏捷（{@skill 隐匿}）检定具有优势。"
+            ],
+            "type": "entries"
+          }
+        ],
+        "fluff": {
+          "entries": [
+            {
+              "type": "entries",
+              "entries": [
+                "地精是一个好奇且适应性强的种族，但受到他们小体型、天生的懦弱和严重缺乏常识的限制。他们热切地探索其他人犹豫进入的区域，并且痴迷于那些更理智的人会小心谨慎对待的魔法。他们珍视古代文物，不是因为它们的内在价值，而主要是因为它们的地位标志——一个珍贵的战利品证明了它的主人在深入危险废墟中的生存。",
+                "地精与红色法力有关。他们的萨满喜欢施展创造或控制火和闪电的法术来打击敌人，他们迅速地根据冲动和激情采取行动，而不会深思熟虑。对地精来说，生活是一次充满新事物去探索和体验的冒险。",
+                {
+                  "ENG_name": "Long Arms and Stony Skin",
+                  "name": "长臂与石肤",
+                  "type": "entries",
+                  "entries": [
+                    "一个典型的地精身高在三尺半到五尺之间，拥有纤细、拉长的体型。地精的手臂异常长且纤细，使他们在攀爬峭壁和树木方面非常熟练。他们的皮肤有石头般的质地，颜色从红棕色到苔绿色或灰色不等。他们的耳朵大而向后倾斜，眼睛呈强烈的红色，许多地精的脊椎或肘部有厚重的骨突。雄性地精的下巴上有类似的骨突，而雌性地精的额头上有更厚重的骨突。",
+                    "这种独特的外表是地精不寻常饮食的直接结果。在艾尔德拉齐崛起之前，地精通过将一种岩石砸成碎片并称之为\"砂砾\"来补充他们的正常饮食。艾尔德拉齐在赞迪卡的存在已经污染了这种岩石，所以地精开始改吃粉末状的海德龙石。食用这种注入魔法的石头使地精对艾尔德拉齐疯狂的精神辐射产生了抵抗力。作为额外的好处，它使他们的皮肤变得坚韧，保护他们免受恶劣天气和身体危险的侵害。"
+                  ]
+                }
+              ]
+            }
+          ],
+          "images": [
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSZ/Goblin.webp"
+              },
+              "title": "Zada, Hedron Grinder",
+              "credit": "Chris Rallis",
+              "width": 441,
+              "height": 401
+            },
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSZ/Goblin2.webp"
+              },
+              "title": "石板锤",
+              "credit": "Joeseph Meehan",
+              "width": 543,
+              "height": 325
+            }
+          ]
+        },
+        "hasFluff": true,
+        "hasFluffImages": true,
+        "otherSources": null,
+        "raceName": "地精",
+        "raceSource": "PSZ"
+      },
+      {
+        "name": "赞迪卡; 图图部落",
+        "ENG_name": "Zendikar; Tuktuk Tribe",
+        "source": "PSZ",
+        "page": 17,
+        "ability": [
+          {
+            "con": 2
+          }
+        ],
+        "toolProficiencies": [
+          {
+            "thieves' tools": true
+          }
+        ],
+        "entries": [
+          {
+            "ENG_name": "Tuktuk Cunning",
+            "name": "图图狡诈",
+            "entries": [
+              "你熟练于使用{@item 盗贼工具|PHB}。"
+            ],
+            "type": "entries"
+          }
+        ],
+        "fluff": {
+          "entries": [
+            {
+              "type": "entries",
+              "entries": [
+                "地精是一个好奇且适应性强的种族，但受到他们小体型、天生的懦弱和严重缺乏常识的限制。他们热切地探索其他人犹豫进入的区域，并且痴迷于那些更理智的人会小心谨慎对待的魔法。他们珍视古代文物，不是因为它们的内在价值，而主要是因为它们的地位标志——一个珍贵的战利品证明了它的主人在深入危险废墟中的生存。",
+                "地精与红色法力有关。他们的萨满喜欢施展创造或控制火和闪电的法术来打击敌人，他们迅速地根据冲动和激情采取行动，而不会深思熟虑。对地精来说，生活是一次充满新事物去探索和体验的冒险。",
+                {
+                  "ENG_name": "Long Arms and Stony Skin",
+                  "name": "长臂与石肤",
+                  "type": "entries",
+                  "entries": [
+                    "一个典型的地精身高在三尺半到五尺之间，拥有纤细、拉长的体型。地精的手臂异常长且纤细，使他们在攀爬峭壁和树木方面非常熟练。他们的皮肤有石头般的质地，颜色从红棕色到苔绿色或灰色不等。他们的耳朵大而向后倾斜，眼睛呈强烈的红色，许多地精的脊椎或肘部有厚重的骨突。雄性地精的下巴上有类似的骨突，而雌性地精的额头上有更厚重的骨突。",
+                    "这种独特的外表是地精不寻常饮食的直接结果。在艾尔德拉齐崛起之前，地精通过将一种岩石砸成碎片并称之为\"砂砾\"来补充他们的正常饮食。艾尔德拉齐在赞迪卡的存在已经污染了这种岩石，所以地精开始改吃粉末状的海德龙石。食用这种注入魔法的石头使地精对艾尔德拉齐疯狂的精神辐射产生了抵抗力。作为额外的好处，它使他们的皮肤变得坚韧，保护他们免受恶劣天气和身体危险的侵害。"
+                  ]
+                }
+              ]
+            }
+          ],
+          "images": [
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSZ/Goblin.webp"
+              },
+              "title": "Zada, Hedron Grinder",
+              "credit": "Chris Rallis",
+              "width": 441,
+              "height": 401
+            },
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSZ/Goblin2.webp"
+              },
+              "title": "石板锤",
+              "credit": "Joeseph Meehan",
+              "width": 543,
+              "height": 325
+            }
+          ]
+        },
+        "hasFluff": true,
+        "hasFluffImages": true,
+        "otherSources": null,
+        "raceName": "地精",
+        "raceSource": "PSZ"
+      }
+    ],
+    "fluff": {
+      "entries": [
+        {
+          "type": "entries",
+          "entries": [
+            "地精是一个好奇且适应性强的种族，但受到他们小体型、天生的懦弱和严重缺乏常识的限制。他们热切地探索其他人犹豫进入的区域，并且痴迷于那些更理智的人会小心谨慎对待的魔法。他们珍视古代文物，不是因为它们的内在价值，而主要是因为它们的地位标志——一个珍贵的战利品证明了它的主人在深入危险废墟中的生存。",
+            "地精与红色法力有关。他们的萨满喜欢施展创造或控制火和闪电的法术来打击敌人，他们迅速地根据冲动和激情采取行动，而不会深思熟虑。对地精来说，生活是一次充满新事物去探索和体验的冒险。",
+            {
+              "ENG_name": "Long Arms and Stony Skin",
+              "name": "长臂与石肤",
+              "type": "entries",
+              "entries": [
+                "一个典型的地精身高在三尺半到五尺之间，拥有纤细、拉长的体型。地精的手臂异常长且纤细，使他们在攀爬峭壁和树木方面非常熟练。他们的皮肤有石头般的质地，颜色从红棕色到苔绿色或灰色不等。他们的耳朵大而向后倾斜，眼睛呈强烈的红色，许多地精的脊椎或肘部有厚重的骨突。雄性地精的下巴上有类似的骨突，而雌性地精的额头上有更厚重的骨突。",
+                "这种独特的外表是地精不寻常饮食的直接结果。在艾尔德拉齐崛起之前，地精通过将一种岩石砸成碎片并称之为\"砂砾\"来补充他们的正常饮食。艾尔德拉齐在赞迪卡的存在已经污染了这种岩石，所以地精开始改吃粉末状的海德龙石。食用这种注入魔法的石头使地精对艾尔德拉齐疯狂的精神辐射产生了抵抗力。作为额外的好处，它使他们的皮肤变得坚韧，保护他们免受恶劣天气和身体危险的侵害。"
+              ]
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/PSZ/Goblin.webp"
+          },
+          "title": "Zada, Hedron Grinder",
+          "credit": "Chris Rallis",
+          "width": 441,
+          "height": 401
+        },
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/PSZ/Goblin2.webp"
+          },
+          "title": "石板锤",
+          "credit": "Joeseph Meehan",
+          "width": 543,
+          "height": 325
+        }
+      ]
+    },
+    "age": {
+      "mature": 12,
+      "max": 50
+    },
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "otherSources": [
+      {
+        "source": "PSX",
+        "page": 16
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/goblin.mp3"
+    }
+  }
+]

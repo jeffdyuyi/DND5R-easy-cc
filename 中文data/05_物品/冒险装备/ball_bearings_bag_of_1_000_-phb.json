@@ -1,0 +1,27 @@
+[
+  {
+    "name": "滚珠(一袋1,000粒)",
+    "ENG_name": "Ball Bearings (bag of 1,000)",
+    "source": "PHB",
+    "page": 151,
+    "type": "G",
+    "rarity": "none",
+    "weight": 2,
+    "value": 100,
+    "packContents": [
+      {
+        "item": "滚珠|PHB",
+        "quantity": 1000
+      }
+    ],
+    "entries": [
+      "你可以用一个动作将这些小金属珠从袋子中洒出，并覆盖一片边长10尺的方形区域。穿过这片区域的生物必须进行一次{@dc 10}的敏捷豁免，豁免失败则摔至{@condition 倒地}。以半速穿过该区域的生物不需要进行该豁免。"
+    ],
+    "atomicPackContents": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "滚珠|XPHB"
+    ],
+    "srd": true
+  }
+]

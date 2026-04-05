@@ -1,0 +1,15 @@
+[
+  {
+    "ENG_name": "Blessing of Weapon Enhancement",
+    "name": "神兵祝福",
+    "source": "DMG",
+    "page": 228,
+    "reprintedAs": [
+      "神兵祝福|XDMG"
+    ],
+    "type": "Blessing",
+    "entries": [
+      "你所拥有的一把非魔法武器在你持用时变为一把+1武器。"
+    ]
+  }
+]

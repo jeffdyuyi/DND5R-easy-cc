@@ -1,0 +1,29 @@
+[
+  {
+    "ENG_name": "Guardian Poleaxe",
+    "name": "守护者长戟",
+    "source": "GrimHollowPG24",
+    "page": 128,
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 9,
+    "value": 75000,
+    "weaponCategory": "进阶",
+    "property": [
+      "Dam|GrimHollowPG24",
+      "Haft|GrimHollowPG24",
+      "H|XPHB",
+      "R|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "赛特|GrimHollowPG24"
+    ],
+    "dmg1": "1d10",
+    "dmgType": "S",
+    "weapon": true,
+    "customProperties": {
+      "Damage": "穿刺"
+    }
+  }
+]

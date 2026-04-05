@@ -1,0 +1,31 @@
+{
+    "ENG_name": "Dueling",
+    "name": "对决",
+    "source": "PHB",
+    "page": 72,
+    "srd": true,
+    "otherSources": [
+        {
+            "source": "PHB",
+            "page": 84
+        },
+        {
+            "source": "PHB",
+            "page": 91
+        }
+    ],
+    "reprintedAs": [
+        {
+            "uid": "对决|XPHB",
+            "tag": "feat"
+        }
+    ],
+    "featureType": [
+        "FS:F",
+        "FS:P",
+        "FS:R"
+    ],
+    "entries": [
+        "当你单手持用一把近战武器且另一只手没有持用武器时，你使用该武器进行的伤害掷骰获得 +2加值。"
+    ]
+}

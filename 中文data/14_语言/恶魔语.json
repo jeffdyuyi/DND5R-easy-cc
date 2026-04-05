@@ -1,0 +1,10 @@
+{
+  "ENG_name": "Demonic",
+  "name": "恶魔语",
+  "source": "PSI",
+  "page": 9,
+  "typicalSpeakers": [
+    "{@filter 恶魔|bestiary|source=|tag=恶魔}",
+    "{@filter 魔鬼|bestiary|source=|tag=魔鬼}"
+  ]
+}

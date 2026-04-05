@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Chi-Balancing Tea",
+    "name": "调气明心茶",
+    "source": "GriffonsSaddlebag2",
+    "page": 58,
+    "type": "P",
+    "tier": "次要",
+    "rarity": "rare",
+    "entries": [
+      "这种药水由杜尔海姆的武僧用其花园中独有的茶叶特制而成。此茶在其原装的瓷瓶中期间会魔法性地保持温暖。这种药水味道浓郁且有烟熏感，饮用后会留下一种如同暴风雨后空气般的酸涩余味。",
+      "当你饮用这种药水时，它会治愈任何影响你的短期疯狂，并且如果你处于{@condition 魅惑}或{@condition 恐慌}状态，它会立即终止你的这些状态。此外，如果你拥有2级或更高的武僧等级，你可以恢复{@dice 1d4 + 1}点已消耗的气点。"
+    ],
+    "lootTables": [
+      "魔法物品表C|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Chi-Balancing-Tea.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

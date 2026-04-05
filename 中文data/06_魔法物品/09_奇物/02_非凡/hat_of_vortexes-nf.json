@@ -1,0 +1,19 @@
+[
+  {
+    "ENG_name": "Hat of Vortexes",
+    "name": "漩涡之帽",
+    "source": "NF",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": 3,
+    "charges": 3,
+    "entries": [
+      "这顶帽子有3次充能，并在每天黎明恢复所有已消耗的充能。你可以执行一个{@action 魔法|XPHB}动作并消耗1次充能，同时手持帽子从中释放一个魔法涡旋。该涡旋填充一个以你为原点的10尺{@variantrule 立方 [效应区域]|XPHB|立方}区域，持续1小时。当涡旋存在时，其区域为{@variantrule 困难地形|XPHB}。",
+      "当你创建一个涡旋时，你决定它的视觉细节。例如，该涡旋可能是多彩的或闪闪发光的。"
+    ],
+    "valueReference": 400,
+    "type": "W"
+  }
+]

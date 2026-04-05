@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Painter's Sun Hat",
+    "name": "画家的太阳帽",
+    "source": "ObojimaTallGrass",
+    "page": 174,
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "这顶做工精良的帽子可以呈现任何形状、体型或形态，乍看之下似乎是寻常之物。然而，当以一个动作将帽子放置在地面并说出其命令语时，它便会开始悬浮至空中。悬浮的帽子随后会产生一个你熟悉的类人生物的幻觉，但幻觉会戴着这顶帽子。该形象无法移动且经不起物理检查。幻觉会持续存在，直到帽子被移离原位，或再次说出命令语使帽子悬浮回地面。一次DC 10智力（{@skill 调查}）检定可揭示该形象是幻觉。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/painters-sun-hat.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 4855,
+          "height": 4855
+        }
+      ]
+    }
+  }
+]

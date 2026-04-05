@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Polearm",
+    "name": "长柄武器",
+    "source": "GrimHollowPG24",
+    "page": 128,
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 12,
+    "value": 50000,
+    "weaponCategory": "进阶",
+    "property": [
+      "Haft|GrimHollowPG24",
+      "H|XPHB",
+      "R|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "赛特|GrimHollowPG24"
+    ],
+    "dmg1": "1d12",
+    "dmgType": "P",
+    "weapon": true
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "ENG_name": "Arcane Lock",
+    "name": "秘法锁",
+    "source": "XPHB",
+    "page": 242,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TDoN"
+    ],
+    "level": 2,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "施法会消耗价值25+GP的金粉",
+        "cost": 2500,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "permanent",
+        "ends": [
+          "解除"
+        ]
+      }
+    ],
+    "entries": [
+      "你触碰一个关着的门、窗、容器或出入口，并使目标在法术持续时间内被魔法上锁。秘法锁无法被任何非魔法方式解锁。在你施展法术时你可以选择允许一些其他生物，你和受你允许的生物能够无视秘法锁打开/关闭该物件。你还可以设置一条密语，在该物件5尺内念出密语时，秘法锁将被解锁（持续1分钟）。"
+    ],
+    "miscTags": [
+      "OBJ"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "防护系"
+  }
+]

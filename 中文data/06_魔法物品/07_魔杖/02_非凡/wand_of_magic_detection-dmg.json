@@ -1,0 +1,57 @@
+[
+  {
+    "ENG_name": "Wand of Magic Detection",
+    "name": "搜魔魔杖",
+    "source": "DMG",
+    "page": 211,
+    "srd": true,
+    "basicRules": true,
+    "referenceSources": [
+      "OoW",
+      "US",
+      "CoA",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "搜魔魔杖|XDMG"
+    ],
+    "type": "WD|DMG",
+    "tier": "次要",
+    "rarity": "uncommon",
+    "weight": 1,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "这把魔杖有3发充能。持握此魔杖期间，你可以用一个动作并消耗1发充能以从魔杖中施放{@spell 侦测魔法}法术。魔杖每天黎明时恢复{@dice 1d3}发已消耗的充能。"
+    ],
+    "optionalfeatures": [
+      "仿制魔法物品|TCE"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "侦测魔法"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表B"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Wand of Magic Detection.webp"
+          },
+          "width": 85,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

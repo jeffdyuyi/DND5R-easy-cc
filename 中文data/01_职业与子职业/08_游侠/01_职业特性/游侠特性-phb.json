@@ -1,0 +1,346 @@
+[
+    {
+        "ENG_name": "Favored Enemy",
+        "name": "宿敌",
+        "source": "PHB",
+        "page": 89,
+        "srd": true,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 1,
+        "entries": [
+            "第 1 级起，你针对一种特定类型敌人的研究令你有着充足教训用以追踪、狩猎乃至与之交流。",
+            "从下列种类中选择其一作为宿敌：{@filter 异怪|bestiary|type=aberration}、{@filter 野兽|bestiary|type=beast}、{@filter 天族|bestiary|type=celestial}、{@filter 构装|bestiary|type=construct}、{@filter 龙|bestiary|type=dragon}、{@filter 元素|bestiary|type=elemental}、{@filter 妖精|bestiary|type=fey}、{@filter 邪魔|bestiary|type=fiend}、{@filter 巨人|bestiary|type=giant}、{@filter 怪兽|bestiary|type=monstrosity}、{@filter 泥怪|bestiary|type=ooze}、{@filter 植物|bestiary|type=plant}、{@filter 亡灵|bestiary|type=undead}。或者作为另一种方案，你也可以选择两个{@filter 类人|bestiary|type=humanoid}种族作为宿敌。",
+            "追踪宿敌时，你的感知（{@skill 求生}）检定，以及回想关于宿敌信息时进行的智力检定具有优势。",
+            "获得该特性时，如果你选择的宿敌具有语言能力，则你还可以学会宿敌所知晓的一门语言。",
+            "第 6 和第 14 级时，你将分别获得一个额外的宿敌以及相关语言。"
+        ]
+    },
+    {
+        "ENG_name": "Natural Explorer",
+        "name": "自然探索者",
+        "source": "PHB",
+        "page": 89,
+        "srd": true,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 1,
+        "entries": [
+            "你对某种自然环境特别熟悉，并适应了在其中行走及生存。从下列类别中选择一种偏爱地形：极地、海岸、荒漠、丛林、草原、山地、沼泽或幽暗地域。当你进行与偏好地形相关的智力或感知检定时，如果你拥有该技能的熟练项，则在检定时加入双倍熟练加值。",
+            "当你在偏好地形上移动一小时或更长时间时，你获得以下增益：",
+            {
+                "type": "list",
+                "items": [
+                    "你的队伍旅行时不会因困难地形而变慢",
+                    "除非受魔法效应影响，否则你的队伍不会迷路",
+                    "旅行时，即使你进行另一项活动（如觅食、导航或追踪），仍能对危险保持警觉。",
+                    "独自旅行时，你能够保持隐匿状态以正常步调移动",
+                    "觅食时，你会发现两倍的食物。",
+                    "追踪其他生物时，你还能了解他们的确切数量、体型以及离开踪迹的时间。"
+                ]
+            },
+            "你在第 6 级和第 10 级时将分别获得一个额外的偏好地形。"
+        ]
+    },
+    {
+        "ENG_name": "Fighting Style",
+        "name": "战斗风格",
+        "source": "PHB",
+        "page": 89,
+        "srd": true,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 2,
+        "entries": [
+            "第 2 级起，你将精进于一种战斗风格，从下列选项中选择其一。另外，即使你有多次选择战斗风格的机会，也不能重复选择同一个战斗风格。",
+            {
+                "type": "options",
+                "count": 1,
+                "entries": [
+                    {
+                        "type": "refOptionalfeature",
+                        "optionalfeature": "箭术"
+                    },
+                    {
+                        "type": "refOptionalfeature",
+                        "optionalfeature": "防御"
+                    },
+                    {
+                        "type": "refOptionalfeature",
+                        "optionalfeature": "对决"
+                    },
+                    {
+                        "type": "refOptionalfeature",
+                        "optionalfeature": "双武器战斗"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "ENG_name": "Spellcasting",
+        "name": "施法",
+        "source": "PHB",
+        "page": 89,
+        "srd": true,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 2,
+        "entries": [
+            "第 2 级起，你学会运用自然世界的魔法本源进行施法。你的魔法来自你与自然的同调，因此感知是你施展游侠法术的关键属性。"
+        ]
+    },
+    {
+        "ENG_name": "Primeval Awareness",
+        "name": "原初意识",
+        "source": "PHB",
+        "page": 89,
+        "srd": true,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 3,
+        "entries": [
+            "第 3 级起，你可以消耗一枚游侠法术位，并用动作将你的意识集中在身处的区域，感测 1 英里内是否存在以下类型生物（在偏爱地形中时，扩展至 6 英里）：异怪、天界生物、龙、精类生物、邪魔、元素生物和不死生物。另外，该特性并不会知晓生物的位置或数量。"
+        ]
+    },
+    {
+        "ENG_name": "Ranger Archetype",
+        "name": "游侠范型",
+        "source": "PHB",
+        "page": 89,
+        "srd": true,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 3,
+        "entries": [
+            "第 3 级时，你选择学习一种特定的战斗范型。随后，你将在第 3、第 7、第 11、第 15 级时获得所选范型的相应特性。"
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "PHB",
+        "page": 89,
+        "srd": true,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 4,
+        "entries": [
+            "当你达到 4 级时，你可以选择一项属性值提升 2 点，或选择两项属性各提升 1 点。不过你不能通过此特性让属性超过 20。",
+            "如果你的 DM 允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+        ]
+    },
+    {
+        "ENG_name": "Extra Attack",
+        "name": "额外攻击",
+        "source": "PHB",
+        "page": 89,
+        "srd": true,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 5,
+        "entries": [
+            "第 5 级起，你在自己回合内执行{@action 攻击}动作时可以攻击两次而非一次。"
+        ]
+    },
+    {
+        "ENG_name": "Favored Enemy and Natural Explorer improvements",
+        "name": "增加宿敌及偏好环境",
+        "source": "PHB",
+        "page": 89,
+        "srd": true,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 6,
+        "entries": [
+            "第 6 级时，你获得一个额外的偏好地形和一个额外的宿敌以及相关语言。"
+        ]
+    },
+    {
+        "ENG_name": "Ranger Archetype feature",
+        "name": "范型特性",
+        "source": "PHB",
+        "page": 89,
+        "srd": true,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 7,
+        "entries": [
+            "第 7 级时，你获得所选范型的相应特性。"
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "PHB",
+        "page": 89,
+        "srd": true,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 8,
+        "entries": [
+            "当你达到第 8 级时，你可以选择一项属性值提升 2 点，或选择两项属性各提升 1 点。不过你不能通过该特性让属性超过 20。",
+            "如果你的 DM 允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+        ]
+    },
+    {
+        "ENG_name": "Land's Stride",
+        "name": "大地行者",
+        "source": "PHB",
+        "page": 89,
+        "srd": true,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 8,
+        "entries": [
+            "第 8 级起，你穿过非魔法的困难地形时不会消耗额外移动力。你穿过非魔法的植物时不会消耗额外移动力，且这类植物的荆棘、毛刺或类似的危害物也无法对你造成伤害。",
+            "另外，在抵抗魔法制造或控制的植物造成的移动障碍效应时，你进行豁免检定时具有优势。"
+        ]
+    },
+    {
+        "ENG_name": "Hide in Plain Sight",
+        "name": "遁术",
+        "source": "PHB",
+        "page": 89,
+        "srd": true,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 10,
+        "entries": [
+            "第 10 级起，你可以花 1 分钟来为自己制作伪装。伪装完成后，如果你留在原地不移动且不执行动作，则你的敏捷（{@skill 隐匿}）检定获得 +10 加值。"
+        ]
+    },
+    {
+        "ENG_name": "Natural Explorer improvement",
+        "name": "增加偏好环境",
+        "source": "PHB",
+        "page": 89,
+        "srd": true,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 10,
+        "entries": [
+            "你获得了一个额外的偏好地形。"
+        ]
+    },
+    {
+        "ENG_name": "Ranger Archetype feature",
+        "name": "范型特性",
+        "source": "PHB",
+        "page": 89,
+        "srd": true,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 11,
+        "entries": [
+            "第 11 级时，你获得所选范型的相应特性。"
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "PHB",
+        "page": 89,
+        "srd": true,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 12,
+        "entries": [
+            "当你达到第 12 级时，你可以选择一项属性值提升 2 点，或选择两项属性各提升 1 点。不过你不能通过该特性让属性超过 20。",
+            "如果你的 DM 允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+        ]
+    },
+    {
+        "ENG_name": "Favored Enemy improvement",
+        "name": "增加宿敌",
+        "source": "PHB",
+        "page": 89,
+        "srd": true,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 14,
+        "entries": [
+            "第 14 级时，你将获得一个额外的宿敌以及相关语言。"
+        ]
+    },
+    {
+        "ENG_name": "Vanish",
+        "name": "无踪步",
+        "source": "PHB",
+        "page": 89,
+        "srd": true,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 14,
+        "entries": [
+            "第 14 级起，你可以在自己回合以一个附赠动作的形式执行{@action 躲藏}动作。此时，你无法被非魔法手段追踪到，除非你主动留下踪迹。"
+        ]
+    },
+    {
+        "ENG_name": "Ranger Archetype feature",
+        "name": "范型特性",
+        "source": "PHB",
+        "page": 89,
+        "srd": true,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 15,
+        "entries": [
+            "第 15 级时，你获得所选范型的相应特性。"
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "PHB",
+        "page": 89,
+        "srd": true,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 16,
+        "entries": [
+            "当你达到 16 级时，你可以选择一项属性值提升 2 点，或选择两项属性各提升 1 点。不过你不能通过此特性让属性超过 20。",
+            "如果你的 DM 允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+        ]
+    },
+    {
+        "ENG_name": "Feral Senses",
+        "name": "野性感官",
+        "source": "PHB",
+        "page": 89,
+        "srd": true,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 18,
+        "entries": [
+            "第 18 级时，你获得超自然的感官以帮助你对抗看不到的生物。此后，你攻击一个看不到的生物时不会因此承受劣势。另外，你还能感测 30 尺内所有隐形敌人的位置。"
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "PHB",
+        "page": 89,
+        "srd": true,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 19,
+        "entries": [
+            "当你达到 19 级时，你可以选择一项属性值提升 2 点，或选择两项属性各提升 1 点。不过你不能通过此特性让属性超过 20。",
+            "如果你的 DM 允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+        ]
+    },
+    {
+        "ENG_name": "Foe Slayer",
+        "name": "屠灭众敌",
+        "source": "PHB",
+        "page": 89,
+        "srd": true,
+        "className": "游侠",
+        "classSource": "PHB",
+        "level": 20,
+        "entries": [
+            "第 20 级时，你成为了猎杀敌人的无双猎手。你在自己的每个回合内，都有一次机会将你的感知调整值加到你对宿敌进行的攻击检定或伤害掷骰上。"
+        ]
+    }
+]

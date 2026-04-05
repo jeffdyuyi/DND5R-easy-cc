@@ -1,0 +1,155 @@
+{
+  "ENG_name": "Path of the Spell Scorned",
+  "name": "蔑法道途",
+  "shortName": "蔑法",
+  "source": "CthulhuTorchlight",
+  "className": "野蛮人",
+  "classSource": "XPHB",
+  "page": 0,
+  "edition": "one",
+  "subclassFeatures": [
+    {
+      "ENG_name": "Path of the Spell Scorned",
+      "name": "蔑法道途",
+      "source": "CthulhuTorchlight",
+      "page": 0,
+      "className": "野蛮人",
+      "classSource": "XPHB",
+      "subclassShortName": "蔑法",
+      "subclassSource": "CthulhuTorchlight",
+      "level": 3,
+      "entries": [
+        {
+          "type": "inset",
+          "entries": [
+            {
+              "type": "quote",
+              "entries": [
+                "我的魔法？那就是对着东西的面刺一刀的魔法。以我的经验而言效果不错。"
+              ],
+              "from": "杀手奥格"
+            }
+          ]
+        },
+        "蔑法道途在其追随者的灵魂中唤醒了一丝反魔法之力。这些精英武者会增强他们对抗魔法效应的力量。他们有些是经过专门训练的保镖，负责保护奥术学院的精英魔法师们或宗教命令的高等祭司们。另一些则是恶魔追猎者，他们的抗性使其能够克服击倒较弱武者的污秽魔法。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "直觉断卜|野蛮人|XPHB|蔑法|CthulhuTorchlight|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "术法之锤|野蛮人|XPHB|蔑法|CthulhuTorchlight|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "法术护盾|野蛮人|XPHB|蔑法|CthulhuTorchlight|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Instinctual Divination",
+      "name": "直觉断卜",
+      "source": "CthulhuTorchlight",
+      "page": 0,
+      "className": "野蛮人",
+      "classSource": "XPHB",
+      "subclassShortName": "蔑法",
+      "subclassSource": "CthulhuTorchlight",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你对这个世界的超然层面有着直觉性的感知。当你执行{@action 研究|XPHB}动作进行智力（{@skill 奥秘|XPHB}）或智力（{@skill 宗教|XPHB}）检定时，你可以改为进行感知（{@skill 求生|XPHB}）检定。"
+      ]
+    },
+    {
+      "ENG_name": "Spell Hammer",
+      "name": "术法之锤",
+      "source": "CthulhuTorchlight",
+      "page": 0,
+      "className": "野蛮人",
+      "classSource": "XPHB",
+      "subclassShortName": "蔑法",
+      "subclassSource": "CthulhuTorchlight",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你将武器收起，释放出噼啪作响的能量，这股能量对来自其他世界、使用魔法或具有巨大毁灭力的生物尤其有效。你的狂暴激活期间一回合一次，你能对你以基于力量的攻击命中的目标造成两倍你的狂暴伤害加值。若目标具有传奇动作、能够施展法术或是被召唤的生物，你可以改为造成三倍狂暴伤害加值。"
+      ]
+    },
+    {
+      "ENG_name": "Spell Shield",
+      "name": "法术护盾",
+      "source": "CthulhuTorchlight",
+      "page": 0,
+      "className": "野蛮人",
+      "classSource": "XPHB",
+      "subclassShortName": "蔑法",
+      "subclassSource": "CthulhuTorchlight",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你的身周将形成能够消耗法术的虚无空间。你的狂暴激活期间，你将源自你的30尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内散发出消耗法术的灵光。你和你身处灵光内的盟友对抗法术的豁免获得等于你狂暴伤害的加值。"
+      ]
+    },
+    {
+      "ENG_name": "Sunder the Weave",
+      "name": "撕裂织网",
+      "source": "CthulhuTorchlight",
+      "page": 0,
+      "className": "野蛮人",
+      "classSource": "XPHB",
+      "subclassShortName": "蔑法",
+      "subclassSource": "CthulhuTorchlight",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "你始终准备着{@spell 法术反制|XPHB}法术。通过此特性，你可以在狂暴激活期间无需法术位且无需法术成分地施放该法术，且你此法术的施法属性为力量。作为你施展此法术的{@variantrule 反应|XPHB}的一部分，你能够移动至多等于你{@variantrule 速度|XPHB}的距离并以武器对法术目标发动一次攻击。",
+        "一旦你通过此特性施放该法术，在完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}前无法再次以此方式施放。"
+      ]
+    },
+    {
+      "ENG_name": "Bolstering Howl",
+      "name": "鼓舞嚎叫",
+      "source": "CthulhuTorchlight",
+      "page": 0,
+      "className": "野蛮人",
+      "classSource": "XPHB",
+      "subclassShortName": "蔑法",
+      "subclassSource": "CthulhuTorchlight",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "当你或另一名可以听见你的生物受到伤害时，你能够以{@variantrule 反应|XPHB}赋予其对该伤害的{@variantrule 抗性|XPHB}。此外目标获得对那个伤害类型的{@variantrule 抗性|XPHB}，直至当前回合结束。"
+      ]
+    },
+    {
+      "ENG_name": "Dimensional Duel",
+      "name": "异次元决斗",
+      "source": "CthulhuTorchlight",
+      "page": 0,
+      "className": "野蛮人",
+      "classSource": "XPHB",
+      "subclassShortName": "蔑法",
+      "subclassSource": "CthulhuTorchlight",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "你始终准备着法术{@spell 放逐术|XPHB}。当你激活你的狂暴时或在你狂暴激活期间以一个{@variantrule 附赠动作|XPHB}，你能够无需法术位或法术成分地施展{@spell 放逐术|XPHB}且在你狂暴激活期间，你此法术的施法属性为力量。你能够在你的狂暴激活期间维持{@status 专注|XPHB}。你以此法施展{@spell 放逐术|XPHB}时，能够指定至多三名生物为目标。此外，你能选择追踪被你放逐的生物。若你如此做，被你放逐的目标不会在法术持续时间内拥有{@condition 失能|XPHB}状态，且你与其旅行至一个半位面。该半位面是一个各个维度的长度在30到200尺（在你施展法术时选择）的空旷房间，由木头或石头（由你选择）制成。你必须为你和目标创造足够的空间，否则法术结束。房间被{@variantrule 明亮光照|XPHB}充满。当法术结束时，若你与任意目标一同旅行，你与任意掉落的物件一同在你离开的空间出现，若空间已被占据则出现在最近的未占据空间。",
+        "你可以使用此特性的次数等于你的力量调整值（至少一次），当你完成{@variantrule 长休|XPHB}时你重获所有已消耗的使用次数。"
+      ]
+    }
+  ],
+  "fluff": {
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CthulhuTorchlight/Subclasses/00-004.barbarian.webp"
+        },
+        "width": 1700,
+        "height": 2063
+      }
+    ]
+  }
+}

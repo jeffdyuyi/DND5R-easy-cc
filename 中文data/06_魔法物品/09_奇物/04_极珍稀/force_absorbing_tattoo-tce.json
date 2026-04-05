@@ -1,0 +1,22 @@
+[
+  {
+    "ENG_name": "Force Absorbing Tattoo",
+    "name": "力场吸收刺青",
+    "source": "TCE",
+    "page": 119,
+    "resist": [
+      "力场"
+    ],
+    "detail1": "白",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "tattoo": true,
+    "hasRefs": true,
+    "entries": [
+      "{#itemEntry 吸收刺青|TCE}"
+    ],
+    "valueReference": 40000,
+    "type": "W"
+  }
+]

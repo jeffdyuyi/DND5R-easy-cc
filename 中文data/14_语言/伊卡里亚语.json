@@ -1,0 +1,10 @@
+{
+  "ENG_name": "Yikaria",
+  "name": "伊卡里亚语",
+  "source": "SKT",
+  "page": 244,
+  "typicalSpeakers": [
+    "{@creature 牦牛人祭司|SKT|牦牛人祭司}",
+    "{@creature 牦牛人武者|SKT|牦牛人武者}"
+  ]
+}

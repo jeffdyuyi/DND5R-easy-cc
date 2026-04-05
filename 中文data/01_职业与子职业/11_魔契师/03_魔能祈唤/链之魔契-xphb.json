@@ -1,0 +1,28 @@
+{
+  "ENG_name": "Pact of the Chain",
+  "name": "链之魔契",
+  "source": "XPHB",
+  "page": 157,
+  "srd52": true,
+  "featureType": [
+    "EI"
+  ],
+  "additionalSpells": [
+    {
+      "ability": "cha",
+      "innate": {
+        "_": {
+          "ritual": [
+            "寻获魔宠|xphb"
+          ]
+        }
+      }
+    }
+  ],
+  "entries": [
+    "你习得法术{@spell 寻获魔宠|XPHB}且能以一个{@action 魔法|XPHB}动作施展它，且无需消耗法术位。",
+    "每当你施展该法术，并为你的魔宠选择形态时，除了通常的形态选项，你还可以改为选择下列特殊形态之一：{@creature 小魔鬼|XMM}、{@creature 伪龙|XMM}、{@creature 小恶魔|XMM}、{@creature 骷髅|XMM}、{@creature 史拉蟾蝌蚪|XMM}、{@creature 求索斯芬克斯|XMM}、{@creature 小仙灵|XMM}，或{@creature 毒蛇|XMM}（魔宠的数据见附录B）。",
+    "此外，当你执行{@action 攻击|XPHB}动作时可以放弃自己动作攻击中的一次攻击，转而让你的魔宠使用其{@variantrule 反应|XPHB}发动一次攻击。"
+  ],
+  "translator": "不全书"
+}

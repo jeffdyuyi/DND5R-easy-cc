@@ -1,0 +1,36 @@
+[
+  {
+    "ENG_name": "+2 Yklwa",
+    "name": "+2 伊库瓦短矛",
+    "source": "DMG",
+    "page": 213,
+    "type": "M",
+    "rarity": "rare",
+    "weight": 3,
+    "value": 100,
+    "weaponCategory": "simple",
+    "property": [
+      "T"
+    ],
+    "range": "10/30",
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "weapon": true,
+    "entries": [
+      "使用这把魔法武器进行攻击和伤害判定时，你会获得{=bonusWeapon}的额外加成。"
+    ],
+    "namePrefix": "+2 ",
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "+2 武器|XDMG"
+    ],
+    "tier": "主要",
+    "bonusWeapon": "+2",
+    "lootTables": [
+      "魔法物品表G"
+    ],
+    "_isVariant": true,
+    "valueReference": 4000
+  }
+]

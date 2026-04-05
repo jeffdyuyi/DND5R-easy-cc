@@ -1,0 +1,101 @@
+[
+  {
+    "name": "人类 (卡拉德许)",
+    "ENG_name": "Human (Kaladesh)",
+    "source": "PSK",
+    "page": 22,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "str": 1,
+        "dex": 1,
+        "con": 1,
+        "int": 1,
+        "wis": 1,
+        "cha": 1
+      }
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "anyStandard": 1
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Age",
+        "name": "年龄",
+        "type": "entries",
+        "entries": [
+          "人类不到20岁成年，而很少活过100 岁。"
+        ]
+      },
+      {
+        "ENG_name": "Size",
+        "name": "体型",
+        "type": "entries",
+        "entries": [
+          "人类身高差距很大，有的刚好5尺高，而有的甚至高过6尺。不论你有多高，你的体型皆为中型。"
+        ]
+      },
+      {
+        "ENG_name": "Languages",
+        "name": "语言",
+        "entries": [
+          "你能够说、读、写通用语和一门额外的自选语言。在与他人交流时，人类通常会主动去学习对方的语言，其中也包括了一些晦涩的方言。他们还喜欢在说话时夹杂其他语言的腔调，如兽人粗口，精灵乐调，矮人军号，等等。"
+        ],
+        "type": "entries"
+      }
+    ],
+    "fluff": {
+      "entries": [
+        {
+          "type": "quote",
+          "entries": [
+            "好奇心是一种必须被满足的渴望。"
+          ]
+        },
+        "卡达斯的人类是一个充满激情抱负的种族。在最好的情况下，人类尝试宏伟而广阔的事业，被驱使去追求最高尚和最不可能的目标。在最坏的情况下，人类是肤浅的、不切实际的梦想家，对他们错误行为的后果视而不见。然而，不可否认的是，人类最好和最坏的一面——以及介于两者之间的广阔人类——在塑造卡达斯的历史中发挥了重要作用，并继续塑造这个平面的命运。他们的好奇心、他们的雄心壮志、他们看似无穷的活力以及他们视野的范围是推动发明前进的强大力量。",
+        "人类角色渴望多样性和新体验。人类在其一生中探索几个不同的领域和学科并不罕见，有时为了追求新鲜和刺激的事物，他们会放弃多年的成就。这种倾向往往产生这样的角色：他们对许多不同领域都有足够多的知识，以至于在所有领域都可能变得危险。但同时，许多人类擅长创造综合和在表面上看似不相关的学科之间找到联系，为发明过程带来交叉授粉，推动每个领域的创新。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/PSK/Human.webp"
+          },
+          "title": "奇械师的顿悟",
+          "credit": "Kieran Yanner",
+          "width": 1276,
+          "height": 836
+        }
+      ]
+    },
+    "age": {
+      "mature": 20,
+      "max": 100
+    },
+    "basicRules": true,
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "heightAndWeight": {
+      "baseHeight": 56,
+      "heightMod": "2d10",
+      "baseWeight": 110,
+      "weightMod": "2d4"
+    },
+    "reprintedAs": [
+      "人类|XPHB"
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/human.mp3"
+    },
+    "srd": true,
+    "translator": "不全书"
+  }
+]

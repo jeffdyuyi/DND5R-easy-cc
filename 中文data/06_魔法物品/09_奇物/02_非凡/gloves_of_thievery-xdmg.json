@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "Gloves of Thievery",
+    "name": "窃贼手套",
+    "source": "XDMG",
+    "page": 265,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这双手套穿戴在手上时看起来毫不起眼。穿戴该手套期间，你进行的敏捷（{@skill 巧手|XPHB}）检定获得+5的加值。"
+    ],
+    "classFeatures": [
+      "仿制魔法物品|奇械师|efa|2|efa"
+    ],
+    "optionalfeatures": [
+      "仿制魔法物品|TCE"
+    ],
+    "lootTables": [
+      "器具 - 非普通|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Gloves of Thievery.webp"
+          },
+          "width": 744,
+          "height": 918
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

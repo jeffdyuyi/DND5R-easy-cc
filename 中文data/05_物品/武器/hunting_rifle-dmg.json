@@ -1,0 +1,29 @@
+[
+  {
+    "name": "狩猎步枪",
+    "ENG_name": "Hunting Rifle",
+    "source": "DMG",
+    "page": 268,
+    "edition": "classic",
+    "type": "R",
+    "rarity": "none",
+    "weight": 8,
+    "weaponCategory": "martial",
+    "property": [
+      "AF|DMG",
+      "RLD",
+      "2H"
+    ],
+    "dmg1": "2d10",
+    "dmgType": "P",
+    "range": "80/240",
+    "ammoType": "现代子弹",
+    "age": "现代",
+    "firearm": true,
+    "reload": 5,
+    "reprintedAs": [
+      "狩猎步枪|XDMG"
+    ],
+    "weapon": true
+  }
+]

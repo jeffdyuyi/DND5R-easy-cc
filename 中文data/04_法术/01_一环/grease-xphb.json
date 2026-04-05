@@ -1,0 +1,68 @@
+[
+  {
+    "ENG_name": "Grease",
+    "name": "油腻术",
+    "source": "XPHB",
+    "page": 280,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "UtHftLH"
+    ],
+    "level": 1,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一块猪皮或黄油"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "光滑的不可燃油脂以该点为中心覆盖一处 10 尺的方状区域。在法术持续时间内。该区域变为{@variantrule 困难地形|XPHB}。",
+      "油脂出现时，站在其范围内的每个生物必须成功通过一次敏捷豁免，否则陷入{@condition 倒地|XPHB}状态。进入该区域或在区域内结束其回合的生物也必须进行该敏捷豁免，豁免失败则陷入{@condition 倒地|XPHB}。"
+    ],
+    "conditionInflict": [
+      "倒地"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "miscTags": [
+      "DFT"
+    ],
+    "areaTags": [
+      "Q"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "咒法系",
+    "display_savingThrow": [
+      "敏捷"
+    ]
+  }
+]

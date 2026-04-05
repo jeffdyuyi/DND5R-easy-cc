@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Charm of Lightning Bolt",
+    "name": "闪电束护咒",
+    "source": "IDRotF",
+    "page": 228,
+    "type": "Charm",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "limited": {
+              "1": [
+                "闪电束"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "entries": [
+      "这个护咒允许你以一个动作施放{@spell 闪电束}法术（豁免{@dc 15}），且无需任何法术成分。一旦使用，这个护咒就会消失。"
+    ]
+  }
+]

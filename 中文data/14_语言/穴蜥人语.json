@@ -1,0 +1,9 @@
+{
+  "ENG_name": "Troglodyte",
+  "name": "穴蜥人语",
+  "source": "MM",
+  "page": 290,
+  "typicalSpeakers": [
+    "{@creature 穴蜥人||穴蜥人}"
+  ]
+}

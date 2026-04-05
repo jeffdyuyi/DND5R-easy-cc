@@ -1,0 +1,72 @@
+[
+  {
+    "ENG_name": "Ruin's Wake (Dormant)",
+    "name": "毁灭残迹（休眠）",
+    "source": "EGW",
+    "page": 277,
+    "baseItem": "矛|PHB",
+    "type": "M",
+    "rarity": "artifact",
+    "reqAttune": true,
+    "sentient": true,
+    "weight": 3,
+    "weaponCategory": "simple",
+    "property": [
+      "T",
+      "V",
+      "Vst|EGW"
+    ],
+    "range": "20/60",
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "dmg2": "1d8",
+    "grantsLanguage": true,
+    "bonusWeapon": "+1",
+    "entries": [
+      "这把矛以一头远古金龙的白骨制成，雕刻着兽人对格乌什的赞美诗。",
+      {
+        "ENG_name": "Sentience",
+        "name": "智能",
+        "type": "entries",
+        "entries": [
+          "毁灭残迹是一把混乱邪恶的智能魔法武器，它的智力为20，感知为16，魅力为22。它的听觉和{@sense 黑暗视觉}的感官范围为120尺。",
+          "这把武器能够与持有者通过心灵感应进行交流，能够说、读和理解深渊语、通用语和兽人语。"
+        ]
+      },
+      {
+        "ENG_name": "Personality",
+        "name": "个性",
+        "type": "entries",
+        "entries": [
+          "一个名叫雅罗维许的嗜杀{@creature 巴洛炎魔}寄宿于毁灭残迹内。这把武器只渴望饮血，并推动其拥有者以暴力解决问题。"
+        ]
+      },
+      {
+        "ENG_name": "Dormant",
+        "name": "休眠",
+        "type": "entries",
+        "entries": [
+          "该矛在其休眠状态下将获得如下增益：",
+          {
+            "type": "list",
+            "items": [
+              "·你能说，读，写深渊语和兽人语。",
+              "你在使用该魔法武器发动攻击检定与伤害掷骰时获得+1加值，并且对任何它命中的目标造成额外的{@damage 1d8}穿刺伤害。在你使用该武器发动远程攻击后，它会立即飞回你的手中。",
+              "当你被一次近战攻击命中时，你可以用一个反应，用毁灭残迹对攻击者发动一次带有优势的近战攻击。你不能再使用这个能力，直到你完成一次短休或长休。"
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Betrayer Artifact Properties",
+        "name": "背叛神器词条",
+        "type": "inset",
+        "entries": [
+          "叛神武具如同分裂遗物一样获得进阶。在休眠状态下，每件这些神器拥有一项{@table 神器词条; 次要增益词条|DMG|次要增益}属性和一项{@table 神器词条; 次要减益词条|DMG|次要减益}属性。当神器进入激活状态，它获得一项额外的{@table 神器词条; 次要增益词条|DMG|次要增益}属性和一项额外的{@table 神器词条; 次要减益词条|DMG|次要减益}属性。当物品到达超频状态时，它获得一项{@table 神器词条; 主要增益词条|DMG|主要增益}属性。见《城主指南》第7章的\"神器属性\"获得更多信息。"
+        ]
+      }
+    ],
+    "hasFluffImages": true,
+    "fluff": {}
+  }
+]

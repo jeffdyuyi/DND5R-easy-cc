@@ -1,0 +1,31 @@
+{
+  "raceFluff": [
+    {
+      "ENG_name": "Ratatosk (Tradvakt; Tree Protector)",
+      "name": "树鼠族 (特拉德瓦克特; 树之守护者)",
+      "source": "BookOfEbonTides",
+      "_copy": {
+        "ENG_name": "Ratatosk",
+        "name": "树鼠族",
+        "source": "BookOfEbonTides",
+        "_mod": {
+          "entries": {
+            "mode": "prependArr",
+            "items": {
+              "type": "section",
+              "entries": [
+                {
+                  "type": "entries",
+                  "entries": [
+                    "特拉德瓦克特，也被称为树鼠族督军，认为自己是世界树及其分支的护卫和守护者。比他们的埃科尔表亲更大，特拉德瓦克特从青年时期就开始训练以精通武器和战术策略。他们行动以维护其社区的秩序，并消除威胁那些聚居地的危险。",
+                    "特拉德瓦克特成为冒险者的原因多种多样。有些人寻求一种更积极的方式来对抗邪恶，以免其威胁世界树。其他人则只是想证明他们的军用技能。无论原因如何，特拉德瓦克特都会迎接任何挑战并取得胜利。"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

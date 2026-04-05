@@ -1,0 +1,43 @@
+{
+  "ENG_name": "Draconic Sorcery",
+  "name": "龙族术法",
+  "shortName": "龙族血脉",
+  "source": "XPHB",
+  "className": "术士",
+  "classSource": "XPHB",
+  "page": 148,
+  "srd52": true,
+  "basicRules2024": true,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "3": [
+          "变身术|XPHB",
+          "繁彩球|XPHB",
+          "命令术|XPHB",
+          "龙息术|XPHB"
+        ],
+        "5": [
+          "恐惧术|XPHB",
+          "飞行术|XPHB"
+        ],
+        "7": [
+          "秘法眼|XPHB",
+          "魅惑怪物|XPHB"
+        ],
+        "9": [
+          "通晓传奇|XPHB",
+          "龙类召唤术|XPHB"
+        ]
+      }
+    }
+  ],
+  "subclassFeatures": [
+    "龙族术法|术士|XPHB|龙族血脉|XPHB|3",
+    "元素亲和|术士|XPHB|龙族血脉|XPHB|6",
+    "龙翼|术士|XPHB|龙族血脉|XPHB|14",
+    "龙伴|术士|XPHB|龙族血脉|XPHB|18"
+  ],
+  "hasFluffImages": true
+}

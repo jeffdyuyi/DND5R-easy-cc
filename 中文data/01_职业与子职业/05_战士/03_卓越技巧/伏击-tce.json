@@ -1,0 +1,21 @@
+{
+  "ENG_name": "Ambush",
+  "name": "伏击",
+  "source": "TCE",
+  "page": 42,
+  "reprintedAs": [
+    "伏击|XPHB"
+  ],
+  "isClassFeatureVariant": true,
+  "featureType": [
+    "MV:B"
+  ],
+  "consumes": {
+    "ENG_name": "Superiority Die",
+    "name": "卓越骰"
+  },
+  "entries": [
+    "当你进行一次敏捷（{@skill 隐匿}）检定或先攻检定时，你可以消耗一枚卓越骰，并将消耗的卓越骰加入本次检定中，前提是你并未{@condition 失能}。"
+  ],
+  "translator": "不全书"
+}

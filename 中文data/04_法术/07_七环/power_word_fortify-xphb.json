@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Power Word Fortify",
+    "name": "律令巩固",
+    "source": "XPHB",
+    "page": 306,
+    "level": 7,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你增强施法距离内你可见的至多六名生物的防御。此法术赋予受术者共计 120 点{@variantrule 临时生命值|XPHB} ，由你在受术者中任意分配。"
+    ],
+    "miscTags": [
+      "SGT",
+      "THP"
+    ],
+    "areaTags": [
+      "MT"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "牧师"
+    ],
+    "display_school": "惑控系"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "ENG_name": "Loxodon",
+  "name": "象族语",
+  "source": "GGR",
+  "page": 9,
+  "type": "standard",
+  "typicalSpeakers": [
+    "{@filter 象族人|bestiary|tag=任意种族|source=GGR}"
+  ],
+  "script": "精灵语"
+}

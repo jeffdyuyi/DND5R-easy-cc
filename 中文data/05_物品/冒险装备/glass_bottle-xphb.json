@@ -1,0 +1,26 @@
+[
+  {
+    "name": "玻璃瓶",
+    "ENG_name": "Glass Bottle",
+    "source": "XPHB",
+    "page": 224,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 200,
+    "entries": [
+      "一个玻璃瓶至多能装入 1.5 品脱的东西。"
+    ],
+    "basicRules2024": true,
+    "containerCapacity": {
+      "volume": [
+        0.03
+      ]
+    },
+    "referenceSources": [
+      "DrDe-TDoN"
+    ],
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

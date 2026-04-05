@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Stalagmight Geode",
+    "name": "晶簇巨棒",
+    "source": "GriffonsSaddlebag2",
+    "page": 170,
+    "baseItem": "巨棒|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "rare",
+    "weight": 10,
+    "weaponCategory": "简易",
+    "property": [
+      "2H"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "B",
+    "bonusWeapon": "+1",
+    "entries": [
+      "这段断裂的岩层内部蕴藏着不断生长的魔法水晶。你使用这把魔化武器进行攻击和伤害掷骰时获得+1加值。当你用此武器命中一个生物并在武器伤害骰上掷出最大值时，水晶会迅速生长并将武器的伤害骰提升一个体型（最高至{@damage d12}）。例如，当你在武器正常的{@damage d8}伤害骰上掷出8时，攻击后其伤害骰会魔法般地变为{@damage d10}。若你以这种方式在d12伤害骰上掷出12后，巨棒周围5尺内的每个生物（除你之外）必须进行一次DC 15的敏捷豁免检定。豁免失败时，生物受到{@damage 1d12}穿刺伤害，豁免成功则伤害减半，因为武器的水晶会爆炸成碎片。水晶爆炸后，武器的伤害骰会恢复为{@damage d8}。"
+    ],
+    "lootTables": [
+      "魔法物品表 G2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Stalagmight-Geode.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

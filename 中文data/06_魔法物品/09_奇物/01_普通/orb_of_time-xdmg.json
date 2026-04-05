@@ -1,0 +1,23 @@
+[
+  {
+    "ENG_name": "Orb of Time",
+    "name": "时间法球",
+    "source": "XDMG",
+    "page": 284,
+    "scfType": "arcane",
+    "rarity": "common",
+    "wondrous": true,
+    "weight": 3,
+    "entries": [
+      "这颗法球可用作一个奥术法器。",
+      "持握这颗法球期间，你可以使用一个{@action 魔法|XPHB}动作来确认现在是上午、下午、傍晚还是夜晚。这项属性仅在物质位面中有效。"
+    ],
+    "lootTables": [
+      "奥秘 - 普通|XDMG",
+      "器具 - 普通|XDMG"
+    ],
+    "translator": "不全书",
+    "valueReference": 100,
+    "type": "W"
+  }
+]

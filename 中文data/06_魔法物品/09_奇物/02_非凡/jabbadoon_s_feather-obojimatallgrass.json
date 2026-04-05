@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Jabbadoon's Feather",
+    "name": "贾巴顿的羽毛",
+    "source": "ObojimaTallGrass",
+    "page": 172,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "当持有这个附魔物件时，一个生物会变得像一根羽毛般轻盈。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/jabbadoons-feather.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 2849,
+          "height": 2849
+        }
+      ]
+    }
+  }
+]

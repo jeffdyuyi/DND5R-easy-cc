@@ -1,0 +1,23 @@
+[
+  {
+    "ENG_name": "Pathfinder's Greataxe",
+    "name": "探险家巨斧",
+    "source": "PotA",
+    "page": 175,
+    "baseItem": "巨斧|PHB",
+    "type": "M",
+    "rarity": "unknown (magic)",
+    "weight": 7,
+    "weaponCategory": "martial",
+    "property": [
+      "H",
+      "2H"
+    ],
+    "dmg1": "1d12",
+    "dmgType": "S",
+    "bonusWeapon": "+1",
+    "entries": [
+      "当你持有这把+1巨斧时，你总是知道从地下通往地面最近的通道，以及斧头所处的大致深度。"
+    ]
+  }
+]

@@ -1,0 +1,87 @@
+[
+  {
+    "ENG_name": "Bones of the Earth",
+    "name": "地之骨",
+    "source": "XGE",
+    "page": 150,
+    "otherSources": [
+      {
+        "source": "EEPC",
+        "page": 15
+      }
+    ],
+    "referenceSources": [
+      "PotA"
+    ],
+    "level": 6,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你令距离内你能看见的地面处升起六根石柱。每根石柱为直径 5 尺，高度至多 30 尺的圆柱。升起石柱的地表必须具有足以容纳其直径的空间，你可以以一个体型不超过中型的生物的脚下作为目标。每根石柱的 AC 为 5，具有 30 HP。当其 HP 被降为 0 时，石柱将变为碎石，在 10 尺半径的区域内形成一片{@quickref 困难地形||3}的区域。每块 5 尺直径的碎石区域都需要至少 1 分钟来手动清理。",
+      "若一根石柱在一个生物的脚下升起，该生物必须进行一次敏捷豁免检定，否则会被石柱顶起。生物可以选择在此豁免中失败。",
+      "若一根石柱因天花板或其他障碍而未能达到其最大高度，在石柱上的生物受到{@damage 6d6}钝击伤害，并被{@condition 束缚}，在石柱与障碍物间动弹不得。被{@condition 束缚}的生物可以以一个动作来进行一次力量或敏捷检定（由该生物选择），对抗此法术的豁免检定 DC。若成功，该生物不再被{@condition 束缚}，必须选择从石柱上移动下来或摔落下来。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用七环或更高的法术位施放该法术时，使用的法术位每高一环，你便能额外升起两根石柱。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "bludgeoning"
+    ],
+    "conditionInflict": [
+      "束缚"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "abilityCheck": [
+      "力量",
+      "敏捷"
+    ],
+    "miscTags": [
+      "DFT",
+      "SGT"
+    ],
+    "areaTags": [
+      "MT"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊"
+    ],
+    "display_school": "变化系",
+    "display_savingThrow": [
+      "敏捷"
+    ],
+    "display_damageInflict": [
+      "钝击"
+    ]
+  }
+]

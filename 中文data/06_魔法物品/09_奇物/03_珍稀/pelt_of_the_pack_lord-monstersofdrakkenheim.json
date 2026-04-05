@@ -1,0 +1,74 @@
+[
+  {
+    "ENG_name": "Pelt of the Pack Lord",
+    "name": "族群首领披肩",
+    "source": "MonstersOfDrakkenheim",
+    "page": 391,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这件披肩斗篷由加米尔犬怪的毛皮精心缝制在鼠怪的皮革上，装饰着鸟妖的禽爪，并用受污染的妄质汁抛光至闪亮。",
+      "当你与这件披肩同调且在5尺内有一个敌对生物时，你的盟友对该生物的攻击检定具有{@variantrule 优势|XPHB}。",
+      {
+        "ENG_name": "Crafting",
+        "name": "手作",
+        "type": "entries",
+        "entries": [
+          "制作族群首领披肩需要一个珍稀工坊和以下珍稀成分：",
+          {
+            "type": "list",
+            "items": [
+              {
+                "ENG_name": "[Animus]",
+                "name": "[精魄]",
+                "type": "item",
+                "entries": [
+                  "怪兽精魄"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Fluid]",
+                "name": "[流体]",
+                "type": "item",
+                "entries": [
+                  "受污染的妄质汁"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Hair]",
+                "name": "[毛发]",
+                "type": "item",
+                "entries": [
+                  "加米尔犬怪的毛皮"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Hide]",
+                "name": "[表皮]",
+                "type": "item",
+                "entries": [
+                  "鼠怪皮肤"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Natural Weapon]",
+                "name": "[天生武器]",
+                "type": "item",
+                "entries": [
+                  "鸟妖的爪击"
+                ],
+                "nameDot": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluffImages": true
+  }
+]

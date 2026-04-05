@@ -1,0 +1,69 @@
+[
+  {
+    "ENG_name": "Flamefriend Lantern",
+    "name": "火焰之友提灯",
+    "source": "TalDoreiCampaignSettingReborn",
+    "page": 198,
+    "resist": [
+      "火焰"
+    ],
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "拂晓",
+    "entries": [
+      "这个铁制灯笼内含有一个小型火元素精灵。要与此物品共鸣，你必须成功通过一个{@dc 10}魅力检定，以与灯笼内的精灵建立联系。",
+      {
+        "ENG_name": "Light and Flame",
+        "name": "光与火焰",
+        "type": "entries",
+        "entries": [
+          "当与灯笼共鸣时，你可以口头请求元素精灵发光（无需动作），这将使灯笼在你选择的半径内投射出明亮的光芒，最远可达60尺，并在该距离之外投射出微光。你还可以随意从灯笼中施放{@spell 燃火术}法术。感知是你的施法能力值，用于这个法术。"
+        ]
+      },
+      {
+        "ENG_name": "Elemental Essence",
+        "name": "元素精华",
+        "type": "entries",
+        "entries": [
+          "灯笼中的火元素精灵可以赋予你一小部分它的力量。作为一个动作，你可以选择以下任一好处，持续1小时：",
+          {
+            "type": "list",
+            "items": [
+              "你对火焰伤害具有抗性。",
+              "每当一个生物用近战攻击击中你时，那个生物会受到等同于你的熟练加值的火焰伤害。",
+              "你可以从灯笼中施放{@spell 燃烧之手}法术（法术豁免{@dc 15}），等级为3级。一旦你施放了这个法术，直到下一次使用灯笼的这个属性之前，你不能再施放它。"
+            ]
+          },
+          "一旦元素精灵以这种方式与你分享了它的力量，直到下一个黎明之前它不能再这样做。"
+        ]
+      },
+      {
+        "ENG_name": "Willful Attunement",
+        "name": "任性调谐",
+        "type": "entries",
+        "entries": [
+          "你对灯笼的{@quickref 同调|DMG|1|0}持续到你选择结束它，或者直到你激怒了元素精灵（比如用水浇灭灯笼，攻击另一个非敌对的元素生物等）。你可以在{@quickref 休息|PHB|2|0|短休或长休}期间尝试重新与灯笼共鸣，并重复进行与元素精灵建立联系的检定，但在你根据DM确定向精灵道歉之前，你进行这个检定时会有{@quickref 优势与劣势|PHB|2|0|劣势}。"
+        ]
+      }
+    ],
+    "light": [
+      {
+        "bright": 60,
+        "dim": 120
+      }
+    ],
+    "attachedSpells": {
+      "will": [
+        "燃火术"
+      ],
+      "daily": {
+        "1": [
+          "燃烧之手#3"
+        ]
+      },
+      "ability": "wis"
+    },
+    "hasFluff": true
+  }
+]

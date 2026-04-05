@@ -1,0 +1,26 @@
+{
+  "ENG_name": "Dwarvish",
+  "name": "矮人语",
+  "source": "PHB",
+  "page": 123,
+  "srd": true,
+  "basicRules": true,
+  "additionalSources": [
+    {
+      "source": "PHB",
+      "page": 18
+    }
+  ],
+  "reprintedAs": [
+    "矮人语|XPHB"
+  ],
+  "type": "standard",
+  "typicalSpeakers": [
+    "{@filter 矮人|bestiary|type=humanoid|tag=任意种族;矮人}"
+  ],
+  "script": "矮人语",
+  "entries": [
+    "矮人语充满了硬辅音和喉音，这些特点也渗透到了矮人可能说的任何其他语言中。"
+  ],
+  "hasFluffImages": true
+}

@@ -1,0 +1,179 @@
+{
+  "name": "海洋结社",
+  "shortName": "海洋",
+  "ENG_name": "Circle of the Sea",
+  "source": "XPHB",
+  "className": "德鲁伊",
+  "classSource": "XPHB",
+  "page": 87,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "3": [
+          "云雾术|XPHB",
+          "造风术|XPHB",
+          "冷冻射线|XPHB",
+          "粉碎音波|XPHB",
+          "雷鸣波|XPHB"
+        ],
+        "5": [
+          "闪电束|XPHB",
+          "水下呼吸|XPHB"
+        ],
+        "7": [
+          "操控水体|XPHB",
+          "冰风暴|XPHB"
+        ],
+        "9": [
+          "咒唤元素|XPHB",
+          "定身怪物|XPHB"
+        ]
+      }
+    }
+  ],
+  "subclassFeatures": [
+    "海洋结社|德鲁伊|XPHB|海洋|XPHB|3",
+    "水生亲和|德鲁伊|XPHB|海洋|XPHB|6",
+    "风暴降生|德鲁伊|XPHB|海洋|XPHB|10",
+    "大洋慨赠|德鲁伊|XPHB|海洋|XPHB|14"
+  ],
+  "features": [
+    {
+      "name": "海洋结社",
+      "ENG_name": "Circle of the Sea",
+      "source": "XPHB",
+      "page": 87,
+      "className": "德鲁伊",
+      "classSource": "XPHB",
+      "subclassShortName": "海洋",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "entries": [
+        "{@i 海潮风暴，一体同心}",
+        "海洋结社的德鲁伊们驱使着世界上海洋和风暴中狂野的自然之力。其中一些德鲁伊将自己视作自然怒火的化身，对那些掠夺自然世界的人们施以报复。而另一些德鲁伊则顺应潮汐的涨落，跟随洋流和波浪的激荡，聆听狂风的低语和怒号，从中寻求和自然的灵性统一。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "海洋结社法术|德鲁伊|XPHB|海洋|XPHB|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "瀚海之怒|德鲁伊|XPHB|海洋|XPHB|3"
+        }
+      ]
+    },
+    {
+      "name": "海洋结社法术",
+      "ENG_name": "Circle of the Sea Spells",
+      "source": "XPHB",
+      "page": 87,
+      "className": "德鲁伊",
+      "classSource": "XPHB",
+      "subclassShortName": "海洋",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "entries": [
+        "当你到达海洋结社法术表中特定的德鲁伊等级时，你就始终准备着表中对应的法术。",
+        {
+          "type": "table",
+          "caption": "海洋结社法术",
+          "colLabels": [
+            "德鲁伊等级",
+            "准备法术"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-11"
+          ],
+          "rows": [
+            [
+              "3",
+              "{@spell 云雾术|XPHB}，{@spell 造风术|XPHB}，{@spell 冷冻射线|XPHB}，{@spell 粉碎音波|XPHB}，{@spell 雷鸣波|XPHB}"
+            ],
+            [
+              "5",
+              "{@spell 闪电束|XPHB}，{@spell 水下呼吸|XPHB}"
+            ],
+            [
+              "7",
+              "{@spell 操控水体|XPHB}，{@spell 冰风暴|XPHB}"
+            ],
+            [
+              "9",
+              "{@spell 咒唤元素|XPHB}，{@spell 定身怪物|XPHB}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "瀚海之怒",
+      "ENG_name": "Wrath of the Sea",
+      "source": "XPHB",
+      "page": 87,
+      "className": "德鲁伊",
+      "classSource": "XPHB",
+      "subclassShortName": "海洋",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "entries": [
+        "以一个{@variantrule 附赠动作|XPHB}，你可以消耗一次你的荒野变形次数来在自己周围显现出海浪形态的 5 尺{@variantrule 光环 [效应区域]|XPHB|光环}。光环会持续存在 10 分钟。当你解除它（无需任何动作）、再度显现光环或陷入{@condition 失能|XPHB}时，它会提前结束。",
+        "当你显现出{@variantrule 光环 [效应区域]|XPHB|光环}时，以及在之后的回合中以一个{@variantrule 附赠动作|XPHB}，你可以选择另一个在你{@variantrule 光环 [效应区域]|XPHB|光环}范围内你可见的生物。该生物必须成功通过一次对抗你的法术豁免DC的体质豁免，否则受到寒冷伤害，如果该生物是大型或更小体型，它会被从你身边推离至多 15 尺距离。投掷等于你感知调整值数量（最少 1 颗）的d6骰来决定伤害。"
+      ]
+    },
+    {
+      "name": "水生亲和",
+      "ENG_name": "Aquatic Affinity",
+      "source": "XPHB",
+      "page": 87,
+      "className": "德鲁伊",
+      "classSource": "XPHB",
+      "subclassShortName": "海洋",
+      "subclassSource": "XPHB",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "你的瀚海之怒创造的{@variantrule 光环 [效应区域]|XPHB|光环}范围提升至 10 尺。",
+        "此外，你获得等于你{@variantrule 速度|XPHB}的{@variantrule 游泳速度|XPHB}。"
+      ]
+    },
+    {
+      "name": "风暴降生",
+      "ENG_name": "Stormborn",
+      "source": "XPHB",
+      "page": 87,
+      "className": "德鲁伊",
+      "classSource": "XPHB",
+      "subclassShortName": "海洋",
+      "subclassSource": "XPHB",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "你的瀚海之怒特性在激活时获得两项额外增益：",
+        {
+          "type": "list",
+          "items": [
+            "**飞行**：你获得等于你的{@variantrule 速度|XPHB}的{@variantrule 飞行速度|XPHB}。",
+            "**抗性**：你获得对寒冷、闪电和雷鸣伤害的{@variantrule 抗性|XPHB}。"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "大洋慨赠",
+      "ENG_name": "Oceanic Gift",
+      "source": "XPHB",
+      "page": 88,
+      "className": "德鲁伊",
+      "classSource": "XPHB",
+      "subclassShortName": "海洋",
+      "subclassSource": "XPHB",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "当你使用瀚海之怒时，你可以让 60 尺内一个自愿生物而非你自己身上显现出{@variantrule 光环 [效应区域]|XPHB|光环}。该生物获得{@variantrule 光环 [效应区域]|XPHB|光环}的所有增益，并在特性中使用你的法术豁免DC and 感知调整值。",
+        "此外，如果你消耗两次而非一次荒野变形使用次数，你可以同时在你自己和另一个生物身上显现出{@variantrule 光环 [效应区域]|XPHB|光环}。"
+      ]
+    }
+  ]
+}

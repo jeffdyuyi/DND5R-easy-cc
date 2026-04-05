@@ -1,0 +1,49 @@
+[
+  {
+    "ENG_name": "Mass Heal",
+    "name": "群体医疗术",
+    "source": "XPHB",
+    "page": 296,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 9,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "如泉涌般的治愈能量从你流向周遭的生物。选择施法距离内任意数量的可见生物，你令它们恢复总计至多 700 点{@variantrule 生命值|XPHB}，每个生物的具体治疗量则由你随意分配。受该法术所治疗的生物的{@condition 目盲|XPHB}、{@condition 耳聋|XPHB}和{@condition 中毒|XPHB}状态也一并被移除。"
+    ],
+    "miscTags": [
+      "HL",
+      "SGT"
+    ],
+    "areaTags": [
+      "MT"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师"
+    ],
+    "display_school": "防护系"
+  }
+]

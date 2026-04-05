@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "Ring of Invisibility",
+    "name": "隐身戒指",
+    "source": "DMG",
+    "page": 191,
+    "srd": true,
+    "referenceSources": [
+      "WDH"
+    ],
+    "reprintedAs": [
+      "隐身戒指|XDMG"
+    ],
+    "type": "RG|DMG",
+    "tier": "主要",
+    "rarity": "legendary",
+    "reqAttune": true,
+    "entries": [
+      "佩戴这枚戒指期间，以一个动作，你可以让自己化为{@condition 隐形}。任何你着装或携带的东西也将随你{@condition 隐形}。你的{@condition 隐形}持续直至你发动攻击、施展法术、戒指被摘下、或用一个附赠动作主动解除为止。"
+    ],
+    "lootTables": [
+      "魔法物品表I"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 200000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Ring of Invisibility.webp"
+          },
+          "width": 757,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "ENG_name": "Cold Absorbing Tattoo",
+    "name": "冷冻吸收刺青",
+    "source": "TCE",
+    "page": 119,
+    "resist": [
+      "寒冷"
+    ],
+    "detail1": "蓝",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "tattoo": true,
+    "hasRefs": true,
+    "entries": [
+      "{#itemEntry 吸收刺青|TCE}"
+    ],
+    "valueReference": 40000,
+    "type": "W"
+  }
+]

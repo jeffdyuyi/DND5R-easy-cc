@@ -1,0 +1,38 @@
+{
+  "ENG_name": "Gloom Stalker",
+  "name": "幽域追踪者",
+  "shortName": "幽域追踪者",
+  "source": "XPHB",
+  "className": "游侠",
+  "classSource": "XPHB",
+  "page": 125,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "3": [
+          "易容术|xphb"
+        ],
+        "5": [
+          "魔绳术|xphb"
+        ],
+        "9": [
+          "恐惧术|xphb"
+        ],
+        "13": [
+          "高等隐形术|xphb"
+        ],
+        "17": [
+          "伪装术|xphb"
+        ]
+      }
+    }
+  ],
+  "subclassFeatures": [
+    "幽域追踪者|游侠|XPHB|幽域追踪者|XPHB|3",
+    "钢铁意志|游侠|XPHB|幽域追踪者|XPHB|7",
+    "追猎如风|游侠|XPHB|幽域追踪者|XPHB|11",
+    "如影随形|游侠|XPHB|幽域追踪者|XPHB|15"
+  ],
+  "hasFluffImages": true
+}

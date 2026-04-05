@@ -1,0 +1,66 @@
+[
+  {
+    "ENG_name": "Blade Barrier",
+    "name": "剑刃护壁",
+    "source": "XPHB",
+    "page": 247,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 6,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 90
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你创造出一面由旋转着的魔法能量剑刃组成的墙壁。墙壁在持续时间内在你的施法距离之内持续存在。你可以选择创造长不过100尺、高不过20尺、厚不过5尺的直墙；或是直径不过60尺、高不过20尺、厚不过5尺的环形墙。墙提供四分之三{@variantrule 掩护|XPHB}，而墙体所占据的空间则视为{@variantrule 困难地形|XPHB}。",
+      "所有处于墙所占据空间的生物必须进行一次敏捷豁免，豁免失败者受到{@damage 6d10}力场伤害，豁免成功则受到半数伤害。生物在进入墙所占据的空间或者在其中结束回合时也需要进行此豁免。一个生物每回合只会进行一次此豁免。"
+    ],
+    "damageInflict": [
+      "force"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "miscTags": [
+      "DFT"
+    ],
+    "areaTags": [
+      "W"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "敏捷"
+    ],
+    "display_damageInflict": [
+      "力场"
+    ]
+  }
+]

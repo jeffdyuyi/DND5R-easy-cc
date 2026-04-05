@@ -1,0 +1,117 @@
+[
+  {
+    "name": "阿斯莫",
+    "ENG_name": "Aasimar",
+    "source": "DMG",
+    "page": 286,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "wis": 1,
+        "cha": 2
+      }
+    ],
+    "darkvision": 60,
+    "resist": [
+      "暗蚀",
+      "光耀"
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "celestial": true
+      }
+    ],
+    "additionalSpells": [
+      {
+        "innate": {
+          "3": {
+            "daily": {
+              "1": [
+                "次等复原术"
+              ]
+            }
+          },
+          "5": {
+            "daily": {
+              "1": [
+                "昼明术"
+              ]
+            }
+          }
+        },
+        "ability": "cha",
+        "known": {
+          "1": [
+            "光亮术#c"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Age",
+        "name": "年龄",
+        "type": "entries",
+        "entries": [
+          "阿斯莫族的成熟速度与人类相同，但寿命比人类长几年。"
+        ]
+      },
+      {
+        "ENG_name": "Size",
+        "name": "体型",
+        "type": "entries",
+        "entries": [
+          "阿斯莫的身高和体重与人类接近。您属于中体型。"
+        ]
+      },
+      {
+        "ENG_name": "Darkvision",
+        "name": "黑暗视觉",
+        "entries": [
+          "由于你的天界血统，你在昏暗和黑暗条件下拥有优越的视力。你可以将60尺内的昏暗光线视为明亮光线，而在黑暗之中你可以像昏暗光线之中一般视物。在黑暗中，你无法分辨颜色，只能看见灰色的阴影。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Celestial Resistance",
+        "name": "天界抗性",
+        "entries": [
+          "你具有暗蚀和光耀伤害的抗性。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Celestial Legacy",
+        "name": "天界遗赠",
+        "entries": [
+          "你知晓戏法{@spell 光亮术}。达到3级后，你每长休一次可以用该特质施展一次{@spell 次等复原术}。达到5级后，你每长休一次可以使用该特质施展一次3环的{@spell 昼明术}。这些法术的施法属性都是魅力。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Language",
+        "name": "语言",
+        "entries": [
+          "你可以读、写、说通用语和天界语。"
+        ],
+        "type": "entries"
+      }
+    ],
+    "age": {
+      "mature": 20,
+      "max": 100
+    },
+    "reprintedAs": [
+      "阿斯莫|XPHB"
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/aasimar.mp3"
+    },
+    "translator": "不全书"
+  }
+]

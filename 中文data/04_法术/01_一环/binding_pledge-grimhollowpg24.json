@@ -1,0 +1,72 @@
+[
+  {
+    "ENG_name": "Binding Pledge",
+    "name": "束缚誓约",
+    "source": "GrimHollowPG24",
+    "page": 185,
+    "level": 1,
+    "school": "D",
+    "time": [
+      {
+        "number": 1,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一本宗教或法律重要性的书籍"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "day",
+          "amount": 10
+        }
+      }
+    ],
+    "meta": {
+      "ritual": true
+    },
+    "entries": [
+      "当你施放该法术时，范围内一个愿意的生物做出承诺、发誓或签订合同。在法术持续时间内，如果该生物违背了承诺、誓言或合同，你将立即知晓。如果发生这种情况，在法术剩余的持续时间内，你将知晓该生物的距离和方向。如果该法术被解除，你将立即知晓但不会得知该生物的距离和方向。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "持续时间变为30天（3-4环法术位）或1年（5-6环法术位）。若使用7环或更高法术位，该法术将持续至被解除。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Binding%20Pledge.webp"
+  }
+]

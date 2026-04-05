@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Mountain Ox Dung",
+    "name": "山地公牛粪便",
+    "source": "ObojimaTallGrass",
+    "page": 205,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 10|large}|SneakerProMedium}",
+            "{@font {@style 3|large}|SneakerProMedium}",
+            "{@font {@style 8|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "在一位熟习药水的工匠手中，一块晒干的公牛粪便饼有许多用途。山地公牛在丘陵地带游荡，性情相当暴躁，因此建议小心行事。"
+    ],
+    "lootTables": [
+      "海岸高地普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/mountain-ox-dung.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 1890,
+          "height": 1890
+        }
+      ]
+    }
+  }
+]

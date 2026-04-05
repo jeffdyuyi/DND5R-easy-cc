@@ -1,0 +1,26 @@
+[
+  {
+    "ENG_name": "Ioun Stone, Protection",
+    "name": "艾恩石, 防护",
+    "source": "XDMG",
+    "page": 273,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "bonusAc": "+1",
+    "hasRefs": true,
+    "entries": [
+      "{#itemEntry 艾恩石|XDMG}",
+      "在这颗烟灰玫瑰色的棱柱形艾恩石环绕在你头顶期间，你的{@variantrule 护甲等级|XPHB}获得+1加值。"
+    ],
+    "lootTables": [
+      "武备 - 珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {},
+    "type": "W"
+  }
+]

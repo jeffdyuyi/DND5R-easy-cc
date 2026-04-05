@@ -1,0 +1,73 @@
+[
+  {
+    "ENG_name": "Incite Riot",
+    "name": "诘问真心",
+    "source": "GrimHollowPG24",
+    "page": 194,
+    "level": 5,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一条红手帕"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "当你施放该法术时，挥舞作为材料成分的红色手帕，并选择范围内能看见你的任意数量生物。每个被选中的生物需进行一次感知豁免检定。若你或你的盟友正与之战斗，则其检定具有{@variantrule 优势|XPHB}。豁免失败时，目标将获得{@condition 魅惑|XPHB}状态，直至法术结束或你及盟友对其造成伤害。{@condition 魅惑|XPHB}的生物对你和盟友保持{@variantrule 友好【态度】|XPHB|友好}。处于{@condition 魅惑|XPHB}状态时，该生物必须用其动作对最近生物（除你及盟友外）发动近战攻击，或用其回合向最近目标移动。",
+      "在每个回合结束时，目标重复豁免，成功时终止其自身的法术。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "conditionInflict": [
+      "魅惑"
+    ],
+    "savingThrow": [
+      "感知"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Incite%20Riot.webp"
+  }
+]

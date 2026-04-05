@@ -1,0 +1,35 @@
+[
+    {
+        "ENG_name": "Wild Companion",
+        "name": "荒野伙伴",
+        "source": "TCE",
+        "page": 35,
+        "className": "德鲁伊",
+        "classSource": "PHB",
+        "level": 2,
+        "isClassFeatureVariant": true,
+        "consumes": {
+            "ENG_name": "Wild Shape",
+            "name": "荒野形态"
+        },
+        "entries": [
+            "{@i 2级德鲁伊{@variantrule 可选职业特性|TCE|可选特性}}",
+            "你获得召唤呈现动物形态的精魂的能力, 以一个动作, 你能够消耗一次荒野变形使用次数来施放一次无需材料的{@spell 寻获魔宠}法术. ",
+            "当你以此方法施放该法术时, 魔宠的类型是精类而不是野兽, 魔宠会在等同于你德鲁伊等级一半的小时数后消失. "
+        ]
+    },
+    {
+        "ENG_name": "Cantrip Versatility",
+        "name": "替换戏法",
+        "source": "TCE",
+        "page": 35,
+        "className": "德鲁伊",
+        "classSource": "PHB",
+        "level": 4,
+        "isClassFeatureVariant": true,
+        "entries": [
+            "{@i 4级德鲁伊 {@variantrule 可选职业特性|TCE|可选特性}}",
+            "每当你达到此职业的一个等级并获得属性值提升特性时, 你可以从此职业的施法特性中学到的一个戏法替换为{@filter 德鲁伊法术列表|spells|level=0|class=德鲁伊}中的另一个戏法. "
+        ]
+    }
+]

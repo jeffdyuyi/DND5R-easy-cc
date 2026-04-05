@@ -1,0 +1,53 @@
+[
+  {
+    "ENG_name": "Courtesan's Fanblade",
+    "name": "歌姬扇刃",
+    "source": "GriffonsSaddlebag2",
+    "page": 65,
+    "baseItem": "匕首|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "weight": 1,
+    "weaponCategory": "简易",
+    "property": [
+      "F",
+      "L",
+      "T"
+    ],
+    "range": "20/60",
+    "dmg1": "1d4",
+    "dmgType": "P",
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "这把魔法匕首由两个中空部件组成，可通过扳动手柄上方的小杆打开。以这种方式打开匕首时，会展现出一把在两个部件之间展开的精美纸扇（无需动作）。在扇子展开期间，你无法用此武器进行攻击。你可以用一个附赠动作合上扇子并重新组合匕首的两部分。",
+      "这把匕首具有3充能，且在每日黎明恢复{@dice 1d3}已消耗的充能。在扇子展开期间，你可以用一个动作以扇遮面，并消耗其1充能来施展一环的{@spell 魅惑类人|PHB}法术（豁免DC 13）。你可以消耗其更多的充能来提升法术的环阶：每额外消耗一充能，法术的环阶便提高一环。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "魅惑类人"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表 F2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Courtesans-Fanblade.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

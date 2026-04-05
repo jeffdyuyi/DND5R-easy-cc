@@ -1,0 +1,25 @@
+[
+  {
+    "name": "轻型连弩",
+    "ENG_name": "Light Repeating Crossbow",
+    "source": "OotA",
+    "page": 224,
+    "type": "R",
+    "rarity": "unknown",
+    "weight": 5,
+    "weaponCategory": "simple",
+    "property": [
+      "A",
+      "2H"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "range": "40/160",
+    "ammoType": "弩矢|PHB",
+    "entries": [
+      "这把弩配备了一个可以装填多达六支弩箭的弹夹。发射后它会自动重新装填，直到弹夹中的弹药用尽。重新装填弹夹需要一个动作。"
+    ],
+    "crossbow": true,
+    "weapon": true
+  }
+]

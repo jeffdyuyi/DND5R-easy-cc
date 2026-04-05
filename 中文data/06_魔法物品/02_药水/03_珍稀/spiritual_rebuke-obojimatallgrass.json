@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Spiritual Rebuke",
+    "name": "精魄斥责",
+    "source": "ObojimaTallGrass",
+    "page": 247,
+    "type": "P",
+    "rarity": "rare",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "当倾倒时，这种黑暗灵药会污染土地并创造一个10尺立方的区域，该区域如同处于{@spell 反魔法场}法术效应下一般，与岛屿的魔法隔绝。此效应持续1年。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 55|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/spiritual-rebuke.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1650,
+          "height": 1650
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

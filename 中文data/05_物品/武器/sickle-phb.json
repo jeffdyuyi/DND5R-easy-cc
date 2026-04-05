@@ -1,0 +1,25 @@
+[
+  {
+    "name": "镰刀",
+    "ENG_name": "Sickle",
+    "source": "PHB",
+    "page": 149,
+    "edition": "classic",
+    "type": "M",
+    "rarity": "none",
+    "weight": 2,
+    "value": 100,
+    "weaponCategory": "simple",
+    "property": [
+      "L"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "S",
+    "basicRules": true,
+    "reprintedAs": [
+      "镰刀|XPHB"
+    ],
+    "srd": true,
+    "weapon": true
+  }
+]

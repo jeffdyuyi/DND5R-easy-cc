@@ -1,0 +1,107 @@
+[
+  {
+    "ENG_name": "Web",
+    "name": "蛛网术",
+    "source": "PHB",
+    "page": 287,
+    "srd": true,
+    "basicRules": true,
+    "otherSources": [
+      {
+        "source": "RMR",
+        "page": 61
+      }
+    ],
+    "referenceSources": [
+      "OotA",
+      "TftYP-TFoF",
+      "TftYP-ToH",
+      "IMR"
+    ],
+    "reprintedAs": [
+      "蛛网术|XPHB"
+    ],
+    "level": 2,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "少量蜘蛛网"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你在施法距离内指定一点，并召唤出一大片粘厚的网状物。蛛网覆盖以该点为源点的 20 尺立方区域，并在法术持续时间内维持存在。蛛网使该区成为{@quickref 困难地形||3}并造成轻度遮蔽。",
+      "如果蛛网没有被固定在两个固体中间（例如墙和树）或跨在一片地板、墙壁、天花板中间，则你召唤出的蛛网会自动坍塌，而导致法术在你的下一回合开始时终止。摊在平面上的蛛网深度为 5 尺。",
+      "任何在蛛网中开始其回合或在其回合中进入蛛网的生物必须进行一次敏捷豁免。豁免失败者将被{@condition 束缚}在网中，直至其离开蛛网或挣脱束缚。",
+      "被蛛网{@condition 束缚}的生物可以用一个动作尝试挣脱。该生物必须进行一次对抗法术豁免 DC 的力量检定，检定成功则不再被{@condition 束缚}。",
+      "这些蛛网都是可燃物。每 5 尺立方的蛛网触及明火时将在 1 轮内被烧尽。而任何在燃烧区域内开始其回合的生物将因此受 {@damage 2d4} 点火焰伤害。"
+    ],
+    "damageInflict": [
+      "fire"
+    ],
+    "conditionInflict": [
+      "束缚"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "abilityCheck": [
+      "力量"
+    ],
+    "miscTags": [
+      "DFT"
+    ],
+    "areaTags": [
+      "C"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/PHB/Web.webp"
+          },
+          "width": 739,
+          "height": 1000
+        }
+      ]
+    },
+    "classes": [
+      "术士",
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "咒法系",
+    "display_savingThrow": [
+      "敏捷"
+    ],
+    "display_damageInflict": [
+      "火焰"
+    ]
+  }
+]

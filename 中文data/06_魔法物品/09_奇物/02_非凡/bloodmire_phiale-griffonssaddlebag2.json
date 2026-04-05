@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Bloodmire Phiale",
+    "name": "血污酒碗",
+    "source": "GriffonsSaddlebag2",
+    "page": 47,
+    "tier": "次要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这个瓷质的浅酒碗附有能赋予已离体的血液以新的生命力。碗内最多可容纳8盎司血液。一旦装满，碗中的血液就会开始自行缓缓打漩。如果碗中的血液被放置1小时而不洒出，血液就会凝成可怖的伤药，而微弱的光芒会自其内部缓缓脉动。",
+      "喝掉整碗已凝静的血液会产生两种效果之一。掷一颗{@dice d12}。若掷出12，你受到12暗蚀伤害。若此伤害将你的生命值降至0，则处于伤势稳定。掷出11或更低时，你恢复等同于4+掷出数字的生命值。血液浓稠而甜美，但回味苦涩。",
+      "如果将血液从碗中倒出而未被喝掉，血液的魔力就会消散。一旦以此法使用过此碗，它直到{@dice 1d4}天过后才能被再次使用。"
+    ],
+    "lootTables": [
+      "魔法物品表 B2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Bloodmire-Phiale.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

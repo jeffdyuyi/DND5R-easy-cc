@@ -1,0 +1,49 @@
+{
+  "ENG_name": "Smithy",
+  "name": "铁匠铺",
+  "source": "XDMG",
+  "page": 347,
+  "facilityType": "special",
+  "level": 5,
+  "space": [
+    "roomy"
+  ],
+  "hirelings": [
+    {
+      "exact": 2
+    }
+  ],
+  "orders": [
+    "制造"
+  ],
+  "entries": [
+    "铁匠铺包含一座熔炉、一个铁砧、以及其他用于制造武器、盔甲等装备的工具。",
+    {
+      "ENG_name": "Craft Options",
+      "name": "制造选项",
+      "type": "entries",
+      "entries": [
+        "当你对此设施下达{@book 制造|XDMG|7|制造}指令时，从以下选项中选择一项：",
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "ENG_name": "Craft:",
+              "name": "制造：",
+              "type": "item",
+              "entry": "铁匠工具。设施雇员制造任意能用{@item 铁匠工具|XPHB}制造的物品，使用{@book 玩家手册|XPHB}的相关规则。"
+            },
+            {
+              "ENG_name": "Craft:",
+              "name": "制造：",
+              "type": "item",
+              "entry": "魔法物品（武备）。如果你达到9级或更高，你可以委托设施的雇员制造一个由你从{@book 武备|XDMG|6|武备表}表格在{@book 第七章|XDMG|6}中选择的通用或非普通魔法物品。该设施拥有制造该物品所需的工具，且雇员们对该工具和{@skill 奥秘|XPHB}技能都具备熟练。关于制造该物品必须花费的时间和金钱，请参阅{@book 第七章|XDMG|6}中的\"{@book 制作魔法物品|XDMG|6|制作魔法物品}\"部分。如果该物品允许使用者从中施放任何法术，你必须亲自制造该物品（设施的雇员可以协助），并且在你花费时间制造该物品的每一天都必须准备好所有这些法术。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "translator": "不全书"
+}

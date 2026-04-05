@@ -1,0 +1,62 @@
+[
+  {
+    "ENG_name": "Outer Essence Shard",
+    "name": "外界精粹碎晶",
+    "source": "TCE",
+    "page": 133,
+    "type": "SCF",
+    "rarity": "rare",
+    "reqAttune": "由术士",
+    "reqAttuneTags": [
+      {
+        "class": "术士"
+      }
+    ],
+    "wondrous": true,
+    "weight": 1,
+    "focus": [
+      "术士"
+    ],
+    "entries": [
+      "这块闪烁的水晶蕴含着外层位面的本质。作为一项动作，你可以将碎片附着在微小的物体上（比如武器或一件珠宝），或者将其取下。如果你与它的调谐结束，它会掉落。你可以在持有或佩戴它时，将碎片作为施法焦点使用。",
+      "掷一个{@dice d4}骰子，并查阅外层精华碎片表以确定碎片的精华和属性。当你在持有或佩戴碎片时使用法术的变形魔法选项，你可以使用那个属性。",
+      {
+        "type": "table",
+        "caption": "外界精粹碎晶",
+        "colLabels": [
+          "d4",
+          "属性",
+          "碎子"
+        ],
+        "colStyles": [
+          "col-2 text-center",
+          "col-2 text-center",
+          "col-8"
+        ],
+        "rows": [
+          [
+            "1",
+            "守序",
+            "{@item 外界精粹碎晶（守序）|TCE}"
+          ],
+          [
+            "2",
+            "混乱",
+            "{@item 外界精粹碎晶（混乱）|TCE}"
+          ],
+          [
+            "3",
+            "善良",
+            "{@item 外界精粹碎晶（善良）|TCE}"
+          ],
+          [
+            "4",
+            "邪恶",
+            "{@item 外界精粹碎晶（邪恶）|TCE}"
+          ]
+        ]
+      }
+    ],
+    "valueReference": 4000
+  }
+]

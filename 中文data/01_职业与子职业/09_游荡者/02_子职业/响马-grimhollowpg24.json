@@ -1,0 +1,158 @@
+{
+  "ENG_name": "Highway Rider",
+  "name": "响马",
+  "shortName": "响马",
+  "source": "GrimHollowPG24",
+  "className": "游荡者",
+  "classSource": "XPHB",
+  "page": 89,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "3": {
+          "daily": {
+            "1e": [
+              "寻获坐骑|XPHB"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "subclassSpells": [
+    "寻获坐骑|XPHB"
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "Highway Rider",
+      "name": "响马",
+      "source": "GrimHollowPG24",
+      "page": 89,
+      "className": "游荡者",
+      "classSource": "XPHB",
+      "subclassShortName": "响马",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "entries": [
+        "{@i 一匹骏马是犯罪的最佳搭档}",
+        "潜伏在小路上的响马让每个旅行者和吝啬的商人都心生恐惧术。他们骑着一匹迅捷而忠诚的战马追捕猎物——然后迅速逃离。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "先发制人|游荡者|XPHB|响马|GrimHollowPG24|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "可靠乘骑|游荡者|XPHB|响马|GrimHollowPG24|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "驭马奔袭|游荡者|XPHB|响马|GrimHollowPG24|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Hair Trigger",
+      "name": "先发制人",
+      "source": "GrimHollowPG24",
+      "page": 89,
+      "className": "游荡者",
+      "classSource": "XPHB",
+      "subclassShortName": "响马",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你获得{@item 黑火药手枪|GrimHollowPG24|黑火药手枪}的熟练项。此外，当你掷{@variantrule 先攻|XPHB}且该掷骰没有{@variantrule 劣势|XPHB}时，你可以立即采取一个{@variantrule 反应|XPHB}来执行以下选项之一：",
+        {
+          "type": "list",
+          "items": [
+            "用武器或{@variantrule 徒手打击|XPHB}进行一次攻击。",
+            "移动至多你的{@variantrule 速度|XPHB}而不引发{@action 借机攻击|XPHB|借机攻击}。",
+            "受控的坐骑可以移动至多其{@variantrule 速度|XPHB}而不引发{@action 借机攻击|XPHB|借机攻击}。",
+            "采取{@action 回避|XPHB}或{@action 操作|XPHB}动作。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Ride Them Down",
+      "name": "驭马奔袭",
+      "source": "GrimHollowPG24",
+      "page": 89,
+      "className": "游荡者",
+      "classSource": "XPHB",
+      "subclassShortName": "响马",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "如果你或你驾驭的受控坐骑移动至少20尺，你不需要在攻击检定上具有{@variantrule 优势|XPHB}即可进行偷袭，且你在攻击检定上不具有{@variantrule 劣势|XPHB}。"
+      ]
+    },
+    {
+      "ENG_name": "Trusty Mount",
+      "name": "可靠乘骑",
+      "source": "GrimHollowPG24",
+      "page": 89,
+      "className": "游荡者",
+      "classSource": "XPHB",
+      "subclassShortName": "响马",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你总是准备有{@spell 寻获坐骑|XPHB}法术。通过此特性，你可以无需法术位或成分施放它，且你的施法属性为智力。",
+        "一旦你以此法施展了该法术，直至完成{@variantrule 长休|XPHB}你都无法再次以此法施展该法术。"
+      ]
+    },
+    {
+      "ENG_name": "Horse Lord",
+      "name": "马上之王",
+      "source": "GrimHollowPG24",
+      "page": 89,
+      "className": "游荡者",
+      "classSource": "XPHB",
+      "subclassShortName": "响马",
+      "subclassSource": "GrimHollowPG24",
+      "level": 9,
+      "header": 2,
+      "entries": [
+        "你可以花费1分钟梳理和照顾你的乘骑，结束时它获得等于你游荡者等级两倍的{@variantrule 临时生命值|XPHB}。",
+        "此外，你的狡黠也延伸至你的坐骑。当你控制一个乘骑时，它可以消耗一个{@variantrule 附赠动作|XPHB}执行以下动作之一：{@action 疾走|XPHB}、{@action 撤离|XPHB}或{@action 回避|XPHB}。"
+      ]
+    },
+    {
+      "ENG_name": "True Grit",
+      "name": "坚忍不拔",
+      "source": "GrimHollowPG24",
+      "page": 89,
+      "className": "游荡者",
+      "classSource": "XPHB",
+      "subclassShortName": "响马",
+      "subclassSource": "GrimHollowPG24",
+      "level": 13,
+      "header": 2,
+      "entries": [
+        "你获得体质豁免检定的熟练。此外，当你受到一个允许你进行体质豁免检定来只承受一半伤害的效应影响时，若豁免检定成功则不受伤害，若失败则只承受一半伤害。"
+      ]
+    },
+    {
+      "ENG_name": "Desperado",
+      "name": "亡命凶徒",
+      "source": "GrimHollowPG24",
+      "page": 89,
+      "className": "游荡者",
+      "classSource": "XPHB",
+      "subclassShortName": "响马",
+      "subclassSource": "GrimHollowPG24",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "当你被缩小到0{@variantrule 生命值|XPHB}且未被直接杀死时，你可以在陷入{@condition 昏迷|XPHB}状态前立即使用你的先发制人特性。"
+      ]
+    }
+  ],
+  "hasFluff": true,
+  "hasFluffImages": true
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Bottled Lightning",
+    "name": "瓶装闪电",
+    "source": "ObojimaTallGrass",
+    "page": 216,
+    "type": "Ingred",
+    "rarity": "rare",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 20|large}|SneakerProMedium}",
+            "{@font {@style 20|large}|SneakerProMedium}",
+            "{@font {@style 18|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "很少有法师尝试这样的专长，而成功将闪电装入瓶中的更是少之又少。实现瓶装闪电的方法、魔法和装备都是严密保守的秘密。对于那些希望获得这种爆裂法力的人，请注意，即使是小型瓶子，法师们也会收取高昂的费用。那些将闪电装入瓶中的法师通常可以通过听到他们山顶塔楼的故事或他们疯狂地闯入雷暴中的故事来找到。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/bottled-lightning.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 2062,
+          "height": 2062
+        }
+      ]
+    }
+  }
+]

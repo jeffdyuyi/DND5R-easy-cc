@@ -1,0 +1,34 @@
+[
+  {
+    "ENG_name": "魔咒（6环）Scale Mail",
+    "name": "魔咒（6环）鳞甲",
+    "source": "XDMG",
+    "page": 258,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "FFotR"
+    ],
+    "edition": "one",
+    "type": "MA|XPHB",
+    "rarity": "legendary",
+    "weight": 45,
+    "value": 5000,
+    "ac": 14,
+    "armor": true,
+    "stealth": true,
+    "hasFluffImages": true,
+    "namePrefix": "魔咒（6环）",
+    "reqAttune": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6}",
+    "charges": 6,
+    "entries": [
+      "这件盔甲中绑定了一个6环法术。该法术在盔甲被创造时确定，并且必须属于{@filter 防护或幻术|spells|school=A;I|level=6}魔法学派。该盔甲有6点充能，并在每天黎明时恢复{@dice 1d6}点已消耗的充能。当你穿戴这件盔甲时，你可以消耗1点充能来施放其绑定的法术。",
+      "该法术的DC为17，其攻击加值为{@hit 9}。"
+    ],
+    "spellScrollLevel": 6,
+    "_isVariant": true,
+    "valueReference": 200000
+  }
+]

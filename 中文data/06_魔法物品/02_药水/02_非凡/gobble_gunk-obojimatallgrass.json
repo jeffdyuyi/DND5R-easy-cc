@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Gobble Gunk",
+    "name": "狼吞虎咽",
+    "source": "ObojimaTallGrass",
+    "page": 244,
+    "type": "P",
+    "rarity": "uncommon",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "这种难看的药水能让饮用者吃掉他们能塞进嘴里的任何东西而不会产生不良影响——金属、毒素、海水：你能叫出名字的，你就能吃掉。这种药水的效应持续1小时。以这种方式吞下的任何魔法物件都会在1小时结束时被呕吐出来。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 37|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/gobble-gunk.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1856,
+          "height": 1856
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

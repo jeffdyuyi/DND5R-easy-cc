@@ -1,0 +1,195 @@
+{
+  "ENG_name": "Urban Ranger",
+  "name": "城市游侠",
+  "source": "GuideDrakkenheim",
+  "shortName": "城市",
+  "page": 167,
+  "className": "游侠",
+  "classSource": "phb",
+  "subclassFeatures": [
+    {
+      "ENG_name": "Urban Ranger",
+      "name": "城市游侠",
+      "source": "GuideDrakkenheim",
+      "page": 167,
+      "className": "游侠",
+      "classSource": "phb",
+      "subclassShortName": "城市",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 3,
+      "entries": [
+        "城市游侠对自然和荒野不太熟悉，但对城市战争的屋顶和游击战术却了如指掌。他们在受难者的建筑物和曲折的街道中训练机动性和隐匿能力，这些游侠在废墟和瓦砾中如鱼得水。他们是机敏的奔跑者，熟习的狙击手，总能知道对抗敌人的最佳有利位置在哪里。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "城市游侠魔法|游侠|phb|城市|GuideDrakkenheim|3|GuideDrakkenheim"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "街头跑者|游侠|phb|城市|GuideDrakkenheim|3|GuideDrakkenheim"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "制高点|游侠|phb|城市|GuideDrakkenheim|3|GuideDrakkenheim"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Urban Ranger Magic",
+      "name": "城市游侠魔法",
+      "source": "GuideDrakkenheim",
+      "page": 167,
+      "className": "游侠",
+      "classSource": "phb",
+      "subclassShortName": "城市",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 3,
+      "entries": [
+        "当你在此职业中达到特定等级时，你将学会一个额外的法术，如城市游侠法术表格所示。该法术对你而言视为游侠法术，但它不计入你所知的游侠法术数量。",
+        {
+          "type": "table",
+          "caption": "城市游侠法术",
+          "colLabels": [
+            "游侠等级",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "3rd",
+              "{@spell 羽落术|phb}"
+            ],
+            [
+              "5th",
+              "{@spell 隐形术|phb}"
+            ],
+            [
+              "9th",
+              "{@spell 加速术|phb}"
+            ],
+            [
+              "13th",
+              "{@spell 任意门|phb}"
+            ],
+            [
+              "17th",
+              "{@spell 活化物件|phb}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Gutter Runner",
+      "name": "街头跑者",
+      "source": "GuideDrakkenheim",
+      "page": 167,
+      "className": "游侠",
+      "classSource": "phb",
+      "subclassShortName": "城市",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 3,
+      "skillProficiencies": [
+        {
+          "athletics": true,
+          "acrobatics": true
+        }
+      ],
+      "entries": [
+        "你获得等于你步行速度的攀爬速度，并且如果你还没有的话，获得{@skill 运动}和{@skill 特技}技能的熟练。你在使用这些熟练进行的任何属性检定上，熟练加值翻倍。",
+        "此外，当你在你的回合中采取{@action 疾走}动作时，你可以无惩罚地穿过其他生物的空间（但不能在那里停止）。当你这样做时，你的移动不会引发借机攻击。"
+      ]
+    },
+    {
+      "ENG_name": "Vantage Point",
+      "name": "制高点",
+      "source": "GuideDrakkenheim",
+      "page": 167,
+      "className": "游侠",
+      "classSource": "phb",
+      "subclassShortName": "城市",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 3,
+      "entries": [
+        "当你对一个生物进行远程武器攻击时，如果该目标5尺范围内没有其他生物，或者你位于目标20尺或更高的位置且该生物没有掩护，你在攻击检定上获得优势。"
+      ]
+    },
+    {
+      "ENG_name": "Rooftop Mobility",
+      "name": "屋顶机动",
+      "source": "GuideDrakkenheim",
+      "page": 167,
+      "className": "游侠",
+      "classSource": "phb",
+      "subclassShortName": "城市",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 7,
+      "header": 2,
+      "entries": [
+        "你的移动速度增加10尺，并且你可以在你的回合中将{@action 疾走}动作作为附赠动作使用。此外，你已经精通了在移动和攀爬时向前和向上推进的方法。当你在回合中执行{@action 疾走}动作时，你的跳跃距离增加到与你的移动速度相匹配。"
+      ]
+    },
+    {
+      "ENG_name": "Perfect Position",
+      "name": "完美位置",
+      "source": "GuideDrakkenheim",
+      "page": 167,
+      "className": "游侠",
+      "classSource": "phb",
+      "subclassShortName": "城市",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 11,
+      "header": 2,
+      "entries": [
+        "当你利用你的制高点特性增益攻击一个生物时，你对目标造成额外的{@damage 2d6}伤害，并且在d20掷骰结果为19-20时获得重击。"
+      ]
+    },
+    {
+      "ENG_name": "Sitting Duck",
+      "name": "视若羔羊",
+      "source": "GuideDrakkenheim",
+      "page": 167,
+      "className": "游侠",
+      "classSource": "phb",
+      "subclassShortName": "城市",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 15,
+      "header": 2,
+      "entries": [
+        "在你的回合中，当你用远程武器攻击命中一个在上回合没有移动的生物时，该攻击自动变为重击。"
+      ]
+    }
+  ],
+  "subclassSpells": [
+    "羽落术",
+    "隐形术",
+    "加速术",
+    "任意门",
+    "活化物件"
+  ],
+  "additionalSpells": [
+    {
+      "known": {
+        "3": [
+          "羽落术"
+        ],
+        "5": [
+          "隐形术"
+        ],
+        "9": [
+          "加速术"
+        ],
+        "13": [
+          "任意门"
+        ],
+        "17": [
+          "活化物件"
+        ]
+      }
+    }
+  ],
+  "hasFluff": true,
+  "hasFluffImages": true
+}

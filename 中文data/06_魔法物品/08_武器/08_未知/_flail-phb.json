@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Flail",
+    "name": "镀银链枷",
+    "source": "PHB",
+    "page": 148,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "unknown",
+    "weight": 2,
+    "value": 1000,
+    "weaponCategory": "martial",
+    "mastery": [
+      "削弱|XPHB"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "B",
+    "weapon": true,
+    "hasFluffImages": true,
+    "namePrefix": "镀银",
+    "basicRules": true,
+    "reprintedAs": [
+      "镀银武器|XDMG"
+    ],
+    "tier": "主要",
+    "valueExpression": "[[baseItem.value]] + 10000",
+    "_isVariant": true
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "ENG_name": "Sensory Stone",
+    "name": "感知石",
+    "source": "SatO",
+    "page": 13,
+    "referenceSources": [
+      "ToFW"
+    ],
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这块光滑的小石头容纳了一种单一体验的要素。",
+      "作为一个动作，你或你指定的自愿生物可以触摸这块石头并体验这种感觉，就仿佛它发生在那个生物身上一样。不论体验它时感觉有多么真实，这种虚幻的体验都是短暂而无害的。",
+      {
+        "ENG_name": "Record Sensation",
+        "name": "记录感知",
+        "type": "entries",
+        "entries": [
+          "一个反应，你可以选择一个在你30尺范围内的生物，记录其所经历的持续时间不超过6秒的感知，并将这种体验的要素注入感知石中。这会替换掉石头中任何已储存的感知。"
+        ]
+      },
+      {
+        "ENG_name": "Siphon Sensation",
+        "name": "虹吸感知",
+        "type": "entries",
+        "entries": [
+          "以一个附赠动作，你可以利用感知石的魔法来结束自己的魅惑或恐慌状态，这种用法会摧毁感知石。"
+        ]
+      }
+    ],
+    "translator": "不全书",
+    "valueReference": 400,
+    "type": "W"
+  }
+]

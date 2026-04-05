@@ -1,0 +1,72 @@
+[
+  {
+    "ENG_name": "Dismiss Deity",
+    "name": "送神术",
+    "source": "CthulhuTorchlight",
+    "page": 0,
+    "level": 5,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你行使宇宙的自然秩序，将一个神话实体强行遣返其来处。选择施法范围内一位你可见的处于{@variantrule 浴血|XPHB}的神话生物或神祇。目标会被传送至一个与其生物类型相关的位面（由GM选择）中的一个随机位置。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "miscTags": [
+      "SGT"
+    ]
+  }
+]

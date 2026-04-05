@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Wayfarer's Boots",
+    "name": "旅人之靴",
+    "source": "BGG",
+    "page": 117,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这双靴子使用坚固耐用的布料制成，金色的丝线在两只靴子的脚后跟上各缝纫着旅途符文。穿着这对靴子期间，你的步行速度增加10尺，且你进行的感知（{@skill 求生}）检定具有优势。",
+      {
+        "ENG_name": "Invoking the Runes",
+        "name": "激活符文",
+        "type": "entries",
+        "entries": [
+          "以一个附赠动作，你可以激活这对靴子上的符文以用其施放{@spell 脚底抹油}法术。此符文被激活后，直到次日黎明为止都无法被再度激活。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "脚底抹油"
+        ]
+      }
+    },
+    "translator": "不全书",
+    "valueReference": 4000,
+    "type": "W"
+  }
+]

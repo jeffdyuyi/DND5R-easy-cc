@@ -1,0 +1,24 @@
+[
+  {
+    "name": "强酸",
+    "ENG_name": "Acid",
+    "source": "XPHB",
+    "page": 222,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 1,
+    "value": 2500,
+    "entries": [
+      "当你执行{@action 攻击|XPHB}动作时，你可以将你的一次攻击替换为丢出一小瓶强酸。你可以选择位于你20尺内可见的一个生物或物件作为目标。该目标必须通过一次敏捷豁免（{@dc 8}+你的敏捷调整值+你的{@variantrule 熟练|XPHB|熟练加值}），否则承受{@damage 2d6}点强酸伤害。"
+    ],
+    "basicRules2024": true,
+    "miscTags": [
+      "CNS"
+    ],
+    "referenceSources": [
+      "HotB"
+    ],
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

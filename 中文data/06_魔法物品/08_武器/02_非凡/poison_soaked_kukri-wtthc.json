@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "Poison Soaked Kukri",
+    "name": "浸毒廓尔喀刀",
+    "source": "WttHC",
+    "type": "M|XPHB",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "weaponCategory": "simple",
+    "property": [
+      "F|XPHB",
+      "L|XPHB",
+      "T|XPHB"
+    ],
+    "mastery": [
+      "迅击|XPHB"
+    ],
+    "range": "20/60",
+    "dmg1": "1d4",
+    "dmgType": "P",
+    "entries": [
+      "你可以使用一个{@variantrule 附赠动作|XPHB}来魔法性地为这把匕首的刀刃涂上毒素。毒素会持续1分钟或直到使用这把武器的攻击命中一个生物。该生物必须成功通过DC 13的体质豁免检定，否则受到{@damage 2d8}毒素伤害并陷入{@condition 中毒|XPHB}状态1分钟。这种{@variantrule 附赠动作|XPHB}的使用方式在下次拂晓前无法再次使用。"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/WttHC/Poison Soaked Kukri.webp"
+          },
+          "width": 1000,
+          "height": 967
+        }
+      ]
+    }
+  }
+]

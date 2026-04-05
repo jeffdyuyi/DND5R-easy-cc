@@ -1,0 +1,66 @@
+[
+  {
+    "ENG_name": "Pollinator Pants",
+    "name": "工蜂蓬裤",
+    "source": "GriffonsSaddlebag2",
+    "page": 138,
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": "由德鲁伊或游侠",
+    "reqAttuneTags": [
+      {
+        "class": "德鲁伊"
+      },
+      {
+        "class": "游侠"
+      }
+    ],
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "在你穿着这件黑黄相间的条纹蓬裤期间，你走到哪里，你身边5尺范围内的花卉就都会魔法性地绽放，如同被施以{@spell 德鲁伊伎俩}法术一般。",
+      "这条裤子具有3充能，且在每日黎明时恢复{@dice 1d3}已消耗的充能。在你穿着这条裤子期间，你可以用一个动作并消耗其1充能来从其中施展{@spell 植物交谈}法术。此版本的法术只会影响施法距离内长着至少一朵花的植物。当你通过这种方法与植物交流时，你通过身体动作和舞蹈般的舞步相结合，而非通过你的声音来达成这一点。在法术持续期间，这些动作对你而言如同本能一般自然，并且魔法性地传达你的信息。",
+      {
+        "ENG_name": "Beekeeper's Commitment",
+        "name": "献身于蜂",
+        "type": "entries",
+        "entries": [
+          "在你已与三件具有此命名属性的魔法物品同调期间，这条裤子在每日拂晓恢复所有已消耗的充能，而非{@dice 1d3}，并获得如下增益："
+        ]
+      },
+      {
+        "ENG_name": "Sting",
+        "name": "钉刺",
+        "type": "entries",
+        "entries": [
+          "当你在每个回合使用{@action 攻击}动作时，你可以使用一个附赠动作对5尺内的生物进行一次特殊的徒手打击。若命中，目标将受到额外{@damage 1d4}穿刺伤害。当你用此徒手打击掷出20时，目标将受到额外10点毒素伤害，并且必须成功通过DC 15的体质豁免检定否则将{@condition 中毒}直到你的下个回合结束。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "植物交谈"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表 F2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Pollinator-Pants.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

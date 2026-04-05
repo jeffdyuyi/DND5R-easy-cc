@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Hidden Hand",
+    "name": "隐秘之手",
+    "source": "ObojimaTallGrass",
+    "page": 237,
+    "type": "P",
+    "rarity": "rare",
+    "property": [
+      "Util"
+    ],
+    "entries": [
+      "饮用后，这种颗粒状的药水会增强你的感官并让你感受到一种未被发掘的力量。在接下来的24小时内，你将获得念动力能力，如同受到{@spell 心灵遥控}法术的影响。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 52|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Utility/hidden-hand.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1530,
+          "height": 1530
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

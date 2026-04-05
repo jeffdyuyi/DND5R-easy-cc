@@ -1,0 +1,24 @@
+{
+  "ENG_name": "Thief",
+  "name": "盗贼",
+  "shortName": "盗贼",
+  "source": "PHB",
+  "className": "游荡者",
+  "classSource": "XPHB",
+  "_copy": {
+    "ENG_name": "Thief",
+    "name": "盗贼",
+    "source": "PHB",
+    "shortName": "盗贼",
+    "className": "游荡者",
+    "classSource": "PHB",
+    "_preserve": {
+      "page": true,
+      "otherSources": true,
+      "referenceSources": true,
+      "srd": true,
+      "basicRules": true,
+      "reprintedAs": true
+    }
+  }
+}

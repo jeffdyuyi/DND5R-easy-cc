@@ -1,0 +1,34 @@
+[
+  {
+    "ENG_name": "Sanctum Amulet",
+    "name": "圣所护符",
+    "source": "BGG",
+    "page": 116,
+    "resist": [
+      "暗蚀"
+    ],
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "一枚黑色蛋白石挂坠悬挂在这条珍珠链条的底端。神圣符文铭刻在这枚挂坠的背面。",
+      "佩戴这件物品期间，你获得暗蚀伤害的抗性。此外，你可以用动作或附赠动作来施放戏法{@spell 维生术}。",
+      {
+        "ENG_name": "Invoking the Rune",
+        "name": "激活符文",
+        "type": "entries",
+        "entries": [
+          "当你周围60尺范围内你可见的一名生物生命值因受到伤害而降至0时，你可以用你的反应去激活这件物品上的符文，让挂坠散发出一阵暗淡的光，该生物将改为生命值降至1点。",
+          "此符文被激活后，直到次日黎明为止都无法被再度激活。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "will": [
+        "维生术"
+      ]
+    },
+    "valueReference": 40000,
+    "type": "W"
+  }
+]

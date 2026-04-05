@@ -1,0 +1,48 @@
+[
+  {
+    "ENG_name": "Whispergust Mote",
+    "name": "私语风之尘",
+    "source": "GriffonsSaddlebag2",
+    "page": 188,
+    "tier": "次要",
+    "rarity": "common",
+    "wondrous": true,
+    "sentient": true,
+    "entries": [
+      "私语风之尘是一种有自我意识的空气，通常从更大的气元素身上分离下来。当其不处于{@condition 隐形}状态时，它的形态就像一团蓝色的生奶油，但其几乎没有重量，且摸起来如同流体一般。这种尘可以用一个动作成为{@condition 隐形}，但它通常只会在感到危险时这么做。放任它不管时，它会轻轻拨乱路过生物的毛发，或卷起一片落叶。尽管它们的存在形式往往由它们喜欢游荡的特性决定，但它们很喜欢结伴并组队参与冒险，以便前往新奇独特的地点。大部分拥有一团私语风之尘的人都很少会宣称是其主人。",
+      "这种尘通常视为一种魔法物品，而非生物。它拥有20尺的飞行速度，且可以悬停。它拥有10 AC，5生命值，并且对所有伤害类型具有抗性。私语风之尘在受到{@spell 造风术}或类似魔法影响时会恢复全部生命值。",
+      {
+        "ENG_name": "Sentience",
+        "name": "智能",
+        "type": "entries",
+        "entries": [
+          "私语风之尘是一个具有智能的混乱善良物品，其智力为1，感知为8，魅力为7。它具有60尺范围的听觉和黑暗视觉。它不能说话或阅读，但能理解{@language 原初语||气族语}和{@language 通用语}。"
+        ]
+      },
+      {
+        "ENG_name": "Personality",
+        "name": "个性",
+        "type": "entries",
+        "entries": [
+          "私语风之尘想要随心所欲去它想去的地方，但它明白，陪伴往往值得为之承受某些限制。即使是在最沉闷的地方，私语风之尘都会找到自娱自乐的办法——但那往往会让与之同行的生物感到忙乱和郁闷。"
+        ]
+      }
+    ],
+    "lootTables": [
+      "魔法物品表 A2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Whispergust-Mote.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

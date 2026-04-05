@@ -1,0 +1,255 @@
+[
+  {
+    "name": "秘术师",
+    "ENG_name": "Mystic",
+    "source": "UATheMysticClass",
+    "edition": "classic",
+    "classData": {
+      "ENG_name": "Mystic",
+      "name": "秘术师",
+      "source": "UATheMysticClass",
+      "page": 1,
+      "edition": "classic",
+      "hd": {
+        "number": 1,
+        "faces": 8
+      },
+      "proficiency": [
+        "int",
+        "wis"
+      ],
+      "startingProficiencies": {
+        "armor": [
+          "light"
+        ],
+        "weapons": [
+          "simple"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "arcana",
+                "history",
+                "insight",
+                "medicine",
+                "nature",
+                "perception",
+                "religion"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "default": [
+          "(a) 一把 {@item 矛|PHB} 或 (b) 一把 {@item 硬头锤|PHB}",
+          "(a) {@item 皮甲|PHB} 或 (b) {@item 镶钉皮甲|PHB}",
+          "(a) 一把 {@item 轻弩|PHB} 和 {@item 弩矢 (20)|PHB} 或 (b) 任何 {@filter 简易武器|items|source=PHB|category=基础|type=简易武器}",
+          "(a) 一个 {@item 学者套组|PHB} 或 (b) 一个 {@item 探索套组|PHB}"
+        ],
+        "goldAlternative": "{@dice 5d4 × 10|5d4 × 10|起始金币}"
+      },
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "已知天赋",
+            "已知灵术",
+            "灵力点",
+            "灵力限制"
+          ],
+          "rows": [
+            [
+              1,
+              1,
+              4,
+              2
+            ],
+            [
+              1,
+              1,
+              6,
+              2
+            ],
+            [
+              2,
+              2,
+              14,
+              3
+            ],
+            [
+              2,
+              2,
+              17,
+              3
+            ],
+            [
+              2,
+              3,
+              27,
+              5
+            ],
+            [
+              2,
+              3,
+              32,
+              5
+            ],
+            [
+              2,
+              4,
+              38,
+              6
+            ],
+            [
+              2,
+              4,
+              44,
+              6
+            ],
+            [
+              2,
+              5,
+              57,
+              7
+            ],
+            [
+              3,
+              5,
+              64,
+              7
+            ],
+            [
+              3,
+              5,
+              64,
+              7
+            ],
+            [
+              3,
+              6,
+              64,
+              7
+            ],
+            [
+              3,
+              6,
+              64,
+              7
+            ],
+            [
+              3,
+              6,
+              64,
+              7
+            ],
+            [
+              3,
+              7,
+              64,
+              7
+            ],
+            [
+              3,
+              7,
+              64,
+              7
+            ],
+            [
+              4,
+              7,
+              64,
+              7
+            ],
+            [
+              4,
+              8,
+              71,
+              7
+            ],
+            [
+              4,
+              8,
+              71,
+              7
+            ],
+            [
+              4,
+              8,
+              71,
+              7
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "灵能|秘术师|UATheMysticClass|1",
+        "灵能灵术与天赋|秘术师|UATheMysticClass|1",
+        "使用灵术|秘术师|UATheMysticClass|1",
+        {
+          "classFeature": "秘术师修会|秘术师|UATheMysticClass|1",
+          "gainSubclassFeature": true
+        },
+        "秘术恢复|秘术师|UATheMysticClass|2",
+        "心灵感应|秘术师|UATheMysticClass|2",
+        {
+          "classFeature": "秘术师修会特性|秘术师|UATheMysticClass|3",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|秘术师|UATheMysticClass|4",
+        "心智之力|秘术师|UATheMysticClass|4",
+        {
+          "classFeature": "秘术师修会特性|秘术师|UATheMysticClass|6",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|秘术师|UATheMysticClass|8",
+        "烈性灵能 (1d8)|秘术师|UATheMysticClass|8",
+        "燃烧心火|秘术师|UATheMysticClass|10",
+        "灵能精通|秘术师|UATheMysticClass|11",
+        "属性值提升|秘术师|UATheMysticClass|12",
+        {
+          "classFeature": "秘术师修会特性|秘术师|UATheMysticClass|14",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|秘术师|UATheMysticClass|16",
+        "灵能之躯|秘术师|UATheMysticClass|20"
+      ],
+      "subclassTitle": "秘术师修会",
+      "hasFluff": true
+    },
+    "subclasses": [
+      {
+        "name": "具现者修会",
+        "source": "UATheMysticClass",
+        "shortName": "化身"
+      },
+      {
+        "name": "觉醒者修会",
+        "source": "UATheMysticClass",
+        "shortName": "觉醒"
+      },
+      {
+        "name": "不朽者修会",
+        "source": "UATheMysticClass",
+        "shortName": "不朽"
+      },
+      {
+        "name": "漫游者修会",
+        "source": "UATheMysticClass",
+        "shortName": "漫游"
+      },
+      {
+        "name": "魂刃修会",
+        "source": "UATheMysticClass",
+        "shortName": "魂刃"
+      },
+      {
+        "name": "巫觋修会",
+        "source": "UATheMysticClass",
+        "shortName": "巫觋"
+      }
+    ]
+  }
+]

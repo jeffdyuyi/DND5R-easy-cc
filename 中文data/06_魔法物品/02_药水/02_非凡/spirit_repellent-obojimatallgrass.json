@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Spirit Repellent",
+    "name": "精魄驱散剂",
+    "source": "ObojimaTallGrass",
+    "page": 234,
+    "type": "P",
+    "rarity": "uncommon",
+    "property": [
+      "Util"
+    ],
+    "entries": [
+      "这瓶药水可以被饮用或倾倒在1平方尺的区域上，使附近区域对精魄产生反感。任何挑战等级为5或更低的精魄在你或该区域30尺范围内必须进行一次DC 15的魅力豁免检定。豁免失败时，精魄会被传送到距离你或该区域35尺的随机未占据空间，并且在1分钟内不能自愿移动到该范围内。未进行此豁免的精魄若移动到范围内，必须立即进行豁免，豁免失败则在该持续时间内受到驱散剂的影响。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 32|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Utility/spirit-repellent.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1813,
+          "height": 1813
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

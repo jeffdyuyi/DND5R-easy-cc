@@ -1,0 +1,125 @@
+{
+  "ENG_name": "College of Glamour",
+  "name": "魅心学院",
+  "shortName": "迷惑",
+  "source": "XPHB",
+  "className": "吟游诗人",
+  "classSource": "XPHB",
+  "page": 65,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "3": [
+          "魅惑类人|xphb",
+          "镜影术|xphb"
+        ],
+        "6": [
+          "命令术|xphb"
+        ]
+      },
+      "innate": {
+        "6": [
+          "命令术|xphb"
+        ]
+      }
+    }
+  ],
+  "subclassFeatures": [
+    "魅心学院|吟游诗人|XPHB|迷惑|XPHB|3",
+    "威仪作锦|吟游诗人|XPHB|迷惑|XPHB|6",
+    "不破威仪|吟游诗人|XPHB|迷惑|XPHB|14"
+  ],
+  "hasFluffImages": true,
+  "features": [
+    {
+      "ENG_name": "College of Glamour",
+      "name": "魅心学院",
+      "source": "XPHB",
+      "page": 65,
+      "className": "吟游诗人",
+      "classSource": "XPHB",
+      "subclassShortName": "迷惑",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "entries": [
+        "{@i 织魔作惑妖精术}",
+        "魅心学院的起源要追溯到妖精荒野中的惑心魔法。研究这些魔法的吟游诗人们将美好与恐怖化作丝线，编织到他们的歌曲和故事之中，此中大师甚至能够披上超凡脱俗的威仪。他们的表演将调动人们对被淡忘的纯真的渴望，唤醒人们潜意识中长存的恐惧，牵扯出最铁石心肠的听众的情绪。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "惑心魔法|吟游诗人|XPHB|迷惑|XPHB|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "灵感织衣|吟游诗人|XPHB|迷惑|XPHB|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Beguiling Magic",
+      "name": "惑心魔法",
+      "source": "XPHB",
+      "page": 65,
+      "className": "吟游诗人",
+      "classSource": "XPHB",
+      "subclassShortName": "迷惑",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "你始终准备着法术{@spell 魅惑类人|XPHB}和{@spell 镜影术|XPHB}。",
+        "此外，在你使用法术位施展一道惑控或幻术学派的法术后，你可以立即使一名位于你 60 尺内的你可见的生物进行一次感知豁免检定，对抗你的施法DC。豁免失败则目标陷入{@condition 魅惑|XPHB}或{@condition 恐慌|XPHB}状态（由你选择），持续 1 分钟。目标在其每个回合结束时，可以重新进行该豁免，成功则其身上的效应提前结束。",
+        "此增益一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。你也可以消耗一次诗人激励使用次数（无需动作）重置此增益的使用权。"
+      ]
+    },
+    {
+      "ENG_name": "Mantle of Inspiration",
+      "name": "灵感织衣",
+      "source": "XPHB",
+      "page": 65,
+      "className": "吟游诗人",
+      "classSource": "XPHB",
+      "subclassShortName": "迷惑",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "你可以将妖精魔法织入歌曲亦或是舞蹈，为他人献上满满的活力。以一个{@variantrule 附赠动作|XPHB}，你可以消耗一次诗人激励使用次数，并掷诗人激励骰，从位于你 60 尺内的其他生物中选择任意生物，数量至多等于你魅力调整值（至少选择一名），每个被选中的生物获得等于两倍该诗人骰骰值的{@variantrule 临时生命值|XPHB}，然后每名生物均可以使用自己的{@variantrule 反应|XPHB}立即移动至多等于自己{@variantrule 速度|XPHB}的距离，这次移动不会引发{@action 借机攻击|XPHB|借机攻击}。"
+      ]
+    },
+    {
+      "ENG_name": "Mantle of Majesty",
+      "name": "威仪作锦",
+      "source": "XPHB",
+      "page": 65,
+      "className": "吟游诗人",
+      "classSource": "XPHB",
+      "subclassShortName": "迷惑",
+      "subclassSource": "XPHB",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "你始终准备着法术{@spell 命令术|XPHB}。",
+        "以一个{@variantrule 附赠动作|XPHB}，你无需法术位地施展{@spell 命令术|XPHB}，然后你将获得超凡脱俗的容貌，持续 1 分钟宣谓在其且专注终止时提前结束。在此期间，你能够以一个{@variantrule 附赠动作|XPHB}，无需法术位地施展法术{@spell 命令术|XPHB}。",
+        "任何因你而陷入{@condition 魅惑|XPHB}状态的生物在进行对抗你以此特性施展的{@spell 命令术|XPHB}时，其豁免检定自动失败。",
+        "此特性一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。你也可以消耗一个三环及以上的法术位（无需动作）来重置此特性的使用权。"
+      ]
+    },
+    {
+      "ENG_name": "Unbreakable Majesty",
+      "name": "不破威仪",
+      "source": "XPHB",
+      "page": 66,
+      "className": "吟游诗人",
+      "classSource": "XPHB",
+      "subclassShortName": "迷惑",
+      "subclassSource": "XPHB",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "以一个{@variantrule 附赠动作|XPHB}，你可以魔法性地呈现出庄严的姿态，持续 1 分钟或在你陷入{@condition 失能|XPHB}状态时结束。在此期间，任何生物在一个回合中的攻击检定首次命中你时，攻击者必须通过一次对抗你施法DC的魅力豁免检定，否则这次攻击将因畏惧你的威仪而变得畏缩并失手。",
+        "一旦你呈现出这庄严的姿态，直至完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}你都无法再如此做。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "ENG_name": "Semiautomatic Pistol",
+    "name": "镀银半自动手枪",
+    "source": "PHB",
+    "page": 148,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "unknown",
+    "weight": 3,
+    "valueRarity": "珍稀",
+    "weaponCategory": "martial",
+    "age": "现代",
+    "property": [
+      "AF|XDMG",
+      "RLD|XDMG"
+    ],
+    "mastery": [
+      "侵扰|XPHB"
+    ],
+    "range": "50/150",
+    "reload": 15,
+    "dmg1": "2d6",
+    "dmgType": "P",
+    "firearm": true,
+    "weapon": true,
+    "ammoType": "枪械子弹|xphb",
+    "namePrefix": "镀银",
+    "basicRules": true,
+    "reprintedAs": [
+      "镀银武器|XDMG"
+    ],
+    "tier": "主要",
+    "valueExpression": "[[baseItem.value]] + 10000",
+    "_isVariant": true
+  }
+]

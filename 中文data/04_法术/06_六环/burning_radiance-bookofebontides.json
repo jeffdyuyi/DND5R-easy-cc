@@ -1,0 +1,62 @@
+[
+  {
+    "ENG_name": "Burning Radiance",
+    "name": "燃烧光辉",
+    "source": "BookOfEbonTides",
+    "page": 0,
+    "level": 6,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "line",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "一道60尺长、5尺宽的线状光亮从你身上朝你选择的方向散发。线上的每个生物必须进行一次敏捷豁免检定。豁免失败时，生物受到{@damage 10d8}光耀伤害并着火；直到有人用一个动作浸没火焰，该生物在其每回合开始时受到{@damage 1d10}火焰伤害。豁免成功则伤害减半并防止生物着火。",
+      "燃烧光辉会点燃区域内未被穿戴或携带的可燃物件。"
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    },
+    "damageInflict": [
+      "火焰",
+      "光耀"
+    ],
+    "savingThrow": [
+      "敏捷"
+    ],
+    "miscTags": [
+      "OBJ"
+    ]
+  }
+]

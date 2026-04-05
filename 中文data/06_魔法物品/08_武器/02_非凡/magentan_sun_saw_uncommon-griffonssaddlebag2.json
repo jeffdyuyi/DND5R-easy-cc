@@ -1,0 +1,43 @@
+[
+  {
+    "ENG_name": "Magentan Sun-Saw (Uncommon)",
+    "name": "品红太阳锯（非普通）",
+    "source": "GriffonsSaddlebag2",
+    "page": 118,
+    "baseItem": "弯刀|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "uncommon",
+    "weight": 3,
+    "weaponCategory": "军用",
+    "property": [
+      "F",
+      "L"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "S",
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6 + 1}",
+    "charges": 7,
+    "entries": [
+      "典型的{@item 品红太阳锯|GriffonsSaddlebag2}，一个非普通物品，是一把带有弯曲金属护手的弯刀。这把剑拥有7充能，并在每日拂晓时恢复{@dice 1d6 + 1}已消耗的充能。",
+      "当你以这把魔法剑攻击并命中一名目标时，你可以作为本次攻击的一部分，消耗此剑的1充能，用手指扣动这把武器的弧形护手来触发效果。若如此做，一道嗡嗡作响的品红色光刃会从剑刃迸发，沿着剑身旋转撕裂目标，对目标额外造成{@damage 1d6}光耀伤害。这道光是鲜艳的品红色。"
+    ],
+    "lootTables": [
+      "魔法物品表 F2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Magentan-Sun-Saw.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

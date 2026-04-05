@@ -1,0 +1,41 @@
+{
+  "ENG_name": "Lunar Sorcery",
+  "name": "月之术法",
+  "shortName": "月",
+  "source": "DSotDQ",
+  "className": "术士",
+  "classSource": "XPHB",
+  "_copy": {
+    "ENG_name": "Lunar Sorcery",
+    "name": "月之术法",
+    "source": "DSotDQ",
+    "shortName": "月",
+    "className": "术士",
+    "classSource": "PHB",
+    "_preserve": {
+      "page": true,
+      "otherSources": true,
+      "referenceSources": true,
+      "srd": true,
+      "basicRules": true,
+      "reprintedAs": true
+    }
+  },
+  "subclassFeatures": [
+    "月之术法|术士|XPHB|月|DSotDQ|3",
+    "月之恩泽|术士||月|DSotDQ|6",
+    "阴晴圆缺|术士||月|DSotDQ|6",
+    "月之赋能|术士||月|DSotDQ|14",
+    "月之异象|术士||月|DSotDQ|18"
+  ],
+  "fluff": {
+    "_subclassFluff": {
+      "ENG_name": "Lunar Sorcery",
+      "name": "月之术法",
+      "source": "DSotDQ",
+      "shortName": "月",
+      "className": "术士",
+      "classSource": "PHB"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "ENG_name": "Arcane Lock",
+    "name": "秘法锁",
+    "source": "PHB",
+    "page": 215,
+    "srd": true,
+    "basicRules": true,
+    "referenceSources": [
+      "HotDQ",
+      "PotA",
+      "OotA",
+      "CoS",
+      "SKT",
+      "TftYP-TSC",
+      "TftYP-THSoT",
+      "TftYP-DiT",
+      "ToA",
+      "TTP",
+      "WDH",
+      "WDMM",
+      "GoS",
+      "SDW",
+      "IMR",
+      "IDRotF",
+      "CM",
+      "HoL",
+      "RtG",
+      "WBtW",
+      "SCC-CK",
+      "SCC-HfMT",
+      "SCC-TMM",
+      "SjA",
+      "KftGV",
+      "LRDT",
+      "VEoR",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "秘法锁|XPHB"
+    ],
+    "level": 2,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "至少价值 25gp 的金粉，作为该法术的耗材",
+        "cost": 2500,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "permanent",
+        "ends": [
+          "解除"
+        ]
+      }
+    ],
+    "entries": [
+      "你触碰关上的一扇门，一扇窗，一个箱子或其他出入口，并使目标在法术持续时间内保持锁闭状态。施法时，你还可以设定允许你和其他若干生物正常打开该物件。你还可以设置一条密语，在该锁闭物件 5 尺内念出密语时，秘法锁将被压制 1 分钟。该物件只有在法术被压制、被解除，或物件本身遭破坏时才能打开。对物件施放{@spell 敲击术} 将使其{@spell 秘法锁} 法术在 10 分钟内受压制。",
+      "受该法术影响的物件更难被撬开或破坏。对其进行破坏或撬锁时，其相应 DC 增加 10。"
+    ],
+    "miscTags": [
+      "OBJ"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "防护系"
+  }
+]

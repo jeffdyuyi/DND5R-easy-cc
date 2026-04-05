@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Fragment of Despondence",
+    "name": "消沉碎片",
+    "source": "CRCotN",
+    "page": 214,
+    "type": "Fragment of Suffering",
+    "entries": [
+      {
+        "ENG_name": "Benefit",
+        "name": "增益",
+        "type": "entries",
+        "entries": [
+          "你对{@condition 魅惑}状态免疫。"
+        ]
+      },
+      {
+        "ENG_name": "Drawback",
+        "name": "缺陷",
+        "type": "entries",
+        "entries": [
+          "你不能采取{@action 协助}行动。"
+        ]
+      }
+    ]
+  }
+]

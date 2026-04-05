@@ -1,0 +1,68 @@
+[
+  {
+    "ENG_name": "Create Undead",
+    "name": "唤起死灵",
+    "source": "XPHB",
+    "page": 258,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 6,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 10
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "每具尸体一颗价值 150+GP 的缟玛瑙",
+        "cost": 15000
+      }
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你只能在夜晚施展这道法术。选择施法距离内至多三具中型或小型类人生物尸体。每具尸体都会变为一只你控制下的{@creature 食尸鬼|XMM}（数据见{@book 怪物图鉴|XMM}）。",
+      "在每个你的回合用一个{@variantrule 附赠动作|XPHB}，你能精神性地命令任何距你 120 尺内以此法术活化的生物（如果你操纵多个生物，则你的命令可以同时传达给它们中的任意成员，不过只能使用同一种命令）。你决定生物下回合使用何种动作并决定它们移动至何处，抑或你可以下达宽泛的命令，例如守护某个房间或某条走廊。没有接受到你命令的生物则只会采取{@action 回避|XPHB}动作并只会为了避免受伤而移动。一旦被下达命令，该生物会持续执行命令直到任务完成。",
+      "你只能操纵生物 24 小时，在那之后它会拒绝执行你曾下达的任何命令。若你在当前的 24 小时时间段终止前再次施展此法术，则你对该生物的操纵时间再延长 24 小时。法术的此种用法只能延长你对至多三个你使用此法术所创造生物的控制时间，不会造出新的生物。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "使用七环法术位施展该法术时，你可以唤起并维持四只{@creature 食尸鬼|XMM|食尸鬼们}。使用八环法术位施展该法术时，你可以唤起并维持五只{@creature 食尸鬼|XMM|食尸鬼们}，也可以改为唤起并维持两只{@creature 妖鬼|XMM|妖鬼们}，或两只{@creature 尸妖|XMM|尸妖}。使用九环法术位施展该法术时，你可以唤起并维持六只{@creature 食尸鬼|XMM|食尸鬼们}，也可以改为唤起并维持三只{@creature 妖鬼|XMM|妖鬼们}，或三只{@creature 尸妖|XMM|尸妖}，或两只{@creature 木乃伊|XMM|木乃伊们}。这些生物的数据见{@book 怪物图鉴|XMM}。"
+        ]
+      }
+    ],
+    "affectsCreatureType": [
+      "类人生物"
+    ],
+    "miscTags": [
+      "PRM",
+      "SMN",
+      "UBA"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "死灵系"
+  }
+]

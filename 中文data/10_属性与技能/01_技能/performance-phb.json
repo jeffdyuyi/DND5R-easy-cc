@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Performance",
+    "name": "表演",
+    "source": "PHB",
+    "page": 179,
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "表演|XPHB"
+    ],
+    "ability": "cha",
+    "entries": [
+      "你的魅力（表演）检定决定你能多好地用音乐，舞蹈，扮演，卖艺，说书，或其他方式娱乐观众。"
+    ],
+    "translator": "不全书"
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "ENG_name": "Bag of Holding",
+    "name": "次元袋",
+    "source": "DMG",
+    "page": 153,
+    "srd": true,
+    "basicRules": true,
+    "referenceSources": [
+      "HotDQ",
+      "RoT",
+      "PotA",
+      "OotA",
+      "SKT",
+      "TftYP-AtG",
+      "TftYP-ToH",
+      "WDH",
+      "LLK",
+      "GoS",
+      "HftT",
+      "IDRotF",
+      "CM",
+      "HoL",
+      "WBtW",
+      "CRCotN",
+      "JttRC",
+      "SjA",
+      "DSotDQ",
+      "KftGV",
+      "ToFW",
+      "LRDT",
+      "VEoR",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "次元袋|XDMG"
+    ],
+    "tier": "次要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "weight": 15,
+    "entries": [
+      "这个袋子有着比外表看起来更大的内部实际空间，袋口直径约2尺，深约4尺。它可以容纳至多500磅，体积不超过64立方尺的东西。无论装了什么，这个袋子总是重15磅。从袋子里取出物品需要花费一个动作。",
+      "如果袋子超载、被戳破或撕裂，它将破裂并被摧毁，其内的所有东西都将被传送到星光位面的随机地点。如果袋子被内外翻转，则它所装载的东西将安全的掉落出来，但再次使用袋子之前必须将它恢复原状。需要呼吸的生物可以在袋中存活的分钟数为10除以生物数量（至少为一分钟），此后袋内的生物便开始窒息。",
+      "将一个次元袋放入由{@item 霍华德便利袋}、{@item 次元洞}或其他类似物品产生的异次元空间时，将立即摧毁这两件物品并打开一扇通往星界的传送门扉。门产生在被放入另一件物品的前一物件所在的空间位置。任何在该门周围10尺内的生物将被吸入门内并送到星光位面的随机位置，随后该门关闭。这扇门只能单向通过且不能被再次打开。"
+    ],
+    "containerCapacity": {
+      "weight": [
+        500
+      ],
+      "weightless": true
+    },
+    "optionalfeatures": [
+      "仿制魔法物品|TCE"
+    ],
+    "lootTables": [
+      "魔法物品表A",
+      "魔法物品表B"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Bag of Holding.webp"
+          },
+          "width": 560,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

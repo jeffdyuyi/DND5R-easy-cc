@@ -1,0 +1,24 @@
+[
+  {
+    "ENG_name": "Eagle Whistle",
+    "name": "鹰哨",
+    "source": "TftYP",
+    "page": 228,
+    "rarity": "rare",
+    "wondrous": true,
+    "weight": 1,
+    "modifySpeed": {
+      "equal": {
+        "fly": "走"
+      },
+      "multiply": {
+        "fly": 2
+      }
+    },
+    "entries": [
+      "你连续不断地吹响鹰哨时，可获得相当于双倍步行速度的飞行速度。你可以连续吹奏哨子的最大轮数等于5＋五倍自身体质调整值（最低为1 轮），或是直到你开始说话、屏息或开始窒息为止。你着陆时，鹰哨的效应也随之终止。若你在半空停止吹奏，飞行也将随之终止并开始坠落。鹰哨可使用三次。已消耗的次数将在每日黎明恢复。"
+    ],
+    "valueReference": 4000,
+    "type": "W"
+  }
+]

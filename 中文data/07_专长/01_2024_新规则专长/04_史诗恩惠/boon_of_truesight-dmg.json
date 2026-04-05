@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Boon of Truesight",
+    "name": "真实视觉之恩惠",
+    "source": "DMG",
+    "page": 232,
+    "reprintedAs": [
+      {
+        "uid": "真实视觉之恩惠|XPHB",
+        "tag": "feat"
+      }
+    ],
+    "type": "Boon",
+    "entries": [
+      "你获得60尺{@sense 真实视觉}范围。"
+    ]
+  }
+]

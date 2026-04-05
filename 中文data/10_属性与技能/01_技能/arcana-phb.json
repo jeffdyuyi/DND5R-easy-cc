@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Arcana",
+    "name": "奥秘",
+    "source": "PHB",
+    "page": 177,
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "奥秘|XPHB"
+    ],
+    "ability": "int",
+    "entries": [
+      "智力（奥秘）检定量化你忆起关于法术、魔法物品、奥秘符文、魔法学派、位面、位面住民等相关知识的能力。"
+    ],
+    "translator": "不全书"
+  }
+]

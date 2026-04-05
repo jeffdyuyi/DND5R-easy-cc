@@ -1,0 +1,82 @@
+[
+  {
+    "ENG_name": "Produce Flame",
+    "name": "燃火术",
+    "source": "XPHB",
+    "page": 308,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 0,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        }
+      }
+    ],
+    "entries": [
+      "一朵摇曳的火焰出现在你手中，火焰会存在至法术持续时间结束为止。火焰在你手中期间，不会散发任何热量也不会点燃任何东西，发出 20 尺半径的{@variantrule 明亮光照|XPHB}，以及其外 20 尺范围的{@variantrule 微光光照|XPHB}。此法术会在你再次施展它时提前终止。",
+      "直到法术结束为止，你可以用{@action 魔法|XPHB}魔法动作向 60 尺内的一名生物或一个物件丢出火焰。进行一次远程法术攻击。命中时，目标将受到{@damage 1d8}点火焰伤害。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Cantrip Upgrade",
+        "name": "戏法强化",
+        "type": "entries",
+        "entries": [
+          "到达特定等级后，此戏法的伤害将增加{@damage 1d8}：5 级（{@damage 2d8}）、11 级（{@damage 3d8}）、17 级（{@damage 4d8}）。"
+        ]
+      }
+    ],
+    "scalingLevelDice": {
+      "label": "火焰伤害",
+      "scaling": {
+        "1": "1d8",
+        "5": "2d8",
+        "11": "3d8",
+        "17": "4d8"
+      }
+    },
+    "damageInflict": [
+      "fire"
+    ],
+    "spellAttack": [
+      "R"
+    ],
+    "miscTags": [
+      "LGT",
+      "OBJ",
+      "SCL"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊"
+    ],
+    "display_school": "咒法系",
+    "display_damageInflict": [
+      "火焰"
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Sling Bullet, Ranging",
+    "name": "投石索子弹，测距",
+    "source": "GrimHollowPG24",
+    "page": 129,
+    "type": "A|XPHB",
+    "rarity": "none",
+    "weight": 0.05,
+    "value": 5,
+    "entries": [
+      "具有测距属性的进阶弹药比普通弹药更轻盈且制作更精良。当你发射测距弹药时，可以将武器的正常范围增加50%。"
+    ],
+    "miscTags": [
+      "CNS"
+    ]
+  }
+]

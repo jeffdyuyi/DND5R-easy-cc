@@ -1,0 +1,63 @@
+[
+  {
+    "ENG_name": "Fire Storm",
+    "name": "火焰风暴",
+    "source": "XPHB",
+    "page": 275,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 7,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 150
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "一片烈焰风暴出现在施法距离内。风暴的区域由至多十个 10 尺立方区域组成。你可以自行安排各立方区域的组合方式。每个{@variantrule 立方 [效应区域]|XPHB|立方}区域必须至少与一个其他的{@variantrule 立方 [效应区域]|XPHB|立方}区域相连。区域内每个生物必须进行一次敏捷豁免。豁免失败者将受到{@damage 7d10}点火焰伤害，豁免成功则伤害减半。",
+      "区域内所有未被着装或携带的可燃物件会开始{@hazard 燃烧|XPHB}。"
+    ],
+    "damageInflict": [
+      "fire"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "miscTags": [
+      "OBJ"
+    ],
+    "areaTags": [
+      "C"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师",
+      "德鲁伊",
+      "术士"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "敏捷"
+    ],
+    "display_damageInflict": [
+      "火焰"
+    ]
+  }
+]

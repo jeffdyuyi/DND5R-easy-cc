@@ -1,0 +1,55 @@
+[
+  {
+    "ENG_name": "Thread of Ascendancy",
+    "name": "统御之线",
+    "source": "CrookedMoon24",
+    "page": 158,
+    "type": "Thread of Fate",
+    "entries": [
+      "一个被统御之线连接的角色努力崛起至伟大并变为一个异界君主。他们被一个愚者的灵体头部的无意义胡言所引导，这些胡言对其他人来说不可察觉，其神秘的韵律包含着惊人的感知甚至一个统御重生的预言。",
+      {
+        "ENG_name": "Goal",
+        "name": "目标",
+        "type": "entries",
+        "entries": [
+          "角色必须解读其愚者的呓语，并发现必须做什么才能超越凡人境界，重生为强大的超自然实体。"
+        ]
+      },
+      {
+        "ENG_name": "Personalization",
+        "name": "个性化",
+        "type": "entries",
+        "entries": [
+          "确定期望飞升的异界本质。该角色希望成为天堂、地狱、精类之地或致命领域的主宰吗？他们是在遇到愚者之前就寻求这种类型的飞升，还是由精魄发起的？该角色为何追求这种变身重生？"
+        ]
+      },
+      {
+        "ENG_name": "Call to Adventure",
+        "name": "冒险召唤",
+        "type": "entries",
+        "entries": [
+          "角色在场或甚至意外导致一个愚者的斩首，其无身体的精魄困扰着它们。它们很快意识到恶灵常常不连贯的呓语中编织着真理和预知，而一个关于愚人、君主、重生和飞升的奇异韵律指向一个特定的阴郁时间和地点，冒险在那里开始。"
+        ]
+      },
+      {
+        "ENG_name": "Associated Background",
+        "name": "关联背景",
+        "type": "entries",
+        "entries": [
+          "{@background 狂欢者|crookedmoon24}"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/CrookedMoon24/Adventure/048-02-031.thread-of-ascendancy.webp"
+        },
+        "width": 635,
+        "height": 611
+      }
+    ]
+  }
+]

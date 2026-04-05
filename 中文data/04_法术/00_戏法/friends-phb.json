@@ -1,0 +1,61 @@
+[
+  {
+    "ENG_name": "Friends",
+    "name": "交友术",
+    "source": "PHB",
+    "page": 244,
+    "referenceSources": [
+      "CoS",
+      "US",
+      "IDRotF"
+    ],
+    "reprintedAs": [
+      "交友术|XPHB"
+    ],
+    "level": 0,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "s": true,
+      "m": "当此法术被施放时将少量化妆品擦在脸上"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "指定一个对你非敌对的生物，你在法术持续时间内对其进行的所有魅力检定均具有优势。当该法术终止时，该生物将意识到你曾使用魔法操弄他的情绪，从而对你的态度转为敌对。此时如果该生物有暴力倾向则会直接对你发动攻击，而非暴力倾向的生物则会寻求其他的报复形式（由 DM 决定），具体情况视你与其交互时的具体内容而定。"
+    ],
+    "miscTags": [
+      "ADV"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "惑控系"
+  }
+]

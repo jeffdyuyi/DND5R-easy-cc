@@ -1,0 +1,12 @@
+[
+  {
+    "ENG_name": "Boon of Peerless Aim",
+    "name": "无双狙杀之恩惠",
+    "source": "DMG",
+    "page": 232,
+    "type": "Boon",
+    "entries": [
+      "你可以让自己发动的一次远程攻击检定获得+20加值。使用该恩惠后，你需要完成一次短休才能再次使用它。"
+    ]
+  }
+]

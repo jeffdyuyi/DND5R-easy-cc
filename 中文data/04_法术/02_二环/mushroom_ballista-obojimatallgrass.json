@@ -1,0 +1,64 @@
+[
+  {
+    "ENG_name": "Mushroom Ballista",
+    "name": "魔菇术",
+    "source": "ObojimaTallGrass",
+    "page": 186,
+    "level": 2,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你触碰一到三枚弹药并为它们注入独特的魔菇魔法，使它们在弹药周围或尖端长出饱满的绿蘑菇。",
+      "当一个生物被使用该弹药的远程武器攻击命中时，它将受到额外的{@damage 1d6}毒素伤害并且必须进行一次敏捷豁免检定。若豁免失败，该生物将被推离等同于所受伤害数值的距离（向上取整至最近的5尺），最多15尺。无论此次攻击命中与否，该法术都会在该弹药碎片上结束。",
+      "如果你再次施放该法术，该法术会终止于任何仍受你先前施放影响的弹药。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "PHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "毒素"
+    ],
+    "savingThrow": [
+      "敏捷"
+    ],
+    "miscTags": [
+      "AAD",
+      "FMV"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Custom/Spells/Mushroom%20Ballista.webp"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "长棍",
+    "ENG_name": "Quarterstaff",
+    "source": "PHB",
+    "page": 149,
+    "edition": "classic",
+    "type": "M",
+    "rarity": "none",
+    "weight": 4,
+    "value": 20,
+    "weaponCategory": "simple",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "basicRules": true,
+    "referenceSources": [
+      "TTP",
+      "WDH"
+    ],
+    "reprintedAs": [
+      "长棍|XPHB"
+    ],
+    "srd": true,
+    "weapon": true
+  }
+]

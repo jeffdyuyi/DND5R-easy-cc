@@ -1,0 +1,47 @@
+[
+  {
+    "name": "人鱼",
+    "ENG_name": "Merfolk",
+    "source": "DMG",
+    "page": 282,
+    "size": [
+      "M"
+    ],
+    "speed": {
+      "walk": 10,
+      "swim": 40
+    },
+    "traitTags": [
+      "水陆两栖",
+      "NPC种族"
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "aquan": true
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Amphibious",
+        "name": "水陆两栖",
+        "entries": [
+          "你可以在空气和水中呼吸。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Languages",
+        "name": "语言",
+        "entries": [
+          "你可以说、读、写通用语和水族语。"
+        ],
+        "type": "entries"
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/merfolk.mp3"
+    }
+  }
+]

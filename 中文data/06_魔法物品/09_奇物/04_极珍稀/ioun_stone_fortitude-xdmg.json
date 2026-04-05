@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Ioun Stone, Fortitude",
+    "name": "艾恩石, 坚韧",
+    "source": "XDMG",
+    "page": 273,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "ability": {
+      "con": 2
+    },
+    "hasRefs": true,
+    "entries": [
+      "{#itemEntry 艾恩石|XDMG}",
+      "在这颗粉色的长菱形艾恩石环绕在你头顶期间，你的体质属性增加2，最多增加至20。"
+    ],
+    "lootTables": [
+      "奥秘 - 极珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 40000,
+    "fluff": {},
+    "type": "W"
+  }
+]

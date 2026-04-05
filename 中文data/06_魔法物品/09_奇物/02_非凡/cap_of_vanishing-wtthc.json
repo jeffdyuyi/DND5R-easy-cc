@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Cap of Vanishing",
+    "name": "消失之帽",
+    "source": "WttHC",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": 3,
+    "charges": 3,
+    "entries": [
+      "这顶帽子有3次充能，并在每日拂晓时恢复所有已消耗的充能。当你戴着这顶帽子时，你可以执行一个{@action 魔法|XPHB}动作并消耗1次充能使自己获得{@condition 隐形|XPHB}状态，持续10分钟。如果帽子被取下，或在你进行攻击检定、造成伤害或施展法术后，该效果会提前结束。"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/WttHC/Cap of Vanishing.webp"
+          },
+          "width": 823,
+          "height": 999
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

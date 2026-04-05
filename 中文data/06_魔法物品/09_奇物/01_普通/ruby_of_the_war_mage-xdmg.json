@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Ruby of the War Mage",
+    "name": "战法红石",
+    "source": "XDMG",
+    "page": 302,
+    "type": "SCF|XPHB",
+    "rarity": "common",
+    "reqAttune": "由施法者",
+    "reqAttuneTags": [
+      {
+        "spellcasting": true
+      }
+    ],
+    "wondrous": true,
+    "focus": true,
+    "entries": [
+      "这枚直径1寸的红宝石上蚀刻着魔能符文。此红宝石允许你使用一把简易或军用武器作为你施展法术的{@variantrule 法器|XPHB}。要使该词条生效，你必须将红宝石按压在该武器上至少10分钟，以此将其附着在武器上。随后，除非你使用一个{@action 魔法|XPHB}动作将其取下、武器被摧毁或你与红宝石的{@variantrule 同调|XPHB}结束，否则红宝石将无法被移除。"
+    ],
+    "lootTables": [
+      "奥秘 - 普通|XDMG",
+      "圣物 - 普通|XDMG"
+    ],
+    "translator": "不全书",
+    "valueReference": 100
+  }
+]

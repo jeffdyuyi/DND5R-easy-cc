@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Servo Crafting",
+    "name": "制造自动机",
+    "source": "PSK",
+    "page": 13,
+    "prerequisite": [
+      {
+        "ability": [
+          {
+            "int": 13
+          }
+        ]
+      }
+    ],
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "ritual": [
+              "寻获魔宠"
+            ]
+          }
+        }
+      }
+    ],
+    "entries": [
+      "你精于制造{@creature 自动机|PSK|自动机}可充任个人助理的微型构装体。你可以将{@spell 寻获魔宠}这一法术作为仪式施放，制造一架{@creature 自动机|PSK}（而不是动物）作为你的魔宠。自动机的相关数据见{@creature 自动机|PSK}。在此外各方面，自动机都与{@spell 寻获魔宠}法术中所描述的能力相同。",
+      "只要你与你的魔宠处于同一个存在位面，你就可以与你的自动机魔宠通过心灵感应的方式进行交流，并通过其感官感受环境。你也可以通过自动机以自己的声音讲话。",
+      "此外，你执行{@action 攻击}动作时，可以放弃发动一次自己的攻击，转而让你的自动机魔宠发动一次攻击。"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "feats/PSK/Servo Crafting.webp"
+          },
+          "title": "自动机",
+          "credit": "Igor Kieryluk",
+          "width": 739,
+          "height": 985
+        }
+      ]
+    }
+  }
+]

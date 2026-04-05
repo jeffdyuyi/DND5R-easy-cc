@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Crimson Octopus Ink",
+    "name": "猩红章鱼墨水",
+    "source": "ObojimaTallGrass",
+    "page": 216,
+    "type": "Ingred",
+    "rarity": "rare",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 19|large}|SneakerProMedium}",
+            "{@font {@style 18|large}|SneakerProMedium}",
+            "{@font {@style 19|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "使用珍稀猩红章鱼墨水的工匠和书士声称这是岛上最高质量的墨水和染料。但药剂制造者也发现了这种墨水的奥术用途，有时会就谁更有资格使用这种极其珍稀珍贵的墨水发生激烈争论。浅滩中已知只有三只猩红章鱼，狮子鱼王狂热地守卫着其中一只。对于潜在的偷猎者或墨水采集者来说更困难的是，猩红章鱼是警觉的伪装大师，它们很聪明且很少在白昼出现。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/crimson-octopus-ink.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 1801,
+          "height": 1801
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Renaissance Bullets (10)",
+    "name": "镀银文艺复兴子弹(10)",
+    "source": "PHB",
+    "page": 148,
+    "reprintedAs": [
+      "枪械子弹 (10)|XPHB"
+    ],
+    "edition": "classic",
+    "type": "AF|DMG",
+    "rarity": "unknown",
+    "weight": 2,
+    "value": 300,
+    "age": "文艺复兴",
+    "bulletFirearm": true,
+    "packContents": [
+      {
+        "item": "文艺复兴子弹",
+        "quantity": 10
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "namePrefix": "镀银",
+    "basicRules": true,
+    "tier": "次要",
+    "_isVariant": true
+  }
+]

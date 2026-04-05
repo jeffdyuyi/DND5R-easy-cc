@@ -1,0 +1,61 @@
+[
+  {
+    "ENG_name": "Protection from Energy",
+    "name": "防护能量",
+    "source": "XPHB",
+    "page": 309,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 3,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "法术持续时间内，你触碰的一名自愿生物具有你选择的一种伤害类型的{@variantrule 抗性|XPHB}：强酸、寒冷、火焰、闪电、雷鸣。"
+    ],
+    "damageResist": [
+      "强酸",
+      "寒冷",
+      "火焰",
+      "闪电",
+      "雷鸣"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师",
+      "德鲁伊",
+      "游侠",
+      "术士",
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "防护系"
+  }
+]

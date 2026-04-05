@@ -1,0 +1,30 @@
+[
+  {
+    "name": "麻袋",
+    "ENG_name": "Sack",
+    "source": "PHB",
+    "page": 153,
+    "type": "G",
+    "rarity": "none",
+    "weight": 0.5,
+    "value": 1,
+    "entries": [
+      "一个麻袋最多可容纳1立方尺或30磅的物品。"
+    ],
+    "basicRules": true,
+    "containerCapacity": {
+      "weight": [
+        30
+      ]
+    },
+    "referenceSources": [
+      "CRCotN",
+      "DoSI",
+      "PaBTSO"
+    ],
+    "reprintedAs": [
+      "麻袋|XPHB"
+    ],
+    "srd": true
+  }
+]

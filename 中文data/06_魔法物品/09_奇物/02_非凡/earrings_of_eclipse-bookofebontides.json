@@ -1,0 +1,13 @@
+[
+  {
+    "ENG_name": "Earrings of Eclipse",
+    "name": "蚀之耳环",
+    "source": "BookOfEbonTides",
+    "page": 196,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这两块烟熏石英立方体被镶嵌在简易的银质耳钉上。当你佩戴这对耳环时，即使生物能看见你或你没有任何东西遮挡生物视线，你也可以在处于{@quickref 视野与光照||2||微光光照}或黑暗的区域中保持静止不动时执行{@action 躲藏}动作。如果你在黑暗中使用{@action 躲藏}动作，你在敏捷（{@skill 隐匿}）检定上具有优势。如果你移动、攻击、施法或做出任何非静止的动作，你将不再隐藏并可被正常察觉。"
+    ]
+  }
+]

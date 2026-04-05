@@ -1,0 +1,79 @@
+[
+  {
+    "ENG_name": "Polychromatic Bubble",
+    "name": "缤纷泡泡",
+    "source": "BookOfEbonTides",
+    "page": 69,
+    "level": 4,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 90
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一块肥皂和一滴燃油"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你在施法范围内为一个大型或更小的生物或物件创造一个闪烁的缤纷泡泡。泡泡是一个半径5尺的球状，具有10点生命值且AC等于你的法术豁免DC。泡泡会带着其中的内容物在每回合开始时上升10尺，最高30尺。在回合开始时被困在泡泡内的生物无法看到或听到泡泡外的任何东西，并且必须进行一次感知豁免检定否则会被你和泡泡{@condition 魅惑}直到其下个回合开始。泡泡外以攻击为目标的生物必须进行一次感知豁免检定否则会被你和泡泡{@condition 魅惑}直到其下个回合开始。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用5环或更高环阶的法术位施放该法术时，每比4环高1环，你就能额外创造一个泡泡。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    },
+    "conditionInflict": [
+      "魅惑"
+    ],
+    "savingThrow": [
+      "感知"
+    ]
+  }
+]

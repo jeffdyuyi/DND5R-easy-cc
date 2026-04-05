@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Snap Vine Sap",
+    "name": "Snap Vine 削弱",
+    "source": "ObojimaTallGrass",
+    "page": 208,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 0|large}|SneakerProMedium}",
+            "{@font {@style 2|large}|SneakerProMedium}",
+            "{@font {@style 0|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "Snap Vine 是肉食性植物，具有粗壮的主茎和许多较细的抓取性钩状卷须，它们用这些卷须伏击毫无防备的鸟类和小型啮齿动物。削弱是一种粘稠的橙红色流体。"
+    ],
+    "lootTables": [
+      "海岸高地普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/snap-vine-sap.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 1631,
+          "height": 1631
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "ENG_name": "Dragon Pistol",
+    "name": "龙手枪",
+    "source": "GrimHollowPG24",
+    "page": 129,
+    "type": "R|XPHB",
+    "rarity": "none",
+    "weight": 4,
+    "value": 35000,
+    "weaponCategory": "进阶",
+    "property": [
+      "A|XPHB",
+      "BP|GrimHollowPG24",
+      "LD|XPHB"
+    ],
+    "mastery": [
+      "散射术|GrimHollowPG24|散射术（5尺）"
+    ],
+    "range": "20",
+    "dmg1": "2d4",
+    "dmgType": "P",
+    "weapon": true,
+    "ammoType": "龙之射击|GrimHollowPG24"
+  }
+]

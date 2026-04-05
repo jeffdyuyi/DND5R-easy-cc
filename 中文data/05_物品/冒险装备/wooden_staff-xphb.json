@@ -1,0 +1,28 @@
+[
+  {
+    "name": "木质法杖",
+    "ENG_name": "Wooden Staff",
+    "source": "XPHB",
+    "page": 225,
+    "edition": "one",
+    "type": "SCF|XPHB",
+    "rarity": "none",
+    "weight": 4,
+    "value": 500,
+    "dmg1": "1d6",
+    "dmg2": "1d8",
+    "dmgType": "B",
+    "group": [
+      "德鲁伊法器"
+    ],
+    "mastery": [
+      "失衡|XPHB"
+    ],
+    "property": [
+      "V"
+    ],
+    "scfType": "druid",
+    "srd52": true,
+    "weaponCategory": "simple"
+  }
+]

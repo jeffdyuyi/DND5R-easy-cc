@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Bubble Gum",
+    "name": "泡泡糖",
+    "source": "ObojimaTallGrass",
+    "page": 216,
+    "type": "Ingred",
+    "rarity": "rare",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 18|large}|SneakerProMedium}",
+            "{@font {@style 19|large}|SneakerProMedium}",
+            "{@font {@style 20|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "尽管口味有许多，所有泡泡糖都是珍稀的。它最常见于粘在受难者建筑物的墙壁或地板上，或是粘在鞋底。更罕见的是未咀嚼且仍包裹在锡箔纸中的泡泡糖。泡泡糖可咀嚼但不可吞咽的特性令岛屿上的许多人感到困惑，岛上的学者们将这种令人愉悦的材质称为'咀嚼物'。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/bubble-gum.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 2081,
+          "height": 2081
+        }
+      ]
+    }
+  }
+]

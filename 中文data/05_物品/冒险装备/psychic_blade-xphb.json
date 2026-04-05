@@ -1,0 +1,25 @@
+[
+  {
+    "name": "心灵之刃",
+    "ENG_name": "Psychic Blade",
+    "source": "XPHB",
+    "page": 136,
+    "type": "M",
+    "rarity": "none",
+    "dmg1": "1d6",
+    "dmgType": "Y",
+    "mastery": [
+      {
+        "uid": "侵扰|XPHB",
+        "note": "你能使用它的精通，而不算作你能使用的武器精通总数中"
+      }
+    ],
+    "property": [
+      "F|XPHB",
+      "T|XPHB"
+    ],
+    "range": "60/120",
+    "translator": "不全书",
+    "weaponCategory": "simple"
+  }
+]

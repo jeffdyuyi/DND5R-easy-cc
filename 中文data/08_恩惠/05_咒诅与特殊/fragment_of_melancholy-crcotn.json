@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Fragment of Melancholy",
+    "name": "哀伤碎片",
+    "source": "CRCotN",
+    "page": 214,
+    "type": "Fragment of Suffering",
+    "entries": [
+      {
+        "ENG_name": "Benefit",
+        "name": "增益",
+        "type": "entries",
+        "entries": [
+          "当你未能通过一次感知或魅力豁免检定时，你可以以优势重新掷骰，可能会将失败转变为成功。使用此好处后，你必须完成一次长休息才能再次使用它。"
+        ]
+      },
+      {
+        "ENG_name": "Drawback",
+        "name": "缺陷",
+        "type": "entries",
+        "entries": [
+          "如果你使用这个碎片的增益效果，但未能将失败的豁免检定转为成功，你将陷入{@condition 失能}状态直到你的下一回合结束，因绝望而无法行动。"
+        ]
+      }
+    ]
+  }
+]

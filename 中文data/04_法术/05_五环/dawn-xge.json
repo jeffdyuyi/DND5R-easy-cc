@@ -1,0 +1,71 @@
+[
+  {
+    "ENG_name": "Dawn",
+    "name": "拂晓",
+    "source": "XGE",
+    "page": 153,
+    "level": 5,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "价值至少 100gp 的旭日坠饰",
+        "cost": 10000
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "拂晓之光落在施法距离内你指定的地点，形成一道 30 尺半径、40 尺高度的明亮光柱。这个光芒被视为阳光。",
+      "当光柱出现时，每个处于其中的生物都必须进行体质豁免，失败将受到{@damage 4d10}光耀伤害，成功则只承受一半。在光柱中结束回合的生物也必须再次进行这个豁免。",
+      "如果你在光柱 60 尺内，你可以在你的回合以一个附赠动作将它移动 60 尺。"
+    ],
+    "damageInflict": [
+      "radiant"
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "miscTags": [
+      "LGTS",
+      "UBA"
+    ],
+    "areaTags": [
+      "Y"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师",
+      "法师"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "体质"
+    ],
+    "display_damageInflict": [
+      "光辉"
+    ]
+  }
+]

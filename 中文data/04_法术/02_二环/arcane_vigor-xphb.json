@@ -1,0 +1,54 @@
+[
+  {
+    "ENG_name": "Arcane Vigor",
+    "name": "复苏秘法",
+    "source": "XPHB",
+    "page": 242,
+    "level": 2,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你利用自己的生命力来治愈自身。投一枚或两枚你还未消耗的{@variantrule 生命值骰|XPHB}，然后恢复等于结果加你的施法属性调整值的总和的{@variantrule 生命值|XPHB}。随后，这些生命骰会被法术消耗。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "使用的法术位每比二环高一环，你就能多投掷一枚未使用的生命骰。"
+        ]
+      }
+    ],
+    "miscTags": [
+      "HL"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "防护系"
+  }
+]

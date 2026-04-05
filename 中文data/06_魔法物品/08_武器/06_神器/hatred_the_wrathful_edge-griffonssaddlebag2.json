@@ -1,0 +1,106 @@
+[
+  {
+    "ENG_name": "Hatred, the Wrathful Edge",
+    "name": "憎恨之锋",
+    "source": "GriffonsSaddlebag2",
+    "page": 197,
+    "baseItem": "巨斧|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "artifact",
+    "reqAttune": "由该战斧认为值得的生物",
+    "sentient": true,
+    "weight": 7,
+    "weaponCategory": "军用",
+    "property": [
+      "H",
+      "2H"
+    ],
+    "dmg1": "1d12",
+    "dmgType": "S",
+    "bonusWeapon": "+3",
+    "entries": [
+      "这柄黑铁战斧在熔怒火山口的炽热火焰中锻造而成，它曾是无数凡人灵魂的果断终结者。作为火山口城市审判庭的标志，这件武器是愤怒与恶意的化身，并被注入了每次夺取生命时都会涌动的血魔法。其暗色金属的表面闪烁着熔岩般的光纹，它会在被挥舞时留下翻滚的火山火花轨迹。",
+      "你使用这把魔化武器进行的攻击检定和伤害掷骰获得+3加值，且命中时对目标额外造成{@damage 2d6}火焰或闪电伤害（由你选择）。当你用此武器将一个活体生物的生命值降至0时，你获得等同于此次攻击造成的火焰或闪电伤害数值的临时生命值。",
+      {
+        "ENG_name": "Explosive Rage",
+        "name": "爆发怒火",
+        "type": "entries",
+        "entries": [
+          "若你是野蛮人，当你在完成一次短休或长休后首次进入狂暴时，你可以选择10尺范围内的至多6个生物，它们受到{@damage 4d6}火焰或闪电伤害（由你选择）。此外，在狂暴期间，任何接触你或在5尺内以近战攻击命中你的生物都将受到{@damage 1d6}火焰或闪电伤害（由你选择）。"
+        ]
+      },
+      {
+        "ENG_name": "Fiendish Mind",
+        "name": "邪魔心智",
+        "type": "entries",
+        "entries": [
+          "在你已与此武器同调期间，你可以说、读、写{@language 深渊语}和{@language 炼狱语}。"
+        ]
+      },
+      {
+        "ENG_name": "Random Properties",
+        "name": "随机词条",
+        "type": "entries",
+        "entries": [
+          "憎恨，愤怒之刃具有以下随机词条：",
+          {
+            "type": "list",
+            "items": [
+              "1 {@table 神器词条; 次要增益词条|dmg|次要增益词条}",
+              "1 {@table 神器词条; 主要增益词条|dmg|主要增益词条}",
+              "1 {@table 神器词条; 次要减益词条|dmg|次要减益词条}",
+              "1 {@table 神器词条; 主要减益词条|dmg|主要减益词条}"
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Volcanic Immunity",
+        "name": "熔岩之护",
+        "type": "entries",
+        "entries": [
+          "在你已与此武器同调期间，你免疫火焰伤害。此外，你可以如同在牢固地面上一般在熔岩上站立和行走。"
+        ]
+      },
+      {
+        "ENG_name": "Sentience",
+        "name": "智能",
+        "type": "entries",
+        "entries": [
+          "憎恨，愤怒之锋是一件混乱邪恶阵营的智能武器，具有14智力、13感知和17魅力。它具有听觉和{@sense 黑暗视觉}，范围为120尺。",
+          "此武器可以与持有者进行心灵感应，并且能说、读、理解{@language 深渊语}、{@language 通用语}和{@language 炼狱语}。"
+        ]
+      },
+      {
+        "ENG_name": "Personality",
+        "name": "个性",
+        "type": "entries",
+        "entries": [
+          "此武器享受愤怒的感觉。它认为所有冲突最终都会以同样的暴力结局收场，并鼓励持有者寻求这种快速而血腥的解决方案。"
+        ]
+      },
+      {
+        "ENG_name": "Destroying the Axe",
+        "name": "摧毁战斧",
+        "type": "entries",
+        "entries": [
+          "摧毁此斧的唯一方法是在上层位面逐渐驱散其中的邪恶灵魂。在上层位面中每天对武器施展{@spell 驱逐善恶}持续5年，最终会使其中愤怒的灵魂消散。当灵魂离开后，斧头将失去除攻击检定和伤害掷骰加值之外的所有词条，且不再比寻常的魔法武器更难摧毁。"
+        ]
+      }
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Hatred-The-Wrathful-Edge.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

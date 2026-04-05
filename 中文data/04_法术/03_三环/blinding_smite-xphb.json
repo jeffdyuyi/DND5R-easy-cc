@@ -1,0 +1,71 @@
+[
+  {
+    "ENG_name": "Blinding Smite",
+    "name": "致盲斩",
+    "source": "XPHB",
+    "page": 247,
+    "level": 3,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作",
+        "condition": "当你使用近战武器或{@variantrule 徒手打击|XPHB}命中一个生物后立即执行"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "被该次攻击检定命中的目标会在此次攻击中额外受到{@damage 3d8}点光耀伤害，并且目标陷入{@condition 目盲|XPHB}状态直至法术结束。陷入{@condition 目盲|XPHB}的目标在其每回合结束时可以进行一次体质豁免，豁免成功则终止其身上的法术。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "你使用的法术位每比三环高一环，此法术的额外伤害提升{@scaledamage 3d8|3-9|1d8}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "radiant"
+    ],
+    "conditionInflict": [
+      "目盲"
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "miscTags": [
+      "AAD"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "圣武士"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "体质"
+    ],
+    "display_damageInflict": [
+      "光辉"
+    ]
+  }
+]

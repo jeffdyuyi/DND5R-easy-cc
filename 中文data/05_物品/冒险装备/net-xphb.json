@@ -1,0 +1,37 @@
+[
+  {
+    "name": "捕网",
+    "ENG_name": "Net",
+    "source": "XPHB",
+    "page": 227,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 3,
+    "value": 100,
+    "entries": [
+      "当你执行{@action 攻击|XPHB}动作，你可以将你的一次攻击替换为丢出一张捕网。你可以选择位于你15尺内可见的一个生物作为目标。该目标必须通过一次敏捷豁免（{@dc 8}+你的敏捷调整值+你的{@variantrule 熟练|XPHB|熟练加值}），否则陷入{@condition 束缚|XPHB}状态，直至挣脱。体型是巨型及以上的目标将自动通过豁免。",
+      "被束缚的目标或者位于目标5尺内的生物，可以通过一个动作来进行一次{@dc 10}的力量（{@skill 运动|XPHB}）检定来挣脱捕网。若检定成功，被{@condition 束缚|XPHB}的生物将被解放。摧毁捕网（AC 10；5 HP；{@variantrule 免疫|XPHB}钝击、毒素和心灵伤害）也能解放被困目标并结束捕网的效果。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XPHB/Net.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 850,
+          "height": 809
+        }
+      ]
+    },
+    "basicRules2024": true,
+    "hasFluffImages": true,
+    "referenceSources": [
+      "UtHftLH"
+    ],
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

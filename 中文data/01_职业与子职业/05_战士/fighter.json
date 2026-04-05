@@ -1,0 +1,547 @@
+[
+  {
+    "name": "战士",
+    "ENG_name": "Fighter",
+    "source": "PHB",
+    "edition": "classic",
+    "classData": {
+      "ENG_name": "Fighter",
+      "name": "战士",
+      "source": "PHB",
+      "page": 70,
+      "srd": true,
+      "basicRules": true,
+      "reprintedAs": [
+        "战士|XPHB"
+      ],
+      "edition": "classic",
+      "hd": {
+        "number": 1,
+        "faces": 10
+      },
+      "proficiency": [
+        "str",
+        "con"
+      ],
+      "optionalfeatureProgression": [
+        {
+          "ENG_name": "Fighting Style",
+          "name": "战斗风格",
+          "featureType": [
+            "FS:F"
+          ],
+          "progression": {
+            "1": 1
+          }
+        }
+      ],
+      "startingProficiencies": {
+        "armor": [
+          "light",
+          "medium",
+          "heavy",
+          "shield"
+        ],
+        "weapons": [
+          "简易",
+          "军用"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "acrobatics",
+                "animal handling",
+                "athletics",
+                "history",
+                "insight",
+                "intimidation",
+                "perception",
+                "survival"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "default": [
+          "(a) {@item 箭矢 (20)|PHB|20支箭} 或 (b) {@item 链甲|PHB}、{@item 皮甲|PHB} 和 {@item 长弓|PHB}",
+          "(a) 一把{@filter 军用武器|items|source=PHB|category=基础|type=军用武器}和一面{@item 盾牌|PHB} ，或 (b) 两把{@filter 军用武器|items|source=PHB|category=基础|type=军用武器}",
+          "(a) 一把{@item 轻弩|PHB}和{@item 弩矢(20)|PHB|20支弩箭}或者 (b) 两把{@item 手斧|PHB|手斧}",
+          "(a) 一个{@item 地城套组|PHB}或(b) 一个{@item 探索套组|PHB}"
+        ],
+        "goldAlternative": "{@dice 5d4 × 10|5d4 × 10|起始金币}",
+        "defaultData": [
+          {
+            "a": [
+              "链甲|PHB"
+            ],
+            "b": [
+              "皮甲|PHB",
+              "长弓|PHB",
+              "箭矢 (20)|PHB"
+            ]
+          },
+          {
+            "a": [
+              {
+                "equipmentType": "weaponMartial"
+              },
+              "盾牌|PHB"
+            ],
+            "b": [
+              {
+                "equipmentType": "weaponMartial",
+                "quantity": 2
+              }
+            ]
+          },
+          {
+            "a": [
+              "轻弩|PHB",
+              "弩矢(20)|PHB"
+            ],
+            "b": [
+              {
+                "item": "手斧|PHB",
+                "quantity": 2
+              }
+            ]
+          },
+          {
+            "a": [
+              "地城套组|PHB"
+            ],
+            "b": [
+              "探索套组|PHB"
+            ]
+          }
+        ]
+      },
+      "multiclassing": {
+        "requirements": {
+          "or": [
+            {
+              "str": 13,
+              "dex": 13
+            }
+          ]
+        },
+        "proficienciesGained": {
+          "armor": [
+            "light",
+            "medium",
+            "shield"
+          ],
+          "weapons": [
+            "简易",
+            "军用"
+          ]
+        }
+      },
+      "classFeatures": [
+        "战斗风格|战士||1",
+        "回气|战士||1",
+        "动作如潮|战士||2",
+        {
+          "classFeature": "武术范型|战士||3",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|战士||4",
+        "替换武术|战士||4|TCE",
+        "额外攻击|战士||5",
+        "属性值提升|战士||6",
+        {
+          "classFeature": "范型特性|战士||7",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|战士||8",
+        "不屈|战士||9",
+        {
+          "classFeature": "范型特性|战士||10",
+          "gainSubclassFeature": true
+        },
+        "额外攻击(2)|战士||11",
+        "属性值提升|战士||12",
+        "不屈(2次)|战士||13",
+        "属性值提升|战士||14",
+        {
+          "classFeature": "范型特性|战士||15",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|战士||16",
+        "动作如潮(2次)|战士||17",
+        "不屈(3次)|战士||17",
+        {
+          "classFeature": "范型特性|战士||18",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|战士||19",
+        "额外攻击(3)|战士||20"
+      ],
+      "subclassTitle": "武术范型",
+      "hasFluff": true,
+      "hasFluffImages": true
+    },
+    "subclasses": [
+      {
+        "name": "战斗大师",
+        "source": "PHB",
+        "shortName": "战斗大师"
+      },
+      {
+        "name": "勇士",
+        "source": "PHB",
+        "shortName": "勇士"
+      },
+      {
+        "name": "奥法骑士",
+        "source": "PHB",
+        "shortName": "奥法骑士"
+      },
+      {
+        "name": "魔射手",
+        "source": "XGE",
+        "shortName": "魔射手"
+      },
+      {
+        "name": "骁骑士",
+        "source": "XGE",
+        "shortName": "骁骑士"
+      },
+      {
+        "name": "武士",
+        "source": "XGE",
+        "shortName": "武士"
+      },
+      {
+        "name": "灵能武士",
+        "source": "TCE",
+        "shortName": "灵能武士"
+      },
+      {
+        "name": "符文骑士",
+        "source": "TCE",
+        "shortName": "符文骑士"
+      }
+    ]
+  },
+  {
+    "name": "战士",
+    "ENG_name": "Fighter",
+    "source": "XPHB",
+    "edition": "one",
+    "classData": {
+      "ENG_name": "Fighter",
+      "name": "战士",
+      "source": "XPHB",
+      "page": 90,
+      "srd52": true,
+      "basicRules2024": true,
+      "edition": "one",
+      "primaryAbility": [
+        {
+          "str": true
+        },
+        {
+          "dex": true
+        }
+      ],
+      "hd": {
+        "number": 1,
+        "faces": 10
+      },
+      "proficiency": [
+        "str",
+        "con"
+      ],
+      "featProgression": [
+        {
+          "ENG_name": "Fighting Style",
+          "name": "战斗风格",
+          "category": [
+            "FS"
+          ],
+          "progression": {
+            "1": 1
+          }
+        },
+        {
+          "ENG_name": "Epic Boon",
+          "name": "传奇恩惠",
+          "category": [
+            "EB"
+          ],
+          "progression": {
+            "19": 1
+          }
+        }
+      ],
+      "startingProficiencies": {
+        "armor": [
+          "light",
+          "medium",
+          "heavy",
+          "shield"
+        ],
+        "weapons": [
+          "简易",
+          "军用"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "acrobatics",
+                "animal handling",
+                "athletics",
+                "history",
+                "insight",
+                "intimidation",
+                "persuasion",
+                "perception",
+                "survival"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "defaultData": [
+          {
+            "A": [
+              {
+                "item": "链甲|XPHB"
+              },
+              {
+                "item": "巨剑|XPHB"
+              },
+              {
+                "item": "链枷|XPHB"
+              },
+              {
+                "item": "标枪|XPHB",
+                "quantity": 8
+              },
+              {
+                "item": "地城套组|XPHB"
+              },
+              {
+                "value": 400
+              }
+            ],
+            "B": [
+              {
+                "item": "镶钉皮甲|XPHB"
+              },
+              {
+                "item": "弯刀|XPHB"
+              },
+              {
+                "item": "短剑|XPHB"
+              },
+              {
+                "item": "长弓|XPHB"
+              },
+              {
+                "item": "箭矢 (20)|XPHB"
+              },
+              {
+                "item": "箭袋|XPHB"
+              },
+              {
+                "item": "地城套组|XPHB"
+              },
+              {
+                "value": 1100
+              }
+            ],
+            "C": [
+              {
+                "value": 15500
+              }
+            ]
+          }
+        ],
+        "entries": [
+          "{@i 选择A、B或C：} (A) {@item 链甲|XPHB}, {@item 巨剑|XPHB}, {@item 链枷|XPHB}, 8 {@item 标枪|XPHB|标枪}, {@item 地城套组|XPHB}和4 GP; (B) {@item 镶钉皮甲|XPHB}, {@item 弯刀|XPHB}, {@item 短剑|XPHB}, {@item 长弓|XPHB}, {@item 箭矢 (20)|XPHB|20支箭}, {@item 箭袋|XPHB}, {@item 地城套组|XPHB}和11 GP; 或 (C) 155 GP"
+        ]
+      },
+      "multiclassing": {
+        "proficienciesGained": {
+          "armor": [
+            "light",
+            "medium",
+            "shield"
+          ],
+          "weapons": [
+            "军用"
+          ]
+        }
+      },
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "回气",
+            "武器精通"
+          ],
+          "rows": [
+            [
+              "2",
+              "3"
+            ],
+            [
+              "2",
+              "3"
+            ],
+            [
+              "2",
+              "3"
+            ],
+            [
+              "3",
+              "4"
+            ],
+            [
+              "3",
+              "4"
+            ],
+            [
+              "3",
+              "4"
+            ],
+            [
+              "3",
+              "4"
+            ],
+            [
+              "3",
+              "4"
+            ],
+            [
+              "3",
+              "4"
+            ],
+            [
+              "4",
+              "5"
+            ],
+            [
+              "4",
+              "5"
+            ],
+            [
+              "4",
+              "5"
+            ],
+            [
+              "4",
+              "5"
+            ],
+            [
+              "4",
+              "5"
+            ],
+            [
+              "4",
+              "5"
+            ],
+            [
+              "4",
+              "5"
+            ],
+            [
+              "4",
+              "6"
+            ],
+            [
+              "4",
+              "6"
+            ],
+            [
+              "4",
+              "6"
+            ],
+            [
+              "4",
+              "6"
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "战斗风格|战士|XPHB|1",
+        "回气|战士|XPHB|1",
+        "武器精通|战士|XPHB|1",
+        "动作如潮|战士|XPHB|2",
+        "战术思维|战士|XPHB|2",
+        {
+          "classFeature": "战士子职|战士|XPHB|3",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|战士|XPHB|4",
+        "额外攻击|战士|XPHB|5",
+        "战术转进|战士|XPHB|5",
+        "属性值提升|战士|XPHB|6",
+        {
+          "classFeature": "子职特性|战士|XPHB|7",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|战士|XPHB|8",
+        "不屈|战士|XPHB|9",
+        "战术主宰|战士|XPHB|9",
+        {
+          "classFeature": "子职特性|战士|XPHB|10",
+          "gainSubclassFeature": true
+        },
+        "额外攻击（二）|战士|XPHB|11",
+        "属性值提升|战士|XPHB|12",
+        "不屈|战士|XPHB|13",
+        "究明攻击|战士|XPHB|13",
+        "属性值提升|战士|XPHB|14",
+        {
+          "classFeature": "子职特性|战士|XPHB|15",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|战士|XPHB|16",
+        "动作如潮|战士|XPHB|17",
+        "不屈|战士|XPHB|17",
+        {
+          "classFeature": "子职特性|战士|XPHB|18",
+          "gainSubclassFeature": true
+        },
+        "传奇恩惠|战士|XPHB|19",
+        "额外攻击（三）|战士|XPHB|20"
+      ],
+      "subclassTitle": "战士子职",
+      "hasFluff": true,
+      "hasFluffImages": true
+    },
+    "subclasses": [
+      {
+        "name": "战斗大师",
+        "shortName": "战斗大师",
+        "source": "XPHB"
+      },
+      {
+        "name": "勇士",
+        "shortName": "勇士",
+        "source": "XPHB"
+      },
+      {
+        "name": "奥法骑士",
+        "shortName": "奥法骑士",
+        "source": "XPHB"
+      },
+      {
+        "name": "灵能武士",
+        "shortName": "灵能武士",
+        "source": "XPHB"
+      }
+    ]
+  }
+]

@@ -1,0 +1,75 @@
+[
+  {
+    "name": "牛头人",
+    "ENG_name": "Minotaur",
+    "source": "MPMM",
+    "page": 27,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "traitTags": [
+      "天生武器"
+    ],
+    "entries": [
+      {
+        "ENG_name": "Horns",
+        "name": "角击",
+        "type": "entries",
+        "entries": [
+          "你拥有双角，可以用来进行徒手打击。当你使用它命中目标时，该打击造成{@damage 1d6}+你的力量调整值的穿刺伤害，而非徒手打击原本的钝击伤害。"
+        ]
+      },
+      {
+        "ENG_name": "Goring Rush",
+        "name": "猛抵冲撞",
+        "type": "entries",
+        "entries": [
+          "在你回合内执行{@action 疾走}动作并移动至少20尺后，你可以立即用你的双角发动一次近战攻击作为附赠动作。"
+        ]
+      },
+      {
+        "ENG_name": "Hammering Horns",
+        "name": "角锤",
+        "type": "entries",
+        "entries": [
+          "在你的回合中，当你用近战攻击去作为{@action 攻击}动作的一部分命中一个生物时，你可以用附赠动作以牛角尝试推撞他。目标生物必须在你的5尺范围内，且体型不能比你大超过一级。除非该生物在进行对抗DC为8+你的熟练加值+你的力量调整值的力量豁免中成功。否则，你将其从你的身边推离10尺。"
+        ]
+      },
+      {
+        "ENG_name": "Labyrinthine Recall",
+        "name": "迷宫追忆",
+        "type": "entries",
+        "entries": [
+          "你总是知道哪个方向是北方，并且你在进行用于导航或追踪的感知（{@skill 求生}）检定时具有优势。"
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "牛头人是胸膛如小桶宽阔的类人生物，有着公牛一般的头颅。受祝福于超自然的方向感，牛头人是天生的航海家。一些贤者认为，牛头人最初由痛苦女士所创造，用于巡逻那些她用来诱捕敌人的魔法迷宫。",
+        "牛头人的角大小从大约1英尺到三倍的长度不等。他们常常雕琢自己犄角，磨利它的锋芒，在上面刻上力量的符号，或者以青铜来保护它们不在战斗中被击碎。",
+        "浓密的毛发沿着牛头人的脖颈和强壮的背部向下延伸，一些牛头人的下巴和脸颊上还有长长的毛发。它们的腿末端生着沉重的偶蹄，还长着长长的、簇状的尾巴。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/MPMM/Minotaur.webp"
+          },
+          "credit": "Jedd Chevrier, Brynn Metheney",
+          "width": 1700,
+          "height": 1578
+        }
+      ]
+    },
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "lineage": "VRGR",
+    "soundClip": {
+      "type": "internal",
+      "path": "races/minotaur.mp3"
+    }
+  }
+]

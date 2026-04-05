@@ -1,0 +1,37 @@
+[
+  {
+    "ENG_name": "Potion of Animal Friendship",
+    "name": "化兽为友药水",
+    "source": "DMG",
+    "page": 187,
+    "srd": true,
+    "referenceSources": [
+      "ToA",
+      "WDH",
+      "WDMM",
+      "IDRotF",
+      "KftGV",
+      "CoA",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "化兽为友药水|XDMG"
+    ],
+    "type": "P",
+    "tier": "次要",
+    "rarity": "uncommon",
+    "entries": [
+      "饮用此药水后，1小时内，你可以随意施放法术{@spell 化兽为友}（豁免{@dc 13}）。搅动这种浑浊的液体可以看到一些细小的残渣：一片鱼的鳞片、一根蜂鸟的舌卷、一只猫的爪抓、或是一根松鼠的毛发。"
+    ],
+    "attachedSpells": [
+      "化兽为友"
+    ],
+    "lootTables": [
+      "魔法物品表B"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "valueReference": 200
+  }
+]

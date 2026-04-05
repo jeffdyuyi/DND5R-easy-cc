@@ -1,0 +1,17 @@
+[
+  {
+    "name": "铃铛",
+    "ENG_name": "Bell",
+    "source": "PHB",
+    "page": 150,
+    "type": "G",
+    "rarity": "none",
+    "value": 100,
+    "basicRules": true,
+    "reprintedAs": [
+      "铃铛|XPHB"
+    ],
+    "srd": true,
+    "translator": "不全书"
+  }
+]

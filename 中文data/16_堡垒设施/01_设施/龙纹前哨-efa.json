@@ -1,0 +1,47 @@
+{
+  "ENG_name": "Dragonmark Outpost",
+  "name": "龙纹前哨",
+  "source": "EFA",
+  "page": 48,
+  "facilityType": "special",
+  "level": 5,
+  "prerequisite": [
+    {
+      "otherSummary": {
+        "entry": "与任意{@book 龙纹家族|EFA|5|龙纹家族声望}声望达到10+",
+        "entrySummary": "龙纹家族声望10+"
+      }
+    }
+  ],
+  "space": [
+    "roomy"
+  ],
+  "hirelings": [
+    {
+      "exact": 1
+    }
+  ],
+  "orders": [
+    "增强"
+  ],
+  "entries": [
+    "龙纹前哨是一个为你的龙纹家族使用而预留的区域。该雇工是一名家族代理，并作为你与家族中上级之间的联络人。",
+    "当你将此设施添加到你的据点时，你与你的家族的声望值增加1。",
+    {
+      "ENG_name": "Dragonmark Empowerment (Requires Any Dragonmark Feat)",
+      "name": "龙纹增强（需要任意龙纹专长）",
+      "type": "entries",
+      "entries": [
+        "当你在你的龙纹前哨完成一次{@variantrule 长休|XPHB}时，你将获得一个额外的2环法术位。你只能使用这个法术位来施放因{@book 龙纹专长|EFA|2|龙纹专长}而准备的法术。"
+      ]
+    },
+    {
+      "ENG_name": "Empower: House Favor",
+      "name": "增强：家族恩赐",
+      "type": "entries",
+      "entries": [
+        "当你向此设施下达增强指令时，你指示你的雇工调用来自你龙纹家族的恩赐。你可以使用你的声望值所允许的家族任何增益（如{@book 第五章|EFA|5|龙纹家族声望}中所述），且此恩赐不计入你可用的恩赐总数。一旦你使用此特性，在你的家族声望值提升前无法再次使用。"
+      ]
+    }
+  ]
+}

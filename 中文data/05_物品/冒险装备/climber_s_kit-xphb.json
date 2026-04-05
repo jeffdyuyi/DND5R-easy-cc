@@ -1,0 +1,18 @@
+[
+  {
+    "name": "攀爬工具",
+    "ENG_name": "Climber's Kit",
+    "source": "XPHB",
+    "page": 225,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 12,
+    "value": 2500,
+    "entries": [
+      "一套攀爬工具包含鞋子包头、手套、岩钉和系带。以一个{@action 操作|XPHB}动作，你可以使用攀爬工具锚定自己，此时你不会从锚定处摔落超过25尺，且在使用{@variantrule 附赠动作|XPHB}解除锚定前无法从锚定处向外移动超过25尺。"
+    ],
+    "basicRules2024": true,
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

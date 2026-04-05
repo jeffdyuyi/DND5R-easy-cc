@@ -1,0 +1,71 @@
+[
+  {
+    "ENG_name": "Slither",
+    "name": "蠕行",
+    "source": "BookOfEbonTides",
+    "page": 0,
+    "level": 2,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "m": {
+        "text": "由你的木制雕像制成的墨水灰烬，用于绘制你的肖像，价值至少50GP",
+        "cost": 5000
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你暂时化为一道幽影（一种人形无光存在，而非同名的死灵生物）。你可以滑入门扉下方、穿过钥匙孔或任何其他微型开口。你的所有装备都会随之转化，且你可以在法术持续时间内移动至多你的速度上限。在此形态下，你在黑暗或微光光照中进行敏捷（{@skill 隐匿}）检定时具有优势，并且免疫非魔法的钝击、穿刺和挥砍伤害。你可以用一个动作解除该法术。",
+      "如果你在空间不足以容纳你的地方（如鼠洞、污水管或类似地方）恢复至正常形态，你将受到{@damage 4d6}力场伤害并被推至50尺内最近的足以容纳你的空间。如果距离超过50尺，每额外移动10尺你将受到额外{@damage 1d6}力场伤害。",
+      "处于幽影形态时，你无法说话或操纵物件，你所携带或持有的任何物件都无法掉落、使用或以其他方式互动。此外，处于幽影形态时你无法攻击或施法。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用3环或更高法术位施放该法术时，每比2环高1环，你就可以额外以1个你接触的愿意生物为目标。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    },
+    "damageInflict": [
+      "力场"
+    ],
+    "miscTags": [
+      "ADV",
+      "FMV"
+    ]
+  }
+]

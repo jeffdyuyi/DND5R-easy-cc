@@ -1,0 +1,24 @@
+[
+  {
+    "name": "墨水",
+    "ENG_name": "Ink",
+    "source": "XPHB",
+    "page": 226,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "value": 1000,
+    "entries": [
+      "墨水一般装在 1 盎司的瓶子里，足够撰写 500 页的内容。"
+    ],
+    "basicRules2024": true,
+    "miscTags": [
+      "CNS"
+    ],
+    "referenceSources": [
+      "DrDe-TDoN",
+      "DrDe-SD"
+    ],
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

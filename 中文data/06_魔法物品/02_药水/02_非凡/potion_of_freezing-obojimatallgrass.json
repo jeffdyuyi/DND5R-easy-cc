@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Potion of Freezing",
+    "name": "冻结药水",
+    "source": "ObojimaTallGrass",
+    "page": 234,
+    "type": "P",
+    "rarity": "uncommon",
+    "property": [
+      "Util"
+    ],
+    "entries": [
+      "将这灰蓝色的药水倒入任何液体中会使该液体冻结成固体1小时，之后它会开始像正常情况一样解冻。此效应最多只能冻结20尺立方的液体。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 34|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Utility/potion-of-freezing.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1889,
+          "height": 1889
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

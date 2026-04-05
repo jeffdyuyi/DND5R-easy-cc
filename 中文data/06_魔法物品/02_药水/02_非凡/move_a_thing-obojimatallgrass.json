@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Move a Thing",
+    "name": "移动一个物品",
+    "source": "ObojimaTallGrass",
+    "page": 244,
+    "type": "P",
+    "rarity": "uncommon",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "当倒在重量不超过500磅的物件上时，它会变得越来越轻。该物件每小时开始时重量减少{@dice 1d100}磅，直到重量恰好为10磅。它会保持10磅的重量1周，之后药水的效应会消失。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 36|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/move-a-thing.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1950,
+          "height": 1950
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

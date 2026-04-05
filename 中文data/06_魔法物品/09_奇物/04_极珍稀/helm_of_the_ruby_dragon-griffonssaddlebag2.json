@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "Helm of the Ruby Dragon",
+    "name": "红宝石龙之冠",
+    "source": "GriffonsSaddlebag2",
+    "page": 103,
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": "由一位绝对中立阵营的龙裔",
+    "reqAttuneTags": [
+      {
+        "race": "龙裔",
+        "alignment": [
+          "N"
+        ]
+      }
+    ],
+    "wondrous": true,
+    "entries": [
+      "这顶由黄金和红宝石打造的魔法头冠受到一位强大灵能巨龙的祝福。当你戴着这顶头冠期间，你在智力（{@skill 调查}）检定以及通过观察或知识获取信息的智力检定上具有优势。此外，你可以与30尺内的任何生物进行心灵感应交谈。该生物只有在与你共通一种语言的情况下才能理解你。你每次只能与一个生物进行心灵感应交谈。",
+      "当你戴着这顶头盔使用吐息武器时，你可以选择呼出一道纯粹的震荡力场。如果这么做，你的吐息武器造成力场伤害而非其原本的伤害类型，且任何豁免失败的生物额外受到{@damage 2d6}心灵伤害，并陷入{@condition 震慑}直到你的下一回合结束。头冠的这个属性在下次黎明前无法再次使用。"
+    ],
+    "lootTables": [
+      "魔法物品表 H1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Helm-of-the-Ruby-Dragon.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

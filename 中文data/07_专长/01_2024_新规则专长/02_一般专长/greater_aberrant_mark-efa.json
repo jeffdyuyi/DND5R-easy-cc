@@ -1,0 +1,42 @@
+[
+  {
+    "ENG_name": "Greater Aberrant Mark",
+    "name": "高等异种纹",
+    "source": "EFA",
+    "page": 43,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4,
+        "feat": [
+          "异种龙纹|EFA"
+        ]
+      }
+    ],
+    "ability": [
+      {
+        "con": 1
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Improved Fortitude",
+        "name": "强化坚定园",
+        "type": "entries",
+        "entries": [
+          "当你使用你的异种龙纹专长的异种坚定增益时，你可以掷{@dice 1d6}而非{@dice 1d4}。你现在还可以在完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}后重获异种坚定的使用次数。"
+        ]
+      },
+      {
+        "ENG_name": "Mark of Inspiration",
+        "name": "灵感之纹",
+        "type": "entries",
+        "entries": [
+          "当你施放一个戏法时，你可以掷一个或二个你未消耗的{@variantrule 生命值骰|XPHB}。你获得等于掷骰数值加上你的体质调整值的{@variantrule 临时生命值|XPHB}，并且你选择的30尺内的一个生物（不包括你）受到等于掷骰数值的力场伤害。那些骰子随后被消耗。",
+          "你能够使用此增益的次数等于你的{@variantrule 熟练|XPHB|熟练加值}，当你完成{@variantrule 长休|XPHB}时重获所有已消耗的使用次数。"
+        ]
+      }
+    ]
+  }
+]

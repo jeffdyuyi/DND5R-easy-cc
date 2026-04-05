@@ -1,0 +1,113 @@
+{
+  "ENG_name": "Light Weaver Sorcerous Origin",
+  "name": "织光者术法起源",
+  "shortName": "光亮术编织者",
+  "source": "BookOfEbonTides",
+  "className": "术士",
+  "classSource": "PHB",
+  "subclassFeatures": [
+    {
+      "ENG_name": "Light Weaver Sorcerous Origin",
+      "name": "织光者术法起源",
+      "source": "BookOfEbonTides",
+      "className": "术士",
+      "classSource": "PHB",
+      "subclassShortName": "光亮术编织者",
+      "subclassSource": "BookOfEbonTides",
+      "level": 1,
+      "entries": [
+        "你的力量源自于你内心点燃的光之火花。在极度黑暗之地，总有那些天生对光具有亲和力的存在，而每个幽影都必须有一个闪耀的来源。你体内的魔法代表着宇宙的平衡，就像光芒一样，你的魔法时刻在光辉与黑暗之间闪烁。",
+        {
+          "ENG_name": "Illumination Magic",
+          "name": "遥辉魔法",
+          "type": "inset",
+          "entries": [
+            "如果你可以使用{@i 深地魔法}，考虑授予织光者术士照明学派的法术。这些法术涉及光亮术、星辰和黑暗术，从故事和主题的角度来看，非常适合该角色类型。"
+          ]
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "光之诡计|术士||光亮术编织者|BookOfEbonTides|1"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "闪耀灵光|术士||光亮术编织者|BookOfEbonTides|1"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Flickering Aura",
+      "name": "闪耀灵光",
+      "source": "BookOfEbonTides",
+      "className": "术士",
+      "classSource": "PHB",
+      "subclassShortName": "光亮术编织者",
+      "subclassSource": "BookOfEbonTides",
+      "level": 1,
+      "header": 1,
+      "entries": [
+        "从1环开始，你可以选择你的魔法是光移还是暗移。你可以在长休结束时改变选择。",
+        "当处于光耀形态时，你可以使用一个动作以自身为中心释放半径15尺球状的明亮光照灵光。灵光持续期间，你可以使用一个附赠动作将明亮光照的半径扩大或缩小5尺，最大不超过30尺或最小不低于10尺。",
+        "当你处于暗影转换状态时，你将获得相同的属性，但你会散发出一圈非魔法的黑暗灵光。"
+      ]
+    },
+    {
+      "ENG_name": "Trick of the Light",
+      "name": "光之诡计",
+      "source": "BookOfEbonTides",
+      "className": "术士",
+      "classSource": "PHB",
+      "subclassShortName": "光亮术编织者",
+      "subclassSource": "BookOfEbonTides",
+      "level": 1,
+      "header": 1,
+      "entries": [
+        "从1级开始，你可以在魔法和非魔法的黑暗中正常视物，距离可达60尺。"
+      ]
+    },
+    {
+      "ENG_name": "Refraction Shield",
+      "name": "折曜之盾",
+      "source": "BookOfEbonTides",
+      "className": "术士",
+      "classSource": "PHB",
+      "subclassShortName": "光亮术编织者",
+      "subclassSource": "BookOfEbonTides",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "在6级时，你可以操纵周围的光照以获得保护。以一个附赠动作，你可以消耗3点术法点来魔法般地创造一个光之护盾。当护盾存在时，每当一个生物在5尺内以近战攻击命中你时，护盾会迸发出灼热的能量，若你处于光耀形态则攻击手受到{@dice 2d8}光耀伤害，若你处于暗蚀形态则受到{@dice 2d8}暗蚀伤害。护盾会在你陷入{@condition 昏迷}状态或10分钟后消失。"
+      ]
+    },
+    {
+      "ENG_name": "Aura Magnification",
+      "name": "灵光增效",
+      "source": "BookOfEbonTides",
+      "className": "术士",
+      "classSource": "PHB",
+      "subclassShortName": "光亮术编织者",
+      "subclassSource": "BookOfEbonTides",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "从14级开始，你对周围光照的操控变得炉火纯青。处于光亮状态时，你的闪耀灵光会产生阳光。处于黑暗状态时，你的灵光会产生魔法黑暗。",
+        "如果此灵光的区域与一个由法术创造的光亮或黑暗区域重叠，且该法术的等级等于或低于你最高可用法术位的等级，则创造该光亮或黑暗的法术将被解除。"
+      ]
+    },
+    {
+      "ENG_name": "Spell Blind",
+      "name": "法术致盲",
+      "source": "BookOfEbonTides",
+      "className": "术士",
+      "classSource": "PHB",
+      "subclassShortName": "光亮术编织者",
+      "subclassSource": "BookOfEbonTides",
+      "level": 18,
+      "header": 2,
+      "entries": [
+        "从18级开始，你的法术能量会压倒目标的感知。以一个动作，你可以消耗5点术法点来增强你的闪耀灵光。持续1分钟或直到你失去{@book 专注|PHB|10|专注}（如同你在施放一个专注法术），每个敌对的生物在其回合开始时若处于你60尺范围内，必须成功通过一次体质豁免检定，否则将被施加{@condition 目盲}状态，直到灵光结束。"
+      ]
+    }
+  ],
+  "hasFluffImages": true
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Hooked Shortspear",
+    "name": "狱火钩矛",
+    "source": "BGDIA",
+    "page": 223,
+    "type": "M",
+    "rarity": "uncommon",
+    "weight": 2,
+    "weaponCategory": "martial",
+    "property": [
+      "L"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "P",
+    "weapon": true,
+    "entries": [
+      "这件武器由地狱铁打造，并带有地狱火纹理，这些纹理散发出暗淡的光芒，照亮了5尺半径的范围。",
+      "任何被这把武器攻击致死的人形生物，其灵魂会被吸入冥河，在那里它将立即重生为一个{@creature 劣魔}恶魔。"
+    ],
+    "namePrefix": "狱火",
+    "light": [
+      {
+        "dim": 5
+      }
+    ],
+    "_isVariant": true,
+    "valueReference": 400
+  }
+]

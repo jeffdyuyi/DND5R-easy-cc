@@ -1,0 +1,23 @@
+[
+  {
+    "ENG_name": "Serpent's Fang",
+    "name": "蛇牙剑",
+    "source": "CM",
+    "page": 98,
+    "baseItem": "长剑|PHB",
+    "type": "M",
+    "rarity": "rare",
+    "weight": 3,
+    "weaponCategory": "martial",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "S",
+    "dmg2": "1d10",
+    "entries": [
+      "这把单刃魔法剑是由一只巨蛇的雕刻牙齿制成的。它的剑柄会改变形状以适应任何拿起它的生物的握持。这个武器对任何被它击中的目標造成额外的{@damage 1d10}点毒素伤害。"
+    ],
+    "valueReference": 4000
+  }
+]

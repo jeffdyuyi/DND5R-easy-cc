@@ -1,0 +1,84 @@
+[
+  {
+    "ENG_name": "Thunderclap",
+    "name": "鸣雷破",
+    "source": "XGE",
+    "page": 168,
+    "otherSources": [
+      {
+        "source": "EEPC",
+        "page": 22
+      }
+    ],
+    "referenceSources": [
+      "PotA"
+    ],
+    "reprintedAs": [
+      "鸣雷破|XPHB"
+    ],
+    "level": 0,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 5
+      }
+    },
+    "components": {
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你制造出雷鸣巨响，可以在 100 尺范围内被听到。除你之外，在你周围 5 尺范围内的生物必须进行一次体质豁免检定。若检定失败，该生物受到{@damage 1d6}点雷鸣伤害。",
+      "你到达5级时，该法术的伤害增加{@damage 1d6}（变为 {@damage 2d6}）。11 级时变为{@damage 3d6}，17 级变为{@damage 4d6}。"
+    ],
+    "scalingLevelDice": {
+      "label": "thunder damage",
+      "scaling": {
+        "1": "1d6",
+        "5": "2d6",
+        "11": "3d6",
+        "17": "4d6"
+      }
+    },
+    "damageInflict": [
+      "thunder"
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "miscTags": [
+      "SCL"
+    ],
+    "areaTags": [
+      "S"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "德鲁伊",
+      "术士",
+      "魔契师",
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "体质"
+    ],
+    "display_damageInflict": [
+      "雷鸣"
+    ]
+  }
+]

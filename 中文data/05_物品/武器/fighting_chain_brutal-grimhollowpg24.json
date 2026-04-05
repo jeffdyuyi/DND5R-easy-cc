@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Fighting Chain, Brutal",
+    "name": "战斗链击，野蛮",
+    "source": "GrimHollowPG24",
+    "page": 128,
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 6,
+    "value": 75000,
+    "weaponCategory": "进阶",
+    "property": [
+      "D|GrimHollowPG24",
+      "F|XPHB",
+      "R|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "野蛮|GrimHollowPG24"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "S",
+    "weapon": true
+  }
+]

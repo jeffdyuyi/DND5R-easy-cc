@@ -1,0 +1,20 @@
+[
+  {
+    "ENG_name": "Blue Chromatic Rose",
+    "name": "蓝彩玫瑰",
+    "source": "WBtW",
+    "page": 208,
+    "resist": [
+      "闪电"
+    ],
+    "detail1": "噼啪作响的闪电",
+    "rarity": "rare",
+    "wondrous": true,
+    "hasRefs": true,
+    "entries": [
+      "{#itemEntry 色彩玫瑰|WBtW}"
+    ],
+    "valueReference": 4000,
+    "type": "W"
+  }
+]

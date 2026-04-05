@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Blessing of the Lone Champion",
+    "name": "孤勇者祝福",
+    "source": "DrDe",
+    "page": 6,
+    "type": "Blessing",
+    "entries": [
+      "你获得以下增益：",
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Heroic Inspiration",
+            "name": "英雄激励",
+            "type": "item",
+            "entry": "当你完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}时或是每当DM要求你投掷先攻时，你获得{@variantrule 英雄激励|XPHB}。"
+          },
+          {
+            "ENG_name": "Temporary Hit Points",
+            "name": "临时生命值",
+            "type": "item",
+            "entry": "当你获得该祝福或获得新的等级时，你获得等于你等级十倍的{@variantrule 临时生命值|XPHB}。此临时生命值持续时间为整场冒险。"
+          }
+        ]
+      }
+    ]
+  }
+]

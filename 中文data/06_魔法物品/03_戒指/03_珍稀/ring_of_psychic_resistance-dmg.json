@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Ring of Psychic Resistance",
+    "name": "心灵抗性戒指",
+    "source": "DMG",
+    "page": 192,
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "心灵抗性戒指|XDMG"
+    ],
+    "type": "RG|DMG",
+    "resist": [
+      "心灵"
+    ],
+    "detail1": "翡翠",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "hasRefs": true,
+    "entries": [
+      "{#itemEntry 抗性戒指}"
+    ],
+    "translator": "不全书",
+    "valueReference": 4000
+  }
+]

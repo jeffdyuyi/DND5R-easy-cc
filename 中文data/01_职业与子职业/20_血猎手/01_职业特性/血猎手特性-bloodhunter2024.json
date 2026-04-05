@@ -1,0 +1,409 @@
+{
+    "classFeature": [
+        {
+            "ENG_name": "Hemocraft",
+            "name": "鲜血秘法",
+            "source": "BloodHunter2024",
+            "className": "血猎手",
+            "classSource": "BloodHunter2024",
+            "level": 1,
+            "entries": [
+                "你从猎人之苦之中生还——那是一个危险而漫长的仪式，它扭曲你的生命之血，使你与黑暗永远为伴，且磨砺你的感官以对抗它们。你在追踪精类、邪魔或不死生物的感知（求生）检定，以及获知它们的信息的智力检定中具有优势。",
+                "当你的一个血咒或血猎手特性需要进行豁免检定时，豁免 DC 等于 8 加上你的智力调整值和熟练加值。",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "ENG_name": "Hemocraft die",
+                            "name": "鲜血秘法骰",
+                            "type": "entries",
+                            "entries": [
+                                "你拥有一个鲜血秘法骰，这是一个d6。该骰子在血猎手5级、11级和17级时提升体型。你的血猎手特性和血咒会以各种方式使用鲜血秘法骰。"
+                            ]
+                        },
+                        {
+                            "ENG_name": "Blood Curses",
+                            "name": "血咒",
+                            "type": "entries",
+                            "entries": [
+                                "你从血咒选项列表中学到2种血咒。你在血猎手6级、10级、14级和18级时各学会一种新的血咒。每次你学会一种新的血咒时，你也可以选择一项已知的血咒并将其替换为另一种血咒。"
+                            ]
+                        },
+                        {
+                            "ENG_name": "Number of Uses",
+                            "name": "使用次数",
+                            "type": "entries",
+                            "entries": [
+                                "你可以使用此特性来施展你的血咒两次，从你已知的效应中选择使用。完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}后，你将重获所有消耗掉的次数。当你达到血猎手6级（3次）、13级（4次）和17级（5次）时，你将获得额外的使用次数。"
+                            ]
+                        },
+                        {
+                            "ENG_name": "Amplify",
+                            "name": "增幅",
+                            "type": "entries",
+                            "entries": [
+                                "血咒可以消耗生命精华来产生更强的效应。当你使用鲜血秘法施展血咒时，你可以增幅它并失去等同于一次鲜血秘法骰掷骰的生命值，并将增幅效应施加到你的血咒目标上。你在完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}后第一次增幅血咒时，获得等同于失去生命值数量的临时生命值。"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ENG_name": "Weapon Mastery",
+            "name": "武器精通",
+            "source": "BloodHunter2024",
+            "className": "血猎手",
+            "classSource": "BloodHunter2024",
+            "level": 1,
+            "entries": [
+                "你的武器训练允许你使用两种你熟练的武器的{@variantrule 武器精通词条|XPHB|精通词条}，例如短剑和轻弩。",
+                "每当你完成一次{@variantrule 长休|XPHB}后，你可以改变你所选择的武器种类。例如，你可以切换为使用鞭子和手斧的{@variantrule 武器精通词条|XPHB|精通词条}。"
+            ]
+        },
+        {
+            "ENG_name": "Crimson Rite",
+            "name": "猩红仪式",
+            "source": "BloodHunter2024",
+            "className": "血猎手",
+            "classSource": "BloodHunter2024",
+            "level": 2,
+            "entries": [
+                "你学会了一种仪式，允许你从自己的鲜血中汲取元素力量，增强你的武器攻击。从下方的列表中选择一项猩红仪式。你在血猎手7级和14级时选择另一个猩红仪式。每当你获得一个猩红仪式时，你可以将你的一个猩红仪式选项替换为另一个。",
+                "以一个附赠动作，你可以将已知的猩红仪式激活到你持有的任意数量的武器上。当你这样做时，你将失去等同于一个鲜血秘法骰掷骰数值的生命值。",
+                "当仪式激活且你持有该武器时，武器的攻击将造成等同于你鲜血秘法骰的额外伤害。伤害类型由你选择激活的仪式决定。每把武器只能激活一个仪式，且仪式持续到一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}结束，如果你选择在已激活仪式的武器上激活另一个仪式，或你主动解除仪式。",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "ENG_name": "Rite of the Flame",
+                            "name": "烈焰血仪",
+                            "type": "entries",
+                            "entries": [
+                                "你的血仪造成的额外伤害是火焰伤害。"
+                            ]
+                        },
+                        {
+                            "ENG_name": "Rite of the Frozen",
+                            "name": "冻结血仪",
+                            "type": "entries",
+                            "entries": [
+                                "你的血仪造成的额外伤害是寒冷伤害。"
+                            ]
+                        },
+                        {
+                            "ENG_name": "Rite of the Storm",
+                            "name": "风暴血仪",
+                            "type": "entries",
+                            "entries": [
+                                "猩红仪式造成的额外伤害是闪电伤害。"
+                            ]
+                        },
+                        {
+                            "ENG_name": "Rite of the Dead",
+                            "name": "死亡血仪",
+                            "type": "entries",
+                            "entries": [
+                                "你的血仪造成的额外伤害为暗蚀伤害。（先决：14级）"
+                            ]
+                        },
+                        {
+                            "ENG_name": "Rite of the Oracle",
+                            "name": "神谕血仪",
+                            "type": "entries",
+                            "entries": [
+                                "猩红仪式造成的额外伤害是心灵伤害。（前提：需 14 级）"
+                            ]
+                        },
+                        {
+                            "ENG_name": "Rite of the Roar",
+                            "name": "轰鸣血仪",
+                            "type": "entries",
+                            "entries": [
+                                "猩红仪式造成的额外伤害是雷鸣伤害。（前提：需 14 级）"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ENG_name": "Fighting Style",
+            "name": "战斗风格",
+            "source": "BloodHunter2024",
+            "className": "血猎手",
+            "classSource": "BloodHunter2024",
+            "level": 2,
+            "entries": [
+                "你获得一个由你选择的战斗风格专长。你可以不选择这些专长，而是选择下方的选项。",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "ENG_name": "Mutagenic Warrior",
+                            "name": "诱变武者",
+                            "type": "entries",
+                            "entries": [
+                                "你从突变者子职中学习两种诱变剂公式。当你完成一次{@variantrule 长休|XPHB}时，你可以用你的炼金工具配制一种你所知道的诱变剂，该诱变剂会在你完成一次{@variantrule 长休|XPHB}后变为惰性。",
+                                "你可以将诱变剂作为{@variantrule 附赠动作|XPHB}消耗，其效果将持续到你完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}。"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ENG_name": "Blood Hunter Subclass",
+            "name": "血猎手子职",
+            "source": "BloodHunter2024",
+            "className": "血猎手",
+            "classSource": "BloodHunter2024",
+            "level": 3,
+            "entries": [
+                "你获得一个自选的血猎手子职。弑灵结社、化狼结社、突变结社和渎魂结社在此职业描述之后有详细说明。在你的职业生涯的剩余时间里，你将获得每个子职的特性，这些特性与你的血猎手等级相同或更低。"
+            ]
+        },
+        {
+            "ENG_name": "Ability Score Improvement",
+            "name": "属性值提升",
+            "source": "BloodHunter2024",
+            "className": "血猎手",
+            "classSource": "BloodHunter2024",
+            "level": 4,
+            "entries": [
+                "你获得{@feat 属性值提升|XPHB}专长或另一个你符合资格的{@5etools 专长|feats.html}专长。你在血猎手8级、12级 and 16级时再次获得此特性。"
+            ]
+        },
+        {
+            "ENG_name": "Extra Attack",
+            "name": "额外攻击",
+            "source": "BloodHunter2024",
+            "className": "血猎手",
+            "classSource": "BloodHunter2024",
+            "level": 5,
+            "entries": [
+                "在你的回合中，每当你采取{@action 攻击}动作时，你可以攻击两次而不是一次。"
+            ]
+        },
+        {
+            "ENG_name": "Brand of Castigation",
+            "name": "惩戒烙印",
+            "source": "BloodHunter2024",
+            "className": "血猎手",
+            "classSource": "BloodHunter2024",
+            "level": 6,
+            "entries": [
+                "当你以有激活猩红仪式的武器伤害一个生物时，你可以将鲜血烙印烙在它身上。只要烙印生物与你处于同一位面，你始终知道烙印生物相对于你的方向。此外，每次烙印生物对你或距你10尺内你能看见的生物造成伤害时，烙印生物受到等于你智力调整值点心灵伤害（至少1点）。",
+                "你的烙印持续至你解除它，或者直到你对另一个生物打上烙印。你的烙印对{@spell 解除魔法|xphb}而言是一个法术，并具有等同于你血猎手等级一半的环位（至多9环）。当烙印生物与你处于同一位面时死亡，你可以选择获得以下一项增益：",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "ENG_name": "Breathe the Soul",
+                            "name": "呼吸灵魂",
+                            "type": "entries",
+                            "entries": [
+                                "你重获一次消耗掉的鲜血秘法使用次数。"
+                            ]
+                        },
+                        {
+                            "ENG_name": "Consume the Flesh",
+                            "name": "消耗血肉",
+                            "type": "entries",
+                            "entries": [
+                                "你恢复等同于两次鲜血秘法骰加上智力调整值的生命值。"
+                            ]
+                        },
+                        {
+                            "ENG_name": "Drink the Blood",
+                            "name": "饮用鲜血",
+                            "type": "entries",
+                            "entries": [
+                                "你结束当前影响你的任一状态或魔法效应。"
+                            ]
+                        }
+                    ]
+                },
+                "你可以使用此特性两次，当你完成一次{@variantrule 短休|XPHB}时恢复一次消耗的次数，当你完成一次{@variantrule 长休|XPHB}时恢复所有消耗的次数。"
+            ]
+        },
+        {
+            "ENG_name": "Subclass Feature",
+            "name": "子职特性",
+            "source": "BloodHunter2024",
+            "className": "血猎手",
+            "classSource": "BloodHunter2024",
+            "level": 7,
+            "entries": [
+                "你获得一个血猎手子职特性。"
+            ]
+        },
+        {
+            "ENG_name": "Ability Score Improvement",
+            "name": "属性值提升",
+            "source": "BloodHunter2024",
+            "className": "血猎手",
+            "classSource": "BloodHunter2024",
+            "level": 8,
+            "entries": [
+                "你获得{@feat 属性值提升|XPHB}专长或另一个你符合资格的{@5etools 专长|feats.html}专长。你在血猎手等级12和16时再次获得此特性。"
+            ]
+        },
+        {
+            "ENG_name": "Grim Psychometry",
+            "name": "阴暗灵卜",
+            "source": "BloodHunter2024",
+            "className": "血猎手",
+            "classSource": "BloodHunter2024",
+            "level": 9,
+            "entries": [
+                "你准备了{@spell 鉴定术}法术。你可以以{@variantrule 附赠动作|XPHB}施放该法术两次，并在完成一次{@variantrule 长休|XPHB}后恢复该能力的所有使用次数。你也可以通过消耗一次鲜血秘法的使用次数以{@variantrule 附赠动作|XPHB}施放该法术。当你对一个生物施放该法术时，你还会得知该生物的任何免疫、抗性和易伤，以及它的生物类型。",
+                "你可以选择像血咒一样强化这个法术。当你这样做时，你可以选择你所在的地点而非物件或生物作为目标，并鉴定该地点是否被祝圣或亵渎，例如来自{@spell 圣居}法术的效果。此外，你可能会体验到关于该生物、地点或物件过去的短暂幻象。如果目标有这样的历史，这个幻象会是目标曾参与的某些险恶或悲剧事件。"
+            ]
+        },
+        {
+            "ENG_name": "Dark Augmentation",
+            "name": "黑暗增幅",
+            "source": "BloodHunter2024",
+            "className": "血猎手",
+            "classSource": "BloodHunter2024",
+            "level": 10,
+            "entries": [
+                "你的速度增加10尺，并且你在力量、敏捷和体质豁免检定上获得等同于你智力调整值的加值（至少+1）。"
+            ]
+        },
+        {
+            "ENG_name": "Subclass Feature",
+            "name": "子职特性",
+            "source": "BloodHunter2024",
+            "className": "血猎手",
+            "classSource": "BloodHunter2024",
+            "level": 11,
+            "entries": [
+                "你获得一个血猎手子职特性。"
+            ]
+        },
+        {
+            "ENG_name": "Ability Score Improvement",
+            "name": "属性值提升",
+            "source": "BloodHunter2024",
+            "className": "血猎手",
+            "classSource": "BloodHunter2024",
+            "level": 12,
+            "entries": [
+                "你获得{@feat 属性值提升|XPHB}专长或另一个你符合资格的{@5etools 专长|feats.html}专长。你在血猎手等级16时再次获得此特性。"
+            ]
+        },
+        {
+            "ENG_name": "Improved Brand of Castigation",
+            "name": "强化惩戒烙印",
+            "source": "BloodHunter2024",
+            "className": "血猎手",
+            "classSource": "BloodHunter2024",
+            "level": 13,
+            "entries": [
+                "你的惩戒烙印所造成的心灵伤害提升至你智力调整值的双倍（至少为2），且当烙印生物对你或你30尺内可见的生物造成伤害时，现在也会受到烙印的伤害。",
+                "此外，你可以选择下列效应之一，应用于被烙印的生物：",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "ENG_name": "Corruption",
+                            "name": "腐败",
+                            "type": "entries",
+                            "entries": [
+                                "每当被烙印的生物以除进行{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}外的任何方式恢复生命值时，其受到{@dice 2d6}暗蚀伤害。"
+                            ]
+                        },
+                        {
+                            "ENG_name": "Tethering",
+                            "name": "束缚",
+                            "type": "entries",
+                            "entries": [
+                                "烙印生物无法执行{@action 疾走}动作，如果其尝试传送或以任何方式离开当前位面时，其受到{@dice 4d6}点心灵伤害且必须进行一次感知豁免检定。豁免失败时，该次传送或离开位面的尝试失败。"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ENG_name": "Hardened Soul",
+            "name": "刚毅灵魂",
+            "source": "BloodHunter2024",
+            "className": "血猎手",
+            "classSource": "BloodHunter2024",
+            "level": 14,
+            "entries": [
+                "你的意志抵抗操控。你对{@condition 魅惑}或{@condition 恐慌}状态免疫。"
+            ]
+        },
+        {
+            "ENG_name": "Subclass Feature",
+            "name": "子职特性",
+            "source": "BloodHunter2024",
+            "className": "血猎手",
+            "classSource": "BloodHunter2024",
+            "level": 15,
+            "entries": [
+                "你获得一个血猎手子职特性。"
+            ]
+        },
+        {
+            "ENG_name": "Ability Score Improvement",
+            "name": "属性值提升",
+            "source": "BloodHunter2024",
+            "className": "血猎手",
+            "classSource": "BloodHunter2024",
+            "level": 16,
+            "entries": [
+                "你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。"
+            ]
+        },
+        {
+            "ENG_name": "Cursed Brand",
+            "name": "诅诅烙印",
+            "source": "BloodHunter2024",
+            "className": "血猎手",
+            "classSource": "BloodHunter2024",
+            "level": 17,
+            "entries": [
+                "你的灼热烙印和血咒协同工作。每个烙印一次，当你对被你的惩戒烙印标记的生物施放血咒时，你可以不损失生命值er强化该血咒。当你以这种方式强化血咒时，你仍然会获得因损失生命值而应得的临时生命值。",
+                "此外，当你放大一个血咒时，其范围加倍。"
+            ]
+        },
+        {
+            "ENG_name": "Subclass Feature",
+            "name": "子职特性",
+            "source": "BloodHunter2024",
+            "className": "血猎手",
+            "classSource": "BloodHunter2024",
+            "level": 18,
+            "entries": [
+                "你获得一个血猎手子职特性。"
+            ]
+        },
+        {
+            "ENG_name": "Epic Boon",
+            "name": "传奇恩惠",
+            "source": "BloodHunter2024",
+            "className": "血猎手",
+            "classSource": "BloodHunter2024",
+            "level": 19,
+            "entries": [
+                "你获得一个{@filter 传奇恩惠专长|feats|category=EB}或其他你符合条件的专长。"
+            ]
+        },
+        {
+            "ENG_name": "Breast-Heaved",
+            "name": "胸有成竹",
+            "source": "BloodHunter2024",
+            "className": "血猎手",
+            "classSource": "BloodHunter2024",
+            "level": 20,
+            "entries": [
+                "在20级时，你可以掌握自己的生命之血，以此加强你的秘法。以一个附赠动作，你可以让你身体进入超载状态，将你的生命上限降低等同于你等级数值的生命。作为回报，直到你完成长休前，你在所有攻击掷骰和伤害掷骰上获得等同于你智力调整值的加值。当你这样做时，你还将恢复所有已使用的血咒次数。"
+            ]
+        }
+    ]
+}

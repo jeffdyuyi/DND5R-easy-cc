@@ -1,0 +1,19 @@
+[
+  {
+    "ENG_name": "Mugfist Knuckles",
+    "name": "劫拳指虎",
+    "source": "Pugilist2024",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "type": "M",
+    "property": [
+      "L"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "B",
+    "bonusWeapon": "+1",
+    "entries": [
+      "攻击检定和伤害掷骰获得+1加值。造成重击时，获得等同于生物挑战等级的金币。"
+    ]
+  }
+]

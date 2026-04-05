@@ -1,0 +1,12 @@
+[
+  {
+    "ENG_name": "Charm of Feather Falling",
+    "name": "羽落护咒",
+    "source": "XDMG",
+    "page": 99,
+    "type": "Charm",
+    "entries": [
+      "该护咒可以让你获得{@item 羽落戒指|XDMG}的增益。该增益持续10日，随后该护符便会从你身上消失。"
+    ]
+  }
+]

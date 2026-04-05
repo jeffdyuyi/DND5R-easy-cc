@@ -1,0 +1,12 @@
+[
+  {
+    "ENG_name": "Enchanted Inks (1st Level)",
+    "name": "附魔墨水（1环）",
+    "source": "SterlingVermin",
+    "type": "P",
+    "rarity": "common",
+    "entries": [
+      "这套墨水可用于制作一个刺青。被刺青生物可施展一道选定的1环法术（体质施法），长休恢复。"
+    ]
+  }
+]

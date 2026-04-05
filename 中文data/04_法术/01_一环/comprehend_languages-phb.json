@@ -1,0 +1,79 @@
+[
+  {
+    "ENG_name": "Comprehend Languages",
+    "name": "通晓语言",
+    "source": "PHB",
+    "page": 224,
+    "srd": true,
+    "basicRules": true,
+    "otherSources": [
+      {
+        "source": "RMR",
+        "page": 52
+      }
+    ],
+    "referenceSources": [
+      "OotA",
+      "SKT",
+      "TftYP-ToH",
+      "ToA",
+      "WDH",
+      "WDMM",
+      "EFR",
+      "FS",
+      "IDRotF",
+      "CM",
+      "WBtW",
+      "KftGV",
+      "PaBTSO",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "通晓语言|XPHB"
+    ],
+    "level": 1,
+    "school": "D",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一撮煤灰和盐"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "meta": {
+      "ritual": true
+    },
+    "entries": [
+      "你在法术持续时间内知晓你所听到所有语言的字面意义。你也可以通过触碰书写的文字来读懂其字面意义。以这种方式阅读每页文字需要花费 1 分钟的时间。",
+      "某些文字或图形的密语（比如一个奥秘符文）由于不属于书写语言一类所以无法用此法术破译。"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "预言系",
+    "display_ritual": "仪式"
+  }
+]

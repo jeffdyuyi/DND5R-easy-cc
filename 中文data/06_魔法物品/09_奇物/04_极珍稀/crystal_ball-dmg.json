@@ -1,0 +1,35 @@
+[
+  {
+    "ENG_name": "Crystal Ball",
+    "name": "水晶球",
+    "source": "DMG",
+    "page": 159,
+    "srd": true,
+    "referenceSources": [
+      "SKT",
+      "SDW",
+      "IDRotF",
+      "CoA",
+      "VEoR"
+    ],
+    "reprintedAs": [
+      "水晶球|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "weight": 3,
+    "entries": [
+      "这个水晶球直径约6寸。接触它期间，你可以用它施放{@spell 探知术}法术（豁免{@dc 17}）。"
+    ],
+    "attachedSpells": [
+      "探知术"
+    ],
+    "lootTables": [
+      "魔法物品表H"
+    ],
+    "valueReference": 40000,
+    "type": "W"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Potion of Psionic Fortitude",
+    "name": "灵能坚韧药水",
+    "source": "PaBTSO",
+    "page": 219,
+    "type": "P",
+    "rarity": "uncommon",
+    "entries": [
+      "当你喝下这瓶药水时，1小时内你在尝试避免或结束自身被魅惑或昏迷状态的豁免检定上拥有优势。",
+      "这瓶黑色的药水在旋涡中闪烁着粉红色和紫色的微粒。"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "valueReference": 200
+  }
+]

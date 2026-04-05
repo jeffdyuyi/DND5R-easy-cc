@@ -1,0 +1,37 @@
+[
+  {
+    "ENG_name": "Tarrasque Plate",
+    "name": "泰拉斯奎板甲",
+    "source": "GriffonsSaddlebag2",
+    "page": 174,
+    "baseItem": "板甲|phb",
+    "type": "HA",
+    "tier": "主要",
+    "rarity": "legendary",
+    "reqAttune": true,
+    "weight": 65,
+    "ac": 18,
+    "strength": "15",
+    "bonusAc": "+1",
+    "stealth": true,
+    "entries": [
+      "这件坚不可摧的护甲由精炼的泰拉斯奎Tarrasque甲壳碎片制成，保留了其原有的部分特性。穿着此护甲期间，你获得对法术伤害的抗性，并且你的护甲等级获得+1加值。此外，每当你成为{@spell 魔法飞弹}法术、线状法术或需要进行远程攻击检定的法术的目标时，投掷一颗{@dice d6}。若结果为6，你不受该法术影响，且该法术效果会反弹回施法者，如同此法术由你施放一般，使原施法者成为目标。"
+    ],
+    "lootTables": [
+      "魔法物品表I|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Tarrasque-Plate.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

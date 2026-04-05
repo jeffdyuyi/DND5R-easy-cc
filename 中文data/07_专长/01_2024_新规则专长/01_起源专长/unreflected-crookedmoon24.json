@@ -1,0 +1,43 @@
+[
+    {
+        "ENG_name": "Unreflected",
+        "name": "无影之形",
+        "source": "CrookedMoon24",
+        "page": 115,
+        "category": "O",
+        "entries": [
+            "你的影子已与你分离，使得你无法投射出倒影或阴影，但也让你能轻易地逃脱注意。你获得以下增益：",
+            {
+                "ENG_name": "Inscrutable",
+                "name": "莫测者",
+                "type": "entries",
+                "entries": [
+                    "生物在对你进行的感知（{@skill 洞悉|XPHB}）检定中具有{@variantrule 劣势|XPHB}。"
+                ]
+            },
+            {
+                "ENG_name": "Unremarkable",
+                "name": "大隐于世",
+                "type": "entries",
+                "entries": [
+                    "你失去了一部分自我，反而使你更容易隐入背景。当你身处至少有其他两名与你同生物类型的生物的群体中，且这些生物的体型与你相差不超过一个等级时，你可以对该群体外的生物执行{@action 躲藏|XPHB}动作，用魅力（{@skill 欺瞒|XPHB}）检定替代敏捷（{@skill 隐匿|XPHB}）检定，且无需躲在掩护后或{@variantrule 重度遮蔽|XPHB}。当你以此方式进行躲藏期间，如果你与至少两个这样的生物相距超过5尺，则你便会暴露。"
+                ]
+            }
+        ],
+        "fluff": {
+            "images": [
+                {
+                    "type": "image",
+                    "href": {
+                        "type": "external",
+                        "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Feats/Unreflected.webp"
+                    },
+                    "width": 850,
+                    "height": 229,
+                    "credit": "Suzanne Helmigh"
+                }
+            ]
+        },
+        "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Feats/Unreflected.webp"
+    }
+]

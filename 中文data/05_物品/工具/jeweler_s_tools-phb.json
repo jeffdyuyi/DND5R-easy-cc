@@ -1,0 +1,84 @@
+[
+  {
+    "name": "珠宝匠工具",
+    "ENG_name": "Jeweler's Tools",
+    "source": "PHB",
+    "page": 154,
+    "type": "AT",
+    "rarity": "none",
+    "weight": 2,
+    "value": 2500,
+    "additionalEntries": [
+      "珠宝匠工具的训练包括美化宝石所需的基本技巧。它还能让你在识别宝石方面获得专业知识。",
+      {
+        "ENG_name": "Components",
+        "name": "成分",
+        "type": "entries",
+        "entries": [
+          "珠宝匠工具包括一把小锯和锤子、锉刀、钳子和镊子。"
+        ]
+      },
+      {
+        "ENG_name": "Arcana",
+        "name": "奥秘",
+        "type": "entries",
+        "entries": [
+          "珠宝匠工具的熟练项赋予你关于宝石公认的神秘用途的知识。当你进行与宝石或镶嵌宝石的物品相关的{@skill 奥秘}检定时，这种洞察力会派上用场。"
+        ]
+      },
+      {
+        "ENG_name": "Investigation",
+        "name": "调查",
+        "type": "entries",
+        "entries": [
+          "当你检查珠宝物品时，珠宝匠工具的熟练项可协助你从中找出可能存在的线索。"
+        ]
+      },
+      {
+        "ENG_name": "Identify Gems",
+        "name": "鉴定宝石",
+        "type": "entries",
+        "entries": [
+          "你可以一眼就识别出宝石并确定它们的价值。"
+        ]
+      },
+      {
+        "type": "table",
+        "caption": "珠宝匠工具",
+        "colLabels": [
+          "用途",
+          "DC"
+        ],
+        "colStyles": [
+          "col-10",
+          "col-2 text-center"
+        ],
+        "rows": [
+          [
+            "改变宝石的外观",
+            "15"
+          ],
+          [
+            "确定宝石的历史",
+            "20"
+          ]
+        ]
+      }
+    ],
+    "additionalSources": [
+      {
+        "source": "XGE",
+        "page": 82
+      }
+    ],
+    "basicRules": true,
+    "referenceSources": [
+      "IMR",
+      "PaBTSO"
+    ],
+    "reprintedAs": [
+      "珠宝匠工具|XPHB"
+    ],
+    "srd": true
+  }
+]

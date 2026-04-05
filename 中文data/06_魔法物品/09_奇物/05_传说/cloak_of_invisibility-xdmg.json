@@ -1,0 +1,33 @@
+[
+  {
+    "ENG_name": "Cloak of Invisibility",
+    "name": "隐形斗篷",
+    "source": "XDMG",
+    "page": 244,
+    "srd52": true,
+    "basicRules2024": true,
+    "otherSources": [
+      {
+        "source": "UtHftLH"
+      },
+      {
+        "source": "HBTD"
+      }
+    ],
+    "rarity": "legendary",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "此斗篷具有3充能，并在每日黎明时重获{@dice 1d3}已消耗的充能 。着装此斗篷期间，你能够以一个{@action 魔法|XPHB}动作拉上兜帽并消耗1充能，以使自己进入{@condition 隐形|XPHB}状态，持续1小时。该效应在你褪下兜帽（无需动作）或不再着装此斗篷时提前结束。"
+    ],
+    "lootTables": [
+      "奥秘 - 传说|XDMG"
+    ],
+    "translator": "不全书",
+    "valueReference": 200000,
+    "type": "W"
+  }
+]

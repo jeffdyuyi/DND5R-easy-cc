@@ -1,0 +1,40 @@
+{
+  "ENG_name": "The Hexblade",
+  "name": "咒剑宗主",
+  "shortName": "咒剑",
+  "source": "XGE",
+  "className": "魔契师",
+  "classSource": "XPHB",
+  "_copy": {
+    "ENG_name": "The Hexblade",
+    "name": "咒剑宗主",
+    "source": "XGE",
+    "shortName": "咒剑",
+    "className": "魔契师",
+    "classSource": "PHB",
+    "_preserve": {
+      "page": true,
+      "otherSources": true,
+      "referenceSources": true,
+      "srd": true,
+      "basicRules": true,
+      "reprintedAs": true
+    }
+  },
+  "subclassFeatures": [
+    "咒剑宗主|魔契师|XPHB|咒剑|XGE|3",
+    "咒缚幽灵|魔契师||咒剑|XGE|6",
+    "巫咒盔甲|魔契师||咒剑|XGE|10",
+    "巫咒大师|魔契师||咒剑|XGE|14"
+  ],
+  "fluff": {
+    "_subclassFluff": {
+      "ENG_name": "The Hexblade",
+      "name": "咒剑宗主",
+      "source": "XGE",
+      "shortName": "咒剑",
+      "className": "魔契师",
+      "classSource": "PHB"
+    }
+  }
+}

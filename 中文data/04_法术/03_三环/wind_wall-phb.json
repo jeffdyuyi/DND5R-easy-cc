@@ -1,0 +1,68 @@
+[
+  {
+    "ENG_name": "Wind Wall",
+    "name": "风墙术",
+    "source": "PHB",
+    "page": 288,
+    "srd": true,
+    "reprintedAs": [
+      "风墙术|XPHB"
+    ],
+    "level": 3,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一把小扇和一根稀有生物的羽毛"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "指定施法距离内地面上一点并从中升起了一道烈风形成的墙壁。你可以造出长度至多 50 尺、高度至多 15 尺、厚度至多 1 尺的风墙。你可以自由塑造该墙的形状，不过它必须沿着地面形成一条连续的轨道。风墙持续存在至法术终止。",
+      "风墙出现时，所有位于风墙区域内的生物必须进行一次力量豁免。豁免失败者，将受到 {@damage 3d8} 点钝击伤害，豁免成功则伤害减半。",
+      "强风将雾、烟和其他气体阻隔在外。小型或更小的飞行生物或物件无法穿过风墙。被带入风墙的松散轻质材料会向上飞起。射向风墙后方目标的箭矢、弩箭和其他普通抛射物会被偏转向上方并自动射偏。（巨人或攻城器械投掷的巨石及类似抛射物不受影响。）处于{@spell 气化形体}状态的生物无法穿过风墙。"
+    ],
+    "damageInflict": [
+      "bludgeoning"
+    ],
+    "savingThrow": [
+      "strength"
+    ],
+    "areaTags": [
+      "W"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊",
+      "游侠"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "力量"
+    ],
+    "display_damageInflict": [
+      "钝击"
+    ]
+  }
+]

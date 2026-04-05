@@ -1,0 +1,22 @@
+[
+  {
+    "ENG_name": "Boots of Haste",
+    "name": "神速之靴",
+    "source": "TalDoreiCampaignSettingReborn",
+    "page": 194,
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "拂晓",
+    "entries": [
+      "当你穿着这些靴子时，你可以点击你的鞋跟来作为附赠动作对自己施展{@spell 加速术}法术。使用这些靴子施展法术时，法术结束时你不会遭受倦怠。一旦使用了这个属性，直到下一个黎明之前都不能再次使用。"
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1": [
+          "加速术"
+        ]
+      }
+    }
+  }
+]

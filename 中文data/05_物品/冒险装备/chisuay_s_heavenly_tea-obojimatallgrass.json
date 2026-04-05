@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Chisuay's Heavenly Tea",
+    "name": "奇苏艾的天堂茶",
+    "source": "ObojimaTallGrass",
+    "page": 202,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 2|large}|SneakerProMedium}",
+            "{@font {@style 7|large}|SneakerProMedium}",
+            "{@font {@style 5|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "即使在药剂酿造圈之外，奇苏艾的天堂茶的词条也被以敬畏的语气谈论着，岛上还有许多比赛，看谁制作的茶混合最好，而奇苏艾的天堂茶混合总是名列第一。虽然狂野魔法茶遍布胧忆岛的高地，但最高质量的茶却生长在那些精心培育和照料祖传茶的农田中。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/chisuays-heavenly-tea.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 2979,
+          "height": 2979
+        }
+      ]
+    }
+  }
+]

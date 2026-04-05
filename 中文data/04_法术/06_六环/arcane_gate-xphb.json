@@ -1,0 +1,55 @@
+[
+  {
+    "ENG_name": "Arcane Gate",
+    "name": "秘法门",
+    "source": "XPHB",
+    "page": 242,
+    "level": 6,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 500
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你创造两个相连的传送门。指定地面上你能看见的两处未被占据的大型空间，其中一点在法术距离内，另一点则在你身边10尺内。随后将会开启一个通往两处的圆形传送门，并持续到法术结束。",
+      "传送门边缘为闪烁的二维环形，其内布满遮挡视野的迷雾，且整个垂直地悬浮在离地几寸处。",
+      "传送门单面开启（由你选择），那一面即是传送门生效的一面。任何进入其中一个传送门的东西将从另一个传送门里出现，如同两个传送门邻接一样。以一个{@variantrule 附赠动作|XPHB}，你可以改变其开门的朝向。"
+    ],
+    "miscTags": [
+      "OBJ",
+      "SGT",
+      "TP",
+      "UBA"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "咒法系"
+  }
+]

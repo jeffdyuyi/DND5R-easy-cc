@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Iron Belly",
+    "name": "铁腹",
+    "source": "ObojimaTallGrass",
+    "page": 231,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Util"
+    ],
+    "entries": [
+      "传说胧忆岛的游侠们在野外长途跋涉时会使用这种药水，这样他们就可以食用未知的根茎和真菌，也能饮用湖泊和低地溪流的水而不用担心生病。饮用后，你将获得5点临时生命值，并在1小时内获得对毒素伤害的抗性。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 13|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Utility/iron-belly.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1210,
+          "height": 1210
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

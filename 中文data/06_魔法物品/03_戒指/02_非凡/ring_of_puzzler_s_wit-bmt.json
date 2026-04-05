@@ -1,0 +1,19 @@
+[
+  {
+    "ENG_name": "Ring of Puzzler's Wit",
+    "name": "谜题急智戒指",
+    "source": "BMT",
+    "page": 37,
+    "type": "RG|DMG",
+    "rarity": "uncommon",
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d4 - 1}",
+    "charges": 3,
+    "entries": [
+      "这枚镶有萤石的金戒指可以使佩戴者的思维更加敏锐。",
+      "戒指有3发充能，每日黎明时恢复{@dice 1d4 - 1}发已消耗充能。当你进行一次智力检定时，你可以消耗1发充能使你在这次检定中获得优势。"
+    ],
+    "translator": "不全书",
+    "valueReference": 400
+  }
+]

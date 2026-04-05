@@ -1,0 +1,15 @@
+{
+  "ENG_name": "End Concentration",
+  "name": "终止专注",
+  "source": "XPHB",
+  "page": 363,
+  "srd52": true,
+  "basicRules2024": true,
+  "time": [
+    "自由"
+  ],
+  "entries": [
+    "部分法术及其他的效应会在它们的描述中注明其需要维持专注来保持效应激活。你可以在任何时间终止它的专注（无需动作）。"
+  ],
+  "translator": "不全书"
+}

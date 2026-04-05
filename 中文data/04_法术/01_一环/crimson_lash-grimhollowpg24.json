@@ -1,0 +1,75 @@
+[
+  {
+    "ENG_name": "Crimson Lash",
+    "name": "猩红鞭笞",
+    "source": "GrimHollowPG24",
+    "page": 189,
+    "level": 1,
+    "school": "C",
+    "subschools": [
+      "血魔法"
+    ],
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "作为施放该法术的一部分，你必须消耗一个{@variantrule 生命值骰|XPHB|生命值骰}否则法术自动失败。一条由凝结鲜血构成的扭动鞭笞从你手中迸发，具有以下词条：",
+      {
+        "type": "list",
+        "items": [
+          "它被视为一把你熟练的简易武器。",
+          "它具有光亮术、灵巧和触及范围词条。",
+          "你可以使用施法属性调整值代替力量或敏捷调整值来进行此武器的攻击和伤害掷骰。",
+          "它的伤害骰与施放该法术时消耗的{@variantrule 生命值骰|XPHB|生命值骰}相同，造成的伤害为暗蚀。",
+          "每当一个生物受到此武器的伤害时，其{@variantrule 生命值|XPHB|生命值}上限会减少等同于所受伤害的数量。"
+        ]
+      }
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "如果你使用3环或4环法术位施放该法术，当你采取{@action 攻击|XPHB}动作时，你可以用这把武器进行两次武器攻击。如果你使用5环或更高法术位，当你采取{@action 攻击|XPHB}动作时，你可以用这把武器进行三次武器攻击。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Crimson%20Lash.webp"
+  }
+]

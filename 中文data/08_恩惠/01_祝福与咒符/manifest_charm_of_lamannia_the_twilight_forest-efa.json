@@ -1,0 +1,12 @@
+[
+  {
+    "ENG_name": "Manifest Charm of Lamannia, the Twilight Forest",
+    "name": "显现兰曼尼亚，暮光森林的魅惑",
+    "source": "EFA",
+    "page": 50,
+    "type": "Charm",
+    "entries": [
+      "当你使用法术位施放一个召唤或召唤野兽、元素生物或精类的法术时（包括{@spell 咒唤兽群|XPHB}、{@spell 咒唤元素|XPHB}、{@spell 咒唤妖精|XPHB}、{@spell 咒唤微元素群|XPHB}、{@spell 咒唤林地卫士|XPHB}、{@spell 寻获坐骑|XPHB}、{@spell 野兽召唤术|XPHB}、{@spell 元素召唤术|XPHB}或{@spell 妖精召唤术|XPHB}），你可以消耗魅惑（无需动作）来将该法术视为使用比消耗的法术位高1环的法术位施放。"
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "name": "耳聋",
+    "ENG_name": "Deafened",
+    "source": "PHB",
+    "page": 290,
+    "srd": true,
+    "basicRules": true,
+    "entries": [
+      {
+        "type": "list",
+        "items": [
+          "耳聋的生物不能听音，其所有需要听觉的属性检定直接失败。"
+        ]
+      }
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "conditionsdiseases/PHB/deafened.webp"
+          },
+          "width": 262,
+          "height": 269
+        }
+      ]
+    },
+    "hasFluffImages": true,
+    "otherSources": [
+      {
+        "source": "RMR",
+        "page": 62
+      },
+      {
+        "source": "HftT",
+        "page": 48
+      }
+    ],
+    "reprintedAs": [
+      "耳聋|XPHB"
+    ],
+    "translator": "不全书"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "ENG_name": "Witchboard",
+    "name": "通灵板",
+    "source": "CthulhuTorchlight",
+    "page": 0,
+    "type": "T|XPHB",
+    "rarity": "none",
+    "weight": 1,
+    "value": 1500,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability:",
+            "name": "属性：",
+            "type": "item",
+            "entries": [
+              "魅力"
+            ]
+          },
+          {
+            "ENG_name": "Utilize:",
+            "name": "操作：",
+            "type": "item",
+            "entries": [
+              "与30尺内的一个以太位面生物交换最多10个单词的信息（DC15）。"
+            ]
+          }
+        ]
+      },
+      "通灵板是一块写满字母的木板，通常是通用语字母，但也有适用于不同文字的版本。你可以用它来联络以太位面生物，与之进行有限的交流。"
+    ]
+  }
+]

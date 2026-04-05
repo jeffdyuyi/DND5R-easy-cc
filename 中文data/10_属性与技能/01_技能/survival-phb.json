@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Survival",
+    "name": "求生",
+    "source": "PHB",
+    "page": 178,
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "求生|XPHB"
+    ],
+    "ability": "wis",
+    "entries": [
+      "当你需要追踪，狩猎，引导队伍穿过冰原，辨认附近枭熊踪迹，预测天气，回避流沙或其他自然危害物时，DM可能会要求你进行一次感知（生存）检定。"
+    ],
+    "translator": "不全书"
+  }
+]

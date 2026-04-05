@@ -1,0 +1,59 @@
+[
+  {
+    "ENG_name": "Rival Coin",
+    "name": "劲敌硬币",
+    "source": "XDMG",
+    "page": 296,
+    "rarity": "common",
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": 1,
+    "charges": 1,
+    "entries": [
+      "这枚金币的两面均饰有一个生物的浮雕。这两个被描绘的生物必须为彼此知名的对手或敌人。例如，一枚劲敌硬币的一面可能是{@book 伊格薇尔伏|XDMG|8|伊格薇尔伏}，而另一面是{@book 魔邓肯|XDMG|8|魔邓肯}；或者一面是{@book 温戈尔|XDMG|8|温戈尔}，另一面是{@book 提亚马特|XDMG|8|提亚马特}。其中一个人物在硬币的正面，另一个在反面。",
+      "这枚硬币具有1充能，并在每日黎明时重获已消耗的充能。你可以使用一个{@action 魔法|XPHB}动作抛掷这枚硬币，并消耗其充能。掷一枚任意骰子来确定硬币是正面朝上（若结果为偶数）还是反面朝上（若结果为奇数）。此结果决定了硬币产生的效应：",
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Heads",
+            "name": "正面",
+            "type": "item",
+            "entries": [
+              "以位于你60尺内一个你可见的生物为目标。目标进行一次{@dc 13}的感知豁免：如果豁免失败，目标会受到{@damage 2d4}心灵伤害，并在其下一回合结束前进行的下一次攻击检定中具有{@variantrule 劣势|XPHB}；豁免成功则目标仅受半伤。"
+            ]
+          },
+          {
+            "ENG_name": "Tails",
+            "name": "背面",
+            "type": "item",
+            "entries": [
+              "你受到{@damage 1d4}心灵伤害。"
+            ]
+          }
+        ]
+      }
+    ],
+    "lootTables": [
+      "奥秘 - 普通|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 100,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Rival Coin.webp"
+          },
+          "width": 641,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

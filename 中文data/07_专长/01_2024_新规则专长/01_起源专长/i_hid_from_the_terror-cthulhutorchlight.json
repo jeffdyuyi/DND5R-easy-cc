@@ -1,0 +1,37 @@
+[
+    {
+        "ENG_name": "I Hid from the Terror",
+        "name": "我曾躲过惧怖",
+        "source": "CthulhuTorchlight",
+        "page": 0,
+        "category": "O",
+        "entries": [
+            "那晚的一切已经模糊了。一种莫名的压迫感、难以承受的恐惧、夹杂着微弱记忆的混乱尖叫、连同对某种可怖饕餮之物的恐惧。你躲着它，在一个对它来说太过狭窄无法触及的地方。那一夜的声音和清晨你发现的恐怖后续，将伴随你度过余生，乃至更久。",
+            "你获得以下增益。",
+            {
+                "ENG_name": "Shadowed Strike",
+                "name": "阴影打击",
+                "type": "entries",
+                "entries": [
+                    "若发动攻击将结束你身上的{@condition 隐形|XPHB}状态，你能够发动一次攻击并维持该状态。你能够使用此增益的次数等于你的{@variantrule 熟练|XPHB|熟练加值}。当你完成一次{@variantrule 长休|XPHB}时你重获所有已消耗的使用次数。"
+                ]
+            },
+            {
+                "ENG_name": "Beneath Notice",
+                "name": "不值一哂",
+                "type": "entries",
+                "entries": [
+                    "当你尝试对一名体型大于你的生物执行躲藏时，只要你处在轻度遮蔽下或距其超过30尺，你就可以躲藏。这种情况下，对满足条件的生物而言，你获得躲藏的增益，对其他生物而言，你并非处于躲藏。"
+                ]
+            },
+            {
+                "ENG_name": "Merge into Shadows",
+                "name": "融身入影",
+                "type": "entries",
+                "entries": [
+                    "当你处于{@condition 隐形|XPHB}状态时，为{@skill 察觉|XPHB}你而进行的感知检定具有{@variantrule 劣势|XPHB}。"
+                ]
+            }
+        ]
+    }
+]

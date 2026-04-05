@@ -1,0 +1,63 @@
+[
+    {
+        "ENG_name": "Reveling Fool",
+        "name": "狂欢愚者",
+        "source": "CrookedMoon24",
+        "page": 115,
+        "category": "O",
+        "additionalSpells": [
+            {
+                "ability": {
+                    "choose": [
+                        "int",
+                        "wis",
+                        "cha"
+                    ]
+                },
+                "innate": {
+                    "_": {
+                        "daily": {
+                            "1e": [
+                                "塔莎狂笑术"
+                            ]
+                        }
+                    }
+                }
+            }
+        ],
+        "entries": [
+            "你曾加入一支疯癫的狂欢者队伍，学会了以愚者姿态示人，引导那来自异界的欢笑与喧闹。你获得以下增益：",
+            {
+                "ENG_name": "Fool's Mask",
+                "name": "愚者假面",
+                "type": "entries",
+                "entries": [
+                    "通过戴上欢快的面具和愚者、小丑的服装，你将获得一个隐藏你自身身份的新形象。扮作愚者时，你可以对身居高位或有权势之人进行轻微的冒犯而免受惩罚。"
+                ]
+            },
+            {
+                "ENG_name": "Jester's Repartee",
+                "name": "弄臣妙语",
+                "type": "entries",
+                "entries": [
+                    "你始终准备了法术{@spell 塔莎狂笑术|XPHB|狂笑术}，并且你施展该法术的施法属性为智力、感知或魅力（在你选择本专长时选择）。你可以无需材料成分或法术位地施展一次该法术，并在完成{@variantrule 长休|XPHB}后重获以此法施展该法术的能力。你也可以使用你拥有的任何法术位来施展该法术。"
+                ]
+            }
+        ],
+        "fluff": {
+            "images": [
+                {
+                    "type": "image",
+                    "href": {
+                        "type": "external",
+                        "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Feats/Reveling%20Fool.webp"
+                    },
+                    "width": 850,
+                    "height": 829,
+                    "credit": "Suzanne Helmigh"
+                }
+            ]
+        },
+        "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Feats/Reveling%20Fool.webp"
+    }
+]

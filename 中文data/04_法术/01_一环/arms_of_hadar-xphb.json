@@ -1,0 +1,80 @@
+[
+  {
+    "ENG_name": "Arms of Hadar",
+    "name": "哈达之臂",
+    "source": "XPHB",
+    "page": 243,
+    "level": 1,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "emanation",
+      "distance": {
+        "type": "feet",
+        "amount": 10
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你祈唤哈达的力量，让触须从你身上蔓延而出。以你为源点的 10 尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内，每个生物都必须进行一次力量豁免。豁免失败的生物将受到{@damage 2d6}点暗蚀伤害，并其直到下一回合前都无法执行反应。豁免成功则受到半数伤害。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "你使用的法术位每比一环高一环，法术的伤害就增加{@scaledamage 2d6|1-9|1d6}点。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "necrotic"
+    ],
+    "savingThrow": [
+      "strength"
+    ],
+    "areaTags": [
+      "S"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/XPHB/Arms of Hadar.webp"
+          },
+          "credit": "Tuan Duong Chu",
+          "width": 1976,
+          "height": 1440
+        }
+      ]
+    },
+    "classes": [
+      "魔契师"
+    ],
+    "display_school": "咒法系",
+    "display_savingThrow": [
+      "力量"
+    ],
+    "display_damageInflict": [
+      "死灵"
+    ]
+  }
+]

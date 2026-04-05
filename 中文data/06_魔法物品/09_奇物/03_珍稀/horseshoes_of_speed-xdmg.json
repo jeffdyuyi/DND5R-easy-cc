@@ -1,0 +1,23 @@
+[
+  {
+    "ENG_name": "Horseshoes of Speed",
+    "name": "加速马蹄铁",
+    "source": "XDMG",
+    "page": 270,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "rare",
+    "wondrous": true,
+    "entries": [
+      "这些马蹄铁四个为一套。你可以用一个{@action 魔法|XPHB}动作将其中一个马蹄铁与一匹马或类似生物的蹄子接触，随后马蹄铁就会附着在蹄子上。移除一个马蹄铁也需要一个{@action 魔法|XPHB}动作。",
+      "当四个马蹄铁都附着在同一生物身上期间，其{@variantrule 速度|XPHB}增加30尺。"
+    ],
+    "lootTables": [
+      "奥秘 - 珍稀|XDMG",
+      "器具 - 珍稀|XDMG"
+    ],
+    "translator": "不全书",
+    "valueReference": 4000,
+    "type": "W"
+  }
+]

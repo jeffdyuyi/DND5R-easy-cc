@@ -1,0 +1,22 @@
+[
+  {
+    "ENG_name": "Iron Ball",
+    "name": "铁球",
+    "source": "IDRotF",
+    "page": 238,
+    "type": "R",
+    "rarity": "unknown",
+    "weaponCategory": "simple",
+    "property": [
+      "F",
+      "T"
+    ],
+    "range": "120",
+    "dmg1": "1d4",
+    "dmgType": "B",
+    "entries": [
+      "这个球用于玩一场{@adventure 连锁闪电|IDRotF|17|连锁闪电}的游戏。"
+    ],
+    "translator": "不全书"
+  }
+]

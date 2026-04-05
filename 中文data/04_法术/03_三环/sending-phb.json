@@ -1,0 +1,69 @@
+[
+  {
+    "ENG_name": "Sending",
+    "name": "短讯术",
+    "source": "PHB",
+    "page": 274,
+    "srd": true,
+    "referenceSources": [
+      "RoT",
+      "PotA",
+      "OotA",
+      "CoS",
+      "SKT",
+      "TftYP-DiT",
+      "WDH",
+      "WDMM",
+      "GoS",
+      "IDRotF",
+      "CM",
+      "CRCotN",
+      "JttRC",
+      "LoX",
+      "DSotDQ",
+      "VEoR"
+    ],
+    "reprintedAs": [
+      "短讯术|XPHB"
+    ],
+    "level": 3,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "unlimited"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一小段优质铜线"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "round",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你向你所熟识的一个生物发送一小段二十五个单词以内的信息。该生物将在心中听到你的信息，他可以认出你是发讯人（如果他认识你），还可以用同样的方式立即回复一条讯息。对方的智力值必须至少为 1 才能理解你的信息。",
+      "你的传讯可以跨越任意长的距离，甚至能跨越位面。但如果目标和你不在同一个存在位面，则短讯术有{@chance 5|||讯息丢失！|讯息到达}的概率无法到达。"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "牧师",
+      "法师"
+    ],
+    "display_school": "塑能系"
+  }
+]

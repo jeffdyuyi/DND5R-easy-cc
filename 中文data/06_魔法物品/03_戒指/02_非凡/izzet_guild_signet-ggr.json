@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "Izzet Guild Signet",
+    "name": "伊捷公会印记",
+    "source": "GGR",
+    "page": 178,
+    "type": "RG|DMG",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "这类饰有伊捷公会符号的戒指赋予你施展{@spell 混乱箭|XGE}。有时公会成员会在声望值达到5或更高时获得公会印记，以表彰他们为公会做出的特殊服务。戒指不仅具有魔法属性，更被视作伊捷公会认可和恩赐的体现。",
+      "一枚印记有3发充能，并在每天黎明时恢复{@dice 1d3}发已消耗的充能。着装该戒指时，你可以消耗1发充能施放其关联法术（豁免{@dc 13}）。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "混乱箭|XGE"
+        ]
+      }
+    },
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/GGR/Izzet Guild Signet.webp"
+          },
+          "credit": "Raoul Vitale",
+          "width": 640,
+          "height": 461
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "ENG_name": "Sabre",
+    "name": "军刀",
+    "source": "GrimHollowPG24",
+    "page": 128,
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 50000,
+    "weaponCategory": "进阶",
+    "property": [
+      "F|XPHB"
+    ],
+    "mastery": [
+      "迅捷|GrimHollowPG24"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "S",
+    "weapon": true
+  }
+]

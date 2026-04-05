@@ -1,0 +1,60 @@
+[
+  {
+    "ENG_name": "Hecate's Lantern",
+    "name": "赫卡忒之灯",
+    "source": "BookOfEbonTides",
+    "page": 206,
+    "rarity": "legendary",
+    "reqAttune": "由牧师或法师",
+    "reqAttuneTags": [
+      {
+        "class": "牧师"
+      },
+      {
+        "class": "法师"
+      }
+    ],
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d12 + 1}",
+    "charges": 12,
+    "entries": [
+      "据说赫卡忒之灯曾在阴影位面的创造过程中被用来分隔黑暗与光照。它由金和秘银制成，镶嵌着琥珀和透明水晶的窗格，顶部有一个华丽的环可以提握。里面有一根永不熄灭的蜡烛在燃烧，不过灯笼的窗格常常使它看起来像三根蜡烛。",
+      "你必须挥舞明灯才能使用它。此提灯拥有12充能用于以下词条。它在拂晓时恢复{@dice 1d12 + 1}已消耗的充能。如果你消耗了提灯的最后一充能，掷一个{@dice d20}。骰出1时，提灯消失并回到赫卡忒的高等祭司或女神本人手中。",
+      {
+        "ENG_name": "Create Mire",
+        "name": "创造泥沼",
+        "type": "entries",
+        "entries": [
+          "作为一个动作，你可以消耗5点充能以你为中心创造一个40尺半径的暗影泥沼（参见《黯潮之书》第五章）。"
+        ]
+      },
+      {
+        "ENG_name": "Force Shift",
+        "name": "力场转移",
+        "type": "entries",
+        "entries": [
+          "以一个动作，你可以消耗3点充能使120尺内你能看见的任何变形生物改变其形态。如果不愿意，目标可以进行一次DC 13的魅力豁免检定以抵消该效应。"
+        ]
+      },
+      {
+        "ENG_name": "Spells",
+        "name": "法术",
+        "type": "entries",
+        "entries": [
+          "以一个动作，你可以施放{@spell 月华之光}法术（2充能），范围为你能看见的任何一点，或者施放{@spell 晦明之子|BookOfEbonTides}法术（8充能）。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "2": [
+          "月华之光"
+        ],
+        "8": [
+          "晦明之子|BookOfEbonTides"
+        ]
+      }
+    }
+  }
+]

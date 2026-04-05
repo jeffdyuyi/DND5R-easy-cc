@@ -1,0 +1,197 @@
+{
+  "ENG_name": "Life Domain",
+  "name": "生命领域",
+  "shortName": "生命",
+  "source": "XPHB",
+  "className": "牧师",
+  "classSource": "XPHB",
+  "page": 73,
+  "srd52": true,
+  "basicRules2024": true,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "3": [
+          "援助术|XPHB",
+          "祝福术|XPHB",
+          "疗伤术|XPHB",
+          "次等复原术|XPHB"
+        ],
+        "5": [
+          "群体治愈真言|XPHB",
+          "回生术|XPHB"
+        ],
+        "7": [
+          "生命灵光|XPHB",
+          "防死结界|XPHB"
+        ],
+        "9": [
+          "高等复原术|XPHB",
+          "群体疗伤术|XPHB"
+        ]
+      }
+    }
+  ],
+  "subclassFeatures": [
+    "生命领域|牧师|XPHB|生命|XPHB|3",
+    "引导神力：维持生命|牧师|XPHB|生命|XPHB|3",
+    "神佑医者|牧师|XPHB|生命|XPHB|6",
+    "极效治疗|牧师|XPHB|生命|XPHB|17"
+  ],
+  "features": [
+    {
+      "ENG_name": "Life Domain",
+      "name": "生命领域",
+      "source": "XPHB",
+      "page": 73,
+      "srd52": true,
+      "basicRules2024": true,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "生命",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "entries": [
+        "{@i 治愈伤者，驱散死亡}",
+        "生命领域专注于那维系着多元宇宙存在的活跃正能量。生命领域的神明们致力于促进全体生灵的福祉、治疗伤病并向需要者施以怜悯，同时驱散死亡与永恒黑暗的力量。这些神明包括了所有致力于生命、健康、耕种和自然的成员。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "生命领域法术|牧师|XPHB|生命|XPHB|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "生命门徒|牧师|XPHB|生命|XPHB|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "引导神力：维持生命|牧师|XPHB|生命|XPHB|3"
+        }
+      ],
+      "translator": "不全书"
+    },
+    {
+      "ENG_name": "Disciple of Life",
+      "name": "生命门徒",
+      "source": "XPHB",
+      "page": 73,
+      "srd52": true,
+      "basicRules2024": true,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "生命",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你消耗法术位施展法术的回合中，当该法术恢复生物的{@variantrule 生命值|XPHB}时，额外恢复 2 + 消耗法术位环阶{@variantrule 生命值|XPHB}。"
+      ],
+      "translator": "不全书"
+    },
+    {
+      "ENG_name": "Life Domain Spells",
+      "name": "生命领域法术",
+      "source": "XPHB",
+      "page": 73,
+      "srd52": true,
+      "basicRules2024": true,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "生命",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你与此神圣领域的链接使你总是准备了特定的法术。当你达到生命领域法术表中特定的牧师等级时，你总会将表中对应的法术加入准备。",
+        {
+          "type": "table",
+          "caption": "生命领域法术",
+          "colLabels": [
+            "牧师等级",
+            "准备法术"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-11"
+          ],
+          "rows": [
+            [
+              "3",
+              "{@spell 援助术|XPHB}，{@spell 祝福术|XPHB}，{@spell 疗伤术|XPHB}, {@spell 次等复原术|XPHB}"
+            ],
+            [
+              "5",
+              "{@spell 群体治愈真言|XPHB}，{@spell 回生术|XPHB}"
+            ],
+            [
+              "7",
+              "{@spell 生命灵光|XPHB}，{@spell 防死结界|XPHB}"
+            ],
+            [
+              "9",
+              "{@spell 高等复原术|XPHB}，{@spell 群体疗伤术|XPHB}"
+            ]
+          ]
+        }
+      ],
+      "translator": "不全书"
+    },
+    {
+      "ENG_name": "Channel Divinity: Preserve Life",
+      "name": "引导神力：维持生命",
+      "source": "XPHB",
+      "page": 73,
+      "srd52": true,
+      "basicRules2024": true,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "生命",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "header": 2,
+      "consumes": {
+        "ENG_name": "Channel Divinity",
+        "name": "引导神力"
+      },
+      "entries": [
+        "以一个{@action 魔法|XPHB}动作，你展示{@item 圣徽|XPHB}并消耗一次引导神力来引导治疗能量恢复等于你牧师等级五倍的{@variantrule 生命值|XPHB}。你选择身边 30 尺内处于{@status 浴血|XPHB}状态 of 生物作为此特性的目标（可以包括你），再为其分配从中获得的治疗能量。该特性至多将目标的{@variantrule 生命值|XPHB}恢复至其上限的一半。"
+      ],
+      "translator": "不全书"
+    },
+    {
+      "ENG_name": "Blessed Healer",
+      "name": "神佑医者",
+      "source": "XPHB",
+      "page": 74,
+      "srd52": true,
+      "basicRules2024": true,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "生命",
+      "subclassSource": "XPHB",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "你为其他人施展的治疗性法术也能治疗你自己。如果你用法术位施展的一道法术为除了你自己以外的一名或更多生物恢复了{@variantrule 生命值|XPHB}，此次施法后你也将立刻恢复 2 + 该法术位环阶的{@variantrule 生命值|XPHB}。"
+      ]
+    },
+    {
+      "ENG_name": "Supreme Healing",
+      "name": "极效治疗",
+      "source": "XPHB",
+      "page": 74,
+      "srd52": true,
+      "basicRules2024": true,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "生命",
+      "subclassSource": "XPHB",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "当你需要用一道法术或引导神力掷一枚或多枚骰子，以决定为一个生物恢复的生命数值时，你无需掷骰，直接为每个骰子取最高值。例如，一道法术为某一生物恢复{@dice 2d6}{@variantrule 生命值|XPHB}，则其结果直接取 12。"
+      ],
+      "translator": "不全书"
+    }
+  ]
+}

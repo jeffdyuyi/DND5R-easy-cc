@@ -1,0 +1,76 @@
+[
+  {
+    "ENG_name": "Sword Burst",
+    "name": "剑刃爆发",
+    "source": "TCE",
+    "page": 115,
+    "otherSources": [
+      {
+        "source": "SCAG",
+        "page": 143
+      }
+    ],
+    "level": 0,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "radius",
+      "distance": {
+        "type": "feet",
+        "amount": 5
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你制造出一圈临时的半透明利刃迅速横扫你的周围。你周围5尺半径范围内的所有生物都必须通过一次敏捷豁免，豁免失败将受到{@damage 1d6}点力场伤害。",
+      "当你达到以下等级时，此法术的伤害增加{@damage 1d6}，5级（{@damage 2d6}）、11级（{@damage 3d6}）和17级（{@damage 4d6}）。"
+    ],
+    "scalingLevelDice": {
+      "label": "力场伤害",
+      "scaling": {
+        "1": "1d6",
+        "5": "2d6",
+        "11": "3d6",
+        "17": "4d6"
+      }
+    },
+    "damageInflict": [
+      "force"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "miscTags": [
+      "SCL"
+    ],
+    "areaTags": [
+      "S"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "奇械师",
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "咒法系",
+    "display_savingThrow": [
+      "敏捷"
+    ],
+    "display_damageInflict": [
+      "力场"
+    ]
+  }
+]

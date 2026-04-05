@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Candlemaker's Club",
+    "name": "蜡烛制造者的短棒",
+    "source": "ObojimaTallGrass",
+    "page": 159,
+    "type": "M",
+    "rarity": "none",
+    "weight": 10,
+    "value": 70,
+    "weaponCategory": "军用",
+    "property": [
+      "H",
+      "2H",
+      "S"
+    ],
+    "dmg1": "2d6",
+    "dmgType": "B",
+    "weapon": true,
+    "entries": [
+      "这些重型蜂蜜勺形状的短棒传统上用于混合信使旅团用来密封包裹和制造蜡烛的巨大蜡桶。它们现在被驿骑士和冒险者们用作一种有用的防御和进攻工具。",
+      {
+        "ENG_name": "Special",
+        "name": "特殊",
+        "type": "entries",
+        "entries": [
+          "当你持握蜡烛制造者的短棒时，可以使用一个附赠动作来熄灭你周围5尺内的火焰。"
+        ]
+      }
+    ]
+  }
+]

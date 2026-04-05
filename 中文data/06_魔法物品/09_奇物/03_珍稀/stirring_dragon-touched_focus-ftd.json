@@ -1,0 +1,65 @@
+[
+  {
+    "ENG_name": "Stirring Dragon-Touched Focus",
+    "name": "激活龙触法器",
+    "source": "FTD",
+    "page": 26,
+    "type": "SCF",
+    "rarity": "rare",
+    "reqAttune": "由施法者",
+    "reqAttuneTags": [
+      {
+        "spellcasting": true
+      }
+    ],
+    "wondrous": true,
+    "focus": [
+      "奇械师",
+      "吟游诗人",
+      "牧师",
+      "德鲁伊",
+      "圣武士",
+      "游侠",
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "entries": [
+      "这个奇物可以是法杖、法球、护符、水晶或其他的精制物件。它通常包含有龙的翅膀、爪子、牙齿或鳞片的象形。",
+      "你的先攻检定具有优势。当你持握这件法器时，它可以作为你施展所有法术的法器。",
+      "激活法器具有沉睡状态的特性，它还获得了另一个特性，由激活它的宝库的主龙的族裔决定：",
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Chromatic",
+            "name": "多彩",
+            "type": "item",
+            "entries": [
+              "每当你使用法术位施展一道造成强酸、寒冷、火焰、闪电或毒素伤害的法术时，投掷一个{@dice d6}，你在这个法术的其中一个伤害掷骰上增加掷出的值。"
+            ]
+          },
+          {
+            "ENG_name": "Gem",
+            "name": "宝石",
+            "type": "item",
+            "entries": [
+              "当你使用法术位施放一道法术时，你可以立即传送到距离你 15 尺内一处你能看见且未被占据的空间。"
+            ]
+          },
+          {
+            "ENG_name": "Metallic",
+            "name": "金属",
+            "type": "item",
+            "entries": [
+              "当一个你能看到的生物在你 30 英尺内进行豁免检定时，你可以使用你的反应使该生物在这次豁免检定上获得优势。"
+            ]
+          }
+        ]
+      }
+    ],
+    "translator": "不全书",
+    "valueReference": 400
+  }
+]

@@ -1,0 +1,13 @@
+{
+    "ENG_name": "Protection",
+    "name": "守护",
+    "source": "XPHB",
+    "page": 196,
+    "featureType": [
+        "FS:F",
+        "FS:P"
+    ],
+    "entries": [
+        "当一个你可见的生物攻击你周围 5 尺内除你之外的目标时，若你正持握 {@item 盾牌|XPHB|盾牌}，则你可以使用 {@variantrule 反应|XPHB} 来迫使该攻击检定具有 {@variantrule 劣势|XPHB}。"
+    ]
+}

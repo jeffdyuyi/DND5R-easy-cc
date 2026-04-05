@@ -1,0 +1,27 @@
+[
+    {
+        "ENG_name": "Spelldriver",
+        "name": "驱法者",
+        "source": "TalDoreiCampaignSettingReborn",
+        "page": 190,
+        "prerequisite": [
+            {
+                "level": 11,
+                "spellcasting2020": true
+            }
+        ],
+        "entries": [
+            "通过专注、努力、与奉献，你成功的掌握了快速施法的技巧。",
+            "当你以附赠动作施展一个1环或更高环阶的法术时，你也能你的动作去施展另一个1环或更高环阶的法术。不过，若你在同一回合中尝试施展两个或以上的法术时，只有它们之中一个可以是3环以上的（包括3环）。",
+            {
+                "ENG_name": "Rules Tip: Casting Multiple Spells",
+                "name": "规则提示：复数法术",
+                "type": "inset",
+                "page": 190,
+                "entries": [
+                    "正常来讲，当你以附赠动作施展了一个法术，你就不能用你的动作去施展戏法以外的法术了（见{@note 参见{@book PHB p202|PHB|10|附赠动作}。}）。驱法者专长移除了这一限制，但在同一回合中使用多个法术所需的专注依旧限制了它们的整体威力。"
+                ]
+            }
+        ]
+    }
+]

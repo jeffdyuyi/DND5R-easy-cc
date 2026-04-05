@@ -1,0 +1,54 @@
+[
+  {
+    "ENG_name": "Vigor of the Hill Giant",
+    "name": "山丘巨人之健强",
+    "source": "BGG",
+    "page": 19,
+    "prerequisite": [
+      {
+        "level": 4,
+        "feat": [
+          "巨人打击|BGG|巨人打击（山丘打击）"
+        ]
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "con",
+            "wis"
+          ],
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你展现出象征着山丘巨人的强韧性，使得你获得下列增益：",
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Bulwark",
+            "name": "意志壁垒",
+            "type": "item",
+            "entries": [
+              "当你受到一次让你移动至少5尺、或给予你 倒地Prone 状态的效应时，你可以用你的反应来稳定自身，此时，你既不会被因此移动，也不会因此陷入 倒地Prone 。"
+            ]
+          },
+          {
+            "ENG_name": "Iron Stomach",
+            "name": "钢铁肠胃",
+            "type": "item",
+            "entries": [
+              "当你在短休时进食，并且使用了一粒或更多生命骰恢复生命时，你额外恢复等同于你的 体质调整值+你的熟练加值 点的生命值。"
+            ]
+          }
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

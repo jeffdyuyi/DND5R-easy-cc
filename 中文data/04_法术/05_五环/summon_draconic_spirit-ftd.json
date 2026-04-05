@@ -1,0 +1,75 @@
+[
+  {
+    "ENG_name": "Summon Draconic Spirit",
+    "name": "龙类灵魄召唤术",
+    "source": "FTD",
+    "page": 21,
+    "reprintedAs": [
+      "龙类召唤术|XPHB"
+    ],
+    "level": 5,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一件带有巨龙图案的物品，价值至少500gp",
+        "cost": 50000
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你唤出一只{@creature 龙类灵魄|FTD}。它将显现于施法范围内的一处未被占据的空间。该肉体形态使用龙类灵魄的数据。当你施展此法术时，选择一个龙种科目：色彩龙，宝石龙，或金属龙。该生物的长相与你所选择的龙种相似，这会决定其数据中的某些特性。该生物在法术结束或其生命值降至0时消失。",
+      "该生物对你和你的同伴友善。在战斗中，该生物与你共享先攻，它在你的回合结束后行动。它听从你的口头命令（无需动作）。如果你不发出指令，该生物执行{@action 回避}动作，并用自己的移动力来回避危险。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你用6环或更高的法术位施展此法术时，用对应的环数决定数据栏中与法术环数有关的数据。"
+        ]
+      }
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "miscTags": [
+      "SGT",
+      "SMN"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊",
+      "术士",
+      "法师"
+    ],
+    "display_school": "咒法系",
+    "display_savingThrow": [
+      "敏捷"
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "name": "弩矢匣",
+    "ENG_name": "Crossbow Bolt Case",
+    "source": "XPHB",
+    "page": 224,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 1,
+    "value": 100,
+    "entries": [
+      "一个{@item 弩矢匣|XPHB}至多能存放20根弩矢。"
+    ],
+    "basicRules2024": true,
+    "containerCapacity": {
+      "item": [
+        {
+          "弩矢|xphb": 20
+        }
+      ]
+    },
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

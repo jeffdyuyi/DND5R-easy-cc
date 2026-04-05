@@ -1,0 +1,76 @@
+[
+  {
+    "ENG_name": "Bag of Tricks, Tan",
+    "name": "魔术袋，棕褐色",
+    "source": "DMG",
+    "page": 154,
+    "srd": true,
+    "referenceSources": [
+      "JttRC"
+    ],
+    "reprintedAs": [
+      "魔术袋，棕褐色|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "weight": 0.5,
+    "recharge": "拂晓",
+    "entries": [
+      "这个由棕褐色布料制成的普通布袋看起来是空无一物。然而，将手伸进袋子里会摸到一个小小的毛绒物件。",
+      "你能够以一个魔法动作取出布袋里的毛绒物件，并把它扔出至多20尺远。当物件落地时，投{@dice d8}，参考对应颜色布袋的表格决定物件变成的生物。相关生物的资料见《怪物图鉴》。该生物在次日黎明时分或者其生命值降至0时消失。",
+      "扔出的生物对你和你的盟友态度友善Friendly，且会在你的回合结束后行动。你能够以一个附赠动作命令该生物在其下一回合执行特定的移动方式，做特定的动作，例如攻击你的敌人。没接到命令时，该生物按自己天性行动。",
+      "一旦袋子抽出三件毛绒物件后，直至次日黎明才可再次使用。",
+      {
+        "type": "table",
+        "colLabels": [
+          "{@dice d8}",
+          "creature"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-11"
+        ],
+        "rows": [
+          [
+            "1",
+            "{@creature 胡狼}"
+          ],
+          [
+            "2",
+            "{@creature 猿}"
+          ],
+          [
+            "3",
+            "{@creature 狒狒}"
+          ],
+          [
+            "4",
+            "{@creature 斧嘴鸟}"
+          ],
+          [
+            "5",
+            "{@creature 黑熊}"
+          ],
+          [
+            "6",
+            "{@creature 巨鼬}"
+          ],
+          [
+            "7",
+            "{@creature 巨鬣狗}"
+          ],
+          [
+            "8",
+            "{@creature 老虎}"
+          ]
+        ]
+      }
+    ],
+    "lootTables": [
+      "魔法物品表F"
+    ],
+    "valueReference": 400,
+    "type": "W"
+  }
+]

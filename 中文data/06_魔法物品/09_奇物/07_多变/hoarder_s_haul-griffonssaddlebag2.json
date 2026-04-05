@@ -1,0 +1,36 @@
+[
+  {
+    "ENG_name": "Hoarder's Haul",
+    "name": "贪婪者拖车",
+    "source": "GriffonsSaddlebag2",
+    "page": 104,
+    "type": "VEH",
+    "tier": "主要",
+    "rarity": "varies",
+    "wondrous": true,
+    "entries": [
+      "此物品存在多种变体，如下方所列：",
+      {
+        "type": "list",
+        "items": [
+          "{@item 贪婪者拖车（非普通）|GriffonsSaddlebag2}",
+          "{@item 贪婪者拖车（珍稀）|GriffonsSaddlebag2}",
+          "{@item 贪婪者拖车（极珍稀）|GriffonsSaddlebag2}"
+        ]
+      }
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Hoarders-Haul.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

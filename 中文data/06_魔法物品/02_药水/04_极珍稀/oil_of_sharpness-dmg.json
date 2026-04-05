@@ -1,0 +1,33 @@
+[
+  {
+    "ENG_name": "Oil of Sharpness",
+    "name": "锐锋之油",
+    "source": "DMG",
+    "page": 184,
+    "srd": true,
+    "referenceSources": [
+      "OotA",
+      "CoS",
+      "LoX",
+      "CoA",
+      "VEoR"
+    ],
+    "reprintedAs": [
+      "锐锋之油|XDMG"
+    ],
+    "type": "P",
+    "tier": "次要",
+    "rarity": "very rare",
+    "bonusWeapon": "+3",
+    "entries": [
+      "这种透明的胶状油膏中掺杂着极纤细的银色碎片。它可以涂抹于一把挥砍或穿刺武器，或是至多5发造成挥砍或穿刺伤害的弹药上。涂抹油需要1分钟的时间。接下来的1小时内，受油影响的物品变为魔法物品，其攻击检定与伤害掷骰获得+3加值。"
+    ],
+    "lootTables": [
+      "魔法物品表D"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "valueReference": 20000
+  }
+]

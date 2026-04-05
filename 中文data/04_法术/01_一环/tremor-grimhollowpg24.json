@@ -1,0 +1,90 @@
+[
+  {
+    "ENG_name": "Tremor",
+    "name": "震动",
+    "source": "GrimHollowPG24",
+    "page": 204,
+    "level": 1,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "emanation",
+      "distance": {
+        "type": "feet",
+        "amount": 15
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "小型铃铛"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你周围15尺的{@variantrule 光环 [效应区域]|XPHB|光环}开始剧烈震动。你不会受到震动的影响。地面被视为{@variantrule 困难地形|XPHB}，每当{@variantrule 光环 [效应区域]|XPHB|光环}进入一个生物的空间，一个生物进入{@variantrule 光环 [效应区域]|XPHB|光环}，或生物在其回合结束时位于该区域内，该生物需进行一次敏捷豁免检定。若豁免失败，该生物受到{@damage 1d6}钝击伤害并获得{@condition 倒地|XPHB}状态。每个生物每回合只需进行一次此豁免检定。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "伤害对每个高于1环的法术位环阶增加{@dice 1d6}。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "钝击"
+    ],
+    "conditionInflict": [
+      "倒地"
+    ],
+    "savingThrow": [
+      "敏捷"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Tremor.webp"
+  }
+]

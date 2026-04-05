@@ -1,0 +1,51 @@
+[
+  {
+    "ENG_name": "Brazier of Commanding Fire Elementals",
+    "name": "命令火元素火盆",
+    "source": "DMG",
+    "page": 156,
+    "srd": true,
+    "referenceSources": [
+      "TftYP-AtG",
+      "KftGV",
+      "CoA"
+    ],
+    "reprintedAs": [
+      "命令火元素火盆|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "rare",
+    "wondrous": true,
+    "weight": 5,
+    "entries": [
+      "火焰在这个铜盆中燃烧期间，你可以用一个动作说出火盆的命令语并以此召唤一只{@creature 火元素}，其效应如同你施放了{@spell 咒唤元素}法术。直到次日黎明前，火盆都无法再次以该方式使用。",
+      "火盆的重量为5磅。"
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1": [
+          "咒唤元素"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表G"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Brazier of Commanding Fire Elementals.webp"
+          },
+          "width": 506,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

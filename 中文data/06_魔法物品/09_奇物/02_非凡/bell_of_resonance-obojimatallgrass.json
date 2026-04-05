@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Bell of Resonance",
+    "name": "共鸣铃铛",
+    "source": "ObojimaTallGrass",
+    "page": 167,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这个小铃铛的声音会使金属剧烈振动。作为一个动作，你可以摇动铃铛，使30尺内所有持有金属武器的生物进行一次DC 14的力量豁免检定。豁免失败时，该生物会掉落其武器。一旦你使用了这个属性，直到下一个拂晓前都不能再次使用。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/bells-of-resonance.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 2786,
+          "height": 2786
+        }
+      ]
+    }
+  }
+]

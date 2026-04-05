@@ -1,0 +1,103 @@
+[
+  {
+    "ENG_name": "Corrupted Cure",
+    "name": "腐坏治疗",
+    "source": "GuideDrakkenheim",
+    "page": 194,
+    "level": 1,
+    "school": "E",
+    "subschools": [
+      "受污染的"
+    ],
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 90
+      }
+    },
+    "components": {
+      "v": true,
+      "m": "一块价值10GP的妄质碎片"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "{@i 当你施放这个法术时，你获得1层污染。}",
+      "你指定范围内一个你能看见的生物恢复等于{@dice 4d6} + 你的施法属性调整值的生命值。该法术对亡灵或构装无效果。",
+      "当你施放该法术时，目标可以选择同时获得1层污染。如果选择这样做，则改为恢复等于{@dice 8d6} + 你的施法属性调整值的生命值。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用2环或更高法术位施放该法术时，治愈效果每比1环高一级就增加{@dice 2d6}，若目标选择获得一层污染则增加{@dice 4d6}。"
+        ]
+      }
+    ],
+    "miscTags": [
+      "HL",
+      "SCL"
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Apothecary",
+          "name": "药剂师",
+          "source": "GuideDrakkenheim"
+        },
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Paladin",
+          "name": "圣武士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    }
+  }
+]

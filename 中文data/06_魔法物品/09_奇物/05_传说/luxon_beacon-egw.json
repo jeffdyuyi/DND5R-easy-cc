@@ -1,0 +1,48 @@
+[
+  {
+    "ENG_name": "Luxon Beacon",
+    "name": "拉克森灵魂信标",
+    "source": "EGW",
+    "page": 268,
+    "rarity": "legendary",
+    "wondrous": true,
+    "entries": [
+      "这枚12面体水晶散发着微弱的光芒，实际重量比乍看上去要重上一些。它的侧面固定着几个手柄，在被触碰时会嗡嗡地震动起来。",
+      {
+        "ENG_name": "Fragment of Possibility",
+        "name": "概率碎片",
+        "type": "entries",
+        "entries": [
+          "一个生物触碰该信标并维持专注1分钟后可获得一个概率碎片，它看起来像是一个微型的灰色能量球，跟随着该生物移动，始终与其保持1尺内的距离。碎片持续存在8小时或直到被使用。一旦该信标授予了一个概率碎片，在下次黎明前都无法再次授予。一个已从拉克森灵魂信标获得概率碎片的生物，无法从任何出处获得另一个概率碎片。",
+          "每当拥有概率碎片的生物进行攻击，属性或豁免检定时，他可以花费一个概率碎片来骰一个额外的{@dice d20}并选择要使用哪粒{@dice d20}的结果。或者，当有生物对该生物进行攻击检定时，他可以花费一个概率碎片来骰一个{@dice d20}并选择要使用哪粒{@dice d20}的结果，他自己骰出的或攻击者骰出的。",
+          "若原{@dice d20}骰有优势或劣势，那么拥有概率碎片的生物在原D20的优势或劣势生效后掷出其{@dice d20}。"
+        ]
+      },
+      {
+        "ENG_name": "Soul Snare",
+        "name": "灵魂陷阱",
+        "type": "entries",
+        "entries": [
+          "如果一位经过转生仪式的拉克森追随者在距离拉克森灵魂信标100英里内死亡，其灵魂将被信标捕获。该灵魂将在信标100英里内随机发育的类人婴儿体内转世。"
+        ]
+      }
+    ],
+    "hasFluffImages": true,
+    "valueReference": 200000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/EGW/Luxon Beacon.webp"
+          },
+          "credit": "Olga Drebas",
+          "width": 1000,
+          "height": 803
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

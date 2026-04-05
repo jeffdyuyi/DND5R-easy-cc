@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Luna Moth Cape",
+    "name": "月蛾斗篷",
+    "source": "GriffonsSaddlebag2",
+    "page": 117,
+    "tier": "次要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这件精美的精灵斗篷仿照月蛾翅膀的样式制成。当你穿着此斗篷期间，在你采取{@action 疾走}动作时可以额外移动10尺。",
+      "此外，当你穿着这件斗篷期间，你可以在跳跃时以一个附赠动作说出其命令语，使斗篷展开并向下扇动，在你达到跳跃最高点时将你推升10尺高度。这项词条一经使用，则其在你重新落到坚实地面之前都无法再次使用。"
+    ],
+    "lootTables": [
+      "魔法物品表 B1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Luna-Moth-Cape.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

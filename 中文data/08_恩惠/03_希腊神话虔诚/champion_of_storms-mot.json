@@ -1,0 +1,13 @@
+[
+  {
+    "ENG_name": "Champion of Storms",
+    "name": "风暴天尊",
+    "source": "MOT",
+    "page": 55,
+    "type": "Piety Trait",
+    "entries": [
+      "{@i 虔诚值 50+ 刻拉诺斯特性}",
+      "选择智力或感知属性+2，并且使该属性的上限+2。"
+    ]
+  }
+]

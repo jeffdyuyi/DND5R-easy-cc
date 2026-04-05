@@ -1,0 +1,62 @@
+[
+  {
+    "ENG_name": "Staff of the Python",
+    "name": "巨蟒法杖",
+    "source": "DMG",
+    "page": 204,
+    "srd": true,
+    "referenceSources": [
+      "ToA"
+    ],
+    "reprintedAs": [
+      "巨蟒法杖|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": "由牧师、德鲁伊或魔契师",
+    "reqAttuneTags": [
+      {
+        "class": "牧师"
+      },
+      {
+        "class": "德鲁伊"
+      },
+      {
+        "class": "魔契师"
+      }
+    ],
+    "weight": 4,
+    "weaponCategory": "simple",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "staff": true,
+    "entries": [
+      "你可以用一个动作说出该法杖的命令语并把它扔到你周边10尺范围内的地面上。随后，法杖将变为一条{@creature 巨蟒蛇}并听从你指挥，且以其自身的先攻行动。用一个附赠动作再次说出命令语可将法杖在巨蟒蛇原本占据的空间中还原为正常形态。",
+      "在你的回合内，只要巨蟒在你周围60尺内且你并未{@condition 失能}，你就可以通过精神指令控制巨蟒。你可以决定巨蟒下一轮的动作和移动，或是下达宽泛的命令，如",
+      "如果巨蟒的生命值降至0，它就会死亡并恢复为法杖形态。法杖随后碎裂并被摧毁。如果巨蟒在失去所有生命值之前恢复为法杖形态，它就会恢复所有失去的生命值。"
+    ],
+    "lootTables": [
+      "魔法物品表F"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Staff of the Python.webp"
+          },
+          "width": 214,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "ST"
+  }
+]

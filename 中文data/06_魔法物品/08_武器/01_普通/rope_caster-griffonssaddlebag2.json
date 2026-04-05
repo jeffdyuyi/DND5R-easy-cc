@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "Rope Caster",
+    "name": "绳弩",
+    "source": "GriffonsSaddlebag2",
+    "page": 152,
+    "baseItem": "手弩|phb",
+    "type": "R",
+    "tier": "次要",
+    "rarity": "common",
+    "weight": 3,
+    "weaponCategory": "军用",
+    "property": [
+      "A",
+      "L",
+      "LD"
+    ],
+    "range": "30/120",
+    "entries": [
+      "这把魔法武器深受渗透者青睐。和其它手弩不同，其击发机构并无弓弦。事实上，这把手弩仅能以{@item 麻绳(50尺)|PHB|绳索}为矢。你可以用一个附赠动作将一段绳索装填至弩中。此时，绳索的纤维将魔法性地附着于弩臂并自行绷紧。你可对射程内的一名自愿生物或一件未被穿戴或携带的物件发动远程攻击。若攻击命中，目标不会受到伤害，但会被绳索绑住。若绳索长度足够，其将魔法性地环绕目标并自行打结，剩余绳索则垂悬于绳结处。若目标为自愿生物，绳索会缠绕其胸部或腰部形成安全索，但不会限制其行动。若攻击命中非自愿生物，绳索将直接落地且不会打结。",
+      "一个生物可使用其动作进行一次DC 10的力量或敏捷检定，若成功则可解开其触及范围内一个被绑缚物体上的绳索。"
+    ],
+    "ammoType": "麻绳(50尺)|phb|绳索",
+    "lootTables": [
+      "魔法物品表 A1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Rope-Caster.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "弯刀",
+    "ENG_name": "Scimitar",
+    "source": "PHB",
+    "page": 149,
+    "edition": "classic",
+    "type": "M",
+    "rarity": "none",
+    "weight": 3,
+    "value": 2500,
+    "weaponCategory": "martial",
+    "property": [
+      "F",
+      "L"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "S",
+    "basicRules": true,
+    "referenceSources": [
+      "TftYP-TSC",
+      "RMBRE",
+      "KftGV"
+    ],
+    "reprintedAs": [
+      "弯刀|XPHB"
+    ],
+    "srd": true,
+    "sword": true,
+    "weapon": true
+  }
+]

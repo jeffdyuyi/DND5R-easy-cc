@@ -1,0 +1,70 @@
+[
+  {
+    "ENG_name": "Holy Weapon",
+    "name": "神圣武器",
+    "source": "XGE",
+    "page": 157,
+    "level": 5,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你为你触碰的武器注入神圣的力量。直到法术结束之前，武器都会发散出 30 尺半径的明亮照明和额外 30 尺的微亮照明。此外，用这把武器击中时会造成额外{@damage 2d8}光耀伤害。如果该武器原先是非魔法武器，则在法术持续时间内其将暂时转变为魔法武器。",
+      "在你自己的回合中以一个附赠动作，你可以解散这个法术并使武器爆发出强光。在武器周围 30 尺内，每个由你选择的可见生物必须进行体质豁免检定。若豁免失败，生物将受到{@damage 4d8}光耀伤害，并且在1分钟内{@condition 目盲}。豁免成功将只承受一半伤害并不会{@condition 目盲}。在被{@condition 目盲}的生物每个回合结束时它都可以重新进行体质豁免检定，若成功将结束效果对自己的影响。"
+    ],
+    "damageInflict": [
+      "radiant"
+    ],
+    "conditionInflict": [
+      "目盲"
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "miscTags": [
+      "AAD",
+      "LGT",
+      "SGT",
+      "UBA"
+    ],
+    "areaTags": [
+      "MT"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师",
+      "圣武士"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "体质"
+    ],
+    "display_damageInflict": [
+      "光辉"
+    ]
+  }
+]

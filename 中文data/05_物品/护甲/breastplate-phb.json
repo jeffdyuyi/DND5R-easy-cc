@@ -1,0 +1,26 @@
+[
+  {
+    "name": "胸甲",
+    "ENG_name": "Breastplate",
+    "source": "PHB",
+    "page": 145,
+    "edition": "classic",
+    "type": "MA",
+    "rarity": "none",
+    "weight": 20,
+    "value": 40000,
+    "ac": 14,
+    "armor": true,
+    "entries": [
+      "该护甲主要由皮条固定的金属护胸组成。尽管它并没有为四肢提供额外的防护，但其在保证着装者活动自由度的同时，为其生命器官提供了十分有效的保护效果。"
+    ],
+    "basicRules": true,
+    "referenceSources": [
+      "PaBTSO"
+    ],
+    "reprintedAs": [
+      "胸甲|XPHB"
+    ],
+    "srd": true
+  }
+]

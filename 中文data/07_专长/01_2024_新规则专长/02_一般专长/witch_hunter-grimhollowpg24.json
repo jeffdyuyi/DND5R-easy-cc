@@ -1,0 +1,51 @@
+[
+    {
+        "ENG_name": "Witch Hunter",
+        "name": "女巫猎人",
+        "source": "GrimHollowPG24",
+        "page": 117,
+        "category": "G",
+        "prerequisite": [
+            {
+                "level": 4,
+                "ability": [
+                    {
+                        "wis": 13
+                    },
+                    {
+                        "int": 13
+                    }
+                ]
+            }
+        ],
+        "ability": [
+            {
+                "choose": {
+                    "from": [
+                        "wis",
+                        "int"
+                    ]
+                }
+            }
+        ],
+        "entries": [
+            "你受过追踪并击败那些施法者的训练。你获得以下增益。",
+            {
+                "ENG_name": "Mage Bane",
+                "name": "法师死敌",
+                "type": "entries",
+                "entries": [
+                    "每当你对一名正在专注法术的生物造成伤害时，该生物对维持该法术所做的体质豁免具有{@variantrule 劣势|XPHB}。"
+                ]
+            },
+            {
+                "ENG_name": "Magic Reflection",
+                "name": "魔法反射",
+                "type": "entries",
+                "entries": [
+                    "如果你成功通过了一次对抗一个指向你或包含你在内的范围的法术的豁免检定。你可以使用你的{@variantrule 反应|XPHB}来对施法者进行一次由于由于命中，该法术会被反射回其源头。该法术现在将该施法者作为其唯一目标。"
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,21 @@
+[
+  {
+    "name": "纹章",
+    "ENG_name": "Emblem",
+    "source": "XPHB",
+    "page": 226,
+    "type": "SCF|XPHB",
+    "rarity": "none",
+    "value": 500,
+    "entries": [
+      "为了使纹章成为一个有效的圣徽，它必须被挂在到织物上（比如外衣或旗帜）或者是一个{@item 盾牌|XPHB}上。"
+    ],
+    "basicRules2024": true,
+    "group": [
+      "圣徽"
+    ],
+    "scfType": "holy",
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

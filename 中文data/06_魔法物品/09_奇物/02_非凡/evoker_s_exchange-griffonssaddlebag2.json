@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Evoker's Exchange",
+    "name": "塑能转换护符",
+    "source": "GriffonsSaddlebag2",
+    "page": 78,
+    "tier": "主要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "focus": true,
+    "entries": [
+      "当你佩戴这枚护符期间，你可以将一种能量的伤害转化为另一种。你可以将此护符作为法器使用，当你施展一个不需要专注且仅造成火焰或闪电伤害的一环或更高等级法术时。使用时，如果法术原本造成火焰伤害，你可以选择将其改为造成闪电伤害；如果法术原本造成闪电伤害，你可以选择将其改为造成火焰伤害。",
+      "如果一个造成火焰伤害的法术原本会点燃未被穿戴或携带的可燃物，当其被转化为闪电伤害时则不会产生这种效果。相反，如果一个造成闪电伤害的法术被转化为火焰伤害，则会点燃这类物品。"
+    ],
+    "lootTables": [
+      "魔法物品表 F1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Evokers-Exchange.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

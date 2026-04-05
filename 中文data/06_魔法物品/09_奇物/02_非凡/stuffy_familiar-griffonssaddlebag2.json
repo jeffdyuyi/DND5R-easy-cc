@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Stuffy Familiar",
+    "name": "毛绒魔宠娃娃",
+    "source": "GriffonsSaddlebag2",
+    "page": 173,
+    "tier": "次要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这个小巧的毛绒玩具摸起来柔软舒适，非常适合拥抱。如果你能施放{@spell 寻获魔宠}法术，你可以使用这个玩具作为法术的材料成分，且不会被消耗。当你这样做时，魔宠会附身在这个毛绒玩具中，你也可以在施法时改变其外貌。除了是天界生物、精类或邪魔之外，该魔宠同时也是构装体，但其他数据与其正常形态保持不变。魔宠的毛绒玩具形态必须与其正常动物形态的数据相适配。例如，一个栖身在狮鹫毛绒玩具中的魔宠可以使用{@creature 猫}或{@creature 隼}的数据，但不能使用{@creature 毒蛇}的数据。毛绒玩具会随着魔宠的正常形态大小相应地变大或缩小。",
+      "魔宠在保持静止期间，其外观与普通的动物标本真假难辨。如果你暂时遣散魔宠，动物标本和魔宠会一同消失到异次元空间中。如果魔宠被永久遣散或生命值降至0，动物标本会留在原地。"
+    ],
+    "lootTables": [
+      "魔法物品表 B1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Stuffy-Familiar.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

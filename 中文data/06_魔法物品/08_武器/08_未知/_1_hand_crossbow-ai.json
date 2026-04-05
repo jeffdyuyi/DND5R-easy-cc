@@ -1,0 +1,42 @@
+[
+  {
+    "ENG_name": "+1 Hand Crossbow",
+    "name": "恶毒 +1 手弩",
+    "source": "AI",
+    "page": 149,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "HotB"
+    ],
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "unknown (magic)",
+    "weight": 3,
+    "value": 7500,
+    "weaponCategory": "martial",
+    "property": [
+      "A|XPHB",
+      "L|XPHB",
+      "LD|XPHB"
+    ],
+    "mastery": [
+      "侵扰|XPHB"
+    ],
+    "range": "30/120",
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "crossbow": true,
+    "weapon": true,
+    "ammoType": "弩矢|xphb",
+    "hasFluffImages": true,
+    "namePrefix": "恶毒 +1 ",
+    "bonusWeapon": "+1",
+    "entries": [
+      "使用这把武器进行攻击和伤害判定时，你有{=bonusWeapon}的加值。",
+      "当你使用这把魔法武器掷出20时，目标会额外受到7点{=dmgType}伤害。",
+      "{@note 注意：根据SRD，它是一个额外的{@damage 2d6} {=dmgType}伤害，尽管{@link 这是不正确的|https://rpg.stackexchange.com/a/174522/53884}。}"
+    ],
+    "_isVariant": true
+  }
+]

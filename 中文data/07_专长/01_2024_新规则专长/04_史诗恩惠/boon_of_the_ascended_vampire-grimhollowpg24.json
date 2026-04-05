@@ -1,0 +1,41 @@
+[
+    {
+        "ENG_name": "Boon of the Ascended Vampire",
+        "name": "升华吸血鬼的恩惠",
+        "source": "GrimHollowPG24",
+        "page": 120,
+        "category": "EB",
+        "prerequisite": [
+            {
+                "level": 19,
+                "other": "{@charoption 吸血鬼|GrimHollowPG24|吸血鬼变形}"
+            }
+        ],
+        "ability": [
+            {
+                "choose": {
+                    "from": [
+                        "str",
+                        "dex",
+                        "con",
+                        "int",
+                        "wis",
+                        "cha"
+                    ]
+                },
+                "max": 30
+            }
+        ],
+        "entries": [
+            "你获得以下增益。",
+            {
+                "ENG_name": "Inured to Sunlight",
+                "name": "免疫耀阳",
+                "type": "entries",
+                "entries": [
+                    "你不再受到耀阳的影响。"
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,163 @@
+{
+  "ENG_name": "Shadow Stalker",
+  "name": "暗影潜行者",
+  "shortName": "暗影潜行者",
+  "source": "CthulhuTorchlight",
+  "className": "游荡者",
+  "classSource": "XPHB",
+  "page": 0,
+  "edition": "one",
+  "subclassFeatures": [
+    {
+      "ENG_name": "Shadow Stalker",
+      "name": "暗影潜行者",
+      "source": "CthulhuTorchlight",
+      "page": 0,
+      "className": "游荡者",
+      "classSource": "XPHB",
+      "subclassShortName": "暗影潜行者",
+      "subclassSource": "CthulhuTorchlight",
+      "level": 3,
+      "entries": [
+        {
+          "type": "inset",
+          "entries": [
+            {
+              "type": "quote",
+              "entries": [
+                "有人藏匿幽影之中。而我时刻与其同行。"
+              ],
+              "from": "库尔登"
+            }
+          ]
+        },
+        "游荡者在幽影中如鱼得水，他们潜入黑暗以躲避敌人、伏击毫无防备的对手，或带走巨大的宝藏。有些游荡者在潜入黑暗时会感受到一股奇怪的存在，那是他们听觉边缘的低语。",
+        "这些游荡者听见了暗影的召唤，命中注定与其连接。黑暗能感知生物心中的空虚，那是一种永远无法填补的渴望。或许......也许可以填补。暗影伸出触手，提出一个简单的邀约：献出你过去的一部分，换取一个内心充实的未来。那些听见邀约者终将接受，而后悔恨。但暗影总会慎重挑选自己的目标，即使它深知那些被它盯上的猎物，终究无法抗拒。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "暗影映像|游荡者|XPHB|暗影潜行者|CthulhuTorchlight|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "幽影尘埃|游荡者|XPHB|暗影潜行者|CthulhuTorchlight|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Shadow Motes",
+      "name": "幽影尘埃",
+      "source": "CthulhuTorchlight",
+      "page": 0,
+      "className": "游荡者",
+      "classSource": "XPHB",
+      "subclassShortName": "暗影潜行者",
+      "subclassSource": "CthulhuTorchlight",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你拥有控制幽影的力量，这由你的幽影尘埃所代表。你可以消耗这些尘埃来增强或为某些暗影潜行者特性提供燃料。你拥有的尘埃数量等于你的游荡者等级。你开始时知晓三个此类特性：暗影斥候、暗影置换和扰目之影，每个特性均在下方详述。当你消耗1点幽影尘埃时，它将不可用，直到你完成一次{@variantrule 长休|XPHB}，在长休结束时你恢复所有已消耗的尘埃。当你将一名{@variantrule 敌对【态度】|XPHB|敌对}生物的生命值降至0{@variantrule 生命值|XPHB}时，你也会恢复1点已消耗的幽影尘埃。",
+        {
+          "ENG_name": "Shadow Scout",
+          "name": "暗影斥候",
+          "type": "entries",
+          "entries": [
+            "以一个{@action 魔法|XPHB}动作，你可以消耗1点幽影尘埃来将你的感官投射至你的暗影映像上。在接下来的1分钟内，你可以如同身处其位置一般通过映像视物和聆听，并且你可以将其移动到距离你至多120尺远的地方。此效应会提前结束，如果你受到任何伤害或具有{@condition 失能|XPHB}状态。"
+          ]
+        },
+        {
+          "ENG_name": "Shadow Swap",
+          "name": "暗影置换",
+          "type": "entries",
+          "entries": [
+            "当你使用你的灵巧动作特性时，作为该{@variantrule 附赠动作|XPHB}的一部分，你可以消耗1点幽影尘埃来与你的暗影映像互换位置。你传送至它所在的空间，而它则传送至你原来的空间。如果你出现在一个已占据的空间，你将被推至最近的未占据空间，并受到等同于你被移动英尺数的力场伤害。"
+          ]
+        },
+        {
+          "ENG_name": "Vexing Shadow",
+          "name": "扰目之影",
+          "type": "entries",
+          "entries": [
+            "当你用武器进行的攻击检定命中了一名生物，且你的暗影映像在那个生物的5尺范围内时，你可以立即消耗1点幽影尘埃，来获得仅对该生物有效的{@condition 隐形|XPHB}状态，持续至你的下一个回合结束。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Shadowy Reflection",
+      "name": "暗影映像",
+      "source": "CthulhuTorchlight",
+      "page": 0,
+      "className": "游荡者",
+      "classSource": "XPHB",
+      "subclassShortName": "暗影潜行者",
+      "subclassSource": "CthulhuTorchlight",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "以一个{@action 魔法|XPHB}动作，你将你的影子从你身边排出并命令其行动。它出现在你5尺内一个未占据空间且体型与你相同。暗影映像可以操控一个物件、打开一扇未上锁的门或容器、将一件未被装备的物品收起或从某处取回、或是倾倒一个小瓶。在你后续回合中作为一个魔法动作、或在你使用灵巧动作特性时作为该{@variantrule 附赠动作|XPHB}的一部分，你可以再次操控你的影子。你可以令你的影子移动至多等于你的{@variantrule 速度|XPHB}的距离。影子无法攻击、激活魔法物品、或携带超过10磅的重量。当你的影子受到任何伤害、成为任何效应的目标、或你处于{@condition 失能|XPHB}状态时，你的影子会消失。"
+      ]
+    },
+    {
+      "ENG_name": "Shadowed Succor",
+      "name": "暗影庇护",
+      "source": "CthulhuTorchlight",
+      "page": 0,
+      "className": "游荡者",
+      "classSource": "XPHB",
+      "subclassShortName": "暗影潜行者",
+      "subclassSource": "CthulhuTorchlight",
+      "level": 9,
+      "header": 2,
+      "entries": [
+        "你可以编织幽影来拦截一次攻击，并将其无害地偏转至黑暗虚空之中。当你使用你的直觉闪避特性时，你可以将该次攻击对你造成的伤害降为0。",
+        "此特性一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。"
+      ]
+    },
+    {
+      "ENG_name": "Shadow Gate",
+      "name": "暗影之门",
+      "source": "CthulhuTorchlight",
+      "page": 0,
+      "className": "游荡者",
+      "classSource": "XPHB",
+      "subclassShortName": "暗影潜行者",
+      "subclassSource": "CthulhuTorchlight",
+      "level": 13,
+      "header": 2,
+      "entries": [
+        "你的暗影映像可以创造一个你与你的同伴可以使用的阴影通路。当你的暗影映像处于你5尺范围内时，你可以通过一个{@variantrule 附赠动作|XPHB}，来消耗4枚幽影尘埃施放{@spell 任意门|XPHB}。智力是你施展该法术的施法属性。你的暗影映像也可以通过该法术进行转移。"
+      ]
+    },
+    {
+      "ENG_name": "True Shadow",
+      "name": "真实暗影",
+      "source": "CthulhuTorchlight",
+      "page": 0,
+      "className": "游荡者",
+      "classSource": "XPHB",
+      "subclassShortName": "暗影潜行者",
+      "subclassSource": "CthulhuTorchlight",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "你的暗影映像获得化身为你的致命复制体的能力。以一个{@variantrule 附赠动作|XPHB}，你的暗影映像变为你自身的完整镜像。",
+        "持续1小时，你的暗影映像将变得实体化，并且你还可以在操控你的暗影映像时令它执行{@action 攻击|XPHB}、{@action 躲藏|XPHB}或{@action 操作|XPHB}动作。其{@action 攻击|XPHB}动作使用你的游戏数据，包括职业特性、专长和武器。当它被缩小到0{@variantrule 生命值|XPHB}时消失。",
+        "当你对距离复制术5尺内的生物进行一次攻击检定时，该攻击检定具有{@variantrule 优势|XPHB}。",
+        "此特性一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。"
+      ]
+    }
+  ],
+  "fluff": {
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CthulhuTorchlight/Subclasses/00-012.shadowstalker.webp"
+        },
+        "width": 1700,
+        "height": 2049
+      }
+    ]
+  }
+}

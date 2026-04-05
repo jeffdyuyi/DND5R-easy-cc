@@ -1,0 +1,179 @@
+{
+  "ENG_name": "Inquisition Domain",
+  "name": "审判领域",
+  "shortName": "审判",
+  "source": "GrimHollowPG24",
+  "className": "牧师",
+  "classSource": "XPHB",
+  "page": 68,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "3": [
+          "识破隐形|XPHB",
+          "沉默术|XPHB"
+        ],
+        "5": [
+          "解除魔法|XPHB",
+          "移除诅咒|XPHB"
+        ],
+        "7": [
+          "秘法眼|XPHB",
+          "生物定位术|XPHB"
+        ],
+        "9": [
+          "造物术|XPHB",
+          "圣居|XPHB"
+        ]
+      }
+    }
+  ],
+  "subclassSpells": [
+    "识破隐形|XPHB",
+    "沉默术|XPHB",
+    "解除魔法|XPHB",
+    "移除诅咒|XPHB",
+    "秘法眼|XPHB",
+    "生物定位术|XPHB",
+    "造物术|XPHB",
+    "圣居|XPHB"
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "Inquisition Domain",
+      "name": "审判领域",
+      "source": "GrimHollowPG24",
+      "page": 68,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "审判",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "entries": [
+        "{@i 净化异端}",
+        "审判领域反映了多元宇宙的秩序以及对被污染魔法的拒绝——至少在某些天界生物看来是如此。只有神圣施法者是纯净且适合使用的。",
+        "由于奥术魔法强大到足以挑战诸神，该领域的圣洁存在，如大炽天使 至高天，要求使用魔法的凡人受到约束。大多数狂热者会根除所有奥术师，而有些则在无法完全清除时达成脆弱的休战协议。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "审判领域法术|牧师|XPHB|审判|GrimHollowPG24|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "猎巫打击|牧师|XPHB|审判|GrimHollowPG24|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "法术护盾|牧师|XPHB|审判|GrimHollowPG24|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Inquisition Domain Spells",
+      "name": "审判领域法术",
+      "source": "GrimHollowPG24",
+      "page": 68,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "审判",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "entries": [
+        "你与这个神圣领域的联系确保你总是预备某些法术。当你达到审判领域法术表格中指定的牧师等级时，你此后总是准备所列出的法术。",
+        {
+          "type": "table",
+          "caption": "审判领域法术",
+          "colLabels": [
+            "牧师等级",
+            "准备法术"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-11"
+          ],
+          "rows": [
+            [
+              "3",
+              "{@spell 识破隐形|XPHB}, {@spell 沉默术|XPHB}"
+            ],
+            [
+              "5",
+              "{@spell 解除魔法|XPHB}, {@spell 移除诅咒|XPHB}"
+            ],
+            [
+              "7",
+              "{@spell 秘法眼|XPHB}, {@spell 生物定位术|XPHB}"
+            ],
+            [
+              "9",
+              "{@spell 造物术|XPHB}, {@spell 圣居|XPHB}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Spell Shield",
+      "name": "法术护盾",
+      "source": "GrimHollowPG24",
+      "page": 68,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "审判",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "entries": [
+        "作为{@variantrule 附赠动作|XPHB}，你可以消耗一次引导神力来赋予一个生物10分钟的奥术伤害临时恢复力。选择一个你30尺内可见的生物（包括你自己）。该选民获得等于{@dice 1d10}加上你牧师等级的{@variantrule 临时生命值|XPHB}。当一个生物拥有由你的法术护盾赋予的{@variantrule 临时生命值|XPHB}时，该生物在对抗法术的豁免检定上具有{@variantrule 优势|XPHB}，并且对法术伤害具有{@variantrule 抗性|XPHB}。如果这些{@variantrule 临时生命值|XPHB}在法术护盾结束时仍有剩余，它们会消隐。"
+      ]
+    },
+    {
+      "ENG_name": "Witch Hunter's Strike",
+      "name": "猎巫打击",
+      "source": "GrimHollowPG24",
+      "page": 68,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "审判",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "entries": [
+        "当你用武器攻击或{@variantrule 徒手打击|XPHB}命中一个生物时，你可以对目标造成额外的{@damage 1d8}力场伤害。如果该生物正在{@status 专注|XPHB|专注于}一个法术，则改为造成额外的{@damage 2d8}力场伤害。在牧师等级14时，额外力场伤害提升至{@dice 2d8}，如果该生物正在{@status 专注|XPHB|专注于}一个法术，则改为{@dice 3d8}。",
+        "如果一个生物因该特性受到伤害而未能通过维持{@status 专注|XPHB}的豁免检定，你将获得等于额外力场伤害的{@variantrule 临时生命值|XPHB}。",
+        "你可以使用该特性的次数等于你的感知调整值（最少 1 次）。你在完成一次{@variantrule 长休|XPHB}时重获所有已消耗的使用次数。"
+      ]
+    },
+    {
+      "ENG_name": "Rebuke Invoker",
+      "name": "审判官",
+      "source": "GrimHollowPG24",
+      "page": 68,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "审判",
+      "subclassSource": "GrimHollowPG24",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "作为一个{@variantrule 反应|XPHB}，当你60尺内可见的生物使用{@action 魔法|XPHB}动作施法时，你可以迫使该生物进行一次对抗你法术豁免DC的体质豁免检定。豁免失败时，该生物受到{@damage 1d8}力场伤害，再加上该生物消耗的法术位每等级{@dice 1d8}伤害。戏法在此能力中视为一环法术。豁免成功时，该生物只受到一半伤害。",
+        "你可以使用此特性的次数等于你的感知调整值（至少一次）。完成一次{@variantrule 长休|XPHB}后，你将恢复此特性的所有使用次数。"
+      ]
+    },
+    {
+      "ENG_name": "Supernal Safeguard",
+      "name": "神之守护",
+      "source": "GrimHollowPG24",
+      "page": 69,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "审判",
+      "subclassSource": "GrimHollowPG24",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "法术护盾可以以目标数量等同于你的感知调整值（至少一个生物）的生物为目标。"
+      ]
+    }
+  ],
+  "hasFluff": true,
+  "hasFluffImages": true
+}

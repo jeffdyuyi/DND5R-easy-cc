@@ -1,0 +1,65 @@
+[
+  {
+    "ENG_name": "Vitriol Ichor",
+    "name": "硫酸溢浆",
+    "source": "GuideDrakkenheim",
+    "page": 191,
+    "level": 4,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一小瓶硝酸和一瓶水"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "选择一个范围内的具有天生护甲或穿着护甲的生物。你魔法般地使该生物的天生或制造护甲在法术持续时间内变得腐蚀和脆弱。当其护甲被腐蚀时，该生物的AC变为10 + 该生物的敏捷调整值。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用5环或更高法术位施放该法术时，每比4环高1环，你就可以多指定一个目标生物。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    }
+  }
+]

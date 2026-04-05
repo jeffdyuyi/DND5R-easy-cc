@@ -1,0 +1,56 @@
+[
+  {
+    "ENG_name": "Cloak of Protection",
+    "name": "防护斗篷",
+    "source": "DMG",
+    "page": 159,
+    "srd": true,
+    "referenceSources": [
+      "CoS",
+      "SKT",
+      "IDRotF",
+      "WBtW",
+      "SCC-CK",
+      "CRCotN",
+      "DSotDQ",
+      "PaBTSO",
+      "ToFW",
+      "CoA",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "防护斗篷|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "bonusAc": "+1",
+    "bonusSavingThrow": "+1",
+    "entries": [
+      "着装此斗篷期间，你的AC和豁免获得+1加值。"
+    ],
+    "optionalfeatures": [
+      "仿制魔法物品|TCE"
+    ],
+    "lootTables": [
+      "魔法物品表F"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Cloak of Protection.webp"
+          },
+          "width": 444,
+          "height": 850
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Horn of Valhalla, Bronze",
+    "name": "瓦尔哈拉号角，青铜",
+    "source": "DMG",
+    "page": 175,
+    "srd": true,
+    "reprintedAs": [
+      "瓦尔哈拉号角，青铜|XDMG"
+    ],
+    "baseItem": "号角|PHB",
+    "type": "INS",
+    "tier": "主要",
+    "rarity": "very rare",
+    "wondrous": true,
+    "weight": 2,
+    "entries": [
+      "你可以用一个动作吹响这个号角。作为回应，伊斯加德的战士英灵们将在你周围60尺内出现。这些英灵使用{@creature 狂战士}的具体数值。他们在1小时后或者生命值降至0时返回伊斯加德。一旦你使用了号角，它需要经过7日才能再次使用。",
+      "一个青铜号角召唤 {@dice 4d4 + 4} 名{@creature 狂战士||狂战士们}。要使用青铜号角，你必须熟练于中型盔甲。",
+      "如果你在不满足先决条件的情况下吹响了号角，则召唤出的{@creature 狂战士||狂战士们}将对你发动攻击。如果你满足先决条件，他们将对你和你的同伴态度友善，并听从你的命令。"
+    ],
+    "lootTables": [
+      "魔法物品表H"
+    ],
+    "valueReference": 40000
+  }
+]

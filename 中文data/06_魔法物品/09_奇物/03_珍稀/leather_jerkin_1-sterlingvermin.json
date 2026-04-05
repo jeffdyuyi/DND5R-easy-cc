@@ -1,0 +1,13 @@
+[
+  {
+    "ENG_name": "Leather Jerkin, +1",
+    "name": "短皮衣, +1",
+    "source": "SterlingVermin",
+    "rarity": "rare",
+    "wondrous": true,
+    "bonusAc": "+1",
+    "entries": [
+      "当你未着甲并穿着这件衣物时，AC获得+1加值。"
+    ]
+  }
+]

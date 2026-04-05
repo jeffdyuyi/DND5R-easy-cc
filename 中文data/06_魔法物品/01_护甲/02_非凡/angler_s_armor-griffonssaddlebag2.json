@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "Angler's Armor",
+    "name": "渔翁之甲",
+    "source": "GriffonsSaddlebag2",
+    "page": 36,
+    "baseItem": "鳞甲|phb",
+    "type": "MA",
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "weight": 45,
+    "ac": 14,
+    "modifySpeed": {
+      "static": {
+        "swim": 30
+      }
+    },
+    "stealth": true,
+    "entries": [
+      "这件魔法护甲由一个自豪的渔民氏族手工制成。此甲以无数片硬化的鱼鳞排缀于一件加固的皮质夹克上，使之成为水手们牢靠而防水的理想护甲选择。在你穿着这件护甲期间，你获得30尺的游泳速度，且捕网的常规和最大射程对你而言都翻倍。此外，若你在穿着这件护甲期间进行捕鱼，你能捕获到相当于平时两倍量的鱼。"
+    ],
+    "lootTables": [
+      "魔法物品表 F2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Anglers-Armor.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "Lordly Resolve",
+    "name": "贵族信念",
+    "source": "FRHoF",
+    "page": 40,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4,
+        "feat": [
+          "领主联盟特工|FRHoF"
+        ]
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "cha"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Standard Bearer",
+        "name": "执旗者",
+        "type": "entries",
+        "entries": [
+          "以一个{@variantrule 附赠动作|XPHB}，，选择至多三名位于你60尺内能看见你的生物。每名{@variantrule 速度|XPHB}不为0的目标均能够立即以{@variantrule 反应|XPHB}起立并结束{@condition 倒地|XPHB}状态。此外，你增强目标的信念，持续1分钟或在你陷入{@condition 失能|XPHB}状态时提前结束。信念增强期间，目标无法被附身或是获得{@condition 魅惑|XPHB}或{@condition 恐慌|XPHB}状态；若目标已被附身、{@condition 魅惑|XPHB}或{@condition 恐慌|XPHB}，则目标对抗相关效应的任意新豁免检定具有{@variantrule 优势|XPHB}。",
+          "此增益一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

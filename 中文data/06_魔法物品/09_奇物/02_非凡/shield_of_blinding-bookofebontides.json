@@ -1,0 +1,16 @@
+[
+  {
+    "ENG_name": "Shield of Blinding",
+    "name": "致盲护盾",
+    "source": "BookOfEbonTides",
+    "page": 198,
+    "baseItem": "盾牌|PHB",
+    "type": "S",
+    "rarity": "uncommon",
+    "weight": 6,
+    "ac": 2,
+    "entries": [
+      "当你持握这面护盾时，你可以说出它的命令语并选择一个你能看见的范围内的生物进行一次体质豁免检定。如果失败，目标将陷入{@condition 目盲}状态1分钟。在每个回合结束时，目标可以进行一次新的豁免检定以恢复视力。"
+    ]
+  }
+]

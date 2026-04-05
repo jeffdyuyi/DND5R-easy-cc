@@ -1,0 +1,61 @@
+[
+  {
+    "ENG_name": "Cauldron of the Vermintoll Coven (Rare)",
+    "name": "害兽憎恶的坩埚（珍稀）",
+    "source": "CrookedMoon24",
+    "page": 597,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "weight": 1,
+    "property": [
+      "TCM'24:FH"
+    ],
+    "bonusSavingThrow": "+1",
+    "entries": [
+      "这口失去光泽的坩埚不断翻滚着某种诡异的黑色液体。即使在搬运途中，这些液体也始终未曾溢出刻有符文的坩埚边缘。",
+      "持握该坩埚期间，你可以将其用作你法术的{@variantrule 法器|XPHB}；你的所有豁免检定获得取决于该坩埚稀有度的+1加值，并且你可以使用如下词条。",
+      {
+        "ENG_name": "Size Change (Rare+)",
+        "name": "尺寸变换（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "你可以进行一个1分钟的仪式，将坩埚的体型从微型变为中型，或从中型变为微型。微型时重1磅，中型时重80磅。作为中型物件时，它的脚可以移动。它拥有{@variantrule 速度|XPHB} 20尺，并能在你的回合内遵循你的命令移动（无需动作）。"
+        ]
+      },
+      {
+        "ENG_name": "Cookpot (Rare+)",
+        "name": "炖煮之锅（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "作为{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}的一部分，你可以用中型坩埚为至多十个生物准备食物。在休息结束时，每位进食的生物会获得{@dice 2d6}{@variantrule 临时生命值|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Vermincall (Rare+)",
+        "name": "害兽呼唤（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "你可以使用一个{@action 魔法|XPHB}动作从坩埚中泼洒出液体，以此来施放{@spell 咒唤兽群|XPHB}。所咒唤的精魂会呈现为怪诞异常的虫群或鼠群形态。该属性一经使用，则直至次日黄昏之前，无法再次使用。"
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "咒唤兽群|XPHB"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Cauldron%20of%20the%20Vermintoll%20Coven.webp"
+          },
+          "width": 1025,
+          "height": 1200,
+          "credit": "Matthew Spencer"
+        }
+      ]
+    }
+  }
+]

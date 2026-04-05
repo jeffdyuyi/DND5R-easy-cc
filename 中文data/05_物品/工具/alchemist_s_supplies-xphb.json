@@ -1,0 +1,49 @@
+[
+  {
+    "name": "炼金工具",
+    "ENG_name": "Alchemist's Supplies",
+    "source": "XPHB",
+    "page": 220,
+    "type": "AT|XPHB",
+    "rarity": "none",
+    "weight": 8,
+    "value": 5000,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability:",
+            "name": "属性：",
+            "type": "item",
+            "entries": [
+              "智力"
+            ]
+          },
+          {
+            "ENG_name": "Utilize:",
+            "name": "操作：",
+            "type": "item",
+            "entries": [
+              "辨析一种物质（{@dc 15}），或生起一场火（{@dc 15}）"
+            ]
+          },
+          {
+            "ENG_name": "Craft:",
+            "name": "制造：",
+            "type": "item",
+            "entries": [
+              "{@item 强酸|XPHB}, {@item 炽火胶|XPHB}, {@item 材料包|XPHB}, {@item 燃油|XPHB}, {@item 纸张|XPHB}, {@item 香水|XPHB}"
+            ]
+          }
+        ]
+      }
+    ],
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TFV"
+    ],
+    "srd52": true
+  }
+]

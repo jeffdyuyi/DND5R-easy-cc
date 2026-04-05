@@ -1,0 +1,18 @@
+{
+  "ENG_name": "Quick Toss",
+  "name": "快手投掷",
+  "source": "TCE",
+  "page": 42,
+  "isClassFeatureVariant": true,
+  "featureType": [
+    "MV:B"
+  ],
+  "consumes": {
+    "ENG_name": "Superiority Die",
+    "name": "卓越骰"
+  },
+  "entries": [
+    "以一个附赠动作，你能消耗一枚卓越骰，用一件具有投掷属性的武器发动一次远程攻击。你可以作为攻击的一部分拔出那把投掷武器。如果此次攻击命中，你能将消耗的卓越骰加入此武器的伤害掷骰中。"
+  ],
+  "translator": "不全书"
+}

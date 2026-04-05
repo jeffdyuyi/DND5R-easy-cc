@@ -1,0 +1,69 @@
+[
+  {
+    "ENG_name": "Bag of Tricks, Gray",
+    "name": "魔术袋，灰色",
+    "source": "XDMG",
+    "page": 234,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "recharge": "拂晓",
+    "entries": [
+      "这种布袋由灰色布料制成。布袋看起来空无一物，但把手伸进去会摸到一个小小的毛绒物件。",
+      "你能够以一个{@action 魔法|XPHB}动作取出布袋里的毛绒物件，并把它扔出至多20尺远。当物件落地时，投骰子参考对应颜色布袋的表格决定物件变成的生物。相关生物的资料见{@book 怪物图鉴|XMM}。该生物在次日黎明时分或者其{@variantrule 生命值|XPHB}降至0时消失。",
+      "扔出的生物对你和你的盟友态度{@variantrule 友好【态度】|XPHB|友好}，且会在你的{@variantrule 先攻|XPHB}序位后行动。你能够以一个{@variantrule 附赠动作|XPHB}命令该生物在其下一回合执行特定的移动方式，做特定的动作，例如攻击你的敌人。没接到命令时，该生物按自己天性行动。",
+      "一旦袋子抽出三件毛绒物件后，直至次日黎明才可再次使用。",
+      {
+        "type": "table",
+        "colStyles": [
+          "col-2 text-center",
+          "col-10"
+        ],
+        "colLabels": [
+          "1d8",
+          "creature"
+        ],
+        "rows": [
+          [
+            "1",
+            "{@creature 鼬|XMM}"
+          ],
+          [
+            "2",
+            "{@creature 巨鼠|XMM}"
+          ],
+          [
+            "3",
+            "{@creature 獾|XMM}"
+          ],
+          [
+            "4",
+            "{@creature 野猪|XMM}"
+          ],
+          [
+            "5",
+            "{@creature 黑豹|XMM}"
+          ],
+          [
+            "6",
+            "{@creature 巨獾|XMM}"
+          ],
+          [
+            "7",
+            "{@creature 恐狼|XMM}"
+          ],
+          [
+            "8",
+            "{@creature 巨赤鹿|XMM}"
+          ]
+        ]
+      }
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 400,
+    "fluff": {},
+    "type": "W"
+  }
+]

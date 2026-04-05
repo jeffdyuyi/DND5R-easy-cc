@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "Double-Bladed Scimitar",
+    "name": "镀银双刃弯刀",
+    "source": "PHB",
+    "page": 148,
+    "type": "M",
+    "rarity": "unknown",
+    "weight": 6,
+    "value": 10000,
+    "weaponCategory": "martial",
+    "property": [
+      "S",
+      "2H"
+    ],
+    "dmg1": "2d4",
+    "dmgType": "S",
+    "sword": true,
+    "weapon": true,
+    "entries": [
+      {
+        "ENG_name": "Special",
+        "name": "特殊",
+        "type": "entries",
+        "entries": [
+          "如果你在你的回合使用双刃弯刀作为{@action 攻击}动作的一部分进行攻击，你可以在之后立即使用一个奖励动作用它进行近战攻击。这次攻击在命中时造成{@damage 1d4}点挥砍伤害，而不是{@damage 2d4}。"
+        ]
+      }
+    ],
+    "hasFluff": true,
+    "namePrefix": "镀银",
+    "basicRules": true,
+    "reprintedAs": [
+      "镀银武器|XDMG"
+    ],
+    "tier": "主要",
+    "valueExpression": "[[baseItem.value]] + 10000",
+    "_isVariant": true
+  }
+]

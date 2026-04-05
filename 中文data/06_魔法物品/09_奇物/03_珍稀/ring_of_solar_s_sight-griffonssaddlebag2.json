@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "Ring of Solar's Sight",
+    "name": "阳视之戒",
+    "source": "GriffonsSaddlebag2",
+    "page": 147,
+    "type": "RG|DMG",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3 + 1}",
+    "charges": 4,
+    "entries": [
+      "这枚镀金戒指具有4充能，且在每日黎明时恢复1d3+1已消耗的充能。佩戴此戒指期间，你可以用一个附赠动作消耗其1充能，来戒指中施展{@spell 猎人印记}法术，此法术持续1分钟。你对以此方式标记的目标进行武器攻击时获得+2加值，且命中时该攻击造成光耀伤害而非武器的正常伤害类型。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "猎人印记"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表 G2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Ring-of-Solars-Sight.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

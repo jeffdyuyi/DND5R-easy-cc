@@ -1,0 +1,33 @@
+[
+  {
+    "ENG_name": "Orb of Remembrance",
+    "name": "记忆之球",
+    "source": "GriffonsSaddlebag2",
+    "page": 132,
+    "tier": "次要",
+    "rarity": "common",
+    "wondrous": true,
+    "weight": 0.5,
+    "entries": [
+      "这个玻璃法球的直径为3英寸，重半磅，并被包裹在一个金丝笼中。如丝如缕的奇异烟雾在球体内缓缓飘动，形成与现实物件十分相似的易辨认的云雾状图案。",
+      "在你手持此球期间，你可以用一个动作说出其命令语来激活球体，使其内部的烟雾开始不休地翻腾旋转。你可以轻轻捏压已激活的球体（无需动作），让它记录下此刻你周围的一切。当你这样做时，玻璃球会消耗1分钟时间变得完全透明，并在其内部以幻术精确复制出你周围至多30尺范围内区域景象的微缩立体模型。在你手持此球期间，球体内的场景会无声地回放立体模型记录下之后6秒钟的内容。",
+      "记忆之球会保持准备状态1分钟或直到被用于捕获一个立体模型。将一个准备状态的记忆之球触碰已含有立体模型的球体，会在准备状态的球体中创建一个立体模型的复制术。再次说出命令语同时摇晃法球会使内部的立体模型化为烟消失，使其能够再次准备。"
+    ],
+    "lootTables": [
+      "魔法物品表 A1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Orb-of-Remembrance.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "+2 Chain Shirt",
+    "name": "+2 链甲衫",
+    "source": "DMG",
+    "page": 152,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "MA|XPHB",
+    "rarity": "very rare",
+    "weight": 20,
+    "value": 5000,
+    "ac": 13,
+    "armor": true,
+    "hasFluffImages": true,
+    "namePrefix": "+2 ",
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "+2 护甲|XDMG"
+    ],
+    "tier": "主要",
+    "bonusAc": "+2",
+    "entries": [
+      "穿戴这件护甲时，你的AC有{=bonusAc}的加值。"
+    ],
+    "_isVariant": true,
+    "valueReference": 40000
+  }
+]

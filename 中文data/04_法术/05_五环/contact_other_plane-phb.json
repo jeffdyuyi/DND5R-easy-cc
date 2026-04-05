@@ -1,0 +1,71 @@
+[
+  {
+    "ENG_name": "Contact Other Plane",
+    "name": "异界探知",
+    "source": "PHB",
+    "page": 226,
+    "srd": true,
+    "referenceSources": [
+      "OotA",
+      "SKT",
+      "BGDIA",
+      "CM",
+      "CoA"
+    ],
+    "reprintedAs": [
+      "异界探知|XPHB"
+    ],
+    "level": 5,
+    "school": "D",
+    "time": [
+      {
+        "number": 1,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        }
+      }
+    ],
+    "meta": {
+      "ritual": true
+    },
+    "entries": [
+      "你以心灵联系一位半神、一位早已逝去的智者精魄，或其他位面的某种神秘实体。与这种异界智慧接触可能会使你的心智紧张甚至崩溃。当你施放该法术时，进行一次{@dc 15}的智力豁免检定。若失败，你将受到{@damage 6d6}心灵伤害并陷入疯狂状态直至完成一次长休。疯狂期间，你不能执行动作、无法理解其他生物的语言、不能阅读且只会胡言乱语。对你施放的{@spell 高等复原术}可终止此效果。",
+      "豁免成功时，你可以询问该实体五个问题。你必须在法术结束前提出你的问题。而你所提出的每条问题 DM 都可以用一个单词作回答，比如\"是\"\"不是\"\"可能\"\"不可能\"\"没关系\"或是\"不清楚\"（如果该实体不知道该问题答案时）。如果一个单词的答案可能导致误导，DM 可能会用一句短语来作为问题的答案。"
+    ],
+    "damageInflict": [
+      "psychic"
+    ],
+    "savingThrow": [
+      "intelligence"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "预言系",
+    "display_savingThrow": [
+      "智力"
+    ],
+    "display_damageInflict": [
+      "心灵"
+    ],
+    "display_ritual": "仪式"
+  }
+]

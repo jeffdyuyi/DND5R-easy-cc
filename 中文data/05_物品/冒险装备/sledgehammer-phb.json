@@ -1,0 +1,15 @@
+[
+  {
+    "name": "攻城大锤",
+    "ENG_name": "Sledgehammer",
+    "source": "PHB",
+    "page": 150,
+    "type": "G",
+    "rarity": "none",
+    "weight": 10,
+    "value": 200,
+    "basicRules": true,
+    "srd": true,
+    "translator": "不全书"
+  }
+]

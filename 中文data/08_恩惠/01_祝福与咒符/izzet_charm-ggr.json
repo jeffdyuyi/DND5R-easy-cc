@@ -1,0 +1,26 @@
+[
+  {
+    "ENG_name": "Izzet Charm",
+    "name": "伊捷护符",
+    "source": "GGR",
+    "page": 174,
+    "type": "Charm",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "limited": {
+              "1": [
+                "解除魔法",
+                "闪电束"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "entries": [
+      "当你激活此护符时，你可以施放{@spell 解除魔法}或{@spell 闪电束}法术。或者，你可以用一个动作恢复一枚3环或更低的已消耗法术位。护符在你激活后即消失。"
+    ]
+  }
+]

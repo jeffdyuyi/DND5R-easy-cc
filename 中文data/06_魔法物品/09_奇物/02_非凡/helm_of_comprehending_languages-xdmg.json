@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "Helm of Comprehending Languages",
+    "name": "通晓语言头盔",
+    "source": "XDMG",
+    "page": 268,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "着装此头盔期间，你可以用其施展{@spell 通晓语言|XPHB}。"
+    ],
+    "attachedSpells": {
+      "will": [
+        "通晓语言|xphb"
+      ]
+    },
+    "lootTables": [
+      "奥秘 - 非普通|XDMG",
+      "器具 - 非普通|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Helm of Comprehending Languages.webp"
+          },
+          "width": 600,
+          "height": 850
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

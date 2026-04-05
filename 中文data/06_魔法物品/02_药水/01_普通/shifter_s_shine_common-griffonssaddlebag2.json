@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Shifter's Shine (Common)",
+    "name": "变形者之耀（普通）",
+    "source": "GriffonsSaddlebag2",
+    "page": 160,
+    "type": "P",
+    "tier": "次要",
+    "rarity": "common",
+    "entries": [
+      "典型的{@item 变形者之耀|GriffonsSaddlebag2}是一种稀有度为普通的药水，也是一种特殊的酒精饮料，它能让你的面容更加迷人。饮用此药水后的1小时内，你的肤色变得更加清透健康，皮肤也更加紧致。你的面部虽然没有太大改变，但明显更具吸引力，并散发出微弱的惑控系魔法灵光。在药水效果持续期间，当你进行魅力检定时，你可以选择不掷{@dice d20}而直接取10。一旦你使用了此特性，在本次药水效果持续期间你都无法再次使用。这种药水呈浓郁的蜂蜜色，不论如何摇晃都会缓慢地打旋。它可以储存在任何容器中，但通常会装在玻璃罐里。一只变形生物的眼球漂浮在药水底部，这让很多酒客在点这种饮品时往往会犹豫不决。它有着极强的酒精味和一丝焦糖香气。由于其魔法的本质，此药水中所含的酒精对生物的影响是非魔法饮料中酒精的两倍。"
+    ],
+    "lootTables": [
+      "魔法物品表 A2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Shifters-Shine.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

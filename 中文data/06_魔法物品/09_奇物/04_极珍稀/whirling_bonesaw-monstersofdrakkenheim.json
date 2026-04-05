@@ -1,0 +1,97 @@
+[
+  {
+    "ENG_name": "Whirling Bonesaw",
+    "name": "飞旋骨锯",
+    "source": "MonstersOfDrakkenheim",
+    "page": 395,
+    "baseItem": "巨斧|XPHB",
+    "type": "M|XPHB",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "weight": 7,
+    "weaponCategory": "军用",
+    "property": [
+      "H|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "横扫|XPHB"
+    ],
+    "dmg1": "1d12",
+    "dmgType": "S",
+    "bonusWeapon": "+3",
+    "entries": [
+      "这把大型巨斧的刀刃取自一把开膛手，并重新装配到一个由构装的盘子和怪兽的肋骨加固的外壳中。刀刃配备了一条连接到由极珍稀精魄驱动的元素燃料马达的皮甲腰带。",
+      "使用这把魔法武器，你在攻击和伤害骰上获得+3的加值。",
+      "在你的回合中，当你使用这把武器命中一个{@status 浴血|XPHB}生物时，你可以用这把武器进行一次额外的攻击，作为同一动作的一部分。",
+      {
+        "ENG_name": "Crafting",
+        "name": "手作",
+        "type": "entries",
+        "entries": [
+          "制作飞旋骨锯需要一个极珍稀工坊和以下极珍稀成分：",
+          {
+            "type": "list",
+            "items": [
+              {
+                "ENG_name": "[Animus]",
+                "name": "[精魄]",
+                "type": "item",
+                "entries": [
+                  "任意精魄"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Bones]",
+                "name": "[骨头]",
+                "type": "item",
+                "entries": [
+                  "肋骨"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Fluid]",
+                "name": "[流体]",
+                "type": "item",
+                "entries": [
+                  "元素生物流体"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Hide]",
+                "name": "[表皮]",
+                "type": "item",
+                "entries": [
+                  "盘子"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Hide]",
+                "name": "[表皮]",
+                "type": "item",
+                "entries": [
+                  "任意怪兽的皮肤"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Natural Weapon]",
+                "name": "[天生武器]",
+                "type": "item",
+                "entries": [
+                  "开膛手的刀刃"
+                ],
+                "nameDot": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluffImages": true
+  }
+]

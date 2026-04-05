@@ -1,0 +1,42 @@
+[
+  {
+    "name": "专家协力者",
+    "ENG_name": "Expert Sidekick",
+    "source": "TCE",
+    "edition": "classic",
+    "classData": {
+      "ENG_name": "Expert Sidekick",
+      "name": "专家协力者",
+      "source": "TCE",
+      "page": 142,
+      "edition": "classic",
+      "isSidekick": true,
+      "hd": {
+        "number": 1,
+        "faces": 8
+      },
+      "classFeatures": [
+        "协力者职业|专家协力者|TCE|1",
+        "附赠熟练|专家协力者|TCE|1",
+        "乐于助人|专家协力者|TCE|1",
+        "灵巧动作|专家协力者|TCE|2",
+        "专精|专家协力者|TCE|3",
+        "属性值提升|专家协力者|TCE|4",
+        "协同攻击|专家协力者|TCE|6",
+        "反射闪避|专家协力者|TCE|7",
+        "属性值提升|专家协力者|TCE|8",
+        "属性值提升|专家协力者|TCE|10",
+        "鼓舞协助|专家协力者|TCE|11",
+        "属性值提升|专家协力者|TCE|12",
+        "可靠才能|专家协力者|TCE|14",
+        "专精|专家协力者|TCE|15",
+        "属性值提升|专家协力者|TCE|16",
+        "明锐心智|专家协力者|TCE|18",
+        "属性值提升|专家协力者|TCE|19",
+        "鼓舞协助增效|专家协力者|TCE|20"
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true
+    }
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Gametoy",
+    "name": "Gametoy游戏机",
+    "source": "ObojimaTallGrass",
+    "page": 171,
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "每个Gametoy游戏机卡带包含一个独特的技能熟练。当你与插入了卡带的Gametoy游戏机调谐时，你将获得卡带内存储技能的熟练。当你持有Gametoy游戏机时，你可以使用一个动作来移除、插入或交换卡带。Gametoy游戏机附带一个存储了随机技能熟练的卡带。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/gametoy.webp"
+          },
+          "credit": "Matt Owen",
+          "width": 2702,
+          "height": 2702
+        }
+      ]
+    }
+  }
+]

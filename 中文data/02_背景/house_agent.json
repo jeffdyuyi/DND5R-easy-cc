@@ -1,0 +1,553 @@
+[
+  {
+    "name": "房产代理",
+    "ENG_name": "House Agent",
+    "source": "EFA",
+    "edition": "one",
+    "page": 26,
+    "ability": [
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "str",
+              "int",
+              "cha"
+            ],
+            "weights": [
+              2,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "str",
+              "int",
+              "cha"
+            ],
+            "weights": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      }
+    ],
+    "feats": [
+      {
+        "幸运|xphb": true
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "investigation": true,
+        "persuasion": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "anyArtisansTool": 1
+      }
+    ],
+    "startingEquipment": [
+      {
+        "a": [
+          {
+            "equipmentType": "toolArtisan"
+          },
+          "高档服装|xphb",
+          {
+            "value": 2000
+          }
+        ],
+        "b": [
+          {
+            "value": 5000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability Scores:",
+            "name": "属性值：",
+            "type": "item",
+            "entry": "力量，智力，魅力"
+          },
+          {
+            "ENG_name": "Feat:",
+            "name": "专长：",
+            "type": "item",
+            "entry": "{@feat 幸运|XPHB}"
+          },
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 调查|XPHB} 和 {@skill 游说|XPHB}"
+          },
+          {
+            "ENG_name": "Tool Proficiencies:",
+            "name": "工具熟练",
+            "type": "item",
+            "entry": "选择一种{@item 工匠工具|XPHB}"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "选择A或B：(A) {@item 工匠工具|XPHB}（同上），{@item 高档服装|XPHB}，20 GP；或 (B) 50 GP"
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "你与一个龙纹家族有联系，但你（还）没有显现出龙纹。你可能是家族的血缘成员，或是家族中无血缘关系的雇员。你通过处理家族事务谋生，在世界上作为家族统御的手、脚和眼睛。你所在服务的家族中可能有许多老朋友、导师和竞争对手，加上其他家族中的盟友或敌人。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "backgrounds/EFA/House Agent.webp"
+          },
+          "credit": "Calder Moore",
+          "width": 850,
+          "height": 291
+        }
+      ]
+    },
+    "hasFluff": true,
+    "hasFluffImages": true
+  },
+  {
+    "name": "房产代理",
+    "ENG_name": "House Agent",
+    "source": "ERLW",
+    "page": 53,
+    "skillProficiencies": [
+      {
+        "investigation": true,
+        "persuasion": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "alchemist's supplies": true,
+        "tinker's tools": true
+      },
+      {
+        "anyGamingSet": 1,
+        "vehicles (land)": true
+      },
+      {
+        "brewer's supplies": true,
+        "cook's utensils": true
+      },
+      {
+        "alchemist's supplies": true,
+        "herbalism kit": true
+      },
+      {
+        "tinker's tools": true,
+        "thieves' tools": true
+      },
+      {
+        "vehicles (water)": true,
+        "vehicles (air)": true,
+        "navigator's tools": true
+      },
+      {
+        "thieves' tools": true,
+        "disguise kit": true
+      },
+      {
+        "disguise kit": true,
+        "anyMusicalInstrument": 1
+      },
+      {
+        "calligrapher's supplies": true,
+        "forgery kit": true
+      },
+      {
+        "thieves' tools": true,
+        "anyGamingSet": 1
+      },
+      {
+        "poisoner's kit": true,
+        "anyMusicalInstrument": 1
+      },
+      {
+        "vehicles (land)": true,
+        "herbalism kit": true
+      }
+    ],
+    "startingEquipment": [
+      {
+        "_": [
+          "高档服装|phb",
+          {
+            "item": "玺戒|phb",
+            "displayName": "家族纹章戒指"
+          },
+          {
+            "special": "身份证明文件"
+          },
+          {
+            "special": "钱包",
+            "containsValue": 2000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 调查}, {@skill 游说}"
+          },
+          {
+            "ENG_name": "Tool Proficiencies:",
+            "name": "工具熟练",
+            "type": "item",
+            "entries": [
+              "从家族工具熟练度表中选择两项熟练项"
+            ]
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "一套{@item 高档服装|phb}，家族{@item 玺戒|phb}，身份证明文件，以及一个装有20枚金币的钱包。"
+          }
+        ]
+      },
+      {
+        "type": "table",
+        "caption": "家族工具熟练项",
+        "colLabels": [
+          "你的家族",
+          "熟练"
+        ],
+        "colStyles": [
+          "col-2",
+          "col-10"
+        ],
+        "rows": [
+          [
+            "卡尼斯",
+            "{@item 炼金工具|phb} 和 {@item 修补工具|phb}"
+          ],
+          [
+            "邓奈斯",
+            "一副{@filter 赌具|items|source=phb|miscellaneous=平凡的|type=赌具}和一辆{@filter 载具 (陆运)|items|source=phb;dmg|miscellaneous=平凡的|type=载具（陆运）}"
+          ],
+          [
+            "伽兰达",
+            "{@item 酿酒工具|phb} 和 {@item 厨师工具|phb}"
+          ],
+          [
+            "乔拉斯克",
+            "{@item 炼金工具|phb} 和 {@item 草药工具|phb}"
+          ],
+          [
+            "昆达拉克",
+            "{@item 盗贼工具|phb} 和 {@item 修补工具|phb}"
+          ],
+          [
+            "林兰德",
+            "{@item 领航工具|phb} 和 {@filter 载具（海上和空中）|items|source=phb;dmg|miscellaneous=平凡的|type=载具(水上);载具(空中)}"
+          ],
+          [
+            "梅丹尼",
+            "{@item 易容工具|phb} 和 {@item 盗贼工具|phb}"
+          ],
+          [
+            "欧瑞恩",
+            "一副{@filter 赌具|items|source=phb|miscellaneous=平凡的|type=赌具}和一辆{@filter 载具 (陆运)|items|source=phb;dmg|miscellaneous=平凡的|type=载具（陆运）}"
+          ],
+          [
+            "费奥兰",
+            "{@item 易容工具|phb} 和一件{@filter 乐器|items|source=phb|miscellaneous=平凡的|type=乐器}"
+          ],
+          [
+            "西维斯",
+            "{@item 书法工具|phb}和{@item 文书伪造工具|phb}"
+          ],
+          [
+            "萨拉释克",
+            "一副{@filter 赌具|items|source=phb|miscellaneous=平凡的|type=赌具}和{@item 盗贼工具|phb}"
+          ],
+          [
+            "索兰尼",
+            "一种{@filter 乐器|items|source=phb|miscellaneous=平凡的|type=乐器}和{@item 毒药工具|phb}"
+          ],
+          [
+            "瓦塔利斯",
+            "{@item 草药工具|phb} 和 {@filter 载具 (陆运)|items|source=phb;dmg|miscellaneous=平凡的|type=载具（陆运）}"
+          ]
+        ]
+      },
+      {
+        "ENG_name": "Role",
+        "name": "职能",
+        "type": "entries",
+        "entries": [
+          "你总是在为你的家族收集信息。但当男爵们为了特殊的任务前来找你时，你通常在干什么工作呢？通过选择或掷骰从下表中决定你的职责。",
+          {
+            "type": "table",
+            "caption": "家族代理人角色",
+            "colLabels": [
+              "d8",
+              "职能"
+            ],
+            "colStyles": [
+              "col-6 text-center",
+              "col-6 text-center"
+            ],
+            "rows": [
+              [
+                "1",
+                "收购"
+              ],
+              [
+                "2",
+                "调查"
+              ],
+              [
+                "3",
+                "研究与开发"
+              ],
+              [
+                "4",
+                "安全"
+              ],
+              [
+                "5",
+                "威吓"
+              ],
+              [
+                "6",
+                "探索"
+              ],
+              [
+                "7",
+                "谈判"
+              ],
+              [
+                "8",
+                "隐秘行动"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Feature: House Connections",
+        "name": "特性：家族联系",
+        "type": "entries",
+        "entries": [
+          "身为一名你家族的代理人，你总是能够在家族飞地中为自己和朋友获得食宿。当家族给你任务时，通常会为你提供必要的补给和交通。除此之外，你在家族中还有很多老朋友、导师和竞争对手，当你在与家族业务互动时，可能会遇到其中之一。这些熟人愿意帮你的程度取决于你目前在家族中的地位。"
+        ],
+        "data": {
+          "isFeature": true
+        }
+      },
+      {
+        "ENG_name": "Suggested Characteristics",
+        "name": "建议人物特征",
+        "type": "entries",
+        "entries": [
+          "家族代理人有很多种。请结合你所服务的家族以及你的工作类型选择或掷骰决定特征。",
+          {
+            "type": "table",
+            "caption": "个性特点",
+            "colLabels": [
+              "d6",
+              "特点"
+            ],
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "rows": [
+              [
+                "1",
+                "我总是想提高效率。"
+              ],
+              [
+                "2",
+                "我喜欢分享和自己家族业务有关的琐事。"
+              ],
+              [
+                "3",
+                "我永远不会忘记对我自己或家族的侮辱。"
+              ],
+              [
+                "4",
+                "我对我家族达成的每一件事都感到激动和兴奋。"
+              ],
+              [
+                "5",
+                "我代表我的家族，并为自己出众的外表感到自豪。"
+              ],
+              [
+                "6",
+                "我对君主制和针对家族的限制持批评态度。"
+              ]
+            ]
+          },
+          {
+            "type": "table",
+            "caption": "理想",
+            "colLabels": [
+              "d6",
+              "理念"
+            ],
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "rows": [
+              [
+                "1",
+                "{@b 共同利益}。我的家族服务于一项至关重要的职能，它的繁荣能够让所有人得利。（善良）"
+              ],
+              [
+                "2",
+                "{@b 传统}。我恪守家族传统，为家庭争取荣耀。（守序）"
+              ],
+              [
+                "3",
+                "{@b 创新}。抛弃旧的传统，找到更好的做事方法。（混乱）"
+              ],
+              [
+                "4",
+                "{@b 法力}。我想确保家族的繁荣昌盛，以便自己掌控它的力量。（邪恶）"
+              ],
+              [
+                "5",
+                "{@b 发现}。为了我的家族和满足好奇心，我想尽我所能地学习。（任何）"
+              ],
+              [
+                "6",
+                "{@b 舒适}。我想要确保我和我的家人能够享受生活中最美好的东西。（任何）"
+              ]
+            ]
+          },
+          {
+            "type": "table",
+            "caption": "牵绊",
+            "colLabels": [
+              "d6",
+              "牵挂"
+            ],
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "rows": [
+              [
+                "1",
+                "我的家族就是我的家人。我愿意为它做任何事。"
+              ],
+              [
+                "2",
+                "我爱上了另一个龙纹家族的人，但是这种关系是禁忌的。"
+              ],
+              [
+                "3",
+                "我爱的人被自己家族中的敌对派别杀害了，我决心报仇。"
+              ],
+              [
+                "4",
+                "我并不关心家族整体如何，但我愿意为我的老导师做任何事。"
+              ],
+              [
+                "5",
+                "我的家族必须进化，而我需要引领这个变化。"
+              ],
+              [
+                "6",
+                "我决心给家族中的领导留下深刻的印象，并借此上位。"
+              ]
+            ]
+          },
+          {
+            "type": "table",
+            "caption": "缺陷",
+            "colLabels": [
+              "d6",
+              "缺陷"
+            ],
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "rows": [
+              [
+                "1",
+                "我过分注重遵循官方的协议。"
+              ],
+              [
+                "2",
+                "我痴迷于阴谋论，担心秘密组织和隐藏起来的恶魔会有所动作。"
+              ],
+              [
+                "3",
+                "我的家族和血统让我成为最优秀的！"
+              ],
+              [
+                "4",
+                "我正在隐瞒一个秘密，这个秘密可能会导致我被逐出家族。"
+              ],
+              [
+                "5",
+                "我的宗教信仰在我的家族中并不普遍。"
+              ],
+              [
+                "6",
+                "我在为自己家族中的一个秘密派系工作，这个派系给了我一项机密任务。"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "entries": [
+                "你已向一个龙标记家族宣誓效忠。如果你有龙标记，你很可能是该家族有影响力的家族成员之一；否则，你是一个希望通过该家族发财的局外人。你的主要任务是作为你家族的眼睛，但随时可能被召唤去作为它的手。这样的任务可能是危险的，但也是有利可图的。"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hasFluff": true,
+    "reprintedAs": [
+      "房产代理|EFA"
+    ],
+    "edition": "classic"
+  }
+]

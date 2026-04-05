@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Joho's Charm",
+    "name": "约霍的护咒",
+    "source": "ToA",
+    "page": 179,
+    "type": "Charm",
+    "entries": [
+      "当你携带着约霍时，它赋予你的增益使你如同戴着一顶{@item 通晓语言头盔}。携带该玩偶时，该增益持续 7 天。之后，该护咒从你身上消失。",
+      "这个玩偶是一个微型构装体。摧毁玩偶会导致里面孩子的灵魂被困在{@adventure 灵魂商贩|ToA|5|灵魂商贩}中。",
+      {
+        "type": "statblockInline",
+        "dataType": "object",
+        "data": {
+          "ENG_name": "Joho",
+          "name": "约霍",
+          "isNpc": true,
+          "source": "ToA",
+          "page": 179,
+          "size": [
+            "T"
+          ],
+          "objectType": "U",
+          "creatureType": "构装",
+          "hp": 1,
+          "speed": {
+            "walk": 10
+          },
+          "immune": [
+            "毒素"
+          ],
+          "conditionImmune": [
+            "中毒"
+          ]
+        }
+      }
+    ]
+  }
+]

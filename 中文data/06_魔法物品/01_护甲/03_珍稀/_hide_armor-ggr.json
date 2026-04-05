@@ -1,0 +1,24 @@
+[
+  {
+    "ENG_name": "米捷Hide Armor",
+    "name": "米捷兽皮甲",
+    "source": "GGR",
+    "page": 179,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "MA|XPHB",
+    "rarity": "rare",
+    "weight": 12,
+    "value": 1000,
+    "ac": 12,
+    "armor": true,
+    "hasFluffImages": true,
+    "namePrefix": "米捷",
+    "entries": [
+      "这套盔甲是用一种名为米兹利乌姆的魔法增强金属合金加固的，这种合金是在伊捷铸造厂制造的。当你穿戴这套盔甲时，任何对你的重击会变成普通攻击。此外，当你受到允许你进行力量或体质豁免检定以只承受一半伤害的魔法效果时，如果你成功进行了豁免检定，你将不承受任何伤害。"
+    ],
+    "_isVariant": true,
+    "valueReference": 4000
+  }
+]

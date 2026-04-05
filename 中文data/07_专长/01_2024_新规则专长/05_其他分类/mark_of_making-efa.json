@@ -1,0 +1,141 @@
+[
+  {
+    "ENG_name": "Mark of Making",
+    "name": "创造龙纹",
+    "source": "EFA",
+    "page": 40,
+    "category": "D",
+    "prerequisite": [
+      {
+        "campaign": [
+          "艾伯伦"
+        ],
+        "exclusiveFeatCategory": [
+          "D"
+        ]
+      }
+    ],
+    "additionalSpells": [
+      {
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "known": {
+          "_": [
+            "修复术|xphb#c"
+          ]
+        },
+        "prepared": {
+          "_": {
+            "daily": {
+              "1": [
+                "魔化武器|xphb"
+              ]
+            }
+          }
+        },
+        "expanded": {
+          "s1": [
+            "鉴定术|xphb",
+            "谭森浮碟术|xphb"
+          ],
+          "s2": [
+            "不灭明焰|xphb",
+            "灵体武器|xphb"
+          ],
+          "s3": [
+            "箭如雨下|xphb",
+            "元素武器|xphb"
+          ],
+          "s4": [
+            "鬼斧神工|xphb",
+            "塑石术|xphb"
+          ],
+          "s5": [
+            "造物术|xphb"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Artisan's Intuition",
+        "name": "工匠直觉",
+        "type": "entries",
+        "entries": [
+          "当你进行一次智力（{@skill 奥秘|XPHB}）检定或使用{@item 工匠工具|XPHB}进行属性检定时，你可以掷{@dice 1d4}并将掷出的数值添加到属性检定中。"
+        ]
+      },
+      {
+        "ENG_name": "Spellsmith",
+        "name": "魔力制造",
+        "type": "entries",
+        "entries": [
+          "你知晓{@spell 修复术|XPHB}戏法。你还总是准备了{@spell 魔化武器|XPHB}法术。你可以无需法术位施放该法术一次，并且当你完成一次{@variantrule 长休|XPHB}后恢复以此方式施放它的能力。你也可以使用你拥有的任何法术位来施放它。智力、感知或魅力是你施放这些法术的施法属性（在选择此专长时选择）。"
+        ]
+      },
+      {
+        "ENG_name": "Spells of the Mark",
+        "name": "龙纹法术",
+        "type": "entries",
+        "entries": [
+          "如果你拥有施法或契约魔法职业特性，创造龙纹法术列表中的法术将被添加到该特性的法术列表中。",
+          {
+            "type": "table",
+            "caption": "创造龙纹法术",
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "colLabels": [
+              "法术环阶",
+              "法术"
+            ],
+            "rows": [
+              [
+                "1",
+                "{@spell 鉴定术|XPHB}, {@spell 谭森浮碟术|XPHB}"
+              ],
+              [
+                "2",
+                "{@spell 不灭明焰|XPHB}, {@spell 灵体武器|XPHB}"
+              ],
+              [
+                "3",
+                "{@spell 箭如雨下|XPHB}, {@spell 元素武器|XPHB}"
+              ],
+              [
+                "4",
+                "{@spell 鬼斧神工|XPHB}, {@spell 塑石术|XPHB}"
+              ],
+              [
+                "5",
+                "{@spell 造物术|XPHB}"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluffImages": true,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "feats/EFA/Mark of Making.webp"
+          },
+          "credit": "Lee Moyer",
+          "width": 500,
+          "height": 525
+        }
+      ]
+    }
+  }
+]

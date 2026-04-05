@@ -1,0 +1,39 @@
+{
+  "ENG_name": "Amethyst Dragon Den",
+  "name": "紫晶龙巢",
+  "source": "FRHoF",
+  "page": 173,
+  "facilityType": "special",
+  "level": 5,
+  "prerequisite": [
+    {
+      "membership": [
+        "紫龙骑士团"
+      ]
+    }
+  ],
+  "space": [
+    "vast"
+  ],
+  "hirelings": [
+    {
+      "exact": 1
+    }
+  ],
+  "orders": [
+    "增强"
+  ],
+  "entries": [
+    "紫晶龙巢是一个带水池的封闭式开阔洞穴，其入口之一位于水下。该设施的雇员负责维护巢穴，并帮助任何到访的紫晶龙感到舒适。",
+    {
+      "ENG_name": "Empower: Psionic Defenses",
+      "name": "增强：灵能防御",
+      "type": "entries",
+      "entries": [
+        "当你对此设施下达{@book 增强|XDMG|7|增强}命令时，潜藏的龙类力量会充盈该设施，使你能进行灵能战斗训练。此训练每日需要8小时，持续7日，完成后你将获得为期7日的心灵伤害{@variantrule 抗性|XPHB}。"
+      ]
+    }
+  ],
+  "hasFluffImages": true,
+  "translator": "不全书"
+}

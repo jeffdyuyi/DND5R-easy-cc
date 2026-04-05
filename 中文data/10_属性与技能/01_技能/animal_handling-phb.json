@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Animal Handling",
+    "name": "驯兽",
+    "source": "PHB",
+    "page": 178,
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "驯兽|XPHB"
+    ],
+    "ability": "wis",
+    "entries": [
+      "当不确定你是否能驯服一只牲畜，安抚坐骑使其免受惊吓，或者推断出动物的意向时，进行一次感知（驯兽）检定。骑乘时，如果你尝试作出一些危险动作，也会需要进行一次感知（驯兽）检定去控制你的坐骑。"
+    ],
+    "translator": "不全书"
+  }
+]

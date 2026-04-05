@@ -1,0 +1,53 @@
+[
+  {
+    "ENG_name": "Clay Snake Tail",
+    "name": "粘土蛇尾击",
+    "source": "ObojimaTallGrass",
+    "page": 202,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 8|large}|SneakerProMedium}",
+            "{@font {@style 6|large}|SneakerProMedium}",
+            "{@font {@style 5|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "粘土蛇相当温顺且无毒，这使得捕捉它们成为一项相当容易的任务。粘土蛇尾击的尖端受到巫偶和药水制造者的高度需求，幸运的是粘土蛇的尾击在几周内就会重新长出来。粘土蛇常见于河岸和湖畔富含粘土沉积物的地方，但最理想的粘土蛇发现于热水之地。"
+    ],
+    "lootTables": [
+      "狂风农田普通原料|ObojimaTallGrass",
+      "热水大地普通原料|ObojimaTallGrass",
+      "阿伯拉山普通原料|ObojimaTallGrass",
+      "咸水湿地普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/clay-snake-tail.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 3239,
+          "height": 3239
+        }
+      ]
+    }
+  }
+]

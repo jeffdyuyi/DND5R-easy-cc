@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Audio Oddity",
+    "name": "音频异闻",
+    "source": "ObojimaTallGrass",
+    "page": 241,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "当打开时，这瓶令人尴尬且吵闹的药水听起来像一个男人在啜泣。饮用后，这瓶药水会在接下来的1小时内奇怪地抑制饮用者施放的任何法术产生的声音。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 15|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/audio-oddity.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1982,
+          "height": 1982
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

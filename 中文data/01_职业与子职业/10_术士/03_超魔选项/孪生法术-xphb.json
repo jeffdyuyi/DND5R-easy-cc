@@ -1,0 +1,18 @@
+{
+  "ENG_name": "Twinned Spell",
+  "name": "孪生法术",
+  "source": "XPHB",
+  "page": 142,
+  "srd52": true,
+  "featureType": [
+    "MM"
+  ],
+  "consumes": {
+    "ENG_name": "Sorcery Point",
+    "name": "术法点"
+  },
+  "entries": [
+    "当你施展一道能因升环施法额外增加一名生物作为法术目标的法术，如{@spell 魅惑类人|XPHB}时，你可以消耗1术法点来将该法术的有效环阶提升一环。"
+  ],
+  "translator": "不全书"
+}

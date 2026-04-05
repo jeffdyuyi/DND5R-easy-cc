@@ -1,0 +1,208 @@
+{
+  "subclass": [
+    {
+      "name": "掘坟人",
+      "shortName": "掘坟人",
+      "source": "GuideDrakkenheim",
+      "page": 146,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/GuideDrakkenheim/Class/Icons/Reanimator.webp",
+      "subclassSpells": [
+        "虚假生命",
+        "致伤术",
+        "遗体防腐",
+        "鼓舞|GuideDrakkenheim",
+        "闪电束",
+        "回生术",
+        "防死结界",
+        "尸爆|GuideDrakkenheim",
+        "死者复活",
+        "神经毒气|GuideDrakkenheim"
+      ],
+      "subclassFeatures": [
+        "掘坟人|药剂师|GuideDrakkenheim|掘坟人|GuideDrakkenheim|1",
+        "生命火花|药剂师|GuideDrakkenheim|掘坟人|GuideDrakkenheim|1",
+        "掘坟人法术|药剂师|GuideDrakkenheim|掘坟人|GuideDrakkenheim|1",
+        "尸锻生物|药剂师|GuideDrakkenheim|掘坟人|GuideDrakkenheim|3",
+        "保镖|药剂师|GuideDrakkenheim|掘坟人|GuideDrakkenheim|6",
+        "颅获新生|药剂师|GuideDrakkenheim|掘坟人|GuideDrakkenheim|6",
+        "瞧啊，我的造物|药剂师|GuideDrakkenheim|掘坟人|GuideDrakkenheim|10",
+        "狂暴之怒|药剂师|GuideDrakkenheim|掘坟人|GuideDrakkenheim|14",
+        "我没法让它停下来|药剂师|GuideDrakkenheim|掘坟人|GuideDrakkenheim|18"
+      ]
+    }
+  ],
+  "subclassFeature": [
+    {
+      "ENG_name": "Reanimator",
+      "name": "掘坟人",
+      "source": "GuideDrakkenheim",
+      "page": 146,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "掘坟人",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "entries": [
+        "掘坟人是生死的大师。通过完善配方复活新近死亡的生物，或拼凑血肉构建新生命。你处于天才与疯狂的边缘，从死亡之颚中夺取生命的技能使你得心应手地处理死亡与不死。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "生命火花|药剂师|GuideDrakkenheim|掘坟人|GuideDrakkenheim|1"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "掘坟人法术|药剂师|GuideDrakkenheim|掘坟人|GuideDrakkenheim|1"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Spark of Life",
+      "name": "生命火花",
+      "source": "GuideDrakkenheim",
+      "page": 146,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "掘坟人",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "entries": [
+        "获得{@spell 电爪|XPHB}和{@spell 维生术|XPHB}。视为药剂师戏法，不计入已知数量。"
+      ]
+    },
+    {
+      "ENG_name": "Reanimator Spells",
+      "name": "掘坟人法术",
+      "source": "GuideDrakkenheim",
+      "page": 146,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "掘坟人",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "entries": [
+        "根据药剂师等级准备某些法术。视为药剂师法术，不计入准备数量上限。",
+        {
+          "type": "table",
+          "caption": "掘坟人法术",
+          "colLabels": [
+            "药剂师等级",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "1st",
+              "{@spell 虚假生命|XPHB}, {@spell 致伤术|XPHB}"
+            ],
+            [
+              "3rd",
+              "{@spell 遗体防腐|XPHB}, {@spell 鼓舞|GuideDrakkenheim}"
+            ],
+            [
+              "5th",
+              "{@spell 闪电束|XPHB}, {@spell 回生术|XPHB}"
+            ],
+            [
+              "7th",
+              "{@spell 防死结界|XPHB}, {@spell 尸爆|GuideDrakkenheim}"
+            ],
+            [
+              "9th",
+              "{@spell 死者复活|XPHB}, {@spell 神经毒气|GuideDrakkenheim}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Corpsewrought Creature",
+      "name": "尸锻生物",
+      "source": "GuideDrakkenheim",
+      "page": 147,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "掘坟人",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 3,
+      "entries": [
+        "从收集的部件中构建同伴：{@creature 尸锻生物|GuideDrakkenheim}。它服从你的命令，共享先攻值但紧随其后行动。在它的回合只能执行{@action 回避|XPHB}，除非你用{@variantrule 附赠动作|XPHB}命令它执行其他动作。",
+        "若它在1小时内死亡，可以用{@item 医疗包|XPHB}消耗一个法术位使其在1分钟后复活。长休结束时持有{@item 医疗包|XPHB}和材质可创造新的一只（旧的会消亡）。"
+      ]
+    },
+    {
+      "ENG_name": "Bodyguard",
+      "name": "保镖",
+      "source": "GuideDrakkenheim",
+      "page": 147,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "掘坟人",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 6,
+      "entries": [
+        "5尺内的尸锻生物可以用{@variantrule 反应|XPHB}对攻击者进行近战攻击。其攻击视为魔法攻击。",
+        "可以使用药剂师法术位施放一次{@spell 活化死尸|XPHB}（每天一次）。"
+      ]
+    },
+    {
+      "ENG_name": "Reanimated Head",
+      "name": "颅获新生",
+      "source": "GuideDrakkenheim",
+      "page": 147,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "掘坟人",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 6,
+      "entries": [
+        "复生一个类人头颅作为研究助手。可以作为法器。此头颅通晓语言。当你进行添加熟练项的智力检定时，9及以下视为10。你获得{@skill 奥秘|XPHB}和{@skill 调查|XPHB}的熟练项。可用其施放{@spell 死者交谈|XPHB}而不消耗法术位（短休恢复）。"
+      ]
+    },
+    {
+      "ENG_name": "Behold, My Creation",
+      "name": "瞧啊，我的造物",
+      "source": "GuideDrakkenheim",
+      "page": 147,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "掘坟人",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 10,
+      "entries": [
+        "同伴体型增至大型，速度40尺。命中时可尝试擒抱，DC = 8 + 力量调整值 + 熟练加值。"
+      ]
+    },
+    {
+      "ENG_name": "Berserk Fury",
+      "name": "狂暴之怒",
+      "source": "GuideDrakkenheim",
+      "page": 147,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "掘坟人",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 14,
+      "entries": [
+        "命令同伴执行{@action 攻击|XPHB}动作时，它可以攻击两次。"
+      ]
+    },
+    {
+      "ENG_name": "I Can't Stop The Monster I Created",
+      "name": "我没法让它停下来",
+      "source": "GuideDrakkenheim",
+      "page": 147,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "掘坟人",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 18,
+      "entries": [
+        "同伴体型增至巨型，触及10尺，速度50尺。攻击额外造成{@damage 1d8}钝击伤害，且推离/举重能力翻倍。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "Horn of Beckoning Death",
+    "name": "唤死号角",
+    "source": "HAT-LMI",
+    "baseItem": "号角|PHB",
+    "type": "INS",
+    "rarity": "legendary",
+    "reqAttune": "由术士",
+    "reqAttuneTags": [
+      {
+        "class": "术士"
+      }
+    ],
+    "wondrous": true,
+    "entries": [
+      "这件魔法物品看起来像是一个小龙角，当它被握在手上时，内部会发出地狱般的光芒。当你持有这个号角时，你可以使用一个动作来释放一个叫做\"猩红唤死\"的死灵系效应。",
+      "\"猩红唤死\"在你的下个回合生效，并且以号角为中心，在半径30尺内制造一片猩红雾团。该球形区域不随号角移动。你的每个回合开始时，球形区域的范围增加30尺。雾团在10分钟后，或者当你对效应的{@status 专注}结束后消散。任何血量在9点或9点以下的生物（包括你自己），如果在雾团范围内结束回合，会被\"猩红唤死\"直接杀死。以此法死去的类人生物会立刻转变成一个{@creature 丧尸}（见《怪物手册》）。丧尸会听从号角的制作者——巫妖萨扎斯·坦Szass Tam的指令。",
+      "一旦你使用了号角的能力，你在1年后才能再次使用它。"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 200000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/HAT-LMI/Horn of Beckoning Death.webp"
+          },
+          "width": 860,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

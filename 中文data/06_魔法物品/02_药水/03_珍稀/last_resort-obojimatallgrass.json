@@ -1,0 +1,82 @@
+[
+  {
+    "ENG_name": "Last Resort",
+    "name": "绝境反扑",
+    "source": "ObojimaTallGrass",
+    "page": 237,
+    "type": "P",
+    "rarity": "rare",
+    "property": [
+      "Util"
+    ],
+    "entries": [
+      "当这瓶药水被喝下时，一个水晶般的魔茧开始在你周围形成。魔茧在你的下一个回合开始时完全形成，你无法以任何方式被联系或互动。魔茧对所有伤害免疫，并且除了{@spell 祈愿术}法术外，无法以任何方式移动或摧毁。在魔茧中时，你处于凝滞状态，不需要进食或呼吸。魔茧持续1小时到4数十年不等。掷骰下方的表格来确定效应的时间测量，从小时到数十年。然后掷一个{@dice d4}来确定魔茧存在的确切时间数量。",
+      {
+        "type": "table",
+        "colLabels": [
+          "d6",
+          "时间测量"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-11"
+        ],
+        "rows": [
+          [
+            "1",
+            "小时"
+          ],
+          [
+            "2",
+            "天"
+          ],
+          [
+            "3",
+            "周"
+          ],
+          [
+            "4",
+            "月历"
+          ],
+          [
+            "5",
+            "年"
+          ],
+          [
+            "6",
+            "数十年"
+          ]
+        ]
+      },
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 53|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Utility/last-resort.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1772,
+          "height": 1772
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "ENG_name": "Distracting Strike",
+  "name": "扰乱打击",
+  "source": "XPHB",
+  "page": 95,
+  "featureType": [
+    "MV:B"
+  ],
+  "consumes": {
+    "ENG_name": "Superiority Die",
+    "name": "卓越骰"
+  },
+  "entries": [
+    "你以攻击检定命中一个生物时，可以消耗一枚卓越骰以扰乱该目标，让你的盟友有机可乘。将消耗的卓越骰加在此次攻击的伤害掷骰中。此后直到你下个回合开始前，下一次由除你之外的生物对目标进行的攻击检定具有{@variantrule 优势|XPHB}。"
+  ],
+  "translator": "不全书"
+}

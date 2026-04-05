@@ -1,0 +1,20 @@
+{
+    "ENG_name": "Interception",
+    "name": "拦截",
+    "source": "TCE",
+    "page": 41,
+    "reprintedAs": [
+        {
+            "uid": "拦截|XPHB",
+            "tag": "feat"
+        }
+    ],
+    "isClassFeatureVariant": true,
+    "featureType": [
+        "FS:F",
+        "FS:P"
+    ],
+    "entries": [
+        "当你看见的一个生物在你周围5英尺内被一次攻击命中时，你可以使用反应来降低该次伤害。你必须持握着一面盾牌或一把简单/军用武器来降低伤害，降低值为{@dice 1d10} + 你的熟练加值（最低降低至0点）。"
+    ]
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "ENG_name": "Veil of the Reaper",
+    "name": "死神面纱",
+    "source": "CrookedMoon24",
+    "page": 133,
+    "level": 2,
+    "school": "I",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一个干玉米壳或小麦秸秆"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你将自身裹于幽影之中，在攻击间隙为你提供遮掩。在你用一次攻击检定命中一个生物的任何回合结束时，你获得{@condition 隐形|XPHB}状态，直至你的下一回合开始。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Spells/Veil-of-the-Reaper.webp"
+  }
+]

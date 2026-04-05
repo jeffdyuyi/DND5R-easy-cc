@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Manual of Quickness of Action",
+    "name": "灵巧手册",
+    "source": "XDMG",
+    "page": 278,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "very rare",
+    "wondrous": true,
+    "weight": 5,
+    "ability": {
+      "dex": 2
+    },
+    "entries": [
+      "这本书记载了训练协调和平衡的方法，其文字蕴含魔力。如果你在不长于6日的时间段内花费了48小时研读这本书并实践其中的方针，则你的敏捷提升2，至多提升至30。之后这本手册将失去魔力，直到一个世纪后才能恢复。"
+    ],
+    "lootTables": [
+      "器具 - 极珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 20000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Manual of Quickness of Action.webp"
+          },
+          "width": 1000,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

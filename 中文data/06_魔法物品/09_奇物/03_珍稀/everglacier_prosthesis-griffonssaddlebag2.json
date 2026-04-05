@@ -1,0 +1,36 @@
+[
+  {
+    "ENG_name": "Everglacier Prosthesis",
+    "name": "永冻义肢",
+    "source": "GriffonsSaddlebag2",
+    "page": 78,
+    "resist": [
+      "寒冷"
+    ],
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": "被一个缺少手、手臂或腿的生物",
+    "wondrous": true,
+    "entries": [
+      "初见时，此物品看起来是一段粗糙的冰块，其表面刻有符文。要与此物品同调，你必须将其安装在缺失的手臂或腿部末端，此时冰块会魔法性地与你相连，形成一个由冰制成的、与所替代肢体相同的复制品。只要你与其保持同调，这个义肢就会成为你身体的一个完整肢体，能如同原有肢体般自如活动，且不能被强行移除。",
+      "当义肢安装期间，你获得对寒冷伤害的抗性，且用该肢体进行的徒手打击将造成寒冷伤害而非钝击伤害。",
+      "此外，义肢表面突出六根冰刺。当义肢安装时，你可以用一个动作向30尺内的一个或多个目标发射最多3根冰刺。每根冰刺都需要进行一次远程法术攻击，攻击加值为 +7。命中时，目标受到{@damage 2d6}寒冷伤害。{@dice 1d4 + 2}根已发射的冰刺每日黎明时会重新生长。"
+    ],
+    "lootTables": [
+      "魔法物品表 G2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Everglacier-Prosthesis.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

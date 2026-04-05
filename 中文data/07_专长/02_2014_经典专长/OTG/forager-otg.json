@@ -1,0 +1,28 @@
+[
+    {
+        "ENG_name": "Forager",
+        "name": "采集者",
+        "source": "ObojimaTallGrass",
+        "page": 162,
+        "ability": [
+            {
+                "wis": 1
+            }
+        ],
+        "skillProficiencies": [
+            {
+                "survival": true
+            }
+        ],
+        "entries": [
+            "你花费了无数小时探索岛屿寻找原料。你获得以下增益：",
+            {
+                "type": "list",
+                "items": [
+                    "你获得{@skill 求生}技能的熟练。如果你已经拥有该熟练，则改为获得该技能的专精，这意味着你在使用该技能进行任何属性检定时，你的熟练加值将翻倍。",
+                    "你在觅食时获得的普通原料或非普通原料数量翻倍。"
+                ]
+            }
+        ]
+    }
+]

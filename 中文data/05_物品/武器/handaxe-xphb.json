@@ -1,0 +1,43 @@
+[
+  {
+    "name": "手斧",
+    "ENG_name": "Handaxe",
+    "source": "XPHB",
+    "page": 215,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 500,
+    "weaponCategory": "simple",
+    "property": [
+      "L|XPHB",
+      "T|XPHB"
+    ],
+    "mastery": [
+      "侵扰|XPHB"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "S",
+    "range": "20/60",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XPHB/Handaxe.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 184,
+          "height": 449
+        }
+      ]
+    },
+    "axe": true,
+    "basicRules2024": true,
+    "hasFluffImages": true,
+    "srd52": true,
+    "weapon": true
+  }
+]

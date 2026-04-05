@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "Curse of Strife",
+    "name": "纷争之咒",
+    "source": "TalDoreiCampaignSettingReborn",
+    "page": 39,
+    "type": "Curse",
+    "entries": [
+      "那阴险的{@deity 纷争君王|艾桑椎亚|TalDoreiCampaignSettingReborn|纷争君王}之声，既可憎又可诅咒，侵入了塔尔多雷无数被纷争之咒折磨之人的思想。这种诅咒在{@book 瑞芬米斯特|TalDoreiCampaignSettingReborn|3|里芬米斯特半岛}尤为盛行，在那里{@deity 纷争君王|艾桑椎亚|TalDoreiCampaignSettingReborn|纷争君王的}虔诚牧师们将其赐予他们的士兵，将他们转变为完美的战争武器。这种诅咒以不可预测的方式作用，将一些人变成混乱的狂战士们，另一些人变成服从的军团士兵，还有一些人变成自私的孤立主义窃贼。{@deity 纷争君王|艾桑椎亚|TalDoreiCampaignSettingReborn|纷争君王}的邪教徒们也利用他们的法力暗中将这种诅咒传播到艾桑椎亚各地热情好客的和善社区中，旨在从内部摧毁它们，使它们更容易被征服。",
+      {
+        "ENG_name": "Origin of Strife",
+        "name": "纷争的起源",
+        "type": "entries",
+        "page": 39,
+        "entries": [
+          "此类变化是{@deity 纷争君王|艾桑椎亚|TalDoreiCampaignSettingReborn|纷争君王的}折磨的结果，这种折磨不断在受害者脑海中低语。塔尔多雷的自由类地精对那些传播诅咒者抱有特殊的蔑视——而对那些遭受诅咒者则怀有极大的怜悯。",
+          "几个世纪以来，塔尔多雷心胸狭隘的人们一直害怕{@book 地精|TalDoreiCampaignSettingReborn|4|类地精}，因为他们是{@deity 纷争君王|艾桑椎亚|TalDoreiCampaignSettingReborn|纷争君王}的子嗣。虽然最初的{@creature 地精|MM|地精}、{@creature 大地精|MM|大地精}和{@creature 熊地精|MM|熊地精}是在{@book 灾祸之战|TalDoreiCampaignSettingReborn|1|灾祸之战}中作为这位邪恶之神的士兵被创造出来的，但这个诅咒并不存在于他们的血液中——而是通过那些将灵魂献给{@deity 纷争君王|艾桑椎亚|TalDoreiCampaignSettingReborn|纷争君王}的人传播。{@deity 纷争君王|艾桑椎亚|TalDoreiCampaignSettingReborn|纷争君王}的牧师可以使用{@spell 降咒}法术施加纷争之咒。"
+        ]
+      },
+      {
+        "ENG_name": "Curing the Curse",
+        "name": "治愈诅咒",
+        "type": "entries",
+        "page": 39,
+        "entries": [
+          "体验善意或濒死体验的生物可能会产生顿悟，使其真实自我能够撕裂{@deity 纷争君王|艾桑椎亚|TalDoreiCampaignSettingReborn|纷争君王的}谎言的血色环绕。一个受诅咒影响的生物若在一周内受到爱与怜悯而非仇恨与恐惧术的对待，可进行一次{@dc 20}感知{@quickref 豁免检定|PHB|2|1|豁免检定}，成功则破除诅咒。{@spell 移除诅咒}法术也能立即终结诅咒——许多改过自新的{@deity 纷争君王|艾桑椎亚|TalDoreiCampaignSettingReborn|纷争君王}牧师已与其他信仰的牧师联合，以削弱这位鲜血之神对他们家族的控制。"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/TalDoreiCampaignSettingReborn/deities/StrifeEmperor.webp"
+        }
+      }
+    ]
+  }
+]

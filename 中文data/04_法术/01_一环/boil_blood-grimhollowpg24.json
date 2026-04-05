@@ -1,0 +1,71 @@
+[
+  {
+    "ENG_name": "Boil Blood",
+    "name": "鲜血沸腾",
+    "source": "GrimHollowPG24",
+    "page": 187,
+    "level": 1,
+    "school": "T",
+    "subschools": [
+      "血魔法"
+    ],
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "作为施放该法术的一部分，你必须消耗一个{@variantrule 生命值骰|XPHB|生命值骰}否则法术自动失败。一个自愿的目标受到等同于消耗的{@variantrule 生命值骰|XPHB|生命值骰}掷骰数值的火焰伤害。如果目标处于{@condition 中毒|XPHB}状态，该状态立即结束。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "conditionInflict": [
+      "中毒"
+    ],
+    "hasFluffImages": true,
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Boil%20Blood.webp"
+  }
+]

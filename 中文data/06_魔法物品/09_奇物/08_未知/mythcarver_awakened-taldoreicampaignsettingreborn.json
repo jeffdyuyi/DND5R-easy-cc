@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Mythcarver (Awakened)",
+    "name": "神话刻录者（觉醒）",
+    "source": "TalDoreiCampaignSettingReborn",
+    "_copy": {
+      "ENG_name": "Mythcarver (Dormant)",
+      "name": "神话刻录者（休眠）",
+      "source": "TalDoreiCampaignSettingReborn",
+      "_mod": {
+        "entries": [
+          {
+            "mode": "appendArr",
+            "items": {
+              "entries": [
+                {
+                  "ENG_name": "Awakened",
+                  "name": "觉醒",
+                  "type": "entries",
+                  "entries": [
+                    "当神话雕刻者达到觉醒状态时，你将获得以下好处：",
+                    {
+                      "type": "list",
+                      "items": [
+                        "这把武器对攻击和伤害骰的加值增加到+2。此外，当你使用这把武器进行攻击并击中目标时，目标会额外受到{@damage 1d6}点力场伤害。",
+                        "当你使用吟游诗人灵感来影响一个敌人同时手持此剑时，该敌人对其下一次{@quickref 优势与劣势|PHB|2|0|劣势}的{@quickref 豁免检定|PHB|2|1|豁免检定}具有劣势。"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "_preserve": {
+        "page": true,
+        "fluff": true
+      }
+    },
+    "bonusWeapon": "+2",
+    "hasFluff": true,
+    "hasFluffImages": true
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "ENG_name": "Trickster's Escape",
+  "name": "诡术师的逃脱术",
+  "source": "XGE",
+  "page": 57,
+  "featureType": [
+    "EI"
+  ],
+  "prerequisite": [
+    {
+      "level": {
+        "level": 7,
+        "class": {
+          "ENG_name": "Warlock",
+          "name": "魔契师"
+        }
+      }
+    }
+  ],
+  "additionalSpells": [
+    {
+      "innate": {
+        "_": {
+          "daily": {
+            "1e": [
+              "行动自如"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "entries": [
+    "你可以以自己为目标施展一次{@spell 行动自如}法术，且无需消耗法术位。完成一次长休后，你重获如此施展该法术的权利。"
+  ],
+  "translator": "不全书"
+}

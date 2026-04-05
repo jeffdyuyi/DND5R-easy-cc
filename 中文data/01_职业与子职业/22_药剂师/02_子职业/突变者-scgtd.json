@@ -1,0 +1,274 @@
+{
+  "subclass": [
+    {
+      "name": "突变者",
+      "shortName": "突变者",
+      "source": "GuideDrakkenheim",
+      "page": 143,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/GuideDrakkenheim/Class/Icons/Mutagenist.webp",
+      "subclassSpells": [
+        "跳跃术",
+        "毒素护盾|GuideDrakkenheim",
+        "变身术",
+        "强化属性",
+        "加速术",
+        "水下呼吸",
+        "变形术",
+        "石肤术",
+        "转生术",
+        "脓毒休克|GuideDrakkenheim"
+      ],
+      "subclassFeatures": [
+        "突变者|药剂师|GuideDrakkenheim|突变者|GuideDrakkenheim|1",
+        "自然哲学|药剂师|GuideDrakkenheim|突变者|GuideDrakkenheim|1",
+        "突变者法术|药剂师|GuideDrakkenheim|突变者|GuideDrakkenheim|1",
+        "变形灵药|药剂师|GuideDrakkenheim|突变者|GuideDrakkenheim|3",
+        "额外攻击|药剂师|GuideDrakkenheim|突变者|GuideDrakkenheim|6",
+        "强力生物学|药剂师|GuideDrakkenheim|突变者|GuideDrakkenheim|6",
+        "适应性遗传|药剂师|GuideDrakkenheim|突变者|GuideDrakkenheim|10",
+        "异常进化|药剂师|GuideDrakkenheim|突变者|GuideDrakkenheim|14",
+        "崭新肉体|药剂师|GuideDrakkenheim|突变者|GuideDrakkenheim|18"
+      ]
+    }
+  ],
+  "subclassFeature": [
+    {
+      "ENG_name": "Mutagenist",
+      "name": "突变者",
+      "source": "GuideDrakkenheim",
+      "page": 143,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "突变者",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "entries": [
+        "突变者深入研究一种特殊的血清，通过注射血清转变为怪物形态。你将自己作为这种法力的导管，并以庞大的畸变体形态猛攻敌人。你一生都在深入调查和改进修改血清的新方法，以期达成完美形态。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "自然哲学|药剂师|GuideDrakkenheim|突变者|GuideDrakkenheim|1"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "突变者法术|药剂师|GuideDrakkenheim|突变者|GuideDrakkenheim|1"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Natural Philosophy",
+      "name": "自然哲学",
+      "source": "GuideDrakkenheim",
+      "page": 143,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "突变者",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "skillProficiencies": [
+        {
+          "nature": true
+        }
+      ],
+      "toolProficiencies": [
+        {
+          "alchemist's supplies": true
+        },
+        {
+          "choose": {
+            "from": [
+              "herbalism kit",
+              "poisoner's kit"
+            ],
+            "count": 1
+          }
+        }
+      ],
+      "languageProficiencies": [
+        {
+          "any": 2
+        }
+      ],
+      "entries": [
+        "你获得{@item 炼金工具|XPHB}以及{@item 草药工具|XPHB}或{@item 毒药工具|XPHB}的熟练项。你还获得两种额外语言的熟练项和{@skill 自然|XPHB}技能的熟练项。如果你已有该熟练项，则改为获得自选另一项技能的熟练项。"
+      ]
+    },
+    {
+      "ENG_name": "Mutagenist Spells",
+      "name": "突变者法术",
+      "source": "GuideDrakkenheim",
+      "page": 143,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "突变者",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "entries": [
+        "当你达到该职业的特定等级后，你将始终准备某些法术。这些法术对你而言视为药剂师法术，但不计入准备数量上限。",
+        {
+          "type": "table",
+          "caption": "突变者法术",
+          "colLabels": [
+            "药剂师等级",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "1st",
+              "{@spell 跳跃术|XPHB}, {@spell 毒素护盾|GuideDrakkenheim}"
+            ],
+            [
+              "3rd",
+              "{@spell 变身术|XPHB}, {@spell 强化属性|XPHB}"
+            ],
+            [
+              "5th",
+              "{@spell 加速术|XPHB}, {@spell 水下呼吸|XPHB}"
+            ],
+            [
+              "7th",
+              "{@spell 变形术|XPHB}, {@spell 石肤术|XPHB}"
+            ],
+            [
+              "9th",
+              "{@spell 转生术|XPHB}, {@spell 脓毒休克|GuideDrakkenheim}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Transmogrifying Elixir",
+      "name": "变形灵药",
+      "source": "GuideDrakkenheim",
+      "page": 144,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "突变者",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 3,
+      "entries": [
+        "以一个{@variantrule 附赠动作|XPHB}，你可以消耗一个法术位来进行怪异的变形。该变形在1分钟后结束，或者如果你被缩小到0点生命值或陷入{@condition 失能|XPHB}。当你变形时，保持个性、阵营和游戏数据。然而，将发生以下变化：",
+        {
+          "type": "list",
+          "items": [
+            "力量和智力属性值互换。",
+            "体型变为大型，跳跃距离翻倍。载重属性视为体型大一级。",
+            "每只手都变成巨大的肉拳，视为简易武器。命中时造成{@damage 1d10} + 力量调整值 + 药剂师等级的钝击伤害。",
+            "无法施法或维持{@status 专注|XPHB}。",
+            "获得120尺{@sense 黑暗视觉|XPHB}。",
+            "获得等同于五倍药剂师等级的临时生命值。"
+          ]
+        },
+        "此外，根据灵药消耗的法术位等级强化属性：",
+        {
+          "type": "list",
+          "items": [
+            "速度增加等同于 {@dice 5 × 法术位等级} 尺。",
+            "AC为 13 + 法术位等级。",
+            "在每个回合开始时，只要还有至少1点生命值，就能恢复等同于法术位等级数值的生命值。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Extra Attack",
+      "name": "额外攻击",
+      "source": "GuideDrakkenheim",
+      "page": 144,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "突变者",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 6,
+      "entries": [
+        "在回合内执行{@action 攻击|XPHB}动作时，可以攻击两次而非一次。"
+      ]
+    },
+    {
+      "ENG_name": "Potent Biology",
+      "name": "强力生物学",
+      "source": "GuideDrakkenheim",
+      "page": 144,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "突变者",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 6,
+      "entries": [
+        "处于变形形态时，肉拳攻击被视为魔法攻击。",
+        "当你用肉拳命中一次攻击时，可以消耗一个法术位来加强打击力，每使用一个法术位等级就造成额外的{@damage 1d8}力场伤害。"
+      ]
+    },
+    {
+      "ENG_name": "Adaptive Genetics",
+      "name": "适应性遗传",
+      "source": "GuideDrakkenheim",
+      "page": 144,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "突变者",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 10,
+      "entries": [
+        "能够在生命值降至0时由“另一个自我”接管：",
+        {
+          "type": "list",
+          "items": [
+            "自然形态下被降至0点生命值时，可以立即使用变形灵药（消耗法术位），并恢复等同于药剂师等级的生命值（加上灵药提供的临时生命值）。",
+            "变形形态下被降至0点生命值时，恢复自然形态并保留1点生命值。使用此选项后，直到完成短休或长休前无法再次变形。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Unnatural Evolution",
+      "name": "异常进化",
+      "source": "GuideDrakkenheim",
+      "page": 144,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "突变者",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 14,
+      "entries": [
+        "你可以使用高等公式特性来变形（视为该等级的法术位）。变形时获得以下基因突变之一：",
+        {
+          "type": "list",
+          "items": [
+            "{@b 龙族基因。} 长出肉翼皮。获得等于步行速度的飞行速度，并能用动作在30尺锥状区域喷吐胆汁，造成{@damage 8d6}强酸伤害（体质豁免减半）。完成短休或长休后恢复。",
+            "{@b 巨人基因。} 体型变为巨型，对物件和建筑伤害翻倍。可用动作猛击地面，30尺内所有生物进行敏捷豁免，失败受{@damage 8d6}钝击伤害并{@condition 倒地|XPHB}。",
+            "{@b 小脑基因。} 保留部分心智。可以在变形状态下维持法术{@status 专注|XPHB}，且专注不会因受到伤害而中断。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "The New Flesh",
+      "name": "崭新肉体",
+      "source": "GuideDrakkenheim",
+      "page": 144,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "突变者",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 18,
+      "entries": [
+        "完成灵药的进化巅峰。变形时：",
+        {
+          "type": "list",
+          "items": [
+            "可用{@variantrule 附赠动作|XPHB}消耗法术位，恢复法术位等级十倍的生命值。",
+            "豁免失败时可以消耗法术位作为{@variantrule 反应|XPHB}改为成功。",
+            "力量值等于智力值。此外，可以在变形状态下施法。"
+          ]
+        }
+      ]
+    }
+  ]
+}

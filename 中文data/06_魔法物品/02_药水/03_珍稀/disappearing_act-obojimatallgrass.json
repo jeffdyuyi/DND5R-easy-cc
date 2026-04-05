@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Disappearing Act",
+    "name": "消失表演",
+    "source": "ObojimaTallGrass",
+    "page": 248,
+    "type": "P",
+    "rarity": "rare",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "当被消耗时，你的身体与你穿戴或携带的所有物品一同消失，你的智能被转移至100英里内的一个随机物件中。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 60|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/disappearing-act.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1612,
+          "height": 1612
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

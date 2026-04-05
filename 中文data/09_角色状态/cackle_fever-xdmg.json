@@ -1,0 +1,53 @@
+[
+  {
+    "name": "疯笑病",
+    "ENG_name": "Cackle Fever",
+    "source": "XDMG",
+    "page": 61,
+    "entries": [
+      "廉价制作的药水和灵药有时会被失心疯所污染。这种疾病只在类人生物间传播；奇怪的是，侏儒却免疫这种疫病。染疫的生物会在感染{@dice 1d4}天之后开始承受以下效应：",
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Fever",
+            "name": "发热",
+            "type": "item",
+            "entry": "该生物获得1级{@condition 力竭|XPHB}，该力竭将持续存在，直至该生物康复。"
+          },
+          {
+            "ENG_name": "Uncontrollable Laughter",
+            "name": "失控狂笑",
+            "type": "item",
+            "entry": "在该生物具有此{@condition 力竭|XPHB}状态期间，每当其受到除心灵伤害之外的伤害时，它都要进行一次{@dc 13}的体质豁免。豁免失败则该生物受到5（{@damage 1d10}）心灵伤害，并开始无法控制地狂笑而因此陷入{@condition 失能|XPHB}状态。该生物在其每个回合结束时重复此豁免，豁免成功则结束此效应。该生物亦将在1分钟后自动成功于此豁免。"
+          }
+        ]
+      },
+      {
+        "type": "entries",
+        "entries": [
+          {
+            "ENG_name": "Fighting the Contagion",
+            "name": "抵抗疫病",
+            "type": "entries",
+            "entries": [
+              "每当染疫的生物完成一次长休时，它都要进行一次{@dc 13}的体质豁免。一旦该生物累计成功通过该豁免3次，它就会康复，并在接下来的1年里免疫失心疯。"
+            ]
+          },
+          {
+            "ENG_name": "Spreading the Contagion",
+            "name": "传播疫病",
+            "type": "entries",
+            "entries": [
+              "任何在以感染了疯笑病的生物为中心、10尺半径的{@variantrule 光环 [效应区域]|XPHB|光环}区域内开始回合的类人生物（侏儒除外）都必须成功通过一次{@dc 10}的体质豁免，否则亦将感染疯笑病。豁免成功则该生物在接下来的24小时内不会再因致使其进行豁免的那个特定生物而感染该疫病。"
+            ]
+          }
+        ]
+      }
+    ],
+    "srd52": true,
+    "translator": "不全书",
+    "type": "Magical Contagion"
+  }
+]

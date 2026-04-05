@@ -1,0 +1,19 @@
+[
+    {
+        "ENG_name": "Prone Defense",
+        "name": "伏地防御",
+        "source": "GrimHollowPG24",
+        "page": 118,
+        "category": "FS",
+        "prerequisite": [
+            {
+                "feature": [
+                    "战斗风格"
+                ]
+            }
+        ],
+        "entries": [
+            "当处于{@condition 倒地|XPHB}状态时，5尺范围内的生物对你进行的近战攻击检定不再具有{@variantrule 优势|XPHB}。此外，你可以进行一次近战攻击命中一个生物并将该生物击入{@condition 倒地|XPHB}状态作为你的{@variantrule 攻击|XPHB}动作的一部分。"
+        ]
+    }
+]

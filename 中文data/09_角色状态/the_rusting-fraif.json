@@ -1,0 +1,46 @@
+[
+  {
+    "name": "锈蚀",
+    "ENG_name": "The Rusting",
+    "source": "FRAiF",
+    "page": 165,
+    "entries": [
+      "锈蚀表现为一层薄薄的铁质涂层，覆盖在受害者身体表面。当接触湿气时，这种铁质皮肤会腐蚀成锈色斑块。随着锈蚀覆盖受害者，受害者最终会转变为一种名为锈蚀者的生物类型（见{@book 第九章|FRAiF|9}）。",
+      "任何被锈蚀生物所伤或在锈蚀显现区域停留1小时的生物需进行{@dc 10}的体质豁免。构装体和亡灵自动通过此豁免。豁免失败时，该生物将感染锈蚀并遭受以下影响：",
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Curse",
+            "name": "诅咒",
+            "type": "item",
+            "entry": "该生物获得1个{@condition 力竭|XPHB}等级并被诅咒。当该生物处于诅咒状态时，完成一次{@variantrule 长休|XPHB}不会降低该生物的{@condition 力竭|XPHB}等级。"
+          },
+          {
+            "ENG_name": "Plated Joints",
+            "name": "板甲关节",
+            "type": "item",
+            "entry": "该生物的{@variantrule 速度|XPHB}缩小了5尺。"
+          },
+          {
+            "ENG_name": "Rusted Fate",
+            "name": "锈蚀命运",
+            "type": "item",
+            "entry": "当一个被诅咒的生物的{@condition 力竭|XPHB}等级达到6时，它不会死亡。相反，该生物会转变为自身生锈的版本；其生物类型变为构装体，并获得{@variantrule 免疫|XPHB}毒素伤害和{@condition 力竭|XPHB}、{@condition 石化|XPHB}以及{@condition 中毒|XPHB}状态的免疫。随后该诅咒对该生物结束。"
+          }
+        ]
+      },
+      {
+        "ENG_name": "Fighting the Contagion",
+        "name": "抵抗疫病",
+        "type": "entries",
+        "entries": [
+          "每天拂晓，受影响的生物需进行一次{@dc 10}体质豁免检定。若豁免失败，该生物获得1层{@condition 力竭|XPHB}状态，同时更多铁质覆盖其皮肤。若豁免成功，该生物的{@condition 力竭|XPHB}状态等级降低1层。若该生物的{@condition 力竭|XPHB}状态等级降至0，则疫病术对其终止。",
+          "移除诅咒会立即终止该生物身上的疫病术。"
+        ]
+      }
+    ],
+    "type": "Magical Contagion"
+  }
+]

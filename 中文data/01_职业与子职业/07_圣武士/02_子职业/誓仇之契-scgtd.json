@@ -1,0 +1,201 @@
+{
+  "ENG_name": "Oath of Hexes",
+  "name": "誓仇之契",
+  "source": "GuideDrakkenheim",
+  "shortName": "诅咒",
+  "page": 165,
+  "className": "圣武士",
+  "classSource": "phb",
+  "subclassFeatures": [
+    {
+      "ENG_name": "Oath of Hexes",
+      "name": "誓仇之契",
+      "source": "GuideDrakkenheim",
+      "page": 165,
+      "className": "圣武士",
+      "classSource": "phb",
+      "subclassShortName": "诅咒",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 3,
+      "entries": [
+        "那些立下誓仇之契的人向鬼婆集会、精类生物以及魔法、命运和死亡的秘术神祇宣誓效忠。作为交换，这一神圣誓言赋予圣武士变幻莫测的魔法力量，用以诅咒那些试图挑战命运或逃避古神怒火之人。",
+        {
+          "ENG_name": "Tenets of Hexes",
+          "name": "教义之网",
+          "type": "entries",
+          "entries": [
+            "{@bold 侍奉秘术。} 掌控未来的神明为你注入了秘术魔法。通过你的誓约，你成为了他们莫测者意志的凡间器皿。",
+            "{@bold 守密者。} 这个世界隐藏着最好被长久遗忘的黑暗秘密。你作为这些秘密的保护者，防止它们落入意志薄弱的凡人之手，那些凡人会滥用它们以达到邪恶目的。",
+            "{@bold 命运仲裁者}。命运线缕早已编织完成，与之抗争是愚蠢之举。厄运降临所有。",
+            "{@bold 摒弃怜悯。} 尽管有些人认为你的奇异力量是黑暗或腐化的，但你用那些他们用来对付你的诅咒和魔法来消灭邪恶。对那些抗拒命运的人摒弃怜悯。"
+          ]
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "圣誓法术|圣武士|phb|诅咒|GuideDrakkenheim|3|GuideDrakkenheim"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "引导神力|圣武士|phb|诅咒|GuideDrakkenheim|3|GuideDrakkenheim"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Oath Spells",
+      "name": "圣誓法术",
+      "source": "GuideDrakkenheim",
+      "page": 165,
+      "className": "圣武士",
+      "classSource": "phb",
+      "subclassShortName": "诅咒",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 3,
+      "entries": [
+        "你在圣武士等级中获得誓仇之契法术表格中列出的圣誓法术。参见神圣誓言职业特性了解圣誓法术如何工作。",
+        {
+          "type": "table",
+          "caption": "誓仇之契法术",
+          "colLabels": [
+            "圣武士等级",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "3rd",
+              "{@spell 炼狱叱喝|phb}, {@spell 塔莎狂笑术||狂笑术}, {@spell 魔能爆|phb}"
+            ],
+            [
+              "5th",
+              "{@spell 隐形术|phb}, {@spell 暗示术|phb}"
+            ],
+            [
+              "9th",
+              "{@spell 降咒|phb}, {@spell 恐惧术|phb}"
+            ],
+            [
+              "13th",
+              "{@spell 任意门|phb}, {@spell 变形术|phb}"
+            ],
+            [
+              "17th",
+              "{@spell 支配类人|phb}, {@spell 假象术|phb}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Channel Divinity",
+      "name": "引导神力",
+      "source": "GuideDrakkenheim",
+      "page": 165,
+      "className": "圣武士",
+      "classSource": "phb",
+      "subclassShortName": "诅咒",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 3,
+      "entries": [
+        "你获得以下引导神力选项：",
+        {
+          "type": "list",
+          "items": [
+            "{@bold 诅咒之咒} 以一个动作，你可以诅咒一个你能看见的30尺内的生物。当你诅咒一个目标时，选择一个属性值。选民在攻击检定、豁免检定和属性检定中使用该属性值时具有劣势，持续一分钟或直到其生命值降至0或陷入昏迷。在每个被诅咒生物的回合结束时，它可以进行一次魅力豁免检定对抗你的法术豁免DC。豁免成功时，诅咒结束。",
+            "{@bold 折磨诅咒} 以一个附赠动作，你可以诅咒一个你能看见的30尺内的生物。灼热的苦痛会折磨目标一分钟。在承受这种苦痛时，它会在其每回合开始时受到等同于你圣武士等级的暗蚀伤害。每次受到此伤害时，它可以进行一次对抗你法术豁免DC的感知豁免检定。若豁免成功，则苦痛结束。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Bewitching Aura",
+      "name": "魅惑光环",
+      "source": "GuideDrakkenheim",
+      "page": 165,
+      "className": "圣武士",
+      "classSource": "phb",
+      "subclassShortName": "诅咒",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 7,
+      "header": 2,
+      "entries": [
+        "你散发出一个古怪灵光，范围10尺。当一个仇敌以攻击命中你或10尺内的一个生物时，你可以使用你的反应迫使该仇敌进行一次对抗你法术豁免DC的魅力豁免检定。豁免失败时，你可以魔法地将该攻击重定向至你选择的10尺内且在攻击范围内的另一个生物。新目标会被该攻击命中并承受所有伤害和效应。",
+        "第18级起，该灵光的作用范围扩展至30尺。"
+      ]
+    },
+    {
+      "ENG_name": "Reversal of Fortune",
+      "name": "逆转命运",
+      "source": "GuideDrakkenheim",
+      "page": 165,
+      "className": "圣武士",
+      "classSource": "phb",
+      "subclassShortName": "诅咒",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 15,
+      "header": 2,
+      "entries": [
+        "每当一个生物对你造成重击时，下一次你用攻击命中该生物时，该攻击自动变为重击。"
+      ]
+    },
+    {
+      "ENG_name": "Death Hex",
+      "name": "死亡脆弱诅咒",
+      "source": "GuideDrakkenheim",
+      "page": 165,
+      "className": "圣武士",
+      "classSource": "phb",
+      "subclassShortName": "诅咒",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 20,
+      "header": 2,
+      "entries": [
+        "一个生物若受到你的诅咒之咒或折磨诅咒影响，将变得对所有伤害易伤。"
+      ]
+    }
+  ],
+  "subclassSpells": [
+    "魔能爆",
+    "炼狱叱喝",
+    "塔莎狂笑术",
+    "隐形术",
+    "暗示术",
+    "降咒",
+    "恐惧术",
+    "任意门",
+    "变形术",
+    "支配类人",
+    "假象术"
+  ],
+  "additionalSpells": [
+    {
+      "prepared": {
+        "3": [
+          "魔能爆",
+          "炼狱叱喝",
+          "塔莎狂笑术"
+        ],
+        "5": [
+          "隐形术",
+          "暗示术"
+        ],
+        "9": [
+          "降咒",
+          "恐惧术"
+        ],
+        "13": [
+          "任意门",
+          "变形术"
+        ],
+        "17": [
+          "支配类人",
+          "假象术"
+        ]
+      }
+    }
+  ],
+  "hasFluff": true,
+  "hasFluffImages": true
+}

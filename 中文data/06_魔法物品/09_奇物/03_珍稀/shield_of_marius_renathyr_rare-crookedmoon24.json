@@ -1,0 +1,44 @@
+[
+  {
+    "ENG_name": "Shield of Marius Renathyr (Rare)",
+    "name": "马里乌斯·雷纳希尔之盾（珍稀）",
+    "source": "CrookedMoon24",
+    "page": 604,
+    "baseItem": "盾牌|XPHB",
+    "type": "S|XPHB",
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 6,
+    "property": [
+      "TCM'24:FH"
+    ],
+    "ac": 2,
+    "bonusAc": "+1",
+    "entries": [
+      "这面盾牌由抛光黄金和纯白珐琅铸成，其上饰有繁复的纹样，一朵被荆棘藤蔓缠绕的蔷薇。这是马里乌斯·雷纳希尔——一位注定迎来悲剧命运的游侠骑士——生前所拥有的盾牌。",
+      "持握这面盾牌期间，你的AC会获得+1加值，该加值取决于盾牌的稀有度，这是盾牌原本提供的AC加值外的额外加值，并且你还可以使用如下词条。",
+      {
+        "ENG_name": "Valorous Guard (Rare+)",
+        "name": "英勇守卫（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "当你5尺内一个生物被一次攻击检定命中时，你可以使用{@variantrule 反应|XPHB}为该生物的AC添加2+盾牌的加值，这可能使得该攻击失手。当你5尺内一个生物进行一次敏捷豁免检定失败时，你可以使用{@variantrule 反应|XPHB}为该生物的总值添加2+盾牌的加值，这可能使得它豁免成功。"
+        ]
+      }
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Shield%20of%20Marius%20Renathyr.webp"
+          },
+          "width": 956,
+          "height": 1200,
+          "credit": "Minard Maxime"
+        }
+      ]
+    }
+  }
+]

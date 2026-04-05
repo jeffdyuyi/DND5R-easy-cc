@@ -1,0 +1,58 @@
+[
+  {
+    "ENG_name": "Wand of Web",
+    "name": "蛛网魔杖",
+    "source": "DMG",
+    "page": 212,
+    "srd": true,
+    "referenceSources": [
+      "IDRotF",
+      "WBtW"
+    ],
+    "reprintedAs": [
+      "蛛网魔杖|XDMG"
+    ],
+    "type": "WD|DMG",
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": "由施法者",
+    "reqAttuneTags": [
+      {
+        "spellcasting": true
+      }
+    ],
+    "weight": 1,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6 + 1}",
+    "charges": 7,
+    "entries": [
+      "这把魔杖有7发充能。持握此魔杖期间，你可以用一个动作并消耗1发充能以施展法术{@spell 蛛网术}（豁免{@dc 15}）。",
+      "该魔杖每天黎明时恢复{@dice 1d6 + 1}发已消耗的充能。如果你消耗了魔杖的最后一发充能，骰一次{@dice d20}。如果骰值为1，魔杖将化为灰烬而毁灭。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "蛛网术"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表F"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Wand of Web.webp"
+          },
+          "width": 111,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

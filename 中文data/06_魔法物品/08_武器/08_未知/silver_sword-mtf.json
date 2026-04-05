@@ -1,0 +1,29 @@
+[
+  {
+    "ENG_name": "Silver Sword",
+    "name": "银剑",
+    "source": "MTF",
+    "page": 89,
+    "type": "M",
+    "tier": "主要",
+    "rarity": "unknown (magic)",
+    "reqAttune": "由被具有心灵感应能力的生物",
+    "reqAttuneTags": [
+      {
+        "psionics": true
+      }
+    ],
+    "weight": 6,
+    "weaponCategory": "martial",
+    "property": [
+      "H",
+      "2H"
+    ],
+    "dmg1": "2d6",
+    "dmgType": "S",
+    "bonusWeapon": "+3",
+    "entries": [
+      "使用这把魔法武器进行攻击和伤害骰时，你有+3的加值。在对处于星界身体（如通过{@spell 星界投影}法术）的目标进行重击时，你可以切断将目标与其物质身体相连的银色绳索，而不是造成伤害。"
+    ]
+  }
+]

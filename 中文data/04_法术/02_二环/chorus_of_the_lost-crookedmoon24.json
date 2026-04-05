@@ -1,0 +1,97 @@
+[
+  {
+    "ENG_name": "Chorus of the Lost",
+    "name": "失落者合颂",
+    "source": "CrookedMoon24",
+    "page": 126,
+    "level": 2,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一个价值10+ GP的银铃铛",
+        "cost": 1000
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你在施法距离内一处你可见的点召唤出失落灵魂的诡异歌声与悲号。以该点为源点的15尺半径{@variantrule 球状 [效应区域]|XPHB|球状}内的每个生物都必须进行一次感知豁免检定。若豁免失败，则目标受到{@damage 2d6}心灵伤害，并在持续时间内陷入{@condition 恐慌|XPHB}状态。若豁免成功，则其受到半伤，并陷入{@condition 恐慌|XPHB}状态，直至其下一回合结束。一个{@condition 恐慌|XPHB}目标在其每个回合结束时重复该豁免检定，豁免成功则终止自身该法术。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "伤害对每个高于2环的法术位环阶增加{@dice 1d6}。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "心灵"
+    ],
+    "conditionInflict": [
+      "恐慌"
+    ],
+    "savingThrow": [
+      "感知"
+    ],
+    "miscTags": [
+      "SGT",
+      "SMN"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Spells/Chorus-of-the-Lost.webp"
+  }
+]

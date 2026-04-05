@@ -1,0 +1,48 @@
+[
+  {
+    "ENG_name": "Boots of Elvenkind",
+    "name": "精灵之靴",
+    "source": "DMG",
+    "page": 155,
+    "srd": true,
+    "referenceSources": [
+      "WDH",
+      "WDMM",
+      "DIP",
+      "WBtW",
+      "DoSI"
+    ],
+    "reprintedAs": [
+      "精灵之靴|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "着装这双靴子期间，无论在何种表面上移动，你都不会发出脚步声。此外，你为尝试无声移动所做的敏捷（{@skill 隐匿}）检定具有优势。"
+    ],
+    "optionalfeatures": [
+      "仿制魔法物品|TCE"
+    ],
+    "lootTables": [
+      "魔法物品表F"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Boots of Elvenkind.webp"
+          },
+          "credit": "Conceptopolis",
+          "width": 850,
+          "height": 645
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

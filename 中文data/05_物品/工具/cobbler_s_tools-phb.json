@@ -1,0 +1,88 @@
+[
+  {
+    "name": "鞋匠工具",
+    "ENG_name": "Cobbler's Tools",
+    "source": "PHB",
+    "page": 154,
+    "type": "AT",
+    "rarity": "none",
+    "weight": 5,
+    "value": 500,
+    "additionalEntries": [
+      "虽然鞋匠的技艺对冒险者来说可能显得过于卑微，但一双好靴子能让角色穿越崎岖荒野和致命地下城。",
+      {
+        "ENG_name": "Components",
+        "name": "成分",
+        "type": "entries",
+        "entries": [
+          "鞋匠工具包含一把锤子、一把锥子、一把刀刃、一个鞋撑、一把切割器、备用皮革和线。"
+        ]
+      },
+      {
+        "ENG_name": "Arcana, History",
+        "name": "奥秘、历史",
+        "type": "entries",
+        "entries": [
+          "你对鞋子的知识可以帮助你识别魔法靴子的魔法属性或此类物品的历史。"
+        ]
+      },
+      {
+        "ENG_name": "Investigation",
+        "name": "调查",
+        "type": "entries",
+        "entries": [
+          "鞋履蕴含着惊人的秘密。通过检查鞋子的磨损和积累的泥土，你可以得知某人最近去过哪里。你修理鞋子的经验使你更容易鉴定出伤害可能来自何处。"
+        ]
+      },
+      {
+        "ENG_name": "Maintain Shoes",
+        "name": "修鞋",
+        "type": "entries",
+        "entries": [
+          "作为长休的一部分，你可以修补同伴的鞋子。在接下来的24小时内，最多六名你指定的穿着你修过的鞋子的生物可以每天旅行10小时而无需进行豁免检定来避免{@condition 力竭}。"
+        ]
+      },
+      {
+        "ENG_name": "Craft Hidden Compartment",
+        "name": "秘密夹层",
+        "type": "entries",
+        "entries": [
+          "经过8小时的工作，你可以在鞋子上添加一个秘密夹层。该夹层可容纳一个最长3英寸、宽深各1英寸的物件。你需使用工具熟练项进行一次智力检定，以确定发现该夹层所需的智力（{@skill 调查}）检定DC。"
+        ]
+      },
+      {
+        "type": "table",
+        "caption": "鞋匠工具",
+        "colLabels": [
+          "用途",
+          "DC"
+        ],
+        "colStyles": [
+          "col-10",
+          "col-2 text-center"
+        ],
+        "rows": [
+          [
+            "确定鞋子的年份和来源",
+            "10"
+          ],
+          [
+            "找出鞋后跟的秘密夹层",
+            "15"
+          ]
+        ]
+      }
+    ],
+    "additionalSources": [
+      {
+        "source": "XGE",
+        "page": 80
+      }
+    ],
+    "basicRules": true,
+    "reprintedAs": [
+      "鞋匠工具|XPHB"
+    ],
+    "srd": true
+  }
+]

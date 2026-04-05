@@ -1,0 +1,40 @@
+{
+  "ENG_name": "Knowledge Domain (PSA)",
+  "name": "知识领域(PSA)",
+  "shortName": "知识(PSA)",
+  "source": "PSA",
+  "className": "牧师",
+  "classSource": "XPHB",
+  "_copy": {
+    "ENG_name": "Knowledge Domain (PSA)",
+    "name": "知识领域(PSA)",
+    "source": "PSA",
+    "shortName": "知识(PSA)",
+    "className": "牧师",
+    "classSource": "PHB",
+    "_preserve": {
+      "page": true,
+      "otherSources": true,
+      "referenceSources": true,
+      "srd": true,
+      "basicRules": true,
+      "reprintedAs": true
+    }
+  },
+  "subclassFeatures": [
+    "知识领域(PSA)|牧师|XPHB|知识(PSA)|PSA|3",
+    "引导神力：岁月知识|牧师|XPHB|知识||3",
+    "引导神力：读心|牧师||知识||6",
+    "透视过去|牧师||知识||17"
+  ],
+  "fluff": {
+    "_subclassFluff": {
+      "ENG_name": "Knowledge Domain (PSA)",
+      "name": "知识领域(PSA)",
+      "source": "PSA",
+      "shortName": "知识(PSA)",
+      "className": "牧师",
+      "classSource": "PHB"
+    }
+  }
+}

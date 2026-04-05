@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Instaprint Camera",
+    "name": "即时打印相机",
+    "source": "ObojimaTallGrass",
+    "page": 172,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "带有魔法的生物或物件在这台相机拍摄的照片中会显示出魔法效应。如果有效应存在，该生物或物件周围会显示出微弱的光环，对应其中一个魔法学派。相机有{@dice 1d12 + 4}张胶片卡片，可用于拍照。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/instaprint-camera.webp"
+          },
+          "credit": "Almir Gusic",
+          "width": 3385,
+          "height": 3385
+        }
+      ]
+    }
+  }
+]

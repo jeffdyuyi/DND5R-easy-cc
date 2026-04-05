@@ -1,0 +1,26 @@
+{
+  "ENG_name": "Misty Visions",
+  "name": "迷雾幻影",
+  "source": "PHB",
+  "page": 111,
+  "srd": true,
+  "reprintedAs": [
+    "迷雾幻影|XPHB"
+  ],
+  "featureType": [
+    "EI"
+  ],
+  "additionalSpells": [
+    {
+      "innate": {
+        "_": [
+          "无声幻影"
+        ]
+      }
+    }
+  ],
+  "entries": [
+    "你可以随意施展{@spell 无声幻影}，且无需消耗法术位和材料成分。"
+  ],
+  "translator": "不全书"
+}

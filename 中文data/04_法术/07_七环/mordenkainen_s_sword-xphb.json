@@ -1,0 +1,70 @@
+[
+  {
+    "ENG_name": "Mordenkainen's Sword",
+    "name": "魔邓肯之剑",
+    "source": "XPHB",
+    "page": 302,
+    "srd52": "奥能利剑",
+    "basicRules2024": true,
+    "level": 7,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 90
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一把价值 250+GP 的微缩模型剑",
+        "cost": 25000
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你在施法距离内创造出一个悬浮的灵体剑刃，其在法术持续时间内持续存在。",
+      "幽灵剑出现时，你可以对该剑 5 尺内的一个目标进行一次近战法术攻击。命中时，目标受到{@damage 4d12}+ 你的施法属性调整值点力场伤害。",
+      "在你的后续回合内，你能够以一个{@variantrule 附赠动作|XPHB}将剑移动至多 30 尺至一处可见位置，随后你可以对相同或不同目标再次发动该攻击。"
+    ],
+    "damageInflict": [
+      "force"
+    ],
+    "spellAttack": [
+      "M"
+    ],
+    "miscTags": [
+      "SGT",
+      "UBA"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "法师"
+    ],
+    "display_school": "塑能系",
+    "display_damageInflict": [
+      "力场"
+    ]
+  }
+]

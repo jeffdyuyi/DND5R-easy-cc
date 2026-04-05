@@ -1,0 +1,101 @@
+[
+  {
+    "ENG_name": "Ghost Sight Bow",
+    "name": "幽魂视界之弓",
+    "source": "MonstersOfDrakkenheim",
+    "page": 386,
+    "baseItem": "长弓|XPHB",
+    "type": "R|XPHB",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "weight": 2,
+    "weaponCategory": "军用",
+    "property": [
+      "A|XPHB",
+      "H|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "缓速|XPHB"
+    ],
+    "range": "150/600",
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "bonusWeapon": "+2",
+    "entries": [
+      "这把弓由树精的骸骨精心手作而成，并浸染了吸血鬼们的死灵鲜血。弓弦由报丧妖的毛发制成，而一把强大的邪灵精魄被置于弓柄之中。一旦弓的手作完成，它便会从实体形态褪变为半实体形态。",
+      "你使用这把魔法长弓进行攻击和伤害掷骰时获得+2加值。",
+      "这把弓会生成自身的灵体弹药，造成力场伤害而非穿刺伤害。弹药在命中或未命中目标时消失。",
+      "当你与该武器同调时，你可以使用一个{@variantrule 附赠动作|XPHB}来观察以太位面并看见所有{@condition 隐形}的生物和物件，直到你的回合结束。此外，你可以看穿60尺内所有的墙壁和固体物件，直到你的回合结束。在此期间，从该弓射出的弹药会穿过固体物件，并且你可以用远程攻击瞄准60尺内的敌人，即使他们有全身掩护。只有在你回合内没有移动时才能使用该{@variantrule 附赠动作|XPHB}。使用该{@variantrule 附赠动作|XPHB}后，你的{@variantrule 速度|XPHB}变为0，直到你的回合结束。",
+      {
+        "ENG_name": "Crafting",
+        "name": "手作",
+        "type": "entries",
+        "entries": [
+          "制作幽魂视界之弓需要一个极珍稀工坊和以下极珍稀成分：",
+          {
+            "type": "list",
+            "items": [
+              {
+                "ENG_name": "[Animus]",
+                "name": "[精魄]",
+                "type": "item",
+                "entries": [
+                  "邪灵的亡灵精魄"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Bones]",
+                "name": "[骨头]",
+                "type": "item",
+                "entries": [
+                  "树精的骷髅"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Dust]",
+                "name": "[粉尘]",
+                "type": "item",
+                "entries": [
+                  "亡灵粉尘"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Fluid]",
+                "name": "[流体]",
+                "type": "item",
+                "entries": [
+                  "灵质"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Fluid]",
+                "name": "[流体]",
+                "type": "item",
+                "entries": [
+                  "亡灵怪物鲜血"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Hair]",
+                "name": "[毛发]",
+                "type": "item",
+                "entries": [
+                  "报丧妖的毛发"
+                ],
+                "nameDot": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "ammoType": "箭|XPHB",
+    "hasFluffImages": true
+  }
+]

@@ -1,0 +1,294 @@
+{
+  "ENG_name": "Oath of the River",
+  "name": "川流之誓",
+  "shortName": "河流",
+  "source": "ObojimaTallGrass",
+  "className": "圣武士",
+  "classSource": "PHB",
+  "page": 142,
+  "additionalSpells": [
+    {
+      "prepared": {
+        "3": [
+          "祝福术",
+          "覆潮武器|ObojimaTallGrass"
+        ],
+        "5": [
+          "寻获坐骑",
+          "次等复原术"
+        ],
+        "9": [
+          "水下呼吸",
+          "水上行走"
+        ],
+        "13": [
+          "操控水体",
+          "行动自如"
+        ],
+        "17": [
+          "群体疗伤术",
+          "潜渡术|ObojimaTallGrass"
+        ]
+      }
+    }
+  ],
+  "subclassSpells": [
+    "祝福术",
+    "覆潮武器|ObojimaTallGrass",
+    "操控水体",
+    "水下呼吸",
+    "群体疗伤术",
+    "次等复原术",
+    "寻获坐骑",
+    "行动自如",
+    "潜渡术|ObojimaTallGrass",
+    "水上行走"
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "Oath of the River",
+      "name": "川流之誓",
+      "source": "ObojimaTallGrass",
+      "page": 142,
+      "className": "圣武士",
+      "classSource": "PHB",
+      "subclassShortName": "河流",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        {
+          "ENG_name": "Religious Archetypes",
+          "name": "宗教原型",
+          "type": "inset",
+          "entries": [
+            "在胧忆岛，没有任何形式的神明，这意味着像牧师和圣武士这样的角色必须从其他来源汲取他们的法力。或者，这些英雄角色从他们对理想的奉献以及来自一个将生命奉献给信仰的人的自然魔法中获得力量。"
+          ]
+        },
+        "那些投身于川流之誓的人，在变化的水流和栖息其中的伟大生物中找到了神导术。这些多样的个体以蓝色水池的宁静水流和倾泻于巨大瀑布上的急流冲击为榜样，塑造他们的生活和所遵循的教义，总是努力在可能的情况下绕过阻碍，但在别无选择时准备摧毁它们。如同河流流动和弯曲，它在流向海洋的旅途中寻求最少抵抗术的路径。就像河流一样，宣誓此誓言的圣武士保持适应性强但在自己的道路上坚定不移。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "川流之信条|圣武士|PHB|河流|ObojimaTallGrass|3|ObojimaTallGrass"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "圣誓法术|圣武士|PHB|河流|ObojimaTallGrass|3|ObojimaTallGrass"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "引导神力|圣武士|PHB|河流|ObojimaTallGrass|3|ObojimaTallGrass"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Channel Divinity",
+      "name": "引导神力",
+      "source": "ObojimaTallGrass",
+      "page": 142,
+      "className": "圣武士",
+      "classSource": "PHB",
+      "subclassShortName": "河流",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "在第3级选择本誓言时，你会获得以下两种引导神力选项。",
+        {
+          "ENG_name": "Rushing Rapids",
+          "name": "急流冲击",
+          "type": "entries",
+          "entries": [
+            "以一个动作，你可以使一股强力波涛以你为中心向外爆发，形成一个20尺半径的区域。区域内你选择的所有大型或更小的生物必须成功通过一次力量豁免检定，否则被推离5尺。"
+          ]
+        },
+        {
+          "ENG_name": "Blessed Pool",
+          "name": "祝福之池",
+          "type": "entries",
+          "entries": [
+            "作为一个附赠动作，你轻声说出英勇的话语来鼓励你的盟友并治疗它们。选择你能看见的30尺内数量不超过你魅力调整值两倍（至少2个）的生物。每个生物恢复{@dice 2d6}点生命值。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Oath Spells",
+      "name": "圣誓法术",
+      "source": "ObojimaTallGrass",
+      "page": 142,
+      "className": "圣武士",
+      "classSource": "PHB",
+      "subclassShortName": "河流",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "你会获得以下对应级别的圣誓法术。",
+        {
+          "type": "table",
+          "colLabels": [
+            "圣武士等级",
+            "法术"
+          ],
+          "colStyles": [
+            "col-3 text-center",
+            "col-9 text-left"
+          ],
+          "rows": [
+            [
+              "3rd",
+              "{@spell 祝福术}, {@spell 覆潮武器|ObojimaTallGrass}"
+            ],
+            [
+              "5th",
+              "{@spell 寻获坐骑}, {@spell 次等复原术}"
+            ],
+            [
+              "9th",
+              "{@spell 水下呼吸}, {@spell 水上行走}"
+            ],
+            [
+              "13th",
+              "{@spell 操控水体}, {@spell 行动自如}"
+            ],
+            [
+              "17th",
+              "{@spell 群体疗伤术}, {@spell 潜渡术|ObojimaTallGrass}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Tenets of the River",
+      "name": "川流之信条",
+      "source": "ObojimaTallGrass",
+      "page": 142,
+      "className": "圣武士",
+      "classSource": "PHB",
+      "subclassShortName": "河流",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "川流之信条的内容因圣武士而异，但它们都围绕着拥抱水流般的流动性和适应性。坚守这些信条的圣武士必须理解何时通过暴力伸张正义，何时通过理解和宽恕来伸张正义。这些信条的核心原则是：",
+        {
+          "ENG_name": "The River Flows On",
+          "name": "川流不息",
+          "type": "entries",
+          "entries": [
+            "宽恕可以像任何刀刃一样锋利。"
+          ]
+        },
+        {
+          "ENG_name": "The River Quenches or Drowns",
+          "name": "水断沉浮",
+          "type": "entries",
+          "entries": [
+            "审判只留给那些真正值得的人。"
+          ]
+        },
+        {
+          "ENG_name": "The River Rages",
+          "name": "激流勇进",
+          "type": "entries",
+          "entries": [
+            "如果我必须战斗，我将以我所有的激情和力量作战。"
+          ]
+        },
+        {
+          "ENG_name": "The River Seeks the Sea...Always",
+          "name": "河流终将汇入海洋...始终如一",
+          "type": "entries",
+          "entries": [
+            "我不会放弃我的责任，尤其是当他人依赖我时。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Aura of the River",
+      "name": "川流灵光",
+      "source": "ObojimaTallGrass",
+      "page": 143,
+      "className": "圣武士",
+      "classSource": "PHB",
+      "subclassShortName": "河流",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 7,
+      "header": 2,
+      "entries": [
+        "从7环开始，你散发出一道光环，使你周围的区域感觉如同涉入水中一般，减缓敌人靠近的速度。你周围10尺范围内的区域对其他生物被视为{@quickref 困难地形||3}。你可以指定任意数量你能看见的生物不受其影响（无需动作）。",
+        "此外，你在回合内第一次用近战攻击命中一个大型或更小的生物时，可以使用你的光环将目标移动最多10尺至一个你选择的未占据空间。",
+        "在18级时，你周围30尺（而非10尺）的区域对其他生物被视为{@quickref 困难地形||3}。"
+      ]
+    },
+    {
+      "ENG_name": "Shielding Spirit",
+      "name": "护卫之灵",
+      "source": "ObojimaTallGrass",
+      "page": 143,
+      "className": "圣武士",
+      "classSource": "PHB",
+      "subclassShortName": "河流",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 15,
+      "header": 2,
+      "entries": [
+        "从15级开始，每当你进行敏捷豁免检定时，你可以使用你的反应来将你从该效应中受到的伤害减半。当你这样做时，你还可以消耗一个法术位来将此增益延伸给附近的盟友。选择一个数值的生物，这些生物在你10尺范围内，数值等于所消耗法术位的等级；对这些生物中的每一个，伤害也会减半。"
+      ]
+    },
+    {
+      "ENG_name": "Form of the River",
+      "name": "身化长川",
+      "source": "ObojimaTallGrass",
+      "page": 143,
+      "className": "圣武士",
+      "classSource": "PHB",
+      "subclassShortName": "河流",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 20,
+      "header": 2,
+      "entries": [
+        "从20级开始，你可以显现河流精魄的强大形象环绕你的身体。以一个附赠动作，你获得以下增益效果，持续1分钟：",
+        {
+          "type": "list",
+          "items": [
+            "你获得60尺的游泳速度，并且你的步行速度增加15尺。",
+            "你在所有豁免检定上具有优势。",
+            "每当你成功用你的光环移动一个生物时，你可以选择对其造成{@damage 2d8}钝击伤害。"
+          ]
+        },
+        "一旦你使用了这个附赠动作，你在完成一次长休之前你都不能再次使用它。你也可以消耗一个5环法术位以再次使用它。"
+      ],
+      "foundrySystem": {
+        "activation": {
+          "type": "bonus"
+        },
+        "uses": {
+          "recovery": [
+            {
+              "period": "lr",
+              "type": "recoverAll"
+            }
+          ],
+          "max": "1"
+        }
+      }
+    }
+  ],
+  "fluff": {
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Subclasses/oath-of-the-river.webp"
+        },
+        "credit": "Alexander Cloos",
+        "width": 2748,
+        "height": 2748
+      }
+    ]
+  }
+}

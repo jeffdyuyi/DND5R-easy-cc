@@ -1,0 +1,169 @@
+{
+  "itemProperty": [
+    {
+      "ENG_name": "Armor-Piercing",
+      "name": "护甲-穿刺",
+      "abbreviation": "AP",
+      "source": "GrimHollowPG24",
+      "page": 122,
+      "entries": [
+        {
+          "ENG_name": "Armor-Piercing",
+          "name": "护甲-穿刺",
+          "type": "entries",
+          "entries": [
+            "护甲-穿刺武器是一种设计用来穿透护甲或厚表皮的近战武器。当你使用护甲-穿刺武器进行攻击检定时，若你的目标穿着护甲或具有18或更高的{@variantrule 护甲等级|XPHB}，则你在攻击检定中获得+1附赠动作。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Blackpowder",
+      "name": "黑火药",
+      "abbreviation": "BP",
+      "source": "GrimHollowPG24",
+      "page": 123,
+      "entries": [
+        {
+          "ENG_name": "Blackpowder",
+          "name": "黑火药",
+          "type": "entries",
+          "entries": [
+            "黑火药武器发射出震耳欲聋的弹丸，以致命力场撕裂护甲。当发射时，黑火药武器会发出300尺外都能听到的震耳响声。暴露在大雨中、浸没在水中或类似被水浸透的黑火药武器，需要干燥1小时后才能再次发射。这些武器使用纸张子弹作为弹药。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Cumbersome",
+      "name": "笨重",
+      "abbreviation": "CS",
+      "source": "GrimHollowPG24",
+      "page": 123,
+      "entries": [
+        {
+          "ENG_name": "Cumbersome",
+          "name": "笨重",
+          "type": "entries",
+          "entries": [
+            "笨重武器难以挥舞，但对于足够强壮的人来说是有效的远程工具。当使用笨重武器发动攻击时，你必须使用你的力量调整值进行攻击和伤害掷骰。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Double",
+      "name": "双倍",
+      "abbreviation": "D",
+      "source": "GrimHollowPG24",
+      "page": 123,
+      "entries": [
+        {
+          "ENG_name": "Double",
+          "name": "双倍",
+          "type": "entries",
+          "entries": [
+            "双倍武器在双武器战斗时视为两把轻型武器，每只手各持一把。如果双倍武器具有{@itemProperty R|XPHB|触及}词条，你每回合只能使用其中一个词条。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Damage",
+      "name": "伤害",
+      "abbreviation": "Dam",
+      "source": "GrimHollowPG24",
+      "page": 123,
+      "template": "伤害（{{item.customProperties.伤害}}）",
+      "entries": [
+        {
+          "ENG_name": "Damage",
+          "name": "伤害",
+          "type": "entries",
+          "entries": [
+            "一个伤害属性的武器可以造成不同类型的伤害。当你用此武器命中攻击时，选择一项允许的伤害类型。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Hafted",
+      "name": "长柄",
+      "abbreviation": "Haft",
+      "source": "GrimHollowPG24",
+      "page": 123,
+      "entries": [
+        {
+          "ENG_name": "Hafted",
+          "name": "长柄",
+          "type": "entries",
+          "entries": [
+            "长柄武器的柄可以很好地作为副手攻击使用。在你使用{@action 攻击|XPHB}动作以长柄武器攻击后，你可以使用一个{@variantrule 附赠动作|XPHB}以柄发动一次近战攻击。该柄造成{@damage 1d6}钝击伤害，并且你将属性调整值添加到伤害上。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Magazine",
+      "name": "杂志",
+      "abbreviation": "Mag",
+      "source": "GrimHollowPG24",
+      "page": 123,
+      "template": "杂志（{{item.customProperties.Magazine}}）",
+      "entries": [
+        {
+          "ENG_name": "Magazine",
+          "name": "杂志",
+          "type": "entries",
+          "entries": [
+            "具有杂志属性的武器还具有一个数值和一个弹药类型。该武器持有该数量和类型的弹药，你可以在需要重新装填武器之前消耗它们。作为一个{@variantrule 附赠动作|XPHB}，你可以移除一个{@item 杂志|GrimHollowPG24}，然后用一个新的{@item 杂志|GrimHollowPG24}重新装填。一个{@item 杂志|GrimHollowPG24}武器附带两个空杂志，包含在武器的成本和重量中。为杂志武器额外购买一个空杂志需要花费25GP。为一个空杂志装填弹药需要1分钟。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Momentum",
+      "name": "动量",
+      "abbreviation": "Mom",
+      "source": "GrimHollowPG24",
+      "page": 123,
+      "template": "动量（{{item.customProperties.Momentum}}）",
+      "entries": [
+        {
+          "ENG_name": "Momentum",
+          "name": "动量",
+          "type": "entries",
+          "entries": [
+            "动量武器允许你在迅捷移动中发动毁灭性攻击。当你在同一回合内沿直线移动20尺或更多后使用动量武器命中时，将伤害骰升级为该武器的动量骰价值。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Repeater",
+      "name": "连发弩",
+      "abbreviation": "Rep",
+      "source": "GrimHollowPG24",
+      "page": 123,
+      "entries": [
+        {
+          "ENG_name": "Repeater",
+          "name": "连发弩",
+          "type": "entries",
+          "entries": [
+            "连发弩武器可以快速连续发射弹药，使用多个木桶或快速装填机制。当你使用连发弩武器进行{@action 攻击|XPHB}动作时，如果你有诸如额外攻击等特性允许你在该动作中攻击多次，你可以射击多次。在进行{@action 攻击|XPHB}动作后，你可以使用一个{@variantrule 附赠动作|XPHB}来用同一武器攻击一次。除非该调整值为负，否则你不会将你的属性调整值添加到{@variantrule 附赠动作|XPHB}的攻击上。"
+          ]
+        }
+      ]
+    }
+  ],
+  "itemType": [
+    {
+      "ENG_name": "Advanced Equipment",
+      "name": "高级装备",
+      "abbreviation": "AdvEq",
+      "source": "GrimHollowPG24",
+      "page": 126
+    }
+  ]
+}

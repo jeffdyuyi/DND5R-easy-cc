@@ -1,0 +1,75 @@
+[
+  {
+    "ENG_name": "Icon of Ravenloft",
+    "name": "鸦阁圣像",
+    "source": "CoS",
+    "page": 222,
+    "rarity": "legendary",
+    "reqAttune": "由一位善良阵营的生物",
+    "reqAttuneTags": [
+      {
+        "alignment": [
+          "G"
+        ]
+      }
+    ],
+    "wondrous": true,
+    "weight": 10,
+    "entries": [
+      "鸦阁圣像是一尊的12 寸高的小雕像，由最纯净的银子铸成，重10 磅。它刻画出一位跪着祈祷的牧师。",
+      "这尊圣像是施特拉德家族的老朋友大祭司西里尔·罗姆里奇Ciril Romulich 赠给施特拉德、用来给城堡和城堡内的圣堂祝圣的。",
+      "生物在圣像30 尺范围内时受{@spell 防护善恶}的效果加持，用以对抗邪魔与亡灵。一名生物只有与圣像同调后才能使用圣像的其他属性。",
+      {
+        "ENG_name": "Augury",
+        "name": "卜筮术",
+        "type": "entries",
+        "entries": [
+          "以一个行动，你能使用圣象释放一次{@spell 卜筮术}，无需花费任何材料。一旦使用，这个属性直到下一个黎明都不能再被使用了。"
+        ]
+      },
+      {
+        "ENG_name": "Bane of the Undead",
+        "name": "亡灵之祸",
+        "type": "entries",
+        "entries": [
+          "在使用\"驱散亡灵Turn Undead\"或\"驱散不洁Turn the Unholy\"特性时，你可以将这尊圣像作为圣徽使用，若如此，则该豁免DC+2。"
+        ]
+      },
+      {
+        "ENG_name": "Cure Wounds",
+        "name": "疗伤术",
+        "type": "entries",
+        "entries": [
+          "持有该圣像时，你可以以一个行动，治疗一个30 尺内的你所能看见的生物。目标恢复{@dice 3d8 + 3}点生命值，亡灵，构装生物，及恶魔除外。一旦使用，这个属性直到下一个黎明都不能再被使用了。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "will": [
+        "防护善恶"
+      ],
+      "daily": {
+        "1e": [
+          "卜筮术"
+        ]
+      }
+    },
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 200000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/CoS/Icon of Ravenloft.webp"
+          },
+          "width": 601,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

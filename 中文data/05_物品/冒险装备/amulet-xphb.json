@@ -1,0 +1,22 @@
+[
+  {
+    "name": "护符",
+    "ENG_name": "Amulet",
+    "source": "XPHB",
+    "page": 226,
+    "type": "SCF|XPHB",
+    "rarity": "none",
+    "weight": 1,
+    "value": 500,
+    "entries": [
+      "为了让护符成为一个有效的圣徽，它必须被佩戴或手持。"
+    ],
+    "basicRules2024": true,
+    "group": [
+      "圣徽"
+    ],
+    "scfType": "holy",
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

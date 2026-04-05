@@ -1,0 +1,13 @@
+{
+  "ENG_name": "Common",
+  "name": "通用语",
+  "source": "PSI",
+  "page": 9,
+  "typicalSpeakers": [
+    "{@race 人类 (依尼翠)|PSI|人类}",
+    "教会成员",
+    "{@creature 吸血鬼新生儿|PSI|吸血鬼们}",
+    "{@creature 狼人（克拉伦部落）|PSI|狼人}",
+    "{@creature 游魂|PSI|游魂}"
+  ]
+}

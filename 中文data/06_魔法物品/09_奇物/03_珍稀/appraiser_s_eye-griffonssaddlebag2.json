@@ -1,0 +1,43 @@
+[
+  {
+    "ENG_name": "Appraiser's Eye",
+    "name": "评鉴师之眼",
+    "source": "GriffonsSaddlebag2",
+    "page": 36,
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": "被一个缺失一颗眼睛的生物",
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "这个金质球体的尺寸与一只眼球相仿，上面镶嵌着由紫色宝石制成的虹膜。其重量轻到可忽略不计。此球具有3充能，并在每日黎明时重获{@dice 1d3}已消耗的充能。即使你未与它进行同调，你也可以如常使用它（及其充能）来实现其如下词条：",
+      "在你手持着此义眼期间，你可以用一个动作并消耗其1充能，来施展此球中的{@spell 鉴定术|PHB}鉴定术。或者，你也可以将此义眼用作施展{@spell 通晓传奇|PHB}通晓传奇所需的材料成分。若如此做，此球只有累加的{@chance 10|10%}概率会被此法术消耗。",
+      "在你与此球同调期间，只要它位于你的眼窝中，它便能像正常的眼睛一样工作，而且你为判断物品价值而进行的智力检定以及依赖视觉的感知（{@skill 察觉}）检定都具有优势。此外，如果你在与此球同调后期间施展{@spell 通晓传奇|PHB}，并将此球作为法术的材料成分，则此球将被法术消耗的那{@chance 10|10%}概率不会累加，而且如果球体即将被此法术消耗，它将不会因此而被消耗或被摧毁，而是改为失去这一属性，不能再作为该法术的成分使用。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "鉴定术"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表 G2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Appraisers-Eye.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

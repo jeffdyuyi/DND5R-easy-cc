@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Wind and Whirl",
+    "name": "旋与风",
+    "source": "GriffonsSaddlebag2",
+    "page": 190,
+    "baseItem": "弯刀|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "weight": 3,
+    "weaponCategory": "军用",
+    "property": [
+      "F",
+      "L",
+      "T"
+    ],
+    "range": "20/60",
+    "dmg1": "1d6",
+    "dmgType": "S",
+    "bonusWeapon": "+1",
+    "entries": [
+      "这对弯刀是在气之位面中锻造而成的，并且能轻易地协同割穿风。同调其中一把弯刀会自动同调这两把弯刀，并且视为只同调了一件物品。",
+      "你使用这对魔法武器发动的攻击和伤害掷骰具有 +1 加值。这对武器具有投掷词条，其常规射程为20尺，最大射程为60尺。在你使用其中一把弯刀发动远程攻击后，它会立即飞回你的手上。此外，当你使用全部两把弯刀进行双持武器战斗时，你可以将你的属性调整值加到第二次攻击的伤害中。",
+      "你可以用一个动作说出弯刀的命令语，将两把刀都投掷向60尺范围内你能看到的一点。两把武器会疯狂旋转，并以该点为中心，骤然旋转出一股半径15尺，高30尺的柱形旋风。位于该区域内的生物必须进行一次DC 15的力量豁免。若豁免失败，则目标受到{@damage 6d6}钝击伤害，并沿一个随机方向，在远离该点20尺的位置受击{@condition 倒地}。若被丢出的目标撞到了一个物件（例如墙壁或地板），则目标每被丢出10尺便受到{@damage 1d6}钝击伤害。若目标撞到了另一个生物，则被撞到的生物必须成功通过一次DC 15的敏捷豁免，否则将承受相同的伤害并受击{@condition 倒地}。若豁免成功，则目标受到的伤害减半，且不会被旋风扔出或受击{@condition 倒地}。弯刀会在制造此效应后立即飞回你的手中。双刀此特性一经使用，则其直到下一个黎明前都无法再次使用。"
+    ],
+    "lootTables": [
+      "魔法物品表 H1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Wind-And-Whirl.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

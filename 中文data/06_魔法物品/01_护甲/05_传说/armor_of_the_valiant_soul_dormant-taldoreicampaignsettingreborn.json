@@ -1,0 +1,42 @@
+[
+  {
+    "ENG_name": "Armor of the Valiant Soul (Dormant)",
+    "name": "坚定者之胄（休眠）",
+    "source": "TalDoreiCampaignSettingReborn",
+    "page": 202,
+    "baseItem": "鳞甲|PHB",
+    "type": "MA",
+    "immune": [
+      "强酸"
+    ],
+    "rarity": "legendary",
+    "reqAttune": true,
+    "weight": 45,
+    "property": [
+      "Vst|EGW"
+    ],
+    "ac": 14,
+    "bonusAc": "+1",
+    "recharge": "长休",
+    "stealth": true,
+    "entries": [
+      "这件由翡翠和黑龙鳞片锻造而成的古董护甲曾由{@book 安卡瑞尔|TalDoreiCampaignSettingReborn|3|马凯特}的J'mon Sa Ord所穿戴。",
+      {
+        "ENG_name": "Dormant",
+        "name": "休眠",
+        "type": "entries",
+        "entries": [
+          "当勇者之魂护甲处于休眠状态时，穿戴它时你获得+1的护甲等级加成。同时，当你与这件护甲共鸣时，你可以施放{@spell 命令术}法术（豁免{@dc 14}）。一旦使用了这个特性，直到你完成一次{@quickref 休息|PHB|2|0|长休}之前都不能再次使用。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "命令术"
+        ]
+      }
+    },
+    "hasFluffImages": true
+  }
+]

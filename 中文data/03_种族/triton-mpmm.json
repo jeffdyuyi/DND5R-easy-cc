@@ -1,0 +1,132 @@
+[
+  {
+    "name": "梭螺鱼人",
+    "ENG_name": "Triton",
+    "source": "MPMM",
+    "page": 35,
+    "size": [
+      "M"
+    ],
+    "speed": {
+      "walk": 30,
+      "swim": true
+    },
+    "darkvision": 60,
+    "resist": [
+      "寒冷"
+    ],
+    "traitTags": [
+      "水陆两栖"
+    ],
+    "additionalSpells": [
+      {
+        "innate": {
+          "1": {
+            "daily": {
+              "1": [
+                "云雾术"
+              ]
+            }
+          },
+          "3": {
+            "daily": {
+              "1": [
+                "造风术"
+              ]
+            }
+          },
+          "5": {
+            "daily": {
+              "1": [
+                "水上行走"
+              ]
+            }
+          }
+        },
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Speed",
+        "name": "速度",
+        "type": "entries",
+        "entries": [
+          "你的步行速度为30尺，同时你拥有等同于你步行速度的游泳速度。"
+        ]
+      },
+      {
+        "ENG_name": "Amphibious",
+        "type": "entries",
+        "name": "水陆两栖",
+        "entries": [
+          "你可以在空气和水中呼吸。"
+        ]
+      },
+      {
+        "ENG_name": "Control Air and Water",
+        "name": "控风操水",
+        "type": "entries",
+        "entries": [
+          "你可以用这个特质施放{@spell 云雾术}。从3级开始，你可以用这个特质施放{@spell 造风术}法术。从5级开始，你也可以用它施放{@spell 水上行走}法术。一旦你使用该特质施放了这些法术中的任何一个，直到你完成一次长休前，你都不能再次使用该特质施放那个法术。你也可以使用你拥有的相应环阶的法术位来施放这些法术。",
+          "当你使用此特质施展法术时，智力，感知或魅力是你的施法属性（当你选择该种族时进行决定）。"
+        ]
+      },
+      {
+        "ENG_name": "Darkvision",
+        "name": "黑暗视觉",
+        "type": "entries",
+        "entries": [
+          "在微光光照下，你身边60尺内可以视为等同于明亮光照。而在黑暗中，该范围内可视为等同于微光光照。你无法在黑暗中分辨颜色，只能看到有灰度的黑白画面。"
+        ]
+      },
+      {
+        "ENG_name": "Emissary of the Sea",
+        "name": "海之使者",
+        "type": "entries",
+        "entries": [
+          "你可以向任何拥有游泳速度的野兽、元素或怪兽传达简单的想法。它们能够理解你的话的意思，虽然你没有特殊的能力来明白它们的回应。"
+        ]
+      },
+      {
+        "ENG_name": "Guardian of the Depths",
+        "name": "深渊守护者",
+        "type": "entries",
+        "entries": [
+          "适应了寒冷海洋深处的环境，你具有寒冷伤害的抗性。"
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "梭螺鱼人起源自水元素位面，在数个世纪以前，许多他们中的许多为应对邪恶元素生物日益增长的威胁而进入了物质位面。这些梭螺鱼人们遍布诸界的海洋，保护海面之上免遭来自深海的威胁。随着时间推移，梭螺鱼人们已经将其看护的范围从海底延伸至海洋的表面。",
+        "梭螺鱼人们有着带蹾的手足，在小腿上生着鱼鳍，而他们的肤色偏向于蓝色或绿色。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/MPMM/Triton.webp"
+          },
+          "credit": "Eric Belisle",
+          "width": 514,
+          "height": 850
+        }
+      ]
+    },
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "lineage": "VRGR",
+    "soundClip": {
+      "type": "internal",
+      "path": "races/triton.mp3"
+    }
+  }
+]

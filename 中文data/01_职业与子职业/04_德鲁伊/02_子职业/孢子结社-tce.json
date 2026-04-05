@@ -1,0 +1,176 @@
+{
+  "name": "孢子结社",
+  "shortName": "孢子",
+  "ENG_name": "Circle of Spores",
+  "source": "TCE",
+  "className": "德鲁伊",
+  "classSource": "PHB",
+  "page": 36,
+  "edition": "classic",
+  "subclassFeatures": [
+    "孢子结社|德鲁伊||孢子|TCE|2",
+    "真菌感染|德鲁伊||孢子|TCE|6",
+    "扩散孢子|德鲁伊||孢子|TCE|10",
+    "真菌之躯|德鲁伊||孢子|TCE|14"
+  ],
+  "features": [
+    {
+      "name": "孢子结社",
+      "ENG_name": "Circle of Spores",
+      "source": "TCE",
+      "page": 36,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "孢子",
+      "subclassSource": "TCE",
+      "level": 2,
+      "entries": [
+        "属于孢子结社的德鲁伊发现在腐烂中存在着美。他们能在霉菌和其他真菌中看到生命，并相信腐烂是生命循环中必要的一部分，必须死而后生。这些德鲁伊相信生死只是轮回，这种转变是很自然的。他们对亡灵没有敌意，只要对方还在生命循环之中。此外，他们认为亡灵可以作为生命的肥料，让新的生命茁壮成长。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "结社法术|德鲁伊||孢子|TCE|2"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "孢子光环|德鲁伊||孢子|TCE|2"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "共生实体|德鲁伊||孢子|TCE|2"
+        }
+      ]
+    },
+    {
+      "name": "结社法术",
+      "ENG_name": "Circle Spells",
+      "source": "TCE",
+      "page": 37,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "孢子",
+      "subclassSource": "TCE",
+      "level": 2,
+      "entries": [
+        "你与生死循环的联系让你能够施展特定的法术。在第2级、第3级、第5级、第7级和第9级时获得法术。",
+        "一旦你获得了某结社法术，你就始终准备着该法术，且该法术不计入你每日准备法术的数量。如果你获得的法术不在德鲁伊法术列表上，该法术对你而言依然视作德鲁伊法术。",
+        {
+          "type": "table",
+          "caption": "孢子结社法术",
+          "colLabels": [
+            "德鲁伊等级",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "2nd",
+              "{@spell 冻寒之触|PHB}"
+            ],
+            [
+              "3rd",
+              "{@spell 盲目术/耳聋术|PHB}, {@spell 虚假生命|PHB}"
+            ],
+            [
+              "5th",
+              "{@spell 活化死尸|PHB}, {@spell 气态形体|PHB}"
+            ],
+            [
+              "7th",
+              "{@spell 枯萎术|PHB}, {@spell 困惑术|PHB}"
+            ],
+            [
+              "9th",
+              "{@spell 云雾术|PHB}, {@spell 疫病术|PHB}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "孢子光环",
+      "ENG_name": "Halo of Spores",
+      "source": "TCE",
+      "page": 37,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "孢子",
+      "subclassSource": "TCE",
+      "level": 2,
+      "entries": [
+        "2级起，你被隐形的、致命的孢子所环绕，只要你不 {@condition 失能} 它们就一直存在。当一个生物进入你 10 尺内的空间或在该区域开始其回合时，你可以使用反应对该生物造成 {@damage 1d4} 点毒素伤害，除非该生物成功通过一次对抗你法术豁免DC的体质豁免。",
+        "此伤害随着你的等级提升：6 级（{@damage 1d6}）、10 级（{@damage 1d8}）、14 级（{@damage 1d10}）。"
+      ]
+    },
+    {
+      "name": "共生实体",
+      "ENG_name": "Symbiotic Entity",
+      "source": "TCE",
+      "page": 37,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "孢子",
+      "subclassSource": "TCE",
+      "level": 2,
+      "entries": [
+        "2级起，你获得了将荒野变形的使用次数注入孢子的能力。以一个动作，你可以消耗一次荒野变形使用次数唤醒孢子，而非变身为野兽。你获得每德鲁伊等级 4 点的临时生命值。当此特性激活时，你获得以下增益：",
+        {
+          "type": "list",
+          "items": [
+            "当你的孢子光环造成伤害时，掷两倍的伤害骰。",
+            "你的近战武器攻击对命中的任何目标额外造成 {@damage 1d6} 毒素伤害。"
+          ]
+        },
+        "这些增益持续 10 分钟，直到你由于失去所有临时生命值而失去这些属性，或直到你再次使用荒野变形。"
+      ]
+    },
+    {
+      "name": "真菌感染",
+      "ENG_name": "Fungal Infestation",
+      "source": "TCE",
+      "page": 37,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "孢子",
+      "subclassSource": "TCE",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "6级起，你的孢子获得了感染并启动尸体的能力。如果在你 10 尺内的一个小型或中型野兽或类人生物死去，你可以使用反应将其启动。该生物以 1 点生命值站起，成为一个僵尸。它在你的回合之后立即开始其回合，只能进行攻击动作，且在 1 小时后崩解死亡。",
+        "你可以使用此特性的次数等于你的感知调整值，当你完成一次长休时重获所有使用次数。"
+      ]
+    },
+    {
+      "name": "扩散孢子",
+      "ENG_name": "Spreading Spores",
+      "source": "TCE",
+      "page": 37,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "孢子",
+      "subclassSource": "TCE",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "10级起，当你处于共生实体状态时，你可以向 30 尺内的一处地点喷射孢子，充满 10 尺宽的立方体区域。任何在其中开始回合或进入其中的生物都会受到孢子光环的伤害。此孢子持续 1 分钟，如果你再度喷射或取消共生实体，则效应结束。"
+      ]
+    },
+    {
+      "name": "真菌之躯",
+      "ENG_name": "Fungal Body",
+      "source": "TCE",
+      "page": 38,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "孢子",
+      "subclassSource": "TCE",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "14级起，你体内的真菌改变了你，你免疫 {@condition 盲目}、{@condition 耳聋}、{@condition 恐惧}、和 {@condition 中毒} 状态。此外，除非你处于 {@condition 失能} 状态，否则任何对你进行的暴击都将由于真菌的缓冲而视作普通命中。"
+      ]
+    }
+  ]
+}

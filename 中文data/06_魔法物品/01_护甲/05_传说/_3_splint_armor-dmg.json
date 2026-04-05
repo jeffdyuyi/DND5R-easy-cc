@@ -1,0 +1,36 @@
+[
+  {
+    "ENG_name": "+3 Splint Armor",
+    "name": "+3 板条甲",
+    "source": "DMG",
+    "page": 152,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "HotB"
+    ],
+    "edition": "one",
+    "type": "HA|XPHB",
+    "rarity": "legendary",
+    "weight": 60,
+    "value": 20000,
+    "ac": 17,
+    "strength": "15",
+    "armor": true,
+    "stealth": true,
+    "hasFluffImages": true,
+    "namePrefix": "+3 ",
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "+3 护甲|XDMG"
+    ],
+    "tier": "主要",
+    "bonusAc": "+3",
+    "entries": [
+      "穿戴这件护甲时，你的AC有{=bonusAc}的加值。"
+    ],
+    "_isVariant": true,
+    "valueReference": 200000
+  }
+]

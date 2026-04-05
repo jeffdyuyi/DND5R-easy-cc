@@ -1,0 +1,17 @@
+[
+  {
+    "name": "放大镜",
+    "ENG_name": "Magnifying Glass",
+    "source": "XPHB",
+    "page": 226,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "value": 10000,
+    "entries": [
+      "使用放大镜时，你为鉴定或检查精密物品所作的任何属性检定都会具有{@variantrule 优势|XPHB}。想要使用放大镜点火，需要一束如同阳光般明亮的强光用于聚焦，还需要用于点燃的火绒，随后需要大约 5 分钟的时间来生火。"
+    ],
+    "basicRules2024": true,
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

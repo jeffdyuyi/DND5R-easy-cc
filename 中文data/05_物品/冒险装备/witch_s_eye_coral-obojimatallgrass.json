@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Witch's Eye Coral",
+    "name": "巫偶之眼珊瑚",
+    "source": "ObojimaTallGrass",
+    "page": 209,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 1|large}|SneakerProMedium}",
+            "{@font {@style 0|large}|SneakerProMedium}",
+            "{@font {@style 10|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "这种珊瑚被大多数胧忆岛渔民视为不祥之兆。有人说每次有人说出诅咒时，就会长出一丛新的巫偶之眼珊瑚。在浅滩的大部分区域经过一些水下搜寻后，可以找到巫偶之眼珊瑚。"
+    ],
+    "lootTables": [
+      "浅滩普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/witchs-eye-coral.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 2146,
+          "height": 2146
+        }
+      ]
+    }
+  }
+]

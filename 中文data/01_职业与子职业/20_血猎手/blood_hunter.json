@@ -1,0 +1,413 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "BloodHunter2024",
+                "abbreviation": "BH2024",
+                "full": "血猎手 2024",
+                "authors": [
+                    "SnowWolf"
+                ],
+                "convertedBy": [
+                    "cloridon"
+                ],
+                "url": "https://homebrewery.naturalcrit.com/share/fcV-yiDorwjY",
+                "version": "1.1",
+                "color": "8A0303"
+            }
+        ],
+        "optionalFeatureTypes": {
+            "BC": "血咒",
+            "CR": "猩红仪式",
+            "MTGN": "诱变剂"
+        },
+        "edition": "one"
+    },
+    "class": [
+        {
+            "ENG_name": "Blood Hunter",
+            "name": "血猎手",
+            "source": "BloodHunter2024",
+            "primaryAbility": [
+                {
+                    "dex": true,
+                    "int": true
+                }
+            ],
+            "hd": {
+                "number": 1,
+                "faces": 10
+            },
+            "proficiency": [
+                "dex",
+                "int"
+            ],
+            "classTableGroups": [
+                {
+                    "colLabels": [
+                        "鲜血秘法骰",
+                        "{@filter 已知血咒|optionalfeatures|Feature Type=血咒}",
+                        "使用鲜血秘法",
+                        "{@filter 已知猩红仪式|optionalfeatures|Feature Type=猩红仪式}"
+                    ],
+                    "rows": [
+                        [
+                            "{@dice 1d6}",
+                            "2",
+                            "2",
+                            "0"
+                        ],
+                        [
+                            "{@dice 1d6}",
+                            "2",
+                            "2",
+                            "1"
+                        ],
+                        [
+                            "{@dice 1d6}",
+                            "2",
+                            "2",
+                            "1"
+                        ],
+                        [
+                            "{@dice 1d6}",
+                            "2",
+                            "2",
+                            "1"
+                        ],
+                        [
+                            "{@dice 1d8}",
+                            "2",
+                            "2",
+                            "1"
+                        ],
+                        [
+                            "{@dice 1d8}",
+                            "3",
+                            "3",
+                            "1"
+                        ],
+                        [
+                            "{@dice 1d8}",
+                            "3",
+                            "3",
+                            "2"
+                        ],
+                        [
+                            "{@dice 1d8}",
+                            "3",
+                            "3",
+                            "2"
+                        ],
+                        [
+                            "{@dice 1d8}",
+                            "3",
+                            "3",
+                            "2"
+                        ],
+                        [
+                            "{@dice 1d8}",
+                            "4",
+                            "3",
+                            "2"
+                        ],
+                        [
+                            "{@dice 1d10}",
+                            "4",
+                            "3",
+                            "2"
+                        ],
+                        [
+                            "{@dice 1d10}",
+                            "4",
+                            "3",
+                            "2"
+                        ],
+                        [
+                            "{@dice 1d10}",
+                            "4",
+                            "4",
+                            "2"
+                        ],
+                        [
+                            "{@dice 1d10}",
+                            "5",
+                            "4",
+                            "3"
+                        ],
+                        [
+                            "{@dice 1d10}",
+                            "5",
+                            "4",
+                            "3"
+                        ],
+                        [
+                            "{@dice 1d10}",
+                            "5",
+                            "4",
+                            "3"
+                        ],
+                        [
+                            "{@dice 1d12}",
+                            "5",
+                            "5",
+                            "3"
+                        ],
+                        [
+                            "{@dice 1d12}",
+                            "6",
+                            "5",
+                            "3"
+                        ],
+                        [
+                            "{@dice 1d12}",
+                            "6",
+                            "5",
+                            "3"
+                        ],
+                        [
+                            "{@dice 1d12}",
+                            "6",
+                            "5",
+                            "3"
+                        ]
+                    ]
+                }
+            ],
+            "startingProficiencies": {
+                "armor": [
+                    "light",
+                    "medium",
+                    "shield"
+                ],
+                "weapons": [
+                    "简易",
+                    "军用"
+                ],
+                "tools": [
+                    "{@item 炼金工具|XPHB}"
+                ],
+                "toolProficiencies": [
+                    {
+                        "alchemist's supplies": true
+                    }
+                ],
+                "skills": [
+                    {
+                        "choose": {
+                            "from": [
+                                "athletics",
+                                "acrobatics",
+                                "arcana",
+                                "history",
+                                "insight",
+                                "investigation",
+                                "religion",
+                                "survival"
+                            ],
+                            "count": 3
+                        }
+                    }
+                ]
+            },
+            "startingEquipment": {
+                "additionalFromBackground": true,
+                "defaultData": [
+                    {
+                        "A": [
+                            {
+                                "item": "鳞甲|xphb"
+                            },
+                            {
+                                "item": "短剑|xphb"
+                            },
+                            {
+                                "item": "轻弩|xphb"
+                            },
+                            {
+                                "item": "弩矢（20支）|xphb"
+                            },
+                            {
+                                "item": "弩矢匣|xphb"
+                            },
+                            {
+                                "item": "炼金工具|xphb"
+                            },
+                            {
+                                "item": "探索套组|xphb"
+                            },
+                            {
+                                "value": 800
+                            }
+                        ],
+                        "B": [
+                            {
+                                "value": 15500
+                            }
+                        ]
+                    }
+                ],
+                "entries": [
+                    "{@i 选择A或B：} (A) {@item 鳞甲|XPHB}、{@item 短剑|XPHB}、{@item 轻弩|XPHB}、{@item 弩矢（20支）|XPHB|20支弩箭}、{@item 弩矢匣|XPHB}、{@item 炼金工具|XPHB}、{@item 探索套组|XPHB}和8 GP；或 (B) 155 GP"
+                ]
+            },
+            "multiclassing": {
+                "proficienciesGained": {
+                    "armor": [
+                        "light"
+                    ],
+                    "weapons": [
+                        "军用"
+                    ],
+                    "tools": [
+                        "{@item 炼金工具|XPHB}"
+                    ],
+                    "toolProficiencies": [
+                        {
+                            "alchemist's supplies": true
+                        }
+                    ],
+                    "skills": [
+                        {
+                            "choose": {
+                                "from": [
+                                    "athletics",
+                                    "acrobatics",
+                                    "arcana",
+                                    "history",
+                                    "insight",
+                                    "investigation",
+                                    "religion",
+                                    "survival"
+                                ],
+                                "count": 1
+                            }
+                        }
+                    ]
+                }
+            },
+            "classFeatures": [
+                "鲜血秘法|血猎手|BloodHunter2024|1",
+                "武器精通|血猎手|BloodHunter2024|1",
+                "猩红仪式|血猎手|BloodHunter2024|2",
+                "战斗风格|血猎手|BloodHunter2024|2",
+                {
+                    "classFeature": "血猎手子职|血猎手|BloodHunter2024|3",
+                    "gainSubclassFeature": true
+                },
+                "属性值提升|血猎手|BloodHunter2024|4",
+                "额外攻击|血猎手|BloodHunter2024|5",
+                "惩戒烙印|血猎手|BloodHunter2024|6",
+                {
+                    "classFeature": "子职特性|血猎手|BloodHunter2024|7",
+                    "gainSubclassFeature": true
+                },
+                "属性值提升|血猎手|BloodHunter2024|8",
+                "阴暗灵卜|血猎手|BloodHunter2024|9",
+                "黑暗增幅|血猎手|BloodHunter2024|10",
+                {
+                    "classFeature": "子职特性|血猎手|BloodHunter2024|11",
+                    "gainSubclassFeature": true
+                },
+                "属性值提升|血猎手|BloodHunter2024|12",
+                "强化惩戒烙印|血猎手|BloodHunter2024|13",
+                "刚毅灵魂|血猎手|BloodHunter2024|14",
+                {
+                    "classFeature": "子职特性|血猎手|BloodHunter2024|15",
+                    "gainSubclassFeature": true
+                },
+                "属性值提升|血猎手|BloodHunter2024|16",
+                "诅咒烙印|血猎手|BloodHunter2024|17",
+                {
+                    "classFeature": "子职特性|血猎手|BloodHunter2024|18",
+                    "gainSubclassFeature": true
+                },
+                "传奇恩惠|血猎手|BloodHunter2024|19",
+                "胸有成竹|血猎手|BloodHunter2024|20"
+            ],
+            "subclassTitle": "血猎手子职",
+            "optionalfeatureProgression": [
+                {
+                    "ENG_name": "Blood Curse",
+                    "name": "血咒",
+                    "featureType": [
+                        "BC"
+                    ],
+                    "progression": [
+                        2,
+                        2,
+                        2,
+                        2,
+                        2,
+                        3,
+                        3,
+                        3,
+                        3,
+                        4,
+                        4,
+                        4,
+                        4,
+                        5,
+                        5,
+                        5,
+                        5,
+                        6,
+                        6,
+                        6
+                    ]
+                },
+                {
+                    "ENG_name": "Crimson Rite",
+                    "name": "猩红仪式",
+                    "featureType": [
+                        "CR"
+                    ],
+                    "progression": {
+                        "2": 1,
+                        "7": 2,
+                        "14": 3
+                    }
+                },
+                {
+                    "ENG_name": "Fighting Style",
+                    "name": "战斗风格",
+                    "featureType": [
+                        "FS"
+                    ],
+                    "progression": {
+                        "2": 1
+                    }
+                },
+                {
+                    "ENG_name": "Epic Boon",
+                    "name": "传奇恩惠",
+                    "featureType": [
+                        "EB"
+                    ],
+                    "progression": {
+                        "19": 1
+                    }
+                }
+            ],
+            "hasFluff": true,
+            "subclasses": [
+                {
+                    "name": "化狼结社",
+                    "source": "BloodHunter2024"
+                },
+                {
+                    "name": "弑灵结社",
+                    "source": "BloodHunter2024"
+                },
+                {
+                    "name": "渎魂结社",
+                    "source": "BloodHunter2024"
+                },
+                {
+                    "name": "突变结社",
+                    "source": "BloodHunter2024"
+                }
+            ]
+        }
+    ]
+}

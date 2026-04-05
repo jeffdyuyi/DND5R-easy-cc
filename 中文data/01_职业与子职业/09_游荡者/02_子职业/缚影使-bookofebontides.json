@@ -1,0 +1,124 @@
+{
+  "ENG_name": "Umbral Binder",
+  "name": "缚影使",
+  "shortName": "缚影使",
+  "source": "BookOfEbonTides",
+  "className": "游荡者",
+  "classSource": "PHB",
+  "additionalSpells": [
+    {
+      "innate": {
+        "13": {
+          "daily": {
+            "1": [
+              "黑暗术"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "Umbral Binder",
+      "name": "缚影使",
+      "source": "BookOfEbonTides",
+      "className": "游荡者",
+      "classSource": "PHB",
+      "subclassShortName": "缚影使",
+      "subclassSource": "BookOfEbonTides",
+      "level": 3,
+      "entries": [
+        "一些游荡者满足于窃取普通的宝藏，但缚影使却掌握着塑造世界的力量。通过这些秘密仪式，这些游荡者学会了将幽影的力量束缚于自身，并利用其法力来增强他们的属性。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "夜之眸|游荡者||缚影使|BookOfEbonTides|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "缚影|游荡者||缚影使|BookOfEbonTides|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Eyes In the Dark",
+      "name": "夜之眸",
+      "source": "BookOfEbonTides",
+      "className": "游荡者",
+      "classSource": "PHB",
+      "subclassShortName": "缚影使",
+      "subclassSource": "BookOfEbonTides",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "当你在3级选择这个原型时，你对幽影原生魔法的体验会影响你的感官。你获得{@sense 黑暗视觉}，范围为120尺。"
+      ]
+    },
+    {
+      "ENG_name": "Shadow Bind",
+      "name": "缚影",
+      "source": "BookOfEbonTides",
+      "className": "游荡者",
+      "classSource": "PHB",
+      "subclassShortName": "缚影使",
+      "subclassSource": "BookOfEbonTides",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "从3级开始，你可以执行一个特殊仪式来虹吸幽影的力量并将其束缚于自身。你可以在长休期间进行此仪式。执行仪式需要在非魔法的黑暗中进行至少1小时的冥想。仪式结束时，你选择以下一项效应，持续24小时或直到你再次执行该仪式：",
+        {
+          "type": "list",
+          "items": [
+            "当你处于微光光照或黑暗中时，作为移动的一部分，你可以传送至多一半速度的距离到一个你能看见且同样处于微光光照或黑暗中的未占据空间。然后你在回合结束前进行的第一次敏捷（{@skill 隐匿}）检定上具有优势。",
+            "当你在微光光照或黑暗术中时，如果你移动至少一半速度，你将获得一个持续的{@book 半身掩护|PHB|9|掩护}增益直到你的下个回合开始：AC和敏捷豁免检定+2附赠动作。",
+            "当你以近战或远程武器攻击命中时，你可以使该攻击额外造成等同于你熟练加值的寒冷伤害。你每回合只能使用此特性一次。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Cloaked Dagger",
+      "name": "无影之锋",
+      "source": "BookOfEbonTides",
+      "className": "游荡者",
+      "classSource": "PHB",
+      "subclassShortName": "缚影使",
+      "subclassSource": "BookOfEbonTides",
+      "level": 9,
+      "header": 2,
+      "entries": [
+        "在9级时，幽影隐藏你的每次打击。你获得使用偷袭的额外方式。如果你在30尺内，处于微光光照或黑暗中，且攻击检定没有劣势，则不需要优势就能对生物使用偷袭。所有其他偷袭规则仍然适用于你。"
+      ]
+    },
+    {
+      "ENG_name": "Black Magic",
+      "name": "黑暗魔法",
+      "source": "BookOfEbonTides",
+      "className": "游荡者",
+      "classSource": "PHB",
+      "subclassShortName": "缚影使",
+      "subclassSource": "BookOfEbonTides",
+      "level": 13,
+      "header": 2,
+      "entries": [
+        "在13级时，你能从与你连接的幽影中汲取更多法力。以一个附赠动作，你可以无需材料成分施放{@spell 黑暗术}。一旦你使用了此特性三次，直到完成一次长休前都无法再次使用。",
+        "此外，当你在微光光照或黑暗术区域内时，你可以使用你的动作变为{@condition 隐形}状态。你将保持隐形直到你进行攻击、施法或处于明亮光照区域内。"
+      ]
+    },
+    {
+      "ENG_name": "Shadow Grasp",
+      "name": "暗影之攫",
+      "source": "BookOfEbonTides",
+      "className": "游荡者",
+      "classSource": "PHB",
+      "subclassShortName": "缚影使",
+      "subclassSource": "BookOfEbonTides",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "在17级时，你可以用幽影缠绕你的敌人。当你对生物造成偷袭伤害时，你可以迫使它们进行一次敏捷豁免检定（DC=8+你的熟练加值+你的敏捷调整值）。如果豁免失败，目标将陷入{@condition 束缚}状态1分钟。被束缚的目标可以在其每回合结束时重复豁免检定，成功则终止效应。",
+        "一旦你使用了此特性，在完成一次短休或长休前你无法再次使用。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+[
+  {
+    "name": "螳螂人",
+    "ENG_name": "Thri-kreen",
+    "source": "AAG",
+    "page": 15,
+    "size": [
+      "S",
+      "M"
+    ],
+    "speed": 30,
+    "darkvision": 60,
+    "traitTags": [
+      "修整强化",
+      "天生护甲"
+    ],
+    "entries": [
+      {
+        "ENG_name": "Creature Type",
+        "name": "生物类型",
+        "type": "entries",
+        "entries": [
+          "你是一个怪兽。"
+        ]
+      },
+      {
+        "ENG_name": "Size",
+        "name": "体型",
+        "type": "entries",
+        "entries": [
+          "你的体型是中型或小型。在你选择该种族时选择体型。"
+        ]
+      },
+      {
+        "ENG_name": "Chameleon Carapace",
+        "name": "变色甲壳",
+        "type": "entries",
+        "entries": [
+          "若你不穿着护甲时，你的甲壳让你的基础护甲等级变为 13+你的敏捷调整值。",
+          "作为动作，你可以改变你甲壳的颜色来与你周边环境的颜色与纹理相匹配，这让你在这些环境中进行{@action 躲藏}时，所进行的敏捷（{@skill 隐匿}）检定具有优势。"
+        ]
+      },
+      {
+        "ENG_name": "Darkvision",
+        "name": "黑暗视觉",
+        "type": "entries",
+        "entries": [
+          "在微光光照下，你身边60尺内可以视为等同于明亮光照。而在黑暗中，该范围内可视为等同于微光光照。你无法在黑暗中分辨颜色，只能看到有灰度的黑白画面。"
+        ]
+      },
+      {
+        "ENG_name": "Secondary Arms",
+        "name": "副臂",
+        "type": "entries",
+        "entries": [
+          "你有两条稍小的副臂位于你的主臂下方。副臂可以操纵一个物件、打开或关闭一扇门或容器、拾起或放下一个微型物件，或挥舞一把具有{@itemProperty L||光亮术}属性的武器。"
+        ]
+      },
+      {
+        "ENG_name": "Sleepless",
+        "name": "无眠",
+        "type": "entries",
+        "entries": [
+          "你不需要睡眠且能在长休期间保持清醒，但你仍然必须避免剧烈活动以获得休息的好处。"
+        ]
+      },
+      {
+        "ENG_name": "Thri-kreen Telepathy",
+        "name": "螳螂人心灵感应",
+        "type": "entries",
+        "entries": [
+          "即使没有魔法的协助，你也不能说出你所知的非螳螂人语言。你使用心灵感应来传达你的想法。你拥有一种魔法能力，可以将你的想法通过心灵传递给你120尺内且愿意的生物。一个被你联系的生物无需与你拥有共通语言就可以理解你的想法，但必须至少能理解一种语言。你与一个生物的心灵感应连接会在以下情况下断裂：你和该生物之间的距离超过120尺，你们两者之一处于{@condition 失能}状态，或你们两者之一心灵上断开连接（无需动作）。"
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "螳螂人拥有昆虫般的特征和两对手臂。他们的身体被保护性的几丁质所包裹。他们可以改变这种甲壳的颜色，以便与他们身边的自然环境融为一体。",
+        "虽然螳螂人不需要睡眠，但他们确实需要非活动时间来恢复精力。在这些期间，他们完全能够意识到周围发生的事情。",
+        "螳螂人通过拍打颚部和挥舞触须来交谈，向其他螳螂人表明它们的想法和感受。其他生物发现这种交流方式难以理解且无法复制。为了与其他生物互动，螳螂人依赖一种心灵感应的形态。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/AAG/Thri-kreen.webp"
+          },
+          "credit": "Irina Nordsol",
+          "width": 1700,
+          "height": 1067
+        }
+      ]
+    },
+    "creatureTypes": [
+      "怪兽"
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "lineage": "VRGR",
+    "soundClip": {
+      "type": "internal",
+      "path": "races/thri-kreen.mp3"
+    }
+  }
+]

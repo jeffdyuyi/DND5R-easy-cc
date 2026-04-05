@@ -1,0 +1,94 @@
+[
+  {
+    "ENG_name": "Captivate Undead",
+    "name": "迷惑亡灵",
+    "source": "CrookedMoon14",
+    "page": 126,
+    "reprintedAs": [
+      "迷惑亡灵|crookedmoon24"
+    ],
+    "level": 1,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一撮骨粉尘"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你夺取一个你在射程内能看见的不死生物的负能量，试图控制它。目标必须进行一次魅力豁免检定。豁免失败时，在持续时间内，目标被你{@condition 魅惑}（忽略对该状态的任何免疫），并且对你友好。豁免成功时，目标在它于你下个回合开始前对你进行的下一次攻击检定中具有劣势。如果你或你的任何盟友对目标造成伤害或强迫它进行豁免检定，该法术结束。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "使用二环或更高法术位施展该法术时，你使用的法术位每比一环高一环，就能多指定一个目标。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "conditionInflict": [
+      "魅惑"
+    ],
+    "savingThrow": [
+      "魅力"
+    ],
+    "miscTags": [
+      "SCT",
+      "SGT"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Spells/Captivate-Undead.webp"
+  }
+]

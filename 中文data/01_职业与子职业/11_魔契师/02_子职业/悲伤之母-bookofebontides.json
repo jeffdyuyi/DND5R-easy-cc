@@ -1,0 +1,173 @@
+{
+  "ENG_name": "Mother of Sorrows",
+  "name": "悲伤之母",
+  "shortName": "悲伤之母",
+  "source": "BookOfEbonTides",
+  "className": "魔契师",
+  "classSource": "PHB",
+  "additionalSpells": [
+    {
+      "expanded": {
+        "s1": [
+          "侦测毒性和疾病",
+          "致伤术"
+        ],
+        "s2": [
+          "衰弱射线",
+          "沉默术"
+        ],
+        "s3": [
+          "臭云术",
+          "吸血鬼之触"
+        ],
+        "s4": [
+          "高等隐形术",
+          "魅影杀手"
+        ],
+        "s5": [
+          "死云术",
+          "疫病术"
+        ]
+      }
+    }
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "Mother of Sorrows",
+      "name": "悲伤之母",
+      "source": "BookOfEbonTides",
+      "className": "魔契师",
+      "classSource": "PHB",
+      "subclassShortName": "悲伤之母",
+      "subclassSource": "BookOfEbonTides",
+      "level": 1,
+      "entries": [
+        "普遍的苦难催生了一个被称为悲伤之母的神秘存在，那些与她事业绑定的魔契师们寻求传播她那充满毒素的复仇。悲伤之母诞生于因瘟疫、疾病和背信弃义而失去孩子的双亲的痛苦之中，她的恩赐赋予魔契师们法力，以报复堆积在她脚下的万千悲伤。",
+        {
+          "ENG_name": "Expanded Spell List",
+          "name": "扩展法术列表",
+          "type": "entries",
+          "entries": [
+            "悲伤之母让你在学习魔契师法术时可以从扩展法术列表中选择。以下法术将被添加到你的魔契师法术列表中。",
+            {
+              "type": "table",
+              "caption": "扩展法术列表",
+              "colLabels": [
+                "法术环阶",
+                "法术"
+              ],
+              "colStyles": [
+                "col-2 text-center",
+                "col-10"
+              ],
+              "rows": [
+                [
+                  "1st",
+                  "{@spell 侦测毒性和疾病}, {@spell 致伤术}"
+                ],
+                [
+                  "2nd",
+                  "{@spell 衰弱射线}, {@spell 沉默术}"
+                ],
+                [
+                  "3rd",
+                  "{@spell 臭云术}, {@spell 吸血鬼之触}"
+                ],
+                [
+                  "4th",
+                  "{@spell 高等隐形术}, {@spell 魅影杀手}"
+                ],
+                [
+                  "5th",
+                  "{@spell 死云术}, {@spell 疫病术}"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "毒之魂|魔契师||悲伤之母|BookOfEbonTides|1"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "猛毒印|魔契师||悲伤之母|BookOfEbonTides|1"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Poison Soul",
+      "name": "毒之魂",
+      "source": "BookOfEbonTides",
+      "className": "魔契师",
+      "classSource": "PHB",
+      "subclassShortName": "悲伤之母",
+      "subclassSource": "BookOfEbonTides",
+      "level": 1,
+      "header": 1,
+      "entries": [
+        "从1环开始，你对毒素的亲和力变得超自然。你造成的任何毒素伤害将无视任何抗性或免疫。"
+      ]
+    },
+    {
+      "ENG_name": "Venomous Mark",
+      "name": "猛毒印",
+      "source": "BookOfEbonTides",
+      "className": "魔契师",
+      "classSource": "PHB",
+      "subclassShortName": "悲伤之母",
+      "subclassSource": "BookOfEbonTides",
+      "level": 1,
+      "header": 1,
+      "entries": [
+        "同样在1级时，以一个附赠动作，选择你能看见的30尺内的一个生物。目标被诅咒1分钟。如果目标死亡、你死亡或你处于{@condition 失能}状态，诅咒提前结束。在诅咒结束前，每当你用法术攻击命中目标时，对其造成额外{@dice 1d6}毒素伤害。（即使有多个法术攻击实例，如{@spell 魔能爆}，每个法术也只能应用此伤害一次。）",
+        "如果目标在诅咒结束前生命值降至0，你可以在你的后续回合中使用一个附赠动作来诅咒一个新的生物。在任何给定时间内，只有一个生物会受到猛毒印的影响。"
+      ]
+    },
+    {
+      "ENG_name": "Sickening Revenge",
+      "name": "病态报偿",
+      "source": "BookOfEbonTides",
+      "className": "魔契师",
+      "classSource": "PHB",
+      "subclassShortName": "悲伤之母",
+      "subclassSource": "BookOfEbonTides",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "从6级开始，你可以对那些伤害你的人进行复仇。当你受到伤害时，你可以使用你的反应尝试使伤害你的生物中毒。触发此效果的生物必须进行一次对抗你魔契师法术豁免DC的体质豁免检定，否则将陷入{@condition 中毒}状态1分钟。受影响的生物可以在其每个回合结束时重复豁免检定，成功则结束该状态。",
+        "你必须完成一次长休或短休后才能再次使用该特性。"
+      ]
+    },
+    {
+      "ENG_name": "Dark Inoculation",
+      "name": "黑暗疫苗",
+      "source": "BookOfEbonTides",
+      "className": "魔契师",
+      "classSource": "PHB",
+      "subclassShortName": "悲伤之母",
+      "subclassSource": "BookOfEbonTides",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "从10级开始，你的毒素魔法已经注入你的身体。你对疾病、毒素伤害和{@condition 中毒}状态免疫。"
+      ]
+    },
+    {
+      "ENG_name": "Touch of Sorrow",
+      "name": "悲伤之触",
+      "source": "BookOfEbonTides",
+      "className": "魔契师",
+      "classSource": "PHB",
+      "subclassShortName": "悲伤之母",
+      "subclassSource": "BookOfEbonTides",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "从14级开始，当你用攻击命中一个生物时，你可以使用此特性将你的忧伤注入目标。目标必须进行一次感知豁免检定，否则将被{@condition 麻痹}和{@condition 中毒}24小时。该生物保持麻痹状态，直到它受到伤害或不再中毒。",
+        "你必须完成一次长休或短休才能再次使用此特性。"
+      ]
+    }
+  ],
+  "hasFluffImages": true
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "ENG_name": "Veteran's Cane",
+    "name": "老兵手杖",
+    "source": "XDMG",
+    "page": 318,
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "你能够以一个{@variantrule 附赠动作|XPHB}将这根手杖变为一把普普通通的长剑，或者将长剑变回手杖。你必须持握该物品才能完成以上两种变形。"
+    ],
+    "lootTables": [
+      "武备 - 普通|XDMG",
+      "器具 - 普通|XDMG"
+    ],
+    "translator": "不全书",
+    "valueReference": 100,
+    "type": "W"
+  }
+]

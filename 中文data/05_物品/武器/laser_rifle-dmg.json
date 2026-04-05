@@ -1,0 +1,33 @@
+[
+  {
+    "name": "激光步枪",
+    "ENG_name": "Laser Rifle",
+    "source": "DMG",
+    "page": 268,
+    "edition": "classic",
+    "type": "R",
+    "rarity": "none",
+    "weight": 7,
+    "weaponCategory": "martial",
+    "property": [
+      "AF|DMG",
+      "RLD",
+      "2H"
+    ],
+    "dmg1": "3d8",
+    "dmgType": "R",
+    "range": "100/300",
+    "ammoType": "能量电池",
+    "age": "未来",
+    "firearm": true,
+    "referenceSources": [
+      "IDRotF",
+      "QftIS"
+    ],
+    "reload": 30,
+    "reprintedAs": [
+      "激光步枪|XDMG"
+    ],
+    "weapon": true
+  }
+]

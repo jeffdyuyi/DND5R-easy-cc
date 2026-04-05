@@ -1,0 +1,68 @@
+[
+  {
+    "ENG_name": "Staff of Contaminated Power",
+    "name": "受污染的威力法杖",
+    "source": "DungeonsDrakkenheim",
+    "page": 232,
+    "type": "M",
+    "rarity": "legendary",
+    "reqAttune": "由术士、魔契师或法师",
+    "reqAttuneTags": [
+      {
+        "class": "术士"
+      },
+      {
+        "class": "魔契师"
+      },
+      {
+        "class": "法师"
+      }
+    ],
+    "weight": 4,
+    "weaponCategory": "简易",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "bonusWeapon": "+2",
+    "recharge": "特殊",
+    "charges": 20,
+    "staff": true,
+    "entries": [
+      "这根法杖可以作为魔法长棍使用，它在攻击和伤害骰上提供+2的加值。",
+      "该法杖拥有20点充能用于以下词条。法杖在浓厚污霭中每休息1小时恢复1点充能。你也可以将一块妄质水晶触碰法杖，使其恢复{@dice 2d8 + 4}点充能，随后水晶化为粉尘。如果你消耗了最后一点充能，你立即获得{@dice 1d6}点{@adventure 污染层数|DungeonsDrakkenheim|12}。",
+      {
+        "ENG_name": "Spells",
+        "name": "法术",
+        "type": "entries",
+        "entries": [
+          "当你持握此法杖时，可以使用一个动作消耗其部分充能来施放下列法术之一，使用你的法术豁免DC和施法属性：{@spell 妄彩球|DungeonsDrakkenheim}（1充能）、{@spell 扭曲矢|DungeonsDrakkenheim}（2充能）、{@spell 驱隙电闪|DungeonsDrakkenheim}（3充能）、{@spell 妄能爆破|DungeonsDrakkenheim}（4充能）、{@spell 浓厚污霭咒唤术|DungeonsDrakkenheim}（5充能）和{@spell 污染射线|DungeonsDrakkenheim}（6充能）。当你使用此法杖的充能施放这些法术时，不会获得任何{@adventure 污染层数|DungeonsDrakkenheim|12}。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "妄彩球|DungeonsDrakkenheim"
+        ],
+        "2": [
+          "扭曲矢|DungeonsDrakkenheim"
+        ],
+        "3": [
+          "驱隙电闪|DungeonsDrakkenheim"
+        ],
+        "4": [
+          "妄能爆破|DungeonsDrakkenheim"
+        ],
+        "5": [
+          "浓厚污霭咒唤术|DungeonsDrakkenheim"
+        ],
+        "6": [
+          "污染射线|DungeonsDrakkenheim"
+        ]
+      }
+    }
+  }
+]

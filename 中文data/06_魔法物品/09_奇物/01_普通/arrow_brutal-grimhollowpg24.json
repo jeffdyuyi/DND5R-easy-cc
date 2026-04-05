@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Arrow, Brutal",
+    "name": "箭，野蛮",
+    "source": "GrimHollowPG24",
+    "page": 129,
+    "type": "A|XPHB",
+    "rarity": "none",
+    "weight": 0.05,
+    "value": 2000,
+    "entries": [
+      "设计用于造成宽阔伤口，例如使用宽刃箭头，野蛮弹药的作用类似于{@itemMastery 野蛮|GrimHollowPG24}近战武器。"
+    ],
+    "miscTags": [
+      "CNS"
+    ]
+  }
+]

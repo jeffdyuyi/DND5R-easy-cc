@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Fragment of Intransigence",
+    "name": "执迷碎片",
+    "source": "CRCotN",
+    "page": 214,
+    "type": "Fragment of Suffering",
+    "entries": [
+      {
+        "ENG_name": "Benefit",
+        "name": "增益",
+        "type": "entries",
+        "entries": [
+          "其他生物无法强迫你移动到你不愿意去的地方。"
+        ]
+      },
+      {
+        "ENG_name": "Drawback",
+        "name": "缺陷",
+        "type": "entries",
+        "entries": [
+          "你无法采取 {@action 撤离} 或 {@action 回避} 行动。"
+        ]
+      }
+    ]
+  }
+]

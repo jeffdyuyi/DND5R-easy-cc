@@ -1,0 +1,55 @@
+[
+  {
+    "ENG_name": "Ruidium Spiked Armor",
+    "name": "月蚀钉刺甲",
+    "source": "CRCotN",
+    "page": 215,
+    "type": "MA",
+    "rarity": "very rare",
+    "weight": 45,
+    "value": 7500,
+    "ac": 14,
+    "armor": true,
+    "stealth": true,
+    "entries": [
+      "这件魔法盔甲颜色暗淡，呈锈迹斑斑，或者有钌元素的脉络贯穿其中。当你穿戴这件盔甲时，你将获得以下好处：",
+      {
+        "type": "list",
+        "items": [
+          "你对心灵伤害具有抗性。",
+          "你可以在水中呼吸。",
+          "你的游泳速度等同于你的步行速度。"
+        ]
+      },
+      {
+        "ENG_name": "Ruidium Corruption",
+        "name": "月蚀腐化",
+        "type": "entries",
+        "entries": [
+          "当你穿着这件盔甲进行一次豁免检定时掷出1，你必须进行一次{@dc 15}魅力豁免检定。若检定失败，你将获得1级{@condition 力竭}（精疲力竭）。如果你还没有遭受到镭射污染，当你这次检定失败时，你将会受到污染。"
+        ]
+      },
+      {
+        "ENG_name": "If Ruidium Is Destroyed",
+        "name": "如果月蚀矿被摧毁",
+        "type": "entries",
+        "entries": [
+          "如果阿波泰翁被杀死或得到救赎，所有在艾桑椎亚的钌元素会立即被摧毁，钌元素护甲变为{@item +1 护甲}。"
+        ]
+      }
+    ],
+    "namePrefix": "月蚀",
+    "resist": [
+      "心灵"
+    ],
+    "reqAttune": true,
+    "bonusAc": "+1",
+    "modifySpeed": {
+      "equal": {
+        "swim": "走"
+      }
+    },
+    "_isVariant": true,
+    "valueReference": 40000
+  }
+]

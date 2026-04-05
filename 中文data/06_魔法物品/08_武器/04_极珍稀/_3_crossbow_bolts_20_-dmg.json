@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "+3 Crossbow Bolts (20)",
+    "name": "+3 弩矢(20)",
+    "source": "DMG",
+    "page": 150,
+    "srd": true,
+    "basicRules": true,
+    "referenceSources": [
+      "CoS"
+    ],
+    "reprintedAs": [
+      "+3 弹药|XDMG"
+    ],
+    "edition": "classic",
+    "type": "A",
+    "rarity": "very rare",
+    "weight": 1.5,
+    "value": 100,
+    "bolt": true,
+    "packContents": [
+      {
+        "item": "弩矢|PHB",
+        "quantity": 20
+      }
+    ],
+    "namePrefix": "+3 ",
+    "tier": "次要",
+    "bonusWeapon": "+3",
+    "entries": [
+      "使用这件魔法弹药进行攻击和伤害判定时，你会获得{=bonusWeapon}的额外加成。一旦击中目标，弹药将不再具有魔法效果。"
+    ],
+    "lootTables": [
+      "魔法物品表D"
+    ],
+    "_isVariant": true,
+    "valueReference": 20000
+  }
+]

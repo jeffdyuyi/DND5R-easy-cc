@@ -1,0 +1,81 @@
+[
+  {
+    "ENG_name": "Jolt",
+    "name": "电击术",
+    "source": "ObojimaTallGrass",
+    "page": 185,
+    "level": 0,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "一道高压电从你手中射向你射程范围内能看见的一个生物。对目标进行一次远程法术攻击。命中时，目标受到{@damage 1d8}闪电伤害。",
+      "或者，你可以以范围内的一个机械为目标并暂时将其启动，使其如同被精魄附体或永久附魔般运作。以此法术为目标的机械会保持启动状态18秒后关闭。要使机械使用此法术运作，它必须仍处于可工作状态。",
+      "该法术的伤害在你达到5级时增加{@dice 1d8}（{@dice 2d8}），11级时（{@dice 3d8}）和17级时（{@dice 4d8}）。"
+    ],
+    "scalingLevelDice": {
+      "label": "闪电伤害",
+      "scaling": {
+        "1": "1d8",
+        "5": "2d8",
+        "11": "3d8",
+        "17": "4d8"
+      }
+    },
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "闪电"
+    ],
+    "spellAttack": [
+      "R"
+    ],
+    "miscTags": [
+      "SCL",
+      "SGT"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Custom/Spells/Jolt.webp"
+  }
+]

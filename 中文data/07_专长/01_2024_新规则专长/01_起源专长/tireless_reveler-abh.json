@@ -1,0 +1,12 @@
+[
+  {
+    "ENG_name": "Tireless Reveler",
+    "name": "不知疲倦的狂欢者",
+    "source": "ABH",
+    "page": 8,
+    "category": "O",
+    "entries": [
+      "当你能看见的60英尺内盟友消耗{@variantrule 英雄激励|XPHB}时，若你未拥有该激励则可获得{@variantrule 英雄激励|XPHB}。此效果可使用次数等于你的{@variantrule 熟练|XPHB|熟练加值}，且完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}后恢复所有已用次数。"
+    ]
+  }
+]

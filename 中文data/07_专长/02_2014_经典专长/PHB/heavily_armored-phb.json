@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "Heavily Armored",
+    "name": "重甲运用",
+    "source": "PHB",
+    "page": 167,
+    "reprintedAs": [
+      "重甲运用|XPHB"
+    ],
+    "prerequisite": [
+      {
+        "proficiency": [
+          {
+            "armor": "medium"
+          }
+        ]
+      }
+    ],
+    "ability": [
+      {
+        "str": 1
+      }
+    ],
+    "armorProficiencies": [
+      {
+        "heavy": true
+      }
+    ],
+    "entries": [
+      "你学习了重甲的使用方法，你获得下列增益：",
+      {
+        "type": "list",
+        "items": [
+          "你获得重甲的熟练项。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

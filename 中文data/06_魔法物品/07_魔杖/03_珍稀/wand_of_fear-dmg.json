@@ -1,0 +1,67 @@
+[
+  {
+    "ENG_name": "Wand of Fear",
+    "name": "恐惧魔杖",
+    "source": "DMG",
+    "page": 210,
+    "srd": true,
+    "referenceSources": [
+      "ToA"
+    ],
+    "reprintedAs": [
+      "恐惧魔杖|XDMG"
+    ],
+    "type": "WD|DMG",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 1,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6 + 1}",
+    "charges": 7,
+    "entries": [
+      "这把魔杖有7发充能用于以下属性。它每天黎明时恢复{@dice 1d6 + 1}发已消耗的充能。如果你消耗了魔杖的最后一发充能，骰一次{@dice d20}。如果骰值为1，魔杖将化为灰烬而毁灭。",
+      {
+        "ENG_name": "Command",
+        "name": "命令术",
+        "type": "entries",
+        "entries": [
+          "持握此魔杖期间，你可以用一个动作并消耗1发充能以命令另一名生物逃跑或趴下，如同法术{@spell 命令术}的效应（豁免{@dc 15}）。"
+        ]
+      },
+      {
+        "ENG_name": "Cone of Fear",
+        "name": "恐惧锥域",
+        "type": "entries",
+        "entries": [
+          "持握此魔杖期间，你可以用一个动作并消耗2发充能，使魔杖尖端发出一道60尺锥形的琥珀色光芒。锥形区域内的每个生物必须成功通过一次{@dc 15}的感知豁免否则对你陷入{@condition 恐慌}状态1分钟。当它以这种方式陷入{@condition 恐慌}状态时，该生物必须在它的回合里尽可能远离你，并且不能自愿移动到距离你30尺内的空间。它也不能使用反应。作为它的动作，它只能使用{@action 疾走}动作或尝试逃离阻止它移动的效果。如果它无处可移动，该生物可以使用{@action 回避}动作。在它每回合结束时，该生物可以重复进行豁免，成功则终止其身上的该效应。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "命令术"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表G"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Wand of Fear.webp"
+          },
+          "width": 1000,
+          "height": 566
+        }
+      ]
+    }
+  }
+]

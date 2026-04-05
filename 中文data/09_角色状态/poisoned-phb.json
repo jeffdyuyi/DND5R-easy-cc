@@ -1,0 +1,46 @@
+[
+  {
+    "name": "中毒",
+    "ENG_name": "Poisoned",
+    "source": "PHB",
+    "page": 292,
+    "srd": true,
+    "basicRules": true,
+    "entries": [
+      {
+        "type": "list",
+        "items": [
+          "中毒的生物发动攻击检定和属性检定时具有劣势。"
+        ]
+      }
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "conditionsdiseases/PHB/poisoned.webp"
+          },
+          "width": 271,
+          "height": 392
+        }
+      ]
+    },
+    "hasFluffImages": true,
+    "otherSources": [
+      {
+        "source": "RMR",
+        "page": 62
+      },
+      {
+        "source": "HftT",
+        "page": 48
+      }
+    ],
+    "reprintedAs": [
+      "中毒|XPHB"
+    ],
+    "translator": "不全书"
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "ENG_name": "Voorish Sign",
+    "name": "维瑞之印",
+    "source": "CthulhuTorchlight",
+    "page": 0,
+    "level": 3,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你已掌握维瑞之印，这是一个据说在世界创世前就已存在的远古时代印记。选择施法范围内你可见的一个生物。当你使用法术正常对该生物造成伤害并投掷一枚或多枚骰子时，不对此次伤害进行掷骰；取而代之，你直接取每个骰子的最大可能数值。此外，你可以选择一个你能施放的五环或更低环阶且施法时间为动作的法术。你可以将其作为施放维瑞之印的一部分进行施放，并同时消耗两个法术的法术位。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "miscTags": [
+      "SGT"
+    ]
+  }
+]

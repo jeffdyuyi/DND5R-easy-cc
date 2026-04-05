@@ -1,0 +1,48 @@
+[
+  {
+    "ENG_name": "Potion of Aqueous Form",
+    "name": "液化形态药水",
+    "source": "MOT",
+    "page": 197,
+    "type": "P",
+    "rarity": "rare",
+    "modifySpeed": {
+      "static": {
+        "swim": 30
+      }
+    },
+    "entries": [
+      "当你喝下这瓶药水后，你将会变成一滩水。你将在10分钟后、陷入{@condition 失能}或死亡时恢复成你的真实形态。",
+      "处于此形态期间，你会获得以下的效应：",
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Liquid Movement",
+            "name": "液态行动",
+            "type": "item",
+            "entry": "你获得30尺的游泳速度；你可以自如的在其他液体表面上移动，或穿过其他液体移动；你可以进入并占据其他生物的空间；你可以塑形伸长到你的原本身高高度；你可以通过微型的洞口。此外，当你进入一处空间时，你将扑灭那空间内的非魔法火焰。"
+          },
+          {
+            "ENG_name": "Watery Resilience",
+            "name": "水之柔韧",
+            "type": "item",
+            "entry": "你获得非魔法伤害的抗性。你进行的力量、敏捷、与体质豁免检定具有优势。"
+          },
+          {
+            "ENG_name": "Limitations",
+            "name": "限制",
+            "type": "item",
+            "entry": "你无法说话、攻击、施展法术、或激活魔法物品。你携带或穿戴的所有物品都被融合进你的新形态中且无法使用，不过你依旧会受到你正穿戴的物品影响，例如盔甲。"
+          }
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "translator": "不全书",
+    "valueReference": 2000
+  }
+]

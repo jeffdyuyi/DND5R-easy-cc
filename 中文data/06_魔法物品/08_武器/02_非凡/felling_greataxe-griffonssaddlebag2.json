@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "Felling Greataxe",
+    "name": "伐林巨斧",
+    "source": "GriffonsSaddlebag2",
+    "page": 81,
+    "baseItem": "巨斧|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "uncommon",
+    "weight": 7,
+    "weaponCategory": "军用",
+    "property": [
+      "H",
+      "2H"
+    ],
+    "dmg1": "1d12",
+    "dmgType": "S",
+    "entries": [
+      "这把大型战斧自打造以来已砍倒数千棵树木，使其斧刃上形成了年轮般的纹路，并获得了独特的魔力。你可以使用一个动作说出斧子的命令语并挥动它，以召唤一棵巨大的树木虚影，砸向一条60尺长、5尺宽的线性区域。该区域内的每个生物都必须进行一次DC 13的敏捷豁免。豁免失败时，生物受到{@damage 3d6}钝击伤害并陷入{@condition 倒地}状态。豁免成功时，生物受到一半伤害且不会{@condition 倒地}。树木虚影在效果结束后立即消失。这项属性一经使用，则其直至次日黎明前都无法再次使用。在此期间，这把斧子仍可作为魔化武器使用。",
+      "此外，你用这把斧子砍伐树木时进行的相关属性检定具有优势。"
+    ],
+    "lootTables": [
+      "魔法物品表 F2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Felling-Greataxe.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

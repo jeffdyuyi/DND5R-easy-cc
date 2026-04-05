@@ -1,0 +1,42 @@
+[
+  {
+    "ENG_name": "Dagger of First Light",
+    "name": "曙光匕首",
+    "source": "GriffonsSaddlebag2",
+    "page": 68,
+    "baseItem": "匕首|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "uncommon",
+    "weight": 1,
+    "weaponCategory": "简易",
+    "property": [
+      "F",
+      "L",
+      "T"
+    ],
+    "range": "20/60",
+    "dmg1": "1d4",
+    "dmgType": "P",
+    "entries": [
+      "在你持握着这把武器期间，你进行的先攻掷骰具有优势。若你在先攻顺序中排第一位，则在战斗的第一轮中，你的速度增加15尺。",
+      "此外，你可以使用一个附赠动作说出此武器的命令语，使其刀刃发出光芒。发光时的武器会散发出20尺半径的明亮光照以及额外20尺的微光光照。此武器在发光期间造成光耀伤害，而非穿刺伤害。你可以再次用一个附赠动作说出此武器的命令语，使其停止发光并恢复到通常状态。"
+    ],
+    "lootTables": [
+      "魔法物品表 F1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Dagger-of-First-Light.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "ENG_name": "Cabal's Ruin (Exalted)",
+    "name": "鬼蜮末日（升华）",
+    "source": "TalDoreiCampaignSettingReborn",
+    "_copy": {
+      "ENG_name": "Cabal's Ruin (Awakened)",
+      "name": "鬼蜮末日（觉醒）",
+      "source": "TalDoreiCampaignSettingReborn",
+      "_mod": {
+        "entries": [
+          {
+            "mode": "appendArr",
+            "items": {
+              "entries": [
+                {
+                  "ENG_name": "Exalted",
+                  "name": "升华",
+                  "type": "entries",
+                  "entries": [
+                    "当卡巴尔的毁灭达到崇高状态时，你获得以下好处：",
+                    {
+                      "type": "list",
+                      "items": [
+                        "这件斗篷有10点充能，并且在黎明时每天恢复{@dice 1d6 + 4}点消耗的充能。"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "_preserve": {
+        "page": true,
+        "fluff": true
+      }
+    },
+    "rechargeAmount": "{@dice 1d6 + 2}",
+    "charges": 10,
+    "hasFluffImages": true
+  }
+]

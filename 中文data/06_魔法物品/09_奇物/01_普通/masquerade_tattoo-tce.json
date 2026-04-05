@@ -1,0 +1,49 @@
+[
+  {
+    "ENG_name": "Masquerade Tattoo",
+    "name": "伪装刺青",
+    "source": "TCE",
+    "page": 131,
+    "rarity": "common",
+    "reqAttune": true,
+    "wondrous": true,
+    "tattoo": true,
+    "entries": [
+      "这个魔法纹身由一支特殊的针制成，它可以根据你的意愿出现在你的身体上。",
+      {
+        "ENG_name": "Tattoo Attunement",
+        "name": "刺青同调",
+        "type": "entries",
+        "entries": [
+          "同调此物品时，你需要将针持握，并抵在你想要让刺青出现 的那处皮肤上。当同调完成时，针头会化为墨水再变成刺青。",
+          "若你与刺青的同调结束，刺青会消失，针头会再次出现在你的位置中。"
+        ]
+      },
+      {
+        "ENG_name": "Fluid Ink",
+        "name": "液态油墨",
+        "type": "entries",
+        "entries": [
+          "作为附赠动作，你可以将纹身塑造成任何颜色或图案，并将其移动到你皮肤的任何区域。无论它采取何种形态，它总是明显地是一个纹身。它的大小可以从不少于一个铜币到覆盖你所有皮肤的复杂艺术品不等。"
+        ]
+      },
+      {
+        "ENG_name": "Disguise Self",
+        "name": "易容术",
+        "type": "entries",
+        "entries": [
+          "作为一个动作，你可以使用纹身来施放 {@spell 易容术} 法术（{@dc 13} 可识破伪装）。一旦从纹身中施放了该法术，直到下一个黎明之前，都无法再次从纹身中施放该法术。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "易容术"
+        ]
+      }
+    },
+    "valueReference": 100,
+    "type": "W"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "ENG_name": "Medal of the Wetlands",
+    "name": "湿地勋章",
+    "source": "CRCotN",
+    "page": 214,
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "当你用一个动作描绘这枚奖章的边缘时，在1小时内，{@quickref 困难地形||3}不会消耗你的额外移动。一旦这个属性被使用后，它将无法再次使用，并且这枚奖章会变为非魔法物品。"
+    ],
+    "valueReference": 100,
+    "type": "W"
+  }
+]

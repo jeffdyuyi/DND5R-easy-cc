@@ -1,0 +1,107 @@
+[
+  {
+    "name": "龟人",
+    "ENG_name": "Tortle",
+    "source": "MPMM",
+    "page": 34,
+    "size": [
+      "S",
+      "M"
+    ],
+    "speed": 30,
+    "traitTags": [
+      "天生护甲",
+      "天生武器"
+    ],
+    "skillProficiencies": [
+      {
+        "choose": {
+          "from": [
+            "驯兽",
+            "医药",
+            "自然",
+            "察觉",
+            "隐匿",
+            "求生"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Size",
+        "name": "体型",
+        "type": "entries",
+        "entries": [
+          "你的体型是中型或小型。在你选择该种族时选择体型。"
+        ]
+      },
+      {
+        "ENG_name": "Claws",
+        "name": "爪击",
+        "type": "entries",
+        "entries": [
+          "你的爪子是一件天生武器，可以用来进行徒手攻击。如果你击中了目标，你造成{@damage 1d6}+你的力量调整值的挥砍伤害，代替普通徒手攻击所造成的钝击伤害。"
+        ]
+      },
+      {
+        "ENG_name": "Hold Breath",
+        "name": "屏息",
+        "type": "entries",
+        "entries": [
+          "你可以屏住呼吸长达1小时。"
+        ]
+      },
+      {
+        "ENG_name": "Natural Armor",
+        "type": "entries",
+        "name": "天生护甲",
+        "entries": [
+          "你的甲壳为你提供了基础AC 17（你的敏捷调整值不影响这个数值）。你不能穿戴轻甲、中甲或重甲，但如果使用盾牌，仍能获得盾牌的AC加值。"
+        ]
+      },
+      {
+        "ENG_name": "Nature's Intuition",
+        "name": "自然直觉",
+        "type": "entries",
+        "entries": [
+          "由于你与自然的神秘联系，你可以选择以下技能之一获得熟练：{@skill 驯兽}、{@skill 医药}、{@skill 自然}、{@skill 察觉}、{@skill 隐匿}或{@skill 求生}。"
+        ]
+      },
+      {
+        "ENG_name": "Shell Defense",
+        "name": "龟壳防御",
+        "type": "entries",
+        "entries": [
+          "你能用一个动作缩回壳内。直到你出壳，你获得+4的AC加值， 在力量豁免与体质豁免具有优势。当你在龟壳内时，你处于{@condition 倒地}状态，速度为0且不能增加。你的敏捷豁免具有劣势，你不能执行反应，你唯一能执行的动作是以一个附赠动作从壳中出来。"
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "龟人们有句谚语：\"我们把家背在背上。\"这些如同龟一样的族裔生活在许多世界中，大部分时候都在沿着海岸、顺着水路、穿过大海往返旅行。关于他们的起源并没有一个统一的故事，但他们都具有一种和自然的世界神秘相连的感觉。他们身负自己的庇护所，无论走到何处，龟人们都会有一种特别的安全感，因为即使他们旅行到一个遥远、未知的国度，他们也有一处能供自己容身。",
+        "龟人展现与龟类相同的颜色和花纹范围，许多龟人喜欢用独特的方式装饰自己的壳。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/MPMM/Tortle.webp"
+          },
+          "credit": "Mark Behm, Franz Vohwinkel",
+          "width": 1700,
+          "height": 1209
+        }
+      ]
+    },
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "lineage": "VRGR",
+    "soundClip": {
+      "type": "internal",
+      "path": "races/tortle.mp3"
+    },
+    "translator": "不全书"
+  }
+]

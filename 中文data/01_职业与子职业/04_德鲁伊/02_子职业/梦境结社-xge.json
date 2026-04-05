@@ -1,0 +1,99 @@
+{
+  "name": "梦境结社",
+  "shortName": "梦境",
+  "ENG_name": "Circle of Dreams",
+  "source": "XGE",
+  "className": "德鲁伊",
+  "classSource": "PHB",
+  "page": 22,
+  "edition": "classic",
+  "subclassFeatures": [
+    "梦境结社|德鲁伊||梦境|XGE|2",
+    "月光阴影的炉心|德鲁伊||梦境|XGE|6",
+    "隐匿通途|德鲁伊||梦境|XGE|10",
+    "梦境行者|德鲁伊||梦境|XGE|14"
+  ],
+  "features": [
+    {
+      "name": "梦境结社",
+      "ENG_name": "Circle of Dreams",
+      "source": "XGE",
+      "page": 22,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "梦境",
+      "subclassSource": "XGE",
+      "level": 2,
+      "entries": [
+        "梦境结社的德鲁伊来自于那些同堕影冥界和妖精荒野有着紧密联系的区域。这种同自然界的其他层面（妖精荒野是其中最广为人知的那些）的联系让这些德鲁伊们的日常生活中也充满着奇迹。他们所在的土地充满着欢笑、甚至连那里本应阴沉的土地也被彩虹包围。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "夏日庭院的香膏|德鲁伊||梦境|XGE|2"
+        }
+      ]
+    },
+    {
+      "name": "夏日庭院的香膏",
+      "ENG_name": "Balm of the Summer Court",
+      "source": "XGE",
+      "page": 22,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "梦境",
+      "subclassSource": "XGE",
+      "level": 2,
+      "entries": [
+        "2级起，你获得了夏日庭院的祝福。你拥有一个充满了妖精能量的池子。这个池子包含等于你德鲁伊等级数量的骰子（d6）。",
+        "作为一个附赠动作，你可以消耗池中的一些骰子（最多消耗等于你感知调整值数量的骰子，至少一个）来治疗一个在你周围120尺范围内且你可以看到的生物。被治疗者获得等同于骰出点数总和的生命值，同时每消耗一个骰子，该生物便获得1点临时生命值。",
+        "当你完成一次长休时，你重获所有已消耗的骰子。"
+      ]
+    },
+    {
+      "name": "月光阴影的炉心",
+      "ENG_name": "Hearth of Moonlight and Shadow",
+      "source": "XGE",
+      "page": 22,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "梦境",
+      "subclassSource": "XGE",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "6级起，在你扎营的地方，其周围的自然世界将为你提供保护。当你处于短休或长休期间，你可以召唤出这部分的魔力。在休息开始时，你以此法在以你为中心、半径30尺的范围内创造一个魔法球体。除非球体被你主动解散，否则这种效果直到你的休息结束或你走出了球体范围为止。",
+        "在这个球体范围内，由于球体可以让此处的响动变得极其细微，因此所有的生物在进行敏捷（{@skill 隐匿}）检定时获得 +10 的加值。此外，球体还能阻止此处的任何火光被球体之外看到。最后，当有生物在此球体范围内尝试寻找此处的生物或在此穿行时，在其在进行感知（{@skill 察觉}）检定时将获得劣势。"
+      ]
+    },
+    {
+      "name": "隐匿通途",
+      "ENG_name": "Hidden Paths",
+      "source": "XGE",
+      "page": 22,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "梦境",
+      "subclassSource": "XGE",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "10级起，你获得在不同空间穿梭转行的能力。在你自己的回合内，以一个动作，你可以将自己传送到你周围60尺内的任意一处可见的空置区域。或者你可以在同一回合内通过触摸一个自愿的生物，将其传送到你周围30尺内的任意一处可见的空置区域。",
+        "你可以使用这种能力的次数等于你的感知加值（最少 1 次）。当你完成一次长休时，你重获所有已消耗的使用次数。"
+      ]
+    },
+    {
+      "name": "梦境行者",
+      "ENG_name": "Walker in Dreams",
+      "source": "XGE",
+      "page": 23,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "梦境",
+      "subclassSource": "XGE",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "14级起，你同梦境世界的联系让你有能力游走在物质世界的缝隙中。你可以通过一场短休的冥想来施展 {@spell 探知}、{@spell 传心术}、或 {@spell 传送术}。当你以此法施展 {@spell 传送术} 时，这个法术无法被如常使用。你只能将传送目标传送回你之前曾完成上一次长休的地点。你可以以此法各施展上述每个法术一次，且必须在一次长休后才能重获此能力。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "ENG_name": "+2 Wraps of Unarmed Power",
+    "name": "+2 神功绑带",
+    "source": "XDMG",
+    "page": 325,
+    "rarity": "rare",
+    "wondrous": true,
+    "bonusWeapon": "+2",
+    "entries": [
+      "裹着这套布制绑带期间，你的徒手打击的攻击检定与伤害掷骰获得+2加值。且你可以令你的徒手打击造成力场伤害，而非原本的伤害类型。"
+    ],
+    "classFeatures": [
+      "仿制魔法物品|奇械师|efa|2|efa"
+    ],
+    "lootTables": [
+      "武备 - 珍稀|XDMG"
+    ],
+    "translator": "不全书",
+    "valueReference": 4000,
+    "type": "W"
+  }
+]

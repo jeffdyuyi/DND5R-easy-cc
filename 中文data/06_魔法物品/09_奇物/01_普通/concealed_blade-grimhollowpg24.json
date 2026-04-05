@@ -1,0 +1,15 @@
+[
+  {
+    "ENG_name": "Concealed Blade",
+    "name": "隐蔽之刃",
+    "source": "GrimHollowPG24",
+    "page": 126,
+    "type": "AdvEq",
+    "rarity": "none",
+    "weight": 2,
+    "value": 5000,
+    "entries": [
+      "隐蔽之刃是一种内置在护腕或手套隐藏机关中的{@item 匕首|XPHB}。当你掷{@variantrule 先攻|XPHB}时，你可以进行一次敏捷（{@skill 欺瞒|XPHB}）检定，与其他人进行的感知（{@skill 察觉|XPHB}）检定对抗。你对检定失败的敌人在战斗第一轮中的第一次攻击具有{@variantrule 优势|XPHB}。"
+    ]
+  }
+]

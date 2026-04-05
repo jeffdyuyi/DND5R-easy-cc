@@ -1,0 +1,83 @@
+[
+  {
+    "ENG_name": "Earth Tremor",
+    "name": "地颤",
+    "source": "XGE",
+    "page": 155,
+    "otherSources": [
+      {
+        "source": "EEPC",
+        "page": 17
+      }
+    ],
+    "referenceSources": [
+      "PotA"
+    ],
+    "level": 1,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 10
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你在施法距离内引发地面颤动。处于该区域，除你之外的其他生物必须进行一次敏捷豁免检定。若检定失败，该生物受到{@damage 1d6}点钝击伤害并{@condition 倒地}。若区域的地表为松软的土壤或石头，其在被清理之前成为{@quickref 困难地形||3}。每 5 尺直径的部分都需要至少 1 分钟来手动清理。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用二环或更高的法术位施放该法术时，使用的法术位每高一环，伤害便增加{@scaledamage 1d6|1-9|1d6}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "bludgeoning"
+    ],
+    "conditionInflict": [
+      "倒地"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "miscTags": [
+      "DFT"
+    ],
+    "areaTags": [
+      "R"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "德鲁伊",
+      "术士",
+      "法师"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "敏捷"
+    ],
+    "display_damageInflict": [
+      "钝击"
+    ]
+  }
+]

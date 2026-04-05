@@ -1,0 +1,138 @@
+[
+  {
+    "ENG_name": "Shape Plants",
+    "name": "植物塑形",
+    "source": "HumblewoodCampaignSetting",
+    "page": 51,
+    "otherSources": [
+      {
+        "source": "HumblewoodTales",
+        "page": 251
+      }
+    ],
+    "level": 4,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你召唤温和的自然魔法来改变植物的生长。在你视野范围内，任何适合在5英尺立方体内的植物生命都可以变成你想要的任何形状。此外，如果植物是荆棘或者能够生长刺，你可以将受影响的区域变成困难地形，每通过你塑造的区域5英尺，就会造成{@damage 2d4}点穿刺伤害。你还可以增加或减少任何你塑造的植物产生的花、藤蔓、叶子、刺、枝条或果实的数量。",
+      "一小时后，你的法术魔法消退，植物恢复其正常形态。如果你能使用{@spell 植物交谈}（或相似的属性）与植物沟通，你可以说服它保留其新形态。不同的植物有不同的感受和态度，如果形态与其自然形态差异太大，它可能会拒绝。如果植物接受，在GM的裁量下，它将保留你塑造的形态，在这种情况下效应变为永续。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用4级以上的法术位施放这个法术时，你可以用法术影响的植物生命体的立方体大小每超过4级增加5尺。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "穿刺"
+    ],
+    "miscTags": [
+      "DFT",
+      "PRM",
+      "SCL",
+      "SGT"
+    ],
+    "areaTags": [
+      "C"
+    ],
+    "hasFluffImages": true,
+    "foundrySystem": {
+      "target.template.size": "(@item.level - 3) * 5"
+    },
+    "foundryActivities": [
+      {
+        "ENG_name": "Cast",
+        "name": "施放",
+        "type": "utility"
+      },
+      {
+        "activation": {
+          "type": null,
+          "override": true
+        },
+        "consumption.spellSlot": false,
+        "damage.parts": [
+          {
+            "number": 2,
+            "denomination": 4,
+            "types": [
+              "piercing"
+            ]
+          }
+        ],
+        "range": {
+          "type": "any",
+          "override": true
+        },
+        "target": {
+          "affects.type": "creature",
+          "override": true
+        },
+        "type": "damage"
+      }
+    ],
+    "fluff": {
+      "ENG_name": "Shape Plants",
+      "name": "植物塑形",
+      "source": "HumblewoodCampaignSetting",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/HumblewoodCampaignSetting/spells/Shape-Plants.webp"
+          },
+          "width": 450,
+          "height": 701
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "ENG_name": "Skylit Greaves",
+    "name": "天光护胫",
+    "source": "GriffonsSaddlebag2",
+    "page": 163,
+    "resist": [
+      "闪电",
+      "雷鸣"
+    ],
+    "tier": "主要",
+    "rarity": "legendary",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d4 + 1}",
+    "charges": 5,
+    "entries": [
+      "这对秘银护胫虽由金属制成，却轻若无物。当你在穿着这对护胫期间移动时，护胫的两侧会喷出小股风暴般的蒸汽。穿着这对护胫期间，你始终处于{@spell 跳跃术}法术的效果之下，你的移动速度增加10尺，且你对闪电和雷鸣伤害具有抗性。",
+      "这对护胫具有5充能，且在每日黎明时恢复{@dice 1d4 + 1}已消耗的充能。穿戴护胫期间，你可以用一个动作踩踏地面或跺脚，并消耗其1充能来创造以下效应之一，或消耗其2充能来同时创造两种效应。",
+      {
+        "type": "list",
+        "items": [
+          "你在脚下召唤出一股气流将你推向空中。你获得等同于步行速度的飞行速度，并且可以悬浮，持续10分钟。",
+          "你在周身召唤出猛烈的旋风。任何在你5尺范围内的生物必须进行一次DC 17的力量豁免检定。豁免失败时，目标受到{@damage 3d8}钝击伤害，被抛出最远20尺并陷入{@condition 倒地}状态。如果被抛出的目标撞上物件（如墙壁或地板），则其每被抛出10尺就会受到{@damage 1d6}钝击伤害。如果目标被抛向另一个生物，该生物必须通过一次DC 17的敏捷豁免检定，否则会受到相同的伤害并陷入{@condition 倒地}状态。豁免成功则只受到一半钝击伤害，且不会被抛出或陷入{@condition 倒地}状态。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "will": [
+        "跳跃术"
+      ]
+    },
+    "lootTables": [
+      "魔法物品表I|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Skylit-Greaves.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

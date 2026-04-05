@@ -1,0 +1,61 @@
+[
+  {
+    "ENG_name": "Maelfa's Quickened Class",
+    "name": "玛尔法的快速职业",
+    "source": "GrimHollowPG24",
+    "page": 196,
+    "level": 3,
+    "school": "E",
+    "time": [
+      {
+        "number": 10,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 24
+        }
+      }
+    ],
+    "entries": [
+      "当你施放该法术时，你可以向范围内你选择的10个愿意的生物简要讲解一个你选择的话题。当你这样做时，选择一项你了解或准备的法术、一项你精通的技能或一种你能说、读、写的语言。每个选民生物暂时获得你的一部分知识。",
+      "如果你选择了一个法术，每个生物都会准备该法术，该法术被视为在该生物的法术列表中，并且不计入该生物的准备法术数量。如果你选择了一个技能，每个目标生物将获得该技能的熟练。如果你选择了一种语言，每个目标生物可以说、读和写该语言。",
+      "该生物在此法术结束时失去对该法术、熟练项或语言的了解。如果一个生物在此法术生效期间被此法术再次作为目标，则前一次施法立即结束。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "该法术的持续时间会随着法术位环阶提升：3或4环（30天），5或6环（10天），7或8环（30天），或9环（1年）。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Maelfas%20Quickened%20Class.webp"
+  }
+]

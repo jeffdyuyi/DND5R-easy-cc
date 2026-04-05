@@ -1,0 +1,46 @@
+[
+  {
+    "ENG_name": "Umi's Powerful Undertow",
+    "name": "乌米的强大逆流",
+    "source": "ObojimaTallGrass",
+    "page": 238,
+    "type": "P",
+    "rarity": "rare",
+    "property": [
+      "Util"
+    ],
+    "entries": [
+      "这种强效灵药允许饮用者用海洋的愤怒增强他们的水生法术。在接下来的1小时内，当你施放一个以某种容量产生或操纵水的法术时，该法术会如同使用高1环的法术位施放。此外，使用水对生物或物件造成伤害的法术会造成额外的{@damage 2d12}钝击伤害。",
+      "或者，你可以将药水投掷至你30尺内的一个未占据空间，打破格拉斯并在最近的未占据空间召唤三个{@creature 水元素||水元素}。这些生物在被摧毁前都处于你的控制之下。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 58|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Utility/umis-powerful-undertow.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1588,
+          "height": 1588
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

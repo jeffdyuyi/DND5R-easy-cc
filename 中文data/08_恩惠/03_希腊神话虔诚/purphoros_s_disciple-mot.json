@@ -1,0 +1,13 @@
+[
+  {
+    "ENG_name": "Purphoros's Disciple",
+    "name": "普罗烽斯的门徒",
+    "source": "MOT",
+    "page": 76,
+    "type": "Piety Trait",
+    "entries": [
+      "{@i 虔信值25+ 普罗烽斯特质}",
+      "如果你在站立状态，且某效应将把你推离1尺及以上，你可以使用一个反应来避免被推离。"
+    ]
+  }
+]

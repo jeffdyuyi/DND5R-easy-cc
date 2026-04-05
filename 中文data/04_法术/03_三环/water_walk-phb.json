@@ -1,0 +1,68 @@
+[
+  {
+    "ENG_name": "Water Walk",
+    "name": "水上行走",
+    "source": "PHB",
+    "page": 287,
+    "srd": true,
+    "referenceSources": [
+      "TftYP-DiT",
+      "CRCotN"
+    ],
+    "reprintedAs": [
+      "水上行走|XPHB"
+    ],
+    "level": 3,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一块软木塞"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "meta": {
+      "ritual": true
+    },
+    "entries": [
+      "使受术者行走于任何液体表面时（例如流水、酸液、泥浆、雪地、流沙、熔岩）都如同行走在无伤害性的实体地面上。（但走在熔岩上的生物仍会因高热而受伤）。你可以将此能力赋予施法距离内你能看见的至多十个自愿生物，并使其在法术持续时间内拥有该能力。",
+      "如果你选择一个浸没在水中的生物作为该法术的目标，则受术者将会以每轮 60 尺的速度上升，直至浮上液面。"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "areaTags": [
+      "MT"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师",
+      "德鲁伊",
+      "游侠",
+      "术士",
+      "奇械师"
+    ],
+    "display_school": "变化系",
+    "display_ritual": "仪式"
+  }
+]

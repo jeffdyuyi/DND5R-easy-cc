@@ -1,0 +1,146 @@
+[
+  {
+    "ENG_name": "Mark of Warding",
+    "name": "警戒龙纹",
+    "source": "EFA",
+    "page": 42,
+    "category": "D",
+    "prerequisite": [
+      {
+        "campaign": [
+          "艾伯伦"
+        ],
+        "exclusiveFeatCategory": [
+          "D"
+        ]
+      }
+    ],
+    "additionalSpells": [
+      {
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "prepared": {
+          "3": {
+            "daily": {
+              "1": [
+                "秘法锁|xphb"
+              ]
+            }
+          },
+          "_": {
+            "daily": {
+              "1": [
+                "警报术|xphb",
+                "法师护甲|xphb"
+              ]
+            }
+          }
+        },
+        "expanded": {
+          "s1": [
+            "黯冰狱铠|xphb",
+            "庇护术|xphb"
+          ],
+          "s2": [
+            "敲击术|xphb",
+            "涅斯图魔法灵光|xphb"
+          ],
+          "s3": [
+            "守卫刻文|xphb",
+            "防护法阵|xphb"
+          ],
+          "s4": [
+            "李欧蒙秘藏箱|xphb",
+            "魔邓肯忠犬|xphb"
+          ],
+          "s5": [
+            "防活物护罩|xphb"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Warder's Intuition",
+        "name": "守卫直觉",
+        "type": "entries",
+        "entries": [
+          "当你进行一次智力（{@skill 调查|XPHB}）检定或使用{@item 盗贼工具|XPHB}的属性检定时，你可以掷{@dice 1d4}并将掷出的数值添加到该属性检定中。"
+        ]
+      },
+      {
+        "ENG_name": "Wards and Seals",
+        "name": "警卫封印",
+        "type": "entries",
+        "entries": [
+          "你总是准备了{@spell 警报术|XPHB}和{@spell 法师护甲|XPHB}法术。你可以无需法术位施放每个法术一次，并且当你完成一次{@variantrule 长休|XPHB}后，你重新获得以此方式施放它的能力。",
+          "你也可以使用任何你拥有的相应等级的法术位来施放这些法术。智力、感知或魅力是这些法术的施法属性（在你选择此专长时选择）。",
+          "当你达到角色等级3时，你还会始终准备好{@spell 秘法锁|XPHB}法术并能以同样的方式施放它。"
+        ]
+      },
+      {
+        "ENG_name": "Spells of the Mark",
+        "name": "龙纹法术",
+        "type": "entries",
+        "entries": [
+          "如果你拥有施法或契约魔法职业特性，警戒龙纹法术列表中的法术将被添加到该特性的法术列表中。",
+          {
+            "type": "table",
+            "caption": "警戒龙纹法术",
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "colLabels": [
+              "法术环阶",
+              "法术"
+            ],
+            "rows": [
+              [
+                "1",
+                "{@spell 黯冰狱铠|XPHB}, {@spell 庇护术|XPHB}"
+              ],
+              [
+                "2",
+                "{@spell 敲击术|XPHB}, {@spell 涅斯图魔法灵光|XPHB}"
+              ],
+              [
+                "3",
+                "{@spell 守卫刻文|XPHB}, {@spell 防护法阵|XPHB}"
+              ],
+              [
+                "4",
+                "{@spell 李欧蒙秘藏箱|XPHB}, {@spell 魔邓肯忠犬|XPHB}"
+              ],
+              [
+                "5",
+                "{@spell 防活物护罩|XPHB}"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluffImages": true,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "feats/EFA/Mark of Warding.webp"
+          },
+          "credit": "Lee Moyer",
+          "width": 500,
+          "height": 525
+        }
+      ]
+    }
+  }
+]

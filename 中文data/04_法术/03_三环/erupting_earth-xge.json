@@ -1,0 +1,95 @@
+[
+  {
+    "ENG_name": "Erupting Earth",
+    "name": "土石喷发",
+    "source": "XGE",
+    "page": 155,
+    "otherSources": [
+      {
+        "source": "EEPC",
+        "page": 17
+      }
+    ],
+    "referenceSources": [
+      "PotA"
+    ],
+    "level": 3,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一块黑曜石"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "选择距离内你能看见的，位于地面上的一点。以该点为中心，20 尺立方的空间内，一道翻滚的泥土和岩石流喷发而出。在该区域中的每个生物必须进行一次敏捷豁免检定。若未通过豁免，该生物受到{@damage 3d12}点钝击伤害，成功的豁免令上述伤害减半。此外，该区域的地面成为{@quickref 困难地形||3}直到被清理。该区域每 5 平方尺的空间，若用手来清理至少需要 1 分钟时间。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用四环或更高的法术位施放该法术时，使用的法术位每高一环，伤害便增加{@scaledamage 3d12|3-9|1d12}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "bludgeoning"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "miscTags": [
+      "DFT",
+      "SGT"
+    ],
+    "areaTags": [
+      "C"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/XGE/Erupting Earth.webp"
+          },
+          "width": 1000,
+          "height": 686
+        }
+      ]
+    },
+    "classes": [
+      "德鲁伊",
+      "术士",
+      "法师"
+    ],
+    "display_school": "变化系",
+    "display_savingThrow": [
+      "敏捷"
+    ],
+    "display_damageInflict": [
+      "钝击"
+    ]
+  }
+]

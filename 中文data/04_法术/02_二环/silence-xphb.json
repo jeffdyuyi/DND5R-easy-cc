@@ -1,0 +1,65 @@
+[
+  {
+    "ENG_name": "Silence",
+    "name": "沉默术",
+    "source": "XPHB",
+    "page": 316,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 2,
+    "school": "I",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "meta": {
+      "ritual": true
+    },
+    "entries": [
+      "在法术持续时间内，以施法距离内你指定的一点为中心半径 20 尺的{@variantrule 球状 [效应区域]|XPHB|球状}区域内将无法产生任何声音，且外界的声音也无法于该区域内传播。任何完全位于该{@variantrule 球状 [效应区域]|XPHB|球状}区域内的生物和物件都将{@variantrule 免疫|XPHB}雷鸣伤害，而完全位于该区域内的任何生物都将陷入{@condition 耳聋|XPHB}状态。此外，该区域内无法施展包含言语成分的法术。"
+    ],
+    "damageImmune": [
+      "雷鸣"
+    ],
+    "conditionInflict": [
+      "耳聋"
+    ],
+    "miscTags": [
+      "OBJ"
+    ],
+    "areaTags": [
+      "S"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "牧师",
+      "游侠"
+    ],
+    "display_school": "幻术系",
+    "display_ritual": "仪式"
+  }
+]

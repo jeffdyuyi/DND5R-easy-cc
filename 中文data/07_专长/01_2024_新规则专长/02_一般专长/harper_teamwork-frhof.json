@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Harper Teamwork",
+    "name": "竖琴手协同",
+    "source": "FRHoF",
+    "page": 39,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4,
+        "feat": [
+          "竖琴手特工|FRHoF"
+        ]
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "dex",
+            "cha"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Withering Wordplay",
+        "name": "妙语连珠",
+        "type": "entries",
+        "entries": [
+          "当你执行{@action 协助|XPHB}动作辅助盟友对敌人的攻击检定时，你的下个回合开始前该敌人进行的下次豁免检定也具有{@variantrule 劣势|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Inspiring Willpower",
+        "name": "意志激励",
+        "type": "entries",
+        "entries": [
+          "若你成功通过结束你身上的{@condition 恐慌|XPHB}或{@condition 麻痹|XPHB}状态的豁免检定，你能够选择一名30尺内你可见的具有相同状态的盟友。该盟友身上的此状态立即结束。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

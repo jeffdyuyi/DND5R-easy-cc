@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "Belt of the Hell Hound",
+    "name": "地狱犬腰带",
+    "source": "GriffonsSaddlebag2",
+    "page": 44,
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "curse": true,
+    "entries": [
+      "当你戴上这条腰带时，你会感受到下层位面的火焰在你体内燃烧。佩戴着腰带期间，当你对一个生物进行近战攻击且在此次攻击中有优势时，目标被本次攻击命中时会额外受到{@damage 1d6}火焰伤害。",
+      "此外，佩戴着腰带期间，你可以用一个动作发出一声地狱般的嚎叫。当你这样做时，你会从嘴里喷出15尺锥状范围的火焰。该区域中的每个生物都必须进行一次{@dc 15}的敏捷豁免，豁免失败者受到{@damage 6d6}火焰伤害，豁免成功者只受一半伤害。火焰会点燃该区域内未被着装或携带的易燃物品。使用此特性后，你直到下个黎明才能再次使用它。",
+      {
+        "ENG_name": "Curse",
+        "name": "诅咒",
+        "type": "entries",
+        "entries": [
+          "一旦戴上这条腰带，你就无法将其取下，除非你成为{@spell 移除诅咒|PHB}法术或类似魔法的目标。佩戴着腰带期间，你每天必须吃两倍于正常数量的食物（至少2磅）以避免{@condition 力竭}。此外，佩戴着腰带期间，当你死亡时以及你已死期间的每小时结束时，都有累加的{@chance 10|10%}概率立即被献祭并化为灰烬。"
+        ]
+      }
+    ],
+    "lootTables": [
+      "魔法物品表 G1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Belt-of-the-Hell-Hound.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

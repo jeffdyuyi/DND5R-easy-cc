@@ -1,0 +1,133 @@
+{
+  "race": [
+    {
+      "ENG_name": "Wulven",
+      "name": "沃尔文",
+      "source": "GrimHollowPG24",
+      "page": 29,
+      "edition": "one",
+      "creatureTypes": [
+        "类人生物"
+      ],
+      "size": [
+        "S",
+        "M"
+      ],
+      "speed": 30,
+      "sizeEntry": {
+        "ENG_name": "Size:",
+        "name": "体型：",
+        "type": "item",
+        "entries": [
+          "小型或中等（沃尔文与他们原始血统的其他成员身高相同，但根据诅咒的性质，他们通常更矮壮、筋肉发达或更灵活。）"
+        ]
+      },
+      "speedEntry": {
+        "ENG_name": "Speed:",
+        "name": "速度：",
+        "type": "item",
+        "entries": [
+          "30尺。如果你是小型，你可以将你的{@variantrule 速度|XPHB}减少5尺以获得一个额外的传统特质。"
+        ]
+      },
+      "entries": [
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "ENG_name": "Age:",
+              "name": "年龄：",
+              "type": "item",
+              "entries": [
+                "沃尔文以与其原始血统相同的速度成熟，但产生它们的魔法减弱了衰老的衰弱效应，即使在后文岁月中它们仍保持健康。"
+              ]
+            }
+          ]
+        },
+        {
+          "ENG_name": "Traditional Wulven Traits",
+          "name": "传统沃尔文特质",
+          "type": "inset",
+          "entries": [
+            "许多沃尔文会引导它们诅咒所链接的生物的自然本能——通常是其天生的凶猛。",
+            {
+              "ENG_name": "Combat Traits:",
+              "name": "战斗特质：",
+              "type": "entries",
+              "entries": [
+                {
+                  "type": "list",
+                  "items": [
+                    "{@optfeature 猎人的本能|GrimHollowPG24}",
+                    "{@optfeature 天生攻击|GrimHollowPG24}（爪击）",
+                    "{@optfeature 驮役猎人|GrimHollowPG24}"
+                  ]
+                }
+              ]
+            },
+            {
+              "ENG_name": "Exploration Traits:",
+              "name": "探索特质：",
+              "type": "entries",
+              "entries": [
+                {
+                  "type": "list",
+                  "items": [
+                    "{@optfeature 速度爆发|GrimHollowPG24}",
+                    "{@optfeature 攀爬工具|GrimHollowPG24}"
+                  ]
+                }
+              ]
+            },
+            {
+              "ENG_name": "Roleplaying Traits:",
+              "name": "扮演特质：",
+              "type": "entries",
+              "entries": [
+                {
+                  "type": "list",
+                  "items": [
+                    "{@optfeature 运动员的精魄|GrimHollowPG24}",
+                    "{@optfeature 天生察觉|GrimHollowPG24}",
+                    "{@optfeature 自然之声|GrimHollowPG24}"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "entries": [
+            {
+              "ENG_name": "Trait Selection",
+              "name": "特质选择",
+              "type": "entries",
+              "entries": [
+                "选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|特性 类型=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
+              ]
+            }
+          ]
+        }
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "subraces": [],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Race/Wulven.webp"
+            },
+            "credit": "Konstantin Porubov",
+            "width": 850,
+            "height": 1715
+          }
+        ]
+      }
+    }
+  ]
+}

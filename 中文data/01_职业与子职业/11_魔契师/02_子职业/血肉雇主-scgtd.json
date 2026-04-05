@@ -1,0 +1,198 @@
+{
+  "ENG_name": "Flesh Patron",
+  "name": "血肉雇主",
+  "source": "GuideDrakkenheim",
+  "shortName": "血肉",
+  "page": 174,
+  "className": "魔契师",
+  "classSource": "phb",
+  "subclassFeatures": [
+    {
+      "ENG_name": "Flesh Patron",
+      "name": "血肉雇主",
+      "source": "GuideDrakkenheim",
+      "page": 174,
+      "className": "魔契师",
+      "classSource": "phb",
+      "subclassShortName": "血肉",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "entries": [
+        "一名血肉魔契师与一个如此异域和未知的实体缔结了契约，以至于它的存在本身就足以让大多数人陷入疯狂。这些魔契师允许一个异域实体寄居在他们的身体中，回应某种远古且难以理解的诡异存在。这个实体与宿主形成了一种共生关系，在重塑和扭曲其形态的同时赋予它们力量。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "扩展法术列表|魔契师|phb|血肉|GuideDrakkenheim|1|GuideDrakkenheim"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "无甲防御|魔契师|phb|血肉|GuideDrakkenheim|1|GuideDrakkenheim"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "重塑血肉|魔契师|phb|血肉|GuideDrakkenheim|1|GuideDrakkenheim"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Expanded Spell List",
+      "name": "扩展法术列表",
+      "source": "GuideDrakkenheim",
+      "page": 174,
+      "className": "魔契师",
+      "classSource": "phb",
+      "subclassShortName": "血肉",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "entries": [
+        "血肉让你在学习魔契师法术时可以从扩展法术列表中选择。以下法术将被添加到你的魔契师法术列表中。",
+        {
+          "type": "table",
+          "caption": "扩展法术列表",
+          "colLabels": [
+            "法术环阶",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "1st",
+              "{@spell 跳跃术}, {@spell 护盾术}"
+            ],
+            [
+              "2nd",
+              "{@spell 强化属性}, {@spell 变巨/缩小术}"
+            ],
+            [
+              "3rd",
+              "{@spell 加速术}, {@spell 缓慢术}"
+            ],
+            [
+              "4th",
+              "{@spell 艾伐黑触手||黑触手}, {@spell 变形术}"
+            ],
+            [
+              "5th",
+              "{@spell 高等复原术}, {@spell 转生术}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Unarmored Defense",
+      "name": "无甲防御",
+      "source": "GuideDrakkenheim",
+      "page": 174,
+      "className": "魔契师",
+      "classSource": "phb",
+      "subclassShortName": "血肉",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "entries": [
+        "当你未穿戴护甲且未持用盾牌时，你的护甲等级等于10 + 你的敏捷调整值 + 你的体质调整值。"
+      ]
+    },
+    {
+      "ENG_name": "Reshape Flesh",
+      "name": "重塑血肉",
+      "source": "GuideDrakkenheim",
+      "page": 174,
+      "className": "魔契师",
+      "classSource": "phb",
+      "subclassShortName": "血肉",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "entries": [
+        "作为一个动作，你可以采取一个重塑的形态，该形态持续到你陷入失能、用一个动作变回原形或再次使用此特性为止。当你这样做时，从下方的一个重塑形态中选择：",
+        {
+          "type": "list",
+          "items": [
+            "{@bold 反向膝盖骨。} 你的双腿变得更加强壮，你的膝盖现在反向弯曲。在此形态下，你的步行速度增加10尺，并且你可以将你的长跳和跳高距离翻倍。",
+            "{@bold 水生属性}。你长出鳃，皮肤变得粘滑，手指和脚趾之间的血肉变成蹼状。在此形态下，你可以水下呼吸，并获得等同于行走速度的游泳速度。",
+            "{@bold 天生武器。} 你长出爪子、尖牙、尖刺、角或其他你选择的天生武器。你的徒手打击造成1d6钝击、穿刺或挥砍伤害（取决于你选择的天生武器），并且你擅长徒手打击。你可以使用你的魅力调整值进行攻击和伤害掷骰。你的徒手打击伤害会随着此职业等级提升而增加：{@damage 2d6}伤害从10级开始，{@damage 3d6}伤害在14级时。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Body Modification",
+      "name": "身体改造",
+      "source": "GuideDrakkenheim",
+      "page": 174,
+      "className": "魔契师",
+      "classSource": "phb",
+      "subclassShortName": "血肉",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "当你选择重塑形态时，可以选择任意两个可用的选项。",
+        "当你采取一个重塑的形态时，你将获得以下额外选项：",
+        {
+          "type": "list",
+          "items": [
+            "{@bold 胶质骨骼。} 你的皮肤看起来松垮下垂，因为你努力维持自己的体系。你现在可以挤入直径小至一英寸的空间，并在{@skill 隐匿}检定上获得优势。",
+            "{@bold 变形外表。} 你改变自己的外貌。你可以决定自己的外观，包括身高、体重、面部特征、声音的音色、毛发长度、颜色以及任何显著的性格特征。你可以使自己看起来像是另一个种族的成员，但你的数据不会改变。你不能使自己看起来像是体型与你不同的生物，且你的基本形态保持不变。例如，如果你是双足行走的，你不能通过这个法术变成四足行走的。",
+            "{@bold 战斗本能。} 在你的回合中，当你采取{@action 攻击}动作时，你可以攻击两次而非一次。此外，你的天生武器和徒手打击在克服对钝击、穿刺和挥砍伤害的抗性时被视为魔法武器。",
+            "{@bold 蜘蛛爪击} 你的手脚长出奇怪的黏液覆盖的昆虫特征，使你能够攀爬表面。你获得等同于行走速度的攀爬速度，并且无需进行属性检定即可粘附在天花板上。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Physiological Mastery",
+      "name": "生理精通",
+      "source": "GuideDrakkenheim",
+      "page": 174,
+      "className": "魔契师",
+      "classSource": "phb",
+      "subclassShortName": "血肉",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "当你采取一个重塑的形态时，你将获得以下额外选项：",
+        {
+          "type": "list",
+          "items": [
+            "{@bold 空中适应} 羽毛或蝙蝠般的翅膀从你的背部撕裂而出，你获得等同于你步行速度的飞行速度。",
+            "{@bold 剧毒烟雾。} 一团毒害瓦斯从你的毛孔中渗出，你看起来病态不堪，绿软泥从你的毛孔中渗出。在此形态下，你在魅力检定上具有劣势，但任何生物在其回合开始时若处于你10尺范围内，将受到{@damage 2d6}毒素伤害，并且在对你进行攻击检定时具有劣势。",
+            "{@bold 硬化皮肤。} 你获得对非魔法武器造成的钝击、穿刺和挥砍伤害的抗性。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Unfathomable Horror",
+      "name": "不可名状的惊恐",
+      "source": "GuideDrakkenheim",
+      "page": 174,
+      "className": "魔契师",
+      "classSource": "phb",
+      "subclassShortName": "血肉",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "你可以选择任何三个可用选项当你使用你的重塑血肉特性变形时。此外，你对任何会违背你意愿改变你形态的法术或效应免疫。"
+      ]
+    }
+  ],
+  "subclassSpells": [
+    "跳跃术",
+    "护盾术",
+    "强化属性",
+    "变巨/缩小术",
+    "加速术",
+    "缓慢术",
+    "艾伐黑触手",
+    "变形术",
+    "高等复原术",
+    "转生术"
+  ],
+  "hasFluff": true,
+  "hasFluffImages": true
+}

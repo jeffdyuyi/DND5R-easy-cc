@@ -1,0 +1,160 @@
+[
+  {
+    "ENG_name": "Rod of Seven Parts",
+    "name": "七碎片之杖",
+    "source": "VEoR",
+    "page": 8,
+    "baseItem": "长棍|PHB",
+    "type": "RD|DMG",
+    "rarity": "artifact",
+    "reqAttune": true,
+    "weight": 4,
+    "weaponCategory": "simple",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "bonusWeapon": "+3",
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d4 + 3}",
+    "charges": 7,
+    "entries": [
+      "亿万年前，原始生物与神明之间的战争在存在之界留下了伤痕。一个名叫{@creature 米斯卡，狼蛛|VEoR}的恶魔领主最终将原始生物的敌人推向了灭绝的边缘。",
+      "为了拯救自己和他们的盟友，被称为Aaqa风公爵的强大元素生物反抗了Miska。风公爵致力于法律的概念，他们来自一个曾经统治过许多世界的种族，称为vaati。七位风公爵将他们的力量编织进一个被称为法律之杖的神器中。公爵们使用这根杖将Miska囚禁在混沌之地。结果，这根杖碎成了七部分，散布在整个多元宇宙中。因此，这根杖被称为七部分之杖。",
+      {
+        "ENG_name": "Possessing the Broken Rod",
+        "name": "持有破碎的法杖",
+        "type": "entries",
+        "entries": [
+          "当权杖破碎时，无法与之协调。当你拿着权杖的一块碎片时，你能感知到下一块连续碎片的大致位置，因为权杖渴望成为一个完整的神器。多个权杖碎片可以组装成一块或再次拆分，每种操作都需要一个动作，尽管部分完成的权杖不会获得任何其他能力。",
+          "此外，当你持有破碎魔杖的一片时，你可以使用一个动作来施放与那片魔杖相关联的法术，如魔杖碎片表上所列。一旦那片魔杖被用来施放法术，直到下一个黎明之前，它不能再以这种方式使用。"
+        ]
+      },
+      {
+        "type": "table",
+        "caption": "法杖碎片",
+        "colStyles": [
+          "col-2",
+          "col-10"
+        ],
+        "colLabels": [
+          "碎片",
+          "法术"
+        ],
+        "rows": [
+          [
+            "第一",
+            "{@spell 通神术}"
+          ],
+          [
+            "第二",
+            "{@spell 秘法门}"
+          ],
+          [
+            "第三",
+            "{@spell 反转重力} (spell豁免 {@dc 18})"
+          ],
+          [
+            "第四",
+            "{@spell 再生术}"
+          ],
+          [
+            "第五",
+            "{@spell 寻路术}"
+          ],
+          [
+            "第六",
+            "{@spell 海市蜃楼}"
+          ],
+          [
+            "第七",
+            "{@spell 拟像术}"
+          ]
+        ]
+      },
+      {
+        "ENG_name": "Possessing the Whole Rod",
+        "name": "持有完整的法杖",
+        "type": "entries",
+        "entries": [
+          "一旦七部分重新组装完毕，生物就可以与七部分法杖同步。在与法杖同步时，你将获得以下好处："
+        ]
+      },
+      {
+        "ENG_name": "Magic Weapon",
+        "name": "魔化武器",
+        "type": "entries",
+        "entries": [
+          "七部分法杖对你来说，作为一根魔法长棍使用，它在使用时提供+3的攻击和伤害骰的加值。"
+        ]
+      },
+      {
+        "ENG_name": "Rod Spellcasting",
+        "name": "法杖施法",
+        "type": "entries",
+        "entries": [
+          "七部分法杖拥有7次充能，并在每天黎明时恢复{@dice 1d4 + 3}次消耗的充能。持有法杖时，你可以使用一个行动消耗1次充能来施放《Rod Pieces》表中的任何一个法术。你还可以使用一个行动不消耗任何充能从法杖施放{@spell 侦测善恶}。"
+        ]
+      },
+      {
+        "ENG_name": "Ultimate Law",
+        "name": "终极法则",
+        "type": "entries",
+        "entries": [
+          "如果你不是守序阵营，你会发现你的世界观开始向保持个人准则转变。你更倾向于遵守承诺，履行声明，并坚守你的信仰。"
+        ]
+      },
+      {
+        "ENG_name": "Destroying the Rod",
+        "name": "摧毁法杖",
+        "type": "entries",
+        "entries": [
+          "摧毁七部分法杖的唯一方法是将其组装好的法杖浸入无底深渊中的熔岩中。它必须在熔岩中保持五十年，才会最终被消耗掉。",
+          "魔杖的一片可能以这种方式暂时被摧毁，但每片在屈服后一年会重新形成。重新形成的一片会传送到多元宇宙中的一个随机地点。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "秘法门",
+          "通神术",
+          "侦测善恶",
+          "寻路术",
+          "海市蜃楼",
+          "再生术",
+          "反转重力",
+          "拟像术"
+        ]
+      }
+    },
+    "hasFluffImages": true,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/VEoR/Rod of Seven Parts.webp"
+          },
+          "credit": "CoupleofKooks",
+          "width": 315,
+          "height": 1000
+        },
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/VEoR/Rod of Seven Parts Piece.webp"
+          },
+          "title": "七部分之杖的一部分",
+          "credit": "CoupleofKooks",
+          "width": 850,
+          "height": 1151
+        }
+      ]
+    }
+  }
+]

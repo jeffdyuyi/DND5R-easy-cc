@@ -1,0 +1,37 @@
+[
+  {
+    "ENG_name": "Gateway Ring",
+    "name": "通路之戒",
+    "source": "GriffonsSaddlebag2",
+    "page": 86,
+    "type": "RG|DMG",
+    "tier": "主要",
+    "rarity": "very rare",
+    "entries": [
+      "这枚戒指由微小的、覆盖着苔藓的石块制成，蕴含着古老的妖精魔法。你可以以一个动作说出戒指的命令语，随后说出任意存在平面上的一个具体位置的名称或描述，然后将戒指投向你身边10尺内的一处未占据空间。戒指会在落地处扩展成一个漂浮在地面1尺高的圆形岩石传送门，直径5尺，厚1尺，最多持续1分钟。",
+      "该传送门复制{@spell 异界之门|PHB}法术的效应，在目的地创造另一个岩石传送门。这个版本的法术无法以个体生物作为目标，但可以指定与你位于同一存在平面的精确位置作为目标。",
+      "你可以用一个动作，一边用手触摸传送门一边再次说出戒指的命令语，提前结束法术并关闭传送门。这样做时，戒指会恢复正常大小并重新出现在你手上。如果传送门持续了它全部的持续时间，戒指会恢复正常大小并随机掉落在传送门的任意一侧。戒指使用后，需等待10天才能再次使用。"
+    ],
+    "attachedSpells": {
+      "other": [
+        "异界之门"
+      ]
+    },
+    "lootTables": [
+      "魔法物品表 H1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Gateway-Ring.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

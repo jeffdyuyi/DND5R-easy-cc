@@ -1,0 +1,109 @@
+[
+  {
+    "name": "城市猎人",
+    "ENG_name": "Urban Bounty Hunter",
+    "source": "SCAG",
+    "page": 153,
+    "skillProficiencies": [
+      {
+        "choose": {
+          "from": [
+            "欺瞒",
+            "洞悉",
+            "游说",
+            "隐匿"
+          ],
+          "count": 2
+        }
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "choose": {
+          "from": [
+            "gaming set",
+            "musical instrument",
+            "thieves' tools"
+          ],
+          "count": 2
+        }
+      }
+    ],
+    "startingEquipment": [
+      {
+        "_": [
+          {
+            "item": "小包|phb",
+            "containsValue": 2000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "从{@skill 欺瞒}，{@skill 洞悉}，{@skill 游说}，以及{@skill 隐匿}中选择两项"
+          },
+          {
+            "ENG_name": "Tool Proficiencies:",
+            "name": "工具熟练",
+            "type": "item",
+            "entry": "从{@filter 赌具|items|source=phb|miscellaneous=平凡的|type=赌具}，一种{@filter 乐器|items|source=phb|miscellaneous=平凡的|type=乐器}，以及{@item 盗贼工具|phb}这三项中选择两项"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "一套适合你职责的衣服和一个装有20 gp的{@item 小包|phb}"
+          }
+        ]
+      },
+      {
+        "ENG_name": "Feature: Ear to the Ground",
+        "name": "特性：耳目众多",
+        "type": "entries",
+        "entries": [
+          "你经常与所选定猎物途径地区的社会人士接触。这些人可能与黑社会罪犯、街头莽汉或上流社会成员相关联。这种联系其形式为，每个你所访问的城市都存在一名相应的联络人，该人物会为你提供当地人文和地理的各种相关情报。"
+        ],
+        "data": {
+          "isFeature": true
+        }
+      },
+      {
+        "ENG_name": "Suggested Characteristics",
+        "name": "建议人物特征",
+        "type": "entries",
+        "entries": [
+          "使用 {@background 罪犯} 中\"罪犯\"的特征表格作为你的基础特征和动机，并在适当的时候修改条目以让其符合你作为城市猎人的身份。",
+          "例如，你的牵绊可能与其他赏金猎人或某雇佣你的组织或个人相关。你的理想可能与你抓捕目标猎物的决心相关，或是与你获得可靠名声的渴望相关。"
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "entries": [
+                "在你成为冒险家之前，你的生活已经充满了冲突和刺激，因为你是靠追踪人来谋生的。然而，与一些收集赏金的人不同，你不是一个野蛮人，会追踪目标进入或穿越荒野。你参与了一个在你居住的地方有利可图的交易，这经常考验你的技能和生存本能。更重要的是，你并不孤单，就像荒野中的赏金猎人那样：你经常与犯罪亚文化和其他赏金猎人互动，在这两个领域保持联系，以帮助你成功。",
+                "你可能是一个狡猾的捕贼高手，潜行在屋顶上捕捉城市中无数的盗贼。或许你是那种耳听八方的人，了解盗贼公会和街头帮派的动向。你可能是一个\"天鹅绒面具\"赏金猎人，一个混入上流社会和贵族圈子的人，目的是捕捉那些以富人为目标的罪犯，无论是扒手还是诈骗艺术家。你从事这一行当的社区可能是费伦的某个大都市，比如深水城或博德之门，或者人口较少的地方，也许是卢斯坎或亚塔——任何足够大到有稳定潜在目标的地方。",
+                "作为冒险团队的一员，你可能会发现追求与团队目标不符的个人议程更加困难——但另一方面，你可以在同伴们的帮助下击败更加强大的目标。"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hasFluff": true,
+    "translator": "不全书",
+    "edition": "classic"
+  }
+]

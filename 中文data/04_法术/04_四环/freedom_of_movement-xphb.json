@@ -1,0 +1,71 @@
+[
+  {
+    "ENG_name": "Freedom of Movement",
+    "name": "行动自如",
+    "source": "XPHB",
+    "page": 277,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 4,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一根皮条"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你触碰一个自愿生物。在法术持续时间内，目标的移动不受{@variantrule 困难地形|XPHB}影响，且任何法术或其他魔法效应都不能降低目标的{@variantrule 速度|XPHB}，或者使目标陷入{@condition 麻痹|XPHB}或{@condition 束缚|XPHB}状态。目标还会获得等同于其{@variantrule 速度|XPHB}的{@variantrule 游泳速度|XPHB}。",
+      "此外，该目标还可以花费 5 尺移动力直接从非魔法的束缚物中挣脱（诸如镣铐或其他生物对其施加的{@condition 受擒|XPHB}状态）。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "使用的法术位每比四环高一环，你就可以额外再指定一名生物作为此法术的目标。"
+        ]
+      }
+    ],
+    "conditionImmune": [
+      "麻痹",
+      "束缚"
+    ],
+    "miscTags": [
+      "SCT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "牧师",
+      "德鲁伊",
+      "游侠",
+      "奇械师"
+    ],
+    "display_school": "防护系"
+  }
+]

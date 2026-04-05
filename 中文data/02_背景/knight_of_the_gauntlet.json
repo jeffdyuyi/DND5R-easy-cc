@@ -1,0 +1,141 @@
+[
+  {
+    "name": "臂铠骑士",
+    "ENG_name": "Knight of the Gauntlet",
+    "source": "FRHoF",
+    "edition": "one",
+    "page": 32,
+    "ability": [
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "str",
+              "int",
+              "wis"
+            ],
+            "weights": [
+              2,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "str",
+              "int",
+              "wis"
+            ],
+            "weights": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      }
+    ],
+    "feats": [
+      {
+        "新锻臂铠|frhof": true
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "athletics": true,
+        "medicine": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "smith's tools": true
+      }
+    ],
+    "startingEquipment": [
+      {
+        "A": [
+          "矛|xphb",
+          "铁匠工具|xphb",
+          "牛眼提灯|xphb",
+          "圣徽|xphb",
+          "镣铐|xphb",
+          {
+            "item": "燃油|xphb",
+            "displayName": "燃油（5扁瓶）"
+          },
+          "火绒盒|xphb",
+          "旅行服装|xphb",
+          {
+            "value": 900
+          }
+        ],
+        "B": [
+          {
+            "value": 5000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability Scores:",
+            "name": "属性值：",
+            "type": "item",
+            "entry": "力量，智力，感知"
+          },
+          {
+            "ENG_name": "Feat:",
+            "name": "专长：",
+            "type": "item",
+            "entry": "{@feat 新锻臂铠|FRHoF}"
+          },
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 运动|XPHB}与{@skill 医药|XPHB}"
+          },
+          {
+            "ENG_name": "Tool Proficiencies:",
+            "name": "工具熟练",
+            "type": "item",
+            "entry": "{@item 铁匠工具|XPHB}"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "选择A或B：（A）{@item 矛|XPHB}，{@item 铁匠工具|XPHB}，{@item 牛眼提灯|XPHB}，{@item 圣徽|XPHB}，{@item 镣铐|XPHB}，{@item 燃油|XPHB}（5扁瓶），{@item 火绒盒|XPHB}，{@item 旅行服装|XPHB}，9GP；或（B）50GP"
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "并非所有回应更加强大力量召唤之人都甘心于待在沉闷的神庙后殿里面苦苦钻研经文。你以加入臂铠骑士团的方式走上了神圣武者的道路。作为一位臂铠骑士，你对邪恶力量报以正义的轻蔑，将坚定不移的同志视为携手并肩的骨肉同胞，并对战争的幸存者抱以由衷的怜悯。武器与圣徽在手，你发誓永不停歇，直至正义的光芒驱散费伦大陆上每一片混沌的阴影。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "backgrounds/FRHoF/Knight of the Gauntlet.webp"
+          },
+          "credit": "Eric Belisle",
+          "width": 1700,
+          "height": 648
+        }
+      ]
+    },
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "translator": "不全书"
+  }
+]

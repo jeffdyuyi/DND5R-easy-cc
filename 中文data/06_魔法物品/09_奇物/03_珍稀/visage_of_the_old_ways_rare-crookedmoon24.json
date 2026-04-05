@@ -1,0 +1,56 @@
+[
+  {
+    "ENG_name": "Visage of the Old Ways (Rare)",
+    "name": "旧途之貌（珍稀）",
+    "source": "CrookedMoon24",
+    "page": 607,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "property": [
+      "TCM'24:FH"
+    ],
+    "entries": [
+      "这张木雕面具带有鬼影般的神情，使佩戴者的双目看起来如同空洞的幽影。兔耳在头部上方竖起。当你戴上面具时，你会听见来自远古森林的至高妖精之低语在你脑海深处回响。",
+      "佩戴这张面具期间，当你造成火焰伤害时，你的伤害掷骰会获得+2加值，并且你还可以使用如下词条。",
+      {
+        "ENG_name": "Cultic Mask (Rare+)",
+        "name": "秘仪面具（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "你无法被预言系法术指定为目标，或通过探知传感器被感知。为辨识你身份而进行的属性检定的DC最低为25。"
+        ]
+      },
+      {
+        "ENG_name": "Fire Within (Rare+)",
+        "name": "内蕴焚炎（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "当你处于燃烧时，你的武器攻击会额外造成{@damage 2d4}火焰伤害。你可以使用{@variantrule 附赠动作|XPHB}开始或终止燃烧。"
+        ]
+      },
+      {
+        "ENG_name": "Strange Sight (Rare+)",
+        "name": "异火视界（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "你具有{@sense 黑暗视觉|XPHB}，范围为60尺，并且可以正常看穿被浓烟遮蔽的区域。"
+        ]
+      }
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Visage%20of%20the%20Old%20Ways.webp"
+          },
+          "width": 1092,
+          "height": 1200,
+          "credit": "Rowan Holloway"
+        }
+      ]
+    }
+  }
+]

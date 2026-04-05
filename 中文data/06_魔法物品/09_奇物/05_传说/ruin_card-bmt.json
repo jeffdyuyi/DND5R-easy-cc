@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "Ruin Card",
+    "name": "毁灭卡",
+    "source": "BMT",
+    "page": 15,
+    "rarity": "legendary",
+    "wondrous": true,
+    "recharge": "拂晓",
+    "entries": [
+      "作为动作，你可以挥舞这张卡牌并用其施放{@spell 解离术}（豁免{@dc 17}）。这一特性一经使用，直到次日黎明之前无法再次使用。"
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "解离术"
+        ]
+      }
+    },
+    "hasFluffImages": true,
+    "valueReference": 200000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "decks/BMT/Deck of Many Things/16-ruin.webp"
+          },
+          "credit": "Andrea Sipl",
+          "width": 850,
+          "height": 1552
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

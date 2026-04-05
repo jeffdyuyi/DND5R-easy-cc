@@ -1,0 +1,58 @@
+[
+  {
+    "ENG_name": "Forgekeeper's Spark",
+    "name": "锻炉火花",
+    "source": "GriffonsSaddlebag2",
+    "page": 84,
+    "tier": "次要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "sentient": true,
+    "entries": [
+      "这块煤炭中残存着一个火元素精魄的碎片，使其表面覆盖着触摸起来温暖宜人的无害蓝色余烬。当被火焰包围时，煤炭会燃烧出魔法蓝焰，其中的精魄便会显现。精魄会一直存在直到火焰熄灭或被浇灭，届时精魄会藏回煤炭中，直到再次置入火焰中。如果将其从火中取出，精魄会随着燃烧的煤炭移动并持续存在最多1分钟。",
+      "当精魄存在时，它会帮助照料所在的火焰。精魄可以维持一个最多占据5尺立方空间的火焰。被精魄照料的火焰获得以下好处：",
+      {
+        "type": "list",
+        "items": [
+          "它不会被强风吹灭。",
+          "除非你愿意，否则不会产生烟雾。",
+          "使用相同数量的燃料可以燃烧两倍的正常持续时间。",
+          "在火焰中烹饪的食物会保持理想的温度。"
+        ]
+      },
+      "此外，当你使用{@item 厨师工具|PHB}或{@item 玻璃匠工具|PHB|玻璃吹制者}、{@item 铁匠工具|PHB|铁匠}或{@item 修补工具|PHB}在火焰中加热和制造物品时，相关的属性检定具有优势。如果你在{@dice d20}上掷出15或更高的结果，使用工具所需的时间减半。",
+      {
+        "ENG_name": "Sentience",
+        "name": "智能",
+        "type": "entries",
+        "entries": [
+          "锻炉火花是一件守序中立的智能物品，具有1智力、6感知和1魅力。它免疫火焰伤害，具有60尺范围的听觉和{@sense 黑暗视觉}。它不能说话或阅读，但能理解{@language 通用语}和{@language 原初语||火族语}。"
+        ]
+      },
+      {
+        "ENG_name": "Personality",
+        "name": "个性",
+        "type": "entries",
+        "entries": [
+          "锻炉火花最喜欢待在锻造炉的火焰中，也喜欢帮忙维持营火。它严格控制着火焰的边界，防止火势失控蔓延，并且善于管理给它的任何燃料。它喜欢协助烹饪和金属加工等任务，当有新东西需要加热时，它会兴奋地火花四射，噼啪作响。"
+        ]
+      }
+    ],
+    "lootTables": [
+      "魔法物品表 B2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Forgekeepers-Spark.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

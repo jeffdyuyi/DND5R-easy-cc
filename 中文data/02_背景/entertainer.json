@@ -1,0 +1,464 @@
+[
+  {
+    "name": "艺人",
+    "ENG_name": "Entertainer",
+    "source": "PHB",
+    "page": 130,
+    "skillProficiencies": [
+      {
+        "acrobatics": true,
+        "performance": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "disguise kit": true,
+        "anyMusicalInstrument": 1
+      }
+    ],
+    "startingEquipment": [
+      {
+        "_": [
+          {
+            "equipmentType": "instrumentMusical"
+          },
+          {
+            "special": "倾慕者的信物（情书、一缕头发或者饰品）"
+          },
+          "表演服装|phb",
+          {
+            "item": "小包|phb",
+            "containsValue": 1500
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 特技}, {@skill 表演}"
+          },
+          {
+            "ENG_name": "Tool Proficiencies:",
+            "name": "工具熟练",
+            "type": "item",
+            "entry": "{@item 易容工具|phb}, 一种类型的{@filter 乐器|items|source=phb|miscellaneous=平凡的|type=乐器}"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "{@filter 乐器|items|source=phb|miscellaneous=平凡的|type=乐器}（任选其一），一个仰慕者的恩惠（情书、一缕头发或小饰品），{@item 表演服装|phb}，以及一个装有15 gp的{@item 小包|phb}"
+          }
+        ]
+      },
+      {
+        "ENG_name": "Feature: By Popular Demand",
+        "name": "特性：人见人爱",
+        "type": "entries",
+        "entries": [
+          "你总是能找到表演场地，通常是酒馆或者客栈，偶尔也会是马戏团、剧院，甚至是贵族厅堂。只要你每晚维持出演，就可以在表演地获得简朴或舒适水平的免费食宿（取决于表演的规模）。此外，表演生涯使你在当地获得一定名气。当你在演出的城镇被陌生人认出时，通常都会受到善待。"
+        ],
+        "data": {
+          "isFeature": true
+        }
+      },
+      {
+        "ENG_name": "Specialty",
+        "name": "手法",
+        "type": "entries",
+        "entries": [
+          "优秀的艺人应当多才多艺，并且能够在一次表演中以多种不同套路娱乐观众。自选一到三种套路或掷骰随机决定你作为艺人的技艺。",
+          {
+            "type": "table",
+            "colLabels": [
+              "d10",
+              "演艺方向"
+            ],
+            "colStyles": [
+              "col-1 text-center",
+              "col-11"
+            ],
+            "rows": [
+              [
+                "1",
+                "演员"
+              ],
+              [
+                "2",
+                "舞者"
+              ],
+              [
+                "3",
+                "吞火艺人"
+              ],
+              [
+                "4",
+                "小丑"
+              ],
+              [
+                "5",
+                "魔术师"
+              ],
+              [
+                "6",
+                "乐师"
+              ],
+              [
+                "7",
+                "诗人"
+              ],
+              [
+                "8",
+                "歌手"
+              ],
+              [
+                "9",
+                "讲述者"
+              ],
+              [
+                "10",
+                "杂技演员"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Suggested Characteristics",
+        "name": "建议人物特征",
+        "type": "entries",
+        "entries": [
+          "成功的艺人能够唤起并抓住观众的注意力，所以他们倾向拥有张扬或亲和的特征。他们对浪漫趋之若鹜，并对艺术和审美的标准坚持高傲的理想。",
+          {
+            "type": "table",
+            "colLabels": [
+              "d8",
+              "特点"
+            ],
+            "colStyles": [
+              "col-1 text-center",
+              "col-11"
+            ],
+            "rows": [
+              [
+                "1",
+                "我知道一个几乎适合所有情况的故事。"
+              ],
+              [
+                "2",
+                "我到一个新地方后就会着手收集当地的流言和小道消息。"
+              ],
+              [
+                "3",
+                "我是个无可救药的浪漫主义者，总是在寻找那个\"特别的人\"。"
+              ],
+              [
+                "4",
+                "我周围的人都不会生气太久，因为我总能缓和紧张的气氛。"
+              ],
+              [
+                "5",
+                "我喜欢精妙的讽刺，即使那是对我的讽刺也一样。"
+              ],
+              [
+                "6",
+                "我一旦不能成为众人焦点就会很难受。"
+              ],
+              [
+                "7",
+                "我是完美主义者。"
+              ],
+              [
+                "8",
+                "我的情绪和思想变得和弹琴轮指一样快。"
+              ]
+            ]
+          },
+          {
+            "type": "table",
+            "colLabels": [
+              "d6",
+              "理念"
+            ],
+            "colStyles": [
+              "col-1 text-center",
+              "col-11"
+            ],
+            "rows": [
+              [
+                "1",
+                "美好Beauty。我表演时的世界会显得更美好。（善良）"
+              ],
+              [
+                "2",
+                "传统Tradition。过去的故事、史诗以及歌谣塑造了我们，因而他们不该被遗忘。（守序）"
+              ],
+              [
+                "3",
+                "创新Creativity。世界需要崭新的创意和大胆的行动。（混乱）"
+              ],
+              [
+                "4",
+                "贪婪Greed。我只是为名为利罢了。（邪恶）"
+              ],
+              [
+                "5",
+                "人民People。我喜欢表演时人们脸上的笑容。那就是我想要的。（中立）"
+              ],
+              [
+                "6",
+                "正直Honesty。艺术展现灵魂。它应当发自内心，揭露本我。（任意）"
+              ]
+            ]
+          },
+          {
+            "type": "table",
+            "colLabels": [
+              "d6",
+              "牵挂"
+            ],
+            "colStyles": [
+              "col-1 text-center",
+              "col-11"
+            ],
+            "rows": [
+              [
+                "1",
+                "我的乐器是我最宝贵的财富，它纪念着某个我所爱之人。"
+              ],
+              [
+                "2",
+                "有人偷走了我珍爱的乐器，而我一定要夺回来。"
+              ],
+              [
+                "3",
+                "我要不惜一切代价让自己出名。"
+              ],
+              [
+                "4",
+                "我崇拜古老传奇中的某位英雄，并时时以他作榜样。"
+              ],
+              [
+                "5",
+                "只要能证明我比那个可恨的对手强，我愿意做任何事情。"
+              ],
+              [
+                "6",
+                "我可以为老剧团的同伴做任何事。"
+              ]
+            ]
+          },
+          {
+            "type": "table",
+            "colLabels": [
+              "d6",
+              "缺陷"
+            ],
+            "colStyles": [
+              "col-1 text-center",
+              "col-11"
+            ],
+            "rows": [
+              [
+                "1",
+                "我会不择手段的去获取声誉和名望。"
+              ],
+              [
+                "2",
+                "我对漂亮脸蛋非常着迷。"
+              ],
+              [
+                "3",
+                "某个丑闻让我背井离乡。而这麻烦依然如影随形。"
+              ],
+              [
+                "4",
+                "我曾经讽刺过一个贵族，现在他仍然想要我的脑袋。而这错误我可能还会再犯。"
+              ],
+              [
+                "5",
+                "我总是忍不住道出自己的真实感受。而我的刻薄言辞也经常带给我麻烦。"
+              ],
+              [
+                "6",
+                "就算我尽了全力，我的朋友们还是认为我靠不住。"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "entries": [
+                "你在观众面前的表演生涯下成长。逐渐学会如何取悦他人，如何令他们着迷，甚至学会了如何激励他们。你的诗篇挑动听众的心弦，带动他们的喜怒哀乐。你的音乐振作他们的精神，或勾起他们的伤感。你的舞步令人着迷，你的幽默一针见血。无论你擅长何技，艺术即是你的生命。"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hasFluff": true,
+    "reprintedAs": [
+      "艺人|XPHB"
+    ],
+    "translator": "不全书",
+    "edition": "classic"
+  },
+  {
+    "name": "艺人",
+    "ENG_name": "Entertainer",
+    "source": "XPHB",
+    "edition": "one",
+    "page": 180,
+    "ability": [
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "str",
+              "dex",
+              "cha"
+            ],
+            "weights": [
+              2,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "str",
+              "dex",
+              "cha"
+            ],
+            "weights": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      }
+    ],
+    "feats": [
+      {
+        "音乐家|xphb": true
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "acrobatics": true,
+        "performance": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "anyMusicalInstrument": 1
+      }
+    ],
+    "startingEquipment": [
+      {
+        "A": [
+          {
+            "equipmentType": "instrumentMusical"
+          },
+          {
+            "item": "戏服|xphb",
+            "quantity": 2
+          },
+          {
+            "item": "镜子|xphb"
+          },
+          {
+            "item": "香水|xphb"
+          },
+          {
+            "item": "旅行服装|xphb"
+          },
+          {
+            "value": 1100
+          }
+        ],
+        "B": [
+          {
+            "value": 5000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability Scores:",
+            "name": "属性值：",
+            "type": "item",
+            "entry": "力量，敏捷，魅力"
+          },
+          {
+            "ENG_name": "Feat:",
+            "name": "专长：",
+            "type": "item",
+            "entry": "{@feat 音乐家|XPHB}"
+          },
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 特技|XPHB}, {@skill 表演|XPHB}"
+          },
+          {
+            "ENG_name": "Tool Proficiency:",
+            "name": "工具熟练项：",
+            "type": "item",
+            "entry": "选择一种{@item 乐器|XPHB}"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "选择 A 或 B：(A) {@item 乐器|XPHB}（同上所选）、{@item 戏服|XPHB|2套服装}、{@item 镜子|XPHB}、{@item 香水|XPHB}、{@item 旅行服装|XPHB}、11 GP；或 (B) 50 GP"
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "你年轻时大部分时间都在参加巡回演出和嘉年华会，为音乐家和杂技演员们做零工以换取学习的机会。你可能已经学会了如何走钢丝，如何弹奏风格独特的{@item 鲁特琴|XPHB}，或是用怎样无可挑剔的发音方式吟诵诗歌。而现如今，你在喝彩声中茁壮成长，渴望登上舞台。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "backgrounds/XPHB/Entertainer.webp"
+          },
+          "credit": "Kenny Vo",
+          "width": 2513,
+          "height": 952
+        }
+      ]
+    },
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "translator": "不全书"
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "ENG_name": "Precision Attack",
+  "name": "精准攻击",
+  "source": "PHB",
+  "page": 74,
+  "reprintedAs": [
+    "精准攻击|XPHB"
+  ],
+  "featureType": [
+    "MV:B"
+  ],
+  "consumes": {
+    "ENG_name": "Superiority Die",
+    "name": "卓越骰"
+  },
+  "entries": [
+    "你进行武器攻击时，可以消耗一粒卓越骰以将其结果加在本次攻击的攻击检定中。你可以在进行攻击检定之前或之后使用此战技，不过必须在相应攻击效果生效之前作决定。"
+  ],
+  "translator": "不全书"
+}

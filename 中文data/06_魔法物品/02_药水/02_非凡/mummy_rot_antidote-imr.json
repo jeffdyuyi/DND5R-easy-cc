@@ -1,0 +1,17 @@
+[
+  {
+    "ENG_name": "Mummy Rot Antidote",
+    "name": "木乃伊之腐抗毒剂",
+    "source": "IMR",
+    "page": 94,
+    "type": "P",
+    "rarity": "uncommon",
+    "entries": [
+      "这种苍白灰色的药剂中不断旋转着白色的尘埃。当你喝下这种药剂时，它可以治愈你的木乃伊腐烂病。"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "valueReference": 200
+  }
+]

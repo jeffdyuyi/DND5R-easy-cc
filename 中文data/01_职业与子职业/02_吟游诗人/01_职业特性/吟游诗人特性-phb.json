@@ -1,0 +1,344 @@
+[
+    {
+        "ENG_name": "Bardic Inspiration",
+        "name": "吟游诗人激励",
+        "source": "PHB",
+        "page": 51,
+        "srd": true,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 1,
+        "entries": [
+            "你可以通过激励人心的话语或音乐激励他人。为此，你可以在自己回合内用一个附赠动作指定身边60尺内一个能听到你声音的生物（不能指定你自身），并使该生物获得一个诗人激励，即一个{@dice d6}的激励骰。",
+            "在接下来的10分钟内，该生物可以掷一次骰子，并将掷出的数字加到一次属性检定、攻击检定或豁免检定上。",
+            "你能够使用该特性的次数等于你的魅力调整值（最低一次）。完成一次长休后，你将重获所有消耗掉的使用次数。",
+            "激励骰在5级时变为{@dice d8}，10级时变为{@dice d10}，15级时变为{@dice d12}。"
+        ]
+    },
+    {
+        "ENG_name": "Spellcasting",
+        "name": "施法",
+        "source": "PHB",
+        "page": 51,
+        "srd": true,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 1,
+        "entries": [
+            "你习得以音乐为媒介解构、分解，并重新构造现实的方法。魅力是你施展吟游诗人法术的关键属性。"
+        ]
+    },
+    {
+        "ENG_name": "Jack of All Trades",
+        "name": "万事通",
+        "source": "PHB",
+        "page": 51,
+        "srd": true,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 2,
+        "entries": [
+            "第2级起，在你进行属性检定时，如果检定结果不包含你的熟练加值，则你可以将自身熟练加值的一半（向下取整）加入到检定结果中。"
+        ]
+    },
+    {
+        "ENG_name": "Song of Rest (d6)",
+        "name": "休憩曲(d6)",
+        "source": "PHB",
+        "page": 51,
+        "srd": true,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 2,
+        "entries": [
+            "第2级起，你可以在短休时用轻柔的音乐或话语帮助伙伴们恢复伤势。如果听到你的演奏且决定使用生命骰恢复生命值，则额外恢复 {@dice 1d6} 点。",
+            "9级增加到 {@dice 1d8}，13级增加到 {@dice 1d10}，17级增加到 {@dice 1d12}。"
+        ]
+    },
+    {
+        "ENG_name": "Bard College",
+        "name": "吟游诗人学院",
+        "source": "PHB",
+        "page": 51,
+        "srd": true,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 3,
+        "entries": [
+            "第3级时，你选择加入一个吟游诗人学院协会。随后在第3、第6和第14级获得相应特性。"
+        ]
+    },
+    {
+        "ENG_name": "Expertise",
+        "name": "专精",
+        "source": "PHB",
+        "page": 51,
+        "srd": true,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 3,
+        "entries": [
+            "第3级起，你选择两个已有的技能熟练项。此后进行所选技能的属性检定时，可以使用双倍的熟练加值。10级时再选两个。"
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "PHB",
+        "page": 51,
+        "srd": true,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 4,
+        "entries": [
+            "当你达到4级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。也可以选择一个{@5etools 专长|feats.html}。"
+        ]
+    },
+    {
+        "ENG_name": "Bardic Inspiration (d8)",
+        "name": "诗人激励(d8)",
+        "source": "PHB",
+        "page": 51,
+        "srd": true,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 5,
+        "entries": [
+            "当你达到5级时，你的诗人激励骰变为 {@dice d8}。"
+        ]
+    },
+    {
+        "ENG_name": "Font of Inspiration",
+        "name": "激励之源",
+        "source": "PHB",
+        "page": 51,
+        "srd": true,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 5,
+        "entries": [
+            "第5级起，你可以在完成短休或长休后恢复你已消耗的诗人激励次数。"
+        ]
+    },
+    {
+        "ENG_name": "Bard College feature",
+        "name": "吟游学院特性",
+        "source": "PHB",
+        "page": 51,
+        "srd": true,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 6,
+        "entries": [
+            "第6级时，你从你的吟游诗人学院获得一个相应的职业特性。"
+        ]
+    },
+    {
+        "ENG_name": "Countercharm",
+        "name": "反迷惑",
+        "source": "PHB",
+        "page": 51,
+        "srd": true,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 6,
+        "entries": [
+            "第6级起，你获得用音乐或话语打断心控效应的能力。以一个动作演出，30尺内友方对抗恐慌或魅惑的豁免具有优势。"
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "PHB",
+        "page": 51,
+        "srd": true,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 8,
+        "entries": [
+            "当你达到第8级时，属性值提升或专长。"
+        ]
+    },
+    {
+        "ENG_name": "Song of Rest (d8)",
+        "name": "休憩曲(d8)",
+        "source": "PHB",
+        "page": 51,
+        "srd": true,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 9,
+        "entries": [
+            "第9级时，休憩曲额外生命值增加到 {@dice 1d8}。"
+        ]
+    },
+    {
+        "ENG_name": "Bardic Inspiration (d10)",
+        "name": "诗人激励(d10)",
+        "source": "PHB",
+        "page": 51,
+        "srd": true,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 10,
+        "entries": [
+            "第10级时，你的诗人激励骰变为 {@dice d10}。"
+        ]
+    },
+    {
+        "ENG_name": "Expertise",
+        "name": "专精",
+        "source": "PHB",
+        "page": 51,
+        "srd": true,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 10,
+        "entries": [
+            "第10级时，你可以再选择另外两个已有的技能熟练项获得双倍熟练加值。"
+        ]
+    },
+    {
+        "ENG_name": "Magical Secrets",
+        "name": "魔法奥秘",
+        "source": "PHB",
+        "page": 51,
+        "srd": true,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 10,
+        "entries": [
+            "第10级起，你可以从所有职业法术列表中选择两个法术加入已知法术中。14和18级分别再选两个。"
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "PHB",
+        "page": 51,
+        "srd": true,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 12,
+        "entries": [
+            "当你达到第12级时，属性值提升或专长。"
+        ]
+    },
+    {
+        "ENG_name": "Song of Rest (d10)",
+        "name": "休憩曲(d10)",
+        "source": "PHB",
+        "page": 51,
+        "srd": true,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 13,
+        "entries": [
+            "第13级时，由休憩曲获得的额外生命值增加到 {@dice 1d10}。"
+        ]
+    },
+    {
+        "ENG_name": "Bard College feature",
+        "name": "吟游学院特性",
+        "source": "PHB",
+        "page": 51,
+        "srd": true,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 14,
+        "entries": [
+            "第14级时，你从你的吟游诗人学院获得一个相应的职业特性。"
+        ]
+    },
+    {
+        "ENG_name": "Magical Secrets",
+        "name": "魔法奥秘",
+        "source": "PHB",
+        "page": 51,
+        "srd": true,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 14,
+        "entries": [
+            "14级选两个法术。同10级特性。"
+        ]
+    },
+    {
+        "ENG_name": "Bardic Inspiration (d12)",
+        "name": "诗人激励(d12)",
+        "source": "PHB",
+        "page": 51,
+        "srd": true,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 15,
+        "entries": [
+            "在15级时，你的诗人激励骰变为 {@dice d12}。"
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "PHB",
+        "page": 51,
+        "srd": true,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 16,
+        "entries": [
+            "16级属性值提升或专长。"
+        ]
+    },
+    {
+        "ENG_name": "Song of Rest (d12)",
+        "name": "休憩曲(d12)",
+        "source": "PHB",
+        "page": 51,
+        "srd": true,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 17,
+        "entries": [
+            "在17级时，通过休憩曲获得的额外生命值增加到 {@dice 1d12}。"
+        ]
+    },
+    {
+        "ENG_name": "Magical Secrets",
+        "name": "魔法奥秘",
+        "source": "PHB",
+        "page": 51,
+        "srd": true,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 18,
+        "entries": [
+            "18级选两个法术。同10级特性。"
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "PHB",
+        "page": 51,
+        "srd": true,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 19,
+        "entries": [
+            "19级属性值提升或专长。"
+        ]
+    },
+    {
+        "ENG_name": "Superior Inspiration",
+        "name": "先发激励",
+        "source": "PHB",
+        "page": 51,
+        "srd": true,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 20,
+        "entries": [
+            "第20级起，你骰先攻时若没有可用的诗人激励次数，则你获得一次使用次数。"
+        ]
+    }
+]

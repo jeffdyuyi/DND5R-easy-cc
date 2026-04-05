@@ -1,0 +1,22 @@
+{
+  "ENG_name": "Empowered Spell",
+  "name": "强效法术",
+  "source": "PHB",
+  "page": 102,
+  "srd": true,
+  "reprintedAs": [
+    "强效法术|XPHB"
+  ],
+  "featureType": [
+    "MM"
+  ],
+  "consumes": {
+    "ENG_name": "Sorcery Point",
+    "name": "术法点"
+  },
+  "entries": [
+    "为法术进行伤害掷骰时，你可以使用1术法点重掷其中一定数量的骰子。重掷骰子的最大数等于你的魅力调整值（至少为1），且你必须接受新的结果。",
+    "强效法术超魔可以与其他超魔法选项合用。"
+  ],
+  "translator": "不全书"
+}

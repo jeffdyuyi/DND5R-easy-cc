@@ -1,0 +1,120 @@
+{
+  "ENG_name": "Trick Shot",
+  "name": "花枪客",
+  "shortName": "花枪客",
+  "source": "ValdaGunslinger",
+  "className": "铳士",
+  "classSource": "ValdaGunslinger",
+  "subclassFeatures": [
+    {
+      "ENG_name": "Trick Shot",
+      "name": "花枪客",
+      "source": "ValdaGunslinger",
+      "className": "铳士",
+      "classSource": "ValdaGunslinger",
+      "subclassShortName": "花枪客",
+      "subclassSource": "ValdaGunslinger",
+      "level": 3,
+      "entries": [
+        "{@i 八方弹射}",
+        "准确度对不同的人有着不同的含义。对你而言，真正的精准并不一定意味着首发即中，也可能包括子弹弹跳十几次后仍然命中目标。你的攻击即使未命中，甚至命中目标后，也如同悬空之矢一般危险。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "诡变弹道|铳士|ValdaGunslinger|花枪客|ValdaGunslinger|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "跳弹 [战技]|铳士|ValdaGunslinger|花枪客|ValdaGunslinger|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Creative Trajectory",
+      "name": "诡变弹道",
+      "source": "ValdaGunslinger",
+      "className": "铳士",
+      "classSource": "ValdaGunslinger",
+      "subclassShortName": "花枪客",
+      "subclassSource": "ValdaGunslinger",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你可以让你的射弹沿着难以想象的轨迹飞行。你使用武器的远程攻击忽视{@variantrule 掩护|XPHB|半身掩护}和{@variantrule 掩护|XPHB|四分之三掩护}。"
+      ]
+    },
+    {
+      "ENG_name": "Ricochet [Maneuver]",
+      "name": "跳弹 [战技]",
+      "source": "ValdaGunslinger",
+      "className": "铳士",
+      "classSource": "ValdaGunslinger",
+      "subclassShortName": "花枪客",
+      "subclassSource": "ValdaGunslinger",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "当你使用武器发动的远程攻击未命中时，你能够以{@variantrule 附赠动作|XPHB}消耗一枚{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}重骰此次攻击并将{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}加入检定。你必须使用新的结果。"
+      ]
+    },
+    {
+      "ENG_name": "Fancy Gunplay",
+      "name": "花式枪法",
+      "source": "ValdaGunslinger",
+      "className": "铳士",
+      "classSource": "ValdaGunslinger",
+      "subclassShortName": "花枪客",
+      "subclassSource": "ValdaGunslinger",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "你华丽的武器技巧赋予你以下增益。",
+        {
+          "ENG_name": "Gun Spinning",
+          "name": "沙鹰回旋",
+          "type": "entries",
+          "entries": [
+            "每回合一次，当你使用一把远程武器进行魅力（{@skill 表演|XPHB}）检定或敏捷（{@skill 巧手|XPHB}）检定时，你可以掷一枚{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}并将其加入属性检定中且不消耗它。"
+          ]
+        },
+        {
+          "ENG_name": "Speed Loader",
+          "name": "快速填装",
+          "type": "entries",
+          "entries": [
+            "在你的回合中，你可以不消耗动作或{@variantrule 附赠动作|XPHB}来为一把具有{@itemProperty RLD|XDMG|弹容}词条的武器装弹。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Deft Deflection [Maneuver]",
+      "name": "凌弹飞截 [战技]",
+      "source": "ValdaGunslinger",
+      "className": "铳士",
+      "classSource": "ValdaGunslinger",
+      "subclassShortName": "花枪客",
+      "subclassSource": "ValdaGunslinger",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "你能够击落凌空的射弹。当位于你30尺的盟友内被一次攻击命中时，你能够以{@variantrule 反应|XPHB}消耗一枚{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}，令盟友获得战技{@optfeature 千钧一发|ValdaGunslinger}的增益来对抗那次攻击。你必须持握远程武器以使用该战技。"
+      ]
+    },
+    {
+      "ENG_name": "Pinball Shot",
+      "name": "连珠弹射",
+      "source": "ValdaGunslinger",
+      "className": "铳士",
+      "classSource": "ValdaGunslinger",
+      "subclassShortName": "花枪客",
+      "subclassSource": "ValdaGunslinger",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "每个你的回合一次，当你使用武器发动远程攻击命中一名生物时，你能够将射弹偏转弹射至额外的目标。选择一个位于首个目标30尺内的不同目标，对其进行一次攻击检定。命中则你可以对30尺内的新目标重复此攻击，直至你未命中或共发动了五次攻击。每次使用此特性时，你无法重复指定某生物为目标。",
+        "此特性一经使用，直至你完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}都无法再次使用。你也可以消耗两枚{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}（无需动作）来重置此特性的使用权。"
+      ]
+    }
+  ],
+  "hasFluffImages": true
+}

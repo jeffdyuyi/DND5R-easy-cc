@@ -1,0 +1,29 @@
+[
+  {
+    "name": "滑膛枪",
+    "ENG_name": "Musket",
+    "source": "DMG",
+    "page": 268,
+    "edition": "classic",
+    "type": "R",
+    "rarity": "none",
+    "weight": 10,
+    "value": 50000,
+    "weaponCategory": "martial",
+    "property": [
+      "AF|DMG",
+      "LD",
+      "2H"
+    ],
+    "dmg1": "1d12",
+    "dmgType": "P",
+    "range": "40/120",
+    "ammoType": "文艺复兴子弹",
+    "age": "文艺复兴",
+    "firearm": true,
+    "reprintedAs": [
+      "滑膛枪|XPHB"
+    ],
+    "weapon": true
+  }
+]

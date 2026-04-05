@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Tangle Weed",
+    "name": "缠结草",
+    "source": "ObojimaTallGrass",
+    "page": 208,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 8|large}|SneakerProMedium}",
+            "{@font {@style 8|large}|SneakerProMedium}",
+            "{@font {@style 4|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "鱼人持续与这些会缠住钓鱼线的植物交战。普遍认为缠结草并非自然产物，而是鱼人施法诅咒的种族，用来折磨过于接近水域的陆地居民。这种入侵物种在浅滩各处成簇生长。"
+    ],
+    "lootTables": [
+      "浅滩普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/tangle-weed.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 3530,
+          "height": 3530
+        }
+      ]
+    }
+  }
+]

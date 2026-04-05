@@ -1,0 +1,44 @@
+[
+  {
+    "ENG_name": "Piercer",
+    "name": "穿刺者",
+    "source": "XPHB",
+    "page": 206,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Puncture",
+        "name": "穿透伤",
+        "type": "entries",
+        "entries": [
+          "每回合一次，当你用造成穿刺伤害的攻击命中一个生物时，你可以重骰这次攻击伤害的其中一枚伤害骰。但你必须采用新的掷骰结果。"
+        ]
+      },
+      {
+        "ENG_name": "Enhanced Critical",
+        "name": "强化重击",
+        "type": "entries",
+        "entries": [
+          "当你用造成穿刺伤害的攻击命中一个生物并且掷出{@variantrule 重击|XPHB}时，你可以在计算额外的穿刺伤害时多投一个伤害骰。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

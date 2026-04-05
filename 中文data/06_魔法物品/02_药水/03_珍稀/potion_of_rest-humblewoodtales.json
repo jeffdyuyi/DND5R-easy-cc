@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Potion of Rest",
+    "name": "休息药水",
+    "source": "HumblewoodTales",
+    "page": 245,
+    "type": "P",
+    "rarity": "rare",
+    "entries": [
+      "这瓶浅蓝色药剂中悬浮着一朵茉莉花。它是使用{@creature 蓝蜂集群|humblewoodtales|蓝蜂}毒液酿造的，可以帮助饮用者平静而深沉地睡眠。",
+      "在长休或短休前饮用此药水会使饮用者在醒来时获得{@dice 1d10 + 5}点临时生命值。饮用者还会醒来时治愈一级{@condition 力竭}状态。这是在休息通常会提供的效果之外的额外效果。"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "hasFluffImages": true
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "itemMastery": [
+    {
+      "ENG_name": "Scatter",
+      "name": "散射",
+      "source": "ValdaGunslinger",
+      "entries": [
+        "位于敌人5尺内不会令你使用此武器进行的远程攻击检定具有劣势。"
+      ]
+    },
+    {
+      "ENG_name": "Sighted",
+      "name": "开镜",
+      "source": "ValdaGunslinger",
+      "entries": [
+        "使用此武器攻击最大射程的目标不会令你的攻击检定具有劣势。常规射程外命中时可重掷伤害骰。"
+      ]
+    }
+  ]
+}

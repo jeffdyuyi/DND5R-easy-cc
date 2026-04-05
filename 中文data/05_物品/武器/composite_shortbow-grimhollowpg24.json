@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Composite Shortbow",
+    "name": "复合短弓",
+    "source": "GrimHollowPG24",
+    "page": 129,
+    "type": "R|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 40000,
+    "weaponCategory": "进阶",
+    "property": [
+      "A|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "强拉|GrimHollowPG24"
+    ],
+    "range": "100/400",
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "weapon": true,
+    "ammoType": "箭|XPHB"
+  }
+]

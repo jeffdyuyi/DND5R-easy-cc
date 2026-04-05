@@ -1,0 +1,59 @@
+[
+  {
+    "ENG_name": "Eldritch Bident",
+    "name": "魔能双叉戟",
+    "source": "GriffonsSaddlebag2",
+    "page": 77,
+    "baseItem": "三叉戟|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 4,
+    "weaponCategory": "军用",
+    "property": [
+      "T",
+      "V"
+    ],
+    "range": "20/60",
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "dmg2": "1d8",
+    "entries": [
+      "这把双叉武器与另一个存在平面有着不祥的联系。持握此双叉戟时，你可以用一个动作同时从武器的两个叉尖释放两道魔能射线。你需以{@hit 7}的法术攻击加值为每道射线进行一次远程法术攻击检定，你可以选择攻击60尺内你能看见的一个或两个目标。命中时，目标受到{@damage 1d8}力场伤害。",
+      "如果你是魔契师，那么在与此武器同调已期间，你具有此武器的熟练项，且你获得以下增益：",
+      {
+        "type": "list",
+        "items": [
+          "当你使用双叉戟的魔能射线进行攻击时，你可以选择使用你的魔契师法术攻击加值，而非武器原有的加值。",
+          "当你用魔能射线命中目标时，每道射线造成{@damage 1d12}力场伤害（而非{@dice 1d8}），且你可以将你的魅力调整值加入每道射线的伤害中。",
+          "当你用魔能射线对一个生物进行的攻击检定骰出20时，该生物必须成功通过一次DC 10的魅力豁免，否则会被传送到一个充斥着诡谲恐怖的异位面。目标在该位面中将陷入{@condition 失能}状态。在你下一回合开始时，该生物受到{@damage 2d12}心灵伤害，并重新出现在它原来的位置，若该位置已被占据则出现在最近的空位上。"
+        ]
+      },
+      "此外，如果你是魔契师，你可以在持握双叉戟时使用一个动作施放{@spell 位面转移|PHB}法术，但只能传送到你的魔契师宗主所在的位面和位置。你可以在那里停留最多24小时，或用一个动作返回原位面的原位置。双叉戟的这项特性一旦使用后，需一年后才能再次使用。"
+    ],
+    "attachedSpells": {
+      "limited": {
+        "1": [
+          "位面转移"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表 G1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Eldritch-Bident.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

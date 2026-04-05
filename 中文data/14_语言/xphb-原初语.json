@@ -1,0 +1,16 @@
+{
+  "ENG_name": "Primordial",
+  "name": "原初语",
+  "dialects": [
+    "气族语",
+    "水族语",
+    "火族语",
+    "土族语"
+  ],
+  "source": "XPHB",
+  "page": 37,
+  "srd52": true,
+  "basicRules2024": true,
+  "type": "rare",
+  "origin": "元素"
+}

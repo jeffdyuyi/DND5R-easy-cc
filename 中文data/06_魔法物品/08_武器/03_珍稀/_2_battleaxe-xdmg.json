@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "+2 Battleaxe",
+    "name": "+2 战斧",
+    "source": "XDMG",
+    "page": 324,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "rare",
+    "weight": 4,
+    "value": 1000,
+    "weaponCategory": "martial",
+    "property": [
+      "V|XPHB"
+    ],
+    "mastery": [
+      "失衡|XPHB"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "S",
+    "dmg2": "1d10",
+    "axe": true,
+    "weapon": true,
+    "hasFluffImages": true,
+    "namePrefix": "+2 ",
+    "bonusWeapon": "+2",
+    "entries": [
+      "使用这把魔法武器进行攻击和伤害判定时，你会获得{=bonusWeapon}的额外加成。"
+    ],
+    "classFeatures": [
+      "仿制魔法物品|奇械师|efa|2|efa"
+    ],
+    "lootTables": [
+      "武备 - 珍稀|XDMG"
+    ],
+    "_isVariant": true,
+    "valueReference": 4000
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "ENG_name": "Thread of Immortality",
+    "name": "不朽之线",
+    "source": "CrookedMoon24",
+    "page": 161,
+    "type": "Thread of Fate",
+    "entries": [
+      "一个与不朽之线连接的角色，通过失落的鲜血、生命能量和灵魂本质的技艺，寻找一种无法治愈的魔法疾病的疗法。在一个神秘炼金存在——扁瓶的帮助下，他们寻找真理，随着每一次奇异炼金术的新发现，他们更接近完善一种伟大的灵药，并解锁不朽、永恒青春和无敌术的秘密。",
+      {
+        "ENG_name": "Goal",
+        "name": "目标",
+        "type": "entries",
+        "entries": [
+          "角色必须掌握生命精华的炼金术，发现一种具有巨大力量的大药配方，调制出治愈其魔法疾病的疗法，并解锁不朽的秘密。"
+        ]
+      },
+      {
+        "ENG_name": "Personalization",
+        "name": "个性化",
+        "type": "entries",
+        "entries": [
+          "确定这种不治之症的性质。它的症状是什么，以及它是如何引起的？角色自身患有这种病痛还是他们的所爱之人患有？研究的疗法是药水、岩石，还是完全不同的形态？扁瓶中奇物的外貌和个性是什么？"
+        ]
+      },
+      {
+        "ENG_name": "Call to Adventure",
+        "name": "冒险召唤",
+        "type": "entries",
+        "entries": [
+          "角色与之对抗的魔法疾病效应持续恶化，所有试图治愈它的尝试均已失败。他们对炼金术实践的研究将他们引向一座据说曾征服死亡的远古城市废墟。在那里，他们发现了一个装在扁瓶中的奇特实体，声称知晓不朽的真理. 该存在并未透露许多细节，但讲述了冒险开始的时间和地点。"
+        ]
+      },
+      {
+        "ENG_name": "Associated Background",
+        "name": "关联背景",
+        "type": "entries",
+        "entries": [
+          "{@background 猩红求道者|crookedmoon24}"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/CrookedMoon24/Adventure/053-02-035.thread-of-immortality.webp"
+        },
+        "width": 606,
+        "height": 617
+      }
+    ]
+  }
+]

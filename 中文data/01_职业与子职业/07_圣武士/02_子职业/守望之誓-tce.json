@@ -1,0 +1,291 @@
+{
+  "ENG_name": "Oath of the Watchers",
+  "name": "守望之誓",
+  "shortName": "守望",
+  "source": "TCE",
+  "className": "圣武士",
+  "classSource": "PHB",
+  "page": 54,
+  "edition": "classic",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "3": [
+          "alarm",
+          "detect magic"
+        ],
+        "5": [
+          "moonbeam",
+          "see invisibility"
+        ],
+        "9": [
+          "counterspell",
+          "nondetection"
+        ],
+        "13": [
+          "aura of purity",
+          "banishment"
+        ],
+        "17": [
+          "hold monster",
+          "scrying"
+        ]
+      }
+    }
+  ],
+  "subclassFeatures": [
+    "守望之誓|圣武士||守望|TCE|3",
+    "哨卫灵光|圣武士||守望|TCE|7",
+    "警戒呵斥|圣武士||守望|TCE|15",
+    "尘世壁垒|圣武士||守望|TCE|20"
+  ],
+  "fluff": {
+    "_subclassFluff": {
+      "ENG_name": "Oath of the Watchers",
+      "name": "守望之誓",
+      "source": "TCE",
+      "shortName": "守望",
+      "className": "圣武士",
+      "classSource": "PHB"
+    }
+  },
+  "features": [
+    {
+      "ENG_name": "Oath of the Watchers",
+      "name": "守望之誓",
+      "source": "TCE",
+      "page": 54,
+      "className": "圣武士",
+      "classSource": "PHB",
+      "subclassShortName": "守望",
+      "subclassSource": "TCE",
+      "level": 3,
+      "entries": [
+        "守望之誓使圣武士们承担着保护凡人国度免受异界生物掠夺与捕食的责任，而这之中有许多是凡俗的兵卒所难以匹敌的. 因此，守望者们磨炼自己的心智、灵魂和肉体，以成为对抗此类威胁的终极武器。",
+        "遵循着守望之誓的圣武士们总是警戒着异界力量的影响，他们时常会通过建立间谍和线人的情报网络来收集可疑邪教的信息. 对于一个守望者来说，对周围环境保持一种积极态度的怀疑和警戒就像在战斗中穿着盔甲一样自然。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "守望之信条|圣武士||守望|TCE|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "圣誓法术|圣武士||守望|TCE|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "引导神力|圣武士||守望|TCE|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Channel Divinity",
+      "name": "引导神力",
+      "source": "TCE",
+      "page": 54,
+      "className": "圣武士",
+      "classSource": "PHB",
+      "subclassShortName": "守望",
+      "subclassSource": "TCE",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "{@i 3级守望之誓特性}",
+        "你获得以下这些引导神力选项。有关引导神力的规则请查阅圣武士 神圣誓言Sacred Oath 特性中记载的文本。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "守望之志|圣武士||守望|TCE|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "驱散异域|圣武士||守望|TCE|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Oath Spells",
+      "name": "圣誓法术",
+      "source": "TCE",
+      "page": 54,
+      "className": "圣武士",
+      "classSource": "PHB",
+      "subclassShortName": "守望",
+      "subclassSource": "TCE",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "{@i 3级守望之誓特性}",
+        "当你的圣武士达到特定等级时，你将获得以下的圣誓法术，如守望之誓法术表所示. 有关圣誓法术的规则请查阅圣武士 神圣誓言Sacred Oath 特性中记载的文本。",
+        {
+          "type": "table",
+          "caption": "守望者誓言法术",
+          "colLabels": [
+            "圣武士等级",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "3rd",
+              "{@spell 警报术}, {@spell 侦测魔法}"
+            ],
+            [
+              "5th",
+              "{@spell 月华之光}, {@spell 识破隐形}"
+            ],
+            [
+              "9th",
+              "{@spell 法术反net, {@spell 回避侦测}"
+            ],
+            [
+              "13th",
+              "{@spell 净化灵光}, {@spell 放逐术}"
+            ],
+            [
+              "17th",
+              "{@spell 定身怪物}, {@spell 探知术}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Tenets of the Watchers",
+      "name": "守望之信条",
+      "source": "TCE",
+      "page": 54,
+      "className": "圣武士",
+      "classSource": "PHB",
+      "subclassShortName": "守望",
+      "subclassSource": "TCE",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "接受守望之誓的圣武士发誓要保护凡人国度不受来自其他位面的威胁。",
+        {
+          "ENG_name": "Vigilance",
+          "name": "警惕",
+          "type": "entries",
+          "entries": [
+            "你所面临的威胁狡猾、强大而又超乎常理. 时刻警惕他们的腐化。"
+          ]
+        },
+        {
+          "ENG_name": "Loyalty",
+          "name": "忠诚",
+          "type": "entries",
+          "entries": [
+            "永远不要接受来自邪魔或其同伙的礼物或恩惠. 忠于你的使命，忠于你的同伴，忠于你的职责。"
+          ]
+        },
+        {
+          "ENG_name": "Discipline",
+          "name": "纪律",
+          "type": "entries",
+          "entries": [
+            "你是抵御星辰之外无尽恐怖的盾牌. 你的剑刃必须永远锋利，你的头脑必须永远清晰。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Abjure the Extraplanar",
+      "name": "驱散异域",
+      "source": "TCE",
+      "page": 54,
+      "className": "圣武士",
+      "classSource": "PHB",
+      "subclassShortName": "守望",
+      "subclassSource": "TCE",
+      "level": 3,
+      "header": 2,
+      "consumes": {
+        "ENG_name": "Channel Divinity",
+        "name": "引导神力"
+      },
+      "entries": [
+        "你可以使用你的引导神力惩罚来自异界的存在. 以一个动作, 你展示你的圣徽, 你30尺范围内能够听到你祷言的异怪、天界生物、元素、精类、或邪魔都必须进行一次感知豁免, 豁免失败将受到驱散, 持续1分钟. 被驱散的生物若受到任何伤害, 驱散也将提前结束。",
+        "以此方式被驱散的生物必须花费其回合内的所有移动里尽可能的远离你, 且无法在距离你不超过30尺的空间中主动结束行动. 在其行动中, 只能执行{@action 疾走}动作, 或花费动作从妨碍其移动的效应中挣脱. 当该生物无路可走时, 它将执行{@action 回避}动作。"
+      ]
+    },
+    {
+      "ENG_name": "Watcher's Will",
+      "name": "守望之志",
+      "source": "TCE",
+      "page": 54,
+      "className": "圣武士",
+      "classSource": "PHB",
+      "subclassShortName": "守望",
+      "subclassSource": "TCE",
+      "level": 3,
+      "header": 2,
+      "consumes": {
+        "ENG_name": "Channel Divinity",
+        "name": "引导神力"
+      },
+      "entries": [
+        "你可以用引导神力，将信仰的守护力量融入你的存在之中. 以一个动作, 你可以选择周围30尺范围内数个你可见的生物, 其数量至多等同于你的魅力调整值（至少1个生物）. 接下来1分钟内, 你与所有被你选择的生物在智力、感知、与魅力豁免上都将具有优势。"
+      ]
+    },
+    {
+      "ENG_name": "Aura of the Sentinel",
+      "name": "哨卫灵光",
+      "source": "TCE",
+      "page": 54,
+      "className": "圣武士",
+      "classSource": "PHB",
+      "subclassShortName": "守望",
+      "subclassSource": "TCE",
+      "level": 7,
+      "header": 2,
+      "entries": [
+        "{@i 7级守望之誓特性}",
+        "你散发出一道令人保持警觉的灵光. 当你和你周围10尺范围内任何你选择的生物进行先攻检定时, 都将获得等同于你熟练加值的加值. 这一灵光只有在你未处于{@condition 失能}的情况下才能生效。",
+        "第18级起，该灵光的作用范围扩展至30尺。"
+      ]
+    },
+    {
+      "ENG_name": "Vigilant Rebuke",
+      "name": "警戒呵斥",
+      "source": "TCE",
+      "page": 54,
+      "className": "圣武士",
+      "classSource": "PHB",
+      "subclassShortName": "守望",
+      "subclassSource": "TCE",
+      "level": 15,
+      "header": 2,
+      "entries": [
+        "{@i 15级守望之誓特性}",
+        "你学会了如何惩罚那些对你与受你守护之人施行欺瞒的家伙. 当你或你30尺内一个你可见的生物在一次智力、感知、或魅力豁免上成功时, 你可以用反应对迫使你们进行豁免检定的那个生物造成{@damage 2d8}+你的魅力调整值点的力场伤害。"
+      ]
+    },
+    {
+      "ENG_name": "Mortal Bulwark",
+      "name": "尘世壁垒",
+      "source": "TCE",
+      "page": 54,
+      "className": "圣武士",
+      "classSource": "PHB",
+      "subclassShortName": "守望",
+      "subclassSource": "TCE",
+      "level": 20,
+      "header": 2,
+      "entries": [
+        "{@i 20级守望之誓特性}",
+        "你展现出神圣力量的火花，以捍卫凡人的世界. 以一个附赠动作, 你获得以下增益, 持续1分钟：",
+        {
+          "type": "list",
+          "items": [
+            "你获得120尺的{@sense 真实视觉}。",
+            "你对异怪、天界生物、元素、精类、或邪魔发动的攻击检定具有优势。",
+            "当你对一个生物进行攻击、命中、并对其造成伤害时，你可以迫使其进行一次魅力豁免，豁免DC等同于你的法术豁免DC. 豁免失败时, 若该生物不属于此位面, 则它将被魔法性地放逐回它原本的位面. 豁免成功后, 目标生物在24小时内免疫于此能力的放逐。"
+          ]
+        },
+        "一旦你使用了这个附赠动作，你在完成一次长休之前你都不能再次使用它. 你也可以消耗一个5环法术位以再次使用它。"
+      ]
+    }
+  ]
+}

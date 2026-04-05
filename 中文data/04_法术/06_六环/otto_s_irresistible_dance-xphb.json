@@ -1,0 +1,63 @@
+[
+  {
+    "ENG_name": "Otto's Irresistible Dance",
+    "name": "奥图迷舞",
+    "source": "XPHB",
+    "page": 303,
+    "srd52": "迷舞",
+    "basicRules2024": true,
+    "level": 6,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "一名施法距离内你可见的生物必须进行一次感知豁免。豁免成功则目标直到其下个回合结束为止会跳起滑稽的舞蹈，在此期间其必须消耗所有的移动力在原地跳舞。",
+      "若豁免失败，目标将在法术持续时间内陷入{@condition 魅惑|XPHB}状态。处于{@condition 魅惑|XPHB}状态期间，目标会跳起滑稽的舞蹈，必须使用所有的移动力在原地跳舞，并且进行的敏捷豁免与攻击检定具有{@variantrule 劣势|XPHB}，且其他生物以该生物为目标发动的攻击检定具有{@variantrule 优势|XPHB}。在目标的每个自己的回合，其能够以一个动作尝试使自己镇定下来并重复豁免，豁免成功则其身上的法术终止。"
+    ],
+    "conditionInflict": [
+      "魅惑"
+    ],
+    "savingThrow": [
+      "wisdom"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "法师"
+    ],
+    "display_school": "惑控系",
+    "display_savingThrow": [
+      "感知"
+    ]
+  }
+]

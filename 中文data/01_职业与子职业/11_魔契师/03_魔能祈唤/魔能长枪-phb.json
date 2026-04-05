@@ -1,0 +1,24 @@
+{
+  "ENG_name": "Eldritch Spear",
+  "name": "魔能长枪",
+  "source": "PHB",
+  "page": 111,
+  "srd": true,
+  "reprintedAs": [
+    "魔能长枪|XPHB"
+  ],
+  "featureType": [
+    "EI"
+  ],
+  "prerequisite": [
+    {
+      "spell": [
+        "魔能爆#c"
+      ]
+    }
+  ],
+  "entries": [
+    "施展{@spell 魔能爆}时，射程变为300尺。"
+  ],
+  "translator": "不全书"
+}

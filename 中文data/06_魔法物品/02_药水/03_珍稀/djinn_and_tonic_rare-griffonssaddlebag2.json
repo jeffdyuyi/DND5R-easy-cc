@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Djinn and Tonic (Rare)",
+    "name": "气巨灵汤力（珍稀）",
+    "source": "GriffonsSaddlebag2",
+    "page": 71,
+    "type": "P",
+    "tier": "次要",
+    "rarity": "rare",
+    "entries": [
+      "以下{@item 气巨灵汤力|GriffonsSaddlebag2}是一种具有额外词条的珍稀变体。它的口感也更好。当你喝下这瓶药水时，你会获得{@spell 气化形体|PHB}法术的效果，持续10分钟（无需专注）或直到你用一个动作主动提前结束该效果。当效果结束时，你的形态会在一阵风中重新实体化，同时迫使所有距离你30尺以内的大型或更小的生物进行一次DC 15的力量豁免检定。豁免失败的生物将被推开10尺并陷入{@condition 倒地}状态。"
+    ],
+    "lootTables": [
+      "魔法物品表C|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Djinn-and-Tonic.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "ENG_name": "Arcane Eye",
+    "name": "秘法眼",
+    "source": "PHB",
+    "page": 214,
+    "srd": true,
+    "basicRules": true,
+    "referenceSources": [
+      "HotDQ",
+      "SKT",
+      "WDH",
+      "WDMM",
+      "IDRotF",
+      "DSotDQ"
+    ],
+    "reprintedAs": [
+      "秘法眼|XPHB"
+    ],
+    "level": 4,
+    "school": "D",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "少许蝙蝠皮毛"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你在施法距离内创造出一个漂浮在空中的隐形魔法眼。",
+      "秘法眼拥有 30 尺普通视觉和{@sense 黑暗视觉}且可以观察任何方向。你通过精神连接接收秘法眼传来的视觉信息。",
+      "你可以使用一个动作让秘法眼向任意方向移动 30 尺。秘法眼远离你的距离没有限制，但它无法进入另一个位面。固体障碍物会阻挡秘法眼的移动，但它可以穿过任何直径大于 1 尺的缝隙。"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "预言系"
+  }
+]

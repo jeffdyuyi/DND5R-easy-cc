@@ -1,0 +1,22 @@
+[
+  {
+    "ENG_name": "Boots of the Winding Path",
+    "name": "折返之靴",
+    "source": "EFA",
+    "page": 112,
+    "referenceSources": [
+      "FFotR"
+    ],
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "当你穿着这双靴子时，你可以使用一个{@variantrule 附赠动作|XPHB}传送至多15尺到一个你能看见的未占据空间。你在当前回合的某个时刻必须占据过该空间。"
+    ],
+    "classFeatures": [
+      "仿制魔法物品|奇械师|efa|2|efa"
+    ],
+    "valueReference": 400,
+    "type": "W"
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "name": "板甲",
+    "ENG_name": "Plate Armor",
+    "source": "PHB",
+    "page": 145,
+    "edition": "classic",
+    "type": "HA",
+    "rarity": "none",
+    "weight": 65,
+    "value": 150000,
+    "ac": 18,
+    "strength": "15",
+    "stealth": true,
+    "armor": true,
+    "entries": [
+      "板甲由覆盖全身，且相互连接的模铸金属板组成。一套板甲包括护手、重皮靴、一顶附面甲的头盔以及在护甲底层的厚重的布甲。其锁扣和皮带结构可以将护甲重量分配到身体各处。"
+    ],
+    "basicRules": true,
+    "referenceSources": [
+      "TftYP-AtG",
+      "GoS",
+      "BGDIA",
+      "US",
+      "PaBTSO",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "板甲|XPHB"
+    ],
+    "srd": true
+  }
+]

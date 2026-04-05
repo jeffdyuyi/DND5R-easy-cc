@@ -1,0 +1,17 @@
+{
+  "ENG_name": "Devil's Sight",
+  "name": "魔鬼视界",
+  "source": "PHB",
+  "page": 110,
+  "srd": true,
+  "reprintedAs": [
+    "魔鬼视界|XPHB"
+  ],
+  "featureType": [
+    "EI"
+  ],
+  "entries": [
+    "你可以在黑暗中正常视物，拥有120尺的可视距离，无论其属于魔法黑暗还是非魔法黑暗。"
+  ],
+  "translator": "不全书"
+}

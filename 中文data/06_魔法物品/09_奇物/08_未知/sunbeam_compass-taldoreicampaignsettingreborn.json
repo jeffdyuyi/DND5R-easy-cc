@@ -1,0 +1,15 @@
+[
+  {
+    "ENG_name": "Sunbeam Compass",
+    "name": "阳炎罗盘",
+    "source": "TalDoreiCampaignSettingReborn",
+    "page": 143,
+    "type": "OTH",
+    "rarity": "unknown (magic)",
+    "wondrous": true,
+    "entries": [
+      "这是一种设备，通过在玻璃球体内的针尖上发出一束小光，始终指向太阳，允许它向各个方向旋转——在探索地下领域时非常有用。",
+      "由{@book 卡拉琳·冯·埃索|TalDoreiCampaignSettingReborn|3|卡拉琳·冯·埃索}创造。"
+    ]
+  }
+]

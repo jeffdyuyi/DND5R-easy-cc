@@ -1,0 +1,61 @@
+[
+  {
+    "ENG_name": "Living Shadows",
+    "name": "活体幽影",
+    "source": "BookOfEbonTides",
+    "page": 0,
+    "level": 5,
+    "school": "I",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你低声说出虚空语的嘶嘶低语，使幽影因不洁生命而扭曲蠕动。选择你能看见的范围内一点。扭曲的幽影以该点为中心扩散成半径15尺的球状区域，抓挠区域内的生物。生物若在其回合开始时处于该区域内，或首次在其回合进入该区域，则必须成功通过力量豁免检定，否则将被幽影{@condition 束缚}。生物若在其回合开始时被幽影{@condition 束缚}，则必须成功通过体质豁免检定，否则获得一级{@condition 力竭}。",
+      "一个处于{@condition 束缚}状态的生物可以使用它的动作进行一次力量或敏捷检定（由它选择）对抗你的法术豁免DC。检定成功时，它将挣脱束缚。"
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    },
+    "conditionInflict": [
+      "力竭",
+      "束缚"
+    ],
+    "savingThrow": [
+      "体质",
+      "力量"
+    ],
+    "miscTags": [
+      "SGT"
+    ]
+  }
+]

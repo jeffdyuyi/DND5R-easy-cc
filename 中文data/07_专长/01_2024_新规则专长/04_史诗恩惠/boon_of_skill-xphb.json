@@ -1,0 +1,91 @@
+[
+  {
+    "ENG_name": "Boon of Skill",
+    "name": "博学多才之恩惠",
+    "source": "XPHB",
+    "page": 211,
+    "category": "EB",
+    "prerequisite": [
+      {
+        "level": 19
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "max": 30
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "athletics": true,
+        "acrobatics": true,
+        "sleight of hand": true,
+        "stealth": true,
+        "arcana": true,
+        "history": true,
+        "investigation": true,
+        "nature": true,
+        "religion": true,
+        "animal handling": true,
+        "insight": true,
+        "medicine": true,
+        "perception": true,
+        "survival": true,
+        "deception": true,
+        "intimidation": true,
+        "performance": true,
+        "persuasion": true
+      }
+    ],
+    "expertise": [
+      {
+        "anyProficientSkill": 1
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "All-Around Adept",
+        "name": "全能专家",
+        "type": "entries",
+        "entries": [
+          "你获得所有技能的熟练。"
+        ]
+      },
+      {
+        "ENG_name": "Expertise",
+        "name": "专精",
+        "type": "entries",
+        "entries": [
+          "选择一项你不具有{@variantrule 专精|XPHB}的技能，你获得该技能的{@variantrule 专精|XPHB}。"
+        ]
+      }
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "feats/XPHB/Boon of Skill.webp"
+          },
+          "credit": "Wayne England",
+          "width": 1777,
+          "height": 1059
+        }
+      ]
+    }
+  }
+]

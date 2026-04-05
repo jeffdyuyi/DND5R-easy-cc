@@ -1,0 +1,83 @@
+[
+  {
+    "ENG_name": "Mend Plants",
+    "name": "植物修复",
+    "source": "HumblewoodTales",
+    "page": 251,
+    "level": 0,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一根小型树枝和一圈麻线"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "利用原初魔法，你向附近的植物注入活力，在范围内创造以下效应之一：",
+      {
+        "type": "list",
+        "page": 251,
+        "items": [
+          "你立即修复你所接触的一个活体植物上的单一断裂或撕裂，例如撕裂的叶子、烧焦的树枝、树皮上的疤痕，或一个植物被分成两部分的断裂处。只要伤害在任何维度上不超过1英尺，你就可以修复它，不留任何先前毁灭的痕迹。",
+          "你立即让一片落叶的植物长出叶子，让一颗种植的种子发芽，或恢复一颗死亡的种子荚的发芽能力。",
+          "你可以使一个5英尺立方的活体植物繁茂生长出树叶和草等枝叶。该区域可以变得足够浓密以隐藏一个中等或更小的生物，或变得足够茂密以成为{@quickref 困难地形||3}（施放法术时由你选择）。",
+          "你可以接触一个活体植物或植物生物以给予它{@dice 1d4}临时生命值。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "miscTags": [
+      "DFT",
+      "THP"
+    ]
+  }
+]

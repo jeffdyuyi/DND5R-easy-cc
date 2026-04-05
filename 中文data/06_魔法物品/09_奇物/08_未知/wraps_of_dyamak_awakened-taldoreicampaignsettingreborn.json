@@ -1,0 +1,52 @@
+[
+  {
+    "ENG_name": "Wraps of Dyamak (Awakened)",
+    "name": "迪亚马克的裹拳（觉醒）",
+    "source": "TalDoreiCampaignSettingReborn",
+    "_copy": {
+      "ENG_name": "Wraps of Dyamak (Dormant)",
+      "name": "迪亚马克的裹拳（休眠）",
+      "source": "TalDoreiCampaignSettingReborn",
+      "_mod": {
+        "entries": [
+          {
+            "mode": "appendArr",
+            "items": {
+              "entries": [
+                {
+                  "ENG_name": "Awakened",
+                  "name": "觉醒",
+                  "type": "entries",
+                  "entries": [
+                    "当迪亚马克裹布达到觉醒状态时，它们获得以下属性：",
+                    {
+                      "type": "list",
+                      "items": [
+                        "你的徒手攻击的攻击和伤害骰的加值增加到+2。",
+                        "你可以作为一个附赠动作从裹布中施放{@spell 迷踪步}法术，消失在一团深红色的雾气中。裹布的这个属性在你完成一次{@quickref 休息|PHB|2|0|短休或长休}之前，或者在你用徒手攻击对一个敌对生物造成重击之前，不能再被使用。"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "_preserve": {
+        "page": true,
+        "fluff": true
+      }
+    },
+    "bonusWeapon": "+2",
+    "recharge": "特殊",
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "迷踪步"
+        ]
+      }
+    },
+    "hasFluffImages": true
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "ENG_name": "School of Enchantment",
+  "name": "惑控学派",
+  "shortName": "惑控",
+  "source": "PHB",
+  "className": "法师",
+  "classSource": "XPHB",
+  "_copy": {
+    "ENG_name": "School of Enchantment",
+    "name": "惑控学派",
+    "source": "PHB",
+    "shortName": "惑控",
+    "className": "法师",
+    "classSource": "PHB",
+    "_preserve": {
+      "page": true,
+      "otherSources": true,
+      "referenceSources": true,
+      "srd": true,
+      "basicRules": true,
+      "reprintedAs": true
+    }
+  },
+  "subclassFeatures": [
+    "惑控学派|法师|XPHB|惑控||3",
+    "直觉魅惑|法师||惑控||6",
+    "分裂惑控|法师||惑控||10",
+    "编演记忆|法师||惑控||14"
+  ]
+}

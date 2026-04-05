@@ -1,0 +1,36 @@
+[
+  {
+    "ENG_name": "Antimatter Rifle",
+    "name": "致命反物质步枪",
+    "source": "EGW",
+    "page": 270,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "rare",
+    "weight": 10,
+    "valueRarity": "极珍稀",
+    "weaponCategory": "martial",
+    "age": "未来",
+    "property": [
+      "AF|XDMG",
+      "RLD|XDMG",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "削弱|XPHB"
+    ],
+    "range": "120/360",
+    "reload": 2,
+    "dmg1": "6d8",
+    "dmgType": "N",
+    "firearm": true,
+    "weapon": true,
+    "ammoType": "能量电池|xdmg",
+    "namePrefix": "致命",
+    "entries": [
+      "当你使用这把魔法武器攻击并对生物造成伤害时，目标在你的下个回合开始前无法恢复生命值。"
+    ],
+    "_isVariant": true,
+    "valueReference": 4000
+  }
+]

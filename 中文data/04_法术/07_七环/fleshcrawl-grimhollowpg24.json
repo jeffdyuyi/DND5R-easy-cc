@@ -1,0 +1,78 @@
+[
+  {
+    "ENG_name": "Fleshcrawl",
+    "name": "血肉爬行",
+    "source": "GrimHollowPG24",
+    "page": 192,
+    "level": 7,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 100
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你从一个生物身上撕下血肉，将其塑造成一个由鲜血和皮肤构成的扭曲怪兽，它会起身攻击该生物。",
+      "一个你能看见的范围内的生物需进行一次体质豁免检定。若豁免失败，该生物将受到{@damage 8d10}暗蚀伤害。其被剥下的皮肤会活化成一个怪诞的嘲讽物，使用{@creature 血肉构装体|GrimHollowPG24}资料卡。若豁免成功，则只受到一半伤害。",
+      "该生物是你和你的盟友的盟友。在战斗中，该生物共享你的{@variantrule 先攻|XPHB}先攻值，但它在你的回合后立即行动。它服从你的口头命令（你无需动作）。如果你没有发出任何命令，它会采取{@action 回避|XPHB}回避动作并使用移动力来避免危险。当它的{@variantrule 生命值|XPHB}生命值降至0或法术结束时，血肉爬行消失。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "该生物的数据使用新的法术环阶。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "暗蚀"
+    ],
+    "savingThrow": [
+      "体质"
+    ],
+    "miscTags": [
+      "SGT",
+      "SMN"
+    ],
+    "hasFluffImages": true,
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Fleshcrawl.webp"
+  }
+]

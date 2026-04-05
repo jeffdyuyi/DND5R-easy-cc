@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "Dragongleam",
+    "name": "龙光一闪",
+    "source": "HotDQ",
+    "page": 84,
+    "otherSources": [
+      {
+        "source": "ToD",
+        "page": 84
+      }
+    ],
+    "baseItem": "矛|PHB",
+    "type": "M",
+    "rarity": "unknown (magic)",
+    "weight": 3,
+    "weaponCategory": "simple",
+    "property": [
+      "T",
+      "V"
+    ],
+    "range": "20/60",
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "dmg2": "1d8",
+    "charges": 10,
+    "entries": [
+      "这把矛被附魔了10次{@spell 昼明术}法术，用于在黄昏或黑暗森林下灌木丛中使用。命令短语是\"提亚玛特的眼睛闪耀\"，用龙语符文写在矛的护手上。"
+    ],
+    "attachedSpells": {
+      "limited": {
+        "10": [
+          "昼明术"
+        ]
+      }
+    }
+  }
+]

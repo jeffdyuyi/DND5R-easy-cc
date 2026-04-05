@@ -1,0 +1,88 @@
+[
+  {
+    "ENG_name": "Scythed Arm Blades",
+    "name": "卷镰臂刃",
+    "source": "MonstersOfDrakkenheim",
+    "page": 392,
+    "baseItem": "短剑|XPHB",
+    "type": "M|XPHB",
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 2,
+    "weaponCategory": "军用",
+    "property": [
+      "F|XPHB",
+      "L|XPHB"
+    ],
+    "mastery": [
+      "侵扰|XPHB"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "bonusWeapon": "+2",
+    "entries": [
+      "这些锻钢臂刃是剃刀般锋利的4英尺长卷镰，固定在两个由脊柱骨头制成的锁定护腕上。紧固件由优质皮甲和锻钢扣环制成。幻觉水晶嵌入在臂环中，为刀刃注入能量。",
+      "这对魔法短剑必须同时使用才能发挥其魔法词条的效果。与这对短剑同调视为与一件魔法物品同调。",
+      "你使用这些魔法短剑进行攻击和伤害掷骰时获得+2加值。当你与这些武器同调时，除了你正在使用的其他精通词条外，你还可以激活迅击精通词条。",
+      {
+        "ENG_name": "Crafting",
+        "name": "手作",
+        "type": "entries",
+        "entries": [
+          "制作卷镰臂刃需要一个珍稀工坊和以下珍稀成分：",
+          {
+            "type": "list",
+            "items": [
+              {
+                "ENG_name": "[Animus]",
+                "name": "[精魄]",
+                "type": "item",
+                "entries": [
+                  "任意精魄"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Bones]",
+                "name": "[骨头]",
+                "type": "item",
+                "entries": [
+                  "棘刺"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Hide]",
+                "name": "[表皮]",
+                "type": "item",
+                "entries": [
+                  "盘子"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Hide]",
+                "name": "[表皮]",
+                "type": "item",
+                "entries": [
+                  "任何野兽或怪兽的皮肤"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Natural Weapons]",
+                "name": "[天生武器]",
+                "type": "item",
+                "entries": [
+                  "自动机兵的两把刀刃"
+                ],
+                "nameDot": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluffImages": true
+  }
+]

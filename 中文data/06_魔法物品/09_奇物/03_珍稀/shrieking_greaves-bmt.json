@@ -1,0 +1,44 @@
+[
+  {
+    "ENG_name": "Shrieking Greaves",
+    "name": "尖啸腿甲",
+    "source": "BMT",
+    "page": 174,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "curse": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "这对漆黑的腿甲上装饰着无数恐惧中尖叫的可怖颅骨。",
+      "这对腿甲有3发充能。着装这对腿甲期间，你可以用一个附赠动作消耗1发充能以令你的步行速度增加30尺，且在敏捷豁免上具有优势。这些效应持续1分钟。腿甲在每日黎明恢复{@dice 1d3}发已消耗的充能。",
+      {
+        "ENG_name": "Curse",
+        "name": "诅咒",
+        "type": "entries",
+        "entries": [
+          "腿甲被诅咒了，而与腿甲同调会令你也被诅咒。你无法卸下腿甲或结束同调直到你被{@spell 移除诅咒}法术或类似魔法指定为目标。",
+          "你在为抵抗恐慌状态而进行的豁免检定具有劣势。每当你在陷入恐慌期间开始你的回合时，腿甲都会释放一道刺耳的尖啸。你和每个位于你10尺内的生物都必须进行一次{@dc 15}的体质豁免检定，豁免失败者受到9（{@damage 2d8}）雷鸣伤害，豁免成功则伤害减半。"
+        ]
+      }
+    ],
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/BMT/Shrieking Greaves.webp"
+          },
+          "width": 728,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

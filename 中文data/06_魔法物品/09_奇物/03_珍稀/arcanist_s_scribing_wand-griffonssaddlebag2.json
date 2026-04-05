@@ -1,0 +1,65 @@
+[
+  {
+    "ENG_name": "Arcanist's Scribing Wand",
+    "name": "奥术师的抄录杖",
+    "source": "GriffonsSaddlebag2",
+    "page": 38,
+    "type": "WD|DMG",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": "由法师",
+    "reqAttuneTags": [
+      {
+        "class": "法师"
+      }
+    ],
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6 + 1}",
+    "charges": 7,
+    "entries": [
+      "这根魔杖的握柄末端有一个钢笔笔尖，笔尖能释放出魔杖内的魔法墨水。若你用这支笔将法术抄录到你的法术书中，则花费的金币数额减半。挥动此魔杖时，杖尖处会留下一串小墨滴轨迹的幻影。",
+      "这根魔杖具有7充能，可用于以下词条：",
+      {
+        "ENG_name": "Spells",
+        "type": "entries",
+        "name": "法术",
+        "entries": [
+          "持握此魔杖期间，你可以用一个动作并消耗其1充能，来施展以下法术之一：{@spell 通晓语言|PHB}（仅针对书写的语言）；或{@spell 迷幻手稿|PHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Cloudscript",
+        "name": "云字",
+        "type": "entries",
+        "entries": [
+          "持握此魔杖期间，你可以用一个动作并消耗其2充能，使天空中出现至多10个单词。这些单词由云或烟构成（由你选择），其持续时间为你专注于一个法术，至多1小时，或直至一阵中等或更强风势（风速不低于10英里每小时）将它们吹散。"
+        ]
+      },
+      "此魔杖在每日黎明时重获{@dice 1d6 + 1}已消耗的充能。当你消耗掉魔杖的最后一充能时，骰一次{@dice d20}。如果骰值为1，则魔杖会溶化成一滩非魔法的普通墨水而被摧毁。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "通晓语言",
+          "迷幻手稿"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表 G2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Arcanists-Scribing-Wand.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

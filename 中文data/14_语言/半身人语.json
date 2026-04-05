@@ -1,0 +1,25 @@
+{
+  "ENG_name": "Halfling",
+  "name": "半身人语",
+  "source": "PHB",
+  "page": 123,
+  "srd": true,
+  "basicRules": true,
+  "additionalSources": [
+    {
+      "source": "PHB",
+      "page": 26
+    }
+  ],
+  "reprintedAs": [
+    "半身人语|XPHB"
+  ],
+  "type": "standard",
+  "typicalSpeakers": [
+    "{@filter 半身人|bestiary|type=humanoid|tag=任意种族;半身人}"
+  ],
+  "script": "通用语",
+  "entries": [
+    "半身人的语言并不是秘密，但半身人不愿意与他人分享。他们很少写作，因此没有丰富的文学遗产。然而，他们的口头传统非常强大。几乎所有的半身人都会说通用语，以便与他们居住或旅行中的人交流。"
+  ]
+}

@@ -1,0 +1,321 @@
+{
+  "ENG_name": "Oath of Castigation",
+  "name": "惩戒之誓",
+  "shortName": "惩戒",
+  "source": "CrookedMoon24",
+  "className": "圣武士",
+  "classSource": "XPHB",
+  "page": 82,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "3": [
+          "神恩|XPHB",
+          "致伤术|XPHB"
+        ],
+        "5": [
+          "判罪锁链|crookedmoon24",
+          "定身类人|XPHB"
+        ],
+        "9": [
+          "法术反制|XPHB",
+          "死者交谈|XPHB"
+        ],
+        "13": [
+          "薪火焚身|crookedmoon24",
+          "生物定位术|XPHB"
+        ],
+        "17": [
+          "焰击术|XPHB",
+          "定身怪物|XPHB"
+        ]
+      }
+    }
+  ],
+  "subclassSpells": [
+    "神恩|XPHB",
+    "致伤术|XPHB",
+    "判罪锁链|crookedmoon24",
+    "定身类人|XPHB",
+    "法术反制|XPHB",
+    "死者交谈|XPHB",
+    "薪火焚身|crookedmoon24",
+    "生物定位术|XPHB",
+    "焰击术|XPHB",
+    "定身怪物|XPHB"
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "Oath of Castigation",
+      "name": "惩戒之誓",
+      "source": "CrookedMoon24",
+      "page": 82,
+      "className": "圣武士",
+      "classSource": "XPHB",
+      "subclassShortName": "惩戒",
+      "subclassSource": "crookedmoon24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "{@i 寻觅邪恶并焚为灰烬}",
+        "邪恶与不义虽然广布久存，却也并非无穷无尽。立下惩戒之誓的圣武士将邪恶连根拔起，彻底焚尽，只为照亮所有无辜者与善良。无论是受凡人法律、所侍神明还是自身信条的约束，他们都会无情地搜寻邪恶滋生之所。立下这一誓言的圣武士知道，邪恶一旦燃起便无法在任何腐朽地点躲藏。",
+        "立下此誓言的圣武士都遵循以下信条。",
+        {
+          "type": "list",
+          "items": [
+            "烧尽所有疑虑以追击责任。",
+            "涤罪净恶，饶恕无辜。",
+            "涤罪净恶，饶恕无辜。"
+          ]
+        },
+        "邪恶宿敌表格提供了罪犯、恶棍以及其他邪恶生物的示例，这些是你过去曾肃清或铲除的，或者你仍然在追捕的敌人。面对这些宿敌可能让你踏上了铲除潜藏不义的道路。",
+        {
+          "type": "table",
+          "caption": "邪恶宿敌",
+          "colLabels": [
+            "d12",
+            "复仇"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-11"
+          ],
+          "rows": [
+            [
+              "1",
+              "一位腐朽的吸血鬼贵族，通过役使无数害兽散播致命瘟疫。"
+            ],
+            [
+              "2",
+              "一名冷酷无情的雇佣杀手，将杀戮技巧贩卖予各种教团与黑暗势力。"
+            ],
+            [
+              "3",
+              "一位神眷天恩的邪教首领盘踞偏远孤岛，以凡人献祭换取年年五谷丰登。"
+            ],
+            [
+              "4",
+              "一具智慧非凡的血肉魔像，弑其造物主后，以怪诞实验与恐怖科学追求其自身的邪恶事业。"
+            ],
+            [
+              "5",
+              "一个极度嫉妒的森林鬼婆，她腐化小型村庄的年轻人并操纵它们犯下可怕的暴行"
+            ],
+            [
+              "6",
+              "一位骄傲自大的异端教士，在一场血腥分裂后聚集狂热追随者，以其扭曲信仰之名发起一场残酷的圣战。"
+            ],
+            [
+              "7",
+              "一位曾经著名的猎人现在被兽化诅咒，并进行了血腥的屠杀"
+            ],
+            [
+              "8",
+              "一个坚韧的死灵师在古代遗迹中搜寻禁忌魔法，以将他们来自异界的大师从神秘监狱中解放出来"
+            ],
+            [
+              "9",
+              "一只诡异的两栖生物，自深渊现身，劫持无辜者且将它们拖入水面下方，目的未知。"
+            ],
+            [
+              "10",
+              "一位才华横溢的医生，他完善了一种血清，能将其转化为一个庞大的蛮兽，并在整个城市中犯下连环谋杀案。"
+            ],
+            [
+              "11",
+              "一具嗜血的还魂鬼，曾经是一名黑暗骑士，现在正召集其他亡灵骑士带来死亡和衰竭。"
+            ],
+            [
+              "12",
+              "一位痛苦扭曲的艺人，头戴悲喜面具，且通过肢解受害者的尸体来追求他们的杰作。"
+            ]
+          ]
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "惩奸除恶|圣武士|XPHB|惩戒|crookedmoon24|3|crookedmoon24"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "诘问真心|圣武士|XPHB|惩戒|crookedmoon24|3|crookedmoon24"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "惩戒之誓法术|圣武士|XPHB|惩戒|crookedmoon24|3|crookedmoon24"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Castigate",
+      "name": "惩奸除恶",
+      "source": "CrookedMoon24",
+      "page": 82,
+      "className": "圣武士",
+      "classSource": "XPHB",
+      "subclassShortName": "惩戒",
+      "subclassSource": "crookedmoon24",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "你可以使用{@action 魔法|XPHB}动作消耗一次{@classFeature 引导神力|圣武士|XPHB|3}的使用次数，以烈焰镣铐锁缚你意欲惩戒的生物。选择你周边30英尺范围内至多等于你魅力调整值（至少为1个生物）的你可见的生物。每个生物都必须进行一次力量豁免检定，豁免失败则被戴上烈焰镣铐，其{@variantrule 速度|XPHB}减少至0。你可以使用{@variantrule 附赠动作|XPHB}令镣铐爆发炽焰。所有被镣铐锁缚的生物都会受到{@damage 2d6}火焰伤害。被镣铐锁缚的生物在其回合结束时重复豁免，成功则终止其身上的该效应。1分钟后，其豁免自动成功。"
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Paladin/Castigate.webp"
+    },
+    {
+      "ENG_name": "Incite",
+      "name": "诘问真心",
+      "source": "CrookedMoon24",
+      "page": 82,
+      "className": "圣武士",
+      "classSource": "XPHB",
+      "subclassShortName": "惩戒",
+      "subclassSource": "crookedmoon24",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "你可以使用{@action 魔法|XPHB}动作消耗一次{@classFeature 引导神力|圣武士|XPHB|3}的使用次数，以更好地搜寻不义和腐败。在接下来的10分钟内，你在智力（{@skill 调查|XPHB}）和感知（{@skill 洞悉|XPHB}）检定中具有{@variantrule 优势|XPHB}。",
+        "持续时间内，你可以使用{@variantrule 附赠动作|XPHB}选择你周边10尺范围内一个你可见的生物。目标必须进行一次魅力豁免，豁免失败则陷入{@condition 恐慌|XPHB}状态，持续1分钟。以这种方式陷入{@condition 恐慌|XPHB}状态期间，目标不能故意说谎。如果目标受到伤害，或者你再次使用该{@variantrule 附赠动作|XPHB}，则此状态提前结束。"
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Paladin/Incite.webp"
+    },
+    {
+      "ENG_name": "Oath of Castigation Spells",
+      "name": "惩戒之誓法术",
+      "source": "CrookedMoon24",
+      "page": 83,
+      "className": "圣武士",
+      "classSource": "XPHB",
+      "subclassShortName": "惩戒",
+      "subclassSource": "crookedmoon24",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "你惩戒之誓的魔法确保你总是预备了某些法术；当你达到惩戒之誓法术表格中指定的圣武士等级时，你此后便总是准备了所列的法术。",
+        {
+          "type": "table",
+          "caption": "惩戒之誓法术",
+          "colLabels": [
+            "圣武士等级",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "3rd",
+              "{@spell 神恩|XPHB}, {@spell 致伤术|XPHB}"
+            ],
+            [
+              "5th",
+              "{@spell 判罪锁链|crookedmoon24}, {@spell 定身类人|XPHB}"
+            ],
+            [
+              "9th",
+              "{@spell 法术反制|XPHB}, {@spell 死者交谈|XPHB}"
+            ],
+            [
+              "13th",
+              "{@spell 薪火焚身|crookedmoon24}, {@spell 生物定位术|XPHB}"
+            ],
+            [
+              "17th",
+              "{@spell 焰击术|XPHB}, {@spell 定身怪物|XPHB}"
+            ]
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Paladin/Oath%20of%20Castigation%20Spells.webp"
+    },
+    {
+      "ENG_name": "Kindling Aura",
+      "name": "火种灵光",
+      "source": "CrookedMoon24",
+      "page": 83,
+      "className": "圣武士",
+      "classSource": "XPHB",
+      "subclassShortName": "惩戒",
+      "subclassSource": "crookedmoon24",
+      "level": 7,
+      "header": 2,
+      "entries": [
+        "你和你的{@classFeature 守护灵光|圣武士|XPHB|6}内的盟友无视生物的{@variantrule 抗性|XPHB}火焰和光耀伤害抗性，并且当一个受影响的生物使用武器攻击命中时，它可以选择造成火焰伤害而非该武器的通常伤害类型。",
+        "此外，你和灵光内受影响生物可以将你的魅力调整值（至少为+1）添加到智力（{@skill 调查|XPHB}）和感知（{@skill 洞悉|XPHB}）检定中。"
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Paladin/Kindling%20Aura.webp"
+    },
+    {
+      "ENG_name": "Fervent Inquisitor",
+      "name": "炽诚审判",
+      "source": "CrookedMoon24",
+      "page": 83,
+      "className": "圣武士",
+      "classSource": "XPHB",
+      "subclassShortName": "惩戒",
+      "subclassSource": "crookedmoon24",
+      "level": 15,
+      "header": 2,
+      "entries": [
+        "每当一个生物对你或你30尺内可见的一个盟友造成伤害时，你可以使用{@variantrule 反应|XPHB}来获得{@variantrule 优势|XPHB}对你下一次对该生物的攻击检定。此外，每当你对一个{@status 浴血|XPHB}的生物造成火焰或光耀伤害时，你会知晓该生物在过去24小时内对你故意且明知故犯说出的任何谎言。"
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Paladin/Fervent%20Inquisitor.webp"
+    },
+    {
+      "ENG_name": "Fire and Brimstone",
+      "name": "硫磺烈火",
+      "source": "CrookedMoon24",
+      "page": 83,
+      "className": "圣武士",
+      "classSource": "XPHB",
+      "subclassShortName": "惩戒",
+      "subclassSource": "crookedmoon24",
+      "level": 20,
+      "header": 2,
+      "entries": [
+        "你可以使用{@variantrule 附赠动作|XPHB}来化身涤罪之焰并获得以下增益，持续10分钟或直到你结束它们（无需动作）。一旦你使用了此特性，则直至你完成一次{@variantrule 长休|XPHB}前，都无法再次使用。你也可以消耗一个五环法术位（无需动作）来恢复该特性的使用次数。",
+        {
+          "ENG_name": "Blazing Ardor",
+          "name": "炽焰意志",
+          "type": "entries",
+          "entries": [
+            "你获得{@variantrule 免疫|XPHB}火焰伤害免疫。"
+          ]
+        },
+        {
+          "ENG_name": "Relentless Judgment",
+          "name": "无情审判",
+          "type": "entries",
+          "entries": [
+            "圣焰之鞭使你的触及范围增加10尺，且你的近战攻击无视半身掩护和{@variantrule 掩护|XPHB|四分之三掩护}。"
+          ]
+        },
+        {
+          "ENG_name": "Punish the Wicked",
+          "name": "罪无可赦",
+          "type": "entries",
+          "entries": [
+            "当你以{@action 借机攻击|XPHB}命中一个生物时，或当一个{@variantrule 敌对【态度】|XPHB|敌对}生物在你的触及范围内结束其回合时，它必须进行一次魅力豁免检定，否则陷入{@condition 倒地|XPHB}状态且其{@variantrule 速度|XPHB}缩小为0直至其下一回合开始。"
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Paladin/Fire%20and%20Brimstone.webp"
+    }
+  ],
+  "fluff": {
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Subclasses/Paladin_Oath_of_Castigation.webp"
+        },
+        "credit": "Jo Cordisco",
+        "width": 839,
+        "height": 1200
+      }
+    ]
+  },
+  "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclasses/Castigation.webp"
+}

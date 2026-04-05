@@ -1,0 +1,19 @@
+{
+  "ENG_name": "Common Trade Pidgin",
+  "name": "通用贸易皮钦语",
+  "source": "PSX",
+  "page": 6,
+  "typicalSpeakers": [
+    "烈阳帝国",
+    "川流使",
+    "暮影军团",
+    "莽霸联盟",
+    "{@race 人类 (依夏兰)|PSX|人类}",
+    "{@race 兽人 (依夏兰)|PSX|兽人}",
+    "{@race 赛壬|PSX|塞壬}",
+    "{@race 地精 (依夏兰)|PSX|地精}"
+  ],
+  "entries": [
+    "一种在不同民族成员相互交流时使用的语言。但这种语言几乎不可能用于深入讨论任何问题。"
+  ]
+}

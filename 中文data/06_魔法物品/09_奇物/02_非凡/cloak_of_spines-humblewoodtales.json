@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Cloak of Spines",
+    "name": "尖刺斗篷",
+    "source": "HumblewoodTales",
+    "page": 236,
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "ac": 14,
+    "recharge": "拂晓",
+    "entries": [
+      "这件衣物由大型柔软的利刺制成，穿戴时会变硬。当你穿着这件斗篷时，若未穿戴任何护甲，你的AC变为14 + 你的敏捷调整值。",
+      "当你穿着这件斗篷时若被近战攻击命中，你可以使用反应使斗篷格挡该攻击并反击攻击手。以此方式格挡的攻击伤害减少{@dice 2d4}，并且你对攻击手造成{@dice 2d4}点魔法穿刺伤害。猬族使用该斗篷格挡近战攻击时，改为减少攻击伤害{@dice 4d4}并对攻击手造成{@dice 4d4}点魔法穿刺伤害。使用后，该斗篷属性直到次日拂晓前无法再次使用。"
+    ],
+    "hasFluffImages": true
+  }
+]

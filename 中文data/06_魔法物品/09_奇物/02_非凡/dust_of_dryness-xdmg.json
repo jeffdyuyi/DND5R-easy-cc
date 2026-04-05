@@ -1,0 +1,23 @@
+[
+  {
+    "ENG_name": "Dust of Dryness",
+    "name": "干燥粉",
+    "source": "XDMG",
+    "page": 255,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这个小包里共装着{@dice 1d6 + 4}把粉末。你可以用一个{@action 操作|XPHB}动作将一把粉末洒到水面上。粉末将把15尺{@variantrule 立方 [效应区域]|XPHB|立方}的水变成一个弹珠大小的小球，漂浮或停止在粉末被洒下的位置附近。小球的重量可以忽略不计。 生物可以用{@action 操作|XPHB}动作将小球摔在某个结实表面，以令小球破碎并释放其中的水分。这样做会摧毁小球并使其失去其魔力。",
+      "你可以用{@action 操作|XPHB}动作将一把粉末洒在5尺内一个身体大部分由水组成的元素生物（例如{@creature 水元素|XMM}或{@creature 水诡|XMM} ）身上。此时该生物须进行一次{@dc 13}的体质豁免，豁免失败者受到{@damage 10d6}点暗蚀伤害，豁免成功则伤害减半。"
+    ],
+    "lootTables": [
+      "奥秘 - 非普通|XDMG",
+      "器具 - 非普通|XDMG"
+    ],
+    "translator": "不全书",
+    "valueReference": 400,
+    "type": "W"
+  }
+]

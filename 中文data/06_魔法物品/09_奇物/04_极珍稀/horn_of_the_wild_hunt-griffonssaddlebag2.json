@@ -1,0 +1,43 @@
+[
+  {
+    "ENG_name": "Horn of the Wild Hunt",
+    "name": "狂猎号角",
+    "source": "GriffonsSaddlebag2",
+    "page": 106,
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "这支巨大的螺旋战号具有3充能，并在每日黎明时重获{@dice 1d3}已消耗的充能。你可以使用一个动作并消耗1充能吹响号角，如同施展{@spell 寻获坐骑|PHB}法术般召唤一只战麋。战麋使用{@creature 巨赤鹿|MM}的数据，但有以下改动：体型为大型，AC 14（{@item 表皮具装|PHB}），拥有37生命值。如果你与号角的同调结束，坐骑会消失。",
+      "另外，你可以用一个动作并消耗号角的1充能，说出其命令语并吹响号角。当你这样做时，一群幽影麋鹿会在你选择的方向上践踏一片区域，形成一条从你开始延伸的60尺长、15尺宽的直线区域。该区域内的每个生物都必须进行一次DC 15的敏捷豁免检定。豁免失败时，该生物受到{@damage 4d10}力场伤害并陷入{@condition 倒地}状态；豁免成功时，该生物受到一半伤害且不会{@condition 倒地}。",
+      "当你吹响号角时，它会发出一种低沉的轰鸣声，可在300尺外听到。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "寻获坐骑"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表 H2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Horn-of-the-Wild-Hunt.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

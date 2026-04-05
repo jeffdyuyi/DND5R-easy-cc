@@ -1,0 +1,67 @@
+[
+  {
+    "ENG_name": "Gladius of the Everfighter",
+    "name": "永斗短剑",
+    "source": "GriffonsSaddlebag2",
+    "page": 88,
+    "baseItem": "短剑|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "legendary",
+    "reqAttune": "由战士",
+    "reqAttuneTags": [
+      {
+        "class": "战士"
+      }
+    ],
+    "sentient": true,
+    "weight": 2,
+    "weaponCategory": "军用",
+    "property": [
+      "F",
+      "L"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "bonusWeapon": "+3",
+    "entries": [
+      "这把饱经沧桑的短剑曾被数位著名武者使用了数个世纪。挥舞时能听到微弱的英勇战吼声。你使用这把魔化武器进行攻击检定和伤害掷骰时获得 +3 加值。当持握此武器时，你额外获得一次使用回气Second Wind和动作如潮Action Surge职业特性的机会，但每回合仍然只能使用一次动作如潮。",
+      "你可以用一个动作说出武器的命令语，将其变形为任意你选择的{@b 简易或军用近战武器}。当你这样做时，武器会闪烁出金色光芒并变得可塑，在持续时间内你可以用附赠动作再次改变武器的形态。武器将保持可塑状态持续1分钟，或直到你用一个附赠动作提前终止效果。当不再处于可塑状态时，它会恢复原形。",
+      "当短剑变形为具有投掷属性的武器时，在你用其进行远程攻击后会立即飞回你的手中。",
+      {
+        "ENG_name": "Sentience",
+        "name": "智能",
+        "type": "entries",
+        "entries": [
+          "永恒战士的短剑是一件具有守序中立阵营的智能武器，智力为12，感知为15，魅力为15。它拥有听觉和120尺范围的黑暗视觉。",
+          "武器可以与其持用者进行心灵感应，并且能说、读和理解{@language 通用语}。它的声音严厉而富有威严。"
+        ]
+      },
+      {
+        "ENG_name": "Personality",
+        "name": "个性",
+        "type": "entries",
+        "entries": [
+          "永斗短剑立誓永远战斗。它很快就会厌倦交涉手段，认为争端最好通过战斗（不论是致命与否）来解决。只有在与使用者一同战胜强大挑战者后，它才会与使用者建立战友情谊。它强烈抗拒与使用者长时间分离，宁愿去寻找新的力量考验。",
+          "如果永斗短剑享受一场原本会导致对手死亡的战斗，它可以选择将对手击晕而不是杀死。"
+        ]
+      }
+    ],
+    "lootTables": [
+      "魔法物品表I|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Gladius-of-the-Everfighter.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Homegrown",
+    "name": "本土",
+    "source": "ObojimaTallGrass",
+    "page": 246,
+    "type": "P",
+    "rarity": "rare",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "当倾倒在一个至少50尺见方的区域且没有被阻碍（如树木或巨石）阻挡的表面上时，这种刺鼻的液体会迅速起泡膨胀。1分钟后，一个宏伟尺寸的新建且配备家具的家会在该空间出现。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 51|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/homegrown.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1531,
+          "height": 1531
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

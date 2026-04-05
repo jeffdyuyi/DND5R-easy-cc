@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Ioun Stone, Insight",
+    "name": "艾恩石, 洞悉",
+    "source": "XDMG",
+    "page": 273,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "ability": {
+      "wis": 2
+    },
+    "hasRefs": true,
+    "entries": [
+      "{#itemEntry 艾恩石|XDMG}",
+      "在这颗炽蓝色的球形艾恩石环绕在你头顶期间，你的感知属性增加2，最多增加至20。"
+    ],
+    "lootTables": [
+      "圣物 - 极珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 40000,
+    "fluff": {},
+    "type": "W"
+  }
+]

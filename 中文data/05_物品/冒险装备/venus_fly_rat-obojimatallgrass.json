@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Venus Fly Rat",
+    "name": "金星飞行鼠",
+    "source": "ObojimaTallGrass",
+    "page": 208,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 9|large}|SneakerProMedium}",
+            "{@font {@style 2|large}|SneakerProMedium}",
+            "{@font {@style 8|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "金星飞行鼠得名于远古天文台中发现的一份奇怪文件，它能用针般锋利的牙齿和麻痹唾液从毫无防备的野兽身上吸取鲜血而不被察觉。已知金星飞行鼠集群会杀死牲畜，这使它们成为各地农民的灾祸。金星飞行鼠生活在发现其始祖的天文台附近的洞穴中，它们通过耳朵和敏感的分叉背面在黑暗术中进行回声定位。"
+    ],
+    "lootTables": [
+      "海岸高地普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/venus-fly-rat.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 3135,
+          "height": 3135
+        }
+      ]
+    }
+  }
+]

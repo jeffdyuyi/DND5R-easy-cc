@@ -1,0 +1,38 @@
+[
+  {
+    "name": "地城套组",
+    "ENG_name": "Dungeoneer's Pack",
+    "source": "XPHB",
+    "page": 225,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 55,
+    "value": 1200,
+    "packContents": [
+      "背包|xphb",
+      "铁蒺藜|xphb",
+      "撬棍|xphb",
+      {
+        "item": "燃油|xphb",
+        "quantity": 2
+      },
+      {
+        "item": "口粮|xphb",
+        "quantity": 10
+      },
+      "绳索|xphb",
+      "火绒盒|xphb",
+      {
+        "item": "火把|xphb",
+        "quantity": 10
+      },
+      "水袋|xphb"
+    ],
+    "entries": [
+      "地城套组包含以下物品：{@item 背包|XPHB}、{@item 铁蒺藜|XPHB}、{@item 撬棍|XPHB}、2 扁瓶{@item 燃油|XPHB}、10 天份的{@item 口粮|XPHB}、{@item 绳索|XPHB}、{@item 火绒盒|XPHB}、10 支{@item 火把|XPHB|火把}和{@item 水袋|XPHB}。"
+    ],
+    "basicRules2024": true,
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

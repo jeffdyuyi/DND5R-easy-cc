@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Canian Fork",
+    "name": "卡尼亚叉",
+    "source": "CoA",
+    "page": 267,
+    "baseItem": "三叉戟|PHB",
+    "type": "M",
+    "rarity": "rare",
+    "reqAttune": true,
+    "curse": true,
+    "weight": 4,
+    "weaponCategory": "martial",
+    "property": [
+      "T",
+      "V"
+    ],
+    "range": "20/60",
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "dmg2": "1d8",
+    "bonusWeapon": "+3",
+    "entries": [
+      "使用这把魔法武器进行攻击和伤害判定时，你有+3的加值。此外，你每个回合还可以用它进行一次额外的攻击作为附赠动作。",
+      {
+        "ENG_name": "Curse",
+        "name": "诅咒",
+        "type": "entries",
+        "entries": [
+          "当你与这把武器产生共鸣时，你不愿意与之分离。你也容易受到光辉伤害，并且每次你接受魔法治疗时，你必须进行一次{@dc 15}体质豁免检定。",
+          "如果豁免失败，治疗将没有效果。只有{@spell 移除诅咒}法术可以让你结束对这个物品的协调。"
+        ]
+      },
+      {
+        "ENG_name": "Corrupting",
+        "name": "腐蚀",
+        "type": "entries",
+        "entries": [
+          "这个物品具有腐蚀性。详见\"{@adventure 地狱物品腐化|CoA|16|地狱物品腐化}\"部分。"
+        ]
+      }
+    ],
+    "valueReference": 4000
+  }
+]

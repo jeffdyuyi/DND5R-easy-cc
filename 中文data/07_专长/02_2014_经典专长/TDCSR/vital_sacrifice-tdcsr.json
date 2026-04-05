@@ -1,0 +1,21 @@
+[
+    {
+        "ENG_name": "Vital Sacrifice",
+        "name": "生命献祭",
+        "source": "TalDoreiCampaignSettingReborn",
+        "page": 191,
+        "entries": [
+            "你学会了{@variantrule 操血术|TalDoreiCampaignSettingReborn}的秘密，这些秘密以你的生命力量为代价，赋予你深奥的法力。作为一个附赠动作，你可以选择承受{@damage 1d6}暗蚀伤害来获得一个鲜血恩惠。你的鲜血恩惠持续1小时或直到被消耗。",
+            "你能消耗该鲜血恩惠以获取以下增益之一：",
+            {
+                "type": "list",
+                "items": [
+                    "当你进行一次攻击检定时，骰一枚{@dice 1d6}，并将出目加到结果中。",
+                    "当你的攻击或法术命中时，你能够额外造成{@damage 2d6}点暗蚀伤害。",
+                    "当你迫使某生物进行力量、敏捷、或体质{@quickref 豁免检定|PHB|2|1|豁免检定}时，投一枚{@dice d4}，并从其豁免掷骰结果中减去出目。"
+                ]
+            },
+            "换取鲜血恩惠时，你所受到的暗蚀伤害无法以任何方式减免。"
+        ]
+    }
+]

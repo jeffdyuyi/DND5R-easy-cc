@@ -1,0 +1,51 @@
+[
+  {
+    "name": "力竭",
+    "ENG_name": "Exhaustion",
+    "source": "XPHB",
+    "page": 365,
+    "entries": [
+      "力竭状态期间，你将遭受以下这些效应。",
+      {
+        "type": "entries",
+        "entries": [
+          {
+            "ENG_name": "Exhaustion Levels",
+            "name": "力竭等级",
+            "type": "entries",
+            "entries": [
+              "此状态可叠加。每次你获得此状态，力竭等级都增加 1 级。当你力竭等级累加到 6 级你将死亡。"
+            ]
+          },
+          {
+            "ENG_name": "D20 Tests Affected",
+            "name": "D20检定影响",
+            "type": "entries",
+            "entries": [
+              "当你进行一次D20检定时，此次检定将减去你力竭等级 2 倍的值。"
+            ]
+          },
+          {
+            "ENG_name": "Speed Reduced",
+            "name": "速度降低",
+            "type": "entries",
+            "entries": [
+              "你的{@variantrule 速度|XPHB}减少等于你力竭等级 5 倍尺。"
+            ]
+          },
+          {
+            "ENG_name": "Removing Exhaustion Levels",
+            "name": "移除力竭等级",
+            "type": "entries",
+            "entries": [
+              "你可以依靠完成{@variantrule 长休|XPHB}来降低 1 级力竭等级。当你力竭等级降至 0 时，此状态结束。"
+            ]
+          }
+        ]
+      }
+    ],
+    "basicRules2024": true,
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

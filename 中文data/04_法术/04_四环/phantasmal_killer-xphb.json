@@ -1,0 +1,77 @@
+[
+  {
+    "ENG_name": "Phantasmal Killer",
+    "name": "魅影杀手",
+    "source": "XPHB",
+    "page": 304,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 4,
+    "school": "I",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你指定施法距离内一名你可见的生物，窥探其噩梦，依此创造一道只有目标能看见的幻象。目标生物进行一次感知豁免。豁免失败时，目标受到{@damage 4d10}点心灵伤害，且在法术持续时间内进行的所有属性检定与攻击检定都具有{@variantrule 劣势|XPHB}。豁免成功，则目标仅受半数伤害，法术终止。",
+      "法术持续时间内，目标在其每回合结束时进行一次感知豁免，豁免失败将再次受到心灵伤害。豁免成功则法术终止。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "使用的法术位每比四环高一环，此法术的伤害就增加{@scaledamage 4d10|4-9|1d10}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "psychic"
+    ],
+    "savingThrow": [
+      "wisdom"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "法师"
+    ],
+    "display_school": "幻术系",
+    "display_savingThrow": [
+      "感知"
+    ],
+    "display_damageInflict": [
+      "心灵"
+    ]
+  }
+]

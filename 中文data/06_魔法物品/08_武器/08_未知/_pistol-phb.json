@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "Pistol",
+    "name": "镀银手枪",
+    "source": "PHB",
+    "page": 148,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "unknown",
+    "weight": 3,
+    "value": 25000,
+    "weaponCategory": "martial",
+    "property": [
+      "A|XPHB",
+      "LD|XPHB"
+    ],
+    "mastery": [
+      "侵扰|XPHB"
+    ],
+    "range": "30/90",
+    "dmg1": "1d10",
+    "dmgType": "P",
+    "firearm": true,
+    "weapon": true,
+    "ammoType": "枪械子弹|xphb",
+    "hasFluffImages": true,
+    "namePrefix": "镀银",
+    "basicRules": true,
+    "reprintedAs": [
+      "镀银武器|XDMG"
+    ],
+    "tier": "主要",
+    "valueExpression": "[[baseItem.value]] + 10000",
+    "_isVariant": true
+  }
+]

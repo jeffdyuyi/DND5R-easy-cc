@@ -1,0 +1,56 @@
+{
+  "ENG_name": "Scriptorium",
+  "name": "抄写室",
+  "source": "XDMG",
+  "page": 346,
+  "facilityType": "special",
+  "level": 9,
+  "space": [
+    "roomy"
+  ],
+  "hirelings": [
+    {
+      "exact": 1
+    }
+  ],
+  "orders": [
+    "制造"
+  ],
+  "entries": [
+    "抄写室包含桌子和书写工具。",
+    {
+      "ENG_name": "Craft Options",
+      "name": "制造选项",
+      "type": "entries",
+      "entries": [
+        "当你对此设施下达{@book 制造|XDMG|7|制造}指令时，从以下选项中选择一项：",
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "ENG_name": "Craft:",
+              "name": "制造：",
+              "type": "item",
+              "entry": "书卷抄本。你委托设施雇员制造某本非魔法书籍的手抄本。这项工作需要一本空白的书，并且要花费 7 天时间。"
+            },
+            {
+              "ENG_name": "Craft:",
+              "name": "制造：",
+              "type": "item",
+              "entry": "法术卷轴。你委托设施雇员制造一张{@item 法术卷轴|XDMG}，该卷轴包含一道牧师法术或法师法术，其环位不得超过 3 环。此设施拥有制造卷轴所需的{@item 书法工具|XPHB}，并且其员工能满足制造卷轴所需的条件。制造该卷轴所需的时间和金钱如{@book 玩家手册|XPHB}中的\" {@book 制作装备|XPHB|6|制作装备} \"一节所示，你必须支付相应的金钱。"
+            },
+            {
+              "ENG_name": "Craft:",
+              "name": "制造：",
+              "type": "item",
+              "entry": "文书工作 。你委托设施雇员制造最多50份单幅大报纸、纸质小册子或者其他活页纸质产品。这项工作需要 7 天时间，每一份产品都需要花费 1 GP 。此外，设施雇员可以将这些产品分发到你据点 50 里以内的一个或多个地点，无需花费额外的时间和金钱。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "hasFluffImages": true,
+  "translator": "不全书"
+}

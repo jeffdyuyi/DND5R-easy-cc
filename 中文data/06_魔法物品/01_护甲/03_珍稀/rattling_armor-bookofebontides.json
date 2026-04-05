@@ -1,0 +1,29 @@
+[
+  {
+    "ENG_name": "Rattling Armor",
+    "name": "嘎嘎作响的护甲",
+    "source": "BookOfEbonTides",
+    "page": 198,
+    "baseItem": "板条甲|PHB",
+    "type": "HA",
+    "resist": [
+      "暗蚀"
+    ],
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 60,
+    "ac": 17,
+    "strength": "15",
+    "stealth": true,
+    "entries": [
+      "这件护甲由类人生物的骨头制成，并附有恐惧的幻象。穿着这件护甲时，你对暗蚀伤害具有抗性。此外，你可以用一个动作施放{@spell 恐惧术}法术。护甲的这个属性直到下一个拂晓前无法再次使用。"
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "恐惧术"
+        ]
+      }
+    }
+  }
+]

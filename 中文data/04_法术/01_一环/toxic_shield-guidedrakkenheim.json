@@ -1,0 +1,74 @@
+[
+  {
+    "ENG_name": "Toxic Shield",
+    "name": "毒素护盾",
+    "source": "GuideDrakkenheim",
+    "page": 187,
+    "level": 1,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "s": true,
+      "m": "一滴矮人鲜血"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你在持续时间内获得毒素伤害抗性，并在对抗{@condition 中毒}状态的豁免检定中具有优势。此外，每当5尺内的生物以近战攻击命中你时，护盾会向它们喷洒毒素，对攻击手造成{@damage 1d8}毒素伤害。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用2环或更高法术位施放该法术时，毒素伤害每比1环高2级就增加{@dice 1d8}。"
+        ]
+      }
+    ],
+    "damageResist": [
+      "毒素"
+    ],
+    "damageInflict": [
+      "毒素"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Paladin",
+          "name": "圣武士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        }
+      ]
+    }
+  }
+]

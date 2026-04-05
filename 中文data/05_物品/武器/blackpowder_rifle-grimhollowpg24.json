@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Blackpowder Rifle",
+    "name": "黑火药步枪",
+    "source": "GrimHollowPG24",
+    "page": 129,
+    "type": "R|XPHB",
+    "rarity": "none",
+    "weight": 10,
+    "value": 50000,
+    "weaponCategory": "进阶",
+    "property": [
+      "A|XPHB",
+      "BP|GrimHollowPG24",
+      "LD|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "缓速|XPHB"
+    ],
+    "range": "80/300",
+    "dmg1": "2d6",
+    "dmgType": "P",
+    "weapon": true,
+    "ammoType": "纸张子弹|GrimHollowPG24"
+  }
+]

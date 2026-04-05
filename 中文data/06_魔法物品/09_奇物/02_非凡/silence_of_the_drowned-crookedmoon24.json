@@ -1,0 +1,42 @@
+[
+  {
+    "ENG_name": "Silence of the Drowned",
+    "name": "溺亡者的沉默",
+    "source": "CrookedMoon24",
+    "page": 617,
+    "type": "P|XPHB",
+    "rarity": "uncommon",
+    "entries": [
+      "饮下这瓶药水后，你获得法术{@spell 沉默术|XPHB}（无需{@status 专注|XPHB}）的效应，影响源自你的20尺{@variantrule 光环 [效应区域]|XPHB|光环}区域，持续10分钟，并且在持续时间内，鱿鱼触须会从你的口中伸出。",
+      "这个雕塑般的陶罐被涂成深蓝色并饰有鱿鱼触手。拔开瓶塞时区域内的所有响声都会减弱仿佛置身于水下，里面的液体呈铜蓝偏绿色。",
+      {
+        "ENG_name": "Heightened Potency",
+        "name": "强效",
+        "type": "entries",
+        "entries": [
+          "持续时间内，你可以使用{@variantrule 附赠动作|XPHB}从口中喷吐墨水。你周边30尺范围内的一个生物必须进行一次DC13的敏捷豁免检定。若豁免失败，则目标获得{@condition 目盲|XPHB}状态，直至你的下一回合开始。若豁免成功，则目标在接下来的24小时内免疫此属性。"
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "沉默术|XPHB"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Silence%20of%20the%20Drowned.webp"
+          },
+          "width": 774,
+          "height": 1200,
+          "credit": "Margarita Bourkova"
+        }
+      ]
+    }
+  }
+]

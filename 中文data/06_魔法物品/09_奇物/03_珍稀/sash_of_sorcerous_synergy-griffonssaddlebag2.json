@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "Sash of Sorcerous Synergy",
+    "name": "术法共鸣饰带",
+    "source": "GriffonsSaddlebag2",
+    "page": 154,
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": "由术士",
+    "reqAttuneTags": [
+      {
+        "class": "术士"
+      }
+    ],
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d4 + 1}",
+    "charges": 5,
+    "entries": [
+      "这件奇妙的单肩长袍由浸泡过强大魔力的精致布料制成，并配有一个华丽的搭扣。这条饰带具有5充能，且在每日拂晓恢复{@dice 1d4 + 1}已消耗的充能。着装此长袍期间，当一名位于你60尺以内且你能看见的盟友施展法术时，你可以用反应消耗饰带的1或更多充能，用你已知的超魔法选项超魔该法术，而无需消耗术法点。你所消耗的充能数等于该超魔法选项所需消耗的术法点。如果使用饰带进行超魔会导致法术需要指定第二个生物为目标，新的目标由你选择。",
+      "此外，着装此饰带期间，当你对法术使用超魔法选项时，你可以改变长袍和搭扣的式样、颜色和材质。饰带的重量不会改变。但无论外观如何改变，饰带都只能是一件单肩长袍的形态。"
+    ],
+    "lootTables": [
+      "魔法物品表 G1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Sash-of-Sorcerous-Synergy.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

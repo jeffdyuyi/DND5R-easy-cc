@@ -1,0 +1,51 @@
+[
+  {
+    "ENG_name": "Scalefruit Rind",
+    "name": "鳞果皮",
+    "source": "ObojimaTallGrass",
+    "page": 207,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 4|large}|SneakerProMedium}",
+            "{@font {@style 2|large}|SneakerProMedium}",
+            "{@font {@style 2|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "鳞果是拳头大小的水果，覆盖着厚厚的鳞状果皮。虽然鳞果的外表相当不吸引人，但内部却甜美可口，切开后很容易舀出。许多鳞果农民很容易被认出来，因为他们总是带着一把锋利的砍刀和一个金属勺子。鳞果树生长在海岸线上，因为它们喜欢沙质土壤。许多海滨镇的村庄都有自己独创的鳞果饮品，自豪地提供给旅行者。"
+    ],
+    "lootTables": [
+      "舒里塔希的赠礼 普通原料|ObojimaTallGrass",
+      "咸水湿地普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/scalefruit-rind.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 2125,
+          "height": 2125
+        }
+      ]
+    }
+  }
+]

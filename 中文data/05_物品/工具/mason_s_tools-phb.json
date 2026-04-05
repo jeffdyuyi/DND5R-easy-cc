@@ -1,0 +1,96 @@
+[
+  {
+    "name": "石匠工具",
+    "ENG_name": "Mason's Tools",
+    "source": "PHB",
+    "page": 154,
+    "type": "AT",
+    "rarity": "none",
+    "weight": 8,
+    "value": 1000,
+    "additionalEntries": [
+      "石匠工具允许你制作石质结构，包括由砖块制成的墙壁和建筑。",
+      {
+        "ENG_name": "Components",
+        "name": "成分",
+        "type": "entries",
+        "entries": [
+          "石匠工具包括一把泥刀、一把锤子、一把凿子、几把刷子和一个角尺。"
+        ]
+      },
+      {
+        "ENG_name": "History",
+        "name": "历史",
+        "type": "entries",
+        "entries": [
+          "你的专精有助于识别石质建筑的建造日期和用途，并对可能建造它的人有所洞悉。"
+        ]
+      },
+      {
+        "ENG_name": "Investigation",
+        "name": "调查",
+        "type": "entries",
+        "entries": [
+          "你在检查岩石建筑内的区域时会获得额外的洞悉。"
+        ]
+      },
+      {
+        "ENG_name": "Perception",
+        "name": "察觉",
+        "type": "entries",
+        "entries": [
+          "你可以发现石墙或地板上的不规则性，这使得发现陷阱门和秘密通道变得更容易。"
+        ]
+      },
+      {
+        "ENG_name": "Demolition",
+        "name": "拆迁",
+        "type": "entries",
+        "entries": [
+          "你对石匠工艺的知识使你能够发现砖墙的薄弱点。你用武器攻击对这类建筑造成双倍伤害。"
+        ]
+      },
+      {
+        "type": "table",
+        "caption": "石匠工具",
+        "colLabels": [
+          "用途",
+          "DC"
+        ],
+        "colStyles": [
+          "col-10",
+          "col-2 text-center"
+        ],
+        "rows": [
+          [
+            "在石墙上凿一个小洞",
+            "10"
+          ],
+          [
+            "在石墙上找到一个弱点",
+            "15"
+          ]
+        ]
+      }
+    ],
+    "additionalSources": [
+      {
+        "source": "XGE",
+        "page": 83
+      }
+    ],
+    "basicRules": true,
+    "referenceSources": [
+      "GoS",
+      "IMR",
+      "RtG",
+      "SCC-ARiR",
+      "CRCotN",
+      "PaBTSO"
+    ],
+    "reprintedAs": [
+      "石匠工具|XPHB"
+    ],
+    "srd": true
+  }
+]

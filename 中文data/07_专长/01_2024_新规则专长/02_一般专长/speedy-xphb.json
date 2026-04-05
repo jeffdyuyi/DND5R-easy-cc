@@ -1,0 +1,65 @@
+[
+  {
+    "ENG_name": "Speedy",
+    "name": "飙速跑者",
+    "source": "XPHB",
+    "page": 208,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4,
+        "ability": [
+          {
+            "dex": 13
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "ability": [
+          {
+            "con": 13
+          }
+        ]
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "dex",
+            "con"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Speed Increase",
+        "name": "速度提升",
+        "type": "entries",
+        "entries": [
+          "你的{@variantrule 速度|XPHB}提升 10 尺。"
+        ]
+      },
+      {
+        "ENG_name": "Dash over Difficult Terrain",
+        "name": "险地疾行",
+        "type": "entries",
+        "entries": [
+          "当你在自己的回合执行{@action 疾走|XPHB}动作时，在这个回合余下的时间里，{@variantrule 困难地形|XPHB}不再会额外消耗你的移动力。"
+        ]
+      },
+      {
+        "ENG_name": "Agile Movement",
+        "name": "灵活移动",
+        "type": "entries",
+        "entries": [
+          "对你发动的{@action 借机攻击|XPHB|借机攻击}具有{@variantrule 劣势|XPHB}。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

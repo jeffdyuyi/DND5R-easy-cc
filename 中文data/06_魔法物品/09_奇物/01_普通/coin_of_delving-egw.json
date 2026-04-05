@@ -1,0 +1,20 @@
+[
+  {
+    "ENG_name": "Coin of Delving",
+    "name": "测距铜币",
+    "source": "EGW",
+    "page": 266,
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "这枚闪烁的铜币为其周围5尺半径范围提供微光光照。如果硬币向下掉落的距离大于5尺，则它在撞击到任意物体表面后会发出悦耳的铃声，任何听到铃声的生物都可以根据音调判断硬币掉落的距离。"
+    ],
+    "light": [
+      {
+        "dim": 5
+      }
+    ],
+    "valueReference": 100,
+    "type": "W"
+  }
+]

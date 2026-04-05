@@ -1,0 +1,23 @@
+[
+  {
+    "ENG_name": "+2 Studded White Dragon Leather Armor of Cold Resistance",
+    "name": "+2 寒冷抗性镶钉白龙皮甲",
+    "source": "TalDoreiCampaignSettingReborn",
+    "page": 267,
+    "type": "LA",
+    "resist": [
+      "寒冷"
+    ],
+    "tier": "主要",
+    "rarity": "unknown (magic)",
+    "reqAttune": true,
+    "weight": 13,
+    "ac": 12,
+    "bonusAc": "+2",
+    "entries": [
+      "着装该护甲期间，你的AC获得+2加值。",
+      "着装该护甲期间，你获得寒冷伤害抗性。",
+      "{@note 由{@creature 维克萨利亚|TalDoreiCampaignSettingReborn}穿戴。}"
+    ]
+  }
+]

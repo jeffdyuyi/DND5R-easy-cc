@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Serpent Scale Armor",
+    "name": "蛇鳞甲",
+    "source": "CM",
+    "page": 98,
+    "baseItem": "鳞甲|PHB",
+    "type": "MA",
+    "rarity": "uncommon",
+    "weight": 45,
+    "ac": 14,
+    "dexterityMax": null,
+    "entries": [
+      "这套魔法盔甲由闪烁的鳞片制成。穿戴时，你可以在确定你的护甲等级时应用你全部的敏捷调整值（而不是最多+2）。此外，这套盔甲不会对你的敏捷（{@skill 隐匿}）检定造成不利影响。"
+    ],
+    "valueReference": 400
+  }
+]

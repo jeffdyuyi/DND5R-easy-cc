@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Coin's Edge",
+    "name": "硬币边缘",
+    "source": "ObojimaTallGrass",
+    "page": 168,
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "这枚魔法硬币上有一把匕首的徽记。当硬币被翻转至风中时，它会变成一把寻常的匕首。一旦这个属性被使用，就无法撤销。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/coins-edge.webp"
+          },
+          "credit": "Matt Owen",
+          "width": 2560,
+          "height": 2560
+        }
+      ]
+    }
+  }
+]

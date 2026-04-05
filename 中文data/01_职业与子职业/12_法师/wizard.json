@@ -1,0 +1,536 @@
+[
+  {
+    "name": "法师",
+    "ENG_name": "Wizard",
+    "source": "PHB",
+    "edition": "classic",
+    "classData": {
+      "ENG_name": "Wizard",
+      "name": "法师",
+      "source": "PHB",
+      "page": 112,
+      "srd": true,
+      "basicRules": true,
+      "reprintedAs": [
+        "法师|XPHB"
+      ],
+      "edition": "classic",
+      "hd": {
+        "number": 1,
+        "faces": 6
+      },
+      "proficiency": [
+        "int",
+        "wis"
+      ],
+      "spellcastingAbility": "int",
+      "casterProgression": "full",
+      "preparedSpells": "<$level$> + <$int_mod$>",
+      "cantripProgression": [
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "spellsKnownProgressionFixed": [
+        6,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "startingProficiencies": {
+        "weapons": [
+          "{@item 匕首|PHB}",
+          "{@item 飞镖|PHB}",
+          "{@item 投石索|PHB}",
+          "{@item 长棍|PHB}",
+          "{@item 轻弩|PHB}"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "arcana",
+                "history",
+                "insight",
+                "investigation",
+                "medicine",
+                "religion"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "default": [
+          "(a) 一根 {@item 长棍|PHB} 或 (b) 一把 {@item 匕首|PHB}",
+          "(a) 一个 {@item 材料包|PHB} 或 (b) 一件 {@item 奥术法器|PHB}",
+          "(a) 一个 {@item 学者套组|PHB} 或 (b) 一个 {@item 探索套组|PHB}",
+          "一本 {@item 法术书|PHB}"
+        ],
+        "goldAlternative": "{@dice 4d4 × 10|4d4 × 10|起始金币}"
+      },
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "戏法"
+          ],
+          "rows": [
+            [
+              3
+            ],
+            [
+              3
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "奥术回想|法师|PHB|1",
+        "施法|法师|PHB|1",
+        {
+          "classFeature": "奥术传承|法师|PHB|2",
+          "gainSubclassFeature": true
+        },
+        "戏法公式|法师|PHB|3|TCE",
+        "属性值提升|法师|PHB|4",
+        {
+          "classFeature": "奥术传承特性|法师|PHB|6",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|法师|PHB|8",
+        {
+          "classFeature": "奥术传承特性|法师|PHB|10",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|法师|PHB|12",
+        {
+          "classFeature": "奥术传承特性|法师|PHB|14",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|法师|PHB|16",
+        "法术精通|法师|PHB|18",
+        "属性值提升|法师|PHB|19",
+        "招牌法术|法师|PHB|20"
+      ],
+      "subclassTitle": "奥术传承"
+    },
+    "subclasses": [
+      {
+        "name": "变化学派",
+        "source": "PHB",
+        "shortName": "变化"
+      },
+      {
+        "name": "咒法学派",
+        "source": "PHB",
+        "shortName": "咒法"
+      },
+      {
+        "name": "塑能学派",
+        "source": "PHB",
+        "shortName": "塑能"
+      },
+      {
+        "name": "幻术学派",
+        "source": "PHB",
+        "shortName": "幻术"
+      },
+      {
+        "name": "惑控学派",
+        "source": "PHB",
+        "shortName": "惑控"
+      },
+      {
+        "name": "死灵学派",
+        "source": "PHB",
+        "shortName": "死灵"
+      },
+      {
+        "name": "防护学派",
+        "source": "PHB",
+        "shortName": "防护"
+      },
+      {
+        "name": "预言学派",
+        "source": "PHB",
+        "shortName": "预言"
+      },
+      {
+        "name": "书士会",
+        "source": "TCE",
+        "shortName": "书士"
+      },
+      {
+        "name": "剑咏者",
+        "source": "TCE",
+        "shortName": "剑咏"
+      },
+      {
+        "name": "战争魔法",
+        "source": "XGE",
+        "shortName": "战争"
+      },
+      {
+        "name": "时间魔法",
+        "source": "EGW",
+        "shortName": "时间"
+      },
+      {
+        "name": "重力魔法",
+        "source": "EGW",
+        "shortName": "重力"
+      },
+      {
+        "name": "司书",
+        "source": "CthulhuTorchlight",
+        "shortName": "司书"
+      },
+      {
+        "name": "哲学",
+        "source": "CrookedMoon14",
+        "shortName": "哲学"
+      },
+      {
+        "name": "地脉魔法",
+        "source": "HumblewoodTales",
+        "shortName": "地脉"
+      },
+      {
+        "name": "恶徒",
+        "source": "SCGTD",
+        "shortName": "恶徒"
+      },
+      {
+        "name": "恶魔学家",
+        "source": "GrimHollowPG24",
+        "shortName": "恶魔学家"
+      },
+      {
+        "name": "折纸魔法师",
+        "source": "ObojimaTallGrass",
+        "shortName": "折纸"
+      },
+      {
+        "name": "暗影奥术传承",
+        "source": "BookOfEbonTides",
+        "shortName": "暗影"
+      },
+      {
+        "name": "瘟疫医生",
+        "source": "GrimHollowPG24",
+        "shortName": "医生"
+      },
+      {
+        "name": "神秘学者",
+        "source": "CrookedMoon14",
+        "shortName": "神秘"
+      },
+      {
+        "name": "血法师",
+        "source": "GrimHollowPG24",
+        "shortName": "血法师"
+      },
+      {
+        "name": "血魔法",
+        "source": "TaldoreiReborn",
+        "shortName": "血魔法"
+      },
+      {
+        "name": "远古魔杖学",
+        "source": "GriffonsSaddlebag2",
+        "shortName": "魔杖学"
+      }
+    ]
+  },
+  {
+    "name": "法师",
+    "ENG_name": "Wizard",
+    "source": "XPHB",
+    "edition": "one",
+    "classData": {
+      "ENG_name": "Wizard",
+      "name": "法师",
+      "source": "XPHB",
+      "page": 164,
+      "srd52": true,
+      "basicRules2024": true,
+      "edition": "one",
+      "primaryAbility": [
+        {
+          "int": true
+        }
+      ],
+      "hd": {
+        "number": 1,
+        "faces": 6
+      },
+      "proficiency": [
+        "int",
+        "wis"
+      ],
+      "spellcastingAbility": "int",
+      "casterProgression": "full",
+      "preparedSpellsProgression": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        22,
+        22
+      ],
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "戏法",
+            "准备法术"
+          ],
+          "rows": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              4,
+              7
+            ],
+            [
+              4,
+              8
+            ],
+            [
+              4,
+              9
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              4,
+              11
+            ],
+            [
+              4,
+              12
+            ],
+            [
+              5,
+              13
+            ],
+            [
+              5,
+              14
+            ],
+            [
+              5,
+              15
+            ],
+            [
+              5,
+              16
+            ],
+            [
+              5,
+              17
+            ],
+            [
+              5,
+              18
+            ],
+            [
+              5,
+              19
+            ],
+            [
+              5,
+              20
+            ],
+            [
+              5,
+              22
+            ],
+            [
+              5,
+              22
+            ],
+            [
+              5,
+              22
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "奥术回想|法师|XPHB|1",
+        "仪式学家|法师|XPHB|1",
+        "施法|法师|XPHB|1",
+        "学者|法师|XPHB|2",
+        {
+          "classFeature": "法师子职|法师|XPHB|3",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|法师|XPHB|4",
+        "记忆法术|法师|XPHB|5",
+        {
+          "classFeature": "子职特性|法师|XPHB|6",
+          "gainSubclassFeature": true
+        },
+        {
+          "classFeature": "子职特性|法师|XPHB|10",
+          "gainSubclassFeature": true
+        },
+        {
+          "classFeature": "子职特性|法师|XPHB|14",
+          "gainSubclassFeature": true
+        },
+        "法术精通|法师|XPHB|18",
+        "传奇恩惠|法师|XPHB|19",
+        "招牌法术|法师|XPHB|20"
+      ],
+      "subclassTitle": "法师子职"
+    },
+    "subclasses": [
+      {
+        "name": "塑能师",
+        "shortName": "塑能师",
+        "source": "XPHB"
+      },
+      {
+        "name": "幻术师",
+        "shortName": "幻术师",
+        "source": "XPHB"
+      },
+      {
+        "name": "防护师",
+        "shortName": "防护师",
+        "source": "XPHB"
+      },
+      {
+        "name": "预言师",
+        "shortName": "预言师",
+        "source": "XPHB"
+      },
+      {
+        "name": "神秘学者",
+        "shortName": "神秘学者",
+        "source": "CrookedMoon24"
+      },
+      {
+        "name": "贤者",
+        "shortName": "贤者",
+        "source": "CrookedMoon24"
+      }
+    ]
+  }
+]

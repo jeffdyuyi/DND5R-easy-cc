@@ -1,0 +1,66 @@
+[
+  {
+    "ENG_name": "Lightning Arrow",
+    "name": "闪电箭矢",
+    "source": "XPHB",
+    "page": 292,
+    "level": 3,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作",
+        "condition": "在你使用武器发动远程攻击命中一个目标或失手时紧接可用"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "当你的攻击命中一个目标或失手时，该武器的弹药或该武器本身变为一束闪电。作为目标从这次攻击中受到的任何伤害或其他效果的替代，若该攻击命中，则目标受到{@damage 4d8}点闪电伤害，若该攻击未命中，则受到一半伤害。无论你的攻击是否命中，目标周围 10 尺范围内的每个生物都必须进行一次敏捷豁免，豁免失败则受到{@damage 2d8}点闪电伤害，豁免成功则受到半数伤害。",
+      "在此之后，该弹药或武器变回其正常形态。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "使用的法术位每比三环高一环，上述两种效应的伤害都各增加{@scaledamage 4d8;2d8|3-9|1d8}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "lightning"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "areaTags": [
+      "S"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "游侠"
+    ],
+    "display_school": "变化系",
+    "display_savingThrow": [
+      "敏捷"
+    ],
+    "display_damageInflict": [
+      "闪电"
+    ]
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "ENG_name": "Puppet Master",
+    "name": "傀儡掌控",
+    "source": "CrookedMoon14",
+    "page": 131,
+    "reprintedAs": [
+      "傀儡掌控|crookedmoon24"
+    ],
+    "level": 4,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一个提线木偶细绳"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "一个你在射程内能看见的生物必须成功通过一次感知豁免检定否则被你{@condition 魅惑}，持续至法术持续时间结束。",
+      "魔法提线木偶线吸附到{@condition 魅惑}生物的肢体或身体上，它必须在其回合使用动作对除自身外你心灵选择的生物进行一次近战攻击，并在必要时移动以触及目标。如果你没有选择其他生物，或者该生物移动后不在目标的触及范围内，目标可以在其回合正常行动。目标在其每回合结束时重复豁免，成功则终止其身上的法术。",
+      "在你的后续回合中，你必须使用一个附赠动作来维持对目标的控制，否则该法术结束。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "savingThrow": [
+      "感知"
+    ],
+    "miscTags": [
+      "SGT",
+      "UBA"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Spells/Puppet-Master.webp"
+  }
+]

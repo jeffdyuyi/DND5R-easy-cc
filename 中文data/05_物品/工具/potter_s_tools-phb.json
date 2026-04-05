@@ -1,0 +1,84 @@
+[
+  {
+    "name": "陶匠工具",
+    "ENG_name": "Potter's Tools",
+    "source": "PHB",
+    "page": 154,
+    "type": "AT",
+    "rarity": "none",
+    "weight": 3,
+    "value": 1000,
+    "additionalEntries": [
+      "陶匠工具用于制作各种陶瓷物品，最常见的是罐子和类似容器。",
+      {
+        "ENG_name": "Components",
+        "name": "成分",
+        "type": "entries",
+        "entries": [
+          "陶匠工具包括陶针、肋骨刮刀、刮片、刀刃和卡尺。"
+        ]
+      },
+      {
+        "ENG_name": "History",
+        "name": "历史",
+        "type": "entries",
+        "entries": [
+          "你的专业知识可以帮助你鉴定陶瓷物品，包括它们的制造时间和可能的产地或文化起源。"
+        ]
+      },
+      {
+        "ENG_name": "Investigation, Perception",
+        "name": "调查、察觉",
+        "type": "entries",
+        "entries": [
+          "你在检查陶瓷制品时获得额外洞悉，能通过发现细微的不规则之处来发现他人会忽略的线索。"
+        ]
+      },
+      {
+        "ENG_name": "Reconstruction",
+        "name": "再生",
+        "type": "entries",
+        "entries": [
+          "通过检查陶器碎片，你可以确定一个物体的原始完整形态及其可能的用途。"
+        ]
+      },
+      {
+        "type": "table",
+        "caption": "陶匠工具",
+        "colLabels": [
+          "用途",
+          "DC"
+        ],
+        "colStyles": [
+          "col-10",
+          "col-2 text-center"
+        ],
+        "rows": [
+          [
+            "确定容器曾经装过什么",
+            "10"
+          ],
+          [
+            "制作一个可用的罐子",
+            "15"
+          ],
+          [
+            "在陶瓷物件上找到一个弱点",
+            "20"
+          ]
+        ]
+      }
+    ],
+    "additionalSources": [
+      {
+        "source": "XGE",
+        "page": 84
+      }
+    ],
+    "basicRules": true,
+    "reprintedAs": [
+      "陶匠工具|XPHB"
+    ],
+    "srd": true
+  }
+]

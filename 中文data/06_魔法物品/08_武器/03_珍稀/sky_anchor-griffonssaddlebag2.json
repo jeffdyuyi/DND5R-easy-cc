@@ -1,0 +1,42 @@
+[
+  {
+    "ENG_name": "Sky Anchor",
+    "name": "天锚",
+    "source": "GriffonsSaddlebag2",
+    "page": 162,
+    "baseItem": "矛|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "rare",
+    "weight": 3,
+    "weaponCategory": "简易",
+    "property": [
+      "T",
+      "V"
+    ],
+    "range": "40/60",
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "dmg2": "1d8",
+    "bonusWeapon": "+1",
+    "entries": [
+      "这根带刺的矛被设计用来搜寻和捕捉飞行生物。你使用这把魔化武器进行攻击和伤害掷骰时获得+1加值，其正常投掷范围为40尺。当你用此武器进行远程攻击命中时，你可以说出其命令语来创造一条从矛延伸至你周围5尺内地面某点的魔法锁链。当你这样做时，矛会留在目标体内。直到此矛被拔出之前，该目标无法远离锁链的着地点，且在其每回合结束时，目标会被拉向着地点最多10尺。重量超过4,000磅的物件无法以此法被拉动。矛会在1分钟后自动脱离目标。一个生物也可以用一个动作进行一次DC 15的力量检定，成功则可以从自己或其触及范围内的另一个目标身上拔出此矛。当此矛被拔出时，会对其刺入的目标造成{@damage 2d8}穿刺伤害，并立即被拉回到着地点，随后魔法锁链消失。你可以在自己的回合用一个附赠动作再次说出命令语来主动拔出此矛。一旦此属性被使用过，直到下一个拂晓前都无法再次使用。"
+    ],
+    "lootTables": [
+      "魔法物品表 G1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Sky-Anchor.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

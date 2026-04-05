@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "Ring of Obscuring",
+    "name": "遮蔽戒指",
+    "source": "EGW",
+    "page": 269,
+    "type": "RG|DMG",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "这个铁质指环就像一个头骨，摸起来很冷。它有3充能，并在每天黎明恢复{@dice 1d3}充能。当带着戒指时，你可以以一个动作，使用它的1充能，来施放{@spell 云雾术}法术，但需要做出以下变动：当云雾出现时，它以你为中心，并且法术持续1分钟(无需{@status 专注})。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "云雾术"
+        ]
+      }
+    },
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/EGW/Ring of Obscuring.webp"
+          },
+          "credit": "Olga Drebas",
+          "width": 586,
+          "height": 672
+        }
+      ]
+    }
+  }
+]

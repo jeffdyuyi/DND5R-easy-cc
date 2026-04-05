@@ -1,0 +1,59 @@
+[
+  {
+    "ENG_name": "Continual Flame",
+    "name": "不灭明焰",
+    "source": "XPHB",
+    "page": 256,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "BQGT"
+    ],
+    "level": 2,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "价值 50+GP 的红宝石尘，作为法术耗材",
+        "cost": 5000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "permanent",
+        "ends": [
+          "解除"
+        ]
+      }
+    ],
+    "entries": [
+      "你所触碰的物件上冒出火焰。这一效应发出半径 20 尺的{@variantrule 明亮光照|XPHB}光照以及额外 20 尺的{@variantrule 微光光照|XPHB}光照。法术效应看上去与一般火焰无异，不过其并不会发热，也不需要燃料。你可以掩盖或隐藏火焰，但无法将其闷熄或扑灭。"
+    ],
+    "miscTags": [
+      "LGT",
+      "OBJ"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师",
+      "德鲁伊",
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "塑能系"
+  }
+]

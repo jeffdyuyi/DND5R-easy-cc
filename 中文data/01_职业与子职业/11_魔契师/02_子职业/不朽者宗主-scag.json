@@ -1,0 +1,30 @@
+{
+  "ENG_name": "The Undying",
+  "name": "不朽者宗主",
+  "shortName": "不朽者",
+  "source": "SCAG",
+  "className": "魔契师",
+  "classSource": "XPHB",
+  "_copy": {
+    "ENG_name": "The Undying",
+    "name": "不朽者宗主",
+    "source": "SCAG",
+    "shortName": "不朽者",
+    "className": "魔契师",
+    "classSource": "PHB",
+    "_preserve": {
+      "page": true,
+      "otherSources": true,
+      "referenceSources": true,
+      "srd": true,
+      "basicRules": true,
+      "reprintedAs": true
+    }
+  },
+  "subclassFeatures": [
+    "不朽者宗主|魔契师|XPHB|不朽者|SCAG|3",
+    "悍不畏死|魔契师||不朽者|SCAG|6",
+    "不朽之理|魔契师||不朽者|SCAG|10",
+    "永恒生命|魔契师||不朽者|SCAG|14"
+  ]
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Yellow Slime",
+    "name": "黄软泥",
+    "source": "ObojimaTallGrass",
+    "page": 215,
+    "type": "Ingred",
+    "rarity": "uncommon",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 17|large}|SneakerProMedium}",
+            "{@font {@style 11|large}|SneakerProMedium}",
+            "{@font {@style 11|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "只有那些拥有钢铁般体质或装备了适当防护装备的人才能忍受这种软泥成熟、醋般的恶臭常带来的恶心感。酿酒师们花费了几代人的时间来学习如何中和这种令人不快的气味，因为黄软泥还具有代谢多种毒液和毒素的能力。黄软泥这种材质是从同名的大型活体杂食怪物中培养出来的。"
+    ],
+    "lootTables": [
+      "热水大地非普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/yellow-slime.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1615,
+          "height": 1615
+        }
+      ]
+    }
+  }
+]

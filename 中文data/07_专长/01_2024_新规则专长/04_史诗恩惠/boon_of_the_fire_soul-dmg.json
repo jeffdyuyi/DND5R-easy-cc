@@ -1,0 +1,21 @@
+[
+  {
+    "ENG_name": "Boon of the Fire Soul",
+    "name": "炽焰魂魄之恩惠",
+    "source": "DMG",
+    "page": 232,
+    "type": "Boon",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": [
+            "燃烧之手"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你免疫火焰伤害。你还可以随意施放{@spell 燃烧之手}（豁免{@dc 15}），且无需消耗法术位也无需使用任何法术成分。"
+    ]
+  }
+]

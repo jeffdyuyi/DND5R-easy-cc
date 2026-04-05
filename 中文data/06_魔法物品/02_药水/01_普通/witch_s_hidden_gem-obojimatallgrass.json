@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Witch's Hidden Gem",
+    "name": "巫偶的隐藏宝石",
+    "source": "ObojimaTallGrass",
+    "page": 242,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "这种平淡无奇看起来不起眼的药水在你饮用时会覆盖你的口腔和食道，留下一层薄膜。接下来的1小时内，你消耗的所有液体在你饮用时都会变成红酒。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 23|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/witchs-hidden-gem.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1929,
+          "height": 1929
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

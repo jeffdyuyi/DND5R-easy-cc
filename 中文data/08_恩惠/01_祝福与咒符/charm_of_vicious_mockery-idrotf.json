@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Charm of Vicious Mockery",
+    "name": "恶言相加护咒",
+    "source": "IDRotF",
+    "page": 228,
+    "type": "Charm",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "limited": {
+              "3": [
+                "恶言相加"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "entries": [
+      "这个护咒允许你以动作施放{@spell 恶言相加}戏法（5环版本；豁免{@dc 15}）。使用三次后，护咒将从你身上消失。"
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Itchi Beri",
+    "name": "伊奇·贝里",
+    "source": "ObojimaTallGrass",
+    "page": 204,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 0|large}|SneakerProMedium}",
+            "{@font {@style 1|large}|SneakerProMedium}",
+            "{@font {@style 0|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "伊奇浆果可以从伊奇植物鲜艳的绿色叶子下成簇采摘，这些叶子已知会在暴露的皮肤上引起严重皮疹。浆果本身无害，在熬成果酱时会变甜。伊奇植物最常见于河岸，它们的叶子指向阿伯拉山的顶峰。智者世代推测这一现象，但尚无确凿证据使此事得以平息。"
+    ],
+    "lootTables": [
+      "狂风农田普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/itchi-beri.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 4479,
+          "height": 4479
+        }
+      ]
+    }
+  }
+]

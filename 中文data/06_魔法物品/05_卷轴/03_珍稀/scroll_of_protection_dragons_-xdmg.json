@@ -1,0 +1,22 @@
+[
+  {
+    "ENG_name": "Scroll of Protection (Dragons)",
+    "name": "守护卷轴（龙类）",
+    "source": "XDMG",
+    "page": 302,
+    "type": "SC|XPHB",
+    "detail1": "龙",
+    "detail2": "龙",
+    "rarity": "rare",
+    "hasRefs": true,
+    "entries": [
+      "{#itemEntry 守护卷轴|XDMG}"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {}
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "ENG_name": "Pole of Angling",
+    "name": "垂钓之杆",
+    "source": "XDMG",
+    "page": 286,
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "这个物品可用作一根长杆Pole。持握该物品期间，你可以使用一个{@action 魔法|XPHB}动作将其转变为一根附带鱼钩、鱼线、与卷线盘的钓鱼竿，或者将钓鱼竿恢复成一根长杆。"
+    ],
+    "lootTables": [
+      "器具 - 普通|XDMG"
+    ],
+    "translator": "不全书",
+    "valueReference": 100,
+    "type": "W"
+  }
+]

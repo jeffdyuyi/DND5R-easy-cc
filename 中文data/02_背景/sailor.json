@@ -1,0 +1,404 @@
+[
+  {
+    "name": "水手",
+    "ENG_name": "Sailor",
+    "source": "PHB",
+    "page": 139,
+    "skillProficiencies": [
+      {
+        "athletics": true,
+        "perception": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "navigator's tools": true,
+        "vehicles (water)": true
+      }
+    ],
+    "startingEquipment": [
+      {
+        "_": [
+          {
+            "item": "短棒|phb",
+            "displayName": "缠索栓（短棒）"
+          },
+          "丝绳(50尺)|phb",
+          {
+            "item": "饰品|phb",
+            "displayName": "幸运符"
+          },
+          "普通服装|phb",
+          {
+            "item": "小包|phb",
+            "containsValue": 1000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 运动}, {@skill 察觉}"
+          },
+          {
+            "ENG_name": "Tool Proficiencies:",
+            "name": "工具熟练",
+            "type": "item",
+            "entry": "{@item 领航工具|phb}, {@filter 载具 (水上)|items|source=phb;dmg|miscellaneous=平凡的|type=载具(水上)}"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "一根挽缆栓（{@item 短棒|phb}），{@item 丝绳(50尺)|phb}，兔脚或穿孔小石头一类的护身符（或从第5章的{@item 饰品|phb}列表中掷骰决定），一套{@item 普通服装|phb}，以及一个装有10 gp的{@item 小包|phb}"
+          }
+        ]
+      },
+      {
+        "ENG_name": "Feature: Ship's Passage",
+        "name": "特性：船家路子",
+        "type": "entries",
+        "entries": [
+          "在必要时，你可以为团队谋得免费的顺风船进行旅行。你可能是搭上曾经效力过的船只，也可能是遇到与你交好的另一艘船（可能一位你曾经的同船水手所指挥的船只）。因为你是请求对方帮助（而非雇佣），所以你不能让行程和日程全然满足自己的要求。到达目的地的具体时间将由DM做决定。而作为免费搭乘的报酬，你和你的队友必须在航行中加入船员的行列帮忙做工。"
+        ],
+        "data": {
+          "isFeature": true
+        }
+      },
+      {
+        "ENG_name": "Suggested Characteristics",
+        "name": "建议人物特征",
+        "type": "entries",
+        "entries": [
+          "水手可能十分粗鲁，但是各司其职的船上生活令他们十分值得信任。船上生活塑造了他们的外表，并使他们心中最重要的情谊变得更为牢固。",
+          {
+            "type": "table",
+            "colLabels": [
+              "d8",
+              "特点"
+            ],
+            "colStyles": [
+              "col-1 text-center",
+              "col-11"
+            ],
+            "rows": [
+              [
+                "1",
+                "朋友们知道无论出现什么困难，我都值得依赖。"
+              ],
+              [
+                "2",
+                "我努力工作，然后休闲时就可以尽情玩乐。"
+              ],
+              [
+                "3",
+                "我喜欢航行到新港口，然后在那里以酒会友。"
+              ],
+              [
+                "4",
+                "我常常会为了讲述一个好故事而夸大其词。"
+              ],
+              [
+                "5",
+                "我就觉得酒馆斗殴是了解一座陌生城市的好方式。"
+              ],
+              [
+                "6",
+                "我从不会放弃友好的赌局。"
+              ],
+              [
+                "7",
+                "我的言辞脏污得好比食腐兽的窝。"
+              ],
+              [
+                "8",
+                "我喜欢工作都好好完成的样子，如果整个过程都让别人来干就更好了。"
+              ]
+            ]
+          },
+          {
+            "type": "table",
+            "colLabels": [
+              "d6",
+              "理念"
+            ],
+            "colStyles": [
+              "col-1 text-center",
+              "col-11"
+            ],
+            "rows": [
+              [
+                "1",
+                "尊重Respect。只有船长和船员相互尊重，船才能乘风破浪。（善良）"
+              ],
+              [
+                "2",
+                "公正Fairness。一起干的活工钱一起分。（守序）"
+              ],
+              [
+                "3",
+                "自由Freedom。大海即是自由——随你去哪儿，随你干什么。（混乱）"
+              ],
+              [
+                "4",
+                "统治。我是个掠夺者，海上其他船都是我的猎物。（邪恶）"
+              ],
+              [
+                "5",
+                "人民。我只为同伴们出力，而不是为了什么理想。（中立）"
+              ],
+              [
+                "6",
+                "抱负。早晚有一天，我会拥有自己的船，掌握自己的宿命。（任意）"
+              ]
+            ]
+          },
+          {
+            "type": "table",
+            "colLabels": [
+              "d6",
+              "牵挂"
+            ],
+            "colStyles": [
+              "col-1 text-center",
+              "col-11"
+            ],
+            "rows": [
+              [
+                "1",
+                "我首先忠于我的船长，任何事物都要排在后头。"
+              ],
+              [
+                "2",
+                "船才是最重要的，无论船员还是船长都是过客。"
+              ],
+              [
+                "3",
+                "我总是会怀念我上过的第一艘船。"
+              ],
+              [
+                "4",
+                "在一个港口里住着我的情人，她的魅力几乎能让我抛弃海上生活和她在一起。"
+              ],
+              [
+                "5",
+                "我平分财宝时见到有人作弊，而我要夺回我应得的那份。"
+              ],
+              [
+                "6",
+                "残忍的海盗杀了我的船长和兄弟，抢走了我的船，只留下濒死的我。而我一定要复仇。"
+              ]
+            ]
+          },
+          {
+            "type": "table",
+            "colLabels": [
+              "d6",
+              "缺陷"
+            ],
+            "colStyles": [
+              "col-1 text-center",
+              "col-11"
+            ],
+            "rows": [
+              [
+                "1",
+                "我遵守命令，哪怕是那些并不正确的命令。"
+              ],
+              [
+                "2",
+                "我会绞尽脑汁避免额外劳动。"
+              ],
+              [
+                "3",
+                "一旦有人质疑我的勇气，我就什么都敢干。"
+              ],
+              [
+                "4",
+                "我一旦开始喝酒，就根本停不下来。"
+              ],
+              [
+                "5",
+                "我会忍不住收集遇到的各种硬币或小饰品等玩意儿。"
+              ],
+              [
+                "6",
+                "我的骄傲可能会毁了自己。"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "entries": [
+                "你在海船上忙碌了许多年月。在那些日子里，你曾直面狂野风暴、深海巨兽，或是其他许多能把你的小舟卷进深海的危险。你的初恋即是那遥远的海平线，不过现在是时候找些新活计。",
+                "与DM讨论设定你曾经所驾驶的船只的相关信息。那是一艘商船、军舰，亦或是探索船、海盗船？它威名远扬，还是不为人知？它航线所至之处多还是少？它如今仍在航行，还是已经失踪，或是和上面的水手一道沉入海底？",
+                "你在船上的职位是什么——水手、船长、领航员、厨师，还是别的什么职务？船长是谁，大副又是谁？你是带着同伴们的祝福离舰，还是狼狈地从船上出逃？"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hasFluff": true,
+    "reprintedAs": [
+      "水手|XPHB"
+    ],
+    "translator": "不全书",
+    "edition": "classic"
+  },
+  {
+    "name": "水手",
+    "ENG_name": "Sailor",
+    "source": "XPHB",
+    "edition": "one",
+    "page": 184,
+    "ability": [
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "str",
+              "dex",
+              "wis"
+            ],
+            "weights": [
+              2,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "str",
+              "dex",
+              "wis"
+            ],
+            "weights": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      }
+    ],
+    "feats": [
+      {
+        "酒馆斗殴者|xphb": true
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "acrobatics": true,
+        "perception": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "navigator's tools": true
+      }
+    ],
+    "startingEquipment": [
+      {
+        "A": [
+          {
+            "item": "匕首|xphb"
+          },
+          {
+            "item": "领航工具|xphb"
+          },
+          {
+            "item": "绳索|xphb"
+          },
+          {
+            "item": "旅行服装|xphb"
+          },
+          {
+            "value": 2000
+          }
+        ],
+        "B": [
+          {
+            "value": 5000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability Scores:",
+            "name": "属性值：",
+            "type": "item",
+            "entry": "力量，敏捷，感知"
+          },
+          {
+            "ENG_name": "Feat:",
+            "name": "专长：",
+            "type": "item",
+            "entry": "{@feat 酒馆斗殴者|XPHB}"
+          },
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 特技|XPHB}, {@skill 察觉|XPHB}"
+          },
+          {
+            "ENG_name": "Tool Proficiency:",
+            "name": "工具熟练项：",
+            "type": "item",
+            "entry": "{@item 领航工具|XPHB}"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "选择 A 或 B：(A) {@item 匕首|XPHB}、{@item 领航工具|XPHB}、{@item 绳索|XPHB}、{@item 旅行服装|XPHB}、20 GP；或 (B) 50 GP"
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "你作为一名海员生活，背上吹的是海风，脚下站的是摇晃的甲板。你在停泊港总是坐在酒吧的高脚凳上，回忆你曾直面猛烈的风暴，与那些在波涛下生活的人们高谈阔论着过去。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "backgrounds/XPHB/Sailor.webp"
+          },
+          "credit": "Noor Rahman",
+          "width": 2513,
+          "height": 952
+        }
+      ]
+    },
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "translator": "不全书"
+  }
+]

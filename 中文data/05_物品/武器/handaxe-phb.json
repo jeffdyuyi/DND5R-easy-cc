@@ -1,0 +1,28 @@
+[
+  {
+    "name": "手斧",
+    "ENG_name": "Handaxe",
+    "source": "PHB",
+    "page": 149,
+    "edition": "classic",
+    "type": "M",
+    "rarity": "none",
+    "weight": 2,
+    "value": 500,
+    "weaponCategory": "simple",
+    "property": [
+      "L",
+      "T"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "S",
+    "range": "20/60",
+    "axe": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "手斧|XPHB"
+    ],
+    "srd": true,
+    "weapon": true
+  }
+]

@@ -1,0 +1,138 @@
+{
+  "race": [
+    {
+      "ENG_name": "Threadborn",
+      "name": "线偶种",
+      "source": "CrookedMoon14",
+      "page": 65,
+      "reprintedAs": [
+        "线偶种|crookedmoon24"
+      ],
+      "lineage": "VRGR",
+      "creatureTypes": [
+        "构装"
+      ],
+      "size": [
+        "S",
+        "M"
+      ],
+      "speed": 30,
+      "resist": [
+        "心灵"
+      ],
+      "additionalSpells": [
+        {
+          "ability": {
+            "choose": [
+              "int",
+              "wis",
+              "cha"
+            ]
+          },
+          "prepared": {
+            "3": {
+              "daily": {
+                "1e": [
+                  "庇护术|PHB"
+                ]
+              }
+            },
+            "5": {
+              "daily": {
+                "1e": [
+                  "安定心神|PHB"
+                ]
+              }
+            },
+            "_": {
+              "will": [
+                "神导术|PHB#c"
+              ]
+            }
+          }
+        }
+      ],
+      "entries": [
+        {
+          "ENG_name": "Creature Type",
+          "name": "生物类型",
+          "type": "entries",
+          "entries": [
+            "你是一个构装生物。"
+          ]
+        },
+        {
+          "ENG_name": "Size",
+          "name": "体型",
+          "type": "entries",
+          "entries": [
+            "你是中型或小型。当你选择此种族时选择体型。"
+          ]
+        },
+        {
+          "ENG_name": "Ball-Jointed",
+          "name": "球形关节",
+          "type": "entries",
+          "entries": [
+            "你可以穿过窄至1英尺宽的空间，仿佛它是{@quickref 困难地形||3}。"
+          ]
+        },
+        {
+          "ENG_name": "Innocent Mind",
+          "name": "纯洁心智",
+          "type": "entries",
+          "entries": [
+            "你对心灵伤害具有抗性。"
+          ]
+        },
+        {
+          "ENG_name": "Sewn Nature",
+          "name": "线装本质",
+          "type": "entries",
+          "entries": [
+            "你无需空气、进食或饮品。"
+          ]
+        },
+        {
+          "ENG_name": "Soothing Heart",
+          "name": "抚慰之心",
+          "type": "entries",
+          "entries": [
+            "你知晓{@spell 神导术}戏法。从3级开始，你可以使用此特质施放{@spell 庇护术}法术，从5级开始，你可以使用此特质无需材料成分施放{@spell 安定心神}法术。一旦你使用此特质施放了{@spell 庇护术}或安定心神，直到你完成一次长休前你无法再次使用此特质施放该法术。当你以此方式施放{@spell 安定心神}时，它可以以任何类型的生物为目标。你也可以使用你拥有的适当等级的法术位来施放任一法术。",
+            "智力、感知或魅力是你通过该特质施放这些法术时的施法属性（选择此种族时决定该属性）。"
+          ]
+        },
+        {
+          "ENG_name": "You've Got a Friend",
+          "name": "你有一个朋友",
+          "type": "entries",
+          "entries": [
+            "当你30尺内一个你能看见的生物在使用技能进行属性检定时失败，你可以使用你的反应对该生物施放{@spell 神导术}，忽略该法术的正常射程。该生物可以将该法术的{@dice 1d4}添加到其属性检定中，可能使其成功。你可以使用此特质的次数等于你的熟练加值，且当你完成一次长休时重获所有消耗的使用次数。"
+          ]
+        }
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Races/Threadborn.webp",
+      "subraces": [],
+      "fluff": {
+        "entries": [
+          "线偶种是一种类似人偶，原生于{@book 皮可|歪曲之月|1|皮可}的种族，通常由该行省领主兼玩具大师布林斯基二世满怀爱意地打造而成。在这片为了能让所有居民尽享欢乐而精心构建的国度里，喜悦、惊险与友情的精髓被织入了线偶种的本质之中。他们珍视与挚爱之人之间的牵绊，无论年龄大小，总能保有孩童般的好奇与幻想。",
+          "作为活着的人偶，这些族群的身体由多种材料构成，包括布料、木头、金属、陶瓷、填料、毛线，以及其他任何可能用于玩具的材料。在德鲁斯肯瓦尔德的诸多种族之中，他们拥有最为多样的体型，每位线偶种都代表着一种独特乐趣。他们的寿命通常为100年，之后便会散架，需要重新拼缝组建。"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Races/Threadborn.webp"
+            },
+            "width": 548,
+            "height": 1200,
+            "credit": "Jo Cordisco"
+          }
+        ]
+      }
+    }
+  ]
+}

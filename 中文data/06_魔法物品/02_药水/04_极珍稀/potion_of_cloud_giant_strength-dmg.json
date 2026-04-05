@@ -1,0 +1,34 @@
+[
+  {
+    "ENG_name": "Potion of Cloud Giant Strength",
+    "name": "云巨人之力药水",
+    "source": "DMG",
+    "page": 187,
+    "srd": true,
+    "referenceSources": [
+      "CoA"
+    ],
+    "reprintedAs": [
+      "云巨人之力药水|XDMG"
+    ],
+    "type": "P",
+    "tier": "次要",
+    "rarity": "very rare",
+    "ability": {
+      "static": {
+        "str": 27
+      }
+    },
+    "entries": [
+      "饮用此药水后，1小时内，你的力量属性值将变为27。如果你的力量属性值已经大于或等于该数值，则药水无效。",
+      "这种药水的透明液体中漂浮着一片来自{@creature 云巨人}的指甲碎片。"
+    ],
+    "lootTables": [
+      "魔法物品表D"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "valueReference": 20000
+  }
+]

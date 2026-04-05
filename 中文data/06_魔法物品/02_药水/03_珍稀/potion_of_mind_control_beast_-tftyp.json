@@ -1,0 +1,21 @@
+[
+  {
+    "ENG_name": "Potion of Mind Control (beast)",
+    "name": "心灵控制药水（野兽）",
+    "source": "TftYP",
+    "page": 229,
+    "type": "P",
+    "rarity": "rare",
+    "entries": [
+      "当你饮用一瓶心灵控制药水时，如果你在下个回合结束前这样做，你可以对一个特定生物施放支配术（豁免 {@dc 15}）。如果你没有这样做，药水将被浪费。",
+      "心智控制药水产生{@spell 支配野兽}法术的效果。如果目标的初始豁免检定失败，效果持续1小时，你不需要进行{@status 专注}。处于{@condition 魅惑}状态的生物在这段时间内尝试新的豁免检定以打破效果时处于劣势。"
+    ],
+    "attachedSpells": [
+      "支配野兽"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "valueReference": 2000
+  }
+]

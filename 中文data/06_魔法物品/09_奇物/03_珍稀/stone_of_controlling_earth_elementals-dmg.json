@@ -1,0 +1,49 @@
+[
+  {
+    "ENG_name": "Stone of Controlling Earth Elementals",
+    "name": "命令土元素石核",
+    "source": "DMG",
+    "page": 205,
+    "srd": true,
+    "referenceSources": [
+      "OotA",
+      "JttRC"
+    ],
+    "reprintedAs": [
+      "命令土元素石核|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "rare",
+    "wondrous": true,
+    "weight": 5,
+    "entries": [
+      "只要这块石头与地面接触，你就可以用一个动作说出它的命令语并召唤一只{@creature 土元素}，其效应如同你施放了{@spell 咒唤元素}法术。直到次日黎明前，石头都无法再次以该方式使用。该石头重5磅。"
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "咒唤元素"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表G"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Stone of Controlling Earth Elementals.webp"
+          },
+          "width": 850,
+          "height": 793
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

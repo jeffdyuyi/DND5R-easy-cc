@@ -1,0 +1,28 @@
+[
+    {
+        "ENG_name": "Deathbound",
+        "name": "死锁者",
+        "source": "GrimHollowPG24",
+        "page": 114,
+        "category": "O",
+        "entries": [
+            "你因未竟之业、古老的誓言或甚至被认为是不可撼动的邪恶诅咒而与此世紧密相连。无论你尝试多少次去面对那苍白的骑猎者，祂都在那一刻拒你于门外。你获得以下增益。",
+            {
+                "ENG_name": "Inexorable Spirit",
+                "name": "不屈之灵",
+                "type": "entries",
+                "entries": [
+                    "只要你尚未陷入{@condition 死亡|XPHB}，每当你掷出10或更高的{@variantrule 死亡豁免检定|XPHB|死亡豁免检定}时，你恢复1点{@variantrule 生命值|XPHB}。"
+                ]
+            },
+            {
+                "ENG_name": "Relentless Soul",
+                "name": "坚忍之魂",
+                "type": "entries",
+                "entries": [
+                    "如果你生命值降至0，你会获得{@condition 恐慌|XPHB}状态直至你恢复至少1点生命值。当处于这种状态时，你必须在你的回合尝试移动到远离任何能看见你的生物的地方。"
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Seraphim's Stiletto",
+    "name": "炽天使之匕",
+    "source": "GriffonsSaddlebag2",
+    "page": 158,
+    "baseItem": "匕首|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": "由一位善良阵营的生物",
+    "reqAttuneTags": [
+      {
+        "alignment": [
+          "G"
+        ]
+      }
+    ],
+    "weight": 1,
+    "weaponCategory": "简易",
+    "property": [
+      "F",
+      "L",
+      "T"
+    ],
+    "range": "20/60",
+    "dmg1": "1d4",
+    "dmgType": "P",
+    "entries": [
+      "这把魔法匕首由精灵金和独角兽角的精致碎片打造而成。匕首具有一个20生命值的治疗池，该治疗池会在每日黎明时分完全恢复。你可以用一个动作触碰5尺内你能看见的生物并说出其命令语。当你这样做时，你可以从能量池中消耗任意数量的生命值来为该生物恢复等量的生命值，但不能超过能量池中剩余的数值。",
+      "当你用此匕首进行近战攻击并命中亡灵生物时，你可以从能量池中消耗任意数量的生命值，但不能超过能量池中剩余的数值，作为攻击的一部分。当你这样做时，你对该生物额外造成等同于所消耗生命值两倍的光耀伤害。"
+    ],
+    "lootTables": [
+      "魔法物品表 G1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Seraphim%E2%80%99s-Stiletto.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "ENG_name": "Hammer of Runic Focus",
+    "name": "符铸战锤",
+    "source": "BMT",
+    "page": 67,
+    "baseItem": "战锤|PHB",
+    "type": "M",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "weight": 2,
+    "weaponCategory": "martial",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "B",
+    "dmg2": "1d10",
+    "bonusWeapon": "+3",
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "这把魔法锤具有3发充能。作为附赠动作，你可以消耗1发充能并用这把锤子敲击地面，在敲击位置创造出一片15尺半径的发光符文法阵。当你在该区域内时，你的锤子会发出相应的符文光芒，并且你用这把锤子进行的攻击和伤害掷骰获得+3加值。符文法阵在1分钟后、当你创造另一个符文法阵时、或当你以附赠动作解除符文法阵时消失。这把锤子在每日黎明时恢复{@dice 1d3}发已消耗的充能。"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 40000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/BMT/Hammer of Runic Focus.webp"
+          },
+          "width": 573,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

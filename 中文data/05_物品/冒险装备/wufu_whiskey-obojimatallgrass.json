@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Wufu Whiskey",
+    "name": "五福威士忌",
+    "source": "ObojimaTallGrass",
+    "page": 219,
+    "type": "Ingred",
+    "rarity": "rare",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 19|large}|SneakerProMedium}",
+            "{@font {@style 19|large}|SneakerProMedium}",
+            "{@font {@style 19|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "五福酿酒厂的位置是一个神秘，但酿酒大师五福在整个胧忆岛都很有名，每年都能看到他购买最高质量的谷物来酿造他精湛的五福威士忌。五福大师只将几瓶威士忌卖给最高出价者或作为礼物赠送给老友情深。有人认为他是一个精魄或法师，因为所有追踪他的尝试都失败了。五福威士忌保存在美丽的水缸中，用五福纹章密封。那些品尝过这种传说威士忌的人据说尝到了国王的精魄。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/wufu-whisky.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 3162,
+          "height": 3162
+        }
+      ]
+    }
+  }
+]

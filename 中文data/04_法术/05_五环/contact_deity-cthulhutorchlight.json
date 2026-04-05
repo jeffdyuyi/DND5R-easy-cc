@@ -1,0 +1,77 @@
+[
+  {
+    "ENG_name": "Contact Deity",
+    "name": "通神术",
+    "source": "CthulhuTorchlight",
+    "page": 0,
+    "level": 5,
+    "school": "D",
+    "time": [
+      {
+        "number": 1,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        }
+      }
+    ],
+    "meta": {
+      "ritual": true
+    },
+    "entries": [
+      "你联络一位克苏鲁神话的神祇。你可以向该实体询问{@dice 1d6}个能以\"是\"或\"否\"回答的问题。你必须在法术结束前问完所有问题。你的每个问题都会得到一个正确的答案。旧日支配者并非全知全能，因此，如果一个问题涉及其知识范围之外的信息，你可能会得到\"不清楚unclear\"的回答。若单字回答可能造成误导或违背其利益，DM可能会用一个短语来代替回答。",
+      "当你施放此法术时，掷一枚{@dice d20}。如果掷骰结果为1，该神祇会出现在最近的未占据空间，并在法术持续时间内攻击区域内的生物（包括你），之后才会返回其领域。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    }
+  }
+]

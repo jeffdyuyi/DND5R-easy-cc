@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Clockwork Colony Toolbox",
+    "name": "发条聚群工具箱",
+    "source": "GriffonsSaddlebag2",
+    "page": 62,
+    "tier": "主要",
+    "rarity": "rare",
+    "wondrous": true,
+    "entries": [
+      "这个修整过的青铜工具箱内部装有螺栓、螺丝和其他工具，轻轻摇晃时会发出柔和的声音。箱子重3磅，长3尺、宽1尺、深1尺。工具箱内有四个空的、可调整大小的隔间，其中空无一物。任何金属物品在关闭的工具箱内放置1小时后，都会变得一尘不染且被抛光。",
+      "同样，任何小型机械装置（例如指南针或{@item 捕猎陷阱|PHB}）在关闭的工具箱内放置1小时后会被魔法性地修复。任何名称中带有\"时械\"一词的魔法物品在以这种方式留置于工具箱中后会恢复所有生命值。如果该魔法物品有充能或其他魔法词条，它会恢复{@dice 1d4}已消耗的充能，并重新获得使用这些词条的能力。一旦某件物品或物件以此方式被修复，则它在接下来的24小时内都无法再次被工具箱修复。"
+    ],
+    "lootTables": [
+      "魔法物品表 G1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Clockwork-Colony-Toolbox.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

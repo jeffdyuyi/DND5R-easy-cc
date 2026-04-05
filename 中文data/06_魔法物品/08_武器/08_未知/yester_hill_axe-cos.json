@@ -1,0 +1,26 @@
+[
+  {
+    "ENG_name": "Yester Hill Axe",
+    "name": "往日山丘斧",
+    "alias": [
+      "树木克星"
+    ],
+    "source": "CoS",
+    "page": 198,
+    "baseItem": "战斧|PHB",
+    "type": "M",
+    "rarity": "unknown (magic)",
+    "weight": 2,
+    "weaponCategory": "martial",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "S",
+    "dmg2": "1d10",
+    "entries": [
+      "这把斧头手柄雕有叶片与藤蔓，其重量是普通的战斧的一半。当该斧头击中一株植物时，不管是普通的植物还是植物形生物，目标都需要承受额外的{@damage 1d8}点挥砍伤害。当一个非良善阵营的生物挥舞着斧头并进行攻击时，它就会长出荆棘。这些荆棘在攻击完后会戳刺持有者，造成1点穿刺伤害，这种伤害被视为魔法伤害。"
+    ],
+    "translator": "不全书"
+  }
+]

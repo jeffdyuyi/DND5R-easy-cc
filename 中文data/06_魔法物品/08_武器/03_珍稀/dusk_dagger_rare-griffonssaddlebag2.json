@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "Dusk Dagger (Rare)",
+    "name": "暮色匕首（珍稀）",
+    "source": "GriffonsSaddlebag2",
+    "page": 76,
+    "baseItem": "匕首|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "rare",
+    "weight": 1,
+    "weaponCategory": "简易",
+    "property": [
+      "F",
+      "L",
+      "T"
+    ],
+    "range": "20/60",
+    "dmg1": "1d4",
+    "dmgType": "P",
+    "entries": [
+      "这把精巧的弧形匕首装饰有多个新月图案。当你用这把魔化武器命中一个完全处于微光光照或黑暗中的生物时，该生物会额外受到{@damage 1d8}心灵伤害。"
+    ],
+    "lootTables": [
+      "魔法物品表 G1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Dusk-Dagger.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "name": "玺戒",
+    "ENG_name": "Signet Ring",
+    "source": "PHB",
+    "page": 150,
+    "type": "G",
+    "rarity": "none",
+    "value": 500,
+    "basicRules": true,
+    "referenceSources": [
+      "CoS"
+    ],
+    "srd": true,
+    "translator": "不全书"
+  }
+]

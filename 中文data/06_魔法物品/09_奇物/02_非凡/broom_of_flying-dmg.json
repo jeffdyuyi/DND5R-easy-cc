@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Broom of Flying",
+    "name": "飞天扫帚",
+    "source": "DMG",
+    "page": 156,
+    "srd": true,
+    "referenceSources": [
+      "CoS",
+      "WBtW",
+      "ToFW",
+      "CoA"
+    ],
+    "reprintedAs": [
+      "飞天扫帚|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "weight": 3,
+    "entries": [
+      "这把木制扫帚重3磅，在你跨坐其上并说出命令语之前，它都像一把普通扫帚。之后它会在你身下悬浮，并可在空中骑行。它的飞行速度为50尺。最多可承载400磅重物，但载重超过200磅时飞行速度变为30尺。扫帚在你着陆后停止悬浮。",
+      "你可以说出命令语并指明1里内一个你熟悉的地点，以此命令扫帚自行飞到该处。如果扫帚在你周围1里以内，则你可以用另一个命令语让它回到你身边。"
+    ],
+    "lootTables": [
+      "魔法物品表F"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Broom of Flying.webp"
+          },
+          "width": 724,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

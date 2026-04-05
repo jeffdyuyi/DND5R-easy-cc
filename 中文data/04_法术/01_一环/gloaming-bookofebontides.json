@@ -1,0 +1,63 @@
+[
+  {
+    "ENG_name": "Gloaming",
+    "name": "暮色迷蒙",
+    "source": "BookOfEbonTides",
+    "page": 62,
+    "level": 1,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "m": "一块烟熏玻璃碎片"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "魔法昏暗从你选择范围内的一个点扩散，形成一个50尺半径的球状区域，持续时间为枯萎之月。暮光会蔓延至转角处。具有{@sense 黑暗视觉}的生物可以看穿这片黑暗，任何正常的光照都能照亮它。通过暮色迷蒙发起的远程攻击具有劣势。如果你选择的点是一个被穿戴或携带的物件，效应会从该物件散发并随之移动。用不透明物件（如碗或舵）完全覆盖暮色迷蒙的来源可以阻挡黑暗术。",
+      "如果该法术的区域与2环或更高级法术创造的光亮区域重叠，则该效应被解除。"
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    }
+  }
+]

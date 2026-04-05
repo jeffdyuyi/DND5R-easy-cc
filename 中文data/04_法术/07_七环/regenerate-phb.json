@@ -1,0 +1,58 @@
+[
+  {
+    "ENG_name": "Regenerate",
+    "name": "再生术",
+    "source": "PHB",
+    "page": 271,
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "再生术|XPHB"
+    ],
+    "level": 7,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一个转经轮和圣水"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你触碰一个生物并加快其自愈速度。目标恢复 {@dice 4d8 + 15} 点生命值。在法术持续时间内，目标在它的每回合开始时恢复 1 点生命值（每分钟 10 点）。",
+      "如果目标失去了某些身体部位（手指、腿、尾巴等等），则这些部位将在 2 分钟后会重新长出。如果你持有失去的身体部位并且将其手动固定到创口上，则该法术会使该身体部位和创口立即接合。"
+    ],
+    "miscTags": [
+      "HL"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "牧师",
+      "德鲁伊"
+    ],
+    "display_school": "变化系"
+  }
+]

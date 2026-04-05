@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Widow's Tea",
+    "name": "寡妇赐茶",
+    "source": "GriffonsSaddlebag2",
+    "page": 189,
+    "tier": "主要",
+    "rarity": "rare",
+    "wondrous": true,
+    "entries": [
+      "这套深色的陶瓷茶具包含一个茶壶和两个配套的茶杯。一个恶意的鬼婆精魄栖息在茶壶之中，并会将第一杯倒入茶杯里的茶腐化。喝下第一杯茶的生物必须进行一次DC 15的体质豁免检定，因为鬼婆的精魄会从体内攻击它。若豁免失败，该生物受到{@damage 4d6}毒素伤害，且陷入{@condition 麻痹}状态持续1分钟。豁免成功则伤害减半，且不会陷入{@condition 麻痹}。被{@condition 麻痹}的生物在其每个回合结束时都可以进行另一次DC 15的体质豁免检定，豁免成功则效应终止。",
+      "该属性一经使用后，直到5天后才能再次使用。"
+    ],
+    "lootTables": [
+      "魔法物品表 G1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Widows-Tea.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

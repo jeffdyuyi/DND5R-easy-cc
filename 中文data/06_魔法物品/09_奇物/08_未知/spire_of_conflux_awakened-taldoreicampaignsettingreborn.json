@@ -1,0 +1,63 @@
+[
+  {
+    "ENG_name": "Spire of Conflux (Awakened)",
+    "name": "汇流尖枝（觉醒）",
+    "source": "TalDoreiCampaignSettingReborn",
+    "_copy": {
+      "ENG_name": "Spire of Conflux (Dormant)",
+      "name": "汇流尖枝（休眠）",
+      "source": "TalDoreiCampaignSettingReborn",
+      "_mod": {
+        "entries": [
+          {
+            "mode": "appendArr",
+            "items": {
+              "entries": [
+                {
+                  "ENG_name": "Awakened",
+                  "name": "觉醒",
+                  "type": "entries",
+                  "entries": [
+                    "当汇流尖塔达到觉醒状态时，你获得以下好处：",
+                    {
+                      "type": "list",
+                      "items": [
+                        "这根法杖有12次充能，并且在黎明时每天恢复{@dice 1d6 + 2}次已消耗的充能。",
+                        "你也可以消耗充能点来从法杖施放以下法术：{@spell 咒唤元素}（5个充能点）或{@spell 冰风暴}（4个充能点）。",
+                        "当你施放一个造成钝击、寒冷、火焰、闪电或雷鸣伤害的法术，并且你在伤害骰上掷出了1，你可以重掷该骰子，并必须使用新的掷骰结果。"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "_preserve": {
+        "page": true,
+        "fluff": true
+      }
+    },
+    "rechargeAmount": "{@dice 1d6 + 2}",
+    "charges": 12,
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "燃烧之手"
+        ],
+        "3": [
+          "火球术"
+        ],
+        "4": [
+          "冰风暴"
+        ],
+        "5": [
+          "咒唤元素"
+        ]
+      }
+    },
+    "hasFluff": true,
+    "hasFluffImages": true
+  }
+]

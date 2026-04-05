@@ -1,0 +1,24 @@
+[
+  {
+    "name": "布甲",
+    "ENG_name": "Padded Armor",
+    "source": "PHB",
+    "page": 144,
+    "edition": "classic",
+    "type": "LA",
+    "rarity": "none",
+    "weight": 8,
+    "value": 500,
+    "ac": 11,
+    "stealth": true,
+    "armor": true,
+    "entries": [
+      "布甲由数层布料与棉料的衬里构成。"
+    ],
+    "basicRules": true,
+    "reprintedAs": [
+      "布甲|XPHB"
+    ],
+    "srd": true
+  }
+]

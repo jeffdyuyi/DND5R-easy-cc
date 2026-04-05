@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Athreos's Devotee",
+    "name": "雅睿欧司的信众",
+    "source": "MOT",
+    "page": 37,
+    "type": "Piety Trait",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "daily": {
+              "wis": [
+                "遗体防腐"
+              ]
+            }
+          }
+        },
+        "ability": "wis"
+      }
+    ],
+    "entries": [
+      "{@i 虔诚值 3+ 雅睿欧司特质}",
+      "你的生活与死者的命运交织在一起。 你可以使用此特性，无需施法材料，施放{@spell 遗体防腐}，其次数等于你的感知调整值（最少一次）。 在一次长休后，你可以恢复所有消耗次数。 此能力的施法属性为感知。"
+    ]
+  }
+]

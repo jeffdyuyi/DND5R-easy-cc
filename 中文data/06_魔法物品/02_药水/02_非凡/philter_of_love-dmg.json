@@ -1,0 +1,26 @@
+[
+  {
+    "ENG_name": "Philter of Love",
+    "name": "迷情媚药",
+    "source": "DMG",
+    "page": 184,
+    "srd": true,
+    "reprintedAs": [
+      "迷情媚药|XDMG"
+    ],
+    "type": "P",
+    "tier": "次要",
+    "rarity": "uncommon",
+    "entries": [
+      "饮用此药水后，接下来10分钟内，你将被你看见的第一名生物{@condition 魅惑}。{@condition 魅惑}效应持续1小时。如果该生物的物种与性别符合你的取向，则被魅惑期间你将把它视为自己的真爱。不仔细观察的话，很难发现这种漂浮着气泡的玫瑰色药水中有着一颗爱心形的气泡。"
+    ],
+    "lootTables": [
+      "魔法物品表B"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "translator": "不全书",
+    "valueReference": 200
+  }
+]

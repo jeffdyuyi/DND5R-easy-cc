@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Tavern Brawler",
+    "name": "酒馆斗殴者",
+    "source": "XPHB",
+    "page": 202,
+    "category": "O",
+    "weaponProficiencies": [
+      {
+        "improvised": true
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Enhanced Unarmed Strike",
+        "name": "强化徒手打击",
+        "type": "entries",
+        "entries": [
+          "当你使用{@variantrule 徒手打击|XPHB}命中并造成伤害时，你可以造成{@damage 1d4} + 你力量调整值的钝击伤害，而非{@variantrule 徒手打击|XPHB}的原本伤害。"
+        ]
+      },
+      {
+        "ENG_name": "Damage Rerolls",
+        "name": "伤害重掷",
+        "type": "entries",
+        "entries": [
+          "当你为{@variantrule 徒手打击|XPHB}掷伤害骰时，你可以重掷其中掷出 1 的骰子，但你必须使用重掷的结果。"
+        ]
+      },
+      {
+        "ENG_name": "Improvised Weaponry",
+        "name": "临时武器专家",
+        "type": "entries",
+        "entries": [
+          "你拥有临时武器的熟练。"
+        ]
+      },
+      {
+        "ENG_name": "Push",
+        "name": "推离",
+        "type": "entries",
+        "entries": [
+          "在你的回合内，如果你用{@action 攻击|XPHB}动作中的一次{@variantrule 徒手打击|XPHB}命中了一个生物，你可以在对目标造成伤害的同时将它推离 5 尺。你每回合只能使用这个增益一次。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

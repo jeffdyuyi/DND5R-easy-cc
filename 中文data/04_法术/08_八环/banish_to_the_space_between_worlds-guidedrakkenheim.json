@@ -1,0 +1,76 @@
+[
+  {
+    "ENG_name": "Banish to the Space Between Worlds",
+    "name": "逐于世界之隙",
+    "source": "GuideDrakkenheim",
+    "page": 198,
+    "level": 8,
+    "school": "C",
+    "subschools": [
+      "受污染的"
+    ],
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "价值100gp的妄质碎片，该法术会消耗此碎片"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "{@i 当你施放这个法术时，你获得1层污染。}",
+      "你将一个你能看见的范围内的生物放逐到世界之隙。在这个充满混乱潜能的翻腾位面上，目标漫游于难以理解的景象中，寻找通过奇怪而荒谬的出口返回的路。目标将在那里停留至持续时间结束或直到逃脱。",
+      "目标可以使用其动作尝试逃脱。当它这样做时，它会进行一次智力检定对抗你的法术豁免DC。如果成功，它将逃脱，并且法术结束。如果检定失败，目标将受到{@damage 4d6}心灵伤害。",
+      "法术终止时，目标将重新出现在它之前消失的位置。如果该位置被占据，则目标出现在最近的未占据位置。",
+      "目标在世界之隙中的时间流逝与外界不同，它感知到在那里度过的时光可能长达数百年甚至数千年，即便在凡世仅过去了几回合或几分钟。",
+      "一个在世界之隙中死亡的生物不会返回。"
+    ],
+    "damageInflict": [
+      "心灵"
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Apothecary",
+          "name": "药剂师",
+          "source": "GuideDrakkenheim"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    }
+  }
+]

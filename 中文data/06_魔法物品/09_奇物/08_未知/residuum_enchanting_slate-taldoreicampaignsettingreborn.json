@@ -1,0 +1,15 @@
+[
+  {
+    "ENG_name": "Residuum Enchanting Slate",
+    "name": "残渣附魔石板",
+    "source": "TalDoreiCampaignSettingReborn",
+    "page": 75,
+    "type": "T",
+    "rarity": "unknown (magic)",
+    "wondrous": true,
+    "value": 2000000,
+    "entries": [
+      "{@item 残渣|TalDoreiCampaignSettingReborn}也可以被加热并吹制成玻璃，形成一种闪烁的、略带绿色的表面。残渣石板或球体可用于固定的附魔台。愿意支付高昂费用（轻松达到20,000金币或更多）的大法师可以获得一块{@item 残渣附魔石板|TalDoreiCampaignSettingReborn|附魔石板}，用于加速所有魔法物品的创造。使用这样的表格可以让任何制作魔法物品的人只需通常时间的四分之一即可完成。"
+    ]
+  }
+]

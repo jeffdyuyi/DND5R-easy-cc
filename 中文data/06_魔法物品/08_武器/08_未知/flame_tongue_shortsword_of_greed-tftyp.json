@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Flame Tongue Shortsword of Greed",
+    "name": "贪婪焰舌短剑",
+    "source": "TftYP",
+    "page": 179,
+    "baseItem": "短剑|PHB",
+    "type": "M",
+    "rarity": "unknown (magic)",
+    "reqAttune": true,
+    "weight": 2,
+    "weaponCategory": "martial",
+    "property": [
+      "F",
+      "L"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "entries": [
+      "你可以使用一个附赠动作来说出这把魔法剑的口令，使火焰从剑刃上爆发出来。这些火焰在40尺半径内散发出明亮的光芒，并在额外的40尺内散发出微光。当剑上燃烧时，它对任何被击中的敌人额外造成{@damage 2d6}火焰伤害。火焰持续到你再次使用附赠动作说出口令，或者直到你放下或收起剑。",
+      "佩带这把剑时，你可以用一个动作以精神指令它侦查宝石和珠宝。你得知剑60尺内此类物件的类型和数值。"
+    ],
+    "light": [
+      {
+        "bright": 40,
+        "dim": 80
+      }
+    ]
+  }
+]

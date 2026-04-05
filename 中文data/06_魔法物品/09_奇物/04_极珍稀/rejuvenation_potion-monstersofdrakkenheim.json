@@ -1,0 +1,76 @@
+[
+  {
+    "ENG_name": "Rejuvenation Potion",
+    "name": "复生药水",
+    "source": "MonstersOfDrakkenheim",
+    "page": 391,
+    "type": "P|XPHB",
+    "rarity": "very rare",
+    "entries": [
+      "当你饮用这瓶明亮的紫色药水时，你将立即获得短休的增益效果。",
+      "在你消耗一瓶复生药水后，直到你完成{@dice 1d4}次长休前，你不能从消耗另一瓶中获益。",
+      {
+        "ENG_name": "Crafting",
+        "name": "手作",
+        "type": "entries",
+        "entries": [
+          "制作复生药水需要一个极珍稀工坊和以下极珍稀成分：",
+          {
+            "type": "list",
+            "items": [
+              {
+                "ENG_name": "[Animus]",
+                "name": "[精魄]",
+                "type": "item",
+                "entries": [
+                  "任意精魄"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Dust]",
+                "name": "[粉尘]",
+                "type": "item",
+                "entries": [
+                  "妖精粉尘"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Fluid]",
+                "name": "[流体]",
+                "type": "item",
+                "entries": [
+                  "任意元素生物流体"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Fluid]",
+                "name": "[流体]",
+                "type": "item",
+                "entries": [
+                  "龙之怪物鲜血"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Organ]",
+                "name": "[器官]",
+                "type": "item",
+                "entries": [
+                  "邪魔的心脏"
+                ],
+                "nameDot": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "hasFluffImages": true
+  }
+]

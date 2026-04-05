@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Gluebomb",
+    "name": "胶水炸弹",
+    "source": "TalDoreiCampaignSettingReborn",
+    "page": 100,
+    "type": "EXP|DMG",
+    "rarity": "none",
+    "value": 5000,
+    "range": "30",
+    "entries": [
+      "这种独特的爆炸物可以被设定并在30尺内投掷作为动作。它在撞击时爆炸。在其20尺范围内的生物必须进行一次{@dc 12}敏捷{@quickref 豁免检定|PHB|2|1|豁免检定}，否则会被{@condition 束缚}1分钟。一个{@condition 束缚}的生物可以作为动作进行一次{@dc 12}力量检查，成功则逃脱。"
+    ],
+    "miscTags": [
+      "CNS"
+    ]
+  }
+]

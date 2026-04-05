@@ -1,0 +1,23 @@
+[
+  {
+    "name": "箱子",
+    "ENG_name": "Chest",
+    "source": "XPHB",
+    "page": 225,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 25,
+    "value": 500,
+    "entries": [
+      "一个箱子至多能装入 12 立方尺的东西。"
+    ],
+    "basicRules2024": true,
+    "containerCapacity": {
+      "volume": [
+        12
+      ]
+    },
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

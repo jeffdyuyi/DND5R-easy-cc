@@ -1,0 +1,55 @@
+[
+  {
+    "ENG_name": "Wave of Oblivion",
+    "name": "忘却之波",
+    "source": "CthulhuTorchlight",
+    "page": 0,
+    "level": 9,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你创造出覆盖30尺{@variantrule 锥状 [效应区域]|XPHB|锥状}的湮灭能量。{@variantrule 浴血|XPHB}区域内每个{@variantrule 锥状 [效应区域]|XPHB|锥状}生物必须进行一次体质豁免检定。豁免失败者立即死亡，且连同其穿着和携带的非魔法物品一起化为灰尘。因此而死的生物只能通过{@spell 完全复生术|XPHB}或{@spell 祈愿术|XPHB}复活。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "savingThrow": [
+      "体质"
+    ]
+  }
+]

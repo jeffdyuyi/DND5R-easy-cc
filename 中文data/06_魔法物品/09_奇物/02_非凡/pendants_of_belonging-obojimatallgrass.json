@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Pendants of Belonging",
+    "name": "归属吊坠",
+    "source": "ObojimaTallGrass",
+    "page": 174,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这些吊坠以四、六或八件为一套。佩戴时，生物总能感知到其所属套装中其他吊坠的方向。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/pendants-of-belonging.webp"
+          },
+          "credit": "Matt Owen",
+          "width": 2791,
+          "height": 2791
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "ENG_name": "Net",
+    "name": "镀银捕网",
+    "source": "PHB",
+    "page": 148,
+    "srd": true,
+    "basicRules": true,
+    "referenceSources": [
+      "ToA"
+    ],
+    "reprintedAs": [
+      "镀银武器|XDMG"
+    ],
+    "edition": "classic",
+    "type": "R",
+    "rarity": "unknown",
+    "weight": 3,
+    "value": 100,
+    "weaponCategory": "martial",
+    "property": [
+      "S",
+      "T"
+    ],
+    "range": "5/15",
+    "net": true,
+    "weapon": true,
+    "entries": [
+      {
+        "ENG_name": "Special",
+        "name": "特殊",
+        "type": "entries",
+        "entries": [
+          "一只被捕网命中的大型或更小体型生物将被{@condition 束缚}，束缚状态持续至该生物解脱。捕网不能影响无形体生物，以及巨型或更大体型的生物。一个生物可以用动作进行一次{@dc 10}的力量检定，以解脱自己或其触及范围内另一生物的束缚状态。对网造成5点挥砍伤害（AC 10）同样可以解脱生物的束缚状态而不伤害及生物本身，并以此摧毁捕网进而终止束缚效应。当用捕网以一个动作、附赠动作或反应进行攻击时，你只能攻击一次，而不论你正常情况下可发动攻击的次数。"
+        ]
+      }
+    ],
+    "namePrefix": "镀银",
+    "tier": "主要",
+    "valueExpression": "[[baseItem.value]] + 10000",
+    "_isVariant": true
+  }
+]

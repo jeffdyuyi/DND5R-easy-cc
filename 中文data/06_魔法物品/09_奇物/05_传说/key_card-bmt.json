@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "Key Card",
+    "name": "钥匙卡",
+    "source": "BMT",
+    "page": 14,
+    "rarity": "legendary",
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "5",
+    "charges": 5,
+    "entries": [
+      "作为动作，你可以挥舞这张卡牌并用其施放{@spell 敲击术}法术，以此法施放的法术不会发出声音。你能使用该特性五次，每天黎明时，它重获所有已被消耗的使用次数。"
+    ],
+    "attachedSpells": {
+      "daily": {
+        "5e": [
+          "敲击术"
+        ]
+      }
+    },
+    "hasFluffImages": true,
+    "valueReference": 100000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "decks/BMT/Deck of Many Things/02-key.webp"
+          },
+          "credit": "Tinnel Lovitt",
+          "width": 850,
+          "height": 1552
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Staff of Flowers",
+    "name": "鲜花法杖",
+    "source": "XGE",
+    "page": 139,
+    "reprintedAs": [
+      "鲜花法杖|XDMG"
+    ],
+    "tier": "次要",
+    "rarity": "common",
+    "weight": 4,
+    "weaponCategory": "simple",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6 + 4}",
+    "charges": 10,
+    "staff": true,
+    "entries": [
+      "这根木质法杖拥有10发充能。持握这把法杖期间，你可以用一个动作消耗其1发充能使你周围5尺内的一处地面或者土壤上开出一朵花。你可以让其开出的花为某一种特定的品种，如果未指定，开出的花会是带有有点香味的雏菊。这朵花是无害且非魔法的。且其会如正常花朵一样生长或枯萎。这根法杖每日黎明时分恢复{@dice 1d6 + 4}发已消耗的充能。当充能数耗尽时，骰一次{@dice d20}。如果骰值为1，法杖将化作无数花瓣四散而去，永远消失。"
+    ],
+    "translator": "不全书",
+    "valueReference": 100,
+    "type": "ST"
+  }
+]

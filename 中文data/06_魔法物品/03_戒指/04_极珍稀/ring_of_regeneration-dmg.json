@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "Ring of Regeneration",
+    "name": "再生戒指",
+    "source": "DMG",
+    "page": 191,
+    "srd": true,
+    "referenceSources": [
+      "CoS"
+    ],
+    "reprintedAs": [
+      "再生戒指|XDMG"
+    ],
+    "type": "RG|DMG",
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "entries": [
+      "佩戴这枚戒指期间，只要你尚有至少1点生命值，你就能每10分钟恢复{@dice 1d6}的生命值。即使你失去了一部分肢体，只要你能在{@dice 1d6 + 1}日内时刻保持至少有1点生命值，你失去的肢体也会重新长出并恢复原有的功能。"
+    ],
+    "lootTables": [
+      "魔法物品表H"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 40000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Ring of Regeneration.webp"
+          },
+          "width": 1024,
+          "height": 1024
+        }
+      ]
+    }
+  }
+]

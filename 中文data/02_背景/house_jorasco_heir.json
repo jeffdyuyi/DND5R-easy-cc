@@ -1,0 +1,132 @@
+[
+  {
+    "name": "乔拉斯克家族继承人",
+    "ENG_name": "House Jorasco Heir",
+    "source": "EFA",
+    "edition": "one",
+    "page": 28,
+    "ability": [
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "dex",
+              "con",
+              "wis"
+            ],
+            "weights": [
+              2,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "dex",
+              "con",
+              "wis"
+            ],
+            "weights": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      }
+    ],
+    "feats": [
+      {
+        "医疗龙纹|efa": true
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "medicine": true,
+        "stealth": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "herbalism kit": true
+      }
+    ],
+    "startingEquipment": [
+      {
+        "a": [
+          "草药工具|xphb",
+          "高档服装|xphb",
+          "医疗包|xphb",
+          {
+            "value": 2500
+          }
+        ],
+        "b": [
+          {
+            "value": 5000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability Scores:",
+            "name": "属性值：",
+            "type": "item",
+            "entry": "敏捷，体质，感知"
+          },
+          {
+            "ENG_name": "Feat:",
+            "name": "专长：",
+            "type": "item",
+            "entry": "{@feat 医疗龙纹|EFA}"
+          },
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 医药|XPHB} 和 {@skill 隐匿|XPHB}"
+          },
+          {
+            "ENG_name": "Tool Proficiencies:",
+            "name": "工具熟练",
+            "type": "item",
+            "entry": "{@item 草药工具|XPHB}"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "选择A或B：(A) {@item 草药工具|XPHB}、{@item 高档服装|XPHB}、{@item 医疗包|XPHB}，25 GP；或 (B) 50 GP"
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "乔拉斯克家族教导说，疾病和伤口如幽魂般缠扰活体，剥夺人们的健康与长寿。你被教导了以魔法和医学方式对抗这些灾祸的方法。你受训将这些技能用于服务他人——并确保你总能为此服务获得适当报酬，从而保障乔拉斯克家族的健康与长寿。你可能是个不忍战斗的仁慈医者，或是个能通过精准打击使仇敌失能或毙命的冷静专家。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "backgrounds/EFA/House Jorasco Heir.webp"
+          },
+          "credit": "Arthur Loftis",
+          "width": 850,
+          "height": 291
+        }
+      ]
+    },
+    "hasFluff": true,
+    "hasFluffImages": true
+  }
+]

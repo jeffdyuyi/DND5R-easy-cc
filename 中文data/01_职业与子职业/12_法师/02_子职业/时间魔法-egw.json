@@ -1,0 +1,40 @@
+{
+  "ENG_name": "Chronurgy Magic",
+  "name": "时间魔法",
+  "shortName": "时间",
+  "source": "EGW",
+  "className": "法师",
+  "classSource": "XPHB",
+  "_copy": {
+    "ENG_name": "Chronurgy Magic",
+    "name": "时间魔法",
+    "source": "EGW",
+    "shortName": "时间",
+    "className": "法师",
+    "classSource": "PHB",
+    "_preserve": {
+      "page": true,
+      "otherSources": true,
+      "referenceSources": true,
+      "srd": true,
+      "basicRules": true,
+      "reprintedAs": true
+    }
+  },
+  "subclassFeatures": [
+    "时间魔法|法师|XPHB|时间|EGW|3",
+    "瞬时静止|法师||时间|EGW|6",
+    "奥法暂滞|法师||时间|EGW|10",
+    "收束未来|法师||时间|EGW|14"
+  ],
+  "fluff": {
+    "_subclassFluff": {
+      "ENG_name": "Chronurgy Magic",
+      "name": "时间魔法",
+      "source": "EGW",
+      "shortName": "时间",
+      "className": "法师",
+      "classSource": "PHB"
+    }
+  }
+}

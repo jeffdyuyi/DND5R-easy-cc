@@ -1,0 +1,71 @@
+[
+  {
+    "ENG_name": "Eye of the White Worm (Legendary)",
+    "name": "白虫之眼（传说）",
+    "source": "CrookedMoon24",
+    "page": 599,
+    "rarity": "legendary",
+    "reqAttune": true,
+    "wondrous": true,
+    "property": [
+      "TCM'24:FH"
+    ],
+    "bonusSpellAttack": "+3",
+    "bonusSpellSaveDc": "+3",
+    "focus": true,
+    "entries": [
+      "这颗拳头大小的眼球冰冷而潮湿，呈现出布满紫色血管的乳白色，并且其瞳孔仿佛在不断搜寻着某物。",
+      "持握这颗眼球期间，你可以将其用作你法术的{@variantrule 法器|XPHB}，你的法术攻击检定和法术豁免DC会获得+3加值，该加值取决于该眼球的稀有度，并且你还可以使用如下词条。",
+      {
+        "ENG_name": "Thought Scour (Rare+)",
+        "name": "思维刮掠（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "你可以从该眼球中施放{@spell 侦测思想|XPHB}（豁免DC = 16 + 眼球的加值）。当你深入探究某生物的内心时，除非其愿意，否则它将受到{@damage 3d8}心灵伤害。该属性一经使用，则直至次日黄昏之前，无法再次使用。"
+        ]
+      },
+      {
+        "ENG_name": "Mnemonic Siphon (Very Rare+)",
+        "name": "记忆虹吸（极珍稀+）",
+        "type": "entries",
+        "entries": [
+          "你可以从该眼球中施展{@spell 篡改记忆|XPHB}（豁免DC = 16 + 眼球的加值）。当你这样做时，你会获得该段记忆的一个仿佛你亲身经历的版本，但你依然清楚这段记忆并非属于你。该属性一经使用，则直至次日黄昏之前，无法再次使用。"
+        ]
+      },
+      {
+        "ENG_name": "Violation of the Real (Very Rare+)",
+        "name": "亵渎现实（极珍稀+）",
+        "type": "entries",
+        "entries": [
+          "当你使用一个法术位施放一个造成伤害的咒法系法术，或召唤一个能够造成伤害的生物时，该法术或生物在一个回合中第一次造成伤害时，对一个目标额外造成{@damage 1d10}心灵伤害。"
+        ]
+      },
+      {
+        "ENG_name": "Enduring Violation (Legendary)",
+        "name": "永续亵渎（传说）",
+        "type": "entries",
+        "entries": [
+          "当你施展一道持续时间为1小时或更长的咒法系法术时，你可以将持续时间延长至24小时，并且该法术不再需要{@status 专注|XPHB}。该属性一经使用，则直至次日黄昏之前，无法再次使用。"
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "侦测思想|XPHB",
+      "篡改记忆|XPHB"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Eye%20of%20the%20White%20Worm.webp"
+          },
+          "width": 709,
+          "height": 1200,
+          "credit": "Minard Maxime"
+        }
+      ]
+    }
+  }
+]

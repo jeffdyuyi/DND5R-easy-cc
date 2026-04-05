@@ -1,0 +1,33 @@
+{
+  "ENG_name": "Druidic Warrior",
+  "name": "德鲁伊教战士",
+  "source": "TCE",
+  "page": 57,
+  "reprintedAs": [
+    {
+      "uid": "德鲁伊教战士|XPHB",
+      "tag": "feat"
+    }
+  ],
+  "isClassFeatureVariant": true,
+  "featureType": [
+    "FS:R"
+  ],
+  "additionalSpells": [
+    {
+      "ability": "wis",
+      "known": {
+        "_": [
+          {
+            "choose": "level=0|class=druid",
+            "count": 2
+          }
+        ]
+      }
+    }
+  ],
+  "entries": [
+    "你学会两道{@filter 德鲁伊法术列表|spells|level=0|class=德鲁伊}。它们对你视作游侠法术，感知是你施展他们的施法属性。当你升级时，你可以将其中一个戏法替换为德鲁伊法术列表中的另一个戏法。"
+  ],
+  "translator": "不全书"
+}

@@ -1,0 +1,88 @@
+[
+  {
+    "ENG_name": "Wand of Gilding",
+    "name": "镀金魔杖",
+    "source": "GriffonsSaddlebag2",
+    "page": 182,
+    "type": "WD|DMG",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": "由吟游诗人、术士或法师",
+    "reqAttuneTags": [
+      {
+        "class": "吟游诗人"
+      },
+      {
+        "class": "术士"
+      },
+      {
+        "class": "法师"
+      }
+    ],
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6 + 1}",
+    "charges": 7,
+    "entries": [
+      "这根金魔杖是典型的贵族家族传家宝，且其末端还有一朵精致的百合花，它会在被魔杖握持时绽放。持握此魔杖期间，你可以使用其以下词条：",
+      {
+        "ENG_name": "Enhance Beauty",
+        "name": "强化美感",
+        "type": "entries",
+        "entries": [
+          "你可以用一个动作将魔杖指向30尺范围内你能看到的一个活体目标并魔法性地在1小时内强化它的美丽。如果目标是一个生物，它的睫毛可能变得更浓密，皮肤更光耀，毛发更柔顺。如果它是一株植物，它可能长得更加茁壮，气味更加芬芳，看起来更健康。"
+        ]
+      },
+      {
+        "ENG_name": "Gild",
+        "name": "镀金",
+        "type": "entries",
+        "entries": [
+          "你可以用一个动作，用魔杖触碰的一个在任意方向上都不超过1尺的目标，使其外观在1小时内变为如金制一般。它的外观和纹理都会为表现新外观而发生变化，但其重量保持不变。成功通过一次DC 15的智力（{@skill 调查}）检定就能揭示此效果只是幻术。这项词条一经使用后，直到下个黎明之前都不能再使用。"
+        ]
+      },
+      "这根魔杖具有7充能，可用于其以下词条。它在每日黎明时恢复{@dice 1d6 + 1}已消耗的充能。当充能耗尽时，骰一次{@dice d20}。如果骰值为1，则魔杖会崩解成泥土并被摧毁。",
+      {
+        "ENG_name": "Spells",
+        "type": "entries",
+        "name": "法术",
+        "entries": [
+          "持握此魔杖期间，你可以用一个动作消耗其1充能来施展以下法术其一（豁免DC 15）：{@spell 变身术}（仅限改变外貌），{@spell 魅惑类人}（二环版本），{@spell 注目术}，或{@spell 催眠图纹}。"
+        ]
+      },
+      {
+        "ENG_name": "Silver Tongue",
+        "name": "巧舌如簧",
+        "type": "entries",
+        "entries": [
+          "持用着该魔杖期间，每当你进行一次魅力检定或豁免检定时，你可以用你的反应消耗其1充能来使该掷骰具有优势。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "变身术",
+          "魅惑类人",
+          "注目术",
+          "催眠图纹"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表 G1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Wand-of-Gilding.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

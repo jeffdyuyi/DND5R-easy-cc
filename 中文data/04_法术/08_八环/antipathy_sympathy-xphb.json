@@ -1,0 +1,94 @@
+[
+  {
+    "ENG_name": "Antipathy/Sympathy",
+    "name": "嫌恶术/关怀术",
+    "source": "XPHB",
+    "page": 242,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 8,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "小时"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "醋和蜂蜜的混合物"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "day",
+          "amount": 10
+        }
+      }
+    ],
+    "entries": [
+      "当你施展此法术时，选择它是产生嫌恶还是关怀效应，并选择一个巨型或更小体型的生物或物件。然后指定特定类型的生物，比如红龙、地精或吸血鬼。当此类生物进入被选择的生物120尺内时，它必须进行一次感知豁免。你选择的嫌恶或关怀效应会决定当豁免失败时，这个生物身上产生的效应。",
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Antipathy",
+            "name": "嫌恶",
+            "type": "item",
+            "entries": [
+              "该生物将陷入{@condition 恐慌|XPHB}状态。因此陷入{@condition 恐慌|XPHB}的生物必须在其回合内使用其移动力尽可能远离目标，并沿着最安全的路线移动。"
+            ]
+          },
+          {
+            "ENG_name": "Sympathy",
+            "name": "关怀",
+            "type": "item",
+            "entries": [
+              "该生物将陷入{@condition 魅惑|XPHB}状态。因此陷入{@condition 魅惑|XPHB}的生物必须在其回合内使用其移动力尽可能接近目标，并沿着最安全的路线移动。如果该生物位于目标的5尺内，它不能自主远离目标。如果目标伤害陷入{@condition 魅惑|XPHB}的生物，该生物能够如下文描述一样进行一次感知豁免来结束这一效应。"
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Ending the Effect",
+        "name": "终止效应",
+        "type": "entries",
+        "entries": [
+          "如果陷入{@condition 恐慌|XPHB}或{@condition 魅惑|XPHB}的生物在距离目标距离120尺以上结束时结束回合，该生物进行一次感知豁免。豁免成功的情况下，该生物不再被目标影响。在对抗该效应的豁免中成功的生物将不受此法术的效应影响，持续 1 分钟，随后仍可能受到该效应影响。"
+        ]
+      }
+    ],
+    "conditionInflict": [
+      "恐慌",
+      "魅惑"
+    ],
+    "savingThrow": [
+      "wisdom"
+    ],
+    "miscTags": [
+      "OBJ"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "classes": [
+      "吟游诗人",
+      "德鲁伊",
+      "法师"
+    ],
+    "display_school": "惑控系",
+    "display_savingThrow": [
+      "感知"
+    ]
+  }
+]

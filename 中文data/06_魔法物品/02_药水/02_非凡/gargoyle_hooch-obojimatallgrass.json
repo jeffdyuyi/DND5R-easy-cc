@@ -1,0 +1,46 @@
+[
+  {
+    "ENG_name": "Gargoyle Hooch",
+    "name": "石像鬼烈酒",
+    "source": "ObojimaTallGrass",
+    "page": 224,
+    "type": "P",
+    "rarity": "uncommon",
+    "property": [
+      "Com"
+    ],
+    "bonusAc": "+2",
+    "entries": [
+      "这种灰色液体尝起来像泥土，会让你的舌卷麻木。吞咽药水后的几秒钟内，你的皮肤会变成活体岩石。接下来的1小时内，你的AC获得+2加值，且你的步行速度缩小5尺。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 31|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Combat/gargoyle-hooch.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1714,
+          "height": 1714
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

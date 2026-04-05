@@ -1,0 +1,21 @@
+[
+  {
+    "ENG_name": "Amber Runestone",
+    "name": "琥珀符文石",
+    "source": "NRH-TLT",
+    "page": 6,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这块抛光过的琥珀上刻有许多细小的符文。作为一个附赠动作，你可以用意念命令石头在15尺半径内发出明亮的光，并在额外的15尺内发出微光。这种光是阳光。当光持续存在时，你还可以用附赠动作扩大或缩小其明亮和微光的半径，每次5尺，最大可达30尺，最小为10尺。"
+    ],
+    "light": [
+      {
+        "bright": 15,
+        "dim": 30
+      }
+    ],
+    "valueReference": 400,
+    "type": "W"
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "ENG_name": "Primal Savagery",
+    "name": "原初蛮击",
+    "source": "XGE",
+    "page": 163,
+    "level": 0,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你的牙齿或指甲变得长而尖锐，从而准备好发起酸蚀性的打击。对一个处于你周围 5 尺内的生物进行一次近战法术攻击。命中则目标受到{@damage 1d10}点强酸伤害。在你进行此攻击后，你的牙齿或指甲恢复正常。",
+      "该法术的伤害在你达到特定等级时增加{@damage 1d10}，5级（{@damage 2d10}）、11级（{@damage 3d10}）和17级（{@damage 4d10}）。"
+    ],
+    "scalingLevelDice": {
+      "label": "强酸伤害",
+      "scaling": {
+        "1": "1d10",
+        "5": "2d10",
+        "11": "3d10",
+        "17": "4d10"
+      }
+    },
+    "damageInflict": [
+      "acid"
+    ],
+    "spellAttack": [
+      "M"
+    ],
+    "miscTags": [
+      "SCL"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊"
+    ],
+    "display_school": "变化系",
+    "display_damageInflict": [
+      "强酸"
+    ]
+  }
+]

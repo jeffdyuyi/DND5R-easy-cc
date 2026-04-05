@@ -1,0 +1,52 @@
+[
+  {
+    "ENG_name": "Wand of Paralysis",
+    "name": "麻痹魔杖",
+    "source": "XDMG",
+    "page": 321,
+    "srd52": true,
+    "basicRules2024": true,
+    "type": "WD|XDMG",
+    "rarity": "rare",
+    "reqAttune": "由施法者",
+    "reqAttuneTags": [
+      {
+        "spellcasting": true
+      }
+    ],
+    "weight": 1,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6 + 1}",
+    "charges": 7,
+    "entries": [
+      "这根魔杖具有7充能。持握它时，你可以执行{@action 魔法|XPHB}动作并消耗1充能，从魔杖尖端向位于你60尺内的一个你可见的生物射出一发纤细的蓝色光线。目标必须成功通过一次{@dc 15}的体质豁免，否则将陷入{@condition 麻痹|XPHB}状态一分钟。目标在其每回合结束时可以重新进行该豁免，豁免成功则终止其身上的该效应。",
+      {
+        "ENG_name": "Regaining Charges",
+        "name": "重获充能",
+        "type": "entries",
+        "entries": [
+          "这根魔杖在每日黎明时重获{@dice 1d6 + 1}已消耗的充能。当充能数耗尽时，骰一次{@dice 1d20}。如果骰值为1，魔杖将化作飞灰并被摧毁。"
+        ]
+      }
+    ],
+    "lootTables": [
+      "圣物 - 珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Wand of Paralysis.webp"
+          },
+          "width": 123,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

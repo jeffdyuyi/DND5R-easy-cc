@@ -1,0 +1,36 @@
+[
+  {
+    "ENG_name": "水手Leather Armor",
+    "name": "水手皮甲",
+    "source": "DMG",
+    "page": 181,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "LA|XPHB",
+    "rarity": "uncommon",
+    "weight": 10,
+    "value": 1000,
+    "ac": 11,
+    "armor": true,
+    "hasFluffImages": true,
+    "namePrefix": "水手",
+    "reprintedAs": [
+      "水手护甲|XDMG"
+    ],
+    "tier": "次要",
+    "modifySpeed": {
+      "equal": {
+        "swim": "走"
+      }
+    },
+    "entries": [
+      "穿戴这件盔甲时，你的游泳速度等同于你的步行速度。此外，每当你在水下开始你的回合并且生命值为0时，盔甲会使你向水面上升60尺。盔甲上装饰有鱼和贝壳图案。"
+    ],
+    "lootTables": [
+      "魔法物品表B"
+    ],
+    "_isVariant": true,
+    "valueReference": 400
+  }
+]

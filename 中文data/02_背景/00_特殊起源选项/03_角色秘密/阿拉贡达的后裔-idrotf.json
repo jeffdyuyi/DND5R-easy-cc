@@ -1,0 +1,31 @@
+{
+  "ENG_name": "Alagondar Scion",
+  "name": "阿拉贡达的后裔",
+  "source": "IDRotF",
+  "page": 264,
+  "prerequisite": [
+    {
+      "race": [
+        {
+          "ENG_name": "human",
+          "name": "人类"
+        },
+        {
+          "ENG_name": "half-elf",
+          "name": "半精灵"
+        },
+        {
+          "ENG_name": "half-orc",
+          "name": "半兽人"
+        }
+      ],
+      "note": "如果你不符合这个先决条件，请抽取另一张卡片。"
+    }
+  ],
+  "optionType": [
+    "CS"
+  ],
+  "entries": [
+    "我是阿拉贡达血脉的后裔，也是无冬城王座的唯一已知继承人。如果护国公达格特·无烬得知我还活着，他会派刺客来杀我。"
+  ]
+}

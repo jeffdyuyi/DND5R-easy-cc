@@ -1,0 +1,83 @@
+[
+  {
+    "ENG_name": "Charnel Banquet",
+    "name": "停灵飨",
+    "source": "BookOfEbonTides",
+    "page": 57,
+    "level": 7,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "sphere",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一条丝绸手帕"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        }
+      }
+    ],
+    "meta": {
+      "ritual": true
+    },
+    "entries": [
+      "你将一片腐血之地转化为一场赋能盛宴。在持续时间内，所有你选择的生物可以消耗任何生物的血肉。如果一个生物在持续时间内食用了腐血，它将恢复{@dice 10d6}生命值，恢复一半已消耗的生命骰（至少1个），移除一半的{@condition 力竭}等级（至少1级），并获得完成一次短休的所有增益。",
+      "受此法術影响的生物必须在持续时间结束时成功通过一次体质豁免检定，否则将陷入{@condition 中毒}状态1小时。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "如果该法术使用9环法术位施放，受影响的生物除了上述效应外，还会移除所有{@condition 力竭}状态等级并恢复所有消耗的生命骰。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    },
+    "conditionInflict": [
+      "力竭",
+      "中毒"
+    ],
+    "savingThrow": [
+      "体质"
+    ]
+  }
+]

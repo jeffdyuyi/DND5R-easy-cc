@@ -1,0 +1,28 @@
+[
+    {
+        "ENG_name": "Fortune of the Thaumaturge",
+        "name": "术士之鸿运",
+        "source": "GrimHollowPG24",
+        "page": 114,
+        "category": "O",
+        "entries": [
+            "你发现你在操纵魔法流向和揭开隐藏秘密方面具有独特感官。你获得以下增益。",
+            {
+                "ENG_name": "Magic Detection",
+                "name": "侦测魔法",
+                "type": "entries",
+                "entries": [
+                    "作为一项{@action 魔法|XPHB}动作，你可以专注于周围的背景魔法。当你以此方式专注时，你可以感知到你30尺范围内是否存在魔法。该效应可持续至多1小时，就像你施放了{@spell 侦测魔法|XPHB}法术一样。一旦你使用此增益，直到你完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}前，你无法再次使用它。即使你在休息前消耗了法术位，你仍可施放该法术。"
+                ]
+            },
+            {
+                "ENG_name": "Lucky Find",
+                "name": "幸运发现",
+                "type": "entries",
+                "entries": [
+                    "每当你进行智力（{@skill 调查|XPHB}）或感知（{@skill 察觉|XPHB}）检定时，你可以用你选择的施法属性调整值来替代原本的属性调整值。"
+                ]
+            }
+        ]
+    }
+]

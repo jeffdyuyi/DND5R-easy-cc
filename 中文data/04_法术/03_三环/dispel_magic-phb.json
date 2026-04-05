@@ -1,0 +1,109 @@
+[
+  {
+    "ENG_name": "Dispel Magic",
+    "name": "解除魔法",
+    "source": "PHB",
+    "page": 234,
+    "srd": true,
+    "basicRules": true,
+    "otherSources": [
+      {
+        "source": "RMR",
+        "page": 53
+      }
+    ],
+    "referenceSources": [
+      "HotDQ",
+      "CoS",
+      "SKT",
+      "TftYP-THSoT",
+      "TftYP-WPM",
+      "TftYP-DiT",
+      "TftYP-AtG",
+      "TftYP-ToH",
+      "ToA",
+      "WDH",
+      "WDMM",
+      "AZfyT",
+      "GoS",
+      "OoW",
+      "SLW",
+      "SDW",
+      "BGDIA",
+      "LR",
+      "US",
+      "IDRotF",
+      "CM",
+      "RtG",
+      "WBtW",
+      "CRCotN",
+      "JttRC",
+      "DSotDQ",
+      "KftGV",
+      "PaBTSO",
+      "CoA",
+      "DitLCoT",
+      "LRDT",
+      "VEoR",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "解除魔法|XPHB"
+    ],
+    "level": 3,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "在施法距离内指定一个生物、一个物件或一处魔法效应，并终止所有影响该目标的三环或更低环阶法术。每个影响目标的四环或更高环阶法术都需要以你的施法属性进行一次属性检定，其 DC 等于 10+目标法术的环阶，检定成功时目标法术终止。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "使用四环或更高法术位施展该法术时，你直接终止目标身上小于等于该施法环阶的法术效应。"
+        ]
+      }
+    ],
+    "miscTags": [
+      "OBJ"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "牧师",
+      "德鲁伊",
+      "圣武士",
+      "术士",
+      "魔契师",
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "防护系"
+  }
+]

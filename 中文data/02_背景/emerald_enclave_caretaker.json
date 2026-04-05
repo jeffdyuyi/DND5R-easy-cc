@@ -1,0 +1,138 @@
+[
+  {
+    "name": "翠绿闲庭庇护者",
+    "ENG_name": "Emerald Enclave Caretaker",
+    "source": "FRHoF",
+    "edition": "one",
+    "page": 29,
+    "ability": [
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "con",
+              "int",
+              "wis"
+            ],
+            "weights": [
+              2,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "con",
+              "int",
+              "wis"
+            ],
+            "weights": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      }
+    ],
+    "feats": [
+      {
+        "翠绿闲庭新羽|frhof": true
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "nature": true,
+        "survival": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "herbalism kit": true
+      }
+    ],
+    "startingEquipment": [
+      {
+        "A": [
+          "短弓|xphb",
+          "箭矢 (20)|xphb",
+          "草药工具|xphb",
+          "铺盖|xphb",
+          "毯子|xphb",
+          "小包|xphb",
+          "帐篷|xphb",
+          "旅行服装|xphb",
+          {
+            "value": 1300
+          }
+        ],
+        "B": [
+          {
+            "value": 5000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability Scores:",
+            "name": "属性值：",
+            "type": "item",
+            "entry": "体质，智力，感知"
+          },
+          {
+            "ENG_name": "Feat:",
+            "name": "专长：",
+            "type": "item",
+            "entry": "{@feat 翠绿闲庭新羽|FRHoF}"
+          },
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 自然|XPHB}与{@skill 求生|XPHB}"
+          },
+          {
+            "ENG_name": "Tool Proficiencies:",
+            "name": "工具熟练",
+            "type": "item",
+            "entry": "{@item 草药工具|XPHB}"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "选择A或B：（A）{@item 短弓|XPHB}，{@item 箭|XPHB|20支箭}，{@item 草药工具|XPHB}，{@item 铺盖|XPHB}，{@item 毯子|XPHB}，{@item 小包|XPHB}，{@item 帐篷|XPHB}，{@item 旅行服装|XPHB}，13GP；或（B）50GP"
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "作为一位翠绿闲庭庇护者，你悉心地照顾着那些对世间充满了关爱的人。你或是通过陪同翠绿闲庭成员，或是自行摸索，学会了生活在这片大地上所需的关键技巧：如何追捕猎物，到哪里去搜寻有用的药草，甚至如何预测天气。你运用这些才赋维持文明与荒野的平衡，以及消灭世上的非自然生物。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "backgrounds/FRHoF/Emerald Enclave Caretaker.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 1700,
+          "height": 628
+        }
+      ]
+    },
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "translator": "不全书"
+  }
+]

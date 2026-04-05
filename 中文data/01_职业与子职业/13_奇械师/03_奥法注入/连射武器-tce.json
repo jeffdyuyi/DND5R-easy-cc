@@ -1,0 +1,33 @@
+{
+  "ENG_name": "Repeating Shot",
+  "name": "连射武器",
+  "source": "TCE",
+  "page": 22,
+  "otherSources": [
+    {
+      "source": "ERLW",
+      "page": 62
+    }
+  ],
+  "reprintedAs": [
+    {
+      "uid": "连射武器|EFA",
+      "tag": "item"
+    }
+  ],
+  "featureType": [
+    "AI"
+  ],
+  "prerequisite": [
+    {
+      "item": [
+        "一把具有弹药特性的简易武器或军用武器（需要同调）"
+      ]
+    }
+  ],
+  "entries": [
+    "在用此魔法武器发动的远程攻击检定和其伤害掷骰上获得+1加值，并且无视其装填特性（若有）。",
+    "如果此武器缺乏弹药，则在你持用它发起远程攻击时，它会自动创造一枚独属于它的魔法弹药。此武器创造的弹药在击中目标或失手后都会立即消失。"
+  ],
+  "translator": "不全书"
+}

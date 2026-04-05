@@ -1,0 +1,36 @@
+[
+  {
+    "ENG_name": "Bracelet of Rock Magic",
+    "name": "石化手镯",
+    "source": "TftYP",
+    "page": 228,
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "curse": true,
+    "weight": 1,
+    "entries": [
+      "当你佩戴这只金手镯时，它赋予你对{@condition 石化}的免疫，并允许你以一个动作施展{@spell 石化术}(豁免 {@dc 15})。一旦该法术被施展三次，手镯就不能再施展它。此后，你可以以一个动作施展{@spell 塑石术}。在你这样做了十三次后，手镯失去其魔力，从黄金变为铅。",
+      {
+        "ENG_name": "Curse",
+        "name": "诅咒",
+        "type": "entries",
+        "entries": [
+          "手镯对大地的亲和力表现为一种不寻常的诅咒。与大地和石头密切相关的血肉生物，如石巨人和矮人，在对手镯施放的{@spell 石化术}的豁免检定上具有优势。如果这样的生物豁免成功，手镯会打破你对它的共鸣，并对你施放该法术。你的豁免检定处于劣势，并且如果豁免失败，你会立即被{@condition 石化}。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "limited": {
+        "3": [
+          "石化术"
+        ],
+        "13": [
+          "塑石术"
+        ]
+      }
+    },
+    "valueReference": 40000,
+    "type": "W"
+  }
+]

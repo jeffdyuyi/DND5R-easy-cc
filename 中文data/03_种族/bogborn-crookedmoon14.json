@@ -1,0 +1,100 @@
+{
+  "race": [
+    {
+      "ENG_name": "Bogborn",
+      "name": "沼泽种",
+      "source": "CrookedMoon14",
+      "page": 55,
+      "reprintedAs": [
+        "沼泽种|crookedmoon24"
+      ],
+      "lineage": "VRGR",
+      "creatureTypes": [
+        "巨人语"
+      ],
+      "size": [
+        "M"
+      ],
+      "speed": 30,
+      "darkvision": 60,
+      "traitTags": [
+        "强力构筑",
+        "技能熟练"
+      ],
+      "entries": [
+        {
+          "ENG_name": "Creature Type",
+          "name": "生物类型",
+          "type": "entries",
+          "entries": [
+            "你是一个巨人。"
+          ]
+        },
+        {
+          "ENG_name": "Bog Bulk",
+          "name": "沼泽庞躯",
+          "type": "entries",
+          "entries": [
+            "你在任何为避免或结束{@condition 受擒}状态的属性检定或豁免检定中具有优势。在确定你的载重时，你还算作大一级体型。"
+          ]
+        },
+        {
+          "ENG_name": "Darkvision",
+          "name": "黑暗视觉",
+          "type": "entries",
+          "entries": [
+            "你拥有{@sense 黑暗视觉}，其射程为60尺。"
+          ]
+        },
+        {
+          "ENG_name": "Guiding Bond",
+          "name": "引导联结",
+          "type": "entries",
+          "entries": [
+            "作为附赠动作，你可以魔法般地在你能看见的60尺内的一个生物身上放置一个标记。该标记持续1分钟，呈现为只有你能看见的转瞬即逝的植物、苔藓、真菌或沼泽动物形态。在持续时间内，你可以对标记生物进行的属性检定和攻击检定添加{@dice 1d4}。",
+            "你可以使用该附赠动作的次数等同于你的熟练加值，你在完成一次长休后恢复所有已消耗的使用次数。"
+          ]
+        },
+        {
+          "ENG_name": "Keen Senses",
+          "name": "敏锐感官",
+          "type": "entries",
+          "entries": [
+            "你拥有{@skill 察觉}或{@skill 求生}技能的熟练项。"
+          ]
+        },
+        {
+          "ENG_name": "Regeneration",
+          "name": "再生",
+          "type": "entries",
+          "entries": [
+            "作为附赠动作，你可以消耗你的一颗生命骰，掷骰，并重获等于掷骰数值加上你的体质调整值的生命值（至少1点生命值）。",
+            "如果你受到强酸或火焰伤害，则该特质失效，直至你的下个回合结束。"
+          ]
+        }
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Races/Bogborn.webp",
+      "subraces": [],
+      "fluff": {
+        "entries": [
+          "沼泽种是一种类似巨魔的种族，原生于{@book 祖尔罗格|歪曲之月|1|祖尔罗格}，通常从该沼泽行省静谧黑暗的水泽中现身而出。自重生之刻起，他们便与荒野——通常也是充满危险的——沼泽中的动植物建立起共生关系。他们的生存能力也因巨魔身上常见的天生再生能力而进一步增强。",
+          "他们身形高大，精力充沛，足以面对任何自然考验，也经常利用其运动能力来进行狩猎和求生。他们拥有显眼的鼻子和獠牙，坚韧的皮肤多呈绿色或蓝色调。沼泽种的通常寿命为100年，随后便前往精魂世界。"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Races/Bogborn.webp"
+            },
+            "width": 801,
+            "height": 1200,
+            "credit": "Ona Kristensen"
+          }
+        ]
+      }
+    }
+  ]
+}

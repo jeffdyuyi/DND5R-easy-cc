@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Heroism",
+    "name": "英雄气概",
+    "source": "ObojimaTallGrass",
+    "page": 222,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Com"
+    ],
+    "entries": [
+      "当你饮用这瓶发光的红色灵药时，你在接下来的24小时内进行的下一次攻击检定具有优势。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 17|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Combat/heroism.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1426,
+          "height": 1426
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

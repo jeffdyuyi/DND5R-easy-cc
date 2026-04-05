@@ -1,0 +1,33 @@
+[
+  {
+    "ENG_name": "Chain Devil Gloves",
+    "name": "链魔手套",
+    "source": "GriffonsSaddlebag2",
+    "page": 58,
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这双皮手套是用被杀死的链魔的手制成的。当你戴着这些手套期间，一条以太锁链会自动附着在任何你投掷出的具有投掷词条的武器上。锁链的长度为60尺，如果武器被某个生物持握，或者你与武器之间的距离超过60尺，锁链就会断开与武器的连接。你同一时间最多可以拥有4条这样的锁链。",
+      "你可以用一个动作使这些锁链突然回缩，并拉回所有附着的武器。任何处于一件或多件武器回收路径上的生物必须进行一次DC 15的敏捷豁免检定。豁免失败的生物将受到等同于该投掷武器伤害骰的力场伤害。实心物体或墙壁会阻挡回缩锁链和武器的路径。",
+      "回收的武器会在抵达你身边时无害地落在你的脚边或者你的一只空手中。"
+    ],
+    "lootTables": [
+      "魔法物品表 G1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Chain-Devil-Gloves.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

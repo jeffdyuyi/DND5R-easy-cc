@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Spirit Tea",
+    "name": "精魄茶",
+    "source": "ObojimaTallGrass",
+    "page": 214,
+    "type": "Ingred",
+    "rarity": "uncommon",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 11|large}|SneakerProMedium}",
+            "{@font {@style 11|large}|SneakerProMedium}",
+            "{@font {@style 17|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "胧忆岛上有很多优质茶可以品尝，但只有少数是传说级别的。其中一种茶是由茶艺大师奇苏艾调配的。据说奇苏艾会离开自己的身体，在灵界酿造这种茶，然后通过强大的魔法，将这种精致的精魄茶带回物质位面。精魄茶只能在奇苏茶馆找到。"
+    ],
+    "lootTables": [
+      "热水大地非普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/spirit-tea.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 3470,
+          "height": 3470
+        }
+      ]
+    }
+  }
+]

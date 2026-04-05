@@ -1,0 +1,239 @@
+{
+  "subclass": [
+    {
+      "name": "精神师",
+      "shortName": "精神师",
+      "source": "GuideDrakkenheim",
+      "page": 140,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/GuideDrakkenheim/Class/Icons/Alienist.webp",
+      "subclassSpells": [
+        "魅惑类人",
+        "塔莎狂笑术",
+        "侦测思想",
+        "暗示术",
+        "催眠图纹",
+        "高等幻影",
+        "秘法眼",
+        "任意门",
+        "活化物件",
+        "篡改记忆"
+      ],
+      "subclassFeatures": [
+        "精神师|药剂师|GuideDrakkenheim|精神师|GuideDrakkenheim|1",
+        "高级心理学|药剂师|GuideDrakkenheim|精神师|GuideDrakkenheim|1",
+        "精神师法术|药剂师|GuideDrakkenheim|精神师|GuideDrakkenheim|1",
+        "精神控制力|药剂师|GuideDrakkenheim|精神师|GuideDrakkenheim|3",
+        "玄妙绳结|药剂师|GuideDrakkenheim|精神师|GuideDrakkenheim|3",
+        "念力操纵|药剂师|GuideDrakkenheim|精神师|GuideDrakkenheim|6",
+        "心灵魔力|药剂师|GuideDrakkenheim|精神师|GuideDrakkenheim|10",
+        "自我诊断|药剂师|GuideDrakkenheim|精神师|GuideDrakkenheim|14",
+        "心灵鸿沟|药剂师|GuideDrakkenheim|精神师|GuideDrakkenheim|18"
+      ]
+    }
+  ],
+  "subclassFeature": [
+    {
+      "ENG_name": "Alienist",
+      "name": "精神师",
+      "source": "GuideDrakkenheim",
+      "page": 140,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "精神师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "entries": [
+        "精神师寻求掌握心灵的奥秘。通过年复一年的研究解锁潜在灵能，读取操纵思想，扭曲现实本身。利用远古知识与心灵能量，随意改变世界。"
+      ]
+    },
+    {
+      "ENG_name": "Advanced Psychology",
+      "name": "高级心理学",
+      "source": "GuideDrakkenheim",
+      "page": 140,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "精神师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "skillProficiencies": [
+        {
+          "arcana": true
+        }
+      ],
+      "entries": [
+        "学会{@spell 魔能爆|XPHB}戏法。获得{@skill 奥秘|XPHB}技能的熟练项。若已有则改为获得自选另一种技能的熟练项。"
+      ]
+    },
+    {
+      "ENG_name": "Alienist Spells",
+      "name": "精神师法术",
+      "source": "GuideDrakkenheim",
+      "page": 140,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "精神师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "entries": [
+        "当你达到特定等级后，始终准备某些法术。这些法术对你而言视为药剂师法术，不计入准备数量上限。",
+        {
+          "type": "table",
+          "caption": "精神师法术",
+          "colLabels": [
+            "药剂师等级",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "1st",
+              "{@spell 魅惑类人|XPHB}, {@spell 塔莎狂笑术|XPHB|狂笑术}"
+            ],
+            [
+              "3rd",
+              "{@spell 侦测思想|XPHB}, {@spell 暗示术|XPHB}"
+            ],
+            [
+              "5th",
+              "{@spell 催眠图纹|XPHB}, {@spell 高等幻影|XPHB}"
+            ],
+            [
+              "7th",
+              "{@spell 秘法眼|XPHB}, {@spell 任意门|XPHB}"
+            ],
+            [
+              "9th",
+              "{@spell 活化物件|XPHB}, {@spell 篡改记忆|XPHB}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Mental Influence",
+      "name": "精神控制力",
+      "source": "GuideDrakkenheim",
+      "page": 140,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "精神师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "解锁心灵深处的灵能潜力，表现为心灵点数（Psychic Points）。起始有4点，6级增至6点，10级增至8点，14级增至10点。可消耗点数执行灵能力量（短休或长休恢复）：",
+        {
+          "type": "list",
+          "items": [
+            "{@b 大脑突破。} 施放造成伤害的药剂师法术时，消耗1点重掷骰子（必须使用新值）。",
+            "{@b 心感超越。} 受到伤害时可用{@variantrule 反应|XPHB}消耗1点，减少等同于等级的伤害量。",
+            "{@b 心灵语者。} 施放不造成伤害的药剂师法术时，消耗1点使法术不需要姿势或言语成分。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Metaphysical Tether",
+      "name": "玄妙绳结",
+      "source": "GuideDrakkenheim",
+      "page": 140,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "精神师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "以一个动作，建立一个心灵感应链接。所有在100尺内的链接生物可相互进行思想交流。最大链接数等于熟练加值。持续时间等于等级。"
+      ]
+    },
+    {
+      "ENG_name": "Force Manipulation",
+      "name": "念力操纵",
+      "source": "GuideDrakkenheim",
+      "page": 141,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "精神师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "精神力量违抗重力。可用{@variantrule 附赠动作|XPHB}消耗1点心灵点数获得等于速度的飞行速度，持续1分钟，且能悬浮。"
+      ]
+    },
+    {
+      "ENG_name": "Mental Magic",
+      "name": "心灵魔力",
+      "source": "GuideDrakkenheim",
+      "page": 141,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "精神师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "获得三种消耗心灵点数的新方式：",
+        {
+          "type": "list",
+          "items": [
+            "{@b 确定影响。} 对抗智力、感知或魅力豁免时，消耗1点迫使目标重掷并使用较低值。",
+            "{@b 心理准备。} 30尺内盟友智力、感知或魅力豁免失败时，消耗1点并添加你的智力调整值。",
+            "{@b 战斗或逃跑反应。} {@variantrule 附赠动作|XPHB}消耗1点传送至多30尺，获得智力调整值两倍的临时生命值。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Self-Diagnosis",
+      "name": "自我诊断",
+      "source": "GuideDrakkenheim",
+      "page": 141,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "精神师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "若没有点数，可用{@variantrule 附赠动作|XPHB}消耗法术位恢复 {@dice 1d4} 心灵点数。此外获得两个额外特性：",
+        {
+          "type": "list",
+          "items": [
+            "{@b 精密检查。} 施展恢复生命值的法术时消耗1点增加额外智力调整值两倍的恢复量。",
+            "{@b 小脑强化。} 施放精神师法术时可改选消耗等同法术等级的心灵点数。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Impenetrable Mind",
+      "name": "心灵鸿沟",
+      "source": "GuideDrakkenheim",
+      "page": 141,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "精神师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 18,
+      "header": 2,
+      "resist": [
+        "心灵"
+      ],
+      "conditionImmune": [
+        "魅惑",
+        "恐慌"
+      ],
+      "entries": [
+        "获得对心灵伤害的{@variantrule 抗性|XPHB}且免疫{@condition 魅惑|XPHB}或{@condition 恐慌|XPHB}状态。魔法无法使你陷入沉睡，在对抗试图读取你思想或控制你的思维和动作的法术时具有{@variantrule 优势|XPHB}。此外通过法术位恢复的心灵点数变为法术等级等量。"
+      ]
+    }
+  ]
+}

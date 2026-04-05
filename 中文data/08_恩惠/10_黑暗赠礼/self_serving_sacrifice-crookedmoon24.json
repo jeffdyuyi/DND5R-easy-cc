@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Self-Serving Sacrifice",
+    "name": "自我满足式牺牲",
+    "source": "CrookedMoon24",
+    "page": 120,
+    "type": "Dark Bargain",
+    "entries": [
+      "你能将他人从死亡边缘救回，但你对\"拯救\"也太过执着。救人于苦难的成就感令你意志坚定，即便这会耗尽那些你所拯救之人的生命活力。",
+      {
+        "ENG_name": "Critical Savior",
+        "name": "临危救星",
+        "type": "entries",
+        "entries": [
+          "当一个你120尺内的生物遭受{@variantrule 重击|XPHB}或被减少到0{@variantrule 生命值|XPHB}时，你可以使用你的{@variantrule 反应|XPHB}来魔法般地与目标交换位置。你们每个人都会传送到对方的空间。掷骰一个等于你等级一半的d6数量。你受到等于掷骰总和的力场伤害，你获得{@variantrule 英雄激励|XPHB}，并且你的{@condition 力竭|XPHB}等级，如果有的话，减少1。目标恢复等于掷骰总和的{@variantrule 生命值|XPHB}并获得1{@condition 力竭|XPHB}等级。你无法再次使用此特性直到你完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Draining Presence",
+        "name": "汲命气场",
+        "type": "entries",
+        "entries": [
+          "当你完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}时，你100尺范围内的每个生物失去一个{@variantrule 生命值骰|XPHB|生命值骰}（在完成{@variantrule 生命值骰|XPHB|生命骰}的情况下，在花费{@variantrule 短休|XPHB}之前）。"
+        ]
+      },
+      {
+        "ENG_name": "Final Sacrifice",
+        "name": "终极牺牲",
+        "type": "entries",
+        "entries": [
+          "你可以使用此契约无需法术位或法术成分施放{@spell 完全复生术|XPHB}。当你无需法术位施放该法术时，智力、感知或魅力是你的施法属性（当你选择此暗黑交易时选择该属性）。",
+          "当你以此法施放该法术时，你死亡，且无任何方法可以阻止。你的灵魂被连接以折磨你恢复生命的生物，且你无法通过任何方式从死亡中复活。当该生物进行{@variantrule 长休|XPHB}时，必须在休息时间过半时掷一次{@dice d20}。若结果为1，你的灵魂会在该生物100尺内化身为{@creature 邪灵|XMM}并试图杀死它。该邪灵会在8小时后消失，或当其死亡时消失。一旦邪灵出现，它在30天内无法再次出现。"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/CrookedMoon24/Rewards/Self-Serving%20Sacrifice.webp"
+        },
+        "width": 850,
+        "height": 298,
+        "credit": "Suzanne Helmigh"
+      }
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Bargains/Self-Serving%20Sacrifice.webp"
+  }
+]

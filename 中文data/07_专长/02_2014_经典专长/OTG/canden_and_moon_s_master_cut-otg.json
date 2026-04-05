@@ -1,0 +1,39 @@
+[
+    {
+        "ENG_name": "Canden and Moon's Master Cut",
+        "name": "寒传月闪流精要",
+        "source": "ObojimaTallGrass",
+        "page": 162,
+        "prerequisite": [
+            {
+                "other": "你必须在大师Canden和月亮的剑学派中击败一位大师"
+            }
+        ],
+        "entries": [
+            "经过胧忆岛第一剑术学派大师们的训练，你掌握了一些实用技能。你获得以下增益：",
+            {
+                "type": "list",
+                "items": [
+                    "你的步行速度增加5尺。",
+                    "在投掷先攻后立即，你可以在战斗的第一个回合前使用你的反应来拔出一件武器并移动至多一半的速度（向上取整）。如果你在这次移动结束时处于另一个生物的触及范围内，你可以使用该武器对该生物进行一次近战攻击。",
+                    "当你被一次攻击命中时，你可以使用一个反应来采取防守架势，使你能够抵挡来袭的攻击。直到你的下个回合开始前，你的AC获得+5加值，包括对触发此次反应的攻击。一旦你采取了此架势，直到你完成一次长休前，你无法再次采取此架势。"
+                ]
+            }
+        ],
+        "foundryEffects": [
+            {
+                "ENG_name": "Canden and Moon's Master Cut",
+                "name": "寒传月闪流精要",
+                "transfer": true,
+                "changes": [
+                    {
+                        "key": "system.attributes.movement.walk",
+                        "mode": 2,
+                        "value": 5,
+                        "priority": 20
+                    }
+                ]
+            }
+        ]
+    }
+]

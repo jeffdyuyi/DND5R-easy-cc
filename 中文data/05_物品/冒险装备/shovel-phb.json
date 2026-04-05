@@ -1,0 +1,24 @@
+[
+  {
+    "name": "铲子",
+    "ENG_name": "Shovel",
+    "source": "PHB",
+    "page": 150,
+    "type": "G",
+    "rarity": "none",
+    "weight": 5,
+    "value": 200,
+    "basicRules": true,
+    "referenceSources": [
+      "CoS",
+      "WDH",
+      "DSotDQ",
+      "PaBTSO"
+    ],
+    "reprintedAs": [
+      "铲子|XPHB"
+    ],
+    "srd": true,
+    "translator": "不全书"
+  }
+]

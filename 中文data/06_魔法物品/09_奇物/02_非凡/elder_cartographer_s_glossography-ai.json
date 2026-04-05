@@ -1,0 +1,15 @@
+[
+  {
+    "ENG_name": "Elder Cartographer's Glossography",
+    "name": "制图师相传之册",
+    "source": "AI",
+    "page": 20,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "第4级起，你将获得一本小册子，这是一件非普通魔法物品。制图师相传之册会让你在与地理特征或位置相关的智力或感知检定中获得优势。"
+    ],
+    "valueReference": 400,
+    "type": "W"
+  }
+]

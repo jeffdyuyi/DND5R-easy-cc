@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Irimbi Chrysalis",
+    "name": "伊林比茧",
+    "source": "ObojimaTallGrass",
+    "page": 217,
+    "type": "Ingred",
+    "rarity": "rare",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 19|large}|SneakerProMedium}",
+            "{@font {@style 20|large}|SneakerProMedium}",
+            "{@font {@style 18|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "每十年，在胧忆岛的森林深处，珍稀的伊林比毛虫会爬到最高的树枝上，制作一个翡翠绿色的茧，在其中蜕变成伊林比蝴蝶。这个茧摸起来像精致的米纸，由于树螨的存在，找到一个完整的茧几乎是不可能的，因为它们会迅速享用它们最爱的餐点。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/irimbi-chrysalis.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 1980,
+          "height": 1980
+        }
+      ]
+    }
+  }
+]

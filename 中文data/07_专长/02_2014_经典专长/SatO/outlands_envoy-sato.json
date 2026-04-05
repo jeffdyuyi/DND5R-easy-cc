@@ -1,0 +1,63 @@
+[
+  {
+    "ENG_name": "Outlands Envoy",
+    "name": "外域使节",
+    "source": "SatO",
+    "page": 10,
+    "prerequisite": [
+      {
+        "level": 4,
+        "feat": [
+          "外层位面后裔|SatO|外层位面后裔（外域）"
+        ]
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ],
+          "amount": 1
+        }
+      }
+    ],
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "daily": {
+              "1e": [
+                "迷踪步",
+                "巧言术"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "entries": [
+      "你在印记城与外域中度过了相当长的一段时间，浸泡在位面能量之中的这段时间使你获得下列增益：",
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Crossroads Emissary",
+            "name": "交路使者",
+            "type": "item",
+            "entries": [
+              "你习得法术{@spell 迷踪步}与法术{@spell 巧言术}。你可以无需法术位的施展这两个法术各一次，而你必须完成一次长休后才能重获免费施展的机会。当你使用该专长施展{@spell 巧言术}时，你不需要材料成分。你也可以用你拥有的合适的法术位来施展这些法术。这些法术的施法属性与你在外层位面后裔专长中选择的施法属性相同。"
+            ]
+          }
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

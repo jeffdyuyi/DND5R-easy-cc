@@ -1,0 +1,76 @@
+[
+  {
+    "name": "啵灵蛙",
+    "ENG_name": "Bullywug",
+    "source": "DMG",
+    "page": 282,
+    "size": [
+      "M"
+    ],
+    "speed": {
+      "walk": 20,
+      "swim": 40
+    },
+    "ability": [
+      {
+        "int": -2,
+        "cha": -2
+      }
+    ],
+    "traitTags": [
+      "水陆两栖",
+      "NPC种族"
+    ],
+    "languageProficiencies": [
+      {
+        "other": true
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Amphibious",
+        "type": "entries",
+        "name": "水陆两栖",
+        "entries": [
+          "你可以在空气和水中呼吸。"
+        ]
+      },
+      {
+        "ENG_name": "Speak with Frogs and Toads",
+        "name": "蛙类交流",
+        "type": "entries",
+        "entries": [
+          "当你说啵灵蛙语时，你可以与青蛙和蟾蜍交流简单的概念。"
+        ]
+      },
+      {
+        "ENG_name": "Swamp Camouflage",
+        "name": "沼泽伪装",
+        "type": "entries",
+        "entries": [
+          "你在沼泽地形中进行的敏捷（{@skill 隐匿}）检定具有优势。"
+        ]
+      },
+      {
+        "ENG_name": "Standing Leap",
+        "name": "立定跳远",
+        "type": "entries",
+        "entries": [
+          "你的跳远距离最远为20尺，跳高距离最远为10尺，无论是否有助跑。"
+        ]
+      },
+      {
+        "ENG_name": "Languages",
+        "name": "语言",
+        "type": "entries",
+        "entries": [
+          "你可以说、读、写啵灵蛙语。"
+        ]
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/bullywug.mp3"
+    }
+  }
+]

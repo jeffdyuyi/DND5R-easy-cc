@@ -1,0 +1,102 @@
+[
+  {
+    "ENG_name": "Staff of the Woodlands",
+    "name": "丛林法杖",
+    "source": "DMG",
+    "page": 204,
+    "srd": true,
+    "referenceSources": [
+      "CM",
+      "CoA"
+    ],
+    "reprintedAs": [
+      "丛林法杖|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": "由德鲁伊",
+    "reqAttuneTags": [
+      {
+        "class": "德鲁伊"
+      }
+    ],
+    "weight": 4,
+    "weaponCategory": "simple",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "bonusWeapon": "+2",
+    "bonusSpellAttack": "+2",
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6 + 4}",
+    "charges": 10,
+    "staff": true,
+    "entries": [
+      "该法杖可以用作一把魔法长棍，你在用它发动的攻击检定和伤害掷骰获得+2加值。持握法杖期间，你在法术攻击检定上获得+2加值。",
+      "法杖拥有10发充能用于以下属性。它每天黎明时恢复{@dice 1d6 + 4}发已消耗的充能。如果你消耗了最后一发充能，骰一次{@dice d20}。如果骰值为1，法杖将失去其所有属性并变为一把非魔法的长棍。",
+      {
+        "ENG_name": "Spells",
+        "name": "法术",
+        "type": "entries",
+        "entries": [
+          "你可以用一个动作消耗法杖的1发或更多充能来从法杖中施放以下法术之一（使用你自身的法术豁免DC）：{@spell 化兽为友}（1充能）、{@spell 启蒙术}（5充能）、{@spell 树肤术}（2充能）、{@spell 动植物定位术}（2充能）、{@spell 动物交谈}（1充能）、{@spell 植物交谈}（3充能）或{@spell 棘墙术}（6充能）。",
+          "你也可以用一个动作从法杖施展法术 {@spell 行动无踪} 而无需消耗充能。"
+        ]
+      },
+      {
+        "ENG_name": "Tree Form",
+        "name": "树木型态",
+        "type": "entries",
+        "entries": [
+          "你可以用一个动作将法杖的一端插入肥沃的土地并消耗1发充能，将法杖转变为一棵健康的树。这棵树高60尺，树干直径5尺，树冠在顶部展开形成20尺半径。这棵树看起来普通，但如果成为{@spell 侦测魔法}的目标则会散发出微弱的变化系魔法灵光。在接触树的同时使用另一个动作说出其命令字，你可以将法杖恢复为正常形态。任何在树中的生物在法杖恢复原形时会坠落。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "will": [
+        "行动无踪"
+      ],
+      "charges": {
+        "1": [
+          "化兽为友",
+          "动物交谈"
+        ],
+        "2": [
+          "树肤术",
+          "动植物定位术"
+        ],
+        "3": [
+          "植物交谈"
+        ],
+        "5": [
+          "启蒙术"
+        ],
+        "6": [
+          "棘墙术"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表G"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Staff of the Woodlands.webp"
+          },
+          "width": 243,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "ST"
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Inspector's Silverware",
+    "name": "验毒银器",
+    "source": "GriffonsSaddlebag2",
+    "page": 110,
+    "tier": "次要",
+    "rarity": "common",
+    "wondrous": true,
+    "charges": 3,
+    "entries": [
+      "这套经过抛光的魔法银器通常包含三件餐具：一把餐刀、一把勺子和一把叉子。每件餐具都具有1充能。当有充能的餐具接触到有毒（无论是天然的还是魔法的）的食物或饮品时，它会失去其充能并立刻开始褪色和被腐蚀。褪色的餐具会在持用着它的生物成为{@spell 次等复原术|PHB}法术或类似魔法的目标时重获其已消耗的充能，同时恢复原状，光洁如新。若某生物在成为上述法术的目标时持有多件餐具，则只有其中一件会恢复充能。"
+    ],
+    "lootTables": [
+      "魔法物品表 A2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Inspectors-Silverware.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

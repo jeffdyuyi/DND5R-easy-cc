@@ -1,0 +1,238 @@
+{
+  "ENG_name": "War Domain",
+  "name": "战争领域",
+  "shortName": "战争",
+  "source": "PHB",
+  "className": "牧师",
+  "classSource": "PHB",
+  "page": 63,
+  "srd": true,
+  "basicRules": true,
+  "reprintedAs": [
+    "战争|牧师|XPHB|XPHB"
+  ],
+  "edition": "classic",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "1": [
+          "神圣恩惠|PHB",
+          "虔诚护盾|PHB"
+        ],
+        "3": [
+          "魔化武器|PHB",
+          "灵体武器|PHB"
+        ],
+        "5": [
+          "十字军披风|PHB",
+          "灵体卫士|PHB"
+        ],
+        "7": [
+          "行动自如|PHB",
+          "石肤术|PHB"
+        ],
+        "9": [
+          "焰击术|PHB",
+          "定身怪物|PHB"
+        ]
+      }
+    }
+  ],
+  "subclassFeatures": [
+    "战争领域|牧师||战争||1",
+    "引导神力：导引打击|牧师||战争||2",
+    "引导神力：战神祝福|牧师||战争||6",
+    "神圣打击|牧师||战争||8",
+    "受祝击|牧师||战争||8|TCE",
+    "战争化身|牧师||战争||17"
+  ],
+  "features": [
+    {
+      "ENG_name": "War Domain",
+      "name": "战争领域",
+      "source": "PHB",
+      "page": 63,
+      "srd": true,
+      "basicRules": true,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "战争",
+      "subclassSource": "PHB",
+      "level": 1,
+      "entries": [
+        "战争领域的神明们视战争为获得荣耀和展现力量的途径，并指引其信徒通过战斗来达成目的。这些神明包括了战争之神、征服之神和护卫之神。作为该领域的一名牧师，你是神圣武勇的化身，能够以引导神力注入打击，或是在战斗中以额外的攻击降服敌人。这些神明包括了所有致力于战争、战斗和对抗的力量。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "领域法术|牧师||战争||1"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "附赠熟练|牧师||战争||1"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "战争祭司|牧师||战争||1"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Domain Spells",
+      "name": "领域法术",
+      "source": "PHB",
+      "page": 63,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "战争",
+      "subclassSource": "PHB",
+      "level": 1,
+      "entries": [
+        "你在到达战争领域法术表中特定的牧师等级时，你就始终准备了表中对应的法术。关于领域法术如何工作，请参阅神圣领域职业特性。",
+        {
+          "type": "table",
+          "caption": "战争领域法术",
+          "colLabels": [
+            "牧师等级",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "1st",
+              "{@spell 神圣恩惠|PHB}, {@spell 虔诚护盾|PHB}"
+            ],
+            [
+              "3rd",
+              "{@spell 魔化武器|PHB}, {@spell 灵体武器|PHB}"
+            ],
+            [
+              "5th",
+              "{@spell 十字军披风|PHB}, {@spell 灵体卫士|PHB}"
+            ],
+            [
+              "7th",
+              "{@spell 行动自如|PHB}, {@spell 石肤术|PHB}"
+            ],
+            [
+              "9th",
+              "{@spell 焰击术|PHB}, {@spell 定身怪物|PHB}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Bonus Proficiencies",
+      "name": "附赠熟练",
+      "source": "PHB",
+      "page": 63,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "战争",
+      "subclassSource": "PHB",
+      "level": 1,
+      "header": 1,
+      "entries": [
+        "当你1级选择此领域时，你获得军用武器和重甲的熟练项。"
+      ]
+    },
+    {
+      "ENG_name": "War Priest",
+      "name": "战争祭司",
+      "source": "PHB",
+      "page": 63,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "战争",
+      "subclassSource": "PHB",
+      "level": 1,
+      "header": 1,
+      "entries": [
+        "第1级起，你的神在你战斗时向你传递灵感。当你执行攻击动作时，你可以以一个附赠动作发动一次武器攻击。你可以使用该特性的次数等于你的感知调整值（最少 1 次）。你在完成一次长休后重获所有已消耗的使用次数。"
+      ]
+    },
+    {
+      "ENG_name": "Channel Divinity: Guided Strike",
+      "name": "引导神力：导引打击",
+      "source": "PHB",
+      "page": 63,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "战争",
+      "subclassSource": "PHB",
+      "level": 2,
+      "header": 2,
+      "consumes": {
+        "ENG_name": "Channel Divinity",
+        "name": "引导神力"
+      },
+      "entries": [
+        "第2级起，你可以使用你的引导神力来以超自然的精准度进行打击。当你进行一次攻击检定时，你可以使用你的引导神力让该次检定获得 +10 加值。你在看到掷骰结果后，但在DM宣布攻击命中与否之前做出此选择。"
+      ]
+    },
+    {
+      "ENG_name": "Channel Divinity: War God's Blessing",
+      "name": "引导神力：战神祝福",
+      "source": "PHB",
+      "page": 63,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "战争",
+      "subclassSource": "PHB",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "第6级起，当位于你30尺内的一名生物进行一次攻击检定时，你可以使用你的反应并消耗引导神力，让该生物的检定获得 +10 加值。你在看到掷骰结果后，但在DM宣布攻击命中与否之前做出此选择。"
+      ]
+    },
+    {
+      "ENG_name": "Divine Strike",
+      "name": "神圣打击",
+      "source": "PHB",
+      "page": 63,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "战争",
+      "subclassSource": "PHB",
+      "level": 8,
+      "header": 2,
+      "entries": [
+        "第8级起，你获得将神圣能量灌注进武器攻击的能力。你每回合一次在武器攻击命中生物时，可以让该攻击额外对目标造成 {@damage 1d8} 点武器相同类型的额外伤害。当你到达14级时，该额外伤害增加到 {@damage 2d8} 点。"
+      ]
+    },
+    {
+      "ENG_name": "Blessed Strikes",
+      "name": "受祝击",
+      "source": "TCE",
+      "page": 30,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "战争",
+      "subclassSource": "PHB",
+      "level": 8,
+      "isClassFeatureVariant": true,
+      "header": 2,
+      "entries": [
+        "{@i 8级牧师{@variantrule 可选职业特性|TCE|可选特性}，取代神圣打击特性}",
+        "在战斗中，你受到神力的祝福。当你通过戏法或武器攻击来伤害一个生物时，你能够对该生物造成额外{@damage 1d8}光耀伤害。当你造成一次此伤害后，你直到自己的下一个回合开始前无法再次使用此特性。"
+      ]
+    },
+    {
+      "ENG_name": "Avatar of Battle",
+      "name": "战争化身",
+      "source": "PHB",
+      "page": 63,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "战争",
+      "subclassSource": "PHB",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "第17级起，你获得对非魔法攻击造成的钝击、穿刺和挥砍伤害的抗性。"
+      ]
+    }
+  ]
+}

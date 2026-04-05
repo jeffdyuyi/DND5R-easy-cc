@@ -1,0 +1,36 @@
+[
+  {
+    "ENG_name": "Greatclub",
+    "name": "致命巨棒",
+    "source": "EGW",
+    "page": 270,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-BD"
+    ],
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "rare",
+    "weight": 10,
+    "value": 20,
+    "weaponCategory": "simple",
+    "property": [
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "推离|XPHB"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "B",
+    "club": true,
+    "weapon": true,
+    "hasFluffImages": true,
+    "namePrefix": "致命",
+    "entries": [
+      "当你使用这把魔法武器攻击并对生物造成伤害时，目标在你的下个回合开始前无法恢复生命值。"
+    ],
+    "_isVariant": true,
+    "valueReference": 4000
+  }
+]

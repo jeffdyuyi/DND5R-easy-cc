@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Fizzing Green",
+    "name": "嘶嘶作响的绿",
+    "source": "ObojimaTallGrass",
+    "page": 211,
+    "type": "Ingred",
+    "rarity": "uncommon",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 12|large}|SneakerProMedium}",
+            "{@font {@style 14|large}|SneakerProMedium}",
+            "{@font {@style 12|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "在胧忆岛的森林深处，有一种非常特殊的植物叫做螺旋蕨，它是嘶嘶作响的绿的来源。只有少数德鲁伊和自然学家知道让螺旋蕨释放嘶嘶作响的绿的秘密，他们不愿透露，但会乐意去收获这种奇特的冒泡材质用于贸易。"
+    ],
+    "lootTables": [
+      "舒里塔希的非普通原料赠礼|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/fizzing-green.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 2302,
+          "height": 2302
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Catspeed",
+    "name": "猫速度",
+    "source": "ObojimaTallGrass",
+    "page": 225,
+    "type": "P",
+    "rarity": "uncommon",
+    "property": [
+      "Com"
+    ],
+    "entries": [
+      "当你饮用这瓶药水时，你会被一种暖和的无精打采感官所笼罩，这种感觉如同毯子般覆盖在你体内翻腾的强烈能量爆发上。在接下来的24小时内，当你采取{@action 攻击}动作时，你可以额外进行二次攻击作为该动作的一部分。一旦你这样做，此药水的效应便会结束。当药水生效时，你将获得像猫一样发出呼噜声的属性。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 33|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Combat/catspeed.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1889,
+          "height": 1889
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

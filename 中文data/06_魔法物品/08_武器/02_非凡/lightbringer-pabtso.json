@@ -1,0 +1,21 @@
+[
+  {
+    "ENG_name": "Lightbringer",
+    "name": "光明使者",
+    "source": "PaBTSO",
+    "page": 72,
+    "baseItem": "硬头锤|PHB",
+    "type": "M",
+    "rarity": "uncommon",
+    "weight": 4,
+    "weaponCategory": "simple",
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "bonusWeapon": "+1",
+    "entries": [
+      "你使用这把魔法武器进行攻击和伤害掷骰时具有+1加值。",
+      "这件被称为光明使者的武器是为黎明之神Lathander的牧师制作的。钉头锤的头部呈旭日形状，由实心黄铜制成。当其使用者命令时，钉头锤会像火把一样发光。在发光时，钉头锤对不死生物生物额外造成{@damage 1d6}光耀伤害。"
+    ],
+    "valueReference": 400
+  }
+]

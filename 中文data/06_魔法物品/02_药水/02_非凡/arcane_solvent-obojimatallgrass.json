@@ -1,0 +1,46 @@
+[
+  {
+    "ENG_name": "Arcane Solvent",
+    "name": "奥术溶剂",
+    "source": "ObojimaTallGrass",
+    "page": 235,
+    "type": "P",
+    "rarity": "uncommon",
+    "property": [
+      "Util"
+    ],
+    "entries": [
+      "当这瓶药水被施加到一个魔法物品上时，任何与之调谐的生物将不再调谐。如果该物品正被调谐生物穿戴或携带，该生物可以通过一次成功的DC 13感知豁免检定来抵抗药水的效应。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 40|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Utility/arcane-solvent.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1852,
+          "height": 1852
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1,
+        "autoDestroy": false
+      }
+    }
+  }
+]

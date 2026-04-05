@@ -1,0 +1,52 @@
+[
+  {
+    "ENG_name": "Sharpshooter",
+    "name": "神射手",
+    "source": "XPHB",
+    "page": 207,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4,
+        "ability": [
+          {
+            "dex": 13
+          }
+        ]
+      }
+    ],
+    "ability": [
+      {
+        "dex": 1
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Bypass Cover",
+        "name": "绕过掩体",
+        "type": "entries",
+        "entries": [
+          "你使用武器发动的远程攻击无视{@variantrule 掩护|XPHB|半身掩护}和{@variantrule 掩护|XPHB|四分之三掩护}。"
+        ]
+      },
+      {
+        "ENG_name": "Firing in Melee",
+        "name": "抵近射击",
+        "type": "entries",
+        "entries": [
+          "位于一个敌人 5 尺范围内的情况下，你使用远程武器发动的攻击检定不会因此具有{@variantrule 劣势|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Long Shots",
+        "name": "百步穿杨",
+        "type": "entries",
+        "entries": [
+          "使用远程武器攻击超出常规射程的目标时，你的攻击检定不会因此具有{@variantrule 劣势|XPHB}。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

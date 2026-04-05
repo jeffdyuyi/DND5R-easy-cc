@@ -1,0 +1,87 @@
+[
+  {
+    "ENG_name": "Hook of the Tall Man (Legendary)",
+    "name": "畸爪高影的钩镰（传说）",
+    "source": "CrookedMoon24",
+    "page": 601,
+    "baseItem": "战镐|XPHB",
+    "type": "M|XPHB",
+    "rarity": "legendary",
+    "reqAttune": true,
+    "weight": 2,
+    "weaponCategory": "军用",
+    "property": [
+      "V|XPHB",
+      "TCM'24:FH"
+    ],
+    "mastery": [
+      "削弱|XPHB",
+      "失衡|XPHB"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "dmg2": "1d10",
+    "bonusWeapon": "+3",
+    "entries": [
+      "这把钩镰由一根巨型爪抓制成，连接着一根脱色的大型指骨，并以白蜡木为柄。爪抓尖端散发着诡异的光芒。该手指与爪抓取自畸爪高影的手。",
+      "你使用此魔法武器进行的攻击检定和伤害掷骰具有+3加值，加值大小取决于该钩镰的稀有度。持握这把钩镰期间，你还可以使用如下词条。",
+      {
+        "ENG_name": "Snare (Rare+)",
+        "name": "圈套术（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "当你使用此钩爪命中一个生物时，除了你正使用的另一个精通词条外，你还可以激活{@itemMastery 失衡|XPHB}精通词条。"
+        ]
+      },
+      {
+        "ENG_name": "Fey Haunt's Stride (Rare+)",
+        "name": "妖祟步伐（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "你可以从该钩镰中施展{@spell 迷踪步|XPHB}，并且当你这么做时，你在你的下一回合结束前进行的下一次敏捷（{@skill 隐匿|XPHB}）检定具有{@variantrule 优势|XPHB}。该属性可以使用两次，并在你掷{@variantrule 先攻|XPHB}时恢复全部已消耗的使用次数。"
+        ]
+      },
+      {
+        "ENG_name": "Strike from Shadows (Very Rare+)",
+        "name": "影袭（极珍稀+）",
+        "type": "entries",
+        "entries": [
+          "当你以{@condition 隐形|XPHB}状态开始你的回合时，则你在你的回合内进行的第一次攻击具有{@variantrule 优势|XPHB}，即使该状态在你发动攻击前就已经终止。如果该攻击命中，则其额外造成{@damage 2d6}穿刺伤害。"
+        ]
+      },
+      {
+        "ENG_name": "Hunter's Hook (Legendary)",
+        "name": "猎钩（传说）",
+        "type": "entries",
+        "entries": [
+          "当你使用此钩镰进行的{@action 借机攻击|XPHB}命中时，目标会额外受到{@damage 2d6}心灵伤害，并且其{@variantrule 速度|XPHB}变为0，直至该回合结束。"
+        ]
+      },
+      {
+        "ENG_name": "Terrifying Stride (Legendary)",
+        "name": "惊怖现身（传说）",
+        "type": "entries",
+        "entries": [
+          "在你使用妖祟步伐属性后，你可以立即选择你20尺内的一个生物。其必须进行一次DC19的感知豁免检定，否则陷入{@condition 恐慌|XPHB}状态，直至你的下一回合结束。以这种方式被{@condition 恐慌|XPHB}期间，该生物无法执行{@action 撤离|XPHB}动作。"
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "迷踪步|XPHB"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Hook%20of%20the%20Tall%20Man.webp"
+          },
+          "width": 576,
+          "height": 1200,
+          "credit": "Rowan Holloway"
+        }
+      ]
+    }
+  }
+]

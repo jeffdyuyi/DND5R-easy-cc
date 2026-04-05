@@ -1,0 +1,22 @@
+[
+  {
+    "ENG_name": "Bellow Flute",
+    "name": "风箱长笛",
+    "source": "ObojimaTallGrass",
+    "page": 159,
+    "type": "M",
+    "rarity": "none",
+    "weight": 1,
+    "value": 100,
+    "weaponCategory": "军用",
+    "property": [
+      "F"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "weapon": true,
+    "entries": [
+      "传统的胧忆岛乐器获得了第二次生命，成为一种迅捷的短棒状武器，常被旅行演艺者们使用。它由一种在浅滩各处发现的特殊珊瑚制成，这种珊瑚自然形成时带有数十个贯穿整个乐器武器身体的微型孔洞。当挥舞时会发出美丽的和声。"
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "ENG_name": "Whip",
+    "name": "镀银鞭子",
+    "source": "PHB",
+    "page": 148,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "unknown",
+    "weight": 3,
+    "value": 200,
+    "weaponCategory": "martial",
+    "property": [
+      "F|XPHB",
+      "R|XPHB"
+    ],
+    "mastery": [
+      "缓速|XPHB"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "S",
+    "weapon": true,
+    "hasFluffImages": true,
+    "namePrefix": "镀银",
+    "basicRules": true,
+    "reprintedAs": [
+      "镀银武器|XDMG"
+    ],
+    "tier": "主要",
+    "valueExpression": "[[baseItem.value]] + 10000",
+    "_isVariant": true
+  }
+]

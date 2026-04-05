@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Dandelion Spear",
+    "name": "蒲公英矛",
+    "source": "ObojimaTallGrass",
+    "page": 159,
+    "type": "M",
+    "rarity": "none",
+    "weight": 6,
+    "value": 500,
+    "weaponCategory": "军用",
+    "property": [
+      "H",
+      "R",
+      "V"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "dmg2": "1d10",
+    "weapon": true,
+    "entries": [
+      "这把奇怪且令人生畏的武器是为在浅滩的暗礁和峭崖岗钓鱼而制作的。其长柄顶端有一个由细长尖刺组成的球形阵列，这赋予了这把矛其标题，因为它的轮廓让人联想到盛开的蒲公英。"
+    ]
+  }
+]

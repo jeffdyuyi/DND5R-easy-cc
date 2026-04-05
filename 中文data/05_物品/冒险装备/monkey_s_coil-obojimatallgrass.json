@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Monkey's Coil",
+    "name": "猴之卷",
+    "source": "ObojimaTallGrass",
+    "page": 205,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 2|large}|SneakerProMedium}",
+            "{@font {@style 0|large}|SneakerProMedium}",
+            "{@font {@style 1|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "猴之卷是一种微型花朵，会生长出螺旋状紧密缠绕的繁花滋长，只有用巨大的力量才能强行开放。在海岸高地的一个当地贤者公会中，有人声称知道用不那么暴力的方式解开卷轴的秘密。这种花生长在一种藤蔓上，将猴之卷花朵连接成格子状，农民们经常种植这种植物来代替树篱。"
+    ],
+    "lootTables": [
+      "狂风农田普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/monkeys-coil.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 4469,
+          "height": 4469
+        }
+      ]
+    }
+  }
+]

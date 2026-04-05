@@ -1,0 +1,52 @@
+[
+  {
+    "ENG_name": "Venomous Aura",
+    "name": "恶毒灵光",
+    "source": "GuideDrakkenheim",
+    "page": 189,
+    "level": 3,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "radius",
+      "distance": {
+        "type": "feet",
+        "amount": 10
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "毒蛇的鳞片或毒牙"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你散发出一股恶毒的灵光，使接近你的生物感到困惑。任何在你10尺内开始其回合的生物将处于{@condition 中毒}状态，直到它们的下一个回合开始。"
+    ],
+    "conditionInflict": [
+      "中毒"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "ENG_name": "Cane of Phillip Druskenvald (Legendary)",
+    "name": "菲利普·德鲁斯肯瓦尔德的手杖（传说）",
+    "source": "CrookedMoon24",
+    "page": 597,
+    "type": "RD|XDMG",
+    "rarity": "legendary",
+    "reqAttune": true,
+    "property": [
+      "TCM'24:FH"
+    ],
+    "bonusSpellAttack": "+3",
+    "bonusSpellSaveDc": "+3",
+    "focus": true,
+    "entries": [
+      "这根华丽的手杖由打磨光亮的黑色木制成，顶端有着一枚银制山羊头骨装饰。哪怕只扫一眼，除了真正的谦卑者之外，所有他人心中的贪婪与嫉妒都会被激起。",
+      "持握这根手杖期间，你可以将其用作你法术的{@variantrule 法器|XPHB}；你的法术攻击检定和法术豁免DC会获得取决于该手杖稀有度的+3加值，并且你还可以使用如下词条。",
+      {
+        "ENG_name": "Eldritch Glutton (Rare+)",
+        "name": "吞食魔能（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "当你在一次对抗一道仅以你为目标的法术的豁免检定中成功时，你可以使用{@variantrule 反应|XPHB}吞噬该法术，并将其能量储存在手杖中。该法术对你无效。你可以使用{@action 魔法|XPHB}动作吸收所储存的能量，来重获一枚环阶比该触发法术至少低一环的已消耗法术位，或者获得等于该法术环阶×3的{@variantrule 临时生命值|XPHB}。若你在手杖已经存有法术能量时再次吸收一道新的法术，则之前的能量会消失。一旦该手杖吸收了一道法术，则直至次日黄昏之前，无法再次使用该词条。"
+        ]
+      },
+      {
+        "ENG_name": "Allure of Sin (Very Rare+)",
+        "name": "罪诱之魅（极珍稀+）",
+        "type": "entries",
+        "entries": [
+          "你可以从手杖中施放{@spell 支配类人|XPHB}（豁免DC = 16 + 手杖的加值）。一旦一个生物被该法术{@condition 魅惑|XPHB}，此属性直到下一个黄昏前无法再次使用。"
+        ]
+      },
+      {
+        "ENG_name": "Sin-Binder's Call (Legendary)",
+        "name": "罪缚者的呼唤（传说）",
+        "type": "entries",
+        "entries": [
+          "你可以使用一个{@action 魔法|XPHB}动作召唤三只地狱犬、一只梦魔或一只魅魔。它们会出现在你周边30尺范围内你可见的未占据空间中，服从你的命令，并在你的{@variantrule 先攻|XPHB}之后立即进行它们的回合。10分钟后，它们不再服从你，但如果你在此期间善待它们，则它们对你可能为{@variantrule 冷漠【态度】|XPHB|冷漠}或{@variantrule 友好【态度】|XPHB|友好}态度。该属性一经使用，则直至次日黄昏之前，无法再次使用。"
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "支配类人|XPHB"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Cane%20of%20Phillip%20Druskenvald.webp"
+          },
+          "width": 350,
+          "height": 1200,
+          "credit": "Eugenio Frosali"
+        }
+      ]
+    }
+  }
+]

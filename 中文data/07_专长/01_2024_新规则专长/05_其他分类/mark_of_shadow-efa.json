@@ -1,0 +1,141 @@
+[
+  {
+    "ENG_name": "Mark of Shadow",
+    "name": "阴影龙纹",
+    "source": "EFA",
+    "page": 42,
+    "category": "D",
+    "prerequisite": [
+      {
+        "campaign": [
+          "艾伯伦"
+        ],
+        "exclusiveFeatCategory": [
+          "D"
+        ]
+      }
+    ],
+    "additionalSpells": [
+      {
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "known": {
+          "_": [
+            "次级幻象|xphb#c"
+          ]
+        },
+        "prepared": {
+          "_": {
+            "daily": {
+              "1": [
+                "隐形术|xphb"
+              ]
+            }
+          }
+        },
+        "expanded": {
+          "s1": [
+            "易容术|xphb",
+            "无声幻影|xphb"
+          ],
+          "s2": [
+            "黑暗术|xphb",
+            "行动无踪|xphb"
+          ],
+          "s3": [
+            "鹰眼术|xphb",
+            "高等幻影|xphb"
+          ],
+          "s4": [
+            "高等隐形术|xphb",
+            "幻景|xphb"
+          ],
+          "s5": [
+            "假象术|xphb"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Cunning Intuition",
+        "name": "狡诈直觉",
+        "type": "entries",
+        "entries": [
+          "当你进行一次敏捷（{@skill 隐匿|XPHB}）或魅力（{@skill 表演|XPHB}）检定时，你可以投掷{@dice 1d4}并将骰出的数值添加到该属性检定中。"
+        ]
+      },
+      {
+        "ENG_name": "Shape Shadows",
+        "name": "阴影塑形",
+        "type": "entries",
+        "entries": [
+          "你知晓{@spell 次级幻象|XPHB}戏法。你还总是准备了{@spell 隐形术|XPHB}法术。你可以无需法术位施放它一次，并且当你完成一次{@variantrule 长休|XPHB}时恢复以此方式施放它的能力。你也可以使用你拥有的任何适当等级的法术位来施放它。智力、感知或魅力是这些法术的施法属性（当你选择此专长时选择）。"
+        ]
+      },
+      {
+        "ENG_name": "Spells of the Mark",
+        "name": "龙纹法术",
+        "type": "entries",
+        "entries": [
+          "如果你拥有施法或契约魔法职业特性，阴影龙纹法术列表中的法术将被添加到该特性的法术列表中。",
+          {
+            "type": "table",
+            "caption": "阴影龙纹法术",
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "colLabels": [
+              "法术环阶",
+              "法术"
+            ],
+            "rows": [
+              [
+                "1",
+                "{@spell 易容术|XPHB}, {@spell 无声幻影|XPHB}"
+              ],
+              [
+                "2",
+                "{@spell 黑暗术|XPHB}, {@spell 行动无踪|XPHB}"
+              ],
+              [
+                "3",
+                "{@spell 鹰眼术|XPHB}, {@spell 高等幻影|XPHB}"
+              ],
+              [
+                "4",
+                "{@spell 高等隐形术|XPHB}, {@spell 幻景|XPHB}"
+              ],
+              [
+                "5",
+                "{@spell 假象术|XPHB}"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluffImages": true,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "feats/EFA/Mark of Shadow.webp"
+          },
+          "credit": "Lee Moyer",
+          "width": 500,
+          "height": 525
+        }
+      ]
+    }
+  }
+]

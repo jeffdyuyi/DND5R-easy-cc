@@ -1,0 +1,149 @@
+[
+  {
+    "ENG_name": "Mark of Storm",
+    "name": "暴风龙纹",
+    "source": "EFA",
+    "page": 42,
+    "category": "D",
+    "prerequisite": [
+      {
+        "campaign": [
+          "艾伯伦"
+        ],
+        "exclusiveFeatCategory": [
+          "D"
+        ]
+      }
+    ],
+    "additionalSpells": [
+      {
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "known": {
+          "_": [
+            "鸣雷破|xphb#c"
+          ]
+        },
+        "prepared": {
+          "_": {
+            "daily": {
+              "1": [
+                "造风术|xphb"
+              ]
+            }
+          }
+        },
+        "expanded": {
+          "s1": [
+            "羽落术|xphb",
+            "云雾术|xphb"
+          ],
+          "s2": [
+            "浮空术|xphb",
+            "粉碎音波|xphb"
+          ],
+          "s3": [
+            "雪雨暴|xphb",
+            "风墙术|xphb"
+          ],
+          "s4": [
+            "咒唤微元素群|xphb",
+            "操控水体|xphb"
+          ],
+          "s5": [
+            "咒唤元素|xphb"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Windwright's Intuition",
+        "name": "驭风者直觉",
+        "type": "entries",
+        "entries": [
+          "当你进行一次敏捷（{@skill 特技|XPHB}）检定或使用{@item 领航工具|XPHB}进行一次属性检定时，你可以掷{@dice 1d4}并将掷出的数值加到该属性检定上。"
+        ]
+      },
+      {
+        "ENG_name": "Storm's Boon",
+        "name": "暴风恩惠",
+        "type": "entries",
+        "entries": [
+          "你对闪电伤害具有{@variantrule 抗性|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Storm Magic",
+        "name": "风暴魔法",
+        "type": "entries",
+        "entries": [
+          "你知晓{@spell 鸣雷破|XPHB}戏法。当你达到角色等级3时，你还总是准备了{@spell 造风术|XPHB}法术。你可以无需法术位施放该法术一次，并且当你完成一次{@variantrule 长休|XPHB}后恢复以此方式施放它的能力。你也可以使用你拥有的任何适当等级的法术位来施放它。智力、感知或魅力是这些法术的施法属性（在选择此专长时选择）。"
+        ]
+      },
+      {
+        "ENG_name": "Spells of the Mark",
+        "name": "龙纹法术",
+        "type": "entries",
+        "entries": [
+          "如果你拥有施法或契约魔法职业特性，暴风龙纹法术列表中的法术将被添加到该特性的法术列表中。",
+          {
+            "type": "table",
+            "caption": "暴风龙纹法术",
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "colLabels": [
+              "法术环阶",
+              "法术"
+            ],
+            "rows": [
+              [
+                "1",
+                "{@spell 羽落术|XPHB}, {@spell 云雾术|XPHB}"
+              ],
+              [
+                "2",
+                "{@spell 浮空术|XPHB}, {@spell 粉碎音波|XPHB}"
+              ],
+              [
+                "3",
+                "{@spell 雪雨暴|XPHB}, {@spell 风墙术|XPHB}"
+              ],
+              [
+                "4",
+                "{@spell 咒唤微元素群|XPHB}, {@spell 操控水体|XPHB}"
+              ],
+              [
+                "5",
+                "{@spell 咒唤元素|XPHB}"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluffImages": true,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "feats/EFA/Mark of Storm.webp"
+          },
+          "credit": "Lee Moyer",
+          "width": 500,
+          "height": 525
+        }
+      ]
+    }
+  }
+]

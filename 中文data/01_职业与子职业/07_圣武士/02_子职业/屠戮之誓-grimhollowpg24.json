@@ -1,0 +1,252 @@
+{
+  "ENG_name": "Oath of Slaughter",
+  "name": "屠戮之誓",
+  "shortName": "屠杀",
+  "source": "GrimHollowPG24",
+  "className": "圣武士",
+  "classSource": "XPHB",
+  "page": 81,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "3": [
+          "猩红鞭笞|GrimHollowPG24",
+          "致伤术|XPHB"
+        ],
+        "5": [
+          "放血术|GrimHollowPG24",
+          "粉碎音波|XPHB"
+        ],
+        "9": [
+          "恐惧术|XPHB",
+          "窒息术|GrimHollowPG24"
+        ],
+        "13": [
+          "吞食意识|GrimHollowPG24",
+          "超神斩|GrimHollowPG24"
+        ],
+        "17": [
+          "湮灭波|XPHB",
+          "诘问真心|GrimHollowPG24"
+        ]
+      }
+    }
+  ],
+  "subclassSpells": [
+    "猩红鞭笞|GrimHollowPG24",
+    "致伤术|XPHB",
+    "放血术|GrimHollowPG24",
+    "粉碎音波|XPHB",
+    "恐惧术|XPHB",
+    "窒息术|GrimHollowPG24",
+    "吞食意识|GrimHollowPG24",
+    "超神斩|GrimHollowPG24",
+    "湮灭波|XPHB",
+    "诘问真心|GrimHollowPG24"
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "Frenzied Slaughter",
+      "name": "狂乱屠戮",
+      "source": "GrimHollowPG24",
+      "page": 81,
+      "className": "圣武士",
+      "classSource": "XPHB",
+      "subclassShortName": "屠杀",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你可以利用战斗的突进来驱使你进行更暴力的行为。作为一个{@variantrule 附赠动作|XPHB}，你可以消耗一次引导神力来进入战斗狂怒。当此特性激活时，你将获得以下增益。",
+        {
+          "ENG_name": "Reflexive Attack",
+          "name": "应激攻击",
+          "type": "entries",
+          "entries": [
+            "当你使用近战武器或{@variantrule 徒手打击|XPHB}进行攻击检定时未命中，你可以消耗一个{@variantrule 反应|XPHB}用同一武器再次攻击。"
+          ]
+        },
+        {
+          "ENG_name": "Condition Resistance",
+          "name": "状态抗性",
+          "type": "entries",
+          "entries": [
+            "你在避免或结束{@condition 魅惑|XPHB}、{@condition 恐慌|XPHB}和{@condition 震慑|XPHB}状态的豁免检定上具有{@variantrule 优势|XPHB}。"
+          ]
+        },
+        {
+          "ENG_name": "Duration",
+          "name": "持续时间",
+          "type": "entries",
+          "entries": [
+            "狂乱屠戮持续到你下一个回合结束，如果你处于{@condition 失能|XPHB}状态则会提前结束。如果你的狂乱屠戮在下个回合仍然有效，你可以通过以下方式之一将其延长一轮：",
+            {
+              "type": "list",
+              "items": [
+                "对敌人进行一次攻击检定。",
+                "迫使一名敌人进行一次豁免检定。",
+                "你在回合结束时处于{@condition 浴血|XPHB}状态。"
+              ]
+            },
+            "每次延长狂乱屠戮时，它会持续到你的下一个回合结束。你可以将其维护最多1分钟。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Oath of Slaughter",
+      "name": "屠戮之誓",
+      "source": "GrimHollowPG24",
+      "page": 81,
+      "className": "圣武士",
+      "classSource": "XPHB",
+      "subclassShortName": "屠杀",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "{@i 沉溺于无拘无束的暴力}",
+        "战争的唯一真相是死亡。唯一的美德是杀戮。唯一的胜利是生存。英雄气概、荣誉和荣耀都是幻象。这是愤怒大恶魔托马克的信条，但这种哲学对所有将身心奉献给战斗刺激和嗜血快感的武者而言都真实可信。这些勇士们发现自己身处军队的最前线，用他们所能支配的最暴力手段迅速结束战斗......或是延长战争以满足自己的欲望。",
+        "选择屠戮之誓的圣武士遵循以下教义：",
+        {
+          "type": "list",
+          "items": [
+            "暴力是结束，而非手段。",
+            "击垮身体以粉碎精魄。",
+            "沉醉于鲜血之中，无论是友是敌。"
+          ]
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "狂乱屠戮|圣武士|XPHB|屠杀|GrimHollowPG24|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "誓仇屠杀法术|圣武士|XPHB|屠杀|GrimHollowPG24|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Oath of Slaughter Spells",
+      "name": "誓仇屠杀法术",
+      "source": "GrimHollowPG24",
+      "page": 81,
+      "className": "圣武士",
+      "classSource": "XPHB",
+      "subclassShortName": "屠杀",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你的誓仇魔法确保你总是预备某些法术；当你达到屠戮之誓法术表格中指定的圣武士等级时，你此后总是准备所列出的法术。",
+        {
+          "type": "table",
+          "caption": "誓仇屠杀法术",
+          "colLabels": [
+            "圣武士等级",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "3",
+              "{@spell 猩红鞭笞|GrimHollowPG24}, {@spell 致伤术|XPHB}"
+            ],
+            [
+              "5",
+              "{@spell 放血术|GrimHollowPG24}, {@spell 粉碎音波|XPHB}"
+            ],
+            [
+              "9",
+              "{@spell 恐惧术|XPHB}, {@spell 窒息术|GrimHollowPG24}"
+            ],
+            [
+              "13",
+              "{@spell 吞食意识|GrimHollowPG24}, {@spell 超神斩|GrimHollowPG24}"
+            ],
+            [
+              "17",
+              "{@spell 湮灭波|XPHB}, {@spell 诘问真心|GrimHollowPG24}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Bloodthirst Aura",
+      "name": "嗜血灵光",
+      "source": "GrimHollowPG24",
+      "page": 82,
+      "className": "圣武士",
+      "classSource": "XPHB",
+      "subclassShortName": "屠杀",
+      "subclassSource": "GrimHollowPG24",
+      "level": 7,
+      "header": 2,
+      "entries": [
+        "你对鲜血的渴望感染了你周围的人。当一个处于你守护灵光范围内且处于{@condition 浴血|XPHB}状态的盟友使用武器或{@variantrule 徒手打击|XPHB}进行攻击时，它会获得伤害加值。加值等于你的魅力调整值。",
+        "此外，当守护灵光范围内处于{@condition 浴血|XPHB}状态的生物对抗血魔法法术进行豁免检定时，你可以使用一个{@variantrule 反应|XPHB}来使该豁免检定获得{@variantrule 劣势|XPHB}。"
+      ]
+    },
+    {
+      "ENG_name": "Follow Through",
+      "name": "贯彻始终",
+      "source": "GrimHollowPG24",
+      "page": 82,
+      "className": "圣武士",
+      "classSource": "XPHB",
+      "subclassShortName": "屠杀",
+      "subclassSource": "GrimHollowPG24",
+      "level": 15,
+      "header": 2,
+      "entries": [
+        "当守护灵光内的一个生物处于{@condition 浴血|XPHB}状态时，你可以用一个{@variantrule 反应|XPHB}移动至多一半的{@variantrule 速度|XPHB}并用近战武器或{@variantrule 徒手打击|XPHB}进行一次攻击。此移动不会引发{@action 借机攻击|XPHB|借机攻击}，且你在攻击检定上具有{@variantrule 优势|XPHB}"
+      ]
+    },
+    {
+      "ENG_name": "Blood Knight",
+      "name": "鲜血骑士",
+      "source": "GrimHollowPG24",
+      "page": 82,
+      "className": "圣武士",
+      "classSource": "XPHB",
+      "subclassShortName": "屠杀",
+      "subclassSource": "GrimHollowPG24",
+      "level": 20,
+      "header": 2,
+      "entries": [
+        "你的嗜血赋予你超自然的力量和恢复力，使你能够继续播种屠杀。作为一个{@variantrule 附赠动作|XPHB}，你获得下方增益持续10分钟或直到你结束它们（无需动作）。一旦你使用此特性，直到完成一次{@variantrule 长休|XPHB}前无法再次使用。你也可以通过消耗一个5环法术位来复原它的使用次数（无需动作）。",
+        {
+          "ENG_name": "Crimson Armor",
+          "name": "猩红战甲",
+          "type": "entries",
+          "entries": [
+            "当守护灵光范围内的生物被敌人攻击进入{@condition 浴血|XPHB}状态时，你获得30点{@variantrule 临时生命值|XPHB}。"
+          ]
+        },
+        {
+          "ENG_name": "Seeing Red",
+          "name": "怒火攻心",
+          "type": "entries",
+          "entries": [
+            "当一个生物以攻击检定命中你时，你可以消耗一个{@variantrule 反应|XPHB}对该生物发动一次近战攻击，使用武器或{@variantrule 徒手打击|XPHB}。"
+          ]
+        },
+        {
+          "ENG_name": "Wanton Slaughter",
+          "name": "肆意屠戮",
+          "type": "entries",
+          "entries": [
+            "当你使用武器或{@variantrule 徒手打击|XPHB}进行近战攻击命中一个生物时，你可以选择原始目标5尺范围内且在你触及范围内的任意数量的生物。每个被选中的生物受到等同于你的魅力调整值（最低为+1）加上你的{@variantrule 熟练|XPHB|熟练加值}的力场伤害。"
+          ]
+        }
+      ]
+    }
+  ],
+  "hasFluff": true,
+  "hasFluffImages": true
+}

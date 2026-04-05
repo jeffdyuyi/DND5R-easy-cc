@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Wilting Smite",
+    "name": "凋零圣裁",
+    "source": "GrimHollowPG24",
+    "page": 206,
+    "level": 2,
+    "school": "T",
+    "subschools": [
+      "血魔法"
+    ],
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作",
+        "condition": "在你用近战武器或空手攻击命中生物后立即进行"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "作为施放该法术的一部分，你必须消耗两个{@variantrule 生命值骰|XPHB}否则法术自动失败。该生物失去所有伤害抗性直到你的下个回合开始。被打击命中的目标将受到攻击造成的额外暗蚀伤害。要确定此伤害，掷骰消耗用于施放法术的{@variantrule 生命值骰|XPHB}。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Paladin",
+          "name": "圣武士",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Wilting%20Smite.webp"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Mogis's Votary",
+    "name": "墨癸司的信徒",
+    "source": "MOT",
+    "page": 64,
+    "type": "Piety Trait",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "daily": {
+              "1e": [
+                "致盲斩"
+              ]
+            }
+          }
+        },
+        "ability": "con"
+      }
+    ],
+    "entries": [
+      "{@i 虔信值10+ 墨癸司特质}",
+      "你可以通过该特质施放{@spell 致盲斩}。一旦你以此方式施放该法术，直至完成一次长休，你无法再次使用此能力。该能力的施法属性是体质。"
+    ]
+  }
+]

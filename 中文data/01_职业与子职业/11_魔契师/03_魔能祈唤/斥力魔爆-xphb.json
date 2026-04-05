@@ -1,0 +1,46 @@
+{
+  "ENG_name": "Repelling Blast",
+  "name": "斥力魔爆",
+  "source": "XPHB",
+  "page": 157,
+  "srd52": true,
+  "featureType": [
+    "EI"
+  ],
+  "prerequisite": [
+    {
+      "spell": [
+        {
+          "choose": "level=0|class=Warlock",
+          "entry": "一道通过攻击检定造成伤害的魔契师戏法",
+          "entrySummary": "通过攻击检定造成伤害的魔契师戏法"
+        }
+      ],
+      "level": {
+        "level": 2,
+        "class": {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB",
+          "visibleStats": true
+        }
+      }
+    }
+  ],
+  "entries": [
+    "选择一项你已知的{@filter 魔契师戏法|spells|level=0|class=魔契师|spell attack=m;r;o}且需要进行攻击检定的戏法。当你用该戏法命中一个大型或更小的生物时，你可以将该生物推离你至多10尺。",
+    {
+      "type": "entries",
+      "entries": [
+        {
+          "ENG_name": "Repeatable",
+          "name": "复选",
+          "type": "entries",
+          "entries": [
+            "你可以多次选择本祈唤。每次这么做时，你都必须选择不同的满足先决的戏法。"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+[
+  {
+    "ENG_name": "Reality Break",
+    "name": "崩坏现实",
+    "source": "EGW",
+    "page": 189,
+    "level": 8,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一个水晶棱镜"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你将现实与时间线之间的壁垒粉碎，使一个生物陷入混沌与疯狂。目标必须通过一个感知豁免，否则将无法执行任何反应直到法术结束。被影响的生物必须在其回合开始时roll一个{@dice d10}，其结果决定目标身上发生了什么。参照下方表格\"崩坏现实效果\"。",
+      "在其回合结束时，受影响的生物能重复其感知豁免，若成功，则法术结束。",
+      {
+        "type": "table",
+        "caption": "崩坏现实效果",
+        "colLabels": [
+          "d10",
+          "效应"
+        ],
+        "colStyles": [
+          "col-2 text-center",
+          "col-10"
+        ],
+        "rows": [
+          [
+            "1-2",
+            "{@b 遥远国度之瞥。} 目标受到{@damage 6d12}点心灵伤害并且陷入{@condition 震慑}到本轮结束。"
+          ],
+          [
+            "3-5",
+            "{@b 崩碎裂缝。} 目标必须通过一个敏捷豁免，若失败则受到{@damage 8d12}点力场伤害，若豁免成功则受到一半伤害。"
+          ],
+          [
+            "6-8",
+            "{@b 虫洞。} 该目标与其身上所着装、携带的一切东西被传送到他30尺内你能看到的未被占据的空间。目标受到{@damage 10d12}点力场伤害并{@condition 倒地}。"
+          ],
+          [
+            "9-10",
+            "{@b 暗虚之冻。} 目标受到{@damage 10d12}点寒冷伤害并且{@condition 目盲}到本回合结束。"
+          ]
+        ]
+      }
+    ],
+    "damageInflict": [
+      "psychic",
+      "force",
+      "cold"
+    ],
+    "conditionInflict": [
+      "震慑",
+      "倒地",
+      "目盲"
+    ],
+    "savingThrow": [
+      "wisdom",
+      "dexterity"
+    ],
+    "miscTags": [
+      "RO",
+      "SGT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/EGW/Reality Break.webp"
+          },
+          "credit": "Brian Valeza",
+          "width": 1496,
+          "height": 1000
+        }
+      ]
+    },
+    "display_school": "咒法系",
+    "display_savingThrow": [
+      "感知",
+      "敏捷"
+    ],
+    "display_damageInflict": [
+      "心灵",
+      "力场",
+      "寒冷"
+    ]
+  }
+]

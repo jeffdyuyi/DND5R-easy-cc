@@ -1,0 +1,70 @@
+[
+  {
+    "ENG_name": "Greater Animate Dead",
+    "name": "高等活化死尸",
+    "source": "GrimHollowPG24",
+    "page": 193,
+    "level": 5,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 10
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一滴鲜血、一块血肉、一撮骨粉和一颗价值75+ GP的缟玛瑙岩石，对应你所活化的CR等级",
+        "cost": 7500
+      }
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "选择范围内一定数量的尸体。你可以从这些尸体中复苏最多5个{@variantrule 挑战等级|XPHB}{@filter 2或更低亡灵生物|bestiary|Challenge Rating=[&0;&2]|type=undead}。",
+      "在你的每个回合，你可以使用一个{@variantrule 附赠动作|XPHB}来精神指令任何你用这个法术创造的生物，如果该生物在你120尺范围内（如果你控制了多个生物，你可以同时命令它们中的任意或所有，对每个生物发出相同的命令）。你决定该生物在其下一个回合将采取什么动作以及它将移动到何处，或者你可以发出一个通用命令，例如守卫一个特定的密阁或走廊。如果你没有发出命令，该生物只会对敌对生物进行自卫。一旦给出命令，该生物会继续遵循它直到任务完成。该生物在你的控制下持续24小时，之后它将停止服从你给出的任何命令。",
+      "为了再控制该生物24小时，你必须在当前24小时期限结束前再次对该生物施放此法术。这种法术用法会重新确立你对最多四个你用此法术活化的生物的控制，而不是活化一个新的生物。此外，以这种方式施放此法术不需要花费金币的法术成分。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "你可以为每个高于5环的法术位环阶额外活化一个亡灵生物。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "miscTags": [
+      "UBA"
+    ],
+    "hasFluffImages": true,
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Greater%20Animate%20Dead.webp"
+  }
+]

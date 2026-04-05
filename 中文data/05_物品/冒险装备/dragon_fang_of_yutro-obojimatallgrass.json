@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Dragon Fang of Yutro",
+    "name": "龙爪牙之尤特罗",
+    "source": "ObojimaTallGrass",
+    "page": 216,
+    "type": "Ingred",
+    "rarity": "rare",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 20|large}|SneakerProMedium}",
+            "{@font {@style 18|large}|SneakerProMedium}",
+            "{@font {@style 19|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "在过去的年代，龙尤特罗从它在阿伯拉山的巢穴中折磨着胧忆岛。它威胁要吃掉岛上每一个活着的生物，除非每个家庭都派出一名成员作为祭品。伊内，一位年轻的鸣玉族金属匠，被派去代表她的家庭。但她随身带了一把锤子，因为她不打算被吃掉。一场战斗随之而来。在许多精魄的帮助下，伊内击碎了尤特罗喉咬中的牙齿，将它们散落到岛屿的遥远角落。失去了牙齿的尤特罗向伊内投降，并撤退到了山中。然而直到今天，尤特罗的牙齿仍能在胧忆岛的随机地点被发现，常常嵌入土中、树木里，甚至岩石中。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/dragon-fang-of-yutro.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 2799,
+          "height": 2799
+        }
+      ]
+    }
+  }
+]

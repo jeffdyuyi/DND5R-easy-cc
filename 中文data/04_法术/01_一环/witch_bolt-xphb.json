@@ -1,0 +1,90 @@
+[
+  {
+    "ENG_name": "Witch Bolt",
+    "name": "巫术箭",
+    "source": "XPHB",
+    "page": 343,
+    "level": 1,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一根被闪电击中的树枝"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "一支缠绕着碎裂魔力的蓝色能量长矛射向施法距离内的一个生物，并在你与目标之间生成一道持久的闪电弧。对目标进行一次远程法术攻击。若命中，则目标受到{@damage 2d12}点闪电伤害。",
+      "无论首次攻击是否命中，在你接下来的每个回合中，你都可以用{@variantrule 附赠动作|XPHB}直接对目标造成{@damage 1d12}点闪电伤害。",
+      "此外，如果目标与你之间的距离超出了法术的施法距离，或者目标相对你而言处于全身掩护{@variantrule 掩护|XPHB}状态，法术将提前终止。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "使用的法术位每比一环高一环，此法术的初始伤害就提高{@scaledamage 2d12|1-9|1d12}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "lightning"
+    ],
+    "spellAttack": [
+      "R"
+    ],
+    "miscTags": [
+      "UBA"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/XPHB/Witch Bolt.webp"
+          },
+          "credit": "Helge C. Balzer",
+          "width": 2226,
+          "height": 1440
+        }
+      ]
+    },
+    "classes": [
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "塑能系",
+    "display_damageInflict": [
+      "闪电"
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "长弓",
+    "ENG_name": "Longbow",
+    "source": "PHB",
+    "page": 149,
+    "edition": "classic",
+    "type": "R",
+    "rarity": "none",
+    "weight": 2,
+    "value": 5000,
+    "weaponCategory": "martial",
+    "property": [
+      "A",
+      "H",
+      "2H"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "range": "150/600",
+    "ammoType": "箭|PHB",
+    "basicRules": true,
+    "bow": true,
+    "reprintedAs": [
+      "长弓|XPHB"
+    ],
+    "srd": true,
+    "weapon": true
+  }
+]

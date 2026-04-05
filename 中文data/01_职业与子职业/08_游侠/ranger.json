@@ -1,0 +1,711 @@
+[
+  {
+    "name": "游侠",
+    "ENG_name": "Ranger",
+    "source": "PHB",
+    "edition": "classic",
+    "classData": {
+      "ENG_name": "Ranger",
+      "name": "游侠",
+      "source": "PHB",
+      "page": 89,
+      "srd": true,
+      "reprintedAs": [
+        "游侠|XPHB"
+      ],
+      "edition": "classic",
+      "hd": {
+        "number": 1,
+        "faces": 10
+      },
+      "proficiency": [
+        "str",
+        "dex"
+      ],
+      "spellcastingAbility": "wis",
+      "casterProgression": "1/2",
+      "startingProficiencies": {
+        "armor": [
+          "light",
+          "medium",
+          "shield"
+        ],
+        "weapons": [
+          "简易",
+          "军用"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "animal handling",
+                "athletics",
+                "insight",
+                "nature",
+                "perception",
+                "stealth",
+                "survival"
+              ],
+              "count": 3
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "default": [
+          "(a) {@item 鳞甲|PHB} 或 (b) {@item 皮甲|PHB}",
+          "(a) 二把{@item 短剑|PHB|短剑} 或 (b) 二把{@filter 简易近战武器|items|source=PHB|category=基础|type=简易武器;近战武器=sand}",
+          "(a) 一个{@item 地城套组|PHB} 或 (b) 一个{@item 探索套组|PHB}",
+          "一把{@item 长弓|PHB} 和一个{@item 箭袋|PHB}（内含 {@item 箭矢 (20)|PHB|20 支箭}）"
+        ],
+        "goldAlternative": "{@dice 5d4 × 10|5d4 × 10|起始金币}"
+      },
+      "multiclassing": {
+        "requirements": {
+          "dex": 13,
+          "wis": 13
+        },
+        "proficienciesGained": {
+          "armor": [
+            "light",
+            "medium",
+            "shield"
+          ],
+          "skills": [
+            {
+              "choose": {
+                "from": [
+                  "animal handling",
+                  "athletics",
+                  "insight",
+                  "nature",
+                  "perception",
+                  "stealth",
+                  "survival"
+                ],
+                "count": 1
+              }
+            }
+          ],
+          "weapons": [
+            "简易",
+            "军用"
+          ]
+        }
+      },
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "已知法术"
+          ],
+          "rows": [
+            [
+              0
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              7
+            ],
+            [
+              8
+            ],
+            [
+              8
+            ],
+            [
+              9
+            ],
+            [
+              9
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              11
+            ],
+            [
+              11
+            ]
+          ]
+        },
+        {
+          "title": "每环法术位",
+          "colLabels": [
+            "1 环",
+            "2 环",
+            "3 环",
+            "4 环",
+            "5 环"
+          ],
+          "rowsSpellProgression": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              2,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              2,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "宿敌|游侠|PHB|1",
+        "夙敌|游侠|TCE|1",
+        "自然探索者|游侠|PHB|1",
+        "熟练探险家|游侠|TCE|1",
+        "战斗风格|游侠|PHB|2",
+        "施法|游侠|PHB|2",
+        "法器|游侠|TCE|2",
+        {
+          "classFeature": "游侠范型|游侠|PHB|3",
+          "gainSubclassFeature": true
+        },
+        "原初意识|游侠|PHB|3",
+        "原始意识|游侠|TCE|3",
+        "属性值提升|游侠|PHB|4",
+        "替换武术|游侠|TCE|4",
+        "额外攻击|游侠|PHB|5",
+        "增加宿敌及偏好环境|游侠|PHB|6",
+        {
+          "classFeature": "范型特性|游侠|PHB|7",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|游侠|PHB|8",
+        "大地行者|游侠|PHB|8",
+        "遁术|游侠|PHB|10",
+        "自然面纱|游侠|TCE|10",
+        "属性值提升|游侠|PHB|12",
+        "无踪步|游侠|PHB|14",
+        "增加宿敌|游侠|PHB|14",
+        {
+          "classFeature": "范型特性|游侠|PHB|15",
+          "gainSubclassFeature": true
+        },
+        "野性感官|游侠|PHB|18",
+        "屠灭众敌|游侠|PHB|20"
+      ],
+      "subclassTitle": "游侠范型"
+    },
+    "subclasses": [
+      {
+        "name": "驯兽师",
+        "source": "PHB",
+        "shortName": "驯兽师"
+      },
+      {
+        "name": "猎人",
+        "source": "PHB",
+        "shortName": "猎人"
+      },
+      {
+        "name": "幽域追踪者",
+        "source": "XGE",
+        "shortName": "幽域追踪者"
+      },
+      {
+        "name": "怪物杀手",
+        "source": "XGE",
+        "shortName": "怪物杀手"
+      },
+      {
+        "name": "边界行者",
+        "source": "XGE",
+        "shortName": "边界行者"
+      },
+      {
+        "name": "妖精漫游者",
+        "source": "TCE",
+        "shortName": "妖精漫游者"
+      },
+      {
+        "name": "集群守卫",
+        "source": "TCE",
+        "shortName": "集群守卫"
+      },
+      {
+        "name": "龙兽守卫",
+        "source": "FTD",
+        "shortName": "龙兽守卫"
+      }
+    ]
+  },
+  {
+    "name": "游侠",
+    "ENG_name": "Ranger",
+    "source": "XPHB",
+    "edition": "one",
+    "classData": {
+      "ENG_name": "Ranger",
+      "name": "游侠",
+      "source": "XPHB",
+      "page": 118,
+      "srd52": true,
+      "basicRules2024": true,
+      "edition": "one",
+      "primaryAbility": [
+        {
+          "dex": true,
+          "wis": true
+        }
+      ],
+      "hd": {
+        "number": 1,
+        "faces": 10
+      },
+      "proficiency": [
+        "str",
+        "dex"
+      ],
+      "spellcastingAbility": "wis",
+      "casterProgression": "artificer",
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "准备法术"
+          ],
+          "rows": [
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              5
+            ],
+            [
+              6
+            ],
+            [
+              6
+            ],
+            [
+              7
+            ],
+            [
+              7
+            ],
+            [
+              9
+            ],
+            [
+              9
+            ],
+            [
+              10
+            ],
+            [
+              10
+            ],
+            [
+              11
+            ],
+            [
+              11
+            ],
+            [
+              12
+            ],
+            [
+              12
+            ],
+            [
+              14
+            ],
+            [
+              14
+            ],
+            [
+              15
+            ],
+            [
+              15
+            ]
+          ]
+        },
+        {
+          "title": "每环法术位",
+          "colLabels": [
+            "1 环",
+            "2 环",
+            "3 环",
+            "4 环",
+            "5 环"
+          ],
+          "rowsSpellProgression": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              2,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              2,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "施法|游侠|XPHB|1",
+        "宿敌|游侠|XPHB|1",
+        "武器精通|游侠|XPHB|1",
+        "熟练探险家|游侠|XPHB|2",
+        "战斗风格|游侠|XPHB|2",
+        {
+          "classFeature": "游侠子职|游侠|XPHB|3",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|游侠|XPHB|4",
+        "额外攻击|游侠|XPHB|5",
+        "越野|游侠|XPHB|6",
+        {
+          "classFeature": "子职特性|游侠|XPHB|7",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|游侠|XPHB|8",
+        "专精|游侠|XPHB|9",
+        "不知疲倦|游侠|XPHB|10",
+        {
+          "classFeature": "子职特性|游侠|XPHB|11",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|游侠|XPHB|12",
+        "永恒追猎|游侠|XPHB|13",
+        "自然面纱|游侠|XPHB|14",
+        {
+          "classFeature": "子职特性|游侠|XPHB|15",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|游侠|XPHB|16",
+        "致命猎杀|游侠|XPHB|17",
+        "野性感官|游侠|XPHB|18",
+        "传奇恩惠|游侠|XPHB|19",
+        "屠灭众敌|游侠|XPHB|20"
+      ],
+      "subclassTitle": "游侠子职"
+    },
+    "subclasses": [
+      {
+        "name": "驯兽师",
+        "shortName": "驯兽师",
+        "source": "XPHB"
+      },
+      {
+        "name": "猎人",
+        "shortName": "猎人",
+        "source": "XPHB"
+      },
+      {
+        "name": "幽域追踪者",
+        "shortName": "幽域追踪者",
+        "source": "XPHB"
+      },
+      {
+        "name": "妖精漫游者",
+        "shortName": "妖精漫游者",
+        "source": "XPHB"
+      }
+    ]
+  }
+]

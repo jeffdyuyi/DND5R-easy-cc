@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Ronin Neko Figurine",
+    "name": "浪人猫雕像",
+    "source": "ObojimaTallGrass",
+    "page": 218,
+    "type": "Ingred",
+    "rarity": "rare",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 0|large}|SneakerProMedium}",
+            "{@font {@style 19|large}|SneakerProMedium}",
+            "{@font {@style 18|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "这件神器描绘了一个限量版的浪人猫雕像，这是一只对抗怪物并保护无辜者的英雄猫。这些雕像只被发现过少数几个，但有一些胧忆岛的历史学家发掘出了描绘浪人猫及其英勇事迹的插图典籍。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/ronin-neko-figurine.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 3168,
+          "height": 3168
+        }
+      ]
+    }
+  }
+]

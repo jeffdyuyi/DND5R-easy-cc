@@ -1,0 +1,83 @@
+[
+  {
+    "ENG_name": "Heal",
+    "name": "医疗术",
+    "source": "PHB",
+    "page": 250,
+    "srd": true,
+    "basicRules": true,
+    "referenceSources": [
+      "SDW",
+      "BGDIA",
+      "LR",
+      "DSotDQ"
+    ],
+    "reprintedAs": [
+      "医疗术|XPHB"
+    ],
+    "level": 6,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "指定施法距离内一个你能看见的生物。汹涌澎湃的正能量将充盈该生物，使其恢复 70 点生命值。该法术也会终止正在影响目标的{@condition 目盲||目盲}、{@condition 耳聋||耳聋}以及任何疾病效应。该法术对构装体与不死生物无效。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "升环施法效应：使用七环或更高法术位施展该法术时，你使用的法术位每比六环高一环，治疗量就增加 10 点。"
+        ]
+      }
+    ],
+    "affectsCreatureType": [
+      "异怪",
+      "野兽",
+      "天族",
+      "龙",
+      "元素",
+      "妖精",
+      "邪魔",
+      "巨人",
+      "类人",
+      "怪兽",
+      "泥怪",
+      "植物"
+    ],
+    "miscTags": [
+      "HL",
+      "SGT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师",
+      "德鲁伊"
+    ],
+    "display_school": "塑能系"
+  }
+]

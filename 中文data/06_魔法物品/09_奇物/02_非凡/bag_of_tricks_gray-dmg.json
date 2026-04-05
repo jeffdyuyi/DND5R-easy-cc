@@ -1,0 +1,79 @@
+[
+  {
+    "ENG_name": "Bag of Tricks, Gray",
+    "name": "魔术袋，灰色",
+    "source": "DMG",
+    "page": 154,
+    "srd": true,
+    "referenceSources": [
+      "SKT",
+      "SCC-CK",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "魔术袋，灰色|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "weight": 0.5,
+    "recharge": "拂晓",
+    "entries": [
+      "这种布袋有三种不同颜色的版本：灰色、铁锈色、棕褐色。布袋看起来空无一物，但把手伸进去会摸到一个小小的毛绒物件。",
+      "你能够以一个魔法动作取出布袋里的毛绒物件，并把它扔出至多20尺远。当物件落地时，投{@dice d8}，参考对应颜色布袋的表格决定物件变成的生物。相关生物的资料见《怪物图鉴》。该生物在次日黎明时分或者其生命值降至0时消失。",
+      "扔出的生物对你和你的盟友态度友善Friendly，且会在你的回合结束后行动。你能够以一个附赠动作命令该生物在其下一回合执行特定的移动方式，做特定的动作，例如攻击你的敌人。没接到命令时，该生物按自己天性行动。",
+      "一旦袋子抽出三件毛绒物件后，直至次日黎明才可再次使用。",
+      {
+        "type": "table",
+        "colLabels": [
+          "{@dice d8}",
+          "creature"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-11"
+        ],
+        "rows": [
+          [
+            "1",
+            "{@creature 鼬}"
+          ],
+          [
+            "2",
+            "{@creature 巨鼠}"
+          ],
+          [
+            "3",
+            "{@creature 獾}"
+          ],
+          [
+            "4",
+            "{@creature 野猪}"
+          ],
+          [
+            "5",
+            "{@creature 黑豹}"
+          ],
+          [
+            "6",
+            "{@creature 巨獾}"
+          ],
+          [
+            "7",
+            "{@creature 恐狼}"
+          ],
+          [
+            "8",
+            "{@creature 巨赤鹿}"
+          ]
+        ]
+      }
+    ],
+    "lootTables": [
+      "魔法物品表F"
+    ],
+    "translator": "不全书",
+    "valueReference": 400,
+    "type": "W"
+  }
+]

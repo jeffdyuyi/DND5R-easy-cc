@@ -1,0 +1,275 @@
+{
+  "ENG_name": "Sinner",
+  "name": "罪人",
+  "shortName": "罪人",
+  "source": "CrookedMoon24",
+  "className": "游荡者",
+  "classSource": "XPHB",
+  "page": 86,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "ability": "cha",
+      "innate": {
+        "3": {
+          "will": [
+            {
+              "choose": {
+                "from": [
+                  "舞光术|XPHB",
+                  "法师之手|XPHB",
+                  "次级幻象|XPHB",
+                  "莫测仪容|XPHB",
+                  "魔法伎俩|XPHB"
+                ],
+                "count": 1
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "subclassSpells": [
+    "舞光术|XPHB",
+    "法师之手|XPHB",
+    "次级幻象|XPHB",
+    "莫测仪容|XPHB",
+    "魔法伎俩|XPHB"
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "Sinner",
+      "name": "罪人",
+      "source": "CrookedMoon24",
+      "page": 86,
+      "className": "游荡者",
+      "classSource": "XPHB",
+      "subclassShortName": "罪人",
+      "subclassSource": "crookedmoon24",
+      "level": 3,
+      "entries": [
+        "{@i 与罪恶交易以诅咒敌人且扭曲幸运}",
+        "罪恶像第二层皮肤一样粘在罪人的身上——欺骗、酗酒和赌博是他们的面包与鲜血。身为天生的诈术师，罪恶呼唤着他们的名称，当邪恶力量的触及范围传入他们的耳朵时，他们会听之任之。那些力量提供的不仅仅是诱惑；他们赋予游荡者们行骗、盗窃乃至杀戮的工具，其精准程度是这些游荡者梦中也难以想象的。",
+        "也许它始于在肮脏酒馆中的会面，荒漠天空下的仪式，或者在丛林深处发现的受诅庙宇。无论旅路如何，结束总是一样的——厄运伎俩。通过咒语、诅咒和污秽魔法，罪人抛弃公义与审判。人与神的律法对它们来说无。只有罪恶路途的冷冻舒适依然存在。",
+        "罪人通过各种被诅咒的物品作为魔法武器来施展他们的厄运伎俩。厄运武器形式表格提供了关于你的厄运武器可能外观的建议。",
+        {
+          "type": "table",
+          "caption": "厄运武器形式",
+          "colLabels": [
+            "1d4",
+            "武器形态"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-11"
+          ],
+          "rows": [
+            [
+              "1",
+              "一把雕刻成手枪形状的木制护符，上刻诡异符文，射出品红色光弹"
+            ],
+            [
+              "2",
+              "一对骨骰子，可以从骰点上发射可怕的绿色厄运光束"
+            ],
+            [
+              "3",
+              "一副可投掷的扑克牌，具有爆炸魔力"
+            ],
+            [
+              "4",
+              "一枚幸运硬币，抛掷后能直击敌人且总会自行飞回"
+            ]
+          ]
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "降咒客|游荡者|XPHB|罪人|crookedmoon24|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "厄艺傍身|游荡者|XPHB|罪人|crookedmoon24|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Get Jinxed",
+      "name": "厄艺傍身",
+      "source": "CrookedMoon24",
+      "page": 86,
+      "className": "游荡者",
+      "classSource": "XPHB",
+      "subclassShortName": "罪人",
+      "subclassSource": "crookedmoon24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你学会了名为厄运伎俩的秘密技艺——从黑暗契约和罪恶交易中汲取魔法力量。你获得以下增益。",
+        {
+          "ENG_name": "Cards and Bones",
+          "name": "牌骰双绝",
+          "type": "entries",
+          "entries": [
+            "你获得两种你选择的赌具的熟练项（{@item 纸牌|XPHB}且{@item 骰子组|XPHB|骰子}推荐）。"
+          ]
+        },
+        {
+          "ENG_name": "Jinx Weapon",
+          "name": "厄运武器",
+          "type": "entries",
+          "entries": [
+            "通过使用一套{@item 赌具|XPHB}进行1小时的仪式，你通过魔法制作一件能够引导你的厄运伎俩的厄运武器。该武器使用{@item 手枪|XPHB}或{@item 赌具|XPHB}的外观（均使用{@item 手枪|XPHB}的游戏数据），对你而言，厄运武器无视{@itemProperty LD|XPHB|装填}且可以自行创造造成力场伤害的弹药。在{@item 赌具|XPHB}形态下，你可以投掷卡片、骰子或其他{@item 赌具|XPHB}组件，也可以通过它们施展巫咒魔法。此外，你也可以将厄运伎俩注入一件你具有熟练项的简易武器或军用武器，将其变为你的厄运武器。受影响的厄运武器造成力场伤害而不是通常的伤害类型。如果你制作第二件厄运武器，第一件消失或失去上面的厄运伎俩效果。"
+          ]
+        },
+        {
+          "ENG_name": "Parlor Trick",
+          "name": "魔术把戏",
+          "type": "entries",
+          "entries": [
+            "你选择并习得以下戏法之一：{@spell 舞光术|XPHB}、{@spell 法师之手|XPHB}、{@spell 次级幻象|XPHB}、{@spell 莫测仪容|crookedmoon24}或{@spell 魔法伎俩|XPHB}。魅力是你施展该戏法的施法属性。"
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Rogue/Get%20Jinxed.webp"
+    },
+    {
+      "ENG_name": "Hex Slinger",
+      "name": "降咒客",
+      "source": "CrookedMoon24",
+      "page": 86,
+      "className": "游荡者",
+      "classSource": "XPHB",
+      "subclassShortName": "罪人",
+      "subclassSource": "crookedmoon24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "当你通过偷袭特性对一个生物造成伤害时，你可以释放厄运伎俩Jinxcraft的力量。当你掷偷袭骰时，在掷骰前指定其中两枚骰子（单独投掷这两枚骰子或者使用两枚颜色不同的骰子）。这两枚骰子的掷骰总和决定了你厄运伎俩的效果，如降咒客厄运表所述。该特性的可用次数等于你的魅力调整值（至少1次），且你在完成一次{@variantrule 短休|XPHB}后恢复所有已消耗的次数。",
+        {
+          "type": "table",
+          "caption": "降咒客厄运",
+          "colLabels": [
+            "2d6",
+            "倒霉"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-11"
+          ],
+          "rows": [
+            [
+              "2",
+              "{@b 蛇眼。} 在目标的下个回合中，其只能执行以下选项之一：移动、执行一个动作或执行一个{@variantrule 附赠动作|XPHB}。如果目标在下一回合中，将你或你的盟友作为一次攻击的目标，它受到2d6心灵伤害。"
+            ],
+            [
+              "3-4",
+              "{@b 梦魇。} 目标陷入恐慌状态，直到其下一回合结束，且必须立刻使用一个反应来使用自己的全部{@variantrule 速度|XPHB}远离你。"
+            ],
+            [
+              "5-6",
+              "{@b 威士忌瓶子。} 目标丢弃正在持握的任何事物。直到其下一回合结束，当目标拾起一个物品时，它必须成功通过一次DC15的敏捷豁免检定，否则立刻将其丢弃。"
+            ],
+            [
+              "7",
+              "{@b 卑鄙一击。} 直到其下一回合结束，目标的{@variantrule 速度|XPHB}减半，且在该持续时间内，对其发动的攻击检定具有{@variantrule 优势|XPHB}。"
+            ],
+            [
+              "8-9",
+              "{@b 断臂} 直到其下一回合结束，目标在依赖力量的{@variantrule D20 检定|XPHB|D20 检定}中具有{@variantrule 劣势}。"
+            ],
+            [
+              "10-11",
+              "{@b 厄运连连} 直到其下一回合结束前，当目标进行攻击检定或豁免检定时，它从全部中减去1d6。"
+            ],
+            [
+              "12",
+              "{@b 死亡之人。} 如果你在自身下个回合结束前发动的下一次攻击检定未命中，改为命中。如果该第一次攻击检定命中，该攻击自动造成{@variantrule 重击|XPHB}。如果你在该攻击检定中掷出20，该攻击掷三次伤害骰而非两次。"
+            ]
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Rogue/Hex%20Slinger.webp"
+    },
+    {
+      "ENG_name": "Borrowed Luck",
+      "name": "借来好运",
+      "source": "CrookedMoon24",
+      "page": 87,
+      "className": "游荡者",
+      "classSource": "XPHB",
+      "subclassShortName": "罪人",
+      "subclassSource": "crookedmoon24",
+      "level": 9,
+      "header": 2,
+      "entries": [
+        "当你使用{@subclassFeature 降咒客|游荡者|XPHB|罪人|crookedmoon24|3|crookedmoon24}时，你吸取了目标的一丝幸运。如果你没有{@variantrule 英雄激励|XPHB}，则获得它。如果你已有它，你可以消耗你的{@variantrule 英雄激励|XPHB}来代替消耗一次{@subclassFeature 降咒客|游荡者|XPHB|罪人|crookedmoon24|3|crookedmoon24}的使用次数。"
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Rogue/Borrowed%20Luck.webp"
+    },
+    {
+      "ENG_name": "Pick Your Poison",
+      "name": "任君自取",
+      "source": "CrookedMoon24",
+      "page": 87,
+      "className": "游荡者",
+      "classSource": "XPHB",
+      "subclassShortName": "罪人",
+      "subclassSource": "crookedmoon24",
+      "level": 13,
+      "header": 2,
+      "entries": [
+        "当你使用{@subclassFeature 降咒客|游荡者|XPHB|罪人|crookedmoon24|3|crookedmoon24}时，你可以将所指定的偷袭骰投掷两次，选择使用哪一次的掷骰总和。",
+        "如果你所选的掷骰结果是两个骰子点数相同，则目标受到等于你等级一半的心灵伤害。如果你所选择的掷骰总和为2或12，你不会消耗该次{@subclassFeature 降咒客|游荡者|XPHB|罪人|crookedmoon24|3|crookedmoon24}的使用次数。"
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Rogue/Pick%20Your%20Poison.webp"
+    },
+    {
+      "ENG_name": "The Other Side",
+      "name": "彼岸相助",
+      "source": "CrookedMoon24",
+      "page": 87,
+      "className": "游荡者",
+      "classSource": "XPHB",
+      "subclassShortName": "罪人",
+      "subclassSource": "crookedmoon24",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "你可以呼唤自己在下层位面的异界朋友来改变对你有利之事的概率。你获得以下增益。",
+        {
+          "ENG_name": "Crossroads Devilry",
+          "name": "岔路诈术",
+          "type": "entries",
+          "entries": [
+            "当你失手于一次攻击检定，或者失败于一次豁免检定时，你可以消耗并投掷任意数量的偷袭骰（在你投掷前选择数量），并将所掷总和加入该攻击或豁免，这可能将失手改为命中，或将失败变为成功。已消耗的骰子会在你下次使用你的偷袭后恢复。"
+          ]
+        },
+        {
+          "ENG_name": "Lady Luck's Smiling",
+          "name": "幸运女神在微笑",
+          "type": "entries",
+          "entries": [
+            "当一个生物以一次攻击检定中命中你时，你可以消耗并投掷任意数量的偷袭骰（在你投掷前选择数量），并将所掷总和加入你对抗该次攻击的AC中，这可能将命中改为失手。已消耗的骰子会在你下次使用你的偷袭后恢复。"
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Rogue/The%20Other%20Side.webp"
+    }
+  ],
+  "fluff": {
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Subclasses/Rogue_Sinner.webp"
+        },
+        "credit": "Jo Cordisco",
+        "width": 588,
+        "height": 1200
+      }
+    ]
+  },
+  "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclasses/Sinner.webp"
+}

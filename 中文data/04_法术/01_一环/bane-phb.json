@@ -1,0 +1,78 @@
+[
+  {
+    "ENG_name": "Bane",
+    "name": "灾祸术",
+    "source": "PHB",
+    "page": 216,
+    "srd": true,
+    "referenceSources": [
+      "TftYP-TSC",
+      "WDMM"
+    ],
+    "reprintedAs": [
+      "灾祸术|XPHB"
+    ],
+    "level": 1,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一滴血"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "指定施法距离内至多三个你能看见的生物，并迫使其进行一次魅力豁免。豁免失败者直至法术终止前，在每当进行攻击检定或豁免检定时，必须从投骰结果中减去一个 {@dice d4}。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "使用二环或更高法术位施展该法术时，你使用的法术位每比一环高一环，就能多指定一个目标。"
+        ]
+      }
+    ],
+    "savingThrow": [
+      "charisma"
+    ],
+    "miscTags": [
+      "SCT",
+      "SGT"
+    ],
+    "areaTags": [
+      "MT"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "牧师"
+    ],
+    "display_school": "惑控系",
+    "display_savingThrow": [
+      "魅力"
+    ]
+  }
+]

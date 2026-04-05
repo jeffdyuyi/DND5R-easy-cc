@@ -1,0 +1,63 @@
+[
+  {
+    "ENG_name": "Power Word Heal",
+    "name": "律令医疗",
+    "source": "PHB",
+    "page": 266,
+    "reprintedAs": [
+      "律令医疗|XPHB"
+    ],
+    "level": 9,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "一波治疗能量覆盖你所触碰的生物，并使目标恢复其所有的生命值。如果该生物正处于{@condition 魅惑}、 {@condition 恐慌}、{@condition 麻痹}、{@condition 震慑}状态，此类状态将立刻终止。如果该生物正处于{@condition 倒地}状态，则他可以执行其反应站起。该法术无法对不死生物和构装生物生效。"
+    ],
+    "affectsCreatureType": [
+      "异怪",
+      "野兽",
+      "天族",
+      "龙",
+      "元素",
+      "妖精",
+      "邪魔",
+      "巨人",
+      "类人",
+      "怪兽",
+      "泥怪",
+      "植物"
+    ],
+    "miscTags": [
+      "HL"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "牧师"
+    ],
+    "display_school": "塑能系"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "ENG_name": "Sir Varion's Mantle",
+    "name": "瓦里昂爵士的斗篷",
+    "source": "GriffonsSaddlebag2",
+    "page": 162,
+    "tier": "次要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这件结实防水的骑行斗篷曾属于瓦里昂爵士Sir Varion，一位以魅力和古怪著称的著名骑士。当你穿着这件斗篷期间，你可以花费10分钟从斗篷中施展{@spell 寻获坐骑}法术。当你这样做时，召唤的坐骑会以{@creature 巨蟾|MM}的形态出现。该坐骑会持续存在，直到法术持续时间结束或你与斗篷的同调终止。当坐骑的生命值降至0时，这项词条必须经过2天才能再次使用。",
+      "此外，当你骑乘着坐骑期间，你进行的魅力（{@skill 游说}）检定具有优势。"
+    ],
+    "attachedSpells": {
+      "ritual": [
+        "寻获坐骑"
+      ]
+    },
+    "lootTables": [
+      "魔法物品表 B2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Sir-Varions-Mantle.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

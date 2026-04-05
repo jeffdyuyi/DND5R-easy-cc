@@ -1,0 +1,30 @@
+[
+  {
+    "name": "小包",
+    "ENG_name": "Pouch",
+    "source": "XPHB",
+    "page": 228,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 1,
+    "value": 50,
+    "entries": [
+      "一个小包能够至多装入6磅重、五分之一立方尺大的东西。"
+    ],
+    "basicRules2024": true,
+    "containerCapacity": {
+      "weight": [
+        6
+      ],
+      "item": [
+        {
+          "枪械子弹|xphb": 10,
+          "投石索子弹|xphb": 20,
+          "针|xphb": 50
+        }
+      ]
+    },
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

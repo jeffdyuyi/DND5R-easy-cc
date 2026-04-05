@@ -1,0 +1,180 @@
+{
+  "ENG_name": "Secret Agent",
+  "name": "特务",
+  "shortName": "特务",
+  "source": "ValdaGunslinger",
+  "className": "铳士",
+  "classSource": "ValdaGunslinger",
+  "additionalSpells": [
+    {
+      "ability": {
+        "choose": [
+          "int",
+          "wis",
+          "cha"
+        ]
+      },
+      "known": {
+        "3": [
+          "隐蔽射击|ValdaGunslinger#c"
+        ]
+      }
+    }
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "Secret Agent",
+      "name": "特务",
+      "source": "ValdaGunslinger",
+      "className": "铳士",
+      "classSource": "ValdaGunslinger",
+      "subclassShortName": "特务",
+      "subclassSource": "ValdaGunslinger",
+      "level": 3,
+      "entries": [
+        "{@i 从事刺探与暗杀}",
+        "情报就是力量。击败敌人的最佳方法是窃取他们的情报，并替换为虚假信息。为此，你接受了隐蔽作战的训练以掌握多种技能，好辅助你令人生畏的枪法。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "特工训练|铳士|ValdaGunslinger|特务|ValdaGunslinger|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "抛下凶弹 [战技]|铳士|ValdaGunslinger|特务|ValdaGunslinger|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Operative Training",
+      "name": "特工训练",
+      "source": "ValdaGunslinger",
+      "className": "铳士",
+      "classSource": "ValdaGunslinger",
+      "subclassShortName": "特务",
+      "subclassSource": "ValdaGunslinger",
+      "level": 3,
+      "skillProficiencies": [
+        {
+          "choose": {
+            "from": [
+              "欺瞒",
+              "调查",
+              "游说",
+              "巧手",
+              "隐匿"
+            ],
+            "count": 2
+          }
+        }
+      ],
+      "toolProficiencies": [
+        {
+          "disguise kit": true,
+          "thieves' tools": true
+        }
+      ],
+      "header": 1,
+      "entries": [
+        "你的隐蔽训练赋予你以下增益：",
+        {
+          "ENG_name": "Concealed Shot",
+          "name": "隐蔽射击",
+          "type": "entries",
+          "entries": [
+            "你习得{@spell 隐蔽射击|ValdaGunslinger}戏法。智力、感知或魅力是你此戏法的施法属性（在选取该子职时选择）。"
+          ]
+        },
+        {
+          "ENG_name": "Operative Tools",
+          "name": "特工工具",
+          "type": "entries",
+          "entries": [
+            "你获得一个{@item 易容工具|XPHB}和{@item 盗贼工具|XPHB}，并获得它们的熟练。"
+          ]
+        },
+        {
+          "ENG_name": "Skill Proficiencies",
+          "name": "技能熟练",
+          "type": "entries",
+          "entries": [
+            "你自以下技能中选择两项获得熟练：{@skill 欺瞒|XPHB}、{@skill 调查|XPHB}、{@skill 游说|XPHB}、{@skill 巧手|XPHB}或{@skill 隐匿|XPHB}。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Parting Shot [Maneuver]",
+      "name": "抛下凶弹 [战技]",
+      "source": "ValdaGunslinger",
+      "className": "铳士",
+      "classSource": "ValdaGunslinger",
+      "subclassShortName": "特务",
+      "subclassSource": "ValdaGunslinger",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "当你在你的回合内执行{@action 疾走|XPHB}、{@action 撤离|XPHB}或{@action 回避|XPHB}动作时，你可以消耗一枚{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}以{@variantrule 附赠动作|XPHB}使用武器发动一次远程攻击。命中时，将{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}加入伤害掷骰中。"
+      ]
+    },
+    {
+      "ENG_name": "Fieldcraft",
+      "name": "战场记忆",
+      "source": "ValdaGunslinger",
+      "className": "铳士",
+      "classSource": "ValdaGunslinger",
+      "subclassShortName": "特务",
+      "subclassSource": "ValdaGunslinger",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "你的战场记忆赋予你以下增益。",
+        {
+          "ENG_name": "Quick Change",
+          "name": "快速变装",
+          "type": "entries",
+          "entries": [
+            "使用一个{@item 易容工具|XPHB}，你可以制作一套戏服并装着它作为一个{@variantrule 附赠动作|XPHB}。"
+          ]
+        },
+        {
+          "ENG_name": "Slick Talker",
+          "name": "巧舌如簧",
+          "type": "entries",
+          "entries": [
+            "每当你进行魅力（{@skill 欺瞒|XPHB}）或魅力（{@skill 游说|XPHB}）检定时，你可以将{@dice d20}掷骰小于等于9的结果视为10。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Exit Strategy",
+      "name": "撤退计划",
+      "source": "ValdaGunslinger",
+      "className": "铳士",
+      "classSource": "ValdaGunslinger",
+      "subclassShortName": "特务",
+      "subclassSource": "ValdaGunslinger",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "当你受到伤害时，你可以采取{@variantrule 反应|XPHB}来避免进一步的损害。你将处于{@condition 隐形|XPHB}状态直至你的下个回合开始，并且可以立即移动至多10尺。",
+        "此特性一经使用，直至完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}你都无法再次使用。你也可以消耗一枚{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}（无需动作）来复原此特性的使用权。"
+      ]
+    },
+    {
+      "ENG_name": "License to Kill",
+      "name": "杀戮许可",
+      "source": "ValdaGunslinger",
+      "className": "铳士",
+      "classSource": "ValdaGunslinger",
+      "subclassShortName": "特务",
+      "subclassSource": "ValdaGunslinger",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "每当你使用远程武器造成伤害时，你可以消耗一或两枚{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}并将其加入伤害掷骰中。若你在{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}上掷出最高数值，你可以无消耗地再次掷骰并将其加入伤害中，若仍掷出最高数值，则再次掷骰，以此类推。你可以加入伤害中的{@classFeature 风险|铳士|ValdaGunslinger|2|ValdaGunslinger|风险骰}数最多等于你的{@variantrule 熟练|XPHB|熟练加值}。"
+      ]
+    }
+  ],
+  "hasFluffImages": true
+}

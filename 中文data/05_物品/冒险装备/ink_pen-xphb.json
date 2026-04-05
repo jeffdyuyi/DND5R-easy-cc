@@ -1,0 +1,20 @@
+[
+  {
+    "name": "墨水笔",
+    "ENG_name": "Ink Pen",
+    "source": "XPHB",
+    "page": 226,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "value": 2,
+    "entries": [
+      "墨水笔可以使用{@item 墨水|XPHB}来写字或绘画。"
+    ],
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TDoN"
+    ],
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

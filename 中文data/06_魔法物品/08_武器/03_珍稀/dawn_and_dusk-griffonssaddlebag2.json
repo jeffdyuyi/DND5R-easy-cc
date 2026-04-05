@@ -1,0 +1,33 @@
+[
+  {
+    "ENG_name": "Dawn and Dusk",
+    "name": "晨昏",
+    "source": "GriffonsSaddlebag2",
+    "page": 69,
+    "baseItem": "硬头锤|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "rare",
+    "weaponCategory": "简易",
+    "bonusWeapon": "+1",
+    "entries": [
+      "你使用这把魔法武器进行的攻击检定和伤害掷骰具有+1加值，且此武器具有轻型属性。此武器会在每天的不同时间变换形态。在黎明时，此武器的形态变为一把{@item 硬头锤|PHB}，其锤头环绕着一圈阳光造型的刺。在黄昏时，它变为一把{@item 镰刀|PHB}，其月牙形的镰刃上纹饰着一排星星。被硬头锤命中的目标会受到额外{@damage 1d4}光耀伤害。被镰刀命中的目标会受到额外{@damage 1d6}暗蚀伤害。"
+    ],
+    "lootTables": [
+      "魔法物品表 G2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Dawn-and-Dusk.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

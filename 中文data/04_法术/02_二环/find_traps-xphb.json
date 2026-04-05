@@ -1,0 +1,48 @@
+[
+  {
+    "ENG_name": "Find Traps",
+    "name": "寻找陷阱",
+    "source": "XPHB",
+    "page": 273,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 2,
+    "school": "D",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你感测到施法距离范围内，且在你视觉线范围内的任何陷阱。该法术的目标\"陷阱\"包括任何创造意图是造成伤害或其他危害的物件或装置。因此该法术可以感测{@spell 警报术|XPHB}和{@spell 守卫刻文|XPHB}，也可以发现某个陷坑型机械陷阱。不过它不能揭示地板的某处自然产生的脆弱点，或某处不稳定的天花板，又或是某个隐藏的陷坑。",
+      "该法术只单纯揭示陷阱的存在而不能得知陷阱的位置。不过你可以知晓所感测到陷阱其能够构成危害的大致形式。"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师",
+      "德鲁伊",
+      "游侠"
+    ],
+    "display_school": "预言系"
+  }
+]

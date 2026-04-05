@@ -1,0 +1,55 @@
+[
+  {
+    "ENG_name": "Eyes of Charming",
+    "name": "魅惑镜片",
+    "source": "DMG",
+    "page": 168,
+    "srd": true,
+    "referenceSources": [
+      "WDH",
+      "CoA"
+    ],
+    "reprintedAs": [
+      "魅惑镜片|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": 3,
+    "charges": 3,
+    "entries": [
+      "这种水晶镜片可以着装到眼睛上。魅惑镜片有3发充能。着装该镜片期间，如果你和你周围30尺内的一名类人生物能够互相看见对方，则你可以用一个动作并消耗1发充能来对它施放法术 {@spell 魅惑类人}（豁免 {@dc 13}）。镜片消耗掉的充能将在每天黎明时恢复。"
+    ],
+    "optionalfeatures": [
+      "仿制魔法物品|TCE"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "魅惑类人"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表F"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Eyes of Charming.webp"
+          },
+          "width": 1000,
+          "height": 860
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

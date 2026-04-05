@@ -1,0 +1,46 @@
+[
+  {
+    "name": "制图工具",
+    "ENG_name": "Cartographer's Tools",
+    "source": "XPHB",
+    "page": 220,
+    "type": "AT|XPHB",
+    "rarity": "none",
+    "weight": 6,
+    "value": 1500,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability:",
+            "name": "属性：",
+            "type": "item",
+            "entries": [
+              "感知"
+            ]
+          },
+          {
+            "ENG_name": "Utilize:",
+            "name": "操作：",
+            "type": "item",
+            "entries": [
+              "为一小片区域绘制地图（{@dc 15}）"
+            ]
+          },
+          {
+            "ENG_name": "Craft:",
+            "name": "制造：",
+            "type": "item",
+            "entries": [
+              "{@item 地图|XPHB}"
+            ]
+          }
+        ]
+      }
+    ],
+    "basicRules2024": true,
+    "srd52": true
+  }
+]

@@ -1,0 +1,61 @@
+[
+  {
+    "ENG_name": "Leomund's Tiny Hut",
+    "name": "李欧蒙小屋",
+    "source": "XPHB",
+    "page": 291,
+    "srd52": "微型小屋",
+    "basicRules2024": true,
+    "level": 3,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "emanation",
+      "distance": {
+        "type": "feet",
+        "amount": 10
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一个小水晶珠子"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 8
+        }
+      }
+    ],
+    "meta": {
+      "ritual": true
+    },
+    "entries": [
+      "一个半径 10 尺的{@variantrule 光环 [效应区域]|XPHB|光环}会在你周围出现并在法术持续时间内保持固定。若在施法时{@variantrule 光环 [效应区域]|XPHB|光环}的大小不足以完全覆盖其区域内的所有生物，法术的施展会失败。",
+      "在施展此法术时即处于{@variantrule 光环 [效应区域]|XPHB|光环}内的生物和物件可以自由进出光环。而所有其他生物和物件都将被阻挡而无法进出。三环或更低级别的法术既无法直接穿过光环施展，也无法使法术效果延伸至穿过光环。",
+      "{@variantrule 光环 [效应区域]|XPHB|光环}内的空气干爽舒适，而无论外侧气候如何。你可以在法术终止前使光环内的光照变为{@variantrule 微光光照|XPHB}或{@variantrule 黑暗|XPHB}（无需任何动作）。{@variantrule 光环 [效应区域]|XPHB|光环}从外侧看是不透明的，并且呈现出由你选定的颜色，但从内侧看它则是透明的。",
+      "当你离开该{@variantrule 光环 [效应区域]|XPHB|光环}区域，或试图再次施展该法术时，法术将提前终止。"
+    ],
+    "miscTags": [
+      "LGT"
+    ],
+    "areaTags": [
+      "S"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "法师"
+    ],
+    "display_school": "塑能系",
+    "display_ritual": "仪式"
+  }
+]

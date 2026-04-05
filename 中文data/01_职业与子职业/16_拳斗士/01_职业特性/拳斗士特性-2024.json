@@ -1,0 +1,102 @@
+[
+    {
+        "ENG_name": "Fisticuffs",
+        "name": "拳斗",
+        "source": "Pugilist2024",
+        "page": 1,
+        "className": "拳斗士",
+        "classSource": "Pugilist2024",
+        "level": 1,
+        "entries": [
+            "通过在街道、小巷和地下拳赛中练就的拳击与摔跤技巧，你掌握了独特的战斗方式。你的徒手打击和拳斗武器（详见职业说明）获得以下益处：",
+            {
+                "type": "list",
+                "items": [
+                    "你可以使用力量代替敏捷来进行徒手打击和拳斗武器的攻击与伤害掷骰。",
+                    "你可以掷一个 {@dice d8}（随等级提升，见职业进度表）代替原本的徒手打击或拳斗武器伤害骰。这种伤害类型为钝击、穿刺或挥砍（由你选择）。",
+                    "在你的回合中，当你使用动作进行徒手打击或拳斗武器攻击时，你可以以一个附赠动作发动一次徒手打击。"
+                ]
+            }
+        ]
+    },
+    {
+        "ENG_name": "Iron Chin",
+        "name": "钢颚铁护",
+        "source": "Pugilist2024",
+        "page": 1,
+        "className": "拳斗士",
+        "classSource": "Pugilist2024",
+        "level": 1,
+        "entries": [
+            "从第 1 级起，如果你没有穿着护甲且没有持有盾牌，你的护甲等级等于 12 + 你的体质调整值。"
+        ]
+    },
+    {
+        "ENG_name": "Moxie",
+        "name": "锐气",
+        "source": "Pugilist2024",
+        "page": 2,
+        "className": "拳斗士",
+        "classSource": "Pugilist2024",
+        "level": 2,
+        "entries": [
+            "从第 2 级起，你练就了支撑你度过残酷打击的意志。这种能量由“锐气点”表示。你拥有若干锐气点，数量见职业进度表。你可以消耗锐气点来激活以下能力：",
+            {
+                "type": "list",
+                "items": [
+                    "**双连暴揍 Double Down**：以附赠动作消耗 1 锐气点，发动两次徒手打击。",
+                    "**闪转挪腾 Slip and Slide**：以附赠动作消耗 1 锐气点，执行 {@action 撤离} 或 {@action 疾走} 动作。",
+                    "**硬汉撑住 Brace Yourself**：以附赠动作消耗 1 锐气点，获得等同于你拳斗骰 + 体质调整值的临时生命值。"
+                ]
+            }
+        ]
+    },
+    {
+        "ENG_name": "Bloodied but Unbowed",
+        "name": "浴血奋战",
+        "source": "Pugilist2024",
+        "page": 2,
+        "className": "拳斗士",
+        "classSource": "Pugilist2024",
+        "level": 2,
+        "entries": [
+            "当你处于半血以下且不处于 {@condition 失能} 状态时，你可以使用附赠动作恢复所有已消耗的锐气点。一旦使用此特性，必须完成一次长休后才能再次使用。"
+        ]
+    },
+    {
+        "ENG_name": "Haymaker",
+        "name": "万钧痛击",
+        "source": "Pugilist2024",
+        "page": 5,
+        "className": "拳斗士",
+        "classSource": "Pugilist2024",
+        "level": 5,
+        "entries": [
+            "第 5 级起，你可以发动毁灭性的一击。当你以徒手打击命中时，你可以消耗 1 锐气点令此次攻击直接造成最大伤害。如果你此次攻击是重击，则该锐气点返还。"
+        ]
+    },
+    {
+        "ENG_name": "Moxie-Fueled Fists",
+        "name": "锐不可当",
+        "source": "Pugilist2024",
+        "page": 6,
+        "className": "拳斗士",
+        "classSource": "Pugilist2024",
+        "level": 6,
+        "entries": [
+            "从第 6 级起，你的徒手攻击在克服非魔法攻击的抗性与免疫时，视作魔法攻击。"
+        ]
+    },
+    {
+        "ENG_name": "Peak Performance",
+        "name": "巅峰状态",
+        "source": "Pugilist2024",
+        "page": 20,
+        "className": "拳斗士",
+        "classSource": "Pugilist2024",
+        "level": 20,
+        "entries": [
+            "第 20 级时，你达到了战斗力的巅峰。你的力量和体质属性上限提升至 24。此外，每当你掷先攻检定时，如果你没有锐气点，你将获得 4 点锐气点。"
+        ]
+    }
+]

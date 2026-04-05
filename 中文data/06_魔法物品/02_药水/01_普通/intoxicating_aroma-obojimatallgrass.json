@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Intoxicating Aroma",
+    "name": "醉人芳香",
+    "source": "ObojimaTallGrass",
+    "page": 239,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "饮用后，你会散发出精心调制的香水气息。此药水的效应持续22年。这不计入你身体可同时受影响的药水数量上限。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 3|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/intoxicating-aroma.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1497,
+          "height": 1497
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

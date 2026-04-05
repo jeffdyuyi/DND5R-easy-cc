@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Knife of Stolen Resistance",
+    "name": "窃抗之刃",
+    "source": "CoA",
+    "page": 268,
+    "baseItem": "匕首|PHB",
+    "type": "M",
+    "rarity": "rare",
+    "weight": 1,
+    "weaponCategory": "simple",
+    "property": [
+      "F",
+      "L",
+      "T"
+    ],
+    "range": "20/60",
+    "dmg1": "1d4",
+    "dmgType": "P",
+    "entries": [
+      "使用这个动作，你可以用这把刀在一只{@condition 昏迷}的野兽、天界生物、龙、精类或巨人的肉体上雕刻一个单一的地狱符文。在接下来的10分钟内，这个生物会经历一个无法通过任何手段阻止的极度痛苦的死亡，除非使用{@spell 祈愿术}法术。如果生物有任何抗性或免疫，直到生物死亡或使用{@spell 祈愿术}法术救活生物之前，你都会获得这些抗性和免疫。这把刀的力量在你完成一次长休息之前不能再使用。"
+    ],
+    "valueReference": 4000
+  }
+]

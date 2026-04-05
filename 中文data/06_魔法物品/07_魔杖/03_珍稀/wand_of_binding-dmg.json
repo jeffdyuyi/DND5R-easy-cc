@@ -1,0 +1,80 @@
+[
+  {
+    "ENG_name": "Wand of Binding",
+    "name": "定身魔杖",
+    "source": "DMG",
+    "page": 209,
+    "srd": true,
+    "referenceSources": [
+      "TftYP-DiT",
+      "WDH",
+      "OoW",
+      "IDRotF",
+      "KftGV",
+      "CoA"
+    ],
+    "reprintedAs": [
+      "定身魔杖|XDMG"
+    ],
+    "type": "WD|DMG",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": "由施法者",
+    "reqAttuneTags": [
+      {
+        "spellcasting": true
+      }
+    ],
+    "weight": 1,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6 + 1}",
+    "charges": 7,
+    "entries": [
+      "这把魔杖有7发充能用于以下属性。它每天黎明时恢复{@dice 1d6 + 1}发已消耗的充能。如果你消耗了魔杖的最后一发充能，骰一次{@dice d20}。如果骰值为1，魔杖将化为灰烬而毁灭。",
+      {
+        "ENG_name": "Spells",
+        "name": "法术",
+        "type": "entries",
+        "entries": [
+          "持握此魔杖时，你可以用一个动作并消耗若干充能以施展下列法术之一（豁免{@dc 17}）：{@spell 定身怪物}（5充能）或{@spell 定身类人}（2充能）。"
+        ]
+      },
+      {
+        "ENG_name": "Assisted Escape",
+        "name": "援助脱离",
+        "type": "entries",
+        "entries": [
+          "持握此魔杖期间，你可以用反应并消耗1发充能，使你在进行一次避免{@condition 麻痹}或{@condition 束缚}的豁免时获得优势，或者你可以消耗1发充能在一次脱离擒抱的检定中获得优势。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "2": [
+          "定身类人"
+        ],
+        "5": [
+          "定身怪物"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表G"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Wand of Binding.webp"
+          },
+          "width": 315,
+          "height": 315
+        }
+      ]
+    }
+  }
+]

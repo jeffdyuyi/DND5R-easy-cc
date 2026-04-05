@@ -1,0 +1,22 @@
+[
+  {
+    "ENG_name": "Skyship",
+    "name": "天空船",
+    "source": "TalDoreiCampaignSettingReborn",
+    "page": 137,
+    "type": "AIR|DMG",
+    "rarity": "none",
+    "value": 10000000,
+    "crewMin": 6,
+    "crewMax": 10,
+    "vehSpeed": 10,
+    "capPassenger": 30,
+    "capCargo": 10,
+    "travelCost": 200,
+    "shippingCost": 100,
+    "entries": [
+      "购买一艘{@item 天空船|TalDoreiCampaignSettingReborn}需要花费100,000 gp，并且需要与{@book 安卡瑞尔|TalDoreiCampaignSettingReborn|3|马凯特}的阿尔斯法林联盟有个人联系。一艘{@item 天空船|TalDoreiCampaignSettingReborn}的最高速度为每小时10英里，可载重10吨货物，需要六到十名类人生物船员才能达到最佳性能。大多数{@item 天空船|TalDoreiCampaignSettingReborn|天空船}最多可容纳30名乘客。大多数{@item 天空船|TalDoreiCampaignSettingReborn|天空船}只在现有空港之间航行（参见\"{@book 埃蒙空港|TalDoreiCampaignSettingReborn|3|8. 埃蒙空港}\"），乘客票价为每英里2 gp。包租一艘{@item 天空船|TalDoreiCampaignSettingReborn}前往标准航线以外的目的地，如果首领有空且愿意承担旅途，费用为每英里15 gp。沿正常航线运输货物每100磅每英里1 gp，前往其他目的地的费用是两倍。"
+    ],
+    "hasFluffImages": true
+  }
+]

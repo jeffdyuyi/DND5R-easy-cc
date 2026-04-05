@@ -1,0 +1,59 @@
+[
+  {
+    "ENG_name": "Dancing Lights",
+    "name": "舞光术",
+    "source": "XPHB",
+    "page": 259,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "UtHftLH"
+    ],
+    "level": 0,
+    "school": "I",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一点磷"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你在施法距离内创造至多四个火把大小的光源，使其在法术持续时间内看起来如同火把、灯笼或悬浮珠。或者，你可以将四个光源合并为一个发光的整体形态，使其看上去像一个模糊的中型人形。无论你选择哪种形态，每个光源都会发出 10 尺半径的{@variantrule 微光光照|XPHB}。",
+      "你可以用{@variantrule 附赠动作|XPHB}将光源移动至多 60 尺至施法距离内的一处空间。一个由此法术创造的光源必须始终位于任一光源周围 20 尺内，而超出施法距离的光源会随即熄灭。"
+    ],
+    "miscTags": [
+      "LGT",
+      "UBA"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "术士",
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "幻术系"
+  }
+]

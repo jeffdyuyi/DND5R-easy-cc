@@ -1,0 +1,44 @@
+[
+  {
+    "ENG_name": "+1 Greatsword",
+    "name": "+1 巨剑",
+    "source": "DMG",
+    "page": 213,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "uncommon",
+    "weight": 6,
+    "value": 5000,
+    "weaponCategory": "martial",
+    "property": [
+      "H|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "擦掠|XPHB"
+    ],
+    "dmg1": "2d6",
+    "dmgType": "S",
+    "sword": true,
+    "weapon": true,
+    "hasFluffImages": true,
+    "namePrefix": "+1 ",
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "+1 武器|XDMG"
+    ],
+    "tier": "主要",
+    "bonusWeapon": "+1",
+    "entries": [
+      "使用这把魔法武器进行攻击和伤害判定时，你会获得{=bonusWeapon}的额外加成。"
+    ],
+    "lootTables": [
+      "魔法物品表F"
+    ],
+    "_isVariant": true,
+    "valueReference": 400
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Kraken Band",
+    "name": "海怪腕带",
+    "source": "GriffonsSaddlebag2",
+    "page": 112,
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "当你与这个雕塑成海怪触手造型的金属腕带完成同调时，它将缠绕在你的一条手臂上。你与此腕带已同调期间，它无法在你不自愿的情况下被从你的手臂上摘除，而且你可以作为你一次攻击动作的一部分，将佩戴着它的手臂魔法性地转变为一条粗壮的触手。当你执行{@action 攻击}动作时，你可以用一个奖励动作，用你变为触手的手臂进行一次触及距离为15尺的徒手打击。若命中目标，目标将额外受到{@damage 1d6}强酸伤害。当你在你的回合内作为一次{@action 擒抱}动作的一部分试图{@action 攻击}一个生物时，你可以用你变为触手的手臂来攻击15尺范围内（而非你通常的触及范围内）一个你可见的生物。成功擒抱时，目标将额外受到{@damage 1d6}强酸伤害，且被你笔直地向靠近你的方向拉近至多10尺。"
+    ],
+    "lootTables": [
+      "魔法物品表 H2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Kraken-Band.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "ENG_name": "Revelry Suit",
+    "name": "狂欢服",
+    "source": "CrookedMoon24",
+    "page": 611,
+    "baseItem": "兽皮甲|XPHB",
+    "type": "MA|XPHB",
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 12,
+    "property": [
+      "TCM'24:CC"
+    ],
+    "ac": 12,
+    "bonusAc": "+2",
+    "entries": [
+      "这套厚重的戏装由毛皮、帆布与稻草等天然材料制成。其面具异常的巨大，形状像一个以令人不安的方式笑着的太阳。着装这套护甲期间，你的AC获得+2加值，并且它提供如下词条。",
+      {
+        "ENG_name": "Dancing Dodge",
+        "name": "舞步闪避",
+        "type": "entries",
+        "entries": [
+          "当你失败于一次敏捷豁免检定时，若你的{@variantrule 速度|XPHB}不为0，则你可以使用该属性将其改为豁免成功。该属性一经使用，则直至次夜黄昏之前，无法再次使用。"
+        ]
+      },
+      {
+        "ENG_name": "Wild Steps",
+        "name": "狂野步法",
+        "type": "entries",
+        "entries": [
+          "作为{@variantrule 附赠动作|XPHB}，你可以移动至多等于你{@variantrule 速度|XPHB}的距离，并且不会引发{@action 借机攻击|XPHB|借机攻击}。"
+        ]
+      },
+      {
+        "ENG_name": "Dancing Curse",
+        "name": "舞步诅咒",
+        "type": "entries",
+        "entries": [
+          "当你掷出{@variantrule 先攻|XPHB}时，你必须进行一次DC 0的感知豁免检定。豁免失败则你陷入{@condition 失能|XPHB}状态，并且你的{@variantrule 速度|XPHB}变为0，同时你表演一段民族舞蹈，直至你的下一回合开始。当你使用舞步闪避或狂野步法词条时，该豁免检定的DC提升2。直至你完成一次{@variantrule 长休|XPHB}前，该诅咒的DC不会再次提升。"
+        ]
+      }
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Revelry%20Suit.webp"
+          },
+          "width": 1200,
+          "height": 704,
+          "credit": "Humble Squid Creatives"
+        }
+      ]
+    }
+  }
+]

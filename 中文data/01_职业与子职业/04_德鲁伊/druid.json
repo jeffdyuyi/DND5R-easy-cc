@@ -1,0 +1,1129 @@
+﻿[
+  {
+    "name": "德鲁伊",
+    "ENG_name": "Druid",
+    "source": "PHB",
+    "edition": "classic",
+    "classData": {
+      "ENG_name": "Druid",
+      "name": "德鲁伊",
+      "source": "PHB",
+      "page": 64,
+      "srd": true,
+      "reprintedAs": [
+        "德鲁伊|XPHB"
+      ],
+      "edition": "classic",
+      "hd": {
+        "number": 1,
+        "faces": 8
+      },
+      "proficiency": [
+        "int",
+        "wis"
+      ],
+      "spellcastingAbility": "wis",
+      "casterProgression": "full",
+      "preparedSpells": "<$level$> + <$wis_mod$>",
+      "preparedSpellsChange": "restLong",
+      "cantripProgression": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "startingProficiencies": {
+        "armor": [
+          "light",
+          "medium",
+          {
+            "proficiency": "shield",
+            "full": "shields (druids will not wear armor or use shields made of metal)"
+          }
+        ],
+        "weapons": [
+          "{@item 短棒|PHB|短棒}",
+          "{@item 匕首|PHB|匕首}",
+          "{@item 飞镖|PHB|飞镖}",
+          "{@item 标枪|PHB|标枪}",
+          "{@item 硬头锤|PHB|硬头锤}",
+          "{@item 长棍|PHB|长棍}",
+          "{@item 弯刀|PHB|弯刀}",
+          "{@item 镰刀|PHB|镰刀}",
+          "{@item投石索|PHB|投石索}",
+          "{@item 矛|PHB|三叉枪}"
+        ],
+        "tools": [
+          "{@item 草药工具|PHB}"
+        ],
+        "toolProficiencies": [
+          {
+            "herbalism kit": true
+          }
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "arcana",
+                "animal handling",
+                "insight",
+                "medicine",
+                "nature",
+                "perception",
+                "religion",
+                "survival"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "default": [
+          "(a) 一个木制{@item 盾牌|PHB}或(b)任意{@filter 简易武器|items|source=PHB|category=基础|type=简易武器}",
+          "(a) 一把 {@item 弯刀|PHB} 或 (b) 任意{@filter 简易近战武器|items|source=PHB|category=基础|type=简易武器;近战武器=sand}",
+          "{@item 皮甲|PHB}, 一个 {@item 探索套组|PHB}, 和一个 {@item 德鲁伊法器|PHB}"
+        ],
+        "goldAlternative": "{@dice 2d4 × 10|2d4 × 10|起始金币}",
+        "defaultData": [
+          {
+            "a": [
+              "盾牌|PHB"
+            ],
+            "b": [
+              {
+                "equipmentType": "weaponSimple"
+              }
+            ]
+          },
+          {
+            "a": [
+              "弯刀|PHB"
+            ],
+            "b": [
+              {
+                "equipmentType": "weaponSimpleMelee"
+              }
+            ]
+          },
+          {
+            "_": [
+              "皮甲|PHB",
+              "探索套组|PHB",
+              {
+                "equipmentType": "focusSpellcastingDruidic"
+              }
+            ]
+          }
+        ]
+      },
+      "multiclassing": {
+        "requirements": {
+          "wis": 13
+        },
+        "proficienciesGained": {
+          "armor": [
+            "light",
+            "medium",
+            {
+              "proficiency": "shield",
+              "full": "shields (druids will not wear armor or use shields made of metal)"
+            }
+          ]
+        }
+      },
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "{@filter 已知戏法|spells|level=0|class=德鲁伊}"
+          ],
+          "rows": [
+            [
+              2
+            ],
+            [
+              2
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ],
+            [
+              3
+            ],
+            [
+              3
+            ],
+            [
+              3
+            ],
+            [
+              3
+            ],
+            [
+              3
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ],
+            [
+              4
+            ]
+          ]
+        },
+        {
+          "title": "每环法术位",
+          "colLabels": [
+            "{@filter 1st|spells|level=1|class=德鲁伊}",
+            "{@filter 2nd|spells|level=2|class=德鲁伊}",
+            "{@filter 3rd|spells|level=3|class=德鲁伊}",
+            "{@filter 4th|spells|level=4|class=德鲁伊}",
+            "{@filter 5th|spells|level=5|class=德鲁伊}",
+            "{@filter 6th|spells|level=6|class=德鲁伊}",
+            "{@filter 7th|spells|level=7|class=德鲁伊}",
+            "{@filter 8th|spells|level=8|class=德鲁伊}",
+            "{@filter 9th|spells|level=9|class=德鲁伊}"
+          ],
+          "rowsSpellProgression": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              2,
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "德鲁伊语|德鲁伊||1",
+        "施法|德鲁伊||1",
+        "荒野形态|德鲁伊||2",
+        "荒野伙伴|德鲁伊||2|TCE",
+        {
+          "classFeature": "德鲁伊结社|德鲁伊||2",
+          "gainSubclassFeature": true
+        },
+        "荒野形态增效|德鲁伊||4",
+        "属性值提升|德鲁伊||4",
+        "替换戏法|德鲁伊||4|TCE",
+        {
+          "classFeature": "德鲁伊结社特性|德鲁伊||6",
+          "gainSubclassFeature": true
+        },
+        "荒野形态增效|德鲁伊||8",
+        "属性值提升|德鲁伊||8",
+        {
+          "classFeature": "德鲁伊结社特性|德鲁伊||10",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|德鲁伊||12",
+        {
+          "classFeature": "德鲁伊结社特性|德鲁伊||14",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|德鲁伊||16",
+        "不朽身|德鲁伊||18",
+        "兽形施法|德鲁伊||18",
+        "属性值提升|德鲁伊||19",
+        "大德鲁伊|德鲁伊||20"
+      ],
+      "subclassTitle": "德鲁伊结社",
+      "hasFluff": true,
+      "hasFluffImages": true
+    },
+    "subclasses": [
+      {
+        "name": "大地结社",
+        "source": "PHB",
+        "shortName": "大地"
+      },
+      {
+        "name": "月亮结社",
+        "source": "PHB",
+        "shortName": "月亮"
+      },
+      {
+        "name": "梦境结社",
+        "source": "XGE",
+        "shortName": "梦境"
+      },
+      {
+        "name": "牧人结社",
+        "source": "XGE",
+        "shortName": "牧人"
+      },
+      {
+        "name": "孢子结社",
+        "source": "TCE",
+        "shortName": "孢子"
+      },
+      {
+        "name": "星辰结社",
+        "source": "TCE",
+        "shortName": "星辰"
+      },
+      {
+        "name": "野火结社",
+        "source": "TCE",
+        "shortName": "野火"
+      }
+    ]
+  },
+  {
+    "name": "德鲁伊",
+    "ENG_name": "Druid",
+    "source": "XPHB",
+    "edition": "one",
+    "classData": {
+      "ENG_name": "Druid",
+      "name": "德鲁伊",
+      "source": "XPHB",
+      "page": 78,
+      "srd52": true,
+      "basicRules2024": true,
+      "edition": "one",
+      "primaryAbility": [
+        {
+          "wis": true
+        }
+      ],
+      "hd": {
+        "number": 1,
+        "faces": 8
+      },
+      "proficiency": [
+        "int",
+        "wis"
+      ],
+      "spellcastingAbility": "wis",
+      "casterProgression": "full",
+      "preparedSpellsProgression": [
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        14,
+        15,
+        16,
+        16,
+        17,
+        17,
+        18,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "preparedSpellsChange": "restLong",
+      "cantripProgression": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "additionalSpells": [
+        {
+          "prepared": {
+            "1": [
+              "动物交谈|XPHB"
+            ],
+            "2": [
+              "寻获魔宠|XPHB"
+            ]
+          }
+        }
+      ],
+      "featProgression": [
+        {
+          "ENG_name": "Epic Boon",
+          "name": "传奇恩惠",
+          "category": [
+            "EB"
+          ],
+          "progression": {
+            "19": 1
+          }
+        }
+      ],
+      "startingProficiencies": {
+        "armor": [
+          "light",
+          "shield"
+        ],
+        "weapons": [
+          "简易"
+        ],
+        "tools": [
+          "{@item 草药工具|XPHB}"
+        ],
+        "toolProficiencies": [
+          {
+            "herbalism kit": true
+          }
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "arcana",
+                "animal handling",
+                "insight",
+                "medicine",
+                "nature",
+                "perception",
+                "religion",
+                "survival"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "defaultData": [
+          {
+            "A": [
+              {
+                "item": "皮甲|XPHB"
+              },
+              {
+                "item": "盾牌|XPHB"
+              },
+              {
+                "item": "镰刀|XPHB"
+              },
+              {
+                "item": "德鲁伊法器|XPHB"
+              },
+              {
+                "item": "探索套组|XPHB"
+              },
+              {
+                "item": "草药工具|XPHB"
+              },
+              {
+                "value": 900
+              }
+            ],
+            "B": [
+              {
+                "value": 5000
+              }
+            ]
+          }
+        ],
+        "entries": [
+          "{@i 选择A或B：} (A) {@item 皮甲|XPHB}, {@item 盾牌|XPHB}, {@item 镰刀|XPHB}, {@item 德鲁伊法器|XPHB|德鲁伊法器（长棍）}, {@item 探索套组|XPHB}, {@item 草药工具|XPHB}, 9金币; 或 (B) 50金币"
+        ]
+      },
+      "multiclassing": {
+        "proficienciesGained": {
+          "armor": [
+            "light",
+            "shield"
+          ]
+        }
+      },
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "荒野形态",
+            "{@filter 戏法|spells|level=0|class=德鲁伊}",
+            "{@filter 准备法术|spells|level=!0|class=德鲁伊}"
+          ],
+          "rows": [
+            [
+              0,
+              2,
+              4
+            ],
+            [
+              2,
+              2,
+              5
+            ],
+            [
+              2,
+              2,
+              6
+            ],
+            [
+              2,
+              3,
+              7
+            ],
+            [
+              2,
+              3,
+              9
+            ],
+            [
+              3,
+              3,
+              10
+            ],
+            [
+              3,
+              3,
+              11
+            ],
+            [
+              3,
+              3,
+              12
+            ],
+            [
+              3,
+              3,
+              14
+            ],
+            [
+              3,
+              4,
+              15
+            ],
+            [
+              3,
+              4,
+              16
+            ],
+            [
+              3,
+              4,
+              16
+            ],
+            [
+              3,
+              4,
+              17
+            ],
+            [
+              3,
+              4,
+              17
+            ],
+            [
+              3,
+              4,
+              18
+            ],
+            [
+              3,
+              4,
+              18
+            ],
+            [
+              4,
+              4,
+              19
+            ],
+            [
+              4,
+              4,
+              20
+            ],
+            [
+              4,
+              4,
+              21
+            ],
+            [
+              4,
+              4,
+              22
+            ]
+          ]
+        },
+        {
+          "title": "每环法术位",
+          "colLabels": [
+            "{@filter 1st|spells|level=1|class=德鲁伊}",
+            "{@filter 2nd|spells|level=2|class=德鲁伊}",
+            "{@filter 3rd|spells|level=3|class=德鲁伊}",
+            "{@filter 4th|spells|level=4|class=德鲁伊}",
+            "{@filter 5th|spells|level=5|class=德鲁伊}",
+            "{@filter 6th|spells|level=6|class=德鲁伊}",
+            "{@filter 7th|spells|level=7|class=德鲁伊}",
+            "{@filter 8th|spells|level=8|class=德鲁伊}",
+            "{@filter 9th|spells|level=9|class=德鲁伊}"
+          ],
+          "rowsSpellProgression": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              1,
+              1,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              3,
+              2,
+              2,
+              1,
+              1
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "德鲁伊语|德鲁伊|XPHB|1",
+        "原初职能|德鲁伊|XPHB|1",
+        "施法|德鲁伊|XPHB|1",
+        "荒野伙伴|德鲁伊|XPHB|2",
+        "荒野形态|德鲁伊|XPHB|2",
+        {
+          "classFeature": "德鲁伊子职|德鲁伊|XPHB|3",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|德鲁伊|XPHB|4",
+        "荒野复苏|德鲁伊|XPHB|5",
+        {
+          "classFeature": "子职特性|德鲁伊|XPHB|6",
+          "gainSubclassFeature": true
+        },
+        "元素之怒|德鲁伊|XPHB|7",
+        "属性值提升|德鲁伊|XPHB|8",
+        {
+          "classFeature": "子职特性|德鲁伊|XPHB|10",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|德鲁伊|XPHB|12",
+        {
+          "classFeature": "子职特性|德鲁伊|XPHB|14",
+          "gainSubclassFeature": true
+        },
+        "元素狂怒|德鲁伊|XPHB|15",
+        "属性值提升|德鲁伊|XPHB|16",
+        "兽形施法|德鲁伊|XPHB|18",
+        "传奇恩惠|德鲁伊|XPHB|19",
+        "大德鲁伊|德鲁伊|XPHB|20"
+      ],
+      "subclassTitle": "德鲁伊子职",
+      "hasFluff": true,
+      "hasFluffImages": true
+    },
+    "subclasses": [
+      {
+        "name": "大地结社",
+        "shortName": "大地",
+        "source": "XPHB",
+        "ENG_name": "Circle of the Land",
+        "className": "德鲁伊",
+        "classSource": "XPHB"
+      },
+      {
+        "name": "月亮结社",
+        "shortName": "月亮",
+        "source": "XPHB",
+        "ENG_name": "Circle of the Moon",
+        "className": "德鲁伊",
+        "classSource": "XPHB"
+      },
+      {
+        "name": "海洋结社",
+        "shortName": "海洋",
+        "source": "XPHB",
+        "ENG_name": "Circle of the Sea",
+        "className": "德鲁伊",
+        "classSource": "XPHB"
+      },
+      {
+        "name": "星辰结社",
+        "shortName": "星辰",
+        "source": "XPHB",
+        "ENG_name": "Circle of the Stars",
+        "className": "德鲁伊",
+        "classSource": "XPHB"
+      }
+    ]
+  }
+]

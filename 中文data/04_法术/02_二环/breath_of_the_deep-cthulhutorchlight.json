@@ -1,0 +1,65 @@
+[
+  {
+    "ENG_name": "Breath of the Deep",
+    "name": "深渊之息",
+    "source": "CthulhuTorchlight",
+    "page": 0,
+    "level": 2,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你从至深的海沟下咒唤海水包围一个施法距离内你可见的生物。海水将渗入目标的嘴中并环绕其身体，缓慢地以大海深不可测的重压碾碎目标。目标承受{@damage 3d6}钝击伤害，且在持续时间内无法说话或使用含有言语成分的法术。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "钝击"
+    ],
+    "miscTags": [
+      "SGT"
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Nature",
+    "name": "自然",
+    "source": "PHB",
+    "page": 178,
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "自然|XPHB"
+    ],
+    "ability": "int",
+    "entries": [
+      "你的智力（自然）检定量化你忆起关于地势、动植物、气候、自然周期相关知识的能力。"
+    ],
+    "translator": "不全书"
+  }
+]

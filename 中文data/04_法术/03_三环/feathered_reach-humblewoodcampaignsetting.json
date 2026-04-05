@@ -1,0 +1,136 @@
+[
+  {
+    "ENG_name": "Feathered Reach",
+    "name": "羽化",
+    "source": "HumblewoodCampaignSetting",
+    "page": 50,
+    "level": 3,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "s": true,
+      "m": {
+        "text": "一根小羽毛"
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你将你的双臂变成了强大的翅膀，你的手指变成了长而优雅的羽毛。这个法术的效果持续1分钟，届时羽毛会逐渐脱落，当你的双臂恢复到原来的形状时，你将轻轻地飘浮到地面上。这个法术赋予施法者以下好处：",
+      {
+        "type": "list",
+        "items": [
+          "作为附赠动作，你可以飞行，速度是你的移动速度的两倍。一旦完成移动，你必须着陆，尽管在这个法术生效期间你不会遭受坠落伤害，因为你的羽毛手臂会轻轻地将你带到地面。",
+          "你可以使用你强大的羽翼臂来向上推动自己，距离等于你移动速度的一半。你可以在你的回合中这样做一次，并且可以与常规跳跃一起使用。",
+          "当坠落时，你可以使用你的反应来僵硬你的手臂，并在风中滑翔。你可以以你的移动速度飞行，向任何方向飞行，选择你着陆的地方。",
+          "你在进行所有{@skill 运动}检定以进行长跳或高跳时获得优势。你不需要在跳跃前移动10尺以获得距离，并且你通常跳跃的距离将增加两倍。"
+        ]
+      },
+      "为了从这个法术中受益，你的双手必须没有盾牌和重型武器，并且你不能负重。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "PHB"
+        }
+      ]
+    },
+    "miscTags": [
+      "ADV",
+      "UBA"
+    ],
+    "hasFluffImages": true,
+    "foundryActivities": [
+      {
+        "ENG_name": "Cast",
+        "name": "施放",
+        "type": "utility"
+      },
+      {
+        "ENG_name": "Fly",
+        "name": "飞行术",
+        "activation": {
+          "type": "bonus",
+          "override": true
+        },
+        "consumption.spellSlot": false,
+        "duration": {
+          "units": "inst",
+          "override": true
+        },
+        "type": "utility"
+      },
+      {
+        "ENG_name": "Propel",
+        "name": "推进",
+        "activation": {
+          "type": null,
+          "condition": "每回合一次",
+          "override": true
+        },
+        "consumption.spellSlot": false,
+        "duration": {
+          "units": "inst",
+          "override": true
+        },
+        "type": "utility"
+      },
+      {
+        "ENG_name": "Glide",
+        "name": "滑翔",
+        "activation": {
+          "type": "reaction",
+          "condition": "当坠落时",
+          "override": true
+        },
+        "consumption.spellSlot": false,
+        "duration": {
+          "units": "inst",
+          "override": true
+        },
+        "type": "utility"
+      }
+    ],
+    "fluff": {
+      "ENG_name": "Feathered Reach",
+      "name": "羽化",
+      "source": "HumblewoodCampaignSetting",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/HumblewoodCampaignSetting/spells/Feathered-Reach.webp"
+          },
+          "width": 450,
+          "height": 641
+        }
+      ]
+    }
+  }
+]

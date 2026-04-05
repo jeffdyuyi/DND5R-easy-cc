@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Living Spud",
+    "name": "活体土豆",
+    "source": "ObojimaTallGrass",
+    "page": 212,
+    "type": "Ingred",
+    "rarity": "uncommon",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 14|large}|SneakerProMedium}",
+            "{@font {@style 12|large}|SneakerProMedium}",
+            "{@font {@style 17|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "时不时会有一个土豆从地里冒出来，开始一段漫长的漫游之旅。胧忆岛的农民称它们为\"活体土豆\"，它们是好奇与敬畏的对象。马车会在路上停下，拥挤市场中的人们也会让路让活体土豆蹒跚而过。但无论是什么赋予了这些任性的土豆生命力，这种魔法都受到药水酿酒师的青睐，他们会用哪怕是最小一片活体土豆来为他们的酿造提供法力。"
+    ],
+    "lootTables": [
+      "狂风农田非普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/living-spud.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 3060,
+          "height": 3060
+        }
+      ]
+    }
+  }
+]

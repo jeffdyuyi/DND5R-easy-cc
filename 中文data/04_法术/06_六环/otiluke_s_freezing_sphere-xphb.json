@@ -1,0 +1,74 @@
+[
+  {
+    "ENG_name": "Otiluke's Freezing Sphere",
+    "name": "欧提路克冰封法球",
+    "source": "XPHB",
+    "page": 302,
+    "srd52": "冰封法球",
+    "basicRules2024": true,
+    "level": 6,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 300
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一颗微缩水晶球"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "一颗冰球从你的指尖射向施法距离内你指定的一点，并在该处迸裂为一个半径 60 尺的{@variantrule 球状 [效应区域]|XPHB|球状}区域。区域内的每个生物必须进行一次体质豁免。豁免失败者受到{@damage 10d6}点寒冷伤害，豁免成功则只受一半伤害。",
+      "如果冰球击中某处水体，水面将在边长 30 尺的方形区域内凝结出 6 寸厚的坚冰。坚冰持续 1 分钟。任何在其表面上游泳的生物将被冰面所困，陷入{@condition 束缚|XPHB}状态。受困的生物可以用一个动作进行一次对抗你的法术豁免 DC 的力量（{@skill 运动|XPHB}）检定以破冰挣脱。",
+      "你可以在施法完毕后不发射冰球。此时你手上将出现一枚投石索子弹大小的触感冰冷的小冰球。你可以选择将冰球交给任意一名生物。持有冰球的生物可以将冰球投出去（射程至多为 40 尺）或者用投石索将其弹射出去（射程至多为投石索的常规射程）。冰球将在撞击时破碎，产生与正常施法时相同的效应。你还可以将冰球放下而不直接打破它。冰球若在 1 分钟后仍未被打破，它将自动爆炸。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "使用的法术位每比六环高一环，其伤害就增加{@scaledamage 10d6|6-9|1d6}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "cold"
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "abilityCheck": [
+      "力量"
+    ],
+    "areaTags": [
+      "S"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "法师"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "体质"
+    ],
+    "display_damageInflict": [
+      "寒冷"
+    ]
+  }
+]

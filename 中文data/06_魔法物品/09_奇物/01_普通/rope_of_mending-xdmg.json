@@ -1,0 +1,20 @@
+[
+  {
+    "ENG_name": "Rope of Mending",
+    "name": "修补绳",
+    "source": "XDMG",
+    "page": 302,
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "这根50尺长的绳索可以在被切成任意数量的小段后自行修复。以一个{@action 魔法|XPHB}动作，你可以让所有相互接触且当前并未以其他方式被使用的绳段重新结合在一起。如果其中一段修补绳丢失或被摧毁，则其长度将永远缩短。"
+    ],
+    "lootTables": [
+      "奥秘 - 普通|XDMG",
+      "器具 - 普通|XDMG"
+    ],
+    "translator": "不全书",
+    "valueReference": 100,
+    "type": "W"
+  }
+]

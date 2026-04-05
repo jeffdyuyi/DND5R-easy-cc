@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Gunner",
+    "name": "枪手",
+    "source": "TCE",
+    "page": 80,
+    "ability": [
+      {
+        "dex": 1
+      }
+    ],
+    "weaponProficiencies": [
+      {
+        "firearms": true
+      }
+    ],
+    "entries": [
+      "你持枪时的手快眼明使你获得了以下增益：",
+      {
+        "type": "list",
+        "items": [
+          "你获得枪械的熟练项（见城主指南的{@variantrule 枪械|DMG}栏目）。",
+          "你忽略枪械的{@itemProperty LD|PHB|装填}词条。",
+          "你在敌对生物５尺范围内发动远程攻击检定时，不会因此而具有劣势。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

@@ -1,0 +1,73 @@
+[
+  {
+    "ENG_name": "Water Breathing",
+    "name": "水下呼吸",
+    "source": "PHB",
+    "page": 287,
+    "srd": true,
+    "referenceSources": [
+      "RoT",
+      "PotA",
+      "SKT",
+      "WDMM",
+      "GoS",
+      "LR",
+      "ToR",
+      "CRCotN"
+    ],
+    "reprintedAs": [
+      "水下呼吸|XPHB"
+    ],
+    "level": 3,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一截短芦苇或一根麦秆"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 24
+        }
+      }
+    ],
+    "meta": {
+      "ritual": true
+    },
+    "entries": [
+      "在法术终止前，该法术让施法距离内你能看见的至多十个自愿生物获得在水下呼吸的能力。此外，受术者依然保有正常的呼吸能力。"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "areaTags": [
+      "MT"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊",
+      "游侠",
+      "术士",
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "变化系",
+    "display_ritual": "仪式"
+  }
+]

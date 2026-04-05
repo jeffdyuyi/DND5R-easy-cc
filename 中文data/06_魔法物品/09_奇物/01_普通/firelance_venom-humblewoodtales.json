@@ -1,0 +1,21 @@
+[
+  {
+    "ENG_name": "Firelance Venom",
+    "name": "火矛毒液",
+    "source": "HumblewoodTales",
+    "page": 180,
+    "type": "G",
+    "rarity": "none",
+    "value": 30000,
+    "poison": true,
+    "entries": [
+      "这种毒素是从一只死亡或{@condition 失能}的{@creature 火矛蜂|humblewoodtales}的毒囊中提取的。受到这种毒素影响的生物必须进行一次{@dc 11}的体质豁免检定，豁免失败则受到14（{@damage 4d6}）毒素伤害，豁免成功则受到一半伤害。如果毒素伤害将生物的生命值降至0，该生物将{@condition 中毒}1小时，即使恢复生命值后仍然如此。一剂这种毒素的花费为300金币。"
+    ],
+    "poisonTypes": [
+      "伤害"
+    ],
+    "miscTags": [
+      "CNS"
+    ]
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "ENG_name": "Astronomer's Boon",
+    "name": "演星术之恩惠",
+    "source": "GriffonsSaddlebag2",
+    "page": 40,
+    "tier": "主要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这个黄铜星盘的玻璃背板会在有光线透过它时柔和地闪烁。当你通过星盘观察夜空时，星盘上会显现出你能看到的任何星座——连同构成它的所有星体——的名字和图样。在DM的裁量下，你在通过星盘观察星座时，可能会发现下列星座中的一个或多个。当你找到下列星座之一时，星盘会开始发光，此时你可以用一个动作说出星盘的命令语，以获得相应星座的增益：",
+      {
+        "ENG_name": "The Drum",
+        "name": "军鼓座",
+        "type": "entries",
+        "entries": [
+          "3颗星星在你的背部显现出鼓的形状。当你进行先攻掷骰时，你可以消耗1颗星星作为反应，为你以及任何距你10尺以内的其他友方生物在本次掷骰上提供+1加值。此外，任何获得此先攻加值的生物都能在战斗中其第一个回合以一个附赠动作执行{@action 疾走}或{@action 撤离}动作。"
+        ]
+      },
+      {
+        "ENG_name": "The Knight",
+        "name": "骑士座",
+        "type": "entries",
+        "entries": [
+          "5颗星辰在你的手臂上显现出剑的形状。当你用近战攻击命中时，你可以选择消耗1颗星辰作为攻击的一部分，使目标额外受到{@damage 1d4}光耀伤害。或者，如果30尺内一个你能看见的友方生物用近战攻击命中目标时，你可以用你的反应消耗1颗星辰并用光亮术增强这次攻击，使目标额外受到{@damage 1d4}光耀伤害。"
+        ]
+      },
+      {
+        "ENG_name": "The Seer",
+        "name": "先知座",
+        "type": "entries",
+        "entries": [
+          "4颗星辰在你的额头上显现，排列成一颗眼睛的形状。你可以用一个附赠动作消耗1颗星辰并接触一个生物。在接下来的10分钟内，该生物有一次机会可以选择将{@dice 1d4}添加到其进行的属性检定或豁免检定中。其可以在为检定掷骰之前或之后选择是否加入此加值。"
+        ]
+      },
+      "这些星星会持续存在直至下一个黄昏，届时任何未使用的星星都会消隐并迷失。一旦星盘以此法提供了增益，则星盘的该属性直至下一个黄昏前都无法再次使用。"
+    ],
+    "lootTables": [
+      "魔法物品表 F2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Astronomers-Boon.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

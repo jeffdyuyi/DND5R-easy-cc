@@ -1,0 +1,73 @@
+[
+  {
+    "ENG_name": "Charm of Swarms",
+    "name": "虫群护咒",
+    "source": "MonstersOfDrakkenheim",
+    "page": 384,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这个护咒形似一只大型蚊蚋。它由死亡蘑菇的孢子制成；上面放置了一只昆虫类生物的颚齿。护咒涂有强酸胆汁，并由干燥的粘液固定。闻起来有虫子和腐烂的气味。",
+      "当5尺内的仇敌对你发动的攻击造成{@variantrule 重击|XPHB}时，你可以使该仇敌陷入{@condition 燃烧|MonstersOfDrakkenheim}状态（{@dice 2d6}暗蚀）。当目标以此方式处于{@condition 燃烧|MonstersOfDrakkenheim}状态时，你对目标发动的攻击具有{@variantrule 优势|XPHB}。",
+      {
+        "ENG_name": "Crafting",
+        "name": "手作",
+        "type": "entries",
+        "entries": [
+          "制作虫群护咒需要一个非普通工坊和以下非普通成分：",
+          {
+            "type": "list",
+            "items": [
+              {
+                "ENG_name": "[Animus]",
+                "name": "[精魄]",
+                "type": "item",
+                "entries": [
+                  "任意精魄"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Fluid]",
+                "name": "[流体]",
+                "type": "item",
+                "entries": [
+                  "强酸胆汁"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Fluid]",
+                "name": "[流体]",
+                "type": "item",
+                "entries": [
+                  "粘液"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Natural Weapon]",
+                "name": "[天生武器]",
+                "type": "item",
+                "entries": [
+                  "孢子"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Natural Weapon]",
+                "name": "[天生武器]",
+                "type": "item",
+                "entries": [
+                  "颚齿"
+                ],
+                "nameDot": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluffImages": true
+  }
+]

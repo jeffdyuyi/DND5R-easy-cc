@@ -1,0 +1,40 @@
+{
+  "ENG_name": "Clockwork Soul",
+  "name": "时械之魂",
+  "shortName": "时械之魂",
+  "source": "TCE",
+  "className": "术士",
+  "classSource": "XPHB",
+  "_copy": {
+    "ENG_name": "Clockwork Soul",
+    "name": "时械之魂",
+    "source": "TCE",
+    "shortName": "时械之魂",
+    "className": "术士",
+    "classSource": "PHB",
+    "_preserve": {
+      "page": true,
+      "otherSources": true,
+      "referenceSources": true,
+      "srd": true,
+      "basicRules": true,
+      "reprintedAs": true
+    }
+  },
+  "subclassFeatures": [
+    "时械之魂|术士|XPHB|时械之魂|TCE|3",
+    "律令之壁|术士||时械之魂|TCE|6",
+    "序列意识|术士||时械之魂|TCE|14",
+    "时械矩阵|术士||时械之魂|TCE|18"
+  ],
+  "fluff": {
+    "_subclassFluff": {
+      "ENG_name": "Clockwork Soul",
+      "name": "时械之魂",
+      "source": "TCE",
+      "shortName": "时械之魂",
+      "className": "术士",
+      "classSource": "PHB"
+    }
+  }
+}

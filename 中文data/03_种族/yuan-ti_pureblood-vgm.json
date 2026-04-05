@@ -1,0 +1,148 @@
+[
+  {
+    "name": "纯血原体蛇人",
+    "ENG_name": "Yuan-ti Pureblood",
+    "source": "VGM",
+    "page": 120,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "cha": 2,
+        "int": 1
+      }
+    ],
+    "darkvision": 60,
+    "immune": [
+      "毒素"
+    ],
+    "conditionImmune": [
+      "中毒"
+    ],
+    "traitTags": [
+      "魔法抗性",
+      "怪物种族"
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "abyssal": true,
+        "draconic": true
+      }
+    ],
+    "additionalSpells": [
+      {
+        "innate": {
+          "1": [
+            "化兽为友"
+          ],
+          "3": {
+            "daily": {
+              "1": [
+                "暗示术"
+              ]
+            }
+          }
+        },
+        "ability": "cha",
+        "known": {
+          "1": [
+            "毒气喷涌#c"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Age",
+        "name": "年龄",
+        "type": "entries",
+        "entries": [
+          "纯血原体蛇人成年岁数与人类相仿，寿命亦与其相仿。"
+        ]
+      },
+      {
+        "ENG_name": "Size",
+        "name": "体型",
+        "type": "entries",
+        "entries": [
+          "纯血原体蛇人与人类在平均体型和重量上相同。你的体型为中型。"
+        ]
+      },
+      {
+        "ENG_name": "Darkvision",
+        "name": "黑暗视觉",
+        "entries": [
+          "你在60尺范围内的微光光照下视物视为明亮光照，60尺黑暗下视物视为微光光照。你无法在黑暗中分辨颜色，只能看到灰色轮廓。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Innate Spellcasting",
+        "name": "天生施法",
+        "entries": [
+          "你习得戏法{@spell 毒气喷涌}。你可以通过此特质无限制地施放{@spell 化兽为友}，但以此施放的法术目标只能是蛇。从3级开始，你还可以通过此特质施放{@spell 暗示术}。一旦你施放了它，在你完成一次长休前无法再次施放。魅力是你这些法术的施法属性。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Magic Resistance",
+        "name": "魔法抗性",
+        "entries": [
+          "你在对抗法术和其他魔法效果时进行的豁免检定具有优势。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Poison Immunity",
+        "name": "中毒免疫",
+        "entries": [
+          "你免疫毒素伤害和{@condition 中毒}状态。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Languages",
+        "name": "语言",
+        "entries": [
+          "你能够说、读、写通用语、深渊语和龙语。"
+        ],
+        "type": "entries"
+      }
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/VGM/Yuan-ti Pureblood.webp"
+          },
+          "width": 282,
+          "height": 618
+        }
+      ]
+    },
+    "age": {
+      "mature": 20,
+      "max": 100
+    },
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "heightAndWeight": {
+      "baseHeight": 56,
+      "heightMod": "2d10",
+      "baseWeight": 110,
+      "weightMod": "2d4"
+    },
+    "reprintedAs": [
+      "蛇人|MPMM"
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/yuan-ti-pureblood.mp3"
+    }
+  }
+]

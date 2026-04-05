@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "Tidecaller Trident",
+    "name": "涌潮者三叉戟",
+    "source": "BMT",
+    "page": 69,
+    "baseItem": "三叉戟|PHB",
+    "type": "M",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "weight": 4,
+    "weaponCategory": "martial",
+    "property": [
+      "T",
+      "V"
+    ],
+    "range": "20/60",
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "dmg2": "1d8",
+    "bonusWeapon": "+2",
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "你用这把魔法三叉戟发动的攻击检定与其伤害掷骰具有+2加值。此外，若你身处于水下，你用这把武器发动的攻击检定将具有优势。",
+      "这把三叉戟具有3发充能。你可以消耗1发充能用其施放{@spell 操控水体}（豁免{@dc 15}）或是消耗3发充能用其施放{@spell 海啸术}（豁免{@dc 15}）。这把三叉戟每日黎明时分恢复{@dice 1d3}发已消耗的充能数。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "操控水体"
+        ],
+        "3": [
+          "海啸术"
+        ]
+      }
+    },
+    "valueReference": 40000
+  }
+]

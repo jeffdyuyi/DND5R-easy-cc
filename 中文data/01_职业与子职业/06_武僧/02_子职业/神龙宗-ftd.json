@@ -1,0 +1,218 @@
+{
+  "ENG_name": "Way of the Ascendant Dragon",
+  "name": "神龙宗",
+  "shortName": "神龙",
+  "source": "FTD",
+  "className": "武僧",
+  "classSource": "PHB",
+  "page": 13,
+  "edition": "classic",
+  "subclassFeatures": [
+    "神龙宗|武僧||神龙|FTD|3",
+    "龙之徒|武僧||神龙|FTD|3",
+    "龙之息|武僧||神龙|FTD|3",
+    "龙翼翱翔|武僧||神龙|FTD|6",
+    "古龙姿|武僧||神龙|FTD|11",
+    "神龙身|武僧||神龙|FTD|17"
+  ],
+  "features": [
+    {
+      "name": "神龙宗",
+      "ENG_name": "Way of the Ascendant Dragon",
+      "source": "FTD",
+      "page": 13,
+      "className": "武僧",
+      "classSource": "PHB",
+      "subclassShortName": "神龙",
+      "subclassSource": "FTD",
+      "level": 3,
+      "entries": [
+        "众所周知，龙神巴哈姆特曾以年轻武僧的装扮行遍多元宇宙。传说以此为开山立派之基，是为神龙宗。此宗派的武学模仿龙之姿态，使武僧将自身融入世界及其魔法之中。这些武僧通过对自我魂灵的更新以与巨龙伟力产生共鸣，腾展龙翼，怒而飞天。所有武学旨在与物质位面的本质达成连结，即“天人合一”之境。",
+        "作为神龙宗的学徒，由你决定自己是如何激发出体内的巨龙之力。以下表格提供了些许建议：",
+        {
+          "type": "table",
+          "caption": "神龙起源",
+          "colLabels": [
+            "d6",
+            "起源"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-11"
+          ],
+          "rows": [
+            [
+              "1",
+              "你通过观察巨龙并将自己的气与它们改天换地的力量相调和来磨练技艺。"
+            ],
+            [
+              "2",
+              "一位巨龙主动地帮助你修炼自身的能量。"
+            ],
+            [
+              "3",
+              "你所在修道院的教义可追溯到数百年前一只古龙的指导。"
+            ],
+            [
+              "4",
+              "你在一个远古巨龙巢穴的影响范围内冥想良久，吸收了环境中的魔力。"
+            ],
+            [
+              "5",
+              "你找到了一张龙语卷轴，里面包含了令人顿悟的崭新技巧。"
+            ],
+            [
+              "6",
+              "你梦到了一名五首龙神，当你醒来时，体内的气已宛如龙息。"
+            ]
+          ]
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "龙之徒|武僧||神龙|FTD|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "龙之息|武僧||神龙|FTD|3"
+        }
+      ]
+    },
+    {
+      "name": "龙之徒",
+      "ENG_name": "Draconic Disciple",
+      "source": "FTD",
+      "page": 13,
+      "className": "武僧",
+      "classSource": "PHB",
+      "subclassShortName": "神龙",
+      "subclassSource": "FTD",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "通过引导你的龙之气，你可以将龙息的精华注入到你的徒手打击之中。你获得以下好处：",
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "龙之威仪 Draconic Presence",
+              "entry": "如果你在一次魅力（{@skill 威吓|PHB}）或魅力（{@skill 游说|PHB}）检定中失败，你可以显现出巨龙的威仪，并用你的反应来重掷此检定。一旦此特性将检定结果从失败变为成功，在完成一次长休前你无法再次使用此特性。"
+            },
+            {
+              "type": "item",
+              "name": "龙之打击 Draconic Strike",
+              "entry": "当你以徒手打击对一个目标造成伤害时，你可以将伤害类型改变为强酸、冷冻、火焰、闪电或毒素。"
+            },
+            {
+              "type": "item",
+              "name": "龙之言语 Tongue of Dragons",
+              "entry": "你可以说、读、写{@language 龙语|PHB}或其他一种你选择的语言。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "龙之息",
+      "ENG_name": "Breath of the Dragon",
+      "source": "FTD",
+      "page": 13,
+      "className": "武僧",
+      "classSource": "PHB",
+      "subclassShortName": "神龙",
+      "subclassSource": "FTD",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你可以引导气来将其化为毁灭性的能量波。当你在你的回合进行{@action 攻击|PHB}动作时，你可以将其中一次攻击替换为喷吐出一团 20 尺锥状或 30 尺长 5 尺宽长线（由你选择）的龙类能量。选择以下一种伤害类型：强酸、冷冻、火焰、闪电或毒素。范围内的每个生物必须进行一次敏捷豁免。豁免失败者受到数值等同于你的两枚武艺骰掷点的伤害，豁免成功则伤害减半。",
+        "在第 11 级时，该伤害提升到三枚武艺骰。",
+        "你可以使用此特性的次数等同于你的熟练加值，且在完成一次长休后重获所有已消耗的使用次数。当你没有使用次数时，你可以通过消耗 2 点气来再次使用此特性。"
+      ]
+    },
+    {
+      "name": "龙翼翱翔",
+      "ENG_name": "Wings Unfurled",
+      "source": "FTD",
+      "page": 13,
+      "className": "武僧",
+      "classSource": "PHB",
+      "subclassShortName": "神龙",
+      "subclassSource": "FTD",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "当你使用{@action 飞檐走壁|PHB}时，你可以在背后展开虚幻的龙翼，其在你回合结束时消失。当龙翼存在时，你获得与你的步行速度相同的飞行速度。",
+        "你可以使用此特性的次数等同于你的熟练加值。当你完成一次长休后，你重获所有已消耗的使用次数。"
+      ]
+    },
+    {
+      "name": "古龙姿",
+      "ENG_name": "Aspect of the Wyrm",
+      "source": "FTD",
+      "page": 13,
+      "className": "武僧",
+      "classSource": "PHB",
+      "subclassShortName": "神龙",
+      "subclassSource": "FTD",
+      "level": 11,
+      "header": 2,
+      "entries": [
+        "龙气从你体内散发，守护盟友并惩罚敌人。以一个附赠动作，你可以在自身周围 10 尺范围内具现出一股持续 1 分钟的龙力灵光。在持续时间内，你选择并获得以下两种增益之一：",
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "骇人威仪 Frightful Presence",
+              "entry": "当你散发出此灵光时，或者在大灵光保持期间以一个附赠动作，选择范围内的一个生物。目标必须通过一次感知豁免，否则对你持续{@condition 恐慌|PHB} 1 分钟。目标可以在其回合结束时重复豁免。"
+            },
+            {
+              "type": "item",
+              "name": "巨龙抵抗 Resistance",
+              "entry": "你启动此灵光时选择一种伤害类型：强酸、冷冻、火焰、闪电或毒素。你和灵光内的盟友对所选伤害类型具有抗性。"
+            }
+          ]
+        },
+        "一旦你使用了该灵光，在完成一次长休前你无法再次使用，除非消耗 3 点气再次开启。"
+      ]
+    },
+    {
+      "name": "神龙身",
+      "ENG_name": "Ascendant Aspect",
+      "source": "FTD",
+      "page": 13,
+      "className": "武僧",
+      "classSource": "PHB",
+      "subclassShortName": "神龙",
+      "subclassSource": "FTD",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "你的龙魂巅峰造极。你获得以下好处：",
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "强化吐息 Augment Breath",
+              "entry": "当你使用“龙之息”时，你可以消耗 1 点气来增强其威力。吐息范围增长至 60 尺锥状或 90 尺长 5 尺宽长线，且伤害提升到四枚武艺骰。"
+            },
+            {
+              "type": "item",
+              "name": "盲视 Blindsight",
+              "entry": "你获得 10 尺{@sense 盲视|PHB}。你可以看到范围内的隐形生物，除非其对你躲藏成功。"
+            },
+            {
+              "type": "item",
+              "name": "爆发怒火 Explosive Fury",
+              "entry": "当你启动“古龙姿”灵光时，你可以释放龙威。选择你见到的位于灵光范围内的任意数量生物。每个生物必须进行一次敏捷豁免，豁免失败者受到 {@damage 3d10} 点光耀或暗蚀伤害（由你启动灵光时决定）。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

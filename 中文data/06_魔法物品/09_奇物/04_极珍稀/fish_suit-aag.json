@@ -1,0 +1,33 @@
+[
+  {
+    "ENG_name": "Fish Suit",
+    "name": "游鱼服",
+    "source": "AAG",
+    "page": 22,
+    "referenceSources": [
+      "LoX"
+    ],
+    "rarity": "very rare",
+    "wondrous": true,
+    "entries": [
+      "这套笨重的套装将你的头部和身体完全包裹起来，穿脱它需要1分钟的时间。穿戴期间，它能使你能在没有空气的环境中呼吸，并保护你免受你周遭任何有害气体的影响。这套服装还能在你在水中环境下为你提供等同于你步行速度的游泳速度，或在无重力环境下为你提供等同于你步行速度的飞行速度。"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 40000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/AAG/Fish Suit.webp"
+          },
+          "credit": "Olga Drebas",
+          "width": 850,
+          "height": 924
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

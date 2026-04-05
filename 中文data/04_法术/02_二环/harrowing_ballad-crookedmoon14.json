@@ -1,0 +1,84 @@
+[
+  {
+    "ENG_name": "Harrowing Ballad",
+    "name": "黯然销魂曲",
+    "source": "CrookedMoon14",
+    "page": 129,
+    "reprintedAs": [
+      "黯然销魂曲|crookedmoon24"
+    ],
+    "level": 2,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你对一个射程内能看见的生物施加一首侵蚀心智的歌曲。如果该生物的智力值为4或更高，它必须成功通过一次智力豁免检定否则被你{@condition 魅惑}，持续时间为该法术的持续时间。",
+      "当目标以此方式处于{@condition 魅惑}状态时，会被只有它能听到的快速重复的叙事诗所困扰；它在自己每回合开始时受到{@damage 1d6}心灵伤害，并且在感知（{@skill 察觉}）检定和为了维持{@status 专注}而进行的体质豁免检定上具有劣势。目标在自己每回合结束时重复此豁免检定，成功则终止法术。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用3环或更高法术位施放该法术时，使用的法术位每比2环高一级，伤害就增加{@dice 1d6}。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "心灵"
+    ],
+    "savingThrow": [
+      "体质",
+      "智力"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Spells/Harrowing-Ballad.webp"
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "ENG_name": "Buried Alive",
+    "name": "活埋术",
+    "source": "CrookedMoon24",
+    "page": 125,
+    "level": 4,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一撮坟墓泥土"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "即使敌人尚未死亡，你也能将它们送入坟墓。施法距离内一个站在地面上的你可见生物必须进行一次力量豁免。若豁免失败，则地面开裂并吞没目标，将其埋葬入至多10尺深的地下。在被埋葬期间，目标具有{@variantrule 掩护|XPHB|全身掩护}，陷入{@condition 束缚|XPHB}和{@condition 目盲|XPHB}状态，并且无法呼吸。若豁免成功，则目标陷入{@condition 倒地|XPHB}状态，并且其{@variantrule 速度|XPHB}为0，直至其下一回合结束。被埋葬的生物可以通过使用其动作进行一次DC15的力量（{@skill 运动|XPHB}）检定来尝试从坟墓中掘出。检定成功时，它向地表掘进5尺。检定成功且差值为5或更高时，则其到达地表。当该生物到达地表时，它会以{@condition 倒地|XPHB}状态从地面出来。",
+      "如果目标站在任意厚度的石头或金属上，或者至少2寸厚的木头上，则其在该豁免检定中自动成功。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "conditionInflict": [
+      "倒地"
+    ],
+    "savingThrow": [
+      "力量"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Spells/Buried-Alive.webp"
+  }
+]

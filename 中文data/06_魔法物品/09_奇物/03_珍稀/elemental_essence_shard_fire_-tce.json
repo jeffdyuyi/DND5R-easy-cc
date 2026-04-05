@@ -1,0 +1,34 @@
+[
+  {
+    "ENG_name": "Elemental Essence Shard (Fire)",
+    "name": "元素精粹碎晶（火）",
+    "source": "TCE",
+    "page": 127,
+    "type": "SCF",
+    "rarity": "rare",
+    "reqAttune": "由术士",
+    "reqAttuneTags": [
+      {
+        "class": "术士"
+      }
+    ],
+    "wondrous": true,
+    "weight": 1,
+    "focus": [
+      "术士"
+    ],
+    "entries": [
+      "这块噼啪作响的水晶包含着一个元素位面的精华。作为动作，你可以将碎片附着在一个小物品（比如武器或珠宝）上，或者将其取下。如果你对它的调整结束，它就会掉下来。你可以在持有或佩戴它时，将碎片用作施法焦点。",
+      "当你在持有或佩戴碎片时对法术使用变形魔法选项，你可以使用以下特性：",
+      {
+        "ENG_name": "Property",
+        "name": "属性",
+        "type": "entries",
+        "entries": [
+          "你所见的一个法术目标会着火。燃烧的目标在其下一回合开始时受到 {@damage 2d10} 点火焰伤害，然后火焰熄灭。"
+        ]
+      }
+    ],
+    "valueReference": 4000
+  }
+]

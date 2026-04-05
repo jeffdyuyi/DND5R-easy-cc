@@ -1,0 +1,44 @@
+[
+  {
+    "ENG_name": "Crafter's Brew",
+    "name": "工匠酿造",
+    "source": "ObojimaTallGrass",
+    "page": 248,
+    "type": "P",
+    "rarity": "rare",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "工匠酿造可以添加到任何更大的水容器或小型水体中以创造一个附魔浴池。第一个在水中浸泡至少1分钟的非魔法物件将获得一个永久的魔法效应。此效应随机且足够强大，应考虑将该物品的稀有度视为非普通或更高。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 57|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/crafters-brew.webp"
+          },
+          "width": 1383,
+          "height": 1383
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

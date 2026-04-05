@@ -1,0 +1,134 @@
+[
+  {
+    "ENG_name": "Spiny Shield",
+    "name": "尖刺护盾",
+    "source": "HumblewoodCampaignSetting",
+    "page": 51,
+    "otherSources": [
+      {
+        "source": "HumblewoodTales",
+        "page": 251
+      }
+    ],
+    "level": 1,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "反应"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一支小羽毛笔"
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "round",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "一道由魔法力量制成的虚无尖刺屏障，在你和一个攻击者之间插入。在你的下一个回合之前，当你被近战攻击击中时，屏障会减少你受到的伤害{@dice 2d4}，并对攻击者造成相同数量的穿刺伤害。这个盾牌对远程攻击者无效，但在持续时间内仍然提供+2的AC加值（视为{@quickref 掩护||3||半身掩护}）。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用高于1级的法术位施放这个法术时，每超过1级的法术位都会使法术效果额外增加{@scaledice 2d4|1-9|1d4}。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "穿刺"
+    ],
+    "miscTags": [
+      "MAC",
+      "SCL"
+    ],
+    "hasFluffImages": true,
+    "foundryActivities": [
+      {
+        "ENG_name": "Cast",
+        "name": "施放",
+        "type": "utility"
+      },
+      {
+        "activation": {
+          "type": "special",
+          "condition": "当你被近战攻击命中",
+          "override": true
+        },
+        "damage.parts": [
+          {
+            "number": 2,
+            "denomination": 4,
+            "types": [
+              "piercing"
+            ],
+            "scaling.mode": "whole"
+          }
+        ],
+        "duration": {
+          "units": "inst",
+          "override": true
+        },
+        "type": "damage"
+      }
+    ],
+    "fluff": {
+      "ENG_name": "Spiny Shield",
+      "name": "尖刺护盾",
+      "source": "HumblewoodCampaignSetting",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/HumblewoodCampaignSetting/spells/Spiny-Shield.webp"
+          },
+          "width": 450,
+          "height": 701
+        }
+      ]
+    }
+  }
+]

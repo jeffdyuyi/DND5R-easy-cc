@@ -1,0 +1,57 @@
+[
+  {
+    "ENG_name": "Blade Ward",
+    "name": "剑刃防护",
+    "source": "PHB",
+    "page": 218,
+    "referenceSources": [
+      "IDRotF"
+    ],
+    "reprintedAs": [
+      "剑刃防护|XPHB"
+    ],
+    "level": 0,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "round",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你伸手在空中勾勒出一个防护印记，以令自己在下一回合结束前对武器攻击造成的钝击、穿刺和挥砍伤害具有抗性。"
+    ],
+    "damageResist": [
+      "钝击",
+      "穿刺",
+      "挥砍"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "防护系"
+  }
+]

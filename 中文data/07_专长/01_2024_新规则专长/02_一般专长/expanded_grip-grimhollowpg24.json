@@ -1,0 +1,35 @@
+[
+    {
+        "ENG_name": "Expanded Grip",
+        "name": "握持扩展",
+        "source": "GrimHollowPG24",
+        "page": 116,
+        "category": "G",
+        "prerequisite": [
+            {
+                "level": 4,
+                "ability": [
+                    {
+                        "str": 13
+                    }
+                ]
+            }
+        ],
+        "ability": [
+            {
+                "str": 1
+            }
+        ],
+        "entries": [
+            "你强大的握力允许你单手持握那些通常需要双手持握的重型或巨大武器。你获得以下增益。",
+            {
+                "ENG_name": "One-Handed Mastery",
+                "name": "单手专精",
+                "type": "entries",
+                "entries": [
+                    "你可以单手持握并使用任何具有两用{@itemProperty V|XPHB}词条的武器，此时你可以使用其更高的两用伤害骰。此外，你也可以单手持握任何具有双手{@itemProperty 2H|XPHB}词条且不具有重型{@itemProperty h|XPHB}词条的武器。你仍然无法在另一只手持握武器或盾牌的情况下使用该单手握持增益。"
+                ]
+            }
+        ]
+    }
+]

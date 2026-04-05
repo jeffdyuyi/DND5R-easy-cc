@@ -1,0 +1,33 @@
+[
+  {
+    "ENG_name": "Sentinel Shield",
+    "name": "警戒之盾",
+    "source": "DMG",
+    "page": 199,
+    "referenceSources": [
+      "WDMM",
+      "OoW",
+      "CRCotN"
+    ],
+    "reprintedAs": [
+      "警戒之盾|XDMG"
+    ],
+    "type": "S",
+    "tier": "主要",
+    "rarity": "uncommon",
+    "weight": 6,
+    "ac": 2,
+    "entries": [
+      "持握此盾牌期间，你所进行的先攻检定和感知（{@skill 察觉}）检定具有优势。这面盾牌上绘制着一颗眼睛的符号。"
+    ],
+    "lootTables": [
+      "魔法物品表F"
+    ],
+    "valueReference": 400,
+    "otherSources": [
+      {
+        "source": "XDMG"
+      }
+    ]
+  }
+]

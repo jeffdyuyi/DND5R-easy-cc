@@ -1,0 +1,51 @@
+[
+  {
+    "ENG_name": "Bracers of Defense",
+    "name": "防御护腕",
+    "source": "DMG",
+    "page": 156,
+    "srd": true,
+    "referenceSources": [
+      "SKT",
+      "TftYP-THSoT",
+      "TftYP-DiT",
+      "TftYP-ToH",
+      "BGDIA",
+      "CoA",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "防御护腕|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "bonusAc": "+2",
+    "entries": [
+      "当你佩戴这双护腕时，若你未穿戴护甲且未使用{@item 盾牌|PHB}，你在AC上获得+2加值。"
+    ],
+    "optionalfeatures": [
+      "仿制魔法物品|TCE"
+    ],
+    "lootTables": [
+      "魔法物品表G"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Bracers of Defense.webp"
+          },
+          "width": 721,
+          "height": 753
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

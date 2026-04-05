@@ -1,0 +1,150 @@
+[
+  {
+    "name": "死魔法区住民",
+    "ENG_name": "Dead Magic Dweller",
+    "source": "FRHoF",
+    "edition": "one",
+    "page": 28,
+    "ability": [
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "str",
+              "con",
+              "wis"
+            ],
+            "weights": [
+              2,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "str",
+              "con",
+              "wis"
+            ],
+            "weights": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      }
+    ],
+    "feats": [
+      {
+        "医疗师|xphb": true
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "medicine": true,
+        "survival": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "leatherworker's tools": true
+      }
+    ],
+    "startingEquipment": [
+      {
+        "A": [
+          "巨棒|xphb",
+          "皮匠工具|xphb",
+          "铺盖|xphb",
+          "毯子|xphb",
+          "医疗包|xphb",
+          "长杆|xphb",
+          {
+            "item": "口粮|xphb",
+            "quantity": 3,
+            "displayName": "口粮（3日份）"
+          },
+          "帐篷|xphb",
+          "火绒盒|xphb",
+          {
+            "item": "火把|xphb",
+            "displayName": "火把",
+            "quantity": 5
+          },
+          "旅行服装|xphb",
+          "水袋|xphb",
+          {
+            "value": 3200
+          }
+        ],
+        "B": [
+          {
+            "value": 5000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability Scores:",
+            "name": "属性值：",
+            "type": "item",
+            "entry": "力量，体质，感知"
+          },
+          {
+            "ENG_name": "Feat:",
+            "name": "专长：",
+            "type": "item",
+            "entry": "{@feat 医疗师|XPHB}"
+          },
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 医药|XPHB}与{@skill 求生|XPHB}"
+          },
+          {
+            "ENG_name": "Tool Proficiencies:",
+            "name": "工具熟练",
+            "type": "item",
+            "entry": "{@item 皮匠工具|XPHB}"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "选择A或B：(A) {@item 巨棒|XPHB}、{@item 皮匠工具|XPHB}、{@item 铺盖|XPHB}、{@item 毯子|XPHB}、{@item 医疗包|XPHB}、{@item 长杆|XPHB}、{@item 口粮|XPHB}（3日份）、{@item 帐篷|XPHB}、{@item 火绒盒|XPHB}、5支{@item 火把|XPHB|火把}、{@item 旅行服装|XPHB}、{@item 水袋|XPHB}、32 GP；或(B) 50 GP"
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "埃诺奥克沙漠Anauroch desert的死魔法区域对于施法者以及那些依赖魔法的怪物来说无法忍受——而这却正是你在此生活的原因。你可能是正在为了摆脱红袍法师Red Wizards而奔波，又或者是因为忤逆了卡林珊的某位强大气巨灵而逃亡。无论情况如何，你最终认为在埃诺奥克居住才是最好的选择。在若干年月之后，你变得更加智慧，更加强大，并拥有着从沙漠医药与荒漠生存当中艰难获得的知识。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "backgrounds/FRHoF/Dead Magic Dweller.webp"
+          },
+          "credit": "Erel Maatita",
+          "width": 1700,
+          "height": 626
+        }
+      ]
+    },
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "translator": "不全书"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "ENG_name": "Talisman of the Sphere",
+    "name": "法球护符",
+    "source": "DMG",
+    "page": 207,
+    "srd": true,
+    "referenceSources": [
+      "ToFW"
+    ],
+    "reprintedAs": [
+      "法球护符|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "legendary",
+    "reqAttune": true,
+    "wondrous": true,
+    "weight": 1,
+    "entries": [
+      "持握此护符期间，你要操控{@item 湮灭法球}而作的智力（{@skill 奥秘}）检定可以加上双倍熟练加值。另外，在你回合开始时，如果你正操纵着一个{@item 湮灭法球}，则你可以用一个动作将法球升起10尺外加10×智力调整值的尺数。"
+    ],
+    "lootTables": [
+      "魔法物品表I"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 200000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Talisman of the Sphere.webp"
+          },
+          "width": 1000,
+          "height": 643
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

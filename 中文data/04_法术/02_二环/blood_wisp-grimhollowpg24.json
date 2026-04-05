@@ -1,0 +1,76 @@
+[
+  {
+    "ENG_name": "Blood Wisp",
+    "name": "鲜血精魄",
+    "source": "GrimHollowPG24",
+    "page": 186,
+    "level": 2,
+    "school": "V",
+    "subschools": [
+      "血魔法"
+    ],
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一颗价值10GP的红宝石",
+        "cost": 1000
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "作为施放该法术的部分，你必须消耗两个{@variantrule 生命值骰|XPHB}否则法术自动失败。掷骰消耗的{@variantrule 生命值骰|XPHB}来施放法术并创造一个红色的精魄，其{@variantrule 生命值|XPHB}数值等于掷骰结果加上你的施法属性调整值。该精魄环绕你的头部飞行。它的护甲等级等于10加上你的施法属性调整值，并使用你的豁免检定。",
+      "每当你在精魄环绕你时为一个法术掷骰伤害时，你可以重掷其中一个伤害骰子。你必须使用新的掷骰结果，并且精魄受到等同于新掷骰结果的伤害。如果精魄的生命值被缩小到0{@variantrule 生命值|XPHB}，法术结束。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "你可以为每个高于2环的法术位环阶额外消耗一个{@variantrule 生命值骰|XPHB|生命值骰}。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Blood%20Wisp.webp"
+  }
+]

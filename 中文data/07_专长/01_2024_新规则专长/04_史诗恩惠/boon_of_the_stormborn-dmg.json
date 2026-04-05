@@ -1,0 +1,21 @@
+[
+  {
+    "ENG_name": "Boon of the Stormborn",
+    "name": "暴风降生之恩惠",
+    "source": "DMG",
+    "page": 232,
+    "type": "Boon",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": [
+            "雷鸣波"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你免疫闪电和雷鸣伤害。你可以随意施放{@spell 雷鸣波}（豁免{@dc 15}），且无需消耗法术位或使用任何法术成分。"
+    ]
+  }
+]

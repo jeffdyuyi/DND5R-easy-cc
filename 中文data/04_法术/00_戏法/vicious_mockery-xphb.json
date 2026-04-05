@@ -1,0 +1,94 @@
+[
+  {
+    "ENG_name": "Vicious Mockery",
+    "name": "恶言相加",
+    "source": "XPHB",
+    "page": 337,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 0,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你对施法距离内一名你可见或可听的生物连珠炮式地释出一串蕴涵微妙惑控的侮辱。目标必须通过一次感知豁免，否则受到{@damage 1d6}点心灵伤害，且在其下一回合结束前，其进行的下一次攻击检定具有{@variantrule 劣势|XPHB}。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Cantrip Upgrade",
+        "name": "戏法强化",
+        "type": "entries",
+        "entries": [
+          "当你达到以下等级时，伤害增加{@damage 1d6}，5 级（{@damage 2d6}），11 级（{@damage 3d6}）和17 级（{@damage 4d6}）。"
+        ]
+      }
+    ],
+    "scalingLevelDice": {
+      "label": "心灵伤害",
+      "scaling": {
+        "1": "1d6",
+        "5": "2d6",
+        "11": "3d6",
+        "17": "4d6"
+      }
+    },
+    "damageInflict": [
+      "psychic"
+    ],
+    "savingThrow": [
+      "wisdom"
+    ],
+    "miscTags": [
+      "SCL",
+      "SGT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/XPHB/Vicious Mockery.webp"
+          },
+          "credit": "Igor Grechanyi",
+          "width": 2225,
+          "height": 1440
+        }
+      ]
+    },
+    "classes": [
+      "吟游诗人"
+    ],
+    "display_school": "惑控系",
+    "display_savingThrow": [
+      "感知"
+    ],
+    "display_damageInflict": [
+      "心灵"
+    ]
+  }
+]

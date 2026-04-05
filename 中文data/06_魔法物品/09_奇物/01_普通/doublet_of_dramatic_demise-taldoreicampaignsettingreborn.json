@@ -1,0 +1,14 @@
+[
+  {
+    "ENG_name": "Doublet of Dramatic Demise",
+    "name": "临终上衣",
+    "source": "TalDoreiCampaignSettingReborn",
+    "page": 195,
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "这件引人注目的缎面夹克让你在临终时刻发挥最大作用。当你穿戴这件双排扣夹克生命值降至0时，你不会进入{@condition 昏迷}状态。相反，你将处于{@condition 失能}状态，你的速度变为0，但你仍然可以说话和交流。",
+      "你像往常一样进行死亡 {@quickref 豁免检定|PHB|2|1}，但如果你在 {@dice d20} 上掷出 1，你会发出大声的喘息然后立即晕倒并死亡。"
+    ]
+  }
+]

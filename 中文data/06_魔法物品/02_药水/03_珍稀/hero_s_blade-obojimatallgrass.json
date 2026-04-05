@@ -1,0 +1,44 @@
+[
+  {
+    "ENG_name": "Hero's Blade",
+    "name": "英雄之刃",
+    "source": "ObojimaTallGrass",
+    "page": 229,
+    "type": "P",
+    "rarity": "rare",
+    "property": [
+      "Com"
+    ],
+    "entries": [
+      "当这种英雄灵药倾倒在武器上时，会将其染成蓝色并使其闪烁，如同反射光线的宝石。在接下来的1分钟内，该武器在攻击和伤害掷骰上获得+3加值。在此效应结束前，被此武器命中的生物在1分钟内无法从他们可能拥有的任何伤害免疫或抗性中获益。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 58|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Combat/heros-blade.webp"
+          },
+          "width": 1653,
+          "height": 1653
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

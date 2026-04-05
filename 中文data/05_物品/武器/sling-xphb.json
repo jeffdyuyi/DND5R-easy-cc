@@ -1,0 +1,41 @@
+[
+  {
+    "name": "投石索",
+    "ENG_name": "Sling",
+    "source": "XPHB",
+    "page": 215,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "none",
+    "value": 10,
+    "weaponCategory": "simple",
+    "property": [
+      "A|XPHB"
+    ],
+    "mastery": [
+      "缓速|XPHB"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "B",
+    "range": "30/120",
+    "ammoType": "投石索子弹|XPHB",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XPHB/Sling.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 361,
+          "height": 496
+        }
+      ]
+    },
+    "basicRules2024": true,
+    "hasFluffImages": true,
+    "srd52": true,
+    "weapon": true
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "ENG_name": "Staff of Farryn of the Greenwood (Legendary)",
+    "name": "翠林的法莉恩之法杖（传说）",
+    "source": "CrookedMoon24",
+    "page": 605,
+    "type": "M|XPHB",
+    "resist": [
+      "暗蚀"
+    ],
+    "rarity": "legendary",
+    "reqAttune": true,
+    "weight": 4,
+    "weaponCategory": "简易",
+    "property": [
+      "V|XPHB",
+      "TCM'24:FH"
+    ],
+    "mastery": [
+      "失衡|XPHB"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "bonusSpellAttack": "+3",
+    "bonusSpellSaveDc": "+3",
+    "focus": true,
+    "staff": true,
+    "entries": [
+      "这根扭曲的木质法杖顶部是一颗饰有小饰品的鹿头骨。它出自法莉恩之手，制造于她深入戈尔索斯的暗秘学识之前。柔软芳香的苔藓以及带有泥土气息的蘑菇生长在法杖的杖身上。",
+      "持握这根法杖期间，你可以将其用作你法术的{@variantrule 法器|XPHB}；你的法术攻击检定和法术豁免DC会获得取决于该法杖稀有度的+3加值，并且你还可以使用如下词条。",
+      {
+        "ENG_name": "Living Ward (Rare+)",
+        "name": "生机结界（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "你具有对暗蚀伤害的{@variantrule 抗性|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Servant of the Cycle (Rare+)",
+        "name": "轮回使徒（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "你可以从该法杖中施放{@spell 疗伤术|XPHB}（3环版本）。当你这样做时，在你的下一回合结束前下一次进行攻击命中时，目标会额外受到{@damage 1d10}暗蚀伤害。该属性可以使用三次，并在每日黄昏时恢复所有已消耗的使用次数。"
+        ]
+      },
+      {
+        "ENG_name": "Cycle's Balance (Very Rare+)",
+        "name": "均衡轮回（极珍稀+）",
+        "type": "entries",
+        "entries": [
+          "你可以从该法杖中施展{@spell 回生术|XPHB}。当你这样做时，在接下来1小时内，下一次一个生物失败于你施展的一道法术的豁免检定时，该生物及其周边20尺范围内所有你选择的生物都会受到{@damage 4d10}暗蚀伤害。该属性一经使用，则直至次日黄昏之前，无法再次使用。"
+        ]
+      },
+      {
+        "ENG_name": "Sacrifice of Flesh (Very Rare+)",
+        "name": "血肉祭品（极珍稀+）",
+        "type": "entries",
+        "entries": [
+          "当你施放的法术恢复{@variantrule 生命值|XPHB}时，你可以受到最高为该法术等级两倍的暗蚀伤害，此伤害无法以任何方式被减免或阻止。若你这样做，目标额外恢复等同于你所受伤害三倍的{@variantrule 生命值|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Death Blossom (Legendary)",
+        "name": "枯荣相生（传说）",
+        "type": "entries",
+        "entries": [
+          "当你周边60尺范围内一个你可见的生物死亡时，你可以使用{@variantrule 反应|XPHB}使花朵在其周围盛放。位于该死亡生物周边30尺范围内所有你选择的生物都会恢复{@dice 4d8}{@variantrule 生命值|XPHB}并获得{@dice 2d8}{@variantrule 临时生命值|XPHB}。该属性一经使用，则直至次日黄昏之前，无法再次使用。"
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "疗伤术|XPHB",
+      "回生术|XPHB"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Staff%20of%20Farryn%20of%20the%20Greenwood.webp"
+          },
+          "width": 629,
+          "height": 1200,
+          "credit": "Eugenio Frosali"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "ENG_name": "Sanctuary",
+    "name": "庇护术",
+    "source": "XPHB",
+    "page": 313,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 1,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一块镜子碎片"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你为施法距离内的一名生物施加守护。在法术终止前，当任何生物将受守护的生物定为其攻击检定或伤害性法术的目标时，该生物都必须成功通过一次感知豁免，否则该生物必须改为选定另一名生物作为新的目标或者失去本次的攻击或法术。不过此法术无法令受术者免受区域效应的影响。",
+      "若受保护生物发动一次攻击，施展一道法术，或是造成任何伤害，则该法术随之终止。"
+    ],
+    "savingThrow": [
+      "wisdom"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师",
+      "奇械师"
+    ],
+    "display_school": "防护系",
+    "display_savingThrow": [
+      "感知"
+    ]
+  }
+]

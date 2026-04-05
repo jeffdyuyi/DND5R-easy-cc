@@ -1,0 +1,310 @@
+{
+  "ENG_name": "Cosmic Patron",
+  "name": "宇宙雇主",
+  "source": "GuideDrakkenheim",
+  "shortName": "宇宙",
+  "page": 173,
+  "className": "魔契师",
+  "classSource": "phb",
+  "subclassFeatures": [
+    {
+      "ENG_name": "Cosmic Patron",
+      "name": "宇宙雇主",
+      "source": "GuideDrakkenheim",
+      "page": 173,
+      "className": "魔契师",
+      "classSource": "phb",
+      "subclassShortName": "宇宙",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "entries": [
+        "一些魔契师从宇宙本身获得他们的魔能之力，回应空间、星座、行星和月亮的实体。一个向宇宙雇主宣誓效忠的魔契师通常认为他们在与神或类似神的存在对话，但这些实体被神秘所笼罩，他们的外貌难以理解且可怕，他们的神圣法力是从星辰和星系之外赐予魔契师的。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "扩展法术列表|魔契师|phb|宇宙|GuideDrakkenheim|1|GuideDrakkenheim"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "宇宙属性|魔契师|phb|宇宙|GuideDrakkenheim|1|GuideDrakkenheim"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "流星|魔契师|phb|宇宙|GuideDrakkenheim|1|GuideDrakkenheim"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "宇宙神导术|魔契师|phb|宇宙|GuideDrakkenheim|1|GuideDrakkenheim"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Expanded Spell List",
+      "name": "扩展法术列表",
+      "source": "GuideDrakkenheim",
+      "page": 173,
+      "className": "魔契师",
+      "classSource": "phb",
+      "subclassShortName": "宇宙",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "entries": [
+        "宇宙让你在学习魔契师法术时可以从扩展法术列表中选择。以下法术将被添加到你的魔契师法术列表中。",
+        {
+          "type": "table",
+          "caption": "扩展法术列表",
+          "colLabels": [
+            "法术环阶",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "1st",
+              "{@spell 魔法飞弹}, {@spell 妖火}"
+            ],
+            [
+              "2nd",
+              "{@spell 月华之光}, {@spell 灼热射线}"
+            ],
+            [
+              "3rd",
+              "{@spell 闪现术}, {@spell 先祖守卫}"
+            ],
+            [
+              "4th",
+              "{@spell 火焰护盾}, {@spell 火墙术}"
+            ],
+            [
+              "5th",
+              "{@spell 焰击术}, {@spell 高等复原术}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Cosmic Attributes",
+      "name": "宇宙属性",
+      "source": "GuideDrakkenheim",
+      "page": 173,
+      "className": "魔契师",
+      "classSource": "phb",
+      "subclassShortName": "宇宙",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "entries": [
+        "你呈现出超凡脱俗的宇宙外貌或本质。选择下方列出的一项或多项属性，自行决定，或随机掷骰以确定赋予你的宇宙力量如何成形。",
+        {
+          "type": "table",
+          "colLabels": [
+            "1d6",
+            ""
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              1,
+              "你的眼睛变成墨黑的池水，里面漂浮着小型星系。凝视它们就如同漂浮在宇宙中迷失于虚空的太空。"
+            ],
+            [
+              2,
+              "你的触碰变得如冰般寒冷，皮肤变得苍白。有些人可能会认为你是亡灵或病态。你看起来就像在宇宙的寒冷中死去一样。"
+            ],
+            [
+              3,
+              "你的声音带有轻微的共鸣特性，仿佛有不止一个实体通过你说话。你自己的声音最为突出，但仔细聆听时，可以分辨出一群天界生物的声音通过你说话。"
+            ],
+            [
+              4,
+              "你散发出微弱的臭氧气味——刺鼻且带有硫磺味，仿佛闪电刚刚在附近劈下。这似乎不自然且超凡脱俗。"
+            ],
+            [
+              5,
+              "你在前额中间长出第三只眼，这只眼睛不会眨眼，当它凝视人们时似乎能看穿它们的内心。"
+            ],
+            [
+              6,
+              "你的血管散发着柔和的光耀，让你看起来像一个由星辰和宇宙能量组成的行走星座。"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Shooting Stars",
+      "name": "流星",
+      "source": "GuideDrakkenheim",
+      "page": 173,
+      "className": "魔契师",
+      "classSource": "phb",
+      "subclassShortName": "宇宙",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "entries": [
+        "从第一级开始，如果你尚未学会，你将习得法术{@spell 魔能爆}戏法。它不计入你所知的魔契师戏法数量。当你施放{@spell 魔能爆}时，你可以选择使其造成光耀伤害而非力场伤害。"
+      ]
+    },
+    {
+      "ENG_name": "Cosmic Guidance",
+      "name": "宇宙神导术",
+      "source": "GuideDrakkenheim",
+      "page": 173,
+      "className": "魔契师",
+      "classSource": "phb",
+      "subclassShortName": "宇宙",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "languageProficiencies": [
+        {
+          "celestial": true,
+          "deep speech": true
+        }
+      ],
+      "entries": [
+        "你可以说、读、写天界语和深潜语。此外，你学会戏法{@spell 神导术}。它不计入你所知的魔契师戏法数量。另外，你可以不消耗法术位施放一次法术{@spell 卜筮术}。直到完成一次长休前你不能再这样做。"
+      ]
+    },
+    {
+      "ENG_name": "Orbit",
+      "name": "轨道",
+      "source": "GuideDrakkenheim",
+      "page": 173,
+      "className": "魔契师",
+      "classSource": "phb",
+      "subclassShortName": "宇宙",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "每回合一次，当你用{@spell 魔能爆}未命中一个生物时，光束会以一颗环绕你头部的轨道彗星形式返回。当你拥有一颗轨道彗星时，你可以吸收它的能量来执行以下操作：",
+        {
+          "type": "list",
+          "items": [
+            "{@bold 宇宙法力。} 在你的回合中，当你施放{@spell 魔能爆}时，可以消耗一颗轨道彗星来发射一道额外的光束。",
+            "{@bold 拦截。} 你可以使用你的反应来拦截一次近战或远程攻击，获得对该攻击伤害的抗性。",
+            "{@bold 光速。} 作为一个附赠动作，你可以消耗一颗彗星以传送到30尺内一个你能看见的未占据空间。"
+          ]
+        },
+        "你可以拥有的最大轨道彗星数量等于你的熟练加值。只要你拥有彗星，你就会散发出20尺的明亮光照和额外10尺的微光光照。这些彗星会持续存在，直到你完成一次短休或长休，或者你主动解除它们（无需动作）。"
+      ],
+      "foundrySystem": {
+        "activation": {
+          "type": "none",
+          "cost": 0
+        },
+        "uses": {
+          "value": 0,
+          "max": "@prof",
+          "per": "charges",
+          "prompt": false,
+          "recovery": 0
+        }
+      }
+    },
+    {
+      "ENG_name": "Meteoric Impact",
+      "name": "陨星冲击",
+      "source": "GuideDrakkenheim",
+      "page": 173,
+      "className": "魔契师",
+      "classSource": "phb",
+      "subclassShortName": "宇宙",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "每回合当你用{@spell 魔能爆}命中一个生物时，你可以使光束爆炸。目标10尺内的每个生物必须成功通过一次敏捷豁免检定，否则受到{@damage 3d6}火焰伤害。",
+        "伤害在14级时增加到{@damage 4d6}伤害，在17级时增加到{@damage 5d6}伤害。"
+      ]
+    },
+    {
+      "ENG_name": "Supernova",
+      "name": "超新星",
+      "source": "GuideDrakkenheim",
+      "page": 173,
+      "className": "魔契师",
+      "classSource": "phb",
+      "subclassShortName": "宇宙",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "由星辰能量充能，你从潜伏在空间虚空深处的异世界存在处获得额外增益。",
+        {
+          "type": "list",
+          "items": [
+            "当你施放{@spell 魔能爆}时，你可以额外发射一道光束。",
+            "每当你用{@spell 魔能爆}造成重击时，你可以在该回合额外使用一次你的陨星冲击特性。"
+          ]
+        }
+      ]
+    }
+  ],
+  "subclassSpells": [
+    "魔法飞弹",
+    "妖火",
+    "月华之光",
+    "灼热射线",
+    "闪现术",
+    "灵体卫士",
+    "火焰护盾",
+    "火墙术",
+    "焰击术",
+    "高等复原术",
+    "魔能爆",
+    "卜筮术"
+  ],
+  "additionalSpells": [
+    {
+      "known": {
+        "1": [
+          "魔能爆",
+          "神导术"
+        ]
+      }
+    },
+    {
+      "innate": {
+        "1": {
+          "daily": {
+            "1e": [
+              "卜筮术"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "expanded": {
+        "s1": [
+          "魔法飞弹",
+          "妖火"
+        ],
+        "s2": [
+          "月华之光",
+          "灼热射线"
+        ],
+        "s3": [
+          "闪现术",
+          "灵体卫士"
+        ],
+        "s4": [
+          "火焰护盾",
+          "火墙术"
+        ],
+        "s5": [
+          "焰击术",
+          "高等复原术"
+        ]
+      }
+    }
+  ],
+  "hasFluff": true,
+  "hasFluffImages": true
+}

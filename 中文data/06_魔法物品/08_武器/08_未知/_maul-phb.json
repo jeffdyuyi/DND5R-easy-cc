@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Maul",
+    "name": "镀银巨锤",
+    "source": "PHB",
+    "page": 148,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "HotB"
+    ],
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "unknown",
+    "weight": 10,
+    "value": 1000,
+    "weaponCategory": "martial",
+    "property": [
+      "H|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "失衡|XPHB"
+    ],
+    "dmg1": "2d6",
+    "dmgType": "B",
+    "hammer": true,
+    "weapon": true,
+    "hasFluffImages": true,
+    "namePrefix": "镀银",
+    "basicRules": true,
+    "reprintedAs": [
+      "镀银武器|XDMG"
+    ],
+    "tier": "主要",
+    "valueExpression": "[[baseItem.value]] + 10000",
+    "_isVariant": true
+  }
+]

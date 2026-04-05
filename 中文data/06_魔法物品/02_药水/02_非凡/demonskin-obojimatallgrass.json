@@ -1,0 +1,46 @@
+[
+  {
+    "ENG_name": "Demonskin",
+    "name": "恶魔皮肤",
+    "source": "ObojimaTallGrass",
+    "page": 227,
+    "type": "P",
+    "rarity": "uncommon",
+    "property": [
+      "Com"
+    ],
+    "bonusAc": "+2",
+    "entries": [
+      "打开这瓶药水时，你立刻被一股强烈的刺鼻气味所侵袭。一旦饮下它，你的皮肤会呈现出一种发光的深红色调，双眼则变成病态的猩红。在1分钟内，你获得AC+2的加值，并对寒冷、火焰和闪电伤害具有抗性，同时对来自非魔法攻击的钝击、穿刺和挥砍伤害也具有抗性。直到药水的效应结束，你的生物类型变为恶魔（邪魔）。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 50|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Combat/demonskin.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1971,
+          "height": 1971
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

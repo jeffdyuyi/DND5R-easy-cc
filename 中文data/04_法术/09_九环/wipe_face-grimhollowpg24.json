@@ -1,0 +1,65 @@
+[
+  {
+    "ENG_name": "Wipe Face",
+    "name": "擦面",
+    "source": "GrimHollowPG24",
+    "page": 206,
+    "level": 9,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你诅咒一个你能看见的范围内的生物。目标的面部被完全光滑的皮肤所取代，封住了生物的眼睛、鼻子和嘴巴。该生物获得{@condition 目盲|XPHB}和{@condition 失能|XPHB}状态并开始窒息。",
+      "在每个回合结束时，目标可以尝试进行一次体质豁免检定以结束该法术。对目标造成至少15点挥砍伤害可以打开一个气道使其能够呼吸，但诅咒会在你的下一个回合开始时封闭该开口。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "挥砍"
+    ],
+    "savingThrow": [
+      "体质"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Wipe%20Face.webp"
+  }
+]

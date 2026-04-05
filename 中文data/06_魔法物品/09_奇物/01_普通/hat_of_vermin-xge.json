@@ -1,0 +1,23 @@
+[
+  {
+    "ENG_name": "Hat of Vermin",
+    "name": "害兽帽",
+    "source": "XGE",
+    "page": 137,
+    "reprintedAs": [
+      "害兽帽|XDMG"
+    ],
+    "tier": "次要",
+    "rarity": "common",
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": 3,
+    "charges": 3,
+    "entries": [
+      "这顶帽子有三发充能。佩戴这顶帽子期间，你可以以一个动作消耗其一发充能并说出命令语来召唤出一只{@creature 蝙蝠}、{@creature 青蛙}、或{@creature 老鼠}（由你选择，其数据见《玩家手册》或者《怪物图鉴》）。召唤出来的生物魔法般出现在帽子中，并尽可能的尝试远离你。这种生物对你既不友好也不敌对，且不受你的控制。它们表现的像是个普通生物一样，但会在一小时后或生命值归零时消失。每日黎明，这顶帽子将重获全部已被消耗的充能。"
+    ],
+    "translator": "不全书",
+    "valueReference": 100,
+    "type": "W"
+  }
+]

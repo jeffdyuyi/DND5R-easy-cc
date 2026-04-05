@@ -1,0 +1,42 @@
+[
+  {
+    "ENG_name": "Spider Staff",
+    "name": "蜘蛛法杖",
+    "source": "LMoP",
+    "page": 53,
+    "reprintedAs": [
+      "蜘蛛法杖|PaBTSO"
+    ],
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 6,
+    "weaponCategory": "simple",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "recharge": "黄昏",
+    "rechargeAmount": "{@dice 1d6 + 4}",
+    "charges": 10,
+    "staff": true,
+    "entries": [
+      "这支黑色、铁质法杖的顶端呈蜘蛛形状。法杖重6磅。你必须与法杖调谐才能获得其增益并施放其法术。法杖可以作为四分卫使用。当用来进行武器攻击时，它在命中时额外造成{@damage 1d6}点毒素damage。",
+      "法杖有10次充能，用于激发其内部的spell。手持法杖时，你可以用行动力从法杖中施放以下spell之一，如果该spell在你的职业spell列表上：{@spell 蛛行术}（消耗1次充能）或{@spell 蛛网术}（消耗2次充能，需要通过{@dc 15}的豁免检定）。不需要任何材料成分。",
+      "这根法杖在黄昏时每天恢复{@dice 1d6 + 4}个已消耗的充能点。如果你用尽了法杖的最后一个充能点，掷一个{@dice d20}骰子。如果是1，法杖化为尘土并被摧毁。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "蛛行术"
+        ],
+        "2": [
+          "蛛网术"
+        ]
+      }
+    },
+    "valueReference": 4000,
+    "type": "ST"
+  }
+]

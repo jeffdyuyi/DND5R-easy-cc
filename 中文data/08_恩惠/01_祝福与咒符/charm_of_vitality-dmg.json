@@ -1,0 +1,15 @@
+[
+  {
+    "ENG_name": "Charm of Vitality",
+    "name": "活力护咒",
+    "source": "DMG",
+    "page": 228,
+    "reprintedAs": [
+      "活力护咒|XDMG"
+    ],
+    "type": "Charm",
+    "entries": [
+      "该护咒可以让你得以用一个动作获得{@item 活力药水}的增益。使用一次该增益后，该护咒便会从你身上消失。"
+    ]
+  }
+]

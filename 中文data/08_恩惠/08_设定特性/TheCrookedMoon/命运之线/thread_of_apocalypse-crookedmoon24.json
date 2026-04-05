@@ -1,0 +1,55 @@
+[
+  {
+    "ENG_name": "Thread of Apocalypse",
+    "name": "末日预言之线",
+    "source": "CrookedMoon24",
+    "page": 157,
+    "type": "Thread of Fate",
+    "entries": [
+      "一个与末日之线连接的角色失去了他们的记忆并忘记了自己过去的大部分。更奇怪的是，一首未知但熟悉的歌曲旋律触发了只有该角色才能阻止的即将来临的末日的可怕幻象。",
+      {
+        "ENG_name": "Goal",
+        "name": "目标",
+        "type": "entries",
+        "entries": [
+          "角色必须发现他们是谁以及他们末日幻象的含义，以阻止降临到德鲁斯肯瓦尔德的末日。"
+        ]
+      },
+      {
+        "ENG_name": "Personalization",
+        "name": "个性化",
+        "type": "entries",
+        "entries": [
+          "确定预示末日幻象的歌曲性质。它是哪种音乐流派？歌词是关于什么的？这首歌在叙事或主题上与角色有何关联？歌曲中关于过往经历的提示是什么？"
+        ]
+      },
+      {
+        "ENG_name": "Call to Adventure",
+        "name": "冒险召唤",
+        "type": "entries",
+        "entries": [
+          "角色不经意地听到触发歌曲，这对它们来说是未知的但听起来异常熟悉。它们被一个幻象所困扰：看到整个世界和其中无数的灵魂被分解并重组成扭曲的怪物，随后预见到一辆幽魂列车从冒险开始之处的雾中出现。"
+        ]
+      },
+      {
+        "ENG_name": "Associated Background",
+        "name": "关联背景",
+        "type": "entries",
+        "entries": [
+          "{@background 失忆者|crookedmoon24}"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/CrookedMoon24/Adventure/046-02-029.thread-of-the-apocalypse.webp"
+        },
+        "width": 597,
+        "height": 614
+      }
+    ]
+  }
+]

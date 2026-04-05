@@ -1,0 +1,77 @@
+[
+  {
+    "ENG_name": "Chill Touch",
+    "name": "颤栗之触",
+    "source": "XPHB",
+    "page": 249,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 0,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你引导出来自坟墓的刺骨阴冷，对目标进行一次近战法术攻击。命中时，目标将受到{@damage 1d10}点暗蚀伤害，并且直至你下一回合的结束前都无法恢复{@variantrule 生命值|XPHB}。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Cantrip Upgrade",
+        "name": "戏法强化",
+        "type": "entries",
+        "entries": [
+          "法术的伤害会在你到达下列等级时增加{@damage 1d10}：5级（{@damage 2d10}）、11级（{@damage 3d10}）以及17级（{@damage 4d10}）。"
+        ]
+      }
+    ],
+    "scalingLevelDice": {
+      "label": "暗蚀伤害",
+      "scaling": {
+        "1": "1d10",
+        "5": "2d10",
+        "11": "3d10",
+        "17": "4d10"
+      }
+    },
+    "damageInflict": [
+      "necrotic"
+    ],
+    "spellAttack": [
+      "M"
+    ],
+    "miscTags": [
+      "SCL"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "死灵系",
+    "display_damageInflict": [
+      "死灵"
+    ]
+  }
+]

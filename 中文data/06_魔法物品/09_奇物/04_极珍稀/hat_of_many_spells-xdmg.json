@@ -1,0 +1,123 @@
+[
+  {
+    "ENG_name": "Hat of Many Spells",
+    "name": "万法无常帽",
+    "source": "XDMG",
+    "page": 266,
+    "srd52": true,
+    "basicRules2024": true,
+    "otherSources": [
+      {
+        "source": "UtHftLH"
+      },
+      {
+        "source": "HBTD"
+      }
+    ],
+    "type": "SCF|XPHB",
+    "rarity": "very rare",
+    "reqAttune": "由法师",
+    "reqAttuneTags": [
+      {
+        "class": "法师"
+      }
+    ],
+    "wondrous": true,
+    "focus": [
+      "法师"
+    ],
+    "entries": [
+      "这顶尖顶帽具有以下词条：",
+      {
+        "ENG_name": "Spellcasting Focus",
+        "name": "法器",
+        "type": "entries",
+        "entries": [
+          "持握这顶帽子期间，你可以将其作为你施展法师法术的{@variantrule 法器|XPHB}使用。任何你通过这顶帽子施展的法术均具有特殊的姿势成分，即你必须将手伸入帽子之中以将法术从中\"拽\"出来。"
+        ]
+      },
+      {
+        "ENG_name": "Unknown Spell",
+        "name": "未知法术",
+        "type": "entries",
+        "entries": [
+          "持握这顶帽子期间，你可以尝试施展一道你并未已知的一环或以上法术。所选法术必须位于法师法表中，同时其环阶必须是你能够施展的法术环阶，其也不能具有多于1000GP的材料成分。一旦你决定了施展哪道法术，你必须消耗法术环阶所对应的一个法术位。随后，为了决定你是否施展该法术，进行一次智力（{@skill 奥秘|XPHB}）检定（{@dc 10}+法术环阶）。检定成功，则你以该法术的正常施法时间施展该法术，且你直到完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}之前不能再次使用此词条。检定失败，则你施法失败，转而在下表掷骰以决定触发的随机效应。",
+          "你通过帽子施展的所有法术均使用你的法术豁免DC和法术攻击加值。",
+          {
+            "type": "table",
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "colLabels": [
+              "1d100",
+              "效应"
+            ],
+            "rows": [
+              [
+                "01-50",
+                "你施展一道随机法术，具体法术骰{@dice 1d10}决定：骰值为{@b 1}，{@spell 变巨/缩小术|XPHB}（变巨术效应）；骰值为{@b 2}，{@spell 变巨/缩小术|XPHB}（缩小术效应）；骰值为{@b 3}，{@spell 妖火|XPHB}；骰值为{@b 4}，{@spell 火球术|XPHB}；骰值为{@b 5}，{@spell 造风术|XPHB}；骰值为{@b 6}，{@spell 隐形术|XPHB}（以自身为目标施展）；骰值为{@b 7}，{@spell 闪电束|XPHB}；骰值为{@b 8}，{@spell 魅影之力|XPHB}；骰值为{@b 9}，{@spell 变形术|XPHB}；骰值为{@b 10}，{@spell 臭云术|XPHB}。"
+              ],
+              [
+                "51-55",
+                "你因相信刚刚发生了一些令人惊叹的事情而陷入{@condition 震慑|XPHB}状态直至你的下个回合结束。"
+              ],
+              [
+                "56-60",
+                "位于你30尺内的10尺{@variantrule 立方 [效应区域]|XPHB|立方}充满一群无害的蝴蝶。蝴蝶在1分钟后消散。"
+              ],
+              [
+                "61-65",
+                "你从帽子中拽出一个非魔法物件。骰{@dice 1d4}以决定物件是什么：骰值为{@b 1}，一小瓶强酸；骰值为{@b 2}，一小瓶炽火胶；骰值为{@b 3}，一根撬棍；骰值为{@b 4}，一根点燃的火把。"
+              ],
+              [
+                "66-70",
+                "你忍受\"魔法疾病\"的发作，陷入{@condition 中毒|XPHB}状态，持续1小时。"
+              ],
+              [
+                "71-75",
+                "你陷入{@condition 石化|XPHB}状态直至你的下个回合结束。"
+              ],
+              [
+                "76-80",
+                "你从帽子中拽出一个非魔法物件。骰{@dice 1d4}以决定物件是什么：骰值为{@b 1}，一把{@item 匕首|XPHB}；骰值为{@b 2}，一根末端绑有{@item 爪钩|XPHB}的{@item 绳索|XPHB}；骰值为{@b 3}，一包{@item 铁蒺藜|XPHB}；骰值为{@b 4}，一颗价值50 GP的宝石。"
+              ],
+              [
+                "81-85",
+                "一名生物出现在尽可能靠近你的一处未被占据的空间。此生物不受你控制，且会以其通常行动方式行事，并在1小时后或其{@variantrule 生命值|XPHB}降为0时消失。骰{@dice 1d4}以决定生物是什么：骰值为{@b 1}，一头{@creature 骆驼|XMM}；骰值为{@b 2}，一条{@creature 蟒蛇|XMM} ；骰值为{@b 3}，一头{@creature 大象|XMM}；骰值为{@b 4}，一匹{@creature 骡子|XMM}。"
+              ],
+              [
+                "86-90",
+                "一群{@variantrule 敌对【态度】|XPHB|敌对}的{@creature 蝙蝠群|XMM}从帽子中飞出，占据你的空间并对你发起攻击。"
+              ],
+              [
+                "91-95",
+                "一扇通往另一个存在位面，10尺直径的直立双向传送门在一处位于你30尺内未被占据的空间打开，且直到你下个回合结束为止保持开启。DM决定其通往何方。"
+              ],
+              [
+                "96-00",
+                "你从帽子中拽出一件魔法物品。骰{@dice 1d6}以决定物品的稀有度：骰值为{@b 1-3}，{@filter 普通|items|rarity=Common}；骰值为{@b 4-5}，{@filter 非普通|items|rarity=Uncommon}；骰值为{@b 6}，{@filter 珍稀|items|rarity=Rare}。DM选择魔法物品是什么，且该物品若未被消耗或摧毁则在1小时后消失。"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "变巨/缩小术|xphb",
+      "妖火|xphb",
+      "火球术|xphb",
+      "造风术|xphb",
+      "隐形术|xphb",
+      "闪电束|xphb",
+      "魅影之力|xphb",
+      "变形术|xphb",
+      "臭云术|xphb"
+    ],
+    "lootTables": [
+      "奥秘 - 极珍稀|XDMG"
+    ],
+    "translator": "不全书",
+    "valueReference": 40000
+  }
+]

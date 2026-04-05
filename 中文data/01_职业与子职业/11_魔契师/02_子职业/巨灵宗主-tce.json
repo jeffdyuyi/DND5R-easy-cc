@@ -1,0 +1,40 @@
+{
+  "ENG_name": "The Genie",
+  "name": "巨灵宗主",
+  "shortName": "巨灵",
+  "source": "TCE",
+  "className": "魔契师",
+  "classSource": "XPHB",
+  "_copy": {
+    "ENG_name": "The Genie",
+    "name": "巨灵宗主",
+    "source": "TCE",
+    "shortName": "巨灵",
+    "className": "魔契师",
+    "classSource": "PHB",
+    "_preserve": {
+      "page": true,
+      "otherSources": true,
+      "referenceSources": true,
+      "srd": true,
+      "basicRules": true,
+      "reprintedAs": true
+    }
+  },
+  "subclassFeatures": [
+    "巨灵宗主|魔契师|XPHB|巨灵|TCE|3",
+    "元素赐福|魔契师||巨灵|TCE|6",
+    "器皿庇护所|魔契师||巨灵|TCE|10",
+    "有限祈愿术|魔契师||巨灵|TCE|14"
+  ],
+  "fluff": {
+    "_subclassFluff": {
+      "ENG_name": "The Genie",
+      "name": "巨灵宗主",
+      "source": "TCE",
+      "shortName": "巨灵",
+      "className": "魔契师",
+      "classSource": "PHB"
+    }
+  }
+}

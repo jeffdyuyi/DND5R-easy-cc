@@ -1,0 +1,69 @@
+[
+  {
+    "ENG_name": "Blade of Avernus",
+    "name": "阿弗纳斯之刃",
+    "source": "BGDIA",
+    "page": 150,
+    "baseItem": "长剑|PHB",
+    "type": "M",
+    "rarity": "artifact",
+    "reqAttune": true,
+    "weight": 3,
+    "weaponCategory": "martial",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "S",
+    "dmg2": "1d10",
+    "bonusWeapon": "+3",
+    "entries": [
+      "你用此魔法武器进行的攻击检定和伤害掷骰获得 +3 加值。此外，此武器无视对挥砍伤害的抗性。",
+      "当你命中一名有头生物并投出 20 时，你砍下该生物的一颗头。如果该生物无法在失去头的情况下生存，则它将随之死亡。免疫挥砍伤害、没有头、不需要头、有传奇动作或DM认为体型太大无法被斩首的生物免疫斩首效应，但额外受到 {@damage 6d8} 点挥砍伤害。",
+      {
+        "ENG_name": "Random Properties",
+        "name": "随机词条",
+        "type": "entries",
+        "entries": [
+          "剑具有下列随机词条，如《地下城主指南》第7章所述：",
+          {
+            "type": "list",
+            "items": [
+              "2 {@table 神器词条; 次要增益词条|DMG|次要增益词条}",
+              "1 {@table 神器词条; 主要增益词条|DMG|主要增益词条}",
+              "1 {@table 神器词条; 主要减益词条|DMG|主要减益词条}，当剑与大魔鬼同调时会被抑制。"
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Ruler of Avernus",
+        "name": "阿弗纳斯的统治者",
+        "type": "entries",
+        "entries": [
+          "以一个动作，你可以把这把剑指向一个离你 60 英尺以内的魔鬼。魔鬼必须成功通过一个 {@dc 22} 的魅力豁免检定，否则被你{@condition 魅惑} 1 小时。以这种方式被{@condition 魅惑}的话魔鬼会全力执行你的命令。如果你命令魔鬼去做一些它认为是自杀的事，效果便会结束，你也无法再用这把剑的力量来对付这个魔鬼。"
+        ]
+      },
+      {
+        "ENG_name": "Infernal Recall",
+        "name": "地狱回返",
+        "type": "entries",
+        "entries": [
+          "以一个动作，你可以用这把剑来释放一个{@spell 回返真言}。被这个法术传送的生物出现在当前阿弗纳斯统治者 30 英尺范围内的一个未被占据的地方，或者你指定的一个避难所，如果你统治了阿弗纳斯的话。"
+        ]
+      },
+      {
+        "ENG_name": "Destroying the Sword",
+        "name": "摧毁此剑",
+        "type": "entries",
+        "entries": [
+          "把剑扔进冥河或者在铸造它的熔炉中将其熔化都可以摧毁它。"
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "回返真言"
+    ],
+    "translator": "不全书"
+  }
+]

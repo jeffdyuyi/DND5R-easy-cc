@@ -1,0 +1,153 @@
+{
+  "ENG_name": "Plague Doctor",
+  "name": "瘟疫医生",
+  "shortName": "瘟疫医生",
+  "source": "GrimHollowPG24",
+  "className": "法师",
+  "classSource": "XPHB",
+  "page": 104,
+  "edition": "one",
+  "subclassFeatures": [
+    {
+      "ENG_name": "Plague Doctor",
+      "name": "瘟疫医生",
+      "source": "GrimHollowPG24",
+      "page": 104,
+      "className": "法师",
+      "classSource": "XPHB",
+      "subclassShortName": "瘟疫医生",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "entries": [
+        "{@i 用魔法复合选项瘟疫你的敌人}",
+        "将施法与科学相结合，你将魔法提炼成能造成伤害或治疗的药剂。瘟疫医生通常戴着怪异的面具以保护自己免受有毒成分的侵害。许多人恐惧地将面具视为瘟疫的标志，使瘟疫医生成为希望与恐惧的来源。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "药水制造|法师|XPHB|瘟疫医生|GrimHollowPG24|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "善良医药|法师|XPHB|瘟疫医生|GrimHollowPG24|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Good Medicine",
+      "name": "善良医药",
+      "source": "GrimHollowPG24",
+      "page": 104,
+      "className": "法师",
+      "classSource": "XPHB",
+      "subclassShortName": "瘟疫医生",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "当你制造药水时，你可以选择消耗一个法术位而不选择法术来制造一剂善良医药。作为{@variantrule 附赠动作|XPHB}，你可以饮用该药剂或将其给予5尺内的另一个生物。当善良医药被消耗时，掷等同于所消耗法术位等级的d8，目标恢复等同于掷骰总和的{@variantrule 生命值|XPHB}。如果你在此特性上消耗了3环或更高的法术位，善良医药还会移除{@condition 中毒|XPHB}状态。"
+      ]
+    },
+    {
+      "ENG_name": "Potion Craft",
+      "name": "药水制造",
+      "source": "GrimHollowPG24",
+      "page": 104,
+      "className": "法师",
+      "classSource": "XPHB",
+      "subclassShortName": "瘟疫医生",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "skillProficiencies": [
+        {
+          "medicine": true
+        }
+      ],
+      "toolProficiencies": [
+        {
+          "herbalism kit": true,
+          "alchemist's supplies": true
+        }
+      ],
+      "header": 1,
+      "entries": [
+        "你获得{@skill 医药|XPHB}技能的熟练项以及{@item 草药工具|XPHB}和{@item 炼金工具|XPHB}的熟练项。",
+        "此外，你学会了制造魔法药水。",
+        {
+          "ENG_name": "Crafting",
+          "name": "手作",
+          "type": "entries",
+          "entries": [
+            "通过10分钟的工作或当你完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}时，如果你拥有{@item 草药工具|XPHB}或{@item 炼金工具|XPHB}，你可以准备魔法药水。当你这样做时，你必须为每瓶创造的药水消耗一个1环或更高等级的法术位，并从你的法术书中选择一个仅以单一生物为目标的法术。所选法术的等级必须等于或低于所消耗法术位的等级。"
+          ]
+        },
+        {
+          "ENG_name": "Consuming",
+          "name": "消耗",
+          "type": "entries",
+          "entries": [
+            "作为{@variantrule 附赠动作|XPHB}，一个生物可以饮用该药水或将其给予5尺内的另一个生物。当生物消耗该药水时，它会成为法术的目标，如同你施放了该法术一般。如果该法术需要{@status 专注|XPHB}，则消耗药水的生物将保持专注。",
+            "未消耗的药水将持续到你完成一次{@variantrule 长休|XPHB}或直到你再次使用此特性为止。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Bad Medicine",
+      "name": "坏的医药",
+      "source": "GrimHollowPG24",
+      "page": 104,
+      "className": "法师",
+      "classSource": "XPHB",
+      "subclassShortName": "瘟疫医生",
+      "subclassSource": "GrimHollowPG24",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "当你制造一瓶药水时，你可以选择消耗一个法术位而不选择法术来制造一剂坏的医药。当你制造一剂时，为消耗的法术位每等级选择一项效应。",
+        {
+          "type": "list",
+          "items": [
+            "该生物具有{@condition 中毒|XPHB}状态。",
+            "该生物的{@variantrule 速度|XPHB}减半。",
+            "该生物在每回合第一次受到伤害时额外受到{@damage 1d4}暗蚀伤害。",
+            "该生物每次执行动作、{@variantrule 附赠动作|XPHB}或{@variantrule 反应|XPHB}时受到{@damage 1d6}毒素伤害。",
+            "该生物在每个其回合开始时受到等同于消耗法术位等级的强酸伤害。"
+          ]
+        },
+        "以一个{@action 魔法|XPHB}动作，你可以向30尺内一个你能看见的点猛投一剂坏的医药。该点10尺内的生物必须进行一次对抗你法术豁免DC的体质豁免检定。豁免失败时，目标会承受一个选民效应1分钟。在它的每个回合，目标可以执行一个动作并重复豁免检定，成功时终止对其自身的效应。"
+      ]
+    },
+    {
+      "ENG_name": "Breathe It In",
+      "name": "吸入它",
+      "source": "GrimHollowPG24",
+      "page": 104,
+      "className": "法师",
+      "classSource": "XPHB",
+      "subclassShortName": "瘟疫医生",
+      "subclassSource": "GrimHollowPG24",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "长期暴露在最致命的疾病中使你获得了一些微小的抗性。在你受到暗蚀或毒素伤害后，你获得等于所受伤害的{@variantrule 临时生命值|XPHB}。此外，你对{@condition 中毒|XPHB}状态具有{@variantrule 免疫|XPHB|免疫}。"
+      ]
+    },
+    {
+      "ENG_name": "Medicinal Master",
+      "name": "药剂大师",
+      "source": "GrimHollowPG24",
+      "page": 104,
+      "className": "法师",
+      "classSource": "XPHB",
+      "subclassShortName": "瘟疫医生",
+      "subclassSource": "GrimHollowPG24",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "当善良医药恢复一个生物的{@variantrule 生命值|XPHB}时，该生物额外恢复{@dice 2d8}点{@variantrule 生命值|XPHB}。",
+        "当坏的医药对生物造成强酸伤害时，该生物会受到额外的{@dice 2d8}点强酸伤害。此外，目标生物在进行豁免检定时具有{@variantrule 劣势|XPHB}。"
+      ]
+    }
+  ],
+  "hasFluff": true,
+  "hasFluffImages": true
+}

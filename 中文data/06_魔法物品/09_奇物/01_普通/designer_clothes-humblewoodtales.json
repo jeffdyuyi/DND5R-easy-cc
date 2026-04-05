@@ -1,0 +1,23 @@
+[
+  {
+    "ENG_name": "Designer Clothes",
+    "name": "设计师衣服",
+    "source": "HumblewoodTales",
+    "page": 153,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 6,
+    "value": 3000,
+    "entries": [
+      "西风公司销售由木地知名裁缝设计的服装。每套套装花费30金币，是正常高档服装模组的两倍，并保证任何穿着它的人都能看起来像高等社会的栖息地居民。玩家可以从{@table 设计师时尚|humblewoodtales}表格列出的品牌中选择他们想要购买的品牌，或者你可以随机掷骰看看西风公司有什么库存。",
+      {
+        "ENG_name": "Designer Fashions",
+        "name": "设计师时尚",
+        "type": "statblock",
+        "tag": "table",
+        "source": "HumblewoodTales",
+        "page": 153
+      }
+    ]
+  }
+]

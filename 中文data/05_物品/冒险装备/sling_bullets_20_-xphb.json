@@ -1,0 +1,25 @@
+[
+  {
+    "name": "投石索子弹(20)",
+    "ENG_name": "Sling Bullets (20)",
+    "source": "XPHB",
+    "page": 222,
+    "edition": "one",
+    "type": "A|XPHB",
+    "rarity": "none",
+    "weight": 1.5,
+    "value": 4,
+    "packContents": [
+      {
+        "item": "投石索子弹|xphb",
+        "quantity": 20
+      }
+    ],
+    "entries": [
+      "投石索子弹是与具有弹药属性的武器一起使用的，用于进行远程攻击。每次你用武器攻击时，都会消耗一枚弹药。从箭袋、盒子或其他容器中取出弹药是攻击的一部分（你需要一个空闲的手来装填单手武器）。战斗结束后，你可以花一分钟在战场上搜寻，回收你消耗的一半弹药。",
+      "投石索子弹通常存放在{@item 小包|XPHB} 中（需单独购买）。"
+    ],
+    "bulletSling": true,
+    "srd52": true
+  }
+]

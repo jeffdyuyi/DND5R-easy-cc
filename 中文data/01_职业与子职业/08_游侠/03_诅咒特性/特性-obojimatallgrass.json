@@ -1,0 +1,54 @@
+{
+    "optionalfeature": [
+        {
+            "ENG_name": "Failing Lungs",
+            "name": "衰竭之肺",
+            "source": "ObojimaTallGrass",
+            "page": 144,
+            "featureType": [
+                "4M"
+            ],
+            "entries": [
+                "你的肺部开始疼痛... (truncated)"
+            ]
+        },
+        {
+            "ENG_name": "Graying Vision",
+            "name": "灰视",
+            "source": "ObojimaTallGrass",
+            "page": 144,
+            "featureType": [
+                "4M"
+            ],
+            "entries": [
+                "你的双眼逐渐衰弱... (truncated)"
+            ],
+            "foundryEffects": [
+                {
+                    "ENG_name": "Graying Vision",
+                    "name": "灰视",
+                    "transfer": true,
+                    "changes": [
+                        {
+                            "key": "system.attributes.senses.blindsight",
+                            "mode": 5,
+                            "value": "15"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ENG_name": "Losing Feeling",
+            "name": "失去感觉",
+            "source": "ObojimaTallGrass",
+            "page": 144,
+            "featureType": [
+                "4M"
+            ],
+            "entries": [
+                "麻木感逐渐蔓延至你的肌肉、骨骼和皮肤... (truncated)"
+            ]
+        }
+    ]
+}

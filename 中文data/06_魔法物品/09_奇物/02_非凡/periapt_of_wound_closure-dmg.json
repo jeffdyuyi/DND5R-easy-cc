@@ -1,0 +1,46 @@
+[
+  {
+    "ENG_name": "Periapt of Wound Closure",
+    "name": "愈合护符",
+    "source": "DMG",
+    "page": 184,
+    "srd": true,
+    "referenceSources": [
+      "LR",
+      "ToFW"
+    ],
+    "reprintedAs": [
+      "愈合护符|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "weight": 1,
+    "entries": [
+      "佩戴此护符期间，如果你在自己的回合开始时处于濒死状态，则你将直接转为伤势稳定。此外，你掷生命骰恢复生命值时，其恢复的数值加倍。"
+    ],
+    "optionalfeatures": [
+      "仿制魔法物品|TCE"
+    ],
+    "lootTables": [
+      "魔法物品表F"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Periapt of Wound Closure.webp"
+          },
+          "width": 686,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

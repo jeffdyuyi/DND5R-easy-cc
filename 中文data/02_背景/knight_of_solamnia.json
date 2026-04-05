@@ -1,0 +1,163 @@
+[
+  {
+    "name": "索兰尼亚骑士",
+    "ENG_name": "Knight of Solamnia",
+    "source": "DSotDQ",
+    "page": 30,
+    "feats": [
+      {
+        "索拉尼亚侍从|dsotdq": true
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "athletics": true,
+        "survival": true
+      }
+    ],
+    "languageProficiencies": [
+      {
+        "anyStandard": 2
+      }
+    ],
+    "startingEquipment": [
+      {
+        "_": [
+          {
+            "special": "构建索兰尼亚骑士"
+          },
+          "整副纸牌|phb",
+          "普通服装|phb",
+          {
+            "item": "小包|phb",
+            "containsValue": 1000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 运动}, {@skill 求生}"
+          },
+          {
+            "ENG_name": "Languages:",
+            "name": "语言",
+            "type": "item",
+            "entry": "任选两项"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "一枚军衔徽章，一组{@item 整副纸牌|phb|一套卡牌}，一套普通 {@item 普通服装|PHB}，以及一个装有 10gp的 {@item 小包|PHB}。"
+          }
+        ]
+      },
+      {
+        "ENG_name": "Feature: Squire of Solamnia",
+        "name": "特性：索兰尼亚侍从",
+        "type": "entries",
+        "entries": [
+          "你获得了{@feat 索拉尼亚侍从|DSotDQ}特性。",
+          "此外，你在索兰尼亚所属的任何堡垒或营地处都可以得到免费的食物和住宿。"
+        ],
+        "data": {
+          "isFeature": true
+        }
+      },
+      {
+        "ENG_name": "Building a Knight of Solamnia Character",
+        "name": "构建索兰尼亚骑士",
+        "type": "entries",
+        "entries": [
+          "任何长于军事的职业或子职都能很合适的融入索兰尼亚骑士团。{@class 战士||战士} 和 {@class 圣武士||圣武士}构成了骑士团的主力。{@class 牧师||牧师} （通常拥有{@class 牧师|PHB|战争|战争}领域）也可以在骑士团的行列中找到。",
+          "如果想扮演一个更独特的索兰尼亚骑士，勇气学院的吟游诗人（ {@class 吟游诗人|PHB|勇气学院|勇气} ）的吟游诗人（或者是来自《{@class 吟游诗人|PHB|剑舞学院|剑舞|XGE} 》的剑术学院{@book 珊娜萨的万事指南|XGE}），或者是一个致力于自然之神哈巴库克（{@class 野蛮人}）理想的 {@deity 哈巴库克|龙枪} （也许采纳了来自《{@class 野蛮人||狂热者道途|狂热者|XGE}》的狂热者之路{@book 珊娜萨的万事指南|XGE}）。",
+          {
+            "ENG_name": "Knight of Solamnia Trinkets",
+            "name": "索兰尼亚骑士饰品",
+            "type": "entries",
+            "entries": [
+              "当你创建角色投掷起始饰品时，你能投掷索兰尼亚骑士饰品表作为{@item 饰品|PHB|饰品表} 中饰品表的替代。",
+              {
+                "type": "table",
+                "caption": "索兰尼亚骑士饰品",
+                "colLabels": [
+                  "d6",
+                  "饰品"
+                ],
+                "colStyles": [
+                  "col-1 text-center",
+                  "col-11"
+                ],
+                "rows": [
+                  [
+                    "1",
+                    "一个光滑的银盘，用于记录你的英雄事迹。"
+                  ],
+                  [
+                    "2",
+                    "一小块牺牲战友留下的铠甲碎片。"
+                  ],
+                  [
+                    "3",
+                    "一件带有皇冠，玫瑰，宝剑装饰或三者皆有的挂坠。"
+                  ],
+                  [
+                    "4",
+                    "一块柄头，来源于你导师的剑。"
+                  ],
+                  [
+                    "5",
+                    "从被你保护者处收下的一件信物，可能是手帕或手套。"
+                  ],
+                  [
+                    "6",
+                    "一个黄铜盒，里面画有银龙的形象。"
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "你被训练成为一名勇敢的战士，被称为索兰尼亚骑士。严格的规则指导你的每一个行动，你在努力维护这些规则的同时，致力于保护弱者和反对邪恶。你的荣誉对你来说就像生命一样重要。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "backgrounds/DSotDQ/Knight of Solamnia.webp"
+          },
+          "credit": "Ekaterina Burmak",
+          "width": 850,
+          "height": 1282
+        }
+      ]
+    },
+    "fromFeature": {
+      "feats": true
+    },
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "prerequisite": [
+      {
+        "campaign": [
+          "龙枪"
+        ]
+      }
+    ],
+    "translator": "不全书",
+    "edition": "one"
+  }
+]

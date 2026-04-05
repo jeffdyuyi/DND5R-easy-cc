@@ -1,0 +1,37 @@
+[
+    {
+        "ENG_name": "I Survived to Tell the Tale",
+        "name": "我曾幸存以述",
+        "source": "CthulhuTorchlight",
+        "page": 0,
+        "category": "O",
+        "entries": [
+            "你遭遇了某种可怕的事情，例如恐怖的生物或是诡异的仪式，这使你踏上探索奇异的调查员之路。你的敏捷步伐和生存本能让你度过了那一天，这是你最珍贵的财富。",
+            "你获得以下增益。",
+            {
+                "ENG_name": "Instinct to Survive",
+                "name": "生存本能",
+                "type": "entries",
+                "entries": [
+                    "当你受到伤害而生命值将降至0{@variantrule 生命值|XPHB}时，你可以立即恢复等同于你等级的生命值{@variantrule 生命值|XPHB}。当你使用此增益后，直至完成一次{@variantrule 长休|XPHB}前都无法再次使用。"
+                ]
+            },
+            {
+                "ENG_name": "Superior Speed",
+                "name": "超级速度",
+                "type": "entries",
+                "entries": [
+                    "你的{@variantrule 速度|XPHB}获得+10加值。"
+                ]
+            },
+            {
+                "ENG_name": "Wriggle Free",
+                "name": "无拘无束",
+                "type": "entries",
+                "entries": [
+                    "若你将获得{@condition 受擒|XPHB}状态，投掷一次{@dice d20}。若骰值不低于10，你改为不获得此状态。"
+                ]
+            }
+        ]
+    }
+]

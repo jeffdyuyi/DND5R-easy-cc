@@ -1,0 +1,144 @@
+[
+  {
+    "name": "血徒",
+    "ENG_name": "Vampire Devotee",
+    "source": "ABH",
+    "edition": "one",
+    "page": 6,
+    "ability": [
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "str",
+              "con",
+              "cha"
+            ],
+            "weights": [
+              2,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "str",
+              "con",
+              "cha"
+            ],
+            "weights": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      }
+    ],
+    "feats": [
+      {
+        "血族玩物|abh": true
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "persuasion": true,
+        "stealth": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "cook's utensils": true
+      }
+    ],
+    "startingEquipment": [
+      {
+        "a": [
+          "厨师工具|xphb",
+          "高档服装|xphb",
+          {
+            "item": "玻璃瓶|xphb",
+            "quantity": 2,
+            "displayName": "玻璃瓶"
+          },
+          "医疗包|xphb",
+          "香水|xphb",
+          "油灯|xphb",
+          {
+            "item": "燃油|xphb",
+            "displayName": "燃油（3扁瓶）"
+          },
+          "水袋|xphb",
+          {
+            "value": 1900
+          }
+        ],
+        "b": [
+          {
+            "value": 5000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability Scores:",
+            "name": "属性值：",
+            "type": "item",
+            "entry": "力量、体质、魅力"
+          },
+          {
+            "ENG_name": "Feat:",
+            "name": "专长：",
+            "type": "item",
+            "entry": "{@feat 血族玩物|ABH}"
+          },
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 隐匿|XPHB}和{@skill 游说|XPHB}"
+          },
+          {
+            "ENG_name": "Tool Proficiency:",
+            "name": "工具熟练项：",
+            "type": "item",
+            "entry": "{@item 厨师工具|XPHB}"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "选择 A 或 B：(A) {@item 厨师工具|XPHB}、{@item 高档服装|XPHB}、2 {@item 玻璃瓶|XPHB|玻璃瓶}、{@item 医疗包|XPHB}、{@item 香水|XPHB}、{@item 油灯|XPHB}、{@item 燃油|XPHB} (3 扁瓶)、{@item 水袋|XPHB}、19 GP；或 (B) 50 GP"
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "你曾为一个吸血鬼或一小群共同巢居的吸血鬼服务。这些不死生物吸食你的血液次数多到数不清。你可能是自愿服务的，或许怀有某天自己也能成为吸血鬼的渴望。或者你可能被魔法魅惑，只保留着作为吸血鬼魔宠时期的几段模糊记忆。无论哪种情况，你在吸血鬼巢穴的时光都已结束。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "backgrounds/ABH/Vampire Devotee.webp"
+          },
+          "credit": "Luca Bancone",
+          "width": 1700,
+          "height": 600
+        }
+      ]
+    },
+    "hasFluff": true,
+    "hasFluffImages": true
+  }
+]

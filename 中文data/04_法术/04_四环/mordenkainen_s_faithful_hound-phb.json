@@ -1,0 +1,66 @@
+[
+  {
+    "ENG_name": "Mordenkainen's Faithful Hound",
+    "name": "魔邓肯忠犬",
+    "source": "PHB",
+    "page": 261,
+    "srd": "忠犬",
+    "referenceSources": [
+      "CoS",
+      "AitFR-THP",
+      "VEoR"
+    ],
+    "reprintedAs": [
+      "魔邓肯忠犬|XPHB"
+    ],
+    "level": 4,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一个银制小哨、一根骨头、和一条线"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 8
+        }
+      }
+    ],
+    "entries": [
+      "指定施法距离内一处你能看见且未被占据的空间，你在该处创造出一只幻影守护犬。守护犬会在法术持续时间内留在原地，直到你使用一个动作将其解散，或者直到你移动到距它 100 尺外。",
+      "除你之外的所有生物视守护犬处于{@condition 隐形}状态，且无法对其造成伤害。当一个小型或更大的生物进入守护犬 30 尺内时，如果该生物无法说出你在施法时设定的口令，守护犬则会开始大声吠叫。守护犬能看见{@condition 隐形}生物，也可以观察到以太位面，并且无视幻术的影响。",
+      "在你的每回合开始时，守护犬会尝试啮咬其5尺范围内一个与你敌对的生物。它的攻击加值等于你施法属性调整值+你的熟练加值。若命中，则造成 {@damage 4d8} 点穿刺伤害。"
+    ],
+    "damageInflict": [
+      "piercing"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "咒法系",
+    "display_damageInflict": [
+      "穿刺"
+    ]
+  }
+]

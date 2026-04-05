@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Necklace of Adaptation",
+    "name": "适应项链",
+    "source": "DMG",
+    "page": 182,
+    "srd": true,
+    "referenceSources": [
+      "NRH-AVitW",
+      "VEoR",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "适应项链|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "weight": 1,
+    "entries": [
+      "佩戴该项链期间，你可以在任何环境中正常呼吸，并且其对抗有害气体（如{@spell 死云术}和{@spell 臭云术}效果、吸入式毒药、以及某些龙类的吐息武器）时进行的豁免具有优势。"
+    ],
+    "optionalfeatures": [
+      "仿制魔法物品|TCE"
+    ],
+    "lootTables": [
+      "魔法物品表F"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Necklace of Adaptation.webp"
+          },
+          "width": 624,
+          "height": 850
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

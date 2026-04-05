@@ -1,0 +1,48 @@
+[
+  {
+    "ENG_name": "Riptide Crossbow",
+    "name": "激流重弩",
+    "source": "GriffonsSaddlebag2",
+    "page": 148,
+    "baseItem": "重弩|phb",
+    "type": "R",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 18,
+    "weaponCategory": "军用",
+    "property": [
+      "A",
+      "H",
+      "LD",
+      "2H"
+    ],
+    "range": "100/400",
+    "dmg1": "1d10",
+    "dmgType": "P",
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "这把魔法重弩拥有3充能，且在每日黎明时恢复{@dice 1d3}已消耗的充能。你可以用一个动作消耗其1充能并念出其命令语，向该武器常规射程内你能看见的一点射出一发弩矢。弩矢会以目标点为中心创造出一道半径20尺的圆形魔法真空区，诡异的灵质潮汐会将生物拖向中心。区域内的每个生物必须进行一次DC 15的力量豁免，豁免失败则会被拉向目标点最多15尺，豁免成功则仅被拉动5尺。该区域直至你的下回合开始前变为{@quickref 困难地形||3}。",
+      "在你的下回合开始时，目标点将爆发出一道半径20尺的强劲水浪，水浪会扑灭区域内所有非魔法火焰，随后水浪消散。此时，区域内的每个生物须进行一次DC 15的力量豁免。豁免失败者受到{@damage 3d10}钝击伤害并应击{@condition 倒地}，豁免成功则伤害减半且不会{@condition 倒地}。"
+    ],
+    "ammoType": "弩矢|phb",
+    "lootTables": [
+      "魔法物品表 G1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Riptide-Crossbow.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

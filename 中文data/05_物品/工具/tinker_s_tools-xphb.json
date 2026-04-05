@@ -1,0 +1,46 @@
+[
+  {
+    "name": "修补工具",
+    "ENG_name": "Tinker's Tools",
+    "source": "XPHB",
+    "page": 221,
+    "type": "AT|XPHB",
+    "rarity": "none",
+    "weight": 10,
+    "value": 5000,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability:",
+            "name": "属性：",
+            "type": "item",
+            "entries": [
+              "敏捷"
+            ]
+          },
+          {
+            "ENG_name": "Utilize:",
+            "name": "操作：",
+            "type": "item",
+            "entries": [
+              "用废料组装出一个微型物品，这个物品会在一分钟后散架。（{@dc 20}）"
+            ]
+          },
+          {
+            "ENG_name": "Craft:",
+            "name": "制造：",
+            "type": "item",
+            "entries": [
+              "{@item 滑膛枪|XPHB}, {@item 手枪|XPHB}, {@item 铃铛|XPHB}, {@item 牛眼提灯|XPHB}, {@item 扁瓶|XPHB}, {@item 附盖提灯|XPHB}, {@item 捕猎陷阱|XPHB}, {@item 锁|XPHB}, {@item 镣铐|XPHB}, {@item 镜子|XPHB}, {@item 铲子|XPHB}, {@item 信号笛|XPHB}, {@item 火绒盒|XPHB}"
+            ]
+          }
+        ]
+      }
+    ],
+    "basicRules2024": true,
+    "srd52": true
+  }
+]

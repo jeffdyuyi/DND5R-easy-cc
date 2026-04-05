@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Mace of Smiting",
+    "name": "打击之锤",
+    "source": "XDMG",
+    "page": 276,
+    "srd52": true,
+    "basicRules2024": true,
+    "baseItem": "硬头锤|xphb",
+    "type": "M|XPHB",
+    "rarity": "rare",
+    "weight": 4,
+    "weaponCategory": "simple",
+    "mastery": [
+      "削弱|XPHB"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "bonusWeapon": "+1",
+    "entries": [
+      "你使用这把魔法武器进行的攻击检定和伤害掷骰具有+1加值。如果你使用这把武器攻击一个构装生物，则加值提升为+3。",
+      "当你使用这把武器进行一次攻击检定并掷出20时，目标会额外受到7钝击伤害。如果目标为构装生物，则其受到的额外钝击伤害为14。如果一个构装生物因受到该伤害而{@variantrule 生命值|XPHB}被降至25及以下，则该生物被摧毁。"
+    ],
+    "lootTables": [
+      "武备 - 珍稀|XDMG",
+      "圣物 - 珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Mace of Smiting.webp"
+          },
+          "width": 674,
+          "height": 1022
+        }
+      ]
+    }
+  }
+]

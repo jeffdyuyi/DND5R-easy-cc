@@ -1,0 +1,58 @@
+[
+  {
+    "ENG_name": "Ray of Enfeeblement",
+    "name": "衰弱射线",
+    "source": "XPHB",
+    "page": 311,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 2,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你向施法距离内的一名生物射出一道让人衰弱的能量射线。目标必须进行一次体质豁免。豁免成功，则目标直到你的下个回合开始在下一次攻击掷骰上具有{@variantrule 劣势|XPHB}。",
+      "豁免失败，目标在持续时间内在使用力量属性的{@variantrule D20 检定|XPHB|D20 检定}上具有{@variantrule 劣势|XPHB}。同样的，在此期间，其所有的伤害掷骰获得{@dice 1d8}的减值。目标在每个其回合结束时可以重复豁免，豁免成功则法术终止。"
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "死灵系",
+    "display_savingThrow": [
+      "体质"
+    ]
+  }
+]

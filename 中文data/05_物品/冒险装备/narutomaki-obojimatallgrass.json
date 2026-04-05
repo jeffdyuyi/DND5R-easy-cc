@@ -1,0 +1,51 @@
+[
+  {
+    "ENG_name": "Narutomaki",
+    "name": "鸣门卷",
+    "source": "ObojimaTallGrass",
+    "page": 205,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 0|large}|SneakerProMedium}",
+            "{@font {@style 0|large}|SneakerProMedium}",
+            "{@font {@style 0|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "这些美味的鸣门卷蛋糕在胧忆岛的各个市场和酒馆都有制作。许多村庄会举办鸣门卷比赛，看谁能做出最美味且美观的鸣门卷蛋糕，这一切都是为了向当地精魂守卫致敬，或是庆祝钓鱼的好季节或五谷丰登。"
+    ],
+    "lootTables": [
+      "舒里塔希的赠礼 普通原料|ObojimaTallGrass",
+      "咸水湿地普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/narutomaki.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 2316,
+          "height": 2316
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "ENG_name": "Pink Candle Wax",
+    "name": "粉色蜡烛蜡",
+    "source": "ObojimaTallGrass",
+    "page": 206,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 2|large}|SneakerProMedium}",
+            "{@font {@style 2|large}|SneakerProMedium}",
+            "{@font {@style 0|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "粉色染蜡是民间魔法传统的一部分，与修里塔希的赠礼地区的村庄联系最为紧密。根据这些传统，次要的祈祷或祝福会被刻在蜡上。当用粉色蜡制成的蜡烛被点燃时，人们相信魔法会被释放，增加祈祷实现的可能。这一习俗在农村社区仍然很常见，而胧忆岛各地的酿酒师也在寻求这种蜡用于贸易。粉色蜡烛蜡在大多数草药师和法师商店中都能找到。"
+    ],
+    "lootTables": [
+      "海岸高地普通原料|ObojimaTallGrass",
+      "舒里塔希的赠礼 普通原料|ObojimaTallGrass",
+      "热水大地普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/pink-candle-wax.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 3092,
+          "height": 3092
+        }
+      ]
+    }
+  }
+]

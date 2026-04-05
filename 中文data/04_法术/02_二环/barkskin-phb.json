@@ -1,0 +1,75 @@
+[
+  {
+    "ENG_name": "Barkskin",
+    "name": "树肤术",
+    "source": "PHB",
+    "page": 217,
+    "srd": true,
+    "referenceSources": [
+      "SKT",
+      "TftYP-TSC",
+      "JttRC"
+    ],
+    "reprintedAs": [
+      "树肤术|XPHB"
+    ],
+    "level": 2,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一把橡树树皮"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你触碰一个自愿生物，并使目标的皮肤在法术终止前呈现粗糙的树皮状外观。期间目标无论着装何种护甲，其 AC 将不会降至 16 以下。"
+    ],
+    "miscTags": [
+      "MAC"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/PHB/Barkskin.webp"
+          },
+          "width": 377,
+          "height": 1000
+        }
+      ]
+    },
+    "classes": [
+      "德鲁伊",
+      "游侠"
+    ],
+    "display_school": "变化系"
+  }
+]

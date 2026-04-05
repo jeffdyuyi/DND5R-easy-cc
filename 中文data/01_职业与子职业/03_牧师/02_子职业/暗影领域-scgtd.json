@@ -1,0 +1,222 @@
+{
+  "ENG_name": "Shadow Domain",
+  "name": "暗影领域",
+  "source": "GuideDrakkenheim",
+  "shortName": "幽影",
+  "page": 155,
+  "className": "牧师",
+  "classSource": "phb",
+  "subclassFeatures": [
+    {
+      "ENG_name": "Shadow Domain",
+      "name": "暗影领域",
+      "source": "GuideDrakkenheim",
+      "page": 155,
+      "className": "牧师",
+      "classSource": "phb",
+      "subclassShortName": "幽影",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "entries": [
+        "神圣之火的牧师们深知生命始终是光明与黑暗之间的平衡。大多数牧师高举火焰，其神圣伟业是阻挡黑暗，并为逝者提供神导术。暗影领域的牧师们则与神圣的黑暗面共鸣。他们站在平衡万物的立场上，运用幽影之力对抗敌人。他们明白并非所有人都值得光明，因此将污秽的惊惧兽送入幽影是他们正义的形态。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "领域法术|牧师|phb|幽影|GuideDrakkenheim|1|GuideDrakkenheim"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "额外戏法|牧师|phb|幽影|GuideDrakkenheim|1|GuideDrakkenheim"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "暗影视觉|牧师|phb|幽影|GuideDrakkenheim|1|GuideDrakkenheim"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Domain Spells",
+      "name": "领域法术",
+      "source": "GuideDrakkenheim",
+      "page": 155,
+      "className": "牧师",
+      "classSource": "phb",
+      "subclassShortName": "幽影",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "entries": [
+        "神圣之火的牧师们深知生命始终是光明与黑暗之间的平衡。大多数牧师高举火焰，其神圣伟业是阻挡黑暗，并为逝者提供神导术。暗影领域的牧师们则与神圣的黑暗面共鸣。他们站在平衡万物的立场上，运用幽影之力对抗敌人。他们明白并非所有人都值得光明，因此将污秽的惊惧兽送入幽影是他们正义的形态。",
+        "你获得牧师等级对应的暗影领域法术表中的领域法术。关于领域法术如何工作，请参阅神圣领域职业特性。",
+        {
+          "type": "table",
+          "caption": "暗影领域法术",
+          "colLabels": [
+            "牧师等级",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "1st",
+              "{@spell 虚假生命}, {@spell 睡眠术}"
+            ],
+            [
+              "3rd",
+              "{@spell 黑暗术}, {@spell 行动无踪}"
+            ],
+            [
+              "5th",
+              "{@spell 催眠图纹}, {@spell 回避侦测}"
+            ],
+            [
+              "7th",
+              "{@spell 艾伐黑触手||黑触手}, {@spell 高等隐形术}"
+            ],
+            [
+              "9th",
+              "{@spell 寒冰锥}, {@spell 托梦术}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Bonus Cantrips",
+      "name": "额外戏法",
+      "source": "GuideDrakkenheim",
+      "page": 155,
+      "className": "牧师",
+      "classSource": "phb",
+      "subclassShortName": "幽影",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "entries": [
+        "你习得{@spell 颤栗之触}和{@spell 次级幻象}戏法。这些戏法视为你的牧师法术，且不计入你已知牧师戏法的数量上限。"
+      ]
+    },
+    {
+      "ENG_name": "Shadow Sight",
+      "name": "暗影视觉",
+      "source": "GuideDrakkenheim",
+      "page": 155,
+      "className": "牧师",
+      "classSource": "phb",
+      "subclassShortName": "幽影",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "entries": [
+        "你可以在黑暗和黑暗术中正常视物，无论是魔法的还是非魔法的，最远距离为300尺。"
+      ]
+    },
+    {
+      "ENG_name": "Channel Divinity: Cloak of the Night",
+      "name": "引导神力：黑夜斗篷",
+      "source": "GuideDrakkenheim",
+      "page": 155,
+      "className": "牧师",
+      "classSource": "phb",
+      "subclassShortName": "幽影",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 2,
+      "header": 2,
+      "entries": [
+        "你可以使用引导神力来召唤具有安全感的幽影。",
+        "作为一个动作，你召唤出一道持续1分钟的魔法幽影帷幕。当你这么做时，选择60尺内你能看见的一个生物（可以是你自己）被黑夜斗篷包裹。当斗篷持续时，该生物在微光光照或黑暗中获得对所有伤害的抗性。",
+        "此外，当你披上夜之斗篷时，你周围60尺内所有非魔法的光源都会熄灭。如果魔法光源是由等级等于或低于你熟练加值的法术创造的，则会被驱散。"
+      ]
+    },
+    {
+      "ENG_name": "Shifting Shadows",
+      "name": "化形幽影",
+      "source": "GuideDrakkenheim",
+      "page": 155,
+      "className": "牧师",
+      "classSource": "phb",
+      "subclassShortName": "幽影",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "你可以利用幽影围绕其他生物来让它们穿越空间。",
+        "以一个动作，你可以指定一个你能看见的60尺内处于微光光照或黑暗中的生物。你将那个生物传送至多60尺至一个你能看见的同样处于微光光照或黑暗中的未占据空间。所选空间必须位于能支撑目标且无需挤入的表面或液体中。一个不愿意的生物若成功通过对抗你法术豁免DC的感知豁免检定则不受影响。",
+        "你能使用本特性的次数等于你的熟练加值。完成一次长休后，你重获所有已消耗的使用次数。"
+      ]
+    },
+    {
+      "ENG_name": "Potent Spellcasting",
+      "name": "强力施法",
+      "source": "GuideDrakkenheim",
+      "page": 155,
+      "className": "牧师",
+      "classSource": "phb",
+      "subclassShortName": "幽影",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 8,
+      "header": 2,
+      "entries": [
+        "你可以将你的感知调整值添加到任何牧师戏法造成的伤害上。"
+      ]
+    },
+    {
+      "ENG_name": "Reborn in Darkness",
+      "name": "重生者于黑暗",
+      "source": "GuideDrakkenheim",
+      "page": 155,
+      "className": "牧师",
+      "classSource": "phb",
+      "subclassShortName": "幽影",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "你在黑暗术中的每个回合开始时恢复10点生命值。如果你受到光耀伤害，此再生术直到你的下个回合开始时才会生效。你只有在回合内没有再生时才会死亡。此外，你在黑暗术中不会衰老。"
+      ]
+    }
+  ],
+  "subclassSpells": [
+    "颤栗之触",
+    "次级幻象",
+    "虚假生命",
+    "睡眠术",
+    "黑暗术",
+    "行动无踪",
+    "催眠图纹",
+    "回避侦测",
+    "艾伐黑触手",
+    "高等隐形术",
+    "寒冰锥",
+    "托梦术"
+  ],
+  "additionalSpells": [
+    {
+      "prepared": {
+        "1": [
+          "颤栗之触",
+          "次级幻象",
+          "虚假生命",
+          "睡眠术"
+        ],
+        "3": [
+          "黑暗术",
+          "行动无踪"
+        ],
+        "5": [
+          "催眠图纹",
+          "回避侦测"
+        ],
+        "7": [
+          "艾伐黑触手",
+          "高等隐形术"
+        ],
+        "9": [
+          "寒冰锥",
+          "托梦术"
+        ]
+      }
+    }
+  ],
+  "hasFluff": true,
+  "hasFluffImages": true
+}

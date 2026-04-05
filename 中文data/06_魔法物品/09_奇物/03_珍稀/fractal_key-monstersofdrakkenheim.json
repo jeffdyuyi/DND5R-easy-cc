@@ -1,0 +1,44 @@
+[
+  {
+    "ENG_name": "Fractal Key",
+    "name": "分形钥匙",
+    "source": "MonstersOfDrakkenheim",
+    "page": 305,
+    "rarity": "rare",
+    "wondrous": true,
+    "entries": [
+      "作为一个动作，处于稀薄地点的生物可以创造一个通往以太位面的异界之门，持续1分钟，之后钥匙会化为粉尘",
+      {
+        "ENG_name": "Crafting",
+        "name": "手作",
+        "type": "entries",
+        "entries": [
+          "制作分形密钥需要一个珍稀锻造厂和以下成分：",
+          {
+            "type": "list",
+            "items": [
+              {
+                "ENG_name": "[Animus]",
+                "name": "[精魄]",
+                "type": "item",
+                "entries": [
+                  "来自{@creature 分形蝶|MonstersOfDrakkenheim}的精魄"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Bones]",
+                "name": "[骨头]",
+                "type": "item",
+                "entries": [
+                  "任意珍稀生物的骸骨"
+                ],
+                "nameDot": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

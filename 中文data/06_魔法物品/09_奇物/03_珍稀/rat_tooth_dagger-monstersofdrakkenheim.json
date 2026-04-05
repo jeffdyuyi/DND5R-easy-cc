@@ -1,0 +1,83 @@
+[
+  {
+    "ENG_name": "Rat Tooth Dagger",
+    "name": "鼠牙匕首",
+    "source": "MonstersOfDrakkenheim",
+    "page": 391,
+    "baseItem": "匕首|XPHB",
+    "type": "M|XPHB",
+    "rarity": "rare",
+    "reqAttune": "由游荡者",
+    "reqAttuneTags": [
+      {
+        "class": "游荡者"
+      }
+    ],
+    "weight": 1,
+    "weaponCategory": "简易",
+    "property": [
+      "F|XPHB",
+      "L|XPHB",
+      "T|XPHB"
+    ],
+    "mastery": [
+      "迅击|XPHB"
+    ],
+    "range": "20/60",
+    "dmg1": "1d4",
+    "dmgType": "P",
+    "entries": [
+      "当你使用这把魔法匕首作为{@action 攻击|XPHB}动作的一部分命中攻击并应用你的偷袭到伤害掷骰时，你可以使用这把匕首作为同一动作的一部分进行一次额外攻击。如果那次攻击命中并满足你偷袭的标准，你可以应用你偷袭骰子的一半（向下取整）到攻击的伤害上。",
+      {
+        "ENG_name": "Crafting",
+        "name": "手作",
+        "type": "entries",
+        "entries": [
+          "制作鼠牙匕首需要一个珍稀工坊和以下珍稀成分：",
+          {
+            "type": "list",
+            "items": [
+              {
+                "ENG_name": "[Animus]",
+                "name": "[精魄]",
+                "type": "item",
+                "entries": [
+                  "任意精魄"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Fluid]",
+                "name": "[流体]",
+                "type": "item",
+                "entries": [
+                  "毒液"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Hide]",
+                "name": "[表皮]",
+                "type": "item",
+                "entries": [
+                  "树皮"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Natural Weapons]",
+                "name": "[天生武器]",
+                "type": "item",
+                "entries": [
+                  "鼠怪的爪击"
+                ],
+                "nameDot": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluffImages": true
+  }
+]

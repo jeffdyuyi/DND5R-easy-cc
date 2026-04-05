@@ -1,0 +1,24 @@
+[
+  {
+    "ENG_name": "Catchpole",
+    "name": "捕手",
+    "source": "GrimHollowPG24",
+    "page": 128,
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 5,
+    "value": 50000,
+    "weaponCategory": "进阶",
+    "property": [
+      "Haft|GrimHollowPG24",
+      "R|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "纠缠|GrimHollowPG24"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "weapon": true
+  }
+]

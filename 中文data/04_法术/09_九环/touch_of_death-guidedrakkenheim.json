@@ -1,0 +1,70 @@
+[
+  {
+    "ENG_name": "Touch of Death",
+    "name": "往生咒",
+    "source": "GuideDrakkenheim",
+    "page": 193,
+    "level": 9,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "鬼婆的手指"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "对5尺内的目标进行一次近战法术攻击。",
+      "命中时，目标受到200点毒素伤害。此伤害无视目标对毒素伤害的任何抗性或免疫，并且无法以任何方式缩小或防止。",
+      "强效毒素在目标的身体中徘徊并将其推向死亡。被此毒素伤害缩小至零生命值的目标自动在完成一次长休前失败所有死亡豁免检定。对目标施放的医疗术或高等复原术法术也会终止此效应。"
+    ],
+    "damageInflict": [
+      "毒素"
+    ],
+    "spellAttack": [
+      "M"
+    ],
+    "miscTags": [
+      "HL"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    }
+  }
+]

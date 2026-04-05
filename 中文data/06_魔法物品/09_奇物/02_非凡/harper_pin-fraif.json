@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Harper Pin",
+    "name": "竖琴手徽章",
+    "source": "FRAiF",
+    "page": 244,
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "当你与此别针同调时，选择一个竖琴手角色（示例请参阅{@book 被遗忘的国度：费伦英雄|FRHoF|6|竖琴手身份}），包括阵营和生物类型。佩戴此别针时，当被用于确定你的生物类型、阵营或位置的魔法作为目标时，你将被识别为该角色。",
+      "该徽章的类型决定其稀有度和效应。",
+      {
+        "ENG_name": "Silver Harper Pin",
+        "name": "银竖琴手别针",
+        "type": "entries",
+        "entries": [
+          "当你与此别针同调时，你可以设计一段不超过25个词的通用思路。当你佩戴此别针时，读取你思想的生物会检测到你预设的思路。一个生物在读取你思想时采取{@action 研究|XPHB}动作，需进行一次DC 13的智力（{@skill 调查|XPHB}）检定。检定成功时，它会意识到检测到的思想是预设的。"
+        ]
+      },
+      {
+        "ENG_name": "Golden Harper Pin",
+        "name": "金竖琴手别针",
+        "type": "entries",
+        "entries": [
+          "当你佩戴这枚别针时，你可以对自己施放{@spell 回避侦测|XPHB}法术。该法术的持续时间为永久，直到你禁用该效果（无需动作）、你取下别针或你不再与该别针调谐为止。"
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "回避侦测|xphb"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/FRAiF/Harper Pin.webp"
+          },
+          "width": 810,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

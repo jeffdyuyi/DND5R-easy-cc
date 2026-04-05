@@ -1,0 +1,40 @@
+[
+    {
+        "ENG_name": "Postal Knight",
+        "name": "驿骑士",
+        "source": "ObojimaTallGrass",
+        "page": 164,
+        "prerequisite": [
+            {
+                "other": "你必须是信使旅团的成员"
+            }
+        ],
+        "ability": [
+            {
+                "choose": {
+                    "from": [
+                        "con",
+                        "wis"
+                    ],
+                    "amount": 1
+                }
+            }
+        ],
+        "skillProficiencies": [
+            {
+                "athletics": true,
+                "survival": true
+            }
+        ],
+        "entries": [
+            "你曾作为信使旅团的一员接受训练。你获得以下增益：",
+            {
+                "type": "list",
+                "items": [
+                    "你获得{@skill 运动}和{@skill 求生}技能的熟练。",
+                    "{@condition 力竭}不会导致你在属性检定上具有劣势。"
+                ]
+            }
+        ]
+    }
+]

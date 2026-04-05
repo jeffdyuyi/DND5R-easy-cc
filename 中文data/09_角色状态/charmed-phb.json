@@ -1,0 +1,47 @@
+[
+  {
+    "name": "魅惑",
+    "ENG_name": "Charmed",
+    "source": "PHB",
+    "page": 290,
+    "srd": true,
+    "basicRules": true,
+    "entries": [
+      {
+        "items": [
+          "被魅惑生物不能攻击魅惑者，其造成伤害的能力或魔法效应也不能以魅惑者为目标。",
+          "魅惑者对被魅惑生物进行任何与社交相关的属性检定时具有优势。"
+        ],
+        "type": "list"
+      }
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "conditionsdiseases/PHB/charmed.webp"
+          },
+          "width": 450,
+          "height": 450
+        }
+      ]
+    },
+    "hasFluffImages": true,
+    "otherSources": [
+      {
+        "page": 62,
+        "source": "RMR"
+      },
+      {
+        "page": 48,
+        "source": "HftT"
+      }
+    ],
+    "reprintedAs": [
+      "魅惑|XPHB"
+    ],
+    "translator": "不全书"
+  }
+]

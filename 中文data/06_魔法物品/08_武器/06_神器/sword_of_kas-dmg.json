@@ -1,0 +1,117 @@
+[
+  {
+    "ENG_name": "Sword of Kas",
+    "name": "凯斯之剑",
+    "source": "DMG",
+    "page": 226,
+    "referenceSources": [
+      "VEoR"
+    ],
+    "reprintedAs": [
+      "凯斯之剑|XDMG"
+    ],
+    "baseItem": "长剑|PHB",
+    "type": "M",
+    "rarity": "artifact",
+    "reqAttune": true,
+    "sentient": true,
+    "weight": 3,
+    "weaponCategory": "martial",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "S",
+    "dmg2": "1d10",
+    "bonusWeapon": "+3",
+    "critThreshold": 19,
+    "entries": [
+      "当维克那势力壮大时，他任命邪恶残忍的副官",
+      "长久以来，凯斯一直忠实地侍奉着{@creature 巫妖}，但随着凯斯力量的增强，他的傲慢也与日俱增。他的剑怂恿他取代维克那，这样他们就能代替维克那统治{@creature 巫妖||巫妖的}帝国。传说维克那的毁灭是凯斯亲手造成的，但维克那也给他反叛的副官带来了厄运，只留下了凯斯的剑。世界因此变得更加光明。",
+      "凯斯之剑是一把魔法智能长剑，使用此剑发动的攻击检定和伤害掷骰获得+3加值。它在掷出19或20时造成重击，并对亡灵造成额外{@damage 2d10}挥砍伤害。",
+      "如果这把剑在出鞘后1分钟内没有被鲜血浸染，其持有者必须进行一次{@dc 15}的魅力豁免。豁免成功则持有者受到{@damage 3d6}点心灵伤害。豁免失败则持有者被剑支配，如同受到{@spell 支配怪物}法术影响，且剑会要求被鲜血浸染。当剑的要求被满足时，该法术效果结束。",
+      {
+        "ENG_name": "Random Properties",
+        "name": "随机词条",
+        "type": "entries",
+        "entries": [
+          "凯斯之剑具有以下随机词条："
+        ]
+      },
+      {
+        "type": "list",
+        "items": [
+          "1 {@table 神器词条; 次要增益词条|DMG|次要增益词条}",
+          "1 {@table 神器词条; 主要增益词条|DMG|主要增益词条}",
+          "1 {@table 神器词条; 次要减益词条|DMG|次要减益词条}",
+          "1 {@table 神器词条; 主要减益词条|DMG|主要减益词条}"
+        ]
+      },
+      {
+        "ENG_name": "Spirit of Kas",
+        "name": "凯斯之灵",
+        "type": "entries",
+        "entries": [
+          "当你携带此剑时，你在每场战斗开始时为你的先攻添加一个{@dice d10}。此外，当你使用一个动作以此剑进行攻击时，你可以选择将此剑的攻击加值全部或部分转移到你的护甲等级中。调整后的加值持续到你的下一回合开始。"
+        ]
+      },
+      {
+        "ENG_name": "Spells",
+        "name": "法术",
+        "type": "entries",
+        "entries": [
+          "当你携带此剑时，你可以用一个动作通过它施放下列法术之一（豁免 DC 18）：{@spell 召雷术}、{@spell 圣言术} 或 {@spell 死亡一指}。一旦你使用此剑施放了一个法术，直到下一个黎明前你都无法再次通过它施放该法术。"
+        ]
+      },
+      {
+        "ENG_name": "Sentience",
+        "name": "智能",
+        "type": "entries",
+        "entries": [
+          "凯斯之剑是一把具有智能的混乱邪恶武器，智力为15，感知为13，魅力为16。它具有听觉和{@sense 黑暗视觉}，范围为120尺。",
+          "该武器能够与持有者通过心灵感应进行交流，并且能说、读和理解通用语。"
+        ]
+      },
+      {
+        "ENG_name": "Personality",
+        "name": "个性",
+        "type": "entries",
+        "entries": [
+          "该剑的目的是给维克那带来废墟。杀死维克那的崇拜者、摧毁{@creature 巫妖||巫妖的}的作品以及挫败他的阴谋都有助于实现这一目标。",
+          "凯斯之剑还试图摧毁任何被维克那之眼和{@item 维克那魔掌}腐化的人。这把剑对那些神器的执念最终会成为其持有者的执念。"
+        ]
+      },
+      {
+        "ENG_name": "Destroying the Sword",
+        "name": "摧毁此剑",
+        "type": "entries",
+        "entries": [
+          "一个同时与{@item 维克那法眼}和{@item 维克那魔掌}调谐的生物可以使用这些组合神器的祈愿属性来摧毁凯斯之剑。该生物必须施放{@spell 祈愿术}法术并进行一次魅力检定，与剑的魅力检定对抗。剑必须在生物30尺范围内，否则法术失败。如果剑赢得对抗，无事发生，且{@spell 祈愿术}法术被浪费。如果剑输掉对抗，它将被摧毁。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "召雷术",
+          "圣言术",
+          "死亡一指"
+        ]
+      }
+    },
+    "hasFluffImages": true,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Sword of Kas.webp"
+          },
+          "width": 315,
+          "height": 315
+        }
+      ]
+    }
+  }
+]

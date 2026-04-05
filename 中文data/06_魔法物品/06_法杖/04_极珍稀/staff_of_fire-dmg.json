@@ -1,0 +1,84 @@
+[
+  {
+    "ENG_name": "Staff of Fire",
+    "name": "火焰法杖",
+    "source": "DMG",
+    "page": 201,
+    "srd": true,
+    "referenceSources": [
+      "CoA"
+    ],
+    "reprintedAs": [
+      "火焰法杖|XDMG"
+    ],
+    "resist": [
+      "火焰"
+    ],
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": "由德鲁伊、术士、魔契师或法师",
+    "reqAttuneTags": [
+      {
+        "class": "德鲁伊"
+      },
+      {
+        "class": "术士"
+      },
+      {
+        "class": "魔契师"
+      },
+      {
+        "class": "法师"
+      }
+    ],
+    "weight": 4,
+    "weaponCategory": "simple",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6 + 4}",
+    "charges": 10,
+    "staff": true,
+    "entries": [
+      "持握这把法杖期间，你具有火焰伤害的抗性。",
+      "这把法杖有10发充能。持握法杖期间，你可以用一个动作并消耗1发或更多充能以施展以下法术之一（使用你自身的法术豁免DC）：{@spell 燃烧之手}（1充能）、{@spell 火球术}（3充能）或{@spell 火墙术}（4充能）。",
+      "该法杖每天黎明时恢复{@dice 1d6 + 4}发已消耗的充能。如果你消耗了最后一发充能，骰一次{@dice d20}。如果骰值为1，则法杖将化为焦黑的余烬而毁灭。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "燃烧之手"
+        ],
+        "3": [
+          "火球术"
+        ],
+        "4": [
+          "火墙术"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表H"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 40000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Staff of Fire.webp"
+          },
+          "width": 175,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "ST"
+  }
+]

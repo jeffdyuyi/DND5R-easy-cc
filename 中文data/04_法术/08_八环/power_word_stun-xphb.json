@@ -1,0 +1,60 @@
+[
+  {
+    "ENG_name": "Power Word Stun",
+    "name": "律令震慑",
+    "source": "XPHB",
+    "page": 306,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 8,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你压垮施法距离内一名你可见生物的心灵。若目标{@variantrule 生命值|XPHB}不超过 150 点，则其陷入{@condition 震慑|XPHB}状态；否则，目标的{@variantrule 速度|XPHB}直至你下个回合开始前变为 0。",
+      "被{@condition 震慑|XPHB}目标在每个其回合结束时进行一次体质豁免。豁免成功时其身上的此状态终止。"
+    ],
+    "conditionInflict": [
+      "震慑"
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "惑控系",
+    "display_savingThrow": [
+      "体质"
+    ]
+  }
+]

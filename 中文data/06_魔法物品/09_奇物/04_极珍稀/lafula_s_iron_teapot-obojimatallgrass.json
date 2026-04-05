@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Lafula's Iron Teapot",
+    "name": "拉芙拉的铁茶壶",
+    "source": "ObojimaTallGrass",
+    "page": 173,
+    "rarity": "very rare",
+    "wondrous": true,
+    "entries": [
+      "拉芙拉的铁茶壶被魔法师拉芙拉的恶意魔法所玷污。在壶中酿造的茶会对饮用者施加诅咒。当用来泡茶时，制造者从{@spell 降咒}法术中选择一个效应。一壶茶可产生6份。饮用该茶的生物会受到制造者所选诅咒的影响。诅咒持续1年或被移除。受茶诅咒影响的生物不会再受到该茶产生的其他诅咒影响。一旦你使用铁茶壶泡茶，1个月内不能再使用。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/lafulas-iron-teapot.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 1986,
+          "height": 1986
+        }
+      ]
+    }
+  }
+]

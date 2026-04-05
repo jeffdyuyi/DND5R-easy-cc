@@ -1,0 +1,48 @@
+[
+  {
+    "ENG_name": "Travel Wok",
+    "name": "旅行锅",
+    "source": "ObojimaTallGrass",
+    "page": 177,
+    "baseItem": "平底锅|ObojimaTallGrass",
+    "type": "M",
+    "rarity": "rare",
+    "weight": 6,
+    "value": 30,
+    "weaponCategory": "简易",
+    "property": [
+      "V",
+      "S"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "bonusWeapon": "+1",
+    "entries": [
+      "与其他平底锅不同，这个附魔旅行锅既能赋予食物治疗属性，又能加热对敌人发动燃烧打击。该锅被视为+1平底锅，命中时可额外造成{@damage 1d4}火焰伤害。",
+      "旅行锅不仅无需火焰就能烹饪食物，在一小时内食用锅中烹饪食物的生物还将获得{@dice 1d6}临时生命值。通过锅食获得的临时生命值持续1小时。该属性使用后，直至次日拂晓前无法再次使用。",
+      {
+        "ENG_name": "Special",
+        "name": "特殊",
+        "type": "entries",
+        "entries": [
+          "当持用平底锅时，你可以使用你的附赠动作在你的AC上添加一个+1增益，直到你的下一个回合结束。当你持用盾牌时无法获得此增益。"
+        ]
+      }
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/travel-wok.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 2054,
+          "height": 2054
+        }
+      ]
+    }
+  }
+]

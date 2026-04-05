@@ -1,0 +1,49 @@
+[
+  {
+    "ENG_name": "Might of the Old",
+    "name": "古老伟力",
+    "source": "CrookedMoon24",
+    "page": 119,
+    "type": "Dark Bargain",
+    "entries": [
+      "远古和原始法力栖息在德鲁斯肯瓦尔德最古老的森林中。这些能力将力量注入你体内，但可能以其不变的自然之怒将你淹没。",
+      {
+        "ENG_name": "Ancient Might",
+        "name": "古源蛮力",
+        "type": "entries",
+        "entries": [
+          "你的力量值增加2，最高为22，你的敏捷值减少2。"
+        ]
+      },
+      {
+        "ENG_name": "Primeval Strength",
+        "name": "原始力量",
+        "type": "entries",
+        "entries": [
+          "作为{@variantrule 附赠动作|XPHB}，你可以呼唤古贤之力来将你的力量值提升至25，持续1分钟，在此期间你对物件造成双倍伤害。一旦你使用此{@variantrule 附赠动作|XPHB}，在完成一次{@variantrule 长休|XPHB}前无法再次使用。"
+        ]
+      },
+      {
+        "ENG_name": "Pyre's Price",
+        "name": "薪火之罚",
+        "type": "entries",
+        "entries": [
+          "当你激活原始力量时，你的皮肤呈现出树皮般的质地，在此期间你对火焰伤害具有{@variantrule 易伤|XPHB}。当你完成一次{@variantrule 长休|XPHB}时，你的皮肤恢复为正常状态。"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/CrookedMoon24/Rewards/Might%20of%20the%20Old.webp"
+        },
+        "width": 850,
+        "height": 298,
+        "credit": "Suzanne Helmigh"
+      }
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Bargains/Might%20of%20the%20Old.webp"
+  }
+]

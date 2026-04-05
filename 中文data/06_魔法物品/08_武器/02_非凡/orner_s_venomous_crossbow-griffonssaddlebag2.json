@@ -1,0 +1,48 @@
+[
+  {
+    "ENG_name": "Orner's Venomous Crossbow",
+    "name": "奥内尔毒弩",
+    "source": "GriffonsSaddlebag2",
+    "page": 132,
+    "baseItem": "手弩|phb",
+    "type": "R",
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "weight": 3,
+    "weaponCategory": "军用",
+    "property": [
+      "A",
+      "L",
+      "LD"
+    ],
+    "range": "30/120",
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "bonusWeapon": "+1",
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3 + 1}",
+    "charges": 4,
+    "entries": [
+      "这把魔法手弩具有一个由各种奇怪的管子和容器组成的小型系统。你使用这把魔化武器进行的攻击检定和伤害掷骰都获得+1加值。此弩具有4充能，且在每日拂晓时恢复{@dice 1d3 + 1}已消耗的充能。当你用此武器发动攻击时，你可以消耗其1充能使射出的弩矢涂覆上一层独特的自生毒液。若本次攻击命中，目标额外受到{@damage 1d6}毒素伤害且必须进行一次DC 13的体质豁免。若豁免失败，目标陷入{@condition 中毒}状态持续直至其下一个回合结束。",
+      "当你消耗了此弩的最后一充能时，骰一次{@dice d20}。如果骰值为1，此弩上的容器都将破碎并喷出毒雾，毒雾覆盖以你为中心，半径20尺的球状区域。所有位于该区域内的生物都受到{@damage 1d12}毒素伤害，且必须成功通过一次DC 15的体质豁免，否则将陷入{@condition 中毒}，持续1分钟。当此情况发生时，这把弩会变为非魔法的弩，并失去其所有的额外词条。"
+    ],
+    "ammoType": "弩矢|phb",
+    "lootTables": [
+      "魔法物品表 F1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Orners-Venomous-Crossbow.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

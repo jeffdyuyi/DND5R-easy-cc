@@ -1,0 +1,34 @@
+[
+  {
+    "ENG_name": "Potion of Vitality",
+    "name": "活力药水",
+    "source": "DMG",
+    "page": 188,
+    "basicRules": true,
+    "referenceSources": [
+      "LMoP",
+      "OotA",
+      "ToA",
+      "WDMM",
+      "KftGV",
+      "CoA",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "活力药水|XDMG"
+    ],
+    "type": "P",
+    "tier": "次要",
+    "rarity": "very rare",
+    "entries": [
+      "饮用此药水将消除你身上所有层数的{@condition 力竭}状态，并治愈任何影响你的疾病与毒素。此后24小时内，你消耗生命骰恢复生命时直接视为骰出了最大值。这种深红色药水有节奏的发出微光，会让人联想到心脏的跳动。"
+    ],
+    "lootTables": [
+      "魔法物品表D"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "valueReference": 20000
+  }
+]

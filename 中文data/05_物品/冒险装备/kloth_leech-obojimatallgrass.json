@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Kloth Leech",
+    "name": "克洛特水蛭",
+    "source": "ObojimaTallGrass",
+    "page": 204,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 1|large}|SneakerProMedium}",
+            "{@font {@style 1|large}|SneakerProMedium}",
+            "{@font {@style 1|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "克洛特水蛭大约有手帕大小，颜色各异。它们倾向于与不同颜色的水蛭结伙聚集，形成类似拼布团的样子。在狂风农田有一些德鲁伊社区，他们学会了用训练有素的克洛特水蛭制作整件衣物。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/klotch-leech.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 3066,
+          "height": 3066
+        }
+      ]
+    }
+  }
+]

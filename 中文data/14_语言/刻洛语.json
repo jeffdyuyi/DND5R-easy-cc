@@ -1,0 +1,14 @@
+{
+  "ENG_name": "Kraul",
+  "name": "刻洛语",
+  "source": "GGR",
+  "page": 9,
+  "type": "standard",
+  "typicalSpeakers": [
+    "刻洛语",
+    "{@creature 刻洛战士|GGR|刻洛战士}",
+    "{@creature 刻洛死亡僧侣|GGR|刻洛死亡僧侣}",
+    "{@creature 戴卡林巫妖|GGR|戴卡林巫妖}"
+  ],
+  "script": "刻洛语"
+}

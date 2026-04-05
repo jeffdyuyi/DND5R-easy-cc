@@ -1,0 +1,98 @@
+[
+  {
+    "ENG_name": "Origami Bird Swarm",
+    "name": "纸鹤群袭",
+    "source": "ObojimaTallGrass",
+    "page": 187,
+    "level": 5,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 300
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "优质纸张价值10GP，该法术会消耗",
+        "cost": 1000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "八只折纸鸟从施放该法术时消耗的纸张堆中爆发出来，飞向你能看见范围内的一个生物。如果目标在你施放法术时位于你30尺内，集群会与目标相撞，对其造成{@damage 8d6}挥砍伤害，然后这些鸟消失。",
+      "若你在施放法术时目标距离你超过30尺，纸鹤群袭会以每轮30尺的速度向目标方向移动，忽略{@quickref 困难地形||3}并根据需要绕过生物和其他障碍物。当纸鹤群袭移动时，它会像中等体型生物一样阻碍一个5尺立方区域。",
+      "当集群移动时，它可以被攻击。它的护甲等级等于你的法术豁免DC。每次攻击命中集群时，集群中的鸟的数量会减少一只。",
+      "在纸鹤群袭到达目标的回合开始时，目标受到{@damage 1d6}挥砍伤害，伤害数值等于集群中剩余的纸鹤数量。随后这些纸鹤消失。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用6环或更高法术位施放该法术时，集群中的纸鹤数量每比5环高一环就增加二；若目标在你施放法术时处于你30尺内，则每比5环高一环就额外受到{@damage 2d6}挥砍伤害。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "挥砍"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Spells/origami-bird-swarm.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 5068,
+          "height": 5836
+        }
+      ]
+    },
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Custom/Spells/Origami%20Bird%20Swarm.webp"
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Figurine of Wondrous Power, Bronze Griffon",
+    "name": "异能塑像，青铜狮鹫",
+    "source": "XDMG",
+    "page": 261,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "rare",
+    "wondrous": true,
+    "entries": [
+      "{@item 异能塑像|XDMG}是小到可以装在口袋里的小雕塑。当你用一个{@action 魔法|XPHB}动作来将雕像扔到你周围60尺以内的某处时，它将变成一只活体生物（见下文对每种雕像的描述）。如果雕像被扔到的地方被其他生物或物件占据，或者周围的空间不足以容纳该雕像变成的生物，则它将不会变成生物。",
+      "雕像变成的生物对你和你的盟友态度为{@variantrule 友好【态度】|XPHB|友好}。它能听懂你的语言并会按你的口头命令行事，使用你的{@variantrule 先攻|XPHB}并在你回合结束后立即执行其回合。如果你不下达任何命令，则该生物会保护自己而不作其他动作。",
+      "生物存在的时间依雕像而不同。持续时间结束时，生物将变回异能塑像形态。当它的{@variantrule 生命值|XPHB}降至0，或是你在触碰它期间用一个{@action 魔法|XPHB}动作令其变回雕像时，它亦将提前变回雕像状态。变回雕像后，异能塑像的词条必须经过一段时间后才能再次启动（见下文描述）。",
+      {
+        "ENG_name": "Bronze Griffon (Rare)",
+        "name": "青铜狮鹫（珍稀）",
+        "type": "entries",
+        "entries": [
+          "一尊神形桀骜的青铜狮鹫雕像，可以变为一只{@creature 狮鹫|XMM} ，其存在至多维持6小时。使用后，此雕像需要经过5日才能再次启动。"
+        ]
+      }
+    ],
+    "lootTables": [
+      "奥秘 - 珍稀|XDMG"
+    ],
+    "translator": "不全书",
+    "valueReference": 4000,
+    "type": "W"
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "ENG_name": "Reflector Shield",
+    "name": "反射之盾",
+    "source": "MonstersOfDrakkenheim",
+    "page": 391,
+    "baseItem": "盾牌|XPHB",
+    "type": "S|XPHB",
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 6,
+    "ac": 2,
+    "entries": [
+      "这面魔法护盾由软体诡谲怪的壳与异怪的皮甲手柄融合而成，表面涂有受污染的妄质汁并镶嵌珍稀精魄。完成后，外壳会散发出一种异界色调，呈现出万花筒般的闪烁图案。该护盾能反射攻击和魔法。",
+      "当你从60尺内能看见的生物处受到强酸、寒冷、火焰、力场、闪电或雷鸣伤害时，你可以使用你的{@variantrule 反应|XPHB}使该生物受到相同的伤害（你仍会受到伤害）。",
+      {
+        "ENG_name": "Crafting",
+        "name": "手作",
+        "type": "entries",
+        "entries": [
+          "制作反射之盾需要一个珍稀工坊和以下珍稀成分：",
+          {
+            "type": "list",
+            "items": [
+              {
+                "ENG_name": "[Animus]",
+                "name": "[精魄]",
+                "type": "item",
+                "entries": [
+                  "任意精魄"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Fluid]",
+                "name": "[流体]",
+                "type": "item",
+                "entries": [
+                  "受污染的妄质汁"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Hide]",
+                "name": "[表皮]",
+                "type": "item",
+                "entries": [
+                  "软体诡谲怪的壳"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Hide]",
+                "name": "[表皮]",
+                "type": "item",
+                "entries": [
+                  "异怪的皮肤"
+                ],
+                "nameDot": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluffImages": true
+  }
+]

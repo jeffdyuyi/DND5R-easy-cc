@@ -1,0 +1,85 @@
+[
+  {
+    "ENG_name": "Inscrutable Staff",
+    "name": "莫测之杖",
+    "source": "DungeonsDrakkenheim",
+    "page": 233,
+    "type": "M",
+    "rarity": "legendary",
+    "reqAttune": "由术士、魔契师或法师",
+    "reqAttuneTags": [
+      {
+        "class": "术士"
+      },
+      {
+        "class": "魔契师"
+      },
+      {
+        "class": "法师"
+      }
+    ],
+    "weight": 4,
+    "weaponCategory": "简易",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "bonusWeapon": "+2",
+    "bonusSpellAttack": "+2",
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 2d10}",
+    "charges": 20,
+    "staff": true,
+    "entries": [
+      "这根法杖可以作为魔法长棍使用，使用它进行攻击和伤害骰时，你获得+2的加值。持有它时，你的法术攻击加值和法术豁免DC获得+2的加值。",
+      "这根法杖有20次充能，每天黎明时恢复{@dice 2d10}点已消耗的充能。如果你消耗了最后一次充能，掷一个{@dice d20}。如果掷出1，法杖触发一个随机奥术异常（见《德拉肯海姆之墟》）。如果掷出20，法杖恢复{@dice 1d10}次充能。",
+      "持有法杖时，你可以使用一个动作消耗一些充能来通过它施放以下法术之一，使用你的法术豁免DC和施法能力：{@spell 加速术}（3充能），{@spell 缓慢术}（3充能），{@spell 秘法眼}（4充能），{@spell 任意门}（4充能），{@spell 毕格比之手}（5充能），{@spell 力场墙}（5充能），{@spell 解离术}（6充能），{@spell 反转重力}（7充能），或{@spell 迷宫术}（8充能）。",
+      "你还可以使用一个动作通过法杖施放以下法术之一，且不消耗任何充能：{@spell 侦测魔法}，{@spell 谭森浮碟术}，{@spell 法师护甲}，{@spell 修复术}，{@spell 传讯术}，或{@spell 迷踪步}。",
+      {
+        "ENG_name": "Crown Authority",
+        "name": "王室威权",
+        "type": "entries",
+        "entries": [
+          "一个角色无法同时与多个德拉肯海姆之印同调。当你与德拉肯海姆之印同调时，德拉肯海姆的守护者构装如{@creature 戍墙石像鬼|DungeonsDrakkenheim|墙头石像鬼}和{@creature 守塔巨龙|DungeonsDrakkenheim|塔龙}不会攻击你。若你攻击某个守护者或对其施法，该个体守护者将在24小时内无视此效应。",
+          "以一个动作，你可以展示德拉肯海姆之印来斥责护卫。你对30尺内能看见或听见你的每个{@creature 戍墙石像鬼|DungeonsDrakkenheim}或{@creature 守塔巨龙|DungeonsDrakkenheim}进行一次对抗魅力属性检定。若你赢得比赛，该生物将被斥责1分钟或直到它受到任何伤害。被斥责的生物不能移动，且不能执行动作或反应。赢得比赛的生物将在24小时内对你的斥责免疫。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "will": [
+        "侦测魔法",
+        "法师护甲",
+        "修复术",
+        "传讯术",
+        "迷踪步",
+        "谭森浮碟术"
+      ],
+      "charges": {
+        "3": [
+          "加速术",
+          "缓慢术"
+        ],
+        "4": [
+          "秘法眼",
+          "任意门"
+        ],
+        "5": [
+          "毕格比之手",
+          "力场墙"
+        ],
+        "6": [
+          "解离术"
+        ],
+        "7": [
+          "反转重力"
+        ],
+        "8": [
+          "迷宫术"
+        ]
+      }
+    },
+    "hasFluffImages": true
+  }
+]

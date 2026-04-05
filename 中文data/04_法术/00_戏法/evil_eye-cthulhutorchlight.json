@@ -1,0 +1,88 @@
+[
+  {
+    "ENG_name": "Evil Eye",
+    "name": "邪眼",
+    "source": "CthulhuTorchlight",
+    "page": 0,
+    "level": 0,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "round",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你怒视范围内一只可见的生物，并对其施加恶毒凶咒。目标受到{@damage 1d4 + 2}心灵伤害，且对其发动的攻击检定与{@variantrule 徒手打击|XPHB|徒手打击}在{@dice d20}掷出19或20时即可触发{@variantrule 重击|XPHB}。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Cantrip Upgrade",
+        "name": "戏法强化",
+        "type": "entries",
+        "entries": [
+          "本法术的伤害会在你达到5级（{@dice 4d4 + 8}）、11级（{@dice 2d4 + 4}）和17级（{@dice 3d4 + 6}）时提升{@dice 1d4 + 2}。"
+        ]
+      }
+    ],
+    "scalingLevelDice": {
+      "label": "心灵伤害",
+      "scaling": {
+        "1": "1d4 + 2",
+        "5": "2d4 + 4",
+        "11": "3d4 + 6",
+        "17": "4d4 + 8"
+      }
+    },
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "心灵"
+    ],
+    "miscTags": [
+      "SCL",
+      "SGT"
+    ]
+  }
+]

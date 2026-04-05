@@ -1,0 +1,37 @@
+[
+  {
+    "name": "链枷",
+    "ENG_name": "Flail",
+    "source": "XPHB",
+    "page": 215,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 1000,
+    "weaponCategory": "martial",
+    "mastery": [
+      "削弱|XPHB"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "B",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XPHB/Flail.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 323,
+          "height": 284
+        }
+      ]
+    },
+    "basicRules2024": true,
+    "hasFluffImages": true,
+    "srd52": true,
+    "weapon": true
+  }
+]

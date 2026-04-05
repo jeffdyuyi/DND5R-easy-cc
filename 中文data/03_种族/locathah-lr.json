@@ -1,0 +1,136 @@
+[
+  {
+    "name": "洛卡鱼人",
+    "ENG_name": "Locathah",
+    "source": "LR",
+    "page": 24,
+    "size": [
+      "M"
+    ],
+    "speed": {
+      "walk": 30,
+      "swim": 30
+    },
+    "ability": [
+      {
+        "str": 2,
+        "dex": 1
+      }
+    ],
+    "traitTags": [
+      "水陆两栖",
+      "天生护甲"
+    ],
+    "languageProficiencies": [
+      {
+        "aquan": true,
+        "common": true
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "athletics": true,
+        "perception": true
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Age",
+        "name": "年龄",
+        "type": "entries",
+        "entries": [
+          "洛卡鱼人10岁就能成年，但已知能活到80岁。"
+        ]
+      },
+      {
+        "ENG_name": "Alignment",
+        "name": "阵营",
+        "type": "entries",
+        "entries": [
+          "大部分洛卡鱼人是真正的中立，或在其阵营中具有中立倾向。由于来自一种普遍会对弱者施以同情的文化，他们倾向于善良。"
+        ]
+      },
+      {
+        "ENG_name": "Natural Armor",
+        "name": "天生护甲",
+        "entries": [
+          "你具有坚硬且长鳞片的皮肤。当你没有穿着护甲时，你的AC为12+你的敏捷调整值。如果你着装护甲的AC更低，你也能使用你的天生护甲作为你的AC。使用盾牌不会影响你从此特性获益。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Observant & Athletic",
+        "name": "敏锐&矫健",
+        "entries": [
+          "你具有{@skill 运动}（运动）与{@skill 察觉}（感知）的熟练项。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Leviathan Will",
+        "name": "利维坦意志",
+        "entries": [
+          "你在对抗使你{@condition 魅惑}、{@condition 恐慌}、{@condition 麻痹}、{@condition 中毒}、{@condition 震慑}，或是使你入眠的豁免检定中具有优势。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Limited Amphibiousness",
+        "name": "有限两栖",
+        "entries": [
+          "你可以在空气和水中呼吸，但你需要至少每四个小时把自己浸入水中一次来避免陷入窒息。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Size",
+        "name": "体型",
+        "type": "entries",
+        "entries": [
+          "洛卡鱼人直立时介于5尺与6尺之间，平均150磅。你的体型为中型。"
+        ]
+      },
+      {
+        "ENG_name": "Language",
+        "name": "语言",
+        "entries": [
+          "你能读、说和写水族语和通用语。"
+        ],
+        "type": "entries"
+      }
+    ],
+    "fluff": {
+      "entries": [
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "entries": [
+                "在《{@adventure 盐沼幽魂|GoS}》之中，这些坚强骄傲的鱼人们忍受了战争、奴役和其他水生生物带来的危机。他们住在海岸边被淹没的社群之中，并在水上和水面下捕猎。"
+              ]
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/LR/Locathah.webp"
+          },
+          "width": 1000,
+          "height": 1000
+        }
+      ]
+    },
+    "age": {
+      "mature": 10,
+      "max": 80
+    },
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "translator": "不全书"
+  }
+]

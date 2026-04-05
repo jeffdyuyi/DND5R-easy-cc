@@ -1,0 +1,18 @@
+{
+  "ENG_name": "Cult of the Dragon Infiltrator",
+  "name": "龙巫教秘教徒",
+  "source": "HotDQ",
+  "page": 87,
+  "otherSources": [
+    {
+      "source": "ToD",
+      "page": 176
+    }
+  ],
+  "optionType": [
+    "RF:B"
+  ],
+  "entries": [
+    "你已经潜入了龙之邪教的行列。你已经监视这个组织相当长的时间，对其内部运作和习俗非常熟悉。你有第二个身份，作为邪教的一名入门成员，足以伪装成一个普通的小兵或仆人。"
+  ]
+}

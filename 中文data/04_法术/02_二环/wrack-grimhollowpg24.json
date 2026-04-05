@@ -1,0 +1,57 @@
+[
+  {
+    "ENG_name": "Wrack",
+    "name": "痉挛术",
+    "source": "GrimHollowPG24",
+    "page": 206,
+    "level": 2,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一段磨损的麻花绳"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "选择一个你能看见的范围内的生物。目标必须成功通过一次体质豁免检定，否则在法术持续时间内会遭受痛苦的肌肉痉挛。豁免失败时，目标的{@variantrule 速度|XPHB}减半，并且在攻击检定上具有{@variantrule 劣势|XPHB}。目标在其每回合结束时重复豁免检定，成功则终止法术。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "savingThrow": [
+      "体质"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Wrack.webp"
+  }
+]

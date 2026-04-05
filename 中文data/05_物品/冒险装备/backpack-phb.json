@@ -1,0 +1,30 @@
+[
+  {
+    "name": "背包",
+    "ENG_name": "Backpack",
+    "source": "PHB",
+    "page": 153,
+    "type": "G",
+    "rarity": "none",
+    "weight": 5,
+    "value": 200,
+    "entries": [
+      "背包可以容纳一立方尺或30磅的物品。你还可以将物品系在背包外面，例如一卷铺盖或是一卷绳索。"
+    ],
+    "basicRules": true,
+    "containerCapacity": {
+      "weight": [
+        30
+      ]
+    },
+    "referenceSources": [
+      "CRCotN",
+      "PaBTSO"
+    ],
+    "reprintedAs": [
+      "背包|XPHB"
+    ],
+    "srd": true,
+    "translator": "不全书"
+  }
+]

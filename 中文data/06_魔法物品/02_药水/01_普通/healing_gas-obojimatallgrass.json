@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Healing Gas",
+    "name": "治疗气体",
+    "source": "ObojimaTallGrass",
+    "page": 224,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Com"
+    ],
+    "entries": [
+      "当投掷到你能看到的60尺内的一点时，这种不稳定液体会爆炸，释放出一团猩红的气体。爆炸5尺范围内的所有生物恢复等于{@dice 1d4 + 1}的生命值。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 28|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Combat/healing-gas.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1888,
+          "height": 1888
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

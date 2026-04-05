@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Zhentarim Tactics",
+    "name": "散塔林会战术",
+    "source": "FRHoF",
+    "page": 41,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4,
+        "feat": [
+          "散塔林会暴徒|FRHoF"
+        ]
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "dex",
+            "cha"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Retaliate",
+        "name": "反击",
+        "type": "entries",
+        "entries": [
+          "位于你5尺内生物以近战攻击命中你后，你可以立即对该生物发动一次{@action 借机攻击|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Versatile Merc",
+        "name": "万能佣兵",
+        "type": "entries",
+        "entries": [
+          "当你完成{@variantrule 长休|XPHB}时，选择一项你具有熟练的技能。你具有该技能的{@variantrule 专精|XPHB}，持续至你下次完成{@variantrule 长休|XPHB}。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

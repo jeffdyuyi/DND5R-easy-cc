@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Shepherd's Bane",
+    "name": "牧人的灾祸术",
+    "source": "ObojimaTallGrass",
+    "page": 221,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Com"
+    ],
+    "entries": [
+      "据说这种药水最初是由一位想要保护羊群的青年牧人在疾风原野酿造的。当他们喝下药水并呈现出狼一般的特性时，这种讽刺并没有被他们忽视。当你饮用这种药水时，你会长出持续1小时的爪击。在持续时间内，你使用爪击的徒手打击将造成等于{@dice 1d6}加上你的力量调整值的挥砍伤害，而非徒手打击通常造成的钝击伤害。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 7|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Combat/shepherds-bane.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1559,
+          "height": 1559
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

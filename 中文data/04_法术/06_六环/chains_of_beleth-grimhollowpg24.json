@@ -1,0 +1,92 @@
+[
+  {
+    "ENG_name": "Chains of Beleth",
+    "name": "贝莱特的链条",
+    "source": "GrimHollowPG24",
+    "page": 188,
+    "level": 6,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 100
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一条链击"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "带刺的链条末端挂着肉钩从你视线范围内的一点爆发而出，在一个以该点为中心的20英尺半径{@variantrule 球状 [效应区域]|XPHB|球状}范围内挥舞。",
+      "区域内的每个生物需进行一次敏捷豁免检定。若豁免失败，它将受到{@damage 8d6}穿刺伤害并陷入{@condition 束缚|XPHB}状态，直到法术结束。",
+      "当一个生物首次在回合内进入链条区域或在其内开始回合时，它必须成功通过一次敏捷豁免检定，否则在区域内或直到挣脱前获得{@condition 束缚|XPHB}状态。被链条{@condition 束缚|XPHB}的生物可以用一个动作进行一次力量（{@skill 运动|XPHB}）检定对抗你的法术豁免DC。若成功，则不再处于{@condition 束缚|XPHB}状态。",
+      "当一个被此法术{@condition 束缚|XPHB}的生物结束其回合时，该生物受到{@damage 3d6}钝击伤害。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "初始和后续伤害对于每个高于6环的法术位环阶增加{@dice 1d6}。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "钝击",
+      "穿刺"
+    ],
+    "conditionInflict": [
+      "束缚"
+    ],
+    "savingThrow": [
+      "敏捷"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Chains%20of%20Beleth.webp"
+  }
+]

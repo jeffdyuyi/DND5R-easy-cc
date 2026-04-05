@@ -1,0 +1,84 @@
+[
+  {
+    "name": "离梦人",
+    "ENG_name": "Kalashtar",
+    "source": "EFA",
+    "edition": "one",
+    "page": 35,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "resist": [
+      "心灵"
+    ],
+    "traitTags": [
+      "技能熟练"
+    ],
+    "entries": [
+      {
+        "ENG_name": "Dual Mind",
+        "name": "双重思想",
+        "type": "entries",
+        "entries": [
+          "你在感知和魅力豁免检定上具有{@variantrule 优势|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Mental Discipline",
+        "name": "磨练心智",
+        "type": "entries",
+        "entries": [
+          "你具有对心灵伤害的{@variantrule 抗性|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Mind Link",
+        "name": "心灵链接",
+        "type": "entries",
+        "entries": [
+          "你拥有射程为你等级10倍尺的心灵感应。当你使用此特质与一个生物进行心灵感应交谈时，你可以采取一个{@action 魔法|XPHB}动作，给予该生物与你进行心灵感应交谈的能力，持续1小时或直到你采取另一个{@action 魔法|XPHB}动作来结束此效果。"
+        ]
+      },
+      {
+        "ENG_name": "Severed from Dreams",
+        "name": "梦境隔绝",
+        "type": "entries",
+        "entries": [
+          "你不能成为{@spell 托梦术|XPHB}法术的目标。此外，当你完成一次{@variantrule 长休|XPHB}时，你获得一个自选技能的熟练项。该熟练项持续到你完成另一次{@variantrule 长休|XPHB}为止。"
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "离梦人（发音为kal-ASH-tar）是由人类和来自梦境位面的被称为梦灵的反叛精魂结合而创造的。离梦人看起来像人类，但他们的精神联系以各种方式影响着它们。他们拥有对称、略显棱角的面部特征，当他们专注于或表达强烈情绪时，眼睛常常会发光。",
+        "离梦人无法直接与他们的梦灵精魂沟通。相反，离梦人可能会将它们视为本能和激励的来源，在离梦人睡眠时汲取精魂的记忆。这种联系赋予离梦人次要的灵能属性，以及防护灵能攻击的能力。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/EFA/Kalashtar.webp"
+          },
+          "credit": "Andrea de Dominicis",
+          "width": 850,
+          "height": 559
+        }
+      ]
+    },
+    "creatureTypes": [
+      "异怪"
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "sizeEntry": {
+      "ENG_name": "Size:",
+      "name": "体型：",
+      "type": "item",
+      "entries": [
+        "中型（约6-7英尺高）"
+      ]
+    }
+  }
+]

@@ -1,0 +1,187 @@
+{
+  "name": "星辰结社",
+  "shortName": "星辰",
+  "ENG_name": "Circle of the Stars",
+  "source": "XPHB",
+  "className": "德鲁伊",
+  "classSource": "XPHB",
+  "page": 88,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "known": {
+        "3": [
+          "神导术|XPHB#c"
+        ]
+      },
+      "prepared": {
+        "3": [
+          "光导箭|XPHB"
+        ]
+      }
+    }
+  ],
+  "subclassFeatures": [
+    "星辰结社|德鲁伊|XPHB|星辰|XPHB|3",
+    "宇宙预兆|德鲁伊|XPHB|星辰|XPHB|6",
+    "闪耀星座|德鲁伊|XPHB|星辰|XPHB|10",
+    "灿若繁星|德鲁伊|XPHB|星辰|XPHB|14"
+  ],
+  "features": [
+    {
+      "name": "星辰结社",
+      "ENG_name": "Circle of Stars",
+      "source": "TCE",
+      "className": "德鲁伊",
+      "classSource": "XPHB",
+      "subclassShortName": "星辰",
+      "subclassSource": "TCE",
+      "level": 3,
+      "entries": [
+        "星辰结社让德鲁伊能够利用星辰的力量。这一结社的德鲁伊自古以来就开始观测星象，并揭示了隐藏在宇宙模式中的秘密。通过持握他们的星图，德鲁伊能够宣称星辰的魔力。这一结社的许多德鲁伊都会在巨石阵、天文观测站以及其他能够清晰观察天空的地方聚会。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "星图|德鲁伊|XPHB|星辰|XPHB|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "星耀形态|德鲁伊|XPHB|星辰|XPHB|3"
+        }
+      ]
+    },
+    {
+      "name": "星图",
+      "ENG_name": "Star Map",
+      "source": "XPHB",
+      "page": 88,
+      "className": "德鲁伊",
+      "classSource": "XPHB",
+      "subclassShortName": "星辰",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "作为你天文学研究的一部分，你创造了一张星图。它是一个微型物体，可以用作你施展德鲁伊法术时的{@variantrule 法器|XPHB}。你通过在星图列表上掷骰或选择一个来确定它的形态。",
+        "当你持握这件星图时，你视作总是准备着{@spell 神导术|XPHB}和{@spell 光导箭|XPHB}这两个法术，并且你可以施展{@spell 光导箭|XPHB}而无需消耗法术位。其次数等同于你的感知调整值（最少 1 次），当你完成一次{@variantrule 长休|XPHB}时，你重获全部已消耗的使用次数。",
+        "如果你丢失了星图，你可以举行一场为时一小时的仪式来使用魔法创造一个替代品。这一仪式可以在一场{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}时举行，并会摧毁先前的星图。",
+        {
+          "type": "table",
+          "caption": "星图",
+          "colLabels": [
+            "{@dice 1d6}",
+            "星图形态"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "1",
+              "一张布满星座图列的卷轴"
+            ],
+            [
+              "2",
+              "钻有细孔的石板"
+            ],
+            [
+              "3",
+              "一张枭熊皮，上面标有星星的符号"
+            ],
+            [
+              "4",
+              "一套黑檀木封皮的星图集"
+            ],
+            [
+              "5",
+              "一块遇光会投射出星辰轨迹的水晶"
+            ],
+            [
+              "6",
+              "一面描绘星座排列的玻璃圆盘"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "星耀形态",
+      "ENG_name": "Starry Form",
+      "source": "XPHB",
+      "page": 88,
+      "className": "德鲁伊",
+      "classSource": "XPHB",
+      "subclassShortName": "星辰",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "以一个{@variantrule 附赠动作|XPHB}，你可以消耗一次荒野变形特性使用次数以呈现一个星耀形态，而非变化为野兽形态。",
+        "处于星耀形态期间，你保留你的游戏数据，但你的身体变得明亮；你的关节星光熠熠并有如星图一般由亮线连接。这一形态散发出 10 尺半径的{@variantrule 明亮光照|XPHB}以及其外 10 尺的{@variantrule 微光光照|XPHB}。这一形态持续 10 分钟。如果你解除它（无需动作）、{@condition 失能|XPHB}、死亡、或再次使用此特性，它就会提前结束。",
+        "每当你化身星耀形态时，你选择以下星座之一在你身上亮起；你的选择将为你在形态中提供特定的增益：",
+        {
+          "type": "list",
+          "items": [
+            "**射手座**：当你激活这个形态时你可以进行一次远程法术攻击，对你 60 尺内的一个生物射出一发光箭，后续回合中也能够以附赠动作发射。造成 {@damage 1d8} + 感知调整值点的光耀伤害。",
+            "**圣杯座**：当你消耗法术位施法恢复 HP 时，你或 30 尺内另一生物额外恢复 {@dice 1d8} + 感知调整值点 HP。",
+            "**巨龙座**：进行智力/感知检定或体质豁免维持专注时，将 d20 中 9 或以下视为 10。"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "宇宙预兆",
+      "ENG_name": "Cosmic Omen",
+      "source": "XPHB",
+      "page": 89,
+      "className": "德鲁伊",
+      "classSource": "XPHB",
+      "subclassShortName": "星辰",
+      "subclassSource": "XPHB",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "每当你完成一次{@variantrule 长休|XPHB}时，你可以参照你的星图来寻找预兆。掷一枚骰子。直到你完成下一次{@variantrule 长休|XPHB}为止，你获得一个基于此掷骰结果奇偶性的能力：",
+        {
+          "type": "list",
+          "items": [
+            "**吉兆（偶数）**：当周围 30 尺内一个可见生物进行 D20 检定时，你可以用反应加 {@dice 1d6} 到结果中。",
+            "**凶兆（奇数）**：当周围 30 尺内一个可见生物进行 D20 检定时，你可以用反应从结果中减去 {@dice 1d6}。"
+          ]
+        },
+        "使用次数等同于你的感知调整值。"
+      ]
+    },
+    {
+      "name": "闪耀星座",
+      "ENG_name": "Twinkling Constellations",
+      "source": "XPHB",
+      "page": 89,
+      "className": "德鲁伊",
+      "classSource": "XPHB",
+      "subclassShortName": "星辰",
+      "subclassSource": "XPHB",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "你的星耀形态星座增强了。射手座和圣杯座中的骰子变成 {@damage 2d8}，而在巨龙座激活期间，你获得 20 尺飞行速度并可以悬浮。",
+        "此外，每个你的回合开始时，你可以更改当前身上闪耀的星座。"
+      ]
+    },
+    {
+      "name": "灿若繁星",
+      "ENG_name": "Full of Stars",
+      "source": "XPHB",
+      "page": 89,
+      "className": "德鲁伊",
+      "classSource": "XPHB",
+      "subclassShortName": "星辰",
+      "subclassSource": "XPHB",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "处于星耀形态期间，你获得钝击、穿刺与挥砍伤害的{@variantrule 抗性|XPHB}。"
+      ]
+    }
+  ]
+}

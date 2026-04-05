@@ -1,0 +1,37 @@
+{
+  "ENG_name": "Visions of Distant Realms",
+  "name": "穹宇尽视",
+  "source": "PHB",
+  "page": 111,
+  "srd": true,
+  "reprintedAs": [
+    "穹宇尽视|XPHB"
+  ],
+  "featureType": [
+    "EI"
+  ],
+  "prerequisite": [
+    {
+      "level": {
+        "level": 15,
+        "class": {
+          "ENG_name": "Warlock",
+          "name": "魔契师"
+        }
+      }
+    }
+  ],
+  "additionalSpells": [
+    {
+      "innate": {
+        "_": [
+          "秘法眼"
+        ]
+      }
+    }
+  ],
+  "entries": [
+    "你可以随意施展{@spell 秘法眼}，且无需消耗法术位。"
+  ],
+  "translator": "不全书"
+}

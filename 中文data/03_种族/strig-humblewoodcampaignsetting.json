@@ -1,0 +1,225 @@
+{
+  "race": [
+    {
+      "ENG_name": "Strig",
+      "name": "鸮族",
+      "source": "HumblewoodCampaignSetting",
+      "page": 20,
+      "size": [
+        "M"
+      ],
+      "speed": 30,
+      "ability": [
+        {
+          "str": 2
+        }
+      ],
+      "age": {
+        "mature": 15,
+        "max": 80
+      },
+      "darkvision": 60,
+      "traitTags": [
+        "天生武器"
+      ],
+      "languageProficiencies": [
+        {
+          "other": true,
+          "auran": true
+        }
+      ],
+      "entries": [
+        {
+          "ENG_name": "Age",
+          "name": "年龄",
+          "type": "entries",
+          "entries": [
+            "鸮族比大多数鸟族成熟得更快，大约在15岁左右。按照鸟族的标准，他们可以活到一个令人尊敬的高龄，大约80年。"
+          ]
+        },
+        {
+          "ENG_name": "Alignment",
+          "name": "阵营",
+          "type": "entries",
+          "entries": [
+            "鸮族通常倾向于善良阵营，他们有强烈的公平竞争意识，并且倾向于看到他人最好的一面。他们也偏爱混乱阵营，因为鸮族是一个热爱自由的民族，通常会把自己的个人道德置于任何强加的治理体系之上。"
+          ]
+        },
+        {
+          "ENG_name": "Size",
+          "name": "体型",
+          "type": "entries",
+          "entries": [
+            "鸮族是肌肉发达、威严的民族，身高从4尺到超过5尺不等，体重大约为110磅。你的体型是中等。"
+          ]
+        },
+        {
+          "ENG_name": "Speed",
+          "name": "速度",
+          "type": "entries",
+          "entries": [
+            "你的基础步行速度是30尺。"
+          ]
+        },
+        {
+          "ENG_name": "Glide",
+          "name": "滑翔",
+          "type": "entries",
+          "entries": [
+            "利用你羽毛覆盖的手臂，你可以减缓下落速度，并滑翔短距离。当你下落时，你可以使用你的反应来展开手臂，使翅膀的羽毛变硬，从而减缓你的下降。这样做时，你以每轮60尺的速度轻柔地继续下落，着陆时不会受到跌落伤害。如果你以这种方式至少下落10尺，你可以选择一个方向，以你的移动速度飞行，虽然你不能选择向上移动，结束移动时落在你选择的空间。你不能在携带重型武器或持盾时滑翔（尽管你可以作为展开手臂的一部分反应来丢弃任何持有的物品）。你不能在穿着重型盔甲或负重时滑翔。"
+          ]
+        },
+        {
+          "ENG_name": "Talons",
+          "name": "禽爪",
+          "type": "entries",
+          "entries": [
+            "你锋利的爪子在徒手战斗和攀爬时对你有所帮助。你的徒手攻击伤害是{@damage 1d4}穿刺伤害。此外，当你攀爬任何你的爪子能够合理抓住的表面时，你在力量（{@skill 运动}）检定上具有优势。"
+          ]
+        },
+        {
+          "ENG_name": "Darkvision",
+          "name": "黑暗视觉",
+          "type": "entries",
+          "entries": [
+            "你擅长在夜晚的掩护下狩猎。你可以将60尺内的微光视为明亮的光线，在黑暗中视为微光。在黑暗中，你不能分辨颜色，只能看到灰度阴影。"
+          ]
+        },
+        {
+          "ENG_name": "Patterned Feathers",
+          "name": "图纹羽毛",
+          "type": "entries",
+          "entries": [
+            "当你尝试在森林中隐藏时，你在敏捷（{@skill 隐匿}）检定上拥有优势。"
+          ]
+        },
+        {
+          "ENG_name": "Languages",
+          "name": "语言",
+          "type": "entries",
+          "entries": [
+            "你可以说、读、写鸟族语。你也能听懂奥瑞安语，尽管你不能自然地说出来。"
+          ]
+        }
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "subraces": [
+        {
+          "ENG_name": "Stout",
+          "name": "敦实",
+          "source": "HumblewoodCampaignSetting",
+          "page": 20,
+          "ability": [
+            {
+              "con": 1
+            }
+          ],
+          "traitTags": [
+            "天生武器"
+          ],
+          "skillProficiencies": [
+            {
+              "intimidation": true
+            }
+          ],
+          "entries": [
+            {
+              "ENG_name": "Imposing",
+              "name": "威严满满",
+              "type": "entries",
+              "entries": [
+                "你拥有{@skill 威吓}技能的熟练项。"
+              ]
+            },
+            {
+              "ENG_name": "Brawler",
+              "name": "打手",
+              "type": "entries",
+              "entries": [
+                "当你用禽爪成功攻击一个目标时，你可以选择以附赠动作{@action 擒抱}该目标。"
+              ]
+            }
+          ],
+          "hasFluff": true,
+          "hasFluffImages": true
+        },
+        {
+          "ENG_name": "Swift",
+          "name": "迅疾",
+          "source": "HumblewoodCampaignSetting",
+          "page": 20,
+          "speed": 35,
+          "ability": [
+            {
+              "dex": 1
+            }
+          ],
+          "traitTags": [
+            "天生武器"
+          ],
+          "skillProficiencies": [
+            {
+              "survival": true
+            }
+          ],
+          "entries": [
+            {
+              "ENG_name": "Swift",
+              "name": "迅疾",
+              "type": "entries",
+              "entries": [
+                "你的基础步行速度提升至35尺。"
+              ]
+            },
+            {
+              "ENG_name": "Survivor",
+              "name": "生还者",
+              "type": "entries",
+              "entries": [
+                "你在{@skill 求生}技能上具有熟练项。"
+              ]
+            }
+          ],
+          "hasFluff": true,
+          "hasFluffImages": true
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "{@font 威严而仁慈|HP卑微抓痕}",
+          "鸮族是鸟族种族中最威严的。它们看起来像猫头鹰，浓密的羽毛、结实的身体和宽阔的翅膀使它们赢得了鸟族种族中最强大的声誉。他们重视力量和耐力，认为这些特征对于在森林中生存至关重要。尽管他们并不一定对弱者有偏见，但鸮族会迅速指出当某人没有为共同利益尽最大努力时。",
+          {
+            "ENG_name": "Strong and Brave",
+            "name": "强壮又勇敢",
+            "entries": [
+              "尽管许多鸟族种族依靠他们的技巧或智慧来获得优势，鸮族却使用他们巨大的力量和耐力来承受甚至是最残酷的攻击。他们成为强大的战士，无论是保卫他们的栖息地还是勇敢地进入森林本身，鸮族从不回避战斗。",
+              "鸮族文化主要基于力量和耐力的原则，但不一定是为了战斗。在困难时期保护和供养他人被认为同样令人印象深刻，如果不是更甚的话，比赢得战斗还要重要。"
+            ],
+            "type": "entries"
+          },
+          {
+            "ENG_name": "Woodland Survivors",
+            "name": "林地求生者",
+            "entries": [
+              "鸮族比其他任何鸟族种族更适应野外生活。它们斑驳的羽毛图案虽然不如其他鸟族那样鲜艳或美丽，但使它们能够轻松地隐藏在森林中。由于这种固有的优势，再加上它们的速度和力量，鸮族成为出色的猎人和游侠。",
+              "鸮族更喜欢森林的相对简单性，而不是社会和政治的阴谋。尽管有这些个人主义倾向，他们能够形成超越永久性或单一物理家园的家庭和社区纽带。"
+            ],
+            "type": "entries"
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/HumblewoodCampaignSetting/races/Strig-Tracker.webp"
+            },
+            "width": 455,
+            "height": 656
+          }
+        ]
+      }
+    }
+  ]
+}

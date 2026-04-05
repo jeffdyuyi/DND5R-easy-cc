@@ -1,0 +1,36 @@
+[
+  {
+    "ENG_name": "Grimoire Infinitus (Dormant)",
+    "name": "无限法典（休眠）",
+    "source": "EGW",
+    "page": 271,
+    "rarity": "legendary",
+    "reqAttune": "由法师",
+    "reqAttuneTags": [
+      {
+        "class": "法师"
+      }
+    ],
+    "wondrous": true,
+    "weight": 3,
+    "property": [
+      "Vst|EGW"
+    ],
+    "entries": [
+      "这些镀金内页和银制封面的法术书中有数本是在奥法纪制作的，但自灾祸之战结束以来，人们只找回了其中一本。这本书有着无限页数，厚3寸，宽8寸，长12寸，重3磅。",
+      {
+        "ENG_name": "Dormant",
+        "name": "休眠",
+        "type": "entries",
+        "entries": [
+          "绝大部分的书页是空白的，但于书的第一页上记录着如下法术：{@spell 警报术}、{@spell 反魔法场}、{@spell 毕格比之手}、{@spell 枯萎术}、{@spell 魅惑类人}、{@spell 困惑术}、{@spell 操控天气}、{@spell 唤起死灵}、{@spell 侦测思想}、{@spell 变巨/缩小术}、{@spell 恐惧术}、{@spell 预见术}、{@spell 气化形体}、{@spell 守卫刻文}、{@spell 通晓传奇}、{@spell 李欧蒙小屋}、{@spell 群体暗示术}、{@spell 假象术}、{@spell 迷踪步}、{@spell 魔邓肯忠犬}、{@spell 虹光喷射}、{@spell 衰弱射线}、{@spell 无声幻影}、{@spell 传送术}和{@spell 雷鸣波}。",
+          "你可以将无限法典作为你的法术书使用，并可以像往常一样在其中抄录新法术。在你使用无限法典准备法师法术时，你可以准备的法师法术数量增加1个。"
+        ]
+      }
+    ],
+    "hasFluffImages": true,
+    "valueReference": 200000,
+    "fluff": {},
+    "type": "W"
+  }
+]

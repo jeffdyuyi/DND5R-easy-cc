@@ -1,0 +1,478 @@
+[
+  {
+    "ENG_name": "Strixhaven Initiate",
+    "name": "斯翠海文学徒",
+    "source": "SCC",
+    "page": 36,
+    "additionalSpells": [
+      {
+        "ENG_name": "Lorehold 1",
+        "name": "衡鉴1",
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "known": {
+          "_": [
+            "光亮术#c",
+            "圣火术#c"
+          ]
+        },
+        "innate": {
+          "_": {
+            "daily": {
+              "1": [
+                {
+                  "choose": "level=1|class=牧师;法师"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "ENG_name": "Lorehold 2",
+        "name": "衡鉴2",
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "known": {
+          "_": [
+            "光亮术#c",
+            "奇术#c"
+          ]
+        },
+        "innate": {
+          "_": {
+            "daily": {
+              "1": [
+                {
+                  "choose": "level=1|class=牧师;法师"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "ENG_name": "Lorehold 3",
+        "name": "衡鉴3",
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "known": {
+          "_": [
+            "圣火术#c",
+            "奇术#c"
+          ]
+        },
+        "innate": {
+          "_": {
+            "daily": {
+              "1": [
+                {
+                  "choose": "level=1|class=牧师;法师"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "ENG_name": "Prismari 1",
+        "name": "粹丽1",
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "known": {
+          "_": [
+            "火焰箭#c",
+            "魔法伎俩#c"
+          ]
+        },
+        "innate": {
+          "_": {
+            "daily": {
+              "1": [
+                {
+                  "choose": "level=1|class=吟游诗人;术士"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "ENG_name": "Prismari 2",
+        "name": "粹丽2",
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "known": {
+          "_": [
+            "火焰箭#c",
+            "冷冻射线#c"
+          ]
+        },
+        "innate": {
+          "_": {
+            "daily": {
+              "1": [
+                {
+                  "choose": "level=1|class=吟游诗人;术士"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "ENG_name": "Prismari 3",
+        "name": "粹丽3",
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "known": {
+          "_": [
+            "魔法伎俩#c",
+            "冷冻射线#c"
+          ]
+        },
+        "innate": {
+          "_": {
+            "daily": {
+              "1": [
+                {
+                  "choose": "level=1|class=吟游诗人;术士"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "ENG_name": "Quandrix 1",
+        "name": "量析1",
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "known": {
+          "_": [
+            "德鲁伊伎俩#c",
+            "神导术#c"
+          ]
+        },
+        "innate": {
+          "_": {
+            "daily": {
+              "1": [
+                {
+                  "choose": "level=1|class=德鲁伊;法师"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "ENG_name": "Quandrix 2",
+        "name": "量析2",
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "known": {
+          "_": [
+            "德鲁伊伎俩#c",
+            "法师之手#c"
+          ]
+        },
+        "innate": {
+          "_": {
+            "daily": {
+              "1": [
+                {
+                  "choose": "level=1|class=德鲁伊;法师"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "ENG_name": "Quandrix 3",
+        "name": "量析3",
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "known": {
+          "_": [
+            "神导术#c",
+            "法师之手#c"
+          ]
+        },
+        "innate": {
+          "_": {
+            "daily": {
+              "1": [
+                {
+                  "choose": "level=1|class=德鲁伊;法师"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "ENG_name": "Silverquill 1",
+        "name": "银毫1",
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "known": {
+          "_": [
+            "圣火术#c",
+            "奇术#c"
+          ]
+        },
+        "innate": {
+          "_": {
+            "daily": {
+              "1": [
+                {
+                  "choose": "level=1|class=吟游诗人;牧师"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "ENG_name": "Silverquill 2",
+        "name": "银毫2",
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "known": {
+          "_": [
+            "圣火术#c",
+            "恶言相加#c"
+          ]
+        },
+        "innate": {
+          "_": {
+            "daily": {
+              "1": [
+                {
+                  "choose": "level=1|class=吟游诗人;牧师"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "ENG_name": "Silverquill 3",
+        "name": "银毫3",
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "known": {
+          "_": [
+            "奇术#c",
+            "恶言相加#c"
+          ]
+        },
+        "innate": {
+          "_": {
+            "daily": {
+              "1": [
+                {
+                  "choose": "level=1|class=吟游诗人;牧师"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "ENG_name": "Witherbloom 1",
+        "name": "靡华1",
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "known": {
+          "_": [
+            "颤栗之触#c",
+            "德鲁伊伎俩#c"
+          ]
+        },
+        "innate": {
+          "_": {
+            "daily": {
+              "1": [
+                {
+                  "choose": "level=1|class=德鲁伊;法师"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "ENG_name": "Witherbloom 2",
+        "name": "靡华2",
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "known": {
+          "_": [
+            "颤栗之触#c",
+            "维生术#c"
+          ]
+        },
+        "innate": {
+          "_": {
+            "daily": {
+              "1": [
+                {
+                  "choose": "level=1|class=德鲁伊;法师"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "ENG_name": "Witherbloom 3",
+        "name": "靡华3",
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "known": {
+          "_": [
+            "德鲁伊伎俩#c",
+            "维生术#c"
+          ]
+        },
+        "innate": {
+          "_": {
+            "daily": {
+              "1": [
+                {
+                  "choose": "level=1|class=德鲁伊;法师"
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "entries": [
+      "你研习了一些魔法理论，学会了些许斯翠海文大学的法术。",
+      "选择一个斯翠海文学院：衡鉴，粹丽，量析，银毫，靡华。根据你所选择的学院，你习得两个戏法和一个1环法术，如斯翠海文法术表所示。",
+      "你能够不使用法术位施展所选择的1环法术，当你这样做后，必须完成一次长休后才能再次用这种方式释放。你也能使用你拥有的任意法术位来释放该法术。",
+      "你施放本专长法术的施法属性为智力、感知、或魅力（在你选择本专长时选择）。",
+      {
+        "type": "table",
+        "caption": "斯翠海文法术",
+        "colLabels": [
+          "学院",
+          "戏法",
+          "一环法术"
+        ],
+        "colStyles": [
+          "col-2",
+          "col-5",
+          "col-5"
+        ],
+        "rows": [
+          [
+            "衡鉴",
+            "从{@spell 光亮术}、{@spell 圣火术}和{@spell 奇术}中选择两个。",
+            "从下列{@filter 牧师或法师法术|spells|level=1|class=牧师;法师}选择一个"
+          ],
+          [
+            "粹丽",
+            "从{@spell 火焰箭}、{@spell 魔法伎俩}和{@spell 冷冻射线}中选择两个。",
+            "从下列{@filter 吟游诗人或术士法术|spells|level=1|class=吟游诗人;术士}选择一个"
+          ],
+          [
+            "量析",
+            "从{@spell 德鲁伊伎俩}、{@spell 神导术}和{@spell 法师之手}中选择两个。",
+            "从下列{@filter 德鲁伊或法师法术|spells|level=1|class=德鲁伊;法师}选择一个"
+          ],
+          [
+            "银毫",
+            "从{@spell 圣火术}、{@spell 奇术}和{@spell 恶言相加}中选择两个。",
+            "从下列{@filter 吟游诗人或牧师法术|spells|level=1|class=吟游诗人;牧师}选择一个"
+          ],
+          [
+            "靡华",
+            "从{@spell 颤栗之触}、{@spell 德鲁伊伎俩}和{@spell 维生术}中选择两个。",
+            "从下列{@filter 德鲁伊或法师法术|spells|level=1|class=德鲁伊;法师}选择一个"
+          ]
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

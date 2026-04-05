@@ -1,0 +1,855 @@
+[
+  {
+    "name": "圣武士",
+    "ENG_name": "Paladin",
+    "source": "PHB",
+    "edition": "classic",
+    "classData": {
+      "ENG_name": "Paladin",
+      "name": "圣武士",
+      "source": "PHB",
+      "page": 82,
+      "srd": true,
+      "reprintedAs": [
+        "圣武士|XPHB"
+      ],
+      "edition": "classic",
+      "hd": {
+        "number": 1,
+        "faces": 10
+      },
+      "proficiency": [
+        "wis",
+        "cha"
+      ],
+      "spellcastingAbility": "cha",
+      "casterProgression": "1/2",
+      "preparedSpells": "<$level$> / 2 + <$cha_mod$>",
+      "preparedSpellsChange": "restLong",
+      "optionalfeatureProgression": [
+        {
+          "ENG_name": "Fighting Style",
+          "name": "战斗风格",
+          "featureType": [
+            "FS:P"
+          ],
+          "progression": {
+            "2": 1
+          }
+        }
+      ],
+      "startingProficiencies": {
+        "armor": [
+          "light",
+          "medium",
+          "heavy",
+          "shield"
+        ],
+        "weapons": [
+          "简易",
+          "军用"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "athletics",
+                "insight",
+                "intimidation",
+                "medicine",
+                "persuasion",
+                "religion"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "default": [
+          "(a) 一把{@filter 军用武器|items|source=PHB|category=基础|type=军用武器}和一面{@item 盾牌|PHB} ，或 (b) 两把{@filter 军用武器|items|source=PHB|category=基础|type=军用武器}",
+          "(a) 五把{@item 标枪|PHB|标枪}或 (b) 任意{@filter 简易近战武器|items|source=PHB|category=基础|type=简易武器;近战武器=sand}",
+          "(a) 一个{@item 祭司套组|PHB}或 (b) 一个{@item 探索套组|PHB}",
+          "{@item 链甲|PHB} 和一个 {@item 圣徽|PHB}"
+        ],
+        "goldAlternative": "{@dice 5d4 × 10|5d4 × 10|起始金币}",
+        "defaultData": [
+          {
+            "a": [
+              {
+                "equipmentType": "weaponMartial"
+              },
+              "盾牌|PHB"
+            ],
+            "b": [
+              {
+                "equipmentType": "weaponMartial",
+                "quantity": 2
+              }
+            ]
+          },
+          {
+            "a": [
+              {
+                "item": "标枪|PHB",
+                "quantity": 5
+              }
+            ],
+            "b": [
+              {
+                "equipmentType": "weaponSimpleMelee"
+              }
+            ]
+          },
+          {
+            "a": [
+              "祭司套组|PHB"
+            ],
+            "b": [
+              "探索套组|PHB"
+            ]
+          },
+          {
+            "_": [
+              "链甲|PHB",
+              {
+                "equipmentType": "focusSpellcastingHoly"
+              }
+            ]
+          }
+        ]
+      },
+      "multiclassing": {
+        "requirements": {
+          "str": 13,
+          "cha": 13
+        },
+        "proficienciesGained": {
+          "armor": [
+            "light",
+            "medium",
+            "shield"
+          ],
+          "weapons": [
+            "简易",
+            "军用"
+          ]
+        }
+      },
+      "classTableGroups": [
+        {
+          "title": "每环法术位",
+          "colLabels": [
+            "{@filter 1st|spells|level=1|class=圣武士}",
+            "{@filter 2nd|spells|level=2|class=圣武士}",
+            "{@filter 3rd|spells|level=3|class=圣武士}",
+            "{@filter 4th|spells|level=4|class=圣武士}",
+            "{@filter 5th|spells|level=5|class=圣武士}"
+          ],
+          "rowsSpellProgression": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              2,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              2,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "神圣感知|圣武士||1",
+        "圣疗|圣武士||1",
+        "至圣斩|圣武士||2",
+        "战斗风格|圣武士||2",
+        "施法|圣武士||2",
+        "神佑|圣武士||3",
+        {
+          "classFeature": "神圣誓言|圣武士||3",
+          "gainSubclassFeature": true,
+          "gainSubclassFeatureHasContent": true
+        },
+        "属性值提升|圣武士||4",
+        "替换武术|圣武士||4|TCE",
+        "额外攻击|圣武士||5",
+        "守护灵光|圣武士||6",
+        {
+          "classFeature": "圣誓特性|圣武士||7",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|圣武士||8",
+        "勇气灵光|圣武士||10",
+        "精通至圣斩|圣武士||11",
+        "属性值提升|圣武士||12",
+        "净化之触|圣武士||14",
+        {
+          "classFeature": "圣誓特性|圣武士||15",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|圣武士||16",
+        "灵光增效|圣武士||18",
+        "属性值提升|圣武士||19",
+        {
+          "classFeature": "圣誓特性|圣武士||20",
+          "gainSubclassFeature": true
+        }
+      ],
+      "subclassTitle": "神圣誓言",
+      "hasFluff": true,
+      "hasFluffImages": true
+    },
+    "subclasses": [
+      {
+        "name": "奉献之誓",
+        "source": "PHB",
+        "shortName": "奉献"
+      },
+      {
+        "name": "古贤之誓",
+        "source": "PHB",
+        "shortName": "古贤"
+      },
+      {
+        "name": "复仇之誓",
+        "source": "PHB",
+        "shortName": "复仇"
+      },
+      {
+        "name": "破誓者",
+        "source": "DMG",
+        "shortName": "破誓者"
+      },
+      {
+        "name": "王冠之誓",
+        "source": "SCAG",
+        "shortName": "王冠"
+      },
+      {
+        "name": "征服之誓",
+        "source": "XGE",
+        "shortName": "征服"
+      },
+      {
+        "name": "救赎之誓",
+        "source": "XGE",
+        "shortName": "救赎"
+      },
+      {
+        "name": "荣耀之誓",
+        "source": "TCE",
+        "shortName": "荣耀"
+      },
+      {
+        "name": "守望之誓",
+        "source": "TCE",
+        "shortName": "守望"
+      }
+    ]
+  },
+  {
+    "name": "圣武士",
+    "ENG_name": "Paladin",
+    "source": "XPHB",
+    "edition": "one",
+    "classData": {
+      "ENG_name": "Paladin",
+      "name": "圣武士",
+      "source": "XPHB",
+      "page": 108,
+      "srd52": true,
+      "basicRules2024": true,
+      "edition": "one",
+      "primaryAbility": [
+        {
+          "str": true,
+          "cha": true
+        }
+      ],
+      "hd": {
+        "number": 1,
+        "faces": 10
+      },
+      "proficiency": [
+        "wis",
+        "cha"
+      ],
+      "spellcastingAbility": "cha",
+      "casterProgression": "artificer",
+      "preparedSpellsProgression": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        6,
+        7,
+        7,
+        9,
+        9,
+        10,
+        10,
+        11,
+        11,
+        12,
+        12,
+        14,
+        14,
+        15,
+        15
+      ],
+      "preparedSpellsChange": "restLong",
+      "additionalSpells": [
+        {
+          "prepared": {
+            "2": [
+              "至圣斩|xphb"
+            ],
+            "5": [
+              "寻获坐骑|xphb"
+            ]
+          }
+        }
+      ],
+      "featProgression": [
+        {
+          "ENG_name": "Fighting Style",
+          "name": "战斗风格",
+          "category": [
+            "FS",
+            "FS:P"
+          ],
+          "progression": {
+            "2": 1
+          }
+        },
+        {
+          "ENG_name": "Epic Boon",
+          "name": "传奇恩惠",
+          "category": [
+            "EB"
+          ],
+          "progression": {
+            "19": 1
+          }
+        }
+      ],
+      "startingProficiencies": {
+        "armor": [
+          "light",
+          "medium",
+          "heavy",
+          "shield"
+        ],
+        "weapons": [
+          "简易",
+          "军用"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "athletics",
+                "insight",
+                "intimidation",
+                "medicine",
+                "persuasion",
+                "religion"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "defaultData": [
+          {
+            "A": [
+              {
+                "item": "链甲|xphb"
+              },
+              {
+                "item": "盾牌|xphb"
+              },
+              {
+                "item": "长剑|xphb"
+              },
+              {
+                "item": "标枪|xphb",
+                "quantity": 6
+              },
+              {
+                "item": "圣徽|xphb"
+              },
+              {
+                "item": "祭司套组|xphb"
+              },
+              {
+                "value": 900
+              }
+            ],
+            "B": [
+              {
+                "value": 15000
+              }
+            ]
+          }
+        ],
+        "entries": [
+          "{@i 选择A或B：} (A) {@item 链甲|XPHB}、{@item 盾牌|XPHB}、{@item 长剑|XPHB}、6支{@item 标枪|XPHB|标枪}、{@item 圣徽|XPHB}、{@item 祭司套组|XPHB}和9 GP；或 (B) 150 GP"
+        ]
+      },
+      "multiclassing": {
+        "proficienciesGained": {
+          "armor": [
+            "light",
+            "medium",
+            "shield"
+          ],
+          "weapons": [
+            "军用"
+          ]
+        }
+      },
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "引导神力",
+            "{@filter 准备法术|spells|level=!0|class=圣武士}"
+          ],
+          "rows": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              3,
+              10
+            ],
+            [
+              3,
+              10
+            ],
+            [
+              3,
+              11
+            ],
+            [
+              3,
+              11
+            ],
+            [
+              3,
+              12
+            ],
+            [
+              3,
+              12
+            ],
+            [
+              3,
+              14
+            ],
+            [
+              3,
+              14
+            ],
+            [
+              3,
+              15
+            ],
+            [
+              3,
+              15
+            ]
+          ]
+        },
+        {
+          "title": "每环法术位",
+          "colLabels": [
+            "{@filter 1st|spells|level=1|class=圣武士}",
+            "{@filter 2nd|spells|level=2|class=圣武士}",
+            "{@filter 3rd|spells|level=3|class=圣武士}",
+            "{@filter 4th|spells|level=4|class=圣武士}",
+            "{@filter 5th|spells|level=5|class=圣武士}"
+          ],
+          "rowsSpellProgression": [
+            [
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              2,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              0,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              1,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              2,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              2,
+              0
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              1
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2
+            ],
+            [
+              4,
+              3,
+              3,
+              3,
+              2
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "圣疗|圣武士|XPHB|1",
+        "施法|圣武士|XPHB|1",
+        "武器精通|圣武士|XPHB|1",
+        "战斗风格|圣武士|XPHB|2",
+        "圣武斩|圣武士|XPHB|2",
+        "引导神力|圣武士|XPHB|3",
+        "神圣感知|圣武士|XPHB|3",
+        {
+          "classFeature": "圣武士子职|圣武士|XPHB|3",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|圣武士|XPHB|4",
+        "额外攻击|圣武士|XPHB|5",
+        "信实坐骑|圣武士|XPHB|5",
+        "守护灵光|圣武士|XPHB|6",
+        {
+          "classFeature": "子职特性|圣武士|XPHB|7",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|圣武士|XPHB|8",
+        "弃绝众敌|圣武士|XPHB|9",
+        "勇气灵光|圣武士|XPHB|10",
+        "光耀打击|圣武士|XPHB|11",
+        "属性值提升|圣武士|XPHB|12",
+        "复原之触|圣武士|XPHB|14",
+        {
+          "classFeature": "子职特性|圣武士|XPHB|15",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|圣武士|XPHB|16",
+        "灵光增效|圣武士|XPHB|18",
+        "传奇恩惠|圣武士|XPHB|19",
+        {
+          "classFeature": "子职特性|圣武士|XPHB|20",
+          "gainSubclassFeature": true
+        }
+      ],
+      "subclassTitle": "圣武士子职",
+      "hasFluff": true,
+      "hasFluffImages": true
+    },
+    "subclasses": [
+      {
+        "name": "奉献之誓",
+        "source": "XPHB",
+        "shortName": "奉献"
+      },
+      {
+        "name": "古贤之誓",
+        "source": "XPHB",
+        "shortName": "古贤"
+      },
+      {
+        "name": "复仇之誓",
+        "source": "XPHB",
+        "shortName": "复仇"
+      },
+      {
+        "name": "荣耀之誓",
+        "source": "XPHB",
+        "shortName": "荣耀"
+      }
+    ]
+  }
+]

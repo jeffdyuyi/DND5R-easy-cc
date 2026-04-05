@@ -1,0 +1,96 @@
+[
+  {
+    "ENG_name": "Draconic Transformation",
+    "name": "龙类变形",
+    "source": "FTD",
+    "page": 19,
+    "level": 7,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一个龙形小雕像，价值至少500gp",
+        "cost": 50000
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "伴随着一声怒吼，你用龙族的魔法变化自身，获得多种龙族特征。直至法术结束，你获得以下好处：",
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Blindsight",
+            "name": "盲视",
+            "type": "item",
+            "entries": [
+              "你获得30尺范围的{@sense 盲视}在此范围内，你可以有效看到任何不在{@quickref 掩护||3||全身掩护}后的东西，即使你处于{@condition 目盲}状态或在黑暗中。此外，你可以看到{@condition 隐形}的生物，除非该生物成功躲藏。"
+            ]
+          },
+          {
+            "ENG_name": "Breath Weapon",
+            "name": "吐息武器",
+            "type": "item",
+            "entries": [
+              "当你施展此法术时，以及在持续时间内随后的回合以一个附赠动作，你可以在60尺锥形内呼出一道闪着光的能量。范围内的每个生物都必须成功通过一次敏捷豁免，否则受到{@damage 6d8}点力场伤害，成功则伤害减半。"
+            ]
+          },
+          {
+            "ENG_name": "Wings",
+            "name": "飞翼",
+            "type": "item",
+            "entries": [
+              "无形之翼从你背后长出，使你获得60尺飞行速度。"
+            ]
+          }
+        ]
+      }
+    ],
+    "damageInflict": [
+      "force"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "miscTags": [
+      "SGT",
+      "UBA"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊",
+      "术士",
+      "法师"
+    ],
+    "display_school": "变化系",
+    "display_savingThrow": [
+      "敏捷"
+    ],
+    "display_damageInflict": [
+      "力场"
+    ]
+  }
+]

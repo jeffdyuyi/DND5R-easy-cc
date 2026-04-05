@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Ring of Volleys",
+    "name": "连矢之戒",
+    "source": "GriffonsSaddlebag2",
+    "page": 147,
+    "type": "RG|DMG",
+    "tier": "主要",
+    "rarity": "uncommon",
+    "entries": [
+      "佩戴此戒指期间，每当你拉动弓弦或者弩弦时，你可召唤一支已搭好的魔法箭矢或弩矢出现在弦上。这发弹药视作魔法弹药。若不立即发射，该弹药将消散；无论命中与否，攻击后弹药均立即消失。"
+    ],
+    "lootTables": [
+      "魔法物品表 F1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Ring-of-Volleys.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

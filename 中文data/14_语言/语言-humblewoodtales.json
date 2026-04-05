@@ -1,0 +1,24 @@
+{
+  "language": [
+    {
+      "ENG_name": "Eluran",
+      "name": "艾卢兰",
+      "source": "HumblewoodTales",
+      "page": 214,
+      "type": "rare",
+      "typicalSpeakers": [
+        "卡普兰人"
+      ]
+    },
+    {
+      "ENG_name": "Tilia",
+      "name": "提利亚语",
+      "source": "HumblewoodTales",
+      "page": 161,
+      "type": "rare",
+      "typicalSpeakers": [
+        "提利亚语"
+      ]
+    }
+  ]
+}

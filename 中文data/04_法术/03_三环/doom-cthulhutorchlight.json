@@ -1,0 +1,54 @@
+[
+  {
+    "ENG_name": "Doom",
+    "name": "末日",
+    "source": "CthulhuTorchlight",
+    "page": 0,
+    "level": 3,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 150
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你低语着迫近死亡的预言，这些话语渗入某个生物的命運丝线，并将其引向死亡的时刻。一个在你施法范围内你可见的生物必须进行一次魅力豁免检定。豁免失败，则当该生物受到来自一次攻击的伤害时，你可以执行{@variantrule 反应|XPHB}动作发动效果：无需掷攻击的伤害骰，而是直接使用每个伤害骰所能掷出的最大值。在每个其回合结束时，目标重复豁免检定，豁免成功则法术终止。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "savingThrow": [
+      "魅力"
+    ],
+    "miscTags": [
+      "SGT"
+    ]
+  }
+]

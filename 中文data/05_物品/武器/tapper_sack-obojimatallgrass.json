@@ -1,0 +1,24 @@
+[
+  {
+    "ENG_name": "Tapper Sack",
+    "name": "Tapper麻袋",
+    "source": "ObojimaTallGrass",
+    "page": 159,
+    "type": "M",
+    "rarity": "none",
+    "weight": 5,
+    "value": 100,
+    "weaponCategory": "军用",
+    "property": [
+      "R",
+      "V"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "weapon": true,
+    "entries": [
+      "Tapper麻袋是农民使用的简易工具和武器。在一条优质但结实的编织绳末端有一个装满沙子的简易袋子。虽然它并不华丽，但在熟习的冒险者手中，这件朴素的武器能打出相当有力的一击。"
+    ]
+  }
+]

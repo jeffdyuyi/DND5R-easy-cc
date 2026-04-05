@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Paradise Plumage",
+    "name": "天堂羽衣",
+    "source": "ObojimaTallGrass",
+    "page": 240,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "饮用此药水后，你会立即披上醒目而独特的羽衣。你可以控制它创造出闪烁羽毛、虹彩和惊人图案的炫目效果。当你这样做时，你在所有为干扰或惊叹而进行的魅力（{@skill 表演}）检定中获得优势。此药水的效应持续24小时。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 9|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/paradise-plumage.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1714,
+          "height": 1714
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

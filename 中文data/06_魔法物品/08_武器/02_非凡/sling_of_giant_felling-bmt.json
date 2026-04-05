@@ -1,0 +1,23 @@
+[
+  {
+    "ENG_name": "Sling of Giant Felling",
+    "name": "巨人陨落之投石索",
+    "source": "BMT",
+    "page": 68,
+    "baseItem": "投石索|PHB",
+    "type": "R",
+    "rarity": "uncommon",
+    "weaponCategory": "simple",
+    "property": [
+      "A"
+    ],
+    "range": "30/120",
+    "dmg1": "1d4",
+    "dmgType": "B",
+    "entries": [
+      "当你使用这把魔法投石索发动的远程攻击检定命中了一个巨人生物时，那个生物必须通过一次{@dc 18}的体质豁免检定，否则将陷入倒地状态。"
+    ],
+    "ammoType": "投石索子弹|PHB",
+    "valueReference": 400
+  }
+]

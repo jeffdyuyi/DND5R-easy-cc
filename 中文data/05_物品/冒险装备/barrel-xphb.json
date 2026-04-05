@@ -1,0 +1,23 @@
+[
+  {
+    "name": "木桶",
+    "ENG_name": "Barrel",
+    "source": "XPHB",
+    "page": 224,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 70,
+    "value": 200,
+    "entries": [
+      "一个木桶能够至多装入 40 加仑的液体或 4 立方尺的干燥货物。"
+    ],
+    "basicRules2024": true,
+    "containerCapacity": {
+      "volume": [
+        4
+      ]
+    },
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

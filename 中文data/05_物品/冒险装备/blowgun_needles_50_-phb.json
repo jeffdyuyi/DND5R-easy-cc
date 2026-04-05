@@ -1,0 +1,25 @@
+[
+  {
+    "name": "吹箭(50)",
+    "ENG_name": "Blowgun Needles (50)",
+    "source": "PHB",
+    "page": 150,
+    "edition": "classic",
+    "type": "A",
+    "rarity": "none",
+    "weight": 1,
+    "value": 100,
+    "packContents": [
+      {
+        "item": "吹箭|PHB",
+        "quantity": 50
+      }
+    ],
+    "basicRules": true,
+    "needleBlowgun": true,
+    "reprintedAs": [
+      "吹矢（50）|XPHB"
+    ],
+    "srd": true
+  }
+]

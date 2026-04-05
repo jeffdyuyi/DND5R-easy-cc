@@ -1,0 +1,62 @@
+[
+  {
+    "ENG_name": "Death Armor",
+    "name": "死佑护甲",
+    "source": "FRHoF",
+    "page": 143,
+    "level": 2,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一块价值50+GP的缟玛瑙，作为法术的耗材",
+        "cost": 5000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "墨色的灵光在法术持续时间内环绕你触碰的一名生物。该生物进行的{@variantrule 死亡豁免检定|XPHB|死亡豁免检定}具有{@variantrule 优势|XPHB}，且每回合一次，当位于法术目标5尺内的生物用近战攻击检定命中法术目标时，该攻击者受{@damage 2d4}暗蚀伤害。"
+    ],
+    "damageInflict": [
+      "necrotic"
+    ],
+    "miscTags": [
+      "ADV"
+    ],
+    "areaTags": [
+      "S",
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "法师"
+    ],
+    "display_school": "死灵系",
+    "display_damageInflict": [
+      "死灵"
+    ]
+  }
+]

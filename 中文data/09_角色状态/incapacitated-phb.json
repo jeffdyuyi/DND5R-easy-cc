@@ -1,0 +1,32 @@
+[
+  {
+    "name": "失能",
+    "ENG_name": "Incapacitated",
+    "source": "PHB",
+    "page": 290,
+    "srd": true,
+    "basicRules": true,
+    "entries": [
+      {
+        "type": "list",
+        "items": [
+          "失能的生物不能执行任何动作或反应。"
+        ]
+      }
+    ],
+    "otherSources": [
+      {
+        "source": "RMR",
+        "page": 62
+      },
+      {
+        "source": "HftT",
+        "page": 48
+      }
+    ],
+    "reprintedAs": [
+      "失能|XPHB"
+    ],
+    "translator": "不全书"
+  }
+]

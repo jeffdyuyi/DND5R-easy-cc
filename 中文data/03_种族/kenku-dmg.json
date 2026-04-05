@@ -1,0 +1,57 @@
+[
+  {
+    "name": "天狗",
+    "ENG_name": "Kenku",
+    "source": "DMG",
+    "page": 282,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "dex": 2
+      }
+    ],
+    "darkvision": 60,
+    "traitTags": [
+      "NPC种族"
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "auran": true
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Ambusher",
+        "name": "伏击",
+        "entries": [
+          "在战斗的第一轮中，你对任何处于{@status 突袭}状态的生物进行攻击检定时具有优势。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Mimicry",
+        "name": "拟声",
+        "entries": [
+          "你可以模仿任何你听过的声音，包括人声。听到该声音的生物可以通过一次成功的{@dc 14}感知（{@skill 洞悉}）检定来识破这是模仿。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Languages",
+        "name": "语言",
+        "entries": [
+          "你可以读、写通用语和风族语，但你只能使用你的拟声特性来说话。"
+        ],
+        "type": "entries"
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/kenku.mp3"
+    }
+  }
+]

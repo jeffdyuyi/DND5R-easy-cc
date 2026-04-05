@@ -1,0 +1,44 @@
+[
+  {
+    "ENG_name": "Shield Master",
+    "name": "盾牌大师",
+    "source": "XPHB",
+    "page": 207,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4,
+        "proficiency": [
+          {
+            "armor": "shield"
+          }
+        ]
+      }
+    ],
+    "ability": [
+      {
+        "str": 1
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Shield Bash",
+        "name": "盾击",
+        "type": "entries",
+        "entries": [
+          "当你通过{@action 攻击|XPHB}动作中的，由近战武器发动的一次攻击命中了位于你 5 尺内的生物时，如果你装备着{@item 盾牌|XPHB}，你就可以立即使用它来击打目标，迫使目标进行一次力量豁免检定（{@dc 8} + 你的力量调整值 + 你的{@variantrule 熟练|XPHB|熟练加值}）。如果豁免失败，目标将被你推离 5 尺远或因此陷入{@condition 倒地|XPHB}状态（由你选择）。在每个你的回合中，此增益只能被使用一次。"
+        ]
+      },
+      {
+        "ENG_name": "Interpose Shield",
+        "name": "介入盾牌",
+        "type": "entries",
+        "entries": [
+          "当你受某效应影响而需要进行敏捷豁免来\"只受一半伤害\"时，若你豁免检定成功并正持握着一面{@item 盾牌|XPHB}，你就可以用{@variantrule 反应|XPHB}来使你自己免受此次伤害。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

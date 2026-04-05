@@ -1,0 +1,36 @@
+[
+  {
+    "ENG_name": "Vampire's Plaything",
+    "name": "血族玩物",
+    "source": "ABH",
+    "page": 9,
+    "category": "O",
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Decanting",
+        "name": "倾注",
+        "type": "entries",
+        "entries": [
+          "当你完成一次{@variantrule 长休|XPHB}时，你可以制造一瓶{@item 治疗药水|XDMG}或一瓶{@item 抗毒剂|XPHB}，只要你有一个空的{@item 小瓶|XPHB}或{@item 扁瓶|XPHB}。这些液体在你完成另一次{@variantrule 长休|XPHB}时蒸发。"
+        ]
+      },
+      {
+        "ENG_name": "Timely Retreat",
+        "name": "及时撤退",
+        "type": "entries",
+        "entries": [
+          "你可以用一个{@variantrule 附赠动作|XPHB}来执行{@action 疾走|XPHB}动作或{@action 撤离|XPHB}动作。你可以使用此好处的次数等于你的{@variantrule 熟练|XPHB|熟练加值}，并且当你完成一次{@variantrule 长休|XPHB}时恢复所有已消耗的使用次数。"
+        ]
+      },
+      {
+        "ENG_name": "Vampiric Connection",
+        "name": "血裔连结",
+        "type": "entries",
+        "entries": [
+          "DM决定你前吸血鬼主人的命运。当你和你前吸血鬼主人在同一个位面时，该吸血鬼可以与你心灵感应交流，并且你可以选择允许该吸血鬼通过你的感官来感知。"
+        ]
+      }
+    ]
+  }
+]

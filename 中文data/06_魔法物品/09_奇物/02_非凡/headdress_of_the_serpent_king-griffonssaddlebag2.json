@@ -1,0 +1,46 @@
+[
+  {
+    "ENG_name": "Headdress of the Serpent King",
+    "name": "蛇王头冠",
+    "source": "GriffonsSaddlebag2",
+    "page": 99,
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "curse": true,
+    "entries": [
+      "这顶金色和翠绿色的头冠能让你驾驭古老而蜿蜒的蛇之魔法。当你戴着此头冠期间受到毒素伤害时，伤害将减少等同于你的体质调整值的数值。",
+      "当你佩戴头冠期间，普通蛇类和挑战等级1/4或更低的蛇类对你持冷漠态度，除非你威胁或重伤它们，否则它们不会攻击你。此外，你可以用一个动作通过头冠施放{@spell 动物信使}法术，但只能以蛇类为目标。",
+      {
+        "ENG_name": "Curse",
+        "name": "诅咒",
+        "type": "entries",
+        "entries": [
+          "这顶头冠受到了诅咒，与其同调会使诅咒延伸到你身上，直到该诅咒被{@spell 移除诅咒}法术解除。摘下头冠并不能终止对你的诅咒。被诅咒期间，你的说话方式会略有改变：当发出[s]音时会带有嘶嘶声。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "will": [
+        "动物信使"
+      ]
+    },
+    "lootTables": [
+      "魔法物品表 F1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Headdress-of-the-Serpent-King.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

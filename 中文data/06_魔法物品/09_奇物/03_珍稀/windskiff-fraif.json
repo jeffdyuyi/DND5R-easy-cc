@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Windskiff",
+    "name": "乘风板",
+    "source": "FRAiF",
+    "page": 247,
+    "otherSources": [
+      {
+        "source": "FRHoF",
+        "page": 134
+      }
+    ],
+    "rarity": "rare",
+    "wondrous": true,
+    "value": 400000,
+    "recharge": "拂晓",
+    "rechargeAmount": 3,
+    "charges": 3,
+    "entries": [
+      "这件小饰品具有3充能，且在每日黎明时重获所有已消耗的充能。当你持握该饰品期间，你可以用一个{@action 魔法|XPHB}动作并消耗1充能将该饰品变形成为一个风帆动力个人载具。该载具的大小与和形状大致与一扇家用门相当，一面10尺高的风帆自其一侧延伸而出。变形持续1小时，或在你使用该物品的命令语（无需动作）时提前结束，此时帆板恢复为饰品形态。",
+      "在载具形态下，帆板是一件中型物件，具有以下数据：AC 12；HP 30以及{@variantrule 速度|XPHB} 40尺。帆板会悬浮在所处表面上方几寸处，并且能够滑翔；它在空中每下降1尺就可以水平移动5尺。帆板和其乘客不会受到坠落伤害。"
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 4000,
+    "fluff": {
+      "entries": [
+        "{@i 如果你想在月影群岛之间旅行，你可不能靠步行、骑马或者是马车。你得驾船而行。而且，虽然你可以简单的租一艘船，但那样又哪来的乐子呢？}"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/FRAiF/Windskiff.webp"
+          },
+          "width": 850,
+          "height": 1018
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

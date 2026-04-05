@@ -1,0 +1,86 @@
+[
+  {
+    "ENG_name": "Shadow Portal",
+    "name": "暗影传送门",
+    "source": "BookOfEbonTides",
+    "page": 70,
+    "level": 3,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 200
+      }
+    },
+    "components": {
+      "v": true,
+      "m": {
+        "text": "一个价值50GP的银制门闩，该法术会消耗它",
+        "cost": 5000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你在最近的墙壁、悬崖、树或相似体系中创造一扇门扉。它立即连接到200尺外的一扇相似门扉。近处的门扉必须是你视线范围内10尺内的一个地点，而远处的门扉可以是你能够想象或通过描述距离和方向（例如正下方100尺或西北方向50尺并以45度角向上）来指定的地点。",
+      "一旦门扉被召唤，你可以正常使用动作来开放并通过近端传送门，这会立即将你传送到远端传送门。其他生物在该法术持续期间也可以这样做。该法术在持续时间结束后或当有人以附赠动作关闭远端传送门的门扉时结束。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "若以5环施放，该法术可开放通往幽影旅路的门扉。这可能需要该旅路特定的额外姿势或材料成分，若缺乏这些成分，法术将失败并被浪费。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    },
+    "miscTags": [
+      "SGT",
+      "UBA"
+    ]
+  }
+]

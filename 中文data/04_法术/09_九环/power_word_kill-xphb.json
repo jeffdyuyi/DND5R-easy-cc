@@ -1,0 +1,56 @@
+[
+  {
+    "ENG_name": "Power Word Kill",
+    "name": "律令死亡",
+    "source": "XPHB",
+    "page": 306,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 9,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你强迫一名施法距离内你可见的生物死亡。若目标的{@variantrule 生命值|XPHB}小于等于 100 点，目标立即死亡。否则，目标将受到{@damage 12d12}点心灵伤害。"
+    ],
+    "damageInflict": [
+      "psychic"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "惑控系",
+    "display_damageInflict": [
+      "心灵"
+    ]
+  }
+]

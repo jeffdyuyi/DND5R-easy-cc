@@ -1,0 +1,44 @@
+[
+  {
+    "ENG_name": "Hoopak",
+    "name": "镀银胡帕克杖",
+    "source": "PHB",
+    "page": 148,
+    "type": "M",
+    "rarity": "unknown",
+    "weight": 2,
+    "value": 10,
+    "weaponCategory": "martial",
+    "property": [
+      "A",
+      "F",
+      "S",
+      "2H"
+    ],
+    "range": "40/160",
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "weapon": true,
+    "entries": [
+      "胡帕克杖看起来是一根结实的棍子，一端被做成投石索模样，另一端被削成尖头。",
+      {
+        "ENG_name": "Special",
+        "name": "特殊",
+        "type": "entries",
+        "entries": [
+          "当你用这种武器进行近战攻击时，你忽略其弹药属性。你也可以将另一端的投石索作为一种军用远程武器使用。这样做时，你使用其弹药属性，用投石索弹丸作为弹药，并在命中时造成{@damage 1d4}钝击伤害。"
+        ]
+      }
+    ],
+    "ammoType": "投石索子弹|PHB",
+    "hasFluffImages": true,
+    "namePrefix": "镀银",
+    "basicRules": true,
+    "reprintedAs": [
+      "镀银武器|XDMG"
+    ],
+    "tier": "主要",
+    "valueExpression": "[[baseItem.value]] + 10000",
+    "_isVariant": true
+  }
+]

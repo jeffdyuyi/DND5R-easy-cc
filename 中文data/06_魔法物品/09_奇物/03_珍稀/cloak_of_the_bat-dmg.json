@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "Cloak of the Bat",
+    "name": "蝙蝠斗篷",
+    "source": "DMG",
+    "page": 159,
+    "srd": true,
+    "referenceSources": [
+      "WDMM"
+    ],
+    "reprintedAs": [
+      "蝙蝠斗篷|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "着装此斗篷期间，你的敏捷（{@skill 隐匿}）检定具有优势。在微光或黑暗的环境中，你可以用双手抓住斗篷边沿，利用它以40尺的速度飞行。如果你没能抓住斗篷边沿或不再处于微光或黑暗环境中，则你失去此飞行速度。",
+      "着装此斗篷且身处微光或黑暗环境期间，你可以用一个动作对自己施展{@spell 变形术}，并以此变成一只{@creature 蝙蝠}。你在变成{@creature 蝙蝠}时保留自身的智力、感知和魅力属性。直到次日黎明前，斗篷都无法再以该方式使用。"
+    ],
+    "optionalfeatures": [
+      "仿制魔法物品|TCE"
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "变形术"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表G"
+    ],
+    "valueReference": 4000,
+    "type": "W"
+  }
+]

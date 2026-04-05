@@ -1,0 +1,62 @@
+{
+  "raceFluff": [
+    {
+      "ENG_name": "Satarre (Unbound)",
+      "name": "萨塔雷 (不羁)",
+      "source": "BookOfEbonTides",
+      "_copy": {
+        "ENG_name": "Satarre",
+        "name": "萨塔雷",
+        "source": "BookOfEbonTides",
+        "_mod": {
+          "entries": {
+            "mode": "prependArr",
+            "items": {
+              "type": "section",
+              "entries": [
+                {
+                  "type": "entries",
+                  "entries": [
+                    "萨塔雷是著名的位面旅行者，造访幽影位面也不例外。随着幽影王国中各种族人口的增长，通往暗影之路的异界之门网络也在扩大。对此最为清楚的是不羁萨塔雷，这个小型派系狂热致力于消除世界之间的屏障。不羁萨塔雷即便在同族中也堪称异类，因为他们对过渡之地有着本能的敏感。一个不羁萨塔雷会被迫寻找这些异界之门，并通过寻常或魔法手段扩大其影响力。",
+                    "不羁萨塔雷是萨塔雷的一个亚种。你可以在《英雄之书》中找到更多关于基础萨塔雷种族的信息。",
+                    {
+                      "ENG_name": "Unbound Satarre Names",
+                      "name": "不羁萨塔雷名字",
+                      "type": "entries",
+                      "entries": [
+                        "与其他萨塔雷一样，不羁萨塔雷的名字通常类似于他们成长地的文化名称，尽管在诸位面或黑暗术与死亡邪教中成长的萨塔雷倾向于使用那些位面常见的名称或唤起邪教教义的名字。虚空语的名字也很常见，并在下方列出。",
+                        "所有萨塔雷都被赋予邪教名字，表明他们在命名日时生命奉献给了哪位黑暗神。这些名称在邪教或神的名字前加上ai-，有时将邪教或神的名字缩短为二或三个音节。大多数成年后继续侍奉或至少向这些神祈祷，虔信程度各不相同。",
+                        {
+                          "type": "list",
+                          "style": "list-hang-notitle",
+                          "items": [
+                            {
+                              "ENG_name": "Example Male Names:",
+                              "name": "范例男性名字：",
+                              "type": "item",
+                              "entries": [
+                                "Aggorret（吞噬者）, Denahrek（仆役）, Medloss（束缚者）, Mörkothr（黑暗术）, Narkot（啃噬者）, Pälsore（奴役者）, Vessar（饮血者）, Rabefress（杀手）"
+                              ]
+                            },
+                            {
+                              "ENG_name": "Example Female Names:",
+                              "name": "范例女性名字：",
+                              "type": "item",
+                              "entries": [
+                                "阿特莱萨（宝石），比努莱特（斥候），弗里泽尔（抄写员），伊克萨（刀刃），米斯克拉（蛆），雷斯皮（建造者），乌恩斯卡帕（感知），乌恩特拉（末日）"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

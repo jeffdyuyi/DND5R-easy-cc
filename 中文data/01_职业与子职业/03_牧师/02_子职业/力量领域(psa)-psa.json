@@ -1,0 +1,40 @@
+{
+  "ENG_name": "Strength Domain (PSA)",
+  "name": "力量领域(PSA)",
+  "shortName": "力量(PSA)",
+  "source": "PSA",
+  "className": "牧师",
+  "classSource": "XPHB",
+  "_copy": {
+    "ENG_name": "Strength Domain (PSA)",
+    "name": "力量领域(PSA)",
+    "source": "PSA",
+    "shortName": "力量(PSA)",
+    "className": "牧师",
+    "classSource": "PHB",
+    "_preserve": {
+      "page": true,
+      "otherSources": true,
+      "referenceSources": true,
+      "srd": true,
+      "basicRules": true,
+      "reprintedAs": true
+    }
+  },
+  "subclassFeatures": [
+    "力量领域(PSA)|牧师|XPHB|力量(PSA)|PSA|3",
+    "引导神力：力量的壮举|牧师|XPHB|力量(PSA)|PSA|3",
+    "罗纳斯之佑|牧师||力量(PSA)|PSA|6",
+    "战争化身|牧师||力量(PSA)|PSA|17"
+  ],
+  "fluff": {
+    "_subclassFluff": {
+      "ENG_name": "Strength Domain (PSA)",
+      "name": "力量领域(PSA)",
+      "source": "PSA",
+      "shortName": "力量(PSA)",
+      "className": "牧师",
+      "classSource": "PHB"
+    }
+  }
+}

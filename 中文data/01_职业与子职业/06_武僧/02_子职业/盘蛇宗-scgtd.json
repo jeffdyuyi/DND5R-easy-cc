@@ -1,0 +1,127 @@
+{
+  "ENG_name": "Way of the Serpent",
+  "name": "盘蛇宗",
+  "source": "GuideDrakkenheim",
+  "shortName": "蛇",
+  "page": 163,
+  "className": "武僧",
+  "classSource": "phb",
+  "subclassFeatures": [
+    {
+      "ENG_name": "Way of the Serpent",
+      "name": "盘蛇宗",
+      "source": "GuideDrakkenheim",
+      "page": 163,
+      "className": "武僧",
+      "classSource": "phb",
+      "subclassShortName": "蛇",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 3,
+      "entries": [
+        "矛术大师，这位迅捷的武者不仅将长柄武器作为武器，还将其视为自身的延伸，利用武器增强机动性、灵活性和战斗能力。如同草丛中的蛇一般，盘蛇宗磨练着预测来袭攻击、远距离格挡并以致命精准打击的能力。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "委蛇态|武僧|phb|蛇|GuideDrakkenheim|3|GuideDrakkenheim"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "腾蛇舞|武僧|phb|蛇|GuideDrakkenheim|3|GuideDrakkenheim"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Serpent Style",
+      "name": "委蛇态",
+      "source": "GuideDrakkenheim",
+      "page": 163,
+      "className": "武僧",
+      "classSource": "phb",
+      "subclassShortName": "蛇",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 3,
+      "entries": [
+        "你获得{@item 长柄刀}、{@item 长戟}、{@item 长矛}、{@item 三叉戟}以及类似长矛和长柄武器的熟练项。这些武器对你而言视为武僧武器，即使它们具有{@itemProperty H||重型}或{@itemProperty 2H||双手}词条。此外，你使用这些武器的优雅与精通不会限制你在持握{@itemProperty 2H||双手}武器时进行徒手打击的能力。",
+        "当双手持握{@item 长棍}、{@item 矛}或{@item 三叉戟}时，该武器获得{@itemProperty R||触及}属性。"
+      ]
+    },
+    {
+      "ENG_name": "Serpent Spring",
+      "name": "腾蛇舞",
+      "source": "GuideDrakkenheim",
+      "page": 163,
+      "className": "武僧",
+      "classSource": "phb",
+      "subclassShortName": "蛇",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 3,
+      "entries": [
+        "你可以使用长柄武器腾跃至空中。当你持有一把具有{@itemProperty R||触及}属性的武器时，你的跳跃距离翻倍。",
+        "当你持有一把具有{@itemProperty R||触及}属性的武器时，若你消耗一点气来使用你的腾蛇舞特性，你的跳跃距离将在该回合内变为三倍，并且你在本回合内下一次近战武器攻击中获得优势。"
+      ]
+    },
+    {
+      "ENG_name": "Serpent Strikes",
+      "name": "蛇出洞",
+      "source": "GuideDrakkenheim",
+      "page": 163,
+      "className": "武僧",
+      "classSource": "phb",
+      "subclassShortName": "蛇",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "你学会以下技巧来增强你的攻击：",
+        {
+          "type": "list",
+          "items": [
+            "{@bold 眼镜蛇刺} 当你能够看见的生物进入你的触及范围时，你可以使用你的反应对该生物进行一次攻击。",
+            "{@bold 狂蟒绞} 当你以借机攻击命中一个生物时，你也可以在该次攻击上使用震慑拳而不消耗气点。",
+            "{@bold 蝰蛇毒} 在你的回合中，当你用近战武器攻击命中一个生物时，你可以消耗1点或更多气点，最多不超过你的熟练加值数值。该攻击造成{@damage 1d6}毒素伤害，外加每消耗1点气点额外造成{@damage 1d6}毒素伤害，且目标中毒直到你的下一个回合结束。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Serpent Stances",
+      "name": "灵蛇姿",
+      "source": "GuideDrakkenheim",
+      "page": 163,
+      "className": "武僧",
+      "classSource": "phb",
+      "subclassShortName": "蛇",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 11,
+      "header": 2,
+      "entries": [
+        "在你的回合开始时，你可以采用灵蛇姿（无需动作）。当你这样做时，选择以下灵蛇姿之一，该姿态持续到你处于{@condition 失能}状态或再次使用此特性为止。",
+        {
+          "type": "list",
+          "items": [
+            "{@bold 森蚺姿} 使用此姿态时，你的近战武器攻击和徒手打击的触及范围增加10尺。",
+            "{@bold 黑曼巴姿} 使用此姿态时，每回合当你以武器攻击未命中时，你可以作为同一动作的一部分进行一次额外的近战攻击。",
+            "{@bold 羽蛇姿}。使用此姿态时，你的飞行速度等于你的步行速度。",
+            "{@bold 六臂蛇魔姿}。使用此姿态时，你在战斗中的每一回合可以采取一次反应，而非每轮一次。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Supreme Serpent",
+      "name": "化蛟",
+      "source": "GuideDrakkenheim",
+      "page": 163,
+      "className": "武僧",
+      "classSource": "phb",
+      "subclassShortName": "蛇",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "当你采用灵蛇姿时，你可以同时采用二种蛇姿态，获得两种效应的增益。"
+      ]
+    }
+  ],
+  "hasFluff": true,
+  "hasFluffImages": true
+}

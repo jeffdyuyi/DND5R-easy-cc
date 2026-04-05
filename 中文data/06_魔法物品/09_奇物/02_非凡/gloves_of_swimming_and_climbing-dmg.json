@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Gloves of Swimming and Climbing",
+    "name": "攀泳手套",
+    "source": "DMG",
+    "page": 172,
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "攀泳手套|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "着装该手套期间，攀爬和游泳不会消耗你额外移动力，并且你在进行攀爬或游泳相关的力量（{@skill 运动}）检定时获得+5加值。"
+    ],
+    "optionalfeatures": [
+      "仿制魔法物品|TCE"
+    ],
+    "lootTables": [
+      "魔法物品表F"
+    ],
+    "valueReference": 400,
+    "type": "W"
+  }
+]

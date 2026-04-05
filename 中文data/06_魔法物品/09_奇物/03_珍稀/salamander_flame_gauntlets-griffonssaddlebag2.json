@@ -1,0 +1,37 @@
+[
+  {
+    "ENG_name": "Salamander Flame Gauntlets",
+    "name": "火蜥蜴手套",
+    "source": "GriffonsSaddlebag2",
+    "page": 153,
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这副暗色金属长手套是用火蜥蜴心脏中的火焰锻造而成。当你着装它们期间，你的徒手打击命中目标时会额外造成1d4火焰伤害。此外，你可以用一个附赠动作从手套中施放{@spell 火焰刀}法术（4环版本，无需专注），使用你的施法属性或在施法时选择力量或敏捷作为该法术的施法属性。",
+      "持握火焰刀期间，你可以用一个动作用它进行一次远程法术攻击。这样做时，此刀会变成一支射程为30尺的火焰之矛。命中时，此矛造成{@damage 4d6}点火焰伤害。攻击结束后，火焰刀会立即在你手中重新形成。"
+    ],
+    "attachedSpells": {
+      "will": [
+        "火焰刀#4"
+      ]
+    },
+    "lootTables": [
+      "魔法物品表 G2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Salamander-Flame-Gauntlets.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

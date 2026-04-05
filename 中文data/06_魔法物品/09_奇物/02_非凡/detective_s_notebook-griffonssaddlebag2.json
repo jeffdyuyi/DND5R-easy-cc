@@ -1,0 +1,42 @@
+[
+  {
+    "ENG_name": "Detective's Notebook",
+    "name": "侦探笔记",
+    "source": "GriffonsSaddlebag2",
+    "page": 70,
+    "tier": "次要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "拂晓",
+    "entries": [
+      "这本磨损的笔记本里全是潦草的手记、注释和素描——其中许多内容似乎由不同的人写成。在你手持这本书期间，你进行的智力（{@skill 调查}）或感知（{@skill 洞悉}）检定都获得 +1 加值。在进行该调查期间（或者与要求进行该检定的场景进行互动期间），若你花费至少10分钟时间在此书中做笔记，本次检定将具有优势。",
+      "此外，你可以用一个动作来施展这本书中的{@spell 通晓语言}、{@spell 侦测思想}或者{@spell 物件定位术}（豁免DC 13）。一旦这本书被用于施展上述法术之一后，直到下一个拂晓前，此书都无法再次以此法施展其中的任何法术。而且在这之后，每当此书以此法被用于施展上述法术之前，此书就会有{@chance 20|20%}的概率施法失败且化作一堆非魔法的无用碎纸，该概率累加。"
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "通晓语言",
+          "侦测思想",
+          "物件定位术"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表 B2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Detectives-Notebook.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

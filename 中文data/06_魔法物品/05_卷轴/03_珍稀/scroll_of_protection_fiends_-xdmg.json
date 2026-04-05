@@ -1,0 +1,22 @@
+[
+  {
+    "ENG_name": "Scroll of Protection (Fiends)",
+    "name": "守护卷轴（邪魔）",
+    "source": "XDMG",
+    "page": 302,
+    "type": "SC|XPHB",
+    "detail1": "邪魔",
+    "detail2": "邪魔",
+    "rarity": "rare",
+    "hasRefs": true,
+    "entries": [
+      "{#itemEntry 守护卷轴|XDMG}"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {}
+  }
+]

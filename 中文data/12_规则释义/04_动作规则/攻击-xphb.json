@@ -1,0 +1,41 @@
+{
+  "ENG_name": "Attack",
+  "name": "攻击",
+  "source": "XPHB",
+  "page": 361,
+  "srd52": true,
+  "time": [
+    {
+      "number": 1,
+      "unit": "动作"
+    }
+  ],
+  "entries": [
+    "当你执行攻击动作时，你可以用你的武器或{@variantrule 徒手打击|XPHB}进行一次攻击检定。",
+    {
+      "type": "entries",
+      "entries": [
+        {
+          "ENG_name": "Equipping and Unequipping Weapons",
+          "name": "装备武器与卸下武器",
+          "type": "entries",
+          "entries": [
+            "作为攻击动作的一部分，每当你发动一次攻击时，你都可以装备或卸下一把武器。你可以在此次攻击之前或之后装备/卸下武器。如果你在发动一次攻击前装备一把武器，你不需要以这把武器发动这次攻击。装备武器的行为包括从鞘（或类似的收纳物）中拔出你的武器以及捡起一把武器。卸下武器的行为包括把武器收入鞘（或类似的收纳物）中、收起来以及丢下它。"
+          ]
+        },
+        {
+          "ENG_name": "Moving Between Attacks",
+          "name": "攻击间移动",
+          "type": "entries",
+          "entries": [
+            "你的回合中，如果你具有某些可以使你在攻击动作中发动复数次攻击的特性（例如额外攻击Extra Attack），你可以使用一部分或全部移动力，在这几次攻击之间进行移动。"
+          ]
+        }
+      ]
+    }
+  ],
+  "seeAlsoAction": [
+    "双武器战斗|XPHB"
+  ],
+  "translator": "不全书"
+}

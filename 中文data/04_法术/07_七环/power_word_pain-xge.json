@@ -1,0 +1,55 @@
+[
+  {
+    "ENG_name": "Power Word Pain",
+    "name": "律令痛苦",
+    "source": "XGE",
+    "page": 163,
+    "level": 7,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你说出饱含力量的真言，引发距离内一个你可见生物的剧痛波浪。如果目标的生命值为 100 点或更少，它将遭受强烈的痛苦。否则，法术将对它没有作用。免疫{@condition 魅惑}的生物同样不受这个法术影响。",
+      "如果目标承受了这种痛苦，他所拥有的任何速度都不能超过 10 尺。目标在攻击检定、属性检定和除了体质豁免以外的豁免检定中承受劣势。最后，如果目标试图施法，它必须先成功进行体质豁免检定，否则它将施法失败，法术会被浪费。",
+      "承受了这种痛苦的目标在它的每个回合结束都可以进行一次体质豁免检定。如果豁免成功，痛苦将结束。"
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "惑控系",
+    "display_savingThrow": [
+      "体质"
+    ]
+  }
+]

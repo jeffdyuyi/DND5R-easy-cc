@@ -1,0 +1,98 @@
+[
+  {
+    "ENG_name": "Dispel Evil and Good",
+    "name": "驱逐善恶",
+    "source": "XPHB",
+    "page": 263,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 5,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "银粉和铁粉"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "法术持续时间内，天族、元素、妖精、邪魔和亡灵对你的攻击检定具有{@variantrule 劣势|XPHB}。你可以使用下述特殊特性之一以提前结束法术。",
+      {
+        "ENG_name": "Break Enchantment",
+        "name": "破除惑控",
+        "type": "entries",
+        "entries": [
+          "以一个{@action 魔法|XPHB}动作，你触碰一名因上述生物类型的任意生物而被其附身、陷入{@condition 魅惑|XPHB}或{@condition 恐慌|XPHB}状态的生物。目标不再被上述生物附身，{@condition 魅惑|XPHB}或{@condition 恐慌|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Dismissal",
+        "name": "驱逐",
+        "type": "entries",
+        "entries": [
+          "以一个{@action 魔法|XPHB}动作，你选择距你5尺内的一名你可见的生物，其生物类型必须是上述生物类型之一。目标必须成功于一次魅力豁免，否则，若其并未处于家园位面，则被遣送回其家园位面。对于亡灵和妖精，若它们并未处于家园位面，则亡灵会被遣送回堕影冥界Shadowfell，妖精则被遣送回妖精荒野Feywild。"
+        ]
+      }
+    ],
+    "savingThrow": [
+      "charisma"
+    ],
+    "affectsCreatureType": [
+      "天族",
+      "元素生物",
+      "妖精",
+      "邪魔",
+      "亡灵"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/XPHB/Dispel Evil and Good.webp"
+          },
+          "credit": "Javier Charro",
+          "width": 2225,
+          "height": 1440
+        }
+      ]
+    },
+    "classes": [
+      "牧师",
+      "圣武士"
+    ],
+    "display_school": "防护系",
+    "display_savingThrow": [
+      "魅力"
+    ]
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "ENG_name": "Ring of Animal Influence",
+    "name": "影响动物戒指",
+    "source": "XDMG",
+    "page": 292,
+    "srd52": true,
+    "basicRules2024": true,
+    "type": "RG|XDMG",
+    "rarity": "rare",
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "这枚戒指具有3充能，并在每日黎明时重获{@dice 1d3}已消耗的充能。着装此戒指期间，你可以消耗1充能，从中施展以下法术之一（豁免{@dc 13}）：",
+      {
+        "type": "list",
+        "items": [
+          "{@spell 化兽为友|XPHB}",
+          "{@spell 恐惧术|XPHB}（只影响野兽）",
+          "{@spell 动物交谈|XPHB}"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "化兽为友|xphb",
+          "恐惧术|xphb",
+          "动物交谈|xphb"
+        ]
+      }
+    },
+    "lootTables": [
+      "圣物 - 珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Ring of Animal Influence.webp"
+          },
+          "width": 1000,
+          "height": 521
+        }
+      ]
+    }
+  }
+]

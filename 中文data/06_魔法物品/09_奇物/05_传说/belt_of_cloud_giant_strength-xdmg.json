@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Belt of Cloud Giant Strength",
+    "name": "云巨人之力腰带",
+    "source": "XDMG",
+    "page": 236,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "legendary",
+    "reqAttune": true,
+    "wondrous": true,
+    "ability": {
+      "static": {
+        "str": 27
+      }
+    },
+    "entries": [
+      "穿戴此腰带期间，你的力量值变为27。如果你未着装该腰带的情况下，力量值已经大于或等于腰带赋予的数值，则此物品无效。"
+    ],
+    "lootTables": [
+      "武备 - 传说|XDMG"
+    ],
+    "translator": "不全书",
+    "valueReference": 200000,
+    "type": "W"
+  }
+]

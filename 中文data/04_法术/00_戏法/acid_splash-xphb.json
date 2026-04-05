@@ -1,0 +1,81 @@
+[
+  {
+    "ENG_name": "Acid Splash",
+    "name": "酸液飞溅",
+    "source": "XPHB",
+    "page": 239,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 0,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你在施法距离内一点创造出一颗酸液泡，以该点 5 尺{@variantrule 球状 [效应区域]|XPHB|球状}范围爆发。该{@variantrule 球状 [效应区域]|XPHB|球状}区域内的每名生物必须通过一次敏捷豁免，否则受到{@damage 1d6}点强酸伤害。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Cantrip Upgrade",
+        "name": "戏法强化",
+        "type": "entries",
+        "entries": [
+          "当你达到以下等级时，伤害增加{@damage 1d6}，5 级（{@damage 2d6}），11 级（{@damage 3d6}）和17 级（{@damage 4d6}）。"
+        ]
+      }
+    ],
+    "scalingLevelDice": {
+      "label": "强酸伤害",
+      "scaling": {
+        "1": "1d6",
+        "5": "2d6",
+        "11": "3d6",
+        "17": "4d6"
+      }
+    },
+    "damageInflict": [
+      "acid"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "miscTags": [
+      "SCL"
+    ],
+    "areaTags": [
+      "MT"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "敏捷"
+    ],
+    "display_damageInflict": [
+      "强酸"
+    ]
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "ENG_name": "Chill Touch",
+    "name": "颤栗之触",
+    "source": "PHB",
+    "page": 221,
+    "srd": true,
+    "referenceSources": [
+      "IDRotF",
+      "CRCotN"
+    ],
+    "reprintedAs": [
+      "颤栗之触|XPHB"
+    ],
+    "level": 0,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "round",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你在施法距离内某生物所在位置召唤出幽魂般的骨手，夹带着墓穴的刺骨冻寒攻击目标。并对该生物进行一次远程法术攻击，命中时，手掌抓住目标并令其受 {@damage 1d8} 点暗蚀伤害，且直至你下一回合开始前都无法恢复生命值。",
+      "如果你的命中目标为一个不死生物，则其在你下回合结束之前对你发动的攻击检定都具有劣势。",
+      "此法术在你达到指定等级时增加{@damage 1d8}。5级（{@damage 2d8}）、11级（{@damage 3d8}）和17级（{@damage 4d8}）"
+    ],
+    "scalingLevelDice": {
+      "label": "暗蚀伤害",
+      "scaling": {
+        "1": "1d8",
+        "5": "2d8",
+        "11": "3d8",
+        "17": "4d8"
+      }
+    },
+    "damageInflict": [
+      "necrotic"
+    ],
+    "spellAttack": [
+      "R"
+    ],
+    "miscTags": [
+      "SCL"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "死灵系",
+    "display_damageInflict": [
+      "死灵"
+    ]
+  }
+]

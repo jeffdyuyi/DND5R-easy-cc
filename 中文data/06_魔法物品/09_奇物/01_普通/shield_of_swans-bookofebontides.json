@@ -1,0 +1,20 @@
+[
+  {
+    "ENG_name": "Shield of Swans",
+    "name": "天鹅护盾",
+    "source": "BookOfEbonTides",
+    "page": 199,
+    "baseItem": "盾牌|PHB",
+    "type": "S",
+    "rarity": "common",
+    "weight": 6,
+    "ac": 2,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "这面护盾有3次充能，并在每天拂晓时恢复{@dice 1d3}次已消耗的充能。当你念出命令语并消耗1次充能时，你将获得60尺的飞行速度，持续{@dice 1d4}回合（且你知道何时结束）。",
+      "此外，持有此护盾时你可以与天鹅和其他水生鸟类交谈。"
+    ]
+  }
+]

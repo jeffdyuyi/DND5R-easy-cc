@@ -1,0 +1,20 @@
+[
+  {
+    "name": "铁壶",
+    "ENG_name": "Iron Pot",
+    "source": "PHB",
+    "page": 153,
+    "type": "G",
+    "rarity": "none",
+    "weight": 10,
+    "value": 200,
+    "entries": [
+      "一个铁壶可容纳1加仑液体。"
+    ],
+    "basicRules": true,
+    "reprintedAs": [
+      "铁壶|XPHB"
+    ],
+    "srd": true
+  }
+]

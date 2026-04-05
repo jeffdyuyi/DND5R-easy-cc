@@ -1,0 +1,38 @@
+{
+  "ENG_name": "Bewitching Whispers",
+  "name": "惑人低语",
+  "source": "PHB",
+  "page": 110,
+  "srd": true,
+  "featureType": [
+    "EI"
+  ],
+  "prerequisite": [
+    {
+      "level": {
+        "level": 7,
+        "class": {
+          "ENG_name": "Warlock",
+          "name": "魔契师"
+        }
+      }
+    }
+  ],
+  "additionalSpells": [
+    {
+      "innate": {
+        "_": {
+          "daily": {
+            "1e": [
+              "强迫术"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "entries": [
+    "你可以消耗你的魔契师法术位施展一道{@spell 强迫术}。你必须完成一次长休才能再次施展该法术。"
+  ],
+  "translator": "不全书"
+}

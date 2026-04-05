@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Essence of Umami",
+    "name": "鲜味精华",
+    "source": "ObojimaTallGrass",
+    "page": 240,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "这瓶药水能让所有食物变得美味无比。当你将它倒在任何食物上时，无论是豆腐块还是慢烤牛胸肉，鲜味精华都会使其散发出魔法光芒。当品尝该食物时，它会神奇地给予品尝者他们个人版本的终极美食体验。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 5|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/essence-of-umami.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1648,
+          "height": 1648
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

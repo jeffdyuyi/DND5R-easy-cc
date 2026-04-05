@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "Talking Doll",
+    "name": "说话玩偶",
+    "source": "XDMG",
+    "page": 315,
+    "referenceSources": [
+      "DrDe-ACfaS"
+    ],
+    "rarity": "common",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这个玩偶在你周边5尺范围内期间，你可以花费一次{@variantrule 短休|XPHB}教会它说至多六段短语，并设定玩偶说出每段短语的条件，每段短语的长度都不能超过六个单词。你也可以使用新短语替换旧短语。设定的条件必须在玩偶周边5尺范围内发生，这样玩偶才会说话。例如，当有人捡起这个玩偶时，它可能会说一句\"我想要一块糖\"。当你与玩偶的{@variantrule 同调|XPHB}结束时，玩偶的短语会消失。"
+    ],
+    "lootTables": [
+      "奥秘 - 普通|XDMG",
+      "器具 - 普通|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 100,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Talking Doll.webp"
+          },
+          "width": 698,
+          "height": 1024
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "Dream Saber",
+    "name": "入梦军刀",
+    "source": "GriffonsSaddlebag2",
+    "page": 74,
+    "baseItem": "弯刀|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 3,
+    "weaponCategory": "军用",
+    "property": [
+      "F",
+      "L"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "S",
+    "bonusWeapon": "+1",
+    "entries": [
+      "你使用这把魔法武器进行的攻击检定和伤害掷骰都获得+1加值，且任何被此武器命中的生物都将额外受到{@damage 1d4}心灵伤害。当你此武器造成的伤害一个生物的生命值降至0时，你可以选择防止本次伤害，改为使其魔法性地陷入睡眠。入睡的生物将陷入{@condition 昏迷}状态，持续10分钟或直至其受到伤害，或者直至有人用一个动作将其摇醒或拍醒。当你以此法迫使其他生物入睡时，你还可以迫使该生物进行一次DC 15的感知豁免，若豁免失败，你将立即获知其表层的想法，而且还可以决定其本次睡眠时会做什么梦。一旦某生物以上述方式陷入睡眠后，它在接下来的24小时期间对该效果免疫。"
+    ],
+    "lootTables": [
+      "魔法物品表 G1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Dream-Saber.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

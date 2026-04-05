@@ -1,0 +1,32 @@
+[
+  {
+    "name": "巨斧",
+    "ENG_name": "Greataxe",
+    "source": "PHB",
+    "page": 149,
+    "edition": "classic",
+    "type": "M",
+    "rarity": "none",
+    "weight": 7,
+    "value": 3000,
+    "weaponCategory": "martial",
+    "property": [
+      "H",
+      "2H"
+    ],
+    "dmg1": "1d12",
+    "dmgType": "S",
+    "axe": true,
+    "basicRules": true,
+    "referenceSources": [
+      "TftYP-AtG",
+      "RMBRE",
+      "PaBTSO"
+    ],
+    "reprintedAs": [
+      "巨斧|XPHB"
+    ],
+    "srd": true,
+    "weapon": true
+  }
+]

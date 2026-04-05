@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Pungent Sea Foam",
+    "name": "刺鼻海洋泡沫",
+    "source": "ObojimaTallGrass",
+    "page": 206,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 5|large}|SneakerProMedium}",
+            "{@font {@style 7|large}|SneakerProMedium}",
+            "{@font {@style 5|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "从腐化区域的海岸收集而来，这种海洋泡沫对触碰有毒。只有最娴熟的药水制造者才能使用其魔法词条而不造成重伤术。"
+    ],
+    "lootTables": [
+      "浅滩普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/pungent-sea-foam.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

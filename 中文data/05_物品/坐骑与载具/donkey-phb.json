@@ -1,0 +1,16 @@
+[
+  {
+    "name": "驴",
+    "ENG_name": "Donkey",
+    "source": "PHB",
+    "page": 157,
+    "type": "MNT",
+    "rarity": "none",
+    "value": 800,
+    "basicRules": true,
+    "carryingCapacity": 420,
+    "speed": 40,
+    "srd": true,
+    "translator": "不全书"
+  }
+]

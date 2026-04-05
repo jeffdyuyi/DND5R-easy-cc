@@ -1,0 +1,193 @@
+{
+  "ENG_name": "Way of the Astral Self",
+  "name": "星我宗",
+  "shortName": "星我",
+  "source": "TCE",
+  "className": "武僧",
+  "classSource": "PHB",
+  "page": 50,
+  "edition": "classic",
+  "subclassFeatures": [
+    "星我宗|武僧||星我|TCE|3",
+    "星我之臂|武僧||星我|TCE|3",
+    "星我之容|武僧||星我|TCE|6",
+    "星我之躯|武僧||星我|TCE|11",
+    "星我觉醒|武僧||星我|TCE|17"
+  ],
+  "features": [
+    {
+      "name": "星我宗",
+      "ENG_name": "Way of the Astral Self",
+      "source": "TCE",
+      "page": 50,
+      "className": "武僧",
+      "classSource": "PHB",
+      "subclassShortName": "星我",
+      "subclassSource": "TCE",
+      "level": 3,
+      "entries": [
+        "遵循星我宗的武僧相信他们的身体是一种幻觉。他们将气视为自己真实形态的体现，即为“星我”（Astral Self）。星我这一形态，用之以善则正，用之以恶则邪。一些修道院训练学徒并使用他们的力量来保护弱者；而另一些修道院则教导那些追名逐利的学徒在为权贵服务时展现真我。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "你的星我形态|武僧||星我|TCE|3"
+        }
+      ]
+    },
+    {
+      "name": "你的星我形态",
+      "ENG_name": "Forms of Your Astral Self",
+      "source": "TCE",
+      "page": 50,
+      "className": "武僧",
+      "classSource": "PHB",
+      "subclassShortName": "星我",
+      "subclassSource": "TCE",
+      "level": 3,
+      "header": 1,
+      "type": "inset",
+      "entries": [
+        "星我是武僧精神与灵魂的半透明化身。因此，星我的形态会展现出武僧的背景、理想、牵绊和缺点。星我的外表不一定看起来和武僧本人一样。例如，一个消瘦的人的星我可能让人联想到巨力无比的牛头人，代表着武僧内心所渴求的力量。每一个星我都是独一无二的，而这一宗派的武僧们往往因其星我的特征而非本人的外貌而闻名。",
+        "当你选择该宗派时，仔细考虑那些定义你武僧特质的细节：他们的追求、正义感或欲望都可以在星我形态上体现出来。"
+      ]
+    },
+    {
+      "name": "星我之臂",
+      "ENG_name": "Arms of the Astral Self",
+      "source": "TCE",
+      "page": 50,
+      "className": "武僧",
+      "classSource": "PHB",
+      "subclassShortName": "星我",
+      "subclassSource": "TCE",
+      "level": 3,
+      "header": 1,
+      "consumes": {
+        "name": "气",
+        "amount": 1
+      },
+      "entries": [
+        "你对气的掌握允许你召唤出星我的一部分。以一个附赠动作，你可以消耗 1 点气来召唤你的星我之臂。手臂出现时，你周围 10 尺范围内你可见且由你选择的生物必须进行一次敏捷豁免。豁免失败者受到数值等同于你的两枚武艺骰掷点的力场伤害。",
+        "在接下来的 10 分钟内，这些幽光般的手臂会盘旋在你的肩膀附近或环绕在你的物理手臂上。如果你陷入{@condition 失能|PHB}或死亡，它们会提前消失。",
+        "星我之臂存在期间，你获得如下增益：",
+        {
+          "type": "list",
+          "items": [
+            "当你进行力量检定或力量豁免时，你可以用感知调整值代替力量调整值。",
+            "你可以使用星我之臂进行徒手打击。",
+            "当你使用星我之臂进行徒手打击时，你的触及范围比正常多出 5 尺。",
+            "当你使用星我之臂进行徒手打击时，你可以使用感知调整值来代替力量或敏捷调整值进行攻击检定和伤害掷骰。且该攻击的伤害类型为力场伤害。"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "星我之容",
+      "ENG_name": "Visage of the Astral Self",
+      "source": "TCE",
+      "page": 50,
+      "className": "武僧",
+      "classSource": "PHB",
+      "subclassShortName": "星我",
+      "subclassSource": "TCE",
+      "level": 6,
+      "header": 2,
+      "consumes": {
+        "name": "气",
+        "amount": 1
+      },
+      "entries": [
+        "你可以召唤你的星我之容。以一个附赠动作（或者作为召唤星我之臂的同一个附赠动作的一部分），你可以消耗 1 点气来召唤星我之容，持续 10 分钟。如果你陷入{@condition 失能|PHB}或死亡，它会提前消失。",
+        "星我之容覆盖你的面部，其外观由你决定。它存在期间，你获得以下增益：",
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "星光视界 Astral Sight",
+              "entry": "你可以在黑暗（无论是魔法还是非魔法黑暗）中正常视物，可视距离为 120 尺。"
+            },
+            {
+              "type": "item",
+              "name": "精魂感悟 Wisdom of the Spirit",
+              "entry": "你的感知（{@skill 洞悉|PHB}）和魅力（{@skill 威吓|PHB}）检定具有优势。"
+            },
+            {
+              "type": "item",
+              "name": "精魂之语 Word of the Spirit",
+              "entry": "当你说话时，你可以将话语定向 60 尺内你选择的一个生物，使其成为唯一能听到你的生物。或者你可以放大音量，让 600 尺范围内的所有生物都能清楚听到。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "星我之躯",
+      "ENG_name": "Body of the Astral Self",
+      "source": "TCE",
+      "page": 50,
+      "className": "武僧",
+      "classSource": "PHB",
+      "subclassShortName": "星我",
+      "subclassSource": "TCE",
+      "level": 11,
+      "header": 2,
+      "entries": [
+        "当你的星我之臂与星我之容同时存在时，你可以让星我之躯显现（无需动作）。该幽光般的躯体像盔甲一样覆盖你的身体，并与手臂和容貌连接在一起。",
+        "星我之躯存在期间，你获得如下增益：",
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "拨挡能量 Deflect Energy",
+              "entry": "当你受到强酸、冷冻、火焰、力场、闪电或雷鸣伤害时，你可以使用反应来减少受到的伤害。伤害减少值为 {@dice 1d10} + 你的感知调整值（至少减少 1 点）。"
+            },
+            {
+              "type": "item",
+              "name": "猛力攻击 Empowered Arms",
+              "entry": "每个你的回合一次，当你使用星我之臂命中目标时，你可以造成数值等同于你的武艺骰的额外伤害。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "星我觉醒",
+      "ENG_name": "Awakened Astral Self",
+      "source": "TCE",
+      "page": 50,
+      "className": "武僧",
+      "classSource": "PHB",
+      "subclassShortName": "星我",
+      "subclassSource": "TCE",
+      "level": 17,
+      "header": 2,
+      "consumes": {
+        "name": "气",
+        "amount": 5
+      },
+      "entries": [
+        "你与星我的连接已经圆满。以一个附赠动作，你可以消耗 5 点气来同时召唤并觉醒你的星我之臂、星我之容与星我之躯。觉醒状态持续 10 分钟，如果你陷入{@condition 失能|PHB}或死亡，它会提前消失。",
+        "在觉醒状态期间，你额外获得如下增益：",
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "精神护甲 Armor of the Spirit",
+              "entry": "你的 AC 获得 +2 加值。"
+            },
+            {
+              "type": "item",
+              "name": "精魂爆发 Astral Barrage",
+              "entry": "当你执行{@action 攻击|PHB}动作并仅使用星我之臂发动攻击时，你可以在该动作中发动三次攻击，而非通常的两次。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

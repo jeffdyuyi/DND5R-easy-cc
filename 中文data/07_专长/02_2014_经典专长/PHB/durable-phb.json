@@ -1,0 +1,26 @@
+[
+  {
+    "ENG_name": "Durable",
+    "name": "耐性",
+    "source": "PHB",
+    "page": 166,
+    "reprintedAs": [
+      "耐性|XPHB"
+    ],
+    "ability": [
+      {
+        "con": 1
+      }
+    ],
+    "entries": [
+      "由于坚强而持久，你获得下列增益：",
+      {
+        "type": "list",
+        "items": [
+          "当你掷生命骰恢复生命值时，每粒生命骰可恢复的最小生命值等于你体质调整值的两倍（最小为２）。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

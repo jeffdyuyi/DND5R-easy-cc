@@ -1,0 +1,55 @@
+[
+  {
+    "ENG_name": "Bundle of Driko Twigs",
+    "name": "德里科树枝捆",
+    "source": "ObojimaTallGrass",
+    "page": 202,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 1|large}|SneakerProMedium}",
+            "{@font {@style 1|large}|SneakerProMedium}",
+            "{@font {@style 2|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "德里科树的芳香木材是胧忆岛上神庙、圣祠和村庄市场中常见的香气。许多伐木工人在太阳下晒干德里科树枝捆，使夏季的月份散发出美妙的香气。除了几乎在任何村庄都能找到德里科树枝捆外，岛上各处还生长着大量的德里科树。"
+    ],
+    "lootTables": [
+      "海岸高地普通原料|ObojimaTallGrass",
+      "狂风农田普通原料|ObojimaTallGrass",
+      "舒里塔希的赠礼 普通原料|ObojimaTallGrass",
+      "热水大地普通原料|ObojimaTallGrass",
+      "阿伯拉山普通原料|ObojimaTallGrass",
+      "咸水湿地普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/bundle-of-driko-twigs.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    }
+  }
+]

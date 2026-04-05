@@ -1,0 +1,13 @@
+[
+  {
+    "ENG_name": "Champion of Victory",
+    "name": "胜利天尊",
+    "source": "MOT",
+    "page": 49,
+    "type": "Piety Trait",
+    "entries": [
+      "{@i 虔诚值 50+ 伊洛安斯特质}",
+      "选择力量或魅力属性值+2，并且使该属性的上限+2。"
+    ]
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Spirit Sweets",
+    "name": "精魄糖果",
+    "source": "ObojimaTallGrass",
+    "page": 245,
+    "type": "P",
+    "rarity": "uncommon",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "这种苦痛调合对物质生物来说味道和气味都极其糟糕，但对精魂来说却无比美味，许多精魂会为了一口汤剂而付出相当多的代价。挑战等级8或更低的精魄若饮下此药水，会变成快乐的醉汉并持续{@dice 1d4}天。或者，可以将药水倒出，吸引1英里内挑战等级2或更低的精魄。倒出时，药水会持续吸引精魄8小时或被消耗殆尽。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 44|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/spirit-sweets.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1585,
+          "height": 1585
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

@@ -1,0 +1,188 @@
+[
+    {
+        "ENG_name": "Spellcasting",
+        "name": "施法",
+        "source": "XPHB",
+        "page": 138,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "术士",
+        "classSource": "XPHB",
+        "level": 1,
+        "entries": [
+            "你体内涌动的超凡魔法使你能够施展法术。请参阅《玩家手册》中关于 {@variantrule 施法|XPHB} 的规则以及术士法术列表。术士法术的施法关键属性为魅力。你准备一定数量的术士法术，如下表所示。"
+        ]
+    },
+    {
+        "ENG_name": "Innate Sorcery",
+        "name": "先天术法",
+        "source": "XPHB",
+        "page": 139,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "术士",
+        "classSource": "XPHB",
+        "level": 1,
+        "entries": [
+            "以一个 {@variantrule 附赠动作|XPHB}，你可以释放体内涌动的先天魔力。该术法效果持续 1 分钟，直到你处于 {@condition 失能|XPHB} 状态或你以附赠动作将其结束。术法生效期间，你获得以下益处：",
+            {
+                "type": "list",
+                "items": [
+                    "你的术士法术的 {@variantrule 攻击检定|XPHB} 具有 {@variantrule 优势|XPHB}。",
+                    "你的术士法术其法术豁免 DC 提升 1。"
+                ]
+            },
+            "你可以使用此特性的次数等同于你的熟练加值。当你完成一次 {@variantrule 长休|XPHB} 后，你将重获所有消耗掉的使用次数。"
+        ]
+    },
+    {
+        "ENG_name": "Font of Magic",
+        "name": "魔力泉涌",
+        "source": "XPHB",
+        "page": 139,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "术士",
+        "classSource": "XPHB",
+        "level": 2,
+        "entries": [
+            "你可以通过你体内的魔力泉涌创造各种魔法效应。第 2 级起，你拥有 2 点术法点，随着你在术士等级上的提升，你获得的术法点总额见术士类表。你永远无法拥有超过该表所示总额的术法点。",
+            "每当你完成一次 {@variantrule 长休|XPHB} 后，你将重获所有消耗掉的术法点。你可以使用这些点数驱动多种功能：",
+            "{@b 创造法术位。} 以一个 {@variantrule 附赠动作|XPHB}，你可以将术法点转换为法术位。转换所需的术法点见下表：",
+            {
+                "type": "table",
+                "caption": "创造法术位所需术法点",
+                "colLabels": [
+                    "法术位环阶",
+                    "术法点消耗"
+                ],
+                "colStyles": [
+                    "col-6 text-center",
+                    "col-6 text-center"
+                ],
+                "rows": [
+                    [
+                        "1st",
+                        "2"
+                    ],
+                    [
+                        "2nd",
+                        "3"
+                    ],
+                    [
+                        "3rd",
+                        "5"
+                    ],
+                    [
+                        "4th",
+                        "6"
+                    ],
+                    [
+                        "5th",
+                        "7"
+                    ]
+                ]
+            },
+            "{@b 转换法术位。} 以一个 {@variantrule 附赠动作|XPHB}，你可以消耗一个法术位。你获得等同于该法术位环阶数量的术法点。"
+        ]
+    },
+    {
+        "ENG_name": "Metamagic",
+        "name": "超魔法",
+        "source": "XPHB",
+        "page": 140,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "术士",
+        "classSource": "XPHB",
+        "level": 2,
+        "entries": [
+            "第 2 级时，你获得了扭曲法术的能力。你从 {@filter 超魔法选项|optionalfeatures|featuretype=mm} 中习得两项。你在第 10 级和第 17 级时分别再额外习得两项。",
+            "每当你施展一个法术时，除非另有说明，否则你只能使用一个超魔法选项。每当你达到术士等级中获得属性值提升特性的等级时，你可以将原本习得的一项超魔法选项替换为另一项。"
+        ]
+    },
+    {
+        "ENG_name": "Sorcerer Subclass",
+        "name": "术士子职",
+        "source": "XPHB",
+        "page": 140,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "术士",
+        "classSource": "XPHB",
+        "level": 3,
+        "entries": [
+            "你选择一个术士子职。子职是在特定等级授予你特性的专精方案。你将在第 3、6、14、18 级获得子职特性。"
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "XPHB",
+        "page": 140,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "术士",
+        "classSource": "XPHB",
+        "level": 4,
+        "entries": [
+            "你获得 {@feat 属性值提升|XPHB} 专长或其它你满足条件的 {@5etools 专长|feats.html}。你在第 8、12、16 级时再次获得本特性。"
+        ]
+    },
+    {
+        "ENG_name": "Sorcerous Restoration",
+        "name": "术法复苏",
+        "source": "XPHB",
+        "page": 140,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "术士",
+        "classSource": "XPHB",
+        "level": 5,
+        "entries": [
+            "当你完成一次 {@variantrule 短休|XPHB} 时，你可以恢复一定数量的消耗掉的术法点，数值等于你的术士等级的一半（向下取整，至少为 1）。每当你完成一次 {@variantrule 长休|XPHB}，你也将重获此项恢复能力。"
+        ]
+    },
+    {
+        "ENG_name": "Sorcerous Vitality",
+        "name": "术法化身",
+        "source": "XPHB",
+        "page": 140,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "术士",
+        "classSource": "XPHB",
+        "level": 7,
+        "entries": [
+            "当你激活 {@b 先天术法 Innate Sorcery} 时，你可以立刻恢复等同于你术士等级两倍数量的生命值。"
+        ]
+    },
+    {
+        "ENG_name": "Epic Boon",
+        "name": "传奇恩惠",
+        "source": "XPHB",
+        "page": 141,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "术士",
+        "classSource": "XPHB",
+        "level": 19,
+        "entries": [
+            "你获得一项 {@filter 传奇恩惠专长|feats|category=EB} 或其它你满足条件的 {@5etools 专长|feats.html}。"
+        ]
+    },
+    {
+        "ENG_name": "Arcane Apotheosis",
+        "name": "奥术登神",
+        "source": "XPHB",
+        "page": 141,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "术士",
+        "classSource": "XPHB",
+        "level": 20,
+        "entries": [
+            "你已经处于魔法力量的最顶点。在你的 {@b 先天术法 Innate Sorcery} 激活状态期间，你可以在每个回合施展法术时，无消耗地使用一个已经被你习得的超魔法选项。"
+        ]
+    }
+]

@@ -1,0 +1,137 @@
+[
+  {
+    "name": "老佣兵",
+    "ENG_name": "Mercenary Veteran",
+    "source": "SCAG",
+    "page": 152,
+    "skillProficiencies": [
+      {
+        "athletics": true,
+        "persuasion": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "anyGamingSet": 1,
+        "vehicles (land)": true
+      }
+    ],
+    "startingEquipment": [
+      {
+        "_": [
+          {
+            "item": "旅行服装|phb",
+            "displayName": "所属佣兵团的制服"
+          },
+          {
+            "special": "对应你军阶的勋章"
+          },
+          {
+            "equipmentType": "setGaming"
+          },
+          {
+            "item": "小包|phb",
+            "containsValue": 1000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 运动}, {@skill 游说}"
+          },
+          {
+            "ENG_name": "Tool Proficiencies:",
+            "name": "工具熟练",
+            "type": "item",
+            "entry": "一种{@filter 赌具|items|source=phb|miscellaneous=平凡的|type=赌具}, {@filter 载具 (陆运)|items|source=phb;dmg|miscellaneous=平凡的|type=载具（陆运）}"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "你公司的制服（相当于{@item 旅行服装|phb}的质量），你军衔的标志，你选择的一套{@filter 赌具|items|source=phb|miscellaneous=平凡的|type=赌具} ，以及一个装有你上一次工资余额的{@item 小包|phb}（10金币）。"
+          }
+        ]
+      },
+      {
+        "ENG_name": "Feature: Mercenary Life",
+        "name": "特性：佣兵生涯",
+        "type": "entries",
+        "entries": [
+          "你拥有的生活经历，只有曾同样从事过佣兵生涯之人才能体会。你只要看到对方的徽记就能辨认出相应的佣兵团，你还知道该军团的某些情报，包括其指挥官和领导者的名字和声誉，以及最近雇佣他们的是何人。只要能说相应的语言，你在任何地方都能找到这些佣兵混迹的酒馆或宴会地。你总能在冒险中通过佣兵工作找到足够的钱来维持舒适程度的生活（见《{@book 专业实践|PHB|8|专业实践}》 第 8 章\"休整期活动\"下的\"专业实践\"）。"
+        ],
+        "data": {
+          "isFeature": true
+        }
+      },
+      {
+        "ENG_name": "Suggested Characteristics",
+        "name": "建议人物特征",
+        "type": "entries",
+        "entries": [
+          "使用《玩家手册》中 {@background 士兵} 特征表格作为你的基础特征和动机，并在适当的时候修改条目以让其符合你作为佣兵的身份。",
+          "你的牵绊可能与曾经参与其中一同旅行的军团相关，或与其他曾作为同袍之人相关。你所抱持的理想大多维系于你的世界观和为之战斗的动机。"
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "entries": [
+                "作为一名为了金钱而战斗的雇佣兵，你对冒着生命危险去争夺财宝份额已经习以为常。现在，你期待着作为冒险家与敌人作战并收获更大的回报。你的经验让你熟悉了雇佣兵生活的方方面面，你很可能有一些战场上的惊险故事。你可能曾在像Zhentarim或Mintarn的士兵这样的大型组织服役，或者在一个较小的雇佣兵团队中服役，甚至可能不止一个团队。（请参阅\"北方雇佣兵\"边栏，了解一些可能性的集合。）",
+                "现在你在寻找别的东西，可能是为了你所冒风险寻求更大的回报，或者是选择自己活动的自由。不管出于什么原因，你正在离开雇佣兵的生活，但你的技能无疑适合战斗，所以你现在以不同的方式继续战斗。",
+                {
+                  "ENG_name": "Mercenaries of the North",
+                  "name": "北地的佣兵团",
+                  "type": "inset",
+                  "entries": [
+                    "无数佣兵团活跃在剑湾上下及整个北地。大多数都是小型组织，雇佣十几人到上百人，提供安保服务、追猎怪物与强盗，或是为金钱而战。有些组织，比如散塔林会、焰拳佣兵团以及敏塔兰这个国家，拥有成百上千的成员，能为资金充足者提供私人军队。以下介绍几个在北地活动的组织。",
+                    {
+                      "ENG_name": "The Chill",
+                      "name": "寒爪",
+                      "type": "entries",
+                      "entries": [
+                        "寒冷而神秘的潜伏森林是众多哥布林族群的聚居地，它们联合组成了一个名为寒霜的部落。与大多数同类不同，寒霜部落避免袭击北地居民，并保持着相对良好的关系，以便它们能够以佣兵身份受雇。北地很少有城邦愿意与寒霜部落并肩作战，但有几个城邦乐于暗中雇佣寒霜部落来对抗乌斯伽特人、兽人、永恒荒野的巨魔以及其他威胁文明的势力。"
+                      ]
+                    },
+                    {
+                      "ENG_name": "Silent Rain",
+                      "name": "静雨",
+                      "type": "entries",
+                      "entries": [
+                        "寂静雨完全由精灵组成，是一家传奇的雇佣兵公司，总部位于埃弗斯卡。寂静雨不太关心金钱或名声，只接受那些促进精灵事业或涉及摧毁兽人、鬣狗人等的任务。潜在的雇主必须在埃弗斯卡附近留下书面文字（用精灵语），如果感兴趣，寂静雨会派代表前来。"
+                      ]
+                    },
+                    {
+                      "ENG_name": "The Bloodaxes",
+                      "name": "血斧",
+                      "type": "entries",
+                      "entries": [
+                        "血斧佣兵团成立于桑达巴尔，大约两个世纪前，最初是一群因违反摩拉丁·魂铸者的教义而被族群驱逐的矮人。他们开始向北方愿意支付他们的人提供雇佣兵服务。从那时起，这个雇佣兵公司已经扩大了其成员范围到其他种族，但每个成员都是流亡者、罪犯或某种不合群的人，他们在勇敢的血斧中寻找新的开始和新的家庭。"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hasFluff": true,
+    "translator": "不全书",
+    "edition": "classic"
+  }
+]

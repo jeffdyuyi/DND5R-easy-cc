@@ -1,0 +1,58 @@
+[
+  {
+    "ENG_name": "Deep Roots of the Moon",
+    "name": "深根入月",
+    "source": "BookOfEbonTides",
+    "page": 58,
+    "level": 3,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "miles",
+        "amount": 10
+      }
+    },
+    "components": {
+      "v": true,
+      "m": {
+        "text": "一套价值至少50GP每英里的月光石用于完全位于幽影位面的附魔旅路，或一套价值至少500GP每英里的蛋白石用于延伸至其他位面的旅路",
+        "cost": 5000
+      }
+    },
+    "duration": [
+      {
+        "type": "special"
+      }
+    ],
+    "meta": {
+      "ritual": true
+    },
+    "entries": [
+      "你将幽影材质融入一条附魔的妖精旅路，将其路径固定在两点之间，以抵御寻常天气和普通改变，并在幽影潮汐中延展弯曲。这被称为幽影旅路，它会受到正常磨损、拥有破坏工具者的毁灭，以及敌对力量的魔法破坏，例如{@spell 解除魔法}。",
+      "若你愿意，该法术可包含一个作为关键词的祈祷或祭品。此旅路的秘密允许任何知晓并使用它的人为旅路添加一或二种效应，例如在旅路上更快旅行（最高可达通常允许的陆行速度的两倍）或在幽影国度之外锁定和解锁旅路的传送门。那些不知道祈祷、仪式或祭品的人无法从幽影国度之外进入旅路。"
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,268 @@
+{
+  "ENG_name": "Grim Harbinger",
+  "name": "噩兆先驱",
+  "shortName": "噩兆先驱",
+  "source": "CrookedMoon24",
+  "className": "游侠",
+  "classSource": "XPHB",
+  "page": 84,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "3": [
+          "灾祸术|XPHB"
+        ],
+        "5": [
+          "定身类人|XPHB"
+        ],
+        "9": [
+          "恐惧术|XPHB"
+        ],
+        "13": [
+          "绝望侵袭|crookedmoon24"
+        ],
+        "17": [
+          "托梦术|XPHB"
+        ]
+      }
+    }
+  ],
+  "subclassSpells": [
+    "灾祸术|XPHB",
+    "定身类人|XPHB",
+    "恐惧术|XPHB",
+    "绝望侵袭|crookedmoon24",
+    "托梦术|XPHB"
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "Grim Harbinger",
+      "name": "噩兆先驱",
+      "source": "CrookedMoon24",
+      "page": 84,
+      "className": "游侠",
+      "classSource": "XPHB",
+      "subclassShortName": "噩兆先驱",
+      "subclassSource": "crookedmoon24",
+      "level": 3,
+      "entries": [
+        "{@i 以死兆之名，封定命运}",
+        "噩兆先驱游走于死亡曾触及之地，既是死者的守望者，也是生命将尽之人的末日预兆。他们身边的精魂守卫名为噩兆，其出现预示着死亡，是他们冷酷而永恒的同伴，协助履行他们共同的庄严职责。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "噩兆先驱法术|游侠|XPHB|噩兆先驱|crookedmoon24|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "死兆星闪|游侠|XPHB|噩兆先驱|crookedmoon24|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Grim Harbinger Spells",
+      "name": "噩兆先驱法术",
+      "source": "CrookedMoon24",
+      "page": 84,
+      "className": "游侠",
+      "classSource": "XPHB",
+      "subclassShortName": "噩兆先驱",
+      "subclassSource": "crookedmoon24",
+      "level": 3,
+      "entries": [
+        "当你达到噩兆先驱法术表格中指定的游侠等级时，你此后将始终准备着列出的法术。",
+        {
+          "type": "table",
+          "caption": "噩兆先驱法术",
+          "colLabels": [
+            "游侠等级",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "3rd",
+              "{@spell 灾祸术|XPHB}"
+            ],
+            [
+              "5th",
+              "{@spell 定身类人|XPHB}"
+            ],
+            [
+              "9th",
+              "{@spell 恐惧术|XPHB}"
+            ],
+            [
+              "13th",
+              "{@spell 绝望侵袭|crookedmoon24}"
+            ],
+            [
+              "17th",
+              "{@spell 托梦术|XPHB}"
+            ]
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Ranger/Grim%20Harbinger%20Spells.webp"
+    },
+    {
+      "ENG_name": "Omen of Doom",
+      "name": "死兆星闪",
+      "source": "CrookedMoon24",
+      "page": 85,
+      "className": "游侠",
+      "classSource": "XPHB",
+      "subclassShortName": "噩兆先驱",
+      "subclassSource": "crookedmoon24",
+      "level": 3,
+      "entries": [
+        "作为{@variantrule 附赠动作|XPHB}，你可以选择周边90尺范围内一个你可见的生物，魔法般地封定其末日，持续1小时。每回合一次，当你以攻击命中被封定的目标时，它额外受到{@damage 1d6}暗蚀伤害。",
+        "此外，一个名为{@creature 噩兆|crookedmoon24}的幽体生物出现在目标周边30尺范围内的一处未占据空间内。噩兆通常以幽灵般的黑色猎犬的形象现身，但你可以选择与其数据卡相符的其他外貌。",
+        "噩兆对你和你的盟友{@variantrule 友好【态度】|XPHB|友好}，且遵循你的命令。它会在你死亡，当被封定的生物死亡，当其{@variantrule 生命值|XPHB}降至0，或当你再次使用此特性时消失。",
+        "你能使用本特性的次数等于你的感知调整值（至少为1次），完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}后，你重获所有已消耗的使用次数。你也可以消耗一枚法术位（无需动作）来恢复该特性的使用次数。",
+        {
+          "ENG_name": "The Grim in Combat",
+          "name": "战斗中的噩兆",
+          "type": "entries",
+          "entries": [
+            "战斗中，噩兆会在你的回合中行动。它能自主地移动或使用其{@variantrule 反应|XPHB}，但除非你使用{@variantrule 附赠动作|XPHB}命令它执行其数据卡中的动作或其它动作，它只会执行{@action 回避|XPHB}动作。你可以作为使用死兆星闪特性这一{@variantrule 附赠动作|XPHB}的一部分来命令它。当你执行{@action 攻击|XPHB}动作时，你可以放弃一次攻击，命令噩兆执行死兆撕裂动作。如果你陷入{@condition 失能|XPHB}状态，噩兆可以自主行动，且不再受限于只执行{@action 回避|XPHB}动作。"
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Ranger/Omen%20of%20Doom.webp"
+    },
+    {
+      "ENG_name": "Harbinger of Doom",
+      "name": "末日使者",
+      "source": "CrookedMoon24",
+      "page": 85,
+      "className": "游侠",
+      "classSource": "XPHB",
+      "subclassShortName": "噩兆先驱",
+      "subclassSource": "crookedmoon24",
+      "level": 7,
+      "header": 2,
+      "entries": [
+        "你对末日的控制日趋强大，获得以下增益。",
+        {
+          "ENG_name": "Graveyard Hunter",
+          "name": "荒坟猎手",
+          "type": "entries",
+          "entries": [
+            "该{@creature 噩兆|crookedmoon24|噩兆的}死兆撕裂动作在命中时额外造成{@damage 1d6}暗蚀伤害。"
+          ]
+        },
+        {
+          "ENG_name": "Mortal Reminder",
+          "name": "凡尘警示",
+          "type": "entries",
+          "entries": [
+            "当你对被你的{@subclassFeature 死兆星闪|游侠|XPHB|噩兆先驱|crookedmoon24|3|crookedmoon24}封定厄运的生物造成伤害时，你可以将伤害类型改为暗蚀。"
+          ]
+        },
+        {
+          "ENG_name": "Mounting Dread",
+          "name": "恐惧渐生",
+          "type": "entries",
+          "entries": [
+            "由你或噩兆造成的暗蚀伤害忽略{@variantrule 抗性|XPHB}。"
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Ranger/Harbinger%20of%20Doom.webp"
+    },
+    {
+      "ENG_name": "Grave Bond",
+      "name": "墓契相连",
+      "source": "CrookedMoon24",
+      "page": 85,
+      "className": "游侠",
+      "classSource": "XPHB",
+      "subclassShortName": "噩兆先驱",
+      "subclassSource": "crookedmoon24",
+      "level": 11,
+      "resist": [
+        "暗蚀"
+      ],
+      "header": 2,
+      "entries": [
+        "你从墓穴中汲取更深层的力量。你获得以下增益。",
+        {
+          "ENG_name": "Ghastly Hound",
+          "name": "阴森猎犬",
+          "type": "entries",
+          "entries": [
+            "噩兆获得{@variantrule 抗性|XPHB}对钝击、穿刺和挥砍伤害的抗性。"
+          ]
+        },
+        {
+          "ENG_name": "Grave Fortitude",
+          "name": "墓穴坚毅",
+          "type": "entries",
+          "entries": [
+            "你获得对暗蚀伤害的{@variantrule 抗性|XPHB}。"
+          ]
+        },
+        {
+          "ENG_name": "Inescapable Fate",
+          "name": "宿命难逃",
+          "type": "entries",
+          "entries": [
+            "当你的{@subclassFeature 死兆星闪|游侠|XPHB|噩兆先驱|crookedmoon24|3|crookedmoon24}目标成功于一次豁免检定时，你可以使用{@variantrule 反应|XPHB}迫使其以{@variantrule 劣势|XPHB}重投该豁免，并使用新的掷骰结果。一旦你通过此增益导致一次豁免失败，在当前{@subclassFeature 死兆星闪|游侠|XPHB|噩兆先驱|crookedmoon24|3|crookedmoon24}结束之前，你无法再次使用它。"
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Ranger/Grave%20Bond.webp"
+    },
+    {
+      "ENG_name": "Sealed Fate",
+      "name": "宿命已定",
+      "source": "CrookedMoon24",
+      "page": 85,
+      "className": "游侠",
+      "classSource": "XPHB",
+      "subclassShortName": "噩兆先驱",
+      "subclassSource": "crookedmoon24",
+      "level": 15,
+      "header": 2,
+      "entries": [
+        "你的{@subclassFeature 死兆星闪|游侠|XPHB|噩兆先驱|crookedmoon24|3|crookedmoon24}力量达到巅峰，当它处于激活状态时，为你带来以下增益。",
+        {
+          "ENG_name": "Jaws of Doom",
+          "name": "毁灭之颚",
+          "type": "entries",
+          "entries": [
+            "该{@creature 噩兆|crookedmoon24|噩兆的}的死兆撕裂动作造成额外{@damage 1d6}暗蚀伤害（总计{@damage 2d6}额外伤害）。"
+          ]
+        },
+        {
+          "ENG_name": "Marked for Death",
+          "name": "终亡印记",
+          "type": "entries",
+          "entries": [
+            "当你使用{@subclassFeature 死兆星闪|游侠|XPHB|噩兆先驱|crookedmoon24|3|crookedmoon24}时，你可以强迫目标进行一次魅力豁免检定对抗你的法术豁免DC。若豁免失败，在当前{@subclassFeature 死兆星闪|游侠|XPHB|噩兆先驱|crookedmoon24|3|crookedmoon24}结束前，目标对噩兆造成的伤害以及你通过{@subclassFeature 死兆星闪|游侠|XPHB|噩兆先驱|crookedmoon24|3|crookedmoon24}造成的额外伤害具有{@variantrule 易伤|XPHB}。该增益一经使用，则直至完成一次{@variantrule 长休|XPHB}前无法再次使用。你也可以通过消耗一个4环或更高的法术位来复原该增益的使用次数（无需动作）。"
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Ranger/Sealed%20Fate.webp"
+    }
+  ],
+  "fluff": {
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Subclasses/Ranger_Grim_Harbinger.webp"
+        },
+        "credit": "Jo Cordisco",
+        "width": 1011,
+        "height": 1200
+      }
+    ]
+  },
+  "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclasses/Grim%20Harbringer.webp"
+}

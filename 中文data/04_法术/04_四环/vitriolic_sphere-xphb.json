@@ -1,0 +1,87 @@
+[
+  {
+    "ENG_name": "Vitriolic Sphere",
+    "name": "浓酸球",
+    "source": "XPHB",
+    "page": 337,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "UtHftLH"
+    ],
+    "level": 4,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 150
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一滴胆汁"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你指向施法距离内一点，一颗发光的直径 1 尺的酸液球飞向那个位置，随后爆炸，波及 20 尺半径的{@variantrule 球状 [效应区域]|XPHB|球状}区域。在该区域中的每名生物进行一次敏捷豁免。豁免失败的生物不仅将受到{@damage 10d4}点强酸伤害，其下个回合结束时还将再受到{@damage 5d4}点强酸伤害。若豁免成功，该生物只受到初始伤害的一半伤害。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "使用的法术位每比四环高一环，此法术的初始伤害便增加{@scaledamage 10d4|4-9|2d4}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "acid"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "areaTags": [
+      "S"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/XPHB/Vitriolic Sphere.webp"
+          },
+          "credit": "Ignatius Budi",
+          "width": 2225,
+          "height": 1440
+        }
+      ]
+    },
+    "classes": [
+      "术士",
+      "法师"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "敏捷"
+    ],
+    "display_damageInflict": [
+      "强酸"
+    ]
+  }
+]

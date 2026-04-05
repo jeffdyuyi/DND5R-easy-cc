@@ -1,0 +1,26 @@
+[
+  {
+    "name": "镣铐",
+    "ENG_name": "Manacles",
+    "source": "PHB",
+    "page": 152,
+    "type": "G",
+    "rarity": "none",
+    "weight": 6,
+    "value": 200,
+    "entries": [
+      "这些金属束具可以困住一只小型或中型体型的生物。解开镣铐必须成功通过一次{@dc 20}的敏捷检定。破坏镣铐则必须成功通过一次{@dc 20}的力量检定。每套镣铐配有一把对应的钥匙。不用钥匙时，一个具有{@item 盗贼工具|PHB}熟练项的生物可以通过一次成功的{@dc 15}敏捷检定撬开镣铐的锁。镣铐具有15点生命值。"
+    ],
+    "basicRules": true,
+    "referenceSources": [
+      "CoS",
+      "GoS",
+      "DSotDQ",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "镣铐|XPHB"
+    ],
+    "srd": true
+  }
+]

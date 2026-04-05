@@ -1,0 +1,65 @@
+[
+  {
+    "ENG_name": "Shadow Step",
+    "name": "暗影步",
+    "source": "BookOfEbonTides",
+    "page": 0,
+    "level": 4,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你可以在两个黑暗区域之间开启一个临时传送门，使你能够从一个这样的区域移动到另一个区域，而无需穿越中间的空间。如果你在一个微光光照或黑暗术范围内的区域开始你的回合，你可以开启一个通往范围内另一个微光光照或黑暗术区域的传送门，并将自己传送到该地点。这样做会消耗你该回合的移动力，无论移动的距离有多远。你可以在{@condition 倒地}状态下使用暗影步。以这种方式移动不会引发借机攻击。"
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    },
+    "conditionInflict": [
+      "倒地"
+    ]
+  }
+]

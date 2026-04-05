@@ -1,0 +1,20 @@
+[
+  {
+    "ENG_name": "Stonky's ring",
+    "name": "斯通基戒指",
+    "source": "CM",
+    "page": 132,
+    "type": "RG|DMG",
+    "rarity": "unknown (magic)",
+    "reqAttune": true,
+    "entries": [
+      "佩戴这枚戒指期间，你可以随意施放{@spell 心灵遥控}法术，但只能以未被着装或携带的物件为目标。",
+      "任何与戒指协调一致的角色都会获得对斯托基创造物的控制权，尽管{@creature 掠行体|cm|skitterwidgets}会忽略距离它们超过30尺远时发出的命令。"
+    ],
+    "attachedSpells": {
+      "will": [
+        "心灵遥控"
+      ]
+    }
+  }
+]

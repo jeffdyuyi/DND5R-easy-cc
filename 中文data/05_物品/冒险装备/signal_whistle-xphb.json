@@ -1,0 +1,17 @@
+[
+  {
+    "name": "信号笛",
+    "ENG_name": "Signal Whistle",
+    "source": "XPHB",
+    "page": 228,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "value": 5,
+    "entries": [
+      "以一个{@action 操作|XPHB}动作，你可以吹响一支信号笛，并使信号笛发出 600 尺外都可以听见的响声。"
+    ],
+    "basicRules2024": true,
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

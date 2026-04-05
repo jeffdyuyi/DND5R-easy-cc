@@ -1,0 +1,13 @@
+{
+  "ENG_name": "Eldritch Mind",
+  "name": "魔能意志",
+  "source": "XPHB",
+  "page": 155,
+  "featureType": [
+    "EI"
+  ],
+  "entries": [
+    "你为维持{@variantrule 优势|XPHB}的所做的体质豁免具有{@status 专注|XPHB}。"
+  ],
+  "translator": "不全书"
+}

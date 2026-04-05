@@ -1,0 +1,71 @@
+[
+  {
+    "ENG_name": "Wrathful Smite",
+    "name": "激愤斩",
+    "source": "XPHB",
+    "page": 343,
+    "level": 1,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作",
+        "condition": "当你使用近战武器或{@variantrule 徒手打击|XPHB}命中一个生物后立即执行"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "被该次攻击检定命中的目标会在此次攻击中额外受到{@damage 1d6}点暗蚀伤害，并且目标必须通过一次感知豁免检定，否则直到法术结束为止陷入{@condition 恐慌|XPHB}状态。在自己的每回合结束时，被{@condition 恐慌|XPHB}的目标可以重复此豁免，成功则结束该法术对自身的影响。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "使用的法术位每比一环高一环，此法术的伤害就提高{@scaledamage 1d6|1-9|1d6}点。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "necrotic"
+    ],
+    "conditionInflict": [
+      "恐慌"
+    ],
+    "savingThrow": [
+      "wisdom"
+    ],
+    "miscTags": [
+      "AAD"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "圣武士"
+    ],
+    "display_school": "死灵系",
+    "display_savingThrow": [
+      "感知"
+    ],
+    "display_damageInflict": [
+      "死灵"
+    ]
+  }
+]

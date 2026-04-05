@@ -1,0 +1,77 @@
+[
+  {
+    "ENG_name": "Blindness/Deafness",
+    "name": "目盲术/耳聋术",
+    "source": "XPHB",
+    "page": 248,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "UtHftLH"
+    ],
+    "level": 2,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "处于你施法范围内的一个你可见的生物必须进行一次体质豁免，豁免失败者在法术持续期间陷入{@condition 目盲|XPHB}或{@condition 耳聋|XPHB}状态（由你选择）。目标可以在其每个回合结束时重复此豁免，直至豁免成功时结束自己身上的效应。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "使用的法术位每比二环高一环，你便能额外指定一个生物作为法术的目标。"
+        ]
+      }
+    ],
+    "conditionInflict": [
+      "目盲",
+      "耳聋"
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "miscTags": [
+      "SCT",
+      "SGT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "classes": [
+      "吟游诗人",
+      "牧师",
+      "术士",
+      "法师"
+    ],
+    "display_school": "变化系",
+    "display_savingThrow": [
+      "体质"
+    ]
+  }
+]

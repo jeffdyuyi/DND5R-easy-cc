@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Aged Goodberry Wine",
+    "name": "神莓陈酿",
+    "source": "GriffonsSaddlebag2",
+    "page": 33,
+    "type": "P",
+    "tier": "次要",
+    "rarity": "rare",
+    "charges": 8,
+    "entries": [
+      "这瓶浓醇粘稠的红色红酒由魔法神莓和牡丹以家传的独门秘方酿成，其工艺过程如同奇迹。其口味以果味和花香为主，伴有蜂蜜的香甜和微风的清新，令饮者活力焕发。瓶中含有8剂如糖浆般的药水，每剂需要花费1分钟来饮用。",
+      "当你饮用此红酒时，你可以如同完成了一次短休般消耗任意数量的生命骰来恢复生命值。你每以此法消耗一颗生命骰，便在原基础上额外恢复1生命值。此红酒提供的营养足以满足一个生物一整天的营养需求。此外，在接下来的一小时内，每当你即将进行一次感知或魅力的豁免检定或属性检定时，你都可以掷{@dice 1d4}并加入到本次骰值的总和中。"
+    ],
+    "lootTables": [
+      "魔法物品表C|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Aged--Goodberry-Wine.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

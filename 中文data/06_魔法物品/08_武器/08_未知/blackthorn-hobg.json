@@ -1,0 +1,22 @@
+[
+  {
+    "name": "黑棘棍",
+    "source": "HoBG",
+    "page": 0,
+    "baseItem": "短棒|phb",
+    "type": "M",
+    "rarity": "极珍稀",
+    "reqAttune": true,
+    "weight": 2,
+    "weaponCategory": "简易",
+    "property": [
+      "L"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "B",
+    "entries": [
+      "当你施放橡棍术在这把武器上时，它会长出一层锋利的黑色荆棘。荆棘会刺破你的手掌并使其出血，造成{@dice 1d4}点穿刺伤害。此外，荆棘对任何被此武器击中的目标造成额外的{@dice 1d4}点穿刺伤害。橡棍术结束时，荆棘会消失。"
+    ],
+    "ENG_name": "Blackthorn"
+  }
+]

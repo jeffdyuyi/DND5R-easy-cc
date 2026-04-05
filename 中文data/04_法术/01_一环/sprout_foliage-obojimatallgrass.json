@@ -1,0 +1,64 @@
+[
+  {
+    "ENG_name": "Sprout Foliage",
+    "name": "灵植伪装",
+    "source": "ObojimaTallGrass",
+    "page": 189,
+    "level": 1,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "花种子"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你生长并迅速长出茂盛的枝叶，覆盖你的整个身体。施放此法术时，你可以选择枝叶是否具有其他特性，例如花朵或浆果。",
+      "当处于{@condition 倒地}状态且静止不动时，你与普通灌木丛无异。如果一个生物没有观察到你的移动或动作，它必须进行一次智力（{@skill 调查}）检定对抗你的法术豁免DC，才能辨别出你不是灌木丛。若要让已经识破你真面目的生物再次被迷惑，你必须在该生物看不见你时采取{@action 躲藏}动作。",
+      "在持续时间内，你可以使用你的动作创造并猛投一颗松果、浆果或花芽。当你这样做时，对30尺内的一个生物进行一次远程法术攻击。命中时，目标受到等于{@dice 1d6} + 你的施法属性调整值的钝击伤害。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        }
+      ]
+    },
+    "spellAttack": [
+      "R"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Custom/Spells/Sprout%20Foliage.webp"
+  }
+]

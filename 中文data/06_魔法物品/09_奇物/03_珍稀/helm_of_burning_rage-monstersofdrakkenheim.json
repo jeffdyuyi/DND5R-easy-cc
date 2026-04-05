@@ -1,0 +1,78 @@
+[
+  {
+    "ENG_name": "Helm of Burning Rage",
+    "name": "爆燃狂怒头盔",
+    "source": "MonstersOfDrakkenheim",
+    "page": 388,
+    "rarity": "rare",
+    "reqAttune": "由野蛮人使用",
+    "reqAttuneTags": [
+      {
+        "class": "野蛮人"
+      }
+    ],
+    "wondrous": true,
+    "entries": [
+      "这顶头盔是在用元素粉尘点燃的火焰中锻造而成，使用了构装体的盘子和红龙的心。这些盘子随后浸泡在元素生物流体中，然后安装了一颗蕴含火巨人能量的精魄宝石。",
+      "当你的狂暴状态处于激活时，你获得对火焰伤害的{@variantrule 抗性|XPHB}。此外，每回合一次，当你处于狂暴状态时，若你用受益于鲁莽攻击特性的近战武器命中一个目标，则该目标陷入{@condition 燃烧|MonstersOfDrakkenheim}状态（{@dice 2d4}火焰）。",
+      {
+        "ENG_name": "Crafting",
+        "name": "手作",
+        "type": "entries",
+        "entries": [
+          "制作爆燃狂怒头盔需要一个珍稀工坊和以下珍稀成分：",
+          {
+            "type": "list",
+            "items": [
+              {
+                "ENG_name": "[Animus]",
+                "name": "[精魄]",
+                "type": "item",
+                "entries": [
+                  "火巨人的精魄"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Dust]",
+                "name": "[粉尘]",
+                "type": "item",
+                "entries": [
+                  "元素粉尘"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Fluid]",
+                "name": "[流体]",
+                "type": "item",
+                "entries": [
+                  "元素生物流体"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Hide]",
+                "name": "[表皮]",
+                "type": "item",
+                "entries": [
+                  "盘子"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Organ]",
+                "name": "[器官]",
+                "type": "item",
+                "entries": [
+                  "红龙的心脏"
+                ],
+                "nameDot": false
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

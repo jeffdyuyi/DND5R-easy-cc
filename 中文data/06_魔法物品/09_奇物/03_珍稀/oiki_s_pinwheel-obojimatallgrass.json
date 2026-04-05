@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Oiki's Pinwheel",
+    "name": "Oiki的纸风车",
+    "source": "ObojimaTallGrass",
+    "page": 173,
+    "rarity": "rare",
+    "wondrous": true,
+    "entries": [
+      "作为一个动作，Oiki的纸风车可以被旋转并放置在地面上。每个在纸风车120尺内且能看见它的敌对生物必须成功通过DC 15的感知豁免检定，否则将被{@condition 震慑}直到纸风车停止旋转。纸风车会旋转1分钟，或者在强风中无限期旋转。受影响的生物可以在每个回合结束时重复豁免检定，成功则终止对其自身的效应。",
+      "一旦Oiki的纸风车停止旋转，它的魔法会转移到同一存在平面上的另一个随机纸风车上。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/oikis-pinwheel.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 2689,
+          "height": 2689
+        }
+      ]
+    }
+  }
+]

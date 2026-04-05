@@ -1,0 +1,30 @@
+[
+  {
+    "name": "激光步枪",
+    "ENG_name": "Laser Rifle",
+    "source": "XDMG",
+    "page": 73,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "none",
+    "weight": 7,
+    "valueRarity": "极珍稀",
+    "weaponCategory": "martial",
+    "property": [
+      "AF|XDMG",
+      "RLD|XDMG",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "缓速|XPHB"
+    ],
+    "dmg1": "3d8",
+    "dmgType": "R",
+    "range": "100/300",
+    "ammoType": "能量电池|XDMG",
+    "age": "未来",
+    "firearm": true,
+    "reload": 30,
+    "weapon": true
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Brutal Macuahuitl",
+    "name": "凶蛮黑曜石锯剑",
+    "source": "GriffonsSaddlebag2",
+    "page": 52,
+    "baseItem": "长剑|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "uncommon",
+    "weight": 3,
+    "weaponCategory": "军用",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "S",
+    "dmg2": "1d10",
+    "entries": [
+      "这把部落剑的坚固木质框架上镶嵌着黑曜石碎片，使用它进行攻击时可以选择造成钝击或挥砍伤害（由你选择）。此外，这把剑还经过了战争祭司的无数次血祭。当你用这把魔化武器对一个生物进行攻击检定时若掷出20，该生物就会被施加终亡印记直到你的下一回合开始。被标记的生物无法恢复生命值，且当标记结束时，该生物受到{@damage 1d8}暗蚀伤害。"
+    ],
+    "lootTables": [
+      "魔法物品表 F2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Brutal-Macuahuitl.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

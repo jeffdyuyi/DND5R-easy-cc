@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Elemental Gem, Red Corundum",
+    "name": "元素宝石，红刚玉",
+    "source": "DMG",
+    "page": 167,
+    "srd": true,
+    "referenceSources": [
+      "LK"
+    ],
+    "reprintedAs": [
+      "元素宝石，红刚玉|XDMG"
+    ],
+    "tier": "次要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这种宝石蕴藏着元素的能量。当你用一个动作打碎宝石时，会召唤出一个{@creature 火元素}，如同你施放了{@spell 咒唤元素}法术一样，宝石的魔力也将消失。"
+    ],
+    "attachedSpells": {
+      "limited": {
+        "1": [
+          "咒唤元素"
+        ]
+      }
+    },
+    "valueReference": 400,
+    "type": "W"
+  }
+]

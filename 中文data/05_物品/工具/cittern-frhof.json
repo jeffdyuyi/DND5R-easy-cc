@@ -1,0 +1,15 @@
+[
+  {
+    "name": "西特琴",
+    "ENG_name": "Cittern",
+    "source": "FRHoF",
+    "page": 132,
+    "type": "INS|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 6500,
+    "fluff": {},
+    "hasFluff": true,
+    "hasFluffImages": true
+  }
+]

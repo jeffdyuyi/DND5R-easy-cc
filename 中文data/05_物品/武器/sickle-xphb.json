@@ -1,0 +1,40 @@
+[
+  {
+    "name": "镰刀",
+    "ENG_name": "Sickle",
+    "source": "XPHB",
+    "page": 215,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 100,
+    "weaponCategory": "simple",
+    "property": [
+      "L|XPHB"
+    ],
+    "mastery": [
+      "迅击|XPHB"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "S",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XPHB/Sickle.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 234,
+          "height": 431
+        }
+      ]
+    },
+    "basicRules2024": true,
+    "hasFluffImages": true,
+    "srd52": true,
+    "weapon": true
+  }
+]

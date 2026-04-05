@@ -1,0 +1,67 @@
+[
+  {
+    "ENG_name": "Forcecage",
+    "name": "力场监牢",
+    "source": "XPHB",
+    "page": 276,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 7,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 100
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "价值 1500+GP 的红宝石尘，作为法术耗材",
+        "cost": 150000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "一个固定、{@condition 隐形|XPHB}、由魔法力场构成的{@variantrule 立方 [效应区域]|XPHB|立方}形监狱在你指定范围内的一处地点突然出现。你可以选择将监狱构筑为笼状或盒状。",
+      "笼状监牢为各边长至多 20 尺的立方体，其墙体由 1/2 寸粗的力场栅栏杆组成，每根杆子之间相距 1/2 寸。盒状监牢为各边长至多 10 尺的立方体，其墙体为由力场墙密封，并阻隔一切物质进出，也会阻挡任何从区域中向外界施展或从外界向区域中施展的法术。",
+      "施展该法术时，所有完全在法术区域内的生物将被牢笼困住。部分处于区域内或者体型比区域更大的生物则被从区域中心向外推开，直至其完全离开该区域。",
+      "牢笼内的生物不能以非魔法的手段离开。如果该生物试图使用传送或跨位面旅行来离开牢笼，则其必须先进行一次魅力豁免。豁免成功则该生物可以用该魔法离开牢笼。豁免失败者将无法以此离开牢笼并浪费掉该法术或效应。该牢笼同时延伸至以太位面从而屏蔽途经以太位面的旅行。",
+      "该法术不能被{@spell 解除魔法|XPHB}解除。"
+    ],
+    "savingThrow": [
+      "charisma"
+    ],
+    "areaTags": [
+      "C"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "魅力"
+    ]
+  }
+]

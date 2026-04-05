@@ -1,0 +1,36 @@
+[
+  {
+    "ENG_name": "Arrow-Catching Shield",
+    "name": "吸矢盾",
+    "source": "DMG",
+    "page": 152,
+    "srd": true,
+    "referenceSources": [
+      "HotDQ",
+      "TftYP-AtG"
+    ],
+    "reprintedAs": [
+      "吸矢盾|XDMG"
+    ],
+    "type": "S",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 6,
+    "ac": 2,
+    "bonusAc": "+2",
+    "entries": [
+      "持用这面盾牌期间，你对抗远程攻击的AC具有+2加值。该加值将加在盾牌通常提供的AC加值上。此外，当又攻击者向你周围5尺范围内的目标发动远程攻击时，你可以使用反应以替代该目标成为此次攻击的目标。"
+    ],
+    "lootTables": [
+      "魔法物品表G"
+    ],
+    "translator": "不全书",
+    "valueReference": 4000,
+    "otherSources": [
+      {
+        "source": "XDMG"
+      }
+    ]
+  }
+]

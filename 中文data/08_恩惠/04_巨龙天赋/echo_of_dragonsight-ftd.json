@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Echo of Dragonsight",
+    "name": "龙视回响",
+    "source": "FTD",
+    "page": 28,
+    "type": "Draconic Gift",
+    "rarity": "very rare",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "ritual": [
+              "异界探知"
+            ]
+          }
+        }
+      }
+    ],
+    "entries": [
+      "你已经开始将你的意识扩展到你所处的单一物质位面世界之外。",
+      "你可以仪式施放法术{@spell 异界探知}。你接触的实体是另一个物质位面的龙，所以它对你的世界可能所知有限。另外，这条龙是这份赠礼来源的龙的回响，这可能会影响它对你的态度和行为。"
+    ]
+  }
+]

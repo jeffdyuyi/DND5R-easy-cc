@@ -1,0 +1,36 @@
+[
+  {
+    "ENG_name": "Spiritwalker Breastplate",
+    "name": "魂行胸甲",
+    "source": "GriffonsSaddlebag2",
+    "page": 168,
+    "baseItem": "胸甲|phb",
+    "type": "MA",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 20,
+    "ac": 14,
+    "entries": [
+      "在你穿着这件护甲期间，当你的生命值降至0时，你的灵魂会离开身体并显现为一个漂浮的、幽灵般的形象。灵魂会持续存在1分钟或直到你恢复意识，此时灵魂会返回你的身体。在此期间，你不会因受到伤害而计失败的死亡豁免，且只有当你在一回合内受到的总伤害大于等于你的生命值上限时才会死亡。在这种状态下，你仍需在每个自己回合开始时进行死亡豁免；但是，每当你的回合开始时，你的灵魂每距离实体5尺，成功进行死亡豁免所需的数值就增加1。",
+      "你的灵魂与实体相连，任何时候都不能距离实体超过30尺。灵魂拥有你的感官，具有30尺飞行速度，且可以悬浮。在你的回合中，它只能移动和采取{@action 协助}动作。灵魂免疫所有伤害且为虚体，但任何会驱散亡灵的效应都会自动将你的灵魂送回实体并提前结束该效应。",
+      "这项属性一经使用，则其直至次日黎明前都无法再次使用。"
+    ],
+    "lootTables": [
+      "魔法物品表 G1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Spiritwalker-Breastplate.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

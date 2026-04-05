@@ -1,0 +1,18 @@
+{
+  "ENG_name": "Dodge",
+  "name": "回避",
+  "source": "XPHB",
+  "page": 366,
+  "srd52": true,
+  "time": [
+    {
+      "number": 1,
+      "unit": "动作"
+    }
+  ],
+  "entries": [
+    "执行{@variantrule 劣势|XPHB}动作时，你将获得以下增益：直至你的下一回合开始，任何以你为目标的攻击检定具有劣势，除非你看不见攻击者，且你进行的敏捷{@variantrule 豁免检定|XPHB|豁免检定}具有{@variantrule 优势|XPHB}。",
+    "如果你陷入{@condition 失能|XPHB}或你的{@variantrule 速度|XPHB}降至了 0，你会失去这些增益。"
+  ],
+  "translator": "不全书"
+}

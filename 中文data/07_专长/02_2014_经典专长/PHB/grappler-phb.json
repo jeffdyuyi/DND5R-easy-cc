@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Grappler",
+    "name": "擒抱者",
+    "source": "PHB",
+    "page": 167,
+    "srd": true,
+    "reprintedAs": [
+      "擒抱者|XPHB"
+    ],
+    "prerequisite": [
+      {
+        "ability": [
+          {
+            "str": 13
+          }
+        ]
+      }
+    ],
+    "entries": [
+      "着重磨练过如何保持近距离擒抱的技巧后，你获得下列增益：",
+      {
+        "type": "list",
+        "items": [
+          "你对被你擒抱的生物所发动的攻击检定具有优势。",
+          "你可以用动作尝试压制被你施加{@condition 受擒}的一个生物。此时，你必须进行另外一次擒抱检定。检定成功，则你与被擒抱者同时陷入{@condition 束缚}，直至擒抱终止。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

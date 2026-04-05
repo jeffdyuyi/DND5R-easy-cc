@@ -1,0 +1,35 @@
+[
+  {
+    "ENG_name": "+1 Breastplate",
+    "name": "+1 胸甲",
+    "source": "DMG",
+    "page": 152,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TFV",
+      "HotB"
+    ],
+    "edition": "one",
+    "type": "MA|XPHB",
+    "rarity": "rare",
+    "weight": 20,
+    "value": 40000,
+    "ac": 14,
+    "armor": true,
+    "hasFluffImages": true,
+    "namePrefix": "+1 ",
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "+1 护甲|XDMG"
+    ],
+    "tier": "主要",
+    "bonusAc": "+1",
+    "entries": [
+      "穿戴这件护甲时，你的AC有{=bonusAc}的加值。"
+    ],
+    "_isVariant": true,
+    "valueReference": 4000
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "ENG_name": "Leather Golem Armor",
+    "name": "魔像皮甲",
+    "source": "LLK",
+    "page": 55,
+    "baseItem": "皮甲|PHB",
+    "type": "LA",
+    "resist": [
+      "闪电"
+    ],
+    "rarity": "rare",
+    "reqAttune": true,
+    "curse": true,
+    "weight": 10,
+    "ac": 11,
+    "bonusAc": "+1",
+    "bonusSavingThrow": "+1",
+    "entries": [
+      "奇怪的仪式将一个血肉魔像的身体重新利用成了这件部分有自我意识的皮革装甲。穿戴这件装甲时，你获得对AC和对抗法术以及其他魔法效果的豁免检定的+1加值。除此之外，你还会获得以下特性：",
+      {
+        "type": "list",
+        "items": [
+          {
+            "ENG_name": "Immutable Form",
+            "name": "不变形态",
+            "type": "entries",
+            "entries": [
+              "你对任何会改变你形态的法术或效果免疫。"
+            ]
+          },
+          {
+            "ENG_name": "Lightning Absorption",
+            "name": "闪电吸收",
+            "type": "entries",
+            "entries": [
+              "你对闪电伤害获得抗性。每当你受到闪电伤害时，你获得5点临时生命值。"
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Curse",
+        "name": "诅咒",
+        "type": "entries",
+        "entries": [
+          "这件盔甲被诅咒了，与之协调会使诅咒延续到你身上。除非使用{@spell 移除诅咒}法术或类似的魔法解除诅咒，否则你不愿意脱下这件盔甲。此外，当你穿戴这件被诅咒的盔甲时，你会获得以下属性：",
+          {
+            "type": "list",
+            "items": [
+              {
+                "ENG_name": "Aversion of Fire",
+                "name": "厌火",
+                "type": "entries",
+                "entries": [
+                  "如果你受到火焰伤害，直到你的下一个回合结束，你在攻击检定和属性检定上将会有不利。"
+                ]
+              },
+              {
+                "ENG_name": "Berserk",
+                "name": "失心狂怒",
+                "type": "entries",
+                "entries": [
+                  "每当你被造成重击时，掷一个{@dice d6}。如果掷出6，铠甲会使你进入狂暴状态。在你狂暴状态的每个回合，你攻击你能看到的最近的生物。如果没有生物足够近到能够移动并攻击，你会攻击一个物体，优先选择比你小的物体。一旦铠甲使你进入狂暴状态，它就无法被移除。你会继续攻击，直到你被{@condition 失能}或另一个生物能够用适当的魔法（如{@spell 安定心神}法术）或成功的{@dc 15}魅力（{@skill 游说}）检定使你平静下来。"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "valueReference": 4000
+  }
+]

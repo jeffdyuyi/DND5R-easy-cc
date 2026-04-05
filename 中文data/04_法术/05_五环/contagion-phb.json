@@ -1,0 +1,120 @@
+[
+  {
+    "ENG_name": "Contagion",
+    "name": "疫病术",
+    "source": "PHB",
+    "page": 227,
+    "srd": true,
+    "referenceSources": [
+      "OotA",
+      "CoS",
+      "ToA"
+    ],
+    "reprintedAs": [
+      "疫病术|XPHB"
+    ],
+    "level": 5,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "day",
+          "amount": 7
+        }
+      }
+    ],
+    "entries": [
+      "你的触碰带着疾病。你对触及范围内一个生物发动一次近战法术攻击。若命中，则该目标{@condition 中毒}。",
+      "该{@condition 中毒}目标的每一回合结束时，必须进行一次体质豁免。若该目标累计三次该豁免成功，则其不再{@condition 中毒}且该法术终止。若该目标累计三次该豁免失败，其亦不再{@condition 中毒}，但必须从以下描述的疾病中选择其一。随后该目标将受选定的疾病影响直至该法术持续时间结束。",
+      "由于法术对目标引发的是自然疾病，因此任何移除疾病或改善疾病状况的效应都可以对受术生物产生影响。",
+      {
+        "ENG_name": "Blinding Sickness",
+        "name": "失明症",
+        "type": "entries",
+        "entries": [
+          "痛苦缠绕着患病者的意志，并使其眼睛变成奶白色。患病生物进行感知检定和感知豁免时具有劣势，并且承受{@condition 目盲}状态。"
+        ]
+      },
+      {
+        "ENG_name": "Filth Fever",
+        "name": "腐热症",
+        "type": "entries",
+        "entries": [
+          "患者身体发起严重的高烧。患病生物进行力量检定和力量豁免时，以及发动基于力量的攻击检定时具有劣势。"
+        ]
+      },
+      {
+        "ENG_name": "Flesh Rot",
+        "name": "烂肉症",
+        "type": "entries",
+        "entries": [
+          "患者的肌肤逐渐腐朽。患病生物进行魅力检定时具有劣势，并且具有所有伤害类型的伤害易伤。"
+        ]
+      },
+      {
+        "ENG_name": "Mindfire",
+        "name": "脑热症",
+        "type": "entries",
+        "entries": [
+          "患病生物进行智力检定和智力豁免时具有劣势，并且其在战斗中视为受到{@spell 困惑术}效应影响。"
+        ]
+      },
+      {
+        "ENG_name": "Seizure",
+        "name": "癫痫症",
+        "type": "entries",
+        "entries": [
+          "患者全身颤抖不止。患病生物进行敏捷检定和敏捷豁免时，以及发动基于敏捷的攻击检定时具劣势。"
+        ]
+      },
+      {
+        "ENG_name": "Slimy Doom",
+        "name": "恶心症",
+        "type": "entries",
+        "entries": [
+          "患者开始不受控地流血。患病生物进行体质检定和体质豁免时具有劣势。另外每当该生物受到伤害时都会陷入{@condition 震慑}状态，直至其下一回合结束。"
+        ]
+      }
+    ],
+    "conditionInflict": [
+      "目盲",
+      "震慑",
+      "中毒"
+    ],
+    "spellAttack": [
+      "M"
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师",
+      "德鲁伊"
+    ],
+    "display_school": "死灵系",
+    "display_savingThrow": [
+      "体质"
+    ]
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "ENG_name": "Word of Radiance",
+    "name": "光耀祷词",
+    "source": "XGE",
+    "page": 171,
+    "reprintedAs": [
+      "光耀祷词|XPHB"
+    ],
+    "level": 0,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 5
+      }
+    },
+    "components": {
+      "v": true,
+      "m": "一面圣徽"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你念出神圣的词语，灼热的光辉随之喷薄而出。每个你选择的、处于你周围 5 尺内、你能看见的生物必须通过一次体质豁免检定，否则受到{@damage 1d6}光耀伤害。",
+      "你到达5级时，该法术的伤害增加{@damage 1d6}（变为 {@damage 2d6}）。11 级时变为{@damage 3d6}，17 级变为{@damage 4d6}。"
+    ],
+    "scalingLevelDice": {
+      "label": "光耀伤害",
+      "scaling": {
+        "1": "1d6",
+        "5": "2d6",
+        "11": "3d6",
+        "17": "4d6"
+      }
+    },
+    "damageInflict": [
+      "radiant"
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "miscTags": [
+      "SCL",
+      "SGT"
+    ],
+    "areaTags": [
+      "MT"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "体质"
+    ],
+    "display_damageInflict": [
+      "光辉"
+    ]
+  }
+]

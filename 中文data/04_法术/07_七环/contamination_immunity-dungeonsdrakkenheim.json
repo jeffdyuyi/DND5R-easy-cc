@@ -1,0 +1,146 @@
+[
+  {
+    "ENG_name": "Contamination Immunity",
+    "name": "污染免疫",
+    "source": "DungeonsDrakkenheim",
+    "page": 226,
+    "level": 7,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一朵混合入价值250gp的特制提纯液中的魔能百合，均作为法术的耗材",
+        "cost": 25000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 24
+        }
+      }
+    ],
+    "entries": [
+      "直到法术结束，一个你触碰的愿意的生物免疫暗蚀伤害且不能获得{@adventure 污染层数|DungeonsDrakkenheim|12}。受影响的生物可以在污霭中正常休息。",
+      "该法术会在生物施展任何一个\"受污染Contaminated\"的法术的瞬间提前结束。"
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "XPHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "XPHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        }
+      ]
+    },
+    "hasFluff": true,
+    "fluff": {
+      "ENG_name": "Contamination Immunity",
+      "name": "污染免疫",
+      "source": "DungeonsDrakkenheim",
+      "entries": [
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "entries": [
+                {
+                  "ENG_name": "Researching the Spell.",
+                  "name": "研究法术。",
+                  "type": "entries",
+                  "entries": [
+                    "一个能够施放7环法术、知晓{@spell 中和场域|DungeonsDrakkenheim}法术且访问过狂乱之心的角色可以研究污染免疫。{@note 参见{@adventure 附录D|DungeonsDrakkenheim|13|法术}。}"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

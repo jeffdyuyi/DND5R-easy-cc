@@ -1,0 +1,73 @@
+{
+  "ENG_name": "Illusionist",
+  "name": "幻术师",
+  "shortName": "幻术师",
+  "source": "XPHB",
+  "className": "法师",
+  "classSource": "XPHB",
+  "page": 175,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "known": {
+        "3": [
+          "次级幻象|xphb#c",
+          {
+            "choose": "level=0;1;2|class=法师|school=I"
+          },
+          {
+            "choose": "level=0;1;2|class=法师|school=I"
+          }
+        ],
+        "5": [
+          {
+            "choose": "level=0;1;2;3|class=法师|school=I"
+          }
+        ],
+        "7": [
+          {
+            "choose": "level=0;1;2;3;4|class=法师|school=I"
+          }
+        ],
+        "9": [
+          {
+            "choose": "level=0;1;2;3;4;5|class=法师|school=I"
+          }
+        ],
+        "11": [
+          {
+            "choose": "level=0;1;2;3;4;5;6|class=法师|school=I"
+          }
+        ],
+        "13": [
+          {
+            "choose": "level=0;1;2;3;4;5;6;7|class=法师|school=I"
+          }
+        ],
+        "15": [
+          {
+            "choose": "level=0;1;2;3;4;5;6;7;8|class=法师|school=I"
+          }
+        ],
+        "17": [
+          {
+            "choose": "level=0;1;2;3;4;5;6;7;8;9|class=法师|school=I"
+          }
+        ]
+      },
+      "prepared": {
+        "6": [
+          "野兽召唤术|xphb",
+          "妖精召唤术|xphb"
+        ]
+      }
+    }
+  ],
+  "subclassFeatures": [
+    "幻术师|法师|XPHB|幻术师|XPHB|3",
+    "魅影生物|法师|XPHB|幻术师|XPHB|6",
+    "幻影化形|法师|XPHB|幻术师|XPHB|10",
+    "亦真亦幻|法师|XPHB|幻术师|XPHB|14"
+  ],
+  "hasFluffImages": true
+}

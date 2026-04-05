@@ -1,0 +1,71 @@
+[
+  {
+    "ENG_name": "Disguise Self",
+    "name": "易容术",
+    "source": "PHB",
+    "page": 233,
+    "srd": true,
+    "basicRules": true,
+    "referenceSources": [
+      "CoS",
+      "WDH",
+      "WDMM",
+      "AZfyT",
+      "SLW",
+      "BGDIA",
+      "WBtW",
+      "DSotDQ",
+      "KftGV",
+      "VEoR"
+    ],
+    "reprintedAs": [
+      "易容术|XPHB"
+    ],
+    "level": 1,
+    "school": "I",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你改变自身以及随身的衣物、护甲、武器等所有物。该效应在法术终止或你使用动作主动解除时结束。肉眼看来你的身高可以有 1 尺的增减，体态可胖可瘦可匀称。但是你不能改变身体的形状，所以你变形的样子必须有四肢或类似的生理结构。此外，幻术的影响范围由你决定。",
+      "此法术产生的变化无法应对物理检查。比如，你用此法术添了一顶帽子，那么现实物件会从帽子穿过去，且任何触碰帽子的人将摸不到任何东西或者摸到的是你的头和头发。如果你用该法术让自己变得消瘦，而某个人用手摸到你时，他的手看起来就像摸着空气。",
+      "如果一个生物想要分辨你是否易容，则必须使用一个动作揭露你的伪装，并进行一次智力（{@skill 调查}）检定以对抗你的法术豁免 DC。"
+    ],
+    "abilityCheck": [
+      "智力"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "术士",
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "幻术系"
+  }
+]

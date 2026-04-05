@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "Fenthras (Dormant)",
+    "name": "芬萨拉斯（休眠）",
+    "source": "TalDoreiCampaignSettingReborn",
+    "page": 205,
+    "baseItem": "长弓|PHB",
+    "type": "R",
+    "rarity": "legendary",
+    "reqAttune": true,
+    "weight": 2,
+    "weaponCategory": "军用",
+    "property": [
+      "A",
+      "H",
+      "2H",
+      "Vst|EGW"
+    ],
+    "range": "150/600",
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "bonusWeapon": "+1",
+    "recharge": "restShort",
+    "entries": [
+      "这把由妖精国度永树皮制成的华丽{@item 长弓|PHB}如同活体般弯曲移动。据说传说游侠{@creature 维克萨利亚|TalDoreiCampaignSettingReborn}曾用它对抗强大邪恶。",
+      {
+        "ENG_name": "Dormant",
+        "name": "休眠",
+        "type": "entries",
+        "entries": [
+          "当芬瑟拉斯处于休眠状态时，你使用这把魔法武器进行的攻击和伤害掷骰将获得+1的加值。",
+          "当你使用芬瑟拉斯进行攻击时，你可以宣布这是一个神谕射击，允许你在接下来的10分钟内使用你的正常感官体验箭矢周围的区域。一旦使用了这个属性，直到你完成一次{@quickref 休息|PHB|2|0|短休或长休}之前，都不能再次使用。",
+          "此外，当一个生物被使用这个武器的攻击杀死时，一棵六尺高的树将在接下来的一分钟内迅速从尸体上生长出来。这棵树扎根于地面，使得尸体难以移动，但不会永久性地损坏尸体或其器官。"
+        ]
+      }
+    ],
+    "ammoType": "箭|PHB",
+    "hasFluffImages": true
+  }
+]

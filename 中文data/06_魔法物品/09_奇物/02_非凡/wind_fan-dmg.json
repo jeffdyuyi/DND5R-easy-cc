@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Wind Fan",
+    "name": "造风之扇",
+    "source": "DMG",
+    "page": 213,
+    "srd": true,
+    "referenceSources": [
+      "JttRC"
+    ],
+    "reprintedAs": [
+      "造风之扇|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "持握这把扇子期间，你可以用一个动作施展{@spell 造风术}（豁免{@dc 13}）。使用扇子后，在次日{@chance 20}的失败概率。失败时，扇子也将被撕裂成无魔法的废纸。"
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "造风术"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表F"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Wind Fan.webp"
+          },
+          "width": 850,
+          "height": 687
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

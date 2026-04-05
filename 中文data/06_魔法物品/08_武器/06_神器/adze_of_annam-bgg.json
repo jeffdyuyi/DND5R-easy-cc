@@ -1,0 +1,80 @@
+[
+  {
+    "ENG_name": "Adze of Annam",
+    "name": "安南之锛",
+    "source": "BGG",
+    "page": 110,
+    "baseItem": "巨斧|PHB",
+    "type": "M",
+    "rarity": "artifact",
+    "reqAttune": true,
+    "weight": 7,
+    "weaponCategory": "martial",
+    "property": [
+      "H",
+      "2H"
+    ],
+    "dmg1": "1d12",
+    "dmgType": "S",
+    "bonusWeapon": "+3",
+    "entries": [
+      "这把沉重的扁斧传说是由万物之父安南挥舞的一件神兵，万古以来，它不仅仅是武器，更是塑造万千世界之物质位面的工具。",
+      {
+        "ENG_name": "Random Properties",
+        "name": "随机词条",
+        "type": "entries",
+        "entries": [
+          "扁斧具有以下的随机属性，你需要根据《城主指南》所记述的相关表格进行掷骰来决定它们的具体内容：",
+          {
+            "type": "list",
+            "items": [
+              "2项{@table 神器词条; 次要增益词条|DMG|次要增益}属性",
+              "一个{@table 神器词条; 主要增益词条|DMG|主要增益}属性",
+              "2 项{@table 神器词条; 次要减益词条|DMG|次要减益}属性"
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Magic Weapon",
+        "name": "魔化武器",
+        "type": "entries",
+        "entries": [
+          "当一个生物与扁斧同调后，神器会魔法性的变化自己的尺寸使生物可以将其作为一把巨斧持用。扁斧是一把在攻击检定与其伤害掷骰上具有+3加值的魔法物品，且在击中时会额外造成{@damage 3d12}点力场伤害。此外，它对物件和建筑物造成的伤害翻倍。"
+        ]
+      },
+      {
+        "ENG_name": "Divine Mattock",
+        "name": "神圣之锄Divine Mattock",
+        "type": "entries",
+        "entries": [
+          "以一个动作，你可以呼唤万物之父的神力以施展法术 {@spell 地动术} 或 {@spell 鬼斧神工} 。此能力一旦被使用，直到次日黎明前都无法被再次使用。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1": [
+          "鬼斧神工",
+          "地动术"
+        ]
+      }
+    },
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/BGG/Adze of Annam.webp"
+          },
+          "credit": "Isabel Gibney",
+          "width": 817,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

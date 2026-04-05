@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "A New Look",
+    "name": "全新面貌",
+    "source": "ObojimaTallGrass",
+    "page": 245,
+    "type": "P",
+    "rarity": "uncommon",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "当饮用时，这种不起眼的灵药会魔法般地将你的头部随机变成一个拟人化的动物，例如马、熊猫、猪或浣熊。此效应会持续到被移除为止，如同一个诅咒。这不计入你身体上同时可以生效的药水数量限制。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 45|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/a-new-look.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1714,
+          "height": 1714
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

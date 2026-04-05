@@ -1,0 +1,70 @@
+[
+  {
+    "ENG_name": "Shining Smite",
+    "name": "闪耀斩",
+    "source": "XPHB",
+    "page": 316,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 2,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作",
+        "condition": "当你使用近战武器或{@variantrule 徒手打击|XPHB}命中一个生物后立即执行"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "被该次攻击检定命中的目标会在此次攻击中额外受到{@damage 2d6}点光耀伤害。直至法术结束，目标会发出半径 5 尺的{@variantrule 明亮光照|XPHB}，对其进行的攻击检定具有{@variantrule 优势|XPHB}，且其无法受益于{@condition 隐形|XPHB}状态。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "使用的法术位每比二环高一环，其伤害就增加{@scaledamage 2d6|2-9|1d6}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "radiant"
+    ],
+    "miscTags": [
+      "AAD",
+      "ADV",
+      "LGT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "圣武士"
+    ],
+    "display_school": "变化系",
+    "display_damageInflict": [
+      "光辉"
+    ]
+  }
+]

@@ -1,0 +1,97 @@
+{
+  "ENG_name": "Construct Forge",
+  "name": "构装锻造",
+  "source": "EFA",
+  "page": 48,
+  "facilityType": "special",
+  "level": 17,
+  "prerequisite": [
+    {
+      "spellcastingFocus": [
+        "工匠工具"
+      ]
+    }
+  ],
+  "space": [
+    "vast"
+  ],
+  "hirelings": [
+    {
+      "exact": 2
+    }
+  ],
+  "orders": [
+    "招募"
+  ],
+  "entries": [
+    "构装锻造用于创建构装体。",
+    {
+      "ENG_name": "Recruit: Construct",
+      "name": "招募：构装体",
+      "type": "entries",
+      "entries": [
+        "当你向此设施下达招募指令时，你委托该设施的雇工根据锻造构装体表格制造一个构装体。制造过程需要表格中列出的时间并花费相应的成本。",
+        "在此设施中制造的构装体视为据点守卫者。从你的据点守卫者名册中扣除任何损失的构装体。你可以选择不将一个或多个这些生物视为据点守卫者，在这种情况下，它们不能被召唤来保卫据点。相反，它们会按照其本性行动并使用其在{@book 怪物图鉴|XMM}中的数据卡。",
+        {
+          "type": "table",
+          "caption": "锻造构装体",
+          "colLabels": [
+            "生物",
+            "时间",
+            "花费"
+          ],
+          "colStyles": [
+            "col-8",
+            "col-2",
+            "col-2"
+          ],
+          "rows": [
+            [
+              "{@creature 活化盔甲|XMM}",
+              "14天",
+              "1,000 GP"
+            ],
+            [
+              "{@creature 活化扫帚|XMM}",
+              "7天",
+              "250 GP"
+            ],
+            [
+              "{@creature 活化凌空剑|XMM}",
+              "7天",
+              "250 GP"
+            ],
+            [
+              "{@creature 活化闷人毯|XMM}",
+              "21天",
+              "2,000 GP"
+            ],
+            [
+              "{@creature 恐怖铠甲|XMM}",
+              "42天",
+              "5,000 gp"
+            ],
+            [
+              "{@creature 稻草人|XMM}",
+              "14天",
+              "1,000 GP"
+            ],
+            [
+              "{@creature 构装盾卫|XMM}",
+              "63天",
+              "25,000 GP"
+            ],
+            [
+              "{@creature 泰坦战俑|ERLW}*",
+              "250天",
+              "200,000 GP"
+            ]
+          ],
+          "footnotes": [
+            "*{@creature 泰坦战俑|ERLW|泰坦战俑数据卡}出现在{@book 艾伯伦:从终末战争中崛起|ERLW}中。根据结束终末战争的寇斯条约条款，创造新的泰坦战俑是非法的。违反该条约有在整个科瓦雷重新引发公开战争的风险。"
+          ]
+        }
+      ]
+    }
+  ]
+}

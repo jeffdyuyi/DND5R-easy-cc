@@ -1,0 +1,41 @@
+{
+  "ENG_name": "The Fathomless",
+  "name": "深海意志宗主",
+  "shortName": "深海意志",
+  "source": "TCE",
+  "className": "魔契师",
+  "classSource": "XPHB",
+  "_copy": {
+    "ENG_name": "The Fathomless",
+    "name": "深海意志宗主",
+    "source": "TCE",
+    "shortName": "深海意志",
+    "className": "魔契师",
+    "classSource": "PHB",
+    "_preserve": {
+      "page": true,
+      "otherSources": true,
+      "referenceSources": true,
+      "srd": true,
+      "basicRules": true,
+      "reprintedAs": true
+    }
+  },
+  "subclassFeatures": [
+    "深海意志宗主|魔契师|XPHB|深海意志|TCE|3",
+    "海渊魂灵|魔契师||深海意志|TCE|6",
+    "守卫缠绕|魔契师||深海意志|TCE|6",
+    "擒握触手|魔契师||深海意志|TCE|10",
+    "海渊传送|魔契师||深海意志|TCE|14"
+  ],
+  "fluff": {
+    "_subclassFluff": {
+      "ENG_name": "The Fathomless",
+      "name": "深海意志宗主",
+      "source": "TCE",
+      "shortName": "深海意志",
+      "className": "魔契师",
+      "classSource": "PHB"
+    }
+  }
+}

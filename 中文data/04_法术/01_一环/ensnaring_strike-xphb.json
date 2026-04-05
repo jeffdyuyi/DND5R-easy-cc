@@ -1,0 +1,78 @@
+[
+  {
+    "ENG_name": "Ensnaring Strike",
+    "name": "诱捕打击",
+    "source": "XPHB",
+    "page": 268,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "UtHftLH"
+    ],
+    "level": 1,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作",
+        "condition": "在你用武器命中目标后立即可用"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你命中目标时，目标身上出现一根紧紧将其攫住的藤蔓，使其进行一次力量豁免，大型及更大体型的生物进行该豁免时具有{@variantrule 优势|XPHB}。豁免失败，则目标将直到法术结束为止陷入{@condition 束缚|XPHB}状态。豁免成功，则藤蔓立即枯萎，法术结束。",
+      "处于{@condition 束缚|XPHB}状态期间，目标在其每回合开始受到{@damage 1d6}点穿刺伤害。目标或其他位于其触及内的生物可用一个动作进行一次对抗法术豁免DC的力量（{@skill 运动|XPHB}运动）检定。检定成功则法术结束。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "使用的法术位每比一环高一环，此法术的伤害就提高{@scaledamage 1d6|1-9|1d6}点。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "piercing"
+    ],
+    "conditionInflict": [
+      "束缚"
+    ],
+    "savingThrow": [
+      "strength"
+    ],
+    "abilityCheck": [
+      "力量"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "游侠"
+    ],
+    "display_school": "咒法系",
+    "display_savingThrow": [
+      "力量"
+    ],
+    "display_damageInflict": [
+      "穿刺"
+    ]
+  }
+]

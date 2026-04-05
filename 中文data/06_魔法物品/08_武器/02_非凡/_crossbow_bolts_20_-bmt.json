@@ -1,0 +1,34 @@
+[
+  {
+    "ENG_name": "Crossbow Bolts (20)",
+    "name": "带翼弩矢(20)",
+    "source": "BMT",
+    "page": 69,
+    "srd": true,
+    "basicRules": true,
+    "referenceSources": [
+      "CoS"
+    ],
+    "reprintedAs": [
+      "弩矢（20支）|XPHB"
+    ],
+    "edition": "classic",
+    "type": "A",
+    "rarity": "uncommon",
+    "weight": 1.5,
+    "value": 100,
+    "bolt": true,
+    "packContents": [
+      {
+        "item": "弩矢|PHB",
+        "quantity": 20
+      }
+    ],
+    "namePrefix": "带翼",
+    "entries": [
+      "使用这种弹药进行的远程武器攻击检定无视半掩体和{@quickref 掩护||3||四分之三掩护}。此外，使用这种弹药进行远程武器攻击时，远距离攻击不会带来劣势。"
+    ],
+    "_isVariant": true,
+    "valueReference": 200
+  }
+]

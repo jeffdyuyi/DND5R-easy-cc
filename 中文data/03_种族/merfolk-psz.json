@@ -1,0 +1,637 @@
+[
+  {
+    "name": "人鱼",
+    "ENG_name": "Merfolk",
+    "source": "PSZ",
+    "page": 13,
+    "size": [
+      "M"
+    ],
+    "speed": {
+      "walk": 30,
+      "swim": 30
+    },
+    "ability": [
+      {
+        "cha": 1
+      }
+    ],
+    "traitTags": [
+      "水陆两栖"
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "other": true,
+        "anyStandard": 1
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Age",
+        "name": "年龄",
+        "type": "entries",
+        "entries": [
+          "美人鱼的成熟速度与人类相同，大约在20岁左右成年。然而，他们的寿命远比人类长，通常能活过100岁。"
+        ]
+      },
+      {
+        "ENG_name": "Alignment",
+        "name": "阵营",
+        "type": "entries",
+        "entries": [
+          "大多数水马族是中立的，尽管属于Emeria和Cosi信仰的水马族有混乱倾向。"
+        ]
+      },
+      {
+        "ENG_name": "Amphibious",
+        "name": "水陆两栖",
+        "entries": [
+          "你可以在空气和水中呼吸。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Size",
+        "name": "体型",
+        "type": "entries",
+        "entries": [
+          "人鱼的体型和构造与人类大致相同。你的体型是中等。"
+        ]
+      },
+      {
+        "ENG_name": "Swimming",
+        "name": "游泳",
+        "entries": [
+          "你拥有30尺游泳速度。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Languages",
+        "name": "语言",
+        "entries": [
+          "你可以说、读、写通用语、人鱼语，以及你选择的另一种额外语言。"
+        ],
+        "type": "entries"
+      }
+    ],
+    "subraces": [
+      {
+        "name": "依夏兰; 蓝色",
+        "ENG_name": "Ixalan; Blue",
+        "source": "PSX",
+        "page": 12,
+        "ability": [
+          {
+            "int": 2
+          }
+        ],
+        "languageProficiencies": [
+          {
+            "common": true,
+            "other": true,
+            "anyStandard": 1
+          }
+        ],
+        "skillProficiencies": [
+          {
+            "history": true,
+            "nature": true
+          }
+        ],
+        "additionalSpells": [
+          {
+            "ability": "wis",
+            "known": {
+              "1": {
+                "_": [
+                  {
+                    "choose": "level=0|class=法师"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "entries": [
+          {
+            "ENG_name": "Cantrip",
+            "name": "戏法",
+            "entries": [
+              "你从{@filter 法师法术列表|spells|class=法师|level=0}中选择一个戏法。智力是你的施法属性。"
+            ],
+            "type": "entries"
+          },
+          {
+            "ENG_name": "Lore of the Waters",
+            "name": "通晓水域",
+            "entries": [
+              "你获得{@skill 历史}和{@skill 自然}技能的熟练项。"
+            ],
+            "type": "entries"
+          },
+          {
+            "ENG_name": "Languages",
+            "name": "语言",
+            "entries": [
+              "你可以说、读、写{@language 通用贸易皮钦语|PSX|通用语}（如果它存在于你的战役中）、{@language 人鱼语|PSX}以及你选择的一门额外语言。"
+            ],
+            "type": "entries",
+            "data": {
+              "overwrite": "语言"
+            }
+          }
+        ],
+        "fluff": {
+          "entries": [
+            "河流使者是美人鱼——一种在伊克萨拉的海洋、河流和雨林中都能自如生活的两栖人形种族。他们身高在七到八尺之间，皮肤颜色从深紫红色到许多不同的紫色和蓝色，再到绿色、鲜橙色和黄色。他们的形状类似人类，但肩膀、前臂、中背和小腿上都有长长的鱼鳍。他们头部后面也突出着鱼鳍的褶皱。所有美人鱼都能呼吸空气或从水中过滤氧气，他们可以同样轻松地在陆地上行走或游泳。"
+          ],
+          "images": [
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSX/Merfolk.webp"
+              },
+              "title": "藤形神秘者",
+              "credit": "Kieran Yanner",
+              "width": 634,
+              "height": 826
+            },
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSX/Merfolk2.webp"
+              },
+              "title": "珊瑚盔指挥官",
+              "credit": "Jaime Jones",
+              "width": 638,
+              "height": 368
+            }
+          ]
+        },
+        "hasFluff": true,
+        "hasFluffImages": true,
+        "otherSources": null,
+        "raceName": "人鱼",
+        "raceSource": "PSZ"
+      },
+      {
+        "name": "依夏兰; 绿色",
+        "ENG_name": "Ixalan; Green",
+        "source": "PSX",
+        "page": 12,
+        "ability": [
+          {
+            "wis": 2
+          }
+        ],
+        "languageProficiencies": [
+          {
+            "common": true,
+            "other": true,
+            "anyStandard": 1
+          }
+        ],
+        "additionalSpells": [
+          {
+            "ability": "wis",
+            "known": {
+              "1": {
+                "_": [
+                  {
+                    "choose": "level=0|class=德鲁伊"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "entries": [
+          {
+            "ENG_name": "Cantrip",
+            "name": "戏法",
+            "entries": [
+              "你从{@filter 德鲁伊法术列表|spells|class=德鲁伊|level=0}中选择一个戏法。感知是你的施法属性。"
+            ],
+            "type": "entries"
+          },
+          {
+            "ENG_name": "Mask of the Wild",
+            "name": "荒野隐蔽",
+            "entries": [
+              "即便你只处于轻度遮蔽的状态，只要这一轻度遮蔽由树丛，大雨，落雪，雾气或其他自然现象提供，你也可以进行躲藏。"
+            ],
+            "type": "entries"
+          },
+          {
+            "ENG_name": "Languages",
+            "name": "语言",
+            "entries": [
+              "你可以说、读、写{@language 通用贸易皮钦语|PSX|通用语}（如果它存在于你的战役中）、{@language 人鱼语|PSX}以及你选择的一门额外语言。"
+            ],
+            "type": "entries",
+            "data": {
+              "overwrite": "语言"
+            }
+          }
+        ],
+        "fluff": {
+          "entries": [
+            "河流使者是美人鱼——一种在伊克萨拉的海洋、河流和雨林中都能自如生活的两栖人形种族。他们身高在七到八尺之间，皮肤颜色从深紫红色到许多不同的紫色和蓝色，再到绿色、鲜橙色和黄色。他们的形状类似人类，但肩膀、前臂、中背和小腿上都有长长的鱼鳍。他们头部后面也突出着鱼鳍的褶皱。所有美人鱼都能呼吸空气或从水中过滤氧气，他们可以同样轻松地在陆地上行走或游泳。"
+          ],
+          "images": [
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSX/Merfolk.webp"
+              },
+              "title": "藤形神秘者",
+              "credit": "Kieran Yanner",
+              "width": 634,
+              "height": 826
+            },
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSX/Merfolk2.webp"
+              },
+              "title": "珊瑚盔指挥官",
+              "credit": "Jaime Jones",
+              "width": 638,
+              "height": 368
+            }
+          ]
+        },
+        "hasFluff": true,
+        "hasFluffImages": true,
+        "otherSources": null,
+        "raceName": "人鱼",
+        "raceSource": "PSZ"
+      },
+      {
+        "name": "赞迪卡; 诡术信仰寇希",
+        "ENG_name": "Zendikar; Cosi Creed",
+        "source": "PSZ",
+        "page": 13,
+        "ability": [
+          {
+            "int": 1,
+            "cha": 2
+          }
+        ],
+        "skillProficiencies": [
+          {
+            "sleight of hand": true,
+            "stealth": true
+          }
+        ],
+        "additionalSpells": [
+          {
+            "ability": "cha",
+            "known": {
+              "1": {
+                "_": [
+                  {
+                    "choose": "level=0|class=吟游诗人"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "entries": [
+          {
+            "ENG_name": "Cantrip",
+            "name": "戏法",
+            "entries": [
+              "你从{@filter 吟游诗人法术列表|spells|class=吟游诗人|level=0}中选择一个戏法。魅力是你的该法术的施法属性。"
+            ],
+            "type": "entries"
+          },
+          {
+            "ENG_name": "Creed of the Trickster",
+            "name": "诡术信条",
+            "entries": [
+              "你获得{@skill 巧手}和{@skill 隐匿}技能的熟练项。"
+            ],
+            "type": "entries"
+          }
+        ],
+        "fluff": {
+          "entries": [
+            {
+              "type": "entries",
+              "entries": [
+                "好奇心强、深思熟虑、善于分析，赞迪卡的鱼人是天生的学者和探险家。在过去，鱼人社会围绕对三个神灵的信仰而组织。但在伊尔德拉兹重新出现之后，鱼人意识到他们的信仰是一个由谎言构成的网，建立在一代代传承下来的对伊尔德拉兹巨人的腐败记忆之上。在和平时期，鱼人可能就这一启示的最终意义进行争论。但面对伊尔德拉兹幼虫所带来的危险，鱼人大体上搁置了他们的分歧，联合起来形成了统一的力量。旧怨仍然存在，但鱼人种族的福祉——以及世界的福祉——远远超过了信仰之间的任何古老冲突。",
+                "人鱼族与蓝色法力有关，尽管传统的人鱼族信仰以不同的方式表达这种联系。",
+                {
+                  "ENG_name": "Born of the Sea",
+                  "name": "生于海洋",
+                  "type": "entries",
+                  "entries": [
+                    "美人鱼是一种两栖种族，在水中出生并生活，但在陆地上也感到舒适。他们的人形形态，皮肤为象牙色、银色、赤褐色、蓝色或深紫色。长长的鱼鳍从他们的前臂和小腿背部延伸出来，他们的手指和脚趾有蹼。他们头部的头发状生长物要么是厚实且像海胆的刺一样粗糙，要么是长而波浪状，类似于细小的海藻。在任何情况下，这些生长物的颜色通常从红色到温暖的棕色到黑色不等。雄性美人鱼的脸颊上也有类似的生长物延伸下来。",
+                    "人鱼族除非为战斗装备盔甲，否则很少穿衣服。即便如此，他们也会用网和最少的布料来装饰自己，穿着由大型漂白贝壳制成的盔甲，并以皮革加固。"
+                  ]
+                }
+              ]
+            }
+          ],
+          "images": [
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSZ/Merfolk.webp"
+              },
+              "title": "飞地精英",
+              "credit": "Igor Kieryluk",
+              "width": 489,
+              "height": 406
+            },
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSZ/Merfolk2.webp"
+              },
+              "title": "珊瑚盔指挥官",
+              "credit": "Jaime Jones",
+              "width": 293,
+              "height": 397
+            }
+          ]
+        },
+        "hasFluff": true,
+        "hasFluffImages": true,
+        "otherSources": null,
+        "raceName": "人鱼",
+        "raceSource": "PSZ"
+      },
+      {
+        "name": "赞迪卡; 风之信仰伊美黎",
+        "ENG_name": "Zendikar; Emeria Creed",
+        "source": "PSZ",
+        "page": 13,
+        "ability": [
+          {
+            "wis": 2
+          }
+        ],
+        "skillProficiencies": [
+          {
+            "deception": true,
+            "persuasion": true
+          }
+        ],
+        "additionalSpells": [
+          {
+            "ability": "wis",
+            "known": {
+              "1": {
+                "_": [
+                  {
+                    "choose": "level=0|class=德鲁伊"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "entries": [
+          {
+            "ENG_name": "Cantrip",
+            "name": "戏法",
+            "entries": [
+              "你从{@filter 德鲁伊法术列表|spells|class=德鲁伊|level=0}中选择一个戏法。感知是你的施法属性。"
+            ],
+            "type": "entries"
+          },
+          {
+            "ENG_name": "Wind Creed Manipulation",
+            "name": "风之操控",
+            "entries": [
+              "你拥有{@skill 欺瞒}和{@skill 游说}技能的熟练项。"
+            ],
+            "type": "entries"
+          }
+        ],
+        "fluff": {
+          "entries": [
+            {
+              "type": "entries",
+              "entries": [
+                "好奇心强、深思熟虑、善于分析，赞迪卡的鱼人是天生的学者和探险家。在过去，鱼人社会围绕对三个神灵的信仰而组织。但在伊尔德拉兹重新出现之后，鱼人意识到他们的信仰是一个由谎言构成的网，建立在一代代传承下来的对伊尔德拉兹巨人的腐败记忆之上。在和平时期，鱼人可能就这一启示的最终意义进行争论。但面对伊尔德拉兹幼虫所带来的危险，鱼人大体上搁置了他们的分歧，联合起来形成了统一的力量。旧怨仍然存在，但鱼人种族的福祉——以及世界的福祉——远远超过了信仰之间的任何古老冲突。",
+                "人鱼族与蓝色法力有关，尽管传统的人鱼族信仰以不同的方式表达这种联系。",
+                {
+                  "ENG_name": "Born of the Sea",
+                  "name": "生于海洋",
+                  "type": "entries",
+                  "entries": [
+                    "美人鱼是一种两栖种族，在水中出生并生活，但在陆地上也感到舒适。他们的人形形态，皮肤为象牙色、银色、赤褐色、蓝色或深紫色。长长的鱼鳍从他们的前臂和小腿背部延伸出来，他们的手指和脚趾有蹼。他们头部的头发状生长物要么是厚实且像海胆的刺一样粗糙，要么是长而波浪状，类似于细小的海藻。在任何情况下，这些生长物的颜色通常从红色到温暖的棕色到黑色不等。雄性美人鱼的脸颊上也有类似的生长物延伸下来。",
+                    "人鱼族除非为战斗装备盔甲，否则很少穿衣服。即便如此，他们也会用网和最少的布料来装饰自己，穿着由大型漂白贝壳制成的盔甲，并以皮革加固。"
+                  ]
+                }
+              ]
+            }
+          ],
+          "images": [
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSZ/Merfolk.webp"
+              },
+              "title": "飞地精英",
+              "credit": "Igor Kieryluk",
+              "width": 489,
+              "height": 406
+            },
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSZ/Merfolk2.webp"
+              },
+              "title": "珊瑚盔指挥官",
+              "credit": "Jaime Jones",
+              "width": 293,
+              "height": 397
+            }
+          ]
+        },
+        "hasFluff": true,
+        "hasFluffImages": true,
+        "otherSources": null,
+        "raceName": "人鱼",
+        "raceSource": "PSZ"
+      },
+      {
+        "name": "赞迪卡; 水之信仰钨拉",
+        "ENG_name": "Zendikar; Ula Creed",
+        "source": "PSZ",
+        "page": 13,
+        "ability": [
+          {
+            "int": 2
+          }
+        ],
+        "skillProficiencies": [
+          {
+            "survival": true
+          }
+        ],
+        "toolProficiencies": [
+          {
+            "navigator's tools": true
+          }
+        ],
+        "additionalSpells": [
+          {
+            "ability": "int",
+            "known": {
+              "1": {
+                "_": [
+                  {
+                    "choose": "level=0|class=法师"
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "entries": [
+          {
+            "ENG_name": "Cantrip",
+            "name": "戏法",
+            "entries": [
+              "你从{@filter 法师法术列表|spells|class=法师|level=0}中选择一个戏法。智力是你的施法属性。"
+            ],
+            "type": "entries"
+          },
+          {
+            "ENG_name": "Water Creed Navigation",
+            "name": "水之引导",
+            "entries": [
+              "你拥有{@item 领航工具|PHB}和{@skill 求生}技能的熟练项。"
+            ],
+            "type": "entries"
+          }
+        ],
+        "fluff": {
+          "entries": [
+            {
+              "type": "entries",
+              "entries": [
+                "好奇心强、深思熟虑、善于分析，赞迪卡的鱼人是天生的学者和探险家。在过去，鱼人社会围绕对三个神灵的信仰而组织。但在伊尔德拉兹重新出现之后，鱼人意识到他们的信仰是一个由谎言构成的网，建立在一代代传承下来的对伊尔德拉兹巨人的腐败记忆之上。在和平时期，鱼人可能就这一启示的最终意义进行争论。但面对伊尔德拉兹幼虫所带来的危险，鱼人大体上搁置了他们的分歧，联合起来形成了统一的力量。旧怨仍然存在，但鱼人种族的福祉——以及世界的福祉——远远超过了信仰之间的任何古老冲突。",
+                "人鱼族与蓝色法力有关，尽管传统的人鱼族信仰以不同的方式表达这种联系。",
+                {
+                  "ENG_name": "Born of the Sea",
+                  "name": "生于海洋",
+                  "type": "entries",
+                  "entries": [
+                    "美人鱼是一种两栖种族，在水中出生并生活，但在陆地上也感到舒适。他们的人形形态，皮肤为象牙色、银色、赤褐色、蓝色或深紫色。长长的鱼鳍从他们的前臂和小腿背部延伸出来，他们的手指和脚趾有蹼。他们头部的头发状生长物要么是厚实且像海胆的刺一样粗糙，要么是长而波浪状，类似于细小的海藻。在任何情况下，这些生长物的颜色通常从红色到温暖的棕色到黑色不等。雄性美人鱼的脸颊上也有类似的生长物延伸下来。",
+                    "人鱼族除非为战斗装备盔甲，否则很少穿衣服。即便如此，他们也会用网和最少的布料来装饰自己，穿着由大型漂白贝壳制成的盔甲，并以皮革加固。"
+                  ]
+                }
+              ]
+            }
+          ],
+          "images": [
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSZ/Merfolk.webp"
+              },
+              "title": "飞地精英",
+              "credit": "Igor Kieryluk",
+              "width": 489,
+              "height": 406
+            },
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSZ/Merfolk2.webp"
+              },
+              "title": "珊瑚盔指挥官",
+              "credit": "Jaime Jones",
+              "width": 293,
+              "height": 397
+            }
+          ]
+        },
+        "hasFluff": true,
+        "hasFluffImages": true,
+        "otherSources": null,
+        "raceName": "人鱼",
+        "raceSource": "PSZ"
+      }
+    ],
+    "fluff": {
+      "entries": [
+        {
+          "type": "entries",
+          "entries": [
+            "好奇心强、深思熟虑、善于分析，赞迪卡的鱼人是天生的学者和探险家。在过去，鱼人社会围绕对三个神灵的信仰而组织。但在伊尔德拉兹重新出现之后，鱼人意识到他们的信仰是一个由谎言构成的网，建立在一代代传承下来的对伊尔德拉兹巨人的腐败记忆之上。在和平时期，鱼人可能就这一启示的最终意义进行争论。但面对伊尔德拉兹幼虫所带来的危险，鱼人大体上搁置了他们的分歧，联合起来形成了统一的力量。旧怨仍然存在，但鱼人种族的福祉——以及世界的福祉——远远超过了信仰之间的任何古老冲突。",
+            "人鱼族与蓝色法力有关，尽管传统的人鱼族信仰以不同的方式表达这种联系。",
+            {
+              "ENG_name": "Born of the Sea",
+              "name": "生于海洋",
+              "type": "entries",
+              "entries": [
+                "美人鱼是一种两栖种族，在水中出生并生活，但在陆地上也感到舒适。他们的人形形态，皮肤为象牙色、银色、赤褐色、蓝色或深紫色。长长的鱼鳍从他们的前臂和小腿背部延伸出来，他们的手指和脚趾有蹼。他们头部的头发状生长物要么是厚实且像海胆的刺一样粗糙，要么是长而波浪状，类似于细小的海藻。在任何情况下，这些生长物的颜色通常从红色到温暖的棕色到黑色不等。雄性美人鱼的脸颊上也有类似的生长物延伸下来。",
+                "人鱼族除非为战斗装备盔甲，否则很少穿衣服。即便如此，他们也会用网和最少的布料来装饰自己，穿着由大型漂白贝壳制成的盔甲，并以皮革加固。"
+              ]
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/PSZ/Merfolk.webp"
+          },
+          "title": "飞地精英",
+          "credit": "Igor Kieryluk",
+          "width": 489,
+          "height": 406
+        },
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/PSZ/Merfolk2.webp"
+          },
+          "title": "珊瑚盔指挥官",
+          "credit": "Jaime Jones",
+          "width": 293,
+          "height": 397
+        }
+      ]
+    },
+    "age": {
+      "mature": 20,
+      "max": 100
+    },
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "otherSources": [
+      {
+        "source": "PSX",
+        "page": 12
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/merfolk.mp3"
+    }
+  }
+]

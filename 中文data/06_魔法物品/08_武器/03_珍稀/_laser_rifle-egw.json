@@ -1,0 +1,36 @@
+[
+  {
+    "ENG_name": "Laser Rifle",
+    "name": "致命激光步枪",
+    "source": "EGW",
+    "page": 270,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "rare",
+    "weight": 7,
+    "valueRarity": "极珍稀",
+    "weaponCategory": "martial",
+    "age": "未来",
+    "property": [
+      "AF|XDMG",
+      "RLD|XDMG",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "缓速|XPHB"
+    ],
+    "range": "100/300",
+    "reload": 30,
+    "dmg1": "3d8",
+    "dmgType": "R",
+    "firearm": true,
+    "weapon": true,
+    "ammoType": "能量电池|xdmg",
+    "namePrefix": "致命",
+    "entries": [
+      "当你使用这把魔法武器攻击并对生物造成伤害时，目标在你的下个回合开始前无法恢复生命值。"
+    ],
+    "_isVariant": true,
+    "valueReference": 4000
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "ENG_name": "Morningstar",
+    "name": "精金钉头锤",
+    "source": "XGE",
+    "page": 78,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "unknown",
+    "weight": 4,
+    "value": 1500,
+    "weaponCategory": "martial",
+    "mastery": [
+      "削弱|XPHB"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "mace": true,
+    "weapon": true,
+    "hasFluffImages": true,
+    "namePrefix": "精金",
+    "reprintedAs": [
+      "精金武器|XDMG"
+    ],
+    "tier": "主要",
+    "valueExpression": "[[baseItem.value]] + 50000",
+    "entries": [
+      "使用这个武器击中物体时，每次命中都视为重击。"
+    ],
+    "_isVariant": true
+  }
+]

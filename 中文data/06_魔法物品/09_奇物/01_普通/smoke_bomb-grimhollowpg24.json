@@ -1,0 +1,15 @@
+[
+  {
+    "ENG_name": "Smoke Bomb",
+    "name": "烟雾炸弹",
+    "source": "GrimHollowPG24",
+    "page": 127,
+    "type": "AdvEq",
+    "rarity": "none",
+    "weight": 3,
+    "value": 5000,
+    "entries": [
+      "作为一个{@action 操作|XPHB}动作，你可以将这个烟雾玻璃小瓶投掷到30尺远的一个空间。当小瓶破裂时，混合物会产生一个半径10尺的{@variantrule 球状 [效应区域]|XPHB|球状}烟雾。该区域处于{@variantrule 重度遮蔽|XPHB}状态。烟雾持续{@dice 1d4 + 2}回合，在刮风的区域持续时间减半。"
+    ]
+  }
+]

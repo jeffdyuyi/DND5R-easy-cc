@@ -1,0 +1,49 @@
+[
+  {
+    "name": "画家工具",
+    "ENG_name": "Painter's Supplies",
+    "source": "XPHB",
+    "page": 221,
+    "type": "AT|XPHB",
+    "rarity": "none",
+    "weight": 5,
+    "value": 1000,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability:",
+            "name": "属性：",
+            "type": "item",
+            "entries": [
+              "感知"
+            ]
+          },
+          {
+            "ENG_name": "Utilize:",
+            "name": "操作：",
+            "type": "item",
+            "entries": [
+              "画出你所见过的某个事物的可辨图像（{@dc 10}）"
+            ]
+          },
+          {
+            "ENG_name": "Craft:",
+            "name": "制造：",
+            "type": "item",
+            "entries": [
+              "{@item 德鲁伊法器|XPHB}, {@item 圣徽|XPHB}"
+            ]
+          }
+        ]
+      }
+    ],
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TDoN"
+    ],
+    "srd52": true
+  }
+]

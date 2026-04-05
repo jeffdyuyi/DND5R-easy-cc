@@ -1,0 +1,79 @@
+[
+  {
+    "ENG_name": "Mind Sliver",
+    "name": "心灵之楔",
+    "source": "XPHB",
+    "page": 298,
+    "level": 0,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "指定施法距离内一个你可见的生物，你试图暂时刺入目标的心灵。目标必须通过一次智力豁免 。豁免失败将受到{@damage 1d6}点心灵伤害，并且其在你的下回合结束前，进行的下一次豁免检定将获得{@dice 1d4}减值。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Cantrip Upgrade",
+        "name": "戏法强化",
+        "type": "entries",
+        "entries": [
+          "当你达到以下等级时，伤害增加{@damage 1d6}，5 级（{@damage 2d6}），11 级（{@damage 3d6}）和17 级（{@damage 4d6}）。"
+        ]
+      }
+    ],
+    "scalingLevelDice": {
+      "label": "心灵伤害",
+      "scaling": {
+        "1": "1d6",
+        "5": "2d6",
+        "11": "3d6",
+        "17": "4d6"
+      }
+    },
+    "damageInflict": [
+      "psychic"
+    ],
+    "savingThrow": [
+      "intelligence"
+    ],
+    "miscTags": [
+      "SCL",
+      "SGT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "惑控系",
+    "display_savingThrow": [
+      "智力"
+    ],
+    "display_damageInflict": [
+      "心灵"
+    ]
+  }
+]

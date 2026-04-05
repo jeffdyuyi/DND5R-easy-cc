@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "+1 Blowgun",
+    "name": "+1 吹箭筒",
+    "source": "DMG",
+    "page": 213,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "uncommon",
+    "weight": 1,
+    "value": 1000,
+    "weaponCategory": "martial",
+    "property": [
+      "A|XPHB",
+      "LD|XPHB"
+    ],
+    "mastery": [
+      "侵扰|XPHB"
+    ],
+    "range": "25/100",
+    "dmg1": "1",
+    "dmgType": "P",
+    "weapon": true,
+    "ammoType": "针|xphb",
+    "hasFluffImages": true,
+    "namePrefix": "+1 ",
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "+1 武器|XDMG"
+    ],
+    "tier": "主要",
+    "bonusWeapon": "+1",
+    "entries": [
+      "使用这把魔法武器进行攻击和伤害判定时，你会获得{=bonusWeapon}的额外加成。"
+    ],
+    "lootTables": [
+      "魔法物品表F"
+    ],
+    "_isVariant": true,
+    "valueReference": 400
+  }
+]

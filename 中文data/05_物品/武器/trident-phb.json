@@ -1,0 +1,32 @@
+[
+  {
+    "name": "三叉戟",
+    "ENG_name": "Trident",
+    "source": "PHB",
+    "page": 149,
+    "edition": "classic",
+    "type": "M",
+    "rarity": "none",
+    "weight": 4,
+    "value": 500,
+    "weaponCategory": "martial",
+    "property": [
+      "T",
+      "V"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "dmg2": "1d8",
+    "range": "20/60",
+    "basicRules": true,
+    "referenceSources": [
+      "TTP",
+      "GoS"
+    ],
+    "reprintedAs": [
+      "三叉戟|XPHB"
+    ],
+    "srd": true,
+    "weapon": true
+  }
+]

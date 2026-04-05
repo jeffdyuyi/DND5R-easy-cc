@@ -1,0 +1,13 @@
+{
+    "ENG_name": "Superior Technique",
+    "name": "卓越技巧",
+    "source": "XPHB",
+    "page": 196,
+    "featureType": [
+        "FS:F"
+    ],
+    "entries": [
+        "你从{@filter 战技选项|optionalfeatures|feature type=MV:B|source=XPHB}列表中习得一个自选战技。若该战技要求目标进行豁免，则其豁免DC等于 8 + 你的熟练加值 + 你的力量或敏捷调整值（由你选择）。",
+        "你获得一个用于支持该战技的 {@dice d10} 卓越骰（如果你已经通过其它方式拥有了卓越骰，则该骰子将加入你的卓越骰池中，且其大小维持在 {@dice d10}）。每当你完成一次短休或长休后，你重获消耗掉的这枚卓越骰。"
+    ]
+}

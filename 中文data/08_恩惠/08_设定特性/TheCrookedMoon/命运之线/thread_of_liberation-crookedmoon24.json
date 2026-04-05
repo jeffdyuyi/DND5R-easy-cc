@@ -1,0 +1,55 @@
+[
+  {
+    "ENG_name": "Thread of Liberation",
+    "name": "解放之线",
+    "source": "CrookedMoon24",
+    "page": 163,
+    "type": "Thread of Fate",
+    "entries": [
+      "被解放之线连接的角色与一个拥有其灵魂的强大实体达成了契约，而等待它们的死亡并不漂亮。它们逃脱命运的唯一希望似乎掌握在它们的幽影手中，幽影似乎拥有自己的大脑但可以通过赌博被说服协助。",
+      {
+        "ENG_name": "Goal",
+        "name": "目标",
+        "type": "entries",
+        "entries": [
+          "角色必须寻求协助以智胜他们与之达成交易的实体，找到打破束缚它们的超自然链条的方法，并再次夺回对自己命运的支配权。"
+        ]
+      },
+      {
+        "ENG_name": "Personalization",
+        "name": "个性化",
+        "type": "entries",
+        "entries": [
+          "确定支配角色灵魂的实体的性质。他们是邪魔、精类、致命的，还是其他什么？他们的个性是什么，与角色有什么关系？他们的影响力如何影响角色幽影的外貌和行为？达成了什么契约，角色用他们的灵魂交换了什么？"
+        ]
+      },
+      {
+        "ENG_name": "Call to Adventure",
+        "name": "冒险召唤",
+        "type": "entries",
+        "entries": [
+          "角色的吉兆将尽，因为他们与实体签订的契约已经变坏，并且他们被提醒了等待它们的可怕命运。为了寻找摆脱契约的方法，他们回到了签订契约的地点，角色的阴影突然活了过来，并无声地向它们发起了一场机会游戏。角色获胜了，阴影引导它们前往冒险开始的地点。"
+        ]
+      },
+      {
+        "ENG_name": "Associated Background",
+        "name": "关联背景",
+        "type": "entries",
+        "entries": [
+          "{@background 岔路赌徒|crookedmoon24}"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/CrookedMoon24/Adventure/055-02-037.thread-of-liberation.webp"
+        },
+        "width": 604,
+        "height": 602
+      }
+    ]
+  }
+]

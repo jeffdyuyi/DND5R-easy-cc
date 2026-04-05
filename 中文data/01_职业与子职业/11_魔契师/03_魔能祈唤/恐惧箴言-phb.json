@@ -1,0 +1,38 @@
+{
+  "ENG_name": "Dreadful Word",
+  "name": "恐惧箴言",
+  "source": "PHB",
+  "page": 110,
+  "srd": true,
+  "featureType": [
+    "EI"
+  ],
+  "prerequisite": [
+    {
+      "level": {
+        "level": 7,
+        "class": {
+          "ENG_name": "Warlock",
+          "name": "魔契师"
+        }
+      }
+    }
+  ],
+  "additionalSpells": [
+    {
+      "innate": {
+        "_": {
+          "daily": {
+            "1e": [
+              "困惑术"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "entries": [
+    "你可以消耗你的魔契师法术位施展一道{@spell 困惑术}。你必须完成一次长休才能再次以此法施展该法术。"
+  ],
+  "translator": "不全书"
+}

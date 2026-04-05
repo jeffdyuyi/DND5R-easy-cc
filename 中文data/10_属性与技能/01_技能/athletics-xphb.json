@@ -1,0 +1,14 @@
+[
+  {
+    "ENG_name": "Athletics",
+    "name": "运动",
+    "source": "XPHB",
+    "page": 14,
+    "srd52": true,
+    "ability": "str",
+    "entries": [
+      "比平时跳的更远，在汹涌的水面上漂浮或是打碎什么东西。"
+    ],
+    "translator": "不全书"
+  }
+]

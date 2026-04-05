@@ -1,0 +1,27 @@
+{
+  "ENG_name": "Enhanced Weapon",
+  "name": "增强武器",
+  "source": "TCE",
+  "page": 21,
+  "otherSources": [
+    {
+      "source": "ERLW",
+      "page": 62
+    }
+  ],
+  "featureType": [
+    "AI"
+  ],
+  "prerequisite": [
+    {
+      "item": [
+        "一把简易武器或军用武器"
+      ]
+    }
+  ],
+  "entries": [
+    "在用此魔法武器发动的攻击检定和伤害掷骰获得+1加值。",
+    "当你的奇械师职业等级达到10级后，该加值变成+2。"
+  ],
+  "translator": "不全书"
+}

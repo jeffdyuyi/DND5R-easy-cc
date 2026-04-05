@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "+3 Net",
+    "name": "卓尔 +3 捕网",
+    "source": "MM",
+    "page": 126,
+    "srd": true,
+    "basicRules": true,
+    "referenceSources": [
+      "ToA"
+    ],
+    "reprintedAs": [
+      {
+        "uid": "捕网|XPHB",
+        "tag": "item"
+      }
+    ],
+    "edition": "classic",
+    "type": "R",
+    "rarity": "unknown (magic)",
+    "weight": 3,
+    "value": 100,
+    "weaponCategory": "martial",
+    "property": [
+      "S",
+      "T"
+    ],
+    "range": "5/15",
+    "net": true,
+    "weapon": true,
+    "entries": [
+      "使用这把武器进行攻击和伤害判定时，你有{=bonusWeapon}的加值。如果这把武器暴露在阳光下1小时或更长时间，它的附魔加值将永久失去。"
+    ],
+    "namePrefix": "卓尔 +3 ",
+    "bonusWeapon": "+3",
+    "_isVariant": true
+  }
+]

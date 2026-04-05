@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Coal From The Wandering Line",
+    "name": "流浪线状之煤",
+    "source": "ObojimaTallGrass",
+    "page": 216,
+    "type": "Ingred",
+    "rarity": "rare",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 19|large}|SneakerProMedium}",
+            "{@font {@style 19|large}|SneakerProMedium}",
+            "{@font {@style 20|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "当漫游之线在岛屿上缓慢行进时，偶尔会有一些用于锅炉燃料的煤块弹跳出来，落在轨道旁的配菜上。这些拳头大小的煤块在大多数方面与寻常煤块相似，但它们内部有明亮的蓝色虹彩斑点，并且会间歇性振动。由于胧忆岛上已不再有煤矿，这些煤块的起源仍是个谜。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/spirit-coal.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 3239,
+          "height": 3239
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Potion of Polychromy",
+    "name": "彩绘药水",
+    "source": "DitLCoT",
+    "page": 15,
+    "type": "P",
+    "rarity": "uncommon",
+    "entries": [
+      "当你喝下这瓶药水后，你和你穿戴或携带的所有物品在接下来的1小时内会呈现出彩虹般的色彩。在此期间，你可以用一个附赠动作来变为任意你选择的颜色或颜色组合。如果你模仿周围环境的颜色，你的色彩会不断变化以匹配周围环境，并且在你再次改变颜色或药水效果消失之前，你的敏捷（{@skill 隐匿}）检定具有优势。",
+      "这瓶药水分为互不相溶，色泽鲜明的七色彩带，喝起来如同糖浆。"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 200,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DitLCoT/Potion of Polychromy.webp"
+          },
+          "width": 428,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

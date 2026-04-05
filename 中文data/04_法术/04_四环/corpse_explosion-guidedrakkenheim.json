@@ -1,0 +1,67 @@
+[
+  {
+    "ENG_name": "Corpse Explosion",
+    "name": "尸爆",
+    "source": "GuideDrakkenheim",
+    "page": 189,
+    "level": 4,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "反应",
+        "condition": "当你看到的一个生物在你120尺范围内死亡时触发。"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你使触发生物的身体爆炸，血肉和受感染的血肉猛烈四溅。以触发生物身体为中心10尺范围内的生物受到{@damage 4d8}暗蚀伤害和{@damage 4d8}强酸伤害，若成功通过敏捷豁免检定则只受一半伤害。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "如果你使用5环或更高法术位施放该法术，每比4环高一级，伤害就增加{@damage 1d8}强酸伤害。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "强酸",
+      "暗蚀"
+    ],
+    "savingThrow": [
+      "敏捷"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    }
+  }
+]

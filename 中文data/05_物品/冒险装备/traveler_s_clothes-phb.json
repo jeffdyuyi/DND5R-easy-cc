@@ -1,0 +1,21 @@
+[
+  {
+    "name": "旅行服装",
+    "ENG_name": "Traveler's Clothes",
+    "source": "PHB",
+    "page": 150,
+    "type": "G",
+    "rarity": "none",
+    "weight": 4,
+    "value": 200,
+    "basicRules": true,
+    "referenceSources": [
+      "KftGV"
+    ],
+    "reprintedAs": [
+      "旅行服装|XPHB"
+    ],
+    "srd": true,
+    "translator": "不全书"
+  }
+]

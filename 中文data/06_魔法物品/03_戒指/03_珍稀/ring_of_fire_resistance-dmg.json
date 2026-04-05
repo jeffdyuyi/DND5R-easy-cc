@@ -1,0 +1,35 @@
+[
+  {
+    "ENG_name": "Ring of Fire Resistance",
+    "name": "火焰抗性戒指",
+    "source": "DMG",
+    "page": 192,
+    "srd": true,
+    "basicRules": true,
+    "referenceSources": [
+      "PotA",
+      "SKT",
+      "TftYP-AtG",
+      "TftYP-ToH",
+      "ToA",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "火焰抗性戒指|XDMG"
+    ],
+    "type": "RG|DMG",
+    "resist": [
+      "火焰"
+    ],
+    "detail1": "石榴石",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "hasRefs": true,
+    "entries": [
+      "{#itemEntry 抗性戒指}"
+    ],
+    "translator": "不全书",
+    "valueReference": 4000
+  }
+]

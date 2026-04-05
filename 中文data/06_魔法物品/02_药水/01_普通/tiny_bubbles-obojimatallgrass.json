@@ -1,0 +1,46 @@
+[
+  {
+    "ENG_name": "Tiny Bubbles",
+    "name": "微型气泡",
+    "source": "ObojimaTallGrass",
+    "page": 223,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Com"
+    ],
+    "entries": [
+      "饮用这瓶粉色、苦味的药水会导致数百个小型、彩虹色的气泡从你的鼻子和嘴巴中冒出，并填满你30尺内可见的一个20尺立方空间。如果气泡未被触碰，它们会悬浮在原地，持续1小时。当一个生物在回合中首次进入被气泡占据的空间时，它必须进行一次DC 13的敏捷豁免检定。豁免失败时，气泡爆裂发出不协和音，对方块内的所有生物造成{@damage 1d6}雷鸣伤害。气泡爆裂的声音可以在一英里外听到。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 23|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Combat/tiny-bubbles.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1423,
+          "height": 1423
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1,
+        "autoDestroy": false
+      }
+    }
+  }
+]

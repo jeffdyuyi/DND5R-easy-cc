@@ -1,0 +1,68 @@
+[
+  {
+    "ENG_name": "Emerald Goblet",
+    "name": "翡翠高脚杯",
+    "source": "BookOfEbonTides",
+    "page": 61,
+    "level": 1,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一个粉末状的橡子，该法术会消耗它，以及一个饮用器皿",
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 24
+        }
+      }
+    ],
+    "entries": [
+      "你接触一个饮用器皿并将橡子粉尘撒入其中，这会创造一个装满绿色药水的闪耀绿色器皿。任何从高脚杯中饮用的生物将在1天内被保护免受暗影腐化。",
+      "该守护提供数个额外增益：你在幽影位面内收集食物时获得优势，并且获得30尺的{@sense 黑暗视觉}（或将你现有的{@sense 黑暗视觉}延长30尺）。"
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Paladin",
+          "name": "圣武士",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    },
+    "miscTags": [
+      "ADV"
+    ]
+  }
+]

@@ -1,0 +1,96 @@
+[
+  {
+    "ENG_name": "Delerium Orb",
+    "name": "妄彩球",
+    "source": "DungeonsDrakkenheim",
+    "page": 227,
+    "level": 1,
+    "school": "V",
+    "subschools": [
+      "受污染的"
+    ],
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一片价值100gp的妄质晶片，作为法术的耗材",
+        "cost": 10000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "当你施放此法术后，你获得1层{@adventure 污染层数|DungeonsDrakkenheim|12}。你从手中持有的妄质碎片中汲取混乱的法力，并用矛盾的力量轰击一个你能看见的范围内的生物。选择一项属性值，然后选择寒冷、火焰、闪电、暗蚀、心灵或光耀伤害。目标必须使用所选属性值进行一次豁免检定；若豁免失败，它将受到{@damage 6d6}点所选类型的伤害，若豁免成功则只受到一半伤害。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用2环或更高等级的法术位施展此法术时，每高于1环一级，伤害增加{@damage 2d6}。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        }
+      ]
+    },
+    "miscTags": [
+      "SGT"
+    ]
+  }
+]

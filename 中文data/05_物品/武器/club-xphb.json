@@ -1,0 +1,41 @@
+[
+  {
+    "name": "短棒",
+    "ENG_name": "Club",
+    "source": "XPHB",
+    "page": 215,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 10,
+    "weaponCategory": "simple",
+    "property": [
+      "L|XPHB"
+    ],
+    "mastery": [
+      "缓速|XPHB"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "B",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XPHB/Club.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 107,
+          "height": 561
+        }
+      ]
+    },
+    "basicRules2024": true,
+    "club": true,
+    "hasFluffImages": true,
+    "srd52": true,
+    "weapon": true
+  }
+]

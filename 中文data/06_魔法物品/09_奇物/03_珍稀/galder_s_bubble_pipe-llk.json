@@ -1,0 +1,37 @@
+[
+  {
+    "ENG_name": "Galder's Bubble Pipe",
+    "name": "加德尔的泡泡烟斗",
+    "source": "LLK",
+    "page": 55,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": 3,
+    "charges": 3,
+    "entries": [
+      "这个精细雕刻的烟斗在使用时吹出的是没有气味的泡泡，而不是烟雾。烟斗有3个充能，并且在黎明时每天恢复所有消耗的充能。当你拿着烟斗时，你可以消耗充能来获得以下属性：",
+      {
+        "type": "list",
+        "items": [
+          "你可以作为动作施放{@spell 云雾术}（1次充能）。",
+          "你可以作为附赠动作施放{@spell 迷踪步}（消耗2个充能）。",
+          "你可以作为一个动作召唤一个{@creature 蒸汽魔蝠}（消耗3个充能）。这个魔蝠对你友好，服从你的口头命令，并在自己的主动顺序中行动。如果在1分钟后或在其回合结束时距离烟斗超过60尺，它会在一团无害的蒸汽中消失。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "云雾术"
+        ],
+        "2": [
+          "迷踪步"
+        ]
+      }
+    },
+    "valueReference": 2000,
+    "type": "W"
+  }
+]

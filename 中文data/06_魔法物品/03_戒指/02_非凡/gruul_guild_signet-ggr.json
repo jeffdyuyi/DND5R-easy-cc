@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "Gruul Guild Signet",
+    "name": "古鲁公会印记",
+    "source": "GGR",
+    "page": 178,
+    "type": "RG|DMG",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "这枚饰有古鲁徽记的戒指允许你施放{@spell 强令对决}。公会印记有时会授予在该公会声望值达到5或更高的公会成员，作为对为公会提供特殊服务的奖励。除了其魔法属性外，这枚戒指也是古鲁认可和恩赐的象征。",
+      "一枚印记有3发充能，并在每天黎明时恢复{@dice 1d3}发已消耗的充能。着装该戒指时，你可以消耗1发充能施放其关联法术（豁免{@dc 13}）。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "强令对决"
+        ]
+      }
+    },
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/GGR/Gruul Guild Signet.webp"
+          },
+          "credit": "Efrem Palacios",
+          "width": 640,
+          "height": 498
+        }
+      ]
+    }
+  }
+]

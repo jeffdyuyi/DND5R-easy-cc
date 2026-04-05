@@ -1,0 +1,60 @@
+[
+  {
+    "ENG_name": "Obfuscate Object",
+    "name": "混淆物件",
+    "source": "BookOfEbonTides",
+    "page": 68,
+    "level": 0,
+    "school": "I",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 10
+      }
+    },
+    "components": {
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "当你在微光光照中时，你可以使范围内的一个物件在其他生物的预见中变得不显眼。在持续时间内，你在敏捷（{@skill 巧手}）检定上具有优势以躲藏该物件。该物件不能大于短剑，且必须在你身上、握在手中或未被其他人看管。",
+      "当你达到5级时，可以影响两个物件，11级时三个物件，17级时四个物件。"
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    },
+    "miscTags": [
+      "ADV",
+      "SCL"
+    ]
+  }
+]

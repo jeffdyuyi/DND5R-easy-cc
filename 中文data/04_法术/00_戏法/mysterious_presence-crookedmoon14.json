@@ -1,0 +1,62 @@
+[
+  {
+    "ENG_name": "Mysterious Presence",
+    "name": "莫测仪容",
+    "source": "CrookedMoon14",
+    "page": 131,
+    "reprintedAs": [
+      "莫测仪容|crookedmoon24"
+    ],
+    "level": 0,
+    "school": "I",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你接触一个愿意的生物并环绕其存在。直到该法术结束，其他生物必须从任何针对该目标的感知（{@skill 洞悉}或{@skill 察觉}）检定中减去{@dice 1d4}。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        }
+      ]
+    },
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Spells/Mysterious-Presence.webp"
+  }
+]

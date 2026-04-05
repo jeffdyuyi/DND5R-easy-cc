@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Repeater Needler",
+    "name": "连发弩针",
+    "source": "GrimHollowPG24",
+    "page": 129,
+    "type": "R|XPHB",
+    "rarity": "none",
+    "weight": 3,
+    "value": 50000,
+    "weaponCategory": "进阶",
+    "property": [
+      "A|XPHB",
+      "L|XPHB",
+      "Mag|GrimHollowPG24",
+      "Rep|GrimHollowPG24"
+    ],
+    "mastery": [
+      "侵扰|XPHB"
+    ],
+    "range": "30/120",
+    "dmg1": "1",
+    "dmgType": "P",
+    "weapon": true,
+    "ammoType": "针|XPHB",
+    "customProperties": {
+      "Magazine": "6"
+    }
+  }
+]

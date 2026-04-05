@@ -1,0 +1,250 @@
+{
+  "race": [
+    {
+      "ENG_name": "Luma",
+      "name": "鸽族",
+      "source": "HumblewoodCampaignSetting",
+      "page": 16,
+      "size": [
+        "S"
+      ],
+      "speed": 25,
+      "ability": [
+        {
+          "cha": 2
+        }
+      ],
+      "age": {
+        "mature": 20,
+        "max": 70
+      },
+      "languageProficiencies": [
+        {
+          "other": true,
+          "auran": true
+        }
+      ],
+      "additionalSpells": [
+        {
+          "ability": "cha",
+          "known": {
+            "_": {
+              "_": [
+                {
+                  "choose": "level=0|class=术士"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "entries": [
+        {
+          "ENG_name": "Age",
+          "name": "年龄",
+          "type": "entries",
+          "entries": [
+            "鸽族的寿命较短，大约在20岁左右成年。很少有鸽族能活过70岁。"
+          ]
+        },
+        {
+          "ENG_name": "Alignment",
+          "name": "阵营",
+          "type": "entries",
+          "entries": [
+            "由于个人兴趣和幻想的驱使，卢马族倾向于混乱的阵营。虽然通常天性善良，那些被社会抛弃的卢马族很难看到利他主义的好处，但即使在这种情况下，卢马族也很少是邪恶的。"
+          ]
+        },
+        {
+          "ENG_name": "Size",
+          "name": "体型",
+          "type": "entries",
+          "entries": [
+            "鸽族是鸟族中最矮最轻的，大约3尺高，体重仅约30磅。你的体型是小型。"
+          ]
+        },
+        {
+          "ENG_name": "Speed",
+          "name": "速度",
+          "type": "entries",
+          "entries": [
+            "你的基本步行速度是25尺。"
+          ]
+        },
+        {
+          "ENG_name": "Glide",
+          "name": "滑翔",
+          "type": "entries",
+          "entries": [
+            "利用你羽毛覆盖的手臂，你可以减缓下落速度，并滑翔短距离。当你下落时，你可以使用你的反应来展开手臂，使翅膀的羽毛变硬，从而减缓你的下降。这样做时，你以每轮60尺的速度轻柔地继续下落，着陆时不会受到跌落伤害。如果你以这种方式至少下落10尺，你可以选择一个方向，以你的移动速度飞行，虽然你不能选择向上移动，结束移动时落在你选择的空间。你不能在携带重型武器或持盾时滑翔（尽管你可以作为展开手臂的一部分反应来丢弃任何持有的物品）。你不能在穿着重型盔甲或负重时滑翔。"
+          ]
+        },
+        {
+          "ENG_name": "Wing Flap",
+          "name": "襟翼",
+          "type": "entries",
+          "entries": [
+            "作为一个附赠动作，你可以使用你强大的有羽翼的臂膀将自己向上推进，距离等于你移动速度的一半。你可以将其与普通跳跃结合使用，但不能在滑翔时使用。"
+          ]
+        },
+        {
+          "ENG_name": "Touched",
+          "name": "神经兮兮",
+          "type": "entries",
+          "entries": [
+            "你知道一个来自术士法术列表中的{@filter 来自术士法术列表的戏法|spells|level=0|class=术士}。魅力是你的法术施放能力，用于这个戏法。"
+          ]
+        },
+        {
+          "ENG_name": "Fated",
+          "name": "定命盟",
+          "type": "entries",
+          "entries": [
+            "无论是运气还是某种引导力量，你似乎总能找到自己的路。你可以选择重新掷任何攻击、技能检定或豁免检定。你可以在掷骰后决定这样做，但只能在掷骰结果确定之前。直到你完成一次长休之前，你不能再使用这个特性。"
+          ]
+        },
+        {
+          "ENG_name": "Languages",
+          "name": "语言",
+          "type": "entries",
+          "entries": [
+            "你可以说、读、写鸟族语。你也能听懂奥瑞安语，尽管你不能自然地说出来。"
+          ]
+        }
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "subraces": [
+        {
+          "ENG_name": "Sable",
+          "name": "黑",
+          "source": "HumblewoodCampaignSetting",
+          "page": 16,
+          "ability": [
+            {
+              "con": 1
+            }
+          ],
+          "resist": [
+            "毒素"
+          ],
+          "entries": [
+            {
+              "ENG_name": "Hard to Read",
+              "name": "难以捉摸",
+              "type": "entries",
+              "entries": [
+                "你天生的古怪让其他人很难看透你。当有人对你进行一次感知（{@skill 洞悉}）检定时，他们在掷骰时会有劣势。此外，当你对非卢马族生物进行魅力（{@skill 欺瞒}）检定时，你会获得优势。"
+              ]
+            },
+            {
+              "ENG_name": "Resilience",
+              "name": "韧性",
+              "type": "entries",
+              "entries": [
+                "你在对抗毒素的豁免检定上拥有优势，并且对毒素伤害具有抗性。"
+              ]
+            }
+          ],
+          "hasFluff": true,
+          "hasFluffImages": true
+        },
+        {
+          "ENG_name": "Sera",
+          "name": "艳",
+          "source": "HumblewoodCampaignSetting",
+          "page": 16,
+          "ability": [
+            {
+              "wis": 1
+            }
+          ],
+          "skillProficiencies": [
+            {
+              "performance": true
+            }
+          ],
+          "additionalSpells": [
+            {
+              "ability": "cha",
+              "innate": {
+                "_": {
+                  "daily": {
+                    "1": [
+                      "魅惑类人"
+                    ]
+                  }
+                }
+              }
+            }
+          ],
+          "entries": [
+            {
+              "ENG_name": "Center of Attention",
+              "name": "万众瞩目",
+              "type": "entries",
+              "entries": [
+                "你对{@skill 表演}技能熟练。"
+              ]
+            },
+            {
+              "ENG_name": "Songbird",
+              "name": "鸣禽",
+              "type": "entries",
+              "entries": [
+                "当你表演时，你可以展示你的魅力所固有的神秘力量。你可以在每次长休时施放一次{@spell 魅惑类人}法术。施放这个法术不需要任何肢体动作成分。魅力是你的施法能力属性，用于这个法术。"
+              ]
+            }
+          ],
+          "hasFluff": true,
+          "hasFluffImages": true
+        }
+      ],
+      "fluff": {
+        "entries": [
+          {
+            "type": "entries",
+            "entries": [
+              {
+                "type": "entries",
+                "entries": [
+                  "{@font 性质奇特|HP卑微抓痕}",
+                  "鸽族在栖木社会中的角色是一个极端对立的种族。他们因为古怪的行为而经常被排斥，同时也因为这些行为而受到庆祝。卢玛比大多数鸟族要小，看起来像鸽子或鸽子。许多卢玛有一圈羽毛，闪耀着独特的彩虹色，这可以被视为迷人或不寻常。大多数幼小的卢玛在社交场合中犹豫不决，直到社会不可避免地将他们标记为局外人或知名人物，个体自然而然地适应这个角色。",
+                  {
+                    "ENG_name": "Touched",
+                    "name": "神经兮兮",
+                    "entries": [
+                      "对大多数人来说，卢马斯看起来总是杂乱无章且容易分心，这导致人们认为他们智力低下。实际上，卢马斯对世界有独特的感知。他们能够以不寻常的方式解释信息，使他们能够看到其他人看不到的可能性。",
+                      "这些与生俱来的才能，有时被误认为是运气，可以通过训练和学习来提高。将他们的天赋与魔法教育相结合，强大的卢马法师和激进的学者在谦卑林地的魔法创新中一直处于领先地位已有一段时间。"
+                    ],
+                    "type": "entries"
+                  },
+                  {
+                    "ENG_name": "Of Two Worlds",
+                    "name": "同属两个世界",
+                    "entries": [
+                      "虽然大多数卢马人发现他们奇特的天性在社会中是一种阻碍，但有些人利用他们的天赋攀登社会阶梯。这些人激发了好奇心，并具有一种权威的气质。卢马人之间在社会地位上的这种分歧，可能会在家庭和朋友之间造成好奇和紧张的关系。",
+                      "其他卢马人发现在鸟族城市的更大社会中生存很困难。据说，这是大城市中紧密联系且排他性的卢马区的主要促成因素。卢马人倾向于自给自足，更喜欢那些理解他们的人陪伴，而不是那些评判他们的人。"
+                    ],
+                    "type": "entries"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/HumblewoodCampaignSetting/races/Luma-Cleric-of-Ardea.webp"
+            },
+            "width": 453,
+            "height": 612
+          }
+        ]
+      }
+    }
+  ]
+}

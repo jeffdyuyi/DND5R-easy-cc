@@ -1,0 +1,21 @@
+[
+  {
+    "name": "大杯",
+    "ENG_name": "Tankard",
+    "source": "PHB",
+    "page": 153,
+    "type": "G",
+    "rarity": "none",
+    "weight": 1,
+    "value": 2,
+    "entries": [
+      "一个大杯可容纳1品脱液体。"
+    ],
+    "basicRules": true,
+    "referenceSources": [
+      "WDH",
+      "SjA"
+    ],
+    "srd": true
+  }
+]

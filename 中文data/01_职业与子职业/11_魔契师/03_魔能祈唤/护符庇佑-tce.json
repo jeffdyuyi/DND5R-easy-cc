@@ -1,0 +1,26 @@
+{
+  "ENG_name": "Protection of the Talisman",
+  "name": "护符庇佑",
+  "source": "TCE",
+  "page": 71,
+  "isClassFeatureVariant": true,
+  "featureType": [
+    "EI"
+  ],
+  "prerequisite": [
+    {
+      "level": {
+        "level": 7,
+        "class": {
+          "ENG_name": "Warlock",
+          "name": "魔契师"
+        }
+      },
+      "pact": "符之魔契"
+    }
+  ],
+  "entries": [
+    "当佩戴者在一次豁免检定中失败，他们可以在骰掷结果上增加一个{@dice d4}，这可能将结果变为成功。这一能力可使用的次数等于你的熟练加值，在你完成一次长休之后恢复所有已消耗的次数。"
+  ],
+  "translator": "不全书"
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "ENG_name": "Boon of Desperate Resilience",
+    "name": "绝境逢生之恩惠",
+    "source": "FRHoF",
+    "page": 42,
+    "category": "EB",
+    "prerequisite": [
+      {
+        "level": 19
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "con"
+          ]
+        },
+        "max": 30
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Defense of Body and Mind",
+        "name": "心体防护",
+        "type": "entries",
+        "entries": [
+          "{@status 浴血|XPHB}期间，你对除力场伤害外的所有类型伤害具有{@variantrule 抗性|XPHB}。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

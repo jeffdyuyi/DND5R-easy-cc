@@ -1,0 +1,48 @@
+[
+  {
+    "ENG_name": "Bloody Fiddle",
+    "name": "染血小提琴",
+    "source": "CrookedMoon24",
+    "page": 609,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "property": [
+      "TCM'24:CC"
+    ],
+    "entries": [
+      "这把猩红色漆面的小提琴触感温热，如同新鲜血液的热度。尽管它看起来历经风霜，但它的音色依旧清晰且有力。",
+      "当你持有该小提琴时，你在魅力（{@skill 表演|XPHB}）检定上获得+2加值，并且你可以使用以下词条。",
+      {
+        "ENG_name": "Song of Stirred Blood",
+        "name": "热血之歌",
+        "type": "entries",
+        "entries": [
+          "作为一个{@action 魔法|XPHB}动作，你可以在小提琴上演奏一首活泼或激昂的曲调。你30尺内至多六个你选择的生物获得等于{@dice 1d10} + 你的{@variantrule 熟练|XPHB|熟练加值}的{@variantrule 临时生命值|XPHB}，并且如果你有{@classFeature 吟游诗人激励|吟游诗人|XPHB|1}骰子，你可以消耗并掷一个来将其添加到总数中。一旦该属性被使用，直到下一个黄昏前不能再使用。"
+        ]
+      },
+      {
+        "ENG_name": "Sanguine Curse",
+        "name": "血色诅咒",
+        "type": "entries",
+        "entries": [
+          "每当你完成一次{@variantrule 长休|XPHB}后首次拉奏该小提琴时，你会受到1点无视{@variantrule 抗性|XPHB}的挥砍伤害。当你使用热血之歌属性时，该挥砍伤害提升1点。"
+        ]
+      }
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Bloody%20Fiddle.webp"
+          },
+          "width": 832,
+          "height": 1200,
+          "credit": "Margarita Bourkova"
+        }
+      ]
+    }
+  }
+]

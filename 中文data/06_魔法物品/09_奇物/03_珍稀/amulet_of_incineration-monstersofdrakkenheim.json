@@ -1,0 +1,64 @@
+[
+  {
+    "ENG_name": "Amulet of Incineration",
+    "name": "焚烧护符",
+    "source": "MonstersOfDrakkenheim",
+    "page": 382,
+    "rarity": "rare",
+    "wondrous": true,
+    "entries": [
+      "这件护符由一颗熵能烈焰的元素粉尘制成的宝石打造而成，宝石镶嵌在一个骨头符之魔契中，并涂有异怪的鲜血，内部闪烁着永不熄灭的火焰。",
+      "每回合一次，当你使用法术位施放一个造成火焰伤害的法术时，你可以选择一个被该法术造成火焰伤害的目标获得{@condition 燃烧|MonstersOfDrakkenheim}（{@dice 3d6}火焰）状态。",
+      {
+        "ENG_name": "Crafting",
+        "name": "手作",
+        "type": "entries",
+        "entries": [
+          "制作焚烧护符需要一个珍稀工坊和以下珍稀成分：",
+          {
+            "type": "list",
+            "items": [
+              {
+                "ENG_name": "[Animus]",
+                "name": "[精魄]",
+                "type": "item",
+                "entries": [
+                  "元素生物的精魄"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Bones]",
+                "name": "[骨头]",
+                "type": "item",
+                "entries": [
+                  "怪兽的棘刺"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Dust]",
+                "name": "[粉尘]",
+                "type": "item",
+                "entries": [
+                  "来自{@creature 熵能烈焰|MonstersOfDrakkenheim}的元素粉尘"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Fluid]",
+                "name": "[流体]",
+                "type": "item",
+                "entries": [
+                  "异怪的怪物鲜血"
+                ],
+                "nameDot": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluffImages": true
+  }
+]

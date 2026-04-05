@@ -1,0 +1,17 @@
+{
+  "ENG_name": "Disarming Attack",
+  "name": "缴械攻击",
+  "source": "XPHB",
+  "page": 95,
+  "featureType": [
+    "MV:B"
+  ],
+  "consumes": {
+    "ENG_name": "Superiority Die",
+    "name": "卓越骰"
+  },
+  "entries": [
+    "你以攻击检定命中一个生物时，可消耗一枚卓越骰以尝试缴械目标。将消耗的卓越骰加在此次攻击的伤害掷骰中。目标必须通过一次力量豁免，豁免失败则其丢弃手中持握的一件物品（由你选择）。被丢弃的物品将掉落在该生物处于的空间中。"
+  ],
+  "translator": "不全书"
+}

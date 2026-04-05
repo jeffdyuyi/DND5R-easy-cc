@@ -1,0 +1,79 @@
+[
+  {
+    "ENG_name": "Krail's Maggot",
+    "name": "克拉尔之蛆",
+    "source": "BookOfEbonTides",
+    "page": 64,
+    "level": 2,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "s": true,
+      "m": "一只活蛆"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "一只6英寸长的蛆在范围内你选择的生物体内形成，并开始从内部吞食目标。在范围内时，对你的目标进行一次近战法术攻击。命中时，目标受到蛆造成的等于{@dice 1d8} + 你的施法属性调整值的暗蚀伤害。在你后续的每个回合中，你可以用一个附赠动作对目标重复此攻击。",
+      "在你的目标回合中，它可以以一个动作用一把能造成穿刺或挥砍伤害的武器对蛆发动一次近战武器攻击。该蛆的护甲等级等于你的法术豁免DC，并且每使用一个法术位环阶创造它时获得8点生命值。如果你的目标击中蛆，一半的伤害由蛆承受，另一半由目标自身承受。如果蛆被杀死，法术结束。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用3环或更高法术位施放该法术时，伤害对每个高于2环的法术位环阶增加{@dice 1d8}。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    },
+    "spellAttack": [
+      "M"
+    ],
+    "miscTags": [
+      "UBA"
+    ]
+  }
+]

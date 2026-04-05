@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Vampire Hunter",
+    "name": "血族猎人",
+    "source": "ABH",
+    "page": 8,
+    "category": "O",
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Adroit Escape",
+        "name": "灵巧逃脱",
+        "type": "entries",
+        "entries": [
+          "你在尝试挣脱非魔法束缚或{@condition 受擒|XPHB}状态时具有{@variantrule 优势|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Vitality Ward",
+        "name": "活力护盾",
+        "type": "entries",
+        "entries": [
+          "当你受到暗蚀伤害时，你可以采取一个{@variantrule 反应|XPHB}来减轻伤害。投掷等同于你{@variantrule 熟练|XPHB|熟练加值}的d6骰子，并将它们相加。将你受到的暗蚀伤害减少此总数。一旦你使用此好处，在完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}之前，你无法再次使用它。"
+        ]
+      }
+    ]
+  }
+]

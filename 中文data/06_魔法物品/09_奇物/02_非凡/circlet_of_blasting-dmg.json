@@ -1,0 +1,48 @@
+[
+  {
+    "ENG_name": "Circlet of Blasting",
+    "name": "爆裂头饰",
+    "source": "DMG",
+    "page": 158,
+    "srd": true,
+    "referenceSources": [
+      "ToA",
+      "WDMM"
+    ],
+    "reprintedAs": [
+      "爆裂头饰|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "佩戴此头饰期间，你可以用一个动作通过其施放{@spell 灼热射线}法术。当你进行该法术的攻击时，你的攻击加值为{@hit 5}。直到次日黎明前，头饰都无法再次以该方式使用。"
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "灼热射线"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表F"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Circlet of Blasting.webp"
+          },
+          "width": 1000,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

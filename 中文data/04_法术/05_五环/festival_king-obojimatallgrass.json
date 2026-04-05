@@ -1,0 +1,63 @@
+[
+  {
+    "ENG_name": "Festival King",
+    "name": "庆典之王",
+    "source": "ObojimaTallGrass",
+    "page": 185,
+    "level": 5,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一条小型丝带"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "选择一个范围内的生物。一顶华丽王冠和斗篷出现在目标身上，伴随着一组无形的黄铜乐器排列。在持续时间内，目标成为庆典之王并拥有一个重要性光环从它们身上散发出来。任何生物若在一个回合内首次移动到距离庆典之王20尺内的空间或在其回合开始时位于该处，则必须进行一次魅力豁免检定。无法被{@condition 魅惑}的生物自动通过此豁免检定。若豁免失败，该生物会对庆典之王着迷，围绕它们欢呼和跳舞。在法术效应影响下，生物在其回合开始时花费动作和附赠动作将所有注意力和赞美献给庆典之王。",
+      "如果一个生物在庆典之王的光环外开始其回合，它将不再受到该法术的效应影响。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "savingThrow": [
+      "魅力"
+    ],
+    "miscTags": [
+      "UBA"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Custom/Spells/Festival%20King.webp"
+  }
+]

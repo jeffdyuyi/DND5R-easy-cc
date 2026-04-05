@@ -1,0 +1,86 @@
+[
+  {
+    "ENG_name": "Biohazard",
+    "name": "生物危害",
+    "source": "GuideDrakkenheim",
+    "page": 187,
+    "level": 2,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一根枯萎的根和一滴醋"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你在法术持续时间内用剧毒污泥覆盖一个15尺宽的立方区域。该区域是困难地形并充满危险烟雾。进入该区域或在其内开始回合的生物必须进行一次体质豁免检定。豁免失败时，该生物受到{@damage 1d8}毒素伤害并陷入{@condition 中毒}状态直到其下个回合开始。即使生物屏住呼吸或不需要呼吸也会受到影响。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "如果你使用3环或更高法术位施放该法术，则法术位每比2环高一级，伤害就增加{@dice 1d8}"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "毒素"
+    ],
+    "conditionInflict": [
+      "中毒"
+    ],
+    "savingThrow": [
+      "体质"
+    ],
+    "miscTags": [
+      "DFT"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    }
+  }
+]

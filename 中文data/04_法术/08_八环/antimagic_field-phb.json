@@ -1,0 +1,130 @@
+[
+  {
+    "ENG_name": "Antimagic Field",
+    "name": "反魔法场",
+    "source": "PHB",
+    "page": 213,
+    "srd": true,
+    "basicRules": true,
+    "referenceSources": [
+      "HotDQ",
+      "OotA",
+      "CoS",
+      "SKT",
+      "ToA",
+      "WDH",
+      "LLK",
+      "WDMM",
+      "DC",
+      "BGDIA",
+      "IDRotF",
+      "ToFW"
+    ],
+    "reprintedAs": [
+      "反魔法场|XPHB"
+    ],
+    "level": 8,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "sphere",
+      "distance": {
+        "type": "feet",
+        "amount": 10
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一撮铁粉或铁屑"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "半径 10 尺的隐形球状反魔法能量环绕着你，将该区域与弥漫在多元宇宙间的魔法能量隔离开来。在反魔法场内：法术无法施放；召唤生物消失无踪；魔法物品也失去其效应。反魔法场将以你为中心移动，直至法术终止。",
+      "除非其来自神器或神本身，否则任何法术和魔法效应都将在场内受压制而无法波及力场内部。在场内施放的法术，其效应被压制的同时其使用的法术位依然被消耗。被压制的魔法效应不会生效，但其持续时间仍然如常计算。",
+      {
+        "ENG_name": "Targeted Effects",
+        "name": "目标效应",
+        "type": "entries",
+        "entries": [
+          "法术或其他魔法效应以生物或物件为目标时（比如{@spell 魔法飞弹}和{@spell 魅惑类人}），无法对反魔法场内的目标生效。"
+        ]
+      },
+      {
+        "ENG_name": "Areas of Magic",
+        "name": "魔法区域",
+        "type": "entries",
+        "entries": [
+          "法术和其他魔法效应产生的区域影响（比如{@spell 火球术}），无法波及场内部。如果场与某一魔法效应重叠，则该效应在重叠部分被压制。例如，当力场与火墙术产生的火焰重叠时，重叠区域的火焰被压制。如果重叠区域够大，甚至可以将火墙从中间截断。"
+        ]
+      },
+      {
+        "ENG_name": "Spells",
+        "name": "法术",
+        "type": "entries",
+        "entries": [
+          "场中的生物或物件身上生效的法术或其他魔法效应会受到压制。"
+        ]
+      },
+      {
+        "ENG_name": "Magic Items",
+        "name": "魔法物品",
+        "type": "entries",
+        "entries": [
+          "魔法物品的属性和威能在场中受到压制。例如，一把长剑+1 在场中视为一把非魔法长剑。",
+          "用以攻击场内目标的魔法武器以及被身处反魔法场内的攻击者持用的魔法武器，它们的属性和威力都将受到压制。如果一把魔法武器或是一发魔法弹药完全离开反魔法场范围（例如，你从反魔法场内向场外的某个目标发射一支箭矢或是投掷一把标枪），则其中的魔法将在离开力场的瞬间得以恢复。"
+        ]
+      },
+      {
+        "ENG_name": "Magical Travel",
+        "name": "魔法旅行",
+        "type": "entries",
+        "entries": [
+          "以场内区域为起点或终点的传送或位面旅行效应无法生效。在场内，通往某地、某世界或某位面的传送门，以及次元空间的入口（诸如魔绳术所创造的区域）都被暂时关闭。"
+        ]
+      },
+      {
+        "ENG_name": "Creatures and Objects",
+        "name": "生物和物件",
+        "type": "entries",
+        "entries": [
+          "在场内，由魔法创造或召唤的生物或物件暂时消失。如此消失的生物，在场不再覆盖其所占据空间时立刻在该处重新出现。"
+        ]
+      },
+      {
+        "ENG_name": "Dispel Magic",
+        "name": "解除魔法",
+        "type": "entries",
+        "entries": [
+          "任何法术及魔法效应（包括{@spell 解除魔法}）均对反魔法场无效。自然，不同来源的{@spell 反魔法场}之间也不会相互抵消。"
+        ]
+      }
+    ],
+    "miscTags": [
+      "OBJ"
+    ],
+    "areaTags": [
+      "S"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师",
+      "法师"
+    ],
+    "display_school": "防护系"
+  }
+]

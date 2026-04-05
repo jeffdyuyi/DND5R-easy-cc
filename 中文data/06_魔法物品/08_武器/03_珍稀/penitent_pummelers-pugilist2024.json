@@ -1,0 +1,13 @@
+[
+  {
+    "ENG_name": "Penitent Pummelers",
+    "name": "悔罪圣拳",
+    "source": "Pugilist2024",
+    "rarity": "rare",
+    "type": "M",
+    "bonusWeapon": "+1",
+    "entries": [
+      "攻击和伤害掷骰+1加值。命中邪魔或亡灵额外造成1d12光耀伤害。"
+    ]
+  }
+]

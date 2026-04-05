@@ -1,0 +1,68 @@
+[
+  {
+    "ENG_name": "Veil of the Reaper",
+    "name": "死神面纱",
+    "source": "CrookedMoon14",
+    "page": 133,
+    "reprintedAs": [
+      "死神面纱|crookedmoon24"
+    ],
+    "level": 2,
+    "school": "I",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一个干玉米壳或小麦秸秆"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你用幽影缠绕自身，在攻击之间以面纱遮蔽自己。在任何你以攻击检定命中一个生物的回合结束时，你变为{@condition 隐形}直到你的下个回合开始。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Spells/Veil-of-the-Reaper.webp"
+  }
+]

@@ -1,0 +1,350 @@
+{
+  "ENG_name": "Green Reaper",
+  "name": "绿林死神",
+  "shortName": "绿林死神",
+  "source": "GrimHollowPG24",
+  "className": "游侠",
+  "classSource": "XPHB",
+  "page": 84,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "3": [
+          "侦测毒性和疾病|XPHB"
+        ],
+        "5": [
+          "定身类人|XPHB"
+        ],
+        "9": [
+          "降咒|XPHB"
+        ],
+        "13": [
+          "高等隐形术|XPHB"
+        ],
+        "17": [
+          "死云术|XPHB"
+        ]
+      }
+    }
+  ],
+  "subclassSpells": [
+    "侦测毒性和疾病|XPHB",
+    "定身类人|XPHB",
+    "降咒|XPHB",
+    "高等隐形术|XPHB",
+    "死云术|XPHB",
+    "防护毒素|XPHB"
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "Green Reaper",
+      "name": "绿林死神",
+      "source": "GrimHollowPG24",
+      "page": 84,
+      "className": "游侠",
+      "classSource": "XPHB",
+      "subclassShortName": "绿林死神",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "entries": [
+        "{@i 以自然之毒剿灭}",
+        "绿林死神是专门利用动植物分布中有毒元素的刺客。这些游侠通常作为雇佣杀手工作，利用他们广泛的知识来悄无声息或血腥华丽地结束生命，这取决于所使用的毒素和顾客的许愿。绿林死神在遇到他们不熟悉的毒素时会表现出病态的好奇，通常随后会在下一个敌人身上热情地应用这种材质。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "淬毒攻击|游侠|XPHB|绿林死神|GrimHollowPG24|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "剧毒精工|游侠|XPHB|绿林死神|GrimHollowPG24|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "绿林死神法术|游侠|XPHB|绿林死神|GrimHollowPG24|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Envenomed Attack",
+      "name": "淬毒攻击",
+      "source": "GrimHollowPG24",
+      "page": 84,
+      "className": "游侠",
+      "classSource": "XPHB",
+      "subclassShortName": "绿林死神",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "作为{@variantrule 附赠动作|XPHB}，你可以将一剂毒药涂抹在一件武器或最多20发弹药上。一旦涂抹，毒药将在1分钟内保持其潜能。你用{@condition 中毒}物品进行的攻击在命中时额外造成{@damage 1d4}毒素伤害。",
+        "你可以使用该特性的次数等于你的感知调整值（最少 1 次）。你在完成一次{@variantrule 长休|XPHB}时重获所有已消耗的使用次数。",
+        "在游侠等级11级时，额外的毒素伤害增加到{@dice 2d4}，并且你在完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}后恢复所有已消耗的使用次数。"
+      ]
+    },
+    {
+      "ENG_name": "Green Reaper Spells",
+      "name": "绿林死神法术",
+      "source": "GrimHollowPG24",
+      "page": 84,
+      "className": "游侠",
+      "classSource": "XPHB",
+      "subclassShortName": "绿林死神",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "当你达到绿林死神法术表格中指定的游侠等级时，你将始终准备所列法术。",
+        {
+          "type": "table",
+          "caption": "绿林死神法术",
+          "colLabels": [
+            "游侠等级",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "3rd",
+              "{@spell 侦测毒性和疾病|XPHB}"
+            ],
+            [
+              "5th",
+              "{@spell 定身类人|XPHB}"
+            ],
+            [
+              "9th",
+              "{@spell 降咒|XPHB}"
+            ],
+            [
+              "13th",
+              "{@spell 高等隐形术|XPHB}"
+            ],
+            [
+              "17th",
+              "{@spell 死云术|XPHB}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Toxic Tradecraft",
+      "name": "剧毒精工",
+      "source": "GrimHollowPG24",
+      "page": 84,
+      "className": "游侠",
+      "classSource": "XPHB",
+      "subclassShortName": "绿林死神",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "toolProficiencies": [
+        {
+          "poisoner's kit": true
+        }
+      ],
+      "header": 1,
+      "entries": [
+        "你获得一个{@item 毒药工具|XPHB}，并且你对其具有熟练。此外，你在使用{@item 毒药工具|XPHB}进行属性检定时，{@variantrule 熟练|XPHB|熟练加值}翻倍。如果你丢失了这套工具，你可以花费1小时采集有毒植物和毒液动物来魔法般地制作一个替代品。这个采集过程可以在{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}期间进行，并且会销毁之前的{@item 毒药工具|XPHB}。",
+        "每回合当你用武器攻击对生物造成毒素伤害时，你可以消耗一个法术位（无需动作）。该攻击额外造成{@damage 1d6}毒素伤害，且目标获得{@condition 中毒|XPHB}状态直到你的下个回合结束。你也可以从下方适当列表中选择一个毒素效应添加。所有毒素效应持续到你的下个回合结束，除非其描述中另有说明。",
+        {
+          "ENG_name": "Level 1 Spell Slot Effects",
+          "name": "1环法术效应",
+          "type": "inset",
+          "entries": [
+            "当你消耗1环或更高法术位时，选择下列效应之一添加到毒素中。",
+            {
+              "ENG_name": "Attenuate",
+              "name": "削弱",
+              "type": "entries",
+              "entries": [
+                "当生物因该毒素而处于{@condition 中毒|XPHB}状态时，它在力量和敏捷豁免检定上具有{@variantrule 劣势|XPHB}。"
+              ]
+            },
+            {
+              "ENG_name": "Befuddled",
+              "name": "摧心",
+              "type": "entries",
+              "entries": [
+                "当生物因该毒素而处于{@condition 中毒|XPHB}状态时，它无法说话、阅读或书写，并且在维持{@status 专注|XPHB}法术时进行的豁免检定具有{@variantrule 劣势|XPHB}。"
+              ]
+            },
+            {
+              "ENG_name": "Uncoordinated",
+              "name": "失调",
+              "type": "entries",
+              "entries": [
+                "当生物因该毒素而处于{@condition 中毒|XPHB}状态时，它不能使用{@variantrule 反应|XPHB|反应}或执行{@action 撤离|XPHB}或{@action 回避|XPHB}动作。"
+              ]
+            }
+          ]
+        },
+        {
+          "ENG_name": "Level 2 Spell Slot Effects",
+          "name": "2环法术效应",
+          "type": "inset",
+          "entries": [
+            "当你消耗一个2环或更高等级的法术位时，选择下列效应之一添加到毒素中。",
+            {
+              "ENG_name": "Debilitate",
+              "name": "衰弱",
+              "type": "entries",
+              "entries": [
+                "1分钟内，该生物无法恢复{@variantrule 生命值|XPHB}。"
+              ]
+            },
+            {
+              "ENG_name": "Potent",
+              "name": "强效",
+              "type": "entries",
+              "entries": [
+                "1分钟内，该生物失去对毒素伤害的{@variantrule 抗性|XPHB}。"
+              ]
+            },
+            {
+              "ENG_name": "Suffer",
+              "name": "苦痛",
+              "type": "entries",
+              "entries": [
+                "1分钟内，生物在每个回合第一次受到毒素伤害时，额外受到{@damage 1d6}毒素伤害。"
+              ]
+            }
+          ]
+        },
+        {
+          "ENG_name": "Level 3 Spell Slot Effects",
+          "name": "3环法术效应",
+          "type": "inset",
+          "entries": [
+            "当你消耗一个3环或更高等级的法术位时，选择下列效应之一添加到毒素中。",
+            {
+              "ENG_name": "Lingering",
+              "name": "缠留",
+              "type": "entries",
+              "entries": [
+                "该生物不会在你的下一个回合结束时结束，而是获得{@condition 中毒|XPHB}状态10分钟。在此期间，它在结束自身{@condition 中毒|XPHB}状态的豁免检定上具有{@variantrule 劣势|XPHB}。在该生物的每个回合结束时，它可以进行一次体质豁免检定来结束{@condition 中毒|XPHB}状态。"
+              ]
+            },
+            {
+              "ENG_name": "Supernatural",
+              "name": "超然",
+              "type": "entries",
+              "entries": [
+                "当你用一个{@condition 中毒}物品对一个生物造成伤害时，该生物失去对{@condition 中毒|XPHB}状态的{@variantrule 免疫|XPHB}，然后获得{@condition 中毒|XPHB}状态1分钟。在该生物的每个回合结束时，它可以进行一次体质豁免检定来结束{@condition 中毒|XPHB}状态并恢复其对{@condition 中毒|XPHB}状态的{@variantrule 免疫|XPHB}。"
+              ]
+            }
+          ]
+        },
+        {
+          "ENG_name": "Level 4 Spell Slot Effects",
+          "name": "4环法术效应",
+          "type": "inset",
+          "entries": [
+            "当你消耗一个4环或更高等级的法术位时，选择以下效应之一添加到毒素中。",
+            {
+              "ENG_name": "Flesh Eating",
+              "name": "噬肉",
+              "type": "entries",
+              "entries": [
+                "1分钟内，该生物处于{@condition 中毒|XPHB}状态。当生物因该毒素而处于中毒状态时，它会在其每回合开始时受到{@damage 2d6}强酸伤害。"
+              ]
+            },
+            {
+              "ENG_name": "Insensate",
+              "name": "失感",
+              "type": "entries",
+              "entries": [
+                "当生物因该毒素而处于{@condition 中毒|XPHB}状态时，它同时也会处于{@condition 目盲|XPHB}和{@condition 耳聋|XPHB}状态。"
+              ]
+            },
+            {
+              "ENG_name": "Paraplegia",
+              "name": "截瘫",
+              "type": "entries",
+              "entries": [
+                "当生物因该毒素而处于{@condition 中毒|XPHB}状态时，其{@variantrule 速度|XPHB}缩小至0，并且在敏捷豁免检定上具有{@variantrule 劣势|XPHB}。"
+              ]
+            }
+          ]
+        },
+        {
+          "ENG_name": "Level 5 Spell Slot Effects",
+          "name": "5环法术效应",
+          "type": "inset",
+          "entries": [
+            "当你消耗一个5环法术位时，选择以下效应之一添加到毒素中。",
+            {
+              "ENG_name": "Enhanced",
+              "name": "强化",
+              "type": "entries",
+              "entries": [
+                "应用一个4环法术效应列表中的选项，以及一个1环或2级法术位效果列表中的额外选项。"
+              ]
+            },
+            {
+              "ENG_name": "Stinging Application",
+              "name": "刺痛注毒",
+              "type": "entries",
+              "entries": [
+                "1分钟内，每回合一次，当你用一件{@condition 中毒}物品命中一个生物时，该攻击额外造成{@damage 5d6}伤害。伤害类型可从强酸、暗蚀或毒素中选择。"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Poison Control",
+      "name": "毒性控制",
+      "source": "GrimHollowPG24",
+      "page": 84,
+      "className": "游侠",
+      "classSource": "XPHB",
+      "subclassShortName": "绿林死神",
+      "subclassSource": "GrimHollowPG24",
+      "level": 7,
+      "resist": [
+        "毒素"
+      ],
+      "header": 2,
+      "entries": [
+        "你获得对毒素伤害的{@variantrule 抗性|XPHB}，并且在避免或结束{@condition 中毒|XPHB}状态的豁免检定上具有{@variantrule 优势|XPHB}。",
+        "此外，你可以不消耗法术位施放{@spell 防护毒素|XPHB}法术。你可以这样做的次数等于你的感知调整值（至少一次），并在完成一次{@variantrule 长休|XPHB}后恢复所有已消耗的使用次数。"
+      ]
+    },
+    {
+      "ENG_name": "Variegated Vexations",
+      "name": "森罗诸苦",
+      "source": "GrimHollowPG24",
+      "page": 85,
+      "className": "游侠",
+      "classSource": "XPHB",
+      "subclassShortName": "绿林死神",
+      "subclassSource": "GrimHollowPG24",
+      "level": 11,
+      "header": 2,
+      "entries": [
+        "每当你使用武器攻击造成毒素伤害时，你可以将该伤害改为强酸或暗蚀伤害。"
+      ]
+    },
+    {
+      "ENG_name": "Pain Tolerance",
+      "name": "痛苦耐受",
+      "source": "GrimHollowPG24",
+      "page": 85,
+      "className": "游侠",
+      "classSource": "XPHB",
+      "subclassShortName": "绿林死神",
+      "subclassSource": "GrimHollowPG24",
+      "level": 15,
+      "header": 2,
+      "entries": [
+        "你已学会快速使自己适应伤害。在你受到60尺内一个你能看见的生物造成的伤害前，你可以使用一个{@variantrule 反应|XPHB}来获得等同于所受伤害的{@variantrule 临时生命值|XPHB}。如果这些{@variantrule 临时生命值|XPHB}在你的下个回合结束时仍有剩余，它们会消隐。"
+      ]
+    }
+  ],
+  "hasFluff": true,
+  "hasFluffImages": true
+}

@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Charm of the Void",
+    "name": "虚空护咒",
+    "source": "BMT",
+    "page": 62,
+    "type": "Charm",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "limited": {
+              "3": [
+                "放逐术"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "entries": [
+      "你可以施放{@spell 放逐术}，无需材质成分且使用你的智力、感知或魅力作为施法属性（由你选择）。当使用了3次之后，该护咒从你身上消失。"
+    ]
+  }
+]

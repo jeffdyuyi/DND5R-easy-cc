@@ -1,0 +1,52 @@
+[
+  {
+    "ENG_name": "Javelin of Lightning",
+    "name": "闪电标枪",
+    "source": "DMG",
+    "page": 178,
+    "srd": true,
+    "referenceSources": [
+      "TftYP-AtG",
+      "PaBTSO",
+      "CoA",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "闪电标枪|XDMG"
+    ],
+    "baseItem": "标枪|PHB",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "uncommon",
+    "weight": 2,
+    "weaponCategory": "simple",
+    "property": [
+      "T"
+    ],
+    "range": "30/120",
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "entries": [
+      "这把标枪是魔法武器。当你投掷它并说出命令语时，它将转变为一道闪电束，形成一条5尺宽的直线从你延伸至120尺内的一个目标。直线上除你和目标之外的每个生物必须进行一次{@dc 13}的敏捷豁免，豁免失败则受到{@damage 4d6}点闪电伤害，豁免成功则伤害减半。闪电束到达目标时变回标枪。对目标进行一次远程武器攻击。命中时，目标受到标枪的伤害外加{@damage 4d6}点闪电伤害。",
+      "标枪的这个属性直到次日黎明前都无法再次启动。在此期间，标枪仍然可以当做魔法武器使用。"
+    ],
+    "lootTables": [
+      "魔法物品表F"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Javelin of Lightning.webp"
+          },
+          "width": 1000,
+          "height": 968
+        }
+      ]
+    }
+  }
+]

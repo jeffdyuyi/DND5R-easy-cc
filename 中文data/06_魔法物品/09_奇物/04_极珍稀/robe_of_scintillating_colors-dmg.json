@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "Robe of Scintillating Colors",
+    "name": "虹光法袍",
+    "source": "DMG",
+    "page": 194,
+    "srd": true,
+    "referenceSources": [
+      "ToA",
+      "CM",
+      "LRDT"
+    ],
+    "reprintedAs": [
+      "虹光法袍|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "这件长袍有3发充能，并在每天黎明时恢复{@dice 1d3}发已消耗的充能。着装这件长袍期间，你可以用一个动作并消耗1发充能，让长袍显现不断变幻的炫目色彩直到你的下回合结束。在此期间，长袍提供30尺的明亮光照和额外30尺的微光光照。能看到你的生物对你发动的攻击检定具有劣势。另外，在长袍效应激活时，任何处于明亮光照区域内且能看到你的生物必须成功通过一次{@dc 15}的感知豁免否则陷入{@condition 震慑}状态直到效应结束。"
+    ],
+    "light": [
+      {
+        "bright": 30,
+        "dim": 60
+      }
+    ],
+    "lootTables": [
+      "魔法物品表H"
+    ],
+    "valueReference": 40000,
+    "type": "W"
+  }
+]

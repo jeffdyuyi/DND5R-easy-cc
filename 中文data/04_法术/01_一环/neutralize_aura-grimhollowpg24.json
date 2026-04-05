@@ -1,0 +1,74 @@
+[
+  {
+    "ENG_name": "Neutralize Aura",
+    "name": "中和灵光",
+    "source": "GrimHollowPG24",
+    "page": 197,
+    "level": 1,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一株智者"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你接触一个愿意的生物并中和其灵光。直到法术结束前，目标无法被妖精、邪魔、天族和亡灵感知到。",
+      "该法术在目标进行攻击检定、造成伤害、施放法术或在5尺内移动至其中一种生物类型后立即提前结束。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "使用的法术位每比一环高一环，你就可以额外选择一个生物作为目标。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Paladin",
+          "name": "圣武士",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "miscTags": [
+      "SCT"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Neutralize%20Aura.webp"
+  }
+]

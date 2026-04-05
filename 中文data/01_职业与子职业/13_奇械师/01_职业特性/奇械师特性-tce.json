@@ -1,0 +1,187 @@
+[
+    {
+        "ENG_name": "Magical Tinkering",
+        "name": "魔法工艺",
+        "source": "TCE",
+        "page": 9,
+        "className": "奇械师",
+        "classSource": "TCE",
+        "level": 1,
+        "entries": [
+            "第 1 级时，你学会了如何在平凡的物品中注入魔法的火花。在使用 {@item 盗贼工具|PHB} 或其它 {@filter 工匠工具|items|category=基础|type=工匠工具} 的情况下，你可以通过一个动作接触一件不具魔法的微型物体，并赋予其以下一种魔法属性：",
+            {
+                "type": "list",
+                "items": [
+                    "该物体在其 5 尺半径内发出明亮光亮，在其外 5 尺半径内发出微弱光亮。",
+                    "每当被一个生物点击时，该物体会播放一段长度不超过 6 秒的录音。",
+                    "该物体不断发出一种自选的味道或声音（嗅觉或听觉）。",
+                    "该物体的表面显现出一张视觉图像。该图像可以包含文本，且至多有 25 个单词。"
+                ]
+            },
+            "被赋予该属性的物体至多可以同时存在等同于你智力调整值（至少为 1）的数量。若你尝试赋予超过该数量，则最先赋予的属性将立刻消失。"
+        ]
+    },
+    {
+        "ENG_name": "Spellcasting",
+        "name": "施法",
+        "source": "TCE",
+        "page": 9,
+        "className": "奇械师",
+        "classSource": "TCE",
+        "level": 1,
+        "entries": [
+            "你通过发明、构思和奇想来导引奥法能量。智力是你的施法关键属性。",
+            "作为名为奇械师的施法者，你必须使用工具作为 {@note 施法法器|PHB}。你可以使用 {@item 盗贼工具|PHB} 或任何你具有熟练项的 {@filter 工匠工具|items|category=基础|type=工匠工具}。当你获得 2 级的物品注法特性时，你也可以使用其中一个注法物品作为法器。"
+        ]
+    },
+    {
+        "ENG_name": "Infuse Item",
+        "name": "物品注法",
+        "source": "TCE",
+        "page": 9,
+        "className": "奇械师",
+        "classSource": "TCE",
+        "level": 2,
+        "entries": [
+            "第 2 级起，你获得了为普通物品注入魔法的能力。你可以在完成一次长休时，于你的法术书中（或记忆中）选取特定数量的 {@filter 奥法注法|optionalfeatures|featuretype=ai}。注入后的物品将变为魔法物品。",
+            "你可以在完成一次长休时，通过接触相应数量的非魔法物品来激活这些注法。注法数量见职业表中的“注法数量”列。"
+        ]
+    },
+    {
+        "ENG_name": "Artificer Specialist",
+        "name": "奇械师专业",
+        "source": "TCE",
+        "page": 9,
+        "className": "奇械师",
+        "classSource": "TCE",
+        "level": 3,
+        "entries": [
+            "第 3 级起，你选择一种专业。你所选择的专业将在第 3、第 5、第 9、第 15 级获得相应的职业特性。"
+        ]
+    },
+    {
+        "ENG_name": "The Right Tool for the Job",
+        "name": "称手工具",
+        "source": "TCE",
+        "page": 9,
+        "className": "奇械师",
+        "classSource": "TCE",
+        "level": 3,
+        "entries": [
+            "第 3 级时，你掌握了随时随地制造所需工具的方法。通过使用你的 {@item 盗贼工具|PHB} 或任何你具有熟练项的 {@filter 工匠工具|items|category=基础|type=工匠工具} 并在该工具上花费 1 小时的专注，你可以魔法性地制作出一套临时工匠工具。这通常发生在一次短休或长休期间。"
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "TCE",
+        "page": 9,
+        "className": "奇械师",
+        "classSource": "TCE",
+        "level": 4,
+        "entries": [
+            "当你达到第 4 级，以及之后的第 8、12, 16, 19 级时，你可以将你的一项属性值提升 2，或将两项属性值各提升 1。按常理，你不能通过此特性将属性值提升至 20 以上。如果你所使用的规则允许专长，你可以选择以本特性获得一个自选的专长。"
+        ]
+    },
+    {
+        "ENG_name": "Tool Expertise",
+        "name": "工具专精",
+        "source": "TCE",
+        "page": 9,
+        "className": "奇械师",
+        "classSource": "TCE",
+        "level": 6,
+        "entries": [
+            "第 6 级起，你在进行任何需要工具熟练项的属性检定时，你的熟练加值翻倍。"
+        ]
+    },
+    {
+        "ENG_name": "Flash of Genius",
+        "name": "灵光一闪",
+        "source": "TCE",
+        "page": 9,
+        "className": "奇械师",
+        "classSource": "TCE",
+        "level": 7,
+        "entries": [
+            "第 7 级起，你获得了在压力之下迅速想出对策的能力。当你或你周围 30 尺内你能看到的另一个生物进行属性检定或豁免检定时，你可以使用反应将你的智力调整值（至少为 +1）加到该掷骰结果中。",
+            "你可以使用该特性的次数等同于你的智力调整值（至少为 1 次）。当你完成一次长休时，你重获所有已消耗的使用次数。"
+        ]
+    },
+    {
+        "ENG_name": "Magic Item Savant",
+        "name": "魔法物品熟稔",
+        "source": "TCE",
+        "page": 10,
+        "className": "奇械师",
+        "classSource": "TCE",
+        "level": 10,
+        "entries": [
+            "第 10 级时，你对魔法物品的操控达到了非凡的境界：",
+            {
+                "type": "list",
+                "items": [
+                    "你现在可以同时与至多 4 件魔法物品进行同调。",
+                    "如果你在制作一件普通级（common）或非凡级（uncommon）的魔法物品，你只需要常规耗时和耗材的一半。"
+                ]
+            }
+        ]
+    },
+    {
+        "ENG_name": "Spell-Storing Item",
+        "name": "储法物品",
+        "source": "TCE",
+        "page": 11,
+        "className": "奇械师",
+        "classSource": "TCE",
+        "level": 11,
+        "entries": [
+            "第 11 级时，你可以将一个法术储存在一件物体中。每当你完成一次长休，你可以接触一件非魔法武器或一个可作为施法法器的物体。你可以将一个奇械师法术列表中的 1 环或 2 环法术储存在其中（该法术必须具有 1 个动作的施法时间）。",
+            "一个持握该物体的生物可以以一个动作施展其中的法术。该法术使用你的施法关键属性，且物品中的法术可以被施展的次数等同于你的智力调整值的两倍（至少为 2 次）。"
+        ]
+    },
+    {
+        "ENG_name": "Magic Item Adept",
+        "name": "魔法物品专家",
+        "source": "TCE",
+        "page": 11,
+        "className": "奇械师",
+        "classSource": "TCE",
+        "level": 14,
+        "entries": [
+            "第 14 级时，你对魔法物品的理解更进一步：",
+            {
+                "type": "list",
+                "items": [
+                    "你现在可以同时与至多 5 件魔法物品进行同调。",
+                    "你在使用魔法物品时，可以无视所有的职业、种族、阵营或等级限制要求。"
+                ]
+            }
+        ]
+    },
+    {
+        "ENG_name": "Magic Item Master",
+        "name": "魔法物品大师",
+        "source": "TCE",
+        "page": 11,
+        "className": "奇械师",
+        "classSource": "TCE",
+        "level": 18,
+        "entries": [
+            "第 18 级时，你可以同时与至多 6 件魔法物品进行同调。"
+        ]
+    },
+    {
+        "ENG_name": "Soul of Artifice",
+        "name": "奇械之魂",
+        "source": "TCE",
+        "page": 11,
+        "className": "奇械师",
+        "classSource": "TCE",
+        "level": 20,
+        "entries": [
+            "第 20 级时，你与魔法物品建立了某种灵魂连接。你每同调一件魔法物品，你的所有豁免检定便获得 +1 加值。",
+            "此外，如果你将降至 0 点生命值但未立即死亡时，你可以使用反应终止你的一项物品注法，转而使你的生命值变为 1 点。"
+        ]
+    }
+]

@@ -1,0 +1,107 @@
+[
+    {
+        "ENG_name": "Warrior Sidekick",
+        "name": "武者协力者",
+        "source": "TCE",
+        "page": 146,
+        "className": "武者协力者",
+        "classSource": "TCE",
+        "level": 1,
+        "entries": [
+            "{@note 注意：此职业适用于 NPC {@variantrule 协力者|TCE}。}"
+        ]
+    },
+    {
+        "ENG_name": "Bonus Proficiencies",
+        "name": "附赠熟练",
+        "source": "TCE",
+        "page": 146,
+        "className": "武者协力者",
+        "classSource": "TCE",
+        "level": 1,
+        "entries": [
+            "协力者获得以下一项你所选豁免检定的熟练：力量，敏捷或体质。",
+            "此外，协力者获得以下中 2 项你选技能的熟练：{@skill 特技}，{@skill 驯兽}，{@skill 运动}，{@skill 威吓}，{@skill 自然}，{@skill 察觉} 和 {@skill 求生}。",
+            "协力者获得所有护甲的熟练。如果它是一个类人生物或在其资料版中具有一项 {@filter 简易或军用武器|items|source=phb|category=基础|type=军用武器;简易武器}，它也会获得盾牌和所有简易和军用武器的熟练。"
+        ]
+    },
+    {
+        "ENG_name": "Martial Role",
+        "name": "战斗职能",
+        "source": "TCE",
+        "page": 146,
+        "className": "武者协力者",
+        "classSource": "TCE",
+        "level": 1,
+        "entries": [
+            "每位武者都侧重于进攻或防御的训练。从以下选项中选择一项。",
+            {
+                "type": "list",
+                "items": [
+                    "**攻击手 Attacker**：协力者在所有攻击检定时获得 +2 加值。",
+                    "**防御者 Defender**：协力者能以反应迫使某个生物攻击武者身边 5 尺内除武者之外的目标时的一次攻击检定具有劣势。此时协力者必须看见攻击者。"
+                ]
+            }
+        ]
+    },
+    {
+        "ENG_name": "Second Wind",
+        "name": "回气",
+        "source": "TCE",
+        "page": 146,
+        "className": "武者协力者",
+        "classSource": "TCE",
+        "level": 2,
+        "entries": [
+            "协力者可以以一个附赠动作恢复 {@dice 1d10} + 其职业等级的生命值。一旦使用此特性，必须完成一次短休或长休后才能再次使用。在第 20 级时，协力者可以在两次休息之间使用该特性 2 次。"
+        ]
+    },
+    {
+        "ENG_name": "Improved Critical",
+        "name": "精通重击",
+        "source": "TCE",
+        "page": 146,
+        "className": "武者协力者",
+        "classSource": "TCE",
+        "level": 3,
+        "entries": [
+            "协力者的攻击在 {@dice d20} 掷出 19 或 20 时即可造成重击。"
+        ]
+    },
+    {
+        "ENG_name": "Battle Readiness",
+        "name": "备战",
+        "source": "TCE",
+        "page": 146,
+        "className": "武者协力者",
+        "classSource": "TCE",
+        "level": 7,
+        "entries": [
+            "协力者的先攻检定具有优势。"
+        ]
+    },
+    {
+        "ENG_name": "Improved Defense",
+        "name": "精通防御",
+        "source": "TCE",
+        "page": 146,
+        "className": "武者协力者",
+        "classSource": "TCE",
+        "level": 10,
+        "entries": [
+            "协力者的 AC 获得 +1 加值。"
+        ]
+    },
+    {
+        "ENG_name": "Indomitable",
+        "name": "不屈",
+        "source": "TCE",
+        "page": 146,
+        "className": "武者协力者",
+        "classSource": "TCE",
+        "level": 11,
+        "entries": [
+            "协力者可以重掷失败的豁免检定。它必须使用重掷的结果。一旦使用此特性，必须完成一次长休后才能再次使用。第 18 级起，协力者可以在两次长休之间使用两次该特性。"
+        ]
+    }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "ENG_name": "Sickening Radiance",
+    "name": "致病辐射",
+    "source": "XGE",
+    "page": 164,
+    "level": 4,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "选择的施法距离内的一点，绿色的微光以那一点为中心扩散并覆盖 30 尺半径的球状区域。光芒会绕过拐角传播，并会一直持续到法术结束为止。",
+      "当一个生物在某一回合内第一次进入此法术区域内，或者是在其中开始其回合时，该生物必须通过一次体质豁免。豁免失败将受到{@damage 4d10}点光耀伤害并承受一级{@condition 力竭}，且该生物会发散出 5 尺半径的绿色微光。这个光线让生物无法从{@condition 隐形}中获益。光线和由于这个法术所产生的任何等级的{@condition 力竭}在法术结束时消失。"
+    ],
+    "damageInflict": [
+      "radiant"
+    ],
+    "conditionInflict": [
+      "力竭"
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "areaTags": [
+      "S"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "体质"
+    ],
+    "display_damageInflict": [
+      "光辉"
+    ]
+  }
+]

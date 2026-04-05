@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Military Fork",
+    "name": "军用叉刺",
+    "source": "GrimHollowPG24",
+    "page": 128,
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 8,
+    "value": 50000,
+    "weaponCategory": "进阶",
+    "property": [
+      "Haft|GrimHollowPG24",
+      "H|XPHB",
+      "R|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "缴械|GrimHollowPG24"
+    ],
+    "dmg1": "2d6",
+    "dmgType": "P",
+    "weapon": true
+  }
+]

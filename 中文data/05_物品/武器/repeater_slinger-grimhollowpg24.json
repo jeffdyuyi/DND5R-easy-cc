@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Repeater Slinger",
+    "name": "连发弩投手",
+    "source": "GrimHollowPG24",
+    "page": 129,
+    "type": "R|XPHB",
+    "rarity": "none",
+    "weight": 9,
+    "value": 75000,
+    "weaponCategory": "进阶",
+    "property": [
+      "A|XPHB",
+      "Mag|GrimHollowPG24",
+      "Rep|GrimHollowPG24",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "缓速|XPHB"
+    ],
+    "range": "80/300",
+    "dmg1": "1d8",
+    "dmgType": "B",
+    "weapon": true,
+    "ammoType": "投石索子弹|XPHB",
+    "customProperties": {
+      "Magazine": "9"
+    }
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "Skilled",
+    "name": "熟习",
+    "source": "XPHB",
+    "page": 201,
+    "srd52": true,
+    "basicRules2024": true,
+    "category": "O",
+    "repeatable": true,
+    "repeatableHidden": true,
+    "skillToolLanguageProficiencies": [
+      {
+        "choose": [
+          {
+            "from": [
+              "任意技能",
+              "任意工具"
+            ],
+            "count": 3
+          }
+        ]
+      }
+    ],
+    "entries": [
+      "你获得共计三项自选的{@table 技能列表; 技能|XPHB|技能}和{@filter 工具|items|type=工具;工匠工具;乐器;赌具}熟练。",
+      {
+        "ENG_name": "Repeatable",
+        "name": "复选",
+        "type": "entries",
+        "entries": [
+          "你可以多次选择这个专长。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

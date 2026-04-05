@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Fan",
+    "name": "扇",
+    "source": "ObojimaTallGrass",
+    "page": 158,
+    "type": "M",
+    "rarity": "none",
+    "weight": 1,
+    "value": 2,
+    "weaponCategory": "简易",
+    "property": [
+      "F",
+      "L",
+      "S"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "S",
+    "weapon": true,
+    "entries": [
+      {
+        "ENG_name": "Special",
+        "name": "特殊",
+        "type": "entries",
+        "entries": [
+          "当你被远程武器攻击命中时，可以使用你的反应使该攻击的伤害减少一个数值，数值等于你的敏捷调整值。"
+        ]
+      }
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Equipment/fan.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 2381,
+          "height": 2381
+        }
+      ]
+    }
+  }
+]

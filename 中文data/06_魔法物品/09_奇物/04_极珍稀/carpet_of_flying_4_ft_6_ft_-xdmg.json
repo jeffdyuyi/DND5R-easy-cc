@@ -1,0 +1,19 @@
+[
+  {
+    "ENG_name": "Carpet of Flying, 4 ft. × 6 ft.",
+    "name": "飞天魔毯，4尺x6尺",
+    "source": "XDMG",
+    "page": 242,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "very rare",
+    "wondrous": true,
+    "entries": [
+      "你可以用一个{@action 魔法|XPHB}动作，说出飞毯的命令词来让它起飞或悬停。只要你在飞毯周围30尺内，它就会按照你的指示移动。",
+      "一块4英尺×6英尺的地毯可以承载最多400磅的重量，飞行速度为60英尺。飞毯的载重上限为正常载重的两倍，但超过正常载重时飞毯的{@variantrule 飞行速度|XPHB}减半。"
+    ],
+    "translator": "不全书",
+    "valueReference": 40000,
+    "type": "W"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "ENG_name": "Tower Shield",
+    "name": "塔楼盾牌",
+    "source": "GrimHollowPG24",
+    "page": 127,
+    "type": "AdvEq",
+    "rarity": "none",
+    "weight": 50,
+    "value": 20000,
+    "entries": [
+      "这面大型盾牌比普通盾牌提供更多的防护。当你持用塔楼盾牌时，你的{@variantrule 护甲等级|XPHB}获得+3加值。如果你用一个动作架设塔楼盾牌，你将获得{@variantrule 掩护|XPHB|四分之三掩护}直到你的下个回合开始。此外，你的{@variantrule 速度|XPHB}在此期间变为0且无法提升。",
+      "要使用塔楼盾牌，你必须至少有15点力量，并且在装备盾牌时你的{@variantrule 速度|XPHB}会缩小10尺。"
+    ]
+  }
+]

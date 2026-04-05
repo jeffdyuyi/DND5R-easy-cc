@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Blowgun Needle",
+    "name": "带翼吹箭",
+    "source": "BMT",
+    "page": 69,
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "针|XPHB"
+    ],
+    "edition": "classic",
+    "type": "A",
+    "rarity": "uncommon",
+    "weight": 0.02,
+    "value": 2,
+    "needleBlowgun": true,
+    "namePrefix": "带翼",
+    "entries": [
+      "使用这种弹药进行的远程武器攻击检定无视半掩体和{@quickref 掩护||3||四分之三掩护}。此外，使用这种弹药进行远程武器攻击时，远距离攻击不会带来劣势。"
+    ],
+    "_isVariant": true,
+    "valueReference": 200
+  }
+]

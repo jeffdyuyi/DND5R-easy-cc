@@ -1,0 +1,23 @@
+[
+  {
+    "name": "锁",
+    "ENG_name": "Lock",
+    "source": "PHB",
+    "page": 152,
+    "type": "G",
+    "rarity": "none",
+    "weight": 1,
+    "value": 1000,
+    "entries": [
+      "每把锁与一把钥匙相配套。不使用钥匙时，一个具有{@item 盗贼工具|PHB}熟练项的生物可以通过一次成功的{@dc 15}敏捷检定撬开这把锁。DM可决定是否能够用更高的价格买到更好的锁。"
+    ],
+    "basicRules": true,
+    "referenceSources": [
+      "ToA"
+    ],
+    "reprintedAs": [
+      "锁|XPHB"
+    ],
+    "srd": true
+  }
+]

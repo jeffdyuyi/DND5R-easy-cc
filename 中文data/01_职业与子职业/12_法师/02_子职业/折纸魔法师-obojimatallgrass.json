@@ -1,0 +1,283 @@
+{
+  "ENG_name": "Origami Mage",
+  "name": "折纸魔法师",
+  "shortName": "折纸魔法师",
+  "source": "ObojimaTallGrass",
+  "className": "法师",
+  "classSource": "PHB",
+  "page": 152,
+  "additionalSpells": [
+    {
+      "prepared": {
+        "2": [
+          "寻获魔宠"
+        ],
+        "10": [
+          "隐形仆役"
+        ]
+      }
+    }
+  ],
+  "subclassSpells": [
+    "寻获魔宠",
+    "隐形仆役"
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "Origami Mage",
+      "name": "折纸魔法师",
+      "source": "ObojimaTallGrass",
+      "page": 152,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "折纸魔法师",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 2,
+      "entries": [
+        "折纸魔法师是一种独特魔法的使用者，这种魔法结合了精准、创意和想象力。他们手腕轻轻一弹，低声念出奥术咒语，就能将简易的纸张转化为令人惊叹的元素力量显迹、神秘存在和奇幻生物。",
+        "从折纸的神秘优雅中汲取灵感，这些魔法师们不受传统法术成分的束缚，而是依靠对纸张的细致操控来引导他们的魔法能量。折纸魔法并非没有挑战。精通这种奥术纪律需要耐心、敏捷和敏锐的鉴识之眼。每一次折纸都必须精确，每一道折痕都必须准确，因为即使是最小的瑕疵也会扰乱魔法流动并使法术失效。然而，对于那些坚持不懈的人来说，大功告成是无止境的。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "一件奥术艺术品|法师||折纸魔法师|ObojimaTallGrass|2"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "折纸构装|法师||折纸魔法师|ObojimaTallGrass|2"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "折纸魔宠|法师||折纸魔法师|ObojimaTallGrass|2"
+        }
+      ]
+    },
+    {
+      "ENG_name": "An Arcane Art",
+      "name": "一件奥术艺术品",
+      "source": "ObojimaTallGrass",
+      "page": 152,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "折纸魔法师",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 2,
+      "header": 1,
+      "entries": [
+        "在2级时，你学会将魔法编织进折纸中，使你能够创造出壮观的动态艺术品，它们会代表你行动。以一个附赠动作，你可以折叠并赋予生命给一个纸张构装体，其形态可从下方列表中选择。当制作完成时，一个折纸构装体会与你或你能看见的60尺内的另一个你选择的生物连接。",
+        "一个与折纸构装体连接的生物会获得该构装体所列出的独特效应和特性。除非另有说明，否则一个生物不能同时拥有多个相同的折纸构装体与其连接。一个连接的构装体会占据与其连接的生物相同的空间。",
+        "这些构装体会被赋予生命，持续的小时数等于你的法师等级的一半。折纸构装的AC等于你的法术豁免DC，免疫毒素和心灵伤害，并在受到任何伤害时被摧毁。你可以使用此特性创造折纸构装的次数等于你的熟练加值，且你在完成一次长休后恢复所有已消耗的使用次数。"
+      ]
+    },
+    {
+      "ENG_name": "Origami Constructs",
+      "name": "折纸构装",
+      "source": "ObojimaTallGrass",
+      "page": 152,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "折纸魔法师",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 2,
+      "header": 1,
+      "entries": [
+        "这些构装以字母顺序排列。",
+        {
+          "ENG_name": "Bird",
+          "name": "鸟",
+          "type": "entries",
+          "entries": [
+            "当折纸鸟与你连接时，你在{@skill 察觉}技能上获得熟练。此外，每当你用远程攻击命中目标时，额外造成2点挥砍伤害。"
+          ]
+        },
+        {
+          "ENG_name": "Cat",
+          "name": "猫",
+          "type": "entries",
+          "entries": [
+            "当折纸猫与你连接时，你获得{@skill 隐匿}技能的熟练。此外，在你的每个回合中，当你用近战武器攻击命中一个目标时，折纸猫可以对同一目标进行一次近战法术攻击。它的攻击调整值等同于你的武器攻击调整值，命中时目标受到{@damage 1d6}挥砍伤害。",
+            "折纸猫的伤害会随着你在此职业中达到特定等级而提升：5级时为{@dice 1d8}，11级时为{@dice 1d10}，17级时为{@dice 1d12}。"
+          ]
+        },
+        {
+          "ENG_name": "Crab",
+          "name": "蟹",
+          "type": "entries",
+          "entries": [
+            "当折纸蟹与你连接时，你的AC获得+1加值并获得{@skill 运动}技能的熟练项。如果制作这只折纸蟹的法师创造了另一只折纸蟹，这只折纸蟹将被摧毁。"
+          ]
+        },
+        {
+          "ENG_name": "Dragon",
+          "name": "龙",
+          "type": "entries",
+          "entries": [
+            "当折纸龙与你连接时，你在敏捷（{@skill 隐匿}）检定上具有劣势且无法从{@condition 隐形}状态中获得增益。此外，在你的每个回合开始时，你会受到{@damage 1d4}火焰伤害。你可以同时与多条折纸龙连接。"
+          ]
+        },
+        {
+          "ENG_name": "Frog",
+          "name": "青蛙",
+          "type": "entries",
+          "entries": [
+            "当折纸青蛙与你连接时，你获得{@skill 特技}技能的熟练。作为一个反应，当你即将在敏捷豁免检定中失败时，你可以添加一个等于制造该构装体的法师施法属性调整值的附赠动作到掷骰中；使用此特性会摧毁折纸青蛙。",
+            "当该构装体被摧毁时，它会迅速发出一声可听见的爆炸，对5尺范围内的每个生物造成{@damage 2d6}火焰伤害。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Origami Familiar",
+      "name": "折纸魔宠",
+      "source": "ObojimaTallGrass",
+      "page": 153,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "折纸魔法师",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 2,
+      "header": 1,
+      "entries": [
+        "在2级时，你学会{@spell 寻获魔宠}法术；你总是准备着它，且它不计入你每天可准备的法术数量。你的魔宠以折纸版本的形式出现，免疫毒素和心灵伤害，并且是一个构装体，而非天界生物、妖精或邪魔。除了魔宠的正常数据外，它还获得以下属性。",
+        {
+          "ENG_name": "Camouflage",
+          "name": "伪装",
+          "type": "entries",
+          "entries": [
+            "你可以命令你的魔宠转变为一张扁平的纸张形态。在这种形态下，魔宠看起来几乎与一张普通的纸片无异。如果一个生物使用它的动作来检查魔宠，它可以通过一次对抗你法术豁免DC的智力（{@skill 调查}）检定来辨别出魔宠的真实形态。魔宠可以使用一个动作变回它的折纸形态。"
+          ]
+        },
+        {
+          "ENG_name": "Last Resort",
+          "name": "绝境反扑",
+          "type": "entries",
+          "entries": [
+            "作为一个动作，你的折纸魔宠可以俯冲向一个生物，展开自身并包裹住目标的面部，如同一张被风势吹动的纸张。目标必须进行一次对抗你法术豁免DC的敏捷豁免检定，否则陷入{@condition 目盲}状态1分钟。被纸张{@condition 目盲}的生物或能够触碰该生物的生物可以使用其动作进行一次对抗你法术豁免DC的力量检定。若成功，目标不再处于{@condition 目盲}状态。当此效应结束时，你的魔宠被摧毁。"
+          ]
+        },
+        {
+          "ENG_name": "Reconnaissance",
+          "name": "侦察",
+          "type": "entries",
+          "entries": [
+            "以一个动作，你可以命令你的折纸魔宠进行侦察。折纸魔宠会随后花费1分钟聆听15尺范围内的任何和所有声响，并将偷听到的内容记录在其纸张身体上。然后它会回到你身边并解除其魔宠形态，留下一份用你所知且选择的语言书写的侦察结果记录。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Binding Release",
+      "name": "束缚释放",
+      "source": "ObojimaTallGrass",
+      "page": 153,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "折纸魔法师",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "从6级开始，你可以使用一个附赠动作将一个你的折纸构装移动到你30尺内能看见的一个生物处。"
+      ]
+    },
+    {
+      "ENG_name": "Paper Path",
+      "name": "纸张路途",
+      "source": "ObojimaTallGrass",
+      "page": 153,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "折纸魔法师",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "同样在6级时，当你施放一个范围为接触的法术时，你的折纸构装体可以如同它施放了该法术一样传递法术。你的构装体必须在你100尺范围内。如果该法术需要进行攻击检定，你使用你的攻击调整值进行掷骰。"
+      ]
+    },
+    {
+      "ENG_name": "Origami Servant",
+      "name": "折纸仆役",
+      "source": "ObojimaTallGrass",
+      "page": 153,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "折纸魔法师",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "从10级开始，你学会{@spell 隐形仆役}法术；你总是准备着它，且它不计入你每天可准备的法术数量。此外，你可以不消耗法术位施放它，但你同时可拥有的仆役最大数量等于你的法师等级的一半（向上取整）。当你施放它时，会有以下变化：",
+        {
+          "type": "list",
+          "items": [
+            "该法术持续小时数等于你的熟练加值，而非1小时。",
+            "你的仆役显现为一个可见的折纸版本。",
+            "你的折纸仆役对毒素和心灵伤害免疫。",
+            "你的折纸仆役可以穿过窄至1英寸的空间而无需挤过。",
+            "当你使用附赠动作来命令一个仆役时，你可以对每个作为同一附赠动作部分创建的仆役发出独特的命令。",
+            "你的折纸仆役以每轮60尺的速度坠落且不会受到坠落伤害。",
+            "你的折纸仆役可以看见{@condition 隐形}的生物和物件，就好像它们是可见的一样。",
+            "作为一个动作，当你的折纸仆役在你100尺范围内时，你可以通过仆役的双眼观察并聆听它所听到的声音，直到你的下个回合开始，获得仆役拥有的任何特殊感官的增益。在此期间，你自身的感官将处于耳聋和目盲状态。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Arcane Refresh",
+      "name": "奥术恢复",
+      "source": "ObojimaTallGrass",
+      "page": 153,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "折纸魔法师",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "在14级时，你的折纸构装在它们被摧毁时会返还你赋予它们生命时借出的魔法。当你的一个构装被摧毁时，你可以恢复10点生命值或恢复一个2环或更低的法术位（由你选择）。",
+        "此外，当你的一个构装受到伤害时，你可以使用你的反应来抵消该伤害。一旦你使用了这个属性，你必须完成一次长休才能再次使用。"
+      ]
+    }
+  ],
+  "fluff": {
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Subclasses/origami-mage.webp"
+        },
+        "credit": "Alexander Cloos",
+        "width": 3339,
+        "height": 3339
+      }
+    ]
+  },
+  "foundryAdvancement": [
+    {
+      "title": "折纸猫伤害",
+      "type": "ScaleValue",
+      "configuration": {
+        "identifier": "origami-cat-damage",
+        "type": "dice",
+        "scale": {
+          "2": {
+            "number": 1,
+            "faces": 6
+          },
+          "5": {
+            "number": 1,
+            "faces": 8
+          },
+          "11": {
+            "number": 1,
+            "faces": 10
+          },
+          "17": {
+            "number": 1,
+            "faces": 12
+          }
+        }
+      }
+    }
+  ]
+}

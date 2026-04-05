@@ -1,0 +1,19 @@
+[
+  {
+    "ENG_name": "Scroll of Titan Summoning (Animal Lord)",
+    "name": "召唤泰坦卷轴（兽主）",
+    "source": "XDMG",
+    "page": 303,
+    "type": "SC|XPHB",
+    "rarity": "legendary",
+    "entries": [
+      "当你以{@action 魔法|XPHB}动作阅读此卷轴时，一个{@creature 兽主|XMM}会显现在你1里内的地面或水里的未占据空间中。",
+      "{@creature 兽主|XMM}对其他所有生物态度{@variantrule 敌对【态度】|XPHB|敌对}，并将在{@variantrule 生命值|XPHB}降至0时消失。若{@creature 兽主|XMM}被召唤到不足以容纳它的空间中，则召唤失败且卷轴被浪费。"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "translator": "不全书",
+    "valueReference": 200000
+  }
+]

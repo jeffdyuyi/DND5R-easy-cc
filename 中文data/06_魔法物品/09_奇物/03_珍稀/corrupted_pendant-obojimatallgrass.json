@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Corrupted Pendant",
+    "name": "腐化的坠饰",
+    "source": "ObojimaTallGrass",
+    "page": 169,
+    "rarity": "rare",
+    "wondrous": true,
+    "entries": [
+      "这枚精心制作的宝石坠饰内封印着一股黑暗的腐败力量。佩戴它会让你产生前往海洋的古怪欲望。当你佩戴这枚腐化的坠饰时，可以使用一个动作恢复相当于你生命值上限三分之一的数值。以这种方式使用腐化的坠饰会导致一股不自然的突进汲取你的身体，使你无法正常休息。一旦你以这种方式恢复生命值，在下次拂晓前都无法从短休中获得增益。",
+      "一旦该属性被使用，直到下一个拂晓前无法再次使用，之后你必须花费1小时对坠饰表演一个恢复仪式才能恢复该属性的使用。该仪式消耗三份通用语药水原料。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/corrupted-pendant.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 2234,
+          "height": 2234
+        }
+      ]
+    }
+  }
+]

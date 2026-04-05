@@ -1,0 +1,71 @@
+[
+  {
+    "ENG_name": "Conjure Fey",
+    "name": "咒唤妖精",
+    "source": "XPHB",
+    "page": 255,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 6,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你将来自妖精荒野的中型精魂咒唤在施法距离内一处你可见的未占据空间中。精魂在持续时间内一直存在，其外貌看起来像是一名你选择的妖精生物。当精魂显现时，你可以对位于精魂 5 尺内的一名生物进行一次近战法术攻击。命中则目标受到等于{@damage 3d12}加你施法属性调整值总和的心灵伤害，并且直到你的下个回合开始为止，目标处于{@condition 恐慌|XPHB}状态，你和精魂均是目标的恐惧源。",
+      "在后续的你的回合中，以一个{@variantrule 附赠动作|XPHB}附赠动作，你可以将精魂传送至一处位于其原位置 30 尺内的你可见的未占据空间，并对位于精魂 5 尺内的一名生物进行上述攻击。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "使用的法术位每比六环高一环，法术造成的伤害就增加{@scaledamage 3d12|6-9|1d12}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "psychic"
+    ],
+    "conditionInflict": [
+      "恐慌"
+    ],
+    "miscTags": [
+      "SGT",
+      "UBA"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊"
+    ],
+    "display_school": "咒法系",
+    "display_damageInflict": [
+      "心灵"
+    ]
+  }
+]

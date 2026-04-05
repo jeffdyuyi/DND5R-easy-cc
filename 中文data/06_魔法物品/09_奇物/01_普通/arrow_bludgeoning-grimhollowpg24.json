@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Arrow, Bludgeoning",
+    "name": "箭, 钝击",
+    "source": "GrimHollowPG24",
+    "page": 129,
+    "type": "A|XPHB",
+    "rarity": "none",
+    "weight": 0.1,
+    "value": 5,
+    "entries": [
+      "以伤害类型命名的进阶弹药会造成该类型的伤害。箭矢与弩矢可以拥有造成挥砍伤害的宽头或造成钝击伤害的钝头。投石索子弹可以拥有造成穿刺伤害的刻面。所有此类弹药都比正常弹药更重；使用它时武器的最大射程减半。"
+    ],
+    "miscTags": [
+      "CNS"
+    ]
+  }
+]

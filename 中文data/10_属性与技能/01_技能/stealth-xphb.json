@@ -1,0 +1,14 @@
+[
+  {
+    "ENG_name": "Stealth",
+    "name": "隐匿",
+    "source": "XPHB",
+    "page": 14,
+    "srd52": true,
+    "ability": "dex",
+    "entries": [
+      "通过悄悄地移动和藏在事物后面来躲避别人的注意。"
+    ],
+    "translator": "不全书"
+  }
+]

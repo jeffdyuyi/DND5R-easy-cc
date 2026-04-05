@@ -1,0 +1,46 @@
+[
+  {
+    "name": "外交套组",
+    "ENG_name": "Diplomat's Pack",
+    "source": "XPHB",
+    "page": 225,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 39,
+    "value": 3900,
+    "packContents": [
+      "箱子|xphb",
+      "高档服装|xphb",
+      "墨水|xphb",
+      {
+        "item": "墨水笔|xphb",
+        "quantity": 5
+      },
+      "油灯|xphb",
+      {
+        "item": "地图或卷轴匣|xphb",
+        "quantity": 2
+      },
+      {
+        "item": "燃油|xphb",
+        "quantity": 4
+      },
+      {
+        "item": "纸张|xphb",
+        "quantity": 5
+      },
+      {
+        "item": "羊皮纸|xphb",
+        "quantity": 5
+      },
+      "香水|xphb",
+      "火绒盒|xphb"
+    ],
+    "entries": [
+      "外交套组包含以下物品：{@item 箱子|XPHB}、{@item 高档服装|XPHB}、{@item 墨水|XPHB}、5 支{@item 墨水笔|XPHB|墨水笔}、{@item 油灯|XPHB}、2 个{@item 地图或卷轴匣|XPHB|地图或卷轴匣}、4 扁瓶{@item 燃油|XPHB}、5 张{@item 纸张|XPHB}、5 张{@item 羊皮纸|XPHB}、{@item 香水|XPHB}和{@item 火绒盒|XPHB}。"
+    ],
+    "basicRules2024": true,
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

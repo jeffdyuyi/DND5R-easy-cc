@@ -1,0 +1,164 @@
+{
+  "ENG_name": "King of Beasts",
+  "name": "野兽之王",
+  "subclassFeatures": [
+    {
+      "ENG_name": "King of Beasts",
+      "name": "野兽之王",
+      "source": "SterlingVermin:Patreon",
+      "className": "拳斗士",
+      "classSource": "SterlingVermin",
+      "subclassShortName": "野兽之王",
+      "subclassSource": "SterlingVermin:Patreon",
+      "level": 3,
+      "entries": [
+        "绝大多数拳斗士的修行之路始于熙攘的城市，却并非所有人都会留在这里。野兽之王搏击俱乐部的拳斗士以荒野为家，他们发现荒野与大城市的街巷，比自己想象中更为相似 —— 二者奉行的皆是强者为尊的准则。在世间野兽群落中生活的这段时光改变了拳斗士，让他们能唤醒自身强悍的韧性，甚至学会化作自己遇见过的各类野兽形态。这些拳斗士还常与德鲁伊结盟，守护自然世界，抵御那些妄图肆意破坏它的人。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "野兽活力|拳斗士|SterlingVermin|野兽之王|SterlingVermin:Patreon|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "荒野形态|拳斗士|SterlingVermin|野兽之王|SterlingVermin:Patreon|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Bestial Vigor",
+      "name": "野兽活力",
+      "entries": [
+        "当你在3级选择这个搏击俱乐部时，你的生命值上限增加6。每当你在该职业升级时，你的生命值上限增加2。"
+      ],
+      "source": "SterlingVermin:Patreon",
+      "className": "拳斗士",
+      "classSource": "SterlingVermin",
+      "subclassShortName": "野兽之王",
+      "subclassSource": "SterlingVermin:Patreon",
+      "level": 3,
+      "header": 1
+    },
+    {
+      "ENG_name": "Wild Shape",
+      "name": "荒野形态",
+      "entries": [
+        "同样在3级时，你可以使用你的动作魔法般地变形成一个你曾见过的野兽。一旦你使用了这个特性，直到你完成一次短休或长休前都无法再次使用它。",
+        "你的拳斗士等级决定了你可以变形的野兽，如野兽形态表格所示。例如在3级时，你可以变形为挑战等级1/4或更低且没有飞行或游泳速度的任何野兽。",
+        {
+          "type": "table",
+          "caption": "荒野形态表格",
+          "colLabels": [
+            "等级",
+            "最高CR",
+            "限制",
+            "范例"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-2 text-center",
+            "col-5",
+            "col-3"
+          ],
+          "rows": [
+            [
+              "3rd",
+              "{@filter 1/4|bestiary|challenge rating=[&0;&1/4]|type=beast|speed type=!fly;!swim|miscellaneous=!swarm}",
+              "无飞行或游泳速度",
+              "狼"
+            ],
+            [
+              "6th",
+              "{@filter 1/2|bestiary|challenge rating=[&0;&1/2]|type=beast|speed type=!fly|miscellaneous=!swarm}",
+              "无飞行速度",
+              "鳄鱼"
+            ],
+            [
+              "11th",
+              "{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|miscellaneous=!swarm}",
+              "—",
+              "巨鹰"
+            ]
+          ]
+        },
+        "你可以保持野兽形态的小时数等于你拳斗士等级的一半（向下取整）。你可以通过在你的回合使用一个附赠动作提前恢复你的正常形态。如果你昏迷、生命值降至0或死亡，你将自动恢复。",
+        "你变形时必须遵从以下规则：",
+        {
+          "type": "list",
+          "items": [
+            "你的游戏数据替换为新形态的数值，但你仍保持你的阵营、个性，以及智力值、感知值、魅力值。你保留技能与豁免的熟练项，并且获得新形态的技能和豁免熟练项。如果新形态有你已具有的熟练项且该熟练项的加值高于你的熟练加值，则使用新形态的熟练加值。你不能使用新形态可能拥有的传奇动作或巢穴动作。",
+            "变形后，你使用新形态的生命值和生命骰。变回原形时，你的生命值恢复变形之前的数值。而任何让你的生命值降至0的伤害，都可以使你变回原形并承受该伤害的溢出伤害量。例如，你在动物形态下受到了10点伤害而你只剩1点生命值，则你变回原形并受到9点伤害。只要超过的伤害没有将你原形的生命值降至0，你就不会因此陷入 {@condition 昏迷}。",
+            "你无法施放法术，且你说话或执行任何需要手的动作的能力仅限于野兽形态的能力。然而，变形不会打断你已经施放的法术的专注，也不会阻止你执行法术的动作部分，例如你已经施放的{@spell 召雷术}。",
+            "你保持从职业、种族或其它来源特性的收益，并且可以在新形态身体能力允许下使用这些特性。不过，你无法使用任何原有的特殊感官（例如{@sense 黑暗视觉}），除非你的新形态也具有这种感官。",
+            "变形时，你可以选择将你的装备丢在所处空间，或者将其融入新形态，又或者直接着装在身上。新形态直接着装的装备可以如常起作用，但DM有权基于新形态的体型和身姿作出判断，并最终决定新形态使用该装备是否合理。装备不会改变大小来适应新形态，新形态无法着装某装备时，该装备会掉落你所处空间或融入新形态中。融入新形态的装备失去其效应，且在你变回原形时才能恢复。"
+          ]
+        }
+      ],
+      "source": "SterlingVermin:Patreon",
+      "className": "拳斗士",
+      "classSource": "SterlingVermin",
+      "subclassShortName": "野兽之王",
+      "subclassSource": "SterlingVermin:Patreon",
+      "level": 3,
+      "header": 1
+    },
+    {
+      "ENG_name": "War Shape",
+      "name": "战争形态",
+      "source": "SterlingVermin:Patreon",
+      "className": "拳斗士",
+      "classSource": "SterlingVermin",
+      "subclassShortName": "野兽之王",
+      "subclassSource": "SterlingVermin:Patreon",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "在6级时，你可以使用一个附赠动作并消耗一次你的{@subclassFeature 荒野形态|拳斗士|SterlingVermin|野兽之王|SterlingVermin:Patreon|3}来进入战争形态1分钟。当你这样做时，选择一项你可以使用荒野形态特性变身的野兽。",
+        "当你处于战争形态时，你的外貌会结合正常形态与选民野兽的特征，并在持续时间内获得以下增益：",
+        {
+          "type": "list",
+          "items": [
+            "你获得该野兽拥有的任何特殊感官和移动力。",
+            "如果该野兽有任何造成穿刺或挥砍伤害的天生武器攻击，你可以在用徒手打击造成伤害时选择该伤害类型。",
+            "你的徒手打击造成额外{@dice 1d4}伤害。",
+            "如果野兽的体型类别比你小，你可以选择将自己的体型缩小一个类别（例如从中等缩小到小型），直到你的战争形态结束。",
+            "如果野兽的体型类别比你大，你可以选择将自己的体型增大一个类别（例如从中等变为大型），直到你的战争形态结束。",
+            "你在魅力（{@skill 威吓}）属性检定上具有优势。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Cornered but Not Caught",
+      "name": "困隅未擒",
+      "source": "SterlingVermin:Patreon",
+      "className": "拳斗士",
+      "classSource": "SterlingVermin",
+      "subclassShortName": "野兽之王",
+      "subclassSource": "SterlingVermin:Patreon",
+      "level": 11,
+      "header": 2,
+      "entries": [
+        "在11级时，当你使用你的{@classFeature 浴血不屈|拳斗士|SterlingVermin|3}特性时，你可以选择同时使用此特性。若你如此做，在接下来1分钟内你每回合开始时恢复等于你体质调整值的生命值。若你的生命值降至0，此效应提前结束。完成一次长休后你可以再次使用此特性。"
+      ]
+    },
+    {
+      "ENG_name": "Beast at Heart",
+      "name": "野兽之心",
+      "source": "SterlingVermin:Patreon",
+      "className": "拳斗士",
+      "classSource": "SterlingVermin",
+      "subclassShortName": "野兽之王",
+      "subclassSource": "SterlingVermin:Patreon",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "从17级开始，你可以使用你的{@subclassFeature 荒野形态|拳斗士|SterlingVermin|野兽之王|SterlingVermin:Patreon|3}特性两次，在完成短休或长休时恢复所有使用次数。",
+        "当你使用你的{@subclassFeature 荒野形态|拳斗士|SterlingVermin|野兽之王|SterlingVermin:Patreon|3}特性时，你可以选择消耗两次使用次数。当你这样做时，你可以选择一个挑战等级不超过5的野兽。",
+        "当你使用你的{@subclassFeature 战争形态|拳斗士|SterlingVermin|野兽之王|SterlingVermin:Patreon|6}特性时，你可以选择消耗两次使用次数。当你这样做时，你选择最多三只野兽并获得每只野兽的特殊感官和移动速度（如果多只选择的野兽拥有相同类型的移动速度，则使用每种移动速度中最高的）。此外，你的徒手打击造成的额外伤害增加到{@dice 1d6}。"
+      ]
+    }
+  ],
+  "source": "SterlingVermin:Patreon",
+  "shortName": "野兽之王",
+  "className": "拳斗士",
+  "classSource": "SterlingVermin"
+}

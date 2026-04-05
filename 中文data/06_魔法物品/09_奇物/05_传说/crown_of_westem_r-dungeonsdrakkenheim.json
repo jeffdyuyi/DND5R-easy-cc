@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Crown of Westemär",
+    "name": "维斯特玛王冠",
+    "source": "DungeonsDrakkenheim",
+    "page": 233,
+    "rarity": "legendary",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "十年",
+    "rechargeAmount": 1,
+    "charges": 3,
+    "entries": [
+      "一个角色只能在其他六个各自与不同的德拉肯海姆封印共鸣的角色参与下，通过进行一个特别的一小时仪式，来与西特玛尔皇冠共鸣。有关这个仪式的详细信息，请参见第9章：德拉肯城堡中的\"发展\"部分。",
+      "这顶皇冠拥有3次充能。佩戴时，你可以使用一次行动消耗1次充能来从它施放{@spell 祈愿术}法术。每十年，皇冠恢复一次消耗的充能。",
+      "{@creature 远古青铜龙}米纳佐隆德、{@creature 守塔巨龙|DungeonsDrakkenheim|塔龙}和{@creature 戍墙石像鬼|DungeonsDrakkenheim|墙头石像鬼}都在你的控制之下，当你佩戴王冠时，它们会服从你的口头命令。",
+      "当你佩戴皇冠并坐在德拉肯城堡的德拉肯海姆王座上时，你可以使用一次行动通过心灵感应与一只龙或十二只石像鬼进行交流，只要它们在德拉肯城堡100英里范围内。当你这样做时，你可以向这些生物发出命令，通过其中一个生物的眼睛看东西，并听到它所听到的，直到你的下一个回合开始，获得该生物拥有的任何特殊感官的好处。在这段时间里，你对自己的感觉是聋和盲的。",
+      {
+        "ENG_name": "Crown Authority",
+        "name": "王室威权",
+        "type": "entries",
+        "entries": [
+          "一个角色无法同时与多个德拉肯海姆之印同调。当你与德拉肯海姆之印同调时，德拉肯海姆的守护者构装如{@creature 戍墙石像鬼|DungeonsDrakkenheim|墙头石像鬼}和{@creature 守塔巨龙|DungeonsDrakkenheim|塔龙}不会攻击你。若你攻击某个守护者或对其施法，该个体守护者将在24小时内无视此效应。",
+          "以一个动作，你可以展示德拉肯海姆之印来斥责护卫。你对30尺内能看见或听见你的每个{@creature 戍墙石像鬼|DungeonsDrakkenheim}或{@creature 守塔巨龙|DungeonsDrakkenheim}进行一次对抗魅力属性检定。若你赢得比赛，该生物将被斥责1分钟或直到它受到任何伤害。被斥责的生物不能移动，且不能执行动作或反应。赢得比赛的生物将在24小时内对你的斥责免疫。"
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "祈愿术"
+    ]
+  }
+]

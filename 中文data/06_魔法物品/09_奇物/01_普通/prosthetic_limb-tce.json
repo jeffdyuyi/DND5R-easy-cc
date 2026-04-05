@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Prosthetic Limb",
+    "name": "假肢",
+    "source": "TCE",
+    "page": 134,
+    "otherSources": [
+      {
+        "source": "ERLW",
+        "page": 278
+      },
+      {
+        "source": "EGW"
+      }
+    ],
+    "referenceSources": [
+      "US"
+    ],
+    "reprintedAs": [
+      "假肢|XDMG"
+    ],
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "这个物品可以替代失去的肢体——一只手、一只手臂、一只脚、一条腿或类似的身体部位。当义肢安装时，它的功能与它替代的部位完全相同。你可以作为一个动作来拆卸或重新安装它，而且它不会违背你的意愿被移除。如果你死亡，它会脱落。"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 100,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/TCE/Prosthetic Limb.webp"
+          },
+          "credit": "Ben Wootten",
+          "width": 674,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

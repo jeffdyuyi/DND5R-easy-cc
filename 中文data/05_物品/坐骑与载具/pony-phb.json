@@ -1,0 +1,19 @@
+[
+  {
+    "name": "矮种马",
+    "ENG_name": "Pony",
+    "source": "PHB",
+    "page": 157,
+    "type": "MNT",
+    "rarity": "none",
+    "value": 3000,
+    "basicRules": true,
+    "carryingCapacity": 225,
+    "reprintedAs": [
+      "矮种马|XPHB"
+    ],
+    "speed": 40,
+    "srd": true,
+    "translator": "不全书"
+  }
+]

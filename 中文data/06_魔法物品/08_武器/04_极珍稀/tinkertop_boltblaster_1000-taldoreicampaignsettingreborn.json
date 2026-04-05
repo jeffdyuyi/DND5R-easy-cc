@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Tinkertop Boltblaster 1000",
+    "name": "杰作机关弩1000号",
+    "source": "TalDoreiCampaignSettingReborn",
+    "page": 197,
+    "baseItem": "手弩|PHB",
+    "type": "R",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "weight": 3,
+    "weaponCategory": "军用",
+    "property": [
+      "A",
+      "L",
+      "LD"
+    ],
+    "range": "30/120",
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "bonusWeapon": "+1",
+    "entries": [
+      "这个由齿轮、线缆和漆木组成的奇怪装置有一个带金属握把和曲柄的手柄。其枪托上有一个华丽的制造商标记，上面写着：\"胡珀杜克制造\"，这是位于{@book 荒洲|TalDoreiCampaignSettingReborn|3|荒洲}的一座城市。你用这把魔化武器进行攻击和伤害掷骰时获得+1加值。",
+      "当你使用此武器进行攻击检定掷出20时，你可以在解决重击后立即使用此武器进行另一次攻击。当你使用此武器进行攻击检定掷出1时，你必须通过一次 {@dc 14} 敏捷 {@quickref 豁免检定|PHB|2|1|豁免检定} 否则由于部分齿轮和电线松动而受到 {@damage 1d6} 穿刺伤害。"
+    ],
+    "ammoType": "弩矢|PHB"
+  }
+]

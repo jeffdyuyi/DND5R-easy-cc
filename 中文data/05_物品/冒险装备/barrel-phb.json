@@ -1,0 +1,23 @@
+[
+  {
+    "name": "木桶",
+    "ENG_name": "Barrel",
+    "source": "PHB",
+    "page": 153,
+    "type": "G",
+    "rarity": "none",
+    "weight": 70,
+    "value": 200,
+    "entries": [
+      "一个木桶可以容纳40加仑液体或4立方英尺固体。"
+    ],
+    "basicRules": true,
+    "referenceSources": [
+      "SjA"
+    ],
+    "reprintedAs": [
+      "木桶|XPHB"
+    ],
+    "srd": true
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "ENG_name": "Life Tether",
+    "name": "生命链接",
+    "source": "GrimHollowPG24",
+    "page": 195,
+    "level": 2,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "选择你能看见的范围内的一个生物。目标必须进行一次感知豁免检定。豁免失败时，一条病态的绿色纽带会在你和目标之间形成。每当你受到伤害时，被纽带连接的目标会受到一半的伤害（向下取整）作为暗蚀伤害。如果目标在此法术结束前生命值降至0{@variantrule 生命值|XPHB}，你可以使用一个{@variantrule 附赠动作|XPHB}将纽带移动至你能看见的范围内的另一个生物。新目标必须成功通过感知豁免检定，否则将被纽带连接。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "你可以使用四环法术位（二条纽带）、六环（三条纽带）或八环（四条纽带）创造额外的纽带。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "savingThrow": [
+      "感知"
+    ],
+    "miscTags": [
+      "SGT",
+      "UBA"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Life%20Tether.webp"
+  }
+]

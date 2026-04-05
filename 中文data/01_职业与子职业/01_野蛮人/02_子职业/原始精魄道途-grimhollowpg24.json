@@ -1,0 +1,153 @@
+{
+  "ENG_name": "Path of the Primal Spirit",
+  "name": "原始精魄道途",
+  "shortName": "原始精魄",
+  "source": "GrimHollowPG24",
+  "className": "野蛮人",
+  "classSource": "XPHB",
+  "page": 61,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "6": {
+          "daily": {
+            "1e": [
+              "化兽为友|XPHB",
+              "动物交谈|XPHB"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "subclassSpells": [
+    "化兽为友|XPHB",
+    "动物交谈|XPHB"
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "Path of the Primal Spirit",
+      "name": "原始精魄路途",
+      "source": "GrimHollowPG24",
+      "page": 61,
+      "className": "野蛮人",
+      "classSource": "XPHB",
+      "subclassShortName": "原始精魄",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "entries": [
+        "{@i 与野兽灵魄一同狂暴}",
+        "许多野蛮人与自然界和谐相处，但很少有人像那些行走原始精魄路途的人那样与之神秘交织。这些野蛮人与野兽和自然之灵建立了强大的联系，鼓舞这些以太存在显现并踏上遥远的冒险旅途。",
+        "遵循此路途的野蛮人对自然世界的循环有着深深的敬畏。这样的野蛮人既可能接受来自当地野生动物的使命和援助请求，也可能接受来自人类的请求。这种对动物和精魂的尊重并不意味着天真——很少有人比那些行走在原始精魄路途上的人更了解捕食者与猎物需求之间的微妙平衡。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "原初伴侣|野蛮人|XPHB|原始精魄|GrimHollowPG24|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "共享愤怒|野蛮人|XPHB|原始精魄|GrimHollowPG24|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Primal Companion",
+      "name": "原初伴侣",
+      "source": "GrimHollowPG24",
+      "page": 61,
+      "className": "野蛮人",
+      "classSource": "XPHB",
+      "subclassShortName": "原始精魄",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你魔法般地召唤一个原始精魄，它会以野兽的形态出现并陪伴你冒险。选择它的资料卡：{@creature 原始守护者|GrimHollowPG24}或{@creature 原初打击者|GrimHollowPG24}。此外，选择一个会修改该生物资料卡的环境：大地、海洋或天空。你还需确定它的动物类型，选择一个适合该资料卡的类型。无论你选择何种同伴，它都会带有表明其异界起源的诡秘标记。",
+        "该同伴对你和你的盟友是{@variantrule 友好【态度】|XPHB|友好}，并服从你的命令。如果你死亡，它会消失。",
+        {
+          "ENG_name": "The Beast in Combat",
+          "name": "战斗中的野兽",
+          "type": "entries",
+          "entries": [
+            "在战斗中，同伴在你的回合行动。它可以自行移动和使用其{@variantrule 反应|XPHB}，但除非你使用一个{@variantrule 附赠动作|XPHB}命令它执行其资料卡中的某个动作或其他动作，否则它只会执行{@action 回避|XPHB}动作。你也可以在你执行{@action 攻击|XPHB}动作时牺牲一次攻击来命令野兽执行野兽打击动作。如果你处于{@condition 失能|XPHB}状态，同伴会自行行动且不受限于{@action 回避|XPHB}动作。"
+          ]
+        },
+        {
+          "ENG_name": "Restoring or Replacing the Beast",
+          "name": "复活或替换野兽",
+          "type": "entries",
+          "entries": [
+            "如果同伴在过去1小时内死亡，你可以使用一个{@action 魔法|XPHB}动作接触它并消耗一次狂暴。同伴立即复活并恢复{@variantrule 生命值|XPHB}的所有生命值。",
+            "每当你完成一次{@variantrule 长休|XPHB}，你可以召唤一个不同的原初伴侣，它会出现在你5尺内一个未占据空间。你选择它的资料卡和外观。如果你已经通过此特性拥有一只野兽，旧的野兽会在新的出现时消失。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Shared Rage",
+      "name": "共享愤怒",
+      "source": "GrimHollowPG24",
+      "page": 61,
+      "className": "野蛮人",
+      "classSource": "XPHB",
+      "subclassShortName": "原始精魄",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "当你的狂暴处于激活状态时，你的原初伴侣对钝击、穿刺和挥砍伤害具有{@variantrule 抗性|XPHB}。"
+      ]
+    },
+    {
+      "ENG_name": "Kin to Beasts",
+      "name": "野兽之亲",
+      "source": "GrimHollowPG24",
+      "page": 61,
+      "className": "野蛮人",
+      "classSource": "XPHB",
+      "subclassShortName": "原始精魄",
+      "subclassSource": "GrimHollowPG24",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "你总是准备着{@spell 化兽为友|XPHB}和{@spell 动物交谈|XPHB}法术。你可以不消耗法术位施放这些法术。一旦你以这种方式施放其中任一法术后，在完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}前，你不能再以这种方式施放该法术。你也可以使用适当等级的法术位来施放这些法术。体质是你的施法属性。"
+      ]
+    },
+    {
+      "ENG_name": "Skinrider's Trance",
+      "name": "剥皮者出神",
+      "source": "GrimHollowPG24",
+      "page": 61,
+      "className": "野蛮人",
+      "classSource": "XPHB",
+      "subclassShortName": "原始精魄",
+      "subclassSource": "GrimHollowPG24",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "你采取一个{@action 魔法|XPHB}动作进入出神状态，并选择你的原初伴侣或60尺内当前受你{@spell 化兽为友|XPHB}法术影响的野兽。在此出神状态的持续时间内，你将附身于所选生物。",
+        "一旦你附身一个生物的身体，你就能控制它。你的{@variantrule 生命值|XPHB}、{@variantrule 生命值骰|XPHB}、力量、敏捷、体质、{@variantrule 速度|XPHB}和感官将被该生物的取代。除此之外，你将保留你的游戏数据。如果你选择退出出神（无需你执行动作）、如果你附身的野兽被缩小到0{@variantrule 生命值|XPHB}、或者如果你和野兽处于不同的存在位面，此附身将结束。",
+        "在这种出神状态下，你的身体会陷入紧张状态。你无法移动或采取{@variantrule 反应|XPHB|反应}，并且对你的周边环境无知觉。你可以保持这种出神状态长达相当于你野蛮人等级一半加上体质调整值的小时数。",
+        "一旦你使用了此特性，在完成一次{@variantrule 长休|XPHB}前无法再次使用。你也可以通过消耗一次狂暴（无需动作）来复原其使用次数。"
+      ]
+    },
+    {
+      "ENG_name": "Shape of the Wild",
+      "name": "狂野形态",
+      "source": "GrimHollowPG24",
+      "page": 61,
+      "className": "野蛮人",
+      "classSource": "XPHB",
+      "subclassShortName": "原始精魄",
+      "subclassSource": "GrimHollowPG24",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "作为一项{@variantrule 附赠动作|XPHB}，你可以为你的原初伴侣选择一种新形态，使其立即变化。当你以这种方式使你的原初伴侣变化时，它当前的{@variantrule 生命值|XPHB}会变为其新的{@variantrule 生命值|XPHB|生命值}上限。",
+        "一旦你使用了此特性，在完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}前无法再次使用。你也可以通过消耗一次狂暴使用次数来复原此特性的使用次数（无需动作）。"
+      ]
+    }
+  ],
+  "hasFluff": true,
+  "hasFluffImages": true
+}

@@ -1,0 +1,135 @@
+{
+  "ENG_name": "Warrior of the Leaden Crown",
+  "name": "铅冠武者",
+  "shortName": "铅冠",
+  "source": "GrimHollowPG24",
+  "className": "武僧",
+  "classSource": "XPHB",
+  "page": 77,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "known": {
+        "3": [
+          "法师之手|XPHB#c"
+        ]
+      }
+    }
+  ],
+  "subclassSpells": [
+    "法师之手|XPHB",
+    "侦测善恶|XPHB",
+    "防护善恶|XPHB",
+    "定身类人|XPHB",
+    "浮空术|XPHB",
+    "粉碎音波|XPHB",
+    "驱逐善恶|XPHB",
+    "定身怪物|XPHB",
+    "心灵遥控|XPHB",
+    "力场墙|XPHB"
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "Warrior of the Leaden Crown",
+      "name": "铅冠武者",
+      "source": "GrimHollowPG24",
+      "page": 77,
+      "className": "武僧",
+      "classSource": "XPHB",
+      "subclassShortName": "铅冠",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "entries": [
+        "{@i 铅冠武者驾驭抵抗意志}",
+        "与其他结伙深奥的理想形成对比，铅冠武者有着实用的目标：所有人的自治。这些武僧将历史视为强大存在群体之间的一系列冲突，其中类人生物充其量是连带损害，最坏情况下是可弃的棋子。为了打破这种依赖和毁灭的循环，铅冠武者掌握心智属性以对抗多元宇宙的超凡力量并保护类人生物的主权。",
+        "该计划的一个成分涉及训练与强大的位面敌人战斗。另一个同样重要的成分是确保类人生物社会准备好推翻那些已经支配它们的势力。为此，这些武僧寻求政治职位，将他们置于或接近决策创造角色，在那里他们可以影响他人反击大炽天使、大恶魔和上古巨灵。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "精妙之手|武僧|XPHB|铅冠|GrimHollowPG24|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "灵能造诣|武僧|XPHB|铅冠|GrimHollowPG24|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Psionic Prowess",
+      "name": "灵能造诣",
+      "source": "GrimHollowPG24",
+      "page": 77,
+      "className": "武僧",
+      "classSource": "XPHB",
+      "subclassShortName": "铅冠",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你的灵能力量已显现为施放特定法术的能力。你知晓{@spell 法师之手|XPHB}戏法。你可以无需言语或姿势成分施放它，并且你可以使灵体之手{@condition 隐形|XPHB}。",
+        "此外，你可以通过消耗功力来施放特定法术。你可以采取一个{@action 魔法|XPHB}动作并消耗1点功力来施放{@spell 侦测善恶|XPHB}或{@spell 防护善恶|XPHB}。你也可以采取一个{@action 魔法|XPHB}动作并消耗2点功力来施放{@spell 定身类人|XPHB}、{@spell 浮空术|XPHB}或{@spell 粉碎音波|XPHB}。感知是你施放这些法术的施法属性，并且你施放它们时不需要材料成分。"
+      ]
+    },
+    {
+      "ENG_name": "Subtle Hand",
+      "name": "精妙之手",
+      "source": "GrimHollowPG24",
+      "page": 77,
+      "className": "武僧",
+      "classSource": "XPHB",
+      "subclassShortName": "铅冠",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你的武艺被强化以具备念动力打击的能力。在你的回合中，你的触及范围在使用{@variantrule 徒手打击|XPHB|徒手打击}时增加5尺。此外，当你在回合内以{@action 攻击|XPHB}动作的一部分用{@variantrule 徒手打击|XPHB}命中一个生物时，你可以选择造成心灵伤害或其正常伤害类型。"
+      ]
+    },
+    {
+      "ENG_name": "Unsubtle Strike",
+      "name": "直白打击",
+      "source": "GrimHollowPG24",
+      "page": 77,
+      "className": "武僧",
+      "classSource": "XPHB",
+      "subclassShortName": "铅冠",
+      "subclassSource": "GrimHollowPG24",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "在你的每个回合中，当你用{@variantrule 徒手打击|XPHB}或武僧武器命中一个生物时，你可以强迫它进行一次力量豁免检定对抗你的功力豁免DC。若豁免失败，你可以将目标向你或远离你的方向移动最多10尺。"
+      ]
+    },
+    {
+      "ENG_name": "Psychic Crush",
+      "name": "心灵摧毁",
+      "source": "GrimHollowPG24",
+      "page": 77,
+      "className": "武僧",
+      "classSource": "XPHB",
+      "subclassShortName": "铅冠",
+      "subclassSource": "GrimHollowPG24",
+      "level": 11,
+      "header": 2,
+      "entries": [
+        "每次你用{@variantrule 徒手打击|XPHB}命中一个生物时，该生物获得一个压力点。如果你让另一个生物获得压力点或1分钟后（以先到者为准），该生物将失去所有压力点。作为一个{@variantrule 附赠动作|XPHB}，你可以消耗1点功力来用念力镇压一个有1个或更多你的压力点的生物。该生物失去所有压力点，并且必须对你的功力豁免DC进行一次力量豁免检定。豁免失败时，该生物每个压力点受到{@damage 1d8}力场伤害，并且直到你的下个回合结束前处于{@condition 束缚|XPHB}状态。豁免成功时，该生物只受到一半伤害。"
+      ]
+    },
+    {
+      "ENG_name": "Psionic Mastery",
+      "name": "灵能精通",
+      "source": "GrimHollowPG24",
+      "page": 77,
+      "className": "武僧",
+      "classSource": "XPHB",
+      "subclassShortName": "铅冠",
+      "subclassSource": "GrimHollowPG24",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "经过大量训练，你已经精通了保护凡人免受位面威胁所需的灵术。作为一个{@action 魔法|XPHB}动作，你可以消耗5点功力来施放{@spell 驱逐善恶|XPHB}、{@spell 定身怪物|XPHB}、{@spell 心灵遥控|XPHB}或{@spell 力场墙|XPHB}。感知是你施放这些法术的施法属性，并且你可以无需材料成分施放它们。"
+      ]
+    }
+  ],
+  "hasFluff": true,
+  "hasFluffImages": true
+}

@@ -1,0 +1,63 @@
+[
+  {
+    "ENG_name": "Pogmo's Pot",
+    "name": "波格莫奇锅",
+    "source": "ObojimaTallGrass",
+    "page": 188,
+    "level": 3,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        }
+      }
+    ],
+    "entries": [
+      "你在范围内地面上一个未占据空间召唤一个铸铁壶。波格莫奇锅20尺范围内所有未被穿戴或携带且重量不超过10磅的物件会立即被吸入这个奇怪的容器内，无论它们看起来是否应该适合。所有物件都储存在锅内的异次元空间中，直到法术结束，此时锅消失，其内包含的物件出现在它所在空间的地面上。",
+      "在持续时间内，锅保持密封状态，里面的物件无法被取出，直到法术结束。锅宽1英尺，高1英尺。它可以轻松移动或携带，无论里面装了多少物件，重量始终为15磅。锅对所有伤害免疫，但可以被解除。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "miscTags": [
+      "SMN"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Custom/Spells/Pogmos%20Pot.webp"
+  }
+]

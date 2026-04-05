@@ -1,0 +1,148 @@
+[
+  {
+    "ENG_name": "Staff of the Woodlands",
+    "name": "丛林法杖",
+    "source": "XDMG",
+    "page": 311,
+    "srd52": true,
+    "basicRules2024": true,
+    "type": "M|XPHB",
+    "rarity": "rare",
+    "reqAttune": "由德鲁伊",
+    "reqAttuneTags": [
+      {
+        "class": "德鲁伊"
+      }
+    ],
+    "weight": 4,
+    "weaponCategory": "simple",
+    "property": [
+      "V|XPHB"
+    ],
+    "mastery": [
+      "失衡|XPHB"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "bonusWeapon": "+2",
+    "bonusSpellAttack": "+2",
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6}",
+    "charges": 6,
+    "staff": true,
+    "entries": [
+      "这根法杖具有6充能并可被用作一根魔法长棍（用这根长棍发动的攻击检定和伤害掷骰获得+2加值）。持握此法杖期间，你在法术攻击检定上获得+2加值。",
+      {
+        "ENG_name": "Spells",
+        "name": "法术",
+        "type": "entries",
+        "entries": [
+          "持握此法杖期间，你可以从法杖中施展以下表格中的一道法术，使用你自己的法术豁免DC。施展相应法术所需消耗的充能数如下表所示。",
+          {
+            "type": "table",
+            "colStyles": [
+              "col-10",
+              "col-2 text-center"
+            ],
+            "colLabels": [
+              "法术",
+              "消耗充能"
+            ],
+            "rows": [
+              [
+                "{@spell 化兽为友|XPHB}",
+                "1"
+              ],
+              [
+                "{@spell 启蒙术|XPHB}",
+                "5"
+              ],
+              [
+                "{@spell 树肤术|XPHB}",
+                "2"
+              ],
+              [
+                "{@spell 动植物定位术|XPHB}",
+                "2"
+              ],
+              [
+                "{@spell 行动无踪|XPHB}",
+                "2"
+              ],
+              [
+                "{@spell 动物交谈|XPHB}",
+                "1"
+              ],
+              [
+                "{@spell 植物交谈|XPHB}",
+                "3"
+              ],
+              [
+                "{@spell 棘墙术|XPHB}",
+                "6"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Tree Form",
+        "name": "树木型态",
+        "type": "entries",
+        "entries": [
+          "你可以执行{@action 魔法|XPHB}动作来将法杖的一端插入一处未占据空间的土地上，并消耗1充能将其转变为一颗健壮的树。这棵树高60尺，树干直径5尺，顶端的树冠以20尺半径向外延伸。这棵树外观与普通的树无异，但{@spell 侦测魔法|XPHB}能辨别出树上散发出的微弱变化系魔法灵光。你可以在触碰这棵树时执行{@action 魔法|XPHB}动作 将其变回原本的法杖形态。当树还原回法杖时，任何在树上的生物都会掉下来。"
+        ]
+      },
+      {
+        "ENG_name": "Regaining Charges",
+        "name": "重获充能",
+        "type": "entries",
+        "entries": [
+          "这根法杖在每日黎明时重获{@dice 1d6}已消耗的充能。当充能数耗尽时，骰一次{@dice 1d20}。如果骰值为1，法杖失去其所有词条并将变为一根非魔法性的长棍。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "化兽为友|xphb",
+          "动物交谈|xphb"
+        ],
+        "2": [
+          "树肤术|xphb",
+          "动植物定位术|xphb",
+          "行动无踪|xphb"
+        ],
+        "3": [
+          "植物交谈|xphb"
+        ],
+        "5": [
+          "启蒙术|xphb"
+        ],
+        "6": [
+          "棘墙术|xphb"
+        ]
+      }
+    },
+    "lootTables": [
+      "圣物 - 珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Staff of the Woodlands.webp"
+          },
+          "width": 243,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

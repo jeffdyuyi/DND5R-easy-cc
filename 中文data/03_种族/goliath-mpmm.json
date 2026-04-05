@@ -1,0 +1,77 @@
+[
+  {
+    "name": "歌利亚",
+    "ENG_name": "Goliath",
+    "source": "MPMM",
+    "page": 21,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "resist": [
+      "寒冷"
+    ],
+    "traitTags": [
+      "强力构筑"
+    ],
+    "skillProficiencies": [
+      {
+        "athletics": true
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Little Giant",
+        "name": "小型巨人",
+        "type": "entries",
+        "entries": [
+          "你熟练于{@skill 运动}技能，且在决定你的载重、和你可以推、拉及抬的重量时，你视作为体型大一级的生物。"
+        ]
+      },
+      {
+        "ENG_name": "Mountain Born",
+        "name": "生于高山",
+        "type": "entries",
+        "entries": [
+          "你具有寒冷伤害的抗性。即使你从未去过，你也天生地适应高海拔。这包括超过2万尺的高度。"
+        ]
+      },
+      {
+        "ENG_name": "Stone's Endurance",
+        "name": "石之坚韧",
+        "type": "entries",
+        "entries": [
+          "你可以超自然地借由坚硬的岩石避免受伤。当你受到伤害时，你可以使用你的反应掷一粒{@dice d12}。将你的体质调整值与骰掷的结果相加，降低该总和的伤害。",
+          "你可以使用此特质的次数等于你的熟练加值，当你完成一次长休后，你重新获得所有消耗的次数。"
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "最早的歌利亚们居住在最高的山峰上——远高于林木线，空气稀薄，寒风呼啸。与巨人的远亲关系，和祖先们山脉家园的超自然精华的灌输，使得歌利亚有7到8尺高，有着许多种类色调的皮肤，就如同不同种类的石头。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/MPMM/Goliath.webp"
+          },
+          "credit": "Eric Belisle, Jon Hodgson",
+          "width": 1700,
+          "height": 1379
+        }
+      ]
+    },
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "lineage": "VRGR",
+    "reprintedAs": [
+      "歌利亚|XPHB"
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/goliath.mp3"
+    }
+  }
+]

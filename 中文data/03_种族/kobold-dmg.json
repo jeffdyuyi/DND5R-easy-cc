@@ -1,0 +1,67 @@
+[
+  {
+    "name": "狗头人",
+    "ENG_name": "Kobold",
+    "source": "DMG",
+    "page": 282,
+    "size": [
+      "S"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "dex": 2,
+        "str": -4
+      }
+    ],
+    "darkvision": 60,
+    "traitTags": [
+      "NPC种族",
+      "日照敏感"
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "draconic": true
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Pack Tactics",
+        "name": "集群战术",
+        "entries": [
+          "当至少一个你的盟友在生物5尺内且该盟友未处于{@condition 失能}状态时，你对该生物进行的攻击检定具有优势。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Sunlight Sensitivity",
+        "name": "日照敏感",
+        "entries": [
+          "你进行攻击检定和依赖视觉的感知（{@skill 察觉}）检定时，如果你本人、你的攻击目标或你尝试察觉的东西位于阳光直射下，则你所进行的相应检定具有劣势。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Darkvision",
+        "name": "黑暗视觉",
+        "entries": [
+          "你习惯了地下生活，因而在黑暗和微光光照下有着良好的视力 。在微光光照下，你身边60尺内可以视为等同于明亮光照。而在黑暗中，该范围内可视为等同于微光光照。你无法在黑暗中分辨颜色，只能看到有灰度的黑白画面。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Languages",
+        "name": "语言",
+        "entries": [
+          "你可以说、读、写通用语和龙语。"
+        ],
+        "type": "entries"
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/kobold.mp3"
+    }
+  }
+]

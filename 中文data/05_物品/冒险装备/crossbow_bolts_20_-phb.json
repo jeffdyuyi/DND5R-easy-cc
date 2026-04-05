@@ -1,0 +1,28 @@
+[
+  {
+    "name": "弩矢(20)",
+    "ENG_name": "Crossbow Bolts (20)",
+    "source": "PHB",
+    "page": 150,
+    "edition": "classic",
+    "type": "A",
+    "rarity": "none",
+    "weight": 1.5,
+    "value": 100,
+    "packContents": [
+      {
+        "item": "弩矢|PHB",
+        "quantity": 20
+      }
+    ],
+    "basicRules": true,
+    "bolt": true,
+    "referenceSources": [
+      "CoS"
+    ],
+    "reprintedAs": [
+      "弩矢（20支）|XPHB"
+    ],
+    "srd": true
+  }
+]

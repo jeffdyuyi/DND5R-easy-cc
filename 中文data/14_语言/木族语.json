@@ -1,0 +1,17 @@
+{
+  "ENG_name": "Sylvan",
+  "name": "木族语",
+  "source": "PHB",
+  "page": 123,
+  "srd": true,
+  "basicRules": true,
+  "reprintedAs": [
+    "木族语|XPHB"
+  ],
+  "type": "exotic",
+  "typicalSpeakers": [
+    "{@filter 精类生物|bestiary|type=fey}"
+  ],
+  "script": "精灵语",
+  "hasFluffImages": true
+}

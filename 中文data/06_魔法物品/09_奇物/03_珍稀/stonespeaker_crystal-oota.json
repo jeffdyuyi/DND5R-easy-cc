@@ -1,0 +1,49 @@
+[
+  {
+    "ENG_name": "Stonespeaker Crystal",
+    "name": "石语者水晶",
+    "source": "OotA",
+    "page": 223,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6 + 4}",
+    "charges": 10,
+    "entries": [
+      "由格兰霍洛的石巨人图书管理员创造，这个19英寸长的石英碎片在你身上时，会让你在智力（{@skill 调查}）检定上获得优势。",
+      "这块水晶拥有10个充能点数。在持有它时，你可以使用动作消耗其中的一部分充能点数来从它施放以下法术之一：{@spell 动物交谈}（2个充能点数）、{@spell 死者交谈}（4个充能点数）或{@spell 植物交谈}（3个充能点数）。",
+      "当你施放一个{@filter 预言|spells|school=D}法术时，你可以使用这块水晶代替通常法术消耗的一个材料成分，消耗1个充能点数对应法术的等级。以这种方式使用时，水晶不会被消耗。",
+      "这块水晶每天黎明时分恢复{@dice 1d6 + 4}次消耗的充能。如果你消耗了水晶的最后一次充能，掷一个{@dice d20}。如果是1，水晶消失，永远丢失。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "2": [
+          "动物交谈"
+        ],
+        "3": [
+          "植物交谈"
+        ],
+        "4": [
+          "死者交谈"
+        ]
+      }
+    },
+    "hasFluffImages": true,
+    "valueReference": 2000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/OotA/Stonespeaker Crystal.webp"
+          },
+          "width": 654,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

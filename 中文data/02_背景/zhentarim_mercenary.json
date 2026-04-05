@@ -1,0 +1,146 @@
+[
+  {
+    "name": "散塔林会佣兵",
+    "ENG_name": "Zhentarim Mercenary",
+    "source": "FRHoF",
+    "edition": "one",
+    "page": 36,
+    "ability": [
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "str",
+              "dex",
+              "cha"
+            ],
+            "weights": [
+              2,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "str",
+              "dex",
+              "cha"
+            ],
+            "weights": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      }
+    ],
+    "feats": [
+      {
+        "散塔林会暴徒|frhof": true
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "intimidation": true,
+        "perception": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "forgery kit": true
+      }
+    ],
+    "startingEquipment": [
+      {
+        "A": [
+          "短棒|xphb",
+          "匕首|xphb",
+          "文书伪造工具|xphb",
+          "高档服装|xphb",
+          "附盖提灯|xphb",
+          {
+            "item": "燃油|xphb",
+            "displayName": "燃油（3扁瓶）"
+          },
+          {
+            "item": "小包|xphb",
+            "displayName": "小包",
+            "quantity": 2
+          },
+          "细线|xphb",
+          "火绒盒|xphb",
+          {
+            "value": 1100
+          }
+        ],
+        "B": [
+          {
+            "value": 5000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability Scores:",
+            "name": "属性值：",
+            "type": "item",
+            "entry": "力量，敏捷，魅力"
+          },
+          {
+            "ENG_name": "Feat:",
+            "name": "专长：",
+            "type": "item",
+            "entry": "{@feat 散塔林会暴徒|FRHoF}"
+          },
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 威吓|XPHB}与{@skill 察觉|XPHB}"
+          },
+          {
+            "ENG_name": "Tool Proficiencies:",
+            "name": "工具熟练",
+            "type": "item",
+            "entry": "{@item 文书伪造工具|XPHB}"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "选择A或B：(A) {@item 短棒|XPHB}、{@item 匕首|XPHB}、{@item 文书伪造工具|XPHB}、{@item 高档服装|XPHB}、{@item 附盖提灯|XPHB}、{@item 燃油|XPHB}（3扁瓶）、2个{@item 小包|XPHB|小包}、{@item 细线|XPHB}、{@item 火绒盒|XPHB}、11 GP；或(B) 50 GP"
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "或许是你需要钱。或许是你渴望加入某个大家庭，无论它有多么可疑。又或许你只是擅长为达成目的而不择手段。无论理由如何，总之你加入了散塔林会，这个整个国度最为臭名昭著的雇佣兵协会。虽然散塔林会的领袖宣称该组织比起幕后财团更像是一个大家庭，但很少会有家庭展现出像这个家庭一样这么多的尔虞我诈、任人唯亲、贪污腐败现象。你磨砺着自己的狡诈与反应能力，并矢志于提升在协会内的地位。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "backgrounds/FRHoF/Zhentarim Mercenary.webp"
+          },
+          "credit": "Ignatius Budi",
+          "width": 1700,
+          "height": 626
+        }
+      ]
+    },
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "translator": "不全书"
+  }
+]

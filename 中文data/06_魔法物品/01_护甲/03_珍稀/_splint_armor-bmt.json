@@ -1,0 +1,42 @@
+[
+  {
+    "ENG_name": "幽影锻Splint Armor",
+    "name": "幽影锻板条甲",
+    "source": "BMT",
+    "page": 67,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "HotB"
+    ],
+    "edition": "one",
+    "type": "HA|XPHB",
+    "rarity": "rare",
+    "weight": 60,
+    "value": 20000,
+    "ac": 17,
+    "strength": "15",
+    "armor": true,
+    "stealth": true,
+    "hasFluffImages": true,
+    "namePrefix": "幽影锻",
+    "reqAttune": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "这件错综复杂的灰度盔甲是在影域锻造的，并且被注入了那个位面的幽暗。",
+      "当你穿戴这副护甲时，你在避免或解除自身恐惧状态的豁免检定中具有优势。",
+      "这件护甲有 3 点充能。你可以消耗 1 点充能来施放 {@spell 安定心神} 法术（豁免 {@dc 15}）。这件护甲每天黎明时恢复 {@dice 1d3} 点已消耗的充能。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "安定心神"
+        ]
+      }
+    },
+    "_isVariant": true,
+    "valueReference": 4000
+  }
+]

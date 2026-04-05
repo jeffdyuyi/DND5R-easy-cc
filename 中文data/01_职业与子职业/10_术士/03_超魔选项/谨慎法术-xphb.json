@@ -1,0 +1,18 @@
+{
+  "ENG_name": "Careful Spell",
+  "name": "谨慎法术",
+  "source": "XPHB",
+  "page": 141,
+  "srd52": true,
+  "featureType": [
+    "MM"
+  ],
+  "consumes": {
+    "ENG_name": "Sorcery Point",
+    "name": "术法点"
+  },
+  "entries": [
+    "当你施展一个强迫其他生物进行豁免的法术时，你可以保护某些生物免受法术的危害。你消耗1术法点并选择最多等同于你魅力调整值数量的生物（至少1个）。被选择的生物自动通过法术的豁免检定。如果法术在豁免成功后仍然造成半伤，这些生物不会承受任何伤害。"
+  ],
+  "translator": "不全书"
+}

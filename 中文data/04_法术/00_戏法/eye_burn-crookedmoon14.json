@@ -1,0 +1,73 @@
+[
+  {
+    "ENG_name": "Eye Burn",
+    "name": "灼眼术",
+    "source": "CrookedMoon14",
+    "page": 128,
+    "reprintedAs": [
+      "灼眼术|crookedmoon24"
+    ],
+    "level": 0,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "反应",
+        "condition": "当你使用该词条时，你可以对施法范围内一个你能看见并以你为攻击目标的生物使用"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一抹樟脑"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "round",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你钉刺攻击你的生物的眼睛。目标必须进行一次体质豁免检定（具有{@sense 盲视}或对{@condition 目盲}状态免疫的生物自动成功）。豁免失败时，目标陷入{@condition 目盲}状态直到回合结束。豁免成功时，它必须从触发攻击检定中减去{@dice 1d4}。目标在24小时内对你后续施放此法术的豁免自动成功。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "conditionInflict": [
+      "目盲"
+    ],
+    "savingThrow": [
+      "体质"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Spells/Eye-Burn.webp"
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "ENG_name": "Steel",
+    "name": "锻钢",
+    "source": "WBtW",
+    "page": 214,
+    "baseItem": "长剑|PHB",
+    "type": "M",
+    "rarity": "very rare",
+    "reqAttune": "由善良阵营的生物",
+    "reqAttuneTags": [
+      {
+        "alignment": [
+          "G"
+        ]
+      }
+    ],
+    "sentient": true,
+    "weight": 3,
+    "weaponCategory": "martial",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "S",
+    "dmg2": "1d10",
+    "bonusWeapon": "+2",
+    "entries": [
+      "使用这把魔法武器进行攻击和伤害判定时，你有+2的加值。",
+      {
+        "ENG_name": "Revivify",
+        "name": "回生术",
+        "type": "entries",
+        "entries": [
+          "你可以使用动作从剑中施放{@spell 回生术}。你必须用剑触碰目标才能施放这个法术。一旦这个武器的属性被使用，直到下一个黎明之前它不能再次被使用。"
+        ]
+      },
+      {
+        "ENG_name": "Sentience",
+        "name": "智能",
+        "type": "entries",
+        "entries": [
+          "Steel是一个有感知能力的，守序善良的长剑，感知为8，感知为11，魅力为15。它可以看到和听到60尺范围内的事物。这把剑能说、读并理解通用语和龙语。当你与它共鸣时，它会关心你的福祉，并且它不喜欢退缩战斗。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "回生术"
+        ]
+      }
+    },
+    "hasFluffImages": true,
+    "valueReference": 40000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/WBtW/Steel.webp"
+          },
+          "credit": "Daarken",
+          "width": 577,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,84 @@
+{
+  "ENG_name": "Archive",
+  "name": "档案馆",
+  "source": "XDMG",
+  "page": 337,
+  "facilityType": "special",
+  "level": 13,
+  "space": [
+    "roomy",
+    "vast"
+  ],
+  "hirelings": [
+    {
+      "exact": 1
+    }
+  ],
+  "orders": [
+    "研究"
+  ],
+  "entries": [
+    "档案馆是储存书籍，地图和卷轴的地方。它通常连接着一座图书馆，隔着一扇上锁的门或密门。",
+    {
+      "ENG_name": "Research: Helpful Lore",
+      "name": "调查：有益学识",
+      "type": "entries",
+      "entries": [
+        "当你对此设施下达{@book 研究|XDMG|7|研究}指令时，你委托设施的雇员搜索档案馆，寻找需要的知识。这项工作需要7天时间。雇员将如同施展了{@spell 通晓传奇|XPHB}法术那样获得相关的知识。在你下次和他对话时，雇员将这些知识传达给你。"
+      ]
+    },
+    {
+      "ENG_name": "Reference Book",
+      "name": "参考书",
+      "type": "entries",
+      "entries": [
+        "你的档案馆中存放了某本参考书的抄本，当你和这本书都位于据点内时，它会赋予你相应的好处。你可以从下列选项中选择一项（DM可能会创作额外的选项）：",
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "ENG_name": "Bigby's Handy Arcana Codex",
+              "name": "毕格比的实用奥术典籍",
+              "type": "item",
+              "entry": "当你执行{@action 研究|XPHB}动作以回想有关法术、魔法物品、秘术符号、魔法传统以及存在位面的知识时，你所做的所有智力（{@skill 奥秘|XPHB}）检定具有{@variantrule 优势|XPHB}。"
+            },
+            {
+              "ENG_name": "The Chronepsis Chronicles",
+              "name": "库若尼普斯编年史",
+              "type": "item",
+              "entry": "当你执行{@action 研究|XPHB}动作以回想有关历史事件、传奇人物、古代帝国、过去的冲突与战争以及失落的文明的知识时，你所做的所有智力（{@skill 历史|XPHB}）检定具有{@variantrule 优势|XPHB}。"
+            },
+            {
+              "ENG_name": "Investigations of the Inquisitive",
+              "name": "调查员的调查报告",
+              "type": "item",
+              "entry": "当你执行{@action 研究|XPHB}动作以根据线索和证据进行推理，或者回想有关陷阱、密码、谜题以及小装置的知识时，你所做的所有智力（{@skill 调查|XPHB}）检定具有{@variantrule 优势|XPHB}。"
+            },
+            {
+              "ENG_name": "Material Musings on the Nature of the World",
+              "name": "对于世界本质的物质性思考",
+              "type": "item",
+              "entry": "当你执行{@action 研究|XPHB}动作以回想有关地形、植物、动物和天气的知识时，你所做的所有智力（{@skill 自然|XPHB}）检定具有{@variantrule 优势|XPHB}。"
+            },
+            {
+              "ENG_name": "The Old Faith and Other Religions",
+              "name": "旧日信仰和其他宗教",
+              "type": "item",
+              "entry": "当你执行{@action 研究|XPHB}动作以回想有关神祗、仪式、祈祷、宗教制度、圣徽以及秘密邪教的行为的知识时，你所做的所有智力（{@skill 宗教|XPHB}）检定具有{@variantrule 优势|XPHB}。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Enlarging the Facility",
+      "name": "扩建设施",
+      "type": "entries",
+      "entries": [
+        "你可以花费 2000 GP ，将档案馆扩大为庞大设施。这样做之后，你从上述列表中获得额外两本参考书。"
+      ]
+    }
+  ],
+  "translator": "不全书"
+}

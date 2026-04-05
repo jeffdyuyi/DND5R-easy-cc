@@ -1,0 +1,21 @@
+{
+  "ENG_name": "Don or Doff a Shield",
+  "name": "装备或卸除盾牌",
+  "source": "PHB",
+  "page": 146,
+  "srd": true,
+  "basicRules": true,
+  "reprintedAs": [
+    "装备或卸除盾牌|XPHB"
+  ],
+  "time": [
+    {
+      "number": 1,
+      "unit": "动作"
+    }
+  ],
+  "entries": [
+    "护甲的着装与卸除时间视护甲类别各有不同。具体可参考{@table 着甲与卸甲; 穿戴和卸除盔甲|phb|取决于护甲的类别}。一个 {@item 盾牌|phb} 可以作为动作来装备或卸下。"
+  ],
+  "translator": "不全书"
+}

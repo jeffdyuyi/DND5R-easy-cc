@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "Mask of the Dragon Queen",
+    "name": "龙后面具",
+    "source": "RoT",
+    "page": 94,
+    "otherSources": [
+      {
+        "source": "ToD",
+        "page": 179
+      }
+    ],
+    "referenceSources": [
+      "HotDQ"
+    ],
+    "rarity": "artifact",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "单独来看，这五个龙面具与它们所命名的龙相似。然而，当两个或更多的龙面具组装在一起时，它们会神奇地变成龙后面具。每个面具缩小成为一只色彩龙的模型头部，看起来在向{@creature 提亚马特|RoT}咆哮其忠诚，所有面具一起被排列在佩戴者的头上，像皇冠一样。在五个面具下方，一个新的面具塑造自己，赋予佩戴者一个覆盖面部、颈部和肩部的龙形面容。",
+      "当你调整并佩戴这个面具时，你可以拥有任何一副面具的属性。此外，你从每一副龙面具中获得伤害吸收属性，并且你获得五次使用传奇抗性属性的机会。"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 0,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/RoT/Mask of the Dragon Queen.webp"
+          },
+          "width": 850,
+          "height": 1681
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

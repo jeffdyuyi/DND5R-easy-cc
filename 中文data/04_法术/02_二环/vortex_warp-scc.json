@@ -1,0 +1,62 @@
+[
+  {
+    "ENG_name": "Vortex Warp",
+    "name": "涡旋翘曲",
+    "source": "SCC",
+    "page": 38,
+    "level": 2,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 90
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你魔法地扭曲范围里另一个你可见生物周边的空间。目标需通过一次体质豁免（目标可主动选择失败），否则目标将被传送至范围内一处你可见，由你选择的未被占据的空间。选择的空间必须是地表之上或液体之中，并且能让目标在无需跻身的情况下支撑目标。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用3环或更高的法术位释放该法术时，法术位每比2环高1环，施法距离增加30尺。"
+        ]
+      }
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "miscTags": [
+      "SGT",
+      "TP"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "咒法系",
+    "display_savingThrow": [
+      "体质"
+    ]
+  }
+]

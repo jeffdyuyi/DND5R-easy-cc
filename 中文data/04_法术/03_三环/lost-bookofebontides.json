@@ -1,0 +1,81 @@
+[
+  {
+    "ENG_name": "Lost",
+    "name": "迷失",
+    "source": "BookOfEbonTides",
+    "page": 66,
+    "level": 3,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你试图混淆和扰乱一个生物的方向感。目标必须进行一次感知豁免检定，如果豁免检定失败，该法术将在其持续时间内移除目标对特定地点、地标和路线的所有记忆，即使是诸如城市内的地点、家园森林以及知名的山丘和道路等众所周知的地点。",
+      "一个{@spell 移除诅咒}或{@spell 高等复原术}法术可终止此效应。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用4环或更高法术位施放该法术时，每比3环高1环，你就可以多指定一个目标生物。这些生物在被你指定时必须彼此相距30尺以内。如果你使用5环或更高的法术位，持续时间为8小时。如果你使用7环或更高的法术位，持续时间为24小时。如果你使用9环法术位，该法术将持续至被解除。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    },
+    "savingThrow": [
+      "感知"
+    ]
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "ENG_name": "Thread of Evolution",
+    "name": "进化之线",
+    "source": "CrookedMoon24",
+    "page": 161,
+    "type": "Thread of Fate",
+    "entries": [
+      "一个与进化之线连接的角色认为自己是凡人种族的下一个进化等级，通过变身实验来更接近\"完美\"。然而，他们仍然不满意，并遵循一位著名研究员的备注来超越自然生物形态的限制。",
+      {
+        "ENG_name": "Goal",
+        "name": "目标",
+        "type": "entries",
+        "entries": [
+          "角色必须解锁在它们身上进行的实验的潜力，发现如何融合科学与魔法以达到进化的最终等级，并变为终极生命形态。"
+        ]
+      },
+      {
+        "ENG_name": "Personalization",
+        "name": "个性化",
+        "type": "entries",
+        "entries": [
+          "确定对角色进行的实验性质。他们是自己进行实验，还是外部人偶进行的？他们试图超越什么样的物理限制？他们崇拜的研究员是谁，他们寻求什么？"
+        ]
+      },
+      {
+        "ENG_name": "Call to Adventure",
+        "name": "冒险召唤",
+        "type": "entries",
+        "entries": [
+          "角色在解锁其个人进化的下一阶段时遇到了死胡同，并寻找了启发他们追求的研究员。当他们最终发现实验室或研究地点时，它大部分已被破坏。通过拼凑仍然残留的零散笔记集合，角色确定研究员寻找了冒险开始的位置。"
+        ]
+      },
+      {
+        "ENG_name": "Associated Background",
+        "name": "关联背景",
+        "type": "entries",
+        "entries": [
+          "{@background 实验体|crookedmoon24}"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/CrookedMoon24/Adventure/052-02-034.thread-of-evolution.webp"
+        },
+        "width": 605,
+        "height": 616
+      }
+    ]
+  }
+]

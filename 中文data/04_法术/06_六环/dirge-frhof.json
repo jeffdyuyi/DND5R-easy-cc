@@ -1,0 +1,77 @@
+[
+  {
+    "ENG_name": "Dirge",
+    "name": "悲恸挽歌",
+    "source": "FRHoF",
+    "page": 144,
+    "level": 6,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "emanation",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "致死的伟力在持续时间内覆盖源自你的60尺{@variantrule 光环 [效应区域]|XPHB|光环}区域。",
+      "你在施展该法术时可以指定哪些生物不受其影响。任何其余的生物在位于{@variantrule 光环 [效应区域]|XPHB|光环}内期间都无法恢复{@variantrule 生命值|XPHB}。当{@variantrule 光环 [效应区域]|XPHB|光环}进入一名生物的占据空间，或是一名生物进入{@variantrule 光环 [效应区域]|XPHB|光环}或是在光环之中结束自己的回合时，此生物都要进行一次体质豁免检定。豁免失败则受{@damage 3d10}暗蚀伤害且陷入{@condition 倒地|XPHB}状态。豁免成功则仅受半伤且{@variantrule 速度|XPHB}减半。一名生物一回合只进行一次此豁免。",
+      {
+        "ENG_name": "Casting as a Circle Spell",
+        "name": "结阵施法",
+        "type": "entries",
+        "entries": [
+          "将该法术被作为结阵法术施展需要至少两名辅施法者参与。此时其持续时间变为{@status 专注|XPHB}，至多10分钟。",
+          "于对抗此法术的豁免中失败的生物还会再获得1级{@condition 力竭|XPHB}等级。该生物具有{@condition 力竭|XPHB}等级期间，其无法通过完成{@variantrule 长休|XPHB}恢复失去的{@variantrule 生命值|XPHB}或移除其{@condition 力竭|XPHB}等级。",
+          "施展该法术时，每一名辅施法者都必须消耗一枚环阶四环及以上的法术位，否则法术失败。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "necrotic"
+    ],
+    "conditionInflict": [
+      "倒地"
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "miscTags": [
+      "HL"
+    ],
+    "areaTags": [
+      "S"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "牧师"
+    ],
+    "display_school": "惑控系",
+    "display_savingThrow": [
+      "体质"
+    ],
+    "display_damageInflict": [
+      "死灵"
+    ]
+  }
+]

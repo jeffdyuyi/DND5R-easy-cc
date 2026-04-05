@@ -1,0 +1,46 @@
+[
+  {
+    "ENG_name": "Essence of the River Spirit",
+    "name": "河流精魄的精华",
+    "source": "ObojimaTallGrass",
+    "page": 234,
+    "type": "P",
+    "rarity": "uncommon",
+    "property": [
+      "Util"
+    ],
+    "entries": [
+      "这个小型带塞的小瓶装有清澈液体，闪烁着微弱的蓝光。当你打开小瓶时，可以将液体倒入一小池水中，比如浴池或温泉，将其转化为治愈水池。一个生物在其中浸泡至少10分钟可恢复{@dice 4d4 + 4}生命值。水池在1小时后或六名生物受益于此效应后失去魔法效果。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 33|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Utility/essence-of-the-river-spirit.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1621,
+          "height": 1621
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1,
+        "autoDestroy": false
+      }
+    }
+  }
+]

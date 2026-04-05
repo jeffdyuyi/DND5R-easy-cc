@@ -1,0 +1,76 @@
+[
+  {
+    "ENG_name": "Spirit Guardians",
+    "name": "灵体卫士",
+    "source": "XPHB",
+    "page": 319,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 3,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "emanation",
+      "distance": {
+        "type": "feet",
+        "amount": 15
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一卷祷文"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "在法术持续时间内，保护性的灵体环绕在你的周围 15 尺{@variantrule 光环 [效应区域]|XPHB|光环}范围内飞舞。如果你属于善良或中立阵营，则它们飘渺的身形看起来像是天使或妖精（由你选择）。如果你属于邪恶阵营，则它们将形如邪魔。",
+      "施展此法术时，你可以指定特定生物让其不受该法术影响。除此之外的生物在{@variantrule 光环 [效应区域]|XPHB|光环}区域内将受法术影响致速度被减半。当{@variantrule 光环 [效应区域]|XPHB|光环}进入一个生物的空间、一个生物进入{@variantrule 光环 [效应区域]|XPHB|光环}或在{@variantrule 速度|XPHB}内结束回合时，其必须进行一次感知豁免。豁免失败将受到{@damage 3d8}点光耀伤害（如果你属于善良或中立）或{@damage 3d8}点暗蚀伤害（如果你属于邪恶），豁免成功则受到半数伤害。一名生物一回合仅需进行一次该豁免。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "使用的法术位每比三环高一环，此法术的伤害就增加 {@scaledamage 3d8|3-9|1d8}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "necrotic",
+      "radiant"
+    ],
+    "savingThrow": [
+      "wisdom"
+    ],
+    "areaTags": [
+      "S"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师"
+    ],
+    "display_school": "咒法系",
+    "display_savingThrow": [
+      "感知"
+    ],
+    "display_damageInflict": [
+      "死灵",
+      "光辉"
+    ]
+  }
+]

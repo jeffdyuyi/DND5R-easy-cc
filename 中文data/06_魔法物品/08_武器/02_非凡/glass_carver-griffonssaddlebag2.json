@@ -1,0 +1,43 @@
+[
+  {
+    "ENG_name": "Glass Carver",
+    "name": "玻璃刻匕",
+    "source": "GriffonsSaddlebag2",
+    "page": 89,
+    "baseItem": "匕首|phb",
+    "type": "M",
+    "tier": "次要",
+    "rarity": "uncommon",
+    "weight": 1,
+    "weaponCategory": "简易",
+    "property": [
+      "F",
+      "L",
+      "T"
+    ],
+    "range": "20/60",
+    "dmg1": "1d4",
+    "dmgType": "P",
+    "entries": [
+      "这把魔法匕首的刀刃镶嵌着一条锋利的魔法水晶，能神奇地穿透玻璃。持握此匕首时，你可以用一个动作在厚度不超过1英寸的非魔法玻璃上切割一条最长1尺的直线。每条线都会发出微弱的光芒，让你能看到你制造的所有线条。制作这些时线条需要你进行专注，如同专注于法术。如果你不再持握匕首或离开玻璃的触及范围，你的专注将提前结束。当你的专注结束时，你用匕首制造的所有线条会魔法般消失并自行修复。",
+      "你可以连接这些线条来在玻璃上形成一个可切割的形状。作为完成这个形状的动作的一部分，进行一次敏捷（{@skill 巧手}）检定。这次检定的DC等于8加上形成该形状所用动作次数的一半。若成功，你可以悄无声息地取下切割好的形状的玻璃。若失败，切割的玻璃会碎裂。一旦玻璃以这种方式被移除（无论是完整取下还是碎裂），你的专注结束，且玻璃不会修复。",
+      "如果将切割下的玻璃放回孔洞，你可以花费1分钟用匕首重新描绘玻璃上的切痕，如同施展{@spell 修复术}法术一般无缝修复对其造成的损害。"
+    ],
+    "lootTables": [
+      "魔法物品表 B1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Glass-Carver.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

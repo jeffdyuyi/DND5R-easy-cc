@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Slippers of Spider Climbing",
+    "name": "蛛行便鞋",
+    "source": "XDMG",
+    "page": 304,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "HotB"
+    ],
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "modifySpeed": {
+      "equal": {
+        "climb": "走"
+      }
+    },
+    "entries": [
+      "着装这双便鞋期间，你无需借助双手即可上下移动，以及穿过垂直表面和沿着天花板移动。你获得等同于你{@variantrule 速度|XPHB}的{@variantrule 攀爬速度|XPHB}。不过，你无法以此法在滑溜的表面上移动，例如被冰或油覆盖的表面。"
+    ],
+    "optionalfeatures": [
+      "仿制魔法物品|TCE"
+    ],
+    "lootTables": [
+      "奥秘 - 非普通|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Slippers of Spider Climbing.webp"
+          },
+          "width": 1000,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

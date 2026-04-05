@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "Hedgewitch's Gardening Cane",
+    "name": "林巫园艺杖",
+    "source": "GriffonsSaddlebag2",
+    "page": 101,
+    "baseItem": "长棍|phb",
+    "type": "SCF",
+    "scfType": "arcane",
+    "tier": "次要",
+    "rarity": "common",
+    "weight": 4,
+    "weaponCategory": "简易",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "staff": true,
+    "entries": [
+      "这根木质手杖两端各有一朵银花装饰，手柄处的银花盛开绽放，而底端的银花则是含苞待放。持握手杖期间，你可以用一个动作将其轻触地面，并在心中下达命令，使手杖的底端魔法般地变化为扫帚、锄头、耙子、铲子，或变回普通手杖。"
+    ],
+    "lootTables": [
+      "魔法物品表 A2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Hedgewitchs-Gardening-Cane.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

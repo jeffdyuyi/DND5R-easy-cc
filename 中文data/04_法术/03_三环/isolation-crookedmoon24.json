@@ -1,0 +1,62 @@
+[
+  {
+    "ENG_name": "Isolation",
+    "name": "孤立术",
+    "source": "CrookedMoon24",
+    "page": 130,
+    "level": 3,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一小块金属立方"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "施法距离内一个你可见的生物必须进行一次感知豁免，豁免失败则其心智将被完全孤立的恐惧所笼罩。在持续时间内，其他所有生物都对目标具有{@condition 隐形|XPHB}状态，目标无法看穿此状态——即便使用{@sense 盲视|XPHB}、{@sense 真实视觉|XPHB}或如同{@spell 识破隐形|XPHB}法术之类的魔法——并且目标无法通过任何其他感官感知其他生物。目标会在移动时绕开其他生物，或以其他方式合理化地不穿过其他生物所占据的空间（例如，如果另一个生物挡在路上，目标会认为那是一扇关着的门或是一堵墙）。目标仍然能感受到疼痛，但无法确定任何由其他生物所造成的伤害的来源。目标在其每个回合结束时重复该豁免，豁免成功则终止自身该法术。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "savingThrow": [
+      "感知"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Spells/Isolation.webp"
+  }
+]

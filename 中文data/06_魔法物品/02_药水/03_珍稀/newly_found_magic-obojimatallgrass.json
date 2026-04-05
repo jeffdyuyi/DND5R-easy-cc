@@ -1,0 +1,46 @@
+[
+  {
+    "ENG_name": "Newly Found Magic",
+    "name": "新发现的魔法",
+    "source": "ObojimaTallGrass",
+    "page": 247,
+    "type": "P",
+    "rarity": "rare",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "当你饮用时，你会感受到一股魔法激励流经全身。你会立即学会一个随机的3环法术。你可以不消耗法术位施放它，一旦你这样做，直到你完成一次长休前都无法再次以这种方式施放它。此药水的效应是永久的，并且不计入你同时可以受影响的药水数量限制。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 56|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/newly-found-magic.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1473,
+          "height": 1473
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1,
+        "autoDestroy": false
+      }
+    }
+  }
+]

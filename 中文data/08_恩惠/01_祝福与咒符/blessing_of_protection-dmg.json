@@ -1,0 +1,15 @@
+[
+  {
+    "ENG_name": "Blessing of Protection",
+    "name": "护佑祝福",
+    "source": "DMG",
+    "page": 228,
+    "reprintedAs": [
+      "护佑祝福|XDMG"
+    ],
+    "type": "Blessing",
+    "entries": [
+      "你的AC和豁免检定获得+1加值。"
+    ]
+  }
+]

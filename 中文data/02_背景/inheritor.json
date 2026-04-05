@@ -1,0 +1,174 @@
+[
+  {
+    "name": "继承人",
+    "ENG_name": "Inheritor",
+    "source": "SCAG",
+    "page": 150,
+    "skillProficiencies": [
+      {
+        "survival": true,
+        "choose": {
+          "from": [
+            "奥秘",
+            "历史",
+            "宗教"
+          ]
+        }
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "choose": {
+          "from": [
+            "musical instrument",
+            "gaming set"
+          ]
+        }
+      }
+    ],
+    "languageProficiencies": [
+      {
+        "anyStandard": 1
+      }
+    ],
+    "startingEquipment": [
+      {
+        "_": [
+          {
+            "special": "你的继承遗产"
+          },
+          "旅行服装|phb",
+          {
+            "item": "小包|phb",
+            "containsValue": 1500
+          }
+        ]
+      },
+      {
+        "a": [
+          {
+            "equipmentType": "setGaming"
+          }
+        ],
+        "b": [
+          {
+            "equipmentType": "instrumentMusical"
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 求生}，再加上{@skill 奥秘}, {@skill 历史}和 {@skill 宗教}中的一个"
+          },
+          {
+            "ENG_name": "Languages:",
+            "name": "语言",
+            "type": "item",
+            "entry": "任选一个"
+          },
+          {
+            "ENG_name": "Tool Proficiencies:",
+            "name": "工具熟练",
+            "type": "item",
+            "entry": "你可以选择一套 {@filter 赌具|items|source=phb|miscellaneous=平凡的|type=赌具} 或者一件 {@filter 乐器|items|source=phb|miscellaneous=平凡的|type=乐器}"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "你的遗产，一套 {@item 旅行服装|phb}，你为这个背景的工具熟练度选择的工具（({@filter 赌具|items|source=phb|miscellaneous=平凡的|type=赌具} 或{@filter 乐器|items|source=phb|miscellaneous=平凡的|type=乐器})，以及一个装有15 gp的{@item 小包|phb}"
+          }
+        ]
+      },
+      {
+        "ENG_name": "Feature: Inheritance",
+        "name": "特性：继承遗产",
+        "type": "entries",
+        "entries": [
+          "从下列表中选择或者随机一个你继承的遗产，和你的 DM 一起讨论决定出细节：你的遗产为何那么重要，它拥有的故事是什么？你可以让 DM 把这部分内容加入到整个游戏故事中，通过剧情让你和你的角色更多的了解这份遗产的故事。",
+          "DM 可以自由发挥你获得的遗产带来的故事，通过任务让你学习到更多有关遗产的历史或本质，或者面对那些想要抢夺这件东西的家伙，或者让你从中领悟到你到底追寻的是什么。DM 也决定了这件遗产的属性和它所拥有的历史和价值。例如，这个物品可能是一小件魔法物品，或是一开始只有一点点能力的东西，但是随着时间流逝它的能力逐渐增长。亦或者，这件遗产起初可能是件毫不起眼的东西，但是只有在某些条件满足时，会恢复原本面貌。",
+          "当你开始你的冒险时，你可以决定是否把你的遗产透露给你的同伴们，你也可以默默保守着这个秘密，直到你了解这件东西对你意味着什么和它能给你做些什么。",
+          {
+            "type": "table",
+            "colLabels": [
+              "d8",
+              "物件 或 物品"
+            ],
+            "colStyles": [
+              "col-1 text-center",
+              "col-11"
+            ],
+            "rows": [
+              [
+                "1",
+                "一份文档，例如地图、信件或是日记之类的"
+              ],
+              [
+                "2-3",
+                "一个饰品（参见《玩家手册》第五章的\"饰品\"）"
+              ],
+              [
+                "4",
+                "一套服装"
+              ],
+              [
+                "5",
+                "一片珠宝"
+              ],
+              [
+                "6",
+                "一本神秘的书或是一张神秘的字条"
+              ],
+              [
+                "7",
+                "一份手写的故事、歌曲、诗歌、或秘密"
+              ],
+              [
+                "8",
+                "一个纹身，或身上某处的印记"
+              ]
+            ]
+          }
+        ],
+        "data": {
+          "isFeature": true
+        }
+      },
+      {
+        "ENG_name": "Suggested Characteristics",
+        "name": "建议人物特征",
+        "type": "entries",
+        "entries": [
+          "使用《玩家手册》中{@background 平民英雄} 背景的表格作为你的特性和动机的基础，适当修改条目以适应你作为继承人的身份。",
+          "你的羁绊可能会与你的继承物直接相关，或可能会是你从之接收到继承物的某人。你的理念可能会受到你对继承物了解的影响，或可能被在你所得到赠礼所能做到的事给影响。"
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "entries": [
+                "你是某件极具价值的东西的继承人——不是简单的金钱或财富，而是一个只托付给你一个人的物品。你的遗产可能是直接从你家族的成员那里得来的，作为出生的权利，或者是你的朋友、导师、老师或你生活中其他重要人物留给你的。你继承遗产的事实改变了你的生活，可能也让你走上了冒险的道路，但它也可能伴随着许多危险，包括那些觊觎你的礼物并想要用武力夺走它的人。"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hasFluff": true,
+    "translator": "不全书",
+    "edition": "classic"
+  }
+]

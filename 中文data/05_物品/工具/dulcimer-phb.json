@@ -1,0 +1,21 @@
+[
+  {
+    "name": "扬琴",
+    "ENG_name": "Dulcimer",
+    "source": "PHB",
+    "page": 154,
+    "edition": "classic",
+    "type": "INS",
+    "rarity": "none",
+    "weight": 10,
+    "value": 2500,
+    "basicRules": true,
+    "referenceSources": [
+      "ToA"
+    ],
+    "reprintedAs": [
+      "扬琴|XPHB"
+    ],
+    "srd": true
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "ENG_name": "Splinterguard",
+    "name": "碎木甲",
+    "source": "GriffonsSaddlebag2",
+    "page": 168,
+    "baseItem": "板条甲|phb",
+    "type": "HA",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": "由德鲁伊或游侠",
+    "reqAttuneTags": [
+      {
+        "class": "德鲁伊"
+      },
+      {
+        "class": "游侠"
+      }
+    ],
+    "weight": 60,
+    "ac": 17,
+    "strength": "15",
+    "stealth": true,
+    "entries": [
+      "这件板条甲的防护板由精心塑造的铁叶木制成，这种木材以其非凡的耐久性而闻名。即使你未与护甲同调，也能获得以下增益：",
+      "在你穿着这件护甲期间，任何命中你的重击都会变为普通命中。此外，每天你第一次被重击命中时，护甲的木板会碎裂成无数令人痛苦的木质破片。距离你10尺内的所有其他生物都必须进行一次DC 15的敏捷豁免检定，失败则受到{@damage 3d8}穿刺伤害，成功则伤害减半。一旦发生这种情况，护甲的木板会保持破裂状态直到次日黎明，届时会魔法性地重新生长。在木板重生前，护甲无法再次碎裂，且其提供的AC受到 –2 罚值。木板无法通过魔法或普通方式修复，但{@spell 植物滋长}法术可以在每次黎明前使木板提前重生一次。",
+      "在你已与这件护甲同调期间，你视为具有其护甲熟练，且不会因穿着它而在敏捷（{@skill 隐匿}）检定上具有劣势。此外，当护甲碎裂时，被弹片击中的生物受到{@damage 5d8}穿刺伤害而非{@damage 3d8}，且你可以选择范围内哪些生物会、哪些生物不会受到影响。"
+    ],
+    "lootTables": [
+      "魔法物品表 G2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Splinterguard.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Cloak of Many Fashions",
+    "name": "万众时尚斗篷",
+    "source": "XGE",
+    "page": 136,
+    "referenceSources": [
+      "DIP",
+      "WBtW"
+    ],
+    "reprintedAs": [
+      "万众时尚斗篷|XDMG"
+    ],
+    "tier": "次要",
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "穿着这件斗篷，你就可以用一个附赠动作改变它的样式、颜色、及外表品质。这件斗篷的重量不会因此改变，且不论它的外观如何，这件斗篷永远只能是一件斗篷而不是别的东西。当然，这件斗篷可以用于复制其他魔法斗篷的外观，但它不会因此具有任何其他魔法斗篷的魔法能力。"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 100,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XGE/Cloak of Many Fashions.webp"
+          },
+          "credit": "Brian Valeza",
+          "width": 850,
+          "height": 1151
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

@@ -1,0 +1,49 @@
+[
+    {
+        "ENG_name": "Boon of the Elder Fey",
+        "name": "长者妖精恩惠",
+        "source": "GrimHollowPG24",
+        "page": 120,
+        "category": "EB",
+        "prerequisite": [
+            {
+                "level": 19,
+                "other": "{@charoption 妖精|GrimHollowPG24|妖精变形}"
+            }
+        ],
+        "ability": [
+            {
+                "choose": {
+                    "from": [
+                        "str",
+                        "dex",
+                        "con",
+                        "int",
+                        "wis",
+                        "cha"
+                    ]
+                },
+                "max": 30
+            }
+        ],
+        "entries": [
+            "你获得以下增益。",
+            {
+                "ENG_name": "Fey Bulwark",
+                "name": "妖精意志壁垒",
+                "type": "entries",
+                "entries": [
+                    "你不再受到{@optfeature 虚弱体质|GrimHollowPG24|虚弱体质变形缺点}的影响。"
+                ]
+            },
+            {
+                "ENG_name": "Divergent Growth",
+                "name": "繁花滋长",
+                "type": "entries",
+                "entries": [
+                    "选择任意一个你尚未拥有但满足先决条件的{@filter 妖精变形恩惠|optionalfeatures|source=grimhollowpg24|特性 type=f:tb|miscellaneous=}。你将获得该恩惠。"
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "Infernal Constitution",
+    "name": "炼狱体质",
+    "source": "XGE",
+    "page": 75,
+    "prerequisite": [
+      {
+        "race": [
+          {
+            "ENG_name": "tiefling",
+            "name": "提夫林"
+          }
+        ]
+      }
+    ],
+    "ability": [
+      {
+        "con": 1
+      }
+    ],
+    "resist": [
+      "寒冷",
+      "毒素"
+    ],
+    "entries": [
+      "邪魔之血令你变得无比强大，为你解锁一些邪魔拥有的强大韧性。你获得下列增益：",
+      {
+        "type": "list",
+        "items": [
+          "你获得寒冷伤害和毒素伤害的抗性",
+          "你在对抗{@condition 中毒}时所做的豁免具有优势。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

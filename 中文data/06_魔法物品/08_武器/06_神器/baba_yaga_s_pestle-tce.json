@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Baba Yaga's Pestle",
+    "name": "芭芭·雅嘎的杵",
+    "source": "TCE",
+    "page": 121,
+    "baseItem": "长棍|PHB",
+    "type": "M",
+    "rarity": "artifact",
+    "reqAttune": true,
+    "weight": 4,
+    "weaponCategory": "simple",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "bonusWeapon": "+3",
+    "recharge": "拂晓",
+    "rechargeAmount": 12,
+    "charges": 12,
+    "entries": [
+      "杵是一个6英寸长的破旧木制工具。每回合一次，当你持握着杵时，你可以使其伸长至一根长棍或使其缩回一根杵（无需动作）。作为长棍时，杵是一个在攻击掷骰与伤害掷骰上有+3加值的魔法武器。",
+      "杵有12发充能。当你使用杵并以一次近战攻击命中时，你可以消耗至多3发充能以额外造成每发充能{@damage 1d8}力场伤害。杵在每天黎明时恢复所有已消耗的充能。"
+    ]
+  }
+]

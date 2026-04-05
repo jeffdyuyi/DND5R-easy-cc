@@ -1,0 +1,89 @@
+[
+  {
+    "ENG_name": "Druidcraft",
+    "name": "德鲁伊伎俩",
+    "source": "XPHB",
+    "page": 266,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 0,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你向自然精魂低语，在施法距离内创造出下述效应之一。",
+      {
+        "ENG_name": "Weather Sensor",
+        "name": "感知天气",
+        "type": "entries",
+        "entries": [
+          "你创造一个微型而无害的感官效应，并以之预报你所在地接下来 24 小时的天气状况。该效应可表现为一个代表晴空的金球、一朵代表雨天的云彩、代表雪日而飘飞的雪花等等。该效应将持续 1 轮。"
+        ]
+      },
+      {
+        "ENG_name": "Bloom",
+        "name": "盛放",
+        "type": "entries",
+        "entries": [
+          "你可以立即让一朵鲜花绽放，一颗种子破壳，一片叶蕾发芽。"
+        ]
+      },
+      {
+        "ENG_name": "Sensory Effect",
+        "name": "感官效应",
+        "type": "entries",
+        "entries": [
+          "你创造一个无害的感官效应，例如落叶、如幽灵般舞动的小仙灵们、微风、动物的声音或者臭鼬的微弱臭气。该效应只能在 5 尺的{@variantrule 立方 [效应区域]|XPHB|立方}区域内起效。"
+        ]
+      },
+      {
+        "ENG_name": "Fire Play",
+        "name": "玩火",
+        "type": "entries",
+        "entries": [
+          "你点亮/熄灭一根蜡烛、一根火把或一处小篝火。"
+        ]
+      }
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/XPHB/Druidcraft.webp"
+          },
+          "credit": "Olga Drebas",
+          "width": 1093,
+          "height": 1440
+        }
+      ]
+    },
+    "classes": [
+      "德鲁伊"
+    ],
+    "display_school": "变化系"
+  }
+]

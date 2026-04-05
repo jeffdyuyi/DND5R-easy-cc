@@ -1,0 +1,68 @@
+[
+  {
+    "ENG_name": "Observant",
+    "name": "观察力",
+    "source": "XPHB",
+    "page": 205,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4,
+        "ability": [
+          {
+            "int": 13
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "ability": [
+          {
+            "wis": 13
+          }
+        ]
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "int",
+            "wis"
+          ]
+        }
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "choose": {
+          "from": [
+            "洞悉",
+            "调查",
+            "察觉"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Keen Observer",
+        "name": "敏锐观察",
+        "type": "entries",
+        "entries": [
+          "选择以下技能之一：{@skill 洞悉|XPHB}、{@skill 调查|XPHB}或{@skill 察觉|XPHB}。如果你不具有所选技能的熟练，则你获得其熟练；如果你已有熟练，则你获得其{@variantrule 专精|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Quick Search",
+        "name": "快速搜索",
+        "type": "entries",
+        "entries": [
+          "你可以用{@variantrule 附赠动作|XPHB}执行{@action 搜索|XPHB}动作。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

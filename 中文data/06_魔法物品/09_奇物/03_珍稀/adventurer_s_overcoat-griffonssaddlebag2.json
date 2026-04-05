@@ -1,0 +1,34 @@
+[
+  {
+    "ENG_name": "Adventurer's Overcoat",
+    "name": "冒险者大衣",
+    "source": "GriffonsSaddlebag2",
+    "page": 32,
+    "resist": [
+      "寒冷"
+    ],
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这件已经褪色的大衣曾被无数登山冒险者穿过且饱经沧桑，大衣的下摆还挂着一层薄薄的霜。当你穿着这件大衣期间，你和距离你5尺范围内的所有友方生物都具有对寒冷伤害的抗性。"
+    ],
+    "lootTables": [
+      "魔法物品表 G2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Adventurers-Overcoat.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

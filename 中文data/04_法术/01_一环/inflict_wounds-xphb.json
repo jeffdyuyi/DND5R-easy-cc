@@ -1,0 +1,66 @@
+[
+  {
+    "ENG_name": "Inflict Wounds",
+    "name": "致伤术",
+    "source": "XPHB",
+    "page": 288,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 1,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你迫使触碰的一名生物进行体质豁免检定，豁免失败将受到{@damage 2d10}的暗蚀伤害，豁免成功则受到半数伤害。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "使用的法术位每比一环高一环，此法术的伤害就增加{@scaledamage 2d10|1-9|1d10}点。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "necrotic"
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师"
+    ],
+    "display_school": "死灵系",
+    "display_savingThrow": [
+      "体质"
+    ],
+    "display_damageInflict": [
+      "死灵"
+    ]
+  }
+]

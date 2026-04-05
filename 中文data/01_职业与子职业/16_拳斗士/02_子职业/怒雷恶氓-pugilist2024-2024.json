@@ -1,0 +1,149 @@
+{
+  "ENG_name": "Piss and Vinegar",
+  "name": "怒雷恶氓",
+  "source": "Pugilist2024",
+  "shortName": "怒雷恶氓",
+  "className": "拳斗士",
+  "classSource": "Pugilist2024",
+  "subclassFeatures": [
+    {
+      "ENG_name": "Piss and Vinegar",
+      "name": "怒雷恶氓",
+      "source": "Pugilist2024",
+      "className": "拳斗士",
+      "classSource": "Pugilist2024",
+      "subclassShortName": "怒雷恶氓",
+      "subclassSource": "Pugilist2024",
+      "level": 3,
+      "entries": [
+        "{@i 嘴上带刺，拳上见血}",
+        "有的拳斗士以反派形象为荣，乐于夸大其词来博取恶名。他们因污言秽语和卑鄙伎俩遭人憎恨，但这些拳斗士以他们的挑衅技术和不惜一切赢的战斗的决心为傲。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "恶劣态度|拳斗士|Pugilist2024|怒雷恶氓|Pugilist2024|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "咸涩礼敬|拳斗士|Pugilist2024|怒雷恶氓|Pugilist2024|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Bad Attitude",
+      "name": "恶劣态度",
+      "source": "Pugilist2024",
+      "className": "拳斗士",
+      "classSource": "Pugilist2024",
+      "subclassShortName": "怒雷恶氓",
+      "subclassSource": "Pugilist2024",
+      "level": 3,
+      "skillProficiencies": [
+        {
+          "intimidation": true
+        }
+      ],
+      "entries": [
+        "若你还未获得{@skill 威吓|XPHB}技能的熟练，你获得之。此外，你使用威吓技能的属性检定获得等于你力量调整值的加值（至少+1）。"
+      ]
+    },
+    {
+      "ENG_name": "Salty Salute",
+      "name": "咸涩礼敬",
+      "source": "Pugilist2024",
+      "className": "拳斗士",
+      "classSource": "Pugilist2024",
+      "subclassShortName": "怒雷恶氓",
+      "subclassSource": "Pugilist2024",
+      "level": 3,
+      "entries": [
+        "你对侮辱他人有着艺术般的技巧。你能以{@variantrule 附赠动作|XPHB}挑衅一名60尺内的能看见或听见你的生物。该生物必须成功通过一次感知豁免检定，否则受到等于掷一次你的拳斗骰加你的体质调整值的心灵伤害，且其对除你以外的生物进行的任意攻击检定具有{@variantrule 劣势|XPHB}，持续至你的下个回合开始。",
+        "该豁免以及本子职其他特性的DC等于8+你的体质调整值+{@variantrule 熟练|XPHB|熟练加值}。"
+      ]
+    },
+    {
+      "ENG_name": "Dirty Tricks",
+      "name": "腌臜诡技",
+      "source": "Pugilist2024",
+      "className": "拳斗士",
+      "classSource": "Pugilist2024",
+      "subclassShortName": "怒雷恶氓",
+      "subclassSource": "Pugilist2024",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "你有些诡技能让你即使身处逆境也能挽回局势。你能使用以下一种腌臜诡技。你每回合仅能使用一次腌臜诡技，且一旦你使用了某个腌臜诡技，直至完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}你都无法再次使用该诡技。",
+        {
+          "ENG_name": "Heelstomper",
+          "name": "踩脚",
+          "type": "entries",
+          "entries": [
+            "当你以{@variantrule 徒手打击|XPHB}或拳斗武器对一名生物造成伤害时，该生物必须成功通过一次敏捷豁免，否则其{@variantrule 速度|XPHB}降至0，持续1分钟。受影响的生物可以在其每个回合结束时重复豁免，成功则终止其身上的该效应。"
+          ]
+        },
+        {
+          "ENG_name": "Low Blow",
+          "name": "偷桃",
+          "type": "entries",
+          "entries": [
+            "当你以{@variantrule 徒手打击|XPHB}或拳斗武器对一名生物造成伤害时，你能猛击该生物的下体。若你如此做，该生物必须成功通过一次力量豁免，否则对该生物发动的攻击具有{@variantrule 优势|XPHB}，持续至你的下个回合结束。"
+          ]
+        },
+        {
+          "ENG_name": "Pocket Sand",
+          "name": "扬沙",
+          "type": "entries",
+          "entries": [
+            "你能以{@variantrule 附赠动作|XPHB}对10尺内的一名生物的眼睛抛出尘土。该生物必须成功通过一次体质豁免，否则其陷入{@condition 目盲|XPHB}状态，持续至其下个回合结束。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Mean Old Cuss",
+      "name": "老而为贼",
+      "source": "Pugilist2024",
+      "className": "拳斗士",
+      "classSource": "Pugilist2024",
+      "subclassShortName": "怒雷恶氓",
+      "subclassSource": "Pugilist2024",
+      "level": 11,
+      "header": 2,
+      "entries": [
+        "你只需要用一个手势和几句讥讽就能让整座屋子的生物被你激怒。你能以{@variantrule 附赠动作|XPHB}选择一定数量的位于你30尺内能看见或听见你的目标，数量至多等于你的拳斗士等级。你选择的每名生物必须成功通过一次感知豁免，否则受到等于掷一次你的拳斗骰加你的体质调整值的心灵伤害，且其对除你以外的生物进行的任意攻击检定具有{@variantrule 劣势|XPHB}直到你的下个回合开始。",
+        "此特性一经使用，直至完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}你都无法再次使用。你也可以消耗3点{@classFeature 锐气|拳斗士|Pugilist2024|2|Pugilist2024|锐气点}（无需动作）来重置该特性的使用权。"
+      ]
+    },
+    {
+      "ENG_name": "Dirtier Tricks",
+      "name": "龌龊诡技",
+      "source": "Pugilist2024",
+      "className": "拳斗士",
+      "classSource": "Pugilist2024",
+      "subclassShortName": "怒雷恶氓",
+      "subclassSource": "Pugilist2024",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "你获得下列额外的腌臜诡技。你每回合仅能使用一次腌臜诡技，且一旦你使用了某个腌臜诡技，直至完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}你都无法再次使用该诡技。",
+        {
+          "ENG_name": "Rabbit Punch",
+          "name": "后脑兔击",
+          "type": "entries",
+          "entries": [
+            "当你以{@variantrule 徒手打击|XPHB}或拳斗武器命中一名生物时，你猛击其头部。该生物失去其心灵伤害{@variantrule 抗性|XPHB}（若有）且其豁免检定具有{@variantrule 劣势|XPHB}，持续至你的下个回合结束。"
+          ]
+        },
+        {
+          "ENG_name": "Sucker Punch",
+          "name": "混球暗袭",
+          "type": "entries",
+          "entries": [
+            "当你以{@variantrule 徒手打击|XPHB}或拳斗武器命中一名生物时，你能将命中改为{@variantrule 重击|XPHB}。对此{@variantrule 重击|XPHB}，你改为投掷三次该攻击的伤害骰并将其累加，而非平常的两次。"
+          ]
+        }
+      ]
+    }
+  ],
+  "hasFluffImages": true,
+  "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Icons/Piss and Vinegar.webp"
+}

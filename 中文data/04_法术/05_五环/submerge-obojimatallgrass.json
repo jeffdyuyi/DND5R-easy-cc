@@ -1,0 +1,70 @@
+[
+  {
+    "ENG_name": "Submerge",
+    "name": "潜渡术",
+    "source": "ObojimaTallGrass",
+    "page": 190,
+    "level": 5,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 10
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "round",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "该法术在范围内的一片水域与同一存在平面上500英里内的另一片水域之间创造一个魔法链接。你必须事先至少见过或触碰过目的地水域。在持续时间内，任何生物都可以通过使用5英尺的移动力进入目标水域并从目的地水域中出来。",
+      "两处水体都必须足够大，以使试图通过的生物能够完全浸没。如果任一处水体不够大，使生物无法完全浸没，则有{@chance 25}的几率该生物会从同一存在平面上的随机水体中出来。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Custom/Spells/Submerge.webp"
+  }
+]

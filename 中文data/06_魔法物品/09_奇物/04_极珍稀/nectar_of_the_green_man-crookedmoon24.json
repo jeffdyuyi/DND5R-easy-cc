@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Nectar of the Green Man",
+    "name": "绿人甘露",
+    "source": "CrookedMoon24",
+    "page": 616,
+    "type": "P|XPHB",
+    "rarity": "very rare",
+    "entries": [
+      "饮下这瓶药水后，你获得法术{@skill 自然|XPHB}的效应，但你的体验中充满了恐惧与不安。你必须进行一次DC15的感知豁免。豁免失败则在接下来的8小时内，只要你能看到森林，你的攻击检定和属性检定就会具有{@variantrule 劣势|XPHB}。如果你对{@condition 恐慌|XPHB}状态具有{@variantrule 免疫|XPHB}，则在该豁免中自动成功。",
+      "这个瓶子由木头雕刻而成，表面饰有一张由树叶组成的绿脸。液体呈深绿色，点缀着赭色的条纹。",
+      {
+        "ENG_name": "Heightened Potency",
+        "name": "强效",
+        "type": "entries",
+        "entries": [
+          "你可以从{@skill 自然|XPHB}中得知全部五项资讯。"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Nectar%20of%20the%20Green%20Man.webp"
+          },
+          "width": 895,
+          "height": 1200,
+          "credit": "Eugenio Frosali"
+        }
+      ]
+    }
+  }
+]

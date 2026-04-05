@@ -1,0 +1,29 @@
+[
+  {
+    "ENG_name": "Firearm Bullets (10)",
+    "name": "带翼枪械子弹 (10)",
+    "source": "BMT",
+    "page": 69,
+    "edition": "one",
+    "type": "A|XPHB",
+    "rarity": "uncommon",
+    "weight": 2,
+    "value": 300,
+    "bulletFirearm": true,
+    "entries": [
+      "使用这种弹药进行的远程武器攻击检定无视半掩体和{@quickref 掩护||3||四分之三掩护}。此外，使用这种弹药进行远程武器攻击时，远距离攻击不会带来劣势。"
+    ],
+    "packContents": [
+      {
+        "item": "枪械子弹|xphb",
+        "quantity": 10
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "namePrefix": "带翼",
+    "_isVariant": true,
+    "valueReference": 200
+  }
+]

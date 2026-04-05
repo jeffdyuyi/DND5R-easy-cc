@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Spellguard Shield",
+    "name": "抗法盾",
+    "source": "DMG",
+    "page": 201,
+    "srd": true,
+    "referenceSources": [
+      "CoA"
+    ],
+    "reprintedAs": [
+      "抗法盾|XDMG"
+    ],
+    "type": "S",
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "weight": 6,
+    "ac": 2,
+    "entries": [
+      "持握此盾牌期间，你对抗法术与其他魔法效应所作的豁免检定具有优势，而对你发动的法术攻击检定具有劣势。"
+    ],
+    "lootTables": [
+      "魔法物品表H"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 40000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Spellguard Shield.webp"
+          },
+          "width": 1024,
+          "height": 1024
+        }
+      ]
+    },
+    "otherSources": [
+      {
+        "source": "XDMG"
+      }
+    ]
+  }
+]

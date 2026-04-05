@@ -1,0 +1,17 @@
+{
+  "ENG_name": "Rally",
+  "name": "重整旗鼓",
+  "source": "XPHB",
+  "page": 95,
+  "featureType": [
+    "MV:B"
+  ],
+  "consumes": {
+    "ENG_name": "Superiority Die",
+    "name": "卓越骰"
+  },
+  "entries": [
+    "以一个{@variantrule 附赠动作|XPHB}，你可以消耗一枚卓越骰以鼓舞一名战友的士气。选择一名位于你30尺内的能看见你或听到你的盟友。该生物获得数量等于你战士等级的一半（向下取整）加卓越骰结果的{@variantrule 临时生命值|XPHB}。"
+  ],
+  "translator": "不全书"
+}

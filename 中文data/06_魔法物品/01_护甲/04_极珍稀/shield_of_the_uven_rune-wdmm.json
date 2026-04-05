@@ -1,0 +1,61 @@
+[
+  {
+    "ENG_name": "Shield of the Uven Rune",
+    "name": "敌人符文之盾",
+    "source": "WDMM",
+    "page": 299,
+    "type": "S",
+    "immune": [
+      "寒冷"
+    ],
+    "rarity": "very rare",
+    "reqAttune": true,
+    "weight": 6,
+    "ac": 2,
+    "bonusWeapon": "+1",
+    "entries": [
+      "这个盾牌是由一条远古白龙的鳞片制成的。其外侧面烧有一个符文。一个成功通过 {@dc 20} 智力（{@skill 历史}）检定并检查该符文的角色会认出这是一个 uven（巨人语中意为\"敌人\"）符文，它赋予强大的力量。",
+      "持有这个盾牌时，你将从以下属性中受益。",
+      {
+        "ENG_name": "Winter's Friend",
+        "name": "冬日之友",
+        "type": "entries",
+        "entries": [
+          "你对寒冷伤害免疫。"
+        ]
+      },
+      {
+        "ENG_name": "Deadly Rebuke",
+        "name": "致命叱喝",
+        "type": "entries",
+        "entries": [
+          "当一个生物用近战攻击击中你后，你可以使用你的反应对那个生物造成{@damage 3d6}点暗蚀伤害。"
+        ]
+      },
+      {
+        "ENG_name": "Bane",
+        "name": "灾祸术",
+        "type": "entries",
+        "entries": [
+          "你可以从盾牌中施放{@spell 灾祸术}（豁免 {@dc 17}）。该法术不需要{@status 专注}，持续1分钟。一旦你从盾牌中施放了法术，直到完成一次短休或长休，你不能再这样做。"
+        ]
+      },
+      {
+        "ENG_name": "Gift of Vengeance",
+        "name": "复仇之赐",
+        "type": "entries",
+        "entries": [
+          "你可以通过用一根手指触摸武器上的uven符文，将盾牌的魔法转移到一个非魔法武器上。转移需要8小时的工作，并且需要这两个物品彼此相距不超过5尺。结束时，盾牌将被摧毁，而符文将被蚀刻或烧入所选武器。这个武器成为了一个稀有的魔法物品，需要调谐。它具有+1武器的属性。当武器用于对抗你在魔法武器创建时选择的以下生物类型之一时，加值增加到+3：异怪、天界生物、构装生物、龙类、元素生物、精类、恶魔、巨人或不死生物。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "rest": {
+        "1e": [
+          "灾祸术"
+        ]
+      }
+    },
+    "valueReference": 40000
+  }
+]

@@ -1,0 +1,21 @@
+[
+  {
+    "ENG_name": "Fangs of Guile",
+    "name": "狡诈之牙",
+    "source": "HumblewoodTales",
+    "page": 239,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "黄昏",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "这条珍稀项链由{@deity 刻沦|永荣者|HumblewoodCampaignSetting}的信徒所制造，他们在一次仪式交换中获得了制造技艺的知识。这条项链赋予佩戴者同等的狡诈与狂怒。",
+      "当你佩戴这条项链时，你在{@skill 欺瞒}、{@skill 洞悉}和{@skill 游说}技能检定上具有优势。",
+      "这条项链有3充能。它在每天黄昏时恢复{@dice 1d3}充能。你可以消耗1个动作来花费1到3充能，并使一个大型红色灵体鲨颚啃咬你能看见的5尺内的一个生物。灵体鲨颚进行攻击检定，具有{@hit 7}加值。命中时，目标受到等同于消耗充能数量的{@damage 3d6}魔法穿刺伤害。你获得等同于造成伤害数量的临时生命值。",
+      "如果项链在黄昏时没有充能，掷{@dice 1d6}。骰出1时，毒牙会变黄且失去光泽，项链将永远失去魔法。"
+    ],
+    "hasFluffImages": true
+  }
+]

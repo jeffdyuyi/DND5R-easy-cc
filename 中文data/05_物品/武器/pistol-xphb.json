@@ -1,0 +1,44 @@
+[
+  {
+    "name": "手枪",
+    "ENG_name": "Pistol",
+    "source": "XPHB",
+    "page": 215,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "none",
+    "weight": 3,
+    "value": 25000,
+    "weaponCategory": "martial",
+    "property": [
+      "A|XPHB",
+      "LD|XPHB"
+    ],
+    "mastery": [
+      "侵扰|XPHB"
+    ],
+    "dmg1": "1d10",
+    "dmgType": "P",
+    "range": "30/90",
+    "ammoType": "枪械子弹|XPHB",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XPHB/Pistol.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 440,
+          "height": 145
+        }
+      ]
+    },
+    "basicRules2024": true,
+    "firearm": true,
+    "hasFluffImages": true,
+    "srd52": true,
+    "weapon": true
+  }
+]

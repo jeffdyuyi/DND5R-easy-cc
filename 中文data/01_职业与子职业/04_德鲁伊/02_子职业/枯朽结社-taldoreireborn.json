@@ -1,0 +1,204 @@
+{
+  "ENG_name": "Circle of the Blighted",
+  "name": "枯朽结社",
+  "shortName": "枯朽",
+  "source": "TalDoreiCampaignSettingReborn",
+  "className": "德鲁伊",
+  "classSource": "PHB",
+  "page": 171,
+  "edition": "classic",
+  "subclassFeatures": [
+    {
+      "ENG_name": "Circle of the Blighted",
+      "name": "枯朽结社",
+      "source": "TalDoreiCampaignSettingReborn",
+      "page": 171,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "枯朽",
+      "subclassSource": "TalDoreiCampaignSettingReborn",
+      "level": 2,
+      "header": 1,
+      "entries": [
+        "驱使生命和自然魔法的施法者常常会被吸引到一处特定的神殿或自然场所，并让他们的肉体与精魂与这些充满魔法力量的场所形成纽带。德鲁伊们从这些地点汲取生命力，并穷尽一生来守护它——但并非所有的德鲁伊都成功守护了自己的圣所。",
+        "无论是由于邪恶魔法潜移默化的腐化，古老的恐怖之物留下的污染还是德鲁伊自身犯下的可怕错误，都可能让一片土地被魔法所诅咒，并相应让与它相绑定的德鲁伊遭受扭曲。在被与不洁存在的联系所扭曲后，这些守护者们身上也体现了他们所侍奉的、被污浊的自然。他们推进着自然的腐化，并利用它来达成自己的目的——或者寻找一种结束自己身上诅咒的方式。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "污化土地|德鲁伊|PHB|枯朽|TalDoreiCampaignSettingReborn|2"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "枯败之形|德鲁伊|PHB|枯朽|TalDoreiCampaignSettingReborn|2"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Blighted Shape",
+      "name": "枯败之形",
+      "source": "TalDoreiCampaignSettingReborn",
+      "page": 172,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "枯朽",
+      "subclassSource": "TalDoreiCampaignSettingReborn",
+      "level": 2,
+      "header": 2,
+      "entries": [
+        "同样从2级起，你的肉体形态开始表现出你所驱使的腐化的影响，在你的皮肤上会显出发黑的纹路，生出多节、突出的骨质或其他怪异的外形。你获得魅力（{@skill 威吓}）技能的熟练。",
+        "此外，当你使用荒野形态特性变形时，扭曲凸出的骨棘会从你的身体中生出。在荒野变形期间，你的AC获得+2加值，你的野兽形态会获得60尺{@sense 黑暗视觉}，若它已有黑暗视觉，则其{@sense 黑暗视觉}范围额外增加60尺。"
+      ]
+    },
+    {
+      "ENG_name": "Defile Ground",
+      "name": "污化土地",
+      "source": "TalDoreiCampaignSettingReborn",
+      "page": 172,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "枯朽",
+      "subclassSource": "TalDoreiCampaignSettingReborn",
+      "level": 2,
+      "header": 2,
+      "entries": [
+        "自2级你选择这一结社起，你获得以一个附赠动作腐化一片土地或水体的能力。指定你60尺内的一点，以那一点为中心10尺半径内的土地或水体将被腐化1分钟，这片区域对与你敌对的生物来说视为{@quickref 困难地形||3}。此外，当一个位于该区域内的生物在一个回合内首次因为一次攻击或法术受到伤害时，其会额外受到{@damage 1d4}点暗蚀伤害。你能以一个附赠动作将腐化区域移动最多30尺距离。飞行中的生物不会受腐化影响。",
+        "一旦你使用了这一特性，直到完成一次{@quickref 休息|PHB|2|0|短休或长休}前你都无法再次使用它。"
+      ]
+    },
+    {
+      "ENG_name": "Call of the Shadowseeds",
+      "name": "阴影之种的呼唤",
+      "source": "TalDoreiCampaignSettingReborn",
+      "page": 172,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "枯朽",
+      "subclassSource": "TalDoreiCampaignSettingReborn",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "在6级时，你学会从敌人的生命力量中召唤森林的野性孩子。当一个非亡灵或构装的生物在你的{@subclassFeature 污化土地|德鲁伊|PHB|枯朽|TalDoreiCampaignSettingReborn|2}特性区域内受到伤害时，你可以使用你的反应在距离该生物5尺内的一个未占据空间召唤一个{@creature 枯萎幼苗|TalDoreiCampaignSettingReborn}。你可以指挥这个{@creature 枯萎幼苗|TalDoreiCampaignSettingReborn|树苗}对5尺内的任何生物进行一次攻击作为此反应的一部分。这个{@creature 枯萎幼苗|TalDoreiCampaignSettingReborn|树苗}随后在你的先攻回合行动，服从你的口头命令。",
+        "该{@creature 枯萎幼苗|TalDoreiCampaignSettingReborn}会一直为你服务，直到它的生命值降至0点、你的下一次{@quickref 休息|PHB|2|0|长休}结束、或者你召唤另一个{@creature 枯萎幼苗|TalDoreiCampaignSettingReborn|树苗}为止，届时它会碎裂成散发恶臭的腐殖质。你可以使用此特性的次数等同于你的熟练加值，当你完成一次{@quickref 休息|PHB|2|0|长休}时恢复所有已使用的次数。",
+        "该{@creature 枯萎幼苗|TalDoreiCampaignSettingReborn|树苗}使用下方数据。其特性基于你的等级和熟练加值（PB）缩放。",
+        {
+          "ENG_name": "Blighted Sapling",
+          "name": "枯萎幼苗",
+          "type": "statblock",
+          "source": "TalDoreiCampaignSettingReborn",
+          "page": 172,
+          "tag": "creature",
+          "collapsed": true
+        }
+      ]
+    },
+    {
+      "ENG_name": "Defile Ground (10th Level)",
+      "name": "污化土地(10级)",
+      "source": "TalDoreiCampaignSettingReborn",
+      "page": 172,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "枯朽",
+      "subclassSource": "TalDoreiCampaignSettingReborn",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "从10级起，你所污化的区域半径增加到20尺半径。此外，你的污染区域造成的额外伤害在你达到10级时候增长为{@damage 1d6}。"
+      ]
+    },
+    {
+      "ENG_name": "Foul Conjuration",
+      "name": "污秽召唤",
+      "source": "TalDoreiCampaignSettingReborn",
+      "page": 172,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "枯朽",
+      "subclassSource": "TalDoreiCampaignSettingReborn",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "从10级开始，你所召唤的生物会因毒素而畸形肿胀。任何由你的法术或职业特性召唤或创造的野兽、妖精或植物（包括你的{@creature 枯萎幼苗|TalDoreiCampaignSettingReborn}）获得以下特质：",
+        {
+          "ENG_name": "Blighted Resilience",
+          "name": "枯朽抗性",
+          "type": "entries",
+          "page": 172,
+          "entries": [
+            "该生物免疫暗蚀伤害、毒素伤害、与{@condition 中毒}状态。"
+          ]
+        },
+        {
+          "ENG_name": "Toxic Demise",
+          "name": "临终遗毒",
+          "type": "entries",
+          "page": 172,
+          "entries": [
+            "当该生物的生命值降低至0时，它会爆作一团剧毒的残渣或恶臭的脏器。每个处于爆炸生物周围5尺范围内的生物都必须通过一次对抗你的法术豁免DC的体质{@quickref 豁免检定|PHB|2|1|豁免检定}。豁免失败时将受到基于爆炸生物挑战等级的暗蚀伤害（见下表）。你也可以以一个动作，立刻杀死一个召唤的生物并使它爆发四散。",
+            {
+              "type": "table",
+              "caption": "临终遗毒伤害",
+              "colLabels": [
+                "生物挑战等级",
+                "伤害"
+              ],
+              "colStyles": [
+                "col-4 text-center",
+                "col-8"
+              ],
+              "rows": [
+                [
+                  "1/4或更低",
+                  "{@damage 1d4}点暗蚀伤害"
+                ],
+                [
+                  "1/2",
+                  "{@damage 1d6}点暗蚀伤害"
+                ],
+                [
+                  "1或更高",
+                  "{@damage (#$prompt_number:min=1,title=请输入生物的挑战等级!,default=1$#)d8|等同于生物挑战等级枚d8的暗蚀伤害}"
+                ],
+                [
+                  "无挑战等级",
+                  "{@damage (#$prompt_number:min=1,title=请输入您的熟练加值!,default=1$#)d6|等同于你熟练加值枚d6的暗蚀伤害}"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Defile Ground (14th Level)",
+      "name": "污化土地(14级)",
+      "source": "TalDoreiCampaignSettingReborn",
+      "page": 172,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "枯朽",
+      "subclassSource": "TalDoreiCampaignSettingReborn",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "从14级起，你的污染区域造成的额外伤害增长为{@damage 1d8}。"
+      ]
+    },
+    {
+      "ENG_name": "Incarnation of Corruption",
+      "name": "腐败化身",
+      "source": "TalDoreiCampaignSettingReborn",
+      "page": 173,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "枯朽",
+      "subclassSource": "TalDoreiCampaignSettingReborn",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "在14级时，你的肉体呈现出你所联结之大地的污染特征。你的皮肤枯槁如死灰，眼睛变得黯淡或完全苍白。骨棘或锯齿状的倒刺从身体中生出，赋予你对暗蚀伤害的抗性与AC上的+2加值。",
+        "此外，每当你回合开始时处于由你的{@subclassFeature 污化土地|德鲁伊|PHB|枯朽|TalDoreiCampaignSettingReborn|2}特性创造的腐化范围内，你可以使用一个附赠动作来获得等于你熟练加值的临时生命值。"
+      ]
+    }
+  ],
+  "hasFluffImages": true
+}

@@ -1,0 +1,448 @@
+[
+    {
+        "ENG_name": "Divine Order",
+        "name": "圣职",
+        "source": "XPHB",
+        "page": 70,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "牧师",
+        "classSource": "XPHB",
+        "level": 1,
+        "entries": [
+            "你将自己投身于所选择的以下一项神圣的角色之中：",
+            {
+                "type": "entries",
+                "entries": [
+                    {
+                        "type": "options",
+                        "count": 1,
+                        "entries": [
+                            {
+                                "type": "refClassFeature",
+                                "classFeature": "保护者|牧师|XPHB|1|XPHB"
+                            },
+                            {
+                                "type": "refClassFeature",
+                                "classFeature": "奇术使|牧师|XPHB|1|XPHB"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "ENG_name": "Protector",
+        "name": "保护者",
+        "source": "XPHB",
+        "page": 70,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "牧师",
+        "classSource": "XPHB",
+        "level": 1,
+        "entries": [
+            "为战斗做足训练，你获得{@filter 军用武器|items|type=军用武器}熟练与{@filter 重甲|items|type=重甲}受训。"
+        ]
+    },
+    {
+        "ENG_name": "Spellcasting",
+        "name": "施法",
+        "source": "XPHB",
+        "page": 70,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "牧师",
+        "classSource": "XPHB",
+        "level": 1,
+        "entries": [
+            "你通过祈祷，冥想与奉献习得如何施法。参见{@book 第七章|XPHB|7}有关施法的规则。下述信息将详述如何将这些规则应用于牧师法术，牧师法术详见本章后文职业描述中的{@filter 牧师法术列表|spells|class=牧师}。",
+            {
+                "type": "entries",
+                "entries": [
+                    {
+                        "ENG_name": "Cantrips",
+                        "name": "戏法",
+                        "type": "entries",
+                        "entries": [
+                            "你已知{@filter 牧师法术列表|spells|class=牧师}中3个你选择的戏法。推荐选择{@spell 神导术|XPHB}，{@spell 圣火术|XPHB}和{@spell 奇术|XPHB}。",
+                            "当你获得牧师等级时，你可以将一道已知戏法用另一道{@filter 牧师法术列表|spells|class=牧师}中的戏法替换。",
+                            "当你的牧师等级达到4级和10级时，你都能习得另一道你从{@filter 牧师法术列表|spells|class=牧师}中选择的牧师戏法，如牧师特性表中戏法一列所示。"
+                        ]
+                    },
+                    {
+                        "ENG_name": "Spell Slots",
+                        "name": "法术位",
+                        "type": "entries",
+                        "entries": [
+                            "牧师特性表显示了你可用于施放1环及以上法术的法术位数量。你在完成一次{@variantrule 长休|XPHB}时恢复所有已消耗的法术位。"
+                        ]
+                    },
+                    {
+                        "ENG_name": "Prepared Spells of Level 1+",
+                        "name": "1环及以上的准备法术",
+                        "type": "entries",
+                        "entries": [
+                            "你准备了一系列一环或更高的法术，以供此特性施法使用。初始时，从{@filter 牧师法术列表|spells|class=牧师}选择4个一环法术。推荐选择{@spell 祝福术|XPHB}，{@spell 疗伤术|XPHB}，{@spell 光导箭|XPHB}和{@spell 虔诚护盾|XPHB}。",
+                            "当你获得牧师等级时，你能准备的法术数量也会随之提升，如同牧师特性表中准备法术一栏所示。每当该数值提升时，从{@filter 牧师法术列表|spells|class=牧师}中选择额外的法术直至你准备的法术数量和该数值相等。你选择的新法术必须是你拥有法术位的法术。例如，作为一个3级牧师，你的准备法术表由6个一环或二环法术组成，可以自由搭配。",
+                            "如果其他牧师职业特性给予你总是准备好的法术，这些法术不计入你用施法特性准备的法术数量中，但遵循此特性的其他施法规则，且那些法术对你而言是牧师法术。"
+                        ]
+                    },
+                    {
+                        "ENG_name": "Changing Your Prepared Spells",
+                        "name": "改变你的准备法术",
+                        "type": "entries",
+                        "entries": [
+                            "每当你完成一次{@variantrule 长休|XPHB}时，你可以改变你的准备法术表，将一道或更多已准备法术用其他牧师法术替换，新替换的法术必须是你拥有法术位的法术。"
+                        ]
+                    },
+                    {
+                        "ENG_name": "Spellcasting Ability",
+                        "name": "施法属性",
+                        "type": "entries",
+                        "entries": [
+                            "感知是你牧师法术的施法关键属性。"
+                        ]
+                    },
+                    {
+                        "ENG_name": "Spellcasting Focus",
+                        "name": "法器",
+                        "type": "entries",
+                        "entries": [
+                            "你可以使用{@item 圣徽|XPHB}作为你牧师法术的{@variantrule 法器|XPHB}。"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "ENG_name": "Thaumaturge",
+        "name": "奇术使",
+        "source": "XPHB",
+        "page": 70,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "牧师",
+        "classSource": "XPHB",
+        "level": 1,
+        "entries": [
+            "你从{@filter 牧师法术列表|spells|class=牧师}中额外学会一道戏法。此外，你与神性的神秘链接使你在智力（{@skill 奥秘|XPHB}和{@skill 宗教|XPHB}）检定中获得加值。加值等于你的感知调整值（最少 +1）。"
+        ]
+    },
+    {
+        "ENG_name": "Channel Divinity",
+        "name": "引导神力",
+        "source": "XPHB",
+        "page": 70,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "牧师",
+        "classSource": "XPHB",
+        "level": 2,
+        "entries": [
+            "你能从外层位面引导神圣能量，并用其引动魔法效应。你起始时具有两种选项：神圣火花与驱散亡灵，其效果如下所示。每当你使用你的引导神力时，你选择要创造哪种效应。你会在更高的牧师等级获得更多选项。",
+            "你可以使用引导神力两次，你在完成一次{@variantrule 短休|XPHB}时恢复一次使用次数，而在完成一次{@variantrule 长休|XPHB}时重获所有已使用的次数。你在达到特定的牧师等级时获得额外的使用次数，具体见牧师特性表中引导神力一栏。",
+            "如果某个引导神力效应需要目标进行豁免，则其豁免DC等于本职业的施法特性中的法术豁免DC。",
+            {
+                "type": "entries",
+                "entries": [
+                    {
+                        "type": "refClassFeature",
+                        "classFeature": "神圣火花|牧师|XPHB|2|XPHB"
+                    },
+                    {
+                        "type": "refClassFeature",
+                        "classFeature": "驱散亡灵|牧师|XPHB|2|XPHB"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "ENG_name": "Divine Spark",
+        "name": "神圣火花",
+        "source": "XPHB",
+        "page": 70,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "牧师",
+        "classSource": "XPHB",
+        "level": 2,
+        "header": 2,
+        "consumes": {
+            "ENG_name": "Channel Divinity",
+            "name": "引导神力"
+        },
+        "entries": [
+            "以一个{@action 魔法|XPHB}动作，你将你的{@item 圣徽|XPHB}指向30尺内一个你可见的其他生物，并将神圣能量凝聚于该生物。投掷{@dice 1d8}加上你的感知调整值，你为该生物恢复该数值的{@variantrule 生命值|XPHB}或迫使其进行一次体质豁免，失败则受到等同该数值的暗蚀或光耀伤害（由你选择），成功则伤害减半（向下取整）。",
+            "神圣火花在以下牧师等级获得额外的{@dice d8}骰：7级（{@dice 2d8}），13级（{@dice 3d8}）以及18级（{@dice 4d8}）。"
+        ]
+    },
+    {
+        "ENG_name": "Turn Undead",
+        "name": "驱散亡灵",
+        "source": "XPHB",
+        "page": 70,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "牧师",
+        "classSource": "XPHB",
+        "level": 2,
+        "header": 2,
+        "consumes": {
+            "ENG_name": "Channel Divinity",
+            "name": "引导神力"
+        },
+        "entries": [
+            "以一个{@action 魔法|XPHB}动作，你展现{@item 圣徽|XPHB}，斥退诸亡灵生物。你30尺内每个由你选择的亡灵都必须进行一次感知豁免，失败则陷入{@condition 恐慌|XPHB}和{@condition 失能|XPHB}状态，持续一分钟。在这段持续时间内，被驱散的生物会尽可能远离你。此效应在其受到伤害时提前结束，你陷入{@condition 失能|XPHB}状态或是死亡也会结束此效应。"
+        ]
+    },
+    {
+        "ENG_name": "Cleric Subclass",
+        "name": "牧师子职",
+        "source": "XPHB",
+        "page": 71,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "牧师",
+        "classSource": "XPHB",
+        "level": 3,
+        "entries": [
+            "你获得你所选的一个牧师子职。子职业是一种特化，可以在特定的牧师等级授予你对应的特殊能力。此后你将获得你所选的子职所有能力......只要其所需等级等于或低于你的牧师等级。"
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "XPHB",
+        "page": 71,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "牧师",
+        "classSource": "XPHB",
+        "level": 4,
+        "entries": [
+            "你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。你在牧师等级第8，第12，第16级时会再次获得本特性。"
+        ]
+    },
+    {
+        "ENG_name": "Sear Undead",
+        "name": "灼净亡灵",
+        "source": "XPHB",
+        "page": 71,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "牧师",
+        "classSource": "XPHB",
+        "level": 5,
+        "entries": [
+            "每当你使用驱散亡灵时，你都可以投掷等于你感知调整值枚d8（最少{@dice 1d8})，而每个在对抗驱散亡灵的豁免中失败的亡灵都将受到等同于骰值之和的光耀伤害。此伤害不会终止驱散效应。"
+        ]
+    },
+    {
+        "ENG_name": "Subclass Feature",
+        "name": "子职特性",
+        "source": "XPHB",
+        "page": 71,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "牧师",
+        "classSource": "XPHB",
+        "level": 6,
+        "entries": [
+            "你获得了来自你牧师子职的特性。"
+        ]
+    },
+    {
+        "ENG_name": "Blessed Strikes",
+        "name": "受祝击",
+        "source": "XPHB",
+        "page": 71,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "牧师",
+        "classSource": "XPHB",
+        "level": 7,
+        "entries": [
+            "神圣的力量在战斗中注入你。你从以下特性中选择其一获得（如果你因旧书中的牧师子职而再次获得了下列选项之一，则你也只能使用你在此特性中所选的那个选项）。",
+            {
+                "type": "entries",
+                "entries": [
+                    {
+                        "type": "refClassFeature",
+                        "classFeature": "神圣打击|牧师|XPHB|7"
+                    },
+                    {
+                        "type": "refClassFeature",
+                        "classFeature": "强力施法|牧师|XPHB|7"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "ENG_name": "Divine Strike",
+        "name": "神圣打击",
+        "source": "XPHB",
+        "page": 71,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "牧师",
+        "classSource": "XPHB",
+        "level": 7,
+        "header": 2,
+        "entries": [
+            "每个你的回合一次，当你以一次使用武器的攻击命中了一个生物时，你对其造成额外{@damage 1d8}光耀或暗蚀伤害（由你选择）。"
+        ]
+    },
+    {
+        "ENG_name": "Potent Spellcasting",
+        "name": "强力施法",
+        "source": "XPHB",
+        "page": 71,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "牧师",
+        "classSource": "XPHB",
+        "level": 7,
+        "header": 2,
+        "entries": [
+            "你将你的感知调整值加到你用任何牧师戏法造成的伤害上。"
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "XPHB",
+        "page": 71,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "牧师",
+        "classSource": "XPHB",
+        "level": 8,
+        "entries": [
+            "你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。"
+        ]
+    },
+    {
+        "ENG_name": "Divine Intervention",
+        "name": "神圣干预",
+        "source": "XPHB",
+        "page": 71,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "牧师",
+        "classSource": "XPHB",
+        "level": 10,
+        "entries": [
+            "你能呼唤你所信奉的神祇或神系来代你降下干预。以一个{@action 魔法|XPHB}动作，你选择一道 5 环或更低的牧师法术（施法时间不能为 1 {@variantrule 反应|XPHB}），并将该法术作为执行此动作的一部分施展，无需消耗法术位也无需对应的施法材料。直到你完成一次{@variantrule 长休|XPHB}前，你都无法再次使用此特性。"
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "XPHB",
+        "page": 71,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "牧师",
+        "classSource": "XPHB",
+        "level": 12,
+        "entries": [
+            "你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。"
+        ]
+    },
+    {
+        "ENG_name": "Improved Blessed Strikes",
+        "name": "精通受祝击",
+        "source": "XPHB",
+        "page": 71,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "牧师",
+        "classSource": "XPHB",
+        "level": 14,
+        "entries": [
+            "你所选择的受祝击变得更加强大。",
+            {
+                "type": "entries",
+                "entries": [
+                    {
+                        "ENG_name": "Divine Strike",
+                        "type": "entries",
+                        "name": "神圣打击",
+                        "entries": [
+                            "神圣打击的额外伤害提升至{@damage 2d8}。"
+                        ]
+                    },
+                    {
+                        "ENG_name": "Potent Spellcasting",
+                        "type": "entries",
+                        "name": "强力施法",
+                        "entries": [
+                            "当你施展一道牧师戏法并用它对一个生物造成伤害时，你可以为你自己或你 60 尺内的另一个生物注入活力，使其获得等同于你感知调整值两倍的{@variantrule 临时生命值|XPHB}。"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "XPHB",
+        "page": 71,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "牧师",
+        "classSource": "XPHB",
+        "level": 16,
+        "entries": [
+            "你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。"
+        ]
+    },
+    {
+        "ENG_name": "Subclass Feature",
+        "name": "子职特性",
+        "source": "XPHB",
+        "page": 71,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "牧师",
+        "classSource": "XPHB",
+        "level": 17,
+        "entries": [
+            "你获得了来自你牧师子职的特性。"
+        ]
+    },
+    {
+        "ENG_name": "Epic Boon",
+        "name": "传奇恩惠",
+        "source": "XPHB",
+        "page": 71,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "牧师",
+        "classSource": "XPHB",
+        "level": 19,
+        "entries": [
+            "你获得一个{@filter 传奇恩惠专长|feats|category=EB}或另一个你所选择符合条件的{@5etools 专长|feats.html}。推荐选择{@feat 扭曲命运之恩惠|XPHB}。"
+        ]
+    },
+    {
+        "ENG_name": "Greater Divine Intervention",
+        "name": "进阶神圣干预",
+        "source": "XPHB",
+        "page": 71,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "牧师",
+        "classSource": "XPHB",
+        "level": 20,
+        "entries": [
+            "你能够呼唤更加强大的神圣干预。当你使用神圣干预特性时，你可以在选择法术时选择{@spell 祈愿术|XPHB}。如果你这样做，你只有在完成{@dice 2d4}次长休后才能再次使用神圣干预。"
+        ]
+    }
+]

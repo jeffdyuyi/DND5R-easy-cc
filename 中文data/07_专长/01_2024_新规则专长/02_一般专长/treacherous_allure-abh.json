@@ -1,0 +1,53 @@
+[
+  {
+    "ENG_name": "Treacherous Allure",
+    "name": "危险的诱惑",
+    "source": "ABH",
+    "page": 10,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        }
+      }
+    ],
+    "additionalSpells": [
+      {
+        "prepared": {
+          "_": [
+            "魅惑类人|xphb"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Enchanting Presence",
+        "name": "惑控之仪",
+        "type": "entries",
+        "entries": [
+          "你总是准备了{@spell 魅惑类人|XPHB}法术。你可以无需法术位施放它，并且你必须完成一次{@variantrule 长休|XPHB}才能再次以此方式施放它。你也可以使用你拥有的相应等级的法术位来施放它。你施放该法术的施法属性是由此专长提升的属性。"
+        ]
+      },
+      {
+        "ENG_name": "Inevitable Betrayal",
+        "name": "必然背叛",
+        "type": "entries",
+        "entries": [
+          "你对具有{@condition 魅惑|XPHB}状态的生物进行{@variantrule 优势|XPHB}检定时具有优势。"
+        ]
+      }
+    ]
+  }
+]

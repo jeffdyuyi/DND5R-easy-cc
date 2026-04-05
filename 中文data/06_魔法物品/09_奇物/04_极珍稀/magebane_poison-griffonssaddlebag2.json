@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Magebane Poison",
+    "name": "法师之祸",
+    "source": "GriffonsSaddlebag2",
+    "page": 118,
+    "type": "G",
+    "tier": "次要",
+    "rarity": "very rare",
+    "poison": true,
+    "entries": [
+      "这种暗色冒泡的毒素由罗刹的魔法免疫鲜血制成，尽管外表可怖，味道却甜美如糖浆。每瓶含有一剂毒素。摄入此毒素的生物必须进行一次DC 19的体质豁免检定。豁免失败时，生物受到{@damage 4d6}毒素伤害并陷入{@condition 中毒}状态1小时。若该{@condition 中毒}生物是施法者，则额外受到{@damage 4d6}心灵伤害且在此毒素效果结束前无法施放戏法。此外，{@condition 中毒}的施法者若要施放1环或更高法术，必须使用比目标法术位环阶高至少4级的法术位，且不获得使用更高法术位环阶的增益。例如，{@condition 中毒}的施法者可用6环法术位施放2环版本的魔法飞弹。豁免成功时，生物仅受到一半毒素和心灵伤害且不会陷入{@condition 中毒}状态。"
+    ],
+    "lootTables": [
+      "魔法物品表D|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Magebane-Poison.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

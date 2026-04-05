@@ -1,0 +1,33 @@
+[
+  {
+    "name": "圣水(扁瓶装)",
+    "ENG_name": "Holy Water (flask)",
+    "source": "PHB",
+    "page": 151,
+    "type": "G",
+    "rarity": "none",
+    "weight": 1,
+    "value": 2500,
+    "entries": [
+      "你可以用一个动作将这小瓶液体泼溅到你身边5尺范围内的一个生物身上，或是将小瓶投到至多20尺远的地方，并利用冲击打破它。两种情况都可以视为对一个生物或物件发动一次远程攻击，并将圣水视为一件临时武器。命中时，如果目标是一只邪魔或不死生物，则目标受到{@damage 2d6}点光耀伤害。",
+      "一名牧师或圣武士能通过主持一种特殊的仪式来创造圣水。该仪式花费1小时进行，且需要花费价值25 gp的银粉，并要求施法者消耗一个1环法术位。"
+    ],
+    "basicRules": true,
+    "miscTags": [
+      "CNS"
+    ],
+    "referenceSources": [
+      "CoS",
+      "TftYP-TFoF",
+      "OoW",
+      "SCC-CK",
+      "DSotDQ",
+      "ToFW",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "圣水|XPHB"
+    ],
+    "srd": true
+  }
+]

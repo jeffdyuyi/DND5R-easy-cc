@@ -1,0 +1,21 @@
+[
+  {
+    "name": "基础毒药",
+    "ENG_name": "Basic Poison",
+    "source": "XPHB",
+    "page": 227,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "value": 10000,
+    "entries": [
+      "以一个{@variantrule 附赠动作|XPHB}，你可以将一小瓶基础毒药涂抹在一把武器或至多三枚弹药上。当一个生物受到由涂过毒的武器或弹药所造成的穿刺或劈砍伤害时，该生物将受到额外{@damage 1d4}点毒素伤害。毒药一旦被涂抹，毒效只会持续1分钟或直至造成了额外伤害。"
+    ],
+    "basicRules2024": true,
+    "miscTags": [
+      "CNS"
+    ],
+    "poison": true,
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

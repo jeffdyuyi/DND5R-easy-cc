@@ -1,0 +1,58 @@
+[
+  {
+    "ENG_name": "Demiplane",
+    "name": "半位面",
+    "source": "PHB",
+    "page": 231,
+    "srd": true,
+    "referenceSources": [
+      "CM"
+    ],
+    "reprintedAs": [
+      "半位面|XPHB"
+    ],
+    "level": 8,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你在施法距离内一处能看见的平面上创造一扇形状模糊的门。门的大小足以让中型生物在其间通行无阻。门开启时，其通向一个边长 30 尺，由木质或石质组成的空房间半位面。法术终止时，门消失不见，而半位面中的门也消失不见，并把任何还在半位面的生物或物件困在其内。",
+      "你每次施展此法术时都可以创造一个新的半位面，也可以连向用此法术创造的旧有的半位面。另外，如果你知晓了某个其他生物用此法术创造的半位面，则你也可以通过此法术连接到那里。"
+    ],
+    "miscTags": [
+      "OBJ",
+      "PRM",
+      "SGT"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "魔契师",
+      "法师",
+      "术士"
+    ],
+    "display_school": "咒法系"
+  }
+]

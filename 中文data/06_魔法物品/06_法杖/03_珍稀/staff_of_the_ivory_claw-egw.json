@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Staff of the Ivory Claw",
+    "name": "象牙爪杖",
+    "source": "EGW",
+    "page": 270,
+    "rarity": "rare",
+    "reqAttune": "由施法者",
+    "reqAttuneTags": [
+      {
+        "spellcasting": true
+      }
+    ],
+    "weight": 4,
+    "weaponCategory": "simple",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "bonusSpellAttack": "+1",
+    "staff": true,
+    "entries": [
+      "这根浅灰色和天蓝色的手杖顶端有一个象牙雕刻的小龙爪。持杖时，你的法术攻击骰得到+1加值。当你用一次法术攻击骰出暴击时，目标将受到额外的{@damage 3d6}光耀伤害。"
+    ],
+    "valueReference": 4000,
+    "type": "ST"
+  }
+]

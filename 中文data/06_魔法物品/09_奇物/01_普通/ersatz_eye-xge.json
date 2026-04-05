@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Ersatz Eye",
+    "name": "义眼",
+    "source": "XGE",
+    "page": 137,
+    "otherSources": [
+      {
+        "source": "EGW"
+      }
+    ],
+    "referenceSources": [
+      "FS"
+    ],
+    "reprintedAs": [
+      "义眼|XDMG"
+    ],
+    "tier": "次要",
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "这只人造的眼球会替代你失去或被移除的一只真眼。只要义眼仍植入在你的眼眶内，它便不能被除你以外的任何人移除。这只小球将如同一只正常的眼睛一般，允许你用其去视物。"
+    ],
+    "translator": "不全书",
+    "valueReference": 100,
+    "type": "W"
+  }
+]

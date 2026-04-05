@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Wand of Pyrotechnics",
+    "name": "烟火魔杖",
+    "source": "XDMG",
+    "page": 321,
+    "type": "WD|XDMG",
+    "rarity": "common",
+    "weight": 1,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6 + 1}",
+    "charges": 7,
+    "entries": [
+      "这根魔杖具有7充能。持握它时，你可以执行{@action 魔法|XPHB}动作并消耗1充能，在离你至多120尺处你可见的一点创造出一束无害的多彩亮光。亮光迸发时会伴随着300尺之内都能听见的响亮爆鸣声。该光芒的亮度如火把一般，但只持续1秒。",
+      {
+        "ENG_name": "Regaining Charges",
+        "name": "重获充能",
+        "type": "entries",
+        "entries": [
+          "这根魔杖在每日黎明时重获{@dice 1d6 + 1}已消耗的充能。当充能数耗尽时，骰一次{@dice 1d20}。如果骰值为1，魔杖将化作飞灰并被摧毁。"
+        ]
+      }
+    ],
+    "lootTables": [
+      "奥秘 - 普通|XDMG",
+      "器具 - 普通|XDMG"
+    ],
+    "translator": "不全书",
+    "valueReference": 100
+  }
+]

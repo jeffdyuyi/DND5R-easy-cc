@@ -1,0 +1,63 @@
+{
+  "ENG_name": "Museum",
+  "name": "博物馆",
+  "source": "EFA",
+  "page": 51,
+  "facilityType": "special",
+  "level": 13,
+  "space": [
+    "roomy",
+    "vast"
+  ],
+  "hirelings": [
+    {
+      "exact": 1,
+      "space": "roomy"
+    },
+    {
+      "exact": 3,
+      "space": "vast"
+    }
+  ],
+  "orders": [
+    "研究"
+  ],
+  "entries": [
+    "一个博物馆包含从你参与或赞助的远征中带回的遗物和宝藏，经过仔细编目和展示。",
+    {
+      "ENG_name": "Research: Specialized Lore",
+      "name": "研究：专业逸闻",
+      "type": "entries",
+      "entries": [
+        "当你向此设施下达研究命令时，你委托雇工研究博物馆中的特定宝藏。这项工作需要7天。雇工获得关于某个远古历史问题的知识，如同他们施放了{@spell 通晓传奇|XPHB}法术，然后在你下次与他们交谈时与你分享这些知识。"
+      ]
+    },
+    {
+      "ENG_name": "Secrets of the Past",
+      "name": "过去的秘密",
+      "type": "entries",
+      "entries": [
+        "你的博物馆包含一件宝藏，当你花费7天研究它并在你的据点完成一次长休时，它会给予你一个魔法{@filter 魅惑|大功告成|type=魅惑}（参见{@book 城主指南|XDMG}中的\"{@book 超自然赠礼|XDMG|2|超自然赠礼}\"）。该魅惑持续7天或直到你使用它。当你仍拥有一个魅惑时，你无法从该设施获得另一个魅惑。魅惑的效果取决于你博物馆中宝藏的起源。你可以选择以下选项之一（你的DM可能会根据你过去的探险提供更多选项或限制现有选项）：",
+        {
+          "type": "list",
+          "items": [
+            "{@reward 阿贡尼森护咒|EFA}",
+            "{@reward 阿什塔卡拉护咒|EFA}",
+            "{@reward 达卡恩魅惑|EFA}",
+            "{@reward 凯博尔魅惑|EFA}",
+            "{@reward 希恩德瑞克护咒|EFA}"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Enlarging the Facility",
+      "name": "扩建设施",
+      "type": "entries",
+      "entries": [
+        "你可以通过花费2000 GP将你的博物馆扩建成一个庞大的设施。如果你这样做，博物馆可以拥有两个不同来源的宝藏。一个庞大的博物馆获得两个额外的雇工，总共三个。根据你的喜好为它们分配名称和个性。"
+      ]
+    }
+  ],
+  "hasFluffImages": true
+}

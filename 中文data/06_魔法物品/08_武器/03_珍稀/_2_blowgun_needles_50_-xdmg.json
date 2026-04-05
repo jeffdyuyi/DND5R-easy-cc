@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "+2 Blowgun Needles (50)",
+    "name": "+2 吹箭(50)",
+    "source": "XDMG",
+    "page": 228,
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "吹矢（50）|XPHB"
+    ],
+    "edition": "classic",
+    "type": "A",
+    "rarity": "rare",
+    "weight": 1,
+    "value": 100,
+    "needleBlowgun": true,
+    "packContents": [
+      {
+        "item": "吹箭|PHB",
+        "quantity": 50
+      }
+    ],
+    "namePrefix": "+2 ",
+    "srd52": true,
+    "basicRules2024": true,
+    "bonusWeapon": "+2",
+    "entries": [
+      "使用这件魔法弹药进行攻击和伤害判定时，你会获得{=bonusWeapon}的额外加成。一旦击中目标，弹药将不再具有魔法效果。"
+    ],
+    "lootTables": [
+      "武备 - 珍稀|XDMG",
+      "器具 - 珍稀|XDMG"
+    ],
+    "_isVariant": true,
+    "valueReference": 2000
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Shatterspike",
+    "name": "碎棘",
+    "source": "TftYP",
+    "page": 229,
+    "baseItem": "长剑|PHB",
+    "type": "M",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "weight": 3,
+    "weaponCategory": "martial",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "S",
+    "dmg2": "1d10",
+    "bonusWeapon": "+1",
+    "entries": [
+      "这把魔法武器在攻击和伤害骰上提供+1加值。如果它击中一个物体，命中自动视为重击，并且你可以决定它对物体造成钝击或挥砍伤害（由你选择）。此外，非魔法来源的伤害不能伤害这把武器。"
+    ],
+    "valueReference": 400
+  }
+]

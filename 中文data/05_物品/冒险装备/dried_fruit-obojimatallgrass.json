@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Dried Fruit",
+    "name": "干果",
+    "source": "ObojimaTallGrass",
+    "page": 203,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 2|large}|SneakerProMedium}",
+            "{@font {@style 1|large}|SneakerProMedium}",
+            "{@font {@style 4|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "干果在胧忆岛很丰富，但有一些工匠知道如何保存和浓缩水果的风味和活力，以至于近乎神秘。虽然干果可以在市场和来自胧忆岛各地的农民那里买到，但最适合制作药水的干果来自生长在阿伯拉山脚下的果树。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/dried-fruit.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 2660,
+          "height": 2660
+        }
+      ]
+    }
+  }
+]

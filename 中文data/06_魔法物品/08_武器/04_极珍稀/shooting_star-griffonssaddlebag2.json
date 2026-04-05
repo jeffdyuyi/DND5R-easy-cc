@@ -1,0 +1,54 @@
+[
+  {
+    "ENG_name": "Shooting Star",
+    "name": "流星",
+    "source": "GriffonsSaddlebag2",
+    "page": 160,
+    "baseItem": "长弓|phb",
+    "type": "R",
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "weight": 2,
+    "weaponCategory": "军用",
+    "property": [
+      "A",
+      "H",
+      "2H"
+    ],
+    "range": "150/600",
+    "dmg1": "1d8",
+    "dmgType": "R",
+    "bonusWeapon": "+2",
+    "entries": [
+      "这把魔法长弓的深色表面在黑夜会闪烁着细小的星光。弓弦由一条隐形的细线组成，只有在拉弓时才会显现。当弓被拉开时，弓弦会发出柔和的黄光，如星光一般的光点将浮现并悬浮在弓身周围。如果不先搭箭而直接拉弓，便会创造出一支由纯粹星光构成的注魔箭矢，并使弓的光芒更加明亮。这支星光箭散发出半径20尺的明亮光照以及额外20尺的微光光照。你使用星光箭进行的攻击检定和伤害掷骰具有+2加值，且此箭造成的伤害为光耀伤害而非穿刺伤害。无论命中或失手，星光箭在攻击后会立即消失。",
+      {
+        "ENG_name": "Falling Stars",
+        "name": "流星雨",
+        "type": "entries",
+        "entries": [
+          "你可以用一个动作说出弓的命令语，同时向你头顶上方射出一支星光箭，并选择一个你可见且距离你60尺内的点。箭矢随即消失，并化作一场细小的魔法流星雨，砸向地面并落在以你选择的点为中心、半径30尺的圆形区域内。该区域内每个由你选择的生物都必须进行一次DC 16的敏捷豁免检定。豁免失败的目标受到{@damage 3d6}光耀伤害和{@damage 3d6}力场伤害；成功则只受到一半伤害，如同一场魔法星辰猛击地面环绕它们。这项属性直至次日黄昏前都无法再次使用。",
+          "此外，当你使用星光箭并用此武器进行攻击检定时掷出20，则一颗小小的魔法星星会出现并击中目标。目标必须进行一次DC 16的敏捷豁免，失败则受到{@damage 1d6}光耀伤害和{@damage 1d6}力场伤害，成功则只受到一半伤害。",
+          "流星无论是落地还是击中目标，都会在撞击后立即消失。"
+        ]
+      }
+    ],
+    "ammoType": "箭|phb",
+    "lootTables": [
+      "魔法物品表 H1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Shooting-Star.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

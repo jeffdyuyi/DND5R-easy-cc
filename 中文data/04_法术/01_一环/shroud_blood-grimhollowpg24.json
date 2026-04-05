@@ -1,0 +1,82 @@
+[
+  {
+    "ENG_name": "Shroud Blood",
+    "name": "环绕鲜血",
+    "source": "GrimHollowPG24",
+    "page": 201,
+    "level": 1,
+    "school": "I",
+    "subschools": [
+      "血魔法"
+    ],
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "作为施放该法术的一部分，你必须消耗一个{@variantrule 生命值骰|XPHB|生命值骰}否则法术自动失败。你可以选择自己或30尺内一个愿意的生物在敏捷（{@skill 隐匿|XPHB}）检定上获得{@variantrule 优势|XPHB}。当目标失去{@condition 隐形|XPHB}状态时，它可以采取一个{@variantrule 反应|XPHB}来重新获得{@condition 隐形|XPHB}状态，持续回合数等于施放该法术时消耗的{@variantrule 生命值骰|XPHB}数量。目标在进行攻击检定、造成伤害或施放法术后立即失去{@condition 隐形|XPHB}状态。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "每比1环高1环法术位，你就能以额外一个生物为目标。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "miscTags": [
+      "ADV",
+      "SCT"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Shroud%20Blood.webp"
+  }
+]

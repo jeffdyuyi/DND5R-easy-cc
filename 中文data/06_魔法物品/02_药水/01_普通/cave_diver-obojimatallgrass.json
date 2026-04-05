@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Cave Diver",
+    "name": "洞穴潜水者",
+    "source": "ObojimaTallGrass",
+    "page": 230,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Util"
+    ],
+    "entries": [
+      "当将其倒在你的手脚上时，它们会暂时染上一种深靛色。在接下来的10分钟内，你获得在垂直表面上下移动、在天花板上倒立爬行的能力，同时双手保持自由。你还获得等同于步行速度的攀爬速度。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 6|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Utility/cave-diver.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1952,
+          "height": 1952
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

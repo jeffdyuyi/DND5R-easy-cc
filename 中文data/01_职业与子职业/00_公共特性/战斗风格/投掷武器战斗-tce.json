@@ -1,0 +1,22 @@
+{
+  "ENG_name": "Thrown Weapon Fighting",
+  "name": "投掷武器战斗",
+  "source": "TCE",
+  "page": 42,
+  "reprintedAs": [
+    {
+      "uid": "投掷武器战斗|XPHB",
+      "tag": "feat"
+    }
+  ],
+  "isClassFeatureVariant": true,
+  "featureType": [
+    "FS:F",
+    "FS:R"
+  ],
+  "entries": [
+    "你可以在使用一件带有投掷属性武器进行攻击时，将那件武器作为攻击的一部分而拔出。",
+    "另外，在你以一件投掷武器于远程攻击中命中对手时，你的伤害掷骰+2。"
+  ],
+  "translator": "不全书"
+}

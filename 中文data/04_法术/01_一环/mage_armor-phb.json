@@ -1,0 +1,74 @@
+[
+  {
+    "ENG_name": "Mage Armor",
+    "name": "法师护甲",
+    "source": "PHB",
+    "page": 256,
+    "srd": true,
+    "basicRules": true,
+    "otherSources": [
+      {
+        "source": "RMR",
+        "page": 56
+      }
+    ],
+    "referenceSources": [
+      "LMoP",
+      "OotA",
+      "CoS",
+      "SKT",
+      "TftYP-TSC",
+      "WDMM",
+      "LR",
+      "CM",
+      "CoA",
+      "LRDT"
+    ],
+    "reprintedAs": [
+      "法师护甲|XPHB"
+    ],
+    "level": 1,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一块鞣制过的皮革"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 8
+        }
+      }
+    ],
+    "entries": [
+      "你触碰一个未着装护甲的自愿生物，使其受一个保护性魔法力场环绕直至法术终止。目标的基础 AC 变为 13+它的敏捷调整值。目标着装护甲或你以一个动作解散该法术后法术随之终止。"
+    ],
+    "miscTags": [
+      "MAC"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "法师"
+    ],
+    "display_school": "防护系"
+  }
+]

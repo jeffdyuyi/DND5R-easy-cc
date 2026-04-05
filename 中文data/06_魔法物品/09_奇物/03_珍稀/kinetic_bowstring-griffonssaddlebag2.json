@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Kinetic Bowstring",
+    "name": "动能弓弦",
+    "source": "GriffonsSaddlebag2",
+    "page": 112,
+    "tier": "主要",
+    "rarity": "rare",
+    "wondrous": true,
+    "entries": [
+      "这根魔法弓弦可用于装配在一张非魔法的弓或弩上，来将以该弓弩进行的攻击转变为魔法武器攻击。动能弓弦会魔法性地放大该弓弩在发射箭矢时释放出的部分动能。你在自己的每回合中第一次以上有此弦的弓弩进行的远程武器攻击的射程翻倍，且如果这次攻击命中了目标，则这次攻击造成的伤害额外增加一颗伤害骰。"
+    ],
+    "lootTables": [
+      "魔法物品表 G1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Kinetic-Bowstring.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

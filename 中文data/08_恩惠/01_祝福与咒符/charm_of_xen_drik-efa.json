@@ -1,0 +1,12 @@
+[
+  {
+    "ENG_name": "Charm of Xen'drik",
+    "name": "希恩德瑞克护咒",
+    "source": "EFA",
+    "page": 51,
+    "type": "Charm",
+    "entries": [
+      "当你拥有此魅惑时，你懂得{@language 巨人语|XPHB}。你可以用一个附赠动作消耗此魅惑，将你的力量值变为25，持续1小时。"
+    ]
+  }
+]

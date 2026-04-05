@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Selfishness",
+    "name": "自私",
+    "source": "ObojimaTallGrass",
+    "page": 252,
+    "type": "Boon",
+    "entries": [
+      {
+        "ENG_name": "Characteristics:",
+        "name": "性格:",
+        "type": "entries",
+        "entries": [
+          "一个其行为使最亲近的人生活恶化的角色。当本可以做正确的事情时，他们选择了对自己而非他人更有利的路途。"
+        ]
+      },
+      {
+        "ENG_name": "Boon Ability:",
+        "name": "恩惠属性：",
+        "type": "entries",
+        "entries": [
+          "当你受到伤害时，你可以选择为你30尺内的每个盟友恢复2点生命值。当你这样做时，每个盟友会受到等同于你所恢复生命值数值的暗蚀伤害。一旦你使用此恩惠，直到完成一次长休前你都无法再次使用。"
+        ]
+      }
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Custom/Boons/Selfishness.webp"
+  }
+]

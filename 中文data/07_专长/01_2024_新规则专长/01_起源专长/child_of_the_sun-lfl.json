@@ -1,0 +1,48 @@
+[
+  {
+    "ENG_name": "Child of the Sun",
+    "name": "太阳之子",
+    "source": "LFL",
+    "category": "O",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "daily": {
+              "1": [
+                "妖火|xphb"
+              ]
+            }
+          }
+        },
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Eyes of Eirdu",
+        "name": "艾尔杜之眼",
+        "type": "entries",
+        "entries": [
+          "你和10尺内的盟友在避免或结束{@condition 目盲|XPHB}状态的豁免检定上具有{@variantrule 优势|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Faerie Fire",
+        "name": "妖火",
+        "type": "entries",
+        "entries": [
+          "你习得{@spell 妖火|XPHB}法术。智力、感知或魅力是你的施法属性（选择此专长时决定）。你可以无需法术位施放一次，完成一次{@variantrule 长休|XPHB}后恢复以此方式施放的能力。你也可以使用任何你拥有的法术位来施放该法术。",
+          "当你使用此增益施放{@spell 妖火|XPHB}而不消耗法术位时，受到伤害不会打断你对该法术的{@status 专注|XPHB}。"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "ENG_name": "Arcana",
+    "name": "奥秘",
+    "source": "XPHB",
+    "page": 14,
+    "srd52": true,
+    "ability": "int",
+    "entries": [
+      "回忆有关于法术、魔法物品和存在位面的知识。"
+    ],
+    "translator": "不全书"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "ENG_name": "Investigation",
+    "name": "调查",
+    "source": "XPHB",
+    "page": 14,
+    "srd52": true,
+    "ability": "int",
+    "entries": [
+      "在书本中寻辨晦涩难懂的信息或推断某些事物是如何运作的。"
+    ],
+    "translator": "不全书"
+  }
+]

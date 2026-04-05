@@ -1,0 +1,187 @@
+[
+  {
+    "ENG_name": "Hallow",
+    "name": "圣居",
+    "source": "XPHB",
+    "page": 283,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 5,
+    "school": "A",
+    "time": [
+      {
+        "number": 24,
+        "unit": "小时"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "价值 1000+GP 的熏香，作为法术耗材",
+        "cost": 100000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "permanent",
+        "ends": [
+          "解除"
+        ]
+      }
+    ],
+    "entries": [
+      "你触碰一点并将神圣（或邪秽）的力量注入该点周围区域。区域半径至多 60 尺，若此区域内包含了已被另一个圣居影响的区域，则此次施法失败。受法术影响的区域具有以下效应。",
+      {
+        "ENG_name": "Hallowed Ward",
+        "name": "神圣防护",
+        "type": "entries",
+        "entries": [
+          "选择以下任意生物类型：异怪、天族、元素、妖精、邪魔或亡灵。所选类型的生物不能自主进入该区域，任何被这些生物{@condition 魅惑|XPHB}、{@condition 恐慌|XPHB}或附身的生物只要在该区域内将不再被他们{@condition 魅惑|XPHB}、{@condition 恐慌|XPHB}或附身。"
+        ]
+      },
+      {
+        "ENG_name": "Extra Effect",
+        "name": "额外效果",
+        "type": "entries",
+        "entries": [
+          "你可以为该区域绑定下列其中一种额外效应：",
+          {
+            "type": "list",
+            "style": "list-hang-notitle",
+            "items": [
+              {
+                "ENG_name": "Courage",
+                "name": "勇敢",
+                "type": "item",
+                "entries": [
+                  "你选择的任何类型的生物在该区域内时不会陷入{@condition 恐慌|XPHB}状态。"
+                ]
+              },
+              {
+                "ENG_name": "Darkness",
+                "name": "黑暗术",
+                "type": "item",
+                "entries": [
+                  "区域内处于{@variantrule 黑暗|XPHB}环境，普通光源以及比本法术更低环法术所创造的魔法光源均无法照亮该区域。"
+                ]
+              },
+              {
+                "ENG_name": "Daylight",
+                "name": "昼明术",
+                "type": "item",
+                "entries": [
+                  "区域内处于明亮光照，比本法术更低环法术所创造的魔法{@variantrule 黑暗|XPHB}无法掩盖亮光。"
+                ]
+              },
+              {
+                "ENG_name": "Peaceful Rest",
+                "name": "平静长眠",
+                "type": "item",
+                "entries": [
+                  "区域内埋葬的{@variantrule 死亡|XPHB}不能被转化成亡灵。"
+                ]
+              },
+              {
+                "ENG_name": "Extradimensional Interference",
+                "name": "次元干涉",
+                "type": "item",
+                "entries": [
+                  "你选择的任何类型的生物均不能通过传送或者位面旅行的方式进入或离开该区域。"
+                ]
+              },
+              {
+                "ENG_name": "Fear",
+                "name": "恐惧术",
+                "type": "item",
+                "entries": [
+                  "你所选择的任何类型的生物在该区域内时陷入{@condition 恐慌|XPHB}状态。"
+                ]
+              },
+              {
+                "ENG_name": "Resistance",
+                "name": "抵抗术",
+                "type": "item",
+                "entries": [
+                  "你所选择的任何类型的生物在该区域内时，对你所选择的一种伤害类型具有{@variantrule 抗性|XPHB}。"
+                ]
+              },
+              {
+                "ENG_name": "Silence",
+                "name": "沉默术",
+                "type": "item",
+                "entries": [
+                  "声音无法从区域内发出，区域外的声音也不能传到区域内。"
+                ]
+              },
+              {
+                "ENG_name": "Tongues",
+                "name": "巧言术",
+                "type": "item",
+                "entries": [
+                  "你所选择的任何类型生物与区域内的任何其他生物即使语言不通也可以随意交流。"
+                ]
+              },
+              {
+                "ENG_name": "Vulnerability",
+                "name": "易伤",
+                "type": "item",
+                "entries": [
+                  "区域内你所选择的任何类型生物具有你所选择的一种伤害类型的{@variantrule 易伤|XPHB}。"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "damageResist": [
+      "强酸",
+      "寒冷",
+      "火焰",
+      "力场",
+      "闪电",
+      "暗蚀",
+      "毒素",
+      "心灵",
+      "光耀",
+      "雷鸣"
+    ],
+    "damageVulnerable": [
+      "强酸",
+      "寒冷",
+      "火焰",
+      "力场",
+      "闪电",
+      "暗蚀",
+      "毒素",
+      "心灵",
+      "光耀",
+      "雷鸣"
+    ],
+    "affectsCreatureType": [
+      "异怪",
+      "天族",
+      "元素生物",
+      "妖精",
+      "邪魔",
+      "亡灵"
+    ],
+    "miscTags": [
+      "LGT",
+      "OBS"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师"
+    ],
+    "display_school": "防护系"
+  }
+]

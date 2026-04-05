@@ -1,0 +1,32 @@
+[
+  {
+    "name": "皮甲",
+    "ENG_name": "Leather Armor",
+    "source": "XPHB",
+    "page": 219,
+    "edition": "one",
+    "type": "LA|XPHB",
+    "rarity": "none",
+    "weight": 10,
+    "value": 1000,
+    "ac": 11,
+    "armor": true,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XPHB/Leather Armor.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 343,
+          "height": 372
+        }
+      ]
+    },
+    "basicRules2024": true,
+    "hasFluffImages": true,
+    "srd52": true
+  }
+]

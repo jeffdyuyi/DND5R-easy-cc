@@ -1,0 +1,15 @@
+[
+  {
+    "ENG_name": "Dispelling Stone",
+    "name": "解除石",
+    "source": "EGW",
+    "page": 266,
+    "rarity": "very rare",
+    "wondrous": true,
+    "entries": [
+      "这个光滑的彩虹色卵形石头可以被扔到至多30尺远的地方，在冲击下爆炸，创造一个10尺半径的魔法能量球体范围，石头随即被摧毁。范围内所有五环及更低环阶的魔法被终止。"
+    ],
+    "valueReference": 40000,
+    "type": "W"
+  }
+]

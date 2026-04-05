@@ -1,0 +1,24 @@
+[
+  {
+    "name": "口粮",
+    "ENG_name": "Rations",
+    "source": "XPHB",
+    "page": 228,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 50,
+    "entries": [
+      "口粮由适合长途旅行携带的食物组成，包含肉干、风干水果、饼干和坚果等。不进食的危害详见\"{@hazard 饥饿|XPHB}\"。"
+    ],
+    "basicRules2024": true,
+    "miscTags": [
+      "CNS"
+    ],
+    "referenceSources": [
+      "DrDe-TDoN"
+    ],
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

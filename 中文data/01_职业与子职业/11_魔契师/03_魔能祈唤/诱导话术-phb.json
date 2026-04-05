@@ -1,0 +1,20 @@
+{
+  "ENG_name": "Beguiling Influence",
+  "name": "诱导话术",
+  "source": "PHB",
+  "page": 110,
+  "srd": true,
+  "featureType": [
+    "EI"
+  ],
+  "skillProficiencies": [
+    {
+      "deception": true,
+      "persuasion": true
+    }
+  ],
+  "entries": [
+    "你获得{@skill 欺瞒}和{@skill 游说}技能的熟练项。"
+  ],
+  "translator": "不全书"
+}

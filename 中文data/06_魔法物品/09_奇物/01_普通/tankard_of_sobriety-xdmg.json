@@ -1,0 +1,20 @@
+[
+  {
+    "ENG_name": "Tankard of Sobriety",
+    "name": "清醒杯",
+    "source": "XDMG",
+    "page": 315,
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "这个大酒杯上的一侧雕刻着一张坚毅的脸。只要用这个酒杯，不论你喝麦芽酒、葡萄酒、还是其他任何非魔法的酒精饮料你都不会醉。这个酒杯对魔法液体或毒药之类的有害物质不会产生影响。"
+    ],
+    "lootTables": [
+      "奥秘 - 普通|XDMG",
+      "器具 - 普通|XDMG"
+    ],
+    "translator": "不全书",
+    "valueReference": 100,
+    "type": "W"
+  }
+]

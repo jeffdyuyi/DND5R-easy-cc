@@ -1,0 +1,42 @@
+[
+  {
+    "ENG_name": "Life's Flower Restorative",
+    "name": "生命之花义肢",
+    "source": "GriffonsSaddlebag2",
+    "page": 114,
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": "被一个缺少手、手臂或腿的生物",
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6 + 4}",
+    "charges": 10,
+    "entries": [
+      "这根充满生机的枝条像一个粗糙的肢体。要与此物品同调，你必须将它安装在你缺失的手臂或腿部末端，此时枝条会魔法般地形成一个优雅的义肢。这个义肢将成为你具有完整功能的一个身体部分，只要你与其保持同调，就不能在你非自愿的情况下被移除。",
+      "这个枝条义肢上有10朵花，每日黎明时会重新长出{@dice 1d6 + 4}朵缺失的花朵。当被安装在身上期间，枝条提供以下好处：",
+      {
+        "type": "list",
+        "items": [
+          "当你通过法术或魔法效应恢复生命值时，你可以选择消耗任意数量的花朵，每消耗一朵则额外恢复5生命值。此词条最多只能让你恢复至生命值上限的一半。",
+          "如果你在回合开始时生命值为0，且义肢上还有3朵或更多花朵时，你可以选择消耗3朵花朵来恢复5生命值。这项属性一经使用，则其直至次日拂晓前都无法再次使用。"
+        ]
+      }
+    ],
+    "lootTables": [
+      "魔法物品表 G1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Lifes-Flower-Restorative.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

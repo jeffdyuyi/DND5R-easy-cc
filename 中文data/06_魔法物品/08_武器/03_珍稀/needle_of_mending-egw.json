@@ -1,0 +1,33 @@
+[
+  {
+    "ENG_name": "Needle of Mending",
+    "name": "修补之针",
+    "source": "EGW",
+    "page": 268,
+    "baseItem": "匕首|PHB",
+    "type": "M",
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 1,
+    "weaponCategory": "simple",
+    "property": [
+      "F",
+      "L",
+      "T"
+    ],
+    "range": "20/60",
+    "dmg1": "1d4",
+    "dmgType": "P",
+    "bonusWeapon": "+1",
+    "entries": [
+      "这把魔法匕首可以伪装成缝纫针的模样。持握它时，你可以用一个附赠动作念出它的命令语，将它变成一把匕首或变回一根针。",
+      "你在使用该匕首发动攻击检定与伤害掷骰时获得+1加值。持握它时，可以使用一个动作从它施放{@spell 修复术}戏法。"
+    ],
+    "attachedSpells": {
+      "will": [
+        "修复术"
+      ]
+    },
+    "valueReference": 4000
+  }
+]

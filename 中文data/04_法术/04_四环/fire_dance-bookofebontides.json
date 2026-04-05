@@ -1,0 +1,76 @@
+[
+  {
+    "ENG_name": "Fire Dance",
+    "name": "火舞术",
+    "source": "BookOfEbonTides",
+    "page": 62,
+    "level": 4,
+    "school": "I",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "s": true,
+      "m": "一团燃烧的破布、一对火把或双手持握的相似火焰"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你舞动并快速旋转两团火焰，留下发光的轨迹。区域内你选择的能看到你火舞术的生物必须进行一次感知豁免检定。任何不能被{@condition 魅惑}的生物自动通过此豁免检定，如果你或你的同伴正在与一个生物战斗，则该生物在豁免检定上具有优势。豁免失败时，目标在法术持续时间内被{@condition 魅惑}。当被此法术{@condition 魅惑}时，该生物处于{@condition 失能}状态且速度为0。",
+      "如果一个受影响的生物受到任何伤害，或者其他人用一个动作将其从恍惚中摇醒，则该法术对其结束。如果你处于{@condition 失能}状态，该法术也会结束。"
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    },
+    "conditionInflict": [
+      "魅惑",
+      "失能"
+    ],
+    "savingThrow": [
+      "感知"
+    ]
+  }
+]

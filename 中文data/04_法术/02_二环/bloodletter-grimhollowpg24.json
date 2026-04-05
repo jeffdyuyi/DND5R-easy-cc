@@ -1,0 +1,79 @@
+[
+  {
+    "ENG_name": "Bloodletter",
+    "name": "放血术",
+    "source": "GrimHollowPG24",
+    "page": 186,
+    "level": 2,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你接触一件非魔法的武器。直到法术结束，第一个被该武器命中的生物必须成功通过一次体质豁免检定，否则会获得一个溃烂伤口。拥有溃烂伤口的生物在法术持续时间的每个回合开始时受到{@damage 2d6}暗蚀伤害。一个生物同时只能有一个溃烂伤口。",
+      "如果该生物受到治疗，法术和持续伤害结束。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "伤害对每个高于2环的法术位增加{@dice 1d6}。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Paladin",
+          "name": "圣武士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "暗蚀"
+    ],
+    "savingThrow": [
+      "体质"
+    ],
+    "miscTags": [
+      "HL"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Bloodletter.webp"
+  }
+]

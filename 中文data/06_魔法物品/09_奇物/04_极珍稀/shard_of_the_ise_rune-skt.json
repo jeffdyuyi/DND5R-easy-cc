@@ -1,0 +1,84 @@
+[
+  {
+    "ENG_name": "Shard of the Ise Rune",
+    "name": "寒冰符文碎片",
+    "source": "SKT",
+    "page": 236,
+    "resist": [
+      "火焰"
+    ],
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这块冰碎片又长又细，大致相当于一把匕首的大小。伊瑟（冰）符文在其中发光。这个碎片具有以下特性，只有当它在你身上时才能发挥作用。",
+      {
+        "ENG_name": "Frigid Touch",
+        "name": "严寒之触",
+        "type": "entries",
+        "entries": [
+          "作为动作，你可以触摸一个水源，并在你所触摸的点周围10尺半径的球形区域内冻结水。一旦你使用了这个特性，直到你完成一次短休或长休之前，你不能再使用它。"
+        ]
+      },
+      {
+        "ENG_name": "Frost Friend",
+        "name": "寒霜之友",
+        "type": "entries",
+        "entries": [
+          "你对火焰伤害具有抗性。"
+        ]
+      },
+      {
+        "ENG_name": "Icy Mantle",
+        "name": "冰霜覆膜",
+        "type": "entries",
+        "entries": [
+          "作为动作，你可以用沾有水的手指触摸自己或其他生物。水会创造出一层冰霜保护膜。在接下来的一分钟内，目标下一次受到钝击、斩击或穿刺伤害时，该伤害将被减少至0，保护膜随之消失。一旦你使用了这个特性，直到你完成一次短休或长休之前，你不能再使用它。"
+        ]
+      },
+      {
+        "ENG_name": "Winters Howl",
+        "name": "冬日号叫",
+        "type": "entries",
+        "entries": [
+          "作为一个动作，你可以施放 {@spell 雪雨暴}（法术豁免 {@dc 17}）。你在完成一次短休或长休后恢复此能力。"
+        ]
+      },
+      {
+        "ENG_name": "Gift of Frost",
+        "name": "寒霜之赠礼",
+        "type": "entries",
+        "entries": [
+          "你可以将碎片的魔法转移到一个非魔法物品上——一件斗篷或一双靴子——通过用手指在物品上刻画ise符文来实现。转移需要8小时的工作，并且需要这两个物品彼此相距不超过5尺。完成后，碎片将被销毁，符文将以蓝色出现在选定的物品上，该物品将根据其形态获得以下好处：",
+          {
+            "type": "list",
+            "style": "list-hang-notitle",
+            "items": [
+              {
+                "ENG_name": "Cloak",
+                "name": "斗篷",
+                "type": "item",
+                "entry": "这件斗篷现在是一件需要调整的稀有魔法物品。穿戴时，你对火焰伤害有抗性，并且在雪地地形中进行敏捷（{@skill 隐匿}）检定时有优势。"
+              },
+              {
+                "ENG_name": "Boots",
+                "name": "靴子",
+                "type": "item",
+                "entry": "这双靴子现在是需要调谐的稀有魔法物品。穿着它时，你在行走时忽略{@quickref 困难地形||3}，并且你可以在水面上行走。"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "rest": {
+        "1e": [
+          "雪雨暴"
+        ]
+      }
+    },
+    "valueReference": 20000,
+    "type": "W"
+  }
+]

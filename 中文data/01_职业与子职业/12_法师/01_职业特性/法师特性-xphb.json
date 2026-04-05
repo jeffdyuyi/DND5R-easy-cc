@@ -1,0 +1,143 @@
+[
+    {
+        "ENG_name": "Arcane Recovery",
+        "name": "奥术回想",
+        "source": "XPHB",
+        "page": 165,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "法师",
+        "classSource": "XPHB",
+        "level": 1,
+        "entries": [
+            "你学会了通过研读法术书来恢复魔法能量。你完成一次短休后，可以选择恢复等同于你法师等级一半（向上取整）的已消耗法术位。任何恢复的法术位环阶都必须小于 6 环。一旦你以此法恢复了法术位，直至完成下一次长休前，你都无法再次使用本特性。"
+        ]
+    },
+    {
+        "ENG_name": "Ritual Adept",
+        "name": "仪式学家",
+        "source": "XPHB",
+        "page": 165,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "法师",
+        "classSource": "XPHB",
+        "level": 1,
+        "entries": [
+            "你能以仪式施展你法术书中任何具有仪式标签的法术。你不需要准备该法术即可以此法施法，但在施展期间你必须阅读该本法术书。"
+        ]
+    },
+    {
+        "ENG_name": "Spellcasting",
+        "name": "施法",
+        "source": "XPHB",
+        "page": 165,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "法师",
+        "classSource": "XPHB",
+        "level": 1,
+        "entries": [
+            "你已经入门了奥术魔法的研习。智力是你的施法关键属性。作为一名法师，你拥有一本 {@item 法术书|XPHB}。请参阅《玩家手册》中关于 {@variantrule 施法|XPHB} 的规则以及法师法术列表。"
+        ]
+    },
+    {
+        "ENG_name": "Scholar",
+        "name": "学者",
+        "source": "XPHB",
+        "page": 166,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "法师",
+        "classSource": "XPHB",
+        "level": 2,
+        "entries": [
+            "第 2 级时，你展现出在特定学术领域的卓越造诣。从以下技能中选择一项：{@skill 奥法 Arcana}、{@skill 历史 History}、{@skill 洞悉 Insight}、{@skill 调查 Investigation}、{@skill 医药 Medicine}、{@skill 自然 Nature}、{@skill 宗教 Religion} 或 {@skill 存活 Survival}。你获得该技能的 {@i 专精 Expertise}（即在其熟练加值上获得双倍收益）。"
+        ]
+    },
+    {
+        "ENG_name": "Wizard Subclass",
+        "name": "法师子职",
+        "source": "XPHB",
+        "page": 167,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "法师",
+        "classSource": "XPHB",
+        "level": 3,
+        "entries": [
+            "你获得一个自选的法师子职。子职是在特定等级授予你特性的专精方案。你将在第 3、6、10、14 级获得子职特性。"
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "XPHB",
+        "page": 167,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "法师",
+        "classSource": "XPHB",
+        "level": 4,
+        "entries": [
+            "你获得 {@feat 属性值提升|XPHB} 专长或其它你满足条件的 {@5etools 专长|feats.html}。你在第 8、12、16 级时再次获得本特性。"
+        ]
+    },
+    {
+        "ENG_name": "Memorize Spell",
+        "name": "记忆法术",
+        "source": "XPHB",
+        "page": 167,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "法师",
+        "classSource": "XPHB",
+        "level": 5,
+        "entries": [
+            "随着你对自己法术书的理解日益加深，你甚至能在野外临时调整准备的法术。第 5 级起，你只需进行一次短休，便可用你法术书中的另一个法术替换目前已准备的一道法术。"
+        ]
+    },
+    {
+        "ENG_name": "Spell Mastery",
+        "name": "法术精通",
+        "source": "XPHB",
+        "page": 167,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "法师",
+        "classSource": "XPHB",
+        "level": 18,
+        "entries": [
+            "第 18 级时，你对特定的低阶法术达到得心应手的境界。从你的法术书中选择一个 1 环法术和一个 2 环法术作为你的精通法术。你总是准备着这两个法术。你可以无需法术位施展它们（必须按最低阶效果施展）。",
+            "每当你完成一次长休，你都可以根据当天的需求更换其中一个或全部二个已选定的精通法术。"
+        ]
+    },
+    {
+        "ENG_name": "Epic Boon",
+        "name": "传奇恩惠",
+        "source": "XPHB",
+        "page": 167,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "法师",
+        "classSource": "XPHB",
+        "level": 19,
+        "entries": [
+            "你获得一项 {@filter 传奇恩惠专长|feats|category=EB} 或其它你满足条件的 {@5etools 专长|feats.html}。"
+        ]
+    },
+    {
+        "ENG_name": "Signature Spells",
+        "name": "招牌法术",
+        "source": "XPHB",
+        "page": 167,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "法师",
+        "classSource": "XPHB",
+        "level": 20,
+        "entries": [
+            "由于你对奥法理论的究极掌握，你拥有了招牌法术。选择两个 3 环法术作为招牌法术。你总是准备着它们。你可以各不消耗法术位施展其一次（短休或长休重获权限）。一旦以此法施展，除如常消耗法术位外，直到完成休息前你都无法再次免费施展该法术。"
+        ]
+    }
+]

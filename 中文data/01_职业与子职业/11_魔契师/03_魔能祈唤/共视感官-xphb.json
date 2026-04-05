@@ -1,0 +1,28 @@
+{
+  "ENG_name": "Gaze of Two Minds",
+  "name": "共视感官",
+  "source": "XPHB",
+  "page": 156,
+  "srd52": true,
+  "featureType": [
+    "EI"
+  ],
+  "prerequisite": [
+    {
+      "level": {
+        "level": 5,
+        "class": {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB",
+          "visibleStats": true
+        }
+      }
+    }
+  ],
+  "entries": [
+    "你能够以{@variantrule 附赠动作|XPHB}触碰一个自愿的生物，并与其建立起感官的连接。连接状态持续到你下回合结束时终止。其间，只要你与该生物还处于同一位面中，你就可以用{@variantrule 附赠动作|XPHB}继续维持连接，使其持续时间延长至你下回合结束时终止。如果你不再使用这种方式延续持续时间，这种连接便会结束。",
+    "以所连接生物的感官进行观察时，你将拥有该生物所有的特殊感官的增益，且如果你们之间的距离不超过60尺，你就可以如同在该生物的位置上般施展法术。"
+  ],
+  "translator": "不全书"
+}

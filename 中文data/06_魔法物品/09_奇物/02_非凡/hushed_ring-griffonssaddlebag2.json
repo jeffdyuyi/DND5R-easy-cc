@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Hushed Ring",
+    "name": "寂静之戒",
+    "source": "GriffonsSaddlebag2",
+    "page": 108,
+    "type": "RG|DMG",
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "entries": [
+      "这枚戒指在你周围创造出一个奥术力场，能阻止某些沟通方式。当佩戴此戒指时，除了你选择的生物外，其他生物无法与你进行心灵感应交流。",
+      "此外，当佩戴此戒指期间，你可以使用一个动作说出戒指的命令语来在你周围创造一个沉默光环。该光环影响你10尺范围内除你以外的生物。效果最多持续1分钟，或直到你的专注结束（如同专注于法术）。在持续时间内，当光环内的生物试图说话或念出法术的言语成分时，它必须进行一次DC 13的感知豁免检定。豁免失败时，该生物将无法说话或发出法术的言语成分，直到其下一回合开始，且它用于此目的的动作、附赠动作或反应都会被浪费。戒指的这项属性一经使用，则其直至次日黄昏前都无法再次使用。"
+    ],
+    "lootTables": [
+      "魔法物品表 F1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Hushed-Ring.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

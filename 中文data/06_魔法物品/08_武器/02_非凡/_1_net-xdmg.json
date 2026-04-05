@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "+1 Net",
+    "name": "+1 捕网",
+    "source": "XDMG",
+    "page": 324,
+    "srd": true,
+    "basicRules": true,
+    "referenceSources": [
+      "ToA"
+    ],
+    "reprintedAs": [
+      {
+        "uid": "捕网|XPHB",
+        "tag": "item"
+      }
+    ],
+    "edition": "classic",
+    "type": "R",
+    "rarity": "uncommon",
+    "weight": 3,
+    "value": 100,
+    "weaponCategory": "martial",
+    "property": [
+      "S",
+      "T"
+    ],
+    "range": "5/15",
+    "net": true,
+    "weapon": true,
+    "entries": [
+      "使用这把魔法武器进行攻击和伤害判定时，你会获得{=bonusWeapon}的额外加成。"
+    ],
+    "namePrefix": "+1 ",
+    "srd52": true,
+    "basicRules2024": true,
+    "bonusWeapon": "+1",
+    "classFeatures": [
+      "仿制魔法物品|奇械师|efa|2|efa"
+    ],
+    "lootTables": [
+      "武备 - 非普通|XDMG"
+    ],
+    "_isVariant": true,
+    "valueReference": 400
+  }
+]

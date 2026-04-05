@@ -1,0 +1,36 @@
+[
+  {
+    "ENG_name": "Censer of Controlling Air Elementals",
+    "name": "命令气元素香炉",
+    "source": "XDMG",
+    "page": 243,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "rare",
+    "wondrous": true,
+    "entries": [
+      "当你轻轻挥动这件香炉期间，你可以用一个{@action 魔法|XPHB}动作来召唤一只{@creature 气元素|XMM}。气元素会出现在距离香炉最近的未被占据的空间、理解你所说的语言、服从你的命令、使用你的{@variantrule 先攻|XPHB}并在你之后立即执行其回合。气元素会在1小时后、或它死亡时、或你用一个{@variantrule 附赠动作|XPHB}解消时消失。直到次日黎明前，香炉都无法再以该方式进行使用。"
+    ],
+    "lootTables": [
+      "奥秘 - 珍稀|XDMG",
+      "圣物 - 珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 2000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Censer of Controlling Air Elementals.webp"
+          },
+          "width": 797,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

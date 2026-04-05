@@ -1,0 +1,12 @@
+[
+  {
+    "ENG_name": "Charm of the Slayer",
+    "name": "杀戮护咒",
+    "source": "XDMG",
+    "page": 99,
+    "type": "Charm",
+    "entries": [
+      "你拥有的一把武器在随后的9日里变为一把{@item 屠龙者|XDMG}或{@item 巨人屠杀者|XDMG}（由DM选择）。时效过后，该武器恢复原样而该护咒也随之从你身上消失。"
+    ]
+  }
+]

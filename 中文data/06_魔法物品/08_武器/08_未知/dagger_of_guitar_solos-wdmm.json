@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Dagger of Guitar Solos",
+    "name": "吉他独奏之匕",
+    "source": "WDMM",
+    "page": 228,
+    "baseItem": "匕首|PHB",
+    "type": "M",
+    "rarity": "unknown (magic)",
+    "weight": 1,
+    "value": 75000,
+    "weaponCategory": "simple",
+    "property": [
+      "F",
+      "L",
+      "T"
+    ],
+    "range": "20/60",
+    "dmg1": "1d4",
+    "dmgType": "P",
+    "entries": [
+      "这把由黑暗精灵制作的匕首上装饰有银色的蜘蛛网状花纹。当它被击中或用来攻击敌人时，它会神奇地演奏一段吉他独奏。"
+    ]
+  }
+]

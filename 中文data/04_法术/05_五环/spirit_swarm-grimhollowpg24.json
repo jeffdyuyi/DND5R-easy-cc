@@ -1,0 +1,67 @@
+[
+  {
+    "ENG_name": "Spirit Swarm",
+    "name": "魂灵群",
+    "source": "GrimHollowPG24",
+    "page": 201,
+    "level": 5,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你邀请精魂对目标进行复仇。一个你能看见的范围内的生物必须进行一次魅力豁免检定。目标的魅力必须为3或更高。豁免失败时，目标受到{@damage 8d8}心灵伤害并获得{@condition 恐慌|XPHB}状态直到法术结束。豁免成功时，该生物仅受到一半伤害。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "心灵"
+    ],
+    "conditionInflict": [
+      "恐慌"
+    ],
+    "savingThrow": [
+      "魅力"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Spirit%20Swarm.webp"
+  }
+]

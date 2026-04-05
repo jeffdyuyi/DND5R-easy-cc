@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Wind Riders",
+    "name": "风行者",
+    "source": "GriffonsSaddlebag2",
+    "page": 190,
+    "tier": "主要",
+    "rarity": "rare",
+    "wondrous": true,
+    "entries": [
+      "这双靴子看起来、摸起来都像是浅淡干枯的叶子，但穿着走起路来却舒适又安静。穿着这双靴子期间，你可以在由强风造成的{@quickref 困难地形||3}中如常移动。",
+      "穿着这双靴子期间，你可以用一个动作说出其命令语来施放{@spell 气化形体}法术，将你变形成一团由蒸气和叶片组成的旋风。这个版本的法术持续至多1分钟，但只允许你用你的移动速度来垂直悬浮。你在此形态下水平移动的速度由风势的速度和吹向决定。轻度的风（每小时5～10英里）每轮能推动你10尺，而中度或更强烈的风（每小时至少10英里）改为每轮能推动你20尺。",
+      "以这种形态移动到旋转的叶片无法跟随你的地方时，该效应会提前结束。一旦靴子被用于施展此法术，其直到次日黎明前都无法再次以此法使用。"
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "气化形体"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表 G2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Wind-Riders.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

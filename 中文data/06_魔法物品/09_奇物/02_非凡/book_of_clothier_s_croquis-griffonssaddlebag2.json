@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Book of Clothier's Croquis",
+    "name": "服装师的草图集",
+    "source": "GriffonsSaddlebag2",
+    "page": 49,
+    "tier": "次要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这本魔法书籍的每一页上都画着一个类人生物的基本轮廓。这本书在被寻得时拥有{@dice 2d6 + 8}页。如果你花至少10分钟在轮廓上画上一套详细的衣服，那么这一页就会充满魔法。拿着一张被撕下的魔法书页的生物可以用一个动作说出本书的命令语，使得书页上的服饰魔法性地出现在他身上，或是将他身上本身穿着的任何类似的、重叠的衣服变形为书页上的款式。然后书页便会被摧毁并彻底消失。如果使用者不是类人生物，衣服会尽可能合身，具体情况由DM决定。",
+      "变形后的服装会失去其原本具有的任何魔法或非魔法特性，直到其恢复到正常形态为止，除非该服装的功能与新外观完全一致。例如，一套{@item 板甲|PHB}变形为皮革背心将不再提供任何AC增益，但将{@item 链甲衫|PHB}变形为与皇家警卫相同的款式则仍会保留其属性。",
+      "绘制的服装和变形后的衣物最多可维持4小时，但如果你将其移除或使用动作再次说出命令语，它们则会魔法性地消失或恢复到其正常形态。绘制的服装是物理存在的，但不会为AC带来任何好处。虽然绘制的服装和变形后的衣物可以复制其他魔法服装的外观，但它们不会获得其魔法特性。"
+    ],
+    "lootTables": [
+      "魔法物品表 B1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Book-of-Clothiers-Croquis.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

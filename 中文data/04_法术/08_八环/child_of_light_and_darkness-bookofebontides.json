@@ -1,0 +1,90 @@
+[
+  {
+    "ENG_name": "Child of Light and Darkness",
+    "name": "晦明之子",
+    "source": "BookOfEbonTides",
+    "page": 57,
+    "level": 8,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一块来自幽影位面且被留在太阳下的卵石"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "在法术的持续时间内，你在每个回合结束时掷一次{@dice d20}。若掷出1-10，你将化身为由纯粹灼热之光构成的类人生物。若掷出11-20，你将化身为由刺骨黑暗构成的类人生物。在这两种形态下，你都免疫来自非魔法攻击的钝击、穿刺和挥砍伤害，且生物攻击你时其攻击检定具有劣势。你在任一形态下都会获得额外增益。",
+      {
+        "ENG_name": "In Light Form",
+        "name": "光亮形态",
+        "type": "entries",
+        "entries": [
+          "你散发出60尺半径的明亮光照和额外60尺的微光光照，你对火焰伤害免疫，并且对光耀伤害具有抗性。每回合一次，你可以以一个附赠动作传送至你能看到的你所散发的光照范围内的一个空间。"
+        ]
+      },
+      {
+        "ENG_name": "In Darkness Form",
+        "name": "黑暗形态",
+        "type": "entries",
+        "entries": [
+          "你对寒冷伤害免疫，并且对暗蚀伤害具有抗性。每回合一次，以一个附赠动作，你可以指定30尺内至多三个大型或更小的生物为目标。每个目标必须进行一次力量豁免检定，否则将被你拉近或推开（由你选择）至多20尺。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    },
+    "damageResist": [
+      "暗蚀",
+      "光耀"
+    ],
+    "savingThrow": [
+      "力量"
+    ],
+    "miscTags": [
+      "FMV",
+      "LGT",
+      "SGT",
+      "UBA"
+    ]
+  }
+]

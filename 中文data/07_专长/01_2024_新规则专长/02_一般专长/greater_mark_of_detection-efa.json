@@ -1,0 +1,65 @@
+[
+  {
+    "ENG_name": "Greater Mark of Detection",
+    "name": "高等侦测之纹",
+    "source": "EFA",
+    "page": 43,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4,
+        "feat": [
+          "侦测龙纹|EFA"
+        ]
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Improved Intuition",
+        "name": "直觉锐化",
+        "type": "entries",
+        "entries": [
+          "当你使用你的{@feat 侦测龙纹|EFA}专长的推理直觉增益时，你可以掷{@dice 1d6}而非{@dice 1d4}。"
+        ]
+      },
+      {
+        "ENG_name": "Shared Detection",
+        "name": "共享侦测",
+        "type": "entries",
+        "entries": [
+          "当你使用你的{@feat 侦测龙纹|EFA}专长的魔法侦测增益来施放{@spell 识破隐形|XPHB}而无需法术位时，你可以选择你30尺内能看见的一个生物。该生物也在法术持续时间内获得该法术的增益。"
+        ]
+      }
+    ],
+    "hasFluffImages": true,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "feats/EFA/Greater Mark of Detection.webp"
+          },
+          "credit": "Lee Moyer",
+          "width": 283,
+          "height": 284
+        }
+      ]
+    }
+  }
+]

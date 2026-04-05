@@ -1,0 +1,65 @@
+[
+  {
+    "ENG_name": "Message",
+    "name": "传讯术",
+    "source": "PHB",
+    "page": 259,
+    "srd": true,
+    "referenceSources": [
+      "SKT",
+      "AZfyT",
+      "BGDIA",
+      "IDRotF",
+      "CM",
+      "LoX",
+      "CoA"
+    ],
+    "reprintedAs": [
+      "传讯术|XPHB"
+    ],
+    "level": 0,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一小段铜线"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "round",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你用手指指向施法距离内的一个生物并低声说出一段信息。该目标（且只有该目标）会听到这段信息并可以用只有你能听见的低语回复你。",
+      "你可以隔着固态物件施展该法术，但你必须熟悉法术目标并知晓其就在屏障后方。魔法的沉默，1 尺厚的石头，1 寸厚的普通金属，一片薄铅片，或者 3 尺厚的木料都可以阻挡该法术。该法术不需要直线传递信息，它可以自由地转过拐角或穿过孔洞。"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "术士",
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "变化系"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Bolt, Ranging",
+    "name": "弩矢，测距",
+    "source": "GrimHollowPG24",
+    "page": 129,
+    "type": "A|XPHB",
+    "rarity": "none",
+    "weight": 0.025,
+    "value": 10,
+    "entries": [
+      "具有测距属性的进阶弹药比普通弹药更轻盈且制作更精良。当你发射测距弹药时，可以将武器的正常范围增加50%。"
+    ],
+    "miscTags": [
+      "CNS"
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "ENG_name": "Amulet of the Sentinel",
+    "name": "哨卫护符",
+    "source": "GriffonsSaddlebag2",
+    "page": 34,
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6 + 2}",
+    "charges": 8,
+    "entries": [
+      "这件眼形的黄金护符中央嵌有一大颗红宝石，其周围环绕着八颗较小的宝石。此护符具有8充能，并在每日黎明时重获{@dice 1d6 + 2}已消耗的充能。佩戴着此护符期间，你可以消耗其至少1充能，来使用其下列词条之一：",
+      {
+        "ENG_name": "Alertness",
+        "name": "警觉",
+        "type": "entries",
+        "entries": [
+          "当你掷先攻骰时，你可以用你的反应消耗1充能将你的熟练加值添加到本次掷骰中。"
+        ]
+      },
+      {
+        "ENG_name": "Protection",
+        "name": "守护",
+        "type": "entries",
+        "entries": [
+          "当你或一个距离你30尺以内且你可见的生物受到重击时，你可以用你的反应消耗2充能，将这次攻击改为普通命中。任何通过造成重击来触发的效应都会因此取消。"
+        ]
+      },
+      {
+        "ENG_name": "Vigilance",
+        "name": "警惕",
+        "type": "entries",
+        "entries": [
+          "当距你30尺范围内至少一个你可见的生物因某效应而被迫进行一次豁免检定时，你可以用你的反应并消耗至少2充能。消耗2充能可让你选择一个受该效应影响的生物，使其在本次豁免检定中具有优势。在此基础上，你每多消耗1充能，便可以多选择一个受该效应影响的生物，使其在本次豁免检定中具有优势。你可以在看到豁免掷骰结果后，在GM宣判该结果生效之前决定是否使用这一属性。"
+        ]
+      }
+    ],
+    "lootTables": [
+      "魔法物品表 G1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Amulet-of-the-Sentinel.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

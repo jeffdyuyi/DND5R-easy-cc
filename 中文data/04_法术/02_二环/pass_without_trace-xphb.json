@@ -1,0 +1,52 @@
+[
+  {
+    "ENG_name": "Pass without Trace",
+    "name": "行动无踪",
+    "source": "XPHB",
+    "page": 303,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 2,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "emanation",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "槲寄生烧成的灰烬"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你在法术持续时间于 30 尺{@variantrule 光环 [效应区域]|XPHB|光环}范围内散发出遮蔽灵光。位于灵光范围期间，你和每名你选择的生物在敏捷（{@skill 隐匿|XPHB}隐匿）检定上获得 +10 加值，且不会留下任何踪迹。"
+    ],
+    "areaTags": [
+      "MT"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊",
+      "游侠"
+    ],
+    "display_school": "防护系"
+  }
+]

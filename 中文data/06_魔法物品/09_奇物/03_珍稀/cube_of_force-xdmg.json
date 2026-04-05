@@ -1,0 +1,96 @@
+[
+  {
+    "ENG_name": "Cube of Force",
+    "name": "力场魔方",
+    "source": "XDMG",
+    "page": 246,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6}",
+    "charges": 10,
+    "entries": [
+      "这个立方体棱长约1寸，每个面上都有不同的标记。你可以按下立方体某一面，并消耗如下表所示的充能以施展对应的法术（豁免{@dc 17}）。",
+      "该立方体共有10发充能，每天黎明时会恢复{@dice 1d6}发已消耗的充能次数。",
+      {
+        "type": "table",
+        "caption": "力场魔方各面效果",
+        "colStyles": [
+          "col-10",
+          "col-2 text-center"
+        ],
+        "colLabels": [
+          "法术",
+          "消耗充能"
+        ],
+        "rows": [
+          [
+            "{@spell 法师护甲|XPHB}",
+            "1"
+          ],
+          [
+            "{@spell 护盾术|XPHB}",
+            "1"
+          ],
+          [
+            "{@spell 李欧蒙小屋|XPHB}",
+            "3"
+          ],
+          [
+            "{@spell 魔邓肯私人密室|XPHB}",
+            "4"
+          ],
+          [
+            "{@spell 欧提路克弹力法球|XPHB}",
+            "4"
+          ],
+          [
+            "{@spell 力场墙|XPHB}",
+            "5"
+          ]
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "法师护甲|xphb",
+          "护盾术|xphb"
+        ],
+        "3": [
+          "李欧蒙小屋|xphb"
+        ],
+        "4": [
+          "魔邓肯私人密室|xphb",
+          "欧提路克弹力法球|xphb"
+        ],
+        "5": [
+          "力场墙|xphb"
+        ]
+      }
+    },
+    "lootTables": [
+      "奥秘 - 珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Cube of Force.webp"
+          },
+          "width": 998,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

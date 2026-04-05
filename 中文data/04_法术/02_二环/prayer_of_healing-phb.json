@@ -1,0 +1,82 @@
+[
+  {
+    "ENG_name": "Prayer of Healing",
+    "name": "治疗祷言",
+    "source": "PHB",
+    "page": 267,
+    "srd": true,
+    "basicRules": true,
+    "otherSources": [
+      {
+        "source": "RMR",
+        "page": 57
+      }
+    ],
+    "reprintedAs": [
+      "治疗祷言|XPHB"
+    ],
+    "level": 2,
+    "school": "V",
+    "time": [
+      {
+        "number": 10,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你指定施法距离内至多六个你能看见的生物，并使其每人恢复 {@dice 2d8}+你施法属性调整值的生命值。该法术对不死生物和构装体不产生任何效应。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用三环或更高法术位施展该法术时，你使用的法术位每比二环高一环，治疗量就增加{@scaledice 2d8|2-9|1d8}。"
+        ]
+      }
+    ],
+    "affectsCreatureType": [
+      "异怪",
+      "野兽",
+      "天族",
+      "龙",
+      "元素",
+      "妖精",
+      "邪魔",
+      "巨人",
+      "类人",
+      "怪兽",
+      "泥怪",
+      "植物"
+    ],
+    "miscTags": [
+      "HL",
+      "SGT"
+    ],
+    "areaTags": [
+      "MT"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师",
+      "圣武士"
+    ],
+    "display_school": "塑能系"
+  }
+]

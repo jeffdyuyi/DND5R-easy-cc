@@ -1,0 +1,81 @@
+[
+  {
+    "ENG_name": "Abi-Dalzim's Horrid Wilting",
+    "name": "亚比达奇凋死术",
+    "source": "XGE",
+    "page": 150,
+    "otherSources": [
+      {
+        "source": "EEPC",
+        "page": 15
+      }
+    ],
+    "referenceSources": [
+      "PotA"
+    ],
+    "level": 8,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 150
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一小块海绵"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你从以距离内由你指定的一点为中心、30 尺立方空间内的每个生物身上抽取水汽。在该区域内的每个生物必须进行一次体质豁免检定。构装生物和不死生物不受影响，而植物和水元素在进行此豁免检定时具有劣势。若豁免失败，生物将受到{@damage 12d8}暗蚀伤害，而豁免成功则只受到上述伤害的一半。",
+      "在这个区域内的非魔法、非生物植物，例如树木和灌木，会立即死亡。"
+    ],
+    "damageInflict": [
+      "necrotic"
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "affectsCreatureType": [
+      "异怪",
+      "野兽",
+      "天族",
+      "龙",
+      "元素",
+      "妖精",
+      "邪魔",
+      "巨人",
+      "类人",
+      "怪兽",
+      "泥怪",
+      "植物"
+    ],
+    "areaTags": [
+      "C"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "法师"
+    ],
+    "display_school": "死灵系",
+    "display_savingThrow": [
+      "体质"
+    ],
+    "display_damageInflict": [
+      "死灵"
+    ]
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Harkon's Bite",
+    "name": "哈肯之咬",
+    "source": "VRGR",
+    "page": 137,
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "curse": true,
+    "bonusSavingThrow": "+1",
+    "entries": [
+      "一枚恐狼牙齿悬挂在这条简单的项链绳上。当佩戴它的时候，项链会让你在属性检定和豁免上获得+1加值。",
+      {
+        "ENG_name": "Curse",
+        "name": "诅咒",
+        "type": "entries",
+        "entries": [
+          "与哈肯之咬同调会令你陷入诅咒，直到哈肯卢卡斯从你身上去除项链，或者你被施展{@spell 移除诅咒}法术或类似的魔法。在被诅咒时，你无法去除项链。",
+          "在戴上或取下项链时，无论你是否与之同调，你都会感染{@variantrule 玩家角色|mm|狼人化症}，如《怪物图鉴》中所述。诅咒持续至下一次满月之后的黎明。如果那时你还戴着项链，则你会再度感染该兽化症。"
+        ]
+      }
+    ],
+    "valueReference": 400,
+    "type": "W"
+  }
+]

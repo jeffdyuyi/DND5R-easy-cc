@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Contingency Band",
+    "name": "应急编环",
+    "source": "GriffonsSaddlebag2",
+    "page": 64,
+    "type": "RG|DMG",
+    "tier": "主要",
+    "rarity": "rare",
+    "entries": [
+      "这枚皮革戒指的三条编织带每条都刻有一条黑暗蜿蜒的蛇形图案。你可以用一个动作将戒指浸入{@item 治疗药水}或类似的治疗药剂中。如果戒指以这种方式在药水中浸泡1分钟，戒指就会魔法性地吸收药水及其任何治疗属性。戒指每吸收一瓶药水，其中一条黑蛇就会发出微弱的红光。戒指一次最多可以储存3瓶药水。",
+      "佩戴此戒指时，在你受到伤害后，你可以立即使用反应说出其命令语并获得戒指所储存的一瓶药水的治疗效果（由你选择）。使用后存储的该药水效果将消失，戒指上对应的蛇形图案也会重新变暗。"
+    ],
+    "lootTables": [
+      "魔法物品表 G1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Contingency-Band.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

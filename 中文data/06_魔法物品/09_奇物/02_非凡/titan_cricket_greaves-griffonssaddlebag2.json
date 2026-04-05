@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Titan Cricket Greaves",
+    "name": "巨蟋护胫",
+    "source": "GriffonsSaddlebag2",
+    "page": 175,
+    "tier": "次要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这副不寻常的护腿是用巨型蟋蟀的腿制成。当你穿着这副护腿期间，无论是否进行助跑，你的跳远距离都可达25尺，跳高距离可达15尺（除非你原本的跳跃距离更高）。此外，你的步行速度增加5尺。",
+      "另外，你可以使用一个动作，在穿戴护腿时摩擦双腿，制造出一只或多只蟋蟀的招牌声音。这个声音可以像低语一样轻，也可以像尖叫一样响。"
+    ],
+    "lootTables": [
+      "魔法物品表 B2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Titan-Cricket-Greaves.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

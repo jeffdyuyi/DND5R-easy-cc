@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Mythcarver (Exalted)",
+    "name": "神话刻录者（升华）",
+    "source": "TalDoreiCampaignSettingReborn",
+    "_copy": {
+      "ENG_name": "Mythcarver (Awakened)",
+      "name": "神话刻录者（觉醒）",
+      "source": "TalDoreiCampaignSettingReborn",
+      "_mod": {
+        "entries": [
+          {
+            "mode": "appendArr",
+            "items": {
+              "entries": [
+                {
+                  "ENG_name": "Exalted",
+                  "name": "升华",
+                  "type": "entries",
+                  "entries": [
+                    "当神话雕刻者达到崇高状态时，你将获得以下好处：",
+                    {
+                      "type": "list",
+                      "items": [
+                        "该武器的攻击检定和伤害掷骰加值增至+3。",
+                        "作为一项行动，你让剑中的精神接管你的身体并引导你的攻击。你用剑进行4次近战攻击，然后获得1级的{@condition 力竭}。一旦使用了这个属性，直到你完成一次{@quickref 休息|PHB|2|0|长休}后才能再次使用。"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "_preserve": {
+        "page": true,
+        "fluff": true
+      }
+    },
+    "bonusWeapon": "+3",
+    "hasFluff": true,
+    "hasFluffImages": true
+  }
+]

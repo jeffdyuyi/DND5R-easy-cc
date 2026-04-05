@@ -1,0 +1,54 @@
+[
+  {
+    "ENG_name": "Message",
+    "name": "传讯术",
+    "source": "XPHB",
+    "page": 298,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 0,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "s": true,
+      "m": "一段铜线"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "round",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你用指向施法距离内的一名生物并低声说出一段信息。该目标（且只有该目标）会听到这段信息，并且可以用只有你能听见的低语回复你。",
+      "你可以隔着固态物件施展此法术，但你必须熟悉法术目标并知晓其就在阻挡物后方。魔法性的沉默效应，1 尺厚的石头、金属或木料，或是一片薄铅都可以阻挡此法术。"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "德鲁伊",
+      "术士",
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "变化系"
+  }
+]

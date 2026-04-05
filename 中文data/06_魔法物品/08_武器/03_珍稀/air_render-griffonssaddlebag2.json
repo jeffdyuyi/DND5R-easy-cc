@@ -1,0 +1,67 @@
+[
+  {
+    "ENG_name": "Air Render",
+    "name": "破空之弓",
+    "source": "GriffonsSaddlebag2",
+    "page": 33,
+    "baseItem": "短弓|phb",
+    "type": "R",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 2,
+    "weaponCategory": "简易",
+    "property": [
+      "A",
+      "2H"
+    ],
+    "range": "80/320",
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "bonusWeapon": "+1",
+    "entries": [
+      "当你用这把魔法短弓进行远程攻击时，你可以选择发射一道风矢而不使用箭。若如此做，本次攻击的攻击检定和伤害掷骰都获得 +1 加值，而且你还可以选择风的形态，使这道风矢造成钝击、穿刺或挥砍伤害之一（由你选择）。当你以此方式掷出20时，目标还会遭受以下效应之一：",
+      {
+        "ENG_name": "Bludgeoning Gust",
+        "name": "钝击强风",
+        "type": "entries",
+        "entries": [
+          "若风矢造成钝击伤害，则目标必须成功通过一次{@dc 15}力量豁免，豁免失败则会被击倒在地{@condition 倒地}或被推离15尺远（由你选择）。体型不小于巨型的生物直接判为豁免成功。"
+        ]
+      },
+      {
+        "ENG_name": "Piercing Wind",
+        "name": "穿刺劲风",
+        "type": "entries",
+        "entries": [
+          "若风矢造成穿刺伤害，你可以立即用以同种风矢对原目标15尺范围内的另一个生物进行另一次攻击。这次攻击造成穿刺伤害。"
+        ]
+      },
+      {
+        "ENG_name": "Slashing Tornado",
+        "name": "挥砍旋风",
+        "type": "entries",
+        "entries": [
+          "若风矢造成挥砍伤害，则原目标5尺范围内的所有其他生物都必须成功通过一次{@dc 15}的敏捷豁免，豁免失败者将各受到{@damage 2d6}挥砍伤害。"
+        ]
+      }
+    ],
+    "ammoType": "箭|phb",
+    "lootTables": [
+      "魔法物品表 G1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Air-Render.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

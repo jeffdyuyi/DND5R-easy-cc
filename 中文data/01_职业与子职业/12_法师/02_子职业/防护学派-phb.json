@@ -1,0 +1,21 @@
+{
+  "ENG_name": "School of Abjuration",
+  "name": "防护学派",
+  "shortName": "防护",
+  "source": "PHB",
+  "className": "法师",
+  "classSource": "PHB",
+  "page": 115,
+  "srd": true,
+  "basicRules": true,
+  "reprintedAs": [
+    "防护师|XPHB"
+  ],
+  "subclassFeatures": [
+    "防护专家|法师|PHB|防护|PHB|2",
+    "奥术护盾|法师|PHB|防护|PHB|2",
+    "投射守御|法师|PHB|防护|PHB|6",
+    "精通防护|法师|PHB|防护|PHB|10",
+    "法术抗性|法师|PHB|防护|PHB|14"
+  ]
+}

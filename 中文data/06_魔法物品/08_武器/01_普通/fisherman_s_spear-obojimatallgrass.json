@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Fisherman's Spear",
+    "name": "渔夫的矛",
+    "source": "ObojimaTallGrass",
+    "page": 170,
+    "baseItem": "矛|PHB",
+    "type": "M",
+    "rarity": "common",
+    "reqAttune": true,
+    "weight": 3,
+    "weaponCategory": "简易",
+    "property": [
+      "T",
+      "V"
+    ],
+    "range": "20/60",
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "dmg2": "1d8",
+    "entries": [
+      "这把精心制作的矛有一个磨损的橡树柄，能在持有者的呼唤下魔法般地向前弹射。当你用这把矛进行近战攻击时，你可以让它魔法般地延伸，攻击一个距离你15尺远的生物。矛每延伸超过其正常触及范围5尺，你在攻击检定上就会受到-1减值。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/fishermans-spear.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 3316,
+          "height": 3316
+        }
+      ]
+    }
+  }
+]

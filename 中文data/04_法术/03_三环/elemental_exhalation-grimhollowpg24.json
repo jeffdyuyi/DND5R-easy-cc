@@ -1,0 +1,118 @@
+[
+  {
+    "ENG_name": "Elemental Exhalation",
+    "name": "元素吐息",
+    "source": "GrimHollowPG24",
+    "page": 190,
+    "level": 3,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "当你施放此法术时，选择下列效应之一以决定法术的伤害类型：",
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Air",
+            "name": "空气",
+            "type": "item",
+            "entries": [
+              "伤害类型为雷鸣。每个豁免检定失败的生物被推离你10尺。"
+            ]
+          },
+          {
+            "ENG_name": "Coldfire",
+            "name": "冷焰",
+            "type": "item",
+            "entries": [
+              "伤害类型是寒冷。每个豁免检定失败的生物获得{@condition 恐慌|XPHB}状态直到你的下个回合开始。"
+            ]
+          },
+          {
+            "ENG_name": "Earth",
+            "name": "土",
+            "type": "item",
+            "entries": [
+              "伤害类型为钝击。每个豁免检定失败的生物其{@variantrule 速度|XPHB}缩小至0直到它的下个回合结束。"
+            ]
+          },
+          {
+            "ENG_name": "Fire",
+            "name": "火焰",
+            "type": "item",
+            "entries": [
+              "伤害类型为火焰。每个未能通过豁免检定的生物将被火焰吞没，并在其下一回合结束时受到{@damage 2d6}火焰伤害。作为一个动作，它可以通过让自己进入{@condition 倒地|XPHB}状态并在地上打滚来熄灭身上的火焰。如果被浇灭、浸没或窒息，火焰也会熄灭。"
+            ]
+          },
+          {
+            "ENG_name": "Water",
+            "name": "饮水",
+            "type": "item",
+            "entries": [
+              "伤害类型是强酸。每个豁免检定失败的生物将陷入{@condition 倒地|XPHB}状态。"
+            ]
+          }
+        ]
+      },
+      "每个处于30尺{@variantrule 锥状 [效应区域]|XPHB|锥状}破坏性元素能量效应区域内的生物必须进行一次敏捷豁免检定。豁免失败的目标会受到{@damage 5d6}点所选生物类型的伤害。豁免成功的目标则只受到一半伤害。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "伤害对每个高于3环的法术位环阶增加{@dice 1d6}。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "火焰"
+    ],
+    "conditionInflict": [
+      "恐慌",
+      "倒地"
+    ],
+    "savingThrow": [
+      "敏捷"
+    ],
+    "miscTags": [
+      "FMV"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Elemental%20Exhalation.webp"
+  }
+]

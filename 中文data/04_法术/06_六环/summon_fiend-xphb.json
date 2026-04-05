@@ -1,0 +1,80 @@
+[
+  {
+    "ENG_name": "Summon Fiend",
+    "name": "邪魔召唤术",
+    "source": "XPHB",
+    "page": 326,
+    "level": 6,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 90
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一小瓶价值 600+GP 的血",
+        "cost": 60000
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你唤来一个邪魔灵魄。其使用下文{@creature 邪魔灵魄|XPHB}的数据，并会在施法距离内一处你可见的未被占据的空间中显现。当你施展法术时，从魔鬼，恶魔，尤格罗斯魔中选择一类，该生物会显现为你所选的那类邪魔中的一员，其数据中的部分特性也受此影响。该生物会在{@variantrule 生命值|XPHB}降为 0 或是法术结束时消失。",
+      "该生物是你和你盟友的盟友。它在战斗中使用你的{@variantrule 先攻|XPHB}，并在你回合结束后立即执行其回合。它遵从于你的口头指令（无需任何动作）。如果你不发令，它将执行{@action 回避|XPHB}动作并使用其移动力以远离危险。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "该生物的数据使用新的法术环阶。"
+        ]
+      }
+    ],
+    "miscTags": [
+      "SGT",
+      "SMN"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/XPHB/Summon Fiend.webp"
+          },
+          "credit": "Alexandre Honore",
+          "width": 850,
+          "height": 872
+        }
+      ]
+    },
+    "classes": [
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "咒法系"
+  }
+]

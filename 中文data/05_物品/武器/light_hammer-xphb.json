@@ -1,0 +1,43 @@
+[
+  {
+    "name": "轻锤",
+    "ENG_name": "Light Hammer",
+    "source": "XPHB",
+    "page": 215,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 200,
+    "weaponCategory": "simple",
+    "property": [
+      "L|XPHB",
+      "T|XPHB"
+    ],
+    "mastery": [
+      "迅击|XPHB"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "B",
+    "range": "20/60",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XPHB/Light Hammer.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 198,
+          "height": 537
+        }
+      ]
+    },
+    "basicRules2024": true,
+    "hammer": true,
+    "hasFluffImages": true,
+    "srd52": true,
+    "weapon": true
+  }
+]

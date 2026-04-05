@@ -1,0 +1,24 @@
+[
+  {
+    "name": "抗毒剂",
+    "ENG_name": "Antitoxin",
+    "source": "XPHB",
+    "page": 222,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "value": 5000,
+    "entries": [
+      "以一个{@variantrule 附赠动作|XPHB}，你可以喝下一小瓶抗毒剂来使你在避免或结束{@condition 中毒|XPHB}状态的豁免中具有{@variantrule 优势|XPHB}，持续一小时。"
+    ],
+    "basicRules2024": true,
+    "miscTags": [
+      "CNS"
+    ],
+    "referenceSources": [
+      "DrDe-DaS",
+      "HotB"
+    ],
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

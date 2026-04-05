@@ -1,0 +1,17 @@
+{
+  "ENG_name": "Commanding Presence",
+  "name": "领导风范",
+  "source": "XPHB",
+  "page": 95,
+  "featureType": [
+    "MV:B"
+  ],
+  "consumes": {
+    "ENG_name": "Superiority Die",
+    "name": "卓越骰"
+  },
+  "entries": [
+    "当你进行一次魅力（{@skill 威吓|XPHB}、{@skill 表演|XPHB}或{@skill 游说|XPHB}）检定时，你能够消耗一枚卓越骰，将消耗的卓越骰加入此次属性检定中。"
+  ],
+  "translator": "不全书"
+}

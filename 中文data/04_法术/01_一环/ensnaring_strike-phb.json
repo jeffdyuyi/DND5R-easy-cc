@@ -1,0 +1,75 @@
+[
+  {
+    "ENG_name": "Ensnaring Strike",
+    "name": "诱捕打击",
+    "source": "PHB",
+    "page": 237,
+    "reprintedAs": [
+      "诱捕打击|XPHB"
+    ],
+    "level": 1,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你在法术终止前的下一次武器攻击命中一个生物时，将在攻击处出现一团扭曲的多刺藤蔓，并迫使目标进行一次力量豁免，豁免失败者将受魔法藤蔓影响而陷入{@condition 束缚}状态，直至法术终止。大型或更大体型的生物进行该豁免时具有优势，如果豁免成功，则藤蔓立即枯萎。",
+      "受该法术{@condition 束缚}的目标每回合开始时受到 {@damage 1d6} 的穿刺伤害。该受{@condition 束缚}生物或其他能触及该目标的生物可用一个动作进行一次对抗法术豁免 DC 的力量检定。检定成功则目标解除束缚。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "使用二环或更高法术位施展该法术时，你使用的法术位每比一环高一环，伤害就提高 {@scaledamage 1d6|1-9|1d6}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "piercing"
+    ],
+    "conditionInflict": [
+      "束缚"
+    ],
+    "savingThrow": [
+      "strength"
+    ],
+    "abilityCheck": [
+      "力量"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "游侠"
+    ],
+    "display_school": "咒法系",
+    "display_savingThrow": [
+      "力量"
+    ],
+    "display_damageInflict": [
+      "穿刺"
+    ]
+  }
+]

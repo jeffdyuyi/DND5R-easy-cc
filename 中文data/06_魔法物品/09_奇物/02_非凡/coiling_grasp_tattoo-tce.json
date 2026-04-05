@@ -1,0 +1,34 @@
+[
+  {
+    "ENG_name": "Coiling Grasp Tattoo",
+    "name": "缠爪刺青",
+    "source": "TCE",
+    "page": 123,
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "tattoo": true,
+    "entries": [
+      "该魔法刺青用一根特殊的针制作，呈现为优美书法或者书写工具的图案。",
+      {
+        "ENG_name": "Tattoo Attunement",
+        "name": "刺青同调",
+        "type": "entries",
+        "entries": [
+          "同调此物品时，你需要将针持握，并抵在你想要让刺青出现 的那处皮肤上。当同调完成时，针头会化为墨水再变成刺青。",
+          "若你与刺青的同调结束，刺青会消失，针头会再次出现在你的位置中。"
+        ]
+      },
+      {
+        "ENG_name": "Grasping Tendrils",
+        "name": "缠握触须",
+        "type": "entries",
+        "entries": [
+          "当刺青在你的皮肤上时，你可以用一个动作让刺青伸缩出一团能够触及一个15尺内你可见生物的墨黑色触须。目标生物必须进行一次{@dc 14}的力量豁免，豁免失败则受到{@damage 3d6}力场伤害并被你{@condition 受擒}。作为一个动作，被擒抱的生物可以通过{@dc 14}的力量（{@skill 运动}）或敏捷（{@skill 特技}）检定以摆脱擒抱。在你使触手停止（无需动作），或生物与你相距15尺以上或你对另一个生物使用此刺青时，擒抱也会结束。"
+        ]
+      }
+    ],
+    "valueReference": 400,
+    "type": "W"
+  }
+]

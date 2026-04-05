@@ -1,0 +1,80 @@
+[
+  {
+    "name": "玻璃匠工具",
+    "ENG_name": "Glassblower's Tools",
+    "source": "PHB",
+    "page": 154,
+    "type": "AT",
+    "rarity": "none",
+    "weight": 5,
+    "value": 3000,
+    "additionalEntries": [
+      "熟练于玻璃匠工具的人不仅拥有塑造玻璃的能力，还具备用于生产玻璃制品的专业方法知识。",
+      {
+        "ENG_name": "Components",
+        "name": "成分",
+        "type": "entries",
+        "entries": [
+          "这些工具包括一个吹管、一个小的玻璃工作台、块状物和镊子。你需要一个热源来加工玻璃。"
+        ]
+      },
+      {
+        "ENG_name": "Arcana, History",
+        "name": "奥秘、历史",
+        "type": "entries",
+        "entries": [
+          "你对玻璃制造技术的知识在你检查玻璃物件时有所帮助，例如药水瓶或在库藏宝藏中找到的玻璃物品。举例来说，你可以研究玻璃药水瓶如何被其内容物改变，以协助确定药水的效应。（药水可能会留下残留物、使玻璃变形或染色。）"
+        ]
+      },
+      {
+        "ENG_name": "Investigation",
+        "name": "调查",
+        "type": "entries",
+        "entries": [
+          "当你研究一个区域时，如果线索包括破碎的玻璃或玻璃制品，你的知识可以帮助你。"
+        ]
+      },
+      {
+        "ENG_name": "Identify Weakness",
+        "name": "发现弱点",
+        "type": "entries",
+        "entries": [
+          "通过1分钟的研究，你可以发现玻璃物件的弱点。攻击弱点对该物件造成的任何伤害翻倍。"
+        ]
+      },
+      {
+        "type": "table",
+        "caption": "玻璃匠工具",
+        "colLabels": [
+          "用途",
+          "DC"
+        ],
+        "colStyles": [
+          "col-10",
+          "col-2 text-center"
+        ],
+        "rows": [
+          [
+            "鉴定玻璃来源",
+            "10"
+          ],
+          [
+            "确定玻璃物体曾经装过什么",
+            "20"
+          ]
+        ]
+      }
+    ],
+    "additionalSources": [
+      {
+        "source": "XGE",
+        "page": 82
+      }
+    ],
+    "basicRules": true,
+    "reprintedAs": [
+      "玻璃匠工具|XPHB"
+    ],
+    "srd": true
+  }
+]

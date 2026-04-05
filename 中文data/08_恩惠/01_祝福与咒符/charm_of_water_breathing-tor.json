@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Charm of Water Breathing",
+    "name": "水下呼吸护咒",
+    "source": "ToR",
+    "page": 213,
+    "type": "Charm",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "limited": {
+              "1": [
+                "水下呼吸"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "entries": [
+      "该魅惑允许角色施放{@spell 水下呼吸}法术，之后其魔法消散。"
+    ]
+  }
+]

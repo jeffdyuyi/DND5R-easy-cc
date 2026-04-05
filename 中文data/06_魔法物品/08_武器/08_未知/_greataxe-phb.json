@@ -1,0 +1,36 @@
+[
+  {
+    "ENG_name": "Greataxe",
+    "name": "镀银巨斧",
+    "source": "PHB",
+    "page": 148,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "unknown",
+    "weight": 7,
+    "value": 3000,
+    "weaponCategory": "martial",
+    "property": [
+      "H|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "横扫|XPHB"
+    ],
+    "dmg1": "1d12",
+    "dmgType": "S",
+    "axe": true,
+    "weapon": true,
+    "hasFluffImages": true,
+    "namePrefix": "镀银",
+    "basicRules": true,
+    "reprintedAs": [
+      "镀银武器|XDMG"
+    ],
+    "tier": "主要",
+    "valueExpression": "[[baseItem.value]] + 10000",
+    "_isVariant": true
+  }
+]

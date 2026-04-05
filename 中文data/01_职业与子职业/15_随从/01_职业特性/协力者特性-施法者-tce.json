@@ -1,0 +1,143 @@
+[
+    {
+        "ENG_name": "Spellcaster Sidekick",
+        "name": "施法者协力者",
+        "source": "TCE",
+        "page": 144,
+        "className": "施法者协力者",
+        "classSource": "TCE",
+        "level": 1,
+        "entries": [
+            "要获得施法者职业，一个生物的数据板中必须至少具有一门它能说的语言。",
+            "{@note 注意：此职业适用于 NPC {@variantrule 协力者|TCE}。}"
+        ]
+    },
+    {
+        "ENG_name": "Bonus Proficiencies",
+        "name": "附赠熟练",
+        "source": "TCE",
+        "page": 144,
+        "className": "施法者协力者",
+        "classSource": "TCE",
+        "level": 1,
+        "entries": [
+            "协力者获得以下一项你所选豁免检定的熟练：智力，感知，或魅力。",
+            "此外，协力者获得以下中 2 项你选技能的熟练：{@skill 奥秘}，{@skill 历史}，{@skill 洞悉}，{@skill 调查}，{@skill 医药}，{@skill 表演}，{@skill 游说} 和 {@skill 宗教}。",
+            "协力者获得轻甲熟练。如果它是一个类人生物或在其资料版中具有一项 {@filter 简易或军用武器|items|source=phb|category=基础|type=军用武器;简易武器}，它也会获得所有简易武器的熟练。"
+        ]
+    },
+    {
+        "ENG_name": "Spellcasting",
+        "name": "施法",
+        "source": "TCE",
+        "page": 144,
+        "className": "施法者协力者",
+        "classSource": "TCE",
+        "level": 1,
+        "entries": [
+            "协力者获得施展法术的能力（如果该生物已具有施法特质，该特性替换原本特质）。选择一项施法者职能：魔法师 (Mage)，治疗者 (Healer) 或奇才 (Prodigy)。这选择将决定协力者的法术列表和使用的施法属性：",
+            {
+                "type": "table",
+                "caption": "及法职修能",
+                "colLabels": [
+                    "职能",
+                    "法术列表",
+                    "属性"
+                ],
+                "rows": [
+                    [
+                        "魔法师",
+                        "{@filter 法师|spells|class=法师}",
+                        "智力"
+                    ],
+                    [
+                        "治疗师",
+                        "{@filter 牧师和德鲁伊|spells|class=牧师;德鲁伊}",
+                        "感知"
+                    ],
+                    [
+                        "天赋异禀",
+                        "{@filter 吟游诗人和魔契师|spells|class=吟游诗人;魔契师}",
+                        "魅力"
+                    ]
+                ]
+            },
+            {
+                "type": "entries",
+                "entries": [
+                    {
+                        "name": "法术位",
+                        "type": "entries",
+                        "entries": [
+                            "施法者表格中显示了协力者施展 1 环及更高环阶法术位的数量。已消耗的法术位可在完成长休后恢复。"
+                        ]
+                    },
+                    {
+                        "name": "已知法术",
+                        "type": "entries",
+                        "entries": [
+                            "协力者习得两个戏法和一个 1 环法术。秘术师进度表显示了何时习得新法术。每当协力者提升等级时，你可以用一个新的法术替换一个已知法术。"
+                        ]
+                    },
+                    {
+                        "name": "施法属性",
+                        "type": "entries",
+                        "entries": [
+                            "智力，感知或魅力是该协力者的心灵能力（取决于选取的职能）。",
+                            {
+                                "name": "法术 DC",
+                                "type": "abilityDc",
+                                "attributes": [
+                                    "施法"
+                                ]
+                            },
+                            {
+                                "name": "法术攻击",
+                                "type": "abilityAttackMod",
+                                "attributes": [
+                                    "施法"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "ENG_name": "Potent Cantrips",
+        "name": "强力戏法",
+        "source": "TCE",
+        "page": 144,
+        "className": "施法者协力者",
+        "classSource": "TCE",
+        "level": 6,
+        "entries": [
+            "施法者施展戏法造成伤害时，可以再加上施法属性调整值（至少为 0）。"
+        ]
+    },
+    {
+        "ENG_name": "Empowered Spells",
+        "name": "增强法术",
+        "source": "TCE",
+        "page": 144,
+        "className": "施法者协力者",
+        "classSource": "TCE",
+        "level": 14,
+        "entries": [
+            "选择一个魔法学派。当协力者消耗法术位施展该学派的法术时，如果法术能造成伤害或治疗生命值，它能将其施法属性调整值加到该法术的效果掷骰中。"
+        ]
+    },
+    {
+        "ENG_name": "Focused Casting",
+        "name": "专注施法",
+        "source": "TCE",
+        "page": 144,
+        "className": "施法者协力者",
+        "classSource": "TCE",
+        "level": 20,
+        "entries": [
+            "受到伤害不会打断协力者对法术的 {@status 专注}。"
+        ]
+    }
+]

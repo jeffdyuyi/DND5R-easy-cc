@@ -1,0 +1,140 @@
+{
+  "ENG_name": "Squared Circle",
+  "name": "方圆擂尊",
+  "source": "Pugilist2024",
+  "shortName": "方圆擂尊",
+  "className": "拳斗士",
+  "classSource": "Pugilist2024",
+  "subclassFeatures": [
+    {
+      "ENG_name": "Squared Circle",
+      "name": "方圆擂尊",
+      "source": "Pugilist2024",
+      "className": "拳斗士",
+      "classSource": "Pugilist2024",
+      "subclassShortName": "方圆擂尊",
+      "subclassSource": "Pugilist2024",
+      "level": 3,
+      "entries": [
+        "{@i 击倒，然后绞锁敌人}",
+        "在擂台上搏斗的拳斗士都深谙一个道理——通往胜利的最快路径是让对手认输。这些摔跤手专注于使用锁喉和关节技压制那些最强大的敌人，迫使敌人按照自己的节奏战斗。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "稳扎稳打|拳斗士|Pugilist2024|方圆擂尊|Pugilist2024|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "大肌霸|拳斗士|Pugilist2024|方圆擂尊|Pugilist2024|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Groundwork",
+      "name": "稳扎稳打",
+      "source": "Pugilist2024",
+      "className": "拳斗士",
+      "classSource": "Pugilist2024",
+      "subclassShortName": "方圆擂尊",
+      "subclassSource": "Pugilist2024",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你获得以下增益。",
+        {
+          "ENG_name": "Compression Lock",
+          "name": "高压锁绞",
+          "type": "entries",
+          "entries": [
+            "当你令一名或更多生物陷入{@condition 受擒|XPHB}下开始你的回合时，你能对{@condition 受擒|XPHB}的每名生物造成钝击伤害（无需动作）。伤害值等于掷一次你的拳斗士骰加你的力量调整值。"
+          ]
+        },
+        {
+          "ENG_name": "Inescapable",
+          "name": "无处可逃",
+          "type": "entries",
+          "entries": [
+            "当一名生物对抗你的擒抱或推撞DC进行豁免或属性检定时，你能消耗1点{@classFeature 锐气|拳斗士|Pugilist2024|2|Pugilist2024|锐气点}令其检定具有{@variantrule 劣势|XPHB}。"
+          ]
+        },
+        {
+          "ENG_name": "Stop and Drop",
+          "name": "止步而倒",
+          "type": "entries",
+          "entries": [
+            "当你以{@variantrule 徒手打击|XPHB}命中一名生物，并且没有在攻击中使用精通词条时。你能同时使用擒抱和推撞选项。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Muscle Mass",
+      "name": "大肌霸",
+      "source": "Pugilist2024",
+      "className": "拳斗士",
+      "classSource": "Pugilist2024",
+      "subclassShortName": "方圆擂尊",
+      "subclassSource": "Pugilist2024",
+      "level": 3,
+      "header": 1,
+      "skillProficiencies": [
+        {
+          "choose": {
+            "from": [
+              "特技",
+              "运动"
+            ],
+            "count": 1
+          }
+        }
+      ],
+      "entries": [
+        "选择{@skill 特技|XPHB}或{@skill 运动|XPHB}技能。若你没有选择技能的熟练，你获得其熟练，若你已获得熟练则获得其{@variantrule 专精|XPHB}。"
+      ]
+    },
+    {
+      "ENG_name": "Meat Shield",
+      "name": "肉盾",
+      "source": "Pugilist2024",
+      "className": "拳斗士",
+      "classSource": "Pugilist2024",
+      "subclassShortName": "方圆擂尊",
+      "subclassSource": "Pugilist2024",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "在你令一名生物陷入{@condition 受擒|XPHB}期间，你对抗没有被你{@variantrule 掩护|XPHB|半身掩护}的生物的攻击时获得{@variantrule 擒抱|XPHB}。当一名没被你{@variantrule 擒抱|XPHB}的生物对你进行的攻击检定失手时，你能以{@variantrule 反应|XPHB}消耗1点{@classFeature 锐气|拳斗士|Pugilist2024|2|Pugilist2024|锐气点}迫使该生物对你{@variantrule 擒抱|XPHB}的生物以新的攻击检定发动一次相同的攻击。"
+      ]
+    },
+    {
+      "ENG_name": "Heavyweight",
+      "name": "重磅拳手",
+      "source": "Pugilist2024",
+      "className": "拳斗士",
+      "classSource": "Pugilist2024",
+      "subclassShortName": "方圆擂尊",
+      "subclassSource": "Pugilist2024",
+      "level": 11,
+      "header": 2,
+      "entries": [
+        "当你使用{@variantrule 徒手打击|XPHB}的推撞或擒抱选项时，你的体型视为大一级。此外，你带动受擒者移动时，若{@condition 受擒|XPHB}生物体型不超过你，你无需额外消耗移动力。"
+      ]
+    },
+    {
+      "ENG_name": "Clean Finish",
+      "name": "利落收尾",
+      "source": "Pugilist2024",
+      "className": "拳斗士",
+      "classSource": "Pugilist2024",
+      "subclassShortName": "方圆擂尊",
+      "subclassSource": "Pugilist2024",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "当一名因你{@condition 受擒|XPHB}的生物结束其回合时，你能{@variantrule 反应|XPHB}迫使其进行一次对抗你擒抱逃脱DC的体质豁免，否则陷入{@condition 失能|XPHB}状态直至其下个回合结束。若该生物处于{@status 浴血|XPHB}且已因该特性陷入{@condition 失能|XPHB}，其改为将{@variantrule 生命值|XPHB}降至0。",
+        "一旦你以该特性将一名生物的{@variantrule 生命值|XPHB}降至0，直至完成{@variantrule 长休|XPHB}你都无法再次使用该特性。"
+      ]
+    }
+  ],
+  "hasFluffImages": true,
+  "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Icons/Squared Circle.webp"
+}

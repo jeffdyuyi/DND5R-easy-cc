@@ -1,0 +1,37 @@
+[
+  {
+    "ENG_name": "Quaal's Feather Token, Fan",
+    "name": "夸尔羽符，扇",
+    "source": "XDMG",
+    "page": 290,
+    "srd52": "羽符，扇",
+    "basicRules2024": true,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这枚物件看上去像一根羽毛。",
+      "如果你在小艇或船只上，你可以执行{@action 魔法|XPHB}动作将羽符抛至10尺高的空中。羽符将消失，一把巨大的扇子取而代之。这把扇子会漂浮并制造一股强风。强风会吹满帆船的风帆，使其速度增加5里/小时，持续8小时。你可以执行{@action 魔法|XPHB}动作将扇子遣散。"
+    ],
+    "lootTables": [
+      "奥秘 - 非普通|XDMG",
+      "器具 - 非普通|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Quaals Feather Token (Fan).webp"
+          },
+          "width": 953,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

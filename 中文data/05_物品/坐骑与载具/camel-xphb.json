@@ -1,0 +1,16 @@
+[
+  {
+    "name": "骆驼",
+    "ENG_name": "Camel",
+    "source": "XPHB",
+    "page": 229,
+    "type": "MNT|XPHB",
+    "rarity": "none",
+    "value": 5000,
+    "basicRules2024": true,
+    "carryingCapacity": 450,
+    "speed": 50,
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

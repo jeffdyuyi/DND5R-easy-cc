@@ -1,0 +1,42 @@
+[
+  {
+    "ENG_name": "Peregrine Spear",
+    "name": "游隼之矛",
+    "source": "GriffonsSaddlebag2",
+    "page": 134,
+    "baseItem": "矛|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "rare",
+    "weight": 3,
+    "weaponCategory": "简易",
+    "property": [
+      "T",
+      "V"
+    ],
+    "range": "20/60",
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "dmg2": "1d8",
+    "bonusWeapon": "+1",
+    "entries": [
+      "你使用这把魔法矛进行的攻击检定和伤害掷骰获得+1加值。当你使用此矛进行远程攻击时，你可以说出其命令语，使武器直接朝目标飞驰而去并魔法性地积蓄动能。无论命中与否，长矛在攻击后会立即飞回你的手中。若命中，目标会因长矛每飞行5尺就额外受到{@damage 1d4}穿刺伤害，最多造成{@damage 12d4}额外伤害。这项属性一经使用，则其直至次日黎明前都无法再次使用。"
+    ],
+    "lootTables": [
+      "魔法物品表 G1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Peregrine-Spear.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

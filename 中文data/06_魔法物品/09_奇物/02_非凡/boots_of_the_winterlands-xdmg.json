@@ -1,0 +1,61 @@
+[
+  {
+    "ENG_name": "Boots of the Winterlands",
+    "name": "雪地之靴",
+    "source": "XDMG",
+    "page": 240,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-SD"
+    ],
+    "resist": [
+      "寒冷"
+    ],
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这双加绒靴子温暖且舒适。着装这双靴子期间，你获得以下增益：",
+      {
+        "ENG_name": "Cold Resistance",
+        "name": "冷冻抗性",
+        "type": "entries",
+        "entries": [
+          "你获得寒冷伤害的{@variantrule 抗性|XPHB}，并且可以在没有额外保护的情况下忍受0华氏度及以下的温度。"
+        ]
+      },
+      {
+        "ENG_name": "Winter Strider",
+        "name": "冬日行者",
+        "type": "entries",
+        "entries": [
+          "你可以无视冰雪造成的{@variantrule 困难地形|XPHB}。"
+        ]
+      }
+    ],
+    "optionalfeatures": [
+      "仿制魔法物品|TCE"
+    ],
+    "lootTables": [
+      "器具 - 非普通|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Boots of the Winterlands.webp"
+          },
+          "width": 1024,
+          "height": 1024
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Nightwatcher Potion",
+    "name": "守夜人药水",
+    "source": "CrookedMoon24",
+    "page": 616,
+    "type": "P|XPHB",
+    "rarity": "rare",
+    "entries": [
+      "饮下这瓶药水后，在接下来的24小时内，你拥有{@sense 黑暗视觉|XPHB}至120尺。在此期间，你无需睡眠，并且如果你进行{@variantrule 长休|XPHB}，你可以在整个过程中保持清醒。",
+      "这个带有蜡封瓶塞的陶瓶上绘着一只巨型角鸮的头部，瓶内的液体呈午夜蓝色。",
+      {
+        "ENG_name": "Heightened Potency",
+        "name": "强效",
+        "type": "entries",
+        "entries": [
+          "持续时间提升至72小时。"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Nightwatcher%20Potion.webp"
+          },
+          "width": 965,
+          "height": 1200,
+          "credit": "Matthew Spencer"
+        }
+      ]
+    }
+  }
+]

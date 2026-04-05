@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Kiss of the Changebringer (Dormant)",
+    "name": "万变使者之吻（休眠）",
+    "source": "TalDoreiCampaignSettingReborn",
+    "page": 206,
+    "conditionImmune": [
+      "受擒"
+    ],
+    "rarity": "legendary",
+    "reqAttune": true,
+    "wondrous": true,
+    "property": [
+      "Vst|EGW"
+    ],
+    "bonusSavingThrow": "+1",
+    "entries": [
+      "一条镶嵌着美丽闪耀翡翠的银链，蕴含着力量与可能。据说这条护符是从{@deity 万变使者|艾桑椎亚|TalDoreiCampaignSettingReborn}的脖子上被{@deity 地狱之主|艾桑椎亚|TalDoreiCampaignSettingReborn}偷走，并锁在{@book 荒洲|TalDoreiCampaignSettingReborn|3|荒洲}巴佐赞的地窖中。后来被一队奥罗拉守卫士兵在那座阴森堡垒废弃神庙的探险中夺得。",
+      {
+        "ENG_name": "Dormant",
+        "name": "休眠",
+        "type": "entries",
+        "entries": [
+          "当变革使者之吻处于休眠状态时，佩戴它时你对{@quickref 豁免检定|PHB|2|1}有+1的加值，并且对{@condition 受擒}状态免疫。"
+        ]
+      }
+    ],
+    "hasFluffImages": true
+  }
+]

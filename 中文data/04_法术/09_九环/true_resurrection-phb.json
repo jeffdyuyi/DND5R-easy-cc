@@ -1,0 +1,61 @@
+[
+  {
+    "ENG_name": "True Resurrection",
+    "name": "完全复生术",
+    "source": "PHB",
+    "page": 284,
+    "srd": true,
+    "basicRules": true,
+    "referenceSources": [
+      "BGDIA"
+    ],
+    "reprintedAs": [
+      "完全复生术|XPHB"
+    ],
+    "level": 9,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "小时"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "少量圣水和至少价值 25000gp 的钻石，作为该法术的耗材",
+        "cost": 2500000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你触碰一个已死的生物使其复活。该生物的死亡时间必须不超过 200 年，且死因不能是老死。如果该生物的灵魂愿意并且能够回到其身体中，则它将以生命值全满的状态复活。",
+      "该法术能治愈所有致命伤，中和一切毒素与疾病，并解除其生前所受的一切诅咒。该法术甚至能恢复其损伤或失去的器官和肢体。若生物曾经是不死生物，则它恢复至其非不死生物形态。",
+      "如果受术生物的遗体已经不再存在，该法术甚至能给它再造一个新的身体。此时，你必须喊出该生物的名字，随后该生物便出现在你指定点周围 10 尺内一处未被占据的空间。"
+    ],
+    "miscTags": [
+      "HL"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师",
+      "德鲁伊"
+    ],
+    "display_school": "死灵系"
+  }
+]

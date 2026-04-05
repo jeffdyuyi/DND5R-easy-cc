@@ -1,0 +1,64 @@
+[
+  {
+    "ENG_name": "Darkvision",
+    "name": "黑暗视觉",
+    "source": "PHB",
+    "page": 230,
+    "srd": true,
+    "referenceSources": [
+      "CoS",
+      "SKT",
+      "TftYP-DiT",
+      "WDH",
+      "WDMM",
+      "IDRotF",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "黑暗视觉|XPHB"
+    ],
+    "level": 2,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一点胡萝卜干或一个玛瑙"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 8
+        }
+      }
+    ],
+    "entries": [
+      "你触碰一个自愿的生物，并给予其在黑暗中视物的能力。在法术持续时间内，该生物将拥有 60 尺的{@sense 黑暗视觉}。"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊",
+      "游侠",
+      "术士",
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "变化系"
+  }
+]

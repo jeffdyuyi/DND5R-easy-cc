@@ -1,0 +1,52 @@
+[
+  {
+    "ENG_name": "Condemner (Dormant)",
+    "name": "谴罪者（休眠）",
+    "source": "TalDoreiCampaignSettingReborn",
+    "page": 204,
+    "baseItem": "重弩|PHB",
+    "type": "R",
+    "rarity": "legendary",
+    "reqAttune": true,
+    "weight": 18,
+    "weaponCategory": "军用",
+    "property": [
+      "A",
+      "H",
+      "LD",
+      "2H",
+      "Vst|EGW"
+    ],
+    "range": "100/400",
+    "dmg1": "1d10",
+    "dmgType": "P",
+    "bonusWeapon": "+1",
+    "recharge": "restShort",
+    "entries": [
+      "这把影界触碰的{@item 重弩|PHB}曾是传奇刺客托多拉的惯用武器。虽然鲜为人知，但谴罪者现在被同样臭名昭著的刺客{@book 伊斯拉图·卡尔|TalDoreiCampaignSettingReborn|2|伊斯拉图·卡尔}所持有。",
+      {
+        "ENG_name": "Dormant",
+        "name": "休眠",
+        "type": "entries",
+        "entries": [
+          "当Condemner处于休眠状态时，你使用这把魔法武器进行攻击和伤害骰时获得+1的加值。当你使用这个武器命中攻击时，目标会额外受到{@damage 1d4}的毒素伤害。",
+          "此外，如果你使用这个武器命中攻击，你可以激活以下效果之一，而不是造成伤害：",
+          {
+            "type": "list",
+            "items": [
+              "你以目标的位置为中心施放了{@spell 云雾术}。",
+              "你以目标的位置为中心施放了{@spell 沉默术}。"
+            ]
+          },
+          "当一个效果被使用后，在完成一次{@quickref 休息|PHB|2|0|短休或长休}之前，它不能再次使用。"
+        ]
+      }
+    ],
+    "ammoType": "弩矢|PHB",
+    "attachedSpells": [
+      "云雾术",
+      "沉默术"
+    ],
+    "hasFluffImages": true
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Potion of Advantage",
+    "name": "优势药水",
+    "source": "WBtW",
+    "page": 212,
+    "type": "P",
+    "rarity": "uncommon",
+    "entries": [
+      "当你喝下这瓶药水时，你可以在接下来的一小时内进行的任意一项属性检定、攻击检定或豁免检定中获得优势。",
+      "这瓶药水呈现出闪亮的金色雾气，像水一样流动和倾倒。"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "valueReference": 200
+  }
+]

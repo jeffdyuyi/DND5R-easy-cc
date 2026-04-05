@@ -1,0 +1,52 @@
+[
+  {
+    "ENG_name": "Nobblewort",
+    "name": "诺布尔沃特",
+    "source": "ObojimaTallGrass",
+    "page": 205,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 3|large}|SneakerProMedium}",
+            "{@font {@style 1|large}|SneakerProMedium}",
+            "{@font {@style 2|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "诺布尔沃特是一种相当常见的苔藓，其凹凸不平的质地赋予了它这个名字。你经常可以看到许多村庄房屋的屋檐下悬挂着一束诺布尔沃特，据说它能驱散厄运和调皮的精魄。诺布尔沃特可以在岛屿上大多数落叶树上找到。"
+    ],
+    "lootTables": [
+      "狂风农田普通原料|ObojimaTallGrass",
+      "舒里塔希的赠礼 普通原料|ObojimaTallGrass",
+      "阿伯拉山普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/nobblewort.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 2729,
+          "height": 2729
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "ENG_name": "Bubble Lift",
+    "name": "升腾泡泡",
+    "source": "ObojimaTallGrass",
+    "page": 182,
+    "level": 1,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你在任何重量不超过500磅的固体、颗粒或液体物件周围吹出一个气泡，使其悬浮在离地面4尺的高度。无论气泡的内容是什么，气泡的重量都是10磅，可以使用一个动作来推离。强风或能推离生物的效应也会推离气泡。气泡总是至少悬浮在离地面4尺的高度，并以每轮10尺的速度从高处下降。",
+      "作为一个动作，一个生物可以刺破气泡的外层，使其破裂并释放其内容物。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用2环或更高法术位施放该法术时，气泡可提升的重量每比1环高一环就增加500磅。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Custom/Spells/Bubble%20Lift.webp"
+  }
+]

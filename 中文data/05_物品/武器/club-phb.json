@@ -1,0 +1,31 @@
+[
+  {
+    "name": "短棒",
+    "ENG_name": "Club",
+    "source": "PHB",
+    "page": 149,
+    "edition": "classic",
+    "type": "M",
+    "rarity": "none",
+    "weight": 2,
+    "value": 10,
+    "weaponCategory": "simple",
+    "property": [
+      "L"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "B",
+    "basicRules": true,
+    "club": true,
+    "referenceSources": [
+      "WDH",
+      "GoS",
+      "KftGV"
+    ],
+    "reprintedAs": [
+      "短棒|XPHB"
+    ],
+    "srd": true,
+    "weapon": true
+  }
+]

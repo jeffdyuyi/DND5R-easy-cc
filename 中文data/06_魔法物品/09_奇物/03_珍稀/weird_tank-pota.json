@@ -1,0 +1,33 @@
+[
+  {
+    "ENG_name": "Weird Tank",
+    "name": "诡异水罐",
+    "source": "PotA",
+    "page": 223,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "怪异水箱是一个由吹制玻璃和雕刻青铜制成的十加仑水箱，配有一个背包式的携带装置，由坚韧的皮革制成。水箱内包含一个{@creature 水诡}。佩戴水箱时，你可以使用一个动作打开它，让{@creature 水诡}出现。{@creature 水诡}在行动顺序中紧跟在你之后行动，并且它与水箱绑定在一起。",
+      "当你佩戴水箱时，你可以用心灵感应命令{@creature 水诡}（无需动作）。只有当你首先命令{@creature 水诡}收缩回水箱中，或者{@creature 水诡}已死亡时，你才能作为动作关闭水箱。",
+      "如果{@creature 水诡}被杀，水箱将失去其魔法束缚特性，直到它在元素水节点中至少停留24小时。当水箱重新充能时，一个新的{@creature 水诡}将在其中形成。",
+      "水箱的护甲等级为15，有50点生命值，对钝击伤害有弱点，并对毒素和心灵伤害免疫。将水箱的生命值减少到0会摧毁它以及其中包含的{@creature 水诡}。"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/PotA/Weird Tank.webp"
+          },
+          "width": 676,
+          "height": 850
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

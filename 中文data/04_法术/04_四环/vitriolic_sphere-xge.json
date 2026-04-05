@@ -1,0 +1,79 @@
+[
+  {
+    "ENG_name": "Vitriolic Sphere",
+    "name": "浓酸球",
+    "source": "XGE",
+    "page": 170,
+    "otherSources": [
+      {
+        "source": "EEPC",
+        "page": 23
+      }
+    ],
+    "referenceSources": [
+      "PotA"
+    ],
+    "reprintedAs": [
+      "浓酸球|XPHB"
+    ],
+    "level": 4,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 150
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一滴巨型蜗牛的胆汁"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你指定距离之内的一点，一颗发光的 1 尺直径的强酸球飞向那个位置，爆炸并溅射 20 尺半径内的球形区域。在该区域中的每个生物必须进行一次敏捷豁免。豁免失败的生物不仅将受到{@damage 10d4}点强酸伤害，其下个回合结束时还将再受到{@damage 5d4}点强酸伤害。若豁免成功，该生物只受到初始伤害的一半且不会在其下个回合结束时受到伤害。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用五环或更高的法术位施放该法术时，使用的法术位每高一环，初始伤害便增加{@scaledamage 10d4|4-9|2d4}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "acid"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "areaTags": [
+      "S"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "法师"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "敏捷"
+    ],
+    "display_damageInflict": [
+      "强酸"
+    ]
+  }
+]

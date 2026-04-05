@@ -1,0 +1,64 @@
+[
+  {
+    "ENG_name": "Slow",
+    "name": "缓慢术",
+    "source": "XPHB",
+    "page": 318,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 3,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一滴糖浆"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你在施法距离内一处 40 尺{@variantrule 立方 [效应区域]|XPHB|立方}区域内指定至多六个生物并扭曲其周围的时间流。每个目标都要进行一次感知豁免，豁免失败则受到该法术影响直至法术终止。",
+      "被影响的生物的{@variantrule 速度|XPHB}减半，而其 AC 和敏捷豁免都获得-2减值，且不能执行反应。该生物在其回合中仅可以执行一个动作或一个{@variantrule 附赠动作|XPHB}，但不能同时执行二者。且当它执行{@action 攻击|XPHB}动作时，它只能发动一次攻击。如果该生物尝试施展一个具有姿势成分的法术，则其法术有{@chance 25|||法术失败了！|该法术不会失败。}的概率会因为生物的动作太慢而施展失败。",
+      "受术生物在其每个回合结束时可以再进行一次该感知豁免，豁免成功则终止其身上的该法术效应。"
+    ],
+    "savingThrow": [
+      "wisdom"
+    ],
+    "miscTags": [
+      "MAC"
+    ],
+    "areaTags": [
+      "C",
+      "MT"
+    ],
+    "classes": [
+      "吟游诗人",
+      "术士",
+      "法师"
+    ],
+    "display_school": "变化系",
+    "display_savingThrow": [
+      "感知"
+    ]
+  }
+]

@@ -1,0 +1,85 @@
+[
+  {
+    "ENG_name": "Evard's Black Tentacles",
+    "name": "艾伐黑触手",
+    "source": "PHB",
+    "page": 238,
+    "srd": "黑触手",
+    "referenceSources": [
+      "HotDQ",
+      "OotA",
+      "SKT",
+      "WDMM",
+      "LR",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "艾伐黑触手|XPHB"
+    ],
+    "level": 4,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 90
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一根来自巨章鱼或巨鱿鱼的触手"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你指定一处施法距离内你能看见的 20 尺方形区域，使其内布满蠕动的乌黑触须，进而使该区域成为{@quickref 困难地形||3}。",
+      "任何生物在一个回合内第一次进入该区域，或者在区域内开始其回合时，必须进行一次敏捷豁免。豁免失败者将受到 {@damage 3d6} 点钝击伤害，并且被触须{@condition 束缚}直至法术终止。生物在区域内开始其回合时，如果已受触须{@condition 束缚}则受到 {@damage 3d6} 点钝击伤害。",
+      "受触须{@condition 束缚}的生物可以使用动作进行一次对抗法术豁免 DC 的力量检定或敏捷检定（自选其一），检定成功则挣脱束缚。"
+    ],
+    "damageInflict": [
+      "bludgeoning"
+    ],
+    "conditionInflict": [
+      "束缚"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "abilityCheck": [
+      "力量",
+      "敏捷"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "areaTags": [
+      "Q"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "法师"
+    ],
+    "display_school": "咒法系",
+    "display_savingThrow": [
+      "敏捷"
+    ],
+    "display_damageInflict": [
+      "钝击"
+    ]
+  }
+]

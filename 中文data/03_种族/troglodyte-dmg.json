@@ -1,0 +1,85 @@
+[
+  {
+    "name": "穴蜥人",
+    "ENG_name": "Troglodyte",
+    "source": "DMG",
+    "page": 282,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "str": 2,
+        "con": 2,
+        "int": -4,
+        "cha": -4
+      }
+    ],
+    "darkvision": 60,
+    "traitTags": [
+      "天生护甲",
+      "NPC种族",
+      "日照敏感"
+    ],
+    "languageProficiencies": [
+      {
+        "other": true
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Chameleon Skin",
+        "name": "变色皮肤",
+        "type": "entries",
+        "entries": [
+          "你为躲藏而作的敏捷（{@skill 隐匿}）检定具有优势。"
+        ]
+      },
+      {
+        "ENG_name": "Stench",
+        "name": "恶臭",
+        "type": "entries",
+        "entries": [
+          "任何非穴蜥人的生物在其自己回合开始时若处于你5尺范围内，必须成功通过一次{@dc 12}的体质豁免否则将陷入{@condition 中毒}状态，直到该生物的下个回合开始。若豁免成功，该生物将在1小时内免疫所有穴蜥人的恶臭。"
+        ]
+      },
+      {
+        "ENG_name": "Sunlight Sensitivity",
+        "name": "日照敏感",
+        "type": "entries",
+        "entries": [
+          "处于日照下时，你的攻击检定具有劣势，依赖视觉的感知（{@skill 察觉}）检定也具有劣势。"
+        ]
+      },
+      {
+        "ENG_name": "Natural Armor",
+        "name": "天生护甲",
+        "entries": [
+          "你厚实的皮肤使你的护甲等级获得+1加值。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Darkvision",
+        "name": "黑暗视觉",
+        "entries": [
+          "你在60尺范围内的微光光照下视物视为明亮光照，60尺黑暗下视物视为微光光照。你无法在黑暗中分辨颜色，只能看到灰色轮廓。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Languages",
+        "name": "语言",
+        "entries": [
+          "你可以说、读、写穴蜥人语。"
+        ],
+        "type": "entries"
+      }
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/troglodyte.mp3"
+    }
+  }
+]

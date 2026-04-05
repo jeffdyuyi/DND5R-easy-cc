@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Hurler's Gloves",
+    "name": "投掷者手套",
+    "source": "ObojimaTallGrass",
+    "page": 172,
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "当你佩戴这双粗糙的手套时，你在使用投掷武器时获得+2的伤害掷骰加值。此外，武器的投掷距离增加15尺。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/hurlers-gloves.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 1937,
+          "height": 1937
+        }
+      ]
+    }
+  }
+]

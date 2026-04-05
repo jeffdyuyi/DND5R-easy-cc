@@ -1,0 +1,132 @@
+{
+  "race": [
+    {
+      "ENG_name": "Wechselkind",
+      "name": "枉替之子",
+      "source": "GrimHollowPG24",
+      "page": 28,
+      "edition": "one",
+      "creatureTypes": [
+        "类人生物"
+      ],
+      "size": [
+        "S"
+      ],
+      "speed": 30,
+      "sizeEntry": {
+        "ENG_name": "Size:",
+        "name": "体型：",
+        "type": "item",
+        "entries": [
+          "小型（枉替之子身高2至3尺，体重35至55磅。）"
+        ]
+      },
+      "speedEntry": {
+        "ENG_name": "Speed:",
+        "name": "速度：",
+        "type": "item",
+        "entries": [
+          "30尺。你可以将你的{@variantrule 速度|XPHB}缩小5尺以获得一个额外的传统特质。"
+        ]
+      },
+      "entries": [
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "ENG_name": "Age:",
+              "name": "年龄：",
+              "type": "item",
+              "entries": [
+                "枉替之子不会像正常生物那样衰老，永远被困在他们造物术创造的娃娃般的容貌中。他们的最大年龄是自然磨损和伤害的函数，并且他们对魔法衰老效应免疫。"
+              ]
+            }
+          ]
+        },
+        {
+          "ENG_name": "Traditional Wechselkind Traits",
+          "name": "传统换生灵特性",
+          "type": "inset",
+          "entries": [
+            "魔法与人工的自然塑造了所有枉替之子的天赋与内在特性。",
+            {
+              "ENG_name": "Combat Traits:",
+              "name": "战斗特质：",
+              "type": "entries",
+              "entries": [
+                {
+                  "type": "list",
+                  "items": [
+                    "{@optfeature 生物掩护|GrimHollowPG24}",
+                    "{@optfeature 魔法要塞|GrimHollowPG24}"
+                  ]
+                }
+              ]
+            },
+            {
+              "ENG_name": "Exploration Traits:",
+              "name": "探索特质：",
+              "type": "entries",
+              "entries": [
+                {
+                  "type": "list",
+                  "items": [
+                    "{@optfeature 人造之物|GrimHollowPG24}",
+                    "{@optfeature 援手|GrimHollowPG24}",
+                    "{@optfeature 穿过|GrimHollowPG24}"
+                  ]
+                }
+              ]
+            },
+            {
+              "ENG_name": "Roleplaying Traits:",
+              "name": "扮演特质：",
+              "type": "entries",
+              "entries": [
+                {
+                  "type": "list",
+                  "items": [
+                    "{@optfeature 魔法精通|GrimHollowPG24|魔法大师} ({@spell 易容术|XPHB})",
+                    "{@optfeature 魔法精通|GrimHollowPG24} ({@spell 次级幻象|XPHB})",
+                    "{@optfeature 直觉杂技演员|GrimHollowPG24}"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "entries": [
+            {
+              "ENG_name": "Trait Selection",
+              "name": "特质选择",
+              "type": "entries",
+              "entries": [
+                "选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|特性 类型=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
+              ]
+            }
+          ]
+        }
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "subraces": [],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Race/Wechselkind.webp"
+            },
+            "credit": "Suzanne Helmigh",
+            "width": 850,
+            "height": 1549
+          }
+        ]
+      }
+    }
+  ]
+}

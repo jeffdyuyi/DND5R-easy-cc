@@ -1,0 +1,78 @@
+[
+  {
+    "ENG_name": "Acid Rain",
+    "name": "酸雨术",
+    "source": "GuideDrakkenheim",
+    "page": 191,
+    "level": 5,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 150
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一撮硫磺和煤粉"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "法术终止前，强酸雨会降落在以施法范围内某一点为中心、半径40尺、高40尺的柱状区域内。该区域为轻度遮蔽，区域内暴露的火焰将被浇灭。",
+      "化学池在区域内地面累积，使其成为困难地形。当一个生物在回合中首次进入法术区域或在其内开始回合时，它将受到{@damage 3d6}强酸伤害并且必须进行一次敏捷豁免检定。若豁免失败，它会在池中{@condition 倒地}，并受到额外的{@damage 3d6}强酸伤害。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用6环或更高法术位施放该法术时，每比5环高一级，强酸伤害就增加{@dice 1d6}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "强酸"
+    ],
+    "conditionInflict": [
+      "倒地"
+    ],
+    "savingThrow": [
+      "敏捷"
+    ],
+    "miscTags": [
+      "OBS"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    }
+  }
+]

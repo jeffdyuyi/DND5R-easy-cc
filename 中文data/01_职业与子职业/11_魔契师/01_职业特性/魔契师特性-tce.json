@@ -1,0 +1,24 @@
+[
+    {
+        "ENG_name": "Eldritch Versatility",
+        "name": "替换魔能",
+        "source": "TCE",
+        "page": 70,
+        "className": "魔契师",
+        "classSource": "PHB",
+        "level": 4,
+        "isClassFeatureVariant": true,
+        "entries": [
+            "{@i 4 级魔契师 {@variantrule 可选职业特性|TCE|可选特性}}",
+            "当你达到 4 级并获得属性值提升特性时，你可以吸收宗主的魔力并使其产生变化。你可以：",
+            {
+                "type": "list",
+                "items": [
+                    "将一个魔契师戏法替换为魔契师法术列表中的另一个戏法。",
+                    "将第 3 级获得的 {@subclassFeature 魔契恩泽|魔契师|PHB|3} 选项替换为另一个。",
+                    "如果你正处于 12 级或更高等级，你可以将一项 {@subclassFeature 玄奥秘法|魔契师|PHB|11} 替换为相同环阶的另一个魔契师法术。"
+                ]
+            }
+        ]
+    }
+]

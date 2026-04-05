@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "Bellhop Topper",
+    "name": "行李员礼帽",
+    "source": "GriffonsSaddlebag2",
+    "page": 44,
+    "tier": "次要",
+    "rarity": "common",
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "这顶深紫色的礼帽上环绕着一圈天鹅绒缎带并有皮带固定。这顶帽子有3充能，并在每日黎明时重获{@dice 1d3}已消耗的充能。你可以用一个动作消耗帽子的1充能并说出它的命令语，并将其扔到自身5尺范围内的空地上。当你这样做时，帽子会魔法性地地变平并膨胀成一个直径3尺、厚1寸的紫色圆盘。圆盘具有{@spell 谭森浮碟术|PHB|浮碟术}的效果，但圆盘并不透明，且保持在你的10尺内而非20尺。你可以用一个动作再次说出帽子的命令语来提前结束该法术。当法术结束时，圆盘会变回帽子。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "谭森浮碟术"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表 B2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Bellhop-Topper.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

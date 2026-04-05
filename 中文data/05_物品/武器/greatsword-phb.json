@@ -1,0 +1,27 @@
+[
+  {
+    "name": "巨剑",
+    "ENG_name": "Greatsword",
+    "source": "PHB",
+    "page": 149,
+    "edition": "classic",
+    "type": "M",
+    "rarity": "none",
+    "weight": 6,
+    "value": 5000,
+    "weaponCategory": "martial",
+    "property": [
+      "H",
+      "2H"
+    ],
+    "dmg1": "2d6",
+    "dmgType": "S",
+    "basicRules": true,
+    "reprintedAs": [
+      "巨剑|XPHB"
+    ],
+    "srd": true,
+    "sword": true,
+    "weapon": true
+  }
+]

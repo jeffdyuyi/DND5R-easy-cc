@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Tempest Griffon Bracers",
+    "name": "风暴狮鹫臂环",
+    "source": "GriffonsSaddlebag2",
+    "page": 174,
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "当你戴着这对涂油并镶嵌着魔法狮鹫羽毛的臂环期间，你的速度增加5尺。",
+      "此外，你可以使用一个动作说出臂环的命令语，消失在一团火花和羽毛之中。选择你可见的至多3个位于你周围60尺内的不同生物。你对每个目标进行一次近战武器攻击，你在进行攻击前会短暂出现在每个目标旁边。若命中，目标受到额外{@damage 2d8}闪电伤害；若未命中，则受到一半的闪电伤害。随后你可以传送到你能看见的一个目标5尺内的未被占据空间，或返回你原来的位置，在电光、羽毛和风的华丽特效中重新出现。臂环的这项词条一旦使用后，直到下一个黎明之前都无法再次使用。"
+    ],
+    "lootTables": [
+      "魔法物品表 G2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Tempest-Griffon-Bracers.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

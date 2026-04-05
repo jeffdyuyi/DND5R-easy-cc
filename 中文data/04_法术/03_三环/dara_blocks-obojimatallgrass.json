@@ -1,0 +1,74 @@
+[
+  {
+    "ENG_name": "Dara Blocks",
+    "name": "达良之块",
+    "source": "ObojimaTallGrass",
+    "page": 184,
+    "level": 3,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一钳击的沙子和一个陶器碎片"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你创造出五个1尺见方的魔法力场立方，称为达良之块。每个达良之块出现在你指定范围内不同的未占据空间，并魔法般地固定在原地。这些方块对所有生物都是{@condition 隐形}的，除了你和你在施放法术时指定的任何生物。能看见达良之块的生物（包括受益于识破隐形或{@sense 真实视觉}的生物）会看到一个由透明深绿色光亮构成的发光立方体。",
+      "固定在空中的达良之块可以承载最多5,000磅的重量。更大的重量会导致该块坠落。一个生物可以使用一个动作进行一次力量检定对抗你的法术豁免DC，成功时可将固定的块移动最多10尺。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用4环或更高法术位施放该法术时，每比3环高一级的法术位环阶可以额外创造二块达良之块。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "abilityCheck": [
+      "力量"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Custom/Spells/Dara%20Blocks.webp"
+  }
+]

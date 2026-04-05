@@ -1,0 +1,53 @@
+[
+  {
+    "ENG_name": "Barkskin",
+    "name": "树肤术",
+    "source": "XPHB",
+    "page": 245,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 2,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一把橡树树皮"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你触碰一个自愿生物。直到法术终止前，目标的皮肤呈现出树皮样的外貌，并且若目标{@variantrule 护甲等级|XPHB}低于17，则其AC变为17。"
+    ],
+    "miscTags": [
+      "MAC"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊",
+      "游侠"
+    ],
+    "display_school": "变化系"
+  }
+]

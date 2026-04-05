@@ -1,0 +1,20 @@
+[
+  {
+    "ENG_name": "Drive Shaft",
+    "name": "驾驶轴",
+    "source": "ObojimaTallGrass",
+    "page": 159,
+    "type": "M",
+    "rarity": "none",
+    "weight": 20,
+    "value": 10000,
+    "weaponCategory": "军用",
+    "property": [
+      "H",
+      "2H"
+    ],
+    "dmg1": "3d4",
+    "dmgType": "B",
+    "weapon": true
+  }
+]

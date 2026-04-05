@@ -1,0 +1,98 @@
+[
+  {
+    "ENG_name": "Ranseur of Torture",
+    "name": "酷刑三叉矛",
+    "source": "CoA",
+    "page": 273,
+    "baseItem": "长矛|PHB",
+    "type": "M",
+    "rarity": "artifact",
+    "reqAttune": true,
+    "weight": 18,
+    "weaponCategory": "martial",
+    "property": [
+      "H",
+      "R",
+      "2H"
+    ],
+    "dmg1": "1d10",
+    "dmgType": "P",
+    "bonusWeapon": "+3",
+    "entries": [
+      "折磨长矛是由地狱铁和地狱火锻造而成，借助于迪斯帕特（Dispater）的帮助，自从贝利亚（Belial）第一次成为大恶魔以来，它一直是他的首选武器。",
+      "它与他直接相关，以至于他被崇拜的一个象征是两齿叉。这个武器从不离开他的身边，他是使用它的大师。",
+      "折磨长矛是一件魔法长矛。使用这件武器进行攻击和伤害检定时，你有+3的加值，并且它造成{@damage 2d10}穿刺伤害，而不是其常规伤害。当你用它击中一个善良阵营的生物时，那个生物会额外受到{@damage 1d10}暗蚀伤害。",
+      {
+        "ENG_name": "Random Properties",
+        "name": "随机词条",
+        "type": "entries",
+        "entries": [
+          "折磨长矛具有以下随机属性：",
+          {
+            "type": "list",
+            "items": [
+              "1项{@table 神器词条; 次要增益词条|DMG|次要增益}属性",
+              "一个{@table 神器词条; 主要增益词条|DMG|主要增益}属性",
+              "1项{@table 神器词条; 次要减益词条|DMG|次要减益}属性"
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Wounding",
+        "name": "致伤",
+        "type": "entries",
+        "entries": [
+          "酷刑戟造成的损伤特别危险，因为它只能通过魔法手段恢复。休息、食物和药物无法恢复被长矛移除的生命值。如果损伤在7天内未得到治疗，缺失的生命值将被永久移除，只能通过对受害者施放{@spell 再生术}或{@spell 祈愿术}法术来恢复。"
+        ]
+      },
+      {
+        "ENG_name": "Execution",
+        "name": "处刑",
+        "type": "entries",
+        "entries": [
+          "如果一个生物的生命值没有达到全满并且被这把长矛击中，痛苦长矛会额外造成{@dice 1d10}点穿刺伤害。如果一个生物被长矛杀死，他们的灵魂将被送往弗莱格索斯，并且只能通过在受害者身上施放一个{@spell 祈愿术}法术来恢复。"
+        ]
+      },
+      {
+        "ENG_name": "Staggered",
+        "name": "震撼猛击",
+        "type": "entries",
+        "entries": [
+          "每当一个生物受到折磨长矛的伤害时，他们必须进行一次体质豁免，豁免难度等于他们所受的伤害。豁免失败，他们的移动速度在他们下一回合结束前减少5尺。这个惩罚可以叠加，尽管移动速度不能减少到0以下。"
+        ]
+      },
+      {
+        "ENG_name": "Interrupting",
+        "name": "打断",
+        "type": "entries",
+        "entries": [
+          "被酷刑戟伤害的施法者在维持{@status 专注||专注于}的体质检定时具有劣势，直到损伤被治愈。如果一个生物在被戟伤害时正在{@status 专注}施放法术，他们的{@status 专注}会立即结束。"
+        ]
+      },
+      {
+        "ENG_name": "Destroying the Ranseur",
+        "name": "摧毁三叉矛",
+        "type": "entries",
+        "entries": [
+          "只有通过迪斯帕特和贝利亚双方的书面同意，折磨长矛才能被摧毁。如果这两位大恶魔中的任何一位或两位都已死亡，那么继承他们位置的新大恶魔必须代替他们给予许可。两个法令必须分别包裹在武器的每个尖刺上，然后将武器投入火焰坑中。如果成功执行，地狱火会短暂地燃烧出不同的色调。"
+        ]
+      }
+    ],
+    "hasFluffImages": true,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/CoA/Ranseur of Torture.webp"
+          },
+          "credit": "Aaron Sims",
+          "width": 1568,
+          "height": 450
+        }
+      ]
+    }
+  }
+]

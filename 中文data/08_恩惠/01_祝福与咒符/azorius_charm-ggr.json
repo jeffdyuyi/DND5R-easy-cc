@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Azorius Charm",
+    "name": "俄佐立护符",
+    "source": "GGR",
+    "page": 173,
+    "type": "Charm",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "limited": {
+              "1": [
+                "定身类人#3",
+                "命令术",
+                "法术反制"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "entries": [
+      "当你启动此护符时，你可以施放{@spell 定身类人}（3环版本）、{@spell 命令术}或{@spell 法术反制}法术。护符在你启动后即消失。"
+    ]
+  }
+]

@@ -1,0 +1,105 @@
+[
+  {
+    "ENG_name": "Curse of Crushing Sensation",
+    "name": "粉碎感知诅咒",
+    "source": "GrimHollowPG24",
+    "page": 211,
+    "level": 6,
+    "school": "E",
+    "subschools": [
+      "影钢诅咒"
+    ],
+    "time": [
+      {
+        "number": 1,
+        "unit": "小时"
+      }
+    ],
+    "range": {
+      "type": "special"
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一滴目标的鲜血、一片丝绸材质和一个价值1000+ GP的号角，所有这些都会被法术消耗",
+        "cost": 100000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "permanent",
+        "ends": [
+          "治愈"
+        ]
+      }
+    ],
+    "entries": [
+      "这个法术诅咒一个生物，使其对物理感觉产生痛苦的过敏反应。目标必须进行一次体质豁免检定。",
+      {
+        "ENG_name": "Successful Saving Throw",
+        "name": "成功豁免检定",
+        "type": "entries",
+        "entries": [
+          "成功豁免时，目标受到{@damage 4d6}雷鸣伤害并意识到自己被诅咒了。1分钟内，目标在其每回合开始时受到{@damage 1d6}雷鸣伤害。"
+        ]
+      },
+      {
+        "ENG_name": "Initial Effect",
+        "name": "初始效应",
+        "type": "entries",
+        "entries": [
+          "豁免失败时，目标受到{@damage 8d10}雷鸣伤害并被诅咒。"
+        ]
+      },
+      {
+        "ENG_name": "Triggering Event",
+        "name": "触发事件",
+        "type": "entries",
+        "entries": [
+          "下一次目标听到响亮响声时，它会感到剧烈的头痛，并且诅咒会提升至阶段 1。"
+        ]
+      },
+      {
+        "ENG_name": "Stage 1",
+        "name": "阶段 1",
+        "type": "entries",
+        "entries": [
+          "被诅咒的生物避开{@variantrule 明亮光照|XPHB}、响亮的响声、极限的温度，并且不喜欢被触碰。"
+        ]
+      },
+      {
+        "ENG_name": "Stage 2",
+        "name": "阶段 2",
+        "type": "entries",
+        "entries": [
+          "被诅咒的生物无法忍受粗糙或重型衣物接触皮肤的感觉。它无法穿戴护甲。由于过度敏感，它对雷鸣伤害具有{@variantrule 易伤|XPHB}。此外，如果它或目标处于{@variantrule 劣势|XPHB}区域，它在攻击检定上具有{@variantrule 明亮光照|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Stage 3",
+        "name": "阶段 3",
+        "type": "entries",
+        "entries": [
+          "即使是轻微的感觉输入对受诅咒的生物也变得难以忍受。它被迫寻找一个黑暗而安静的巢穴，例如深地洞穴或地下城。受诅咒的生物无法自愿离开这个巢穴，并且在巢穴外时对所有伤害（心灵伤害除外）具有{@variantrule 易伤|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Culmination",
+        "name": "巅峰",
+        "type": "entries",
+        "entries": [
+          "被诅咒的生物扭曲成一个畸形的形象，并成为一个无目苦刑者。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "雷鸣"
+    ],
+    "savingThrow": [
+      "体质"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Curse%20of%20Crushing%20Sensation.webp"
+  }
+]

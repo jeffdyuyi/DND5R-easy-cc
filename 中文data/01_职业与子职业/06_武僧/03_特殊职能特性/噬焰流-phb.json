@@ -1,0 +1,43 @@
+{
+  "ENG_name": "River of Hungry Flame",
+  "name": "噬焰流",
+  "source": "PHB",
+  "page": 81,
+  "featureType": [
+    "ED"
+  ],
+  "prerequisite": [
+    {
+      "level": {
+        "level": 17,
+        "class": {
+          "ENG_name": "Monk",
+          "name": "武僧"
+        },
+        "subclass": {
+          "ENG_name": "Four Elements",
+          "name": "四象"
+        }
+      }
+    }
+  ],
+  "additionalSpells": [
+    {
+      "innate": {
+        "_": {
+          "resource": {
+            "5": [
+              "火墙术"
+            ]
+          }
+        }
+      },
+      "resourceName": "Ki",
+      "ability": "wis"
+    }
+  ],
+  "entries": [
+    "你可以消耗5点气施展{@spell 火墙术}。"
+  ],
+  "translator": "不全书"
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "ENG_name": "Prosthetics",
+    "name": "义肢",
+    "source": "GrimHollowPG24",
+    "page": 127,
+    "type": "AdvEq",
+    "rarity": "none",
+    "weight": 10,
+    "value": 50000,
+    "entries": [
+      "埃萨里斯盛行的野蛮战争和恶毒怪物让许多人遭受{@variantrule 重伤|GrimHollowPG24|极恶创伤}，包括肢体缺失和其他潜在的衰弱伤患。世界各地的工程师和工匠通过义肢在协助这些人应对这些伤患方面取得了巨大进步。",
+      "当一个生物带有{@variantrule 重伤|GrimHollowPG24}时使用义肢，他们会在佩戴替换失落或受伤身体部分的义肢时忽略{@variantrule 重伤|GrimHollowPG24}施加的惩罚。",
+      "一些义肢可以被附魔，赋予它们更强大的力量。魔法义肢的规则可以在{@i 鬼魅幽谷战役向导}中找到。"
+    ]
+  }
+]

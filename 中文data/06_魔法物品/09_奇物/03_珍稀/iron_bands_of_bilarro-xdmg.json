@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Iron Bands of Bilarro",
+    "name": "比拉罗的铁索",
+    "source": "XDMG",
+    "page": 274,
+    "srd52": "绑定铁索",
+    "basicRules2024": true,
+    "rarity": "rare",
+    "wondrous": true,
+    "weight": 1,
+    "entries": [
+      "这颗锈迹斑斑的铁球直径3寸，重1磅。你可以使用一个{@action 魔法|XPHB}动作将铁球扔向60尺内一个你可见的巨型或更小体型的生物。铁球会在空中飞行时展开成为一团铁索。",
+      "进行一次远程攻击检定，将你的{@variantrule 熟练|XPHB|熟练加值}和敏捷调整值加到这次攻击检定中。如果攻击命中，目标会陷入{@condition 束缚|XPHB}状态，直至你使用一个{@variantrule 附赠动作|XPHB}下令释放它。如果攻击未命中，或是你下达了释放命令，铁索会重新收缩为铁球。",
+      "一个能触及到铁索的生物（包括被铁索{@condition 束缚|XPHB}的生物）可以使用一个动作进行一次{@dc 20}的力量（{@skill 运动|XPHB}）检定来尝试打破铁索。如果检定成功，此物品将被摧毁，被{@condition 束缚|XPHB}的生物将被释放。如果检定失败，进行此次检定的生物在随后的24小时内进行的任何进一步尝试都会自动失败。",
+      "此铁索一经使用，直至次日黎明前它都无法再次被使用。"
+    ],
+    "lootTables": [
+      "奥秘 - 珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Iron Bands of Bilarro.webp"
+          },
+          "width": 988,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

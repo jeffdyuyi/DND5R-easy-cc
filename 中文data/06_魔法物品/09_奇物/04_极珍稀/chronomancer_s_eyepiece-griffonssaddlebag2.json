@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Chronomancer's Eyepiece",
+    "name": "时术师单片镜",
+    "source": "GriffonsSaddlebag2",
+    "page": 60,
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d4 + 1}",
+    "charges": 5,
+    "entries": [
+      "这个独特的单片镜片让你能够隐约看见并操控目标周围的时间流动。镜片拥有5充能，且在每日黎明时恢复{@dice 1d4 + 1}已消耗的充能。佩戴镜片期间，你可以在另一个生物的回合结束时用反应并消耗镜片的1充能，说出镜片的两个命令语之一来扭曲该生物周围的时间流。你必须能看见目标，且目标必须在你的60尺范围内。",
+      {
+        "ENG_name": "Past",
+        "name": "过去",
+        "type": "entries",
+        "entries": [
+          "如果目标愿意，它会被传送回到其回合开始时所在的位置。如果另一个生物或物件占据该位置，目标会被传送至最近的未占据空间。不愿意的目标必须成功通过一次DC 16的魅力豁免检定，否则将以此方式被强制传送。"
+        ]
+      },
+      {
+        "ENG_name": "Future",
+        "name": "未来",
+        "type": "entries",
+        "entries": [
+          "如果目标愿意，它可以立即选择再次移动，最多移动等于其速度一半的距离，且不会引发借机攻击。目标以此方式移动后，其速度减半，持续到其下一回合结束。"
+        ]
+      }
+    ],
+    "lootTables": [
+      "魔法物品表 H1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Chronomancers-Eyepiece.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

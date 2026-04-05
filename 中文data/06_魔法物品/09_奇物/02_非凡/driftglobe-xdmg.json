@@ -1,0 +1,46 @@
+[
+  {
+    "ENG_name": "Driftglobe",
+    "name": "漂浮之球",
+    "source": "XDMG",
+    "page": 254,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "weight": 1,
+    "entries": [
+      "这个厚玻璃制成的小球重1磅。在它周围60尺内，你可以说出命令语以使它发出相当于法术{@spell 光亮术|XPHB}或 {@spell 昼明术|XPHB}的光芒。使用一次后直至次日黎明前，昼明术效应将无法再次使用。",
+      "你可以用{@action 魔法|XPHB}动作来说出另一个命令语，以让发光球体飞到空中，漂浮在离地面不超过5尺的地方。球体将持续漂浮在空中，直到你或另一生物将它抓住。如果你离开球体周围60尺范围，则它将沿最短路径跟随你移动直到距离你60尺为止。如果它的移动遭到妨碍，它将闪烁着落回地面并回到启动前的状态，其发出的光芒也会熄灭。"
+    ],
+    "attachedSpells": {
+      "will": [
+        "光亮术|xphb"
+      ],
+      "daily": {
+        "1e": [
+          "昼明术|xphb"
+        ]
+      }
+    },
+    "lootTables": [
+      "奥秘 - 非普通|XDMG",
+      "器具 - 非普通|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Driftglobe.webp"
+          },
+          "width": 1000,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "ENG_name": "Sacrament of the Falling Fire",
+    "name": "天火圣礼",
+    "source": "DungeonsDrakkenheim",
+    "page": 229,
+    "level": 9,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "小时"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "每受术生物一片价值100gp的妄质晶片，作为法术的耗材",
+        "cost": 10000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "本法术只能在被 浓厚污霭 覆盖的区域中施展。",
+      "你举行一场神圣的仪式，洗礼至多12名虔诚、自愿、且生物类型为类人生物的生物。每个受术生物都需要将一枚妄质晶片嵌入自己的胸口，而他们将因此被圣化 （详见《德拉肯海姆之墟》第三章中记述的 天火信众Followers of the Falling Fire 资料）。",
+      "当你完成法术的施展后，每个受术者周围都会出现一只敌对的{@creature 幽影}并攻击对应的受术生物——而它们便是每个角色内心深处黑暗的显化。GM也许可以让那些心中承载着强烈愤怒、恐惧、或仇恨的角色周围出现一只{@creature 邪灵}用以代替这样的幽影显化。"
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "XPHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "XPHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        }
+      ]
+    }
+  }
+]

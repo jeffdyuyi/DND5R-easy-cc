@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Scroll of Mapping (Very Rare)",
+    "name": "绘地卷轴（极珍稀）",
+    "source": "GriffonsSaddlebag2",
+    "page": 156,
+    "type": "SC|DMG",
+    "tier": "次要",
+    "rarity": "very rare",
+    "entries": [
+      "以下{@item 绘地卷轴|GriffonsSaddlebag2}是一个带有额外词条的极珍稀变体。",
+      "这份地图是彩色的，并且根据当前地图比例显示大型和小型地点的名称，如区域名称、街道名或附近商铺名。此外，你可以用一个动作触摸地图并询问一个你熟悉且能说出名字或清晰描述的人物或地点的位置。如果该目标位于地图可显示的范围内，一个\"X\"标记会出现在目标位置上。如果区域内有多个具有相同名称或描述的目标，则会出现多个标记。如果目标是处于其他形态的生物（例如受变形术法术影响），或无法被预言魔法或探知术探测到，则地图不会显示其位置。如果目标在移动，X标记会在持续时间内跟随其移动。标记的目标会在地图上显示10分钟，之后X标记消失。地图的这项属性一经使用，必须经过12小时才能再次使用。"
+    ],
+    "lootTables": [
+      "魔法物品表D|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Scroll-of-Mapping.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

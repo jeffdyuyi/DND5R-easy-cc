@@ -1,0 +1,17 @@
+{
+  "ENG_name": "Riposte",
+  "name": "反击",
+  "source": "XPHB",
+  "page": 95,
+  "featureType": [
+    "MV:B"
+  ],
+  "consumes": {
+    "ENG_name": "Superiority Die",
+    "name": "卓越骰"
+  },
+  "entries": [
+    "当一个生物对你发动了一次近战攻击检定但失手时，你可以执行一个{@variantrule 反应|XPHB}并消耗一枚卓越骰使用武器或{@variantrule 徒手打击|XPHB}对其发动一次近战攻击检定。如果该攻击命中，则将卓越骰加在此攻击的伤害掷骰中。"
+  ],
+  "translator": "不全书"
+}

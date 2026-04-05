@@ -1,0 +1,176 @@
+{
+  "ENG_name": "College of Dance",
+  "name": "舞蹈学院",
+  "shortName": "舞蹈",
+  "source": "XPHB",
+  "className": "吟游诗人",
+  "classSource": "XPHB",
+  "page": 64,
+  "edition": "one",
+  "subclassFeatures": [
+    "舞蹈学院|吟游诗人|XPHB|舞蹈|XPHB|3",
+    "鼓舞之移|吟游诗人|XPHB|舞蹈|XPHB|6",
+    "协同舞步|吟游诗人|XPHB|舞蹈|XPHB|6",
+    "引导闪避|吟游诗人|XPHB|舞蹈|XPHB|14"
+  ],
+  "hasFluffImages": true,
+  "features": [
+    {
+      "ENG_name": "College of Dance",
+      "name": "舞蹈学院",
+      "source": "XPHB",
+      "page": 64,
+      "className": "吟游诗人",
+      "classSource": "XPHB",
+      "subclassShortName": "舞蹈",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "entries": [
+        "{@i 舞步节律谐宇宙}",
+        "舞蹈学院的吟游诗人们明白，创生圣言不在演讲或歌唱之中，圣言自天体运动中发出，经芥子虫蠕而流淌。舞蹈学院的诗人们练习同旋转的宇宙谐频共振的手段，他们注重灵巧、速度却又不失优雅。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "炫目舞步|吟游诗人|XPHB|舞蹈|XPHB|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Agile Strikes",
+      "name": "灵巧打击",
+      "source": "XPHB",
+      "page": 64,
+      "className": "吟游诗人",
+      "classSource": "XPHB",
+      "subclassShortName": "舞蹈",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "当你在一次动作、{@variantrule 附赠动作|XPHB}或{@variantrule 反应|XPHB}中消耗了诗人激励使用次数时，作为该动作、{@variantrule 附赠动作|XPHB}或{@variantrule 反应|XPHB}的一部分，你可以发动一次{@variantrule 徒手打击|XPHB}。"
+      ]
+    },
+    {
+      "ENG_name": "Bardic Damage",
+      "name": "诗人痛击",
+      "source": "XPHB",
+      "page": 64,
+      "className": "吟游诗人",
+      "classSource": "XPHB",
+      "subclassShortName": "舞蹈",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "你可以用敏捷代替力量进行{@variantrule 徒手打击|XPHB}的攻击检定。当你以一次徒手打击造成伤害时，你可以造成等于诗人激励骰 + 敏捷调整值的钝击伤害，而非徒手打击原本的伤害。此效果并不会消耗你的诗人激励使用次数。"
+      ]
+    },
+    {
+      "ENG_name": "Dance Virtuoso",
+      "name": "大舞蹈家",
+      "source": "XPHB",
+      "page": 64,
+      "className": "吟游诗人",
+      "classSource": "XPHB",
+      "subclassShortName": "舞蹈",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "你进行的任何有关舞蹈的魅力（{@skill 表演|XPHB}）检定均具有{@variantrule 优势|XPHB}。"
+      ]
+    },
+    {
+      "ENG_name": "Dazzling Footwork",
+      "name": "炫目舞步",
+      "source": "XPHB",
+      "page": 64,
+      "className": "吟游诗人",
+      "classSource": "XPHB",
+      "subclassShortName": "舞蹈",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "未着装护甲且未持用{@item 盾牌|XPHB}期间，你获得以下增益：",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "大舞蹈家|吟游诗人|XPHB|舞蹈|XPHB|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "无甲防御|吟游诗人|XPHB|舞蹈|XPHB|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "灵巧打击|吟游诗人|XPHB|舞蹈|XPHB|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "诗人痛击|吟游诗人|XPHB|舞蹈|XPHB|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Unarmored Defense",
+      "name": "无甲防御",
+      "source": "XPHB",
+      "page": 64,
+      "className": "吟游诗人",
+      "classSource": "XPHB",
+      "subclassShortName": "舞蹈",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "你的基础{@variantrule 护甲等级|XPHB}等于 10 + 你的敏捷调整值  + 你的魅力调整值。"
+      ]
+    },
+    {
+      "ENG_name": "Inspiring Movement",
+      "name": "鼓舞之移",
+      "source": "XPHB",
+      "page": 64,
+      "className": "吟游诗人",
+      "classSource": "XPHB",
+      "subclassShortName": "舞蹈",
+      "subclassSource": "XPHB",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "当一名你可见的敌人位于你 5 尺内结束它的回合时，你能够以{@variantrule 反应|XPHB}消耗一次诗人激励使用次数，移动至多等于你{@variantrule 速度|XPHB}一半的距离。此时，位于你 30 尺内的一名盟友（由你选择）也可以使用他的{@variantrule 反应|XPHB}来移动至多等于他{@variantrule 速度|XPHB}一半的距离。",
+        "此特性进行的移动不会引发{@action 借机攻击|XPHB|借机攻击}。"
+      ]
+    },
+    {
+      "ENG_name": "Tandem Footwork",
+      "name": "协同舞步",
+      "source": "XPHB",
+      "page": 64,
+      "className": "吟游诗人",
+      "classSource": "XPHB",
+      "subclassShortName": "舞蹈",
+      "subclassSource": "XPHB",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "当你投掷{@variantrule 先攻|XPHB}时，若你未陷入{@condition 失能|XPHB}状态，你可以消耗一次诗人激励使用次数，投掷诗人激励骰，令你与位于你 30 尺内的每个能听见或看见你的盟友进行的{@variantrule 先攻|XPHB}检定获得等于该骰值的加值。"
+      ]
+    },
+    {
+      "ENG_name": "Leading Evasion",
+      "name": "引导闪避",
+      "source": "XPHB",
+      "page": 65,
+      "className": "吟游诗人",
+      "classSource": "XPHB",
+      "subclassShortName": "舞蹈",
+      "subclassSource": "XPHB",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "当你受到一个允许你进行敏捷豁免来只承受一半伤害的效应影响时，你在豁免成功时不受伤害，豁免失败时只承受一半伤害。若位于你5尺内的其他生物同样需要进行这次敏捷豁免，你可以令他们也享受到此特性的增益。",
+        "若你陷入{@condition 失能|XPHB}状态，你无法使用此特性。"
+      ]
+    }
+  ]
+}

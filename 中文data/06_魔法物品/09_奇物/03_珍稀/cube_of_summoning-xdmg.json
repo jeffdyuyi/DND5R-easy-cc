@@ -1,0 +1,84 @@
+[
+  {
+    "ENG_name": "Cube of Summoning",
+    "name": "召唤魔方",
+    "source": "XDMG",
+    "page": 247,
+    "referenceSources": [
+      "DrDe-TFV"
+    ],
+    "rarity": "rare",
+    "wondrous": true,
+    "entries": [
+      "这个小立方体如同一个玩偶盒。当你用一个{@action 魔法|XPHB}动作转动立方体的曲柄时，它的盖子将在欢快的曲调中弹开，一个生物出现在距离盒子最近的未被占据的空间，而后盖子再次关闭。该盖子无法被其他手段打开。",
+      "在召唤魔方表中掷骰以确定{@item 召唤魔方|XDMG}施展了哪种法术以召唤生物。该法术以五环法术位施展（豁免{@dc 17}，攻击加值+9）且无需维持{@status 专注|XPHB}，但你在其他方面视为该法术的施法者。",
+      "一旦该立方体召唤了一个生物，直至次日黎明前它都无法再次召唤生物。",
+      {
+        "type": "table",
+        "caption": "召唤魔方",
+        "colStyles": [
+          "col-2 text-center",
+          "col-10"
+        ],
+        "colLabels": [
+          "1d6",
+          "法术"
+        ],
+        "rows": [
+          [
+            "1",
+            "{@spell 异怪召唤术|XPHB}"
+          ],
+          [
+            "2",
+            "{@spell 野兽召唤术|XPHB}"
+          ],
+          [
+            "3",
+            "{@spell 构装召唤术|XPHB}"
+          ],
+          [
+            "4",
+            "{@spell 龙类召唤术|XPHB}"
+          ],
+          [
+            "5",
+            "{@spell 元素召唤术|XPHB}"
+          ],
+          [
+            "6",
+            "{@spell 妖精召唤术|XPHB}"
+          ]
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "异怪召唤术|xphb",
+      "野兽召唤术|xphb",
+      "构装召唤术|xphb",
+      "龙类召唤术|xphb",
+      "元素召唤术|xphb",
+      "妖精召唤术|xphb"
+    ],
+    "lootTables": [
+      "奥秘 - 珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Cube of Summoning.webp"
+          },
+          "width": 819,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

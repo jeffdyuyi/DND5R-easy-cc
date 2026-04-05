@@ -1,0 +1,37 @@
+[
+  {
+    "ENG_name": "+1 Double-Bladed Scimitar",
+    "name": "+1 双刃弯刀",
+    "source": "XDMG",
+    "page": 324,
+    "type": "M",
+    "rarity": "uncommon",
+    "weight": 6,
+    "value": 10000,
+    "weaponCategory": "martial",
+    "property": [
+      "S",
+      "2H"
+    ],
+    "dmg1": "2d4",
+    "dmgType": "S",
+    "sword": true,
+    "weapon": true,
+    "entries": [
+      "使用这把魔法武器进行攻击和伤害判定时，你会获得{=bonusWeapon}的额外加成。"
+    ],
+    "hasFluff": true,
+    "namePrefix": "+1 ",
+    "srd52": true,
+    "basicRules2024": true,
+    "bonusWeapon": "+1",
+    "classFeatures": [
+      "仿制魔法物品|奇械师|efa|2|efa"
+    ],
+    "lootTables": [
+      "武备 - 非普通|XDMG"
+    ],
+    "_isVariant": true,
+    "valueReference": 400
+  }
+]

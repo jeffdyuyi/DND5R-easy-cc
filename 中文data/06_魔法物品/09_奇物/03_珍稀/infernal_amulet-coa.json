@@ -1,0 +1,33 @@
+[
+  {
+    "ENG_name": "Infernal Amulet",
+    "name": "地狱护符",
+    "source": "CoA",
+    "page": 268,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "curse": true,
+    "entries": [
+      "佩戴这个护身符时，你可以将其作为施法焦点来使用你的法术，并且它赋予你的法术豁免困难等级和法术攻击加值+2的加值。",
+      {
+        "ENG_name": "Curse",
+        "name": "诅咒",
+        "type": "entries",
+        "entries": [
+          "当你与这个护身符绑定时，你不愿意与之分离，并且总是佩戴着它。佩戴护身符时，你在力量豁免检定和力量检定时处于不利状态。只有{@spell 移除诅咒}法术可以让你移除这个物品并结束绑定。"
+        ]
+      },
+      {
+        "ENG_name": "Corrupting",
+        "name": "腐蚀",
+        "type": "entries",
+        "entries": [
+          "这个物品具有腐蚀性。详见\"{@adventure 地狱物品腐化|CoA|16|地狱物品腐化}\"部分。"
+        ]
+      }
+    ],
+    "valueReference": 4000,
+    "type": "W"
+  }
+]

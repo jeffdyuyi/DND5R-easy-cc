@@ -1,0 +1,461 @@
+[
+  {
+    "name": "智者",
+    "ENG_name": "Sage",
+    "source": "PHB",
+    "page": 137,
+    "skillProficiencies": [
+      {
+        "arcana": true,
+        "history": true
+      }
+    ],
+    "languageProficiencies": [
+      {
+        "anyStandard": 2
+      }
+    ],
+    "startingEquipment": [
+      {
+        "_": [
+          "墨水(1盎司/瓶)|phb",
+          {
+            "special": "羽毛笔"
+          },
+          {
+            "special": "小刀"
+          },
+          {
+            "special": "一封去世同事信件其内载有你尚不能解答的问题"
+          },
+          "普通服装|phb",
+          {
+            "item": "小包|phb",
+            "containsValue": 1000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 奥秘}, {@skill 历史}"
+          },
+          {
+            "ENG_name": "Languages:",
+            "name": "语言",
+            "type": "item",
+            "entry": "任选两项"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "{@item 墨水(1盎司/瓶)|phb|一瓶黑色墨水}，一支羽毛笔，一把小刀，一封来自已故同事的信，提出了一个你尚未能回答的问题，一套{@item 普通服装|phb}，以及一个装有10 gp的腰带{@item 小包|phb}。"
+          }
+        ]
+      },
+      {
+        "ENG_name": "Feature: Researcher",
+        "name": "特性：研究员",
+        "type": "entries",
+        "entries": [
+          "当你需要学习或是记起某段学识内容时，就算你并不清楚其具体信息，也总能知道从何处或何人身上着手获取。这些情报通常来自某个图书馆、抄写室、学院，甚至是其他某个智者或某个知道相关知识的人或生物。鉴于发掘多元宇宙最深的秘密有时会需要整趟的冒险甚至是整个的战役，你的DM可能会设定这段情报的所在是一个遥不可及的地方，或者直接将其定义为无法找到。"
+        ],
+        "data": {
+          "isFeature": true
+        }
+      },
+      {
+        "ENG_name": "Specialty",
+        "name": "手法",
+        "type": "entries",
+        "entries": [
+          "为决定你的学术积累的性质，投一个d8或是从下面的表格中自行选择。",
+          {
+            "type": "table",
+            "colLabels": [
+              "d8",
+              "专业"
+            ],
+            "colStyles": [
+              "col-1 text-center",
+              "col-11"
+            ],
+            "rows": [
+              [
+                "1",
+                "炼金师"
+              ],
+              [
+                "2",
+                "占星师"
+              ],
+              [
+                "3",
+                "失权威学者"
+              ],
+              [
+                "4",
+                "图书馆员"
+              ],
+              [
+                "5",
+                "教授"
+              ],
+              [
+                "6",
+                "研究员"
+              ],
+              [
+                "7",
+                "法师学徒"
+              ],
+              [
+                "8",
+                "抄写员"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Suggested Characteristics",
+        "name": "建议人物特征",
+        "type": "entries",
+        "entries": [
+          "智者们以其多年的研究为定义，而他们的性格也反映了这段学习生活。献身于学术研究的智者看重知识的价值——有时会以某个学识本身作代表，而有时则是该情报所引导出的其他理想。",
+          {
+            "type": "table",
+            "colLabels": [
+              "d8",
+              "特点"
+            ],
+            "colStyles": [
+              "col-1 text-center",
+              "col-11"
+            ],
+            "rows": [
+              [
+                "1",
+                "我会用一些让人觉得非常博学的长词。"
+              ],
+              [
+                "2",
+                "我读过世上最大图书馆中的每一本书——或者我喜欢自夸我读过。"
+              ],
+              [
+                "3",
+                "我习惯帮助那些不像我这么聪明的人，而我有耐心对其他人解释任何事和每件事。"
+              ],
+              [
+                "4",
+                "没有什么能比一个有趣的谜团更令我欢心。"
+              ],
+              [
+                "5",
+                "我作出自己的判断前，总会乐意倾听争论双方的论点。"
+              ],
+              [
+                "6",
+                "我~跟~白痴们~讲话~时~会~放慢~语速，别~误会~我~是指~所有人~都是~白痴。"
+              ],
+              [
+                "7",
+                "我在社交场合尴尬得特别特别厉害。"
+              ],
+              [
+                "8",
+                "我确信人们始终在试着偷取我的秘密。"
+              ]
+            ]
+          },
+          {
+            "type": "table",
+            "colLabels": [
+              "d6",
+              "理念"
+            ],
+            "colStyles": [
+              "col-1 text-center",
+              "col-11"
+            ],
+            "rows": [
+              [
+                "1",
+                "知识Knowledge。知识是通往力量和自我发展的必经之路。(中立)"
+              ],
+              [
+                "2",
+                "美丽Beauty。美丽的事物指引我们想着其所在的方向继续向前即是真实。（善良）"
+              ],
+              [
+                "3",
+                "逻辑Logic。情绪绝不能蒙蔽逻辑思考。（守序）"
+              ],
+              [
+                "4",
+                "无拘无束No Limits。任何东西都不该束缚所有存在中潜在的无限可能。（混乱）"
+              ],
+              [
+                "5",
+                "权力Power。知识是通往权力与统治的捷径。（邪恶）"
+              ],
+              [
+                "6",
+                "提升自我Self-Improvement。终生学习为的正是让人变得更好。（任意）"
+              ]
+            ]
+          },
+          {
+            "type": "table",
+            "colLabels": [
+              "d6",
+              "牵挂"
+            ],
+            "colStyles": [
+              "col-1 text-center",
+              "col-11"
+            ],
+            "rows": [
+              [
+                "1",
+                "保护我的学生是我的责任。"
+              ],
+              [
+                "2",
+                "我有一份载有可怕秘密的远古文献，而它绝不能落入错误的人手中。"
+              ],
+              [
+                "3",
+                "我为保护一个图书馆，学院，抄写室或修道院而工作。"
+              ],
+              [
+                "4",
+                "我一生的作品就是关于某项特定学识领域的一系列书典。"
+              ],
+              [
+                "5",
+                "我终生寻求某个特定问题的解答。"
+              ],
+              [
+                "6",
+                "我出卖了自己的灵魂以获得知识。并希望做一些大事将其赢回来。"
+              ]
+            ]
+          },
+          {
+            "type": "table",
+            "colLabels": [
+              "d6",
+              "缺陷"
+            ],
+            "colStyles": [
+              "col-1 text-center",
+              "col-11"
+            ],
+            "rows": [
+              [
+                "1",
+                "以知识许诺很容易打动我。"
+              ],
+              [
+                "2",
+                "一般人看到恶魔时会尖叫着逃跑，而我则会停下来对它作解剖和记录。"
+              ],
+              [
+                "3",
+                "揭示一项远古奥秘值得以一整个文明作代价。"
+              ],
+              [
+                "4",
+                "我总是拿出极度复杂的解决方案，却忽视了那些简单易行的方法。"
+              ],
+              [
+                "5",
+                "我说话时未真正考虑过自己的措辞，因而老是冒犯到他人。"
+              ],
+              [
+                "6",
+                "我无法保守关乎自己或其它性命的秘密。"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "entries": [
+                "你花费多年来研究多元宇宙的学识。你搜寻手稿，研习卷轴，并听取所有相关学科权威的授课。最终你的努力使你成为所研究领域的大师。"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "basicRules": true,
+    "hasFluff": true,
+    "reprintedAs": [
+      "智者|XPHB"
+    ],
+    "translator": "不全书",
+    "edition": "classic"
+  },
+  {
+    "name": "智者",
+    "ENG_name": "Sage",
+    "source": "XPHB",
+    "edition": "one",
+    "page": 183,
+    "ability": [
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "con",
+              "int",
+              "wis"
+            ],
+            "weights": [
+              2,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "con",
+              "int",
+              "wis"
+            ],
+            "weights": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      }
+    ],
+    "feats": [
+      {
+        "魔法学徒；法师|xphb": true
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "arcana": true,
+        "history": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "calligrapher's supplies": true
+      }
+    ],
+    "startingEquipment": [
+      {
+        "A": [
+          {
+            "item": "长棍|xphb"
+          },
+          {
+            "item": "书法工具|xphb"
+          },
+          {
+            "item": "书籍|xphb"
+          },
+          {
+            "item": "羊皮纸|xphb",
+            "quantity": 8
+          },
+          {
+            "item": "法袍|xphb"
+          },
+          {
+            "value": 800
+          }
+        ],
+        "B": [
+          {
+            "value": 5000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability Scores:",
+            "name": "属性值：",
+            "type": "item",
+            "entry": "体质，智力，感知"
+          },
+          {
+            "ENG_name": "Feat:",
+            "name": "专长：",
+            "type": "item",
+            "entry": "{@feat 魔法学徒|XPHB} （法师）"
+          },
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 奥秘|XPHB}, {@skill 历史|XPHB}"
+          },
+          {
+            "ENG_name": "Tool Proficiency:",
+            "name": "工具熟练项：",
+            "type": "item",
+            "entry": "{@item 书法工具|XPHB}"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "选择 A 或 B：(A) {@item 长棍|XPHB}、{@item 书法工具|XPHB}、{@item 书籍|XPHB}（历史）、{@item 羊皮纸|XPHB} (8 张)、{@item 法袍|XPHB}、8 GP；或 (B) 50 GP"
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "你长大的岁月便在宅邸和修行院之间的奔波中过去，做着各式各样的零活和服务，以此访问他们的图书馆藏。你花了那么多漫长的夜晚学习书籍和卷册，阅览多元宇宙的见闻，甚至涉猎魔法的本质——而你的心灵正渴望着了解更多。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "backgrounds/XPHB/Sage.webp"
+          },
+          "credit": "Lixin Yin",
+          "width": 2513,
+          "height": 915
+        }
+      ]
+    },
+    "basicRules2024": true,
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "translator": "不全书"
+  }
+]

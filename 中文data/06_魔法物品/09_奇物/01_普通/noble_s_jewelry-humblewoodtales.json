@@ -1,0 +1,15 @@
+[
+  {
+    "ENG_name": "Noble's Jewelry",
+    "name": "贵族的珠宝",
+    "source": "HumblewoodTales",
+    "page": 153,
+    "type": "LTG|HumblewoodTales",
+    "rarity": "none",
+    "weight": 1,
+    "value": 15000,
+    "entries": [
+      "一套设计师珠宝适合装扮任何上流社会名流。当与一套高档服装一起穿戴时，它可以让你冒充贵族。珠宝可以定制，在这种情况下，它需要额外花费10GP。"
+    ]
+  }
+]

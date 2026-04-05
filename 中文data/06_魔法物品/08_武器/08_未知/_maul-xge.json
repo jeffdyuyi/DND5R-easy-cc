@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "Maul",
+    "name": "精金巨锤",
+    "source": "XGE",
+    "page": 78,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "HotB"
+    ],
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "unknown",
+    "weight": 10,
+    "value": 1000,
+    "weaponCategory": "martial",
+    "property": [
+      "H|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "失衡|XPHB"
+    ],
+    "dmg1": "2d6",
+    "dmgType": "B",
+    "hammer": true,
+    "weapon": true,
+    "hasFluffImages": true,
+    "namePrefix": "精金",
+    "reprintedAs": [
+      "精金武器|XDMG"
+    ],
+    "tier": "主要",
+    "valueExpression": "[[baseItem.value]] + 50000",
+    "entries": [
+      "使用这个武器击中物体时，每次命中都视为重击。"
+    ],
+    "_isVariant": true
+  }
+]

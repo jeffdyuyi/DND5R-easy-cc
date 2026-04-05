@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Shadow Puppet",
+    "name": "幽影傀儡",
+    "source": "ObojimaTallGrass",
+    "page": 245,
+    "type": "P",
+    "rarity": "uncommon",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "一旦饮用，这瓶药水将赋予你的阴影智能。阴影开始独立于你行动，但仍与你的身体连接。它有自己的情感和个性，但除了正常阴影能做到的之外，无法以任何方式与世界互动。此药水的效应会持续到被移除为止，如同诅咒一般。这不计入你身体同时可受影响的药水数量限制。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 46|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/shadow-puppet.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1991,
+          "height": 1991
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

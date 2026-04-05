@@ -1,0 +1,20 @@
+[
+  {
+    "name": "扁瓶",
+    "ENG_name": "Flask",
+    "source": "PHB",
+    "page": 153,
+    "type": "G",
+    "rarity": "none",
+    "weight": 1,
+    "value": 2,
+    "entries": [
+      "一个扁瓶可容纳1品脱液体。"
+    ],
+    "basicRules": true,
+    "reprintedAs": [
+      "扁瓶|XPHB"
+    ],
+    "srd": true
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "ENG_name": "Manifest Charm of Daanvi, the Perfect Order",
+    "name": "显现达安维完美秩序魅惑",
+    "source": "EFA",
+    "page": 50,
+    "type": "Charm",
+    "entries": [
+      "你可以消耗该魅惑（无需动作）来结束你自身的{@condition 目盲|XPHB}、{@condition 耳聋|XPHB}、{@condition 麻痹|XPHB}或{@condition 中毒|XPHB}状态。"
+    ]
+  }
+]

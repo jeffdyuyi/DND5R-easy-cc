@@ -1,0 +1,127 @@
+{
+  "ENG_name": "Dog & Hound",
+  "name": "犬师拳狩",
+  "subclassFeatures": [
+    {
+      "ENG_name": "Dog & Hound",
+      "name": "犬师拳狩",
+      "source": "SterlingVermin",
+      "className": "拳斗士",
+      "classSource": "SterlingVermin",
+      "subclassShortName": "犬师拳狩",
+      "subclassSource": "SterlingVermin",
+      "level": 3,
+      "entries": [
+        "你从未拥有过一位值得托付的两脚朋友，所幸，你觅得了世间最称心的四足挚友 —— 这是旁人求之不得的陪伴。犬师拳狩搏击俱乐部的拳斗士们，对自己的犬伴倾尽赤诚，而犬伴也以全然的忠心相报，这份忠诚，从来都是双向的。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "拳手最好的朋友|拳斗士|SterlingVermin|犬师拳狩|SterlingVermin|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "土狗锐气|拳斗士|SterlingVermin|犬师拳狩|SterlingVermin|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Brawler's Best Friend",
+      "name": "拳手最好的朋友",
+      "entries": [
+        "从你在3级选择这个搏击俱乐部开始，你将获得一只猎犬陪伴你冒险并与你并肩作战。它对你和你的同伴都很友好，并服从你的命令。其游戏数据见猎犬资料卡，该资料卡在多处使用你的熟练加值（PB）。你可以决定你的猎犬是什么品种的狗或相似的犬类生物；你的选择不会影响其游戏数据。",
+        "在战斗中，猎犬共享你的先攻值，但它在你的回合后立即行动。它可以自行移动和使用反应，但在它的回合中唯一能执行的动作是{@action 回避}动作，除非你在你的回合中使用一个附赠动作命令它执行另一个动作。该动作可以是其资料卡中的一个动作或其他动作。如果你处于失能状态，猎犬可以选择执行任何动作，而不仅仅是{@action 回避}。",
+        "如果你花费1分钟给予你的猎犬关注和零食，它将恢复2d6生命值。如果你的猎犬在过去1小时内死亡，你可以通过赞美和宠物将它从死亡边缘唤回。你可以使用一个动作接触猎犬并消耗等同于你拳斗士等级一半数值的生命骰来复活它，前提是你必须在它5尺范围内。1分钟后猎犬将以全部生命值复活。如果你的猎犬死亡或因其他原因无法使用，你可以花费8小时与一只狗建立牵挂成为你的新猎犬，这将终结你与前一只的联系。"
+      ],
+      "source": "SterlingVermin",
+      "className": "拳斗士",
+      "classSource": "SterlingVermin",
+      "subclassShortName": "犬师拳狩",
+      "subclassSource": "SterlingVermin",
+      "level": 3,
+      "header": 1
+    },
+    {
+      "ENG_name": "Mutt With Moxie",
+      "name": "土狗锐气",
+      "entries": [
+        "在3级时，你与你的忠犬分享一切：食物、住所，甚至是锐气。当你使用某些锐气属性时，你的猎犬也会获得增益。",
+        {
+          "ENG_name": "Brace Up",
+          "name": "振奋精神",
+          "type": "entries",
+          "entries": [
+            "当你因使用振奋精神锐气属性而获得临时生命值时，你的猎犬也会获得相同数值的临时生命值。"
+          ]
+        },
+        {
+          "ENG_name": "The Old One-Two",
+          "name": "传统两连击",
+          "type": "entries",
+          "entries": [
+            "当你使用你的传统两连击锐气属性时，你的猎犬可以代替你进行一次或两次攻击。"
+          ]
+        },
+        {
+          "ENG_name": "Stick and Move",
+          "name": "寓攻于走",
+          "type": "entries",
+          "entries": [
+            "当你使用你的寓攻于走锐气属性时，你的猎犬可以采取{@action 疾走}动作。"
+          ]
+        }
+      ],
+      "source": "SterlingVermin",
+      "className": "拳斗士",
+      "classSource": "SterlingVermin",
+      "subclassShortName": "犬师拳狩",
+      "subclassSource": "SterlingVermin",
+      "level": 3,
+      "header": 1
+    },
+    {
+      "ENG_name": "Coordinated Attack",
+      "name": "协同攻击",
+      "source": "SterlingVermin",
+      "className": "拳斗士",
+      "classSource": "SterlingVermin",
+      "subclassShortName": "犬师拳狩",
+      "subclassSource": "SterlingVermin",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "从6级开始，你和你的犬类同伴形成更强大的战斗团队。当你在你的回合使用攻击动作时，如果你的猎犬能看见你，它可以用它的反应进行一次啃咬攻击。"
+      ]
+    },
+    {
+      "ENG_name": "Hound's Best Friend",
+      "name": "猎犬最好的朋友",
+      "source": "SterlingVermin",
+      "className": "拳斗士",
+      "classSource": "SterlingVermin",
+      "subclassShortName": "犬师拳狩",
+      "subclassSource": "SterlingVermin",
+      "level": 11,
+      "header": 2,
+      "entries": [
+        "在11级时，当一个生物用攻击对你的猎犬造成伤害时，你可以使用你的反应对该生物进行一次借机攻击，前提是你处于攻击范围内。"
+      ]
+    },
+    {
+      "ENG_name": "Off the Chain",
+      "name": "彻底疯狂",
+      "source": "SterlingVermin",
+      "className": "拳斗士",
+      "classSource": "SterlingVermin",
+      "subclassShortName": "犬师拳狩",
+      "subclassSource": "SterlingVermin",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "从17级开始，你的猎犬精魄和你一样不破。当你的猎犬受到伤害使其当前生命值降至最大生命值的一半或更低时，你可以使用反应让你的猎犬脱缰暴走。当你这样做时，它立即获得相当于你拳斗士等级四倍的临时生命值，并且在接下来的1分钟内，它的速度增加15尺，并且在你没有对它使用命令术的每个回合，它可以进行啃咬或{@action 回避}动作（由你选择）。一旦你使用了这个特性，直到完成一次长休前你都不能再次使用它。"
+      ]
+    }
+  ],
+  "source": "SterlingVermin",
+  "shortName": "犬师拳狩",
+  "className": "拳斗士",
+  "classSource": "SterlingVermin"
+}

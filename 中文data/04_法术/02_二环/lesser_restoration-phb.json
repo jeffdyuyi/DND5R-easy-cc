@@ -1,0 +1,74 @@
+[
+  {
+    "ENG_name": "Lesser Restoration",
+    "name": "次等复原术",
+    "source": "PHB",
+    "page": 255,
+    "srd": true,
+    "basicRules": true,
+    "otherSources": [
+      {
+        "source": "RMR",
+        "page": 55
+      }
+    ],
+    "referenceSources": [
+      "RoT",
+      "PotA",
+      "OotA",
+      "CoS",
+      "TftYP-TFoF",
+      "ToA",
+      "WDMM",
+      "OoW",
+      "US",
+      "IDRotF",
+      "AitFR-AVT",
+      "JttRC",
+      "DoSI",
+      "DSotDQ"
+    ],
+    "reprintedAs": [
+      "次等复原术|XPHB"
+    ],
+    "level": 2,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你触碰一个生物，并终止正影响它的一项疾病或一种状态。该状态可以是{@condition 目盲}、{@condition 耳聋}、{@condition 麻痹}或{@condition 中毒}其一。"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "牧师",
+      "德鲁伊",
+      "圣武士",
+      "游侠",
+      "奇械师"
+    ],
+    "display_school": "防护系"
+  }
+]

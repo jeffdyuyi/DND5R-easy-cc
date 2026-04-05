@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Phantom Walkers",
+    "name": "幻影短靴",
+    "source": "GriffonsSaddlebag2",
+    "page": 135,
+    "tier": "次要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "在你穿着这双靴子期间，其他生物通过你的足迹来追踪你的移动时所进行的任何属性检定的DC增加5。",
+      "此外，你可以用一个附赠动作使靴子在1分钟内不留下任何足迹。当你如此做时，另一组相似的足迹会出现在地面上并延伸向随机方向。这些足迹持续8小时，最远可延伸300尺。成功进行一次DC 13的智力（{@skill 奥秘}）检定可以揭示这些足迹是魔法造成的。靴子的这项词条一经使用，则其直到下次黎明前都无法再次使用。"
+    ],
+    "lootTables": [
+      "魔法物品表 B1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Phantom-Walkers.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

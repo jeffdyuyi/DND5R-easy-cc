@@ -1,0 +1,49 @@
+[
+  {
+    "ENG_name": "Scepter of Faith",
+    "name": "信仰权杖",
+    "source": "GriffonsSaddlebag2",
+    "page": 155,
+    "type": "RD|DMG",
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": "由牧师",
+    "reqAttuneTags": [
+      {
+        "class": "牧师"
+      }
+    ],
+    "recharge": "拂晓",
+    "entries": [
+      "这根权杖蕴含着一位虔敬者最后残存的魔法。持握权杖期间，你可以用一个附赠动作，以权杖对范围内的一个非自身目标施放{@spell 虔诚护盾}法术。当一名位于你60尺以内的攻击手对一个受此法术影响的生物造成伤害时，你可以用你的反应在该生物面前生成一面灵体间谍护盾，并将攻击手向远离该生物的方向推离5尺。",
+      "此外，持握权杖期间，你可以用一个动作施放{@spell 信仰守卫}或{@spell 寻路术}法术。以此方式施展{@spell 寻路术}时，只能用来寻找通往庙宇或其他神圣场所的路线。权杖一旦以此方式施展了这两个法术中的任一个后，直到次日拂晓前都无法再次施展这一个法术。"
+    ],
+    "attachedSpells": {
+      "will": [
+        "虔诚护盾"
+      ],
+      "daily": {
+        "1e": [
+          "寻路术",
+          "信仰守卫"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表 H2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Scepter-of-Faith.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

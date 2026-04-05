@@ -1,0 +1,63 @@
+[
+  {
+    "ENG_name": "Wand of the Precocious Apprentice",
+    "name": "学院学徒魔杖",
+    "source": "MonstersOfDrakkenheim",
+    "page": 395,
+    "type": "WD|XDMG",
+    "rarity": "uncommon",
+    "entries": [
+      "每回合一次，当你持握此魔杖使用戏法对一个生物造成伤害时，该戏法的单一目标额外受到{@damage 1d4}点该法术类型的伤害。",
+      {
+        "ENG_name": "Crafting",
+        "name": "手作",
+        "type": "entries",
+        "entries": [
+          "制作学院学徒魔杖需要一个非普通工坊和以下非普通成分：",
+          {
+            "type": "list",
+            "items": [
+              {
+                "ENG_name": "[Animus]",
+                "name": "[精魄]",
+                "type": "item",
+                "entries": [
+                  "任意"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Bones]",
+                "name": "[骨头]",
+                "type": "item",
+                "entries": [
+                  "亡灵骸骨"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Dust]",
+                "name": "[粉尘]",
+                "type": "item",
+                "entries": [
+                  "妖精粉尘"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Fluid]",
+                "name": "[流体]",
+                "type": "item",
+                "entries": [
+                  "灵质"
+                ],
+                "nameDot": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluffImages": true
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "ENG_name": "+2 Whip",
+    "name": "+2 鞭子",
+    "source": "DMG",
+    "page": 213,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "rare",
+    "weight": 3,
+    "value": 200,
+    "weaponCategory": "martial",
+    "property": [
+      "F|XPHB",
+      "R|XPHB"
+    ],
+    "mastery": [
+      "缓速|XPHB"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "S",
+    "weapon": true,
+    "hasFluffImages": true,
+    "namePrefix": "+2 ",
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "+2 武器|XDMG"
+    ],
+    "tier": "主要",
+    "bonusWeapon": "+2",
+    "entries": [
+      "使用这把魔法武器进行攻击和伤害判定时，你会获得{=bonusWeapon}的额外加成。"
+    ],
+    "lootTables": [
+      "魔法物品表G"
+    ],
+    "_isVariant": true,
+    "valueReference": 4000
+  }
+]

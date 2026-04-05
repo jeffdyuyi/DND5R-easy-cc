@@ -1,0 +1,118 @@
+[
+  {
+    "ENG_name": "Dekella, Bident of Thassa",
+    "name": "戴刻拉,塔萨之双叉戟",
+    "source": "MOT",
+    "page": 199,
+    "baseItem": "三叉戟|PHB",
+    "type": "M",
+    "rarity": "artifact",
+    "reqAttune": true,
+    "weight": 4,
+    "weaponCategory": "martial",
+    "property": [
+      "T",
+      "V"
+    ],
+    "range": "20/60",
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "dmg2": "1d8",
+    "bonusWeapon": "+3",
+    "modifySpeed": {
+      "static": {
+        "swim": 60
+      }
+    },
+    "entries": [
+      "塔萨手持戴刻拉，普罗烽斯赠予她的双叉戟。当海神将她的武器赐予一个凡人时，通常是为了让他们在远离海洋的地方执行她的意志，纠正某些会影响到她庇护之人的错误，或者让一个凡人认识到她可怕的责任。",
+      {
+        "ENG_name": "Bident of the Deep",
+        "name": "深海之戟",
+        "type": "entries",
+        "entries": [
+          "塔萨的招牌武器随着深海的冰流而颤动。这把武器的功能就像一把三叉戟，对用它进行的攻击和伤害掷骰给予+3的加值。当你用双叉戟攻击命中时，目标会受到额外的{@damage 2d10}寒冷伤害。"
+        ]
+      },
+      {
+        "ENG_name": "Blessing of the Deep",
+        "name": "深渊之祝福",
+        "type": "entries",
+        "entries": [
+          "如果你是塔萨的崇拜者，你将获得以下所有你满足虔信值需求的好处：",
+          {
+            "type": "list",
+            "style": "list-hang-notitle",
+            "items": [
+              {
+                "ENG_name": "Piety 10+",
+                "name": "虔信值 10+",
+                "type": "item",
+                "entry": "你可以在水下呼吸，并且你获得60尺的游泳速度。"
+              },
+              {
+                "ENG_name": "Piety 25+",
+                "name": "虔信值 25+",
+                "type": "item",
+                "entry": "双叉戟获得1个随机{@table 神器词条; 次要增益词条|DMG|次要增益}属性。"
+              },
+              {
+                "ENG_name": "Piety 50+",
+                "name": "虔信值 50+",
+                "type": "item",
+                "entry": "这把双叉戟拥有1个随机的{@table 神器词条; 主要增益词条|DMG|主要增益}属性。"
+              }
+            ]
+          },
+          "如果你不是塔萨的崇拜者，该双叉戟获得1个{@table 神器词条; 次要减益词条|DMG|次要减益}属性和1个{@table 神器词条; 主要减益词条|DMG|主要减益}属性，均为随机决定。",
+          "关于随机属性详见城主指南第七章\"神器\"。"
+        ]
+      },
+      {
+        "ENG_name": "Command the Deep",
+        "name": "支配深海",
+        "type": "entries",
+        "entries": [
+          "双叉戟拥有指挥海浪及其中生物的力量。作为一个动作，你可以改变你周围1里范围内的海面状况，制造强风和暴雨，造成剧烈的波浪（参见《城主指南》第五章的\"海上天气\"），或者平息一场风暴。无论哪种情况，非自然天气都会持续1小时后恢复正常。一旦使用，双叉戟的这一属性在下一个黄昏前不能再次使用。",
+          "此外，你还可以从双叉戟上施放{@spell 支配怪物}法术（豁免{@dc 18}），但只能对具有天生游速的野兽和怪兽施放。一旦使用，双叉戟的这一属性在下个黄昏前不能再次使用。"
+        ]
+      },
+      {
+        "ENG_name": "Aquatic Metamorphosis",
+        "name": "水生变形术",
+        "type": "entries",
+        "entries": [
+          "你可以从双叉戟上施放{@spell 完全变形术}法术（豁免{@dc 18}），但你必须对一个生物施放，使其变成一种具有天生游泳速度的生物。一旦使用，双叉戟的这个属性在下一个黄昏前不能再使用。"
+        ]
+      },
+      {
+        "ENG_name": "Destroying the Bident",
+        "name": "摧毁双叉戟",
+        "type": "entries",
+        "entries": [
+          "要摧毁双叉戟，必须用{@creature 远古红龙}的气息将其加热，然后趁热将其浸入塔提克斯河Tartyx中。"
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "支配怪物",
+      "完全变形术"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/MOT/Dekella, Bident of Thassa.webp"
+          },
+          "credit": "Yeong-Hao Han",
+          "width": 1000,
+          "height": 738
+        }
+      ]
+    }
+  }
+]

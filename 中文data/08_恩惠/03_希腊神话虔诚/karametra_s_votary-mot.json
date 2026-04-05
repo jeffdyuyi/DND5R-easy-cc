@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Karametra's Votary",
+    "name": "卡拉美特拉的信徒",
+    "source": "MOT",
+    "page": 52,
+    "type": "Piety Trait",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "daily": {
+              "1e": [
+                "造粮术"
+              ]
+            }
+          }
+        },
+        "ability": "wis"
+      }
+    ],
+    "entries": [
+      "{@i 虔信值10+ 卡拉美特拉特质}",
+      "你可以使用此特性施放{@spell 造粮术}。以此方式施放该法术后，直至完成一次长休，你无法再次使用此能力。此法术的施法属性为感知。",
+      "此外，你在对抗{@condition 中毒}的豁免中具有优势。"
+    ]
+  }
+]

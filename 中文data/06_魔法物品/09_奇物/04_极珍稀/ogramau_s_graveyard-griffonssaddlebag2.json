@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Ogramau's Graveyard",
+    "name": "奥格拉茂之墓",
+    "source": "GriffonsSaddlebag2",
+    "page": 131,
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": "由牧师或法师",
+    "reqAttuneTags": [
+      {
+        "class": "牧师"
+      },
+      {
+        "class": "法师"
+      }
+    ],
+    "wondrous": true,
+    "weight": 1,
+    "entries": [
+      "这个玻璃球的内部有一座微缩的坟墓，而球的底座由一个中空的类人头骨制成。它大约有拳头大小，且重1磅。此球在你身上期间，亡灵生物对你进行的攻击检定具有劣势。若你正手持此球，你可以用一个动作说出它的两条命令语之一。",
+      "第一命令语会将你5尺范围内你可见的一个中型或小型类人生物的尸体转移到球体内包含的一个特殊半位面中。处于这个半位面中的尸体不会腐烂，从而能延长将其复活的时间限制。如果你在已有尸体的情况下再将另一具尸体转移入该半位面，则第一具尸体会出现在后者留下的空位中。",
+      "第二命令语会复制{@spell 活化死尸}法术的效果，使用储存在此法球半位面中的尸体作为法术的目标。以这种方式创造出来的{@creature 骷髅}或{@creature 丧尸}会出现在你15尺范围内一处你可见且未被占据的空间中，并在24小时后或生命值降至0时化作尘土并被摧毁。如果你在第一个骷髅或丧尸仍然存在的情况下再次说出该命令语以创造第二个骷髅或丧尸，那么第一个骷髅或丧尸会在新骷髅或丧尸出现的同时化作尘土并被摧毁。"
+    ],
+    "attachedSpells": {
+      "will": [
+        "活化死尸"
+      ]
+    },
+    "lootTables": [
+      "魔法物品表 H1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Ogramaus-Graveyard.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

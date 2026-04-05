@@ -1,0 +1,15 @@
+[
+  {
+    "name": "矿工镐",
+    "ENG_name": "Miner's Pick",
+    "source": "PHB",
+    "page": 150,
+    "type": "G",
+    "rarity": "none",
+    "weight": 10,
+    "value": 200,
+    "basicRules": true,
+    "srd": true,
+    "translator": "不全书"
+  }
+]

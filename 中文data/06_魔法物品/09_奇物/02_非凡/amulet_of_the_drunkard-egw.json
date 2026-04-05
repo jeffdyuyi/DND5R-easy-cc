@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Amulet of the Drunkard",
+    "name": "酒鬼护符",
+    "source": "EGW",
+    "page": 265,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这枚护符闻起来像散发着淡淡的麦酒香气的旧木头。着装此护符时，你可以喝下一品脱的啤酒、麦酒、蜂蜜酒或红酒以回复{@dice 4d4 + 4}点生命值。一旦护符恢复了生命值，在第二天黎明前，此特性无法再次使用。"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/EGW/Amulet of the Drunkard.webp"
+          },
+          "credit": "Olga Drebas",
+          "width": 475,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

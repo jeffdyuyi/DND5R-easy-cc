@@ -1,0 +1,48 @@
+[
+  {
+    "ENG_name": "Sharp Mind",
+    "name": "明锐心智",
+    "source": "ObojimaTallGrass",
+    "page": 236,
+    "type": "P",
+    "resist": [
+      "心灵"
+    ],
+    "rarity": "uncommon",
+    "property": [
+      "Util"
+    ],
+    "entries": [
+      "当你饮用这瓶药水时，你的心智会充满魔法能量。接下来的8小时内，你在智力豁免检定上获得+2加值，并获得对心灵伤害的抗性。此外，你可以吞食整本文本，阅读速度比正常快10倍。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 49|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Utility/sharp-mind.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1731,
+          "height": 1731
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

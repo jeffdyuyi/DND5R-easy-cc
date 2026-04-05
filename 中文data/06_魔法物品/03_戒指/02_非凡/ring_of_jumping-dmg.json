@@ -1,0 +1,36 @@
+[
+  {
+    "ENG_name": "Ring of Jumping",
+    "name": "跳跃戒指",
+    "source": "DMG",
+    "page": 191,
+    "srd": true,
+    "referenceSources": [
+      "CM",
+      "JttRC",
+      "KftGV"
+    ],
+    "reprintedAs": [
+      "跳跃戒指|XDMG"
+    ],
+    "type": "RG|DMG",
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "entries": [
+      "佩戴这枚戒指期间，你可以随意以附赠动作从戒指中施放{@spell 跳跃术}法术，但以此施放时只能以你自己为目标。"
+    ],
+    "optionalfeatures": [
+      "仿制魔法物品|TCE"
+    ],
+    "attachedSpells": {
+      "will": [
+        "跳跃术"
+      ]
+    },
+    "lootTables": [
+      "魔法物品表F"
+    ],
+    "valueReference": 400
+  }
+]

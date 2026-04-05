@@ -1,0 +1,650 @@
+[
+    {
+        "ENG_name": "Pugilist",
+        "name": "拳斗士",
+        "source": "Pugilist2024",
+        "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Icons/Pugilist.webp",
+        "primaryAbility": [
+            {
+                "str": true
+            }
+        ],
+        "hd": {
+            "number": 1,
+            "faces": 10
+        },
+        "proficiency": [
+            "str",
+            "con"
+        ],
+        "classTableGroups": [
+            {
+                "colLabels": [
+                    "拳斗",
+                    "锐气点"
+                ],
+                "rows": [
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 8
+                                }
+                            ],
+                            "rollable": true
+                        },
+                        0
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 8
+                                }
+                            ],
+                            "rollable": true
+                        },
+                        2
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 8
+                                }
+                            ],
+                            "rollable": true
+                        },
+                        2
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 8
+                                }
+                            ],
+                            "rollable": true
+                        },
+                        3
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 10
+                                }
+                            ],
+                            "rollable": true
+                        },
+                        3
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 10
+                                }
+                            ],
+                            "rollable": true
+                        },
+                        4
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 10
+                                }
+                            ],
+                            "rollable": true
+                        },
+                        4
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 10
+                                }
+                            ],
+                            "rollable": true
+                        },
+                        5
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 10
+                                }
+                            ],
+                            "rollable": true
+                        },
+                        5
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 10
+                                }
+                            ],
+                            "rollable": true
+                        },
+                        6
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 12
+                                }
+                            ],
+                            "rollable": true
+                        },
+                        6
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 12
+                                }
+                            ],
+                            "rollable": true
+                        },
+                        7
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 12
+                                }
+                            ],
+                            "rollable": true
+                        },
+                        7
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 12
+                                }
+                            ],
+                            "rollable": true
+                        },
+                        8
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 12
+                                }
+                            ],
+                            "rollable": true
+                        },
+                        8
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 12
+                                }
+                            ],
+                            "rollable": true
+                        },
+                        9
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 2,
+                                    "faces": 6
+                                }
+                            ],
+                            "rollable": true
+                        },
+                        9
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 2,
+                                    "faces": 6
+                                }
+                            ],
+                            "rollable": true
+                        },
+                        10
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 2,
+                                    "faces": 6
+                                }
+                            ],
+                            "rollable": true
+                        },
+                        11
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 2,
+                                    "faces": 6
+                                }
+                            ],
+                            "rollable": true
+                        },
+                        12
+                    ]
+                ]
+            }
+        ],
+        "startingProficiencies": {
+            "armor": [
+                "light"
+            ],
+            "weapons": [
+                "simple",
+                "improvised"
+            ],
+            "tools": [
+                "任选1项{@item 赌具|XPHB}"
+            ],
+            "toolProficiencies": [
+                {
+                    "anyGamingSet": 1
+                }
+            ],
+            "skills": [
+                {
+                    "choose": {
+                        "from": [
+                            "acrobatics",
+                            "athletics",
+                            "deception",
+                            "intimidation",
+                            "perception",
+                            "sleight of hand",
+                            "stealth"
+                        ],
+                        "count": 2
+                    }
+                }
+            ]
+        },
+        "startingEquipment": {
+            "additionalFromBackground": true,
+            "entries": [
+                "{@i 选择A或B：} (A) {@item 短棒|XPHB}，{@item 手斧|XPHB}，{@item 赌具|XPHB}（与上述工具熟练的种类相同），{@item 地城套组|XPHB}以及31GP；或者(B) 50GP"
+            ]
+        },
+        "classFeatures": [
+            "拳斗|拳斗士|Pugilist2024|1",
+            "钢颚铁护|拳斗士|Pugilist2024|1",
+            "锐气|拳斗士|Pugilist2024|2",
+            "浴血奋战|拳斗士|Pugilist2024|2",
+            "傲然致胜|拳斗士|Pugilist2024|2",
+            "重磅巨拳|拳斗士|Pugilist2024|3",
+            {
+                "classFeature": "拳斗士子职|拳斗士|Pugilist2024|3",
+                "gainSubclassFeature": true
+            },
+            "属性值提升|拳斗士|Pugilist2024|4",
+            "反求诸己|拳斗士|Pugilist2024|4",
+            "额外攻击|拳斗士|Pugilist2024|5",
+            "万钧痛击|拳斗士|Pugilist2024|5",
+            "锐不可当|拳斗士|Pugilist2024|6",
+            {
+                "classFeature": "子职特性|拳斗士|Pugilist2024|6",
+                "gainSubclassFeature": true
+            },
+            "一线胜机|拳斗士|Pugilist2024|7",
+            "属性值提升|拳斗士|Pugilist2024|8",
+            "披荆斩棘|拳斗士|Pugilist2024|9",
+            "海格力斯|拳斗士|Pugilist2024|10",
+            "甩脱重担|拳斗士|Pugilist2024|10",
+            {
+                "classFeature": "子职特性|拳斗士|Pugilist2024|11",
+                "gainSubclassFeature": true
+            },
+            "属性值提升|拳斗士|Pugilist2024|12",
+            "求己入圣|拳斗士|Pugilist2024|13",
+            "不破|拳斗士|Pugilist2024|14",
+            "好勇斗狠|拳斗士|Pugilist2024|15",
+            "属性值提升|拳斗士|Pugilist2024|16",
+            {
+                "classFeature": "子职特性|拳斗士|Pugilist2024|17",
+                "gainSubclassFeature": true
+            },
+            "斗战之魂|拳斗士|Pugilist2024|18",
+            "传奇恩惠|拳斗士|Pugilist2024|19",
+            "巅峰状态|拳斗士|Pugilist2024|20"
+        ],
+        "subclassTitle": "子职特性"
+    },
+    {
+        "ENG_name": "Pugilist",
+        "name": "拳斗士",
+        "source": "SterlingVermin",
+        "hd": {
+            "number": 1,
+            "faces": 8
+        },
+        "proficiency": [
+            "str",
+            "con"
+        ],
+        "classTableGroups": [
+            {
+                "colLabels": [
+                    "拳斗",
+                    "锐气点"
+                ],
+                "rows": [
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 6
+                                }
+                            ]
+                        },
+                        0
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 6
+                                }
+                            ]
+                        },
+                        2
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 6
+                                }
+                            ]
+                        },
+                        2
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 6
+                                }
+                            ]
+                        },
+                        3
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 8
+                                }
+                            ]
+                        },
+                        3
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 8
+                                }
+                            ]
+                        },
+                        4
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 8
+                                }
+                            ]
+                        },
+                        4
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 8
+                                }
+                            ]
+                        },
+                        5
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 8
+                                }
+                            ]
+                        },
+                        5
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 8
+                                }
+                            ]
+                        },
+                        6
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 10
+                                }
+                            ]
+                        },
+                        6
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 10
+                                }
+                            ]
+                        },
+                        7
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 10
+                                }
+                            ]
+                        },
+                        7
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 10
+                                }
+                            ]
+                        },
+                        8
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 10
+                                }
+                            ]
+                        },
+                        8
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 10
+                                }
+                            ]
+                        },
+                        9
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 12
+                                }
+                            ]
+                        },
+                        9
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 12
+                                }
+                            ]
+                        },
+                        10
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 12
+                                }
+                            ]
+                        },
+                        10
+                    ],
+                    [
+                        {
+                            "type": "dice",
+                            "toRoll": [
+                                {
+                                    "number": 1,
+                                    "faces": 12
+                                }
+                            ]
+                        },
+                        12
+                    ]
+                ]
+            }
+        ],
+        "classFeatures": [
+            "拳斗|拳斗士|SterlingVermin|1",
+            "钢颚铁护|拳斗士|SterlingVermin|1",
+            "锐气|拳斗士|SterlingVermin|2",
+            "街头智慧|拳斗士|SterlingVermin|2",
+            "浴血不屈|拳斗士|SterlingVermin|3",
+            {
+                "classFeature": "搏击俱乐部|拳斗士|SterlingVermin|3",
+                "gainSubclassFeature": true
+            },
+            "额外攻击|拳斗士|SterlingVermin|5",
+            "万钧痛击|拳斗士|SterlingVermin|5",
+            "锐不可当|拳斗士|SterlingVermin|6"
+        ]
+    }
+]

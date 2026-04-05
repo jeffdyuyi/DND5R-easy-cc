@@ -1,0 +1,69 @@
+[
+  {
+    "ENG_name": "Intrusive Despair",
+    "name": "绝望侵袭",
+    "source": "CrookedMoon24",
+    "page": 129,
+    "level": 4,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 90
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一位魔鬼的号角花"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你诅咒一个范围内的生物，使其心中充满蔓延的被害妄想和绝望。当目标进行{@action 攻击|XPHB}或{@action 魔法|XPHB}动作时，它必须成功通过一次感知豁免否则浪费其动作。当目标成功通过三次对抗该法术的豁免后，法术结束。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "savingThrow": [
+      "感知"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Spells/Intrusive-Despair.webp"
+  }
+]

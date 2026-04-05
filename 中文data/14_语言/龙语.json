@@ -1,0 +1,9 @@
+{
+  "ENG_name": "Draconic",
+  "name": "龙语",
+  "source": "PSI",
+  "page": 9,
+  "typicalSpeakers": [
+    "{@filter 龙|bestiary|source=PSI|type=dragon}"
+  ]
+}

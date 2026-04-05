@@ -1,0 +1,89 @@
+[
+  {
+    "ENG_name": "Staff of Thunder and Lightning",
+    "basicRules2024": true,
+    "bonusWeapon": "+2",
+    "dmg1": "1d6",
+    "dmg2": "1d8",
+    "dmgType": "B",
+    "entries": [
+      "这根法杖可被用作一根魔法长棍（用这根长棍发动的攻击检定和伤害掷骰获得+2加值）。它具有以下额外词条。其中的某项词条一经使用，直至次日黎明前你都无法再次使用。",
+      {
+        "ENG_name": "Lightning",
+        "entries": [
+          "当你用法杖发动近战攻击并命中时，你可以对目标造成额外{@damage 2d6}点闪电伤害（无需动作）。"
+        ],
+        "name": "电闪",
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Thunder",
+        "entries": [
+          "当你用法杖发动近战攻击并命中时，你可以让法杖爆发出距你300尺内都能听见的雷霆巨响（无需动作）。被你击中的目标必须通过一次{@dc 17}的体质豁免，否则陷入{@condition 震慑|XPHB}状态，持续至你的下个回合结束。"
+        ],
+        "name": "雷鸣",
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Thunder and Lightning",
+        "entries": [
+          "当你用法杖发动近战攻击并命中时，你可以立刻执行{@variantrule 附赠动作|XPHB}来同时使用电闪和雷鸣词条（见上文）。这样做只会消耗雷霆词条的使用次数，而不会消耗电闪或雷鸣的使用次数。"
+        ],
+        "name": "雷霆",
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Lightning Strike",
+        "entries": [
+          "你可以执行{@action 魔法|XPHB}动作，让法杖从尖端射出一道覆盖宽5尺，长120尺线状区域的{@variantrule 线状 [效应区域]|XPHB|线状}闪电束。所有在该{@variantrule 线状 [效应区域]|XPHB|线状}区域内的生物都需要进行{@dc 17}的敏捷豁免，豁免失败则其受到{@damage 9d6}闪电伤害，豁免成功则伤害减半。"
+        ],
+        "name": "闪电打击",
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Thunderclap",
+        "entries": [
+          "你可以执行{@action 魔法|XPHB}动作，让法杖制造一记在你600尺内都能听见的惊雷声响。以你为源点60尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内的所有生物都需要进行{@dc 17}的体质豁免。豁免失败则其受到{@damage 2d6}雷鸣伤害并陷入{@condition 耳聋|XPHB}状态，持续1分钟；豁免成功则仅受半伤。"
+        ],
+        "name": "惊雷",
+        "type": "entries"
+      }
+    ],
+    "hasFluffImages": true,
+    "lootTables": [
+      "奥秘 - 极珍稀|XDMG",
+      "圣物 - 极珍稀|XDMG"
+    ],
+    "mastery": [
+      "失衡|XPHB"
+    ],
+    "name": "雷霆法杖",
+    "page": 311,
+    "property": [
+      "V|XPHB"
+    ],
+    "rarity": "very rare",
+    "reqAttune": true,
+    "source": "XDMG",
+    "srd52": true,
+    "staff": true,
+    "type": "M|XPHB",
+    "weaponCategory": "简易",
+    "weight": 4,
+    "translator": "不全书",
+    "valueReference": 40000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Staff of Thunder and Lightning.webp"
+          },
+          "width": 244,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

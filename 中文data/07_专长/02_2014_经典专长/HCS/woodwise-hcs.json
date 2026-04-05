@@ -1,0 +1,29 @@
+[
+    {
+        "ENG_name": "Woodwise",
+        "name": "林木之睿",
+        "source": "HumblewoodCampaignSetting",
+        "page": 47,
+        "skillProficiencies": [
+            {
+                "choose": {
+                    "from": [
+                        "生存",
+                        "自然"
+                    ]
+                }
+            }
+        ],
+        "entries": [
+            "你一生都生活在各种参天木林之间，你是寻路的专家，即使是最为险峻的地形你也有自信能够找到路。你获得下列增益：",
+            {
+                "type": "list",
+                "items": [
+                    "你获得{@skill 求生}或{@skill 自然}熟练项。",
+                    "你无视困难地形。",
+                    "除非受魔法效应影响，否则你不会在自然环境中迷路。"
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "+2 Hunting Rifle",
+    "name": "+2 狩猎步枪",
+    "source": "XDMG",
+    "page": 324,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "rare",
+    "weight": 8,
+    "valueRarity": "珍稀",
+    "weaponCategory": "martial",
+    "age": "现代",
+    "property": [
+      "AF|XDMG",
+      "RLD|XDMG",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "缓速|XPHB"
+    ],
+    "range": "80/240",
+    "reload": 5,
+    "dmg1": "2d10",
+    "dmgType": "P",
+    "firearm": true,
+    "weapon": true,
+    "ammoType": "枪械子弹|xphb",
+    "namePrefix": "+2 ",
+    "srd52": true,
+    "basicRules2024": true,
+    "bonusWeapon": "+2",
+    "entries": [
+      "使用这把魔法武器进行攻击和伤害判定时，你会获得{=bonusWeapon}的额外加成。"
+    ],
+    "classFeatures": [
+      "仿制魔法物品|奇械师|efa|2|efa"
+    ],
+    "lootTables": [
+      "武备 - 珍稀|XDMG"
+    ],
+    "_isVariant": true,
+    "valueReference": 4000
+  }
+]

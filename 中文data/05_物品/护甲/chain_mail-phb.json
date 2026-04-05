@@ -1,0 +1,34 @@
+[
+  {
+    "name": "链甲",
+    "ENG_name": "Chain Mail",
+    "source": "PHB",
+    "page": 145,
+    "edition": "classic",
+    "type": "HA",
+    "rarity": "none",
+    "weight": 55,
+    "value": 7500,
+    "ac": 16,
+    "strength": "13",
+    "stealth": true,
+    "armor": true,
+    "entries": [
+      "该护甲由互相锁接的金属环编成。链甲还包括在甲胄下面穿戴的一层织物衬里，用以阻止擦伤并减缓挥击的冲击。此护甲同时还附有护手。"
+    ],
+    "basicRules": true,
+    "referenceSources": [
+      "CoS",
+      "SCC-ARiR",
+      "CRCotN",
+      "DSotDQ",
+      "PaBTSO",
+      "VEoR",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "链甲|XPHB"
+    ],
+    "srd": true
+  }
+]

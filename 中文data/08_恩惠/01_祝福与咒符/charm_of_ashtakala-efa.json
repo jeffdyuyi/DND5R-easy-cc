@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Charm of Ashtakala",
+    "name": "阿什塔卡拉护咒",
+    "source": "EFA",
+    "page": 51,
+    "type": "Charm",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "limited": {
+              "1": [
+                "致病射线|xphb#4"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "entries": [
+      "当你拥有此魅惑时，你知晓{@language 深渊语|XPHB}和{@language 炼狱语|XPHB}。你可以消耗此魅惑来施放{@spell 致病射线|XPHB}（4环版本）。"
+    ]
+  }
+]

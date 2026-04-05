@@ -1,0 +1,30 @@
+[
+  {
+    "name": "火把",
+    "ENG_name": "Torch",
+    "source": "XPHB",
+    "page": 229,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 1,
+    "value": 1,
+    "entries": [
+      "火把点燃后能够燃烧 1 小时，燃烧期间发出半径 20 尺的{@variantrule 明亮光照|XPHB}以及额外 20 尺的{@variantrule 微光光照|XPHB}。当你执行{@action 攻击|XPHB}动作时，你可以将火把当作简易近战武器，并使用火把发动攻击。命中时，目标受到 1 火焰伤害。"
+    ],
+    "basicRules2024": true,
+    "light": [
+      {
+        "bright": 20,
+        "dim": 40
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "referenceSources": [
+      "DrDe-TDoN"
+    ],
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

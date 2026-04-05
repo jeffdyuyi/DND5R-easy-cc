@@ -1,0 +1,35 @@
+[
+  {
+    "ENG_name": "Ring of Fire Resistance",
+    "name": "火焰抗性戒指",
+    "source": "XDMG",
+    "page": 294,
+    "srd52": true,
+    "basicRules2024": true,
+    "type": "RG|XDMG",
+    "resist": [
+      "火焰"
+    ],
+    "detail1": "石榴石",
+    "rarity": "rare",
+    "hasRefs": true,
+    "entries": [
+      "{#itemEntry 抗性戒指|XDMG}"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Ring of Resistance.webp"
+          },
+          "width": 832,
+          "height": 1024
+        }
+      ]
+    }
+  }
+]

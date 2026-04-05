@@ -1,0 +1,20 @@
+[
+  {
+    "ENG_name": "Thrown Weapon Fighting",
+    "name": "投掷武器战斗",
+    "source": "XPHB",
+    "page": 210,
+    "category": "FS",
+    "prerequisite": [
+      {
+        "feature": [
+          "战斗风格"
+        ]
+      }
+    ],
+    "entries": [
+      "当你使用具有{@itemProperty T|XPHB|投掷}词条的武器进行远程攻击检定并命中时，你在该次伤害掷骰中获得 +2 加值。"
+    ],
+    "translator": "不全书"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Djinn and Tonic (Common)",
+    "name": "气巨灵汤力（普通）",
+    "source": "GriffonsSaddlebag2",
+    "page": 71,
+    "type": "P",
+    "tier": "次要",
+    "rarity": "common",
+    "entries": [
+      "典型的{@item 气巨灵汤力|GriffonsSaddlebag2}是一种稀有度为普通的药水，它是一种可以引发魔法微风，让你在喝下后的1小时内头发、斗篷或其他衣物戏剧性飘动的特制酒精饮品。一小团雾气在药水的液体上方舞动并轻柔地搅拌着它。这种饮品口感顺滑，略带气泡，十分清爽，含有杜松子、接骨木莓、白桃和薰衣草的味道。但由于其魔法的本质，此药水中所含的酒精对生物的影响是非魔法饮料中酒精的两倍。"
+    ],
+    "lootTables": [
+      "魔法物品表 A2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Djinn-and-Tonic.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

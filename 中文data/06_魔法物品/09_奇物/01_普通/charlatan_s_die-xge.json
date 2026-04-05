@@ -1,0 +1,21 @@
+[
+  {
+    "ENG_name": "Charlatan's Die",
+    "name": "骗子骰",
+    "source": "XGE",
+    "page": 136,
+    "reprintedAs": [
+      "骗子骰|XDMG"
+    ],
+    "tier": "次要",
+    "rarity": "common",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "当你投掷这枚六面骰子时，你可以操控它骰出的点数。"
+    ],
+    "translator": "不全书",
+    "valueReference": 100,
+    "type": "W"
+  }
+]

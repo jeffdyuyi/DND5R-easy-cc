@@ -1,0 +1,48 @@
+[
+  {
+    "name": "震慑",
+    "ENG_name": "Stunned",
+    "source": "PHB",
+    "page": 292,
+    "srd": true,
+    "basicRules": true,
+    "entries": [
+      {
+        "type": "list",
+        "items": [
+          "被震慑的生物陷入{@condition 失能}状态，并且无法移动，以及无法清晰连贯地说话。",
+          "该生物进行力量和敏捷豁免时直接失败。",
+          "对该生物发动攻击检定时具有优势。"
+        ]
+      }
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "conditionsdiseases/PHB/stunned.webp"
+          },
+          "width": 393,
+          "height": 463
+        }
+      ]
+    },
+    "hasFluffImages": true,
+    "otherSources": [
+      {
+        "source": "RMR",
+        "page": 62
+      },
+      {
+        "source": "HftT",
+        "page": 48
+      }
+    ],
+    "reprintedAs": [
+      "震慑|XPHB"
+    ],
+    "translator": "不全书"
+  }
+]

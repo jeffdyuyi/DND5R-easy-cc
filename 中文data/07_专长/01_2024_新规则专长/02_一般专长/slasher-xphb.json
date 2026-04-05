@@ -1,0 +1,44 @@
+[
+  {
+    "ENG_name": "Slasher",
+    "name": "劈砍者",
+    "source": "XPHB",
+    "page": 208,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Hamstring",
+        "name": "伤筋",
+        "type": "entries",
+        "entries": [
+          "每回合一次，当你用造成挥砍伤害的攻击命中一个生物时，你可以使其{@variantrule 速度|XPHB}降低 10 尺，持续至你的下回合开始。"
+        ]
+      },
+      {
+        "ENG_name": "Enhanced Critical",
+        "name": "强化重击",
+        "type": "entries",
+        "entries": [
+          "当你掷出{@variantrule 重击|XPHB}并对一个生物造成挥砍伤害时，该生物进行的所有攻击检定都将具有{@variantrule 劣势|XPHB}，持续至你的下一回合开始为止。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

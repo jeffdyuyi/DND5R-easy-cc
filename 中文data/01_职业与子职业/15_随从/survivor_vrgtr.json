@@ -1,0 +1,86 @@
+[
+    {
+        "name": "学徒幸存者",
+        "ENG_name": "Apprentice Survivor",
+        "source": "VRGtR",
+        "classData": {
+            "name": "学徒幸存者",
+            "ENG_name": "Apprentice Survivor",
+            "source": "VRGtR",
+            "page": 194,
+            "isSurvivor": true,
+            "hd": {
+                "number": 1,
+                "faces": 6
+            },
+            "classFeatures": [
+                "学徒特性|学徒幸存者|VRGtR|1",
+                "幸存者天赋|幸存者|VRGtR|2",
+                "幸存者天赋|幸存者|VRGtR|3"
+            ]
+        }
+    },
+    {
+        "name": "信徒幸存者",
+        "ENG_name": "Disciple Survivor",
+        "source": "VRGtR",
+        "classData": {
+            "name": "信徒幸存者",
+            "ENG_name": "Disciple Survivor",
+            "source": "VRGtR",
+            "page": 194,
+            "isSurvivor": true,
+            "hd": {
+                "number": 1,
+                "faces": 8
+            },
+            "classFeatures": [
+                "信徒特性|信徒幸存者|VRGtR|1",
+                "幸存者天赋|幸存者|VRGtR|2",
+                "幸存者天赋|幸存者|VRGtR|3"
+            ]
+        }
+    },
+    {
+        "name": "鬼祟者幸存者",
+        "ENG_name": "Sneak Survivor",
+        "source": "VRGtR",
+        "classData": {
+            "name": "鬼祟者幸存者",
+            "ENG_name": "Sneak Survivor",
+            "source": "VRGtR",
+            "page": 194,
+            "isSurvivor": true,
+            "hd": {
+                "number": 1,
+                "faces": 8
+            },
+            "classFeatures": [
+                "鬼祟者特性|鬼祟者幸存者|VRGtR|1",
+                "幸存者天赋|幸存者|VRGtR|2",
+                "幸存者天赋|幸存者|VRGtR|3"
+            ]
+        }
+    },
+    {
+        "name": "骑士学徒幸存者",
+        "ENG_name": "Squire Survivor",
+        "source": "VRGtR",
+        "classData": {
+            "name": "骑士学徒幸存者",
+            "ENG_name": "Squire Survivor",
+            "source": "VRGtR",
+            "page": 194,
+            "isSurvivor": true,
+            "hd": {
+                "number": 1,
+                "faces": 10
+            },
+            "classFeatures": [
+                "骑士学徒特性|骑士学徒幸存者|VRGtR|1",
+                "幸存者天赋|幸存者|VRGtR|2",
+                "幸存者天赋|幸存者|VRGtR|3"
+            ]
+        }
+    }
+]

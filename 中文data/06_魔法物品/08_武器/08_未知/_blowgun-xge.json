@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Blowgun",
+    "name": "精金吹箭筒",
+    "source": "XGE",
+    "page": 78,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "unknown",
+    "weight": 1,
+    "value": 1000,
+    "weaponCategory": "martial",
+    "property": [
+      "A|XPHB",
+      "LD|XPHB"
+    ],
+    "mastery": [
+      "侵扰|XPHB"
+    ],
+    "range": "25/100",
+    "dmg1": "1",
+    "dmgType": "P",
+    "weapon": true,
+    "ammoType": "针|xphb",
+    "hasFluffImages": true,
+    "namePrefix": "精金",
+    "reprintedAs": [
+      "精金武器|XDMG"
+    ],
+    "tier": "主要",
+    "valueExpression": "[[baseItem.value]] + 50000",
+    "entries": [
+      "使用这个武器击中物体时，每次命中都视为重击。"
+    ],
+    "_isVariant": true
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "name": "手弩",
+    "ENG_name": "Hand Crossbow",
+    "source": "PHB",
+    "page": 149,
+    "edition": "classic",
+    "type": "R",
+    "rarity": "none",
+    "weight": 3,
+    "value": 7500,
+    "weaponCategory": "martial",
+    "property": [
+      "A",
+      "L",
+      "LD"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "range": "30/120",
+    "ammoType": "弩矢|PHB",
+    "basicRules": true,
+    "crossbow": true,
+    "referenceSources": [
+      "CoS"
+    ],
+    "reprintedAs": [
+      "手弩|XPHB"
+    ],
+    "srd": true,
+    "weapon": true
+  }
+]

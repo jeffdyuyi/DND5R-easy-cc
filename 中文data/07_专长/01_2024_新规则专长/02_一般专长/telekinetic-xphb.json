@@ -1,0 +1,55 @@
+[
+  {
+    "ENG_name": "Telekinetic",
+    "name": "念动力",
+    "source": "XPHB",
+    "page": 208,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        }
+      }
+    ],
+    "additionalSpells": [
+      {
+        "ability": "继承",
+        "known": {
+          "_": [
+            "法师之手|xphb#c"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Minor Telekinesis",
+        "name": "次级心灵遥控",
+        "type": "entries",
+        "entries": [
+          "你习得戏法{@spell 法师之手|XPHB}。你施展这道戏法时，你无需言语成分与姿势成分，且可以让这只灵体手{@condition 隐形|XPHB}，还可以令它的施法距离以及其可远离你的最大距离均提升 30 尺。该法术的施法属性是你以此专长提升的属性。"
+        ]
+      },
+      {
+        "ENG_name": "Telekinetic Shove",
+        "name": "念力推撞",
+        "type": "entries",
+        "entries": [
+          "以一个{@variantrule 附赠动作|XPHB}，你可以尝试以念动力推撞一个位于你 30 尺内的你可见的生物。当你这样做时，目标必须通过一次力量豁免（{@dc 8} + 你用此专长提升的属性的调整值 + 你的{@variantrule 熟练|XPHB|熟练加值}）否则将被你拉近或推离 5 尺。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "Laser Pistol",
+    "name": "狱火激光手枪",
+    "source": "BGDIA",
+    "page": 223,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "uncommon",
+    "weight": 2,
+    "valueRarity": "极珍稀",
+    "weaponCategory": "martial",
+    "age": "未来",
+    "property": [
+      "AF|XDMG",
+      "RLD|XDMG"
+    ],
+    "mastery": [
+      "侵扰|XPHB"
+    ],
+    "range": "40/120",
+    "reload": 50,
+    "dmg1": "3d6",
+    "dmgType": "R",
+    "firearm": true,
+    "weapon": true,
+    "ammoType": "能量电池|xdmg",
+    "namePrefix": "狱火",
+    "entries": [
+      "这件武器由地狱铁打造，并带有地狱火纹理，这些纹理散发出暗淡的光芒，照亮了5尺半径的范围。",
+      "任何被这把武器攻击致死的人形生物，其灵魂会被吸入冥河，在那里它将立即重生为一个{@creature 劣魔}恶魔。"
+    ],
+    "light": [
+      {
+        "dim": 5
+      }
+    ],
+    "_isVariant": true,
+    "valueReference": 400
+  }
+]

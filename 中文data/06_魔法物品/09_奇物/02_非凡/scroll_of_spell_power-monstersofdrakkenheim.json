@@ -1,0 +1,57 @@
+[
+  {
+    "ENG_name": "Scroll of Spell Power",
+    "name": "强效施法卷轴",
+    "source": "MonstersOfDrakkenheim",
+    "page": 392,
+    "type": "SC|XPHB",
+    "rarity": "uncommon",
+    "entries": [
+      "当你为1环或更高等级的法术掷骰伤害时，你可以消耗此卷轴来重掷最多等同于该法术等级的伤害骰子数。你必须使用新的掷骰结果。",
+      {
+        "ENG_name": "Crafting",
+        "name": "手作",
+        "type": "entries",
+        "entries": [
+          "制作强效施法卷轴需要一个非普通工坊和以下非普通成分：",
+          {
+            "type": "list",
+            "items": [
+              {
+                "ENG_name": "[Animus]",
+                "name": "[精魄]",
+                "type": "item",
+                "entries": [
+                  "任意"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Fluid]",
+                "name": "[流体]",
+                "type": "item",
+                "entries": [
+                  "来自精类、龙或巨人的怪物鲜血"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Hide]",
+                "name": "[表皮]",
+                "type": "item",
+                "entries": [
+                  "怪兽的皮肤"
+                ],
+                "nameDot": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "hasFluffImages": true
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "ENG_name": "Tome of Leadership and Influence",
+    "name": "统御卷册",
+    "source": "DMG",
+    "page": 208,
+    "srd": true,
+    "referenceSources": [
+      "CoA",
+      "VEoR",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "统御卷册|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "very rare",
+    "wondrous": true,
+    "weight": 5,
+    "ability": {
+      "cha": 2
+    },
+    "entries": [
+      "这本书包含影响和魅惑他人的指导方针，其文字蕴含魔力。如果你在6日或更少的时间内花费48小时研读这本书的内容并实践其中的指导方针，你的魅力属性和魅力属性上限均增加2。此后这本书失去魔力，直到一个世纪后才能恢复。"
+    ],
+    "lootTables": [
+      "魔法物品表H"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 20000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Tome of Leadership and Influence.webp"
+          },
+          "width": 791,
+          "height": 850
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

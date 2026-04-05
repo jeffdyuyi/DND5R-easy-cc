@@ -1,0 +1,18 @@
+[
+  {
+    "name": "铁蒺藜",
+    "ENG_name": "Caltrops",
+    "source": "XPHB",
+    "page": 224,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 100,
+    "entries": [
+      "以一个{@action 操作|XPHB}动作，你能把一包铁蒺撒至地面并覆盖你周围5尺内的一处5尺方形区域。任何生物每回合首次进入这片区域时都必须通过一次{@dc 15}的敏捷豁免，否则受到1点穿刺伤害，并且{@variantrule 速度|XPHB}降至0，直到其下一回合开始为止。重新收集这些铁蒺藜需要花费10分钟时间。"
+    ],
+    "basicRules2024": true,
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

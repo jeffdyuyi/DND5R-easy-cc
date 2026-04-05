@@ -1,0 +1,23 @@
+[
+  {
+    "name": "高档服装",
+    "ENG_name": "Fine Clothes",
+    "source": "PHB",
+    "page": 150,
+    "type": "G",
+    "rarity": "none",
+    "weight": 6,
+    "value": 1500,
+    "basicRules": true,
+    "referenceSources": [
+      "CoS",
+      "DoSI",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "高档服装|XPHB"
+    ],
+    "srd": true,
+    "translator": "不全书"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "ENG_name": "Pennypuncher Slingshot",
+    "name": "挥金如土弹弓",
+    "source": "GriffonsSaddlebag2",
+    "page": 134,
+    "baseItem": "投石索|phb",
+    "type": "R",
+    "tier": "主要",
+    "rarity": "rare",
+    "weaponCategory": "简易",
+    "property": [
+      "A"
+    ],
+    "range": "30/120",
+    "dmg1": "1d4",
+    "dmgType": "B",
+    "bonusWeapon": "+1",
+    "entries": [
+      "这把弹弓需要双手进行攻击，其上面装饰着硬币般的图案。你使用这把魔法武器进行的攻击检定和伤害掷骰获得 +1 加值。此外，当你用此武器进行远程攻击并使用一枚硬币作为其弹药时，它会根据你使用的硬币价值在命中时造成额外伤害：",
+      {
+        "type": "table",
+        "colLabels": [
+          "钱币",
+          "伤害附赠动作"
+        ],
+        "colStyles": [
+          "col-2 text-left",
+          "col-10 text-left"
+        ],
+        "rows": [
+          [
+            "{@item 铜币(cp)|PHB|1cp}",
+            "+1"
+          ],
+          [
+            "{@item 银币(sp)|PHB|1sp}",
+            "+{@damage 1d4}"
+          ],
+          [
+            "{@item 银金币(ep)|PHB|1ep}",
+            "+{@damage 1d6}"
+          ],
+          [
+            "{@item 金币(gp)|PHB|1金币}",
+            "+{@damage 1d8}"
+          ],
+          [
+            "{@item 铂金币(pp)|PHB|1pp}",
+            "+{@damage 1d12}"
+          ]
+        ]
+      },
+      "通过这种方式发射的钱币回收遵循正常的弹药回收规则。根据战场的性质，由游戏主持人决定你可能回收到比正常情况更多或更少的钱币。"
+    ],
+    "ammoType": "投石索子弹|phb",
+    "lootTables": [
+      "魔法物品表 G2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Pennypuncher-Slingshot.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

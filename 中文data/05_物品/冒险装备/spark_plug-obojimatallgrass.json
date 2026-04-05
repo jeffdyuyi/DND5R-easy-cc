@@ -1,0 +1,55 @@
+[
+  {
+    "ENG_name": "Spark Plug",
+    "name": "火花塞",
+    "source": "ObojimaTallGrass",
+    "page": 214,
+    "type": "Ingred",
+    "rarity": "uncommon",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 11|large}|SneakerProMedium}",
+            "{@font {@style 17|large}|SneakerProMedium}",
+            "{@font {@style 11|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "火花塞被药水制造者用来添加一小股魔法能量，刚好足以作为特定反应的催化剂。大多数胧忆岛居民仍然不知道这些奇怪物品是什么，更不用说它们来自哪里，但知道消息的游侠和游荡者都对此守口如瓶。"
+    ],
+    "lootTables": [
+      "海岸高地非普通原料|ObojimaTallGrass",
+      "狂风农田非普通原料|ObojimaTallGrass",
+      "舒里塔希的非普通原料赠礼|ObojimaTallGrass",
+      "热水大地非普通原料|ObojimaTallGrass",
+      "阿伯拉山非普通原料|ObojimaTallGrass",
+      "湿地非普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/spark-plug.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 2017,
+          "height": 2017
+        }
+      ]
+    }
+  }
+]

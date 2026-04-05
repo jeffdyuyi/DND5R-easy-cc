@@ -1,0 +1,154 @@
+[
+  {
+    "ENG_name": "Octarine Spray",
+    "name": "第八虹光喷射",
+    "source": "DungeonsDrakkenheim",
+    "page": 228,
+    "level": 7,
+    "school": "V",
+    "subschools": [
+      "受污染的"
+    ],
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "cone",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一片价值100gp的妄质晶片，作为法术的耗材",
+        "cost": 10000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "当你施放这个法术时，你获得1层{@adventure 污染层数|DungeonsDrakkenheim|12}。第八虹光从你的手中闪现。每道射线都有不同的颜色和不同的法力与目的，参见下方表格。60英尺锥状范围内的每个生物必须成功通过一次体质豁免检定。为每个目标掷一个{@dice d8}以确定影响它的射线颜色。",
+      {
+        "type": "table",
+        "colStyles": [
+          "col-2 text-center",
+          "col-10"
+        ],
+        "colLabels": [
+          "d8",
+          "第八虹光喷射效应"
+        ],
+        "rows": [
+          [
+            "1",
+            "若豁免失败，目标将受到{@damage 20d6}点心灵伤害；豁免成功则只受半数伤害。"
+          ],
+          [
+            "2",
+            "若豁免失败，目标将受到{@damage 20d6}点暗蚀伤害；豁免成功则只受半数伤害。"
+          ],
+          [
+            "3",
+            "若豁免失败，目标将受到{@damage 20d6}点力场伤害；豁免成功则只受半数伤害。"
+          ],
+          [
+            "4",
+            "若豁免失败，目标将受到{@damage 20d6}点光耀伤害；豁免成功则只受半数伤害。"
+          ],
+          [
+            "5",
+            "若豁免失败，目标将受到{@damage 20d6}点雷鸣伤害；豁免成功则只受半数伤害。"
+          ],
+          [
+            "6",
+            "在每个受影响目标的回合开始时，它必须得消耗自己全部的移动力径直移动向着它可见的、离它最近的生物。然后，受影响生物使用其动作，对着其触及范围内的一名随机生物发起一次近战武器攻击。如果它的触及范围内没有生物，受影响的目标本回合不作任何事。在他的每个回合结束时，受影响的生物都可以进行一次感知豁免，若该次豁免成功则终止该效应对它的影响。"
+          ],
+          [
+            "7",
+            "在每个受影响的回合开始时，目标获得1层{@adventure 污染层数|DungeonsDrakkenheim|12}。在每个回合结束时，受影响的目可以尝试进行一次体质豁免检定。若成功，则该效应对该目标结束，但已获得的任何{@adventure 污染层数|DungeonsDrakkenheim|12}仍然保留。"
+          ],
+          [
+            "8",
+            "{@b 特殊。} 目标将受到额外一道射线影响。重复投掷两次本效应表。此法术并没有对同一生物施加效应的数量限制。"
+          ]
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "XPHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        }
+      ]
+    },
+    "damageInflict": [
+      "力场",
+      "暗蚀",
+      "心灵",
+      "光耀",
+      "雷鸣"
+    ],
+    "savingThrow": [
+      "体质",
+      "感知"
+    ],
+    "miscTags": [
+      "RO"
+    ]
+  }
+]

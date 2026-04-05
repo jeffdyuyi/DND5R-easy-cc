@@ -1,0 +1,91 @@
+[
+  {
+    "ENG_name": "Unraveling Whisper",
+    "name": "溃心低语",
+    "source": "CrookedMoon14",
+    "page": 133,
+    "reprintedAs": [
+      "溃心低语|crookedmoon24"
+    ],
+    "level": 2,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "round",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "选择一个你在射程内能看见的生物并低语一句只有目标能听到的恐怖短语。目标必须进行一次感知豁免检定。豁免失败时，目标受到{@damage 2d6}心灵伤害并陷入{@condition 恐慌}状态直到你的下个回合开始。豁免成功时，目标仅受到一半伤害。",
+      "当以这种方式处于{@condition 恐慌}状态时，该生物对你选择的钝击、穿刺或挥砍伤害具有易伤。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "使用三环或更高法术位施展该法术时，你使用的法术位每比二环高一环，就可以多指定一个目标。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "心灵"
+    ],
+    "conditionInflict": [
+      "恐慌"
+    ],
+    "savingThrow": [
+      "感知"
+    ],
+    "miscTags": [
+      "SCT",
+      "SGT"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Spells/Unraveling-Whisper.webp"
+  }
+]

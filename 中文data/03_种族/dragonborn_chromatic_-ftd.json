@@ -1,0 +1,211 @@
+[
+  {
+    "name": "龙裔 (色彩)",
+    "ENG_name": "Dragonborn (Chromatic)",
+    "source": "FTD",
+    "page": 10,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "resist": [
+      {
+        "choose": {
+          "from": [
+            "强酸",
+            "闪电",
+            "毒素",
+            "火焰",
+            "寒冷"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Chromatic Ancestry",
+        "name": "色彩血统",
+        "type": "entries",
+        "entries": [
+          "你拥有一个色彩龙祖先，这赋予你特殊的魔法亲和。从色彩血统表格中选择一种龙。这将决定你其他特质的伤害类型，如表格所示。",
+          {
+            "type": "table",
+            "caption": "色彩血统",
+            "colLabels": [
+              "龙",
+              "伤害类型"
+            ],
+            "colStyles": [
+              "col-6 text-center",
+              "col-6 text-center"
+            ],
+            "rows": [
+              [
+                "黑",
+                "强酸"
+              ],
+              [
+                "蓝",
+                "闪电"
+              ],
+              [
+                "绿",
+                "毒素"
+              ],
+              [
+                "红",
+                "火焰"
+              ],
+              [
+                "白",
+                "寒冷"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Breath Weapon",
+        "type": "entries",
+        "name": "吐息武器",
+        "entries": [
+          "当你使用{@action 攻击}动作时，你可以将其中一次攻击替换为呼出一种30尺长，5尺宽的魔法能量。矩形范围内的每个生物都必须成功通过一次DC为（8+你的体质调整值+你的熟练加值）的敏捷豁免，否则将受到{@damage 1d10}的对应色彩龙血脉的伤害，成功则伤害减半。该伤害在你达到指定等级时增加{@damage 1d10}，5级时增至{@damage 2d10}，11级时增至{@damage 3d10}，17级时增至{@damage 4d10}。",
+          "你可以使用该特性的次数等同于你的熟练加值，你在完成 一次长休后重获所有已使用的次数。"
+        ]
+      },
+      {
+        "ENG_name": "Draconic Resistance",
+        "name": "龙族抗性",
+        "type": "entries",
+        "entries": [
+          "你获得与你的色彩龙祖相关的伤害类型的抗性。"
+        ]
+      },
+      {
+        "ENG_name": "Chromatic Warding",
+        "name": "色彩守护",
+        "type": "entries",
+        "entries": [
+          "5级起，你可以用一个动作引导出你的龙族能量来保护自身。1分钟内，你免疫你所选的色彩龙血脉对应的伤害类型。在你使用此特性后，你在完成一次长休之前不能再次使用。"
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "有着色彩龙血脉的龙裔掌控着色彩龙的原生元素力量。色彩龙鲜艳亮丽的颜色——黑，蓝，绿，红，白——闪耀在他们鳞片皮肤的表面，也侵染在他们致命的吐息中。其吐息是狂野的原生元素，承载着火山的怒火，寒风的噬咬或者雷霆的狂怒；也可以是沼泽与森林的精巧低语，烈毒而蚀骨。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/FTD/Chromatic Dragonborn.webp"
+          },
+          "title": "一位红龙裔佣兵正在等待客户",
+          "credit": "Randy Vargas",
+          "width": 1700,
+          "height": 1111
+        }
+      ]
+    },
+    "_versions": [
+      {
+        "_abstract": {
+          "ENG_name": "Dragonborn (Chromatic; {{color}})",
+          "name": "龙裔 (色彩; {{color}})",
+          "source": "FTD",
+          "_mod": {
+            "entries": [
+              {
+                "mode": "removeArr",
+                "names": "色彩血统"
+              },
+              {
+                "mode": "replaceArr",
+                "replace": "吐息武器",
+                "items": {
+                  "ENG_name": "Breath Weapon",
+                  "type": "entries",
+                  "name": "吐息武器",
+                  "entries": [
+                    "当你使用{@action 攻击}动作时，你可以将其中一次攻击替换为呼出一种30尺长、5尺宽的魔法能量。该区域内的每个生物都必须进行一次敏捷豁免（DC = 8 + 你的体质调整值 + 你的熟练加值）。豁免失败时，该生物受到{@damage 1d10} {{damageType}}伤害。豁免成功时，它受到一半伤害。当你在5级时（{@damage 2d10}）、11级时（{@damage 3d10}）和17级时（{@damage 4d10}），此伤害增加{@damage 1d10}。",
+                    "你可以使用该特性的次数等同于你的熟练加值，你在完成 一次长休后重获所有已使用的次数。"
+                  ]
+                }
+              },
+              {
+                "mode": "replaceArr",
+                "replace": "龙族抗性",
+                "items": {
+                  "ENG_name": "Draconic Resistance",
+                  "name": "龙族抗性",
+                  "type": "entries",
+                  "entries": [
+                    "你对{{damageType}}伤害具有抗性。"
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "_implementations": [
+          {
+            "_variables": {
+              "color": "黑",
+              "damageType": "强酸",
+              "resist": [
+                "强酸"
+              ]
+            }
+          },
+          {
+            "_variables": {
+              "color": "蓝",
+              "damageType": "闪电",
+              "resist": [
+                "闪电"
+              ]
+            }
+          },
+          {
+            "_variables": {
+              "color": "绿",
+              "damageType": "毒素",
+              "resist": [
+                "毒素"
+              ]
+            }
+          },
+          {
+            "_variables": {
+              "color": "红",
+              "damageType": "火焰",
+              "resist": [
+                "火焰"
+              ]
+            }
+          },
+          {
+            "_variables": {
+              "color": "白",
+              "damageType": "寒冷",
+              "resist": [
+                "寒冷"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "lineage": "VRGR",
+    "reprintedAs": [
+      "龙裔|XPHB"
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/dragonborn.mp3"
+    }
+  }
+]

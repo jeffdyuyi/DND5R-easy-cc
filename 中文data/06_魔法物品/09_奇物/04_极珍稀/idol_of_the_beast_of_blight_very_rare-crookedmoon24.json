@@ -1,0 +1,70 @@
+[
+  {
+    "ENG_name": "Idol of the Beast of Blight (Very Rare)",
+    "name": "枯朽之兽神像（极珍稀）",
+    "source": "CrookedMoon24",
+    "page": 600,
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "property": [
+      "TCM'24:FH"
+    ],
+    "bonusSpellAttack": "+2",
+    "bonusSpellSaveDc": "+2",
+    "focus": true,
+    "entries": [
+      "这尊由泛白且异变的骨骼制成的雄鹿形状神像，蕴藏着枯朽之兽的邪异知识。它脉动着腐朽与衰败的力量。",
+      "持握这尊神像期间，你可以将其用作你法术的{@variantrule 法器|XPHB}；你的法术攻击检定和法术豁免DC会获得+2加值，该加值取决于该神像的稀有度，并且你还可以使用如下词条。",
+      {
+        "ENG_name": "Rotting Touch (Rare+)",
+        "name": "腐烂触碰（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "你可以使用你的力量、敏捷或感知调整值来进行你{@variantrule 徒手打击|XPHB|徒手打击}的攻击检定和伤害掷骰，并且命中时，你的打击额外造成{@damage 1d6}暗蚀伤害（珍稀），{@damage 1d8}暗蚀伤害（极珍稀），或{@damage 1d10}暗蚀伤害（传说）。"
+        ]
+      },
+      {
+        "ENG_name": "Touch of Oblivion (Rare+)",
+        "name": "湮灭之触（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "作为{@variantrule 附赠动作|XPHB}，你可以接触一个死亡时间不超过1小时的生物。它会迅速腐烂成泛白骨骸，并且该尸体不能再次被用于该属性。在你的下一回合结束前，你下一次使用腐朽之月属性进行{@variantrule 徒手打击|XPHB}命中时，它会改为一次{@variantrule 重击|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Hallucinatory Spores (Very Rare+)",
+        "name": "幻孢侵心（极珍稀+）",
+        "type": "entries",
+        "entries": [
+          "当你使用法术位或神像施法时，你可以选择你周边10尺范围内一个你可见的生物。它必须成功通过一次感知豁免检定（DC = 16 + 神像的加值）否则受到{@damage 2d6}心灵伤害并在你的下个回合开始前在攻击检定上具有{@variantrule 劣势|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Rot in the Flesh (Very Rare+)",
+        "name": "朽入膏肓（极珍稀+）",
+        "type": "entries",
+        "entries": [
+          "你可以从该神像中施展{@spell 树肤术|XPHB}（仅自身）。在持续时间内，当一个生物以一次近战攻击检定命中你时，其会受到{@damage 1d8}暗蚀伤害。一旦从神像中施展了该法术，则直至次日黄昏之前，都无法再次从中施展。"
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "树肤术|XPHB"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Idol%20of%20the%20Beast%20of%20Blight.webp"
+          },
+          "width": 908,
+          "height": 1200,
+          "credit": "Minard Maxime"
+        }
+      ]
+    }
+  }
+]

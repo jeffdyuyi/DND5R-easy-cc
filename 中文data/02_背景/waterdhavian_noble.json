@@ -1,0 +1,129 @@
+[
+  {
+    "name": "深水人贵族",
+    "ENG_name": "Waterdhavian Noble",
+    "source": "SCAG",
+    "page": 154,
+    "skillProficiencies": [
+      {
+        "history": true,
+        "persuasion": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "choose": {
+          "from": [
+            "gaming set",
+            "musical instrument"
+          ]
+        }
+      }
+    ],
+    "languageProficiencies": [
+      {
+        "anyStandard": 1
+      }
+    ],
+    "startingEquipment": [
+      {
+        "_": [
+          "高档服装|phb",
+          {
+            "special": "家系族谱"
+          },
+          {
+            "special": "高档 兹沙酒zzar 或红酒"
+          },
+          {
+            "special": "钱包",
+            "containsValue": 2000
+          }
+        ]
+      },
+      {
+        "a": [
+          "玺戒|phb"
+        ],
+        "b": [
+          {
+            "special": "胸针"
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 历史}, {@skill 游说}"
+          },
+          {
+            "ENG_name": "Languages:",
+            "name": "语言",
+            "type": "item",
+            "entry": "任选一个"
+          },
+          {
+            "ENG_name": "Tool Proficiencies:",
+            "name": "工具熟练",
+            "type": "item",
+            "entry": "一种类型的{@filter 赌具|items|source=phb|miscellaneous=平凡的|type=赌具}或{@filter 乐器|items|source=phb|miscellaneous=平凡的|type=乐器}"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "一套{@item 高档服装|phb}，一枚 {@item 玺戒|phb}或胸针，一份家系族谱，一袋的高档 兹沙酒zzar 或红酒，以及一个装有 20gp 的小包"
+          }
+        ]
+      },
+      {
+        "ENG_name": "Feature: Kept in Style",
+        "name": "特性： 保持风度",
+        "type": "entries",
+        "entries": [
+          "在深水城或北地其他地方时，你的家族会确保你的每日的日常用度。你的名字与玺印就足以支付大部分的费用，而你经常光顾的旅馆、酒馆和餐馆都很乐于记下你的债务，并将账单寄给你的家人以解决你欠下的债务。",
+          "这种优势使你能过上舒适的生活，而不必每天支付 2 gp的费用，也可以减少富裕或奢华程度生活的成本。你不能以更低价的生活方式来将这只生活费当做收入这种得益属于信用体系，而不是明确的货币奖励。"
+        ],
+        "data": {
+          "isFeature": true
+        }
+      },
+      {
+        "ENG_name": "Suggested Characteristics",
+        "name": "建议人物特征",
+        "type": "section",
+        "entries": [
+          "使用 《玩家手册》 中\"{@background 贵族} \"的特征表格作为你的基础特征和动机，并在适当的时候修改条目以让其符合你作为深水城贵族的身份。",
+          "和其他贵族一样，你出生和成长的世界与大多数人的认知不同这是种给予你特权，但同时也要求你履行相应义务的身份。你的牵绊可能与所属家族相关，也可能与另一个与所属家族同盟或敌对的贵族家族相关。你的理想某种程度上取决于你如何看待自己在家庭中的角色，以及你打算如何在世上表现你作为家族代表的身份。"
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "entries": [
+                "你是深水城伟大贵族家族之一的后裔。人类家族，他们小心守护着自己的特权和在辉煌之城的地位，深水城贵族在费伦以古怪、被宠坏、贪腐和最重要的是富有而闻名。",
+                "无论你是这一声誉的闪亮代表，还是通过成为一个例外来证明这一规则的人，当人们知道你的姓氏及其含义时，他们对你有所期待。你开始冒险的原因可能以某种方式涉及到你的家庭：你是家庭中的反叛者，更喜欢深入肮脏的地牢而不是在舞会上品尝扎尔吗？或者你是为了家族的利益而拿起剑或施展魔法，确保他们有一个享有盛名的人来维护他们的遗产？",
+                "与你的地下城主合作，想出你是其中一员的家庭——在深水城大约有七十五支家系，每个家系都有自己的财务利益、专长和计划。你可能是你家族的主线成员，有可能有一天成为它的领袖。或者你可能只是众多表亲中的一个，声望较低，但责任也较少。"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hasFluff": true,
+    "translator": "不全书",
+    "edition": "classic"
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "Runestone of the Wild Titan (Rare)",
+    "name": "荒野泰坦的符文石（珍稀）",
+    "source": "CrookedMoon24",
+    "page": 603,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "weight": 50,
+    "property": [
+      "TCM'24:FH"
+    ],
+    "entries": [
+      "这块沉重的花岗岩符文石，其大部分棱角分明的表面上铭刻着繁复的符文。尽管携带它是一种难以置信的负担，但它脉动着荒野泰坦的伟力。这块石头重50磅。",
+      "持握这块石头期间，你的力量与体质豁免检定会获得+1加值，该加值取决于该符文石的稀有度，并且你还可以使用如下词条。",
+      {
+        "ENG_name": "Crushing Weight (Rare+)",
+        "name": "泰山压顶（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "当你位于一个具有{@condition 倒地|XPHB}状态的生物的周边5尺范围内时，你可以使用{@variantrule 附赠动作|XPHB}将石头放置在该生物身上，使其陷入{@condition 束缚|XPHB}状态。该生物可以使用动作进行一次力量豁免检定（DC = 16 + 石头的加值），豁免成功则推开石头并终止{@condition 束缚|XPHB}状态。"
+        ]
+      }
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Runestone%20of%20the%20Wild%20Titan.webp"
+          },
+          "width": 649,
+          "height": 1200,
+          "credit": "Humble Squid Creatives"
+        }
+      ]
+    }
+  }
+]

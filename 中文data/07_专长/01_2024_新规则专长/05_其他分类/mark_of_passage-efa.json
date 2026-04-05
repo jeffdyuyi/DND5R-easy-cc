@@ -1,0 +1,144 @@
+[
+  {
+    "ENG_name": "Mark of Passage",
+    "name": "通行龙纹",
+    "source": "EFA",
+    "page": 41,
+    "category": "D",
+    "prerequisite": [
+      {
+        "campaign": [
+          "艾伯伦"
+        ],
+        "exclusiveFeatCategory": [
+          "D"
+        ]
+      }
+    ],
+    "additionalSpells": [
+      {
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "prepared": {
+          "_": {
+            "daily": {
+              "1": [
+                "迷踪步|xphb"
+              ]
+            }
+          }
+        },
+        "expanded": {
+          "s1": [
+            "脚底抹油|xphb",
+            "跳跃术|xphb"
+          ],
+          "s2": [
+            "寻获坐骑|xphb",
+            "行动无踪|xphb"
+          ],
+          "s3": [
+            "闪现术|xphb",
+            "魅影驹|xphb"
+          ],
+          "s4": [
+            "任意门|xphb",
+            "行动自如|xphb"
+          ],
+          "s5": [
+            "传送法阵|xphb"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Courier's Speed",
+        "name": "信使极速",
+        "type": "entries",
+        "entries": [
+          "你的{@variantrule 速度|XPHB}增加5尺。"
+        ]
+      },
+      {
+        "ENG_name": "Intuitive Motion",
+        "name": "直觉行动",
+        "type": "entries",
+        "entries": [
+          "当你进行力量（{@skill 运动|XPHB}）或敏捷（{@skill 特技|XPHB}）检定时，你可以掷{@dice 1d4}并将骰出的数值添加到属性检定中。"
+        ]
+      },
+      {
+        "ENG_name": "Magical Passage",
+        "name": "魔法通行",
+        "type": "entries",
+        "entries": [
+          "你总是准备了{@spell 迷踪步|XPHB}法术。你可以无需法术位施放该法术一次，并且当你完成一次{@variantrule 长休|XPHB}后恢复以此方式施放它的能力。你也可以使用你拥有的任何法术位来施放它。智力、感知或魅力是你施放该法术的施法属性（在选择此专长时选择）。"
+        ]
+      },
+      {
+        "ENG_name": "Spells of the Mark",
+        "name": "龙纹法术",
+        "type": "entries",
+        "entries": [
+          "如果你拥有施法或契约魔法职业特性，通行龙纹法术列表中的法术将被添加到该特性的法术列表中。",
+          {
+            "type": "table",
+            "caption": "通行龙纹法术",
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "colLabels": [
+              "法术环阶",
+              "法术"
+            ],
+            "rows": [
+              [
+                "1",
+                "{@spell 脚底抹油|XPHB}, {@spell 跳跃术|XPHB}"
+              ],
+              [
+                "2",
+                "{@spell 寻获坐骑|XPHB}, {@spell 行动无踪|XPHB}"
+              ],
+              [
+                "3",
+                "{@spell 闪现术|XPHB}, {@spell 魅影驹|XPHB}"
+              ],
+              [
+                "4",
+                "{@spell 任意门|XPHB}, {@spell 行动自如|XPHB}"
+              ],
+              [
+                "5",
+                "{@spell 传送法阵|XPHB}"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluffImages": true,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "feats/EFA/Mark of Passage.webp"
+          },
+          "credit": "Lee Moyer",
+          "width": 500,
+          "height": 525
+        }
+      ]
+    }
+  }
+]

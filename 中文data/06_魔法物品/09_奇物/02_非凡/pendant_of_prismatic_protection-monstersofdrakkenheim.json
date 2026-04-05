@@ -1,0 +1,55 @@
+[
+  {
+    "ENG_name": "Pendant of Prismatic Protection",
+    "name": "虹彩防护吊坠",
+    "source": "MonstersOfDrakkenheim",
+    "page": 391,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "charges": 3,
+    "entries": [
+      "这个珠宝吊坠有3充能，当你完成一次{@variantrule 长休|XPHB}时充能会恢复。当你受到强酸、寒冷、火焰、闪电或毒素伤害时，你可以使用一个{@variantrule 反应|XPHB}来消耗1充能从吊坠中获得对该伤害类型的抗性，直到你的下个回合结束。",
+      {
+        "ENG_name": "Crafting",
+        "name": "手作",
+        "type": "entries",
+        "entries": [
+          "制作虹彩防护吊坠需要一个非普通工坊和以下非普通成分：",
+          {
+            "type": "list",
+            "items": [
+              {
+                "ENG_name": "[Animus]",
+                "name": "[精魄]",
+                "type": "item",
+                "entries": [
+                  "任意元素生物精魄"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Dust]",
+                "name": "[粉尘]",
+                "type": "item",
+                "entries": [
+                  "元素粉尘"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Fluid]",
+                "name": "[流体]",
+                "type": "item",
+                "entries": [
+                  "任意两种来自不同元素生物的元素生物流体"
+                ],
+                "nameDot": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluffImages": true
+  }
+]

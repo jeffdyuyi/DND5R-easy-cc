@@ -1,0 +1,33 @@
+[
+  {
+    "ENG_name": "+3 Needles (50)",
+    "name": "+3 吹矢（50）",
+    "source": "XDMG",
+    "page": 228,
+    "srd52": true,
+    "edition": "one",
+    "type": "A|XPHB",
+    "rarity": "very rare",
+    "weight": 1,
+    "value": 100,
+    "needleBlowgun": true,
+    "entries": [
+      "使用这件魔法弹药进行攻击和伤害判定时，你会获得{=bonusWeapon}的额外加成。一旦击中目标，弹药将不再具有魔法效果。"
+    ],
+    "packContents": [
+      {
+        "item": "针|xphb",
+        "quantity": 50
+      }
+    ],
+    "namePrefix": "+3 ",
+    "basicRules2024": true,
+    "bonusWeapon": "+3",
+    "lootTables": [
+      "武备 - 极珍稀|XDMG",
+      "器具 - 极珍稀|XDMG"
+    ],
+    "_isVariant": true,
+    "valueReference": 20000
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "ENG_name": "Lucky Charm",
+    "name": "幸运符",
+    "source": "CrookedMoon24",
+    "page": 130,
+    "level": 5,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一株四叶草和一面破碎手镜的碎子"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你触碰一个微型、非魔法的物件，在持续时间内将你的一部分运气注入其中。当另一个生物携带该物件期间，该生物在{@variantrule 优势|XPHB}{@variantrule D20 检定|XPHB|D20 检定}中具有优势，而你在{@variantrule 劣势|XPHB}{@variantrule D20 检定|XPHB|D20 检定}中具有劣势。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Paladin",
+          "name": "圣武士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "miscTags": [
+      "OBJ"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Spells/Lucky-Charm.webp"
+  }
+]

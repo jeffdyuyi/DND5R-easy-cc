@@ -1,0 +1,30 @@
+{
+  "ENG_name": "School of Illusion",
+  "name": "幻术学派",
+  "shortName": "幻术",
+  "source": "PHB",
+  "className": "法师",
+  "classSource": "XPHB",
+  "_copy": {
+    "ENG_name": "School of Illusion",
+    "name": "幻术学派",
+    "source": "PHB",
+    "shortName": "幻术",
+    "className": "法师",
+    "classSource": "PHB",
+    "_preserve": {
+      "page": true,
+      "otherSources": true,
+      "referenceSources": true,
+      "srd": true,
+      "basicRules": true,
+      "reprintedAs": true
+    }
+  },
+  "subclassFeatures": [
+    "幻术学派|法师|XPHB|幻术||3",
+    "易变幻象|法师||幻术||6",
+    "幻影化形|法师||幻术||10",
+    "亦真亦幻|法师||幻术||14"
+  ]
+}

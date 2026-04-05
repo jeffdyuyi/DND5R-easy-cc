@@ -1,0 +1,56 @@
+[
+  {
+    "ENG_name": "Ring of Fire Elemental Command",
+    "name": "命令火元素戒指",
+    "source": "DMG",
+    "page": 190,
+    "srd": true,
+    "reprintedAs": [
+      "命令元素戒指（火）|XDMG"
+    ],
+    "type": "RG|DMG",
+    "immune": [
+      "火焰"
+    ],
+    "resist": [
+      "火焰"
+    ],
+    "tier": "主要",
+    "rarity": "legendary",
+    "reqAttune": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d4 + 1}",
+    "charges": 5,
+    "entries": [
+      "佩戴这枚戒指时，你对来自火元素位面的元素生物发动攻击检定时具有优势，且它们对你发动的攻击检定具有劣势。此外，你还能获得基于火元素位面的属性。",
+      "这枚戒指有5发充能。它每天黎明时恢复{@dice 1d4 + 1}发已消耗的充能。从戒指施放的法术其豁免DC为17。",
+      "你可以消耗戒指的2发充能对一只{@creature 火元素}施放{@spell 支配怪物}。此外，你获得对火焰伤害的抗性。你还可以理解并说出火族语。",
+      "与戒指同调期间，若你杀死或协助杀死了一只{@creature 火元素}，则戒指将为你提供以下额外的属性：",
+      {
+        "type": "list",
+        "items": [
+          "你免疫于火焰伤害。",
+          "你可以利用戒指施放以下法术，消耗必要的充能数：{@spell 燃烧之手}（1充能）、{@spell 火球术}（2充能）和{@spell 火墙术}（3充能）。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "燃烧之手"
+        ],
+        "2": [
+          "支配怪物",
+          "火球术"
+        ],
+        "3": [
+          "火墙术"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表I"
+    ],
+    "valueReference": 200000
+  }
+]

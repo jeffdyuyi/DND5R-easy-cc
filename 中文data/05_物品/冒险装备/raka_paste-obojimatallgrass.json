@@ -1,0 +1,52 @@
+[
+  {
+    "ENG_name": "Raka Paste",
+    "name": "Raka糊",
+    "source": "ObojimaTallGrass",
+    "page": 207,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 4|large}|SneakerProMedium}",
+            "{@font {@style 10|large}|SneakerProMedium}",
+            "{@font {@style 0|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "Raka糊是一种由烟灰和从Raka植物种子中榨取的油混合而成的糊状物，常用于修复破碎的陶器。干燥后会硬化成类似玻璃的光滑材质。许多家庭都备有Raka糊，通常储存在浅六角形碟子中，并用一层蜡膜覆盖以防止干燥。"
+    ],
+    "lootTables": [
+      "热水大地普通原料|ObojimaTallGrass",
+      "阿伯拉山普通原料|ObojimaTallGrass",
+      "咸水湿地普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/raka-paste.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 2039,
+          "height": 2039
+        }
+      ]
+    }
+  }
+]

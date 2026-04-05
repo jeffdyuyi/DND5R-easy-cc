@@ -1,0 +1,199 @@
+{
+  "ENG_name": "Devourer Guild",
+  "name": "囚魂魔公会",
+  "shortName": "囚魂魔",
+  "source": "GrimHollowPG24",
+  "className": "怪物猎人",
+  "classSource": "GrimHollowPG24",
+  "page": 55,
+  "edition": "one",
+  "subclassFeatures": [
+    {
+      "ENG_name": "Devourer Guild",
+      "name": "囚魂魔公会",
+      "source": "GrimHollowPG24",
+      "page": 55,
+      "className": "怪物猎人",
+      "classSource": "GrimHollowPG24",
+      "subclassShortName": "囚魂魔",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "entries": [
+        "{@i 通过消耗怪物血肉获得法力}",
+        "埃萨里斯的人们并不总是对怪物猎人有很高的评价，许多人认为他们与被他们消灭的邪恶一样堕落和非人。许多关于怪物猎人的骇人听闻的故事可以直接或间接地归咎于囚魂魔公会，他们被指控为食人的怪物。",
+        "真相也好不到哪去。囚魂魔们花费他们的时间来消耗他们所剿灭的怪物的血肉和鲜血，随着时间的推移，他们的新陈代谢已经适应了这种恶心的行为。囚魂魔们在消耗猎物后不久就会发生异变。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "炼金美食学|怪物猎人|GrimHollowPG24|囚魂魔|GrimHollowPG24|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "嬗变代谢|怪物猎人|GrimHollowPG24|囚魂魔|GrimHollowPG24|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Alchemical Gastronomy",
+      "name": "炼金美食学",
+      "source": "GrimHollowPG24",
+      "page": 55,
+      "className": "怪物猎人",
+      "classSource": "GrimHollowPG24",
+      "subclassShortName": "囚魂魔",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "toolProficiencies": [
+        {
+          "alchemist's supplies": true,
+          "cook's utensils": true
+        }
+      ],
+      "header": 1,
+      "entries": [
+        "你获得{@item 炼金工具|XPHB}和{@item 厨师工具|XPHB}的熟练。"
+      ]
+    },
+    {
+      "ENG_name": "Transmuting Metabolism",
+      "name": "嬗变代谢",
+      "source": "GrimHollowPG24",
+      "page": 55,
+      "className": "怪物猎人",
+      "classSource": "GrimHollowPG24",
+      "subclassShortName": "囚魂魔",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你获得消耗怪物残骸的能力，这会使你的身体产生强大而令人恐慌的异变。这些异变出现在子职描述后文的\"异变\"部分。",
+        {
+          "ENG_name": "Salvaging Portions",
+          "name": "回收部分",
+          "type": "entries",
+          "entries": [
+            "作为一个{@action 操作|XPHB}动作，你可以从生物的物理遗骸中收获一个部分。每个生物只能收获一个部分。记录怪物的生物类型。收获的部分将持续到你完成一次{@variantrule 长休|XPHB}，此时它将失去其潜能。"
+          ]
+        },
+        {
+          "ENG_name": "Consuming Portions",
+          "name": "消耗部分",
+          "type": "entries",
+          "entries": [
+            "作为{@variantrule 附赠动作|XPHB}，你可以消耗一个部分。在你消耗该部分后，你可以根据生物类型选择一个异变来获得。你可以获得消耗部分的增益，次数最多为1加上你的智力调整值（最低为1）。当你完成一次{@variantrule 长休|XPHB}时，你将恢复安全消耗部分的能力。",
+            "你可以同时从多个消耗部分中获益，但同一时间不能获得相同的异变超过一次。"
+          ]
+        },
+        "{@style 突变|大型}",
+        "这些异变在这里按字母顺序排列，异变名称后的括号中显示了所需的生物类型。",
+        {
+          "type": "refOptionalfeature",
+          "optionalfeature": "强酸鲜血（异怪，泥怪，植物）|GrimHollowPG24"
+        },
+        {
+          "type": "refOptionalfeature",
+          "optionalfeature": "敏锐（天族，邪魔，妖精）|GrimHollowPG24"
+        },
+        {
+          "type": "refOptionalfeature",
+          "optionalfeature": "警觉（所有）|GrimHollowPG24"
+        },
+        {
+          "type": "refOptionalfeature",
+          "optionalfeature": "飞行（天族、龙、元素）|GrimHollowPG24"
+        },
+        {
+          "type": "refOptionalfeature",
+          "optionalfeature": "灌注（龙，元素生物，泥怪）|GrimHollowPG24"
+        },
+        {
+          "type": "refOptionalfeature",
+          "optionalfeature": "隐形术（妖精，邪魔，亡灵）|GrimHollowPG24"
+        },
+        {
+          "type": "refOptionalfeature",
+          "optionalfeature": "力量（野兽，构装体，巨人）|GrimHollowPG24"
+        },
+        {
+          "type": "refOptionalfeature",
+          "optionalfeature": "天生武器（野兽，龙，怪兽）|GrimHollowPG24"
+        },
+        {
+          "type": "refOptionalfeature",
+          "optionalfeature": "再生（野兽，巨人，怪兽）|GrimHollowPG24"
+        },
+        {
+          "type": "refOptionalfeature",
+          "optionalfeature": "抵抗术（构装体、元素生物、亡灵）|GrimHollowPG24"
+        },
+        {
+          "type": "refOptionalfeature",
+          "optionalfeature": "心灵感应（异怪，邪魔，植物）|GrimHollowPG24"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Synchronized Response",
+      "name": "同步响应",
+      "source": "GrimHollowPG24",
+      "page": 55,
+      "className": "怪物猎人",
+      "classSource": "GrimHollowPG24",
+      "subclassShortName": "囚魂魔",
+      "subclassSource": "GrimHollowPG24",
+      "level": 7,
+      "header": 2,
+      "entries": [
+        "你对怪物的消化增强了你对它们及其行为的理解。当你消耗一个怪物部分时，你获得以下额外效应：1分钟内，当你作为{@variantrule 反应|XPHB}的一部分进行攻击时，你造成额外的{@damage 1d6}伤害。此伤害与用于攻击的武器或{@variantrule 徒手打击|XPHB}具有相同的类型。"
+      ]
+    },
+    {
+      "ENG_name": "Gnawing Hunger",
+      "name": "啃噬饥渴",
+      "source": "GrimHollowPG24",
+      "page": 55,
+      "className": "怪物猎人",
+      "classSource": "GrimHollowPG24",
+      "subclassShortName": "囚魂魔",
+      "subclassSource": "GrimHollowPG24",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "你对敌人的饥渴让你能在战斗中汲取其精华。当你使用武器或{@variantrule 徒手打击|XPHB}对生物造成近战攻击伤害时，你获得等于造成伤害一半的{@variantrule 临时生命值|XPHB}。若目标是你的怪物法术书中记载的生物类型，则你改为获得等于造成伤害的{@variantrule 临时生命值|XPHB}。",
+        "你可以使用此特性的次数等于你的智力调整值（至少一次）。当你完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}时，恢复所有已消耗的使用次数。"
+      ]
+    },
+    {
+      "ENG_name": "Alchemical Decoctions",
+      "name": "炼金药剂",
+      "source": "GrimHollowPG24",
+      "page": 55,
+      "className": "怪物猎人",
+      "classSource": "GrimHollowPG24",
+      "subclassShortName": "囚魂魔",
+      "subclassSource": "GrimHollowPG24",
+      "level": 15,
+      "header": 2,
+      "entries": [
+        "你可以花费1小时和20金币价值的炼金材料（如特殊药草或怪物剩余价值）来使用你的{@item 炼金工具|XPHB}将怪物部分转化为药剂。药剂是一种魔法药水，能赋予食用怪物部分的增益效果。你可以同时拥有4个未消耗的药剂。你可以用一个{@action 操作|XPHB}动作销毁一个药剂。",
+        "除你之外的生物可以安全消耗1份炼金药剂而不会产生负面效应。生物在消耗第一份炼金药剂后，每多消耗1份就会获得1层{@condition 力竭|XPHB}状态。生物必须完成一次{@variantrule 长休|XPHB}才能重新获得安全消耗炼金药剂的能力。"
+      ]
+    },
+    {
+      "ENG_name": "Acquired Taste",
+      "name": "后天品味",
+      "source": "GrimHollowPG24",
+      "page": 55,
+      "className": "怪物猎人",
+      "classSource": "GrimHollowPG24",
+      "subclassShortName": "囚魂魔",
+      "subclassSource": "GrimHollowPG24",
+      "level": 18,
+      "header": 2,
+      "entries": [
+        "你对怪物部分的饥渴已经增长到了无法满足的地步。你现在可以安全地消耗1个额外的部分。此外，当你消耗一个部分时，在1分钟内，你在作为{@variantrule 优势|XPHB}一部分进行的攻击检定上具有{@variantrule 反应|XPHB}。"
+      ]
+    }
+  ],
+  "hasFluff": true,
+  "hasFluffImages": true
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "Second Chance",
+    "name": "花开二度",
+    "source": "XGE",
+    "page": 75,
+    "prerequisite": [
+      {
+        "race": [
+          {
+            "ENG_name": "halfling",
+            "name": "半身人"
+          }
+        ]
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "dex",
+            "con",
+            "cha"
+          ],
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "命运在有人想要伤害你时眷顾于你，你获得下列增益：",
+      {
+        "type": "list",
+        "items": [
+          "当一个你可见的生物以攻击检定命中你时，你可以使用你的反应迫使那个生物重骰之。此能力一旦被使用，直到你下次在战斗开始时骰先攻、你完成一次短休、或你完成一次长休之前都无法再次使用它。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

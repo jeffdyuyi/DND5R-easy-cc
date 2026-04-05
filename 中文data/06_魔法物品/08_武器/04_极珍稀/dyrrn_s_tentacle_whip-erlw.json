@@ -1,0 +1,35 @@
+[
+  {
+    "ENG_name": "Dyrrn's Tentacle Whip",
+    "name": "迪恩的触手长鞭",
+    "source": "ERLW",
+    "page": 276,
+    "baseItem": "鞭子|PHB",
+    "type": "M",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "weight": 3,
+    "weaponCategory": "martial",
+    "property": [
+      "F",
+      "R"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "S",
+    "bonusWeapon": "+2",
+    "entries": [
+      "这条长长的鞭状肌肉异常坚韧，一端长着一根锋利的毒刺。要与该共生体武器同调，你必须在同调期间把鞭子缠绕在手腕上，期间鞭子会将卷须嵌入你的手臂，这个过程非常痛苦。",
+      "使用这把魔法鞭子进行的攻击和伤害掷骰获得+2加值，但使用此武器攻击异怪时具有劣势。被此武器击中的生物额外受到{@damage 1d6}点心灵伤害。且当你使用此武器在攻击检定的{@dice d20}中掷出自然20时，目标会陷入{@condition 震慑}，直到其下一回合结束。",
+      "你可以使用一个附赠动作将鞭子缩进你的手臂里以收起武器，或是从你的手臂中抽出鞭子。",
+      {
+        "ENG_name": "Symbiotic Nature",
+        "name": "共生体",
+        "type": "entries",
+        "entries": [
+          "当你与鞭子同调时，鞭子不能从你身上被移除，你也不能主动结束对鞭子的同调。如果你成为一个能结束诅咒的法术的目标，那么你与鞭子的同调自动结束，它将会与你分离。"
+        ]
+      }
+    ],
+    "valueReference": 40000
+  }
+]

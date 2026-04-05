@@ -1,0 +1,20 @@
+[
+  {
+    "ENG_name": "Enduring Spellbook",
+    "name": "耐久法术书",
+    "source": "XGE",
+    "page": 137,
+    "reprintedAs": [
+      "耐久法术书|XDMG"
+    ],
+    "tier": "次要",
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "这本法术书及其上所写的任何内容都不会因火焰或浸水而受损。另外，这本法术书不会随时间老化。"
+    ],
+    "translator": "不全书",
+    "valueReference": 100,
+    "type": "W"
+  }
+]

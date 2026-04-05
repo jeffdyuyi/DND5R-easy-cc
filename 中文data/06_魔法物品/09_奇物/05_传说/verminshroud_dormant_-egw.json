@@ -1,0 +1,44 @@
+[
+  {
+    "ENG_name": "Verminshroud (Dormant)",
+    "name": "害虫裹尸布（休眠）",
+    "source": "EGW",
+    "page": 273,
+    "conditionImmune": [
+      "疾病"
+    ],
+    "rarity": "legendary",
+    "reqAttune": true,
+    "wondrous": true,
+    "property": [
+      "Vst|EGW"
+    ],
+    "entries": [
+      "这件皱巴巴的斗篷以在枯萎海岸以尸体为食的老鼠的皮毛拼凑而成，接缝处点缀着用魔法保存下来的膨胀昆虫尸体。",
+      {
+        "ENG_name": "Dormant",
+        "name": "休眠",
+        "type": "entries",
+        "entries": [
+          "当着装处于休眠状态的害虫裹尸布时，你获得如下增益：",
+          {
+            "type": "list",
+            "items": [
+              "你在依赖嗅觉的智慧（{@skill 察觉}）检定上具有优势，你免疫疾病，并且你拥有60尺范围的{@sense 黑暗视觉}。如果你已经拥有{@sense 黑暗视觉}，佩戴该斗篷会使你的{@sense 黑暗视觉}范围增加60尺。",
+              "你可以用一个动作，使用害虫裹尸布以自己为目标施放{@spell 变形术}，将自己变为一只{@creature 巨鼠}或{@creature 老鼠}。同时，你保留自己的智力，感知与魅力属性以及这件斗篷带给你的增益效果。此后直到下一次黎明前，该特性都无法再次使用。"
+            ]
+          }
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "变形术"
+        ]
+      }
+    },
+    "valueReference": 200000,
+    "type": "W"
+  }
+]

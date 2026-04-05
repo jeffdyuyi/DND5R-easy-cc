@@ -1,0 +1,71 @@
+[
+  {
+    "ENG_name": "Fire Shield",
+    "name": "火焰护盾",
+    "source": "PHB",
+    "page": 242,
+    "srd": true,
+    "referenceSources": [
+      "RoT",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "火焰护盾|XPHB"
+    ],
+    "level": 4,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "少许磷或一只萤火虫"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        }
+      }
+    ],
+    "entries": [
+      "轻薄缥缈的火焰在法术持续期间环绕着你的身体，散发出10尺半径的明亮光照和再延伸10尺的微光光照。你可以借由使用一个动作解消它以提早结束此法术。",
+      "这层火焰可以提供你温暖的护盾或寒冷的护盾，由你选择。温暖的护盾将赋予你对寒冷伤害的抗性，而寒冷的护盾则会赋予你对火焰伤害的抗性。",
+      "此外，每当一个距离你5尺内的生物以一次近战攻击命中你时，这个护盾将迸发出火焰袭击攻击者。温暖护盾将对攻击者造成{@damage 2d8}点火焰伤害，寒冷护盾将对攻击者造成{@damage 2d8}点寒冷伤害。"
+    ],
+    "damageResist": [
+      "寒冷",
+      "火焰"
+    ],
+    "damageInflict": [
+      "cold",
+      "fire"
+    ],
+    "miscTags": [
+      "LGT"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "法师",
+      "德鲁伊",
+      "术士"
+    ],
+    "display_school": "塑能系",
+    "display_damageInflict": [
+      "寒冷",
+      "火焰"
+    ]
+  }
+]

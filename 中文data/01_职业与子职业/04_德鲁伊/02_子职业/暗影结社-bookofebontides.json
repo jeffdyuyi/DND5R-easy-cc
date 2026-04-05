@@ -1,0 +1,185 @@
+{
+  "ENG_name": "Circle of Shadows",
+  "name": "暗影结社",
+  "shortName": "幽影",
+  "source": "BookOfEbonTides",
+  "className": "德鲁伊",
+  "classSource": "PHB",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "2": [
+          "灾祸术",
+          "虚假生命"
+        ],
+        "3": [
+          "黑暗术",
+          "黑暗视觉"
+        ],
+        "5": [
+          "闪现术",
+          "恐惧术"
+        ],
+        "7": [
+          "艾伐黑触手",
+          "高等隐形术"
+        ],
+        "9": [
+          "寒冰锥",
+          "托梦术"
+        ]
+      }
+    }
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "Circle of Shadows",
+      "name": "暗影结社",
+      "source": "BookOfEbonTides",
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "幽影",
+      "subclassSource": "BookOfEbonTides",
+      "level": 2,
+      "entries": [
+        "属于暗影结社的德鲁伊们将黑暗术的法力视为自然界最纯粹的精华而加以拥抱。虽然其他德鲁伊可能关注平衡，但暗影结社明白所有事物终将归于黑暗术，因此必须理解它。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "影灵形态|德鲁伊||幽影|BookOfEbonTides|2"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "结社法术|德鲁伊||幽影|BookOfEbonTides|2"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Circle Spells",
+      "name": "结社法术",
+      "source": "BookOfEbonTides",
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "幽影",
+      "subclassSource": "BookOfEbonTides",
+      "level": 2,
+      "header": 1,
+      "entries": [
+        "你已拥抱幽影的力量，这是一种弥漫于现实的黑暗力场。你与这种能量的联系使你在此职业达到特定等级时能够使用一些法术，如幽影结社法术表格所示。",
+        "一旦你习得这些法术中任意一个，你就会一直准备着它，且不计入你的每日准备法术上限。如果你学会一个不在德鲁伊法术列表中的法术，该法术对你来说视作德鲁伊法术。",
+        {
+          "type": "table",
+          "caption": "幽影结社法术",
+          "colLabels": [
+            "德鲁伊等级",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "2nd",
+              "{@spell 灾祸术}, {@spell 虚假生命}"
+            ],
+            [
+              "3rd",
+              "{@spell 黑暗术}, {@spell 黑暗视觉}"
+            ],
+            [
+              "5th",
+              "{@spell 闪现术}, {@spell 恐惧术}"
+            ],
+            [
+              "7th",
+              "{@spell 艾伐黑触手||黑触手}, {@spell 高等隐形术}"
+            ],
+            [
+              "9th",
+              "{@spell 寒冰锥}, {@spell 托梦术}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Umbral Form",
+      "name": "影灵形态",
+      "source": "BookOfEbonTides",
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "幽影",
+      "subclassSource": "BookOfEbonTides",
+      "level": 2,
+      "header": 1,
+      "entries": [
+        "从2环开始，你可以使用一个附赠动作，消耗一次荒野形态特性来进入影灵形态，而非变身为野兽。",
+        "当你处于影灵形态时，你保留你的数据，但你的身体变得像烟一样透明。该形态持续10分钟。如果你主动解除（无需动作）、处于{@condition 失能}状态、死亡或再次使用此特性，形态会提前结束。",
+        "当你处于此形态时，你获得以下特性：",
+        {
+          "type": "list",
+          "items": [
+            "处于微光光照或黑暗中时，你可以用一个附赠动作执行{@action 躲藏}动作。",
+            "你可以穿过窄至1寸宽的空间而无需挤过。",
+            "当一个你能看见的生物用近战攻击命中你时，你可以使用你的反应对该生物造成等于你熟练加值的寒冷伤害。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Dark Servant",
+      "name": "黑暗从者",
+      "source": "BookOfEbonTides",
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "幽影",
+      "subclassSource": "BookOfEbonTides",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "在6级时，你获得唤醒幽影为你效力的能力。以一个附赠动作，你可以指定一个你能看见的30尺内的生物。该生物的幽影会活化为一个独立的生物并听从你的命令，使用{@creature 幽影}资料卡。",
+        "幽影出现在目标5尺内一个未占据空间，并可以立即行动。幽影在你的先攻顺序上行动，它必须花费其回合以最直爽的路线向目标移动，且它只能使用其动作攻击目标（且你无需动作来命令幽影）。如果幽影的攻击命中，目标不会受到任何伤害，而是在幽影的下个回合开始前，其第一次攻击或豁免检定具有劣势。",
+        "幽影如果生命值缩小到0、目标生命值缩小到0或5分钟后消失。",
+        "你可以使用此特性的次数等于你的感知调整值（至少一次），且当你完成一次长休时恢复所有已使用的次数。"
+      ]
+    },
+    {
+      "ENG_name": "Shadow Mass",
+      "name": "集聚群影",
+      "source": "BookOfEbonTides",
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "幽影",
+      "subclassSource": "BookOfEbonTides",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "在10级时，你的影灵形态的法力会增长。在此形态下，你会获得以下额外增益：",
+        {
+          "type": "list",
+          "items": [
+            "你获得等同于正常速度的飞行速度，并且可以悬浮。",
+            "你对所有来自非魔法攻击的钝击、穿刺和挥砍伤害具有抗性。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Darkness Falls",
+      "name": "渊闇降临",
+      "source": "BookOfEbonTides",
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "幽影",
+      "subclassSource": "BookOfEbonTides",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "在14级时，你可以使用一个动作以自身为中心释放一个半径15尺的魔法黑暗球状区域。该区域随你移动，且黑暗会蔓延至转角处。当你创造该区域时，可以指定任意数量的生物能够看透黑暗，但除此之外，拥有{@sense 黑暗视觉}的生物无法看透它，非魔法的光照也无法照亮它。",
+        "该球状效应持续1分钟，直到你处于{@condition 失能}状态，或接触到阳光为止。如果此效应的区域与7环或更低法术创造的光亮区域重叠，则创造该光亮的法术将被解除。",
+        "一旦你使用了此特性，在完成一次短休或长休前无法再次使用。"
+      ]
+    }
+  ],
+  "hasFluffImages": true
+}

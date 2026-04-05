@@ -1,0 +1,133 @@
+[
+  {
+    "name": "紫龙骑士侍从",
+    "ENG_name": "Purple Dragon Squire",
+    "source": "FRHoF",
+    "edition": "one",
+    "page": 34,
+    "ability": [
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "str",
+              "wis",
+              "cha"
+            ],
+            "weights": [
+              2,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "str",
+              "wis",
+              "cha"
+            ],
+            "weights": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      }
+    ],
+    "feats": [
+      {
+        "紫龙新兵|frhof": true
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "animal handling": true,
+        "insight": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "navigator's tools": true
+      }
+    ],
+    "startingEquipment": [
+      {
+        "A": [
+          "矛|xphb",
+          "领航工具|xphb",
+          "高档服装|xphb",
+          {
+            "value": 900
+          }
+        ],
+        "B": [
+          {
+            "value": 5000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability Scores:",
+            "name": "属性值：",
+            "type": "item",
+            "entry": "力量、感知、魅力"
+          },
+          {
+            "ENG_name": "Feat:",
+            "name": "专长：",
+            "type": "item",
+            "entry": "{@feat 紫龙新兵|FRHoF}"
+          },
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 驯兽|XPHB} 与 {@skill 洞悉|XPHB}"
+          },
+          {
+            "ENG_name": "Tool Proficiencies:",
+            "name": "工具熟练",
+            "type": "item",
+            "entry": "{@item 领航工具|XPHB}"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "选择A或B：(A) {@item 矛|XPHB}、{@item 领航工具|XPHB}、{@item 高档服装|XPHB}，9 GP；或(B) 50 GP"
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "你将自己的生命献给了维护科米尔Cormyr的安全，并渴望加入当地的精英骑士团体：紫龙骑士团。但在你正式加入紫龙骑士团之前，你必须先担任骑士侍从。你找到了一位愿意提携你并将骑士团的信条教授于你的领主。你愿意拥护紫龙骑士团荣耀、辉煌与力量的理念，并证明自己有成为骑士的资格吗？"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "backgrounds/FRHoF/Purple Dragon Squire.webp"
+          },
+          "credit": "Ioannis Fiore",
+          "width": 1700,
+          "height": 626
+        }
+      ]
+    },
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "translator": "不全书"
+  }
+]

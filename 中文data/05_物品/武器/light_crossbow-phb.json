@@ -1,0 +1,34 @@
+[
+  {
+    "name": "轻弩",
+    "ENG_name": "Light Crossbow",
+    "source": "PHB",
+    "page": 149,
+    "edition": "classic",
+    "type": "R",
+    "rarity": "none",
+    "weight": 5,
+    "value": 2500,
+    "weaponCategory": "simple",
+    "property": [
+      "A",
+      "LD",
+      "2H"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "range": "80/320",
+    "ammoType": "弩矢|PHB",
+    "basicRules": true,
+    "crossbow": true,
+    "referenceSources": [
+      "TftYP-AtG",
+      "KftGV"
+    ],
+    "reprintedAs": [
+      "轻弩|XPHB"
+    ],
+    "srd": true,
+    "weapon": true
+  }
+]

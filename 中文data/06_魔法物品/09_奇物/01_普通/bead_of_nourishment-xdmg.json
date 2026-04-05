@@ -1,0 +1,29 @@
+[
+  {
+    "ENG_name": "Bead of Nourishment",
+    "name": "营养珠",
+    "source": "XDMG",
+    "page": 235,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TDoN"
+    ],
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "这个没有味道的凝胶珠子在你的舌头上溶解时，它会为你提供等同于一天份口粮的营养。"
+    ],
+    "lootTables": [
+      "奥秘 - 普通|XDMG",
+      "器具 - 普通|XDMG"
+    ],
+    "miscTags": [
+      "CF/W",
+      "CNS"
+    ],
+    "translator": "不全书",
+    "valueReference": 50,
+    "type": "W"
+  }
+]

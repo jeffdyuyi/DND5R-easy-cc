@@ -1,0 +1,61 @@
+[
+  {
+    "ENG_name": "Wind Sprint",
+    "name": "疾风跃袭",
+    "source": "ObojimaTallGrass",
+    "page": 192,
+    "level": 2,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "一股旋转的风暴之风将你托起，并将你带到范围内你能看见的一个生物处。在回合结束前，下一次你用近战武器攻击命中一个生物时，攻击会因大风的冲击对目标造成额外的{@damage 2d6}挥砍伤害。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Paladin",
+          "name": "圣武士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "挥砍"
+    ],
+    "miscTags": [
+      "AAD",
+      "SGT"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Custom/Spells/Wind%20Sprint.webp"
+  }
+]

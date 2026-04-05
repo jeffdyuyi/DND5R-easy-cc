@@ -1,0 +1,24 @@
+[
+  {
+    "ENG_name": "Firearm Bullet",
+    "name": "镀银枪械子弹",
+    "source": "PHB",
+    "page": 148,
+    "edition": "one",
+    "type": "A|XPHB",
+    "rarity": "unknown",
+    "weight": 0.2,
+    "value": 30,
+    "bulletFirearm": true,
+    "entries": [
+      "枪械子弹在现代枪械中使用后会被摧毁。"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "namePrefix": "镀银",
+    "basicRules": true,
+    "tier": "次要",
+    "_isVariant": true
+  }
+]

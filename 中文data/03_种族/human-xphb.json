@@ -1,0 +1,103 @@
+[
+  {
+    "name": "人类",
+    "ENG_name": "Human",
+    "source": "XPHB",
+    "edition": "one",
+    "page": 194,
+    "size": [
+      "S",
+      "M"
+    ],
+    "speed": 30,
+    "skillProficiencies": [
+      {
+        "any": 1
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Resourceful",
+        "name": "适应力",
+        "type": "entries",
+        "entries": [
+          "你获得{@variantrule 英雄激励|XPHB}（每当你完成{@variantrule 长休|XPHB}时）。"
+        ]
+      },
+      {
+        "ENG_name": "Skillful",
+        "name": "娴熟",
+        "type": "entries",
+        "entries": [
+          "你自选一个技能并获得其熟练。"
+        ]
+      },
+      {
+        "ENG_name": "Versatile",
+        "name": "多用",
+        "type": "entries",
+        "entries": [
+          "你获得一项自选的{@filter 起源专长|feats|category=o}。"
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "entries": [
+                "在整个多元宇宙中，人类因其数量庞大而各具特色。他们会努力在有限的岁月中取得尽可能多的成就。在许多世界里，他们的雄心壮志和足智多谋备都受赞扬、尊重和敬畏。",
+                "人类的外貌就像地球上的人一样多样，他们也同样信奉许多的神祇。学者们对人类的起源争议不休，但据说已知最早的人类聚居地是在印记城，那座位于多元宇宙中心的环形城市，那座通用语诞生的城市。从那里开始，人类带着门之城的世界主义走到了多元宇宙的每个角落。"
+              ]
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/XPHB/Human.webp"
+          },
+          "credit": "Zuzanna Wužyk",
+          "width": 1700,
+          "height": 1083
+        }
+      ]
+    },
+    "basicRules2024": true,
+    "creatureTypes": [
+      "类人"
+    ],
+    "feats": [
+      {
+        "anyFromCategory": {
+          "category": [
+            "O"
+          ],
+          "count": 1
+        }
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "sizeEntry": {
+      "ENG_name": "Size:",
+      "name": "体型：",
+      "type": "item",
+      "entries": [
+        "中型（约 4-7 尺高）或小型（约 2-4 尺高），在选择此种族时决定"
+      ]
+    },
+    "soundClip": {
+      "type": "internal",
+      "path": "races/human.mp3"
+    },
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

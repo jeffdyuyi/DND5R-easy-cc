@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Crossbow Bolts (20)",
+    "name": "镀银弩矢(20)",
+    "source": "PHB",
+    "page": 148,
+    "srd": true,
+    "basicRules": true,
+    "referenceSources": [
+      "CoS"
+    ],
+    "reprintedAs": [
+      "弩矢（20支）|XPHB"
+    ],
+    "edition": "classic",
+    "type": "A",
+    "rarity": "unknown",
+    "weight": 1.5,
+    "value": 100,
+    "bolt": true,
+    "packContents": [
+      {
+        "item": "弩矢|PHB",
+        "quantity": 20
+      }
+    ],
+    "namePrefix": "镀银",
+    "tier": "次要",
+    "_isVariant": true
+  }
+]

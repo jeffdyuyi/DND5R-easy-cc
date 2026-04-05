@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Solar Amulet",
+    "name": "炽天神侍护符",
+    "source": "ObojimaTallGrass",
+    "page": 176,
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "每当你佩戴此护符时从法术或魔法效应中恢复生命值，你额外恢复3点生命值。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/solar-amulet.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 4134,
+          "height": 4134
+        }
+      ]
+    }
+  }
+]

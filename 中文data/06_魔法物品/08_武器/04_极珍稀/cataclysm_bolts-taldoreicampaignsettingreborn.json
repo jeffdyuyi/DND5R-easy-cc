@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Cataclysm Bolts",
+    "name": "灾灭弩矢",
+    "source": "TalDoreiCampaignSettingReborn",
+    "page": 194,
+    "type": "A",
+    "rarity": "very rare",
+    "weight": 0.075,
+    "entries": [
+      "这些锻钢{@item 弩矢|PHB|弩矢}最初由贾根斯特莱克氏族在{@book 分裂战争|TalDoreiCampaignSettingReborn|1|分裂战争}期间创造，而制作它们的秘密仍被{@book 卡拉格锤堡的家族|TalDoreiCampaignSettingReborn|2|卡拉格锤堡的家族}严密守护。灾灭弩矢通常以十支为一组保存，不过任何持有哪怕一支的人都能感受到它随着魔法能量脉动。当你用灾灭弩矢命中一次攻击时，该攻击造成正常伤害。然后掷一枚{@dice d6}并根据以下表格确定其额外效应。",
+      {
+        "type": "table",
+        "caption": "灾灭弩矢效应",
+        "colLabels": [
+          "d6",
+          "效应"
+        ],
+        "colStyles": [
+          "col-2 text-center",
+          "col-10"
+        ],
+        "rows": [
+          [
+            "1-2",
+            "箭矢在火焰爆炸中爆炸，对目标及周围5尺内的每个生物造成{@damage 3d8}火焰伤害。"
+          ],
+          [
+            "3-4",
+            "这股寒冰箭将目标周围的空气冻结成尖锐的冰。目标和其周围5英尺内的每个生物必须成功通过一次{@dc 17}的敏捷{@quickref 豁免检定|PHB|2|1|豁免检定}，否则将受到{@damage 1d10}点寒冷伤害，并{@condition 束缚}直到你的下一回合结束。"
+          ],
+          [
+            "5",
+            "箭矢释放出一股死灵能量。目标受到{@damage 2d6}暗蚀伤害，并且必须在一次{@dc 16}力量{@quickref 豁免检定|PHB|2|1|豁免检定}中成功，否则直到你的下个回合结束时将被{@condition 震慑}。"
+          ],
+          [
+            "6",
+            "箭矢碎裂释放出一阵碎片。对目标进行六次额外的远程攻击，每次攻击有{@hit 7}攻击加值，并且击中时造成{@damage 1d6}穿刺伤害。"
+          ]
+        ]
+      },
+      "一旦箭矢命中，附魔结束，它就变成了普通的弹药。"
+    ]
+  }
+]

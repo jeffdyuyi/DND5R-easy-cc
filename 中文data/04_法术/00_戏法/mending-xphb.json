@@ -1,0 +1,54 @@
+[
+  {
+    "ENG_name": "Mending",
+    "name": "修复术",
+    "source": "XPHB",
+    "page": 297,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "BQGT",
+      "DrDe-ACfaS"
+    ],
+    "level": 0,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "两块天然磁石"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "该法术修复你所触碰一个物件上的一处破损或裂缝，例如修复一条断裂的链条、一把碎成两半的钥匙、一件撕裂的斗篷、一个漏了的酒袋等。只要破损或断裂处在任意方向上都不超过 1 尺，你就可以不留痕迹地修复它。",
+      "该法术可以物理性地修复一件魔法物品，但无法恢复其上的魔法。"
+    ],
+    "miscTags": [
+      "OBJ"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "牧师",
+      "德鲁伊",
+      "术士",
+      "法师"
+    ],
+    "display_school": "变化系"
+  }
+]

@@ -1,0 +1,17 @@
+﻿{
+    "ENG_name":  "Utilize",
+    "name":  "操作",
+    "source":  "XPHB",
+    "page":  377,
+    "srd52":  true,
+    "time":  [
+                 {
+                     "number":  1,
+                     "unit":  "动作"
+                 }
+             ],
+    "entries":  [
+                    "通常，你会在做其他事的同时与一件物品进行交互，例如作为{@action 攻击|XPHB}动作的一部分来拔出一把剑。当一个物件需要一个动作才能使用时，你需要为其执行操作动作。"
+                ],
+    "translator":  "不全书"
+}

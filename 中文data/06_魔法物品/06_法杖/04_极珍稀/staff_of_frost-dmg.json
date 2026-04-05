@@ -1,0 +1,91 @@
+[
+  {
+    "ENG_name": "Staff of Frost",
+    "name": "冰霜法杖",
+    "source": "DMG",
+    "page": 202,
+    "srd": true,
+    "referenceSources": [
+      "CoS",
+      "TftYP-AtG",
+      "WDMM",
+      "IDRotF",
+      "CoA",
+      "LRDT"
+    ],
+    "reprintedAs": [
+      "冰霜法杖|XDMG"
+    ],
+    "resist": [
+      "寒冷"
+    ],
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": "由德鲁伊、术士、魔契师或法师",
+    "reqAttuneTags": [
+      {
+        "class": "德鲁伊"
+      },
+      {
+        "class": "术士"
+      },
+      {
+        "class": "魔契师"
+      },
+      {
+        "class": "法师"
+      }
+    ],
+    "weight": 4,
+    "weaponCategory": "simple",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6 + 4}",
+    "charges": 10,
+    "staff": true,
+    "entries": [
+      "持握这把法杖期间，你具有寒冷伤害的抗性。",
+      "这把法杖有10发充能。持握法杖期间，你可以用一个动作并消耗1发或更多充能以施展以下法术之一（使用你自身的法术豁免DC和施法属性调整值）：{@spell 云雾术}（1充能）、{@spell 冰风暴}（4充能）、{@spell 冰墙术}（4充能）、{@spell 寒冰锥}（5充能）。",
+      "法杖每日黎明时恢复{@dice 1d6 + 4}发已消耗充能。当充能耗尽时，骰一次{@dice d20}。如果骰值为1，则法杖将被摧毁且化为一滩水。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "云雾术"
+        ],
+        "4": [
+          "冰风暴",
+          "冰墙术"
+        ],
+        "5": [
+          "寒冰锥"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表H"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 40000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Staff of Frost.webp"
+          },
+          "width": 127,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "ST"
+  }
+]

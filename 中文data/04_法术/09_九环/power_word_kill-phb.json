@@ -1,0 +1,56 @@
+[
+  {
+    "ENG_name": "Power Word Kill",
+    "name": "律令死亡",
+    "source": "PHB",
+    "page": 266,
+    "srd": true,
+    "basicRules": true,
+    "referenceSources": [
+      "WDMM"
+    ],
+    "reprintedAs": [
+      "律令死亡|XPHB"
+    ],
+    "level": 9,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你读出一威力满溢的单词，其足以使施法距离内一个你能看见的生物立即死亡。如果你所指定的生物现有生命值不超过 100 点，则其立即死亡。否则该法术不产生任何效应。"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "惑控系"
+  }
+]

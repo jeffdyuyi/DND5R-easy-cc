@@ -1,0 +1,21 @@
+[
+  {
+    "ENG_name": "Emerald Pen",
+    "name": "祖母绿钢笔",
+    "source": "FTD",
+    "page": 23,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这支笔的笔尖是祖母绿并且无需墨水就能书写。持握这支笔时，你可以随意施展法术{@spell 迷幻手稿}，无需材料成分"
+    ],
+    "attachedSpells": {
+      "will": [
+        "迷幻手稿"
+      ]
+    },
+    "translator": "不全书",
+    "valueReference": 400,
+    "type": "W"
+  }
+]

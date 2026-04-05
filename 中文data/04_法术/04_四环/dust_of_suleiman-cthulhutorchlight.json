@@ -1,0 +1,72 @@
+[
+  {
+    "ENG_name": "Dust of Suleiman",
+    "name": "苏莱曼之尘",
+    "source": "CthulhuTorchlight",
+    "page": 0,
+    "level": 4,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你咒唤一团能够伤害超自然生物的细密尘云。以施法距离内一点为中心，你创造一片30尺半径的{@variantrule 球状 [效应区域]|XPHB|球状}尘霭。选择一种除野兽或类人外的生物类型。{@variantrule 球状 [效应区域]|XPHB|球状}内所有属于所选类型的生物受到20力场伤害。当{@variantrule 球状 [效应区域]|XPHB|球状}移动到某个生物所在的空间时，或当生物进入该{@variantrule 球状 [效应区域]|XPHB|球状}或是在其内结束其回合时，该生物同样受到此伤害。一个生物每回合仅会受到一次此伤害。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "力场"
+    ]
+  }
+]

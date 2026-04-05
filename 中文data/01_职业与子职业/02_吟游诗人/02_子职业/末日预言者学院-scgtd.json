@@ -1,0 +1,128 @@
+{
+  "ENG_name": "College of Doomsayers",
+  "name": "末日预言者学院",
+  "shortName": "末日预言者",
+  "source": "GuideDrakkenheim",
+  "page": 153,
+  "className": "吟游诗人",
+  "classSource": "phb",
+  "subclassFeatures": [
+    {
+      "ENG_name": "College of Doomsayers",
+      "name": "末日预言者学院",
+      "source": "GuideDrakkenheim",
+      "page": 153,
+      "className": "吟游诗人",
+      "classSource": "phb",
+      "subclassShortName": "末日预言者",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 3,
+      "entries": [
+        "这个学院的吟游诗人沉醉于他人的恐惧术和绝望之中。他们预见了时代的终结，并利用他们的预言天赋在那些听到他们话语的人心中灌输恐惧。这些吟游诗人像其他任何人一样指挥着接见室，但他们的技艺是一个疯狂先知的技艺，他们的诗歌和歌曲回荡着绝望和痛苦的不和谐声响。那些听到这些疯狂胡言的人会被恐惧术击中，失去意志，陷入疯狂。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "结束将至|吟游诗人|phb|末日预言者|GuideDrakkenheim|3|GuideDrakkenheim"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "恐怖之仪|吟游诗人|phb|末日预言者|GuideDrakkenheim|3|GuideDrakkenheim"
+        }
+      ]
+    },
+    {
+      "ENG_name": "The End is Nigh",
+      "name": "结束将至",
+      "source": "GuideDrakkenheim",
+      "page": 153,
+      "className": "吟游诗人",
+      "classSource": "phb",
+      "subclassShortName": "末日预言者",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 3,
+      "skillProficiencies": [
+        {
+          "intimidation": true
+        }
+      ],
+      "entries": [
+        "你的言语将恐惧袭入那些见证你末日预言之人的心中。每当你进行一次魅力（{@skill 威吓}）检定时，你可以将任何小于等于9的掷骰结果视为掷出了10。"
+      ]
+    },
+    {
+      "ENG_name": "Dreadful Words",
+      "name": "恐怖之仪",
+      "source": "GuideDrakkenheim",
+      "page": 153,
+      "className": "吟游诗人",
+      "classSource": "phb",
+      "subclassShortName": "末日预言者",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 3,
+      "entries": [
+        "以一个附赠动作，你可以消耗一次诗人激励的使用次数并选择你能看见的60尺内的一个生物。目标受到等同于你诗人激励骰的心灵伤害，并且必须进行一次对抗你法术豁免DC的感知豁免检定。若豁免失败，目标将对你陷入恐慌状态，直到你的下个回合开始。"
+      ]
+    },
+    {
+      "ENG_name": "Prophetic Foresight",
+      "name": "预言预见术",
+      "source": "GuideDrakkenheim",
+      "page": 153,
+      "className": "吟游诗人",
+      "classSource": "phb",
+      "subclassShortName": "末日预言者",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "你可以预见每个可能动作的最灾难性结果。当你60尺内能看见的生物进行攻击检定、属性检定或豁免检定时，你可以使用你的反应并尝试让这些幻象成真。触发此效果的生物必须进行一次对抗你法术豁免DC的魅力豁免。若豁免失败，触发此效果的攻击检定未命中或属性检定、豁免检定失败。若豁免成功，该生物正常进行攻击检定、属性检定或豁免检定，且你不消耗此特性的使用次数。你可以使用此特性的次数等于你熟练加值的一半（向下取整）。完成一次长休后，你恢复所有已消耗的使用次数。"
+      ]
+    },
+    {
+      "ENG_name": "True Believer",
+      "name": "真正的信徒",
+      "source": "GuideDrakkenheim",
+      "page": 153,
+      "className": "吟游诗人",
+      "classSource": "phb",
+      "subclassShortName": "末日预言者",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "以一个附赠动作，你可以消耗一次诗人激励的使用次数并选择60尺内你能看见的一个生物。目标受到等同于你诗人激励骰的心灵伤害，并且必须进行一次对抗你法术豁免DC的感知豁免检定。豁免失败时，目标会陷入{@condition 恐慌}状态，直到你的下个回合开始。"
+      ]
+    },
+    {
+      "ENG_name": "Impending Doom",
+      "name": "迫近的末日",
+      "source": "GuideDrakkenheim",
+      "page": 153,
+      "className": "吟游诗人",
+      "classSource": "phb",
+      "subclassShortName": "末日预言者",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "一个对你恐慌的生物在能看到你时，其进行的所有豁免检定均具有劣势。"
+      ]
+    },
+    {
+      "ENG_name": "For Whom the Bell Tolls",
+      "name": "丧钟为谁而鸣",
+      "source": "GuideDrakkenheim",
+      "page": 153,
+      "className": "吟游诗人",
+      "classSource": "phb",
+      "subclassShortName": "末日预言者",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "当你掷先攻时，可以选择一个你能看见的60尺内的目标。你预言该生物即将死亡。在战斗的第一轮，任何对该生物的攻击具有优势。"
+      ]
+    }
+  ],
+  "hasFluff": true,
+  "hasFluffImages": true
+}

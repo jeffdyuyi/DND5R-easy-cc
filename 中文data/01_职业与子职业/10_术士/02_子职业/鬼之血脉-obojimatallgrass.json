@@ -1,0 +1,231 @@
+{
+  "ENG_name": "Oni Bloodline",
+  "name": "鬼之血脉",
+  "shortName": "恶鬼",
+  "source": "ObojimaTallGrass",
+  "className": "术士",
+  "classSource": "PHB",
+  "page": 148,
+  "subclassFeatures": [
+    {
+      "ENG_name": "Oni Bloodline",
+      "name": "鬼之血脉",
+      "source": "ObojimaTallGrass",
+      "page": 148,
+      "className": "术士",
+      "classSource": "PHB",
+      "subclassShortName": "恶鬼",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 1,
+      "entries": [
+        "在魔法领域中，存在着一支血统与恶鬼有着远古联系的术士血脉。这些被称为鬼之血脉的术士驾驭着他们血统的魔法来编织强大的法术。但是，随着他们更深入地探索自身的奥术能力，他们会发现自己逐渐在身体和精神上转变为恶鬼那可怕力量的化身。",
+        "在他们旅途的开始以及当他们使用自己的力量时，鬼之血脉开始看到他们血统特质的精妙显迹——外貌和性情的变化。然而，当他们更熟练地引导自己的魔法时，这些特质开始加剧。他们的皮肤可能改变，双眼可能闪烁着诡异的亮光，曾经精妙的特征变得更加明显，呈现出恶鬼那不容错认的面容。",
+        "当他们的法力达到天顶日时，鬼之血脉将达到一个巅峰，此时他们可以完全拥抱自己的传承并化身为真正的恶鬼。在此形态下，他们如同高耸的恐惧形象，挥舞着无与伦比的魔法力量和肉体威能。然而，伴随着这种变形而来的是危险的诱惑——要控制恶鬼对混沌与毁灭的无尽饥渴。这种挣扎并非未被岛民所注意，其中大多数人对鬼之血脉怀有恐惧或不信任。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "奥术囚笼|术士||恶鬼|ObojimaTallGrass|1"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "鬼之力|术士||恶鬼|ObojimaTallGrass|1"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Arcane Prison",
+      "name": "奥术囚笼",
+      "source": "ObojimaTallGrass",
+      "page": 125,
+      "className": "术士",
+      "classSource": "PHB",
+      "subclassShortName": "恶鬼",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 1,
+      "header": 1,
+      "entries": [
+        "被困在你体内的是第一恶鬼的精魄，通过它的子嗣传承并延伸至一条漫长而危险的血统。随着你力量的增强，你体内的精魄也随之成长。它迫切希望浮出表面，并在你最虚弱时显现。在1级时，你获得恶鬼特质，这些特质会在你消耗术法点时显现。每个恶鬼特质的可用性取决于你缺失的术法点数量，如下方表格所示。恢复术法点可能导致你失去一个或多个恶鬼特质。",
+        "每个恶鬼特质都有一个物理和奥术显迹，持续到你完成一次长休为止。",
+        {
+          "type": "table",
+          "colLabels": [
+            "术法点缺失",
+            "显迹"
+          ],
+          "colStyles": [
+            "col-2",
+            "col-3"
+          ],
+          "rows": [
+            [
+              "0-1",
+              "双眼"
+            ],
+            [
+              "2-4",
+              "号角"
+            ],
+            [
+              "5-9",
+              "皮肤"
+            ],
+            [
+              "10-14",
+              "舌卷"
+            ],
+            [
+              "15或更高",
+              "毛发"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Oni Traits",
+      "name": "鬼之力",
+      "source": "ObojimaTallGrass",
+      "page": 148,
+      "className": "术士",
+      "classSource": "PHB",
+      "subclassShortName": "恶鬼",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 1,
+      "header": 1,
+      "entries": [
+        {
+          "ENG_name": "Eyes",
+          "type": "entries",
+          "name": "双眼",
+          "entries": [
+            "你的双眼闪烁着几乎令人着迷的质量。作为一个动作，你可以激活你天生的眼部魅惑。在1分钟内，你对一个你选择的非敌对生物的所有魅力检定具有优势，前提是它能看见你的双眼。当效应结束时，该生物必须进行一次对抗你法术豁免DC的感知豁免检定。若成功，目标会意识到你使用了魔法来影响它的情绪并变得对你敌对。一个倾向于暴力的生物可能会攻击你。另一个生物可能会以其他方式寻求复仇（由GM决定），这取决于你与它的互动性质。"
+          ]
+        },
+        {
+          "ENG_name": "Horns",
+          "name": "角击",
+          "type": "entries",
+          "entries": [
+            "你获得一对从头部快速生长并突出的角。当你施放一个需要你进行近战或远程法术攻击的戏法时，你可以改为使用你的角进行近战法术攻击，将法术引导通过它们。当你以这种方式用戏法命中一个生物时，目标会受到额外的{@damage 1d6}穿刺伤害。此外，当一个敌对生物的移动引发你的借机攻击时，你可以使用你的反应通过你的角对该生物施放一个戏法，而不是进行借机攻击。该法术的施法时间必须为1个动作，且必须仅以该生物为目标。"
+          ]
+        },
+        {
+          "ENG_name": "Skin",
+          "type": "entries",
+          "name": "皮肤",
+          "entries": [
+            "你的皮肤颜色会变成暗红、绿或蓝色，并获得恶鬼的再生能力。每当你施放1环或更高等级的法术时，你可以恢复等同于法术等级加上你的体质调整值的生命值。如果你在该次施法中激活了舌卷特质，则不会获得此增益。"
+          ]
+        },
+        {
+          "ENG_name": "Tongue",
+          "type": "entries",
+          "name": "舌卷",
+          "entries": [
+            "每当施放咒语时，第一恶鬼那扭曲的恶魔语声音都能在你的口语中被听到。当你施放一个需要言语成分且以单个生物为目标的法术时，你也可以使用你的附赠动作使目标因恐惧而退缩。目标必须进行一次对抗你法术豁免DC的感知豁免检定。若豁免失败，目标必须使用其反应（如果有的话）移动至多一半速度远离你或倒地{@condition 倒地}（由你选择）。"
+          ]
+        },
+        {
+          "ENG_name": "Hair",
+          "type": "entries",
+          "name": "毛发",
+          "entries": [
+            "你的毛发变成骇人的白色并朝地面伸展，生长以掩护你的后背。你在AC上获得+2的附赠动作。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Ogre Manipulation",
+      "name": "食人掌控",
+      "source": "ObojimaTallGrass",
+      "page": 149,
+      "className": "术士",
+      "classSource": "PHB",
+      "subclassShortName": "恶鬼",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "从6级开始，你可以显现你的一个恶鬼特质，无论你缺少多少术法点。以一个附赠动作，你可以获得一个通常需要通过消耗术法点才能获得的恶鬼特质，并提前将其显现。该特质持续1分钟，如果你在这段时间内没有通过正常方式获得该特质，你将失去它。",
+        "一旦你使用了这个特性，直到你完成了一次长休为止你无法再次使用它。"
+      ]
+    },
+    {
+      "ENG_name": "Boiling Power",
+      "name": "沸腾之力",
+      "source": "ObojimaTallGrass",
+      "page": 149,
+      "className": "术士",
+      "classSource": "PHB",
+      "subclassShortName": "恶鬼",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "在14级时，你的恶鬼特质力量增强。以下变化适用于你的特质：",
+        {
+          "ENG_name": "Eyes",
+          "type": "entries",
+          "name": "双眼",
+          "entries": [
+            "除了你通常拥有的增益外，你还学会了{@spell 诚实之域}法术，你可以不消耗法术位施放它。当你施放时，只有你选择的60尺内的一个生物会受到该法术影响。目标必须在其每回合开始时对该法术进行豁免检定，前提是它能看见你的双眼；如果目标不再能看见你的双眼，法术会提前结束。"
+          ]
+        },
+        {
+          "ENG_name": "Horns",
+          "name": "角击",
+          "type": "entries",
+          "entries": [
+            "你的角击造成的额外伤害增加到{@dice 1d12}。"
+          ]
+        },
+        {
+          "ENG_name": "Skin",
+          "type": "entries",
+          "name": "皮肤",
+          "entries": [
+            "每当你施放1环或更高等级的法术时，你现在可以恢复等同于法术等级两倍+你的体质调整值的生命值。"
+          ]
+        },
+        {
+          "ENG_name": "Tongue",
+          "type": "entries",
+          "name": "舌卷",
+          "entries": [
+            "当你使用5环或更高法术位激活舌卷特质时，可以取代该特质的正常效应，改为使目标因恐惧而颤抖，对你产生极度关注。目标的被动感知（{@skill 察觉}）属性值降至5，且对所有非你发动的攻击承受AC-5惩罚。此效应持续到你下个回合开始。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Transformation",
+      "name": "变形",
+      "source": "ObojimaTallGrass",
+      "page": 149,
+      "className": "术士",
+      "classSource": "PHB",
+      "subclassShortName": "恶鬼",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 18,
+      "header": 2,
+      "entries": [
+        "从18级开始，你可以无需耗尽术法点就完全体现你恶魔先祖的传说形象。以一个动作，你可以立即显现你所有的恶鬼特质，无论你缺少多少术法点。当以这种方式显现你的恶鬼特质时，你获得对来自非魔法攻击的钝击、穿刺和挥砍伤害的抗性，并且你无法被{@condition 魅惑}或{@condition 恐慌}。",
+        "此效应持续1分钟，之后你将失去任何在该时间内未通过正常方式获得的特质。一旦你使用此特性，直到完成一次长休前无法再次使用，除非你花费5点术法点来再次使用它。"
+      ]
+    }
+  ],
+  "fluff": {
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Subclasses/oni-bloodline-sorcerer.webp"
+        },
+        "credit": "Alexander Cloos",
+        "width": 3440,
+        "height": 3440
+      }
+    ]
+  }
+}

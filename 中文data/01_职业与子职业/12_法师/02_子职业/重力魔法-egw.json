@@ -1,0 +1,40 @@
+{
+  "ENG_name": "Graviturgy Magic",
+  "name": "重力魔法",
+  "shortName": "重力",
+  "source": "EGW",
+  "className": "法师",
+  "classSource": "XPHB",
+  "_copy": {
+    "ENG_name": "Graviturgy Magic",
+    "name": "重力魔法",
+    "source": "EGW",
+    "shortName": "重力",
+    "className": "法师",
+    "classSource": "PHB",
+    "_preserve": {
+      "page": true,
+      "otherSources": true,
+      "referenceSources": true,
+      "srd": true,
+      "basicRules": true,
+      "reprintedAs": true
+    }
+  },
+  "subclassFeatures": [
+    "重力魔法|法师|XPHB|重力|EGW|3",
+    "重力井|法师||重力|EGW|6",
+    "狂暴牵引|法师||重力|EGW|10",
+    "事件视界|法师||重力|EGW|14"
+  ],
+  "fluff": {
+    "_subclassFluff": {
+      "ENG_name": "Graviturgy Magic",
+      "name": "重力魔法",
+      "source": "EGW",
+      "shortName": "重力",
+      "className": "法师",
+      "classSource": "PHB"
+    }
+  }
+}

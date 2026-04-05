@@ -1,0 +1,74 @@
+[
+  {
+    "ENG_name": "Vampiric Touch",
+    "name": "吸血鬼之触",
+    "source": "XPHB",
+    "page": 337,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 3,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你的阴影环绕着的手可以吸取他人的生命力来为自己疗伤。对你触及范围内的一名生物进行一次近战法术攻击。若命中，则目标受到{@damage 3d6}点暗蚀伤害，而你则恢复数值等同于所造成暗蚀伤害一半的{@variantrule 生命值|XPHB}。",
+      "该法术终止前，你可以在你的每个回合内用{@action 魔法|XPHB}动作对相同或不同的生物进行一次这样的攻击。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "你使用的法术位每比三环高一环，法术的伤害就增加{@scaledamage 3d6|3-9|1d6}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "necrotic"
+    ],
+    "spellAttack": [
+      "M"
+    ],
+    "miscTags": [
+      "HL"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "死灵系",
+    "display_damageInflict": [
+      "死灵"
+    ]
+  }
+]

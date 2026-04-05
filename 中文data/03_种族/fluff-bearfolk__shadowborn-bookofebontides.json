@@ -1,0 +1,30 @@
+{
+  "raceFluff": [
+    {
+      "ENG_name": "Bearfolk (Shadowborn)",
+      "name": "熊民 (影裔)",
+      "source": "BookOfEbonTides",
+      "_copy": {
+        "ENG_name": "Bearfolk",
+        "name": "熊民",
+        "source": "BookOfEbonTides",
+        "_mod": {
+          "entries": {
+            "mode": "prependArr",
+            "items": {
+              "type": "section",
+              "entries": [
+                {
+                  "type": "entries",
+                  "entries": [
+                    "作为影裔熊民，你是在幽影位面出生的幼崽之一，对黑暗术有着天然的倾向。影裔从婴儿时期就有着灰色的皮毛，有时还带有奇怪的奥术黑色斑纹。影裔不仅比其他熊民更容易抵抗黑暗术，还常常被其存在所吸引。"
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "ENG_name": "Crystal Ball of Mind Reading",
+    "name": "读心水晶球",
+    "source": "DMG",
+    "page": 159,
+    "reprintedAs": [
+      "读心水晶球|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "legendary",
+    "reqAttune": true,
+    "wondrous": true,
+    "weight": 3,
+    "entries": [
+      "这个{@item 水晶球}直径约6寸。接触它期间，你可以用它施放{@spell 探知术}（豁免{@dc 17}）。",
+      "你可以在使用{@item 水晶球}进行{@spell 探知术}期间，用一个动作施放{@spell 侦测思想}法术（豁免{@dc 17}），目标为你在法术传感器30尺内能看见的生物。你不需要在此{@spell 侦测思想}的持续时间内保持专注来维持它，但如果{@spell 探知术}结束，它也会结束。"
+    ],
+    "attachedSpells": [
+      "侦测思想",
+      "探知术"
+    ],
+    "lootTables": [
+      "魔法物品表I"
+    ],
+    "valueReference": 200000,
+    "type": "W"
+  }
+]

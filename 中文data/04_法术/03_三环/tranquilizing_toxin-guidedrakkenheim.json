@@ -1,0 +1,64 @@
+[
+  {
+    "ENG_name": "Tranquilizing Toxin",
+    "name": "镇静毒素",
+    "source": "GuideDrakkenheim",
+    "page": 189,
+    "level": 3,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "单一目标在范围内必须进行一次体质豁免检定，否则受到{@damage 8d6}毒素伤害并陷入{@condition 中毒}状态直到你的下个回合结束。以此方式陷入{@condition 中毒}状态时，目标还会被{@condition 震慑}。豁免成功时，目标受到伤害减半且不会陷入{@condition 中毒}状态。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用4环或更高法术位施放该法术时，每比3环高1环，毒素伤害就增加{@dice 1d6}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "毒素"
+    ],
+    "conditionInflict": [
+      "中毒",
+      "震慑"
+    ],
+    "savingThrow": [
+      "体质"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    }
+  }
+]

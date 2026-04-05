@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "+1 Antimatter Rifle",
+    "name": "恶毒 +1 反物质步枪",
+    "source": "AI",
+    "page": 149,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "unknown (magic)",
+    "weight": 10,
+    "valueRarity": "极珍稀",
+    "weaponCategory": "martial",
+    "age": "未来",
+    "property": [
+      "AF|XDMG",
+      "RLD|XDMG",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "削弱|XPHB"
+    ],
+    "range": "120/360",
+    "reload": 2,
+    "dmg1": "6d8",
+    "dmgType": "N",
+    "firearm": true,
+    "weapon": true,
+    "ammoType": "能量电池|xdmg",
+    "namePrefix": "恶毒 +1 ",
+    "bonusWeapon": "+1",
+    "entries": [
+      "使用这把武器进行攻击和伤害判定时，你有{=bonusWeapon}的加值。",
+      "当你使用这把魔法武器掷出20时，目标会额外受到7点{=dmgType}伤害。",
+      "{@note 注意：根据SRD，它是一个额外的{@damage 2d6} {=dmgType}伤害，尽管{@link 这是不正确的|https://rpg.stackexchange.com/a/174522/53884}。}"
+    ],
+    "_isVariant": true
+  }
+]

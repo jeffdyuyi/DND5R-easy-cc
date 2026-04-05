@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Shame",
+    "name": "羞耻",
+    "source": "ObojimaTallGrass",
+    "page": 252,
+    "type": "Boon",
+    "entries": [
+      {
+        "ENG_name": "Characteristics:",
+        "name": "性格:",
+        "type": "entries",
+        "entries": [
+          "被他们犯下的错误或被迫面对的情况所摧毁，这个人现在憎恨自己的一部分。这件物品感觉像是暴露在所有人面前，他们无法忍受别人因此评判他们的想法。"
+        ]
+      },
+      {
+        "ENG_name": "Boon Ability:",
+        "name": "恩惠属性：",
+        "type": "entries",
+        "entries": [
+          "作为一个附赠动作，所有在你60尺范围内的生物必须成功通过一次感知豁免检定，否则在你的下一个回合结束前无法看向你的方向。这个恩惠的DC等于10 + 你的等级。一旦你使用了这个恩惠，直到你完成一次长休前都不能再次使用。"
+        ]
+      }
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Custom/Boons/Shame.webp"
+  }
+]

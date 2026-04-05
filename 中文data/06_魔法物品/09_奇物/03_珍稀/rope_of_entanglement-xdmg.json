@@ -1,0 +1,37 @@
+[
+  {
+    "ENG_name": "Rope of Entanglement",
+    "name": "纠缠绳",
+    "source": "XDMG",
+    "page": 301,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "rare",
+    "wondrous": true,
+    "entries": [
+      "这根绳索长30尺。当你持握这根绳索的一端时，你可以使用一个{@action 魔法|XPHB}动作命令其另一端向前疾冲并缠住位于你20尺内一个你可见的生物。目标必须成功通过一次{@dc 15}的敏捷豁免，豁免失败则其陷入{@condition 束缚|XPHB}状态。你可以通过松开绳索的一端（使绳索盘绕着掉落在目标的空间）或使用一个{@variantrule 附赠动作|XPHB}重复命令（使绳索回到你手中并盘绕起来）来释放目标。",
+      "一个被绳索{@condition 束缚|XPHB}的目标可以使用一个动作进行一次{@dc 15}的力量（{@skill 运动|XPHB}）或敏捷（{@skill 特技|XPHB}）检定。若检定成功，目标不再被绳索{@condition 束缚|XPHB}。如果目标逃脱时你仍然持握着绳索，则你可以使用一个{@variantrule 反应|XPHB}命令绳索回到你手中并盘绕起来；否则，绳索会盘绕着掉落在目标的空间中。",
+      "这根绳索具有AC20、HP20以及毒素和心灵伤害{@variantrule 免疫|XPHB}。只要绳索还剩至少1{@variantrule 生命值|XPHB|生命值}，它就能每5分钟恢复1{@variantrule 生命值|XPHB|生命值}。如果绳索的{@variantrule 生命值|XPHB}降至0，则它被摧毁。"
+    ],
+    "lootTables": [
+      "器具 - 珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Rope of Entanglement.webp"
+          },
+          "width": 743,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

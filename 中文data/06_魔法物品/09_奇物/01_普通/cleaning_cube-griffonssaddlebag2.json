@@ -1,0 +1,48 @@
+[
+  {
+    "ENG_name": "Cleaning Cube",
+    "name": "清洁方块",
+    "source": "GriffonsSaddlebag2",
+    "page": 61,
+    "tier": "次要",
+    "rarity": "common",
+    "wondrous": true,
+    "sentient": true,
+    "entries": [
+      "这块迷你、具有智能的魔法凝胶方块是无害的皂性，而非酸性，且乐于清洁所经过的表面。当它被寻得时，{@i 清洁方块}是一个处于脱水状态的2寸宽的立方体。在脱水状态下，方块无生命，重量可忽略不计。你可以用一个动作将脱水的方块放入1加仑或更多的水中，使其活化并成长为1尺见方的立方体，重量为6磅。以这种方式活化的方块移动缓慢，有条不紊地清洁它所接触的物件和表面。方块最多可保持8小时的活化状态，但可以像海绵一样用一个动作挤压以再次脱水。",
+      "{@i 清洁方块}被视为魔法物件，而非生物。它的速度为1尺，并可以攀爬困难的表面，包括倒挂在天花板上，无需进行属性检定。它的护甲等级为10，拥有10生命值，并对所有伤害具有抗性。方块在生命值降至0时会脱水，但再次吸入水分时会恢复全部生命值。",
+      {
+        "ENG_name": "Sentience",
+        "name": "智能",
+        "type": "entries",
+        "entries": [
+          "清洁方块是一个无阵营倾向的智能物品，其智力为1，感知为6，魅力为1。它拥有听觉和{@sense 盲视}能力，范围为60尺。它无法说话或阅读，但会尽其所能理解并服从你的命令。"
+        ]
+      },
+      {
+        "ENG_name": "Personality",
+        "name": "个性",
+        "type": "entries",
+        "entries": [
+          "清洁方块在发现并溶解污垢和其他污渍时最为开心，也非常享受在干净、光滑表面上移动的感觉。它对战斗毫不关心，更倾向于继续清洁，而非参与冲突。如果在清洁过程中发现了掉落的硬币、宝石或其他类似的小物品，它会吸收并清洁该物品，直到生物用一个动作将其取出，或直到它再次脱水为止。"
+        ]
+      }
+    ],
+    "lootTables": [
+      "魔法物品表 A2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Cleaning-Cube.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

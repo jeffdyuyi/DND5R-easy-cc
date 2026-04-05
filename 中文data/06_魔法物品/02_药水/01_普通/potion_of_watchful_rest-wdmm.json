@@ -1,0 +1,17 @@
+[
+  {
+    "ENG_name": "Potion of Watchful Rest",
+    "name": "警戒之眠药水",
+    "source": "WDMM",
+    "page": 62,
+    "type": "P",
+    "rarity": "common",
+    "entries": [
+      "当你喝下这瓶药水时，接下来的8小时内你将获得以下好处：魔法无法使你入睡，你可以在长休期间保持清醒，同时仍然获得其好处。这种甜美的琥珀色酿造对不需要睡眠的生物，如精灵，没有效果。"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "valueReference": 50
+  }
+]

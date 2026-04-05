@@ -1,0 +1,69 @@
+[
+  {
+    "ENG_name": "Fey-Touched",
+    "name": "妖精触碰",
+    "source": "XPHB",
+    "page": 204,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        }
+      }
+    ],
+    "additionalSpells": [
+      {
+        "ability": "继承",
+        "innate": {
+          "_": {
+            "daily": {
+              "1e": [
+                "迷踪步|xphb",
+                {
+                  "choose": "level=1|school=E;D"
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "entries": [
+      "暴露在妖精荒野的魔法之下给予你以下增益：",
+      {
+        "ENG_name": "Fey Magic",
+        "name": "妖精魔法",
+        "type": "entries",
+        "entries": [
+          "选择一道{@filter 预言或惑控学派的一环法术|spells|level=1|school=E;D}。你始终准备着你选择的这道法术与{@spell 迷踪步|XPHB}。你可以无需法术位地施展每道法术各一次，当你完成{@variantrule 长休|XPHB}时，你重获以此法施展这些法术的能力。你也能够以你拥有的合适环阶的法术位施展这些法术。这些法术的施法属性是你以此专长提升的属性。"
+        ]
+      }
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "feats/XPHB/Fey-Touched.webp"
+          },
+          "credit": "Wayne England",
+          "width": 1637,
+          "height": 1182
+        }
+      ]
+    }
+  }
+]

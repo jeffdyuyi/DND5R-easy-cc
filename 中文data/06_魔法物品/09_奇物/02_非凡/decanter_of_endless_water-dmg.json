@@ -1,0 +1,58 @@
+[
+  {
+    "ENG_name": "Decanter of Endless Water",
+    "name": "无尽水瓶",
+    "source": "DMG",
+    "page": 161,
+    "srd": true,
+    "referenceSources": [
+      "SKT",
+      "WDMM",
+      "GoS",
+      "DC",
+      "JttRC",
+      "KftGV"
+    ],
+    "reprintedAs": [
+      "无尽水瓶|XDMG"
+    ],
+    "tier": "次要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "weight": 2,
+    "entries": [
+      "这个带瓶塞的瓶子在摇晃时会发出液体晃动的声音，仿佛其中有水一般。此瓶重2磅。",
+      "你可以用一个动作拔出瓶塞并说出三个命令语中之一，使瓶子流出淡水或是咸水（由你选择）。水将在你的下一回合开始时停止涌出。选择以下选项之一：",
+      {
+        "type": "list",
+        "items": [
+          "\"溪流\"：产生1加仑的水。",
+          "\"泉源\"产生5加仑的水。",
+          "\"井喷Geyser\"：如同间歇泉般喷出一道高30尺，宽1尺的水柱，共产生30加仑水。如果你握持此瓶，则可以用一个附赠动作将瓶口对准30尺范围内一名你能看到的生物。该生物必须成功通过{@dc 13}的力量豁免否则受到{@damage 1d4}的钝击伤害并陷入{@condition 倒地}。你也可以选择瞄准一个未被穿戴或携带且重量不超过200磅的物体。该物体要么被击倒，要么被推离你最多15尺远。"
+        ]
+      }
+    ],
+    "lootTables": [
+      "魔法物品表C"
+    ],
+    "miscTags": [
+      "CF/W"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Decanter of Endless Water.webp"
+          },
+          "width": 900,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

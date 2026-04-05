@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Forecaster's Cloak",
+    "name": "预报斗篷",
+    "source": "GriffonsSaddlebag2",
+    "page": 84,
+    "tier": "次要",
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "这件温暖的毛皮衬里斗篷能创造出即将到来的天气的幻象。当穿着这件斗篷期间，你可以用一个动作展开斗篷并说出其命令语，在斗篷内创造一个无害的感官效果，展示未来8小时内你所在位置的天气情况。这个效果持续1分钟，或直到你合上斗篷为止。"
+    ],
+    "lootTables": [
+      "魔法物品表 A1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Forecasters-Cloak.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

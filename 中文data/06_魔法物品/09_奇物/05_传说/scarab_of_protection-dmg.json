@@ -1,0 +1,49 @@
+[
+  {
+    "ENG_name": "Scarab of Protection",
+    "name": "防护圣甲虫",
+    "source": "DMG",
+    "page": 199,
+    "srd": true,
+    "reprintedAs": [
+      "防护圣甲虫|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "legendary",
+    "reqAttune": true,
+    "wondrous": true,
+    "charges": 12,
+    "entries": [
+      "如果你用手握住这个甲虫形徽章整整1轮，它表面上将浮现出铭文，揭示其魔法本质。它在你携带期间提供两项增益：",
+      {
+        "type": "list",
+        "items": [
+          "你在对法术进行的豁免具有优势。",
+          "圣甲虫有12发充能。如果你在对抗一个死灵系法术或由亡灵造成的有害效应时豁免失败，则你可以使用反应并消耗1发充能以将该失败的豁免变为成功。当最后一发充能耗尽时，防护圣甲虫将化为灰烬。"
+        ]
+      }
+    ],
+    "lootTables": [
+      "魔法物品表I"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 100000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Scarab of Protection.webp"
+          },
+          "width": 719,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

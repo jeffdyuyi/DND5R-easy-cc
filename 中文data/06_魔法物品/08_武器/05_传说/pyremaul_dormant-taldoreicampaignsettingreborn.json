@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "Pyremaul (Dormant)",
+    "name": "焚烬之锤（休眠）",
+    "source": "TalDoreiCampaignSettingReborn",
+    "page": 208,
+    "baseItem": "巨锤|PHB",
+    "type": "M",
+    "rarity": "legendary",
+    "reqAttune": true,
+    "weight": 10,
+    "weaponCategory": "军用",
+    "property": [
+      "H",
+      "2H",
+      "Vst|EGW"
+    ],
+    "dmg1": "2d6",
+    "dmgType": "B",
+    "bonusWeaponAttack": "+1",
+    "entries": [
+      "这把巨大的锤子由深红铁锻造而成，镶嵌着一颗闪耀永恒火焰的灿烂火蛋白石。据传目前由火巨人统治者{@book 大法官菲斯特，火巨人统治者弗卡农|TalDoreiCampaignSettingReborn|6|火巨人}在{@book 峰堡山|TalDoreiCampaignSettingReborn|3|峰堡山}下的某处挥舞着。",
+      {
+        "ENG_name": "Dormant",
+        "name": "休眠",
+        "type": "entries",
+        "entries": [
+          "当火锤处于休眠状态时，你使用这件魔法武器进行攻击检定时获得+1加值。当你使用这件武器攻击命中时，目标额外受到{@damage 1d6}火焰伤害。",
+          "此外，你可以选择让这个武器在30尺半径内发出明亮的光线，并在额外的30尺内发出昏暗的光线（无需动作）。"
+        ]
+      }
+    ],
+    "light": [
+      {
+        "bright": 30,
+        "dim": 60
+      }
+    ],
+    "hasFluffImages": true
+  }
+]

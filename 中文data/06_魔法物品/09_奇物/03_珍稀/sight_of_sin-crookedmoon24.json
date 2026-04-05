@@ -1,0 +1,43 @@
+[
+  {
+    "ENG_name": "Sight of Sin",
+    "name": "罪恶视界",
+    "source": "CrookedMoon24",
+    "page": 616,
+    "type": "P|XPHB",
+    "rarity": "rare",
+    "entries": [
+      "饮下这瓶药水后，你获得法术{@spell 侦测魔法|XPHB}（无需{@status 专注|XPHB}）的效应，持续10分钟，并且在此期间，你在感知（{@skill 洞悉|XPHB}）检定中具有{@variantrule 优势|XPHB}以辨识隐藏动机或欺瞒。",
+      "这种药水储藏于一个圆形玻璃扁瓶中。一道铁环缠绕在瓶子上，饰有一个山羊头骨。",
+      {
+        "ENG_name": "Heightened Potency",
+        "name": "强效",
+        "type": "entries",
+        "entries": [
+          "持续时间内，你还会获得法术{@spell 识破隐形|XPHB}的效应。"
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "侦测魔法|XPHB",
+      "识破隐形|XPHB"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Sight%20of%20Sin.webp"
+          },
+          "width": 771,
+          "height": 1200,
+          "credit": "Matthew Spencer"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "ENG_name": "Draconic Bloodline",
+  "name": "龙族血脉",
+  "shortName": "龙族血脉",
+  "source": "PHB",
+  "className": "术士",
+  "classSource": "PHB",
+  "page": 102,
+  "srd": true,
+  "basicRules": true,
+  "reprintedAs": [
+    "龙族术法|XPHB"
+  ],
+  "subclassFeatures": [
+    "龙族血脉|术士|PHB|龙族血脉|PHB|1",
+    "元素亲和|术士|PHB|龙族血脉|PHB|6",
+    "龙翼|术士|PHB|龙族血脉|PHB|14",
+    "龙之威仪|术士|PHB|龙族血脉|PHB|18"
+  ]
+}

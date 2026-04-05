@@ -1,0 +1,46 @@
+[
+  {
+    "ENG_name": "Warrior's Passkey",
+    "name": "武者的万能钥匙",
+    "source": "BMT",
+    "page": 39,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "grantsProficiency": true,
+    "bonusWeapon": "+1",
+    "entries": [
+      "这把银色的骷髅钥匙摸起来很暖和。若你持握着钥匙形态的它，便可以用一个动作从钥匙中施放{@spell 敲击术}法术。",
+      {
+        "ENG_name": "Transforming the Key",
+        "name": "转化钥匙",
+        "type": "entries",
+        "entries": [
+          "持握钥匙期间，你可以用一个附赠动作将其转变为一把魔法长剑。你熟练于这把剑，并且你用它进行的攻击检定和伤害掷骰获得+1加值。命中目标时，剑会造成{@damage 1d10}点力场伤害。该物品的剑形态持续到你不再持握它或者你用一个附赠动作将其恢复到钥匙形态为止。",
+          "如果你在该物品处于剑形态时结束对该物品的同调，它会自动恢复到钥匙形态。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "will": [
+        "敲击术"
+      ]
+    },
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/BMT/Warriors Passkey.webp"
+          },
+          "width": 813,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "+1 Light Hammer",
+    "name": "+1 轻锤",
+    "source": "DMG",
+    "page": 213,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "uncommon",
+    "weight": 2,
+    "value": 200,
+    "weaponCategory": "simple",
+    "property": [
+      "L|XPHB",
+      "T|XPHB"
+    ],
+    "mastery": [
+      "迅击|XPHB"
+    ],
+    "range": "20/60",
+    "dmg1": "1d4",
+    "dmgType": "B",
+    "hammer": true,
+    "weapon": true,
+    "hasFluffImages": true,
+    "namePrefix": "+1 ",
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "+1 武器|XDMG"
+    ],
+    "tier": "主要",
+    "bonusWeapon": "+1",
+    "entries": [
+      "使用这把魔法武器进行攻击和伤害判定时，你会获得{=bonusWeapon}的额外加成。"
+    ],
+    "lootTables": [
+      "魔法物品表F"
+    ],
+    "_isVariant": true,
+    "valueReference": 400
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "ENG_name": "Cloud Horn",
+    "name": "云雾号角",
+    "source": "ObojimaTallGrass",
+    "page": 202,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 1|large}|SneakerProMedium}",
+            "{@font {@style 0|large}|SneakerProMedium}",
+            "{@font {@style 0|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "云雾号角的花朵在春季盛放。在夏末的月历中，花朵中间的种子荚裂开，出现一种轻盈的纤维状绒毛——这种绒毛受到药水制造者和酿造师的高度追捧。云雾号角通常出现在草地和草原上，偏好干燥的气候。"
+    ],
+    "lootTables": [
+      "狂风农田普通原料|ObojimaTallGrass",
+      "舒里塔希的赠礼 普通原料|ObojimaTallGrass",
+      "阿伯拉山普通原料|ObojimaTallGrass",
+      "咸水湿地普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/cloud-horn.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 2781,
+          "height": 2781
+        }
+      ]
+    }
+  }
+]

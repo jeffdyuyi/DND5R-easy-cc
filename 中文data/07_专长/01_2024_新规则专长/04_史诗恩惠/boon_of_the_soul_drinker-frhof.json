@@ -1,0 +1,53 @@
+[
+  {
+    "ENG_name": "Boon of the Soul Drinker",
+    "name": "饮魂汲魄之恩惠",
+    "source": "FRHoF",
+    "page": 43,
+    "category": "EB",
+    "prerequisite": [
+      {
+        "level": 19
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "max": 30
+      }
+    ],
+    "resist": [
+      "寒冷",
+      "暗蚀"
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Grave Resistance",
+        "name": "墓亡抗性",
+        "type": "entries",
+        "entries": [
+          "你对寒冷和暗蚀伤害具有{@variantrule 抗性|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Siphon Life",
+        "name": "生命虹吸",
+        "type": "entries",
+        "entries": [
+          "当一名位于你120尺内的敌人{@variantrule 生命值|XPHB}降至0时，你能够以{@variantrule 反应|XPHB}恢复50{@variantrule 生命值|XPHB}。此增益一经使用，直至完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}你都无法再次使用。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

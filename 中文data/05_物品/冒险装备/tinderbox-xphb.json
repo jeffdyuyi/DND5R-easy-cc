@@ -1,0 +1,22 @@
+[
+  {
+    "name": "火绒盒",
+    "ENG_name": "Tinderbox",
+    "source": "XPHB",
+    "page": 229,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 1,
+    "value": 50,
+    "entries": [
+      "火绒盒是一种装有打火石、火镰和火绒（通常是浸泡在燃油里的干布料）的小型容器，其中的物品可以用来点火。你可以使用{@variantrule 附赠动作|XPHB}来用它点燃任何具有燃料的东西——例如{@item 蜡烛|XPHB}、{@item 油灯|XPHB}、{@item 附盖提灯|XPHB|提灯}或{@item 火把|XPHB}。在没有燃料的情况下生火需要1分钟时间。"
+    ],
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TDoN",
+      "DrDe-TFV"
+    ],
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

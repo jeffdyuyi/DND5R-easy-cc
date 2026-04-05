@@ -1,0 +1,79 @@
+[
+  {
+    "ENG_name": "Conjure Animals",
+    "name": "咒唤兽群",
+    "source": "XPHB",
+    "page": 254,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 3,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你将显现为幽灵般虚幻的大型兽群的自然精魂咒唤在施法距离内一处你可见的未占据空间中。兽群在持续时间内一直存在，并且你可以选择动物精魂的形态——例如狼群、蛇群或是鸟群。",
+      "在你位于兽群 5 尺内期间，你的力量豁免检定具有{@variantrule 优势|XPHB}优势。当你在你的回合移动时，你可以令兽群也移动至多 30 尺到一处你可见的未被占据的空间中。",
+      "每当兽群在移动中进入了一名你可见的生物 10 尺内时、一名你可见的生物进入位于兽群 10 尺内的空间或是在该空间结束其回合时，你都可以迫使该生物进行一次敏捷豁免检定。失败则该生物受到{@damage 3d10}挥砍伤害。一名生物一回合只需要进行一次该豁免。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "使用的法术位每比三环高一环，此法术的伤害就增加{@scaledamage 3d10|3-9|1d10}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "slashing"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "miscTags": [
+      "ADV",
+      "SGT"
+    ],
+    "areaTags": [
+      "C"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊",
+      "游侠"
+    ],
+    "display_school": "咒法系",
+    "display_savingThrow": [
+      "敏捷"
+    ],
+    "display_damageInflict": [
+      "挥砍"
+    ]
+  }
+]

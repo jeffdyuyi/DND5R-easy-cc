@@ -1,0 +1,84 @@
+[
+  {
+    "ENG_name": "Storm Door",
+    "name": "风暴之门",
+    "source": "BookOfEbonTides",
+    "page": 71,
+    "level": 4,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "闪电熔岩"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "伴随着闪电的噼啪声，你传送至多120尺至一个你能看见的未占据空间。每个位于你离开的空间和你新到达的空间5尺范围内的生物必须进行一次敏捷豁免检定。生物在豁免失败时受到{@damage 1d12}闪电伤害，豁免成功则只受一半伤害。",
+      "在法术持续时间的每个你的回合中，你可以使用你的附赠动作召唤闪电并再次开启这样的风暴之门，每次都将门扉定位在不同的空间。当你在户外施放该法术时，一场暴风会在1分钟内形成并跟随你。在此状态下，该法术的伤害提升至{@dice 2d12}，且你可以传送至多240尺的距离。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用5环或更高等级的法术位施放该法术时，你可以选择5尺内的一个生物与你一起通过风暴之门传送。随行的生物不会受到闪电伤害。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    },
+    "damageInflict": [
+      "闪电"
+    ],
+    "savingThrow": [
+      "敏捷"
+    ],
+    "miscTags": [
+      "SGT",
+      "TP",
+      "UBA"
+    ]
+  }
+]

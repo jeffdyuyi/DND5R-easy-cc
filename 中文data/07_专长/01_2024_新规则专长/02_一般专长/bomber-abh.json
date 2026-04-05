@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "Bomber",
+    "name": "轰炸者",
+    "source": "ABH",
+    "page": 9,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4
+      }
+    ],
+    "ability": [
+      {
+        "dex": 1
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Far Lobber",
+        "name": "远距投手",
+        "type": "entries",
+        "entries": [
+          "当你使用{@action 攻击|XPHB}动作投掷小瓶或烧瓶时，你可以以你自身40尺内能看见的一个物体或生物为目标。"
+        ]
+      },
+      {
+        "ENG_name": "Long Shots",
+        "name": "百步穿杨",
+        "type": "entries",
+        "entries": [
+          "使用{@itemProperty T|XPHB|投掷}武器进行远程攻击时，在长射程攻击不会对你的攻击检定施加{@variantrule 劣势|XPHB}。"
+        ]
+      }
+    ]
+  }
+]

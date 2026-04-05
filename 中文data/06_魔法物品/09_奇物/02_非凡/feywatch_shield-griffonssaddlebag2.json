@@ -1,0 +1,33 @@
+[
+  {
+    "ENG_name": "Feywatch Shield",
+    "name": "精视之盾",
+    "source": "GriffonsSaddlebag2",
+    "page": 81,
+    "baseItem": "护盾术|phb",
+    "type": "S",
+    "tier": "主要",
+    "rarity": "uncommon",
+    "weight": 6,
+    "ac": 2,
+    "entries": [
+      "这面使用精灵工艺制成的金属盾牌是妖精赠予盟友的传统礼物。持握此盾牌期间，你在识别或感知幻术效果的属性检定上获得 +5 加值，且在对抗{@condition 魅惑}的豁免检定上也获得 +5 加值。"
+    ],
+    "lootTables": [
+      "魔法物品表 F1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Feywatch-Shield.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

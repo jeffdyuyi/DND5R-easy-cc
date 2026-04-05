@@ -1,0 +1,35 @@
+[
+  {
+    "ENG_name": "Revolver",
+    "name": "致命左轮枪",
+    "source": "EGW",
+    "page": 270,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "rare",
+    "weight": 3,
+    "valueRarity": "珍稀",
+    "weaponCategory": "martial",
+    "age": "现代",
+    "property": [
+      "AF|XDMG",
+      "RLD|XDMG"
+    ],
+    "mastery": [
+      "削弱|XPHB"
+    ],
+    "range": "40/120",
+    "reload": 6,
+    "dmg1": "2d8",
+    "dmgType": "P",
+    "firearm": true,
+    "weapon": true,
+    "ammoType": "枪械子弹|xphb",
+    "namePrefix": "致命",
+    "entries": [
+      "当你使用这把魔法武器攻击并对生物造成伤害时，目标在你的下个回合开始前无法恢复生命值。"
+    ],
+    "_isVariant": true,
+    "valueReference": 4000
+  }
+]

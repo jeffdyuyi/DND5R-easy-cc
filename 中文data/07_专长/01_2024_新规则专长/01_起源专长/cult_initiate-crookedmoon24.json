@@ -1,0 +1,81 @@
+[
+    {
+        "ENG_name": "Cult Initiate",
+        "name": "教团新进者",
+        "source": "CrookedMoon24",
+        "page": 113,
+        "category": "O",
+        "additionalSpells": [
+            {
+                "ability": {
+                    "choose": [
+                        "int",
+                        "wis",
+                        "cha"
+                    ]
+                },
+                "innate": {
+                    "_": {
+                        "will": [
+                            {
+                                "choose": "level=0|class=魔契师"
+                            },
+                            {
+                                "choose": "level=0|class=魔契师"
+                            }
+                        ],
+                        "daily": {
+                            "1e": [
+                                {
+                                    "choose": "level=1|class=魔契师"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        ],
+        "entries": [
+            "你的教团向你传授了一些古怪的仪式，使你获得以下增益：",
+            {
+                "ENG_name": "Two Cantrips",
+                "name": "两道戏法",
+                "type": "entries",
+                "entries": [
+                    "你可以从魔契师法术列表中任意选择两道戏法习得。智力、感知或魅力是你施展本专长法术时的施法属性（在你选择此专长时决定）。"
+                ]
+            },
+            {
+                "ENG_name": "Level 1 Spell",
+                "name": "一环法术",
+                "type": "entries",
+                "entries": [
+                    "从魔契师法术列表中选择一道1环法术。你始终准备了该法术。你可以无需法术位地施展该法术一次，并在完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}后重获以此法施展该法术的能力。你也可以使用你拥有的任何法术位来施展该法术。"
+                ]
+            },
+            {
+                "ENG_name": "Spell Change",
+                "name": "改变法术",
+                "type": "entries",
+                "entries": [
+                    "每当你获得一级新等级，你都能将通过本专长习得的一道法术替换为魔契师法术列表中同环阶的另一道法术。"
+                ]
+            }
+        ],
+        "fluff": {
+            "images": [
+                {
+                    "type": "image",
+                    "href": {
+                        "type": "external",
+                        "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Feats/Cult%20Initiate.webp"
+                    },
+                    "width": 850,
+                    "height": 2361,
+                    "credit": "Suzanne Helmigh"
+                }
+            ]
+        },
+        "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Feats/Cult%20Initiate.webp"
+    }
+]

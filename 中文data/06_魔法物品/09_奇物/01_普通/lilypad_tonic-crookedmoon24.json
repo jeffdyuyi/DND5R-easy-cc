@@ -1,0 +1,42 @@
+[
+  {
+    "ENG_name": "Lilypad Tonic",
+    "name": "浮莲汤剂",
+    "source": "CrookedMoon24",
+    "page": 615,
+    "type": "P|XPHB",
+    "rarity": "common",
+    "entries": [
+      "饮下这瓶药水后，你获得法术{@spell 变形术|XPHB}（无需{@status 专注|XPHB}）的效应，将你变为一只青蛙。",
+      "这种药水装在一个形似并绘有大型青蛙图案的陶罐中，其背部有一个软木塞。",
+      {
+        "ENG_name": "Heightened Potency",
+        "name": "强效",
+        "type": "entries",
+        "entries": [
+          "该药水有六剂，而非一剂。"
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "变形术|XPHB"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Lilypad%20Tonic.webp"
+          },
+          "width": 1072,
+          "height": 1200,
+          "credit": "Humble Squid Creatives"
+        }
+      ]
+    }
+  }
+]

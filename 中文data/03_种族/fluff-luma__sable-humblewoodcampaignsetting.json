@@ -1,0 +1,25 @@
+{
+  "raceFluff": [
+    {
+      "ENG_name": "Luma (Sable)",
+      "name": "鸽族 (黑)",
+      "source": "HumblewoodCampaignSetting",
+      "_copy": {
+        "ENG_name": "Luma",
+        "name": "鸽族",
+        "source": "HumblewoodCampaignSetting",
+        "_mod": {
+          "entries": {
+            "mode": "prependArr",
+            "items": {
+              "type": "section",
+              "entries": [
+                "作为一只黑鸽族，你经常处于社交场合的边缘。尽管你被人群忽视，但你天赋异禀，注定要成就伟大。"
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

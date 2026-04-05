@@ -1,0 +1,671 @@
+[
+  {
+    "name": "魔契师",
+    "ENG_name": "Warlock",
+    "source": "PHB",
+    "edition": "classic",
+    "classData": {
+      "ENG_name": "Warlock",
+      "name": "魔契师",
+      "source": "PHB",
+      "page": 105,
+      "srd": true,
+      "reprintedAs": [
+        "魔契师|XPHB"
+      ],
+      "edition": "classic",
+      "hd": {
+        "number": 1,
+        "faces": 8
+      },
+      "proficiency": [
+        "wis",
+        "cha"
+      ],
+      "spellcastingAbility": "cha",
+      "casterProgression": "pact",
+      "cantripProgression": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "spellsKnownProgression": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        10,
+        11,
+        11,
+        12,
+        12,
+        13,
+        13,
+        14,
+        14,
+        15,
+        15
+      ],
+      "startingProficiencies": {
+        "armor": [
+          "{@item 轻甲|PHB|轻型护甲}"
+        ],
+        "weapons": [
+          "{@filter 简易武器|items|source=PHB|category=基础|type=简易武器}"
+        ],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "arcana",
+                "deception",
+                "history",
+                "intimidation",
+                "investigation",
+                "nature",
+                "religion"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "default": [
+          "(a) 一把 {@item 轻弩|PHB} 和 {@item 弩矢 (20)|PHB} 或 (b) 任何 {@filter 简易武器|items|source=PHB|category=基础|type=简易武器}",
+          "(a) 一个 {@item 材料包|PHB} 或 (b) 一件 {@item 奥术法器|PHB}",
+          "(a) 一个 {@item 地城套组|PHB} 或 (b) 一个 {@item 探索套组|PHB}",
+          "一套 {@item 皮甲|PHB}、任何 {@filter 简易武器|items|source=PHB|category=基础|type=简易武器}、以及两把 {@item 匕首|PHB}"
+        ],
+        "goldAlternative": "{@dice 4d4 × 10|4d4 × 10|起始金币}"
+      },
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "已知戏法",
+            "已知法术",
+            "法术位",
+            "位阶",
+            "祈唤"
+          ],
+          "rows": [
+            [
+              2,
+              2,
+              1,
+              1,
+              0
+            ],
+            [
+              2,
+              3,
+              2,
+              1,
+              2
+            ],
+            [
+              2,
+              4,
+              2,
+              2,
+              2
+            ],
+            [
+              3,
+              5,
+              2,
+              2,
+              2
+            ],
+            [
+              3,
+              6,
+              2,
+              3,
+              3
+            ],
+            [
+              3,
+              7,
+              2,
+              3,
+              3
+            ],
+            [
+              3,
+              8,
+              2,
+              4,
+              4
+            ],
+            [
+              3,
+              9,
+              2,
+              4,
+              4
+            ],
+            [
+              3,
+              10,
+              2,
+              5,
+              5
+            ],
+            [
+              4,
+              10,
+              2,
+              5,
+              5
+            ],
+            [
+              4,
+              11,
+              3,
+              5,
+              5
+            ],
+            [
+              4,
+              11,
+              3,
+              5,
+              6
+            ],
+            [
+              4,
+              12,
+              3,
+              5,
+              6
+            ],
+            [
+              4,
+              12,
+              3,
+              5,
+              6
+            ],
+            [
+              4,
+              13,
+              3,
+              5,
+              7
+            ],
+            [
+              4,
+              13,
+              3,
+              5,
+              7
+            ],
+            [
+              4,
+              14,
+              4,
+              5,
+              7
+            ],
+            [
+              4,
+              14,
+              4,
+              5,
+              8
+            ],
+            [
+              4,
+              15,
+              4,
+              5,
+              8
+            ],
+            [
+              4,
+              15,
+              4,
+              5,
+              8
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "契约魔法|魔契师|PHB|1",
+        {
+          "classFeature": "异界宗主|魔契师|PHB|1",
+          "gainSubclassFeature": true
+        },
+        "魔能祈唤|魔契师|PHB|2",
+        "魔契恩泽|魔契师|PHB|3",
+        "属性值提升|魔契师|PHB|4",
+        "替换魔能|魔契师|PHB|4|TCE",
+        {
+          "classFeature": "异界宗主特性|魔契师|PHB|6",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|魔契师|PHB|8",
+        {
+          "classFeature": "异界宗主特性|魔契师|PHB|10",
+          "gainSubclassFeature": true
+        },
+        "玄奥秘法(6环)|魔契师|PHB|11",
+        "属性值提升|魔契师|PHB|12",
+        "玄奥秘法(7环)|魔契师|PHB|13",
+        {
+          "classFeature": "异界宗主特性|魔契师|PHB|14",
+          "gainSubclassFeature": true
+        },
+        "玄奥秘法(8环)|魔契师|PHB|15",
+        "属性值提升|魔契师|PHB|16",
+        "玄奥秘法(9环)|魔契师|PHB|17",
+        "属性值提升|魔契师|PHB|19",
+        "魔能掌控|魔契师|PHB|20"
+      ],
+      "subclassTitle": "异界宗主"
+    },
+    "subclasses": [
+      {
+        "name": "旧日支配者宗主",
+        "source": "PHB",
+        "shortName": "旧日支配者"
+      },
+      {
+        "name": "至高妖精",
+        "source": "PHB",
+        "shortName": "至高妖精"
+      },
+      {
+        "name": "邪魔宗主",
+        "source": "PHB",
+        "shortName": "邪魔"
+      },
+      {
+        "name": "咒剑宗主",
+        "source": "XGE",
+        "shortName": "咒剑"
+      },
+      {
+        "name": "天界宗主",
+        "source": "XGE",
+        "shortName": "天界"
+      },
+      {
+        "name": "不朽者宗主",
+        "source": "SCAG",
+        "shortName": "不朽者"
+      },
+      {
+        "name": "巨灵宗主",
+        "source": "TCE",
+        "shortName": "巨灵"
+      },
+      {
+        "name": "深海意志宗主",
+        "source": "TCE",
+        "shortName": "深海意志"
+      },
+      {
+        "name": "死灵宗主",
+        "source": "VRGR",
+        "shortName": "死灵"
+      },
+      {
+        "name": "愚神",
+        "source": "CrookedMoon14",
+        "shortName": "愚神"
+      },
+      {
+        "name": "角之王",
+        "source": "CrookedMoon14",
+        "shortName": "角之王"
+      },
+      {
+        "name": "众首",
+        "source": "GriffonsSaddlebag2",
+        "shortName": "众首"
+      },
+      {
+        "name": "宇宙雇主",
+        "source": "SCGTD",
+        "shortName": "宇宙雇主"
+      },
+      {
+        "name": "悲伤之母",
+        "source": "BookOfEbonTides",
+        "shortName": "悲伤之母"
+      },
+      {
+        "name": "明灯",
+        "source": "ObojimaTallGrass",
+        "shortName": "明灯"
+      },
+      {
+        "name": "猎食者",
+        "source": "HumblewoodTales",
+        "shortName": "猎食者"
+      },
+      {
+        "name": "血液雇主",
+        "source": "SCGTD",
+        "shortName": "血液雇主"
+      }
+    ]
+  },
+  {
+    "name": "魔契师",
+    "ENG_name": "Warlock",
+    "source": "XPHB",
+    "edition": "one",
+    "classData": {
+      "ENG_name": "Warlock",
+      "name": "魔契师",
+      "source": "XPHB",
+      "page": 152,
+      "srd52": true,
+      "basicRules2024": true,
+      "edition": "one",
+      "primaryAbility": [
+        {
+          "cha": true
+        }
+      ],
+      "hd": {
+        "number": 1,
+        "faces": 8
+      },
+      "proficiency": [
+        "wis",
+        "cha"
+      ],
+      "spellcastingAbility": "cha",
+      "casterProgression": "pact",
+      "preparedSpellsProgression": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        10,
+        11,
+        11,
+        12,
+        12,
+        13,
+        13,
+        14,
+        14,
+        15,
+        15
+      ],
+      "classTableGroups": [
+        {
+          "colLabels": [
+            "祈唤",
+            "戏法",
+            "准备法术",
+            "法术位",
+            "位阶"
+          ],
+          "rows": [
+            [
+              1,
+              2,
+              2,
+              1,
+              1
+            ],
+            [
+              3,
+              2,
+              3,
+              2,
+              1
+            ],
+            [
+              3,
+              2,
+              4,
+              2,
+              2
+            ],
+            [
+              3,
+              3,
+              5,
+              2,
+              2
+            ],
+            [
+              5,
+              3,
+              6,
+              2,
+              3
+            ],
+            [
+              5,
+              3,
+              7,
+              2,
+              3
+            ],
+            [
+              6,
+              3,
+              8,
+              2,
+              4
+            ],
+            [
+              6,
+              3,
+              9,
+              2,
+              4
+            ],
+            [
+              7,
+              3,
+              10,
+              2,
+              5
+            ],
+            [
+              7,
+              4,
+              10,
+              2,
+              5
+            ],
+            [
+              7,
+              4,
+              11,
+              3,
+              5
+            ],
+            [
+              8,
+              4,
+              11,
+              3,
+              5
+            ],
+            [
+              8,
+              4,
+              12,
+              3,
+              5
+            ],
+            [
+              8,
+              4,
+              12,
+              3,
+              5
+            ],
+            [
+              9,
+              4,
+              13,
+              3,
+              5
+            ],
+            [
+              9,
+              4,
+              13,
+              3,
+              5
+            ],
+            [
+              9,
+              4,
+              14,
+              4,
+              5
+            ],
+            [
+              10,
+              4,
+              14,
+              4,
+              5
+            ],
+            [
+              10,
+              4,
+              15,
+              4,
+              5
+            ],
+            [
+              10,
+              4,
+              15,
+              4,
+              5
+            ]
+          ]
+        }
+      ],
+      "classFeatures": [
+        "魔能祈唤|魔契师|XPHB|1",
+        "契约魔法|魔契师|XPHB|1",
+        "魔能祈唤选项|魔契师|XPHB|1",
+        "秘法回流|魔契师|XPHB|2",
+        {
+          "classFeature": "魔契师子职|魔契师|XPHB|3",
+          "gainSubclassFeature": true
+        },
+        "属性值提升|魔契师|XPHB|4",
+        "术法复苏|魔契师|XPHB|5",
+        {
+          "classFeature": "子职特性|魔契师|XPHB|6",
+          "gainSubclassFeature": true
+        },
+        "联络宗主|魔契师|XPHB|9",
+        {
+          "classFeature": "子职特性|魔契师|XPHB|10",
+          "gainSubclassFeature": true
+        },
+        "玄奥秘法|魔契师|XPHB|11",
+        "属性值提升|魔契师|XPHB|12",
+        "玄奥秘法|魔契师|XPHB|13",
+        {
+          "classFeature": "子职特性|魔契师|XPHB|14",
+          "gainSubclassFeature": true
+        },
+        "玄奥秘法|魔契师|XPHB|15",
+        "属性值提升|魔契师|XPHB|16",
+        "玄奥秘法|魔契师|XPHB|17",
+        "传奇恩惠|魔契师|XPHB|19",
+        "魔能掌控|魔契师|XPHB|20"
+      ],
+      "subclassTitle": "魔契师子职"
+    },
+    "subclasses": [
+      {
+        "name": "天界宗主",
+        "shortName": "天界",
+        "source": "XPHB"
+      },
+      {
+        "name": "旧日支配者宗主",
+        "shortName": "旧日支配者",
+        "source": "XPHB"
+      },
+      {
+        "name": "至高妖精宗主",
+        "shortName": "至高妖精",
+        "source": "XPHB"
+      },
+      {
+        "name": "邪魔宗主",
+        "shortName": "邪魔",
+        "source": "XPHB"
+      },
+      {
+        "name": "愚神宗主",
+        "shortName": "愚神",
+        "source": "CrookedMoon24"
+      },
+      {
+        "name": "角之王宗主",
+        "shortName": "角之王",
+        "source": "CrookedMoon24"
+      },
+      {
+        "name": "女巫集会",
+        "shortName": "女巫集会",
+        "source": "GrimHollowPG24"
+      },
+      {
+        "name": "寄生体雇主",
+        "shortName": "寄生体",
+        "source": "GrimHollowPG24"
+      },
+      {
+        "name": "第一吸血鬼雇主",
+        "shortName": "吸血鬼",
+        "source": "GrimHollowPG24"
+      },
+      {
+        "name": "崇高猫猫庭",
+        "shortName": "猫猫庭",
+        "source": "CthulhuTorchlight"
+      }
+    ]
+  }
+]

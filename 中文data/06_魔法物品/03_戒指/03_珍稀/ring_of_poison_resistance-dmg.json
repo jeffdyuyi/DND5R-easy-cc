@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Ring of Poison Resistance",
+    "name": "毒素抗性戒指",
+    "source": "DMG",
+    "page": 192,
+    "srd": true,
+    "basicRules": true,
+    "referenceSources": [
+      "RoT"
+    ],
+    "reprintedAs": [
+      "毒素抗性戒指|XDMG"
+    ],
+    "type": "RG|DMG",
+    "resist": [
+      "毒素"
+    ],
+    "detail1": "紫晶",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "hasRefs": true,
+    "entries": [
+      "{#itemEntry 抗性戒指}"
+    ],
+    "translator": "不全书",
+    "valueReference": 4000
+  }
+]

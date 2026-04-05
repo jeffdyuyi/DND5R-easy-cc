@@ -1,0 +1,71 @@
+[
+  {
+    "ENG_name": "Hide of the Brimstone Behemoth (Legendary)",
+    "name": "硫磺巨兽之皮（传说）",
+    "source": "CrookedMoon24",
+    "page": 599,
+    "immune": [
+      "火焰"
+    ],
+    "rarity": "legendary",
+    "reqAttune": true,
+    "wondrous": true,
+    "property": [
+      "TCM'24:FH"
+    ],
+    "bonusAc": "+3",
+    "entries": [
+      "这件斗篷由一只蜥蜴形岩浆邪魔的皮制成，其破坏力无与伦比。火焰如今对它敬而远之，因为能驾驭如此庞然巨兽者，亦能驾驭其元素。",
+      "穿着这件斗篷期间，你获得由斗篷稀有度决定的{@variantrule 护甲等级|XPHB}和体质豁免+3加值，并且你可以使用以下词条。",
+      {
+        "ENG_name": "Deep-Dweller (Rare+)",
+        "name": "地心住民（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "你具有对火焰伤害的{@variantrule 抗性|XPHB}和等于你{@variantrule 速度|XPHB}的{@variantrule 掘穴速度|XPHB}。在你的回合中，当你从掘穴中出壳时，以你为源点的10尺{@variantrule 光环 [效应区域]|XPHB|光环}内的每个生物必须进行一次敏捷豁免检定（DC = 16 + 该皮的加值），豁免失败者受到{@damage 2d8}火焰伤害，豁免成功则伤害减半。"
+        ]
+      },
+      {
+        "ENG_name": "Infernal Roar (Rare+)",
+        "name": "炼狱咆哮（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "你可以从斗篷施放{@spell 恐惧术|XPHB}（豁免DC = 16 + 躲藏的加值）。该属性可以使用三次，所有消耗的使用次数在黄昏时恢复。"
+        ]
+      },
+      {
+        "ENG_name": "Hellfire Maw (Very Rare+)",
+        "name": "狱炎火喉（极珍稀+）",
+        "type": "entries",
+        "entries": [
+          "作为一个{@action 魔法|XPHB}动作，你可以向30尺{@variantrule 锥状 [效应区域]|XPHB|锥状}锥状区域吐出狱火。区域内的每个生物必须进行一次敏捷豁免检定（DC = 16 + 该皮的加值）。豁免失败时，生物受到{@damage 4d6}火焰伤害和{@damage 4d6}暗蚀伤害，并且在1分钟内无法恢复{@variantrule 生命值|XPHB}。豁免成功时，仅受到一半伤害。该属性一旦使用，直到下一个黄昏前无法再次使用。"
+        ]
+      },
+      {
+        "ENG_name": "Pernicious Fire Immunity (Legendary)",
+        "name": "恶毒火免（传说）",
+        "type": "entries",
+        "entries": [
+          "火焰主动避开你。你对火焰伤害具有{@variantrule 免疫|XPHB}。当你成为造成火焰伤害的攻击目标时，该攻击会随机选择攻击范围内的另一个生物作为目标，这可能包括攻击者。当你对造成火焰伤害的效应进行豁免检定时，你必须选择也在对该效应进行豁免检定的另一个生物。它在豁免检定上具有{@variantrule 劣势|XPHB}。"
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "恐惧术|XPHB"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Hide%20of%20the%20Brimstone%20Behemoth.webp"
+          },
+          "width": 752,
+          "height": 1200,
+          "credit": "Minard Maxime"
+        }
+      ]
+    }
+  }
+]

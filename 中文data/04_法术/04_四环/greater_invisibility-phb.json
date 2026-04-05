@@ -1,0 +1,65 @@
+[
+  {
+    "ENG_name": "Greater Invisibility",
+    "name": "高等隐形术",
+    "source": "PHB",
+    "page": 246,
+    "srd": true,
+    "basicRules": true,
+    "referenceSources": [
+      "OotA",
+      "CoS",
+      "WDMM",
+      "DC",
+      "KftGV",
+      "VEoR"
+    ],
+    "reprintedAs": [
+      "高等隐形术|XPHB"
+    ],
+    "level": 4,
+    "school": "I",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你或一个你触碰的生物变为{@condition 隐形}，直至法术终止。任何保持在目标身上的着装物和携带物也可以维持{@condition 隐形}状态。"
+    ],
+    "conditionInflict": [
+      "隐形"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "术士",
+      "法师"
+    ],
+    "display_school": "幻术系"
+  }
+]

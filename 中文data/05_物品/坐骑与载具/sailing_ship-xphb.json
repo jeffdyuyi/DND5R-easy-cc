@@ -1,0 +1,27 @@
+[
+  {
+    "name": "帆船",
+    "ENG_name": "Sailing Ship",
+    "source": "XPHB",
+    "page": 230,
+    "type": "SHP|XPHB",
+    "rarity": "none",
+    "value": 1000000,
+    "basicRules2024": true,
+    "capCargo": 100,
+    "capPassenger": 20,
+    "crew": 20,
+    "referenceSources": [
+      "DrDe-TDoN"
+    ],
+    "seeAlsoVehicle": [
+      "帆船"
+    ],
+    "srd52": true,
+    "translator": "不全书",
+    "vehAc": 15,
+    "vehDmgThresh": 15,
+    "vehHp": 300,
+    "vehSpeed": 2
+  }
+]

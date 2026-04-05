@@ -1,0 +1,14 @@
+[
+  {
+    "ENG_name": "Sealskin Cloak",
+    "name": "海豹皮斗篷",
+    "source": "BookOfEbonTides",
+    "page": 196,
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "当你穿着这件斗篷时，可以以一个动作变形成一只海豹生物，获得其啃咬攻击（{@damage 1d8}穿刺伤害）、12的护甲等级和40尺游泳速度。你保留自身的属性值、生命值和豁免检定。"
+    ]
+  }
+]

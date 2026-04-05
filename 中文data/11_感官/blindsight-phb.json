@@ -1,0 +1,17 @@
+[
+  {
+    "name": "盲视",
+    "ENG_name": "Blindsight",
+    "source": "PHB",
+    "page": 183,
+    "srd": true,
+    "basicRules": true,
+    "entries": [
+      "具有盲视感官的怪物在不依赖视觉的情况下，依然可以感觉一定的半径范围。没有眼睛的生物，如软泥怪ooze是典型的盲视物种。从另种意义来讲，使用回声定位以及高敏感官的生物也视为具有盲视感官，如蝙蝠bat和真龙true dragons。"
+    ],
+    "reprintedAs": [
+      "盲视|XPHB"
+    ],
+    "translator": "不全书"
+  }
+]

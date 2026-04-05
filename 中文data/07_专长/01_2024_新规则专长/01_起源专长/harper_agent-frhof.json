@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Harper Agent",
+    "name": "竖琴手特工",
+    "source": "FRHoF",
+    "page": 37,
+    "category": "O",
+    "languageProficiencies": [
+      {
+        "thieves' cant": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "anyMusicalInstrument": 3
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Thieves' Cant",
+        "name": "盗贼黑话",
+        "type": "entries",
+        "entries": [
+          "你懂得盗贼黑话。"
+        ]
+      },
+      {
+        "ENG_name": "Instrument Training",
+        "name": "乐器训练",
+        "type": "entries",
+        "entries": [
+          "你获得一项你选择{@item 乐器|XPHB}的熟练。"
+        ]
+      },
+      {
+        "ENG_name": "Distracting Melody",
+        "name": "分神旋律",
+        "type": "entries",
+        "entries": [
+          "当你执行{@action 协助|XPHB}动作辅助盟友的攻击检定时，你可以分散位于你30尺内而非5尺内敌人的注意力，只要该敌人能看见或听见你。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

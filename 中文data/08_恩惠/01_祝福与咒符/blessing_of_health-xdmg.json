@@ -1,0 +1,12 @@
+[
+  {
+    "ENG_name": "Blessing of Health",
+    "name": "健康祝福",
+    "source": "XDMG",
+    "page": 98,
+    "type": "Blessing",
+    "entries": [
+      "你的体质值提升2，至多提升至22。"
+    ]
+  }
+]

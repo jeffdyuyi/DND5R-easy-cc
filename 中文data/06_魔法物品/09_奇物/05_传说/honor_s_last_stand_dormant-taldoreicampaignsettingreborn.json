@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Honor's Last Stand (Dormant)",
+    "name": "最后的荣光（休眠）",
+    "source": "TalDoreiCampaignSettingReborn",
+    "page": 206,
+    "baseItem": "护盾术|PHB",
+    "type": "S",
+    "conditionImmune": [
+      "倒地"
+    ],
+    "rarity": "legendary",
+    "reqAttune": "由非邪恶阵营的生物",
+    "reqAttuneTags": [
+      {
+        "alignment": [
+          "N",
+          "G",
+          "C",
+          "L",
+          "A"
+        ]
+      }
+    ],
+    "weight": 6,
+    "property": [
+      "Vst|EGW"
+    ],
+    "ac": 2,
+    "bonusAc": "+1",
+    "entries": [
+      "这面巨大的镀银护盾上刻有{@deity 白金龙|艾桑椎亚|TalDoreiCampaignSettingReborn}的徽记，永不褪色。其金属总是温暖如初。",
+      {
+        "ENG_name": "Dormant",
+        "name": "休眠",
+        "type": "entries",
+        "entries": [
+          "当荣誉的最后立场处于休眠状态时，你持有盾牌时获得+1的AC加值。这个加值是盾牌正常AC加值之外的。同时，持有这面盾牌时，你不会被击倒{@condition 倒地}。"
+        ]
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  }
+]

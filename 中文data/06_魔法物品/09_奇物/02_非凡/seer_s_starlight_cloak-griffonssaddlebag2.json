@@ -1,0 +1,52 @@
+[
+  {
+    "ENG_name": "Seer's Starlight Cloak",
+    "name": "星兆斗篷",
+    "source": "GriffonsSaddlebag2",
+    "page": 157,
+    "tier": "次要",
+    "rarity": "uncommon",
+    "reqAttune": "由牧师、德鲁伊或法师",
+    "wondrous": true,
+    "entries": [
+      "这件深紫色斗篷的边缘镶着银线，其在头部和护甲周围具有呈放射状的星芒图案。斗篷的布料会在黑暗中闪烁隐约可见的星辰。斗篷那引人注目的兜帽正面永远可以看到一个由星辰组成的眼睛形状的星座图案。着装此斗篷期间，你可以用一个动作施放{@spell 神导术}法术。",
+      "当你能看到夜空且着装此斗篷期间，你可以用一个动作施放{@spell 卜筮术}法术。当你这样做时，预兆会以天空中出现的流星数量来表示：",
+      {
+        "type": "list",
+        "items": [
+          "{@b 三颗或更多流星，}代表好的结果",
+          "{@b 一颗流星,}代表坏的结果",
+          "{@b 两颗流星}代表好坏参半的结果",
+          "{@b 无} 代表结果既不特别好也不特别坏"
+        ]
+      },
+      "斗篷的这一属性一经使用，则其直到下一个黄昏前都无法再次使用。"
+    ],
+    "attachedSpells": {
+      "will": [
+        "神导术"
+      ],
+      "daily": {
+        "1e": [
+          "卜筮术"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表 B1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Seers-Starlight--Cloak-.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

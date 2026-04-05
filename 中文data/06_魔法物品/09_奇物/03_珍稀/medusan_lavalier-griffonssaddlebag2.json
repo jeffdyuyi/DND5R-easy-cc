@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Medusan Lavalier",
+    "name": "美杜莎项链",
+    "source": "GriffonsSaddlebag2",
+    "page": 121,
+    "tier": "次要",
+    "rarity": "rare",
+    "wondrous": true,
+    "entries": [
+      "这对金属蛇组成了一条能缠在你脖子上的盘曲项链。它们以几乎无法察觉的速度缓缓盘旋着、移动着，两蛇之尾则在你的颈后交缠在一起并牢牢相扣。你可以使用一个动作来戴上或取下这条项链。在佩戴着这条项链期间，你不会被{@condition 石化}，也无法在其他非自愿的情况下被变成石头。如果你在佩戴项链之前就已经被{@condition 石化}或者正在变成石头，只要石化的效果在此期间没有结束，该效果就会被压制直到你取下这条项链为止。"
+    ],
+    "lootTables": [
+      "魔法物品表C|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Medusan-Lavalier.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

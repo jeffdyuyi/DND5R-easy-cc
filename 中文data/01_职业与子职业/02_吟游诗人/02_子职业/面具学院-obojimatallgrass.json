@@ -1,0 +1,162 @@
+{
+  "ENG_name": "College of Masks",
+  "name": "面具学院",
+  "shortName": "面具",
+  "source": "ObojimaTallGrass",
+  "className": "吟游诗人",
+  "classSource": "PHB",
+  "page": 133,
+  "optionalfeatureProgression": [
+    {
+      "ENG_name": "Craft Masks",
+      "name": "制造面具",
+      "featureType": [
+        "伪装"
+      ],
+      "progression": {
+        "3": 2,
+        "7": 3,
+        "11": 4,
+        "15": 5
+      }
+    }
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "College of Masks",
+      "name": "面具学院",
+      "source": "ObojimaTallGrass",
+      "page": 133,
+      "className": "吟游诗人",
+      "classSource": "PHB",
+      "subclassShortName": "面具",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 3,
+      "entries": [
+        "作为面具学院的吟游诗人，就是能够通过使用他们灌注魔法的面具，在职能中迷失自我的剧院演员。通过这些面具，吟游诗人可以模仿他人，甚至获得他们面具所描绘角色的属性。",
+        "透过他人的双眼看世界。向世界展示不属于自己的面容。成为另一个人。这些都是演员的追求。一些本地玩家可能将舞台作为爱好或纷扰而闲逛，但面具学院的吟游诗人则不然。如同将液态青铜倒入模具，这些演员已将自我意识转变为可塑性物品，能够将自己转变为他人。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "表演之道|吟游诗人||面具|ObojimaTallGrass|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "能艺之具|吟游诗人||面具|ObojimaTallGrass|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "拟形换影|吟游诗人||面具|ObojimaTallGrass|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Copycat",
+      "name": "拟形换影",
+      "source": "ObojimaTallGrass",
+      "page": 134,
+      "className": "吟游诗人",
+      "classSource": "PHB",
+      "subclassShortName": "面具",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "从3级开始，你获得快速改变外貌以匹配他人的能力。以一个动作，你可以消耗一次诗人激励来施放{@spell 变身术}法术，使用该法术的变形外表选项变成你见过的另一个类人生物。以此方式施放时，该法术有以下变化：",
+        {
+          "type": "list",
+          "items": [
+            "它不需要你的专注，但你仍然可以随时结束该法术（无需动作）。",
+            "你获得5点临时生命值，如果你失去所有这些生命值或死亡，法术将提前结束。",
+            "你获得与目标相关且你知晓其拥有的新装备，例如其衣物、护甲、武器和其他小型随身物品。以此方式获得的任何装备不具有魔法词条，即使目标使用的原生物件具有。",
+            "你所穿戴或携带的任何装备会融入你的新形态，你无法激活、使用、挥舞或以其他方式从中获得任何增益。"
+          ]
+        },
+        {
+          "ENG_name": "Alter Self",
+          "name": "变身术",
+          "type": "inset",
+          "entries": [
+            "变形外表。你改变你的外貌。你可以决定你的外表，包括身高、重量、面部特性、声音、毛发长度、颜色和任何可区分的性格特征。你可以使自己看起来像是另一个种族的成员，但你的数据不会改变。你也不能变成一个与你体型不同的生物，并且你的基本形状保持不变；例如，如果你是双足行走的，你不能用这个法术变成四足行走的。在法术持续时间的任何时刻，你可以使用你的动作再次以这种方式改变你的外貌。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Tools of Performance",
+      "name": "能艺之具",
+      "source": "ObojimaTallGrass",
+      "page": 134,
+      "className": "吟游诗人",
+      "classSource": "PHB",
+      "subclassShortName": "面具",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "当你3级加入面具学院时，你获得将奥术恩惠编织进剧院面具的能力，这些面具在你佩戴时赋予你属性。你制造两个自选面具，详情见下方\"{@filter 面具|optionalfeatures|source=ObojimaTallGrass|特性 类型=伪装}\"部分。当你在此职业达到7级、11级和15级时，可额外制造一个自选面具。每次制造新面具时，你也可将已制造的一个面具替换为不同面具。",
+        "当你戴着面具时，你将获得它所赋予的能力。你可以用一个动作或附赠动作来装着或更换面具。如果面具的能力需要进行豁免检定，则DC等于你的吟游诗人法术豁免DC。"
+      ]
+    },
+    {
+      "ENG_name": "Tradition of Performance",
+      "name": "表演之道",
+      "source": "ObojimaTallGrass",
+      "page": 134,
+      "className": "吟游诗人",
+      "classSource": "PHB",
+      "subclassShortName": "面具",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "面具学院不仅描述了吟游诗人，还指代胧忆岛的一种剧院传统，其中一位孤独的伪装演员演绎着岛屿神话和民间传说中的故事，这些故事以一系列原型角色为特色，如老人、鱼和恶魔等。在整个表演中，演员巧妙地切换描绘每个角色的面具。每场表演都是独特的物品，因为没有两场是完全相同的。"
+      ]
+    },
+    {
+      "ENG_name": "Many-Masked Performance",
+      "name": "千面之演",
+      "source": "ObojimaTallGrass",
+      "page": 134,
+      "className": "吟游诗人",
+      "classSource": "PHB",
+      "subclassShortName": "面具",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "在6级时，你获得以戏剧表演吸引观众的能力。在1分钟内，你可以进行一场引人入胜的表演，并尝试使附近的生物陷入{@condition 魅惑}、{@condition 恐慌}或{@condition 昏迷}状态（由你选择）。选择60尺内能听到你表演的生物，数量不超过你的吟游诗人等级。当表演结束时，每个目标必须进行一次对抗你法术豁免DC的感知豁免检定，否则将陷入所选状态。",
+        "必须完成一次长休才能再次使用该特性。"
+      ]
+    },
+    {
+      "ENG_name": "Gift of Theatre",
+      "name": "传艺授面",
+      "source": "ObojimaTallGrass",
+      "page": 134,
+      "className": "吟游诗人",
+      "classSource": "PHB",
+      "subclassShortName": "面具",
+      "subclassSource": "ObojimaTallGrass",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "在14级时，你获得将你的一个剧院面具给予5尺内盟友的能力。以一个动作，你暂时解除将你的剧院面具束缚于你的咒语，允许你的一个盟友使用它。该面具可以这种方式使用1分钟，且只能指定另一个生物使用它。",
+        "一旦你给予盟友一个剧院面具，直到你完成一次短休或长休前，你无法再次这样做。"
+      ]
+    }
+  ],
+  "fluff": {
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Subclasses/college-of-masks-bard.webp"
+        },
+        "credit": "Scott Higginbotham",
+        "width": 3776,
+        "height": 3776
+      }
+    ]
+  }
+}

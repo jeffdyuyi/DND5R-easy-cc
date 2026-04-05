@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Gnashing Key",
+    "name": "撕咬钥匙",
+    "source": "GriffonsSaddlebag2",
+    "page": 91,
+    "tier": "次要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这把好奇的黄铜钥匙被虚弱的惑控赋予了活力。当将其插入锁孔时，它会魔法般地开始张合其如同嘴巴般的钥匙齿，在1分钟内大声地破坏锁具内部结构。1分钟结束时，锁具被破坏并被强行打开。如果锁具的DC大于15，钥匙在完成开锁前有一定百分比的概率折断。这个百分比等于锁具DC减去15后的差值乘以5。如果钥匙折断，锁具会被卡住而不是打开。钥匙也会被损毁，但仍能看到其从锁孔中突出的部分。",
+      "当钥匙在破坏锁具时，破坏锁芯和金属摩擦的声音最远90尺内都能听见。"
+    ],
+    "lootTables": [
+      "魔法物品表 B2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Gnashing-Key.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

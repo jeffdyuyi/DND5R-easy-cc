@@ -1,0 +1,16 @@
+[
+  {
+    "ENG_name": "Thermal Cube",
+    "name": "热力魔方",
+    "source": "IDRotF",
+    "page": 316,
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "这个3立方寸大小的固体硫磺石可以产生足量的干热，以此将15尺范围内的气温保持在95华氏度（35摄氏度）。"
+    ],
+    "translator": "不全书",
+    "valueReference": 100,
+    "type": "W"
+  }
+]

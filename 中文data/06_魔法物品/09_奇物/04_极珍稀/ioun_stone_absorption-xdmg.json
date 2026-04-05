@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Ioun Stone, Absorption",
+    "name": "艾恩石, 吸收",
+    "source": "XDMG",
+    "page": 273,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "hasRefs": true,
+    "entries": [
+      "{#itemEntry 艾恩石|XDMG}",
+      "在这颗淡紫色的椭球形艾恩石环绕在你头顶期间，你可以用一个{@variantrule 反应|XPHB}，使一名你能看到的生物即将施展的一道四环或更低环阶的法术无效化。被无效化的法术不会产生任何效应，且用于施展此法术的资源也会被浪费掉。此石无效化了总计20环的法术过后，它就会变成黯淡的灰色并失去魔力。"
+    ],
+    "lootTables": [
+      "奥秘 - 极珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 20000,
+    "fluff": {},
+    "type": "W"
+  }
+]

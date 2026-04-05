@@ -1,0 +1,24 @@
+[
+  {
+    "ENG_name": "Wand of Scowls",
+    "name": "愁苦魔杖",
+    "source": "XGE",
+    "page": 140,
+    "referenceSources": [
+      "WBtW"
+    ],
+    "type": "WD|DMG",
+    "tier": "次要",
+    "rarity": "common",
+    "weight": 1,
+    "recharge": "拂晓",
+    "rechargeAmount": 3,
+    "charges": 3,
+    "entries": [
+      "这根魔杖具有3发充能。持握这把魔杖期间，你可以用一个动作，消耗其一发充能，以指定周围30尺范围内的一个类人生物作为目标。目标必须通过一个{@dc 10}的魅力豁免检定否则被强制愁眉苦脸一分钟。",
+      "这根魔杖在每日黎明时会恢复全部已消耗的充能数。当充能数耗尽时，骰一次{@dice d20}。如果骰值为1，这根魔杖会变成一根{@item 欢笑魔杖|XGE}。"
+    ],
+    "translator": "不全书",
+    "valueReference": 100
+  }
+]

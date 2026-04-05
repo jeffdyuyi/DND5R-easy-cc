@@ -1,0 +1,46 @@
+[
+  {
+    "name": "木匠工具",
+    "ENG_name": "Carpenter's Tools",
+    "source": "XPHB",
+    "page": 220,
+    "type": "AT|XPHB",
+    "rarity": "none",
+    "weight": 6,
+    "value": 800,
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability:",
+            "name": "属性：",
+            "type": "item",
+            "entries": [
+              "力量"
+            ]
+          },
+          {
+            "ENG_name": "Utilize:",
+            "name": "操作：",
+            "type": "item",
+            "entries": [
+              "封死或撬开一扇门或一个容器（{@dc 20}）"
+            ]
+          },
+          {
+            "ENG_name": "Craft:",
+            "name": "制造：",
+            "type": "item",
+            "entries": [
+              "{@item 短棒|XPHB}, {@item 巨棒|XPHB}, {@item 长棍|XPHB}, {@item 木桶|XPHB}, {@item 箱子|XPHB}, {@item 梯子|XPHB}, {@item 长杆|XPHB}, {@item 便携式攻城锤|XPHB}, {@item 火把|XPHB}"
+            ]
+          }
+        ]
+      }
+    ],
+    "basicRules2024": true,
+    "srd52": true
+  }
+]

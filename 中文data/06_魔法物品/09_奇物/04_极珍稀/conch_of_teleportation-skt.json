@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "Conch of Teleportation",
+    "name": "传送海螺",
+    "source": "SKT",
+    "page": 234,
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这个物品是一个普通的，尽管相当大的，海螺壳，上面刻有乌瓦尔符文。海螺长2.5尺，重20磅。",
+      "作为一个动作，你可以通过吹入壳中来施放{@spell 传送术}法术。目的地是固定的，没有意外或法术偏离目标的风险。通过海螺传送的任何人都会出现在物品创造者在乌瓦尔符文刻在海螺上时指定的特定位置。它不允许传送到任何其他目的地。一旦其法术被施放，海螺直到下一个黎明前不能再使用。"
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "传送术"
+        ]
+      }
+    },
+    "hasFluffImages": true,
+    "valueReference": 40000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/SKT/Conch of Teleportation.webp"
+          },
+          "width": 785,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

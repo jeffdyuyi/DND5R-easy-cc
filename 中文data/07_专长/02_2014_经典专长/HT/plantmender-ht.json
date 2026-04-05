@@ -1,0 +1,65 @@
+[
+    {
+        "ENG_name": "Plantmender",
+        "name": "植物缮者",
+        "source": "HumblewoodTales",
+        "page": 172,
+        "prerequisite": [
+            {
+                "ability": [
+                    {
+                        "wis": 13
+                    }
+                ]
+            }
+        ],
+        "additionalSpells": [
+            {
+                "ability": "wis",
+                "known": {
+                    "_": [
+                        "橡棍术#c",
+                        "植物修复|humblewoodtales#c"
+                    ]
+                },
+                "innate": {
+                    "_": {
+                        "daily": {
+                            "1": [
+                                "树肤术",
+                                "荆棘丛生"
+                            ]
+                        }
+                    }
+                }
+            }
+        ],
+        "entries": [
+            "Tender魔法的基础形式之一，植物修复术常被传授给秩序的幼苗。植物修复术可用于协助森林从灾难中恢复，或保护旅行中可能遭遇的危害。你获得以下增益：",
+            {
+                "type": "list",
+                "page": 172,
+                "items": [
+                    "你可以以一个动作接触一棵植物或树，以确定它及其附近区域在过去24小时内发生了什么。这些事件会以幻象的形式向你展示，就像你亲身经历一样。在使用此能力后，你立即知晓该植物的状态和健康状况，包括当前影响它的任何枯萎怪或状态。你可以使用此能力的次数等于你感知调整值的两倍（至少1次），并在完成一次长休后恢复所有使用次数。",
+                    "你学会戏法{@spell 植物修复|humblewoodtales}{@cite 新谦卑林内容|humblewoodtales|*}和{@spell 橡棍术}。感知是你施展这些法术的施法属性。",
+                    "你可以施放一次{@spell 树肤术}或{@spell 荆棘丛生}法术，且必须完成一次长休后才能再次施放其中任一法术. 感知是你施放这些法术的施法属性。"
+                ]
+            }
+        ],
+        "fluff": {
+            "images": [
+                {
+                    "type": "image",
+                    "href": {
+                        "type": "external",
+                        "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/HumblewoodTales/book/147-10-007.mend-plants.webp"
+                    },
+                    "title": "植物修复术",
+                    "credit": "Veronika Federova",
+                    "width": 850,
+                    "height": 1377
+                }
+            ]
+        }
+    }
+]

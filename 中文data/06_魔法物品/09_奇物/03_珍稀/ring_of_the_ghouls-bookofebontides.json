@@ -1,0 +1,16 @@
+[
+  {
+    "ENG_name": "Ring of the Ghouls",
+    "name": "食尸鬼戒指",
+    "source": "BookOfEbonTides",
+    "page": 208,
+    "type": "RG|DMG",
+    "rarity": "rare",
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "这枚戒指有3充能，并在每天拂晓时恢复{@dice 1d3}已消耗的充能。佩戴戒指时，当你进行一次成功的近战攻击并使用你的反应消耗1充能时，目标必须成功通过DC 13的体质豁免检定，否则陷入{@condition 麻痹}状态直到其下个回合结束。"
+    ]
+  }
+]

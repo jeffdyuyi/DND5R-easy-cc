@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Wand of Conducting",
+    "name": "指挥魔杖",
+    "source": "XGE",
+    "page": 140,
+    "referenceSources": [
+      "WDMM"
+    ],
+    "reprintedAs": [
+      "指挥魔杖|XDMG"
+    ],
+    "type": "WD|DMG",
+    "tier": "次要",
+    "rarity": "common",
+    "weight": 1,
+    "recharge": "拂晓",
+    "rechargeAmount": 3,
+    "charges": 3,
+    "entries": [
+      "这根魔杖具有3发充能。持握这把魔杖期间，你可以用一个动作挥舞它，消耗其1发充能创造一段管弦乐。这段音乐在60尺范围内被听到，并会在你停止挥舞之后消失。",
+      "这根魔杖在每日黎明时会恢复全部已消耗的充能数。当充能数耗尽时，骰一次{@dice d20}。如果骰值为1，魔杖将伴随着演奏出一阵哀恸的低音兼次中音大号声音，碎裂成灰烬，并被摧毁。"
+    ],
+    "translator": "不全书",
+    "valueReference": 100
+  }
+]

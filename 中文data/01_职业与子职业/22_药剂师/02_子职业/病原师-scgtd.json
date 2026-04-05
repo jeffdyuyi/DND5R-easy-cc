@@ -1,0 +1,267 @@
+{
+  "subclass": [
+    {
+      "name": "病原师",
+      "shortName": "病原师",
+      "source": "GuideDrakkenheim",
+      "page": 145,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/GuideDrakkenheim/Class/Icons/Pathogenist.webp",
+      "subclassSpells": [
+        "感染术|GuideDrakkenheim",
+        "致伤术",
+        "目盲术/耳聋术",
+        "生物危害|GuideDrakkenheim",
+        "瘟疫术|GuideDrakkenheim",
+        "恶毒灵光|GuideDrakkenheim",
+        "枯萎术",
+        "鲜血蠕虫|GuideDrakkenheim",
+        "疫病术",
+        "疫病虫群|GuideDrakkenheim"
+      ],
+      "subclassFeatures": [
+        "病原师|药剂师|GuideDrakkenheim|病原师|GuideDrakkenheim|1",
+        "瘟疫熟练|药剂师|GuideDrakkenheim|病原师|GuideDrakkenheim|1",
+        "病原师法术|药剂师|GuideDrakkenheim|病原师|GuideDrakkenheim|1",
+        "恶性病原|药剂师|GuideDrakkenheim|病原师|GuideDrakkenheim|3",
+        "突变菌株|药剂师|GuideDrakkenheim|病原师|GuideDrakkenheim|3",
+        "突破感染|药剂师|GuideDrakkenheim|病原师|GuideDrakkenheim|6",
+        "爆发|药剂师|GuideDrakkenheim|病原师|GuideDrakkenheim|6",
+        "阴恶潜伏期|药剂师|GuideDrakkenheim|病原师|GuideDrakkenheim|10",
+        "免疫低下|药剂师|GuideDrakkenheim|病原师|GuideDrakkenheim|14",
+        "疾速恶化|药剂师|GuideDrakkenheim|病原师|GuideDrakkenheim|18"
+      ]
+    }
+  ],
+  "subclassFeature": [
+    {
+      "ENG_name": "Pathogenist",
+      "name": "病原师",
+      "source": "GuideDrakkenheim",
+      "page": 145,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "病原师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "entries": [
+        "对疾病的研究开启了通往危险科学发现的大门。你是消除疾病的专家，通过测试怪物研究感染。由于长期监测瘟疫，成为了异变专家，让疾病以可怕的方式在敌人间传播并使其残废。"
+      ]
+    },
+    {
+      "ENG_name": "Plague Proficiency",
+      "name": "瘟疫熟练",
+      "source": "GuideDrakkenheim",
+      "page": 145,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "病原师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "toolProficiencies": [
+        {
+          "herbalism kit": true
+        }
+      ],
+      "entries": [
+        "学会{@spell 颤栗之触|XPHB}戏法。获得{@item 草药工具|XPHB}的熟练项。若已有则改为获得自选另一种工具熟练项。"
+      ]
+    },
+    {
+      "ENG_name": "Pathogenist Spells",
+      "name": "病原师法术",
+      "source": "GuideDrakkenheim",
+      "page": 145,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "病原师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "entries": [
+        "当你达到特定等级后，始终准备某些法术。这些法术对你而言视为药剂师法术，不计入准备数量上限。",
+        {
+          "type": "table",
+          "caption": "病原师法术",
+          "colLabels": [
+            "药剂师等级",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "1st",
+              "{@spell 感染术|GuideDrakkenheim}, {@spell 致伤术|XPHB}"
+            ],
+            [
+              "3rd",
+              "{@spell 目盲术/耳聋术|XPHB}, {@spell 生物危害|GuideDrakkenheim}"
+            ],
+            [
+              "5th",
+              "{@spell 瘟疫术|GuideDrakkenheim}, {@spell 恶毒灵光|GuideDrakkenheim}"
+            ],
+            [
+              "7th",
+              "{@spell 枯萎术|XPHB}, {@spell 鲜血蠕虫|GuideDrakkenheim}"
+            ],
+            [
+              "9th",
+              "{@spell 疫病术|XPHB}, {@spell 疫病虫群|GuideDrakkenheim}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Pernicious Pathogens",
+      "name": "恶性病原",
+      "source": "GuideDrakkenheim",
+      "page": 145,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "病原师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "每当目标通过法术或特质移除你的疾病时（如{@spell 次等复原术|XPHB}），必须进行一次对抗你法术DC的属性检定（通常为施法属性）。若检定失败，该治愈效应无效果，且消耗的资源被浪费。"
+      ]
+    },
+    {
+      "ENG_name": "Mutant Strain",
+      "name": "突变菌株",
+      "source": "GuideDrakkenheim",
+      "page": 145,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "病原师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "学会进化疾病引发新症状。你在3级时学两个菌株（每次升级可替换一个），达到特定等级时学到额外数量：",
+        {
+          "type": "table",
+          "caption": "已知突变菌株",
+          "colLabels": [
+            "药剂师等级",
+            "突变菌株数量"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "3rd",
+              "2"
+            ],
+            [
+              "9th",
+              "3"
+            ],
+            [
+              "15th",
+              "4"
+            ]
+          ]
+        },
+        "施放造成疾病的法术时，可施加一额外效应。选项包括：",
+        {
+          "type": "list",
+          "items": [
+            "{@b 头晕。} 目标无法进行{@variantrule 反应|XPHB}。",
+            "{@b 疲惫。} 豁免失败时速度降至5尺，直到下回合开始。",
+            "{@b 咳嗽。} 需通过体质豁免，否则无法言语。",
+            "{@b 寒颤。} 回合开始时需掉落持有的物品。",
+            "{@b 虚弱（9级）。} 近战攻击伤害减半。",
+            "{@b 干眼症（9级）。} 豁免失败时{@condition 目盲|XPHB}，直到下回合开始。",
+            "{@b 剧烈发热（9级）。} 无法恢复生命值。",
+            "{@b 病变（9级）。} 失去任何伤害{@variantrule 抗性|XPHB}。",
+            "{@b 恶心（15级）。} 豁免失败时{@condition 失能|XPHB}，直到下回合开始。",
+            "{@b 营养不良（15级）。} 对钝击、穿刺和挥砍伤害{@variantrule 易伤|XPHB}。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Breakthrough Infection",
+      "name": "突破感染",
+      "source": "GuideDrakkenheim",
+      "page": 146,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "病原师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "使用法术位或高等公式施展致病法术时，忽略免疫疾病，此类生物改为在豁免中具有{@variantrule 优势|XPHB}。"
+      ]
+    },
+    {
+      "ENG_name": "Outbreak",
+      "name": "爆发",
+      "source": "GuideDrakkenheim",
+      "page": 146,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "病原师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "因感染你的疾病而死亡的生物，可用{@variantrule 反应|XPHB}将该疾病传播给30尺内的另一生物。"
+      ]
+    },
+    {
+      "ENG_name": "Insidious Incubation",
+      "name": "阴恶潜伏期",
+      "source": "GuideDrakkenheim",
+      "page": 146,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "病原师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "施放{@spell 感染术|GuideDrakkenheim}时可以调整使其不需{@status 专注|XPHB}，但持续时间缩短为1分钟。短休恢复。"
+      ]
+    },
+    {
+      "ENG_name": "Immunocompromised",
+      "name": "免疫低下",
+      "source": "GuideDrakkenheim",
+      "page": 146,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "病原师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "被你疾病感染的生物对抗你的药剂师法术豁免具有{@variantrule 劣势|XPHB}。"
+      ]
+    },
+    {
+      "ENG_name": "Rapid Evolution",
+      "name": "疾速恶化",
+      "source": "GuideDrakkenheim",
+      "page": 146,
+      "className": "药剂师",
+      "classSource": "GuideDrakkenheim",
+      "subclassShortName": "病原师",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 18,
+      "header": 2,
+      "entries": [
+        "致病法术可以同时施加两个突变菌株额外效应。"
+      ]
+    }
+  ]
+}

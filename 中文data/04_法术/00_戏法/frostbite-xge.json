@@ -1,0 +1,82 @@
+[
+  {
+    "ENG_name": "Frostbite",
+    "name": "霜噬",
+    "source": "XGE",
+    "page": 156,
+    "otherSources": [
+      {
+        "source": "EEPC",
+        "page": 18
+      }
+    ],
+    "referenceSources": [
+      "PotA"
+    ],
+    "level": 0,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你令距离之内，一个你能看见的生物开始结冰。该目标必须进行一次体质豁免检定。若豁免失败，该目标受到{@damage 1d6}点寒冷伤害，并在其下个回合结束前进行的下一次武器攻击检定中得到劣势。",
+      "你到达5级时，该法术的伤害增加{@damage 1d6}（变为 {@damage 2d6}）。11 级时变为{@damage 3d6}，17 级变为{@damage 4d6}。"
+    ],
+    "scalingLevelDice": {
+      "label": "寒冷伤害",
+      "scaling": {
+        "1": "1d6",
+        "5": "2d6",
+        "11": "3d6",
+        "17": "4d6"
+      }
+    },
+    "damageInflict": [
+      "cold"
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "miscTags": [
+      "SCL",
+      "SGT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊",
+      "术士",
+      "魔契师",
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "体质"
+    ],
+    "display_damageInflict": [
+      "寒冷"
+    ]
+  }
+]

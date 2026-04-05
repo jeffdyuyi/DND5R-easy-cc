@@ -1,0 +1,53 @@
+[
+  {
+    "ENG_name": "Svirfneblin Magic",
+    "name": "斯涅布力魔法",
+    "source": "MTF",
+    "page": 114,
+    "additionalSources": [
+      {
+        "source": "EEPC",
+        "page": 7
+      },
+      {
+        "source": "SCAG",
+        "page": 115
+      }
+    ],
+    "prerequisite": [
+      {
+        "race": [
+          {
+            "ENG_name": "gnome",
+            "name": "侏儒",
+            "subrace": "地底"
+          }
+        ]
+      }
+    ],
+    "additionalSpells": [
+      {
+        "ability": "int",
+        "innate": {
+          "_": {
+            "will": [
+              "回避侦测"
+            ],
+            "daily": {
+              "1e": [
+                "目盲术/耳聋术",
+                "朦胧术",
+                "易容术"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "entries": [
+      "你继承了你祖先的天生施法能力。这项能力允许你随意对自己施放{@spell 回避侦测}，而不需要材料成分。你也可以每日一次施展下列每项法术：{@spell 目盲术/耳聋术}、{@spell 朦胧术}和{@spell 易容术}。当你完成一次长休息后，你会重新获得施展这些法术的能力。",
+      "你的施法属性为智力，并且你以它们的最低环级来施放它们。"
+    ],
+    "translator": "不全书"
+  }
+]

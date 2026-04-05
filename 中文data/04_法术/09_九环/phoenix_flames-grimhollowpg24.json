@@ -1,0 +1,65 @@
+[
+  {
+    "ENG_name": "Phoenix Flames",
+    "name": "凤焰",
+    "source": "GrimHollowPG24",
+    "page": 197,
+    "level": 9,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "emanation",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你将自身焚化，在一团神圣火焰的灼热云雾中消耗你的身体。你被缩小至0{@variantrule 生命值|XPHB}生命值并死亡，燃烧的光辉从你身上爆发形成一个30尺{@variantrule 光环 [效应区域]|XPHB|光环}光环。区域内的每个生物必须进行一次体质豁免检定。豁免失败时，该生物受到{@damage 30d6}光耀伤害并获得1{@condition 力竭|XPHB}力竭等级。豁免成功时，生物仅受到一半伤害。如果此伤害将生物缩小至0{@variantrule 生命值|XPHB}生命值，它及其穿戴和携带的所有非魔法物品都将被焚化。该目标只能通过{@spell 完全复生术|XPHB}完全复生术或{@spell 祈愿术|XPHB}祈愿术复活。",
+      "10分钟后，你将从最初施放法术的灰烬中重生。你将回归生命，如同被{@spell 完全复生术|XPHB}法术所影响。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "光耀"
+    ],
+    "conditionInflict": [
+      "力竭"
+    ],
+    "savingThrow": [
+      "体质"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Phoenix%20Flames.webp"
+  }
+]

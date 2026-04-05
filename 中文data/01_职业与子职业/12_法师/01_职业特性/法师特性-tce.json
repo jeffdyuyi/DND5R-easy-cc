@@ -1,0 +1,16 @@
+[
+    {
+        "ENG_name": "Cantrip Formulas",
+        "name": "戏法公式",
+        "source": "TCE",
+        "page": 75,
+        "className": "法师",
+        "classSource": "PHB",
+        "level": 3,
+        "isClassFeatureVariant": true,
+        "entries": [
+            "{@i 3 级法师 {@variantrule 可选职业特性|TCE|可选特性}}",
+            "由于你一直在钻研法术书中的戏法公式，你甚至可以改变那些最基本的奥法模型。每当你完成一次 {@variantrule 长休|PHB}，你可以替换现有的一个法师戏法。你从法师法术列表中选择一个新的戏法替换它。"
+        ]
+    }
+]

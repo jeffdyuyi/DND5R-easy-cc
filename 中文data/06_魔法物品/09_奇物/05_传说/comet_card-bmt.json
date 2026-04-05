@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Comet Card",
+    "name": "彗星卡",
+    "source": "BMT",
+    "page": 13,
+    "rarity": "legendary",
+    "wondrous": true,
+    "recharge": "拂晓",
+    "entries": [
+      "以一个动作，你可以高举这张卡片，召唤一颗熊熊燃烧的陨石落到距你120尺内的可见地点。以那个点为中心，半径20尺范围内的每个生物都必须进行一次{@dc 17}的敏捷豁免。豁免失败的生物会受到{@damage 6d6}点钝击伤害和{@damage 6d6}点火焰伤害，豁免成功只受一半伤害。这一特性一经使用，直到次日黎明之前无法再次使用。"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 200000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "decks/BMT/Deck of Many Things/12-comet.webp"
+          },
+          "credit": "Vallez Gax",
+          "width": 850,
+          "height": 1552
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

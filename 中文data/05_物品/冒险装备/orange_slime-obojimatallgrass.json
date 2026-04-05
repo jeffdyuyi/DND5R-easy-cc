@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Orange Slime",
+    "name": "橙色粘液",
+    "source": "ObojimaTallGrass",
+    "page": 218,
+    "type": "Ingred",
+    "rarity": "rare",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 20|large}|SneakerProMedium}",
+            "{@font {@style 20|large}|SneakerProMedium}",
+            "{@font {@style 20|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "使用时需谨慎。小心处理。你已被警告。橙色粘液极易燃烧，即使是小滴也是如此。它也相当不稳定。只要稍微搅动，这种粘稠的凝胶状材质就能将岩石和混凝土缩小成瓦砾。大多数城镇和村庄都禁止橙色粘液，它的发现常常会引起恐慌。如果发现橙色粘液，通常附近会有指定的魔法师可以被召唤来控制或处理它。这种材质橙色粘液是从更大的同名活体杂食怪物中培养出来的。它极为珍稀，因为橙色粘液怪物只出现在阿伯拉山峰附近的少数洞穴中。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/orange-slime.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1616,
+          "height": 1616
+        }
+      ]
+    }
+  }
+]

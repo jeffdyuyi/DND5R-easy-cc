@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Squid Ink",
+    "name": "乌贼墨水",
+    "source": "ObojimaTallGrass",
+    "page": 208,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 4|large}|SneakerProMedium}",
+            "{@font {@style 9|large}|SneakerProMedium}",
+            "{@font {@style 7|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "乌贼墨水被书法家和优质服装商高度追捧，因为这种墨水可以制成出色的书写墨水和为最优质衣服提供丰富的多彩染料。一些厨师也珍视这种墨水，为他们的汤和菜肴增添色彩和独特风味。乌贼墨水可以在生活在胧忆岛周围水域的许多不同种类的乌贼中找到。"
+    ],
+    "lootTables": [
+      "浅滩普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/squid-ink.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 1668,
+          "height": 1668
+        }
+      ]
+    }
+  }
+]

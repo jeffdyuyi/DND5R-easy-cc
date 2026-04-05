@@ -1,0 +1,102 @@
+{
+  "ENG_name": "Emerald Enclave Grove",
+  "name": "翠绿闲庭林居",
+  "source": "FRHoF",
+  "page": 157,
+  "facilityType": "special",
+  "level": 9,
+  "prerequisite": [
+    {
+      "membership": [
+        "翠绿闲庭"
+      ]
+    }
+  ],
+  "space": [
+    "vast"
+  ],
+  "hirelings": [
+    {
+      "exact": 2
+    }
+  ],
+  "orders": [
+    "招募"
+  ],
+  "entries": [
+    "翠绿闲庭的资深成员能够塑造出一片由树木、青草与流水构成的安宁圣所，让那些身上体现着自然之力的魔法生物在此安居。这个翠绿闲庭林居可容纳一只巨型生物，或两只大型生物；每四只中型或小型生物在这里占据的空间等同于一只大型生物。",
+    {
+      "ENG_name": "Recruit: Creature of Nature",
+      "name": "招募：自然生灵",
+      "type": "entries",
+      "entries": [
+        "当你对此设施下达招募指令时，你可从翠绿闲庭林居生物表中邀请一只生物入驻你的翠绿闲庭林居。投掷骰子。若结果为奇数，该生物拒绝了你的邀请，你本次指令无效；若结果为偶数，该生物接受邀请并将在7日后来到你的翠绿闲庭林居。你的雇员将负责照料该生物并维护此设施。",
+        "在你翠绿闲庭林居中的生物视为你的据点卫兵。如果它们遭受任何损失，便将损失的生物从你的据点卫兵名单中划去。你可以选择不将一只或更多生物视为据点卫兵，此时这些生物不会参与据点的防御，而是按照自己的天性活动，使用{@book 怪物图鉴|XMM}中的数据。",
+        {
+          "type": "table",
+          "caption": "翠绿闲庭林居生物",
+          "colLabels": [
+            "生物",
+            "体型"
+          ],
+          "colStyles": [
+            "col-6",
+            "col-6"
+          ],
+          "rows": [
+            [
+              "{@creature 启蒙灌木|XMM}",
+              "小型"
+            ],
+            [
+              "{@creature 启蒙树木|XMM}",
+              "巨型"
+            ],
+            [
+              "{@creature 闪现犬|XMM}",
+              "中等"
+            ],
+            [
+              "{@creature 人马骠骑|XMM}",
+              "大型"
+            ],
+            [
+              "{@creature 树精|XMM}",
+              "中等"
+            ],
+            [
+              "{@creature 蕈人成体|XMM}",
+              "中等"
+            ],
+            [
+              "{@creature 蕈人幼体|XMM}",
+              "小型"
+            ],
+            [
+              "{@creature 皮克精|XMM}",
+              "微型"
+            ],
+            [
+              "{@creature 半羊人|XMM}",
+              "中等"
+            ],
+            [
+              "{@creature 小仙灵|XMM}",
+              "微型"
+            ],
+            [
+              "{@creature 树人|XMM}",
+              "大型"
+            ],
+            [
+              "{@creature 独角兽|XMM}",
+              "大型"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "hasFluffImages": true,
+  "translator": "不全书"
+}

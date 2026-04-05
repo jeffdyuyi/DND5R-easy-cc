@@ -1,0 +1,43 @@
+[
+  {
+    "ENG_name": "Boon of Dimensional Travel",
+    "name": "次元旅行之恩惠",
+    "source": "XPHB",
+    "page": 210,
+    "srd52": true,
+    "basicRules2024": true,
+    "category": "EB",
+    "prerequisite": [
+      {
+        "level": 19
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "max": 30
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Blink Steps",
+        "name": "闪烁步",
+        "type": "entries",
+        "entries": [
+          "当你执行{@action 攻击|XPHB}动作或{@action 魔法|XPHB}动作后，你可以立即传送至多 30 尺的距离到一处你可见的未占据空间内。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

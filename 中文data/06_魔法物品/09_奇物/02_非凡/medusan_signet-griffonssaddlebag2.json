@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Medusan Signet",
+    "name": "美杜莎玺戒",
+    "source": "GriffonsSaddlebag2",
+    "page": 121,
+    "type": "RG|DMG",
+    "tier": "次要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "entries": [
+      "在佩戴着这枚戒指期间，当你的生命值降至0但未被直接杀死时，你不会倒地{@condition 倒地}但会立即变成石头并陷入{@condition 石化}石化状态。你将保持{@condition 石化}石化状态直至你死亡，或者直至你成为{@spell 高等复原术}高等复原术的目标或恢复任意数量的生命值。在后两者情况下，你会在解除石化时恢复原形并意识清醒（结束失能状态）。你以此法被石化期间，你在你的回合开始时不进行死亡豁免检定{@condition 石化}，但你受到伤害时仍记作失败的死亡豁免。在此基础上，由于石化形态提供的保护，你在石化期间受到的重击{@condition 石化}改为普通命中。当你结束失能时，你还会获得{@dice 2d6 + 3}临时生命值，该临时生命值持续1分钟，期间石化形态提供的保护将缓缓消失。戒指的这项词条一旦使用满3次后，此戒指就会化作沙尘并遭摧毁。"
+    ],
+    "lootTables": [
+      "魔法物品表 B2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Medusan-Signet.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

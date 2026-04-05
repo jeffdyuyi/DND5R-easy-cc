@@ -1,0 +1,92 @@
+{
+  "ENG_name": "College of Shadow",
+  "name": "暗影学院",
+  "shortName": "幽影",
+  "source": "BookOfEbonTides",
+  "className": "吟游诗人",
+  "classSource": "PHB",
+  "subclassFeatures": [
+    {
+      "ENG_name": "College of Shadow",
+      "name": "暗影学院",
+      "source": "BookOfEbonTides",
+      "className": "吟游诗人",
+      "classSource": "PHB",
+      "subclassShortName": "幽影",
+      "subclassSource": "BookOfEbonTides",
+      "level": 3,
+      "entries": [
+        "对黑暗的恐惧是最原始的情感之一，暗影学院的吟游诗人操纵这种恐惧来增强他们的艺术表现。这些吟游诗人编织光明与黑暗之间的灰色边界，以惊骇和激励被俘的观众。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "舞动之影|吟游诗人||幽影|BookOfEbonTides|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "深暗恐惧|吟游诗人||幽影|BookOfEbonTides|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Dancing Shadows",
+      "name": "舞动之影",
+      "source": "BookOfEbonTides",
+      "className": "吟游诗人",
+      "classSource": "PHB",
+      "subclassShortName": "幽影",
+      "subclassSource": "BookOfEbonTides",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "当你3级加入暗影学院时，你将获得编织一团安全感幽影的能力。",
+        "以一个附赠动作，你可以消耗一次诗人激励来创造一个以你为中心的半径20尺的化形幽影球状区域。该区域随你移动，会绕过转角，并持续1分钟或直到你陷入{@condition 失能}状态或死亡。",
+        "站在球状范围内的盟友生物（包括你自己）获得{@book 半身掩护|PHB|9|掩护}，而球状范围外的生物在感知（{@skill 察觉}）检定上具有劣势，以察觉球状范围内的任何东西。{@sense 黑暗视觉}不会消除这个效应。不依赖视力的生物对此效应免疫。",
+        "如果此效应的区域与2环或更低法术创造的光亮区域重叠，创造该光照的法术将被解除。"
+      ]
+    },
+    {
+      "ENG_name": "Fear of the Dark",
+      "name": "深暗恐惧",
+      "source": "BookOfEbonTides",
+      "className": "吟游诗人",
+      "classSource": "PHB",
+      "subclassShortName": "幽影",
+      "subclassSource": "BookOfEbonTides",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "同样在3级时，你对黑暗的深入了解使你能够充分利用其可怕的词条，并使你的盟友保持镇定。在微光光照或黑暗术中时，你和任何能看到你的盟友对抗{@condition 恐慌|PHB|恐惧术}效应时具有优势。此外，任何能看到你的敌对生物对抗恐惧效应时掷骰具有劣势。"
+      ]
+    },
+    {
+      "ENG_name": "Shade Step",
+      "name": "阴影步",
+      "source": "BookOfEbonTides",
+      "className": "吟游诗人",
+      "classSource": "PHB",
+      "subclassShortName": "幽影",
+      "subclassSource": "BookOfEbonTides",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "在6级时，幽影会聚集在你激励的目标周围。当一个生物将你的诗人激励骰子加到其属性检定、攻击检定或豁免检定后，该生物可以立即魔法传送至多30尺至一个它能看见的未占据空间。以此方式移动不会引发{@action 借机攻击||借机攻击}。"
+      ]
+    },
+    {
+      "ENG_name": "Night Music",
+      "name": "夜曲",
+      "source": "BookOfEbonTides",
+      "className": "吟游诗人",
+      "classSource": "PHB",
+      "subclassShortName": "幽影",
+      "subclassSource": "BookOfEbonTides",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "在14级时，你可以将黑夜的全部能量和恐惧注入你的施法中。当你施放一个法术时，你可以消耗你的反应来选择60尺内看到并听到你施法的生物，数量最多等于你的魅力调整值（至少一个）。每个目标必须成功通过对抗你法术豁免DC的魅力豁免检定，否则将陷入{@condition 恐慌}状态1分钟。生物可以在每个自己回合结束时重复豁免检定，成功则终止对其自身的效应。",
+        "你必须完成一次长休或短休后才能再次使用该特性。"
+      ]
+    }
+  ],
+  "hasFluffImages": true
+}

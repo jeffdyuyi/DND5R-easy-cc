@@ -1,0 +1,61 @@
+[
+  {
+    "ENG_name": "Bestial Awakening",
+    "name": "兽性觉醒",
+    "source": "CrookedMoon24",
+    "page": 118,
+    "type": "Dark Bargain",
+    "additionalSpells": [
+      {
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "prepared": {
+          "_": {
+            "daily": {
+              "1e": [
+                "变形术|XPHB"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "entries": [
+      "狂野世界召唤着你的灵魂，嚎叫着让你加入它。你可以屈服于召唤并变身为野兽，但银的接触比最锋利的爪牙更深刻地啃咬你。",
+      {
+        "ENG_name": "Beast Skin",
+        "name": "兽之皮囊",
+        "type": "entries",
+        "entries": [
+          "你总是准备着{@spell 变形术|XPHB}法术。你可以无需法术位或法术成分施放该法术一次，但只能以自身为目标，并且当你完成一次{@variantrule 长休|XPHB}时重获以此方式施放它的能力。你也可以使用你拥有的相应等级的法术位来施放它。当你无需法术位施放该法术时，智力、感知或魅力是你的施法属性（当你选择此暗黑交易时选择该属性）。"
+        ]
+      },
+      {
+        "ENG_name": "Searing Silver",
+        "name": "灼灼白银",
+        "type": "entries",
+        "entries": [
+          "{@variantrule 伤害|XPHB}来自{@item 镀银武器|XDMG|镀银武器}无视你所具有的任何{@variantrule 抗性|XPHB}或{@variantrule 免疫|XPHB}伤害。如果你受到银质武器的伤害 or 用你的裸露皮肤（或其等效物）接触银，你无法重获{@variantrule 生命值|XPHB}直到你完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}。"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/CrookedMoon24/Rewards/Bestial%20Awakening.webp"
+        },
+        "width": 850,
+        "height": 303,
+        "credit": "Suzanne Helmigh"
+      }
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Bargains/Bestial%20Awakening.webp"
+  }
+]

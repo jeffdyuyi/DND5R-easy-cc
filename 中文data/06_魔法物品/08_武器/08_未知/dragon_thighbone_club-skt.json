@@ -1,0 +1,24 @@
+[
+  {
+    "ENG_name": "Dragon Thighbone Club",
+    "name": "龙腿骨棒",
+    "source": "SKT",
+    "page": 105,
+    "baseItem": "巨棒|PHB",
+    "type": "M",
+    "rarity": "unknown (magic)",
+    "reqAttune": "optional",
+    "weight": 250,
+    "weaponCategory": "simple",
+    "property": [
+      "2H"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "B",
+    "entries": [
+      "这条红龙的大腿骨长达14尺，重250磅，外面包裹着旧皮革，这表明它曾经被用作巨人的巨棍。",
+      "当你用这个武器击中龙类生物时，它会造成额外的{@damage 2d8}点钝击伤害。",
+      "如果你与巨棍共鸣，它会神奇地缩小到你可以有效地挥舞的大小。"
+    ]
+  }
+]

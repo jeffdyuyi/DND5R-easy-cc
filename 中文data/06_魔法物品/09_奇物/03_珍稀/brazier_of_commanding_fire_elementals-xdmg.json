@@ -1,0 +1,36 @@
+[
+  {
+    "ENG_name": "Brazier of Commanding Fire Elementals",
+    "name": "命令火元素火盆",
+    "source": "XDMG",
+    "page": 241,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "rare",
+    "wondrous": true,
+    "entries": [
+      "当你位于这座火盆5尺内期间，你能够以一个{@action 魔法|XPHB}动作来召唤一只{@creature 火元素|XMM}。火元素会出现在距离火盆最近的未被占据的空间、理解你所说的语言、服从你的命令、使用你的{@variantrule 先攻|XPHB}值并在你之后立即执行其回合。火元素会在1小时后，或它死亡时，或你以一个{@variantrule 附赠动作|XPHB}解消时消失。直到次日黎明前，火盆都无法再以该方式进行使用。"
+    ],
+    "lootTables": [
+      "奥秘 - 珍稀|XDMG",
+      "圣物 - 珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 2000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Brazier of Commanding Fire Elementals.webp"
+          },
+          "width": 506,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

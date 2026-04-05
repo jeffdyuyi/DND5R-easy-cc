@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Travel Alchemical Kit",
+    "name": "旅行炼金工具包",
+    "source": "AI",
+    "page": 30,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "grantsProficiency": true,
+    "entries": [
+      "第3级时，总部为你提供了一个旅行炼金工具包——一个非普通的魔法物品，包含了缩小版的{@item 炼金工具|PHB}和{@item 毒药工具|PHB}（玻璃瓶、研钵和研钵、化学品和玻璃搅拌棒）。作为这次升级的一部分，你获得了{@item 毒药工具|PHB}的熟练。",
+      "只要这个魔法工具包在你身上，你就可以使用它，无需拿出或收起。如果你被搜查，找到你的旅行炼金工具包需要通过一次{@dc 20}的智力（{@skill 调查}）或感知（{@skill 洞悉}）检定。"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/AI/travel-alchemical-kit.webp"
+          },
+          "credit": "Chris Walton",
+          "width": 1070,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

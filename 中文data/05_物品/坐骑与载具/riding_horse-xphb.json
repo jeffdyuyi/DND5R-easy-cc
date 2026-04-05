@@ -1,0 +1,16 @@
+[
+  {
+    "name": "乘用马",
+    "ENG_name": "Riding Horse",
+    "source": "XPHB",
+    "page": 229,
+    "type": "MNT|XPHB",
+    "rarity": "none",
+    "value": 7500,
+    "basicRules2024": true,
+    "carryingCapacity": 480,
+    "speed": 60,
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

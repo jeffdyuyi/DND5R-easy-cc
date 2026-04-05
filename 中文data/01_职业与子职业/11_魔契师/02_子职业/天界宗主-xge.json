@@ -1,0 +1,40 @@
+{
+  "ENG_name": "The Celestial",
+  "name": "天界宗主",
+  "shortName": "天界",
+  "source": "XGE",
+  "className": "魔契师",
+  "classSource": "XPHB",
+  "_copy": {
+    "ENG_name": "The Celestial",
+    "name": "天界宗主",
+    "source": "XGE",
+    "shortName": "天界",
+    "className": "魔契师",
+    "classSource": "PHB",
+    "_preserve": {
+      "page": true,
+      "otherSources": true,
+      "referenceSources": true,
+      "srd": true,
+      "basicRules": true,
+      "reprintedAs": true
+    }
+  },
+  "subclassFeatures": [
+    "天界宗主|魔契师|XPHB|天界|XGE|3",
+    "光耀之魂|魔契师||天界|XGE|6",
+    "天界韧性|魔契师||天界|XGE|10",
+    "灼光复仇|魔契师||天界|XGE|14"
+  ],
+  "fluff": {
+    "_subclassFluff": {
+      "ENG_name": "The Celestial",
+      "name": "天界宗主",
+      "source": "XGE",
+      "shortName": "天界",
+      "className": "魔契师",
+      "classSource": "PHB"
+    }
+  }
+}

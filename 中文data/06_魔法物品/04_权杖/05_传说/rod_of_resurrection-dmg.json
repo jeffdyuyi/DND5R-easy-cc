@@ -1,0 +1,65 @@
+[
+  {
+    "ENG_name": "Rod of Resurrection",
+    "name": "复生权杖",
+    "source": "DMG",
+    "page": 197,
+    "referenceSources": [
+      "CoA"
+    ],
+    "reprintedAs": [
+      "复生权杖|XDMG"
+    ],
+    "type": "RD|DMG",
+    "tier": "主要",
+    "rarity": "legendary",
+    "reqAttune": "需牧师，德鲁伊或圣武士",
+    "reqAttuneTags": [
+      {
+        "class": "牧师"
+      },
+      {
+        "class": "德鲁伊"
+      },
+      {
+        "class": "圣武士"
+      }
+    ],
+    "weight": 2,
+    "recharge": "拂晓",
+    "rechargeAmount": 1,
+    "charges": 5,
+    "entries": [
+      "这把权杖有5发充能。持握权杖时，你可以用一个动作施放以下法术之一：{@spell 医疗术}（消耗1充能）或{@spell 复生术}（消耗5充能）。",
+      "该权杖每天黎明时恢复1发已消耗的充能。如果权杖的充能耗尽，骰一次{@dice d20}。如果骰值为1，权杖将在一阵强光中消失。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "医疗术"
+        ],
+        "5": [
+          "复生术"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表I"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 200000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Rod of Resurrection.webp"
+          },
+          "width": 1000,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

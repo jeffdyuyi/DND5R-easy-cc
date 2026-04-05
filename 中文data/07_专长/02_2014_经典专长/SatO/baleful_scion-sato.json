@@ -1,0 +1,49 @@
+[
+  {
+    "ENG_name": "Baleful Scion",
+    "name": "恶意后继者",
+    "source": "SatO",
+    "page": 10,
+    "prerequisite": [
+      {
+        "level": 4,
+        "feat": [
+          "外层位面后裔|SatO|外层位面后裔（邪恶外层位面）"
+        ]
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ],
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "得益于你引导宇宙的邪恶之力的能力，你获得下列增益：",
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Grasp of Avarice",
+            "name": "贪婪之攫",
+            "type": "item",
+            "entries": [
+              "每回合一次，当你对你周围60尺范围内的一个你可见的生物造成伤害时，你可以额外对其造成一定暗蚀伤害。暗蚀伤害值等于{@damage 1d6}+你的熟练加值，然后你将恢复等同于所造成黯蚀伤害数值的生命值。你可以使用这一增益的次数等同于你的熟练加值，在你完成一次长休后你重获全部已消耗的增益使用次数。"
+            ]
+          }
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

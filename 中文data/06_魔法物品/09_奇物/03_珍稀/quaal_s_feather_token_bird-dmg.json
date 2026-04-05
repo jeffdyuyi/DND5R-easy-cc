@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Quaal's Feather Token, Bird",
+    "name": "夸尔羽符，鸟",
+    "source": "DMG",
+    "page": 188,
+    "srd": "羽符，鸟",
+    "referenceSources": [
+      "DSotDQ",
+      "ToFW"
+    ],
+    "reprintedAs": [
+      "夸尔羽符，鸟|XDMG"
+    ],
+    "tier": "次要",
+    "rarity": "rare",
+    "wondrous": true,
+    "entries": [
+      "这件微型物品外观类似羽毛。夸尔羽符有很多种，每种都有一个一次性效应。",
+      {
+        "ENG_name": "Bird",
+        "name": "鸟",
+        "type": "entries",
+        "entries": [
+          "你可以用一个动作将这枚羽符抛到5尺高的空中。羽符将消失，取而代之的是一只五彩斑斓的大鸟。这只鸟使用{@creature 鹏鸟}的具体数值，它服从你的简单命令但无法攻击。负载不超过500磅时，它能以全速飞行（每小时16里，每天至多飞行144里，每飞行3小时休息1小时），而负重不超过1000磅时则以一半速度飞行。这只鸟在飞行完一天的最大距离或生命值降至0时消失。你可以用一个动作解消这只鸟。"
+        ]
+      }
+    ],
+    "valueReference": 2000,
+    "type": "W"
+  }
+]

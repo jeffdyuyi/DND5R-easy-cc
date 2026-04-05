@@ -1,0 +1,17 @@
+{
+  "ENG_name": "Battle Smith",
+  "name": "战地匠师",
+  "shortName": "战地匠师",
+  "source": "TCE",
+  "className": "奇械师",
+  "classSource": "TCE",
+  "page": 18,
+  "subclassFeatures": [
+    "战地匠师|奇械师|TCE|战地匠师|TCE|3",
+    "战备状态|奇械师|TCE|战地匠师|TCE|3",
+    "钢铁卫士|奇械师|TCE|战地匠师|TCE|3",
+    "额外攻击|奇械师|TCE|战地匠师|TCE|5",
+    "奥法冲击|奇械师|TCE|战地匠师|TCE|9",
+    "改良卫士|奇械师|TCE|战地匠师|TCE|15"
+  ]
+}

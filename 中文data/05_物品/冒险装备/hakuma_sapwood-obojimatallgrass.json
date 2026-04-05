@@ -1,0 +1,52 @@
+[
+  {
+    "ENG_name": "Hakuma Sapwood",
+    "name": "哈库玛边材",
+    "source": "ObojimaTallGrass",
+    "page": 203,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 5|large}|SneakerProMedium}",
+            "{@font {@style 1|large}|SneakerProMedium}",
+            "{@font {@style 9|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "哈库玛边材是一种芳香且易燃的木材，取自哈库玛树的中心。它在胧忆岛的圣祠和圣地中被燃烧，散发出一种复杂而令人愉悦的香气，能够清心宁神。哈库玛树在岛上相当常见，但除非你是祭司、德鲁伊或知晓正确的仪式，否则大多数胧忆岛居民不赞成从这些树上取下肢体。"
+    ],
+    "lootTables": [
+      "狂风农田普通原料|ObojimaTallGrass",
+      "舒里塔希的赠礼 普通原料|ObojimaTallGrass",
+      "阿伯拉山普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/hakuma-sapwood.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 2712,
+          "height": 2712
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,149 @@
+{
+  "subclass": [
+    {
+      "ENG_name": "Order of the Mutant",
+      "name": "突变结社",
+      "source": "BloodHunter2024",
+      "shortName": "突变",
+      "className": "血猎手",
+      "classSource": "BloodHunter2024",
+      "subclassFeatures": [
+        "突变结社|血猎手|BloodHunter2024|突变|BloodHunter2024|3",
+        "炼金代谢|血猎手|BloodHunter2024|突变|BloodHunter2024|7",
+        "公理烙印|血猎手|BloodHunter2024|突变|BloodHunter2024|11",
+        "腐蚀血咒（突变）|血猎手|BloodHunter2024|突变|BloodHunter2024|15",
+        "高等突变|血猎手|BloodHunter2024|突变|BloodHunter2024|18"
+      ]
+    }
+  ],
+  "subclassFeature": [
+    {
+      "ENG_name": "Order of the Mutant",
+      "name": "突变结社",
+      "source": "BloodHunter2024",
+      "className": "血猎手",
+      "classSource": "BloodHunter2024",
+      "subclassShortName": "突变",
+      "subclassSource": "BloodHunter2024",
+      "level": 3,
+      "entries": [
+        "突变结社的成员已将自我实验的边界推向了极限。他们扭曲自己的身体和心灵，消耗炼金合剂来适应任何情况，无论是战场还是舞厅。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "诱变技艺|血猎手|BloodHunter2024|突变|BloodHunter2024|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Mutagencraft",
+      "name": "诱变技艺",
+      "source": "BloodHunter2024",
+      "className": "血猎手",
+      "classSource": "BloodHunter2024",
+      "subclassShortName": "突变",
+      "subclassSource": "BloodHunter2024",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你学会使用被称为诱变剂的禁忌炼金公式来改变你的精神和身体。",
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "ENG_name": "Formulae",
+              "name": "配方",
+              "type": "entries",
+              "entries": [
+                "你从诱变剂选项列表中习得4种诱变剂配方。你在血猎手7级、11级、15级和18级时各习得一种额外配方。当你学习新的诱变剂配方时，你可以用一个新配方替换一个已知配方。"
+              ]
+            },
+            {
+              "ENG_name": "Mutagens",
+              "name": "诱变剂",
+              "type": "entries",
+              "entries": [
+                "你使用炼金工具为各种情况准备诱变剂。当你完成一次{@variantrule 长休|XPHB}后，你可以用炼金工具从你知道的配方中配制3种诱变剂。当你达到血猎手11级（配制4种诱变剂）和18级（配制5种诱变剂）时，你可以在完成一次{@variantrule 长休|XPHB}后额外配制一种诱变剂。每种诱变剂必须是不同的，你不能多次配制同一种诱变剂。",
+                "当你完成一次{@variantrule 短休|XPHB}后，你可以用你的炼金工具从已知的配方中配制一种诱变剂。该诱变剂必须不是你当前已配制的，但可以是你已经消耗过的。"
+              ]
+            },
+            {
+              "ENG_name": "Consuming Mutagens",
+              "name": "消耗诱变剂",
+              "type": "entries",
+              "entries": [
+                "作为{@variantrule 附赠动作|XPHB}，你可以消耗一瓶你已配制的诱变剂，获得该诱变剂的效应，该效应持续到你完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}为止。同一时间你只能受到一种诱变剂的影响。当你达到血猎手7级（两种诱变剂）和15级（三种诱变剂）时，你可以同时受到额外一种诱变剂的影响。当你消耗的诱变剂超过限制时，你需要选择一种诱变剂来消除，该诱变剂将不再对你生效。",
+                "诱变剂是为炮制它们的角色的生理设计的，所以你的诱变剂对其他生物无效果。你炮制的诱变剂本质上是不稳定的，并在你完成一次{@variantrule 长休|XPHB}时变为惰性。"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Alchemical Metabolism",
+      "name": "炼金代谢",
+      "source": "BloodHunter2024",
+      "className": "血猎手",
+      "classSource": "BloodHunter2024",
+      "subclassShortName": "突变",
+      "subclassSource": "BloodHunter2024",
+      "level": 7,
+      "entries": [
+        "你的身体适应了注入体内的毒液与毒素。你获得对毒素伤害的抗性，并在对抗{@condition 中毒}状态的豁免检定中具有优势。"
+      ]
+    },
+    {
+      "ENG_name": "Brand of the Axiom",
+      "name": "公理烙印",
+      "source": "BloodHunter2024",
+      "className": "血猎手",
+      "classSource": "BloodHunter2024",
+      "subclassShortName": "突变",
+      "subclassSource": "BloodHunter2024",
+      "level": 11,
+      "entries": [
+        "你的诱变鲜血秘法使你的惩戒烙印能揭露敌人的真实本质。当你烙印一个生物时，任何作用于该生物的幻术或隐形术效应结束，且该生物在被你烙印期间无法从隐形术或幻术效应中得益。若你烙印的生物处于另一种形态中（如通过{@spell 变形术}法术、变形动作、变形生物特质、荒野形态特性及类似效应）或尝试改变其形态，其必须成功通过一次感知豁免检定，否则恢复其真实形态并被{@condition 震慑}直至你下回合结束。"
+      ]
+    },
+    {
+      "ENG_name": "Blood Curse of Corrosion",
+      "name": "腐蚀血咒（突变）",
+      "source": "BloodHunter2024",
+      "className": "血猎手",
+      "classSource": "BloodHunter2024",
+      "subclassShortName": "突变",
+      "subclassSource": "BloodHunter2024",
+      "level": 15,
+      "entries": [
+        "你可以消耗一次鲜血秘法的使用次数来发动一个特殊血咒。以一个{@variantrule 附赠动作|XPHB}，你使30尺内的一个生物中毒。被诅咒的生物可以在其每个回合结束时进行一次体质豁免检定，若成功则结束其自身的诅咒。",
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "ENG_name": "Amplify",
+              "name": "增幅",
+              "type": "entries",
+              "entries": [
+                "被诅咒的生物在你施加此诅咒时受到{@dice 4d6}点暗蚀伤害，并且每当它未能通过体质豁免检定来结束诅咒时，会再次受到此伤害。"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Exalted Mutation",
+      "name": "高等突变",
+      "source": "BloodHunter2024",
+      "className": "血猎手",
+      "classSource": "BloodHunter2024",
+      "subclassShortName": "突变",
+      "subclassSource": "BloodHunter2024",
+      "level": 18,
+      "entries": [
+        "你的身体可以随意产生诱变剂。在你的回合开始时，选择一项当前影响你的诱变剂。它的效应结束，你可以立即让你知道配方的诱变剂在其地点生效。",
+        "你可以使用此特性的次数等于你的智力调整值（至少一次）。当你完成一次{@variantrule 长休|XPHB}时，你恢复所有已消耗的使用次数。"
+      ]
+    }
+  ]
+}

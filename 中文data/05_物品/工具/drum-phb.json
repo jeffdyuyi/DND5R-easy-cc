@@ -1,0 +1,21 @@
+[
+  {
+    "name": "鼓",
+    "ENG_name": "Drum",
+    "source": "PHB",
+    "page": 154,
+    "edition": "classic",
+    "type": "INS",
+    "rarity": "none",
+    "weight": 3,
+    "value": 600,
+    "basicRules": true,
+    "referenceSources": [
+      "JttRC"
+    ],
+    "reprintedAs": [
+      "鼓|XPHB"
+    ],
+    "srd": true
+  }
+]

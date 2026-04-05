@@ -1,0 +1,44 @@
+[
+  {
+    "ENG_name": "Platinum Scarf",
+    "name": "铂金围巾",
+    "source": "FTD",
+    "page": 24,
+    "rarity": "legendary",
+    "reqAttune": true,
+    "wondrous": true,
+    "bonusAc": "+1",
+    "entries": [
+      "这条围巾由坚固的布料制成，上面覆盖着铂金色的鳞片。",
+      "以一个动作，你可以从围巾上拔下一片鳞片并念出一句命令语。当你这么做时，从下列效果中选择其中之一生效。",
+      {
+        "ENG_name": "Breath of Life",
+        "name": "生命之息",
+        "type": "entries",
+        "entries": [
+          "鳞片消失，然后你或者你触碰到的一个生物恢复{@dice 10d4}生命值"
+        ]
+      },
+      {
+        "ENG_name": "Platinum Shield",
+        "name": "铂金战盾",
+        "type": "entries",
+        "entries": [
+          "鳞片变为一块{@item +1 盾牌}，你或者另一个生物都可以使用它，盾牌持续一小时或者直到你解散它为止（不需要任何动作）。持用这块盾牌的生物免疫光耀伤害。"
+        ]
+      },
+      {
+        "ENG_name": "Radiant Hammer",
+        "name": "光耀战锤",
+        "type": "entries",
+        "entries": [
+          "鳞片变为一柄{@item 轻锤|PHB}，你或者另一个生物都可以使用它，轻锤持续一小时或者直到你解散它为止（不需要任何动作）。这柄轻锤造成{@damage 2d4}光耀伤害而不是普通轻锤的钝击伤害。它对色彩龙造成额外{@damage 2d4}光耀伤害。",
+          "一但围巾被拔下三片鳞片，直到下一次黎明所有失去的鳞片重新长出之前，不能再取下任何一片鳞片。如果你拔下一片鳞片而不说出命令语，鳞片将会在一分钟之后消失。"
+        ]
+      }
+    ],
+    "translator": "不全书",
+    "valueReference": 100000,
+    "type": "W"
+  }
+]

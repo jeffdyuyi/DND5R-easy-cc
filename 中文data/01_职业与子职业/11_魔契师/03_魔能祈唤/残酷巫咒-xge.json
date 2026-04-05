@@ -1,0 +1,27 @@
+{
+  "ENG_name": "Relentless Hex",
+  "name": "残酷巫咒",
+  "source": "XGE",
+  "page": 57,
+  "featureType": [
+    "EI"
+  ],
+  "prerequisite": [
+    {
+      "level": {
+        "level": 7,
+        "class": {
+          "ENG_name": "Warlock",
+          "name": "魔契师"
+        }
+      },
+      "spell": [
+        "巫咒/诅咒#x"
+      ]
+    }
+  ],
+  "entries": [
+    "你的诅咒为你与受咒目标间建立了短暂的联结。以一个附赠动作，你可以魔法性的传送到你的法术{@spell 脆弱诅咒}或 咒剑诅咒Hexblade's Curse 、凶兆符记Sign of Ill Omen 等魔契师特性所诅咒的目标，其周围5尺内的一处你可见的且未被占据空间内，传送距离最多30英尺。以此方式进行传送时，你必须能够看到那个受咒目标。"
+  ],
+  "translator": "不全书"
+}

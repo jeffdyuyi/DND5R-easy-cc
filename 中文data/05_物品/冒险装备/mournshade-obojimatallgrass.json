@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Mournshade",
+    "name": "哀影",
+    "source": "ObojimaTallGrass",
+    "page": 213,
+    "type": "Ingred",
+    "rarity": "uncommon",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 13|large}|SneakerProMedium}",
+            "{@font {@style 14|large}|SneakerProMedium}",
+            "{@font {@style 13|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "哀影被岛屿上的医者们使用，他们相信这种植物具有吸收痛苦情绪的能力。虽然在狂野魔法中很少见，但村庄里似乎总有人备有一匣子哀影以防万一。哀影生长在沼泽和湿地中，在无月之夜会发出微弱的光芒。"
+    ],
+    "lootTables": [
+      "湿地非普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/mournshade.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 2067,
+          "height": 2067
+        }
+      ]
+    }
+  }
+]

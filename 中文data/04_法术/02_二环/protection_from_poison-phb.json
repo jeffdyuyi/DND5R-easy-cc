@@ -1,0 +1,65 @@
+[
+  {
+    "ENG_name": "Protection from Poison",
+    "name": "防护毒素",
+    "source": "PHB",
+    "page": 270,
+    "srd": true,
+    "referenceSources": [
+      "TftYP-AtG",
+      "JttRC"
+    ],
+    "reprintedAs": [
+      "防护毒素|XPHB"
+    ],
+    "level": 2,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你触碰一个生物。如果处于{@condition 中毒}状态，则中和其所受毒素。如果目标身上具有超过一种毒素，则选择你所了解一种或随机选择其一进行中和。",
+      "在法术持续时间内，目标对抗{@condition 中毒}所豁免具有优势，并且对毒素伤害具有抗性。"
+    ],
+    "damageResist": [
+      "毒素"
+    ],
+    "miscTags": [
+      "ADV"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师",
+      "德鲁伊",
+      "圣武士",
+      "游侠",
+      "奇械师"
+    ],
+    "display_school": "防护系"
+  }
+]

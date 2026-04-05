@@ -1,0 +1,71 @@
+[
+  {
+    "ENG_name": "Grim Shadows",
+    "name": "严峻之影",
+    "source": "BookOfEbonTides",
+    "page": 64,
+    "level": 3,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "尖锐的矛状幽影填满你能看见范围内15尺见方的地面。在持续时间内，这些幽影会眩目区域内的生物，给予它们半身掩护。",
+      "当一个生物在一个回合内首次进入受影响区域或在其内开始回合时，该生物必须成功通过一次敏捷豁免检定，否则受到{@damage 1d8}穿刺伤害并被施加{@condition 目盲}状态直到法术结束。在其内开始回合且已经处于{@condition 目盲}状态的生物会受到{@damage 1d8}穿刺伤害。",
+      "一个被严峻之影{@condition 目盲}的生物可以使用其动作进行一次敏捷或感知豁免检定（由其选择）对抗你的法术豁免DC。若成功，其预见将恢复。"
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    },
+    "damageInflict": [
+      "穿刺"
+    ],
+    "conditionInflict": [
+      "目盲"
+    ],
+    "savingThrow": [
+      "敏捷",
+      "感知"
+    ],
+    "miscTags": [
+      "SGT"
+    ]
+  }
+]

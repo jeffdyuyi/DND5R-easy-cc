@@ -1,0 +1,78 @@
+[
+  {
+    "ENG_name": "Lightning Lure",
+    "name": "闪电牵引",
+    "source": "TCE",
+    "page": 107,
+    "otherSources": [
+      {
+        "source": "SCAG",
+        "page": 143
+      }
+    ],
+    "level": 0,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "radius",
+      "distance": {
+        "type": "feet",
+        "amount": 15
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你创造出鞭状闪电能量袭向你 15 尺内可见的一个生物。目标必须进行一次力量豁免，豁免失败则其以直线被你拉近至多 10 尺。那之后如果豁免失败者身处在你周围5尺范围内，他将受到{@damage 1d8}点闪电伤害。",
+      "此法术在你达到指定等级时增加{@damage 1d8}。5级（{@damage 2d8}）、11级（{@damage 3d8}）和17级（{@damage 4d8}）"
+    ],
+    "scalingLevelDice": {
+      "label": "闪电伤害",
+      "scaling": {
+        "1": "1d8",
+        "5": "2d8",
+        "11": "3d8",
+        "17": "4d8"
+      }
+    },
+    "damageInflict": [
+      "lightning"
+    ],
+    "savingThrow": [
+      "strength"
+    ],
+    "miscTags": [
+      "FMV",
+      "SCL",
+      "SGT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "奇械师",
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "力量"
+    ],
+    "display_damageInflict": [
+      "闪电"
+    ]
+  }
+]

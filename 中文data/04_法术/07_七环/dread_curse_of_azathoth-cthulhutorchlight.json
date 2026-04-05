@@ -1,0 +1,58 @@
+[
+  {
+    "ENG_name": "Dread Curse of Azathoth",
+    "name": "阿撒托斯的恐怖诅咒",
+    "source": "CthulhuTorchlight",
+    "page": 0,
+    "level": 7,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你念诵阿撒托斯的隐秘名讳，将一个生物引向注定的死亡除非它打破该法术。该生物在其每个回合结束时获得1诅咒点。当该生物获得第3诅咒点时，它立即死亡。它在法术结束时失去所有诅咒点。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "ENG_name": "Gauntlets of Eldritch Ferocity",
+    "name": "魔能狂涌护手",
+    "source": "GriffonsSaddlebag2",
+    "page": 87,
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": "由魔契师",
+    "reqAttuneTags": [
+      {
+        "class": "魔契师"
+      }
+    ],
+    "wondrous": true,
+    "entries": [
+      "这对皮革长手套外覆古老石板，其上刻有难以解读的符文。穿戴这对护手期间，每当你使用{@spell 魔能爆}命中目标，进行伤害掷骰时，你可以将伤害骰中出现的1视为2。",
+      "此外，当你穿戴这对护手期间，每当你施放{@spell 魔能爆}时，你可以选择创造一道额外的能量射线并进行一次额外攻击。当你用这道额外射线进行攻击检定时，如果掷出1或2，你将受到{@damage 3d12}暗蚀伤害，且在完成一次短休或长休之前，你的生命值上限会降低，降低值等于你受到的暗蚀伤害。此暗蚀伤害无视抗性和免疫，如果它使你的生命值降至0，你将直接死亡。"
+    ],
+    "lootTables": [
+      "魔法物品表 G1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Gauntlets-of-Eldritch-Ferocity.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

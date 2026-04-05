@@ -1,0 +1,70 @@
+[
+  {
+    "ENG_name": "Divine Word",
+    "name": "圣言术",
+    "source": "PHB",
+    "page": 234,
+    "srd": true,
+    "reprintedAs": [
+      "圣言术|XPHB"
+    ],
+    "level": 7,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你吟诵一句神圣的箴言，其中充盈了创世黎明的力量。在施法距离内指定任意数量的你能看见的生物，并迫使每个能够听到圣言的生物进行一次魅力豁免。豁免失败者基于其当前生命值承受以下效应：",
+      {
+        "type": "list",
+        "items": [
+          "生命值为 50 或更少： {@condition 耳聋} 1 分钟。",
+          "生命值为 40 或更少： {@condition 耳聋}并{@condition 目盲} 10 分钟。",
+          "生命值为 30 或更少： {@condition 目盲}、{@condition 耳聋}并被{@condition 震慑} 1 小时。",
+          "生命值为 20 或更少： 即死。"
+        ]
+      },
+      "对于受术的天界生物、元素生物、精类生物或邪魔，其豁免失败时不需考虑其当前生命值，并直接将其遣返回其原属位面（本来就处于原属位面则无效）。在随后 24 小时内，该生物不能通过任何方式回到当前位面，除非使用{@spell 祈愿术}的效应。"
+    ],
+    "conditionInflict": [
+      "目盲",
+      "耳聋",
+      "震慑"
+    ],
+    "savingThrow": [
+      "charisma"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "areaTags": [
+      "MT"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "魅力"
+    ]
+  }
+]

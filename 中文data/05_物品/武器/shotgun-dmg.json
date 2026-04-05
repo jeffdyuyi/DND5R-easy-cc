@@ -1,0 +1,29 @@
+[
+  {
+    "name": "霰弹枪",
+    "ENG_name": "Shotgun",
+    "source": "DMG",
+    "page": 268,
+    "edition": "classic",
+    "type": "R",
+    "rarity": "none",
+    "weight": 7,
+    "weaponCategory": "martial",
+    "property": [
+      "AF|DMG",
+      "RLD",
+      "2H"
+    ],
+    "dmg1": "2d8",
+    "dmgType": "P",
+    "range": "30/90",
+    "ammoType": "现代子弹",
+    "age": "现代",
+    "firearm": true,
+    "reload": 2,
+    "reprintedAs": [
+      "霰弹枪|XDMG"
+    ],
+    "weapon": true
+  }
+]

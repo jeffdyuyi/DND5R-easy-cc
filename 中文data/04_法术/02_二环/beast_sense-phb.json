@@ -1,0 +1,54 @@
+[
+  {
+    "ENG_name": "Beast Sense",
+    "name": "野兽感官",
+    "source": "PHB",
+    "page": 217,
+    "reprintedAs": [
+      "野兽感官|XPHB"
+    ],
+    "level": 2,
+    "school": "D",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "meta": {
+      "ritual": true
+    },
+    "entries": [
+      "你触碰一只自愿的野兽。在法术持续时间内，你可以使用动作来将自己的视觉和听觉切换至受术野兽的感官，随后直至你再使用动作来恢复正常的知觉。通过野兽的感官感知四周时，你还会获得该生物本身具有的特殊感官，不过你对本体周围的状况视为等同于同时陷入{@condition 目盲}和{@condition 耳聋}状态。"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊",
+      "游侠"
+    ],
+    "display_school": "预言系",
+    "display_ritual": "仪式"
+  }
+]

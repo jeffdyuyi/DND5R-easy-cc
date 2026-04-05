@@ -1,0 +1,58 @@
+[
+  {
+    "ENG_name": "Dwarven Thrower",
+    "name": "矮人飞锤",
+    "source": "DMG",
+    "page": 167,
+    "srd": true,
+    "referenceSources": [
+      "PotA",
+      "WDMM"
+    ],
+    "reprintedAs": [
+      "矮人飞锤|XDMG"
+    ],
+    "baseItem": "战锤|PHB",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": "由矮人",
+    "reqAttuneTags": [
+      {
+        "race": "矮人"
+      }
+    ],
+    "weight": 2,
+    "weaponCategory": "martial",
+    "property": [
+      "T",
+      "V"
+    ],
+    "range": "20/60",
+    "dmg1": "1d8",
+    "dmgType": "B",
+    "dmg2": "1d10",
+    "bonusWeapon": "+3",
+    "entries": [
+      "你用该魔法武器发动的攻击检定和伤害掷骰获得+3加值。它具有投掷属性，常规范围为20尺，最大范围为60尺。当你用此武器发动远程攻击命中时，它将造成额外的{@damage 1d8}伤害，如果命中的目标是一名巨人，则造成{@damage 2d8}伤害。攻击后，此武器将立即飞回你的手中。"
+    ],
+    "lootTables": [
+      "魔法物品表H"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 40000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Dwarven Thrower.webp"
+          },
+          "width": 1024,
+          "height": 1024
+        }
+      ]
+    }
+  }
+]

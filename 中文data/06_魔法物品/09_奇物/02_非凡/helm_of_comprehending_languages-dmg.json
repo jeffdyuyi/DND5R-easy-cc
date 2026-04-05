@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Helm of Comprehending Languages",
+    "name": "通晓语言头盔",
+    "source": "DMG",
+    "page": 173,
+    "srd": true,
+    "referenceSources": [
+      "ToA",
+      "CM",
+      "CoA"
+    ],
+    "reprintedAs": [
+      "通晓语言头盔|XDMG"
+    ],
+    "tier": "次要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "着装这顶头盔期间，你可以用一个动作随意用其施放{@spell 通晓语言}法术。"
+    ],
+    "attachedSpells": {
+      "will": [
+        "通晓语言"
+      ]
+    },
+    "lootTables": [
+      "魔法物品表B"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Helm of Comprehending Languages.webp"
+          },
+          "width": 600,
+          "height": 850
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

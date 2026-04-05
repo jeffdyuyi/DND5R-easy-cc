@@ -1,0 +1,58 @@
+[
+  {
+    "ENG_name": "Darkness",
+    "name": "黑暗术",
+    "source": "XPHB",
+    "page": 260,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 2,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "m": "蝙蝠毛与一块煤"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "在法术持续时间内，魔法性的{@variantrule 黑暗|XPHB}从施法距离内的一点扩散并充满 15 尺半径的{@variantrule 球状 [效应区域]|XPHB|球状}区域。{@sense 黑暗视觉|XPHB}无法看穿它，非魔法的光照也无法将其照亮。",
+      "或者，你可以将此法术施展于一个未被着装或携带的物件上，使{@variantrule 黑暗|XPHB}充斥源自该物件的 15 尺{@variantrule 光环 [效应区域]|XPHB|光环}区域。将该物件用不透明的东西遮掩（比如用碗或头盔盖住）时，会将{@variantrule 黑暗|XPHB}隔绝。",
+      "如果法术区域与任何二环或更低环阶法术创造的{@variantrule 明亮光照|XPHB}或{@variantrule 微光光照|XPHB}区域重叠，则这些造光的法术将被解除。"
+    ],
+    "miscTags": [
+      "OBJ",
+      "OBS"
+    ],
+    "areaTags": [
+      "S"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "塑能系"
+  }
+]

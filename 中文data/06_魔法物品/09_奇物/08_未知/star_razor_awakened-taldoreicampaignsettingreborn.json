@@ -1,0 +1,56 @@
+[
+  {
+    "ENG_name": "Star Razor (Awakened)",
+    "name": "星之锋（觉醒）",
+    "source": "TalDoreiCampaignSettingReborn",
+    "_copy": {
+      "ENG_name": "Star Razor (Dormant)",
+      "name": "星之锋（休眠）",
+      "source": "TalDoreiCampaignSettingReborn",
+      "_mod": {
+        "entries": [
+          {
+            "mode": "appendArr",
+            "items": {
+              "entries": [
+                {
+                  "ENG_name": "Awakened",
+                  "name": "觉醒",
+                  "type": "entries",
+                  "entries": [
+                    "当星辰剃刀达到觉醒状态时，你将获得以下好处：",
+                    {
+                      "type": "list",
+                      "items": [
+                        "该武器的攻击检定和伤害掷骰加值增至+2。",
+                        "当一个生物在距离你5尺范围内对你进行近战攻击并且命中时，你可以使用你的反应来从剑中创造出一束光辉，对攻击者造成{@damage 1d8}光耀伤害。",
+                        "你可以作为动作从剑中施放{@spell 识破隐形}法术，并且使用剑施放的法术的豁免DC增加到15。"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "_preserve": {
+        "page": true,
+        "fluff": true
+      }
+    },
+    "bonusWeapon": "+2",
+    "attachedSpells": {
+      "will": [
+        "识破隐形"
+      ],
+      "daily": {
+        "1e": [
+          "妖火"
+        ]
+      }
+    },
+    "hasFluff": true,
+    "hasFluffImages": true
+  }
+]

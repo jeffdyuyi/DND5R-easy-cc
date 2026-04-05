@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Golgari Keyrune",
+    "name": "葛加理符镇兵",
+    "source": "GGR",
+    "page": 177,
+    "rarity": "very rare",
+    "reqAttune": "由葛加理公会的一名成员",
+    "reqAttuneTags": [
+      {
+        "background": "葛加理成员|GGR"
+      }
+    ],
+    "wondrous": true,
+    "entries": [
+      "由深绿翡翠打造，带有黑色纹路，此符镇兵呈昆虫形态。它能够变为一只{@creature 巨蝎}，持续至多6小时。该蝎子智力为4，在你身边60尺范围内时，你可以与其进行心灵交流，不过其信息主要限于描述经过的潜在猎物。",
+      "当你使用一个动作说出该物品的命令语并将符镇兵放置于你5尺内一处未被占据的地面上时，符镇兵会变为一个{@creature 巨蝎}。如果没有足够的空间容纳该生物，符镇兵将不会变化。",
+      "该生物对于你、你的同伴、以及你公会的其他成员（除非这些公会成员对你怀有敌意）保持友好关系。它理解你掌握的语言并服从你的口头命令。如果你不发出任何命令，该生物会进行{@action 回避}动作并移动以躲避危险。",
+      "持续时间结束时，该生物恢复为符镇兵形态。当该生物生命值降至0时，或当你使用一个动作再次说出命令语并触及它时，它会提前恢复为符镇兵形态。当该生物恢复为符镇兵形态后，经过36小时才能再次变为生物形态。"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 40000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/GGR/Golgari Keyrune.webp"
+          },
+          "credit": "Daniel Ljunggren",
+          "width": 315,
+          "height": 230
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

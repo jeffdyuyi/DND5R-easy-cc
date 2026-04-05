@@ -1,0 +1,13 @@
+[
+  {
+    "ENG_name": "Tough",
+    "name": "健壮",
+    "source": "XPHB",
+    "page": 202,
+    "category": "O",
+    "entries": [
+      "获得该专长时，你的{@variantrule 生命值|XPHB|生命值}上限提升你当前角色等级两倍的数值。并且在你随后每次升级时，你的{@variantrule 生命值|XPHB|生命值}上限都会额外提升 2 {@variantrule 生命值|XPHB}。"
+    ],
+    "translator": "不全书"
+  }
+]

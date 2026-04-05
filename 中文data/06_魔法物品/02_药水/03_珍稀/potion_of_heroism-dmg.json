@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "Potion of Heroism",
+    "name": "英勇药水",
+    "source": "DMG",
+    "page": 188,
+    "srd": true,
+    "referenceSources": [
+      "PotA",
+      "CoS",
+      "SKT",
+      "GoS",
+      "SDW",
+      "DC",
+      "RtG",
+      "CRCotN",
+      "CoA",
+      "VEoR"
+    ],
+    "reprintedAs": [
+      "英勇药水|XDMG"
+    ],
+    "type": "P",
+    "tier": "次要",
+    "rarity": "rare",
+    "entries": [
+      "饮用此药水后的1小时内，你获得10点临时生命值，且获得法术 {@spell 祝福术} 的效应（无需 {@status 专注}）。这些临时生命值将会在1小时后消失。这种蓝色的药水如同沸腾般冒出气泡和蒸汽。"
+    ],
+    "attachedSpells": [
+      "祝福术"
+    ],
+    "lootTables": [
+      "魔法物品表C"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "valueReference": 2000
+  }
+]

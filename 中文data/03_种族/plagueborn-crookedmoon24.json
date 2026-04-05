@@ -1,0 +1,100 @@
+{
+  "race": [
+    {
+      "ENG_name": "Plagueborn",
+      "name": "疫鼠种",
+      "source": "CrookedMoon24",
+      "page": 61,
+      "edition": "one",
+      "creatureTypes": [
+        "类人生物"
+      ],
+      "size": [
+        "S",
+        "M"
+      ],
+      "speed": {
+        "walk": 30,
+        "climb": true
+      },
+      "darkvision": 60,
+      "traitTags": [
+        "技能熟练"
+      ],
+      "sizeEntry": {
+        "ENG_name": "Size:",
+        "name": "体型：",
+        "type": "item",
+        "entries": [
+          "中型(约4-6尺高)或小型(约2-4尺高)，在选择此种族时决定"
+        ]
+      },
+      "speedEntry": {
+        "ENG_name": "Speed:",
+        "name": "速度：",
+        "type": "item",
+        "entries": [
+          "30尺，{@variantrule 攀爬速度|XPHB}等于你的{@variantrule 速度|XPHB}"
+        ]
+      },
+      "entries": [
+        {
+          "ENG_name": "Born in Filth",
+          "name": "污秽之子",
+          "type": "entries",
+          "entries": [
+            "你在避免或结束{@condition 中毒|XPHB}状态或魔法疫病的豁免检定上具有{@variantrule 优势|XPHB}。"
+          ]
+        },
+        {
+          "ENG_name": "Darkvision",
+          "name": "黑暗视觉",
+          "type": "entries",
+          "entries": [
+            "你拥有 60 尺{@sense 黑暗视觉|XPHB}。"
+          ]
+        },
+        {
+          "ENG_name": "Infected Cunning",
+          "name": "受染狡诈",
+          "type": "entries",
+          "entries": [
+            "你携带的瘟疫使你与老鼠关联紧密并获得它们的狡诈。你获得{@skill 欺瞒|XPHB}或{@skill 隐匿|XPHB}技能的熟练项。"
+          ]
+        },
+        {
+          "ENG_name": "Plague Bearer",
+          "name": "瘟疫载体",
+          "type": "entries",
+          "entries": [
+            "当你的攻击检定中命中一个生物时，你可以将你的魔法疫病传播给目标。目标必须进行一次体质豁免（DC=8+你的体质调整值+{@variantrule 熟练|XPHB|熟练加值}）否则被你的疫病感染，持续1分钟。",
+            "被感染期间，目标的攻击检定和属性检定中具有{@variantrule 劣势|XPHB}，并且在自身每个回合开始时受到{@damage 1d4}毒素伤害。目标可以在其自身每个回合结束时重复该豁免，豁免成功则终止自身疫病。",
+            "使用此特质后，直至你完成一次{@variantrule 长休|XPHB}为止都不能再次使用。"
+          ]
+        }
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Races/Plagueborn.webp",
+      "subraces": [],
+      "fluff": {
+        "entries": [
+          "疫鼠种是一种类似鼠类的种族，原生于{@book 布波尼亚|歪曲之月|1|布波尼亚}，通常从笼罩该行省的疫瘴中凝聚成形。他们与一种剧毒的致命瘟疫有着深厚联系，该疫病侵袭并塑造了他们的社会，而其社会凭借狡诈、冷酷与强烈的求生意志得以延续。他们是德鲁斯肯瓦尔德中适应性最强的种族，即使在最恶劣的环境中也能迅速找到生存的方法。",
+          "他们外形如同具有类人生理结构的大型瘟疫鼠，短毛颜色从灰色、褐色到不同深浅的绿色不等。他们长有锯齿状的牙齿与利爪，皆带有一种他们自身免疫、却对他人足以致命的瘟疫菌株。他们灵活的尾巴在长度与粗细上差异极大，往往反映其所属的家族、氏族或行会。疫鼠种的寿命通常不超过100年。"
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Races/Plagueborn.webp"
+            },
+            "width": 838,
+            "height": 1200,
+            "credit": "Jo Cordisco"
+          }
+        ]
+      }
+    }
+  ]
+}

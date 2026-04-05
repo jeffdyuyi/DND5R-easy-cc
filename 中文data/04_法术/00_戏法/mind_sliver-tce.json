@@ -1,0 +1,92 @@
+[
+  {
+    "ENG_name": "Mind Sliver",
+    "name": "心灵之楔",
+    "source": "TCE",
+    "page": 108,
+    "reprintedAs": [
+      "心灵之楔|XPHB"
+    ],
+    "level": 0,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "round",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你将由灵能塑成的迷惘尖刺注入施法距离内一个你可见的生物的心灵。目标必须通过一次智力豁免。豁免失败将受到{@damage 1d6}心灵伤害，并在你的下回合结束前其进行的下一次豁免检定中减去{@dice 1d4}。",
+      "当你达到特定等级时，该法术的伤害会增加{@damage 1d6}：5级（{@damage 2d6}），11级（{@damage 3d6}），以及17级（{@damage 4d6}）。"
+    ],
+    "scalingLevelDice": {
+      "label": "心灵伤害",
+      "scaling": {
+        "1": "1d6",
+        "5": "2d6",
+        "11": "3d6",
+        "17": "4d6"
+      }
+    },
+    "damageInflict": [
+      "psychic"
+    ],
+    "savingThrow": [
+      "intelligence"
+    ],
+    "miscTags": [
+      "SCL",
+      "SGT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/TCE/Mind Sliver.webp"
+          },
+          "credit": "Andrew Mar",
+          "width": 1200,
+          "height": 800
+        }
+      ]
+    },
+    "classes": [
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "惑控系",
+    "display_savingThrow": [
+      "智力"
+    ],
+    "display_damageInflict": [
+      "心灵"
+    ]
+  }
+]

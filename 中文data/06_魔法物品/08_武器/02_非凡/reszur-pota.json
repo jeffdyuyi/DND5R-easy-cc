@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Reszur",
+    "name": "雷祖尔之匕",
+    "source": "PotA",
+    "page": 157,
+    "baseItem": "匕首|PHB",
+    "type": "M",
+    "rarity": "uncommon",
+    "weight": 1,
+    "weaponCategory": "simple",
+    "property": [
+      "F",
+      "L",
+      "T"
+    ],
+    "range": "20/60",
+    "dmg1": "1d4",
+    "dmgType": "P",
+    "bonusWeapon": "+1",
+    "entries": [
+      "使用这件武器进行攻击和伤害检定时，你有+1的加值，并且当它击中或切割物体时不会产生噪音。",
+      "\"Reszur\"这个名字被刻在匕首的柄上。如果使用者说出这个名字，刀刃会发出微弱的冷光，在10尺半径内散发昏暗的光芒，直到使用者再次说出这个名字。"
+    ],
+    "light": [
+      {
+        "dim": 10
+      }
+    ],
+    "valueReference": 400
+  }
+]

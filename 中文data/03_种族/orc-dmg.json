@@ -1,0 +1,61 @@
+[
+  {
+    "name": "兽人",
+    "ENG_name": "Orc",
+    "source": "DMG",
+    "page": 282,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "str": 2,
+        "int": -2
+      }
+    ],
+    "darkvision": 60,
+    "traitTags": [
+      "NPC种族"
+    ],
+    "languageProficiencies": [
+      {
+        "common": true,
+        "orc": true
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Aggressive",
+        "name": "好斗",
+        "entries": [
+          "作为一个附赠动作，你可以向一个你能看见的敌对生物移动最多等同于你速度的距离。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Darkvision",
+        "name": "黑暗视觉",
+        "entries": [
+          "你习惯了地下生活，因而在黑暗和微光光照下有着良好的视力 。在微光光照下，你身边60尺内可以视为等同于明亮光照。而在黑暗中，该范围内可视为等同于微光光照。你无法在黑暗中分辨颜色，只能看到有灰度的黑白画面。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Languages",
+        "name": "语言",
+        "entries": [
+          "你可以说、读、写通用语和兽人语。"
+        ],
+        "type": "entries"
+      }
+    ],
+    "reprintedAs": [
+      "兽人|XPHB"
+    ],
+    "soundClip": {
+      "type": "internal",
+      "path": "races/orc.mp3"
+    }
+  }
+]

@@ -1,0 +1,47 @@
+﻿{
+    "ENG_name":  "Search",
+    "name":  "搜索",
+    "source":  "XPHB",
+    "page":  373,
+    "srd52":  true,
+    "time":  [
+                 {
+                     "number":  1,
+                     "unit":  "动作"
+                 }
+             ],
+    "entries":  [
+                    "当你执行搜索动作，你进行一次感知检定来搜索某个\"并不显眼\"的东西。根据你尝试搜索的具体内容，搜索表提供了你在执行此动作时可用技能的建议。",
+                    {
+                        "type":  "table",
+                        "caption":  "搜索",
+                        "colLabels":  [
+                                          "技能",
+                                          "要搜索的东西"
+                                      ],
+                        "colStyles":  [
+                                          "col-4",
+                                          "col-8"
+                                      ],
+                        "rows":  [
+                                     [
+                                         "{@skill 洞悉|XPHB}",
+                                         "生物的心理状态"
+                                     ],
+                                     [
+                                         "{@skill 医药|XPHB}",
+                                         "生物的伤势，或是死因"
+                                     ],
+                                     [
+                                         "{@skill 察觉|XPHB}",
+                                         "被藏匿的生物或物件"
+                                     ],
+                                     [
+                                         "{@skill 求生|XPHB}",
+                                         "踪迹或食物"
+                                     ]
+                                 ]
+                    }
+                ],
+    "translator":  "不全书"
+}

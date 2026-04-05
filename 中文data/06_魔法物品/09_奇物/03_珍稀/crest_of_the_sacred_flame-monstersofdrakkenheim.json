@@ -1,0 +1,79 @@
+[
+  {
+    "ENG_name": "Crest of the Sacred Flame",
+    "name": "神圣之火徽记",
+    "source": "MonstersOfDrakkenheim",
+    "page": 384,
+    "rarity": "rare",
+    "reqAttune": "由圣武士",
+    "reqAttuneTags": [
+      {
+        "class": "圣武士"
+      }
+    ],
+    "wondrous": true,
+    "entries": [
+      "这枚徽记由被神圣之火摧毁并净化的邪魔粉尘压缩而成，并在取自一条龙的元素生物流体点燃的火焰中煅烧。这枚简易徽记由浸泡在酸性怪物胆汁中的亡灵生物骸骨制成。",
+      "当你与此魔法徽记同调时，你的守护灵光的{@variantrule 光环【效应区域】|XPHB|光环}效应区域增加10尺。",
+      {
+        "ENG_name": "Crafting",
+        "name": "手作",
+        "type": "entries",
+        "entries": [
+          "制作神圣之火徽记需要一个珍稀工坊和以下珍稀成分：",
+          {
+            "type": "list",
+            "items": [
+              {
+                "ENG_name": "[Animus]",
+                "name": "[精魄]",
+                "type": "item",
+                "entries": [
+                  "任意精魄"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Bones]",
+                "name": "[骨头]",
+                "type": "item",
+                "entries": [
+                  "棘刺或肋骨"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Dust]",
+                "name": "[粉尘]",
+                "type": "item",
+                "entries": [
+                  "邪魔粉尘"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Fluid]",
+                "name": "[流体]",
+                "type": "item",
+                "entries": [
+                  "强酸胆汁"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Fluid]",
+                "name": "[流体]",
+                "type": "item",
+                "entries": [
+                  "元素生物流体"
+                ],
+                "nameDot": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluffImages": true
+  }
+]

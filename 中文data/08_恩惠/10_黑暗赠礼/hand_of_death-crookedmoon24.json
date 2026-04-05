@@ -1,0 +1,49 @@
+[
+  {
+    "ENG_name": "Hand of Death",
+    "name": "死亡之手",
+    "source": "CrookedMoon24",
+    "page": 119,
+    "type": "Dark Bargain",
+    "entries": [
+      "死亡对你没有支配权。作为不让那冰冷之手合拢的交换，你变为一个喉咬，通过它死亡进食于你周围的世界。",
+      {
+        "ENG_name": "Adamant Endurance",
+        "name": "坚韧不朽",
+        "type": "entries",
+        "entries": [
+          "你在体质豁免检定上具有{@variantrule 优势|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Cling to Life",
+        "name": "紧拥生命",
+        "type": "entries",
+        "entries": [
+          "当你在你的回合开端有0{@variantrule 生命值|XPHB}时，或当你死亡时，你可以改为选择重获等于你最大值一半数量的{@variantrule 生命值|XPHB}。一旦你使用此特性，你无法再次使用它。使用后，每当你通过任何方式重获{@variantrule 生命值|XPHB}时，你仅获得该数量的一半。一旦一个类人生物（除你之外）在你30尺内死亡，你重获此特性的使用，并且你可以正常重获{@variantrule 生命值|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Death Knell",
+        "name": "丧钟",
+        "type": "entries",
+        "entries": [
+          "你10尺内的其他生物在{@variantrule 劣势|XPHB}上具有{@variantrule 死亡豁免检定|XPHB|死亡豁免检定}，并且你无法通过任何方式恢复具有0{@variantrule 生命值|XPHB}的生物的{@variantrule 生命值|XPHB}。"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/CrookedMoon24/Rewards/Hand%20of%20Death.webp"
+        },
+        "width": 850,
+        "height": 302,
+        "credit": "Suzanne Helmigh"
+      }
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Bargains/Hand%20of%20Death.webp"
+  }
+]

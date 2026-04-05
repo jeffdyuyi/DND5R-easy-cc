@@ -1,0 +1,53 @@
+[
+  {
+    "ENG_name": "Divination",
+    "name": "预言术",
+    "source": "XPHB",
+    "page": 264,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 4,
+    "school": "D",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "价值 25+GP 的熏香，作为法术耗材",
+        "cost": 2500,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "meta": {
+      "ritual": true
+    },
+    "entries": [
+      "此法术让你得以与一名神祇或其仆人取得联络。你可以就某个未来 7 日内将要发生的特定目标、事件或活动提出一个问题。DM将给予你真实的答复，这个答复可能是一段短语或一节神秘的短诗。此法术的回答并不会顾及所有可能影响结果的情况。例如其他法术的影响。",
+      "若你在两次{@variantrule 长休|XPHB}之间使用两次或更多次的卜筮术，则法术在第一次施展之后会每次累积{@chance 25|||随机答复！|正常答复}概率会不给出任何结果。"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师",
+      "德鲁伊",
+      "法师"
+    ],
+    "display_school": "预言系",
+    "display_ritual": "仪式"
+  }
+]

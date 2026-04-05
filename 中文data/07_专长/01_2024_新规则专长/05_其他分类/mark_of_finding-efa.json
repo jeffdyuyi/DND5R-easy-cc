@@ -1,0 +1,144 @@
+[
+  {
+    "ENG_name": "Mark of Finding",
+    "name": "探索龙纹",
+    "source": "EFA",
+    "page": 39,
+    "category": "D",
+    "prerequisite": [
+      {
+        "campaign": [
+          "艾伯伦"
+        ],
+        "exclusiveFeatCategory": [
+          "D"
+        ]
+      }
+    ],
+    "additionalSpells": [
+      {
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "prepared": {
+          "3": {
+            "daily": {
+              "1": [
+                "物件定位术|xphb"
+              ]
+            }
+          },
+          "_": {
+            "daily": {
+              "1": [
+                "猎人印记|xphb"
+              ]
+            }
+          }
+        },
+        "expanded": {
+          "s1": [
+            "妖火|xphb",
+            "大步奔行|xphb"
+          ],
+          "s2": [
+            "动植物定位术|xphb",
+            "心灵尖刺|xphb"
+          ],
+          "s3": [
+            "鹰眼术|xphb",
+            "植物交谈|xphb"
+          ],
+          "s4": [
+            "预言术|xphb",
+            "生物定位术|xphb"
+          ],
+          "s5": [
+            "问道自然|xphb"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Hunter's Intuition",
+        "name": "猎人直觉",
+        "type": "entries",
+        "entries": [
+          "当你进行一次感知（{@skill 察觉|XPHB}或{@skill 求生|XPHB}）检定时，你可以投掷{@dice 1d4}并将骰出的数值添加到该属性检定中。"
+        ]
+      },
+      {
+        "ENG_name": "Finder's Magic",
+        "name": "寻者魔法",
+        "type": "entries",
+        "entries": [
+          "你总是准备了{@spell 猎人印记|XPHB}法术。你可以无需法术位施放它一次，并且当你完成一次{@variantrule 长休|XPHB}时恢复以此方式施放它的能力。你也可以使用你拥有的任何适当等级的法术位来施放它。智力、感知或魅力是你施放该法术的施法属性（在选择此专长时选择）。",
+          "当你达到角色等级3时，你还总是准备了{@spell 物件定位术|XPHB}法术并能以同样的方式施放它。"
+        ]
+      },
+      {
+        "ENG_name": "Spells of the Mark",
+        "name": "龙纹法术",
+        "type": "entries",
+        "entries": [
+          "如果你拥有施法或契约魔法职业特性，探索龙纹法术列表中的法术将被添加到该特性的法术列表中。",
+          {
+            "type": "table",
+            "caption": "探索龙纹法术",
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "colLabels": [
+              "法术环阶",
+              "法术"
+            ],
+            "rows": [
+              [
+                "1",
+                "{@spell 妖火|XPHB}, {@spell 大步奔行|XPHB}"
+              ],
+              [
+                "2",
+                "{@spell 动植物定位术|XPHB}, {@spell 心灵尖刺|XPHB}"
+              ],
+              [
+                "3",
+                "{@spell 鹰眼术|XPHB}, {@spell 植物交谈|XPHB}"
+              ],
+              [
+                "4",
+                "{@spell 预言术|XPHB}, {@spell 生物定位术|XPHB}"
+              ],
+              [
+                "5",
+                "{@spell 问道自然|XPHB}"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluffImages": true,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "feats/EFA/Mark of Finding.webp"
+          },
+          "credit": "Lee Moyer",
+          "width": 500,
+          "height": 525
+        }
+      ]
+    }
+  }
+]

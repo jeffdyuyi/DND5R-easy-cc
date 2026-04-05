@@ -1,0 +1,83 @@
+[
+  {
+    "ENG_name": "Cutlass of Briggsy Kratch (Legendary)",
+    "name": "布里格斯·库里奇的弯刀（传说）",
+    "source": "CrookedMoon24",
+    "page": 598,
+    "baseItem": "弯刀|XPHB",
+    "type": "M|XPHB",
+    "rarity": "legendary",
+    "reqAttune": true,
+    "weight": 3,
+    "weaponCategory": "军用",
+    "property": [
+      "F|XPHB",
+      "L|XPHB",
+      "TCM'24:FH"
+    ],
+    "mastery": [
+      "迅击|XPHB"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "S",
+    "bonusWeapon": "+3",
+    "entries": [
+      "一柄灌注有厄运伎俩之魔法的可怖武器，这柄弯刀曾为恶名远扬的海盗船长布里格斯·\"湾刀\"·库里奇所挥舞。其斑驳的刀锋泛着微弱的异界幽光，颅骨与交叉骨的徽记装饰着包覆皮革的刀柄，蚀刻于刀刃上的奥术符文亦脉动着潜藏的力量。",
+      "你获得一把+3弯刀，其攻击检定和伤害掷骰的加值由它的稀有度决定。当你持有这把弯刀时，你可以使用以下词条。",
+      {
+        "ENG_name": "Raise the Stakes (Rare+)",
+        "name": "赌局升级（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "作为{@variantrule 附赠动作|XPHB}，选择一个你周边5尺范围内的生物并标记它，直至你的下一回合开始。记录标记持续期间你命中该目标的次数和该目标命中你的次数。若你命中次数更多，则目标受到{@damage 2d10}心灵伤害。若该目标命中次数更多，则你受到{@damage 2d10}心灵伤害。若你们命中的次数相同，则你们两者都受到{@damage 2d10}心灵伤害。该属性一经使用，则直至次日黄昏之前，无法再次使用。"
+        ]
+      },
+      {
+        "ENG_name": "Sea Legs (Rare+)",
+        "name": "海脚身法（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "当你执行{@action 撤离|XPHB}动作时，{@variantrule 困难地形|XPHB}不会消耗你额外的移动力，直至该回合结束。"
+        ]
+      },
+      {
+        "ENG_name": "Double Down (Very Rare+)",
+        "name": "加倍押注（极珍稀+）",
+        "type": "entries",
+        "entries": [
+          "当你在自己回合内执行{@action 攻击|XPHB}动作时，你可以对一个被赌局升级属性标记的目标额外进行一次攻击。"
+        ]
+      },
+      {
+        "ENG_name": "Jinxcraft Panache (Very Rare+)",
+        "name": "厄艺锋彩（极珍稀+）",
+        "type": "entries",
+        "entries": [
+          "当一个生物以攻击检定命中你时，你可以采取一个{@variantrule 反应|XPHB}来使你的AC对抗该攻击时增加相当于弯刀对攻击和伤害掷骰加值两倍的数值，前提是该生物在本回合已经对你造成了伤害。"
+        ]
+      },
+      {
+        "ENG_name": "Hex Ward (Legendary)",
+        "name": "咒术屏障（传说）",
+        "type": "entries",
+        "entries": [
+          "你无法被预言系法术指定为目标，或通过魔法探知感官被感知，并且一个诅咒你的生物会受到等于你等级的心灵伤害。"
+        ]
+      }
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Cutlass%20of%20Briggsy%20Kratch.webp"
+          },
+          "width": 554,
+          "height": 1200,
+          "credit": "Eugenio Frosali"
+        }
+      ]
+    }
+  }
+]

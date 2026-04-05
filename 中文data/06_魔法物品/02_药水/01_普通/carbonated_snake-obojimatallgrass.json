@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Carbonated Snake",
+    "name": "碳酸蛇",
+    "source": "ObojimaTallGrass",
+    "page": 242,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "当摇晃并指向一个方向时，这瓶活力灵药的内容物会从瓶子中射出，在空中变成一只{@creature 毒蛇}并降落在你10尺范围内的一个空间中。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 24|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/carbonated-snake.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1344,
+          "height": 1344
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

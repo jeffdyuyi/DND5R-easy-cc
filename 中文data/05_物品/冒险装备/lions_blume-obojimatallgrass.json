@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Lions Blume",
+    "name": "狮子布卢姆",
+    "source": "ObojimaTallGrass",
+    "page": 212,
+    "type": "Ingred",
+    "rarity": "uncommon",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 17|large}|SneakerProMedium}",
+            "{@font {@style 13|large}|SneakerProMedium}",
+            "{@font {@style 16|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "这种肉食性花的特征是其蜂蜜色花瓣阵列中央有一个喉咬。养蜂人认为这种花是一种会吞食蜜蜂种群的入侵杂草。狮子布卢姆生长在海岸高地高沼地上被称为骄傲的补丁中。每个骄傲都有自己的血统，试图扼杀附近生长的其他骄傲。酿酒师寻找狮子布卢姆是因为这种花的乳状削弱以及它的\"牙齿\"。"
+    ],
+    "lootTables": [
+      "海岸高地非普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/lions-blume.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 1300,
+          "height": 1300
+        }
+      ]
+    }
+  }
+]

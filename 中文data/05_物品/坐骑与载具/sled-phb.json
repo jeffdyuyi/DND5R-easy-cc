@@ -1,0 +1,21 @@
+[
+  {
+    "name": "雪橇",
+    "ENG_name": "Sled",
+    "source": "PHB",
+    "page": 157,
+    "type": "VEH",
+    "rarity": "none",
+    "weight": 300,
+    "value": 2000,
+    "basicRules": true,
+    "referenceSources": [
+      "TTP"
+    ],
+    "reprintedAs": [
+      "雪橇|XPHB"
+    ],
+    "srd": true,
+    "translator": "不全书"
+  }
+]

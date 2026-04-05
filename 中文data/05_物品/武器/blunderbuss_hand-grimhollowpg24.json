@@ -1,0 +1,26 @@
+[
+  {
+    "ENG_name": "Blunderbuss, Hand",
+    "name": "喇叭铳，手持",
+    "source": "GrimHollowPG24",
+    "page": 129,
+    "type": "R|XPHB",
+    "rarity": "none",
+    "weight": 4,
+    "value": 50000,
+    "weaponCategory": "进阶",
+    "property": [
+      "A|XPHB",
+      "BP|GrimHollowPG24",
+      "LD|XPHB"
+    ],
+    "mastery": [
+      "散射术|GrimHollowPG24|散射术（5尺）"
+    ],
+    "range": "15/60",
+    "dmg1": "2d4",
+    "dmgType": "P",
+    "weapon": true,
+    "ammoType": "纸张子弹|GrimHollowPG24"
+  }
+]

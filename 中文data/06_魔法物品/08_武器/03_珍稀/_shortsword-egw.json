@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "Shortsword",
+    "name": "致命短剑",
+    "source": "EGW",
+    "page": 270,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TWoO",
+      "DrDe-SD"
+    ],
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "rare",
+    "weight": 2,
+    "value": 1000,
+    "weaponCategory": "martial",
+    "property": [
+      "F|XPHB",
+      "L|XPHB"
+    ],
+    "mastery": [
+      "侵扰|XPHB"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "sword": true,
+    "weapon": true,
+    "hasFluffImages": true,
+    "namePrefix": "致命",
+    "entries": [
+      "当你使用这把魔法武器攻击并对生物造成伤害时，目标在你的下个回合开始前无法恢复生命值。"
+    ],
+    "_isVariant": true,
+    "valueReference": 4000
+  }
+]

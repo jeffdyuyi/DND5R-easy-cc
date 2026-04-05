@@ -1,0 +1,61 @@
+[
+  {
+    "ENG_name": "Chant of Thoth",
+    "name": "透特之颂",
+    "source": "CthulhuTorchlight",
+    "page": 0,
+    "level": 0,
+    "school": "D",
+    "time": [
+      {
+        "number": 1,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 8
+        }
+      }
+    ],
+    "entries": [
+      "在法术持续期间，当你首次进行智力检定失败时，若该检定的DC低于你的法术豁免DC，则自动视为成功；否则你获得+2加值。使用此增益后，需完成一次{@variantrule 短休|XPHB}方可再次触发。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    }
+  }
+]

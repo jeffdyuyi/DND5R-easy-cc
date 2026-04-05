@@ -1,0 +1,34 @@
+[
+  {
+    "ENG_name": "Blessed Warrior",
+    "name": "受祝福的勇士",
+    "source": "XPHB",
+    "page": 110,
+    "category": "FS:P",
+    "prerequisite": [
+      {
+        "otherSummary": {
+          "entry": "当你获得2级圣武士\"战斗风格\"特性时",
+          "entrySummary": "特殊"
+        }
+      }
+    ],
+    "additionalSpells": [
+      {
+        "ability": "cha",
+        "known": {
+          "_": [
+            {
+              "choose": "level=0|class=牧师",
+              "count": 2
+            }
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你习得两道你选择的{@filter 牧师戏法|spells|level=0|class=牧师}，推荐选取{@spell 神导术|XPHB}和{@spell 圣火术|XPHB} 。它们对你视作圣武士法术，且这些法术的施法属性是魅力 。每当你获得一个圣武士等级时，你都能从这些戏法中选择其一替换为另一道你所选择的牧师戏法。"
+    ],
+    "translator": "不全书"
+  }
+]

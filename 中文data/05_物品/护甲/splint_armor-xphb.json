@@ -1,0 +1,37 @@
+[
+  {
+    "name": "板条甲",
+    "ENG_name": "Splint Armor",
+    "source": "XPHB",
+    "page": 219,
+    "edition": "one",
+    "type": "HA|XPHB",
+    "rarity": "none",
+    "weight": 60,
+    "value": 20000,
+    "ac": 17,
+    "strength": "15",
+    "stealth": true,
+    "armor": true,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XPHB/Splint Armor.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 352,
+          "height": 383
+        }
+      ]
+    },
+    "basicRules2024": true,
+    "hasFluffImages": true,
+    "referenceSources": [
+      "HotB"
+    ],
+    "srd52": true
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Crackling Jasper",
+    "name": "爆裂碧玉",
+    "source": "ObojimaTallGrass",
+    "page": 210,
+    "type": "Ingred",
+    "rarity": "uncommon",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 17|large}|SneakerProMedium}",
+            "{@font {@style 15|large}|SneakerProMedium}",
+            "{@font {@style 12|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "有人说爆裂碧玉中包含着不安分的火焰精魂，它们不断相互争斗，导致石头喷吐火花、射出微型火焰，有时还会砰的一声爆裂开来。胧忆岛人会在节日期间将爆裂碧玉放入绑在杆子上的锡罐中，以吓跑调皮的精灵。爆裂碧玉可在热水之地的温泉和熔岩管附近找到。"
+    ],
+    "lootTables": [
+      "热水大地非普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/crackling-jasper.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 1711,
+          "height": 1711
+        }
+      ]
+    }
+  }
+]

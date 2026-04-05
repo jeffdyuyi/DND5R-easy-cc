@@ -1,0 +1,14 @@
+{
+  "ENG_name": "Eyes of the Rune Keeper",
+  "name": "符文守护者之眼",
+  "source": "PHB",
+  "page": 111,
+  "srd": true,
+  "featureType": [
+    "EI"
+  ],
+  "entries": [
+    "你可以读懂任何文字。"
+  ],
+  "translator": "不全书"
+}

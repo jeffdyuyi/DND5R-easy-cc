@@ -1,0 +1,53 @@
+[
+  {
+    "ENG_name": "Seashell",
+    "name": "贝壳",
+    "source": "ObojimaTallGrass",
+    "page": 207,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 0|large}|SneakerProMedium}",
+            "{@font {@style 0|large}|SneakerProMedium}",
+            "{@font {@style 1|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "胧忆岛的海滩上覆盖着各种贝壳。海滨镇的许多小路和人行道都铺着简易的白贝壳。一些更精美的贝壳在商店里出售。"
+    ],
+    "lootTables": [
+      "舒里塔希的赠礼 普通原料|ObojimaTallGrass",
+      "热水大地普通原料|ObojimaTallGrass",
+      "浅滩普通原料|ObojimaTallGrass",
+      "咸水湿地普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/seashell.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 1920,
+          "height": 1920
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "ENG_name": "Last Rites",
+    "name": "安灵仪式",
+    "source": "GuideDrakkenheim",
+    "page": 190,
+    "level": 4,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一小片黄铜、一片玫瑰花瓣和一滴圣水"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你以一道照耀它们的圣光光束为目标，瞄准一个你能看见的范围内的生物。目标必须进行一次感知豁免检定。目标在豁免失败时受到{@damage 8d8}光耀伤害，豁免成功则只受一半伤害。该法术对天族或构装无效。",
+      "如果你以亡灵或邪魔为目标，它进行豁免检定时具有劣势，且该法术对其造成最大伤害。",
+      "如果一个亡灵或邪魔被此法术的生命值降至0，它会死亡并且它的身体会化为灰烬。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用5环或更高法术位施放该法术时，每比5环高一环，你可以额外以30尺内彼此相邻的另一个生物为目标。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "光耀"
+    ],
+    "savingThrow": [
+      "感知"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Paladin",
+          "name": "圣武士",
+          "source": "PHB"
+        }
+      ]
+    }
+  }
+]

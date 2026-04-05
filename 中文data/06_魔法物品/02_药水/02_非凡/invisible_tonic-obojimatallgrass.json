@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Invisible Tonic",
+    "name": "隐形药剂",
+    "source": "ObojimaTallGrass",
+    "page": 244,
+    "type": "P",
+    "rarity": "uncommon",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "当倾倒在一个小型或更小的物件上时，该物件会进入{@condition 隐形}状态。此药水的效应会持续到被移除为止，如同诅咒一般。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 42|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/invisible-tonic.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1423,
+          "height": 1423
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

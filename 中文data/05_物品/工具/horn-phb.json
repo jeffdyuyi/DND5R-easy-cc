@@ -1,0 +1,21 @@
+[
+  {
+    "name": "号角",
+    "ENG_name": "Horn",
+    "source": "PHB",
+    "page": 154,
+    "edition": "classic",
+    "type": "INS",
+    "rarity": "none",
+    "weight": 2,
+    "value": 300,
+    "basicRules": true,
+    "referenceSources": [
+      "TTP"
+    ],
+    "reprintedAs": [
+      "号角|XPHB"
+    ],
+    "srd": true
+  }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "ENG_name": "Sapping Sting",
+    "name": "削弱芒刺",
+    "source": "EGW",
+    "page": 189,
+    "level": 0,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你削弱施法距离内一个你看得见的生物的生命活力。目标必须通过一个体质豁免，否则就会受到{@damage 1d4}点暗蚀伤害并且{@condition 倒地}。",
+      "当你达到5级时，这个法术的伤害增加{@damage 1d4}（{@damage 2d4}），11级时（{@damage 3d4}），17级时（{@damage 4d4}）。"
+    ],
+    "scalingLevelDice": {
+      "label": "暗蚀伤害",
+      "scaling": {
+        "1": "1d4",
+        "5": "2d4",
+        "11": "3d4",
+        "17": "4d4"
+      }
+    },
+    "damageInflict": [
+      "necrotic"
+    ],
+    "conditionInflict": [
+      "倒地"
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "miscTags": [
+      "SCL",
+      "SGT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "display_school": "死灵系",
+    "display_savingThrow": [
+      "体质"
+    ],
+    "display_damageInflict": [
+      "死灵"
+    ]
+  }
+]

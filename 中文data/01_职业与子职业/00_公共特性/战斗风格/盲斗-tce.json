@@ -1,0 +1,27 @@
+{
+  "ENG_name": "Blind Fighting",
+  "name": "盲斗",
+  "source": "TCE",
+  "page": 41,
+  "reprintedAs": [
+    {
+      "uid": "盲斗|XPHB",
+      "tag": "feat"
+    }
+  ],
+  "isClassFeatureVariant": true,
+  "featureType": [
+    "FS:F",
+    "FS:P",
+    "FS:R"
+  ],
+  "senses": [
+    {
+      "blindsight": 10
+    }
+  ],
+  "entries": [
+    "你获得10尺的{@sense 盲视}感官。在此范围内，你可以切实的看见非{@quickref 掩护||3||全身掩护}的任何东西，即使你处于{@condition 目盲}状态或是身处黑暗之中。不仅如此，你还可以看见此范围内的{@condition 隐形}生物（除非对你而言该生物成功躲藏了起来）。"
+  ],
+  "translator": "不全书"
+}

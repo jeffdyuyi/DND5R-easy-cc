@@ -1,0 +1,25 @@
+{
+  "raceFluff": [
+    {
+      "ENG_name": "Strig (Swift)",
+      "name": "鸮族 (迅疾)",
+      "source": "HumblewoodCampaignSetting",
+      "_copy": {
+        "ENG_name": "Strig",
+        "name": "鸮族",
+        "source": "HumblewoodCampaignSetting",
+        "_mod": {
+          "entries": {
+            "mode": "prependArr",
+            "items": {
+              "type": "section",
+              "entries": [
+                "作为一个迅疾鸮族，你是森林中的强大力量，远近驰名，从未错过一步。当你沉浸在森林中时，你最有能力。"
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

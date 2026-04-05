@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Charm of Invisibility",
+    "name": "隐形护咒",
+    "source": "IDRotF",
+    "page": 228,
+    "type": "Charm",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "limited": {
+              "3": [
+                "隐形术"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "entries": [
+      "此护咒允许你无需任何成分、以动作施放{@spell 隐形术}法术。使用三次后，该护咒会从你身上消失。"
+    ]
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "ENG_name": "Pollinator Visor",
+    "name": "工蜂面罩",
+    "source": "GriffonsSaddlebag2",
+    "page": 138,
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": "由德鲁伊或游侠",
+    "reqAttuneTags": [
+      {
+        "class": "德鲁伊"
+      },
+      {
+        "class": "游侠"
+      }
+    ],
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "这张覆壳种面具戴在你的耳朵上，你可以使用一个动作将其抬起或放下，使其位于头顶或眼前。面罩上有两个大型的、类似眼睛的镜片，镜片能增强你的视力，并将气味可视化。在你将面罩戴在眼前期间，你依赖视觉和嗅觉进行的感知（{@skill 察觉}）检定具有优势。",
+      "这个面具具有3充能，且在每日黎明时恢复{@dice 1d3}已消耗的充能。在你将面具戴在眼前期间，你可以用一个动作并消耗其1充能来从面具中施展{@spell 动物信使}法术，目标为施法距离内的一个微型昆虫或类似的生物（例如蜈蚣、蜘蛛、黄蜂或蝎子）。通过这种方式施展法术时，会飞的昆虫信使24小时内可移动25里，不会飞的信使只能移动12里。",
+      {
+        "ENG_name": "Beekeeper's Commitment",
+        "name": "献身于蜂",
+        "type": "entries",
+        "entries": [
+          "在你已与三件具有此命名属性的魔法物品同调期间，这副面具在每日黎明恢复所有已消耗的充能（而非{@dice 1d3}），且获得如下增益："
+        ]
+      },
+      {
+        "ENG_name": "Bug",
+        "name": "工蜂窃听",
+        "type": "entries",
+        "entries": [
+          "当你使用面罩施展{@spell 动物信使}法术时，你可以指示昆虫在持续时间内秘密地跟踪法术的接收者，而不是直接传递信息。当你这样做时，你还必须为昆虫提供一个触发词或短语。当接收者说出该触发词或短语时，昆虫会魔法性地开始记录接收者及其交谈对象所说的内容。昆虫最多可以记录25个单词，或者最多6秒的其他声音。一旦完成记录，只要你与昆虫处于同一存在位面，无论距离多远，昆虫都会魔法性地将信息传递给你，使你能在脑海中听到这段记录。记录的信息会复制任何被记录生物的声音。随后法术结束，昆虫会返回你施展法术的地点。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "动物信使"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表 F1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Pollinator-Visor.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

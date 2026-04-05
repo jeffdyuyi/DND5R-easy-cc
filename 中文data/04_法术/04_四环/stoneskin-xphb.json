@@ -1,0 +1,63 @@
+[
+  {
+    "ENG_name": "Stoneskin",
+    "name": "石肤术",
+    "source": "XPHB",
+    "page": 321,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 4,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "价值 100+GP 的钻石尘，作为法术耗材",
+        "cost": 10000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "在法术结束前，你触碰的一个自愿生物获得对钝击、穿刺、挥砍伤害的{@variantrule 抗性|XPHB}。"
+    ],
+    "damageResist": [
+      "钝击",
+      "穿刺",
+      "挥砍"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊",
+      "游侠",
+      "术士",
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "变化系"
+  }
+]

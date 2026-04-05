@@ -1,0 +1,16 @@
+[
+  {
+    "ENG_name": "Spies' Murmur",
+    "name": "间谍低语",
+    "source": "GGR",
+    "page": 181,
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这件由暗色金属制成的头饰佩戴时弯曲环绕在耳朵上。如果你知道一个佩戴另一个间谍低语的生物且该生物在你身边1英里范围内时，你可以与他进行心灵交流。你可以用一个附赠动作使该生物听见你所听到的一切，持续1小时。你可以用一个附赠动作终止这一效应，当你陷入{@condition 失能}状态时该效应自行终止。"
+    ],
+    "valueReference": 400,
+    "type": "W"
+  }
+]

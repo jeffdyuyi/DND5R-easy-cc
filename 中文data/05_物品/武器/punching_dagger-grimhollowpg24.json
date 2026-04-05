@@ -1,0 +1,24 @@
+[
+  {
+    "ENG_name": "Punching Dagger",
+    "name": "拳匕",
+    "source": "GrimHollowPG24",
+    "page": 128,
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 1,
+    "value": 30000,
+    "weaponCategory": "进阶",
+    "property": [
+      "AP|GrimHollowPG24",
+      "F|XPHB",
+      "L|XPHB"
+    ],
+    "mastery": [
+      "防御|GrimHollowPG24"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "P",
+    "weapon": true
+  }
+]

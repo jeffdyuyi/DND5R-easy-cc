@@ -1,0 +1,37 @@
+[
+  {
+    "ENG_name": "Tongue of the Dragon",
+    "name": "龙之巧舌",
+    "source": "FTD",
+    "page": 28,
+    "type": "Draconic Gift",
+    "rarity": "uncommon",
+    "entries": [
+      "你从龙那里获得了一些威严气场。",
+      {
+        "ENG_name": "Dragon's Speech",
+        "name": "龙之灵言",
+        "type": "entries",
+        "entries": [
+          "你可以说、读、写龙语。"
+        ]
+      },
+      {
+        "ENG_name": "Dragon's Voice",
+        "name": "龙之洪音",
+        "type": "entries",
+        "entries": [
+          "以一个附赠动作，你在一分钟内让你的声音能传到300尺之远。"
+        ]
+      },
+      {
+        "ENG_name": "Dragon's Wiles",
+        "name": "龙之诡谲",
+        "type": "entries",
+        "entries": [
+          "你进行的魅力（{@skill 游说}）检定具有优势。"
+        ]
+      }
+    ]
+  }
+]

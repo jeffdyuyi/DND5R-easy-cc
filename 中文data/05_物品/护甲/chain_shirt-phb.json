@@ -1,0 +1,26 @@
+[
+  {
+    "name": "链甲衫",
+    "ENG_name": "Chain Shirt",
+    "source": "PHB",
+    "page": 144,
+    "edition": "classic",
+    "type": "MA",
+    "rarity": "none",
+    "weight": 20,
+    "value": 5000,
+    "ac": 13,
+    "armor": true,
+    "entries": [
+      "该护甲由互相锁接的金属环组成，通常着装于布衣或皮衣的夹层之间。这种护甲为着装者的上半身提供了适中的保护，且锁环间相互碰撞的声音也可以被外层衣服减弱。"
+    ],
+    "basicRules": true,
+    "referenceSources": [
+      "TftYP-TSC"
+    ],
+    "reprintedAs": [
+      "链甲衫|XPHB"
+    ],
+    "srd": true
+  }
+]

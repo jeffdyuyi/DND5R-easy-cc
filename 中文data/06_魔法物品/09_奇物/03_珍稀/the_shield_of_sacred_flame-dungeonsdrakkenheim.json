@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "The Shield of Sacred Flame",
+    "name": "圣火盾",
+    "source": "DungeonsDrakkenheim",
+    "page": 234,
+    "baseItem": "盾牌|phb",
+    "type": "S",
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 6,
+    "ac": 2,
+    "recharge": "拂晓",
+    "rechargeAmount": 3,
+    "charges": 3,
+    "entries": [
+      "这个盾牌有3次充能，每天黎明时你将重新获得这些充能。当60尺范围内的施法者以你为目标施展法术，或者将你包含在法术范围内时，你可以消耗盾牌的一次充能，作为反应施展{@spell 法术反制}。",
+      {
+        "ENG_name": "Relics of Saint Vitruvio",
+        "name": "圣维特鲁维奥的圣物",
+        "type": "entries",
+        "entries": [
+          "这些神圣的圣火圣物曾被圣维特鲁维奥所使用，并被保存在德拉肯海姆各地的多个宗教场所中。银秩序骑士和堕落火焰的追随者现在正在寻找这些圣物。不仅两个派别都崇敬圣维特鲁维奥，他们都希望利用这些圣物来帮助推进他们在德拉肯海姆的目标。",
+          "一个角色如果调谐到三个圣维特鲁威亚圣物，每天可以施放{@spell 医疗术}法术三次，之后他们必须完成一次长休才能再次这样做。此外，只要这两个魔法物品都是圣维特鲁威亚圣物，该角色还能获得调谐到两个额外魔法物品的能力。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "法术反制"
+        ]
+      },
+      "daily": {
+        "3e": [
+          "医疗术"
+        ]
+      }
+    }
+  }
+]

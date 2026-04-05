@@ -1,0 +1,69 @@
+[
+  {
+    "ENG_name": "Cloak of Arachnida",
+    "name": "节肢斗篷",
+    "source": "XDMG",
+    "page": 244,
+    "srd52": true,
+    "basicRules2024": true,
+    "resist": [
+      "毒素"
+    ],
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "modifySpeed": {
+      "equal": {
+        "climb": "走"
+      }
+    },
+    "entries": [
+      "这件精美的服饰由黑色丝绸制成，其中交织着隐约可见的银色丝线。着装此斗篷期间，你获得以下增益：",
+      {
+        "ENG_name": "Poison Resistance",
+        "name": "毒素抗性",
+        "type": "entries",
+        "entries": [
+          "你获得对毒素伤害的{@variantrule 抗性|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Spider Climb",
+        "name": "蛛行术",
+        "type": "entries",
+        "entries": [
+          "你获得与{@variantrule 速度|XPHB}相等的{@variantrule 攀爬速度|XPHB}，能够在垂直表面上下或横向移动，甚至可以在天花板上倒挂着移动而不需要用到双手。"
+        ]
+      },
+      {
+        "ENG_name": "Spider Walk",
+        "name": "蛛网行走",
+        "type": "entries",
+        "entries": [
+          "你不会被任何种类的蛛网困住，在移动穿过蛛网时你将其视为等同于{@variantrule 困难地形|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Web",
+        "name": "蛛网术",
+        "type": "entries",
+        "entries": [
+          "你可以施展{@spell 蛛网术|XPHB}（{@dc 13}）。该法术创造的蛛网将覆盖普通蛛网术正常区域的两倍。该词条一经使用，直至次日黎明前都无法再次使用。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "蛛网术|xphb"
+        ]
+      }
+    },
+    "lootTables": [
+      "奥秘 - 极珍稀|XDMG"
+    ],
+    "translator": "不全书",
+    "valueReference": 40000,
+    "type": "W"
+  }
+]

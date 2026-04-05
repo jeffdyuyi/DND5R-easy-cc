@@ -1,0 +1,40 @@
+{
+  "ENG_name": "The Undead",
+  "name": "死灵宗主",
+  "shortName": "亡灵",
+  "source": "VRGR",
+  "className": "魔契师",
+  "classSource": "XPHB",
+  "_copy": {
+    "ENG_name": "The Undead",
+    "name": "死灵宗主",
+    "source": "VRGR",
+    "shortName": "亡灵",
+    "className": "魔契师",
+    "classSource": "PHB",
+    "_preserve": {
+      "page": true,
+      "otherSources": true,
+      "referenceSources": true,
+      "srd": true,
+      "basicRules": true,
+      "reprintedAs": true
+    }
+  },
+  "subclassFeatures": [
+    "死灵宗主|魔契师|XPHB|亡灵|VRGR|3",
+    "坟冢之触|魔契师||亡灵|VRGR|6",
+    "死疽躯壳|魔契师||亡灵|VRGR|10",
+    "灵魂投射|魔契师||亡灵|VRGR|14"
+  ],
+  "fluff": {
+    "_subclassFluff": {
+      "ENG_name": "The Undead",
+      "name": "死灵宗主",
+      "source": "VRGR",
+      "shortName": "亡灵",
+      "className": "魔契师",
+      "classSource": "PHB"
+    }
+  }
+}

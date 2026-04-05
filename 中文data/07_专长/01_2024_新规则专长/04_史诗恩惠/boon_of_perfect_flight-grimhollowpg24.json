@@ -1,0 +1,44 @@
+[
+    {
+        "ENG_name": "Boon of Perfect Flight",
+        "name": "完美飞行恩惠",
+        "source": "GrimHollowPG24",
+        "page": 121,
+        "category": "EB",
+        "prerequisite": [
+            {
+                "level": 19
+            }
+        ],
+        "ability": [
+            {
+                "choose": {
+                    "from": [
+                        "str",
+                        "dex"
+                    ]
+                },
+                "max": 30
+            }
+        ],
+        "entries": [
+            "你获得以下增益。",
+            {
+                "ENG_name": "Flying",
+                "name": "飞行",
+                "type": "entries",
+                "entries": [
+                    "你拥有40尺的{@variantrule 飞行速度|XPHB}并且可以悬浮。"
+                ]
+            },
+            {
+                "ENG_name": "Graceful Fall",
+                "name": "优雅秋",
+                "type": "entries",
+                "entries": [
+                    "如果你坠落超过5尺，你的坠落速度会减缓至每轮60尺直到你着陆。"
+                ]
+            }
+        ]
+    }
+]

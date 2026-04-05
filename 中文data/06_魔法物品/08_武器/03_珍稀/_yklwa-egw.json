@@ -1,0 +1,26 @@
+[
+  {
+    "ENG_name": "Yklwa",
+    "name": "致命伊库瓦短矛",
+    "source": "EGW",
+    "page": 270,
+    "type": "M",
+    "rarity": "rare",
+    "weight": 3,
+    "value": 100,
+    "weaponCategory": "simple",
+    "property": [
+      "T"
+    ],
+    "range": "10/30",
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "weapon": true,
+    "entries": [
+      "当你使用这把魔法武器攻击并对生物造成伤害时，目标在你的下个回合开始前无法恢复生命值。"
+    ],
+    "namePrefix": "致命",
+    "_isVariant": true,
+    "valueReference": 4000
+  }
+]

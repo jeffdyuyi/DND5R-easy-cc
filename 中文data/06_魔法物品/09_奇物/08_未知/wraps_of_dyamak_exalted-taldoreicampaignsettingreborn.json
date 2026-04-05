@@ -1,0 +1,44 @@
+[
+  {
+    "ENG_name": "Wraps of Dyamak (Exalted)",
+    "name": "迪亚马克的裹拳（升华）",
+    "source": "TalDoreiCampaignSettingReborn",
+    "_copy": {
+      "ENG_name": "Wraps of Dyamak (Awakened)",
+      "name": "迪亚马克的裹拳（觉醒）",
+      "source": "TalDoreiCampaignSettingReborn",
+      "_mod": {
+        "entries": [
+          {
+            "mode": "appendArr",
+            "items": {
+              "entries": [
+                {
+                  "ENG_name": "Exalted",
+                  "name": "升华",
+                  "type": "entries",
+                  "entries": [
+                    "当迪亚马克裹布达到崇高状态时，它们获得以下属性：",
+                    {
+                      "type": "list",
+                      "items": [
+                        "你的徒手攻击的攻击和伤害骰的加值增加到+3。",
+                        "当你用徒手攻击命中时，你可以选择将攻击变为贪婪攻击。目标额外受到{@damage 6d6}点暗蚀伤害，并且你恢复等同于造成暗蚀伤害量的生命值。裹布的这个属性在你完成一次{@quickref 休息|PHB|2|0|长休}之前，或者在你用徒手攻击对一个敌对生物造成重击之前，不能再被使用。"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "_preserve": {
+        "page": true,
+        "fluff": true
+      }
+    },
+    "bonusWeapon": "+3",
+    "hasFluffImages": true
+  }
+]

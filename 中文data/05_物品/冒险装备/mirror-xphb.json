@@ -1,0 +1,18 @@
+[
+  {
+    "name": "镜子",
+    "ENG_name": "Mirror",
+    "source": "XPHB",
+    "page": 227,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 0.5,
+    "value": 500,
+    "entries": [
+      "一面手持的钢镜不光可以用来化妆打扮，也可以用来窥视拐角或利用反光打信号。"
+    ],
+    "basicRules2024": true,
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

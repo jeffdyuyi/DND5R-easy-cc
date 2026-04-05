@@ -1,0 +1,109 @@
+[
+  {
+    "ENG_name": "Candle of Invocation",
+    "name": "祈神蜡烛",
+    "source": "DMG",
+    "page": 157,
+    "srd": true,
+    "referenceSources": [
+      "WDMM",
+      "ToFW"
+    ],
+    "reprintedAs": [
+      "祈神蜡烛|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这根细长的蜡烛专用于一位神祇，并与该神祇的阵营相同。蜡烛的阵营可以用{@spell 侦测善恶}法术侦测。由DM来选择对应的神祇与阵营，或是由DM随机决定这根蜡烛的阵营。",
+      {
+        "type": "table",
+        "colLabels": [
+          "{@dice d20}",
+          "阵营"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-11"
+        ],
+        "rows": [
+          [
+            "1-2",
+            "混乱邪恶"
+          ],
+          [
+            "3-4",
+            "混乱中立"
+          ],
+          [
+            "5-7",
+            "混乱善良"
+          ],
+          [
+            "8-9",
+            "中立邪恶"
+          ],
+          [
+            "10-11",
+            "绝对中立"
+          ],
+          [
+            "12-13",
+            "中立善良"
+          ],
+          [
+            "14-15",
+            "守序邪恶"
+          ],
+          [
+            "16-17",
+            "守序中立"
+          ],
+          [
+            "18-20",
+            "守序善良"
+          ]
+        ]
+      },
+      "蜡烛的魔力在蜡烛被点燃时激活，这需要一个动作。蜡烛燃烧4小时后将被摧毁。你可以提前吹灭蜡烛以备将来之用。以分钟为单位从蜡烛的总燃烧时间中扣除已燃烧的时间。",
+      "蜡烛燃烧期间，它会散发出半径30尺范围的微光光照。范围内任何阵营与蜡烛相同的生物进行攻击检定、豁免检定、与属性检定时具有优势。此外，范围内阵营与蜡烛相同的牧师和德鲁伊可以施放已准备的1环法术而无需消耗法术位，但法术效果仍按消耗了1环法术位计算。",
+      "另外，首次点亮祈神蜡烛时，你可以用它施放{@spell 异界之门}法术。如此做会立刻摧毁这根蜡烛。"
+    ],
+    "light": [
+      {
+        "dim": 30
+      }
+    ],
+    "attachedSpells": {
+      "limited": {
+        "1": [
+          "异界之门"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表H"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 20000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Candle of Invocation.webp"
+          },
+          "width": 299,
+          "height": 850
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

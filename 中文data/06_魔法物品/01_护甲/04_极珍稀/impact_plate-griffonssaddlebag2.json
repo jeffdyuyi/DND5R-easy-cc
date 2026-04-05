@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Impact Plate",
+    "name": "耐冲击板甲",
+    "source": "GriffonsSaddlebag2",
+    "page": 108,
+    "baseItem": "板甲|phb",
+    "type": "HA",
+    "resist": [
+      "钝击"
+    ],
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "weight": 65,
+    "ac": 18,
+    "strength": "15",
+    "stealth": true,
+    "entries": [
+      "这套由矮人制成的全身板甲不但极具韧性，还会魔法性地调整其尺寸以适应穿戴者的身材。在你穿戴着这套盔甲期间，你对钝击伤害具有抗性，而且当你从不大于100尺的高度坠落时，你不会受到任何摔落伤害。"
+    ],
+    "lootTables": [
+      "魔法物品表 H1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Impact-Plate.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

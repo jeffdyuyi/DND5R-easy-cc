@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "+3 Hand Crossbow",
+    "name": "+3 手弩",
+    "source": "DMG",
+    "page": 213,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "HotB"
+    ],
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "very rare",
+    "weight": 3,
+    "value": 7500,
+    "weaponCategory": "martial",
+    "property": [
+      "A|XPHB",
+      "L|XPHB",
+      "LD|XPHB"
+    ],
+    "mastery": [
+      "侵扰|XPHB"
+    ],
+    "range": "30/120",
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "crossbow": true,
+    "weapon": true,
+    "ammoType": "弩矢|xphb",
+    "hasFluffImages": true,
+    "namePrefix": "+3 ",
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "+3 武器|XDMG"
+    ],
+    "tier": "主要",
+    "bonusWeapon": "+3",
+    "entries": [
+      "使用这把魔法武器进行攻击和伤害判定时，你会获得{=bonusWeapon}的额外加成。"
+    ],
+    "lootTables": [
+      "魔法物品表H"
+    ],
+    "_isVariant": true,
+    "valueReference": 40000
+  }
+]

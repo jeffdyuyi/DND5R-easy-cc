@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Rust Crab",
+    "name": "锈红蟹",
+    "source": "ObojimaTallGrass",
+    "page": 207,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 8|large}|SneakerProMedium}",
+            "{@font {@style 4|large}|SneakerProMedium}",
+            "{@font {@style 2|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "锈红蟹数量众多且脾气暴躁，这使得它们成为渔夫的奖品，但也是一种难以捕获的蟹类，因为它们经常用异常强壮的爪击剪断笼子。锈红蟹非常喜欢鸡肉。它们可以在胧忆岛周围的水域中找到。"
+    ],
+    "lootTables": [
+      "浅滩普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/rust-crab.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 2983,
+          "height": 2983
+        }
+      ]
+    }
+  }
+]

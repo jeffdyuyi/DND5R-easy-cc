@@ -1,0 +1,34 @@
+[
+  {
+    "name": "板甲",
+    "ENG_name": "Plate Armor",
+    "source": "XPHB",
+    "page": 219,
+    "edition": "one",
+    "type": "HA|XPHB",
+    "rarity": "none",
+    "weight": 65,
+    "value": 150000,
+    "ac": 18,
+    "strength": "15",
+    "stealth": true,
+    "armor": true,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XPHB/Plate Armor.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 439,
+          "height": 1078
+        }
+      ]
+    },
+    "basicRules2024": true,
+    "hasFluffImages": true,
+    "srd52": true
+  }
+]

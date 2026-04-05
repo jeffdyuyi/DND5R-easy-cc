@@ -1,0 +1,467 @@
+{
+    "classFeature": [
+        {
+            "ENG_name": "Rage",
+            "name": "狂暴",
+            "source": "XPHB",
+            "page": 51,
+            "srd52": true,
+            "basicRules2024": true,
+            "className": "野蛮人",
+            "classSource": "XPHB",
+            "level": 1,
+            "entries": [
+                "你可以将名为狂暴的原初之力赋予己身，为你带来超越常规的伟力和韧性。未着装重甲时，你可以以一个{@variantrule 附赠动作|XPHB}进入狂暴。",
+                "你可以进入狂暴的次数见野蛮人特性表中\"狂暴次数\"一栏。当你完成一次{@variantrule 短休|XPHB}时，你重获一次已使用的狂暴次数；当你完成一次{@variantrule 长休|XPHB}时，你重获所有已使用的狂暴次数。",
+                "你的狂暴激活期间，你将遵循以下这些规则：",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "ENG_name": "Damage Resistance",
+                            "name": "伤害抗性",
+                            "type": "entries",
+                            "entries": [
+                                "你具有钝击，穿刺和挥砍伤害的{@variantrule 抗性|XPHB}。"
+                            ]
+                        },
+                        {
+                            "ENG_name": "Rage Damage",
+                            "name": "狂暴伤害",
+                            "type": "entries",
+                            "entries": [
+                                "当你使用力量发动一次攻击并对目标造成伤害时（无论这是一次武器攻击还是一次{@variantrule 徒手打击|XPHB}），你的伤害掷骰获得额外加值，这个加值随着你的野蛮人等级提升，见野蛮人特性表中\"狂暴伤害\"一栏。"
+                            ]
+                        },
+                        {
+                            "ENG_name": "Strength Advantage",
+                            "name": "力量优势",
+                            "type": "entries",
+                            "entries": [
+                                "你的力量检定和力量豁免具有{@variantrule 优势|XPHB}。"
+                            ]
+                        },
+                        {
+                            "ENG_name": "No Concentration or Spells",
+                            "name": "无法专注或施法",
+                            "type": "entries",
+                            "entries": [
+                                "你无法保持{@status 专注|XPHB}，也不能施展法术。"
+                            ]
+                        },
+                        {
+                            "ENG_name": "Duration",
+                            "name": "持续时间",
+                            "type": "entries",
+                            "entries": [
+                                "狂暴持续到你的下一个回合结束，如果你穿戴重甲或陷入{@condition 失能|XPHB}状态，狂暴提前结束。如果在你的下一回合你的狂暴仍处于激活状态，你可以执行以下选项之一令你的狂暴延长一轮：",
+                                {
+                                    "type": "list",
+                                    "items": [
+                                        "对敌人进行一次攻击检定。",
+                                        "迫使一名敌人进行一次豁免检定。",
+                                        "以一个{@variantrule 附赠动作|XPHB}延长你的狂暴。"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "每当狂暴被延长，都会持续至你的下个回合结束。你至多可以维持狂暴 10 分钟。"
+            ]
+        },
+        {
+            "ENG_name": "Unarmored Defense",
+            "name": "无甲防御",
+            "source": "XPHB",
+            "page": 51,
+            "srd52": true,
+            "basicRules2024": true,
+            "className": "野蛮人",
+            "classSource": "XPHB",
+            "level": 1,
+            "entries": [
+                "你未着装任何护甲期间，你的基础{@variantrule 护甲等级|XPHB}等于10+你的敏捷调整值+你的体质调整值。你可以使用{@item 盾牌|XPHB}而仍然从此特性获益。"
+            ]
+        },
+        {
+            "ENG_name": "Weapon Mastery",
+            "name": "武器精通",
+            "source": "XPHB",
+            "page": 52,
+            "srd52": true,
+            "basicRules2024": true,
+            "className": "野蛮人",
+            "classSource": "XPHB",
+            "level": 1,
+            "entries": [
+                "你对武器的训练使你获得{@variantrule 武器精通词条|XPHB|精通词条}：包括两种自选的{@filter 简易|items|type=简易武器;近战武器=sand}或{@filter 军用近战武器|items|type=军用武器;近战武器=sand}的精通属性，例如{@item 巨斧|XPHB|巨斧}和{@item 手斧|XPHB|手斧}。当你完成一次{@variantrule 长休|XPHB}后，你可以重新演练武器技巧，来改变你所选择的其中一个武器类型。",
+                "当你获得特定的野蛮人等级时，你还可以使用更多种类武器的{@variantrule 武器精通词条|XPHB|精通词条}，具体数据见野蛮人特性表中\"武器精通\"一栏。"
+            ]
+        },
+        {
+            "ENG_name": "Danger Sense",
+            "name": "危机感应",
+            "source": "XPHB",
+            "page": 52,
+            "srd52": true,
+            "basicRules2024": true,
+            "className": "野蛮人",
+            "classSource": "XPHB",
+            "level": 2,
+            "entries": [
+                "当非常事态发生时，一种不可思议的感觉降临你的心头，指引你更好的躲避危机。只要你未陷入{@condition 失能|XPHB}状态，你的敏捷豁免检定就具有{@variantrule 优势|XPHB}。"
+            ]
+        },
+        {
+            "ENG_name": "Reckless Attack",
+            "name": "鲁莽攻击",
+            "source": "XPHB",
+            "page": 52,
+            "srd52": true,
+            "basicRules2024": true,
+            "className": "野蛮人",
+            "classSource": "XPHB",
+            "level": 2,
+            "entries": [
+                "你可以抛弃一切对防御的顾虑来发起更加狂乱的攻击。你在自己回合中进行第一次攻击检定时，可以不顾一切地发起攻击。若如此做，直到你的下个回合开始时，你使用力量进行的攻击检定具有{@variantrule 优势|XPHB}，但在此期间所有以你为目标的攻击检定也具有{@variantrule 优势|XPHB}。"
+            ]
+        },
+        {
+            "ENG_name": "Barbarian Subclass",
+            "name": "野蛮人子职",
+            "source": "XPHB",
+            "page": 52,
+            "srd52": true,
+            "basicRules2024": true,
+            "className": "野蛮人",
+            "classSource": "XPHB",
+            "level": 3,
+            "entries": [
+                "你获得了一个野蛮人子职。子职是在这一职业上有着特定追求的特化，它会为你带来特定等级的特性，具体等级见野蛮人特性表。一个子职的描述中会详细说明你在每个特定的等级获得何项特性。"
+            ]
+        },
+        {
+            "ENG_name": "Primal Knowledge",
+            "name": "原初学识",
+            "source": "XPHB",
+            "page": 53,
+            "srd52": true,
+            "basicRules2024": true,
+            "className": "野蛮人",
+            "classSource": "XPHB",
+            "level": 3,
+            "entries": [
+                "你对生存的专研为你带来跨领域的学识。你获得一个来自野蛮人 1 级选项中的技能熟练。此外，在你的狂暴激活期间，当你进行以下技能中一者的属性检定时，你可以用力量替代原本的属性进行检定：{@skill 体操}、{@skill 认知}、{@skill 洞察}、{@skill 隐匿}或{@skill 求生}。"
+            ]
+        },
+        {
+            "ENG_name": "Ability Score Improvement",
+            "name": "属性值提升",
+            "source": "XPHB",
+            "page": 53,
+            "srd52": true,
+            "basicRules2024": true,
+            "className": "野蛮人",
+            "classSource": "XPHB",
+            "level": 4,
+            "entries": [
+                "你获得一个符合条件的{@5etools 专长|feats.html}。推荐选择{@feat 属性值提升|XPHB}专长。"
+            ]
+        },
+        {
+            "ENG_name": "Extra Attack",
+            "name": "额外攻击",
+            "source": "XPHB",
+            "page": 53,
+            "srd52": true,
+            "basicRules2024": true,
+            "className": "野蛮人",
+            "classSource": "XPHB",
+            "level": 5,
+            "entries": [
+                "你可以在自己的回合内执行{@action 攻击}动作时进行两次攻击，而非一次。"
+            ]
+        },
+        {
+            "ENG_name": "Fast Movement",
+            "name": "快速移动",
+            "source": "XPHB",
+            "page": 53,
+            "srd52": true,
+            "basicRules2024": true,
+            "className": "野蛮人",
+            "classSource": "XPHB",
+            "level": 5,
+            "entries": [
+                "你未着装重甲时，你的{@variantrule 速度|XPHB}增加 10 尺。"
+            ]
+        },
+        {
+            "ENG_name": "Subclass Feature",
+            "name": "子职特性",
+            "source": "XPHB",
+            "page": 53,
+            "srd52": true,
+            "basicRules2024": true,
+            "className": "野蛮人",
+            "classSource": "XPHB",
+            "level": 6,
+            "entries": [
+                "你获得了子职特性，见你的子职描述。"
+            ]
+        },
+        {
+            "ENG_name": "Feral Instinct",
+            "name": "野性直觉",
+            "source": "XPHB",
+            "page": 53,
+            "srd52": true,
+            "basicRules2024": true,
+            "className": "野蛮人",
+            "classSource": "XPHB",
+            "level": 7,
+            "entries": [
+                "你的直觉变得异常敏锐，使你在{@variantrule 先攻检定|XPHB}中具有{@variantrule 优势|XPHB}。"
+            ]
+        },
+        {
+            "ENG_name": "Instinctive Pounce",
+            "name": "莽驰",
+            "source": "XPHB",
+            "page": 53,
+            "srd52": true,
+            "basicRules2024": true,
+            "className": "野蛮人",
+            "classSource": "XPHB",
+            "level": 7,
+            "entries": [
+                "作为你进入狂暴所宣告的附赠动作的一部分，你可以移动至多等于你速度一半的距离。"
+            ]
+        },
+        {
+            "ENG_name": "Ability Score Improvement",
+            "name": "属性值提升",
+            "source": "XPHB",
+            "page": 53,
+            "srd52": true,
+            "basicRules2024": true,
+            "className": "野蛮人",
+            "classSource": "XPHB",
+            "level": 8,
+            "entries": [
+                "你获得一个符合条件的{@5etools 专长|feats.html}。推荐选择{@feat 属性值提升|XPHB}专长。"
+            ]
+        },
+        {
+            "ENG_name": "Brutal Strike",
+            "name": "凶蛮打击",
+            "source": "XPHB",
+            "page": 53,
+            "srd52": true,
+            "basicRules2024": true,
+            "className": "野蛮人",
+            "classSource": "XPHB",
+            "level": 9,
+            "entries": [
+                "你不再只是简单的进行鲁莽攻击，甚至能够发动更加凶戾的重击。当你进行鲁莽攻击并以力量投掷的攻击检定具有优势时，你可以放弃该次优势。如果你如此做，在此次攻击命中时你将造成{@damage 1d10}额外的额外伤害，且你可以造成以下一项次要效应。",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "ENG_name": "Forceful Blow",
+                            "name": "重击击退",
+                            "type": "entries",
+                            "entries": [
+                                "目标被向远离你的方向推进 15 尺。在此次攻击之后，你可以移动至多该目标占据空间的一半距离而无需消耗移动力，且不会引发借机攻击。"
+                            ]
+                        },
+                        {
+                            "ENG_name": "Hamstring Blow",
+                            "name": "重击迟缓",
+                            "type": "entries",
+                            "entries": [
+                                "直到你的下个回合开始，目标的{@variantrule 速度|XPHB}降低 15 尺。"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ENG_name": "Subclass Feature",
+            "name": "子职特性",
+            "source": "XPHB",
+            "page": 53,
+            "srd52": true,
+            "basicRules2024": true,
+            "className": "野蛮人",
+            "classSource": "XPHB",
+            "level": 10,
+            "entries": [
+                "你获得了子职特性，见你的子职描述。"
+            ]
+        },
+        {
+            "ENG_name": "Relentless Rage",
+            "name": "坚韧狂暴",
+            "source": "XPHB",
+            "page": 53,
+            "srd52": true,
+            "basicRules2024": true,
+            "className": "野蛮人",
+            "classSource": "XPHB",
+            "level": 11,
+            "entries": [
+                "你的狂暴可以让你在遭受重创时继续战斗。当你在狂暴状态下生命值降至 0 但未直接死亡时，你能够以一个反应消耗一次狂暴使用次数。如果你如此做，则改为你的生命值变为 2 倍于你的野蛮人等级的值。"
+            ]
+        },
+        {
+            "ENG_name": "Ability Score Improvement",
+            "name": "属性值提升",
+            "source": "XPHB",
+            "page": 53,
+            "srd52": true,
+            "basicRules2024": true,
+            "className": "野蛮人",
+            "classSource": "XPHB",
+            "level": 12,
+            "entries": [
+                "你获得一个符合条件的{@5etools 专长|feats.html}。推荐选择{@feat 属性值提升|XPHB}专长。"
+            ]
+        },
+        {
+            "ENG_name": "Improved Brutal Strike",
+            "name": "强化凶蛮打击",
+            "source": "XPHB",
+            "page": 53,
+            "srd52": true,
+            "basicRules2024": true,
+            "className": "野蛮人",
+            "classSource": "XPHB",
+            "level": 13,
+            "entries": [
+                "你对凶蛮打击的精通更进一层。你可以在一次凶蛮打击中叠加使用两项次要效应。此外，你现在可以从下述这些新的选项中选择次要效应：",
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "ENG_name": "Staggering Blow",
+                            "name": "重击踉跄",
+                            "type": "entries",
+                            "entries": [
+                                "目标在其下个回合开始前进行的下一次攻击检定具有{@variantrule 劣势|XPHB}。"
+                            ]
+                        },
+                        {
+                            "ENG_name": "Sundering Blow",
+                            "name": "重击破甲",
+                            "type": "entries",
+                            "entries": [
+                                "直到你的下个回合开始，对该目标进行的下一次攻击检定具有 +5 的加值。"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ENG_name": "Subclass Feature",
+            "name": "子职特性",
+            "source": "XPHB",
+            "page": 53,
+            "srd52": true,
+            "basicRules2024": true,
+            "className": "野蛮人",
+            "classSource": "XPHB",
+            "level": 14,
+            "entries": [
+                "你获得了子职特性，见你的子职描述。"
+            ]
+        },
+        {
+            "ENG_name": "Persistent Rage",
+            "name": "持久狂暴",
+            "source": "XPHB",
+            "page": 53,
+            "srd52": true,
+            "basicRules2024": true,
+            "className": "野蛮人",
+            "classSource": "XPHB",
+            "level": 15,
+            "entries": [
+                "你的狂暴即使从未主动延长也能够持续直至 10 分钟。此外，只要你还处于狂暴之中且未陷入{@condition 失能|XPHB}状态，你就具有{@variantrule 亢奋|XPHB}状态。"
+            ]
+        },
+        {
+            "ENG_name": "Ability Score Improvement",
+            "name": "属性值提升",
+            "source": "XPHB",
+            "page": 53,
+            "srd52": true,
+            "basicRules2024": true,
+            "className": "野蛮人",
+            "classSource": "XPHB",
+            "level": 16,
+            "entries": [
+                "你获得一个符合条件的{@5etools 专长|feats.html}。推荐选择{@feat 属性值提升|XPHB}专长。"
+            ]
+        },
+        {
+            "ENG_name": "Improved Brutal Strike",
+            "name": "强化凶蛮打击",
+            "source": "XPHB",
+            "page": 53,
+            "srd52": true,
+            "basicRules2024": true,
+            "className": "野蛮人",
+            "classSource": "XPHB",
+            "level": 17,
+            "entries": [
+                "在发动凶蛮打击时，你的额外伤害增加至 {@damage 2d10}。"
+            ]
+        },
+        {
+            "ENG_name": "Indomitable Might",
+            "name": "不屈勇武",
+            "source": "XPHB",
+            "page": 53,
+            "srd52": true,
+            "basicRules2024": true,
+            "className": "野蛮人",
+            "classSource": "XPHB",
+            "level": 18,
+            "entries": [
+                "如果你进行的力量检定或力量豁免检定的总值低于你的力量属性值，你可以使用你的力量属性值替代检定总值。"
+            ]
+        },
+        {
+            "ENG_name": "Epic Boon",
+            "name": "传奇恩惠",
+            "source": "XPHB",
+            "page": 53,
+            "srd52": true,
+            "basicRules2024": true,
+            "className": "野蛮人",
+            "classSource": "XPHB",
+            "level": 19,
+            "entries": [
+                "你获得了一个{@filter 传奇恩惠专长|feats|category=EB}，或者你选择另一个符合条件的{@5etools 专长|feats.html}。推荐选择{@feat 无敌攻势之恩惠|XPHB}。"
+            ]
+        },
+        {
+            "ENG_name": "Primal Champion",
+            "name": "原初斗士",
+            "source": "XPHB",
+            "page": 53,
+            "srd52": true,
+            "basicRules2024": true,
+            "className": "野蛮人",
+            "classSource": "XPHB",
+            "level": 20,
+            "entries": [
+                "你本身便是原初之力的象征。你的力量和体质各提升 4，你这两项属性的上限变为 25。"
+            ]
+        }
+    ]
+}

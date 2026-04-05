@@ -1,0 +1,37 @@
+[
+  {
+    "ENG_name": "Rapier",
+    "name": "致命刺剑",
+    "source": "EGW",
+    "page": 270,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "HotB"
+    ],
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "rare",
+    "weight": 2,
+    "value": 2500,
+    "weaponCategory": "martial",
+    "property": [
+      "F|XPHB"
+    ],
+    "mastery": [
+      "侵扰|XPHB"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "rapier": true,
+    "sword": true,
+    "weapon": true,
+    "hasFluffImages": true,
+    "namePrefix": "致命",
+    "entries": [
+      "当你使用这把魔法武器攻击并对生物造成伤害时，目标在你的下个回合开始前无法恢复生命值。"
+    ],
+    "_isVariant": true,
+    "valueReference": 4000
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Speaking Stones",
+    "name": "通讯石",
+    "source": "WttHC",
+    "rarity": "rare",
+    "wondrous": true,
+    "entries": [
+      "传音石总是成对出现，每块石头都被雕刻得与另一块相匹配。",
+      "当你接触一块岩石时，你可以花费一个{@action 魔法|XPHB}动作向另一块岩石的持有者发送一条25字或更短的传讯术。该生物会在其脑海中听到这条消息，如果它认识你则会认出你是发送者，并能立即以同样的方式答复。这些岩石使生物能够理解你传讯术的含义。",
+      "你可以跨越任何距离发送传讯。如果没有生物持有另一块岩石，你会在使用岩石时立即知晓这一事实，并且你不会发送传讯。",
+      "一旦其中一块岩石以这种方式用于发送传讯术，这对岩石在下一个拂晓前都无法再次使用。如果一对岩石中的一块被摧毁，另一块将变为非魔法的。"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/WttHC/Speaking Stones.webp"
+          },
+          "width": 1000,
+          "height": 940
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

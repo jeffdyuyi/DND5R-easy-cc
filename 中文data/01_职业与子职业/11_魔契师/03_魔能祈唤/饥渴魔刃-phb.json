@@ -1,0 +1,29 @@
+{
+  "ENG_name": "Thirsting Blade",
+  "name": "饥渴魔刃",
+  "source": "PHB",
+  "page": 111,
+  "srd": true,
+  "reprintedAs": [
+    "饥渴魔刃|XPHB"
+  ],
+  "featureType": [
+    "EI"
+  ],
+  "prerequisite": [
+    {
+      "pact": "刃之魔契",
+      "level": {
+        "level": 5,
+        "class": {
+          "ENG_name": "Warlock",
+          "name": "魔契师"
+        }
+      }
+    }
+  ],
+  "entries": [
+    "当你自身回合内使用契约武器执行{@action 攻击}动作时，你可以发动两次攻击而非一次。"
+  ],
+  "translator": "不全书"
+}

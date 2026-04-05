@@ -1,0 +1,104 @@
+[
+  {
+    "ENG_name": "Blackrazor",
+    "name": "黑刃",
+    "source": "DMG",
+    "page": 216,
+    "referenceSources": [
+      "TftYP-WPM"
+    ],
+    "reprintedAs": [
+      "黑刃|XDMG"
+    ],
+    "baseItem": "巨剑|PHB",
+    "type": "M",
+    "rarity": "legendary",
+    "reqAttune": "被非守序阵营的生物",
+    "reqAttuneTags": [
+      {
+        "alignment": [
+          "NX",
+          "C",
+          "G",
+          "NY",
+          "E"
+        ]
+      }
+    ],
+    "sentient": true,
+    "weight": 6,
+    "weaponCategory": "martial",
+    "property": [
+      "H",
+      "2H"
+    ],
+    "dmg1": "2d6",
+    "dmgType": "S",
+    "bonusWeapon": "+3",
+    "entries": [
+      "黑刃 藏在白羽山White Plume Mountain的地下城中，它像闪烁着繁星的夜空一样耀眼，黑色的剑鞘上镶满了切割好的黑曜石。",
+      "使用此魔法武器发动的攻击检定和伤害掷骰获得+3加值。它还具有以下额外属性。",
+      {
+        "ENG_name": "Devour Soul",
+        "name": "吞噬灵魂",
+        "type": "entries",
+        "entries": [
+          "每当你使用它使一个生物的生命值降至0时，该剑将杀死该生物并吞噬其灵魂，除非它是一个构装体或亡灵。被黑刃吞噬灵魂的生物只能通过{@spell 祈愿术}法术复活。",
+          "当它吞噬一个灵魂时，黑刃授予你等于被杀死生物生命值上限的临时生命值。这些生命值在24小时后消失。只要这些临时生命值持续存在且你手持黑刃，你在攻击检定、豁免和属性检定上具有优势。",
+          "如果你用此武器命中一个亡灵，你受到{@damage 1d10}点暗蚀伤害且目标恢复{@dice 1d10}点生命值。如果此暗蚀伤害将你生命值降至0，黑刃将吞噬你的灵魂。"
+        ]
+      },
+      {
+        "ENG_name": "Soul Hunter",
+        "name": "灵魂猎手",
+        "type": "entries",
+        "entries": [
+          "当你持握该武器时，你能感知到60尺内非构装体或亡灵的微型或更大体型生物的存在。你同时不会陷入{@condition 魅惑}或{@condition 恐慌}状态。",
+          "黑刃可以每天一次对你施放{@spell 加速术}法术。它决定何时施放该法术并维持{@status 专注}以便你无需专注。"
+        ]
+      },
+      {
+        "ENG_name": "Sentience",
+        "name": "智能",
+        "type": "entries",
+        "entries": [
+          "黑刃是一把具有智能的混乱中立武器，智力为17，感知为10，魅力为19。它拥有听觉和{@sense 黑暗视觉}，范围为120尺。",
+          "该武器能够说、读和理解通用语，并能与其持有者通过心灵感应进行交流。它的声音深沉而回荡。当你与其同调时，黑刃还能理解你所知的每一种语言。"
+        ]
+      },
+      {
+        "ENG_name": "Personality",
+        "name": "个性",
+        "type": "entries",
+        "entries": [
+          "黑刃以专横的口吻说话，仿佛习惯于被服从。",
+          "这把剑的目的是吞噬灵魂。它不在乎吞噬谁的灵魂，包括持用者的灵魂。这把剑相信所有物质和能量都源于负能量的虚空，并终有一天会回归其中。黑刃就是要加速这一过程。",
+          "尽管持有虚无主义，黑刃却对{@item 波涛}和{@item 征服}这两件同样被封锁在白浪山下的武器感到一种奇特的亲近。它希望这三件武器能再次联合并在战斗中共同挥舞，尽管它强烈反对{@item 征服}并觉得{@item 波涛}很乏味。",
+          "黑刃对灵魂的饥渴必须定期得到满足。如果这把剑三天或更长时间没有吞噬灵魂，它与其持有者之间将在下一次日落时发生冲突。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1": [
+          "加速术"
+        ]
+      }
+    },
+    "hasFluffImages": true,
+    "valueReference": 200000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Blackrazor.webp"
+          },
+          "width": 794,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

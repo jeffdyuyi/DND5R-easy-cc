@@ -1,0 +1,47 @@
+{
+  "ENG_name": "Sanctuary",
+  "name": "圣坛",
+  "source": "XDMG",
+  "page": 345,
+  "facilityType": "special",
+  "level": 5,
+  "prerequisite": [
+    {
+      "spellcastingFocus": [
+        "神圣",
+        "德鲁伊"
+      ]
+    }
+  ],
+  "space": [
+    "roomy"
+  ],
+  "hirelings": [
+    {
+      "exact": 1
+    }
+  ],
+  "orders": [
+    "制造"
+  ],
+  "entries": [
+    "圣坛提供了一个安静的敬拜场所，你宗教的标志挂在圣坛的墙壁上。",
+    {
+      "ENG_name": "Sanctuary Charm",
+      "name": "圣坛护咒",
+      "type": "entries",
+      "entries": [
+        "当你在据点内完成一次{@variantrule 长休|XPHB}后，你获得一个{@reward 圣坛护咒|XDMG|魅惑}（见{@book 第三章|XDMG|2}中\"{@book 超自然赠礼|XDMG|2|超自然赠礼}\"一节），该护咒持续7天或持续至你将其使用为止。该护咒允许你施展一次{@spell 治愈真言|XPHB} ，无需消耗法术位。你无法在已拥有该护咒时再次获得它。"
+      ]
+    },
+    {
+      "ENG_name": "Craft: Sacred Focus",
+      "name": "制造：神圣法器",
+      "type": "entries",
+      "entries": [
+        "当你对此设施下达{@book 制造|XDMG|7|制造}指令时，你委托该设施的雇员制造一个{@item 德鲁伊法器|XPHB}（{@item 木质法杖|XPHB}）或者一个{@item 圣徽|XPHB}，这项工作需要7天且无需花费金钱。在你领取它之前，造好的法器会留在你的据点内。"
+      ]
+    }
+  ],
+  "translator": "不全书"
+}

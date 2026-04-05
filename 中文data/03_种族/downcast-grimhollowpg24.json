@@ -1,0 +1,124 @@
+{
+  "race": [
+    {
+      "ENG_name": "Downcast",
+      "name": "沮丧",
+      "source": "GrimHollowPG24",
+      "page": 27,
+      "edition": "one",
+      "creatureTypes": [
+        "类人生物"
+      ],
+      "size": [
+        "M"
+      ],
+      "speed": 30,
+      "sizeEntry": {
+        "ENG_name": "Size:",
+        "name": "体型：",
+        "type": "item",
+        "entries": [
+          "中等（沮丧通常身高在5到6英尺之间，体型各异。）"
+        ]
+      },
+      "entries": [
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "ENG_name": "Age:",
+              "name": "年龄：",
+              "type": "item",
+              "entries": [
+                "被剥夺了不朽之身后，沮丧者仍然拥有可与精灵相媲美的漫长寿命。他们在十几岁后期成熟，可以活到800岁。"
+              ]
+            }
+          ]
+        },
+        {
+          "ENG_name": "Traditional Downcast Traits",
+          "name": "传统沮丧特质",
+          "type": "inset",
+          "entries": [
+            "许多沮丧者传递由仍流经它们的天界生物法力契灵驱动的魔法。",
+            {
+              "ENG_name": "Combat Traits:",
+              "name": "战斗特质：",
+              "type": "entries",
+              "entries": [
+                {
+                  "type": "list",
+                  "items": [
+                    "{@optfeature 神圣血魔法|GrimHollowPG24}",
+                    "{@optfeature 生命接触|GrimHollowPG24}"
+                  ]
+                }
+              ]
+            },
+            {
+              "ENG_name": "Exploration Traits:",
+              "name": "探索特质：",
+              "type": "entries",
+              "entries": [
+                {
+                  "type": "list",
+                  "items": [
+                    "{@optfeature 免疫元素|GrimHollowPG24}",
+                    "{@optfeature 冥想休息|GrimHollowPG24}",
+                    "{@optfeature 不知疲倦|GrimHollowPG24}"
+                  ]
+                }
+              ]
+            },
+            {
+              "ENG_name": "Roleplaying Traits:",
+              "name": "扮演特质：",
+              "type": "entries",
+              "entries": [
+                {
+                  "type": "list",
+                  "items": [
+                    "{@optfeature 魔法精通|GrimHollowPG24|魔法大师} ({@filter 牧师法术|spells|class=牧师})",
+                    "{@optfeature 魔法精通|GrimHollowPG24} ({@spell 奇术|XPHB})",
+                    "{@optfeature 信仰移动|GrimHollowPG24}"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "entries": [
+            {
+              "ENG_name": "Trait Selection",
+              "name": "特质选择",
+              "type": "entries",
+              "entries": [
+                "选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|特性 类型=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
+              ]
+            }
+          ]
+        }
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "subraces": [],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Race/Downcast.webp"
+            },
+            "credit": "Suzanne Helmigh",
+            "width": 850,
+            "height": 2284
+          }
+        ]
+      }
+    }
+  ]
+}

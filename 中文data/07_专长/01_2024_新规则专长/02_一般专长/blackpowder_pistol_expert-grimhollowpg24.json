@@ -1,0 +1,52 @@
+[
+    {
+        "ENG_name": "Blackpowder Pistol Expert",
+        "name": "黑火药手枪专家",
+        "source": "GrimHollowPG24",
+        "page": 116,
+        "category": "G",
+        "prerequisite": [
+            {
+                "level": 4
+            }
+        ],
+        "ability": [
+            {
+                "choose": {
+                    "from": [
+                        "dex",
+                        "con",
+                        "int"
+                    ]
+                }
+            }
+        ],
+        "entries": [
+            "你已熟练使用黑火药手枪。你获得以下增益。",
+            {
+                "ENG_name": "Deadeye",
+                "name": "死瞳客",
+                "type": "entries",
+                "entries": [
+                    "使用黑火药手枪进行远程攻击时，不会在攻击检定上施加{@variantrule 劣势|XPHB}。"
+                ]
+            },
+            {
+                "ENG_name": "Quick Load",
+                "name": "快速装填",
+                "type": "entries",
+                "entries": [
+                    "你忽略黑火药手枪的{@itemProperty LD|XPHB|装填}属性。"
+                ]
+            },
+            {
+                "ENG_name": "Trick Shot",
+                "name": "花式射击",
+                "type": "entries",
+                "entries": [
+                    "当一个生物在你5尺范围内移动后，你可以消耗一个{@variantrule 反应|XPHB}来用黑火药手枪对该生物进行一次远程攻击。"
+                ]
+            }
+        ]
+    }
+]

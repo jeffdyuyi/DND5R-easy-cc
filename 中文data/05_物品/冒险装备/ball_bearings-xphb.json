@@ -1,0 +1,21 @@
+[
+  {
+    "name": "滚珠",
+    "ENG_name": "Ball Bearings",
+    "source": "XPHB",
+    "page": 224,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 100,
+    "entries": [
+      "以一个{@action 操作|XPHB}动作，你能把一小包滚珠撒至地面，并覆盖你周围 10 尺内的一处 10 尺方形区域。任何生物每回合首次进入这片区域时都必须通过一次{@dc 10}的敏捷豁免，否则陷入{@condition 倒地|XPHB}状态。重新收集这些滚珠需要花费 10 分钟时间。"
+    ],
+    "basicRules2024": true,
+    "referenceSources": [
+      "HotB"
+    ],
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

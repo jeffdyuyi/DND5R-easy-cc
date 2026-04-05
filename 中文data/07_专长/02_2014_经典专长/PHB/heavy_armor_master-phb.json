@@ -1,0 +1,35 @@
+[
+  {
+    "ENG_name": "Heavy Armor Master",
+    "name": "重甲大师",
+    "source": "PHB",
+    "page": 167,
+    "reprintedAs": [
+      "重甲大师|XPHB"
+    ],
+    "prerequisite": [
+      {
+        "proficiency": [
+          {
+            "armor": "heavy"
+          }
+        ]
+      }
+    ],
+    "ability": [
+      {
+        "str": 1
+      }
+    ],
+    "entries": [
+      "你可以用护甲偏斜大多数致命的攻击。你获得下列增益：",
+      {
+        "type": "list",
+        "items": [
+          "你着装重甲时，非魔法攻击对你造成的钝击、穿刺、挥砍伤害减少３点。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

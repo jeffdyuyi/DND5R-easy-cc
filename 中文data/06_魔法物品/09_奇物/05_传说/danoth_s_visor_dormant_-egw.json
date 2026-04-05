@@ -1,0 +1,29 @@
+[
+  {
+    "ENG_name": "Danoth's Visor (Dormant)",
+    "name": "达诺斯护目镜（休眠）",
+    "source": "EGW",
+    "page": 270,
+    "rarity": "legendary",
+    "reqAttune": true,
+    "wondrous": true,
+    "property": [
+      "Vst|EGW"
+    ],
+    "entries": [
+      "这副秘银镜框，透明钻石镜片的护目镜被塑能法师达诺斯·奥罗用来侦查远处或寻找{@condition 隐形}的敌人。",
+      {
+        "ENG_name": "Dormant",
+        "name": "休眠",
+        "type": "entries",
+        "entries": [
+          "当着装处于休眠状态的护目镜时，你可以在60尺距离内正常视物于黑暗之中，无论其属于魔法黑暗还是非魔法黑暗。此外，你在依赖视觉的智力({@skill 调查})和感知({@skill 察觉})检定上具有优势。"
+        ]
+      }
+    ],
+    "hasFluffImages": true,
+    "valueReference": 200000,
+    "fluff": {},
+    "type": "W"
+  }
+]

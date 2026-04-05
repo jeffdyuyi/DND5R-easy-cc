@@ -1,0 +1,33 @@
+[
+  {
+    "ENG_name": "Fabulist Gem",
+    "name": "骗术宝石",
+    "source": "BMT",
+    "page": 36,
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这颗闪闪发光的红色宝石通常镶嵌在戒指或胸针中。",
+      "着装宝石期间，你可以获得以下好处。",
+      {
+        "ENG_name": "Counterfeit Coins",
+        "name": "假币",
+        "type": "entries",
+        "entries": [
+          "作为动作，你可以魔法性的在距离你10尺以内未被占据的空间中创造一堆总价值不超过100gp的钱币。这堆钱币必须生成在表面上的一个可以支撑它的地方。1小时后，无论位于何处，用此法创造出来的钱币都会消失。此项属性一经使用，直到下次黎明前不能再次使用。"
+        ]
+      },
+      {
+        "ENG_name": "Illusory Fashion",
+        "name": "时尚幻象",
+        "type": "entries",
+        "entries": [
+          "作为附赠动作，你可以魔法性地改变你的衣服和盔甲的外观。你可以更改所穿服装的风格、颜色和外观质量，也可以使其看起来就像完全不同的衣服。无论哪种情况，此魔法造成的变化都无法应对物理检查。"
+        ]
+      }
+    ],
+    "valueReference": 400,
+    "type": "W"
+  }
+]

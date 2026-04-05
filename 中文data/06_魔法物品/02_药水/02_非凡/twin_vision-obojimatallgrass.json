@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Twin Vision",
+    "name": "双重视觉",
+    "source": "ObojimaTallGrass",
+    "page": 234,
+    "type": "P",
+    "rarity": "uncommon",
+    "property": [
+      "Util"
+    ],
+    "entries": [
+      "这瓶药水必须与另一个生物共享，每个生物各服用一半的药水。当药水的后半部分被消耗时，第一个生物将获得透过第二个生物的双眼视物的能力，并获得该生物拥有的任何特殊感官的增益。以此方式视物时，第一个生物自身的感官将处于目盲状态。任一生物都可以使用其动作来停止或重新激活共享视界。此能力持续8小时，且当生物相距超过1英里时无法使用。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 31|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Utility/twin-vision.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1982,
+          "height": 1982
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

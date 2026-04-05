@@ -1,0 +1,185 @@
+{
+  "name": "月亮结社",
+  "shortName": "月亮",
+  "ENG_name": "Circle of the Moon",
+  "source": "XPHB",
+  "className": "德鲁伊",
+  "classSource": "XPHB",
+  "page": 86,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "3": [
+          "疗伤术|XPHB",
+          "月华之光|XPHB",
+          "点点星芒|XPHB"
+        ],
+        "5": [
+          "咒唤兽群|XPHB"
+        ],
+        "7": [
+          "月光涌泉|XPHB"
+        ],
+        "9": [
+          "群体疗伤术|XPHB"
+        ]
+      }
+    }
+  ],
+  "subclassFeatures": [
+    "月亮结社|德鲁伊|XPHB|月亮|XPHB|3",
+    "进阶结社形态|德鲁伊|XPHB|月亮|XPHB|6",
+    "月光飞步|德鲁伊|XPHB|月亮|XPHB|10",
+    "月辉形态|德鲁伊|XPHB|月亮|XPHB|14"
+  ],
+  "features": [
+    {
+      "name": "月亮结社",
+      "ENG_name": "Circle of the Moon",
+      "source": "PHB",
+      "className": "德鲁伊",
+      "classSource": "XPHB",
+      "subclassShortName": "月亮",
+      "subclassSource": "PHB",
+      "level": 3,
+      "entries": [
+        "月亮结社的德鲁伊是自然界中凶残而多变的守望者。这一结社的德鲁伊会举行秘密的聚会，并时常以各种动物形态相见，交流各自获知的威胁或是讨论应当保护的某处圣所。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "结社形态|德鲁伊|XPHB|月亮|XPHB|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "月亮结社法术|德鲁伊|XPHB|月亮|XPHB|3"
+        }
+      ]
+    },
+    {
+      "name": "结社形态",
+      "ENG_name": "Circle Forms",
+      "source": "XPHB",
+      "page": 86,
+      "className": "德鲁伊",
+      "classSource": "XPHB",
+      "subclassShortName": "月亮",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "entries": [
+        "你学会了如何在使用荒野变形的同时引导月之魔力，增益自身的力量，你获得以下增益：",
+        {
+          "type": "list",
+          "items": [
+            "**挑战等级**：你的荒野变形形态的最大{@variantrule 挑战等级|XPHB}现在等于你德鲁伊等级的三分之一（向下取整）。",
+            "**护甲等级**：只要你仍处于荒野变形形态，如果 13 + 你的感知调整值加起来高于野兽的护甲等级，你的护甲等级等于你 13 + 你的感知调整值。",
+            "**临时生命值**：当你化为荒野变形形态时，你获得等于德鲁伊等级的三倍数量的{@variantrule 临时生命值|XPHB}。"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "月亮结社法术",
+      "ENG_name": "Circle of the Moon Spells",
+      "source": "XPHB",
+      "page": 86,
+      "className": "德鲁伊",
+      "classSource": "XPHB",
+      "subclassShortName": "月亮",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "entries": [
+        "当你达到月亮结社表格中特定的德鲁伊等级时，你自动将表中对应的法术加入准备。此外，你可以在荒野形态下施展这些法术。",
+        {
+          "type": "table",
+          "caption": "月亮结社法术",
+          "colLabels": [
+            "德鲁伊等级",
+            "准备法术"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-11"
+          ],
+          "rows": [
+            [
+              "3",
+              "{@spell 疗伤术|XPHB}，{@spell 月华之光|XPHB}，{@spell 点点星芒|XPHB}"
+            ],
+            [
+              "5",
+              "{@spell 咒唤兽群|XPHB}"
+            ],
+            [
+              "7",
+              "{@spell 月光涌泉|XPHB}"
+            ],
+            [
+              "9",
+              "{@spell 群体疗伤术|XPHB}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "进阶结社形态",
+      "ENG_name": "Improved Circle Forms",
+      "source": "XPHB",
+      "page": 87,
+      "className": "德鲁伊",
+      "classSource": "XPHB",
+      "subclassShortName": "月亮",
+      "subclassSource": "XPHB",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "处于荒野形态时，你获得以下增益：",
+        {
+          "type": "list",
+          "items": [
+            "**月耀辉光**：你在荒野变形形态下的每次攻击可以造成普通的伤害或光耀伤害。由你在每次攻击命中时选择。",
+            "**强化韧性**：你将你的感知调整值加到你的体质豁免结果当中。"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "月光飞步",
+      "ENG_name": "Moonlight Step",
+      "source": "XPHB",
+      "page": 87,
+      "className": "德鲁伊",
+      "classSource": "XPHB",
+      "subclassShortName": "月亮",
+      "subclassSource": "XPHB",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "能以魔法转移自身，在一道月光中重新出现。以一个{@variantrule 附赠动作|XPHB}，你传送最多 30 尺到一处你能看见的未被占据的空间，并且你在这个回合结束前进行的下一次攻击具有{@variantrule 优势|XPHB}。",
+        "你可以使用该特性的次数等于你的感知调整值（最少 1 次），并且你在结束一次{@variantrule 长休|XPHB}后重获全部已消耗的使用次数。你也能消耗一个二环或更高的法术位来恢复一次使用次数（无需任何动作）。"
+      ]
+    },
+    {
+      "name": "月辉形态",
+      "ENG_name": "Lunar Form",
+      "source": "XPHB",
+      "page": 87,
+      "className": "德鲁伊",
+      "classSource": "XPHB",
+      "subclassShortName": "月亮",
+      "subclassSource": "XPHB",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "月之力量充盈着你的身体，让你获得以下增益：",
+        {
+          "type": "list",
+          "items": [
+            "**月耀炽光**：一回合一次，你可以对一次荒野形态下的攻击命中的目标额外造成{@damage 2d10}光耀伤害。",
+            "**月辉同行**：当你使用月光飞步时，你还能传送另一个自愿的生物。该生物必须在你的 10 尺内，并且你将它传送到你出现点的 10 尺内的一个你能看见的未被占据空间中。"
+          ]
+        }
+      ]
+    }
+  ]
+}

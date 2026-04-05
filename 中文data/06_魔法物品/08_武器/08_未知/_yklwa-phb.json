@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Yklwa",
+    "name": "镀银伊库瓦短矛",
+    "source": "PHB",
+    "page": 148,
+    "type": "M",
+    "rarity": "unknown",
+    "weight": 3,
+    "value": 100,
+    "weaponCategory": "simple",
+    "property": [
+      "T"
+    ],
+    "range": "10/30",
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "weapon": true,
+    "entries": [
+      "伊克瓦（发音为YICK-ul-wah）是一种简单的近战武器，是楚尔坦战士的传统武器。伊克瓦由一根3尺长的木柄和一把长达18英寸的钢制或石制刀片组成。尽管它具有投掷武器的特性，但伊克瓦并不适合投掷。"
+    ],
+    "namePrefix": "镀银",
+    "basicRules": true,
+    "reprintedAs": [
+      "镀银武器|XDMG"
+    ],
+    "tier": "主要",
+    "valueExpression": "[[baseItem.value]] + 10000",
+    "_isVariant": true
+  }
+]

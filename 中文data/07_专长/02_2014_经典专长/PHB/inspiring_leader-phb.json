@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "Inspiring Leader",
+    "name": "领袖之证",
+    "source": "PHB",
+    "page": 167,
+    "reprintedAs": [
+      "领袖之证|XPHB"
+    ],
+    "prerequisite": [
+      {
+        "ability": [
+          {
+            "cha": 13
+          }
+        ]
+      }
+    ],
+    "entries": [
+      "你可以花费10分钟来激励同伴，鼓舞他们战斗的信心。此时，你可以指定30尺内至多6名友方生物（可以包括你自己）作为目标。目标生物必须能够看见你或者能够听到你的声音的，且必须能够理解你。被指定的生物将因你获得临时生命值，其数值等于你的等级加上你的魅力调整值。此后直至其完成一次短休或长休前，目标生物都无法再从该专长获益。"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "feats/PHB/Inspiring Leader.webp"
+          },
+          "width": 1000,
+          "height": 750
+        }
+      ]
+    }
+  }
+]

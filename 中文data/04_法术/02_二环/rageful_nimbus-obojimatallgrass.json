@@ -1,0 +1,84 @@
+[
+  {
+    "ENG_name": "Rageful Nimbus",
+    "name": "怒雷云冕",
+    "source": "ObojimaTallGrass",
+    "page": 188,
+    "level": 2,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一滴水"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "选择一个范围内的生物，可以是自己。一朵纯净蓬松的白云出现在目标上方并跟随它们持续一段时间。如果目标受到你能看见的敌对生物造成的伤害，你可以使用你的反应从云中发动一次远程法术攻击，前提是该生物在目标60尺范围内。命中时，该生物受到{@damage 2d8}闪电伤害。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用3环或更高法术位施放该法术时，伤害每比2环高两个等级就增加{@dice 1d8}。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "闪电"
+    ],
+    "spellAttack": [
+      "R"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Custom/Spells/Rageful%20Nimbus.webp"
+  }
+]

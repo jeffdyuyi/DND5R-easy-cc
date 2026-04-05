@@ -1,0 +1,37 @@
+[
+  {
+    "ENG_name": "Scimitar",
+    "name": "致命弯刀",
+    "source": "EGW",
+    "page": 270,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-DaS"
+    ],
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "rare",
+    "weight": 3,
+    "value": 2500,
+    "weaponCategory": "martial",
+    "property": [
+      "F|XPHB",
+      "L|XPHB"
+    ],
+    "mastery": [
+      "迅击|XPHB"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "S",
+    "sword": true,
+    "weapon": true,
+    "hasFluffImages": true,
+    "namePrefix": "致命",
+    "entries": [
+      "当你使用这把魔法武器攻击并对生物造成伤害时，目标在你的下个回合开始前无法恢复生命值。"
+    ],
+    "_isVariant": true,
+    "valueReference": 4000
+  }
+]

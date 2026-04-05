@@ -1,0 +1,14 @@
+[
+  {
+    "ENG_name": "Medicine",
+    "name": "医药",
+    "source": "XPHB",
+    "page": 14,
+    "srd52": true,
+    "ability": "wis",
+    "entries": [
+      "诊断某种疾病或是确定近期死亡的死者的死因。"
+    ],
+    "translator": "不全书"
+  }
+]

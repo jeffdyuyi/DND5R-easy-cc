@@ -1,0 +1,13 @@
+[
+  {
+    "name": "失明症",
+    "ENG_name": "Blinding Sickness",
+    "source": "PHB",
+    "page": 227,
+    "entries": [
+      "痛苦缠绕着患病者的意志，并使其眼睛变成奶白色。患病生物进行感知检定和感知豁免时具有劣势，并且承受{@condition 目盲}状态。",
+      "{@note 这种疾病可以通过{@spell 疫病术|PHB}法术施加。}"
+    ],
+    "translator": "不全书"
+  }
+]

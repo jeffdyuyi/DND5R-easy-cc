@@ -1,0 +1,276 @@
+{
+  "ENG_name": "Philosophy",
+  "name": "哲学",
+  "shortName": "哲学",
+  "source": "CrookedMoon14",
+  "className": "法师",
+  "classSource": "PHB",
+  "page": 96,
+  "reprintedAs": [
+    "贤者|法师|XPHB|crookedmoon24"
+  ],
+  "edition": "classic",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "3": [
+          "瓦解术|CrookedMoon14"
+        ],
+        "10": [
+          "造物术|PHB",
+          "鬼斧神工|PHB"
+        ]
+      }
+    }
+  ],
+  "subclassSpells": [
+    "瓦解术|CrookedMoon14",
+    "造物术|PHB",
+    "鬼斧神工|PHB"
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "Philosophy",
+      "name": "哲学",
+      "source": "CrookedMoon14",
+      "page": 96,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "哲学",
+      "subclassSource": "CrookedMoon14",
+      "level": 2,
+      "entries": [
+        "{@i 提炼造物术精华}",
+        "贤者们将他们的奥术研究重心放在存在与现实的根本性质上。他们追寻万物最本源的真理，并通过炼金术实践来操控这些力量和物质。通过理解、解构与重建，他们掌控周遭世界的自然能量，并依其意愿加以改变。",
+        "所有踏上哲学之路的法师都是为解决特定问题，哪怕只有最初是这样。这张贤者探求表列举了可能促使你投身炼金魔法研究的挑战或目标。",
+        {
+          "type": "table",
+          "caption": "贤者探求",
+          "colLabels": [
+            "1d12",
+            "指引目标"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-11"
+          ],
+          "rows": [
+            [
+              "1",
+              "你的至亲或亲近之人迷失于时间、诸位面，或是某种深奥的存在状态。揭示现实的本质是你寻回它们的方法。"
+            ],
+            [
+              "2",
+              "你曾遭受使人衰弱的疾病或伤口，于是转向魔法研究，以解构该损害的自然并将其转化。"
+            ],
+            [
+              "3",
+              "你的教师死于一个敌对哲学之手，且你必须学习该纪律的所有知识以保护自己并将它们绳之以法。"
+            ],
+            [
+              "4",
+              "一位失踪魔法师的研究笔记被重新发现，解开了你理解魔法的第一扇门——而其中尚有大量谜题待你解读。"
+            ],
+            [
+              "5",
+              "法师学提供了一条通向强大法力的路途，但你确信自身仍有更高的存在形态等待扬升。"
+            ],
+            [
+              "6",
+              "你偶然接触到一种具有奇迹之力的物质，在揭开其成因谜团之前，你寝食难安。"
+            ],
+            [
+              "7",
+              "你兄弟姐妹的灵魂在一次失败的法术中与它们的身体分离，且在你使它们恢复完整之前，你无法原谅自己。"
+            ],
+            [
+              "8",
+              "你曾是一名舞台表演者，以魔术般的技艺令观众惊叹不已，你追求极致的魔法伎俩，以期成为传奇。"
+            ],
+            [
+              "9",
+              "你出身贫寒之地，希望利用金属转化术为你的家乡带来繁荣。"
+            ],
+            [
+              "10",
+              "在让自己更加接近神明的过程中，你一直在寻找以自己的形象创造新的生命形式的秘密。"
+            ],
+            [
+              "11",
+              "你自幼被教导敬奉四象，并推测唯有掌握万物本源，方可令它们和谐共生。"
+            ],
+            [
+              "12",
+              "你原本志在军旅，欲在军中步步晋升，并深信现实之魔法能成为最锋利的战争利器。"
+            ]
+          ]
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "炼金学识|法师|PHB|哲学|CrookedMoon14|2"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "精粹结晶|法师|PHB|哲学|CrookedMoon14|2"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Alchemical Knowledge",
+      "name": "炼金学识",
+      "source": "CrookedMoon14",
+      "page": 96,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "哲学",
+      "subclassSource": "CrookedMoon14",
+      "level": 2,
+      "toolProficiencies": [
+        {
+          "alchemist's supplies": true
+        }
+      ],
+      "header": 1,
+      "entries": [
+        "你获得一套{@item 炼金工具|PHB}。你拥有该工具的熟练项并能将其作为奥术法器使用。此外，你可以使用{@item 炼金工具|PHB}来替代制造魔法物品所需的另一种工具。"
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Wizard/Alchemical%20Knowledge.webp"
+    },
+    {
+      "ENG_name": "Quintessence",
+      "name": "精粹结晶",
+      "source": "CrookedMoon14",
+      "page": 96,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "哲学",
+      "subclassSource": "CrookedMoon14",
+      "level": 2,
+      "header": 1,
+      "entries": [
+        "你已学会溶解的基本过程。你知晓{@spell 瓦解术|crookedmoon24}戏法。你用该戏法将生命值降至0的生物或物件会被破坏。如果目标是小型或更大体型，它会溶解成一份（约一盎司）称为第五元素的水晶粉末。你一次最多可拥有等于你智力调整值两倍（最少2份）的第五元素。如果你创造了更多，最旧的一份会消失。你可以用以下方式使用你接触到的第五元素。",
+        {
+          "ENG_name": "Material Component",
+          "name": "材料成分",
+          "type": "entries",
+          "entries": [
+            "当你施法时，你可以消耗精粹结晶来作为该法术的材料成分，每份精粹结晶可代替价值100GP的材料。"
+          ]
+        },
+        {
+          "ENG_name": "Reagent",
+          "name": "化学试剂",
+          "type": "entries",
+          "entries": [
+            "当你将一个法术抄录进你的法术书，或当你使用{@item 炼金工具|PHB}制造一个魔法物品时，你可以消耗第五元素，每消耗一个第五元素可充当该任务价值50金币的材质。"
+          ]
+        },
+        {
+          "ENG_name": "Vitriolic Enhancement",
+          "name": "烈性强化",
+          "type": "entries",
+          "entries": [
+            "当你施法一道造成伤害的法术时，你可以消耗1份精粹结晶作为额外的材料成分，将该法术所造成的一种伤害类型变为力场伤害。"
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Wizard/Quintessence.webp"
+    },
+    {
+      "ENG_name": "Albedo",
+      "name": "白化之炼",
+      "source": "CrookedMoon14",
+      "page": 97,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "哲学",
+      "subclassSource": "CrookedMoon14",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "你可以纯化你的{@subclassFeature 精粹结晶|法师|PHB|哲学|CrookedMoon14|2|CrookedMoon14}来增强你的法术。当你使用法术位施法时，你可以消耗1点{@subclassFeature 精粹结晶|法师|PHB|哲学|CrookedMoon14|2|CrookedMoon14}作为材料成分，使法术位等级提高1级，最高至9环。你在单个法术上以此方式可消耗的最大{@subclassFeature 精粹结晶|法师|PHB|哲学|CrookedMoon14|2|CrookedMoon14}数量为你熟练加值的一半（向上取整）。"
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Wizard/Albedo.webp"
+    },
+    {
+      "ENG_name": "Citrinitas",
+      "name": "黄化之境",
+      "source": "CrookedMoon14",
+      "page": 97,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "哲学",
+      "subclassSource": "CrookedMoon14",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "你现在可以操纵{@subclassFeature 精粹结晶|法师|PHB|哲学|CrookedMoon14|2|CrookedMoon14}来创造，而不仅仅是纯化。如果{@spell 造物术}和{@spell 鬼斧神工}法术不在你的法术书中，你可以将它们添加到你的法术书中，并且你可以不消耗法术位施放每个法术一次，当你完成一次长休后重获此能力。当你使用此特性施法时，施法时间变为1个动作。你也可以正常使用相应等级的法术位来施放这些法术。",
+        "此外，当你施放{@spell 造物术}时，你可以消耗最多等同于你智力调整值（至少为1）的{@subclassFeature 精粹结晶|法师|PHB|哲学|CrookedMoon14|2|CrookedMoon14}数量，将法术的持续时间乘以1加上所消耗的数量。"
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Wizard/Citrinitas.webp"
+    },
+    {
+      "ENG_name": "Rubedo",
+      "name": "红化之极",
+      "source": "CrookedMoon14",
+      "page": 97,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "哲学",
+      "subclassSource": "CrookedMoon14",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "你伟大工作的顶点，你现在可以将你对存在的完美知识提炼成物理形态。当你完成一次短休或长休时，你可以消耗10{@subclassFeature 精粹结晶|法师|PHB|哲学|CrookedMoon14|2|CrookedMoon14}来创造一块哲人之石——一块半透明的红色水晶。该石头是一个微型魔法物件，AC为18，20点生命值，且免疫除力场外的所有伤害。如果你创造了第二块哲人之石，第一块就会消失。当你携带该石头时，它会为你提供以下增益。",
+        {
+          "ENG_name": "Amplification",
+          "name": "魔法增幅",
+          "type": "entries",
+          "entries": [
+            "当你施法时，你可以消耗最多2点{@subclassFeature 精粹结晶|法师|PHB|哲学|CrookedMoon14|2|CrookedMoon14}作为额外的材料成分，使该法术的法术豁免DC提高相同数量。"
+          ]
+        },
+        {
+          "ENG_name": "Equivalent Exchange",
+          "name": "等价交换",
+          "type": "entries",
+          "entries": [
+            "当你豁免检定失败时，你可以使用你的反应消耗5{@subclassFeature 精粹结晶|法师|PHB|哲学|CrookedMoon14|2|CrookedMoon14}来改为成功通过豁免。"
+          ]
+        },
+        {
+          "ENG_name": "Longevity",
+          "name": "青春永驻",
+          "type": "entries",
+          "entries": [
+            "你停止衰老，并且不受衰老带来的任何影响，包括因衰老而死亡。"
+          ]
+        },
+        {
+          "ENG_name": "Sympathy",
+          "name": "关怀",
+          "type": "entries",
+          "entries": [
+            "该岩石在{@spell 探知}法术以及在你死亡时将你恢复生命的法术中视为你身体的一部分。该岩石本身作为该法术的材料成分（如果有）并在法术施放时被破坏。"
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Wizard/Rubedo.webp"
+    }
+  ],
+  "fluff": {
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Subclasses/Wizard_Philosopher.webp"
+        },
+        "credit": "Jo Cordisco",
+        "width": 858,
+        "height": 1200
+      }
+    ]
+  },
+  "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclasses/Philosopher.webp"
+}

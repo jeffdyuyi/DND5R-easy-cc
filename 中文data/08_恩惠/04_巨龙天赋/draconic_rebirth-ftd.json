@@ -1,0 +1,13 @@
+[
+  {
+    "ENG_name": "Draconic Rebirth",
+    "name": "龙类重生",
+    "source": "FTD",
+    "page": 28,
+    "type": "Draconic Gift",
+    "rarity": "uncommon",
+    "entries": [
+      "你变成了一个龙裔。你用色彩、宝石或金属龙裔（详见这本{@book 书籍|FTD|1|龙裔种族}）的种族特质替换原有的种族特质。你的龙裔类型与这份赠礼来源的龙相同。你可以保留你从之前的种族中获得的任何技能熟练，或自选两个技能熟练。"
+    ]
+  }
+]

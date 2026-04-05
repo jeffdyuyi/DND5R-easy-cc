@@ -1,0 +1,19 @@
+[
+  {
+    "name": "驮用马",
+    "ENG_name": "Draft Horse",
+    "source": "PHB",
+    "page": 157,
+    "type": "MNT",
+    "rarity": "none",
+    "value": 5000,
+    "basicRules": true,
+    "carryingCapacity": 540,
+    "reprintedAs": [
+      "驮用马|XPHB"
+    ],
+    "speed": 40,
+    "srd": true,
+    "translator": "不全书"
+  }
+]

@@ -1,0 +1,14 @@
+{
+    "ENG_name": "Defense",
+    "name": "防御",
+    "source": "XPHB",
+    "page": 196,
+    "featureType": [
+        "FS:F",
+        "FS:P",
+        "FS:R"
+    ],
+    "entries": [
+        "当你着装任何种类的{@variantrule 护甲|XPHB}时，你的 AC 获得 +1 加值。"
+    ]
+}

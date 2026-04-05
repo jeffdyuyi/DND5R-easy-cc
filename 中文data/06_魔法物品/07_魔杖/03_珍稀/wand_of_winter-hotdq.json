@@ -1,0 +1,57 @@
+[
+  {
+    "ENG_name": "Wand of Winter",
+    "name": "凛冬魔杖",
+    "source": "HotDQ",
+    "page": 94,
+    "otherSources": [
+      {
+        "source": "ToD",
+        "page": 178
+      }
+    ],
+    "referenceSources": [
+      "RoT"
+    ],
+    "type": "WD|DMG",
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 1,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6 + 1}",
+    "charges": 7,
+    "entries": [
+      "这根魔杖看起来和摸起来都像是一根冰柱。你必须与之同调才能使用它。",
+      "魔杖有 7 发充能，用来作为施展其内法术的能量。你在持握该魔杖时，可以用你的动作从魔杖施展下列法术之一： {@spell 冷冻射线} ray of frost（无充能，或 1 充能以5级角色的身份来施展它：远程法术攻击命中+5）、 {@spell 雪雨暴} sleet storm（3 充能：法术豁免 {@dc 15}）或是 {@spell 冰风暴} ice storm（4 充能：法术豁免 {@dc 15}）。所有这些法术都无需任何法术成分。每日黎明时分魔杖将回复 {@dice 1d6 + 1} 的充能，若你耗尽魔杖的最后一发充能，骰一次 {@dice d20}。骰值为 20 时，魔杖融化并永久损坏。"
+    ],
+    "attachedSpells": {
+      "will": [
+        "冷冻射线"
+      ],
+      "charges": {
+        "3": [
+          "雪雨暴"
+        ],
+        "4": [
+          "冰风暴"
+        ]
+      }
+    },
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/HotDQ/Wand of Winter.webp"
+          },
+          "width": 1975,
+          "height": 834
+        }
+      ]
+    }
+  }
+]

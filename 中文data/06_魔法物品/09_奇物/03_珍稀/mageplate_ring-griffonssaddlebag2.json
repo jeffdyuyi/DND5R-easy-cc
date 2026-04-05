@@ -1,0 +1,35 @@
+[
+  {
+    "ENG_name": "Mageplate Ring",
+    "name": "法师板甲戒指",
+    "source": "GriffonsSaddlebag2",
+    "page": 118,
+    "type": "RG|DMG",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "ac": 16,
+    "recharge": "拂晓",
+    "rechargeAmount": 3,
+    "charges": 3,
+    "entries": [
+      "这枚细窄的铁戒指的顶部有一个类似面盔的观察窗。此戒指具有3充能，并在每日黎明时重获所有已消耗的充能。在你戴着这枚戒指期间，你可以用一个附赠动作消耗戒指的1或更多充能，来让一套虚幻的灵体护甲魔法性地保护你。消耗1充能时，你的基础AC变为16（你的敏捷调整值不影响此数值）。你可以通过每额外消耗1充能使此基础AC增加1。虚幻护甲将持续存在1分钟，且它在此期间散发出半径20尺范围的明亮光照以及额外20尺范围的微光光照。"
+    ],
+    "lootTables": [
+      "魔法物品表 G2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Mageplate-Ring.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

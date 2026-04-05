@@ -1,0 +1,39 @@
+[
+  {
+    "name": "矛",
+    "ENG_name": "Spear",
+    "source": "PHB",
+    "page": 149,
+    "edition": "classic",
+    "type": "M",
+    "rarity": "none",
+    "weight": 3,
+    "value": 100,
+    "weaponCategory": "simple",
+    "property": [
+      "T",
+      "V"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "dmg2": "1d8",
+    "range": "20/60",
+    "basicRules": true,
+    "referenceSources": [
+      "TftYP-TSC",
+      "TftYP-AtG",
+      "GoS",
+      "SCC-ARiR",
+      "DSotDQ",
+      "PaBTSO",
+      "LK",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "矛|XPHB"
+    ],
+    "spear": true,
+    "srd": true,
+    "weapon": true
+  }
+]

@@ -1,0 +1,130 @@
+[
+  {
+    "ENG_name": "Candle of Invocation",
+    "name": "祈神蜡烛",
+    "source": "XDMG",
+    "page": 241,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "你可以用一个{@action 魔法|XPHB}动作点燃蜡烛，此时它的魔力便会被激活。蜡烛共可以燃烧4小时，你也可以提前吹灭蜡烛以备将来之用。以分钟为单位计算蜡烛已燃烧时间，并从总时间内扣除。",
+      "蜡烛燃烧期间，它会散发出半径30尺范围的{@variantrule 微光光照|XPHB}光照。位于此光照范围内期间，你所进行的{@variantrule D20 检定|XPHB|D20 检定}具有{@variantrule 优势|XPHB}。此外，此光照范围内的牧师和德鲁伊在施展它们准备了的1环法术时无需消耗法术位。",
+      "另外，当你首次点亮祈神蜡烛时，你可以用它施展一次法术{@spell 异界之门|XPHB}。这样做会立刻摧毁这根蜡烛，而此法术所创造的传送门会连接至某一特定的外层位面，由DM选择或掷以下表格决定：",
+      {
+        "type": "table",
+        "colStyles": [
+          "col-2 text-center",
+          "col-10"
+        ],
+        "colLabels": [
+          "1d100",
+          "外层位面"
+        ],
+        "rows": [
+          [
+            "01-05",
+            "{@book 无底深渊|XDMG|5|无底深渊}"
+          ],
+          [
+            "06-10",
+            "{@book 修罗场|XDMG|5|修罗场}"
+          ],
+          [
+            "11-17",
+            "{@book 奔放之野|XDMG|5|奔放之野}"
+          ],
+          [
+            "18-25",
+            "{@book 世外桃源|XDMG|5|世外桃源}"
+          ],
+          [
+            "26-33",
+            "{@book 万兽乡|XDMG|5|万兽乡}"
+          ],
+          [
+            "34-41",
+            "{@book 双生天堂|XDMG|5|双生天堂}"
+          ],
+          [
+            "42-46",
+            "{@book 卡瑟利|XDMG|5|卡瑟利}"
+          ],
+          [
+            "47-54",
+            "{@book 极乐境|XDMG|5|极乐境}"
+          ],
+          [
+            "55-59",
+            "{@book 焦炎火狱|XDMG|5|焦炎火狱}"
+          ],
+          [
+            "60-64",
+            "{@book 哈迪斯|XDMG|5|哈迪斯}"
+          ],
+          [
+            "65-69",
+            "{@book 混沌海|XDMG|5|混沌海}"
+          ],
+          [
+            "70-77",
+            "{@book 机械境|XDMG|5|机械境}"
+          ],
+          [
+            "78-85",
+            "{@book 天界山|XDMG|5|天界山}"
+          ],
+          [
+            "86-90",
+            "{@book 九层地狱|XDMG|5|九层地狱}"
+          ],
+          [
+            "91-95",
+            "{@book 喧癫空隧|XDMG|5|喧癫空隧}"
+          ],
+          [
+            "96-00",
+            "{@book 伊斯加德|XDMG|5|伊斯加德}"
+          ]
+        ]
+      }
+    ],
+    "light": [
+      {
+        "dim": 30
+      }
+    ],
+    "attachedSpells": {
+      "limited": {
+        "1": [
+          "异界之门|xphb"
+        ]
+      }
+    },
+    "lootTables": [
+      "圣物 - 极珍稀|XDMG"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 20000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Candle of Invocation.webp"
+          },
+          "width": 299,
+          "height": 850
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

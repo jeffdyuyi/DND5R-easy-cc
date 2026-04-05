@@ -1,0 +1,35 @@
+[
+  {
+    "ENG_name": "Ring of Jumping",
+    "name": "跳跃戒指",
+    "source": "XDMG",
+    "page": 293,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-FWtVC"
+    ],
+    "type": "RG|XDMG",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "entries": [
+      "着装此戒指期间，你可以从中施展{@spell 跳跃术|XPHB}，但只能以自身为目标。"
+    ],
+    "classFeatures": [
+      "仿制魔法物品|奇械师|efa|2|efa"
+    ],
+    "optionalfeatures": [
+      "仿制魔法物品|TCE"
+    ],
+    "attachedSpells": {
+      "will": [
+        "跳跃术|xphb"
+      ]
+    },
+    "lootTables": [
+      "器具 - 非普通|XDMG"
+    ],
+    "translator": "不全书",
+    "valueReference": 400
+  }
+]

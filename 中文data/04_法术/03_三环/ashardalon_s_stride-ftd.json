@@ -1,0 +1,83 @@
+[
+  {
+    "ENG_name": "Ashardalon's Stride",
+    "name": "阿莎德隆奔行",
+    "source": "FTD",
+    "page": 19,
+    "level": 3,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "龙类翻滚咆哮的火焰环绕你的足部，使你获得爆发性的速度。法术持续时间内，你的速度提升20尺，并且移动不会触发借机攻击。",
+      "当你移动至一个生物或未被着装或携带的物件5尺内时，其被你的灼热尾迹灼烧，受到{@damage 1d6}火焰伤害。一个生物或物件每回合只会承受一次此伤害。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你用4环或更高的法术位施展此法术时，你使用的法术位每比3环高一环，你的移动速度额外增加5尺，法术造成的伤害增加{@scaledamage 1d6|3-9|1d6}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "fire"
+    ],
+    "miscTags": [
+      "OBJ"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/FTD/Ashardalon's Stride.webp"
+          },
+          "credit": "Rudy Siswanto",
+          "title": "火焰追随着一只施放了阿莎德隆奔行的红龙的脚步。",
+          "width": 850,
+          "height": 954
+        }
+      ]
+    },
+    "classes": [
+      "奇械师",
+      "游侠",
+      "术士",
+      "法师"
+    ],
+    "display_school": "变化系",
+    "display_damageInflict": [
+      "火焰"
+    ]
+  }
+]

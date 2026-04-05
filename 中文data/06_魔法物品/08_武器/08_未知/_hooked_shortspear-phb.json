@@ -1,0 +1,29 @@
+[
+  {
+    "ENG_name": "Hooked Shortspear",
+    "name": "镀银钩矛",
+    "source": "PHB",
+    "page": 148,
+    "type": "M",
+    "rarity": "unknown",
+    "weight": 2,
+    "weaponCategory": "martial",
+    "property": [
+      "L"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "P",
+    "weapon": true,
+    "entries": [
+      "使用这种武器命中时，使用者可以作为造成伤害的代替，选择令目标应击倒地。此时目标必须进行一次力量豁免，如果失败则进入{@condition 倒地}状态。难度等级是 8 + 力量调整值 + 熟练加值。"
+    ],
+    "namePrefix": "镀银",
+    "basicRules": true,
+    "reprintedAs": [
+      "镀银武器|XDMG"
+    ],
+    "tier": "主要",
+    "valueExpression": "[[baseItem.value]] + 10000",
+    "_isVariant": true
+  }
+]

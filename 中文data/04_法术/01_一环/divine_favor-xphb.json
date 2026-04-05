@@ -1,0 +1,54 @@
+[
+  {
+    "ENG_name": "Divine Favor",
+    "name": "神恩",
+    "source": "XPHB",
+    "page": 265,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 1,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "直到法术结束之前，你使用武器的攻击在命中时造成额外{@damage 1d4}点光耀伤害。"
+    ],
+    "damageInflict": [
+      "radiant"
+    ],
+    "miscTags": [
+      "AAD"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "圣武士"
+    ],
+    "display_school": "变化系",
+    "display_damageInflict": [
+      "光辉"
+    ]
+  }
+]

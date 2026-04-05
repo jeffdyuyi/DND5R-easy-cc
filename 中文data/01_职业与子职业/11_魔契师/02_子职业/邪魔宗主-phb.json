@@ -1,0 +1,21 @@
+{
+  "ENG_name": "The Fiend",
+  "name": "邪魔宗主",
+  "shortName": "邪魔",
+  "source": "PHB",
+  "className": "魔契师",
+  "classSource": "PHB",
+  "page": 109,
+  "srd": true,
+  "basicRules": true,
+  "reprintedAs": [
+    "邪魔宗主|XPHB"
+  ],
+  "subclassFeatures": [
+    "异界灵性|魔契师|PHB|邪魔|PHB|1",
+    "黑暗赐福|魔契师|PHB|邪魔|PHB|1",
+    "黑暗强运|魔契师|PHB|邪魔|PHB|6",
+    "魔鬼韧性|魔契师|PHB|邪魔|PHB|10",
+    "穿行地狱|魔契师|PHB|邪魔|PHB|14"
+  ]
+}

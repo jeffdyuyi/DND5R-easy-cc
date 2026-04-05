@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Peeping Willow",
+    "name": "窥视柳树",
+    "source": "ObojimaTallGrass",
+    "page": 206,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 0|large}|SneakerProMedium}",
+            "{@font {@style 0|large}|SneakerProMedium}",
+            "{@font {@style 1|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "窥视柳树以其独特的窥视花朵而闻名，这些花朵与眼球有着令人不安的相似之处。除非晒干，否则这些花朵食用是有毒的。'眼睑'花瓣被裁缝们视为深红色染料的来源而备受珍视。"
+    ],
+    "lootTables": [
+      "阿伯拉山普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/peeping-willow.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 5356,
+          "height": 5356
+        }
+      ]
+    }
+  }
+]

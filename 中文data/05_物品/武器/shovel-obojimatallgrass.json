@@ -1,0 +1,20 @@
+[
+  {
+    "ENG_name": "Shovel",
+    "name": "铲子",
+    "source": "ObojimaTallGrass",
+    "page": 158,
+    "type": "M",
+    "rarity": "none",
+    "weight": 4,
+    "value": 30,
+    "weaponCategory": "简易",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "weapon": true
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Scarf of Muffling",
+    "name": "消音围巾",
+    "source": "ObojimaTallGrass",
+    "page": 175,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这条柔软且备受喜爱的消音围巾会紧紧包裹在佩戴者的颈部，让任何佩戴它的人都感到格外舒适。以一个动作，你可以将围巾投掷至60尺内的一个生物。目标必须成功通过DC 14的敏捷豁免检定，否则围巾会魔法般地缠绕住它的嘴部，阻止其说话。一个生物可以用它的动作进行一次DC 14的力量检定，成功时可以将围巾从自己或触及范围内的另一个生物身上拉取下来。围巾可以以这种方式投掷3次，并在每日拂晓时恢复所有已消耗的使用次数。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/scarf-of-muffling.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 2598,
+          "height": 2598
+        }
+      ]
+    }
+  }
+]

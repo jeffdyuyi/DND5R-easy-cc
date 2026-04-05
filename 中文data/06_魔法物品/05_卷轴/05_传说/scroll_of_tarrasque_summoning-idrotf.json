@@ -1,0 +1,21 @@
+[
+  {
+    "ENG_name": "Scroll of Tarrasque Summoning",
+    "name": "召唤泰拉斯奎卷轴",
+    "source": "IDRotF",
+    "page": 315,
+    "reprintedAs": [
+      "泰坦召唤卷轴（泰拉斯奎）|XDMG"
+    ],
+    "type": "SC|DMG",
+    "rarity": "legendary",
+    "entries": [
+      "以一个动作阅读这张卷轴将会令{@creature 泰拉斯奎}（见怪物图鉴中的相应生物条目）显现在你1里范围内可见的一处未被占据的空间。它对除它自身以外的所有生物都抱有敌意，且在生命值降至0时消失。"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "translator": "不全书",
+    "valueReference": 200000
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "ENG_name": "Giant Elk",
+  "name": "巨赤鹿语",
+  "source": "MM",
+  "page": 325,
+  "typicalSpeakers": [
+    "{@creature 巨赤鹿||巨赤鹿}"
+  ]
+}

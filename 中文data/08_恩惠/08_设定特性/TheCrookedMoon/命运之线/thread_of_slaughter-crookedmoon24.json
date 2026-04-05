@@ -1,0 +1,55 @@
+[
+  {
+    "ENG_name": "Thread of Slaughter",
+    "name": "屠宰之线",
+    "source": "CrookedMoon24",
+    "page": 167,
+    "type": "Thread of Fate",
+    "entries": [
+      "一个被屠宰之线连接的角色是一位完美的猎人，并对杀戮的艺术怀有敬畏。被一只伟大灵兽的外貌召唤，他们离开凡人领域的猎场去寻找最致命的猎物，寻求成为终极掠食者。",
+      {
+        "ENG_name": "Goal",
+        "name": "目标",
+        "type": "entries",
+        "entries": [
+          "角色必须搜寻并杀死永恒黑夜中最邪恶的生物，发现成为顶级掠食者的意义，并经历变形成为在黑暗森林中潜行的最令人恐惧的野兽。"
+        ]
+      },
+      {
+        "ENG_name": "Personalization",
+        "name": "个性化",
+        "type": "entries",
+        "entries": [
+          "确定角色体现并追随哪种伟大野兽。他们是陆地、天空还是水域的掠食者，其精神形态在角色看来如何？角色与这种野兽的哪一点产生共鸣，他们又追求它的哪些特质？是什么让角色踏上了他们的血腥路途？"
+        ]
+      },
+      {
+        "ENG_name": "Call to Adventure",
+        "name": "冒险召唤",
+        "type": "entries",
+        "entries": [
+          "在角色经历过的最伟大的搜寻成功后，他们仍然对这次猎杀感到不满足。在那一刻，与他们有共鸣的灵兽的幽灵形态出现在他们面前，通过一个眼神，角色明白他们必须寻找更致命的猎场。角色本能地知道冒险开始的时间和地点。"
+        ]
+      },
+      {
+        "ENG_name": "Associated Background",
+        "name": "关联背景",
+        "type": "entries",
+        "entries": [
+          "{@background 暗夜猎手|crookedmoon24}"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/CrookedMoon24/Adventure/061-02-043.thread-of-slaughter.webp"
+        },
+        "width": 604,
+        "height": 593
+      }
+    ]
+  }
+]

@@ -1,0 +1,483 @@
+[
+  {
+    "ENG_name": "Deck of Many Things",
+    "name": "万象无常牌",
+    "source": "DMG",
+    "page": 162,
+    "srd": true,
+    "referenceSources": [
+      "LLK"
+    ],
+    "reprintedAs": [
+      "万象无常牌|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "legendary",
+    "wondrous": true,
+    "ability": {
+      "from": [
+        "str",
+        "dex",
+        "con",
+        "int",
+        "wis",
+        "叉"
+      ],
+      "count": 1,
+      "amount": 2
+    },
+    "grantsProficiency": true,
+    "entries": [
+      "这种由象牙或羊皮纸制成的卡牌通常存放在盒子或袋子里。大多数（{@chance 75}）这种牌组只有十三张卡，但其余的会有二十二张。",
+      "抽卡之前，你必须先声明要抽多少张卡牌，然后随机抽取（你可以使用扑克牌模拟牌组）。继续抽取声明数量之外更多的卡牌将不会产生任何效应。按正常方法抽出的卡牌其魔法效应在抽出时立即生效。你抽取两张卡牌之间的间隔不能超过1小时。如果你未能抽够声明数量的卡牌，声明了但是未抽取的那部分卡牌将从牌组中自行飞出并同时生效。",
+      "被抽出的卡牌其本身的存在将随之消散。除非你抽到的是{@card 愚者|万象无常牌}或{@card 小丑|万象无常牌}，否则抽出的卡型将重新出现在牌组里，使得你可能再次抽到该卡。",
+      {
+        "ENG_name": "A Question of Enmity",
+        "name": "关于树敌",
+        "type": "entries",
+        "entries": [
+          "万象无常牌中有两张卡牌可能会使某个存在对抽卡的角色产生敌意。对于",
+          "在{@card 浪客|万象无常牌}卡牌的情况下，敌意是隐秘的，并且应该来自某个被认为是朋友或盟友的角色。作为地下城主，你应该等待一个戏剧性十足的时刻来揭示这种敌意，让冒险者不断猜测谁可能会成为背叛者。"
+        ]
+      },
+      {
+        "type": "table",
+        "colLabels": [
+          "{@dice 1d22|纸牌}",
+          "卡牌"
+        ],
+        "colStyles": [
+          "col-6 text-center",
+          "col-6 text-center"
+        ],
+        "rows": [
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "exact": 1
+              },
+              "entry": "方片A"
+            },
+            "大臣*"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "exact": 2
+              },
+              "entry": "方片K"
+            },
+            "太阳"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "exact": 3
+              },
+              "entry": "方片Q"
+            },
+            "月亮"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "exact": 4
+              },
+              "entry": "方片J"
+            },
+            "星辰"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "exact": 5
+              },
+              "entry": "方片2"
+            },
+            "彗星*"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "exact": 6
+              },
+              "entry": "红心A"
+            },
+            "命运*"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "exact": 7
+              },
+              "entry": "红心K"
+            },
+            "王座"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "exact": 8
+              },
+              "entry": "红心Q"
+            },
+            "钥匙"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "exact": 9
+              },
+              "entry": "红心J"
+            },
+            "骑士"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "exact": 10
+              },
+              "entry": "红心2"
+            },
+            "宝石*"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "exact": 11
+              },
+              "entry": "梅花A"
+            },
+            "禽爪*"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "exact": 12
+              },
+              "entry": "梅花K"
+            },
+            "虚空"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "exact": 13
+              },
+              "entry": "梅花Q"
+            },
+            "喷火"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "exact": 14
+              },
+              "entry": "梅花J"
+            },
+            "骷髅"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "exact": 15
+              },
+              "entry": "梅花2"
+            },
+            "白痴*"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "exact": 16
+              },
+              "entry": "黑桃A"
+            },
+            "城堡*"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "exact": 17
+              },
+              "entry": "黑桃K"
+            },
+            "废墟"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "exact": 18
+              },
+              "entry": "黑桃Q"
+            },
+            "尤瑞艾莉"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "exact": 19
+              },
+              "entry": "黑桃J"
+            },
+            "游荡者"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "exact": 20
+              },
+              "entry": "黑桃2"
+            },
+            "平衡*"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "exact": 21
+              },
+              "entry": "大小王（带TM）"
+            },
+            "愚者*"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "exact": 22
+              },
+              "entry": "大小王（无TM）"
+            },
+            "小丑"
+          ]
+        ],
+        "footnotes": [
+          "*：只存在于22张卡的牌组里"
+        ]
+      },
+      {
+        "ENG_name": "Vizier",
+        "name": "大臣",
+        "type": "entries",
+        "entries": [
+          "抽到此卡后一年内任何时候，你可以在冥想中提出一个问题并在精神上获得该问题的真实答案。除了信息之外，答案还会帮助你解决一个谜题或其他困境。换句话说，这些知识还附带了如何运用它的智慧。"
+        ]
+      },
+      {
+        "ENG_name": "Sun",
+        "type": "entries",
+        "name": "太阳",
+        "entries": [
+          "你获得50,000经验值，且一件奇物（由DM随机决定）出现在你手中。"
+        ]
+      },
+      {
+        "ENG_name": "Moon",
+        "type": "entries",
+        "name": "月亮",
+        "entries": [
+          "你获得施放{@spell 祈愿术}法术{@dice 1d3}次的能力。"
+        ]
+      },
+      {
+        "ENG_name": "Star",
+        "type": "entries",
+        "name": "星辰",
+        "entries": [
+          "你的一项属性提升2。由此被提升的属性可以超过20但不能超过24。"
+        ]
+      },
+      {
+        "ENG_name": "Comet",
+        "name": "彗星",
+        "type": "entries",
+        "entries": [
+          "如果你独自战胜接下来所遭遇的一只或一群敌对怪物，你将获得足够使你提升到下一级的经验值。否则，此卡对你没有影响。"
+        ]
+      },
+      {
+        "ENG_name": "The Fates",
+        "name": "命运",
+        "type": "entries",
+        "entries": [
+          "现实本身的存在被拆散而又重新编就，并以此让你得以避免或抹除某件已经发生的事件，如同它从未发生一般。你可以在抽到此卡时或直至自己死前的任何时间使用此牌的效果。"
+        ]
+      },
+      {
+        "ENG_name": "Throne",
+        "type": "entries",
+        "name": "王座",
+        "entries": [
+          "你获得{@skill 游说}技能的熟练项，并在进行该技能检定时加上双倍的熟练加值。此外，你获得世界上某个地方的一座小型城堡的所有权。然而这座城堡被怪物所占据，你必须清理其中的怪物以获得城堡的控制权。"
+        ]
+      },
+      {
+        "ENG_name": "Key",
+        "type": "entries",
+        "name": "钥匙",
+        "entries": [
+          "一把你拥有熟练项且稀有度为珍稀或更高的魔法武器出现在你手中。由DM选择该武器。"
+        ]
+      },
+      {
+        "ENG_name": "Knight",
+        "type": "entries",
+        "name": "骑士",
+        "entries": [
+          "一名4级战士出现在你身边30尺内由你指定的位置并为你服务。战士和你种族相同，并相信命运安排与他或她与你相遇且至死效忠于你。你控制这名角色。"
+        ]
+      },
+      {
+        "ENG_name": "Gem",
+        "name": "宝石",
+        "type": "entries",
+        "entries": [
+          "二十五枚各价值2,000gp的宝石或五十枚各价值1,000gp的宝石出现在你的脚边。"
+        ]
+      },
+      {
+        "ENG_name": "Talons",
+        "name": "禽爪",
+        "type": "entries",
+        "entries": [
+          "你着装或携带的魔法物品被解离。你附身的神器不会被摧毁但会消隐。"
+        ]
+      },
+      {
+        "ENG_name": "The Void",
+        "type": "entries",
+        "name": "虚空",
+        "entries": [
+          "这张黑色的卡片将带来灾难。你的灵魂从躯体抽离，并囚禁在某个DM指定地点的某个物件里。一名或多名强大的存在守护着这个地点。灵魂被囚禁期间，你的躯体处于{@condition 失能}状态。{@spell 祈愿术}无法唤回你的灵魂，但可以揭示囚禁它的物件所在的方位。抽到此卡后你不再抽取其他卡片。"
+        ]
+      },
+      {
+        "ENG_name": "Flames",
+        "type": "entries",
+        "name": "喷火",
+        "entries": [
+          "一名强大的魔鬼成为你的敌人。该魔鬼试图摧毁你的意志和你的生活，品尝你的痛苦并最终杀了你。这份敌意将持续到它和你中的一方死去为止。"
+        ]
+      },
+      {
+        "ENG_name": "Skull",
+        "type": "entries",
+        "name": "骷髅",
+        "entries": [
+          "你召唤一个{@creature 死亡化身|DMG}——一个身穿破烂黑袍，手持幽灵镰刀，幽魂般的类人生物骷髅。它将在你周围10尺内一处DM指定的位置出现并对你发动攻击，同时警告其他人你必须要独自面对这场战斗。化身在将你杀死或自身生命值降至0后消失。如果有人试图在这场战斗中帮你，则该人物将因此召唤出自己的{@creature 死亡化身|DMG}。被{@creature 死亡化身|DMG}杀死的生物无法被复活。"
+        ]
+      },
+      {
+        "ENG_name": "Idiot",
+        "name": "白痴",
+        "type": "entries",
+        "entries": [
+          "你的智力永久降低{@dice 1d4 + 1}点（最多降至1）。你在声明的抽卡数量外再抽取一张卡牌。"
+        ]
+      },
+      {
+        "ENG_name": "Donjon",
+        "name": "城堡",
+        "type": "entries",
+        "entries": [
+          "你凭空消失并以静滞状态被禁锢在某个球形异次元空间里。消失时，你着装和携带的所有物品都将落在你之前占据的空间里。你将一直被禁锢，直至被发现并从异次元空间中被解放出来。你无法被任何预言系魔法定位，但法术 {@spell 祈愿术}可获悉你的位置。抽到此卡后你不再抽取其他卡片。"
+        ]
+      },
+      {
+        "ENG_name": "Ruin",
+        "type": "entries",
+        "name": "废墟",
+        "entries": [
+          "你持有或拥有的所有财富形式，除魔法物品外，都将失去。可动产将直接消失；在最低限度修改现实的前提下，你拥有的所有生意、建筑物和土地也将失去。任何证明你应拥有因这张卡而失去的财产的文件也将消失。"
+        ]
+      },
+      {
+        "ENG_name": "Euryale",
+        "type": "entries",
+        "name": "尤瑞艾莉",
+        "entries": [
+          "这张卡片上与{@creature 美杜莎}相似的画像诅咒了你。受到此诅咒的影响，你的豁免承受-2减值。只有某个神灵或{@card 命运|万象无常牌}卡牌的魔法可以终止这种诅咒。"
+        ]
+      },
+      {
+        "ENG_name": "Rogue",
+        "type": "entries",
+        "name": "游荡者",
+        "entries": [
+          "由DM选择一名非玩家角色对你变得敌对。这名新敌人的身份不为人知，直到该NPC或其他人揭穿真相。只有{@spell 祈愿术}法术或神圣干预才能结束该NPC对你的敌意。"
+        ]
+      },
+      {
+        "ENG_name": "Balance",
+        "name": "平衡",
+        "type": "entries",
+        "entries": [
+          "你的心灵经历了剧烈的变化，甚至改变了你的阵营。守序将变为混乱，善良则变为邪恶，反之亦然。如果你的阵营为绝对中立或无阵营，则此卡对你没有影响。"
+        ]
+      },
+      {
+        "ENG_name": "Fool",
+        "name": "愚者",
+        "type": "entries",
+        "entries": [
+          "你失去10,000点经验值，弃掉这张牌并另抽一张牌，把这两次抽牌计为你声明的抽牌次数中的一次。如果失去这些经验值会使你的等级降低，则保留当前等级所需的最低经验值。"
+        ]
+      },
+      {
+        "ENG_name": "Jester",
+        "type": "entries",
+        "name": "小丑",
+        "entries": [
+          "你获得10,000经验值，或者你在声明的抽卡数量外再抽取两张卡牌。"
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "祈愿术"
+    ],
+    "lootTables": [
+      "魔法物品表I"
+    ],
+    "seeAlsoDeck": [
+      "万象无常牌",
+      "万象无常牌（13张牌）"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 100000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Deck of Many Things.webp"
+          },
+          "width": 229,
+          "height": 315
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

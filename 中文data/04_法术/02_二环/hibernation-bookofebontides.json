@@ -1,0 +1,76 @@
+[
+  {
+    "ENG_name": "Hibernation",
+    "name": "冬眠术",
+    "source": "BookOfEbonTides",
+    "page": 64,
+    "level": 2,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "m": "一簇熊毛"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        },
+        "condition": "见描述"
+      }
+    ],
+    "entries": [
+      "你哼唱一首抚慰旋律并丢弃一点熊毛，这将使你接触的下一个生物进入一种催眠的治疗状态。目标恢复{@dice 1d6}点生命值，并根据每点恢复的生命值沉睡10分钟。如果该生物不愿意，它必须成功通过一次体质豁免检定否则在法术持续时间内陷入沉睡。在它的每个回合结束时，目标可以进行另一次体质豁免检定。若成功，该法术对目标的效果结束。",
+      "每个受此法术影响的生物陷入{@condition 昏迷}状态，直到法术结束、冬眠的生物受到伤害，或者有人用一个动作摇晃或拍打冬眠的生物使其醒来。亡灵和免疫{@condition 魅惑}状态的生物不受此法术影响。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "如果使用3环或更高等级的法术位施放，你可以为每个法术等级接触一个愿意的生物来诱导冬眠。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    },
+    "conditionInflict": [
+      "魅惑",
+      "昏迷"
+    ],
+    "savingThrow": [
+      "体质"
+    ],
+    "miscTags": [
+      "HL"
+    ]
+  }
+]

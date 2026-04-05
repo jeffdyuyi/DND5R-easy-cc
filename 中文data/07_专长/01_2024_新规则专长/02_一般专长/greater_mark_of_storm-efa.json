@@ -1,0 +1,65 @@
+[
+  {
+    "ENG_name": "Greater Mark of Storm",
+    "name": "高等风暴之纹",
+    "source": "EFA",
+    "page": 45,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4,
+        "feat": [
+          "暴风龙纹|EFA"
+        ]
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Improved Intuition",
+        "name": "直觉锐化",
+        "type": "entries",
+        "entries": [
+          "当你使用你的{@feat 暴风龙纹|EFA}专长的驭风者直觉增益时，你可以掷{@dice 1d6}而非{@dice 1d4}。"
+        ]
+      },
+      {
+        "ENG_name": "Improved Storm",
+        "name": "长风化翼",
+        "type": "entries",
+        "entries": [
+          "当你使用你的{@feat 暴风龙纹|EFA}专长的风暴魔法增益来施放{@spell 造风术|XPHB}而无需法术位时，你在法术持续时间内还会获得{@variantrule 飞行速度|XPHB}为60尺。"
+        ]
+      }
+    ],
+    "hasFluffImages": true,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "feats/EFA/Greater Mark of Storm.webp"
+          },
+          "credit": "Lee Moyer",
+          "width": 484,
+          "height": 614
+        }
+      ]
+    }
+  }
+]

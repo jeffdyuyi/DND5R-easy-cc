@@ -1,0 +1,17 @@
+[
+  {
+    "ENG_name": "Blood of the Lycanthrope Antidote",
+    "name": "兽化之血抗毒剂",
+    "source": "IMR",
+    "page": 94,
+    "type": "P",
+    "rarity": "uncommon",
+    "entries": [
+      "这种清澈的药剂内部有深红色的斑点，看起来像凝固的血液。当你喝下这种药剂时，如果狼人病的诅咒是由狼人的咬伤或类似效果施加的，它将从你身上移除这种诅咒。"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "valueReference": 200
+  }
+]

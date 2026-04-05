@@ -1,0 +1,15 @@
+[
+  {
+    "ENG_name": "Ring of Truth Telling",
+    "name": "真言戒指",
+    "source": "WDH",
+    "page": 192,
+    "type": "RG|DMG",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "entries": [
+      "佩戴这枚戒指时，你在感知（{@skill 洞悉}）检定上具有优势，以判断某人是否在对你说谎。"
+    ],
+    "valueReference": 400
+  }
+]

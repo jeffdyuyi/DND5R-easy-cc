@@ -1,0 +1,23 @@
+[
+  {
+    "name": "吊桶",
+    "ENG_name": "Bucket",
+    "source": "PHB",
+    "page": 153,
+    "type": "G",
+    "rarity": "none",
+    "weight": 2,
+    "value": 5,
+    "entries": [
+      "一个吊桶可容纳3加仑液体或1/2立方尺固体。"
+    ],
+    "basicRules": true,
+    "referenceSources": [
+      "WDH"
+    ],
+    "reprintedAs": [
+      "吊桶|XPHB"
+    ],
+    "srd": true
+  }
+]

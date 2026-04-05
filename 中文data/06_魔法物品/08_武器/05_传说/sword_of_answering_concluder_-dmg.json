@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Sword of Answering (Concluder)",
+    "name": "应答之剑(定论者)",
+    "source": "DMG",
+    "page": 206,
+    "reprintedAs": [
+      "应答之剑|XDMG"
+    ],
+    "baseItem": "长剑|PHB",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "legendary",
+    "reqAttune": "由守序中立生物",
+    "reqAttuneTags": [
+      {
+        "alignment": [
+          "L",
+          "N"
+        ]
+      }
+    ],
+    "weight": 3,
+    "weaponCategory": "martial",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "S",
+    "dmg2": "1d10",
+    "bonusWeapon": "+3",
+    "entries": [
+      "在灰鹰世界中，已知存在的这种剑仅有九把。每把剑都是仿照传说中被称为\"最终遗言\"的宝剑弗拉格拉克而制。九把剑各有其名和阵营，且每把剑的柄端都镶有不同的宝石。",
+      "定论者，这把守序中立的剑，其柄端镶嵌着一颗紫水晶。",
+      "你在使用此剑发动的攻击检定和伤害掷骰获得+3加值。此外，持握该剑期间，你可以用你的反应对你触及范围内任何一个对你造成伤害的生物发动一次近战攻击。这次攻击的攻击检定具有优势，且这次特殊攻击造成的伤害忽略目标任何伤害免疫或抗性。"
+    ],
+    "valueReference": 200000
+  }
+]

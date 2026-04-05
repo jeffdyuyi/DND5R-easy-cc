@@ -1,0 +1,9 @@
+{
+  "ENG_name": "Winter Wolf",
+  "name": "冬狼语",
+  "source": "MM",
+  "page": 340,
+  "typicalSpeakers": [
+    "{@creature 冬狼||冬狼}"
+  ]
+}

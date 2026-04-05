@@ -1,0 +1,42 @@
+[
+  {
+    "name": "战斧",
+    "ENG_name": "Battleaxe",
+    "source": "XPHB",
+    "page": 215,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 4,
+    "value": 1000,
+    "weaponCategory": "martial",
+    "property": [
+      "V|XPHB"
+    ],
+    "mastery": [
+      "失衡|XPHB"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "S",
+    "dmg2": "1d10",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XPHB/Battleaxe.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 237,
+          "height": 437
+        }
+      ]
+    },
+    "axe": true,
+    "basicRules2024": true,
+    "hasFluffImages": true,
+    "srd52": true,
+    "weapon": true
+  }
+]

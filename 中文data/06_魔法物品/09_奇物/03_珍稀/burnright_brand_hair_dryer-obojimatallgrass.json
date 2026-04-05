@@ -1,0 +1,44 @@
+[
+  {
+    "ENG_name": "Burnright Brand Hair Dryer",
+    "name": "Burnright Brand 毛发吹风机",
+    "source": "ObojimaTallGrass",
+    "page": 167,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6 + 1}",
+    "charges": 7,
+    "entries": [
+      "这个毛发吹风机有7充能。它在拂晓时每天恢复{@dice 1d6 + 1}已消耗的充能。持握时，你可以用一个动作施放下列法术之一：{@spell 燃烧之手}（1充能）、{@spell 寒冰锥}（5充能）或{@spell 造风术}（2充能）。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "燃烧之手"
+        ],
+        "2": [
+          "造风术"
+        ],
+        "5": [
+          "寒冰锥"
+        ]
+      }
+    },
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/burnright-brand-hair-dryer.webp"
+          },
+          "credit": "Matt Owen",
+          "width": 2757,
+          "height": 2757
+        }
+      ]
+    }
+  }
+]

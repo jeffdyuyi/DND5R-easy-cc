@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Durable",
+    "name": "耐性",
+    "source": "XPHB",
+    "page": 203,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4
+      }
+    ],
+    "ability": [
+      {
+        "con": 1
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Defy Death",
+        "name": "悍不畏死",
+        "type": "entries",
+        "entries": [
+          "你进行的{@variantrule 死亡豁免检定|XPHB|死亡豁免检定}具有{@variantrule 优势|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Speedy Recovery",
+        "name": "高速恢复",
+        "type": "entries",
+        "entries": [
+          "以一个{@variantrule 附赠动作|XPHB}，你可以消耗并投掷一枚{@variantrule 生命值骰|XPHB}，来恢复与投掷结果相等的{@variantrule 生命值|XPHB}。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Dramus's Dancing Shoes",
+    "name": "德拉莫斯的舞鞋",
+    "source": "GriffonsSaddlebag2",
+    "page": 74,
+    "tier": "次要",
+    "rarity": "uncommon",
+    "reqAttune": "由吟游诗人",
+    "reqAttuneTags": [
+      {
+        "class": "吟游诗人"
+      }
+    ],
+    "wondrous": true,
+    "focus": [
+      "吟游诗人"
+    ],
+    "entries": [
+      "这双舒适的暗酒红色软底舞鞋能增强你对自己舞蹈能力的自信。在穿着这双鞋期间，无论你是否已与此鞋同调，你在跳舞时进行的相关属性检定具有优势。若你已与此鞋同调，你可以让此鞋如同乐器一般在你每踏一步时都播放一个音节，这使你能用双脚作为你施展吟游诗人法术的法器。以此法为舞蹈进行的属性检定与为演奏音乐进行的属性检定分开处理。"
+    ],
+    "lootTables": [
+      "魔法物品表 B1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Dramus-Dancing-Shoes.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

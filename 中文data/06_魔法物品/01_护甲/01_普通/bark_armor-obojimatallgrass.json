@@ -1,0 +1,16 @@
+[
+  {
+    "ENG_name": "Bark Armor",
+    "name": "树皮护甲",
+    "source": "ObojimaTallGrass",
+    "page": 157,
+    "type": "LA",
+    "rarity": "none",
+    "weight": 14,
+    "value": 800,
+    "ac": 11,
+    "entries": [
+      "当你穿着树皮护甲时，你在林地范围内进行的隐匿检定具有优势。"
+    ]
+  }
+]

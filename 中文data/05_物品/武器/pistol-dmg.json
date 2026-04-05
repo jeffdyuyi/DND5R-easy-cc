@@ -1,0 +1,28 @@
+[
+  {
+    "name": "手枪",
+    "ENG_name": "Pistol",
+    "source": "DMG",
+    "page": 268,
+    "edition": "classic",
+    "type": "R",
+    "rarity": "none",
+    "weight": 3,
+    "value": 25000,
+    "weaponCategory": "martial",
+    "property": [
+      "AF|DMG",
+      "LD"
+    ],
+    "dmg1": "1d10",
+    "dmgType": "P",
+    "range": "30/90",
+    "ammoType": "文艺复兴子弹",
+    "age": "文艺复兴",
+    "firearm": true,
+    "reprintedAs": [
+      "手枪|XPHB"
+    ],
+    "weapon": true
+  }
+]

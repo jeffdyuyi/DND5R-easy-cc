@@ -1,0 +1,54 @@
+[
+  {
+    "ENG_name": "Frostburn Spear",
+    "name": "霜燃之矛",
+    "source": "GriffonsSaddlebag2",
+    "page": 85,
+    "baseItem": "矛|phb",
+    "type": "M",
+    "resist": [
+      "寒冷",
+      "火焰"
+    ],
+    "tier": "主要",
+    "rarity": "very rare",
+    "weight": 2,
+    "weaponCategory": "简易",
+    "property": [
+      "T"
+    ],
+    "range": "30/120",
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "recharge": "拂晓",
+    "entries": [
+      "这把魔法矛中同时蕴含着寒冰与火焰的力量，拥有百足魔兽般的破坏力。当你投掷此矛并命中或未命中目标后，它会立即飞回你的手中。",
+      "当你持握此矛时，它会布满冰棱，并发出20尺半径的明亮光照以及额外20尺的微光光照。当你使用这把魔化武器进行的攻击命中时，目标会受到额外{@damage 1d6}寒冷伤害。你可以用一个附赠动作说出其命令语，使冰棱融化并被火焰取代，这会将额外伤害改为火焰伤害。你可以再次说出命令语来熄灭火焰并使冰棱重新在此矛上生长，将额外伤害重新变为寒冷伤害。这些冰棱或火焰会持续存在，直到你放下或收起此矛。",
+      "当此矛布满冰棱时，你具有火焰伤害的抗性。当此矛被火焰覆盖时，你具有寒冷伤害的抗性。",
+      "此外，当持握此矛时，你可以使用一个动作从其中施展{@spell 火焰护盾|PHB}法术。以此法施展的法术，射程为30尺而非自身，且可以指定射程内任何你能看见的生物为目标。此矛的这项词条一经使用，则其直至次日黎明前都无法再次使用。"
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "火焰护盾"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表 H1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Frostburn-Spear.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

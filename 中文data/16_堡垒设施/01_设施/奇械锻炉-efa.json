@@ -1,0 +1,53 @@
+{
+  "ENG_name": "Artificer's Forge",
+  "name": "奇械锻炉",
+  "source": "EFA",
+  "page": 48,
+  "facilityType": "special",
+  "level": 13,
+  "prerequisite": [
+    {
+      "spellcastingFocus": [
+        "工匠工具"
+      ]
+    }
+  ],
+  "space": [
+    "roomy"
+  ],
+  "hirelings": [
+    {
+      "exact": 2
+    }
+  ],
+  "orders": [
+    "制造"
+  ],
+  "entries": [
+    "一个奇械锻炉包括两名熟习创造魔法物品的魔匠师雇工。",
+    {
+      "ENG_name": "Crafting Assistants",
+      "name": "手作助手",
+      "type": "entries",
+      "entries": [
+        "如果你使用{@book 制造一个魔法物品|XDMG|2|创作魔法物品}中的规则在你的据点中{@book 城主指南|XDMG}，这个设施的一个或两个雇工可以协助你，减少制造所需的时间。"
+      ]
+    },
+    {
+      "ENG_name": "Craft: Magic Item",
+      "name": "制造：魔法物品",
+      "type": "entries",
+      "entries": [
+        "当你向此设施下达制造命令时，你委托该设施的雇工制造一件由你从{@book 城主指南|XDMG}中选定的{@book 通用或非普通魔法物品|XDMG|6|魔法物品}。该设施拥有制造该物品所需的工具，且雇工拥有该工具的熟练项以及{@skill 奥秘|XPHB}技能的熟练项。两名雇工互相协助，减少了制造物品所需的时间。如果该物品允许使用者从中施放任何法术，则雇工已准备这些法术。"
+      ]
+    },
+    {
+      "ENG_name": "Charge Refreshment",
+      "name": "冲锋恢复",
+      "type": "entries",
+      "entries": [
+        "每当你据点中的魔法物品恢复充能时，它额外恢复1点已消耗的充能。"
+      ]
+    }
+  ]
+}

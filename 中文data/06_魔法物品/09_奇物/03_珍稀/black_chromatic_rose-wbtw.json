@@ -1,0 +1,20 @@
+[
+  {
+    "ENG_name": "Black Chromatic Rose",
+    "name": "黑彩玫瑰",
+    "source": "WBtW",
+    "page": 208,
+    "resist": [
+      "强酸"
+    ],
+    "detail1": "滴酸",
+    "rarity": "rare",
+    "wondrous": true,
+    "hasRefs": true,
+    "entries": [
+      "{#itemEntry 色彩玫瑰|WBtW}"
+    ],
+    "valueReference": 4000,
+    "type": "W"
+  }
+]

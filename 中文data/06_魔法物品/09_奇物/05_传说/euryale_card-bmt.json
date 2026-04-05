@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Euryale Card",
+    "name": "尤瑞艾莉卡",
+    "source": "BMT",
+    "page": 13,
+    "rarity": "legendary",
+    "wondrous": true,
+    "recharge": "拂晓",
+    "entries": [
+      "作为动作，你可以对距你30尺内的一名可见生物挥舞这张卡牌，并尝试将其变成石头。目标必须成功通过一次{@dc 17}的体质豁免检定，否则它开始变成石头并获得{@condition 束缚}状态。受影响的目标必须在其下一回合结束时重新进行豁免检定。豁免成功时，目标身上的此效果结束。豁免失败时，目标获得{@condition 石化}状态（取代{@condition 束缚}状态），直到通过{@spell 高等复原术}法术或类似魔法将石化移除为止。这一属性一经使用，直到次日黎明之前无法再次使用。"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 200000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "decks/BMT/Deck of Many Things/22-euryale.webp"
+          },
+          "credit": "Tinnel Lovitt",
+          "width": 850,
+          "height": 1552
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

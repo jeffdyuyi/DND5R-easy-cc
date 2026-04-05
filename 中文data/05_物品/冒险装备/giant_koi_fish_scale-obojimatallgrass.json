@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Giant Koi Fish Scale",
+    "name": "巨人锦鲤鱼鳞",
+    "source": "ObojimaTallGrass",
+    "page": 217,
+    "type": "Ingred",
+    "rarity": "rare",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 18|large}|SneakerProMedium}",
+            "{@font {@style 20|large}|SneakerProMedium}",
+            "{@font {@style 18|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "巨大的飞行锦鲤慵懒地在云间游弋，阳光在它们闪闪发光的鳞片上反射。偶尔，这些鳞片中的一片会剥落并飘落到地面，有时落在屋顶上，这几乎总是被视为一个好预兆和庆祝的理由。有许多神殿与神龛将巨人锦鲤鳞作为神圣物件供奉，一些鳞片上还有大师工匠绘制的场景。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/giant-koi-scale.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 1825,
+          "height": 1825
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "ENG_name": "Magical Inspiration",
+        "name": "魔法激励",
+        "source": "TCE",
+        "page": 27,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 2,
+        "isClassFeatureVariant": true,
+        "entries": [
+            "{@i 2级吟游诗人{@variantrule 可选职业特性|TCE|可选特性}}",
+            "如果一个生物拥有来自你的诗人激励骰子，在他施展一个恢复生命值或者造成伤害的法术时，他可以掷出激励骰子并将结果加到恢复或伤害数值上。"
+        ]
+    },
+    {
+        "ENG_name": "Bardic Versatility",
+        "name": "替换诗歌",
+        "source": "TCE",
+        "page": 27,
+        "className": "吟游诗人",
+        "classSource": "PHB",
+        "level": 4,
+        "isClassFeatureVariant": true,
+        "entries": [
+            "{@i 4级吟游诗人{@variantrule 可选职业特性|TCE|可选特性}}",
+            "当你获得属性值提升时，你可以替换一个专精技能或一个戏法。"
+        ]
+    }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Moderately Armored",
+    "name": "中甲运用",
+    "source": "PHB",
+    "page": 168,
+    "reprintedAs": [
+      "中甲运用|XPHB"
+    ],
+    "prerequisite": [
+      {
+        "proficiency": [
+          {
+            "armor": "light"
+          }
+        ]
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex"
+          ],
+          "amount": 1
+        }
+      }
+    ],
+    "armorProficiencies": [
+      {
+        "medium": true,
+        "shield": true
+      }
+    ],
+    "entries": [
+      "你习得如何使用中甲和盾牌，并获得下列增益：",
+      {
+        "type": "list",
+        "items": [
+          "你获得中甲和盾牌的熟练项。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "ENG_name": "Call Deity",
+    "name": "请神术",
+    "source": "CthulhuTorchlight",
+    "page": 0,
+    "level": 8,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你只能在你所施展的法术通神术的持续时间内施展此法术。你使你所联络的神祇显现在最近的未占据空间。在1小时内，祂会按照自己的意愿行事，但只要你不对祂采取敌对行动，祂便会将你视为盟友。祂不会将此等礼遇延伸至你的盟友，且会将你为保护他人而进行的任何尝试都视为对祂的敌对行动。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "ENG_name": "Blue Dragon Mask",
+    "name": "蓝龙面具",
+    "source": "RoTOS",
+    "page": 4,
+    "referenceSources": [
+      "HotDQ",
+      "RoT"
+    ],
+    "resist": [
+      "闪电"
+    ],
+    "rarity": "legendary",
+    "reqAttune": true,
+    "wondrous": true,
+    "grantsLanguage": true,
+    "entries": [
+      "这个光滑的天蓝色面具在边缘有尖刺，中心有一个带脊的角。面具会重新塑形以适应与其协调的佩戴者。当你佩戴并与其协调时，你可以使用以下属性。",
+      {
+        "ENG_name": "Damage Absorption",
+        "name": "伤害吸收",
+        "type": "entries",
+        "entries": [
+          "你对闪电伤害具有抗性。如果你已经从其他来源具有对闪电伤害的抗性，你将改为对闪电伤害免疫。如果你已经从其他来源对闪电伤害免疫，每当你遭受闪电伤害时，你将不会受到任何此类伤害，并且恢复等于该类型伤害值一半的生命值。"
+        ]
+      },
+      {
+        "ENG_name": "Draconic Majesty",
+        "name": "龙形威严",
+        "type": "entries",
+        "entries": [
+          "你未着装护甲时，可以将自己的魅力加值加入你的护甲等级中。"
+        ]
+      },
+      {
+        "ENG_name": "Dragon Breath",
+        "name": "龙息",
+        "type": "entries",
+        "entries": [
+          "若你有本身拥有需要休息充能的吐息武器，则该吐息改为充能 6。"
+        ]
+      },
+      {
+        "ENG_name": "Dragon Sight",
+        "name": "龙之视界",
+        "type": "entries",
+        "entries": [
+          "你获得{@sense 黑暗视觉}，范围为60尺，或者如果你已经拥有该感觉，则额外增加60尺。每天一次，你可以获得{@sense 盲视}，范围为30尺，持续5分钟。"
+        ]
+      },
+      {
+        "ENG_name": "Dragon Tongue",
+        "name": "龙言",
+        "type": "entries",
+        "entries": [
+          "你可以说并理解龙语。此外，在对蓝龙进行任何魅力检定时，你具有优势。"
+        ]
+      },
+      {
+        "ENG_name": "Legendary Resistance",
+        "name": "传奇抗性",
+        "type": "entries",
+        "entries": [
+          "（每日一次）你进行一次豁免检定失败时，可以选择将其改为豁免成功。"
+        ]
+      },
+      {
+        "ENG_name": "Lingering Shock",
+        "name": "持续电击",
+        "type": "entries",
+        "entries": [
+          "如果你对生物造成闪电伤害，直到它的下一个回合之前，它不能进行反应。"
+        ]
+      }
+    ],
+    "valueReference": 200000,
+    "type": "W"
+  }
+]

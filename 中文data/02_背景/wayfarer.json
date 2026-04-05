@@ -1,0 +1,150 @@
+[
+  {
+    "name": "流浪者",
+    "ENG_name": "Wayfarer",
+    "source": "XPHB",
+    "edition": "one",
+    "page": 185,
+    "ability": [
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "dex",
+              "wis",
+              "cha"
+            ],
+            "weights": [
+              2,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "dex",
+              "wis",
+              "cha"
+            ],
+            "weights": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      }
+    ],
+    "feats": [
+      {
+        "幸运|xphb": true
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "insight": true,
+        "stealth": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "thieves' tools": true
+      }
+    ],
+    "startingEquipment": [
+      {
+        "A": [
+          {
+            "item": "匕首|xphb",
+            "quantity": 2
+          },
+          {
+            "item": "盗贼工具|xphb"
+          },
+          {
+            "equipmentType": "setGaming"
+          },
+          {
+            "item": "铺盖|xphb"
+          },
+          {
+            "item": "小包|xphb",
+            "quantity": 2
+          },
+          {
+            "item": "旅行服装|xphb"
+          },
+          {
+            "value": 1600
+          }
+        ],
+        "B": [
+          {
+            "value": 5000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability Scores:",
+            "name": "属性值：",
+            "type": "item",
+            "entry": "敏捷，感知，魅力"
+          },
+          {
+            "ENG_name": "Feat:",
+            "name": "专长：",
+            "type": "item",
+            "entry": "{@feat 幸运|XPHB}"
+          },
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 洞悉|XPHB}, {@skill 隐匿|XPHB}"
+          },
+          {
+            "ENG_name": "Tool Proficiency:",
+            "name": "工具熟练项：",
+            "type": "item",
+            "entry": "{@item 盗贼工具|XPHB}"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "选择 A 或 B：(A) {@item 匕首|XPHB|2把匕首}、{@item 盗贼工具|XPHB}、{@item 赌具|XPHB}（任意）、{@item 铺盖|XPHB}、{@item 小包|XPHB|2个小包}、{@item 旅行服装|XPHB}、16 GP；或 (B) 50 GP"
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "你在街头长大，身边都是同样命途多舛的孤儿，有些是朋友有些是对头。你露宿街头，只靠着打零工来换取食物。有些时候你会感到饥饿难耐，但却只能以盗窃维生。尽管如此，你从未抛你的自尊，也从未放弃希望。命运还没有就此关上大门。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "backgrounds/XPHB/Wayfarer.webp"
+          },
+          "credit": "Jonas De Ro",
+          "width": 2513,
+          "height": 914
+        }
+      ]
+    },
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "translator": "不全书"
+  }
+]

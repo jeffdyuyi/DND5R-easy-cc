@@ -1,0 +1,34 @@
+[
+  {
+    "ENG_name": "Tavern Brawler",
+    "name": "酒馆斗殴者",
+    "source": "PHB",
+    "page": 170,
+    "reprintedAs": [
+      "酒馆斗殴者|XPHB"
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "con"
+          ],
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你习惯了粗暴而混乱的肉体斗殴，而随手拿个东西都能成为你的武器。你获得下列增益：",
+      {
+        "type": "list",
+        "items": [
+          "你获得临时武器的熟练项。",
+          "你徒手打击的伤害骰变为{@damage d4}。",
+          "你在自己的回合内用徒手打击或临时武器命中敌人时，可以用附赠动作尝试对该敌人进行一次擒抱。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

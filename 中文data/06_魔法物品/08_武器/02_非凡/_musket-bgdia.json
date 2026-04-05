@@ -1,0 +1,43 @@
+[
+  {
+    "ENG_name": "Musket",
+    "name": "狱火滑膛枪",
+    "source": "BGDIA",
+    "page": 223,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "uncommon",
+    "weight": 10,
+    "value": 50000,
+    "weaponCategory": "martial",
+    "property": [
+      "A|XPHB",
+      "LD|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "缓速|XPHB"
+    ],
+    "range": "40/120",
+    "dmg1": "1d12",
+    "dmgType": "P",
+    "firearm": true,
+    "weapon": true,
+    "ammoType": "枪械子弹|xphb",
+    "hasFluffImages": true,
+    "namePrefix": "狱火",
+    "entries": [
+      "这件武器由地狱铁打造，并带有地狱火纹理，这些纹理散发出暗淡的光芒，照亮了5尺半径的范围。",
+      "任何被这把武器攻击致死的人形生物，其灵魂会被吸入冥河，在那里它将立即重生为一个{@creature 劣魔}恶魔。"
+    ],
+    "light": [
+      {
+        "dim": 5
+      }
+    ],
+    "_isVariant": true,
+    "valueReference": 400
+  }
+]

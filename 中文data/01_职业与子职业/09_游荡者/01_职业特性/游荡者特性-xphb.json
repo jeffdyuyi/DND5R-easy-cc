@@ -1,0 +1,387 @@
+[
+    {
+        "ENG_name": "Expertise",
+        "name": "专精",
+        "source": "XPHB",
+        "page": 128,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "游荡者",
+        "classSource": "XPHB",
+        "level": 1,
+        "entries": [
+            "你选择两个你具有熟练项的技能（如盗贼工具或隐匿）。你在这些技能的属性检定中获得双倍的熟练加值。",
+            "推荐选择：{@skill 巧手|XPHB} 和 {@skill 隐匿|XPHB}。",
+            "第 6 级时，你可以再选择两个已有的技能熟练项从该特性中获益。"
+        ]
+    },
+    {
+        "ENG_name": "Sneak Attack",
+        "name": "偷袭",
+        "source": "XPHB",
+        "page": 128,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "游荡者",
+        "classSource": "XPHB",
+        "level": 1,
+        "entries": [
+            "你知道如何精确地攻击分心的敌人。每当你的攻击命中一个生物时，如果该攻击的攻击检定带有优势，则可以造成额外伤害。该伤害每回合只能造成一次，且造成伤害的攻击必须使用带 {@variantrule 灵巧|XPHB} 属性的武器或远程武器。额外伤害的数值取决于你的游荡者等级，如游荡者表中的偷袭一列所示（如果你使用战技，该伤害可能会减少）。",
+            "如果目标生物身边 5 尺内还有其他与之敌对的未 {@condition 失能|XPHB} 生物，则只要你的攻击检定不具有劣势，你就可以发动偷袭。你不必在此类攻击中具有优势。"
+        ]
+    },
+    {
+        "ENG_name": "Thieves' Cant",
+        "name": "盗贼黑话",
+        "source": "XPHB",
+        "page": 128,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "游荡者",
+        "classSource": "XPHB",
+        "level": 1,
+        "entries": [
+            "你学会了如何使用盗贼黑话，这是一种混合了土话、术语和密语的秘密语言，掌握这门语言后，你可以在平时对话中不落痕迹地加入隐藏信息。只有其他懂盗贼黑话的生物才能看懂这些隐藏信息。",
+            "你还额外学会了一门语言。推荐选择：{@language 兽人语|XPHB}。"
+        ]
+    },
+    {
+        "ENG_name": "Weapon Mastery",
+        "name": "武器精通",
+        "source": "XPHB",
+        "page": 128,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "游荡者",
+        "classSource": "XPHB",
+        "level": 1,
+        "entries": [
+            "你对武器的训练使你能够运用两种自选的具有灵巧或轻型属性的 {@filter 简易|items|type=简易武器} 或 {@filter 军用|items|type=军用武器} 的 {@variantrule 武器精通词条|XPHB|精通词条}，例如 {@item 匕首|XPHB} 和 {@item 短弓|XPHB}。每当你完成一次 {@variantrule 长休|XPHB} 时，你可以重新演练武器技巧，来改变你所选择的其中一个武器类型。"
+        ]
+    },
+    {
+        "ENG_name": "Cunning Action",
+        "name": "灵巧动作",
+        "source": "XPHB",
+        "page": 129,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "游荡者",
+        "classSource": "XPHB",
+        "level": 2,
+        "entries": [
+            "你精妙的反应与身手使你的行动无比迅速。你在战斗中每回合可执行一个 {@variantrule 附赠动作|XPHB}，该附赠动作可用以执行 {@action 疾走|XPHB}、{@action 撤离|XPHB} 或 {@action 躲藏|XPHB} 动作。"
+        ]
+    },
+    {
+        "ENG_name": "Rogue Subclass",
+        "name": "游荡者子职",
+        "source": "XPHB",
+        "page": 129,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "游荡者",
+        "classSource": "XPHB",
+        "level": 3,
+        "entries": [
+            "你选择获得一项游荡者子职。子职是一种特化，在特定的游荡者等级给予你对应的独特能力。此后你将获得你所选的基础子职所有能力——只要其所需等级不超过你的游荡者等级。"
+        ]
+    },
+    {
+        "ENG_name": "Steady Aim",
+        "name": "稳定瞄准",
+        "source": "XPHB",
+        "page": 129,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "游荡者",
+        "classSource": "XPHB",
+        "level": 3,
+        "entries": [
+            "以一个 {@variantrule 附赠动作|XPHB}，你的下一次攻击检定具有 {@variantrule 优势|XPHB}。你只有在当前回合中尚未移动的情况下才能使用此附赠动作，且你在使用后当前回合内的 {@variantrule 速度|XPHB} 变为 0。"
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "XPHB",
+        "page": 129,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "游荡者",
+        "classSource": "XPHB",
+        "level": 4,
+        "entries": [
+            "你获得 {@feat 属性值提升|XPHB} 专长或其他你满足条件的 {@5etools 专长|feats.html}。如表所示，你还会在第 8、第 10、第 12、第 16 级时再次获得本特性。"
+        ]
+    },
+    {
+        "ENG_name": "Cunning Strike",
+        "name": "诡诈打击",
+        "source": "XPHB",
+        "page": 130,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "游荡者",
+        "classSource": "XPHB",
+        "level": 5,
+        "entries": [
+            "你学会了如何在战斗中通过牺牲伤害换取战术效果。当你造成偷袭伤害时，你可以应用以下一种效果，但必须减少对应的偷袭伤害骰数。每种效果都需要目标进行一次豁免检定，DC 等于 8 + 你的熟练加值 + 你的敏捷调整值：",
+            {
+                "type": "list",
+                "items": [
+                    "{@b 对抗 Disarm：} 目标必须成功通过一次敏捷豁免，否则会被 {@condition 倒地|XPHB}。花费：{@dice 1d6}。",
+                    "{@b 撤退 Withdraw：} 你不需要减少伤害，但在攻击后直到你的回合结束前，你对该目标进行的攻击不会引发 {@action 借机攻击|XPHB}。花费：无。",
+                    "{@b 毒素 Poison：} 目标必须成功通过一次体质豁免，否则会在接下来的 1 分钟内处于 {@condition 中毒|XPHB} 状态。目标可以在其每个回合结束时重复该豁免。花费：{@dice 1d6}。"
+                ]
+            }
+        ]
+    },
+    {
+        "ENG_name": "Uncanny Dodge",
+        "name": "直觉闪避",
+        "source": "XPHB",
+        "page": 130,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "游荡者",
+        "classSource": "XPHB",
+        "level": 5,
+        "entries": [
+            "当一个你能看见的生物攻击命中你时，你可以用你的 {@variantrule 反应|XPHB} 让此次攻击的伤害减半。"
+        ]
+    },
+    {
+        "ENG_name": "Expertise",
+        "name": "专精",
+        "source": "XPHB",
+        "page": 130,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "游荡者",
+        "classSource": "XPHB",
+        "level": 6,
+        "entries": [
+            "你再选择两个你具有熟练项的技能，在这些技能的属性检定中获得双倍的熟练加值。"
+        ]
+    },
+    {
+        "ENG_name": "Evasion",
+        "name": "反射闪避",
+        "source": "XPHB",
+        "page": 130,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "游荡者",
+        "classSource": "XPHB",
+        "level": 7,
+        "entries": [
+            "当你需要进行一次敏捷豁免来让某些效应（如法术 {@spell 炽焰法球|XPHB}）的伤害感半时，如果你豁免成功则不受伤害，豁免失败也只需承受一半伤害。"
+        ]
+    },
+    {
+        "ENG_name": "Reliable Talent",
+        "name": "可靠才能",
+        "source": "XPHB",
+        "page": 130,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "游荡者",
+        "classSource": "XPHB",
+        "level": 7,
+        "entries": [
+            "你的技巧经过精炼而更趋于完美。每当你进行的属性检定可以使用熟练加值（包括从专精获得的加值）时，你可以将 {@dice d20} 骰中 9 或以下的结果都视为 10。"
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "XPHB",
+        "page": 130,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "游荡者",
+        "classSource": "XPHB",
+        "level": 8,
+        "entries": [
+            "你获得 {@feat 属性值提升|XPHB} 专长或其它你满足条件的 {@5etools 专长|feats.html}。"
+        ]
+    },
+    {
+        "ENG_name": "Subclass Feature",
+        "name": "子职特性",
+        "source": "XPHB",
+        "page": 130,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "游荡者",
+        "classSource": "XPHB",
+        "level": 9,
+        "entries": [
+            "你获得一个游荡者子职特性。"
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "XPHB",
+        "page": 130,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "游荡者",
+        "classSource": "XPHB",
+        "level": 10,
+        "entries": [
+            "你获得 {@feat 属性值提升|XPHB} 专长或其它你满足条件的 {@5etools 专长|feats.html}。"
+        ]
+    },
+    {
+        "ENG_name": "Improved Cunning Strike",
+        "name": "进阶诡诈打击",
+        "source": "XPHB",
+        "page": 131,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "游荡者",
+        "classSource": "XPHB",
+        "level": 11,
+        "entries": [
+            "你可以在以此攻击发动偷袭时，在一次攻击中同时应用两种诡诈打击选项。你仍需为每个应用的选项支付对应的偷袭伤害骰数。"
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "XPHB",
+        "page": 131,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "游荡者",
+        "classSource": "XPHB",
+        "level": 12,
+        "entries": [
+            "你获得 {@feat 属性值提升|XPHB} 专长或其它你满足条件的 {@5etools 专长|feats.html}。"
+        ]
+    },
+    {
+        "ENG_name": "Subclass Feature",
+        "name": "子职特性",
+        "source": "XPHB",
+        "page": 131,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "游荡者",
+        "classSource": "XPHB",
+        "level": 13,
+        "entries": [
+            "你获得一个游荡者子职特性。"
+        ]
+    },
+    {
+        "ENG_name": "Devious Strikes",
+        "name": "凶狡打击",
+        "source": "XPHB",
+        "page": 131,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "游荡者",
+        "classSource": "XPHB",
+        "level": 14,
+        "entries": [
+            "你已经掌握了以下新的诡诈打击选项：",
+            {
+                "type": "list",
+                "items": [
+                    "{@b 眩晕 Daze：} 目标必须成功通过一次体质豁免，否则会被 {@condition 眩晕|XPHB}，直到其下一回合开始。花费：{@dice 2d6}。",
+                    "{@b 击飞 Knock Back：} 目标必须成功通过一次力量豁免，否则会被击退 15 尺。花费：{@dice 2d6}。",
+                    "{@b 蒙蔽 Obscure：} 目标必须成功通过一次敏捷豁免，否则会被 {@condition 蒙蔽|XPHB}，直到其下一回合结束。花费：{@dice 3d6}。"
+                ]
+            }
+        ]
+    },
+    {
+        "ENG_name": "Slippery Mind",
+        "name": "圆滑心智",
+        "source": "XPHB",
+        "page": 131,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "游荡者",
+        "classSource": "XPHB",
+        "level": 15,
+        "entries": [
+            "你的心理素质获得了大大的加强。你获得智慧和魅力豁免的熟练项。"
+        ]
+    },
+    {
+        "ENG_name": "Ability Score Improvement",
+        "name": "属性值提升",
+        "source": "XPHB",
+        "page": 131,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "游荡者",
+        "classSource": "XPHB",
+        "level": 16,
+        "entries": [
+            "你获得 {@feat 属性值提升|XPHB} 专长或其它你满足条件的 {@5etools 专长|feats.html}。"
+        ]
+    },
+    {
+        "ENG_name": "Subclass Feature",
+        "name": "子职特性",
+        "source": "XPHB",
+        "page": 131,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "游荡者",
+        "classSource": "XPHB",
+        "level": 17,
+        "entries": [
+            "你获得一个游荡者子职特性。"
+        ]
+    },
+    {
+        "ENG_name": "Elusive",
+        "name": "飘忽不定",
+        "source": "XPHB",
+        "page": 131,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "游荡者",
+        "classSource": "XPHB",
+        "level": 18,
+        "entries": [
+            "你飘忽不定的身形让敌人攻击时无从下手。除非你处于 {@condition 失能|XPHB} 状态，否则以你为目标的攻击检定无法取得 {@variantrule 优势|XPHB}。"
+        ]
+    },
+    {
+        "ENG_name": "Epic Boon",
+        "name": "传奇恩惠",
+        "source": "XPHB",
+        "page": 131,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "游荡者",
+        "classSource": "XPHB",
+        "level": 19,
+        "entries": [
+            "你获得一项 {@filter 传奇恩惠专长|feats|category=EB} 或其他一项你选择的适用的 {@5etools 专长|feats.html}。推荐选择 {@feat 隐蔽之恩惠|XPHB}。"
+        ]
+    },
+    {
+        "ENG_name": "Stroke of Luck",
+        "name": "幸运一击",
+        "source": "XPHB",
+        "page": 131,
+        "srd52": true,
+        "basicRules2024": true,
+        "className": "游荡者",
+        "classSource": "XPHB",
+        "level": 20,
+        "entries": [
+            "你掌握了一手非凡技巧，让你可以随时把握自己的成功之时。当你的攻击未命中时，可以直接将掷骰结果视为命中。或者，当你的属性检定失败时，可以直接将 {@dice d20} 骰的结果视为 20。",
+            "你使用此特性后，直到你完成一次 {@variantrule 短休|XPHB} 或 {@variantrule 长休|XPHB} 前不能再次使用。"
+        ]
+    }
+]

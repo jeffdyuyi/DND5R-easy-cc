@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Pipes of Haunting",
+    "name": "颤栗乐笙",
+    "source": "DMG",
+    "page": 185,
+    "srd": true,
+    "referenceSources": [
+      "CoS",
+      "US",
+      "WBtW",
+      "CoA"
+    ],
+    "reprintedAs": [
+      "颤栗乐笙|XDMG"
+    ],
+    "type": "INS",
+    "tier": "主要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "weight": 2,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "你必须拥有任一种管乐器的熟练项才能使用该乐笙。该乐笙有3发充能。你可以用一个动作吹奏它并消耗1发充能，以发出一阵含有魔法的怪异音调。你周围30尺内的每名生物都必须成功通过一次{@dc 15}的感知豁免否则对你陷入{@condition 恐慌}状态1分钟。如果你希望，区域内所有不敌对你的生物自动通过豁免。未能通过豁免的生物可以在它的每回合结束时再次尝试豁免，成功则结束该效果。成功通过豁免的生物在24小时内免疫该乐笙的效果。该乐笙每天黎明恢复{@dice 1d3}发已消耗的充能。"
+    ],
+    "optionalfeatures": [
+      "仿制魔法物品|TCE"
+    ],
+    "lootTables": [
+      "魔法物品表F"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Pipes of Haunting.webp"
+          },
+          "width": 824,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "ENG_name": "Swarmkeeper",
+  "name": "集群守卫",
+  "shortName": "集群守卫",
+  "source": "TCE",
+  "className": "游侠",
+  "classSource": "XPHB",
+  "_copy": {
+    "ENG_name": "Swarmkeeper",
+    "name": "集群守卫",
+    "source": "TCE",
+    "shortName": "集群守卫",
+    "className": "游侠",
+    "classSource": "PHB",
+    "_preserve": {
+      "page": true,
+      "otherSources": true,
+      "referenceSources": true,
+      "srd": true,
+      "basicRules": true,
+      "reprintedAs": true
+    }
+  },
+  "fluff": {
+    "_subclassFluff": {
+      "ENG_name": "Swarmkeeper",
+      "name": "集群守卫",
+      "source": "TCE",
+      "shortName": "集群守卫",
+      "className": "游侠",
+      "classSource": "PHB"
+    }
+  }
+}

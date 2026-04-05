@@ -1,0 +1,111 @@
+[
+  {
+    "name": "熊地精",
+    "ENG_name": "Bugbear",
+    "source": "MPMM",
+    "page": 8,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "darkvision": 60,
+    "traitTags": [
+      "强力构筑"
+    ],
+    "skillProficiencies": [
+      {
+        "stealth": true
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Creature Type",
+        "name": "生物类型",
+        "type": "entries",
+        "entries": [
+          "你是类人生物。如果有任何先决条件或效果需要你作为一个类地精生物，你也被视作类地精生物。"
+        ]
+      },
+      {
+        "ENG_name": "Darkvision",
+        "name": "黑暗视觉",
+        "type": "entries",
+        "entries": [
+          "在微光光照下，你身边60尺内可以视为等同于明亮光照。而在黑暗中，该范围内可视为等同于微光光照。你无法在黑暗中分辨颜色，只能看到有灰度的黑白画面。"
+        ]
+      },
+      {
+        "ENG_name": "Fey Ancestry",
+        "name": "妖精血统",
+        "type": "entries",
+        "entries": [
+          "你在为自己避免或结束{@condition 魅惑}状态的豁免检定时具有优势。"
+        ]
+      },
+      {
+        "ENG_name": "Long-Limbed",
+        "name": "长肢",
+        "type": "entries",
+        "entries": [
+          "当你在你的回合使用近战攻击时，你的触及范围比通常范围多5尺。"
+        ]
+      },
+      {
+        "ENG_name": "Powerful Build",
+        "type": "entries",
+        "name": "强力构筑",
+        "entries": [
+          "在决定你的载重、和你可以推、拉及抬的重量时，你视作为体型大一级的生物。"
+        ]
+      },
+      {
+        "ENG_name": "Sneaky",
+        "name": "隐秘",
+        "type": "entries",
+        "entries": [
+          "你获得{@skill 隐匿}技能的熟练项。此外，不需要挤身，你可以在小型生物刚好占据的空间中通过和停留。"
+        ]
+      },
+      {
+        "ENG_name": "Surprise Attack",
+        "name": "突袭攻击",
+        "type": "entries",
+        "entries": [
+          "如果你的攻击检定命中了一个战斗开始后还没开始过自己回合的生物，该生物受到额外{@damage 2d6}的伤害。"
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "熊地精并非虫也并非熊，而是地精和大地精笨重的表亲。早期的熊地精扎根于妖精荒野，隐居住于难以到达的阴影之中。在很久以前，你们的视野之外，征服之神马格鲁比耶 Maglubiyet促使他们散布到多元宇宙各处，所以他们来到了物质位面。就算经过了数世纪，他们仍旧拥有精类的赠礼，使得他们可以躲藏在视野外，并且他们中有相当一部分躲过了那个神的影响。",
+        "他们的四肢很长，并被粗糙的毛发覆盖着，他们还有着楔形的耳朵和尖锐的牙齿。尽管熊地精们体型庞大，但他们也是隐匿的好手，这归功于能使他们躲在看似过于狭小的空间的精类魔法。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/MPMM/Bugbear.webp"
+          },
+          "credit": "Filip Burburan",
+          "width": 1700,
+          "height": 1241
+        }
+      ]
+    },
+    "creatureTypeTags": [
+      "类地精"
+    ],
+    "creatureTypes": [
+      "类人"
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "lineage": "VRGR",
+    "soundClip": {
+      "type": "internal",
+      "path": "races/bugbear.mp3"
+    },
+    "translator": "不全书"
+  }
+]

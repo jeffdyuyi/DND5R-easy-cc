@@ -1,0 +1,152 @@
+{
+  "ENG_name": "Menagerie",
+  "name": "动物园",
+  "source": "XDMG",
+  "page": 343,
+  "facilityType": "special",
+  "level": 13,
+  "space": [
+    "vast"
+  ],
+  "hirelings": [
+    {
+      "exact": 2
+    }
+  ],
+  "orders": [
+    "招募"
+  ],
+  "entries": [
+    "兽栏有着足以容纳四只大型生物的围墙。每四只中型或小型生物在这里占据的空间等同于一只大型生物。",
+    {
+      "ENG_name": "Recruit: Creature",
+      "name": "招募：生物",
+      "type": "entries",
+      "entries": [
+        "当你对此设施下达{@book 招募|XDMG|7|招募}指令时，你委托设施雇员向兽栏内加入一只生物，从兽栏生物 Menagerie Creature表格中选择。这项工作需要7天时间，所需的金钱如表格所示。设施雇员会照顾这些生物。",
+        "你兽栏内的生物算作据点卫兵。如果它们遭受任何损失，便将损失的生物从你的据点卫兵名单中划去。你可以选择不将一只或更多生物视为据点卫兵，此时这些生物不会参与据点的防御，而是按照自己的天性活动，使用{@book 怪物图鉴|XMM}中的数据。",
+        {
+          "type": "table",
+          "caption": "兽栏生物",
+          "colLabels": [
+            "生物",
+            "体型",
+            "花费"
+          ],
+          "colStyles": [
+            "col-4",
+            "col-4",
+            "col-4 text-right"
+          ],
+          "rows": [
+            [
+              "{@creature 猿|XMM}",
+              "中等",
+              "500GP"
+            ],
+            [
+              "{@creature 黑熊|XMM}",
+              "中等",
+              "500GP"
+            ],
+            [
+              "{@creature 棕熊|XMM}",
+              "大型",
+              "1,000 GP"
+            ],
+            [
+              "{@creature 蟒蛇|XMM}",
+              "大型",
+              "250 GP"
+            ],
+            [
+              "{@creature 鳄鱼|XMM}",
+              "大型",
+              "500GP"
+            ],
+            [
+              "{@creature 恐狼|XMM}",
+              "大型",
+              "1,000 GP"
+            ],
+            [
+              "{@creature 巨秃鹫|XMM}",
+              "大型",
+              "1,000 GP"
+            ],
+            [
+              "{@creature 鬣狗|XMM}",
+              "中等",
+              "50GP"
+            ],
+            [
+              "{@creature 胡狼|XMM}",
+              "小型",
+              "50GP"
+            ],
+            [
+              "{@creature 狮子|XMM}",
+              "大型",
+              "1,000 GP"
+            ],
+            [
+              "{@creature 枭熊|XMM}",
+              "大型",
+              "3,500 GP"
+            ],
+            [
+              "{@creature 黑豹|XMM}",
+              "中等",
+              "250 GP"
+            ],
+            [
+              "{@creature 老虎|XMM}",
+              "大型",
+              "1,000 GP"
+            ]
+          ]
+        },
+        "在DM的允许下，你也可以向兽栏内加入上述表格之外的生物。生物的价格取决于它们的{@variantrule 挑战等级|XPHB}，如下列表格所示。一般而言，只有野兽和某些怪兽能被安置在兽栏内，不过其他生物也有可能得到DM的许可。",
+        {
+          "type": "table",
+          "caption": "按照挑战等级的生物价格",
+          "colLabels": [
+            "挑战等级",
+            "花费"
+          ],
+          "colStyles": [
+            "col-6 text-center",
+            "col-6 text-right"
+          ],
+          "rows": [
+            [
+              "0或1/8",
+              "50GP"
+            ],
+            [
+              "1/4",
+              "250 GP"
+            ],
+            [
+              "1/2",
+              "500GP"
+            ],
+            [
+              "1",
+              "1,000 GP"
+            ],
+            [
+              "2",
+              "2,000 GP"
+            ],
+            [
+              "3",
+              "3,500 GP"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "translator": "不全书"
+}

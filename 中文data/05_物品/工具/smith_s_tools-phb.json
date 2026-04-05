@@ -1,0 +1,93 @@
+[
+  {
+    "name": "铁匠工具",
+    "ENG_name": "Smith's Tools",
+    "source": "PHB",
+    "page": 154,
+    "type": "AT",
+    "rarity": "none",
+    "weight": 8,
+    "value": 2000,
+    "additionalEntries": [
+      "铁匠工具允许你加工金属，将其加热以改变形状、修补损伤或将原始锭材加工成有用的物品。",
+      {
+        "ENG_name": "Components",
+        "name": "成分",
+        "type": "entries",
+        "entries": [
+          "铁匠工具包括锤子、钳子、木炭、碎布和一块磨刀石。"
+        ]
+      },
+      {
+        "ENG_name": "Arcana and History",
+        "name": "奥秘、历史",
+        "type": "entries",
+        "entries": [
+          "你的专精使你在检视金属物件（例如武器）时获得额外洞悉。"
+        ]
+      },
+      {
+        "ENG_name": "Investigation",
+        "name": "调查",
+        "type": "entries",
+        "entries": [
+          "当调查涉及护甲、武器或其他金属制品时，你能发现他人可能忽略的线索并进行推断。"
+        ]
+      },
+      {
+        "ENG_name": "Repair",
+        "name": "修复",
+        "type": "entries",
+        "entries": [
+          "在拥有工具和足以使金属变软的明火的情况下，你每小时的工作可以为一个受损的金属物件恢复10点生命值。"
+        ]
+      },
+      {
+        "type": "table",
+        "caption": "铁匠工具",
+        "colLabels": [
+          "用途",
+          "DC"
+        ],
+        "colStyles": [
+          "col-10",
+          "col-2 text-center"
+        ],
+        "rows": [
+          [
+            "磨利一把钝刀",
+            "10"
+          ],
+          [
+            "修复一套护甲",
+            "15"
+          ],
+          [
+            "破坏一个非魔法金属物品",
+            "15"
+          ]
+        ]
+      }
+    ],
+    "additionalSources": [
+      {
+        "source": "XGE",
+        "page": 84
+      }
+    ],
+    "basicRules": true,
+    "referenceSources": [
+      "ToA",
+      "TTP",
+      "WDH",
+      "BGDIA",
+      "IDRotF",
+      "CM",
+      "KftGV"
+    ],
+    "reprintedAs": [
+      "铁匠工具|XPHB"
+    ],
+    "srd": true
+  }
+]

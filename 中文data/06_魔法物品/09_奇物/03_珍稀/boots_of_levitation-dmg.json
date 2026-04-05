@@ -1,0 +1,36 @@
+[
+  {
+    "ENG_name": "Boots of Levitation",
+    "name": "浮空之靴",
+    "source": "DMG",
+    "page": 155,
+    "srd": true,
+    "referenceSources": [
+      "WBtW",
+      "DSotDQ"
+    ],
+    "reprintedAs": [
+      "浮空之靴|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "着装这双靴子期间，你可以用一个动作对自身施放{@spell 浮空术}法术，次数不限。"
+    ],
+    "optionalfeatures": [
+      "仿制魔法物品|TCE"
+    ],
+    "attachedSpells": {
+      "will": [
+        "浮空术"
+      ]
+    },
+    "lootTables": [
+      "魔法物品表G"
+    ],
+    "valueReference": 4000,
+    "type": "W"
+  }
+]

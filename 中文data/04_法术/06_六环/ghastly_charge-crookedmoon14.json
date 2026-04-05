@@ -1,0 +1,91 @@
+[
+  {
+    "ENG_name": "Ghastly Charge",
+    "name": "惊怖冲锋",
+    "source": "CrookedMoon14",
+    "page": 129,
+    "reprintedAs": [
+      "惊怖冲锋|crookedmoon24"
+    ],
+    "level": 6,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一块残破的旗帜碎片"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你召唤早已死亡骑士的精魂，它们从你所在位置以90尺长、20尺宽的线状冲锋，然后消失无踪。线状区域内每个由你选择的生物必须进行一次感知豁免检定。豁免失败时，目标受到{@damage 5d12}暗蚀伤害，直到你的下个回合开始前对你处于{@condition 恐慌}状态，并且必须立即使用其反应（如果可用），以最快速度远离你，采取最安全的路线移动。豁免成功时，该生物仅受到一半伤害。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用7环或更高法术位施放该法术时，法术位每比6环高一环，伤害就增加{@dice 1d12}。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "暗蚀"
+    ],
+    "conditionInflict": [
+      "恐慌"
+    ],
+    "savingThrow": [
+      "感知"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Spells/ghastly-charge.webp"
+          },
+          "width": 850,
+          "height": 912,
+          "credit": "Anastassia Grigorieva"
+        }
+      ]
+    },
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Spells/Ghastly-Charge.webp"
+  }
+]

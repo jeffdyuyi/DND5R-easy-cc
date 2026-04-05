@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Sage Arol's Beetle",
+    "name": "智者阿罗尔的甲虫",
+    "source": "ObojimaTallGrass",
+    "page": 218,
+    "type": "Ingred",
+    "rarity": "rare",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 18|large}|SneakerProMedium}",
+            "{@font {@style 20|large}|SneakerProMedium}",
+            "{@font {@style 0|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "这些甲虫因传说中的智者阿罗尔使用它们的颚咬作为笔的利刺而闻名。但当鱼头帮的一位巫偶开始在她的梦境中看到这种珍稀的甲虫时，药剂制造者开始将它们用于药水手作。智者阿罗尔的甲虫生活在地底深处，甚至最微弱的光亮术也会让它们走开。在极少数情况下，它们会来到地表，尽管原因仍然是个谜。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/sage-arols-beetle.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 3027,
+          "height": 3027
+        }
+      ]
+    }
+  }
+]

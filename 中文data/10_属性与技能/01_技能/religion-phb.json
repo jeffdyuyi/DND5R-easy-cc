@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Religion",
+    "name": "宗教",
+    "source": "PHB",
+    "page": 178,
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "宗教|XPHB"
+    ],
+    "ability": "int",
+    "entries": [
+      "你的智力（宗教）检定量化你回忆神、仪式和祷告、宗教阶级、圣徽、秘密组织风俗等知识的能力。"
+    ],
+    "translator": "不全书"
+  }
+]

@@ -1,0 +1,60 @@
+[
+  {
+    "ENG_name": "Flame of Ingenuity",
+    "name": "巧思之焰",
+    "source": "HumblewoodTales",
+    "page": 241,
+    "rarity": "very rare",
+    "reqAttune": "由吟游诗人、术士或法师",
+    "reqAttuneTags": [
+      {
+        "class": "吟游诗人"
+      },
+      {
+        "class": "术士"
+      },
+      {
+        "class": "法师"
+      }
+    ],
+    "wondrous": true,
+    "recharge": "拂晓",
+    "entries": [
+      "这个木制提灯内含一小簇火焰，代表着当被正确驾驭时火焰赠礼的真实法力。据说第一簇巧思之焰的创造是由{@deity 鸦女神|永荣者|HumblewoodCampaignSetting}亲自神启的。",
+      {
+        "ENG_name": "Light of Revelation",
+        "name": "天启之光",
+        "type": "entries",
+        "entries": [
+          "这盏木制提灯内的神秘火焰永不熄灭，只有在{@spell 反魔法场}内才会熄灭。它散发出{@quickref 视野与光照||2||明亮光照}30尺半径和额外的30尺{@quickref 视野与光照||2||微光光照}。{@condition 隐形}的生物和物件只要处于提灯的{@quickref 视野与光照||2||明亮光照}中就会显形，而{@quickref 视野与光照||2||明亮光照}中的幻象会立即显现为灵体形态而非实体。你可以用一个附赠动作说出命令语将火焰的光照缩小到5尺半径的{@quickref 视野与光照||2||微光光照}。"
+        ]
+      },
+      {
+        "ENG_name": "Stroke of Ingenuity",
+        "name": "巧思之击",
+        "type": "entries",
+        "entries": [
+          "当你与明灯同调并在进行智力检定时掷出1或2，你可以重掷骰子并必须使用新的结果。"
+        ]
+      },
+      {
+        "ENG_name": "Arcane Rekindling",
+        "name": "奥术重燃",
+        "type": "entries",
+        "entries": [
+          "通过在明灯内的火焰上冥想1分钟，你可以恢复最多5个等级的法术位，按你选择的方式分配。例如，你可以恢复一个5环法术位，或一个3环和一个2环法术位。此属性在下次拂晓前无法再次使用。"
+        ]
+      }
+    ],
+    "light": [
+      {
+        "bright": 30,
+        "dim": 60
+      },
+      {
+        "dim": 5
+      }
+    ],
+    "hasFluffImages": true
+  }
+]

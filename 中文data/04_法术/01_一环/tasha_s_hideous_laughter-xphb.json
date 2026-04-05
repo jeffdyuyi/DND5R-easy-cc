@@ -1,0 +1,78 @@
+[
+  {
+    "ENG_name": "Tasha's Hideous Laughter",
+    "name": "塔莎狂笑术",
+    "source": "XPHB",
+    "page": 331,
+    "srd52": "狂笑术",
+    "basicRules2024": true,
+    "level": 1,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一块甜馅饼和一根羽毛"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "施法距离内你可见的一名生物进行一次感知豁免。豁免失败，目标在持续时间内陷入{@condition 倒地|XPHB}和{@condition 失能|XPHB}状态。在此期间，目标会不受控制地狂笑（只要它能够发笑），且无法结束自身的{@condition 倒地|XPHB}状态。",
+      "目标在其每回合结束或受到伤害时，可以再进行一次感知豁免。如果豁免是因受到伤害所致，则该次豁免具有{@variantrule 优势|XPHB}。豁免成功时，法术终止。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "使用的法术位每比一环高一环，你就可以额外选择一个生物作为目标。"
+        ]
+      }
+    ],
+    "conditionInflict": [
+      "失能",
+      "倒地"
+    ],
+    "savingThrow": [
+      "wisdom"
+    ],
+    "miscTags": [
+      "SCT",
+      "SGT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "惑控系",
+    "display_savingThrow": [
+      "感知"
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "ENG_name": "Two-Weapon Fighting",
+  "name": "双武器战斗",
+  "source": "PHB",
+  "page": 72,
+  "srd": true,
+  "otherSources": [
+    {
+      "source": "XGE",
+      "page": 15
+    },
+    {
+      "source": "PHB",
+      "page": 91
+    }
+  ],
+  "reprintedAs": [
+    {
+      "uid": "双武器战斗|XPHB",
+      "tag": "feat"
+    }
+  ],
+  "featureType": [
+    "FS:F",
+    "FS:B",
+    "FS:R"
+  ],
+  "entries": [
+    "当进行双持武器战斗时，你可以将相应属性调整值加到第二次攻击的伤害上。"
+  ],
+  "translator": "不全书"
+}

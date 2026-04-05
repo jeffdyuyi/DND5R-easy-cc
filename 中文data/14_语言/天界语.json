@@ -1,0 +1,16 @@
+{
+  "ENG_name": "Celestial",
+  "name": "天界语",
+  "source": "PHB",
+  "page": 123,
+  "srd": true,
+  "basicRules": true,
+  "reprintedAs": [
+    "天界语|XPHB"
+  ],
+  "type": "exotic",
+  "typicalSpeakers": [
+    "{@filter 天族|bestiary|type=celestial}"
+  ],
+  "script": "天界语"
+}

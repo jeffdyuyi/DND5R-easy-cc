@@ -1,0 +1,79 @@
+[
+  {
+    "ENG_name": "Summon Jack-o'-lantern",
+    "name": "召唤南瓜灯",
+    "source": "ObojimaTallGrass",
+    "page": 190,
+    "level": 5,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "杰克南瓜灯的碎片"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "一个巨型杰克南瓜灯迅速围绕你能看见的范围内一个5英尺半径区域内的至多四个中等或更小的生物或一个大型生物生长。区域内的不愿意的生物可以进行一次敏捷豁免检定，成功时跳跃到杰克南瓜灯外5英尺处。",
+      "当生物在南瓜灯内部时，它们只能通过南瓜灯的眼睛和嘴巴看出去，这些开口位于南瓜灯的一侧，由你在施放此法术时选择。这些生物只能从这一侧使用远程或触及武器进行攻击。在南瓜灯外部的生物看向其嘴巴或眼睛时，只能看到一团温暖、发光的光亮。只要南瓜灯存在，其内部或外部的任何生物都无法穿过或触及它。",
+      "杰克南瓜灯重5000磅，护甲等级为15，且有100点生命值。提灯每年自然失去20点生命值。当提灯的生命值缩小到0时，它会被摧毁。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "savingThrow": [
+      "敏捷"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Custom/Spells/Summon%20Jack-o-lantern.webp"
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "name": "麻痹",
+    "ENG_name": "Paralyzed",
+    "source": "PHB",
+    "page": 291,
+    "srd": true,
+    "basicRules": true,
+    "entries": [
+      {
+        "type": "list",
+        "items": [
+          "麻痹的生物陷入{@condition 失能}状态，并且无法移动或说话。",
+          "该生物进行力量和敏捷豁免时直接失败。",
+          "对该生物发动攻击检定时具有优势。",
+          "攻击者身处该生物身边5尺范围内时，其任何命中该生物的攻击都将直接造成重击。"
+        ]
+      }
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "conditionsdiseases/PHB/paralyzed.webp"
+          },
+          "width": 431,
+          "height": 314
+        }
+      ]
+    },
+    "hasFluffImages": true,
+    "otherSources": [
+      {
+        "source": "RMR",
+        "page": 62
+      },
+      {
+        "source": "HftT",
+        "page": 48
+      }
+    ],
+    "reprintedAs": [
+      "麻痹|XPHB"
+    ],
+    "translator": "不全书"
+  }
+]

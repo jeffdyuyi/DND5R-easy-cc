@@ -1,0 +1,25 @@
+{
+  "raceFluff": [
+    {
+      "ENG_name": "Gallus (Huden)",
+      "name": "雉族 (野)",
+      "source": "HumblewoodCampaignSetting",
+      "_copy": {
+        "ENG_name": "Gallus",
+        "name": "雉族",
+        "source": "HumblewoodCampaignSetting",
+        "_mod": {
+          "entries": {
+            "mode": "prependArr",
+            "items": {
+              "type": "section",
+              "entries": [
+                "作为野雉族，你与土地息息相关。就像阿玛兰斯·哈内拉一样，你与自然的宏大节奏有着独特的联系，作为回报，节奏赋予了你许多天赋。这种与自然的内在联系可能会让你远离城市生活，但你在森林更偏远的部分永远有一个家。"
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

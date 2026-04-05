@@ -1,0 +1,228 @@
+{
+  "ENG_name": "Path of the Wrathful Dead",
+  "name": "死亡愤怒道途",
+  "shortName": "死亡愤怒",
+  "source": "GrimHollowPG24",
+  "className": "野蛮人",
+  "classSource": "XPHB",
+  "page": 62,
+  "edition": "one",
+  "subclassFeatures": [
+    {
+      "ENG_name": "Path of the Wrathful Dead",
+      "name": "死亡愤怒道途",
+      "source": "GrimHollowPG24",
+      "page": 62,
+      "className": "野蛮人",
+      "classSource": "XPHB",
+      "subclassShortName": "死亡愤怒",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "entries": [
+        "{@i 引导不安亡者的狂暴}",
+        "行走死亡愤怒路途的野蛮人与逝者的精魂沟通并引导它们的灵体间谍力量。这些野蛮人常常专注于死亡在它们耳朵里的低语，这些低语促使它们按照幻象精魂的奇思妙想和情绪行事。一些行走此路途者学会掌握天赋者赋予它们的力量；另一些则发现它们已成为无尽喧嚣的仆人，这些喧嚣不断要求它们的注意。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "死亡狂暴|野蛮人|XPHB|死亡愤怒|GrimHollowPG24|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "最终黑夜宣泄|野蛮人|XPHB|死亡愤怒|GrimHollowPG24|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Final Night Catharsis",
+      "name": "最终黑夜宣泄",
+      "source": "GrimHollowPG24",
+      "page": 62,
+      "className": "野蛮人",
+      "classSource": "XPHB",
+      "subclassShortName": "死亡愤怒",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你被附近精魄在其死亡时所经历的情绪所淹没。你获得以下一个你选择的选项。每当你完成一次{@variantrule 长休|XPHB}，你可以改变你的选择。",
+        {
+          "ENG_name": "Hate",
+          "name": "憎恨",
+          "type": "entries",
+          "entries": [
+            "当你对生物的攻击检定未命中时，你在下一个回合结束前对它进行的下一次攻击检定具有{@variantrule 优势|XPHB}。"
+          ]
+        },
+        {
+          "ENG_name": "Jealousy",
+          "name": "嫉妒",
+          "type": "entries",
+          "entries": [
+            "当你{@condition 受擒|XPHB}的生物即将进行一次属性检定以结束其自身的{@condition 受擒|XPHB}状态时，你可以使用一个{@variantrule 反应|XPHB}来使该次掷骰获得{@variantrule 劣势|XPHB}。"
+          ]
+        },
+        {
+          "ENG_name": "Terror",
+          "name": "惧怖",
+          "type": "entries",
+          "entries": [
+            "当你处于{@condition 浴血|XPHB}状态时，你可以使用一个{@variantrule 附赠动作|XPHB}来执行{@action 疾走|XPHB}或{@action 撤离|XPHB}动作。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Rage of the Dead",
+      "name": "死亡狂暴",
+      "source": "GrimHollowPG24",
+      "page": 62,
+      "className": "野蛮人",
+      "classSource": "XPHB",
+      "subclassShortName": "死亡愤怒",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你的狂暴汲取了不安亡者的无尽狂怒。当你的狂暴处于激活状态时，你将获得不安精魂的特质并获得以下增益。",
+        {
+          "ENG_name": "Shadow Form",
+          "name": "幽影形态",
+          "type": "entries",
+          "entries": [
+            "你忽略{@variantrule 困难地形|XPHB}。此外，你可以穿过任何生物的空间，但不能在已占据空间结束移动。"
+          ]
+        },
+        {
+          "ENG_name": "Shadowy Sidestep",
+          "name": "暗影侧步",
+          "type": "entries",
+          "entries": [
+            "你的{@variantrule 速度|XPHB}增加10尺，且{@action 借机攻击|XPHB|借机攻击}对你具有{@variantrule 劣势|XPHB}。"
+          ]
+        },
+        {
+          "ENG_name": "Spectral Sight",
+          "name": "灵体预见",
+          "type": "entries",
+          "entries": [
+            "你可以看到120尺内具有{@condition 隐形|XPHB}状态的生物和物件，仿佛它们是可见的，并且你可以看到以太位面。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Dark Doom Revisited",
+      "name": "黑暗末日重访",
+      "source": "GrimHollowPG24",
+      "page": 63,
+      "className": "野蛮人",
+      "classSource": "XPHB",
+      "subclassShortName": "死亡愤怒",
+      "subclassSource": "GrimHollowPG24",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "每次激活狂暴时，你可以消耗一个{@action 魔法|XPHB}动作来引导一次创伤性死亡。当你这样做时，选择以下一项。",
+        {
+          "ENG_name": "Contamination",
+          "name": "污染",
+          "type": "entries",
+          "entries": [
+            "在你的回合开始时，你选择的10尺{@variantrule 光环 [效应区域]|XPHB|光环}范围内的每个生物必须进行一次体质豁免检定（DC 8加上你的体质调整值和{@variantrule 熟练|XPHB|熟练加值}），否则受到毒素伤害并获得{@condition 中毒|XPHB}状态1分钟。",
+            "为确定毒素伤害，掷骰等同于你狂暴伤害加值数量的d6，并将它们相加。受影响的生物可以使用一个动作来结束其自身的{@condition 中毒|XPHB}状态。"
+          ]
+        },
+        {
+          "ENG_name": "Hypothermia",
+          "name": "低温症",
+          "type": "entries",
+          "entries": [
+            "在你的每个回合开始时，你选择的10尺{@variantrule 光环 [效应区域]|XPHB|光环}范围内的每个生物必须进行一次体质豁免检定（DC 8加上你的力量调整值和{@variantrule 熟练|XPHB|熟练加值}），否则受到寒冷伤害并且其{@variantrule 速度|XPHB}减半，持续1分钟。",
+            "为确定寒冷伤害，掷骰等同于你狂暴伤害加值数量的d6，并将它们相加。一个生物可以用一个动作来结束其自身的此效应。"
+          ]
+        },
+        {
+          "ENG_name": "Immolation",
+          "name": "焚烧术",
+          "type": "entries",
+          "entries": [
+            "在每个你所选择的生物回合开始时，位于你15尺范围内的{@variantrule 光环 [效应区域]|XPHB|光环}（效应区域）内的每个生物必须进行一次敏捷豁免检定（DC 8加上你的体质调整值和{@variantrule 熟练|XPHB|熟练加值}）否则受到火焰伤害。",
+            "要确定火焰伤害，掷骰等同于你狂暴伤害加值数量的d6，并将它们相加。作为一个动作，生物可以通过给自己施加{@condition 倒地|XPHB}状态并在地面上滚动来熄灭身上的火焰。如果被浇灭、浸没或窒息，火焰也会熄灭。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Death Is but a Door",
+      "name": "死亡不过是一扇门扉",
+      "source": "GrimHollowPG24",
+      "page": 63,
+      "className": "野蛮人",
+      "classSource": "XPHB",
+      "subclassShortName": "死亡愤怒",
+      "subclassSource": "GrimHollowPG24",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "你对死亡的熟悉程度使你对其召唤产生了抗性。你获得以下增益。",
+        {
+          "ENG_name": "Hard to Kill",
+          "name": "难以杀死",
+          "type": "entries",
+          "entries": [
+            "你在{@variantrule 死亡豁免检定|XPHB|死亡豁免检定}上具有{@variantrule 优势|XPHB}。此外，你必须失败四次{@variantrule 死亡豁免检定|XPHB|死亡豁免检定}才会死亡，而非正常的三次。"
+          ]
+        },
+        {
+          "ENG_name": "Return the Spirit",
+          "name": "回归精魄",
+          "type": "entries",
+          "entries": [
+            "你可以呼唤逝者的精魂来为附近的生物恢复生命精华。你可以不提供材料成分施放{@spell 疗伤术|XPHB}、{@spell 死者复活|XPHB}或{@spell 回生术|XPHB}。当你这样做时，施放{@spell 疗伤术|XPHB}获得1个{@condition 力竭|XPHB}等级，施放{@spell 回生术|XPHB}获得2个{@condition 力竭|XPHB}等级，施放{@spell 死者复活|XPHB}获得3个{@condition 力竭|XPHB}等级。体质是该特性的施法属性。"
+          ]
+        },
+        "一旦你使用了此特性，除非你消耗两次狂暴（无需动作）来复原其使用次数，否则你将无法再次使用它，直到你完成一次{@variantrule 长休|XPHB}。"
+      ]
+    },
+    {
+      "ENG_name": "Powered by Pathos",
+      "name": "由悲怆驱动",
+      "source": "GrimHollowPG24",
+      "page": 63,
+      "className": "野蛮人",
+      "classSource": "XPHB",
+      "subclassShortName": "死亡愤怒",
+      "subclassSource": "GrimHollowPG24",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "你的狂暴由不平静亡灵的压倒性情绪所驱动。你的最终黑夜宣泄特性根据选民的情绪授予一个额外效应。",
+        {
+          "ENG_name": "Hate",
+          "name": "憎恨",
+          "type": "entries",
+          "entries": [
+            "当你的狂暴处于激活状态时，你使用武器和{@variantrule 徒手打击|XPHB|徒手打击}的攻击在{@dice d20}掷出19或20时会造成{@variantrule 重击|XPHB}。"
+          ]
+        },
+        {
+          "ENG_name": "Jealousy",
+          "name": "嫉妒",
+          "type": "entries",
+          "entries": [
+            "每当你能看见的一个生物在你的狂暴激活时在其回合开始时处于你30尺内，你可以采取一个{@variantrule 反应|XPHB}来召唤灵体间谍擒抱该生物。该生物进行一次力量或敏捷豁免检定（DC 8加上你的体质调整值和{@variantrule 熟练|XPHB|熟练加值}）。若失败，该生物获得{@condition 受擒|XPHB}状态直到其回合结束。若豁免成功，该生物不会{@condition 受擒|XPHB}；然而，直到其回合结束前，该生物的每尺移动力将额外花费1尺。"
+          ]
+        },
+        {
+          "ENG_name": "Terror",
+          "name": "惧怖",
+          "type": "entries",
+          "entries": [
+            "每当你能看见的生物在你的狂暴激活时在其回合开始时处于你30尺内，你可以使用一个{@variantrule 反应|XPHB}使该生物陷入惧怖状态直到其下个回合开始。惧怖生物的{@variantrule 速度|XPHB}减半且对其的{@action 借机攻击|XPHB|借机攻击}具有{@variantrule 优势|XPHB}。"
+          ]
+        }
+      ]
+    }
+  ],
+  "hasFluff": true,
+  "hasFluffImages": true
+}

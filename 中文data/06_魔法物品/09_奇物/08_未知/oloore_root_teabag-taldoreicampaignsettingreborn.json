@@ -1,0 +1,21 @@
+[
+  {
+    "ENG_name": "Oloore Root Teabag",
+    "name": "奥洛尔根茶包",
+    "source": "TalDoreiCampaignSettingReborn",
+    "page": 85,
+    "type": "IDG|TalDoreiCampaignSettingReborn",
+    "rarity": "unknown",
+    "value": 10000,
+    "entries": [
+      "这种根通常以{@item 奥洛尔根茶包|TalDoreiCampaignSettingReborn|以茶包形式出售}的形式出售，每剂100GP。它最初是许多神的追随者使用的仪式工具，但现在更多地用于三瓦四舍。先知们用它来增强他们的预言能力，因为它帮助他们脱离肉体，更接近神和精魂。饮用由这种根冲泡的茶会引起强烈的幻觉，这些幻觉会让饮用者感觉获得了完美的感官清晰度。",
+      "以动作用饮下{@item 奥洛尔根茶包|TalDoreiCampaignSettingReborn|奥洛尔茶}后，你必须成功通过{@dc 19}的体质{@quickref 豁免检定|PHB|2|1|豁免检定}否则会经历生动的幻象持续{@dice 1d4}小时。在此期间，你在攻击检定和{@quickref 优势与劣势|PHB|2|0|劣势}上具有{@quickref 属性检定|PHB|2|0}。若你在{@quickref 豁免检定|PHB|2|1|豁免检定}上失败且差值达到10或更多，你的幻象会变成恐怖的幻象并且获得一级{@condition 力竭}。若成功，你将获得超自然的清晰度，允许你在接下来的{@dice 1d4}小时内施放一次{@spell 探知术}法术。"
+    ],
+    "attachedSpells": [
+      "探知术"
+    ],
+    "miscTags": [
+      "CNS"
+    ]
+  }
+]

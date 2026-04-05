@@ -1,0 +1,206 @@
+{
+  "ENG_name": "Wretched Bloodline Sorcery",
+  "name": "乞食血统法术",
+  "shortName": "乞食",
+  "source": "GrimHollowPG24",
+  "className": "术士",
+  "classSource": "XPHB",
+  "page": 96,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "known": {
+        "3": [
+          "侦测善恶|XPHB"
+        ]
+      }
+    },
+    {
+      "prepared": {
+        "6": [
+          "降咒|XPHB"
+        ]
+      }
+    }
+  ],
+  "subclassSpells": [
+    "侦测善恶|XPHB",
+    "降咒|XPHB"
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "Wretched Bloodline Sorcery",
+      "name": "乞食血统法术",
+      "source": "GrimHollowPG24",
+      "page": 96,
+      "className": "术士",
+      "classSource": "XPHB",
+      "subclassShortName": "乞食",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "entries": [
+        "{@i 将你的诅咒当作武器使用}",
+        "每当向仙灵低语承诺，与魔鬼签订合同，或与死者缔结契约时，总有人可能无法履行约定的义务。不朽存在的复仇远比一生更长久，而这些诅咒的残留魔法会影响凡人的后代。",
+        "这些遗传的魔法折磨可能表现为瘟疫、畸形或对太阳的厌恶。在这样的家族中，出生的孩子可能会学会掌握他们遗传诅咒中的潜在魔法，将他们的灾祸转化为个人的恩赐——这些术士被统称为乞食。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "坏的吉兆魅惑|术士|XPHB|乞食|GrimHollowPG24|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "鲜血数值相同|术士|XPHB|乞食|GrimHollowPG24|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "悲惨诅咒|术士|XPHB|乞食|GrimHollowPG24|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Bad Luck Charm",
+      "name": "坏的吉兆魅惑",
+      "source": "GrimHollowPG24",
+      "page": 96,
+      "className": "术士",
+      "classSource": "XPHB",
+      "subclassShortName": "乞食",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你拥有将一丝诅咒暂时施加于他人的能力。以一个{@variantrule 附赠动作|XPHB}，选择30尺内你能看见的一个生物。该选民在你下个回合开始前进行的下一次{@variantrule D20 检定|XPHB}具有{@variantrule 劣势|XPHB}。",
+        "一旦你使用了此特性，在完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}前无法再次使用，除非你消耗1点术法点（无需动作）来复原其使用次数。"
+      ]
+    },
+    {
+      "ENG_name": "Blood Ties",
+      "name": "鲜血数值相同",
+      "source": "GrimHollowPG24",
+      "page": 97,
+      "className": "术士",
+      "classSource": "XPHB",
+      "subclassShortName": "乞食",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你的感官能轻易同调导致你遗传病症的超然力场。你总是准备有{@spell 侦测善恶|XPHB}法术并能不消耗法术位施放它。",
+        "此外，选择以下一种生物类型作为诅咒你先祖的存在：妖精、邪魔或亡灵。在你维持{@status 专注|XPHB}于{@spell 侦测善恶|XPHB}的每个回合（包括施放该法术的回合），所选类型的生物对你进行攻击检定时具有{@variantrule 劣势|XPHB}，且你无法被此类生物附身、{@condition 魅惑|XPHB}或{@condition 恐慌|XPHB}。",
+        "一旦你通过此特性施放该法术，在完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}前无法再次以此方式施放。"
+      ]
+    },
+    {
+      "ENG_name": "Wretched Curse",
+      "name": "悲惨诅咒",
+      "source": "GrimHollowPG24",
+      "page": 97,
+      "className": "术士",
+      "classSource": "XPHB",
+      "subclassShortName": "乞食",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你承受着一个从先祖那里继承来的诅咒，这位先祖未能履行与异界力量达成的协议。选择以下传递给你的诅咒之一。",
+        {
+          "ENG_name": "Hulking",
+          "name": "庞大",
+          "type": "entries",
+          "entries": [
+            "你的先祖被诅咒拥有庞大的体型。你在通过安静移动来逃脱注意的敏捷（{@skill 隐匿|XPHB}）检定上具有{@variantrule 劣势|XPHB}。此外，你的{@variantrule 生命值|XPHB|生命值}上限增加1点，并且每当你获得另一个术士等级时，它再增加1点。最后，在确定你的载重时，你被视为体型大一级。"
+          ]
+        },
+        {
+          "ENG_name": "Nocturnal",
+          "name": "夜间活动",
+          "type": "entries",
+          "entries": [
+            "你的先祖被诅咒要避开白昼的光亮。当你在阳光中时，依赖视觉的感知（{@skill 察觉|XPHB}）检定有{@variantrule 劣势|XPHB}。此外，你能在120尺内正常视物于{@variantrule 微光光照|XPHB}和{@variantrule 黑暗|XPHB}——无论是魔法的还是非魔法的。"
+          ]
+        },
+        {
+          "ENG_name": "Plaguebearer",
+          "name": "瘟疫使者",
+          "type": "entries",
+          "entries": [
+            "你的先祖被诅咒带有瘟疫的生理症状。你在对5尺内一个{@variantrule 冷漠【态度】|XPHB|冷漠}类人生物施加{@skill 游说|XPHB}游说检定时具有{@variantrule 劣势|XPHB}劣势。此外，你对{@condition 中毒|XPHB}中毒状态具有{@variantrule 免疫|XPHB|免疫}，并对暗蚀伤害具有{@variantrule 抗性|XPHB}抗性。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Share the Burden",
+      "name": "分担咒缚",
+      "source": "GrimHollowPG24",
+      "page": 97,
+      "className": "术士",
+      "classSource": "XPHB",
+      "subclassShortName": "乞食",
+      "subclassSource": "GrimHollowPG24",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "你总是准备有{@spell 降咒|XPHB}法术。你可以通过消耗3点术法点而非法术位来施放该法术。当你以此方式施放该法术时，该法术不需要{@status 专注|XPHB}，且其施法范围变为60尺。"
+      ]
+    },
+    {
+      "ENG_name": "Terrifying Visage",
+      "name": "恐怖容貌",
+      "source": "GrimHollowPG24",
+      "page": 97,
+      "className": "术士",
+      "classSource": "XPHB",
+      "subclassShortName": "乞食",
+      "subclassSource": "GrimHollowPG24",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "作为{@variantrule 附赠动作|XPHB}，你可以展现出诅咒你先祖存在的恐怖容貌，持续10分钟。在此期间，你可以使用一个{@action 魔法|XPHB}动作，使你30尺内能看见的自选生物进行一次感知豁免检定。若豁免失败，目标将获得{@condition 恐慌|XPHB}状态，直到你的下个回合结束。此外，当你的恐怖容貌特性激活时，根据鲜血数值相同特性选择的生物类型，你将获得以下增益。",
+        {
+          "ENG_name": "Fey",
+          "type": "entries",
+          "name": "妖精",
+          "entries": [
+            "作为{@variantrule 附赠动作|XPHB}，你可以传送至多30尺到一个你能看见的未占据空间。"
+          ]
+        },
+        {
+          "ENG_name": "Fiend",
+          "type": "entries",
+          "name": "邪魔",
+          "entries": [
+            "你对寒冷和火焰伤害具有{@variantrule 抗性|XPHB}抗性。"
+          ]
+        },
+        {
+          "ENG_name": "Undead",
+          "type": "entries",
+          "name": "亡灵",
+          "entries": [
+            "当你受到光耀伤害以外的任何类型伤害时，你可以使用一个{@variantrule 反应|XPHB}来将伤害减少相当于你术士等级的一半。"
+          ]
+        },
+        "一旦你使用了恐怖容貌，在完成一次{@variantrule 长休|XPHB}前不能再次使用。"
+      ]
+    },
+    {
+      "ENG_name": "Vengeful Summons",
+      "name": "睚眦必报召唤",
+      "source": "GrimHollowPG24",
+      "page": 97,
+      "className": "术士",
+      "classSource": "XPHB",
+      "subclassShortName": "乞食",
+      "subclassSource": "GrimHollowPG24",
+      "level": 18,
+      "header": 2,
+      "entries": [
+        "你的魔法已强大到足以召唤并命令那些诅咒你的存在的仆役。根据你在鲜血数值相同特性中选择的选项，从以下生物中选择一项：{@creature 拉迷亚|XMM}或{@creature 巨魔|XMM}（仅限妖精），{@creature 猬魔|XMM}、{@creature 梦魔|XMM}或{@creature 魅魔|XMM}（仅限邪魔），{@creature 幽魂|XMM}或{@creature 邪灵|XMM}（仅限亡灵）。",
+        "你可以消耗5个术法点并执行一个{@action 魔法|XPHB}动作来召唤你的选民生物。该生物会出现在你60尺内可见的一个未占据空间中。当它的{@variantrule 生命值|XPHB}降至0、你使用此特性召唤另一个生物或10分钟过去后，它会消失。",
+        "该生物是你和你盟友的盟友。它在战斗中使用你的{@variantrule 先攻|XPHB}，并在你回合结束后立即执行其回合。它遵从于你的口头指令（无需任何动作）。如果你不发令，它将执行{@action 回避|XPHB}动作并使用其移动力以远离危险。"
+      ]
+    }
+  ],
+  "hasFluff": true,
+  "hasFluffImages": true
+}

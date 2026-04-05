@@ -1,0 +1,236 @@
+{
+  "ENG_name": "Nature Domain",
+  "name": "自然领域",
+  "shortName": "自然",
+  "source": "PHB",
+  "className": "牧师",
+  "classSource": "PHB",
+  "page": 61,
+  "srd": true,
+  "basicRules": true,
+  "edition": "classic",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "1": [
+          "动物交谈|PHB",
+          "纠缠术|PHB"
+        ],
+        "3": [
+          "树肤术|PHB",
+          "荆棘丛生|PHB"
+        ],
+        "5": [
+          "植物滋长|PHB",
+          "风墙术|PHB"
+        ],
+        "7": [
+          "陆行术|PHB",
+          "植物定身术|PHB"
+        ],
+        "9": [
+          "疫病术|PHB",
+          "树步术|PHB"
+        ]
+      }
+    }
+  ],
+  "subclassFeatures": [
+    "自然领域|牧师||自然||1",
+    "引导神力：魅惑动植物|牧师||自然||2",
+    "抑制元素|牧师||自然||6",
+    "神圣打击|牧师||自然||8",
+    "受祝击|牧师||自然||8|TCE",
+    "自然大师|牧师||自然||17"
+  ],
+  "features": [
+    {
+      "ENG_name": "Nature Domain",
+      "name": "自然领域",
+      "source": "PHB",
+      "page": 61,
+      "srd": true,
+      "basicRules": true,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "自然",
+      "subclassSource": "PHB",
+      "level": 1,
+      "entries": [
+        "自然领域的神明从古初的繁茂自然到广阔荒野的守护者各不相同。深入这一领域的牧师学习荒野的秘密，搜寻隐秘的林间空地，探索未知的荒野。对他们来说，自然不仅仅是背景，更是神圣的存在，而保护自然免受工业或邪恶的破坏是他们的神圣使命。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "领域法术|牧师||自然||1"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "自然侍者|牧师||自然||1"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "附赠熟练|牧师||自然||1"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Domain Spells",
+      "name": "领域法术",
+      "source": "PHB",
+      "page": 62,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "自然",
+      "subclassSource": "PHB",
+      "level": 1,
+      "entries": [
+        "你在到达自然领域法术表中特定的牧师等级时，你就始终准备了表中对应的法术。关于领域法术如何工作，请参阅神圣领域职业特性。",
+        {
+          "type": "table",
+          "caption": "自然领域法术",
+          "colLabels": [
+            "牧师等级",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "1st",
+              "{@spell 动物交谈|PHB}, {@spell 纠缠术|PHB}"
+            ],
+            [
+              "3rd",
+              "{@spell 树肤术|PHB}, {@spell 荆棘丛生|PHB}"
+            ],
+            [
+              "5th",
+              "{@spell 植物滋长|PHB}, {@spell 风墙术|PHB}"
+            ],
+            [
+              "7th",
+              "{@spell 陆行术|PHB}, {@spell 植物定身术|PHB}"
+            ],
+            [
+              "9th",
+              "{@spell 疫病术|PHB}, {@spell 树步术|PHB}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Acolyte of Nature",
+      "name": "自然侍者",
+      "source": "PHB",
+      "page": 62,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "自然",
+      "subclassSource": "PHB",
+      "level": 1,
+      "header": 1,
+      "entries": [
+        "第1级时，你习得一个德鲁伊戏法（由你选择）。此外，你还在下述技能中选择一项获得熟练项：{@skill 驯兽|PHB}、{@skill 自然|PHB}或{@skill 生存|PHB}。"
+      ]
+    },
+    {
+      "ENG_name": "Bonus Proficiency",
+      "name": "附赠熟练",
+      "source": "PHB",
+      "page": 62,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "自然",
+      "subclassSource": "PHB",
+      "level": 1,
+      "header": 1,
+      "entries": [
+        "当你1级选择此领域时，你获得重甲的熟练项。"
+      ]
+    },
+    {
+      "ENG_name": "Channel Divinity: Charm Animals and Plants",
+      "name": "引导神力：魅惑动植物",
+      "source": "PHB",
+      "page": 62,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "自然",
+      "subclassSource": "PHB",
+      "level": 2,
+      "header": 2,
+      "consumes": {
+        "ENG_name": "Channel Divinity",
+        "name": "引导神力"
+      },
+      "entries": [
+        "第2级起，你可以使用你的引导神力来魅惑野兽和植物生物。",
+        "作为一个动作，你展示圣徽并呼唤自然之名。你身边 30 尺内每个能看见或听见你的野兽或植物生物都必须进行一次感知豁免。如果该生物豁免失败，则它被你魅惑（持续 1 分钟，或者直到它受到伤害）。被魅惑期间，它对你和你的盟友保持友好。"
+      ]
+    },
+    {
+      "ENG_name": "Dampen Elements",
+      "name": "抑制元素",
+      "source": "PHB",
+      "page": 62,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "自然",
+      "subclassSource": "PHB",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "第6级起，当你或你身边 30 尺内的一名生物受到冷冻、火焰、雷鸣或闪电伤害时，你可以使用你的反应来让该生物对该次伤害具有抗性。"
+      ]
+    },
+    {
+      "ENG_name": "Divine Strike",
+      "name": "神圣打击",
+      "source": "PHB",
+      "page": 62,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "自然",
+      "subclassSource": "PHB",
+      "level": 8,
+      "header": 2,
+      "entries": [
+        "第8级起，你获得将能量灌注进武器攻击的能力。你每回合一次在武器攻击命中生物时，可以选择让该攻击额外对目标造成 {@damage 1d8} 点冷冻、火焰或闪电伤害（由你选择）。当你到达14级时，该额外伤害增加到 {@damage 2d8} 点。"
+      ]
+    },
+    {
+      "ENG_name": "Blessed Strikes",
+      "name": "受祝击",
+      "source": "TCE",
+      "page": 30,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "自然",
+      "subclassSource": "PHB",
+      "level": 8,
+      "isClassFeatureVariant": true,
+      "header": 2,
+      "entries": [
+        "{@i 8级牧师{@variantrule 可选职业特性|TCE|可选特性}，取代神圣打击特性}",
+        "在战斗中，你受到神力的祝福。当你通过戏法 or 武器攻击来伤害一个生物时，你能够对该生物造成额外{@damage 1d8}光耀伤害。当你造成一次此伤害后，你直到自己的下一个回合开始前无法再次使用此特性。"
+      ]
+    },
+    {
+      "ENG_name": "Master of Nature",
+      "name": "自然大师",
+      "source": "PHB",
+      "page": 62,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "自然",
+      "subclassSource": "PHB",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "第17级起，你获得命令动物和植物生物的能力。当生物被你的“引导神力：魅惑动植物”特性魅惑期间，你可以以一个附赠动作向每一个该类生物下达口头命令，决定其在下一回合执行什么动作。"
+      ]
+    }
+  ]
+}

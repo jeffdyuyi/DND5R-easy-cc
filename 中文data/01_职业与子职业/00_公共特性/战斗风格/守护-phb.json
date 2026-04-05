@@ -1,0 +1,27 @@
+{
+  "ENG_name": "Protection",
+  "name": "守护",
+  "source": "PHB",
+  "page": 72,
+  "srd": true,
+  "otherSources": [
+    {
+      "source": "PHB",
+      "page": 84
+    }
+  ],
+  "reprintedAs": [
+    {
+      "uid": "守护|XPHB",
+      "tag": "feat"
+    }
+  ],
+  "featureType": [
+    "FS:F",
+    "FS:P"
+  ],
+  "entries": [
+    "当某个你能看见的生物攻击你身边5尺内除你之外的目标时，你可以用反应迫使该攻击的攻击检定具有劣势。你必须持用盾牌以实现该效果。"
+  ],
+  "translator": "不全书"
+}

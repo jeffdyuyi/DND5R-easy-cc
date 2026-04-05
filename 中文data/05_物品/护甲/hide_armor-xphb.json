@@ -1,0 +1,32 @@
+[
+  {
+    "name": "兽皮甲",
+    "ENG_name": "Hide Armor",
+    "source": "XPHB",
+    "page": 219,
+    "edition": "one",
+    "type": "MA|XPHB",
+    "rarity": "none",
+    "weight": 12,
+    "value": 1000,
+    "ac": 12,
+    "armor": true,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XPHB/Hide Armor.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 347,
+          "height": 507
+        }
+      ]
+    },
+    "basicRules2024": true,
+    "hasFluffImages": true,
+    "srd52": true
+  }
+]

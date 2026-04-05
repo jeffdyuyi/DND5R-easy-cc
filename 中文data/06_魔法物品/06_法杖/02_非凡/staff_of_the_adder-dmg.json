@@ -1,0 +1,61 @@
+[
+  {
+    "ENG_name": "Staff of the Adder",
+    "name": "蝰蛇法杖",
+    "source": "DMG",
+    "page": 203,
+    "referenceSources": [
+      "CRCotN"
+    ],
+    "reprintedAs": [
+      "蝰蛇法杖|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": "由牧师、德鲁伊或魔契师",
+    "reqAttuneTags": [
+      {
+        "class": "牧师"
+      },
+      {
+        "class": "德鲁伊"
+      },
+      {
+        "class": "魔契师"
+      }
+    ],
+    "weight": 4,
+    "weaponCategory": "simple",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "staff": true,
+    "entries": [
+      "你可以用一个附赠动作说出该法杖的命令语，并将法杖的头部活化为一条毒蛇，效应持续1分钟。你可以用另一个附赠动作再次说出该命令语使法杖还原。",
+      "你可以使用蛇头发动一次近战攻击，其触及为5尺。你的熟练加值适用于该攻击检定。若攻击命中，则目标受到{@damage 1d6}点穿刺伤害并且必须成功通过一次{@dc 15}的体质豁免否则受{@damage 3d6}点毒素伤害。",
+      "法杖头部活化为蛇头期间可以被指定为攻击目标。它具有AC 15和20点生命值。当蛇头的生命值降至0时，法杖将被摧毁。只要法杖未被摧毁，它就会在恢复非活化状态时恢复所有失去的生命值。"
+    ],
+    "lootTables": [
+      "魔法物品表F"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Staff of the Adder.webp"
+          },
+          "width": 148,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "ST"
+  }
+]

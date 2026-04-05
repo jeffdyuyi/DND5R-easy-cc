@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Horn of Valhalla, Silver",
+    "name": "瓦尔哈拉号角，白银",
+    "source": "DMG",
+    "page": 175,
+    "srd": true,
+    "referenceSources": [
+      "KftGV",
+      "ToFW",
+      "CoA"
+    ],
+    "reprintedAs": [
+      "瓦尔哈拉号角，白银|XDMG"
+    ],
+    "baseItem": "号角|PHB",
+    "type": "INS",
+    "tier": "主要",
+    "rarity": "rare",
+    "wondrous": true,
+    "weight": 2,
+    "entries": [
+      "你可以用一个动作吹响这个号角。作为回应，伊斯加德的战士英灵们将在你周围60尺内出现。这些英灵使用{@creature 狂战士}的具体数值。他们在1小时后或者生命值降至0时返回伊斯加德。一旦你使用了号角，它需要经过7日才能再次使用。",
+      "该白银号角召唤 {@dice 2d4 + 2} 名{@creature 狂战士||狂战士们}。",
+      "被召唤的{@creature 狂战士||狂战士们}对你和你的伙伴态度友善，并遵循你的命令。"
+    ],
+    "lootTables": [
+      "魔法物品表G"
+    ],
+    "valueReference": 4000
+  }
+]

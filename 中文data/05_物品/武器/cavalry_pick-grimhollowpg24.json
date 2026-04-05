@@ -1,0 +1,26 @@
+[
+  {
+    "ENG_name": "Cavalry Pick",
+    "name": "骑兵精选",
+    "source": "GrimHollowPG24",
+    "page": 128,
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 3,
+    "value": 50000,
+    "weaponCategory": "进阶",
+    "property": [
+      "AP|GrimHollowPG24",
+      "Mom|GrimHollowPG24"
+    ],
+    "mastery": [
+      "削弱|XPHB"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "weapon": true,
+    "customProperties": {
+      "Momentum": "{@dice 1d12}"
+    }
+  }
+]

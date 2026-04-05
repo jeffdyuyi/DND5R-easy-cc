@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Borrowed Knowledge",
+    "name": "借鉴才学",
+    "source": "SCC",
+    "page": 37,
+    "level": 2,
+    "school": "D",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一本价值至少25gp的书",
+        "cost": 2500
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你从往昔的魂灵中获取知识。选择一项你没有熟练的技能。在法术的持续时间里，你拥有所选技能的熟练项。如果你再次释放该法术，该法术会提前结束。"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "牧师",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "预言系"
+  }
+]

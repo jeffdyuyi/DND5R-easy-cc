@@ -1,0 +1,422 @@
+[
+  {
+    "name": "人类 (依尼翠)",
+    "ENG_name": "Human (Innistrad)",
+    "source": "PSI",
+    "page": 8,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "languageProficiencies": [
+      {
+        "common": true,
+        "anyStandard": 1
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Age",
+        "name": "年龄",
+        "type": "entries",
+        "entries": [
+          "人类不到20岁成年，而很少活过100 岁。"
+        ]
+      },
+      {
+        "ENG_name": "Alignment",
+        "name": "阵营",
+        "type": "entries",
+        "entries": [
+          "人类没有特别倾向于任何特定的阵营。"
+        ]
+      },
+      {
+        "ENG_name": "Size",
+        "name": "体型",
+        "type": "entries",
+        "entries": [
+          "人类身高差距很大，有的刚好5尺高，而有的甚至高过6尺。不论你有多高，你的体型皆为中型。"
+        ]
+      },
+      {
+        "ENG_name": "Languages",
+        "name": "语言",
+        "entries": [
+          "你能说、读、写通用语和一种你选择的额外语言。"
+        ],
+        "type": "entries"
+      }
+    ],
+    "subraces": [
+      {
+        "name": "加渥尼",
+        "ENG_name": "Gavony",
+        "source": "PSI",
+        "page": 8,
+        "ability": [
+          {
+            "str": 1,
+            "dex": 1,
+            "con": 1,
+            "int": 1,
+            "wis": 1,
+            "cha": 1
+          }
+        ],
+        "fluff": {
+          "entries": [
+            "尼瑟拉德的人口主要是人类，在一个尼瑟拉德战役中，玩家角色在大多数情况下应该是人类。然而，凯西格的人类在许多方面与加沃尼的不同，而内普拉利亚的城市文化与被阴影笼罩的斯泰尼亚土地非常不同。玩家角色之间的多样性不是来自种族，而是来自每个角色的家乡省份。"
+          ],
+          "images": [
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSI/Innistrad.webp"
+              },
+              "title": "恐怖墓园守卫",
+              "credit": "Ryan Pancoast",
+              "width": 617,
+              "height": 673
+            },
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSI/Innistrad2.webp"
+              },
+              "title": "银刃圣武士",
+              "credit": "Jason Chan",
+              "width": 865,
+              "height": 624
+            },
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSI/Innistrad3.webp"
+              },
+              "title": "月神秘术师",
+              "credit": "Wesley Burt",
+              "width": 807,
+              "height": 575
+            }
+          ]
+        },
+        "hasFluff": true,
+        "hasFluffImages": true,
+        "raceName": "人类 (依尼翠)",
+        "raceSource": "PSI"
+      },
+      {
+        "name": "凯锡革",
+        "ENG_name": "Kessig",
+        "source": "PSI",
+        "page": 8,
+        "speed": 40,
+        "ability": [
+          {
+            "dex": 1,
+            "wis": 1
+          }
+        ],
+        "skillProficiencies": [
+          {
+            "survival": true
+          }
+        ],
+        "entries": [
+          {
+            "ENG_name": "Forest Folk",
+            "name": "森之住民",
+            "entries": [
+              "你在{@skill 求生}技能上具有熟练项。"
+            ],
+            "type": "entries"
+          },
+          {
+            "ENG_name": "Fleet of Foot",
+            "name": "轻捷步伐",
+            "entries": [
+              "你的基础步行速度为40尺。"
+            ],
+            "type": "entries"
+          },
+          {
+            "ENG_name": "Sure-footed",
+            "name": "稳步",
+            "entries": [
+              "你执行{@action 疾走}的相应回合内，在{@quickref 困难地形||3}的移动不再消耗额外的移动力。"
+            ],
+            "type": "entries"
+          },
+          {
+            "ENG_name": "Spring Attack",
+            "name": "活力攻击",
+            "entries": [
+              "当你对一个生物进行近战攻击时，无论是否命中，你在本回合内都不会引发该生物的借机攻击。"
+            ],
+            "type": "entries"
+          }
+        ],
+        "fluff": {
+          "entries": [
+            "尼瑟拉德的人口主要是人类，在一个尼瑟拉德战役中，玩家角色在大多数情况下应该是人类。然而，凯西格的人类在许多方面与加沃尼的不同，而内普拉利亚的城市文化与被阴影笼罩的斯泰尼亚土地非常不同。玩家角色之间的多样性不是来自种族，而是来自每个角色的家乡省份。"
+          ],
+          "images": [
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSI/Innistrad.webp"
+              },
+              "title": "恐怖墓园守卫",
+              "credit": "Ryan Pancoast",
+              "width": 617,
+              "height": 673
+            },
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSI/Innistrad2.webp"
+              },
+              "title": "银刃圣武士",
+              "credit": "Jason Chan",
+              "width": 865,
+              "height": 624
+            },
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSI/Innistrad3.webp"
+              },
+              "title": "月神秘术师",
+              "credit": "Wesley Burt",
+              "width": 807,
+              "height": 575
+            }
+          ]
+        },
+        "hasFluff": true,
+        "hasFluffImages": true,
+        "raceName": "人类 (依尼翠)",
+        "raceSource": "PSI"
+      },
+      {
+        "name": "涅非利亚",
+        "ENG_name": "Nephalia",
+        "source": "PSI",
+        "page": 8,
+        "ability": [
+          {
+            "int": 1,
+            "cha": 1
+          }
+        ],
+        "traitTags": [
+          "技能熟练",
+          "工具熟练"
+        ],
+        "entries": [
+          {
+            "ENG_name": "Breadth of Knowledge",
+            "name": "广博学识",
+            "entries": [
+              "你获得任意四个技能或四种自选{@book 工具|PHB|5|工具}的熟练项。"
+            ],
+            "type": "entries"
+          }
+        ],
+        "fluff": {
+          "entries": [
+            "尼瑟拉德的人口主要是人类，在一个尼瑟拉德战役中，玩家角色在大多数情况下应该是人类。然而，凯西格的人类在许多方面与加沃尼的不同，而内普拉利亚的城市文化与被阴影笼罩的斯泰尼亚土地非常不同。玩家角色之间的多样性不是来自种族，而是来自每个角色的家乡省份。"
+          ],
+          "images": [
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSI/Innistrad.webp"
+              },
+              "title": "恐怖墓园守卫",
+              "credit": "Ryan Pancoast",
+              "width": 617,
+              "height": 673
+            },
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSI/Innistrad2.webp"
+              },
+              "title": "银刃圣武士",
+              "credit": "Jason Chan",
+              "width": 865,
+              "height": 624
+            },
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSI/Innistrad3.webp"
+              },
+              "title": "月神秘术师",
+              "credit": "Wesley Burt",
+              "width": 807,
+              "height": 575
+            }
+          ]
+        },
+        "hasFluff": true,
+        "hasFluffImages": true,
+        "raceName": "人类 (依尼翠)",
+        "raceSource": "PSI",
+        "skillToolLanguageProficiencies": [
+          {
+            "choose": [
+              {
+                "from": [
+                  "任意技能",
+                  "任意工具"
+                ],
+                "count": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "史顿襄",
+        "ENG_name": "Stensia",
+        "source": "PSI",
+        "page": 8,
+        "ability": [
+          {
+            "str": 1,
+            "con": 1
+          }
+        ],
+        "skillProficiencies": [
+          {
+            "intimidation": true
+          }
+        ],
+        "entries": [
+          {
+            "ENG_name": "Daunting",
+            "name": "令人生畏",
+            "entries": [
+              "你拥有{@skill 威吓}技能的熟练项。"
+            ],
+            "type": "entries"
+          },
+          {
+            "ENG_name": "Tough",
+            "name": "健壮",
+            "entries": [
+              "你的生命值上限增加2点，并且每次升级时再增加2点。"
+            ],
+            "type": "entries"
+          }
+        ],
+        "fluff": {
+          "entries": [
+            "尼瑟拉德的人口主要是人类，在一个尼瑟拉德战役中，玩家角色在大多数情况下应该是人类。然而，凯西格的人类在许多方面与加沃尼的不同，而内普拉利亚的城市文化与被阴影笼罩的斯泰尼亚土地非常不同。玩家角色之间的多样性不是来自种族，而是来自每个角色的家乡省份。"
+          ],
+          "images": [
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSI/Innistrad.webp"
+              },
+              "title": "恐怖墓园守卫",
+              "credit": "Ryan Pancoast",
+              "width": 617,
+              "height": 673
+            },
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSI/Innistrad2.webp"
+              },
+              "title": "银刃圣武士",
+              "credit": "Jason Chan",
+              "width": 865,
+              "height": 624
+            },
+            {
+              "type": "image",
+              "href": {
+                "type": "internal",
+                "path": "races/PSI/Innistrad3.webp"
+              },
+              "title": "月神秘术师",
+              "credit": "Wesley Burt",
+              "width": 807,
+              "height": 575
+            }
+          ]
+        },
+        "hasFluff": true,
+        "hasFluffImages": true,
+        "raceName": "人类 (依尼翠)",
+        "raceSource": "PSI"
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "尼瑟拉德的人口主要是人类，在一个尼瑟拉德战役中，玩家角色在大多数情况下应该是人类。然而，凯西格的人类在许多方面与加沃尼的不同，而内普拉利亚的城市文化与被阴影笼罩的斯泰尼亚土地非常不同。玩家角色之间的多样性不是来自种族，而是来自每个角色的家乡省份。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/PSI/Innistrad.webp"
+          },
+          "title": "恐怖墓园守卫",
+          "credit": "Ryan Pancoast",
+          "width": 617,
+          "height": 673
+        },
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/PSI/Innistrad2.webp"
+          },
+          "title": "银刃圣武士",
+          "credit": "Jason Chan",
+          "width": 865,
+          "height": 624
+        },
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/PSI/Innistrad3.webp"
+          },
+          "title": "月神秘术师",
+          "credit": "Wesley Burt",
+          "width": 807,
+          "height": 575
+        }
+      ]
+    },
+    "age": {
+      "mature": 20,
+      "max": 100
+    },
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "soundClip": {
+      "type": "internal",
+      "path": "races/human.mp3"
+    }
+  }
+]

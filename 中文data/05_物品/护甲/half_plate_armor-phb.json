@@ -1,0 +1,27 @@
+[
+  {
+    "name": "半身板甲",
+    "ENG_name": "Half Plate Armor",
+    "source": "PHB",
+    "page": 145,
+    "edition": "classic",
+    "type": "MA",
+    "rarity": "none",
+    "weight": 40,
+    "value": 75000,
+    "ac": 15,
+    "stealth": true,
+    "armor": true,
+    "entries": [
+      "半身板甲主要由覆盖着装者身体大部分的铸模金属板组成。不过，其腿部防护则只有由皮条系住的简单护胫。"
+    ],
+    "basicRules": true,
+    "referenceSources": [
+      "ToA"
+    ],
+    "reprintedAs": [
+      "半身板甲|XPHB"
+    ],
+    "srd": true
+  }
+]

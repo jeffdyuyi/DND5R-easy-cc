@@ -1,0 +1,13 @@
+[
+  {
+    "ENG_name": "Charm of Cold Resistance",
+    "name": "寒冷抗性护咒",
+    "source": "IDRotF",
+    "page": 283,
+    "type": "Charm",
+    "entries": [
+      "{@note 这个护咒可以由生活在冰风谷或其他寒冷地区的{@creature 怯蕴阿灵|ToA}通过使用它们的魔法赠礼能力来赐予。}",
+      "这个护咒允许你作为一个动作，使自己获得对寒冷伤害的抗性。这个好处持续24小时，之后护咒会从你身上消失。"
+    ]
+  }
+]

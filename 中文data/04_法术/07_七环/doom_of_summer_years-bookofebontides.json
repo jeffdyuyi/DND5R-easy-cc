@@ -1,0 +1,70 @@
+[
+  {
+    "ENG_name": "Doom of Summer Years",
+    "name": "夏年厄运",
+    "source": "BookOfEbonTides",
+    "page": 59,
+    "level": 7,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "沙漏中的一小撮沙子"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你迅速缩小目标的年龄。选择一个范围内的活体生物。在法术施放时以及你每回合开始时，目标必须进行一次体质豁免检定，成功则年龄缩小{@dice 1d4 + 1}年，失败则缩小1年。一旦目标被缩小至婴儿期，减龄过程即停止。被缩小年龄的生物保留所有记忆、属性值和特性，但每缩小5年会获得1层{@condition 力竭}状态。被缩小至童年期的中型生物无法使用具有重型属性的武器。被缩小至婴儿期的中型生物无法挥舞武器或使用工具。如果法术在1分钟结束前终止，目标会恢复其真实年龄。否则，目标将永久保持其新年龄。{@spell 移除诅咒}和{@spell 高等复原术}可用于使生物恢复其真实年龄。",
+      "如果你无意间失去了对该法术的{@status 专注}，你将获得与该法术目标相同的{@condition 力竭}等级。"
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    },
+    "conditionInflict": [
+      "力竭"
+    ],
+    "savingThrow": [
+      "体质"
+    ]
+  }
+]

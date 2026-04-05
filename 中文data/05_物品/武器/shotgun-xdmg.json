@@ -1,0 +1,30 @@
+[
+  {
+    "name": "霰弹枪",
+    "ENG_name": "Shotgun",
+    "source": "XDMG",
+    "page": 73,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "none",
+    "weight": 7,
+    "valueRarity": "珍稀",
+    "weaponCategory": "martial",
+    "property": [
+      "AF|XDMG",
+      "RLD|XDMG",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "推离|XPHB"
+    ],
+    "dmg1": "2d8",
+    "dmgType": "P",
+    "range": "30/90",
+    "ammoType": "枪械子弹|XPHB",
+    "age": "现代",
+    "firearm": true,
+    "reload": 2,
+    "weapon": true
+  }
+]

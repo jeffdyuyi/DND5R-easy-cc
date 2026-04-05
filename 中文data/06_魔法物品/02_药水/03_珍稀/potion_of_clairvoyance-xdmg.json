@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Potion of Clairvoyance",
+    "name": "鹰眼术药水",
+    "source": "XDMG",
+    "page": 287,
+    "srd52": true,
+    "basicRules2024": true,
+    "type": "P|XPHB",
+    "rarity": "rare",
+    "weight": 0.5,
+    "entries": [
+      "当你饮下这瓶药水时，你获得法术{@spell 鹰眼术|XPHB}的效应（无需{@status 专注|XPHB}）。",
+      "一颗眼球在这瓶药水的泛黄药液中沉浮，但会在容器被打开期间消失。"
+    ],
+    "attachedSpells": [
+      "鹰眼术|xphb"
+    ],
+    "lootTables": [
+      "奥秘 - 珍稀|XDMG"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "translator": "不全书",
+    "valueReference": 2000
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "ENG_name": "Tentacle Rod",
+    "name": "触须权杖",
+    "source": "DMG",
+    "page": 208,
+    "referenceSources": [
+      "PotA",
+      "OotA",
+      "TftYP-AtG",
+      "GoS"
+    ],
+    "reprintedAs": [
+      "触须权杖|XDMG"
+    ],
+    "type": "RD|DMG",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 2,
+    "entries": [
+      "由{@creature 卓尔}制造，这根权杖是一件魔法武器，末端有三根橡胶般的触须。持握此权杖期间，你可以用一个动作指挥每根触须攻击一个你能看见的15尺内的生物。每根触须进行一次近战攻击检定，具有+9加值。命中时，触须造成{@damage 1d6}钝击伤害。如果你用所有三根触须都命中一个目标，它必须进行一次{@dc 15}的体质豁免。若失败，该生物的速度减半，它在敏捷豁免上具有劣势，并且1分钟内不能使用反应。此外，在它的每个回合中，它只能执行一个动作或一个附赠动作，但不能同时执行两者。在它的每个回合结束时，它可以重复该豁免检定，成功则结束此效应。"
+    ],
+    "lootTables": [
+      "魔法物品表G"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Tentacle Rod.webp"
+          },
+          "width": 596,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

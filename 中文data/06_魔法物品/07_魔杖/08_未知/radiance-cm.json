@@ -1,0 +1,33 @@
+[
+  {
+    "ENG_name": "Radiance",
+    "name": "光辉",
+    "source": "CM",
+    "page": 87,
+    "type": "WD|DMG",
+    "rarity": "unknown (magic)",
+    "reqAttune": "由施法者",
+    "reqAttuneTags": [
+      {
+        "spellcasting": true
+      }
+    ],
+    "bonusSpellAttack": "+1",
+    "entries": [
+      "持有这根魔杖时，你在法术攻击检定中获得+1加值。此外，进行法术攻击时，你忽略{@quickref 掩护||3||半身掩护}。光辉魔杖呈现为一面精致的金色手镜形状。",
+      "当被黑暗包围时，它在5尺半径内发出昏暗的光线。与光辉共鸣的生物可以在持有镜子时使用一个附赠动作施放{@spell 强化属性}法术，选择自己作为法术的目标，不能选择其他生物。一旦这个魔杖的属性被使用，直到下一个黎明之前都不能再次使用。"
+    ],
+    "light": [
+      {
+        "dim": 5
+      }
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "强化属性"
+        ]
+      }
+    }
+  }
+]

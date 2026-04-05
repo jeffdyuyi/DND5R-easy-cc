@@ -1,0 +1,64 @@
+[
+  {
+    "ENG_name": "Staff of the Void",
+    "name": "虚空法杖",
+    "source": "BookOfEbonTides",
+    "page": 208,
+    "type": "M",
+    "resist": [
+      "心灵"
+    ],
+    "rarity": "very rare",
+    "reqAttune": "由牧师、术士、魔契师或法师",
+    "reqAttuneTags": [
+      {
+        "class": "牧师"
+      },
+      {
+        "class": "术士"
+      },
+      {
+        "class": "魔契师"
+      },
+      {
+        "class": "法师"
+      }
+    ],
+    "weight": 4,
+    "weaponCategory": "简易",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "recharge": "午夜",
+    "rechargeAmount": "{@dice 1d6 + 4}",
+    "charges": 10,
+    "staff": true,
+    "entries": [
+      "这根铁木法杖通常布满裂纹和瘤节，紫色的蠕动光点似乎在木头中穿行。当你持有这根法杖时，你对心灵伤害具有抗性。",
+      "该法杖有10充能。持握时，你可以用一个动作消耗1或更多充能来施放以下其中一个法术，使用你的法术豁免DC：{@spell 吸取生命|BookOfEbonTides}*（5充能）、{@spell 活体幽影|BookOfEbonTides}*（4充能）、{@spell 疯狂低语|BookOfEbonTides}*（2充能）或{@spell 虚空打击|BookOfEbonTides}*（3充能）。你可以不消耗充能施放{@spell 厄运之言|BookOfEbonTides}*戏法。（标有星号的法术来自深地魔法。）",
+      "虚空法杖每日午夜恢复{@dice 1d6 + 4}点已消耗的充能。如果你消耗了最后一点充能，掷一个{@dice d20}骰子。若结果为1，法杖将化为灰烬并被摧毁。"
+    ],
+    "attachedSpells": {
+      "will": [
+        "厄运之言|BookOfEbonTides"
+      ],
+      "charges": {
+        "2": [
+          "疯狂低语|BookOfEbonTides"
+        ],
+        "3": [
+          "虚空打击|BookOfEbonTides"
+        ],
+        "4": [
+          "活体幽影|BookOfEbonTides"
+        ],
+        "5": [
+          "吸取生命|BookOfEbonTides"
+        ]
+      }
+    }
+  }
+]

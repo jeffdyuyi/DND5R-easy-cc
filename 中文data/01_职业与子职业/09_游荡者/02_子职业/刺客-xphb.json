@@ -1,0 +1,17 @@
+{
+  "ENG_name": "Assassin",
+  "name": "刺客",
+  "shortName": "刺客",
+  "source": "XPHB",
+  "className": "游荡者",
+  "classSource": "XPHB",
+  "page": 134,
+  "edition": "one",
+  "subclassFeatures": [
+    "刺客|游荡者|XPHB|刺客|XPHB|3",
+    "专业渗透|游荡者|XPHB|刺客|XPHB|9",
+    "淬毒武器|游荡者|XPHB|刺客|XPHB|13",
+    "致命一击|游荡者|XPHB|刺客|XPHB|17"
+  ],
+  "hasFluffImages": true
+}

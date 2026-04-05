@@ -1,0 +1,17 @@
+{
+  "ENG_name": "Beast Master",
+  "name": "驯兽师",
+  "shortName": "驯兽师",
+  "source": "XPHB",
+  "className": "游侠",
+  "classSource": "XPHB",
+  "page": 123,
+  "edition": "one",
+  "subclassFeatures": [
+    "驯兽师|游侠|XPHB|驯兽师|XPHB|3",
+    "特殊训练|游侠|XPHB|驯兽师|XPHB|7",
+    "兽性狂怒|游侠|XPHB|驯兽师|XPHB|11",
+    "法术共享|游侠|XPHB|驯兽师|XPHB|15"
+  ],
+  "hasFluffImages": true
+}

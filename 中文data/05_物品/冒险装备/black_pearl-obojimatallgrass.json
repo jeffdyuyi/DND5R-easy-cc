@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Black Pearl",
+    "name": "黑珍珠",
+    "source": "ObojimaTallGrass",
+    "page": 210,
+    "type": "Ingred",
+    "rarity": "uncommon",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 13|large}|SneakerProMedium}",
+            "{@font {@style 14|large}|SneakerProMedium}",
+            "{@font {@style 15|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "没有什么比黑珍珠梦幻般的光泽更受魔法商人的垂涎。一些法师声称，凝视黑珍珠漩涡般的虹彩可以让你看到未来可能发生的事件幻象，或协助你找到丢失的物件。黑珍珠产自胧忆岛周围浅滩中的巨型角贝，其中大部分都被鱼人民兵严密守护着。"
+    ],
+    "lootTables": [
+      "浅滩非普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/black-pearl.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 1911,
+          "height": 1911
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "name": "标枪",
+    "ENG_name": "Javelin",
+    "source": "XPHB",
+    "page": 215,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 50,
+    "weaponCategory": "simple",
+    "property": [
+      "T|XPHB"
+    ],
+    "mastery": [
+      "缓速|XPHB"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "range": "30/120",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XPHB/Javelin.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 28,
+          "height": 1203
+        }
+      ]
+    },
+    "basicRules2024": true,
+    "hasFluffImages": true,
+    "spear": true,
+    "srd52": true,
+    "weapon": true
+  }
+]

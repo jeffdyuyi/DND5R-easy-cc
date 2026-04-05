@@ -1,0 +1,23 @@
+[
+  {
+    "ENG_name": "Spell-Refueling Ring",
+    "name": "法力恢复戒指",
+    "source": "EFA",
+    "page": 112,
+    "type": "RG|XDMG",
+    "rarity": "uncommon",
+    "reqAttune": "由施法者",
+    "reqAttuneTags": [
+      {
+        "spellcasting": true
+      }
+    ],
+    "entries": [
+      "佩戴这枚戒指时，你可以以一个{@variantrule 附赠动作|XPHB}恢复一个已消耗的法术位。恢复的法术位可以是3环或更低。一旦使用，这枚戒指在下一个拂晓前无法再次使用。"
+    ],
+    "classFeatures": [
+      "仿制魔法物品|奇械师|efa|2|efa"
+    ],
+    "valueReference": 400
+  }
+]

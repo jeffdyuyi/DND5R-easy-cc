@@ -1,0 +1,70 @@
+[
+  {
+    "ENG_name": "Wand of Jinxes",
+    "name": "厄咒魔杖",
+    "source": "MonstersOfDrakkenheim",
+    "page": 394,
+    "type": "WD|XDMG",
+    "rarity": "rare",
+    "reqAttune": "由魔契师",
+    "reqAttuneTags": [
+      {
+        "class": "魔契师"
+      }
+    ],
+    "entries": [
+      "这根魔杖由魔法树皮雕刻而成，核心是一缕亡灵生物的毛发，表面覆盖着黏糊糊的泥怪。",
+      "每回合一次，当你用魔契师戏法对一个生物造成伤害时，你可以使该生物获得{@condition 厄运|MonstersOfDrakkenheim}状态（{@dice 1d4}）直到你的下个回合开始。",
+      {
+        "ENG_name": "Crafting",
+        "name": "手作",
+        "type": "entries",
+        "entries": [
+          "制作厄咒魔杖需要一个珍稀工坊和以下珍稀成分：",
+          {
+            "type": "list",
+            "items": [
+              {
+                "ENG_name": "[Animus]",
+                "name": "[精魄]",
+                "type": "item",
+                "entries": [
+                  "任意精魄"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Fluid]",
+                "name": "[流体]",
+                "type": "item",
+                "entries": [
+                  "黏糊糊的泥怪"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Hair]",
+                "name": "[毛发]",
+                "type": "item",
+                "entries": [
+                  "亡灵毛发"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Hide]",
+                "name": "[表皮]",
+                "type": "item",
+                "entries": [
+                  "树皮"
+                ],
+                "nameDot": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluffImages": true
+  }
+]

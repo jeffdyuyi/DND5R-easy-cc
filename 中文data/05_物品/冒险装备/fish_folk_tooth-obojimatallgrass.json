@@ -1,0 +1,53 @@
+[
+  {
+    "ENG_name": "Fish Folk Tooth",
+    "name": "鱼人牙齿",
+    "source": "ObojimaTallGrass",
+    "page": 203,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 9|large}|SneakerProMedium}",
+            "{@font {@style 4|large}|SneakerProMedium}",
+            "{@font {@style 3|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "鱼人牙齿长期以来被巫偶用于创造药水，特别是那些用于水下呼吸的药水。鱼人在其一生中会经历许多牙齿，几个世纪以来，成千上万被丢弃的牙齿被冲到了它们水下洞穴和石窟附近的海岸线上。但智者有言，大多数鱼人都非常有领地意识，不喜欢入侵者在它们的海岸上闲逛拾荒。"
+    ],
+    "lootTables": [
+      "舒里塔希的赠礼 普通原料|ObojimaTallGrass",
+      "热水大地普通原料|ObojimaTallGrass",
+      "浅滩普通原料|ObojimaTallGrass",
+      "咸水湿地普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/fish-folk-tooth.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 2821,
+          "height": 2821
+        }
+      ]
+    }
+  }
+]

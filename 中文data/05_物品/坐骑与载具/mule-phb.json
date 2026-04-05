@@ -1,0 +1,22 @@
+[
+  {
+    "name": "骡子",
+    "ENG_name": "Mule",
+    "source": "PHB",
+    "page": 157,
+    "type": "MNT",
+    "rarity": "none",
+    "value": 800,
+    "basicRules": true,
+    "carryingCapacity": 420,
+    "referenceSources": [
+      "LoX"
+    ],
+    "reprintedAs": [
+      "骡子|XPHB"
+    ],
+    "speed": 40,
+    "srd": true,
+    "translator": "不全书"
+  }
+]

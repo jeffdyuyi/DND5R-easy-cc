@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Feywood Ivy",
+    "name": "精林之藤",
+    "source": "GriffonsSaddlebag2",
+    "page": 81,
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": "由德鲁伊、游侠或精类生物",
+    "reqAttuneTags": [
+      {
+        "class": "德鲁伊"
+      },
+      {
+        "class": "游侠"
+      },
+      {
+        "creatureType": "妖精"
+      }
+    ],
+    "wondrous": true,
+    "focus": true,
+    "entries": [
+      "这枚微型种子的外壳上刻有一个发光的符文。当你将种子握持在一件武器或类似的持握物件上时，你可以用一个动作说出它的第一命令语，使种子发芽并让绿紫相间的藤蔓覆盖该物件。这些藤蔓会形成一个舒适的握把以便持握该物件，同时还会为其创造一个安全感的外罩，比如剑鞘或携带匣子，当物件未被持握时会自动将其收纳，除非你决定不这样做。你可以再次用一个动作说出第一命令语，使藤蔓从物件上退回种子中。",
+      "当物件被藤蔓覆盖时，除非你陷入{@condition 失能}状态，否则你不会被解除该物件的持握。此外，你可以将该物件用作施法法器。",
+      "当被藤蔓覆盖的物件在你身上时，你可以用一个附赠动作说出藤蔓的第二命令语，使其猛击5尺内你能看见的一个中等或更小体型的目标。目标必须通过一次DC 13的敏捷豁免检定，否则将被{@condition 受擒}1分钟。当{@condition 受擒}时，目标陷入{@condition 束缚}状态，且可以在其每回合使用一个动作进行DC 13的力量或敏捷检定（由其选择），成功则挣脱并终止该效应。如果你离开目标5尺以上距离，该效应会提前结束并释放目标。这项属性一经使用，则其直至次日拂晓前都无法再次使用。"
+    ],
+    "lootTables": [
+      "魔法物品表 F2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Feywood-Ivy.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

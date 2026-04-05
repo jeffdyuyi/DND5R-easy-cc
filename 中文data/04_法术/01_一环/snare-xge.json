@@ -1,0 +1,68 @@
+[
+  {
+    "ENG_name": "Snare",
+    "name": "圈套术",
+    "source": "XGE",
+    "page": 165,
+    "level": 1,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "s": true,
+      "m": {
+        "text": "25 尺的线绳，作为该法术的耗材",
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 8
+        }
+      }
+    ],
+    "entries": [
+      "当你施展此法术时，用线绳在一处处于你触及内的地面或地板上创造一个 5 尺半径的圆圈。当你完成施法时，线绳消失，化为一个魔法陷阱。",
+      "陷阱几乎是隐形的，要找到它需要一次成功的对抗你的法术豁免DC的智力（{@skill 调查}）检定。",
+      "当一个小型、中型或大型的生物移动进入受到此法术保护的区域时，陷阱就会触发。触发的生物必须通过一次敏捷豁免检定否则摔倒、变成俯卧，并被魔法性地上下颠倒的举到半空中，直到它施法距离被保护的地面或地板 3 尺高。生物被{@condition 束缚}在那里直到法术结束。",
+      "被{@condition 束缚}的生物可以在其每个回合的结束时进行一次敏捷豁免检定，成功则结束被束缚。或者，其他能触及被束缚的生物可以进行一次智力（{@skill 奥秘}）检定，对抗你的法术豁免 DC。成功则{@condition 束缚}的效果也会结束。",
+      "在陷阱被触发之后，当没有生物被它{@condition 束缚}时，法术将会结束。"
+    ],
+    "conditionInflict": [
+      "束缚"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "abilityCheck": [
+      "智力"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊",
+      "游侠",
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "防护系",
+    "display_savingThrow": [
+      "敏捷"
+    ]
+  }
+]

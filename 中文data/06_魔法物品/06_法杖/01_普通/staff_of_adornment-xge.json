@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Staff of Adornment",
+    "name": "饰品法杖",
+    "source": "XGE",
+    "page": 139,
+    "reprintedAs": [
+      "饰品法杖|XDMG"
+    ],
+    "tier": "次要",
+    "rarity": "common",
+    "weight": 4,
+    "weaponCategory": "simple",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "staff": true,
+    "entries": [
+      "持握这根法杖期间，你可以将至重1磅的物件（例如水晶碎片、鸡蛋、或是石头）在法杖的顶端，这个物品会在法杖顶端周围相距一寸的位置漂浮着，直到其被移除或者法杖不再为你所控为止。一根法杖同一时间最多有三件物品漂浮于其顶端周围。持握法杖时，你可以选择令一个物品缓慢旋转起来，或令其停止旋转。"
+    ],
+    "translator": "不全书",
+    "valueReference": 100,
+    "type": "ST"
+  }
+]

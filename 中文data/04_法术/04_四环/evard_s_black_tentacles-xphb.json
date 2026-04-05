@@ -1,0 +1,90 @@
+[
+  {
+    "ENG_name": "Evard's Black Tentacles",
+    "name": "艾伐黑触手",
+    "source": "XPHB",
+    "page": 270,
+    "srd52": "黑触手",
+    "basicRules2024": true,
+    "level": 4,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 90
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一根触手"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "蠕动的乌黑触须填满了一处施法距离内你可见的 20 尺方状地面。在法术持续时间内，这些触手会将此区域地面变为{@variantrule 困难地形|XPHB}。",
+      "每名区域内的生物进行一次力量豁免。豁免失败受到{@damage 3d6}点钝击伤害，并且直到法术结束为止陷入{@condition 束缚|XPHB}状态。一名进入此区域或在区域内结束回合的生物也要进行此豁免。一名生物一回合只进行一次此豁免。",
+      "一名被{@condition 束缚|XPHB}的生物可以用一个动作进行一次力量（{@skill 运动|XPHB}）检定对抗你的法术豁免DC，若检定成功则结束其身上的束缚状态。"
+    ],
+    "damageInflict": [
+      "bludgeoning"
+    ],
+    "conditionInflict": [
+      "束缚"
+    ],
+    "savingThrow": [
+      "strength"
+    ],
+    "abilityCheck": [
+      "力量"
+    ],
+    "miscTags": [
+      "DFT",
+      "SGT"
+    ],
+    "areaTags": [
+      "Q"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/XPHB/Evard's Black Tentacles.webp"
+          },
+          "credit": "Craig J Spearing",
+          "width": 2225,
+          "height": 1440
+        }
+      ]
+    },
+    "classes": [
+      "法师"
+    ],
+    "display_school": "咒法系",
+    "display_savingThrow": [
+      "力量"
+    ],
+    "display_damageInflict": [
+      "钝击"
+    ]
+  }
+]

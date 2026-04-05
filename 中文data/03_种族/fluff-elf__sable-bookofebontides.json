@@ -1,0 +1,47 @@
+{
+  "raceFluff": [
+    {
+      "ENG_name": "Elf (Sable)",
+      "name": "精灵 (暗)",
+      "source": "BookOfEbonTides",
+      "_copy": {
+        "ENG_name": "Elf",
+        "name": "精灵",
+        "source": "PHB",
+        "_mod": {
+          "entries": {
+            "mode": "prependArr",
+            "items": {
+              "type": "section",
+              "entries": [
+                "当精灵最初开始衰落时，一些选择坚守阵地，而另一些则接受了与幽影的契约。然后还有那些暗精灵，他们干脆选择了逃跑。不幸的是，这群优柔寡断的精灵很快树敌，并被那些抓住机会缔结幽影契约的精灵所鄙视。因此，现在这些暗精灵散落在各个领域，永远蒙羞，无处可归。然而，他们有一个自己的据点，金橡庭院（见第六章）。",
+                "仅存的暗精灵掌握着强大的精灵魔法最后的契灵，这些魔法曾帮助塑造了世界的早期阶段，而他们在孤独中守护着自己的秘密。由于这些精灵所剩无几，且只有一个团队可言，暗精灵的血统正在迅速消亡。他们的法力使这些远古精灵能够在几乎任何气候中生存，而幽影领域的黑暗森林中居住着少数这些流浪者。",
+                "暗精灵有着黑色的眼睛，通常是红发或黑发，以及银色的皮肤。他们拥有高挑纤细的身材，与其他精灵相似。大多数都带着一种无法抑制的厌世气息。",
+                {
+                  "ENG_name": "Sable Elf Names",
+                  "name": "暗精灵名字",
+                  "type": "entries",
+                  "entries": [
+                    "暗精灵遵循远古精灵的命名惯例，使用第一个出生名和第二个采用的俗称。然而，他们不像某些精灵那样采用第三个名字或血统名，这反映了他们不光彩的状态。"
+                  ]
+                }
+              ]
+            }
+          },
+          "images": {
+            "mode": "prependArr",
+            "items": {
+              "type": "image",
+              "href": {
+                "type": "external",
+                "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BookOfEbonTides/races/Elf (Sable).webp"
+              },
+              "width": 850,
+              "height": 1007
+            }
+          }
+        }
+      }
+    }
+  ]
+}

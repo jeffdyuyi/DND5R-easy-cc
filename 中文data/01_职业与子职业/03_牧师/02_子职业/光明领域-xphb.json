@@ -1,0 +1,182 @@
+{
+  "ENG_name": "Light Domain",
+  "name": "光明领域",
+  "shortName": "光明",
+  "source": "XPHB",
+  "className": "牧师",
+  "classSource": "XPHB",
+  "page": 74,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "3": [
+          "燃烧之手|XPHB",
+          "妖火|XPHB",
+          "灼热射线|XPHB",
+          "识破隐形|XPHB"
+        ],
+        "5": [
+          "昼明术|XPHB",
+          "火球术|XPHB"
+        ],
+        "7": [
+          "秘法眼|XPHB",
+          "火墙术|XPHB"
+        ],
+        "9": [
+          "焰击术|XPHB",
+          "探知术|XPHB"
+        ]
+      }
+    }
+  ],
+  "subclassFeatures": [
+    "光明领域|牧师|XPHB|光明|XPHB|3",
+    "精通守御之光|牧师|XPHB|光明|XPHB|6",
+    "光冕|牧师|XPHB|光明|XPHB|17"
+  ],
+  "features": [
+    {
+      "ENG_name": "Light Domain",
+      "name": "光明领域",
+      "source": "XPHB",
+      "page": 74,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "光明",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "entries": [
+        "{@i 宣告神圣光芒，灼烧黑暗}",
+        "光明领域的神明们致力于真理、警惕、美善、知识和更新。这些神明们通常与太阳或是其发出的光芒联系在一起，通过自身的意志赋予他人力量和重生，而另一些则更倾向于将光芒作为真理之火来焚尽欺辱与谎言。作为该领域的一名牧师，你可以运用光明的力量来通过魔法解除黑暗并降下正义的火焰。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "光明领域法术|牧师|XPHB|光明|XPHB|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "引导神力：黎明曙光|牧师|XPHB|光明|XPHB|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "守御闪光|牧师|XPHB|光明|XPHB|3"
+        }
+      ],
+      "translator": "不全书"
+    },
+    {
+      "ENG_name": "Light Domain Spells",
+      "name": "光明领域法术",
+      "source": "XPHB",
+      "page": 74,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "光明",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你与此神圣领域的链接使你始终准备着特定的法术。当你到达光明领域法术表中特定的牧师等级时，你就始终准备着表中对应的法术。",
+        {
+          "type": "table",
+          "caption": "光明领域法术",
+          "colLabels": [
+            "牧师等级",
+            "准备法术"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-11"
+          ],
+          "rows": [
+            [
+              "3",
+              "{@spell 燃烧之手|XPHB}，{@spell 妖火|XPHB}，{@spell 灼热射线|XPHB}，{@spell 识破隐形|XPHB}"
+            ],
+            [
+              "5",
+              "{@spell 昼明术|XPHB}，{@spell 火球术|XPHB}"
+            ],
+            [
+              "7",
+              "{@spell 秘法眼|XPHB}，{@spell 火墙术|XPHB}"
+            ],
+            [
+              "9",
+              "{@spell 焰击术|XPHB}，{@spell 探知术|XPHB}"
+            ]
+          ]
+        }
+      ],
+      "translator": "不全书"
+    },
+    {
+      "ENG_name": "Channel Divinity: Radiance of the Dawn",
+      "name": "引导神力：黎明曙光",
+      "source": "XPHB",
+      "page": 74,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "光明",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "header": 1,
+      "consumes": {
+        "ENG_name": "Channel Divinity",
+        "name": "引导神力"
+      },
+      "entries": [
+        "以一个{@action 魔法|XPHB}动作，你展现{@item 圣徽|XPHB}，消耗一次引导神力次数来释放出一阵闪光，覆盖一处以你为源点的 30 尺{@variantrule 光环 [效应区域]|XPHB|光环}区域。该区域内的任何魔法{@variantrule 黑暗|XPHB}——例如法术{@spell 黑暗术|XPHB}制造的黑暗——都将被解除。此外，区域内你选择的所有生物都必须进行一次体质豁免。豁免失败者将受{@dice 2d10} + 你牧师等级的光耀伤害，豁免成功则伤害减半。"
+      ]
+    },
+    {
+      "ENG_name": "Warding Flare",
+      "name": "守御闪光",
+      "source": "XPHB",
+      "page": 74,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "光明",
+      "subclassSource": "XPHB",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "当位于你 30 尺内一名你可见的生物进行攻击检定时，你能够以{@variantrule 反应|XPHB}在该次攻击命中或失手前在该生物面前发出闪耀之光，迫使其该次攻击检定具有{@variantrule 劣势|XPHB}。",
+        "你可以使用该特性的次数等于你的感知调整值（最少 1 次）。你在完成一次{@variantrule 长休|XPHB}时重获所有已消耗的使用次数。"
+      ]
+    },
+    {
+      "ENG_name": "Improved Warding Flare",
+      "name": "精通守御之光",
+      "source": "XPHB",
+      "page": 75,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "光明",
+      "subclassSource": "XPHB",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "你在完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}后重新获得所有守御之光的使用次数。",
+        "此外，每当你使用守御之光时，你可以给予触发此反应的该次攻击所指定那个目标{@dice 2d6} + 你感知调整值点{@variantrule 临时生命值|XPHB}。"
+      ]
+    },
+    {
+      "ENG_name": "Corona of Light",
+      "name": "光冕",
+      "source": "XPHB",
+      "page": 75,
+      "className": "牧师",
+      "classSource": "XPHB",
+      "subclassShortName": "光明",
+      "subclassSource": "XPHB",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "以一个{@action 魔法|XPHB}动作，你可以让你自己散发出日光组成的灵光，持续一分钟或直至你将其解除（无需动作）。你散发出半径 60 尺的{@variantrule 明亮光照|XPHB}以及额外 30 尺的{@variantrule 微光光照|XPHB}。身处该{@variantrule 明亮光照|XPHB}范围中的敌人，在抵抗你的黎明曙光特性以及任何造成火焰或光耀伤害的法术而进行豁免检定时具有{@variantrule 劣势|XPHB}。",
+        "你可以使用该特性的次数等同于你的感知调整值（最少 1 次）。你在完成一次{@variantrule 长休|XPHB}时重获所有已消耗的使用次数。"
+      ]
+    }
+  ]
+}

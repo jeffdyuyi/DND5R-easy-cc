@@ -1,0 +1,32 @@
+{
+  "ENG_name": "Returning Weapon",
+  "name": "回力武器",
+  "source": "TCE",
+  "page": 23,
+  "otherSources": [
+    {
+      "source": "ERLW",
+      "page": 63
+    }
+  ],
+  "reprintedAs": [
+    {
+      "uid": "回力武器|EFA",
+      "tag": "item"
+    }
+  ],
+  "featureType": [
+    "AI"
+  ],
+  "prerequisite": [
+    {
+      "item": [
+        "一把具有投掷属性的简易武器或军用武器"
+      ]
+    }
+  ],
+  "entries": [
+    "在用此魔法武器发动的攻击检定和伤害掷骰获得+1加值，并在使用它发动远程攻击后，它会立即回到持用者的手中。"
+  ],
+  "translator": "不全书"
+}

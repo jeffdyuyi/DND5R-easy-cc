@@ -1,0 +1,68 @@
+[
+  {
+    "ENG_name": "Freedom of the Winds",
+    "name": "风之自由",
+    "source": "TalDoreiCampaignSettingReborn",
+    "page": 176,
+    "level": 5,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一小块破帆布"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "风，环绕着你的躯体，卷起你的头发和衣摆，并将你的双脚托到空中。你获得60尺飞行速度。此外，你为避免{@condition 受擒}所作的{@quickref 属性检定|PHB|2|0}，以及避免陷入{@condition 束缚}或{@condition 麻痹}所作的{@quickref 优势与劣势|PHB|2|0|优势}具有{@quickref 豁免检定|PHB|2|1}。",
+      "法术效应期间，若你被选为一道法术或一次攻击的目标，你可以用你的反应传送到至多60尺外的一处未被占据的空间内。如果此行动使你脱离了该法术或该攻击的范围，你便不会受其影响。传送结束后，本法术会立刻结束。"
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB",
+          "definedInSource": "TalDoreiCampaignSettingReborn"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB",
+          "definedInSource": "TalDoreiCampaignSettingReborn"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "PHB",
+          "definedInSource": "TalDoreiCampaignSettingReborn"
+        }
+      ]
+    },
+    "miscTags": [
+      "ADV",
+      "SGT",
+      "TP"
+    ]
+  }
+]

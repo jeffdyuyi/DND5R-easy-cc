@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Dominic's Field Guide to Language",
+    "name": "多米尼克语言实地指南",
+    "source": "GriffonsSaddlebag2",
+    "page": 71,
+    "tier": "次要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这本魔法书中的字迹十分奇特，似乎还会变化。在你手持此书期间，你可以用一个动作说出此书的命令语，随后紧跟说出一种语言（由你决定），来让这本书的书页全都变成{@language 通用语}与你所选语言之间的翻译。此属性在24小时内无法再次使用。这本书中在刚被寻得时，其中的所选语言是随机的。",
+      "你可以花费1小时阅读此书（可以在一次短休期间进行）。当你完成阅读时，你可以在接下来的24小时内魔法性地听说读写所选语言。同一时间内至多只能有一名生物能阅读此书。"
+    ],
+    "lootTables": [
+      "魔法物品表 B1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Dominics-Field-Guide-to-Language.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

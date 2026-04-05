@@ -1,0 +1,42 @@
+[
+  {
+    "ENG_name": "Mythcarver (Dormant)",
+    "name": "神话刻录者（休眠）",
+    "source": "TalDoreiCampaignSettingReborn",
+    "page": 207,
+    "baseItem": "长剑|PHB",
+    "type": "M",
+    "rarity": "legendary",
+    "reqAttune": "由吟游诗人",
+    "reqAttuneTags": [
+      {
+        "class": "吟游诗人"
+      }
+    ],
+    "weight": 3,
+    "weaponCategory": "军用",
+    "property": [
+      "V",
+      "Vst|EGW",
+      "F"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "S",
+    "dmg2": "1d10",
+    "bonusWeapon": "+1",
+    "entries": [
+      "这把令人难以置信的镀银剑刃曾属于传说中的白公爵，他是{@book 金色笑面|TalDoreiCampaignSettingReborn|2|金色笑面}的创始成员之一，以及在他之前的许多其他吟游诗人大师。它与附近的音乐声产生共鸣。在现代，它最著名的是作为著名吟游诗人{@creature 斯凯兰·短顿|TalDoreiCampaignSettingReborn}的个人武器。",
+      {
+        "ENG_name": "Dormant",
+        "name": "休眠",
+        "type": "entries",
+        "entries": [
+          "当神话雕刻者处于休眠状态时，你使用这把魔法武器进行的攻击和伤害骰获得+1的加值。这把长剑的附魔和轻巧构造还赋予了它灵巧属性，这允许你在用这把武器进行攻击时，使用你的力量或敏捷调整值来决定攻击和伤害骰。",
+          "此外，当你使用诗人灵感特性以盟友为目标时，直到你的回合结束，使用这把武器进行攻击时你将获得{@quickref 优势与劣势|PHB|2|0|优势}。"
+        ]
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true
+  }
+]

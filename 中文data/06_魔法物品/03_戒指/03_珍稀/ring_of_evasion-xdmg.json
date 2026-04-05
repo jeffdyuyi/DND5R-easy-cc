@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "Ring of Evasion",
+    "name": "反射闪避戒指",
+    "source": "XDMG",
+    "page": 293,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-BtS"
+    ],
+    "type": "RG|XDMG",
+    "rarity": "rare",
+    "reqAttune": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "这枚戒指具有3充能，且在每日黎明时恢复{@dice 1d3}已消耗的充能。着装戒指期间，当你敏捷豁免失败时，你可以执行{@variantrule 反应|XPHB}以消耗1充能，来让该豁免改为成功。"
+    ],
+    "lootTables": [
+      "器具 - 珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Ring of Evasion.webp"
+          },
+          "width": 1000,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

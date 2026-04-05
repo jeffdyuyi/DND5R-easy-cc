@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "Seeker's Compass",
+    "name": "寻踪罗盘",
+    "source": "GriffonsSaddlebag2",
+    "page": 157,
+    "tier": "次要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这个黄铜指南针有两根针：一根大型，一根小型。大型针始终指向地磁北极且不受任何会使其误指的魔法效应影响。小型针直至被激活前都保持静止。",
+      "持握此罗盘期间，你可以用一个动作说出其命令语来从中施放{@spell 物件定位术}法术，并激活小指针。这个版本的法术持续1小时且无需专注，并且会使小指针指向法术定位的物品的方向。如果小指针无法侦查到法术指定的物品，它会狂转片刻后重归静止。这项属性一经使用，则其直到下一个黎明前都无法再次使用。"
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "物件定位术"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表 B2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Seekers-Compass.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

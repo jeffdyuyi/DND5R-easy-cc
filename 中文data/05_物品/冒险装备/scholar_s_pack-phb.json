@@ -1,0 +1,45 @@
+[
+  {
+    "name": "学者套组",
+    "ENG_name": "Scholar's Pack",
+    "source": "PHB",
+    "page": 151,
+    "type": "G",
+    "rarity": "none",
+    "weight": 10,
+    "value": 4000,
+    "packContents": [
+      "背包|PHB",
+      "书籍|PHB",
+      "墨水(1盎司/瓶)|PHB",
+      "墨水笔|PHB",
+      "羊皮纸(每张)|PHB",
+      {
+        "special": "小袋沙子"
+      },
+      {
+        "special": "小刀"
+      }
+    ],
+    "entries": [
+      "包括：",
+      {
+        "type": "list",
+        "items": [
+          "1个{@item 背包|PHB}",
+          "一本{@item 书籍|PHB}学识书",
+          "一瓶{@item 墨水(1盎司/瓶)|PHB|一瓶墨水}",
+          "1支{@item 墨水笔|PHB}",
+          "10 {@item 羊皮纸(每张)|PHB|羊皮纸}",
+          "一个装满沙子的小袋子",
+          "一把小刀。"
+        ]
+      }
+    ],
+    "basicRules": true,
+    "reprintedAs": [
+      "学者套组|XPHB"
+    ],
+    "srd": true
+  }
+]

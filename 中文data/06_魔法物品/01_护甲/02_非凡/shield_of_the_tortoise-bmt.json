@@ -1,0 +1,42 @@
+[
+  {
+    "ENG_name": "Shield of the Tortoise",
+    "name": "龟壳重盾",
+    "source": "BMT",
+    "page": 67,
+    "baseItem": "盾牌|PHB",
+    "type": "S",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "curse": true,
+    "weight": 6,
+    "ac": 2,
+    "bonusAc": "+1",
+    "entries": [
+      "着装这面盾牌期间，你的AC具有+1加值。这一加值可与盾牌的普通AC加值叠加。",
+      {
+        "ENG_name": "Curse",
+        "name": "诅咒",
+        "type": "entries",
+        "entries": [
+          "这件物品被诅咒了。与其同调时，其上方的诅咒会蔓延至你的身上，直至你成为{@spell 移除诅咒}法术或类似魔法的目标为止。诅咒期间，你无法卸下这面盾牌，也无法解除与之的同调。只要被诅咒，你的行动就会变得无比迟缓。你的速度减半。当你掷先攻时，将你在{@dice d20}上的掷骰结果视为1。你无法以任何方式改变你的先攻结果。"
+        ]
+      }
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/BMT/Shield of the Tortoise.webp"
+          },
+          "width": 799,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

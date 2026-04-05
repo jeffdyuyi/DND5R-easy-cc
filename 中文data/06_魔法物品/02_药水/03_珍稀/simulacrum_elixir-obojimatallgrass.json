@@ -1,0 +1,46 @@
+[
+  {
+    "ENG_name": "Simulacrum Elixir",
+    "name": "拟像术灵药",
+    "source": "ObojimaTallGrass",
+    "page": 237,
+    "type": "P",
+    "rarity": "rare",
+    "property": [
+      "Util"
+    ],
+    "entries": [
+      "当饮用这瓶麻痹调合药剂时，你会陷入深沉的睡眠。醒来时，你的意识已接管了一个完美的自身克隆体。该克隆体看起来与你完全一致，但只有你一半的生命值上限，并且形成时不携带任何装备，只有寻常衣物。除此之外，克隆体使用你所有的数据，但它是一个构装体。克隆体缺乏学习或变强的能力，因此它永远不会提升等级或其他属性，也无法恢复已消耗的法术位。",
+      "当克隆体存在时，你的原始身体会保持一种恒定的深度睡眠状态，不需要任何营养，但仍会如常受到伤害。克隆体会持续存在直到你解消它或它的生命值降至0，此时它会化作一团蝴蝶云雾消失。当它消失时，你的意识会返回原始身体。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 51|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Utility/simulacrum-elixir.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1845,
+          "height": 1845
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

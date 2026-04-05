@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "Helm of the Platinum Dragon",
+    "name": "铂金龙之冠",
+    "source": "GriffonsSaddlebag2",
+    "page": 103,
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": "由善良阵营的龙裔",
+    "reqAttuneTags": [
+      {
+        "race": "龙裔",
+        "alignment": [
+          "G"
+        ]
+      }
+    ],
+    "wondrous": true,
+    "bonusAc": "+1",
+    "bonusSavingThrow": "+1",
+    "entries": [
+      "这顶由铂金打造的魔法头冠受到一位强大的神圣巨龙的祝福。当你戴着这顶头冠时，你的护甲等级和豁免检定获得 +1 加值。当你使用吐息武器时，你可以选择呼出一道神圣的蓝色治愈能量。若你这么做，这道吐息武器造成光耀伤害，区域内邪恶阵营的敌对生物在吐息武器的豁免检定上具有劣势，且区域内任何友方生物不会因吐息受到伤害，而是恢复等同于你吐息武器伤害骰数量的生命值。头冠的这项词条在下次黎明前无法再次使用。"
+    ],
+    "lootTables": [
+      "魔法物品表 H2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Helm-of-the-Platinum-Dragon.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

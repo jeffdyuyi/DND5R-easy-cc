@@ -1,0 +1,131 @@
+{
+  "race": [
+    {
+      "ENG_name": "Laneshi",
+      "name": "拉尼希",
+      "source": "GrimHollowPG24",
+      "page": 21,
+      "edition": "one",
+      "creatureTypes": [
+        "类人生物"
+      ],
+      "size": [
+        "M"
+      ],
+      "speed": {
+        "walk": 30,
+        "swim": 30
+      },
+      "age": {
+        "mature": 14,
+        "max": 150
+      },
+      "sizeEntry": {
+        "ENG_name": "Size:",
+        "name": "体型：",
+        "type": "item",
+        "entries": [
+          "中等（拉尼希通常身高5到6英尺，体型纤细。）"
+        ]
+      },
+      "entries": [
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "ENG_name": "Age:",
+              "name": "年龄：",
+              "type": "item",
+              "entries": [
+                "拉尼希成熟得很快，大约14岁就成年，可以活到150岁。"
+              ]
+            }
+          ]
+        },
+        {
+          "ENG_name": "Traditional Laneshi Traits",
+          "name": "传统拉尼希特性",
+          "type": "inset",
+          "entries": [
+            "他们独特的海底文化塑造了许多拉尼希的天赋和动力。",
+            {
+              "ENG_name": "Combat Traits:",
+              "name": "战斗特质：",
+              "type": "entries",
+              "entries": [
+                {
+                  "type": "list",
+                  "items": [
+                    "{@optfeature 唤醒心灵|GrimHollowPG24}",
+                    "{@optfeature 心灵精魄|GrimHollowPG24}"
+                  ]
+                }
+              ]
+            },
+            {
+              "ENG_name": "Exploration Traits:",
+              "name": "探索特质：",
+              "type": "entries",
+              "entries": [
+                {
+                  "type": "list",
+                  "items": [
+                    "{@optfeature 水陆两栖|GrimHollowPG24}",
+                    "{@optfeature 黑暗视觉|GrimHollowPG24}",
+                    "{@optfeature 游泳家|GrimHollowPG24}"
+                  ]
+                }
+              ]
+            },
+            {
+              "ENG_name": "Roleplaying Traits:",
+              "name": "扮演特质：",
+              "type": "entries",
+              "entries": [
+                {
+                  "type": "list",
+                  "items": [
+                    "{@optfeature 动物之友|GrimHollowPG24}",
+                    "{@optfeature 魔法精通|GrimHollowPG24} ({@filter 任意死灵系戏法|spells|level=0|school=n})",
+                    "{@optfeature 自然之声|GrimHollowPG24}"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "entries": [
+            {
+              "ENG_name": "Trait Selection",
+              "name": "特质选择",
+              "type": "entries",
+              "entries": [
+                "选择为你的传承所注明的传统特质是快速且容易的，并创造一个感觉像是你选定传承中坚实原型的角色。但你可以将那些建议的传统传承特质替换为{@filter 提供的任何特质|optionalfeatures|source=GrimHollowPG24|特性 类型=HT}，围绕任意八个特质构建你的角色。这可以包括采用任何其他传承的传统特质，再次采用你的一个传统特质以获得其次级效应，或采用不属于任何传承默认展示的众多特质中的任意一个。"
+              ]
+            }
+          ]
+        }
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "subraces": [],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Race/Laneshi.webp"
+            },
+            "credit": "Suzanne Helmigh",
+            "width": 850,
+            "height": 2189
+          }
+        ]
+      }
+    }
+  ]
+}

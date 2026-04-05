@@ -1,0 +1,421 @@
+{
+  "ENG_name": "Leyline Magic",
+  "name": "地脉魔法",
+  "shortName": "地脉",
+  "source": "HumblewoodTales",
+  "className": "法师",
+  "classSource": "PHB",
+  "page": 177,
+  "additionalSpells": [
+    {
+      "ENG_name": "Arctic",
+      "name": "极地",
+      "prepared": {
+        "1": [
+          "油腻术"
+        ],
+        "3": [
+          "定身类人"
+        ],
+        "5": [
+          "缓慢术"
+        ],
+        "7": [
+          "冰风暴"
+        ],
+        "9": [
+          "寒冰锥"
+        ]
+      },
+      "innate": {
+        "10": {
+          "daily": {
+            "1": [
+              "法术反制",
+              "解除魔法"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "ENG_name": "Coast",
+      "name": "海岸",
+      "prepared": {
+        "1": [
+          "雷鸣波"
+        ],
+        "3": [
+          "镜影术"
+        ],
+        "5": [
+          "召雷术"
+        ],
+        "7": [
+          "操控水体"
+        ],
+        "9": [
+          "咒唤元素"
+        ]
+      },
+      "innate": {
+        "10": {
+          "daily": {
+            "1": [
+              "法术反制",
+              "解除魔法"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "ENG_name": "Desert",
+      "name": "荒漠",
+      "prepared": {
+        "1": [
+          "七彩喷射"
+        ],
+        "3": [
+          "朦胧术"
+        ],
+        "5": [
+          "昼明术"
+        ],
+        "7": [
+          "枯萎术"
+        ],
+        "9": [
+          "伪装术"
+        ]
+      },
+      "innate": {
+        "10": {
+          "daily": {
+            "1": [
+              "法术反制",
+              "解除魔法"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "ENG_name": "Forest",
+      "name": "森林",
+      "prepared": {
+        "1": [
+          "纠缠术"
+        ],
+        "3": [
+          "树肤术"
+        ],
+        "5": [
+          "咒唤兽群"
+        ],
+        "7": [
+          "植物塑形|HumblewoodCampaignSetting"
+        ],
+        "9": [
+          "树跃术"
+        ]
+      },
+      "innate": {
+        "10": {
+          "daily": {
+            "1": [
+              "法术反制",
+              "解除魔法"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "ENG_name": "Grassland",
+      "name": "草地",
+      "prepared": {
+        "1": [
+          "提升视力|HumblewoodCampaignSetting"
+        ],
+        "3": [
+          "造风术"
+        ],
+        "5": [
+          "风墙术"
+        ],
+        "7": [
+          "行动自如"
+        ],
+        "9": [
+          "问道自然"
+        ]
+      },
+      "innate": {
+        "10": {
+          "daily": {
+            "1": [
+              "法术反制",
+              "解除魔法"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "ENG_name": "Mountain",
+      "name": "山地",
+      "prepared": {
+        "1": [
+          "云雾术"
+        ],
+        "3": [
+          "沉默术"
+        ],
+        "5": [
+          "雪雨暴"
+        ],
+        "7": [
+          "石肤术"
+        ],
+        "9": [
+          "石墙术"
+        ]
+      },
+      "innate": {
+        "10": {
+          "daily": {
+            "1": [
+              "法术反制",
+              "解除魔法"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "ENG_name": "Swamp",
+      "name": "沼泽",
+      "prepared": {
+        "1": [
+          "黄昏之纱|HumblewoodCampaignSetting"
+        ],
+        "3": [
+          "荆棘丛生"
+        ],
+        "5": [
+          "臭云术"
+        ],
+        "7": [
+          "巨虫术"
+        ],
+        "9": [
+          "疫病虫群"
+        ]
+      },
+      "innate": {
+        "10": {
+          "daily": {
+            "1": [
+              "法术反制",
+              "解除魔法"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "subclassSpells": [
+    "法术反制",
+    "解除魔法"
+  ],
+  "subSubclassSpells": {
+    "Arctic": [
+      "油腻术",
+      "定身类人",
+      "缓慢术",
+      "冰风暴",
+      "寒冰锥"
+    ],
+    "Coast": [
+      "雷鸣波",
+      "镜影术",
+      "召雷术",
+      "操控水体",
+      "咒唤元素"
+    ],
+    "Desert": [
+      "七彩喷射",
+      "朦胧术",
+      "昼明术",
+      "枯萎术",
+      "伪装术"
+    ],
+    "Forest": [
+      "纠缠术",
+      "树肤术",
+      "咒唤兽群",
+      "植物塑形|HumblewoodCampaignSetting",
+      "树跃术"
+    ],
+    "Grassland": [
+      "提升视力|HumblewoodCampaignSetting",
+      "造风术",
+      "风墙术",
+      "行动自如",
+      "问道自然"
+    ],
+    "Mountain": [
+      "云雾术",
+      "沉默术",
+      "雪雨暴",
+      "石肤术",
+      "石墙术"
+    ],
+    "Swamp": [
+      "黄昏之纱|HumblewoodCampaignSetting",
+      "荆棘丛生",
+      "臭云术",
+      "巨虫术",
+      "疫病虫群"
+    ]
+  },
+  "subclassFeatures": [
+    {
+      "ENG_name": "Leyline Magic",
+      "name": "地脉魔法",
+      "source": "HumblewoodTales",
+      "page": 177,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "地脉",
+      "subclassSource": "humblewoodtales",
+      "level": 2,
+      "entries": [
+        "自然的原始力量拥有自己的魔法能量，经过适当训练的法师可以驾驭这种力量。通过汲取这种法力，魔网法师可以接入原初语的法力储备，获得新法术、增强自身的施法能力，或扰乱试图在其领域扎根的敌对势力。这一传统中最强大的法师可以设置新的魔网，随着时间的推移将不自然或不适宜居住的地方转变为天堂。这些法师与德鲁伊密切合作，他们可以逐渐治愈那些被枯朽或腐化的环境。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "自然调谐|法师|PHB|地脉|humblewoodtales|2|humblewoodtales"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "魔网法术|法师|PHB|地脉|humblewoodtales|2|humblewoodtales"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "大地丝弦|法师|PHB|地脉|humblewoodtales|2|humblewoodtales"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Leyline Spells",
+      "name": "魔网法术",
+      "source": "HumblewoodTales",
+      "page": 177,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "地脉",
+      "subclassSource": "humblewoodtales",
+      "level": 2,
+      "entries": [
+        {
+          "ENG_name": "Leyline Spells",
+          "type": "statblock",
+          "tag": "table",
+          "source": "HumblewoodTales",
+          "name": "魔网法术",
+          "page": 177,
+          "style": "narrow"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Natural Attunement",
+      "name": "自然调谐",
+      "source": "HumblewoodTales",
+      "page": 177,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "地脉",
+      "subclassSource": "humblewoodtales",
+      "level": 2,
+      "entries": [
+        "当你在2级选择此奥术传承时，你将学会如何与自然中流动的魔网魔法同调。每天在自然环境准备法术时，你可以额外与附近魔网的能量同调以获得额外法术。此时，查阅与你准备法术环境相匹配的{@table 魔网法术|humblewoodtales}表格中的法术列表。你同一时间只能与一条魔网同调。",
+        "当你与魔网调谐时，你可以获得当前魔网法术列表中符合等级要求的任何法术。只要你与魔网保持调谐，这些法术总是处于准备状态，并且不计入你每天可准备的法术数量。魔网法术不会被抄录到你的法术书中。如果你获得的法术不在法师法术列表上，该法术对你而言仍视为法师法术。"
+      ]
+    },
+    {
+      "ENG_name": "Thrum of the Land",
+      "name": "大地丝弦",
+      "source": "HumblewoodTales",
+      "page": 178,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "地脉",
+      "subclassSource": "humblewoodtales",
+      "level": 2,
+      "entries": [
+        "同样在2环时，你学会如何从魔网中引导能量来增强你的法术，为其注入法力。每当你身处与你共鸣的魔网相匹配的环境中时，你可以为你施放的任何魔网法术应用以下增益之一（施放法术时选择）：",
+        {
+          "type": "list",
+          "page": 178,
+          "items": [
+            "你使用该法术进行攻击检定时获得+2加值。",
+            "你获得+1加值到该法术的豁免DC。",
+            "你在维持此法术的{@status 专注}时进行的体质豁免检定具有优势，并且你可以专注于此法术的时间最多为其正常持续时间的两倍。"
+          ]
+        },
+        "在14级时，当你施放一个6环或更高级的法术时，只要你在与你调谐的魔网相匹配的环境中，你可以对该法术应用以下一个增益。你无法再次使用此特性，直到你完成一次长休。"
+      ]
+    },
+    {
+      "ENG_name": "Biorhythm",
+      "name": "生理节律",
+      "source": "HumblewoodTales",
+      "page": 178,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "地脉",
+      "subclassSource": "humblewoodtales",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "在6级时，你学会引导魔网的能量来增强身体的自然治愈能力。只要你与魔网保持共鸣，每当你使用{@classFeature 奥术回想|法师|PHB|1|PHB}特性来恢复消耗的法术位时，你为每个恢复的法术位恢复{@dice 1d8}生命值。",
+        "此外，当你在自然设定中完成一次短休时，你可以根据自然调谐特性的规则，将自己同调到不同的魔网上。"
+      ]
+    },
+    {
+      "ENG_name": "Natural Disruption",
+      "name": "自然干扰",
+      "source": "HumblewoodTales",
+      "page": 178,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "地脉",
+      "subclassSource": "humblewoodtales",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "到10级时，你可以从魔网中引导能量来扰乱他人的魔法。你可以不消耗法术位施放{@spell 法术反制}或{@spell 解除魔法}，其等级等同于你可用的最高法术位等级。",
+        "必须完成一次长休才能再次使用该特性。"
+      ]
+    },
+    {
+      "ENG_name": "Leyline Weaving",
+      "name": "地脉编织",
+      "source": "HumblewoodTales",
+      "page": 178,
+      "className": "法师",
+      "classSource": "PHB",
+      "subclassShortName": "地脉",
+      "subclassSource": "humblewoodtales",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "在14级时，你学会了如何接入遥远魔网的互联网络，暂时将它们的法力注入甚至非自然或敌对的环境中。通过花费1小时进行冥想，你可以汲取遥远魔网的力量，在你的位置暂时创造一个新的魔网。当你这样做时，你可以从{@table 魔网法术|humblewoodtales}表格中选择任一地形，并与该魔网同调。这个魔网的地形不需要与你当前所处的地形相匹配。你的新魔网影响你冥想地点1英里半径的区域，该区域被视为你同调的魔网地形，以便使用你的魔网属性。魔网在陌生空间中难以扎根，24小时后，这个效应会消散。一旦你使用了这个特性，直到完成一次长休前你不能再使用它。",
+        "通过每天在同一地点使用此能力创造相同类型的魔网，持续一整年，你可以使效应变为永久。这将永远改变你所创造区域内的自然地景，并且你可以选择该区域内的环境是与你的新魔网相匹配，还是将其地形特性与自然存在的特性相结合。"
+      ]
+    }
+  ],
+  "hasFluffImages": true
+}

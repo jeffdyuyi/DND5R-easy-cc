@@ -1,0 +1,22 @@
+[
+  {
+    "ENG_name": "Radiant Absorbing Tattoo",
+    "name": "光耀吸收刺青",
+    "source": "TCE",
+    "page": 119,
+    "resist": [
+      "光耀"
+    ],
+    "detail1": "金",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "tattoo": true,
+    "hasRefs": true,
+    "entries": [
+      "{#itemEntry 吸收刺青|TCE}"
+    ],
+    "valueReference": 40000,
+    "type": "W"
+  }
+]

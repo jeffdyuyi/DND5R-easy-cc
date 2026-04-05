@@ -1,0 +1,21 @@
+[
+  {
+    "name": "撬棍",
+    "ENG_name": "Crowbar",
+    "source": "XPHB",
+    "page": 225,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 5,
+    "value": 200,
+    "entries": [
+      "在能够撬动的地方使用撬棍可以给予你在这方面的力量检定{@variantrule 优势|XPHB}。"
+    ],
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TFV"
+    ],
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

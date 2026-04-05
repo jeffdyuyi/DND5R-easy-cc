@@ -1,0 +1,80 @@
+[
+  {
+    "ENG_name": "Staff of Charming",
+    "name": "魅惑法杖",
+    "source": "DMG",
+    "page": 201,
+    "srd": true,
+    "referenceSources": [
+      "TftYP-DiT"
+    ],
+    "reprintedAs": [
+      "魅惑法杖|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": "由吟游诗人、牧师、德鲁伊、术士、魔契师或法师",
+    "reqAttuneTags": [
+      {
+        "class": "吟游诗人"
+      },
+      {
+        "class": "牧师"
+      },
+      {
+        "class": "德鲁伊"
+      },
+      {
+        "class": "术士"
+      },
+      {
+        "class": "魔契师"
+      },
+      {
+        "class": "法师"
+      }
+    ],
+    "weight": 4,
+    "weaponCategory": "simple",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "staff": true,
+    "entries": [
+      "持握此杖时，你可以用一个动作消耗其10发充能中的1发来以你的法术豁免DC从中施放{@spell 魅惑类人}、{@spell 命令术}或{@spell 通晓语言}。此法杖也可用作魔法长棍。",
+      "持握法杖时，如果你对一个仅以你为目标的惑控法术豁免失败，则你可以将这次失败变为成功。此后该属性直到次日黎明前都无法再次启动。如果你在对一个仅以你为目标的惑控法术豁免成功（无论是否受益于法杖属性），则你可以用反应并消耗1发充能将法术反射回原施法者，而你则视为该反射法术的施法者。",
+      "该法杖每日黎明时恢复{@dice 1d8 + 2}发已消耗充能。如果你消耗了最后一发充能，骰一次{@dice d20}。如果骰值为1，则法杖将变为一根非魔法的长棍。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "魅惑类人",
+          "命令术",
+          "通晓语言"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表G"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Staff of Charming.webp"
+          },
+          "width": 163,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "ST"
+  }
+]

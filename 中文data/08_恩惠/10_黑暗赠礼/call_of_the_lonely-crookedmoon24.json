@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Call of the Lonely",
+    "name": "孤独呼唤",
+    "source": "CrookedMoon24",
+    "page": 118,
+    "type": "Dark Bargain",
+    "entries": [
+      "在你孤独的深处，当你的希望枯竭于枯枝时，你被提供了一个可以呼唤的同伴。你再也不必独自一人了。这个同伴对你持{@variantrule 友好【态度】|XPHB|友好}态度，但让你的盟友深感不安。",
+      {
+        "ENG_name": "Never Alone",
+        "name": "永不独行",
+        "type": "entries",
+        "entries": [
+          "当没有其他生物能看到你时，你可以使用一个{@variantrule 附赠动作|XPHB}来召唤你的同伴，它出现在你10尺内一个未占据空间中。它采用一个人形或模糊剪影的形态，并使用{@creature 变形怪|XMM}数据卡。它对你是{@variantrule 友好【态度】|XPHB|友好}并作为你的盟友行动，在战斗中它在你的{@variantrule 先攻|XPHB}回合行动。它在1小时后、当它死亡、当你死亡、或当你使用一个动作礼貌地解除它时消失。当它消失时，它会掉落任何它穿着或携带的物品。",
+          "一旦你使用此{@variantrule 附赠动作|XPHB}，你在完成一次{@variantrule 长休|XPHB}前无法再次使用。"
+        ]
+      },
+      {
+        "ENG_name": "Precocious Friend",
+        "name": "早慧之友",
+        "type": "entries",
+        "entries": [
+          "伴阳有时会带着饰品、{@filter 诅咒奇珍|items|source=crookedmoon24|property=诅咒奇珍}或其他物品出现。它可能会告诉你它从哪里得到它们，也可能不会（GM的选择）。如果它从某个想念它或想要它回来的人那里拿走了物件，那可能会给你制造困难。"
+        ]
+      },
+      {
+        "ENG_name": "Unsettling Presence",
+        "name": "不安存在",
+        "type": "entries",
+        "entries": [
+          "当你的同伴被召唤时，它和你都会散发出一种可怕的气息，使你的盟友感到不安。当同伴被召唤时，一个对你并非{@variantrule 敌对【态度】|XPHB|敌对}的生物在其回合开始时若能看到你或同伴，必须成功通过DC 15的感知豁免检定，否则获得{@condition 恐慌|XPHB}状态直到其下一回合开始。"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/CrookedMoon24/Rewards/Call%20of%20the%20Lonely.webp"
+        },
+        "width": 850,
+        "height": 303,
+        "credit": "Suzanne Helmigh"
+      }
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Bargains/Call%20of%20the%20Lonely.webp"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "ENG_name": "Actor",
+    "name": "演员",
+    "source": "XPHB",
+    "page": 202,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4,
+        "ability": [
+          {
+            "cha": 13
+          }
+        ]
+      }
+    ],
+    "ability": [
+      {
+        "cha": 1
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Impersonation",
+        "name": "伪装",
+        "type": "entries",
+        "entries": [
+          "当你伪装成某个虚构或真实的个体时，你为使别人相信你就是那个个体所做的{@skill 欺瞒|XPHB}或{@skill 表演|XPHB}的魅力检定具有{@variantrule 优势|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Mimicry",
+        "name": "拟声",
+        "type": "entries",
+        "entries": [
+          "你可以模仿其他生物发出的声音，包括说话声。听到这种模仿的生物必须成功通过一次感知（{@skill 洞悉|XPHB}）检定，才能察觉出该效果是伪造的（{@dc 8} = 你的魅力调整值 +{@variantrule 熟练|XPHB|熟练加值}）。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

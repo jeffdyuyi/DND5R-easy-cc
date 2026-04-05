@@ -1,0 +1,25 @@
+{
+  "raceFluff": [
+    {
+      "ENG_name": "Raptor (Mistral)",
+      "name": "隼族 (风)",
+      "source": "HumblewoodCampaignSetting",
+      "_copy": {
+        "ENG_name": "Raptor",
+        "name": "隼族",
+        "source": "HumblewoodCampaignSetting",
+        "_mod": {
+          "entries": {
+            "mode": "prependArr",
+            "items": {
+              "type": "section",
+              "entries": [
+                "作为风隼族，你最习惯远离地面的生活。你可以在森林中行走数英里而无需将爪子接触土壤，在树枝间移动时比一些人在平地上还要自信。"
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "ENG_name": "Circle of Dragons",
+  "name": "巨龙结社",
+  "shortName": "龙",
+  "source": "GriffonsSaddlebag2",
+  "className": "德鲁伊",
+  "classSource": "PHB",
+  "page": 214,
+  "subclassFeatures": [
+    {
+      "ENG_name": "Circle of Dragons",
+      "name": "巨龙结社",
+      "source": "GriffonsSaddlebag2",
+      "page": 214,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "龙",
+      "subclassSource": "GriffonsSaddlebag2",
+      "level": 2,
+      "header": 1,
+      "entries": [
+        "巨龙结社是一个古老的严守传统的德鲁伊教团。这些荣誉至上的自然与龙族血脉的守护者们是一个秘密群体的成员，他们影响着世界的政治、战争和文化。结社的高级成员与贵族王室紧密相连，其联系能够追溯到好几代人之前，而这种联系则微妙地体现在了这些王室的徽章和标识上。",
+        "此结社的德鲁伊们了解龙和龙族魔法，就像野兽和植物与这个世界的联系一样，并利用这种联系来将自己转变成一种独特而又强大的龙形态。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "巨龙传说|德鲁伊|PHB|龙|GriffonsSaddlebag2|2|GriffonsSaddlebag2"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "巨龙之姿|德鲁伊|PHB|龙|GriffonsSaddlebag2|2|GriffonsSaddlebag2"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Draconic Lore",
+      "name": "巨龙传说",
+      "source": "GriffonsSaddlebag2",
+      "page": 214,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "龙",
+      "subclassSource": "GriffonsSaddlebag2",
+      "level": 2,
+      "header": 2,
+      "entries": [
+        "2级起，你可以说，读，写{@language 龙语}。另外，你无论何时进行与龙的历史和传说相关的智力（{@skill 历史}）检定时，你可以在检定结果中加入你的熟练加值。如果你已经拥有了{@skill 历史}技能的熟练项，你可以在检定中加入两倍的熟练加值作为替代。"
+      ]
+    },
+    {
+      "ENG_name": "Dragon Shape",
+      "name": "巨龙之姿",
+      "source": "GriffonsSaddlebag2",
+      "page": 214,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "龙",
+      "subclassSource": "GriffonsSaddlebag2",
+      "level": 2,
+      "header": 2,
+      "entries": [
+        {
+          "type": "table",
+          "colLabels": [
+            "龙",
+            "伤害类型"
+          ],
+          "colStyles": [
+            "col-6 text-center",
+            "col-6 text-left"
+          ],
+          "rows": [
+            [
+              "黑",
+              "强酸"
+            ],
+            [
+              "蓝",
+              "闪电"
+            ],
+            [
+              "黄铜",
+              "火焰"
+            ],
+            [
+              "青铜",
+              "闪电"
+            ],
+            [
+              "赤铜",
+              "强酸"
+            ],
+            [
+              "金",
+              "火焰"
+            ],
+            [
+              "绿",
+              "毒素"
+            ],
+            [
+              "红",
+              "火焰"
+            ],
+            [
+              "银",
+              "寒冷"
+            ],
+            [
+              "白",
+              "寒冷"
+            ]
+          ]
+        },
+        "在第2级，你可以以一个附赠动作，用你的荒野形态的一次使用次数变化为独特的形态：你的巨龙之姿。当处于此形态时你变成一只四肢着地的中型龙类，但仍保留你自己的角色数据值和感官。你的巨龙之姿的AC等于13+你的敏捷调整值（至多为2），且拥有30尺的步行速度和攀爬速度。另外，当你变为此形态时，你获得等同于你生命值上限的临时生命值。当你变回你原本的形态时，你失去任何剩余的临时生命值。",
+        "你可以维持该形态等同于你的德鲁伊等级一半的小时数，向下取整。你可以在你的回合以一个附赠动作提前恢复你原本的形态。如果你陷入{@condition 昏迷}状态，生命值降为0或死亡，你自动恢复形态。",
+        "当你使用你的巨龙之姿时，由你来决定变为哪种龙。龙的种类决定了鳞片的颜色和吐息武器的伤害类型，像下方表格展示的那样。但你的外貌取决于你自己。你的飞翼在2级还没有完全变化，但是会在你获得本职业的等级时不断变强。",
+        "当你处于此形态时你无法施法，但是会获得在你每个回合都可以使用的不同的动作项：",
+        {
+          "ENG_name": "Bite",
+          "name": "啃咬",
+          "type": "entries",
+          "entries": [
+            "当你执行{@action 攻击}动作时，你可以使用你匕首般的牙齿进行一次徒手打击。你可以在你啃咬的攻击检定和伤害掷骰上应用你的感知调整值而非力量。若你的啃咬命中，你造成等同于{@dice 1d12}+你的力量或感知调整值的穿刺伤害，而非正常徒手打击造成的钝击伤害。"
+          ]
+        },
+        {
+          "ENG_name": "Breath Weapon",
+          "name": "吐息武器",
+          "type": "entries",
+          "entries": [
+            "你可以使用一个动作从体内呼出一股强大的能量。15尺锥形区域内的每个生物都必须进行一次敏捷豁免检定来对抗你的法术豁免DC。豁免失败的生物受到{@dice 2d6}点与你巨龙之姿所选择的伤害类型相同的伤害，豁免成功则只受一半伤害。一旦你使用了这一特性，它在1分钟内无法再次使用。",
+            "你的吐息武器会在特定等级获得增强。在6级时，你的吐息武器造成{@dice 3d6}点伤害且范围扩大为20尺锥形。在10级时，它造成{@dice 4d6}点伤害且范围扩大为25尺锥形，并且在14级时，它造成{@dice 5d6}点伤害且范围扩大为30尺锥形。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Improved Dragon Shape",
+      "name": "强化龙形",
+      "source": "GriffonsSaddlebag2",
+      "page": 215,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "龙",
+      "subclassSource": "GriffonsSaddlebag2",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "到了第6级，你对你的巨龙之姿的控制能力获得增强，在此形态时你获得如下这些增益：",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "item",
+              "entries": [
+                "你的AC等于14 + 你的敏捷调整值（至多为2）。"
+              ]
+            },
+            {
+              "type": "item",
+              "entries": [
+                "你获得新的攻击方式：",
+                {
+                  "ENG_name": "Claws",
+                  "name": "爪击",
+                  "type": "entries",
+                  "entries": [
+                    "你锋利的爪击是天生武器，你可以用以进行徒手打击。你可以在你爪击的攻击检定和伤害掷骰上应用你的感知调整值而非力量。若你的爪击命中，你造成等同于{@dice 2d6}+你的力量或感知调整值的挥砍伤害，而非正常徒手打击造成的钝击伤害。"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "item",
+              "entries": [
+                "当你在你自己的回合执行{@action 攻击}动作时，你可以进行一次啃咬和一次爪击。你的攻击在克服对非魔法攻击和伤害的抗性和免疫时视为魔法攻击。"
+              ]
+            },
+            {
+              "type": "item",
+              "entries": [
+                "你拥有{@sense 黑暗视觉}，范围为60尺。如果你因种族已经有了{@sense 黑暗视觉}，则其范围再增加30尺。"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Draconic Magic",
+      "name": "龙魔法",
+      "source": "GriffonsSaddlebag2",
+      "page": 215,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "龙",
+      "subclassSource": "GriffonsSaddlebag2",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "第10级起，你能够在巨龙之姿形态下施放特定的德鲁伊法术。为了在此形态下施法，这些法术必须使用三环及以下的德鲁伊法术位，且不能需要任何材料成分。",
+        "另外，你的鳞片更加坚韧，你的翅膀强大到足以承载你。在变成巨龙之姿形态时你获得如下这些增益：",
+        {
+          "type": "list",
+          "items": [
+            "你的AC等于15 + 你的敏捷调整值（至多为2）。",
+            "你对你巨龙之姿所选择的伤害类型具有抗性。",
+            "你获得30尺飞行速度。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Heart of a Dragon",
+      "name": "巨龙之心",
+      "source": "GriffonsSaddlebag2",
+      "page": 215,
+      "className": "德鲁伊",
+      "classSource": "PHB",
+      "subclassShortName": "龙",
+      "subclassSource": "GriffonsSaddlebag2",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "在第14级，即使你没有在巨龙之姿形态，你仍可以使用你的吐息武器。一旦你使用了该特性，你在下一次长休结束前无法再次使用。",
+        "另外，在变成巨龙之姿形态时你获得如下这些增益：",
+        {
+          "type": "list",
+          "items": [
+            "你的AC等于16 + 你的敏捷调整值（至多为2）。",
+            "你的飞行速度增加至40尺。",
+            "当你在你自己的回合执行{@action 攻击}动作时，你可以进行三次攻击：一次啃咬和两次爪击。"
+          ]
+        },
+        "最后，当你变为巨龙之姿时，你可以选择变成大型龙类，而不是中型。如果你这样做了，你的啃咬触及范围为10尺，而非5尺。"
+      ]
+    }
+  ],
+  "fluff": {
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Subclasses/Circle-of-Dragons.webp"
+        },
+        "width": 1020,
+        "height": 1521
+      }
+    ]
+  }
+}

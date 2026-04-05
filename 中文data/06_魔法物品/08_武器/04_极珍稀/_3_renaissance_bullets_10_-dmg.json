@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "+3 Renaissance Bullets (10)",
+    "name": "+3 文艺复兴子弹(10)",
+    "source": "DMG",
+    "page": 150,
+    "reprintedAs": [
+      "+3 弹药|XDMG"
+    ],
+    "edition": "classic",
+    "type": "AF|DMG",
+    "rarity": "very rare",
+    "weight": 2,
+    "value": 300,
+    "age": "文艺复兴",
+    "bulletFirearm": true,
+    "packContents": [
+      {
+        "item": "文艺复兴子弹",
+        "quantity": 10
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "namePrefix": "+3 ",
+    "srd": true,
+    "tier": "次要",
+    "bonusWeapon": "+3",
+    "entries": [
+      "使用这件魔法弹药进行攻击和伤害判定时，你会获得{=bonusWeapon}的额外加成。一旦击中目标，弹药将不再具有魔法效果。"
+    ],
+    "lootTables": [
+      "魔法物品表D"
+    ],
+    "_isVariant": true,
+    "valueReference": 20000
+  }
+]

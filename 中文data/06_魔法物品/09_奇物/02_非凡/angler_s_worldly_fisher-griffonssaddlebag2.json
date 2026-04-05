@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Angler's Worldly Fisher",
+    "name": "渔翁的钓世竿",
+    "source": "GriffonsSaddlebag2",
+    "page": 36,
+    "tier": "次要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这根魔法钓竿能在物质位面的中任何地方从整个世界的水域中钓鱼。当你手持这根钓竿时，你可以用一个动作说出它的命令语并将鱼钩甩向距你30尺范围内你可见的一点。若如此做，鱼线的末端将于该处消失，并魔法性地出现于物质位面中的随机一处水域中。尽管你无法看到鱼线末端的情况，但你仍能感觉到它正被水流拉动着。以此法钓到的任何鱼都会魔法性地出现在你甩钩的那一点处。在你使用这根钓竿钓鱼期间，你为钓到鱼而进行的属性检定具有优势。"
+    ],
+    "lootTables": [
+      "魔法物品表 B1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Anglers-Worldly-Fisher.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

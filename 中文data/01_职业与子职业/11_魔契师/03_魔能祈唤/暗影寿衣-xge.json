@@ -1,0 +1,33 @@
+{
+  "ENG_name": "Shroud of Shadow",
+  "name": "暗影寿衣",
+  "source": "XGE",
+  "page": 57,
+  "featureType": [
+    "EI"
+  ],
+  "prerequisite": [
+    {
+      "level": {
+        "level": 15,
+        "class": {
+          "ENG_name": "Warlock",
+          "name": "魔契师"
+        }
+      }
+    }
+  ],
+  "additionalSpells": [
+    {
+      "innate": {
+        "_": [
+          "隐形术"
+        ]
+      }
+    }
+  ],
+  "entries": [
+    "你可以随意施展{@spell 隐形术}法术，且无需消耗法术位。"
+  ],
+  "translator": "不全书"
+}

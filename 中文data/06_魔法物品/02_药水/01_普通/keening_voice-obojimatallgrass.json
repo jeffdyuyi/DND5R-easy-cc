@@ -1,0 +1,46 @@
+[
+  {
+    "ENG_name": "Keening Voice",
+    "name": "女巫声音",
+    "source": "ObojimaTallGrass",
+    "page": 223,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Com"
+    ],
+    "entries": [
+      "当你打开这瓶药水时，一个女巫的哀嚎从瓶中传出。饮用后，这瓶药水会给饮用者的声带带来魔法共鸣。作为附赠动作，你可以对60尺内的一个生物进行一次远程攻击，使用你的魅力（{@skill 表演}）加值作为攻击加值。如果目标听不见你，则不受影响。命中时，目标受到{@damage 1d6}雷鸣伤害。这瓶药水的效应持续1小时。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 26|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Combat/keening-voice.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1752,
+          "height": 1752
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1,
+        "autoDestroy": false
+      }
+    }
+  }
+]

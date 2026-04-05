@@ -1,0 +1,57 @@
+[
+  {
+    "ENG_name": "Enspelled Armament",
+    "name": "附魔武装",
+    "source": "GrimHollowPG24",
+    "page": 191,
+    "level": 2,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "m": "一小瓶燃油和饮水"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "当你施放该法术时，选择一项简易或军用武器。一把由虹彩能量构成的所选武器复制品出现在你手中。在持续时间内，你对该武器熟练，并且每当你使用该武器攻击时，你可以使用你的施法属性调整值代替力量或敏捷进行攻击和伤害掷骰。使用该武器进行的攻击不需要弹药，如果你将该武器作为远程攻击的一部分投掷出去，它会在攻击结算后立即回到你手中。该武器造成的伤害为力场而非武器的正常伤害类型。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "武器的伤害每比2环高一个法术位环阶就增加{@dice 1d4}。如果你使用5环或更高的法术位施放该法术，持续时间将变为8小时。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Enspelled%20Armament.webp"
+  }
+]

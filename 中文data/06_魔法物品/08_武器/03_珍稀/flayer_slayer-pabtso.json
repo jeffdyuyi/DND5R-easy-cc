@@ -1,0 +1,26 @@
+[
+  {
+    "ENG_name": "Flayer Slayer",
+    "name": "弑灵者",
+    "source": "PaBTSO",
+    "page": 217,
+    "baseItem": "巨斧|PHB",
+    "type": "M",
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 7,
+    "weaponCategory": "martial",
+    "property": [
+      "H",
+      "2H"
+    ],
+    "dmg1": "1d12",
+    "dmgType": "S",
+    "bonusWeapon": "+1",
+    "entries": [
+      "这把巨斧的金属刀身上装饰着被斩首的灵吸怪雕刻。使用这把巨斧进行攻击和伤害骰时，你获得+1的加值。",
+      "用这把巨斧攻击的异怪会受到额外的{@damage 1d12}点挥砍damage。如果该异怪正在擒抱某个生物，它必须成功通过一次{@dc 15}的力量豁免检定，否则释放它所擒抱的每个生物。"
+    ],
+    "valueReference": 4000
+  }
+]

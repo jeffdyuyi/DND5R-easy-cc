@@ -1,0 +1,23 @@
+[
+  {
+    "name": "壶",
+    "ENG_name": "Jug",
+    "source": "XPHB",
+    "page": 226,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 4,
+    "value": 2,
+    "entries": [
+      "壶具有一加仑的容量。"
+    ],
+    "basicRules2024": true,
+    "containerCapacity": {
+      "volume": [
+        0.1
+      ]
+    },
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "ENG_name": "Crustacean Form",
+    "name": "甲壳形态",
+    "source": "ObojimaTallGrass",
+    "page": 184,
+    "level": 6,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一个锈红蟹壳"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你在身体周围创造一个大型以太甲壳形态，用于保护和协助战斗。持续时间内，你的护甲等级变为20（如果原本不高于此值），获得40尺的游泳速度，并获得30尺范围内的{@sense 盲视}。此外，你可以使用附赠动作以爪击进行近战武器攻击。此攻击使用你的法术攻击加值，并在命中时造成{@damage 1d10}钝击伤害。",
+      "此外，你的以太壳具有15生命值的伤害阈值。伤害阈值使你免疫所有伤害，除非伤害数量等于或超过阈值价值，在这种情况下你会正常受到伤害。任何未能达到或超过壳的伤害阈值的伤害都被视为表面伤害，不会减少任何生命值。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "damageImmune": [
+      "强酸",
+      "钝击",
+      "寒冷",
+      "火焰",
+      "力场",
+      "闪电",
+      "暗蚀",
+      "穿刺",
+      "毒素",
+      "心灵",
+      "光耀",
+      "挥砍",
+      "雷鸣"
+    ],
+    "damageInflict": [
+      "钝击"
+    ],
+    "miscTags": [
+      "UBA"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Custom/Spells/Crustacean%20Form.webp"
+  }
+]

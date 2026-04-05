@@ -1,0 +1,29 @@
+[
+  {
+    "ENG_name": "Fighting Chain, Sickle",
+    "name": "战斗链击，镰刀",
+    "source": "GrimHollowPG24",
+    "page": 128,
+    "type": "M|XPHB",
+    "rarity": "none",
+    "weight": 3,
+    "value": 50000,
+    "weaponCategory": "进阶",
+    "property": [
+      "Dam|GrimHollowPG24",
+      "D|GrimHollowPG24",
+      "F|XPHB",
+      "R|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "纠缠|GrimHollowPG24"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "B",
+    "weapon": true,
+    "customProperties": {
+      "Damage": "挥砍"
+    }
+  }
+]

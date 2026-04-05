@@ -1,0 +1,49 @@
+[
+  {
+    "ENG_name": "Censer of Controlling Air Elementals",
+    "name": "命令气元素香炉",
+    "source": "DMG",
+    "page": 158,
+    "srd": true,
+    "referenceSources": [
+      "CM"
+    ],
+    "reprintedAs": [
+      "命令气元素香炉|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "rare",
+    "wondrous": true,
+    "weight": 1,
+    "entries": [
+      "熏香在这个香炉中燃烧期间，你可以用一个动作说出香炉的命令语并以此召唤出一只{@creature 气元素}，其效应如同你施放了法术{@spell 咒唤元素}。直到次日黎明前，香炉都无法再次以该方式使用。",
+      "这个6寸宽、1尺高的船只外形类似于一个带有装饰盖的酒杯。它重1磅。"
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "咒唤元素"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表G"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Censer of Controlling Air Elementals.webp"
+          },
+          "width": 797,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "ENG_name": "Contaminated Hands",
+    "name": "污染之手",
+    "source": "GuideDrakkenheim",
+    "page": 197,
+    "level": 5,
+    "school": "E",
+    "subschools": [
+      "受污染的"
+    ],
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "价值100gp的妄质碎片，该法术会消耗此碎片"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "{@i 当你施放这个法术时，你获得1层污染。}",
+      "你在范围内能看见的一个未占据空间中创造出两只闪烁的奥克塔林力场大型手掌。手掌持续至法术的持续时间结束。两只手掌都会在你的命令术下移动，模仿你自己手掌的动作。",
+      "每只手都是一个AC 20且生命值等同于你生命值上限的物件。如果一只手或两只手的生命值降至0，该法术结束。每只手拥有26（+8）的力量值和10（+0）的敏捷值，并占据其空间。",
+      "当你施放该法术时，以及在你后续回合以一个动作，你可以将手移动至多60尺，然后每只手造成以下效应之一。两只手可以执行相同或不同的动作。这两只手必须移动以保持彼此在30尺内。",
+      {
+        "type": "list",
+        "items": [
+          {
+            "ENG_name": "Arcane Slam",
+            "name": "奥术猛击",
+            "type": "entries",
+            "entries": [
+              "这只手会攻击5尺内的一个生物或物件。使用你的游戏数据为这只手进行一次近战法术攻击。命中时，目标受到{@damage 4d12}暗蚀伤害。如果你指挥两只手攻击同一个目标，它们在攻击检定上获得优势。"
+            ]
+          },
+          {
+            "ENG_name": "Forceful Throw",
+            "name": "强力投掷",
+            "type": "entries",
+            "entries": [
+              "污染之手尝试将5尺内的一个生物推向你选择的方向。用手的力量进行检定，与目标的力量（运动）检定对抗。如果目标是中等或更小，你在检定中具有优势。如果成功，污染之手将目标推离最多5尺加上五倍你施法属性调整值的尺数。污染之手随目标移动以保持5尺内。如果两只手同时作用于同一目标，你可以将它们推离十倍你施法属性调整值的距离，并在对抗大型或更小目标的检定中获得优势。"
+            ]
+          },
+          {
+            "ENG_name": "Eldritch Grip",
+            "name": "骇人抓取",
+            "type": "entries",
+            "entries": [
+              "这只手尝试擒抱一个5尺内的巨型或更小的生物。你使用手的力量值来解决擒抱。如果目标是中等或更小，你在检定上具有优势。如果两只手都用于同一个目标，它们可以擒抱一个生物，无论其体型如何，并且你在对抗大型或更小目标的擒抱检定上具有优势。"
+            ]
+          },
+          {
+            "ENG_name": "Contaminated Crush",
+            "name": "污染粉碎",
+            "type": "entries",
+            "entries": [
+              "你可以让一只手镇压它正在擒抱的目标。当你这样做时，目标受到等于{@damage 2d12} + 你的施法属性调整值的钝击伤害。此外，目标必须进行一次体质豁免检定否则获得1层污染。如果两只手都在擒抱同一个目标，你可以让它们将被擒抱的目标撕成碎片。它们造成额外的{@damage 4d12}暗蚀伤害。"
+            ]
+          }
+        ]
+      }
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用6环或更高法术位施放该法术时，奥术猛击和污染粉碎选项的伤害增加{@damage 2d12}，且邪术之握的伤害对5环以上的每个法术位环阶增加{@damage 2d6}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "暗蚀",
+      "钝击"
+    ],
+    "savingThrow": [
+      "体质"
+    ],
+    "miscTags": [
+      "SCL"
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Apothecary",
+          "name": "药剂师",
+          "source": "GuideDrakkenheim"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    }
+  }
+]

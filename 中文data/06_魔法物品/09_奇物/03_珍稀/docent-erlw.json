@@ -1,0 +1,88 @@
+[
+  {
+    "ENG_name": "Docent",
+    "name": "指导附件",
+    "source": "ERLW",
+    "page": 276,
+    "otherSources": [
+      {
+        "source": "VEoR",
+        "page": 80
+      }
+    ],
+    "referenceSources": [
+      "VEoR"
+    ],
+    "rarity": "rare",
+    "reqAttune": "由战俑",
+    "reqAttuneTags": [
+      {
+        "race": "战俑|ERLW"
+      }
+    ],
+    "wondrous": true,
+    "sentient": true,
+    "entries": [
+      "指导附件是一个小型金属球，直径约2英寸，上面镶嵌着龙晶。要与指导附件同调，你必须将这个物品嵌入你身体的某个地方，比如你的胸口或你的眼窝。",
+      {
+        "ENG_name": "Sentience",
+        "name": "智能",
+        "type": "entries",
+        "entries": [
+          "指导附件是一个智能物品，其阵营任意，具有16智力、14感知及14魅力属性。它通过你的感官观察世界，且可通过心灵念话与你交流。指导附件可以说、读以及理解他知道的任何语言（详见下文\"随机特质\"）。"
+        ]
+      },
+      {
+        "ENG_name": "Life Support",
+        "name": "生命维持",
+        "type": "entries",
+        "entries": [
+          "每当你在处于0生命值的状态下结束回合时，指导附件都能进行一个感知（{@skill 医药}）检定，它在该检定中有+6加值。如果检定成功，指导附件将稳定你的伤势。"
+        ]
+      },
+      {
+        "ENG_name": "Random Properties",
+        "name": "随机词条",
+        "type": "entries",
+        "entries": [
+          "指导附件有以下特性：",
+          "{@b 语言}。指导附件知晓通用语、巨人语以及{@dice 1d4}种由主持人选择的额外语言。如果指导附件知晓的语言数量小于六种，那么它可以在通过你的感官听到或读到一种新的语言之后学会它。",
+          "{@b 技能}. 指导附件在下述技能之一上拥有+7加值（掷{@dice d4}）：(1) {@skill 奥秘}, (2) {@skill 历史}, (3) {@skill 调查}, 或 (4) {@skill 自然}。",
+          "{@b 法术}。指导附件知晓下述法术之一，并且可以随意施放，无需任何成分（掷{@dice d6}）：(1~2) {@spell 侦测善恶} 或 (3~6) {@spell 侦测魔法}。指导附件决定何时施放该法术。"
+        ]
+      },
+      {
+        "ENG_name": "Personality",
+        "name": "个性",
+        "type": "entries",
+        "entries": [
+          "指导附件被设计用于向附着的战俑提供建议和帮助。它的基础功能之一就是作为一名翻译。指导附件的属性完全由其自己掌控，如果你与指导附件的关系不好，它可能会拒绝帮助你。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "will": [
+        "侦测善恶",
+        "侦测魔法"
+      ]
+    },
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "adventure/VEoR/070-04-004.docent.webp"
+          },
+          "title": "一个Docent",
+          "credit": "CoupleofKooks",
+          "width": 850,
+          "height": 1338
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

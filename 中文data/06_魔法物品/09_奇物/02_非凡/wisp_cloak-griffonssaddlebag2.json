@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "Wisp Cloak",
+    "name": "缕烟斗篷",
+    "source": "GriffonsSaddlebag2",
+    "page": 191,
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "curse": true,
+    "entries": [
+      "这件几乎没有重量的斗篷即使没有风依然会轻轻飘动。穿着这件斗篷期间，你进行的死亡豁免检定具有优势，且你的每个回合内限一次，你可以穿过一个中等或更小体型的生物一次，但不能在其中停留。",
+      {
+        "ENG_name": "Curse",
+        "name": "诅咒",
+        "type": "entries",
+        "entries": [
+          "这件斗篷被一个曾被亲密朋友背叛过的精魄诅咒了。一旦你穿上了这件受诅咒的斗篷，除非你成为{@spell 移除诅咒}法术或相似魔法的目标，否则你无法脱下它。穿着这件斗篷期间，当你在你的每个回合内于一个生命值归为0的友方生物10尺范围内第一次移动时，或结束你的回合时，则该生物必须成功通过一次DC 13的体质豁免检定，否则计一次失败的死亡豁免检定。"
+        ]
+      }
+    ],
+    "lootTables": [
+      "魔法物品表 F2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Wisp-Cloak.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Egg of Primal Water",
+    "name": "源生水卵",
+    "source": "GriffonsSaddlebag2",
+    "page": 76,
+    "tier": "次要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这个玻璃制成的蛋中装有1盎司来自水元素位面的附魔之水。你可以使用一个动作将其投向你能看见的30尺内一点。玻璃蛋会在该点破碎，并创造出一个以该点为中心、直径最大40尺的特殊水池。水池的表面是通往一个半位面的入口，该半位面深20尺，永远充满着来自水元素位面的水。这些水可饮用且可以从水池中取出，无论水池如何放置水都不会从中溢出。水池会持续存在24小时，之后任何留在水中的物品都会被排出。"
+    ],
+    "lootTables": [
+      "魔法物品表 B2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Egg-of-Primal-Water.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

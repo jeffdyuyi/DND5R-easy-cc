@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Erebos's Votary",
+    "name": "厄睿柏斯的信徒",
+    "source": "MOT",
+    "page": 43,
+    "type": "Piety Trait",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "daily": {
+              "1e": [
+                "吸血鬼之触"
+              ]
+            }
+          }
+        },
+        "ability": "wis"
+      }
+    ],
+    "entries": [
+      "{@i 虔信值10+厄睿柏斯特质}",
+      "你可以使用此特性施放{@spell 吸血鬼之触}。一旦你以此方式施放该法术，直至完成一次长休，你无法再次使用此能力。此法术的施法属性为感知。"
+    ]
+  }
+]

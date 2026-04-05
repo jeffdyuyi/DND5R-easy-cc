@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Wing Crest Shield",
+    "name": "翼羽盾",
+    "source": "HumblewoodCampaignSetting",
+    "page": 214,
+    "type": "S",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "ac": 2,
+    "bonusAc": "+1",
+    "recharge": "拂晓",
+    "entries": [
+      "持有这个盾牌时，你的AC获得+1的加成。",
+      "作为一个动作，你可以念出咒语命令来施放{@spell 造风术}（进行一次{@dc 15}的豁免检定）。一旦盾牌被用来施放这个spell，它直到次日黎明前不能再用来施放这个spell。"
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "造风术"
+        ]
+      }
+    },
+    "hasFluffImages": true,
+    "foundryActivities": [
+      {
+        "ENG_name": "Gust of Wind",
+        "name": "造风术",
+        "consumption.targets": [
+          {
+            "type": "activityUses",
+            "value": 1
+          }
+        ],
+        "spell.uuid": "@spell[造风术]",
+        "type": "cast",
+        "uses": {
+          "max": 1,
+          "recovery": [
+            {
+              "period": "拂晓",
+              "type": "recoverAll"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

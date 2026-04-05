@@ -1,0 +1,42 @@
+[
+  {
+    "ENG_name": "Feywild Shard",
+    "name": "妖精荒野碎晶",
+    "source": "TCE",
+    "page": 127,
+    "type": "SCF",
+    "rarity": "uncommon",
+    "reqAttune": "由术士",
+    "reqAttuneTags": [
+      {
+        "class": "术士"
+      }
+    ],
+    "wondrous": true,
+    "weight": 1,
+    "focus": [
+      "术士"
+    ],
+    "entries": [
+      "这个温暖的水晶闪烁着妖精荒野的日落色彩，并唤起情感记忆的低语。作为动作，你可以将碎片附加到一个小物件（如武器或珠宝）上，或者将其取下。如果你与它的契合结束，它就会脱落。你可以在持有或佩戴它时，将碎片作为施法焦点使用。",
+      "当你在持有或佩戴该碎片的情况下对法术使用超魔选项时，你可以投掷{@table 狂野魔法浪涌|PHB}表，该表见{@book 玩家手册|PHB}。如果投掷结果是法术，则该法术过于狂野而无法受到你的超魔效果影响，并且如果该法术通常需要{@status 专注}，则在此情况下不需要{@status 专注}；该法术将持续其完整的持续时间。",
+      "如果你没有野魔法术士起源，一旦这个属性被用来在{@table 狂野魔法浪涌|PHB}表格上掷骰，直到下一个黎明之前它都不能再次使用。"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/TCE/Feywild Shard.webp"
+          },
+          "credit": "Christopher Burdett",
+          "width": 507,
+          "height": 955
+        }
+      ]
+    }
+  }
+]

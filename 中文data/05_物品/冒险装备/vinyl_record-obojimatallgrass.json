@@ -1,0 +1,55 @@
+[
+  {
+    "ENG_name": "Vinyl Record",
+    "name": "黑胶唱片",
+    "source": "ObojimaTallGrass",
+    "page": 215,
+    "type": "Ingred",
+    "rarity": "uncommon",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 15|large}|SneakerProMedium}",
+            "{@font {@style 15|large}|SneakerProMedium}",
+            "{@font {@style 15|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "这些黑色圆盘上覆盖着一条连续螺旋线，一直延伸到圆盘的中心——据信这是一种远古且失传的记录知识的方式。一些贤者知道如何解锁凹槽中的信息，而许多胧忆岛的药剂制造者会研磨或融化这些\"档案\"以释放其中蕴含的魔法。这些物件通常像餐厅盘子一样堆叠在储藏处被发现。但发现寥寥无几，商人们肯定会讨价还价。"
+    ],
+    "lootTables": [
+      "海岸高地非普通原料|ObojimaTallGrass",
+      "狂风农田非普通原料|ObojimaTallGrass",
+      "舒里塔希的非普通原料赠礼|ObojimaTallGrass",
+      "热水大地非普通原料|ObojimaTallGrass",
+      "阿伯拉山非普通原料|ObojimaTallGrass",
+      "湿地非普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/vinyl-record.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 1878,
+          "height": 1878
+        }
+      ]
+    }
+  }
+]

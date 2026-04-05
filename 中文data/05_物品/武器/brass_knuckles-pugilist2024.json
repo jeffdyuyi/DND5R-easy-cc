@@ -1,0 +1,20 @@
+[
+  {
+    "ENG_name": "Brass Knuckles",
+    "name": "指虎",
+    "source": "Pugilist2024",
+    "type": "M",
+    "weaponCategory": "simple",
+    "rarity": "none",
+    "value": 100,
+    "weight": 1,
+    "property": [
+      "L"
+    ],
+    "mastery": [
+      "推离|XPHB"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "B"
+  }
+]

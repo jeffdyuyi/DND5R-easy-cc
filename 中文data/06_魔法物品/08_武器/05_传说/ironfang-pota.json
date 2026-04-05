@@ -1,0 +1,97 @@
+[
+  {
+    "ENG_name": "Ironfang",
+    "name": "铁牙",
+    "source": "PotA",
+    "page": 224,
+    "baseItem": "战镐|PHB",
+    "type": "M",
+    "resist": [
+      "强酸"
+    ],
+    "rarity": "legendary",
+    "reqAttune": true,
+    "weight": 2,
+    "weaponCategory": "martial",
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "grantsLanguage": true,
+    "bonusWeapon": "+2",
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "由一整块铁锻造而成的{@item 战镐|PHB}，铁牙拥有一个刻有古代符文、形似獠牙的头部。这把镐在手中感觉很重，但当持有者愤怒地挥舞它时，武器似乎几乎失去了重量。这把武器对任何形式的锈蚀、酸蚀或腐蚀都免疫——似乎没有任何东西能在它身上留下痕迹。铁牙蕴含着邪恶大地王子{@creature 欧雷莫克|PotA}的一丝火花。",
+      "你使用这把魔法武器进行攻击和伤害骰时获得+2加值。当你击中目标时，它会受到额外的{@damage 1d8}雷鸣伤害。",
+      {
+        "ENG_name": "Earth Mastery",
+        "name": "土元素掌控",
+        "type": "entries",
+        "entries": [
+          "当你持有铁牙时，你获得以下好处：",
+          {
+            "type": "list",
+            "items": [
+              "你能流利地说泰坦语。",
+              "你获得强酸伤害的抗性。",
+              "你拥有{@sense 震颤感知|MM}，范围为60英尺。",
+              "你可以感知到你周围60尺内贵金属和宝石的存在，但无法确定它们的确切位置。",
+              "你可以对 {@creature 土元素}施展 {@spell 支配怪物}（豁免 {@dc 17}）。一旦你这样做了，铁牙将无法再次以这种方式使用，直到下一个黎明。"
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Shatter",
+        "name": "粉碎音波",
+        "type": "entries",
+        "entries": [
+          "铁牙拥有3次充能。你可用你的动作消耗1次充能来施放2环版本的{@spell 粉碎音波}（{@dc 17}）。铁牙在每天黎明时恢复{@dice 1d3}次已消耗的充能。"
+        ]
+      },
+      {
+        "ENG_name": "The Rumbling",
+        "name": "穿云裂石之音",
+        "type": "entries",
+        "entries": [
+          "在土元素节点内，你可以进行一个叫做隆隆的仪式，使用铁牙创造一个{@item 毁灭法球(土)|PotA}。一旦你完成了仪式，铁牙在下一个黎明之前不能再用来进行仪式。"
+        ]
+      },
+      {
+        "ENG_name": "Flaw",
+        "name": "缺陷",
+        "type": "entries",
+        "entries": [
+          "铁牙增强了使用者的破坏性本性。在与这把武器共鸣时，你会获得以下缺点：\"我喜欢破坏东西，制造毁灭。\""
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "charges": {
+        "3": [
+          "粉碎音波"
+        ]
+      },
+      "daily": {
+        "1e": [
+          "支配怪物"
+        ]
+      }
+    },
+    "hasFluffImages": true,
+    "valueReference": 200000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/PotA/Ironfang.webp"
+          },
+          "width": 463,
+          "height": 850
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "ENG_name": "Shell",
+    "name": "壳",
+    "source": "ValdaGunslinger",
+    "type": "A",
+    "value": 50,
+    "entries": [
+      "枪械弹药被使用后即摧毁。"
+    ]
+  }
+]

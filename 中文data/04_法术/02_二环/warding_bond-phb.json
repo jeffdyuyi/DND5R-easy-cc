@@ -1,0 +1,66 @@
+[
+  {
+    "ENG_name": "Warding Bond",
+    "name": "守护之链",
+    "source": "PHB",
+    "page": 287,
+    "srd": true,
+    "basicRules": true,
+    "otherSources": [
+      {
+        "source": "RMR",
+        "page": 61
+      }
+    ],
+    "reprintedAs": [
+      "守护之链|XPHB"
+    ],
+    "level": 2,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一对单个价值至少 50gp 的铂金戒指，并由你和目标在法术持续时间内一直佩戴",
+        "cost": 10000
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你触碰一个自愿的生物，并让该法术的魔力保护它。该法术在你和目标之间建立一种神秘的连接，并一直持续至法术终止。目标位于你身边 60 尺内时，其 AC 和豁免检定具有+1 加值，且对所有伤害具有抗性。此外，每当目标受到伤害时，你也会受到同样的伤害。",
+      "如果你的生命值降至 0，或你与目标距离超过 60 尺，则该法术终止。如果该法术被再次施放于两个已被连接生物中的任意一方，则原法术即时终止。你还可以用一个动作主动解除该法术。"
+    ],
+    "miscTags": [
+      "MAC"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师",
+      "圣武士"
+    ],
+    "display_school": "防护系"
+  }
+]

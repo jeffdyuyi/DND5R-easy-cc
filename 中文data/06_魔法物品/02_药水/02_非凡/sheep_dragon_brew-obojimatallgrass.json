@@ -1,0 +1,48 @@
+[
+  {
+    "ENG_name": "Sheep Dragon Brew",
+    "name": "绵羊 龙 酿造",
+    "source": "ObojimaTallGrass",
+    "page": 226,
+    "type": "P",
+    "resist": [
+      "寒冷"
+    ],
+    "rarity": "uncommon",
+    "property": [
+      "Com"
+    ],
+    "entries": [
+      "一口这种精神饱满的药水会让你全身长出一层厚厚的绵羊 龙 羊毛。除了让你保持暖和外，它还能帮助你的求生并保护你免受寒冷。在持续时间内，你的AC增加1，并获得寒冷伤害抗性。药水的效应持续1小时。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 43|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Combat/sheep-dragon-brew.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1298,
+          "height": 1298
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

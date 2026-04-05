@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Watchful Helm",
+    "name": "守望头盔",
+    "source": "CM",
+    "page": 183,
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "bonusAc": "+1",
+    "entries": [
+      "当你佩戴这个头盔时，你的护甲等级获得+1的加成，并且即使你在睡觉时也能保持对周围环境的警觉，你在依赖视力的感知（{@skill 察觉}）检定上获得优势。",
+      "作为附赠动作，你可以从头盔中施展{@spell 识破隐形}法术。一旦使用头盔的这个属性，直到下一个黎明之前都不能再次使用。"
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "识破隐形"
+        ]
+      }
+    },
+    "valueReference": 40000,
+    "type": "W"
+  }
+]

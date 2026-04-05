@@ -1,0 +1,55 @@
+[
+  {
+    "ENG_name": "Thread of Duality",
+    "name": "二元之线",
+    "source": "CrookedMoon24",
+    "page": 160,
+    "type": "Thread of Fate",
+    "entries": [
+      "一个被二元之线连接的角色拥有一个他们分离为二的灵魂，以期消除其凡人的罪恶、恶习和缺陷。一个由罪恶本身诞生的近乎完全相同的复制体以该角色的伪装犯下日益恶意的行动，朝着一个只有该角色才能阻止的邪恶目标前进，同时他们通过镜子和其他镜影与变形怪交流。",
+      {
+        "ENG_name": "Goal",
+        "name": "目标",
+        "type": "entries",
+        "entries": [
+          "该角色必须追踪其罪恶的复制体，揭露复制体恶意阴谋的本质，并找到一种方法来修复其分离的灵魂，以结束其对应体的邪恶和灾难性阴谋。"
+        ]
+      },
+      {
+        "ENG_name": "Personalization",
+        "name": "个性化",
+        "type": "entries",
+        "entries": [
+          "确定复制体在外貌和行为上如何既反映角色又与之不同。什么罪恶最定义变形怪，它们最大的道德缺点是什么，以及角色为何如此激烈地行动来清除它们？灵魂分离过程需要什么？角色现在如何表现不同？"
+        ]
+      },
+      {
+        "ENG_name": "Call to Adventure",
+        "name": "冒险召唤",
+        "type": "entries",
+        "entries": [
+          "角色收到或发现据称由它们犯下的邪恶行动的消息。沿着罪恶的踪迹，他们最终看到自己的倒影，但有些不对劲，假眼充满了威吓。变形怪用嘲讽和威胁对角色说话，提到要赶列车并留下指向冒险开始之处的线索。"
+        ]
+      },
+      {
+        "ENG_name": "Associated Background",
+        "name": "关联背景",
+        "type": "entries",
+        "entries": [
+          "{@background 彷徨镜影|crookedmoon24}"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/CrookedMoon24/Adventure/051-02-033.thread-of-duality.webp"
+        },
+        "width": 588,
+        "height": 622
+      }
+    ]
+  }
+]

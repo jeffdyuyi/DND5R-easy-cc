@@ -1,0 +1,54 @@
+[
+  {
+    "ENG_name": "Veil of the Weeping Widow (Rare)",
+    "name": "悲泣寡妇的头纱（珍稀）",
+    "source": "CrookedMoon24",
+    "page": 606,
+    "resist": [
+      "心灵"
+    ],
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "property": [
+      "TCM'24:FH"
+    ],
+    "entries": [
+      "这件哀悼面纱被注入了异域法力。悲泣寡妇佩戴此面纱来遮掩其永远带有斑驳泪痕的面容，也有流言称寡妇用其来隐藏眼中蠕动的异界腐败。",
+      "佩戴这面纱期间，你的感知检定和感知豁免会获得取决于该面纱稀有度的+1加值，并且你还可以使用如下词条。",
+      {
+        "ENG_name": "Psychic Fortitude (Rare+)",
+        "name": "心念钢壁（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "你具有对心灵伤害的{@variantrule 抗性|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Sense Grief (Rare+)",
+        "name": "感悲之心（珍稀+）",
+        "type": "entries",
+        "entries": [
+          "你可以从该头纱中施放{@spell 侦测思想|XPHB}（豁免DC = 16 + 头纱的加值）。"
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "侦测思想|XPHB"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Veil%20of%20the%20Weeping%20Widow.webp"
+          },
+          "width": 841,
+          "height": 1200,
+          "credit": "Matthew Spencer"
+        }
+      ]
+    }
+  }
+]

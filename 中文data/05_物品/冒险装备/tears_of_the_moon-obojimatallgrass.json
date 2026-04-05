@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Tears of the Moon",
+    "name": "月亮之泪",
+    "source": "ObojimaTallGrass",
+    "page": 219,
+    "type": "Ingred",
+    "rarity": "rare",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 18|large}|SneakerProMedium}",
+            "{@font {@style 18|large}|SneakerProMedium}",
+            "{@font {@style 18|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "在某些夜晚，灵界的一片云雾会进入物质世界并被月光照射，结晶成一种被称为月息的光辉薄雾。在珍稀的情况下，月息可能会形成更大的晶体，被称为月亮之泪，它们会落到土中等待幸运的旅行者发现。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/tears-of-the-moon.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

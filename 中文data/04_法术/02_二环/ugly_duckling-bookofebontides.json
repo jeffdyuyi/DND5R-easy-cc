@@ -1,0 +1,79 @@
+[
+  {
+    "ENG_name": "Ugly Duckling",
+    "name": "丑小鸭",
+    "source": "BookOfEbonTides",
+    "page": 71,
+    "level": 2,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一块镜子碎子"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你选择范围内的一个生物必须进行一次魅力豁免检定。豁免失败时，目标在持续时间内进行的所有魅力检定都具有劣势，且任何与之交谈的生物都会对它们表现出冷漠态度。若目标在受此法術影响期间成功通过魅力检定，它可以进行一次新的豁免检定来克服该效应。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用3环或更高法术位施放该法术时，每比2环高一个环阶，你就可以多影响一个目标。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    },
+    "savingThrow": [
+      "魅力"
+    ],
+    "abilityCheck": [
+      "魅力"
+    ]
+  }
+]

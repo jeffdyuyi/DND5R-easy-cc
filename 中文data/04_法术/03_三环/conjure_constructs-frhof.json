@@ -1,0 +1,99 @@
+[
+  {
+    "ENG_name": "Conjure Constructs",
+    "name": "咒唤机群",
+    "source": "FRHoF",
+    "page": 143,
+    "level": 3,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一个黄铜齿轮"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你咒唤一群无形且守序的灵体，其于施法距离内的一处未占据空间中显现为中型的、由一队魔冢或其它构装组成的机群。机群存在直至法术结束。当你施展该法术时、或是在后续回合中以一个{@action 魔法|XPHB}动作，你可以令机群指定其5尺内的一个生物或物件，创造下列效果之一：",
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Clockwork Force",
+            "name": "机关之力",
+            "type": "item",
+            "entries": [
+              "目标进行一次敏捷豁免检定，豁免失败受{@damage 3d6}力场伤害，豁免成功则伤害减半。"
+            ]
+          },
+          {
+            "ENG_name": "Orderly Ward",
+            "name": "秩序守护",
+            "type": "item",
+            "entries": [
+              "目标获得等于{@dice 1d6}+你的施法属性调整值点{@variantrule 临时生命值|XPHB}。"
+            ]
+          }
+        ]
+      },
+      "当你在你的回合移动时，你可以令机群也移动至多30尺到一处你可见的未占据空间中。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "你使用的法术位每比三环高一环，法术的伤害和{@variantrule 临时生命值|XPHB}就增加{@scaledamage 3d6|3-9|1d6}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "force"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "miscTags": [
+      "OBJ",
+      "SGT",
+      "THP"
+    ],
+    "areaTags": [
+      "C"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "法师"
+    ],
+    "display_school": "咒法系",
+    "display_savingThrow": [
+      "敏捷"
+    ],
+    "display_damageInflict": [
+      "力场"
+    ]
+  }
+]

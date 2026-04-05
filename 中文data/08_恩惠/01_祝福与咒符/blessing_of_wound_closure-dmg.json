@@ -1,0 +1,15 @@
+[
+  {
+    "ENG_name": "Blessing of Wound Closure",
+    "name": "愈合祝福",
+    "source": "DMG",
+    "page": 228,
+    "reprintedAs": [
+      "愈合祝福|XDMG"
+    ],
+    "type": "Blessing",
+    "entries": [
+      "这个祝福为你带来一个{@item 愈合护符}所提供的增益。"
+    ]
+  }
+]

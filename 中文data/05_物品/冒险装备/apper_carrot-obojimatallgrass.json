@@ -1,0 +1,51 @@
+[
+  {
+    "ENG_name": "Apper Carrot",
+    "name": "阿珀胡萝卜",
+    "source": "ObojimaTallGrass",
+    "page": 201,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 0|large}|SneakerProMedium}",
+            "{@font {@style 3|large}|SneakerProMedium}",
+            "{@font {@style 1|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "阿珀胡萝卜在胧忆岛广为人知，是一种高端胡萝卜品种，具有美味的风味和精神饱满的脆度。当它准备好收获时，其球状的顶部会从土壤中探出，这使得采集者很容易在狂野魔法中发现阿珀胡萝卜。它们可以在大多数低地草地区域找到。"
+    ],
+    "lootTables": [
+      "狂风农田普通原料|ObojimaTallGrass",
+      "舒里塔希的赠礼 普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/apper-carrot.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 3604,
+          "height": 3604
+        }
+      ]
+    }
+  }
+]

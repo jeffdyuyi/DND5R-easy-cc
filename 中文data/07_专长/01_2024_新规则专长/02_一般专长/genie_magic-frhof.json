@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Genie Magic",
+    "name": "巨灵魔法",
+    "source": "FRHoF",
+    "page": 39,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Wish Magic",
+        "name": "祈愿魔法",
+        "type": "entries",
+        "entries": [
+          "你能够以{@action 魔法|XPHB}动作施展一道{@filter 从术士法术列表中选择一个1环法术|spells|level=1|class=术士}，该法术的施法时间需为动作。此增益一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。该法术的施法属性是你以此专长提升的属性。",
+          "当你到达11级时，你以此专长施展的法术如同使用二环法术位施展。",
+          "当你到达17级时，你以此专长施展的法术如同使用三环法术位施展。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

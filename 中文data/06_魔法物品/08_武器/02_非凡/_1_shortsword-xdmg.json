@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "+1 Shortsword",
+    "name": "+1 短剑",
+    "source": "XDMG",
+    "page": 324,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TWoO",
+      "DrDe-SD"
+    ],
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "uncommon",
+    "weight": 2,
+    "value": 1000,
+    "weaponCategory": "martial",
+    "property": [
+      "F|XPHB",
+      "L|XPHB"
+    ],
+    "mastery": [
+      "侵扰|XPHB"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "sword": true,
+    "weapon": true,
+    "hasFluffImages": true,
+    "namePrefix": "+1 ",
+    "bonusWeapon": "+1",
+    "entries": [
+      "使用这把魔法武器进行攻击和伤害判定时，你会获得{=bonusWeapon}的额外加成。"
+    ],
+    "classFeatures": [
+      "仿制魔法物品|奇械师|efa|2|efa"
+    ],
+    "lootTables": [
+      "武备 - 非普通|XDMG"
+    ],
+    "_isVariant": true,
+    "valueReference": 400
+  }
+]

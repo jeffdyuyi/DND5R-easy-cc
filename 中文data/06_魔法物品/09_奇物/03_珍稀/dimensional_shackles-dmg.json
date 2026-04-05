@@ -1,0 +1,48 @@
+[
+  {
+    "ENG_name": "Dimensional Shackles",
+    "name": "次元镣铐",
+    "source": "DMG",
+    "page": 165,
+    "srd": true,
+    "referenceSources": [
+      "BGDIA",
+      "JttRC",
+      "KftGV",
+      "ToFW",
+      "CoA"
+    ],
+    "reprintedAs": [
+      "次元镣铐|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "rare",
+    "wondrous": true,
+    "entries": [
+      "你可以用一个动作来以此镣铐约束一个{@condition 失能}的生物。镣铐可以自行调整适应从小型到大型体型的生物。除普通镣铐的作用之外，次元镣铐还能阻止被其约束生物进行异次元移动，包括传送和异位面旅行。不过镣铐并不能阻止生物穿过一道连接异位面的传送门。",
+      "你（和你指定的任何生物）可以用一个动作直接解除此镣铐。每隔30日，被约束的生物可以进行一次{@dc 30}的力量（{@skill 运动}）检定，成功则破坏镣铐重获自由。"
+    ],
+    "optionalfeatures": [
+      "仿制魔法物品|TCE"
+    ],
+    "lootTables": [
+      "魔法物品表G"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Dimensional Shackles.webp"
+          },
+          "width": 708,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

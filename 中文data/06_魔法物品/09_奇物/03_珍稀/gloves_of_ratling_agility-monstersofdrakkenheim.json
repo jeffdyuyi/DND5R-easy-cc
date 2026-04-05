@@ -1,0 +1,69 @@
+[
+  {
+    "ENG_name": "Gloves of Ratling Agility",
+    "name": "鼠怪敏捷手套",
+    "source": "MonstersOfDrakkenheim",
+    "page": 387,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "ability": {
+      "static": {
+        "dex": 19
+      }
+    },
+    "entries": [
+      "当你佩戴这些鼠怪表皮手套时，你的敏捷值为19。如果你的敏捷值在没有它们的情况下已经达到19或更高，则对你无效果。",
+      {
+        "ENG_name": "Crafting",
+        "name": "手作",
+        "type": "entries",
+        "entries": [
+          "制作鼠怪敏捷手套需要一个珍稀工坊和以下珍稀成分：",
+          {
+            "type": "list",
+            "items": [
+              {
+                "ENG_name": "[Animus]",
+                "name": "[精魄]",
+                "type": "item",
+                "entries": [
+                  "任意精魄"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Hair]",
+                "name": "[毛发]",
+                "type": "item",
+                "entries": [
+                  "任意鼠怪的毛皮"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Hide]",
+                "name": "[表皮]",
+                "type": "item",
+                "entries": [
+                  "任意鼠怪的皮肤"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Organ]",
+                "name": "[器官]",
+                "type": "item",
+                "entries": [
+                  "任意怪兽的内脏"
+                ],
+                "nameDot": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluffImages": true
+  }
+]

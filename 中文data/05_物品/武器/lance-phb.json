@@ -1,0 +1,37 @@
+[
+  {
+    "name": "骑枪",
+    "ENG_name": "Lance",
+    "source": "PHB",
+    "page": 149,
+    "edition": "classic",
+    "type": "M",
+    "rarity": "none",
+    "weight": 6,
+    "value": 1000,
+    "weaponCategory": "martial",
+    "property": [
+      "R",
+      "S"
+    ],
+    "dmg1": "1d12",
+    "dmgType": "P",
+    "entries": [
+      {
+        "ENG_name": "Special",
+        "name": "特殊",
+        "type": "entries",
+        "entries": [
+          "使用一把骑枪攻击5尺范围内目标时具有劣势。另外，当你不在骑乘状态时一根骑枪需要两只手使用。"
+        ]
+      }
+    ],
+    "basicRules": true,
+    "lance": true,
+    "reprintedAs": [
+      "骑枪|XPHB"
+    ],
+    "srd": true,
+    "weapon": true
+  }
+]

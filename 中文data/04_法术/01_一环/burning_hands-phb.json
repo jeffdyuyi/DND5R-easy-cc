@@ -1,0 +1,104 @@
+[
+  {
+    "ENG_name": "Burning Hands",
+    "name": "燃烧之手",
+    "source": "PHB",
+    "page": 220,
+    "srd": true,
+    "basicRules": true,
+    "otherSources": [
+      {
+        "source": "RMR",
+        "page": 51
+      }
+    ],
+    "referenceSources": [
+      "PotA",
+      "CoS",
+      "TftYP-TFoF",
+      "WDH",
+      "DIP",
+      "BGDIA",
+      "KftGV"
+    ],
+    "reprintedAs": [
+      "燃烧之手|XPHB"
+    ],
+    "level": 1,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "cone",
+      "distance": {
+        "type": "feet",
+        "amount": 15
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你双手拇指相对，其他手指张开，一道火焰随即从手指间喷出。处于 15 尺锥状区域内的生物必须进行一次敏捷豁免。豁免失败者受到 {@damage 3d6} 点火焰伤害，豁免成功则伤害减半。",
+      "该法术的火焰会点燃范围内未被着装或携带的可燃物。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "使用二环或更高法术位施展该法术时，你使用的法术位每比一环高一环，法术的伤害就增加 {@scaledamage 3d6|1-9|1d6}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "fire"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "miscTags": [
+      "OBJ"
+    ],
+    "areaTags": [
+      "N"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/PHB/Burning Hands.webp"
+          },
+          "width": 377,
+          "height": 1000
+        }
+      ]
+    },
+    "classes": [
+      "术士",
+      "法师"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "敏捷"
+    ],
+    "display_damageInflict": [
+      "火焰"
+    ]
+  }
+]

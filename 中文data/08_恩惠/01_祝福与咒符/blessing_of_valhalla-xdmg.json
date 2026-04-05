@@ -1,0 +1,12 @@
+[
+  {
+    "ENG_name": "Blessing of Valhalla",
+    "name": "瓦尔哈拉祝福",
+    "source": "XDMG",
+    "page": 99,
+    "type": "Blessing",
+    "entries": [
+      "该祝福使你获得召唤精魂武者的力量，其效应等同于你吹响一件{@item 瓦尔哈拉号角，白银|XDMG|瓦尔哈拉银号角}。你在使用一次该祝福后，必须经过7日之后才能再次启用其效应。"
+    ]
+  }
+]

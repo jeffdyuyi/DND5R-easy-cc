@@ -1,0 +1,36 @@
+[
+  {
+    "ENG_name": "Twinshot Hand Crossbow",
+    "name": "双子射手弩",
+    "source": "HumblewoodTales",
+    "page": 144,
+    "edition": "classic",
+    "type": "R",
+    "rarity": "none",
+    "weight": 5,
+    "value": 8500,
+    "weaponCategory": "军用",
+    "property": [
+      "A",
+      "L",
+      "LD",
+      "S"
+    ],
+    "range": "30/90",
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "crossbow": true,
+    "weapon": true,
+    "entries": [
+      {
+        "ENG_name": "Special",
+        "name": "特殊",
+        "type": "entries",
+        "entries": [
+          "这把双子射手弩经过改装，支持两个弩机机制，每个机制由单独的触发装置激活。与其他需要装填的武器不同，它可以连续发射两次才需要重新装填。如果你熟练使用{@item 手弩|PHB}，那么你也同样熟练使用双子射手弩。"
+        ]
+      }
+    ],
+    "ammoType": "弩矢|phb"
+  }
+]

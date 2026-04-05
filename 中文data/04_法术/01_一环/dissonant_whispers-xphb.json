@@ -1,0 +1,69 @@
+[
+  {
+    "ENG_name": "Dissonant Whispers",
+    "name": "不谐低语",
+    "source": "XPHB",
+    "page": 264,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 1,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "一名施法距离内你选择的可见生物的心灵中听见一段不协和旋律。目标进行一次感知豁免。豁免失败则受到{@damage 3d6}点心灵伤害，并立即执行其{@variantrule 反应|XPHB}（若可用）尽可能往远离你的方向移动，并采取最安全的路径。豁免成功则受到半数伤害。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "你使用的法术位每比一环高一环，此法术的伤害就会提升{@scaledamage 3d6|1-9|1d6}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "psychic"
+    ],
+    "savingThrow": [
+      "wisdom"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人"
+    ],
+    "display_school": "惑控系",
+    "display_savingThrow": [
+      "感知"
+    ],
+    "display_damageInflict": [
+      "心灵"
+    ]
+  }
+]

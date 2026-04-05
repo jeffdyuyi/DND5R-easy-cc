@@ -1,0 +1,9 @@
+{
+  "ENG_name": "Umber Hulk",
+  "name": "掘土巨怪语",
+  "source": "MM",
+  "page": 292,
+  "typicalSpeakers": [
+    "{@creature 掘土巨怪||掘土巨怪}"
+  ]
+}

@@ -1,0 +1,218 @@
+[
+  {
+    "ENG_name": "Reincarnate",
+    "name": "转生术",
+    "source": "PHB",
+    "page": 271,
+    "srd": true,
+    "referenceSources": [
+      "CoS",
+      "IDRotF"
+    ],
+    "reprintedAs": [
+      "转生术|XPHB"
+    ],
+    "level": 5,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "小时"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "价值至少 1000gp 的稀有油和软膏，作为该法术的耗材",
+        "cost": 100000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你触碰一个类人生物的遗体或遗体的一部分，以此创造出一具新的成年身体，并呼唤该生物的灵魂进入此新身躯。该生物死亡时间必须不超过 10 日。此外，如果目标生物的灵魂此时不能或者不愿意完成该过程，则法术失败。",
+      "该法术要为目标生物创造出一具新的身体，因此很可能导致该生物的种族发生变化。DM 可以投一个 {@dice d100} 来判定该生物以何种形态转生，也可以直接由 DM 选择一种形态。",
+      {
+        "type": "table",
+        "caption": "转生种族",
+        "colLabels": [
+          "{@dice d100}",
+          "种族"
+        ],
+        "colStyles": [
+          "col-1 text-center no-wrap",
+          "col-11"
+        ],
+        "rows": [
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "min": 1,
+                "max": 4,
+                "pad": true
+              }
+            },
+            "{@race 龙裔}"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "min": 5,
+                "max": 13,
+                "pad": true
+              }
+            },
+            "{@race 矮人 (丘陵)||丘陵矮人}"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "min": 14,
+                "max": 21
+              }
+            },
+            "{@race 矮人 (山地)||山地矮人}"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "min": 22,
+                "max": 25
+              }
+            },
+            "{@race 精灵 (卓尔)||黑暗精灵}"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "min": 26,
+                "max": 34
+              }
+            },
+            "{@race 精灵 (高等)||高等精灵}"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "min": 35,
+                "max": 42
+              }
+            },
+            "{@race 精灵 (木)||木精灵}"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "min": 43,
+                "max": 46
+              }
+            },
+            "{@race 侏儒 (森林)||林侏儒}"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "min": 47,
+                "max": 52
+              }
+            },
+            "{@race 侏儒 (岩石)||岩石侏儒}"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "min": 53,
+                "max": 56
+              }
+            },
+            "{@race 半精灵}"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "min": 57,
+                "max": 60
+              }
+            },
+            "{@race 半兽人}"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "min": 61,
+                "max": 68
+              }
+            },
+            "{@race 半身人 (轻足)||轻足半身人}"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "min": 69,
+                "max": 76
+              }
+            },
+            "{@race 半身人 (敦实)||强魄半身人}"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "min": 77,
+                "max": 96
+              }
+            },
+            "{@race 人类}"
+          ],
+          [
+            {
+              "type": "cell",
+              "roll": {
+                "min": 97,
+                "max": 0,
+                "pad": true
+              }
+            },
+            "{@race 提夫林}"
+          ]
+        ]
+      },
+      "转生后的生物保留其前生记忆和经验。受术者保留原形的一切能力，不过其种族特质将以新种族的相应特性做更替。"
+    ],
+    "affectsCreatureType": [
+      "类人"
+    ],
+    "miscTags": [
+      "HL",
+      "RO"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊"
+    ],
+    "display_school": "变化系"
+  }
+]

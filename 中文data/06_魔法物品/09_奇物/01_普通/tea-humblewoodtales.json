@@ -1,0 +1,15 @@
+[
+  {
+    "ENG_name": "Tea",
+    "name": "茶",
+    "source": "HumblewoodTales",
+    "page": 153,
+    "type": "LTG|HumblewoodTales",
+    "rarity": "none",
+    "weight": 1,
+    "value": 500,
+    "entries": [
+      "高等质量的茶叶，干燥并预备冲泡。"
+    ]
+  }
+]

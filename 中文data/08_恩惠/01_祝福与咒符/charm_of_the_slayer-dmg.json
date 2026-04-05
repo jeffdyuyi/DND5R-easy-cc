@@ -1,0 +1,15 @@
+[
+  {
+    "ENG_name": "Charm of the Slayer",
+    "name": "杀戮护咒",
+    "source": "DMG",
+    "page": 228,
+    "reprintedAs": [
+      "杀戮护咒|XDMG"
+    ],
+    "type": "Charm",
+    "entries": [
+      "One sword in your possession becomes a {@item 屠龙者} or {@item 巨人屠杀者} (DM's choice) for the next 9 days. The charm then vanishes from you and the weapon returns to normal."
+    ]
+  }
+]

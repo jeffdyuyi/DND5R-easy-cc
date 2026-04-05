@@ -1,0 +1,18 @@
+[
+  {
+    "name": "便携式攻城锤",
+    "ENG_name": "Portable Ram",
+    "source": "XPHB",
+    "page": 228,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 35,
+    "value": 400,
+    "entries": [
+      "你可以使用便携式攻城锤撞破一扇门。当你这么做时，你在力量检定上获得 +4 加值。其他一名角色可以协助你使用攻城锤，并使你这次检定具有{@variantrule 优势|XPHB}。"
+    ],
+    "basicRules2024": true,
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

@@ -1,0 +1,181 @@
+{
+  "ENG_name": "Delerium Soul",
+  "name": "妄质灵魂",
+  "source": "GuideDrakkenheim",
+  "shortName": "妄质",
+  "page": 171,
+  "className": "术士",
+  "classSource": "phb",
+  "subclassFeatures": [
+    {
+      "ENG_name": "Delerium Soul",
+      "name": "妄质灵魂",
+      "source": "GuideDrakkenheim",
+      "page": 171,
+      "className": "术士",
+      "classSource": "phb",
+      "subclassShortName": "妄质",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "entries": [
+        "妄质自然会被魔力所吸引，并能以不自然和不可预测的方式扭曲和极距其存在。一些冒险进入德雷肯海姆废墟的人被神秘力量扭曲，出壳时充满了受污染的能量。他们成为奥术异常和废墟中扭曲现实的活体船只。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "妄质法术|术士|phb|妄质|GuideDrakkenheim|1|GuideDrakkenheim"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "突变显迹|术士|phb|妄质|GuideDrakkenheim|1|GuideDrakkenheim"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Delerium Spells",
+      "name": "妄质法术",
+      "source": "GuideDrakkenheim",
+      "page": 171,
+      "className": "术士",
+      "classSource": "phb",
+      "subclassShortName": "妄质",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "entries": [
+        "浸染了妄质的魔能之力，你的魔法受到了根源污染。当你在此职业中达到特定等级时，你将习得额外的法术，如妄质法术表格所示。这些法术中的每一个都视为你的术士法术，但它们不计入你所知的术士法术数量。",
+        "每当你提升一个术士等级时，你可以将此特性获得的一个法术替换为同等级的另一个法术。新法术必须是一个受污染的法术。",
+        {
+          "type": "table",
+          "caption": "妄质灵魂法术",
+          "colLabels": [
+            "术士等级",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "1st",
+              "{@spell 彗星碎片|GuideDrakkenheim}, {@spell 羽落术|phb}"
+            ],
+            [
+              "3rd",
+              "{@spell 可控突变|GuideDrakkenheim}, {@spell 擒拿鬼手|GuideDrakkenheim}"
+            ],
+            [
+              "5th",
+              "{@spell 匿于世界之隙|GuideDrakkenheim}, {@spell 编织古老图纹|GuideDrakkenheim}"
+            ],
+            [
+              "7th",
+              "{@spell 虹吸时间|GuideDrakkenheim}, {@spell 召唤妄质元素|GuideDrakkenheim}"
+            ],
+            [
+              "9th",
+              "{@spell 污染之手|GuideDrakkenheim}, {@spell 力场墙|phb}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Mutant Manifestation",
+      "name": "突变显迹",
+      "source": "GuideDrakkenheim",
+      "page": 171,
+      "className": "术士",
+      "classSource": "phb",
+      "subclassShortName": "妄质",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 1,
+      "entries": [
+        "当你完成一次长休时，你可以选择在突变表格（见第231页）上掷骰两次，并且必须选择其中一个结果。你获得该异变，该异变会持续到你完成一次长休为止，即使你当前没有任何污染层数。"
+      ]
+    },
+    {
+      "ENG_name": "Contaminated Sorcery",
+      "name": "污染巫术",
+      "source": "GuideDrakkenheim",
+      "page": 171,
+      "className": "术士",
+      "classSource": "phb",
+      "subclassShortName": "妄质",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "当你施放一个受污染的法术时，你可以如常消耗一个法术位来施放它，或者花费等同于法术等级的术法点来施放。如果你使用术法点施放该法术，你不会因施放该法术而获得污染层数，并且如果该法术需要妄质作为材料成分，它不会被该法术消耗。此外，以这种方式施放受污染的法术会立即引发一个奥术异常（见第233页）。"
+      ]
+    },
+    {
+      "ENG_name": "Incomprehensible Arcana",
+      "name": "莫测奥法",
+      "source": "GuideDrakkenheim",
+      "page": 171,
+      "className": "术士",
+      "classSource": "phb",
+      "subclassShortName": "妄质",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "你可以利用受污染的能量施放一个你不了解的法术。你可以施放任何职业法术列表中的任何法术。该法术必须是你拥有法术位的等级，并且你必须如常消耗一个法术位。施放该法术使用其正常的施法时间，如果该法术有材料成分，你必须如常提供这些成分。作为施法的一部分，但在法术生效前，你获得等同于该法术等级一半（向下取整，最小为一）的污染层数。你无法以任何方式阻止或缩小这些污染层数，但可以如常移除它们。"
+      ]
+    },
+    {
+      "ENG_name": "Chaos Theory",
+      "name": "混沌理论",
+      "source": "GuideDrakkenheim",
+      "page": 171,
+      "className": "术士",
+      "classSource": "phb",
+      "subclassShortName": "妄质",
+      "subclassSource": "GuideDrakkenheim",
+      "level": 18,
+      "header": 2,
+      "entries": [
+        "每回合一次，当你进行攻击检定、属性检定或豁免检定时，你可以选择触发奥术异常（见第233页）。若你如此做，则该掷骰具有优势。你可以使用此特性的次数等于你的魅力调整值（至少一次）。完成一次长休后，你恢复所有已消耗的使用次数。"
+      ]
+    }
+  ],
+  "subclassSpells": [
+    "彗星碎片|GuideDrakkenheim",
+    "妖火",
+    "可控突变|GuideDrakkenheim",
+    "擒拿鬼手|GuideDrakkenheim",
+    "匿于世界之隙|GuideDrakkenheim",
+    "编织古老图纹|GuideDrakkenheim",
+    "虹吸时间|GuideDrakkenheim",
+    "召唤妄质元素|GuideDrakkenheim",
+    "污染之手|GuideDrakkenheim",
+    "力场墙"
+  ],
+  "additionalSpells": [
+    {
+      "known": {
+        "1": [
+          "彗星碎片|GuideDrakkenheim",
+          "妖火"
+        ],
+        "3": [
+          "可控突变|GuideDrakkenheim",
+          "擒拿鬼手|GuideDrakkenheim"
+        ],
+        "5": [
+          "匿于世界之隙|GuideDrakkenheim",
+          "编织古老图纹|GuideDrakkenheim"
+        ],
+        "7": [
+          "虹吸时间|GuideDrakkenheim",
+          "召唤妄质元素|GuideDrakkenheim"
+        ],
+        "9": [
+          "污染之手|GuideDrakkenheim",
+          "力场墙"
+        ]
+      }
+    }
+  ],
+  "hasFluff": true,
+  "hasFluffImages": true
+}

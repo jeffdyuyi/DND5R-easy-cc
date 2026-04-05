@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Deception",
+    "name": "欺瞒",
+    "source": "PHB",
+    "page": 178,
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "欺瞒|XPHB"
+    ],
+    "ability": "cha",
+    "entries": [
+      "魅力（欺瞒）检定决定你能否可信地以言语或动作隐暪真相。由模棱两可地误导人到弥天大谎都包括在内。常见情况包括暪过守卫、骗过商人、从赌局赚钱、以易容暪天过海、安抚他人的怀疑、带着扑克脸撒大谎等。"
+    ],
+    "translator": "不全书"
+  }
+]

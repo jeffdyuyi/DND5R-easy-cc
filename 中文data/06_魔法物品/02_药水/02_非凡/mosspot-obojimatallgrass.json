@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Mosspot",
+    "name": "莫斯波特",
+    "source": "ObojimaTallGrass",
+    "page": 243,
+    "type": "P",
+    "rarity": "uncommon",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "饮用这种泥土混合物后，你的形态会迅速变化并缩小。你会立即如同通过法术般变形为一只{@creature 苔藓精|ObojimaTallGrass|莫斯波特精魄}。此效应不需要你的{@status 专注}并在1小时后结束。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 31|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/mosspot.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1570,
+          "height": 1570
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

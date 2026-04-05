@@ -1,0 +1,143 @@
+{
+  "ENG_name": "Way of the Kensei",
+  "name": "剑圣宗",
+  "shortName": "剑圣",
+  "source": "XGE",
+  "className": "武僧",
+  "classSource": "PHB",
+  "page": 34,
+  "edition": "classic",
+  "subclassFeatures": [
+    "剑圣宗|武僧||剑圣|XGE|3",
+    "人剑合一|武僧||剑圣|XGE|6",
+    "锋锐剑影|武僧||剑圣|XGE|11",
+    "精妙剑法|武僧||剑圣|XGE|17"
+  ],
+  "features": [
+    {
+      "name": "剑圣宗",
+      "ENG_name": "Way of the Kensei",
+      "source": "XGE",
+      "page": 34,
+      "className": "武僧",
+      "classSource": "PHB",
+      "subclassShortName": "剑圣",
+      "subclassSource": "XGE",
+      "level": 3,
+      "entries": [
+        "研习剑圣之道的武僧沉浸于器械训练，达到了“武器就是身体的延伸”这一境界。在研习剑术的基础上，这一流派也同时涉猎诸多不同的武器。",
+        "器械之于剑圣，就如同画笔之于画家、笔墨之于文人。剑圣将其视为用来展现武道之美丽优雅的工具。这一信条使得剑圣成为了盖世无双的武者，但与此同时也受缚于热情奉献和刻苦钻研。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "剑圣之途|武僧||剑圣|XGE|3"
+        }
+      ]
+    },
+    {
+      "name": "剑圣之途",
+      "ENG_name": "Path of the Kensei",
+      "source": "XGE",
+      "page": 34,
+      "className": "武僧",
+      "classSource": "PHB",
+      "subclassShortName": "剑圣",
+      "subclassSource": "XGE",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "当你在第 3 级选择了该宗派，你特殊的武术训练使你精通于某些特定武器的使用技巧，同时还通晓了对书画艺术的研究。你获得以下好处：",
+        {
+          "name": "剑圣武器 Kensei Weapons",
+          "type": "entries",
+          "entries": [
+            "选择两种武器类型作为你的剑圣武器：一种近战武器和一种远程武器。这两种武器可以是任何不带有重型和特殊属性的{@filter 简易或军用武器|items|source=PHB|type=简易武器;军用武器|property=!重型;!特殊}。长弓是个特例，它同样也可被选为剑圣武器。如果你还未拥有所选武器的熟练项，则你获得之。所选的武器类型对你来说视为武僧武器。该宗派的许多职业特性只有当你持用剑圣武器时才能生效。当你的武僧职业等级分别达到第 6 级、第 11 级和第 17 级时，你可以遵从上述标准，选择另一种武器（近战或远程武器均可）作为你的剑圣武器。"
+          ]
+        },
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "灵巧格挡 Agile Parry",
+              "entry": "如果你持握一件近战剑圣武器，并在你的回合中进行了一次徒手打击作为{@action 攻击|PHB}动作的一部分，则你可以用剑圣武器来保护自己。直到你的下个回合开始前，你的 AC 获得 +2 加值，但前提是那把武器仍在你手中且你未陷入{@condition 失能|PHB}状态。"
+            },
+            {
+              "type": "item",
+              "name": "持弓审固 Kensei's Shot",
+              "entry": "你可以在你的回合中使用一个附赠动作使你的剑圣武器远程攻击变得更为致命。当你这样做时，你用剑圣武器发动的远程攻击所命中的目标会额外受到 {@damage 1d4} 点与该武器伤害类型相同的伤害。该增益持续至当前回合结束。"
+            },
+            {
+              "type": "item",
+              "name": "书画之道 Way of the Brush",
+              "entry": "你在{@item 书法工具|PHB}或{@item 画家工具|PHB}中选择其一获得熟练项。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "人剑合一",
+      "ENG_name": "One with the Blade",
+      "source": "XGE",
+      "page": 34,
+      "className": "武僧",
+      "classSource": "PHB",
+      "subclassShortName": "剑圣",
+      "subclassSource": "XGE",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "从第 6 级起，你能将气灌注到剑圣武器之中，这为你带来以下好处：",
+        {
+          "name": "剑气 Magic Kensei Weapons",
+          "type": "entries",
+          "entries": [
+            "在计算克服非魔法攻击或伤害的抗性与免疫时，你的剑圣武器攻击视为魔法攻击。"
+          ]
+        },
+        {
+          "name": "巧劲 Deft Strike",
+          "type": "entries",
+          "entries": [
+            "每个你的回合一次，当你使用剑圣武器命中目标时，你可以消耗 1 点气使得该武器对该目标造成等同于你的武艺骰的额外伤害。"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "锋锐剑影",
+      "ENG_name": "Sharpen the Blade",
+      "source": "XGE",
+      "page": 34,
+      "className": "武僧",
+      "classSource": "PHB",
+      "subclassShortName": "剑圣",
+      "subclassSource": "XGE",
+      "level": 11,
+      "header": 2,
+      "consumes": {
+        "name": "气",
+        "amount": 3
+      },
+      "entries": [
+        "从第 11 级起，你获得引导气进一步增强武器的能力。你可以用附赠动作消耗至多 3 点气将其灌注进你接触的一件剑圣武器中，使其攻击检定与伤害掷骰获得等同于消耗气点数的加值。该效果持续 1 分钟，或者直到你再次使用该特性。该特性无法作用于一件已经提供攻击与伤害加值的魔法武器。"
+      ]
+    },
+    {
+      "name": "精妙剑法",
+      "ENG_name": "Unerring Accuracy",
+      "source": "XGE",
+      "page": 34,
+      "className": "武僧",
+      "classSource": "PHB",
+      "subclassShortName": "剑圣",
+      "subclassSource": "XGE",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "从 17 级起，你对武器的精通让你即使失手也能挽回。每个你的回合一次，如果你在自己的回合内使用僧侣武器或徒手打击发动的攻击没有命中，你可以重掷该次攻击。"
+      ]
+    }
+  ]
+}

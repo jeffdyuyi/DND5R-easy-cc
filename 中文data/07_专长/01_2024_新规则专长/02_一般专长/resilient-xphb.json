@@ -1,0 +1,56 @@
+[
+  {
+    "ENG_name": "Resilient",
+    "name": "强健身心",
+    "source": "XPHB",
+    "page": 206,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ],
+          "amount": 1,
+          "entry": "选择你不具有其豁免熟练的一项属性，该属性提升1，至多提升至20。"
+        }
+      }
+    ],
+    "savingThrowProficiencies": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Saving Throw Proficiency",
+        "name": "豁免熟练",
+        "type": "entries",
+        "entries": [
+          "你获得所选属性的豁免熟练。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

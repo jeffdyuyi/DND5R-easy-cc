@@ -1,0 +1,54 @@
+[
+  {
+    "ENG_name": "Wind Walk",
+    "name": "御风而行",
+    "source": "XPHB",
+    "page": 341,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 6,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一根蜡烛"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 8
+        }
+      }
+    ],
+    "entries": [
+      "你和施法距离内至多十个自愿生物在法术持续时间内变为气化形态，其外观有如一团云雾。处于该云雾形态的生物具有 300 尺的{@variantrule 飞行速度|XPHB}且能够悬浮；具有{@variantrule 免疫|XPHB}对抗{@condition 倒地|XPHB}状态；并且具有{@variantrule 抗性|XPHB}对抗钝击、穿刺和挥砍伤害。该形态下的生物除执行{@action 疾走|XPHB}动作或使用{@action 魔法|XPHB}动作开始变回原形外不能执行其他动作。变回原形需要 1 分钟时间，在这段时间内该生物处于{@condition 震慑|XPHB}状态。在法术终止前，该生物还可以再次变成云雾形态，这同样需要执行{@action 魔法|XPHB}动作并花费 1 分钟进行变形。",
+      "如果法术终止时受术目标正以云雾形态飞行，则该目标将在 1 分钟内以每轮 60 尺的速度降落直至安全着陆。如果该生物降落 1 分钟后还没着陆，则在余下的距离中它将会如正常情况一样坠落。"
+    ],
+    "conditionInflict": [
+      "震慑"
+    ],
+    "areaTags": [
+      "MT"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊"
+    ],
+    "display_school": "变化系"
+  }
+]

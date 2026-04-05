@@ -1,0 +1,15 @@
+[
+  {
+    "name": "雅廷琴",
+    "ENG_name": "Yarting",
+    "source": "FRHoF",
+    "page": 132,
+    "type": "INS|XPHB",
+    "rarity": "none",
+    "weight": 2,
+    "value": 4000,
+    "fluff": {},
+    "hasFluff": true,
+    "hasFluffImages": true
+  }
+]

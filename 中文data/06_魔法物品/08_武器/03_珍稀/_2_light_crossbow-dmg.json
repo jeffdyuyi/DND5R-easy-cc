@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "+2 Light Crossbow",
+    "name": "+2 轻弩",
+    "source": "DMG",
+    "page": 213,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-DaS"
+    ],
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "rare",
+    "weight": 5,
+    "value": 2500,
+    "weaponCategory": "simple",
+    "property": [
+      "A|XPHB",
+      "LD|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "缓速|XPHB"
+    ],
+    "range": "80/320",
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "crossbow": true,
+    "weapon": true,
+    "ammoType": "弩矢|xphb",
+    "hasFluffImages": true,
+    "namePrefix": "+2 ",
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "+2 武器|XDMG"
+    ],
+    "tier": "主要",
+    "bonusWeapon": "+2",
+    "entries": [
+      "使用这把魔法武器进行攻击和伤害判定时，你会获得{=bonusWeapon}的额外加成。"
+    ],
+    "lootTables": [
+      "魔法物品表G"
+    ],
+    "_isVariant": true,
+    "valueReference": 4000
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "ENG_name": "Knobble Leaf Seaweed",
+    "name": "诺布尔海藻",
+    "source": "ObojimaTallGrass",
+    "page": 204,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 1|large}|SneakerProMedium}",
+            "{@font {@style 1|large}|SneakerProMedium}",
+            "{@font {@style 1|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "在胧忆岛及其周边有许多不同种类的海藻，其中大多数都非常美味且营养丰富，但没有一种比诺布尔海藻更受欢迎。许多厨师在他们的汤和沙拉中使用诺布尔海藻，还有一些巫偶和魔契师用它来施展法术。诺布尔海藻可以在胧忆岛的海滩上被冲上岸，也可以在岛屿周围海底茂密的海藻床中找到。"
+    ],
+    "lootTables": [
+      "舒里塔希的赠礼 普通原料|ObojimaTallGrass",
+      "浅滩普通原料|ObojimaTallGrass",
+      "咸水湿地普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/knobble-leaf-seaweed.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 2259,
+          "height": 2259
+        }
+      ]
+    }
+  }
+]

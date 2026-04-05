@@ -1,0 +1,115 @@
+[
+  {
+    "ENG_name": "Ray of Contamination",
+    "name": "污染射线",
+    "source": "DungeonsDrakkenheim",
+    "page": 229,
+    "level": 6,
+    "school": "N",
+    "subschools": [
+      "受污染的"
+    ],
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一片价值100gp的妄质晶片，作为法术的耗材",
+        "cost": 10000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "当你施放此法术后，你获得1层{@adventure 污染层数|DungeonsDrakkenheim|12}。一道八色射线从你指尖射向范围内你能看见的一个生物。目标必须进行一次体质豁免检定。若豁免失败，该生物受到{@damage 16d6}暗蚀伤害并获得{@dice 1d4}层{@adventure 污染层数|DungeonsDrakkenheim|12}。若豁免成功，目标只受到一半伤害且不会获得任何{@adventure 污染层数|DungeonsDrakkenheim|12}。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用7环或更高环阶法术位施展这个法术时，使用的法术位每比6环高1环，你就可以为本法术多指定一个目标（不过所有目标互相之间不能相距超过30尺）。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB",
+          "definedInSource": "DungeonsDrakkenheim"
+        }
+      ]
+    },
+    "damageInflict": [
+      "暗蚀"
+    ],
+    "savingThrow": [
+      "体质"
+    ],
+    "miscTags": [
+      "SCT",
+      "SGT"
+    ]
+  }
+]

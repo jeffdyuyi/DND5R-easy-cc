@@ -1,0 +1,59 @@
+[
+  {
+    "ENG_name": "Lord's Ensemble",
+    "name": "领主套装",
+    "source": "WDH",
+    "page": 191,
+    "rarity": "very rare",
+    "reqAttune": "由具有类人生物体型的生物",
+    "reqAttuneTags": [
+      {
+        "creatureType": "类人"
+      }
+    ],
+    "wondrous": true,
+    "entries": [
+      "深水城的蒙面领主们在相互会面时会穿戴这套装束。这套服饰使得每位领主都无法与其他领主区分开来。装束由三部分组成——一个头盔，一个护身符，以及一件长袍——当一起穿戴时，它们作为一个单一的魔法物品发挥作用，但仅限于在深水城城市及其下水道内。你将作为单一物品与这套装束共鸣。",
+      {
+        "ENG_name": "Lord's Helm",
+        "name": "领主头盔",
+        "type": "entries",
+        "entries": [
+          "这个桶形头盔覆盖你的头部并隐藏你的面容。眼睛上方的屏幕有助于遮掩你的身份，而不会使你失明。当你佩戴头盔时，你的声音会被魔法改变，听起来没有性别特征，并且你对允许其他生物读取你的思想、判断你是否说谎、了解你的阵营或了解你的生物类型的魔法免疫。只有当你允许时，生物才能通过心灵感应与你沟通。"
+        ]
+      },
+      {
+        "ENG_name": "Lord's Amulet",
+        "name": "领主护符",
+        "type": "entries",
+        "entries": [
+          "这个护身符上刻有深水城的纹章。它的功能相当于一个{@item 反侦护符}。"
+        ]
+      },
+      {
+        "ENG_name": "Lord's Robe",
+        "name": "领主长袍",
+        "type": "entries",
+        "entries": [
+          "这件优雅的长袍的功能相当于一个{@item 自由行动戒指}，并且它会创造出一个幻象，让你看起来有一个不显眼、中性的人类形态，并且身高6尺。"
+        ]
+      }
+    ],
+    "hasFluffImages": true,
+    "valueReference": 40000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/WDH/Lord's Ensemble.webp"
+          },
+          "width": 791,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

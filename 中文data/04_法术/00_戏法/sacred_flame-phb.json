@@ -1,0 +1,98 @@
+[
+  {
+    "ENG_name": "Sacred Flame",
+    "name": "圣火术",
+    "source": "PHB",
+    "page": 272,
+    "srd": true,
+    "basicRules": true,
+    "otherSources": [
+      {
+        "source": "RMR",
+        "page": 58
+      }
+    ],
+    "referenceSources": [
+      "BGDIA",
+      "DoSI"
+    ],
+    "reprintedAs": [
+      "圣火术|XPHB"
+    ],
+    "level": 0,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "如同火焰般的辉光向施法距离内你能看见的一个生物倾泻而下。目标必须要进行一次敏捷豁免，豁免失败则受到 {@damage 1d8} 点光耀伤害。目标在这次豁免检定中无法获得掩护的增益。",
+      "当你达到以下等级时，此法术的伤害增加{@damage 1d8}，5级（{@damage 2d8}）、11级（{@damage 3d8}）和17级（{@damage 4d8}）。"
+    ],
+    "scalingLevelDice": {
+      "label": "光耀伤害",
+      "scaling": {
+        "1": "1d8",
+        "5": "2d8",
+        "11": "3d8",
+        "17": "4d8"
+      }
+    },
+    "damageInflict": [
+      "radiant"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "miscTags": [
+      "SCL",
+      "SGT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/PHB/Sacred Flame.webp"
+          },
+          "width": 449,
+          "height": 1000
+        }
+      ]
+    },
+    "classes": [
+      "牧师"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "敏捷"
+    ],
+    "display_damageInflict": [
+      "光辉"
+    ]
+  }
+]

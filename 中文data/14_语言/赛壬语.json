@@ -1,0 +1,9 @@
+{
+  "ENG_name": "Siren",
+  "name": "赛壬语",
+  "source": "PSX",
+  "page": 17,
+  "typicalSpeakers": [
+    "{@race 赛壬|PSX|塞壬}"
+  ]
+}

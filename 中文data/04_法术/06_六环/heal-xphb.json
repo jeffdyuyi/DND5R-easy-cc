@@ -1,0 +1,60 @@
+[
+  {
+    "ENG_name": "Heal",
+    "name": "医疗术",
+    "source": "XPHB",
+    "page": 284,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 6,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "指定施法距离内一个你能看见的生物。汹涌澎湃的正能量将充盈该生物，使其恢复 70 点{@variantrule 生命值|XPHB}。该法术也会终止正在影响目标的{@condition 目盲|XPHB}、{@condition 耳聋|XPHB}和{@condition 中毒|XPHB}状态。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "使用的法术位每比六环高一环，此法术的治疗量就增加{@scaledice 70|6-9|10}点。"
+        ]
+      }
+    ],
+    "miscTags": [
+      "HL",
+      "SGT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师",
+      "德鲁伊"
+    ],
+    "display_school": "防护系"
+  }
+]

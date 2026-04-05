@@ -1,0 +1,27 @@
+{
+  "ENG_name": "Devil's Sight",
+  "name": "魔鬼视界",
+  "source": "XPHB",
+  "page": 155,
+  "srd52": true,
+  "featureType": [
+    "EI"
+  ],
+  "prerequisite": [
+    {
+      "level": {
+        "level": 2,
+        "class": {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB",
+          "visibleStats": true
+        }
+      }
+    }
+  ],
+  "entries": [
+    "你在{@variantrule 微光光照|XPHB}光照和{@variantrule 黑暗|XPHB}中拥有 120 尺的可视距离，而无论其属于魔法性的还是非魔法性的。"
+  ],
+  "translator": "不全书"
+}

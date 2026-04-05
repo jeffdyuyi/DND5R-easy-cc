@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Fool Card",
+    "name": "愚者卡",
+    "source": "BMT",
+    "page": 13,
+    "rarity": "legendary",
+    "wondrous": true,
+    "recharge": "拂晓",
+    "entries": [
+      "作为动作，你可以对距你30尺内的一名可见生物挥舞这张卡牌。目标必须成功通过一次{@dc 17}的感知豁免，否则在接下来的一分钟内，目标无法施法或激活魔法物品，在所有豁免检定上都有劣势，且其他生物对其造成的所有伤害都有抗性。这一属性一经使用，直到次日黎明之前无法再次使用。"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 200000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "decks/BMT/Deck of Many Things/01-fool.webp"
+          },
+          "credit": "Harry Conway",
+          "width": 850,
+          "height": 1552
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

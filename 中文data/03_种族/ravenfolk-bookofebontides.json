@@ -1,0 +1,205 @@
+{
+  "race": [
+    {
+      "ENG_name": "Ravenfolk",
+      "name": "鸦族",
+      "source": "BookOfEbonTides",
+      "size": [
+        "M"
+      ],
+      "speed": 30,
+      "ability": [
+        {
+          "dex": 2,
+          "cha": 1
+        }
+      ],
+      "skillProficiencies": [
+        {
+          "deception": true,
+          "stealth": true
+        }
+      ],
+      "languageProficiencies": [
+        {
+          "other": true
+        }
+      ],
+      "entries": [
+        {
+          "ENG_name": "Age",
+          "name": "年龄",
+          "type": "entries",
+          "entries": [
+            "鸦族在10岁时成年，可以活到110岁。"
+          ]
+        },
+        {
+          "ENG_name": "Alignment",
+          "name": "阵营",
+          "type": "entries",
+          "entries": [
+            "鸦族由于其反复无常和永不满足的好奇心而倾向于混乱。贪婪压倒了一些鸦族，将它们引向邪恶。"
+          ]
+        },
+        {
+          "ENG_name": "Sudden Attack",
+          "name": "突袭",
+          "type": "entries",
+          "entries": [
+            "你对处于{@status 突袭}状态的生物进行攻击检定时具有优势。"
+          ]
+        },
+        {
+          "ENG_name": "Mimicry",
+          "name": "拟声",
+          "type": "entries",
+          "entries": [
+            "鸦族可以模仿他们听过的任何声音。进行一次魅力（{@skill 欺瞒}）检定对抗听众的被动感知（{@skill 洞悉}）。成功表示他们相信你制造的声音是真实的。"
+          ]
+        },
+        {
+          "ENG_name": "Trickster",
+          "name": "诡术士",
+          "type": "entries",
+          "entries": [
+            "你熟练于{@skill 欺瞒}和{@skill 隐匿}技能。"
+          ]
+        },
+        {
+          "ENG_name": "Languages",
+          "name": "语言",
+          "type": "entries",
+          "entries": [
+            "你可以说、读和写胡金的舌卷和北方舌卷。"
+          ]
+        }
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "subraces": [
+        {
+          "ENG_name": "Sublime",
+          "name": "崇高",
+          "source": "BookOfEbonTides",
+          "skillProficiencies": [
+            {
+              "performance": true
+            }
+          ],
+          "languageProficiencies": [
+            {
+              "common": true,
+              "other": true
+            }
+          ],
+          "toolProficiencies": [
+            {
+              "musical instrument": true
+            }
+          ],
+          "entries": [
+            {
+              "ENG_name": "Alignment",
+              "name": "阵营",
+              "type": "entries",
+              "entries": [
+                "崇高鸦族比他们在凡人世界的表亲更倾向于守序阵营。他们倾向于在人际关系中寻求稳定和联系，将自己的路途托付给歌声。"
+              ]
+            },
+            {
+              "ENG_name": "Constant Tune",
+              "name": "永恒旋律",
+              "type": "entries",
+              "entries": [
+                "你在对抗{@condition 魅惑}或{@condition 恐慌}状态的豁免检定中具有优势。"
+              ],
+              "data": {
+                "overwrite": "突袭"
+              }
+            },
+            {
+              "ENG_name": "Cosmic Musician",
+              "name": "天宇乐师",
+              "type": "entries",
+              "entries": [
+                "你熟练于{@skill 表演}技能，并获得一件自选的{@item 乐器|PHB}的熟练。"
+              ],
+              "data": {
+                "overwrite": "诡术士"
+              }
+            },
+            {
+              "ENG_name": "Sublime Chord",
+              "name": "崇高和弦",
+              "type": "entries",
+              "entries": [
+                "作为一个动作，你可以模仿神秘的崇高之歌来魅惑范围内的生物。所有30尺内能听到你的生物必须成功通过DC 13的魅力豁免检定，否则将被你{@condition 魅惑}10分钟。被{@condition 魅惑}的生物将你视为普通朋友。如果你或你的同伴正在与该生物战斗，则该生物进行此豁免检定时具有优势。一旦你使用了这个能力，在完成一次长休前不能再次使用。"
+              ],
+              "data": {
+                "overwrite": "拟声"
+              }
+            },
+            {
+              "ENG_name": "Languages",
+              "name": "语言",
+              "type": "entries",
+              "entries": [
+                "你可以说、读和写通用语、鸦族和阴影语。"
+              ],
+              "data": {
+                "overwrite": "语言"
+              }
+            }
+          ],
+          "hasFluff": true,
+          "hasFluffImages": true
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "米德加德很少有种族像鸦族这样生活在如此多的流言、猜疑和彻头彻尾的虚假之中。他们在每个主要城市筑巢。取决于你问的是谁，他们可能谴责鸦族是带来厄运的孤独流浪者，或称赞他们是诸神的使者。鸦族是忠诚的战友和奸诈的窃贼，勇敢的武者和可鄙的懦夫。他们因其古怪隐秘的文化而遭人鄙视，又因没有自己真正的文化而受到批评。鸦族是矛盾的集合体。这些真相、半真半假和谎言掩盖了一个更大的神秘，很少有外人知道。",
+          "如果鸦族有一个故乡，那它就在东方的贝尔德斯坦；或是北境沃坦之树的枯枝上；又或是南方荷鲁斯隐藏庙宇的高耸悬崖上。他们在巨魔海姆、维迪姆、多莫沃格罗德、努里亚纳塔尔和龙帝国都有聚居地。这些地方都不是大型的，但至少在努里亚纳塔尔，他们光荣地担任庙宇警卫和荷鲁斯信徒的守护者。",
+          "鸦族没有飞翼，但他们有尾羽，有时在他们愤怒时会展开。",
+          {
+            "ENG_name": "Of Gods and Men",
+            "name": "神与人",
+            "type": "entries",
+            "entries": [
+              "米德加德的鸦族（也被称为胡金）是狡猾的无赖、诡术士、刺客、间谍们和窃贼。最古老的传说讲述，符文之父沃坦神拔下他的两只宠物渡鸦——胡金（思想）和穆宁（记忆）的羽毛，让羽毛飘落到米德加德时，创造了聪明的鸦族。这些羽毛化作了鸦族，他们作为沃坦的间谍遍布世界。",
+              "事实上，鸦族是米德加德日常生活与诸神领域之间的桥梁。他们分享沃坦对世界树尤格德拉希尔分支的秘密了解。在遥远的北方边境，胡金既是诸神意志的体现，也是战斗中既定死亡的徽记。"
+            ]
+          },
+          {
+            "ENG_name": "Thieves, One and All",
+            "name": "窃贼，所有人",
+            "type": "entries",
+            "entries": [
+              "无论鸦族从事什么贸易、职能或职业，他们都是窃贼。他们用找到的物品建造巢穴，就像普通的乌鸦一样，非常喜欢闪亮的小玩意。除了物质上的盗窃，他们还以窃取秘密为生。鸦族天生擅长不引人注目，他们利用这一特质来满足自己永不满足的好奇心。维迪姆的沙皇雇佣了一大群渡鸦作为他的私人间谍和刺客。",
+              "除了他们的盗窃本能外，鸦族非常重视守信。这并不是说他们不撒谎；鸦族和其他人一样经常撒谎，甚至在压力下可能更多。但如果能从他们那里得到一个承诺或誓言，那就像金子一样可靠——这可能就是为什么鸦族很少做出承诺或誓言。除此之外，他们的个性与其他种族一样多样。他们能轻松适应任何环境，从偏远的野外到大城市——尽管他们在城市中的存在并不总是受欢迎。他们经常采用当地的风俗、传统和信仰来融入团队。"
+            ]
+          },
+          {
+            "ENG_name": "Ravenfolk Names",
+            "name": "鸦族名字",
+            "type": "entries",
+            "entries": [
+              "如同许多其他种族一样，鸦族的母语对于更接近人类的发声器官来说难以掌握，因此鸦族在人类、矮人、精灵和其他类人生物中使用与同族间不同的名字。在选择人类友好的名字时，鸦族会大量借鉴当地传统、神话以及流行歌曲和诗词。他们更喜欢能唤起意象的名字（星幽影、月光辉、雨闪烁），而不是更平淡的标签，但这是唯一能定义的共性。此外，由于这些并非他们的真名，鸦族对这些名字几乎没有依恋。他们可以随时更换名字，直到最终找到一个真正适合自己的名字。"
+            ]
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BookOfEbonTides/races/Ravenfolk.webp"
+            },
+            "width": 420,
+            "height": 338
+          }
+        ]
+      }
+    }
+  ]
+}

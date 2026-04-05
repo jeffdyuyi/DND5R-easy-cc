@@ -1,0 +1,27 @@
+{
+  "ENG_name": "Enhanced Arcane Focus",
+  "name": "增强奥术法器",
+  "source": "TCE",
+  "page": 21,
+  "otherSources": [
+    {
+      "source": "ERLW",
+      "page": 62
+    }
+  ],
+  "featureType": [
+    "AI"
+  ],
+  "prerequisite": [
+    {
+      "item": [
+        "一根权杖、法杖、或魔杖（需要同调）"
+      ]
+    }
+  ],
+  "entries": [
+    "当持握此物品时，那个生物的法术攻击检定获得+1加值，在进行法术法术攻击时无视 {@quickref 掩护||3||半身掩护}。",
+    "当你的奇械师职业等级达到10级后，该加值变成+2。"
+  ],
+  "translator": "不全书"
+}

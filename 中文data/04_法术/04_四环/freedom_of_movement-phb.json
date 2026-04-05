@@ -1,0 +1,66 @@
+[
+  {
+    "ENG_name": "Freedom of Movement",
+    "name": "行动自如",
+    "source": "PHB",
+    "page": 244,
+    "srd": true,
+    "basicRules": true,
+    "referenceSources": [
+      "SKT",
+      "LR",
+      "PaBTSO"
+    ],
+    "reprintedAs": [
+      "行动自如|XPHB"
+    ],
+    "level": 4,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一条绑在手臂或其他肢体上的皮带"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你触碰一个自愿生物，并使目标在法术持续时间内移动时不受{@quickref 困难地形||3}限制，并使任何降低目标速度，或者使目标陷入{@condition 麻痹}或{@condition 束缚}的法术或魔法效应对其无法生效。",
+      "该目标还可以花费 5 尺移动力直接从非魔法的束缚中挣脱（诸如镣铐或生物的{@condition 受擒}等）。此外，目标在水下进行移动和攻击时不再受减益规则的限制。"
+    ],
+    "conditionImmune": [
+      "麻痹",
+      "束缚"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "牧师",
+      "德鲁伊",
+      "游侠",
+      "奇械师"
+    ],
+    "display_school": "防护系"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "ENG_name": "Kruphix's Disciple",
+    "name": "克罗芬斯的门徒",
+    "source": "MOT",
+    "page": 61,
+    "type": "Piety Trait",
+    "additionalSpells": [
+      {
+        "known": {
+          "_": [
+            "法师之手#c"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "{@i 虔信值25+ 克罗芬斯特质}",
+      "作为克罗芬斯真正的勇士，你可以使用你的{@spell 法师之手}戏法保护你自己。当你的灵体手存在于你周围5尺之内时，你在对抗远程攻击时获得额外+2 AC。"
+    ]
+  }
+]

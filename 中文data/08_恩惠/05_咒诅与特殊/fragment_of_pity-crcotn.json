@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Fragment of Pity",
+    "name": "怜悯碎片",
+    "source": "CRCotN",
+    "page": 214,
+    "type": "Fragment of Suffering",
+    "entries": [
+      {
+        "ENG_name": "Benefit",
+        "name": "增益",
+        "type": "entries",
+        "entries": [
+          "你在死亡豁免投掷上处于劣势。"
+        ]
+      },
+      {
+        "ENG_name": "Drawback",
+        "name": "缺陷",
+        "type": "entries",
+        "entries": [
+          "你在死亡豁免检定上有劣势。"
+        ]
+      }
+    ]
+  }
+]

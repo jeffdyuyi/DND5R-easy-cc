@@ -1,0 +1,44 @@
+[
+  {
+    "ENG_name": "Staff of Defense",
+    "name": "防护法杖",
+    "source": "LMoP",
+    "page": 53,
+    "reprintedAs": [
+      "防护法杖|PaBTSO"
+    ],
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 3,
+    "weaponCategory": "simple",
+    "property": [
+      "V"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "bonusAc": "+1",
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6 + 4}",
+    "charges": 10,
+    "staff": true,
+    "entries": [
+      "这根纤细的空心法杖由玻璃制成，却和橡木一样坚固。它重3磅。你必须与法杖同步才能获得它的好处并施放它的法术。",
+      "持有法杖时，你的护甲等级获得+1的加值。",
+      "法杖有10个充能，用来驱动其内的法术。手持法杖时，如果法术在你职业的法术列表中，你可以使用你的行动从法杖中施放以下法术：{@spell 法师护甲}（1充能）或{@spell 护盾术}（2充能）。不需要任何材料。",
+      "这根法杖在黎明时每天恢复{@dice 1d6 + 4}次已消耗的充能。如果你消耗了法杖的最后一次充能，掷一个{@dice d20}。如果是1，法杖会破碎并被摧毁。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "法师护甲"
+        ],
+        "2": [
+          "护盾术"
+        ]
+      }
+    },
+    "valueReference": 4000,
+    "type": "ST"
+  }
+]

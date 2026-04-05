@@ -1,0 +1,72 @@
+[
+  {
+    "ENG_name": "Sacrificial Siphon",
+    "name": "祭献虹吸",
+    "source": "CrookedMoon14",
+    "page": 131,
+    "reprintedAs": [
+      "祭献虹吸|crookedmoon24"
+    ],
+    "level": 4,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你接触另一个生物并施加一个吸取目标生命力并将其转移给你的诅咒。目标必须进行一次魅力豁免检定。豁免失败时，目标在持续时间内被诅咒。被诅咒时，目标必须从其攻击检定和属性检定中减去{@dice 1d4}，并且当目标受到伤害时，你可以使用你的反应来获得10点临时生命值。豁免成功时，你获得5点临时生命值，并且目标必须从其属性检定中减去{@dice 1d4}直到你的下个回合开始。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Paladin",
+          "name": "圣武士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "savingThrow": [
+      "魅力"
+    ],
+    "miscTags": [
+      "THP"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Spells/Sacrificial-Siphon.webp"
+  }
+]

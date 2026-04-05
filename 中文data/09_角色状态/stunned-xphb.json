@@ -1,0 +1,43 @@
+[
+  {
+    "name": "震慑",
+    "ENG_name": "Stunned",
+    "source": "XPHB",
+    "page": 376,
+    "entries": [
+      "震慑状态期间，你将遭受以下这些效应。",
+      {
+        "type": "entries",
+        "entries": [
+          {
+            "ENG_name": "Incapacitated",
+            "name": "失能",
+            "type": "entries",
+            "entries": [
+              "你陷入{@condition 失能|XPHB}状态。"
+            ]
+          },
+          {
+            "ENG_name": "Saving Throws Affected",
+            "name": "豁免影响",
+            "type": "entries",
+            "entries": [
+              "你自动失败于力量豁免检定与敏捷{@variantrule 豁免检定|XPHB|豁免检定}。"
+            ]
+          },
+          {
+            "ENG_name": "Attacks Affected",
+            "name": "攻击影响",
+            "type": "entries",
+            "entries": [
+              "以你为目标的{@action 攻击|XPHB}检定具有{@variantrule 优势|XPHB}。"
+            ]
+          }
+        ]
+      }
+    ],
+    "basicRules2024": true,
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

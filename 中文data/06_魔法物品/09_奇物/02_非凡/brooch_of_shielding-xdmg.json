@@ -1,0 +1,42 @@
+[
+  {
+    "ENG_name": "Brooch of Shielding",
+    "name": "护盾胸针",
+    "source": "XDMG",
+    "page": 241,
+    "srd52": true,
+    "basicRules2024": true,
+    "resist": [
+      "力场"
+    ],
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "佩戴此胸针期间，你获得对力场伤害的{@variantrule 抗性|XPHB}，并{@variantrule 免疫|XPHB}法术{@spell 魔法飞弹|XPHB}的伤害。"
+    ],
+    "optionalfeatures": [
+      "仿制魔法物品|TCE"
+    ],
+    "lootTables": [
+      "奥秘 - 非普通|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Brooch of Shielding.webp"
+          },
+          "width": 1024,
+          "height": 1024
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

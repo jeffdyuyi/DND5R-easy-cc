@@ -1,0 +1,65 @@
+[
+  {
+    "ENG_name": "Sequester",
+    "name": "隔离术",
+    "source": "XPHB",
+    "page": 315,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TFV",
+      "DrDe-ACfaS"
+    ],
+    "level": 7,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "价值 5000+GP 宝石粉尘，作为法术耗材",
+        "cost": 500000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "permanent",
+        "ends": [
+          "解除"
+        ]
+      }
+    ],
+    "entries": [
+      "你触碰一个物件或自愿生物，以魔法将其隔离起来。在法术持续期间，目标具有{@condition 隐形|XPHB}状态并且不会被预言系法术作为目标，不会被魔法侦测，也不会被魔法远程观察到。",
+      "如果目标是一个生物，它会进入静滞。它陷入{@condition 昏迷|XPHB}状态，不会衰老，也不需要进食、饮水或呼吸空气。",
+      "你可以设置一个让该法术提前终止的条件。该条件由你自由设定，但必须是发生在目标周围 1 里范围内或能在目标周围 1 里范围内看到的事件。例如：\"1000 年以后\"或者\"当泰拉斯奎苏醒时\"。如果受术者受到任何伤害，则该法术立刻终止。"
+    ],
+    "conditionInflict": [
+      "隐形",
+      "昏迷"
+    ],
+    "miscTags": [
+      "OBJ"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "法师"
+    ],
+    "display_school": "变化系"
+  }
+]

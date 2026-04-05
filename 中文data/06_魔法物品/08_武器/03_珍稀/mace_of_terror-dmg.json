@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Mace of Terror",
+    "name": "恐惧之锤",
+    "source": "DMG",
+    "page": 180,
+    "srd": true,
+    "referenceSources": [
+      "ToA",
+      "CoA"
+    ],
+    "reprintedAs": [
+      "恐惧之锤|XDMG"
+    ],
+    "baseItem": "硬头锤|PHB",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 4,
+    "weaponCategory": "simple",
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d3}",
+    "charges": 3,
+    "entries": [
+      "这把魔法武器有3发充能。持握它期间，你可以用一个动作并消耗1发充能来释放一股恐惧波动。你周围30尺半径内每个被你指定的生物必须成功通过一次{@dc 15}的感知豁免否则对你陷入{@condition 恐慌}状态1分钟。当它以此方式陷入{@condition 恐慌}状态时，该生物必须在其回合内尽可能远离你，且不能自愿移动到距离你30尺内的空间。它也不能进行反应。作为其动作，它只能使用{@action 疾走}动作或尝试逃离阻止其移动的效果。如果它无处可移动，该生物可以使用{@action 回避}动作。在每个其回合结束时，该生物可以重复进行豁免检定，成功则结束对其自身的该效果。",
+      "该硬头锤每天黎明时恢复{@dice 1d3}发已消耗的充能。"
+    ],
+    "lootTables": [
+      "魔法物品表G"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Mace of Terror.webp"
+          },
+          "width": 576,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Unknown Elixir",
+    "name": "未知灵药",
+    "source": "ObojimaTallGrass",
+    "page": 246,
+    "type": "P",
+    "rarity": "uncommon",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "这种古怪的味道混合让你想起刚割下的青草、凡士林和蜂蜜。饮用后，它像岩石一样沉在你的胃里，并缓慢增强法力。你获得施放一个随机6环或更低法术的能力，且无需消耗法术位。该法术使用17的豁免DC和+9的法术攻击加值。此药水的效应持续到法术被施放为止。这不计入你身体可同时受影响的药水数值限制。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 49|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/unknown-elixir.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 2211,
+          "height": 2211
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

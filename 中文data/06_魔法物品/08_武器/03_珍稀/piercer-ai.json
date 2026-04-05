@@ -1,0 +1,26 @@
+[
+  {
+    "ENG_name": "Piercer",
+    "name": "穿刺者",
+    "source": "AI",
+    "page": 121,
+    "baseItem": "短剑|PHB",
+    "type": "M",
+    "rarity": "rare",
+    "reqAttune": true,
+    "weight": 2,
+    "weaponCategory": "martial",
+    "property": [
+      "F",
+      "L"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "bonusWeapon": "+1",
+    "entries": [
+      "你使用这把魔法武器进行攻击和伤害掷骰时具有+1加值。",
+      "与剑同调的角色从消耗的生命骰中恢复最大可能的生命值。然而，同调的角色每天必须吃两倍的食物（至少2磅）以避免{@condition 力竭}（参见《玩家手册》第8章\"环境\"）。"
+    ],
+    "valueReference": 4000
+  }
+]

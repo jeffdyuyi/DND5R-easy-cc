@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Haint Hooch",
+    "name": "祟魂烈酒",
+    "source": "CrookedMoon24",
+    "page": 614,
+    "type": "P|XPHB",
+    "rarity": "rare",
+    "entries": [
+      "当你从这个玻璃壶中饮用时，你会变得无实体状态1分钟。在此期间，你可以穿过生物和物件，如同它们是{@variantrule 困难地形|XPHB}，如果你在你的回合结束时处于物件内部，则受到{@damage 1d10}力场伤害。",
+      "这种药水储存在标有\"XxX\"的罐子里，上面画着一个骷髅笑脸。里面可怕的蓝绿色酒液有着刺鼻的气味和辛辣的味道。",
+      {
+        "ENG_name": "Heightened Potency",
+        "name": "强效",
+        "type": "entries",
+        "entries": [
+          "在持续时间内，你获得等于你{@variantrule 速度|XPHB}的{@variantrule 飞行速度|XPHB}。"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Haint%20Hooch.webp"
+          },
+          "width": 882,
+          "height": 1200,
+          "credit": "Holly Lucero"
+        }
+      ]
+    }
+  }
+]

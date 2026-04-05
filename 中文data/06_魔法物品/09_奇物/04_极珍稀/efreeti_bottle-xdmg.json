@@ -1,0 +1,71 @@
+[
+  {
+    "ENG_name": "Efreeti Bottle",
+    "name": "火巨灵囚瓶",
+    "source": "XDMG",
+    "page": 256,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-DotSC"
+    ],
+    "rarity": "very rare",
+    "wondrous": true,
+    "entries": [
+      "当你以一个{@action 魔法|XPHB}动作打开这个彩绘的黄铜瓶子的瓶塞时，一团浓烟将从瓶内溢出。在你的回合结束时，烟雾会伴随着一阵无害的火焰而消失，同时一名{@creature 火巨灵|XMM}将出现在你周边30尺内一处未被占据的空间。",
+      "瓶子第一次被打开时，DM按下面的表格掷骰，以此来决定会发生什么。",
+      {
+        "type": "table",
+        "colStyles": [
+          "col-2 text-center",
+          "col-10"
+        ],
+        "colLabels": [
+          "1d10",
+          "效应"
+        ],
+        "rows": [
+          [
+            "1",
+            "火巨灵攻击你。战斗进行5轮后，{@creature 火巨灵|XMM}将消失，同时瓶子将失去魔力。"
+          ],
+          [
+            "2-9",
+            "在接下来的1小时内，{@creature 火巨灵|XMM}理解你的语言并遵循你的命令。在这之后它会重新回到瓶中，而一个新的瓶塞将显现并再次将其封印，且新瓶塞在24小时内都无法被拔出。下两次打开瓶子时会产生同样的效应。当瓶子第四次被打开时，火巨灵将逃走并消失，同时瓶子将失去魔力。"
+          ],
+          [
+            "10",
+            "{@creature 火巨灵|XMM}理解你的语言并能为你施展一次{@spell 祈愿术|XPHB}。它将在1小时后或施放完祈愿术时消失，同时瓶子将失去魔力。"
+          ]
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "limited": {
+        "3": [
+          "祈愿术|xphb"
+        ]
+      }
+    },
+    "lootTables": [
+      "奥秘 - 极珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 20000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Efreeti Bottle.webp"
+          },
+          "width": 390,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

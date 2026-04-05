@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Liquid Cat",
+    "name": "液体猫",
+    "source": "ObojimaTallGrass",
+    "page": 233,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Util"
+    ],
+    "entries": [
+      "这种活泼旋转的调合液体倒出时会变形并固化成一只友好的猫。这只猫会作为你的魔宠为你服务，如同来自{@spell 寻获魔宠}法术。这只猫会在24小时后消失。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 30|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Utility/liquid-cat.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1813,
+          "height": 1813
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

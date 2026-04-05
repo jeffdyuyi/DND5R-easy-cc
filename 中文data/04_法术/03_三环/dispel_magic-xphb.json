@@ -1,0 +1,69 @@
+[
+  {
+    "ENG_name": "Dispel Magic",
+    "name": "解除魔法",
+    "source": "XPHB",
+    "page": 264,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-SD"
+    ],
+    "level": 3,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "在施法距离内指定一名生物、一个物件或一处魔法效应。所有影响该目标的三环或更低环阶法术即告终止。每个影响目标的四环或更高环阶法术都需要以你的施法属性进行一次属性检定（{@dc 10}加上该法术的环阶），检定成功时目标法术终止。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "你直接终止影响目标的小于等于该施法环阶的法术效应。"
+        ]
+      }
+    ],
+    "miscTags": [
+      "OBJ"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "牧师",
+      "德鲁伊",
+      "游侠",
+      "术士",
+      "魔契师",
+      "法师",
+      "圣武士",
+      "奇械师"
+    ],
+    "display_school": "防护系"
+  }
+]

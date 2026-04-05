@@ -1,0 +1,34 @@
+[
+  {
+    "ENG_name": "Instrument of Illusions",
+    "name": "幻象乐器",
+    "source": "XDMG",
+    "page": 271,
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "在你使用这把{@item 乐器|XPHB}进行演奏期间，你可以使用一个{@action 魔法|XPHB}动作在以乐器为源点的5尺{@variantrule 光环 [效应区域]|XPHB|光环}内创造出无害的、幻象般的视觉效应。如果你是一名吟游诗人，则{@variantrule 光环 [效应区域]|XPHB|光环}的范围将提升至15尺。简单的视觉效应包括了幻光的音符、虚幻的舞者、舞动的蝴蝶、以及飘散的雪花。这种魔法效应既无触感亦无声音，且它们显然是幻象。你终止演奏的同时，此效应结束。"
+    ],
+    "lootTables": [
+      "奥秘 - 普通|XDMG",
+      "器具 - 普通|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 100,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Instrument of Illusions.webp"
+          },
+          "width": 772,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

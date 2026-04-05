@@ -1,0 +1,24 @@
+{
+  "ENG_name": "Inquisitive",
+  "name": "调查员",
+  "shortName": "调查员",
+  "source": "XGE",
+  "className": "游荡者",
+  "classSource": "XPHB",
+  "_copy": {
+    "ENG_name": "Inquisitive",
+    "name": "调查员",
+    "source": "XGE",
+    "shortName": "调查员",
+    "className": "游荡者",
+    "classSource": "PHB",
+    "_preserve": {
+      "page": true,
+      "otherSources": true,
+      "referenceSources": true,
+      "srd": true,
+      "basicRules": true,
+      "reprintedAs": true
+    }
+  }
+}

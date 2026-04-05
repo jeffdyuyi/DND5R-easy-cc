@@ -1,0 +1,295 @@
+{
+  "ENG_name": "Oath of Castigation",
+  "name": "惩戒之誓",
+  "shortName": "惩戒",
+  "source": "CrookedMoon14",
+  "className": "圣武士",
+  "classSource": "PHB",
+  "page": 82,
+  "reprintedAs": [
+    "惩戒|圣武士|XPHB|crookedmoon24"
+  ],
+  "edition": "classic",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "3": [
+          "神恩|PHB",
+          "致伤术|PHB"
+        ],
+        "5": [
+          "判罪锁链|CrookedMoon14",
+          "定身类人|PHB"
+        ],
+        "9": [
+          "法术反制|PHB",
+          "死者交谈|PHB"
+        ],
+        "13": [
+          "薪火焚身|CrookedMoon14",
+          "生物定位术|PHB"
+        ],
+        "17": [
+          "焰击术|PHB",
+          "定身怪物|PHB"
+        ]
+      }
+    }
+  ],
+  "subclassSpells": [
+    "神恩|PHB",
+    "致伤术|PHB",
+    "判罪锁链|CrookedMoon14",
+    "定身类人|PHB",
+    "法术反制|PHB",
+    "死者交谈|PHB",
+    "薪火焚身|CrookedMoon14",
+    "生物定位术|PHB",
+    "焰击术|PHB",
+    "定身怪物|PHB"
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "Oath of Castigation",
+      "name": "惩戒之誓",
+      "source": "CrookedMoon14",
+      "page": 82,
+      "className": "圣武士",
+      "classSource": "PHB",
+      "subclassShortName": "惩戒",
+      "subclassSource": "CrookedMoon14",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "{@i 寻觅邪恶并焚为灰烬}",
+        "邪恶与不义虽然广布久存，却也并非无穷无尽。立下惩戒之誓的圣武士将邪恶连根拔起，彻底焚尽，只为照亮所有无辜者与善良。无论是受凡人法律、所侍神明还是自身信条的约束，他们都会无情地搜寻邪恶滋生之所。立下这一誓言的圣武士知道，邪恶一旦燃起便无法在任何腐朽地点躲藏。",
+        "邪恶宿敌表格提供了罪犯、恶棍以及其他邪恶生物的示例，这些是你过去曾肃清或铲除的，或者你仍然在追捕的敌人。面对这些宿敌可能让你踏上了铲除潜藏不义的道路。",
+        {
+          "type": "table",
+          "caption": "邪恶宿敌",
+          "colLabels": [
+            "d12",
+            "复仇"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-11"
+          ],
+          "rows": [
+            [
+              "1",
+              "一位腐朽的吸血鬼贵族，通过役使无数害兽散播致命瘟疫。"
+            ],
+            [
+              "2",
+              "一名冷酷无情的雇佣杀手，将杀戮技巧贩卖予各种教团与黑暗势力。"
+            ],
+            [
+              "3",
+              "一位神眷天恩的邪教首领盘踞偏远孤岛，以凡人献祭换取年年五谷丰登。"
+            ],
+            [
+              "4",
+              "一具智慧非凡的血肉魔像，弑其造物主后，以怪诞实验与恐怖科学追求其自身的邪恶事业。"
+            ],
+            [
+              "5",
+              "一个极度嫉妒的森林鬼婆，她腐化小型村庄的年轻人并操纵它们犯下可怕的暴行"
+            ],
+            [
+              "6",
+              "一位骄傲自大的异端教士，在一场血腥分裂后聚集狂热追随者，以其扭曲信仰之名发起一场残酷的圣战。"
+            ],
+            [
+              "7",
+              "一位曾经著名的猎人现在被兽化诅咒，并进行了血腥的屠杀"
+            ],
+            [
+              "8",
+              "一个坚韧的死灵师在古代遗迹中搜寻禁忌魔法，以将他们来自异界的大师从神秘监狱中解放出来"
+            ],
+            [
+              "9",
+              "一只诡异的两栖生物，自深渊现身，劫持无辜者且将它们拖入水面下方，目的未知。"
+            ],
+            [
+              "10",
+              "一位才华横溢的医生，他完善了一种血清，能将其转化为一个庞大的蛮兽，并在整个城市中犯下连环谋杀案。"
+            ],
+            [
+              "11",
+              "一具嗜血的还魂鬼，曾经是一名黑暗骑士，现在正召集其他亡灵骑士带来死亡和衰竭。"
+            ],
+            [
+              "12",
+              "一位痛苦扭曲的艺人，头戴悲喜面具，且通过肢解受害者的尸体来追求他们的杰作。"
+            ]
+          ]
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "引导神力|圣武士|PHB|惩戒|CrookedMoon14|3|CrookedMoon14"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "惩戒之誓法术|圣武士|PHB|惩戒|CrookedMoon14|3|CrookedMoon14"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Channel Divinity",
+      "name": "引导神力",
+      "source": "CrookedMoon14",
+      "page": 82,
+      "className": "圣武士",
+      "classSource": "PHB",
+      "subclassShortName": "惩戒",
+      "subclassSource": "CrookedMoon14",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "你获得以下这些引导神力选项。有关引导神力的规则请查阅圣武士 神圣誓言Sacred Oath 特性中记载的文本。",
+        {
+          "ENG_name": "Castigate",
+          "name": "惩奸除恶",
+          "type": "entries",
+          "entries": [
+            "你可以使用魔法动作消耗一次引导神力的使用次数，以烈焰镣铐锁缚你意欲惩戒的生物。选择你周边30尺范围内至多等于你魅力调整值（至少为1）的你可见的生物。每个生物都必须进行一次力量豁免，豁免失败则被戴上烈焰镣铐，其速度减少至0。你可以使用附赠动作令镣铐爆发炽焰。所有被镣铐锁缚的生物都会受到{@damage 2d6}火焰伤害。被镣铐锁缚的生物在其回合结束时重复豁免，成功则终止其身上的该效应。1分钟后，其豁免自动成功。"
+          ]
+        },
+        {
+          "ENG_name": "Incite",
+          "name": "诘问真心",
+          "type": "entries",
+          "entries": [
+            "你可以使用一个动作来引导神力以更好地搜寻不义且腐败。在接下来的10分钟内，你在智力（{@skill 调查}）和感知（{@skill 洞悉}）检定中具有优势。",
+            "持续时间内，你可以使用附赠动作选择你周边10尺范围内一个你可见的生物。目标必须进行一次魅力豁免，豁免失败则陷入{@condition 恐慌}状态，持续1分钟。以这种方式陷入{@condition 恐慌}状态期间，目标不能故意说谎。如果目标受到伤害，或者你再次使用该附赠动作，则此状态提前结束。"
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Paladin/Castigate.webp"
+    },
+    {
+      "ENG_name": "Oath of Castigation Spells",
+      "name": "惩戒之誓法术",
+      "source": "CrookedMoon14",
+      "page": 83,
+      "className": "圣武士",
+      "classSource": "PHB",
+      "subclassShortName": "惩戒",
+      "subclassSource": "CrookedMoon14",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "你在圣武士等级获得惩戒誓言法术表中列出的圣誓法术。关于圣誓法术如何工作，请参阅神圣誓言职业特性。",
+        {
+          "type": "table",
+          "caption": "惩戒之誓法术",
+          "colLabels": [
+            "圣武士等级",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "3rd",
+              "{@spell 神恩|PHB}, {@spell 致伤术|PHB}"
+            ],
+            [
+              "5th",
+              "{@spell 判罪锁链|CrookedMoon14}, {@spell 定身类人|PHB}"
+            ],
+            [
+              "9th",
+              "{@spell 法术反制|PHB}, {@spell 死者交谈|PHB}"
+            ],
+            [
+              "13th",
+              "{@spell 薪火焚身|CrookedMoon14}, {@spell 生物定位术|PHB}"
+            ],
+            [
+              "17th",
+              "{@spell 焰击术|PHB}, {@spell 定身怪物|PHB}"
+            ]
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Paladin/Oath%20of%20Castigation%20Spells.webp"
+    },
+    {
+      "ENG_name": "Kindling Aura",
+      "name": "火种灵光",
+      "source": "CrookedMoon14",
+      "page": 83,
+      "className": "圣武士",
+      "classSource": "PHB",
+      "subclassShortName": "惩戒",
+      "subclassSource": "CrookedMoon14",
+      "level": 7,
+      "header": 2,
+      "entries": [
+        "你和你的盟友在你的{@classFeature 守护灵光|圣武士|PHB|6}范围内无视生物对火焰和光耀伤害的抗性，并且当受影响的生物用武器攻击命中时，它可以造成火焰伤害而不是武器的正常伤害类型。",
+        "此外，你和光环内受影响的生物可以在智力（{@skill 调查}）和感知（{@skill 洞悉}）检定上添加你的魅力调整值（最低为+1）。"
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Paladin/Kindling%20Aura.webp"
+    },
+    {
+      "ENG_name": "Fervent Inquisitor",
+      "name": "炽诚审判",
+      "source": "CrookedMoon14",
+      "page": 83,
+      "className": "圣武士",
+      "classSource": "PHB",
+      "subclassShortName": "惩戒",
+      "subclassSource": "CrookedMoon14",
+      "level": 15,
+      "header": 2,
+      "entries": [
+        "每当一个生物对你或你30尺内你能看见的一个盟友造成伤害时，你可以使用你的反应来获得对该造成伤害的生物的下一次攻击检定的优势。此外，每当你对一个生命值为一半或更少的生物造成火焰或光耀伤害时，你会意识到该生物在过去24小时内对你故意且明知说出的任何谎言。"
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Paladin/Fervent%20Inquisitor.webp"
+    },
+    {
+      "ENG_name": "Fire and Brimstone",
+      "name": "硫磺烈火",
+      "source": "CrookedMoon14",
+      "page": 83,
+      "className": "圣武士",
+      "classSource": "PHB",
+      "subclassShortName": "惩戒",
+      "subclassSource": "CrookedMoon14",
+      "level": 20,
+      "header": 2,
+      "entries": [
+        "作为一个附赠动作，你化身为净化火焰并获得以下增益，持续10分钟或直到你结束它们（无需动作）。一旦你使用此特性，在完成一次长休前不能再次使用。你也可以通过消耗一个5环法术位来恢复它的使用次数（无需动作）。",
+        {
+          "type": "list",
+          "items": [
+            "你获得对火焰伤害的免疫。",
+            "神圣焰鞭使你的触及增加10尺，且你的近战攻击无视一半和{@quickref 掩护||3||四分之三掩护}。",
+            "当你以借机攻击命中一个生物，或当一个敌对生物在其回合结束时处于你的触及范围内，它必须成功通过一次魅力豁免检定否则被击倒{@condition 倒地}且速度降为0直到其下一回合开始。"
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Paladin/Fire%20and%20Brimstone.webp"
+    }
+  ],
+  "fluff": {
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Subclasses/Paladin_Oath_of_Castigation.webp"
+        },
+        "credit": "Jo Cordisco",
+        "width": 839,
+        "height": 1200
+      }
+    ]
+  },
+  "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclasses/Castigation.webp"
+}

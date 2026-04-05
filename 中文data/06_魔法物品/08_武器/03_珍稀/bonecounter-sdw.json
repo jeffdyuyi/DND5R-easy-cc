@@ -1,0 +1,19 @@
+[
+  {
+    "ENG_name": "Bonecounter",
+    "name": "骨骸计数器",
+    "source": "SDW",
+    "baseItem": "硬头锤|PHB",
+    "type": "M",
+    "rarity": "rare",
+    "weight": 4,
+    "weaponCategory": "simple",
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "bonusWeapon": "+2",
+    "entries": [
+      "这件武器是一把名为骨数者的魔法+2钉头锤。每当这件武器用来摧毁一个不死生物生物时，一枚银币就会出现在持有者的口袋里。"
+    ],
+    "valueReference": 4000
+  }
+]

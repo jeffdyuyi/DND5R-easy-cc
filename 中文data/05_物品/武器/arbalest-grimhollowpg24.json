@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Arbalest",
+    "name": "弩炮",
+    "source": "GrimHollowPG24",
+    "page": 129,
+    "type": "R|XPHB",
+    "rarity": "none",
+    "weight": 20,
+    "value": 75000,
+    "weaponCategory": "进阶",
+    "property": [
+      "A|XPHB",
+      "H|XPHB",
+      "LD|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "强拉|GrimHollowPG24"
+    ],
+    "range": "80/300",
+    "dmg1": "2d6",
+    "dmgType": "P",
+    "weapon": true,
+    "ammoType": "弩矢|XPHB"
+  }
+]

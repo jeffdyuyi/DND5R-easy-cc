@@ -1,0 +1,76 @@
+[
+  {
+    "ENG_name": "Orelia's Tome of Beast Familiars",
+    "name": "奥蕾莉亚的野兽魔宠卷册",
+    "source": "GriffonsSaddlebag2",
+    "page": 132,
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": "由法师",
+    "reqAttuneTags": [
+      {
+        "class": "法师"
+      }
+    ],
+    "wondrous": true,
+    "entries": [
+      "当你与此书同调时，你总是准备有{@spell 寻获魔宠}法术。此法术不计入你已准备法术的数量限制。",
+      "当你使用2环或更高环阶的法术位施放该法术时，你的魔宠可以采取更强壮的动物形态。法术位环阶决定了你的魔宠可以采取何种野兽形态，如下表所示：",
+      {
+        "type": "table",
+        "colLabels": [
+          "法术位环阶",
+          "最大挑战等级"
+        ],
+        "colStyles": [
+          "col-3 text-left",
+          "col-9 text-left"
+        ],
+        "rows": [
+          [
+            "2",
+            "{@filter 1/8|bestiary|challenge rating=[&0;&1/8]|type=beast}"
+          ],
+          [
+            "3–4",
+            "{@filter 1/4|bestiary|challenge rating=[&0;&1/4]|type=beast}"
+          ],
+          [
+            "5–6",
+            "{@filter 1/2|bestiary|challenge rating=[&0;&1/2]|type=beast}"
+          ],
+          [
+            "7–8",
+            "{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast}"
+          ],
+          [
+            "9",
+            "{@filter 2|bestiary|challenge rating=[&0;&2]|type=beast}"
+          ]
+        ]
+      },
+      "除此之外，当你用2环或更高环阶的法术位施放该法术时，所用的法术位每比1环高一环，此次施法就需要多消耗价值10GP的材料成分。当你与此书的同调结束时，你拥有的任何魔宠都会消失，且不会留下任何物质形体。"
+    ],
+    "attachedSpells": {
+      "other": [
+        "寻获魔宠"
+      ]
+    },
+    "lootTables": [
+      "魔法物品表 G1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Orelias-Tome-of-Beast-Familiars.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

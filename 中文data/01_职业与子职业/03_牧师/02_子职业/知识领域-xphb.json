@@ -1,0 +1,184 @@
+{
+    "ENG_name": "Knowledge Domain",
+    "name": "知识领域",
+    "shortName": "知识",
+    "source": "FRHoF",
+    "className": "牧师",
+    "classSource": "XPHB",
+    "page": 18,
+    "edition": "one",
+    "additionalSpells": [
+        {
+            "prepared": {
+                "3": [
+                    "命令术|XPHB",
+                    "通晓语言|XPHB",
+                    "侦测魔法|XPHB",
+                    "侦测思想|XPHB",
+                    "鉴定术|XPHB",
+                    "心灵尖刺|XPHB"
+                ],
+                "5": [
+                    "解除魔法|XPHB",
+                    "回避侦测|XPHB",
+                    "巧言术|XPHB"
+                ],
+                "7": [
+                    "秘法眼|XPHB",
+                    "放逐术|XPHB",
+                    "困惑术|XPHB"
+                ],
+                "9": [
+                    "通晓传奇|XPHB",
+                    "探知术|XPHB",
+                    "突触静止|XPHB"
+                ]
+            }
+        }
+    ],
+    "subclassFeatures": [
+        "知识领域|牧师|XPHB|知识|FRHoF|3|FRHoF",
+        "无拘心智|牧师|XPHB|知识|FRHoF|6|FRHoF",
+        "神圣预知|牧师|XPHB|知识|FRHoF|17|FRHoF"
+    ],
+    "features": [
+        {
+            "ENG_name": "Knowledge Domain",
+            "name": "知识领域",
+            "source": "FRHoF",
+            "page": 18,
+            "className": "牧师",
+            "classSource": "XPHB",
+            "subclassShortName": "知识",
+            "subclassSource": "FRHoF",
+            "level": 3,
+            "entries": [
+                "{@i 发掘秘密，主宰心智}",
+                "知识领域对学习与理解的重视胜过一切。深入这一领域的牧师研究秘传的学问，搜集古旧的书卷，探索秘密的地点并审视思想的变化。对他们来说，知识的价值远超物质财富，并且学习是一种敬奉神明的方式。图书馆，大学以及其它教育机构也会依赖知识领域的力量。",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "知识祝福|牧师|XPHB|知识|FRHoF|3|FRHoF"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "知识领域法术|牧师|XPHB|知识|FRHoF|3|FRHoF"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "思维魔法|牧师|XPHB|知识|FRHoF|3|FRHoF"
+                }
+            ]
+        },
+        {
+            "ENG_name": "Knowledge Domain Spells",
+            "name": "知识领域法术",
+            "source": "FRHoF",
+            "page": 2,
+            "className": "牧师",
+            "classSource": "XPHB",
+            "subclassShortName": "知识",
+            "subclassSource": "FRHoF",
+            "level": 3,
+            "entries": [
+                "当你到达知识领域法术表中特定的牧师等级时，你就始终准备了表中对应的法术。",
+                {
+                    "type": "table",
+                    "colLabels": [
+                        "牧师等级",
+                        "法术"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "3",
+                            "{@spell 命令术|XPHB}, {@spell 通晓语言|XPHB}*, {@spell 侦测魔法|XPHB}*, {@spell 侦测思想|XPHB}*, {@spell 鉴定术|XPHB}*, {@spell 心灵尖刺|XPHB}*"
+                        ],
+                        [
+                            "5",
+                            "{@spell 解除魔法|XPHB}, {@spell 回避侦测|XPHB}, {@spell 巧言术|XPHB}*"
+                        ],
+                        [
+                            "7",
+                            "{@spell 秘法眼|XPHB}*, {@spell 放逐术|XPHB}, {@spell 困惑术|XPHB}"
+                        ],
+                        [
+                            "9",
+                            "{@spell 通晓传奇|XPHB}*, {@spell 探知术|XPHB}*, {@spell 突触静止|XPHB}"
+                        ]
+                    ],
+                    "footnotes": [
+                        "*来自预言学派的法术"
+                    ]
+                }
+            ]
+        },
+        {
+            "ENG_name": "Blessings of Knowledge",
+            "name": "知识祝福",
+            "source": "FRHoF",
+            "page": 18,
+            "className": "牧师",
+            "classSource": "XPHB",
+            "subclassShortName": "知识",
+            "subclassSource": "FRHoF",
+            "level": 3,
+            "entries": [
+                "你获得你选择的一个{@item 工匠工具|XPHB}熟练，以及下述技能中你选择的两个技能熟练：{@skill 奥秘|XPHB}、{@skill 历史|XPHB}、{@skill 自然|XPHB}、{@skill 宗教|XPHB}。你还会获得那两个技能的{@variantrule 专精|XPHB}。"
+            ]
+        },
+        {
+            "ENG_name": "Mind Magic",
+            "name": "思维魔法",
+            "source": "FRHoF",
+            "page": 18,
+            "className": "牧师",
+            "classSource": "XPHB",
+            "subclassShortName": "知识",
+            "subclassSource": "FRHoF",
+            "level": 3,
+            "consumes": {
+                "ENG_name": "Channel Divinity",
+                "name": "引导神力",
+                "amount": 1
+            },
+            "entries": [
+                "以一个{@action 魔法|XPHB}动作，你可以通过消耗一次引导神力来具象化你的魔法学识。从知识领域法术表中选择一个你已经准备的预言学派法术。作为该动作的一部分，你无需法术位以及材料成分的施展该法术。"
+            ]
+        },
+        {
+            "ENG_name": "Knowledge Domain feature",
+            "source": "FRHoF",
+            "page": 18,
+            "className": "牧师",
+            "classSource": "XPHB",
+            "subclassShortName": "知识",
+            "subclassSource": "FRHoF",
+            "level": 6,
+            "name": "无拘心智",
+            "ENG_name": "Unfettered Mind",
+            "header": 2,
+            "entries": [
+                "当你进行一个智力（{@skill 奥秘|XPHB}、{@skill 历史|XPHB}、{@skill 自然|XPHB}、{@skill 宗教|XPHB}）或感知（{@skill 见解|XPHB}）检定时中失败，或者当你针对某一{@status 魅惑|XPHB}或{@status 恐惧|XPHB}状态进行豁免失败时，你可以通过消耗一次引导神力次数来掷一枚 {@dice d8} 并将其加入结果中，这可能导致成功。"
+            ]
+        },
+        {
+            "ENG_name": "Knowledge Domain feature",
+            "source": "FRHoF",
+            "page": 18,
+            "className": "牧师",
+            "classSource": "XPHB",
+            "subclassShortName": "知识",
+            "subclassSource": "FRHoF",
+            "level": 17,
+            "name": "神圣预知",
+            "ENG_name": "Divine Foresight",
+            "header": 2,
+            "entries": [
+                "以一个{@variantrule 附赠动作|XPHB}，你魔法地将思维延展到未来。在1个小时内，你在{@variantrule D20 检定|XPHB}上获得{@variantrule 优势|XPHB}。此特性一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。你也可以消耗一个六环及以上的法术位来重置此特性的使用权（无需动作）。"
+            ]
+        }
+    ]
+}

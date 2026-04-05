@@ -1,0 +1,53 @@
+[
+  {
+    "ENG_name": "Mourningsteel Demi-Gauntlets",
+    "name": "哀钢半手套",
+    "source": "GriffonsSaddlebag2",
+    "page": 127,
+    "resist": [
+      "暗蚀"
+    ],
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6 + 6}",
+    "charges": 12,
+    "entries": [
+      "这副黑色的露指长手套由一种名为哀钢的金属制成，这种金属的原矿石浸染过无数倒下生物的鲜血。佩戴着这副护手期间，你对暗蚀伤害具有抗性。",
+      "这副护手具有12充能，并在每日黎明时重获{@dice 1d6 + 6}已消耗的充能。佩戴着这副护手期间，你可以用一个动作从护手中施展以下法术之一，法术攻击加值为 +8：{@spell 颤栗之触}（不消耗充能；或1充能以5环施展）、{@spell 致伤术}（每环阶1充能，最高为五环）或{@spell 吸血鬼之触}（3充能）。以此法施展的法术造成的伤害无视暗蚀伤害抗性。",
+      "此外，如果你花费充能从护手中施放{@spell 颤栗之触}并命中一个生物，你可以立即选择额外消耗充能，在同一动作中施放{@spell 致伤术}或{@spell 吸血鬼之触}法术。此时，该戏法的骷髅手会将法术传递给目标，而无需你自己接触它。如果你在用{@spell 吸血鬼之触}命中一个生物时（在消耗充能施放它之后）已经专注于{@spell 颤栗之触}法术，那么你不需要额外消耗充能就可以将{@spell 吸血鬼之触}法术传递给目标。{@spell 颤栗之触}造成的暗蚀伤害不计入{@spell 吸血鬼之触}为你恢复的生命值计算中。"
+    ],
+    "attachedSpells": {
+      "will": [
+        "颤栗之触#c"
+      ],
+      "charges": {
+        "1": [
+          "颤栗之触#c5",
+          "致伤术"
+        ],
+        "3": [
+          "吸血鬼之触"
+        ]
+      }
+    },
+    "lootTables": [
+      "魔法物品表 H2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Mourningsteel-Demi-Gauntlets.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

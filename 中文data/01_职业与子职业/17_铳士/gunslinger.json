@@ -1,0 +1,209 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "ValdaGunslinger",
+                "abbreviation": "GC:VSS'24",
+                "full": "铳士职业：瓦尔达的秘密尖塔",
+                "authors": [
+                    "Mage Hand Press"
+                ],
+                "partnered": true,
+                "version": "1.0.0"
+            }
+        ],
+        "edition": "one"
+    },
+    "class": [
+        {
+            "ENG_name": "Gunslinger",
+            "name": "铳士",
+            "source": "ValdaGunslinger",
+            "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ValdaGunslinger/Gunslinger-icon.webp",
+            "primaryAbility": [
+                {
+                    "dex": true
+                }
+            ],
+            "hd": {
+                "number": 1,
+                "faces": 8
+            },
+            "proficiency": [
+                "dex",
+                "cha"
+            ],
+            "classTableGroups": [
+                {
+                    "colLabels": [
+                        "风险骰",
+                        "武器精通"
+                    ],
+                    "rows": [
+                        [
+                            "-",
+                            "2"
+                        ],
+                        [
+                            "{@dice 4d8}",
+                            "2"
+                        ],
+                        [
+                            "{@dice 4d8}",
+                            "2"
+                        ],
+                        [
+                            "{@dice 4d8}",
+                            "3"
+                        ],
+                        [
+                            "{@dice 4d8}",
+                            "3"
+                        ],
+                        [
+                            "{@dice 5d8}",
+                            "3"
+                        ],
+                        [
+                            "{@dice 5d8}",
+                            "3"
+                        ],
+                        [
+                            "{@dice 5d8}",
+                            "3"
+                        ],
+                        [
+                            "{@dice 5d8}",
+                            "3"
+                        ],
+                        [
+                            "{@dice 5d10}",
+                            "4"
+                        ],
+                        [
+                            "{@dice 5d10}",
+                            "4"
+                        ],
+                        [
+                            "{@dice 5d10}",
+                            "4"
+                        ],
+                        [
+                            "{@dice 5d10}",
+                            "4"
+                        ],
+                        [
+                            "{@dice 6d10}",
+                            "4"
+                        ],
+                        [
+                            "{@dice 6d10}",
+                            "4"
+                        ],
+                        [
+                            "{@dice 6d10}",
+                            "4"
+                        ],
+                        [
+                            "{@dice 6d10}",
+                            "4"
+                        ],
+                        [
+                            "{@dice 6d12}",
+                            "4"
+                        ],
+                        [
+                            "{@dice 6d12}",
+                            "4"
+                        ],
+                        [
+                            "{@dice 6d12}",
+                            "4"
+                        ]
+                    ]
+                }
+            ],
+            "startingProficiencies": {
+                "armor": [
+                    "light"
+                ],
+                "weapons": [
+                    "simple",
+                    "{@filter 军用远程武器|items|type=远程武器}"
+                ],
+                "weaponProficiencies": [
+                    {
+                        "simple": true,
+                        "all": {
+                            "fromFilter": "type=远程武器"
+                        }
+                    }
+                ],
+                "skills": [
+                    {
+                        "choose": {
+                            "from": [
+                                "acrobatics",
+                                "animal handling",
+                                "athletics",
+                                "deception",
+                                "insight",
+                                "intimidation",
+                                "perception",
+                                "persuasion",
+                                "sleight of hand",
+                                "stealth"
+                            ],
+                            "count": 2
+                        }
+                    }
+                ]
+            },
+            "startingEquipment": {
+                "additionalFromBackground": true,
+                "entries": [
+                    "{@i 选择A或B：} (A) {@item 皮甲|XPHB}, 2 {@item 匕首|XPHB|匕首}, {@item 左轮枪|ValdaGunslinger}, 50 {@item 弹丸|ValdaGunslinger}, {@item 探索套组|XPHB}, 以及11 GP；或者(B) 175 GP"
+                ]
+            },
+            "classFeatures": [
+                "战斗风格|铳士|ValdaGunslinger|1",
+                "快速拔刀|铳士|ValdaGunslinger|1",
+                "武器精通|铳士|ValdaGunslinger|1",
+                "夺命重弹|铳士|ValdaGunslinger|2",
+                "风险|铳士|ValdaGunslinger|2",
+                {
+                    "classFeature": "铳士子职|铳士|ValdaGunslinger|3",
+                    "gainSubclassFeature": true
+                },
+                "属性值提升|铳士|ValdaGunslinger|4",
+                "额外攻击|铳士|ValdaGunslinger|5",
+                "破脏弹|铳士|ValdaGunslinger|5",
+                {
+                    "classFeature": "子职特性|铳士|ValdaGunslinger|6",
+                    "gainSubclassFeature": true
+                },
+                "反射闪避|铳士|ValdaGunslinger|7",
+                "属性值提升|铳士|ValdaGunslinger|8",
+                "夺命重弹|铳士|ValdaGunslinger|9",
+                {
+                    "classFeature": "子职特性|铳士|ValdaGunslinger|10",
+                    "gainSubclassFeature": true
+                },
+                "斩尽杀绝|铳士|ValdaGunslinger|11",
+                "属性值提升|铳士|ValdaGunslinger|12",
+                "幸免于难|铳士|ValdaGunslinger|13",
+                {
+                    "classFeature": "子职特性|铳士|ValdaGunslinger|14",
+                    "gainSubclassFeature": true
+                },
+                "极险决策|铳士|ValdaGunslinger|15",
+                "属性值提升|铳士|ValdaGunslinger|16",
+                "夺命重弹|铳士|ValdaGunslinger|17",
+                "灵巧战技|铳士|ValdaGunslinger|18",
+                "传奇恩惠|铳士|ValdaGunslinger|19",
+                "爆头|铳士|ValdaGunslinger|20"
+            ],
+            "subclassTitle": "子职特性"
+        }
+    ]
+}

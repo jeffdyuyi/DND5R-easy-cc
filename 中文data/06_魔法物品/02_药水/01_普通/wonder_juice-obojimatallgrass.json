@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Wonder Juice",
+    "name": "神奇果汁",
+    "source": "ObojimaTallGrass",
+    "page": 221,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Com"
+    ],
+    "entries": [
+      "当你饮用这瓶多彩药水时，你会立即感受到魔法效果。在1分钟内，你所穿戴或携带的所有物品都被视为魔法物品，使你挥舞的武器能够克服对非魔法攻击和伤害的抗性与免疫。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 9|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Combat/wonder-juice.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 2866,
+          "height": 2866
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "ENG_name": "Task",
+    "name": "任务术",
+    "source": "ObojimaTallGrass",
+    "page": 191,
+    "level": 0,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 15
+      }
+    },
+    "components": {
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1,
+          "upTo": true
+        }
+      }
+    ],
+    "entries": [
+      "随着你手腕的弹指一挥，你魔法般地完成一个小型且简易的任务，例如翻转书页、给面包涂黄油或加热一杯茶，无需任何物理互动。该任务不能包括任何意图对生物造成有害效应的内容，且必须是你通常无需使用魔法就能完成的事情。如果任务的目标对你处于全身掩护状态，则法术失败。",
+      "如果你多次施放这个法术，你可以同时激活最多三个任务，并且你可以用一个附赠动作来解除其中一个它们。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "miscTags": [
+      "UBA"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Custom/Spells/Task.webp"
+  }
+]

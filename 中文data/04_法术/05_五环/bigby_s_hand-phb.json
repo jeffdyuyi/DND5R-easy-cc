@@ -1,0 +1,125 @@
+[
+  {
+    "ENG_name": "Bigby's Hand",
+    "name": "毕格比之手",
+    "source": "PHB",
+    "page": 218,
+    "srd": "奥术之手",
+    "referenceSources": [
+      "OotA",
+      "CoS",
+      "SKT",
+      "WDH",
+      "WDMM",
+      "BGDIA"
+    ],
+    "reprintedAs": [
+      "毕格比之手|XPHB"
+    ],
+    "level": 5,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一个蛋壳和一只蛇皮手套"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你在施法距离内指定一处你能看见且未被占据的空间，并在该处创造出一只闪烁着微光的大型手掌。巨手在法术持续时间内维持存在，并听从你的命令进行移动，模仿你自己手掌的各类动作。",
+      "巨手是一个物件，其AC为20，其生命值等于你的最大生命值。如果它的生命值降至0则法术将提前终止。其力量属性为26（{@d20 8}），敏捷属性为10（{@d20 0}）。巨手并不会充满其所在的空间。",
+      "施展此法术时，你可以令巨手移动至多 60 尺远并造成下列效应之一。你也可以在自己随后的回合里以一个附赠动作再造成下列效应之一。",
+      {
+        "ENG_name": "Clenched Fist",
+        "name": "金刚拳",
+        "type": "entries",
+        "entries": [
+          "巨手对自身周围5尺范围内的一个生物（或物件）发动一次打击。此时，巨掌用你的游戏数据发动一次近战法术攻击，此次攻击命中时目标将受到{@damage 4d8}点力场伤害。"
+        ]
+      },
+      {
+        "ENG_name": "Forceful Hand",
+        "name": "飞击掌",
+        "type": "entries",
+        "entries": [
+          "巨手尝试推撞自身周围5尺范围内的一个生物。你使用巨手的力量属性进行一次属性检定，与目标的力量（{@skill 运动}）检定作对抗。如果目标的体型不超过中型，则你的检定具有优势。若你胜出对抗时，目标将目标推动 5+你施法属性调整值的五倍 尺（方向由你选择）。巨手将随着目标一起移动，保持自己处在目标周围5尺的范围内。"
+        ]
+      },
+      {
+        "ENG_name": "Grasping Hand",
+        "name": "擒拿掌",
+        "type": "entries",
+        "entries": [
+          "巨手尝试对自身周围5尺范围内的一个体型不超过巨型的生物进行擒抱。你使用巨手的力量属性值来处理本次擒抱。如果目标的体型不超过中型，则你的检定具有优势。在巨手擒抱目标期间，你可以使用一个附赠动作命令巨手对其进行挤压，此时目标将受到 {@damage 2d6}+你的施法属性调整值 点钝击伤害。"
+        ]
+      },
+      {
+        "ENG_name": "Interposing Hand",
+        "name": "护身掌",
+        "type": "entries",
+        "entries": [
+          "这只手会挡在你和你选择的生物之间，直到你给它下达不同的命令。手会移动以保持在你和目标之间，为你提供针对目标的{@quickref 掩护||3||半身掩护}。如果目标的力量值小于或等于手的力量值，目标将无法穿过手所在的空间。如果目标的力量值高于手的力量值，目标可以穿过手所在的空间向你移动，但该空间对目标来说是{@quickref 困难地形||3}。"
+        ]
+      }
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "使用六环或更高环阶法术位施展此法术时，你使用的法术位每比五环高一环，金刚拳的伤害就会提高{@scaledamage 4d8|5-9|2d8}点，擒拿掌的伤害就会提高{@scaledamage 2d6|5-9|2d6}点。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "bludgeoning",
+      "force"
+    ],
+    "spellAttack": [
+      "M"
+    ],
+    "abilityCheck": [
+      "力量"
+    ],
+    "miscTags": [
+      "DFT",
+      "FMV",
+      "OBJ",
+      "SGT",
+      "UBA"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "法师",
+      "奇械师",
+      "术士"
+    ],
+    "display_school": "塑能系",
+    "display_damageInflict": [
+      "钝击",
+      "力场"
+    ]
+  }
+]

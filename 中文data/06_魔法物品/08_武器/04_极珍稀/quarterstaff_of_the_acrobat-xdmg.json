@@ -1,0 +1,92 @@
+[
+  {
+    "ENG_name": "Quarterstaff of the Acrobat",
+    "name": "杂技长棍",
+    "source": "XDMG",
+    "page": 291,
+    "srd52": true,
+    "basicRules2024": true,
+    "otherSources": [
+      {
+        "source": "UtHftLH"
+      },
+      {
+        "source": "HBTD"
+      }
+    ],
+    "baseItem": "长棍|xphb",
+    "type": "M|XPHB",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "weight": 4,
+    "weaponCategory": "simple",
+    "property": [
+      "T|XPHB",
+      "V|XPHB"
+    ],
+    "mastery": [
+      "失衡|XPHB"
+    ],
+    "range": "30/120",
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "bonusWeapon": "+2",
+    "bonusAc": "+5",
+    "staff": true,
+    "entries": [
+      "你以此魔法武器进行的攻击检定和伤害掷骰具有+2加值。",
+      "持握此武器期间，你可以在骰{@variantrule 先攻|XPHB}后令该长棍散发出10尺{@variantrule 微光光照|XPHB}。你也可以用一个{@variantrule 附赠动作|XPHB}使其散发出同样的光照，或使用{@variantrule 附赠动作|XPHB}使该光照熄灭。",
+      "持握此武器期间，你可以用一个{@variantrule 附赠动作|XPHB}转化其形态，将其变为一根6寸短杆（为便于储存）或一根10尺长杆，又或者将其恢复至一根长棍。此武器至多只能伸长至其周围空间所允许的长度。",
+      "在相应形态下，此武器具有以下额外词条：",
+      {
+        "ENG_name": "Acrobatic Assist (Quarterstaff and 10-Foot Pole Forms Only)",
+        "name": "援助特技（仅限长棍和10尺长杆形态）",
+        "type": "entries",
+        "entries": [
+          "持握此武器期间，你在敏捷（{@skill 特技|XPHB}）检定上具有{@variantrule 优势|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Attack Deflection (Quarterstaff Form Only)",
+        "name": "偏斜攻击（仅限长棍形态）",
+        "type": "entries",
+        "entries": [
+          "若你在持握此武器期间被一次攻击命中，你可以用一个{@variantrule 反应|XPHB}让武器盘绕于己身，使你针对触发此反应的攻击中{@variantrule 护甲等级|XPHB}+5，这可能导致该攻击变为未命中。该词条在你完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}前无法再次使用。"
+        ]
+      },
+      {
+        "ENG_name": "Ranged Weapon (Quarterstaff Form Only)",
+        "name": "远程武器（仅限长棍形态）",
+        "type": "entries",
+        "entries": [
+          "此武器具有{@itemProperty T|XPHB|投掷}（30/120）词条。你以此武器进行一次远程攻击之后，它会立即飞回你的手中。"
+        ]
+      }
+    ],
+    "light": [
+      {
+        "dim": 10
+      }
+    ],
+    "lootTables": [
+      "武备 - 极珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 40000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Quarterstaff of the Acrobat.webp"
+          },
+          "width": 681,
+          "height": 1176
+        }
+      ]
+    }
+  }
+]

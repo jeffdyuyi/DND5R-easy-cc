@@ -1,0 +1,38 @@
+[
+  {
+    "ENG_name": "Manual of Clay Golems",
+    "name": "粘土魔像之书",
+    "source": "XDMG",
+    "page": 277,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "very rare",
+    "wondrous": true,
+    "weight": 5,
+    "entries": [
+      "这本手册记载了制造{@creature 粘土魔像|XMM}所必需的知识和秘文，魔像的类型由DM选择或在表格中随机掷骰决定。只有拥有至少2个五环法术位的施法者才能解读并使用这本书。若无法解读这本书的生物尝试阅读{@i 魔像手册}，该生物将受到{@damage 6d6}点心灵伤害。",
+      "要制造一个粘土魔像，你必须花费30天，将魔像手册放在手头并不间断地工作，每天的休息时间不超过8小时。此外，你还要付出65,000 gp用以购买材料。",
+      "魔像完工后，魔像手册将被魔焰吞噬。当你把手册的灰烬洒在魔像上时，魔像将被活化。它服从你的控制，理解并听从你的命令。"
+    ],
+    "lootTables": [
+      "奥秘 - 极珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 40000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Manual of Clay Golems.webp"
+          },
+          "width": 789,
+          "height": 850
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

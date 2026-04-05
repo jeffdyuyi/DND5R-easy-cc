@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Talking Doll",
+    "name": "说话玩偶",
+    "source": "XGE",
+    "page": 139,
+    "referenceSources": [
+      "WBtW"
+    ],
+    "reprintedAs": [
+      "说话玩偶|XDMG"
+    ],
+    "tier": "次要",
+    "rarity": "common",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "只要这个毛绒玩偶在你周围5尺范围内，你就可以利用一次短休的时间去教会它说六个短句，每个短句由至多六个词组成，且你可以分别为每个短句设置一条触发条件，但这一条件必须是可以被观察到的现象，且只有发生在玩偶周围5尺范围内时它才会被触发。举例来说，你可以设定当有人拾起这个玩偶时它会说\"我·想要·一·颗·糖果\"。当你和玩偶的同调断开时，玩偶设置的短句也将会消失。再次短休时，你可以用新的短句去替换旧的短句。"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 100,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XGE/Talking Doll.webp"
+          },
+          "credit": "Matt Stewart",
+          "width": 850,
+          "height": 1471
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

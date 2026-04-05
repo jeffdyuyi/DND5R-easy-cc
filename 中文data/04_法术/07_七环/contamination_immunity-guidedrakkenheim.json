@@ -1,0 +1,87 @@
+[
+  {
+    "ENG_name": "Contamination Immunity",
+    "name": "污染免疫",
+    "source": "GuideDrakkenheim",
+    "page": 192,
+    "level": 7,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一朵神秘百合混合价值250金币的纯净液体，每个目标一份，法术会消耗这些材料",
+        "cost": 25000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 24
+        }
+      }
+    ],
+    "entries": [
+      "在法术结束前，一个你触碰的愿意的生物对暗蚀伤害免疫且无法获得污染层数。",
+      "受影响的生物可以在污霭中正常休息。",
+      "该法术会在生物施展任何一个\"受污染Contaminated\"的法术的瞬间提前结束。",
+      {
+        "ENG_name": "Researching the Spell:",
+        "name": "深入调查法术：",
+        "type": "entries",
+        "entries": [
+          "一个能施放7环法术、知晓{@spell 中和场域|GuideDrakkenheim}法术并曾到访过妄质心脏的角色可以研究污染免疫。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "name": "弩矢匣",
+    "ENG_name": "Crossbow Bolt Case",
+    "source": "PHB",
+    "page": 151,
+    "type": "G",
+    "rarity": "none",
+    "weight": 1,
+    "value": 100,
+    "entries": [
+      "这只木匣能装最多二十支{@item 弩矢|PHB|弩矢}。"
+    ],
+    "basicRules": true,
+    "containerCapacity": {
+      "item": [
+        {
+          "弩矢|phb": 20
+        }
+      ]
+    },
+    "referenceSources": [
+      "VEoR",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "弩矢匣|XPHB"
+    ],
+    "srd": true
+  }
+]

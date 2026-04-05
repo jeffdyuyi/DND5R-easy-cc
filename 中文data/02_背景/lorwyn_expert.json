@@ -1,0 +1,139 @@
+[
+  {
+    "name": "洛温专家",
+    "ENG_name": "Lorwyn Expert",
+    "source": "LFL",
+    "edition": "one",
+    "ability": [
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "str",
+              "con",
+              "wis"
+            ],
+            "weights": [
+              2,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "str",
+              "con",
+              "wis"
+            ],
+            "weights": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      }
+    ],
+    "feats": [
+      {
+        "太阳之子|lfl": true
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "athletics": true,
+        "nature": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "cartographer's tools": true
+      }
+    ],
+    "startingEquipment": [
+      {
+        "a": [
+          "长棍|xphb",
+          "制图工具|xphb",
+          "背包|xphb",
+          "篮子|xphb",
+          {
+            "item": "羊皮纸|xphb",
+            "quantity": 4,
+            "displayName": "羊皮纸（4张）"
+          },
+          "绳索|xphb",
+          "旅行服装|xphb",
+          {
+            "value": 2900
+          }
+        ],
+        "b": [
+          {
+            "value": 5000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability Scores:",
+            "name": "属性值：",
+            "type": "item",
+            "entry": "力量，体质，感知"
+          },
+          {
+            "ENG_name": "Feat:",
+            "name": "专长：",
+            "type": "item",
+            "entry": "{@feat 太阳之子|LFL}"
+          },
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 运动|XPHB}和{@skill 自然|XPHB}"
+          },
+          {
+            "ENG_name": "Tool Proficiency:",
+            "name": "工具熟练项：",
+            "type": "item",
+            "entry": "{@item 制图工具|XPHB}"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "选择A或B：(A) {@item 长棍|XPHB}、{@item 制图工具|XPHB}、{@item 背包|XPHB}、{@item 篮子|XPHB}、{@item 羊皮纸|XPHB}（4张）、{@item 绳索|XPHB}、{@item 旅行服装|XPHB}，29金币；或(B) 50金币"
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "你来自洛温，一个永恒阳光的大地，或者你曾深入研究过这个地点。你将雄伟的生物艾尔杜视为太阳的活体化身，并且你热爱踏上异想天开的冒险。你紧紧守护你所爱的人，即使只是在情感上，因为你曾见过一些人冒险进入影沼或更远的地方，变成了他们自己的褪色版本。尽管如此，你依然英勇，并且总是渴望新的体验。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "backgrounds/LFL/Lorwyn Expert.webp"
+          },
+          "credit": "Aurore Folny",
+          "width": 1700,
+          "height": 1030
+        }
+      ]
+    },
+    "hasFluff": true,
+    "hasFluffImages": true
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Staff of Adornment",
+    "name": "饰品法杖",
+    "source": "XDMG",
+    "page": 306,
+    "type": "M|XPHB",
+    "rarity": "common",
+    "weight": 4,
+    "weaponCategory": "simple",
+    "property": [
+      "V|XPHB"
+    ],
+    "mastery": [
+      "失衡|XPHB"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "B",
+    "dmg2": "1d8",
+    "staff": true,
+    "entries": [
+      "持握这根法杖期间，如果你将一个重量不超过1磅的微型物件（例如一块水晶碎片、一颗鸡蛋、一块石子）放于法杖的尖端，这个物件将会在尖端旁1寸的位置漂浮着，直到该物件被移除或法杖不在你手里。这根法杖同一时间至多可以让三个这样的物件在尖端漂浮。持握此法杖期间，你可以让这些物件中的一个或多个缓慢地绕着法杖旋转或原地自转。"
+    ],
+    "lootTables": [
+      "奥秘 - 普通|XDMG",
+      "圣物 - 普通|XDMG"
+    ],
+    "translator": "不全书",
+    "valueReference": 100
+  }
+]

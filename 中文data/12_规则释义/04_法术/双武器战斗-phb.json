@@ -1,0 +1,25 @@
+﻿{
+    "ENG_name":  "Two-Weapon Fighting",
+    "name":  "双武器战斗",
+    "source":  "PHB",
+    "page":  195,
+    "srd":  true,
+    "basicRules":  true,
+    "reprintedAs":  [
+                        "双武器战斗|XPHB"
+                    ],
+    "time":  [
+                 {
+                     "number":  1,
+                     "unit":  "附赠动作"
+                 }
+             ],
+    "entries":  [
+                    "当你执行{@action 攻击}动作并用单手持用一把轻型近战武器攻击时，你可以用另一只手持用另外一把轻型近战武器，并用一个附赠动作来进行攻击。该附赠攻击的伤害不获得你的属性调整值加成，除非该调整值为负数。",
+                    "如果所持用武器带投掷属性，则你可以不用它发动近战攻击而改为投掷它。"
+                ],
+    "seeAlsoAction":  [
+                          "攻击"
+                      ],
+    "translator":  "不全书"
+}

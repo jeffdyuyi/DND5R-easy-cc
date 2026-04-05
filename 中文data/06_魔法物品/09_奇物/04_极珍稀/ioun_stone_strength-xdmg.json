@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Ioun Stone, Strength",
+    "name": "艾恩石, 力量",
+    "source": "XDMG",
+    "page": 273,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "ability": {
+      "str": 2
+    },
+    "hasRefs": true,
+    "entries": [
+      "{#itemEntry 艾恩石|XDMG}",
+      "在这颗淡蓝色长菱形艾恩石环绕在你头顶期间，你的力量属性增加2，最多增加至20。"
+    ],
+    "lootTables": [
+      "武备 - 极珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 40000,
+    "fluff": {},
+    "type": "W"
+  }
+]

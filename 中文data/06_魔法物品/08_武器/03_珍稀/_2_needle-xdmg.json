@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "+2 Needle",
+    "name": "+2 针",
+    "source": "XDMG",
+    "page": 228,
+    "srd52": true,
+    "edition": "one",
+    "type": "A|XPHB",
+    "rarity": "rare",
+    "weight": 0.02,
+    "value": 2,
+    "needleBlowgun": true,
+    "entries": [
+      "使用这件魔法弹药进行攻击和伤害判定时，你会获得{=bonusWeapon}的额外加成。一旦击中目标，弹药将不再具有魔法效果。"
+    ],
+    "namePrefix": "+2 ",
+    "basicRules2024": true,
+    "bonusWeapon": "+2",
+    "lootTables": [
+      "武备 - 珍稀|XDMG",
+      "器具 - 珍稀|XDMG"
+    ],
+    "_isVariant": true,
+    "valueReference": 2000
+  }
+]

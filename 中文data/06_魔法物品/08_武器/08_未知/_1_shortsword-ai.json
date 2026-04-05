@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "+1 Shortsword",
+    "name": "恶毒 +1 短剑",
+    "source": "AI",
+    "page": 149,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TWoO",
+      "DrDe-SD"
+    ],
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "unknown (magic)",
+    "weight": 2,
+    "value": 1000,
+    "weaponCategory": "martial",
+    "property": [
+      "F|XPHB",
+      "L|XPHB"
+    ],
+    "mastery": [
+      "侵扰|XPHB"
+    ],
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "sword": true,
+    "weapon": true,
+    "hasFluffImages": true,
+    "namePrefix": "恶毒 +1 ",
+    "bonusWeapon": "+1",
+    "entries": [
+      "使用这把武器进行攻击和伤害判定时，你有{=bonusWeapon}的加值。",
+      "当你使用这把魔法武器掷出20时，目标会额外受到7点{=dmgType}伤害。",
+      "{@note 注意：根据SRD，它是一个额外的{@damage 2d6} {=dmgType}伤害，尽管{@link 这是不正确的|https://rpg.stackexchange.com/a/174522/53884}。}"
+    ],
+    "_isVariant": true
+  }
+]

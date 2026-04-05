@@ -1,0 +1,179 @@
+{
+  "ENG_name": "Living Crucible",
+  "name": "活体熔炉",
+  "shortName": "活体熔炉",
+  "source": "GrimHollowPG24",
+  "className": "战士",
+  "classSource": "XPHB",
+  "page": 75,
+  "edition": "one",
+  "optionalfeatureProgression": [
+    {
+      "ENG_name": "Compound Option",
+      "name": "复合选项",
+      "featureType": [
+        "LC:CO"
+      ],
+      "progression": {
+        "3": 3,
+        "7": 5,
+        "10": 7,
+        "15": 9
+      }
+    }
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "Living Crucible",
+      "name": "活体熔炉",
+      "source": "GrimHollowPG24",
+      "page": 75,
+      "className": "战士",
+      "classSource": "XPHB",
+      "subclassShortName": "活体熔炉",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "entries": [
+        "{@i 用炼金术增强你的军事实力}",
+        "成为活体熔炉的战士发现了外部的力量来源。虽然大多数战士训练军用传统或研究战争艺术，但活体熔炉磨练他们的炼金术技艺以耐受对他人有毒的化合物。作为这种严酷身心预备的交换，这些战士能够暂时突破身体的自然限制。在他们的炼金化合物影响下，这些武者可以在黑暗中视物，提升速度，抵抗魔法攻击等等。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "化合物创造器|战士|XPHB|活体熔炉|GrimHollowPG24|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "炼金术学生|战士|XPHB|活体熔炉|GrimHollowPG24|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Compound Creator",
+      "name": "化合物创造器",
+      "source": "GrimHollowPG24",
+      "page": 75,
+      "className": "战士",
+      "classSource": "XPHB",
+      "subclassShortName": "活体熔炉",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你学会了创造对他人有毒但对你强化的炼金化合物。",
+        {
+          "ENG_name": "Compounds",
+          "name": "化合物",
+          "type": "entries",
+          "entries": [
+            "你从{@filter 复合选项|optionalfeatures|source=grimhollowpg24|特性 type=lc:co}下方的章节中选择学习三种化合物。当你达到战士7级、10级和15级时，你可以额外选择学习两种化合物。每次学习新化合物时，你还可以将一个已知的化合物替换为不同的化合物。"
+          ]
+        },
+        {
+          "ENG_name": "Creating",
+          "name": "创造",
+          "type": "entries",
+          "entries": [
+            "每当你完成一次{@variantrule 长休|XPHB}并持有{@item 炼金工具|XPHB}时，你可以使用该工具魔法般地制造任意数量的化合物。化合物会出现在一个小瓶中，当化合物被消耗或倒出时小瓶会消隐。若在你完成一次{@variantrule 长休|XPHB}时仍有化合物剩余，该化合物及其小瓶会消隐。"
+          ]
+        },
+        {
+          "ENG_name": "Consuming",
+          "name": "消耗",
+          "type": "entries",
+          "entries": [
+            "作为{@variantrule 附赠动作|XPHB}，你可以消耗一个化合物。你可以消耗最多一个加上你体质调整值（至少为一）的化合物数量。一旦达到此限制，你将无法从更多化合物中获得增益，直到完成一次{@variantrule 长休|XPHB}。"
+          ]
+        },
+        "你可以同时从多个化合物中受益，但消耗多瓶相同的化合物不会提供额外效应。",
+        "只有你能从你的化合物中获益。任何其他生物若摄入了化合物，必须成功通过一次体质豁免检定（DC 8加上你的智力调整值加上{@variantrule 熟练|XPHB|熟练加值}），否则将陷入{@condition 中毒|XPHB}状态1分钟。"
+      ]
+    },
+    {
+      "ENG_name": "Student of Alchemy",
+      "name": "炼金术学生",
+      "source": "GrimHollowPG24",
+      "page": 75,
+      "className": "战士",
+      "classSource": "XPHB",
+      "subclassShortName": "活体熔炉",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "toolProficiencies": [
+        {
+          "alchemist's supplies": true
+        }
+      ],
+      "header": 1,
+      "entries": [
+        "你长期的警惕之夜让你的感官对危险迹象变得敏锐，赋予你以下增益。",
+        "你获得{@item 炼金工具|XPHB}，并且你对其具有熟练。此外，你在使用{@item 炼金工具|XPHB}进行属性检定时，{@variantrule 熟练|XPHB|熟练加值}为双倍。"
+      ]
+    },
+    {
+      "ENG_name": "Living Cauldron",
+      "name": "活体大锅",
+      "source": "GrimHollowPG24",
+      "page": 75,
+      "className": "战士",
+      "classSource": "XPHB",
+      "subclassShortName": "活体熔炉",
+      "subclassSource": "GrimHollowPG24",
+      "level": 7,
+      "header": 2,
+      "entries": [
+        "你能安全消耗的化合物数量增加到三加你的体质调整值（至少为一）。",
+        "在战士等级18级时，你能安全消耗的化合物数量增加到五加你的体质调整值（至少为一）。"
+      ]
+    },
+    {
+      "ENG_name": "Rapid Consumption",
+      "name": "快速消耗",
+      "source": "GrimHollowPG24",
+      "page": 75,
+      "className": "战士",
+      "classSource": "XPHB",
+      "subclassShortName": "活体熔炉",
+      "subclassSource": "GrimHollowPG24",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "当你使用一个{@variantrule 附赠动作|XPHB}来饮用一种复合饮品时，你可以饮用第二种复合饮品。"
+      ]
+    },
+    {
+      "ENG_name": "Toxin Transmutation",
+      "name": "毒素变化",
+      "source": "GrimHollowPG24",
+      "page": 75,
+      "className": "战士",
+      "classSource": "XPHB",
+      "subclassShortName": "活体熔炉",
+      "subclassSource": "GrimHollowPG24",
+      "level": 15,
+      "resist": [
+        "毒素"
+      ],
+      "header": 2,
+      "entries": [
+        "你对毒素伤害具有{@variantrule 抗性|XPHB}。此外，作为一个{@variantrule 附赠动作|XPHB}，你可以结束自身的{@condition 中毒|XPHB}状态。",
+        "当你以这种方式结束自身的{@condition 中毒|XPHB}状态时，你可以选择获得等于你战士等级的{@variantrule 临时生命值|XPHB}。完成一次{@variantrule 临时生命值|XPHB}后，你将重新获得获得这些{@variantrule 长休|XPHB}的能力。"
+      ]
+    },
+    {
+      "ENG_name": "Living Catalyst",
+      "name": "活体因素",
+      "source": "GrimHollowPG24",
+      "page": 75,
+      "className": "战士",
+      "classSource": "XPHB",
+      "subclassShortName": "活体熔炉",
+      "subclassSource": "GrimHollowPG24",
+      "level": 18,
+      "header": 2,
+      "entries": [
+        "当你完成一次{@variantrule 长休|XPHB}时，你可以将一个已知的复合选项替换为另一个。"
+      ]
+    }
+  ],
+  "hasFluff": true,
+  "hasFluffImages": true
+}

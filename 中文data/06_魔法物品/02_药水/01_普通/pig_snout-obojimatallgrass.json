@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Pig Snout",
+    "name": "猪鼻子",
+    "source": "ObojimaTallGrass",
+    "page": 233,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Util"
+    ],
+    "entries": [
+      "饮用这粉彩药水后，会经历短暂不适的变形，饮用者会长出一个美丽、抽动的猪鼻子。接下来1小时内，你会变得非常喜欢松露，甚至可能达到好斗的程度，并且在依赖气味的感知（{@skill 察觉}）检定上具有优势。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 27|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Utility/pig-snout.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1497,
+          "height": 1497
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

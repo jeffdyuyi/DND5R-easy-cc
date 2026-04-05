@@ -1,0 +1,20 @@
+[
+  {
+    "ENG_name": "Green Chromatic Rose",
+    "name": "绿彩玫瑰",
+    "source": "WBtW",
+    "page": 208,
+    "resist": [
+      "毒素"
+    ],
+    "detail1": "释放绿色气体",
+    "rarity": "rare",
+    "wondrous": true,
+    "hasRefs": true,
+    "entries": [
+      "{#itemEntry 色彩玫瑰|WBtW}"
+    ],
+    "valueReference": 4000,
+    "type": "W"
+  }
+]

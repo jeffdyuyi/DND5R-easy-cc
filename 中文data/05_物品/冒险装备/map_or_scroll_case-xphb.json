@@ -1,0 +1,26 @@
+[
+  {
+    "name": "地图或卷轴匣",
+    "ENG_name": "Map or Scroll Case",
+    "source": "XPHB",
+    "page": 224,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 1,
+    "value": 100,
+    "entries": [
+      "一个{@item 地图或卷轴匣|XPHB}至多能存放10张纸张或5张羊皮纸。"
+    ],
+    "basicRules2024": true,
+    "containerCapacity": {
+      "item": [
+        {
+          "羊皮纸|xphb": 5,
+          "纸张|xphb": 10
+        }
+      ]
+    },
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

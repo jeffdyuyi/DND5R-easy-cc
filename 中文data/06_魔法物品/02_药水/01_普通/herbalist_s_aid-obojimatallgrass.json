@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Herbalist's Aid",
+    "name": "草药师的援助术",
+    "source": "ObojimaTallGrass",
+    "page": 232,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Util"
+    ],
+    "entries": [
+      "饮用这种备受追捧的药水会赋予你一种独特的感觉，有助于检测原料。在接下来的1小时内，你在寻找原料时进行的所有属性检定获得+3加值。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 19|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Utility/herbalists-aid.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1570,
+          "height": 1570
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

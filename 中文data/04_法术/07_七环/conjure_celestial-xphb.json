@@ -1,0 +1,100 @@
+[
+  {
+    "ENG_name": "Conjure Celestial",
+    "name": "咒唤圣光",
+    "source": "XPHB",
+    "page": 254,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 7,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 90
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你将来自上层位面的精魂咒唤，精魂表现为照耀以施法距离内一点为中心半径 10 尺、高 40 尺的{@variantrule 柱状 [效应区域]|XPHB|柱状}区域的光之立柱。对位于{@variantrule 柱状 [效应区域]|XPHB|柱状}区域内的你可见的生物，分别选择下列哪种光芒照耀于它。",
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Healing Light",
+            "name": "治愈之光",
+            "type": "item",
+            "entries": [
+              "目标恢复等于{@dice 4d12} + 你的施法属性调整值的{@variantrule 生命值|XPHB}。"
+            ]
+          },
+          {
+            "ENG_name": "Searing Light",
+            "name": "灼热之光",
+            "type": "item",
+            "entries": [
+              "目标进行一次敏捷豁免检定，豁免失败者将受到{@damage 6d12}光耀伤害，豁免成功则受到半数伤害。"
+            ]
+          }
+        ]
+      },
+      "直到法术结束为止，{@variantrule 明亮光照|XPHB}明亮光照充满{@variantrule 柱状 [效应区域]|XPHB|柱状}，并且当你在你的回合移动时，你可以令{@variantrule 柱状 [效应区域]|XPHB|柱状}也移动至多 30 尺。",
+      "每当{@variantrule 柱状 [效应区域]|XPHB|柱状}在移动中进入了一名你可见的生物区域内时、一名你可见的生物进入{@variantrule 柱状 [效应区域]|XPHB|柱状}或是在该区域结束其回合时，你都可以令该生物沐浴其中一种光芒。一名生物一回合只能被该法术影响一次。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "使用的法术位每比七环高一环，法术产生的治疗和造成的伤害就增加{@scaledamage 6d12|7-9|1d12}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "radiant"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "miscTags": [
+      "HL",
+      "SGT"
+    ],
+    "areaTags": [
+      "Y"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师"
+    ],
+    "display_school": "咒法系",
+    "display_savingThrow": [
+      "敏捷"
+    ],
+    "display_damageInflict": [
+      "光辉"
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "ENG_name": "Hat of Wizardry",
+    "name": "巫术帽",
+    "source": "XDMG",
+    "page": 267,
+    "type": "SCF|XPHB",
+    "rarity": "common",
+    "reqAttune": "由法师",
+    "reqAttuneTags": [
+      {
+        "class": "法师"
+      }
+    ],
+    "wondrous": true,
+    "focus": [
+      "法师"
+    ],
+    "entries": [
+      "这顶锥形帽上点缀着星月。你着装此帽期间，你获得下述增益。",
+      {
+        "ENG_name": "Spellcasting Focus",
+        "name": "法器",
+        "type": "entries",
+        "entries": [
+          "你可以将其作为你施展法师法术的{@variantrule 法器|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Unknown Spell",
+        "name": "未知法术",
+        "type": "entries",
+        "entries": [
+          "你可以用一个{@action 魔法|XPHB}动作尝试施展一道你并未已知的戏法。所选戏法必须位于法师法表中，并且其施法时间必须为动作。你进行一次{@dc 10}的智力（{@skill 奥秘|XPHB}）检定。检定成功，则你施展那道法术。检定失败，则你施法失败，用于施法的动作被浪费。无论检定成功与否，此词条一经使用，直到你完成一次{@variantrule 长休|XPHB}之前不能再次使用。"
+        ]
+      }
+    ],
+    "lootTables": [
+      "奥秘 - 普通|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 100,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Hat of Wizardry.webp"
+          },
+          "width": 382,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

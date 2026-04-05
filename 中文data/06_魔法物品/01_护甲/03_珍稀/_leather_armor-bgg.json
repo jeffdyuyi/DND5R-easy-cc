@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "西风Leather Armor",
+    "name": "西风皮甲",
+    "source": "BGG",
+    "page": 117,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "LA|XPHB",
+    "rarity": "rare",
+    "weight": 10,
+    "value": 1000,
+    "ac": 11,
+    "armor": true,
+    "hasFluffImages": true,
+    "namePrefix": "西风",
+    "reqAttune": true,
+    "entries": [
+      "这套精美的白色和银色盔甲在胸前刻有风符文。",
+      "穿戴这件盔甲时，由于轻柔的风之气流增强了你的移动，你在敏捷（{@skill 特技}）检定和敏捷豁免检定上有优势。",
+      {
+        "ENG_name": "Invoking the Rune",
+        "name": "激活符文",
+        "type": "entries",
+        "entries": [
+          "作为一个行动，你可以激发盔甲的符文来施放{@spell 风墙术}spell（豁免 {@dc 15}）。一旦符文被激发，它不能再次激发，直到下一个黎明。"
+        ]
+      }
+    ],
+    "attachedSpells": {
+      "daily": {
+        "1e": [
+          "风墙术"
+        ]
+      }
+    },
+    "_isVariant": true,
+    "valueReference": 4000
+  }
+]

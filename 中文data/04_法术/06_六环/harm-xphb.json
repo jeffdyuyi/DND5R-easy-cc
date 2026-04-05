@@ -1,0 +1,60 @@
+[
+  {
+    "ENG_name": "Harm",
+    "name": "重伤术",
+    "source": "XPHB",
+    "page": 283,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 6,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你对施法距离内一个你可见的生物降下恶毒致命的魔法。目标必须通过一次体质豁免，豁免失败将受到{@damage 14d6}点暗蚀伤害，并且它的{@variantrule 生命值|XPHB|生命值}上限会降低等同它所受暗蚀伤害数值点。豁免成功则受到半数伤害。此法术不能将目标的{@variantrule 生命值|XPHB|生命值}上限降至1以下。"
+    ],
+    "damageInflict": [
+      "necrotic"
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师"
+    ],
+    "display_school": "死灵系",
+    "display_savingThrow": [
+      "体质"
+    ],
+    "display_damageInflict": [
+      "死灵"
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "ENG_name": "Matalotok",
+    "name": "玛塔洛托克",
+    "source": "BGDIA",
+    "page": 224,
+    "baseItem": "战锤|PHB",
+    "type": "M",
+    "immune": [
+      "寒冷"
+    ],
+    "rarity": "legendary",
+    "reqAttune": true,
+    "weight": 2,
+    "weaponCategory": "martial",
+    "property": [
+      "V"
+    ],
+    "range": "20/60",
+    "dmg1": "1d8",
+    "dmgType": "B",
+    "dmg2": "1d10",
+    "entries": [
+      "冰霜之父玛塔洛托克是由霜巨人之神索列姆制造的一把古老的锤子。玛塔洛托克是恶魔领主{@creature 斯彻奇|BGDIA}的偏爱武器。这把锤子的触感寒冷刺骨，并被一些迷雾笼罩。",
+      "持握玛塔洛托克期间，你免疫于寒冷伤害。每当这把锤子对生物造成伤害时，锤子都会释放出一股 30 尺半径范围的强烈寒流。每个处于该区域内的生物都将受到 10({@damage 3d6}) 点寒冷伤害。"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 200000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/BGDIA/Matalotok.webp"
+          },
+          "width": 903,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

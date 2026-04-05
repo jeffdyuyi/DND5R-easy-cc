@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "Wildskin Armor",
+    "name": "荒野护甲",
+    "source": "GriffonsSaddlebag2",
+    "page": 190,
+    "baseItem": "兽皮甲|phb",
+    "type": "MA",
+    "tier": "主要",
+    "rarity": "uncommon",
+    "reqAttune": "由德鲁伊",
+    "reqAttuneTags": [
+      {
+        "class": "德鲁伊"
+      }
+    ],
+    "weight": 12,
+    "ac": 12,
+    "entries": [
+      "这套附魔兽皮甲会魔法般地贴合你的身体，并随着你的动作自然移动。",
+      "当你穿着这件护甲期间，你可以选择在使用你的荒野形态时强化你的新形态。当你这样做时，你变形后的AC变为14 + 你的敏捷调整值（至多2），除非新形态的AC已经更高。即使护甲被融入你的新形态，你也可以获得这一增益。此属性一经使用后，直到次日黎明前都无法再次使用。"
+    ],
+    "lootTables": [
+      "魔法物品表 F2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Wildskin-Armor.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

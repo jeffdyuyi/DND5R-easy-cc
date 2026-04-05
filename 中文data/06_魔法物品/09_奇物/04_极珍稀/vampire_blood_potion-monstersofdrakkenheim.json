@@ -1,0 +1,74 @@
+[
+  {
+    "ENG_name": "Vampire Blood Potion",
+    "name": "血族之血药水",
+    "source": "MonstersOfDrakkenheim",
+    "page": 394,
+    "type": "P|XPHB",
+    "rarity": "very rare",
+    "entries": [
+      "这瓶药水是一种猩红色冒泡的饮品，味道明显带有赤铜味。当你饮用这瓶药水时，你在接下来的1分钟内获得以下增益：",
+      {
+        "type": "list",
+        "items": [
+          "你在力量、敏捷和魅力的攻击检定、属性检定和豁免检定上获得{@variantrule 优势|XPHB}。",
+          "如果伤害将你降至0{@variantrule 生命值|XPHB}，你必须进行一次DC为5+所受伤害一半的体质豁免检定，除非该伤害是光耀伤害或来自{@variantrule 重击|XPHB}。若成功，你将改为降至1{@variantrule 生命值|XPHB|生命值}，且此药水的效应结束。",
+          "此药水的效应会提前结束，若你受到光耀伤害或进入阳光。"
+        ]
+      },
+      {
+        "ENG_name": "Crafting",
+        "name": "手作",
+        "type": "entries",
+        "entries": [
+          "制作血族之血药水需要一个极珍稀工坊和以下极珍稀成分：",
+          {
+            "type": "list",
+            "items": [
+              {
+                "ENG_name": "[Animus]",
+                "name": "[精魄]",
+                "type": "item",
+                "entries": [
+                  "亡灵精魄"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Dust]",
+                "name": "[粉尘]",
+                "type": "item",
+                "entries": [
+                  "任意吸血鬼的亡灵粉尘"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Fluid]",
+                "name": "[流体]",
+                "type": "item",
+                "entries": [
+                  "灵质"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Fluid]",
+                "name": "[流体]",
+                "type": "item",
+                "entries": [
+                  "吸血鬼的怪物鲜血"
+                ],
+                "nameDot": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "hasFluffImages": true
+  }
+]

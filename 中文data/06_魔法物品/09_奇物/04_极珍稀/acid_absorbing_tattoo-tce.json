@@ -1,0 +1,22 @@
+[
+  {
+    "ENG_name": "Acid Absorbing Tattoo",
+    "name": "强酸吸收刺青",
+    "source": "TCE",
+    "page": 119,
+    "resist": [
+      "强酸"
+    ],
+    "detail1": "绿",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "tattoo": true,
+    "hasRefs": true,
+    "entries": [
+      "{#itemEntry 吸收刺青|TCE}"
+    ],
+    "valueReference": 40000,
+    "type": "W"
+  }
+]

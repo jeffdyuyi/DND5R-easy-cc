@@ -1,0 +1,53 @@
+[
+  {
+    "ENG_name": "Wongo",
+    "name": "望戈",
+    "source": "ToA",
+    "page": 129,
+    "type": "Inhabitation",
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Gender:",
+            "name": "性别：",
+            "type": "item",
+            "entry": "男性"
+          },
+          {
+            "ENG_name": "Alignment:",
+            "name": "阵营：",
+            "type": "item",
+            "entry": "CE"
+          },
+          {
+            "ENG_name": "Personality:",
+            "name": "个性：",
+            "type": "item",
+            "entry": "暴力且疯狂"
+          },
+          {
+            "ENG_name": "Inherited flaw:",
+            "name": "继承的缺点：",
+            "type": "item",
+            "entry": "\"我做事从来不顾他人死活。\""
+          },
+          {
+            "ENG_name": "Enemy:",
+            "name": "敌人：",
+            "type": "item",
+            "entry": "莫阿"
+          },
+          {
+            "ENG_name": "Power:",
+            "name": "能力：",
+            "type": "item",
+            "entry": "宿主可以用动作对周围 60 英尺内你可以看见的一个生物发动一次心灵打击。目标必须进行一次 {@dc 16} 的感知豁免，豁免失败则陷入{@condition 震慑}，直至其下回合结束时。"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "ENG_name": "Crooked Ward",
+    "name": "歪曲结界",
+    "source": "CrookedMoon24",
+    "page": 127,
+    "level": 3,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一枚柳条编的五角星"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你触碰一处固定表面并标记一个令扭曲生物感到痛苦的符号。一个{@condition 隐形|XPHB}的30尺半径{@variantrule 球状 [效应区域]|XPHB|球状}从你触碰的点扩展而出。{@variantrule 球状 [效应区域]|XPHB|球状}内的每个异怪、精类、邪魔、怪兽或亡灵在属性检定和攻击检定中具有{@variantrule 劣势|XPHB}。当一个受影响的生物在一个回合内首次进入{@variantrule 球状 [效应区域]|XPHB|球状}或在该区域内开始其回合时，它必须成功通过一次感知豁免否则获得{@condition 恐慌|XPHB}状态直至其下一回合开始。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "升环施法。如果你使用四环（至多1小时）或五环（至多8小时）法术位施展此法术，你可以维持更长时间的{@status 专注|XPHB}。使用六环及更高环阶的法术位施展此法术时，此法术无需{@status 专注|XPHB}，并且持续时间变为24小时。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "savingThrow": [
+      "感知"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Spells/Crooked-Ward.webp"
+  }
+]

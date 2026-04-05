@@ -1,0 +1,35 @@
+[
+  {
+    "ENG_name": "Tasha's Creeping Keelboat",
+    "name": "塔莎的潜行龙骨船",
+    "source": "DitLCoT",
+    "page": 15,
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "bonusAc": "+1",
+    "entries": [
+      "这艘魔法载具是一艘宽10尺、长30尺的船。它有四条腿，可以在陆地上行走，也可以在水上航行。它的步行和游泳速度为20尺，但不能在水下航行。你乘船期间，船会根据你的口头指示移动，你选择的生物处于船上期间在AC上获得+1加值。",
+      "该船可以无阻碍地传送最多1000磅的重量。它可以承载最多两倍于此的重量，但如果载重超过正常容量，它将以半速移动。"
+    ],
+    "seeAlsoVehicle": [
+      "塔莎的潜行龙骨船|DitLCoT"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 40000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DitLCoT/Tashas Creeping Keelboat.webp"
+          },
+          "width": 1000,
+          "height": 832
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

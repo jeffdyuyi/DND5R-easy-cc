@@ -1,0 +1,84 @@
+[
+  {
+    "ENG_name": "Pratfall",
+    "name": "糗态百出",
+    "source": "BookOfEbonTides",
+    "page": 70,
+    "level": 1,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你让一小股厄运降临在一个生物身上，使其看起来滑稽可笑。你创造以下效应之一：",
+      {
+        "type": "list",
+        "items": [
+          "一小滩油腻的水洼出现在你的目标脚下，导致其失去平衡。目标必须成功通过一次敏捷豁免检定，否则在下一回合无法使用附赠动作，因为它需要重新站稳。",
+          "微型颗粒吹入目标的面部，导致其打喷嚏。目标必须成功通过一次体质豁免检定，否则在其下一回合的第一次攻击检定中处于劣势。",
+          "闪烁的灯光在你目标眼前短暂闪烁，导致其视觉困难。目标必须成功通过一次体质豁免检定，否则其被动{@skill 察觉}减半直到其下一个回合结束。",
+          "目标感受到一阵快速而轻微的拍打声在耳边响起，短暂地使其迷失方向。目标必须成功通过一次体质豁免检定以维持其{@status 专注}。",
+          "一股{@condition 隐形}的力场猛地拉扯目标的裤子，导致其衣物滑落。目标必须进行一次敏捷豁免检定。若豁免失败，目标在下一回合结束前使用双手武器进行下一次攻击检定时具有劣势，或因其用一只手整理衣物而失去盾牌对其AC的附赠动作加值。"
+        ]
+      },
+      "这些效应中只有一个能同时作用于单个生物。"
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    },
+    "conditionInflict": [
+      "隐形"
+    ],
+    "savingThrow": [
+      "体质",
+      "敏捷"
+    ],
+    "miscTags": [
+      "MAC"
+    ]
+  }
+]

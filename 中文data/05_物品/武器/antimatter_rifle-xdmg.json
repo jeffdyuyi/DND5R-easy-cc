@@ -1,0 +1,30 @@
+[
+  {
+    "name": "反物质步枪",
+    "ENG_name": "Antimatter Rifle",
+    "source": "XDMG",
+    "page": 73,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "none",
+    "weight": 10,
+    "valueRarity": "极珍稀",
+    "weaponCategory": "martial",
+    "property": [
+      "AF|XDMG",
+      "RLD|XDMG",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "削弱|XPHB"
+    ],
+    "dmg1": "6d8",
+    "dmgType": "N",
+    "range": "120/360",
+    "ammoType": "能量电池|XDMG",
+    "age": "未来",
+    "firearm": true,
+    "reload": 2,
+    "weapon": true
+  }
+]

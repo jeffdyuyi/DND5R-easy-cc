@@ -1,0 +1,61 @@
+[
+  {
+    "ENG_name": "Awaken",
+    "name": "启蒙术",
+    "source": "XPHB",
+    "page": 244,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 5,
+    "school": "T",
+    "time": [
+      {
+        "number": 8,
+        "unit": "小时"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "施放该法术会消耗一块价值1,000+GP的玛瑙，",
+        "cost": 100000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你利用施法的时间引导一块昂贵宝石中的魔法回路，然后触碰目标。该目标必须是一个{@filter 野兽|bestiary|type=beast|intelligence=[0;3]|miscellaneous=!swarm}或{@filter 植物|bestiary|type=plant|intelligence=[0;3]|miscellaneous=!swarm}，且必须是一个智力小于等于3的生物或是一个并非生物的自然植物。目标的智力会变为 10，且学会说一门你所掌握的语言。如果目标是一株自然植物，则它变为一个植物生物，并且获得使用枝、根、藤、蔓或类似部位移动的能力，和类似于人类的感官。DM 为启蒙植物决定属性数据，例子可参考《{@book 怪物图鉴|XMM}》中的{@creature 启蒙灌木|XMM}Awakened Shrub与{@creature 启蒙树木|XMM}。",
+      "被启蒙的目标在 30 日内处于{@condition 魅惑|XPHB}状态，或是直到你或你的盟友做出任何伤害它的举动。魅惑终止后，启蒙生物自行决定对你的态度。"
+    ],
+    "conditionInflict": [
+      "魅惑"
+    ],
+    "affectsCreatureType": [
+      "野兽",
+      "植物"
+    ],
+    "miscTags": [
+      "PRM"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "德鲁伊"
+    ],
+    "display_school": "变化系"
+  }
+]

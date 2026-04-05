@@ -1,0 +1,55 @@
+[
+  {
+    "ENG_name": "Foresight",
+    "name": "预见术",
+    "source": "XPHB",
+    "page": 276,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 9,
+    "school": "D",
+    "time": [
+      {
+        "number": 1,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一根蜂鸟羽毛"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 8
+        }
+      }
+    ],
+    "entries": [
+      "你触碰一名自愿生物，并授予其预见近未来事件的有限能力。法术持续时间内，该目标进行的所有{@variantrule D20 检定|XPHB|D20 检定}均具有{@variantrule 优势|XPHB}，而其他生物对其进行攻击检定时具有{@variantrule 劣势|XPHB}。此法术的效应会在你再次施展此法术时提前终止。"
+    ],
+    "miscTags": [
+      "ADV"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "德鲁伊",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "预言系"
+  }
+]

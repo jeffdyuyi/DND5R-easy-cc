@@ -1,0 +1,34 @@
+{
+  "ENG_name": "Soulknife",
+  "name": "魂刃",
+  "shortName": "魂刃",
+  "source": "TCE",
+  "className": "游荡者",
+  "classSource": "XPHB",
+  "_copy": {
+    "ENG_name": "Soulknife",
+    "name": "魂刃",
+    "source": "TCE",
+    "shortName": "魂刃",
+    "className": "游荡者",
+    "classSource": "PHB",
+    "_preserve": {
+      "page": true,
+      "otherSources": true,
+      "referenceSources": true,
+      "srd": true,
+      "basicRules": true,
+      "reprintedAs": true
+    }
+  },
+  "fluff": {
+    "_subclassFluff": {
+      "ENG_name": "Soulknife",
+      "name": "魂刃",
+      "source": "TCE",
+      "shortName": "魂刃",
+      "className": "游荡者",
+      "classSource": "PHB"
+    }
+  }
+}

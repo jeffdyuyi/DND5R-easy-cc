@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Medium Armor Master",
+    "name": "中甲大师",
+    "source": "PHB",
+    "page": 168,
+    "reprintedAs": [
+      "中甲大师|XPHB"
+    ],
+    "prerequisite": [
+      {
+        "proficiency": [
+          {
+            "armor": "medium"
+          }
+        ]
+      }
+    ],
+    "entries": [
+      "你修习过如何在着装中甲时移动，并获得下列增益：",
+      {
+        "type": "list",
+        "items": [
+          "着装中甲不再使你进行敏捷（{@skill 隐匿}）检定时具有劣势。",
+          "着装中甲时，若你的敏捷在16或以上，你的AC可以增加3点而非2点。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

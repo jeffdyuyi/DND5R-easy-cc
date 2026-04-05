@@ -1,0 +1,84 @@
+[
+  {
+    "ENG_name": "Blood Bolt",
+    "name": "血蚀箭",
+    "source": "CrookedMoon24",
+    "page": 125,
+    "level": 0,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 90
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你对施法距离内一个生物掷出一道扭曲的血矢。对目标进行一次远程法术攻击。命中时，目标受到{@damage 1d6}暗蚀伤害，并且你获得等于你{@variantrule 临时生命值|XPHB}的{@variantrule 熟练|XPHB|熟练加值}。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Cantrip Upgrade",
+        "name": "戏法强化",
+        "type": "entries",
+        "entries": [
+          "当你到达5级（{@dice 4d6}）、11级（{@dice 2d6}）和17级（{@dice 3d6}）时，伤害增加{@dice 1d6}。"
+        ]
+      }
+    ],
+    "scalingLevelDice": {
+      "label": "暗蚀伤害",
+      "scaling": {
+        "1": "1d6",
+        "5": "2d6",
+        "11": "3d6",
+        "17": "4d6"
+      }
+    },
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "暗蚀"
+    ],
+    "spellAttack": [
+      "R"
+    ],
+    "miscTags": [
+      "SCL",
+      "THP"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Spells/Blood-Bolt.webp"
+  }
+]

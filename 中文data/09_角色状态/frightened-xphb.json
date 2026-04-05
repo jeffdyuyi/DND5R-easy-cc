@@ -1,0 +1,35 @@
+[
+  {
+    "name": "恐慌",
+    "ENG_name": "Frightened",
+    "source": "XPHB",
+    "page": 367,
+    "entries": [
+      "恐慌状态期间，你将遭受以下这些效应。",
+      {
+        "type": "entries",
+        "entries": [
+          {
+            "ENG_name": "Ability Checks and Attacks Affected",
+            "name": "属性检定与攻击影响",
+            "type": "entries",
+            "entries": [
+              "只要恐惧源在你的视线范围内，你进行的属性检定与攻击检定就具有{@variantrule 劣势|XPHB}。"
+            ]
+          },
+          {
+            "ENG_name": "Can't Approach",
+            "name": "无法靠近",
+            "type": "entries",
+            "entries": [
+              "你无法自愿地向靠近恐惧源的方向移动。"
+            ]
+          }
+        ]
+      }
+    ],
+    "basicRules2024": true,
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

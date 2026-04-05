@@ -1,0 +1,85 @@
+[
+  {
+    "ENG_name": "Feline Chaos",
+    "name": "猫猫大混乱",
+    "source": "CthulhuTorchlight",
+    "page": 0,
+    "level": 5,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "每名目标必须成功通过一次敏捷豁免，否则将在持续时间内受到此法术影响。受影响的目标在其每个回合开始时受到{@damage 4d6}挥砍伤害，且其攻击和属性检定具有{@variantrule 劣势|XPHB}。若目标试图移动，其必须进行一次体质豁免，失败则陷入{@condition 倒地|XPHB}状态并再受到受惊猫咪的{@damage 2d6}挥砍伤害。受影响生物回合结束时，进行另一次敏捷豁免，成功则结束其身上的此法术效应。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "当你使用6环或更高法术位施展该法术时，受影响目标回合开始时受到的伤害就增加{@dice 2d6}，你使用的法术位每比五环高一环。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "damageInflict": [
+      "挥砍"
+    ],
+    "savingThrow": [
+      "体质",
+      "敏捷"
+    ]
+  }
+]

@@ -1,0 +1,221 @@
+{
+  "ENG_name": "Moon Domain",
+  "name": "月亮领域",
+  "shortName": "月亮",
+  "source": "TalDoreiCampaignSettingReborn",
+  "className": "牧师",
+  "classSource": "PHB",
+  "page": 169,
+  "edition": "classic",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "1": [
+          "妖火",
+          "无声幻影"
+        ],
+        "3": [
+          "隐形术",
+          "月华之光"
+        ],
+        "5": [
+          "催眠图纹",
+          "高等幻影"
+        ],
+        "7": [
+          "高等隐形术",
+          "幻景"
+        ],
+        "9": [
+          "托梦术",
+          "穿墙术"
+        ]
+      }
+    }
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "Moon Domain",
+      "name": "月亮领域",
+      "source": "TalDoreiCampaignSettingReborn",
+      "page": 169,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "月亮",
+      "subclassSource": "TalDoreiCampaignSettingReborn",
+      "level": 1,
+      "header": 1,
+      "entries": [
+        "自{@book 创始纪|TalDoreiCampaignSettingReborn|1|创始纪}以来，所有凡间生物都仰望天空，感受着{@book 卡萨和茹蒂斯|TalDoreiCampaignSettingReborn|1|卡萨和茹蒂斯}——艾桑椎亚的两轮月亮所携带的法力与神秘。据说{@deity 织月者|艾桑椎亚|TalDoreiCampaignSettingReborn}本尊会在卡萨的苍白光芒中指引她的信徒，为那些向月亮祈祷的人揭示隐匿通途并赐予梦启者托梦术。遥远而黑暗的茹蒂斯常被视为敬畏与忧虑的预兆，被认为是邪恶行为和坏运气的象征。",
+        "月亮领域的牧师们利用他们与月亮的神力联系来驾驭光亮与幽影，祈求好运或降下厄运，并根据自己的意愿揭示或隐藏真相。大多数月亮牧师崇拜{@deity 织月者|艾桑椎亚|TalDoreiCampaignSettingReborn|织月者}本人，但她的追随者如同天空中的星辰般多样。一些人寻求保护弱者并在世界上行善，而另一些人则肆无忌惮地干涉并为了自私的利益扭曲真相。其他月亮牧师不崇拜诸神而是崇拜月亮本身，特别是那些通过{@variantrule 玩家角色|MM|兽化}与月相周期有着天生联系的人。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "领域法术|牧师|PHB|月亮|TalDoreiCampaignSettingReborn|1"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "银月明光|牧师|PHB|月亮|TalDoreiCampaignSettingReborn|1"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Clarity of Catha",
+      "name": "银月明光",
+      "source": "TalDoreiCampaignSettingReborn",
+      "page": 170,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "月亮",
+      "subclassSource": "TalDoreiCampaignSettingReborn",
+      "level": 1,
+      "header": 2,
+      "entries": [
+        "在第1级选择该领域时，你学会了如何在你想守护之人的心智最危险的时候向其映射光亮，并用这光亮化作护盾保护他们。当你身边30尺内一个你可见的生物进行感知 {@quickref 豁免检定|PHB|2|1|豁免检定}时，你可以用你的反应令本次豁免获得{@quickref 优势与劣势|PHB|2|0|优势}。",
+        "你可以使用本特性的次数等同于你的熟练加值次。而你在完成一次{@quickref 休息|PHB|2|0|长休}后，你重获所有已消耗的使用次数。"
+      ]
+    },
+    {
+      "ENG_name": "Domain Spells",
+      "name": "领域法术",
+      "source": "TalDoreiCampaignSettingReborn",
+      "page": 170,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "月亮",
+      "subclassSource": "TalDoreiCampaignSettingReborn",
+      "level": 1,
+      "header": 2,
+      "entries": [
+        "你在月亮领域法术表格中的牧师等级获得领域法术。",
+        {
+          "type": "table",
+          "caption": "月亮领域法术",
+          "colLabels": [
+            "牧师等级",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "1st",
+              "{@spell 妖火}, {@spell 无声幻影}"
+            ],
+            [
+              "3rd",
+              "{@spell 隐形术}, {@spell 月华之光}"
+            ],
+            [
+              "5th",
+              "{@spell 催眠图纹}, {@spell 高等幻影}"
+            ],
+            [
+              "7th",
+              "{@spell 高等隐形术}, {@spell 幻景}"
+            ],
+            [
+              "9th",
+              "{@spell 托梦术}, {@spell 穿墙术}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Channel Divinity: Blessing of the Full Moon",
+      "name": "引导神力：满月祝福",
+      "source": "TalDoreiCampaignSettingReborn",
+      "page": 170,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "月亮",
+      "subclassSource": "TalDoreiCampaignSettingReborn",
+      "level": 2,
+      "header": 2,
+      "consumes": {
+        "ENG_name": "Channel Divinity",
+        "name": "引导神力"
+      },
+      "entries": [
+        "第2级起，你可以用引导神力特性为你的盟友注入野性之力。你可以用一个动作从以下祝福中选择一种灌输给你身边30尺内你选择的一个自愿生物：",
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "ENG_name": "Blessing of the Watchful Moon",
+              "name": "警觉之月的祝福",
+              "type": "item",
+              "entries": [
+                "在接下来的1小时内，被祝福过的生物的移动速度增加了10尺，并且在涉及使用嗅觉或追踪生物时所做的感知鉴定具有{@quickref 优势与劣势|PHB|2|0|优势}（{@skill 察觉}或{@skill 求生}）。"
+              ]
+            },
+            {
+              "ENG_name": "Blessing of the Blood-Drenched Moon",
+              "name": "血染之月的祝福",
+              "type": "item",
+              "entries": [
+                "在接下来的10分钟内，如果受祝福的生物发动攻击检定时，本次攻击检定将具有 {@quickref 优势与劣势|PHB|2|0|优势}，需要其目标周围5尺范围内有至少一名未{@condition 失能}的盟友。"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Channel Divinity: Mind of Two Moons",
+      "name": "引导神力：双月同心",
+      "source": "TalDoreiCampaignSettingReborn",
+      "page": 170,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "月亮",
+      "subclassSource": "TalDoreiCampaignSettingReborn",
+      "level": 6,
+      "header": 2,
+      "consumes": {
+        "ENG_name": "Channel Divinity",
+        "name": "引导神力"
+      },
+      "entries": [
+        "从6级开始，你可以使用你的引导神力来召唤双月同心。通过消耗一次引导神力的使用次数，你可以在已经专注于一个法术的情况下，再施放第二个需要{@status 专注}的法术，只要你同时专注于的两个法术都在你的月亮领域法术列表上。如果你需要进行一次体质{@quickref 豁免检定|PHB|2|1|豁免检定}来维持你对这两个法术的{@status 专注}，你将以{@quickref 优势与劣势|PHB|2|0|劣势}进行这次检定。如果失败，你会失去对这两个法术的{@status 专注}。"
+      ]
+    },
+    {
+      "ENG_name": "Empowered Cantrips",
+      "name": "强力戏法",
+      "source": "TalDoreiCampaignSettingReborn",
+      "page": 171,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "月亮",
+      "subclassSource": "TalDoreiCampaignSettingReborn",
+      "level": 8,
+      "header": 2,
+      "entries": [
+        "第8级起，你施展牧师戏法造成伤害时，可以再加上你的感知调整值（最小为1）。"
+      ]
+    },
+    {
+      "ENG_name": "Eclipse of Ill Omen",
+      "name": "月蚀恶兆",
+      "source": "TalDoreiCampaignSettingReborn",
+      "page": 171,
+      "className": "牧师",
+      "classSource": "PHB",
+      "subclassShortName": "月亮",
+      "subclassSource": "TalDoreiCampaignSettingReborn",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "17级起，你可以将血月茹蒂斯唤至你头顶的天空中，侵蚀其他的天光。哪怕在看不到天空的地方甚至其他位面，它的力量依旧能环绕着你。你可以使用一个附赠动作让你周围60尺的区域内显现出微红色的微光。除了微光光照的正常效果外，任何处在这片区域的生物进行的 {@quickref 豁免检定|PHB|2|1}具有{@quickref 优势与劣势|PHB|2|0|劣势}。当你创造这片月蚀区域时，你可以选择任意数量的生物不受它影响。",
+        "此月蚀效果在你专注（如同专注于一个法术）时持续最多1分钟。专注于此特性视为为你的{@subclassFeature 引导神力：双月同心|牧师|PHB|月亮|TalDoreiCampaignSettingReborn|6|TalDoreiCampaignSettingReborn|双月同心}特性目的而专注于一个月亮领域法术。",
+        "另外，每回合一次，当你对这个微光光照范围内的任何生物造成光耀伤害时，你可以诅咒其中一个被伤害的生物（不需要动作）。诅咒将一直持续到月蚀结束为止，期间。被这种方法诅咒的生物移动速度减半，且无法回复生命值。",
+        "一旦你使用了此特性，直到你完成一次{@quickref 休息|PHB|2|0|长休}前你都无法再次使用它。"
+      ]
+    }
+  ],
+  "hasFluffImages": true
+}

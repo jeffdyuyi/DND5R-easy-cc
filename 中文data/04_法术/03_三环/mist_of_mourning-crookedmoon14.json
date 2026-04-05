@@ -1,0 +1,84 @@
+[
+  {
+    "ENG_name": "Mist of Mourning",
+    "name": "悼亡迷雾",
+    "source": "CrookedMoon14",
+    "page": 130,
+    "reprintedAs": [
+      "悼亡迷雾|crookedmoon24"
+    ],
+    "level": 3,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一小瓶众神之泪"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你召唤一片稀薄的雾气，在射程内一点为圆心半径20尺的球状区域内吸取欢乐与活力。每个在雾气出现时处于其中，或在回合中第一次进入雾气，或在其内结束回合的生物，必须成功通过一次魅力豁免检定，否则将充满深沉的忧郁直到其下一回合结束。受影响的生物速度减半，攻击检定具有劣势，并且从所有伤害掷骰中减去{@dice 1d8}。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "savingThrow": [
+      "魅力"
+    ],
+    "miscTags": [
+      "SMN"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Spells/mist-of-mourning.webp"
+          },
+          "width": 1700,
+          "height": 1057,
+          "credit": "Rowan Holloway"
+        }
+      ]
+    },
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Spells/Mist-of-Mourning.webp"
+  }
+]

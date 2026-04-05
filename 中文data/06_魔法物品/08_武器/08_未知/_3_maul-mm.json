@@ -1,0 +1,37 @@
+[
+  {
+    "ENG_name": "+3 Maul",
+    "name": "卓尔 +3 巨锤",
+    "source": "MM",
+    "page": 126,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "HotB"
+    ],
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "unknown (magic)",
+    "weight": 10,
+    "value": 1000,
+    "weaponCategory": "martial",
+    "property": [
+      "H|XPHB",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "失衡|XPHB"
+    ],
+    "dmg1": "2d6",
+    "dmgType": "B",
+    "hammer": true,
+    "weapon": true,
+    "hasFluffImages": true,
+    "namePrefix": "卓尔 +3 ",
+    "bonusWeapon": "+3",
+    "entries": [
+      "使用这把武器进行攻击和伤害判定时，你有{=bonusWeapon}的加值。如果这把武器暴露在阳光下1小时或更长时间，它的附魔加值将永久失去。"
+    ],
+    "_isVariant": true
+  }
+]

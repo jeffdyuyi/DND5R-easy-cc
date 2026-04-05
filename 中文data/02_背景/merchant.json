@@ -1,0 +1,140 @@
+[
+  {
+    "name": "商人",
+    "ENG_name": "Merchant",
+    "source": "XPHB",
+    "edition": "one",
+    "page": 182,
+    "ability": [
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "con",
+              "int",
+              "cha"
+            ],
+            "weights": [
+              2,
+              1
+            ]
+          }
+        }
+      },
+      {
+        "choose": {
+          "weighted": {
+            "from": [
+              "con",
+              "int",
+              "cha"
+            ],
+            "weights": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      }
+    ],
+    "feats": [
+      {
+        "幸运|xphb": true
+      }
+    ],
+    "skillProficiencies": [
+      {
+        "animal handling": true,
+        "persuasion": true
+      }
+    ],
+    "toolProficiencies": [
+      {
+        "navigator's tools": true
+      }
+    ],
+    "startingEquipment": [
+      {
+        "A": [
+          {
+            "item": "领航工具|xphb"
+          },
+          {
+            "item": "小包|xphb",
+            "quantity": 2
+          },
+          {
+            "item": "旅行服装|xphb"
+          },
+          {
+            "value": 2200
+          }
+        ],
+        "B": [
+          {
+            "value": 5000
+          }
+        ]
+      }
+    ],
+    "entries": [
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Ability Scores:",
+            "name": "属性值：",
+            "type": "item",
+            "entry": "体质，智力，魅力"
+          },
+          {
+            "ENG_name": "Feat:",
+            "name": "专长：",
+            "type": "item",
+            "entry": "{@feat 幸运|XPHB}"
+          },
+          {
+            "ENG_name": "Skill Proficiencies:",
+            "name": "技能熟练项：",
+            "type": "item",
+            "entry": "{@skill 驯兽|XPHB}, {@skill 游说|XPHB}"
+          },
+          {
+            "ENG_name": "Tool Proficiency:",
+            "name": "工具熟练项：",
+            "type": "item",
+            "entry": "{@item 领航工具|XPHB}"
+          },
+          {
+            "ENG_name": "Equipment:",
+            "name": "装备：",
+            "type": "item",
+            "entry": "选择 A 或 B：(A) {@item 领航工具|XPHB}、{@item 小包|XPHB|2个小包}、{@item 旅行服装|XPHB}、22 GP；或 (B) 50 GP"
+          }
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "你曾作为一名学徒学习着商业的基础知识，你的师傅是一名商贩、商队的领队或是某位商铺的店主。你旅行八方，靠着买入和卖出工匠们所需的原材料和这些工匠的制品赚钱谋生。你可能曾在多地之间运输过不少货物（通过船、货车、商队之类的），又或是从旅行商人那里订货，然后在自己店里销售。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "backgrounds/XPHB/Merchant.webp"
+          },
+          "credit": "Kamila Szutenberg",
+          "width": 2513,
+          "height": 914
+        }
+      ]
+    },
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "translator": "不全书"
+  }
+]

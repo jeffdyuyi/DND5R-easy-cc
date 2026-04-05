@@ -1,0 +1,69 @@
+[
+  {
+    "ENG_name": "Wither and Bloom",
+    "name": "靡叶生华",
+    "source": "SCC",
+    "page": 38,
+    "level": 2,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "弯折成环形的枯萎藤蔓"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "选择范围里的一点，以该点为中心的 10尺半径球形区域里，你唤起死气与生机。该区域里每个由你选择的生物需进行一次体质豁免，失败时受到{@damage 2d6}暗蚀伤害，成功时伤害减半。区域里的非魔法植物都会枯萎。",
+      "此外，区域里一个你所选的生物能使用并投掷一枚未使用的生命骰。恢复投掷结果加上你的施法属性调整值点生命值。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用3环或更高的法术位释放该法术时，法术位每比2环高1环，法术多造成{@scaledamage 2d6|2-9|1d6}伤害，选择生物能投掷的生命骰数也多1个。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "necrotic"
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "miscTags": [
+      "HL"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊",
+      "术士",
+      "法师"
+    ],
+    "display_school": "死灵系",
+    "display_savingThrow": [
+      "体质"
+    ],
+    "display_damageInflict": [
+      "死灵"
+    ]
+  }
+]

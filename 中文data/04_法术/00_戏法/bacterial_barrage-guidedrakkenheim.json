@@ -1,0 +1,87 @@
+[
+  {
+    "ENG_name": "Bacterial Barrage",
+    "name": "细菌弹幕",
+    "source": "GuideDrakkenheim",
+    "page": 186,
+    "level": 0,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你以快速传播的感染术攻击范围内的一个生物，该感染术会利用现有的状态。对目标进行一次远程法术攻击，命中时感染术对目标造成{@damage 1d8}暗蚀伤害。如果目标处于{@condition 中毒}状态或患有疾病，则改为造成{@damage 1d12}暗蚀伤害。",
+      "该法术的伤害会在你达到5级（{@dice 2d8}或{@dice 2d12}）、11级（{@dice 3d8}或{@dice 3d12}）和17级（{@dice 4d8}或{@dice 4d12}）时各增加一个骰子。"
+    ],
+    "scalingLevelDice": [
+      {
+        "label": "暗蚀伤害",
+        "scaling": {
+          "1": "1d8",
+          "5": "2d8",
+          "11": "3d8",
+          "17": "4d8"
+        }
+      },
+      {
+        "label": "暗蚀伤害对中毒或染病的生物",
+        "scaling": {
+          "1": "1d12",
+          "5": "2d12",
+          "11": "3d12",
+          "17": "4d12"
+        }
+      }
+    ],
+    "damageInflict": [
+      "暗蚀"
+    ],
+    "conditionInflict": [
+      "中毒"
+    ],
+    "spellAttack": [
+      "R"
+    ],
+    "miscTags": [
+      "SCL"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    }
+  }
+]

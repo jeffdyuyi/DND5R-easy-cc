@@ -1,0 +1,44 @@
+[
+  {
+    "ENG_name": "Ring of Spell Storing",
+    "name": "储法戒指",
+    "source": "DMG",
+    "page": 192,
+    "srd": true,
+    "referenceSources": [
+      "TftYP-TFoF",
+      "CM",
+      "CoA"
+    ],
+    "reprintedAs": [
+      "储法戒指|XDMG"
+    ],
+    "type": "RG|DMG",
+    "tier": "主要",
+    "rarity": "rare",
+    "reqAttune": true,
+    "entries": [
+      "这枚戒指会储存对其施展的法术，将它们储存起来，直至同调的着装者使用。这枚戒指同时可以储存环阶总和最多为5的法术。被发现时，戒指中已储存了由DM选择的共{@dice 1d6 - 1}环阶的法术。",
+      "任何生物都可以在施展一个1环到5环法术时接触戒指以将该法术储存在戒指中。该法术不会立即生效，而是被储存在戒指中。如果戒指无法储存该法术，则它将被浪费而不产生任何效应。施展法术所使用的法术位环阶决定该法术在戒指中占用的空间。",
+      "佩戴这枚戒指期间，你可以施放其中储存的任何法术。该法术使用原施法者的法术位环阶、法术豁免DC、法术攻击加值和施法属性，但除这些之外，该法术仍视为由你施放。从戒指中施放的法术不再储存于其中，释放其原本占用的空间。"
+    ],
+    "lootTables": [
+      "魔法物品表G"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 4000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Ring of Spell Storing.webp"
+          },
+          "width": 315,
+          "height": 315
+        }
+      ]
+    }
+  }
+]

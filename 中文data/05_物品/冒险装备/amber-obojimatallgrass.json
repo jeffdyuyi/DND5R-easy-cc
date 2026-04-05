@@ -1,0 +1,51 @@
+[
+  {
+    "ENG_name": "Amber",
+    "name": "琥珀",
+    "source": "ObojimaTallGrass",
+    "page": 201,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 9|large}|SneakerProMedium}",
+            "{@font {@style 5|large}|SneakerProMedium}",
+            "{@font {@style 4|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "这块石化树液因其颜色和宝石般的光泽而备受珍视，常被用于珠宝制作。一些奥术珠宝商声称它具有特殊词条，尤其是当其中困有远古昆虫时。琥珀可以在发现石化木的岩石区域找到，并且已知会在某些海滩上被冲上岸。"
+    ],
+    "lootTables": [
+      "热水大地普通原料|ObojimaTallGrass",
+      "阿伯拉山普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/amber.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 1762,
+          "height": 1762
+        }
+      ]
+    }
+  }
+]

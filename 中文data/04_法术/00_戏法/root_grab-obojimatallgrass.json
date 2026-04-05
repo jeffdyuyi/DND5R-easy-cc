@@ -1,0 +1,61 @@
+[
+  {
+    "ENG_name": "Root Grab",
+    "name": "根须缚束",
+    "source": "ObojimaTallGrass",
+    "page": 189,
+    "level": 0,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "反应",
+        "condition": "当你对一个生物触发借机攻击时使用"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 10
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你使根须延伸并攫取触发借机攻击的生物，阻碍其移动。该生物的速度缩小10尺，直到你的下个回合开始。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Custom/Spells/Root%20Grab.webp"
+  }
+]

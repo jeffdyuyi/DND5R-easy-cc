@@ -1,0 +1,342 @@
+{
+  "ENG_name": "Eldritch Knight",
+  "name": "奥法骑士",
+  "shortName": "奥法骑士",
+  "source": "PHB",
+  "className": "战士",
+  "classSource": "PHB",
+  "page": 74,
+  "srd": true,
+  "reprintedAs": [
+    "奥法骑士|XPHB"
+  ],
+  "spellcastingAbility": "int",
+  "casterProgression": "1/3",
+  "cantripProgression": [
+    0,
+    0,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "spellsKnownProgression": [
+    0,
+    0,
+    3,
+    4,
+    4,
+    4,
+    5,
+    6,
+    6,
+    7,
+    8,
+    8,
+    9,
+    10,
+    10,
+    11,
+    11,
+    11,
+    12,
+    13
+  ],
+  "subclassTableGroups": [
+    {
+      "title": "每环法术位",
+      "subclasses": [
+        {
+          "ENG_name": "Eldritch Knight",
+          "name": "奥法骑士",
+          "source": "PHB"
+        }
+      ],
+      "colLabels": [
+        "1st",
+        "2nd",
+        "3rd",
+        "4th"
+      ],
+      "rowsSpellProgression": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          4,
+          2,
+          0,
+          0
+        ],
+        [
+          4,
+          2,
+          0,
+          0
+        ],
+        [
+          4,
+          2,
+          0,
+          0
+        ],
+        [
+          4,
+          3,
+          0,
+          0
+        ],
+        [
+          4,
+          3,
+          0,
+          0
+        ],
+        [
+          4,
+          3,
+          0,
+          0
+        ],
+        [
+          4,
+          3,
+          2,
+          0
+        ],
+        [
+          4,
+          3,
+          2,
+          0
+        ],
+        [
+          4,
+          3,
+          2,
+          0
+        ],
+        [
+          4,
+          3,
+          3,
+          0
+        ],
+        [
+          4,
+          3,
+          3,
+          0
+        ],
+        [
+          4,
+          3,
+          3,
+          0
+        ],
+        [
+          4,
+          3,
+          3,
+          1
+        ],
+        [
+          4,
+          3,
+          3,
+          1
+        ]
+      ]
+    }
+  ],
+  "subclassFeatures": [
+    "奥法骑士|战士|PHB|奥法骑士|PHB|3",
+    "战争魔法|战士|PHB|奥法骑士|PHB|7",
+    "奥法打击|战士|PHB|奥法骑士|PHB|10",
+    "奥能冲锋|战士|PHB|奥法骑士|PHB|15",
+    "精通战争魔法|战士|PHB|奥法骑士|PHB|18"
+  ],
+  "hasFluffImages": true,
+  "features": [
+    {
+      "ENG_name": "Spellcasting",
+      "name": "施法",
+      "source": "PHB",
+      "page": 75,
+      "srd": true,
+      "className": "战士",
+      "classSource": "PHB",
+      "subclassShortName": "奥法骑士",
+      "subclassSource": "PHB",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "当你3级选择此范型时，你学会了如何使用奥法和武技。施法规则见《玩家手册》第10章，法师法术列表见第11章。",
+        {
+          "ENG_name": "Cantrips",
+          "name": "戏法",
+          "type": "entries",
+          "entries": [
+            "你学会两个由你自选的法师戏法。10级时，你学会另一个自选法师戏法。"
+          ]
+        },
+        {
+          "ENG_name": "Spell Slots",
+          "name": "法术位",
+          "type": "entries",
+          "entries": [
+            "“奥法骑士施法表”显示了你可用于施展一环及以上法术的法术位数量。你在完成一次长休时恢复所有已消耗的法术位。"
+          ]
+        },
+        {
+          "ENG_name": "Spells Known of 1st-Level and Higher",
+          "name": "1环及以上的已知法术",
+          "type": "entries",
+          "entries": [
+            "你已知三个自选的一环法师法术。且这三个法术中的两个必须属于防护系或塑能系。",
+            "“奥法骑士施法表”中的已知法术一列显示了你在到达特定等级时能学会的新法师法术。每一个法术都必须属于防护系或塑能系，且能用你已有的法术位环阶施展。例如，当你到达7级时，你学会一个新的一环或二环法术。",
+            "你分别在第8、14、20级学会的法术可以由你自选法师法术。每当你提升战士等级时，你都可以将已知法术替换为另一个法师法术。新法术的环阶必须是你已有的法术位环阶，且除非你替换的是在第8、14、20级学会的法术，必须属于防护系或塑能系。"
+          ]
+        },
+        {
+          "ENG_name": "Spellcasting Ability",
+          "name": "施法能力",
+          "type": "entries",
+          "entries": [
+            "你施展法师法术的施法能力是智力。",
+            "法术豁免DC＝8＋你的熟练加值＋你的智力调整值",
+            "法术攻击加值＝你的熟练加值＋你的智力调整值"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Weapon Bond",
+      "name": "武器联结",
+      "source": "PHB",
+      "page": 75,
+      "srd": true,
+      "className": "战士",
+      "classSource": "PHB",
+      "subclassShortName": "奥法骑士",
+      "subclassSource": "PHB",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "3级起，你习得一种让你和你的武器建立魔法联结的仪式。你执行持续一小时的仪式（可在短休时进行）。整个仪式过程中武器必须在你的触及范围内。联结建立后，只要你不处于失能状态，使用联结武器时就不会被缴械。如果联结武器与你处于同一位面，则你可以用一个附赠动作使其立即传送到你手中。",
+        "你至多可以拥有两把建立联结的武器，但一次召唤只能召唤一把武器。如果你试图和第三把武器建立联结，则必须与已经联结的两把武器其中的一把取消联结。"
+      ]
+    },
+    {
+      "ENG_name": "War Magic",
+      "name": "战争魔法",
+      "source": "PHB",
+      "page": 75,
+      "srd": true,
+      "className": "战士",
+      "classSource": "PHB",
+      "subclassShortName": "奥法骑士",
+      "subclassSource": "PHB",
+      "level": 7,
+      "header": 2,
+      "entries": [
+        "第7级起，如果你在自己回合内施展戏法，你可以作为附赠动作进行一次武器攻击。"
+      ]
+    },
+    {
+      "ENG_name": "Eldritch Strike",
+      "name": "奥法打击",
+      "source": "PHB",
+      "page": 75,
+      "srd": true,
+      "className": "战士",
+      "classSource": "PHB",
+      "subclassShortName": "奥法骑士",
+      "subclassSource": "PHB",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "第10级起，当你使用武器命中的一个生物，直到你的下个回合结束前，该生物在对抗你法术所进行的下一次豁免检定中具有劣势。"
+      ]
+    },
+    {
+      "ENG_name": "Arcane Charge",
+      "name": "奥能冲锋",
+      "source": "PHB",
+      "page": 75,
+      "srd": true,
+      "className": "战士",
+      "classSource": "PHB",
+      "subclassShortName": "奥法骑士",
+      "subclassSource": "PHB",
+      "level": 15,
+      "header": 2,
+      "entries": [
+        "第15级起，当你使用动作如潮时，你可以在额外动作之前或之后传送至多30英尺远到一个你可见的未占据空间内。"
+      ]
+    },
+    {
+      "ENG_name": "Improved War Magic",
+      "name": "精通战争魔法",
+      "source": "PHB",
+      "page": 75,
+      "srd": true,
+      "className": "战士",
+      "classSource": "PHB",
+      "subclassShortName": "奥法骑士",
+      "subclassSource": "PHB",
+      "level": 18,
+      "header": 2,
+      "entries": [
+        "第18级起，如果你在自己回合内施展一环或以上环阶的法术，你可以作为附赠动作进行一次武器攻击。"
+      ]
+    }
+  ]
+}

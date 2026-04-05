@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Yappa Mask",
+    "name": "雅帕面具",
+    "source": "ObojimaTallGrass",
+    "page": 177,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "佩戴雅帕面具时，你的生物类型变为精魄。此外，你能够说和理解灵界语托鲁姆。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/yappa-mask.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 2758,
+          "height": 2758
+        }
+      ]
+    }
+  }
+]

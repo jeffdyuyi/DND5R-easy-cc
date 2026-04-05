@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "+2 Leather Armor",
+    "name": "+2 皮甲",
+    "source": "DMG",
+    "page": 152,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "LA|XPHB",
+    "rarity": "very rare",
+    "weight": 10,
+    "value": 1000,
+    "ac": 11,
+    "armor": true,
+    "hasFluffImages": true,
+    "namePrefix": "+2 ",
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "+2 护甲|XDMG"
+    ],
+    "tier": "主要",
+    "bonusAc": "+2",
+    "entries": [
+      "穿戴这件护甲时，你的AC有{=bonusAc}的加值。"
+    ],
+    "_isVariant": true,
+    "valueReference": 40000
+  }
+]

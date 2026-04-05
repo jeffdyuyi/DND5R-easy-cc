@@ -1,0 +1,53 @@
+[
+  {
+    "ENG_name": "Cloying Mists",
+    "name": "令人窒息的迷雾",
+    "source": "ABH",
+    "page": 9,
+    "category": "G",
+    "prerequisite": [
+      {
+        "level": 4
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        }
+      }
+    ],
+    "additionalSpells": [
+      {
+        "prepared": {
+          "_": [
+            "云雾术|xphb"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Arise, Fog",
+        "name": "雾起",
+        "type": "entries",
+        "entries": [
+          "你总是准备了{@spell 云雾术|XPHB}法术。你可以无需法术位施放它，并且你必须完成一次{@variantrule 长休|XPHB}才能再次以此方式施放它。你也可以使用你拥有的适当等级的法术位来施放它。你施放该法术的施法属性是由此专长提升的属性。"
+        ]
+      },
+      {
+        "ENG_name": "Grasping Mist",
+        "name": "缠绕迷雾",
+        "type": "entries",
+        "entries": [
+          "每当你施放{@spell 云雾术|XPHB}时，法术{@variantrule 球状 [效应区域]|XPHB|球状}内的非魔法火焰将被熄灭，且除你和你的盟友外的生物在法术{@variantrule 球状 [效应区域]|XPHB|球状}内的{@variantrule 速度|XPHB}将缩小5尺。"
+        ]
+      }
+    ]
+  }
+]

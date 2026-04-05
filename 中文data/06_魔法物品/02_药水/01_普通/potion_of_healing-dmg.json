@@ -1,0 +1,87 @@
+[
+  {
+    "ENG_name": "Potion of Healing",
+    "name": "治疗药水",
+    "source": "DMG",
+    "page": 187,
+    "srd": true,
+    "otherSources": [
+      {
+        "source": "PHB",
+        "page": 153
+      }
+    ],
+    "referenceSources": [
+      "LMoP",
+      "HotDQ",
+      "RoT",
+      "PotA",
+      "OotA",
+      "CoS",
+      "SKT",
+      "TftYP-TSC",
+      "TftYP-TFoF",
+      "TftYP-THSoT",
+      "TftYP-DiT",
+      "TftYP-AtG",
+      "TftYP-ToH",
+      "ToA",
+      "TTP",
+      "WDH",
+      "LLK",
+      "WDMM",
+      "GoS",
+      "OoW",
+      "DIP",
+      "SLW",
+      "SDW",
+      "DC",
+      "BGDIA",
+      "RMBRE",
+      "ToR",
+      "DD",
+      "US",
+      "MOT",
+      "IDRotF",
+      "CM",
+      "HoL",
+      "NRH-TCMC",
+      "NRH-AVitW",
+      "NRH-ASS",
+      "NRH-CoI",
+      "NRH-TLT",
+      "NRH-AWoL",
+      "NRH-AT",
+      "SCC-CK",
+      "SCC-TMM",
+      "CRCotN",
+      "JttRC",
+      "DoSI",
+      "SjA",
+      "DSotDQ",
+      "KftGV",
+      "PaBTSO",
+      "ToFW",
+      "LRDT",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "治疗药水|XDMG"
+    ],
+    "type": "P",
+    "tier": "次要",
+    "rarity": "common",
+    "weight": 0.5,
+    "value": 5000,
+    "entries": [
+      "饮用此药水后，你恢复{@dice 2d4 + 2}点生命值。药水的红色液体在摇晃时会闪烁微光。"
+    ],
+    "lootTables": [
+      "魔法物品表A"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "valueReference": 50
+  }
+]

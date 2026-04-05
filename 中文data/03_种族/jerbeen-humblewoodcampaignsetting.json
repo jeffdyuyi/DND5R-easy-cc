@@ -1,0 +1,146 @@
+{
+  "race": [
+    {
+      "ENG_name": "Jerbeen",
+      "name": "跳鼠族",
+      "source": "HumblewoodCampaignSetting",
+      "page": 27,
+      "size": [
+        "S"
+      ],
+      "speed": 30,
+      "ability": [
+        {
+          "dex": 2,
+          "cha": 1
+        }
+      ],
+      "age": {
+        "mature": 5,
+        "max": 40
+      },
+      "languageProficiencies": [
+        {
+          "other": true
+        }
+      ],
+      "entries": [
+        {
+          "ENG_name": "Age",
+          "name": "年龄",
+          "type": "entries",
+          "entries": [
+            "跳鼠族成长迅速，大约在5年左右达到成熟。它们是所有谦卑种族中寿命最短的，仅能活大约40年。"
+          ]
+        },
+        {
+          "ENG_name": "Alignment",
+          "name": "阵营",
+          "type": "entries",
+          "entries": [
+            "由于体型小且面临世界上的许多威胁，跳鼠族对他人的感受非常敏感，并且倾向于善良阵营。由于他们的合作本性，他们也更倾向于守序阵营。"
+          ]
+        },
+        {
+          "ENG_name": "Size",
+          "name": "体型",
+          "type": "entries",
+          "entries": [
+            "跳鼠族拥有难以置信的小而轻盈的身体，身高在2到3尺之间，体重在20到40磅之间。你的体型是小型。"
+          ]
+        },
+        {
+          "ENG_name": "Speed",
+          "name": "速度",
+          "type": "entries",
+          "entries": [
+            "你的基础步行速度是30尺。"
+          ]
+        },
+        {
+          "ENG_name": "Standing Leap",
+          "name": "立定跳远",
+          "type": "entries",
+          "entries": [
+            "你的基本立定跳远是30尺，你的基本立定跳高是15尺，无论是否助跑。"
+          ]
+        },
+        {
+          "ENG_name": "Nimbleness",
+          "name": "灵巧",
+          "type": "entries",
+          "entries": [
+            "你可以穿过任何体型比你大的生物所占据的空间。"
+          ]
+        },
+        {
+          "ENG_name": "Take Heart",
+          "name": "振作",
+          "type": "entries",
+          "entries": [
+            "只要你身处一个既非{@condition 恐慌}也非{@condition 失能}的盟友5尺范围内，且你们能互相看见和听见，你在力量豁免检定和对抗恐慌的豁免检定上具有优势。"
+          ]
+        },
+        {
+          "ENG_name": "Team Tactics",
+          "name": "团体战术",
+          "type": "entries",
+          "entries": [
+            "你可以将{@action 协助}动作作为附赠动作使用。"
+          ]
+        },
+        {
+          "ENG_name": "Languages",
+          "name": "语言",
+          "type": "entries",
+          "entries": [
+            "你能说、读、写鸟族语和跳鼠族语。"
+          ]
+        }
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "subraces": [],
+      "fluff": {
+        "entries": [
+          "{@font 虽小却勇敢|HP卑微抓痕}",
+          {
+            "type": "quote",
+            "entries": [
+              "\"我将夺回加斯帕里安群岛，将我的家人带回他们的家园\""
+            ],
+            "by": "皮科·皮安特，非凡的剑客"
+          },
+          "跳鼠族是体型小如老鼠的民族，拥有帮助他们保持平衡的长毛尾巴。与身体的其他部分相比，跳鼠族的腿既长又有力。在林地上，你可以在各种地方找到跳鼠族，他们通常在鸟族栖息地和谦卑人村庄内形成自己的社区。他们很少独自生活。一个跳鼠族的家中可以包含几代人，包括扩展家庭和堂兄弟姐妹们同住在一个屋檐下。跳鼠族对家庭有着强烈的意识，无论他们在哪里休息，都喜欢被好伙伴所环绕。",
+          {
+            "ENG_name": "Outsize Courage",
+            "name": "超越体型的勇气",
+            "entries": [
+              "跳鼠族是谦卑森林中最小的居民，几乎每一种他们遇到的生物都比他们高大。虽然他们行动敏捷，态度友好，但他们本身并不强壮、勇敢或强大。当他们与群体站在一起时，杰宾斯会感到鼓舞：他人的陪伴使他们感到安心，赋予他们直面最大威胁的勇气。他们擅长团队策略，相互帮助解决问题，这些问题如果单独面对则无法克服。"
+            ],
+            "type": "entries"
+          },
+          {
+            "ENG_name": "Community First",
+            "name": "集体优先",
+            "entries": [
+              "跳鼠族的群体倾向不仅仅是因为他们喜欢好的陪伴：跳鼠族是善良和体贴的生物，以他们的欢乐和魅力而闻名。由于体型小且不是特别强壮，他们拥有一种视角，使他们能够轻松地与他人产生共鸣，尽管并非所有跳鼠族都具有这种富有同情心的视角。有些跳鼠族通过变得孤立和害怕所有非跳鼠族来应对他们社区外部的危险。跳鼠族重视隐私，但真正的与朋友、家人或亲人隔离被认为是跳鼠族可能遭受的最糟糕的命运。"
+            ],
+            "type": "entries"
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/HumblewoodCampaignSetting/races/Jerbeen-Swashbuckler.webp"
+            },
+            "width": 631,
+            "height": 819
+          }
+        ]
+      }
+    }
+  ]
+}

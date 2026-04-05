@@ -1,0 +1,60 @@
+[
+  {
+    "ENG_name": "Flock of Familiars",
+    "name": "魔宠群",
+    "source": "LLK",
+    "page": 57,
+    "level": 2,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你召唤3只使用你所选择的动物精魂外貌的临时魔宠。每只魔宠所使用的规则与动物精魂外貌选项与{@spell 寻获魔宠}相同。本法术所召唤的所有魔宠都必须属于同一生物种类（天界生物，精类生物，邪魔；你的选择）。如果你已经以{@spell 寻获魔宠}或类似方式召唤一个魔宠，则你以本法术召唤的魔宠数量减少一个。",
+      "本法术召唤的魔宠可以与你进行心灵交流且当它们在你1英里范围内时可以与你分享它们的视觉或听觉感官。",
+      "当你施放施法距离为触及的法术时，本法术所召唤的其中一名魔宠可以如常传递法术。然而每回合你只能通过一只魔宠传递一次触及法术。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用3环或更高法术位施放本法术时，使用的法术位每比2环高一环，你就可以召唤一只额外的魔宠。"
+        ]
+      }
+    ],
+    "miscTags": [
+      "SMN"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "咒法系"
+  }
+]

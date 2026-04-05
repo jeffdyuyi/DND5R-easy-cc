@@ -1,0 +1,91 @@
+[
+  {
+    "name": "修补工具",
+    "ENG_name": "Tinker's Tools",
+    "source": "PHB",
+    "page": 154,
+    "type": "AT",
+    "rarity": "none",
+    "weight": 10,
+    "value": 5000,
+    "additionalEntries": [
+      "一套修补工具的设计旨在让你能够修复许多日常物品。虽然你无法用修补工具制造太多东西，但你可以缝补撕裂的衣服、磨利磨损的剑刃，以及修补破烂的链条甲。",
+      {
+        "ENG_name": "Components",
+        "name": "成分",
+        "type": "entries",
+        "entries": [
+          "修补工具包括各种手工具、线、针、磨刀石、碎布和皮革，以及一小罐胶水。"
+        ]
+      },
+      {
+        "ENG_name": "History",
+        "name": "历史",
+        "type": "entries",
+        "entries": [
+          "你可以确定物件的年份和来源，即使你只有原物件的几个碎片。"
+        ]
+      },
+      {
+        "ENG_name": "Investigation",
+        "name": "调查",
+        "type": "entries",
+        "entries": [
+          "当你检查一个受损物件时，你会获得它是如何受损以及受损时间长短的知识。"
+        ]
+      },
+      {
+        "ENG_name": "Repair",
+        "name": "修复",
+        "type": "entries",
+        "entries": [
+          "你可以每小时为一个受损物件修复10点生命值。对于任何物件，你需要能够获取修复它所需的原材料。对于金属物件，你需要能够获取足够使金属变软的明火。"
+        ]
+      },
+      {
+        "type": "table",
+        "caption": "修补工具",
+        "colLabels": [
+          "用途",
+          "DC"
+        ],
+        "colStyles": [
+          "col-10",
+          "col-2 text-center"
+        ],
+        "rows": [
+          [
+            "临时修复一个损坏的装置",
+            "10"
+          ],
+          [
+            "以一半时间修补一件物品",
+            "15"
+          ],
+          [
+            "利用废料制造临时物品",
+            "20"
+          ]
+        ]
+      }
+    ],
+    "additionalSources": [
+      {
+        "source": "XGE",
+        "page": 84
+      }
+    ],
+    "basicRules": true,
+    "referenceSources": [
+      "BGDIA",
+      "KftGV",
+      "PaBTSO",
+      "VEoR",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "修补工具|XPHB"
+    ],
+    "srd": true
+  }
+]

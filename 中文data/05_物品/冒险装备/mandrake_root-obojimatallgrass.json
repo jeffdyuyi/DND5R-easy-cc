@@ -1,0 +1,50 @@
+[
+  {
+    "ENG_name": "Mandrake Root",
+    "name": "曼德拉草根",
+    "source": "ObojimaTallGrass",
+    "page": 205,
+    "type": "Ingred",
+    "rarity": "common",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 8|large}|SneakerProMedium}",
+            "{@font {@style 5|large}|SneakerProMedium}",
+            "{@font {@style 2|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "这种坚韧的根茎难以处理，通常需要煮沸数小时才能药用。软化后，这种猩红的根可用于制作多种药膏和灵药。它常见于灌木和树木底部的阴凉处。"
+    ],
+    "lootTables": [
+      "阿伯拉山普通原料|ObojimaTallGrass"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/mandrake-root.webp"
+          },
+          "credit": "Alexander Cloos",
+          "width": 1163,
+          "height": 1163
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "ENG_name": "Bladesinging",
+  "name": "剑咏者",
+  "shortName": "剑咏者",
+  "source": "TCE",
+  "className": "法师",
+  "classSource": "XPHB",
+  "reprintedAs": [
+    "剑咏者|法师|XPHB|FRHoF"
+  ],
+  "_copy": {
+    "ENG_name": "Bladesinging",
+    "name": "剑咏者",
+    "source": "TCE",
+    "shortName": "剑咏者",
+    "className": "法师",
+    "classSource": "PHB",
+    "_preserve": {
+      "page": true,
+      "otherSources": true,
+      "referenceSources": true,
+      "srd": true,
+      "basicRules": true,
+      "reprintedAs": true
+    }
+  },
+  "subclassFeatures": [
+    "剑咏者|法师|XPHB|剑咏者|TCE|3",
+    "额外攻击|法师||剑咏者|TCE|6",
+    "守御之歌|法师||剑咏者|TCE|10",
+    "胜利之歌|法师||剑咏者|TCE|14"
+  ],
+  "fluff": {
+    "_subclassFluff": {
+      "ENG_name": "Bladesinging",
+      "name": "剑咏者",
+      "source": "TCE",
+      "shortName": "剑咏者",
+      "className": "法师",
+      "classSource": "PHB"
+    }
+  }
+}

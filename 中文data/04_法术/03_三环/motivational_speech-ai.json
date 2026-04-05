@@ -1,0 +1,69 @@
+[
+  {
+    "ENG_name": "Motivational Speech",
+    "name": "励志演讲",
+    "source": "AI",
+    "page": 77,
+    "level": 3,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "v": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      {
+        "type": "quote",
+        "entries": [
+          "我曾听过吉姆的一次励志演讲，那是我生命中最糟糕的90秒。欧敏到底看中他什么？"
+        ],
+        "by": "沃勒·邓格瑞斯"
+      },
+      "你向盟友、工作人员、或是无辜的旁观者发出劝诫，激励他们向往崇高的目标，不管到底有没有发生什么让他们兴奋的事情。选择施法距离内最多 5 个可以听见你的生物。在持续时间中，每个生物都可以得到 5 点临时生命值，并且在感知豁免中具有优势。如果一个受影响的生物被一次攻击击中，它将在下一个它所进行的攻击检定中具有优势。一旦一个受影响的生物失去了这个法术所提供的临时生命值，这个法术就对它结束了。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用四环或更高的法术位施放该法术时，使用的法术位每高一环，提供的临时生命值就增加 5 点。"
+        ]
+      }
+    ],
+    "miscTags": [
+      "ADV",
+      "SGT",
+      "THP"
+    ],
+    "areaTags": [
+      "MT"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "牧师"
+    ],
+    "display_school": "惑控系"
+  }
+]

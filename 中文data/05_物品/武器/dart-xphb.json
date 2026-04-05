@@ -1,0 +1,42 @@
+[
+  {
+    "name": "飞镖",
+    "ENG_name": "Dart",
+    "source": "XPHB",
+    "page": 215,
+    "edition": "one",
+    "type": "R|XPHB",
+    "rarity": "none",
+    "weight": 0.25,
+    "value": 5,
+    "weaponCategory": "simple",
+    "property": [
+      "F|XPHB",
+      "T|XPHB"
+    ],
+    "mastery": [
+      "侵扰|XPHB"
+    ],
+    "dmg1": "1d4",
+    "dmgType": "P",
+    "range": "20/60",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XPHB/Dart.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 322,
+          "height": 192
+        }
+      ]
+    },
+    "basicRules2024": true,
+    "hasFluffImages": true,
+    "srd52": true,
+    "weapon": true
+  }
+]

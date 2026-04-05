@@ -1,0 +1,17 @@
+{
+  "ENG_name": "Eldritch Mind",
+  "name": "魔能意志",
+  "source": "TCE",
+  "page": 71,
+  "reprintedAs": [
+    "魔能意志|XPHB"
+  ],
+  "isClassFeatureVariant": true,
+  "featureType": [
+    "EI"
+  ],
+  "entries": [
+    "你为保持法术的{@status 专注}所进行的体质豁免具有优势。"
+  ],
+  "translator": "不全书"
+}

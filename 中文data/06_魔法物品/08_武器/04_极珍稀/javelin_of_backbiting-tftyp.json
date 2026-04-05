@@ -1,0 +1,35 @@
+[
+  {
+    "ENG_name": "Javelin of Backbiting",
+    "name": "反噬标枪",
+    "source": "TftYP",
+    "page": 229,
+    "baseItem": "标枪|PHB",
+    "type": "M",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "curse": true,
+    "weight": 2,
+    "weaponCategory": "simple",
+    "property": [
+      "T"
+    ],
+    "range": "60/150",
+    "dmg1": "1d6",
+    "dmgType": "P",
+    "bonusWeapon": "+2",
+    "entries": [
+      "你用该魔法武器发动的攻击检定和伤害掷骰获得+2加值。当你投掷它时，它的常规和最大射程都增加30尺，且命中后增加一枚额外的伤害骰。投掷完成后，无论是否命中，它都会立即飞回你手中。",
+      {
+        "ENG_name": "Curse",
+        "name": "诅咒",
+        "type": "entries",
+        "entries": [
+          "这件武器被诅咒了，与其共鸣会将诅咒延续到你身上。除非使用{@spell 移除诅咒}或类似的魔法解除诅咒，否则你不愿意与这把武器分离，始终将其放在手边。此外，使用除这把武器之外的其他武器进行攻击掷骰时，你会处于不利状态。"
+        ]
+      },
+      "每当你使用该武器发动攻击检定骰出1时，它会突然弯曲或飞转攻击你的后背。进行一次具有优势的攻击检定，对抗你自身AC。若结果为命中，则你受到伤害，如同你用它捅了自己。"
+    ],
+    "valueReference": 40000
+  }
+]

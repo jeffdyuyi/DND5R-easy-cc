@@ -1,0 +1,37 @@
+[
+  {
+    "ENG_name": "Moon Card",
+    "name": "月亮卡",
+    "source": "BMT",
+    "page": 14,
+    "resist": [
+      "钝击",
+      "力场",
+      "穿刺",
+      "挥砍"
+    ],
+    "rarity": "legendary",
+    "wondrous": true,
+    "recharge": "拂晓",
+    "entries": [
+      "作为动作，你可以触摸这张卡牌并说出命令语，在随后的1分钟内变成一只似狼的双足生物。在此期间，你获得对钝击、穿刺和挥砍伤害的抗性，且当你用武器或徒手打击命中目标时，目标会额外受到{@damage 1d6}点力场伤害。这一属性一经使用，直到次日黎明之前无法再次使用。"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 200000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "decks/BMT/Deck of Many Things/11-moon.webp"
+          },
+          "credit": "Vallez Gax",
+          "width": 850,
+          "height": 1552
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

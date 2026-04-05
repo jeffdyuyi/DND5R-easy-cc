@@ -1,0 +1,243 @@
+{
+  "ENG_name": "Haunted Sorcery",
+  "name": "附魔邪术",
+  "shortName": "饱受困扰",
+  "source": "GrimHollowPG24",
+  "className": "术士",
+  "classSource": "XPHB",
+  "page": 95,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "3": [
+          "灾祸术|XPHB",
+          "颤栗之触|XPHB",
+          "隐形术|XPHB",
+          "识破隐形|XPHB",
+          "隐形仆役|XPHB"
+        ],
+        "5": [
+          "飞行术|XPHB",
+          "死者交谈|XPHB"
+        ],
+        "7": [
+          "防死结界|XPHB",
+          "高等隐形术|XPHB"
+        ],
+        "9": [
+          "区区死亡|GrimHollowPG24",
+          "心灵遥控|XPHB"
+        ]
+      },
+      "known": {
+        "3": {
+          "daily": {
+            "1e": [
+              "寻获魔宠|XPHB"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "subclassSpells": [
+    "灾祸术|XPHB",
+    "颤栗之触|XPHB",
+    "隐形术|XPHB",
+    "识破隐形|XPHB",
+    "隐形仆役|XPHB",
+    "飞行术|XPHB",
+    "死者交谈|XPHB",
+    "防死结界|XPHB",
+    "高等隐形术|XPHB",
+    "区区死亡|GrimHollowPG24",
+    "心灵遥控|XPHB",
+    "寻获魔宠|XPHB"
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "Haunted Sorcery",
+      "name": "附魔邪术",
+      "source": "GrimHollowPG24",
+      "page": 95,
+      "className": "术士",
+      "classSource": "XPHB",
+      "subclassShortName": "饱受困扰",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "entries": [
+        "{@i 与死亡通神}",
+        "与其他术士不同，你的出生环境寻常，没有从古怪祖先那里继承奥术血统。相反，你在一次濒临死亡的体验中幸存后获得了术士能力。自那以后，你对危险有了超自然的感知，并有一个无法或不愿离开你的幽体同伴。一些被称为'饱受困扰'的术士（与你同源的术士）与他们的鬼魅建立了友好的人际关系，而另一些则发现他们的灵体间谍同伴是个坚韧的妨碍。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "闹鬼法术|术士|XPHB|饱受困扰|GrimHollowPG24|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "第六感|术士|XPHB|饱受困扰|GrimHollowPG24|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "鬼魅同伴|术士|XPHB|饱受困扰|GrimHollowPG24|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Haunted Spells",
+      "name": "闹鬼法术",
+      "source": "GrimHollowPG24",
+      "page": 95,
+      "className": "术士",
+      "classSource": "XPHB",
+      "subclassShortName": "饱受困扰",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "当你达到闹鬼法术表格中指定的术士等级时，你此后将始终准备所列法术。",
+        {
+          "type": "table",
+          "caption": "闹鬼法术",
+          "colLabels": [
+            "术士等级",
+            "法术"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "3",
+              "{@spell 灾祸术|XPHB}, {@spell 颤栗之触|XPHB}, {@spell 隐形术|XPHB}, {@spell 识破隐形|XPHB}, {@spell 隐形仆役|XPHB}"
+            ],
+            [
+              "5",
+              "{@spell 飞行术|XPHB}, {@spell 死者交谈|XPHB}"
+            ],
+            [
+              "7",
+              "{@spell 防死结界|XPHB}, {@spell 高等隐形术|XPHB}"
+            ],
+            [
+              "9",
+              "{@spell 区区死亡|GrimHollowPG24}, {@spell 心灵遥控|XPHB}"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Phantom Companion",
+      "name": "鬼魅同伴",
+      "source": "GrimHollowPG24",
+      "page": 95,
+      "className": "术士",
+      "classSource": "XPHB",
+      "subclassShortName": "饱受困扰",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "你习得法术{@spell 寻获魔宠|XPHB}且能以一个{@action 魔法|XPHB}动作施展它，且无需消耗法术位。",
+        "该魔宠呈现为一只{@creature 恶灵|XMM}的形态，但它属于亡灵而非天界生物、妖精或邪魔。以一个{@action 魔法|XPHB}动作，你可以命令你的鬼魅同伴获得{@condition 隐形|XPHB}状态，直到它发动攻击或你通过它施放法术为止。处于{@condition 隐形|XPHB}状态时，它不会留下任何通行的物理证据，只能通过魔法追踪。它所持有的任何装备或物件仍保持可见。",
+        "此外，当你执行{@action 攻击|XPHB}动作时，你可以放弃自己的一次攻击，让你的魔宠使用其{@variantrule 反应|XPHB}进行吸取生命攻击。"
+      ]
+    },
+    {
+      "ENG_name": "Sixth Sense",
+      "name": "第六感",
+      "source": "GrimHollowPG24",
+      "page": 95,
+      "className": "术士",
+      "classSource": "XPHB",
+      "subclassShortName": "饱受困扰",
+      "subclassSource": "GrimHollowPG24",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "当你掷{@variantrule 先攻|XPHB}时，你可以将你的魅力调整值添加到掷骰中。"
+      ]
+    },
+    {
+      "ENG_name": "Deathly Pallor",
+      "name": "致命苍白",
+      "source": "GrimHollowPG24",
+      "page": 96,
+      "className": "术士",
+      "classSource": "XPHB",
+      "subclassShortName": "饱受困扰",
+      "subclassSource": "GrimHollowPG24",
+      "level": 6,
+      "resist": [
+        "暗蚀"
+      ],
+      "header": 2,
+      "entries": [
+        "你对暗蚀伤害具有{@variantrule 抗性|XPHB}，并且当你施放一个造成伤害的术士法术时，可以选择造成暗蚀伤害或其正常伤害类型。"
+      ]
+    },
+    {
+      "ENG_name": "Strength of Spirit",
+      "name": "精魄之力",
+      "source": "GrimHollowPG24",
+      "page": 95,
+      "className": "术士",
+      "classSource": "XPHB",
+      "subclassShortName": "饱受困扰",
+      "subclassSource": "GrimHollowPG24",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "你与鬼魅同伴的牵挂使其获得强化。你获得以下增益：",
+        {
+          "type": "list",
+          "items": [
+            "你的魔宠的{@variantrule 生命值|XPHB|生命值}上限增加相当于你的术士等级的四倍。",
+            "你可以如同身处魔宠的空间一般施法。",
+            "当你使用动作施法时，你可以用一个{@variantrule 附赠动作|XPHB}命令你的鬼魅同伴使用其吸取生命攻击，并消耗它的{@variantrule 反应|XPHB}。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Phantom Possession",
+      "name": "鬼魅附身",
+      "source": "GrimHollowPG24",
+      "page": 96,
+      "className": "术士",
+      "classSource": "XPHB",
+      "subclassShortName": "饱受困扰",
+      "subclassSource": "GrimHollowPG24",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "作为一个{@action 魔法|XPHB}动作，你可以指挥你的鬼魅同伴附身于5尺内你选择的一个生物。目标需要进行一次对抗你法术豁免DC的魅力豁免检定。若豁免失败，你的鬼魅同伴将进入目标的身体1分钟。若豁免成功，目标抵抗了附身的努力，并且你的魔宠在24小时内无法再次附身该目标。",
+        "一旦鬼魅同伴附身于一个生物的身体，它就会控制该生物。魔宠的{@variantrule 生命值|XPHB}、{@variantrule 生命值骰|XPHB}、力量、敏捷、体质、{@variantrule 速度|XPHB}和感官将被该生物的属性取代。鬼魅同伴的其他游戏数据保持不变。",
+        "当目标被附身时，只要你和你的鬼魅同伴在100尺范围内，你们之间就存在心灵感应链接。除非你处于{@condition 失能|XPHB}状态，否则你可以使用这个心灵感应链接向你的鬼魅同伴发出命令（无需动作）。你的鬼魅同伴会在其回合中尽力服从命令。如果它完成了一个命令且没有收到你的进一步指示，鬼魅同伴会按照自己的意愿行动和移动，专注于保护自己。",
+        "你可以命令目标执行一个{@variantrule 反应|XPHB}，但必须使用你自己的{@variantrule 反应|XPHB}来这样做。",
+        "每当目标受到伤害时，它会重复豁免，成功时结束自身的附身，并且你的鬼魅同伴会在最近的未占据空间重新出现。",
+        "一旦你使用此特性，则直至完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}，你都无法再次使用。"
+      ]
+    },
+    {
+      "ENG_name": "Become Death",
+      "name": "成为死亡",
+      "source": "GrimHollowPG24",
+      "page": 96,
+      "className": "术士",
+      "classSource": "XPHB",
+      "subclassShortName": "饱受困扰",
+      "subclassSource": "GrimHollowPG24",
+      "level": 18,
+      "header": 2,
+      "entries": [
+        "当接近死亡时，你可以将自己的物理形态转化为灵体形态。当你被缩小到0{@variantrule 生命值|XPHB}但未被直接杀死时，你可以改为降至1{@variantrule 生命值|XPHB|生命值}并获得等于你最大{@variantrule 临时生命值|XPHB}一半的{@variantrule 生命值|XPHB|生命值}。在你的每个回合开始时，你失去10{@variantrule 临时生命值|XPHB}，你选择的30尺内的生物受到10点暗蚀伤害。当你拥有此特性赋予的{@variantrule 临时生命值|XPHB}时，你对所有伤害具有{@variantrule 抗性|XPHB}，拥有30尺的{@variantrule 飞行速度|XPHB}，可以{@variantrule 悬浮|XPHB}，并且可以穿过被占据的空间如同它们是{@variantrule 困难地形|XPHB}。如果你在这样的空间结束回合，你将被传送到你最后所在的未占据空间。",
+        "此特性一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。"
+      ]
+    }
+  ],
+  "hasFluff": true,
+  "hasFluffImages": true
+}

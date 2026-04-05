@@ -1,0 +1,44 @@
+[
+  {
+    "ENG_name": "Royal Blade of Amphibios",
+    "name": "皇家两栖之刃",
+    "source": "GriffonsSaddlebag2",
+    "page": 152,
+    "baseItem": "刺剑|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "weight": 2,
+    "weaponCategory": "军用",
+    "property": [
+      "F"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "bonusWeapon": "+2",
+    "recharge": "拂晓",
+    "rechargeAmount": 3,
+    "charges": 3,
+    "entries": [
+      "这把精工锻造的宝剑剑身饰有玫瑰金雕琢的青蛙与睡莲纹饰。持握此剑期间：你可在任何液体表面站立及移动，并视其为固体表面；你可一次性屏息至多30分钟；你获得30尺游泳速度。此外，任何具有水陆两栖特质的生物均能理解你的语言，但你无法理解它们的语言。",
+      "你使用这把魔法武器进行的攻击检定和伤害掷骰获得 +2 加值。此外，此剑具有3充能，且在每日黎明时恢复所有已消耗的充能。当你持握此武器执行{@action 攻击}动作时，可选择消耗其1充能，将剑刃转化为一条用于鞭笞的，形似蛙舌银色伪足。直至你的回合结束前，此武器攻击的触及范围增加10尺，且伤害类型变为挥砍而非穿刺；若命中，目标需进行一次DC 16的力量豁免检定，失败则被直线拉近你至多10尺。"
+    ],
+    "lootTables": [
+      "魔法物品表 H1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Royal-Blade-of-Amphibios.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

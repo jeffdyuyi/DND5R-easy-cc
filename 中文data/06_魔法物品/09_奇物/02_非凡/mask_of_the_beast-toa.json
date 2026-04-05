@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "Mask of the Beast",
+    "name": "野兽面具",
+    "source": "ToA",
+    "page": 207,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "weight": 1,
+    "recharge": "拂晓",
+    "rechargeAmount": 3,
+    "charges": 3,
+    "entries": [
+      "这副木制面具被雕刻成野兽般的脸孔，拥有3发充能。带着面具时，你可以用一个动作消耗1发充能，使用面具施放{@spell 化兽为友}。该面具在黎明时恢复所有被使用过的充能次数。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "化兽为友"
+        ]
+      }
+    },
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/ToA/Mask of the Beast.webp"
+          },
+          "width": 827,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

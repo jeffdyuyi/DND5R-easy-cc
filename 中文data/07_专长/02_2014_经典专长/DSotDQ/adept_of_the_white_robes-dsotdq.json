@@ -1,0 +1,66 @@
+[
+  {
+    "ENG_name": "Adept of the White Robes",
+    "name": "白袍入道",
+    "source": "DSotDQ",
+    "page": 32,
+    "prerequisite": [
+      {
+        "level": 4,
+        "feat": [
+          "高等术法学徒|DSotDQ|高等术法学徒 (索林那瑞)"
+        ]
+      }
+    ],
+    "additionalSpells": [
+      {
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "innate": {
+          "_": {
+            "daily": {
+              "1e": [
+                {
+                  "choose": "level=2|school=A;D"
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "entries": [
+      "你选择让白月索林那瑞影响你的魔法，并且你要用魔法使世界变得更美好的誓言使你得到了白袍法师会Order of the White Robes的认可，你获得下列增益：",
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Protective Magic",
+            "name": "护身魔法",
+            "type": "item",
+            "entries": [
+              "你习得一个你选择的二环法术。该{@filter 2环法术|spells|level=2|school=A;D}必须来自防护或预言学派。你可以不消耗法术位地施放本专长的二环法术，但必须完成一次长休才能再次以此方式施法。你也可以用符合环阶的法术位来施放该法术。该法术的施法属性为你先前在{@feat 高等术法学徒|DSotDQ}专长中选择的属性。"
+            ]
+          },
+          {
+            "ENG_name": "Protective Ward",
+            "name": "防护结界",
+            "type": "item",
+            "entries": [
+              "当你或者一个你可见的距你30尺内的生物受到伤害时，你可以用你的反应来消耗一个法术位，在该目标周边织起防护性的魔法。投掷数量等同于消耗的法术位环阶的d6，并将该目标受到的伤害减少等同于那些骰子骰出的总值+你的施法属性调整值的数值。"
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {}
+  }
+]

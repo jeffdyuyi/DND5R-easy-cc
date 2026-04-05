@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Morningstar",
+    "name": "苦痛麻痹钉头锤",
+    "source": "CoA",
+    "page": 271,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "M|XPHB",
+    "rarity": "very rare",
+    "weight": 4,
+    "value": 1500,
+    "weaponCategory": "martial",
+    "mastery": [
+      "削弱|XPHB"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "mace": true,
+    "weapon": true,
+    "hasFluffImages": true,
+    "namePrefix": "苦痛麻痹",
+    "reqAttune": true,
+    "bonusWeapon": "+3",
+    "entries": [
+      "使用这把魔法武器进行攻击和伤害骰时，你有{=bonusWeapon}的加值。当这件武器将一个生物减少到0生命值时，生物不会死亡。相反，地狱符文会出现，仿佛刻在他们的肉体上，他们会被治愈到1生命值。他们现在处于{@condition 麻痹}状态，直到通过{@spell 次等复原术}法术或类似的魔法移除该状态。当状态被移除时，符文会消失。在他们处于{@condition 麻痹}状态的每个回合开始时，生物遭受巨大痛苦并获得一层{@condition 力竭}。"
+    ],
+    "_isVariant": true,
+    "valueReference": 40000
+  }
+]

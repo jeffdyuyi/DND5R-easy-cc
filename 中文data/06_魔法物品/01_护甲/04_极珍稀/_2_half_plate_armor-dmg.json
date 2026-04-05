@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "+2 Half Plate Armor",
+    "name": "+2 半身板甲",
+    "source": "DMG",
+    "page": 152,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "MA|XPHB",
+    "rarity": "very rare",
+    "weight": 40,
+    "value": 75000,
+    "ac": 15,
+    "armor": true,
+    "stealth": true,
+    "hasFluffImages": true,
+    "namePrefix": "+2 ",
+    "srd": true,
+    "basicRules": true,
+    "reprintedAs": [
+      "+2 护甲|XDMG"
+    ],
+    "tier": "主要",
+    "bonusAc": "+2",
+    "entries": [
+      "穿戴这件护甲时，你的AC有{=bonusAc}的加值。"
+    ],
+    "_isVariant": true,
+    "valueReference": 40000
+  }
+]

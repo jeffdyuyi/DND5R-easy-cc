@@ -1,0 +1,110 @@
+[
+  {
+    "ENG_name": "Ring of Shooting Stars",
+    "name": "流星戒指",
+    "source": "XDMG",
+    "page": 294,
+    "srd52": true,
+    "basicRules2024": true,
+    "type": "RG|XDMG",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6}",
+    "charges": 6,
+    "entries": [
+      "你可以从戒指中施展{@spell 舞光术|XPHB}或{@spell 光亮术|XPHB}。",
+      "这枚戒指具有6充能，并在每日黎明时重获{@dice 1d6}已消耗的充能。你可以消耗充能以使用以下词条。",
+      {
+        "ENG_name": "Faerie Fire",
+        "name": "妖火",
+        "type": "entries",
+        "entries": [
+          "你可以消耗1充能以从戒指中施展{@spell 妖火|XPHB} 。"
+        ]
+      },
+      {
+        "ENG_name": "Lightning Spheres",
+        "name": "球状闪电",
+        "type": "entries",
+        "entries": [
+          "你可以消耗2充能，以一个{@action 魔法|XPHB}动作创造至多四个3尺直径的闪电球体。",
+          "每个球体都出现于120尺内你可见的未占据空间中。只要你为它们维持{@status 专注|XPHB}，球体就能持续存在至多1分钟。每个球体都会散发出半径30尺的{@variantrule 微光光照|XPHB}。",
+          "以一个{@variantrule 附赠动作|XPHB}，你可以移动每个球体至多30尺，但球体和你的距离不得超过120尺。球体初次进入一个除你以外的，未处于{@variantrule 掩护|XPHB|全身掩护}后的生物5尺内时，球体对那个生物放出闪电并消失。该生物进行一次{@dc 15}的敏捷豁免。豁免失败时，生物受到基于你创造出的球体数量的闪电伤害，如下表所示。豁免成功时，生物受到的伤害减半。",
+          {
+            "type": "table",
+            "colStyles": [
+              "col-2 text-center",
+              "col-10"
+            ],
+            "colLabels": [
+              "球体数量",
+              "闪电伤害"
+            ],
+            "rows": [
+              [
+                "1",
+                "{@damage 4d12}"
+              ],
+              [
+                "2",
+                "{@damage 5d4}"
+              ],
+              [
+                "3",
+                "{@damage 2d6}"
+              ],
+              [
+                "4",
+                "{@damage 2d4}"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Shooting Stars",
+        "name": "流星",
+        "type": "entries",
+        "entries": [
+          "以一个{@action 魔法|XPHB}动作 ，你可以消耗1至3充能。每一发你消耗的充能都会变为一粒发光尘埃，从戒指处向着你60尺内的一点发射。以该点为源点，15尺{@variantrule 立方 [效应区域]|XPHB|立方}内的所有生物将沐浴在火花之中，并进行一次{@dc 15}的敏捷豁免，失败则受到{@damage 5d4}点光耀伤害，成功则伤害减半。"
+        ]
+      }
+    ],
+    "light": [
+      {
+        "dim": 30
+      }
+    ],
+    "attachedSpells": {
+      "will": [
+        "舞光术|xphb",
+        "光亮术|xphb"
+      ],
+      "charges": {
+        "1": [
+          "妖火|xphb"
+        ]
+      }
+    },
+    "lootTables": [
+      "奥秘 - 极珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 40000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Ring of Shooting Stars.webp"
+          },
+          "width": 997,
+          "height": 1000
+        }
+      ]
+    }
+  }
+]

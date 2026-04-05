@@ -1,0 +1,34 @@
+[
+  {
+    "ENG_name": "魔咒（1环）Breastplate",
+    "name": "魔咒（1环）胸甲",
+    "source": "XDMG",
+    "page": 258,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-TFV",
+      "HotB"
+    ],
+    "edition": "one",
+    "type": "MA|XPHB",
+    "rarity": "uncommon",
+    "weight": 20,
+    "value": 40000,
+    "ac": 14,
+    "armor": true,
+    "hasFluffImages": true,
+    "namePrefix": "魔咒（1环）",
+    "reqAttune": true,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6}",
+    "charges": 6,
+    "entries": [
+      "这件盔甲中附有一个1环法术。该法术在盔甲制作时确定，必须属于 {@filter 防护或幻术|spells|school=A;I|level=1} 魔法学派。该盔甲有6次充能，每天黎明时恢复 {@dice 1d6} 已消耗的充能次数。穿戴盔甲时，你可以消耗1次充能来施放其法术。",
+      "该法术的DC为13，其攻击加值为{@hit 5}。"
+    ],
+    "spellScrollLevel": 1,
+    "_isVariant": true,
+    "valueReference": 400
+  }
+]

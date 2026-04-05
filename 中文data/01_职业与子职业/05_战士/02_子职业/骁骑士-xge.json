@@ -1,0 +1,128 @@
+{
+  "ENG_name": "Cavalier",
+  "name": "骁骑士",
+  "shortName": "骁骑士",
+  "source": "XGE",
+  "className": "战士",
+  "classSource": "PHB",
+  "page": 30,
+  "subclassFeatures": [
+    "骁骑士|战士|PHB|骁骑士|XGE|3",
+    "不移印记|战士|PHB|骁骑士|XGE|7",
+    "护卫机动|战士|PHB|骁骑士|XGE|10",
+    "急攻猛进|战士|PHB|骁骑士|XGE|15",
+    "警戒卫士|战士|PHB|骁骑士|XGE|18"
+  ],
+  "hasFluffImages": true,
+  "features": [
+    {
+      "ENG_name": "Bonus Proficiency",
+      "name": "附赠熟练项",
+      "source": "XGE",
+      "page": 30,
+      "className": "战士",
+      "classSource": "PHB",
+      "subclassShortName": "骁骑士",
+      "subclassSource": "XGE",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "当你3级选择此范型时，你从下列项中选择并获得一个技能熟练项：{@skill 畜养}、{@skill 历史}、{@skill 洞悉}、{@skill 游说}、或{@skill 存活}。或者作为代替，你可以改为习得一门自选语言。"
+      ]
+    },
+    {
+      "ENG_name": "Born to the Saddle",
+      "name": "天生骑手",
+      "source": "XGE",
+      "page": 30,
+      "className": "战士",
+      "classSource": "PHB",
+      "subclassShortName": "骁骑士",
+      "subclassSource": "XGE",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "3级起，你的骑士生涯能让你轻松地在鞍座上平稳。你在为防止坠马而进行的任何豁免检定中具有优势。如果你坠马并坠落了不超过10英尺，如果你此时并未{@condition 失能}，则你着陆时保持站立。最后，你上下坐骑仅需花费5英尺移动力，而非总移动力的一半。"
+      ]
+    },
+    {
+      "ENG_name": "Unwavering Mark",
+      "name": "不移印记",
+      "source": "XGE",
+      "page": 30,
+      "className": "战士",
+      "classSource": "PHB",
+      "subclassShortName": "骁骑士",
+      "subclassSource": "XGE",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "3级起，你可以以此威慑你的对手，保护你的盟友，并将自己视为战场核心。当你通过近战武器攻击命中一个生物后，你可以印记该生物直到你的下个回合结束。这一印记会随着你陷入{@condition 失能}、死亡、或某人将该生物印记后提前结束。",
+        "当你5英尺范围内的受印记生物攻击非你目标时，由于你分担了它的注意力，它在这次攻击检定上具有劣势。",
+        "此外，如果你印记的生物在它的回合里命中了非你的生物并造成了伤害，你可以用一个附赠动作，在他紧邻的那个回合里，发动一次对抗他的近战武器攻击。你在这次攻击检定上具有优势，且如果你命中了，你在这次伤害检定中增加等同于你战士等级一半的额外力场伤害。",
+        "无论你印记了多少生物，你都能发动该特性的这一特别攻击，但该次数不能超过你的力量调整值次。当你完成长休后，你将重获所有已消耗的使用次数。"
+      ]
+    },
+    {
+      "ENG_name": "Warding Maneuver",
+      "name": "护卫机动",
+      "source": "XGE",
+      "page": 30,
+      "className": "战士",
+      "classSource": "PHB",
+      "subclassShortName": "骁骑士",
+      "subclassSource": "XGE",
+      "level": 7,
+      "header": 2,
+      "entries": [
+        "7级起，你学会了如何在战斗中阻止那些对你或你盟友危险的进攻。当你或一个你5英尺范围内你可见的生物被一次攻击命中的时候，你可以掷一枚{@dice d8}，并将其结果加到受击目标的AC上。如果这次攻击还是命中了，受击目标将获得对该次伤害的抗性。",
+        "你能发动该特性的次数等同于你的力量调整值（最少一次）。当你完成长休后，你将重获所有已消耗的使用次数。"
+      ]
+    },
+    {
+      "ENG_name": "Hold the Line",
+      "name": "捍卫阵地",
+      "source": "XGE",
+      "page": 30,
+      "className": "战士",
+      "classSource": "PHB",
+      "subclassShortName": "骁骑士",
+      "subclassSource": "XGE",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "10级起，你是战场掌控的宗师。当某个生物在你触及范围内移动时，即使他使用了{@action 撤离}，依然会引发你的借机攻击。如果你用借机攻击命中了该生物，则直到该回合结束，它的速度降为0。"
+      ]
+    },
+    {
+      "ENG_name": "Ferocious Charger",
+      "name": "急攻猛进",
+      "source": "XGE",
+      "page": 30,
+      "className": "战士",
+      "classSource": "PHB",
+      "subclassShortName": "骁骑士",
+      "subclassSource": "XGE",
+      "level": 15,
+      "header": 2,
+      "entries": [
+        "15级起，你可以在冲锋时挫败对手。如果你向一个生物沿直线移动了至少10英尺并在同个回合用近战攻击命中了它，且你在此之后对它发动连击，该生物必须通过一次力量豁免（{@dc 8+prof+str|DC 8＋你的熟练加值＋你的力量调整值}）。如果豁免失败，该生物将陷入{@condition 倒地}。每回合你仅能发动此特性一次。"
+      ]
+    },
+    {
+      "ENG_name": "Vigilant Defender",
+      "name": "警戒卫士",
+      "source": "XGE",
+      "page": 30,
+      "className": "战士",
+      "classSource": "PHB",
+      "subclassShortName": "骁骑士",
+      "subclassSource": "XGE",
+      "level": 18,
+      "header": 2,
+      "entries": [
+        "18级起，你对他人的攻击做出了及时且有效的应对。在一场战斗中，除你自己的回合外，你在每个生物的回合中都各获得一个反应。每一反应仅能用于发动一次借机攻击，且你每回合仅能使用一个反应。"
+      ]
+    }
+  ]
+}

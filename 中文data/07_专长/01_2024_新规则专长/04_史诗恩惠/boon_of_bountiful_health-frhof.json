@@ -1,0 +1,49 @@
+[
+  {
+    "ENG_name": "Boon of Bountiful Health",
+    "name": "生机勃发之恩惠",
+    "source": "FRHoF",
+    "page": 42,
+    "category": "EB",
+    "prerequisite": [
+      {
+        "level": 19
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "max": 30
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Augmented Health",
+        "name": "超健康",
+        "type": "entries",
+        "entries": [
+          "当你获得{@variantrule 临时生命值|XPHB}时，该{@variantrule 临时生命值|XPHB}数值增加5。"
+        ]
+      },
+      {
+        "ENG_name": "Superior Recuperation",
+        "name": "超恢复",
+        "type": "entries",
+        "entries": [
+          "当你消耗一枚或更多{@variantrule 生命值骰|XPHB}来恢复{@variantrule 生命值|XPHB}时，你能够以每枚骰子可能掷出的最高值替代其骰值。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

@@ -1,0 +1,21 @@
+[
+  {
+    "name": "长杆(10尺)",
+    "ENG_name": "Pole (10-foot)",
+    "source": "PHB",
+    "page": 150,
+    "type": "G",
+    "rarity": "none",
+    "weight": 7,
+    "value": 5,
+    "basicRules": true,
+    "referenceSources": [
+      "TTP"
+    ],
+    "reprintedAs": [
+      "长杆|XPHB"
+    ],
+    "srd": true,
+    "translator": "不全书"
+  }
+]

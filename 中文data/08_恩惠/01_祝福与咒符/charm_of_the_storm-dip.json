@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Charm of the Storm",
+    "name": "风暴护咒",
+    "source": "DIP",
+    "page": 41,
+    "type": "Charm",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "limited": {
+              "3": [
+                "闪电束"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "entries": [
+      "你被风暴的能量所充盈，眼中闪烁着微小的火花。你可以使用一个动作施放{@spell 闪电束}法术（3环版本）。这个护咒会在你使用三次后消失。"
+    ]
+  }
+]

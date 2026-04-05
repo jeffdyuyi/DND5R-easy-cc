@@ -1,0 +1,23 @@
+[
+  {
+    "ENG_name": "Mystery Key",
+    "name": "谜之钥",
+    "source": "XGE",
+    "page": 138,
+    "referenceSources": [
+      "DIP"
+    ],
+    "reprintedAs": [
+      "谜之钥|XDMG"
+    ],
+    "tier": "次要",
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "这把钥匙的末端添有一个问号样式的装饰。这把钥匙有{@chance 5}的几率解开任何一个其插入的锁。一旦这把钥匙成功解锁了什么东西，它就会消失。"
+    ],
+    "translator": "不全书",
+    "valueReference": 100,
+    "type": "W"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "name": "伊库瓦短矛",
+    "ENG_name": "Yklwa",
+    "source": "ToA",
+    "page": 32,
+    "type": "M",
+    "rarity": "none",
+    "weight": 3,
+    "value": 100,
+    "weaponCategory": "simple",
+    "property": [
+      "T"
+    ],
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "range": "10/30",
+    "entries": [
+      "伊克瓦（发音为YICK-ul-wah）是一种简单的近战武器，是楚尔坦战士的传统武器。伊克瓦由一根3尺长的木柄和一把长达18英寸的钢制或石制刀片组成。尽管它具有投掷武器的特性，但伊克瓦并不适合投掷。"
+    ],
+    "weapon": true
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "ENG_name": "Amulet of the Planes",
+    "name": "位面护符",
+    "source": "DMG",
+    "page": 150,
+    "srd": true,
+    "referenceSources": [
+      "KftGV",
+      "ToFW",
+      "CoA"
+    ],
+    "reprintedAs": [
+      "位面护符|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "weight": 1,
+    "entries": [
+      "佩戴此护符期间，你可以用一个动作来点名一处你熟悉的另一存在位面地点，然后进行一次{@dc 15}的智力检定。如果检定通过，则你施展出法术{@spell 位面转移} 。如果检定失败，你将和15尺内的每个生物与物件一齐被传送到某个随机地点。骰一次{@dice d100}。如果骰值为1~60，则你们被传送到你点名位面中的随机地点。如果骰值为61~100，则你们被随机传送到一个存在位面。"
+    ],
+    "attachedSpells": [
+      "位面转移"
+    ],
+    "lootTables": [
+      "魔法物品表H"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 40000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/DMG/Amulet of the Planes.webp"
+          },
+          "width": 637,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

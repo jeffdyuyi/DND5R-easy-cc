@@ -1,0 +1,46 @@
+[
+  {
+    "ENG_name": "Hour and Minute",
+    "name": "时与分",
+    "source": "GriffonsSaddlebag2",
+    "page": 107,
+    "baseItem": "匕首|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "bonusWeapon": "+1",
+    "bonusAc": "+1",
+    "entries": [
+      "这两件魔法武器被一股强大的力量相互绑定。尽管是两件武器，你只需要与其中一件同调就能使用它们的词条。当持握其中一件武器期间，你可以使用一个动作来确定另一件配对武器的距离和方向，只要你们在同一位面上。",
+      "如果你与其中一件武器同调，而另一个生物与另一件武器同调，你们双方都会意识到对方的同调，且必须进行一次智力（{@skill 奥秘}）检定对抗另一个生物的智力（{@skill 奥秘}）检定。赢得对抗的生物保持与物品的同调，且在接下来的24小时内，其同调不会被试图与另一件武器同调的其他生物中断。输掉对抗的生物将失去与武器的同调。",
+      "当你双手各持武器时，你获得以下增益：",
+      {
+        "type": "list",
+        "items": [
+          "你使用这些魔法武器进行的攻击检定和伤害掷骰获得+1加值。",
+          "你对时间的感知略微加快：使你能躲避原本会命中你的攻击。你的AC获得+1加值。",
+          "当你使用小时（{@item 匕首|PHB}）攻击生物且掷出20时，该生物会受到{@spell 缓慢术|PHB}法术影响，持续到你的下一回合结束。",
+          "当你使用Minute（{@item 短剑|PHB}）攻击且掷出20时，你获得{@spell 加速术|PHB}法术影响，持续到你的下一回合开始。当效应结束时，你不会受到该法术正常结束时的负面效应。",
+          "此外，你可以使用一个动作将两件武器放在地上。这样做时，它们会魔法般的指向北方，然后旋转对齐并显示当前时间。当它们这样做时，12点整永远朝向北方。"
+        ]
+      }
+    ],
+    "lootTables": [
+      "魔法物品表 H1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Hour-and-Minute.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

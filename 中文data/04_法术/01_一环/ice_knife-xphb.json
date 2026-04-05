@@ -1,0 +1,89 @@
+[
+  {
+    "ENG_name": "Ice Knife",
+    "name": "冰刃",
+    "source": "XPHB",
+    "page": 287,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 1,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 60
+      }
+    },
+    "components": {
+      "s": true,
+      "m": "一滴水或一块冰"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你制造出一块冰晶裂片，并将它射向施法距离内的一个生物。你对目标进行一次远程法术攻击。若击中，目标受到{@damage 1d10}点穿刺伤害。无论击中与否，裂片都会在那之后立刻爆裂。攻击目标和其 5 尺范围内的每名生物都必须通过一次敏捷豁免检定，否则将受到{@damage 2d6}点寒冷伤害。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "你使用的法术位每比一环高一环，寒冷伤害就增加{@scaledamage 2d6|1-9|1d6}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "cold",
+      "piercing"
+    ],
+    "spellAttack": [
+      "R"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "spells/XPHB/Ice Knife.webp"
+          },
+          "credit": "Calder Moore",
+          "width": 696,
+          "height": 821
+        }
+      ]
+    },
+    "classes": [
+      "德鲁伊",
+      "术士",
+      "法师"
+    ],
+    "display_school": "咒法系",
+    "display_savingThrow": [
+      "敏捷"
+    ],
+    "display_damageInflict": [
+      "寒冷",
+      "穿刺"
+    ]
+  }
+]

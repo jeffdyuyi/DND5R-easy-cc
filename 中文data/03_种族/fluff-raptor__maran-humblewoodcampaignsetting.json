@@ -1,0 +1,25 @@
+{
+  "raceFluff": [
+    {
+      "ENG_name": "Raptor (Maran)",
+      "name": "隼族 (海)",
+      "source": "HumblewoodCampaignSetting",
+      "_copy": {
+        "ENG_name": "Raptor",
+        "name": "隼族",
+        "source": "HumblewoodCampaignSetting",
+        "_mod": {
+          "entries": {
+            "mode": "prependArr",
+            "items": {
+              "type": "section",
+              "entries": [
+                "作为一只玛兰猛禽，你在水中和树上同样自在。你还拥有丰富的耐心，只在最符合你目标时采取行动。"
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

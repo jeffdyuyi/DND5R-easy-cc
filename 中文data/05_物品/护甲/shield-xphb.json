@@ -1,0 +1,35 @@
+[
+  {
+    "name": "盾牌",
+    "ENG_name": "Shield",
+    "source": "XPHB",
+    "page": 219,
+    "edition": "one",
+    "type": "S|XPHB",
+    "rarity": "none",
+    "weight": 6,
+    "value": 1000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XPHB/Shield.webp"
+          },
+          "credit": "Polar Engine",
+          "width": 205,
+          "height": 392
+        }
+      ]
+    },
+    "ac": 2,
+    "basicRules2024": true,
+    "hasFluffImages": true,
+    "referenceSources": [
+      "DrDe-TFV",
+      "HotB"
+    ],
+    "srd52": true
+  }
+]

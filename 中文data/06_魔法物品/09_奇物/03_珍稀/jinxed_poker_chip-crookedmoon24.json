@@ -1,0 +1,56 @@
+[
+  {
+    "ENG_name": "Jinxed Poker Chip",
+    "name": "厄运扑克筹码",
+    "source": "CrookedMoon24",
+    "page": 610,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "property": [
+      "TCM'24:CC"
+    ],
+    "grantsProficiency": true,
+    "entries": [
+      "这枚陶瓷扑克筹码的一面绘有鳄鱼的头骨。每当它翻转时，会响起沙哑的笑声。当你持握这枚筹码期间，它提供如下词条：",
+      {
+        "ENG_name": "Jinxed Luck",
+        "name": "厄运之幸",
+        "type": "entries",
+        "entries": [
+          "当你失败于一次{@variantrule D20 检定|XPHB}时，你可以使用{@variantrule 反应|XPHB}来翻转该筹码。掷{@dice 1d6}。掷出4-6时，你将该{@variantrule D20 检定|XPHB}改为成功。当你使用该属性后，掷{@dice 1d20}。掷出1-5时，该属性直至次夜黄昏之前，无法再次使用。"
+        ]
+      },
+      {
+        "ENG_name": "Sense Cheating",
+        "name": "识破作弊",
+        "type": "entries",
+        "entries": [
+          "若你具有一项{@item 赌具|XPHB}的熟练，则你在判断你正游玩的游戏中是否有人作弊的属性检定中自动成功。"
+        ]
+      },
+      {
+        "ENG_name": "Cursed Coin",
+        "name": "诅咒硬币",
+        "type": "entries",
+        "entries": [
+          "当你掷出{@variantrule 先攻|XPHB}时，你必须进行一次DC 0的魅力豁免，豁免失败则陷入诅咒，直至你完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}。被诅咒期间，你从{@variantrule D20 检定|XPHB|D20 检定}的总值中减去{@dice 1d6}。当你使用厄运之幸词条时，该豁免检定的DC提升1。"
+        ]
+      }
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Items/Jinxed%20Poker%20Chip.webp"
+          },
+          "width": 1128,
+          "height": 1200,
+          "credit": "Minard Maxime"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,123 @@
+{
+  "ENG_name": "Street Saint",
+  "name": "街角圣徒",
+  "source": "Pugilist2024",
+  "shortName": "街角圣徒",
+  "className": "拳斗士",
+  "classSource": "Pugilist2024",
+  "subclassFeatures": [
+    {
+      "ENG_name": "Street Saint",
+      "name": "街角圣徒",
+      "source": "Pugilist2024",
+      "className": "拳斗士",
+      "classSource": "Pugilist2024",
+      "subclassShortName": "街角圣徒",
+      "subclassSource": "Pugilist2024",
+      "level": 3,
+      "entries": [
+        "{@i 献上祈祷与重拳}",
+        "拳斗士总能战胜逆境。那些被称作街角圣徒的人凭借着对诸神的信仰最终幸存。这些拳斗士饱受考验最终战胜了逆境，他们侍奉神明的正义决心无可动摇，也受到了他们的神明认可。",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "引导神力|拳斗士|Pugilist2024|街角圣徒|Pugilist2024|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "圣疗|拳斗士|Pugilist2024|街角圣徒|Pugilist2024|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Channel Divinity",
+      "name": "引导神力",
+      "source": "Pugilist2024",
+      "className": "拳斗士",
+      "classSource": "Pugilist2024",
+      "subclassShortName": "街角圣徒",
+      "subclassSource": "Pugilist2024",
+      "level": 3,
+      "entries": [
+        "你能直接从外层位面引导神圣力量用以释放魔法效应。你起始时具有两种效应选项：信实之拳和诸神恩典，其效果如下所示。每当你使用本子职的引导神力时，你选择要创造哪种来自本子职的效应。",
+        "一旦使用了本职业的引导神力，直至完成{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}你才能再次使用该引导神力。",
+        {
+          "ENG_name": "Fists of Faith",
+          "name": "信实之拳",
+          "type": "entries",
+          "entries": [
+            "你能以{@variantrule 附赠动作|XPHB}将正义的怒火注入双拳。在接下来的1分钟内，你的{@variantrule 徒手打击|XPHB|徒手打击}额外造成{@damage 1d4}光耀伤害，若目标为邪魔或亡灵，则为{@dice 2d4}。"
+          ]
+        },
+        {
+          "ENG_name": "Grace of the Gods",
+          "name": "诸神恩典",
+          "type": "entries",
+          "entries": [
+            "你能以{@variantrule 附赠动作|XPHB}祈求神明的恩典，在接下来的1分钟内，你获得对暗蚀伤害的{@variantrule 抗性|XPHB}，且当你进行豁免检定时，掷{@dice 1d4}并将骰值加入检定。"
+          ]
+        }
+      ]
+    },
+    {
+      "ENG_name": "Lay On Hands",
+      "name": "圣疗",
+      "source": "Pugilist2024",
+      "className": "拳斗士",
+      "classSource": "Pugilist2024",
+      "subclassShortName": "街角圣徒",
+      "subclassSource": "Pugilist2024",
+      "level": 3,
+      "entries": [
+        "你的触碰带有祝福，可以医治伤口。你获得一个治疗能量池，其内的治疗能量在每次完成{@variantrule 长休|XPHB}时补满。治疗能量池储备的可恢复{@variantrule 生命值|XPHB}总值等于你的拳斗士等级的三倍。",
+        "你能够以一个{@variantrule 附赠动作|XPHB}触碰一个生物（可以是你自己），并抽取治疗能量池中的能量恢复该生物的{@variantrule 生命值|XPHB}，其恢复量最多等于你治疗能量池中剩余的治疗量。",
+        "此外，你也可以使用 5 点{@variantrule 生命值|XPHB}治疗量来移除目标身上的{@condition 中毒|XPHB}状态，而非恢复{@variantrule 生命值|XPHB}。"
+      ]
+    },
+    {
+      "ENG_name": "Ravaged But Resolute",
+      "name": "磨难成圣",
+      "source": "Pugilist2024",
+      "className": "拳斗士",
+      "classSource": "Pugilist2024",
+      "subclassShortName": "街角圣徒",
+      "subclassSource": "Pugilist2024",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "当你使用{@classFeature 浴血奋战|拳斗士|Pugilist2024|2}时，你能补满你的{@subclassFeature 圣疗|拳斗士|Pugilist2024|街角圣徒|Pugilist2024|3}能量池。",
+        "此特性一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。"
+      ]
+    },
+    {
+      "ENG_name": "Aura of Resilience",
+      "name": "抗性灵光",
+      "source": "Pugilist2024",
+      "className": "拳斗士",
+      "classSource": "Pugilist2024",
+      "subclassShortName": "街角圣徒",
+      "subclassSource": "Pugilist2024",
+      "level": 11,
+      "header": 2,
+      "entries": [
+        "当你使用{@classFeature 反求诸己|拳斗士|Pugilist2024|4|Pugilist2024}时，你能在源自你的10尺{@variantrule 光环 [效应区域]|XPHB|光环}内散发出一道不可见的庇护灵光，持续10分钟。灵光在你陷入{@condition 失能|XPHB}期间失效。灵光内你的盟友获得对钝击、穿刺和挥砍伤害的{@variantrule 抗性|XPHB}。",
+        "此特性一经使用，直至完成{@variantrule 长休|XPHB}你都无法再次使用。"
+      ]
+    },
+    {
+      "ENG_name": "Hallowed Hands",
+      "name": "神圣之手",
+      "source": "Pugilist2024",
+      "className": "拳斗士",
+      "classSource": "Pugilist2024",
+      "subclassShortName": "街角圣徒",
+      "subclassSource": "Pugilist2024",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "每个你的回合一次，当你以{@variantrule 徒手打击|XPHB}或拳斗武器命中一名生物时，你能消耗一定点数的{@subclassFeature 圣疗|拳斗士|Pugilist2024|街角圣徒|Pugilist2024|3}治疗能量来对目标造成额外的光耀伤害，至多消耗等于你拳斗士等级的治疗能量。额外伤害值等于你消耗的治疗能量点数，若目标为邪魔或亡灵，则为你消耗点数的两倍。"
+      ]
+    }
+  ],
+  "hasFluffImages": true,
+  "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Icons/Street Saint.webp"
+}

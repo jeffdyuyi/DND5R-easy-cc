@@ -1,0 +1,75 @@
+[
+  {
+    "ENG_name": "Call of the Wild",
+    "name": "野性呼唤",
+    "source": "CrookedMoon14",
+    "page": 125,
+    "reprintedAs": [
+      "野性呼唤|crookedmoon24"
+    ],
+    "level": 4,
+    "school": "E",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "emanation",
+      "distance": {
+        "type": "feet",
+        "amount": 100
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一小块动物毛皮或兽皮"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你释放出一声原始的嚎叫，召唤低等生物听从你的命令。当你施放该法术时，以你为中心的100尺球状区域内的每个野兽必须进行一次感知豁免检定。豁免失败时，目标被你{@condition 魅惑}，它能理解你的命令，并在其下一回合尽其所能地遵循它们。在你的后续回合中，你可以用一个动作来发布新的命令。豁免成功时，目标被你{@condition 魅惑}直到你的下一回合开始，但你没有额外的能力来命令它。该嚎叫在300尺内可听见。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "conditionInflict": [
+      "魅惑"
+    ],
+    "savingThrow": [
+      "感知"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Spells/Call-of-the-Wild.webp"
+  }
+]

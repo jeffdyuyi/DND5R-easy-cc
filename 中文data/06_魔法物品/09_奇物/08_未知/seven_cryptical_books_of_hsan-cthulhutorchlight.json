@@ -1,0 +1,75 @@
+[
+  {
+    "ENG_name": "Seven Cryptical Books of Hsan",
+    "name": "玄君七章秘经",
+    "source": "CthulhuTorchlight",
+    "page": 0,
+    "rarity": "unknown (magic)",
+    "reqAttune": "通过DC 20智力（{@skill 宗教|XPHB}检定）",
+    "wondrous": true,
+    "entries": [
+      "这七部卷轴各自阐述了一个不同的主题，内容关乎诸神、物质世界与诸位面之间的关系。掌握其奥秘者能够创造通往其他世界的大门。",
+      {
+        "ENG_name": "Language:",
+        "name": "语言：",
+        "type": "entries",
+        "entries": [
+          "{@language 天界语|XPHB}."
+        ]
+      },
+      {
+        "ENG_name": "Attunement Check:",
+        "name": "同调检定：",
+        "type": "entries",
+        "entries": [
+          "智力（{@skill 宗教|XPHB}）DC 20。要结束你与《玄君七章秘经》的{@variantrule 同调|XPHB}，你必须造访它所能通往的全部七个领域。"
+        ]
+      },
+      {
+        "ENG_name": "Benefits:",
+        "name": "增益:",
+        "type": "entries",
+        "entries": [
+          "与《玄君七章秘经》同调期间，你获得以下增益：",
+          {
+            "type": "list",
+            "items": [
+              "若你拥有施法职业特性，则你所能施展的每个法术环阶，你都可以额外准备一个法术。该法术必须从牧师法术列表中选择。",
+              "你所施展的、位于牧师法术列表中的任何法术，其豁免DC都获得+1加值。",
+              "你在所有感知豁免检定上具有{@variantrule 优势|XPHB}。",
+              "你获得一枚你所能使用的最高环阶的额外法术位。",
+              "你每天可以无需消耗法术位地施放一次{@spell 异界之门|XPHB}。感知是你施展该法术的施法属性。当你施放它时，你会开启一道通往书中所描述的某处地点的大门。若你在该地点再次使用此特性，法术会连接到书中的第二个地点。这样的地点共有七个，而在第七个地点使用此特性时，会将你传送回你首次使用此能力的地方。具体地点由DM决定，但传说每个地点都是一个早已被遗忘的神祇的领域，后来被克苏鲁神话的代理者所占据。"
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Drawbacks:",
+        "name": "缺点：",
+        "type": "entries",
+        "entries": [
+          "你产生一股无法抗拒的冲动，想要用这些典籍去造访它所能通往的领域。若你一周未使用其异界之门特性，你便会获得一级{@condition 力竭|XPHB}。直到你用此物品施放{@spell 异界之门|XPHB}并穿过你创造的传送门之前，该力竭等级都无法被移除。"
+        ]
+      },
+      {
+        "ENG_name": "Insight-Enemy of the Dark (+20):",
+        "name": "洞见–黑暗之敌（+20）：",
+        "type": "entries",
+        "entries": [
+          "你是克苏鲁神话的坚定敌人。当你遭遇它们的代理人与实体时，会被强制击败它们并将它们驱逐回诞生它们的宇宙黑暗角落。你很难离开任何被它们的污秽邪恶所强冲的位置。"
+        ]
+      },
+      {
+        "ENG_name": "Lore:",
+        "name": "逸闻：",
+        "type": "entries",
+        "entries": [
+          "《玄君七章秘经》能让你在所有为了解神尸而进行的检定中自动成功。"
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "异界之门|XPHB"
+    ]
+  }
+]

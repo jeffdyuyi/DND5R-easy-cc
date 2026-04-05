@@ -1,0 +1,216 @@
+[
+  {
+    "name": "龙裔 (宝石)",
+    "ENG_name": "Dragonborn (Gem)",
+    "source": "FTD",
+    "page": 11,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "resist": [
+      {
+        "choose": {
+          "from": [
+            "力场",
+            "光耀",
+            "心灵",
+            "雷鸣",
+            "暗蚀"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Gem Ancestry",
+        "name": "宝石血统",
+        "type": "entries",
+        "entries": [
+          "你拥有宝石龙祖先，这赋予你特殊的魔法亲和。从宝石血统表格中选择一种龙类，这将决定你其他特质的伤害类型，如表格所示。",
+          {
+            "type": "table",
+            "caption": "宝石血统",
+            "colLabels": [
+              "龙",
+              "伤害类型"
+            ],
+            "colStyles": [
+              "col-6 text-center",
+              "col-6 text-center"
+            ],
+            "rows": [
+              [
+                "紫水晶",
+                "力场"
+              ],
+              [
+                "水晶",
+                "光耀"
+              ],
+              [
+                "翡翠",
+                "心灵"
+              ],
+              [
+                "蓝宝石",
+                "雷鸣"
+              ],
+              [
+                "黄玉",
+                "暗蚀"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Breath Weapon",
+        "type": "entries",
+        "name": "吐息武器",
+        "entries": [
+          "吐息武器。当你使用{@action 攻击}动作时，你可以将其中一次攻击替换为呼出一种15尺锥形的魔法能量。锥形范围内的每个生物都必须成功通过一次DC为（8+你的体质调整值+你的熟练加值）的敏捷豁免，否则将受到{@damage 1d10}的对应宝石龙血脉的伤害，成功则伤害减半。该伤害在你达到5级时（{@damage 2d10}）、11级时（{@damage 3d10}）和17级时（{@damage 4d10}）各增加{@damage 1d10}。",
+          "你可以使用该特性的次数等同于你的熟练加值，你在完成 一次长休后重获所有已使用的次数。"
+        ]
+      },
+      {
+        "ENG_name": "Draconic Resistance",
+        "name": "龙族抗性",
+        "type": "entries",
+        "entries": [
+          "你获得与你的宝石龙族精粹伤害类型相关的伤害抗性。"
+        ]
+      },
+      {
+        "ENG_name": "Psionic Mind",
+        "name": "灵能心智",
+        "type": "entries",
+        "entries": [
+          "你可以向身边30尺内任意你能看见的生物发送心灵感应信息。你无须与该生物共享语言也能使其理解这些信息，但它必须至少能理解一种语言才能领会这些信息。"
+        ]
+      },
+      {
+        "ENG_name": "Gem Flight",
+        "name": "宝石之翼",
+        "type": "entries",
+        "entries": [
+          "5级起，你可以用一个附赠动作在身上显形一对灵体翅膀。这些翅膀持续1分钟。在持续时间内，你获得等同于你步行速度的飞行速度并且可以悬浮。使用此特性后，你在完成一次长休前不能再次使用。"
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "有着宝石龙血脉的龙裔分享着所有宝石龙的遗馈，他们称自己为红宝石龙萨迪沃——第一条被创造的宝石龙，由巴哈姆特与提亚马特在第一世界的元日制造而成——的继承人。宝石龙的颜色与神秘力量——紫晶、水晶、翡翠、蓝宝石，黄玉——在他们的鳞片皮肤表面闪耀，流淌在他们的血液中，他们的吐息是心灵的遐想，意志的伟力，顿悟的灵光，发现的回响，绝望的干涸。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/FTD/Gem Dragonborn.webp"
+          },
+          "title": "蓝宝石、紫晶和翡翠龙裔围在火堆旁分享故事",
+          "credit": "Zoltan Boros",
+          "width": 1700,
+          "height": 1103
+        }
+      ]
+    },
+    "_versions": [
+      {
+        "_abstract": {
+          "ENG_name": "Dragonborn (Gem; {{color}})",
+          "name": "龙裔 (宝石; {{color}})",
+          "source": "FTD",
+          "_mod": {
+            "entries": [
+              {
+                "mode": "removeArr",
+                "names": "宝石血统"
+              },
+              {
+                "mode": "replaceArr",
+                "replace": "吐息武器",
+                "items": {
+                  "ENG_name": "Breath Weapon",
+                  "type": "entries",
+                  "name": "吐息武器",
+                  "entries": [
+                    "当你在你的回合使用{@action 攻击}动作时，你可以将其中一次攻击替换为呼出一种15尺锥形的魔法能量。锥形范围内的每个生物都必须进行一次敏捷豁免（DC = 8 + 你的体质调整值 + 你的熟练加值）。豁免失败时，该生物受到{@damage 1d10} {{damageType}}伤害。豁免成功时，它受到一半伤害。该伤害在你达到5级（{@damage 2d10}）、11级（{@damage 3d10}）和17级（{@damage 4d10}）时增加{@damage 1d10}。",
+                    "你可以使用该特性的次数等同于你的熟练加值，你在完成 一次长休后重获所有已使用的次数。"
+                  ]
+                }
+              },
+              {
+                "mode": "replaceArr",
+                "replace": "龙族抗性",
+                "items": {
+                  "ENG_name": "Draconic Resistance",
+                  "name": "龙族抗性",
+                  "type": "entries",
+                  "entries": [
+                    "你对{{damageType}}伤害具有抗性。"
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "_implementations": [
+          {
+            "_variables": {
+              "color": "紫水晶",
+              "damageType": "力场"
+            },
+            "resist": [
+              "力场"
+            ]
+          },
+          {
+            "_variables": {
+              "color": "水晶",
+              "damageType": "光耀"
+            },
+            "resist": [
+              "光耀"
+            ]
+          },
+          {
+            "_variables": {
+              "color": "翡翠",
+              "damageType": "心灵"
+            },
+            "resist": [
+              "心灵"
+            ]
+          },
+          {
+            "_variables": {
+              "color": "蓝宝石",
+              "damageType": "雷鸣"
+            },
+            "resist": [
+              "雷鸣"
+            ]
+          },
+          {
+            "_variables": {
+              "color": "黄玉",
+              "damageType": "暗蚀"
+            },
+            "resist": [
+              "暗蚀"
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "lineage": "VRGR",
+    "soundClip": {
+      "type": "internal",
+      "path": "races/dragonborn.mp3"
+    }
+  }
+]

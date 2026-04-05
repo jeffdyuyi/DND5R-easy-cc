@@ -1,0 +1,64 @@
+[
+  {
+    "ENG_name": "Electric Charge Ring",
+    "name": "电荷戒指",
+    "source": "MonstersOfDrakkenheim",
+    "page": 385,
+    "type": "RG|XDMG",
+    "rarity": "rare",
+    "entries": [
+      "这枚由活体闪电构成的戒指，是用元素粉尘压缩成宝石后，围绕构装体的透镜眼睛锻造而成，并在怪物的强酸腺体中浸泡后，嵌入元素生物的精魄中。",
+      "当你使用一个造成闪电伤害的法术位施法时，选择一项未能通过该法术首次豁免检定的目标。该生物将处于{@condition 休克|MonstersOfDrakkenheim}状态直到你的下个回合开始。",
+      {
+        "ENG_name": "Crafting",
+        "name": "手作",
+        "type": "entries",
+        "entries": [
+          "制作电荷戒指需要一个珍稀工坊和以下珍稀成分：",
+          {
+            "type": "list",
+            "items": [
+              {
+                "ENG_name": "[Animus]",
+                "name": "[精魄]",
+                "type": "item",
+                "entries": [
+                  "元素生物的精魄"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Dust]",
+                "name": "[粉尘]",
+                "type": "item",
+                "entries": [
+                  "元素粉尘"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Organ]",
+                "name": "[器官]",
+                "type": "item",
+                "entries": [
+                  "构装体的眼睛"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Organ]",
+                "name": "[器官]",
+                "type": "item",
+                "entries": [
+                  "腺体"
+                ],
+                "nameDot": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluffImages": true
+  }
+]

@@ -1,0 +1,99 @@
+[
+  {
+    "ENG_name": "Elevated Sight",
+    "name": "提升视力",
+    "source": "HumblewoodCampaignSetting",
+    "page": 49,
+    "otherSources": [
+      {
+        "source": "HumblewoodTales",
+        "page": 250
+      }
+    ],
+    "level": 1,
+    "school": "D",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你将目光投向天空，赋予自己从更高视角的视野。你投射你的视野，通过一个在你上方最多120尺处出现的隐形传感器来观察。你可以像飞翔一样通过这个传感器看到周围，提供其位置的完整360度视野。",
+      "传感器随你移动，保持与你相对的高度。你可以使用附赠动作来调整传感器的高度，但最高只能调整到你上方120尺。",
+      "通过这个传感器观察时，你处于{@condition 目盲|PHB|失明}状态，尽管你可以在你的回合中随时切换通过传感器观察或用自己的眼睛看。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "conditionInflict": [
+      "目盲"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "hasFluffImages": true,
+    "fluff": {
+      "ENG_name": "Elevated Sight",
+      "name": "提升视力",
+      "source": "HumblewoodCampaignSetting",
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/HumblewoodCampaignSetting/spells/Elevated-Sight.webp"
+          },
+          "width": 451,
+          "height": 630
+        }
+      ]
+    }
+  }
+]

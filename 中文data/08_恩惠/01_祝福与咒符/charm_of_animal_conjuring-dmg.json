@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Charm of Animal Conjuring",
+    "name": "兽群咒唤护咒",
+    "source": "DMG",
+    "page": 228,
+    "reprintedAs": [
+      "兽群咒唤护咒|XDMG"
+    ],
+    "type": "Charm",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "limited": {
+              "3": [
+                "咒唤兽群#3"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "entries": [
+      "该护咒可以让你用一个动作施放{@spell 咒唤兽群}法术（3环版本）。使用三次后，该护咒将随即从你身上消失。"
+    ]
+  }
+]

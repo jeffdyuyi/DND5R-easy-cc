@@ -1,0 +1,23 @@
+[
+  {
+    "name": "桨帆船",
+    "ENG_name": "Galley",
+    "source": "XPHB",
+    "page": 230,
+    "type": "SHP|XPHB",
+    "rarity": "none",
+    "value": 3000000,
+    "basicRules2024": true,
+    "capCargo": 150,
+    "crew": 80,
+    "seeAlsoVehicle": [
+      "桨帆船"
+    ],
+    "srd52": true,
+    "translator": "不全书",
+    "vehAc": 15,
+    "vehDmgThresh": 20,
+    "vehHp": 500,
+    "vehSpeed": 4
+  }
+]

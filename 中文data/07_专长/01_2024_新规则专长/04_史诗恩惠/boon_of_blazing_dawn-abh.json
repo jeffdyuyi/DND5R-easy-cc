@@ -1,0 +1,59 @@
+[
+  {
+    "ENG_name": "Boon of Blazing Dawn",
+    "name": "爆燃黎明恩惠",
+    "source": "ABH",
+    "page": 11,
+    "category": "EB",
+    "prerequisite": [
+      {
+        "level": 19
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "max": 30
+      }
+    ],
+    "immune": [
+      "光耀"
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Beloved of the Sun",
+        "name": "太阳之爱",
+        "type": "entries",
+        "entries": [
+          "你对光耀伤害具有{@variantrule 免疫|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Blazing Strike",
+        "name": "爆燃打击",
+        "type": "entries",
+        "entries": [
+          "当你用武器攻击命中一个生物时，伤害可以是光耀或武器的正常伤害类型（由你选择）。"
+        ]
+      },
+      {
+        "ENG_name": "Burst of Sunlight",
+        "name": "阳光爆发",
+        "type": "entries",
+        "entries": [
+          "每回合一次，当你以一次攻击命中一个生物并造成光耀伤害时，你可以从自身散发出30尺半径的{@variantrule 明亮光照|XPHB}和额外30尺的{@variantrule 微光光照|XPHB}，持续至你的下个回合开始。此光照为日光。"
+        ]
+      }
+    ]
+  }
+]

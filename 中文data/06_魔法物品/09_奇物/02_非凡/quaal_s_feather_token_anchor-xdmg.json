@@ -1,0 +1,37 @@
+[
+  {
+    "ENG_name": "Quaal's Feather Token, Anchor",
+    "name": "夸尔羽符，锚",
+    "source": "XDMG",
+    "page": 290,
+    "srd52": "羽符，锚",
+    "basicRules2024": true,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这枚物件看上去像一根羽毛。",
+      "你可以执行{@action 魔法|XPHB}动作来用羽符触碰一艘小艇或船只。接下来的24小时内，该船不会被任何方式移动。效应结束时，羽符也随之消失。"
+    ],
+    "lootTables": [
+      "奥秘 - 非普通|XDMG",
+      "器具 - 非普通|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Quaals Feather Token (Anchor).webp"
+          },
+          "width": 971,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

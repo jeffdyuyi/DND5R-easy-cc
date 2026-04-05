@@ -1,0 +1,42 @@
+[
+  {
+    "ENG_name": "Potion of Poison",
+    "name": "剧毒药水",
+    "source": "DMG",
+    "page": 188,
+    "srd": true,
+    "referenceSources": [
+      "RoT",
+      "PotA",
+      "OotA",
+      "CoS",
+      "SKT",
+      "TftYP-THSoT",
+      "TftYP-AtG",
+      "ToA",
+      "SDW",
+      "IMR",
+      "KftGV",
+      "CoA",
+      "VEoR",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "剧毒药水|XDMG"
+    ],
+    "type": "P",
+    "tier": "次要",
+    "rarity": "uncommon",
+    "entries": [
+      "这种药水看起来、闻起来、和尝起来都和{@item 治疗药水}或其他增益药水差不多。但实际上，它是用幻术伪装过的毒药。只有法术{@spell 鉴定术}可以鉴定出它的本质。",
+      "饮用此药水后，你立刻受到{@damage 3d6}点毒素伤害，且必须通过一次{@dc 13}的体质豁免，豁免失败将陷入{@condition 中毒}。在你以此方式{@condition 中毒}期间，每次你的回合开始时，你受到{@damage 3d6}点毒素伤害。每次你的回合结束时，你可以重复进行豁免。如果豁免成功，则你在后续回合中受到的毒素伤害减少{@dice 1d6}。当毒素伤害降低至0时，毒药效应终止。"
+    ],
+    "lootTables": [
+      "魔法物品表B"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "valueReference": 200
+  }
+]

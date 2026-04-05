@@ -1,0 +1,75 @@
+[
+  {
+    "ENG_name": "Poison Wave",
+    "name": "猛毒波",
+    "source": "GuideDrakkenheim",
+    "page": 190,
+    "level": 4,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "sphere",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一根枯萎的根和一滴醋"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "一阵有毒的烟雾从你身上散发出来。30尺内的生物必须进行一次体质豁免检定。",
+      "豁免失败时，每个生物受到{@damage 4d12}毒素伤害并陷入{@condition 中毒}状态直到你的下个回合结束。豁免成功时，生物只受到一半伤害且不会陷入{@condition 中毒}状态。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "如果你使用5环或更高法术位施放该法术，每比4环高1环，伤害就增加{@dice 1d12}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "毒素"
+    ],
+    "conditionInflict": [
+      "中毒"
+    ],
+    "savingThrow": [
+      "体质"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    }
+  }
+]

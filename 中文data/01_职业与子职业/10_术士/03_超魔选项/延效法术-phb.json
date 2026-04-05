@@ -1,0 +1,22 @@
+{
+  "ENG_name": "Extended Spell",
+  "name": "延效法术",
+  "source": "PHB",
+  "page": 102,
+  "srd": true,
+  "reprintedAs": [
+    "延效法术|XPHB"
+  ],
+  "featureType": [
+    "MM"
+  ],
+  "consumes": {
+    "ENG_name": "Sorcery Point",
+    "name": "术法点",
+    "amount": 1
+  },
+  "entries": [
+    "施展一道持续时间不短于1分钟的法术时，你可以使用1术法点使法术的持续时间翻倍，但其最终结果不能超过24小时。"
+  ],
+  "translator": "不全书"
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "幽邃盲族",
+    "ENG_name": "Grimlock",
+    "source": "DMG",
+    "page": 282,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "ability": [
+      {
+        "str": 2,
+        "cha": -2
+      }
+    ],
+    "traitTags": [
+      "NPC种族"
+    ],
+    "languageProficiencies": [
+      {
+        "undercommon": true
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Blindsight",
+        "name": "盲视",
+        "entries": [
+          "你没有眼睛，因此不会陷入{@condition 目盲}状态。你可以感知到30尺内的周围环境，或者在{@condition 耳聋}时感知到10尺内。在这个范围之外，你被视为无法看见或感知。"
+        ],
+        "type": "entries"
+      },
+      {
+        "ENG_name": "Keen Hearing and Smell",
+        "name": "敏锐嗅听觉",
+        "type": "entries",
+        "entries": [
+          "你在依赖听觉或嗅觉进行的感知（{@skill 察觉}）检定上具有优势。"
+        ]
+      },
+      {
+        "ENG_name": "Stone Camouflage",
+        "name": "岩地伪装",
+        "type": "entries",
+        "entries": [
+          "你在岩地中躲藏时进行的敏捷（{@skill 隐匿}）检定具有优势。"
+        ]
+      },
+      {
+        "ENG_name": "Languages",
+        "name": "语言",
+        "entries": [
+          "你可以说、读、写地底通用语。"
+        ],
+        "type": "entries"
+      }
+    ],
+    "blindsight": 30,
+    "soundClip": {
+      "type": "internal",
+      "path": "races/grimlock.mp3"
+    }
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Pressure Capsule",
+    "name": "压力胶囊",
+    "source": "GoS",
+    "page": 229,
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "这个小胶囊由蜂蜡与沙子及多种魔法水生植物混合制成。服用压力胶囊的生物可以无视在超过100英尺深的水中游泳的影响（详见《地下城主指南》第五章中的\"{@book 非常规环境|DMG|5|非常规环境}\"）。"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "valueReference": 50,
+    "type": "W"
+  }
+]

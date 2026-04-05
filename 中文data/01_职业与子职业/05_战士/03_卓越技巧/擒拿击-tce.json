@@ -1,0 +1,18 @@
+{
+  "ENG_name": "Grappling Strike",
+  "name": "擒拿击",
+  "source": "TCE",
+  "page": 42,
+  "isClassFeatureVariant": true,
+  "featureType": [
+    "MV:B"
+  ],
+  "consumes": {
+    "ENG_name": "Superiority Die",
+    "name": "卓越骰"
+  },
+  "entries": [
+    "当你以一次近战攻击命中一名生物时，你能够立即消耗一枚卓越骰，以一个附赠动作对目标进行一次擒抱（见玩家手册的擒抱规则）。将消耗的卓越骰加入你的力量（{@skill 运动}）检定中。"
+  ],
+  "translator": "不全书"
+}

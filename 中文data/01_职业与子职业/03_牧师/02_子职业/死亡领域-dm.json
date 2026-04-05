@@ -1,0 +1,231 @@
+{
+    "ENG_name": "Death Domain",
+    "name": "死亡领域",
+    "shortName": "死亡",
+    "source": "DMG",
+    "className": "牧师",
+    "classSource": "PHB",
+    "page": 96,
+    "edition": "classic",
+    "additionalSpells": [
+        {
+            "prepared": {
+                "1": [
+                    "虚假生命|PHB",
+                    "致病射线|PHB"
+                ],
+                "3": [
+                    "致盲/致聋术|PHB",
+                    "衰弱射线|PHB"
+                ],
+                "5": [
+                    "操纵死尸|PHB",
+                    "吸血鬼之触|PHB"
+                ],
+                "7": [
+                    "枯萎术|PHB",
+                    "防死结界|PHB"
+                ],
+                "9": [
+                    "防生活界|PHB",
+                    "死云术|PHB"
+                ]
+            }
+        }
+    ],
+    "subclassFeatures": [
+        "死亡领域|牧师||死亡||1",
+        "引导神力：死之触|牧师||死亡||2",
+        "无可逃避的毁灭|牧师||死亡||6",
+        "神圣打击|牧师||死亡||8",
+        "受祝击|牧师||死亡||8|TCE",
+        "强化收割者|牧师||死亡||17"
+    ],
+    "features": [
+        {
+            "ENG_name": "Death Domain",
+            "name": "死亡领域",
+            "source": "DMG",
+            "page": 96,
+            "className": "牧师",
+            "classSource": "PHB",
+            "subclassShortName": "死亡",
+            "subclassSource": "DMG",
+            "level": 1,
+            "entries": [
+                "死亡领域的神明关注死者以及死后的世界。这些位面可能包括荒凉恐怖的冥界，也可能包括灵魂获得安息的宁静之地。深入这一领域的牧师研究负能量的秘密，学习如何通过触碰来摧毁生命。在许多社会中，这类牧师是禁忌的存在，但在另一些文化中，他们是葬礼和悼念仪式的引导者。",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "领域法术|牧师||死亡||1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "附赠熟练|牧师||死亡||1"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "收割者|牧师||死亡||1"
+                }
+            ]
+        },
+        {
+            "ENG_name": "Domain Spells",
+            "name": "领域法术",
+            "source": "DMG",
+            "page": 96,
+            "className": "牧师",
+            "classSource": "PHB",
+            "subclassShortName": "死亡",
+            "subclassSource": "DMG",
+            "level": 1,
+            "entries": [
+                "你在到达死亡领域法术表中特定的牧师等级时，你就始终准备了表中对应的法术。关于领域法术如何工作，请参阅神圣领域职业特性。",
+                {
+                    "type": "table",
+                    "caption": "死亡领域法术",
+                    "colLabels": [
+                        "牧师等级",
+                        "法术"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell 虚假生命|PHB}, {@spell 致病射线|PHB}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell 致盲/致聋术|PHB}, {@spell 衰弱射线|PHB}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell 操纵死尸|PHB}, {@spell 吸血鬼之触|PHB}"
+                        ],
+                        [
+                            "7th",
+                            "{@spell 枯萎术|PHB}, {@spell 防死结界|PHB}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell 防生活界|PHB}, {@spell 死云术|PHB}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "ENG_name": "Bonus Proficiencies",
+            "name": "附赠熟练",
+            "source": "DMG",
+            "page": 96,
+            "className": "牧师",
+            "classSource": "PHB",
+            "subclassShortName": "死亡",
+            "subclassSource": "DMG",
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "当你1级选择此领域时，你获得军用武器的熟练项。"
+            ]
+        },
+        {
+            "ENG_name": "Reaper",
+            "name": "收割者",
+            "source": "DMG",
+            "page": 96,
+            "className": "牧师",
+            "classSource": "PHB",
+            "subclassShortName": "死亡",
+            "subclassSource": "DMG",
+            "level": 1,
+            "header": 1,
+            "entries": [
+                "第1级起，牧师从任何法术列表中习得一个由其选择的死灵系戏法。当牧师施展一个通常只能以一个生物为目标的死灵系戏法时，该法术可以改为以其量程内且彼此距离 5 尺内的两个生物为目标。"
+            ]
+        },
+        {
+            "ENG_name": "Channel Divinity: Touch of Death",
+            "name": "引导神力：死之触",
+            "source": "DMG",
+            "page": 96,
+            "className": "牧师",
+            "classSource": "PHB",
+            "subclassShortName": "死亡",
+            "subclassSource": "DMG",
+            "level": 2,
+            "header": 2,
+            "consumes": {
+                "ENG_name": "Channel Divinity",
+                "name": "引导神力"
+            },
+            "entries": [
+                "第2级起，牧师可以使用引导神力通过触碰来摧毁另一个生物的生命力。当牧师的一次近战攻击命中生物时，牧师可以使用引导神力来对目标造成额外的坏死伤害。该额外伤害等同于 5 + 你牧师等级的两倍。"
+            ]
+        },
+        {
+            "ENG_name": "Inescapable Destruction",
+            "name": "无可逃避的毁灭",
+            "source": "DMG",
+            "page": 96,
+            "className": "牧师",
+            "classSource": "PHB",
+            "subclassShortName": "死亡",
+            "subclassSource": "DMG",
+            "level": 6,
+            "header": 2,
+            "entries": [
+                "第6级起，牧师引导负能量的能力变得更加强大。牧师的法术和引导神力选项所造成的坏死伤害忽略对坏死伤害的抗性。"
+            ]
+        },
+        {
+            "ENG_name": "Divine Strike",
+            "name": "神圣打击",
+            "source": "DMG",
+            "page": 96,
+            "className": "牧师",
+            "classSource": "PHB",
+            "subclassShortName": "死亡",
+            "subclassSource": "DMG",
+            "level": 8,
+            "header": 2,
+            "entries": [
+                "第8级起，你获得将神圣能量灌注进武器攻击的能力。你每回合一次在武器攻击命中生物时，可以让该攻击额外对目标造成 {@damage 1d8} 点坏死伤害。当你到达14级时，该额外伤害增加到 {@damage 2d8} 点。"
+            ]
+        },
+        {
+            "ENG_name": "Blessed Strikes",
+            "name": "受祝击",
+            "source": "TCE",
+            "page": 30,
+            "className": "牧师",
+            "classSource": "PHB",
+            "subclassShortName": "死亡",
+            "subclassSource": "PHB",
+            "level": 8,
+            "isClassFeatureVariant": true,
+            "header": 2,
+            "entries": [
+                "{@i 8级牧师{@variantrule 可选职业特性|TCE|可选特性}，取代神圣打击特性}",
+                "在战斗中，你受到神力的祝福。当你通过戏法 or 武器攻击来伤害一个生物时，你能够对该生物造成额外{@damage 1d8}光耀伤害。当你造成一次此伤害后，你直到自己的下一个回合开始前无法再次使用此特性。"
+            ]
+        },
+        {
+            "ENG_name": "Improved Reaper",
+            "name": "强化收割者",
+            "source": "DMG",
+            "page": 96,
+            "className": "牧师",
+            "classSource": "PHB",
+            "subclassShortName": "死亡",
+            "subclassSource": "DMG",
+            "level": 17,
+            "header": 2,
+            "entries": [
+                "第17级起，当牧师施展一个 1 至 5 环且通常只能以一个生物为目标的死灵系法术时，该法术可以改为以其量程内且彼此距离 5 尺内的两个生物为目标。如果法术消耗材料成分，则牧师必须为每个目标提供相应成分。"
+            ]
+        }
+    ]
+}

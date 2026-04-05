@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Ambitious Medic's Box",
+    "name": "宏志医匣",
+    "source": "GriffonsSaddlebag2",
+    "page": 33,
+    "tier": "次要",
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "weight": 3,
+    "grantsProficiency": true,
+    "recharge": "黄昏",
+    "rechargeAmount": 10,
+    "charges": 10,
+    "entries": [
+      "这个木盒分为两半，两边各以一个带有装饰的扣环锁住。两个扣环分别都只能在一天的特定时间打开。盒子宽1尺，长2尺，重3磅。即使你未与它进行同调，你也可以按以下描述正常打开并使用此盒：",
+      "左半盒以一个雕刻着太阳的金属扣环锁住。每天的黎明到黄昏，你可以打开左半盒，其中的内容和功能与医疗包{@item 医疗包|PHB}完全相同。每日黄昏时，左半盒的盖子会魔法性地自动关闭并锁住，且所有用掉的医疗包使用次数将恢复至满。",
+      "右半盒以一个雕刻着一个正吸着烟斗的月亮的金属扣环锁住。每天的黄昏到次日黎明，你可以打开右半盒，其内有三个白镴啤酒杯、一个扁瓶和一个木质烟斗。当你手持扁瓶时，你可以用一个动作说出其命令语，命令语的最后一个单词能且只能是\"啤酒\"\"葡萄酒\"\"威士忌\"之一。此时，扁瓶会根据你所选的酒类，魔法性地自动装满至多4加仑的啤酒、1加仑的葡萄酒或8盎司的烈酒。你可以用一个动作，以每分钟至多1加仑的速度倒出其中的酒。扁瓶的这项词条一经使用后，则其直至下个黄昏前都无法再次使用。另外，木制烟斗会在每日黄昏时魔法性地重新装满烟草。每日黎明时，右半盒的盖子会魔法性地自动关闭并锁住，而任何从盒子中取出的东西都会魔法性地回到盒子里。",
+      "若你与此盒已完成同调，那么视为你拥有{@skill 医药}技能的熟练项，而且你任何时候都可以打开此盒的任意一侧。若你本就拥有{@skill 医药}技能的熟练项，那么在进行用到该技能的属性检定时，你的熟练加值翻倍。"
+    ],
+    "lootTables": [
+      "魔法物品表 B2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Ambitous-Medics-Box_All.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

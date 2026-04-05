@@ -1,0 +1,21 @@
+[
+  {
+    "ENG_name": "Bolt",
+    "name": "带翼弩矢",
+    "source": "BMT",
+    "page": 69,
+    "srd52": true,
+    "edition": "one",
+    "type": "A|XPHB",
+    "rarity": "uncommon",
+    "weight": 0.075,
+    "value": 5,
+    "bolt": true,
+    "entries": [
+      "使用这种弹药进行的远程武器攻击检定无视半掩体和{@quickref 掩护||3||四分之三掩护}。此外，使用这种弹药进行远程武器攻击时，远距离攻击不会带来劣势。"
+    ],
+    "namePrefix": "带翼",
+    "_isVariant": true,
+    "valueReference": 200
+  }
+]

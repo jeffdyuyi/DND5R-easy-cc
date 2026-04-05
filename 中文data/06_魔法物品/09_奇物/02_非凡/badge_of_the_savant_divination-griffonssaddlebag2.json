@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Badge of the Savant (Divination)",
+    "name": "智者徽章（预言术）",
+    "source": "GriffonsSaddlebag2",
+    "page": 40,
+    "tier": "主要",
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "{@i 智者徽章}是一张铂金制的藏书票，可以用魔法贴在法师的法术书上。不同徽章的设计代表着不同的魔法学派。在徽章已贴于你法术书的封面上期间，你抄写该徽章所属魔法学派需花费的金钱和时间减半。你可以收集多个徽章，并将它们贴在你的法术书封面上，这样你就可以同时享受多个魔法学派的增益。",
+      "通过消耗一个环阶数等于1加此书上已有徽章数之和（最高为九环）的法术位，你可以用一个动作将一个徽章贴于一本法术书上或从一本法术书上移除。"
+    ],
+    "lootTables": [
+      "魔法物品表 B1|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Badge-of-the-Savant.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]

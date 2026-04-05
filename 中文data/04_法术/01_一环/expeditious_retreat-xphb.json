@@ -1,0 +1,52 @@
+[
+  {
+    "ENG_name": "Expeditious Retreat",
+    "name": "脚底抹油",
+    "source": "XPHB",
+    "page": 270,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 1,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你执行{@action 疾走|XPHB}动作，且直到法术结束为止，你均能使用{@variantrule 附赠动作|XPHB}执行疾走动作。"
+    ],
+    "miscTags": [
+      "UBA"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "魔契师",
+      "法师",
+      "奇械师"
+    ],
+    "display_school": "变化系"
+  }
+]

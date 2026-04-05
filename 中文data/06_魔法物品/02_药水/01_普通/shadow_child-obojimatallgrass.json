@@ -1,0 +1,48 @@
+[
+  {
+    "ENG_name": "Shadow Child",
+    "name": "幽影子嗣",
+    "source": "ObojimaTallGrass",
+    "page": 242,
+    "type": "P",
+    "rarity": "common",
+    "property": [
+      "Whim"
+    ],
+    "entries": [
+      "你被强烈的困惑感充斥，随后一个幽体从你的身体中浮现，形似一个皮肤和毛发如缟玛瑙般、有着穿刺般绿色双眼的少女。只有你能看见它，且它无法说话。它的功能如同{@spell 隐形仆役}法术，持续1小时。",
+      {
+        "type": "entries",
+        "style": "text-center",
+        "entries": [
+          "{@font {@style 25|large}|SneakerProMedium}"
+        ]
+      }
+    ],
+    "attachedSpells": [
+      "隐形仆役"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Potions/Whimsical/shadow-child.webp"
+          },
+          "credit": "Scott Higginbotham",
+          "width": 2176,
+          "height": 2176
+        }
+      ]
+    },
+    "foundrySystem": {
+      "uses": {
+        "max": 1
+      }
+    }
+  }
+]

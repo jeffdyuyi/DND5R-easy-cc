@@ -1,0 +1,63 @@
+[
+  {
+    "ENG_name": "Tamh Gon's Fiery Festival Feast",
+    "name": "谭冈的盛宴之火",
+    "source": "ObojimaTallGrass",
+    "page": 191,
+    "level": 5,
+    "school": "A",
+    "time": [
+      {
+        "number": 10,
+        "unit": "分钟"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一种非普通原料，该法术会消耗它",
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你以一场投掷香料和旋转舞蹈的奢华表演来神圣化一顿餐点。那些参与餐点的人会获得伟大盛宴精魄谭冈的咖喱祝福。盛宴需要1小时来消耗，而增益效应直到这小时结束后才会显现。最多十二个生物可以参与这场盛宴。",
+      "一个参与盛宴的生物获得数个增益。该生物减少一层{@condition 力竭}状态，其速度增加10尺，并且在敏捷豁免检定上获得+2加值。在盛宴增益持续期间，它还可以激活一次{@spell 余烬腹火|ObojimaTallGrass}法术的效果。盛宴的增益持续24小时。"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Cleric",
+          "name": "牧师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "savingThrow": [
+      "敏捷"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Custom/Spells/Tamh%20Gons%20Fiery%20Festival%20Feast.webp"
+  }
+]

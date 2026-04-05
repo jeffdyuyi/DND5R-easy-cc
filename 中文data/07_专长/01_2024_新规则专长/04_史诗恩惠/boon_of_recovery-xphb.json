@@ -1,0 +1,49 @@
+[
+  {
+    "ENG_name": "Boon of Recovery",
+    "name": "强力恢复之恩惠",
+    "source": "XPHB",
+    "page": 211,
+    "category": "EB",
+    "prerequisite": [
+      {
+        "level": 19
+      }
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ]
+        },
+        "max": 30
+      }
+    ],
+    "entries": [
+      "你获得以下增益。",
+      {
+        "ENG_name": "Last Stand",
+        "name": "背水一战",
+        "type": "entries",
+        "entries": [
+          "当你的{@variantrule 生命值|XPHB}将要降至 0 时，你可以改为降至 1 {@variantrule 生命值|XPHB}并恢复等于你{@variantrule 生命值|XPHB|生命值}上限一半的{@variantrule 生命值|XPHB|生命值}。该增益一经使用，直到完成{@variantrule 长休|XPHB}你都无法再次被使用。"
+        ]
+      },
+      {
+        "ENG_name": "Recover Vitality",
+        "name": "重获生机",
+        "type": "entries",
+        "entries": [
+          "你获得一个有着十枚d10的治疗池。以一个{@variantrule 附赠动作|XPHB}，你可以消耗治疗池中任意枚骰子来恢复你的{@variantrule 生命值|XPHB}。投掷全部你消耗的骰子，将掷骰结果相加，即是你以此恢复的生命值。当你完成{@variantrule 长休|XPHB}时，你的治疗池重获所有被消耗的骰子。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

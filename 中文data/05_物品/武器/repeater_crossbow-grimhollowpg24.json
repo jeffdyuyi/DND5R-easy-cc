@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Repeater Crossbow",
+    "name": "连发弩",
+    "source": "GrimHollowPG24",
+    "page": 129,
+    "type": "R|XPHB",
+    "rarity": "none",
+    "weight": 7,
+    "value": 75000,
+    "weaponCategory": "进阶",
+    "property": [
+      "A|XPHB",
+      "Mag|GrimHollowPG24",
+      "Rep|GrimHollowPG24",
+      "2H|XPHB"
+    ],
+    "mastery": [
+      "缓速|XPHB"
+    ],
+    "range": "80/300",
+    "dmg1": "1d8",
+    "dmgType": "P",
+    "weapon": true,
+    "ammoType": "弩矢|XPHB",
+    "customProperties": {
+      "Magazine": "6"
+    }
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "ENG_name": "Conjure Minor Elementals",
+    "name": "咒唤微元素群",
+    "source": "XPHB",
+    "page": 255,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 4,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "emanation",
+      "distance": {
+        "type": "feet",
+        "amount": 15
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 10
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你在持续时间内将来自元素位面的精魂咒唤在你身周 15 尺{@variantrule 光环 [效应区域]|XPHB|光环}区域内，让它们环绕着你飞舞。直到法术结束为止，你进行的任何攻击检定命中{@variantrule 光环 [效应区域]|XPHB|光环}区域内的生物时，都会额外造成{@damage 2d8}点伤害。额外伤害的类型为强酸、寒冷、火焰或闪电的一种（在你发动攻击时选择）。",
+      "此外，{@variantrule 光环 [效应区域]|XPHB|光环}区域内的地面对你的敌人而言是{@variantrule 困难地形|XPHB}。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "使用的法术位每比四环高一环，此法术的伤害就增加{@scaledamage 2d8|4-9|1d8}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "acid",
+      "cold",
+      "fire",
+      "lightning"
+    ],
+    "miscTags": [
+      "AAD",
+      "DFT"
+    ],
+    "areaTags": [
+      "S"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "德鲁伊",
+      "法师"
+    ],
+    "display_school": "咒法系",
+    "display_damageInflict": [
+      "强酸",
+      "寒冷",
+      "火焰",
+      "闪电"
+    ]
+  }
+]

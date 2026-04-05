@@ -1,0 +1,26 @@
+[
+  {
+    "ENG_name": "Two-Birds Sling",
+    "name": "一石二鸟投石索",
+    "source": "MOT",
+    "page": 198,
+    "baseItem": "投石索|PHB",
+    "type": "R",
+    "rarity": "rare",
+    "weaponCategory": "simple",
+    "property": [
+      "A"
+    ],
+    "range": "30/120",
+    "dmg1": "1d4",
+    "dmgType": "B",
+    "bonusWeapon": "+1",
+    "entries": [
+      "你使用这把武器发动的攻击检定与其伤害掷骰具有+1加值。",
+      "当你用这把投石索发动远程攻击，并击中一个目标时，你可以使弹丸再弹向该目标周围10尺范围内的另一目标。之后，你对第二个目标发动一次远程攻击。"
+    ],
+    "ammoType": "投石索子弹|PHB",
+    "translator": "不全书",
+    "valueReference": 4000
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "ENG_name": "Ioun Stone, Agility",
+    "name": "艾恩石, 机敏",
+    "source": "XDMG",
+    "page": 273,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "ability": {
+      "dex": 2
+    },
+    "hasRefs": true,
+    "entries": [
+      "{#itemEntry 艾恩石|XDMG}",
+      "在这颗深红色的球形艾恩石环绕在你头顶期间，你的敏捷属性增加2，最多增加至20。"
+    ],
+    "lootTables": [
+      "器具 - 极珍稀|XDMG"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 40000,
+    "fluff": {},
+    "type": "W"
+  }
+]

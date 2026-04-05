@@ -1,0 +1,39 @@
+[
+  {
+    "ENG_name": "Cube of Cubes",
+    "name": "立方的立方",
+    "source": "ObojimaTallGrass",
+    "page": 169,
+    "rarity": "rare",
+    "wondrous": true,
+    "entries": [
+      "这个第一纪元的谜题似乎不可能完全解开，因为它的方块在不断化形和转动。作为一个动作，你可以解开谜题的一个配菜，解锁被困在其中的六大天王法术之一并释放其法力。掷一个{@dice d6}并使用下方表格来确定你作为解开谜题动作的一部分施放的法术。通过谜题施放的法术使用+4的施法调整值、+7的法术攻击加值和15的法术豁免DC。",
+      {
+        "type": "list",
+        "items": [
+          "1 (蓝)—{@spell 水弹术|ObojimaTallGrass}",
+          "2（绿）—{@spell 林地守卫|ObojimaTallGrass}",
+          "3（白）—{@spell 疗伤术}",
+          "4（黄）—{@spell 变巨/缩小术}",
+          "5（红）—{@spell 炽焰法球}",
+          "6（橙色）—{@spell 镇静人类|ObojimaTallGrass}"
+        ]
+      },
+      "一旦这个谜题被用于施放一个法术，它将无法再次施法直到下一个拂晓。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/cube-of-cubes.webp"
+          },
+          "credit": "Matt Owen",
+          "width": 2040,
+          "height": 2040
+        }
+      ]
+    }
+  }
+]

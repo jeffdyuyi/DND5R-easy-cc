@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Amulet of Protection from Turning",
+    "name": "防转护符",
+    "source": "TftYP",
+    "page": 228,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "weight": 1,
+    "entries": [
+      "佩戴这枚由银与绿松石制成的护符时，你抵抗\"驱散亡灵\"效应的豁免检定具有优势。",
+      "你抵抗此类效应的豁免检定失败时，可以选择改为豁免成功。你可以如此做三次，已消耗的使用次数每日拂晓时充能。每当一个驱散亡灵效应对你使用时，该护符会发出银蓝色的光芒数秒。"
+    ],
+    "valueReference": 4000,
+    "type": "W"
+  }
+]

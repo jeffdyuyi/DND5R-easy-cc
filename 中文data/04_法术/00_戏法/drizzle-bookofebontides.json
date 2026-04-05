@@ -1,0 +1,52 @@
+[
+  {
+    "ENG_name": "Drizzle",
+    "name": "毛毛细雨",
+    "source": "BookOfEbonTides",
+    "page": 60,
+    "level": 0,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 20
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "special",
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你召唤出一阵非常轻的雨，足以在20尺见方的区域内打湿地面，但不足以饮用或熄灭任何比一根蜡烛或火柴更大的火焰。如果持续1分钟，地面会湿到可以触摸，如果持续10分钟，受影响的区域会略微泥泞或滑溜，但不足以阻碍移动。在冻结的天气中，这可能会生成一层薄冰。"
+    ],
+    "classes": {
+      "fromClassListVariant": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB",
+          "definedInSource": "BookOfEbonTides"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "ENG_name": "Heightened Spell",
+  "name": "升阶法术",
+  "source": "PHB",
+  "page": 102,
+  "srd": true,
+  "reprintedAs": [
+    "升阶法术|XPHB"
+  ],
+  "featureType": [
+    "MM"
+  ],
+  "consumes": {
+    "ENG_name": "Sorcery Point",
+    "name": "术法点",
+    "amount": 3
+  },
+  "entries": [
+    "施展一个迫使一个生物进行豁免以抵御其效应的法术时，你可以花费3术法点使该法术所有目标中的一个首次进行对抗该法术的豁免时具有劣势。"
+  ],
+  "translator": "不全书"
+}

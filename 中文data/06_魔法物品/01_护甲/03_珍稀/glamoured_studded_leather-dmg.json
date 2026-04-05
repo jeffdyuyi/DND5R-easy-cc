@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Glamoured Studded Leather",
+    "name": "幻惑镶钉皮甲",
+    "source": "DMG",
+    "page": 172,
+    "srd": true,
+    "reprintedAs": [
+      "幻惑镶钉皮甲|XDMG"
+    ],
+    "type": "LA",
+    "tier": "主要",
+    "rarity": "rare",
+    "weight": 13,
+    "ac": 12,
+    "bonusAc": "+1",
+    "entries": [
+      "着装该护甲期间，你的AC获得+1加值。此外，你可以用一个附赠动作说出该护甲的命令语，使护甲的外观幻化为任何普通服饰或其他种类的护甲。幻化后的颜色、样式、与配件都由你自己决定，但它的体积和重量不会改变。幻化外观的效应持续到你脱掉此护甲后或再次改变护甲外观时为止。"
+    ],
+    "lootTables": [
+      "魔法物品表G"
+    ],
+    "valueReference": 4000,
+    "otherSources": [
+      {
+        "source": "XDMG"
+      }
+    ]
+  }
+]

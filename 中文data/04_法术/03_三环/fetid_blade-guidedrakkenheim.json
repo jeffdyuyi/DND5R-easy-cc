@@ -1,0 +1,77 @@
+[
+  {
+    "ENG_name": "Fetid Blade",
+    "name": "恶毒剑",
+    "source": "GuideDrakkenheim",
+    "page": 188,
+    "level": 3,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一滴强酸和一撮铁粉尘"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "你为你触碰的一把武器涂上强酸材质。直到法术结束，用它进行的武器攻击会在命中时额外造成{@damage 2d4}强酸伤害。如果该武器还不是魔化武器，则在持续时间内变为魔化武器。",
+      "此外，被使用该武器的近战攻击命中的生物必须进行一次体质豁免检定。若豁免失败，它将陷入{@condition 中毒}状态直到攻击手的下一个回合结束。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用4环或更高法术位施放该法术时，每比3环高一级，强酸伤害就增加{@dice 1d4}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "强酸"
+    ],
+    "conditionInflict": [
+      "中毒"
+    ],
+    "savingThrow": [
+      "体质"
+    ],
+    "miscTags": [
+      "AAD"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        }
+      ]
+    }
+  }
+]

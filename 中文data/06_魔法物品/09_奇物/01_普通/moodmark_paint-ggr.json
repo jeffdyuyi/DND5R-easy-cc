@@ -1,0 +1,31 @@
+[
+  {
+    "ENG_name": "Moodmark Paint",
+    "name": "貌纹绘彩",
+    "source": "GGR",
+    "page": 180,
+    "rarity": "common",
+    "wondrous": true,
+    "entries": [
+      "这种浓稠的黑色绘彩储存在一个小罐子里，包含足够为一只生物施加貌纹绘彩的绘彩量。绘彩以斑点或标记的形式轻点在面部，通常形似昆虫或蜘蛛的眼睛。以这种方式施加绘彩需要1分钟。",
+      "接下来的8小时内，这些纹样会随你的精神状态变化而改变。一个能看见你的生物若成功通过{@dc 10}的感知（{@skill 洞悉}）检定，就能辨别出你是快乐、悲伤、愤怒、厌恶、被突袭还是恐惧，以及该情绪的主要来源。例如，你可能传达因刚在转角处看到怪物而产生的恐惧、因失去朋友而生的悲伤，或因在战斗中表现出色而自豪的快乐。一名黑暗精灵在此检定中具有优势。"
+    ],
+    "hasFluffImages": true,
+    "valueReference": 100,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/GGR/Moodmark Paint.webp"
+          },
+          "credit": "Scott Murphy",
+          "width": 315,
+          "height": 230
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

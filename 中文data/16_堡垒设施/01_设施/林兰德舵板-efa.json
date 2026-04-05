@@ -1,0 +1,39 @@
+{
+  "ENG_name": "Lyrandar Helm",
+  "name": "林兰德舵板",
+  "source": "EFA",
+  "page": 49,
+  "facilityType": "special",
+  "level": 13,
+  "prerequisite": [
+    {
+      "otherSummary": {
+        "entry": "声望 25+ 与 {@book 林兰德家族|EFA|5|林兰德家族}",
+        "entrySummary": "林兰德家族声望 25+"
+      }
+    }
+  ],
+  "space": [
+    "cramped"
+  ],
+  "hirelings": [
+    {
+      "exact": 1
+    }
+  ],
+  "orders": [
+    "增强"
+  ],
+  "entries": [
+    "林兰德舵板允许建造在元素飞艇或元素帆船内的灵活移动据点旅行。该设施的雇工是一名{@book 林兰德家族的龙纹继承人|EFA|5|林兰德家族}。在元素飞艇上，飞艇的{@book 海姆|EFA|7|海姆}船员站点是该设施的一部分（见{@book 第七章|EFA|7|船员和岗位}）。",
+    {
+      "ENG_name": "Empower: Travel",
+      "name": "增强：旅行",
+      "type": "entries",
+      "entries": [
+        "当你向这个设施下达增强命令时，你指示其雇工驾驶据点到你指定的目的地。据点在据点回合的持续时间内，以载具的速度每日旅行8小时。当据点到达指定目的地或发生阻止你旅行的情况时，据点会提前停止。",
+        "当你向此设施发布增强命令时，DM会如同你向据点发布了维持命令一样，在{@book 据点事件表格|XDMG|7|据点事件}上进行掷骰。"
+      ]
+    }
+  ]
+}

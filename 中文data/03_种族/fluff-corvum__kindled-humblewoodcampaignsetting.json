@@ -1,0 +1,25 @@
+{
+  "raceFluff": [
+    {
+      "ENG_name": "Corvum (Kindled)",
+      "name": "鸦族 (煽)",
+      "source": "HumblewoodCampaignSetting",
+      "_copy": {
+        "ENG_name": "Corvum",
+        "name": "鸦族",
+        "source": "HumblewoodCampaignSetting",
+        "_mod": {
+          "entries": {
+            "mode": "prependArr",
+            "items": {
+              "type": "section",
+              "entries": [
+                "作为煽鸦族，你内心深知自己是房间里最聪明的人。你利用知识为自己谋利的能力，以及你对他人动机的深刻理解，使你成为一个强大的对手。"
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}

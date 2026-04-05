@@ -1,0 +1,36 @@
+{
+  "ENG_name": "One with Shadows",
+  "name": "融身入影",
+  "source": "XPHB",
+  "page": 156,
+  "srd52": true,
+  "featureType": [
+    "EI"
+  ],
+  "prerequisite": [
+    {
+      "level": {
+        "level": 5,
+        "class": {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB",
+          "visibleStats": true
+        }
+      }
+    }
+  ],
+  "additionalSpells": [
+    {
+      "innate": {
+        "_": [
+          "隐形术|xphb"
+        ]
+      }
+    }
+  ],
+  "entries": [
+    "身处{@variantrule 微光光照|XPHB}或{@variantrule 黑暗|XPHB}环境时，你可以对自身施展{@spell 隐形术|XPHB}且无需消耗法术位。"
+  ],
+  "translator": "不全书"
+}

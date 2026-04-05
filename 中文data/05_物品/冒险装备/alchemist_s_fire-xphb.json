@@ -1,0 +1,24 @@
+[
+  {
+    "name": "炽火胶",
+    "ENG_name": "Alchemist's Fire",
+    "source": "XPHB",
+    "page": 222,
+    "type": "G|XPHB",
+    "rarity": "none",
+    "weight": 1,
+    "value": 5000,
+    "entries": [
+      "当你执行{@action 攻击|XPHB}动作时，你可以将你的一次攻击替换为丢出一扁瓶炽火胶。你可以选择位于你20尺内可见的一个生物或物件作为目标。该目标必须通过一次敏捷豁免（{@dc 8}+你的敏捷调整值+你的{@variantrule 熟练|XPHB|熟练加值}），否则承受{@damage 1d4}点火焰伤害并开始{@hazard 燃烧|XPHB}。"
+    ],
+    "basicRules2024": true,
+    "miscTags": [
+      "CNS"
+    ],
+    "referenceSources": [
+      "DrDe-DaS"
+    ],
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

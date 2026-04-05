@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Charm of Sending",
+    "name": "短讯护咒",
+    "source": "IDRotF",
+    "page": 228,
+    "type": "Charm",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "limited": {
+              "1": [
+                "短讯术"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "entries": [
+      "此护咒允许你以动作施放{@spell 短讯术}法术且无需任何成分。使用一次后，该护咒会从你身上消失。"
+    ]
+  }
+]

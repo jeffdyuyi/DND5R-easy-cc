@@ -1,0 +1,47 @@
+[
+  {
+    "ENG_name": "Hand of Eryo",
+    "name": "厄里欧之手",
+    "source": "ObojimaTallGrass",
+    "page": 217,
+    "type": "Ingred",
+    "rarity": "rare",
+    "entries": [
+      {
+        "type": "table",
+        "colLabels": [
+          "{@font 战斗|RoglianoUltraBold}",
+          "{@font 实用性|RoglianoUltraBold}",
+          "{@font 古怪|RoglianoUltraBold}"
+        ],
+        "colStyles": [
+          "col-1 text-center",
+          "col-1 text-center",
+          "col-1 text-center"
+        ],
+        "rows": [
+          [
+            "{@font {@style 18|large}|SneakerProMedium}",
+            "{@font {@style 18|large}|SneakerProMedium}",
+            "{@font {@style 19|large}|SneakerProMedium}"
+          ]
+        ]
+      },
+      "这些极其珍稀的蘑菇是胧忆岛上所有可食用蘑菇中最受欢迎的。它们往往生长在最上层的树枝上，看起来像是在抓取天空。发现这些蘑菇的森林精魄会以饿鸦般的狂怒扑向它们，因此希望收获一些的希望采集者可能会发现激烈的竞争。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Ingredients/hand-of-eryo.webp"
+          },
+          "credit": "A.J. Bondio",
+          "width": 2049,
+          "height": 2049
+        }
+      ]
+    }
+  }
+]

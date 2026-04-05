@@ -1,0 +1,31 @@
+[
+  {
+    "name": "口粮(1天份)",
+    "ENG_name": "Rations (1 day)",
+    "source": "PHB",
+    "page": 153,
+    "type": "G",
+    "rarity": "none",
+    "weight": 2,
+    "value": 50,
+    "entries": [
+      "适合长途旅行携带的高能量干粮，包括牛肉干、干果、饼干和坚果等。"
+    ],
+    "basicRules": true,
+    "miscTags": [
+      "CNS"
+    ],
+    "referenceSources": [
+      "ToA",
+      "XMtS",
+      "DIP",
+      "CRCotN",
+      "ToFW"
+    ],
+    "reprintedAs": [
+      "口粮|XPHB"
+    ],
+    "srd": true,
+    "translator": "不全书"
+  }
+]

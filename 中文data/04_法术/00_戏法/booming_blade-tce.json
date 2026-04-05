@@ -1,0 +1,92 @@
+[
+  {
+    "ENG_name": "Booming Blade",
+    "name": "轰雷剑",
+    "source": "TCE",
+    "page": 106,
+    "otherSources": [
+      {
+        "source": "SCAG",
+        "page": 142
+      }
+    ],
+    "level": 0,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "radius",
+      "distance": {
+        "type": "feet",
+        "amount": 5
+      }
+    },
+    "components": {
+      "s": true,
+      "m": {
+        "text": "一把价值至少 1sp 的近战武器",
+        "cost": 10
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "round",
+          "amount": 1
+        }
+      }
+    ],
+    "entries": [
+      "你挥舞作为法术成分的那把武器，对你周围 5 尺范围内的一个生物发动一次近战武器攻击。如果攻击成功命中，目标会受到这次攻击的正常影响，并被包覆在爆破性的能量之中，直到你的下回合开始。如果目标在这之前主动移动了 5 尺或更多，法术效应将立刻结束并使其受到{@damage 1d8}雷鸣伤害。",
+      "此法术的伤害会随你的等级一同提升：到达 5 级后，这次近战攻击将造成额外{@damage 1d8}点雷鸣伤害，且目标进行移动时受到的伤害提升为{@damage 2d8}。两个伤害都会在 11 级后再增加 1d8（{@damage 2d8}和 {@damage 3d8}），17 级后再加 1d8（{@damage 3d8}和{@damage 4d8}）。"
+    ],
+    "scalingLevelDice": [
+      {
+        "label": "移动时受到的雷鸣伤害",
+        "scaling": {
+          "1": "1d8",
+          "5": "2d8",
+          "11": "3d8",
+          "17": "4d8"
+        }
+      },
+      {
+        "label": "命中时造成的雷鸣伤害",
+        "scaling": {
+          "5": "1d8",
+          "11": "2d8",
+          "17": "3d8"
+        }
+      }
+    ],
+    "damageInflict": [
+      "thunder"
+    ],
+    "spellAttack": [
+      "M"
+    ],
+    "miscTags": [
+      "AAD",
+      "SCL"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "奇械师",
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "塑能系",
+    "display_damageInflict": [
+      "雷鸣"
+    ]
+  }
+]

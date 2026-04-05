@@ -1,0 +1,73 @@
+[
+  {
+    "ENG_name": "Circle of Death",
+    "name": "死亡法阵",
+    "source": "XPHB",
+    "page": 250,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 6,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 150
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "价值 500GP+ 的研磨黑珍珠粉末",
+        "cost": 50000
+      }
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "一阵负能量波从施法距离内你选择的一点放出，覆盖以该点为中心半径 60 尺的{@variantrule 球状 [效应区域]|XPHB|球状}区域。每个位于区域内的生物都进行一次体质豁免，豁免失败者受到{@damage 8d8}点暗蚀伤害，豁免成功则受到半数伤害。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "使用的法术位每比六环高一环，法术的伤害就增加{@scaledamage 8d8|6-9|2d8}。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "necrotic"
+    ],
+    "savingThrow": [
+      "constitution"
+    ],
+    "areaTags": [
+      "S"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "魔契师",
+      "法师"
+    ],
+    "display_school": "死灵系",
+    "display_savingThrow": [
+      "体质"
+    ],
+    "display_damageInflict": [
+      "死灵"
+    ]
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "ENG_name": "Create or Destroy Water",
+    "name": "造水术/枯水术",
+    "source": "XPHB",
+    "page": 258,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-BD",
+      "DrDe-BtS"
+    ],
+    "level": 1,
+    "school": "T",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "水沙混合物"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你选择其一执行：",
+      {
+        "type": "list",
+        "style": "list-hang-notitle",
+        "items": [
+          {
+            "ENG_name": "Create Water",
+            "name": "造水",
+            "type": "item",
+            "entries": [
+              "你在施法距离内一个打开的容器中创造至多 10 加仑干净的水。作为另一种选项，你使施法距离内一处 30 尺的{@variantrule 立方 [效应区域]|XPHB|立方}区域降下雨水并浇灭区域内不受遮盖的火焰。"
+            ]
+          },
+          {
+            "ENG_name": "Destroy Water",
+            "name": "枯水",
+            "type": "item",
+            "entries": [
+              "你使施法距离内一个打开的容器里至多 10 加仑水枯竭不见。作为另一种选项，你使施法距离内一片 30 尺{@variantrule 立方 [效应区域]|XPHB|立方}区域的浓雾消失不见。"
+            ]
+          }
+        ]
+      }
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "使用的法术位每比一环高一环，法术就多创造或多枯竭 10 加仑额外的水分，另一种选项能影响的{@variantrule 立方 [效应区域]|XPHB|立方}区域边长增加 5 尺。"
+        ]
+      }
+    ],
+    "miscTags": [
+      "PRM"
+    ],
+    "areaTags": [
+      "C"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师",
+      "德鲁伊"
+    ],
+    "display_school": "变化系"
+  }
+]

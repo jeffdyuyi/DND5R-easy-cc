@@ -1,0 +1,21 @@
+{
+  "ENG_name": "Subtle Spell",
+  "name": "精妙法术",
+  "source": "PHB",
+  "page": 102,
+  "srd": true,
+  "reprintedAs": [
+    "精妙法术|XPHB"
+  ],
+  "featureType": [
+    "MM"
+  ],
+  "consumes": {
+    "ENG_name": "Sorcery Point",
+    "name": "术法点"
+  },
+  "entries": [
+    "施展一道法术时，你可以使用1术法点，使其不再具有言语成分和姿势成分。"
+  ],
+  "translator": "不全书"
+}

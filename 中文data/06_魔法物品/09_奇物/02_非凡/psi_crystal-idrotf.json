@@ -1,0 +1,91 @@
+[
+  {
+    "ENG_name": "Psi Crystal",
+    "name": "灵能水晶",
+    "source": "IDRotF",
+    "page": 315,
+    "rarity": "uncommon",
+    "reqAttune": "由智力属性值为3或更高的生物",
+    "reqAttuneTags": [
+      {
+        "int": 3
+      }
+    ],
+    "wondrous": true,
+    "entries": [
+      "只要你仍与该水晶同调，你得到心灵感应Telepathy能力。关于该能力的相关规则，请查阅{@book 怪物手册介绍|MM|0|心灵感应}。",
+      "当你与它同调时，该水晶还会与你的内心相感应，从而散发出紫色的心灵之光。",
+      "你的智力越高，它所能产生的光芒就越强烈，心灵感应的范围也就越大（见下表）。",
+      {
+        "type": "table",
+        "caption": "灵能水晶词条",
+        "colStyles": [
+          "col-2 text-center",
+          "col-2 text-center",
+          "col-8"
+        ],
+        "colLabels": [
+          "智力值",
+          "心灵感应的范围",
+          "闪光"
+        ],
+        "rows": [
+          [
+            "3-7",
+            "15尺",
+            "5尺微光光照"
+          ],
+          [
+            "8-11",
+            "30尺",
+            "5尺明亮光照以及其外5尺微光光照"
+          ],
+          [
+            "12-15",
+            "60尺",
+            "10尺明亮光照以及其外10尺微光光照"
+          ],
+          [
+            "16或更高",
+            "120尺",
+            "15尺明亮光照以及其外15尺微光光照"
+          ]
+        ]
+      }
+    ],
+    "light": [
+      {
+        "dim": 5
+      },
+      {
+        "bright": 5,
+        "dim": 10
+      },
+      {
+        "bright": 10,
+        "dim": 20
+      },
+      {
+        "bright": 15,
+        "dim": 30
+      }
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/IDRotF/Psi Crystal.webp"
+          },
+          "width": 816,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

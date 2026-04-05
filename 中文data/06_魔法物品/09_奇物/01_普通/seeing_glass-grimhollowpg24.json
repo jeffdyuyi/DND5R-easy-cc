@@ -1,0 +1,16 @@
+[
+  {
+    "ENG_name": "Seeing Glass",
+    "name": "照妖镜",
+    "source": "GrimHollowPG24",
+    "page": 127,
+    "type": "AdvEq",
+    "rarity": "none",
+    "weight": 3,
+    "value": 30000,
+    "entries": [
+      "这面华丽的银制手镜装饰着枯萎玫瑰的图案。镜子的倒影总是显示出任何生物的真实形态，就像观看者拥有{@sense 真实视觉|XPHB}一样。",
+      "如果照妖镜被转向一个吸血鬼，镜子会立即粉碎并被摧毁。"
+    ]
+  }
+]

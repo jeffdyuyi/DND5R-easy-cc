@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Thassa's Votary",
+    "name": "塔萨的信徒",
+    "source": "MOT",
+    "page": 79,
+    "type": "Piety Trait",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "daily": {
+              "1e": [
+                "闪现术"
+              ]
+            }
+          }
+        },
+        "ability": "int"
+      }
+    ],
+    "entries": [
+      "{@i 虔信值10+ 塔萨特质}",
+      "你可以使用此特性施放{@spell 闪现术}。一旦你以此方式施放该法术，直至完成一次长休，你无法再次使用此能力。智力是你施放该法术的施法属性。"
+    ]
+  }
+]

@@ -1,0 +1,79 @@
+[
+  {
+    "ENG_name": "Corrupting Spores",
+    "name": "腐坏孢子",
+    "source": "GuideDrakkenheim",
+    "page": 190,
+    "level": 4,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "附赠动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 120
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一个干燥的蘑菇"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "一小片三株毒蘑菇魔法般地在你可见范围内5尺见方的区域中生长出来。这些蘑菇散发出毒性孢子，任何在其回合开始时位于蘑菇补丁10尺范围内的生物必须进行一次体质豁免检定。若豁免失败，该生物将受到每株蘑菇{@damage 1d8}的毒素伤害，并陷入{@condition 中毒}状态直到其下个回合开始。",
+      "在该法术结束前，你可以在你的回合使用一个附赠动作使一片额外的蘑菇在补丁中生长。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用5环或更高法术位施放该法术时，初始补丁会为每个高于4环的法术位环阶额外长出一朵蘑菇。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "毒素"
+    ],
+    "conditionInflict": [
+      "中毒"
+    ],
+    "savingThrow": [
+      "体质"
+    ],
+    "miscTags": [
+      "SGT",
+      "UBA"
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Ranger",
+          "name": "游侠",
+          "source": "PHB"
+        }
+      ]
+    }
+  }
+]

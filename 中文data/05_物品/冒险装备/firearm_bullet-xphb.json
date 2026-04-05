@@ -1,0 +1,20 @@
+[
+  {
+    "name": "枪械子弹",
+    "ENG_name": "Firearm Bullet",
+    "source": "XPHB",
+    "page": 222,
+    "edition": "one",
+    "type": "A|XPHB",
+    "rarity": "none",
+    "weight": 0.2,
+    "value": 30,
+    "entries": [
+      "枪械子弹在现代枪械中使用后会被摧毁。"
+    ],
+    "bulletFirearm": true,
+    "miscTags": [
+      "CNS"
+    ]
+  }
+]

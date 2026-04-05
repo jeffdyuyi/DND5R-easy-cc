@@ -1,0 +1,76 @@
+[
+  {
+    "ENG_name": "Chain Lightning",
+    "name": "连锁闪电",
+    "source": "XPHB",
+    "page": 249,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 6,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 150
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "三根银针"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你放出一道闪电，射向施法距离内某个你能看见的指定目标。经过首个目标后，闪电分成三束跳向该目标 30 尺内至多 3 个其他目标。闪电的目标可以是生物或物件，但每束闪电必须指定不同的目标。",
+      "每个目标必须进行一次敏捷豁免。豁免失败者将受到{@damage 10d8}点闪电伤害，豁免成功则受到半数伤害。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "使用高于六环的法术位施展该法术时，你使用的法术位每比六环高一环，跳跃后闪电就多分出一束射向一个不同的目标。"
+        ]
+      }
+    ],
+    "damageInflict": [
+      "lightning"
+    ],
+    "savingThrow": [
+      "dexterity"
+    ],
+    "miscTags": [
+      "OBJ",
+      "SCT",
+      "SGT"
+    ],
+    "areaTags": [
+      "MT",
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "术士",
+      "法师"
+    ],
+    "display_school": "塑能系",
+    "display_savingThrow": [
+      "敏捷"
+    ],
+    "display_damageInflict": [
+      "闪电"
+    ]
+  }
+]

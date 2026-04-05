@@ -1,0 +1,16 @@
+[
+  {
+    "ENG_name": "Amulet of Appearance",
+    "name": "外表护符",
+    "source": "CoA",
+    "page": 267,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "你的盔甲、武器和其他装备总是闪耀着仿佛刚刚擦亮的光芒。即使你受伤，伤口也不会显现在他人面前。你对{@condition 恐慌}（惊恐）和{@condition 中毒}（中毒）状态免疫，因为这些状态会破坏你优雅的外表。然而，每当你本应受到这些状态之一的影响时，物质位面上你之前见过的一个随机非邪恶人形生物反而会受到该状态的影响。你知道这一点。"
+    ],
+    "valueReference": 4000,
+    "type": "W"
+  }
+]

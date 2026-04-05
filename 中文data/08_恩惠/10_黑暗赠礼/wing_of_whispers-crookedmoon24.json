@@ -1,0 +1,41 @@
+[
+  {
+    "ENG_name": "Wing of Whispers",
+    "name": "呢喃羽翼",
+    "source": "CrookedMoon24",
+    "page": 121,
+    "type": "Dark Bargain",
+    "entries": [
+      "你被赋予了秘密，可以召唤乌鸦和乌鸦的形态来承载你飞翔，但风险是反过来会暴露你自己的秘密。",
+      {
+        "ENG_name": "Murderous Flight",
+        "name": "群鸦翔空",
+        "type": "entries",
+        "entries": [
+          "作为{@variantrule 附赠动作|XPHB}，你可以魔法性地获得等于你{@variantrule 速度|XPHB}的{@variantrule 飞行速度|XPHB}（并且你可以悬浮）持续10分钟。在此期间，一团幽影呈现出乌鸦群的外形（但它们并非真正的生物）。这些鸟出现在以你为源点的20尺{@variantrule 光环 [效应区域]|XPHB|光环}中，当你飞行时它们会起飞并围绕你盘旋。一旦你使用此特性，在完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}前无法再次使用，除非你获得1{@condition 力竭|XPHB}等级来提前再次使用它。"
+        ]
+      },
+      {
+        "ENG_name": "Whispered Secrets",
+        "name": "呢喃秘闻",
+        "type": "entries",
+        "entries": [
+          "当你激活杀戮飞行时出现的鸟群会一直存在并跟随你，直到你完成一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}。当鸟群存在时，你在敏捷（{@skill 隐匿|XPHB}）检定上具有{@variantrule 劣势|XPHB}，并且鸟群会向其他生物低语你的秘密，使它们在对你的感知（{@skill 洞悉|XPHB}或{@skill 察觉|XPHB}）检定上获得{@variantrule 优势|XPHB}。"
+        ]
+      }
+    ],
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/CrookedMoon24/Rewards/Wing%20of%20Whispers.webp"
+        },
+        "width": 850,
+        "height": 297,
+        "credit": "Rowan Holloway"
+      }
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Bargains/Wing%20of%20Whispers.webp"
+  }
+]

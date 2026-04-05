@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Sling Bullet, Desecrated",
+    "name": "投石索子弹，亵渎",
+    "source": "GrimHollowPG24",
+    "page": 129,
+    "type": "A|XPHB",
+    "rarity": "none",
+    "weight": 0.1,
+    "value": 2000,
+    "entries": [
+      "当你用亵渎之箭命中时，武器的伤害类型变为暗蚀。此外，如果目标是天界生物、类人生物或植物，该生物的{@variantrule 速度|XPHB}缩小10尺直到其下个回合结束，且该生物在下一回合开始前不能进行{@variantrule 反应|XPHB|反应}。"
+    ],
+    "miscTags": [
+      "CNS"
+    ]
+  }
+]

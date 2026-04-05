@@ -1,0 +1,40 @@
+{
+  "ENG_name": "Boots of the Winding Path",
+  "name": "折返之靴",
+  "source": "TCE",
+  "page": 21,
+  "otherSources": [
+    {
+      "source": "ERLW",
+      "page": 62
+    }
+  ],
+  "reprintedAs": [
+    {
+      "uid": "折返之靴|EFA",
+      "tag": "item"
+    }
+  ],
+  "featureType": [
+    "AI"
+  ],
+  "prerequisite": [
+    {
+      "level": {
+        "level": 6,
+        "class": {
+          "ENG_name": "Artificer",
+          "name": "奇械师",
+          "source": "TCE"
+        }
+      },
+      "item": [
+        "一双靴子（需要同调）"
+      ]
+    }
+  ],
+  "entries": [
+    "穿着这双靴子时，那名生物能以一个附赠动作传送到一处距离该生物15尺范围内的可以看到的未占据空间中。不过，该生物必须在本回合内的某个时间点里曾占据过这个空间。"
+  ],
+  "translator": "不全书"
+}

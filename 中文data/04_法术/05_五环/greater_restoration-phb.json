@@ -1,0 +1,87 @@
+[
+  {
+    "ENG_name": "Greater Restoration",
+    "name": "高等复原术",
+    "source": "PHB",
+    "page": 246,
+    "srd": true,
+    "basicRules": true,
+    "referenceSources": [
+      "OotA",
+      "CoS",
+      "TftYP-THSoT",
+      "TftYP-DiT",
+      "ToA",
+      "WDH",
+      "WDMM",
+      "OoW",
+      "SLW",
+      "BGDIA",
+      "IMR",
+      "IDRotF",
+      "CM",
+      "AitFR-DN",
+      "CRCotN",
+      "PaBTSO",
+      "ToFW",
+      "CoA",
+      "VEoR",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "高等复原术|XPHB"
+    ],
+    "level": 5,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "价值至少 100gp 的钻石粉，作为该法术的耗材",
+        "cost": 10000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你为一个触碰到的生物灌注正能量来解除一项弱化效应。你可以使目标的{@condition 力竭}等级降低一级，或者选择终止目标身上的下列效应之一：",
+      {
+        "type": "list",
+        "items": [
+          "一项影响目标的{@condition 魅惑}或{@condition 石化}效应",
+          "一项诅咒，包括目标与一件被诅咒魔法物品的同调",
+          "对目标某项属性值的减损",
+          "一项降低目标生命值上限的效应"
+        ]
+      }
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "牧师",
+      "德鲁伊",
+      "奇械师",
+      "游侠"
+    ],
+    "display_school": "防护系"
+  }
+]

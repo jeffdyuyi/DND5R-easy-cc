@@ -1,0 +1,37 @@
+[
+  {
+    "ENG_name": "Charm of Restoration",
+    "name": "复原护咒",
+    "source": "DMG",
+    "page": 228,
+    "otherSources": [
+      {
+        "source": "IDRotF",
+        "page": 228
+      }
+    ],
+    "reprintedAs": [
+      "复原护咒|XDMG"
+    ],
+    "type": "Charm",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "limited": {
+              "1e": [
+                "高等复原术"
+              ],
+              "3e": [
+                "次等复原术"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "entries": [
+      "该护咒有6发充能。你可以用一个动作消耗定量的充能来施放下列法术：{@spell 高等复原术}（4充能）或 {@spell 次等复原术}（2充能）。所有充能耗尽后，该护咒便会从你身上消失。"
+    ]
+  }
+]

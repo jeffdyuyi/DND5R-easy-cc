@@ -1,0 +1,21 @@
+{
+  "ENG_name": "School of Evocation",
+  "name": "塑能学派",
+  "shortName": "塑能",
+  "source": "PHB",
+  "className": "法师",
+  "classSource": "PHB",
+  "page": 117,
+  "srd": true,
+  "basicRules": true,
+  "reprintedAs": [
+    "塑能师|XPHB"
+  ],
+  "subclassFeatures": [
+    "塑能专家|法师|PHB|塑能|PHB|2",
+    "塑造法术|法师|PHB|塑能|PHB|2",
+    "强力戏法|法师|PHB|塑能|PHB|6",
+    "赋能塑能|法师|PHB|塑能|PHB|10",
+    "过度引导|法师|PHB|塑能|PHB|14"
+  ]
+}

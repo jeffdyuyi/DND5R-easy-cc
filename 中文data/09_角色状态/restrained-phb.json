@@ -1,0 +1,48 @@
+[
+  {
+    "name": "束缚",
+    "ENG_name": "Restrained",
+    "source": "PHB",
+    "page": 292,
+    "srd": true,
+    "basicRules": true,
+    "entries": [
+      {
+        "type": "list",
+        "items": [
+          "被束缚生物的速度变为0，并且无法受益于任何速度加值。",
+          "对该生物发动攻击检定时具有优势。而目盲生物发动攻击检定时具有劣势。",
+          "该生物在敏捷豁免检定上具有劣势。"
+        ]
+      }
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "conditionsdiseases/PHB/restrained.webp"
+          },
+          "width": 432,
+          "height": 463
+        }
+      ]
+    },
+    "hasFluffImages": true,
+    "otherSources": [
+      {
+        "source": "RMR",
+        "page": 62
+      },
+      {
+        "source": "HftT",
+        "page": 48
+      }
+    ],
+    "reprintedAs": [
+      "束缚|XPHB"
+    ],
+    "translator": "不全书"
+  }
+]

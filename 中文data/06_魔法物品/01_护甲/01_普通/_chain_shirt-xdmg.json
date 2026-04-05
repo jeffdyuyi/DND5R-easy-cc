@@ -1,0 +1,33 @@
+[
+  {
+    "ENG_name": "Smoldering Chain Shirt",
+    "name": "焖燃链甲衫",
+    "source": "XDMG",
+    "page": 305,
+    "srd52": true,
+    "basicRules2024": true,
+    "edition": "one",
+    "type": "MA|XPHB",
+    "rarity": "common",
+    "weight": 20,
+    "value": 5000,
+    "ac": 13,
+    "armor": true,
+    "hasFluffImages": true,
+    "namePrefix": "焖燃",
+    "entries": [
+      "当穿戴这件盔甲时，会升起无害、无味的烟雾。"
+    ],
+    "lootTables": [
+      "武备 - 普通|XDMG",
+      "圣物 - 普通|XDMG"
+    ],
+    "_isVariant": true,
+    "valueReference": 100,
+    "otherSources": [
+      {
+        "source": "XGE"
+      }
+    ]
+  }
+]

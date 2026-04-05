@@ -1,0 +1,59 @@
+[
+    {
+        "ENG_name": "Altered",
+        "name": "异变者",
+        "source": "CrookedMoon24",
+        "page": 113,
+        "category": "O",
+        "entries": [
+            "你因魔法、科学或二者的不稳定融合而发生改变。你拥有下列选项中一种明显的身体强化（由你选择）。除非经过伪装，否则这种强化是显而易见的——例如缝合的痕迹、其他生物身体部位的移植，或植入物。",
+            {
+                "ENG_name": "Aquatic Adaptation",
+                "name": "水生适应",
+                "type": "entries",
+                "entries": [
+                    "你长有鳃或黏膜，使你能够在水下呼吸，并且你拥有蹼状肢体，使你获得等同于你{@variantrule 游泳速度|XPHB}的{@variantrule 速度|XPHB}。"
+                ]
+            },
+            {
+                "ENG_name": "Natural Armor",
+                "type": "entries",
+                "name": "天生护甲",
+                "entries": [
+                    "你拥有鳞片、甲板或厚皮，使你获得13 + 你的敏捷或体质调整值（当你选择此专长时选择该属性）的护甲等级。"
+                ]
+            },
+            {
+                "ENG_name": "Natural Weapons",
+                "name": "天生武器",
+                "type": "entries",
+                "entries": [
+                    "你长有爪、獠牙、角或其他天生武器，你可以使用它们进行{@variantrule 徒手打击|XPHB|徒手打击}并在命中时造成{@damage 1d8}伤害。伤害类型为钝击、穿刺或挥砍，视具体形态而定。"
+                ]
+            },
+            {
+                "ENG_name": "Night Vision",
+                "name": "夜视",
+                "type": "entries",
+                "entries": [
+                    "你拥有{@sense 黑暗视觉|XPHB}，范围为60尺。如果你已经拥有{@sense 黑暗视觉|XPHB}，则其范围增加30尺。"
+                ]
+            }
+        ],
+        "fluff": {
+            "images": [
+                {
+                    "type": "image",
+                    "href": {
+                        "type": "external",
+                        "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Feats/Altered.webp"
+                    },
+                    "width": 850,
+                    "height": 1467,
+                    "credit": "Suzanne Helmigh"
+                }
+            ]
+        },
+        "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Feats/Altered.webp"
+    }
+]

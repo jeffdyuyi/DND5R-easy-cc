@@ -1,0 +1,30 @@
+[
+  {
+    "ENG_name": "Belt of Frost Giant Strength",
+    "name": "霜巨人力量腰带",
+    "source": "DMG",
+    "page": 155,
+    "srd": true,
+    "reprintedAs": [
+      "霜巨人力量腰带|XDMG"
+    ],
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "ability": {
+      "static": {
+        "str": 23
+      }
+    },
+    "entries": [
+      "穿戴此腰带期间，你的力量值变为23。如果你未着装该腰带的情况下，力量值已经大于或等于腰带赋予的数值，则此物品无效。"
+    ],
+    "lootTables": [
+      "魔法物品表H"
+    ],
+    "translator": "不全书",
+    "valueReference": 40000,
+    "type": "W"
+  }
+]

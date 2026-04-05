@@ -1,0 +1,32 @@
+[
+  {
+    "ENG_name": "Wand of Entangle",
+    "name": "纠缠魔杖",
+    "source": "TftYP",
+    "page": 229,
+    "type": "WD|DMG",
+    "rarity": "uncommon",
+    "reqAttune": "由施法者",
+    "reqAttuneTags": [
+      {
+        "spellcasting": true
+      }
+    ],
+    "weight": 1,
+    "recharge": "拂晓",
+    "rechargeAmount": "{@dice 1d6 + 1}",
+    "charges": 7,
+    "entries": [
+      "这根魔杖有7次充能。在持握它时，你可以使用一个动作来消耗它的1次充能以从其上施放{@spell 纠缠术}（豁免难度 {@dc 13}）。",
+      "该魔杖每天黎明时恢复{@dice 1d6 + 1}发已消耗的充能。如果你消耗了魔杖的最后一发充能，骰一次{@dice d20}。如果骰值为1，魔杖将化为灰烬而毁灭。"
+    ],
+    "attachedSpells": {
+      "charges": {
+        "1": [
+          "纠缠术"
+        ]
+      }
+    },
+    "valueReference": 400
+  }
+]

@@ -1,0 +1,306 @@
+[
+  {
+    "name": "龙裔",
+    "ENG_name": "Dragonborn",
+    "source": "XPHB",
+    "edition": "one",
+    "page": 187,
+    "size": [
+      "M"
+    ],
+    "speed": 30,
+    "darkvision": 60,
+    "resist": [
+      {
+        "choose": {
+          "from": [
+            "强酸",
+            "闪电",
+            "火焰",
+            "毒素",
+            "寒冷"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Draconic Ancestry",
+        "name": "龙族血统",
+        "type": "entries",
+        "entries": [
+          "你的血脉可以追溯到某种巨龙祖先。从龙族血统表格中选择一种龙。你选择的龙种将会影响你的吐息武器和{@variantrule 伤害|XPHB}{@variantrule 抗性|XPHB}特质，以及你的外表。",
+          {
+            "type": "table",
+            "caption": "龙族血统",
+            "colLabels": [
+              "龙",
+              "伤害类型"
+            ],
+            "colStyles": [
+              "col-6",
+              "col-6"
+            ],
+            "rows": [
+              [
+                "黑",
+                "强酸"
+              ],
+              [
+                "蓝",
+                "闪电"
+              ],
+              [
+                "黄铜",
+                "火焰"
+              ],
+              [
+                "青铜",
+                "闪电"
+              ],
+              [
+                "赤铜",
+                "强酸"
+              ],
+              [
+                "金",
+                "火焰"
+              ],
+              [
+                "绿",
+                "毒素"
+              ],
+              [
+                "红",
+                "火焰"
+              ],
+              [
+                "银",
+                "寒冷"
+              ],
+              [
+                "白",
+                "寒冷"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "ENG_name": "Breath Weapon",
+        "type": "entries",
+        "name": "吐息武器",
+        "entries": [
+          "每当你在自己回合内进行{@action 攻击|XPHB}动作时，你可以将其中一次攻击替换为释放魔法性的能量，覆盖15尺{@variantrule 锥状 [效应区域]|XPHB|锥状}区域或30尺长5尺宽的{@variantrule 线状 [效应区域]|XPHB|线状}区域（每次吐息时选择其范围）。区域内的生物必须进行一次敏捷豁免检定（{@dc 8}+你的体质调整值+你的{@variantrule 熟练|XPHB|熟练加值}）。豁免失败的生物受到{@damage 1d10}伤害，伤害类型为你龙族血统特质所选龙种对应的类型。豁免成功的生物只受到一半伤害。此伤害会在你达到特定等级时提升{@damage 1d10}：5级（{@damage 2d10}），11级（{@damage 3d10}）和17级（{@damage 4d10}）。",
+          "你可以使用此吐息武器的次数等于你的{@variantrule 熟练|XPHB|熟练加值}，完成一次{@variantrule 长休|XPHB}后，你重获全部已消耗的使用次数。"
+        ]
+      },
+      {
+        "ENG_name": "Damage Resistance",
+        "name": "伤害抗性",
+        "type": "entries",
+        "entries": [
+          "根据你龙族血统特质所选龙种，你获得对应的伤害类型的伤害{@variantrule 抗性|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Darkvision",
+        "name": "黑暗视觉",
+        "type": "entries",
+        "entries": [
+          "你拥有 60 尺{@sense 黑暗视觉|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Draconic Flight",
+        "name": "龙族飞翼",
+        "type": "entries",
+        "entries": [
+          "到达 5 级后，你可以引导体内龙之魔法的能力，让自己暂时获得飞行能力。以一个{@variantrule 附赠动作|XPHB}，你的后背临时伸出两片灵体飞翼，持续 10 分钟，陷入{@condition 失能|XPHB}状态时或你主动收起它时（无需动作）它将提前消失。飞翼存在期间，你获得{@variantrule 飞行速度|XPHB}（等于你的{@variantrule 速度|XPHB}）。你的翅膀看起来像是和你吐息武器相同的能量凝聚而成。使用此特质后，直到你完成一次{@variantrule 长休|XPHB}为止你都不能再次使用它。"
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "entries",
+              "entries": [
+                "龙裔的先祖由金属龙和色彩龙的龙蛋孵化而来。有故事传言，这些龙蛋乃是得到了龙神巴哈姆特或提亚马特的祝福，应两位希望让多元宇宙布满自己造物的愿景而生。但也有故事称，最初的龙裔是由巨龙们独立制造，与神无关。无论起源如何，龙裔都已经在物质位面中扎根落地，繁衍生息。",
+                "龙裔看起来就如同双足行走的无翼巨龙——明亮而灼热的眼瞳，头顶细长的骨角，其独有的色泽和其他特征更是彰显着其龙类先祖。"
+              ]
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/XPHB/Dragonborn.webp"
+          },
+          "credit": "David Auden Nash",
+          "width": 2100,
+          "height": 1359
+        }
+      ]
+    },
+    "_versions": [
+      {
+        "_abstract": {
+          "ENG_name": "Dragonborn ({{color}})",
+          "name": "龙裔 ({{color}})",
+          "source": "XPHB",
+          "_mod": {
+            "entries": [
+              {
+                "mode": "removeArr",
+                "names": "龙族血统"
+              },
+              {
+                "mode": "replaceArr",
+                "replace": "吐息武器",
+                "items": {
+                  "ENG_name": "Breath Weapon",
+                  "type": "entries",
+                  "name": "吐息武器",
+                  "entries": [
+                    "每当你在自己回合内进行{@action 攻击|XPHB}动作时，你可以将其中一次攻击替换为释放魔法性的能量，覆盖 15 尺{@variantrule 锥状 [效应区域]|XPHB|锥状}区域或 30 尺长 5 尺宽的{@variantrule 线状 [效应区域]|XPHB|线状}区域（每次吐息时选择其范围）。区域内的生物必须进行一次敏捷豁免检定（{@dc 8} + 你的体质调整值 + 你的{@variantrule 熟练|XPHB|熟练加值}）。豁免失败的生物受到{@damage 1d10} {{damageType}} 伤害。豁免成功的生物只受到一半伤害。此伤害会在你达到特定等级时增加{@damage 1d10}：5 级（{@damage 2d10}），11 级（{@damage 3d10}）和 17 级（{@damage 4d10}）。",
+                    "你可以使用此吐息武器的次数等于你的{@variantrule 熟练|XPHB|熟练加值}，完成一次{@variantrule 长休|XPHB}后，你重获全部已消耗的使用次数。"
+                  ]
+                }
+              },
+              {
+                "mode": "replaceArr",
+                "replace": "伤害抗性",
+                "items": {
+                  "ENG_name": "Damage Resistance",
+                  "name": "伤害抗性",
+                  "type": "entries",
+                  "entries": [
+                    "你对{{damageType}}伤害具有{@variantrule 抗性|XPHB}。"
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "_implementations": [
+          {
+            "_variables": {
+              "color": "黑",
+              "damageType": "强酸"
+            },
+            "resist": [
+              "强酸"
+            ]
+          },
+          {
+            "_variables": {
+              "color": "蓝",
+              "damageType": "闪电"
+            },
+            "resist": [
+              "闪电"
+            ]
+          },
+          {
+            "_variables": {
+              "color": "黄铜",
+              "damageType": "火焰"
+            },
+            "resist": [
+              "火焰"
+            ]
+          },
+          {
+            "_variables": {
+              "color": "青铜",
+              "damageType": "闪电"
+            },
+            "resist": [
+              "闪电"
+            ]
+          },
+          {
+            "_variables": {
+              "color": "赤铜",
+              "damageType": "强酸"
+            },
+            "resist": [
+              "强酸"
+            ]
+          },
+          {
+            "_variables": {
+              "color": "金",
+              "damageType": "火焰"
+            },
+            "resist": [
+              "火焰"
+            ]
+          },
+          {
+            "_variables": {
+              "color": "绿",
+              "damageType": "毒素"
+            },
+            "resist": [
+              "毒素"
+            ]
+          },
+          {
+            "_variables": {
+              "color": "红",
+              "damageType": "火焰"
+            },
+            "resist": [
+              "火焰"
+            ]
+          },
+          {
+            "_variables": {
+              "color": "银",
+              "damageType": "寒冷"
+            },
+            "resist": [
+              "寒冷"
+            ]
+          },
+          {
+            "_variables": {
+              "color": "白",
+              "damageType": "寒冷"
+            },
+            "resist": [
+              "寒冷"
+            ]
+          }
+        ]
+      }
+    ],
+    "basicRules2024": true,
+    "creatureTypes": [
+      "类人"
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "sizeEntry": {
+      "ENG_name": "Size:",
+      "name": "体型：",
+      "type": "item",
+      "entries": [
+        "中型（约 5-7 尺高）"
+      ]
+    },
+    "soundClip": {
+      "type": "internal",
+      "path": "races/dragonborn.mp3"
+    },
+    "srd52": true,
+    "translator": "不全书"
+  }
+]

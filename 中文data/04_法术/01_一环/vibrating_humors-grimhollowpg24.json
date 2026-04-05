@@ -1,0 +1,81 @@
+[
+  {
+    "ENG_name": "Vibrating Humors",
+    "name": "振动体液",
+    "source": "GrimHollowPG24",
+    "page": 205,
+    "level": 1,
+    "school": "V",
+    "subschools": [
+      "血魔法"
+    ],
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": "一把音叉"
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "minute",
+          "amount": 1
+        },
+        "concentration": true
+      }
+    ],
+    "entries": [
+      "作为施放该法术的一部分，你必须消耗一个{@variantrule 生命值骰|XPHB|生命骰}否则法术自动失败。你30尺内一个你能看见的生物必须进行体质豁免检定。若豁免失败，目标受到雷鸣伤害并且由于血液剧烈振动而获得{@variantrule 劣势|XPHB}于敏捷（{@skill 隐匿|XPHB}）检定。为确定此伤害，掷骰消耗用于施放该法术的{@variantrule 生命值骰|XPHB|生命值骰}。",
+      "目标在每个回合结束时重复豁免，成功时终止法术。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "你通过为每个高于1环的法术位环阶消耗额外的{@variantrule 生命值骰|XPHB|生命骰}来增加伤害。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "savingThrow": [
+      "体质"
+    ],
+    "miscTags": [
+      "SGT"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Vibrating%20Humors.webp"
+  }
+]

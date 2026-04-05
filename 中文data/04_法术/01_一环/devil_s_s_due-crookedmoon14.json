@@ -1,0 +1,73 @@
+[
+  {
+    "ENG_name": "Devil's Due",
+    "name": "魔鬼报偿",
+    "source": "CrookedMoon14",
+    "page": 128,
+    "reprintedAs": [
+      "魔鬼报偿|crookedmoon24"
+    ],
+    "level": 1,
+    "school": "N",
+    "time": [
+      {
+        "number": 1,
+        "unit": "反应",
+        "condition": "当你周边60尺范围内另一生物受到伤害时"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 30
+      }
+    },
+    "components": {
+      "s": true,
+      "m": "一团沥青块"
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你吸收一份生物的苦难和逸散的生命精华。消耗并投掷一个生命骰。你恢复等同于掷骰数值加上你的施法属性调整值的生命值。",
+      "如果该生物因重击受到伤害，你恢复的生命值数值翻倍。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "At Higher Levels",
+        "name": "升环施法效应",
+        "type": "entries",
+        "entries": [
+          "当你使用2环或更高法术位施放该法术时，法术位每比1环高一级，你就可以额外消耗一颗生命骰。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "PHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "PHB"
+        }
+      ]
+    },
+    "miscTags": [
+      "HL"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Spells/Devils-Due.webp"
+  }
+]

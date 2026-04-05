@@ -1,0 +1,26 @@
+[
+  {
+    "ENG_name": "Draconic Familiar",
+    "name": "龙类魔宠",
+    "source": "FTD",
+    "page": 28,
+    "type": "Draconic Gift",
+    "rarity": "uncommon",
+    "additionalSpells": [
+      {
+        "innate": {
+          "_": {
+            "ritual": [
+              "寻获魔宠"
+            ]
+          }
+        }
+      }
+    ],
+    "entries": [
+      "你获得一条龙类魔宠的帮助，它可能是赋予你力量的龙的意识碎片。",
+      "你可以不需要任何法术成分地以仪式施放{@spell 寻获魔宠}法术。当你以这种形式施法时，你的魔宠总是会以{@creature 伪龙}的形态出现。",
+      "此外，当你在你的回合中使用{@action 攻击}动作时，你可以放弃自己的其中一次攻击，以让你的伪龙魔宠用它的反应进行一次攻击。"
+    ]
+  }
+]

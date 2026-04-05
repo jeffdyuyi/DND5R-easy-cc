@@ -1,0 +1,36 @@
+[
+  {
+    "name": "重弩",
+    "ENG_name": "Heavy Crossbow",
+    "source": "PHB",
+    "page": 149,
+    "edition": "classic",
+    "type": "R",
+    "rarity": "none",
+    "weight": 18,
+    "value": 5000,
+    "weaponCategory": "martial",
+    "property": [
+      "A",
+      "H",
+      "LD",
+      "2H"
+    ],
+    "dmg1": "1d10",
+    "dmgType": "P",
+    "range": "100/400",
+    "ammoType": "弩矢|PHB",
+    "basicRules": true,
+    "crossbow": true,
+    "referenceSources": [
+      "CoS",
+      "TTP",
+      "SCC-ARiR"
+    ],
+    "reprintedAs": [
+      "重弩|XPHB"
+    ],
+    "srd": true,
+    "weapon": true
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "ENG_name": "Cat's Spring",
+    "name": "猫之跃动",
+    "source": "CthulhuTorchlight",
+    "page": 0,
+    "level": 0,
+    "school": "C",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "self"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你跳跃至多10尺至一处你可见的未占据空间，并以幽魂利爪发动攻击，造成挥砍或力场伤害（由你在施放该法术时选择）。你对目标发动一次近战法术攻击。命中则目标受到{@damage 1d8}你选择类型的伤害，且你在你的下个回合结束前对其发动的下一次攻击检定具有{@variantrule 优势|XPHB}。"
+    ],
+    "entriesHigherLevel": [
+      {
+        "ENG_name": "Using a Higher-Level Spell Slot",
+        "name": "升环施法",
+        "type": "entries",
+        "entries": [
+          "本法术的伤害会在你达到下列等级时提升{@dice 1d8}：5级（{@dice 2d8}）、11级（3d8）以及17级（{@dice 4d8}）。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Bard",
+          "name": "吟游诗人",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Druid",
+          "name": "德鲁伊",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Sorcerer",
+          "name": "术士",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        },
+        {
+          "ENG_name": "Wizard",
+          "name": "法师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "spellAttack": [
+      "M"
+    ],
+    "miscTags": [
+      "ADV",
+      "SCL",
+      "SGT"
+    ]
+  }
+]

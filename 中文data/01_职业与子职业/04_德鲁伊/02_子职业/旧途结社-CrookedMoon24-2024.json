@@ -1,0 +1,345 @@
+{
+  "ENG_name": "Circle of the Old Ways",
+  "name": "旧途结社",
+  "shortName": "旧途",
+  "source": "CrookedMoon24",
+  "className": "德鲁伊",
+  "classSource": "XPHB",
+  "page": 74,
+  "edition": "one",
+  "additionalSpells": [
+    {
+      "prepared": {
+        "3": [
+          "先祖授慧|crookedmoon24",
+          "树肤术|XPHB",
+          "虔诚护盾|XPHB",
+          "橡棍术|XPHB",
+          "荆棘丛生|XPHB"
+        ],
+        "5": [
+          "防护法阵|XPHB",
+          "植物滋长|XPHB"
+        ],
+        "7": [
+          "行动自如|XPHB",
+          "魔邓肯私人密室|XPHB"
+        ],
+        "9": [
+          "启蒙术|XPHB",
+          "树跃术|XPHB"
+        ]
+      }
+    }
+  ],
+  "subclassSpells": [
+    "先祖授慧|crookedmoon24",
+    "树肤术|XPHB",
+    "虔诚护盾|XPHB",
+    "橡棍术|XPHB",
+    "荆棘丛生|XPHB",
+    "防护法阵|XPHB",
+    "植物滋长|XPHB",
+    "行动自如|XPHB",
+    "魔邓肯私人密室|XPHB",
+    "启蒙术|XPHB",
+    "树跃术|XPHB"
+  ],
+  "subclassFeatures": [
+    {
+      "ENG_name": "Bough and Branch",
+      "name": "主干与分枝",
+      "source": "CrookedMoon24",
+      "page": 75,
+      "className": "德鲁伊",
+      "classSource": "XPHB",
+      "subclassShortName": "旧途",
+      "subclassSource": "crookedmoon24",
+      "level": 3,
+      "entries": [
+        "在你手中，即便是最低微的武器也能引导古老森林的威能。当你施展{@spell 橡棍术|XPHB}时，你可以在一只空闲的手中（如果有的话）长出一面由扭曲木材制成的{@item 盾牌|XPHB}（无需动作即可穿着），该盾牌在该法术结束时消失。除非你陷入{@condition 失能|XPHB}状态，否则你无法被迫放下受此影响的武器或盾牌。",
+        "此外，在该法术的持续时间内，你无视你德鲁伊法术的姿势成分，并且该法术所强化的武器会成为你的{@item 德鲁伊法器|XPHB}。"
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Druid/Bough%20and%20Branch.webp"
+    },
+    {
+      "ENG_name": "Circle of the Old Ways",
+      "name": "旧途结社",
+      "source": "CrookedMoon24",
+      "page": 74,
+      "className": "德鲁伊",
+      "classSource": "XPHB",
+      "subclassShortName": "旧途",
+      "subclassSource": "crookedmoon24",
+      "level": 3,
+      "entries": [
+        "{@i 与远古森林融为一体}",
+        "旧途结社的德鲁伊对至暗森林的腹地情有独钟，他们与潜藏其中的失落古老实体沟通，并唤来真正原始的力量，成为最古老蛮荒之地的守护者。",
+        "他们驾驭着长老木的力量，这些树木是早已逝去的妖精灵魂的家园，并在被召唤时分享其原初的感知与力量。",
+        "旧途圣地表格提供了一些示例以供选择或用作激励，来创建那些被旧途深深影响的地点，你的结社可以在此集会，或者你可以在这些地点与原始力量交流。",
+        {
+          "type": "table",
+          "caption": "旧途圣地",
+          "colLabels": [
+            "1d6",
+            "旧途圣地"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows": [
+            [
+              "1",
+              "偏远山顶上的一圈立石，每一块都刻有符文与象征代表动物精魂。"
+            ],
+            [
+              "2",
+              "深邃峡谷底部一条被永久冻结的河流，冰层下游弋着许多巨大且似乎拥有智慧的鱼类。"
+            ],
+            [
+              "3",
+              "被焦土沙丘掩埋的隐藏洞穴，每年有四次会在流沙的作用下显露一晚。"
+            ],
+            [
+              "4",
+              "海岸边的一个湍急的潮汐池，其深不见底的水中盛满了会发光的动植物与丛生的晶体。"
+            ],
+            [
+              "5",
+              "一圈古老的树木，树皮幽白，树叶血红，每一棵树上都浮现着一位逝去已久的德鲁伊面孔。"
+            ],
+            [
+              "6",
+              "深林深处的庞大古冢，里面是无数精类与自然界古老神灵的精魂。"
+            ]
+          ]
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "主干与分枝|德鲁伊|XPHB|旧途|crookedmoon24|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "旧途结社法术|德鲁伊|XPHB|旧途|crookedmoon24|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "树灵化身|德鲁伊|XPHB|旧途|crookedmoon24|3"
+        }
+      ]
+    },
+    {
+      "ENG_name": "Circle of the Old Ways Spells",
+      "name": "旧途结社法术",
+      "source": "CrookedMoon24",
+      "page": 74,
+      "className": "德鲁伊",
+      "classSource": "XPHB",
+      "subclassShortName": "旧途",
+      "subclassSource": "crookedmoon24",
+      "level": 3,
+      "entries": [
+        "当你达到旧途结社法术表中提及的德鲁伊等级时，你便始终准备着列出的法术。",
+        {
+          "type": "table",
+          "caption": "旧途结社法术",
+          "colLabels": [
+            "德鲁伊等级",
+            "准备法术"
+          ],
+          "colStyles": [
+            "col-1 text-center",
+            "col-11"
+          ],
+          "rows": [
+            [
+              "3",
+              "{@spell 先祖授慧|crookedmoon24}, {@spell 树肤术|XPHB}, {@spell 虔诚护盾|XPHB}, {@spell 橡棍术|XPHB}, {@spell 荆棘丛生|XPHB}"
+            ],
+            [
+              "5",
+              "{@spell 防护法阵|XPHB}, {@spell 植物滋长|XPHB}"
+            ],
+            [
+              "7",
+              "{@spell 行动自如|XPHB}, {@spell 魔邓肯私人密室|XPHB|私人密室}"
+            ],
+            [
+              "9",
+              "{@spell 启蒙术|XPHB}, {@spell 树跃术|XPHB}"
+            ]
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Druid/Circle%20of%20the%20Old%20Way%20Spells.webp"
+    },
+    {
+      "ENG_name": "Wood Wose",
+      "name": "树灵化身",
+      "source": "CrookedMoon24",
+      "page": 75,
+      "className": "德鲁伊",
+      "classSource": "XPHB",
+      "subclassShortName": "旧途",
+      "subclassSource": "crookedmoon24",
+      "level": 3,
+      "entries": [
+        "作为一项{@variantrule 附赠动作|XPHB}，或者作为施展{@spell 橡棍术|XPHB}的一部分，你可以消耗一次荒野形态特性的使用次数，以原始森林的力量浸润自身，获得如下增益。",
+        {
+          "ENG_name": "Bark Bulwark",
+          "name": "树皮堡垒",
+          "type": "entries",
+          "entries": [
+            "当你未着装护甲时，你的基础{@variantrule 护甲等级|XPHB}等于10+你的敏捷和感知调整值。"
+          ]
+        },
+        {
+          "ENG_name": "Elderwood Sap",
+          "name": "长老木汁",
+          "type": "entries",
+          "entries": [
+            "当你使用被{@spell 橡棍术|XPHB}强化的武器进行攻击检定并命中一个生物时，目标会被长老木汁所包裹，直至你的下一回合开始。被包裹期间，目标对你以外的其他目标进行的攻击检定具有{@variantrule 劣势|XPHB}。"
+          ]
+        },
+        {
+          "ENG_name": "Oaken Resolve",
+          "name": "橡木决意",
+          "type": "entries",
+          "entries": [
+            "你在力量和体质豁免检定上具有{@variantrule 优势|XPHB}。"
+          ]
+        },
+        "该效应持续10分钟。如果你解除它（无需动作）、陷入{@condition 失能|XPHB}状态或死亡，则提前结束。"
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Druid/Wood%20Wose.webp"
+    },
+    {
+      "ENG_name": "Oak and Thorn",
+      "name": "橡木与荆棘",
+      "source": "CrookedMoon24",
+      "page": 75,
+      "className": "德鲁伊",
+      "classSource": "XPHB",
+      "subclassShortName": "旧途",
+      "subclassSource": "crookedmoon24",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "长老木的怒火驱使你且惩罚你的敌人。当你激活你的{@subclassFeature 树灵化身|德鲁伊|XPHB|旧途|crookedmoon24|3|crookedmoon24}时，你在持续时间内获得以下额外增益。",
+        {
+          "ENG_name": "Oakenfist",
+          "name": "橡木圣拳",
+          "type": "entries",
+          "entries": [
+            "当你在自己的回合执行{@action 攻击|XPHB}动作时，你可以发动两次攻击而非一次。"
+          ]
+        },
+        {
+          "ENG_name": "Gnarled Thorns",
+          "name": "缠结荆棘",
+          "type": "entries",
+          "entries": [
+            "在你的每个回合中，当你使用武器进行一次近战攻击掷骰并命中一个生物时，目标额外受到{@damage 1d6}穿刺伤害。"
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Druid/Oak%20and%20Thorn.webp"
+    },
+    {
+      "ENG_name": "Deepwood Elder",
+      "name": "深林长者",
+      "source": "CrookedMoon24",
+      "page": 75,
+      "className": "德鲁伊",
+      "classSource": "XPHB",
+      "subclassShortName": "旧途",
+      "subclassSource": "crookedmoon24",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "你与长老木的联系愈发紧密。当你激活你的{@subclassFeature 树灵化身|德鲁伊|XPHB|旧途|crookedmoon24|3|crookedmoon24}特性时，你在持续时间内获得以下额外增益。",
+        {
+          "ENG_name": "Primeval Wrath",
+          "name": "原始怒火",
+          "type": "entries",
+          "entries": [
+            "每回合一次，当你以近战攻击命中一个生物时，你可以迫使目标进行一次对抗你的法术豁免DC的力量豁免检定，豁免失败时目标陷入{@condition 倒地|XPHB}状态。"
+          ]
+        },
+        {
+          "ENG_name": "Bramblebark",
+          "name": "荆棘树皮",
+          "type": "entries",
+          "entries": [
+            "当一个生物在你周边5尺范围内以近战攻击伤害你时，攻击手受到{@damage 1d8}穿刺伤害。一个生物每回合只能受到一次这种伤害。"
+          ]
+        },
+        {
+          "ENG_name": "Rampant Growth",
+          "name": "狂茂生长",
+          "type": "entries",
+          "entries": [
+            "当你激活{@subclassFeature 树灵化身|德鲁伊|XPHB|旧途|crookedmoon24|3|crookedmoon24}且在你接下来的每个回合开始时，你获得等同于你的感知调整值加上{@variantrule 熟练|XPHB|熟练加值}数值的{@variantrule 临时生命值|XPHB}。"
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Druid/Deepwood%20Elder.webp"
+    },
+    {
+      "ENG_name": "Ancient Protector",
+      "name": "远古守卫",
+      "source": "CrookedMoon24",
+      "page": 75,
+      "className": "德鲁伊",
+      "classSource": "XPHB",
+      "subclassShortName": "旧途",
+      "subclassSource": "crookedmoon24",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "当你唤醒自己与长老木之间的联系时，你将成为其古源蛮力的化身。当你激活你的{@subclassFeature 树灵化身|德鲁伊|XPHB|旧途|crookedmoon24|3|crookedmoon24}特性时，你在持续时间内获得额外的增益。",
+        {
+          "ENG_name": "Old Growth",
+          "name": "古木丛生",
+          "type": "entries",
+          "entries": [
+            "如果有足够的空间容纳你的生长，则你的体型变为大型（连同你穿着或携带的任何东西），且你的触及范围增加5尺。"
+          ]
+        },
+        {
+          "ENG_name": "Mighty Trunk",
+          "name": "壮硕主干",
+          "type": "entries",
+          "entries": [
+            "你获得对钝击且穿刺伤害的{@variantrule 抗性|XPHB}。"
+          ]
+        },
+        {
+          "ENG_name": "Vengeance of the Elders",
+          "name": "长者复仇",
+          "type": "entries",
+          "entries": [
+            "当一个被长老木汁覆盖且在你触及范围内的生物进行攻击检定时，你可以使用{@variantrule 反应|XPHB}对该生物进行一次近战攻击。"
+          ]
+        }
+      ],
+      "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclass/Druid/Ancient%20Protector.webp"
+    }
+  ],
+  "fluff": {
+    "images": [
+      {
+        "type": "image",
+        "href": {
+          "type": "external",
+          "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Subclasses/Druid_Old_Ways.webp"
+        },
+        "credit": "Jo Cordisco",
+        "width": 777,
+        "height": 1200
+      }
+    ]
+  },
+  "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/CrookedMoon24/Foundry/Subclasses/Old%20Ways.webp"
+}

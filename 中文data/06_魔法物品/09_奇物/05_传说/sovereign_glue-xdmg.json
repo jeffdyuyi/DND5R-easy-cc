@@ -1,0 +1,37 @@
+[
+  {
+    "ENG_name": "Sovereign Glue",
+    "name": "至尊胶",
+    "source": "XDMG",
+    "page": 305,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "legendary",
+    "wondrous": true,
+    "entries": [
+      "这种乳白色的粘稠物质可以把任何两个物件永久性地粘在一起。至尊胶必须被储存在一个内壁涂满了{@item 滑溜之油|XDMG}的瓶子或罐子中。被发现时，容器中装有{@dice 1d6 + 1}盎司的至尊胶。",
+      "每盎司至尊胶可以覆盖1平方尺的表面。涂抹一盎司至尊胶需要一个{@action 操作|XPHB}动作，涂抹的胶水将在1分钟后凝固。一旦至尊胶凝固，被粘在一起的东西就只能用{@item 万溶剂|XDMG}、{@item 以太化之油|XDMG}或法术{@spell 祈愿术|XPHB}才能分开。"
+    ],
+    "lootTables": [
+      "奥秘 - 传说|XDMG",
+      "器具 - 传说|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 100000,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Sovereign Glue.webp"
+          },
+          "width": 596,
+          "height": 1000
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

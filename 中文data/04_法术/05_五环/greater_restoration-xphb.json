@@ -1,0 +1,68 @@
+[
+  {
+    "ENG_name": "Greater Restoration",
+    "name": "高等复原术",
+    "source": "XPHB",
+    "page": 281,
+    "srd52": true,
+    "basicRules2024": true,
+    "referenceSources": [
+      "DrDe-BD",
+      "DrDe-DotSC"
+    ],
+    "level": 5,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "价值 100+GP 的钻石尘，作为法术耗材",
+        "cost": 10000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "你触碰一名生物并魔法性地移除目标身上的下列效应之一：",
+      {
+        "type": "list",
+        "items": [
+          "1 级{@condition 力竭|XPHB}",
+          "{@condition 魅惑|XPHB}或{@condition 石化|XPHB}状态",
+          "一道诅咒，包括目标因与一件被诅咒魔法物品的{@variantrule 同调|XPHB}所陷入的诅咒。",
+          "对目标某项属性值的减损",
+          "目标{@variantrule 生命值|XPHB|生命值}上限的降低"
+        ]
+      }
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "牧师",
+      "德鲁伊",
+      "游侠",
+      "圣武士",
+      "奇械师"
+    ],
+    "display_school": "防护系"
+  }
+]

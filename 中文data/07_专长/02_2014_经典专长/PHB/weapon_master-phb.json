@@ -1,0 +1,40 @@
+[
+  {
+    "ENG_name": "Weapon Master",
+    "name": "武器大师",
+    "source": "PHB",
+    "page": 170,
+    "reprintedAs": [
+      "军用武器训练|XPHB"
+    ],
+    "ability": [
+      {
+        "choose": {
+          "from": [
+            "str",
+            "dex"
+          ],
+          "amount": 1
+        }
+      }
+    ],
+    "weaponProficiencies": [
+      {
+        "choose": {
+          "fromFilter": "type=军用武器;寻常武器|miscellaneous=平凡的",
+          "count": 4
+        }
+      }
+    ],
+    "entries": [
+      "经过大量练习后，你熟练的掌握了各种武器的使用方法，并获得下列增益：",
+      {
+        "type": "list",
+        "items": [
+          "你从简易武器和军用武器列表中，共选择四种武器并获得其熟练项。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

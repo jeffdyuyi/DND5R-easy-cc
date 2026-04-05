@@ -1,0 +1,33 @@
+[
+  {
+    "ENG_name": "Dwarven Fortitude",
+    "name": "矮人坚毅",
+    "source": "XGE",
+    "page": 74,
+    "prerequisite": [
+      {
+        "race": [
+          {
+            "ENG_name": "dwarf",
+            "name": "矮人"
+          }
+        ]
+      }
+    ],
+    "ability": [
+      {
+        "con": 1
+      }
+    ],
+    "entries": [
+      "你的血脉中流淌着矮人英雄的血液。你获得下列增益：",
+      {
+        "type": "list",
+        "items": [
+          "当你在战斗中执行{@action 回避}动作时，你可以消耗一颗生命骰来治愈自己。投掷那枚生命骰，你恢复其骰值外加上你的体质调整值点的生命值（恢复量最低为1点）。"
+        ]
+      }
+    ],
+    "translator": "不全书"
+  }
+]

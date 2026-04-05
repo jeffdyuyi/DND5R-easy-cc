@@ -1,0 +1,106 @@
+[
+  {
+    "name": "霜裔",
+    "ENG_name": "Rimekin",
+    "source": "LFL",
+    "size": [
+      "S",
+      "M"
+    ],
+    "speed": 30,
+    "darkvision": 60,
+    "resist": [
+      "寒冷"
+    ],
+    "additionalSpells": [
+      {
+        "known": {
+          "1": [
+            "冷冻射线|xphb#c"
+          ]
+        },
+        "innate": {
+          "3": {
+            "daily": {
+              "1": [
+                "冰刃|xphb"
+              ]
+            }
+          },
+          "5": {
+            "daily": {
+              "1": [
+                "火焰刀|xphb"
+              ]
+            }
+          }
+        },
+        "ability": {
+          "choose": [
+            "int",
+            "wis",
+            "cha"
+          ]
+        }
+      }
+    ],
+    "entries": [
+      {
+        "ENG_name": "Cold Fire Magic",
+        "name": "冷冻火焰魔法",
+        "type": "entries",
+        "entries": [
+          "你知晓{@spell 冷冻射线|XPHB}戏法。当你达到3级和5级角色等级时，你分别习得{@spell 冰刃|XPHB}法术和{@spell 火焰刀|XPHB}法术。你总是已准备这些法术。你可以无需法术位各施放一次这些法术，并且当你完成一次{@variantrule 长休|XPHB}后，你重获以此方式施放这些法术的能力。你也可以使用你拥有的任何合适等级的法术位来施放这些法术。当你使用此特质施放{@spell 火焰刀|XPHB}时，该法术造成寒冷伤害而非火焰伤害。",
+          "智力、感知或魅力是这些法术的施法属性（当你选择此种族时选择该属性）。"
+        ]
+      },
+      {
+        "ENG_name": "Cold Resistance",
+        "name": "冷冻抗性",
+        "type": "entries",
+        "entries": [
+          "你获得寒冷伤害的{@variantrule 抗性|XPHB}。"
+        ]
+      },
+      {
+        "ENG_name": "Darkvision",
+        "name": "黑暗视觉",
+        "type": "entries",
+        "entries": [
+          "你拥有 60 尺{@sense 黑暗视觉|XPHB}。"
+        ]
+      }
+    ],
+    "fluff": {
+      "entries": [
+        "霜裔源自洛温和影沼，尽管第一批霜族裔是在非瑞克西亚入侵期间从火族裔中诞生的（参见引言中的\"洛温-影沼历史\"）。这些火族裔以冰冷的逻辑处理问题，拒绝冲动反应。结果，包裹他们身体的魔法火焰呈现出极寒气息，他们便成为了霜族裔。",
+        "与焰族类似，霜族拥有与生俱来的魔法，但它们所召唤的火焰呈现出冰蓝色而非炽热的红色。此外，这些\"火焰\"散发的是刺骨寒意而非爆燃高温。这种效果会浅层延伸到霜族接触过的物品上。任何由霜族穿戴的护甲或挥舞的武器都会覆盖上层层尖锐但无害的白霜。"
+      ],
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "races/LFL/Rimekin.webp"
+          },
+          "credit": "Jason A. Engle",
+          "width": 1700,
+          "height": 1023
+        }
+      ]
+    },
+    "creatureTypes": [
+      "类人"
+    ],
+    "hasFluff": true,
+    "hasFluffImages": true,
+    "sizeEntry": {
+      "ENG_name": "Size:",
+      "name": "体型：",
+      "type": "item",
+      "entries": [
+        "中型（约 4-7 尺高）或小型（约 2-4 尺高），在选择此种族时决定"
+      ]
+    }
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "ENG_name": "Steal Immortality",
+    "name": "窃取不朽",
+    "source": "GrimHollowPG24",
+    "page": 202,
+    "level": 9,
+    "school": "T",
+    "subschools": [
+      "血魔法"
+    ],
+    "time": [
+      {
+        "number": 1,
+        "unit": "反应",
+        "condition": "当你视野范围内一个天界生物、元素生物、妖精、邪魔或亡灵的生命值降至0时触发"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "feet",
+        "amount": 300
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一颗镶嵌着价值1000+金币宝石的类人生物骷髅，该法术会消耗它",
+        "cost": 100000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "instant"
+      }
+    ],
+    "entries": [
+      "作为施放该法术的一部分，你必须消耗九个{@variantrule 生命值骰|XPHB}否则法术自动失败。掷骰消耗的{@variantrule 生命值骰|XPHB}来施放法术并获得相当于掷骰总数两倍的{@variantrule 临时生命值|XPHB}。你获得法术目标的生物类型，同时保留自身的类型。",
+      "法术持续期间，你对{@condition 中毒|XPHB}状态具有{@variantrule 免疫|XPHB}；你不再需要进食、饮水或呼吸；你对钝击、穿刺和挥砍伤害具有{@variantrule 抗性|XPHB}；并且你根据新的生物类型获得以下增益：",
+      {
+        "ENG_name": "Celestial",
+        "type": "entries",
+        "name": "天界语",
+        "entries": [
+          "你对光耀和暗蚀伤害具有{@variantrule 抗性|XPHB}，并且拥有{@variantrule 飞行速度|XPHB}60尺。"
+        ]
+      },
+      {
+        "ENG_name": "Elemental",
+        "type": "entries",
+        "name": "元素",
+        "entries": [
+          "你对强酸、寒冷、火焰、闪电和雷鸣伤害具有{@variantrule 抗性|XPHB}抗性。"
+        ]
+      },
+      {
+        "ENG_name": "Fey",
+        "type": "entries",
+        "name": "妖精",
+        "entries": [
+          "你可以使用一个{@variantrule 附赠动作|XPHB}来获得{@condition 隐形|XPHB}状态直到你的下个回合开始，或者传送至多60尺到一个你能看见的未占据空间。"
+        ]
+      },
+      {
+        "ENG_name": "Fiend",
+        "type": "entries",
+        "name": "邪魔",
+        "entries": [
+          "你对寒冷和火焰伤害具有{@variantrule 抗性|XPHB}，并且拥有{@variantrule 飞行速度|XPHB}60尺。"
+        ]
+      },
+      {
+        "ENG_name": "Undead",
+        "type": "entries",
+        "name": "亡灵",
+        "entries": [
+          "你对暗蚀伤害具有{@variantrule 免疫|XPHB}，并且对{@condition 魅惑|XPHB}和{@condition 恐慌|XPHB}状态具有{@variantrule 免疫|XPHB}。",
+          "你拥有该生物类型和增益，直到你再次施放该法术，或你的{@variantrule 生命值|XPHB}被缩小至0。"
+        ]
+      }
+    ],
+    "classes": {
+      "fromClassList": [
+        {
+          "ENG_name": "Warlock",
+          "name": "魔契师",
+          "source": "XPHB"
+        }
+      ]
+    },
+    "miscTags": [
+      "SGT",
+      "THP",
+      "UBA"
+    ],
+    "foundryImg": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GrimHollowPG24/Foundry/Spells/Steal%20Immortality.webp"
+  }
+]

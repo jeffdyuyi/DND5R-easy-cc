@@ -1,0 +1,58 @@
+[
+  {
+    "ENG_name": "Nondetection",
+    "name": "回避侦测",
+    "source": "XPHB",
+    "page": 302,
+    "srd52": true,
+    "basicRules2024": true,
+    "level": 3,
+    "school": "A",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "一撮价值 25+GP 的钻石尘，作为法术耗材",
+        "cost": 2500,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "timed",
+        "duration": {
+          "type": "hour",
+          "amount": 8
+        }
+      }
+    ],
+    "entries": [
+      "法术持续时间内，你使你触碰的目标不会被预言法术发现。目标可以是一名自愿生物，或者是在任何方向上都不超过 10 尺的一处地点或一个物件。目标不能被任何预言法术选为目标，也不能被魔法探知传感器感测到。"
+    ],
+    "miscTags": [
+      "OBJ"
+    ],
+    "areaTags": [
+      "ST"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "吟游诗人",
+      "游侠",
+      "法师"
+    ],
+    "display_school": "防护系"
+  }
+]

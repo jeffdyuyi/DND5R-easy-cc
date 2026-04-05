@@ -1,0 +1,91 @@
+[
+  {
+    "ENG_name": "Continual Flame",
+    "name": "不灭明焰",
+    "source": "PHB",
+    "page": 227,
+    "srd": true,
+    "referenceSources": [
+      "RoT",
+      "PotA",
+      "OotA",
+      "CoS",
+      "SKT",
+      "TftYP-TSC",
+      "ToA",
+      "WDH",
+      "WDMM",
+      "KKW",
+      "GoS",
+      "SDW",
+      "BGDIA",
+      "FS",
+      "IDRotF",
+      "CM",
+      "WBtW",
+      "SCC-CK",
+      "SCC-TMM",
+      "SCC-ARiR",
+      "CRCotN",
+      "JttRC",
+      "SjA",
+      "LoX",
+      "DSotDQ",
+      "KftGV",
+      "PaBTSO",
+      "ToFW",
+      "LRDT",
+      "VEoR",
+      "QftIS"
+    ],
+    "reprintedAs": [
+      "不灭明焰|XPHB"
+    ],
+    "level": 2,
+    "school": "V",
+    "time": [
+      {
+        "number": 1,
+        "unit": "动作"
+      }
+    ],
+    "range": {
+      "type": "point",
+      "distance": {
+        "type": "touch"
+      }
+    },
+    "components": {
+      "v": true,
+      "s": true,
+      "m": {
+        "text": "价值 50gp 的红宝石粉末，作为该法术的耗材",
+        "cost": 5000,
+        "consume": true
+      }
+    },
+    "duration": [
+      {
+        "type": "permanent",
+        "ends": [
+          "解除"
+        ]
+      }
+    ],
+    "entries": [
+      "你在所触碰物件上制造如火把一样亮的火焰，使其看上去与一般火焰无异，不过其并不会发热，也不需要燃烧氧气。你可以掩盖或隐藏它，但无法将之闷熄或扑灭。"
+    ],
+    "miscTags": [
+      "LGT",
+      "OBJ"
+    ],
+    "translator": "不全书",
+    "classes": [
+      "牧师",
+      "法师",
+      "奇械师",
+      "德鲁伊"
+    ],
+    "display_school": "塑能系"
+  }
+]

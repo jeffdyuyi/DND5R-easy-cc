@@ -1,0 +1,27 @@
+[
+  {
+    "ENG_name": "Sibling Purses",
+    "name": "姐妹钱包",
+    "source": "ObojimaTallGrass",
+    "page": 175,
+    "rarity": "uncommon",
+    "wondrous": true,
+    "entries": [
+      "这两个姐妹硬币小包可以打开5英寸宽，每个最多可以容纳5磅。当你将一个物件放入其中一个小包，且另一个小包在20尺范围内时，你可以使该物件传送到另一个小包中，前提是有足够的空间容纳该物件。"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/ObojimaTallGrass/Items/sibling-purses.webp"
+          },
+          "credit": "Matt Owen",
+          "width": 3864,
+          "height": 3864
+        }
+      ]
+    }
+  }
+]

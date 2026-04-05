@@ -1,0 +1,20 @@
+[
+  {
+    "ENG_name": "Potion of Comprehension",
+    "name": "通晓药水",
+    "source": "WDMM",
+    "page": 62,
+    "reprintedAs": [
+      "通晓药水|XDMG"
+    ],
+    "type": "P",
+    "rarity": "common",
+    "entries": [
+      "当你喝下这瓶药水时，你获得了一个{@spell 通晓语言}法术的效果，持续1小时。这种液体是一种清澈的混合物，里面有盐粒和烟尘在旋转。"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "valueReference": 50
+  }
+]

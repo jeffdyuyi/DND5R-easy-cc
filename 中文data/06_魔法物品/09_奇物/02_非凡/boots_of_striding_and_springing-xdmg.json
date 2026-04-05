@@ -1,0 +1,45 @@
+[
+  {
+    "ENG_name": "Boots of Striding and Springing",
+    "name": "跑跳之靴",
+    "source": "XDMG",
+    "page": 240,
+    "srd52": true,
+    "basicRules2024": true,
+    "rarity": "uncommon",
+    "reqAttune": true,
+    "wondrous": true,
+    "modifySpeed": {
+      "static": {
+        "walk": 30
+      }
+    },
+    "entries": [
+      "着装这双靴子期间，你的{@variantrule 速度|XPHB}变为30尺，除非你原本的{@variantrule 速度|XPHB}更快。且你的{@variantrule 速度|XPHB}不会因为携带物品超重或者着装重甲而降低。",
+      "你的每个回合限一次，你可以只消耗10尺移动力来跳跃至多30尺。"
+    ],
+    "optionalfeatures": [
+      "仿制魔法物品|TCE"
+    ],
+    "lootTables": [
+      "器具 - 非普通|XDMG"
+    ],
+    "hasFluffImages": true,
+    "translator": "不全书",
+    "valueReference": 400,
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "internal",
+            "path": "items/XDMG/Boots of Striding and Springing.webp"
+          },
+          "width": 1000,
+          "height": 845
+        }
+      ]
+    },
+    "type": "W"
+  }
+]

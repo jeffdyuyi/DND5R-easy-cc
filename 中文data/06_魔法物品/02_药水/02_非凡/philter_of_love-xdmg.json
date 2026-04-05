@@ -1,0 +1,25 @@
+[
+  {
+    "ENG_name": "Philter of Love",
+    "name": "迷情媚药",
+    "source": "XDMG",
+    "page": 285,
+    "srd52": true,
+    "basicRules2024": true,
+    "type": "P|XPHB",
+    "rarity": "uncommon",
+    "weight": 0.5,
+    "entries": [
+      "饮用此药水后，接下来10分钟内，你将被你看见的第一名生物{@condition 魅惑|XPHB}。{@condition 魅惑|XPHB}效应持续1小时。",
+      "这种玫瑰色的气泡状药液中包含着一个容易被忽略的心形气泡。"
+    ],
+    "lootTables": [
+      "奥秘 - 非普通|XDMG"
+    ],
+    "miscTags": [
+      "CNS"
+    ],
+    "translator": "不全书",
+    "valueReference": 200
+  }
+]

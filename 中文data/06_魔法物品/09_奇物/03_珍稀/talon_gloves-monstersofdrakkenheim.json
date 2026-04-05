@@ -1,0 +1,74 @@
+[
+  {
+    "ENG_name": "Talon Gloves",
+    "name": "利爪手套",
+    "source": "MonstersOfDrakkenheim",
+    "page": 393,
+    "rarity": "rare",
+    "reqAttune": true,
+    "wondrous": true,
+    "entries": [
+      "这些皮甲手套装备着堕落野兽的禽爪，并用药剂店创作的奥术缝合线缝合在一起。手套随后被元素生物的魔法强化，用骨头加固，并由精魄提供能量。",
+      "当你佩戴这些手套时，你获得等于你{@variantrule 攀爬速度|XPHB}的{@variantrule 速度|XPHB}，并且你的{@variantrule 徒手打击|XPHB|徒手打击}在命中时造成额外{@damage 1d6}穿刺伤害。",
+      {
+        "ENG_name": "Crafting",
+        "name": "手作",
+        "type": "entries",
+        "entries": [
+          "制作利爪手套需要一个非普通工坊和以下非普通成分：",
+          {
+            "type": "list",
+            "items": [
+              {
+                "ENG_name": "[Animus]",
+                "name": "[精魄]",
+                "type": "item",
+                "entries": [
+                  "任意精魄"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Fluid]",
+                "name": "[流体]",
+                "type": "item",
+                "entries": [
+                  "元素生物流体"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Hair]",
+                "name": "[毛发]",
+                "type": "item",
+                "entries": [
+                  "缝合线"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Hide]",
+                "name": "[表皮]",
+                "type": "item",
+                "entries": [
+                  "皮肤"
+                ],
+                "nameDot": false
+              },
+              {
+                "ENG_name": "[Natural Weapons]",
+                "name": "[天生武器]",
+                "type": "item",
+                "entries": [
+                  "爪击"
+                ],
+                "nameDot": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "hasFluffImages": true
+  }
+]

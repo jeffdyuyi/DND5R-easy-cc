@@ -1,0 +1,17 @@
+{
+  "ENG_name": "Undercommon",
+  "name": "地底通用语",
+  "source": "PHB",
+  "page": 123,
+  "srd": true,
+  "basicRules": true,
+  "reprintedAs": [
+    "地底通用语|XPHB"
+  ],
+  "type": "exotic",
+  "typicalSpeakers": [
+    "幽暗地域商人"
+  ],
+  "script": "精灵语",
+  "hasFluffImages": true
+}

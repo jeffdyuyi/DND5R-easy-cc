@@ -1,0 +1,18 @@
+[
+  {
+    "ENG_name": "Boon of Speed",
+    "name": "神行无拘之恩惠",
+    "source": "DMG",
+    "page": 232,
+    "reprintedAs": [
+      {
+        "uid": "神行无拘之恩惠|XPHB",
+        "tag": "feat"
+      }
+    ],
+    "type": "Boon",
+    "entries": [
+      "你的步行速度提升30尺。此外，你可以使用一个附赠动作来执行{@action 疾走}或{@action 撤离}动作。一旦你这样做，直到完成一次短休前你不能再这样做。"
+    ]
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "ENG_name": "Aciurgist's Blade",
+    "name": "医师之刃",
+    "source": "GriffonsSaddlebag2",
+    "page": 32,
+    "baseItem": "长柄刀|phb",
+    "type": "M",
+    "tier": "主要",
+    "rarity": "very rare",
+    "reqAttune": "由圣武士",
+    "reqAttuneTags": [
+      {
+        "class": "圣武士"
+      }
+    ],
+    "weight": 6,
+    "weaponCategory": "军用",
+    "property": [
+      "H",
+      "R",
+      "2H"
+    ],
+    "dmg1": "1d10",
+    "dmgType": "S",
+    "entries": [
+      "这把平滑的魔法长柄刀在其杆身上刻满了神圣徽记和誓言，而且永远会保持清洁无瑕。在持握着此武器期间，你使用圣疗特性时的触及范围增加5尺。",
+      "每回合限一次，当你用此长柄刀进行攻击，并为这次攻击消耗法术位来施展至圣斩特性时，你可以选择一项以下效应对目标施加，该效应持续直至你的下一个回合开始前。若你消耗的是不小于2环的法术位，则该法术位每比1环高一环，你便可以额外选择另一项效应（每次至圣斩中，每项效应至多只能选择一次）：",
+      {
+        "type": "list",
+        "items": [
+          "目标进行的下一次攻击检定具有劣势。",
+          "目标的速度缩小10尺。",
+          "目标在其下一次受到伤害时，还会额外受到{@damage 1d8}暗蚀或光耀伤害（由你选择）。",
+          "对目标进行的下一次攻击具有优势。",
+          "目标无法恢复生命值。"
+        ]
+      }
+    ],
+    "lootTables": [
+      "魔法物品表 H2|GriffonsSaddlebag2"
+    ],
+    "fluff": {
+      "images": [
+        {
+          "type": "image",
+          "href": {
+            "type": "external",
+            "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Aciurgists-Blade.webp"
+          },
+          "width": 2400,
+          "height": 2400
+        }
+      ]
+    }
+  }
+]
