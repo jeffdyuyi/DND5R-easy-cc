@@ -50,11 +50,11 @@ function App() {
           <div className="flex space-x-2">
             {activeTab === 'player' ? (
               <div className="flex items-center gap-2 px-4 py-1.5 font-bold rounded-lg border border-indigo-500/30 bg-indigo-500/10 text-indigo-400">
-                <span className="text-xl">🎭</span> 当前模式：玩家端
+                <span className="text-xl">🎭</span> 我的角色
               </div>
             ) : (
               <div className="flex items-center gap-2 px-4 py-1.5 font-bold rounded-lg border border-red-500/30 bg-red-500/10 text-red-400">
-                <span className="text-xl">🛡️</span> 当前模式：主持人端
+                <span className="text-xl">🛡️</span> 资源管理
               </div>
             )}
           </div>
