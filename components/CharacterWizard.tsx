@@ -79,9 +79,9 @@ const CharacterWizard: React.FC<Props> = ({ character, updateCharacter, onComple
     };
 
     const steps: StepInfo[] = [
-      { id: 1, name: '职业', status: step === 1 ? 'current' : getClassStatus() },
-      { id: 2, name: '种族', status: step === 2 ? 'current' : getSpeciesStatus() },
-      { id: 3, name: '背景', status: step === 3 ? 'current' : getBackgroundStatus() },
+      { id: 1, name: '种族', status: step === 1 ? 'current' : getSpeciesStatus() },
+      { id: 2, name: '背景', status: step === 2 ? 'current' : getBackgroundStatus() },
+      { id: 3, name: '职业', status: step === 3 ? 'current' : getClassStatus() },
       { id: 4, name: '法术', status: step === 4 ? 'current' : getSpellsStatus() },
       { id: 5, name: '属性', status: step === 5 ? 'current' : getAbilitiesStatus() },
       { id: 6, name: '技能', status: step === 6 ? 'current' : getSkillsStatus() },
@@ -117,9 +117,9 @@ const CharacterWizard: React.FC<Props> = ({ character, updateCharacter, onComple
 
   const renderContent = () => {
     switch (step) {
-      case 1: return <StepClassLevel character={character} updateCharacter={updateCharacter} />;
-      case 2: return <StepSpecies character={character} updateCharacter={updateCharacter} />;
-      case 3: return <StepBackground character={character} updateCharacter={updateCharacter} />;
+      case 1: return <StepSpecies character={character} updateCharacter={updateCharacter} />;
+      case 2: return <StepBackground character={character} updateCharacter={updateCharacter} />;
+      case 3: return <StepClassLevel character={character} updateCharacter={updateCharacter} />;
       case 4: return <StepSpells character={character} updateCharacter={updateCharacter} />;
       case 5: return <StepAbilities character={character} updateCharacter={updateCharacter} />;
       case 6: return <StepSkills character={character} updateCharacter={updateCharacter} />;
@@ -139,12 +139,7 @@ const CharacterWizard: React.FC<Props> = ({ character, updateCharacter, onComple
 
   return (
     <div className="flex flex-col h-full">
-      {/* Main Content */}
-      <div className="flex-1 overflow-hidden">
-        {renderContent()}
-      </div>
-
-      {/* Step Progress Footer */}
+      {/* Step Progress Header */}
       <WizardStepProgress
         steps={stepStatuses}
         currentStep={step}
@@ -152,6 +147,11 @@ const CharacterWizard: React.FC<Props> = ({ character, updateCharacter, onComple
         onNext={nextStep}
         canGoNext={canGoNext}
       />
+
+      {/* Main Content */}
+      <div className="flex-1 overflow-hidden">
+        {renderContent()}
+      </div>
     </div>
   );
 };
