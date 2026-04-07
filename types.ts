@@ -403,5 +403,115 @@ export interface CharacterData {
   // Key: FeatureChoice.id (e.g., "elf-keen-senses")
   // Value: 用户选择的内容数组 (e.g., ["察觉"])
   selections: Record<string, string[]>;
+
+  // === Wizard State (编辑态) ===
+  wizard: {
+    currentStep: number;
+    completedSteps: number[];
+    pendingChoiceIds: string[];
+  };
+
+  // === Computed State (计算态) ===
+  computedState?: ComputedCharacterState;
+}
+
+// === Computed Character State Types ===
+
+export interface ComputedCharacterState {
+  meta: ComputedMeta;
+  abilities: ComputedAbilities;
+  combat: ComputedCombat;
+  proficiencies: ComputedProficiencies;
+  spells: ComputedSpells;
+  carrying: ComputedCarrying;
+  sources: CharacterSourceTrace;
+  completion: CharacterCompletionState;
+}
+
+export interface ComputedMeta {
+  isValid: boolean;
+  version: string;
+  computedAt: string;
+}
+
+export interface ComputedAbilities {
+  scores: AbilityScores;
+  modifiers: AbilityScores;
+  saveModifiers: AbilityScores;
+  saveProficiencies: string[];
+}
+
+export interface ComputedCombat {
+  armorClass: number;
+  armorClassBreakdown: string[];
+  initiative: number;
+  speed: number;
+  passivePerception: number;
+  hpMax: number;
+  hitDiceTotal: string;
+  proficiencyBonus: number;
+}
+
+export interface ComputedProficiencies {
+  skills: SkillProficiencyEntry[];
+  tools: string[];
+  weapons: string[];
+  armors: string[];
+  languages: string[];
+}
+
+export interface SkillProficiencyEntry {
+  skill: string;
+  proficient: boolean;
+  expertise: boolean;
+  modifier: number;
+}
+
+export interface ComputedSpells {
+  spellcastingAbility: string;
+  spellSaveDC: number;
+  spellAttackBonus: number;
+  cantrips: string[];
+  preparedSpells: string[];
+  spellSlots: Record<number, { total: number; used: number }>;
+}
+
+export interface ComputedCarrying {
+  carryCapacityLb: number;
+  pushDragLiftLb: number;
+  currentWeightLb: number;
+  encumbranceState: 'normal' | 'encumbered' | 'heavily_encumbered' | 'over_capacity';
+}
+
+export interface CharacterSourceTrace {
+  selectedIds: string[];
+  grants: CharacterGrantTrace[];
+  appliedAdjustments: CharacterAdjustmentTrace[];
+}
+
+export interface CharacterGrantTrace {
+  sourceId: string;
+  sourceType: 'class' | 'subclass' | 'species' | 'background' | 'feat' | 'item';
+  targetType: 'feat' | 'spell' | 'proficiency' | 'ability_bonus' | 'item' | 'language' | 'armor_class' | 'skill' | 'weapon' | 'armor' | 'tool';
+  targetName?: string;
+  mode: 'fixed' | 'choice';
+  notes?: string;
+}
+
+export interface CharacterAdjustmentTrace {
+  sourceId: string;
+  sourceName: string;
+  target: string;
+  value: string;
+  notes?: string;
+}
+
+export interface CharacterCompletionState {
+  hasClass: boolean;
+  hasSpecies: boolean;
+  hasBackground: boolean;
+  hasAbilities: boolean;
+  hasIdentity: boolean;
+  hasProficiencies: boolean;
 }
 

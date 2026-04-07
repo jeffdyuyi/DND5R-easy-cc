@@ -188,8 +188,8 @@ export const CharacterSheet: React.FC<Props> = ({
 
   const renderTabContent = () => {
     switch (activeTab) {
-      case 'stats': return <TabStats character={character} updateCharacter={updateCharacter} setActiveTab={setActiveTab} libraryClasses={libraryClasses} />;
-      case 'combat': return <TabCombat character={character} updateCharacter={updateCharacter} libraryClasses={libraryClasses} librarySpecies={librarySpecies} />;
+      case 'stats': return <TabStats character={character} updateCharacter={updateCharacter} setActiveTab={setActiveTab} libraryClasses={libraryClasses} computedState={character.computedState} />;
+      case 'combat': return <TabCombat character={character} updateCharacter={updateCharacter} libraryClasses={libraryClasses} librarySpecies={librarySpecies} computedState={character.computedState} />;
       case 'class': return <TabClass character={character} updateCharacter={updateCharacter} libraryClasses={libraryClasses} librarySubclasses={librarySubclasses} libraryFeats={libraryFeats} />;
       case 'origin': return <TabOrigin character={character} updateCharacter={updateCharacter} librarySpecies={librarySpecies} libraryBackgrounds={libraryBackgrounds} libraryFeats={libraryFeats} />;
       case 'inventory': return <TabInventory character={character} updateCharacter={updateCharacter} libraryTools={libraryTools} />;

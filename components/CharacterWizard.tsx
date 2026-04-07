@@ -1,5 +1,5 @@
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { CharacterData } from '../types';
 import StepClassLevel from './StepClassLevel';
 import StepSpecies from './StepSpecies';
@@ -12,6 +12,7 @@ import StepDetails from './StepDetails';
 import StepIdentity from './StepIdentity';
 import WizardStepProgress, { StepInfo } from './wizard/WizardStepProgress';
 import { convertStartingInventoryToBackpack } from '../utils/equipmentUtils';
+import { calculateCharacter, initWizardState } from '../src/rules/calculateCharacter';
 
 interface Props {
   character: CharacterData;
@@ -20,8 +21,30 @@ interface Props {
 }
 
 const CharacterWizard: React.FC<Props> = ({ character, updateCharacter, onComplete }) => {
-  const [step, setStep] = useState(1);
+  const [step, setStep] = useState(() => character.wizard?.currentStep || 1);
   const totalSteps = 9;
+
+  useEffect(() => {
+    if (!character.wizard) {
+      updateCharacter({
+        wizard: initWizardState()
+      });
+    }
+  }, []);
+
+  useEffect(() => {
+    updateCharacter({
+      wizard: {
+        ...character.wizard,
+        currentStep: step,
+      }
+    });
+  }, [step]);
+
+  useEffect(() => {
+    const computed = calculateCharacter(character);
+    updateCharacter({ computedState: computed });
+  }, [character.className, character.race, character.background, character.level, character.abilities]);
 
   // Calculate step statuses
   const stepStatuses = useMemo((): StepInfo[] => {
@@ -95,9 +118,18 @@ const CharacterWizard: React.FC<Props> = ({ character, updateCharacter, onComple
 
   const nextStep = () => {
     if (step < totalSteps) {
-      setStep(step + 1);
+      const newStep = step + 1;
+      setStep(newStep);
+      updateCharacter({
+        wizard: {
+          ...character.wizard,
+          currentStep: newStep,
+          completedSteps: character.wizard?.completedSteps?.includes(step)
+            ? character.wizard.completedSteps
+            : [...(character.wizard?.completedSteps || []), step]
+        }
+      });
     } else {
-      // 完成时将startingInventory转换到背包系统
       if (character.startingInventory && character.startingInventory.length > 0) {
         const { weapons, armor, gear, tools } = convertStartingInventoryToBackpack(character.startingInventory);
         updateCharacter({
@@ -112,7 +144,16 @@ const CharacterWizard: React.FC<Props> = ({ character, updateCharacter, onComple
   };
 
   const prevStep = () => {
-    if (step > 1) setStep(step - 1);
+    if (step > 1) {
+      const newStep = step - 1;
+      setStep(newStep);
+      updateCharacter({
+        wizard: {
+          ...character.wizard,
+          currentStep: newStep,
+        }
+      });
+    }
   };
 
   const renderContent = () => {

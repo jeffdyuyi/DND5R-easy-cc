@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { CharacterData, ClassItem, SpeciesItem, ItemItem, AbilityScores } from '../types';
+import { CharacterData, ClassItem, SpeciesItem, ItemItem, AbilityScores, ComputedCharacterState } from '../types';
 import { Shield, Zap, Wind, Heart, Skull, Sword, Info, Calculator, Target } from 'lucide-react';
 import { getModifier, getProficiencyBonus, formatModifier, calculateACOptions } from '../utils/rules';
 
@@ -9,6 +9,7 @@ interface Props {
    updateCharacter: (updates: Partial<CharacterData>) => void;
    libraryClasses: ClassItem[];
    librarySpecies: SpeciesItem[];
+   computedState?: ComputedCharacterState;
 }
 
 const SPELL_ABILITY_MAP: Record<string, keyof AbilityScores> = {
@@ -20,13 +21,15 @@ const SPELL_ABILITY_MAP: Record<string, keyof AbilityScores> = {
    '魅力': 'charisma'
 };
 
-const TabCombat: React.FC<Props> = ({ character, updateCharacter, libraryClasses, librarySpecies }) => {
+const TabCombat: React.FC<Props> = ({ character, updateCharacter, libraryClasses, librarySpecies, computedState }) => {
    // --- Helpers ---
 
-   // Basic Data
+   const computedCombat = computedState?.combat;
+   const computedAbilities = computedState?.abilities;
+   
    const classData = libraryClasses.find(c => c.name === character.className);
    const speciesData = librarySpecies.find(s => s.name === character.race);
-   const profBonus = getProficiencyBonus(character.level);
+   const profBonus = computedCombat?.proficiencyBonus ?? getProficiencyBonus(character.level);
 
    // --- AC Calculation Logic ---
    const acOptions = calculateACOptions(character);
@@ -43,7 +46,7 @@ const TabCombat: React.FC<Props> = ({ character, updateCharacter, libraryClasses
 
    const hpLvl1 = hitDieMax + conMod;
    const hpAvgPerLevel = (hitDieMax / 2 + 1) + conMod;
-   const hpAvgTotal = hpLvl1 + (hpAvgPerLevel * (character.level - 1));
+   const hpAvgTotal = computedCombat?.hpMax ?? hpLvl1 + (hpAvgPerLevel * (character.level - 1));
 
    // --- Weapon Calculation Helper ---
    const getWeaponStats = (weapon: ItemItem) => {
@@ -138,7 +141,7 @@ const TabCombat: React.FC<Props> = ({ character, updateCharacter, libraryClasses
                      <Zap className="w-4 h-4 text-yellow-600" /> 先攻
                   </div>
                   <div className="text-4xl font-black text-stone-900">
-                     {formatModifier(getModifier(character.abilities.dexterity))}
+                     {formatModifier(computedCombat?.initiative ?? getModifier(character.abilities.dexterity))}
                   </div>
                   <div className="text-[10px] text-stone-400 mt-1">敏捷调整值</div>
                </div>
@@ -146,7 +149,7 @@ const TabCombat: React.FC<Props> = ({ character, updateCharacter, libraryClasses
                   <div className="text-xs font-bold text-stone-500 uppercase tracking-widest mb-1 flex items-center gap-2">
                      <Wind className="w-4 h-4 text-blue-500" /> 速度
                   </div>
-                  <div className="text-4xl font-black text-stone-900">{speciesData?.speed || 30} <span className="text-lg font-normal text-stone-400">尺</span></div>
+                  <div className="text-4xl font-black text-stone-900">{computedCombat?.speed ?? speciesData?.speed ?? 30} <span className="text-lg font-normal text-stone-400">尺</span></div>
                </div>
             </div>
 
@@ -307,14 +310,14 @@ const TabCombat: React.FC<Props> = ({ character, updateCharacter, libraryClasses
                            </div>
                         </div>
                         <div className="bg-purple-100 text-purple-800 text-[10px] font-bold px-2 py-1 rounded border border-purple-200">
-                           DC {8 + spellMod + profBonus}
+                           DC {computedState?.spells?.spellSaveDC ?? (8 + spellMod + profBonus)}
                         </div>
                      </div>
                      <div className="p-4 flex items-center justify-center gap-4">
                         <div className="flex flex-col items-center">
                            <span className="text-xs font-bold text-stone-400 uppercase">命中加值</span>
                            <div className="text-3xl font-black text-purple-700">
-                              +{spellMod + profBonus}
+                              {computedState?.spells?.spellAttackBonus !== undefined ? `+${computedState.spells.spellAttackBonus}` : `+${spellMod + profBonus}`}
                            </div>
                         </div>
                      </div>

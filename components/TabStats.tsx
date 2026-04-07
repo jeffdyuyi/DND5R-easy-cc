@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { CharacterData, AbilityScores, ClassItem } from '../types';
+import { CharacterData, AbilityScores, ClassItem, ComputedCharacterState } from '../types';
 import { Dice6, CheckCircle2, Languages, MousePointerClick } from 'lucide-react';
 import { getModifier, getProficiencyBonus, formatModifier } from '../utils/rules';
 
@@ -8,7 +8,8 @@ interface Props {
    character: CharacterData;
    updateCharacter: (updates: Partial<CharacterData>) => void;
    setActiveTab: (tab: string) => void;
-   libraryClasses: ClassItem[]; // New prop
+   libraryClasses: ClassItem[];
+   computedState?: ComputedCharacterState;
 }
 
 const ABILITY_KEYS: (keyof AbilityScores)[] = ['strength', 'dexterity', 'constitution', 'intelligence', 'wisdom', 'charisma'];
@@ -32,12 +33,14 @@ const RARE_LANGUAGES = [
    "深渊语", "天界语", "深潜语", "德鲁伊语", "炼狱语", "原初语", "木族语", "盗贼黑话", "地底通用语"
 ];
 
-const TabStats: React.FC<Props> = ({ character, updateCharacter, setActiveTab, libraryClasses }) => {
+const TabStats: React.FC<Props> = ({ character, updateCharacter, setActiveTab, libraryClasses, computedState }) => {
    const [tempScores, setTempScores] = useState<AbilityScores>({ ...character.abilities });
 
    // Derived Helpers
-   const proficiencyBonus = getProficiencyBonus(character.level);
+   const proficiencyBonus = computedState?.combat?.proficiencyBonus ?? getProficiencyBonus(character.level);
    const classData = libraryClasses.find(c => c.name === character.className);
+
+   const computedAbilities = computedState?.abilities;
 
    // --- Handlers ---
    const toggleSkillMastery = (skillName: string) => {
@@ -64,20 +67,12 @@ const TabStats: React.FC<Props> = ({ character, updateCharacter, setActiveTab, l
       const base = character.abilities[key];
       const bonus = character.abilityBonuses[key] || 0;
       const bgBonus = character.backgroundBonuses?.[key] || 0;
-      const total = base + bonus + bgBonus;
-      const mod = getModifier(total);
+      const total = computedAbilities?.scores?.[key] ?? (base + bonus + bgBonus);
+      const mod = computedAbilities?.modifiers?.[key] ?? getModifier(total);
 
-      // Resilient Feat Check
-      const resilientAttributes = Object.values(character.featConfig?.otherFeats || {})
-         .map(f => f.resilientAttribute)
-         .filter(Boolean);
-
-      const isSaveProf = classData?.saves.includes(ABILITY_LABELS[key]) || resilientAttributes.includes(ABILITY_LABELS[key]);
-
-      // Jack of All Trades Check (Bard Level 2+)
-      const isJackOfAllTrades = character.className === '吟游诗人' && character.level >= 2;
-
-      const saveMod = mod + (isSaveProf ? proficiencyBonus : 0);
+      const isSaveProf = computedAbilities?.saveProficiencies?.includes(ABILITY_LABELS[key]) ?? false;
+      const saveMod = computedAbilities?.saveModifiers?.[key] ?? (mod + (isSaveProf ? proficiencyBonus : 0));
+      
       const skills = SKILLS_BY_ABILITY[key];
 
       return (
@@ -110,33 +105,27 @@ const TabStats: React.FC<Props> = ({ character, updateCharacter, setActiveTab, l
             {/* Skills List */}
             <div className="flex-grow p-2 space-y-1 bg-white">
                {skills.map(skill => {
+                  const computedSkill = computedState?.proficiencies?.skills?.find(s => s.skill === skill);
                   const level = character.skillMastery[skill] || 0;
-                  let skillBonus = 0;
-                  let isJack = false;
+                  const isJackOfAllTrades = character.className === '吟游诗人' && character.level >= 2;
 
-                  if (level === 1) skillBonus = proficiencyBonus;
-                  else if (level === 2) skillBonus = proficiencyBonus * 2;
-                  else if (isJackOfAllTrades) {
-                     skillBonus = Math.floor(proficiencyBonus / 2);
-                     isJack = true;
-                  }
-
-                  const skillTotal = mod + skillBonus;
+                  const skillTotal = computedSkill?.modifier ?? (mod + (level >= 1 ? proficiencyBonus : 0) + (level >= 2 ? proficiencyBonus : 0) + (isJackOfAllTrades ? Math.floor(proficiencyBonus / 2) : 0));
+                  const isProficient = computedSkill?.proficient ?? (level >= 1);
+                  const isExpertise = computedSkill?.expertise ?? (level >= 2);
 
                   return (
                      <div key={skill} onClick={() => toggleSkillMastery(skill)}
                         className="flex justify-between items-center p-1.5 hover:bg-stone-100 rounded cursor-pointer select-none group border-b border-stone-100 last:border-0"
                      >
                         <div className="flex items-center gap-2">
-                           {/* Mastery Circle */}
                            <div className={`w-3 h-3 rounded-full border transition-colors
-                          ${level === 2 ? 'bg-stone-800 border-stone-800' : level === 1 ? 'bg-stone-500 border-stone-500' : 'border-stone-400 group-hover:border-stone-600'}
+                          ${isExpertise ? 'bg-stone-800 border-stone-800' : isProficient ? 'bg-stone-500 border-stone-500' : 'border-stone-400 group-hover:border-stone-600'}
                        `}></div>
                            <span className={`text-sm font-bold ${level ? 'text-stone-900' : 'text-stone-500'}`}>{skill}</span>
-                           {level === 2 && <span className="text-[10px] text-stone-400">(专精)</span>}
-                           {isJack && <span className="text-[10px] text-stone-400 bg-stone-100 px-1 rounded">万事通</span>}
+                           {isExpertise && <span className="text-[10px] text-stone-400">(专精)</span>}
+                           {isJackOfAllTrades && !isProficient && <span className="text-[10px] text-stone-400 bg-stone-100 px-1 rounded">万事通</span>}
                         </div>
-                        <span className={`font-mono font-bold ${level || isJack ? 'text-stone-900' : 'text-stone-400'}`}>
+                        <span className={`font-mono font-bold ${level || isProficient || isJackOfAllTrades ? 'text-stone-900' : 'text-stone-400'}`}>
                            {formatModifier(skillTotal)}
                         </span>
                      </div>
