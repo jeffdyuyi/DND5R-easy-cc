@@ -19,9 +19,9 @@ const WizardLayout: React.FC<Props> = ({
     headerExtra
 }) => {
     return (
-        <div className="flex flex-col h-full">
+        <div className="flex flex-col h-full min-h-0">
             {/* Header */}
-            <div className="bg-gradient-to-r from-stone-800 to-stone-700 text-white px-6 py-4 flex items-center justify-between">
+            <div className="bg-gradient-to-r from-stone-800 to-stone-700 text-white px-6 py-4 flex items-center justify-between shrink-0">
                 <div className="flex items-center gap-4">
                     <h1 className="text-xl font-bold">{title}</h1>
                     <span className="text-stone-400 text-sm">
@@ -32,14 +32,14 @@ const WizardLayout: React.FC<Props> = ({
             </div>
 
             {/* Two-Column Content */}
-            <div className="flex-1 grid grid-cols-1 lg:grid-cols-5 gap-0 overflow-hidden">
+            <div className="flex-1 grid grid-cols-1 lg:grid-cols-5 gap-0 overflow-hidden min-h-0">
                 {/* Left Panel - Selection */}
-                <div className="lg:col-span-2 border-r border-stone-200 overflow-y-auto bg-stone-50">
+                <div className="lg:col-span-2 border-r border-stone-200 overflow-y-auto bg-stone-50 min-h-0">
                     {leftPanel}
                 </div>
 
                 {/* Right Panel - Details/Configuration */}
-                <div className="lg:col-span-3 overflow-y-auto bg-white">
+                <div className="lg:col-span-3 overflow-y-auto bg-white min-h-0">
                     {rightPanel}
                 </div>
             </div>

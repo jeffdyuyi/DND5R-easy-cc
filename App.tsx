@@ -58,7 +58,7 @@ function App() {
               </div>
             )}
           </div>
-          <div className="text-xl font-bold font-serif text-gray-300 pb-3 flex flex-col items-end leading-tight">
+          <div className="text-xl font-bold font-pixel text-gray-300 pb-3 flex flex-col items-end leading-tight">
             <div className="flex items-center gap-3">
               <button
                 onClick={handleReturnHome}
@@ -68,9 +68,8 @@ function App() {
                 <Home className="w-4 h-4" />
                 <span className="hidden sm:inline">返回首页</span>
               </button>
-              <span>不咕鸟 DND5R <span className="text-gray-500 text-sm ml-1 font-sans font-normal">v1.0</span></span>
+              <span>不咕鸟龙与地下城2024角色卡管理器</span>
             </div>
-            <span className="text-xs text-gray-500 font-sans tracking-widest mt-1">TRPG CAMPAIGN TOOL</span>
           </div>
         </header>
 

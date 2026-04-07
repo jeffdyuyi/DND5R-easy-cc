@@ -42,7 +42,7 @@ const WizardStepProgress: React.FC<Props> = ({ steps, currentStep, onPrev, onNex
     };
 
     return (
-        <div className="bg-white border-b border-stone-200 p-4 shadow-[0_2px_10px_rgba(0,0,0,0.05)]">
+        <div className="bg-white border-b border-stone-200 p-4 shadow-[0_2px_10px_rgba(0,0,0,0.05)] shrink-0">
             <div className="max-w-5xl mx-auto flex items-center justify-between gap-4">
                 {/* Previous Button */}
                 <button

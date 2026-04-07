@@ -138,7 +138,7 @@ const CharacterWizard: React.FC<Props> = ({ character, updateCharacter, onComple
   }, [step, character]);
 
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-full min-h-0">
       {/* Step Progress Header */}
       <WizardStepProgress
         steps={stepStatuses}
@@ -149,7 +149,7 @@ const CharacterWizard: React.FC<Props> = ({ character, updateCharacter, onComple
       />
 
       {/* Main Content */}
-      <div className="flex-1 overflow-hidden">
+      <div className="flex-1 min-h-0 overflow-hidden">
         {renderContent()}
       </div>
     </div>
