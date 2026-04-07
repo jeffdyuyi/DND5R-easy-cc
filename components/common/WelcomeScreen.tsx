@@ -22,7 +22,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onEnter }) => {
                         <User className="w-16 h-16 text-indigo-300" />
                     </div>
                     <div>
-                        <h2 className="text-4xl font-black text-white tracking-wide group-hover:text-indigo-200 transition-colors">我的角色</h2>
+                        <h2 className="text-4xl font-pixel text-white tracking-wide group-hover:text-indigo-200 transition-colors">我的角色</h2>
                         <p className="text-indigo-300/60 text-sm font-bold uppercase tracking-widest mt-2">角色创建与管理</p>
                     </div>
                     <div className="bg-indigo-500/20 backdrop-blur-sm px-6 py-3 rounded-lg border border-indigo-400/20 group-hover:border-indigo-400/40 transition-all">
@@ -45,7 +45,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onEnter }) => {
                         <Database className="w-16 h-16 text-red-300" />
                     </div>
                     <div>
-                        <h2 className="text-4xl font-black text-white tracking-wide group-hover:text-red-200 transition-colors">资源管理</h2>
+                        <h2 className="text-4xl font-pixel text-white tracking-wide group-hover:text-red-200 transition-colors">资源管理</h2>
                         <p className="text-red-300/60 text-sm font-bold uppercase tracking-widest mt-2">GM 工具与数据管理</p>
                     </div>
                     <div className="bg-red-500/20 backdrop-blur-sm px-6 py-3 rounded-lg border border-red-400/20 group-hover:border-red-400/40 transition-all">
@@ -96,7 +96,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onEnter }) => {
             <div className="fixed top-0 left-0 right-0 bg-stone-900/90 backdrop-blur-sm border-b border-stone-800 p-4 flex justify-center">
                 <div className="flex items-center gap-3">
                     <Feather className="w-6 h-6 text-dndRed" />
-                    <h1 className="text-2xl font-black text-white tracking-wide">不咕鸟 DND5R</h1>
+                    <h1 className="text-2xl font-pixel text-white tracking-wide">不咕鸟 DND5R</h1>
                     <span className="text-xs text-stone-500 font-bold uppercase tracking-widest ml-2">角色构建工具</span>
                 </div>
             </div>
