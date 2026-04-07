@@ -56,7 +56,7 @@ const StepSpecies: React.FC<Props> = ({ character, updateCharacter }) => {
     const leftPanel = (
         <div className="p-4 space-y-4 min-h-full">
             {/* Species Grid */}
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-3">
                 {species.items.map(sp => (
                     <button
                         key={sp.id}

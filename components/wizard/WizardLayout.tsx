@@ -32,14 +32,14 @@ const WizardLayout: React.FC<Props> = ({
             </div>
 
             {/* Two-Column Content */}
-            <div className="flex-1 flex overflow-hidden min-h-0">
+            <div className="flex-1 flex flex-col lg:flex-row overflow-hidden min-h-0">
                 {/* Left Panel - Selection */}
-                <div className="w-2/5 border-r border-stone-200 overflow-y-auto bg-stone-50 min-h-0">
+                <div className="lg:w-2/5 lg:border-r border-stone-200 overflow-y-auto bg-stone-50 min-h-[50vh] lg:min-h-0">
                     {leftPanel}
                 </div>
 
                 {/* Right Panel - Details/Configuration */}
-                <div className="w-3/5 overflow-y-auto bg-white min-h-0">
+                <div className="lg:w-3/5 overflow-y-auto bg-white min-h-[50vh] lg:min-h-0">
                     {rightPanel}
                 </div>
             </div>
