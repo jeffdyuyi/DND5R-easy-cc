@@ -54,7 +54,7 @@ const StepSpecies: React.FC<Props> = ({ character, updateCharacter }) => {
 
     // === LEFT PANEL: Species Grid ===
     const leftPanel = (
-        <div className="p-4 space-y-4">
+        <div className="p-4 space-y-4 min-h-full">
             {/* Species Grid */}
             <div className="grid grid-cols-3 gap-3">
                 {species.items.map(sp => (

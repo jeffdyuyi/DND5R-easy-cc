@@ -54,11 +54,13 @@ export const PlayerView: React.FC = () => {
 
     if (isWizardActive && activeCharacter) {
         return (
-            <CharacterWizard
-                character={activeCharacter}
-                updateCharacter={(updates) => updateCharacter(activeCharacter.id, updates)}
-                onComplete={() => setIsWizardActive(false)}
-            />
+            <div className="h-full min-h-0 w-full">
+                <CharacterWizard
+                    character={activeCharacter}
+                    updateCharacter={(updates) => updateCharacter(activeCharacter.id, updates)}
+                    onComplete={() => setIsWizardActive(false)}
+                />
+            </div>
         );
     }
 
