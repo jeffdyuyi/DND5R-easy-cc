@@ -474,7 +474,7 @@ const StepClassLevel: React.FC<Props> = ({ character, updateCharacter }) => {
   return (
     <WizardLayout
       title="职业选择"
-      stepId={1}
+      stepId={3}
       totalSteps={9}
       leftPanel={leftPanel}
       rightPanel={rightPanel}

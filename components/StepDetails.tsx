@@ -273,8 +273,8 @@ const StepDetails: React.FC<Props> = ({ character, updateCharacter }) => {
   return (
     <WizardLayout
       title="角色细节"
-      stepId={7}
-      totalSteps={8}
+      stepId={8}
+      totalSteps={9}
       leftPanel={leftPanel}
       rightPanel={rightPanel}
     />

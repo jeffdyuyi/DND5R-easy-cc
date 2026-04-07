@@ -403,7 +403,7 @@ const StepBackground: React.FC<Props> = ({ character, updateCharacter }) => {
     return (
         <WizardLayout
             title="背景选择"
-            stepId={3}
+            stepId={2}
             totalSteps={9}
             leftPanel={leftPanel}
             rightPanel={rightPanel}

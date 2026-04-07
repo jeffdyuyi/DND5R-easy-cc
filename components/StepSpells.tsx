@@ -413,7 +413,7 @@ const StepSpells: React.FC<Props> = ({ character, updateCharacter }) => {
         <WizardLayout
             title="专长法术"
             stepId={4}
-            totalSteps={8}
+            totalSteps={9}
             leftPanel={leftPanel}
             rightPanel={rightPanel}
         />

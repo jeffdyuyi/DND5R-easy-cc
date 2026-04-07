@@ -312,8 +312,8 @@ const StepEquipment: React.FC<Props> = ({ character, updateCharacter }) => {
     return (
         <WizardLayout
             title="初始装备"
-            stepId={6}
-            totalSteps={8}
+            stepId={7}
+      totalSteps={9}
             leftPanel={leftPanel}
             rightPanel={rightPanel}
         />

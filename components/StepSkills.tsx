@@ -400,8 +400,8 @@ const StepSkills: React.FC<Props> = ({ character }) => {
     return (
         <WizardLayout
             title="技能与工具"
-            stepId={5}
-            totalSteps={8}
+            stepId={6}
+            totalSteps={9}
             leftPanel={leftPanel}
             rightPanel={rightPanel}
         />

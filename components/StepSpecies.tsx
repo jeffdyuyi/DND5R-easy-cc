@@ -226,7 +226,7 @@ const StepSpecies: React.FC<Props> = ({ character, updateCharacter }) => {
     return (
         <WizardLayout
             title="种族选择"
-            stepId={2}
+            stepId={1}
             totalSteps={9}
             leftPanel={leftPanel}
             rightPanel={rightPanel}
