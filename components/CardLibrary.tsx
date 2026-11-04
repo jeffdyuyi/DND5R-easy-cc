@@ -1,362 +1,62 @@
-
-import React, { useState } from 'react';
+import { resourceLabels } from '../src/content/resourceRegistry';
+import { groupSpecies } from '../src/content/speciesGroups';
+import { resourceKey } from '../src/content/resourceIdentity';
+import { FavoriteButton } from './FavoriteButton';
+import React, { useEffect, useMemo, useState } from 'react';
 import { BaseLibraryItem } from '../types';
-import { Plus, Search, PenTool, CheckCircle, Trash2, Edit2, Zap, Scale, Star } from 'lucide-react';
-
+import { ResourcePreview } from './ResourcePreview';
+import { Plus, Search, Trash2, Edit2 } from './common/UiIcons';
 interface Props<T extends BaseLibraryItem> {
-   title: string;
-   items: T[];
-   selectedId?: string;
-   onSelect: (item: T) => void;
-   onCreate?: (item: T) => void;
-   onCreateAction?: () => void;
-   onDelete?: (id: string) => void;
-   onEdit?: (item: T) => void;
-   itemTypeLabel: string;
-   emptyTemplate?: T;
-   allowEdit?: boolean;
-   renderEditFields?: (item: T, setItem: React.Dispatch<React.SetStateAction<T | null>>) => React.ReactNode;
-   renderItem?: (item: T, isSelected: boolean, onClick: () => void, actions: React.ReactNode) => React.ReactNode;
-   cardColorTheme?: string;
-   layout?: 'grid' | 'list'; // Added layout prop
+    groupByKind?: boolean;
+    toolbar?: React.ReactNode;
+    toolbarActions?: React.ReactNode;
+    title: string;
+    items: T[];
+    itemTypeLabel: string;
+    itemKind?: string;
+    onSelect: (item: T, visibleItems?: T[]) => void;
+    onCreateAction?: () => void;
+    onEdit?: (item: T) => void;
+    onDelete?: (id: string) => void;
+    allowEdit?: boolean;
+    renderItem?: (item: T, selected: boolean, onClick: () => void, actions: React.ReactNode) => React.ReactNode;
 }
-
-const getColorClasses = (theme: string = 'stone') => {
-   const map: any = {
-      red: { border: 'border-red-900', header: 'bg-red-900', ring: 'ring-red-400', tag: 'bg-red-50 text-red-900', hover: 'hover:border-red-700', text: 'text-red-900' },
-      orange: { border: 'border-orange-800', header: 'bg-orange-800', ring: 'ring-orange-400', tag: 'bg-orange-50 text-orange-900', hover: 'hover:border-orange-600', text: 'text-orange-900' },
-      amber: { border: 'border-amber-700', header: 'bg-amber-700', ring: 'ring-amber-400', tag: 'bg-amber-50 text-amber-900', hover: 'hover:border-amber-600', text: 'text-amber-900' },
-      yellow: { border: 'border-yellow-700', header: 'bg-yellow-700', ring: 'ring-yellow-400', tag: 'bg-yellow-50 text-yellow-900', hover: 'hover:border-yellow-600', text: 'text-yellow-900' },
-      green: { border: 'border-green-800', header: 'bg-green-800', ring: 'ring-green-400', tag: 'bg-green-50 text-green-900', hover: 'hover:border-green-600', text: 'text-green-900' },
-      teal: { border: 'border-teal-800', header: 'bg-teal-800', ring: 'ring-teal-400', tag: 'bg-teal-50 text-teal-900', hover: 'hover:border-teal-600', text: 'text-teal-900' },
-      blue: { border: 'border-blue-900', header: 'bg-blue-900', ring: 'ring-blue-400', tag: 'bg-blue-50 text-blue-900', hover: 'hover:border-blue-700', text: 'text-blue-900' },
-      indigo: { border: 'border-indigo-900', header: 'bg-indigo-900', ring: 'ring-indigo-400', tag: 'bg-indigo-50 text-indigo-900', hover: 'hover:border-indigo-700', text: 'text-indigo-900' },
-      violet: { border: 'border-violet-900', header: 'bg-violet-900', ring: 'ring-violet-400', tag: 'bg-violet-50 text-violet-900', hover: 'hover:border-violet-700', text: 'text-violet-900' },
-      purple: { border: 'border-purple-900', header: 'bg-purple-900', ring: 'ring-purple-400', tag: 'bg-purple-50 text-purple-900', hover: 'hover:border-purple-700', text: 'text-purple-900' },
-      pink: { border: 'border-pink-900', header: 'bg-pink-900', ring: 'ring-pink-400', tag: 'bg-pink-50 text-pink-900', hover: 'hover:border-pink-700', text: 'text-pink-900' },
-      slate: { border: 'border-slate-700', header: 'bg-slate-700', ring: 'ring-slate-400', tag: 'bg-slate-50 text-slate-900', hover: 'hover:border-slate-500', text: 'text-slate-900' },
-      zinc: { border: 'border-zinc-700', header: 'bg-zinc-700', ring: 'ring-zinc-400', tag: 'bg-zinc-50 text-zinc-900', hover: 'hover:border-zinc-500', text: 'text-zinc-900' },
-      stone: { border: 'border-stone-600', header: 'bg-stone-600', ring: 'ring-stone-400', tag: 'bg-stone-100 text-stone-900', hover: 'hover:border-stone-500', text: 'text-stone-900' },
-   };
-   return map[theme] || map.stone;
-};
-
-export function CardLibrary<T extends BaseLibraryItem>({
-   items,
-   selectedId,
-   onSelect,
-   onCreate,
-   onCreateAction,
-   onDelete,
-   onEdit,
-   itemTypeLabel,
-   emptyTemplate,
-   allowEdit = true,
-   renderEditFields,
-   renderItem,
-   cardColorTheme = 'stone',
-   layout
-}: Props<T>) {
-   const [searchTerm, setSearchTerm] = useState('');
-   const [filterSource, setFilterSource] = useState<'all' | 'official' | 'homebrew'>('all');
-   const [isEditing, setIsEditing] = useState(false);
-   const [editingItem, setEditingItem] = useState<T | null>(null);
-
-   const themeClasses = getColorClasses(cardColorTheme);
-
-   // Determine layout: defaults to 'grid' unless renderItem is present (legacy list behavior), but can be overridden by layout prop
-   const effectiveLayout = layout || (renderItem ? 'list' : 'grid');
-
-   const filteredItems = items.filter(item => {
-      const matchesSearch = item.name.includes(searchTerm) || item.description.includes(searchTerm) || (item.tags && item.tags.some(t => t.includes(searchTerm)));
-      const matchesSource = filterSource === 'all'
-         ? true
-         : filterSource === 'official'
-            ? item.source === '官方规则'
-            : item.source === '第三方/原创';
-      return matchesSearch && matchesSource;
-   });
-
-   const handleCreateStart = () => {
-      if (onCreateAction) {
-         onCreateAction();
-         return;
-      }
-      if (emptyTemplate) {
-         setEditingItem({ ...emptyTemplate, id: `custom-${Date.now()}`, source: '第三方/原创' });
-         setIsEditing(true);
-      }
-   };
-
-   const handleEditStart = (e: React.MouseEvent, item: T) => {
-      e.stopPropagation();
-      setEditingItem(item);
-      setIsEditing(true);
-   };
-
-   const handleDelete = (e: React.MouseEvent, id: string) => {
-      e.stopPropagation();
-      if (window.confirm(`确定要删除"${id}"吗？此操作不可恢复。`)) {
-         if (onDelete) onDelete(id);
-      }
-   };
-
-   const handleSave = () => {
-      if (editingItem) {
-         if (items.some(i => i.id === editingItem.id)) {
-            if (onEdit) onEdit(editingItem);
-         } else {
-            if (onCreate) onCreate(editingItem);
-         }
-         onSelect(editingItem);
-         setIsEditing(false);
-         setEditingItem(null);
-      }
-   };
-
-   if (isEditing && editingItem) {
-      return (
-         <div className={`bg-white p-6 rounded-lg border-2 border-dashed ${themeClasses.border} animate-fade-in max-w-4xl mx-auto`}>
-            <div className="flex items-center justify-between mb-4">
-               <h3 className={`font-bold text-xl ${themeClasses.text} flex items-center gap-2`}>
-                  <PenTool className="w-5 h-5" /> {items.some(i => i.id === editingItem.id) ? "编辑" : "创建自定义"}{itemTypeLabel}
-               </h3>
-               <button
-                  onClick={() => { setIsEditing(false); setEditingItem(null); }}
-                  className="flex items-center gap-1 text-sm text-stone-500 hover:text-stone-800 font-bold transition-colors bg-stone-100 hover:bg-stone-200 px-3 py-1.5 rounded-full"
-               >
-                  返回列表
-               </button>
-            </div>
-
-            <div className="space-y-4">
-               <div>
-                  <label className="block text-sm font-bold text-stone-700 mb-1">名称</label>
-                  <input
-                     type="text"
-                     value={editingItem.name}
-                     onChange={e => setEditingItem({ ...editingItem, name: e.target.value })}
-                     className="w-full p-2 border border-stone-300 rounded focus:ring-2 focus:ring-stone-400 focus:outline-none"
-                     placeholder={`例如：新${itemTypeLabel}`}
-                  />
-               </div>
-               <div>
-                  <label className="block text-sm font-bold text-stone-700 mb-1">封面简述</label>
-                  <input
-                     type="text"
-                     value={editingItem.description}
-                     onChange={e => setEditingItem({ ...editingItem, description: e.target.value })}
-                     className="w-full p-2 border border-stone-300 rounded focus:ring-2 focus:ring-stone-400 focus:outline-none"
-                     placeholder="一句话描述核心特色，用于卡牌封面显示..."
-                  />
-               </div>
-
-               {renderEditFields && renderEditFields(editingItem, setEditingItem)}
-
-               <div className="bg-stone-50 p-4 rounded text-sm text-stone-500 italic border border-stone-200">
-                  * 编辑功能当前仅开放基础信息及部分关联信息修改。
-               </div>
-
-               <div className="flex justify-end gap-3 mt-4">
-                  <button
-                     onClick={() => { setIsEditing(false); setEditingItem(null); }}
-                     className="px-4 py-2 text-stone-600 hover:bg-stone-100 rounded border border-stone-300 font-bold"
-                  >
-                     取消
-                  </button>
-                  <button
-                     onClick={handleSave}
-                     disabled={!editingItem.name}
-                     className={`px-4 py-2 text-white rounded font-bold transition-opacity disabled:opacity-50 ${themeClasses.header} hover:opacity-90`}
-                  >
-                     保存
-                  </button>
-               </div>
-            </div>
-         </div>
-      );
-   }
-
-   return (
-      <div className="space-y-6">
-         {/* Filters */}
-         <div className="flex flex-col md:flex-row gap-4 justify-between items-center bg-white p-3 rounded-lg border border-stone-200 shadow-sm">
-            <div className="relative w-full md:w-72">
-               <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-stone-400" />
-               <input
-                  type="text"
-                  placeholder={`搜索${itemTypeLabel} (名称/标签/描述)...`}
-                  value={searchTerm}
-                  onChange={e => setSearchTerm(e.target.value)}
-                  className="w-full pl-9 pr-3 py-2 rounded border border-stone-300 focus:outline-none focus:ring-2 focus:ring-stone-400 text-sm"
-               />
-            </div>
-            <div className="flex gap-2 w-full md:w-auto overflow-x-auto">
-               <button onClick={() => setFilterSource('all')} className={`px-3 py-1 text-xs font-bold rounded whitespace-nowrap transition-colors ${filterSource === 'all' ? 'bg-stone-800 text-white' : 'bg-stone-100 border border-stone-200 text-stone-600 hover:bg-stone-200'}`}>全部</button>
-               <button onClick={() => setFilterSource('official')} className={`px-3 py-1 text-xs font-bold rounded whitespace-nowrap transition-colors ${filterSource === 'official' ? 'bg-blue-800 text-white' : 'bg-stone-100 border border-stone-200 text-stone-600 hover:bg-stone-200'}`}>官方规则</button>
-               <button onClick={() => setFilterSource('homebrew')} className={`px-3 py-1 text-xs font-bold rounded whitespace-nowrap transition-colors ${filterSource === 'homebrew' ? 'bg-purple-800 text-white' : 'bg-stone-100 border border-stone-200 text-stone-600 hover:bg-stone-200'}`}>原创/第三方</button>
-            </div>
-         </div>
-
-         {/* Grid */}
-         <div className={`grid ${effectiveLayout === 'list' ? 'grid-cols-1 gap-3' : 'grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-6'}`}>
-            {/* Create New Card */}
-            {(onCreate || onCreateAction) && allowEdit && (
-               <div
-                  onClick={handleCreateStart}
-                  className={`
-                group cursor-pointer border-4 border-dashed border-stone-300 rounded-xl flex flex-col items-center justify-center 
-                bg-stone-50 hover:bg-stone-100 transition-colors shadow-inner
-                ${effectiveLayout === 'list' ? 'h-16 flex-row gap-4' : 'aspect-square xl:aspect-video'}
-              `}
-               >
-                  <div className={`rounded-full bg-white border-2 border-stone-300 flex items-center justify-center group-hover:scale-110 transition-transform ${effectiveLayout === 'list' ? 'w-8 h-8' : 'w-12 h-12 mb-3'}`}>
-                     <Plus className={`${effectiveLayout === 'list' ? 'w-4 h-4' : 'w-6 h-6'} text-stone-400 group-hover:text-stone-600`} />
-                  </div>
-                  <span className="font-bold text-stone-400 group-hover:text-stone-600 uppercase tracking-widest text-xs">新建{itemTypeLabel}</span>
-               </div>
-            )}
-
-            {filteredItems.map(item => {
-               const isSelected = item.name === selectedId || item.id === selectedId;
-
-               // Define Actions block
-               const actions = allowEdit && (item.source === '第三方/原创' || onEdit) && (
-                  <div className="flex gap-2 bg-white rounded-full shadow-lg p-1 border border-stone-200">
-                     {onEdit && (
-                        <button onClick={(e) => handleEditStart(e, item)} className="p-1.5 hover:bg-blue-100 rounded-full text-blue-600 transition-colors" title="编辑">
-                           <Edit2 className="w-4 h-4" />
-                        </button>
-                     )}
-                     {onDelete && item.source === '第三方/原创' && (
-                        <button onClick={(e) => handleDelete(e, item.id)} className="p-1.5 hover:bg-red-100 rounded-full text-red-600 transition-colors" title="删除">
-                           <Trash2 className="w-4 h-4" />
-                        </button>
-                     )}
-                  </div>
-               );
-
-               // Use custom renderer if provided
-               if (renderItem) {
-                  return (
-                     <div key={item.id} className={effectiveLayout === 'grid' ? 'h-full' : ''}>
-                        {renderItem(item, isSelected, () => onSelect(item), actions)}
-                     </div>
-                  );
-               }
-
-               // Standard Vertical Card Renderer
-               return (
-                  <div
-                     key={item.id}
-                     onClick={() => onSelect(item)}
-                     className={`
-                    group relative cursor-pointer rounded-xl border-4 transition-all duration-200 flex flex-col aspect-square xl:aspect-video shadow-md hover:shadow-xl hover:-translate-y-1 bg-white overflow-hidden
-                    ${isSelected
-                           ? `${themeClasses.border} ${themeClasses.ring} ring-2 ring-offset-2 scale-[1.02] z-10`
-                           : 'border-stone-300 hover:border-stone-400'}
-                  `}
-                  >
-                     {/* Card Header */}
-                     <div className={`h-12 px-3 flex items-center justify-between text-white ${themeClasses.header} transition-colors border-b-4 border-black/10`}>
-                        <div className="flex items-center gap-2 overflow-hidden w-full pt-1">
-                           <span className="font-black text-sm uppercase tracking-wide truncate w-full drop-shadow-md">{item.name}</span>
-                        </div>
-                     </div>
-
-                     {/* Ribbon/Badge */}
-                     {(!isSelected && actions) && (
-                        <div className="absolute top-2 right-2 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                           {actions}
-                        </div>
-                     )}
-
-                     <div className="absolute top-12 right-0 z-20">
-                        <span className={`text-[9px] font-black px-2 py-0.5 rounded-l shadow-sm uppercase tracking-wider text-white ${item.source === '官方规则' ? 'bg-black/40' : 'bg-purple-600'}`}>
-                           {item.source === '官方规则' ? '官方' : '自制'}
-                        </span>
-                     </div>
-
-                     {/* Card Body - Enriched with metadata */}
-                     <div className="flex-grow p-4 bg-stone-50 relative overflow-hidden flex flex-col justify-start">
-                        {/* Background Watermark */}
-                        <div className={`absolute -bottom-4 -right-4 text-5xl opacity-[0.05] pointer-events-none select-none font-serif font-black rotate-12 whitespace-nowrap ${themeClasses.text}`}>
-                           不咕鸟
-                        </div>
-
-                        <div className="relative z-10 space-y-2">
-                           {/* Species Specific */}
-                           {itemTypeLabel === '种族' && (item as any).speed && (
-                              <div className="flex flex-wrap gap-3">
-                                 <div className="flex items-center gap-1.5 text-stone-600 bg-white/60 px-2 py-1 rounded-md border border-stone-200">
-                                    <Zap className="w-3.5 h-3.5 text-amber-500" />
-                                    <span className="text-[10px] font-bold">{(item as any).speed} 尺</span>
-                                 </div>
-                                 <div className="flex items-center gap-1.5 text-stone-600 bg-white/60 px-2 py-1 rounded-md border border-stone-200">
-                                    <Scale className="w-3.5 h-3.5 text-blue-500" />
-                                    <span className="text-[10px] font-bold">体型: {(item as any).size}</span>
-                                 </div>
-                              </div>
-                           )}
-
-                           {/* Background Specific */}
-                           {itemTypeLabel === '背景' && (item as any).abilityScores && (
-                              <div className="flex flex-wrap gap-1.5">
-                                 {((item as any).abilityScores || []).map((score: string) => (
-                                    <div key={score} className="px-2 py-0.5 bg-dndRed/5 border border-dndRed/20 text-dndRed rounded text-[9px] font-black uppercase tracking-tighter">
-                                       {score}
-                                    </div>
-                                 ))}
-                              </div>
-                           )}
-
-                           {/* Feat Specific */}
-                           {itemTypeLabel === '专长' && (item as any).category && (
-                              <div className="flex items-center gap-1.5 text-stone-600">
-                                 <Star className="w-3.5 h-3.5 text-purple-500" />
-                                 <span className="text-[11px] font-black text-purple-700 uppercase tracking-wide">
-                                    {(item as any).category}
-                                 </span>
-                              </div>
-                           )}
-
-                           {/* Short description - hidden for species */}
-                           {itemTypeLabel !== '种族' && item.description && (
-                              <p className="text-[10px] text-stone-500 line-clamp-2 leading-relaxed italic">
-                                 {item.description}
-                              </p>
-                           )}
-                        </div>
-                     </div>
-
-                     {/* Card Footer */}
-                     <div className="px-3 py-2 bg-white border-t border-stone-200 h-10 flex justify-between items-center relative">
-                        <div className="flex gap-1 overflow-hidden mask-linear-fade">
-                           {(item.tags || []).slice(0, 2).map(tag => (
-                              <span key={tag} className={`text-[8px] px-1.5 py-0.5 rounded font-bold uppercase tracking-wider ${themeClasses.tag}`}>
-                                 {tag}
-                              </span>
-                           ))}
-                           {/* Fallback tags if none */}
-                           {(!item.tags || item.tags.length === 0) && (
-                              <span className="text-[8px] text-stone-300 uppercase tracking-wider font-bold">---</span>
-                           )}
-                        </div>
-
-                        {/* Spacer so the right end isn't completely empty but actions moved to top-right */}
-                        <div className="w-2" />
-
-                        {/* Selected Indicator */}
-                        {isSelected && (
-                           <div className="absolute right-2 top-1/2 -translate-y-1/2 group-hover:opacity-0 transition-opacity">
-                              <CheckCircle className={`w-5 h-5 ${themeClasses.text}`} />
-                           </div>
-                        )}
-                     </div>
-                  </div>
-               );
-            })}
-         </div>
-      </div>
-   );
+export function CardLibrary<T extends BaseLibraryItem>({ items, itemTypeLabel, itemKind, onSelect, onCreateAction, onEdit, onDelete, allowEdit = false, renderItem, toolbar, toolbarActions, groupByKind = false }: Props<T>) {
+    const [search, setSearch] = useState(''), [page, setPage] = useState(1);
+    const [pageSize, setPageSize] = useState(() => {
+        try {
+            const size = Number(localStorage.getItem('easy_cc_catalog_page_size'));
+            return [24, 48, 96].includes(size) ? size : 48;
+        }
+        catch {
+            return 48;
+        }
+    });
+    const scope = useMemo(() => items.map(item => item.id).join('|'), [items]);
+    useEffect(() => setPage(1), [scope]);
+    const query = search.trim().toLowerCase();
+    const visible = items.filter(item => [item.name, item.englishName, item.source, item.fullDescription || item.description, item.fluffDescription, ...(item.tags || [])].some(value => String(value || '').toLowerCase().includes(query)));
+    const displayGroups = itemKind === 'species' ? groupSpecies(visible) : visible.map(primary => ({ primary, variants: [] as T[] }));
+    const pages = Math.max(1, Math.ceil(displayGroups.length / pageSize)), current = Math.min(page, pages);
+    const remove = (item: T) => {
+        if (window.confirm('确定删除“' + item.name + '”？此操作不可恢复。'))
+            onDelete?.(item.id);
+    };
+    const pagination = !groupByKind && pages > 1 ? <nav className="catalog-pagination"><button type="button" disabled={current === 1} onClick={() => setPage(current - 1)}>上一页</button><span>{current} / {pages}</span><button type="button" disabled={current === pages} onClick={() => setPage(current + 1)}>下一页</button></nav> : null;
+    const renderCards = (groups: typeof displayGroups) => groups.map(({ primary: item, variants }) => { const actions = allowEdit ? <div>{onEdit && <button type="button" title="编辑" aria-label={'编辑' + item.name} onClick={() => onEdit(item)}><Edit2 size={18}/></button>}{onDelete && <button type="button" title="删除" aria-label={'删除' + item.name} onClick={() => remove(item)}><Trash2 size={18}/></button>}</div> : null; const select = () => onSelect(item, visible); return <React.Fragment key={itemKind ? resourceKey({ ...item, kind: item.kind || itemKind }) : item.id}>{renderItem ? renderItem(item, false, select, actions) : <div className="bookmark-card"><ResourcePreview showCategory={itemKind === 'favorites' && !groupByKind} item={{ ...item, kind: item.kind || itemKind }} onSelect={select}/>{itemKind && <FavoriteButton compact item={{ ...item, kind: item.kind || itemKind! }}/>}{variants.length > 0 && <details className="species-variant-options"><summary>同源选项 · {variants.length} 项</summary>{variants.map(variant => <button type="button" key={resourceKey(variant)} onClick={() => onSelect(variant, visible)}>{variant.name}<small>{variant.source}</small></button>)}</details>}</div>}</React.Fragment>; });
+    const pageGroups = groupByKind ? displayGroups : displayGroups.slice((current - 1) * pageSize, current * pageSize);
+    return <div className="catalog-browser complete-cards space-y-6"><div className="catalog-unified-toolbar">{toolbar}<div className="catalog-search-bar"><label><Search size={18}/><input aria-label={'搜索' + itemTypeLabel} placeholder="搜索名称、来源或正文" value={search} onChange={event => { setSearch(event.target.value); setPage(1); }}/></label></div>{toolbarActions}</div><div className="catalog-results-bar"><span>找到 <strong>{displayGroups.length}</strong> 组{itemTypeLabel}{itemKind === 'species' && <small> · 含 {visible.length} 条种族/亚种记录</small>}</span><label>每页<select value={pageSize} onChange={event => {
+            const value = Number(event.target.value);
+            setPageSize(value);
+            setPage(1);
+            try {
+                localStorage.setItem('easy_cc_catalog_page_size', String(value));
+            }
+            catch { }
+        }}>{[24, 48, 96].map(size => <option key={size} value={size}>{size} 张</option>)}</select></label></div>
+ {!visible.length && <div className="catalog-empty"><h3>{query ? '没有找到匹配资源' : '暂无显示内容'}</h3><p>{query ? '请调整搜索条件。' : '请调整来源筛选或在信息页读取资料。'}</p>{query && <button type="button" onClick={() => setSearch('')}>清除搜索</button>}</div>}
+ {pagination}<div className={'resource-grid grid ' + (groupByKind ? 'grouped-favorite-grid' : itemKind ? 'resource-cover-grid' : '')}>
+ {onCreateAction && <button type="button" className="catalog-create" onClick={onCreateAction}><Plus size={28}/>新建{itemTypeLabel}</button>}
+ {groupByKind ? [...new Set(pageGroups.map(group => group.primary.kind))].map(kind => <details className="favorite-type-group" key={kind} open><summary>{resourceLabels[kind || ''] || kind || '其他'}<small>{visible.filter(item => item.kind === kind).length}</small></summary><div className="resource-grid resource-cover-grid">{renderCards(pageGroups.filter(group => group.primary.kind === kind))}</div></details>) : renderCards(pageGroups)}
+ </div>{pagination}</div>;
 }

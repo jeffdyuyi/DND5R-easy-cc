@@ -1,0 +1,639 @@
+/* Full-height dice stage, with independent side panels and overlay drawers on phones. */
+.dice-studio {
+  --dice-left: 0px;
+  --dice-right: 272px;
+  position: relative;
+  isolation: isolate;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  background: var(--paper);
+}
+.dice-studio:fullscreen {
+  height: 100dvh;
+  width: 100vw;
+}
+.dice-studio .dice-tray {
+  position: absolute;
+  inset: 0 var(--dice-right) 0 var(--dice-left);
+  overflow: hidden;
+  background: radial-gradient(ellipse at center,#283447,var(--paper));
+}
+.dice-tray canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.dice-tray.is-simple canvas {
+  visibility: hidden;
+}
+.dice-tray-watermark {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  font-size: 160px;
+  color: #9a743926;
+}
+.dice-tray-status {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  color: var(--ink);
+  font-size: 16px;
+  z-index: 2;
+}
+.dice-side-panel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+.dice-right-panel {
+  right: 0;
+  width: var(--dice-right);
+  border-left: 1px solid var(--line);
+}
+.dice-side-panel>header {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 12px;
+  min-height: 60px;
+  background: var(--paper-shade);
+  border-bottom: 1px solid var(--line);
+}
+.dice-side-panel h2 {
+  font-size: 20px;
+  margin: 0;
+}
+.dice-panel-content {
+  padding: 12px;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.dice-studio button {
+  min-height: 44px;
+  border: 1px solid var(--line);
+  background: var(--paper-light);
+  color: var(--ink);
+  padding: 6px 10px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.dice-studio button:disabled {
+  opacity: .5;
+  cursor: default;
+}
+.dice-studio input:not([type=checkbox]),.dice-studio select {
+  min-width: 0;
+  min-height: 44px;
+  width: 100%;
+  padding: 6px;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  background: var(--paper-light);
+  font-size: 16px;
+}
+.dice-studio input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  accent-color: var(--accent);
+}
+.dice-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+  margin: 12px 0;
+}
+.dice-setting {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 16px 0;
+  font-size: 14px;
+}
+.dice-setting small {
+  display: block;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--muted);
+  margin-top: 4px;
+}
+.dice-options {
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+  font-size: 14px;
+}
+.dice-options summary {
+  cursor: pointer;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+.dice-options p {
+  font-size: 12px;
+  color: var(--muted);
+}
+.dice-side-panel nav {
+  display: flex;
+  gap: 4px;
+}
+.dice-side-panel button.dice-panel-close {
+  display: none;
+}
+.dice-panel-note {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 8px 0 14px;
+}
+.dice-save-form {
+  padding-bottom: 16px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
+.dice-save-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+.dice-save-form p {
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+.dice-save-form>button {
+  width: 100%;
+  color: var(--accent-dark);
+}
+.dice-formula,.dice-history-entry {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+.dice-formula h3 {
+  font-size: 18px;
+  margin: 0 0 6px;
+  overflow-wrap: anywhere;
+}
+.dice-formula p,.dice-history-entry p {
+  font-size: 14px;
+  margin: 6px 0;
+  overflow-wrap: anywhere;
+}
+.dice-formula>div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.dice-formula>div>button {
+  flex: 1;
+}
+.dice-history-entry>div {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+.dice-history-entry strong {
+  color: var(--accent-dark);
+  font-size: 24px;
+}
+.dice-history-entry span {
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+.dice-history-entry small {
+  font-size: 12px;
+  color: var(--muted);
+}
+.dice-scene-header {
+  position: absolute;
+  z-index: 3;
+  top: 12px;
+  left: calc(var(--dice-left) + 12px);
+  right: calc(var(--dice-right) + 12px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  color: var(--ink);
+  font-size: 14px;
+  pointer-events: none;
+}
+.dice-scene-header>span {
+  text-shadow: 0 1px 3px #000;
+}
+.dice-scene-header>div {
+  display: flex;
+  gap: 4px;
+  pointer-events: auto;
+}
+.dice-scene-header button {
+  background: #10141bcc;
+  color: var(--ink);
+  border-color: #9a743980;
+}
+.dice-scene-result {
+  position: absolute;
+  z-index: 3;
+  top: 76px;
+  left: calc(var(--dice-left) + 60px);
+  right: calc(var(--dice-right) + 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+  color: var(--ink);
+  pointer-events: none;
+  text-shadow: 0 2px 4px #000;
+}
+.dice-scene-result strong {
+  font-size: 40px;
+  line-height: 1.2;
+}
+.dice-scene-result span {
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+.dice-cast-bar {
+  position: absolute;
+  z-index: 4;
+  bottom: max(16px,env(safe-area-inset-bottom));
+  left: calc(var(--dice-left) + 20px);
+  right: calc(var(--dice-right) + 20px);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 600px;
+  margin-inline: auto;
+  padding: 10px 12px;
+  background: var(--paper);
+  border: 1px solid var(--gold);
+}
+.dice-cast-bar>button {
+  flex: none;
+  min-width: 88px;
+  background: var(--accent);
+  border-color: var(--accent-dark);
+  color: var(--ink);
+  font-size: 20px;
+  min-height: 48px;
+}
+.dice-error {
+  position: absolute;
+  z-index: 60;
+  bottom: 104px;
+  left: calc(var(--dice-left) + 12px);
+  right: calc(var(--dice-right) + 12px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: var(--paper-light);
+  color: var(--accent-dark);
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid var(--accent);
+}
+.dice-edge-launchers,.dice-panel-backdrop {
+  display: none;
+}
+@media(max-width:980px) {
+  .dice-studio {
+    --dice-left: 0px;
+    --dice-right: 0px;
+  }
+  .dice-side-panel {
+    display: none;
+    z-index: 50;
+    width: min(286px,calc(100% - 56px));
+    box-shadow: 0 0 24px #0006;
+  }
+  .dice-side-panel.is-open {
+    display: flex;
+  }
+  .dice-side-panel button.dice-panel-close {
+    display: block;
+  }
+  .dice-panel-backdrop {
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: 40;
+    width: 100%;
+    height: 100%;
+    border: 0!important;
+    background: #0006!important;
+  }
+  .dice-edge-launchers {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 72px;
+    left: 8px;
+    right: 8px;
+    z-index: 10;
+    pointer-events: none;
+  }
+  .dice-edge-launchers>div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .dice-edge-launchers button {
+    pointer-events: auto;
+    min-width: 44px;
+    padding: 6px;
+    background: var(--paper);
+    box-shadow: 0 2px 8px #0003;
+  }
+  .dice-cast-bar {
+    left: 12px;
+    right: 12px;
+    bottom: max(16px,env(safe-area-inset-bottom));
+  }
+  .dice-scene-header {
+    left: 12px;
+    right: 12px;
+  }
+  .dice-scene-result {
+    left: 64px;
+    right: 64px;
+    top: 76px;
+  }
+}
+/* Small faceted dice replace the old numeric form rows. */
+.dice-picker-hint {
+  margin: 0 0 8px;
+  font-size: 11px;
+  text-align: center;
+  color: #dfcfb6;
+}
+.dice-token-grid {
+  display: grid;
+  grid-template-columns: minmax(0,1fr);
+  gap: 4px;
+  margin-bottom: 0;
+}
+.dice-token {
+  position: relative;
+  min-width: 0;
+}
+.dice-studio .dice-token-main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 62px;
+  padding: 2px 4px 12px;
+  border: 1px solid transparent;
+  background: transparent;
+  transition: background .15s,border-color .15s;
+}
+.dice-token .die-preview {
+  width: 48px;
+  height: 50px;
+  overflow: visible;
+  transition: transform .15s;
+}
+.dice-token-label {
+  font-size: 12px;
+  color: var(--ink);
+  line-height: 1.4;
+}
+.dice-token.is-selected .dice-token-main {
+  background: #f5f0e614;
+  border-color: #9a743988;
+}
+.dice-cast-bar {
+  justify-content: center;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  pointer-events: none;
+}
+.dice-cast-bar>button {
+  pointer-events: auto;
+  min-width: 160px;
+  min-height: 52px;
+  padding: 10px 32px;
+  border: 2px solid var(--gold);
+  box-shadow: 0 4px 16px #0004;
+}
+@media(hover:hover) {
+  .dice-token-main:not(:disabled):hover .die-preview {
+    transform: translateY(-3px) rotate(-4deg);
+  }
+  .dice-token-main:not(:disabled):active .die-preview {
+    transform: translateY(1px);
+  }
+}
+@media(any-pointer:coarse) {
+  .dice-token-grid {
+    gap: 4px;
+    grid-template-columns: minmax(0,1fr);
+    margin-bottom: 0;
+  }
+  .dice-studio .dice-token-main {
+    min-height: 62px;
+    padding: 2px 4px 12px;
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  .dice-token .die-preview {
+    transition: none;
+    width: 48px;
+    height: 50px;
+  }
+}
+/* Dice selection is part of the table, not a drawer destination. */
+.dice-palette {
+  position: absolute;
+  z-index: 10;
+  top: 72px;
+  bottom: 94px;
+  left: 8px;
+  width: 76px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #9a743988 transparent;
+}
+.dice-roll-settings {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+.dice-roll-settings>summary {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--accent-dark);
+}
+.dice-scene-result {
+  left: 100px;
+}
+@media(min-width:981px) {
+  .dice-palette {
+    width: 84px;
+  }
+  .dice-token .die-preview {
+    width: 54px;
+    height: 56px;
+  }
+  .dice-studio .dice-token-main {
+    min-height: 70px;
+  }
+}
+/* Identical visible touch and mouse controls: minus / quantity / plus. */
+.dice-palette {
+  width: 112px;
+}
+.dice-token-grid {
+  gap: 8px;
+}
+.dice-studio .dice-token-main {
+  min-height: 76px;
+  padding: 2px;
+  border: 0;
+  background: transparent;
+}
+.dice-token.is-selected .dice-token-main {
+  background: transparent;
+  border-color: transparent;
+}
+.dice-token .die-preview {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  filter: drop-shadow(0 3px 4px #0006);
+}
+.dice-token.is-selected .die-preview {
+  filter: drop-shadow(0 0 5px #e4ba6f99);
+}
+.dice-token-stepper {
+  display: grid;
+  grid-template-columns: 44px 24px 44px;
+  align-items: center;
+}
+.dice-studio .dice-token-stepper>button {
+  position: static;
+  display: block;
+  width: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font-size: 20px;
+}
+.dice-token-stepper>.dice-token-count {
+  position: static;
+  min-width: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  text-align: center;
+  font-size: 14px;
+  color: var(--ink);
+}
+.dice-token.is-selected .dice-token-count {
+  background: transparent;
+  color: #f3d297;
+}
+.dice-scene-result {
+  left: 132px;
+}
+/* Seven compact rows share the available table height. */
+.dice-palette {
+  top: 60px;
+  bottom: 80px;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+}
+.dice-picker-hint {
+  flex: none;
+  margin: 0 0 4px;
+  font-size: 11px;
+}
+.dice-token-grid {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0,1fr);
+  grid-template-rows: repeat(7,minmax(44px,1fr));
+  gap: 2px;
+}
+.dice-token {
+  display: grid;
+  grid-template-columns: 48px 112px;
+  align-items: center;
+  min-height: 44px;
+}
+.dice-studio .dice-token-main {
+  height: 100%;
+  min-height: 44px;
+  max-height: 72px;
+  padding: 0;
+  gap: 0;
+}
+.dice-token .die-preview {
+  width: 42px;
+  height: calc(100% - 14px);
+  max-height: 42px;
+  min-height: 24px;
+  flex: none;
+}
+.dice-token-label {
+  font-size: 11px;
+  line-height: 14px;
+  flex: none;
+}
+.dice-token-stepper {
+  height: 44px;
+}
+.dice-scene-result {
+  left: 176px;
+}
+@media(max-width:380px) {
+  .dice-palette {
+    left: 2px;
+    width: 148px;
+  }
+  .dice-token {
+    grid-template-columns: 44px 104px;
+  }
+  .dice-token-stepper {
+    grid-template-columns: 44px 16px 44px;
+  }
+  .dice-scene-result {
+    left: 156px;
+    right: 54px;
+  }
+}

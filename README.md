@@ -1,123 +1,31 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+# 不咕鸟龙与地下城线下团辅助工具 · easy-cc
 
-# 不咕鸟 DND 5R 制卡器 (Boogu Bird DND 5R Character Creator)
+面向龙与地下城五版线下跑团的资源查阅工具，提供5etools中文资料手动下载、本地缓存、解析引用、角色资源整理、收藏和骰盘。角色数值由玩家在纸质角色卡上记录。
 
-[![React](https://img.shields.io/badge/React-18-blue?logo=react)](https://reactjs.org/)
-[![Vite](https://img.shields.io/badge/Vite-5-purple?logo=vite)](https://vitejs.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-cyan?logo=tailwindcss)](https://tailwindcss.com/)
+底部五入口为骰子、速查、角色、规则、信息；角色包含起源、职业、特性、法术、背包。支持深色幻想与明亮冒险两套Kenney PNG主题及Fusion Pixel字体。完整PWA离线启动、自选存储目录和小程序/原生应用尚未实现。
 
-**不咕鸟 DND 5R 制卡器** 是一款基于 D&D 5e 2024 (5R) 规则的现代化网页端角色卡制作与管理工具。旨在为玩家提供流畅、直观且规则严谨的跑团辅助体验。
+## 开发与部署
 
-</div>
-
-## ✨ 核心功能 (Core Features)
-
-- **🧙‍♂️ 角色创建向导 (Character Wizard)**
-  - 分步骤引导式创建流程，涵盖种族、职业、属性、背景、阵营、装备等核心要素。
-  - **深度职业支持**: 支持法师 (Wizard)、术士 (Sorcerer)、邪术师 (Warlock)、游荡者 (Rogue)、游侠 (Ranger) 等职业的详细特性选择（如法术位、子职能力、专长等）。
-  - **自动规则计算**: 自动处理种族特性（ASI）、职业能力加成、背景熟练项等规则细节。
-
-- **📝 交互式角色卡 (Interactive Character Sheet)**
-  - **总览 (Bio)**: 角色基本信息、外观、背景故事。
-  - **战斗 (Combat)**: 实时计算 AC、先攻、速度，管理生命值、临时生命值与豁免检定。
-  - **属性 (Stats)**: 六大属性与全技能检定速查（含熟练/专精标记）。
-  - **法术 (Spells)**: 完整的法术位追踪、已知法术/准备法术管理，支持一键重置法术位。
-  - **物品栏 (Inventory)**: 装备、道具、负重管理，支持魔法物品详情查看。
-  - **数据整合**: 职业特性、种族能力与专长说明一站式查询。
-
-- **📚 现代化规则数据库 (Modern Rule Library)**
-  - 完整收录 D&D 5e 2024 新版规则数据。
-  - **模块化数据架构**: 种族 (Species) 与背景 (Backgrounds) 均已拆分为独立文件模块，便于维护与扩展。
-  - 包括：职业 (Classes/Subclasses)、种族 (Species)、背景 (Backgrounds)、专长 (Feats)、法术 (Spells 0-9环)、物品 (Items) 等。
-  - 支持全文搜索与快速筛选。
-
-- **🎨 现代化 UI 设计**
-  - 使用 Tailwind CSS 打造的精美界面。
-  - 响应式设计，适配桌面端与平板操作。
-  - 羊皮纸风格配色，沉浸式跑团体验。
-
-## 🛠️ 技术栈 (Tech Stack)
-
-本项目完全使用现代前端技术栈构建：
-
-- **Frontend Framework**: [React 18](https://react.dev/)
-- **Build Tool**: [Vite](https://vitejs.dev/)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Deployment**: GitHub Pages
-
-## 🚀 快速开始 (Get Started)
-
-### 环境要求
-确保您的开发环境中已安装 [Node.js](https://nodejs.org/) (推荐 v18+)。
-
-### 1. 安装依赖
-克隆项目后，在根目录下运行：
-
-```bash
-npm install
+```sh
+npm ci
+npm run dev -- --host 127.0.0.1 --port 5195 --strictPort
 ```
 
-> **注意**: 如果遇到依赖冲突，可以尝试删除 `node_modules` 和 `package-lock.json` 后重新安装。
+本地地址为 http://127.0.0.1:5195/DND5R-easy-cc/ 。GitHub Pages工作流安装锁定依赖、构建dist并上传Pages产物。仓库不保存本机dist和node_modules。
 
-### 2. 启动开发服务器
-启动本地开发环境，支持热更新：
+## 仓库内容
 
-```bash
-npm run dev
-```
-访问终端显示的地址 (通常是 `http://localhost:5173`) 即可看到应用。
+- components、contexts、hooks、src、styles、data：运行源码、适配层及发布数据。
+- public：应用实际使用的字体、图标、骰盘、美术、作者支持二维码及对应许可。
+- .github/workflows：部署流程；package-lock.json用于依赖复现。
+- docs、本地接手记录、参考PDF、历史归档、美术原始压缩包、用户角色导出和资料制作脚本只保留本地，不随仓库更新上传。
 
-### 3. 构建生产版本
-编译并打包用于生产环境的代码：
+浏览器中的角色、收藏和外部原文缓存不会随源码推送到GitHub。不同站点地址的浏览器存储彼此独立；迁移前请在信息页导出相应备份。
 
-```bash
-npm run build
-```
-构建产物将生成在 `dist` 目录下。
+## 内容与素材
 
-### 4. 预览生产版本
-在本地预览构建后的应用：
+中文主库接入 tjliqy/5etools-cn 的cn2.0分支，Homebrew按独立资料包处理。下载由玩家主动发起；外部内容不随应用源码整库发布。各条目保留出处及解析记录。
 
-```bash
-npm run preview
-```
+工具作者不拥有外部规则或译文的著作权。中文源许可原文位于public/sources，字体、图标、Kenney UI、Dice-Box及骰型图的作者与许可随实际素材保留。应用信息页提供查阅入口。不能以代码或某一素材的许可代替其他外部内容的许可。
 
-## 📂 项目结构 (Project Structure)
-
-```
-/
-├── components/         # React UI 组件
-│   ├── character-sheet/ # 角色卡相关组件
-│   ├── library/        # 规则库组件
-│   ├── wizard/         # 角色创建向导相关组件
-│   └── ui/             # 通用 UI 组件
-├── data/               # 游戏规则静态数据 (TypeScript)
-│   ├── backgrounds/    # 背景数据 (各背景独立文件)
-│   ├── classes/        # 职业数据 (各职业独立文件)
-│   ├── species/        # 种族数据 (各族独立文件)
-│   ├── spell-lists/    # 法术列表 (职业与专长法术表)
-│   ├── data-classes.ts     # 职业索引
-│   ├── data-spells-*.ts    # 法术详情 (分等级)
-│   ├── data-items-*.ts     # 物品数据
-│   └── ...
-├── utils/              # 工具函数
-│   ├── characterUtils.ts   # 角色数据处理逻辑
-│   ├── rules.ts            # 规则计算逻辑
-│   └── ...
-├── App.tsx             # 应用入口与路由
-├── index.css           # Tailwind 入口与全局样式
-└── vite.config.ts      # Vite 配置文件
-```
-
-## 🤝 贡献 (Contribution)
-
-欢迎提交 Issue 或 Pull Request 来改进本项目！无论是修复 Bug、补充数据还是优化 UI，您的贡献都将帮助更多跑团玩家。
-
----
-<div align="center">
-Made with ❤️ for D&D Players
-</div>
+公开发行版暂不包含待核对再分发许可的中文内置SRD与参考PDF；可在信息页主动下载或导入外部资料。本地data/builtin为可选私人资料，不是公开部署依赖。

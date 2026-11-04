@@ -1,0 +1,70 @@
+/* One dismiss control for all modal headers. The icon is small; the hit area
+   remains large enough for touch. Primary content actions keep their own size. */
+dialog button.dialog-dismiss,
+.character-folio dialog button.dialog-dismiss {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  max-width: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  box-shadow: none;
+}
+dialog button.dialog-dismiss svg { width: 18px; height: 18px; }
+dialog button.dialog-dismiss:hover { background: var(--paper-shade); color: var(--ink); }
+.portrait-modal-heading { display: flex; justify-content: flex-end; margin: -8px -8px 0 0; }
+.library-overlay>header,.reader-toolbar,.picker-toolbar { padding-block: 4px; }
+/* Leave an actual backdrop to tap on mobile instead of filling the viewport. */
+@media(max-width:760px) {
+  dialog.resource-reader,
+  dialog.character-picker-dialog,
+  dialog.folio-reader {
+    width: calc(100vw - 20px);
+    max-width: calc(100vw - 20px);
+    height: 90dvh;
+    max-height: 90dvh;
+    margin: auto;
+    border: 1px solid var(--line);
+  }
+  dialog.character-picker-dialog.spell-reader-dialog { height: 86dvh; max-height: 86dvh; }
+}
+
+/* Dialog headers own reference navigation; inline readers retain their back control. */
+dialog .resource-reference-back { display:none; }
+
+.reader-toolbar { display:flex; justify-content:space-between; align-items:center; }
+.career-directory-toggle { margin-left:auto; }
+.class-progression-section>summary { cursor:pointer; color:var(--accent-dark); padding:8px 0; }
+.class-progression-section>summary>.rich-section-heading { display:inline; margin:0; padding:0; border:0; background:none; }
+/* Full-screen reading takes priority over list navigation on all viewport sizes. */
+dialog.resource-reader,dialog.character-picker-dialog,dialog.folio-reader {
+  position:fixed!important; inset:10px!important; margin:0!important;
+  width:calc(100% - 20px)!important; height:calc(100dvh - 20px)!important; max-width:none!important; max-height:none!important;
+  box-sizing:border-box; z-index:300!important; border:0!important;
+  padding:0!important;
+  background:var(--paper)!important;
+}
+dialog.folio-reader[open] { display:flex; flex-direction:column; overflow:hidden; }
+.folio-reader-content { flex:1; min-height:0; overflow:auto; }
+dialog .reader-shell { height:100%; min-height:0; }
+dialog .reader-scroll,dialog .picker-detail-scroll { touch-action:pan-y; }
+dialog .reader-navigation,dialog .picker-detail-footer {
+  flex:none; min-height:64px; padding:12px 16px max(16px,env(safe-area-inset-bottom))!important;
+  background:var(--paper-shade); text-align:center;
+}
+
+dialog .resource-bookmark-action { display:none; }
+.character-picker-dialog.is-reading .picker-workspace { display:flex!important; flex:1; min-height:0; }
+.character-picker-dialog.is-reading .picker-detail { display:flex!important; flex-direction:column; flex:1; min-width:0; min-height:0; }
+.character-picker-dialog.is-reading .picker-detail-scroll { flex:1; min-height:0; overflow:auto; }
+.rules-top-tabs,.information-navigation { position:sticky; top:0; z-index:110; flex:none; background:var(--paper); }
+.character-folio .folio-top-tabs { position:relative; z-index:110; background:var(--paper); }
+.app-console { z-index:120; }
+.rule-chapter h2,.rule-chapter h3,.rule-chapter h4 { scroll-margin-top:68px; }

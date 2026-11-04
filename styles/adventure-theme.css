@@ -1,0 +1,114 @@
+/* Kenney UI Pack - Adventure, original PNG assets (CC0). Palette only affects this theme. */
+:root[data-theme=adventure] {
+  color-scheme:light;
+  --frame-button-slice:4; --frame-panel-slice:8;
+  --ink:#382b22; --muted:#725f4b; --deep:#e8ce9f;
+  --paper:#f5e7c9; --paper-light:#fff3d5; --paper-shade:#efdbb6;
+  --line:#b79462; --gold:#885224; --accent:#e0b777; --accent-dark:#9b3f32;
+  --surface-hover:#ffe7b4; --surface-selected:#f5c7a7; --text-selected:#682d24;
+  --danger:#b23238; --shadow-panel:0 8px 28px #6c421b33;
+  --frame-panel:url('../src/assets/ui/kenney-adventure/panel.png');
+  --frame-card:url('../src/assets/ui/kenney-adventure/card.png');
+  --frame-button:url('../src/assets/ui/kenney-adventure/button.png');
+  --frame-selected:url('../src/assets/ui/kenney-adventure/selected.png');
+  --frame-source:var(--frame-panel); --frame-active-source:var(--frame-selected);
+  scrollbar-color:#b79462 var(--paper);
+}
+.information-navigation { grid-template-columns:repeat(4,minmax(0,1fr)); }
+.theme-options { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+.theme-options button { display:flex; flex-direction:column; gap:8px; min-height:88px; justify-content:center; align-items:center; }
+.theme-options small { font-size:12px; color:var(--muted); }
+[data-theme=adventure] .resource-cover-editorial .resource-cover-fact strong,
+[data-theme=adventure] .resource-card-unified .resource-card-content .rich-text strong { color:var(--ink); }
+[data-theme=adventure] .resource-card-unified .resource-card-content .rich-text :is(.rich-section-heading,.rich-detail-heading) { color:var(--accent-dark); }
+[data-theme=adventure] .career-feature.is-active { background:linear-gradient(115deg,#cceae0,#d6e8ef); }
+[data-theme=adventure] .career-feature.is-active>summary>strong { color:#205f60; }
+[data-theme=adventure] .career-feature.is-active>summary>span { color:#376e6b; }
+[data-theme=adventure] body button.resource-inline-reference { color:#9b3f32; }
+[data-theme=adventure] body button.favorite-toggle[aria-pressed=true],
+[data-theme=adventure] body button.favorite-toggle:not(:disabled):hover { color:#b52d50!important; }
+[data-theme=adventure] .dice-studio .dice-tray { background:radial-gradient(ellipse at center,#fff4d9,#e4c692); }
+[data-theme=adventure] .app-console { box-shadow:0 -4px 16px #7a542329; }
+[data-theme=adventure] .dice-scene-result,[data-theme=adventure] .dice-tray-status { color:var(--ink); }
+[data-theme=adventure] .portrait-modal { background:#46301d55; }
+[data-theme=adventure] dialog::backdrop { background:#46301d55; }
+[data-theme=adventure] body button:is(.reader-outline-shade,.dice-panel-backdrop) { background:#46301d44!important; }
+[data-theme=adventure] .resource-cover,[data-theme=adventure] .native-resource-card { color:var(--ink); }
+/* Shared workspace refinements for both themes. */
+.information-navigation { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.theme-toggle { width:44px; min-width:44px; min-height:44px; padding:0!important; font-size:22px; }
+
+body .rule-chapter { display:block; width:100%; padding-right:0!important; box-sizing:border-box; }
+body .rule-chapter-body { width:100%; max-width:none; }
+body .rule-chapter-body .native-resource-card { width:100%; max-width:none!important; box-sizing:border-box; }
+body .rule-directory-toggle { opacity:.85; border:5px solid transparent!important; border-image:var(--frame-button) var(--frame-button-slice,12) / 5px!important; background:var(--paper-light)!important; }
+.source-update-controls { padding:10px 0; border-bottom:1px solid var(--line); }
+.core-update-line { display:flex; flex-wrap:wrap; gap:6px 12px; align-items:baseline; }
+.core-update-line strong { color:var(--gold); }
+.core-update-line span { font-size:14px; }
+.source-update-controls small { display:block; color:var(--muted); font-size:12px; margin-top:4px; }
+body .source-update-controls button { min-height:40px; padding:3px 9px; font-size:14px; }
+.homebrew-update-tools { margin-top:8px; font-size:14px; }
+.homebrew-update-tools p { font-size:13px; }
+:root { --cache-ready:#365c70; --cache-working:#a5853f; --cache-error:#723e49; }
+:root[data-theme=adventure] { --cache-ready:#c1dfcf; --cache-working:#f5d290; --cache-error:#edc0ae; }
+.information-workspace .brew-package-list { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; padding:8px 0; }
+.information-workspace .brew-package-row { position:relative; min-width:0; border:6px solid transparent; border-image:var(--frame-card) var(--frame-panel-slice,12) / 6px; background:var(--paper); overflow:hidden; }
+.information-workspace .brew-package-row.state-cached { background:linear-gradient(0deg,var(--cache-ready),var(--paper-light)); }
+.information-workspace .brew-package-row:is(.state-reading,.state-downloaded,.state-queued) { background:linear-gradient(0deg,var(--cache-working),var(--paper-light),var(--cache-working)); background-size:100% 220%; animation:cache-charging 2.5s ease-in-out infinite; }
+.information-workspace .brew-package-row:is(.state-failed,.state-cancelled) { background:linear-gradient(0deg,var(--cache-error),var(--paper-light)); }
+.information-workspace .brew-package-main { display:flex; flex-direction:column; justify-content:space-between; align-items:stretch; gap:8px; padding:8px; min-height:180px; }
+.information-workspace .brew-package-choice { display:flex; align-items:flex-start; gap:5px; }
+.information-workspace .brew-package-choice span { min-width:0; overflow-wrap:anywhere; }
+.information-workspace .brew-package-choice strong { font-size:14px; line-height:1.45; }
+.information-workspace .brew-package-choice small { font-size:12px; }
+.information-workspace .brew-package-state { display:flex; flex-direction:column; gap:4px; font-size:13px; }
+.information-workspace .brew-details-button { min-height:32px; padding:2px 6px; font-size:12px; align-self:flex-end; }
+.information-workspace .brew-package-row.is-expanded { grid-column:1 / -1; }
+.information-workspace .brew-package-row.is-expanded .brew-package-main { min-height:0; }
+.information-workspace .source-cache-card { background:linear-gradient(0deg,var(--paper-shade),var(--paper-light)); }
+@keyframes cache-charging { 0%,100% { background-position:0 0; } 50% { background-position:0 100%; } }
+@media(prefers-reduced-motion:reduce) { .information-workspace .brew-package-row { animation:none!important; } }
+@media(max-width:400px) { .information-workspace .brew-package-list { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+
+.quick-reference { display:flex; flex-direction:column; flex:1; min-height:0; min-width:0; }
+.quick-reference-tabs { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:6px; padding:6px; flex:none; background:var(--paper); }
+.quick-reference-tabs button { min-height:44px; font-size:16px; }
+.quick-reference-page { flex:1; min-height:0; overflow:auto; }
+.quick-reference-page[hidden] { display:none!important; }
+body .theme-toggle { color:var(--accent-dark); }
+
+/* Match the 48x24 Adventure buttons: 4px corners leave a real stretchable centre. */
+body button { box-sizing:border-box; }
+[data-theme=adventure] body button { background-clip:padding-box; }
+body .library-compact-nav>button { display:inline-flex; align-items:center; justify-content:center; gap:5px; line-height:1.25; }
+body .library-compact-nav>button>span:last-child { flex:none; }
+body :is(input,select,textarea):not([type=checkbox]):not([type=range]):not([type=file]) {
+  box-sizing:border-box; border:1px solid var(--line); border-image:none; border-radius:0;
+  background-clip:padding-box;
+}
+
+/* Preserve the original PNG centre and edge as one continuous surface. */
+[data-theme=adventure] body button { border-image-slice:var(--frame-button-slice) fill!important; }
+[data-theme=adventure] body button.resource-cover.resource-cover-editorial { border-image-slice:var(--frame-panel-slice) fill!important; }
+[data-theme=adventure] body .library-compact-nav>button { position:relative; isolation:isolate; overflow:visible; }
+[data-theme=adventure] body .library-compact-nav>button>* { background:transparent!important; }
+body .grouped-favorite-grid { display:block!important; }
+.favorite-type-group { margin:0 0 12px; }
+.favorite-type-group>summary { cursor:pointer; color:var(--gold); border-bottom:1px solid var(--line); min-height:40px; padding:6px 4px; }
+.favorite-type-group>summary small { margin-left:10px; color:var(--muted); }
+.favorite-type-group>.resource-grid { margin-top:8px; }
+
+.information-topbar { display:flex; align-items:stretch; gap:8px; position:sticky; top:0; z-index:12; background:var(--paper); margin-bottom:10px; }
+.information-topbar .information-navigation { flex:1; min-width:0; margin:0; position:static; }
+/* Only the active destination receives the selected artwork, including the large centre key. */
+body .app-console>button:not([aria-current=page]) { border-image-source:var(--frame-button)!important; background:var(--paper-light)!important; color:var(--ink)!important; }
+body .app-console>button[aria-current=page] { border-image-source:var(--frame-selected)!important; background:var(--surface-selected)!important; color:var(--text-selected)!important; }
+
+body button.character-create-card {
+  min-width:0; min-height:200px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px;
+  background:var(--paper-shade)!important; color:var(--muted);
+}
+.character-create-card>span { font-size:32px; line-height:1; }
+.character-create-card>strong { font-size:15px; font-weight:400; }
+

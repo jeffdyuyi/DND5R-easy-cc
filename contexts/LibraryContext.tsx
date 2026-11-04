@@ -1,12 +1,12 @@
 import React, { createContext, useContext } from 'react';
 import { useLibraryManager, LibraryHandler } from '../hooks/useLibraryManager';
 import { ClassItem, SubclassItem, SpeciesItem, BackgroundItem, SpellItem, FeatItem, ItemItem } from '../types';
-import {
-    CLASS_DB, SUBCLASS_DB, SPECIES_DB, BACKGROUND_DB, SPELL_DB, FEAT_DB,
-    WEAPON_DB, ARMOR_DB, TOOL_DB, GEAR_DB, MAGIC_ITEM_DB
-} from '../data';
-
+import { CHAR_OPTION_DB, REWARD_DB, PSIONIC_DB, OPTIONAL_FEATURE_DB, CLASS_DB, SUBCLASS_DB, SPECIES_DB, BACKGROUND_DB, SPELL_DB, FEAT_DB, WEAPON_DB, ARMOR_DB, TOOL_DB, GEAR_DB, MAGIC_ITEM_DB } from '../data';
 interface LibraryContextType {
+    charOptions: LibraryHandler<any>;
+    rewards: LibraryHandler<any>;
+    psionics: LibraryHandler<any>;
+    optionalFeatures: LibraryHandler<any>;
     classes: LibraryHandler<ClassItem>;
     subclasses: LibraryHandler<SubclassItem>;
     species: LibraryHandler<SpeciesItem>;
@@ -18,31 +18,29 @@ interface LibraryContextType {
     tools: LibraryHandler<ItemItem>;
     gears: LibraryHandler<ItemItem>;
     magicItems: LibraryHandler<ItemItem>;
-
-    // Aggregated valid options
-    allTools: ItemItem[];
 }
-
 const LibraryContext = createContext<LibraryContextType | null>(null);
-
-export const LibraryProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+export const LibraryProvider: React.FC<{
+    children: React.ReactNode;
+}> = ({ children }) => {
     const classes = useLibraryManager('dnd_lib_classes', CLASS_DB);
     const subclasses = useLibraryManager('dnd_lib_subclasses', SUBCLASS_DB);
     const species = useLibraryManager('dnd_lib_species', SPECIES_DB);
     const backgrounds = useLibraryManager('dnd_lib_backgrounds', BACKGROUND_DB);
     const spells = useLibraryManager('dnd_lib_spells', SPELL_DB);
     const feats = useLibraryManager('dnd_lib_feats', FEAT_DB);
-
+    const charOptions = useLibraryManager('dnd_lib_char_options', CHAR_OPTION_DB);
+    const rewards = useLibraryManager('dnd_lib_rewards', REWARD_DB);
+    const psionics = useLibraryManager('dnd_lib_psionics', PSIONIC_DB);
+    const optionalFeatures = useLibraryManager('dnd_lib_optional_features', OPTIONAL_FEATURE_DB);
     const weapons = useLibraryManager('dnd_lib_items_weapons', WEAPON_DB);
     const armors = useLibraryManager('dnd_lib_items_armor', ARMOR_DB);
     const tools = useLibraryManager('dnd_lib_items_tools', TOOL_DB);
     const gears = useLibraryManager('dnd_lib_items_gear', GEAR_DB);
     const magicItems = useLibraryManager('dnd_lib_items_magic', MAGIC_ITEM_DB);
-
-    // Derived aggregations
-    const allTools = [...tools.items, ...weapons.items, ...armors.items, ...gears.items, ...magicItems.items];
-
     const value = {
+        charOptions, rewards, psionics,
+        optionalFeatures,
         classes,
         subclasses,
         species,
@@ -53,17 +51,12 @@ export const LibraryProvider: React.FC<{ children: React.ReactNode }> = ({ child
         armors,
         tools,
         gears,
-        magicItems,
-        allTools
+        magicItems
     };
-
-    return (
-        <LibraryContext.Provider value={value}>
+    return (<LibraryContext.Provider value={value}>
             {children}
-        </LibraryContext.Provider>
-    );
+        </LibraryContext.Provider>);
 };
-
 export const useLibrary = () => {
     const context = useContext(LibraryContext);
     if (!context) {

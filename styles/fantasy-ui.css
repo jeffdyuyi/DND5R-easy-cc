@@ -1,0 +1,376 @@
+/* Kenney Fantasy UI Borders 1.0, unmodified PNGs, CC0.
+   Palette/type remain in handbook-theme.css. This file owns artwork and states.
+   48px source tiles use 12px corners; border-image stretches only the edges. */
+:root {
+  --frame-panel: url('../src/assets/ui/kenney-fantasy/panel.png');
+  --frame-card: url('../src/assets/ui/kenney-fantasy/card.png');
+  --frame-button: url('../src/assets/ui/kenney-fantasy/button.png');
+  --frame-selected: url('../src/assets/ui/kenney-fantasy/selected.png');
+  --surface-hover: #303f52;
+  --surface-selected: #2c4763;
+  --text-selected: #ffe1a5;
+  --danger: #f0a2a0;
+  --shadow-panel: 0 12px 36px #0008;
+  scrollbar-color: #66758a var(--paper);
+}
+
+/* Shared artwork for normal actions, including tabs and the bottom console.
+   Inline links, image hit areas and dismiss controls are reset below. */
+body button,
+.character-roster>header label,
+.portrait-upload,
+.library-transfer-actions>label {
+  border: 6px solid transparent !important;
+  border-image: var(--frame-button) var(--frame-button-slice,12) / 6px / 0 stretch !important;
+  border-radius: 0;
+  background: var(--paper-light) !important;
+  color: var(--ink);
+  background-clip: padding-box;
+  box-shadow: none;
+}
+body button:not(:disabled):hover,
+.character-roster>header label:hover,
+.portrait-upload:hover {
+  background-color: var(--surface-hover) !important;
+}
+body button:not(:disabled):active {
+  background-color: var(--surface-selected) !important;
+}
+body button:is([aria-pressed=true],[aria-current=page],[aria-current=location]),
+.source-choice.is-selected {
+  border-image-source: var(--frame-selected) !important;
+  background: var(--surface-selected) !important;
+  color: var(--text-selected) !important;
+}
+body button:disabled { opacity: .42; cursor: not-allowed; }
+body button:focus-visible { outline: 2px solid var(--gold) !important; outline-offset: 2px; }
+body :is(input,select,textarea):not([type=checkbox]):not([type=range]):not([type=file]) {
+  background: var(--paper) !important;
+  color: var(--ink) !important;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+}
+body input[type=checkbox] { accent-color: var(--gold); }
+body input[type=range] { accent-color: var(--gold); }
+
+/* Panels use a more complete corner; nested content uses the lighter card. */
+.native-resource-card.resource-card-unified,
+.character-source-settings,
+.user-resource-editor,
+.external-cache-card,
+.information-panel,
+.local-resource-bundles,
+.portrait-modal-panel,
+.character-folio .folio-section {
+  border: 8px solid transparent !important;
+  border-image: var(--frame-panel) var(--frame-panel-slice,12) / 8px / 0 stretch !important;
+  border-radius: 0;
+  background: var(--paper-light);
+  color: var(--ink);
+  box-shadow: none;
+}
+dialog:is(.resource-reader,.character-picker-dialog,.folio-reader,.library-overlay) {
+  border: 8px solid transparent !important;
+  border-image: var(--frame-panel) var(--frame-panel-slice,12) / 8px / 0 stretch !important;
+  background: var(--paper-light);
+  color: var(--ink);
+  box-shadow: var(--shadow-panel);
+}
+dialog::backdrop { background: #070a10c9; }
+.portrait-modal { background: #070a10c9; }
+.reader-toolbar,.picker-toolbar,.reader-navigation,.folio-reader>header,
+.library-overlay>header,.library-overlay>footer,.picker-detail-footer {
+  background: var(--paper-shade);
+  border-color: var(--line);
+  color: var(--ink);
+}
+
+/* Compact cards: artwork occupies only six pixels, never an extra outer frame. */
+body button.resource-cover.resource-cover-editorial,
+.character-folio .builder-selected-resources button.resource-cover.resource-cover-editorial {
+  border: 6px solid transparent !important;
+  border-image: var(--frame-card) var(--frame-panel-slice,12) / 6px / 0 stretch !important;
+  background: var(--paper-light) !important;
+  color: var(--ink);
+  border-radius: 0;
+  box-shadow: none;
+  overflow: hidden;
+}
+body button.resource-cover.resource-cover-editorial:hover {
+  background: var(--surface-hover) !important;
+  border-image-source: var(--frame-selected) !important;
+}
+.resource-cover-editorial .resource-cover-kicker {
+  background: transparent;
+  color: var(--muted);
+  border-color: var(--line);
+  min-height: 28px;
+  padding: 5px 22px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.resource-cover-editorial .resource-cover-kicker span:last-child { color: var(--muted); }
+.resource-cover-editorial .resource-cover-title strong { color: var(--ink); }
+.resource-cover-editorial .resource-cover-title small { color: var(--muted); }
+.resource-cover-editorial .resource-cover-fact strong { color: #cbd4df; }
+.resource-cover-editorial .resource-cover-title { padding-inline: 5px; align-items:center; text-align:center; }
+.resource-cover-editorial .resource-cover-facts { padding-inline: 5px; align-items:center; text-align:center; }
+.character-folio .selected-card-frame .preview-selected .resource-cover-title { padding: 26px 5px 3px; }
+.character-folio .selected-card-frame .preview-selected .resource-cover-facts { padding: 2px 5px 5px; }
+
+.character-roster-card,
+.origin-portrait,
+.paperdoll-portrait,
+.career-section,
+.career-feature,
+.class-level-cards>details,
+.source-choice,
+.workspace-empty {
+  border: 6px solid transparent !important;
+  border-image: var(--frame-card) var(--frame-panel-slice,12) / 6px / 0 stretch !important;
+  background: var(--paper-light);
+  border-radius: 0;
+  box-shadow: none;
+}
+.character-roster-card { overflow: hidden; }
+.roster-portrait { background: var(--paper); }
+.roster-caption { background: var(--paper-shade); border-color: var(--line); }
+.portrait-neutral { color: var(--muted); }
+.career-feature.is-active { background: linear-gradient(115deg,#183b41,#23384e); }
+.career-feature.is-active>summary>strong { color: #b4e4df; }
+.career-feature.is-active>summary>span { color: #a8c7cc; }
+.source-choice.is-selected { border-image-source: var(--frame-selected) !important; }
+.career-directory,.reader-outline,.rule-chapter>aside>details {
+  background: var(--paper-light);
+  border-color: var(--line);
+}
+
+/* Text links and corner controls remain unobtrusive; no frame inside a frame. */
+body button:is(.dialog-dismiss,.favorite-toggle,.selected-card-remove,.equipment-remove,
+.roster-delete,.resource-inline-reference,.character-roster-open,.dice-token-main),
+.character-folio dialog button.dialog-dismiss {
+  border: 0 !important;
+  border-image: none !important;
+  background: transparent !important;
+  box-shadow: none;
+  color: var(--ink);
+}
+body button.resource-inline-reference {
+  color: #e3c78f;
+  border-bottom: 1px dotted currentColor !important;
+}
+body button.resource-inline-reference:hover { background: var(--paper-shade) !important; }
+body button.favorite-toggle[aria-pressed=true] { color: #f494a8 !important; }
+body button:is(.selected-card-remove,.equipment-remove,.roster-delete) { color: var(--danger); }
+body button.dialog-dismiss:hover { background: var(--surface-hover) !important; }
+body button:is(.reader-outline-shade,.career-directory-backdrop,.dice-panel-backdrop) {
+  border: 0 !important;
+  border-image: none !important;
+  background: #070a1099 !important;
+}
+.character-folio .origin-resource-grid>.folio-section,
+.character-folio .builder-resource-picker {
+  border: 0 !important;
+  border-image: none !important;
+  background: transparent;
+}
+.character-folio .resource-selection-slot { color: var(--gold); }
+
+/* Reading colors are semantic, independent of old per-category dark inks. */
+.resource-card-unified {
+  --resource-accent: var(--gold) !important;
+  --resource-detail-accent: var(--gold) !important;
+}
+.rich-text { color: var(--ink); }
+.resource-card-unified .resource-card-content .rich-text .rich-section-heading,
+.resource-card-unified .resource-card-content .rich-text .rich-detail-heading {
+  color: var(--gold);
+  border-color: var(--line);
+  background: var(--paper-shade);
+}
+.rich-quote,.resource-fluff,.resource-reference-notice,
+.resource-data-supplement,.species-variant-options,.local-bundle-preview {
+  background: var(--paper-shade);
+  color: var(--ink);
+  border-color: var(--line);
+}
+.resource-subtype-badge,.resource-corner-mark,.picker-added {
+  background: var(--surface-selected);
+  color: var(--text-selected);
+  border-color: var(--line);
+}
+.rich-table :is(th,td),.resource-fact-row { border-color: var(--line); }
+.resource-card-unified .resource-card-content .rich-text strong { color: #e2d4b5; }
+.rich-table th { background: var(--paper-shade); color: var(--gold); }
+
+.app-console { background: var(--deep); border-top-color: var(--line); box-shadow: 0 -8px 22px #0005; }
+.app-console>button[aria-current=page] { outline: none; }
+
+.folio-tabs,.rules-top-tabs,.folio-heading,.catalog-unified-toolbar { background: var(--paper); }
+.dice-studio { background: var(--paper); }
+.dice-studio .dice-tray { background: radial-gradient(ellipse at center,#283447,#10141b); }
+.dice-tray-status,.dice-scene-result { color: var(--ink); }
+.dice-cast-bar>button { background: var(--surface-selected) !important; color: var(--text-selected); }
+.dice-token-count,.dice-token-label,.dice-picker-hint { color: var(--ink); }
+
+@media(max-width:760px) {
+  body button.resource-cover.resource-cover-editorial,
+  .character-folio .builder-selected-resources button.resource-cover.resource-cover-editorial {
+    border-width: 5px !important;
+    border-image-width: 5px !important;
+  }
+  .app-console { gap: 3px; padding-inline: 4px; }
+  .app-console>button { border-width: 4px !important; border-image-width: 4px !important; }
+  .app-console>button.app-console-character { border-width: 6px !important; border-image-width: 6px !important; }
+}
+@media(prefers-reduced-motion:reduce) {
+  body button { transition: none; }
+}
+
+/* Sidebar shells share panel artwork; directory rows keep a lightweight edge. */
+.reader-outline,.career-directory,.rule-chapter>aside,.dice-side-panel {
+  border:6px solid transparent!important;
+  border-image:var(--frame-panel) var(--frame-panel-slice,12) / 6px / 0 stretch!important;
+  background:var(--paper-light);
+}
+.rule-chapter>aside>details { background:transparent; }
+.reader-outline>button,.career-directory button,.rule-chapter nav button {
+  border-image:var(--frame-button) var(--frame-button-slice,12) / 3px / 0 stretch!important;
+  border-width:3px!important;
+}
+body button:is(.dice-token-main,.character-roster-open):hover {
+  background:transparent!important;
+}
+
+/* Heart feedback is shared by compact covers and full readers. */
+.favorite-symbol { display:inline-flex; align-items:center; justify-content:center; transform-origin:center; }
+.favorite-symbol svg { display:block; width:18px; height:18px; }
+.favorite-toggle.is-compact .favorite-symbol svg { width:16px; height:16px; }
+body button.favorite-toggle { transition:color .15s,background-color .15s; }
+body button.favorite-toggle:not(:disabled):hover { color:#ffb2c1; background:#f494a814!important; }
+body button.favorite-toggle:not(:disabled):active .favorite-symbol { transform:scale(.82); }
+.favorite-symbol.is-tapped { animation:favorite-heart-pop .32s ease-out; }
+@keyframes favorite-heart-pop {
+  0% { transform:scale(.75); }
+  50% { transform:scale(1.22); }
+  100% { transform:scale(1); }
+}
+@media(prefers-reduced-motion:reduce) {
+  .favorite-symbol.is-tapped { animation:none; }
+  body button.favorite-toggle { transition:none; }
+  body button.favorite-toggle:not(:disabled):active .favorite-symbol { transform:none; }
+}
+
+/* Reading gestures are hinted in an overlay, never in the content layout. */
+dialog .shared-reader-navigation,
+dialog .shared-reader-navigation.has-action { display:flex; justify-content:center; align-items:center; gap:0; }
+body dialog .shared-reader-navigation>button[data-reader-previous],
+body dialog .shared-reader-navigation>button[data-reader-next] {
+  position:fixed; top:50%; transform:translateY(-50%); z-index:5;
+  width:32px; min-width:32px; max-width:32px; height:56px; min-height:56px;
+  padding:0; border:0!important; border-image:none!important;
+  box-shadow:none!important; background:transparent!important;
+  color:var(--ink)!important; opacity:.26; font-size:24px;
+  line-height:1; text-shadow:0 1px 4px #000; touch-action:manipulation;
+}
+body dialog .shared-reader-navigation>button[data-reader-previous] { left:12px; }
+body dialog .shared-reader-navigation>button[data-reader-next] { right:12px; }
+body dialog .shared-reader-navigation>button[data-reader-previous]:disabled,
+body dialog .shared-reader-navigation>button[data-reader-next]:disabled { visibility:hidden; }
+body dialog .shared-reader-navigation>button[data-reader-previous]:hover,
+body dialog .shared-reader-navigation>button[data-reader-next]:hover,
+body dialog .shared-reader-navigation>button[data-reader-previous]:focus-visible,
+body dialog .shared-reader-navigation>button[data-reader-next]:focus-visible { opacity:.8; }
+body dialog .shared-reader-navigation>button:not([data-reader-previous]):not([data-reader-next]) { width:auto; min-width:120px; max-width:75%; }
+body dialog .reader-navigation,body dialog .picker-detail-footer {
+  min-height:44px; padding:0 12px!important;
+}
+dialog.resource-reader *,dialog.character-picker-dialog *,dialog.folio-reader * { scrollbar-width:none; }
+dialog.resource-reader *::-webkit-scrollbar,dialog.character-picker-dialog *::-webkit-scrollbar,dialog.folio-reader *::-webkit-scrollbar { display:none; }
+
+/* Compact chrome; keep 44px touch targets inside the inset reading window. */
+body dialog .reader-toolbar,body dialog .picker-toolbar,body dialog.folio-reader>header {
+  min-height:44px!important; height:44px; flex:none; box-sizing:border-box;
+  padding:0 4px!important; gap:4px;
+}
+body dialog .reader-toolbar .reader-outline-toggle {
+  min-height:36px; padding:2px 8px; font-size:13px;
+}
+body dialog .reader-toolbar small { font-size:12px; }
+dialog.resource-reader::backdrop,dialog.character-picker-dialog::backdrop,dialog.folio-reader::backdrop { background:rgb(0 0 0 / .38); }
+
+/* One reading surface: the native card supplies content, not a second frame. */
+body dialog:is(.resource-reader,.folio-reader,.character-picker-dialog.is-reading) .native-resource-card {
+  border:0!important; border-image:none!important; box-shadow:none!important;
+  margin:0!important; outline:0!important; border-radius:0!important;
+}
+body dialog:is(.resource-reader,.folio-reader,.character-picker-dialog.is-reading) .reader-scroll,
+body dialog.character-picker-dialog.is-reading .picker-detail-scroll { padding:0!important; }
+body dialog.resource-reader .reader-toolbar,
+body dialog.folio-reader>header,
+body dialog.character-picker-dialog.is-reading .picker-toolbar {
+  position:absolute; top:0; left:0; right:0; z-index:20;
+  background:transparent!important; border:0!important; border-image:none!important;
+  box-shadow:none!important; pointer-events:none;
+}
+body dialog .reader-toolbar>span { pointer-events:none; }
+body dialog .reader-toolbar small { display:none; }
+body dialog.character-picker-dialog.is-reading .picker-toolbar>strong { display:none; }
+body dialog.resource-reader .reader-toolbar button,
+body dialog.folio-reader>header button,
+body dialog.character-picker-dialog.is-reading .picker-toolbar button {
+  pointer-events:auto; opacity:.35; background:transparent!important;
+  border:0!important; border-image:none!important; box-shadow:none!important;
+}
+body dialog .reader-toolbar button:hover,body dialog .reader-toolbar button:focus-visible,
+body dialog.folio-reader>header button:hover,
+body dialog.character-picker-dialog.is-reading .picker-toolbar button:hover { opacity:1; }
+body dialog.resource-reader .reader-toolbar .reader-outline-toggle { min-width:44px; min-height:44px; }
+body dialog .resource-card-header { padding-top:44px!important; }
+body dialog .reader-shell,body dialog .reader-body { border:0!important; border-image:none!important; box-shadow:none!important; }
+/* Each career owns a floating directory trigger instead of an extra toolbar row. */
+.career-class-group { position:relative; }
+.career-class-group>summary { padding-right:44px; }
+body .career-class-group>summary>.career-directory-toggle {
+  display:flex; align-items:center; justify-content:center;
+  position:absolute; top:2px; right:2px; width:44px; min-height:44px;
+  margin:0; padding:0; opacity:.4; font-size:20px;
+  background:transparent!important; border:0!important; border-image:none!important; box-shadow:none!important;
+}
+body .career-class-group>summary>.career-directory-toggle:hover,
+body .career-class-group>summary>.career-directory-toggle:focus-visible { opacity:1; }
+
+/* Temporary navigation sits in the native top layer, above all page navigation. */
+body dialog.library-overlay.is-outline {
+  left:auto; right:8px; top:8px; bottom:8px; margin:0;
+  width:min(320px,82vw); height:calc(100dvh - 16px); max-height:calc(100dvh - 16px);
+}
+body dialog.library-overlay::backdrop { background:rgb(0 0 0 / .28); }
+body dialog.library-overlay>header { padding:2px 8px; min-height:44px; }
+body dialog.library-overlay>header h2 { margin:0; font-size:16px; }
+body .outline-list button,body dialog.library-overlay .library-category-list button,
+body dialog .reader-outline>button {
+  display:block; width:100%; min-height:40px; height:auto; padding:7px 10px;
+  font-size:14px; line-height:1.5; text-align:left; white-space:normal; overflow-wrap:anywhere;
+  border:0!important; border-image:none!important; box-shadow:none!important; background:transparent!important;
+}
+body .outline-list .outline-child { padding-left:22px; color:var(--muted); font-size:13px; }
+body .outline-list section+section { border-top:1px solid var(--line); margin-top:6px; padding-top:6px; }
+body .outline-list button:hover,body dialog .reader-outline>button:hover { color:var(--gold); background:var(--paper-shade)!important; }
+body .outline-list,body .library-overlay-scroll,body dialog .reader-outline { scrollbar-width:none; }
+body .outline-list::-webkit-scrollbar,body .library-overlay-scroll::-webkit-scrollbar { display:none; }
+.rule-chapter { display:block; position:relative; }
+body .rule-directory-toggle {
+  position:sticky; top:62px; float:right; margin-bottom:-44px; margin-right:8px; z-index:12;
+  width:44px; min-height:44px; opacity:.4; padding:0;
+  border:0!important; border-image:none!important; box-shadow:none!important; background:transparent!important;
+}
+body .rule-directory-toggle:hover,body .rule-directory-toggle:focus-visible { opacity:1; }
+/* In-reader outlines are overlays at every width, not an always-visible extra column. */
+body dialog .reader-outline { display:none; position:absolute; inset:0 0 0 auto; z-index:31; width:min(300px,82%); box-sizing:border-box; }
+body dialog .reader-outline.is-open { display:block; }
+body dialog .reader-outline>header button { display:inline-flex; }
+body dialog .reader-outline-shade { display:none; }
+body dialog .reader-outline-shade.is-open { display:block; position:absolute; inset:0; z-index:30; width:100%; height:100%; border:0!important; border-image:none!important; background:rgb(0 0 0 / .28)!important; }
+body dialog:has(.reader-outline.is-open) .reader-toolbar { visibility:hidden; }

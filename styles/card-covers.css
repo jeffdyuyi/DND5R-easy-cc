@@ -1,0 +1,50 @@
+/* Shared card composition. Existing Kenney outer frame and theme identity stay intact. */
+body button.resource-cover.resource-cover-editorial.preview-catalog {
+  min-height:184px; padding:0!important; display:flex; flex-direction:column;
+  text-align:center; background:var(--paper-light)!important;
+}
+.preview-catalog.resource-cover-editorial .resource-cover-kicker {
+  flex:none; min-height:28px; box-sizing:border-box; border:0;
+  padding:5px 24px 4px; font-size:10px; line-height:1.4; letter-spacing:.05em;
+  color:var(--muted); background:transparent;
+}
+.preview-catalog.resource-cover-editorial .resource-cover-title {
+  flex:1; min-height:76px; justify-content:center; align-items:center;
+  gap:5px; padding:10px 4px 14px; margin:0 4px;
+  border-top:1px solid var(--line);
+}
+.preview-catalog.resource-cover-editorial .resource-cover-title strong {
+  font-size:18px; line-height:1.45; color:var(--ink); text-wrap:balance;
+  overflow-wrap:anywhere; font-weight:400;
+}
+.preview-catalog.resource-cover-editorial .resource-cover-title small {
+  font-size:11px; line-height:1.4; color:var(--muted);
+}
+.preview-catalog.resource-cover-editorial .resource-cover-facts {
+  flex:none; margin:0; min-height:62px; width:100%; box-sizing:border-box;
+  padding:7px 3px!important; gap:5px; justify-content:center;
+  border-top:1px solid var(--line); background:var(--paper-shade);
+}
+.preview-catalog.resource-cover-editorial .resource-cover-fact {
+  display:flex; flex-wrap:wrap; justify-content:center; align-items:baseline;
+  gap:1px 5px; font-size:12px; line-height:1.45;
+}
+.preview-catalog.resource-cover-editorial .resource-cover-fact>span {
+  display:inline; font-size:10px; color:var(--muted);
+}
+.preview-catalog.resource-cover-editorial .resource-cover-fact>strong {
+  font-size:12px; font-weight:400; color:var(--ink); overflow-wrap:anywhere;
+  display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2; overflow:hidden;
+}
+/* Hover does not change the frame material; selection is conveyed by the owning picker. */
+body button.resource-cover.resource-cover-editorial.preview-catalog:hover { border-image-source:var(--frame-card)!important; }
+@media(max-width:760px) {
+  body button.resource-cover.resource-cover-editorial.preview-catalog { min-height:174px; }
+  .preview-catalog.resource-cover-editorial .resource-cover-title strong { font-size:15px; }
+  .preview-catalog.resource-cover-editorial .resource-cover-title small { display:none; }
+}
+@media(max-width:400px) {
+  .preview-catalog.resource-cover-editorial .resource-cover-title strong { font-size:14px; }
+  .preview-catalog.resource-cover-editorial .resource-cover-fact>span { font-size:9px; }
+  .preview-catalog.resource-cover-editorial .resource-cover-fact>strong { font-size:11px; }
+}

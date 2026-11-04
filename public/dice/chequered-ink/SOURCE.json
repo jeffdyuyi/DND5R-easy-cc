@@ -1,0 +1,43 @@
+{
+  "author": "Chequered Ink",
+  "pack": "Hi Res Dice Pack",
+  "source": "https://chequered.ink/hi-res-dice-pack/",
+  "download": "https://ci.itch.io/hi-res-dice-pack",
+  "files": [
+    {
+      "file": "d4.png",
+      "upstreamFile": "D4/d4_red_4.png",
+      "sha256": "a4b93d341b3d76320c27322f9338e540e32d3f22f14d8335963e127a9ad2a47e"
+    },
+    {
+      "file": "d6.png",
+      "upstreamFile": "D6/D6N_red_6.png",
+      "sha256": "7989db52058cc981ca5b61ca50b32255782e2c88b2ca75aae00561de6f7fae15"
+    },
+    {
+      "file": "d8.png",
+      "upstreamFile": "D8/d8_red_8.png",
+      "sha256": "3adaa6f314045b3bf1abf98e3df9453a5e1a482f13ab99bc2d24e6427a05f88b"
+    },
+    {
+      "file": "d10.png",
+      "upstreamFile": "D10_and_D100/d10_red_0.png",
+      "sha256": "3d6c9f31445449da3fd2e12e427e155c678452385db20c324bd01b011882d7a8"
+    },
+    {
+      "file": "d12.png",
+      "upstreamFile": "D12/d12_red_12.png",
+      "sha256": "b41a0d1e1218c01c637ddb11c1f715fe4f99e8aba0ff6c1e44be8d27b8ec863c"
+    },
+    {
+      "file": "d20.png",
+      "upstreamFile": "D20/d20_red_20.png",
+      "sha256": "5cd51ce17d251f04c0031ec41b4dcf169fb517cfe76e2265b024ab57b8d78538"
+    },
+    {
+      "file": "d100.png",
+      "upstreamFile": "D10_and_D100/d10_red_00.png",
+      "sha256": "c91d1bc0e6705c95589824c3f76ac58b0d74ba101e8454b2e27cb91f7e9ecc39"
+    }
+  ]
+}

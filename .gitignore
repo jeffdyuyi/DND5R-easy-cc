@@ -22,3 +22,30 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local handoff notes, reference texts, retired code, artwork source packs
+/AGENTS.md
+/START_HERE.md
+/docs/
+/.agent/
+/.agents/
+/.codex/
+# User records and supplied reference PDFs are not application assets
+/fvtt-Actor-*.json
+/public/rules/
+# Local data generation utilities depend on private reference directories
+/process_spells*.cjs
+/scripts/import-mature-srd.cjs
+/scripts/inspect-source.py
+/scripts/reconcile-srd-content.cjs
+/scripts/refine-*.cjs
+# Local secrets and scratch outputs
+.env
+.env.*
+!.env.example
+*.tmp
+*.bak
+/build_log.txt
+
+# Local translated SRD payloads await redistribution review
+/data/builtin/

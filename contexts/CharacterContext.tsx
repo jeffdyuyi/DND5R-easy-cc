@@ -1,8 +1,8 @@
+import { downloadJson } from '../utils/files';
 import React, { createContext, useContext, useState } from 'react';
 import { CharacterData } from '../types';
 import { useLocalStorage } from '../hooks/useLocalStorage';
-import { validateCharacterData } from '../utils/rules';
-
+import { validateCharacterData, withCharacterDefaults } from '../src/character/persistence';
 // Default Character Template
 export const INITIAL_CHARACTER: CharacterData = {
     id: 'char-1',
@@ -16,12 +16,10 @@ export const INITIAL_CHARACTER: CharacterData = {
     subRace: '',
     background: '',
     alignment: '绝对中立',
-
     // Extended Details
     pronouns: '',
     faith: '',
     lifestyle: '',
-
     // Physical Characteristics
     gender: '',
     age: '',
@@ -31,7 +29,6 @@ export const INITIAL_CHARACTER: CharacterData = {
     skin: '',
     eyes: '',
     appearance: '',
-
     originFeat: '',
     languages: '通用语',
     toolProficiencies: '',
@@ -49,13 +46,11 @@ export const INITIAL_CHARACTER: CharacterData = {
     bonds: '',
     flaws: '',
     backstory: '',
-
     // Notes & Relations
     organizations: '',
     allies: '',
     enemies: '',
     otherNotes: '',
-
     copper: 0, silver: 0, gold: 0, platinum: 0,
     equipment: '',
     treasure: '',
@@ -82,13 +77,11 @@ export const INITIAL_CHARACTER: CharacterData = {
         level8: { total: 0, used: 0 },
         level9: { total: 0, used: 0 },
     },
-
     // Structured Proficiency Tracking
     proficiencySources: {
         skills: { class: [], background: [], species: [], feat: [] },
         tools: { class: [], background: [], species: [], feat: [] },
     },
-
     // Equipment Choices
     equipmentChoices: {
         classChoice: '',
@@ -97,13 +90,11 @@ export const INITIAL_CHARACTER: CharacterData = {
         backgroundSubChoices: {},
     },
     startingInventory: [],
-
     // Feat Configuration
     featConfig: {
         originFeat: { name: '' },
         otherFeats: {},
     },
-
     // Structured Notes
     notesStructured: {
         organizations: [],
@@ -114,7 +105,6 @@ export const INITIAL_CHARACTER: CharacterData = {
     selections: {},
     achievements: [],
 };
-
 interface CharacterContextType {
     characters: CharacterData[];
     activeCharId: string | null;
@@ -126,33 +116,43 @@ interface CharacterContextType {
     importCharacters: (json: any) => void;
     exportCharacters: () => void;
 }
-
 const CharacterContext = createContext<CharacterContextType | null>(null);
-
-export const CharacterProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-    const [characters, setCharacters] = useLocalStorage<CharacterData[]>('dnd_characters_v1', []);
+export const CharacterProvider: React.FC<{
+    children: React.ReactNode;
+}> = ({ children }) => {
+    const [storedCharacters, setCharacters] = useLocalStorage<CharacterData[]>('dnd_characters_v1', []);
+    const characters = Array.isArray(storedCharacters) ? storedCharacters.filter(validateCharacterData) : [];
+    const damaged = !Array.isArray(storedCharacters) || characters.length !== storedCharacters.length;
     const [activeCharId, setActiveCharId] = useState<string | null>(null);
-
-    const activeCharacter = characters.find(c => c.id === activeCharId);
-
+    const selectedCharacter = characters.find(c => c.id === activeCharId);
+    const activeCharacter = selectedCharacter ? withCharacterDefaults(INITIAL_CHARACTER, selectedCharacter) : undefined;
     const createCharacter = () => {
-        const newId = `char-${Date.now()}`;
-        const newChar: CharacterData = { ...INITIAL_CHARACTER, id: newId, name: '新角色' };
+        const newId = `char-${crypto.randomUUID()}`;
+        const newChar: CharacterData = { ...structuredClone(INITIAL_CHARACTER), id: newId, name: '新角色' };
+        if (damaged) { alert('角色记录有无效结构，请先备份原始记录后恢复；当前禁止覆盖。'); return ''; }
         setCharacters(prev => [...prev, newChar]);
         setActiveCharId(newId);
         return newId;
     };
-
     const updateCharacter = (id: string, updates: Partial<CharacterData>) => {
+        if (damaged) { alert('角色记录有无效结构，请先备份原始记录后恢复。'); return; }
         setCharacters(prev => prev.map(c => c.id === id ? { ...c, ...updates } : c));
     };
-
     const deleteCharacter = (id: string) => {
+        if (damaged) return;
         setCharacters(prev => prev.filter(c => c.id !== id));
-        if (activeCharId === id) setActiveCharId(null);
+        if (activeCharId === id)
+            setActiveCharId(null);
     };
-
     const importCharacters = (json: any) => {
+        if (damaged) {
+            const recovered = Array.isArray(json) ? json : [json];
+            if (!recovered.length || !recovered.every(validateCharacterData)) { alert('恢复文件包含无效角色，原记录保留。'); return; }
+            if (!confirm('用此备份恢复角色？将先下载当前原始记录，恢复后请刷新页面。')) return;
+            downloadJson(storedCharacters, 'easy-cc-damaged-characters.json');
+            localStorage.setItem('dnd_characters_v1', JSON.stringify(recovered));
+            alert('已恢复，请刷新页面读取。'); return;
+        }
         if (Array.isArray(json)) {
             // Import multiple characters
             const newChars = json.filter(c => validateCharacterData(c));
@@ -160,31 +160,31 @@ export const CharacterProvider: React.FC<{ children: React.ReactNode }> = ({ chi
                 alert("文件中没有有效的角色数据");
                 return;
             }
-            setCharacters(prev => {
-                const ids = new Set(prev.map(c => c.id));
-                return [...prev, ...newChars.filter((c: CharacterData) => !ids.has(c.id))];
+            let added = 0;
+            setCharacters(previous => {
+                const ids = new Set(previous.map(character => character.id)), additions: CharacterData[] = [];
+                for (const character of newChars)
+                    if (!ids.has(character.id)) {
+                        ids.add(character.id);
+                        additions.push(withCharacterDefaults(INITIAL_CHARACTER, character));
+                    }
+                added = additions.length;
+                return [...previous, ...additions];
             });
-            alert(`已导入 ${newChars.length} 个角色`);
-        } else if (validateCharacterData(json)) {
+            alert(`已导入 ${added} 个角色，跳过 ${newChars.length - added} 个重复身份。`);
+        }
+        else if (validateCharacterData(json)) {
             // Import single character
-            const newChar = { ...json, id: `char-${Date.now()}` };
-            setCharacters(prev => [...prev, newChar]);
+            const newChar = { ...withCharacterDefaults(INITIAL_CHARACTER, json), id: `char-${crypto.randomUUID()}` };
+            if (damaged) { alert('角色记录有无效结构，请先备份原始记录后恢复；当前禁止覆盖。'); return ''; }
+        setCharacters(prev => [...prev, newChar]);
             setActiveCharId(newChar.id);
-        } else {
+        }
+        else {
             alert("无效的角色数据文件，或数据结构已损坏");
         }
     };
-
-    const exportCharacters = () => {
-        const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(characters, null, 2));
-        const downloadAnchorNode = document.createElement('a');
-        downloadAnchorNode.setAttribute("href", dataStr);
-        downloadAnchorNode.setAttribute("download", `dnd_characters_backup_${new Date().toISOString().slice(0, 10)}.json`);
-        document.body.appendChild(downloadAnchorNode);
-        downloadAnchorNode.click();
-        downloadAnchorNode.remove();
-    };
-
+    const exportCharacters = () => downloadJson(storedCharacters, `dnd_characters_backup_${new Date().toISOString().slice(0, 10)}.json`);
     const value = {
         characters,
         activeCharId,
@@ -196,14 +196,10 @@ export const CharacterProvider: React.FC<{ children: React.ReactNode }> = ({ chi
         importCharacters,
         exportCharacters
     };
-
-    return (
-        <CharacterContext.Provider value={value}>
+    return (<CharacterContext.Provider value={value}>
             {children}
-        </CharacterContext.Provider>
-    );
+        </CharacterContext.Provider>);
 };
-
 export const useCharacters = () => {
     const context = useContext(CharacterContext);
     if (!context) {
