@@ -56,7 +56,7 @@ export function InformationWorkspace() {
                 </div>
             </section>
             <section className="information-about-section">
-                <h2>数据来源与使用说明</h2>
+                <h2>数据来源与使用说明</h2><p><strong>内置中文SRD</strong>　DND5eChm/SRD5.2Chm，按上游CC BY 4.0许可保留来源并转换为条目。<a href={import.meta.env.BASE_URL + 'sources/builtin-SRD-NOTICE.txt'} target="_blank" rel="noreferrer">署名与转换说明</a> · <a href={import.meta.env.BASE_URL + 'sources/SRD5.2Chm-LICENSE.txt'} target="_blank" rel="noreferrer">许可原文</a>。<a href={import.meta.env.BASE_URL + 'sources/phb-supplement-attribution.json'} target="_blank" rel="noreferrer">本机PHB补文出处清单</a>另列，不混标为CC内容。</p>
                 <p><strong>数据来源</strong>　中文主库：<a href="https://github.com/tjliqy/5etools-cn/tree/cn2.0" target="_blank" rel="noreferrer">tjliqy/5etools-cn · cn2.0</a>；中文站：<a href="https://5e.kiwee.top/" target="_blank" rel="noreferrer">5e.kiwee.top</a>。具体出版物、文件和修订见卡片来源记录。</p>
                 <p><strong>译文署名</strong>　中文源署名为Kiwee及贡献者；其许可文件注明译文来自民间汉化组与独立译者，由DND Common Library整理排版。</p>
                 <p><strong>来源许可</strong>　中文源将代码及 data-bak/ 英文数据列为MIT，将 data/ 中文本地化数据列为CC BY-NC-SA 4.0（署名、非商业性使用、相同方式共享）。适用范围与条款见<a href={import.meta.env.BASE_URL + 'sources/5etools-cn-LICENSE.txt'} target="_blank" rel="noreferrer">来源许可原文</a>。Homebrew按各资料包的署名和许可处理。</p>

@@ -1,0 +1,16 @@
+内置中文SRD来源与修改说明
+
+公开内置中文资料：DND5eChm/SRD5.2Chm，修订dec9e05。
+来源：https://github.com/DND5eChm/SRD5.2Chm
+上游LICENSE：https://github.com/DND5eChm/SRD5.2Chm/blob/main/LICENSE
+许可：Creative Commons Attribution 4.0 International（CC BY 4.0）。
+许可正文：SRD5.2Chm-LICENSE.txt。
+
+原始英文规则：System Reference Document，Wizards of the Coast LLC。
+官方SRD：https://www.dndbeyond.com/srd
+中文翻译、整理与鸣谢以SRD5.2Chm仓库说明和鸣谢列表为准。
+
+本工具的处理：HTML转为JSON/Markdown、按条目拆分、目录与字段整理、以英文SRD目录核对身份和稀有度。各条目保留源路径、修订、锚点和哈希。该数据是项目整理版，不冒称未经转换的官方中文5.2.1译本。
+本工具针对代码的使用声明不限制CC BY材料依法许可的权利。
+
+2014中文库与PHB PDF补文未纳入本公开包。PHB补文出处另见phb-supplement-attribution.json；本机原文和存档保持不变。

@@ -1,0 +1,93 @@
+{
+  "references": [
+    {
+      "resourceId": "builtin:srd-5.1:subclasses:f5b595b8c2b0de732904",
+      "resourceName": "邪魔",
+      "document": "DnD玩家手册5ePHBv1.6版.pdf",
+      "page": "PDF第85页",
+      "sha256": "bbad251ce547ac8af81a285feeedf9ba95b2fa0c762f72966428695b40f64d46",
+      "scope": "本机2014条目补文；独立译文来源，未标为CC BY许可"
+    },
+    {
+      "resourceId": "builtin:srd-5.1:subclasses:f5b595b8c2b0de732904",
+      "resourceName": "邪魔",
+      "document": "DnD玩家手册5ePHBv1.6版.pdf",
+      "page": "PDF第85页",
+      "sha256": "bbad251ce547ac8af81a285feeedf9ba95b2fa0c762f72966428695b40f64d46",
+      "scope": "本机2014条目补文；独立译文来源，未标为CC BY许可"
+    },
+    {
+      "resourceId": "builtin:srd-5.1:species:b528f9d1a283287ee3e1",
+      "resourceName": "矮人",
+      "document": "DnD玩家手册5ePHBv1.6版.pdf",
+      "page": "PDF第16页",
+      "sha256": "bbad251ce547ac8af81a285feeedf9ba95b2fa0c762f72966428695b40f64d46",
+      "scope": "本机2014条目补文；独立译文来源，未标为CC BY许可"
+    },
+    {
+      "resourceId": "builtin:srd-5.1:species:698d9ad03b1af5f1cc28",
+      "resourceName": "精灵",
+      "document": "DnD玩家手册5ePHBv1.6版.pdf",
+      "page": "PDF第18、19页",
+      "sha256": "bbad251ce547ac8af81a285feeedf9ba95b2fa0c762f72966428695b40f64d46",
+      "scope": "本机2014条目补文；独立译文来源，未标为CC BY许可"
+    },
+    {
+      "resourceId": "builtin:srd-5.1:species:5806c79980acdd8edda0",
+      "resourceName": "半身人",
+      "document": "DnD玩家手册5ePHBv1.6版.pdf",
+      "page": "PDF第21页",
+      "sha256": "bbad251ce547ac8af81a285feeedf9ba95b2fa0c762f72966428695b40f64d46",
+      "scope": "本机2014条目补文；独立译文来源，未标为CC BY许可"
+    },
+    {
+      "resourceId": "builtin:srd-5.1:species:9ffa865f2bc6e850157b",
+      "resourceName": "人类",
+      "document": "DnD玩家手册5ePHBv1.6版.pdf",
+      "page": "PDF第24页",
+      "sha256": "bbad251ce547ac8af81a285feeedf9ba95b2fa0c762f72966428695b40f64d46",
+      "scope": "本机2014条目补文；独立译文来源，未标为CC BY许可"
+    },
+    {
+      "resourceId": "builtin:srd-5.1:species:8710bcad1b065a1c283f",
+      "resourceName": "龙裔",
+      "document": "DnD玩家手册5ePHBv1.6版.pdf",
+      "page": "PDF第26页",
+      "sha256": "bbad251ce547ac8af81a285feeedf9ba95b2fa0c762f72966428695b40f64d46",
+      "scope": "本机2014条目补文；独立译文来源，未标为CC BY许可"
+    },
+    {
+      "resourceId": "builtin:srd-5.1:species:4ea2afcc4ab25c4abed0",
+      "resourceName": "侏儒",
+      "document": "DnD玩家手册5ePHBv1.6版.pdf",
+      "page": "PDF第28页",
+      "sha256": "bbad251ce547ac8af81a285feeedf9ba95b2fa0c762f72966428695b40f64d46",
+      "scope": "本机2014条目补文；独立译文来源，未标为CC BY许可"
+    },
+    {
+      "resourceId": "builtin:srd-5.1:species:9a4078ebe058fde495d2",
+      "resourceName": "半精灵",
+      "document": "DnD玩家手册5ePHBv1.6版.pdf",
+      "page": "PDF第29页",
+      "sha256": "bbad251ce547ac8af81a285feeedf9ba95b2fa0c762f72966428695b40f64d46",
+      "scope": "本机2014条目补文；独立译文来源，未标为CC BY许可"
+    },
+    {
+      "resourceId": "builtin:srd-5.1:species:ec3d9f737d6f257441d2",
+      "resourceName": "半兽人",
+      "document": "DnD玩家手册5ePHBv1.6版.pdf",
+      "page": "PDF第31页",
+      "sha256": "bbad251ce547ac8af81a285feeedf9ba95b2fa0c762f72966428695b40f64d46",
+      "scope": "本机2014条目补文；独立译文来源，未标为CC BY许可"
+    },
+    {
+      "resourceId": "builtin:srd-5.1:species:6b985aa277ed9b9c82ed",
+      "resourceName": "提夫林",
+      "document": "DnD玩家手册5ePHBv1.6版.pdf",
+      "page": "PDF第33页",
+      "sha256": "bbad251ce547ac8af81a285feeedf9ba95b2fa0c762f72966428695b40f64d46",
+      "scope": "本机2014条目补文；独立译文来源，未标为CC BY许可"
+    }
+  ],
+  "notice": "此清单仅记出处，不包含PDF或补文正文，也不声明取得再分发授权。"
+}

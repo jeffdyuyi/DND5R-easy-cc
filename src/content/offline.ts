@@ -1,10 +1,11 @@
+import releasedModern from '../../data/released/srd-5.2.1.json';
 import { srdOptionalFeatures } from './srdOptionalFeatures';
 // Compatibility entry point. Built-in content is project-native, never 5etools AST.
 // Local-only payloads are optional. Public checkout includes no unreviewed translations.
 const localPacks = import.meta.glob('../../data/builtin/srd-*.json', { eager: true, import: 'default' }) as Record<string, any>;
 const emptyPack = { libraries: Object.fromEntries(['classes', 'subclasses', 'species', 'backgrounds', 'feats', 'spells', 'weapons', 'armors', 'tools', 'gears', 'magicItems'].map(kind => [kind, []])) };
 const classic = localPacks['../../data/builtin/srd-5.1.json'] || emptyPack;
-const modern = localPacks['../../data/builtin/srd-5.2.1.json'] || emptyPack;
+const modern = localPacks['../../data/builtin/srd-5.2.1.json'] || releasedModern;
 export type OfflineVersion = '5.1' | '5.2.1';
 function readOfflineVersion(): OfflineVersion {
     try {

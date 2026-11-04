@@ -28,4 +28,4 @@ npm run dev -- --host 127.0.0.1 --port 5195 --strictPort
 
 工具作者不拥有外部规则或译文的著作权。中文源许可原文位于public/sources，字体、图标、Kenney UI、Dice-Box及骰型图的作者与许可随实际素材保留。应用信息页提供查阅入口。不能以代码或某一素材的许可代替其他外部内容的许可。
 
-公开发行版暂不包含待核对再分发许可的中文内置SRD与参考PDF；可在信息页主动下载或导入外部资料。本地data/builtin为可选私人资料，不是公开部署依赖。
+公开版内置DND5eChm/SRD5.2Chm来源的中文资料，按CC BY 4.0保留署名、许可与转换记录，见public/sources/builtin-SRD-NOTICE.txt。2014中文库及参考PDF仍保留本地；PHB补文仅公开独立出处清单。本地data/builtin不作为公开部署依赖。
