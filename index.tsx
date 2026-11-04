@@ -1,8 +1,10 @@
+import { registerPwa } from './src/pwa/client';
 import { AppErrorBoundary } from './components/AppErrorBoundary';
 import { ExternalResourceProvider } from './contexts/ExternalResourceContext';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import './styles/utilities.css';
 import './index.css';
 import './resource-cards.css';
 import './styles/character.css';
@@ -27,3 +29,5 @@ root.render(<React.StrictMode>
   </React.StrictMode>);
 
 
+
+registerPwa();

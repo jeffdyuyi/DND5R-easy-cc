@@ -290,3 +290,8 @@
 .support-dialog footer { text-align:center; padding-top:16px; }
 .support-dialog a { color:var(--gold); text-underline-offset:4px; }
 @media(max-width:600px) { .information-contacts { grid-template-columns:1fr; } .support-dialog { padding:8px; } .support-codes { gap:8px; } }
+
+.pwa-update-notice { position:fixed; z-index:125; left:50%; transform:translateX(-50%); bottom:calc(108px + env(safe-area-inset-bottom)); max-width:calc(100vw - 24px); padding:8px 12px; background:var(--paper-shade); color:var(--ink); border:1px solid var(--line); display:flex; gap:10px; align-items:center; font-size:13px; box-shadow:0 4px 12px #0004; }
+.pwa-update-notice button { min-height:40px; white-space:nowrap; padding:4px 8px; }
+.pwa-settings h2 { font-size:18px; }
+.pwa-settings p { font-size:13px; line-height:1.6; }

@@ -14,27 +14,10 @@
       } catch (_) {}
     </script>
     <title>不咕鸟龙与地下城线下团辅助工具</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              dndRed: '#E0C38E',
-              parchment: '#1B222C',
-              parchmentDark: '#252F3D',
-              slate: '#10141B'
-            },
-            fontFamily: {
-              serif: ['"Fusion Pixel"', 'monospace'],
-              sans: ['"Fusion Pixel"', 'monospace'],
-              mono: ['"Fusion Pixel"', 'monospace'],
-              pixel: ['"Fusion Pixel"', 'sans-serif'],
-            }
-          }
-        }
-      }
-    </script>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./pwa/icon-192.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 </head>
   <body class="font-pixel">
     <div id="root"></div>

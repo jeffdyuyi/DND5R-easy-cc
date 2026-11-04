@@ -1,0 +1,32 @@
+{
+  "id": "./",
+  "name": "不咕鸟龙与地下城线下团辅助工具",
+  "short_name": "不咕鸟面团",
+  "lang": "zh-CN",
+  "description": "龙与地下城线下团的资料速查、角色整理与骰盘工具",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#10141b",
+  "theme_color": "#10141b",
+  "icons": [
+    {
+      "src": "pwa/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "pwa/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "pwa/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
