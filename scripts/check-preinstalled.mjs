@@ -26,3 +26,13 @@ assert.deepEqual(cleric.buildData.classTableGroups.find(g => g.rowsSpellProgress
 const acolyte = result.entries.find(item => item.kind === 'backgrounds' && item.source === 'XPHB' && item.name === '侍僧');
 assert.deepEqual(acolyte.buildData.ability[0].choose.weighted.weights, [2,1]);
 console.log('Actual-data quick record: 12 recommendations, hit die, spell matrix and weighted background bonuses PASS');
+
+const ranged = result.entries.find(item => item.inventoryMeta?.type === 'R');
+assert.equal(ranged.fields.type, '远程武器');
+const ship = result.entries.find(item => item.inventoryMeta?.type === 'SHP');
+assert.equal(ship.fields.type, '载具(水上)');
+for (const [name, form] of [['护符','worn-or-held'],['纹章','attached'],['圣物匣','held']]) {
+    const focus = result.entries.find(item => item.source === 'XPHB' && item.name === name && item.inventoryMeta?.focusType === 'holy');
+    assert.equal(focus?.inventoryMeta?.focusForm, form, name);
+}
+console.log('Actual equipment type labels and three 2024 holy focus forms PASS');

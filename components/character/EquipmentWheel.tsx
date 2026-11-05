@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import type { ReactNode } from 'react';
 import { createPortal } from 'react-dom';
 import type { ResourceSnapshot } from '../../types';
-import { canOccupySlot, isManualPlacement } from '../../src/character/equipmentSelection';
+import { canOccupySlot, placementHint } from '../../src/character/equipmentSelection';
 
 export interface EquipmentGesture { x: number; y: number; id: number }
 export function LongPressEquipment({ onHold, children }: { onHold: (gesture?: EquipmentGesture) => void; children: ReactNode }) {
@@ -85,10 +85,10 @@ export function EquipmentWheel({ item, gesture, isEquipped, onSelect, onClose, o
         return () => { node?.close(); document.removeEventListener('touchcancel', touchCancel, true); document.removeEventListener('pointermove', pointerMove, true); document.removeEventListener('pointerup', pointerUp, true); document.removeEventListener('touchmove', touchMove, true); document.removeEventListener('touchend', touchEnd, true); };
     }, []);
     return createPortal(<dialog ref={dialog} className="equipment-wheel radial-wheel" aria-label={item.name + '装备部位'} onCancel={event => { event.preventDefault(); onClose(); }} {...backdrop}>
-        <h2>{item.name}{isManualPlacement(item) && <small className="wheel-manual-note">手动选择部位</small>}</h2><div ref={ring} className="equipment-wheel-ring">
+        <h2>{item.name}{placementHint(item) && <small className="wheel-manual-note">{placementHint(item)}</small>}</h2><div ref={ring} className="equipment-wheel-ring">
             <svg viewBox="0 0 320 320" aria-label="十个装备部位">{positions.map(([slot, label], index) => <path key={slot} d={sector(index)} className={'wheel-sector' + (canOccupySlot(item, slot) ? ' is-allowed' : '') + (hovered === index ? ' is-hovered' : '') + (isEquipped(slot) ? ' is-equipped' : '')} role="button" tabIndex={0} aria-label={label + (canOccupySlot(item, slot) ? isEquipped(slot) ? '，卸下' : '，装备' : '，不适用')} onClick={() => choose(index)} onKeyDown={event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); choose(index); } }}/>)}</svg>
             {positions.map(([slot, label], index) => { const [x, y] = point(113, index * Math.PI * 2 / positions.length - Math.PI / 2); return <span key={slot} className={'wheel-label' + (canOccupySlot(item, slot) ? ' is-allowed' : '')} style={{ left: x / 320 * 100 + '%', top: y / 320 * 100 + '%' }}>{label}{isEquipped(slot) && <small>已装备</small>}</span>; })}
             <button type="button" className="equipment-wheel-cancel" onClick={() => choose(null)} autoFocus>取消</button>
-        </div><p>{hovered === null ? '按住滑向部位，松手选择' : positions[hovered][1] + (canOccupySlot(item, positions[hovered][0]) ? isEquipped(positions[hovered][0]) ? ' · 卸下' : ' · 装备' : ' · 不适用')}</p>
+        </div><button type="button" onClick={() => { if (finished.current) return; finished.current = true; callbacks.current.onSelect('extra-' + crypto.randomUUID()); callbacks.current.onClose(); }}>放入额外物品</button><p>{hovered === null ? '按住滑向部位，松手选择' : positions[hovered][1] + (canOccupySlot(item, positions[hovered][0]) ? isEquipped(positions[hovered][0]) ? ' · 卸下' : ' · 装备' : ' · 不适用')}</p>
     </dialog>, document.body);
 }

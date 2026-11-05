@@ -104,3 +104,9 @@ body dialog.inventory-panel { width:min(560px,calc(100vw - 24px)); max-height:ca
 .shared-outline-anchor button.reader-outline-toggle:hover,.shared-outline-anchor button.reader-outline-toggle:focus-visible { opacity:1; }
 .item-instance-attunement>div { display:flex; align-items:center; gap:8px; }
 .rich-text .rich-list .rich-list { margin:6px 0 6px 12px; border-left:1px solid var(--line); padding-left:16px; }
+
+body dialog.inventory-panel .builder-resource-grid { grid-template-columns:repeat(4,minmax(0,1fr))!important; gap:6px; }
+.equipment-manual-choice { font-size:12px; }
+.treasure-currency .currency-fields { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:6px; }
+.treasure-currency .currency-fields label { display:flex; flex-direction:column; min-width:0; gap:4px; font-size:12px; }
+.treasure-currency .currency-fields input { width:100%; min-width:0; text-align:center; padding:4px; }

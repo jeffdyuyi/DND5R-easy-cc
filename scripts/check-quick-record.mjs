@@ -7,6 +7,9 @@ async function load(entry) {
     return import('data:text/javascript;base64,' + Buffer.from(code).toString('base64'));
 }
 const quick = await load('src/character/quickRecord.ts');
+const equipment = await load('src/character/equipmentSelection.ts');
+const categories = await load('src/character/itemCategories.ts');
+const metadata = await load('src/content/fiveetools/itemMetadata.ts');
 const tracking = await load('src/character/slotTracking.ts');
 const inventory = await load('src/character/inventory.ts');
 const persistence = await load('src/character/persistence.ts');
@@ -97,4 +100,64 @@ test('legacy slot usage and reduced totals never silently restore expended slots
     assert.deepEqual(tracking.slotUsage(explicit,'one',2).marks,[true,false]);
     assert.equal(persistence.validateCharacterData({...base,quickRecord:changed}),true);
     assert.equal(persistence.validateCharacterData({...base,quickRecord:{slotMarks:{one:['bad']}}}),false);
+});
+
+const item = (type, extra = {}) => ({...card('gears','item-'+type),inventoryMeta:{type},...extra});
+test('confirmed inventory categories include consumables, tools, mounts and treasure', () => {
+    for (const type of ['A','AF','FD','EXP','P','SC']) assert.equal(categories.inventorySection(item(type),base),'consumables');
+    for (const type of ['AT','T','GS','INS']) assert.equal(categories.inventorySection(item(type),base),'tools');
+    for (const type of ['VEH','SHP','AIR','SPC','MNT','TAH']) assert.equal(categories.inventorySection(item(type),base),'vehicles');
+    for (const type of ['$','$A','$C','$G','TG','TB']) assert.equal(categories.inventorySection(item(type),base),'treasure');
+    assert.equal(categories.inventorySection(item('G',{inventoryMeta:{type:'G',consumable:true}}),base),'consumables');
+    assert.equal(categories.inventorySection(item('G'),base),'gears');
+    assert.equal(categories.inventorySection(item('AT|XPHB'),base),'tools');
+});
+test('strict armor, ring and hand candidates exclude unrelated possessions', () => {
+    for (const type of ['AT','T','G','P','SC','$C','TAH']) for (const slot of ['armor','ring','main','off']) assert.equal(equipment.equipmentCandidate(item(type),slot),false,type+slot);
+    assert.equal(equipment.equipmentCandidate(item('HA'),'armor'),true);
+    assert.equal(equipment.equipmentCandidate(item('S'),'off'),true);
+    assert.equal(equipment.equipmentCandidate(item('S'),'armor'),false);
+    assert.equal(equipment.equipmentCandidate(item('RG'),'ring'),true);
+    assert.equal(equipment.equipmentCandidate(item('M'),'main'),true);
+});
+test('name suggestions stay explicit, do not rewrite records or bypass hard restrictions', () => {
+    const cloak=item('',{name:'守护斗篷',kind:'magicItems',fields:{isWondrous:true}}), before=JSON.stringify(cloak);
+    assert.deepEqual(equipment.suggestedSlots(cloak),['cloak']);
+    assert.equal(equipment.equipmentCandidate(cloak,'cloak'),true);
+    assert.equal(equipment.placementKind(cloak,'cloak'),'name-suggestion');
+    assert.equal(equipment.equipmentCandidate(cloak,'armor',true),false);
+    assert.equal(equipment.equipmentCandidate(cloak,'ring',true),false);
+    assert.equal(equipment.equipmentCandidate(cloak,'main',true),false);
+    assert.deepEqual(equipment.suggestedSlots(item('M',{name:'斗篷之剑'})),[]);
+    assert.equal(JSON.stringify(cloak),before);
+});
+test('unplaced wondrous items default to extras, manual expansion remains restricted', () => {
+    const unknown=item('',{name:'神秘石',kind:'magicItems',fields:{isWondrous:true}});
+    assert.equal(equipment.equipmentCandidate(unknown,'cloak'),false);
+    assert.equal(equipment.equipmentCandidate(unknown,'extra-1'),true);
+    assert.equal(equipment.equipmentCandidate(unknown,'cloak',true),true);
+    assert.equal(equipment.equipmentCandidate(unknown,'armor',true),false);
+});
+test('2024 holy focus forms preserve holding, wearing and attachment distinctions', () => {
+    const holy = name => item('SCF',{source:'XPHB',englishName:name,inventoryMeta:{type:'SCF',focusType:'holy'}});
+    assert.equal(equipment.canOccupySlot(holy('Amulet'),'amulet'),true);
+    assert.equal(equipment.canOccupySlot(holy('Amulet'),'main'),true);
+    assert.equal(equipment.canOccupySlot(holy('Emblem'),'off'),false);
+    assert.equal(equipment.canOccupySlot(holy('Emblem'),'extra-1'),true);
+    assert.equal(equipment.canOccupySlot(holy('Reliquary'),'off'),true);
+    assert.equal(equipment.canOccupySlot(holy('Reliquary'),'amulet'),false);
+    assert.equal(equipment.focusForm({...holy('Amulet'),sourceProvider:'homebrew'}),'unknown');
+    assert.equal(equipment.canOccupySlot(item('WD'),'head'),false);
+});
+test('type labels use parent names without changing translated property labels', () => {
+    assert.equal(metadata.itemMetadataName({name:'远程武器',entries:[{name:'射程'}]},'type'),'远程武器');
+    assert.equal(metadata.itemMetadataName({name:'载具(水上)',entries:[{name:'船员'}]},'type'),'载具(水上)');
+    assert.equal(metadata.itemMetadataName({name:'Light',entries:[{name:'轻型'}]}),'轻型');
+});
+
+test('type label fallback is source-aware and never chooses a conflicting label', () => {
+    const rows=[{abbreviation:'SHP',source:'DMG',name:'载具(水上)'},{abbreviation:'SHP',source:'XPHB',name:'载具(水上)'}];
+    assert.equal(metadata.itemTypeLabel(rows,'SHP','PHB','5etools-cn'),'载具(水上)');
+    assert.equal(metadata.itemTypeLabel(rows,'SHP','MISSING','5etools-cn',true),undefined);
+    assert.equal(metadata.itemTypeLabel([...rows,{abbreviation:'SHP',source:'OTHER',name:'别的定义'}],'SHP','PHB','5etools-cn'),undefined);
 });

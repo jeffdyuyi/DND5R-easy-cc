@@ -1,83 +1,74 @@
+import { coreFocusForm } from '../content/fiveetools/itemMetadata';
 import type { ResourceSnapshot } from '../../types';
-import { EQUIPMENT_KINDS, isEquipmentKind } from '../content/resourceRegistry';
+import { isEquipmentKind } from '../content/resourceRegistry';
+import { itemTypeCode, inventoryCategory } from './itemCategories';
 type EquipmentGroup = 'weapon' | 'armor' | 'shield' | 'ring' | 'focus' | 'wondrous' | 'gear' | 'other';
-/** Read explicit type/structured fields; never infer a wearing slot from an item's name. */
+const wearables = ['head', 'cloak', 'gloves', 'boots', 'necklace', 'amulet'];
+const labels: Record<string, string> = { head:'头部', cloak:'斗篷', gloves:'手套', boots:'鞋子', necklace:'项链', amulet:'护符' };
 export function equipmentGroup(item: ResourceSnapshot): EquipmentGroup {
-    const fields = { ...item, ...item.fields };
-    const code = String(item.inventoryMeta?.type || fields.itemTypeCode || '').split('|')[0];
-    const armor = String(fields.armorCategory || '');
-    const type = String(fields.type || '').trim();
-    if (code === 'S' || /^盾牌/.test(armor) || /^(盾牌|shield)$/i.test(type))
-        return 'shield';
-    if (['LA', 'MA', 'HA'].includes(code) || armor || /^(护甲|盔甲|轻型护甲|中型护甲|重型护甲|armor)$/i.test(type))
-        return 'armor';
-    if (item.kind === 'weapons' || ['M', 'R'].includes(code) || fields.weaponCategory || /^(武器|weapon)$/i.test(type))
-        return 'weapon';
-    if (code === 'RG' || /^(戒指|ring)$/i.test(type))
-        return 'ring';
-    if (['ST', 'WD', 'RD', 'SCF'].includes(code) || /^(法杖|魔杖|权杖|施法法器|奥术法器|德鲁伊法器|圣徽|staff|wand|rod)$/i.test(type))
-        return 'focus';
-    if (fields.isWondrous === true || /^(奇物|wondrous item)$/i.test(type))
-        return 'wondrous';
-    if (['gears', 'tools'].includes(item.kind))
-        return 'gear';
-    return 'other';
+    const fields = { ...item, ...item.fields }, code = itemTypeCode(item);
+    if (['treasure', 'vehicles', 'tools', 'consumables'].includes(inventoryCategory(item))) return 'other';
+    if (code === 'S' || /^盾牌/.test(String(fields.armorCategory || ''))) return 'shield';
+    if (['LA','MA','HA'].includes(code) || fields.armorCategory || item.kind === 'armors') return 'armor';
+    if (['M','R'].includes(code) || item.kind === 'weapons' || fields.weaponCategory) return 'weapon';
+    if (code === 'RG' || /^(戒指|ring)$/i.test(String(fields.type || ''))) return 'ring';
+    if (['ST','WD','RD','SCF'].includes(code) || item.inventoryMeta?.staff || item.staff) return 'focus';
+    if (fields.isWondrous === true || /^(奇物|wondrous item)$/i.test(String(fields.type || ''))) return 'wondrous';
+    return item.kind === 'gears' ? 'gear' : 'other';
 }
-export function selectionForSlot(slot: string): {
-    label: string;
-    kinds: readonly string[];
-    accept: (item: ResourceSnapshot) => boolean;
-    note: string;
-} {
-    let allowed: EquipmentGroup[], kinds: readonly string[], label: string, note = '';
-    if (slot === 'armor') {
-        allowed = ['armor'];
-        kinds = ['armors', 'magicItems'];
-        label = '护甲（含魔法护甲）';
-    }
-    else if (slot === 'main') {
-        allowed = ['weapon', 'focus'];
-        kinds = ['weapons', 'magicItems', 'gears'];
-        label = '武器与手持法器';
-    }
-    else if (slot === 'off') {
-        allowed = ['shield', 'weapon', 'focus'];
-        kinds = ['armors', 'weapons', 'magicItems', 'gears'];
-        label = '盾牌、副手武器与法器';
-    }
-    else if (slot === 'ring') {
-        allowed = ['ring'];
-        kinds = ['magicItems', 'gears'];
-        label = '戒指';
-    }
-    else if (['head', 'cloak', 'gloves', 'boots', 'necklace', 'amulet', 'belt', 'legs', 'accessory'].includes(slot)) {
-        allowed = ['wondrous', 'gear'];
-        kinds = ['magicItems', 'gears'];
-        label = '奇物与随身物品';
-        note = '部分资料只注明“奇物”，没有具体穿戴部位。请查看原文后手动指定；需要时可放宽范围。';
-    }
-    else {
-        allowed = ['weapon', 'armor', 'shield', 'ring', 'focus', 'wondrous', 'gear', 'other'];
-        kinds = EQUIPMENT_KINDS;
-        label = '全部随身物品';
-    }
-    return { label, kinds, note, accept: item => isEquipmentKind(item.kind) && allowed.includes(equipmentGroup(item)) };
+export function focusForm(item: ResourceSnapshot): 'held' | 'worn-or-held' | 'attached' | 'unknown' {
+    const code = itemTypeCode(item), meta = item.inventoryMeta;
+    if (['held','worn-or-held','attached'].includes(meta?.focusForm)) return meta.focusForm;
+    if (['ST','WD','RD'].includes(code) || meta?.staff || item.staff) return 'held';
+    if (code === 'SCF' && ['arcane','druid'].includes(meta?.focusType || item.scfType)) return 'held';
+    return coreFocusForm({ source:item.source, scfType:meta?.focusType || item.scfType, ENG_name:item.englishName, name:item.name }, item.sourceProvider || '') || 'unknown';
 }
-
-/** Hard presentation positions, independent of expanding a picker to all items. */
-export function canOccupySlot(item: ResourceSnapshot, slot: string) {
-    if (slot.startsWith('extra-')) return true;
-    if (slot.startsWith('ring-')) slot = 'ring';
+/** Explicit name keywords are UI suggestions, never upstream rules or a new item type. */
+export function suggestedSlots(item: ResourceSnapshot): string[] {
     const group = equipmentGroup(item);
+    if (!['wondrous','gear'].includes(group)) return [];
+    const name = [item.name, item.englishName].filter(Boolean).join(' ');
+    const tests: [string, RegExp][] = [
+        ['head', /头盔|头饰|头环|冠冕|王冠|兜帽|帽子|\b(?:helm(?:et)?|hat|crown|circlet|hood|headband)\b/i],
+        ['cloak', /斗篷|披风|\b(?:cloak|cape)\b/i],
+        ['gloves', /手套|\b(?:gloves?|gauntlets?)\b/i],
+        ['boots', /靴|鞋子|便鞋|\b(?:boots?|shoes?|slippers?)\b/i],
+        ['necklace', /项链|项圈|\b(?:necklace|choker)\b/i],
+        ['amulet', /护符|吊坠|\b(?:amulet|pendant|talisman)\b/i],
+    ];
+    return tests.filter(([, test]) => test.test(name)).map(([slot]) => slot);
+}
+export function canOccupySlot(item: ResourceSnapshot, position: string) {
+    if (!isEquipmentKind(item.kind)) return false;
+    if (position.startsWith('extra-')) return isEquipmentKind(item.kind);
+    const slot = position.startsWith('ring-') ? 'ring' : position, group = equipmentGroup(item);
     if (group === 'weapon') return slot === 'main' || slot === 'off';
     if (group === 'armor') return slot === 'armor';
     if (group === 'shield') return slot === 'off';
     if (group === 'ring') return slot === 'ring';
-    if (group === 'focus') return true;
-    return true;
+    if (group === 'focus') {
+        const form = focusForm(item);
+        return (form === 'held' || form === 'worn-or-held') && ['main','off'].includes(slot) || form === 'worn-or-held' && slot === 'amulet';
+    }
+    if (group === 'wondrous') return wearables.includes(slot);
+    if (group === 'gear') return suggestedSlots(item).includes(slot);
+    return false;
 }
-
-/** Unknown wearing position is a player decision, not an inferred rules property. */
+export function equipmentCandidate(item: ResourceSnapshot, slot: string, manual = false) {
+    if (!canOccupySlot(item, slot)) return false;
+    if (slot.startsWith('extra-') || !['wondrous','gear'].includes(equipmentGroup(item))) return true;
+    return suggestedSlots(item).includes(slot) || manual && equipmentGroup(item) === 'wondrous';
+}
 export function isManualPlacement(item: ResourceSnapshot) {
-    return !['weapon', 'armor', 'shield', 'ring'].includes(equipmentGroup(item));
+    return ['wondrous','gear','other'].includes(equipmentGroup(item)) || equipmentGroup(item) === 'focus' && ['unknown','attached'].includes(focusForm(item));
+}
+export function placementKind(item: ResourceSnapshot, slot: string): 'typed' | 'manual' | 'name-suggestion' {
+    if (suggestedSlots(item).includes(slot)) return 'name-suggestion';
+    return isManualPlacement(item) ? 'manual' : 'typed';
+}
+export function placementHint(item: ResourceSnapshot, slot?: string) {
+    if (slot && placementKind(item, slot) === 'name-suggestion') return '名称建议';
+    if (equipmentGroup(item) === 'focus' && focusForm(item) === 'attached') return '附着型法器：在额外物品记录，不替换盾牌';
+    const suggested = suggestedSlots(item);
+    return suggested.length ? '名称建议：' + suggested.map(id => labels[id]).join(' / ') : isManualPlacement(item) ? '默认额外物品；穿戴部位需手动核对' : '';
 }

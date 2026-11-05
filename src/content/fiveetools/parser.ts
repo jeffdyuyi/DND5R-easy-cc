@@ -1,6 +1,6 @@
 import { psionicSections } from './psionicPresentation';
 import { bookRuleSections } from './bookRules';
-import { itemMetadataName } from './itemMetadata';
+import { coreFocusForm, itemMetadataName, itemTypeLabel } from './itemMetadata';
 import { compatibilityParent } from './compatibility';
 import { prepareBody, expandVersions, specificMagicItems } from './expand';
 import { createEntryRenderer, inline } from './entries';
@@ -398,9 +398,9 @@ export function parseDocuments(documents: SourceDocument[]): ParsedCatalog {
                     const type = String(raw.type || '').split('|')[0], magic = prop === 'magicvariant' || !!raw.rarity && !['none', 'unknown'].includes(raw.rarity);
                     targetKind = magic ? 'magicItems' : ['M', 'R'].includes(type) ? 'weapons' : ['LA', 'MA', 'HA', 'S'].includes(type) ? 'armors' : ['AT', 'T', 'GS', 'INS'].includes(type) ? 'tools' : 'gears';
                     const typeSource = String(raw.type || '').split('|')[1] || 'PHB';
-                    const typeMeta = resolve('itemType', type + '|' + typeSource);
+                    const typeLabel = itemTypeLabel(prepared.itemType || [], type, typeSource, origin?.repository || '5etools-cn', String(raw.type || '').includes('|'));
                     const propertyNames = array(raw.property).map(p => itemMetadataName(resolve('itemProperty', String(p))) || String(p));
-                    fields = { itemTypeCode: type, isWondrous: raw.wondrous === true, type: itemMetadataName(typeMeta) || type, cost: raw.value != null ? raw.value / 100 + ' GP' : '', weight: raw.weight != null ? raw.weight + '磅' : '', rarity: rarities[raw.rarity] || raw.rarity || '', rarities: raw.rarity ? [rarities[raw.rarity] || raw.rarity] : [], attunementRequirement: raw.reqAttuneAlt === 'optional' || raw.reqAttune === 'optional' ? '可选同调' : raw.reqAttune === true ? '需同调' + (raw.reqAttuneTags ? '（' + choice(raw.reqAttuneTags) + '）' : '') : typeof raw.reqAttune === 'string' ? text(raw.reqAttune) : '', weaponCategory: raw.weaponCategory ? (raw.weaponCategory === 'simple' ? '简易' : raw.weaponCategory === 'martial' ? '军用' : raw.weaponCategory) + (type === 'M' ? '近战武器' : type === 'R' ? '远程武器' : '') : '', damage: [raw.dmg1, ({ A: '强酸', B: '钝击', C: '冷冻', F: '火焰', O: '力场', L: '闪电', N: '暗蚀', P: '穿刺', I: '毒素', Y: '心灵', R: '光耀', S: '挥砍', T: '雷鸣' } as Raw)[raw.dmgType] || raw.dmgType].filter(Boolean).join(' '), weaponProperties: propertyNames.join('、'), mastery: choice(raw.mastery), armorCategory: ({ LA: '轻型护甲', MA: '中型护甲', HA: '重型护甲', S: '盾牌' } as Raw)[type] || '', armorClass: raw.ac != null ? (type === 'S' ? '+' : '') + raw.ac + (type === 'LA' ? ' + 敏捷调整值' : type === 'MA' ? ' + 敏捷调整值（至多+2）' : '') : '', strengthRequirement: raw.strength != null ? String(raw.strength) : '', stealth: raw.stealth ? '劣势' : '', toolCategory: ({ AT: '工匠工具', T: '其他工具', GS: '游戏套组', INS: '乐器' } as Raw)[type] || '' };
+                    fields = { itemTypeCode: type, isWondrous: raw.wondrous === true, type: typeLabel || type, cost: raw.value != null ? raw.value / 100 + ' GP' : '', weight: raw.weight != null ? raw.weight + '磅' : '', rarity: rarities[raw.rarity] || raw.rarity || '', rarities: raw.rarity ? [rarities[raw.rarity] || raw.rarity] : [], attunementRequirement: raw.reqAttuneAlt === 'optional' || raw.reqAttune === 'optional' ? '可选同调' : raw.reqAttune === true ? '需同调' + (raw.reqAttuneTags ? '（' + choice(raw.reqAttuneTags) + '）' : '') : typeof raw.reqAttune === 'string' ? text(raw.reqAttune) : '', weaponCategory: raw.weaponCategory ? (raw.weaponCategory === 'simple' ? '简易' : raw.weaponCategory === 'martial' ? '军用' : raw.weaponCategory) + (type === 'M' ? '近战武器' : type === 'R' ? '远程武器' : '') : '', damage: [raw.dmg1, ({ A: '强酸', B: '钝击', C: '冷冻', F: '火焰', O: '力场', L: '闪电', N: '暗蚀', P: '穿刺', I: '毒素', Y: '心灵', R: '光耀', S: '挥砍', T: '雷鸣' } as Raw)[raw.dmgType] || raw.dmgType].filter(Boolean).join(' '), weaponProperties: propertyNames.join('、'), mastery: choice(raw.mastery), armorCategory: ({ LA: '轻型护甲', MA: '中型护甲', HA: '重型护甲', S: '盾牌' } as Raw)[type] || '', armorClass: raw.ac != null ? (type === 'S' ? '+' : '') + raw.ac + (type === 'LA' ? ' + 敏捷调整值' : type === 'MA' ? ' + 敏捷调整值（至多+2）' : '') : '', strengthRequirement: raw.strength != null ? String(raw.strength) : '', stealth: raw.stealth ? '劣势' : '', toolCategory: ({ AT: '工匠工具', T: '其他工具', GS: '游戏套组', INS: '乐器' } as Raw)[type] || '' };
                     if (raw.dmg2)
                         fields.weaponProperties += (fields.weaponProperties ? '；' : '') + '双手伤害 ' + raw.dmg2;
                     if (raw.range)
@@ -438,10 +438,10 @@ export function parseDocuments(documents: SourceDocument[]): ParsedCatalog {
                     goldAlternativeText: raw.startingEquipment?.goldAlternative ? text(String(raw.startingEquipment.goldAlternative)) : '',
                     equipmentDescription: raw.startingEquipment ? render(raw.startingEquipment.entries || raw.startingEquipment.default || []) : '',
                 } : undefined;
-                const inventoryMeta = ['baseitem', 'item', 'itemGroup', 'magicvariant'].includes(prop) ? {
-                    version: 1, type: String(raw.type || '').split('|')[0], typeName: fields.type, weaponCategory: raw.weaponCategory,
+                const inventoryMeta = ['baseitem', 'item', 'itemGroup', 'magicvariant', 'vehicle'].includes(prop) ? {
+                    version: 2, type: prop === 'vehicle' ? 'vehicle' : String(raw.type || '').split('|')[0], typeName: fields.type, weaponCategory: raw.weaponCategory, staff: raw.staff === true,
                     attunement: { mode: raw.reqAttuneAlt === 'optional' || raw.reqAttune === 'optional' ? 'optional' : raw.reqAttune === true || typeof raw.reqAttune === 'string' && !!raw.reqAttune ? 'required' : raw.reqAttune == null || raw.reqAttune === false ? 'none' : 'unknown', requirement: fields.attunementRequirement, rawRequirement: raw.reqAttune, tags: raw.reqAttuneTags, alternate: raw.reqAttuneAlt },
-                    focusType: raw.scfType, consumable: raw.consumable === true || array(raw.miscTags).includes('CNS') || ['A', 'AF', 'P', 'SC', 'FD'].includes(String(raw.type || '').split('|')[0]),
+                    focusType: raw.scfType, focusForm: coreFocusForm(raw, origin?.repository || '5etools-cn'), consumable: raw.consumable === true || array(raw.miscTags).includes('CNS') || ['A', 'AF', 'P', 'SC', 'FD', 'EXP'].includes(String(raw.type || '').split('|')[0]),
                     packContents: raw.packContents ? structuredClone(raw.packContents) : undefined,
                     otherSources: array(raw.otherSources).map(s => s.source),
                 } : undefined;

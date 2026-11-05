@@ -6,7 +6,6 @@ import { useResourceCatalog } from '../../hooks/useResourceCatalog';
 import { abilities, skills, skillLabel, abilityScores, abilitySources, skillGrants, grantedSkills, proficiencyBonus, buildData, levels, slotTable } from '../../src/character/quickRecord';
 import { initialClass } from '../../src/character/inventory';
 import { resourceKey } from '../../src/content/resourceIdentity';
-import { CharacterSupplies } from './CharacterSupplies';
 import { CharacterBuildSummary } from './CharacterBuildSummary';
 
 type QuickEditor = { type: 'ability'; id: string } | { type: 'skill'; id: string; ability: string; name: string; save: boolean } | { type: 'sources' | 'skills' | 'slots' };
@@ -49,7 +48,6 @@ export function CharacterQuickView({ character: c, updateCharacter: update, onVi
             <div className="quick-vital-fields">{([['currentHp', '生命'], ['hpMax', '生命上限'], ['tempHp', '临时生命']] as const).map(([field, label]) => <NumberField key={field} label={label} min={0} value={c[field]} onChange={value => update({ [field]: value ?? 0 })}/>)}</div>
         <div className="quick-hit-dice"><h3>生命骰</h3>{careers.map(({ item, level }) => { const hd = buildData(item, catalog).hd, id = resourceKey(item); return <div className="quick-dice-row" key={id}><span>{item.name} · {level}级{hd?.faces && hd.number === 1 ? ' · ' + level + 'd' + hd.faces : ' · 请查阅生命骰原文'}</span><NumberField label="已用" min={0} value={q.diceUsed?.[id] ?? 0} onChange={v => map('diceUsed', id, v ?? 0)}/>{(q.diceUsed?.[id] || 0) > level && <small>已用超过总数，请核对</small>}</div>; })}</div>
         </section>
-        <CharacterSupplies character={c} updateCharacter={update} section="currency"/>
         <section className="folio-section"><header><h2>属性与技能</h2><div className="quick-inline-actions"><button type="button" onClick={() => setEditor({ type: 'sources' })}>加值来源</button><button type="button" onClick={() => setEditor({ type: 'skills' })}>熟练选择</button></div></header><small className="quick-rank-legend">○ 未熟练 · ● 熟练 · ◆ 专精</small>
 
             <div className="quick-attribute-grid">

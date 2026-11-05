@@ -36,9 +36,6 @@
 .quick-hit-dice h3 { grid-column:1/-1; margin:0; font-size:14px; }
 .quick-hit-dice .quick-dice-row { display:grid; grid-template-columns:minmax(0,1fr) 48px; align-items:center; gap:6px; padding:0; font-size:12px; }
 .quick-hit-dice .quick-number { width:48px; }
-.character-quick-view .currency-fields { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:6px; }
-.character-quick-view .currency-fields label { display:flex; flex-direction:column; gap:4px; min-width:0; font-size:11px; }
-.character-quick-view .currency-fields input { width:100%; min-width:0; min-height:40px; padding:3px; text-align:center; }
 @media(min-width:760px) { .quick-attribute-grid { grid-template-columns:repeat(3,minmax(0,1fr)); } }
 @media(max-width:360px) { .quick-attribute-group { padding:5px; } .quick-skill-row { grid-template-columns:minmax(0,1fr) 28px 36px; gap:3px; } .character-quick-view .quick-rank-toggle { width:28px; min-width:28px; } }
 

@@ -1,8 +1,9 @@
+import { CharacterSupplies } from './CharacterSupplies';
 import { InventoryPanel } from './InventoryPanel';
 import { EquipmentWheel, LongPressEquipment, EquipmentGesture } from './EquipmentWheel';
 import { useState } from 'react';
 import type { CharacterData, InventoryEntry, ResourceSnapshot } from '../../types';
-import { inventoryLots, inventoryCategory, isConsumable, changeCopper, deleteInventoryItem, setInventoryQuantity, equipInventoryItem, isCurrencyItem } from '../../src/character/inventory';
+import { inventoryLots, inventoryCategory, inventorySection, isConsumable, changeCopper, deleteInventoryItem, setInventoryQuantity, equipInventoryItem } from '../../src/character/inventory';
 import { resourceKey } from '../../src/content/resourceIdentity';
 import { EQUIPMENT_KINDS } from '../../src/content/resourceRegistry';
 import { resolveAtom } from '../../src/character/startingEquipment';
@@ -11,17 +12,17 @@ import { CharacterResourcePicker } from './CharacterResourcePicker';
 import { ResourcePreview } from '../ResourcePreview';
 import { ItemAttunementToggle } from './ItemAttunementToggle';
 
-const categories = [['weapons', '武器'], ['armors', '护甲'], ['tools', '工具'], ['gears', '冒险物品'], ['consumables', '消耗品'], ['magicItems', '其他魔法物品']] as const;
+const categories = [['weapons', '武器'], ['armors', '护甲'], ['tools', '工具'], ['gears', '冒险物品'], ['consumables', '消耗品'], ['magicItems', '其他魔法物品'], ['vehicles', '坐骑与载具'], ['treasure', '财宝']] as const;
 export function CharacterInventory({ character: c, updateCharacter: update, onSources, onView }: { character: CharacterData; updateCharacter: (v: Partial<CharacterData>) => void; onSources: () => void; onView: (item: ResourceSnapshot) => void }) {
     const [detailKey, setDetailKey] = useState<string | null>(null);
     const [picker, setPicker] = useState<string | null>(null), [message, setMessage] = useState('');
     const catalog = useResourceCatalog();
     const [wheelGesture, setWheelGesture] = useState<EquipmentGesture | undefined>();
     const [wheelKey, setWheelKey] = useState<string | null>(null);
-    const sectionOf = (item: ResourceSnapshot) => isConsumable(item, c) ? 'consumables' : inventoryCategory(item);
-    const accepts = (item: ResourceSnapshot) => !isCurrencyItem(item) && sectionOf(item) === picker;
+    const sectionOf = (item: ResourceSnapshot) => inventorySection(item, c);
+    const accepts = (item: ResourceSnapshot) => sectionOf(item) === picker;
     const groups = new Map<string, InventoryEntry[]>();
-    for (const lot of inventoryLots(c).filter(lot => lot.quantity > 0 && !isCurrencyItem(lot.item))) {
+    for (const lot of inventoryLots(c).filter(lot => lot.quantity > 0)) {
         const key = resourceKey(lot.item); groups.set(key, [...(groups.get(key) || []), lot]);
     }
     const quantityUpdate = (lot: InventoryEntry, value: number) => setInventoryQuantity(c, lot, value);
@@ -53,13 +54,14 @@ export function CharacterInventory({ character: c, updateCharacter: update, onSo
         {categories.map(([category, title]) => {
             const visible = [...groups.entries()].filter(([, lots]) => sectionOf(lots[0].item) === category);
             return <details className="folio-section inventory-type-section" key={category} open><summary><strong>{title}</strong><small>{visible.length} 项</small><button type="button" aria-label={'添加' + title} onClick={event => { event.preventDefault(); event.stopPropagation(); setPicker(category); }}>＋ 添加</button></summary>
+        {category === 'treasure' && <><h3>钱币余额</h3><CharacterSupplies character={c} updateCharacter={update} section="currency" embeddedCurrency/><small>下方财宝按物品保存，添加货币条目不会自动增加余额。</small></>}
         <div className="inventory-grid">{visible.map(([key, lots]) => {
             const item = lots[0].item, count = lots.reduce((sum, lot) => sum + lot.quantity, 0);
             return <article className="inventory-card" key={key}><LongPressEquipment onHold={gesture => { setWheelGesture(gesture); setWheelKey(key); }}><ResourcePreview item={item} onSelect={() => onView(item)}/></LongPressEquipment><button type="button" className="inventory-remove selected-card-remove" aria-label={'删除库存物品' + item.name} title="从库存删除此物品" onClick={() => { if (window.confirm('从库存删除“' + item.name + '”全部 ' + count + ' 件？此物品的装备与同调标记也会移除。')) update(deleteInventoryItem(c, item)); }}>×</button><div className="inventory-item-controls"><button type="button" onClick={() => setDetailKey(key)}>×{count} · 管理</button></div>
                 {detailKey === key && <InventoryPanel title={item.name} onClose={() => setDetailKey(null)}><ItemAttunementToggle character={c} item={item} updateCharacter={update}/>
 
                 <details><summary>数量与来源</summary>{lots.map(lot => <label key={lot.id}><span>{lot.originName || '手动添加'}{lot.item.name !== item.name ? ' · ' + lot.item.name : ''}{lot.containedCopper !== undefined ? ' · 内含' + lot.containedCopper / 100 + ' GP' : ''}</span><input type="number" min="0" aria-label={item.name + '数量'} value={lot.quantity} onChange={event => update(quantityUpdate(lot, Math.max(0, Math.trunc(Number(event.target.value) || 0))))}/></label>)}
-                    <label><input type="checkbox" checked={isConsumable(item, c)} onChange={event => update({ manualConsumables: { ...c.manualConsumables, [key]: event.target.checked } })}/>消耗品标记</label>
+                    {!['treasure','vehicles','tools','consumables'].includes(inventoryCategory(item)) && <label><input type="checkbox" checked={isConsumable(item, c)} onChange={event => update({ manualConsumables: { ...c.manualConsumables, [key]: event.target.checked } })}/>消耗品标记</label>}
                 </details>
                 {Array.isArray(item.inventoryMeta?.packContents) && <details><summary>包内物品</summary><ul>{item.inventoryMeta.packContents.map((atom: any, index: number) => { const row = resolveAtom(atom, item, catalog); return <li key={index}>{row.item ? row.item.name + ' ×' + row.quantity : row.copper !== undefined ? row.copper / 100 + ' GP' : row.error}</li>; })}</ul>{lots.map(lot => <button type="button" key={lot.id} onClick={() => expand(lot)}>展开1份 · {lot.originName || '手动添加'}</button>)}</details>}
                 </InventoryPanel>}

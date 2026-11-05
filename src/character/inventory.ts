@@ -1,6 +1,6 @@
 import type { CharacterData, InventoryEntry, ResourceSnapshot } from '../../types';
 import { resourceKey } from '../content/resourceIdentity';
-import { canOccupySlot, isManualPlacement } from './equipmentSelection';
+import { canOccupySlot, placementKind } from './equipmentSelection';
 import { EQUIPMENT_KINDS } from '../content/resourceRegistry';
 
 export function initialClass(c: CharacterData) {
@@ -11,17 +11,7 @@ export function buildSources(c: CharacterData) {
     const main = initialClass(c);
     return (c.resourceCards || []).filter(item => item.kind === 'backgrounds' || item === main);
 }
-export function isConsumable(item: ResourceSnapshot, c?: CharacterData) {
-    const override = c?.manualConsumables?.[resourceKey(item)];
-    return override ?? item.inventoryMeta?.consumable === true;
-}
-export function inventoryCategory(item: ResourceSnapshot) {
-    const type = item.inventoryMeta?.type || item.itemTypeCode || item.fields?.itemTypeCode;
-    if (['M', 'R'].includes(type) || item.kind === 'weapons') return 'weapons';
-    if (['LA', 'MA', 'HA', 'S'].includes(type) || item.kind === 'armors') return 'armors';
-    if (['AT', 'T', 'GS', 'INS'].includes(type) || item.kind === 'tools') return 'tools';
-    return item.kind === 'magicItems' ? 'magicItems' : 'gears';
-}
+export { inventoryCategory, isConsumable, inventorySection } from './itemCategories';
 /** Display one row per identity, with separate provenance lots underneath. */
 export function inventoryLots(c: CharacterData): InventoryEntry[] {
     return [...(c.resourceCards || []).filter(item => EQUIPMENT_KINDS.includes(item.kind)).map(item => ({
@@ -121,7 +111,7 @@ export function equipInventoryItem(c: CharacterData, item: ResourceSnapshot, pos
     const instance = instances.find(i => i.inventoryInstanceId === item.inventoryInstanceId) || instances.find(i => i.inventoryEntryId === item.inventoryEntryId && !used.has(i.inventoryInstanceId)) || instances.find(i => !used.has(i.inventoryInstanceId)) || instances[0];
     if (!instance) return null;
     for (const [id, worn] of Object.entries(next)) if (worn.inventoryInstanceId === instance.inventoryInstanceId || !worn.inventoryInstanceId && worn.inventoryEntryId === instance.inventoryEntryId && instances.length === 1) delete next[id];
-    next[slot] = { ...instance, equipmentPlacement: isManualPlacement(item) ? 'manual' : 'typed' };
+    next[slot] = { ...instance, equipmentPlacement: placementKind(item, position) };
     return { equippedResourceSlots: next };
 }
 export function isCurrencyItem(item: ResourceSnapshot) {
