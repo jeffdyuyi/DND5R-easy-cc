@@ -26,6 +26,7 @@ export function validateCharacterData(value: unknown): value is CharacterData {
         const q = data.quickRecord as Record<string, any>;
         if (!object(q)) return false;
         for (const key of ['raceAbilityEnabled', 'backgroundAbilityEnabled']) if (q[key] !== undefined && typeof q[key] !== 'boolean') return false;
+        if (q.slotMarks !== undefined && (!object(q.slotMarks) || !Object.values(q.slotMarks).every(value => Array.isArray(value) && value.length <= 10000 && value.every(mark => typeof mark === 'boolean')))) return false;
         if (q.notes !== undefined && typeof q.notes !== 'string') return false;
         if (q.proficiencyOverride !== undefined && (typeof q.proficiencyOverride !== 'number' || !Number.isFinite(q.proficiencyOverride) || q.proficiencyOverride < 0)) return false;
         for (const key of ['abilityOptions', 'abilityAdjustments', 'modifierOverrides', 'skillOptions', 'skillRanks', 'skillOverrides', 'saveRanks', 'saveOverrides', 'slotTotals', 'slotUsed', 'diceUsed']) {

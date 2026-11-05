@@ -312,6 +312,7 @@ export interface CharacterQuickRecord {
     proficiencyOverride?: number;
     slotTotals?: Record<string, number>;
     slotUsed?: Record<string, number>;
+    slotMarks?: Record<string, boolean[]>;
     diceUsed?: Record<string, number>;
     notes?: string;
 }

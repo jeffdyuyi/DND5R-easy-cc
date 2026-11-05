@@ -7,6 +7,7 @@ async function load(entry) {
     return import('data:text/javascript;base64,' + Buffer.from(code).toString('base64'));
 }
 const quick = await load('src/character/quickRecord.ts');
+const tracking = await load('src/character/slotTracking.ts');
 const inventory = await load('src/character/inventory.ts');
 const persistence = await load('src/character/persistence.ts');
 const identity = await load('src/content/resourceIdentity.ts');
@@ -74,4 +75,26 @@ test('quick records validate restores without dropping unknown character fields'
     assert.equal(persistence.validateCharacterData({...base,quickRecord:{slotTotals:{x:'bad'}}}),false);
     const c={...base,futureField:{x:1},quickRecord:{notes:'x'}};
     assert.deepEqual(persistence.withCharacterDefaults(base,c).futureField,{x:1});
+});
+
+test('slot marks toggle the touched position independently and keep the input immutable', () => {
+    const old={slotUsed:{one:0}};const original=JSON.stringify(old);
+    const next={...old,...tracking.toggleSlot(old,'one',4,2)};
+    assert.deepEqual(tracking.slotUsage(next,'one',4).marks,[false,false,true,false]);
+    assert.equal(next.slotUsed.one,1);
+    const restored={...next,...tracking.toggleSlot(next,'one',4,2)};
+    assert.equal(tracking.slotUsage(restored,'one',4).used,0);
+    assert.equal(JSON.stringify(old),original);
+    assert.deepEqual(tracking.toggleSlot(old,'one',2,4),{});
+});
+test('legacy slot usage and reduced totals never silently restore expended slots', () => {
+    const old={slotUsed:{one:4}};
+    const view=tracking.slotUsage(old,'one',2);
+    assert.equal(view.used,4);assert.equal(view.total,2);assert.equal(old.slotUsed.one,4);
+    const changed={...old,...tracking.toggleSlot(old,'one',2,0)};
+    assert.equal(tracking.slotUsage(changed,'one',2).used,3);
+    const explicit={...changed,...tracking.setSlotUsage(changed,'one',1)};
+    assert.deepEqual(tracking.slotUsage(explicit,'one',2).marks,[true,false]);
+    assert.equal(persistence.validateCharacterData({...base,quickRecord:changed}),true);
+    assert.equal(persistence.validateCharacterData({...base,quickRecord:{slotMarks:{one:['bad']}}}),false);
 });
