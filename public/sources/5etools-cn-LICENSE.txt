@@ -2,7 +2,7 @@
 - 5etools 原始代码（MIT License）
 - 5etools 中文站翻译内容（CC BY-NC-SA 4.0）
   原中文站：https://5e.kiwee.top/
-  原代码库：https://github.com/tjliqy/5etools-mirror-2.github.io/tree/cn2.0
+  原代码库：https://github.com/tjliqy/5etools-cn/tree/main
 
 本仓库新增功能部分的代码版权归 不咕鸟（基德） 所有。
 

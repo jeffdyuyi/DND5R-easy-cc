@@ -12,7 +12,8 @@ if (!match) throw Error('主库清单结构已改变，请同步制作脚本。'
 // Evaluate only the checked-in manifest expression, never content from external JSON.
 const paths = Function('indexedPaths', 'return '+match[1])(indexedPaths);
 const revision = 'bundled-local-snapshot';
-const documents = await Promise.all([...new Set([...paths,...indices.map(doc=>doc.path)])].map(async path=>({repository:'5etools-cn',revision,path,url:'https://github.com/tjliqy/5etools-cn/blob/cn2.0/'+path,fetchedAt:new Date().toISOString(),body:await read(path)})));
+// This bundle is read from a user-selected local tree, whose branch is not verified here.
+const documents = await Promise.all([...new Set([...paths,...indices.map(doc=>doc.path)])].map(async path=>({repository:'5etools-cn',revision,path,url:'https://github.com/tjliqy/5etools-cn',fetchedAt:new Date().toISOString(),body:await read(path)})));
 const serialized = JSON.stringify(documents);
 const digest = createHash('sha256').update(serialized).digest('hex');
 const requested = ['PHB','XPHB','DMG','XDMG','TCE','XGE','SCAG','FRAiF','FRHoF','ABH'];

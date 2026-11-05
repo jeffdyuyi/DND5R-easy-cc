@@ -76,6 +76,22 @@ test('主库任一必需文件下载失败时不写入原文', async () => {
     assert.equal(result.errors.length, 1);
 });
 
+test('中文主库检查 main，原文按该提交读取，失败不替换旧缓存', async () => {
+    const requested = [], old = document('旧正文');
+    const client = createSourceClient({
+        readDocument: async () => old,
+        saveDocuments: async () => assert.fail('下载失败不能替换旧缓存'),
+    }, async url => {
+        requested.push(String(url));
+        if (String(url).includes('api.github.com')) return Response.json({ commit: { sha: 'b'.repeat(40) } });
+        return new Response(null, { status: 503 });
+    });
+    assert.equal(await client.checkCoreRevision(new AbortController().signal), 'b'.repeat(40));
+    await assert.rejects(client.loadCore(new AbortController().signal, () => {}), /HTTP 503/);
+    assert(requested.some(url => url.endsWith('/branches/main')));
+    assert(requested.some(url => url.includes('/' + 'b'.repeat(40) + '/data/class/index.json')));
+});
+
 const { stageDocuments } = await load('stagedDocuments');
 test('暂存读回并解析成功后才激活', async () => {
     const events = []; let saved;
