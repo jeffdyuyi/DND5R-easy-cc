@@ -33,7 +33,7 @@ export function CharacterQuickView({ character: c, updateCharacter: update, onVi
     const slotPrefix = main ? resourceKey(main) : 'manual';
     const saveKeys: string[] = Array.isArray(mainData.proficiency) ? mainData.proficiency : [];
     return <div className="character-quick-view">
-        <section className="folio-section quick-vitals"><header><h2>现场记录</h2><span>{prof.total}级 · {prof.calculated === undefined && q.proficiencyOverride === undefined ? '熟练待填' : '熟练 ' + signed(bonus)}</span></header>
+        <section className="folio-section quick-vitals"><header><h2>{c.name || '角色速览'}</h2><span>{prof.total}级 · {prof.calculated === undefined && q.proficiencyOverride === undefined ? '熟练待填' : '熟练 ' + signed(bonus)}</span></header>
             <div className="quick-vital-fields">{([['currentHp', '生命'], ['hpMax', '生命上限'], ['tempHp', '临时生命']] as const).map(([field, label]) => <NumberField key={field} label={label} min={0} value={c[field]} onChange={value => update({ [field]: value ?? 0 })}/>)}</div>
         </section>
         <section className="folio-section"><header><h2>属性</h2><button type="button" onClick={onEdit}>配置角色</button></header>
