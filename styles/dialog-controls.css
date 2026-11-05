@@ -70,3 +70,9 @@ dialog .resource-bookmark-action { display:none; }
 .character-folio .folio-top-tabs { position:relative; z-index:110; background:var(--paper); }
 .app-console { z-index:120; }
 .rule-chapter h2,.rule-chapter h3,.rule-chapter h4 { scroll-margin-top:68px; }
+
+/* Editing panels share geometry; reading cards retain their own overlay controls. */
+body dialog.managed-dialog[open] { display:flex; flex-direction:column; margin:auto; padding:0; overflow:hidden; max-height:calc(100dvh - max(32px,calc(env(safe-area-inset-top,0px) + 12px)) - max(24px,calc(env(safe-area-inset-bottom,0px) + 12px))); }
+.managed-dialog>header { flex:none; display:flex; align-items:center; justify-content:space-between; gap:8px; padding:6px 12px; background:var(--paper-shade); border-bottom:1px solid var(--line); }
+.managed-dialog-content { min-height:0; overflow:auto; overscroll-behavior:contain; padding:12px; }
+.managed-dialog h2 { margin:0; font-size:18px; }

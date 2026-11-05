@@ -1,3 +1,4 @@
+import { useModalDialog } from '../common/useModalDialog';
 import { CharacterEquipment } from './CharacterEquipment';
 import { CharacterQuickView } from './CharacterQuickView';
 import { ReaderOutline } from '../common/ReaderOutline';
@@ -51,10 +52,7 @@ export default function CharacterWorkspace({ character: c, updateCharacter: upda
     }, [view]);
     useEffect(() => { pageScroll.current?.scrollTo(0, positions.current[tab] || 0); }, [tab]);
     const switchTab = (next: string) => { positions.current[tab] = pageScroll.current?.scrollTop || 0; setView(null); reader.current?.close(); setTab(next); };
-    useEffect(() => {
-        if (view && !reader.current?.open)
-            reader.current?.showModal();
-    }, [view]);
+    useModalDialog(reader, !!view);
     const picker = (kinds: readonly string[], extra: any = {}) => <CharacterResourcePicker character={c} updateCharacter={update} kinds={kinds} onManageSources={() => setSources(true)} {...extra}/>;
     const selected = (kind: string) => (c.resourceCards || []).filter(item => item.kind === kind);
     const classes = selected('classes');

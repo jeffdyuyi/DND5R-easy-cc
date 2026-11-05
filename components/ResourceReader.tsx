@@ -1,3 +1,4 @@
+import { useModalDialog } from './common/useModalDialog';
 import { ReaderOutline } from './common/ReaderOutline';
 import { FavoriteButton } from './FavoriteButton';
 import { useFullscreenReader } from './common/useFullscreenReader';
@@ -34,7 +35,7 @@ export function ResourceReader({ item, items, onChange, onClose, children }: {
     const backdrop = useDialogBackdrop(dismiss);
     useFullscreenReader(dialog, onClose);
     const index = items.findIndex(i => resourceKey(i) === resourceKey(item));
-    useEffect(() => { const el = dialog.current; const roots = Array.from(document.querySelectorAll<HTMLElement>('.resource-catalog,.favorites-workspace')); const previous = roots.map(root => root.style.overflow); roots.forEach(root => root.style.overflow = 'hidden'); if (!el?.open) el?.showModal(); return () => { el?.close(); roots.forEach((root, i) => root.style.overflow = previous[i]); }; }, []);
+    useModalDialog(dialog);
     const readingPositions = useRef(new Map<string, number>());
     useEffect(() => {
         const node = scroll.current, key = resourceKey(item);

@@ -36,3 +36,5 @@ for (const [name, form] of [['护符','worn-or-held'],['纹章','attached'],['�
     assert.equal(focus?.inventoryMeta?.focusForm, form, name);
 }
 console.log('Actual equipment type labels and three 2024 holy focus forms PASS');
+
+console.log("Diagnostic categories: "+JSON.stringify(result.diagnostics.reduce((counts,row)=>(counts[row.code]=(counts[row.code]||0)+1,counts),{})));

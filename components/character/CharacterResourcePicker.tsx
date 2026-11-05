@@ -1,3 +1,4 @@
+import { useModalDialog } from '../common/useModalDialog';
 import { ReaderOutline } from '../common/ReaderOutline';
 import { inventoryLots, setInventoryQuantity, grantRemovalMessage } from '../../src/character/inventory';
 import { useFullscreenReader } from '../common/useFullscreenReader';
@@ -22,11 +23,11 @@ export function CharacterResourcePicker({ character, updateCharacter, kinds, rea
     fixedCategory?: boolean;
     allowRepeat?: boolean;
     character: CharacterData;
-    updateCharacter: (updates: Partial<CharacterData>) => boolean | void;
+    updateCharacter: (updates: Partial<CharacterData>) => boolean;
     kinds: readonly string[];
     readOnly?: boolean;
     filterCandidate?: (item: any) => boolean;
-    onChoose?: (item: any, updates: Partial<CharacterData>) => void;
+    onChoose?: (item: any, updates: Partial<CharacterData>) => boolean;
     selectionGroup?: string;
     onManageSources?: () => void;
     initialOpen?: boolean;
@@ -64,14 +65,7 @@ export function CharacterResourcePicker({ character, updateCharacter, kinds, rea
         node.addEventListener('easy-cc-reference', update);
         return () => node.removeEventListener('easy-cc-reference', update);
     }, [panel, view]);
-    useEffect(() => {
-        if (panel || view) {
-            if (!dialog.current?.open)
-                dialog.current?.showModal();
-        }
-        else
-            dialog.current?.close();
-    }, [panel, view]);
+    useModalDialog(dialog, panel || !!view);
     const close = () => { setReferenceDepth(0); referenceBack.current = null; dialog.current?.close(); setView(null); setPanel(false); onDismiss?.(); };
     useFullscreenReader(dialog, close, panel || !!view);
     const dismiss = () => { if (referenceDepth > 0) referenceBack.current?.(); else close(); };
@@ -109,8 +103,9 @@ export function CharacterResourcePicker({ character, updateCharacter, kinds, rea
         const warning = grantRemovalMessage(character, removed);
         if (warning && !window.confirm(warning)) return;
         const snapshot = updates.resourceCards!.find(card => resourceKey(card) === resourceKey(item))!;
-        if (onChoose)
-            onChoose(snapshot, updates);
+        if (onChoose) {
+            if (!onChoose(snapshot, updates)) return;
+        }
         else if (updateCharacter(updates) === false)
             return;
         setNotice('');

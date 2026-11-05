@@ -1,6 +1,6 @@
 import { inventoryLots } from '../../src/character/inventory';
 import type { CharacterData } from '../../types';
-export function CharacterSupplies({ character: c, updateCharacter: update, section = 'all', embeddedCurrency = false }: { character: CharacterData; updateCharacter: (v: Partial<CharacterData>) => void; section?: 'currency' | 'consumables' | 'all'; embeddedCurrency?: boolean }) {
+export function CharacterSupplies({ character: c, updateCharacter: update, section = 'all', embeddedCurrency = false }: { character: CharacterData; updateCharacter: (v: Partial<CharacterData>) => boolean; section?: 'currency' | 'consumables' | 'all'; embeddedCurrency?: boolean }) {
     const contained = inventoryLots(c).reduce((sum, lot) => sum + (lot.containedCopper || 0) * lot.quantity, 0);
     const records = c.consumableRecords || [];
     const CurrencyContainer = embeddedCurrency ? 'div' : 'section';

@@ -5,7 +5,7 @@ import { resourceKey } from '../../src/content/resourceIdentity';
 export function ItemAttunementToggle({ character, item, updateCharacter }: {
     character: CharacterData;
     item: any;
-    updateCharacter: (v: Partial<CharacterData>) => void;
+    updateCharacter: (v: Partial<CharacterData>) => boolean;
 }) {
     const instances = item.inventoryInstanceId ? [item] : itemInstances(character, item);
     const active = itemIsAttuned(character, item);

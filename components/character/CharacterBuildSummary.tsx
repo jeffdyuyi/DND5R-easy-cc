@@ -6,7 +6,7 @@ import { SnapshotUpdate } from '../SnapshotUpdate';
 import { refreshCharacterSnapshot } from '../../src/character/resources';
 
 const proficiencyKinds = [['skills', '技能'], ['saves', '豁免'], ['weapons', '武器'], ['armor', '护甲 / 受训'], ['tools', '工具']] as const;
-export function CharacterBuildSummary({ character: c, updateCharacter: update, onView }: { character: CharacterData; updateCharacter: (v: Partial<CharacterData>) => void; onView: (item: ResourceSnapshot) => void }) {
+export function CharacterBuildSummary({ character: c, updateCharacter: update, onView }: { character: CharacterData; updateCharacter: (v: Partial<CharacterData>) => boolean; onView: (item: ResourceSnapshot) => void }) {
     const main = initialClass(c);
     const cards = (c.resourceCards || []).filter(item => ['species', 'backgrounds'].includes(item.kind) || item.kind === 'classes' && (c.multiclassEnabled || item === main));
     const sections = new Map<string, Map<string, string[]>>();

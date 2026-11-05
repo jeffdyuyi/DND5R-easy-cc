@@ -6,7 +6,7 @@ import { sourceLabel } from '../../src/content/sourceNames';
 import { characterSourceKey } from '../../src/content/resourceIdentity';
 export function CharacterSources({ character, updateCharacter, onDone, onCancel }: {
     character: CharacterData;
-    updateCharacter: (value: Partial<CharacterData>) => void;
+    updateCharacter: (value: Partial<CharacterData>) => boolean;
     onDone: () => void;
     onCancel?: () => void;
 }) {
@@ -34,7 +34,7 @@ export function CharacterSources({ character, updateCharacter, onDone, onCancel 
     const save = () => {
         if (outside.length && !window.confirm(`有 ${outside.length} 张已选卡片来自未启用来源。保存后保留这些卡片并标记；需要移除时请在对应区块手动操作。是否保存？`))
             return;
-        updateCharacter({ allowedResourceSources: draft });
+        if (!updateCharacter({ allowedResourceSources: draft })) return;
         onDone();
     };
     return <section className="character-source-settings"><h2>本角色可用资料</h2>{onCancel && <button type="button" onClick={onCancel}>返回</button>}

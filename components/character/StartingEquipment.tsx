@@ -9,7 +9,7 @@ import { RichText } from '../RichText';
 import { SnapshotUpdate } from '../SnapshotUpdate';
 import { refreshCharacterSnapshot } from '../../src/character/resources';
 
-function EquipmentSource({ c, source, update, onView }: { c: CharacterData; source: ResourceSnapshot; update: (v: Partial<CharacterData>) => void; onView: (item: ResourceSnapshot) => void }) {
+function EquipmentSource({ c, source, update, onView }: { c: CharacterData; source: ResourceSnapshot; update: (v: Partial<CharacterData>) => boolean; onView: (item: ResourceSnapshot) => void }) {
     const catalog = useResourceCatalog();
     const [choices, setChoices] = useState<Record<string, string>>({});
     const [message, setMessage] = useState('');
@@ -34,8 +34,8 @@ function EquipmentSource({ c, source, update, onView }: { c: CharacterData; sour
         const raw = typeof atom === 'string' ? { item: atom } : atom;
         return raw.equipmentType ? (equipmentTypeNames[raw.equipmentType] || raw.equipmentType) + ' ×' + (raw.quantity || 1) : result.error;
     };
-    return <details className="starting-source"><summary>{source.name}<small>{receipt ? '已领取' : '待选择'}</small></summary>
-        {receipt ? <><p>已加入背包。物品数量可在库存调整；更换或移除此来源时会提示清除物品，钱币由你手动核对。</p><button type="button" onClick={() => { if (window.confirm(grantRemovalMessage(c, [key]))) { update(clearStartingGrants(c, [key])); setChoices({}); } }}>清除并重新选择</button></> : <>
+    return <details className="starting-source" open={!receipt}><summary>{source.name}<small>{receipt ? '已领取' : '待选择'}</small></summary>
+        {receipt ? <><p>已加入背包。物品数量可在库存调整；更换或移除此来源时会提示清除物品，钱币由你手动核对。</p><button type="button" onClick={() => { if (window.confirm(grantRemovalMessage(c, [key]))) { if (update(clearStartingGrants(c, [key]))) setChoices({}); } }}>清除并重新选择</button></> : <>
             {!source.buildData && <><p>此快照缺少建卡结构，请更新卡片后再选择装备。</p><SnapshotUpdate item={source} onUpdate={next => update(refreshCharacterSnapshot(c, next))}/></>}
             {source.buildData?.equipmentDescription && <details><summary>原始装备说明</summary><RichText text={source.buildData.equipmentDescription}/></details>}
             {!groups.length && <p>当前资料没有可解析的起始装备方案；请查阅条目并手动添加，不从文字猜测物品。</p>}
@@ -52,7 +52,7 @@ function EquipmentSource({ c, source, update, onView }: { c: CharacterData; sour
             })}
             <button type="button" disabled={goldMode ? !goldAmount.trim() || !Number.isFinite(Number(goldAmount)) || Number(goldAmount) < 0 : !complete} onClick={() => {
                 const result = receiveEquipment(c, source, activeRows.map(row => ({ atom: row.atom, choice: choices[row.id] })), { ...choices, ...(goldMode ? { mode: 'gold', goldAmount } : {}) }, catalog);
-                if (result) { update(result); setMessage('已加入背包。'); }
+                if (result) { if (update(result)) setMessage('已加入背包。'); }
                 else setMessage('尚未完成选择，或此来源已经领取。');
             }}>确认加入背包</button>
             {message && <p role="status">{message}</p>}
@@ -60,6 +60,6 @@ function EquipmentSource({ c, source, update, onView }: { c: CharacterData; sour
     </details>;
 }
 
-export function StartingEquipment({ character, updateCharacter, onView }: { character: CharacterData; updateCharacter: (v: Partial<CharacterData>) => void; onView: (item: ResourceSnapshot) => void }) {
+export function StartingEquipment({ character, updateCharacter, onView }: { character: CharacterData; updateCharacter: (v: Partial<CharacterData>) => boolean; onView: (item: ResourceSnapshot) => void }) {
     return <section className="folio-section starting-equipment"><h2>起始装备</h2>{buildSources(character).map(source => <EquipmentSource key={resourceKey(source)} c={character} source={source} update={updateCharacter} onView={onView}/>)}{!buildSources(character).length && <p>先选择初始职业和背景。</p>}</section>;
 }

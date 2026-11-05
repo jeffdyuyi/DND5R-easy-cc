@@ -27,7 +27,7 @@ export function LibraryManager<T extends BaseLibraryItem>({ title, itemLabel, ki
         setViewScope(visibleItems?.map(resourceKey) || null);
         setViewItem(item);
     };
-    const handleExport = () => downloadJson(items, `${title}_${new Date().toISOString().slice(0, 10)}.json`);
+    const handleExport = async () => { try { await downloadJson(items, `${title}_${new Date().toISOString().slice(0, 10)}.json`); } catch(error) { window.alert('导出未完成：'+String(error)); } };
     const handleImport = async (event: React.ChangeEvent<HTMLInputElement>) => {
         const file = event.target.files?.[0];
         event.target.value = '';

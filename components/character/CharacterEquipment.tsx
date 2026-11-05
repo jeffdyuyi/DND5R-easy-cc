@@ -13,7 +13,7 @@ import { PixelGlyph } from '../common/PixelGlyph';
 const base = [['head', '头部', 'magicItems'], ['cloak', '披风 / 斗篷', 'magicItems'], ['armor', '护甲', 'armors'], ['gloves', '手套', 'gears'], ['boots', '鞋子', 'gears'], ['main', '主手', 'weapons'], ['off', '副手', 'armors'], ['ring', '戒指', 'magicItems'], ['necklace', '项链', 'magicItems'], ['amulet', '护符', 'magicItems']] as const;
 export function CharacterEquipment({ character: c, updateCharacter: update, onView, onBackpack }: {
     character: CharacterData;
-    updateCharacter: (v: Partial<CharacterData>) => boolean | void;
+    updateCharacter: (v: Partial<CharacterData>) => boolean;
     onView: (item: any) => void;
     onBackpack: () => void;
 }) {

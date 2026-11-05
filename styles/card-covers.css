@@ -1,4 +1,16 @@
-/* Shared card composition. Existing Kenney outer frame and theme identity stay intact. */
+/* Shared cover anatomy. Frame artwork/states belong to fantasy-ui.css. */
+button.resource-cover.resource-cover-editorial { position:relative; display:flex; flex-direction:column; width:100%; min-width:0; height:100%; padding:0; text-align:center; overflow:hidden; }
+.resource-cover-editorial .resource-cover-kicker { display:flex; flex-direction:column; align-items:center; gap:3px; line-height:1.4; }
+.resource-cover-editorial .resource-cover-title { display:flex; flex-direction:column; align-items:center; justify-content:center; }
+.resource-cover-editorial .resource-cover-title strong,.resource-cover-editorial .resource-cover-title small { overflow-wrap:anywhere; }
+.resource-cover-editorial .resource-cover-facts { display:flex; flex-direction:column; }
+.resource-cover-editorial.preview-selected { min-height:72px; height:auto; }
+.preview-selected .resource-cover-kicker { padding:4px 28px; font-size:10px; color:var(--muted); }
+.preview-selected .resource-cover-title { padding:8px 28px 6px 8px; gap:3px; }
+.preview-selected .resource-cover-title strong { font-size:16px; line-height:1.4; }
+.preview-selected .resource-cover-title small { display:none; }
+.preview-selected .resource-cover-facts { padding:4px 8px 8px; gap:3px; font-size:11px; }
+.preview-selected .resource-cover-fact>span { display:none; }
 body button.resource-cover.resource-cover-editorial.preview-catalog {
   min-height:184px; padding:0!important; display:flex; flex-direction:column;
   text-align:center; background:var(--paper-light)!important;
@@ -39,7 +51,7 @@ body button.resource-cover.resource-cover-editorial.preview-catalog {
 /* Hover does not change the frame material; selection is conveyed by the owning picker. */
 body button.resource-cover.resource-cover-editorial.preview-catalog:hover { border-image-source:var(--frame-card)!important; }
 @media(max-width:760px) {
-  body button.resource-cover.resource-cover-editorial.preview-catalog { min-height:174px; }
+  body button.resource-cover.resource-cover-editorial.preview-catalog { min-height:160px; }
   .preview-catalog.resource-cover-editorial .resource-cover-title strong { font-size:15px; }
   .preview-catalog.resource-cover-editorial .resource-cover-title small { display:none; }
 }

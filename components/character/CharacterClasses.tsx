@@ -11,7 +11,7 @@ import { useResourceCatalog } from '../../hooks/useResourceCatalog';
 
 import { classLevel } from '../../src/character/classLevels';
 export { classLevel } from '../../src/character/classLevels';
-export function CharacterClasses({ character: c, updateCharacter: update, onSources, onView }: { character: CharacterData; updateCharacter: (v: Partial<CharacterData>) => void; onSources: () => void; onView: (item: ResourceSnapshot) => void }) {
+export function CharacterClasses({ character: c, updateCharacter: update, onSources, onView }: { character: CharacterData; updateCharacter: (v: Partial<CharacterData>) => boolean; onSources: () => void; onView: (item: ResourceSnapshot) => void }) {
     const catalog = useResourceCatalog();
     const [directoryOpen, setDirectoryOpen] = useState(false);
     const targets = useRef(new Map<string, HTMLElement>());

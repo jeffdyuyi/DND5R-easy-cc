@@ -4,7 +4,7 @@ import { LibraryOverlay } from './LibraryNavigation';
 import { IS_ANDROID_BUILD } from '../src/platform/build';
 import { readDocuments } from '../src/content/fiveetools/platformDocuments';
 import { createResourceBundle, readResourceBundle, ResourceBundle } from '../src/content/fiveetools/resourceBundle';
-import { downloadJson } from '../utils/files';
+import { downloadJson, exportMessage } from '../utils/files';
 import type { useExternalResources } from '../hooks/useExternalResources';
 export function LocalResourceBundles({ resources: r }: {
     resources: ReturnType<typeof useExternalResources>;
@@ -19,8 +19,8 @@ export function LocalResourceBundles({ resources: r }: {
             const documents = await readDocuments();
             if (!documents.length)
                 throw Error('尚无可导出的外部资料。');
-            downloadJson(await createResourceBundle(documents), 'easy-cc-sources-' + new Date().toISOString().slice(0, 10) + '.json');
-            setMessage(`已生成 ${documents.length} 个原文文件的资料包，请保存下载文件。`);
+            const result = await downloadJson(await createResourceBundle(documents), 'easy-cc-sources-' + new Date().toISOString().slice(0, 10) + '.json');
+            setMessage(exportMessage(result));
         }
         catch (error) {
             setMessage(String(error));

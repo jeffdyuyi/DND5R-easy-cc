@@ -6,7 +6,7 @@ import { CharacterResourcePicker } from './CharacterResourcePicker';
 const alignments: Alignment[] = ['', '守序善良', '中立善良', '混乱善良', '守序中立', '绝对中立', '混乱中立', '守序邪恶', '中立邪恶', '混乱邪恶'];
 export function CharacterOrigin({ character: c, updateCharacter: update, onSources }: {
     character: CharacterData;
-    updateCharacter: (updates: Partial<CharacterData>) => void;
+    updateCharacter: (updates: Partial<CharacterData>) => boolean;
     onSources: () => void;
 }) {
     const picker = (kind: string, heading?: string) => <CharacterResourcePicker character={c} updateCharacter={update} kinds={[kind]} heading={heading} onManageSources={onSources}/>;

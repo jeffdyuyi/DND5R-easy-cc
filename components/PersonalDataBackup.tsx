@@ -1,17 +1,17 @@
 import { useRef, useState } from 'react';
-import { downloadJson } from '../utils/files';
+import { downloadJson, exportMessage } from '../utils/files';
 const keys = ['easy_cc_favorites_v1', 'easy_cc_dice_formulas_v1', 'easy_cc_dice_history_v1'] as const;
 export function PersonalDataBackup() {
     const input = useRef<HTMLInputElement>(null);
     const [message, setMessage] = useState('');
-    const exportRecords = (raw = false) => {
+    const exportRecords = async (raw = false) => {
         try {
             const records = Object.fromEntries(keys.map(key => {
                 const value = localStorage.getItem(key);
                 return [key, raw ? value : value === null ? [] : JSON.parse(value)];
             }));
-            downloadJson({ format: raw ? 'easy-cc-personal-raw' : 'easy-cc-personal', version: 1, records }, raw ? 'easy-cc-personal-original.json' : 'easy-cc-personal.json');
-            setMessage(raw ? '已发起原始记录下载；此文件保留原始字符串，供损坏排查，不直接用于恢复。' : '已发起备份下载，请保留文件。');
+            const result = await downloadJson({ format: raw ? 'easy-cc-personal-raw' : 'easy-cc-personal', version: 1, records }, raw ? 'easy-cc-personal-original.json' : 'easy-cc-personal.json');
+            setMessage(exportMessage(result));
         }
         catch (error) { setMessage('导出未完成：' + String(error) + '。如JSON损坏，请使用“导出原始记录”。'); }
     };

@@ -184,3 +184,27 @@ test('package state retains failed update despite old copy, waits for directory'
     assert.equal(management.packageManagementState({state:'cached'},true,false),'saved');
     assert.deepEqual(management.packageTitle('spell/Author; Spell Pack.json'),{author:'Author',title:'Spell Pack'});
 });
+
+test('exports use native save results, preserve damaged bytes, and keep web downloads separate', async()=>{
+    const previous={capacitor:globalThis.Capacitor,bridge:globalThis.androidBridge,document:globalThis.document,storage:globalThis.localStorage};
+    let result='saved',received,clicked=false;
+    globalThis.androidBridge={};
+    globalThis.Capacitor={PluginHeaders:[{name:'DocumentExport',methods:[{name:'save',rtype:'promise'}]}],nativePromise:async(_plugin,_method,options)=>{received=options;if(result==='error')throw Error('disk');return {status:result};}};
+    try {
+        const exports=await load('utils/files.ts');
+        assert.equal(await exports.downloadJson({name:'中文'},'角色.json'),'saved');
+        assert.equal(received.filename,'角色.json');
+        assert.equal(JSON.parse(received.text).name,'中文');
+        result='cancelled';assert.equal(await exports.downloadText('raw','raw.json'),'cancelled');
+        result='error';await assert.rejects(exports.downloadText('raw','raw.json'),/disk/);
+        result='saved';globalThis.localStorage={getItem:()=>'{broken原文'};
+        await exports.exportStoredRecord('record','raw.json');assert.equal(received.text,'{broken原文');
+        globalThis.localStorage={getItem:()=>null};await assert.rejects(exports.exportStoredRecord('missing','raw.json'));
+        await assert.rejects(exports.downloadJson(undefined,'none.json'));
+        delete globalThis.androidBridge;
+        globalThis.document={createElement:()=>({click(){clicked=true;},remove(){}}),body:{appendChild(){}}};
+        assert.equal(await exports.downloadJson({safe:true},'web.json'),'downloaded');assert.equal(clicked,true);
+    } finally {
+        for(const [key,value] of Object.entries({Capacitor:previous.capacitor,androidBridge:previous.bridge,document:previous.document,localStorage:previous.storage})) {if(value===undefined)delete globalThis[key];else globalThis[key]=value;}
+    }
+});

@@ -41,7 +41,7 @@ export function ExternalResourceSources({ resources: r, applicationAction }: {
     const coreBusy = r.busy && r.operation === 'core';
     const actionLabels = { download: '下载主库', check: '检查更新', update: '下载更新', retry: '重新下载', rebuild: '整理本机目录', none: '已是最新' };
     const act = () => state.action === 'check' ? void checkUpdate() : state.action === 'rebuild' ? void r.rebuildCatalog() : void r.run('core');
-    const exportRecords = () => downloadJson({ errors: r.errors, diagnostics: r.diagnostics, packages: r.packageReads, sources: r.sourceSyncs }, 'easy-cc-resource-records.json');
+    const exportRecords = async () => { try { await downloadJson({ errors: r.errors, diagnostics: r.diagnostics, packages: r.packageReads, sources: r.sourceSyncs }, 'easy-cc-resource-records.json'); } catch(error) { window.alert('导出未完成：'+String(error)); } };
     const visibility = (repository: string) => <label className="resource-visibility"><input type="checkbox" checked={r.enabled.includes(repository)} onChange={() => r.toggle(repository)}/>在资料库显示</label>;
     return <section className="resource-management" aria-label="资料管理">
         <article className={'resource-manager-card tone-' + state.tone}>

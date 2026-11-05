@@ -113,8 +113,8 @@ interface CharacterContextType {
     createCharacter: () => string; // Returns new ID
     updateCharacter: (id: string, updates: Partial<CharacterData>) => boolean;
     deleteCharacter: (id: string) => void;
-    importCharacters: (json: any) => void;
-    exportCharacters: () => void;
+    importCharacters: (json: any) => Promise<void>;
+    exportCharacters: () => Promise<void>;
 }
 const CharacterContext = createContext<CharacterContextType | null>(null);
 export const CharacterProvider: React.FC<{
@@ -144,13 +144,15 @@ export const CharacterProvider: React.FC<{
         if (activeCharId === id)
             setActiveCharId(null);
     };
-    const importCharacters = (json: any) => {
+    const importCharacters = async (json: any) => {
         if (damaged) {
             const recovered = Array.isArray(json) ? json : [json];
             if (!recovered.length || !validateCharacterList(recovered)) { alert('恢复文件包含无效角色或重复身份，原记录保留。'); return; }
             if (!confirm('用此备份恢复角色？将先发起当前原始记录的下载，请保留备份文件。')) return;
             try {
-                exportStoredRecord(CHARACTERS_STORAGE_KEY, 'easy-cc-damaged-characters.json');
+                const before = localStorage.getItem(CHARACTERS_STORAGE_KEY);
+                if (await exportStoredRecord(CHARACTERS_STORAGE_KEY, 'easy-cc-damaged-characters.json') === 'cancelled') return;
+                if (localStorage.getItem(CHARACTERS_STORAGE_KEY) !== before) throw Error('保存备份期间记录发生变化，请刷新后重新核对。');
                 if (storage.restore(recovered)) alert('角色记录已恢复。');
             }
             catch (error) { alert('恢复未完成，原记录保留：' + String(error)); }
@@ -186,10 +188,10 @@ export const CharacterProvider: React.FC<{
             alert("无效的角色数据文件，或数据结构已损坏");
         }
     };
-    const exportCharacters = () => {
+    const exportCharacters = async () => {
         try {
-            if (storage.unreadable) exportStoredRecord(CHARACTERS_STORAGE_KEY, 'easy-cc-characters-original.json');
-            else downloadJson(storedCharacters, `dnd_characters_backup_${new Date().toISOString().slice(0, 10)}.json`);
+            if (storage.unreadable) await exportStoredRecord(CHARACTERS_STORAGE_KEY, 'easy-cc-characters-original.json');
+            else await downloadJson(storedCharacters, `dnd_characters_backup_${new Date().toISOString().slice(0, 10)}.json`);
         }
         catch (error) { alert('导出未完成：' + String(error)); }
     };

@@ -13,7 +13,7 @@ import { ResourcePreview } from '../ResourcePreview';
 import { ItemAttunementToggle } from './ItemAttunementToggle';
 
 const categories = [['weapons', '武器'], ['armors', '护甲'], ['tools', '工具'], ['gears', '冒险物品'], ['consumables', '消耗品'], ['magicItems', '其他魔法物品'], ['vehicles', '坐骑与载具'], ['treasure', '财宝']] as const;
-export function CharacterInventory({ character: c, updateCharacter: update, onSources, onView }: { character: CharacterData; updateCharacter: (v: Partial<CharacterData>) => void; onSources: () => void; onView: (item: ResourceSnapshot) => void }) {
+export function CharacterInventory({ character: c, updateCharacter: update, onSources, onView }: { character: CharacterData; updateCharacter: (v: Partial<CharacterData>) => boolean; onSources: () => void; onView: (item: ResourceSnapshot) => void }) {
     const [detailKey, setDetailKey] = useState<string | null>(null);
     const [picker, setPicker] = useState<string | null>(null), [message, setMessage] = useState('');
     const catalog = useResourceCatalog();
@@ -37,8 +37,8 @@ export function CharacterInventory({ character: c, updateCharacter: update, onSo
         const children: InventoryEntry[] = rows.filter(row => row.item).map(row => ({ id: crypto.randomUUID(), item: structuredClone(row.item!), quantity: row.quantity!, originKey: lot.originKey, originName: lot.originName, containedCopper: row.containedCopper }));
         const expandedCopper = rows.reduce((sum, row) => sum + (row.copper || 0), 0) + (lot.containedCopper || 0);
         const oldGrant = lot.originKey ? c.startingGrants?.[lot.originKey] : undefined;
-        update({ ...updates, ...(oldGrant && lot.originKey && expandedCopper ? { startingGrants: { ...c.startingGrants, [lot.originKey]: { ...oldGrant, copper: oldGrant.copper + expandedCopper } } } : {}), ...(expandedCopper ? { pocketCurrency: changeCopper(c, expandedCopper) } : {}), inventoryEntries: [...(updates.inventoryEntries || c.inventoryEntries || []), ...children] });
-        setMessage('已展开1份，包内物品沿用原领取来源。');
+        const saved = update({ ...updates, ...(oldGrant && lot.originKey && expandedCopper ? { startingGrants: { ...c.startingGrants, [lot.originKey]: { ...oldGrant, copper: oldGrant.copper + expandedCopper } } } : {}), ...(expandedCopper ? { pocketCurrency: changeCopper(c, expandedCopper) } : {}), inventoryEntries: [...(updates.inventoryEntries || c.inventoryEntries || []), ...children] });
+        if (saved) setMessage('已展开1份，包内物品沿用原领取来源。');
     };
     const isEquipped = (item: ResourceSnapshot, slot: string) => slot === 'extra'
         ? Object.entries(c.equippedResourceSlots || {}).some(([id, value]) => id.startsWith('extra-') && resourceKey(value) === resourceKey(item))
@@ -53,7 +53,7 @@ export function CharacterInventory({ character: c, updateCharacter: update, onSo
     return <div className="character-inventory"><p className="inventory-gesture-hint">长按卡面，滑向部位后松手装备</p>
         {categories.map(([category, title]) => {
             const visible = [...groups.entries()].filter(([, lots]) => sectionOf(lots[0].item) === category);
-            return <details className="folio-section inventory-type-section" key={category} open><summary><strong>{title}</strong><small>{visible.length} 项</small><button type="button" aria-label={'添加' + title} onClick={event => { event.preventDefault(); event.stopPropagation(); setPicker(category); }}>＋ 添加</button></summary>
+            return <details className="folio-section inventory-type-section" key={category} open={visible.length > 0 || category === 'treasure'}><summary><strong>{title}</strong><small>{visible.length} 项</small><button type="button" aria-label={'添加' + title} onClick={event => { event.preventDefault(); event.stopPropagation(); setPicker(category); }}>＋ 添加</button></summary>
         {category === 'treasure' && <><h3>钱币余额</h3><CharacterSupplies character={c} updateCharacter={update} section="currency" embeddedCurrency/><small>下方财宝按物品保存，添加货币条目不会自动增加余额。</small></>}
         <div className="inventory-grid">{visible.map(([key, lots]) => {
             const item = lots[0].item, count = lots.reduce((sum, lot) => sum + lot.quantity, 0);
@@ -67,12 +67,12 @@ export function CharacterInventory({ character: c, updateCharacter: update, onSo
                 </InventoryPanel>}
             </article>;
         })}</div>
-        {!visible.length && <p className="inventory-empty">尚无{title}</p>}</details>;
+        </details>;
         })}{message && <p role="status">{message}</p>}
         {wheelLots?.length ? <EquipmentWheel gesture={wheelGesture} onInvalid={setMessage} item={wheelLots[0].item} isEquipped={slot => isEquipped(wheelLots[0].item, slot)} onSelect={slot => equip(wheelLots[0].item, wheelLots, slot)} onClose={() => setWheelKey(null)}/> : null}
         {picker && <CharacterResourcePicker initialOpen hideSelected fixedCategory allowRepeat selectionTitle={categories.find(([id]) => id === picker)?.[1]} character={c} updateCharacter={update} kinds={EQUIPMENT_KINDS} filterCandidate={accepts} onDismiss={() => setPicker(null)} onManageSources={onSources} onChoose={(item, updates = {}) => {
             const key = resourceKey(item), old = (c.resourceCards || []).some(card => resourceKey(card) === key);
-            update({ ...updates, resourceCardSettings: { ...c.resourceCardSettings, [key]: { ...c.resourceCardSettings?.[key], quantity: (old ? c.resourceCardSettings?.[key]?.quantity ?? 1 : 0) + 1 } } });
+            return update({ ...updates, resourceCardSettings: { ...c.resourceCardSettings, [key]: { ...c.resourceCardSettings?.[key], quantity: (old ? c.resourceCardSettings?.[key]?.quantity ?? 1 : 0) + 1 } } });
         }}/>}
     </div>;
 }

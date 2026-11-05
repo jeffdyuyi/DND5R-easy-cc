@@ -6,7 +6,7 @@ import { useResourceCatalog } from '../../hooks/useResourceCatalog';
 import { characterAllows } from '../../src/content/resourceIdentity';
 import { CharacterResourcePicker } from './CharacterResourcePicker';
 const origins = ['种族给予', '专长给予', '背景给予', '职业固定准备', '其他'];
-export function CharacterSpells({ character: c, updateCharacter: update, onSources }: { character: CharacterData; updateCharacter: (v: Partial<CharacterData>) => void; onSources: () => void }) {
+export function CharacterSpells({ character: c, updateCharacter: update, onSources }: { character: CharacterData; updateCharacter: (v: Partial<CharacterData>) => boolean; onSources: () => void }) {
     const [filters, setFilters] = useState({ level: '全部', school: '全部', career: '全部' });
     const available = useResourceCatalog().filter(item => item.kind === 'spells' && characterAllows(c, item));
     const spells = (c.resourceCards || []).filter(item => item.kind === 'spells');

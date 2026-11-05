@@ -65,7 +65,7 @@ body .character-quick-view button.slot-pip { --pip-art:var(--slot-ready); flex:0
 body .character-quick-view button.slot-pip[aria-pressed=true] { --pip-art:var(--slot-spent); }
 body .character-quick-view button.slot-pip:active { transform:scale(.88); }
 .quick-slot-warning { grid-column:2/-1; font-size:11px!important; }
-body dialog.quick-record-dialog { width:min(440px,calc(100vw - 24px)); max-height:calc(100dvh - max(32px,calc(env(safe-area-inset-top,0px) + 12px)) - max(24px,calc(env(safe-area-inset-bottom,0px) + 12px))); padding:12px; margin:auto; overflow:auto; color:var(--ink); background:var(--paper); }
+body dialog.quick-record-dialog { width:min(440px,calc(100vw - 24px)); max-height:calc(100dvh - max(32px,calc(env(safe-area-inset-top,0px) + 12px)) - max(24px,calc(env(safe-area-inset-bottom,0px) + 12px))); padding:0; margin:auto; overflow:hidden; color:var(--ink); background:var(--paper); }
 .quick-record-dialog>header { display:flex; align-items:center; justify-content:space-between; gap:8px; }
 .quick-record-dialog h2 { font-size:18px; margin:0; }
 .quick-record-dialog p,.quick-record-dialog small { font-size:12px; overflow-wrap:anywhere; }
