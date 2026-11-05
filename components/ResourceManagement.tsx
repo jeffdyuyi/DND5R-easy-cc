@@ -1,7 +1,6 @@
 import { characterSourceKey } from '../src/content/resourceIdentity';
 import { LibraryNavigation } from './LibraryNavigation';
 import React, { useEffect, useMemo, useState } from 'react';
-import { PixelGlyph } from './common/PixelGlyph';
 import { LibraryManager } from './LibraryManager';
 import { useLibrary } from '../contexts/LibraryContext';
 import { useResourceCatalog } from '../hooks/useResourceCatalog';
@@ -47,7 +46,6 @@ export const ResourceManagement: React.FC = () => {
         }
         catch { }
     };
-    const toggleSource = (source: string) => setSelectedSources(previous => previous.includes(source) ? previous.filter(s => s !== source) : [...previous, source]);
     const { filteredSpells, FilterUI: SpellFilters } = useSpellFilter(spells.items);
     const { filteredFeats, FilterUI: FeatFilters } = useFeatFilter(feats.items);
     const { filteredItems: filteredTools, FilterUI: ToolFilters } = useItemFilter(tools.items, ['工匠工具', '其他工具']);
@@ -76,16 +74,9 @@ export const ResourceManagement: React.FC = () => {
         psionics: { items: filteredPsionicOrders, tools: <>{PsionicFilters}{PsionicOrderFilters}</> },
     };
     const handler = library[currentType.kind], list = filtered[currentType.kind];
-    const updateResource = (item: any) => {
-        const exists = [...handler.items, ...handler.userItems].some(existing => existing.id === item.id);
-        if (exists)
-            handler.onUpdate(item);
-        else
-            handler.onAdd(item);
-    };
     return <section className="resource-catalog w-full h-full min-w-0 overflow-y-auto bg-stone-100 text-stone-900" aria-label="资源总库">
   <>
-   <LibraryManager toolbar={<LibraryNavigation categories={RESOURCE_TYPES.map(type => ({ id: type.id, label: type.label, count: catalog[type.kind].allItems.length }))} current={currentType.id} onCategory={chooseContent} sources={sourceNames.map(source => ({ id: source, label: sourceLabel(currentItems.find(item => characterSourceKey(item) === source) || { source }), count: currentItems.filter(item => characterSourceKey(item) === source).length, group: source.startsWith('SRD') ? '内置SRD' : source === '用户自定义' ? '自订资料' : '出版物与资料包' }))} selectedSources={selectedSources} onSources={setSelectedSources} filters={list.tools}/>} key={currentType.kind} kind={currentType.kind} title={currentType.label + '库'} itemLabel={currentType.label} items={list.items} onUpdate={updateResource} onImport={handler.onImport}/>
+   <LibraryManager<any> toolbar={<LibraryNavigation categories={RESOURCE_TYPES.map(type => ({ id: type.id, label: type.label, count: catalog[type.kind].allItems.length }))} current={currentType.id} onCategory={chooseContent} sources={sourceNames.map(source => ({ id: source, label: sourceLabel(currentItems.find(item => characterSourceKey(item) === source) || { source }), count: currentItems.filter(item => characterSourceKey(item) === source).length, group: source.startsWith('SRD') ? '内置SRD' : source === '用户自定义' ? '自订资料' : '出版物与资料包' }))} selectedSources={selectedSources} onSources={setSelectedSources} filters={list.tools}/>} key={currentType.kind} kind={currentType.kind} title={currentType.label + '库'} itemLabel={currentType.label} items={list.items} onImport={handler.onImport}/>
   </>
  </section>;
 };

@@ -14,11 +14,10 @@ interface Props<T extends BaseLibraryItem> {
     itemLabel: string;
     kind: string;
     items: T[];
-    onUpdate: (item: T) => void;
     onImport?: (items: T[]) => void;
     extraTools?: React.ReactNode;
 }
-export function LibraryManager<T extends BaseLibraryItem>({ title, itemLabel, kind, items, onUpdate, onImport, extraTools, toolbar }: Props<T>) {
+export function LibraryManager<T extends BaseLibraryItem>({ title, itemLabel, kind, items, onImport, extraTools, toolbar }: Props<T>) {
     const [actionsOpen, setActionsOpen] = useState(false);
     const [viewItem, setViewItem] = useState<T | null>(null);
     const currentViewItem = viewItem ? items.find(item => resourceKey(item) === resourceKey(viewItem)) || viewItem : null;
@@ -54,6 +53,6 @@ export function LibraryManager<T extends BaseLibraryItem>({ title, itemLabel, ki
                  </label>)}</div></LibraryOverlay>}
       {extraTools && <div className="library-facets-area">{extraTools}</div>}
 
-      <CardLibrary toolbar={toolbar} toolbarActions={<button type="button" className="catalog-transfer-button" aria-haspopup="dialog" aria-expanded={actionsOpen} onClick={() => setActionsOpen(true)}><FileDown size={18}/><span>导入导出</span><span aria-hidden="true">⌄</span></button>} title={title} items={items} itemTypeLabel={itemLabel} onSelect={handleSelect} itemKind={kind} allowEdit={false}/>
+      <CardLibrary toolbar={toolbar} toolbarActions={<button type="button" className="catalog-transfer-button" aria-haspopup="dialog" aria-expanded={actionsOpen} onClick={() => setActionsOpen(true)}><FileDown size={18}/><span>导入导出</span><span aria-hidden="true">⌄</span></button>} title={title} items={items} itemTypeLabel={itemLabel} onSelect={handleSelect} itemKind={kind}/>
     </div>);
 }

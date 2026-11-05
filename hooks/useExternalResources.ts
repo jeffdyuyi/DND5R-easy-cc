@@ -21,10 +21,12 @@ interface SourceSyncRecord {
     updated?: number;
     unchanged?: number;
     retired?: number;
+    catalogReady?: boolean;
     error?: string;
 }
 export function useExternalResources() {
     const [documents, setDocuments] = useState<Omit<SourceDocument, 'body'>[]>([]), [status, setStatus] = useState(''), [busy, setBusy] = useState(false), [errors, setErrors] = useState<string[]>([]), [packages, setPackages] = useState<string[]>([]), [ready, setReady] = useState(false);
+    const [activity, setActivity] = useState<{ stage: 'idle' | 'reading' | 'saving' | 'parsing' | 'complete' | 'failed' | 'cancelled'; detail: string; done?: number; total?: number }>({ stage: 'idle', detail: '' });
     const controller = useRef<AbortController | null>(null), mounted = useRef(true), running = useRef(false), snapshotRead = useRef(false);
     const [packageReads, setPackageReads] = useState<Record<string, PackageReadRecord>>(() => {
         try {
@@ -83,6 +85,7 @@ export function useExternalResources() {
             if (!active)
                 return;
             applySnapshot(snapshot);
+            setSourceSyncs(old => Object.fromEntries(Object.entries(old).map(([key, record]) => [key, record.state === 'success' ? { ...record, catalogReady: true } : record])));
             setStatus(snapshot.cacheWarning || (snapshot.fromCache ? '已读取资料目录，无需重新解析。' : '资料整理完成。'));
             try {
                 const result = JSON.parse(localStorage.getItem('easy_cc_external_fetch_result_v1') || 'null');
@@ -117,7 +120,11 @@ export function useExternalResources() {
         controller.current = abort;
         setBusy(true);
         setErrors([]);
+        setActivity({ stage: 'reading', detail: '正在检查资料来源…' });
+        const reportDownload = (detail: string) => { const match = detail.match(/读取 (\d+) \/ (\d+)/); setStatus(detail); setActivity({ stage: detail.startsWith('保存') ? 'saving' : 'reading', detail, ...(match ? { done: Number(match[1]), total: Number(match[2]) } : {}) }); };
         const repository = kind === 'core' ? '5etools-cn' : 'homebrew', scope = kind === 'core' ? '中文主库' : '所选 ' + paths.length + ' 包';
+        let syncRecorded = false, syncWarning = '';
+        let syncErrors: string[] = [];
         if (kind !== 'discover')
             setSourceSyncs(old => ({ ...old, [repository]: { state: 'syncing', scope, at: new Date().toISOString() } }));
         if (kind === 'brew')
@@ -129,16 +136,21 @@ export function useExternalResources() {
                     return;
                 setPackages(result.paths);
                 setStatus('发现 ' + result.paths.length + ' 个含玩家资源的资料包，请选择加载。');
+                setActivity({ stage: 'complete', detail: '可选资料包清单已刷新。' });
             }
             else {
-                const result = kind === 'core' ? await loadCore(abort.signal, setStatus) : await loadHomebrew(paths, abort.signal, setStatus, (path, state, error) => {
+                const result = kind === 'core' ? await loadCore(abort.signal, reportDownload) : await loadHomebrew(paths, abort.signal, reportDownload, (path, state, error) => {
                     if (mounted.current)
                         setPackageReads(old => ({ ...old, [path]: { state, at: new Date().toISOString(), error } }));
                 });
                 if (!mounted.current)
                     return;
                 setErrors(result.errors);
-                setSourceSyncs(old => ({ ...old, [repository]: { state: result.errors.length ? 'partial' : 'success', scope, at: new Date().toISOString(), revision: result.revision, ...result.counts, error: result.errors.length ? result.errors.length + ' 个文件未同步成功' : undefined } }));
+                syncErrors = result.errors;
+                syncWarning = result.errors.length ? (kind === 'core' ? '本轮主库未写入，原有资料保留。' : '部分Homebrew文件未同步成功，已保存的原文保留。') : '';
+                const syncState: SourceSyncRecord['state'] = result.errors.length ? (kind === 'core' ? 'failed' : 'partial') : 'success';
+                setSourceSyncs(old => ({ ...old, [repository]: { state: syncState, catalogReady: false, scope, at: new Date().toISOString(), revision: result.revision, ...result.counts, error: result.errors.length ? result.errors.length + ' 个文件未同步成功' + (kind === 'core' ? '，本轮主库未写入' : '') : undefined } }));
+                syncRecorded = true;
                 if (result.documents.length)
                     setEnabled(previous => {
                         const next = [...new Set([...previous, repository])];
@@ -156,22 +168,26 @@ export function useExternalResources() {
             }
             if (kind !== 'discover') {
                 setStatus('正在更新资料目录，页面仍可使用…');
+                setActivity({ stage: 'parsing', detail: '原文处理结束，正在生成可查阅目录…' });
                 const snapshot = await loadCatalogSnapshot(true, message => {
                     if (mounted.current)
                         setStatus(message);
                 });
                 if (mounted.current) {
                     applySnapshot(snapshot);
-                    setStatus(snapshot.cacheWarning || (snapshot.fromCache ? '已读取资料目录，无需重新解析。' : '资料目录已更新。'));
+                    setSourceSyncs(old => ({ ...old, [repository]: { ...old[repository], catalogReady: true } }));
+                    setActivity({ stage: syncErrors.length ? 'failed' : 'complete', detail: syncErrors.length ? syncWarning : '同步完成，资料已保存到本机，可离线查阅。' });
+                    setStatus([syncWarning, snapshot.cacheWarning || (snapshot.fromCache ? '已读取资料目录，无需重新解析。' : '资料目录已更新。')].filter(Boolean).join(' '));
                 }
             }
         }
         catch (e) {
             if (mounted.current) {
-                if (kind !== 'discover')
+                if (kind !== 'discover' && !syncRecorded)
                     setSourceSyncs(old => ({ ...old, [repository]: { state: abort.signal.aborted ? 'cancelled' : 'failed', scope, at: new Date().toISOString(), error: abort.signal.aborted ? undefined : String(e) } }));
-                const errors = [String(e)];
-                setStatus(abort.signal.aborted ? '已取消，保留此前已缓存资料。' : '加载未完成，可重试。');
+                setActivity({ stage: abort.signal.aborted ? 'cancelled' : 'failed', detail: abort.signal.aborted ? '本次操作已取消，原有资料保留。' : syncRecorded ? '原文处理已结束，但目录尚未就绪。请重试。' : String(e) });
+                const errors = [...syncErrors, String(e)];
+                setStatus(abort.signal.aborted ? '已取消，保留此前已缓存资料。' : syncRecorded ? '原文同步结果已记录，但目录刷新未完成；原文保留，请重试或刷新页面。' : '加载未完成，可重试。');
                 if (!abort.signal.aborted) {
                     setErrors(errors);
                     try {
@@ -196,19 +212,23 @@ export function useExternalResources() {
         running.current = true;
         setBusy(true);
         setErrors([]);
+        setActivity({ stage: 'saving', detail: '正在保存导入资料…' });
         let stored = false;
         try {
-            const { saveDocuments } = await import('../src/content/fiveetools/documentStore');
+            const { saveDocuments } = await import('../src/content/fiveetools/platformDocuments');
             const counts = await saveDocuments(docs);
             stored = true;
             setStatus('原文已保存，正在重建本地目录…');
+            setActivity({ stage: 'parsing', detail: '正在生成导入资料目录…' });
             const snapshot = await loadCatalogSnapshot(true, setStatus);
             if (mounted.current) {
                 applySnapshot(snapshot);
+                setActivity({ stage: 'complete', detail: '资料导入完成，可离线查阅。' });
                 setStatus(`本地导入完成：新增 ${counts.added}，更新 ${counts.updated}，未变化 ${counts.unchanged}。`);
             }
         }
         catch (error) {
+            setActivity({ stage: 'failed', detail: stored ? '原文已保存，目录刷新未完成。' : String(error) });
             throw Error((stored ? '原文已保存，但目录刷新未完成，请刷新重试：' : '导入未完成：') + String(error));
         }
         finally {
@@ -238,5 +258,5 @@ export function useExternalResources() {
         return { repository, files: docs.length, cards: entries.length, sources: new Set(entries.map(entry => entry.source)).size, revisions: [...new Set(docs.map(doc => doc.revision))], lastFetched: docs.map(doc => doc.fetchedAt).sort().slice(-1)[0], diagnostics: catalog.diagnostics.filter(d => d.identity.startsWith(repository + '|') || !!d.path && paths.has(d.path)).length };
     }), [documents, catalog.entries, catalog.diagnostics]);
     const visibleEntries = useMemo(() => catalog.entries.filter(e => enabled.includes(e.sourceProvider)), [catalog.entries, enabled]);
-    return { installLocalDocuments, ...catalog, entries: visibleEntries, total: catalog.entries.length, documents, packageReads, packageStats, sourceSyncs, sourceStats, enabled, toggle, run, cancel: () => controller.current?.abort(), busy, status, errors, packages, ready };
+    return { activity, installLocalDocuments, ...catalog, entries: visibleEntries, total: catalog.entries.length, documents, packageReads, packageStats, sourceSyncs, sourceStats, enabled, toggle, run, cancel: () => controller.current?.abort(), busy, status, errors, packages, ready };
 }

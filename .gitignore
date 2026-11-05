@@ -9,6 +9,7 @@ lerna-debug.log*
 
 node_modules
 dist
+dist-android
 dist-ssr
 *.local
 
@@ -47,5 +48,12 @@ dist-ssr
 *.bak
 /build_log.txt
 
+# Private Android signing material
+*.jks
+*.keystore
+
 # Local translated SRD payloads await redistribution review
 /data/builtin/
+
+# Local APK resource snapshots, separate from public web assets
+/local-resources/

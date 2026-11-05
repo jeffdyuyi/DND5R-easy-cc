@@ -1,0 +1,25 @@
+import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { resolve } from 'node:path';
+import { createHash } from 'node:crypto';
+const root = process.argv[2];
+if (!root) throw Error('Usage: node scripts/prepare-android-library.mjs <local-5etools-cn-root>');
+const read = async path => JSON.parse(await readFile(resolve(root, path), 'utf8'));
+const indices = await Promise.all(['data/class/index.json','data/class/fluff-index.json','data/spells/index.json'].map(async path => ({ path, body: await read(path) })));
+const indexedPaths = indices.flatMap(doc => Object.values(doc.body).map(file => doc.path.slice(0,doc.path.lastIndexOf('/')+1)+file));
+const source = await readFile('src/content/fiveetools/sourceClient.ts','utf8');
+const match = source.match(/const paths = (\[\.\.\.indexedPaths[^;]+);/);
+if (!match) throw Error('主库清单结构已改变，请同步制作脚本。');
+// Evaluate only the checked-in manifest expression, never content from external JSON.
+const paths = Function('indexedPaths', 'return '+match[1])(indexedPaths);
+const revision = 'bundled-local-snapshot';
+const documents = await Promise.all([...new Set([...paths,...indices.map(doc=>doc.path)])].map(async path=>({repository:'5etools-cn',revision,path,url:'https://github.com/tjliqy/5etools-cn/blob/cn2.0/'+path,fetchedAt:new Date().toISOString(),body:await read(path)})));
+const serialized = JSON.stringify(documents);
+const digest = createHash('sha256').update(serialized).digest('hex');
+const requested = ['PHB','XPHB','DMG','XDMG','TCE','XGE','SCAG','FRAiF','FRHoF','ABH'];
+const books = documents.find(doc => doc.path === 'data/books.json')?.body.book || [];
+const includedBooks = requested.map(code => ({ code, name: books.find(book => book.id === code)?.name || code }));
+const manifest = { books: includedBooks, format:'easy-cc-preinstalled-library',version:1,revision,sha256:digest,files:documents.length,bytes:Buffer.byteLength(serialized),notice:'5etools中文原文快照，许可按来源记录；用于玩家资源及其解析依赖，不是完整电子书。' };
+await mkdir('local-resources',{recursive:true});
+await writeFile('local-resources/core-documents.json',serialized);
+await writeFile('local-resources/core-manifest.json',JSON.stringify(manifest,null,2));
+console.log(JSON.stringify(manifest));

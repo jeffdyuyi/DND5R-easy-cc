@@ -44,14 +44,12 @@ export function changeCopper(c: CharacterData, amount: number) {
 }
 export function clearStartingGrants(c: CharacterData, keys: string[]): Partial<CharacterData> {
     const selected = new Set(keys), grants = { ...c.startingGrants };
-
-
+    const entries = (c.inventoryEntries || []).filter(entry => !entry.originKey || !selected.has(entry.originKey));
     keys.forEach(key => delete grants[key]);
     return {
         startingGrants: grants,
-        inventoryEntries: (c.inventoryEntries || []).filter(entry => !entry.originKey || !selected.has(entry.originKey)),
-
-        ...pruneItemState(c, (c.inventoryEntries || []).filter(entry => !entry.originKey || !selected.has(entry.originKey))),
+        inventoryEntries: entries,
+        ...pruneItemState(c, entries),
     };
 }
 export function grantRemovalMessage(c: CharacterData, keys: string[]) {
@@ -62,6 +60,7 @@ export function grantRemovalMessage(c: CharacterData, keys: string[]) {
 /** Remove this inventory identity, leaving grant receipts intact to prevent duplicate claims. */
 export function deleteInventoryItem(c: CharacterData, item: ResourceSnapshot): Partial<CharacterData> {
     const key = resourceKey(item);
+    const instanceIds = new Set(itemInstances(c, item).map(instance => instance.inventoryInstanceId));
     const settings = { ...c.resourceCardSettings }; delete settings[key];
     const consumables = { ...c.manualConsumables }; delete consumables[key];
     return {
@@ -71,7 +70,7 @@ export function deleteInventoryItem(c: CharacterData, item: ResourceSnapshot): P
         attunedResourceSlots: Object.fromEntries(Object.entries(c.attunedResourceSlots || {}).filter(([, worn]) => !worn || resourceKey(worn) !== key)),
         resourceAttunement: { ...c.resourceAttunement, [key]: false },
         resourceCardSettings: settings, manualConsumables: consumables,
-        itemAttunement: Object.fromEntries(Object.entries(c.itemAttunement || {}).filter(([id]) => !itemInstances(c, item).some(i => i.inventoryInstanceId === id))),
+        itemAttunement: Object.fromEntries(Object.entries(c.itemAttunement || {}).filter(([id]) => !instanceIds.has(id))),
     };
 }
 
@@ -82,16 +81,17 @@ export function itemInstances(c: CharacterData, item?: ResourceSnapshot) {
             ...lot.item, inventoryEntryId: lot.id, inventoryInstanceId: lot.id + ':' + index,
         })));
 }
-export function instanceAttuned(c: CharacterData, item: ResourceSnapshot) {
+export function instanceAttuned(c: CharacterData, item: ResourceSnapshot): boolean {
     if (item.inventoryInstanceId && c.itemAttunement?.[item.inventoryInstanceId] !== undefined) return c.itemAttunement[item.inventoryInstanceId];
-    const first = itemInstances(c, item)[0];
     const legacy = c.resourceAttunement?.[resourceKey(item)] ?? Object.values(c.attunedResourceSlots || {}).some(old => old && resourceKey(old) === resourceKey(item));
     if (!item.inventoryInstanceId) return itemInstances(c, item).some(instance => instanceAttuned(c, instance));
-    return !!legacy && first?.inventoryInstanceId === item.inventoryInstanceId;
+    if (!legacy) return false;
+    const first = inventoryLots(c).find(lot => resourceKey(lot.item) === resourceKey(item) && lot.quantity >= 1);
+    return !!first && first.id + ':0' === item.inventoryInstanceId;
 }
-export function pruneItemState(c: CharacterData, entries = c.inventoryEntries || [], cards = c.resourceCards || []) {
+export function pruneItemState(c: CharacterData, entries = c.inventoryEntries || [], cards = c.resourceCards || [], settings = c.resourceCardSettings) {
     const priorKeys = new Set(inventoryLots(c).map(lot => resourceKey(lot.item)));
-    const available = itemInstances({ ...c, inventoryEntries: entries, resourceCards: cards });
+    const available = itemInstances({ ...c, inventoryEntries: entries, resourceCards: cards, resourceCardSettings: settings });
     const ids = new Set(available.map(item => item.inventoryInstanceId));
     const used = new Set<string>();
     const equippedResourceSlots: Record<string, ResourceSnapshot> = {};
@@ -106,17 +106,18 @@ export function pruneItemState(c: CharacterData, entries = c.inventoryEntries ||
     return { equippedResourceSlots, resourceAttunement, itemAttunement: Object.fromEntries(Object.entries(itemAttunement).filter(([id]) => ids.has(id))) };
 }
 export function setInventoryQuantity(c: CharacterData, lot: InventoryEntry, quantity: number): Partial<CharacterData> {
+    if (!Number.isFinite(quantity)) return {};
     const value = Math.max(0, Math.min(10000, Math.trunc(quantity)));
     const changes = lot.id.startsWith('manual:') ? { resourceCardSettings: { ...c.resourceCardSettings, [resourceKey(lot.item)]: { ...c.resourceCardSettings?.[resourceKey(lot.item)], quantity: value } } } : { inventoryEntries: (c.inventoryEntries || []).map(entry => entry.id === lot.id ? { ...entry, quantity: value } : entry) };
     const next = { ...c, ...changes };
-    return { ...changes, ...pruneItemState(next) };
+    return { ...changes, ...pruneItemState(c, next.inventoryEntries, next.resourceCards, next.resourceCardSettings) };
 }
 export function equipInventoryItem(c: CharacterData, item: ResourceSnapshot, position: string): Partial<CharacterData> | null {
     if (!canOccupySlot(item, position)) return null;
     const next = { ...pruneItemState(c).equippedResourceSlots };
     const slot = position === 'ring' ? (!next.ring ? 'ring' : 'ring-' + crypto.randomUUID()) : position;
     const instances = itemInstances(c, item);
-    const used = new Set(Object.values(pruneItemState(c).equippedResourceSlots).map(worn => worn.inventoryInstanceId));
+    const used = new Set(Object.values(next).map(worn => worn.inventoryInstanceId));
     const instance = instances.find(i => i.inventoryInstanceId === item.inventoryInstanceId) || instances.find(i => i.inventoryEntryId === item.inventoryEntryId && !used.has(i.inventoryInstanceId)) || instances.find(i => !used.has(i.inventoryInstanceId)) || instances[0];
     if (!instance) return null;
     for (const [id, worn] of Object.entries(next)) if (worn.inventoryInstanceId === instance.inventoryInstanceId || !worn.inventoryInstanceId && worn.inventoryEntryId === instance.inventoryEntryId && instances.length === 1) delete next[id];

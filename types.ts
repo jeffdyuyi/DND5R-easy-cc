@@ -20,7 +20,7 @@ export type ContentSource = '官方规则' | '第三方/原创'
 // Free rules
  | 'Free Basic Rules (2024)' | string; // Allow any other source as fallback
 export interface BaseLibraryItem {
-    contentOrigin?: 'builtin-srd' | 'fiveetools' | 'custom' | 'external-5etools' | 'user-resource';
+    contentOrigin?: string; // Preserve origin values from external and legacy records.
     englishName?: string;
     kind?: string;
     version?: string;
@@ -36,6 +36,7 @@ export interface BaseLibraryItem {
     name: string;
     description?: string; // 简短描述，用于卡牌封面（可选）
     fullDescription?: string; // 详细描述
+    fluffDescription?: string;
     source: ContentSource;
     tags?: string[]; // 例如：近战、施法者、小型体型
 }
@@ -530,7 +531,7 @@ export interface CharacterData {
     // Value: 用户选择的内容数组 (e.g., ["察觉"])
     selections: Record<string, string[]>;
     // === Wizard State (编辑态) ===
-    wizard: {
+    wizard?: {
         currentStep: number;
         completedSteps: number[];
         pendingChoiceIds: string[];

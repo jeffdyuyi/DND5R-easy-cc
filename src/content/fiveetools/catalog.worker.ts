@@ -1,6 +1,8 @@
-import { ParsedCatalog, SourceDocument, RESOURCE_PROPS } from './model';
+import { buildCatalogSnapshot } from './catalogPipeline';
 import { parseDocuments } from './parser';
-import { readDocuments, readCatalogCache, writeCatalogCache, readHomebrewPackagePaths } from './source';
+import type { SourceDocument } from './model';
+import * as store from './documentStore';
+import pipelineSource from './catalogPipeline.ts?raw';
 import parserSource from './parser.ts?raw';
 import entriesSource from './entries.ts?raw';
 import expandSource from './expand.ts?raw';
@@ -11,34 +13,24 @@ import itemMetadataSource from './itemMetadata.ts?raw';
 import bookRulesSource from './bookRules.ts?raw';
 // No raw rule data is deleted: only the UI projection avoids duplicating whole raw objects.
 const PROJECTION_VERSION = 'lean-catalog-1';
-async function fingerprint() { const bytes = new TextEncoder().encode([PROJECTION_VERSION, parserSource, entriesSource, expandSource, compatibilitySource, modelSource, psionicSource, itemMetadataSource, bookRulesSource].join('\n')); const digest = await crypto.subtle.digest('SHA-256', bytes); return Array.from(new Uint8Array(digest), b => b.toString(16).padStart(2, '0')).join(''); }
+async function fingerprint() { const bytes = new TextEncoder().encode([PROJECTION_VERSION, pipelineSource, parserSource, entriesSource, expandSource, compatibilitySource, modelSource, psionicSource, itemMetadataSource, bookRulesSource].join('\n')); const digest = await crypto.subtle.digest('SHA-256', bytes); return Array.from(new Uint8Array(digest), b => b.toString(16).padStart(2, '0')).join(''); }
 const version = fingerprint();
-function project(catalog: ParsedCatalog, documents: SourceDocument[]) {
-    const entries = catalog.entries.map(record => { const view = Object.fromEntries(Object.entries(record).filter(([key]) => key !== 'raw' && key !== 'resolvedRaw')); return { ...view, rawDocumentReference: { repository: record.sourceProvider, path: record.provenance?.path, revision: record.provenance?.revision, identity: record.sourceIdentity } }; });
-    const props = documents.find(doc => doc.path === '_generated/index-props.json');
-    return { catalog: { ...catalog, entries }, documents: documents.map(({ body, ...document }) => document), packages: props ? [...new Set(RESOURCE_PROPS.flatMap(prop => Object.keys(props.body[prop] || {})))].sort() : [] };
-}
 self.onmessage = async (event: MessageEvent) => {
     const id = event.data.id;
     try {
-        const parserVersion = await version;
-        const cache = await readCatalogCache(parserVersion);
-        if (cache.snapshot) {
-            const packages = await readHomebrewPackagePaths();
-            self.postMessage({ id, ok: true, snapshot: { ...cache.snapshot, packages, fromCache: true } });
+        if (event.data.validate) {
+            parseDocuments(event.data.validate as SourceDocument[]);
+            self.postMessage({ id, ok: true });
             return;
         }
-        self.postMessage({ id, phase: '正在整理外部资料，页面仍可使用…' });
-        const documents = await readDocuments();
-        const snapshot = project(parseDocuments(documents), documents);
-        let cacheWarning = '';
-        try {
-            await writeCatalogCache(parserVersion, cache.generation, snapshot);
-        }
-        catch (error) {
-            cacheWarning = '解析结果缓存未保存，下次打开仍需整理：' + String(error);
-        }
-        self.postMessage({ id, ok: true, snapshot: { ...snapshot, fromCache: false, cacheWarning } });
+        const documents = event.data.documents as { generation: string; documents: SourceDocument[] } | undefined;
+        const input = documents ? {
+            readCatalogCache: async () => ({ generation: documents.generation, snapshot: null }),
+            readCatalogDocuments: async () => ({ generation: documents.generation, documents: documents.documents.filter(doc => doc.active !== false) }),
+            writeCatalogCache: async () => true,
+        } : store;
+        const snapshot = await buildCatalogSnapshot(input, await version, phase => self.postMessage({ id, phase }));
+        self.postMessage({ id, ok: true, snapshot });
     }
     catch (error) {
         self.postMessage({ id, ok: false, error: String(error) });

@@ -1,4 +1,5 @@
 import { PwaSettings } from './PwaSettings';
+import { IS_ANDROID_BUILD } from '../src/platform/build';
 import { PersonalDataBackup } from './PersonalDataBackup';
 import { CharacterBackup } from './character/CharacterBackup';
 import { ThemeSettings } from './ThemeSettings';
@@ -40,7 +41,7 @@ export function InformationWorkspace() {
                 aria-controls={'information-' + item.id} onClick={() => setSection(item.id)}>{item.label}</button>)}
         </nav><ThemeSettings/></div>
         <section id="information-sources" className="information-panel" hidden={section !== 'sources'} aria-label="资料同步">
-            <PwaSettings/><ExternalResourceSources resources={external} />
+            {!IS_ANDROID_BUILD && <PwaSettings/>}<ExternalResourceSources resources={external} />
         </section>
         <section id="information-backup" className="information-panel" hidden={section !== 'backup'} aria-label="本地备份">
             <CharacterBackup/><PersonalDataBackup/><LocalResourceBundles resources={external} />

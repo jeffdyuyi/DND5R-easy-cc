@@ -1,4 +1,9 @@
 import type { CharacterData } from '../../types';
+export const CHARACTERS_STORAGE_KEY = 'dnd_characters_v1';
+export function validateCharacterList(value: unknown): value is CharacterData[] {
+    if (!Array.isArray(value) || !value.every(validateCharacterData)) return false;
+    return new Set(value.map(character => character.id)).size === value.length;
+}
 /** Recognize the existing save format without dropping unknown fields. */
 export function validateCharacterData(value: unknown): value is CharacterData {
     if (!value || typeof value !== 'object' || Array.isArray(value))
@@ -9,7 +14,11 @@ export function validateCharacterData(value: unknown): value is CharacterData {
     for (const field of ['resourceCards', 'inventoryEntries', 'extraEquipmentSlots']) if (data[field] !== undefined && !Array.isArray(data[field])) return false;
     if (Array.isArray(data.resourceCards) && !data.resourceCards.every(card)) return false;
     if (Array.isArray(data.inventoryEntries) && !data.inventoryEntries.every((v: any) => object(v) && typeof v.id === 'string' && card(v.item) && Number.isSafeInteger(v.quantity) && v.quantity >= 0 && v.quantity <= 10000)) return false;
-    for (const field of ['equippedResourceSlots', 'resourceCardSettings', 'resourceClassLevels', 'startingGrants', 'pocketCurrency', 'itemAttunement', 'resourceAttunement']) if (data[field] !== undefined && !object(data[field])) return false;
+    if (Array.isArray(data.inventoryEntries) && new Set(data.inventoryEntries.map((v: any) => v.id)).size !== data.inventoryEntries.length) return false;
+    if (Array.isArray(data.extraEquipmentSlots) && !data.extraEquipmentSlots.every((v: any) => object(v) && typeof v.id === 'string' && typeof v.label === 'string')) return false;
+    if (data.allowedResourceSources !== undefined && (!Array.isArray(data.allowedResourceSources) || !data.allowedResourceSources.every(v => typeof v === 'string'))) return false;
+    for (const field of ['equippedResourceSlots', 'resourceCardSettings', 'resourceClassLevels', 'startingGrants', 'pocketCurrency', 'itemAttunement', 'resourceAttunement', 'manualConsumables']) if (data[field] !== undefined && !object(data[field])) return false;
+    for (const field of ['itemAttunement', 'resourceAttunement', 'manualConsumables']) if (object(data[field]) && !Object.values(data[field] as object).every(value => typeof value === 'boolean')) return false;
     if (object(data.equippedResourceSlots) && !Object.values(data.equippedResourceSlots as object).every(card)) return false;
     for (const field of ['resourceClassLevels', 'pocketCurrency']) if (object(data[field]) && !Object.values(data[field] as object).every(value => typeof value === 'number' && Number.isFinite(value) && value >= 0)) return false;
     if (object(data.resourceCardSettings) && !Object.values(data.resourceCardSettings as object).every((settings: any) => object(settings) && ['quantity', 'totalUses', 'usedUses'].every(key => settings[key] === undefined || typeof settings[key] === 'number' && Number.isFinite(settings[key]) && settings[key] >= 0))) return false;

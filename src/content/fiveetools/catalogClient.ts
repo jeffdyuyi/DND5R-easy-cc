@@ -1,11 +1,8 @@
-import { ParsedCatalog, SourceDocument } from './model';
-export interface CatalogSnapshot {
-    catalog: ParsedCatalog;
-    documents: Omit<SourceDocument, 'body'>[];
-    packages: string[];
-    fromCache: boolean;
-    cacheWarning?: string;
-}
+import type { CatalogSnapshot } from './catalogPipeline';
+import { IS_ANDROID_BUILD } from '../../platform/build';
+import { ensurePreinstalledLibrary } from '../../platform/preinstalledLibrary';
+import { readNativeDocuments } from '../../platform/nativeSourceStore';
+export type { CatalogSnapshot } from './catalogPipeline';
 let worker: Worker | null = null, pending: Promise<CatalogSnapshot> | null = null, sequence = 0;
 function requestSnapshot(report?: (message: string) => void): Promise<CatalogSnapshot> {
     return new Promise((resolve, reject) => {
@@ -37,7 +34,13 @@ function requestSnapshot(report?: (message: string) => void): Promise<CatalogSna
             current.addEventListener('message', message);
             current.addEventListener('error', failed);
             current.addEventListener('messageerror', failed);
-            current.postMessage({ id });
+            if (IS_ANDROID_BUILD)
+                void ensurePreinstalledLibrary(report).then(() => readNativeDocuments()).then(documents => {
+                    try { current.postMessage({ id, documents }); }
+                    catch (error) { cleanup(); reject(error); }
+                }, error => { cleanup(); reject(error); });
+            else
+                current.postMessage({ id });
         }
         catch (error) {
             reject(error);

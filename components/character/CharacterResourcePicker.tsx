@@ -8,7 +8,7 @@ import { ReaderNavigation } from '../common/ReaderNavigation';
 import { SpellFilters, spellClasses } from './SpellFilters';
 import { groupSpecies } from '../../src/content/speciesGroups';
 import { isEquipmentKind } from '../../src/content/resourceRegistry';
-import { selectResource, removeResource, isSingleSelection } from '../../src/character/resources';
+import { selectResource, removeResource } from '../../src/character/resources';
 import { resourceKey, characterAllows } from '../../src/content/resourceIdentity';
 import React, { useMemo, useState, useEffect, useRef } from 'react';
 import { ItemAttunementToggle } from './ItemAttunementToggle';
@@ -22,7 +22,7 @@ export function CharacterResourcePicker({ character, updateCharacter, kinds, rea
     fixedCategory?: boolean;
     allowRepeat?: boolean;
     character: CharacterData;
-    updateCharacter: (updates: Partial<CharacterData>) => void;
+    updateCharacter: (updates: Partial<CharacterData>) => boolean | void;
     kinds: readonly string[];
     readOnly?: boolean;
     filterCandidate?: (item: any) => boolean;
@@ -91,8 +91,8 @@ export function CharacterResourcePicker({ character, updateCharacter, kinds, rea
         const snapshot = updates.resourceCards!.find(card => resourceKey(card) === resourceKey(item))!;
         if (onChoose)
             onChoose(snapshot, updates);
-        else
-            updateCharacter(updates);
+        else if (updateCharacter(updates) === false)
+            return;
         setNotice('');
         if (item.kind !== 'spells' || onChoose) close();
     };
@@ -147,7 +147,7 @@ export function CharacterResourcePicker({ character, updateCharacter, kinds, rea
      {[0, 1].map(position => <React.Fragment key={position}>{position === 1 && <div className="builder-resource-grid">{displayGroups.slice((current - 1) * 12, current * 12).map(({ primary: item, variants }) => <div key={resourceKey(item)}><ResourcePreview item={item} onSelect={() => setView(item)}/>{!allowRepeat && selected.some(card => resourceKey(card) === resourceKey(item)) && <span className="picker-added">✓ 已添加</span>}{variants.length > 0 && <details className="species-variant-options"><summary>同源选项 · {variants.length} 项</summary>{variants.map(variant => <button type="button" key={resourceKey(variant)} onClick={() => setView(variant)}>{variant.name}<small>{variant.source}</small></button>)}</details>}</div>)}</div>}{pages > 1 && <nav className="builder-resource-pagination" aria-label={position ? '底部分页' : '顶部分页'}><button type="button" disabled={current === 1} onClick={() => { setPage(current - 1); listScroll.current?.scrollTo(0, 0); }}>上一页</button><label>页码 <input aria-label="跳转页码" type="number" min="1" max={pages} value={current} onChange={e => { setPage(Math.min(pages, Math.max(1, Number(e.target.value) || 1))); listScroll.current?.scrollTo(0, 0); }}/> / {pages}</label><button type="button" disabled={current === pages} onClick={() => { setPage(current + 1); listScroll.current?.scrollTo(0, 0); }}>下一页</button></nav>}</React.Fragment>)}
      {!visible.length && <div><p>没有匹配资源，请调整分类或本角色可用资料。</p>{onManageSources && <button type="button" onClick={() => { close(); onManageSources(); }}>修改本角色可用资料</button>}</div>}
     </div>}
-    {view && <div className="picker-detail" key={resourceKey(view)}><div className="picker-detail-scroll" key={resourceKey(view)}><NativeResourceCard item={view}/></div><footer className="picker-detail-footer" onClick={event => { if (event.target === event.currentTarget) dismiss(); }}>{referenceDepth === 0 && !panel && !readOnly && <SnapshotUpdate item={view} onUpdate={next => { updateCharacter(refreshCharacterSnapshot(character, next)); setView(next); }}/>}{referenceDepth === 0 && !panel && !readOnly && selected.some(item => resourceKey(item) === resourceKey(view)) && (isEquipmentKind(view.kind) || ['feats', 'optionalFeatures', 'charOptions', 'rewards', 'psionics'].includes(view.kind)) && <div className="builder-manual-fields">{(['quantity', 'totalUses', 'usedUses'] as const).filter(field => field !== 'quantity' || isEquipmentKind(view.kind)).map(field => <label key={field}>{({ quantity: '数量', totalUses: '总次数', usedUses: '已用次数' })[field]}<input type="number" min="0" value={character.resourceCardSettings?.[resourceKey(view)]?.[field] ?? ''} onChange={e => setCardSetting(view, field, e.target.value === '' ? undefined : Math.max(0, Number(e.target.value)))}/></label>)}</div>}{referenceDepth === 0 && isEquipmentKind(view.kind) && selected.some(item => resourceKey(item) === resourceKey(view)) && <ItemAttunementToggle character={character} item={view} updateCharacter={updateCharacter}/>}{referenceDepth === 0 ? <ReaderNavigation index={readingIndex} count={readingItems.length} onPrevious={() => moveSpell(-1)} onNext={() => moveSpell(1)}><button type="button" disabled={readOnly || !panel || !characterAllows(character, view) || !allowRepeat && selected.some(item => resourceKey(item) === resourceKey(view))} onClick={() => choose(view)}>{!allowRepeat && selected.some(item => resourceKey(item) === resourceKey(view)) ? '已添加' : '添加到角色'}</button></ReaderNavigation> : <button type="button" onClick={() => referenceBack.current?.()}>返回原文</button>}</footer></div>}
+    {view && <div className="picker-detail" key={resourceKey(view)}><div className="picker-detail-scroll" key={resourceKey(view)}><NativeResourceCard item={view}/></div><footer className="picker-detail-footer" onClick={event => { if (event.target === event.currentTarget) dismiss(); }}>{referenceDepth === 0 && !panel && !readOnly && <SnapshotUpdate item={view} onUpdate={next => { if (updateCharacter(refreshCharacterSnapshot(character, next)) !== false) setView(next); }}/>}{referenceDepth === 0 && !panel && !readOnly && selected.some(item => resourceKey(item) === resourceKey(view)) && (isEquipmentKind(view.kind) || ['feats', 'optionalFeatures', 'charOptions', 'rewards', 'psionics'].includes(view.kind)) && <div className="builder-manual-fields">{(['quantity', 'totalUses', 'usedUses'] as const).filter(field => field !== 'quantity' || isEquipmentKind(view.kind)).map(field => <label key={field}>{({ quantity: '数量', totalUses: '总次数', usedUses: '已用次数' })[field]}<input type="number" min="0" value={character.resourceCardSettings?.[resourceKey(view)]?.[field] ?? ''} onChange={e => setCardSetting(view, field, e.target.value === '' ? undefined : Math.max(0, Number(e.target.value)))}/></label>)}</div>}{referenceDepth === 0 && isEquipmentKind(view.kind) && selected.some(item => resourceKey(item) === resourceKey(view)) && <ItemAttunementToggle character={character} item={view} updateCharacter={updateCharacter}/>}{referenceDepth === 0 ? <ReaderNavigation index={readingIndex} count={readingItems.length} onPrevious={() => moveSpell(-1)} onNext={() => moveSpell(1)}><button type="button" disabled={readOnly || !panel || !characterAllows(character, view) || !allowRepeat && selected.some(item => resourceKey(item) === resourceKey(view))} onClick={() => choose(view)}>{!allowRepeat && selected.some(item => resourceKey(item) === resourceKey(view)) ? '已添加' : '添加到角色'}</button></ReaderNavigation> : <button type="button" onClick={() => referenceBack.current?.()}>返回原文</button>}</footer></div>}
    </div><div className="picker-notice" role="status">{notice}</div>
   </dialog>, document.body)}
  </div>;

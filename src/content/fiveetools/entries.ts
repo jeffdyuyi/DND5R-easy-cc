@@ -121,7 +121,7 @@ export function createEntryRenderer(resolve: (type: string, uid: string) => Raw 
         }
         warn('UNKNOWN_NODE', '未支持的正文节点：' + type);
         // Preserve human-readable fields, retain the exact object separately in raw.
-        return [named, ...Object.entries(value).filter(([k]) => !['name', 'ENG_name', 'type', 'style', 'source', 'page', 'id'].includes(k)).map(([k, v]) => render(v, seen, depth))].filter(Boolean).join('\n\n');
+        return [named, ...Object.entries(value).filter(([k]) => !['name', 'ENG_name', 'type', 'style', 'source', 'page', 'id'].includes(k)).map(([, v]) => render(v, seen, depth))].filter(Boolean).join('\n\n');
     }
     function reference(type: string, uid: string, seen: Set<string>, depth: number): string {
         uid = String(uid ?? '');

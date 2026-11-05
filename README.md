@@ -2,7 +2,7 @@
 
 面向龙与地下城五版线下跑团的资源查阅工具，提供5etools中文资料手动下载、本地缓存、解析引用、角色资源整理、收藏和骰盘。角色数值由玩家在纸质角色卡上记录。
 
-底部五入口为骰子、速查、角色、规则、信息；角色包含起源、职业、特性、法术、背包。支持深色幻想与明亮冒险两套Kenney PNG主题及Fusion Pixel字体。PWA已接入安装清单、应用离线包和显式更新；自选存储目录和小程序/原生应用尚未实现。
+底部五入口为骰子、速查、角色、规则、信息；角色包含起源、职业、特性、法术、背包。支持深色幻想与明亮冒险两套Kenney PNG主题及Fusion Pixel字体。PWA已接入安装清单、应用离线包和显式更新；Android外部资料使用应用私有文件目录。自选存储目录尚未实现。
 
 ## 开发与部署
 
@@ -12,6 +12,21 @@ npm run dev -- --host 127.0.0.1 --port 5195 --strictPort
 ```
 
 本地地址为 http://127.0.0.1:5195/DND5R-easy-cc/ 。GitHub Pages工作流安装锁定依赖、构建dist并上传Pages产物。仓库不保存本机dist和node_modules。
+
+## Android工程
+
+使用锁定的Capacitor 8.6.0，Node.js要求22及以上；CI使用24。应用包名为`com.nogubird.easycc`，原生工程位于`android`，网页与Android共用业务源码。
+
+```sh
+npm run build:android
+npm run android:sync
+```
+
+Android网页产物独立放在`dist-android`，随后同步进原生工程；上述命令不生成APK。Android使用明确的资源清单，不打包本机参考PDF、可选本地中文资料包或PWA服务，内置采用已公开的SRD发布数据。网页构建仍输出`dist`并保留PWA。
+
+Android原文下载经原生文件与活动版本清单保存，目录继续由Worker解析；旧Android WebView原文缓存首次读取时校验迁移且原缓存保留。角色、收藏和设置仍使用WebView本地存储。返回键/生命周期、正式图标、发布签名及真机断网/升级兼容尚待验证，不能将构建成功视作设备验收通过。
+
+配置JDK 21与Android SDK环境后，在android目录执行`./gradlew.bat --no-daemon --console=plain assembleDebug`生成调试包；输出为`android/app/build/outputs/apk/debug/app-debug.apk`。调试签名不用于正式发布。网页/Android网页构建、类型检查和9项针对性测试已通过，设备运行另行验证。
 
 ## 仓库内容
 
@@ -38,3 +53,19 @@ npm run dev -- --host 127.0.0.1 --port 5195 --strictPort
 新版完整下载后提示“更新并刷新”，由玩家确认应用；更新可能刷新本工具其他标签页。开发服务器不注册Service Worker，离线功能以正式构建为准。首次安装、断网重启、iOS安装和3D骰盘仍需实际设备核对。浏览器清理站点数据会移除本机记录，请保留备份。
 
 PWA构建由scripts/pwa-build.ts根据实际dist文件生成sw.js及内容哈希，无需手动维护缓存文件列表。Tailwind已改本地构建，不依赖运行时CDN。
+
+
+## Android预装原文资料
+
+Android构建需要本机准备的原文快照，网页构建不打入该快照：
+
+```sh
+npm run prepare:android-library -- <本地5etools中文库目录>
+npm run build:android
+npm run android:sync
+```
+
+制作脚本读取与主库同步相同的76文件清单，保留JSON及未知字段、附SHA-256清单。local-resources为本地原文输入，不入Git、不混入public目录；Android资源插件校验后仅发出到Android产物resources目录。首次启动没有中文主库时离线安装，同一原生写队列保证已有下载/导入优先，不自动覆盖旧资料。预装为玩家资源及解析依赖，不代表整本书或怪物百科。
+
+
+发布顺序为 GitHub 网页版、基于同站点更新的 PWA，再到 Android APK。网页和 PWA共用默认构建与同一部署，不需要分别发布；Android使用独立构建及本机预装资料输入。

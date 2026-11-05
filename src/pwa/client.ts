@@ -1,4 +1,5 @@
 import { useSyncExternalStore } from 'react';
+import { IS_ANDROID_BUILD } from '../platform/build';
 type InstallEvent = Event & { prompt: () => Promise<void>; userChoice: Promise<{ outcome: string }> };
 type State = { supported: boolean; ready: boolean; checking: boolean; update: boolean; installable: boolean; installed: boolean; version: string; error: string; development: boolean };
 let state: State = { supported: false, ready: false, checking: false, update: false, installable: false, installed: false, version: '', error: '', development: import.meta.env.DEV };
@@ -14,6 +15,7 @@ async function readStatus() {
     registration.active.postMessage({ type: 'SHELL_STATUS' }, [channel.port2]);
 }
 export function registerPwa() {
+    if (IS_ANDROID_BUILD) return;
     publish({ supported: 'serviceWorker' in navigator && window.isSecureContext, installed: matchMedia('(display-mode: standalone)').matches || (navigator as Navigator & { standalone?: boolean }).standalone === true });
     window.addEventListener('beforeinstallprompt', event => { event.preventDefault(); installEvent = event as InstallEvent; publish({ installable: true }); });
     window.addEventListener('appinstalled', () => { installEvent = undefined; publish({ installed: true, installable: false }); });

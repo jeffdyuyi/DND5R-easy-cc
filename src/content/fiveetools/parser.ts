@@ -187,8 +187,10 @@ export function parseDocuments(documents: SourceDocument[]): ParsedCatalog {
                                     return label + ' ' + speed + '尺';
                                 if (speed === true)
                                     return label + '速度等同步行速度';
-                                if (speed && typeof speed === 'object')
-                                    return label + ' ' + (speed.number !== undefined ? speed.number + '尺' : '') + (speed.condition ? '（' + text(speed.condition) + '）' : '');
+                                if (speed && typeof speed === 'object') {
+                                    const detail = speed as Raw;
+                                    return label + ' ' + (detail.number !== undefined ? detail.number + '尺' : '') + (detail.condition ? '（' + text(detail.condition) + '）' : '');
+                                }
                             }
                             if (key === 'canHover')
                                 return speed ? '可以悬浮' : '';
@@ -312,7 +314,7 @@ export function parseDocuments(documents: SourceDocument[]): ParsedCatalog {
                         if (raw.startingEquipment?.default)
                             push('起始装备', raw.startingEquipment.default);
                     }
-                    fields.levelFeatures = features.filter(({ feature }) => feature).map(({ uid, feature }) => ({ uid, name: feature.name, englishName: feature.ENG_name || '', level: feature.level, description: render(feature.entries, new Set<string>(), 1) }));
+                    fields.levelFeatures = features.flatMap(({ uid, feature }) => feature ? [{ uid, name: feature.name, englishName: feature.ENG_name || '', level: feature.level, description: render(feature.entries, new Set<string>(), 1) }] : []);
                     for (const { feature } of features)
                         if (feature)
                             push(feature.level + '级：' + feature.name + (feature.ENG_name ? ' · ' + feature.ENG_name : ''), render(feature.entries, new Set<string>(), 1));

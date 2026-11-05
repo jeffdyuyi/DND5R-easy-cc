@@ -1,3 +1,4 @@
+import { IS_ANDROID_BUILD } from '../src/platform/build';
 import { checkCoreRevision } from '../src/content/fiveetools/source';
 import { useEffect, useRef, useMemo, useState } from 'react';
 import { useExternalResources } from '../hooks/useExternalResources';
@@ -6,6 +7,8 @@ const stateNames: Record<string, string> = { queued: '排队中', reading: '读�
 export function ExternalResourceSources({ resources: r }: {
     resources: ReturnType<typeof useExternalResources>;
 }) {
+    const [bundledBooks, setBundledBooks] = useState<{ code: string; name: string }[]>([]);
+    useEffect(() => { if (!IS_ANDROID_BUILD) return; let live = true; void fetch('resources/core-manifest.json').then(response => response.ok ? response.json() : null).then(manifest => { if (live && Array.isArray(manifest?.books)) setBundledBooks(manifest.books); }).catch(() => {}); return () => { live = false; }; }, []);
     const [upstream, setUpstream] = useState<{ revision?: string; at?: string; error?: string; checking?: boolean }>({});
     const checkAbort = useRef<AbortController | null>(null);
     useEffect(() => () => checkAbort.current?.abort(), []);
@@ -28,13 +31,18 @@ export function ExternalResourceSources({ resources: r }: {
     const currentPage = Math.min(page, pageCount - 1);
     const visiblePackages = shown.slice(currentPage * 24, (currentPage + 1) * 24);
     const downloadRecords = () => { const url = URL.createObjectURL(new Blob([JSON.stringify({ errors: r.errors, diagnostics: r.diagnostics, packages: r.packageReads, sources: r.sourceSyncs }, null, 2)], { type: 'application/json' })); const a = document.createElement('a'); a.href = url; a.download = 'easy-cc-external-diagnostics.json'; a.click(); URL.revokeObjectURL(url); };
+    const sync = r.sourceSyncs['5etools-cn'];
+    const phaseLabels = { idle: '', reading: '① 读取资料', saving: '② 保存原文', parsing: '③ 生成目录', complete: '✓ 操作完成', failed: '未完成', cancelled: '已取消' };
     return <section className="external-resource-sources" aria-label="外部数据源配置">
   <header className="external-source-panel-header"><h2>5etools / Homebrew</h2><span>已生成 {r.total} 张资源卡</span></header>
-  <p>下载后仍需为角色选择允许使用的出版物。</p>
+  <p>下载后仍需为角色选择允许使用的出版物。</p>{!r.ready && <div className="sync-feedback" role="status"><strong>正在准备本机资料</strong><p>{r.status}</p><progress aria-label="资料初始化"/></div>}
+  {bundledBooks.length > 0 && <details className="preinstalled-books"><summary>APK预装资料 · {bundledBooks.length} 本指定来源及解析依赖</summary><p>首次启动离线安装到本机资料库；不覆盖已有中文主库，不自动启用角色来源。此处为随包书目，当前资源数量以本机目录为准。</p><ul>{bundledBooks.map(book => <li key={book.code}>{book.name} · {book.code}</li>)}</ul></details>}
   <section className="source-update-controls" aria-label="资料更新">
     <div className="core-update-line"><strong>中文主库</strong><span role="status">{coreMessage}</span></div>
     {upstream.at && <small>检查时间 {upstream.at} · 上游 {upstream.revision?.slice(0, 8)}</small>}
     {revisionMatches && r.sourceSyncs['5etools-cn']?.state !== 'success' && <small>修订一致不代表全部文件完整；上次同步未完成时可重新下载补齐。</small>}
+    {r.activity.stage !== 'idle' && <div className={'sync-feedback phase-' + r.activity.stage} role="status" aria-live="polite"><strong>{phaseLabels[r.activity.stage]}</strong><p>{r.activity.detail}</p>{r.busy && <progress aria-label="资料处理进度" {...(r.activity.total ? { value: r.activity.done, max: r.activity.total } : {})}/>}<small>{r.busy ? '请保持应用打开，完成后会在此显示结果。' : r.activity.stage === 'complete' ? '无需再次同步；角色可用来源仍需独立选择。' : '原有资料保留，可重试或展开下方记录。'}</small></div>}
+    {!r.busy && r.ready && sync && <div className={'core-result-summary ' + (sync.state === 'success' && sync.catalogReady !== false ? 'is-ready' : 'is-incomplete')}><strong>{sync.state === 'success' ? sync.catalogReady === false ? '原文已保存 · 目录未就绪' : '✓ 中文主库已同步，可离线查阅' : syncNames[sync.state]}</strong><small>{new Date(sync.at).toLocaleString()} · {core?.files || 0} 个文件 · {core?.cards || 0} 张卡</small></div>}
     <div className="external-source-actions">
       <button disabled={r.busy || upstream.checking} onClick={() => void checkUpdate()}>检查更新</button>
       <button disabled={r.busy || !r.ready} onClick={() => r.run('core')}>{core?.files ? '下载更新 / 补齐' : '下载中文主库'}</button>
@@ -48,7 +56,7 @@ export function ExternalResourceSources({ resources: r }: {
   <p className="external-progress" role="status">{r.status}</p>
   <section className="source-cache-overview" aria-label="外部资料缓存概览"><header><h3>缓存概况</h3><span>重复同步会更新原记录，不重复添加。</span></header><div className="source-cache-grid">{r.sourceStats.map(stats => {
             const sync = r.sourceSyncs[stats.repository], name = stats.repository === '5etools-cn' ? '5etools中文主库' : 'Homebrew', enabled = r.enabled.includes(stats.repository);
-            return <article className="source-cache-card" key={stats.repository}><div className="source-cache-heading"><h4>{name}</h4><button aria-pressed={enabled} onClick={() => r.toggle(stats.repository)}>{enabled ? '已启用' : '已停用'}</button></div><dl><div><dt>资料文件</dt><dd>{stats.files}</dd></div><div><dt>出版来源</dt><dd>{stats.sources}</dd></div><div><dt>资源卡</dt><dd>{stats.cards}</dd></div><div><dt>解析记录</dt><dd>{stats.diagnostics}</dd></div></dl><p>缓存修订：{stats.revisions.length === 1 ? <span title={stats.revisions[0]}>{stats.revisions[0].slice(0, 8)}</span> : stats.revisions.length ? stats.revisions.length + ' 个修订' : '未缓存'}</p><p>资料读取时间：{stats.lastFetched ? new Date(stats.lastFetched).toLocaleString() : '暂无'}</p><div className={'source-sync-result sync-' + (sync?.state || 'none')}><strong>{sync ? syncNames[sync.state] : stats.files ? '已有缓存' : '尚未同步'}</strong>{sync && <><span>{sync.scope} · {new Date(sync.at).toLocaleString()}</span>{sync.revision && <span title={sync.revision}>本次检查修订 {sync.revision.slice(0, 8)}</span>}{sync.added !== undefined && <span>新增 {sync.added} · 更新 {sync.updated || 0} · 未变化 {sync.unchanged || 0}{sync.retired ? ' · 退役 ' + sync.retired : ''}</span>}{sync.error && <span>{sync.error}；原有缓存保留。</span>}</>}</div></article>;
+            return <article className="source-cache-card" key={stats.repository}><div className="source-cache-heading"><h4>{name}</h4><button aria-pressed={enabled} onClick={() => r.toggle(stats.repository)}>{enabled ? '已启用' : '已停用'}</button></div><dl><div><dt>资料文件</dt><dd>{stats.files}</dd></div><div><dt>出版来源</dt><dd>{stats.sources}</dd></div><div><dt>资源卡</dt><dd>{stats.cards}</dd></div><div><dt>解析记录</dt><dd>{stats.diagnostics}</dd></div></dl><p>缓存修订：{stats.revisions.length === 1 ? <span title={stats.revisions[0]}>{stats.revisions[0] === 'bundled-local-snapshot' ? 'APK预装快照' : stats.revisions[0].slice(0, 8)}</span> : stats.revisions.length ? stats.revisions.length + ' 个修订' : '未缓存'}</p><p>资料读取时间：{stats.lastFetched ? new Date(stats.lastFetched).toLocaleString() : '暂无'}</p><div className={'source-sync-result sync-' + (sync?.state || 'none')}><strong>{sync ? sync.state === 'success' ? sync.catalogReady === false ? '原文已保存 · 目录未就绪' : '已同步 · 可离线查阅' : syncNames[sync.state] : stats.files ? '已有缓存' : '尚未同步'}</strong>{sync && <><span>{sync.scope} · {new Date(sync.at).toLocaleString()}</span>{sync.revision && <span title={sync.revision}>本次检查修订 {sync.revision.slice(0, 8)}</span>}{sync.added !== undefined && <span>新增 {sync.added} · 更新 {sync.updated || 0} · 未变化 {sync.unchanged || 0}{sync.retired ? ' · 退役 ' + sync.retired : ''}</span>}{sync.error && <span>{sync.error}；原有缓存保留。</span>}</>}</div></article>;
         })}</div></section>
   {r.packages.length > 0 && <section className="brew-picker" aria-label="Homebrew资料包管理">
    <header className="brew-picker-header"><h3>Homebrew资料包</h3><span>{r.packages.length} 包 · 已选 {selected.length}</span></header>

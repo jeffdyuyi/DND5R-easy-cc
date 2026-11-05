@@ -1,5 +1,4 @@
 import { InventoryPanel } from './InventoryPanel';
-import { isManualPlacement } from '../../src/character/equipmentSelection';
 import { EquipmentWheel, LongPressEquipment, EquipmentGesture } from './EquipmentWheel';
 import { useState } from 'react';
 import type { CharacterData, InventoryEntry, ResourceSnapshot } from '../../types';

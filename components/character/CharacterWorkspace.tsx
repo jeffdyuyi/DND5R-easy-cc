@@ -13,7 +13,7 @@ import { CharacterSpells } from './CharacterSpells';
 import { CharacterSupplies } from './CharacterSupplies';
 import { LegacyCharacterRecords } from './LegacyCharacterRecords';
 import { EQUIPMENT_KINDS as gearKinds } from '../../src/content/resourceRegistry';
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { CharacterData } from '../../types';
 import { ItemAttunementToggle } from './ItemAttunementToggle';
 import { CharacterEquipment } from './CharacterEquipment';
@@ -22,7 +22,7 @@ import { CharacterResourcePicker } from './CharacterResourcePicker';
 import { NativeResourceCard } from '../NativeResourceCard';
 interface Props {
     character: CharacterData;
-    updateCharacter: (updates: Partial<CharacterData>) => void;
+    updateCharacter: (updates: Partial<CharacterData>) => boolean;
     onComplete: () => void;
 }
 const tabs = [['origin', '起源'], ['classes', '职业'], ['features', '特性'], ['spells', '法术'], ['gear', '背包']] as const;
@@ -82,6 +82,6 @@ export default function CharacterWorkspace({ character: c, updateCharacter: upda
             }
             else
                 setView(null);
-        }}><header><ReaderOutline identity={view?.id || ""}/><DialogDismissButton back={referenceDepth > 0} label={referenceDepth > 0 ? '返回原文' : '关闭全文'} onClick={dismissReader}/>{referenceDepth === 0 && view && gearKinds.includes(view.kind) && <ItemAttunementToggle character={c} item={view} updateCharacter={update}/>}</header>{referenceDepth === 0 && view && <SnapshotUpdate item={view} onUpdate={next => { update(refreshCharacterSnapshot(c, next)); setView(next); }}/>}{view && <div className="reader-scroll folio-reader-content"><NativeResourceCard item={view}/></div>}<footer className="reader-navigation" onClick={event => { if (event.target === event.currentTarget) dismissReader(); }}>{referenceDepth > 0 && <button type="button" onClick={() => referenceBack.current?.()}>返回原文</button>}</footer></dialog>
+        }}><header><ReaderOutline identity={view?.id || ""}/><DialogDismissButton back={referenceDepth > 0} label={referenceDepth > 0 ? '返回原文' : '关闭全文'} onClick={dismissReader}/>{referenceDepth === 0 && view && gearKinds.includes(view.kind) && <ItemAttunementToggle character={c} item={view} updateCharacter={update}/>}</header>{referenceDepth === 0 && view && <SnapshotUpdate item={view} onUpdate={next => { if (update(refreshCharacterSnapshot(c, next))) setView(next); }}/>}{view && <div className="reader-scroll folio-reader-content"><NativeResourceCard item={view}/></div>}<footer className="reader-navigation" onClick={event => { if (event.target === event.currentTarget) dismissReader(); }}>{referenceDepth > 0 && <button type="button" onClick={() => referenceBack.current?.()}>返回原文</button>}</footer></dialog>
  </div>;
 }
