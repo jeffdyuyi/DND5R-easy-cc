@@ -1,4 +1,4 @@
-/* Character collection and five-tab folio. Mobile four-column cards are intentional. */
+/* Character collection and overview-first folio. Mobile four-column cards are intentional. */
 .character-roster { height:100%; overflow-y:auto; padding:12px; background:var(--paper); }
 .character-roster>header { display:flex; align-items:center; justify-content:space-between; gap:8px; margin-bottom:16px; }
 .character-roster h1 { font-size:22px; margin:0; }
@@ -14,7 +14,7 @@
 .roster-caption span { font-size:12px; color:var(--muted); }
 .roster-delete { position:absolute; right:0; top:0; min-width:30px; min-height:30px; background:var(--paper-light); color:var(--muted); border:1px solid var(--line); }
 .portrait-neutral { width:42%!important; height:auto!important; max-width:100px; color:var(--muted); opacity:.6; }
-.character-folio .folio-top-tabs { grid-template-columns:repeat(5,minmax(0,1fr))!important; gap:4px; }
+.character-folio .folio-top-tabs { grid-template-columns:repeat(6,minmax(0,1fr))!important; gap:4px; }
 .character-folio .folio-top-tabs button { min-width:0; padding:10px 2px; font-size:16px; }
 .character-folio .folio-heading { gap:8px; padding:8px; }
 .character-folio .folio-heading h1 { font-size:18px; }
