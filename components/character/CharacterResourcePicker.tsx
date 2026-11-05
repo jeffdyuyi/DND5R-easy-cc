@@ -44,6 +44,8 @@ export function CharacterResourcePicker({ character, updateCharacter, kinds, rea
     const referenceBack = useRef<(() => void) | null>(null);
     const dialog = useRef<HTMLDialogElement>(null), listScroll = useRef<HTMLDivElement>(null);
     const [selectedTier, setSelectedTier] = useState('全部');
+    const listGesture = useRef<{ x: number; y: number } | null>(null);
+    const swiped = useRef(false);
     const [notice, setNotice] = useState(''), [level, setLevel] = useState('全部'), [spellCareer, setSpellCareer] = useState('全部');
     const [kind, setKind] = useState(kinds[0]), [page, setPage] = useState(1), [view, setView] = useState<any>(null), [panel, setPanel] = useState(initialOpen), [facet, setFacet] = useState('全部');
     useEffect(() => { setReferenceDepth(0); referenceBack.current = null; }, [view]);
@@ -81,6 +83,24 @@ export function CharacterResourcePicker({ character, updateCharacter, kinds, rea
     const visible = all.filter(item => characterAllows(character, item) && (level === '全部' || String(item.level ?? item.fields?.level) === level) && (facet === '全部' || category(item) === facet) && (kind !== 'spells' || spellCareer === '全部' || spellClasses(item).includes(spellCareer)));
     const displayGroups = kind === 'species' ? groupSpecies(visible) : visible.map(primary => ({ primary, variants: [] as any[] }));
     const pages = Math.max(1, Math.ceil(displayGroups.length / 12)), current = Math.min(page, pages);
+    const changePage = (next: number) => {
+        setPage(Math.min(pages, Math.max(1, next)));
+        listScroll.current?.scrollTo(0, 0);
+    };
+    const pageSwipeStart = (event: React.TouchEvent) => {
+        swiped.current = false;
+        const touch = event.touches[0];
+        listGesture.current = event.touches.length === 1 ? { x: touch.clientX, y: touch.clientY } : null;
+    };
+    const pageSwipeEnd = (event: React.TouchEvent) => {
+        const start = listGesture.current; listGesture.current = null;
+        const touch = event.changedTouches[0];
+        if (!start || !touch || event.touches.length || window.getSelection()?.toString()) return;
+        const dx = touch.clientX - start.x, dy = touch.clientY - start.y;
+        if (Math.abs(dx) < 70 || Math.abs(dx) < Math.abs(dy) * 2) return;
+        swiped.current = true;
+        changePage(current + (dx < 0 ? 1 : -1));
+    };
     const choose = (item: any) => {
         const updates = selectResource(character, item, selectionGroup);
         if (!updates)
@@ -137,16 +157,16 @@ export function CharacterResourcePicker({ character, updateCharacter, kinds, rea
   {(panel || view) && createPortal(<dialog ref={dialog} className={'character-picker-dialog' + (view ? ' is-reading' : '')} {...backdrop} data-reference-depth={referenceDepth > 0 ? referenceDepth : undefined} aria-label="角色资源选择与阅读" onCancel={e => { e.preventDefault(); dismiss(); }}>
    <header className="picker-toolbar">{view && <ReaderOutline identity={view.id}/>}<DialogDismissButton back={referenceDepth > 0 || !!(view && panel)} label={referenceDepth > 0 ? '返回原文' : view && panel ? '返回列表' : '关闭选卡'} onClick={() => referenceDepth > 0 ? referenceBack.current?.() : view && panel ? setView(null) : close()}/><strong>{view ? view.name : selectionTitle || '选择' + resourceLabels[kind]}</strong></header>
    <div className={'picker-workspace' + (view ? ' has-detail' : '') + (panel ? '' : ' detail-only')}>
-    {panel && !view && referenceDepth === 0 && <div className="picker-list" ref={listScroll}>
+    {panel && !view && referenceDepth === 0 && <div className="picker-list-shell"><div className="picker-list" ref={listScroll}>
      <div className="picker-filters">{filterTools}
       {!fixedCategory && kinds.length > 1 && <div className="picker-tabs">{kinds.map(value => <button type="button" key={value} aria-pressed={kind === value} onClick={() => { setKind(value); setFacet('全部'); setLevel('全部'); setPage(1); setView(null); }}>{resourceLabels[value]}</button>)}</div>}
       
-      {kind === 'spells' ? spellFilterControls || <SpellFilters items={all.filter(item => characterAllows(character, item))} level={level} school={facet} career={spellCareer} onChange={(field, value) => { if (field === 'level') setLevel(value); else if (field === 'school') setFacet(value); else setSpellCareer(value); setPage(1); }}/> : facets.length > 1 && <div className="choice-chips" role="group" aria-label="分类">{['全部', ...facets].map(value => <button type="button" key={value} aria-pressed={facet === value} onClick={() => { setFacet(value); setPage(1); }}>{value}</button>)}</div>}
+      {kind === 'spells' ? <details className="picker-spell-filters" onClickCapture={event => { if ((event.target as Element).closest('button')) setPage(1); }}><summary>筛选法术{[level !== '全部' && (level === '0' ? '戏法' : level + '环'), facet !== '全部' && facet, spellCareer !== '全部' && spellCareer].filter(Boolean).length > 0 && <small> · {[level !== '全部' && (level === '0' ? '戏法' : level + '环'), facet !== '全部' && facet, spellCareer !== '全部' && spellCareer].filter(Boolean).join(' / ')}</small>}</summary>{spellFilterControls || <SpellFilters items={all.filter(item => characterAllows(character, item))} level={level} school={facet} career={spellCareer} onChange={(field, value) => { if (field === 'level') setLevel(value); else if (field === 'school') setFacet(value); else setSpellCareer(value); setPage(1); }}/>}</details> : facets.length > 1 && <div className="choice-chips" role="group" aria-label="分类">{['全部', ...facets].map(value => <button type="button" key={value} aria-pressed={facet === value} onClick={() => { setFacet(value); setPage(1); }}>{value}</button>)}</div>}
 
      </div>
-     {[0, 1].map(position => <React.Fragment key={position}>{position === 1 && <div className="builder-resource-grid">{displayGroups.slice((current - 1) * 12, current * 12).map(({ primary: item, variants }) => <div key={resourceKey(item)}><ResourcePreview item={item} onSelect={() => setView(item)}/>{!allowRepeat && selected.some(card => resourceKey(card) === resourceKey(item)) && <span className="picker-added">✓ 已添加</span>}{variants.length > 0 && <details className="species-variant-options"><summary>同源选项 · {variants.length} 项</summary>{variants.map(variant => <button type="button" key={resourceKey(variant)} onClick={() => setView(variant)}>{variant.name}<small>{variant.source}</small></button>)}</details>}</div>)}</div>}{pages > 1 && <nav className="builder-resource-pagination" aria-label={position ? '底部分页' : '顶部分页'}><button type="button" disabled={current === 1} onClick={() => { setPage(current - 1); listScroll.current?.scrollTo(0, 0); }}>上一页</button><label>页码 <input aria-label="跳转页码" type="number" min="1" max={pages} value={current} onChange={e => { setPage(Math.min(pages, Math.max(1, Number(e.target.value) || 1))); listScroll.current?.scrollTo(0, 0); }}/> / {pages}</label><button type="button" disabled={current === pages} onClick={() => { setPage(current + 1); listScroll.current?.scrollTo(0, 0); }}>下一页</button></nav>}</React.Fragment>)}
+     <div className="builder-resource-grid picker-page-grid" onTouchStart={pageSwipeStart} onTouchEnd={pageSwipeEnd} onTouchCancel={() => { listGesture.current = null; }} onTouchMove={event => { if (event.touches.length !== 1) listGesture.current = null; }} onClickCapture={event => { if (swiped.current) { event.preventDefault(); event.stopPropagation(); swiped.current = false; } }}>{displayGroups.slice((current - 1) * 12, current * 12).map(({ primary: item, variants }) => <div key={resourceKey(item)}><ResourcePreview item={item} onSelect={() => setView(item)}/>{!allowRepeat && selected.some(card => resourceKey(card) === resourceKey(item)) && <span className="picker-added">✓ 已添加</span>}{variants.length > 0 && <details className="species-variant-options"><summary>同源选项 · {variants.length} 项</summary>{variants.map(variant => <button type="button" key={resourceKey(variant)} onClick={() => setView(variant)}>{variant.name}<small>{variant.source}</small></button>)}</details>}</div>)}</div>
      {!visible.length && <div><p>没有匹配资源，请调整分类或本角色可用资料。</p>{onManageSources && <button type="button" onClick={() => { close(); onManageSources(); }}>修改本角色可用资料</button>}</div>}
-    </div>}
+    </div>{pages > 1 && <nav className="builder-resource-pagination picker-bottom-pagination" aria-label="底部分页"><button type="button" disabled={current === 1} onClick={() => changePage(current - 1)}>上一页</button><span aria-live="polite">{current} / {pages}</span><button type="button" disabled={current === pages} onClick={() => changePage(current + 1)}>下一页</button></nav>}</div>}
     {view && <div className="picker-detail" key={resourceKey(view)}><div className="picker-detail-scroll" key={resourceKey(view)}><NativeResourceCard item={view}/></div><footer className="picker-detail-footer" onClick={event => { if (event.target === event.currentTarget) dismiss(); }}>{referenceDepth === 0 && !panel && !readOnly && <SnapshotUpdate item={view} onUpdate={next => { if (updateCharacter(refreshCharacterSnapshot(character, next)) !== false) setView(next); }}/>}{referenceDepth === 0 && !panel && !readOnly && selected.some(item => resourceKey(item) === resourceKey(view)) && (isEquipmentKind(view.kind) || ['feats', 'optionalFeatures', 'charOptions', 'rewards', 'psionics'].includes(view.kind)) && <div className="builder-manual-fields">{(['quantity', 'totalUses', 'usedUses'] as const).filter(field => field !== 'quantity' || isEquipmentKind(view.kind)).map(field => <label key={field}>{({ quantity: '数量', totalUses: '总次数', usedUses: '已用次数' })[field]}<input type="number" min="0" value={character.resourceCardSettings?.[resourceKey(view)]?.[field] ?? ''} onChange={e => setCardSetting(view, field, e.target.value === '' ? undefined : Math.max(0, Number(e.target.value)))}/></label>)}</div>}{referenceDepth === 0 && isEquipmentKind(view.kind) && selected.some(item => resourceKey(item) === resourceKey(view)) && <ItemAttunementToggle character={character} item={view} updateCharacter={updateCharacter}/>}{referenceDepth === 0 ? <ReaderNavigation index={readingIndex} count={readingItems.length} onPrevious={() => moveSpell(-1)} onNext={() => moveSpell(1)}><button type="button" disabled={readOnly || !panel || !characterAllows(character, view) || !allowRepeat && selected.some(item => resourceKey(item) === resourceKey(view))} onClick={() => choose(view)}>{!allowRepeat && selected.some(item => resourceKey(item) === resourceKey(view)) ? '已添加' : '添加到角色'}</button></ReaderNavigation> : <button type="button" onClick={() => referenceBack.current?.()}>返回原文</button>}</footer></div>}
    </div><div className="picker-notice" role="status">{notice}</div>
   </dialog>, document.body)}

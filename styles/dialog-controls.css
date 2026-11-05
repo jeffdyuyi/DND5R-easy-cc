@@ -45,8 +45,10 @@ dialog .resource-reference-back { display:none; }
 .class-progression-section>summary>.rich-section-heading { display:inline; margin:0; padding:0; border:0; background:none; }
 /* Full-screen reading takes priority over list navigation on all viewport sizes. */
 dialog.resource-reader,dialog.character-picker-dialog,dialog.folio-reader {
-  position:fixed!important; inset:10px!important; margin:0!important;
-  width:calc(100% - 20px)!important; height:calc(100dvh - 20px)!important; max-width:none!important; max-height:none!important;
+  --reader-top-gap:max(32px,calc(env(safe-area-inset-top,0px) + 12px));
+  --reader-bottom-gap:max(24px,calc(env(safe-area-inset-bottom,0px) + 12px));
+  position:fixed!important; inset:var(--reader-top-gap) 10px var(--reader-bottom-gap)!important; margin:0!important;
+  width:calc(100% - 20px)!important; height:calc(100dvh - var(--reader-top-gap) - var(--reader-bottom-gap))!important; max-width:none!important; max-height:none!important;
   box-sizing:border-box; z-index:300!important; border:0!important;
   padding:0!important;
   background:var(--paper)!important;
