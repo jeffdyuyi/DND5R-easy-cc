@@ -9,7 +9,8 @@ import { CharacterResourcePicker } from './CharacterResourcePicker';
 import { RichText } from '../RichText';
 import { useResourceCatalog } from '../../hooks/useResourceCatalog';
 
-export function classLevel(c: CharacterData, item: ResourceSnapshot, index: number) { return c.resourceClassLevels?.[resourceKey(item)] ?? (index === 0 ? Math.max(1, c.level - (c.resourceCards || []).filter(x => x.kind === 'classes' && resourceKey(x) !== resourceKey(item)).reduce((n, x) => n + (c.resourceClassLevels?.[resourceKey(x)] || 0), 0)) : 1); }
+import { classLevel } from '../../src/character/classLevels';
+export { classLevel } from '../../src/character/classLevels';
 export function CharacterClasses({ character: c, updateCharacter: update, onSources, onView }: { character: CharacterData; updateCharacter: (v: Partial<CharacterData>) => void; onSources: () => void; onView: (item: ResourceSnapshot) => void }) {
     const catalog = useResourceCatalog();
     const [directoryOpen, setDirectoryOpen] = useState(false);

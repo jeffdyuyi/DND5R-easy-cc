@@ -12,6 +12,25 @@ const rarities: Raw = { common: '普通', uncommon: '非普通', rare: '珍稀',
 const units: Raw = { action: '动作', bonus: '附赠动作', reaction: '反应', round: '轮', minute: '分钟', hour: '小时', day: '天', week: '周', year: '年', feet: '尺', miles: '里', self: '自身', touch: '触及', sight: '视线', unlimited: '无限', special: '特殊', instant: '立即', permanent: '永久', timed: '定时', untilDispelled: '直到被解除', dispel: '被解除', trigger: '触发', discharge: '释放', cone: '锥形', cube: '立方', cylinder: '柱形', line: '线形', radius: '半径', sphere: '球形', hemisphere: '半球形', emanation: '发散' };
 export function parseDocuments(documents: SourceDocument[]): ParsedCatalog {
     const diagnostics: Diagnostic[] = [], entries: Raw[] = [], pool: Raw = {}, spellLookup: Raw = {}, sourceMeta: Raw = {}, optionalTypes: Raw = {}, additionalTypes: Raw = {};
+    // Read explicit six-column recommendation rows, never infer priorities from a class name.
+    const recommended = new Map<string, Raw>();
+    for (const doc of documents.filter(doc => /(?:^|\/)book-[^/]+\.json$/.test(doc.path))) {
+        const visit = (node: any) => {
+            if (!node || typeof node !== 'object') return;
+            if (node.type === 'table' && Array.isArray(node.colLabels) && node.colLabels.slice(1).join('|') === '力量|敏捷|体质|智力|感知|魅力') {
+                for (const row of node.rows || []) {
+                    const tag = typeof row?.[0] === 'string' && row[0].match(/\{@class ([^|}]+)\|([^|}]+)/);
+                    const scores = Array.isArray(row) ? row.slice(1).map(Number) : [];
+                    if (tag && scores.length === 6 && scores.every(Number.isFinite) && [...scores].sort((a,b) => a-b).join(',') === '8,10,12,13,14,15')
+                        recommended.set(doc.repository + '|' + tag[1] + '|' + tag[2], { scores, caption: node.caption, path: doc.path, revision: doc.revision });
+                }
+            }
+            for (const value of Object.values(node)) if (value && typeof value === 'object') {
+                if (Array.isArray(value)) value.forEach(visit); else visit(value);
+            }
+        };
+        visit(doc.body);
+    }
     for (const doc of documents) {
         // Repository discovery indices map properties/sources to paths; they are not content documents.
         if (doc.path.startsWith('_generated/') || /(?:^|\/)(?:fluff-)?index\.json$/.test(doc.path))
@@ -401,9 +420,10 @@ export function parseDocuments(documents: SourceDocument[]): ParsedCatalog {
                 const publication = raw.source || raw.inherits?.source || '未注明来源';
                 const id = 'external:' + encodeURIComponent(identity);
                 // Small explicit projection survives the Worker without the full raw objects.
-                const buildFields = ['size', 'speed', 'darkvision', 'languageProficiencies', 'skillProficiencies', 'toolProficiencies', 'weaponProficiencies', 'armorProficiencies', 'startingProficiencies', 'proficiency', 'multiclassing', 'startingEquipment', 'inheritedStructuredFields'];
+                const buildFields = ['ability', 'hd', 'primaryAbility', 'casterProgression', 'classTableGroups', 'subclassTableGroups', 'size', 'speed', 'darkvision', 'languageProficiencies', 'skillProficiencies', 'toolProficiencies', 'weaponProficiencies', 'armorProficiencies', 'startingProficiencies', 'proficiency', 'multiclassing', 'startingEquipment', 'inheritedStructuredFields'];
                 const buildData = ['class', 'race', 'subrace', 'background'].includes(prop) ? {
-                    version: 1,
+                    version: 2,
+                    recommendedArray: prop === 'class' ? recommended.get((origin?.repository || '5etools-cn') + '|' + raw.name + '|' + raw.source) : undefined,
                     ...Object.fromEntries(buildFields.filter(key => raw[key] !== undefined).map(key => [key, structuredClone(raw[key])])),
                     summary: Object.fromEntries(['languageProficiencies', 'skillProficiencies', 'toolProficiencies', 'weaponProficiencies', 'armorProficiencies'].filter(key => raw[key] !== undefined).map(key => [key, choice(localizeProficiency(raw[key], key === 'armorProficiencies' ? 'armor' : key === 'weaponProficiencies' ? 'weapons' : ''))])),
                     mainSummary: prop === 'class' ? {

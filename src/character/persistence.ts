@@ -22,7 +22,21 @@ export function validateCharacterData(value: unknown): value is CharacterData {
     if (object(data.equippedResourceSlots) && !Object.values(data.equippedResourceSlots as object).every(card)) return false;
     for (const field of ['resourceClassLevels', 'pocketCurrency']) if (object(data[field]) && !Object.values(data[field] as object).every(value => typeof value === 'number' && Number.isFinite(value) && value >= 0)) return false;
     if (object(data.resourceCardSettings) && !Object.values(data.resourceCardSettings as object).every((settings: any) => object(settings) && ['quantity', 'totalUses', 'usedUses'].every(key => settings[key] === undefined || typeof settings[key] === 'number' && Number.isFinite(settings[key]) && settings[key] >= 0))) return false;
-    return typeof data.id === 'string' && typeof data.name === 'string' && typeof data.className === 'string' && typeof data.level === 'number' && Number.isFinite(data.level) && !!data.abilities && typeof data.abilities === 'object' && !Array.isArray(data.abilities);
+    if (data.quickRecord !== undefined) {
+        const q = data.quickRecord as Record<string, any>;
+        if (!object(q)) return false;
+        for (const key of ['raceAbilityEnabled', 'backgroundAbilityEnabled']) if (q[key] !== undefined && typeof q[key] !== 'boolean') return false;
+        if (q.notes !== undefined && typeof q.notes !== 'string') return false;
+        if (q.proficiencyOverride !== undefined && (typeof q.proficiencyOverride !== 'number' || !Number.isFinite(q.proficiencyOverride) || q.proficiencyOverride < 0)) return false;
+        for (const key of ['abilityOptions', 'abilityAdjustments', 'modifierOverrides', 'skillOptions', 'skillRanks', 'skillOverrides', 'saveRanks', 'saveOverrides', 'slotTotals', 'slotUsed', 'diceUsed']) {
+            if (q[key] !== undefined && (!object(q[key]) || !Object.values(q[key]).every(value => value === undefined || typeof value === 'number' && Number.isSafeInteger(value)))) return false;
+        }
+        for (const key of ['abilityOptions', 'skillOptions', 'slotTotals', 'slotUsed', 'diceUsed']) if (object(q[key]) && !Object.values(q[key]).every(value => value === undefined || typeof value === 'number' && value >= 0 && value <= 10000)) return false;
+        for (const [key, limit] of [['skillRanks', 2], ['saveRanks', 1]] as const) if (object(q[key]) && !Object.values(q[key]).every(value => value === undefined || typeof value === 'number' && value >= 0 && value <= limit)) return false;
+        if (q.abilitySelections !== undefined && (!object(q.abilitySelections) || !Object.values(q.abilitySelections).every(value => typeof value === 'string'))) return false;
+        if (q.skillSelections !== undefined && (!object(q.skillSelections) || !Object.values(q.skillSelections).every(value => Array.isArray(value) && value.every(item => typeof item === 'string')))) return false;
+    }
+    return typeof data.id === 'string'  && typeof data.name === 'string' && typeof data.className === 'string' && typeof data.level === 'number' && Number.isFinite(data.level) && !!data.abilities && typeof data.abilities === 'object' && !Array.isArray(data.abilities);
 }
 /** Fill missing legacy fields for reading; spread retains fields this version does not know. */
 export function withCharacterDefaults(defaults: CharacterData, record: CharacterData): CharacterData {

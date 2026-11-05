@@ -296,7 +296,27 @@ export interface StartingGrant {
     choices: Record<string, string>;
     copper: number;
 }
+export interface CharacterQuickRecord {
+    raceAbilityEnabled?: boolean;
+    backgroundAbilityEnabled?: boolean;
+    abilityOptions?: Record<string, number>;
+    abilitySelections?: Record<string, string>;
+    abilityAdjustments?: Record<string, number>;
+    modifierOverrides?: Record<string, number>;
+    skillOptions?: Record<string, number>;
+    skillSelections?: Record<string, string[]>;
+    skillRanks?: Record<string, number>;
+    skillOverrides?: Record<string, number>;
+    saveRanks?: Record<string, number>;
+    saveOverrides?: Record<string, number>;
+    proficiencyOverride?: number;
+    slotTotals?: Record<string, number>;
+    slotUsed?: Record<string, number>;
+    diceUsed?: Record<string, number>;
+    notes?: string;
+}
 export interface CharacterData {
+    quickRecord?: CharacterQuickRecord;
     initialClassKey?: string;
     inventoryEntries?: InventoryEntry[];
     itemAttunement?: Record<string, boolean>;

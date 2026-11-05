@@ -17,3 +17,12 @@ for (const book of manifest.books) {
     console.log(book.code+': '+count+' cards');
 }
 console.log('Original documents: '+docs.length+'; parsed cards: '+result.entries.length+'; diagnostics: '+result.diagnostics.length);
+
+const modernClasses = result.entries.filter(item => item.kind === 'classes' && item.source === 'XPHB');
+assert.equal(modernClasses.filter(item => item.buildData?.recommendedArray?.scores?.length === 6).length, 12, '十二个2024核心职业推荐数列应来自原表');
+const cleric = modernClasses.find(item => item.name === '牧师');
+assert.equal(cleric.buildData.hd.faces, 8);
+assert.deepEqual(cleric.buildData.classTableGroups.find(g => g.rowsSpellProgression).rowsSpellProgression[0], [2,0,0,0,0,0,0,0,0]);
+const acolyte = result.entries.find(item => item.kind === 'backgrounds' && item.source === 'XPHB' && item.name === '侍僧');
+assert.deepEqual(acolyte.buildData.ability[0].choose.weighted.weights, [2,1]);
+console.log('Actual-data quick record: 12 recommendations, hit die, spell matrix and weighted background bonuses PASS');
