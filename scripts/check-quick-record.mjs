@@ -161,3 +161,26 @@ test('type label fallback is source-aware and never chooses a conflicting label'
     assert.equal(metadata.itemTypeLabel(rows,'SHP','MISSING','5etools-cn',true),undefined);
     assert.equal(metadata.itemTypeLabel([...rows,{abbreviation:'SHP',source:'OTHER',name:'别的定义'}],'SHP','PHB','5etools-cn'),undefined);
 });
+
+const management = await load('src/content/resourceManagement.ts');
+test('resource management distinguishes saved, incomplete and verified latest',()=>{
+    const base={ready:true,catalogAvailable:true,files:76,revisions:['abc']};
+    assert.equal(management.coreManagementState(base).action,'check');
+    assert.equal(management.coreManagementState({...base,upstream:{revision:'abc'}}).action,'retry');
+    assert.equal(management.coreManagementState({...base,sync:{state:'success',revision:'abc'},upstream:{revision:'abc'}}).label,'已是最新');
+    assert.equal(management.coreManagementState({...base,sync:{state:'success',catalogReady:false}}).action,'rebuild');
+    assert.equal(management.coreManagementState({...base,sync:{state:'failed'}}).action,'retry');
+    assert.equal(management.coreManagementState({...base,upstream:{error:'offline'}}).action,'check');
+    assert.equal(management.coreManagementState({...base,upstream:{revision:'def'}}).action,'update');
+    assert.equal(management.coreManagementState({...base,files:0}).action,'download');
+    assert.equal(management.coreManagementState({...base,catalogAvailable:false}).action,'rebuild');
+});
+test('package state retains failed update despite old copy, waits for directory',()=>{
+    assert.equal(management.packageManagementState({state:'failed'},true),'failed');
+    assert.equal(management.packageManagementState({state:'downloaded'},true,false),'saved');
+    assert.equal(management.packageManagementState({state:'downloaded'},true,true),'cached');
+    assert.equal(management.packageManagementState(undefined,false),'unread');
+    assert.equal(management.packageManagementState({state:'cached'},false,false),'saved');
+    assert.equal(management.packageManagementState({state:'cached'},true,false),'saved');
+    assert.deepEqual(management.packageTitle('spell/Author; Spell Pack.json'),{author:'Author',title:'Spell Pack'});
+});

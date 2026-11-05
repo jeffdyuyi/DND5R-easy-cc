@@ -59,7 +59,7 @@ body input[type=range] { accent-color: var(--gold); }
 .user-resource-editor,
 .external-cache-card,
 .information-panel,
-.local-resource-bundles,
+.resource-manager-card,
 .portrait-modal-panel,
 .character-folio .folio-section {
   border: 8px solid transparent !important;
@@ -190,7 +190,7 @@ body button:is(.reader-outline-shade,.career-directory-backdrop,.dice-panel-back
   background: var(--paper-shade);
 }
 .rich-quote,.resource-fluff,.resource-reference-notice,
-.resource-data-supplement,.species-variant-options,.local-bundle-preview {
+.resource-data-supplement,.species-variant-options {
   background: var(--paper-shade);
   color: var(--ink);
   border-color: var(--line);

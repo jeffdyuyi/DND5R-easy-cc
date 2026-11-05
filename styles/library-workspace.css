@@ -573,43 +573,6 @@
 .reader-outline button {
   overflow-wrap: anywhere;
 }
-.local-resource-bundles {
-  margin: 10px 0 16px;
-  padding: 14px;
-  background: var(--paper-light);
-  border: 1px solid var(--line);
-}
-.local-resource-bundles h3 {
-  margin: 0 0 6px;
-  font-size: 20px;
-  color: var(--accent-dark);
-}
-.local-resource-bundles p {
-  margin: 6px 0;
-}
-.local-resource-bundles .external-source-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 10px 0;
-}
-.local-bundle-preview {
-  padding: 10px;
-  border: 1px solid var(--line);
-  background: var(--paper-light);
-}
-.local-bundle-preview > button {
-  min-height: 44px;
-  margin: 8px 8px 0 0;
-}
-.local-bundle-preview details {
-  max-height: 210px;
-  overflow-y: auto;
-  overflow-wrap: anywhere;
-}
-.local-bundle-preview li {
-  padding: 4px 0;
-}
 .resource-fluff {
   margin: 16px 0 8px;
   border-top: 1px solid var(--line);

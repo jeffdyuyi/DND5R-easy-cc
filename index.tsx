@@ -20,6 +20,7 @@ import './styles/adventure-theme.css';
 import './styles/card-covers.css';
 import './styles/character-inventory.css';
 import './styles/character-quick-view.css';
+import './styles/resource-management.css';
 const rootElement = document.getElementById('root');
 if (!rootElement) {
     throw new Error("Could not find root element to mount to");

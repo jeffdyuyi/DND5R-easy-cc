@@ -1,8 +1,8 @@
 import { useSyncExternalStore } from 'react';
 import { IS_ANDROID_BUILD } from '../platform/build';
 type InstallEvent = Event & { prompt: () => Promise<void>; userChoice: Promise<{ outcome: string }> };
-type State = { supported: boolean; ready: boolean; checking: boolean; update: boolean; installable: boolean; installed: boolean; version: string; error: string; development: boolean };
-let state: State = { supported: false, ready: false, checking: false, update: false, installable: false, installed: false, version: '', error: '', development: import.meta.env.DEV };
+type State = { supported: boolean; registered: boolean; ready: boolean; checking: boolean; update: boolean; installable: boolean; installed: boolean; version: string; error: string; development: boolean };
+let state: State = { supported: false, registered: false, ready: false, checking: false, update: false, installable: false, installed: false, version: '', error: '', development: import.meta.env.DEV };
 let registration: ServiceWorkerRegistration | undefined, installEvent: InstallEvent | undefined;
 const listeners = new Set<() => void>();
 const publish = (patch: Partial<State>) => { state = { ...state, ...patch }; listeners.forEach(listener => listener()); };
@@ -27,7 +27,7 @@ export function registerPwa() {
     });
     void navigator.serviceWorker.register(import.meta.env.BASE_URL + 'sw.js', { scope: import.meta.env.BASE_URL, updateViaCache: 'none' }).then(reg => {
         registration = reg;
-        publish({ update: !!reg.waiting });
+        publish({ registered:true, update: !!reg.waiting });
         void readStatus();
         const observe = () => {
             const worker = reg.installing; if (!worker) return;

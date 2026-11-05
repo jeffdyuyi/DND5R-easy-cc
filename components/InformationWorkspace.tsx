@@ -7,11 +7,11 @@ import { createPortal } from 'react-dom';
 import { DialogDismissButton, useDialogBackdrop } from './common/DialogControls';
 import { useEffect, useRef, useState } from 'react';
 import { ExternalResourceSources } from './ExternalResourceSources';
-import { LocalResourceBundles } from './LocalResourceBundles';
+import { LibraryOverlay } from './LibraryNavigation';
 import { useExternalLibrary } from '../contexts/ExternalResourceContext';
 
 const sections = [
-    { id: 'sources', label: '资料同步' },
+    { id: 'sources', label: '资料管理' },
     { id: 'backup', label: '本地备份' },
     { id: 'about', label: '关于与许可' },
 ] as const;
@@ -34,17 +34,18 @@ function SupportDialog({ onClose }: { onClose: () => void }) {
 export function InformationWorkspace() {
     const external = useExternalLibrary();
     const [supportOpen, setSupportOpen] = useState(false);
+    const [appOpen,setAppOpen] = useState(false);
     const [section, setSection] = useState<string>('sources');
     return <section className="app-workspace information-workspace" aria-label="信息与资料管理">
         <div className="information-topbar"><nav className="information-navigation" aria-label="信息分类">
             {sections.map(item => <button type="button" key={item.id} aria-pressed={section === item.id}
                 aria-controls={'information-' + item.id} onClick={() => setSection(item.id)}>{item.label}</button>)}
         </nav><ThemeSettings/></div>
-        <section id="information-sources" className="information-panel" hidden={section !== 'sources'} aria-label="资料同步">
-            {!IS_ANDROID_BUILD && <PwaSettings/>}<ExternalResourceSources resources={external} />
+        <section id="information-sources" className="information-panel" hidden={section !== 'sources'} aria-label="资料管理">
+            <ExternalResourceSources resources={external} applicationAction={!IS_ANDROID_BUILD && <button type="button" onClick={()=>setAppOpen(true)}>应用与离线</button>}/>
         </section>
         <section id="information-backup" className="information-panel" hidden={section !== 'backup'} aria-label="本地备份">
-            <CharacterBackup/><PersonalDataBackup/><LocalResourceBundles resources={external} />
+            <CharacterBackup/><PersonalDataBackup/>
         </section>
         <article id="information-about" className="information-panel information-about" hidden={section !== 'about'} aria-label="关于与许可">
             <section className="information-about-section">
@@ -66,6 +67,7 @@ export function InformationWorkspace() {
                 <p><strong>使用与反馈</strong>　本项目禁止商业用途。下载、使用或传播外部资料，请遵守相应来源许可。资料内容或权利问题、解析显示错误，可通过上方QQ群联系作者，并提供具体条目和来源。支持作者为自愿支持工具开发，不提供外部资料的销售或授权。</p>
             </section><section className="information-about-section"><h2>素材与开源许可</h2><ul><li><a href={import.meta.env.BASE_URL + 'icons/ATTRIBUTION.html'} target="_blank" rel="noreferrer">Game-icons / Pixelarticons：作者与许可</a></li><li><a href="https://github.com/3d-dice/dice-box" target="_blank" rel="noreferrer">Dice-Box 1.1.4</a> · <a href={import.meta.env.BASE_URL + 'vendor/dice-box/LICENSE.txt'} target="_blank" rel="noreferrer">MIT许可</a></li><li><a href="https://chequered.ink/hi-res-dice-pack/" target="_blank" rel="noreferrer">骰型图：Chequered Ink · Hi Res Dice Pack</a> · <a href={import.meta.env.BASE_URL + 'dice/chequered-ink/LICENSE.txt'} target="_blank" rel="noreferrer">使用条款</a></li><li><a href="https://kenney.nl/assets/fantasy-ui-borders" target="_blank" rel="noreferrer">界面边框：Kenney · Fantasy UI Borders 1.0</a> · <a href={import.meta.env.BASE_URL + 'ui/kenney-fantasy/LICENSE.txt'} target="_blank" rel="noreferrer">CC0许可</a></li><li><a href="https://kenney.nl/assets/ui-pack-adventure" target="_blank" rel="noreferrer">明亮主题：Kenney · UI Pack – Adventure</a> · <a href={import.meta.env.BASE_URL + 'ui/kenney-adventure/LICENSE.txt'} target="_blank" rel="noreferrer">CC0许可</a></li><li>字体：Fusion Pixel。许可文件随本地字体保留。</li></ul></section>
         </article>
+        {appOpen && <LibraryOverlay title="应用与离线" onClose={()=>setAppOpen(false)} className="resource-detail-dialog"><div className="resource-management-scroll"><PwaSettings/></div></LibraryOverlay>}
         {supportOpen && <SupportDialog onClose={() => setSupportOpen(false)}/>}
     </section>;
 }

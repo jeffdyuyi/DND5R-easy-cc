@@ -3,8 +3,10 @@ import { AssetIcon } from './common/AssetIcon';
 import { useEffect, useRef, useState } from 'react';
 import type { ReactNode } from 'react';
 import { createPortal } from 'react-dom';
-export function LibraryOverlay({ title, drawer = false, side = 'left', onClose, children }: {
+export function LibraryOverlay({ title, drawer = false, side = 'left', onClose, children, className = '', back = false }: {
     title: string;
+    className?: string;
+    back?: boolean;
     drawer?: boolean;
     side?: 'left' | 'right';
     onClose: () => void;
@@ -12,8 +14,8 @@ export function LibraryOverlay({ title, drawer = false, side = 'left', onClose, 
 }) {
     const ref = useRef<HTMLDialogElement>(null);
     const backdrop = useDialogBackdrop(onClose);
-    useEffect(() => { const dialog = ref.current; const roots = Array.from(document.querySelectorAll<HTMLElement>('.resource-catalog,.favorites-workspace,.rules-catalog')); const previous = roots.map(root => root.style.overflow); roots.forEach(root => root.style.overflow = 'hidden'); if (!dialog?.open) dialog?.showModal(); return () => { dialog?.close(); roots.forEach((root, i) => root.style.overflow = previous[i]); }; }, []);
-    return createPortal(<dialog ref={ref} className={'library-overlay' + (drawer ? ' is-drawer' : '') + (side === 'right' ? ' is-outline' : '')} aria-label={title} onCancel={event => { event.preventDefault(); onClose(); }} {...backdrop}><header><h2>{title}</h2><DialogDismissButton onClick={onClose}/></header>{children}</dialog>, document.body);
+    useEffect(() => { const dialog = ref.current; const roots = Array.from(document.querySelectorAll<HTMLElement>('.resource-catalog,.favorites-workspace,.rules-catalog,.information-workspace')); const previous = roots.map(root => root.style.overflow); roots.forEach(root => root.style.overflow = 'hidden'); if (!dialog?.open) dialog?.showModal(); return () => { dialog?.close(); roots.forEach((root, i) => root.style.overflow = previous[i]); }; }, []);
+    return createPortal(<dialog ref={ref} className={'library-overlay' + (drawer ? ' is-drawer' : '') + (side === 'right' ? ' is-outline' : '') + ' ' + className} aria-label={title} onCancel={event => { event.preventDefault(); onClose(); }} {...backdrop}><header><h2>{title}</h2><DialogDismissButton back={back} onClick={onClose}/></header>{children}</dialog>, document.body);
 }
 interface Choice {
     id: string;

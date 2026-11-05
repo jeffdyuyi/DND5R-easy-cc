@@ -27,6 +27,8 @@ interface SourceSyncRecord {
 export function useExternalResources() {
     const [documents, setDocuments] = useState<Omit<SourceDocument, 'body'>[]>([]), [status, setStatus] = useState(''), [busy, setBusy] = useState(false), [errors, setErrors] = useState<string[]>([]), [packages, setPackages] = useState<string[]>([]), [ready, setReady] = useState(false);
     const [activity, setActivity] = useState<{ stage: 'idle' | 'reading' | 'saving' | 'parsing' | 'complete' | 'failed' | 'cancelled'; detail: string; done?: number; total?: number }>({ stage: 'idle', detail: '' });
+    const [catalogAvailable, setCatalogAvailable] = useState(false);
+    const [operation, setOperation] = useState<'core' | 'brew' | 'discover' | 'import' | 'rebuild' | null>(null);
     const controller = useRef<AbortController | null>(null), mounted = useRef(true), running = useRef(false), snapshotRead = useRef(false);
     const [packageReads, setPackageReads] = useState<Record<string, PackageReadRecord>>(() => {
         try {
@@ -68,6 +70,7 @@ export function useExternalResources() {
     const [catalog, setCatalog] = useState<ParsedCatalog>({ entries: [], diagnostics: [], documents: 0 });
     const applySnapshot = (snapshot: CatalogSnapshot) => {
         snapshotRead.current = true;
+        setCatalogAvailable(true);
         setCatalog(snapshot.catalog);
         setDocuments(snapshot.documents);
         setPackages(snapshot.packages);
@@ -120,6 +123,7 @@ export function useExternalResources() {
         controller.current = abort;
         setBusy(true);
         setErrors([]);
+        setOperation(kind);
         setActivity({ stage: 'reading', detail: '正在检查资料来源…' });
         const reportDownload = (detail: string) => { const match = detail.match(/读取 (\d+) \/ (\d+)/); setStatus(detail); setActivity({ stage: detail.startsWith('保存') ? 'saving' : 'reading', detail, ...(match ? { done: Number(match[1]), total: Number(match[2]) } : {}) }); };
         const repository = kind === 'core' ? '5etools-cn' : 'homebrew', scope = kind === 'core' ? '中文主库' : '所选 ' + paths.length + ' 包';
@@ -212,6 +216,7 @@ export function useExternalResources() {
         running.current = true;
         setBusy(true);
         setErrors([]);
+        setOperation('import');
         setActivity({ stage: 'saving', detail: '正在保存导入资料…' });
         let stored = false;
         try {
@@ -237,6 +242,20 @@ export function useExternalResources() {
                 setBusy(false);
         }
     };
+    const rebuildCatalog = async () => {
+        if (running.current) return;
+        running.current = true; setBusy(true); setOperation('rebuild');
+        setActivity({ stage:'parsing', detail:'正在整理本机资料…' });
+        try {
+            const snapshot = await loadCatalogSnapshot(true, setStatus);
+            if (!mounted.current) return;
+            applySnapshot(snapshot);
+            setSourceSyncs(old => Object.fromEntries(Object.entries(old).map(([key, record]) => [key, { ...record, catalogReady:true }])));
+            setActivity({ stage:'complete', detail:'本机目录已整理。' });
+        } catch (error) {
+            if (mounted.current) { setActivity({ stage:'failed', detail:'目录整理未完成，原文保留。' }); setErrors(old => [...old, String(error)]); }
+        } finally { running.current = false; if (mounted.current) setBusy(false); }
+    };
     const packageStats = useMemo(() => {
         const stats: Record<string, {
             cards: number;
@@ -258,5 +277,5 @@ export function useExternalResources() {
         return { repository, files: docs.length, cards: entries.length, sources: new Set(entries.map(entry => entry.source)).size, revisions: [...new Set(docs.map(doc => doc.revision))], lastFetched: docs.map(doc => doc.fetchedAt).sort().slice(-1)[0], diagnostics: catalog.diagnostics.filter(d => d.identity.startsWith(repository + '|') || !!d.path && paths.has(d.path)).length };
     }), [documents, catalog.entries, catalog.diagnostics]);
     const visibleEntries = useMemo(() => catalog.entries.filter(e => enabled.includes(e.sourceProvider)), [catalog.entries, enabled]);
-    return { activity, installLocalDocuments, ...catalog, entries: visibleEntries, total: catalog.entries.length, documents, packageReads, packageStats, sourceSyncs, sourceStats, enabled, toggle, run, cancel: () => controller.current?.abort(), busy, status, errors, packages, ready };
+    return { operation, catalogAvailable, rebuildCatalog, allEntries: catalog.entries, activity, installLocalDocuments, ...catalog, entries: visibleEntries, total: catalog.entries.length, documents, packageReads, packageStats, sourceSyncs, sourceStats, enabled, toggle, run, cancel: () => controller.current?.abort(), busy, status, errors, packages, ready };
 }
